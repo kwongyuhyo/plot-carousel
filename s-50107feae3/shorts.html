@@ -10,10 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
 <style>
+/* 완성물·캐러셀 스튜디오와 같은 팔레트. 흑백으로 두고 앰버 하나만 액센트로.
+   '선택됨'은 색이 아니라 반전(흰 바탕 + 검은 글자)으로 — 완성물의 태그와 같은 장치다. */
 :root{
-  --bg:#12131a; --panel:#1b1d27; --panel-2:#22252f; --line:#2f3340;
-  --ink:#eceef4; --dim:#9aa0b0; --accent:#6f8cff; --ok:#3ecf8e; --warn:#ffb020; --bad:#ff6b6b;
-  --radius:14px;
+  --bg:#0A0A0C; --panel:#131318; --panel-2:#1B1B22; --line:#22222B;
+  --ink:#ECECF1; --dim:#8A8A96; --faint:#5E5E6A;
+  --accent:#ECECF1; --ok:#ECECF1; --warn:#E8B34A; --bad:#C75B4A;
+  --radius:9px;
   --hdr:43px;
 }
 *{box-sizing:border-box}
@@ -34,11 +37,11 @@ header{
   padding:0 16px; padding-top:env(safe-area-inset-top);
   display:flex; align-items:center; gap:10px;
 }
-header h1{font-size:15px; font-weight:700; margin:0; letter-spacing:-.2px}
+header h1{font-size:14.5px; font-weight:800; margin:0; letter-spacing:-.035em}
 header .count{
-  margin-left:auto; font-size:12px; color:var(--dim);
-  background:var(--panel-2); border:1px solid var(--line);
-  padding:3px 9px; border-radius:99px;
+  margin-left:auto; font-size:11px; color:var(--dim);
+  border:1px solid var(--line); padding:3px 9px; border-radius:5px;
+  letter-spacing:.05em;
 }
 
 .wrap{max-width:1180px; margin:0 auto; padding:14px 16px 0}
@@ -73,7 +76,7 @@ header .count{
 .pvHead span{font-size:11px; color:var(--dim)}
 .stage{
   position:relative; width:100%; max-width:300px; margin:0 auto;
-  aspect-ratio:1080/1920; border-radius:12px; overflow:hidden;
+  aspect-ratio:1080/1920; border-radius:8px; overflow:hidden;
   border:1px solid var(--line); background:#0b0c10;
 }
 @media(min-width:900px){.stage{max-width:100%}}
@@ -128,7 +131,9 @@ header .count{
   background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
   margin-bottom:12px; overflow:hidden; transition:border-color .15s;
 }
-.block.active{border-color:var(--accent)}
+/* 펼친 블록은 흰 테두리로 두르면 화면을 지배한다. 한 톤만 올린다.
+   '지금 이 블록'은 왼쪽 번호칸의 반전이 이미 말해 준다. */
+.block.active{border-color:#33333F}
 .block.bad{border-color:var(--bad)}
 .bhead{
   display:flex; align-items:center; gap:9px; padding:12px 13px; cursor:pointer;
@@ -139,11 +144,13 @@ header .count{
   border:1px solid var(--line); font-size:11px; font-weight:700;
   display:flex; align-items:center; justify-content:center; color:var(--dim);
 }
-.block.active .bnum{background:var(--accent); color:#fff; border-color:var(--accent)}
-.btitle{flex:1; min-width:0; font-size:14px; font-weight:600; overflow:hidden;
+.block.active .bnum{background:var(--accent); color:var(--bg); border-color:var(--accent)}
+.btitle{flex:1; min-width:0; font-size:14.5px; font-weight:800; letter-spacing:-.03em;
+  overflow:hidden;
   text-overflow:ellipsis; white-space:nowrap}
 .btitle .sub{font-weight:400; color:var(--dim); font-size:12px}
-.badge{font-size:10px; padding:2px 7px; border-radius:99px; border:1px solid; flex:none}
+.badge{font-size:10px; padding:2px 7px; border-radius:4px; border:1px solid; flex:none;
+  letter-spacing:.04em}
 .badge.send{color:var(--warn); border-color:rgba(255,176,32,.4); background:rgba(255,176,32,.1)}
 .badge.err {color:var(--bad);  border-color:rgba(255,107,107,.4); background:rgba(255,107,107,.1)}
 .chev{color:var(--dim); font-size:12px; flex:none; transition:transform .18s}
@@ -151,14 +158,15 @@ header .count{
 .bbody{display:none; padding:2px 13px 13px; border-top:1px solid var(--line)}
 .block.open .bbody{display:block}
 
-label{display:block; font-size:11px; color:var(--dim); margin:11px 0 5px; font-weight:600}
-label .opt{font-weight:400; opacity:.7}
+label{display:block; font-size:11px; color:var(--dim); margin:14px 0 6px;
+  font-weight:700; letter-spacing:.04em}
+label .opt{font-weight:400; opacity:.75; letter-spacing:-.01em}
 input[type=text],select,textarea{
   width:100%; background:var(--panel-2); color:var(--ink);
-  border:1px solid var(--line); border-radius:10px; padding:10px 11px;
+  border:1px solid var(--line); border-radius:7px; padding:10px 11px;
   font:inherit; font-size:15px; outline:none; -webkit-appearance:none;
 }
-input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+input:focus,select:focus,textarea:focus{border-color:#3A3A46}
 input.bad,select.bad{border-color:var(--bad)}
 textarea{resize:vertical; min-height:62px; line-height:1.45}
 .row{display:flex; gap:9px}
@@ -169,14 +177,14 @@ textarea{resize:vertical; min-height:62px; line-height:1.45}
 .chips{display:flex; flex-wrap:wrap; gap:6px}
 .chip{
   background:var(--panel-2); border:1px solid var(--line); color:var(--dim);
-  padding:7px 12px; border-radius:99px; font-size:13px; cursor:pointer;
+  padding:7px 12px; border-radius:6px; font-size:13px; cursor:pointer;
   font-weight:600; transition:all .12s;
 }
-.chip.on{background:var(--accent); border-color:var(--accent); color:#fff}
+.chip.on{background:var(--accent); border-color:var(--accent); color:var(--bg)}
 
 .srcToggle{display:flex; align-items:center; gap:9px; margin-top:11px;
   padding:10px 11px; background:var(--panel-2); border:1px solid var(--line);
-  border-radius:10px; cursor:pointer}
+  border-radius:7px; cursor:pointer}
 .srcToggle input{width:18px; height:18px; flex:none; accent-color:var(--accent)}
 .srcToggle span{font-size:13px}
 .srcToggle small{display:block; color:var(--dim); font-size:11px; margin-top:1px}
@@ -184,12 +192,12 @@ textarea{resize:vertical; min-height:62px; line-height:1.45}
 .bfoot{display:flex; gap:8px; margin-top:14px}
 .btn{
   flex:1; background:var(--panel-2); border:1px solid var(--line); color:var(--ink);
-  padding:10px; border-radius:10px; font:inherit; font-size:13px; font-weight:600;
+  padding:10px; border-radius:7px; font:inherit; font-size:13px; font-weight:600;
   cursor:pointer;
 }
 .btn:active{opacity:.7}
 .btn.danger{color:var(--bad)}
-.btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:var(--bg)}
 
 .addBtn{
   width:100%; padding:13px; background:transparent; border:1px dashed var(--line);
@@ -219,7 +227,7 @@ pre.form{
 .toast{
   position:fixed; left:50%; bottom:26px; transform:translateX(-50%) translateY(20px);
   background:var(--panel-2); border:1px solid var(--line); color:var(--ink);
-  padding:11px 18px; border-radius:99px; font-size:13px; font-weight:600;
+  padding:11px 18px; border-radius:8px; font-size:13px; font-weight:600;
   opacity:0; pointer-events:none; transition:all .22s; z-index:80;
   box-shadow:0 10px 30px rgba(0,0,0,.4);
 }
@@ -227,7 +235,7 @@ pre.form{
 </style>
 
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#101119">
+<meta name="theme-color" content="#0A0A0C">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -238,7 +246,7 @@ pre.form{
 <body>
 
 <header>
-  <h1>🎬 PLOT 숏폼 양식</h1>
+  <h1>숏폼 양식</h1>
   <span class="count" id="count">0편</span>
 </header>
 
@@ -454,7 +462,7 @@ function buildBlock(b) {
   CATS.concat(['__custom__']).forEach(c => {
     const chip = el('button', 'chip');
     chip.type = 'button';
-    chip.textContent = c === '__custom__' ? '✏️ 직접' : c;
+    chip.textContent = c === '__custom__' ? '직접 입력' : c;
     chip.onclick = () => { b.cat = c; sync(); refresh(); };
     chip.dataset.cat = c;
     chips.append(chip);
@@ -576,7 +584,9 @@ function refresh() {
   if (IN_TG) {
     TG.MainButton.setText(label);
     if (bad) TG.MainButton.disable(); else TG.MainButton.enable();
-    TG.MainButton.color = bad ? '#3a3f4d' : '#6f8cff';
+    // 색이 아니라 반전으로 상태를 보인다 — 완성물의 태그와 같은 장치.
+    TG.MainButton.color = bad ? '#22222B' : '#ECECF1';
+    TG.MainButton.textColor = bad ? '#5E5E6A' : '#0A0A0C';
     TG.MainButton.show();
   } else {
     $('#formOut').textContent = formText();
@@ -693,7 +703,7 @@ function boot() {
 
   if (IN_TG) {
     TG.ready(); TG.expand();
-    try { TG.setHeaderColor('#12131a'); TG.setBackgroundColor('#12131a'); } catch (_) {}
+    try { TG.setHeaderColor('#0A0A0C'); TG.setBackgroundColor('#0A0A0C'); } catch (_) {}
     TG.MainButton.onClick(submit);
     try { TG.enableClosingConfirmation(); } catch (_) {}
   } else {
@@ -734,10 +744,10 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    var base = 'font:600 12px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
-               'color:inherit;opacity:.62;text-decoration:none;white-space:nowrap;' +
-               'padding:6px 10px;border-radius:99px;border:1px solid currentColor;' +
-               'flex:none;';
+    // 테두리를 두르면 제목보다 무거워진다. 글자만 남기고 흐리게.
+    var base = 'font:700 11.5px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
+               'color:#8A8A96;text-decoration:none;white-space:nowrap;letter-spacing:-.01em;' +
+               'padding:5px 0;border:0;background:none;flex:none;';
     // 텔레그램 데스크톱은 미니앱을 폰 크기 창으로 띄운다 — 화면이 넓어도 창은 그대로다.
     // 그래서 컴퓨터에서는 브라우저로 넘어가는 길을 한 번에 열어준다.
     var TG = window.Telegram && window.Telegram.WebApp;
@@ -755,21 +765,23 @@ document.addEventListener('DOMContentLoaded', boot);
 
     var h = document.querySelector('header');
     if (h) {
-      a.style.cssText = base + 'margin-right:8px;';
+      a.style.cssText = base + 'margin-right:14px;';
       h.insertBefore(a, h.firstChild);
       if (wide) {
-        wide.style.cssText = base + 'margin-right:10px;cursor:pointer;background:none;';
+        wide.style.cssText = base + 'margin-right:14px;cursor:pointer;';
         h.insertBefore(wide, a.nextSibling);
       }
     } else {
       a.style.cssText = base +
-        'position:fixed;left:10px;top:10px;z-index:9999;background:rgba(0,0,0,.45);' +
-        'color:#fff;backdrop-filter:blur(8px);';
+        'position:fixed;left:12px;top:12px;z-index:9999;padding:6px 10px;' +
+        'border-radius:6px;background:rgba(10,10,12,.72);color:#ECECF1;' +
+        'backdrop-filter:blur(8px);';
       document.body.appendChild(a);
       if (wide) {
         wide.style.cssText = base +
-          'position:fixed;left:122px;top:10px;z-index:9999;background:rgba(0,0,0,.45);' +
-          'color:#fff;backdrop-filter:blur(8px);cursor:pointer;';
+          'position:fixed;left:122px;top:12px;z-index:9999;padding:6px 10px;' +
+          'border-radius:6px;background:rgba(10,10,12,.72);color:#ECECF1;' +
+          'backdrop-filter:blur(8px);cursor:pointer;';
         document.body.appendChild(wide);
       }
     }
