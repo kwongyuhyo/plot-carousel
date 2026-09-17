@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PLOT 숏폼 양식</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#12131a; --panel:#1b1d27; --panel-2:#22252f; --line:#2f3340;
+  --ink:#eceef4; --dim:#9aa0b0; --accent:#6f8cff; --ok:#3ecf8e; --warn:#ffb020; --bad:#ff6b6b;
+  --radius:14px;
+  --hdr:43px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:Pretendard,'Noto Sans KR',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:15px; line-height:1.5;
+  padding:0 0 calc(24px + env(safe-area-inset-bottom));
+  -webkit-text-size-adjust:100%;
+}
+[hidden]{display:none!important}
+
+/* ── 상단 ─────────────────────────────────────────────── */
+header{
+  position:sticky; top:0; z-index:30; height:calc(var(--hdr) + env(safe-area-inset-top)); background:rgba(18,19,26,.92);
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--line);
+  padding:0 16px; padding-top:env(safe-area-inset-top);
+  display:flex; align-items:center; gap:10px;
+}
+header h1{font-size:15px; font-weight:700; margin:0; letter-spacing:-.2px}
+header .count{
+  margin-left:auto; font-size:12px; color:var(--dim);
+  background:var(--panel-2); border:1px solid var(--line);
+  padding:3px 9px; border-radius:99px;
+}
+
+.wrap{max-width:1180px; margin:0 auto; padding:14px 16px 0}
+@media(min-width:900px){
+  .wrap{display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:22px; align-items:start}
+  .previewCol{position:sticky; top:74px}
+  .previewCol .side{margin-top:8px}
+}
+/* 폰: 미리보기를 헤더 밑에 붙여 둔다.
+   폼 아래에 두면 한참 스크롤해야 보여서 '쓰면서 보는' 뜻이 사라진다. */
+@media(max-width:899px){
+  /* order 는 flex/grid 안에서만 먹는다 — wrap 을 세로 flex 로 만들어야
+     미리보기가 폼 위로 올라온다. */
+  .wrap{display:flex; flex-direction:column}
+  .formCol{order:1; min-width:0}
+  .previewCol{
+    order:0; position:sticky; top:var(--hdr); z-index:20;
+    margin:-14px -16px 14px; padding:10px 16px 11px;
+    background:rgba(18,19,26,.97); backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+    display:grid; grid-template-columns:94px minmax(0,1fr); gap:13px; align-items:center;
+  }
+  .previewCol .stage{max-width:94px; margin:0}
+  .pvHead{margin:0 0 5px}
+  .pvNote{text-align:left; margin-top:0}
+}
+
+/* ── 미리보기 ─────────────────────────────────────────── */
+.previewCol{margin-bottom:16px}
+.pvHead{display:flex; align-items:baseline; gap:8px; margin-bottom:8px}
+.pvHead b{font-size:13px; font-weight:700}
+.pvHead span{font-size:11px; color:var(--dim)}
+.stage{
+  position:relative; width:100%; max-width:300px; margin:0 auto;
+  aspect-ratio:1080/1920; border-radius:12px; overflow:hidden;
+  border:1px solid var(--line); background:#0b0c10;
+}
+@media(min-width:900px){.stage{max-width:100%}}
+.frame{
+  position:absolute; top:0; left:0; width:1080px; height:1920px;
+  transform-origin:0 0; overflow:hidden;
+  background:
+    radial-gradient(120% 70% at 50% 18%, #3a4152 0%, #23262f 45%, #14161c 100%);
+}
+/* 영상이 들어갈 자리 표시 */
+.frame::after{
+  content:'영상 자리'; position:absolute; left:0; right:0; top:820px;
+  text-align:center; font-size:44px; color:rgba(255,255,255,.14);
+  letter-spacing:6px; font-weight:700;
+}
+.frame .logo{position:absolute; left:456px; top:38px; width:165px; height:104px;
+  background-size:contain; background-repeat:no-repeat; opacity:.95}
+.frame .catBar{position:absolute; left:59px; top:261px; width:8px; height:57px; background:#fff}
+.frame .cat{
+  position:absolute; left:85px; top:261px; height:57px; line-height:57px;
+  font-family:Pretendard,sans-serif; font-weight:800; font-size:62px; color:#fff;
+  white-space:nowrap; letter-spacing:-1px;
+}
+.frame .line{
+  position:absolute; left:100px; font-family:'Noto Sans KR',sans-serif; font-weight:900;
+  color:#fff; white-space:nowrap; line-height:1;
+  text-shadow:0 2px 18px rgba(0,0,0,.45);
+}
+.frame .hook  {bottom:578px; font-size:96px}   /* ink bottom ≈1342 */
+.frame .artist{bottom:483px; font-size:96px}   /* ink bottom ≈1437 */
+.frame .title {bottom:388px; font-size:96px}   /* ink bottom ≈1532 */
+.frame .suffix{font-size:41px; font-weight:700; opacity:.92; margin-left:14px}
+.frame .src{
+  position:absolute; right:51px; bottom:40px; font-family:Pretendard,sans-serif;
+  font-weight:800; font-size:32px; color:rgba(255,255,255,.72); white-space:nowrap;
+}
+.frame .over{outline:2px dashed var(--bad); outline-offset:6px}
+.pvNote{margin-top:6px; font-size:11px; color:var(--dim); line-height:1.45}
+.pvStatus{font-size:12.5px; font-weight:700; margin-top:2px}
+.pvStatus.ok{color:var(--ok)} .pvStatus.warn{color:var(--warn)} .pvStatus.bad{color:var(--bad)}
+.stage{cursor:zoom-in}
+.previewCol.big{
+  position:fixed; inset:0; z-index:70; margin:0; padding:22px; border:0;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px;
+  background:rgba(9,10,14,.975); backdrop-filter:blur(8px);
+}
+.previewCol.big .stage{max-width:none; width:auto; height:76vh; cursor:zoom-out}
+.previewCol.big .side{text-align:center; max-width:420px}
+
+/* ── 블록 ─────────────────────────────────────────────── */
+.block{
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+  margin-bottom:12px; overflow:hidden; transition:border-color .15s;
+}
+.block.active{border-color:var(--accent)}
+.block.bad{border-color:var(--bad)}
+.bhead{
+  display:flex; align-items:center; gap:9px; padding:12px 13px; cursor:pointer;
+  user-select:none;
+}
+.bnum{
+  width:23px; height:23px; flex:none; border-radius:7px; background:var(--panel-2);
+  border:1px solid var(--line); font-size:11px; font-weight:700;
+  display:flex; align-items:center; justify-content:center; color:var(--dim);
+}
+.block.active .bnum{background:var(--accent); color:#fff; border-color:var(--accent)}
+.btitle{flex:1; min-width:0; font-size:14px; font-weight:600; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.btitle .sub{font-weight:400; color:var(--dim); font-size:12px}
+.badge{font-size:10px; padding:2px 7px; border-radius:99px; border:1px solid; flex:none}
+.badge.send{color:var(--warn); border-color:rgba(255,176,32,.4); background:rgba(255,176,32,.1)}
+.badge.err {color:var(--bad);  border-color:rgba(255,107,107,.4); background:rgba(255,107,107,.1)}
+.chev{color:var(--dim); font-size:12px; flex:none; transition:transform .18s}
+.block.open .chev{transform:rotate(90deg)}
+.bbody{display:none; padding:2px 13px 13px; border-top:1px solid var(--line)}
+.block.open .bbody{display:block}
+
+label{display:block; font-size:11px; color:var(--dim); margin:11px 0 5px; font-weight:600}
+label .opt{font-weight:400; opacity:.7}
+input[type=text],select,textarea{
+  width:100%; background:var(--panel-2); color:var(--ink);
+  border:1px solid var(--line); border-radius:10px; padding:10px 11px;
+  font:inherit; font-size:15px; outline:none; -webkit-appearance:none;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--accent)}
+input.bad,select.bad{border-color:var(--bad)}
+textarea{resize:vertical; min-height:62px; line-height:1.45}
+.row{display:flex; gap:9px}
+.row>*{flex:1; min-width:0}
+.hint{font-size:11px; color:var(--dim); margin-top:5px}
+.hint.bad{color:var(--bad)}
+
+.chips{display:flex; flex-wrap:wrap; gap:6px}
+.chip{
+  background:var(--panel-2); border:1px solid var(--line); color:var(--dim);
+  padding:7px 12px; border-radius:99px; font-size:13px; cursor:pointer;
+  font-weight:600; transition:all .12s;
+}
+.chip.on{background:var(--accent); border-color:var(--accent); color:#fff}
+
+.srcToggle{display:flex; align-items:center; gap:9px; margin-top:11px;
+  padding:10px 11px; background:var(--panel-2); border:1px solid var(--line);
+  border-radius:10px; cursor:pointer}
+.srcToggle input{width:18px; height:18px; flex:none; accent-color:var(--accent)}
+.srcToggle span{font-size:13px}
+.srcToggle small{display:block; color:var(--dim); font-size:11px; margin-top:1px}
+
+.bfoot{display:flex; gap:8px; margin-top:14px}
+.btn{
+  flex:1; background:var(--panel-2); border:1px solid var(--line); color:var(--ink);
+  padding:10px; border-radius:10px; font:inherit; font-size:13px; font-weight:600;
+  cursor:pointer;
+}
+.btn:active{opacity:.7}
+.btn.danger{color:var(--bad)}
+.btn.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+
+.addBtn{
+  width:100%; padding:13px; background:transparent; border:1px dashed var(--line);
+  border-radius:var(--radius); color:var(--dim); font:inherit; font-size:14px;
+  font-weight:600; cursor:pointer; margin-bottom:14px;
+}
+.addBtn:active{border-color:var(--accent); color:var(--accent)}
+
+.summary{
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+  padding:13px; margin-bottom:14px; font-size:13px;
+}
+.summary .ln{display:flex; gap:8px; align-items:flex-start; margin-top:6px; line-height:1.45}
+.summary .ln:first-child{margin-top:0}
+.summary .ic{flex:none}
+.summary .bad{color:var(--bad)}
+.summary .warn{color:var(--warn)}
+.summary .ok{color:var(--ok)}
+
+#outsideBar{margin-bottom:20px}
+pre.form{
+  background:var(--panel-2); border:1px solid var(--line); border-radius:10px;
+  padding:12px; font-size:12px; line-height:1.5; overflow:auto; max-height:260px;
+  white-space:pre-wrap; word-break:break-all; color:var(--dim); margin:10px 0 0;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+.toast{
+  position:fixed; left:50%; bottom:26px; transform:translateX(-50%) translateY(20px);
+  background:var(--panel-2); border:1px solid var(--line); color:var(--ink);
+  padding:11px 18px; border-radius:99px; font-size:13px; font-weight:600;
+  opacity:0; pointer-events:none; transition:all .22s; z-index:80;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.toast.on{opacity:1; transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎬 PLOT 숏폼 양식</h1>
+  <span class="count" id="count">0편</span>
+</header>
+
+<div class="wrap">
+  <div class="formCol">
+    <div id="blocks"></div>
+    <button class="addBtn" id="add">＋ 영상 추가</button>
+    <div class="summary" id="summary"></div>
+    <div id="outsideBar" hidden>
+      <button class="btn primary" id="copyBtn" style="width:100%">📋 양식 텍스트 복사</button>
+      <pre class="form" id="formOut"></pre>
+    </div>
+  </div>
+
+  <div class="previewCol">
+    <div class="stage"><div class="frame" id="frame">
+      <div class="logo" id="pvLogo"></div>
+      <div class="catBar"></div>
+      <div class="cat"   id="pvCat"></div>
+      <div class="line hook"   id="pvHook"></div>
+      <div class="line artist" id="pvArtist"></div>
+      <div class="line title"  id="pvTitle"></div>
+      <div class="src" id="pvSrc"></div>
+    </div></div>
+    <div class="side">
+      <div class="pvHead"><b>미리보기</b><span id="pvWhich"></span></div>
+      <div class="pvStatus" id="pvStatus"></div>
+      <div class="pvNote">완성본 1080×1920 기준 글자 배치입니다.<br>실제 영상·애니메이션은 제작 후 확인하세요.</div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script>
+const LOGO = "data:image/png;base64,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";
+</script>
+<script>
+/* PLOT 숏폼 양식 미니앱
+ *
+ * 하는 일은 하나다: 봇이 이미 잘 읽는 [영상] 양식 텍스트를 만들어 보낸다.
+ * 파싱 규칙을 여기서 새로 만들지 않고 bot/telegram_bot.py 의 parse_simple_format
+ * 검증을 그대로 옮겨 두었다. 웹에서 통과하면 봇에서도 통과한다.
+ *
+ * 텔레그램 안에서는 WebApp.sendData 로 봇에게 곧장 간다 — 서버도 토큰도 필요 없다.
+ * 밖(일반 브라우저)에서 열면 양식 텍스트를 복사해서 쓸 수 있게 떨어진다.
+ */
+'use strict';
+
+const TG = window.Telegram && window.Telegram.WebApp;
+const IN_TG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
+
+/* ── 카테고리: 봇의 CTA 매핑(_CTA_FMT_MAP)과 같은 표기를 쓴다 ── */
+const CATS = ['New release!', 'Issue', '오늘의 노래', '특집', '데일리', '인터뷰', '라이브'];
+/* 출처 라벨: generators/credit.py 의 KNOWN_LABELS */
+const LABELS = ['출처','제공','촬영','직접촬영','사진','영상','자료','협찬','취재','디자인','그래픽','번역'];
+
+const $ = (s, r) => (r || document).querySelector(s);
+const el = (t, c) => { const n = document.createElement(t); if (c) n.className = c; return n; };
+
+/* ── 상태 ─────────────────────────────────────────────── */
+let blocks = [];
+let active = 0;
+let seq = 0;
+
+function blank() {
+  return { id: ++seq, cat: 'New release!', custom: '', url: '', send: false,
+           start: '', end: '', title: '', artist: '', feat: '', hook: '', source: '' };
+}
+
+/* ── 검증 (parse_simple_format 과 동일 규칙) ───────────── */
+function toSec(v) {
+  const s = (v || '').trim();
+  if (!s) return null;
+  if (!/^[\d:.]+$/.test(s)) return null;
+  const parts = s.split(':');
+  if (parts.length > 3) return null;
+  let out = 0;
+  for (const p of parts) {
+    if (p === '' || isNaN(Number(p))) return null;
+    out = out * 60 + Number(p);
+  }
+  return out;
+}
+
+function check(b) {
+  const e = {};
+  const cat = (b.cat === '__custom__' ? b.custom : b.cat).trim();
+  if (!cat) e.cat = '카테고리를 정해주세요.';
+
+  const url = b.url.trim();
+  if (!b.send) {
+    if (!url) e.url = 'URL을 넣거나 「영상 직접 전송」을 켜주세요.';
+    else if (!/^https?:\/\//i.test(url)) e.url = 'http 로 시작하는 주소여야 합니다.';
+  }
+
+  const hasSpan = !!(b.start.trim() || b.end.trim());
+  if (!b.send && !hasSpan) {
+    e.span = '구간이 필요합니다. (예: 1:09 – 1:23)';
+  } else if (hasSpan) {
+    const s = toSec(b.start), t = toSec(b.end);
+    if (s === null || t === null) e.span = '시간 형식이 아닙니다. (예: 1:09)';
+    else if (t <= s) e.span = '끝이 시작보다 뒤여야 합니다.';
+  }
+
+  if (!b.title.trim())  e.title  = '곡 제목은 필수입니다.';
+  if (!b.source.trim()) e.source = '출처는 필수입니다.';
+  return e;
+}
+
+/* ── 출처 표기 (credit.py credit_line 이식) ────────────── */
+function creditLine(raw) {
+  let t = (raw || '').trim().replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1').trim();
+  if (!t) return '';
+  if (/^출처\s*:/.test(t)) t = t.replace(/^출처\s*:/, '').trim();
+  if (t.includes('|')) {
+    const i = t.indexOf('|');
+    const lab = t.slice(0, i).trim() || '출처';
+    const val = t.slice(i + 1).trim();
+    return val ? lab + ': ' + val : lab;
+  }
+  for (const lab of LABELS) {
+    if (t === lab) return lab;
+    for (const sep of [' ', ':', '·', '-']) {
+      if (t.startsWith(lab + sep)) {
+        const val = t.slice(lab.length + sep.length).trim();
+        return val ? lab + ': ' + val : lab;
+      }
+    }
+  }
+  return '출처: ' + t;
+}
+
+/* ── 양식 텍스트 만들기 ────────────────────────────────── */
+function blockText(b) {
+  const cat = (b.cat === '__custom__' ? b.custom : b.cat).trim();
+  const span = (b.start.trim() || b.end.trim())
+    ? b.start.trim() + '-' + b.end.trim() : '';
+  return ['[영상]',
+    '카테고리: ' + cat,
+    'URL: ' + (b.send ? '' : b.url.trim()),
+    '구간: ' + span,
+    '곡: ' + b.title.trim(),
+    '아티스트: ' + b.artist.trim(),
+    '피처링: ' + b.feat.trim(),
+    '후킹: ' + b.hook.trim(),
+    '출처: ' + b.source.trim(),
+  ].join('\n');
+}
+const formText = () => blocks.map(blockText).join('\n\n');
+
+/* ── 블록 DOM ─────────────────────────────────────────
+ * 블록마다 한 번만 그리고 이후엔 값만 갱신한다.
+ * 입력할 때마다 다시 그리면 휴대폰에서 커서가 튄다.
+ */
+function buildBlock(b) {
+  const root = el('div', 'block');
+  root.dataset.id = b.id;
+
+  const head = el('div', 'bhead');
+  const num = el('div', 'bnum');
+  const ttl = el('div', 'btitle');
+  const badge = el('span', 'badge');
+  const chev = el('span', 'chev'); chev.textContent = '▸';
+  head.append(num, ttl, badge, chev);
+
+  const body = el('div', 'bbody');
+  body.innerHTML = `
+    <label>카테고리</label>
+    <div class="chips" data-r="chips"></div>
+    <input type="text" data-f="custom" placeholder="카테고리 직접 입력" hidden>
+
+    <label>원본 <span class="opt">— 유튜브 등 주소, 또는 영상 직접 전송</span></label>
+    <input type="text" data-f="url" inputmode="url" placeholder="https://...">
+    <div class="srcToggle" data-r="toggle">
+      <input type="checkbox" data-f="send">
+      <span>영상 직접 전송
+        <small>주소 대신 텔레그램으로 영상 파일을 보냅니다. 구간을 비우면 영상 전체를 씁니다.</small>
+      </span>
+    </div>
+    <div class="hint" data-r="urlErr" hidden></div>
+
+    <label>구간 <span class="opt">— 분:초</span></label>
+    <div class="row">
+      <input type="text" data-f="start" inputmode="numeric" placeholder="1:09">
+      <input type="text" data-f="end"   inputmode="numeric" placeholder="1:23">
+    </div>
+    <div class="hint" data-r="spanErr" hidden></div>
+
+    <label>곡</label>
+    <input type="text" data-f="title" placeholder="곡 제목">
+    <div class="hint" data-r="titleErr" hidden></div>
+
+    <label>아티스트</label>
+    <input type="text" data-f="artist" placeholder="아티스트명">
+
+    <label>피처링 <span class="opt">— 선택, 적은 그대로 제목 옆에 붙습니다</span></label>
+    <input type="text" data-f="feat" placeholder="(feat. ...)">
+
+    <label>후킹 <span class="opt">— 선택, 제목 위 한 줄</span></label>
+    <input type="text" data-f="hook" placeholder="짧은 한마디">
+
+    <label>출처</label>
+    <input type="text" data-f="source" placeholder="하이브 / 제공 | 하이브 / 촬영 | PLOT">
+    <div class="hint" data-r="srcErr" hidden></div>
+
+    <div class="bfoot">
+      <button class="btn" data-a="dup">복제</button>
+      <button class="btn danger" data-a="del">🗑 삭제</button>
+    </div>`;
+
+  // 카테고리 칩
+  const chips = $('[data-r=chips]', body);
+  CATS.concat(['__custom__']).forEach(c => {
+    const chip = el('button', 'chip');
+    chip.type = 'button';
+    chip.textContent = c === '__custom__' ? '✏️ 직접' : c;
+    chip.onclick = () => { b.cat = c; sync(); refresh(); };
+    chip.dataset.cat = c;
+    chips.append(chip);
+  });
+
+  // 입력 바인딩
+  body.querySelectorAll('[data-f]').forEach(inp => {
+    const f = inp.dataset.f;
+    const ev = inp.type === 'checkbox' ? 'change' : 'input';
+    inp.addEventListener(ev, () => {
+      b[f] = inp.type === 'checkbox' ? inp.checked : inp.value;
+      refresh();
+    });
+    inp.addEventListener('focus', () => { active = blocks.indexOf(b); refresh(); });
+  });
+
+  head.onclick = () => {
+    const open = root.classList.contains('open');
+    document.querySelectorAll('.block').forEach(n => n.classList.remove('open'));
+    if (!open) { root.classList.add('open'); active = blocks.indexOf(b); }
+    refresh();
+  };
+  $('[data-a=dup]', body).onclick = () => {
+    const copy = Object.assign({}, b, { id: ++seq });
+    blocks.splice(blocks.indexOf(b) + 1, 0, copy);
+    active = blocks.indexOf(copy); render();
+  };
+  $('[data-a=del]', body).onclick = () => {
+    if (blocks.length === 1) { toast('최소 한 편은 있어야 합니다'); return; }
+    blocks.splice(blocks.indexOf(b), 1);
+    active = Math.max(0, active - 1); render();
+  };
+
+  root.append(head, body);
+  root._parts = { num, ttl, badge, body };
+  return root;
+}
+
+/* 값 → DOM 반영 (다시 그리지 않는다) */
+function sync() {
+  blocks.forEach(b => {
+    const root = document.querySelector('.block[data-id="' + b.id + '"]');
+    if (!root) return;
+    const body = root._parts.body;
+    body.querySelectorAll('[data-f]').forEach(inp => {
+      const v = b[inp.dataset.f];
+      if (inp.type === 'checkbox') { if (inp.checked !== v) inp.checked = v; }
+      else if (inp.value !== v && document.activeElement !== inp) inp.value = v;
+    });
+    body.querySelectorAll('.chip').forEach(c =>
+      c.classList.toggle('on', c.dataset.cat === b.cat));
+    $('[data-f=custom]', body).hidden = b.cat !== '__custom__';
+    // 직접 전송이면 URL 칸은 잠근다 — 둘 다 채우면 무엇이 쓰일지 헷갈린다.
+    const u = $('[data-f=url]', body);
+    u.disabled = b.send;
+    u.style.opacity = b.send ? .4 : 1;
+  });
+}
+
+function render() {
+  const host = $('#blocks');
+  host.innerHTML = '';
+  blocks.forEach(b => host.append(buildBlock(b)));
+  const cur = host.children[active];
+  if (cur) cur.classList.add('open');
+  sync(); refresh();
+}
+
+/* ── 갱신: 헤더·배지·미리보기·요약·MainButton ──────────── */
+function refresh() {
+  sync();
+  const errs = blocks.map(check);
+
+  blocks.forEach((b, i) => {
+    const root = document.querySelector('.block[data-id="' + b.id + '"]');
+    if (!root) return;
+    const { num, ttl, badge, body } = root._parts;
+    const e = errs[i];
+    num.textContent = i + 1;
+    const cat = (b.cat === '__custom__' ? b.custom : b.cat).trim();
+    ttl.innerHTML = (b.title.trim() || '<span class="sub">제목 없음</span>') +
+      (b.artist.trim() ? ' <span class="sub">— ' + escapeHtml(b.artist.trim()) + '</span>'
+                       : '') +
+      (cat ? ' <span class="sub">· ' + escapeHtml(cat) + '</span>' : '');
+    const n = Object.keys(e).length;
+    badge.className = 'badge ' + (n ? 'err' : b.send ? 'send' : '');
+    badge.textContent = n ? n + '개 확인' : b.send ? '영상 전송' : '';
+    badge.hidden = !n && !b.send;
+    root.classList.toggle('bad', n > 0);
+    root.classList.toggle('active', i === active);
+
+    const put = (r, msg, f) => {
+      const box = $('[data-r=' + r + ']', body);
+      box.hidden = !msg; box.textContent = msg || ''; box.className = 'hint bad';
+      if (f) $('[data-f=' + f + ']', body).classList.toggle('bad', !!msg);
+    };
+    put('urlErr', e.url, 'url');
+    put('spanErr', e.span);
+    put('titleErr', e.title, 'title');
+    put('srcErr', e.source, 'source');
+    $('[data-f=start]', body).classList.toggle('bad', !!e.span);
+    $('[data-f=end]', body).classList.toggle('bad', !!e.span);
+  });
+
+  $('#count').textContent = blocks.length + '편';
+  drawPreview(blocks[active] || blocks[0]);
+  drawSummary(errs);
+
+  const bad = errs.filter(e => Object.keys(e).length).length;
+  const st = $('#pvStatus');
+  if (st) {
+    st.className = 'pvStatus ' + (bad ? 'bad' : overflow.length ? 'warn' : 'ok');
+    st.textContent = bad ? '확인이 필요한 편 ' + bad + '개'
+      : overflow.length ? overflow.join('·') + ' 글자가 넘침'
+      : blocks.length + '편 준비됨';
+  }
+  const label = bad ? '확인이 필요한 편 ' + bad + '개'
+                    : blocks.length + '편 대기열에 넣기';
+  if (IN_TG) {
+    TG.MainButton.setText(label);
+    if (bad) TG.MainButton.disable(); else TG.MainButton.enable();
+    TG.MainButton.color = bad ? '#3a3f4d' : '#6f8cff';
+    TG.MainButton.show();
+  } else {
+    $('#formOut').textContent = formText();
+  }
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+/* ── 미리보기 ─────────────────────────────────────────── */
+function drawPreview(b) {
+  if (!b) return;
+  const cat = (b.cat === '__custom__' ? b.custom : b.cat).trim();
+  $('#pvCat').textContent = cat;
+  $('#pvHook').textContent = b.hook.trim();
+  $('#pvArtist').textContent = b.artist.trim();
+  const t = $('#pvTitle');
+  t.textContent = b.title.trim();
+  if (b.feat.trim()) {
+    const s = el('span', 'suffix'); s.textContent = b.feat.trim(); t.append(s);
+  }
+  $('#pvSrc').textContent = creditLine(b.source);
+  $('#pvWhich').textContent = blocks.length > 1
+    ? (blocks.indexOf(b) + 1) + '번째 편' : '';
+
+  // 1080 폭을 넘는 줄에 표시를 남긴다 — 완성본에서 잘리는 건 여기서 알아야 한다.
+  const names = { '#pvCat': '카테고리', '#pvHook': '후킹', '#pvArtist': '아티스트', '#pvTitle': '곡 제목' };
+  overflow = [];
+  Object.keys(names).forEach(sel => {
+    const n = $(sel);
+    const left = parseFloat(getComputedStyle(n).left) || 0;
+    const over = left + n.scrollWidth > 1080 - 40;
+    n.classList.toggle('over', over);
+    if (over) overflow.push(names[sel]);
+  });
+}
+let overflow = [];
+
+function fitStage() {
+  const stage = $('.stage'), frame = $('#frame');
+  if (!stage) return;
+  frame.style.transform = 'scale(' + (stage.clientWidth / 1080) + ')';
+}
+
+/* ── 요약 ─────────────────────────────────────────────── */
+function drawSummary(errs) {
+  const box = $('#summary');
+  const bad = [];
+  errs.forEach((e, i) => {
+    Object.values(e).forEach(m => bad.push((i + 1) + '번 · ' + m));
+  });
+  const sends = blocks.filter(b => b.send).length;
+  const lines = [];
+  if (bad.length) {
+    bad.slice(0, 6).forEach(m => lines.push(['❗', 'bad', m]));
+    if (bad.length > 6) lines.push(['·', 'bad', '외 ' + (bad.length - 6) + '건']);
+  } else {
+    lines.push(['✓', 'ok', blocks.length + '편 모두 보낼 준비가 됐습니다.']);
+    if (overflow.length) lines.push(['✂️', 'warn',
+      overflow.join(' · ') + '이(가) 화면 폭을 넘습니다. 완성본에서 잘릴 수 있어요.']);
+    if (sends) lines.push(['🎞', 'warn',
+      '영상 ' + sends + '개는 보낸 뒤 텔레그램으로 파일을 올려주시면 제작이 시작됩니다.']);
+    lines.push(['📋', '', '제작은 대기열에서 순서대로 진행되고, 완성되는 대로 하나씩 도착합니다.']);
+  }
+  box.innerHTML = lines.map(([ic, cls, m]) =>
+    '<div class="ln"><span class="ic">' + ic + '</span><span class="' + cls + '">' +
+    escapeHtml(m) + '</span></div>').join('');
+}
+
+/* ── 보내기 ───────────────────────────────────────────── */
+function submit() {
+  const bad = blocks.map(check).filter(e => Object.keys(e).length).length;
+  if (bad) { toast('확인이 필요한 편이 있습니다'); return; }
+  const text = formText();
+  // sendData 상한은 4096 '바이트' — 한글 한 글자가 3바이트라 글자 수로 재면 안 된다.
+  const bytes = new TextEncoder().encode(text).length;
+  if (bytes > 3900) {
+    toast('양식이 너무 깁니다 (' + bytes + '/4096). 편 수를 줄여주세요'); return;
+  }
+  if (IN_TG) {
+    try { TG.HapticFeedback.notificationOccurred('success'); } catch (_) {}
+    TG.sendData(text);                // 봇으로 전달 후 미니앱이 닫힌다
+  } else {
+    copy(text);
+  }
+}
+
+function copy(text) {
+  const done = () => toast('복사했습니다 — 봇에 붙여넣으세요');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done, () => fallback());
+  } else fallback();
+  function fallback() {
+    const ta = el('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.append(ta); ta.select();
+    try { document.execCommand('copy'); done(); } catch (_) { toast('복사에 실패했습니다'); }
+    ta.remove();
+  }
+}
+
+let toastT;
+function toast(msg) {
+  const t = $('#toast');
+  t.textContent = msg; t.classList.add('on');
+  clearTimeout(toastT);
+  toastT = setTimeout(() => t.classList.remove('on'), 2000);
+}
+
+/* ── 시작 ─────────────────────────────────────────────── */
+function boot() {
+  $('#pvLogo').style.backgroundImage = 'url(' + LOGO + ')';
+
+  if (IN_TG) {
+    TG.ready(); TG.expand();
+    try { TG.setHeaderColor('#12131a'); TG.setBackgroundColor('#12131a'); } catch (_) {}
+    TG.MainButton.onClick(submit);
+    try { TG.enableClosingConfirmation(); } catch (_) {}
+  } else {
+    $('#outsideBar').hidden = false;
+    $('#copyBtn').onclick = submit;
+  }
+
+  // 폰에서는 썸네일이 작다 — 탭하면 전체화면으로 키운다.
+  const col = $('.previewCol');
+  $('.stage').addEventListener('click', () => {
+    col.classList.toggle('big');
+    requestAnimationFrame(fitStage);
+  });
+
+  blocks = [blank()];
+  render();
+  fitStage();
+  window.addEventListener('resize', fitStage);
+  // 폰트가 늦게 오면 미리보기 폭 계산이 틀어진다 — 로드 후 한 번 더.
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => refresh());
+
+  $('#add').onclick = () => {
+    blocks.push(blank()); active = blocks.length - 1; render();
+    document.querySelectorAll('.block')[active]
+      .scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+}
+document.addEventListener('DOMContentLoaded', boot);
+
+</script>
+</body>
+</html>
+
+<script>
+(function () {
+  function put() {
+    var a = document.createElement('a');
+    a.href = './';
+    a.textContent = '← PLOT 제작';
+    a.setAttribute('aria-label', 'PLOT 제작 홈으로');
+    var base = 'font:600 12px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
+               'color:inherit;opacity:.62;text-decoration:none;white-space:nowrap;' +
+               'padding:6px 10px;border-radius:99px;border:1px solid currentColor;' +
+               'flex:none;';
+    var h = document.querySelector('header');
+    if (h) {
+      a.style.cssText = base + 'margin-right:10px;';
+      h.insertBefore(a, h.firstChild);
+    } else {
+      a.style.cssText = base +
+        'position:fixed;left:10px;top:10px;z-index:9999;background:rgba(0,0,0,.45);' +
+        'color:#fff;backdrop-filter:blur(8px);';
+      document.body.appendChild(a);
+    }
+  }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', put);
+  else put();
+})();
+</script>
