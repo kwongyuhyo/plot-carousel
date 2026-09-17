@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="오퍼레이션">
+<meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+<title>플루토 오퍼레이션</title>
+<style>
+/* PLOT 제작 앱과 같은 토큰을 쓴다 — 두 앱을 오갈 때 눈이 다시 적응하지 않도록. */
+:root{
+  --bg:#0A0A0C; --panel:#131318; --raise:#1B1B22; --line:#2A2A34;
+  --text:#ECECF1; --muted:#8A8A96; --dim:#5E5E6A;
+  --amber:#E8B34A; --danger:#C75B4A; --focus:#7C7CF0;
+  --ok:#5FB98B; --hold:#C9A24A;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+/* 폰트는 싣지 않는다. 캐러셀 스튜디오는 픽셀을 맞춰야 해서 woff2 를 심었지만
+   이 앱은 "폰에서 급할 때 연다"가 전부라 1.7MB 를 받게 할 이유가 없다.
+   Pretendard 가 기기에 있으면 쓰고, 없으면 시스템 글꼴로 떨어진다. */
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Pretendard-SemiBold",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI",sans-serif;
+  font-size:15px;line-height:1.55;-webkit-text-size-adjust:100%;
+  word-break:keep-all;overflow-wrap:anywhere}
+h1,h2,h3{font-family:"Pretendard-ExtraBold","Pretendard-SemiBold",Pretendard,sans-serif;margin:0;font-weight:400}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input{font:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.muted{color:var(--muted)}
+.mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+
+/* ── 셸 ─────────────────────────────────────────────── */
+.shell{display:grid;grid-template-columns:180px minmax(0,1fr);max-width:1200px;margin:0 auto;min-height:100vh}
+.rail{border-right:1px solid var(--line);padding:16px 12px 28px;position:sticky;top:0;
+  max-height:100vh;overflow-y:auto;background:var(--panel)}
+.brand{display:flex;align-items:baseline;gap:6px;padding:0 6px 13px;border-bottom:1px solid var(--line)}
+.brand b{font-size:15px;font-family:"Pretendard-ExtraBold",Pretendard,sans-serif;font-weight:400}
+.brand span{font-size:9.5px;letter-spacing:.1em;color:var(--dim);text-transform:uppercase}
+.navs{display:flex;flex-direction:column;gap:2px;margin-top:11px}
+.nv{display:flex;align-items:center;gap:8px;padding:7px 9px;border-radius:5px;color:var(--muted);
+  text-align:left;width:100%;font-size:13.5px}
+.nv:hover{background:var(--raise);color:var(--text)}
+.nv[aria-current="page"]{background:var(--raise);color:var(--text);font-family:"Pretendard-ExtraBold",Pretendard,sans-serif}
+.nv .ct{margin-left:auto;font-size:10.5px;color:var(--dim)}
+.nv[aria-current="page"] .ct{color:var(--amber)}
+.railfoot{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);
+  font-size:10.5px;color:var(--dim);line-height:1.5;padding-left:6px}
+
+.main{min-width:0;padding-bottom:96px}
+.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);
+  padding:15px 20px 12px}
+.vt{display:flex;flex-wrap:wrap;align-items:baseline;gap:9px}
+.vt h1{font-size:19px;letter-spacing:-.01em}
+.vt .sub{font-size:12.5px;color:var(--muted)}
+.vt .stamp{margin-left:auto;font-size:11.5px;color:var(--dim)}
+.view{padding:16px 20px 0}
+
+/* ── 블록·항목 ───────────────────────────────────────── */
+.blk{margin-bottom:24px}
+.bh{display:flex;align-items:baseline;gap:8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.bh h2{font-size:14px}
+.bh p{margin:0;font-size:11.5px;color:var(--dim)}
+.bh .n{margin-left:auto;font-size:11px;color:var(--dim)}
+
+.it{display:grid;grid-template-columns:22px minmax(0,1fr);gap:0 9px;padding:9px 0;
+  border-bottom:1px solid var(--line);align-items:start}
+.it:last-child{border-bottom:0}
+.it.done .ttl{text-decoration:line-through;color:var(--dim)}
+.it.done .nn{opacity:.4}
+.mk{width:16px;height:16px;margin-top:3px;border-radius:3px;border:1.5px solid var(--dim);
+  position:relative;flex:0 0 auto}
+.mk:hover{border-color:var(--focus)}
+.mk[data-k="recur"]{border-radius:50%}
+.mk[data-k="track"]{border-style:dashed;cursor:default;opacity:.4}
+.mk.on{background:var(--focus);border-color:var(--focus)}
+.mk[data-k="recur"].on{background:var(--ok);border-color:var(--ok)}
+.mk.on::after{content:"";position:absolute;left:4px;top:1px;width:4px;height:8px;
+  border:solid var(--bg);border-width:0 1.6px 1.6px 0;transform:rotate(42deg)}
+.itop{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline}
+.ttl{font-size:14px;line-height:1.45;cursor:pointer;
+  font-family:"Pretendard-ExtraBold",Pretendard,sans-serif;font-weight:400}
+.ttl[data-k="track"]{cursor:default}
+.tg{font-size:10.5px;padding:1px 6px;border-radius:3px;flex:0 0 auto;background:var(--raise);color:var(--muted)}
+.tg.s-막힘{background:#2A1614;color:var(--danger)}
+.tg.s-진행{background:#122019;color:var(--ok)}
+.tg.s-대기{background:#221D0E;color:var(--hold)}
+.tg.s-확인필요{background:transparent;color:var(--amber);box-shadow:inset 0 0 0 1px var(--amber)}
+.tg.s-상시{background:#16162A;color:var(--focus)}
+.ow{font-size:10.5px;color:var(--dim);padding:1px 6px;border-radius:3px;
+  box-shadow:inset 0 0 0 1px var(--line);flex:0 0 auto}
+.sc{font-size:10px;padding:1px 5px;border-radius:3px;flex:0 0 auto}
+.sc.solo{background:#1E1526;color:#B58FC4}
+.sc.both{background:#251C10;color:var(--amber)}
+.sc.mac{background:var(--raise);color:var(--muted)}
+.dt{font-size:10.5px;padding:1px 6px;border-radius:3px;background:var(--raise);color:var(--muted);flex:0 0 auto}
+.dt.late{background:#2A1614;color:var(--danger)}
+.pr{font-size:9.5px;letter-spacing:.06em;color:var(--danger);padding:0 4px;border-radius:3px;
+  box-shadow:inset 0 0 0 1px var(--danger);flex:0 0 auto}
+.nn{margin:3px 0 0;font-size:12.5px;color:var(--muted);line-height:1.55}
+.ww{margin:4px 0 0;font-size:12px;color:var(--amber);line-height:1.5;padding-left:9px;
+  box-shadow:inset 2px 0 0 -0.5px #3A2C10}
+
+/* ── 회차 ───────────────────────────────────────────── */
+.sr{border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:13px 15px;margin-bottom:11px}
+.srh{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
+.srh b{font-size:15px;font-family:"Pretendard-ExtraBold",Pretendard,sans-serif;font-weight:400}
+.srh span{font-size:12px;color:var(--muted)}
+.pipe{display:flex;gap:3px;margin-top:10px}
+.pg{flex:1;padding:6px 3px;text-align:center;font-size:10.5px;border-radius:4px;
+  background:var(--raise);color:var(--dim)}
+.pg.done{background:#122019;color:var(--ok)}
+.pg.at{background:var(--focus);color:#0A0A0C}
+.srm{margin:9px 0 0;font-size:12.5px;color:var(--text)}
+.srm b{color:var(--muted);font-weight:400}
+.srn{margin:4px 0 0;font-size:12.5px;color:var(--dim)}
+
+/* ── 주간 ───────────────────────────────────────────── */
+.week{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.day{background:var(--panel);min-height:160px;display:flex;flex-direction:column}
+.day.off{background:var(--bg)}
+.day.tdy{box-shadow:inset 0 0 0 2px var(--focus)}
+.dh{padding:7px 9px 6px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:5px}
+.dh b{font-size:12px;font-family:"Pretendard-ExtraBold",Pretendard,sans-serif;font-weight:400}
+.dh span{font-size:10.5px;color:var(--dim)}
+.day.tdy .dh b{color:var(--focus)}
+.db{padding:6px 7px 9px;display:flex;flex-direction:column;gap:4px;flex:1}
+.sl{display:flex;gap:5px;align-items:baseline;font-size:11px;line-height:1.35}
+.sl .tm{font-size:9.5px;color:var(--dim);flex:0 0 auto}
+.sl.auto .nm{color:var(--dim)} .sl.work .nm{color:var(--muted)}
+.sl.meet .nm{color:var(--focus)} .sl.broken .nm{color:var(--danger)}
+.ev{margin-top:3px;padding:5px 7px;border-radius:4px;font-size:11px;line-height:1.35;
+  background:var(--raise);color:var(--muted)}
+.ev.late{background:#2A1614;color:var(--danger)}
+.ev b{display:block;font-weight:400;font-family:"Pretendard-ExtraBold",Pretendard,sans-serif}
+
+.filt{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:13px}
+.ch{font-size:12.5px;padding:4px 11px;border-radius:99px;color:var(--muted);
+  box-shadow:inset 0 0 0 1px var(--line)}
+.ch:hover{color:var(--text)}
+.ch[aria-pressed="true"]{background:var(--text);color:var(--bg);box-shadow:none}
+.empty{padding:30px 0;text-align:center;color:var(--dim);font-size:13px}
+.note{margin:16px 0 0;padding:11px 13px;background:var(--panel);border-radius:6px;
+  font-size:12.5px;color:var(--muted);box-shadow:inset 0 0 0 1px var(--line)}
+.note b{color:var(--text);font-weight:400;font-family:"Pretendard-ExtraBold",Pretendard,sans-serif}
+
+/* ── 명령바 ─────────────────────────────────────────── */
+.cmdwrap{position:fixed;inset:0;z-index:60;background:rgba(6,6,9,.72);
+  display:flex;align-items:flex-start;justify-content:center;padding:14vh 16px 16px}
+.cmd{width:100%;max-width:560px;background:var(--panel);border:1px solid var(--line);
+  border-radius:9px;overflow:hidden;box-shadow:0 22px 60px rgba(0,0,0,.6)}
+.cmd input{width:100%;padding:15px 17px;background:none;border:0;color:var(--text);font-size:15.5px;
+  border-bottom:1px solid var(--line)}
+.cmd input::placeholder{color:var(--dim)}
+.cmdlist{max-height:46vh;overflow-y:auto}
+.cmdrow{display:flex;gap:9px;align-items:baseline;width:100%;padding:9px 17px;text-align:left;
+  font-size:13.5px;color:var(--muted)}
+.cmdrow[aria-selected="true"]{background:var(--raise);color:var(--text)}
+.cmdrow .k{font-size:10px;color:var(--dim);flex:0 0 auto;
+  box-shadow:inset 0 0 0 1px var(--line);padding:1px 5px;border-radius:3px}
+.cmdrow .m{margin-left:auto;font-size:10.5px;color:var(--dim);flex:0 0 auto}
+.cmdfoot{padding:8px 17px;border-top:1px solid var(--line);font-size:10.5px;color:var(--dim);
+  display:flex;gap:12px;flex-wrap:wrap}
+
+/* ── 편집 패널 ───────────────────────────────────────── */
+.sheet{position:fixed;inset:0;z-index:55;background:rgba(6,6,9,.6);display:flex;
+  align-items:stretch;justify-content:flex-end}
+.pane{width:min(430px,100%);background:var(--panel);border-left:1px solid var(--line);
+  overflow-y:auto;padding:17px 19px 40px}
+.paneh{display:flex;align-items:baseline;gap:9px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.paneh h3{font-size:14px}
+.paneh .x{margin-left:auto;color:var(--dim);font-size:12px;padding:3px 7px;border-radius:4px}
+.paneh .x:hover{background:var(--raise);color:var(--text)}
+.fld{margin-top:14px}
+.fld label{display:block;font-size:10.5px;letter-spacing:.05em;color:var(--dim);margin-bottom:5px}
+.fld input,.fld textarea,.fld select{width:100%;background:var(--raise);color:var(--text);
+  border:1px solid var(--line);border-radius:5px;padding:8px 10px;font-size:13.5px;font-family:inherit}
+.fld textarea{min-height:66px;resize:vertical;line-height:1.55}
+.opts{display:flex;flex-wrap:wrap;gap:5px}
+.opt{font-size:12px;padding:4px 10px;border-radius:99px;color:var(--muted);
+  box-shadow:inset 0 0 0 1px var(--line)}
+.opt[aria-pressed="true"]{background:var(--text);color:var(--bg);box-shadow:none}
+.panefoot{display:flex;gap:8px;margin-top:20px;padding-top:14px;border-top:1px solid var(--line);
+  flex-wrap:wrap}
+.btn{font-size:13px;padding:8px 15px;border-radius:5px;background:var(--focus);color:#0A0A0C}
+.btn.ghost{background:none;color:var(--muted);box-shadow:inset 0 0 0 1px var(--line)}
+.btn.warn{background:none;color:var(--danger);box-shadow:inset 0 0 0 1px var(--danger)}
+.btn:hover{filter:brightness(1.08)}
+.edited{font-size:9.5px;color:var(--focus);padding:0 4px;border-radius:3px;
+  box-shadow:inset 0 0 0 1px var(--focus);flex:0 0 auto}
+
+/* ── 사람 ───────────────────────────────────────────── */
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:11px}
+.pcard{border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:13px 15px 15px}
+.pch{display:flex;align-items:baseline;gap:7px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.pch b{font-size:14px;font-family:"Pretendard-ExtraBold",Pretendard,sans-serif;font-weight:400}
+.pch .n{margin-left:auto;font-size:10.5px;color:var(--dim)}
+.pl{display:flex;gap:7px;align-items:baseline;font-size:12.5px;padding:6px 0;
+  border-bottom:1px solid var(--line);line-height:1.45;width:100%;text-align:left}
+.pl:last-child{border-bottom:0}
+.pl .dot{width:5px;height:5px;border-radius:50%;background:var(--dim);flex:0 0 auto;
+  margin-top:7px}
+.pl .dot.막힘{background:var(--danger)} .pl .dot.진행{background:var(--ok)}
+.pl .dot.대기{background:var(--hold)} .pl .dot.상시{background:var(--focus)}
+.pl:hover{color:var(--text)}
+.pmore{font-size:11px;color:var(--dim);padding-top:7px}
+
+/* ── 기록 ───────────────────────────────────────────── */
+.logrow{display:flex;gap:9px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line);
+  font-size:12.5px;color:var(--muted)}
+.logrow .tm{font-size:10.5px;color:var(--dim);flex:0 0 auto;min-width:82px}
+.logrow b{color:var(--text);font-weight:400}
+
+.addbtn{position:fixed;right:18px;bottom:18px;z-index:40;width:48px;height:48px;border-radius:50%;
+  background:var(--focus);color:#0A0A0C;font-size:24px;line-height:1;
+  box-shadow:0 8px 24px rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center}
+
+/* ── 폰 ─────────────────────────────────────────────── */
+.mobnav{display:none}
+@media(max-width:860px){
+  html,body{overflow-x:hidden}
+  .shell{grid-template-columns:1fr}
+  .shell>*{min-width:0}
+  .rail{display:none}
+  .top{padding:12px 14px 10px}
+  .view{padding:13px 14px 0}
+  .main{padding-bottom:78px}
+  .week{grid-template-columns:1fr}
+  .day{min-height:auto}
+  .vt h1{font-size:17px}
+  .mobnav{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;bottom:0;left:0;right:0;
+    background:var(--panel);border-top:1px solid var(--line);z-index:30;
+    padding-bottom:env(safe-area-inset-bottom,0px)}
+  .mobnav button{padding:9px 1px 10px;font-size:10px;color:var(--muted);
+    display:flex;flex-direction:column;align-items:center;gap:2px;min-height:48px;justify-content:center}
+  .mobnav button[aria-current="page"]{color:var(--focus)}
+  .mobnav .bn{font-size:9.5px;color:var(--dim)}
+  .mobnav button[aria-current="page"] .bn{color:var(--focus)}
+  .sheet{align-items:flex-end}
+  .pane{width:100%;max-height:88vh;border-left:0;border-top:1px solid var(--line);
+    border-radius:12px 12px 0 0;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+  .cmdwrap{padding-top:8vh}
+  .addbtn{bottom:calc(70px + env(safe-area-inset-bottom,0px));right:14px}
+  .people{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div id="app"></div>
+<script id="data" type="application/json">{"asof":"2026-09-17","scanAt":"2026-09-17 08:06 KST","lanes":[{"id":"mag","n":"매거진"},{"id":"prog","n":"프로그램"},{"id":"tech","n":"기술·봇"},{"id":"biz","n":"외주·관계"},{"id":"rev","n":"수익화"},{"id":"ops","n":"운영·문서"},{"id":"gear","n":"장비·공간"},{"id":"side","n":"외부·행정"},{"id":"frozen","n":"동결"}],"owners":{"kyu":"규효","sub":"서브 PD","techj":"기술 합류","tech":"기술팀","yun":"이윤석","jun":"고준석","ext":"외부","tbd":"미정"},"alerts":[{"sev":"warn","t":"미커밋 39건 · SENE 19 · HEALIN 20","d":"PLOT은 9/16 커밋 완료","x":"HEALIN은 원격 저장소 자체가 없어 로컬에만 있다 — GitHub에 빈 저장소 만들고 remote 연결이 먼저. SENE의 format_flow는 untracked 신규."},{"sev":"crit","t":"Gmail 커넥터 단절","d":"14일 · 10회 연속","x":"needs_reconnect · enabledInChat false. 재인증과 예약 작업 토글 둘 다 해야 함. 서울아츠어워즈 발주처 회신·POV 회신 확인이 전부 여기 막혀 있음."},{"sev":"crit","t":"SENE 경쟁사 엔진 2슬롯 연속 누락","d":"다음 슬롯 9/21 06:00","x":"launchd 미설치. 9/14·9/17 연속으로 비었고 스냅샷이 6월 1일 1회분뿐이라 30일 윈도우 밖. 수동 1회 실행과 launchd 등록을 같은 세션에서."},{"sev":"warn","t":"국내 피드 9건 수집 실패","d":"13일 연속","x":"khan_music·khan_ent(403) · hiphople·rhythmer(fetch failed) · hiphopplaya(429) · eyesmag(404) · weiv(403) · glowupmag·visla(셀렉터 0건). starnews는 손 안 대고 회복 — 429·403은 UA·지연으로 상당수 살아남."},{"sev":"warn","t":"워치리스트 밀도 급락","d":"9/16","x":"9/15 56곡 28.0% → 9/16 48곡 24.0%. 국내 소스가 비어 있는 상태라 원인 분리가 어려움."},{"sev":"ok","t":"plot-scan 13일 연속 green","d":"9/4~9/16","x":"GitHub Actions에 얹힌 자동화는 무사고. 맥에 붙은 자동화만 사람이 앉는 날에 돎 — 이관 판단의 근거."},{"sev":"ok","t":"캐러셀 보너스 첫 달 달성","d":"3개월 중 1","x":"9월 약 180만. 10월·11월 유지가 남음. 릴스 5,000만은 집계 대상 아님."}],"rhythm":[{"t":"관제 갱신","time":"08:06","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"차트 수집","time":"07:35","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"오음소 발행","time":"12:05","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"근무 시작 · 소스 수집·기획","time":"13:00","days":[1,2,4,5],"kind":"work","note":"규효"},{"t":"주간 분석 리포트","time":"13:00","days":[4],"kind":"auto","note":"자동"},{"t":"마무리","time":"18:00","days":[1,2,4,5],"kind":"work","note":"규효"},{"t":"매거진 브리프","time":"18:10","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"이슈 레이더","time":"22:00","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"SENE 경쟁사 엔진","time":"06:00","days":[1,4],"kind":"broken","note":"launchd 미설치"}],"items":[{"id":"a1","l":"biz","o":"kyu","k":"once","s":"진행","d":null,"h":"now","p":2,"t":"서울아츠어워즈 종편 마무리","n":"가편 컨펌 완료 · 9/17 종편 v1 렌더(6분 07초). 이후는 규효가 직접 처리","w":null,"scope":"team","mac":true,"done":false},{"id":"a2","l":"prog","o":"kyu","k":"once","s":"막힘","d":"2026-09-14","h":"now","p":1,"t":"파일럿 컨택 1차 발송","n":"SESSION부터 2~3명만 채워 먼저. plotmusiclive@gmail.com, 권규효 명의","w":"밴드 편성 필요한 팀은 이번 차수 제외","scope":"team","mac":false,"done":false},{"id":"a3","l":"ops","o":"kyu","k":"once","s":"진행","d":"2026-09-17","h":"now","p":1,"t":"미결 3건 닫기 — 회의 소집","n":"파일럿 컨택 1차 대상 · UNHEARD 진행자·촬영일·편집분담 · HEALIN 인계 조건","w":"주간회의를 접었으므로 이 셋은 스스로 날을 잡아야 닫힘","scope":"team","mac":false,"done":false},{"id":"a4","l":"ops","o":"kyu","k":"once","s":"막힘","d":"2026-09-17","h":"now","p":1,"t":"역할 경계 확정","n":"발행 운영 담당자 지정 + 서브 PD 위임 범위를 1·2·3편 단계로","w":"충원 첫 주에 안 정하면 되돌리기 어려움","scope":"team","mac":false,"done":false},{"id":"a5","l":"tech","o":"kyu","k":"once","s":"막힘","d":"2026-09-20","h":"now","p":1,"t":"SENE 엔진 수동 실행 + launchd 등록","n":"run_competitor_pipeline.sh 1회 + 월·목 06시 등록을 같은 세션에서","w":"9/21 06시 전에 안 하면 세 번째로 놓침. 맥에서만 가능","scope":"team","mac":true,"done":false},{"id":"a6","l":"tech","o":"kyu","k":"once","s":"막힘","h":"now","p":1,"t":"PLOT 앱 시크릿 교체","n":"Meta 대시보드에서 재발급 → .env 교체 → 봇 재기동 → 노출된 대화 삭제","w":"PLOT·To LP·헬스·에디토리얼 4계정이 묶여 있고 Meta 앱 신규 생성이 차단 상태","scope":"team","mac":true,"done":false,"d":null},{"id":"a7","l":"tech","o":"kyu","k":"once","s":"막힘","h":"now","p":1,"t":"미커밋 39건 커밋","n":"맥에서 zsh ~/Projects/commit-all.sh — 시크릿 스캔·그룹별 커밋, push 없음","w":"HEALIN 20건은 인계 전에 반드시. 클라우드에선 불가","scope":"team","mac":true,"done":false,"d":null},{"id":"a8","l":"ops","o":"kyu","k":"once","s":"막힘","h":"now","p":1,"t":"Gmail 커넥터 재인증","n":"설정 → 커넥터 → Gmail 재인증 + 예약 작업의 Gmail 토글. 둘 다 해야 함","w":"하나만 하면 열 번 반복된 결과가 또 나옴","scope":"team","mac":false,"done":false,"d":null},{"id":"b1","l":"prog","o":"kyu","k":"once","s":"대기","h":"week","p":1,"t":"UNHEARD 1호 촬영일 확정","n":"출연자 Yyul 확정됨. 날짜 하나 못 박고 나머지를 맞추기. 편집은 서브 PD에게 통째로","w":"SESSION 발송 회신 처리 시기와 떼어놓기","scope":"team","mac":false,"done":false,"d":null},{"id":"b2","l":"prog","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"라이브클립 A군 6건 발송","n":"초안 21건 대기 중. 호리존·시리즈 규격 고정 명시, 날짜·선곡은 열어두기","w":"파일럿 1차를 먼저 내보낸 뒤 한 텀 두고. C JAMM 핸들은 발송 직전 육안 확인","scope":"team","mac":false,"done":false,"d":null},{"id":"b3","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":1,"t":"히트 캐러셀 구조 문서 1장","n":"9월 히트 3~4편의 공통 구조. 합류 인력의 발주서가 됨","w":"이 문서 없이 인력 투입하면 발행량만 늘고 히트율은 떨어짐","scope":"team","mac":false,"done":false,"d":null},{"id":"b4","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"서브 PD 문서 4종 전달","n":"시리즈 기획안 3건 + 제안 문서 원칙 + 레퍼런스 규칙 + 톤 기준","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"b5","l":"tech","o":"techj","k":"once","s":"대기","h":"week","p":1,"t":"발행 운영 이양","n":"승인 게이트·예약 발행·계정 전환·토큰 만료 대응을 명시적으로","w":"안 넘기면 규효에게 돌아옴","scope":"team","mac":false,"done":false,"d":null},{"id":"b6","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"Notion 정본 4개 섹션 갱신","n":"오늘 회의록 정리하는 김에 같이. PLOT은 '무인런 안정화' 대신 '국내 피드 9건 복구'로","w":"본문이 8월 2일 기준 그대로, 46일","scope":"team","mac":false,"done":false,"d":null},{"id":"b7","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"HEALIN 인계 조건 3줄","n":"미커밋 20건 커밋 · CLAUDE.md를 헬스 내용으로 교체 · 비개발자 가이드","w":"현 상태로 넘기면 비개발자는 첫날부터 막힘","scope":"team","mac":false,"done":false,"d":null},{"id":"b8","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":3,"t":"3트랙 개편 배치 확정","n":"매거진 운영 · 대기획 · 영상 제작. 충원이 정해졌으니 오늘이 닫기 좋은 날","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"b9","l":"rev","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"부수입 경로 택일 또는 중단","n":"저부담이 최우선이면 봇 제작 외주가 먼저 걸러짐","w":"캐러셀 보너스가 같은 자리를 채움 — 접는 쪽을 권함","scope":"solo","mac":false,"done":false,"d":null},{"id":"b10","l":"mag","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"계정 설정 6개 점검","n":"PLOT·SENE·개인. 10분","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c1","l":"tech","o":"tech","k":"once","s":"대기","h":"month","p":2,"t":"국내 피드 9건 복구","n":"403·429·404는 UA·지연 / 셀렉터 0건 2건은 재작성 / fetch failed 2건은 URL 확인","w":"hiphople·hiphopplaya 둘만 살려도 국내 힙합 라인 복구. 맥에서 클론부터","scope":"team","mac":true,"done":false,"d":null},{"id":"c2","l":"mag","o":"kyu","k":"once","s":"대기","h":"month","p":1,"t":"SPOTLIGHT 수집 체계 구축","n":"sources.json에 해외 매체 추가. 국내 소스 복구와 같은 작업에서 처리","w":"같은 파일을 여는 일","scope":"team","mac":false,"done":false,"d":null},{"id":"c3","l":"mag","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"THIS WEEK 자동 수집","n":"feeds.md 인디스트릿 블록에 공연장별 일정 40건이 이미 들어옴. 웹앱 캘린더와 같은 파이프라인","w":"두 번 만들지 않기","scope":"team","mac":false,"done":false,"d":null},{"id":"c4","l":"tech","o":"tech","k":"once","s":"대기","h":"month","p":2,"t":"렌더 큐 상시 워커 연결","n":"bot/render_queue.py 는 이미 있다. 없는 건 이 큐를 항상 돌려줄 워커 — 맥이 꺼지면 큐도 멈춘다","w":"서버 상시화가 먼저 — 이관과 한 묶음","scope":"team","mac":false,"done":false,"d":null},{"id":"c5","l":"tech","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"봇 상시 서버 이관 판정","n":"스튜디오 유휴 데스크탑(GTX 1080) 또는 Synology DS925+. 실측 후 안 되면 Mac mini 안건화","w":"어도비 슬롯 2개가 차 있어 스튜디오 PC에 AE 불가 — AE 없는 경로부터","scope":"team","mac":false,"done":false,"d":null},{"id":"c6","l":"prog","o":"kyu","k":"once","s":"대기","h":"month","p":1,"t":"SESSION 파일럿 제작","n":"세트 규격·인터뷰 방식·회차 공수를 이 편에서 확정. 서브 PD가 전 과정 동행","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c7","l":"prog","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"UNHEARD 파일럿 제작","n":"숏폼 우선. 거리 반응 클립이 본체, 롱폼은 사후에 묶음","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c8","l":"prog","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"청음실 파일럿 제작","n":"선 청취 후 질문 구성. 조명·톤은 기술팀과","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c9","l":"biz","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"견적 3구간표","n":"표준/프리미엄/디럭스 + 앵커링 + 가격 정당화 문장","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c10","l":"biz","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"장비 단가표","n":"자주 쓰는 바디·렌즈 3종의 기간별 할인율까지","w":"FX3급이 업체마다 4만~20만","scope":"team","mac":false,"done":false,"d":null},{"id":"c11","l":"biz","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"문의 응대 템플릿","n":"유사 영상 3개 · 목적과 쓰임새 · 최소–최대 예산을 되묻기","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c12","l":"gear","o":"kyu","k":"once","s":"진행","h":"month","p":2,"t":"4K 캠코더 선정","n":"200만 이하, 소니 E마운트 호환. 핸드헬드 장시간·오토포커스·내장 ND 우선","w":"카메라가 FS7·a7 IV 2대뿐인 게 자체 제작 최대 제약","scope":"team","mac":false,"done":false,"d":null},{"id":"c13","l":"rev","o":"kyu","k":"once","s":"막힘","h":"month","p":2,"t":"Etsy 신원확인 여권 업로드","n":"촬영 → Etsy ID 업로드(South Korea/Passport) → 리스팅 4종. 샵 MindeskCo","w":"57일째 리스팅 4종 전체를 혼자 막고 있음","scope":"solo","mac":false,"done":false,"d":null},{"id":"c14","l":"rev","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"Gumroad 3종 업로드","n":"해빗 $6(런치 $3) · 월아트 $9($5) · 번들 $22($16)","w":"'한도 리셋 후' 조건 — 리셋 여부 먼저 확인","scope":"solo","mac":false,"done":false,"d":null},{"id":"c15","l":"rev","o":"kyu","k":"once","s":"막힘","h":"month","p":2,"t":"서치콘솔 등록 + 사이트맵 제출","n":"QuickCalc 1,151개 SEO 페이지 색인 요청. 사이트 재심사 반복은 무의미","w":"sitemap.xml이 외부에서 텍스트로 안 읽힘 — 처리 상태부터","scope":"solo","mac":false,"done":false,"d":null},{"id":"c16","l":"rev","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"AdSense 지급 프로필 입력","n":"pub-2399943933357247에 이름·주소. Payoneer는 개설됨","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"c17","l":"ops","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"브랜드·보이스·비즈니스 가이드 3종","n":"모든 AI 작업의 첫 입력으로 고정. 캡션 델타 결과가 보이스로","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c18","l":"ops","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"예찬 입대 3값 확인","n":"입대일·신병교육 기간 / 자대 폰 사용 지침 / 겸직·영리행위 규정","w":"외부 협업자 지원이 2개월이라 그 안에 큐까지 올리고 이후 주 3편으로 낮추는 설계가 현실적","scope":"team","mac":false,"done":false,"d":null},{"id":"c19","l":"mag","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"나무위키류 인용 규칙","n":"사실만 취하고 문장은 새로 쓰기. 봇 폼 출처 칸 운용에 반영","w":"CC BY-NC-SA 계열 — 보너스 수익이 붙으면 영리 이용 해석 여지","scope":"team","mac":false,"done":false,"d":null},{"id":"c20","l":"mag","o":"jun","k":"once","s":"대기","h":"month","p":3,"t":"댓글 운영 기준 1장","n":"삭제 대신 숨김·필터 단어를 기본값으로. 삭제는 흔적이 남아 역효과","w":"캐러셀이 보너스 집계 대상이라 댓글 사고 비용이 전보다 큼","scope":"team","mac":false,"done":false,"d":null},{"id":"d1","l":"tech","o":"tech","k":"track","s":"대기","h":"quarter","p":3,"t":"신보 소스 전면 교체","n":"YouTube Data API로 레이블 공식 채널 uploads 폴링. sources.json에 얹기","w":"국내 DSP 전면 차단, Spotify Get New Releases는 2026-02 제거. 파이프라인에 남은 유일한 원천 구멍","scope":"team","mac":false,"done":false,"d":null},{"id":"d2","l":"tech","o":"tech","k":"track","s":"대기","h":"quarter","p":3,"t":"멀티계정 텔레그램 UI","n":"PLOT/SENE 분기, 예약 발행 마이그레이션, 주간 갱신 잡","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d3","l":"tech","o":"tech","k":"track","s":"진행","h":"quarter","p":4,"t":"영상 자동화 Step 3","n":"V9 텍스트 폭 0.95x 후 V4~V7 메타블록 막대바 제거·사이즈 조정","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d4","l":"tech","o":"tech","k":"track","s":"대기","h":"quarter","p":4,"t":"봇 통합 B단계","n":"yt-dlp → /shorts 연결, 컷별 리프레임 승인 플로우","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d5","l":"tech","o":"kyu","k":"track","s":"진행","h":"quarter","p":3,"t":"PLOT 웹앱 v1 — 캘린더 단독","n":"발매는 눌러서 재생, 공연은 눌러서 예매. 인디스트릿 수집기를 데이터 공급원으로","w":"소스가 다른 컴퓨터에 있음","scope":"team","mac":false,"done":false,"d":null},{"id":"d6","l":"side","o":"kyu","k":"track","s":"대기","h":"quarter","p":3,"t":"상표 출원 PLOT·SENE","n":"로고 결합표장으로 2브랜드 × 41류. 약 49만원(우선심사 포함 81만원)","w":"PLOT 표준문자 단독은 식별력 부족으로 거절 위험. 감면제도 적용 여부는 1544-8080","scope":"solo","mac":false,"done":false,"d":null},{"id":"d7","l":"side","o":"kyu","k":"track","s":"대기","h":"quarter","p":3,"t":"1~2월 지원사업","n":"콘진원 글로벌 도약(연 최대 3억) · 언론재단 미디어 스타트업(3천만) · 청년창작자(연 900만) · 청년일자리도약","w":"장려금은 이번 충원과 맞물릴 수 있음 — 채용 형태 확정 전에 요건 확인","scope":"solo","mac":false,"done":false,"d":null},{"id":"d8","l":"side","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"뉴스공장 봇 ★외신 + 맥 스튜디오 배포","n":"구효정 PD PSD 참조. 산돌 기준값 복귀(105px/자간 -50/보정 0)","w":"전체 카드 작업의 33%","scope":"solo","mac":true,"done":false,"d":null},{"id":"d9","l":"mag","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"특집A 실물음반 역성장","n":"한터(실판매)와 써클(출고량) 분리 표기, 2026 상반기 +23.4% 반등 포함","w":"반증 없이 내보내면 틀린 기사","scope":"team","mac":false,"done":false,"d":null},{"id":"d10","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"파키 — 아이목소리 A/B/C 택1","n":"영상 최종본·효과음 v3·다국어 배포세트는 완료. 선택 하나가 배포 전체를 막고 있음","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"d11","l":"prog","o":"kyu","k":"track","s":"막힘","h":"quarter","p":4,"t":"To LP 로고 확정","n":"Claude Design 방향 A/B/C 슬롯이 공란","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d12","l":"prog","o":"yun","k":"track","s":"대기","h":"quarter","p":4,"t":"LP 스피커 구성 + 1회차 선정","n":"","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d13","l":"gear","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"중고 장비 처분","n":"하이밸류 개별 판매 + 저밸류 번들. 목록은 정리됨","w":"FE 24-70 GM은 개인 보유로 제외","scope":"solo","mac":false,"done":false,"d":null},{"id":"d14","l":"gear","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"스튜디오 대관 운영 개선","n":"시리즈 촬영 세트로 상시 고정할지와 맞물림","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d15","l":"tech","o":"kyu","k":"track","s":"막힘","h":"quarter","p":3,"t":"Meta 앱 생성 차단 해제 확인","n":"SENE 다국어·헬스·푸드·액팅 전부가 여기 묶여 있음","w":"풀리는지 모르는 채로 계획이 서 있음","scope":"team","mac":false,"done":false,"d":null},{"id":"d16","l":"rev","o":"kyu","k":"track","s":"동결","h":"someday","p":5,"t":"Pinterest 핀 재개","n":"쿨다운 해제 확인 후 라이브 6사이트에 하루 3~5개","w":"해제 시점 미확인","scope":"solo","mac":false,"done":false,"d":null},{"id":"e1","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":1,"t":"캐러셀 주 5편","n":"바닥 77만을 깔면 히트 한 편으로 100만 돌파. 히트 0인 달의 보험","w":"월 합계의 절반 이상을 히트 서너 편이 만듦","scope":"team","mac":false,"last":null,"d":null},{"id":"e2","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"오늘의 노래","n":"songs.json 순번, 161곡 라이브러리","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"e3","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"신보 카드","n":"평론은 규효, 리서치는 Claude","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"e4","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"이슈·특집 비정기","n":"도달 엔진 — 상한 없음","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"e5","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":3,"t":"예능 컷 숏폼","n":"유입 엔진은 맞음. 비중만 축소","w":"방송 IP 릴로 오리지널리티 경고 1회. 한 번 더면 성장 구간이 끝남","scope":"team","mac":false,"last":null,"d":null},{"id":"e6","l":"side","o":"kyu","k":"recur","s":"상시","h":"now","p":4,"t":"SENE 다국어 QA 검수","n":"로케일별 오역·고유명사·출처","w":"","scope":"solo","mac":false,"last":null,"d":null},{"id":"e7","l":"ops","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"리빙 문서 3종 갱신","n":"액션아이템·의사결정로그·회의록. 완료 액션은 1주 후 제거","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"f1","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"SENE 다국어 계정","n":"Meta 차단 해제 전 착수 불가","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f2","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"푸드 매거진 PLATE/PROOF","n":"환전 루프가 서기 전 브랜드 추가는 조기 다각화","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f3","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"액팅·씨어터 매거진","n":"","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f4","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"해외 대상 한국문화 매거진","n":"브랜드명 미확정. 기획 산출물 보존","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f5","l":"frozen","o":"ext","k":"track","s":"동결","h":"someday","p":9,"t":"HEALIN 독립 운영 이관","n":"예찬 지인이 담당. 인계 조건 3줄이 선행","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f6","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"STUDIO DAY · 첫 공연","n":"솔로·듀오·어쿠스틱 중심으로 나중에","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f7","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"Street Show","n":"기획안·EP.01 대본까지 완료 상태로 보존","w":"되살릴 때 비용이 낮은 편","scope":"team","mac":false,"done":false,"d":null},{"id":"f8","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"다이어리 앱","n":"기획 v0.2 + HTML 프로토타입","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"f9","l":"biz","o":"kyu","k":"track","s":"동결","h":"someday","p":5,"t":"POV 라인","n":"48일 무응답 — 무산으로 정리 권함","w":"Gmail 복구 후 from:jay@povmusic.kr 확인 먼저","scope":"team","mac":false,"done":false,"d":null},{"id":"f10","l":"biz","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"BANA 라인","n":"콘텐츠 먼저 발행하고 링크 공유","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f11","l":"biz","o":"kyu","k":"track","s":"확인필요","h":"week","p":3,"t":"강원 RED FRYS 회신","n":"제안서 납품 완료. 회신 여부 확인","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f12","l":"biz","o":"kyu","k":"track","s":"대기","h":"someday","p":5,"t":"페스티벌 시티 후속 기업","n":"하림·미래에셋 납품 완료. 다음 대상 미정","w":"","scope":"team","mac":false,"done":false,"d":null}],"series":[{"id":"s1","n":"SESSION 파일럿 1화","sub":"프로듀서·엔지니어 세션 해부","stage":1,"cast":"미정 — 파일럿 컨택 8명 중","own":"kyu","note":"세트 규격·인터뷰 방식·회차 공수를 이 편에서 확정. 서브 PD 전 과정 동행"},{"id":"s2","n":"UNHEARD 1호","sub":"홍대 동행 · 거리 반응","stage":2,"cast":"Yyul — 「사랑이 떠나면 난 뭘 잡아야 할까」","own":"kyu","note":"숏폼 우선 설계. 진행자·촬영일·편집분담이 미결"},{"id":"s3","n":"청음실 파일럿","sub":"인생 음반 3장","stage":1,"cast":"미정","own":"kyu","note":"선 청취 후 질문 구성. 조명·톤은 기술팀과. LP·CD·디지털 모두 허용"},{"id":"s4","n":"라이브클립 1호","sub":"크라우드소싱 신청 기반","stage":1,"cast":"컨택 초안 21건 대기 · 최다 요청 빅나티","own":"kyu","note":"호리존 고정, 날짜·선곡은 열어둠. A군 6건부터"}],"stages":["섭외","일정","촬영","편집","발행"]}</script>
+<script>/* 플루토 오퍼레이션 — 화면 로직.
+ *
+ * 판이 셋이다. 섞으면 갱신할 때마다 서로를 지운다.
+ *   data.json      배포할 때마다 통째로 갈리는 판 (스캔·목록)
+ *   S.patch/S.add  사람이 고치거나 새로 쓴 것      → localStorage
+ *   S.done/S.last  사람이 누른 것                  → localStorage
+ *
+ * 그래서 data.json 의 항목을 고칠 때도 원본을 건드리지 않고 덮어쓸 값만 patch 에 쌓는다.
+ * 다음 배포가 목록을 새로 내려도 규효가 고친 제목·담당·마감은 그대로 얹힌다.
+ */
+(function () {
+"use strict";
+
+var D = JSON.parse(document.getElementById("data").textContent);
+var KEY = "pluto.ops.v1";
+var TODAY = new Date();
+var TKEY = ymd(TODAY);
+
+var S = load();
+function load() {
+  try {
+    var r = JSON.parse(localStorage.getItem(KEY));
+    if (r && r.done) {
+      r.patch = r.patch || {}; r.add = r.add || []; r.log = r.log || [];
+      r.who = (r.who === "both") ? "team" : (r.who || "team");
+      return r;
+    }
+  } catch (e) {}
+  return { done:{}, last:{}, patch:{}, add:[], log:[], view:"today", who:"team", seq:0 };
+}
+function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+
+/* ── 날짜 ─────────────────────────────────────────── */
+function ymd(d){
+  return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+}
+function parse(s){ var p=String(s).split("-"); return new Date(+p[0],+p[1]-1,+p[2]); }
+function diffDays(a,b){ return Math.round((parse(a)-parse(b))/864e5); }
+var DOW = ["일","월","화","수","목","금","토"];
+function ago(ts){
+  var m = Math.round((Date.now()-ts)/60000);
+  if (m < 1) return "방금";
+  if (m < 60) return m+"분 전";
+  if (m < 1440) return Math.round(m/60)+"시간 전";
+  return Math.round(m/1440)+"일 전";
+}
+
+/* ── 항목 ─────────────────────────────────────────── */
+var LANE = {}, OWN = D.owners;
+D.lanes.forEach(function(l){ LANE[l.id]=l.n; });
+var STATES = ["대기","진행","막힘","확인필요","상시","동결"];
+var HORIZ = [["now","지금"],["week","이번 주"],["month","이번 달"],["quarter","분기"],["someday","언젠가"]];
+
+var ALL = null;
+function items(){
+  if (ALL) return ALL;
+  ALL = D.items.concat(S.add).map(function(it){
+    var p = S.patch[it.id];
+    if (!p) return it;
+    var o = {}; for (var k in it) o[k]=it[k];
+    for (var k2 in p) o[k2]=p[k2];
+    o._edited = true;
+    return o;
+  });
+  return ALL;
+}
+function dirty(){ ALL = null; }
+function byId(id){ var a=items(); for(var i=0;i<a.length;i++) if(a[i].id===id) return a[i]; return null; }
+
+function isTeam(it){ return it.scope === "team"; }
+function isSolo(it){ return it.scope === "solo"; }
+function inScope(it){ return S.who === "all" ? true : it.scope === S.who; }
+
+function isOn(it){
+  if (it.k === "track") return false;
+  if (it.k === "recur") return S.last[it.id] === TKEY;
+  return !!S.done[it.id];
+}
+function overdue(it){ return it.d && !isOn(it) && diffDays(TKEY, it.d) > 0; }
+function byUrgency(a,b){
+  var ao=overdue(a)?0:1, bo=overdue(b)?0:1;
+  if (ao!==bo) return ao-bo;
+  if ((a.p||9)!==(b.p||9)) return (a.p||9)-(b.p||9);
+  return 0;
+}
+
+/* ── 고치기 ───────────────────────────────────────── */
+function logit(id, what){
+  S.log.unshift({ id:id, t:what, at:Date.now() });
+  if (S.log.length > 60) S.log.length = 60;   // 무한히 쌓으면 저장이 터진다
+}
+function patch(id, fields, label){
+  var p = S.patch[id] || (S.patch[id] = {});
+  for (var k in fields) p[k] = fields[k];
+  dirty(); logit(id, label); save();
+}
+function toggle(it){
+  if (it.k === "track") return;
+  if (it.k === "recur") {
+    if (S.last[it.id]===TKEY) { delete S.last[it.id]; logit(it.id,"오늘 표시 해제"); }
+    else { S.last[it.id]=TKEY; logit(it.id,"오늘 처리"); }
+  } else {
+    if (S.done[it.id]) { delete S.done[it.id]; logit(it.id,"완료 해제"); }
+    else { S.done[it.id]=true; logit(it.id,"완료"); }
+  }
+  save(); render();
+}
+function cycleState(it){
+  var i = STATES.indexOf(it.s);
+  var next = STATES[(i+1) % 4];            // 대기 → 진행 → 막힘 → 확인필요 만 돈다
+  patch(it.id, { s: next }, "상태 → "+next);
+  render();
+}
+function addItem(title){
+  S.seq = (S.seq||0) + 1;
+  var it = { id:"u"+S.seq, l:"ops", o:"kyu", k:"once", s:"대기", h:"now",
+             p:3, t:title, n:null, w:null, d:null, scope:S.who==="solo"?"solo":"team",
+             mac:false, done:false, _new:true };
+  S.add.push(it); dirty(); logit(it.id, "새로 씀"); save();
+  return it;
+}
+function removeItem(id){
+  var i = S.add.map(function(x){return x.id;}).indexOf(id);
+  if (i >= 0) { S.add.splice(i,1); }
+  else { patch(id, { l:"frozen", s:"동결" }, "동결로 내림"); }
+  delete S.patch[id]; delete S.done[id]; delete S.last[id];
+  dirty(); save();
+}
+
+/* ── 조각 ─────────────────────────────────────────── */
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+  return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+
+function itemHTML(it){
+  var on = isOn(it), late = overdue(it);
+  var tags = "";
+  if (it.s) tags += '<button class="tg s-'+esc(it.s)+'" data-cyc="'+esc(it.id)+'" title="상태 바꾸기">'+esc(it.s)+"</button>";
+  tags += '<span class="ow">'+esc(OWN[it.o]||it.o)+"</span>";
+  if (isSolo(it) && S.who !== "solo") tags += '<span class="sc solo">내 것</span>';
+  if (it.mac) tags += '<span class="sc mac">맥</span>';
+  if (it.d) tags += '<span class="dt'+(late?" late":"")+'">'+esc(it.d.slice(5))
+                  + (late?" · "+diffDays(TKEY,it.d)+"일 지남":"")+"</span>";
+  if (it.p===1 && !on) tags += '<span class="pr">최우선</span>';
+  if (it._edited || it._new) tags += '<span class="edited">'+(it._new?"새로":"고침")+"</span>";
+  return '<div class="it'+(on?" done":"")+'" data-row="'+esc(it.id)+'">'
+    + '<button class="mk'+(on?" on":"")+'" data-k="'+esc(it.k)+'" data-tog="'+esc(it.id)+'"'
+    + ' aria-pressed="'+on+'" aria-label="'+esc(it.t)+' 완료"'+(it.k==="track"?" disabled":"")+"></button>"
+    + '<div><div class="itop"><button class="ttl" data-open="'+esc(it.id)+'">'+esc(it.t)+"</button>"+tags+"</div>"
+    + (it.n?'<p class="nn">'+esc(it.n)+"</p>":"")
+    + (it.w?'<p class="ww">'+esc(it.w)+"</p>":"")
+    + "</div></div>";
+}
+function block(title, sub, list){
+  if (!list.length) return "";
+  return '<section class="blk"><div class="bh"><h2>'+esc(title)+"</h2>"
+    + (sub?"<p>"+esc(sub)+"</p>":"") + '<span class="n">'+list.length+"</span></div>"
+    + list.map(itemHTML).join("")+"</section>";
+}
+function chips(){
+  var o=[["team","팀"],["solo","내 것"],["all","전부"]];
+  return '<div class="filt">'+o.map(function(c){
+    return '<button class="ch" data-who="'+c[0]+'" aria-pressed="'+(S.who===c[0])+'">'+c[1]+"</button>";
+  }).join("")+"</div>";
+}
+
+/* ── 화면 ─────────────────────────────────────────── */
+var VIEWS = [
+  {id:"today", n:"오늘",  ic:"●", sub:"지금 손댈 것만"},
+  {id:"week",  n:"주간",  ic:"▦", sub:"고정 리듬 + 이번 주 마감"},
+  {id:"series",n:"회차",  ic:"▶", sub:"프로그램 파일럿"},
+  {id:"people",n:"사람",  ic:"◍", sub:"누가 무엇을 쥐고 있나"},
+  {id:"mine",  n:"내 것", ic:"◆", sub:"남의 일정을 안 바꾸는 일"},
+  {id:"all",   n:"전체",  ic:"☰", sub:"레인별 전부"}
+];
+
+function vToday(){
+  var live = items().filter(function(it){
+    return it.l!=="frozen" && (it.h==="now" || it.k==="recur" || overdue(it));
+  }).sort(byUrgency);
+  var list = live.filter(inScope);
+  var late = list.filter(overdue);
+  var rec  = list.filter(function(i){ return i.k==="recur" && !overdue(i); });
+  var now  = list.filter(function(i){ return i.k!=="recur" && !overdue(i); });
+  var hidden = (S.who==="team") ? live.filter(isSolo).length : 0;
+  var al = D.alerts.filter(function(a){ return a.sev!=="ok"; });
+
+  return chips()
+    + (S.who!=="solo" && al.length
+        ? '<section class="blk"><div class="bh"><h2>관제</h2><p>자동 스캔</p>'
+          + '<span class="n">'+esc(D.scanAt)+"</span></div>"
+          + al.map(function(a){
+              return '<div class="it"><span></span><div><div class="itop">'
+                + '<span class="ttl" style="cursor:default">'+esc(a.t)+"</span>"
+                + '<span class="tg s-'+(a.sev==="crit"?"막힘":"대기")+'">'+esc(a.d)+"</span></div>"
+                + (a.x?'<p class="nn">'+esc(a.x)+"</p>":"")+"</div></div>";
+            }).join("")+"</section>"
+        : "")
+    + block("지났다", "마감일이 넘은 것", late)
+    + block("오늘 할 것", "지금 블록", now)
+    + block("매일", "자정에 풀린다", rec)
+    + (list.length?"":'<p class="empty">오늘 걸린 게 없습니다.</p>')
+    + (hidden ? '<p class="note"><b>가려둔 것</b> 개인 항목 '+hidden+'건은 이 판에 없습니다. 위의 <b>내 것</b>을 누르면 보입니다.</p>' : "")
+    + '<p class="note"><b>저장 위치</b> 체크와 수정은 이 브라우저에만 남습니다. '
+    + '공용 저장소는 다음 단계 — 그때까지 폰과 맥이 서로 안 보입니다.</p>';
+}
+
+function vWeek(){
+  var mon = new Date(TODAY); mon.setDate(mon.getDate() - ((mon.getDay()+6)%7));
+  var days=[]; for (var i=0;i<7;i++){ var d=new Date(mon); d.setDate(mon.getDate()+i); days.push(d); }
+  var html = '<div class="week">'+days.map(function(d){
+    var dw=d.getDay(), k=ymd(d), on=k===TKEY;
+    var slots = D.rhythm.filter(function(r){ return r.days.indexOf(dw)>=0; })
+      .sort(function(a,b){ return a.time<b.time?-1:1; });
+    var evs = items().filter(function(it){ return it.d===k && it.l!=="frozen" && inScope(it); });
+    return '<div class="day'+(on?" tdy":"")+(dw===0||dw===6?" off":"")+'">'
+      + '<div class="dh"><b>'+DOW[dw]+"</b><span>"+(d.getMonth()+1)+"/"+d.getDate()+"</span></div>"
+      + '<div class="db">'
+      + slots.map(function(r){
+          return '<div class="sl '+esc(r.kind)+'"><span class="tm mono">'+esc(r.time)+"</span>"
+            + '<span class="nm">'+esc(r.t)+"</span></div>"; }).join("")
+      + evs.map(function(it){
+          return '<div class="ev'+(overdue(it)?" late":"")+'"><b>'+esc(it.t)+"</b>"
+            + esc(OWN[it.o]||it.o)+"</div>"; }).join("")
+      + "</div></div>";
+  }).join("")+"</div>";
+  var over = items().filter(overdue).filter(inScope).sort(byUrgency);
+  return chips()+html+block("이번 주 이전에 지난 것","", over)
+    + '<p class="note"><b>정기 회의 없음</b> 목요일 고정 미팅은 접었습니다. 회의는 필요할 때 소집합니다 — '
+    + '대신 미결이 스스로 닫히지 않으니 <b>오늘</b> 판에서 막힌 것을 직접 봐야 합니다.</p>';
+}
+
+function vSeries(){
+  return D.series.map(function(s){
+    return '<div class="sr"><div class="srh"><b>'+esc(s.n)+"</b><span>"+esc(s.sub||"")+"</span>"
+      + '<span class="ow" style="margin-left:auto">'+esc(OWN[s.own]||s.own)+"</span></div>"
+      + '<div class="pipe">'+D.stages.map(function(g,i){
+          var c = i<s.stage ? " done" : (i===s.stage ? " at" : "");
+          return '<div class="pg'+c+'">'+esc(g)+"</div>"; }).join("")+"</div>"
+      + (s.cast?'<p class="srm"><b>출연</b> '+esc(s.cast)+"</p>":"")
+      + (s.note?'<p class="srn">'+esc(s.note)+"</p>":"")+"</div>";
+  }).join("")
+  + block("프로그램 레인","회차에 안 붙는 준비 작업",
+      items().filter(function(i){ return i.l==="prog"; }).sort(byUrgency));
+}
+
+/* 누가 무엇을 쥐고 있나. 위임이 되고 있는지는 이 화면에서만 보인다. */
+function vPeople(){
+  var open = items().filter(function(i){ return i.l!=="frozen" && !isOn(i) && isTeam(i); });
+  var ids = Object.keys(OWN).filter(function(o){ return o!=="tbd"; });
+  ids.push("tbd");
+  var cards = ids.map(function(o){
+    var mine = open.filter(function(i){ return i.o===o; }).sort(byUrgency);
+    if (!mine.length) return "";
+    var blocked = mine.filter(function(i){ return i.s==="막힘"; }).length;
+    var head = mine.slice(0,7);
+    return '<div class="pcard"><div class="pch"><b>'+esc(OWN[o]||o)+"</b>"
+      + (blocked?'<span class="tg s-막힘">막힘 '+blocked+"</span>":"")
+      + '<span class="n">'+mine.length+"건</span></div>"
+      + head.map(function(i){
+          return '<button class="pl" data-open="'+esc(i.id)+'">'
+            + '<span class="dot '+esc(i.s||"")+'"></span><span>'+esc(i.t)+"</span></button>"; }).join("")
+      + (mine.length>7?'<p class="pmore">외 '+(mine.length-7)+"건</p>":"")
+      + "</div>";
+  }).join("");
+  var kyu = open.filter(function(i){ return i.o==="kyu"; }).length;
+  var pct = open.length ? Math.round(kyu/open.length*100) : 0;
+  return '<div class="people">'+cards+"</div>"
+    + '<p class="note"><b>집중도</b> 열린 팀 일 '+open.length+'건 중 '+kyu+'건이 규효 담당입니다 — '+pct+'%. '
+    + '이 숫자가 안 내려가면 사람을 늘려도 속도는 안 바뀝니다.</p>';
+}
+
+function vMine(){
+  var solo = items().filter(function(i){ return isSolo(i) && i.l!=="frozen"; });
+  var g = {now:[],week:[],month:[],quarter:[],someday:[]};
+  solo.forEach(function(i){ (g[i.h]||g.someday).push(i); });
+  var held = items().filter(function(i){
+    return isTeam(i) && i.o==="kyu" && i.l!=="frozen" && !isOn(i) &&
+           (i.h==="now" || i.h==="week" || overdue(i));
+  }).sort(byUrgency);
+  var log = S.log.slice(0,12);
+  return HORIZ.map(function(h){ return block(h[1],"", g[h[0]].sort(byUrgency)); }).join("")
+    + block("팀 판에서 내가 쥔 것","이번 주 안에 나한테 걸린 팀 일", held)
+    + (log.length
+        ? '<section class="blk"><div class="bh"><h2>최근 손댄 것</h2><p>이 브라우저 기준</p></div>'
+          + log.map(function(l){
+              var it = byId(l.id);
+              return '<div class="logrow"><span class="tm mono">'+ago(l.at)+"</span>"
+                + "<span><b>"+esc(it?it.t:l.id)+"</b> — "+esc(l.t)+"</span></div>"; }).join("")
+          + "</section>"
+        : "")
+    + '<p class="note"><b>기준</b> 이 일이 남의 일정을 바꾸는가. 바꾸면 팀 판, 안 바꾸면 개인. '
+    + '가운데 칸은 없앴습니다 — 애매한 칸을 두면 두 판이 같이 어지러워집니다.</p>';
+}
+
+function vAll(){
+  return chips() + D.lanes.map(function(l){
+    var list = items().filter(function(i){ return i.l===l.id && inScope(i); }).sort(byUrgency);
+    return block(l.n, l.id==="frozen"?"지금은 건드리지 않는다":"", list);
+  }).join("");
+}
+
+var BODY = {today:vToday, week:vWeek, series:vSeries, people:vPeople, mine:vMine, all:vAll};
+
+function counts(id){
+  var a = items();
+  if (id==="today") return a.filter(function(i){
+    return i.l!=="frozen" && inScope(i) && (i.h==="now"||i.k==="recur"||overdue(i)) && !isOn(i); }).length;
+  if (id==="series") return D.series.length;
+  if (id==="people") return a.filter(function(i){ return isTeam(i) && i.s==="막힘" && !isOn(i); }).length;
+  if (id==="mine")   return a.filter(function(i){ return isSolo(i) && i.l!=="frozen" && !isOn(i); }).length;
+  if (id==="all")    return a.filter(inScope).length;
+  return "";
+}
+
+/* ── 명령바 ───────────────────────────────────────── */
+var cmd = { open:false, q:"", sel:0, rows:[] };
+function cmdRows(){
+  var q = cmd.q.trim(), out = [];
+  if (q) {
+    var lq = q.toLowerCase();
+    items().filter(function(i){
+      return (i.t+" "+(i.n||"")+" "+(LANE[i.l]||"")+" "+(OWN[i.o]||"")).toLowerCase().indexOf(lq)>=0;
+    }).slice(0,8).forEach(function(i){
+      out.push({ k:"항목", t:i.t, m:(LANE[i.l]||"")+" · "+(OWN[i.o]||i.o), go:function(){ openSheet(i.id); } });
+    });
+    out.push({ k:"추가", t:'"'+q+'" 새 항목으로', m:"Enter",
+               go:function(){ var it=addItem(q); openSheet(it.id); } });
+  } else {
+    VIEWS.forEach(function(v){
+      out.push({ k:"이동", t:v.n, m:v.sub, go:function(){ S.view=v.id; save(); render(); } });
+    });
+  }
+  return out;
+}
+function cmdHTML(){
+  if (!cmd.open) return "";
+  cmd.rows = cmdRows();
+  return '<div class="cmdwrap" data-cmdbg="1"><div class="cmd">'
+    + '<input id="cq" placeholder="찾거나, 새 항목을 쓰거나" value="'+esc(cmd.q)+'" autocomplete="off">'
+    + '<div class="cmdlist">'
+    + (cmd.rows.length ? cmd.rows.map(function(r,i){
+        return '<button class="cmdrow" data-cmd="'+i+'" aria-selected="'+(i===cmd.sel)+'">'
+          + '<span class="k">'+esc(r.k)+"</span><span>"+esc(r.t)+"</span>"
+          + '<span class="m">'+esc(r.m||"")+"</span></button>"; }).join("")
+      : '<p class="empty">없습니다.</p>')
+    + "</div>"
+    + '<div class="cmdfoot"><span>↑↓ 고르기</span><span>Enter 열기</span><span>Esc 닫기</span>'
+    + "<span>⌘K 다시 열기</span></div></div></div>";
+}
+
+/* ── 편집 패널 ────────────────────────────────────── */
+var sheet = null;
+function openSheet(id){ sheet=id; cmd.open=false; cmd.q=""; render(); }
+function closeSheet(){ sheet=null; render(); }
+function sheetHTML(){
+  if (!sheet) return "";
+  var it = byId(sheet); if (!it) return "";
+  function opts(name, list, cur){
+    return '<div class="opts">'+list.map(function(o){
+      return '<button class="opt" data-set="'+name+'" data-val="'+esc(o[0])+'" aria-pressed="'
+        + (cur===o[0])+'">'+esc(o[1])+"</button>"; }).join("")+"</div>";
+  }
+  return '<div class="sheet" data-sheetbg="1"><div class="pane">'
+    + '<div class="paneh"><h3>항목 고치기</h3>'
+    + (it._new?'<span class="edited">새로</span>':(it._edited?'<span class="edited">고침</span>':""))
+    + '<button class="x" data-close="1">닫기 ✕</button></div>'
+    + '<div class="fld"><label>제목</label><input id="f_t" value="'+esc(it.t)+'"></div>'
+    + '<div class="fld"><label>메모</label><textarea id="f_n">'+esc(it.n||"")+"</textarea></div>"
+    + '<div class="fld"><label>주의 — 놓치면 다시 하게 되는 것</label><textarea id="f_w">'+esc(it.w||"")+"</textarea></div>"
+    + '<div class="fld"><label>담당</label>'
+    + opts("o", Object.keys(OWN).map(function(k){return [k,OWN[k]];}), it.o)+"</div>"
+    + '<div class="fld"><label>상태</label>'
+    + opts("s", STATES.map(function(x){return [x,x];}), it.s)+"</div>"
+    + '<div class="fld"><label>언제까지</label>'
+    + opts("h", HORIZ, it.h)+"</div>"
+    + '<div class="fld"><label>판</label>'
+    + opts("scope", [["team","팀"],["solo","내 것"]], it.scope)+"</div>"
+    + '<div class="fld"><label>레인</label>'
+    + opts("l", D.lanes.map(function(l){return [l.id,l.n];}), it.l)+"</div>"
+    + '<div class="fld"><label>종류</label>'
+    + opts("k", [["once","한 번"],["recur","매일"],["track","지켜보기"]], it.k)+"</div>"
+    + '<div class="fld"><label>마감일</label><input id="f_d" type="date" value="'+esc(it.d||"")+'"></div>'
+    + '<div class="panefoot"><button class="btn" data-savefld="1">저장</button>'
+    + '<button class="btn ghost" data-close="1">취소</button>'
+    + (S.patch[it.id]?'<button class="btn ghost" data-reset="'+esc(it.id)+'">원래대로</button>':"")
+    + '<button class="btn warn" data-del="'+esc(it.id)+'">'+(it._new?"지우기":"동결로 내리기")+"</button>"
+    + "</div></div></div>";
+}
+function saveSheetFields(){
+  var it = byId(sheet); if (!it) return;
+  var g = function(id){ var e=document.getElementById(id); return e?e.value.trim():""; };
+  patch(it.id, { t: g("f_t") || it.t, n: g("f_n") || null, w: g("f_w") || null,
+                 d: g("f_d") || null }, "내용 수정");
+  closeSheet();
+}
+
+/* ── 그리기 ───────────────────────────────────────── */
+function render(){
+  var v = VIEWS.filter(function(x){ return x.id===S.view; })[0] || VIEWS[0];
+  document.getElementById("app").innerHTML =
+    '<div class="shell">'
+    + '<nav class="rail"><div class="brand"><b>플루토</b><span>operations</span></div>'
+    + '<div class="navs">'+VIEWS.map(function(x){
+        var c = counts(x.id);
+        return '<button class="nv" data-v="'+x.id+'"'+(x.id===S.view?' aria-current="page"':"")+">"
+          + '<span aria-hidden="true">'+x.ic+"</span>"+x.n
+          + (c!==""?'<span class="ct mono">'+c+"</span>":"")+"</button>"; }).join("")
+    + "</div>"
+    + '<button class="nv" data-cmdopen="1" style="margin-top:10px">'
+    + '<span aria-hidden="true">⌕</span>찾기<span class="ct">⌘K</span></button>'
+    + '<p class="railfoot">기준 '+esc(D.asof)+"<br>스캔 "+esc(D.scanAt)+"</p></nav>"
+    + '<main class="main"><div class="top"><div class="vt"><h1>'+esc(v.n)+"</h1>"
+    + '<span class="sub">'+esc(v.sub)+"</span>"
+    + '<span class="stamp mono">'+TKEY+" "+DOW[TODAY.getDay()]+"</span></div></div>"
+    + '<div class="view">'+BODY[v.id]()+"</div></main></div>"
+    + '<button class="addbtn" data-cmdopen="1" aria-label="찾기 · 추가">+</button>'
+    + '<nav class="mobnav">'+VIEWS.map(function(x){
+        var c = counts(x.id);
+        return '<button data-v="'+x.id+'"'+(x.id===S.view?' aria-current="page"':"")+">"
+          + '<span aria-hidden="true">'+x.ic+"</span>"+x.n
+          + (c!==""&&c!==0?'<span class="bn mono">'+c+"</span>":"")+"</button>"; }).join("")
+    + "</nav>"
+    + sheetHTML() + cmdHTML();
+
+  if (cmd.open) {
+    var q = document.getElementById("cq");
+    if (q) { q.focus(); q.setSelectionRange(q.value.length, q.value.length); }
+  }
+}
+
+/* ── 입력 ─────────────────────────────────────────── */
+document.addEventListener("click", function(e){
+  var t = e.target.closest("[data-v],[data-who],[data-tog],[data-open],[data-cyc],[data-cmdopen],"
+    + "[data-cmd],[data-cmdbg],[data-close],[data-sheetbg],[data-set],[data-savefld],[data-del],[data-reset]");
+  if (!t) return;
+  var d = t.dataset;
+  if (d.cmdbg && t.dataset.cmdbg==="1" && e.target===t){ cmd.open=false; render(); return; }
+  if (d.sheetbg && e.target===t){ closeSheet(); return; }
+  if (d.cmdopen){ cmd.open=true; cmd.q=""; cmd.sel=0; render(); return; }
+  if (d.cmd!==undefined){ var r=cmd.rows[+d.cmd]; cmd.open=false; if(r) r.go(); else render(); return; }
+  if (d.close){ closeSheet(); return; }
+  if (d.savefld){ saveSheetFields(); return; }
+  if (d.reset){ delete S.patch[d.reset]; dirty(); logit(d.reset,"원래대로"); save(); closeSheet(); return; }
+  if (d.del){ removeItem(d.del); closeSheet(); return; }
+  if (d.set){
+    var o = {}; o[d.set] = d.val;
+    patch(sheet, o, d.set+" → "+d.val); render(); return;
+  }
+  if (d.v){ S.view=d.v; save(); render(); window.scrollTo(0,0); return; }
+  if (d.who){ S.who=d.who; save(); render(); return; }
+  if (d.cyc){ var c=byId(d.cyc); if(c) cycleState(c); return; }
+  if (d.open){ openSheet(d.open); return; }
+  if (d.tog){ var it=byId(d.tog); if(it) toggle(it); return; }
+});
+
+document.addEventListener("input", function(e){
+  if (e.target.id==="cq"){ cmd.q=e.target.value; cmd.sel=0; render(); }
+});
+
+document.addEventListener("keydown", function(e){
+  var typing = /^(INPUT|TEXTAREA)$/.test(e.target.tagName);
+  if ((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==="k"){
+    e.preventDefault(); cmd.open=true; cmd.sel=0; render(); return;
+  }
+  if (e.key==="Escape"){ if(cmd.open){cmd.open=false;render();} else if(sheet){closeSheet();} return; }
+  if (cmd.open){
+    if (e.key==="ArrowDown"){ e.preventDefault(); cmd.sel=Math.min(cmd.sel+1,cmd.rows.length-1); render(); }
+    else if (e.key==="ArrowUp"){ e.preventDefault(); cmd.sel=Math.max(cmd.sel-1,0); render(); }
+    else if (e.key==="Enter"){ e.preventDefault(); var r=cmd.rows[cmd.sel]; cmd.open=false; if(r) r.go(); else render(); }
+    return;
+  }
+  if (typing || sheet) return;
+  if (e.key==="/"){ e.preventDefault(); cmd.open=true; cmd.q=""; cmd.sel=0; render(); }
+  if (e.key==="n"){ cmd.open=true; cmd.q=""; cmd.sel=0; render(); }
+});
+
+/* 자정을 넘겨 켜둔 폰에서 "매일" 항목이 어제 상태로 남지 않도록. */
+setInterval(function(){
+  var k = ymd(new Date());
+  if (k !== TKEY){ TKEY=k; TODAY=new Date(); render(); }
+}, 60000);
+
+render();
+})();
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () {});
+  });
+}
+</script>
+</body>
+</html>

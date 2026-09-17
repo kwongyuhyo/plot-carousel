@@ -1,0 +1,17 @@
+{
+  "name": "플루토 오퍼레이션",
+  "short_name": "오퍼레이션",
+  "description": "플루토 시스템 업무·회차·리듬 한 판",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A0A0C",
+  "theme_color": "#0A0A0C",
+  "lang": "ko",
+  "icons": [
+    { "src": "icon-192.png",     "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png",     "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
