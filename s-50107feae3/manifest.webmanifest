@@ -1,0 +1,23 @@
+{
+  "name": "PLOT 제작",
+  "short_name": "PLOT",
+  "description": "PLOT 콘텐츠 제작 도구 — 캐러셀과 숏폼",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#101119",
+  "theme_color": "#101119",
+  "lang": "ko",
+  "icons": [
+    { "src": "icon-192.png",      "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png",      "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "maskable-512.png",  "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "캐러셀 스튜디오", "short_name": "캐러셀", "url": "carousel.html",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] },
+    { "name": "숏폼 양식", "short_name": "숏폼", "url": "shorts.html",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] }
+  ]
+}
