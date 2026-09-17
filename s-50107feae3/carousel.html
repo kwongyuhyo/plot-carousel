@@ -1444,15 +1444,40 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
                'color:inherit;opacity:.62;text-decoration:none;white-space:nowrap;' +
                'padding:6px 10px;border-radius:99px;border:1px solid currentColor;' +
                'flex:none;';
+    // 텔레그램 데스크톱은 미니앱을 폰 크기 창으로 띄운다 — 화면이 넓어도 창은 그대로다.
+    // 그래서 컴퓨터에서는 브라우저로 넘어가는 길을 한 번에 열어준다.
+    var TG = window.Telegram && window.Telegram.WebApp;
+    var inTG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
+    var wide = null;
+    if (inTG) {
+      wide = document.createElement('button');
+      wide.type = 'button';
+      wide.textContent = '🖥 브라우저에서';
+      wide.title = '넓은 화면에서 열기';
+      wide.onclick = function () {
+        try { TG.openLink(location.href); } catch (e) { window.open(location.href, '_blank'); }
+      };
+    }
+
     var h = document.querySelector('header');
     if (h) {
-      a.style.cssText = base + 'margin-right:10px;';
+      a.style.cssText = base + 'margin-right:8px;';
       h.insertBefore(a, h.firstChild);
+      if (wide) {
+        wide.style.cssText = base + 'margin-right:10px;cursor:pointer;background:none;';
+        h.insertBefore(wide, a.nextSibling);
+      }
     } else {
       a.style.cssText = base +
         'position:fixed;left:10px;top:10px;z-index:9999;background:rgba(0,0,0,.45);' +
         'color:#fff;backdrop-filter:blur(8px);';
       document.body.appendChild(a);
+      if (wide) {
+        wide.style.cssText = base +
+          'position:fixed;left:122px;top:10px;z-index:9999;background:rgba(0,0,0,.45);' +
+          'color:#fff;backdrop-filter:blur(8px);cursor:pointer;';
+        document.body.appendChild(wide);
+      }
     }
   }
   if (document.readyState === 'loading')
