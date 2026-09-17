@@ -289,6 +289,25 @@ pre.form{
 .pkOver .photo{display:none}
 .pkFrame.noOver .pkOver{display:none}
 
+/* 큰 화면에서는 영상 옆에 조작부를 세운다.
+   세로로만 쌓으면 9:16 영상이 손바닥만 해진다 — 컴퓨터에서 쓰기 힘들다는 말의 정체. */
+.pkCtl{flex:none; display:flex; flex-direction:column}
+@media(min-width:900px){
+  /* flex-wrap 으로 두 줄을 만들면 줄 높이가 반씩 나뉘어 머리말이 화면 가운데로 내려온다.
+     행·열을 직접 정하는 편이 흔들리지 않는다. */
+  /* align-items 는 stretch 로 둔다. 가운데로 맞추면 .pkStage 높이가 내용만큼으로
+     줄고, 그 안의 height:100% 인 9:16 틀이 0 이 된다 — 영상이 사라진다. */
+  #picker{display:grid; grid-template-columns:minmax(0,1fr) 430px;
+          grid-template-rows:auto minmax(0,1fr)}
+  #picker .pkHead{grid-column:1 / -1; grid-row:1}
+  /* 영상은 조작부 쪽으로 붙인다 — 가운데 두면 둘 사이가 손 한 뼘씩 벌어진다. */
+  #picker .pkStage{grid-column:1; grid-row:2; min-height:0;
+    justify-content:flex-end; padding:16px 26px 16px 22px}
+  #picker .pkCtl{grid-column:2; grid-row:2; align-self:center; padding:0 22px 8px 0}
+  #picker .pkTrackWrap,#picker .pkMarks,#picker .pkRow,#picker .pkFoot{
+    max-width:none; padding-left:0; padding-right:0}
+}
+
 .pkTrackWrap{flex:none; padding:4px 16px 0}
 .pkTrack{
   position:relative; height:28px; border-radius:5px; background:var(--panel-2);
@@ -465,6 +484,7 @@ pre.form{
     </div>
   </div>
 
+  <div class="pkCtl">
   <div class="pkTrackWrap">
     <div class="pkTrack" id="pkTrack">
       <div class="pkSel" id="pkSel"></div>
@@ -502,6 +522,7 @@ pre.form{
   <div class="pkFoot">
     <div class="pkTip" id="pkTip"></div>
     <button class="pkApply" id="pkApply" disabled>이 구간 쓰기</button>
+  </div>
   </div>
 </div>
 
@@ -1290,7 +1311,7 @@ function drawSummary(errs) {
  */
 const PK = {
   b: null, player: null, ready: false, dur: 0,
-  inS: null, outS: null, loop: true, rate: 1, wide: false, timer: null,
+  inS: null, outS: null, loop: true, rate: 1, wide: false, timer: null, stallT: null,
 };
 const RATES = [0.25, 0.5, 1, 1.5, 2];
 
@@ -1381,6 +1402,7 @@ function closePicker() {
   $('#picker').hidden = true;
   document.body.style.overflow = '';
   clearInterval(PK.timer); PK.timer = null;
+  clearTimeout(PK.stallT);
   try { PK.player && PK.player.pauseVideo(); } catch (_) {}
   PK.b = null;
 }
@@ -1467,8 +1489,20 @@ function pkNudge(sec) {
 function pkTogglePlay() {
   if (!PK.ready) return;
   const st = PK.player.getPlayerState();
-  if (st === YT.PlayerState.PLAYING) PK.player.pauseVideo();
-  else PK.player.playVideo();
+  if (st === YT.PlayerState.PLAYING) { PK.player.pauseVideo(); return; }
+  PK.player.playVideo();
+  // 재생이 막히는 자리가 있다 — 브라우저의 자동재생 제한, 임베드 금지 영상.
+  // 말없이 멈춰 있으면 앱이 고장 난 줄 안다. 5초 보고 안 굴러가면 길을 알려준다.
+  const t0 = PK.player.getCurrentTime() || 0;
+  clearTimeout(PK.stallT);
+  PK.stallT = setTimeout(() => {
+    if ($('#picker').hidden || !PK.ready) return;
+    const moved = (PK.player.getCurrentTime() || 0) > t0 + 0.4;
+    if (moved) return;
+    const tip = $('#pkTip');
+    tip.textContent = '재생이 시작되지 않습니다 — 막대를 눌러 옮기거나 ±초·길이 버튼으로 구간을 잡으세요.';
+    tip.classList.add('warn');
+  }, 5000);
 }
 
 function pkApply() {
