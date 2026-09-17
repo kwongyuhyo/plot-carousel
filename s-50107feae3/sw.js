@@ -6,7 +6,7 @@
  *
  * 버전을 올리면 옛 캐시는 activate 에서 통째로 지운다.
  */
-const V = 'plot-app-v1';
+const V = 'plot-app-v2';
 const SHELL = [
   './', './index.html', './carousel.html', './shorts.html',
   './f-eb.woff2', './f-sb.woff2', './f-nb.woff2',
@@ -42,7 +42,10 @@ self.addEventListener('fetch', (e) => {
 
   if (isDoc) {
     e.respondWith(
-      fetch(req)
+      // cache:'no-cache' 가 핵심이다. 그냥 fetch 하면 브라우저의 HTTP 캐시가 먼저 답한다 —
+      // GitHub Pages 가 max-age=600 을 주므로, 배포하고 10분 동안은 옛 화면이 나온다.
+      // 설치된 앱에서는 그게 '고쳤는데 그대로네' 로 보인다. 늘 서버에 물어본다.
+      fetch(req, { cache: 'no-cache' })
         .then((res) => {
           const copy = res.clone();
           caches.open(V).then((c) => c.put(req, copy));
