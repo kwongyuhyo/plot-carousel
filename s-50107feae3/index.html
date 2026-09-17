@@ -164,7 +164,10 @@ const LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAADQCAYAAABhoyiU
 
 if ('serviceWorker' in navigator) {
   addEventListener('load', function () {
-    navigator.serviceWorker.register('sw.js').catch(function () {});
+    // updateViaCache:'none' — 워커 파일 자체가 HTTP 캐시에 걸리지 않게.
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+      .then(function (r) { r.update(); })
+      .catch(function () {});
   });
 }
 

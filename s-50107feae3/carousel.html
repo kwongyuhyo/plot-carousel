@@ -1500,7 +1500,11 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
 <script>
 if ('serviceWorker' in navigator) {
   addEventListener('load', function () {
-    navigator.serviceWorker.register('sw.js').catch(function () {});
+    // updateViaCache:'none' — 이게 없으면 sw.js 자체가 HTTP 캐시에 걸린다.
+    // 캐시 규칙을 고친 새 워커가 옛 캐시 때문에 안 실리는, 웃기지만 실제로 겪은 일.
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+      .then(function (r) { r.update(); })
+      .catch(function () {});
   });
 }
 </script>
