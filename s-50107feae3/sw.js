@@ -6,7 +6,7 @@
  *
  * 버전을 올리면 옛 캐시는 activate 에서 통째로 지운다.
  */
-const V = 'plot-app-v2';
+const V = 'plot-app-v3';
 const SHELL = [
   './', './index.html', './carousel.html', './shorts.html',
   './f-eb.woff2', './f-sb.woff2', './f-nb.woff2',
@@ -42,10 +42,14 @@ self.addEventListener('fetch', (e) => {
 
   if (isDoc) {
     e.respondWith(
-      // cache:'no-cache' 가 핵심이다. 그냥 fetch 하면 브라우저의 HTTP 캐시가 먼저 답한다 —
-      // GitHub Pages 가 max-age=600 을 주므로, 배포하고 10분 동안은 옛 화면이 나온다.
-      // 설치된 앱에서는 그게 '고쳤는데 그대로네' 로 보인다. 늘 서버에 물어본다.
-      fetch(req, { cache: 'no-cache' })
+      // 브라우저의 HTTP 캐시를 건너뛰고 서버에 직접 물어본다.
+      // GitHub Pages 가 max-age=600 을 주므로 그냥 fetch 하면 배포하고 10분 동안
+      // 옛 화면이 나온다. 설치된 앱에서는 그게 '고쳤는데 그대로네' 로 보인다.
+      //
+      // fetch(req, {cache:'no-cache'}) 는 쓸 수 없다 — 첫 화면 요청은 mode 가
+      // 'navigate' 라서 옵션을 얹어 Request 를 다시 만들면 TypeError 가 난다.
+      // 그러면 이 핸들러가 통째로 죽고 결국 HTTP 캐시가 답한다. 주소로 새로 만든다.
+      fetch(new Request(req.url, { cache: 'no-cache', credentials: 'same-origin' }))
         .then((res) => {
           const copy = res.clone();
           caches.open(V).then((c) => c.put(req, copy));
