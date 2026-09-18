@@ -35,6 +35,9 @@ body{
 header{display:flex; align-items:center; gap:14px; padding-bottom:calc(var(--u)*2)}
 header .rule{flex:1; height:1px; background:var(--line)}
 header .kicker{flex:none; font-size:10.5px; font-weight:700; color:var(--dim)}
+header .home{flex:none; font-size:10.5px; color:var(--dim); text-decoration:none;
+  font-family:var(--mono); letter-spacing:.1em}
+header .home:hover{color:var(--text)}
 
 h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacing:-.045em}
 .stamp{color:var(--dim); font-size:11.5px; font-family:var(--mono); letter-spacing:.02em}
@@ -116,6 +119,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 <body>
 <div class="wrap">
   <header>
+    <a class="home" href="index.html">← 홈</a>
     <div class="rule"></div>
     <div class="kicker"><span class="lat">Sources</span></div>
   </header>
