@@ -23,6 +23,12 @@
  *   2. 상태 표시는 한 벌뿐이다. 점 + 이름. 화면마다 새로 만들지 않는다.
  *   3. 4px 격자 위에 올린다. 어중간한 값(13.5px 같은)을 쓰지 않는다.
  *   4. 움직임은 설명할 때만. 120~180ms, 감속.
+ *
+ * 웹폰트는 싣지 않는다. Pretendard 를 CDN 에서 @import 하면 CSS 가
+ * 직렬로 막히고, 사무실 망이나 지하철에서 첫 화면이 그만큼 늦어진다.
+ * 이 앱은 "폰에서 급할 때 연다"가 전부다. 기기에 Pretendard 가 있으면
+ * 쓰고, 없으면 시스템 한글 글꼴(Apple SD Gothic Neo / Noto Sans KR)로
+ * 떨어진다. 가독성은 글꼴이 아니라 크기·줄폭·위계로 만든다.
  */
 
 :root{
@@ -35,10 +41,11 @@
   --line2:#1B1B23;       /* 흐린 경계 — 목록 안쪽 줄 */
 
   /* ── 글자 ── 네 단계. 더 만들면 위계가 무너진다. */
-  --t1:#EDEDF2;          /* 제목·본문 */
-  --t2:#A8A8B4;          /* 설명 */
-  --t3:#8A8A97;          /* 부가 정보 */
-  --t4:#6B6B78;          /* 거의 안 보여도 되는 것 */
+  --t1:#F3F3F7;          /* 제목·본문 */
+  --t2:#C2C2CE;          /* 설명 — 메모가 본문만큼 자주 읽힌다 */
+  --t3:#9C9CAA;          /* 부가 정보 */
+  --t4:#7C7C8A;          /* 거의 안 보여도 되는 것 */
+  --measure:70ch;        /* 한 줄이 이보다 길어지면 눈이 줄을 놓친다 */
 
   /* ── 뜻이 있는 색 ── */
   --accent:#E8B34A;      /* 브랜드·강조 (플루토 앰버) */
@@ -79,9 +86,9 @@
 html,body{overflow-x:clip}
 body{
   margin:0;background:var(--bg);color:var(--t1);
-  font-family:"Pretendard Variable",Pretendard,"Pretendard-SemiBold",
+  font-family:"Pretendard Variable",Pretendard,
     -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI",sans-serif;
-  font-size:14px;line-height:1.6;letter-spacing:-.003em;
+  font-size:15px;line-height:1.65;letter-spacing:-.004em;
   -webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;
   word-break:keep-all;overflow-wrap:anywhere;
 }
@@ -144,68 +151,97 @@ input,textarea,select{font:inherit;letter-spacing:inherit}
 .barrow .ask{font-size:12px;color:var(--t3)}
 .barrow .right{margin-left:auto;display:flex;align-items:center;gap:var(--s2)}
 .stamp{font-size:11px;color:var(--t3)}
-.body{padding:var(--s5);min-width:0;flex:1}
-.body > * + *{margin-top:var(--s6)}
+.body{padding:var(--s6) var(--s5) var(--s8);min-width:0;flex:1;
+  width:100%;max-width:1140px;margin-inline:auto}
+.body > * + *{margin-top:var(--s7)}
 
 /* ── 통계 줄 ───────────────────────────────────────── */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(156px,1fr));
   gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r3);
   overflow:hidden}
-.stat{background:var(--sf);padding:var(--s3) var(--s4) var(--s4);min-width:0}
+.stat{background:var(--sf);padding:var(--s4) var(--s4) var(--s5);min-width:0}
 .stat:hover{background:var(--sf2)}
-.stat .k{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
-  color:var(--t3);display:block;margin-bottom:var(--s1)}
-.stat .v{font-size:25px;font-weight:800;line-height:1.05;letter-spacing:-.03em;
-  font-variant-numeric:tabular-nums}
-.stat .u{font-size:11px;font-weight:600;color:var(--t3);margin-left:3px}
-.stat .n{display:block;font-size:11px;color:var(--t3);margin-top:3px;line-height:1.4}
+.stat .k{font-size:11.5px;font-weight:700;letter-spacing:-.01em;
+  color:var(--t2);display:block;margin-bottom:var(--s2)}
+.stat .v{font-size:32px;font-weight:800;line-height:1;letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;display:block}
+.stat .u{font-size:13px;font-weight:600;color:var(--t3);margin-left:3px}
+.stat .n{display:block;font-size:12px;color:var(--t3);margin-top:var(--s2);line-height:1.5}
 .stat.hot .v{color:var(--danger)}
 .stat.good .v{color:var(--ok)}
 
 /* ── 구역 ──────────────────────────────────────────── */
 .sec{min-width:0}
-.sech{display:flex;align-items:baseline;gap:var(--s2);padding-bottom:var(--s2);
-  border-bottom:1px solid var(--line);margin-bottom:var(--s1)}
-.sech h2{font-size:13px;font-weight:800}
-.sech .sub{font-size:11px;color:var(--t4)}
-.sech .n{margin-left:auto;font-size:11px;color:var(--t4);font-variant-numeric:tabular-nums}
-.sech .act{margin-left:auto;font-size:11px;color:var(--t3)}
+.sech{display:flex;align-items:baseline;gap:var(--s3);padding-bottom:var(--s3);
+  border-bottom:1px solid var(--line);margin-bottom:var(--s2)}
+.sech h2{font-size:15px;font-weight:800;letter-spacing:-.02em}
+.sech .sub{font-size:12px;color:var(--t3)}
+.sech .n{margin-left:auto;font-size:12px;color:var(--t3);font-variant-numeric:tabular-nums}
+.sech .act{margin-left:auto;font-size:12px;color:var(--t3)}
 .sech .act:hover{color:var(--t1)}
 
-/* ── 항목 줄 ───────────────────────────────────────── */
-.row{display:grid;grid-template-columns:20px minmax(0,1fr);gap:0 var(--s3);
-  padding:var(--s3) var(--s2);border-bottom:1px solid var(--line2);
+/* ── 항목 줄 ───────────────────────────────────────────
+ * 읽는 순서를 강제한다: 제목 → 메모 → 부가 정보.
+ * 예전에는 제목과 표식 대여섯 개가 같은 줄에서 경쟁했다.
+ * 왼쪽 세로 막대는 신호를 하나만 나른다 — 빨강은 막혔거나 지났다,
+ * 앰버는 최우선. 둘 다 아니면 아무것도 없다.
+ */
+.row{display:grid;grid-template-columns:22px minmax(0,1fr);gap:0 var(--s3);
+  padding:var(--s4) var(--s3) var(--s4) var(--s3);
+  border-bottom:1px solid var(--line2);
   align-items:start;position:relative;border-radius:var(--r2);
   transition:background var(--fast) var(--ease)}
 .row:hover{background:var(--sf)}
 .row.sel{background:var(--sf2)}
-.row.sel::before{content:"";position:absolute;left:-1px;top:6px;bottom:6px;width:2px;
-  border-radius:2px;background:var(--focus)}
-.row.done{opacity:.5}
+.row::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:3px;
+  border-radius:99px;background:transparent}
+.row.edge-hot::before{background:var(--danger)}
+.row.edge-top::before{background:var(--accent)}
+.row.sel::before{background:var(--focus);top:6px;bottom:6px}
+.row.edge-hot,.row.edge-top{padding-left:var(--s4)}
+.row.done{opacity:.42}
+.row.done::before{background:transparent}
 .row.done .rt{text-decoration:line-through;text-decoration-color:var(--t4)}
 
-.box{width:16px;height:16px;margin-top:3px;border-radius:var(--r1);
+.box{width:20px;height:20px;margin-top:1px;border-radius:var(--r1);
   border:1.5px solid var(--t4);position:relative;flex:0 0 auto;
   transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease)}
-.box:hover{border-color:var(--focus)}
+.box:hover{border-color:var(--focus);background:var(--sf3)}
 .box[data-k="recur"]{border-radius:50%}
-.box[data-k="track"]{border-style:dashed;opacity:.45;cursor:default}
+.box[data-k="track"]{border-style:dashed;opacity:.4;cursor:default}
 .box.on{background:var(--focus);border-color:var(--focus)}
 .box[data-k="recur"].on{background:var(--ok);border-color:var(--ok)}
-.box.on::after{content:"";position:absolute;left:4.5px;top:1px;width:4px;height:8px;
-  border:solid #08080B;border-width:0 1.7px 1.7px 0;transform:rotate(43deg)}
+.box.on::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;
+  border:solid #08080B;border-width:0 2px 2px 0;transform:rotate(43deg)}
 
-.rc{min-width:0}
-.rhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--s1) 7px}
-.rt{font-size:14px;font-weight:700;line-height:1.45;color:var(--t1);letter-spacing:-.012em}
+.rc{min-width:0;display:flex;flex-direction:column;gap:var(--s1)}
+.rhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--s1) var(--s2)}
+.rt{font-size:16px;font-weight:700;line-height:1.5;color:var(--t1);
+  letter-spacing:-.016em;max-width:var(--measure)}
 button.rt:hover{color:var(--accent)}
-.rn{font-size:12.5px;color:var(--t2);line-height:1.55;margin-top:3px}
-.rw{font-size:12px;color:var(--accent);line-height:1.5;margin-top:var(--s1);
-  padding-left:var(--s2);border-left:2px solid rgba(232,179,74,.3)}
+/* 상태는 알약이 아니라 한 낱말로. 제목 옆에서 색만 다르면 충분하다. */
+.st{font-size:12.5px;font-weight:700;letter-spacing:-.01em;flex:0 0 auto;
+  transition:color var(--fast) var(--ease)}
+.st.s-막힘{color:var(--danger)} .st.s-진행{color:var(--ok)}
+.st.s-대기{color:var(--hold)}   .st.s-상시{color:var(--focus)}
+.st.s-확인필요{color:var(--accent)} .st.s-동결{color:var(--t4)}
+button.st:hover{filter:brightness(1.3)}
+
+.rn{font-size:13.5px;color:var(--t2);line-height:1.72;max-width:var(--measure)}
+.rw{font-size:13px;color:var(--accent);line-height:1.6;max-width:var(--measure);
+  padding-left:var(--s3);border-left:2px solid rgba(232,179,74,.32);margin-top:2px}
+
+/* 부가 정보는 전부 아래 한 줄로 내린다 — 훑을 때 건너뛸 수 있게. */
+.rmeta{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s1) var(--s3);
+  margin-top:var(--s1);font-size:12px;line-height:1.5;color:var(--t3)}
+.rmeta .mi{white-space:nowrap}
+.rmeta .mi.hot{color:var(--danger);font-weight:600}
+.rmeta .mi.new{color:var(--focus);font-weight:600}
+.rmeta .sep{color:var(--t4);opacity:.55;user-select:none}
 
 /* ── 표식 ── 한 벌만 쓴다 ───────────────────────────── */
-.pill{font-size:10.5px;font-weight:600;padding:1.5px 7px;border-radius:99px;
-  flex:0 0 auto;line-height:1.5;white-space:nowrap}
+.pill{font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;
+  flex:0 0 auto;line-height:1.55;white-space:nowrap}
 .pill.q{background:var(--sf3);color:var(--t2);box-shadow:inset 0 0 0 1px var(--line)}
 .pill.s-막힘{background:var(--danger-bg);color:var(--danger)}
 .pill.s-진행{background:var(--ok-bg);color:var(--ok)}
@@ -218,37 +254,56 @@ button.rt:hover{color:var(--accent)}
 .pill.mac{background:var(--sf2);color:var(--t3)}
 .pill.edit{color:var(--focus);box-shadow:inset 0 0 0 1px rgba(124,124,240,.4)}
 .pill.top{color:var(--danger);box-shadow:inset 0 0 0 1px rgba(217,106,86,.45);
-  font-size:9.5px;letter-spacing:.05em}
+  font-size:10px;letter-spacing:.05em}
 button.pill{transition:filter var(--fast) var(--ease)}
 button.pill:hover{filter:brightness(1.25)}
 
-/* 집기 칩 — 세 상태. 배정이 아니라 "누가 집었나"를 보여준다. */
-.who{font-size:10.5px;color:var(--t3);padding:1.5px 7px;border-radius:99px;
-  box-shadow:inset 0 0 0 1px var(--line);flex:0 0 auto;white-space:nowrap;
-  transition:color var(--fast) var(--ease),box-shadow var(--fast) var(--ease)}
-button.who:hover{color:var(--t1);box-shadow:inset 0 0 0 1px var(--t3)}
-.who.has{color:var(--t1);box-shadow:inset 0 0 0 1px var(--t3)}
-.who.open{color:var(--focus);box-shadow:inset 0 0 0 1px rgba(124,124,240,.45)}
-.who.only{color:var(--t4);box-shadow:inset 0 0 0 1px var(--line2);font-style:normal}
+/* 집기 칩 — 세 상태. 배정이 아니라 "누가 집었나"를 보여준다.
+   부가 정보 줄에 들어가므로 테두리를 빼고 글자만 남긴다. */
+.who{font-size:12px;color:var(--t3);flex:0 0 auto;white-space:nowrap;
+  transition:color var(--fast) var(--ease)}
+button.who:hover{color:var(--t1)}
+.who.has{color:var(--t1);font-weight:600}
+.who.open{color:var(--focus);font-weight:600}
+.who.only{color:var(--t4)}
+/* 카드·칸 안에서는 테두리가 있어야 눌리는 것으로 보인다. */
+.cell .who,.card .who{padding:2px 8px;border-radius:99px;
+  box-shadow:inset 0 0 0 1px var(--line)}
+.cell .who.open,.card .who.open{box-shadow:inset 0 0 0 1px rgba(124,124,240,.45)}
+.cell .who.has,.card .who.has{box-shadow:inset 0 0 0 1px var(--t3)}
 
 .dot{width:6px;height:6px;border-radius:50%;background:var(--t4);flex:0 0 auto}
 .dot.막힘{background:var(--danger)} .dot.진행{background:var(--ok)}
 .dot.대기{background:var(--hold)}   .dot.상시{background:var(--focus)}
 .dot.확인필요{background:var(--accent)} .dot.동결{background:var(--t4)}
 
-/* ── 알림 ──────────────────────────────────────────── */
-.alert{display:grid;grid-template-columns:3px minmax(0,1fr);gap:0 var(--s3);
-  background:var(--sf);border-radius:var(--r2);overflow:hidden;
-  padding:0;margin-bottom:var(--s2)}
-.alert .stripe{background:var(--danger)}
-.alert.warn .stripe{background:var(--hold)}
-.alert.ok .stripe{background:var(--ok)}
-.alert .in{padding:var(--s3) var(--s4) var(--s3) 0}
-.alert .ah{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px}
-.alert .ah b{font-size:13px;font-weight:700}
-.alert .run{font-size:12px;color:var(--t2);margin-top:var(--s1);line-height:1.55}
-.alert .snz{margin-left:auto;font-size:10.5px;color:var(--t3);flex:0 0 auto}
-.alert .snz:hover{color:var(--t1)}
+/* ── 알림 ──────────────────────────────────────────────
+ * 넷이 펼쳐져 있으면 첫 화면이 관제로 다 찬다. 한 줄로 접고,
+ * 눌러야 자세한 내용이 나온다. 급한 것(crit)만 처음부터 펴 둔다.
+ */
+.alerts{border:1px solid var(--line);border-radius:var(--r3);overflow:hidden;
+  background:var(--sf)}
+.alert{border-bottom:1px solid var(--line2)}
+.alert:last-child{border-bottom:0}
+.ahead{display:grid;grid-template-columns:7px minmax(0,1fr) auto;align-items:center;
+  gap:0 var(--s3);width:100%;
+  padding:var(--s3) var(--s4);transition:background var(--fast) var(--ease)}
+.ahead .atx{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px var(--s3);min-width:0}
+.ahead:hover{background:var(--sf2)}
+.ahead .sev{width:7px;height:7px;border-radius:50%;flex:0 0 auto;background:var(--hold)}
+.alert.crit .ahead .sev{background:var(--danger)}
+.alert.ok .ahead .sev{background:var(--ok)}
+.ahead b{font-size:14px;font-weight:700;letter-spacing:-.012em;min-width:0}
+.ahead .when{font-size:12px;color:var(--t3);white-space:nowrap}
+.alert.crit .ahead .when{color:var(--danger);font-weight:600}
+.ahead .caret{font-size:11px;color:var(--t4);flex:0 0 auto;padding-left:var(--s3);
+  transition:transform var(--fast) var(--ease)}
+.alert.open .ahead .caret{transform:rotate(90deg)}
+.abody{padding:0 var(--s4) var(--s4) 30px;display:flex;flex-direction:column;
+  gap:var(--s2);align-items:flex-start}
+.abody p{font-size:13.5px;color:var(--t2);line-height:1.7;max-width:var(--measure)}
+.abody .snz{font-size:12px;color:var(--t3)}
+.abody .snz:hover{color:var(--t1)}
 
 /* ── 카드 ──────────────────────────────────────────── */
 .cards{display:grid;gap:var(--s3)}
@@ -271,8 +326,9 @@ button.who:hover{color:var(--t1);box-shadow:inset 0 0 0 1px var(--t3)}
 .pmore{font-size:11px;color:var(--t3);padding-top:8px}
 
 /* ── 칸 ── 나누는 단위. 비어 있는 칸이 한눈에 보여야 한다. ── */
-.cells{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:var(--s2);
-  margin-top:var(--s3)}
+/* 칸이 다섯 개뿐이라 넓은 화면에서 빈 트랙이 여섯 개씩 생겼다. 폭을 묶는다. */
+.cells{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:var(--s3);
+  margin-top:var(--s3);max-width:1000px}
 .cell{background:var(--sf);border:1px solid var(--line);border-radius:var(--r3);
   padding:var(--s3) var(--s4) var(--s3);display:flex;flex-direction:column;gap:var(--s2);
   transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease)}
@@ -466,13 +522,20 @@ kbd{font:inherit;font-size:9.5px;padding:1px 4px;border-radius:3px;background:va
   .kan{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:760px){
-  :root{--s5:14px}
+  :root{--s5:14px;--measure:none}
   .app,.app.has-pane{grid-template-columns:1fr}
   .app > *{min-width:0}
   .rail{display:none}
-  .bar{padding:var(--s3) var(--s4) var(--s2)}
-  .body{padding:var(--s4) var(--s4) 88px}
-  .d1{font-size:20px}
+  .bar{padding:var(--s3) var(--s4) var(--s3)}
+  .body{padding:var(--s5) var(--s4) 96px}
+  .body > * + *{margin-top:var(--s6)}
+  .d1{font-size:21px}
+  .row{padding:var(--s4) var(--s2)}
+  .rt{font-size:15.5px}
+  .stat{padding:var(--s3) var(--s3) var(--s4)}
+  .stat .v{font-size:27px}
+  .ahead{padding:var(--s3)}
+  .abody{padding:0 var(--s3) var(--s3) 26px}
   .wk{grid-template-columns:1fr}
   .dy{min-height:auto}
   .dy.off{background:var(--sf)}
@@ -487,17 +550,19 @@ kbd{font:inherit;font-size:9.5px;padding:1px 4px;border-radius:3px;background:va
   @keyframes up{from{transform:translateY(24px);opacity:.7}to{transform:none;opacity:1}}
   .panef{padding-bottom:calc(var(--s3) + env(safe-area-inset-bottom,0px))}
   .cmdbox{top:6vh}
-  .fab{bottom:calc(74px + env(safe-area-inset-bottom,0px));right:16px}
+  .fab{bottom:calc(66px + env(safe-area-inset-bottom,0px));right:14px;
+    width:48px;height:48px}
   .toast{bottom:calc(76px + env(safe-area-inset-bottom,0px));width:calc(100vw - 32px)}
   .tabbar{display:grid;position:fixed;bottom:0;left:0;right:0;z-index:50;
     background:rgba(16,16,21,.94);backdrop-filter:blur(14px);
     -webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);
     padding-bottom:env(safe-area-inset-bottom,0px)}
   .tabbar button{display:flex;flex-direction:column;align-items:center;justify-content:center;
-    gap:2px;min-height:50px;padding:6px 2px;font-size:10px;color:var(--t3)}
-  .tabbar button .ic{font-size:13px;line-height:1}
+    gap:2px;min-height:54px;padding:6px 2px;font-size:12.5px;font-weight:600;color:var(--t3)}
+  .tabbar button .ic{display:none}
   .tabbar button[aria-current="page"]{color:var(--accent)}
-  .tabbar .ct{font-size:9px;color:var(--t4);font-variant-numeric:tabular-nums}
+  .tabbar .ct{font-size:11px;color:var(--t4);font-variant-numeric:tabular-nums;
+    font-weight:500;line-height:1.1}
   .tabbar button[aria-current="page"] .ct{color:var(--accent)}
 }
 @media(prefers-reduced-motion:reduce){
@@ -678,6 +743,7 @@ var cmd = { on:false, q:"", i:0, rows:[] };
 var toast = null, toastT = null;
 var help = false;
 var pick = null;          // 집기 시트 {제목, 콜백}
+var alertsOpen = null;    // 펼쳐 둔 관제 알림. 급한 것은 처음부터 펴 둔다.
 
 /* ── 날짜 ─────────────────────────────────────────── */
 function pad(n){ return String(n).padStart(2,"0"); }
@@ -861,32 +927,44 @@ P.esc = esc;
 
 P.row = function(it, opt){
   opt = opt || {};
-  var on = P.on(it), late = P.late(it), tags = "";
-  if (it.s) tags += '<button class="pill s-'+esc(it.s)+'" data-act="cycle" data-arg="'
-    + esc(it.id)+'" title="상태 바꾸기 — s">'+esc(it.s)+"</button>";
+  var on = P.on(it), late = P.late(it), meta = [];
+
+  // 상태는 제목 옆에 한 낱말로. 나머지는 전부 아래 줄로 내린다 —
+  // 예전에는 표식 대여섯 개가 제목과 같은 줄에서 경쟁했다.
+  var st = it.s
+    ? '<button class="st s-'+esc(it.s)+'" data-act="cycle" data-arg="'+esc(it.id)
+      + '" title="상태 바꾸기 — s">'+esc(it.s)+"</button>"
+    : "";
+
   if (!opt.hideWho){
-    if (it.by) tags += '<button class="who has" data-act="unclaim" data-arg="'+esc(it.id)
-      + '" title="놓기">'+esc(P.who(it.by))+"</button>";
-    else if (it.must) tags += '<span class="who only">'+esc(P.who(it.must))+"만 가능</span>";
-    else tags += '<button class="who open" data-act="pick" data-arg="'+esc(it.id)
-      + '">미배정</button>';
+    if (it.by) meta.push('<button class="who has" data-act="unclaim" data-arg="'+esc(it.id)
+      + '" title="놓기">'+esc(P.who(it.by))+"</button>");
+    else if (it.must) meta.push('<span class="who only">'+esc(P.who(it.must))+"만 가능</span>");
+    else meta.push('<button class="who open" data-act="pick" data-arg="'+esc(it.id)
+      + '">집을 사람 없음</button>');
   }
-  if (opt.showTeam && it.team) tags += '<span class="pill q">'+esc(it.team)+"</span>";
-  if (opt.showScope && it.scope==="solo") tags += '<span class="pill solo">개인</span>';
-  if (it.mac) tags += '<span class="pill mac">맥</span>';
-  if (it.d) tags += '<span class="pill '+(late?"late":"q")+'">'+esc(it.d.slice(5))
-    + (late? " · "+P.days(P.T,it.d)+"일 지남" : "")+"</span>";
-  if (it.p===1 && !on) tags += '<span class="pill top">최우선</span>';
-  if (it._n) tags += '<span class="pill edit">새로</span>';
-  else if (it._e) tags += '<span class="pill edit">고침</span>';
-  return '<div class="row'+(on?" done":"")+(sel===it.id?" sel":"")+'" data-row="'+esc(it.id)+'">'
+  if (it.d) meta.push('<span class="mi'+(late?" hot":"")+'">'+esc(it.d.slice(5))
+    + (late? " · "+P.days(P.T,it.d)+"일 지남" : " 마감")+"</span>");
+  if (it.p===1 && !on) meta.push('<span class="mi hot">최우선</span>');
+  if (opt.showTeam && it.team) meta.push('<span class="mi">'+esc(it.team)+"</span>");
+  if (opt.showScope && it.scope==="solo") meta.push('<span class="mi">개인</span>');
+  if (it.mac) meta.push('<span class="mi">맥에서만</span>');
+  if (it._n) meta.push('<span class="mi new">새로</span>');
+  else if (it._e) meta.push('<span class="mi new">고침</span>');
+
+  var edge = on ? "" : (late || it.s==="막힘") ? " edge-hot" : (it.p===1 ? " edge-top" : "");
+
+  return '<div class="row'+(on?" done":"")+(sel===it.id?" sel":"")+edge
+    + '" data-row="'+esc(it.id)+'">'
     + '<button class="box'+(on?" on":"")+'" data-k="'+esc(it.k)+'" data-act="tog" data-arg="'
     + esc(it.id)+'" aria-pressed="'+on+'" aria-label="'+esc(it.t)+(on?" 완료 해제":" 완료")+'"'
     + (it.k==="track"?" disabled":"")+"></button>"
-    + '<div class="rc"><div class="rhead"><button class="rt" data-act="open" data-arg="'
-    + esc(it.id)+'">'+esc(it.t)+"</button>"+tags+"</div>"
+    + '<div class="rc">'
+    + '<div class="rhead"><button class="rt" data-act="open" data-arg="'
+    + esc(it.id)+'">'+esc(it.t)+"</button>"+st+"</div>"
     + (it.n?'<p class="rn">'+esc(it.n)+"</p>":"")
     + (it.w?'<p class="rw">'+esc(it.w)+"</p>":"")
+    + (meta.length?'<div class="rmeta">'+meta.join('<span class="sep">·</span>')+"</div>":"")
     + "</div></div>";
 };
 P.sec = function(title, sub, list, opt){
@@ -910,6 +988,33 @@ P.empty = function(title, body){
   return '<div class="empty"><b>'+esc(title)+"</b>"+esc(body||"")+"</div>";
 };
 P.resetRows = function(){ rowsOnScreen = []; };
+
+/* 관제 알림. 넷이 펼쳐져 있으면 첫 화면이 관제로 다 차서, 한 줄로 접었다.
+   급한 것(crit)만 처음부터 펴 두고 나머지는 눌러야 열린다. */
+P.alerts = function(list){
+  if (!list.length) return "";
+  if (!alertsOpen){
+    alertsOpen = {};
+    list.forEach(function(a){ if (a.sev === "crit") alertsOpen[a.t] = true; });
+  }
+  return '<div class="alerts">'+list.map(function(a){
+    var open = !!alertsOpen[a.t], has = !!a.x;
+    return '<div class="alert '+esc(a.sev||"warn")+(open?" open":"")+'">'
+      + '<button class="ahead" data-act="altog" data-arg="'+esc(a.t)+'"'
+      + ' aria-expanded="'+open+'"><span class="sev"></span>'
+      + '<span class="atx"><b>'+esc(a.t)+"</b>"
+      + (a.d?'<span class="when">'+esc(a.d)+"</span>":"")+"</span>"
+      + (has?'<span class="caret">&#9656;</span>':"<span></span>")+"</button>"
+      + (open && has
+          ? '<div class="abody"><p>'+esc(a.x)+"</p>"
+            + (a.sev!=="ok"
+                ? '<button class="snz" data-act="snooze" data-arg="al:'+esc(a.t)
+                  + '">하루 숨기기</button>' : "")
+            + "</div>"
+          : "")
+      + "</div>";
+  }).join("")+"</div>";
+};
 
 /* ── 토스트 ───────────────────────────────────────── */
 P.toast = function(msg, label, fn){
@@ -1119,7 +1224,8 @@ P.render = function(){
         return '<button data-act="go" data-arg="'+x.id+'"'
           + (x.id===S.view?' aria-current="page"':"")+">"
           + '<span class="ic">'+esc(x.ic)+"</span>"+esc(x.n)
-          + (c?'<span class="ct">'+c+"</span>":"")+"</button>"; }).join("")
+          // 숫자 칸은 비어도 자리를 남긴다 — 안 그러면 숫자 없는 탭만 위로 뜬다.
+          + '<span class="ct">'+(c||"\u00A0")+"</span></button>"; }).join("")
     + "</nav>"
     + '<div id="toast"></div>'
     + cmdHTML() + pickHTML() + helpHTML();
@@ -1146,6 +1252,10 @@ function act(name, arg, val){
     case "cmdclose": cmd.on=false; P.render(); break;
     case "cmdgo": var r=cmd.rows[+arg]; cmd.on=false; if(r) r.go(); else P.render(); break;
     case "helpopen": help=true; P.render(); break;
+    case "altog":
+      if (!alertsOpen) alertsOpen = {};
+      if (alertsOpen[arg]) delete alertsOpen[arg]; else alertsOpen[arg] = true;
+      P.render(); break;
     case "helpclose": help=false; P.render(); break;
     case "close": P.close(); break;
     case "open": P.open(arg); break;
@@ -1321,21 +1431,13 @@ function drawToday(){
     ? '<section class="sec"><div class="sech"><h2>관제</h2>'
       + '<span class="sub">'+E(P.data().scanAt)+" 자동 스캔</span>"
       + '<span class="n num">'+alerts.length+"</span></div>"
-      + alerts.map(function(a){
-          return '<div class="alert'+(a.sev==="warn"?" warn":"")+'"><span class="stripe"></span>'
-            + '<div class="in"><div class="ah"><b>'+E(a.t)+"</b>"
-            + '<span class="pill '+(a.sev==="crit"?"s-막힘":"s-대기")+'">'+E(a.d)+"</span>"
-            + '<button class="snz" data-act="snooze" data-arg="al:'+E(a.t)+'">하루 숨기기</button></div>'
-            + (a.x?'<p class="run">'+E(a.x)+"</p>":"")+"</div></div>";
-        }).join("")+"</section>"
+      + P.alerts(alerts)+"</section>"
     : "";
 
   var ok = good.length
-    ? '<section class="sec"><div class="sech"><h2>잘 돌고 있는 것</h2></div>'
-      + good.map(function(a){
-          return '<div class="alert ok"><span class="stripe"></span><div class="in">'
-            + '<div class="ah"><b>'+E(a.t)+'</b><span class="pill s-진행">'+E(a.d)+"</span></div>"
-            + "</div></div>"; }).join("")+"</section>"
+    ? '<section class="sec"><div class="sech"><h2>잘 돌고 있는 것</h2>'
+      + '<span class="n num">'+good.length+"</span></div>"
+      + P.alerts(good)+"</section>"
     : "";
 
   var body = head + al
@@ -1562,7 +1664,7 @@ function drawShare(){
   if (view){
     var c = cs.filter(function(x){ return x.team+"|"+x.lane === view; })[0];
     if (c) opened = P.sec(c.team+" · "+P.lane(c.lane),
-      (c.by?P.who(c.by)+" 가 맡은 칸":"아직 비어 있는 칸")+" — 안에 든 것",
+      (c.by?P.josa(P.who(c.by),"이","가")+" 맡은 칸":"아직 비어 있는 칸")+" — 안에 든 것",
       c.list.sort(P.urgency));
   }
 
