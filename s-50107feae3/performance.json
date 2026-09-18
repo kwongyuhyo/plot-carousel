@@ -1,0 +1,1199 @@
+{
+ "schema": 1,
+ "generated_at": "2026-09-19 02:48 KST",
+ "weeks": [
+  {
+   "week": "2026-W24",
+   "posts": 0,
+   "reach": 0,
+   "saved": 0,
+   "shares": 0,
+   "followers": 1172,
+   "followers_delta": null,
+   "reach_total": 19785,
+   "top": null
+  },
+  {
+   "week": "2026-W25",
+   "posts": 36,
+   "reach": 51946,
+   "saved": 90,
+   "shares": 1048,
+   "followers": 1109,
+   "followers_delta": -63,
+   "reach_total": 47368,
+   "top": "https://www.instagram.com/reel/DZj9z7xvOsd/"
+  },
+  {
+   "week": "2026-W30",
+   "posts": 5,
+   "reach": 4044,
+   "saved": 9,
+   "shares": 71,
+   "followers": 1040,
+   "followers_delta": -69,
+   "reach_total": 35030,
+   "top": "https://www.instagram.com/reel/DbAqEzdCuP0/"
+  },
+  {
+   "week": "2026-W32",
+   "posts": 24,
+   "reach": 71717,
+   "saved": 174,
+   "shares": 1077,
+   "followers": 1089,
+   "followers_delta": 49,
+   "reach_total": 97930,
+   "top": "https://www.instagram.com/reel/Dbapy2Ivs27/"
+  },
+  {
+   "week": "2026-W36",
+   "posts": 32,
+   "reach": 365889,
+   "saved": 1184,
+   "shares": 7297,
+   "followers": 2712,
+   "followers_delta": 1623,
+   "reach_total": 1558961,
+   "top": "https://www.instagram.com/p/Dck7QkuCeHJ/"
+  },
+  {
+   "week": "2026-W37",
+   "posts": 24,
+   "reach": 710241,
+   "saved": 2233,
+   "shares": 12353,
+   "followers": 2830,
+   "followers_delta": 118,
+   "reach_total": 1882387,
+   "top": "https://www.instagram.com/p/Dcz7Gujj_uK/"
+  },
+  {
+   "week": "2026-W38",
+   "posts": 12,
+   "reach": 487260,
+   "saved": 1334,
+   "shares": 9195,
+   "followers": 2977,
+   "followers_delta": 147,
+   "reach_total": 1581821,
+   "top": "https://www.instagram.com/reel/DdTi4TLvlmq/"
+  }
+ ],
+ "kinds": [
+  {
+   "kind": "인물해부",
+   "n": 27,
+   "weeks": 5,
+   "multiple": 3.04,
+   "low": 1.3,
+   "high": 4.53,
+   "stable": true
+  },
+  {
+   "kind": "기타",
+   "n": 47,
+   "weeks": 6,
+   "multiple": 1.06,
+   "low": 0.85,
+   "high": 1.12,
+   "stable": false
+  },
+  {
+   "kind": "발매·신보",
+   "n": 26,
+   "weeks": 6,
+   "multiple": 0.98,
+   "low": 0.92,
+   "high": 1.05,
+   "stable": false
+  },
+  {
+   "kind": "갈등·반응",
+   "n": 14,
+   "weeks": 4,
+   "multiple": 0.77,
+   "low": 0.75,
+   "high": 0.92,
+   "stable": true
+  },
+  {
+   "kind": "공연·페스티벌",
+   "n": 15,
+   "weeks": 5,
+   "multiple": 0.35,
+   "low": 0.34,
+   "high": 0.37,
+   "stable": true
+  }
+ ],
+ "top": [
+  {
+   "id": "DdTi4TLvlmq",
+   "week": "2026-W38",
+   "permalink": "https://www.instagram.com/reel/DdTi4TLvlmq/",
+   "media_type": "VIDEO",
+   "reach": 263765,
+   "saved": 617,
+   "shares": 5967,
+   "kind": "갈등·반응",
+   "head": "저스디스의 식케이 스닉디스?\n\n머쉬베놈(@mushvenom)이 어제(14일) 발매 예정 EP의 선공개 곡 ["
+  },
+  {
+   "id": "Dcz7Gujj_uK",
+   "week": "2026-W37",
+   "permalink": "https://www.instagram.com/p/Dcz7Gujj_uK/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 212269,
+   "saved": 407,
+   "shares": 1760,
+   "kind": "갈등·반응",
+   "head": "래퍼 pH-1과 아이브 레이의 SNS 소통을 두고 온라인이 갈렸습니다.\n발단은 8월 7일 레이의 게시물이었습"
+  },
+  {
+   "id": "Dc-3gvGjywQ",
+   "week": "2026-W37",
+   "permalink": "https://www.instagram.com/p/Dc-3gvGjywQ/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 140427,
+   "saved": 673,
+   "shares": 3296,
+   "kind": "인물해부",
+   "head": "리센느 제나 나무위키 털기\n\n올해 가장 자주 언급된 걸그룹은 역시 리센느인데요.\n\n리센느(@rescene_o"
+  },
+  {
+   "id": "Dc5jQfLD-uu",
+   "week": "2026-W37",
+   "permalink": "https://www.instagram.com/p/Dc5jQfLD-uu/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 130210,
+   "saved": 282,
+   "shares": 3417,
+   "kind": "인물해부",
+   "head": "올여름 연프를 통틀어 가장 많이 회자된 인물을 꼽자면 단연 로얄44(@royal44k)인데요.\n\n〈래퍼 여친"
+  },
+  {
+   "id": "Dck7QkuCeHJ",
+   "week": "2026-W36",
+   "permalink": "https://www.instagram.com/p/Dck7QkuCeHJ/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 95851,
+   "saved": 204,
+   "shares": 1477,
+   "kind": "갈등·반응",
+   "head": "이 회사 재미있다.\n\n최근 한 인스타그램 계정의 스토리로 올라와 소소하게 화제가 된 사진인데요.\n바로 KC("
+  },
+  {
+   "id": "DdBpmENPa1l",
+   "week": "2026-W37",
+   "permalink": "https://www.instagram.com/reel/DdBpmENPa1l/",
+   "media_type": "VIDEO",
+   "reach": 88279,
+   "saved": 243,
+   "shares": 1222,
+   "kind": "인물해부",
+   "head": "양홍원의 꿈은 본인이 아니었다.\n\n원현주에 대하여 수줍음이 많고 말수도 적던 사람이 어떻게 이렇게 달라졌냐는"
+  },
+  {
+   "id": "DctFHlsvQ-P",
+   "week": "2026-W36",
+   "permalink": "https://www.instagram.com/reel/DctFHlsvQ-P/",
+   "media_type": "VIDEO",
+   "reach": 87233,
+   "saved": 136,
+   "shares": 2108,
+   "kind": "갈등·반응",
+   "head": "저스트뮤직 파급효과를 샤라웃한 빅나티\n\n오늘(8월 31일) 저녁 공개된 빅나티(@bignaughtyboi)의"
+  },
+  {
+   "id": "DdG4ucoj7Kf",
+   "week": "2026-W38",
+   "permalink": "https://www.instagram.com/p/DdG4ucoj7Kf/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 81953,
+   "saved": 288,
+   "shares": 458,
+   "kind": "인물해부",
+   "head": "우리는 양홍원(@yanghongwon)을 시인래퍼라고 부릅니다.\n\n1999년생, 〈고등래퍼〉 첫 시즌 우승자"
+  },
+  {
+   "id": "DdRIwfmj_6A",
+   "week": "2026-W38",
+   "permalink": "https://www.instagram.com/p/DdRIwfmj_6A/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 63920,
+   "saved": 160,
+   "shares": 1189,
+   "kind": "인물해부",
+   "head": "더 자세히 알고 싶은 빅나티(@bignaughtyboi)\n\n하이어뮤직 소속의 래퍼이자, [정이라고 하자], "
+  },
+  {
+   "id": "Dc5scRej6Sh",
+   "week": "2026-W37",
+   "permalink": "https://www.instagram.com/p/Dc5scRej6Sh/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 47243,
+   "saved": 267,
+   "shares": 751,
+   "kind": "인물해부",
+   "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official) "
+  },
+  {
+   "id": "DclAcGwCee3",
+   "week": "2026-W36",
+   "permalink": "https://www.instagram.com/p/DclAcGwCee3/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 36897,
+   "saved": 377,
+   "shares": 2250,
+   "kind": "인물해부",
+   "head": "힙합과 바다, 둘 다 좋아하신다면 10월 넷째 주 토요일을 비워두셔야겠습니다.\n\n오는 10월 24일 강릉 경"
+  },
+  {
+   "id": "Dbapy2Ivs27",
+   "week": "2026-W32",
+   "permalink": "https://www.instagram.com/reel/Dbapy2Ivs27/",
+   "media_type": "VIDEO",
+   "reach": 33940,
+   "saved": 83,
+   "shares": 704,
+   "kind": "인물해부",
+   "head": "[NEW RELEASE] 한로로- 잔혹한 천사의 테제\n\nJ-POP REMAKE Vol.2 ‘한로로x잔혹한 천"
+  }
+ ],
+ "published": [
+  {
+   "id": "DdG4ucoj7Kf",
+   "week": "2026-W38",
+   "kind": "인물해부",
+   "reach": 81953,
+   "head": "우리는 양홍원(@yanghongwon)을 시인래퍼라고 부릅니다.\n\n1999년생, 〈고등래퍼〉 첫 시즌 우승자이자 〈쇼미더머니 8〉 준우승자인데요"
+  },
+  {
+   "id": "DdL7v23D219",
+   "week": "2026-W38",
+   "kind": "기타",
+   "reach": 11760,
+   "head": "동훈칸쵸?\n\nRoyal 44(@royal44k)가 자신의 인스타그램 부계정(@royalxliv)에 칸쵸(?)사진을 올렸습니다.\n팬이 선물한 것으"
+  },
+  {
+   "id": "DdMDWlLD1Br",
+   "week": "2026-W38",
+   "kind": "인물해부",
+   "reach": 24780,
+   "head": "노엘(@noel____________)의 나무위키는 유난히 깁니다.\n\n2000년생 부산 출신으로, 2017년 더블 싱글 '부록'으로 데뷔했습니다"
+  },
+  {
+   "id": "DdMO0qND4dk",
+   "week": "2026-W38",
+   "kind": "공연·페스티벌",
+   "reach": 1091,
+   "head": "부산 남구 대연동의 라이브클럽 오방가르드(@ovantgarde)가 8월 26일부터 2개월 영업정지 처분을 받았습니다. 사유는 공연 중 관객 일부"
+  },
+  {
+   "id": "DdQ_ZtwD5_S",
+   "week": "2026-W38",
+   "kind": "기타",
+   "reach": 28761,
+   "head": "지난 8월 19일 [BiiiG]으로 돌아온 빅뱅과 더불어 9월 10일 1년 만에 선공개곡 [이 별로부터]로 돌아온 아이유까지. \n‘국민 뮤지션’"
+  },
+  {
+   "id": "DdQ_iFovX7V",
+   "week": "2026-W38",
+   "kind": "기타",
+   "reach": 4532,
+   "head": "[NEW RELEASE] Royal 44- Haute Couture\n\nRoyal 44(@royal44k)의 신곡 'Haute Couture' 뮤"
+  },
+  {
+   "id": "DdRIwfmj_6A",
+   "week": "2026-W38",
+   "kind": "인물해부",
+   "reach": 63920,
+   "head": "더 자세히 알고 싶은 빅나티(@bignaughtyboi)\n\n하이어뮤직 소속의 래퍼이자, [정이라고 하자], [Vancouver] 등 다양한 노래"
+  },
+  {
+   "id": "DdTi4TLvlmq",
+   "week": "2026-W38",
+   "kind": "갈등·반응",
+   "reach": 263765,
+   "head": "저스디스의 식케이 스닉디스?\n\n머쉬베놈(@mushvenom)이 어제(14일) 발매 예정 EP의 선공개 곡 [내리고 (feat. JUSTHIS)]"
+  },
+  {
+   "id": "DdUHxJ7D0gZ",
+   "week": "2026-W38",
+   "kind": "인물해부",
+   "reach": 1131,
+   "head": "야름답다\n\n올해 신조어 하나가 권은비에게서 나왔습니다.\n쿠팡플레이 〈직장인들〉 시즌3에서 배우 노재원이 권은비(@silver_rain.__)의 "
+  },
+  {
+   "id": "DdULKIhz2jH",
+   "week": "2026-W38",
+   "kind": "갈등·반응",
+   "reach": 3648,
+   "head": "신조어가 만들어졌습니다.\n\n쿠팡플레이 〈직장인들〉 시즌3에서 권은비(@silver_rain.__)의 워터밤 사진이 화면에 뜨자, 노재원이 말을 "
+  },
+  {
+   "id": "DdWQYyJD2ve",
+   "week": "2026-W38",
+   "kind": "기타",
+   "reach": 1236,
+   "head": "래퍼 김감전이 구속됐습니다.\n\n서울 마포경찰서는 지난 14일 김상민그는감히전설이라고할수있다(본명 김상민, 이하 김감전)을 마약류관리법 위반 혐의"
+  },
+  {
+   "id": "DdWUg4BD9fL",
+   "week": "2026-W38",
+   "kind": "발매·신보",
+   "reach": 683,
+   "head": "놓쳤던 음반들이 다시 열립니다.\n\n실리카겔(@sillicagel.official)이 절판됐던 음반들을 온라인 선판매로 다시 내놓습니다. 정규 2"
+  },
+  {
+   "id": "Dcz7Gujj_uK",
+   "week": "2026-W37",
+   "kind": "갈등·반응",
+   "reach": 212269,
+   "head": "래퍼 pH-1과 아이브 레이의 SNS 소통을 두고 온라인이 갈렸습니다.\n발단은 8월 7일 레이의 게시물이었습니다.\n그 게시물의 배경음악이 pH-"
+  },
+  {
+   "id": "Dcz-a0xD0Mu",
+   "week": "2026-W37",
+   "kind": "갈등·반응",
+   "reach": 1646,
+   "head": "저스틴 비버의 스토리에 한국 노래가 깔렸습니다.\n\n9월 2일, 저스틴 비버(@lilbieber)가 자신의 브랜드 SKYLRK의 오디오 신제품을 "
+  },
+  {
+   "id": "Dc0EPSKj91C",
+   "week": "2026-W37",
+   "kind": "갈등·반응",
+   "reach": 1073,
+   "head": "여러분 '세종시' 하면 무엇이 떠오르시나요?\n정부청사로 대표되는 행정수도의 이미지가 먼저 떠오르실 텐데요, 10월 마지막 주말만큼은 좀 다릅니다"
+  },
+  {
+   "id": "Dc3l6gOj86K",
+   "week": "2026-W37",
+   "kind": "기타",
+   "reach": 1253,
+   "head": "빅나티가 사회복무요원으로 입대합니다.\n\n빅나티(@bignaughtyboi)가 오는 9월 10일부터 사회복무요원으로 복무를 합니다.\n오늘(4일) "
+  },
+  {
+   "id": "Dc3m5WJDzuW",
+   "week": "2026-W37",
+   "kind": "공연·페스티벌",
+   "reach": 1029,
+   "head": "아이유(@dlwlrma)가 돌아옵니다.\n\n지난 7월 귀 질환으로 정규 6집 발매를 미루고 9월 콘서트까지 취소했던 아이유가,\n오는 9월 10일 "
+  },
+  {
+   "id": "Dc5jQfLD-uu",
+   "week": "2026-W37",
+   "kind": "인물해부",
+   "reach": 130210,
+   "head": "올여름 연프를 통틀어 가장 많이 회자된 인물을 꼽자면 단연 로얄44(@royal44k)인데요.\n\n〈래퍼 여친 구함 : KISS or DISS〉에"
+  },
+  {
+   "id": "Dc5kxcaDzKT",
+   "week": "2026-W37",
+   "kind": "기타",
+   "reach": 847,
+   "head": "RAP:PUBLIC이 돌아옵니다.\n\n티빙 오리지널 〈RAP:PUBLIC〉의 시즌 2 제작이 확정됐습니다. \n2024년 시즌 1은 '총과 돈'을 "
+  },
+  {
+   "id": "Dc5lcMcSFeB",
+   "week": "2026-W37",
+   "kind": "발매·신보",
+   "reach": 1787,
+   "head": "[NEW RELEASE] 식케이 X Lil Moshpit- U\n\n식케이(@younghotyellow94)와 Lil Moshpit(@hwimmm,"
+  },
+  {
+   "id": "Dc5l4A4PIBe",
+   "week": "2026-W37",
+   "kind": "갈등·반응",
+   "reach": 1842,
+   "head": "[NEW RELEASE] 권은비- DEJAVU\n\n권은비(@kwoneunbi.official)의 신곡 'DEJAVU' 음원이 발매되었습니다.\n처음"
+  },
+  {
+   "id": "Dc5q8yEvI2d",
+   "week": "2026-W37",
+   "kind": "발매·신보",
+   "reach": 2696,
+   "head": "[NEW RELEASE] 지수- CLICK\n\n지수(@sooyaaa__)의 신곡 'CLICK' 음원이 발매되었습니다.\n첫 정규앨범의 선공개 싱글입"
+  },
+  {
+   "id": "Dc5rN7evHS-",
+   "week": "2026-W37",
+   "kind": "발매·신보",
+   "reach": 1621,
+   "head": "[NEW RELEASE] 리사- SaWaDiKa\n\n리사(@lalalalisa_m)의 신곡 'SaWaDiKa' 음원이 발매되었습니다.\n10월 23"
+  },
+  {
+   "id": "Dc5scRej6Sh",
+   "week": "2026-W37",
+   "kind": "인물해부",
+   "reach": 47243,
+   "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official) 안에서 웃음의 지분을 가장 크게 가져"
+  },
+  {
+   "id": "Dc5wCfmPPss",
+   "week": "2026-W37",
+   "kind": "갈등·반응",
+   "reach": 2504,
+   "head": "아이유가 컴백에 앞서 영상을 공개했습니다.\n\n아이유(@dlwlrma)가 9월 10일 오후 6시 새 디지털 싱글을 발매합니다. 소속사 이담엔터테인"
+  },
+  {
+   "id": "Dc5x8J7j-8I",
+   "week": "2026-W37",
+   "kind": "추천·모음",
+   "reach": 8323,
+   "head": "예능으로 먼저 알게 됐다면, 음악은 지금부터입니다.\n\n<쇼미더머니12>를 비롯해 〈래퍼 여친 구함〉까지 올해 정말 다양한 프로그램으로 우리 앞에"
+  },
+  {
+   "id": "Dc8LxwIv_Xg",
+   "week": "2026-W37",
+   "kind": "기타",
+   "reach": 20596,
+   "head": "빅나티(@bignaughtyboi)가 ‘폴킴(@pkalbum)의 남은밤’에 출연해서 스파이더맨에 대한 이야기를 했습니다.\n스파이더맨을 보고 펑펑"
+  },
+  {
+   "id": "Dc8R1W-vgB8",
+   "week": "2026-W37",
+   "kind": "공연·페스티벌",
+   "reach": 3102,
+   "head": "브루노 마스(@brunomars)가 2027년 5월 내한을 확정하고 MBC 14F와 인터뷰를 가졌는데요,\n서울 공연에서 준비한 특별 무대에 대한"
+  },
+  {
+   "id": "Dc8ZaIBy9Hg",
+   "week": "2026-W37",
+   "kind": "기타",
+   "reach": 12697,
+   "head": "두 사람이 드디어 같이 춤을 췄습니다.\n\n식케이(@younghotyellow94)와 그의 연인이자, 댄서 우와(@uwakitadera)가 함께 "
+  },
+  {
+   "id": "Dc8hsMQD6yN",
+   "week": "2026-W37",
+   "kind": "공연·페스티벌",
+   "reach": 1011,
+   "head": "도시 하나가 일주일을 통째로 내줬습니다.\n\n로스앤젤레스시가 9월 1일부터 8일까지를 'BTS 위크'로 공식 선포했습니다. 방탄소년단(@bts.b"
+  },
+  {
+   "id": "Dc-3gvGjywQ",
+   "week": "2026-W37",
+   "kind": "인물해부",
+   "reach": 140427,
+   "head": "리센느 제나 나무위키 털기\n\n올해 가장 자주 언급된 걸그룹은 역시 리센느인데요.\n\n리센느(@rescene_official)의 막내 제나는 경주 "
+  },
+  {
+   "id": "Dc--o3mj5OO",
+   "week": "2026-W37",
+   "kind": "갈등·반응",
+   "reach": 9482,
+   "head": "리드머가 1.5점을 줬습니다.\n\n지난 8월 28일 발매된 수퍼비의 정규 5집 [before the m.s.g.a]가 리드머에서 5점 만점에 1."
+  },
+  {
+   "id": "DdBpmENPa1l",
+   "week": "2026-W37",
+   "kind": "인물해부",
+   "reach": 88279,
+   "head": "양홍원의 꿈은 본인이 아니었다.\n\n원현주에 대하여 수줍음이 많고 말수도 적던 사람이 어떻게 이렇게 달라졌냐는 스윙스의 질문에, \"엄마가 돼서\"라"
+  },
+  {
+   "id": "DdBrBaezhOr",
+   "week": "2026-W37",
+   "kind": "기타",
+   "reach": 3589,
+   "head": "노엘의 외출 전 루틴?\n\n노엘(@noel____________)이 유튜브 채널 〈좋은 녀석들〉에 30초짜리 영상을 올렸습니다. \n차를 샀는데 어"
+  },
+  {
+   "id": "DdEEWMJj7zk",
+   "week": "2026-W37",
+   "kind": "인물해부",
+   "reach": 15971,
+   "head": "리센느 메이 나무위키 털기\n\n2026년을 리센느의 해라고 불러도 무리가 없을 텐데요.\n\n리센느(@rescene_official)의 메이는 \"기회"
+  },
+  {
+   "id": "DdEJ9gODzYI",
+   "week": "2026-W37",
+   "kind": "발매·신보",
+   "reach": 744,
+   "head": "김심야(@ximvol)가 9일 오후 6시 두 번째 정규앨범 [도그마]를 공개했습니다. 총 10곡으로, 프로듀싱팀 사운드 서플라이 서비스가 전곡에"
+  },
+  {
+   "id": "DcisK2Hj35L",
+   "week": "2026-W36",
+   "kind": "공연·페스티벌",
+   "reach": 4251,
+   "head": "지드래곤(@xxxibgdrgn)이 빅뱅 20주년 월드투어 콘서트에 독립, 참정유공자 후손과 교정공무원을 초청했습니다.\n\n이번 초청은 지드래곤이 "
+  },
+  {
+   "id": "Dciuw1Nj_5x",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 23012,
+   "head": "우리는 양홍원을 시인 래퍼라고 부릅니다.\n한번 듣고 끝나는 것이 아니라, 오랫동안 여운이 남아 마음에 맴도는 시적인 가사를 쓰곤 해서 붙은 별명"
+  },
+  {
+   "id": "DcivPt3D7Nx",
+   "week": "2026-W36",
+   "kind": "공연·페스티벌",
+   "reach": 779,
+   "head": "브루노 마스(@brunomars)가 내년 5월 내한을 확정지었습니다.\n일자는 2027년 5월 21일, 22일, 25일, 26일 총 4회차로 준비"
+  },
+  {
+   "id": "Dck7QkuCeHJ",
+   "week": "2026-W36",
+   "kind": "갈등·반응",
+   "reach": 95851,
+   "head": "이 회사 재미있다.\n\n최근 한 인스타그램 계정의 스토리로 올라와 소소하게 화제가 된 사진인데요.\n바로 KC(@kcthecompany)사옥 벽에 "
+  },
+  {
+   "id": "DclAcGwCee3",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 36897,
+   "head": "힙합과 바다, 둘 다 좋아하신다면 10월 넷째 주 토요일을 비워두셔야겠습니다.\n\n오는 10월 24일 강릉 경포해변 중앙광장에서 '강원 RED F"
+  },
+  {
+   "id": "DclH4jqpakD",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 3887,
+   "head": "[NEW RELEASE] 윈터- 여름의 속도\n\n윈터 (@imwinter)의 신곡 '여름의 속도 (Speed of Summer)' 음원이 발매되었"
+  },
+  {
+   "id": "DclR1PiCYsA",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 18277,
+   "head": "올해 가장 주목받는 래퍼를 한명 뽑자면, 아마 나우아임영(@now_im_young)일 것입니다.\n지난해 KC 합류부터 올해 쇼미더머니 12 준우"
+  },
+  {
+   "id": "DclSfT9porE",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 2424,
+   "head": "[NEW RELEASE] 소수빈- I Should've Said\n\n지나고 나서야 보이는 마음들이 있다. 조금 더 좋은 말을 해줄 걸, \n괜찮다고"
+  },
+  {
+   "id": "DclSkAEJrZ5",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 1074,
+   "head": "[NEW RELEASE] HYUKOH- KoK\n\nHYUKOH (혁오, @hyukohofficial)의 신곡 'KoK' 음원이 발매되었습니다.\n\n"
+  },
+  {
+   "id": "DclT6WTptVc",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 2301,
+   "head": "[NEW RELEASE] 수퍼비- m.s.g.a freestyle\n\n수퍼비 (SUPERBEE, @originalgimchi)의 새 앨범 [bef"
+  },
+  {
+   "id": "DclUFVPpSdb",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 2704,
+   "head": "[NEW RELEASE] 제니- FALLEN ANGEL\n\n제니 (JENNIE, @jennierubyjane)의 신곡 'FALLEN ANGEL' "
+  },
+  {
+   "id": "DcqQ5T1jy_f",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 28851,
+   "head": "이번 8월 가장 화제의 프로그램이었던 Mnet <래퍼 여친 구함: KISS or DISS>\n그중에서 세번째 뮤즈 위성희와 연인관계로 이어진 KC"
+  },
+  {
+   "id": "DcqelnTvfWn",
+   "week": "2026-W36",
+   "kind": "기타",
+   "reach": 2580,
+   "head": "스포티파이 오늘의 차트\n\n뜨거웠던 여름이 지나가는 8월 말. \n오늘 한국의 스포티파이 사용자들이 가장 사랑한 음악은 무슨 곡이었을까요?\n스포티파"
+  },
+  {
+   "id": "DcrpILbE5wn",
+   "week": "2026-W36",
+   "kind": "공연·페스티벌",
+   "reach": 1286,
+   "head": "미국의 래퍼, 싱어송라이터이자 저스틴 비버(@lilbieber)가 피처링 한 Mood로 잘 알려진 24kGoldn(@24kgoldn)가 인스타그"
+  },
+  {
+   "id": "Dcs_4cljw0W",
+   "week": "2026-W36",
+   "kind": "기타",
+   "reach": 1044,
+   "head": "또 다시 보여주기 위해 식케이와 릴 모쉬핏이 돌아옵니다.\n\n[K-FLIP+]라는 명반을 만들어내며, 지난해 한국 힙합 씬을 주름잡았던 식케이(@"
+  },
+  {
+   "id": "DctFHlsvQ-P",
+   "week": "2026-W36",
+   "kind": "갈등·반응",
+   "reach": 87233,
+   "head": "저스트뮤직 파급효과를 샤라웃한 빅나티\n\n오늘(8월 31일) 저녁 공개된 빅나티(@bignaughtyboi)의 신곡 [노스탈지아]에서 빅나티가 2"
+  },
+  {
+   "id": "DctNb0xPmkB",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 6645,
+   "head": "[NEW RELEASE] BIG Naughty- 노스탈지아\nBIG Naughty (@bignaughtyboi)의 신곡 '노스탈지아' 음원이 발매"
+  },
+  {
+   "id": "DctNmo6P-FN",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 12731,
+   "head": "[NEW RELEASE] 소녀시대-효리수- Skibidi\n소녀시대-효리수의 신곡 '스키비디 (Skibidi)' 음원이 발매되었습니다.\n효연, 유"
+  },
+  {
+   "id": "DctNx7VvENZ",
+   "week": "2026-W36",
+   "kind": "공연·페스티벌",
+   "reach": 1990,
+   "head": "[NEW RELEASE] 태민- FLOAT\n태민 (@xoalsox)의 신곡 'FLOAT' 음원이 발매되었습니다.\n\n새 앨범 [PHASE 1 : "
+  },
+  {
+   "id": "DctPFsnD-wD",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 961,
+   "head": "올 여름을 뜨겁게 달군 에이티즈(@ateez_official_)의 BAD.\n그 화제의 중심에 에이티즈의 산(@choi3an)이 있었습니다.\nPL"
+  },
+  {
+   "id": "DcuN-P6E9kg",
+   "week": "2026-W36",
+   "kind": "갈등·반응",
+   "reach": 843,
+   "head": "이번 가을 강릉으로 떠날 준비 되셨나요?\n\n이번 가을을 가장 뜨겁게 만들 힙합,EDM 페스티벌 ‘RED FRYS 2026'의 일반 티켓이 8월 "
+  },
+  {
+   "id": "DcuQQb-E7oe",
+   "week": "2026-W36",
+   "kind": "추천·모음",
+   "reach": 8187,
+   "head": "지난 8월 31일 빅나티(@bignaughtyboi)가 발매한 신보 [노스탈지아]에는\n그가 어릴 적 들었던 음악들이 줄줄이 호명됩니다.\n\n그래서"
+  },
+  {
+   "id": "DcvoaqnD9_j",
+   "week": "2026-W36",
+   "kind": "공연·페스티벌",
+   "reach": 775,
+   "head": "2010년, 우리의 곁을 떠난 일본의 언더그라운드 힙합 DJ이자 프로듀서인 누자베스가 음악으로 한국에 옵니다.\n화려하고 강렬한 스타일보다 서정적"
+  },
+  {
+   "id": "DcvtwwAD_mQ",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 8858,
+   "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official)의 재발견을 이끈 채널이 ‘안녕하세요원"
+  },
+  {
+   "id": "Dcvyju9ScrO",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 2564,
+   "head": "[NEW RELEASE] 청하- México\n청하 (@chungha.art)의 신곡 ‘México’ 음원이 발매되었습니다.\n반복되는 일상과 공허"
+  },
+  {
+   "id": "Dcv0-eCzvuH",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 1875,
+   "head": "[NEW RELEASE] Felix- Slow It Down\nFelix (@yong.lixx)의 신곡 ‘Slow It Down’ 음원이 발매되었"
+  },
+  {
+   "id": "Dcv2GjlzmwI",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 1956,
+   "head": "[NEW RELEASE] 82MAJOR- Like Fire\n82MAJOR (@82major_official)의 신곡 ‘Like Fire’ 음원이"
+  },
+  {
+   "id": "Dcv3Or7TnUo",
+   "week": "2026-W36",
+   "kind": "발매·신보",
+   "reach": 2583,
+   "head": "[NEW RELEASE] Rad Museum- RUN AWAY !!! (feat. Zior Park)\nRad Museum (@radmuseum)"
+  },
+  {
+   "id": "Dcw0bxTk7Ds",
+   "week": "2026-W36",
+   "kind": "갈등·반응",
+   "reach": 1677,
+   "head": "이번 여름 아마 가장 핫한 래퍼를 한 명 꼽자면 Royal44(@royal44k)일 것입니다.\n\n쇼미더머니12를 시작으로, 최근 방영한 래퍼여친"
+  },
+  {
+   "id": "Dcx_Lt1D3Sw",
+   "week": "2026-W36",
+   "kind": "추천·모음",
+   "reach": 547,
+   "head": "양홍원(@yanghongwon)에게 스며들고 있는 당신을 위한 양홍원 Playlist\n\n요즘 소위 말하고 있는 최고의 ‘밥친구’를 뽑자면, 많은"
+  },
+  {
+   "id": "DcyjSHhD4Yf",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 516,
+   "head": "한국을 여행 중인 24kGoldn(@24kgoldn)이 인스타그램 스토리를 올렸습니다.\n\n24kGoldn이 최근 \"NBA 영보이가 왜 한국으로 "
+  },
+  {
+   "id": "DcykalsjxdI",
+   "week": "2026-W36",
+   "kind": "인물해부",
+   "reach": 730,
+   "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official)의 역주행을 연 '거제 야호', 그 한"
+  },
+  {
+   "id": "DbaJmfIv_pJ",
+   "week": "2026-W32",
+   "kind": "기타",
+   "reach": 305,
+   "head": "아일랜드 인디밴드 'The Frames'의 보컬, 기타리스트이자, 우리에게는 영화 [원스]로 익숙한 글렌 핸사드(Glen James Hansar"
+  },
+  {
+   "id": "Dbapy2Ivs27",
+   "week": "2026-W32",
+   "kind": "인물해부",
+   "reach": 33940,
+   "head": "[NEW RELEASE] 한로로- 잔혹한 천사의 테제\n\nJ-POP REMAKE Vol.2 ‘한로로x잔혹한 천사의 테제’ 발매\n\n가수 겸 방송인 "
+  },
+  {
+   "id": "Dbare6KvE11",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 232,
+   "head": "[NEW RELEASE] MilliMax (밀리맥스)- Ms. Mental (with TRADE L)\n\n래퍼 밀리맥스(@millimaxlol)가"
+  },
+  {
+   "id": "DbawLZdj0GL",
+   "week": "2026-W32",
+   "kind": "인물해부",
+   "reach": 254,
+   "head": "지난 7월 29일, 방탄소년단(@bts.bighitofficial)이 그래미(@grammys) 출품을 거부한데 이어, 그래미 CEO가 BTS의 "
+  },
+  {
+   "id": "Dbayc7vP_qO",
+   "week": "2026-W32",
+   "kind": "추천·모음",
+   "reach": 373,
+   "head": "요즘 SNS에서 많이 보이는 AI 버전 음악, PLOT의 에디터도 종종 즐겨듣고 있는데요.\n에디터가 몰래 듣는 AI 명곡 3선 준비해왔습니다.\n"
+  },
+  {
+   "id": "DbayzdsSgei",
+   "week": "2026-W32",
+   "kind": "기타",
+   "reach": 8254,
+   "head": "벅스 차트로 보는 오늘의 음악 Top 5\n\n7월의 마지막 주, 오늘 한국에서 가장 사랑받은 음악은 무엇일까요?\n벅스 음악 차트로 보는 음악 5곡"
+  },
+  {
+   "id": "Dba0S2jPE5Z",
+   "week": "2026-W32",
+   "kind": "기타",
+   "reach": 270,
+   "head": "132번째 오늘의 노래 | 2026.07.30\n\nArtist | 주혜린(@joohyelyn)\nTitle | 놀러 와\nReleased | 2025"
+  },
+  {
+   "id": "Dbc1B1JvqNE",
+   "week": "2026-W32",
+   "kind": "공연·페스티벌",
+   "reach": 464,
+   "head": "지난 7월 30일, 한로로(@hanr0r0)가 부른 신세기 에반게리온 OST '잔혹한 천사의 테제'의 한국어 커버 버전이 공개 되었습니다. 한국"
+  },
+  {
+   "id": "Dbc2KGQjynC",
+   "week": "2026-W32",
+   "kind": "인물해부",
+   "reach": 2011,
+   "head": "음원은 수백 번 들었는데 라이브는 한 번도 못 본 아티스트, 한 번쯤 있으실 겁니다.\n\n그래서 PLOT이 그 라이브를 만들기로 했습니다. 어떤 "
+  },
+  {
+   "id": "Dbc6rlQvSpN",
+   "week": "2026-W32",
+   "kind": "인물해부",
+   "reach": 357,
+   "head": "역사상 가장 훌륭한 뮤직비디오 중 하나로 꼽히는 [Virtual Insanity]가 30년만에 새롭게 돌아왔습니다.\n\n영국 출신의 애시드 재즈 "
+  },
+  {
+   "id": "DbdBKA6vEG_",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 1938,
+   "head": "[NEW RELEASE] Raf Sandou - On the Weekend\n\nRaf Sandou (라프산두)의 정규 앨범 〈SOUL BABY〉("
+  },
+  {
+   "id": "DbdFIUTvfMR",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 1333,
+   "head": "[NEW RELEASE] 코르티스 - MOTION(feat. Juicy J)\n\n코르티스(@cortis), 디지털 싱글 ‘MOTION (feat."
+  },
+  {
+   "id": "DbdP77-vn1i",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 1320,
+   "head": "[NEW RELEASE] 아리아나 그란데- petal\n\n미국의 팝 아티스트 아리아나 그란데(@arianagrande)가 오늘 신보 [petal]"
+  },
+  {
+   "id": "DbdQfm3veYs",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 2055,
+   "head": "[NEW RELEASE] 비오(@auxi_beo)- ZOO\n\n오랜만이에요 여러분\n음악도 제 모습도 많이 변했지만 이게 지금의 저예요! \n누군가에"
+  },
+  {
+   "id": "DbdSDcZv5b9",
+   "week": "2026-W32",
+   "kind": "공연·페스티벌",
+   "reach": 3455,
+   "head": "[NEW RELEASE] 리도어(@band_redoor)- Feathers \n\n밴드 리도어가 신곡 Feathers를 발매했습니다. \n미발매곡으로"
+  },
+  {
+   "id": "Dbdb8h7PS5k",
+   "week": "2026-W32",
+   "kind": "기타",
+   "reach": 2954,
+   "head": "애플 뮤직 차트로 보는 오늘의 힙합 Top 5\n\n7월의 마지막 날, 오늘 한국에서 가장 사랑받은 힙합/랩 음악은 무엇일까요?\n애플 뮤직 차트로 "
+  },
+  {
+   "id": "DbkyQH2vqgX",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 4075,
+   "head": "[NEW RELEASE] 레드벨벳- Surfin' Boy\n\n레드벨벳(@redvelvet.smtown)이 여름 미니앨범 ‘Velvet Summer"
+  },
+  {
+   "id": "Dbk7NpvPqbZ",
+   "week": "2026-W32",
+   "kind": "공연·페스티벌",
+   "reach": 2776,
+   "head": "에스파(@aespa_official)가 현지 시간 8월 2일, 시카고 그랜트파크에서 열린 롤라팔루자(@lollapalooza) 무대에 올랐습니다"
+  },
+  {
+   "id": "DbpxUiXvTkY",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 1134,
+   "head": "[NEW RELEASE] KISS OF LIFE- SWEAT\n\n이번 싱글 [SWEAT]은 자신의 노력과 불안을 굳이 타인에게 증명하지 않아도 되"
+  },
+  {
+   "id": "Dbp08D7vux0",
+   "week": "2026-W32",
+   "kind": "인물해부",
+   "reach": 1159,
+   "head": "[NEW RELEASE] 다영X박재범- FLIRTY\n\n다영(@dayoungism)과 박재범(@moresojuplease)이 첫 콜라보 싱글 〈F"
+  },
+  {
+   "id": "Dbp7jDQPfx1",
+   "week": "2026-W32",
+   "kind": "발매·신보",
+   "reach": 935,
+   "head": "[NEW RELEASE] POV — NYTC(NOT YOUR TYPICAL CITY)\n\n맨체스터 시티(@mancity)의 방한에 맞춰 레이블 P"
+  },
+  {
+   "id": "DbqAr1gPEI-",
+   "week": "2026-W32",
+   "kind": "기타",
+   "reach": 199,
+   "head": "133번째 오늘의 노래 | 2026.08.05\n\n‘바라봐줘요ʼ는 추운 겨울, 사랑하는 이에게 보내는 따뜻한 편지와 같은 노래로, 90년대 유행했"
+  },
+  {
+   "id": "DbqGUR1Pc3l",
+   "week": "2026-W32",
+   "kind": "기타",
+   "reach": 1709,
+   "head": "애플 뮤직에서 보는 오늘의 락 차트 Top 5\n\n여름의 열기가 절정에 달한 오늘, 한국에서 가장 사랑받은 락 음악은 무엇일까요?\n애플 뮤직 차트"
+  },
+  {
+   "id": "DbqKpTQv3bk",
+   "week": "2026-W32",
+   "kind": "공연·페스티벌",
+   "reach": 215,
+   "head": "마룬 파이브(@maroon5)가 3년 만에 한국을 찾습니다.\n\n2027년 1월 27일 오후 8시, 경기 고양 킨텍스 제1전시장에서 〈MAROON"
+  },
+  {
+   "id": "Da2ZsMPvJnh",
+   "week": "2026-W30",
+   "kind": "기타",
+   "reach": 374,
+   "head": "128번째 오늘의 노래 | 2026.07.16\n\nArtist | 최유리(@youli_choi)\nTitle | 생각을 멈추다 보면\nReleased"
+  },
+  {
+   "id": "DbAqEzdCuP0",
+   "week": "2026-W30",
+   "kind": "발매·신보",
+   "reach": 2044,
+   "head": "[NEW RELEASE] 김하온 나우아임영 제이민- Yankee candle\n\nKC 유튜브를 통해 김하온, 나우아임영, 제이민이 함께한 Yank"
+  },
+  {
+   "id": "DbF0enSCBS1",
+   "week": "2026-W30",
+   "kind": "발매·신보",
+   "reach": 1258,
+   "head": "뉴진스가 돌아왔습니다.\n\n오늘 새벽 뉴진스 데뷔 4주년을 맞이하여, 기습 공개된 뉴진스의 새로운 영상.\n어도어 복귀가 결정된 민지, 하니, 해린"
+  },
+  {
+   "id": "DbF60OYPK06",
+   "week": "2026-W30",
+   "kind": "기타",
+   "reach": 265,
+   "head": "129번째 오늘의 노래 | 2026.07.22\n\n뭄바톤(Moombahton)과 일렉트로팝(ElectroPop)을 결합한 사운드와 독특한 프리코러"
+  },
+  {
+   "id": "DbGE4ioj0H5",
+   "week": "2026-W30",
+   "kind": "기타",
+   "reach": 103,
+   "head": "129번째 오늘의 노래 | 2026.07.22\n\n뭄바톤(Moombahton)과 일렉트로팝(ElectroPop)을 결합한 사운드와 독특한 프리코러"
+  },
+  {
+   "id": "DZjfLb4vizB",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 406,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 하이어뮤직 (HIGHR MUSIC)\n\n하이어뮤직(@h1ghrmusic)을 RAPBEAT 202"
+  },
+  {
+   "id": "DZjg5dpvS72",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1115,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 지코 (ZICO)\n\n지코(@woozico0914)를 RAPBEAT 2026에서 만나기 전, 지"
+  },
+  {
+   "id": "DZjhIHqv20U",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 395,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 마브 (Marv)\n\n마브(@marvsouly)를 RAPBEAT 2026에서 만나기 전, 지난 "
+  },
+  {
+   "id": "DZjhd31v49b",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1194,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 바이스벌사 (viceversa)\n\n바이스벌사(@viceversartist)를 RAPBEAT 2"
+  },
+  {
+   "id": "DZjks4KPF8F",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 2815,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 노윤하 (Roh Yun Ha)\n\n노윤하(@1san_newcity_boy)를 RAPBEAT 20"
+  },
+  {
+   "id": "DZjk5a0vvNX",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1162,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 트레이드 엘 (TRADE L)\n\n트레이드 엘(@whereistrade)을 RAPBEAT 202"
+  },
+  {
+   "id": "DZjlGZ9v05p",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 455,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 오카시 (OKASHII)\n\n오카시(@okashii.web)를 RAPBEAT 2026에서 만나기"
+  },
+  {
+   "id": "DZj4rM7vdAE",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1432,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 트레이비\n\n트레이비(@traybbbbb)를 RAPBEAT 2026에서 만나기 전, 지난 무대로"
+  },
+  {
+   "id": "DZj6DqTPW65",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1668,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 플리키뱅 (Fleeky Bang)\n\n플리키뱅(@fleekybang)을 RAPBEAT 2026에"
+  },
+  {
+   "id": "DZj9iu5vzfC",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 296,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 우슬라임 (Wuuslime)\n\n우슬라임(@chillinhomiethesavior)을 RAPBE"
+  },
+  {
+   "id": "DZkAKYvP4NK",
+   "week": "2026-W25",
+   "kind": "발매·신보",
+   "reach": 299,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 노엘 (NO:EL)\n\n노엘(@noel____________)을 RAPBEAT 2026에서 만나"
+  },
+  {
+   "id": "DZj9z7xvOsd",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 12314,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 샤이보이토비 (ShyboiiTobii)\n\n샤이보이토비(@shyboiitobii)를 RAPBEA"
+  },
+  {
+   "id": "DZkBo-QP4Qg",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 303,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 김감전 (KSMARTBOI)\n\n김상민그는감히전설이라고할수있다(@ksmartboi)을 RAPBE"
+  },
+  {
+   "id": "DZkDYOmv5o-",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1436,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 양홍원 (YANGHONGWON)\n\n양홍원(@yanghongwon)을 RAPBEAT 2026에서"
+  },
+  {
+   "id": "DZkFx6PPmzQ",
+   "week": "2026-W25",
+   "kind": "갈등·반응",
+   "reach": 371,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 인디고뮤직 (INDIGO MUSIC)\n\n인디고뮤직(@indigomusic_official)을 "
+  },
+  {
+   "id": "DZkH0ZDPGM-",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 2559,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — KC\n\nKC(@kcthecompany)를 RAPBEAT 2026에서 만나기 전, 지난 무대로 "
+  },
+  {
+   "id": "DZkQTm1PQEq",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 2408,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 식케이 (Sik-K)\n\n식케이(@younghotyellow94)를 RAPBEAT 2026에서 "
+  },
+  {
+   "id": "DZkVzHzP4D-",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 2042,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 나우아임영 (NOWIMYOUNG)\n\n나우아임영(@now_im_young)을 RAPBEAT 20"
+  },
+  {
+   "id": "DZmfJGePJYV",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1552,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 제이민 (JMIN)\n\n제이민(@jmindontleave)을 RAPBEAT 2026에서 만나기 "
+  },
+  {
+   "id": "DZmfgSAvMLp",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 301,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 김하온 (HAON)\n\n김하온(@noahmik)을 RAPBEAT 2026에서 만나기 전, 지난 "
+  },
+  {
+   "id": "DZmgtsHvU9v",
+   "week": "2026-W25",
+   "kind": "발매·신보",
+   "reach": 362,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 릴 모쉬핏 (Lil Moshpit)\n\n릴 모쉬핏(@lilmoshpittt)을 RAPBEAT 2"
+  },
+  {
+   "id": "DZmjKhePm68",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1862,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 박재범 (Jay Park)\n\n박재범(@moresojuplease)을 RAPBEAT 2026에서"
+  },
+  {
+   "id": "DZmkNPwPULm",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 362,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 루피 (Loopy)\n\n루피(@thisloop)를 RAPBEAT 2026에서 만나기 전, 지난 "
+  },
+  {
+   "id": "DZmuTVGT1p5",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1735,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 브라이언 체이스 (Bryan Chase)\n\n브라이언 체이스(@bryanchvse)를 RAPBE"
+  },
+  {
+   "id": "DZmqf3_PlOk",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 6430,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 키스 에이프 (Keith Ape)\n\n키스 에이프(@chrt_keithape)를 RAPBEAT "
+  },
+  {
+   "id": "DZmnyLDvuIm",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 371,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 키드밀리 (Kid Milli)\n\n키드밀리(@kidcozyboy)를 RAPBEAT 2026에서 "
+  },
+  {
+   "id": "DZmxNVCzVvO",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 520,
+   "head": "60초 안에 미리 보는 RAPBEAT 2026 — 씨잼 (C JAMM)\n\n씨잼(@cjadoublem)을 RAPBEAT 2026에서 만나기 전, "
+  },
+  {
+   "id": "DZoi9gSvru1",
+   "week": "2026-W25",
+   "kind": "인물해부",
+   "reach": 993,
+   "head": "[NEW RELEASE] 아이들(i-dle)- Crow\n\n아이들(@i_dle_official)이 어제(6/15) 선공개 싱글 ‘Crow’를 발매"
+  },
+  {
+   "id": "DZol4grz7KL",
+   "week": "2026-W25",
+   "kind": "갈등·반응",
+   "reach": 1237,
+   "head": "[NEW RELEASE] 라이즈(RIIZE)- Do your dance\n\n라이즈(@riize_official)가 어제(6/15) 두 번째 미니앨"
+  },
+  {
+   "id": "DZpFQlFD25b",
+   "week": "2026-W25",
+   "kind": "공연·페스티벌",
+   "reach": 285,
+   "head": "문체부가 K팝 중소기획사 10팀을 직접 지원합니다\n문화체육관광부와 한국콘텐츠진흥원이 올해 '중소기획사 글로벌 도약 지원' 사업을 새로 시작합니다"
+  },
+  {
+   "id": "DZpYO2Vjwng",
+   "week": "2026-W25",
+   "kind": "공연·페스티벌",
+   "reach": 313,
+   "head": "페스티벌이 끝났다고 집에 갈 생각은 접어라. \n\n'RAPBEAT 2026'의 밤은 압구정에서 한 번 더 타오른다. 새드 가스 스테이션(@sad_"
+  },
+  {
+   "id": "DZpZUueh3qD",
+   "week": "2026-W25",
+   "kind": "발매·신보",
+   "reach": 1161,
+   "head": "[NEW RELEASE] 스테이씨- 2 L0VE\n\n스테이씨(@stayc_highup)가 오늘(6/16) 여섯 번째 싱글 [2:LOVE]를 발매했"
+  },
+  {
+   "id": "DZrcH-iv4HY",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 109,
+   "head": "118번째 오늘의 노래 | 2026.06.11\nArtist | 한요한(@yohanheaven) (feat. NO:EL(@noel_________"
+  },
+  {
+   "id": "DZrcmcGihv6",
+   "week": "2026-W25",
+   "kind": "인물해부",
+   "reach": 98,
+   "head": "배우 박보검(@bogummy)이 청음 카페 'Park BGM'의 사장님 '박브금'으로 돌아왔다. 당근(@daangnmarket)에서 진행 중인 "
+  },
+  {
+   "id": "DZrgZ4Uzhuk",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 356,
+   "head": "119번째 오늘의 노래 | 2026.06.12\nArtist | 양홍원(@yanghongwon)\nTitle | 사계\nReleased | 2021."
+  },
+  {
+   "id": "DZrmOAtzx5w",
+   "week": "2026-W25",
+   "kind": "기타",
+   "reach": 1229,
+   "head": "스크린을 찢고 나온 발라더, ‘최성곤’\n영화 〈와일드 씽〉 속 가상의 발라드 가수 최성곤이 스크린 밖에서 신드롬을 일으키고 있습니다.\n\n배우 오"
+  }
+ ],
+ "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
+ "runs": {}
+}

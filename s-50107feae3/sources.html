@@ -78,6 +78,17 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .btn.on{border-color:var(--pick); color:var(--pick)}
 .btn.off{border-color:var(--skip); color:var(--skip)}
 .btn.draft{border-color:var(--amber); color:var(--amber)}
+.warn-kind{display:inline-block; margin-top:6px; font-size:11px; color:var(--amber);
+  border:1px solid var(--line); border-radius:3px; padding:2px 6px}
+.hint{margin:calc(var(--u)*2) 0; padding:10px 12px; border-left:2px solid var(--amber);
+  background:var(--panel); font-size:12.5px; line-height:1.55; color:var(--text)}
+.hint b{color:var(--amber)}
+.pf{border-bottom:1px solid var(--line); padding:calc(var(--u)*1.5) 0}
+.pf h3{margin:0 0 6px; font-size:13px; font-weight:700}
+.pf .row{display:flex; justify-content:space-between; gap:10px; font-size:12px;
+  color:var(--dim); padding:3px 0}
+.pf .row b{color:var(--text); font-family:var(--mono)}
+.pf .sub{font-size:11px; color:var(--skip); margin-top:4px; line-height:1.5}
 .btn.link{border:0; padding:6px 0; color:var(--dim); text-decoration:none}
 .btn.link:hover{color:var(--amber)}
 .angle{width:100%; margin-top:8px; background:var(--panel); border:1px solid var(--line);
@@ -132,10 +143,12 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   <div class="tabs" role="tablist">
     <button class="tab" id="tCand" role="tab" aria-selected="true">오늘의 후보</button>
     <button class="tab" id="tAcct" role="tab" aria-selected="false">계정별</button>
+    <button class="tab" id="tPerf" role="tab" aria-selected="false">PLOT 성과</button>
   </div>
 
   <div id="viewCand"></div>
   <div id="viewAcct" hidden></div>
+  <div id="viewPerf" hidden></div>
 
   <div class="note" id="note"></div>
 </div>
@@ -211,6 +224,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
           (c.velocity != null ? '<span>시간당 +' + Math.round(c.velocity) + '</span>' : '') +
         '</div>' +
         (why ? '<div class="why">' + esc(why) + '</div>' : '') +
+        kindWarn(c) +
         (opts.plain ? '' :
           '<div class="acts">' +
             '<button class="btn' + (m === 'pick' ? ' on' : '') + '" data-act="pick">' +
@@ -230,14 +244,88 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       '</div>';
   }
 
+  var P = null;          // performance.json — 없어도 나머지는 그대로 돈다
+
+  /* 결 경고 — '확실한' 결에만 붙인다. 흔들리는 수치를 카드에 박으면
+     편집 판단을 잘못된 근거로 끌고 간다. */
+  function kindWarn(c) {
+    var k = c.plot_kind;
+    if (!k || k.multiple == null) return '';
+    if (k.multiple >= 0.8 && k.multiple <= 1.25) return '';
+    var dir = k.multiple < 1 ? '아래' : '위';
+    return '<div class="warn-kind">' + esc(k.kind) + ' 결 — PLOT 실적 ' +
+           k.multiple + '배 (기준선 ' + dir + ', n=' + k.n + ')</div>';
+  }
+
+  function renderPerf() {
+    var v = document.getElementById('viewPerf');
+    if (!P) {
+      v.innerHTML = '<p class="note">성과 데이터가 아직 배포되지 않았습니다. ' +
+                    '맥에서 스캔이 한 번 더 돌면 올라옵니다.</p>';
+      return;
+    }
+    var out = [];
+    var wk = (P.weeks || []).slice(-4).reverse();
+    if (wk.length) {
+      out.push('<div class="pf"><h3>주간</h3>');
+      wk.forEach(function (w) {
+        var d = w.followers_delta;
+        out.push('<div class="row"><span>' + esc(w.week) + ' · 발행 ' + w.posts + '건</span>' +
+          '<b>도달 ' + num(w.reach) + (w.followers ? ' · 팔로워 ' + num(w.followers) +
+          (d ? (d > 0 ? ' (+' + num(d) + ')' : ' (' + num(d) + ')') : '') : '') + '</b></div>');
+      });
+      out.push('</div>');
+    }
+    var solid = (P.kinds || []).filter(function (k) { return k.stable; });
+    var shaky = (P.kinds || []).filter(function (k) { return !k.stable; });
+    if (solid.length) {
+      out.push('<div class="pf"><h3>결별 성과 — 주차 보정</h3>');
+      solid.forEach(function (k) {
+        out.push('<div class="row"><span>' + esc(k.kind) + '</span><b>' + k.multiple + '배</b></div>');
+      });
+      out.push('<div class="sub">한 주씩 빼도 기준선을 넘나들지 않는 것만 실었습니다. ' +
+        (shaky.length ? '흔들려서 뺀 결: ' + shaky.map(function (k) { return esc(k.kind); }).join(', ') : '') +
+        '</div></div>');
+    }
+    var top = (P.top || []).slice(0, 6);
+    if (top.length) {
+      out.push('<div class="pf"><h3>가장 멀리 간 글</h3>');
+      top.forEach(function (t) {
+        out.push('<div class="row"><span>' + esc((t.head || '').replace(/\n/g, ' ').slice(0, 34)) +
+          '</span><b>' + num(t.reach) + '</b></div>');
+      });
+      out.push('</div>');
+    }
+    if (P.runs) {
+      out.push('<div class="pf"><h3>마지막 실행</h3>');
+      Object.keys(P.runs).forEach(function (k) {
+        out.push('<div class="row"><span>' + esc(k) + '</span><b>' + esc(P.runs[k]) + '</b></div>');
+      });
+      out.push('</div>');
+    }
+    out.push('<p class="note">' + esc(P.generated_at || '') + ' 기준</p>');
+    v.innerHTML = out.join('');
+  }
+
   function renderCand() {
     var v = document.getElementById('viewCand');
+    var hint = '';
+    if (P) {
+      var best = (P.kinds || []).filter(function (k) {
+        return k.stable && k.multiple > 1.2;
+      }).sort(function (a, b) { return b.multiple - a.multiple; })[0];
+      if (best) {
+        hint = '<div class="hint">PLOT 에서 가장 멀리 가는 건 <b>' + esc(best.kind) +
+          '</b> 결입니다 — 기준선의 <b>' + best.multiple + '배</b> (n=' + best.n +
+          ', ' + best.weeks + '주). 어떤 소재든 이 결로 쓸 수 있습니다.</div>';
+      }
+    }
     if (!D.candidates || !D.candidates.length) {
-      v.innerHTML = '<p class="note">오늘은 기준을 넘은 소식이 없습니다. ' +
+      v.innerHTML = hint + '<p class="note">오늘은 기준을 넘은 소식이 없습니다. ' +
                     '계정별 탭에서 직접 훑어보세요.</p>';
       return;
     }
-    v.innerHTML = D.candidates.map(function (c) { return card(c); }).join('');
+    v.innerHTML = hint + D.candidates.map(function (c) { return card(c); }).join('');
   }
 
   function renderAcct() {
@@ -377,18 +465,24 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   document.addEventListener('click', onClick);
   document.addEventListener('input', onInput);
   document.getElementById('send').addEventListener('click', send);
-  document.getElementById('tCand').addEventListener('click', function () {
-    this.setAttribute('aria-selected', 'true');
-    document.getElementById('tAcct').setAttribute('aria-selected', 'false');
-    document.getElementById('viewCand').hidden = false;
-    document.getElementById('viewAcct').hidden = true;
-  });
-  document.getElementById('tAcct').addEventListener('click', function () {
-    this.setAttribute('aria-selected', 'true');
-    document.getElementById('tCand').setAttribute('aria-selected', 'false');
-    document.getElementById('viewAcct').hidden = false;
-    document.getElementById('viewCand').hidden = true;
-  });
+  function showTab(which) {
+    var t = { cand: 'tCand', acct: 'tAcct', perf: 'tPerf' };
+    var v = { cand: 'viewCand', acct: 'viewAcct', perf: 'viewPerf' };
+    Object.keys(t).forEach(function (k) {
+      document.getElementById(t[k]).setAttribute('aria-selected', String(k === which));
+      document.getElementById(v[k]).hidden = (k !== which);
+    });
+    if (which === 'perf') renderPerf();
+  }
+  document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
+  document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
+  document.getElementById('tPerf').addEventListener('click', function () { showTab('perf'); });
+
+  // 성과는 곁다리다. 실패해도 후보 화면은 그대로 뜬다.
+  fetch('./performance.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { if (d && d.schema === 1) { P = d; renderCand(); } })
+    .catch(function () {});
 
   fetch('./magazines.json', { cache: 'no-cache' })
     .then(function (r) {
