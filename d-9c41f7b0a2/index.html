@@ -270,6 +270,24 @@ button.who:hover{color:var(--t1);box-shadow:inset 0 0 0 1px var(--t3)}
 .pl .dot{margin-top:6px}
 .pmore{font-size:11px;color:var(--t3);padding-top:8px}
 
+/* ── 칸 ── 나누는 단위. 비어 있는 칸이 한눈에 보여야 한다. ── */
+.cells{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:var(--s2);
+  margin-top:var(--s3)}
+.cell{background:var(--sf);border:1px solid var(--line);border-radius:var(--r3);
+  padding:var(--s3) var(--s4) var(--s3);display:flex;flex-direction:column;gap:var(--s2);
+  transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease)}
+.cell.held{background:var(--sf2)}
+.cell:not(.held){border-style:dashed;border-color:var(--t4)}
+.cell.hot{border-color:rgba(217,106,86,.45)}
+.cellh{display:flex;align-items:baseline;gap:var(--s2)}
+.cellh b{font-size:13.5px;font-weight:800}
+.cellh .n{margin-left:auto;font-size:11px;color:var(--t3);font-variant-numeric:tabular-nums}
+.cellm{display:flex;flex-wrap:wrap;gap:var(--s1);align-items:center;min-height:19px}
+.cellby{align-self:flex-start}
+.cellopen{font-size:11px;color:var(--t3);padding-top:var(--s1);
+  border-top:1px solid var(--line2);margin-top:auto;width:100%}
+.cellopen:hover{color:var(--t1)}
+
 /* ── 막대 ──────────────────────────────────────────── */
 .bar-t{height:5px;border-radius:99px;background:var(--sf3);overflow:hidden;display:flex}
 .bar-t i{display:block;height:100%}
@@ -529,6 +547,10 @@ function api(path, opts){
 /* S 안의 흩어진 흔적을 한 줄로 모은다. 저장 구조와 전송 구조를 분리해 둬야
    나중에 한쪽을 바꿔도 다른 쪽이 안 깨진다. */
 function rowOf(id){
+  if (id.indexOf("cell:") === 0){
+    var k = id.slice(5);
+    return { id:id, claimed_by:(S.cell || {})[k] || null, patch:{} };
+  }
   if (id.indexOf("series:") === 0){
     var sid = id.slice(7);
     var st = S.stage || {}, sb2 = S.sby || {};
@@ -550,6 +572,12 @@ function rowOf(id){
 
 function apply(row){
   var id = row.id;
+  if (id.indexOf("cell:") === 0){
+    var ck = id.slice(5);
+    S.cell = S.cell || {};
+    if (row.claimed_by) S.cell[ck] = row.claimed_by; else delete S.cell[ck];
+    return;
+  }
   if (id.indexOf("series:") === 0){
     var sid = id.slice(7);
     S.stage = S.stage || {}; S.sby = S.sby || {};
@@ -674,12 +702,13 @@ function load(){
     var r = JSON.parse(localStorage.getItem(CFG.key));
     if (r && r.done) {
       r.patch=r.patch||{}; r.add=r.add||[]; r.log=r.log||[];
-      r.snooze=r.snooze||{}; r.stage=r.stage||{}; r.seq=r.seq||0;
+      r.snooze=r.snooze||{}; r.stage=r.stage||{}; r.sby=r.sby||{}; r.cell=r.cell||{};
+      r.seq=r.seq||0;
       r.view = CFG.views.some(function(v){return v.id===r.view;}) ? r.view : CFG.views[0].id;
       return r;
     }
   } catch(e){}
-  return { done:{}, last:{}, patch:{}, add:[], log:[], snooze:{}, stage:{},
+  return { done:{}, last:{}, patch:{}, add:[], log:[], snooze:{}, stage:{}, sby:{}, cell:{},
            view:CFG.views[0].id, filt:{}, seq:0 };
 }
 function save(id){
@@ -739,6 +768,27 @@ function josa(name, withJong, without){
   return name + (hangul && (c - 0xAC00) % 28 ? withJong : without);
 }
 P.josa = josa;
+/* 나누는 단위는 항목이 아니라 칸이다 — 팀 × 성질.
+   한 사람이 칸을 맡고, 칸 안은 맡은 쪽이 알아서 굴린다.
+   36개를 고르는 건 부담이지만 칸 하나를 맡는 건 회의에서 한 번에 정해진다. */
+P.cellId = function(team, lane){ return "cell:" + team + "|" + lane; };
+P.cellBy = function(team, lane){
+  var c = S.cell || {}; return c[team + "|" + lane] || null;
+};
+P.claimCell = function(team, lane, whoId){
+  var k = team + "|" + lane;
+  S.cell = S.cell || {};
+  var was = S.cell[k] || null;
+  if (whoId) S.cell[k] = whoId; else delete S.cell[k];
+  logit(P.cellId(team,lane), whoId ? ("칸 맡음 — "+P.who(whoId)) : "칸 놓음");
+  save(P.cellId(team, lane));
+  P.toast(whoId ? josa(P.who(whoId),"이","가")+" "+team+" · "+P.lane(lane)+" 칸을 맡았습니다"
+                : team+" · "+P.lane(lane)+" 칸을 놓았습니다", "되돌리기", function(){
+    if (was) P.S().cell[k] = was; else delete P.S().cell[k];
+    save(P.cellId(team, lane)); P.render(); });
+  P.render();
+};
+
 P.claim = function(it, whoId){
   var was = it.by || null;
   P.patch(it.id, {by: whoId}, whoId ? ("집음 — "+P.who(whoId)) : "놓음");
@@ -1109,6 +1159,13 @@ function act(name, arg, val){
       var pi = P.byId(arg);
       if (pi) P.pickFor("항목", arg, function(w){ P.claim(pi, w); }, pi.t);
       break;
+    case "cellpick":
+      var cp = String(arg).split("|");
+      P.pickFor("칸", arg, function(w){ P.claimCell(cp[0], cp[1], w); },
+                cp[0]+" · "+P.lane(cp[1]));
+      break;
+    case "celldrop":
+      var cd = String(arg).split("|"); P.claimCell(cd[0], cd[1], null); break;
     case "pick-close": pick = null; P.render(); break;
     case "pick-set":
       var fn = pick && pick.fn; pick = null;

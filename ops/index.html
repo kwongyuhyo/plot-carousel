@@ -270,6 +270,24 @@ button.who:hover{color:var(--t1);box-shadow:inset 0 0 0 1px var(--t3)}
 .pl .dot{margin-top:6px}
 .pmore{font-size:11px;color:var(--t3);padding-top:8px}
 
+/* ── 칸 ── 나누는 단위. 비어 있는 칸이 한눈에 보여야 한다. ── */
+.cells{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:var(--s2);
+  margin-top:var(--s3)}
+.cell{background:var(--sf);border:1px solid var(--line);border-radius:var(--r3);
+  padding:var(--s3) var(--s4) var(--s3);display:flex;flex-direction:column;gap:var(--s2);
+  transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease)}
+.cell.held{background:var(--sf2)}
+.cell:not(.held){border-style:dashed;border-color:var(--t4)}
+.cell.hot{border-color:rgba(217,106,86,.45)}
+.cellh{display:flex;align-items:baseline;gap:var(--s2)}
+.cellh b{font-size:13.5px;font-weight:800}
+.cellh .n{margin-left:auto;font-size:11px;color:var(--t3);font-variant-numeric:tabular-nums}
+.cellm{display:flex;flex-wrap:wrap;gap:var(--s1);align-items:center;min-height:19px}
+.cellby{align-self:flex-start}
+.cellopen{font-size:11px;color:var(--t3);padding-top:var(--s1);
+  border-top:1px solid var(--line2);margin-top:auto;width:100%}
+.cellopen:hover{color:var(--t1)}
+
 /* ── 막대 ──────────────────────────────────────────── */
 .bar-t{height:5px;border-radius:99px;background:var(--sf3);overflow:hidden;display:flex}
 .bar-t i{display:block;height:100%}
@@ -529,6 +547,10 @@ function api(path, opts){
 /* S 안의 흩어진 흔적을 한 줄로 모은다. 저장 구조와 전송 구조를 분리해 둬야
    나중에 한쪽을 바꿔도 다른 쪽이 안 깨진다. */
 function rowOf(id){
+  if (id.indexOf("cell:") === 0){
+    var k = id.slice(5);
+    return { id:id, claimed_by:(S.cell || {})[k] || null, patch:{} };
+  }
   if (id.indexOf("series:") === 0){
     var sid = id.slice(7);
     var st = S.stage || {}, sb2 = S.sby || {};
@@ -550,6 +572,12 @@ function rowOf(id){
 
 function apply(row){
   var id = row.id;
+  if (id.indexOf("cell:") === 0){
+    var ck = id.slice(5);
+    S.cell = S.cell || {};
+    if (row.claimed_by) S.cell[ck] = row.claimed_by; else delete S.cell[ck];
+    return;
+  }
   if (id.indexOf("series:") === 0){
     var sid = id.slice(7);
     S.stage = S.stage || {}; S.sby = S.sby || {};
@@ -674,12 +702,13 @@ function load(){
     var r = JSON.parse(localStorage.getItem(CFG.key));
     if (r && r.done) {
       r.patch=r.patch||{}; r.add=r.add||[]; r.log=r.log||[];
-      r.snooze=r.snooze||{}; r.stage=r.stage||{}; r.seq=r.seq||0;
+      r.snooze=r.snooze||{}; r.stage=r.stage||{}; r.sby=r.sby||{}; r.cell=r.cell||{};
+      r.seq=r.seq||0;
       r.view = CFG.views.some(function(v){return v.id===r.view;}) ? r.view : CFG.views[0].id;
       return r;
     }
   } catch(e){}
-  return { done:{}, last:{}, patch:{}, add:[], log:[], snooze:{}, stage:{},
+  return { done:{}, last:{}, patch:{}, add:[], log:[], snooze:{}, stage:{}, sby:{}, cell:{},
            view:CFG.views[0].id, filt:{}, seq:0 };
 }
 function save(id){
@@ -739,6 +768,27 @@ function josa(name, withJong, without){
   return name + (hangul && (c - 0xAC00) % 28 ? withJong : without);
 }
 P.josa = josa;
+/* 나누는 단위는 항목이 아니라 칸이다 — 팀 × 성질.
+   한 사람이 칸을 맡고, 칸 안은 맡은 쪽이 알아서 굴린다.
+   36개를 고르는 건 부담이지만 칸 하나를 맡는 건 회의에서 한 번에 정해진다. */
+P.cellId = function(team, lane){ return "cell:" + team + "|" + lane; };
+P.cellBy = function(team, lane){
+  var c = S.cell || {}; return c[team + "|" + lane] || null;
+};
+P.claimCell = function(team, lane, whoId){
+  var k = team + "|" + lane;
+  S.cell = S.cell || {};
+  var was = S.cell[k] || null;
+  if (whoId) S.cell[k] = whoId; else delete S.cell[k];
+  logit(P.cellId(team,lane), whoId ? ("칸 맡음 — "+P.who(whoId)) : "칸 놓음");
+  save(P.cellId(team, lane));
+  P.toast(whoId ? josa(P.who(whoId),"이","가")+" "+team+" · "+P.lane(lane)+" 칸을 맡았습니다"
+                : team+" · "+P.lane(lane)+" 칸을 놓았습니다", "되돌리기", function(){
+    if (was) P.S().cell[k] = was; else delete P.S().cell[k];
+    save(P.cellId(team, lane)); P.render(); });
+  P.render();
+};
+
 P.claim = function(it, whoId){
   var was = it.by || null;
   P.patch(it.id, {by: whoId}, whoId ? ("집음 — "+P.who(whoId)) : "놓음");
@@ -1109,6 +1159,13 @@ function act(name, arg, val){
       var pi = P.byId(arg);
       if (pi) P.pickFor("항목", arg, function(w){ P.claim(pi, w); }, pi.t);
       break;
+    case "cellpick":
+      var cp = String(arg).split("|");
+      P.pickFor("칸", arg, function(w){ P.claimCell(cp[0], cp[1], w); },
+                cp[0]+" · "+P.lane(cp[1]));
+      break;
+    case "celldrop":
+      var cd = String(arg).split("|"); P.claimCell(cd[0], cd[1], null); break;
     case "pick-close": pick = null; P.render(); break;
     case "pick-set":
       var fn = pick && pick.fn; pick = null;
@@ -1444,59 +1501,88 @@ function drawWeek(){
 }
 
 /* ── 분담 ─────────────────────────────────────────── */
-/* 일을 사람에게 나눠주지 않는다. 팀과 성질로 세워 두고 각자 집는다.
-   그래서 이 화면이 묻는 건 "누가 몇 건 맡았나"가 아니라
-   "아직 아무도 안 집은 게 무엇인가"다. */
+/* 나누는 단위는 항목이 아니라 칸이다 — 팀 × 성질.
+   한 사람이 칸을 맡고 그 안은 맡은 쪽이 알아서 굴린다.
+   36개 중에 고르는 건 부담이지만 칸 하나는 회의에서 한 번에 정해진다.
+   그래서 이 화면이 묻는 건 "어느 칸이 비었나"다. */
+function cells(){
+  var op = open().filter(function(i){ return !i.must; });
+  var m = {};
+  op.forEach(function(i){
+    var k = i.team + "|" + i.l;
+    (m[k] = m[k] || { team:i.team, lane:i.l, list:[] }).list.push(i);
+  });
+  return Object.keys(m).map(function(k){
+    var c = m[k];
+    c.by      = P.cellBy(c.team, c.lane);
+    c.blocked = c.list.filter(function(i){ return i.s==="막힘"; }).length;
+    c.now     = c.list.filter(function(i){ return i.h==="now" || P.late(i); }).length;
+    return c;
+  }).sort(function(a,b){ return b.list.length - a.list.length; });
+}
+
+function cellCard(c){
+  var k = c.team+"|"+c.lane;
+  return '<div class="cell'+(c.by?" held":"")+(c.blocked?" hot":"")+'">'
+    + '<div class="cellh"><b>'+E(P.lane(c.lane))+"</b>"
+    + '<span class="n num">'+c.list.length+"</span></div>"
+    + '<div class="cellm">'
+    + (c.now?'<span class="pill s-대기">지금 '+c.now+"</span>":"")
+    + (c.blocked?'<span class="pill s-막힘">막힘 '+c.blocked+"</span>":"")
+    + (!c.now && !c.blocked?'<span class="micro">급한 것 없음</span>':"")
+    + "</div>"
+    + (c.by
+        ? '<button class="who has cellby" data-act="celldrop" data-arg="'+E(k)+'">'
+          + E(P.who(c.by))+" 맡음</button>"
+        : '<button class="who open cellby" data-act="cellpick" data-arg="'+E(k)+'">'
+          + "비어 있음 — 맡기</button>")
+    + '<button class="cellopen" data-act="cellview" data-arg="'+E(k)+'">'
+    + "안에 든 것 보기</button></div>";
+}
+
 function drawShare(){
-  var op = open();
-  var free = op.filter(function(i){ return !i.by && !i.must; });
-  var only = op.filter(function(i){ return !i.by && i.must; });
-  var took = op.filter(function(i){ return !!i.by; });
+  var cs = cells();
+  var only = open().filter(function(i){ return i.must; });
+  var free = cs.filter(function(c){ return !c.by; });
+  var view = P.S().filt && P.S().filt.cell;
 
   var byTeam = {};
-  free.forEach(function(i){ (byTeam[i.team] = byTeam[i.team] || []).push(i); });
-  var teams = (D.teams || []).filter(function(t){ return byTeam[t]; });
+  cs.forEach(function(c){ (byTeam[c.team] = byTeam[c.team] || []).push(c); });
 
-  var byPerson = {};
-  took.forEach(function(i){ (byPerson[i.by] = byPerson[i.by] || []).push(i); });
-  var ppl = Object.keys(byPerson).sort(function(a,b){
-    return byPerson[b].length - byPerson[a].length; });
+  var grid = (D.teams||[]).filter(function(t){ return byTeam[t]; }).map(function(t){
+    var mine = byTeam[t];
+    var open_ = mine.filter(function(c){ return !c.by; }).length;
+    return '<section class="sec"><div class="sech"><h2>'+E(t)+" 팀</h2>"
+      + '<span class="sub">'+(open_?open_+"칸이 비어 있습니다":"모든 칸을 맡았습니다")+"</span>"
+      + '<span class="n num">'+mine.reduce(function(a,c){return a+c.list.length;},0)+"</span></div>"
+      + '<div class="cells">'+mine.map(cellCard).join("")+"</div></section>";
+  }).join("");
 
-  var cards = ppl.length
-    ? '<div class="cards c2">'+ppl.map(function(k){
-        var mine = byPerson[k].sort(P.urgency);
-        var bl = mine.filter(function(i){ return i.s==="막힘"; }).length;
-        return '<div class="card"><div class="cardh"><b>'+E(P.who(k))+"</b>"
-          + (bl?'<span class="pill s-막힘">막힘 '+bl+"</span>":"")
-          + '<span class="n num">'+mine.length+"</span></div>"
-          + mine.slice(0,6).map(function(i){
-              return '<button class="pl" data-act="open" data-arg="'+E(i.id)+'">'
-                + '<span class="dot '+E(i.s||"")+'"></span><span>'+E(i.t)+"</span></button>";
-            }).join("")
-          + (mine.length>6?'<p class="pmore">외 '+(mine.length-6)+"건</p>":"")
-          + "</div>";
-      }).join("")+"</div>"
-    : P.empty("아직 아무도 안 집었습니다","아래 미배정에서 이름을 눌러 집으면 여기 쌓입니다.");
+  var opened = "";
+  if (view){
+    var c = cs.filter(function(x){ return x.team+"|"+x.lane === view; })[0];
+    if (c) opened = P.sec(c.team+" · "+P.lane(c.lane),
+      (c.by?P.who(c.by)+" 가 맡은 칸":"아직 비어 있는 칸")+" — 안에 든 것",
+      c.list.sort(P.urgency));
+  }
 
   return P.stats([
-    { k:"미배정", v:free.length, tone:free.length>op.length/2?"hot":"",
-      n:"누구나 집을 수 있는 일" },
-    { k:"집힌 것", v:took.length, tone:took.length?"good":"", n:"이름이 붙은 일" },
-    { k:"규효만 가능", v:only.length, n:"계정·명의·대표 결정 — 넘길 수 없는 것" },
+    { k:"빈 칸", v:free.length, tone:free.length?"hot":"good",
+      n:free.length?"아무도 안 맡은 칸":"모든 칸에 주인이 있습니다" },
+    { k:"맡은 칸", v:cs.length-free.length, tone:cs.length-free.length?"good":"",
+      n:"주인이 있는 칸" },
+    { k:"규효만 가능", v:only.length, n:"계정·명의·대표 결정 — 칸으로 못 넘김" },
     { k:"막힘", v:blocked().length, tone:blocked().length?"hot":"", n:"남이 기다리는 것" }
   ])
-  + '<section class="sec"><div class="sech"><h2>집힌 것</h2>'
-  + '<span class="sub">이름을 누르면 놓습니다</span></div>'+cards+"</section>"
-  + teams.map(function(t){
-      return P.sec(t+" 판 · 미배정", "성질별로 세워 둔 것 — 집어 가세요",
-        byTeam[t].sort(P.urgency)); }).join("")
-  + P.sec("규효만 가능", "계정·회사 명의·대표 결정이라 구조적으로 못 넘김", only.sort(P.urgency))
+  + grid + opened
+  + P.sec("규효만 가능", "구조적으로 칸에 넣을 수 없는 것", only.sort(P.urgency))
+  + '<p class="note"><b>칸을 맡으면 그 안은 맡은 쪽이 굴립니다.</b> 항목 하나하나를 '
+  + '집을 수도 있지만(상세에서), 판이 묻는 건 칸입니다 — 36개를 고르는 건 부담이고 '
+  + '칸 하나는 회의에서 한 번에 정해집니다.</p>'
   + (P.shared()
-      ? '<p class="note"><b>집기는 모두에게 보입니다.</b> 한 사람이 집으면 나머지 화면에서도 '
-        + '이름이 붙습니다. 같은 항목을 둘이 집으면 나중에 누른 쪽이 남습니다.</p>'
-      : '<p class="note"><b>집기가 아직 각자 브라우저에만 남습니다.</b> 한 사람이 집은 걸 '
-        + '다른 사람이 볼 수 없어서, 지금 주소를 팀에 뿌리면 각자 자기 메모지에 표시하는 꼴이 됩니다 '
-        + '— 공용 저장소가 붙은 뒤에 공유하세요.</p>');
+      ? '<p class="note">칸을 맡으면 모두에게 보입니다.</p>'
+      : '<p class="note"><b>아직 각자 브라우저에만 남습니다.</b> 지금 주소를 팀에 뿌리면 '
+        + '각자 자기 메모지에 표시하는 꼴이 됩니다 — 공용 저장소가 붙은 뒤에 공유하세요.</p>');
 }
 
 /* ── 전체 ─────────────────────────────────────────── */
@@ -1541,9 +1627,8 @@ var VIEWS = [
     count:function(){ return D.series.length; } },
   { id:"week",   n:"주간",  ic:"▦", ask:"이번 주는 어떻게 도나", draw:drawWeek,
     count:function(){ return ""; } },
-  { id:"share",  n:"분담",  ic:"◍", ask:"아직 아무도 안 집은 게 뭔가", draw:drawShare,
-    hot:true, count:function(){ return open().filter(function(i){
-      return !i.by && !i.must; }).length; } },
+  { id:"share",  n:"분담",  ic:"◍", ask:"어느 칸이 비었나", draw:drawShare,
+    hot:true, count:function(){ return cells().filter(function(c){ return !c.by; }).length; } },
   { id:"all",    n:"전체",  ic:"☰", ask:"레인별 전부", draw:drawAll,
     count:function(){ return P.items().length; } }
 ];
@@ -1564,6 +1649,8 @@ P.boot({
     sfwd:  function(id){ move(id, +1); },
     sback: function(id){ move(id, -1); },
     ft:    function(v){ P.S().filt.t = v; P.save(); P.render(); },
+    cellview: function(v){ var f=P.S().filt;
+                           f.cell = (f.cell===v ? null : v); P.save(); P.render(); },
     fs:    function(v){ P.S().filt.s = v; P.save(); P.render(); }
   }
 });
