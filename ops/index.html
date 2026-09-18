@@ -221,8 +221,9 @@ input,textarea,select{font:inherit;letter-spacing:inherit}
   border-bottom:1px solid var(--line);padding:var(--s4) var(--s5) var(--s3)}
 .barrow{display:flex;align-items:baseline;gap:var(--s3);flex-wrap:wrap}
 .barrow .ask{font-size:12px;color:var(--t3)}
-.barrow .right{margin-left:auto;display:flex;align-items:center;gap:var(--s2)}
-.stamp{font-size:11px;color:var(--t3)}
+.barrow .right{margin-left:auto;display:flex;align-items:center;gap:var(--s2);
+  flex:0 0 auto;min-width:0}
+.stamp{font-size:11px;color:var(--t3);white-space:nowrap}
 .body{padding:var(--s6) var(--s5) var(--s8);min-width:0;flex:1;
   width:100%;max-width:1140px;margin-inline:auto}
 .body > * + *{margin-top:var(--s7)}
@@ -444,6 +445,78 @@ button.who:hover{color:var(--t1)}
   border-top:1px solid var(--line2);margin-top:auto;width:100%}
 .cellopen:hover{color:var(--t1)}
 
+/* ── 열쇠 ── 왜 규효만 가능한지를 이유별로 묶는다 ─────
+ * 한 덩어리로 두면 전부 어쩔 수 없어 보인다. 갈라 놓으면
+ * "이 하나만 만들면 다섯 건이 넘어간다"가 보인다.
+ */
+.keys{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+  gap:var(--s3);margin-top:var(--s3);max-width:1040px}
+.key{background:var(--sf);border:1px solid var(--line);border-radius:var(--r3);
+  padding:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
+.keyh{display:flex;align-items:baseline;gap:var(--s2)}
+.keyh b{font-size:14.5px;font-weight:800}
+.keyh .n{margin-left:auto;font-size:12px;color:var(--t3);font-variant-numeric:tabular-nums}
+.keyw{font-size:13px;line-height:1.6;color:var(--accent)}
+.keyl{display:flex;flex-direction:column;gap:2px;margin-top:var(--s1);
+  border-top:1px solid var(--line2);padding-top:var(--s2)}
+.keyi{font-size:13px;line-height:1.5;color:var(--t2);padding:3px 0;width:100%;
+  transition:color var(--fast) var(--ease)}
+.keyi:hover{color:var(--t1)}
+.keyi::before{content:"·";color:var(--t4);margin-right:6px}
+/* 넘길 수 있는 것은 글자를 덜 죽인다 — 못 넘기는 것과 같아 보이면 안 된다. */
+.who.only.freeable{color:var(--t3)}
+
+/* ── 회차 제작 시트 ──────────────────────────────────
+ * 병목은 "누가 회차를 맡나"가 아니라 "어느 단계를 누가 맡나"다.
+ */
+.sheet{background:var(--sf);border:1px solid var(--line);border-radius:var(--r3);
+  padding:var(--s4) var(--s5) var(--s5);margin-top:var(--s3);max-width:760px}
+.shrow{display:grid;grid-template-columns:76px minmax(0,1fr);gap:var(--s3);
+  padding:7px 0;border-bottom:1px solid var(--line2);align-items:baseline}
+.shrow .k{font-size:11.5px;color:var(--t3)}
+.shrow .v{font-size:14px;color:var(--t1)}
+.shrow .v.none{color:var(--t4)}
+.clash{margin-top:var(--s3);font-size:13px;line-height:1.6;color:var(--danger);
+  background:var(--danger-bg);border-radius:var(--r2);padding:var(--s3) var(--s4)}
+.shh{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--t3);margin-top:var(--s5);margin-bottom:var(--s2)}
+.rls{display:grid;grid-template-columns:repeat(auto-fit,minmax(122px,1fr));gap:var(--s2)}
+.rl{background:var(--sf2);border:1px solid var(--line2);border-radius:var(--r2);
+  padding:var(--s3);display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.rl.past{opacity:.55}
+.rl.at{border-color:var(--accent);background:var(--accent-bg)}
+.rlg{font-size:12px;font-weight:700;color:var(--t2)}
+.rl.at .rlg{color:var(--accent)}
+.rl .who{padding:2px 8px;border-radius:99px;box-shadow:inset 0 0 0 1px var(--line)}
+.rl .who.open{box-shadow:inset 0 0 0 1px var(--ring-focus)}
+.rl .who.has{box-shadow:inset 0 0 0 1px var(--t3)}
+/* 이름을 .q 로 두면 안 된다 — .pill.q(조용한 알약)와 같은 자리에서 부딪혀
+   상단 바의 상태 알약이 통째로 망가진다. 실제로 한 번 그렇게 깨졌다. */
+.qs{display:flex;flex-direction:column;gap:2px}
+.qi{display:flex;align-items:flex-start;gap:var(--s3);width:100%;padding:8px 0;
+  font-size:14px;line-height:1.5;color:var(--t1);border-bottom:1px solid var(--line2);
+  transition:color var(--fast) var(--ease)}
+.qi:last-child{border-bottom:0}
+.qi:hover .qb{border-color:var(--focus)}
+.qi .qb{width:16px;height:16px;margin-top:3px;border-radius:var(--r1);flex:0 0 auto;
+  border:1.5px solid var(--t4);position:relative;
+  transition:border-color var(--fast) var(--ease),background var(--fast) var(--ease)}
+.qi.on{color:var(--t4);text-decoration:line-through;text-decoration-color:var(--t4)}
+.qi.on .qb{background:var(--ok);border-color:var(--ok)}
+.qi.on .qb::after{content:"";position:absolute;left:4.5px;top:1px;width:4px;height:8px;
+  border:solid var(--on-accent);border-width:0 1.7px 1.7px 0;transform:rotate(43deg)}
+.kcard.on{border-color:var(--accent)}
+.kcard .sub.when{color:var(--accent);font-variant-numeric:tabular-nums}
+
+/* ── 처음 열었을 때 ── 팀은 이 판을 처음 본다 ───────── */
+.intro{background:var(--sf);border:1px solid var(--accent);border-radius:var(--r4);
+  padding:var(--s5) var(--s5) var(--s4);margin-bottom:var(--s6)}
+.intro h2{font-size:19px;letter-spacing:-.022em}
+.intro p{font-size:14px;line-height:1.75;color:var(--t2);margin-top:var(--s3);
+  max-width:var(--measure)}
+.intro b{color:var(--t1)}
+.intro .btn{margin-top:var(--s4)}
+
 /* ── 막대 ──────────────────────────────────────────── */
 .bar-t{height:5px;border-radius:99px;background:var(--sf3);overflow:hidden;display:flex}
 .bar-t i{display:block;height:100%}
@@ -609,6 +682,9 @@ kbd{font:inherit;font-size:9.5px;padding:1px 4px;border-radius:3px;background:va
 .fab:hover{transform:scale(1.06)}
 /* 상세가 열려 있으면 떠 있는 + 단추를 치운다 — 저장/동결 단추 위에 겹친다. */
 .app.has-pane ~ .fab{display:none}
+/* 처음 안내가 떠 있는 동안에는 찾을 것도 없고, 폰에서는 이 버튼이
+   안내 아래 밀려난 '열어 보기' 위에 정확히 얹힌다. */
+.app:has(.intro) ~ .fab{display:none}
 .tabbar{display:none}
 
 /* ── 좁은 화면 ─────────────────────────────────────── */
@@ -634,6 +710,10 @@ kbd{font:inherit;font-size:9.5px;padding:1px 4px;border-radius:3px;background:va
   .body > * + *{margin-top:var(--s6)}
   .d1{font-size:21px}
   .row{padding:var(--s4) var(--s2)}
+  .sheet{padding:var(--s4) var(--s4) var(--s5)}
+  .rls{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .intro{padding:var(--s4);border-radius:var(--r3)}
+  .intro .btn{width:100%;padding:11px 16px;font-size:13.5px;text-align:center}
   .rt{font-size:15.5px}
   .stat{padding:var(--s3)}
   .stat .v{font-size:22px}
@@ -681,7 +761,7 @@ kbd{font:inherit;font-size:9.5px;padding:1px 4px;border-radius:3px;background:va
 </head>
 <body>
 <div id="app"></div>
-<script id="data" type="application/json">{"asof":"2026-09-18","scanAt":"2026-09-17 08:06 KST","lanes":[{"id":"mag","n":"매거진"},{"id":"prog","n":"프로그램"},{"id":"tech","n":"기술·봇"},{"id":"biz","n":"외주·관계"},{"id":"ops","n":"운영·문서"},{"id":"gear","n":"장비·공간"},{"id":"frozen","n":"동결"}],"alerts":[{"sev":"warn","t":"미커밋 39건 · PLOT 0 · SENE 19 · HEALIN 20","d":"PLOT은 9/16 커밋 완료","x":"HEALIN은 원격 저장소 자체가 없어 로컬에만 있다 — GitHub에 빈 저장소 만들고 remote 연결이 먼저. SENE 19건은 개인 쪽으로 넘어가지만 커밋은 같은 맥 한 세션에서 끝난다."},{"sev":"crit","t":"Gmail 커넥터 단절","d":"14일 · 10회 연속","x":"needs_reconnect · enabledInChat false. 재인증과 예약 작업 토글 둘 다 해야 함. 서울아츠어워즈 발주처 회신·POV 회신 확인이 전부 여기 막혀 있음."},{"sev":"warn","t":"국내 피드 9건 수집 실패","d":"13일 연속","x":"khan_music·khan_ent(403) · hiphople·rhythmer(fetch failed) · hiphopplaya(429) · eyesmag(404) · weiv(403) · glowupmag·visla(셀렉터 0건). starnews는 손 안 대고 회복 — 429·403은 UA·지연으로 상당수 살아남."},{"sev":"warn","t":"워치리스트 밀도 급락","d":"9/16","x":"9/15 56곡 28.0% → 9/16 48곡 24.0%. 국내 소스가 비어 있는 상태라 원인 분리가 어려움."},{"sev":"ok","t":"plot-scan 13일 연속 green","d":"9/4~9/16","x":"GitHub Actions에 얹힌 자동화는 무사고. 맥에 붙은 자동화만 사람이 앉는 날에 돎 — 이관 판단의 근거."},{"sev":"ok","t":"캐러셀 보너스 첫 달 달성","d":"3개월 중 1","x":"9월 약 180만. 10월·11월 유지가 남음. 릴스 5,000만은 집계 대상 아님."}],"rhythm":[{"t":"관제 갱신","time":"08:06","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"차트 수집","time":"07:35","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"오음소 발행","time":"12:05","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"근무 시작 · 소스 수집·기획","time":"13:00","days":[1,2,4,5],"kind":"work","note":"규효"},{"t":"주간 분석 리포트","time":"13:00","days":[4],"kind":"auto","note":"자동"},{"t":"마무리","time":"18:00","days":[1,2,4,5],"kind":"work","note":"규효"},{"t":"매거진 브리프","time":"18:10","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"이슈 레이더","time":"22:00","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"}],"items":[{"id":"a1","l":"biz","k":"once","s":"진행","d":null,"h":"now","p":2,"t":"서울아츠어워즈 종편 마무리","n":"가편 컨펌 완료 · 9/17 종편 v1 렌더(6분 07초). 이후는 규효가 직접 처리","w":null,"scope":"team","mac":true,"done":false,"team":"기획","must":"kyu","by":null},{"id":"a2","l":"prog","k":"once","s":"막힘","d":"2026-09-14","h":"now","p":1,"t":"파일럿 컨택 1차 발송","n":"SESSION부터 2~3명만 채워 먼저. plotmusiclive@gmail.com, 권규효 명의","w":"밴드 편성 필요한 팀은 이번 차수 제외","scope":"team","mac":false,"done":false,"team":"기획","must":"kyu","by":null},{"id":"a3","l":"ops","k":"once","s":"진행","d":"2026-09-17","h":"now","p":1,"t":"미결 3건 닫기 — 회의 소집","n":"파일럿 컨택 1차 대상 · UNHEARD 진행자·촬영일·편집분담 · HEALIN 인계 조건","w":"주간회의를 접었으므로 이 셋은 스스로 날을 잡아야 닫힘","scope":"team","mac":false,"done":false,"team":"공통","must":"kyu","by":null},{"id":"a4","l":"ops","k":"once","s":"막힘","d":"2026-09-17","h":"now","p":1,"t":"역할 경계 확정","n":"발행 운영 담당자 지정 + 서브 PD 위임 범위를 1·2·3편 단계로 / 3트랙 개편 배치도 같은 자리에서 같이 정함 (구 b8)","w":"충원 첫 주에 안 정하면 되돌리기 어려움","scope":"team","mac":false,"done":false,"team":"공통","must":"kyu","by":null},{"id":"a6","l":"tech","k":"once","s":"막힘","h":"now","p":1,"t":"PLOT 앱 시크릿 교체","n":"Meta 대시보드에서 재발급 → .env 교체 → 봇 재기동 → 노출된 대화 삭제","w":"PLOT·To LP·헬스·에디토리얼 4계정이 묶여 있고 Meta 앱 신규 생성이 차단 상태","scope":"team","mac":true,"done":false,"d":null,"team":"기술","must":"kyu","by":null},{"id":"a7","l":"tech","k":"once","s":"막힘","h":"now","p":1,"t":"미커밋 39건 커밋","n":"맥에서 zsh ~/Projects/commit-all.sh — 시크릿 스캔·그룹별 커밋, push 없음","w":"HEALIN 20건은 인계 전에 반드시. 클라우드에선 불가","scope":"team","mac":true,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"a8","l":"ops","k":"once","s":"막힘","h":"now","p":1,"t":"Gmail 커넥터 재인증","n":"설정 → 커넥터 → Gmail 재인증 + 예약 작업의 Gmail 토글. 둘 다 해야 함 / 재인증 뒤 받은편지함에서 POV 라인 회신 확인까지 (구 f9)","w":"하나만 하면 열 번 반복된 결과가 또 나옴","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null},{"id":"b1","l":"prog","k":"once","s":"대기","h":"week","p":1,"t":"UNHEARD 1호 촬영일 확정","n":"출연자 Yyul 확정됨. 날짜 하나 못 박고 나머지를 맞추기. 편집은 서브 PD에게 통째로","w":"SESSION 발송 회신 처리 시기와 떼어놓기","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"b2","l":"prog","k":"once","s":"대기","h":"week","p":2,"t":"라이브클립 A군 6건 발송","n":"초안 21건 대기 중. 호리존·시리즈 규격 고정 명시, 날짜·선곡은 열어두기","w":"파일럿 1차를 먼저 내보낸 뒤 한 텀 두고. C JAMM 핸들은 발송 직전 육안 확인","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"b3","l":"ops","k":"once","s":"대기","h":"week","p":1,"t":"히트 캐러셀 구조 문서 1장","n":"9월 히트 3~4편의 공통 구조. 합류 인력의 발주서가 됨","w":"이 문서 없이 인력 투입하면 발행량만 늘고 히트율은 떨어짐","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"b4","l":"ops","k":"once","s":"대기","h":"week","p":2,"t":"서브 PD 문서 4종 전달","n":"시리즈 기획안 3건 + 제안 문서 원칙 + 레퍼런스 규칙 + 톤 기준","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"b5","l":"tech","k":"once","s":"대기","h":"week","p":1,"t":"발행 운영 이양","n":"승인 게이트·예약 발행·계정 전환·토큰 만료 대응을 명시적으로","w":"안 넘기면 규효에게 돌아옴","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"b10","l":"mag","k":"once","s":"대기","h":"week","p":2,"t":"계정 설정 6개 점검","n":"PLOT 계정 + 개인 계정. 10분","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"c1","l":"tech","k":"once","s":"대기","h":"month","p":2,"t":"소스 파일 정비 — 국내 피드 9건 + SPOTLIGHT","n":"403·429·404는 UA·지연 / 셀렉터 0건 2건은 재작성 / fetch failed 2건은 URL 확인 / SPOTLIGHT 수집 체계도 같은 sources.json 을 여는 일 (구 c2)","w":"hiphople·hiphopplaya 둘만 살려도 국내 힙합 라인 복구. 맥에서 클론부터","scope":"team","mac":true,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"c3","l":"mag","k":"once","s":"대기","h":"month","p":2,"t":"THIS WEEK 자동 수집","n":"feeds.md 인디스트릿 블록에 공연장별 일정 40건이 이미 들어옴. 웹앱 캘린더와 같은 파이프라인","w":"두 번 만들지 않기","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c5","l":"tech","k":"once","s":"대기","h":"month","p":2,"t":"봇 상시 서버 이관 판정","n":"스튜디오 유휴 데스크탑(GTX 1080) 또는 Synology DS925+. 실측 후 안 되면 Mac mini 안건화 / 판정이 '한다'로 나오면 렌더 큐 상시 워커 연결이 그 안에 따라옴 (구 c4)","w":"어도비 슬롯 2개가 차 있어 스튜디오 PC에 AE 불가 — AE 없는 경로부터","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null},{"id":"c6","l":"prog","k":"once","s":"대기","h":"month","p":1,"t":"SESSION 파일럿 제작","n":"세트 규격·인터뷰 방식·회차 공수를 이 편에서 확정. 서브 PD가 전 과정 동행","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c7","l":"prog","k":"once","s":"대기","h":"month","p":2,"t":"UNHEARD 파일럿 제작","n":"숏폼 우선. 거리 반응 클립이 본체, 롱폼은 사후에 묶음","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c8","l":"prog","k":"once","s":"대기","h":"month","p":3,"t":"청음실 파일럿 제작","n":"선 청취 후 질문 구성. 조명·톤은 기술팀과 / To LP(로고 확정 · 스피커 구성 · 1회차 선정)를 여기로 흡수 — 같은 재생 환경을 쓴다 (구 d11·d12)","w":"시리즈는 SESSION·UNHEARD·청음실 셋까지. 네 번째를 따로 세면 셋 다 늦어진다","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c9","l":"biz","k":"once","s":"대기","h":"month","p":2,"t":"외주 응대 세트 — 견적 3구간 + 단가표 + 템플릿","n":"표준/프리미엄/디럭스 + 앵커링 + 가격 정당화 문장 / 장비 단가표와 문의 응대 템플릿을 한 벌로. 따로 만들면 셋 다 못 씀 (구 c10·c11)","w":"견적만 있고 단가 근거가 없으면 협상에서 밀림","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"c12","l":"gear","k":"once","s":"진행","h":"month","p":2,"t":"4K 캠코더 선정","n":"200만 이하, 소니 E마운트 호환. 핸드헬드 장시간·오토포커스·내장 ND 우선","w":"카메라가 FS7·a7 IV 2대뿐인 게 자체 제작 최대 제약","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"c17","l":"ops","k":"once","s":"대기","h":"month","p":2,"t":"브랜드·보이스·비즈니스 가이드 3종","n":"모든 AI 작업의 첫 입력으로 고정. 캡션 델타 결과가 보이스로 / 나무위키류 인용 규칙은 이 가이드 안의 한 조항으로 (구 c19)","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"c18","l":"ops","k":"once","s":"대기","h":"month","p":3,"t":"예찬 입대 3값 확인","n":"입대일·신병교육 기간 / 자대 폰 사용 지침 / 겸직·영리행위 규정","w":"외부 협업자 지원이 2개월이라 그 안에 큐까지 올리고 이후 주 3편으로 낮추는 설계가 현실적","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null},{"id":"c20","l":"mag","k":"once","s":"대기","h":"month","p":3,"t":"댓글 운영 기준 1장","n":"삭제 대신 숨김·필터 단어를 기본값으로. 삭제는 흔적이 남아 역효과","w":"캐러셀이 보너스 집계 대상이라 댓글 사고 비용이 전보다 큼","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"d2","l":"tech","k":"track","s":"대기","h":"someday","p":3,"t":"멀티계정 텔레그램 UI","n":"PLOT 계정 분기와 예약 발행 마이그레이션. SENE이 개인으로 넘어가 분기 요건이 달라짐 — 범위 재확인 필요","w":"보류 — UI 없이도 PLOT·SENE 둘 다 돌고 있음 — 불편하지만 안 막힘","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"d4","l":"tech","k":"track","s":"대기","h":"someday","p":4,"t":"봇 통합 B단계","n":"yt-dlp → /shorts 연결, 컷별 리프레임 승인 플로우","w":"보류 — 서버 이관 판정(c5) 뒤에 볼 일","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"d5","l":"tech","k":"track","s":"진행","h":"quarter","p":3,"t":"PLOT 웹앱 v1 — 캘린더 단독","n":"발매는 눌러서 재생, 공연은 눌러서 예매. 인디스트릿 수집기를 데이터 공급원으로","w":"소스가 다른 컴퓨터에 있음","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"d6","l":"ops","k":"track","s":"대기","h":"quarter","p":3,"t":"상표 출원 PLOT","n":"로고 결합표장 1브랜드 × 41류. 약 25만원(우선심사 포함 40만원대)","w":"PLOT 표준문자 단독은 식별력 부족으로 거절 위험 — 결합표장으로. 감면 여부는 1544-8080","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null},{"id":"d7","l":"ops","k":"track","s":"대기","h":"week","p":2,"t":"1~2월 지원사업","n":"콘진원 글로벌 도약(연 최대 3억) · 언론재단 미디어 스타트업(3천만) · 청년창작자(연 900만) · 청년일자리도약","w":"장려금은 이번 충원과 맞물릴 수 있음 — 채용 형태 확정 전에 요건 확인 / 개인 판에 두면 팀이 못 봄 — 팀으로 되돌림. 신청은 회사 명의","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"d14","l":"gear","k":"track","s":"대기","h":"someday","p":4,"t":"스튜디오 대관 운영 개선","n":"시리즈 촬영 세트로 상시 고정할지와 맞물림","w":"보류 — 시리즈 촬영 세트 상시 고정 여부와 맞물림. 파일럿을 찍어봐야 답이 나옴","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"d15","l":"tech","k":"track","s":"막힘","h":"quarter","p":3,"t":"Meta 앱 생성 차단 해제 확인","n":"HEALIN·PLOT 계정군과 개인 매거진(SENE 다국어·푸드·액팅)이 전부 여기 묶여 있음","w":"풀리는지 모르는 채로 계획이 서 있음","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null},{"id":"e1","l":"mag","k":"recur","s":"상시","h":"now","p":1,"t":"캐러셀 주 5편","n":"바닥 77만을 깔면 히트 한 편으로 100만 돌파. 히트 0인 달의 보험","w":"월 합계의 절반 이상을 히트 서너 편이 만듦","scope":"team","mac":false,"last":null,"d":null,"team":"기획","must":null,"by":null},{"id":"e2","l":"mag","k":"recur","s":"상시","h":"now","p":2,"t":"오늘의 노래","n":"songs.json 순번, 161곡 라이브러리","w":"","scope":"team","mac":false,"last":null,"d":null,"team":"기획","must":null,"by":null},{"id":"e4","l":"mag","k":"recur","s":"상시","h":"now","p":2,"t":"이슈·특집 비정기","n":"도달 엔진 — 상한 없음","w":"","scope":"team","mac":false,"last":null,"d":null,"team":"기획","must":null,"by":null},{"id":"e5","l":"mag","k":"once","s":"확인필요","h":"week","p":3,"t":"예능 컷 숏폼 — 계속할지·규격 바꿀지 결정","n":"유입 엔진인 건 맞음. 이번 주에 닫을 것 — 계속 / 규격 변경 / 중단","w":"방송 IP 릴로 오리지널리티 경고 1회. 한 번 더면 성장 구간이 끝남","scope":"team","mac":false,"d":null,"team":"기획","must":null,"by":null,"done":false},{"id":"e7","l":"ops","k":"once","s":"대기","h":"now","p":2,"t":"리빙 문서 3종 갱신 — 회의 소집 때","n":"액션아이템·의사결정로그·회의록. a3 회의를 소집한 그 자리에서 함께","w":"주간회의를 접었으니 매일 도는 항목에서 뺌","scope":"team","mac":false,"d":null,"team":"공통","must":null,"by":null,"done":false},{"id":"f6","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"STUDIO DAY · 첫 공연","n":"솔로·듀오·어쿠스틱 중심으로 나중에","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"f10","l":"biz","k":"track","s":"대기","h":"someday","p":4,"t":"BANA 라인","n":"콘텐츠 먼저 발행하고 링크 공유","w":"보류 — 콘텐츠 발행이 앞섬 — 발행 쪽에서 자연히 나옴","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"f11","l":"biz","k":"track","s":"확인필요","h":"week","p":3,"t":"강원 RED FRYS 회신","n":"제안서 납품 완료. 회신 여부 확인","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"f12","l":"biz","k":"track","s":"대기","h":"someday","p":5,"t":"페스티벌 시티 후속 기업","n":"하림·미래에셋 납품 완료. 다음 대상 미정","w":"보류 — 하림·미래에셋 실적을 들고 다음 대상을 고르는 일로 남김 — 외주 파이프라인이 사라지면 안 됨","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"g1","l":"tech","k":"once","s":"확인필요","h":"week","p":2,"t":"매거진 수집기 — 0건을 실패로 잡기","d":null,"n":"9/18 @nitemagkr 이 두 번 0건으로 왔는데 run 은 성공으로 끝났다. 계정은 정상 확인됨 — 액터가 조용히 빈 결과를 돌려준 것","w":"어제까지 나오던 계정이 갑자기 0건이면 성공이 아니라 실패로 봐야 재시도가 걸린다","scope":"team","mac":false,"team":"기술","must":null,"by":null},{"l":"ops","k":"once","s":"대기","h":"now","p":1,"t":"오퍼레이션 앱 주소 팀에 알리기","n":"팀·개인 두 주소와 '체크는 아직 각자 브라우저에만 남는다' 단서 한 줄","w":"이게 되어야 Notion 정본을 아카이브로 내릴 수 있음 — 지금 팀이 읽을 수 있는 건 Notion·텔레그램뿐","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null,"id":"h1"},{"l":"prog","k":"once","s":"대기","h":"now","p":1,"t":"서브 PD 합류 조건 확정","n":"보수·기간·산출물 범위. a4 역할 경계와 b4 문서 4종은 있는데 조건 자체가 없었음","w":"충원 첫 주에 안 정하면 되돌리기 어려운 건 역할만이 아님","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"id":"h2"},{"l":"tech","k":"once","s":"대기","h":"week","p":2,"t":"공용 저장소 붙이기","n":"Supabase 프로젝트 생성 → schema.sql 실행 → .env 에 URL·anon 키 두 줄. 코드는 이미 들어가 있음","w":"붙기 전까지 오퍼레이션 앱은 팀 앱이 아니라 각자의 사본","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null,"id":"h3"},{"l":"mag","k":"once","s":"확인필요","h":"week","p":2,"t":"캐러셀 보너스 남은 2개월 조건 확인","n":"첫 달 달성은 3개월 중 1개월. 나머지 두 달의 조건과 마감이 어디에도 없음","w":"월 합계의 절반 이상을 히트 서너 편이 만듦 — 조건을 모르면 어느 달에 힘을 실을지 못 정함","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"id":"h4"}],"series":[{"id":"s1","n":"SESSION 파일럿 1화","sub":"프로듀서·엔지니어 세션 해부","stage":1,"cast":"미정 — 파일럿 컨택 8명 중","note":"세트 규격·인터뷰 방식·회차 공수를 이 편에서 확정. 서브 PD 전 과정 동행","by":null},{"id":"s2","n":"UNHEARD 1호","sub":"홍대 동행 · 거리 반응","stage":2,"cast":"Yyul — 「사랑이 떠나면 난 뭘 잡아야 할까」","note":"숏폼 우선 설계. 진행자·촬영일·편집분담이 미결","by":null},{"id":"s3","n":"청음실 파일럿","sub":"인생 음반 3장","stage":1,"cast":"미정","note":"선 청취 후 질문 구성. 조명·톤은 기술팀과. LP·CD·디지털 모두 허용","by":null},{"id":"s4","n":"라이브클립 1호","sub":"크라우드소싱 신청 기반","stage":1,"cast":"컨택 초안 21건 대기 · 최다 요청 빅나티","note":"호리존 고정, 날짜·선곡은 열어둠. A군 6건부터","by":null}],"stages":["섭외","일정","촬영","편집","발행"],"people":{"kyu":"규효","sub":"서브 PD","techj":"기술 합류","yun":"이윤석","jun":"고준석","ext":"외부"},"teams":["기획","기술","공통"]}</script>
+<script id="data" type="application/json">{"asof":"2026-09-18","scanAt":"2026-09-17 08:06 KST","lanes":[{"id":"mag","n":"매거진"},{"id":"prog","n":"프로그램"},{"id":"tech","n":"기술·봇"},{"id":"biz","n":"외주·관계"},{"id":"ops","n":"운영·문서"},{"id":"gear","n":"장비·공간"},{"id":"frozen","n":"동결"}],"alerts":[{"sev":"warn","t":"미커밋 39건 · PLOT 0 · SENE 19 · HEALIN 20","d":"PLOT은 9/16 커밋 완료","x":"HEALIN은 원격 저장소 자체가 없어 로컬에만 있다 — GitHub에 빈 저장소 만들고 remote 연결이 먼저. SENE 19건은 개인 쪽으로 넘어가지만 커밋은 같은 맥 한 세션에서 끝난다."},{"sev":"crit","t":"Gmail 커넥터 단절","d":"14일 · 10회 연속","x":"needs_reconnect · enabledInChat false. 재인증과 예약 작업 토글 둘 다 해야 함. 서울아츠어워즈 발주처 회신·POV 회신 확인이 전부 여기 막혀 있음."},{"sev":"warn","t":"국내 피드 9건 수집 실패","d":"13일 연속","x":"khan_music·khan_ent(403) · hiphople·rhythmer(fetch failed) · hiphopplaya(429) · eyesmag(404) · weiv(403) · glowupmag·visla(셀렉터 0건). starnews는 손 안 대고 회복 — 429·403은 UA·지연으로 상당수 살아남."},{"sev":"warn","t":"워치리스트 밀도 급락","d":"9/16","x":"9/15 56곡 28.0% → 9/16 48곡 24.0%. 국내 소스가 비어 있는 상태라 원인 분리가 어려움."},{"sev":"ok","t":"plot-scan 13일 연속 green","d":"9/4~9/16","x":"GitHub Actions에 얹힌 자동화는 무사고. 맥에 붙은 자동화만 사람이 앉는 날에 돎 — 이관 판단의 근거."},{"sev":"ok","t":"캐러셀 보너스 첫 달 달성","d":"3개월 중 1","x":"9월 약 180만. 10월·11월 유지가 남음. 릴스 5,000만은 집계 대상 아님."}],"rhythm":[{"t":"관제 갱신","time":"08:06","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"차트 수집","time":"07:35","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"오음소 발행","time":"12:05","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"근무 시작 · 소스 수집·기획","time":"13:00","days":[1,2,4,5],"kind":"work","note":"규효"},{"t":"주간 분석 리포트","time":"13:00","days":[4],"kind":"auto","note":"자동"},{"t":"마무리","time":"18:00","days":[1,2,4,5],"kind":"work","note":"규효"},{"t":"매거진 브리프","time":"18:10","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"},{"t":"이슈 레이더","time":"22:00","days":[1,2,3,4,5,6,0],"kind":"auto","note":"자동"}],"items":[{"id":"a1","l":"biz","k":"once","s":"진행","d":null,"h":"now","p":2,"t":"서울아츠어워즈 종편 마무리","n":"가편 컨펌 완료 · 9/17 종편 v1 렌더(6분 07초). 이후는 규효가 직접 처리","w":null,"scope":"team","mac":true,"done":false,"team":"기획","must":"kyu","by":null,"why":"rel"},{"id":"a2","l":"prog","k":"once","s":"막힘","d":"2026-09-14","h":"now","p":1,"t":"파일럿 컨택 1차 발송","n":"SESSION부터 2~3명만 채워 먼저. plotmusiclive@gmail.com, 권규효 명의","w":"밴드 편성 필요한 팀은 이번 차수 제외","scope":"team","mac":false,"done":false,"team":"기획","must":"kyu","by":null,"why":"rel"},{"id":"a3","l":"ops","k":"once","s":"진행","d":"2026-09-17","h":"now","p":1,"t":"미결 3건 닫기 — 회의 소집","n":"파일럿 컨택 1차 대상 · UNHEARD 진행자·촬영일·편집분담 · HEALIN 인계 조건","w":"주간회의를 접었으므로 이 셋은 스스로 날을 잡아야 닫힘","scope":"team","mac":false,"done":false,"team":"공통","must":"kyu","by":null,"why":"exec"},{"id":"a4","l":"ops","k":"once","s":"막힘","d":"2026-09-17","h":"now","p":1,"t":"역할 경계 확정","n":"발행 운영 담당자 지정 + 서브 PD 위임 범위를 1·2·3편 단계로 / 3트랙 개편 배치도 같은 자리에서 같이 정함 (구 b8)","w":"충원 첫 주에 안 정하면 되돌리기 어려움","scope":"team","mac":false,"done":false,"team":"공통","must":"kyu","by":null,"why":"exec"},{"id":"a6","l":"tech","k":"once","s":"막힘","h":"now","p":1,"t":"PLOT 앱 시크릿 교체","n":"Meta 대시보드에서 재발급 → .env 교체 → 봇 재기동 → 노출된 대화 삭제","w":"PLOT·To LP·헬스·에디토리얼 4계정이 묶여 있고 Meta 앱 신규 생성이 차단 상태","scope":"team","mac":true,"done":false,"d":null,"team":"기술","must":"kyu","by":null,"why":"account"},{"id":"a7","l":"tech","k":"once","s":"막힘","h":"now","p":1,"t":"미커밋 39건 커밋","n":"맥에서 zsh ~/Projects/commit-all.sh — 시크릿 스캔·그룹별 커밋, push 없음","w":"HEALIN 20건은 인계 전에 반드시. 클라우드에선 불가","scope":"team","mac":true,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"a8","l":"ops","k":"once","s":"막힘","h":"now","p":1,"t":"Gmail 커넥터 재인증","n":"설정 → 커넥터 → Gmail 재인증 + 예약 작업의 Gmail 토글. 둘 다 해야 함 / 재인증 뒤 받은편지함에서 POV 라인 회신 확인까지 (구 f9)","w":"하나만 하면 열 번 반복된 결과가 또 나옴","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null,"why":"account"},{"id":"b1","l":"prog","k":"once","s":"대기","h":"week","p":1,"t":"UNHEARD 1호 촬영일 확정","n":"출연자 Yyul 확정됨. 날짜 하나 못 박고 나머지를 맞추기. 편집은 서브 PD에게 통째로","w":"SESSION 발송 회신 처리 시기와 떼어놓기","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"b2","l":"prog","k":"once","s":"대기","h":"week","p":2,"t":"라이브클립 A군 6건 발송","n":"초안 21건 대기 중. 호리존·시리즈 규격 고정 명시, 날짜·선곡은 열어두기","w":"파일럿 1차를 먼저 내보낸 뒤 한 텀 두고. C JAMM 핸들은 발송 직전 육안 확인","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"b3","l":"ops","k":"once","s":"대기","h":"week","p":1,"t":"히트 캐러셀 구조 문서 1장","n":"9월 히트 3~4편의 공통 구조. 합류 인력의 발주서가 됨","w":"이 문서 없이 인력 투입하면 발행량만 늘고 히트율은 떨어짐","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"b4","l":"ops","k":"once","s":"대기","h":"week","p":2,"t":"서브 PD 문서 4종 전달","n":"시리즈 기획안 3건 + 제안 문서 원칙 + 레퍼런스 규칙 + 톤 기준","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"b5","l":"tech","k":"once","s":"대기","h":"week","p":1,"t":"발행 운영 이양","n":"승인 게이트·예약 발행·계정 전환·토큰 만료 대응을 명시적으로","w":"안 넘기면 규효에게 돌아옴","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"b10","l":"mag","k":"once","s":"대기","h":"week","p":2,"t":"계정 설정 6개 점검","n":"PLOT 계정 + 개인 계정. 10분","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"why":"account"},{"id":"c1","l":"tech","k":"once","s":"대기","h":"month","p":2,"t":"소스 파일 정비 — 국내 피드 9건 + SPOTLIGHT","n":"403·429·404는 UA·지연 / 셀렉터 0건 2건은 재작성 / fetch failed 2건은 URL 확인 / SPOTLIGHT 수집 체계도 같은 sources.json 을 여는 일 (구 c2)","w":"hiphople·hiphopplaya 둘만 살려도 국내 힙합 라인 복구. 맥에서 클론부터","scope":"team","mac":true,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"c3","l":"mag","k":"once","s":"대기","h":"month","p":2,"t":"THIS WEEK 자동 수집","n":"feeds.md 인디스트릿 블록에 공연장별 일정 40건이 이미 들어옴. 웹앱 캘린더와 같은 파이프라인","w":"두 번 만들지 않기","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c5","l":"tech","k":"once","s":"대기","h":"month","p":2,"t":"봇 상시 서버 이관 판정","n":"상시 가동 후보: 윈도우 데스크톱(규효가 이미 이쪽으로 기울어 있음) · 스튜디오 유휴 데스크탑(GTX 1080) · Synology NAS. 판정이 '한다'로 나오면 렌더 큐 상시 워커가 그 안에 따라옴","w":"순서는 시스템을 먼저 완성하고 그다음 이사 — 이사부터 하면 둘 다 늦어진다","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null,"why":"know"},{"id":"c6","l":"prog","k":"once","s":"대기","h":"month","p":1,"t":"SESSION 파일럿 제작","n":"세트 규격·인터뷰 방식·회차 공수를 이 편에서 확정. 서브 PD가 전 과정 동행","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c7","l":"prog","k":"once","s":"대기","h":"month","p":2,"t":"UNHEARD 파일럿 제작","n":"숏폼 우선. 거리 반응 클립이 본체, 롱폼은 사후에 묶음","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c8","l":"prog","k":"once","s":"대기","h":"month","p":3,"t":"청음실 파일럿 제작","n":"선 청취 후 질문 구성. 조명·톤은 기술팀과 / To LP(로고 확정 · 스피커 구성 · 1회차 선정)를 여기로 흡수 — 같은 재생 환경을 쓴다 (구 d11·d12)","w":"시리즈는 SESSION·UNHEARD·청음실 셋까지. 네 번째를 따로 세면 셋 다 늦어진다","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"c9","l":"biz","k":"once","s":"대기","h":"month","p":2,"t":"외주 응대 세트 — 견적 3구간 + 단가표 + 템플릿","n":"표준/프리미엄/디럭스 + 앵커링 + 가격 정당화 문장 / 장비 단가표와 문의 응대 템플릿을 한 벌로. 따로 만들면 셋 다 못 씀 (구 c10·c11)","w":"견적만 있고 단가 근거가 없으면 협상에서 밀림","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"why":"exec"},{"id":"c12","l":"gear","k":"once","s":"진행","h":"month","p":2,"t":"4K 캠코더 선정","n":"200만 이하, 소니 E마운트 호환. 핸드헬드 장시간·오토포커스·내장 ND 우선","w":"카메라가 FS7·a7 IV 2대뿐인 게 자체 제작 최대 제약","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"c17","l":"ops","k":"once","s":"대기","h":"month","p":2,"t":"브랜드·보이스·비즈니스 가이드 3종","n":"모든 AI 작업의 첫 입력으로 고정. 캡션 델타 결과가 보이스로 / 나무위키류 인용 규칙은 이 가이드 안의 한 조항으로 (구 c19)","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"c18","l":"ops","k":"once","s":"대기","h":"month","p":3,"t":"예찬 입대 3값 확인","n":"입대일·신병교육 기간 / 자대 폰 사용 지침 / 겸직·영리행위 규정","w":"외부 협업자 지원이 2개월이라 그 안에 큐까지 올리고 이후 주 3편으로 낮추는 설계가 현실적","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null,"why":"rel"},{"id":"c20","l":"mag","k":"once","s":"대기","h":"month","p":3,"t":"댓글 운영 기준 1장","n":"삭제 대신 숨김·필터 단어를 기본값으로. 삭제는 흔적이 남아 역효과","w":"캐러셀이 보너스 집계 대상이라 댓글 사고 비용이 전보다 큼","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"d2","l":"tech","k":"track","s":"대기","h":"someday","p":3,"t":"멀티계정 텔레그램 UI","n":"PLOT 계정 분기와 예약 발행 마이그레이션. SENE이 개인으로 넘어가 분기 요건이 달라짐 — 범위 재확인 필요","w":"보류 — UI 없이도 PLOT·SENE 둘 다 돌고 있음 — 불편하지만 안 막힘","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"d4","l":"tech","k":"track","s":"대기","h":"someday","p":4,"t":"봇 통합 B단계","n":"yt-dlp → /shorts 연결, 컷별 리프레임 승인 플로우","w":"보류 — 서버 이관 판정(c5) 뒤에 볼 일","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"d5","l":"tech","k":"track","s":"진행","h":"quarter","p":3,"t":"PLOT 웹앱 v1 — 캘린더 단독","n":"발매는 눌러서 재생, 공연은 눌러서 예매. 인디스트릿 수집기를 데이터 공급원으로","w":"소스가 다른 컴퓨터에 있음","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":null,"by":null},{"id":"d6","l":"ops","k":"track","s":"대기","h":"quarter","p":3,"t":"상표 출원 PLOT","n":"로고 결합표장 1브랜드 × 41류. 약 25만원(우선심사 포함 40만원대)","w":"PLOT 표준문자 단독은 식별력 부족으로 거절 위험 — 결합표장으로. 감면 여부는 1544-8080","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null,"why":"legal"},{"id":"d7","l":"ops","k":"track","s":"대기","h":"week","p":2,"t":"1~2월 지원사업","n":"콘진원 글로벌 도약(연 최대 3억) · 언론재단 미디어 스타트업(3천만) · 청년창작자(연 900만) · 청년일자리도약","w":"장려금은 이번 충원과 맞물릴 수 있음 — 채용 형태 확정 전에 요건 확인 / 개인 판에 두면 팀이 못 봄 — 팀으로 되돌림. 신청은 회사 명의","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"d14","l":"gear","k":"track","s":"대기","h":"someday","p":4,"t":"스튜디오 대관 운영 개선","n":"시리즈 촬영 세트로 상시 고정할지와 맞물림","w":"보류 — 시리즈 촬영 세트 상시 고정 여부와 맞물림. 파일럿을 찍어봐야 답이 나옴","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null},{"id":"d15","l":"tech","k":"track","s":"막힘","h":"quarter","p":3,"t":"Meta 앱 생성 차단 해제 확인","n":"HEALIN·PLOT 계정군과 개인 매거진(SENE 다국어·푸드·액팅)이 전부 여기 묶여 있음","w":"풀리는지 모르는 채로 계획이 서 있음","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null,"why":"account"},{"id":"e1","l":"mag","k":"recur","s":"상시","h":"now","p":1,"t":"캐러셀 주 5편","n":"바닥 77만을 깔면 히트 한 편으로 100만 돌파. 히트 0인 달의 보험","w":"월 합계의 절반 이상을 히트 서너 편이 만듦","scope":"team","mac":false,"last":null,"d":null,"team":"기획","must":null,"by":null},{"id":"e2","l":"mag","k":"recur","s":"상시","h":"now","p":2,"t":"오늘의 노래","n":"songs.json 순번, 161곡 라이브러리","w":"","scope":"team","mac":false,"last":null,"d":null,"team":"기획","must":null,"by":null},{"id":"e4","l":"mag","k":"recur","s":"상시","h":"now","p":2,"t":"이슈·특집 비정기","n":"도달 엔진 — 상한 없음","w":"","scope":"team","mac":false,"last":null,"d":null,"team":"기획","must":null,"by":null},{"id":"e5","l":"mag","k":"once","s":"확인필요","h":"week","p":3,"t":"예능 컷 숏폼 — 계속할지·규격 바꿀지 결정","n":"유입 엔진인 건 맞음. 이번 주에 닫을 것 — 계속 / 규격 변경 / 중단","w":"방송 IP 릴로 오리지널리티 경고 1회. 한 번 더면 성장 구간이 끝남","scope":"team","mac":false,"d":null,"team":"기획","must":null,"by":null,"done":false},{"id":"e7","l":"ops","k":"once","s":"대기","h":"now","p":2,"t":"리빙 문서 3종 갱신 — 회의 소집 때","n":"액션아이템·의사결정로그·회의록. a3 회의를 소집한 그 자리에서 함께","w":"주간회의를 접었으니 매일 도는 항목에서 뺌","scope":"team","mac":false,"d":null,"team":"공통","must":null,"by":null,"done":false},{"id":"f6","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"STUDIO DAY · 첫 공연","n":"솔로·듀오·어쿠스틱 중심으로 나중에","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":null,"by":null},{"id":"f10","l":"biz","k":"track","s":"대기","h":"someday","p":4,"t":"BANA 라인","n":"콘텐츠 먼저 발행하고 링크 공유","w":"보류 — 콘텐츠 발행이 앞섬 — 발행 쪽에서 자연히 나옴","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"why":"rel"},{"id":"f11","l":"biz","k":"track","s":"확인필요","h":"week","p":3,"t":"강원 RED FRYS 회신","n":"제안서 납품 완료. 회신 여부 확인","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"why":"rel"},{"id":"f12","l":"biz","k":"track","s":"대기","h":"someday","p":5,"t":"페스티벌 시티 후속 기업","n":"하림·미래에셋 납품 완료. 다음 대상 미정","w":"보류 — 하림·미래에셋 실적을 들고 다음 대상을 고르는 일로 남김 — 외주 파이프라인이 사라지면 안 됨","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"why":"exec"},{"id":"g1","l":"tech","k":"once","s":"확인필요","h":"week","p":2,"t":"매거진 수집기 — 0건을 실패로 잡기","d":null,"n":"9/18 @nitemagkr 이 두 번 0건으로 왔는데 run 은 성공으로 끝났다. 계정은 정상 확인됨 — 액터가 조용히 빈 결과를 돌려준 것","w":"어제까지 나오던 계정이 갑자기 0건이면 성공이 아니라 실패로 봐야 재시도가 걸린다","scope":"team","mac":false,"team":"기술","must":null,"by":null},{"l":"ops","k":"once","s":"대기","h":"now","p":1,"t":"오퍼레이션 앱 주소 팀에 알리기","n":"팀·개인 두 주소와 '체크는 아직 각자 브라우저에만 남는다' 단서 한 줄","w":"이게 되어야 Notion 정본을 아카이브로 내릴 수 있음 — 지금 팀이 읽을 수 있는 건 Notion·텔레그램뿐","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":null,"by":null,"id":"h1"},{"l":"prog","k":"once","s":"대기","h":"now","p":1,"t":"서브 PD 합류 조건 확정","n":"보수·기간·산출물 범위. a4 역할 경계와 b4 문서 4종은 있는데 조건 자체가 없었음","w":"충원 첫 주에 안 정하면 되돌리기 어려운 건 역할만이 아님","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"id":"h2","why":"exec"},{"l":"tech","k":"once","s":"대기","h":"week","p":2,"t":"공용 저장소 붙이기","n":"Supabase 프로젝트 생성 → schema.sql 실행 → .env 에 URL·anon 키 두 줄. 코드는 이미 들어가 있음","w":"붙기 전까지 오퍼레이션 앱은 팀 앱이 아니라 각자의 사본","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null,"id":"h3","why":"account"},{"l":"mag","k":"once","s":"확인필요","h":"week","p":2,"t":"캐러셀 보너스 남은 2개월 조건 확인","n":"첫 달 달성은 3개월 중 1개월. 나머지 두 달의 조건과 마감이 어디에도 없음","w":"월 합계의 절반 이상을 히트 서너 편이 만듦 — 조건을 모르면 어느 달에 힘을 실을지 못 정함","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null,"id":"h4","why":"rel"},{"id":"h5","l":"ops","k":"once","s":"대기","h":"week","p":1,"t":"팀 비밀번호 금고 만들기","n":"Meta·Gmail·Supabase·인스타 계정군을 한 곳에. 1Password 팀 또는 Bitwarden. 항목별로 누구에게 열지 따로 정함","w":"규효만 가능 18건 중 5건이 '계정을 규효만 연다'는 이유뿐이다 — 이거 하나로 5건이 넘어간다","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","why":"account","by":null}],"series":[{"id":"s1","n":"SESSION 파일럿 1화","sub":"프로듀서·엔지니어 세션 해부","stage":1,"cast":"미정 — 파일럿 컨택 8명 중","note":"세트 규격·인터뷰 방식·회차 공수를 이 편에서 확정. 서브 PD 전 과정 동행","by":null,"when":null,"where":"자사 스튜디오","cam":2,"open":["출연자 확정 — 파일럿 컨택 8명 중 2~3명","촬영일","세트 규격 · 인터뷰 방식","회차 공수 측정 방법"]},{"id":"s2","n":"UNHEARD 1호","sub":"홍대 동행 · 거리 반응","stage":2,"cast":"Yyul — 「사랑이 떠나면 난 뭘 잡아야 할까」","note":"숏폼 우선 설계. 진행자·촬영일·편집분담이 미결","by":null,"when":null,"where":"홍대 일대 + 자사 스튜디오","cam":2,"open":["진행자","촬영일","편집 분담","거리 반응 촬영 동의 방식"]},{"id":"s3","n":"청음실 파일럿","sub":"인생 음반 3장","stage":1,"cast":"미정","note":"선 청취 후 질문 구성. 조명·톤은 기술팀과. LP·CD·디지털 모두 허용","by":null,"when":null,"where":"자사 스튜디오","cam":2,"open":["출연자","인생 음반 3장 확인","조명·톤 — 기술팀과","재생 장비 구성 (구 To LP)"]},{"id":"s4","n":"라이브클립 1호","sub":"크라우드소싱 신청 기반","stage":1,"cast":"컨택 초안 21건 대기 · 최다 요청 빅나티","note":"호리존 고정, 날짜·선곡은 열어둠. A군 6건부터","by":null,"when":null,"where":"자사 스튜디오 호리존","cam":2,"open":["A군 6건 컨택 발송","촬영 날짜","선곡"]}],"stages":["섭외","일정","촬영","편집","발행"],"people":{"kyu":"규효","gyumin":"규민","yun":"윤석","jun":"준석","hyung":"규형","sub":"서브 PD","tw":"태환"},"teams":["기획","기술","공통"],"whys":{"account":{"n":"계정·비밀번호","free":true,"how":"비밀번호 관리자에 팀 금고를 만들면 한 번에 풀린다"},"legal":{"n":"회사 명의","free":false,"how":"법적으로 대표만 — 구조로 못 넘김"},"exec":{"n":"대표 결정","free":false,"how":"보수·가격·방향 — 구조로 못 넘김"},"rel":{"n":"상대가 규효를 앎","free":true,"how":"한 번 같이 만나 소개하면 다음부터 넘어간다"},"know":{"n":"규효 머릿속","free":true,"how":"한 장 쓰면 넘어간다"}}}</script>
 <script>/* 플루토 · 공유 상태 동기화
  * ─────────────────────────────────────────────────────────────
  * 없으면 없는 대로 돈다. 주소와 키가 안 박혀 있으면 이 파일은
@@ -733,6 +813,14 @@ function rowOf(id){
              claimed_by: sb2[sid] || null,
              patch: {} };
   }
+  if (id.indexOf("srole:") === 0){
+    var rk = id.slice(6);
+    return { id:id, claimed_by:(S.srole || {})[rk] || null, patch:{} };
+  }
+  if (id.indexOf("sdone:") === 0){
+    var dk = id.slice(6);
+    return { id:id, done: !!(S.sdone || {})[dk], patch:{} };
+  }
   var p = (S.patch || {})[id] || {};
   var by = Object.prototype.hasOwnProperty.call(p, "by") ? p.by : undefined;
   var rest = {};
@@ -757,6 +845,18 @@ function apply(row){
     S.stage = S.stage || {}; S.sby = S.sby || {};
     if (row.stage == null) delete S.stage[sid]; else S.stage[sid] = row.stage;
     if (row.claimed_by) S.sby[sid] = row.claimed_by; else delete S.sby[sid];
+    return;
+  }
+  if (id.indexOf("srole:") === 0){
+    var rk = id.slice(6);
+    S.srole = S.srole || {};
+    if (row.claimed_by) S.srole[rk] = row.claimed_by; else delete S.srole[rk];
+    return;
+  }
+  if (id.indexOf("sdone:") === 0){
+    var dk = id.slice(6);
+    S.sdone = S.sdone || {};
+    if (row.done) S.sdone[dk] = true; else delete S.sdone[dk];
     return;
   }
   S.done = S.done || {}; S.last = S.last || {}; S.patch = S.patch || {};
@@ -898,13 +998,15 @@ function load(){
     if (r && r.done) {
       r.patch=r.patch||{}; r.add=r.add||[]; r.log=r.log||[];
       r.snooze=r.snooze||{}; r.stage=r.stage||{}; r.sby=r.sby||{}; r.cell=r.cell||{};
+      r.srole=r.srole||{}; r.sdone=r.sdone||{};
       r.seq=r.seq||0;
       r.view = CFG.views.some(function(v){return v.id===r.view;}) ? r.view : CFG.views[0].id;
       return r;
     }
   } catch(e){}
   return { done:{}, last:{}, patch:{}, add:[], log:[], snooze:{}, stage:{}, sby:{}, cell:{},
-           view:CFG.views[0].id, filt:{}, seq:0, theme:"sys" };
+           srole:{}, sdone:{},
+           view:CFG.views[0].id, filt:{}, seq:0, theme:"sys", seen:0 };
 }
 function save(id){
   try { localStorage.setItem(CFG.key, JSON.stringify(S)); } catch(e){}
@@ -966,6 +1068,44 @@ P.josa = josa;
 /* 나누는 단위는 항목이 아니라 칸이다 — 팀 × 성질.
    한 사람이 칸을 맡고, 칸 안은 맡은 쪽이 알아서 굴린다.
    36개를 고르는 건 부담이지만 칸 하나를 맡는 건 회의에서 한 번에 정해진다. */
+/* must 의 이유. free=true 면 체계를 만들면 넘어간다 — 이걸 갈라야
+   "규효만 19건"이 "진짜 6건 + 풀 수 있는 13건"으로 보인다. */
+P.why = function(it){
+  var w = (DATA.whys || {})[it && it.why];
+  return w || null;
+};
+P.canFree = function(it){ var w = P.why(it); return !!(w && w.free); };
+P.whys = function(){ return DATA.whys || {}; };
+
+/* ── 회차 제작 시트 ──────────────────────────────────
+   회차의 병목은 "누가 맡나"가 아니라 "어느 단계를 누가 맡나"다.
+   서브 PD 위임 범위가 정확히 이 자리에서 정해진다. */
+P.roleKey = function(sid, stage){ return sid + "|" + stage; };
+P.role = function(sid, stage){ return (S.srole || {})[P.roleKey(sid, stage)] || null; };
+P.claimRole = function(sid, stage, whoId){
+  var k = P.roleKey(sid, stage), was = (S.srole || {})[k] || null;
+  S.srole = S.srole || {};
+  if (whoId) S.srole[k] = whoId; else delete S.srole[k];
+  logit(k, whoId ? "단계 맡음 " + P.who(whoId) : "단계 놓음");
+  save("srole:" + k);
+  P.toast(whoId ? josa(P.who(whoId), "이", "가") + " " + stage + " 단계를 맡았습니다"
+                : stage + " 단계를 놓았습니다",
+    "되돌리기", function(){
+      if (was) S.srole[k] = was; else delete S.srole[k];
+      save("srole:" + k); P.render();
+    });
+  P.render();
+};
+P.openKey = function(sid, i){ return sid + "|" + i; };
+P.openDone = function(sid, i){ return !!(S.sdone || {})[P.openKey(sid, i)]; };
+P.togOpen = function(sid, i){
+  var k = P.openKey(sid, i), was = P.openDone(sid, i);
+  S.sdone = S.sdone || {};
+  if (was) delete S.sdone[k]; else S.sdone[k] = true;
+  save("sdone:" + k);
+  P.render();
+};
+
 P.cellId = function(team, lane){ return "cell:" + team + "|" + lane; };
 P.cellBy = function(team, lane){
   var c = S.cell || {}; return c[team + "|" + lane] || null;
@@ -1068,7 +1208,12 @@ P.row = function(it, opt){
   if (!opt.hideWho){
     if (it.by) meta.push('<button class="who has" data-act="unclaim" data-arg="'+esc(it.id)
       + '" title="놓기">'+esc(P.who(it.by))+"</button>");
-    else if (it.must) meta.push('<span class="who only">'+esc(P.who(it.must))+"만 가능</span>");
+    else if (it.must){
+      var w = P.why(it);
+      meta.push('<span class="who only'+(w && w.free?" freeable":"")+'"'
+        + (w?' title="'+esc(w.how)+'"':"")+">"
+        + esc(P.who(it.must))+"만"+(w?" \u00B7 "+esc(w.n):"")+"</span>");
+    }
     else meta.push('<button class="who open" data-act="pick" data-arg="'+esc(it.id)
       + '">집을 사람 없음</button>');
   }
@@ -1391,7 +1536,7 @@ P.render = function(){
     + (document.documentElement.dataset.theme==="light" ? "\u25D1" : "\u25D0")
     + "</button></span>"
     + "</div>"+(v.bar?v.bar():"")+"</div>"
-    + '<div class="body">'+bodyHTML+"</div></main>"
+    + '<div class="body">'+(CFG.intro && !S.seen ? CFG.intro() : "")+bodyHTML+"</div></main>"
     + paneHTML()+"</div>"
     + '<button class="fab" data-act="cmd" aria-label="찾기·추가">+</button>'
     + '<nav class="tabbar" style="grid-template-columns:repeat('+CFG.views.length+',1fr)">'
@@ -1452,6 +1597,16 @@ function act(name, arg, val){
       var pi = P.byId(arg);
       if (pi) P.pickFor("항목", arg, function(w){ P.claim(pi, w); }, pi.t);
       break;
+    case "rolepick":
+      var rp = String(arg).split("|");
+      P.pickFor("단계", arg, function(w){ P.claimRole(rp[0], rp[1], w); }, rp[1]);
+      break;
+    case "roledrop":
+      var rd = String(arg).split("|"); P.claimRole(rd[0], rd[1], null); break;
+    case "opentog":
+      var ot = String(arg).split("|"); P.togOpen(ot[0], +ot[1]); break;
+    case "seen":
+      S.seen = Date.now(); save(); P.render(); break;
     case "cellpick":
       var cp = String(arg).split("|");
       P.pickFor("칸", arg, function(w){ P.claimCell(cp[0], cp[1], w); },
@@ -1696,6 +1851,57 @@ function setSby(id, whoId){
     P.save("series:"+id); P.render(); });
   P.render();
 }
+/* 회차 하나를 펼친 제작 시트. 단계별로 누가 맡는지가 여기서 정해진다 —
+   "서브 PD 위임 범위를 1·2·3편 단계로"가 바로 이 표다. */
+function sheet(s){
+  var gi = stageOf(s);
+  var roles = D.stages.map(function(g, i){
+    var who = P.role(s.id, g), passed = i < gi, at = i === gi;
+    return '<div class="rl'+(passed?" past":"")+(at?" at":"")+'">'
+      + '<span class="rlg">'+E(g)+"</span>"
+      + (who
+          ? '<button class="who has" data-act="roledrop" data-arg="'+E(s.id+"|"+g)+'"'
+            + ' title="놓기">'+E(P.who(who))+"</button>"
+          : '<button class="who open" data-act="rolepick" data-arg="'+E(s.id+"|"+g)+'">'
+            + "비어 있음</button>")
+      + "</div>";
+  }).join("");
+
+  var opens = (s.open || []).map(function(q, i){
+    var on = P.openDone(s.id, i);
+    return '<button class="qi'+(on?" on":"")+'" data-act="opentog" data-arg="'
+      + E(s.id+"|"+i)+'" aria-pressed="'+on+'"><span class="qb"></span>'+E(q)+"</button>";
+  }).join("");
+  var left = (s.open || []).filter(function(_, i){ return !P.openDone(s.id, i); }).length;
+
+  // 카메라가 두 대뿐이고 규효가 한 명이다. 같은 날 두 회차는 안 된다.
+  var clash = s.when && D.series.filter(function(x){
+    return x.id !== s.id && x.when === s.when; });
+
+  return '<section class="sec"><div class="sech"><h2>'+E(s.n)+"</h2>"
+    + '<span class="sub">'+E(s.sub||"")+"</span>"
+    + '<button class="act" data-act="sclose">닫기</button></div>'
+    + '<div class="sheet">'
+    + '<div class="shrow"><span class="k">촬영일</span><span class="v'
+    + (s.when?"":" none")+'">'+E(s.when || "아직 안 잡힘")+"</span></div>"
+    + '<div class="shrow"><span class="k">장소</span><span class="v'
+    + (s.where?"":" none")+'">'+E(s.where || "미정")+"</span></div>"
+    + '<div class="shrow"><span class="k">출연</span><span class="v'
+    + (s.cast?"":" none")+'">'+E(s.cast || "미정")+"</span></div>"
+    + '<div class="shrow"><span class="k">카메라</span><span class="v">'
+    + E(String(s.cam||1))+"대 · 보유 2대</span></div>"
+    + (clash && clash.length
+        ? '<p class="clash">같은 날 '+E(clash[0].n)
+          + ' 도 잡혀 있습니다 — 카메라 2대와 사람 하나로는 하루에 둘을 못 찍습니다.</p>'
+        : "")
+    + '<div class="shh">단계별로 누가 맡나</div>'
+    + '<div class="rls">'+roles+"</div>"
+    + (opens
+        ? '<div class="shh">미결 '+left+"건</div>"+'<div class="qs">'+opens+"</div>"
+        : "")
+    + "</div></section>";
+}
+
 function drawSeries(){
   var stages = D.stages;
   var cols = stages.map(function(g,gi){
@@ -1703,11 +1909,16 @@ function drawSeries(){
     return '<div class="col" data-drop="'+gi+'"><div class="colh"><b>'+E(g)+"</b>"
       + '<span class="n num">'+here.length+'</span></div><div class="colb">'
       + here.map(function(s){
-          return '<div class="kcard" data-kid="'+E(s.id)+'" '
+          var left = (s.open||[]).filter(function(_,i){
+                        return !P.openDone(s.id,i); }).length;
+          return '<div class="kcard'+(P.S().filt.ser===s.id?" on":"")+'" data-kid="'+E(s.id)+'" '
             + 'data-act="sopen" data-arg="'+E(s.id)+'">'
             + "<b>"+E(s.n)+"</b>"
             + (s.sub?'<span class="sub">'+E(s.sub)+"</span>":"")
+            + (s.when?'<span class="sub when">'+E(s.when)+"</span>":"")
             + '<div class="foot">'
+            + (left?'<span class="pill s-대기">미결 '+left+"</span>":
+                    '<span class="pill s-진행">미결 없음</span>')
             + (sby(s)
                 ? '<button class="who has" data-act="sdrop" data-arg="'+E(s.id)+'">'
                   + E(P.who(sby(s)))+"</button>"
@@ -1725,24 +1936,31 @@ function drawSeries(){
   });
   var stuck = open.filter(function(x){ return x.g===0; }).length;
 
+  var allOpen = D.series.reduce(function(a, x){
+    return a + (x.open||[]).filter(function(_, i){ return !P.openDone(x.id, i); }).length; }, 0);
+  var noDate = D.series.filter(function(x){ return !x.when; }).length;
+  var sel = P.S().filt.ser;
+  var cur = sel && D.series.filter(function(x){ return x.id===sel; })[0];
+
   return P.stats([
     { k:"회차", v:D.series.length, n:"파일럿 단계" },
     { k:"섭외에 묶임", v:stuck, tone:stuck>1?"hot":"",
       n:stuck>1?"컨택이 안 나가면 전부 여기서 멈춥니다":"진행 중" },
-    { k:"촬영 이후", v:open.filter(function(x){return x.g>=2;}).length, n:"찍은 것" }
+    { k:"미결", v:allOpen, tone:allOpen?"hot":"good",
+      n:allOpen?"회차 안에서 닫아야 하는 것":"모두 닫힘" },
+    { k:"촬영일 없음", v:noDate, tone:noDate?"hot":"good", n:"날짜가 없으면 아무것도 못 잡음" }
   ])
   + '<section class="sec"><div class="sech"><h2>파이프라인</h2>'
-  + '<span class="sub">카드를 끌어 옮기거나 화살표로 옮깁니다</span></div>'
+  + '<span class="sub">카드를 끌어 옮기거나 화살표로 옮깁니다 · 눌러서 제작 시트</span></div>'
   + '<div class="kan">'+cols+"</div></section>"
+  + (cur ? sheet(cur) : "")
   + P.sec("프로그램 레인","회차에 안 붙는 준비 작업",
       live().filter(function(i){ return i.l==="prog"; }).sort(P.urgency))
   + '<p class="note"><b>회차는 완료가 아니라 단계입니다.</b> 체크박스로 묻지 않는 이유가 '
-  + '여기 있습니다 — 촬영이 끝났다고 그 회차가 끝난 게 아니니까요.</p>';
-}
-function seriesDetail(id){
-  var s = D.series.filter(function(x){return x.id===id;})[0];
-  if (!s) return;
-  P.toast(s.n+" — "+D.stages[stageOf(s)]+" 단계"+(s.cast?" · 출연 "+s.cast:""));
+  + '여기 있습니다 — 촬영이 끝났다고 그 회차가 끝난 게 아니니까요.</p>'
+  + '<p class="note">회차를 열면 <b>단계별로 누가 맡는지</b>를 정할 수 있습니다. '
+  + '프리프로덕션과 편집을 혼자 지는 구조를 끊는 자리가 여기입니다 — '
+  + '회차 하나를 통째로 넘기지 않아도, 편집만 넘기는 것부터 됩니다.</p>';
 }
 function move(id, dir){
   var s = D.series.filter(function(x){return x.id===id;})[0];
@@ -1861,19 +2079,46 @@ function drawShare(){
       c.list.sort(P.urgency));
   }
 
+  // 이유별로 갈라야 무엇이 구조로 풀리는지 보인다.
+  var freeable = only.filter(P.canFree).sort(P.urgency);
+  var hard     = only.filter(function(i){ return !P.canFree(i); }).sort(P.urgency);
+  var byWhy = {};
+  freeable.forEach(function(i){ (byWhy[i.why] = byWhy[i.why] || []).push(i); });
+  var WH = P.whys();
+  var keyed = Object.keys(byWhy)
+    .sort(function(a,b){ return byWhy[b].length - byWhy[a].length; })
+    .map(function(k){
+      return '<div class="key"><div class="keyh"><b>'+E(WH[k].n)+"</b>"
+        + '<span class="n num">'+byWhy[k].length+"건</span></div>"
+        + '<p class="keyw">'+E(WH[k].how)+"</p>"
+        + '<div class="keyl">'+byWhy[k].map(function(i){
+            return '<button class="keyi" data-act="open" data-arg="'+E(i.id)+'">'
+              + E(i.t)+"</button>"; }).join("")+"</div></div>";
+    }).join("");
+
   return P.stats([
     { k:"빈 칸", v:free.length, tone:free.length?"hot":"good",
       n:free.length?"아무도 안 맡은 칸":"모든 칸에 주인이 있습니다" },
     { k:"맡은 칸", v:cs.length-free.length, tone:cs.length-free.length?"good":"",
       n:"주인이 있는 칸" },
-    { k:"규효만 가능", v:only.length, n:"계정·명의·대표 결정 — 칸으로 못 넘김" },
-    { k:"막힘", v:blocked().length, tone:blocked().length?"hot":"", n:"남이 기다리는 것" }
+    { k:"풀 수 있는데 규효 것", v:freeable.length, tone:freeable.length?"hot":"good",
+      n:"체계 하나면 넘어가는 일" },
+    { k:"대표만 가능", v:hard.length, n:"여기부터는 사람을 늘려도 안 줄어듦" }
   ])
   + grid + opened
-  + P.sec("규효만 가능", "구조적으로 칸에 넣을 수 없는 것", only.sort(P.urgency))
+  + (keyed
+      ? '<section class="sec"><div class="sech"><h2>풀 수 있는데 아직 규효 것</h2>'
+        + '<span class="sub">막고 있는 건 일이 아니라 체계입니다</span>'
+        + '<span class="n num">'+freeable.length+"</span></div>"
+        + '<div class="keys">'+keyed+"</div></section>"
+      : "")
+  + P.sec("대표만 가능", "회사 명의와 대표 결정 — 구조로 못 넘김", hard)
   + '<p class="note"><b>칸을 맡으면 그 안은 맡은 쪽이 굴립니다.</b> 항목 하나하나를 '
-  + '집을 수도 있지만(상세에서), 판이 묻는 건 칸입니다 — 36개를 고르는 건 부담이고 '
+  + '집을 수도 있지만(상세에서), 판이 묻는 건 칸입니다 — 수십 개를 고르는 건 부담이고 '
   + '칸 하나는 회의에서 한 번에 정해집니다.</p>'
+  + '<p class="note">규효만 가능한 '+(freeable.length+hard.length)+'건 중 <b>'
+  + freeable.length+'건은 일이 어려워서가 아니라 체계가 없어서</b>입니다. '
+  + '계정은 금고 하나, 관계는 소개 한 번, 머릿속은 한 장이면 넘어갑니다.</p>'
   + (P.shared()
       ? '<p class="note">칸을 맡으면 모두에게 보입니다.</p>'
       : '<p class="note"><b>아직 각자 브라우저에만 남습니다.</b> 지금 주소를 팀에 뿌리면 '
@@ -1936,8 +2181,24 @@ P.boot({
     return "기준 "+P.data().asof+" · 스캔 "+P.data().scanAt
       + "\n팀이 같이 보는 판입니다. 개인 항목은 여기 없습니다.";
   },
+  /* 팀은 이 판을 처음 본다. 한 번만 뜨고, 닫으면 다시 안 뜬다. */
+  intro:function(){
+    return '<section class="intro"><h2>이 판이 묻는 건 "누가 뭘 하나"가 아닙니다</h2>'
+      + '<p>일을 사람 기준으로 쪼개지 않습니다. <b>팀 × 성질로 칸을 나눠 두고, '
+      + '각자 칸을 통째로 맡습니다.</b> 칸을 맡으면 그 안은 맡은 쪽이 굴립니다 — '
+      + '항목 하나하나를 배정받지 않습니다.</p>'
+      + '<p><b>분담</b>에서 빈 칸을 찾아 맡으시면 됩니다. '
+      + '<b>오늘</b>은 지금 제일 급한 하나를 세워 두고, <b>회차</b>는 촬영 건별로 '
+      + '어느 단계를 누가 맡는지를 봅니다.</p>'
+      + '<p class="micro">체크와 담당은 '
+      + (P.shared() ? "모두에게 바로 보입니다." : "아직 각자 브라우저에만 남습니다.")
+      + ' 화면 밝기는 왼쪽 아래에서 바꿉니다.</p>'
+      + '<button class="btn" data-act="seen">알겠습니다</button></section>';
+  },
   actions:{
-    sopen: seriesDetail,
+    sopen: function(id){ var f=P.S().filt;
+                         f.ser = (f.ser===id ? null : id); P.save(); P.render(); },
+    sclose: function(){ P.S().filt.ser = null; P.save(); P.render(); },
     spick: function(id){ P.pickFor("회차", id, function(w){ setSby(id, w); },
                                    (P.data().series.filter(function(x){return x.id===id;})[0]||{}).n); },
     sdrop: function(id){ setSby(id, null); },
