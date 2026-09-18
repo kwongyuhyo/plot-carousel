@@ -345,6 +345,16 @@ pre.form{
 }
 .pkRow button.on{color:var(--warn); border-color:rgba(232,179,74,.45)}
 .pkFoot{padding:12px 16px 0; flex:none}
+.pkCropRow{align-items:center}
+.pkCropRow .pkLbl{font-size:11.5px; color:var(--faint); flex:none; padding-right:2px}
+.pkCropRow button{flex:0 1 auto; min-width:0; padding-left:11px; padding-right:11px}
+.pkCropNow{font-size:11.5px; color:var(--dim); flex:1 0 100%; padding-top:1px}
+.pkCropNow.fixed{color:var(--warn)}
+/* 위치를 직접 잡는 중에는 영상을 끄는 손짓이 자연스러워야 한다 */
+.pkFrame{touch-action:pan-y}
+.pkFrame.grab{cursor:grab}
+.pkFrame.grabbing{cursor:grabbing}
+
 .pkTip{font-size:11.5px; color:var(--faint); line-height:1.5; margin-bottom:9px; min-height:17px}
 .pkTip.warn{color:var(--warn)}
 .pkApply{
@@ -519,6 +529,15 @@ pre.form{
     <button data-len="45">45초</button>
   </div>
 
+  <div class="pkRow pkCropRow">
+    <span class="pkLbl">리프레임</span>
+    <button id="pkAuto">자동</button>
+    <button data-crop="0">왼쪽</button>
+    <button data-crop="0.5">가운데</button>
+    <button data-crop="1">오른쪽</button>
+    <span class="pkCropNow" id="pkCropNow"></span>
+  </div>
+
   <div class="pkFoot">
     <div class="pkTip" id="pkTip"></div>
     <button class="pkApply" id="pkApply" disabled>이 구간 쓰기</button>
@@ -597,7 +616,9 @@ function blank() {
   const r = recall();
   return { id: ++seq, cat: r.cat || 'New release!', custom: r.custom || '',
            url: '', send: false, start: '', end: '', title: '', artist: '',
-           feat: '', hook: '', source: r.source || '' };
+           feat: '', hook: '', source: r.source || '',
+           // null = 자동(얼굴 따라). 0~1 = 가로 위치를 직접 고정.
+           crop: null };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -608,7 +629,7 @@ function blank() {
  */
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
-              'title', 'artist', 'feat', 'hook', 'source'];
+              'title', 'artist', 'feat', 'hook', 'source', 'crop'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -650,7 +671,9 @@ function fromSlim(list) {
     const b = blank();
     KEEP.forEach(k => {
       if (o[k] === undefined || o[k] === null) return;
-      b[k] = (k === 'send') ? !!o[k] : String(o[k]);
+      b[k] = (k === 'send') ? !!o[k]
+           : (k === 'crop') ? cropOf(o[k])
+           : String(o[k]);
     });
     return b;
   });
@@ -852,6 +875,7 @@ function parseForm(text) {
     b.feat   = (kv['피처링'] || '').trim();
     b.hook   = (kv['후킹'] || '').trim();
     b.source = (kv['출처'] || '').trim().replace(/^출처\s*:\s*/, '');
+    b.crop   = cropOf(kv['리프레임']);
     out.push(b);
   }
   return out;
@@ -901,6 +925,38 @@ function importText(text, append) {
   return got.length;
 }
 
+/* ── 리프레임 가로 위치 ────────────────────────────────
+ * 자동 리프레임은 컷마다 얼굴을 따라 9:16 창을 옮긴다. 대체로 맞지만
+ * 인물이 계속 한쪽에 서 있는 영상에서는 사람이 정하는 편이 빠르고 정확하다.
+ * 0 = 왼쪽 끝, 0.5 = 가운데, 1 = 오른쪽 끝. 비우면 자동.
+ * 파이프라인(test_auto_reframe_v3.py)이 같은 0~1 비율을 그대로 받는다.
+ */
+const CROP_WORDS = { '왼쪽': 0, '좌': 0, '가운데': 0.5, '중앙': 0.5, '오른쪽': 1, '우': 1 };
+
+function cropOf(v) {
+  if (v === null || v === undefined || v === '') return null;
+  if (typeof v === 'string') {
+    const t = v.trim();
+    if (!t || t === '자동') return null;
+    if (t in CROP_WORDS) return CROP_WORDS[t];
+    const pct = t.endsWith('%');
+    const n = Number(pct ? t.slice(0, -1) : t);
+    if (!isFinite(n)) return null;
+    v = pct ? n / 100 : n;
+  }
+  const n = Number(v);
+  if (!isFinite(n) || n < 0 || n > 1) return null;
+  return Math.round(n * 1000) / 1000;
+}
+
+function cropLabel(v) {
+  if (v === null) return '자동 — 컷마다 얼굴을 따라갑니다';
+  const p = Math.round(v * 100);
+  const where = v <= 0.02 ? ' (왼쪽 끝)' : v >= 0.98 ? ' (오른쪽 끝)'
+              : Math.abs(v - 0.5) < 0.02 ? ' (가운데)' : '';
+  return '고정 — 가로 ' + p + '%' + where;
+}
+
 /* ── 양식 텍스트 만들기 ────────────────────────────────── */
 function blockText(b) {
   const cat = (b.cat === '__custom__' ? b.custom : b.cat).trim();
@@ -915,6 +971,8 @@ function blockText(b) {
     '피처링: ' + b.feat.trim(),
     '후킹: ' + b.hook.trim(),
     '출처: ' + b.source.trim(),
+    // 비어 있으면 자동 — 양식 모양을 바꾸지 않으려고 줄은 늘 넣는다.
+    '리프레임: ' + (b.crop === null ? '' : String(b.crop)),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
@@ -1167,8 +1225,13 @@ function refresh() {
     const pick = $('[data-a=pick]', body);
     const hasYt = !!ytId(b.url);
     pick.disabled = !hasYt;
-    pick.textContent = hasYt ? '영상 보면서 구간 고르기'
-                             : '구간 고르기 — 유튜브 주소를 넣으면 켜집니다';
+    // 이미 정해 둔 값은 버튼에 적어 둔다 — 닫고 나면 리프레임을 고쳤는지 알 길이 없다.
+    const span = (b.start.trim() && b.end.trim())
+      ? b.start.trim() + '–' + b.end.trim() : '';
+    pick.textContent = !hasYt ? '구간 고르기 — 유튜브 주소를 넣으면 켜집니다'
+      : !span            ? '영상 보면서 구간 고르기'
+      : '구간 ' + span + (b.crop === null ? '' : ' · 리프레임 ' + Math.round(b.crop * 100) + '%')
+        + ' — 다시 보기';
   });
 
   $('#count').textContent = blocks.length + '편';
@@ -1312,6 +1375,7 @@ function drawSummary(errs) {
 const PK = {
   b: null, player: null, ready: false, dur: 0,
   inS: null, outS: null, loop: true, rate: 1, wide: false, timer: null, stallT: null,
+  crop: null, drag: null,
 };
 const RATES = [0.25, 0.5, 1, 1.5, 2];
 
@@ -1337,10 +1401,16 @@ function pkFit() {
   $('#pkOver').style.transform = 'scale(' + (w / 1080) + ')';
   // 9:16 안에 16:9 를 중앙 크롭 — 리프레임의 기본 동작에 가깝다.
   const f = PK.wide ? { w: w, h: h } : { w: h * 16 / 9, h: h };
+  // 9:16 창이 16:9 영상의 어디를 보는가. r=0 왼쪽 끝, 0.5 가운데, 1 오른쪽 끝.
+  // 자동일 때는 가운데를 보여 준다 — 자동 리프레임의 기본값과 같다.
+  const r = (PK.wide || PK.crop == null) ? 0.5 : PK.crop;
+  const off = -r * Math.max(0, f.w - w);
   const box = $('#pkFrame').querySelector('.pkVideo');
   [...box.children].forEach((n) => {
     n.style.width = f.w + 'px'; n.style.height = f.h + 'px';
+    n.style.left = off + 'px'; n.style.top = '0'; n.style.transform = 'none';
   });
+  $('#pkFrame').classList.toggle('grab', !PK.wide && f.w - w > 1);
 }
 
 async function openPicker(b) {
@@ -1349,12 +1419,15 @@ async function openPicker(b) {
   PK.b = b;
   PK.inS  = toSec(b.start);
   PK.outS = toSec(b.end);
+  PK.crop = cropOf(b.crop);
   PK.wide = false;
+  PK.drag = null;
   $('#picker').hidden = false;
   $('#pkFrame').classList.remove('wide');
   $('#pkWho').textContent = (b.title.trim() || '제목 없음') +
     (b.artist.trim() ? ' — ' + b.artist.trim() : '');
   paintFrame($('#pkOver'), b);
+  pkCropPaint();
   requestAnimationFrame(pkFit);
   const tip = $('#pkTip');
   // 넘치는 줄이 있으면 여기서 말한다 — 글자가 읽히는지 보는 자리가 바로 여기다.
@@ -1486,6 +1559,56 @@ function pkNudge(sec) {
   pkPaint();
 }
 
+/* 영상을 좌우로 끌면 9:16 창이 옮겨진다 — 끄는 방향과 보이는 그림이 같아야 한다. */
+function pkCropSet(r, why) {
+  PK.crop = (r === null) ? null : Math.max(0, Math.min(1, r));
+  pkFit();
+  pkCropPaint();
+  if (why === 'tap') toast('리프레임 ' + cropLabel(PK.crop).replace(/ —.*/, '') +
+                           (PK.crop === null ? '' : ' · 가로 ' + Math.round(PK.crop * 100) + '%'));
+}
+
+function pkCropPaint() {
+  const now = $('#pkCropNow');
+  if (now) {
+    now.textContent = cropLabel(PK.crop);
+    now.classList.toggle('fixed', PK.crop !== null);
+  }
+  const auto = $('#pkAuto');
+  if (auto) auto.classList.toggle('on', PK.crop === null);
+  document.querySelectorAll('[data-crop]').forEach((n) => {
+    n.classList.toggle('on', PK.crop !== null &&
+      Math.abs(PK.crop - Number(n.dataset.crop)) < 0.02);
+  });
+}
+
+function pkDragStart(e) {
+  if (PK.wide) return;
+  const frame = $('#pkFrame');
+  const rect = frame.getBoundingClientRect();
+  const over = (rect.height * 16 / 9) - rect.width;
+  if (over <= 1) return;                     // 세로 소스면 옮길 폭이 없다
+  PK.drag = { x: e.clientX, r: PK.crop == null ? 0.5 : PK.crop, over, moved: false };
+  frame.classList.add('grabbing');
+  try { frame.setPointerCapture(e.pointerId); } catch (_) {}
+}
+
+function pkDragMove(e) {
+  if (!PK.drag) return;
+  const d = e.clientX - PK.drag.x;
+  if (Math.abs(d) > 2) PK.drag.moved = true;
+  if (!PK.drag.moved) return;
+  e.preventDefault();
+  // 오른쪽으로 끌면 왼쪽이 드러난다 — 영상을 손으로 미는 느낌 그대로.
+  pkCropSet(PK.drag.r - d / PK.drag.over);
+}
+
+function pkDragEnd() {
+  if (!PK.drag) return;
+  PK.drag = null;
+  $('#pkFrame').classList.remove('grabbing');
+}
+
 function pkTogglePlay() {
   if (!PK.ready) return;
   const st = PK.player.getPlayerState();
@@ -1512,9 +1635,11 @@ function pkApply() {
   if (Math.round(PK.outS) - Math.round(PK.inS) < 1) { toast('구간이 너무 짧습니다'); return; }
   b.start = fmtTime(PK.inS);
   b.end   = fmtTime(PK.outS);
+  b.crop  = PK.crop;
   closePicker();
   refresh();
-  toast('구간 ' + b.start + ' – ' + b.end + ' 적용');
+  toast('구간 ' + b.start + ' – ' + b.end + ' 적용' +
+        (b.crop === null ? '' : ' · 리프레임 가로 ' + Math.round(b.crop * 100) + '%'));
 }
 
 function pkKeys(e) {
@@ -1545,6 +1670,15 @@ function bindPicker() {
   document.querySelectorAll('[data-len]').forEach((n) => {
     n.onclick = () => pkLen(Number(n.dataset.len));
   });
+  $('#pkAuto').onclick = () => pkCropSet(null, 'tap');
+  document.querySelectorAll('[data-crop]').forEach((n) => {
+    n.onclick = () => pkCropSet(Number(n.dataset.crop), 'tap');
+  });
+  const frame = $('#pkFrame');
+  frame.addEventListener('pointerdown', pkDragStart);
+  frame.addEventListener('pointermove', pkDragMove);
+  frame.addEventListener('pointerup', pkDragEnd);
+  frame.addEventListener('pointercancel', pkDragEnd);
   const loopBtn = $('#pkLoop');
   loopBtn.classList.toggle('on', PK.loop);
   loopBtn.onclick = () => { PK.loop = !PK.loop; loopBtn.classList.toggle('on', PK.loop); };
@@ -1559,6 +1693,7 @@ function bindPicker() {
     $('#pkFrame').classList.toggle('wide', PK.wide);
     $('#pkFrame').classList.toggle('noOver', PK.wide);
     $('#pkView').textContent = PK.wide ? '16:9' : '9:16';
+    PK.drag = null;
     pkFit();
   };
   $('#pkTrack').onclick = (e) => {
