@@ -195,6 +195,7 @@ input,textarea,select{font:inherit;letter-spacing:inherit}
 .box.on::after{content:"";position:absolute;left:4.5px;top:1px;width:4px;height:8px;
   border:solid #08080B;border-width:0 1.7px 1.7px 0;transform:rotate(43deg)}
 
+.rc{min-width:0}
 .rhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--s1) 7px}
 .rt{font-size:14px;font-weight:700;line-height:1.45;color:var(--t1);letter-spacing:-.012em}
 button.rt:hover{color:var(--accent)}
@@ -221,8 +222,14 @@ button.rt:hover{color:var(--accent)}
 button.pill{transition:filter var(--fast) var(--ease)}
 button.pill:hover{filter:brightness(1.25)}
 
+/* 집기 칩 — 세 상태. 배정이 아니라 "누가 집었나"를 보여준다. */
 .who{font-size:10.5px;color:var(--t3);padding:1.5px 7px;border-radius:99px;
-  box-shadow:inset 0 0 0 1px var(--line);flex:0 0 auto;white-space:nowrap}
+  box-shadow:inset 0 0 0 1px var(--line);flex:0 0 auto;white-space:nowrap;
+  transition:color var(--fast) var(--ease),box-shadow var(--fast) var(--ease)}
+button.who:hover{color:var(--t1);box-shadow:inset 0 0 0 1px var(--t3)}
+.who.has{color:var(--t1);box-shadow:inset 0 0 0 1px var(--t3)}
+.who.open{color:var(--focus);box-shadow:inset 0 0 0 1px rgba(124,124,240,.45)}
+.who.only{color:var(--t4);box-shadow:inset 0 0 0 1px var(--line2);font-style:normal}
 
 .dot{width:6px;height:6px;border-radius:50%;background:var(--t4);flex:0 0 auto}
 .dot.막힘{background:var(--danger)} .dot.진행{background:var(--ok)}
@@ -254,6 +261,14 @@ button.pill:hover{filter:brightness(1.25)}
   border-bottom:1px solid var(--line2);margin-bottom:var(--s2)}
 .cardh b{font-size:13.5px;font-weight:800}
 .cardh .n{margin-left:auto;font-size:11px;color:var(--t4)}
+/* 카드 안의 한 줄 — 누가 무엇을 집었는지 훑는 용도라 줄 높이를 낮게 잡는다. */
+.pl{display:flex;gap:8px;align-items:flex-start;width:100%;text-align:left;
+  padding:6px 0;border-bottom:1px solid var(--line2);font-size:12.5px;
+  line-height:1.45;color:var(--t2);transition:color var(--fast) var(--ease)}
+.pl:last-of-type{border-bottom:0}
+.pl:hover{color:var(--t1)}
+.pl .dot{margin-top:6px}
+.pmore{font-size:11px;color:var(--t3);padding-top:8px}
 
 /* ── 막대 ──────────────────────────────────────────── */
 .bar-t{height:5px;border-radius:99px;background:var(--sf3);overflow:hidden;display:flex}
@@ -474,7 +489,7 @@ kbd{font:inherit;font-size:9.5px;padding:1px 4px;border-radius:3px;background:va
 </head>
 <body>
 <div id="app"></div>
-<script id="data" type="application/json">{"asof":"2026-09-17","scanAt":"2026-09-17 08:06 KST","lanes":[{"id":"mag","n":"매거진"},{"id":"prog","n":"프로그램"},{"id":"tech","n":"기술·봇"},{"id":"biz","n":"외주·관계"},{"id":"rev","n":"수익화"},{"id":"ops","n":"운영·문서"},{"id":"gear","n":"장비·공간"},{"id":"side","n":"외부·행정"},{"id":"frozen","n":"동결"}],"owners":{"kyu":"규효","sub":"서브 PD","techj":"기술 합류","tech":"기술팀","yun":"이윤석","jun":"고준석","ext":"외부","tbd":"미정"},"alerts":[{"sev":"crit","t":"SENE 경쟁사 엔진 2슬롯 연속 누락","d":"다음 슬롯 9/21 06:00","x":"launchd 미설치. 9/14·9/17 연속으로 비었고 스냅샷이 6월 1일 1회분뿐이라 30일 윈도우 밖. 수동 1회 실행과 launchd 등록을 같은 세션에서.","sc":"solo"}],"rhythm":[{"t":"SENE 경쟁사 엔진","time":"06:00","days":[1,4],"kind":"broken","note":"launchd 미설치","sc":"solo"}],"items":[{"id":"a1","l":"biz","o":"kyu","k":"once","s":"진행","d":null,"h":"now","p":2,"t":"서울아츠어워즈 종편 마무리","n":"가편 컨펌 완료 · 9/17 종편 v1 렌더(6분 07초). 이후는 규효가 직접 처리","w":null,"scope":"team","mac":true,"done":false},{"id":"a2","l":"prog","o":"kyu","k":"once","s":"막힘","d":"2026-09-14","h":"now","p":1,"t":"파일럿 컨택 1차 발송","n":"SESSION부터 2~3명만 채워 먼저. plotmusiclive@gmail.com, 권규효 명의","w":"밴드 편성 필요한 팀은 이번 차수 제외","scope":"team","mac":false,"done":false},{"id":"a3","l":"ops","o":"kyu","k":"once","s":"진행","d":"2026-09-17","h":"now","p":1,"t":"미결 3건 닫기 — 회의 소집","n":"파일럿 컨택 1차 대상 · UNHEARD 진행자·촬영일·편집분담 · HEALIN 인계 조건","w":"주간회의를 접었으므로 이 셋은 스스로 날을 잡아야 닫힘","scope":"team","mac":false,"done":false},{"id":"a4","l":"ops","o":"kyu","k":"once","s":"막힘","d":"2026-09-17","h":"now","p":1,"t":"역할 경계 확정","n":"발행 운영 담당자 지정 + 서브 PD 위임 범위를 1·2·3편 단계로","w":"충원 첫 주에 안 정하면 되돌리기 어려움","scope":"team","mac":false,"done":false},{"id":"a5","l":"side","o":"kyu","k":"once","s":"막힘","d":"2026-09-20","h":"now","p":1,"t":"SENE 경쟁사 엔진 수동 실행 + launchd 등록","n":"run_competitor_pipeline.sh 1회 + 월·목 06시 등록. SENE이 개인으로 넘어와도 스크립트와 launchd는 같은 맥에 있다","w":"9/21 06시 전에 안 하면 세 번째로 놓침. a6 시크릿·a7 커밋·a8 Gmail과 같은 맥 세션에서 한 번에 — 판은 갈렸어도 앉는 자리는 하나다","scope":"solo","mac":true,"done":false},{"id":"a6","l":"tech","o":"kyu","k":"once","s":"막힘","h":"now","p":1,"t":"PLOT 앱 시크릿 교체","n":"Meta 대시보드에서 재발급 → .env 교체 → 봇 재기동 → 노출된 대화 삭제","w":"PLOT·To LP·헬스·에디토리얼 4계정이 묶여 있고 Meta 앱 신규 생성이 차단 상태","scope":"team","mac":true,"done":false,"d":null},{"id":"a7","l":"tech","o":"kyu","k":"once","s":"막힘","h":"now","p":1,"t":"미커밋 39건 커밋","n":"맥에서 zsh ~/Projects/commit-all.sh — 시크릿 스캔·그룹별 커밋, push 없음","w":"HEALIN 20건은 인계 전에 반드시. 클라우드에선 불가","scope":"team","mac":true,"done":false,"d":null},{"id":"a8","l":"ops","o":"kyu","k":"once","s":"막힘","h":"now","p":1,"t":"Gmail 커넥터 재인증","n":"설정 → 커넥터 → Gmail 재인증 + 예약 작업의 Gmail 토글. 둘 다 해야 함","w":"하나만 하면 열 번 반복된 결과가 또 나옴","scope":"team","mac":false,"done":false,"d":null},{"id":"b1","l":"prog","o":"kyu","k":"once","s":"대기","h":"week","p":1,"t":"UNHEARD 1호 촬영일 확정","n":"출연자 Yyul 확정됨. 날짜 하나 못 박고 나머지를 맞추기. 편집은 서브 PD에게 통째로","w":"SESSION 발송 회신 처리 시기와 떼어놓기","scope":"team","mac":false,"done":false,"d":null},{"id":"b2","l":"prog","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"라이브클립 A군 6건 발송","n":"초안 21건 대기 중. 호리존·시리즈 규격 고정 명시, 날짜·선곡은 열어두기","w":"파일럿 1차를 먼저 내보낸 뒤 한 텀 두고. C JAMM 핸들은 발송 직전 육안 확인","scope":"team","mac":false,"done":false,"d":null},{"id":"b3","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":1,"t":"히트 캐러셀 구조 문서 1장","n":"9월 히트 3~4편의 공통 구조. 합류 인력의 발주서가 됨","w":"이 문서 없이 인력 투입하면 발행량만 늘고 히트율은 떨어짐","scope":"team","mac":false,"done":false,"d":null},{"id":"b4","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"서브 PD 문서 4종 전달","n":"시리즈 기획안 3건 + 제안 문서 원칙 + 레퍼런스 규칙 + 톤 기준","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"b6","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"Notion 정본 4개 섹션 갱신","n":"오늘 회의록 정리하는 김에 같이. PLOT은 '무인런 안정화' 대신 '국내 피드 9건 복구'로","w":"본문이 8월 2일 기준 그대로, 46일","scope":"team","mac":false,"done":false,"d":null},{"id":"b7","l":"side","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"HEALIN 인계 조건 3줄","n":"미커밋 20건 커밋 · CLAUDE.md를 헬스 내용으로 교체 · 비개발자 가이드. 원격 저장소가 없어 GitHub에 빈 저장소부터","w":"현 상태로 넘기면 비개발자는 첫날부터 막힘","scope":"solo","mac":false,"done":false,"d":null},{"id":"b8","l":"ops","o":"kyu","k":"once","s":"대기","h":"week","p":3,"t":"3트랙 개편 배치 확정","n":"매거진 운영 · 대기획 · 영상 제작. 충원이 정해졌으니 오늘이 닫기 좋은 날","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"b9","l":"rev","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"부수입 경로 택일 또는 중단","n":"저부담이 최우선이면 봇 제작 외주가 먼저 걸러짐","w":"캐러셀 보너스가 같은 자리를 채움 — 접는 쪽을 권함","scope":"solo","mac":false,"done":false,"d":null},{"id":"b10","l":"mag","o":"kyu","k":"once","s":"대기","h":"week","p":2,"t":"계정 설정 6개 점검","n":"PLOT 계정 + 개인 계정. 10분","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c2","l":"mag","o":"kyu","k":"once","s":"대기","h":"month","p":1,"t":"SPOTLIGHT 수집 체계 구축","n":"sources.json에 해외 매체 추가. 국내 소스 복구와 같은 작업에서 처리","w":"같은 파일을 여는 일","scope":"team","mac":false,"done":false,"d":null},{"id":"c3","l":"mag","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"THIS WEEK 자동 수집","n":"feeds.md 인디스트릿 블록에 공연장별 일정 40건이 이미 들어옴. 웹앱 캘린더와 같은 파이프라인","w":"두 번 만들지 않기","scope":"team","mac":false,"done":false,"d":null},{"id":"c5","l":"tech","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"봇 상시 서버 이관 판정","n":"스튜디오 유휴 데스크탑(GTX 1080) 또는 Synology DS925+. 실측 후 안 되면 Mac mini 안건화","w":"어도비 슬롯 2개가 차 있어 스튜디오 PC에 AE 불가 — AE 없는 경로부터","scope":"team","mac":false,"done":false,"d":null},{"id":"c6","l":"prog","o":"kyu","k":"once","s":"대기","h":"month","p":1,"t":"SESSION 파일럿 제작","n":"세트 규격·인터뷰 방식·회차 공수를 이 편에서 확정. 서브 PD가 전 과정 동행","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c7","l":"prog","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"UNHEARD 파일럿 제작","n":"숏폼 우선. 거리 반응 클립이 본체, 롱폼은 사후에 묶음","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c8","l":"prog","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"청음실 파일럿 제작","n":"선 청취 후 질문 구성. 조명·톤은 기술팀과","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c9","l":"biz","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"견적 3구간표","n":"표준/프리미엄/디럭스 + 앵커링 + 가격 정당화 문장","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c10","l":"biz","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"장비 단가표","n":"자주 쓰는 바디·렌즈 3종의 기간별 할인율까지","w":"FX3급이 업체마다 4만~20만","scope":"team","mac":false,"done":false,"d":null},{"id":"c11","l":"biz","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"문의 응대 템플릿","n":"유사 영상 3개 · 목적과 쓰임새 · 최소–최대 예산을 되묻기","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c12","l":"gear","o":"kyu","k":"once","s":"진행","h":"month","p":2,"t":"4K 캠코더 선정","n":"200만 이하, 소니 E마운트 호환. 핸드헬드 장시간·오토포커스·내장 ND 우선","w":"카메라가 FS7·a7 IV 2대뿐인 게 자체 제작 최대 제약","scope":"team","mac":false,"done":false,"d":null},{"id":"c13","l":"rev","o":"kyu","k":"once","s":"막힘","h":"month","p":2,"t":"Etsy 신원확인 여권 업로드","n":"촬영 → Etsy ID 업로드(South Korea/Passport) → 리스팅 4종. 샵 MindeskCo","w":"57일째 리스팅 4종 전체를 혼자 막고 있음","scope":"solo","mac":false,"done":false,"d":null},{"id":"c14","l":"rev","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"Gumroad 3종 업로드","n":"해빗 $6(런치 $3) · 월아트 $9($5) · 번들 $22($16)","w":"'한도 리셋 후' 조건 — 리셋 여부 먼저 확인","scope":"solo","mac":false,"done":false,"d":null},{"id":"c15","l":"rev","o":"kyu","k":"once","s":"막힘","h":"month","p":2,"t":"서치콘솔 등록 + 사이트맵 제출","n":"QuickCalc 1,151개 SEO 페이지 색인 요청. 사이트 재심사 반복은 무의미","w":"sitemap.xml이 외부에서 텍스트로 안 읽힘 — 처리 상태부터","scope":"solo","mac":false,"done":false,"d":null},{"id":"c16","l":"rev","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"AdSense 지급 프로필 입력","n":"pub-2399943933357247에 이름·주소. Payoneer는 개설됨","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"c17","l":"ops","o":"kyu","k":"once","s":"대기","h":"month","p":2,"t":"브랜드·보이스·비즈니스 가이드 3종","n":"모든 AI 작업의 첫 입력으로 고정. 캡션 델타 결과가 보이스로","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"c18","l":"ops","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"예찬 입대 3값 확인","n":"입대일·신병교육 기간 / 자대 폰 사용 지침 / 겸직·영리행위 규정","w":"외부 협업자 지원이 2개월이라 그 안에 큐까지 올리고 이후 주 3편으로 낮추는 설계가 현실적","scope":"team","mac":false,"done":false,"d":null},{"id":"c19","l":"mag","o":"kyu","k":"once","s":"대기","h":"month","p":3,"t":"나무위키류 인용 규칙","n":"사실만 취하고 문장은 새로 쓰기. 봇 폼 출처 칸 운용에 반영","w":"CC BY-NC-SA 계열 — 보너스 수익이 붙으면 영리 이용 해석 여지","scope":"team","mac":false,"done":false,"d":null},{"id":"d5","l":"tech","o":"kyu","k":"track","s":"진행","h":"quarter","p":3,"t":"PLOT 웹앱 v1 — 캘린더 단독","n":"발매는 눌러서 재생, 공연은 눌러서 예매. 인디스트릿 수집기를 데이터 공급원으로","w":"소스가 다른 컴퓨터에 있음","scope":"team","mac":false,"done":false,"d":null},{"id":"d6","l":"ops","o":"kyu","k":"track","s":"대기","h":"quarter","p":3,"t":"상표 출원 PLOT","n":"로고 결합표장 1브랜드 × 41류. 약 25만원(우선심사 포함 40만원대)","w":"PLOT 표준문자 단독은 식별력 부족으로 거절 위험 — 결합표장으로. 감면 여부는 1544-8080","scope":"team","mac":false,"done":false,"d":null},{"id":"d7","l":"side","o":"kyu","k":"track","s":"대기","h":"quarter","p":3,"t":"1~2월 지원사업","n":"콘진원 글로벌 도약(연 최대 3억) · 언론재단 미디어 스타트업(3천만) · 청년창작자(연 900만) · 청년일자리도약","w":"장려금은 이번 충원과 맞물릴 수 있음 — 채용 형태 확정 전에 요건 확인","scope":"solo","mac":false,"done":false,"d":null},{"id":"d8","l":"side","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"뉴스공장 봇 ★외신 + 맥 스튜디오 배포","n":"구효정 PD PSD 참조. 산돌 기준값 복귀(105px/자간 -50/보정 0)","w":"전체 카드 작업의 33%","scope":"solo","mac":true,"done":false,"d":null},{"id":"d9","l":"mag","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"특집A 실물음반 역성장","n":"한터(실판매)와 써클(출고량) 분리 표기, 2026 상반기 +23.4% 반등 포함","w":"반증 없이 내보내면 틀린 기사","scope":"team","mac":false,"done":false,"d":null},{"id":"d10","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"파키 — 아이목소리 A/B/C 택1","n":"영상 최종본·효과음 v3·다국어 배포세트는 완료. 선택 하나가 배포 전체를 막고 있음","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"d11","l":"prog","o":"kyu","k":"track","s":"막힘","h":"quarter","p":4,"t":"To LP 로고 확정","n":"Claude Design 방향 A/B/C 슬롯이 공란","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d13","l":"gear","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"중고 장비 처분","n":"하이밸류 개별 판매 + 저밸류 번들. 목록은 정리됨","w":"FE 24-70 GM은 개인 보유로 제외","scope":"solo","mac":false,"done":false,"d":null},{"id":"d14","l":"gear","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"스튜디오 대관 운영 개선","n":"시리즈 촬영 세트로 상시 고정할지와 맞물림","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d15","l":"tech","o":"kyu","k":"track","s":"막힘","h":"quarter","p":3,"t":"Meta 앱 생성 차단 해제 확인","n":"HEALIN·PLOT 계정군과 개인 매거진(SENE 다국어·푸드·액팅)이 전부 여기 묶여 있음","w":"풀리는지 모르는 채로 계획이 서 있음","scope":"team","mac":false,"done":false,"d":null},{"id":"d16","l":"rev","o":"kyu","k":"track","s":"동결","h":"someday","p":5,"t":"Pinterest 핀 재개","n":"쿨다운 해제 확인 후 라이브 6사이트에 하루 3~5개","w":"해제 시점 미확인","scope":"solo","mac":false,"done":false,"d":null},{"id":"e1","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":1,"t":"캐러셀 주 5편","n":"바닥 77만을 깔면 히트 한 편으로 100만 돌파. 히트 0인 달의 보험","w":"월 합계의 절반 이상을 히트 서너 편이 만듦","scope":"team","mac":false,"last":null,"d":null},{"id":"e2","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"오늘의 노래","n":"songs.json 순번, 161곡 라이브러리","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"e3","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"신보 카드","n":"평론은 규효, 리서치는 Claude","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"e4","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"이슈·특집 비정기","n":"도달 엔진 — 상한 없음","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"e5","l":"mag","o":"kyu","k":"recur","s":"상시","h":"now","p":3,"t":"예능 컷 숏폼","n":"유입 엔진은 맞음. 비중만 축소","w":"방송 IP 릴로 오리지널리티 경고 1회. 한 번 더면 성장 구간이 끝남","scope":"team","mac":false,"last":null,"d":null},{"id":"e6","l":"side","o":"kyu","k":"recur","s":"상시","h":"now","p":4,"t":"SENE 다국어 QA 검수","n":"로케일별 오역·고유명사·출처","w":"","scope":"solo","mac":false,"last":null,"d":null},{"id":"e7","l":"ops","o":"kyu","k":"recur","s":"상시","h":"now","p":2,"t":"리빙 문서 3종 갱신","n":"액션아이템·의사결정로그·회의록. 완료 액션은 1주 후 제거","w":"","scope":"team","mac":false,"last":null,"d":null},{"id":"f1","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"SENE 다국어 계정","n":"Meta 차단 해제 전 착수 불가","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"f2","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"푸드 매거진 PLATE/PROOF","n":"환전 루프가 서기 전 브랜드 추가는 조기 다각화","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"f3","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"액팅·씨어터 매거진","n":"","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"f4","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"해외 대상 한국문화 매거진","n":"브랜드명 미확정. 기획 산출물 보존","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"f5","l":"frozen","o":"ext","k":"track","s":"동결","h":"someday","p":9,"t":"HEALIN 독립 운영 이관","n":"예찬 지인이 담당. 인계 조건 3줄이 선행","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"f7","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"Street Show","n":"기획안·EP.01 대본까지 완료 상태로 보존","w":"되살릴 때 비용이 낮은 편","scope":"solo","mac":false,"done":false,"d":null},{"id":"f8","l":"frozen","o":"tbd","k":"track","s":"동결","h":"someday","p":9,"t":"다이어리 앱","n":"기획 v0.2 + HTML 프로토타입","w":"","scope":"solo","mac":false,"done":false,"d":null},{"id":"f9","l":"biz","o":"kyu","k":"track","s":"동결","h":"someday","p":5,"t":"POV 라인","n":"48일 무응답 — 무산으로 정리 권함","w":"Gmail 복구 후 from:jay@povmusic.kr 확인 먼저","scope":"team","mac":false,"done":false,"d":null},{"id":"f10","l":"biz","o":"kyu","k":"track","s":"대기","h":"quarter","p":4,"t":"BANA 라인","n":"콘텐츠 먼저 발행하고 링크 공유","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f11","l":"biz","o":"kyu","k":"track","s":"확인필요","h":"week","p":3,"t":"강원 RED FRYS 회신","n":"제안서 납품 완료. 회신 여부 확인","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"f12","l":"biz","o":"kyu","k":"track","s":"대기","h":"someday","p":5,"t":"페스티벌 시티 후속 기업","n":"하림·미래에셋 납품 완료. 다음 대상 미정","w":"","scope":"team","mac":false,"done":false,"d":null},{"id":"d6b","l":"frozen","o":"kyu","k":"track","s":"동결","h":"someday","p":3,"t":"상표 출원 SENE — 보류","d":null,"n":"PLOT 먼저 내고 SENE은 방향이 정해진 뒤. 출원인을 개인으로 할지 회사로 할지가 같이 정해진다","w":"보류하는 동안 선출원 위험이 있다 — 누가 먼저 내면 되돌리기 어렵다","scope":"solo","mac":false}],"series":[],"stages":["섭외","일정","촬영","편집","발행"]}</script>
+<script id="data" type="application/json">{"asof":"2026-09-17","scanAt":"2026-09-17 08:06 KST","lanes":[{"id":"mag","n":"매거진"},{"id":"prog","n":"프로그램"},{"id":"tech","n":"기술·봇"},{"id":"biz","n":"외주·관계"},{"id":"rev","n":"수익화"},{"id":"ops","n":"운영·문서"},{"id":"gear","n":"장비·공간"},{"id":"side","n":"외부·행정"},{"id":"frozen","n":"동결"}],"alerts":[],"rhythm":[{"t":"SENE 경쟁사 엔진","time":"06:00","days":[1,4],"kind":"broken","note":"launchd 미설치","sc":"solo"}],"items":[{"id":"a1","l":"biz","k":"once","s":"진행","d":null,"h":"now","p":2,"t":"서울아츠어워즈 종편 마무리","n":"가편 컨펌 완료 · 9/17 종편 v1 렌더(6분 07초). 이후는 규효가 직접 처리","w":null,"scope":"team","mac":true,"done":false,"team":"기획","must":"kyu","by":null},{"id":"a2","l":"prog","k":"once","s":"막힘","d":"2026-09-14","h":"now","p":1,"t":"파일럿 컨택 1차 발송","n":"SESSION부터 2~3명만 채워 먼저. plotmusiclive@gmail.com, 권규효 명의","w":"밴드 편성 필요한 팀은 이번 차수 제외","scope":"team","mac":false,"done":false,"team":"기획","must":"kyu","by":null},{"id":"a3","l":"ops","k":"once","s":"진행","d":"2026-09-17","h":"now","p":1,"t":"미결 3건 닫기 — 회의 소집","n":"파일럿 컨택 1차 대상 · UNHEARD 진행자·촬영일·편집분담 · HEALIN 인계 조건","w":"주간회의를 접었으므로 이 셋은 스스로 날을 잡아야 닫힘","scope":"team","mac":false,"done":false,"team":"공통","must":"kyu","by":null},{"id":"a4","l":"ops","k":"once","s":"막힘","d":"2026-09-17","h":"now","p":1,"t":"역할 경계 확정","n":"발행 운영 담당자 지정 + 서브 PD 위임 범위를 1·2·3편 단계로","w":"충원 첫 주에 안 정하면 되돌리기 어려움","scope":"team","mac":false,"done":false,"team":"공통","must":"kyu","by":null},{"id":"a5","l":"frozen","k":"track","s":"동결","d":null,"h":"someday","p":3,"t":"SENE 경쟁사 엔진 수동 실행 + launchd 등록","n":"SENE 보류 결정(9/18)으로 launchd 등록도 함께 멈춤. 되살릴 때 run_competitor_pipeline.sh 1회 + 월·목 06시","w":null,"scope":"solo","mac":true,"done":false,"team":null,"must":null,"by":null},{"id":"a6","l":"tech","k":"once","s":"막힘","h":"now","p":1,"t":"PLOT 앱 시크릿 교체","n":"Meta 대시보드에서 재발급 → .env 교체 → 봇 재기동 → 노출된 대화 삭제","w":"PLOT·To LP·헬스·에디토리얼 4계정이 묶여 있고 Meta 앱 신규 생성이 차단 상태","scope":"team","mac":true,"done":false,"d":null,"team":"기술","must":"kyu","by":null},{"id":"a8","l":"ops","k":"once","s":"막힘","h":"now","p":1,"t":"Gmail 커넥터 재인증","n":"설정 → 커넥터 → Gmail 재인증 + 예약 작업의 Gmail 토글. 둘 다 해야 함","w":"하나만 하면 열 번 반복된 결과가 또 나옴","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null},{"id":"b7","l":"side","k":"once","s":"대기","h":"week","p":2,"t":"HEALIN 인계 조건 3줄","n":"미커밋 20건 커밋 · CLAUDE.md를 헬스 내용으로 교체 · 비개발자 가이드. 원격 저장소가 없어 GitHub에 빈 저장소부터","w":"현 상태로 넘기면 비개발자는 첫날부터 막힘","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"b9","l":"rev","k":"once","s":"대기","h":"week","p":2,"t":"부수입 경로 택일 또는 중단","n":"저부담이 최우선이면 봇 제작 외주가 먼저 걸러짐","w":"캐러셀 보너스가 같은 자리를 채움 — 접는 쪽을 권함","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"b10","l":"mag","k":"once","s":"대기","h":"week","p":2,"t":"계정 설정 6개 점검","n":"PLOT 계정 + 개인 계정. 10분","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"c5","l":"tech","k":"once","s":"대기","h":"month","p":2,"t":"봇 상시 서버 이관 판정","n":"스튜디오 유휴 데스크탑(GTX 1080) 또는 Synology DS925+. 실측 후 안 되면 Mac mini 안건화","w":"어도비 슬롯 2개가 차 있어 스튜디오 PC에 AE 불가 — AE 없는 경로부터","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null},{"id":"c9","l":"biz","k":"once","s":"대기","h":"month","p":2,"t":"견적 3구간표","n":"표준/프리미엄/디럭스 + 앵커링 + 가격 정당화 문장","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"c13","l":"rev","k":"once","s":"막힘","h":"month","p":2,"t":"Etsy 신원확인 여권 업로드","n":"촬영 → Etsy ID 업로드(South Korea/Passport) → 리스팅 4종. 샵 MindeskCo","w":"57일째 리스팅 4종 전체를 혼자 막고 있음","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"c14","l":"rev","k":"once","s":"대기","h":"month","p":2,"t":"Gumroad 3종 업로드","n":"해빗 $6(런치 $3) · 월아트 $9($5) · 번들 $22($16)","w":"'한도 리셋 후' 조건 — 리셋 여부 먼저 확인","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"c15","l":"rev","k":"once","s":"막힘","h":"month","p":2,"t":"서치콘솔 등록 + 사이트맵 제출","n":"QuickCalc 1,151개 SEO 페이지 색인 요청. 사이트 재심사 반복은 무의미","w":"sitemap.xml이 외부에서 텍스트로 안 읽힘 — 처리 상태부터","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"c16","l":"rev","k":"once","s":"대기","h":"month","p":3,"t":"AdSense 지급 프로필 입력","n":"pub-2399943933357247에 이름·주소. Payoneer는 개설됨","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"c18","l":"ops","k":"once","s":"대기","h":"month","p":3,"t":"예찬 입대 3값 확인","n":"입대일·신병교육 기간 / 자대 폰 사용 지침 / 겸직·영리행위 규정","w":"외부 협업자 지원이 2개월이라 그 안에 큐까지 올리고 이후 주 3편으로 낮추는 설계가 현실적","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null},{"id":"d6","l":"ops","k":"track","s":"대기","h":"quarter","p":3,"t":"상표 출원 PLOT","n":"로고 결합표장 1브랜드 × 41류. 약 25만원(우선심사 포함 40만원대)","w":"PLOT 표준문자 단독은 식별력 부족으로 거절 위험 — 결합표장으로. 감면 여부는 1544-8080","scope":"team","mac":false,"done":false,"d":null,"team":"공통","must":"kyu","by":null},{"id":"d7","l":"side","k":"track","s":"대기","h":"quarter","p":3,"t":"1~2월 지원사업","n":"콘진원 글로벌 도약(연 최대 3억) · 언론재단 미디어 스타트업(3천만) · 청년창작자(연 900만) · 청년일자리도약","w":"장려금은 이번 충원과 맞물릴 수 있음 — 채용 형태 확정 전에 요건 확인","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"d8","l":"side","k":"track","s":"대기","h":"quarter","p":4,"t":"뉴스공장 봇 ★외신 + 맥 스튜디오 배포","n":"구효정 PD PSD 참조. 산돌 기준값 복귀(105px/자간 -50/보정 0)","w":"전체 카드 작업의 33%","scope":"solo","mac":true,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"d10","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"파키 — 아이목소리 A/B/C 택1","n":"영상 최종본·효과음 v3·다국어 배포세트는 완료. 선택 하나가 배포 전체를 막고 있음","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"d13","l":"gear","k":"track","s":"대기","h":"quarter","p":4,"t":"중고 장비 처분","n":"하이밸류 개별 판매 + 저밸류 번들. 목록은 정리됨","w":"FE 24-70 GM은 개인 보유로 제외","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"d15","l":"tech","k":"track","s":"막힘","h":"quarter","p":3,"t":"Meta 앱 생성 차단 해제 확인","n":"HEALIN·PLOT 계정군과 개인 매거진(SENE 다국어·푸드·액팅)이 전부 여기 묶여 있음","w":"풀리는지 모르는 채로 계획이 서 있음","scope":"team","mac":false,"done":false,"d":null,"team":"기술","must":"kyu","by":null},{"id":"d16","l":"rev","k":"track","s":"동결","h":"someday","p":5,"t":"Pinterest 핀 재개","n":"쿨다운 해제 확인 후 라이브 6사이트에 하루 3~5개","w":"해제 시점 미확인","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"e6","l":"frozen","k":"track","s":"동결","h":"someday","p":3,"t":"SENE 다국어 QA 검수","n":"SENE 보류 결정(9/18). 계정이 동결인데 검수만 돌던 모순도 여기서 정리됨","w":"","scope":"solo","mac":false,"last":null,"d":null,"team":null,"must":null,"by":null},{"id":"f1","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"SENE 다국어 계정","n":"Meta 차단 해제 전 착수 불가","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"f2","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"푸드 매거진 PLATE/PROOF","n":"환전 루프가 서기 전 브랜드 추가는 조기 다각화","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"f3","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"액팅·씨어터 매거진","n":"","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"f4","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"해외 대상 한국문화 매거진","n":"브랜드명 미확정. 기획 산출물 보존","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"f5","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"HEALIN 독립 운영 이관","n":"예찬 지인이 담당. 인계 조건 3줄이 선행","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"f7","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"Street Show","n":"기획안·EP.01 대본까지 완료 상태로 보존","w":"되살릴 때 비용이 낮은 편","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"f8","l":"frozen","k":"track","s":"동결","h":"someday","p":9,"t":"다이어리 앱","n":"기획 v0.2 + HTML 프로토타입","w":"","scope":"solo","mac":false,"done":false,"d":null,"team":null,"must":null,"by":null},{"id":"f10","l":"biz","k":"track","s":"대기","h":"quarter","p":4,"t":"BANA 라인","n":"콘텐츠 먼저 발행하고 링크 공유","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"f11","l":"biz","k":"track","s":"확인필요","h":"week","p":3,"t":"강원 RED FRYS 회신","n":"제안서 납품 완료. 회신 여부 확인","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"f12","l":"biz","k":"track","s":"대기","h":"someday","p":5,"t":"페스티벌 시티 후속 기업","n":"하림·미래에셋 납품 완료. 다음 대상 미정","w":"","scope":"team","mac":false,"done":false,"d":null,"team":"기획","must":"kyu","by":null},{"id":"d6b","l":"frozen","k":"track","s":"동결","h":"someday","p":3,"t":"상표 출원 SENE — 보류","d":null,"n":"PLOT 먼저 내고 SENE은 방향이 정해진 뒤. 출원인을 개인으로 할지 회사로 할지가 같이 정해진다","w":"보류하는 동안 선출원 위험이 있다 — 누가 먼저 내면 되돌리기 어렵다","scope":"solo","mac":false,"team":null,"must":null,"by":null}],"series":[],"stages":["섭외","일정","촬영","편집","발행"],"people":{"kyu":"규효","sub":"서브 PD","techj":"기술 합류","yun":"이윤석","jun":"고준석","ext":"외부"},"teams":["기획","기술","공통"]}</script>
 <script>/* 플루토 · 공통 런타임
  * ─────────────────────────────────────────────────────────────
  * 팀 앱과 개인 앱이 이 파일을 같이 쓴다. 각 앱은 화면 목록과
@@ -497,6 +512,7 @@ var rowsOnScreen = [];
 var cmd = { on:false, q:"", i:0, rows:[] };
 var toast = null, toastT = null;
 var help = false;
+var pick = null;          // 집기 시트 {제목, 콜백}
 
 /* ── 날짜 ─────────────────────────────────────────── */
 function pad(n){ return String(n).padStart(2,"0"); }
@@ -569,7 +585,24 @@ var HZ = ["now","week","month","quarter","someday"];
 P.HORIZ = [["now","지금"],["week","이번 주"],["month","이번 달"],["quarter","분기"],["someday","언젠가"]];
 P.STATES = ["대기","진행","막힘","확인필요","상시","동결"];
 
-P.own = function(o){ return (DATA.owners && DATA.owners[o]) || o; };
+/* 일은 사람에게 배정하지 않는다. 팀과 성질로 분류해 두고 각자 집어 간다.
+   by = 집은 사람(비어 있으면 미배정), must = 구조적으로 그 사람만 가능한 것. */
+P.who = function(x){ return (DATA.people && DATA.people[x]) || x; };
+/* "기술 합류 가 집었습니다" 같은 말이 나오지 않게 받침을 본다.
+   한글이 아닌 끝글자(PD 등)는 읽는 소리를 따라 받침 없는 쪽으로 둔다. */
+function josa(name, withJong, without){
+  var c = String(name||"").trim().slice(-1).charCodeAt(0);
+  var hangul = c >= 0xAC00 && c <= 0xD7A3;
+  return name + (hangul && (c - 0xAC00) % 28 ? withJong : without);
+}
+P.josa = josa;
+P.claim = function(it, whoId){
+  var was = it.by || null;
+  P.patch(it.id, {by: whoId}, whoId ? ("집음 — "+P.who(whoId)) : "놓음");
+  P.toast(whoId ? josa(P.who(whoId), "이", "가")+" 집었습니다" : "놓았습니다", "되돌리기", function(){
+    P.patch(it.id, {by: was}, "되돌림", true); P.render(); });
+  P.render();
+};
 P.lane = function(l){ var a=DATA.lanes,i; for(i=0;i<a.length;i++) if(a[i].id===l) return a[i].n; return l; };
 P.data = function(){ return DATA; };
 
@@ -611,8 +644,8 @@ P.cycle = function(it){
 };
 P.add = function(title, extra){
   S.seq += 1;
-  var it = { id:"u"+S.seq, l:CFG.defaults.l, o:CFG.defaults.o, k:"once", s:"대기",
-             h:"now", p:3, t:title, n:null, w:null, d:null,
+  var it = { id:"u"+S.seq, l:CFG.defaults.l, by:null, must:null, team:CFG.defaults.team,
+             k:"once", s:"대기", h:"now", p:3, t:title, n:null, w:null, d:null,
              scope:CFG.scope, mac:false, _n:true };
   if (extra) for (var k in extra) it[k]=extra[k];
   S.add.push(it); dirty(); logit(it.id,"새로 씀"); save();
@@ -638,7 +671,14 @@ P.row = function(it, opt){
   var on = P.on(it), late = P.late(it), tags = "";
   if (it.s) tags += '<button class="pill s-'+esc(it.s)+'" data-act="cycle" data-arg="'
     + esc(it.id)+'" title="상태 바꾸기 — s">'+esc(it.s)+"</button>";
-  if (!opt.noOwner) tags += '<span class="who">'+esc(P.own(it.o))+"</span>";
+  if (!opt.hideWho){
+    if (it.by) tags += '<button class="who has" data-act="unclaim" data-arg="'+esc(it.id)
+      + '" title="놓기">'+esc(P.who(it.by))+"</button>";
+    else if (it.must) tags += '<span class="who only">'+esc(P.who(it.must))+"만 가능</span>";
+    else tags += '<button class="who open" data-act="pick" data-arg="'+esc(it.id)
+      + '">미배정</button>';
+  }
+  if (opt.showTeam && it.team) tags += '<span class="pill q">'+esc(it.team)+"</span>";
   if (opt.showScope && it.scope==="solo") tags += '<span class="pill solo">개인</span>';
   if (it.mac) tags += '<span class="pill mac">맥</span>';
   if (it.d) tags += '<span class="pill '+(late?"late":"q")+'">'+esc(it.d.slice(5))
@@ -709,7 +749,8 @@ function paneHTML(){
         + '" data-val="'+esc(o[0])+'" aria-pressed="'+(cur===o[0])+'">'+esc(o[1])+"</button>";
     }).join("")+"</div>";
   }
-  var owners = Object.keys(DATA.owners||{}).map(function(k){ return [k, DATA.owners[k]]; });
+  var people = [["","미배정"]].concat(
+    Object.keys(DATA.people||{}).map(function(k){ return [k, DATA.people[k]]; }));
   var lanes = DATA.lanes.map(function(l){ return [l.id, l.n]; });
   return '<aside class="pane"><div class="paneh"><span class="lbl">항목</span>'
     + (it._n?'<span class="pill edit">새로</span>':(it._e?'<span class="pill edit">고침</span>':""))
@@ -717,7 +758,13 @@ function paneHTML(){
     + '<div class="paneb">'
     + '<textarea class="ttlin" id="f_t" rows="1" aria-label="제목">'+esc(it.t)+"</textarea>"
     + '<div class="fgrid">'
-    + '<span class="k">담당</span>'+segs("o",owners,it.o)
+    + '<span class="k">집은 사람</span>'+segs("by",people,it.by||"")
+    + (it.scope==="team"
+        ? '<span class="k">팀</span>'
+          + segs("team",(DATA.teams||[]).map(function(t){return [t,t];}),it.team)
+          + '<span class="k">넘길 수 있나</span>'
+          + segs("must",[["","넘길 수 있음"],["kyu","규효만 가능"]], it.must||"")
+        : "")
     + '<span class="k">상태</span>'+segs("s",P.STATES.map(function(x){return [x,x];}),it.s,"s")
     + '<span class="k">기한</span>'+segs("h",P.HORIZ,it.h)
     + '<span class="k">레인</span>'+segs("l",lanes,it.l)
@@ -759,10 +806,10 @@ function cmdRows(){
   }
   var lq = q.toLowerCase();
   P.items().filter(function(i){
-    return (i.t+" "+(i.n||"")+" "+P.lane(i.l)+" "+P.own(i.o)+" "+(i.s||""))
+    return (i.t+" "+(i.n||"")+" "+P.lane(i.l)+" "+(i.team||"")+" "+P.who(i.by||"")+" "+(i.s||""))
       .toLowerCase().indexOf(lq) >= 0;
   }).sort(P.urgency).slice(0,9).forEach(function(i){
-    out.push({ g:"항목", ic:"·", t:i.t, m:P.lane(i.l)+" · "+P.own(i.o),
+    out.push({ g:"항목", ic:"·", t:i.t, m:P.lane(i.l)+" · "+(i.by?P.who(i.by):"미배정"),
                go:function(){ P.open(i.id); } });
   });
   out.push({ g:"만들기", ic:"+", t:'"'+q+'" 새 항목으로', m:"Enter",
@@ -795,6 +842,26 @@ var KEYS = [
   ["x","완료 표시"], ["s","상태 돌리기"], ["e","상세에서 고치기"],
   ["1–9","화면 이동"], ["esc","닫기"], ["?","이 도움말"]
 ];
+/* 무엇을 집든 같은 시트를 쓴다 — 항목이든 회차든 고르는 동작은 하나여야 한다. */
+P.pickFor = function(kind, id, fn, label){
+  pick = { kind:kind, id:id, fn:fn, label:label||"" };
+  P.render();
+};
+function pickHTML(){
+  if (!pick) return "";
+  return '<div class="scrim" data-act="pick-close"></div><div class="cmdbox">'
+    + '<div class="cmdin"><span>\u25CD</span><b style="font-size:14px">누가 집나</b></div>'
+    + '<div class="cmdlist" style="padding:6px 0">'
+    + '<p class="cgrp">'+esc(pick.kind)+" \u00B7 "+esc(pick.label)+"</p>"
+    + Object.keys(DATA.people||{}).map(function(k){
+        return '<button class="crow" data-act="pick-set" data-val="'+esc(k)+'">'
+          + '<span class="cic">\u00B7</span>'
+          + '<span class="ctx">'+esc(DATA.people[k])+"</span></button>"; }).join("")
+    + '<button class="crow" data-act="pick-set" data-val=""><span class="cic">\u00D7</span>'
+    + '<span class="ctx">미배정으로 두기</span></button>'
+    + '</div><div class="cmdf"><span><kbd>esc</kbd> 닫기</span></div></div>';
+}
+
 function helpHTML(){
   if (!help) return "";
   return '<div class="scrim" data-act="helpclose"></div><div class="cmdbox">'
@@ -857,7 +924,7 @@ P.render = function(){
           + (c?'<span class="ct">'+c+"</span>":"")+"</button>"; }).join("")
     + "</nav>"
     + '<div id="toast"></div>'
-    + cmdHTML() + helpHTML();
+    + cmdHTML() + pickHTML() + helpHTML();
 
   paintToast();
   if (cmd.on){
@@ -890,9 +957,20 @@ function act(name, arg, val){
     case "reset": delete S.patch[arg]; dirty(); logit(arg,"원래대로"); save();
       P.toast("원래대로 돌렸습니다"); P.render(); break;
     case "drop": P.drop(arg); P.close(); break;
+    case "pick":
+      var pi = P.byId(arg);
+      if (pi) P.pickFor("항목", arg, function(w){ P.claim(pi, w); }, pi.t);
+      break;
+    case "pick-close": pick = null; P.render(); break;
+    case "pick-set":
+      var fn = pick && pick.fn; pick = null;
+      if (fn) fn(val || null); else P.render();
+      break;
+    case "unclaim": var uit = P.byId(arg); if (uit) P.claim(uit, null); break;
     case "set":
       var v = val;
-      if (v==="true") v=true; else if (v==="false") v=false;
+      if ((arg==="by" || arg==="must") && v==="") v=null;
+      else if (v==="true") v=true; else if (v==="false") v=false;
       else if (arg==="p") v=+v;
       var o={}; o[arg]=v; P.patch(sel,o,arg+" → "+val); P.render(); break;
     case "undo": if(toast&&toast.fn){ var f=toast.fn; toast=null; clearTimeout(toastT); f(); } break;
@@ -924,6 +1002,7 @@ document.addEventListener("keydown", function(e){
     e.preventDefault(); cmd.on=true; cmd.i=0; P.render(); return; }
   if (e.key==="Escape"){
     if (cmd.on){ cmd.on=false; P.render(); }
+    else if (pick){ pick=null; P.render(); }
     else if (help){ help=false; P.render(); }
     else if (sel){ P.close(); }
     return;
@@ -989,7 +1068,10 @@ var D = null;
 function E(s){ return P.esc(s); }
 function live(){ return P.live(); }
 function solo(){ return live().filter(function(i){ return i.scope==="solo"; }); }
-function held(){ return live().filter(function(i){ return i.scope==="team"; }); }
+/* 팀 판에서 내 몫 = 내가 집은 것 + 구조적으로 나만 가능한 것.
+   미배정은 팀 판에 남겨 둔다 — 여기로 끌어오면 다시 혼자 다 쥐는 그림이 된다. */
+function held(){ return live().filter(function(i){
+  return i.scope==="team" && (i.by==="kyu" || i.must==="kyu"); }); }
 
 /* ── 오늘 ─────────────────────────────────────────── */
 function drawToday(){
@@ -1004,7 +1086,7 @@ function drawToday(){
   var body = P.stats([
     { k:"개인", v:s.filter(function(i){return !P.on(i);}).length, n:"남이 몰라도 되는 일" },
     { k:"팀에서 내 몫", v:h.filter(function(i){return !P.on(i);}).length,
-      n:"남이 기다리는 일", act:"go", arg:"team" },
+      n:"내가 집었거나 나만 가능한 일", act:"go", arg:"team" },
     { k:"지남", v:late.length, tone:late.length?"hot":"", n:late.length?"가장 오래된 건 "
       +P.days(P.T,late[0].d)+"일":"넘긴 것 없음" },
     { k:"맥 앞에서만", v:mac.length, n:"이 기기 앞에 앉는 날", act:"go", arg:"mac" }
@@ -1086,8 +1168,9 @@ function drawTeam(){
   var g = { now:[], week:[], month:[], quarter:[], someday:[] };
   h.forEach(function(i){ (g[i.h]||g.someday).push(i); });
   return P.HORIZ.map(function(x){ return P.sec(x[1],"", g[x[0]]); }).join("")
-    + '<p class="note"><b>여기 있는 건 남이 기다리는 일입니다.</b> 팀 앱에도 똑같이 떠 있고 '
-    + '체크는 서로 안 이어집니다 — 공용 저장소가 붙기 전까지는 한쪽에서만 누르세요.</p>';
+    + '<p class="note"><b>미배정은 여기 안 옵니다.</b> 팀 판에 남겨 둬야 누군가 집습니다 — '
+    + '끌어오는 순간 다시 혼자 다 쥐는 그림이 됩니다. 체크는 두 사이트가 서로 안 이어지니 '
+    + '공용 저장소 전까지는 한쪽에서만 누르세요.</p>';
 }
 
 /* ── 기록 ─────────────────────────────────────────── */
@@ -1120,7 +1203,7 @@ var VIEWS = [
 P.boot({
   id:"desk", key:"pluto.desk.v2", glyph:"K", name:"규효 데스크", kind:"solo",
   views:VIEWS, scope:"solo", canScope:true,
-  defaults:{ l:"side", o:"kyu" },
+  defaults:{ l:"side", team:null },   // 개인 판에는 팀 구분이 없다
   foot:function(){
     return "기준 "+P.data().asof
       + "\n혼자 보는 판입니다. 주소를 아는 사람만 열립니다 — 잠금은 아닙니다.";
