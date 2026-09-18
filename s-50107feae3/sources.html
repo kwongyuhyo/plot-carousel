@@ -160,6 +160,10 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   // 폰에서 고른 게 맥에서 안 보인다 — 진짜 기록은 봇으로 보낸다.
   var marks = {};          // id → 'pick' | 'skip'
   var angles = {};         // id → 문자열
+  var forms  = {};         // id → 'shorts' | 'card' | 'both'
+  // 초안 버튼을 다시 누르면 다음 형식으로 돈다 — 칸을 더 만들지 않는다.
+  var FORM_NEXT  = { shorts: 'card', card: 'both', both: null };
+  var FORM_LABEL = { shorts: '숏폼', card: '캐러셀', both: '둘다' };
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -212,7 +216,8 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
             '<button class="btn' + (m === 'pick' ? ' on' : '') + '" data-act="pick">' +
               (m === 'pick' ? '✓ 고름' : '고르기') + '</button>' +
             '<button class="btn' + (m === 'drafted' ? ' draft' : '') + '" data-act="drafted">' +
-              (m === 'drafted' ? '✎ 초안' : '초안') + '</button>' +
+              (m === 'drafted' ? '✎ ' + FORM_LABEL[forms[c.id] || 'shorts'] : '초안') +
+            '</button>' +
             '<button class="btn' + (m === 'skip' ? ' off' : '') + '" data-act="skip">' +
               (m === 'skip' ? '건너뜀' : '건너뛰기') + '</button>' +
             '<a class="btn link" href="' + esc(c.url) + '" target="_blank" rel="noopener">원문 →</a>' +
@@ -274,8 +279,16 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     if (!host) return;
     var id = host.getAttribute('data-id');
     var act = btn.getAttribute('data-act');
-    marks[id] = marks[id] === act ? undefined : act;
-    if (marks[id] === undefined) delete marks[id];
+    if (act === 'drafted') {
+      // 처음 누르면 숏폼. 누를수록 캐러셀 → 둘다 → 해제.
+      var nxt = marks[id] === 'drafted' ? FORM_NEXT[forms[id] || 'shorts'] : 'shorts';
+      if (nxt === null) { delete marks[id]; delete forms[id]; }
+      else { marks[id] = 'drafted'; forms[id] = nxt; }
+    } else {
+      marks[id] = marks[id] === act ? undefined : act;
+      if (marks[id] === undefined) delete marks[id];
+      delete forms[id];
+    }
     renderCand(); refreshBar();
   }
 
@@ -298,6 +311,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       var c = byId[id] || {};
       var o = { v: 1, action: marks[id], id: id, account: c.account || '?', at: now };
       if (angles[id]) o.angle = angles[id].slice(0, 200);
+      if (marks[id] === 'drafted') o.form = forms[id] || 'shorts';
       if (c.multiple != null) o.multiple = c.multiple;
       if (c.kind) o.kind = c.kind;
       if (c.genres) o.genres = c.genres;
