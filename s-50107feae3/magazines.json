@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-09-18 16:48 KST",
+  "generated_at": "2026-09-18 20:08 KST",
   "window": {
     "mature_hours": 24,
     "max_age_days": 60,
@@ -16,7 +16,7 @@
       ],
       "baseline": 914.6,
       "per_format": {
-        "post": 1035.4
+        "post": 1035.5
       },
       "n": 49,
       "pinned": 0,
@@ -28,14 +28,14 @@
       "genres": [
         "패션"
       ],
-      "baseline": 1341.6,
+      "baseline": 1072.6,
       "per_format": {
-        "reel": 4187.9,
-        "post": 902.0
+        "reel": 2635.6,
+        "post": 785.5
       },
-      "n": 37,
+      "n": 44,
       "pinned": 0,
-      "per_day": 33.4
+      "per_day": 35.8
     },
     "fstvl.life": {
       "followers": null,
@@ -58,13 +58,13 @@
         "패션",
         "해외"
       ],
-      "baseline": 577.2,
+      "baseline": 524.1,
       "per_format": {
-        "post": 618.8
+        "post": 553.5
       },
-      "n": 41,
+      "n": 47,
       "pinned": 0,
-      "per_day": 6.9
+      "per_day": 7.7
     },
     "hiptake_": {
       "followers": 22927,
@@ -72,14 +72,14 @@
       "genres": [
         "힙합"
       ],
-      "baseline": 1345.8,
+      "baseline": 1389.4,
       "per_format": {
-        "reel": 1729.4,
-        "post": 668.3
+        "reel": 1707.3,
+        "post": 824.9
       },
-      "n": 45,
+      "n": 48,
       "pinned": 2,
-      "per_day": 0.9
+      "per_day": 1.0
     },
     "indie.music.life": {
       "followers": null,
@@ -99,11 +99,11 @@
       "genres": [
         "힙합"
       ],
-      "baseline": 4035.9,
+      "baseline": 3883.8,
       "per_format": {
         "reel": 4840.0
       },
-      "n": 21,
+      "n": 22,
       "pinned": 0,
       "per_day": 1.7
     },
@@ -136,10 +136,13 @@
       "genres": [
         "해외"
       ],
-      "baseline": null,
-      "n": 7,
+      "baseline": 1569.5,
+      "per_format": {
+        "reel": 1569.5
+      },
+      "n": 8,
       "pinned": 0,
-      "reason": "표본 부족"
+      "per_day": 1.9
     },
     "wavemag.kr": {
       "followers": 88568,
@@ -148,10 +151,10 @@
         "해외",
         "카탈로그"
       ],
-      "baseline": 560.2,
+      "baseline": 560.4,
       "per_format": {
-        "reel": 766.4,
-        "post": 471.9
+        "reel": 766.9,
+        "post": 472.1
       },
       "n": 45,
       "pinned": 2,
@@ -167,15 +170,15 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdQcTqWztW8/",
       "timestamp": "2026-09-14T05:01:46+00:00",
-      "hours": 98.8,
+      "hours": 102.1,
       "likes": 46208,
       "comments": 685,
       "views": 2346554,
       "is_reel": true,
       "score": 48263,
-      "baseline": 1729.4,
+      "baseline": 1707.3,
       "baseline_kind": "reel",
-      "multiple": 27.91,
+      "multiple": 28.27,
       "velocity": null,
       "label": "music",
       "kind": "news",
@@ -196,7 +199,7 @@
       "covered": false,
       "picked_before": false,
       "caption": "\"어차피 나도 받은 돈이야\" 🙉\n\n최근 정규 10집 선공개곡 \"젊은날\"을 발표한 MC몽은 대학교 축제에 올랐습니다. 그가 오른 무대는 경기대 축제의 마지막 엔딩 타임. 히트곡 메들리로 10곡을 부른 뒤 유독 떼창을 잘하던 어느 학생에게 등록금을 쾌척했는데요.\n\n그는 얼마 전 틱톡 라이브에서 경기대학교 축제 엔딩 타임에 섭외된 것을 밝히며 기쁨을 드러내던 와중 '학생 한 명에게 한 학기 등록금을 주겠다'고 공약한 바 있습니다. 이번 일은 바로 그 공약을 이행한 것.\n\n그는 등록금을 학생에게 전달하며 '이 돈도 어차피 학교에서 받은 돈이니 꽂히는 애한테 주려고 한다'고 덧붙였습니다. 이로 미루어 보아 공연 섭외 페이의 일부를 자신의 눈에 든 학생에게 전달한 것으로 보입니다.",
-      "cluster": 129,
+      "cluster": 134,
       "rank": -10
     },
     {
@@ -207,15 +210,15 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdVRRzYTuGX/",
       "timestamp": "2026-09-16T02:32:20+00:00",
-      "hours": 53.3,
+      "hours": 56.6,
       "likes": 33510,
       "comments": 158,
       "views": 511986,
       "is_reel": true,
       "score": 33984,
-      "baseline": 1729.4,
+      "baseline": 1707.3,
       "baseline_kind": "reel",
-      "multiple": 19.65,
+      "multiple": 19.91,
       "velocity": null,
       "label": "music",
       "kind": "news",
@@ -241,7 +244,7 @@
       "covered": false,
       "picked_before": false,
       "caption": "\"KPOPIUM\" 😈\n\n에스파가 새롭게 발표한 [SYNK : COMPLaeXITY - 2026 Special Digital Single]. 카리나, 닝닝, 지젤, 윈터 개개인의 솔로곡을 한 곡 씩 모은 싱글입니다. 그중 지젤의 솔로곡 \"BYEB4HELLO\"가 특히 주목할만한데요. 지젤이 샤라웃했던 미국 언더 래퍼 Zayok이 작곡에, 플레이보이 카티의 레이블 오피움의 프로듀서들인 Lucian 과 Clayco가 편곡에 참여했기 때문.\n\nZayok의 경우 미국에서도 그리 인지도가 크지 않지만 지젤이 인스타그램에 그의 \"Still love still love still love\"를 배경음으로 삽입하며, Zayok 스스로도 놀랐던 일화가 있었죠. 소소하게 화제가 됐었던 지젤의 샤라웃이 결국 콜라보로 이어졌습니다.\n",
-      "cluster": 139,
+      "cluster": 144,
       "rank": -4
     },
     {
@@ -252,7 +255,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DcdE_YoCMaA/",
       "timestamp": "2026-08-25T07:17:52+00:00",
-      "hours": 576.5,
+      "hours": 579.8,
       "likes": 82792,
       "comments": 200,
       "views": 1058206,
@@ -277,7 +280,7 @@
       "covered": false,
       "picked_before": false,
       "caption": "“힙합보단 사랑, 사랑보단 돈이 아니야” 😘\n\n최근 많은 관심 속에 공개된 ‘래퍼여친구함’의 마지막 에피소드.\n\n에피소드 3의 여자 주인공은 인플루언서 위성희였는데요.\n\n그녀는 과거 썸을 탄 적이 있는 래퍼 노윤하와 JMIN 사이에서 고민하는 모습을 보이다가, 결국 최종 선택에서 JMIN을 선택하며 볼 뽀뽀를 하기도 했습니다.\n\n그동안 ‘래퍼여친구함’에서는 래퍼들이 사랑 대신 다이아 목걸이를 선택하며 화제가 되었던 만큼, JMIN 역시 같은 선택을 할지 관심이 모였는데요.\n\n그런데 예상 밖의 반전이 펼쳐졌습니다.\n\nJMIN은 다이아 목걸이를 그대로 모래사장에 던져버린 뒤, 위성희에게 볼 뽀뽀를 하며 사랑을 선택하는 모습을 보여줬습니다.\n\n시리즈의 마지막을 장식한 JMIN의 선택.\n\n여러분은 이 장면, 어떻게",
-      "cluster": 188,
+      "cluster": 194,
       "rank": 1
     },
     {
@@ -288,7 +291,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DbDdc3BCcuH/",
       "timestamp": "2026-07-21T11:59:49+00:00",
-      "hours": 1411.8,
+      "hours": 1415.1,
       "likes": 42827,
       "comments": 177,
       "views": 78849,
@@ -316,7 +319,7 @@
       "covered": false,
       "picked_before": false,
       "caption": "“점프스타일에서도 역시 빠른 조광일” 👀\n\n최근 EK가 세 번째 정규앨범 [Core]를 공개했습니다.\n\n총 10트랙으로 구성된 이번 앨범에는 의외의 피처링도 담겨 있었는데요.\n\n바로 쇼미더머니10 우승자 조광일이 ‘음지의 태양’에 참여한 것입니다.\n\n점프스타일 비트 위에서도 특유의 혀를 굴리듯 몰아치는 초고속 랩을 선보이며 강한 존재감을 드러냈는데요.\n\n다만 평소에도 호불호가 뚜렷했던 조광일의 랩 스타일인 만큼, 이번 피처링 역시 리스너들 사이에서는 “곡에 잘 어울린다”, “조금 과한 느낌이다” 등 다양한 반응이 이어지고 있습니다.\n\n여러분은 이 곡, 어떻게 들으셨나요?\n\n🎧 EK - 음지의 태양 (feat. 조광일)\n—\n#EK #조광일 #음지의태양 #Core #점프스타일",
-      "cluster": 182,
+      "cluster": 188,
       "rank": 2
     },
     {
@@ -327,7 +330,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdJAiSPidE7/",
       "timestamp": "2026-09-11T08:48:00+00:00",
-      "hours": 167.0,
+      "hours": 170.3,
       "likes": 85949,
       "comments": 193,
       "views": 946184,
@@ -349,7 +352,7 @@
       "covered": false,
       "picked_before": false,
       "caption": "“이거는 너가 아니면 못 하는 거야” 🥹\n\n최근 공개된 ‘양홍원의 육아일기’ 새 에피소드.\n\n이날 현주는 감정 기복이 심해 남편인 양홍원에게 전화를 거는 모습이 담겼는데요.\n\n현주는 자신의 감정 때문에 양홍원에게 방해가 될까 봐 걱정하는 모습을 보였지만, 양홍원은 “그냥 내가 가면 되는 거 아니야?”라며 그녀를 달래는 모습을 보였습니다.\n\n곧장 집으로 달려간 양홍원은 감정이 북받친 그녀를 달래며 “걱정하지 마, 너가 아니면 못 하는 거야 이거는”이라는 말을 남기기도 했습니다.\n\n최근 양홍원은 확실한 순애남 모먼트를 연일 보여주고 있는데요.\n\n이에 팬들은 “이런 사랑이 아니라면 사랑 안 하고 싶다”, “이게 진짜 순애야” 등의 반응을 보이기도 했습니다.\n\n여러분은 이 장면, 어떻게 보셨나요?\n\n🎥 YouTub",
-      "cluster": 163,
+      "cluster": 169,
       "rank": 3
     },
     {
@@ -360,7 +363,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdIpSOYR0Gm/",
       "timestamp": "2026-09-11T05:20:32+00:00",
-      "hours": 170.5,
+      "hours": 173.8,
       "likes": 46694,
       "comments": 89,
       "views": 725251,
@@ -380,7 +383,7 @@
       "covered": false,
       "picked_before": false,
       "caption": "”엄마의 눈물“\n\n✨이번 화에서 육아를 하는 현주님의 모습을 자세히 볼 수 있었는데요. 엄마라는 이름을 가진다는 게 얼마나 위대한 일인 지 다시 한 번 느낄 수 있었습니다. 이제는 정말로 이 가족이 행복해졌으면 좋겠습니다..\n\n📷 양홍원의 육아일기(솔파스튜디오)",
-      "cluster": 156,
+      "cluster": 162,
       "rank": 8
     },
     {
@@ -391,13 +394,13 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdV92d0kpVd/",
       "timestamp": "2026-09-16T09:29:38+00:00",
-      "hours": 46.3,
+      "hours": 49.6,
       "likes": 7676,
       "comments": 175,
       "views": null,
       "is_reel": false,
       "score": 8201,
-      "baseline": 1035.4,
+      "baseline": 1035.5,
       "baseline_kind": "post",
       "multiple": 7.92,
       "velocity": null,
@@ -431,15 +434,15 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdTHaYkhWbW/",
       "timestamp": "2026-09-15T06:56:16+00:00",
-      "hours": 72.9,
+      "hours": 76.2,
       "likes": 6270,
       "comments": 18,
       "views": 126378,
       "is_reel": true,
       "score": 6324,
-      "baseline": 1729.4,
+      "baseline": 1707.3,
       "baseline_kind": "reel",
-      "multiple": 3.66,
+      "multiple": 3.7,
       "velocity": null,
       "label": "music",
       "kind": "news",
@@ -468,8 +471,8 @@
       "covered": false,
       "picked_before": false,
       "caption": "\"래퍼 백예린\" 🎤\n\n백예린이 이끄는 밴드 더 발룬티어스가 정규 2집 [i love u]를 발표했습니다. 총 12트랙으로 구성된 해당 앨범과 함께 타이틀곡 \"RBF\"의 뮤직비디오가 함께 공개됐는데요. 해당 트랙에서 백예린은 밴드 사운드 위에 싱잉이 아닌, 처음부터 끝까지 거의 대부분의 러닝 타임을 랩으로 이어가죠.\n\n사실 백예린이 랩을 시도한 건 이번이 처음은 아닙니다. 2025년 10월에 발매했던 솔로 정규 3집 [Flash and Core]에서도 피처링으로 참여한 김아일과 랩을 주고 받은 \"No man's land\"라는 곡이 있었죠. 백예린이 선보인 두 번째 랩송. 영상 속에서 그녀의 실력을 확인해보세요.",
-      "cluster": 127,
-      "rank": 40
+      "cluster": 132,
+      "rank": 41
     },
     {
       "id": "Dc5BkT5RhMd",
@@ -479,7 +482,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/Dc5BkT5RhMd/",
       "timestamp": "2026-09-05T03:46:17+00:00",
-      "hours": 316.0,
+      "hours": 319.4,
       "likes": 15034,
       "comments": 45,
       "views": 202317,
@@ -503,8 +506,8 @@
       "covered": false,
       "picked_before": false,
       "caption": "“EK 그 라인”\n\n현재 ✨메들리메들리(@madly_medley )에서 ✨EK(@m.b.a_ek )님의 무대가 진행중인데요. 역시나 그 라인은 때창이 쉽게 나와버리네요. 모시핏 하시다가 다치시는 분들도 계셨는데 열기가 장난아닙니다🔥\n\n📷 케이팝버거매거진",
-      "cluster": 157,
-      "rank": 52
+      "cluster": 163,
+      "rank": 55
     },
     {
       "id": "DbVFAzWkcXP",
@@ -514,13 +517,13 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DbVFAzWkcXP/",
       "timestamp": "2026-07-28T08:10:11+00:00",
-      "hours": 1247.6,
+      "hours": 1251.0,
       "likes": 3263,
       "comments": 7,
       "views": null,
       "is_reel": false,
       "score": 3284,
-      "baseline": 471.9,
+      "baseline": 472.1,
       "baseline_kind": "post",
       "multiple": 6.96,
       "velocity": null,
@@ -537,8 +540,8 @@
       "covered": false,
       "picked_before": false,
       "caption": "샘플링 없이 돌아온 시스템 서울\n\n독특한 샘플링 소스로 주목을 받은 시스템서울(@systemseoul82). 많은 사람들이 들어봤지만 활용할 줄 몰랐던 곡들을 샘플링으로 사용했습니다. 게임 음악부터 케이팝까지. 이들은 샘플링으로 많은 관심을 받았지만, 원곡 의존도가 높은 방식은 결국 샘플 클리어 문제라는 한계를 드러냈습니다.\n\n결국 시스템서울에게 던져지는 핵심 질문은 ’샘플링으로 주목받았는가‘가 아니라, 그 주목을 발판 삼아 독립적인 사운드를 증명할 수 있는가입니다. 〈SS-POP 3〉는 그 질문에 대한 첫 번째 답이었습니다. 샘플링 없이 시스템서울만의 사운드로 채워진 이 앨범이 완전한 답이 될 수 있을지는, 앞으로의 작업이 말해줄 것입니다.\n\n𝙱𝚎𝚑𝚒𝚗𝚍 SYSTEM SEOUL\n𝚙𝚑𝚘𝚝𝚘 @deeeeeee",
-      "cluster": 247,
-      "rank": 59
+      "cluster": 253,
+      "rank": 61
     },
     {
       "id": "Dcq6LJ6kmyw",
@@ -548,13 +551,13 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/Dcq6LJ6kmyw/",
       "timestamp": "2026-08-30T15:58:05+00:00",
-      "hours": 447.8,
+      "hours": 451.2,
       "likes": 3445,
       "comments": 8,
       "views": null,
       "is_reel": false,
       "score": 3469,
-      "baseline": 1035.4,
+      "baseline": 1035.5,
       "baseline_kind": "post",
       "multiple": 3.35,
       "velocity": null,
@@ -577,7 +580,7 @@
       "picked_before": false,
       "caption": "#AoB \"저희는 내년에 또 오겠습니다.\" 오랜만에 성사된 #혁오(@hyukohofficial)의 대만 공연이 입장이 제한될 정도의 인파가 몰린 가운데 마무리되었습니다. \n\n신곡을 제외하고 #선셋롤러코스터 궈궈가 보컬 및 연주로 힘을 보탰는데요. 절친한 동료가 힘을 보태서인지 혁오도 한결 편안하고 여유롭게 공연을 이끌었습니다. 모든 멘트를 만다린어로 소화한 오혁 그리고 기존 대표곡들과 더불어 신곡 〈Godspeed〉의 라이브를 최초로 공개했던 의미있는 공연이었습니다.\n\nPhoto Video @ageofband (26.08.30)",
       "cluster": 24,
-      "rank": 65
+      "rank": 67
     },
     {
       "id": "Dc-0el9kim4",
@@ -587,13 +590,13 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/Dc-0el9kim4/",
       "timestamp": "2026-09-07T09:26:05+00:00",
-      "hours": 262.4,
+      "hours": 265.7,
       "likes": 2534,
       "comments": 74,
       "views": null,
       "is_reel": false,
       "score": 2756,
-      "baseline": 1035.4,
+      "baseline": 1035.5,
       "baseline_kind": "post",
       "multiple": 2.66,
       "velocity": null,
@@ -620,7 +623,7 @@
       "picked_before": false,
       "caption": "#AoB 라디오헤드(@radiohead)가 2027년 공연 일정을 발표했습니다. 아쉽게도 이번 방문 국가에서 한국은 제외되었습니다. 밴드 측이 Q&A를 통해 ”2027년에 추가되는 일정과 국가는 없다“고 선을 그은 만큼, 당분간 내한을 기대하기는 어려워졌습니다. \n\n아쉬움이 남긴 하지만 가까운 일본에서 5회 열리는 만큼 원정 관람을 고려해 보는 것이 현재로선 현실적인 대안이겠습니다. 예매를 위한 등록은 현재 라디오헤드 공식 홈페이지에서 진행 중입니다.",
       "cluster": 26,
-      "rank": 87
+      "rank": 93
     }
   ],
   "by_account": {
@@ -633,15 +636,15 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdQcTqWztW8/",
         "timestamp": "2026-09-14T05:01:46+00:00",
-        "hours": 98.8,
+        "hours": 102.1,
         "likes": 46208,
         "comments": 685,
         "views": 2346554,
         "is_reel": true,
         "score": 48263,
-        "baseline": 1729.4,
+        "baseline": 1707.3,
         "baseline_kind": "reel",
-        "multiple": 27.91,
+        "multiple": 28.27,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -662,7 +665,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "\"어차피 나도 받은 돈이야\" 🙉\n\n최근 정규 10집 선공개곡 \"젊은날\"을 발표한 MC몽은 대학교 축제에 올랐습니다. 그가 오른 무대는 경기대 축제의 마지막 엔딩 타임. 히트곡 메들리로 10곡을 부른 뒤 유독 떼창을 잘하던 어느 학생에게 등록금을 쾌척했는데요.\n\n그는 얼마 전 틱톡 라이브에서 경기대학교 축제 엔딩 타임에 섭외된 것을 밝히며 기쁨을 드러내던 와중 '학생 한 명에게 한 학기 등록금을 주겠다'고 공약한 바 있습니다. 이번 일은 바로 그 공약을 이행한 것.\n\n그는 등록금을 학생에게 전달하며 '이 돈도 어차피 학교에서 받은 돈이니 꽂히는 애한테 주려고 한다'고 덧붙였습니다. 이로 미루어 보아 공연 섭외 페이의 일부를 자신의 눈에 든 학생에게 전달한 것으로 보입니다.",
-        "cluster": 129,
+        "cluster": 134,
         "rank": -10
       },
       {
@@ -673,15 +676,15 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdVRRzYTuGX/",
         "timestamp": "2026-09-16T02:32:20+00:00",
-        "hours": 53.3,
+        "hours": 56.6,
         "likes": 33510,
         "comments": 158,
         "views": 511986,
         "is_reel": true,
         "score": 33984,
-        "baseline": 1729.4,
+        "baseline": 1707.3,
         "baseline_kind": "reel",
-        "multiple": 19.65,
+        "multiple": 19.91,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -707,7 +710,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "\"KPOPIUM\" 😈\n\n에스파가 새롭게 발표한 [SYNK : COMPLaeXITY - 2026 Special Digital Single]. 카리나, 닝닝, 지젤, 윈터 개개인의 솔로곡을 한 곡 씩 모은 싱글입니다. 그중 지젤의 솔로곡 \"BYEB4HELLO\"가 특히 주목할만한데요. 지젤이 샤라웃했던 미국 언더 래퍼 Zayok이 작곡에, 플레이보이 카티의 레이블 오피움의 프로듀서들인 Lucian 과 Clayco가 편곡에 참여했기 때문.\n\nZayok의 경우 미국에서도 그리 인지도가 크지 않지만 지젤이 인스타그램에 그의 \"Still love still love still love\"를 배경음으로 삽입하며, Zayok 스스로도 놀랐던 일화가 있었죠. 소소하게 화제가 됐었던 지젤의 샤라웃이 결국 콜라보로 이어졌습니다.\n",
-        "cluster": 139,
+        "cluster": 144,
         "rank": -4
       },
       {
@@ -718,15 +721,15 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdTHaYkhWbW/",
         "timestamp": "2026-09-15T06:56:16+00:00",
-        "hours": 72.9,
+        "hours": 76.2,
         "likes": 6270,
         "comments": 18,
         "views": 126378,
         "is_reel": true,
         "score": 6324,
-        "baseline": 1729.4,
+        "baseline": 1707.3,
         "baseline_kind": "reel",
-        "multiple": 3.66,
+        "multiple": 3.7,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -755,46 +758,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "\"래퍼 백예린\" 🎤\n\n백예린이 이끄는 밴드 더 발룬티어스가 정규 2집 [i love u]를 발표했습니다. 총 12트랙으로 구성된 해당 앨범과 함께 타이틀곡 \"RBF\"의 뮤직비디오가 함께 공개됐는데요. 해당 트랙에서 백예린은 밴드 사운드 위에 싱잉이 아닌, 처음부터 끝까지 거의 대부분의 러닝 타임을 랩으로 이어가죠.\n\n사실 백예린이 랩을 시도한 건 이번이 처음은 아닙니다. 2025년 10월에 발매했던 솔로 정규 3집 [Flash and Core]에서도 피처링으로 참여한 김아일과 랩을 주고 받은 \"No man's land\"라는 곡이 있었죠. 백예린이 선보인 두 번째 랩송. 영상 속에서 그녀의 실력을 확인해보세요.",
-        "cluster": 127,
-        "rank": 40
-      },
-      {
-        "id": "DdDUyBSk0W4",
-        "account": "hiptake_",
-        "tier": "daily",
-        "allow_curation": false,
-        "music_native": true,
-        "url": "https://www.instagram.com/p/DdDUyBSk0W4/",
-        "timestamp": "2026-09-09T03:44:26+00:00",
-        "hours": 220.1,
-        "likes": 5620,
-        "comments": 5,
-        "views": null,
-        "is_reel": false,
-        "score": 5635,
-        "baseline": 668.3,
-        "baseline_kind": "post",
-        "multiple": 8.43,
-        "velocity": null,
-        "label": "music",
-        "kind": "unknown",
-        "genres": [
-          "힙합"
-        ],
-        "why": [
-          "+뮤직비디오",
-          "+뮤비",
-          "+래퍼",
-          "+힙합"
-        ],
-        "kind_why": [
-          "+공개"
-        ],
-        "covered": false,
-        "picked_before": false,
-        "caption": "\"정반합 커플\" 🩰\n\n발레와 힙합은 은근히 자주 엮이는 소재입니다. 20년 전에도 한국 뮤지컬계를 풍미했던 '비보이를 사랑한 발레리나'라는 작품이 있었죠. 외국 힙합 뮤비에서도 힙합과 발레가 한 컷에서 등장한다면 하류 인생에서 고급 예술을 향유하는 위치까지 올라갔다거나, 새하얀 코카인과 순백의 발레리나를 시각적으로 등치시키는 은유 혹은 미장센으로 활용되는데요.\n\n이러한 소재의 조합은 정반합의 구조를 띠고 있습니다. 서로 정반대에 있는 소재가 한데 놓이는 순간 오히려 각자의 성질을 더욱 선명하게 만들죠. 정제되고 우아하면서도 상류층의 예술이라는 이미지가 있는 발레와 자유분방한 날 것의 힙합이 자주 엮이는 이유가 여기에 있을 겁니다.\n\n그런데 이러한 조합을 의도치 않게 보여준 커플이 있습니다. 바로 양홍원과 원",
-        "cluster": 145,
-        "rank": 40
+        "cluster": 132,
+        "rank": 41
       },
       {
         "id": "DdSoDO1BBx_",
@@ -804,15 +769,15 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdSoDO1BBx_/",
         "timestamp": "2026-09-15T02:23:02+00:00",
-        "hours": 77.4,
+        "hours": 80.8,
         "likes": 5762,
         "comments": 61,
         "views": 81665,
         "is_reel": true,
         "score": 5945,
-        "baseline": 1729.4,
+        "baseline": 1707.3,
         "baseline_kind": "reel",
-        "multiple": 3.44,
+        "multiple": 3.48,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -839,8 +804,46 @@
         "covered": false,
         "picked_before": false,
         "caption": "\"머쉬베놈 신곡 피처링\" 🪓\n\n머쉬베놈이 향후 발매될 EP의 선공개곡 \"내리고\"를 발표했습니다. 그리고, 해당 트랙에 피처링으로 참여한 저스디스의 벌스가 주목을 받고 있는데요. 바로 그가 식케이를 디스한 게 아니냐는 의혹이 나오고 있기 때문입니다.\n\n이유는 식케이가 과거부터 비판 받았던 키워드 중 하나였던 '외힙 문익점'를 언급하며, 뒤에 적힌 'Made in Korea'가 [K-FLIP+] 수록곡 \"MADE IN KCOREA\"를, '카르마'가 [KC3] 수록곡 \"KARMA COLLECTOR\"를 연상시킨다는 의견들이 속출하고 있기 때문.\n\n한편, 저스디스가 '외힙 문익점'을 언급하며, 서태지를 예로 들었다는 의견도 있습니다. 공식 가사에는 '태초부터'라고 적혀 있지만, 노래를 들어보면 명확히 '태지부터'라고",
-        "cluster": 131,
+        "cluster": 136,
         "rank": 45
+      },
+      {
+        "id": "DdDUyBSk0W4",
+        "account": "hiptake_",
+        "tier": "daily",
+        "allow_curation": false,
+        "music_native": true,
+        "url": "https://www.instagram.com/p/DdDUyBSk0W4/",
+        "timestamp": "2026-09-09T03:44:26+00:00",
+        "hours": 223.4,
+        "likes": 5620,
+        "comments": 5,
+        "views": null,
+        "is_reel": false,
+        "score": 5635,
+        "baseline": 824.9,
+        "baseline_kind": "post",
+        "multiple": 6.83,
+        "velocity": null,
+        "label": "music",
+        "kind": "unknown",
+        "genres": [
+          "힙합"
+        ],
+        "why": [
+          "+뮤직비디오",
+          "+뮤비",
+          "+래퍼",
+          "+힙합"
+        ],
+        "kind_why": [
+          "+공개"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "\"정반합 커플\" 🩰\n\n발레와 힙합은 은근히 자주 엮이는 소재입니다. 20년 전에도 한국 뮤지컬계를 풍미했던 '비보이를 사랑한 발레리나'라는 작품이 있었죠. 외국 힙합 뮤비에서도 힙합과 발레가 한 컷에서 등장한다면 하류 인생에서 고급 예술을 향유하는 위치까지 올라갔다거나, 새하얀 코카인과 순백의 발레리나를 시각적으로 등치시키는 은유 혹은 미장센으로 활용되는데요.\n\n이러한 소재의 조합은 정반합의 구조를 띠고 있습니다. 서로 정반대에 있는 소재가 한데 놓이는 순간 오히려 각자의 성질을 더욱 선명하게 만들죠. 정제되고 우아하면서도 상류층의 예술이라는 이미지가 있는 발레와 자유분방한 날 것의 힙합이 자주 엮이는 이유가 여기에 있을 겁니다.\n\n그런데 이러한 조합을 의도치 않게 보여준 커플이 있습니다. 바로 양홍원과 원",
+        "cluster": 150,
+        "rank": 46
       }
     ],
     "nitemagkr": [
@@ -852,7 +855,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DcdE_YoCMaA/",
         "timestamp": "2026-08-25T07:17:52+00:00",
-        "hours": 576.5,
+        "hours": 579.8,
         "likes": 82792,
         "comments": 200,
         "views": 1058206,
@@ -877,7 +880,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "“힙합보단 사랑, 사랑보단 돈이 아니야” 😘\n\n최근 많은 관심 속에 공개된 ‘래퍼여친구함’의 마지막 에피소드.\n\n에피소드 3의 여자 주인공은 인플루언서 위성희였는데요.\n\n그녀는 과거 썸을 탄 적이 있는 래퍼 노윤하와 JMIN 사이에서 고민하는 모습을 보이다가, 결국 최종 선택에서 JMIN을 선택하며 볼 뽀뽀를 하기도 했습니다.\n\n그동안 ‘래퍼여친구함’에서는 래퍼들이 사랑 대신 다이아 목걸이를 선택하며 화제가 되었던 만큼, JMIN 역시 같은 선택을 할지 관심이 모였는데요.\n\n그런데 예상 밖의 반전이 펼쳐졌습니다.\n\nJMIN은 다이아 목걸이를 그대로 모래사장에 던져버린 뒤, 위성희에게 볼 뽀뽀를 하며 사랑을 선택하는 모습을 보여줬습니다.\n\n시리즈의 마지막을 장식한 JMIN의 선택.\n\n여러분은 이 장면, 어떻게",
-        "cluster": 188,
+        "cluster": 194,
         "rank": 1
       },
       {
@@ -888,7 +891,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DbDdc3BCcuH/",
         "timestamp": "2026-07-21T11:59:49+00:00",
-        "hours": 1411.8,
+        "hours": 1415.1,
         "likes": 42827,
         "comments": 177,
         "views": 78849,
@@ -916,7 +919,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "“점프스타일에서도 역시 빠른 조광일” 👀\n\n최근 EK가 세 번째 정규앨범 [Core]를 공개했습니다.\n\n총 10트랙으로 구성된 이번 앨범에는 의외의 피처링도 담겨 있었는데요.\n\n바로 쇼미더머니10 우승자 조광일이 ‘음지의 태양’에 참여한 것입니다.\n\n점프스타일 비트 위에서도 특유의 혀를 굴리듯 몰아치는 초고속 랩을 선보이며 강한 존재감을 드러냈는데요.\n\n다만 평소에도 호불호가 뚜렷했던 조광일의 랩 스타일인 만큼, 이번 피처링 역시 리스너들 사이에서는 “곡에 잘 어울린다”, “조금 과한 느낌이다” 등 다양한 반응이 이어지고 있습니다.\n\n여러분은 이 곡, 어떻게 들으셨나요?\n\n🎧 EK - 음지의 태양 (feat. 조광일)\n—\n#EK #조광일 #음지의태양 #Core #점프스타일",
-        "cluster": 182,
+        "cluster": 188,
         "rank": 2
       },
       {
@@ -927,7 +930,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdJAiSPidE7/",
         "timestamp": "2026-09-11T08:48:00+00:00",
-        "hours": 167.0,
+        "hours": 170.3,
         "likes": 85949,
         "comments": 193,
         "views": 946184,
@@ -949,7 +952,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "“이거는 너가 아니면 못 하는 거야” 🥹\n\n최근 공개된 ‘양홍원의 육아일기’ 새 에피소드.\n\n이날 현주는 감정 기복이 심해 남편인 양홍원에게 전화를 거는 모습이 담겼는데요.\n\n현주는 자신의 감정 때문에 양홍원에게 방해가 될까 봐 걱정하는 모습을 보였지만, 양홍원은 “그냥 내가 가면 되는 거 아니야?”라며 그녀를 달래는 모습을 보였습니다.\n\n곧장 집으로 달려간 양홍원은 감정이 북받친 그녀를 달래며 “걱정하지 마, 너가 아니면 못 하는 거야 이거는”이라는 말을 남기기도 했습니다.\n\n최근 양홍원은 확실한 순애남 모먼트를 연일 보여주고 있는데요.\n\n이에 팬들은 “이런 사랑이 아니라면 사랑 안 하고 싶다”, “이게 진짜 순애야” 등의 반응을 보이기도 했습니다.\n\n여러분은 이 장면, 어떻게 보셨나요?\n\n🎥 YouTub",
-        "cluster": 163,
+        "cluster": 169,
         "rank": 3
       },
       {
@@ -960,7 +963,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dciq__si5Zp/",
         "timestamp": "2026-08-27T11:24:57+00:00",
-        "hours": 524.4,
+        "hours": 527.7,
         "likes": 45497,
         "comments": 75,
         "views": 540801,
@@ -983,7 +986,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "“확실히 순애남이야” 😍\n\n최근 많은 관심 속에 공개되고 있는 ‘양홍원의 육아일기’.\n\n오늘 공개된 에피소드에서는 최근 결혼식을 준비하고 있는 양홍원과 그의 아내 원현주가 웨딩드레스를 피팅하는 모습이 담겼는데요.\n\n이날 양홍원은 웨딩드레스를 입은 아내에게서 눈을 떼지 못하는 모습을 보여주며, 다시 한번 순애남 면모를 보여주기도 했습니다.\n\n여러분은 이 장면, 어떻게 보셨나요?\n\n🎥 YouTube ‘양홍원의 육아일기’\n—\n#양홍원 #원현주 #양홍원의육아일기 #웨딩드레스 #결혼식",
-        "cluster": 169,
+        "cluster": 175,
         "rank": 3
       },
       {
@@ -994,7 +997,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Db5lGiwCcGw/",
         "timestamp": "2026-08-11T12:25:28+00:00",
-        "hours": 907.4,
+        "hours": 910.7,
         "likes": 34719,
         "comments": 346,
         "views": 1532391,
@@ -1017,7 +1020,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "“래퍼한테 필요한건 사랑일까, 다이아일까” 💎\n\n최근 많은 관심 속에 첫 방송을 시작한 연애 프로그램 ‘래퍼여친구함’.\n\n1편의 여자 주인공 채화린은 Royal 44와 정준혁 사이에서 고민한 끝에 최종 선택에서 Royal 44를 선택했는데요.\n\n이제는 Royal 44가 사랑과 다이아 목걸이 중 하나를 선택해야 하는 상황이 찾아왔습니다.\n\n마지막 데이트에서 두 사람 사이에 좋은 분위기가 형성되며 매칭을 예상했던 시청자들이 많았지만, 모두의 예상을 깨고 Royal 44가 선택한 것은 사랑이 아닌 다이아 목걸이였습니다.\n\n심지어 그는 인터뷰에서 “내가 사랑하는 여자는 엄마와 신사임당밖에 없다”는 말을 남기며 웃음을 자아내기도 했는데요.\n\n알려진 바에 따르면 해당 다이아 목걸이의 가격은 약 1,000만 원 상당이라",
-        "cluster": 195,
+        "cluster": 201,
         "rank": 28
       }
     ],
@@ -1030,7 +1033,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdIpSOYR0Gm/",
         "timestamp": "2026-09-11T05:20:32+00:00",
-        "hours": 170.5,
+        "hours": 173.8,
         "likes": 46694,
         "comments": 89,
         "views": 725251,
@@ -1050,7 +1053,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "”엄마의 눈물“\n\n✨이번 화에서 육아를 하는 현주님의 모습을 자세히 볼 수 있었는데요. 엄마라는 이름을 가진다는 게 얼마나 위대한 일인 지 다시 한 번 느낄 수 있었습니다. 이제는 정말로 이 가족이 행복해졌으면 좋겠습니다..\n\n📷 양홍원의 육아일기(솔파스튜디오)",
-        "cluster": 156,
+        "cluster": 162,
         "rank": 8
       },
       {
@@ -1061,7 +1064,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc5BkT5RhMd/",
         "timestamp": "2026-09-05T03:46:17+00:00",
-        "hours": 316.0,
+        "hours": 319.4,
         "likes": 15034,
         "comments": 45,
         "views": 202317,
@@ -1085,8 +1088,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "“EK 그 라인”\n\n현재 ✨메들리메들리(@madly_medley )에서 ✨EK(@m.b.a_ek )님의 무대가 진행중인데요. 역시나 그 라인은 때창이 쉽게 나와버리네요. 모시핏 하시다가 다치시는 분들도 계셨는데 열기가 장난아닙니다🔥\n\n📷 케이팝버거매거진",
-        "cluster": 157,
-        "rank": 52
+        "cluster": 163,
+        "rank": 55
       },
       {
         "id": "Dc5YLZVxQUL",
@@ -1096,7 +1099,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc5YLZVxQUL/",
         "timestamp": "2026-09-05T07:04:05+00:00",
-        "hours": 312.7,
+        "hours": 316.1,
         "likes": 10254,
         "comments": 111,
         "views": 165438,
@@ -1119,8 +1122,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "“아 내 고통”\n\n✨매들리 메들리 2026(@madly_medley )에서 ✨희대의(@heedaeof )와 함께 이야기를 나눠봤는데요. 이번 희대의의 앨범 도모에서부터 앞으로의 행보까지 인터뷰를 통해서 확인해보세요🔥\n\n📷 케이팝버거매거진",
-        "cluster": 157,
-        "rank": 84
+        "cluster": 163,
+        "rank": 86
       },
       {
         "id": "Dc73j9AxDKD",
@@ -1130,7 +1133,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc73j9AxDKD/",
         "timestamp": "2026-09-06T06:15:18+00:00",
-        "hours": 289.6,
+        "hours": 292.9,
         "likes": 8186,
         "comments": 82,
         "views": 335425,
@@ -1153,8 +1156,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "“역시 한국힙합 현재는 KC”\n\n✨매들리 메들리 2026(@madly_medley )에서 ✨KC(@kcthecompany )와 함께 이야기를 나눠봤는데요. 김하온님께서 생각하시는 한국힙합부터 2027 KC까지 인터뷰를 통해서 확인해보세요🔥\n\n📷 케이팝버거매거진",
-        "cluster": 157,
-        "rank": 106
+        "cluster": 163,
+        "rank": 110
       },
       {
         "id": "Dc542CBT1N0",
@@ -1164,7 +1167,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc542CBT1N0/",
         "timestamp": "2026-09-05T11:47:42+00:00",
-        "hours": 308.0,
+        "hours": 311.3,
         "likes": 6661,
         "comments": 84,
         "views": 132712,
@@ -1184,8 +1187,202 @@
         "covered": false,
         "picked_before": false,
         "caption": "“앰비션뮤직”\n\n✨매들리 메들리 2026(@madly_medley )에서 ✨앰비션뮤직(@ambition_musik )과 함께 이야기를 나눠봤는데요. 제네더질라의 엉덩이 썰과 해쉬스완의 복귀, 밀리맥스의 최애 형까지 인터뷰를 통해서 확인해보세요🔥\n\n📷 케이팝버거매거진",
-        "cluster": 157,
-        "rank": 117
+        "cluster": 163,
+        "rank": 120
+      }
+    ],
+    "eyesmag": [
+      {
+        "id": "DdViaM-pUSy",
+        "account": "eyesmag",
+        "tier": "weekly",
+        "allow_curation": false,
+        "music_native": false,
+        "url": "https://www.instagram.com/p/DdViaM-pUSy/",
+        "timestamp": "2026-09-16T05:32:24+00:00",
+        "hours": 53.6,
+        "likes": 21235,
+        "comments": 175,
+        "views": 38759,
+        "is_reel": true,
+        "score": 21760,
+        "baseline": 2635.6,
+        "baseline_kind": "reel",
+        "multiple": 8.26,
+        "velocity": null,
+        "label": "unsure",
+        "kind": "unknown",
+        "genres": [
+          "기타"
+        ],
+        "why": [
+          "+쇼케이스",
+          "-프랜차이즈",
+          "-캐릭터로"
+        ],
+        "kind_why": [
+          "+쇼케이스"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "민기 공주가 디즈니 캐릭터로 태어났다면?🐭 ‘디즈니코리아(@disneykorea) 프랜차이즈 쇼케이스 2027’에서 에이티즈(@ateez_official_) 민기(@fixon_n_on)에게 자신과 가장 닮았다고 생각하는 디즈니 캐릭터를 물었습니다. 과연 의외의 선택일지, 누구나 고개를 끄덕일 찰떡같은 답일지 궁금한데요. 민기가 직접 밝힌 디즈니 도플갱어부터 앞으로 펼쳐질 새로운 이야기까지 영상에서 확인해 보세요. 🎥 아이즈매거진",
+        "cluster": 49,
+        "rank": 23
+      },
+      {
+        "id": "DdVgTs3J0f9",
+        "account": "eyesmag",
+        "tier": "weekly",
+        "allow_curation": false,
+        "music_native": false,
+        "url": "https://www.instagram.com/p/DdVgTs3J0f9/",
+        "timestamp": "2026-09-16T05:13:34+00:00",
+        "hours": 53.9,
+        "likes": 11958,
+        "comments": 96,
+        "views": 34554,
+        "is_reel": true,
+        "score": 12246,
+        "baseline": 2635.6,
+        "baseline_kind": "reel",
+        "multiple": 4.65,
+        "velocity": null,
+        "label": "unsure",
+        "kind": "unknown",
+        "genres": [
+          "기타"
+        ],
+        "why": [
+          "+쇼케이스",
+          "-프랜차이즈",
+          "-캐릭터로"
+        ],
+        "kind_why": [
+          "+쇼케이스"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "디즈니 프린세스요? 이제 지효가 하겠습니다.👑 트와이스(@twicetagram) 지효(@_zyozyo)가 ‘디즈니코리아(@disneykorea) 프랜차이즈 쇼케이스 2027’ 현장에서 반가운 인사를 전했습니다. 하루 동안 디즈니 캐릭터로 살 수 있다면 누구를 고를지 묻자, 지효다운 답변과 사랑스러운 포즈까지 보여줬는데요. 지난 100년의 추억과 앞으로 펼쳐질 디즈니의 이야기를 지효와 함께 만나보세요. 🎥 아이즈매거진",
+        "cluster": 49,
+        "rank": 46
+      },
+      {
+        "id": "DdVkyMZJdYN",
+        "account": "eyesmag",
+        "tier": "weekly",
+        "allow_curation": false,
+        "music_native": false,
+        "url": "https://www.instagram.com/p/DdVkyMZJdYN/",
+        "timestamp": "2026-09-16T05:56:37+00:00",
+        "hours": 53.2,
+        "likes": 8219,
+        "comments": 31,
+        "views": 71882,
+        "is_reel": true,
+        "score": 8312,
+        "baseline": 2635.6,
+        "baseline_kind": "reel",
+        "multiple": 3.15,
+        "velocity": null,
+        "label": "unsure",
+        "kind": "news",
+        "genres": [
+          "기타"
+        ],
+        "why": [
+          "+쇼케이스",
+          "-프랜차이즈"
+        ],
+        "kind_why": [
+          "+공개",
+          "+쇼케이스"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "디즈니 캐릭터보다 더 디즈니 캐릭터신 츄예영~!🐰 츄(@chuuo3o)가 ‘디즈니코리아(@disneykorea) 프랜차이즈 쇼케이스 2027’에 등장했습니다. 애니메이션에서 그대로 튀어나온 듯한 표정과 제스처는 물론, 최애 디즈니 캐릭터까지 직접 공개했는데요. 현실판 디즈니 캐릭터 츄의 인사말을 영상에서 확인해 보세요. 🎥 아이즈매거진",
+        "cluster": 49,
+        "rank": 57
+      },
+      {
+        "id": "DdXy35eCUsd",
+        "account": "eyesmag",
+        "tier": "weekly",
+        "allow_curation": false,
+        "music_native": false,
+        "url": "https://www.instagram.com/p/DdXy35eCUsd/",
+        "timestamp": "2026-09-17T02:32:12+00:00",
+        "hours": 32.6,
+        "likes": 2259,
+        "comments": 22,
+        "views": null,
+        "is_reel": false,
+        "score": 2325,
+        "baseline": 785.5,
+        "baseline_kind": "post",
+        "multiple": 2.96,
+        "velocity": null,
+        "label": "music",
+        "kind": "news",
+        "genres": [
+          "공연"
+        ],
+        "why": [
+          "+내한",
+          "+예매",
+          "+공연",
+          "~음악",
+          "~보컬"
+        ],
+        "kind_why": [
+          "+개최",
+          "+예매",
+          "+내한",
+          "+날짜"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "22년 만에 처음으로 한국을 찾은 백넘버. 지난 9월 12일과 13일, 킨텍스 9홀에서 첫 내한 공연을 개최했는데요.🎶 예매 시작 후 수분 만에 전석 매진을 기록한 공연답게, 공연장은 백넘버를 기다려 온 한국 팬들의 목소리로 가득했죠. 보컬 시미즈 이요리의 “다른 점을 찾으려면 많이 있겠지만, 그런 차이를 모두 뛰어넘어 감성과 감각으로 이어질 수 있었다는 것이 정말 기쁘다.”는 말처럼, 서로 다른 언어와 문화를 넘어 음악으로 이어진 백넘버와 한국 팬들.🖤 오래 기다려 온 첫 만남, 그날의 감동을 전합니다. 📸 한다 야스마사",
+        "cluster": 47,
+        "rank": 99
+      },
+      {
+        "id": "DdXiXJTAQFF",
+        "account": "eyesmag",
+        "tier": "weekly",
+        "allow_curation": false,
+        "music_native": false,
+        "url": "https://www.instagram.com/p/DdXiXJTAQFF/",
+        "timestamp": "2026-09-17T00:07:55+00:00",
+        "hours": 35.0,
+        "likes": 431,
+        "comments": 2,
+        "views": null,
+        "is_reel": false,
+        "score": 437,
+        "baseline": 785.5,
+        "baseline_kind": "post",
+        "multiple": 0.56,
+        "velocity": null,
+        "label": "unsure",
+        "kind": "news",
+        "genres": [
+          "공연",
+          "해외"
+        ],
+        "why": [
+          "+예매",
+          "=단일근거"
+        ],
+        "kind_why": [
+          "+예매",
+          "+진행",
+          "+날짜"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "극장에서 즐기는 6시간 WEC 단관 설렌다.🏎️ 오는 27일 일본 후지 스피드웨이에서 열리는 WEC 후지 6시간 레이스가 국내 극장에서 생중계됩니다. 메가박스가 제네시스와 손잡고 선보이는 이번 생중계는 메가박스 하남스타필드점에서 진행되는데요. 6시간의 레이스를 전반부와 후반부로 나눠 원하는 시간대를 선택해 관람할 수 있습니다. 예매는 오늘 오후 2시부터 메가박스 홈페이지와 모바일 앱에서 가능하며, 일반 예매 관람객에게는 팝콘과 탄산음료도 제공됩니다.🍿 📸 @genesismagmaracing / 메가박스",
+        "cluster": 48,
+        "rank": 362
       }
     ],
     "ageofband": [
@@ -1197,13 +1394,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdV92d0kpVd/",
         "timestamp": "2026-09-16T09:29:38+00:00",
-        "hours": 46.3,
+        "hours": 49.6,
         "likes": 7676,
         "comments": 175,
         "views": null,
         "is_reel": false,
         "score": 8201,
-        "baseline": 1035.4,
+        "baseline": 1035.5,
         "baseline_kind": "post",
         "multiple": 7.92,
         "velocity": null,
@@ -1237,13 +1434,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dcq6LJ6kmyw/",
         "timestamp": "2026-08-30T15:58:05+00:00",
-        "hours": 447.8,
+        "hours": 451.2,
         "likes": 3445,
         "comments": 8,
         "views": null,
         "is_reel": false,
         "score": 3469,
-        "baseline": 1035.4,
+        "baseline": 1035.5,
         "baseline_kind": "post",
         "multiple": 3.35,
         "velocity": null,
@@ -1266,7 +1463,7 @@
         "picked_before": false,
         "caption": "#AoB \"저희는 내년에 또 오겠습니다.\" 오랜만에 성사된 #혁오(@hyukohofficial)의 대만 공연이 입장이 제한될 정도의 인파가 몰린 가운데 마무리되었습니다. \n\n신곡을 제외하고 #선셋롤러코스터 궈궈가 보컬 및 연주로 힘을 보탰는데요. 절친한 동료가 힘을 보태서인지 혁오도 한결 편안하고 여유롭게 공연을 이끌었습니다. 모든 멘트를 만다린어로 소화한 오혁 그리고 기존 대표곡들과 더불어 신곡 〈Godspeed〉의 라이브를 최초로 공개했던 의미있는 공연이었습니다.\n\nPhoto Video @ageofband (26.08.30)",
         "cluster": 24,
-        "rank": 65
+        "rank": 67
       },
       {
         "id": "Dc-0el9kim4",
@@ -1276,13 +1473,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc-0el9kim4/",
         "timestamp": "2026-09-07T09:26:05+00:00",
-        "hours": 262.4,
+        "hours": 265.7,
         "likes": 2534,
         "comments": 74,
         "views": null,
         "is_reel": false,
         "score": 2756,
-        "baseline": 1035.4,
+        "baseline": 1035.5,
         "baseline_kind": "post",
         "multiple": 2.66,
         "velocity": null,
@@ -1309,7 +1506,7 @@
         "picked_before": false,
         "caption": "#AoB 라디오헤드(@radiohead)가 2027년 공연 일정을 발표했습니다. 아쉽게도 이번 방문 국가에서 한국은 제외되었습니다. 밴드 측이 Q&A를 통해 ”2027년에 추가되는 일정과 국가는 없다“고 선을 그은 만큼, 당분간 내한을 기대하기는 어려워졌습니다. \n\n아쉬움이 남긴 하지만 가까운 일본에서 5회 열리는 만큼 원정 관람을 고려해 보는 것이 현재로선 현실적인 대안이겠습니다. 예매를 위한 등록은 현재 라디오헤드 공식 홈페이지에서 진행 중입니다.",
         "cluster": 26,
-        "rank": 87
+        "rank": 93
       },
       {
         "id": "DcJf6VNkuUO",
@@ -1319,13 +1516,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DcJf6VNkuUO/",
         "timestamp": "2026-08-17T16:37:35+00:00",
-        "hours": 759.2,
+        "hours": 762.5,
         "likes": 2657,
         "comments": 3,
         "views": null,
         "is_reel": false,
         "score": 2666,
-        "baseline": 1035.4,
+        "baseline": 1035.5,
         "baseline_kind": "post",
         "multiple": 2.57,
         "velocity": null,
@@ -1352,7 +1549,7 @@
         "picked_before": false,
         "caption": "#AoB 밴드 혁오(@hyukohofficial)가 6년 만의 신곡 〈Godspeed!〉를 발매합니다. 정식 음원 발매는 8월 18일 한국시간 18시, 뮤직비디오 풀 버전은 현재 유튜브에서 감상할 수 있습니다. 이번 작품을 시작으로 신곡들이 순차적으로 공개될 예정이라고 하는데요. 지금 바로 슬라이드를 넘겨 혁오의 새로운 챕터와 이번 신곡에 관한 다양한 이야기를 확인해 보세요! Source: @dooroodooroo.ac",
         "cluster": 44,
-        "rank": 93
+        "rank": 98
       },
       {
         "id": "Dcm5Rnekh5u",
@@ -1362,13 +1559,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dcm5Rnekh5u/",
         "timestamp": "2026-08-29T03:00:02+00:00",
-        "hours": 484.8,
+        "hours": 488.1,
         "likes": 2873,
         "comments": 64,
         "views": null,
         "is_reel": false,
         "score": 3065,
-        "baseline": 1035.4,
+        "baseline": 1035.5,
         "baseline_kind": "post",
         "multiple": 2.96,
         "velocity": null,
@@ -1389,7 +1586,7 @@
         "picked_before": false,
         "caption": "#AoB ”지나고 보니 애초에 예상했던 것과는 비교할 수 없이 더 값지고 큰 선물들을 받아서 품에 안고 돌아온 것 같아요.(잔나비 최정훈)“ \n\n그룹사운드 #잔나비(@bandjannabi)가 첫 아시아 투어를 성공적으로 완주했다는 소식입니다. 이번 투어는 대만 타이베이를 시작으로, 인도네시아 자카르타까지 7개국 7개 도시를 순회하며 현지 팬들의 뜨거운 떼창을 이끌어냈는데요. 언어의 벽을 음악으로 허문 잔나비의 여정을 쭉 정리해봤습니다. \n\n슬라이드를 넘겨 잔나비 멤버들이 직접 보내준 후기와 함께 이번 아시아 투어의 다양한 이야기들을 확인해 보세요!",
         "cluster": 37,
-        "rank": 100
+        "rank": 106
       }
     ],
     "wavemag.kr": [
@@ -1401,15 +1598,15 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc8AlVTxKzT/",
         "timestamp": "2026-09-06T07:34:11+00:00",
-        "hours": 288.2,
+        "hours": 291.6,
         "likes": 13454,
         "comments": 15,
         "views": 85326,
         "is_reel": true,
         "score": 13499,
-        "baseline": 766.4,
+        "baseline": 766.9,
         "baseline_kind": "reel",
-        "multiple": 17.61,
+        "multiple": 17.6,
         "velocity": null,
         "label": "music",
         "kind": "curation",
@@ -1440,7 +1637,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "여름의 끝에서.\n\n미국의 록 밴드 그린데이(Green Day)의 <Wake Me Up When September Ends>는 매년 9월이 돌아올 때마다 다시금 사람들의 플레이리스트에 소환되는 곡입니다. 2004년 발매된 정규 앨범 <American Idiot>에 수록된 이 곡은 단순히 가을을 대표하는 시즌송처럼 보이지만, 그 이면에는 보컬 빌리 조 암스트롱(Billie Joe Armstrong)의 깊은 상실과 기억이 담겨 있습니다.\n\n빌리 조 암스트롱은 어린 시절 아버지를 떠나보낸 경험을 바탕으로 이 곡을 썼습니다. 그의 아버지는 1982년 9월 세상을 떠났고, 당시 열 살이었던 빌리 조 암스트롱에게 9월은 사랑하는 사람을 잃었던 기억과 자연스럽게 연결된 시간이 되었습니다. <Wake Me Up When S",
-        "cluster": 211,
+        "cluster": 217,
         "rank": 25
       },
       {
@@ -1451,16 +1648,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdNpQGcR-JG/",
         "timestamp": "2026-09-13T03:57:01+00:00",
-        "hours": 123.9,
-        "likes": 5650,
+        "hours": 127.2,
+        "likes": 5666,
         "comments": 10,
-        "views": 35996,
+        "views": 36089,
         "is_reel": true,
-        "score": 5680,
-        "baseline": 766.4,
+        "score": 5696,
+        "baseline": 766.9,
         "baseline_kind": "reel",
-        "multiple": 7.41,
-        "velocity": 2.5278058645096055,
+        "multiple": 7.43,
+        "velocity": 2.8558713696960316,
         "label": "music",
         "kind": "curation",
         "genres": [
@@ -1485,7 +1682,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "2007년 발매된 Arctic Monkeys의 <505>는 오랜 시간이 지난 지금까지도 새로운 세대에게 꾸준히 발견되고 있는 곡입니다. 특히 2022년 틱톡을 중심으로 다시 주목받으며 2000년대에 발표된 곡임에도 젊은 음악 팬들에게 사랑받았습니다. 이후 스트리밍과 SNS를 통해 꾸준히 소비되며 Arctic Monkeys를 대표하는 곡 중 하나로 자리 잡았습니다.\n\n빠르고 거친 사운드가 돋보이는 앨범 속에서 <505>는 비교적 느리고 몽환적인 분위기로 시작해, 곡이 진행될수록 기타와 드럼이 격렬해지며 감정을 폭발시키는 듯한 사운드를 들려줍니다.\n\n가사에는 멀리 떨어진 누군가를 향한 그리움과 복잡한 감정이 담겨 있으며, Alex Turner는 당시 <505>를 Arctic Monkeys의 ‘첫 번째 제대로 된",
-        "cluster": 210,
+        "cluster": 216,
         "rank": 54
       },
       {
@@ -1496,13 +1693,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DbVFAzWkcXP/",
         "timestamp": "2026-07-28T08:10:11+00:00",
-        "hours": 1247.6,
+        "hours": 1251.0,
         "likes": 3263,
         "comments": 7,
         "views": null,
         "is_reel": false,
         "score": 3284,
-        "baseline": 471.9,
+        "baseline": 472.1,
         "baseline_kind": "post",
         "multiple": 6.96,
         "velocity": null,
@@ -1519,8 +1716,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "샘플링 없이 돌아온 시스템 서울\n\n독특한 샘플링 소스로 주목을 받은 시스템서울(@systemseoul82). 많은 사람들이 들어봤지만 활용할 줄 몰랐던 곡들을 샘플링으로 사용했습니다. 게임 음악부터 케이팝까지. 이들은 샘플링으로 많은 관심을 받았지만, 원곡 의존도가 높은 방식은 결국 샘플 클리어 문제라는 한계를 드러냈습니다.\n\n결국 시스템서울에게 던져지는 핵심 질문은 ’샘플링으로 주목받았는가‘가 아니라, 그 주목을 발판 삼아 독립적인 사운드를 증명할 수 있는가입니다. 〈SS-POP 3〉는 그 질문에 대한 첫 번째 답이었습니다. 샘플링 없이 시스템서울만의 사운드로 채워진 이 앨범이 완전한 답이 될 수 있을지는, 앞으로의 작업이 말해줄 것입니다.\n\n𝙱𝚎𝚑𝚒𝚗𝚍 SYSTEM SEOUL\n𝚙𝚑𝚘𝚝𝚘 @deeeeeee",
-        "cluster": 247,
-        "rank": 59
+        "cluster": 253,
+        "rank": 61
       },
       {
         "id": "DcpshGYxXWQ",
@@ -1530,13 +1727,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DcpshGYxXWQ/",
         "timestamp": "2026-08-30T04:52:25+00:00",
-        "hours": 458.9,
+        "hours": 462.3,
         "likes": 4848,
         "comments": 6,
         "views": 22315,
         "is_reel": true,
         "score": 4866,
-        "baseline": 766.4,
+        "baseline": 766.9,
         "baseline_kind": "reel",
         "multiple": 6.35,
         "velocity": null,
@@ -1564,7 +1761,7 @@
         "covered": false,
         "picked_before": false,
         "caption": "오아시스의 <Stop Crying Your Heart Out>은 유난히 ‘위로’라는 단어와 잘 어울리는 곡입니다. 노엘 갤러거가 작사,작곡한 이 곡은 2002년 발매된 오아시스의 정규 5집 앨범의 수록곡으로, 노엘 갤러거가 힘든 시기를 보내고 있던 친구를 염두에 두고 쓴 곡으로 알려져 있습니다.\n\n개인적인 위로에서 시작된 노래는 뜻밖의 순간, 영국을 위로하는 곡이 되었습니다. 2002년 월드컵에서 잉글랜드가 브라질에 패해 8강에서 탈락한 뒤, BBC는 경기 후 영상에 이 곡을 삽입했습니다. 패배의 아쉬움을 달래는 순간에 흐르던 노래는 자연스럽게 많은 영국인들의 마음에 남았습니다.\n\n이후 영화 <나비효과>에도 삽입되며 상실과 후회, 지나간 시간을 바라보는 장면을 더욱 깊게 만들었습니다. “You’ll neve",
-        "cluster": 218,
+        "cluster": 224,
         "rank": 63
       },
       {
@@ -1575,13 +1772,13 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dbe5Ox-EeDC/",
         "timestamp": "2026-08-01T03:39:39+00:00",
-        "hours": 1156.1,
+        "hours": 1159.5,
         "likes": 2549,
         "comments": 9,
         "views": null,
         "is_reel": false,
         "score": 2576,
-        "baseline": 471.9,
+        "baseline": 472.1,
         "baseline_kind": "post",
         "multiple": 5.46,
         "velocity": null,
@@ -1611,139 +1808,168 @@
         "covered": false,
         "picked_before": false,
         "caption": "악틱몽키즈의 첫 번째 사랑노래\n\n2007년 발매된 악틱몽키즈의 정규 2집〈Favourite Worst Nightmare〉의 마지막 트랙〈505〉는 발매 당시 선공개 싱글이 아니었음에도 시간이 흐르며 밴드를 대표하는 곡으로 자리 잡았습니다. 잔잔한 오르간으로 시작해 후반부로 갈수록 감정을 폭발시키는 전개, 그리고 밴드의 프론트맨 알렉스 터너의 가장 솔직한 사랑 이야기를 담은 가사는 지금까지도 많은 팬들의 사랑을 받고 있죠.\n\n〈505〉는 분명 사랑 노래지만, 그 탄생의 이면에는 뜻밖에도 세르지오 레오네 감독의 고전 서부 영화〈석양의 무법자〉 가 자리합니다. 알렉스 터너는 영화의 마지막 총격전 씬에서 직접적인 영감을 얻었는데요. \n\n그는 영화 속 해당 장면을 장식한 엔니오 모리코네의 OST 〈The Ecstas",
-        "cluster": 249,
-        "rank": 87
+        "cluster": 255,
+        "rank": 92
       }
     ],
-    "eyesmag": [
+    "ualive_mag": [
       {
-        "id": "DdViaM-pUSy",
-        "account": "eyesmag",
-        "tier": "weekly",
+        "id": "DdNi-5wg-5B",
+        "account": "ualive_mag",
+        "tier": "daily",
         "allow_curation": false,
-        "music_native": false,
-        "url": "https://www.instagram.com/p/DdViaM-pUSy/",
-        "timestamp": "2026-09-16T05:32:24+00:00",
-        "hours": 50.3,
-        "likes": 21235,
-        "comments": 175,
-        "views": 38759,
+        "music_native": true,
+        "url": "https://www.instagram.com/p/DdNi-5wg-5B/",
+        "timestamp": "2026-09-13T03:02:14+00:00",
+        "hours": 128.1,
+        "likes": 2965,
+        "comments": 114,
+        "views": 43547,
         "is_reel": true,
-        "score": 21760,
-        "baseline": 4187.9,
+        "score": 3307,
+        "baseline": 1569.5,
         "baseline_kind": "reel",
-        "multiple": 5.2,
+        "multiple": 2.11,
         "velocity": null,
-        "label": "unsure",
-        "kind": "unknown",
-        "genres": [
-          "기타"
-        ],
-        "why": [
-          "+쇼케이스",
-          "-프랜차이즈",
-          "-캐릭터로"
-        ],
-        "kind_why": [
-          "+쇼케이스"
-        ],
-        "covered": false,
-        "picked_before": false,
-        "caption": "민기 공주가 디즈니 캐릭터로 태어났다면?🐭 ‘디즈니코리아(@disneykorea) 프랜차이즈 쇼케이스 2027’에서 에이티즈(@ateez_official_) 민기(@fixon_n_on)에게 자신과 가장 닮았다고 생각하는 디즈니 캐릭터를 물었습니다. 과연 의외의 선택일지, 누구나 고개를 끄덕일 찰떡같은 답일지 궁금한데요. 민기가 직접 밝힌 디즈니 도플갱어부터 앞으로 펼쳐질 새로운 이야기까지 영상에서 확인해 보세요. 🎥 아이즈매거진",
-        "cluster": 49,
-        "rank": 33
-      },
-      {
-        "id": "DdVgTs3J0f9",
-        "account": "eyesmag",
-        "tier": "weekly",
-        "allow_curation": false,
-        "music_native": false,
-        "url": "https://www.instagram.com/p/DdVgTs3J0f9/",
-        "timestamp": "2026-09-16T05:13:34+00:00",
-        "hours": 50.6,
-        "likes": 11958,
-        "comments": 96,
-        "views": 34554,
-        "is_reel": true,
-        "score": 12246,
-        "baseline": 4187.9,
-        "baseline_kind": "reel",
-        "multiple": 2.92,
-        "velocity": null,
-        "label": "unsure",
-        "kind": "unknown",
-        "genres": [
-          "기타"
-        ],
-        "why": [
-          "+쇼케이스",
-          "-프랜차이즈",
-          "-캐릭터로"
-        ],
-        "kind_why": [
-          "+쇼케이스"
-        ],
-        "covered": false,
-        "picked_before": false,
-        "caption": "디즈니 프린세스요? 이제 지효가 하겠습니다.👑 트와이스(@twicetagram) 지효(@_zyozyo)가 ‘디즈니코리아(@disneykorea) 프랜차이즈 쇼케이스 2027’ 현장에서 반가운 인사를 전했습니다. 하루 동안 디즈니 캐릭터로 살 수 있다면 누구를 고를지 묻자, 지효다운 답변과 사랑스러운 포즈까지 보여줬는데요. 지난 100년의 추억과 앞으로 펼쳐질 디즈니의 이야기를 지효와 함께 만나보세요. 🎥 아이즈매거진",
-        "cluster": 49,
-        "rank": 64
-      },
-      {
-        "id": "DdVkyMZJdYN",
-        "account": "eyesmag",
-        "tier": "weekly",
-        "allow_curation": false,
-        "music_native": false,
-        "url": "https://www.instagram.com/p/DdVkyMZJdYN/",
-        "timestamp": "2026-09-16T05:56:37+00:00",
-        "hours": 49.9,
-        "likes": 8219,
-        "comments": 31,
-        "views": 71882,
-        "is_reel": true,
-        "score": 8312,
-        "baseline": 4187.9,
-        "baseline_kind": "reel",
-        "multiple": 1.98,
-        "velocity": null,
-        "label": "unsure",
+        "label": "music",
         "kind": "news",
         "genres": [
-          "기타"
+          "공연"
         ],
         "why": [
-          "+쇼케이스",
-          "-프랜차이즈"
+          "+발매",
+          "+앨범",
+          "+투어",
+          "+공연",
+          "~음악",
+          "~무대"
         ],
         "kind_why": [
-          "+공개",
-          "+쇼케이스"
+          "+발매",
+          "+발표",
+          "+진행",
+          "+예정",
+          "+날짜",
+          "-여전히",
+          "-지난연도"
         ],
         "covered": false,
         "picked_before": false,
-        "caption": "디즈니 캐릭터보다 더 디즈니 캐릭터신 츄예영~!🐰 츄(@chuuo3o)가 ‘디즈니코리아(@disneykorea) 프랜차이즈 쇼케이스 2027’에 등장했습니다. 애니메이션에서 그대로 튀어나온 듯한 표정과 제스처는 물론, 최애 디즈니 캐릭터까지 직접 공개했는데요. 현실판 디즈니 캐릭터 츄의 인사말을 영상에서 확인해 보세요. 🎥 아이즈매거진",
-        "cluster": 49,
-        "rank": 87
+        "caption": "“이게 57세라고?”\n\n최근 SNS를 중심으로 마릴린 맨슨(@marilynmanson)의 라이브 영상이 다시 화제를 모으고 있습니다. 여전히 강렬한 비주얼과 무대 장악력을 보여주는 것은 물론, 팬들 사이에서는 과거보다 오히려 안정적인 라이브를 보여주고 있다는 반응까지 나오고 있는데요. 마릴린 맨슨은 2025년 약 4년간 술과 담배, 약물을 멀리해왔다고 밝히기도 했으며, 오랜 시간 무대에서 함께했던 앨리스 쿠퍼 역시 달라진 그의 모습을 언급한 바 있습니다.\n\n하지만 그의 ‘복귀’를 이야기하면서 빼놓을 수 없는 것도 있는데요. 2021년부터 이어진 성폭력 및 가정폭력 의혹과 그에 따른 법적 공방입니다. 마릴린 맨슨은 혐의를 지속적으로 부인했고, 2025년 1월 로스앤젤레스 카운티 검찰은 형사 기소를 진행하지 않",
+        "cluster": 260,
+        "rank": 98
       },
       {
-        "id": "DdXy35eCUsd",
-        "account": "eyesmag",
-        "tier": "weekly",
+        "id": "DdYfSE_ghMx",
+        "account": "ualive_mag",
+        "tier": "daily",
         "allow_curation": false,
-        "music_native": false,
-        "url": "https://www.instagram.com/p/DdXy35eCUsd/",
-        "timestamp": "2026-09-17T02:32:12+00:00",
-        "hours": 29.3,
-        "likes": 2259,
-        "comments": 22,
-        "views": null,
-        "is_reel": false,
-        "score": 2325,
-        "baseline": 902.0,
-        "baseline_kind": "post",
-        "multiple": 2.58,
+        "music_native": true,
+        "url": "https://www.instagram.com/p/DdYfSE_ghMx/",
+        "timestamp": "2026-09-17T09:01:38+00:00",
+        "hours": 26.1,
+        "likes": 3196,
+        "comments": 12,
+        "views": 23072,
+        "is_reel": true,
+        "score": 3232,
+        "baseline": 1569.5,
+        "baseline_kind": "reel",
+        "multiple": 2.06,
+        "velocity": 266.8515600378191,
+        "label": "music",
+        "kind": "news",
+        "genres": [
+          "공연",
+          "해외"
+        ],
+        "why": [
+          "+발매",
+          "+앨범",
+          "+투어",
+          "+예매",
+          "+공연",
+          "~음악"
+        ],
+        "kind_why": [
+          "+발매",
+          "+발표",
+          "+개최",
+          "+예매",
+          "+날짜",
+          "-명반",
+          "-지난연도"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "스티비 원더(Stevie Wonder)가 자신의 명반 [Songs In The Key Of Life] 발매 50주년을 기념하는 영국 투어를 개최합니다.\n\n이번 투어는 1976년 발표된 [Songs In The Key Of Life]의 50주년을 기념하는 공연으로, 현지 시간 오는 10월 13일 버밍엄 유틸리타 아레나(Utilita Arena)에서 시작되는데요. 이후 11월 3일 런던 O2, 11월 8일 맨체스터 코옵 라이브 아레나(Co-op Live Arena)를 거쳐 11월 11일 글래스고 OVO 하이드로(OVO Hydro)에서 마지막 공연을 펼칠 예정입니다.\n\n[Songs In The Key Of Life]는 ‘As’, ‘Love’s in Need of Love Today’, ‘Sir Duke’, ‘Is",
+        "cluster": 257,
+        "rank": 102
+      },
+      {
+        "id": "DdQKEI5ARxl",
+        "account": "ualive_mag",
+        "tier": "daily",
+        "allow_curation": false,
+        "music_native": true,
+        "url": "https://www.instagram.com/p/DdQKEI5ARxl/",
+        "timestamp": "2026-09-14T03:22:18+00:00",
+        "hours": 103.8,
+        "likes": 1764,
+        "comments": 19,
+        "views": 14877,
+        "is_reel": true,
+        "score": 1821,
+        "baseline": 1569.5,
+        "baseline_kind": "reel",
+        "multiple": 1.16,
+        "velocity": null,
+        "label": "music",
+        "kind": "news",
+        "genres": [
+          "밴드·인디",
+          "공연"
+        ],
+        "why": [
+          "+발매",
+          "+앨범",
+          "+음원",
+          "+내한",
+          "+투어",
+          "+공연",
+          "+밴드"
+        ],
+        "kind_why": [
+          "+발매",
+          "+공개",
+          "+발표",
+          "+내한",
+          "+날짜",
+          "-지난연도"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "2006년, 그리고 영원히 전설이 될 앨범. 🖤\n\n마이 케미컬 로맨스(@mychemicalromance 이하 MCR)가 [The Black Parade] 발매 20주년을 기념해 확장판 재발매를 공식 발표했습니다. ‘Welcome to the Black Parade’, ‘Teenagers’, ‘Famous Last Words’, ‘The Sharpest Lives’ 등 수많은 명곡을 탄생시킨 이 앨범에 총 6곡의 보너스 트랙이 추가될 예정인데요.\n\n‘Heaven Help Us’, ‘Kill All Your Friends’, ‘My Way Home Is Through You’ 등 여러 릴리즈에 흩어져 있던 B사이드 3곡과 함께 2007년 호보컨 공연에서 녹음된 ‘Dead! (Live)’, ‘The Sharpes",
+        "cluster": 262,
+        "rank": 177
+      },
+      {
+        "id": "DdSywoPA6Zz",
+        "account": "ualive_mag",
+        "tier": "daily",
+        "allow_curation": false,
+        "music_native": true,
+        "url": "https://www.instagram.com/p/DdSywoPA6Zz/",
+        "timestamp": "2026-09-15T03:56:26+00:00",
+        "hours": 79.2,
+        "likes": 1738,
+        "comments": 14,
+        "views": 8041,
+        "is_reel": true,
+        "score": 1780,
+        "baseline": 1569.5,
+        "baseline_kind": "reel",
+        "multiple": 1.13,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -1752,61 +1978,65 @@
         ],
         "why": [
           "+내한",
-          "+예매",
-          "+공연",
-          "~음악",
-          "~보컬"
+          "+투어",
+          "+공연"
         ],
         "kind_why": [
+          "+공개",
+          "+발표",
           "+개최",
-          "+예매",
-          "+내한",
-          "+날짜"
+          "+내한"
         ],
         "covered": false,
         "picked_before": false,
-        "caption": "22년 만에 처음으로 한국을 찾은 백넘버. 지난 9월 12일과 13일, 킨텍스 9홀에서 첫 내한 공연을 개최했는데요.🎶 예매 시작 후 수분 만에 전석 매진을 기록한 공연답게, 공연장은 백넘버를 기다려 온 한국 팬들의 목소리로 가득했죠. 보컬 시미즈 이요리의 “다른 점을 찾으려면 많이 있겠지만, 그런 차이를 모두 뛰어넘어 감성과 감각으로 이어질 수 있었다는 것이 정말 기쁘다.”는 말처럼, 서로 다른 언어와 문화를 넘어 음악으로 이어진 백넘버와 한국 팬들.🖤 오래 기다려 온 첫 만남, 그날의 감동을 전합니다. 📸 한다 야스마사",
-        "cluster": 47,
-        "rank": 98
+        "caption": "오아시스(@Oasis)가 마침내 내년 개최되는 <Live ’27> 투어의 세부 일정을 발표했습니다.\n\n지속된 ‘스포 아닌 스포’ 덕분에 어느 정도 예상하고 있던 소식이었지만, 역시나 오아시스는 다시 돌아왔습니다. 작년 내한 당시 ‘말이 씨가 된다’라는 오아시스의 슬로건이 참 인상 깊었는데요. 당시에는 설마 했던 이야기들이 하나둘 현실이 되는 모습을 보며 괜스레 기대했던 기억이 납니다. 특히 최근 오아시스의 다큐멘터리까지 보고 온 저에게 이번 투어 소식은 다시 한번 가슴을 뛰게 만들었습니다. \n\n자연스럽게 작년 내한 공연의 기억도 다시 떠올려보게 됐는데요. 돌이켜보면 오랫동안 기다렸던 오아시스를 한국에서 직접 만났던 그 순간들은 정말이지 꿈만 같았습니다. 비록 이번에 공개된 일정에는 아직 아시아가 포함되지 않",
+        "cluster": 259,
+        "rank": 181
       },
       {
-        "id": "DdXiXJTAQFF",
-        "account": "eyesmag",
-        "tier": "weekly",
+        "id": "DdTB1-0gEdX",
+        "account": "ualive_mag",
+        "tier": "daily",
         "allow_curation": false,
-        "music_native": false,
-        "url": "https://www.instagram.com/p/DdXiXJTAQFF/",
-        "timestamp": "2026-09-17T00:07:55+00:00",
-        "hours": 31.7,
-        "likes": 431,
-        "comments": 2,
-        "views": null,
-        "is_reel": false,
-        "score": 437,
-        "baseline": 902.0,
-        "baseline_kind": "post",
-        "multiple": 0.48,
-        "velocity": null,
-        "label": "unsure",
+        "music_native": true,
+        "url": "https://www.instagram.com/p/DdTB1-0gEdX/",
+        "timestamp": "2026-09-15T06:09:57+00:00",
+        "hours": 77.0,
+        "likes": 1492,
+        "comments": 9,
+        "views": 11311,
+        "is_reel": true,
+        "score": 1519,
+        "baseline": 1569.5,
+        "baseline_kind": "reel",
+        "multiple": 0.97,
+        "velocity": 2.496060510557832,
+        "label": "music",
         "kind": "news",
         "genres": [
+          "밴드·인디",
           "공연",
           "해외"
         ],
         "why": [
+          "+앨범",
+          "+내한",
           "+예매",
-          "=단일근거"
+          "+공연"
         ],
         "kind_why": [
+          "+발표",
+          "+티켓",
           "+예매",
-          "+진행",
-          "+날짜"
+          "+내한",
+          "+날짜",
+          "-정주행"
         ],
         "covered": false,
         "picked_before": false,
-        "caption": "극장에서 즐기는 6시간 WEC 단관 설렌다.🏎️ 오는 27일 일본 후지 스피드웨이에서 열리는 WEC 후지 6시간 레이스가 국내 극장에서 생중계됩니다. 메가박스가 제네시스와 손잡고 선보이는 이번 생중계는 메가박스 하남스타필드점에서 진행되는데요. 6시간의 레이스를 전반부와 후반부로 나눠 원하는 시간대를 선택해 관람할 수 있습니다. 예매는 오늘 오후 2시부터 메가박스 홈페이지와 모바일 앱에서 가능하며, 일반 예매 관람객에게는 팝콘과 탄산음료도 제공됩니다.🍿 📸 @genesismagmaracing / 메가박스",
-        "cluster": 48,
-        "rank": 352
+        "caption": "아.. 아..!!!!!!! 안녕하세요, 흥분한 에디터 meddlee입니다.\n\n작년 <UMA 2025>을 통해 제가 ‘올해의 앨범’으로 꼽았던 3장의 앨범은 171의 [HELLO!], 웬즈데이(Wednesday)의 [Bleeds], 그리고 제인 리무버(Jane Remover)의 [Revengeseekerz]였는데요.\n\n그리고 에디터는 올해 171은 일본에서, 웬즈데이는 서울에서 내한 공연으로 직접 마주했었습니다. 그렇다면 이 얘기를 꺼내는 지금, 다음은 이미 짐작이 가시겠죠..?\n\n명.실.상.부 디지털 네이티브 세대를 대표하는 뮤지션 제인 리무버(@janeremover)가 드디어 첫 내한 공연을 발표했습니다. 공연은 오는 12월 11일 금요일 오후 8시 홍대 무신사 개러지에서 진행되며, 전석 스탠딩으로 진행될",
+        "cluster": 258,
+        "rank": 210
       }
     ],
     "fstvl.life": [
@@ -1818,7 +2048,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Db7JgAtlNN7/",
         "timestamp": "2026-08-12T03:00:33+00:00",
-        "hours": 892.8,
+        "hours": 896.1,
         "likes": 1352,
         "comments": 33,
         "views": null,
@@ -1851,7 +2081,7 @@
         "picked_before": false,
         "caption": "XMF 2026 - 2차 라인업 및 티켓오픈\n\n일정: 2026년 10월 3~4일 (토~일)\n장소: 파라다이스시티\n가격 (할인, 한정수량)\n- 1일권 132,000원, 양일권 237,600원\n오픈: 8월 12일 (수) 오후 7시\n예매: 예스24(국내, 글로벌)\n\nXMF 2026 - 2nd Lineup & Ticket Open\n​\nDates | OCT 3-4, 2026 (Sat-Sun)\nVenue | Paradise City, Incheon\nTickets (Limited)\n- 1-DAY ₩132,000, 2-DAY ₩237,600\nOn Sale | 8. 12 (WED) 7PM\nBooking\n- Global: YES24\n- Japan: Ticket Pia, Lawson\n- China: Spring Travel J",
         "cluster": 80,
-        "rank": 102
+        "rank": 110
       },
       {
         "id": "Dc2XxvlmJig",
@@ -1861,7 +2091,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc2XxvlmJig/",
         "timestamp": "2026-09-04T03:00:29+00:00",
-        "hours": 340.8,
+        "hours": 344.1,
         "likes": 1275,
         "comments": 44,
         "views": null,
@@ -1892,7 +2122,43 @@
         "picked_before": false,
         "caption": "부산 국제 록 페스티벌 2026 - 최종 라인업\n\n일정: 2026년 10월 2~4일 (금~일)\n장소: 삼락생태공원\n가격:  3일권 266,000원, 2일권 193,000원, 1일권 120,000원\n예매: 예스24\n\nBusan International Rock Festival - Final Lineup\n\nDates | 2026. 10. 2-4 (Fri-Sun)\nVenue | Samnak Ecological Park, Busan\nTickets | 3-Day ₩266,000, 2-Day ₩193,000, 1-Day ₩120,000\nBooking | YES24\n\n#부산국제록페스티벌 #부락 #락페스티벌",
         "cluster": 68,
-        "rank": 110
+        "rank": 119
+      },
+      {
+        "id": "DcgcJPlxmf0",
+        "account": "fstvl.life",
+        "tier": "daily",
+        "allow_curation": false,
+        "music_native": true,
+        "url": "https://www.instagram.com/p/DcgcJPlxmf0/",
+        "timestamp": "2026-08-26T14:36:09+00:00",
+        "hours": 548.5,
+        "likes": 1415,
+        "comments": 10,
+        "views": null,
+        "is_reel": false,
+        "score": 1445,
+        "baseline": 408.8,
+        "baseline_kind": "post",
+        "multiple": 3.53,
+        "velocity": -0.10050812440672288,
+        "label": "unsure",
+        "kind": "unknown",
+        "genres": [
+          "공연"
+        ],
+        "why": [
+          "+공연",
+          "=단일근거"
+        ],
+        "kind_why": [
+          "+날짜"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "소규모 라이브클럽의 공연 활동 보장을 위한 「공연법」·「식품위생법」 등 관련 법령 및 제도 개선 촉구에 관한 청원\n\n동의하기: 프로필 링크에 있습니다.\n동의기간: 2026년 9월 25일까지!",
+        "cluster": 59,
+        "rank": 132
       },
       {
         "id": "Dcf52YzFNhd",
@@ -1902,7 +2168,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dcf52YzFNhd/",
         "timestamp": "2026-08-26T09:35:42+00:00",
-        "hours": 550.2,
+        "hours": 553.5,
         "likes": 1252,
         "comments": 12,
         "views": null,
@@ -1933,43 +2199,7 @@
         "picked_before": false,
         "caption": "그랜드민트페스티벌 2026 - 3차 라인업\n\n일정: 2026년 10월 17~18일 (토~일)\n장소: 올림픽공원\n가격: 1일권 132,000원\n예매: NOL, 예스24, 네이버\n\nGrand Mint Festival 2026 - 3rd Lineup\n​\nDates | OCT 17-18, 2026 (Sat-Sun)\nVenue | Olympic Park\nTickets | 1-DAY ₩132,000\nBooking | NOL, YES24, NAVER\n\n#그랜드민트페스티벌 #GMF #뮤직페스티벌",
         "cluster": 83,
-        "rank": 121
-      },
-      {
-        "id": "DcgcJPlxmf0",
-        "account": "fstvl.life",
-        "tier": "daily",
-        "allow_curation": false,
-        "music_native": true,
-        "url": "https://www.instagram.com/p/DcgcJPlxmf0/",
-        "timestamp": "2026-08-26T14:36:09+00:00",
-        "hours": 545.2,
-        "likes": 1415,
-        "comments": 10,
-        "views": null,
-        "is_reel": false,
-        "score": 1445,
-        "baseline": 408.8,
-        "baseline_kind": "post",
-        "multiple": 3.53,
-        "velocity": -0.10050812440672288,
-        "label": "unsure",
-        "kind": "unknown",
-        "genres": [
-          "공연"
-        ],
-        "why": [
-          "+공연",
-          "=단일근거"
-        ],
-        "kind_why": [
-          "+날짜"
-        ],
-        "covered": false,
-        "picked_before": false,
-        "caption": "소규모 라이브클럽의 공연 활동 보장을 위한 「공연법」·「식품위생법」 등 관련 법령 및 제도 개선 촉구에 관한 청원\n\n동의하기: 프로필 링크에 있습니다.\n동의기간: 2026년 9월 25일까지!",
-        "cluster": 59,
-        "rank": 124
+        "rank": 132
       },
       {
         "id": "DdSoxdlAbaB",
@@ -1979,7 +2209,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdSoxdlAbaB/",
         "timestamp": "2026-09-15T02:27:44+00:00",
-        "hours": 77.3,
+        "hours": 80.7,
         "likes": 1196,
         "comments": 11,
         "views": null,
@@ -2010,7 +2240,7 @@
         "picked_before": false,
         "caption": "오아시스 2027 투어 일정 및 티켓 정보\n\n내년 5월 글래스고를 시작으로 유럽 주요 도시를 거쳐 미국을 다녀와 아일랜드, 그리고 넵워스에서 마무리하는 투어 일정입니다.\n\n메일 등록: 9월 18일 (금) 0시까지 (한국 시각)\n코드 발송: 9월 24~27일 중 발송, 무작위 추첨\n판매 일정: 9월 25~27일, 도시별 티켓오픈 상이\n\n티켓 예매를 위해 메일을 등록해야 하고, 현재 홈페이지에서 신청 받고 있습니다. 예매 코드를 받아야 예매가 가능하며, 무작위 추첨으로 발송됩니다.\n\n등록 홈페이지와 오픈채팅방 모두 프로필 링크에 있습니다!\n\n#oasis #오아시스 #live27",
         "cluster": 56,
-        "rank": 130
+        "rank": 141
       }
     ],
     "glowupmag": [
@@ -2022,15 +2252,15 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DdVBBaAAXxD/",
         "timestamp": "2026-09-16T00:38:06+00:00",
-        "hours": 55.2,
+        "hours": 58.5,
         "likes": 1198,
         "comments": 7,
         "views": null,
         "is_reel": false,
         "score": 1219,
-        "baseline": 618.8,
+        "baseline": 553.5,
         "baseline_kind": "post",
-        "multiple": 1.97,
+        "multiple": 2.2,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -2052,8 +2282,47 @@
         "covered": false,
         "picked_before": false,
         "caption": "실리카겔(@sillicagel.official) 정규 2집 [POWER ANDRE 99]부터 절판된 음반까지, 5일 동안만 다시 판매합니다. ⏱️\n\n이번 온라인 선판매에는 신규 MD 2종과 음반 8종이 포함됐는데요. 구매는 품목당 1인 최대 2개로 제한됩니다. \n\n특히 많은 요청을 받았던 정규 2집을 포함해 그동안 만나기 어려웠던 음반들을 다시 만날 수 있게 됐는데요. \n\n정규 3집 발매와 아시아 투어 개최를 기념해 진행되는 이번 온라인 선판매 ‘1112’. \n\nCAM 스마트스토어를 통해 9월 18일 오후 6시까지 진행되며 배송은 10월 28일부터 순차적으로 이뤄집니다. \n\n📸 @minggurii\n\n📆 9월 14일 오후 6시 ~ 9월 18일 오후 6시\n📍 CAM 스마트스토어",
-        "cluster": 96,
-        "rank": 160
+        "cluster": 98,
+        "rank": 159
+      },
+      {
+        "id": "DdYsqtVAaFh",
+        "account": "glowupmag",
+        "tier": "weekly",
+        "allow_curation": false,
+        "music_native": false,
+        "url": "https://www.instagram.com/p/DdYsqtVAaFh/",
+        "timestamp": "2026-09-17T10:57:12+00:00",
+        "hours": 24.2,
+        "likes": 961,
+        "comments": 11,
+        "views": null,
+        "is_reel": false,
+        "score": 994,
+        "baseline": 553.5,
+        "baseline_kind": "post",
+        "multiple": 1.8,
+        "velocity": null,
+        "label": "unsure",
+        "kind": "news",
+        "genres": [
+          "기타"
+        ],
+        "why": [
+          "+발매",
+          "-카메라",
+          "-아이폰"
+        ],
+        "kind_why": [
+          "+발매",
+          "+예정",
+          "+날짜"
+        ],
+        "covered": false,
+        "picked_before": false,
+        "caption": "전면 카메라 무음 촬영, 이제 가능합니다. 🤳🏻\n\n아이폰 18 시리즈 발매와 함께 iOS27 업데이트에서 적용될 예정인데요. 직접 보고 온 아이폰 18 프로, 애플(@apple)이 제대로 힘줬습니다.\n\n더 작아진 다이나믹 아일랜드와 색상을 하나로 통일해 더욱 매끄러워진 후면, 아이폰 유저들의 희망 사항도 반영했습니다.\n\n특히 이번 아이폰 18 프로에서 주목해야 할 건 카메라인데요.\n\n가변 조리개부터 피사체 초점을 트래킹 해주는 ’포커스 트래킹‘ 기능까지 원하는 사진을 더욱 세밀하게 촬영할 수 있습니다.\n\n슬라이드를 넘겨 아이폰 17 프로와 비교한 18 프로 디자인과 카메라 기능 새로워진 아이폰 18 프로를 확인해 보세요.",
+        "cluster": 94,
+        "rank": 205
       },
       {
         "id": "DdV8ewJh_-f",
@@ -2063,15 +2332,15 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DdV8ewJh_-f/",
         "timestamp": "2026-09-16T09:18:11+00:00",
-        "hours": 46.5,
+        "hours": 49.8,
         "likes": 957,
         "comments": 4,
         "views": null,
         "is_reel": false,
         "score": 969,
-        "baseline": 618.8,
+        "baseline": 553.5,
         "baseline_kind": "post",
-        "multiple": 1.57,
+        "multiple": 1.75,
         "velocity": null,
         "label": "unsure",
         "kind": "unknown",
@@ -2087,8 +2356,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "리오넬 메시의 마지막 고별전이 10월 6일 자신의 조국 모누멘탈 스타디움에서 열립니다. ⚽️\n\n아르헨티나 축구협회는 베냉과의 친선경기에 메시를 초청해 아르헨티나 땅에서 팬들과 마지막 작별 인사를 나눌 수 있는 기회를 마련했는데요.\n\n지난 7월 월드컵 결승을 마지막으로 공식전을 마무리했던 메시의 고별전을 위해 2022 카타르 월드컵 우승을 함께 일군 선수단 전원을 초청해 뜻깊은 무대를 마련할 계획입니다.\n\n아르헨티나를 넘어 모두가 칭송하는 축구계 레전드, 메시의 마지막 경기를 함께해 보세요.\n\n📸 Getty Images",
-        "cluster": 99,
-        "rank": 216
+        "cluster": 101,
+        "rank": 220
       },
       {
         "id": "DdVNijMATs-",
@@ -2098,15 +2367,15 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DdVNijMATs-/",
         "timestamp": "2026-09-16T02:27:29+00:00",
-        "hours": 53.4,
+        "hours": 56.7,
         "likes": 359,
         "comments": 2,
         "views": null,
         "is_reel": false,
         "score": 365,
-        "baseline": 618.8,
+        "baseline": 553.5,
         "baseline_kind": "post",
-        "multiple": 0.59,
+        "multiple": 0.66,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -2133,8 +2402,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "‘솔로, 데뷔 📢’\n\n바밍타이거 멤버 ‘bj원진(@bjwnjn)’이 앨범 [망상록] 발매 소식을 전했습니다. \n\n그의 첫 공식 솔로 신보인데요.\n\nbj원진은 개인 인스타그램에 사진 한 장과 함께 직접 컴백을 알렸습니다.\n\n그동안 뛰어난 프로듀싱 능력과 매력적인 보컬로 팀의 음악적 색깔과 중심을 잡아 온 bj원진.\n\n이번 앨범 [망상록]을 통해 그만의 독창적이고 깊이 있는 음악 세계를 선보일 것으로 기대를 한껏 높이고 있는데요.\n\n한편, 앨범은 오는 10월 20일 공개될 예정입니다.\n\n📸 @bjwnjn, @balmingtiger",
-        "cluster": 97,
-        "rank": 343
+        "cluster": 99,
+        "rank": 351
       },
       {
         "id": "DdWBZkPAQrc",
@@ -2144,15 +2413,15 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DdWBZkPAQrc/",
         "timestamp": "2026-09-16T10:00:39+00:00",
-        "hours": 45.8,
+        "hours": 49.1,
         "likes": 336,
         "comments": 2,
         "views": null,
         "is_reel": false,
         "score": 342,
-        "baseline": 618.8,
+        "baseline": 553.5,
         "baseline_kind": "post",
-        "multiple": 0.55,
+        "multiple": 0.62,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -2176,50 +2445,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "‘드레이크, 돈 톨리버 🤝🏻’\n\n드레이크(@champagnepapi)의 새 프로젝트가 베일을 벗었습니다. 돈 톨리버(@dontoliver)도 참여했습니다. \n\n‘Choosin’ Texas (Remix)’가 최초로 공개됐는데요. 엘라 랭글리의 원곡을 리믹스한 버전으로, 드레이크가 지난 8월부터 리믹스 발매를 예고했던 곡이죠. \n\n영상에는 두 사람이 함께 호흡을 맞추는 모습도 담겼는데요. \n\n한편, 드레이크는 새 프로젝트 ‘FOMO’와 함께 약 1시간 분량의 뮤직비디오를 공개했습니다. 동시에 자신의 소신도 밝혔는데요. \n\n긴 영상을 천천히 되감아 다시 보며, 음악과 뮤직비디오를 만들던 초심을 되새기자는 메시지를 남겼죠. \n\n올해도 쉼 없이 새로운 음악과 영상을 선보이고 있는 드레이크. 그의 행보에 응원이 이어지",
-        "cluster": 95,
-        "rank": 358
-      },
-      {
-        "id": "DdWZQQ0AWs2",
-        "account": "glowupmag",
-        "tier": "weekly",
-        "allow_curation": false,
-        "music_native": false,
-        "url": "https://www.instagram.com/p/DdWZQQ0AWs2/",
-        "timestamp": "2026-09-16T13:29:05+00:00",
-        "hours": 42.3,
-        "likes": 310,
-        "comments": 2,
-        "views": null,
-        "is_reel": false,
-        "score": 316,
-        "baseline": 618.8,
-        "baseline_kind": "post",
-        "multiple": 0.51,
-        "velocity": null,
-        "label": "music",
-        "kind": "news",
-        "genres": [
-          "힙합",
-          "R&B",
-          "공연"
-        ],
-        "why": [
-          "+발매",
-          "+공연"
-        ],
-        "kind_why": [
-          "+발매",
-          "+공개",
-          "+예고",
-          "+합류",
-          "+날짜"
-        ],
-        "covered": false,
-        "picked_before": false,
-        "caption": "라프 산두(@okarsandou), 콜드(@wavycolde), 라드 뮤지엄(@radmuseum), 라쿠네라마(@rakunelama)를 한번에 볼 기회입니다. 🎤\n\n힙플쇼(@hiphopplaya) 64회 공연 라인업이 공개됐는데요.\n\n이번에는 요즘 종횡무진 활약 중인 ‘알앤비’ 아티스트들을 한자리에 모았습니다.\n\n최근 [ICY BABY]를 발매한 콜드를 필두로 라드 뮤지엄과 라프 산두, 그리고 알앤비 씬에 젊은 활력을 불어넣고 있는 라쿠네라마와 찬(@blessforchan)까지 합류했는데요.\n\n여기에 공연 당일 현장에서 공개되는 ‘시크릿 게스트’까지 예고돼 기대감을 더합니다.\n\n힌트는 “한국 알앤비를 이야기할 때 결코 빼놓을 수 없는, 독보적인 존재감을 지닌 아티스트”.\n\n과연 마지막 주인공은 누구일까요? ",
-        "cluster": 93,
-        "rank": 369
+        "cluster": 97,
+        "rank": 366
       }
     ],
     "indie.music.life": [
@@ -2231,7 +2458,7 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DbzpArjgTnJ/",
         "timestamp": "2026-08-09T05:01:58+00:00",
-        "hours": 962.8,
+        "hours": 966.1,
         "likes": 105,
         "comments": 0,
         "views": null,
@@ -2263,8 +2490,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "<인천 펜타포트 락 페스티벌 2026> 네 번째 관객 인터뷰\n\n”저는 주로 단독 콘서트를 더 많이 가는 편이었어요. 페스티벌은 좀 진입장벽이 높다고 느꼈거든요. 장소가 먼 곳일 때도 있고, 가격도 그렇고요. 오늘이 올해 두 번째 페스티벌인데 이제는 내가 진짜 좋아하는 뮤지션 둘만 있으면 오게 될 것 같아요. 야외에서의 분위기나 페스티벌에서 미친 듯이 잘 노는 사람들이 올려놓은 흥에 내가 좋아하는 음악이 얹어졌을 때, 단콘에 비교했을 때도 버금가거나 그 이상의 만족감이 있는 것 같아요.\n\n오리지날 러브가 그냥 설명하기 어려울 정도로 너무 좋았어요. 가끔 일본에서 디깅해온 시티팝 LP를 틀어놓고 위스키 한 잔 하면서 들어왔었는데, 시티팝을 이렇게 라이브로 들은 건 이번이 정말 처음이란 말이죠. 이제는 맥주 한잔",
-        "cluster": 255,
-        "rank": 313
+        "cluster": 268,
+        "rank": 329
       },
       {
         "id": "DcgL25DgaeB",
@@ -2274,7 +2501,7 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DcgL25DgaeB/",
         "timestamp": "2026-08-26T12:13:02+00:00",
-        "hours": 547.6,
+        "hours": 550.9,
         "likes": 103,
         "comments": 0,
         "views": null,
@@ -2301,8 +2528,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "#이주의공연\n\n인디 뮤지션의 공연 일정을 주요 예매처 기준으로\n일주일 단위로 정리해 매주 수요일에 올라갑니다💕\n\nWeekly indie gig schedules,\nupdated every Wednesday💕\n\n#인디공연 #인디음악 #Kindie #KoreanIndie",
-        "cluster": 256,
-        "rank": 316
+        "cluster": 269,
+        "rank": 332
       },
       {
         "id": "Db8J6MCgbBH",
@@ -2312,7 +2539,7 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/Db8J6MCgbBH/",
         "timestamp": "2026-08-12T12:23:21+00:00",
-        "hours": 883.4,
+        "hours": 886.7,
         "likes": 102,
         "comments": 0,
         "views": null,
@@ -2339,8 +2566,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "#이주의공연\n\n인디 뮤지션의 공연 일정을 주요 예매처 기준으로\n일주일 단위로 정리해 매주 수요일에 올라갑니다💕\n\nWeekly indie gig schedules,\nupdated every Wednesday💕\n\n#인디공연 #인디음악 #Kindie #KoreanIndie",
-        "cluster": 253,
-        "rank": 319
+        "cluster": 266,
+        "rank": 336
       },
       {
         "id": "Db2pkoNBVhf",
@@ -2350,7 +2577,7 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/Db2pkoNBVhf/",
         "timestamp": "2026-08-10T09:04:38+00:00",
-        "hours": 934.7,
+        "hours": 938.1,
         "likes": 61,
         "comments": 1,
         "views": null,
@@ -2381,8 +2608,8 @@
         "covered": false,
         "picked_before": false,
         "caption": "전기뱀장어 EP 불*꽃 쇼케이스\n\n전기뱀장어의 새 EP 앨범 〈불*꽃〉을 기념하는 쇼케이스 공연에 함께해 주세요!\n\n공연 일정: 8월 17일 (월, 대체공휴일) 오후 6시\n공연 장소: 웨스트브릿지 라이브홀\n티켓 가격: 50,000원\n티켓 예매: 멜론티켓\n\n#전기뱀장어 #쇼케이스",
-        "cluster": 257,
-        "rank": 354
+        "cluster": 270,
+        "rank": 374
       },
       {
         "id": "DcOWrUsAeY9",
@@ -2392,7 +2619,7 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DcOWrUsAeY9/",
         "timestamp": "2026-08-19T14:01:15+00:00",
-        "hours": 713.8,
+        "hours": 717.1,
         "likes": 55,
         "comments": 0,
         "views": null,
@@ -2419,24 +2646,24 @@
         "covered": false,
         "picked_before": false,
         "caption": "#이주의공연\n\n인디 뮤지션의 공연 일정을 주요 예매처 기준으로\n일주일 단위로 정리해 매주 수요일에 올라갑니다💕\n\nWeekly indie gig schedules,\nupdated every Wednesday💕\n\n#인디공연 #인디음악 #Kindie #KoreanIndie",
-        "cluster": 250,
-        "rank": 376
+        "cluster": 263,
+        "rank": 398
       }
     ]
   },
   "stats": {
-    "pool": 271,
+    "pool": 285,
     "picked": 12,
-    "clusters": 259,
+    "clusters": 272,
     "skipped": {
-      "curation": 5,
-      "non_music": 52,
-      "ad": 13,
+      "curation": 6,
+      "non_music": 59,
+      "ad": 17,
       "no_baseline": 0,
       "weak": 0,
-      "weekly_tier": 2,
+      "weekly_tier": 3,
       "picked_before": 0,
-      "quota": 18
+      "quota": 19
     }
   }
 }
