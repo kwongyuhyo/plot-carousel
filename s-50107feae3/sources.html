@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>오늘의 소재 — PLOT</title>
+<meta name="description" content="매거진 반응 스캔 후보">
+<meta name="robots" content="noindex, nofollow">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0C; --panel:#131318; --raise:#1B1B22;
+  --line:#20202A; --hair:#17171E;
+  --text:#ECECF1; --muted:#8A8A96; --dim:#565663;
+  --amber:#E8B34A; --pick:#6FBF8B; --skip:#4A4A57;
+  --u:8px;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); min-height:100dvh;
+  font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:15px; line-height:1.55;
+  -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased;
+  padding:calc(var(--u)*4 + env(safe-area-inset-top)) 22px
+          calc(var(--u)*16 + env(safe-area-inset-bottom));
+}
+[hidden]{display:none!important}
+.wrap{max-width:620px; margin:0 auto}
+.lat{font-family:var(--mono); letter-spacing:.14em; text-transform:uppercase}
+
+header{display:flex; align-items:center; gap:14px; padding-bottom:calc(var(--u)*2)}
+header .rule{flex:1; height:1px; background:var(--line)}
+header .kicker{flex:none; font-size:10.5px; font-weight:700; color:var(--dim)}
+
+h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacing:-.045em}
+.stamp{color:var(--dim); font-size:11.5px; font-family:var(--mono); letter-spacing:.02em}
+.stamp.warn{color:var(--amber)}
+
+.tabs{display:flex; gap:18px; margin:calc(var(--u)*3) 0 calc(var(--u)*1);
+  border-bottom:1px solid var(--line)}
+.tab{background:none; border:0; color:var(--dim); font:inherit; font-size:12px;
+  font-weight:700; letter-spacing:-.01em; padding:0 0 10px; cursor:pointer;
+  border-bottom:2px solid transparent; margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--text); border-bottom-color:var(--amber)}
+
+.card{border-bottom:1px solid var(--hair); padding:calc(var(--u)*2.5) 0;
+  transition:opacity .2s ease}
+.card.covered{opacity:.45}
+.card.picked{border-left:2px solid var(--pick); padding-left:12px; margin-left:-14px}
+.card.skipped{opacity:.3}
+.head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap}
+.mult{font-family:var(--mono); font-size:19px; font-weight:700; color:var(--amber);
+  letter-spacing:-.02em; flex:none}
+.acct{font-family:var(--mono); font-size:11px; color:var(--muted); letter-spacing:.02em}
+.badge{font-size:10px; font-weight:700; letter-spacing:.02em; color:var(--dim);
+  border:1px solid var(--line); border-radius:3px; padding:1px 5px}
+.badge.news{color:var(--amber); border-color:#3A3020}
+.badge.reel{color:var(--muted)}
+.cap{margin:calc(var(--u)*1.5) 0 0; font-size:14px; line-height:1.6;
+  letter-spacing:-.012em; white-space:pre-wrap; word-break:break-word}
+.stat{margin-top:calc(var(--u)*1.25); font-family:var(--mono); font-size:10.5px;
+  color:var(--dim); letter-spacing:.02em; display:flex; gap:12px; flex-wrap:wrap}
+.why{margin-top:6px; font-size:10.5px; color:var(--skip); letter-spacing:-.005em;
+  word-break:break-word}
+.acts{display:flex; gap:8px; align-items:center; margin-top:calc(var(--u)*1.75);
+  flex-wrap:wrap}
+.btn{background:none; border:1px solid var(--line); border-radius:4px;
+  color:var(--muted); font:inherit; font-size:11.5px; font-weight:700;
+  padding:6px 12px; cursor:pointer; transition:.15s ease}
+.btn:hover{border-color:var(--dim); color:var(--text)}
+.btn.on{border-color:var(--pick); color:var(--pick)}
+.btn.off{border-color:var(--skip); color:var(--skip)}
+.btn.link{border:0; padding:6px 0; color:var(--dim); text-decoration:none}
+.btn.link:hover{color:var(--amber)}
+.angle{width:100%; margin-top:8px; background:var(--panel); border:1px solid var(--line);
+  border-radius:4px; color:var(--text); font:inherit; font-size:13px;
+  padding:8px 10px; letter-spacing:-.01em}
+.angle::placeholder{color:var(--skip)}
+
+.grp{margin-top:calc(var(--u)*4)}
+.grp h3{margin:0 0 calc(var(--u)*1); font-size:12px; font-weight:700; color:var(--muted);
+  font-family:var(--mono); letter-spacing:.06em}
+.grp .base{font-size:10.5px; color:var(--dim); font-family:var(--mono)}
+
+.bar{position:fixed; left:0; right:0; bottom:0; z-index:50;
+  background:rgba(10,10,12,.94); backdrop-filter:blur(8px);
+  border-top:1px solid var(--line);
+  padding:12px 22px calc(12px + env(safe-area-inset-bottom));}
+.bar .in{max-width:620px; margin:0 auto; display:flex; align-items:center; gap:12px}
+.bar .cnt{flex:1; font-size:12px; color:var(--muted); letter-spacing:-.01em}
+.bar .cnt b{color:var(--text)}
+.send{background:var(--amber); border:0; border-radius:5px; color:#17130A;
+  font:inherit; font-size:13px; font-weight:800; padding:10px 18px; cursor:pointer;
+  letter-spacing:-.015em}
+.send[disabled]{opacity:.3; cursor:default}
+.note{margin-top:calc(var(--u)*3); color:var(--dim); font-size:11.5px; line-height:1.7}
+.note b{color:var(--muted)}
+.err{border:1px solid #4A2A2A; background:#1A1214; border-radius:5px;
+  padding:14px 16px; color:#E8A0A0; font-size:13px; line-height:1.6}
+</style>
+
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PLOT">
+<meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="rule"></div>
+    <div class="kicker"><span class="lat">Sources</span></div>
+  </header>
+
+  <h1>오늘의 소재</h1>
+  <div class="stamp" id="stamp">불러오는 중…</div>
+
+  <div id="err" class="err" hidden></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" id="tCand" role="tab" aria-selected="true">오늘의 후보</button>
+    <button class="tab" id="tAcct" role="tab" aria-selected="false">계정별</button>
+  </div>
+
+  <div id="viewCand"></div>
+  <div id="viewAcct" hidden></div>
+
+  <div class="note" id="note"></div>
+</div>
+
+<div class="bar" id="bar" hidden>
+  <div class="in">
+    <div class="cnt" id="cnt"></div>
+    <button class="send" id="send">보내기</button>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var TG = window.Telegram && window.Telegram.WebApp;
+  var inTG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
+  if (inTG) { try { TG.ready(); TG.expand(); } catch (e) {} }
+
+  var SCHEMA = 1;
+  var D = null;
+  // 선택은 메모리에만 둔다. localStorage 는 기기 간 공유가 안 돼서
+  // 폰에서 고른 게 맥에서 안 보인다 — 진짜 기록은 봇으로 보낸다.
+  var marks = {};          // id → 'pick' | 'skip'
+  var angles = {};         // id → 문자열
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function num(n) { return n == null ? '숨김' : Number(n).toLocaleString('ko-KR'); }
+  function ago(h) {
+    if (h == null) return '';
+    if (h < 24) return Math.round(h) + '시간 전';
+    return Math.round(h / 24) + '일 전';
+  }
+
+  function card(c, opts) {
+    opts = opts || {};
+    var m = marks[c.id];
+    var cls = 'card' + (c.covered ? ' covered' : '') +
+              (m === 'pick' ? ' picked' : '') + (m === 'skip' ? ' skipped' : '');
+    var badges = '';
+    if (c.kind === 'news') badges += '<span class="badge news">소식</span>';
+    else if (c.kind === 'curation') badges += '<span class="badge">큐레이션</span>';
+    if (c.is_reel) badges += ' <span class="badge reel">릴스</span>';
+    (c.genres || []).forEach(function (g) {
+      if (g !== '기타') badges += ' <span class="badge">' + esc(g) + '</span>';
+    });
+    if (c.covered) badges += ' <span class="badge">이미 다룸</span>';
+
+    var why = [].concat(c.why || [], c.kind_why || []).join(' ');
+    var base = c.baseline_kind === 'reel' ? '릴스 기준' :
+               c.baseline_kind === 'post' ? '이미지 기준' : '계정 기준';
+
+    return '' +
+      '<div class="' + cls + '" data-id="' + esc(c.id) + '">' +
+        '<div class="head">' +
+          '<span class="mult">' + (c.multiple != null ? c.multiple.toFixed(1) : '?') + 'x</span>' +
+          '<span class="acct">@' + esc(c.account) + '</span>' + badges +
+        '</div>' +
+        '<p class="cap">' + esc((c.caption || '').slice(0, 220)) + '</p>' +
+        '<div class="stat">' +
+          '<span>♥ ' + num(c.likes) + '</span>' +
+          '<span>댓글 ' + num(c.comments) + '</span>' +
+          (c.views != null ? '<span>조회 ' + num(c.views) + '</span>' : '') +
+          '<span>' + ago(c.hours) + '</span>' +
+          '<span>' + base + ' ' + num(Math.round(c.baseline || 0)) + '</span>' +
+          (c.velocity != null ? '<span>시간당 +' + Math.round(c.velocity) + '</span>' : '') +
+        '</div>' +
+        (why ? '<div class="why">' + esc(why) + '</div>' : '') +
+        (opts.plain ? '' :
+          '<div class="acts">' +
+            '<button class="btn' + (m === 'pick' ? ' on' : '') + '" data-act="pick">' +
+              (m === 'pick' ? '✓ 고름' : '고르기') + '</button>' +
+            '<button class="btn' + (m === 'skip' ? ' off' : '') + '" data-act="skip">' +
+              (m === 'skip' ? '건너뜀' : '건너뛰기') + '</button>' +
+            '<a class="btn link" href="' + esc(c.url) + '" target="_blank" rel="noopener">원문 →</a>' +
+          '</div>' +
+          (m === 'pick' ?
+            '<input class="angle" data-act="angle" placeholder="앵글 한 줄 — 어떻게 쓸지 (선택)" ' +
+            'value="' + esc(angles[c.id] || '') + '">' : '')) +
+      '</div>';
+  }
+
+  function renderCand() {
+    var v = document.getElementById('viewCand');
+    if (!D.candidates || !D.candidates.length) {
+      v.innerHTML = '<p class="note">오늘은 기준을 넘은 소식이 없습니다. ' +
+                    '계정별 탭에서 직접 훑어보세요.</p>';
+      return;
+    }
+    v.innerHTML = D.candidates.map(function (c) { return card(c); }).join('');
+  }
+
+  function renderAcct() {
+    var v = document.getElementById('viewAcct');
+    var out = [];
+    Object.keys(D.by_account || {}).forEach(function (a) {
+      var meta = (D.accounts || {})[a] || {};
+      out.push('<div class="grp"><h3>@' + esc(a) +
+        ' <span class="base">기준선 ' + num(Math.round(meta.baseline || 0)) +
+        ' · 하루 ' + (meta.per_day != null ? meta.per_day : '?') + '개</span></h3>' +
+        D.by_account[a].map(function (c) { return card(c, { plain: true }); }).join('') +
+        '</div>');
+    });
+    v.innerHTML = out.join('') || '<p class="note">계정 데이터가 없습니다.</p>';
+  }
+
+  function refreshBar() {
+    var p = 0, s = 0;
+    Object.keys(marks).forEach(function (k) {
+      if (marks[k] === 'pick') p++; else if (marks[k] === 'skip') s++;
+    });
+    var bar = document.getElementById('bar');
+    bar.hidden = (p + s) === 0;
+    document.getElementById('cnt').innerHTML =
+      '고른 <b>' + p + '</b>건' + (s ? ' · 건너뛴 ' + s + '건' : '');
+    document.getElementById('send').disabled = (p + s) === 0;
+  }
+
+  function onClick(e) {
+    var btn = e.target.closest('[data-act]');
+    if (!btn || btn.tagName === 'INPUT') return;
+    var host = e.target.closest('[data-id]');
+    if (!host) return;
+    var id = host.getAttribute('data-id');
+    var act = btn.getAttribute('data-act');
+    marks[id] = marks[id] === act ? undefined : act;
+    if (marks[id] === undefined) delete marks[id];
+    renderCand(); refreshBar();
+  }
+
+  function onInput(e) {
+    var el = e.target;
+    if (el.getAttribute && el.getAttribute('data-act') === 'angle') {
+      var host = el.closest('[data-id]');
+      if (host) angles[host.getAttribute('data-id')] = el.value;
+    }
+  }
+
+  function payload() {
+    var now = new Date().toISOString();
+    var byId = {};
+    (D.candidates || []).forEach(function (c) { byId[c.id] = c; });
+    return Object.keys(marks).map(function (id) {
+      var c = byId[id] || {};
+      var o = { v: 1, action: marks[id], id: id, account: c.account || '?', at: now };
+      if (angles[id]) o.angle = angles[id].slice(0, 200);
+      if (c.multiple != null) o.multiple = c.multiple;
+      if (c.kind) o.kind = c.kind;
+      if (c.genres) o.genres = c.genres;
+      return o;
+    });
+  }
+
+  function send() {
+    var body = JSON.stringify(payload());
+    if (inTG && TG.sendData) {
+      if (new Blob([body]).size > 3800) {
+        alert('한 번에 보낼 수 있는 양을 넘었습니다. 몇 건 줄여서 보내주세요.');
+        return;
+      }
+      TG.sendData(body);          // 보내면 미니앱이 닫힌다
+      return;
+    }
+    // 텔레그램 밖에서는 복사로 대신한다 — 웹에서 봇을 직접 부를 길이 없다.
+    var ok = false;
+    try {
+      navigator.clipboard.writeText(body);
+      ok = true;
+    } catch (err) { ok = false; }
+    var el = document.getElementById('cnt');
+    el.innerHTML = ok
+      ? '복사했습니다 — 텔레그램 봇에 붙여넣으세요'
+      : '복사에 실패했습니다. 텔레그램 안에서 열어주세요';
+  }
+
+  function stale(genAt) {
+    // "2026-09-18 08:05 KST"
+    var m = /(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})/.exec(genAt || '');
+    if (!m) return null;
+    var t = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4] - 9, +m[5]);
+    return (Date.now() - t) / 36e5;
+  }
+
+  function boot(d) {
+    D = d;
+    if (D.schema !== SCHEMA) {
+      var e = document.getElementById('err');
+      e.hidden = false;
+      e.textContent = '데이터 형식이 다릅니다 (schema ' + D.schema + ', 이 화면은 ' +
+                      SCHEMA + '). 앱을 새로 배포해야 합니다.';
+      return;
+    }
+    var st = document.getElementById('stamp');
+    var h = stale(D.generated_at);
+    st.textContent = D.generated_at +
+      (h != null && h >= 12 ? ' · ' + Math.round(h) + '시간 전 데이터' : '');
+    if (h != null && h >= 12) st.classList.add('warn');
+
+    renderCand(); renderAcct(); refreshBar();
+
+    var s = (D.stats || {});
+    document.getElementById('note').innerHTML =
+      '풀 <b>' + (s.pool || 0) + '</b>건에서 추린 <b>' +
+      (s.picked || 0) + '</b>건입니다. ' +
+      '배수는 그 계정 평소 반응 대비이고, 릴스와 이미지는 따로 잽니다. ' +
+      '‘이미 다룸’은 지우지 않고 흐리게만 둡니다 — 같은 사안을 다른 앵글로 다시 쓸 수 있으니까요.';
+  }
+
+  document.addEventListener('click', onClick);
+  document.addEventListener('input', onInput);
+  document.getElementById('send').addEventListener('click', send);
+  document.getElementById('tCand').addEventListener('click', function () {
+    this.setAttribute('aria-selected', 'true');
+    document.getElementById('tAcct').setAttribute('aria-selected', 'false');
+    document.getElementById('viewCand').hidden = false;
+    document.getElementById('viewAcct').hidden = true;
+  });
+  document.getElementById('tAcct').addEventListener('click', function () {
+    this.setAttribute('aria-selected', 'true');
+    document.getElementById('tCand').setAttribute('aria-selected', 'false');
+    document.getElementById('viewAcct').hidden = false;
+    document.getElementById('viewCand').hidden = true;
+  });
+
+  fetch('./magazines.json', { cache: 'no-cache' })
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(boot)
+    .catch(function (err) {
+      document.getElementById('stamp').textContent = '';
+      var e = document.getElementById('err');
+      e.hidden = false;
+      e.textContent = '후보 데이터를 불러오지 못했습니다 (' + err.message + '). ' +
+        '맥에서 스캔이 아직 안 돌았거나 배포가 안 된 상태일 수 있습니다.';
+    });
+})();
+</script>
+</body>
+</html>
+
+<script>
+(function () {
+  function put() {
+    var a = document.createElement('a');
+    a.href = './';
+    a.textContent = '← PLOT 제작';
+    a.setAttribute('aria-label', 'PLOT 제작 홈으로');
+    // 테두리를 두르면 제목보다 무거워진다. 글자만 남기고 흐리게.
+    var base = 'font:700 11.5px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
+               'color:#8A8A96;text-decoration:none;white-space:nowrap;letter-spacing:-.01em;' +
+               'padding:5px 0;border:0;background:none;flex:none;';
+    // 텔레그램 데스크톱은 미니앱을 폰 크기 창으로 띄운다 — 화면이 넓어도 창은 그대로다.
+    // 그래서 컴퓨터에서는 브라우저로 넘어가는 길을 한 번에 열어준다.
+    var TG = window.Telegram && window.Telegram.WebApp;
+    var inTG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
+    var wide = null;
+    if (inTG) {
+      wide = document.createElement('button');
+      wide.type = 'button';
+      wide.textContent = '🖥 브라우저에서';
+      wide.title = '넓은 화면에서 열기';
+      wide.onclick = function () {
+        try { TG.openLink(location.href); } catch (e) { window.open(location.href, '_blank'); }
+      };
+    }
+
+    var h = document.querySelector('header');
+    if (h) {
+      a.style.cssText = base + 'margin-right:14px;';
+      h.insertBefore(a, h.firstChild);
+      if (wide) {
+        wide.style.cssText = base + 'margin-right:14px;cursor:pointer;';
+        h.insertBefore(wide, a.nextSibling);
+      }
+    } else {
+      a.style.cssText = base +
+        'position:fixed;left:12px;top:12px;z-index:9999;padding:6px 10px;' +
+        'border-radius:6px;background:rgba(10,10,12,.72);color:#ECECF1;' +
+        'backdrop-filter:blur(8px);';
+      document.body.appendChild(a);
+      if (wide) {
+        wide.style.cssText = base +
+          'position:fixed;left:122px;top:12px;z-index:9999;padding:6px 10px;' +
+          'border-radius:6px;background:rgba(10,10,12,.72);color:#ECECF1;' +
+          'backdrop-filter:blur(8px);cursor:pointer;';
+        document.body.appendChild(wide);
+      }
+    }
+  }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', put);
+  else put();
+})();
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  addEventListener('load', function () {
+    // updateViaCache:'none' — 이게 없으면 sw.js 자체가 HTTP 캐시에 걸린다.
+    // 캐시 규칙을 고친 새 워커가 옛 캐시 때문에 안 실리는, 웃기지만 실제로 겪은 일.
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+      .then(function (r) { r.update(); })
+      .catch(function () {});
+  });
+}
+</script>

@@ -6,9 +6,9 @@
  *
  * 버전을 올리면 옛 캐시는 activate 에서 통째로 지운다.
  */
-const V = 'plot-app-v3';
+const V = 'plot-app-v4';
 const SHELL = [
-  './', './index.html', './carousel.html', './shorts.html',
+  './', './index.html', './carousel.html', './shorts.html', './sources.html',
   './f-eb.woff2', './f-sb.woff2', './f-nb.woff2',
   './icon-192.png', './icon-512.png', './maskable-512.png',
   './manifest.webmanifest',
@@ -39,8 +39,12 @@ self.addEventListener('fetch', (e) => {
 
   const isDoc = req.mode === 'navigate' || url.pathname.endsWith('.html') ||
                 url.pathname.endsWith('/');
+  // 데이터 파일은 하루 두 번 갱신된다. 캐시 우선으로 주면 처음 받은 후보가
+  // 영원히 고정돼서 '어제 것을 보고 있는' 사고가 난다. HTML 과 같은 규칙으로.
+  const isData = url.pathname.endsWith('.json') &&
+                 !url.pathname.endsWith('manifest.webmanifest');
 
-  if (isDoc) {
+  if (isDoc || isData) {
     e.respondWith(
       // 브라우저의 HTTP 캐시를 건너뛰고 서버에 직접 물어본다.
       // GitHub Pages 가 max-age=600 을 주므로 그냥 fetch 하면 배포하고 10분 동안
@@ -55,7 +59,7 @@ self.addEventListener('fetch', (e) => {
           caches.open(V).then((c) => c.put(req, copy));
           return res;
         })
-        .catch(() => caches.match(req).then((r) => r || caches.match('./index.html')))
+        .catch(() => caches.match(req).then((r) => r || (isDoc ? caches.match('./index.html') : undefined)))
     );
   } else {
     e.respondWith(
