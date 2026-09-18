@@ -74,6 +74,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .btn:hover{border-color:var(--dim); color:var(--text)}
 .btn.on{border-color:var(--pick); color:var(--pick)}
 .btn.off{border-color:var(--skip); color:var(--skip)}
+.btn.draft{border-color:var(--amber); color:var(--amber)}
 .btn.link{border:0; padding:6px 0; color:var(--dim); text-decoration:none}
 .btn.link:hover{color:var(--amber)}
 .angle{width:100%; margin-top:8px; background:var(--panel); border:1px solid var(--line);
@@ -206,12 +207,16 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
           '<div class="acts">' +
             '<button class="btn' + (m === 'pick' ? ' on' : '') + '" data-act="pick">' +
               (m === 'pick' ? '✓ 고름' : '고르기') + '</button>' +
+            '<button class="btn' + (m === 'drafted' ? ' draft' : '') + '" data-act="drafted">' +
+              (m === 'drafted' ? '✎ 초안' : '초안') + '</button>' +
             '<button class="btn' + (m === 'skip' ? ' off' : '') + '" data-act="skip">' +
               (m === 'skip' ? '건너뜀' : '건너뛰기') + '</button>' +
             '<a class="btn link" href="' + esc(c.url) + '" target="_blank" rel="noopener">원문 →</a>' +
           '</div>' +
-          (m === 'pick' ?
-            '<input class="angle" data-act="angle" placeholder="앵글 한 줄 — 어떻게 쓸지 (선택)" ' +
+          (m === 'pick' || m === 'drafted' ?
+            '<input class="angle" data-act="angle" placeholder="' +
+            (m === 'drafted' ? '앵글 한 줄 — 이 각도로 씁니다 (선택)'
+                             : '앵글 한 줄 — 어떻게 쓸지 (선택)') + '" ' +
             'value="' + esc(angles[c.id] || '') + '">' : '')) +
       '</div>';
   }
@@ -241,15 +246,21 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   }
 
   function refreshBar() {
-    var p = 0, s = 0;
+    var p = 0, s = 0, d = 0;
     Object.keys(marks).forEach(function (k) {
-      if (marks[k] === 'pick') p++; else if (marks[k] === 'skip') s++;
+      if (marks[k] === 'pick') p++;
+      else if (marks[k] === 'skip') s++;
+      else if (marks[k] === 'drafted') d++;
     });
     var bar = document.getElementById('bar');
-    bar.hidden = (p + s) === 0;
+    bar.hidden = (p + s + d) === 0;
+    var parts = [];
+    if (p) parts.push('고른 <b>' + p + '</b>건');
+    if (d) parts.push('초안 <b>' + d + '</b>건');
+    if (s) parts.push('건너뛴 ' + s + '건');
     document.getElementById('cnt').innerHTML =
-      '고른 <b>' + p + '</b>건' + (s ? ' · 건너뛴 ' + s + '건' : '');
-    document.getElementById('send').disabled = (p + s) === 0;
+      parts.join(' · ') + (d > 3 ? ' <i>— 초안은 3건까지 만듭니다</i>' : '');
+    document.getElementById('send').disabled = (p + s + d) === 0;
   }
 
   function onClick(e) {
@@ -276,6 +287,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     var now = new Date().toISOString();
     var byId = {};
     (D.candidates || []).forEach(function (c) { byId[c.id] = c; });
+    Object.keys(D.by_account || {}).forEach(function (a) {
+      (D.by_account[a] || []).forEach(function (c) { if (!byId[c.id]) byId[c.id] = c; });
+    });
     return Object.keys(marks).map(function (id) {
       var c = byId[id] || {};
       var o = { v: 1, action: marks[id], id: id, account: c.account || '?', at: now };
