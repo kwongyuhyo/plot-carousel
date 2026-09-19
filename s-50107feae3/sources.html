@@ -125,6 +125,17 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   color:var(--dim); padding:3px 0}
 .pf .row b{color:var(--text); font-family:var(--mono)}
 .pf .sub{font-size:11px; color:var(--skip); margin-top:4px; line-height:1.5}
+.ns{border-bottom:1px solid var(--line); padding:calc(var(--u)*2) 0}
+.ns h3{margin:0 0 3px; font-size:15px; font-weight:700; letter-spacing:-.02em}
+.ns .sig{font-size:11.5px; color:var(--dim); font-family:var(--mono)}
+.ns .mult{color:var(--amber); font-weight:700}
+.ns .arts{margin-top:8px}
+.ns .arts a{display:block; font-size:12.5px; color:var(--muted); text-decoration:none;
+  padding:3px 0 3px 10px; border-left:1px solid var(--line); line-height:1.45}
+.ns .arts a:hover{color:var(--text); border-color:var(--dim)}
+.ns .arts .src{font-size:10.5px; color:var(--skip); font-family:var(--mono)}
+.xref{display:inline-block; margin-top:6px; font-size:11px; color:var(--pick);
+  border:1px solid var(--pick); border-radius:3px; padding:2px 6px}
 .btn.link{border:0; padding:6px 0; color:var(--dim); text-decoration:none}
 .btn.link:hover{color:var(--amber)}
 .angle{width:100%; margin-top:8px; background:var(--panel); border:1px solid var(--line);
@@ -180,6 +191,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   <div class="tabs" role="tablist">
     <button class="tab" id="tCand" role="tab" aria-selected="true">오늘의 후보</button>
     <button class="tab" id="tAcct" role="tab" aria-selected="false">계정별</button>
+    <button class="tab" id="tNews" role="tab" aria-selected="false">뉴스 급상승</button>
     <button class="tab" id="tPerf" role="tab" aria-selected="false">PLOT 성과</button>
   </div>
 
@@ -196,6 +208,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 
   <div id="viewCand"></div>
   <div id="viewAcct" hidden></div>
+  <div id="viewNews" hidden></div>
   <div id="viewPerf" hidden></div>
 
   <div class="note" id="note"></div>
@@ -276,6 +289,8 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
           '" alt="" onerror="this.remove()">' : '') +
         (why ? '<div class="why">' + esc(why) + '</div>' : '') +
         kindWarn(c) +
+        (c.news_surge ? '<div class="xref">뉴스도 ' + c.news_surge.multiple +
+          '배 (' + esc(c.news_surge.entity) + ') — 먼저 보세요</div>' : '') +
         (opts.plain ? '' :
           '<div class="acts">' +
             '<button class="btn' + (m === 'pick' ? ' on' : '') + '" data-act="pick">' +
@@ -344,6 +359,39 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     var dir = k.multiple < 1 ? '아래' : '위';
     return '<div class="warn-kind">' + esc(k.kind) + ' 결 — PLOT 실적 ' +
            k.multiple + '배 (기준선 ' + dir + ', n=' + k.n + ')</div>';
+  }
+
+  /* 뉴스 급상승 — 매거진과 다른 축이다. 매거진은 '편집자가 고른 것',
+     이쪽은 '세상이 갑자기 찾는 것'. 둘 다 걸리면 제일 강한 신호라 짚어준다. */
+  function renderNews() {
+    var v = document.getElementById('viewNews');
+    var list = (D.news || []);
+    if (!list.length) {
+      v.innerHTML = '<p class="note">지금은 기준(평소의 3배)을 넘은 아티스트가 없습니다. ' +
+                    '차트·기사 수를 매일 재고 있으니 움직이면 여기 올라옵니다.</p>';
+      return;
+    }
+    var out = ['<p class="note">차트 순위와 기사 수를 아티스트별로 매일 재서, ' +
+               '평소의 <b>3배</b>를 넘은 것만 최대 6건 올립니다. ' +
+               '매거진 후보와 겹치면 <b>양쪽</b> 표시가 붙습니다.</p>'];
+    list.forEach(function (s) {
+      var arts = (s.articles || []).map(function (a) {
+        return '<a href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
+               esc(a.title) + (a.source ? ' <span class="src">' + esc(a.source) + '</span>' : '') +
+               '</a>';
+      }).join('');
+      out.push('<div class="ns">' +
+        '<h3>' + esc(s.entity) + '</h3>' +
+        '<div class="sig"><span class="mult">' + s.multiple + '배</span> · ' + esc(s.why) + '</div>' +
+        (s.also_in_magazine
+          ? '<div class="xref">매거진에도 ' + s.also_in_magazine.length + '건 — 먼저 보세요</div>'
+          : '') +
+        (arts ? '<div class="arts">' + arts + '</div>'
+              : '<div class="arts"><span class="src">기사를 못 불러왔습니다 — ' +
+                '맥에서 스캔이 돌면 붙습니다</span></div>') +
+        '</div>');
+    });
+    v.innerHTML = out.join('');
   }
 
   function renderPerf() {
@@ -544,6 +592,8 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       (h != null && h >= 12 ? ' · ' + Math.round(h) + '시간 전 데이터' : '');
     if (h != null && h >= 12) st.classList.add('warn');
 
+    var nn = (D.news || []).length;
+    if (nn) document.getElementById('tNews').textContent = '뉴스 급상승 ' + nn;
     renderFilters(); renderCand(); renderAcct(); refreshBar();
 
     var s = (D.stats || {});
@@ -603,8 +653,8 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   });
 
   function showTab(which) {
-    var t = { cand: 'tCand', acct: 'tAcct', perf: 'tPerf' };
-    var v = { cand: 'viewCand', acct: 'viewAcct', perf: 'viewPerf' };
+    var t = { cand: 'tCand', acct: 'tAcct', news: 'tNews', perf: 'tPerf' };
+    var v = { cand: 'viewCand', acct: 'viewAcct', news: 'viewNews', perf: 'viewPerf' };
     Object.keys(t).forEach(function (k) {
       document.getElementById(t[k]).setAttribute('aria-selected', String(k === which));
       document.getElementById(v[k]).hidden = (k !== which);
@@ -612,9 +662,11 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     var fl = document.getElementById('filters');
     fl.hidden = (which !== 'cand') || !(D.candidates || []).length;
     if (which === 'perf') renderPerf();
+    if (which === 'news') renderNews();
   }
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
   document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
+  document.getElementById('tNews').addEventListener('click', function () { showTab('news'); });
   document.getElementById('tPerf').addEventListener('click', function () { showTab('perf'); });
 
   // 성과는 곁다리다. 실패해도 후보 화면은 그대로 뜬다.
