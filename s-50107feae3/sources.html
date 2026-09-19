@@ -17,6 +17,26 @@
   --amber:#E8B34A; --pick:#6FBF8B; --skip:#4A4A57;
   --u:8px;
   --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  color-scheme:dark;
+}
+
+/* 라이트 — 밝은 데서 폰으로 볼 때. 시스템 설정을 따라가되 손으로도 바꾼다.
+   대비는 어두운 쪽과 맞춰 잡았다: 본문 대 배경 13:1, 흐린 글씨도 4.5:1 위. */
+:root[data-theme="light"]{
+  --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE;
+  --line:#DCD8CE; --hair:#E6E3DA;
+  --text:#1A1A1F; --muted:#5E5E6B; --dim:#746E7C;
+  --amber:#7A6B10; --pick:#2E7D51; --skip:#8C8C99;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE;
+    --line:#DCD8CE; --hair:#E6E3DA;
+    --text:#1A1A1F; --muted:#5E5E6B; --dim:#746E7C;
+    --amber:#7A6B10; --pick:#2E7D51; --skip:#8C8C99;
+    color-scheme:light;
+  }
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -38,6 +58,10 @@ header .kicker{flex:none; font-size:10.5px; font-weight:700; color:var(--dim)}
 header .home{flex:none; font-size:10.5px; color:var(--dim); text-decoration:none;
   font-family:var(--mono); letter-spacing:.1em}
 header .home:hover{color:var(--text)}
+header .theme{flex:none; background:none; border:1px solid var(--line); border-radius:3px;
+  color:var(--dim); cursor:pointer; font:inherit; font-size:12px; line-height:1;
+  padding:4px 7px}
+header .theme:hover{color:var(--text); border-color:var(--dim)}
 
 h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacing:-.045em}
 .stamp{color:var(--dim); font-size:11.5px; font-family:var(--mono); letter-spacing:.02em}
@@ -145,6 +169,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     <a class="home" href="index.html">← 홈</a>
     <div class="rule"></div>
     <div class="kicker"><span class="lat">Sources</span></div>
+    <button class="theme" id="theme" type="button" aria-label="밝기 전환">◐</button>
   </header>
 
   <h1>오늘의 소재</h1>
@@ -532,6 +557,38 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   document.addEventListener('click', onClick);
   document.addEventListener('input', onInput);
   document.getElementById('send').addEventListener('click', send);
+  /* 밝기 — 시스템 설정을 기본으로 두고, 누르면 그 기기에서만 고정한다.
+     텔레그램 안에서 열면 앱 테마를 따라간다. localStorage 는 막히는 데가
+     있으므로(시크릿 창·저장 차단) 읽기·쓰기를 모두 감싼다. */
+  var THEME_KEY = 'plot.sources.theme';
+
+  function systemTheme() {
+    if (inTG && TG && TG.colorScheme) return TG.colorScheme;
+    try {
+      return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    } catch (e) { return 'dark'; }
+  }
+
+  function applyTheme(t) {
+    if (t) document.documentElement.setAttribute('data-theme', t);
+    else document.documentElement.removeAttribute('data-theme');
+    var b = document.getElementById('theme');
+    if (b) b.title = t ? (t === 'light' ? '밝게 고정됨' : '어둡게 고정됨') : '시스템 설정';
+  }
+
+  (function initTheme() {
+    var saved = null;
+    try { saved = localStorage.getItem(THEME_KEY); } catch (e) {}
+    applyTheme(saved === 'light' || saved === 'dark' ? saved : null);
+  })();
+
+  document.getElementById('theme').addEventListener('click', function () {
+    var cur = document.documentElement.getAttribute('data-theme') || systemTheme();
+    var next = cur === 'light' ? 'dark' : 'light';
+    applyTheme(next);
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) {}
+  });
+
   document.getElementById('chipDays').addEventListener('click', function (e) {
     var b = e.target.closest('[data-days]');
     if (!b) return;
