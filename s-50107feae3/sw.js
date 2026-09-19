@@ -6,7 +6,7 @@
  *
  * 버전을 올리면 옛 캐시는 activate 에서 통째로 지운다.
  */
-const V = 'plot-app-v10';
+const V = 'plot-app-v11';
 const SHELL = [
   './', './index.html', './carousel.html', './shorts.html', './sources.html',
   './f-eb.woff2', './f-sb.woff2', './f-nb.woff2',
