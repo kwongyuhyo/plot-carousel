@@ -78,6 +78,18 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .btn.on{border-color:var(--pick); color:var(--pick)}
 .btn.off{border-color:var(--skip); color:var(--skip)}
 .btn.draft{border-color:var(--amber); color:var(--amber)}
+.filters{margin:calc(var(--u)*2) 0 calc(var(--u)*1)}
+.frow{display:flex; align-items:flex-start; gap:10px; padding:4px 0}
+.flab{flex:none; width:38px; font-size:11px; color:var(--skip); padding-top:5px;
+  font-family:var(--mono); letter-spacing:.06em}
+.chips{display:flex; flex-wrap:wrap; gap:5px}
+.chip{background:none; border:1px solid var(--line); border-radius:3px; cursor:pointer;
+  color:var(--dim); font:inherit; font-size:11.5px; padding:3px 8px}
+.chip:hover{color:var(--text)}
+.chip.on{border-color:var(--amber); color:var(--amber)}
+.chip .n{font-family:var(--mono); font-size:10px; opacity:.65; margin-left:4px}
+.thumb{float:left; width:64px; height:64px; margin:0 10px 6px 0; border-radius:3px;
+  object-fit:cover; background:var(--panel); border:1px solid var(--line)}
 .warn-kind{display:inline-block; margin-top:6px; font-size:11px; color:var(--amber);
   border:1px solid var(--line); border-radius:3px; padding:2px 6px}
 .hint{margin:calc(var(--u)*2) 0; padding:10px 12px; border-left:2px solid var(--amber);
@@ -144,6 +156,17 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     <button class="tab" id="tCand" role="tab" aria-selected="true">오늘의 후보</button>
     <button class="tab" id="tAcct" role="tab" aria-selected="false">계정별</button>
     <button class="tab" id="tPerf" role="tab" aria-selected="false">PLOT 성과</button>
+  </div>
+
+  <div class="filters" id="filters" hidden>
+    <div class="frow">
+      <span class="flab">기간</span>
+      <div class="chips" id="chipDays"></div>
+    </div>
+    <div class="frow">
+      <span class="flab">매거진</span>
+      <div class="chips" id="chipAcct"></div>
+    </div>
   </div>
 
   <div id="viewCand"></div>
@@ -223,6 +246,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
           '<span>' + base + ' ' + num(Math.round(c.baseline || 0)) + '</span>' +
           (c.velocity != null ? '<span>시간당 +' + Math.round(c.velocity) + '</span>' : '') +
         '</div>' +
+        // 인스타 CDN 주소는 서명이 만료되면 깨진다 — 그때는 조용히 숨긴다.
+        (c.image ? '<img class="thumb" loading="lazy" src="' + esc(c.image) +
+          '" alt="" onerror="this.remove()">' : '') +
         (why ? '<div class="why">' + esc(why) + '</div>' : '') +
         kindWarn(c) +
         (opts.plain ? '' :
@@ -245,6 +271,44 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   }
 
   var P = null;          // performance.json — 없어도 나머지는 그대로 돈다
+
+  /* 기간·매거진 거르기. 순위 자체는 맥에서 이미 7일로 자르지만, 여기서
+     더 좁혀 보거나(오늘 것만) 한 매거진만 보는 건 화면에서 한다. */
+  var DAYS = [{ k: 1, t: '오늘' }, { k: 2, t: '이틀' }, { k: 3, t: '사흘' },
+              { k: 7, t: '일주일' }, { k: 0, t: '전체' }];
+  var fDays = 0;         // 0 = 전체
+  var fAcct = null;      // null = 전체
+
+  function pass(c) {
+    if (fAcct && c.account !== fAcct) return false;
+    if (fDays && (c.hours == null || c.hours > fDays * 24)) return false;
+    return true;
+  }
+
+  function renderFilters() {
+    var all = D.candidates || [];
+    if (!all.length) { document.getElementById('filters').hidden = true; return; }
+    document.getElementById('filters').hidden = false;
+
+    var d = DAYS.map(function (o) {
+      var n = all.filter(function (c) {
+        return !o.k || (c.hours != null && c.hours <= o.k * 24);
+      }).length;
+      return '<button class="chip' + (fDays === o.k ? ' on' : '') + '" data-days="' + o.k +
+             '">' + o.t + '<span class="n">' + n + '</span></button>';
+    });
+    document.getElementById('chipDays').innerHTML = d.join('');
+
+    var by = {};
+    all.forEach(function (c) { by[c.account] = (by[c.account] || 0) + 1; });
+    var a = ['<button class="chip' + (fAcct ? '' : ' on') + '" data-acct="">전체' +
+             '<span class="n">' + all.length + '</span></button>'];
+    Object.keys(by).sort(function (x, y) { return by[y] - by[x]; }).forEach(function (k) {
+      a.push('<button class="chip' + (fAcct === k ? ' on' : '') + '" data-acct="' + esc(k) +
+             '">' + esc(k) + '<span class="n">' + by[k] + '</span></button>');
+    });
+    document.getElementById('chipAcct').innerHTML = a.join('');
+  }
 
   /* 결 경고 — '확실한' 결에만 붙인다. 흔들리는 수치를 카드에 박으면
      편집 판단을 잘못된 근거로 끌고 간다. */
@@ -325,7 +389,10 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
                     '계정별 탭에서 직접 훑어보세요.</p>';
       return;
     }
-    v.innerHTML = hint + D.candidates.map(function (c) { return card(c); }).join('');
+    var list = D.candidates.filter(pass);
+    v.innerHTML = hint + (list.length
+      ? list.map(function (c) { return card(c); }).join('')
+      : '<p class="note">이 조건에 맞는 후보가 없습니다. 기간이나 매거진을 넓혀보세요.</p>');
   }
 
   function renderAcct() {
@@ -452,7 +519,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       (h != null && h >= 12 ? ' · ' + Math.round(h) + '시간 전 데이터' : '');
     if (h != null && h >= 12) st.classList.add('warn');
 
-    renderCand(); renderAcct(); refreshBar();
+    renderFilters(); renderCand(); renderAcct(); refreshBar();
 
     var s = (D.stats || {});
     document.getElementById('note').innerHTML =
@@ -465,6 +532,19 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   document.addEventListener('click', onClick);
   document.addEventListener('input', onInput);
   document.getElementById('send').addEventListener('click', send);
+  document.getElementById('chipDays').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-days]');
+    if (!b) return;
+    fDays = parseInt(b.getAttribute('data-days'), 10) || 0;
+    renderFilters(); renderCand();
+  });
+  document.getElementById('chipAcct').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-acct]');
+    if (!b) return;
+    fAcct = b.getAttribute('data-acct') || null;
+    renderFilters(); renderCand();
+  });
+
   function showTab(which) {
     var t = { cand: 'tCand', acct: 'tAcct', perf: 'tPerf' };
     var v = { cand: 'viewCand', acct: 'viewAcct', perf: 'viewPerf' };
@@ -472,6 +552,8 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       document.getElementById(t[k]).setAttribute('aria-selected', String(k === which));
       document.getElementById(v[k]).hidden = (k !== which);
     });
+    var fl = document.getElementById('filters');
+    fl.hidden = (which !== 'cand') || !(D.candidates || []).length;
     if (which === 'perf') renderPerf();
   }
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
