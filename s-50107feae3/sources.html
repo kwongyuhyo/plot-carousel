@@ -151,6 +151,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .quiet summary::-webkit-details-marker{display:none}
 .quiet summary:hover{color:var(--muted)}
 .quiet .q{font-size:12px; color:var(--dim); padding:4px 0; font-family:var(--mono)}
+.quiet .qa{display:block; margin-top:2px; font-size:12.5px; color:var(--muted);
+           text-decoration:none; font-family:var(--sans, inherit)}
+.quiet .qa:hover{color:var(--text)}
 .xref{display:inline-block; margin-top:6px; font-size:11px; color:var(--pick);
   border:1px solid var(--pick); border-radius:3px; padding:2px 6px}
 .btn.link{border:0; padding:6px 0; color:var(--dim); text-decoration:none}
@@ -423,8 +426,13 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     });
 
     if (loud.length && quiet.length) {
+      /* 접혀 있어도 기사 제목은 보여준다 — 발언이 없을 뿐 소재가 없는 건 아니다
+         ('도경수 재예매 매진' 처럼 사실만 있는 기사가 여기 걸린다). */
       var qs = quiet.map(function (s) {
-        return '<div class="q">' + esc(s.entity) + ' · ' + s.multiple + '배 · ' + esc(s.why) + '</div>';
+        var a = (s.articles || [])[0];
+        return '<div class="q">' + esc(s.entity) + ' · ' + s.multiple + '배 · ' + esc(s.why) +
+               (a ? '<a class="qa" href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
+                    esc(a.title) + '</a>' : '') + '</div>';
       }).join('');
       out.push('<details class="quiet"><summary>조용한 급상승 ' + quiet.length +
                '건 — 숫자만 움직이고 발언은 안 잡혔습니다</summary>' + qs + '</details>');
