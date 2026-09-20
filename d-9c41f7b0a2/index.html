@@ -1551,8 +1551,9 @@ P.lead = function(list, opt){
   var open = list.filter(function(i){ return !P.on(i) && i.k !== "track"; })
                  .sort(P.urgency);
   var rest = open.length - 1;
+  var kick = opt.k || "지금";
   if (!open.length){
-    return '<section class="lead calm"><p class="leadk">지금</p>'
+    return '<section class="lead calm"><p class="leadk">'+esc(kick)+"</p>"
       + '<h2 class="leadt">'+esc(opt.calm || "걸린 게 없습니다")+"</h2>"
       + (opt.calmn?'<p class="leadn">'+esc(opt.calmn)+"</p>":"")+"</section>";
   }
@@ -1566,7 +1567,7 @@ P.lead = function(list, opt){
   if (!why.length) why.push(P.lane(it.l));
 
   return '<section class="lead'+(P.late(it)||it.s==="막힘"?" hot":"")+'">'
-    + '<p class="leadk">지금</p>'
+    + '<p class="leadk">'+esc(kick)+"</p>"
     + '<p class="leadwhy">'+why.join(" · ")+"</p>"
     + '<h2 class="leadt"><button data-act="open" data-arg="'+esc(it.id)+'">'
     + esc(it.t)+"</button></h2>"
