@@ -134,6 +134,18 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   padding:3px 0 3px 10px; border-left:1px solid var(--line); line-height:1.45}
 .ns .arts a:hover{color:var(--text); border-color:var(--dim)}
 .ns .arts .src{font-size:10.5px; color:var(--skip); font-family:var(--mono)}
+/* 카드의 주인공은 배수가 아니라 사람이 한 말이다. 배수는 왜 떴는지의 근거일 뿐,
+   읽을 문장이 아니다. */
+.ns .lede{display:block; font-size:15px; line-height:1.45; color:var(--text);
+          text-decoration:none; font-weight:600; letter-spacing:-.01em; margin:2px 0 6px}
+.ns .lede:hover{color:var(--pick)}
+.ns .who{font-size:11.5px; color:var(--dim); font-family:var(--mono); letter-spacing:.02em}
+.quiet{margin-top:calc(var(--u)*3)}
+.quiet summary{cursor:pointer; font-size:12px; color:var(--dim); padding:6px 0;
+               list-style:none; font-family:var(--mono)}
+.quiet summary::-webkit-details-marker{display:none}
+.quiet summary:hover{color:var(--muted)}
+.quiet .q{font-size:12px; color:var(--dim); padding:4px 0; font-family:var(--mono)}
 .xref{display:inline-block; margin-top:6px; font-size:11px; color:var(--pick);
   border:1px solid var(--pick); border-radius:3px; padding:2px 6px}
 .btn.link{border:0; padding:6px 0; color:var(--dim); text-decoration:none}
@@ -371,26 +383,44 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
                     '차트·기사 수를 매일 재고 있으니 움직이면 여기 올라옵니다.</p>';
       return;
     }
-    var out = ['<p class="note">차트 순위와 기사 수를 아티스트별로 매일 재서, ' +
-               '평소의 <b>3배</b>를 넘은 것만 최대 6건 올립니다. ' +
-               '매거진 후보와 겹치면 <b>양쪽</b> 표시가 붙습니다.</p>'];
-    list.forEach(function (s) {
-      var arts = (s.articles || []).map(function (a) {
+
+    /* 발화가 있는 것만 카드로 펼친다. 차트만 오른 건 성적이지 사건이 아니라서
+       읽을 게 없다 — 지우지는 않고 아래에 접어 둔다. */
+    var loud = list.filter(function (s) { return (s.speech || 0) > 0; });
+    var quiet = list.filter(function (s) { return !(s.speech || 0); });
+
+    var out = ['<p class="note">아티스트별로 기사 수와 차트를 매일 재서 평소의 <b>3배</b>를 ' +
+               '넘은 것만 올립니다. 그중 <b>누가 무슨 말을 했는지</b> 잡힌 것을 먼저 폅니다.</p>'];
+
+    (loud.length ? loud : list).forEach(function (s) {
+      var arts = (s.articles || []);
+      var head = arts[0];
+      var rest = arts.slice(1).map(function (a) {
         return '<a href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
                esc(a.title) + (a.source ? ' <span class="src">' + esc(a.source) + '</span>' : '') +
                '</a>';
       }).join('');
       out.push('<div class="ns">' +
-        '<h3>' + esc(s.entity) + '</h3>' +
+        '<div class="who">' + esc(s.entity) + '</div>' +
+        (head
+          ? '<a class="lede" href="' + esc(head.url) + '" target="_blank" rel="noopener">' +
+            esc(head.title) + '</a>'
+          : '<div class="lede">기사를 못 불러왔습니다 — 맥에서 스캔이 돌면 붙습니다</div>') +
         '<div class="sig"><span class="mult">' + s.multiple + '배</span> · ' + esc(s.why) + '</div>' +
         (s.also_in_magazine
           ? '<div class="xref">매거진에도 ' + s.also_in_magazine.length + '건 — 먼저 보세요</div>'
           : '') +
-        (arts ? '<div class="arts">' + arts + '</div>'
-              : '<div class="arts"><span class="src">기사를 못 불러왔습니다 — ' +
-                '맥에서 스캔이 돌면 붙습니다</span></div>') +
+        (rest ? '<div class="arts">' + rest + '</div>' : '') +
         '</div>');
     });
+
+    if (loud.length && quiet.length) {
+      var qs = quiet.map(function (s) {
+        return '<div class="q">' + esc(s.entity) + ' · ' + s.multiple + '배 · ' + esc(s.why) + '</div>';
+      }).join('');
+      out.push('<details class="quiet"><summary>조용한 급상승 ' + quiet.length +
+               '건 — 숫자만 움직이고 발언은 안 잡혔습니다</summary>' + qs + '</details>');
+    }
     v.innerHTML = out.join('');
   }
 
