@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>처음 오신 분께 — 플루토 시스템</title>
+<style>
+:root{
+  --ink:#16140f; --ink2:#463f34; --ink3:#7b7362;
+  --line:#ddd6c7; --line2:#eee9dd; --bg:#fff; --sf:#faf8f3; --accent:#7a5c1e;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:#e9e5db;color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",
+  "Noto Sans KR","Malgun Gothic",sans-serif;
+  font-size:15px;line-height:1.75;-webkit-text-size-adjust:100%}
+.page{max-width:720px;margin:0 auto;background:var(--bg);padding:44px 44px 56px}
+.logo{font-size:10px;font-weight:800;letter-spacing:.24em;color:var(--accent)}
+h1{font-size:30px;line-height:1.28;letter-spacing:-.03em;margin:10px 0 0}
+.lede{font-size:16px;color:var(--ink2);margin-top:14px;line-height:1.8}
+h2{font-size:19px;letter-spacing:-.02em;margin:44px 0 0;padding-top:22px;
+  border-top:1px solid var(--line)}
+h3{font-size:15px;margin:26px 0 0;letter-spacing:-.01em}
+p{margin:12px 0 0}
+ul{margin:12px 0 0;padding-left:20px}
+li{margin-top:7px}
+b{font-weight:700}
+.q{border-left:3px solid var(--accent);background:var(--sf);padding:14px 16px;
+  margin:18px 0 0;font-size:14.5px;line-height:1.75;color:var(--ink2)}
+.q b{color:var(--ink)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.card{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--sf)}
+.card b{display:block;font-size:15px;margin-bottom:5px}
+.card span{font-size:13.5px;color:var(--ink2);line-height:1.7}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:var(--sf);font-size:12.5px;color:var(--ink2);white-space:nowrap;width:1%}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:16px 0 0}
+ol.steps li{counter-increment:s;position:relative;padding-left:38px;margin-top:16px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:1px;
+  width:25px;height:25px;border-radius:50%;background:var(--accent);color:#fff;
+  font-size:13px;font-weight:800;display:grid;place-items:center}
+ol.steps b{display:block;font-size:15.5px}
+.micro{font-size:12.5px;color:var(--ink3);line-height:1.7;margin-top:8px}
+.foot{margin-top:50px;padding-top:16px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--ink3);line-height:1.8}
+a{color:var(--accent)}
+@media print{
+  html,body{background:#fff;font-size:11.5pt}
+  .page{max-width:none;padding:0}
+  h2{page-break-after:avoid}
+  .q,.card,table,ol.steps li{page-break-inside:avoid}
+  @page{size:A4;margin:16mm 15mm}
+}
+@media (max-width:640px){
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .scroll table{margin-top:0}
+  .page{padding:26px 18px 38px}
+  h1{font-size:25px}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="logo">PLUTO SYSTEM</div>
+<h1>처음 오신 분께</h1>
+<p class="lede">
+  첫 주에 한 번만 읽으시면 됩니다. 이 회사가 무엇으로 굴러가는지, 일이 어떻게 나뉘는지,
+  그리고 무엇부터 하시면 되는지 — 그 셋입니다.
+</p>
+
+<h2>무엇을 하는 회사인가</h2>
+<p>
+  플루토 시스템은 서울 신당동에서 영상을 만드는 여섯 명짜리 회사입니다.
+  공연 실황, 뮤직비디오, 기업 영상 같은 <b>외주</b>를 하고, 그 수익으로
+  <b>우리 것</b>을 키웁니다. 우리 것의 지금 얼굴이 음악 매거진 <b>PLOT</b>입니다.
+</p>
+<div class="q">
+  <b>순서가 중요합니다.</b> 외주가 돈을 벌고 IP가 자산을 만듭니다.
+  둘 중 하나만 하면 회사가 아니라 각각 하청업체이거나 취미가 됩니다.
+  그래서 바쁠 때도 PLOT 발행은 멈추지 않습니다.
+</div>
+
+<h3>우리가 만드는 것에 공통으로 들어가는 네 가지</h3>
+<div class="grid">
+  <div class="card"><b>관문</b><span>처음 듣는 사람에게 들어갈 문을 만들어 준다</span></div>
+  <div class="card"><b>기록</b><span>지금 이 씬이 어땠는지를 남긴다</span></div>
+  <div class="card"><b>아티스트</b><span>사람을 소재가 아니라 주인공으로 둔다</span></div>
+  <div class="card"><b>스토리</b><span>정보가 아니라 이야기로 만든다</span></div>
+</div>
+
+<h2>일은 사람이 아니라 파트로 나뉩니다</h2>
+<p>
+  여기서 제일 낯선 부분일 겁니다. 우리는 할 일 목록을 사람별로 쪼개지 않습니다.
+  <b>팀 × 성질</b>로 칸을 나눠 두고, 한 사람이 <b>칸을 통째로</b> 맡습니다.
+  칸을 맡으면 그 안은 맡은 쪽이 알아서 굴립니다 — 항목 하나하나를 배정받지 않습니다.
+</p>
+<div class="scroll"><table>
+  <tr><th>팀</th><td>기획 · 기술 · 공통</td></tr>
+  <tr><th>성질</th><td>매거진 · 프로그램 · 기술·봇 · 외주·관계 · 수익화 · 운영·문서 · 장비·공간</td></tr>
+  <tr><th>칸</th><td>이 둘의 교차 — 예를 들어 <b>기획 · 프로그램</b>, <b>기술 · 기술·봇</b></td></tr>
+</table></div>
+<div class="q">
+  <b>왜 이렇게 하나.</b> 항목 단위로 나누면 배정하는 사람이 병목이 되고,
+  목록에 없는 일은 아무도 안 합니다. 칸 단위로 나누면 "이건 내 칸 일이네"가
+  스스로 판단됩니다. 회의에서 서른여섯 줄을 나누는 데는 한 시간이 걸리지만
+  칸 하나 정하는 데는 1분이 걸립니다.
+</div>
+<p class="micro">
+  예외가 하나 있습니다. <b>대표만 가능</b>이라고 붙은 일은 칸과 상관없이 대표 몫입니다.
+  회사 명의로 서명해야 하거나, 보수·가격을 정하거나, 대표 계정으로만 열리는 일들입니다.
+  이 중 상당수는 구조를 바꾸면 넘어갈 수 있는 것이고, 지금 그걸 하나씩 줄이는 중입니다.
+</p>
+
+<h2>지금 돌아가는 프로그램</h2>
+<div class="scroll"><table>
+  <tr><th>SESSION</th><td>프로듀서·엔지니어의 작업을 해부합니다. 자사 스튜디오, 카메라 2대.</td></tr>
+  <tr><th>UNHEARD</th><td>아티스트와 동행하며 거리 반응을 담습니다. 숏폼 우선 설계.</td></tr>
+  <tr><th>청음실</th><td>인생 음반 세 장을 같이 듣고 이야기합니다. LP·CD·디지털 모두.</td></tr>
+  <tr><th>라이브클립</th><td>신청을 받아 호리존에서 찍습니다.</td></tr>
+  <tr><th>PLOT 발행</th><td>매일 나갑니다 — 캐러셀, 오늘의 노래, 이슈·특집. 프로그램과 별개로 하루도 안 쉽니다.</td></tr>
+</table></div>
+
+<h2>첫 주에 하실 것</h2>
+<ol class="steps">
+  <li><b>오퍼레이션 앱에 들어오기</b>
+    주소를 받으면 여시고, 이름을 적으시면 됩니다. 가입도 비밀번호도 메일도 없습니다.
+    대표가 승인하면 그때부터 체크와 담당이 팀 전체에 보입니다.
+    <span class="micro">승인 전에는 읽기만 됩니다. 이때 체크해도 나만 보이니 기다렸다 하세요.</span></li>
+  <li><b>칸 하나 맡기</b>
+    앱 <b>분담</b> 화면에 빈 칸이 보입니다. 하나 잡으시면 그 안이 내 일이 됩니다.
+    처음이라 감이 안 오면 대표와 한 번 맞춰 보고 정하셔도 됩니다.</li>
+  <li><b>이 문서들 받아 두기</b>
+    앱 <b>서류</b> 칸에 프로덕션 시트와 편집 규격이 있습니다.
+    촬영 나가기 전에 시트를, 편집 들어가기 전에 규격을 한 번 보시면 됩니다.</li>
+  <li><b>첫 촬영 동행</b>
+    파일럿 회차는 전 과정을 같이 돕니다. 뭘 물어보셔도 됩니다 —
+    첫 주에 묻지 않으면 넉 달 뒤에 같은 걸 혼자 잘못 알고 계시게 됩니다.</li>
+</ol>
+
+<h2>어디에 뭐가 있나</h2>
+<div class="scroll"><table>
+  <tr><th>오퍼레이션 앱</th><td>지금 무슨 일이 걸려 있는지. 팀 전체가 같은 판을 봅니다.</td></tr>
+  <tr><th>NAS (스튜디오)</th><td>촬영 원본과 백업. 경로는 <b>/촬영/&lt;프로그램&gt;/&lt;YYMMDD&gt;_&lt;회차&gt;/</b></td></tr>
+  <tr><th>텔레그램</th><td>당장 답이 필요한 것. 기록으로 남길 건 앱에 적습니다.</td></tr>
+  <tr><th>서류</th><td>앱 <b>서류</b> 칸 — 프로덕션 시트 · 편집 규격 · 계약서 · 이 문서</td></tr>
+</table></div>
+<div class="q">
+  <b>기록은 앱에, 대화는 텔레그램에.</b> 반대로 하면 두 달 뒤에 아무것도 못 찾습니다.
+  결정된 것은 반드시 앱으로 옮겨 주세요 — 텔레그램에서 합의한 것은 합의한 적 없는 것과 같습니다.
+</div>
+
+<h2>몇 가지 약속</h2>
+<ul>
+  <li><b>철수 전에 백업을 확인합니다.</b> 스튜디오를 나선 뒤에 알면 그 회차는 없던 일이 됩니다.</li>
+  <li><b>현장 총괄은 한 명입니다.</b> 그날의 결정은 그 사람이 합니다. 대표가 없어도 마찬가지입니다.</li>
+  <li><b>밖에서 찍을 때 얼굴이 나오면 그 자리에서 동의를 받습니다.</b> 못 받았으면 편집에서 가립니다.</li>
+  <li><b>계정 비밀번호는 개인 메모에 두지 않습니다.</b> 팀 금고에 둡니다.</li>
+  <li><b>모르면 그날 묻습니다.</b> 이게 제일 중요합니다.</li>
+</ul>
+
+<div class="foot">
+  플루토 시스템 · 서울 중구 다산로 261 (신당역 10번 출구)<br>
+  이 문서가 틀렸거나 빠진 게 보이면 알려 주세요. 읽는 사람이 고치는 문서입니다.
+</div>
+
+</div>
+</body>
+</html>

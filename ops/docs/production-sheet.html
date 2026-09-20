@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>프로덕션 시트 — 플루토 시스템</title>
+<style>
+/* 현장에서 쓰는 종이다. 화면에서 채우고 그대로 인쇄하면 A4 두 장.
+   웹폰트를 불러오지 않는다 — 스튜디오 네트워크가 죽어도 열려야 한다. */
+:root{
+  --ink:#16140f; --ink2:#4a443a; --ink3:#7d7565;
+  --line:#ccc5b6; --line2:#e6e0d3; --bg:#fff; --sf:#faf8f3;
+  --accent:#7a5c1e;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#e9e5db;color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",
+  "Noto Sans KR","Malgun Gothic",sans-serif;
+  font-size:13px;line-height:1.5;-webkit-text-size-adjust:100%}
+.page{max-width:820px;margin:0 auto;background:var(--bg);padding:28px 30px 40px}
+h1{font-size:21px;letter-spacing:-.02em;margin:0}
+.sub{font-size:11.5px;color:var(--ink3);margin-top:4px}
+.top{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px;gap:16px}
+.logo{font-size:10px;font-weight:800;letter-spacing:.22em;color:var(--accent)}
+h2{font-size:12px;letter-spacing:.1em;margin:22px 0 8px;padding-bottom:4px;
+  border-bottom:1px solid var(--ink);text-transform:uppercase}
+h2 .hint{font-size:10.5px;font-weight:400;letter-spacing:0;color:var(--ink3);
+  text-transform:none;margin-left:8px}
+table{width:100%;border-collapse:collapse;margin-bottom:2px}
+th,td{border:1px solid var(--line);padding:5px 7px;vertical-align:top;text-align:left}
+th{background:var(--sf);font-size:10.5px;font-weight:700;color:var(--ink2);
+  white-space:nowrap;width:1%}
+td{font-size:12.5px}
+input[type=text],input[type=date],input[type=time],textarea{
+  width:100%;border:0;background:transparent;font:inherit;color:var(--ink);
+  padding:1px 0;outline:0;resize:none}
+input:focus,textarea:focus{background:#fffbe9}
+textarea{min-height:3.2em;line-height:1.55}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.opts{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;padding:2px 0}
+.opts label{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+input[type=checkbox]{width:13px;height:13px;accent-color:var(--accent);margin:0}
+.note{font-size:11px;color:var(--ink3);line-height:1.6;margin:6px 0 0}
+.note b{color:var(--ink2)}
+.rule{border:1px solid var(--line);border-left:3px solid var(--accent);
+  background:var(--sf);padding:9px 11px;font-size:11.5px;line-height:1.65;
+  color:var(--ink2);margin:8px 0 0}
+.rule b{color:var(--ink)}
+.stage{display:flex;gap:0;margin:0}
+.stage div{flex:1;border:1px solid var(--line);border-left:0;padding:7px 6px;
+  text-align:center;font-size:11px}
+.stage div:first-child{border-left:1px solid var(--line)}
+.stage b{display:block;font-size:12px;margin-bottom:5px}
+.sign{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:10px}
+.sign div{border-top:1px solid var(--ink);padding-top:5px;font-size:10.5px;color:var(--ink3)}
+.foot{margin-top:26px;padding-top:10px;border-top:1px solid var(--line2);
+  font-size:10.5px;color:var(--ink3);line-height:1.7}
+.bar{position:sticky;top:0;z-index:5;background:#e9e5db;padding:10px 0;
+  display:flex;gap:8px;justify-content:center}
+.bar button{font:inherit;font-size:12px;font-weight:700;padding:7px 15px;
+  border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--ink);
+  cursor:pointer}
+.bar button:hover{border-color:var(--ink3)}
+@media print{
+  html,body{background:#fff}
+  .bar{display:none}
+  .page{max-width:none;padding:0;margin:0}
+  input:focus,textarea:focus{background:transparent}
+  h2{page-break-after:avoid}
+  table,.stage,.rule{page-break-inside:avoid}
+  @page{size:A4;margin:13mm 12mm}
+}
+@media (max-width:640px){
+  .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .scroll table{margin-top:0}
+  .page{padding:18px 14px 30px}
+  .grid2{grid-template-columns:1fr}
+  .stage{flex-wrap:wrap}
+  .stage div{flex:1 0 33%;border-left:1px solid var(--line)}
+  .sign{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="bar">
+  <button onclick="window.print()">인쇄 · PDF로 저장</button>
+  <button onclick="if(confirm('적은 내용을 모두 지웁니다.')){document.querySelectorAll('input,textarea').forEach(function(e){if(e.type==='checkbox')e.checked=false;else e.value='';});}">비우기</button>
+</div>
+
+<div class="page">
+
+<div class="top">
+  <div>
+    <div class="logo">PLUTO SYSTEM</div>
+    <h1>프로덕션 시트</h1>
+    <div class="sub">한 회차를 찍는 데 필요한 것이 이 두 장 안에 다 있어야 합니다.</div>
+  </div>
+  <div style="text-align:right;font-size:11px;color:var(--ink3)">
+    시트 번호 <input type="text" style="width:90px;border-bottom:1px solid var(--line)"><br>
+    작성 <input type="date" style="width:120px;border-bottom:1px solid var(--line)">
+  </div>
+</div>
+
+<h2>1 · 회차 <span class="hint">이 시트가 무엇을 찍는 종이인가</span></h2>
+<div class="scroll"><table>
+  <tr>
+    <th>프로그램</th>
+    <td colspan="3">
+      <div class="opts">
+        <label><input type="checkbox"> SESSION <span style="color:var(--ink3)">프로듀서·엔지니어 세션 해부</span></label>
+        <label><input type="checkbox"> UNHEARD <span style="color:var(--ink3)">동행·거리 반응</span></label>
+        <label><input type="checkbox"> 청음실 <span style="color:var(--ink3)">인생 음반 3장</span></label>
+        <label><input type="checkbox"> 라이브클립 <span style="color:var(--ink3)">호리존</span></label>
+        <label><input type="checkbox"> 외주 <input type="text" placeholder="발주처" style="width:110px;border-bottom:1px solid var(--line)"></label>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <th>회차</th><td><input type="text" placeholder="1호 / 파일럿 1화"></td>
+    <th>가제</th><td><input type="text"></td>
+  </tr>
+  <tr>
+    <th>출연</th><td colspan="3"><input type="text" placeholder="이름 · 소속 · 연락 담당"></td>
+  </tr>
+  <tr>
+    <th>촬영일</th><td><input type="date"></td>
+    <th>장소</th><td><input type="text" placeholder="자사 스튜디오 / 호리존 / 홍대 일대"></td>
+  </tr>
+  <tr>
+    <th>카메라</th>
+    <td>
+      <div class="opts">
+        <label><input type="checkbox"> 1대</label>
+        <label><input type="checkbox" checked> 2대</label>
+        <label><input type="checkbox"> 3대 이상 <input type="text" style="width:40px;border-bottom:1px solid var(--line)"></label>
+      </div>
+    </td>
+    <th>예상 분량</th><td><input type="text" placeholder="본편 00분 · 숏폼 0편"></td>
+  </tr>
+</table></div>
+<div class="rule">
+  <b>기본값</b> 카메라 2대, 소니 기반. 다르게 갈 거면 이 칸에서 바꾸고 아래 장비 표에 이유를 한 줄 적습니다 —
+  현장에서 "왜 이렇게 됐지"를 되짚을 수 있는 유일한 기록입니다.
+</div>
+
+<h2>2 · 파트 <span class="hint">사람이 아니라 파트가 움직입니다. 그날 그 파트를 든 사람 이름을 적습니다</span></h2>
+<div class="scroll"><table>
+  <tr><th style="width:110px">기획 · 프로그램</th><td><input type="text" placeholder="섭외·구성·진행"></td>
+      <th style="width:110px">기술 · 촬영</th><td><input type="text" placeholder="카메라·조명·음향"></td></tr>
+  <tr><th>기술 · 편집</th><td><input type="text"></td>
+      <th>공통 · 발행</th><td><input type="text" placeholder="업로드·캡션·숏폼"></td></tr>
+  <tr><th>현장 총괄</th><td><input type="text" placeholder="그날 결정권을 가진 한 사람"></td>
+      <th>비상 연락</th><td><input type="text"></td></tr>
+</table></div>
+<p class="note">
+  <b>현장 총괄은 반드시 한 명입니다.</b> 둘이면 배우와 스태프가 서로 다른 지시를 듣습니다.
+  대표가 현장에 없어도 그날의 결정은 여기 적힌 사람이 합니다.
+</p>
+
+<h2>3 · 타임테이블</h2>
+<div class="scroll"><table>
+  <tr><th style="width:74px">시각</th><th style="width:auto">할 것</th><th style="width:130px">누가</th><th style="width:150px">비고</th></tr>
+  <tr><td><input type="time"></td><td><input type="text" value="집합 · 장비 반입"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td><input type="time"></td><td><input type="text" value="세팅 · 조명 · 음향 체크"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td><input type="time"></td><td><input type="text" value="출연자 도착 · 브리핑"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td><input type="time"></td><td><input type="text" value="리허설 · 테스트 녹화"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td><input type="time"></td><td><input type="text" value="본 촬영"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td><input type="time"></td><td><input type="text" value="추가컷 · B롤 · 인서트"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td><input type="time"></td><td><input type="text" value="백업 확인 후 철수"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><td><input type="time"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+</table></div>
+<div class="rule">
+  <b>철수 전에 백업을 확인합니다.</b> 스튜디오를 나선 뒤에 카드가 비어 있는 걸 알면 그 회차는 없던 일이 됩니다.
+  확인한 사람이 아래 5번에 이름을 적습니다.
+</div>
+
+<h2>4 · 장비 <span class="hint">소니 기반. 빌린 것은 반납 칸까지 채웁니다</span></h2>
+<div class="scroll"><table>
+  <tr><th style="width:90px">구분</th><th style="width:auto">품목</th><th style="width:64px">수량</th><th style="width:92px">자사/대여</th><th style="width:104px">반납</th></tr>
+  <tr><th>카메라</th><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><th>렌즈</th><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><th>조명</th><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><th>음향</th><td><input type="text" placeholder="마이크 · 레코더 · 케이블"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+  <tr><th>기타</th><td><input type="text" placeholder="삼각대 · 짐벌 · 배터리 · 미디어"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+</table></div>
+
+<h2>5 · 소재 인계 <span class="hint">촬영이 끝나는 곳이 아니라 편집이 시작되는 곳</span></h2>
+<div class="scroll"><table>
+  <tr><th style="width:110px">NAS 경로</th><td colspan="3"><input type="text" placeholder="/촬영/<프로그램>/<YYMMDD>_<회차>/"></td></tr>
+  <tr><th>원본 용량</th><td><input type="text"></td>
+      <th>백업 확인</th><td><input type="text" placeholder="확인한 사람 · 시각"></td></tr>
+  <tr><th>오디오 별도</th><td><input type="text" placeholder="레코더 파일 위치 · 싱크 기준(슬레이트/박수)"></td>
+      <th>촬영 동의</th><td>
+        <div class="opts">
+          <label><input type="checkbox"> 출연 동의 받음</label>
+          <label><input type="checkbox"> 거리 촬영 동의 받음</label>
+          <label><input type="checkbox"> 해당 없음</label>
+        </div></td></tr>
+  <tr><th>편집에 전할 말</th><td colspan="3"><textarea placeholder="살릴 컷 · 버릴 컷 · 사고 난 구간 · 자막으로 덮어야 할 곳"></textarea></td></tr>
+</table></div>
+<p class="note">
+  <b>거리 촬영 동의</b> UNHEARD처럼 밖에서 찍을 때, 얼굴이 알아볼 정도로 나오는 사람에게는 그 자리에서 동의를 받습니다.
+  못 받았으면 편집에서 가려야 하므로 위 칸에 구간을 적어 둡니다.
+</p>
+
+<h2>6 · 단계 <span class="hint">오퍼레이션 앱의 회차 단계와 같은 다섯 칸입니다</span></h2>
+<div class="stage">
+  <div><b>섭외</b><input type="text" placeholder="완료일"></div>
+  <div><b>일정</b><input type="text" placeholder="완료일"></div>
+  <div><b>촬영</b><input type="text" placeholder="완료일"></div>
+  <div><b>편집</b><input type="text" placeholder="완료일"></div>
+  <div><b>발행</b><input type="text" placeholder="완료일"></div>
+</div>
+<p class="note">
+  종이에 적은 뒤 앱에도 한 번 옮깁니다. 종이는 현장용, 앱은 팀 전체가 보는 곳입니다.
+  둘 중 하나만 있으면 반드시 어긋납니다.
+</p>
+
+<h2>7 · 끝나고 한 줄</h2>
+<div class="scroll"><table>
+  <tr><th style="width:110px">잘된 것</th><td><textarea></textarea></td></tr>
+  <tr><th>다음엔 이렇게</th><td><textarea></textarea></td></tr>
+</table></div>
+
+<div class="sign">
+  <div>현장 총괄</div>
+  <div>촬영</div>
+  <div>편집 인수</div>
+</div>
+
+<div class="foot">
+  플루토 시스템 · 서울 중구 다산로 261 (신당역 10번 출구)<br>
+  이 시트는 오퍼레이션 앱 <b>서류</b> 칸에서 언제든 다시 받을 수 있습니다.
+  고칠 곳이 보이면 고쳐 달라고 하세요 — 양식은 쓰는 사람이 바꿉니다.
+</div>
+
+</div>
+</body>
+</html>

@@ -668,6 +668,9 @@ button.who:hover{color:var(--t1)}
 .btn{font-size:12.5px;font-weight:700;padding:7px 14px;border-radius:var(--r2);
   background:var(--accent);color:var(--on-accent);transition:filter var(--fast) var(--ease)}
 .btn:hover{filter:brightness(1.08)}
+/* 서류는 링크라서 <a> 다. 버튼 모양은 같아야 하고, 밑줄과 링크색은 빼야 한다. */
+a.btn{display:inline-block;text-decoration:none;line-height:1.5;
+  border:0;cursor:pointer;font-family:inherit}
 .btn.g{background:none;color:var(--t2);box-shadow:inset 0 0 0 1px var(--line);font-weight:600}
 .btn.g:hover{color:var(--t1);background:var(--sf2)}
 .btn.d{background:none;color:var(--danger);box-shadow:inset 0 0 0 1px var(--ring-danger);
@@ -2694,6 +2697,53 @@ function drawAll(){
   return bar + (secs || P.empty("걸리는 게 없습니다","거르기를 풀어보세요."));
 }
 
+/* ── 서류 ─────────────────────────────────────────── */
+/* 양식을 NAS 어딘가에 두면 아무도 안 찾는다. 판을 보러 들어온 김에
+   같은 자리에서 받게 둔다. 파일은 앱 옆에 그대로 올라가 있다. */
+var DOCS = [
+  { f:"production-sheet.html", n:"프로덕션 시트", k:"현장",
+    w:"한 회차를 찍는 데 필요한 것이 다 들어간 두 장",
+    u:"촬영 나가기 전에 채우고 인쇄합니다. 화면에서 바로 적을 수 있고 인쇄하면 A4 두 장입니다.",
+    a:"열어서 작성" },
+  { f:"edit-spec.html", n:"편집 규격", k:"편집",
+    w:"누가 편집해도 같은 모양이 나오게 하는 수치",
+    u:"시퀀스·빈 구조·자막 위치·출력 설정. 인트로 수치는 손대면 숏폼 자동 생성이 틀어집니다.",
+    a:"열어 보기" },
+  { f:"onboarding.html", n:"처음 오신 분께", k:"합류",
+    w:"첫 주에 한 번만 읽는 한 장",
+    u:"회사가 뭘로 굴러가는지, 일이 파트로 어떻게 나뉘는지, 뭘 먼저 하면 되는지.",
+    a:"열어 보기" },
+  { f:"contract.docx", n:"외주 계약서", k:"계약", dl:true,
+    w:"촬영·편집·연출 위탁 표준 양식",
+    u:"빈칸을 채워 쓰는 Word 파일입니다. 실제 사용 전에 변호사·노무사 검토를 받으세요.",
+    a:"받기 (.docx)" }
+];
+
+function drawDocs(){
+  var cards = '<div class="cards c3">' + DOCS.map(function(d){
+    return '<div class="card">'
+      + '<div class="cardh"><b>'+E(d.n)+"</b>"
+      + '<span class="n">'+E(d.k)+"</span></div>"
+      + '<p class="meta">'+E(d.w)+"</p>"
+      + '<p class="meta" style="color:var(--t3)">'+E(d.u)+"</p>"
+      + '<div style="display:flex;gap:8px;align-items:center;margin-top:12px">'
+      + '<a class="btn" href="./docs/'+E(d.f)+'"'
+      + (d.dl ? ' download' : ' target="_blank" rel="noopener"')
+      + ">"+E(d.a)+"</a></div></div>";
+  }).join("") + "</div>";
+
+  return '<section class="sec"><div class="sech"><h2>양식</h2>'
+    + '<span class="sub">받아서 쓰는 것</span>'
+    + '<span class="n num">'+DOCS.length+"</span></div>"
+    + cards + "</section>"
+    + '<p class="note"><b>고칠 곳이 보이면 고칩니다.</b> 양식은 만든 사람이 아니라 '
+    + '쓰는 사람이 바꿉니다. 현장에서 빠진 칸이 보이거나 규격이 실제와 다르면 '
+    + '그대로 두지 말고 알려 주세요 — 다음 촬영 전에 고쳐 둡니다.</p>'
+    + '<p class="note"><b>프리미어 템플릿 프로젝트</b>는 아직 없습니다. '
+    + '프로젝트 파일은 프리미어에서 한 번 만들어야 버전이 안 어긋납니다. '
+    + '편집 규격 7번대로 한 번 만들어 두시면 여기서 받을 수 있게 붙입니다.</p>';
+}
+
 /* ── 설정 ─────────────────────────────────────────── */
 var VIEWS = [
   { id:"today",  n:"오늘",  ic:"●", ask:"지금 뭘 해야 하나", draw:drawToday,
@@ -2707,6 +2757,8 @@ var VIEWS = [
     count:function(){ return ""; } },
   { id:"share",  n:"분담",  ic:"◍", ask:"어느 칸이 비었나", draw:drawShare,
     hot:true, count:function(){ return cells().filter(function(c){ return !c.by; }).length; } },
+  { id:"docs",   n:"서류",  ic:"❑", ask:"양식은 어디 있나", draw:drawDocs,
+    count:function(){ return DOCS.length; } },
   { id:"all",    n:"전체",  ic:"☰", draw:drawAll,
     get ask(){
       var g = (P.S().filt||{}).g || "part";
