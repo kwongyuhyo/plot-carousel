@@ -86,6 +86,11 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .badge{font-size:10px; font-weight:700; letter-spacing:.02em; color:var(--dim);
   border:1px solid var(--line); border-radius:3px; padding:1px 5px}
 .badge.news{color:var(--amber); border-color:#3A3020}
+.badge.pace{color:var(--pick); border-color:currentColor; font-weight:700}
+.fastwrap{border:1px solid var(--line); border-radius:10px; padding:0 calc(var(--u)*2);
+          margin-bottom:calc(var(--u)*3)}
+.fasth{margin:calc(var(--u)*2) 0 0; font-size:13px; font-weight:700; color:var(--pick)}
+.fasth .sub{display:block; margin-top:3px; font-size:11px; font-weight:400; color:var(--dim)}
 .badge.reel{color:var(--muted)}
 .cap{margin:calc(var(--u)*1.5) 0 0; font-size:14px; line-height:1.6;
   letter-spacing:-.012em; white-space:pre-wrap; word-break:break-word}
@@ -276,6 +281,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       if (g !== '기타') badges += ' <span class="badge">' + esc(g) + '</span>';
     });
     if (c.covered) badges += ' <span class="badge">이미 다룸</span>';
+    /* 속도 — '이 나이치고 빠른가'. 절대 배수로는 갓 올라온 글이 안 보인다.
+       반응은 쌓이는 데 시간이 걸리고, 3배를 넘긴 시점이 중앙값 59시간이었다. */
+    if (c.pace && c.pace >= 2) badges += ' <span class="badge pace">빠름 ' + c.pace + '배</span>';
 
     var why = [].concat(c.why || [], c.kind_why || []).join(' ');
     var base = c.baseline_kind === 'reel' ? '릴스 기준' :
@@ -492,8 +500,18 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
                     '계정별 탭에서 직접 훑어보세요.</p>';
       return;
     }
+    /* 빠른 글 — 절대 배수로는 아직 상위에 못 오지만 이 나이치고 빠른 글.
+       순위를 건드리지 않고 따로 낸다. 후보 안에 이미 든 글은 여기 안 나온다. */
+    var fast = (D.fast || []).filter(pass);
+    var fastBlock = fast.length
+      ? '<div class="fastwrap"><h3 class="fasth">빠른 글 ' + fast.length + '건' +
+        '<span class="sub">아직 숫자는 작지만 이 나이치고 빠릅니다 — ' +
+        '반응이 다 쌓이길 기다리면 이틀 늦습니다</span></h3>' +
+        fast.map(function (c) { return card(c); }).join('') + '</div>'
+      : '';
+
     var list = D.candidates.filter(pass);
-    v.innerHTML = hint + (list.length
+    v.innerHTML = hint + fastBlock + (list.length
       ? list.map(function (c) { return card(c); }).join('')
       : '<p class="note">이 조건에 맞는 후보가 없습니다. 기간이나 매거진을 넓혀보세요.</p>');
   }
