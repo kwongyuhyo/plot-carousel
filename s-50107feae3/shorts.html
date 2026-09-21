@@ -1159,7 +1159,8 @@ function blockText(b) {
     '아티스트: ' + b.artist.trim(),
     '피처링: ' + b.feat.trim(),
     '후킹: ' + b.hook.trim(),
-    '출처: ' + b.source.trim(),
+    // 사람이 '출처: 하이브' 처럼 접두어까지 쳐 넣으면 '출처: 출처: 하이브' 가 됐다.
+    '출처: ' + b.source.trim().replace(/^출처\s*:\s*/, ''),
     // 비어 있으면 자동 — 양식 모양을 바꾸지 않으려고 줄은 늘 넣는다.
     // 빈 칸은 "안 정했다" 로도 읽힌다. 봇에게 맡긴다는 뜻을 글자로 남긴다.
     // 봇의 parse_crop_ratio 도 '자동' 을 같은 뜻으로 읽는다.
@@ -1899,7 +1900,8 @@ function pkPaint(now) {
 
   const ok = PK.inS != null && PK.outS != null && PK.outS > PK.inS;
   const len = ok ? PK.outS - PK.inS : 0;
-  lenEl.textContent = ok ? fmtStamp(PK.inS) + ' – ' + fmtStamp(PK.outS) + '  ·  ' + len.toFixed(1) + '초'
+  // 딱 떨어지는 초는 '25초' 로. 프레임 단위로 잡으면 소수가 생기므로 그때만 한 자리.
+  lenEl.textContent = ok ? fmtStamp(PK.inS) + ' – ' + fmtStamp(PK.outS) + '  ·  ' + len.toFixed(1).replace(/\.0$/, '') + '초'
         : (PK.inS != null ? '시작 ' + fmtStamp(PK.inS) + ' · 끝을 찍으세요' : '구간 없음');
   lenEl.classList.toggle('warn', ok && (len < 8 || len > 90));
   $('#pkApply').disabled = !ok;
