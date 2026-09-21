@@ -115,6 +115,29 @@ main{display:grid;gap:0;padding-bottom:96px}
   align-items:center;justify-content:center;background:rgba(10,10,12,.72);
   border:2px dashed var(--text);border-radius:4px;color:var(--text);font-size:14px;line-height:1}
 #hot{position:absolute;inset:0}
+#fitLayer{position:absolute;inset:0;cursor:grab;touch-action:none;
+  box-shadow:inset 0 0 0 2px rgba(232,179,74,.85)}
+#fitLayer.drag{cursor:grabbing}
+/* 글 검사 — 렌더가 겪은 일과 자주 틀리는 맞춤법 */
+.lintBox{margin-top:9px;border:1px solid rgba(255,255,255,.14);border-radius:7px;
+  padding:8px 10px;display:flex;flex-direction:column;gap:4px}
+.lintHead{font-size:11px;opacity:.55;margin-bottom:2px}
+.lintItem{font-size:12px;line-height:1.5;padding-left:15px;position:relative}
+.lintItem::before{position:absolute;left:0;top:0}
+.lintItem.bad::before{content:"✗";color:#e06a6a}
+.lintItem.warn::before{content:"!";color:#e8b34a}
+.lintItem.tip::before{content:"·";opacity:.5}
+.lintItem.bad{color:#f0b4b4}
+.lintItem.warn{color:#e8cf9a}
+.fitBar{margin-top:8px;display:flex;flex-direction:column;gap:6px}
+.fitRow{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.fitRow button{background:none;border:1px solid var(--line,rgba(255,255,255,.22));
+  border-radius:6px;color:inherit;font:inherit;font-size:12px;padding:7px 10px;cursor:pointer}
+.fitRow button.on{background:rgba(232,179,74,.16);border-color:rgba(232,179,74,.75)}
+.fitRow button.strong{background:rgba(255,255,255,.90);color:#111;border-color:transparent;font-weight:700}
+.fitRow .fitLbl{font-size:11.5px;opacity:.6}
+.fitRow .fitNow{flex:1;text-align:right;font-size:11px;opacity:.6;
+  font-family:ui-monospace,Menlo,monospace}
 .hs{position:absolute;padding:0;border:1px solid transparent;border-radius:3px;
   background:transparent;transition:background .12s,border-color .12s}
 .hs:hover,.hs:focus-visible{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.55);
@@ -201,6 +224,7 @@ main{display:grid;gap:0;padding-bottom:96px}
       <div id="canvasbox">
         <canvas id="stage" width="1080" height="1350" aria-label="카드뉴스 미리보기"></canvas>
         <div id="hot"></div>
+        <div id="fitLayer" hidden></div>
         <button id="photoHint" type="button" hidden><span class="pi">＋</span>사진 넣기</button>
         <div id="quick" hidden>
           <div class="qhead">
@@ -253,7 +277,32 @@ main{display:grid;gap:0;padding-bottom:96px}
     <div class="photorow" id="photoRow">
       <button id="photoBtn" type="button" class="strong">사진 넣기</button>
       <input id="photoInput" type="file" accept="image/*" multiple />
+      <button id="photoFitBtn" type="button" hidden>사진 맞추기</button>
       <button id="photoClear" type="button">사진 빼기</button>
+    </div>
+
+    <div class="lintBox" id="lintBox" hidden></div>
+
+    <!-- 사진 맞추기 — 4:5 가 아닌 사진을 억지로 자르지 않으려는 자리 -->
+    <div class="fitBar" id="fitBar" hidden>
+      <div class="fitRow">
+        <button type="button" data-fit="cover">꽉 채우기</button>
+        <button type="button" data-fit="contain">전체 보이기</button>
+        <button type="button" data-fit="zoomout">−</button>
+        <button type="button" data-fit="zoomin">＋</button>
+        <span class="fitNow" id="fitNow"></span>
+      </div>
+      <div class="fitRow">
+        <span class="fitLbl">남는 자리</span>
+        <button type="button" data-bg="blur">블러</button>
+        <button type="button" data-bg="white">흰색</button>
+        <button type="button" data-bg="black">검정</button>
+        <button type="button" id="fitSnap">자석 켬</button>
+        <button type="button" data-fit="reset">되돌리기</button>
+        <button type="button" id="fitDone" class="strong">완료</button>
+      </div>
+      <p class="hint">끌어서 위치를 잡고, 두 손가락(또는 휠)으로 확대·축소합니다.
+        가장자리에 가까워지면 자석이 붙여 줍니다.</p>
     </div>
 
     <div id="fields"></div>
@@ -473,6 +522,20 @@ function wrapSmart(text, fk, size, maxW, tr, balance) {
 }
 
 /* ── 자동 맞춤 드로잉 ──────────────────────────────────────────────────── */
+/* ── 렌더가 겪은 일 ─────────────────────────────────────────────────────────
+ *
+ * 이 렌더러는 글이 넘치면 조용히 처리한다 — 폰트를 줄이고, 줄을 접고, 그래도
+ * 안 되면 말줄임으로 자른다. 그래서 "잘 들어간 것"과 "억지로 욱여넣은 것"이
+ * 화면에서 구별되지 않는다. 커버 제목이 84px 설계인데 48px 로 쪼그라들어도
+ * 그림은 나온다 — 시안만 무너질 뿐이다.
+ *
+ * 글자수를 세어 짐작하는 대신, **그리면서 실제로 무슨 일이 있었는지** 적어 둔다.
+ * 폰트 실측과 줄바꿈 규칙이 이미 여기 있으니 이게 가장 정확하다.
+ */
+let FITREP = null;        // 본 미리보기를 그릴 때만 배열이 된다
+
+function fitSay(field, o) { if (FITREP && field) FITREP.push(Object.assign({ field }, o)); }
+
 function drawFitted(ctx, text, x, y, maxW, fk, size, opt) {
   const o = Object.assign({ minSize: 26, maxLines: 1, fill: "#ffffff", style: null,
                             tracking: null, leading: null }, opt || {});
@@ -485,12 +548,16 @@ function drawFitted(ctx, text, x, y, maxW, fk, size, opt) {
     while (s > o.minSize && twTracked(text, fk, s, tr) > maxW) {
       s = Math.max(o.minSize, s - 2); tr = trEm * s;
     }
-    drawTracked(ctx, x, y, ellipsisTracked(text, fk, s, maxW, tr), fk, s, o.fill, tr);
+    const drawn = ellipsisTracked(text, fk, s, maxW, tr);
+    if (s < size) fitSay(o.field, { kind: "shrink", want: size, got: s, min: o.minSize });
+    if (drawn !== oneline(text)) fitSay(o.field, { kind: "cut", n: chars(oneline(text)).length - chars(drawn).length });
+    drawTracked(ctx, x, y, drawn, fk, s, o.fill, tr);
     return y + lineAdvance(s, ld);
   }
   const tr = trEm * size;
   let lines = wrapSmart(text, fk, size, maxW, tr, o.maxLines === 2);
   if (lines.length > o.maxLines) {
+    fitSay(o.field, { kind: "lines", want: o.maxLines, got: lines.length });
     lines = lines.slice(0, o.maxLines);
     lines[lines.length - 1] = ellipsisTracked(lines[lines.length - 1], fk, size, maxW, tr);
   }
@@ -510,6 +577,87 @@ function fitCover(ctx, img, anchor) {
   ctx.imageSmoothingQuality = "high";
   ctx.drawImage(img, 0, 0, sw, sh, -left, -top, nw, nh);
 }
+/* ── 사진 앉히기 ────────────────────────────────────────────────────────────
+ *
+ * fitCover 는 무조건 틀을 꽉 채우고 넘치는 부분을 잘라낸다. 4:5 가 아닌 사진을
+ * 넣으면 가로가 길면 좌우가, 세로가 길면 위아래가 통째로 날아간다. 인물의 손이
+ * 잘리거나 로고가 반만 남는 일이 여기서 생긴다.
+ *
+ * 그래서 사진마다 앉는 방식을 따로 둔다.
+ *     z   1 = 전체 보이기(남는 자리는 배경으로) … 커질수록 확대
+ *     cx  화면 한가운데에 오는 지점 (0 왼끝 ~ 1 오른끝)
+ *     cy  같은 것의 세로
+ *     bg  남는 자리 — 'blur' | 'white' | 'black'
+ *     snap 가장자리에 붙는 자석
+ *
+ * fit 이 없으면(= 손대지 않은 사진) 예전 그대로 꽉 채운다. 기존 작업물이
+ * 열렸을 때 그림이 달라지면 안 된다.
+ */
+const FIT_ZMAX = 8;
+
+function fitScales(img) {
+  const sw = img.naturalWidth || img.width, sh = img.naturalHeight || img.height;
+  return { sw, sh, contain: Math.min(W / sw, H / sh), cover: Math.max(W / sw, H / sh) };
+}
+
+/* 꽉 채우려면 z 가 얼마여야 하는가. 4:5 사진이면 1(자를 것이 없다). */
+function fitCoverZ(img) {
+  const s = fitScales(img);
+  return s.contain > 0 ? s.cover / s.contain : 1;
+}
+
+function fitNorm(img, fit) {
+  const s = fitScales(img);
+  const f = Object.assign(
+    { z: fitCoverZ(img), cx: 0.5, cy: 0.5, bg: "blur", snap: true }, fit || {});
+  f.z = Math.max(1, Math.min(FIT_ZMAX, Number(f.z) || 1));
+  const scale = s.contain * f.z;
+  const nw = s.sw * scale, nh = s.sh * scale;
+  /* 한 가지 식으로 두 경우를 다 가둔다.
+       사진이 틀보다 크면  → 빈틈이 생기지 않는 범위
+       사진이 틀보다 작으면 → 틀 밖으로 나가지 않는 범위
+     두 끝값이 자리를 맞바꿀 뿐이라 min/max 로 정렬하면 같은 식이 된다. */
+  const cl = (c, n, size) => {
+    if (n <= 0) return 0.5;
+    const a = (size / 2) / n, b = (n - size / 2) / n;
+    return Math.max(Math.min(a, b), Math.min(Math.max(a, b), Number(c)));
+  };
+  return { ...s, ...f, scale, nw, nh,
+           cx: cl(f.cx, nw, W), cy: cl(f.cy, nh, H) };
+}
+
+/* 남는 자리를 원본의 흐린 판으로 채운다.
+   ctx.filter 는 사파리 구버전에 없다 — 작게 줄였다가 늘리면 같은 효과가 난다. */
+function fitBlurFill(ctx, img) {
+  const sw = img.naturalWidth || img.width, sh = img.naturalHeight || img.height;
+  const o = document.createElement("canvas");
+  o.height = 42; o.width = Math.max(1, Math.round(42 * W / H));
+  const oc = o.getContext("2d");
+  const k = Math.max(o.width / sw, o.height / sh);
+  oc.imageSmoothingQuality = "high";
+  oc.drawImage(img, 0, 0, sw, sh,
+               (o.width - sw * k) / 2, (o.height - sh * k) / 2, sw * k, sh * k);
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(o, 0, 0, W, H);
+  // 뒤가 너무 튀면 앞 사진이 안 산다.
+  ctx.fillStyle = "rgba(0,0,0,.28)";
+  ctx.fillRect(0, 0, W, H);
+}
+
+function drawPhoto(ctx, img, fit) {
+  if (!fit) { fitCover(ctx, img, "center"); return; }
+  const v = fitNorm(img, fit);
+  if (v.nw < W - 0.5 || v.nh < H - 0.5) {
+    if (v.bg === "white")      { ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, W, H); }
+    else if (v.bg === "black") { ctx.fillStyle = "#000"; ctx.fillRect(0, 0, W, H); }
+    else                       { fitBlurFill(ctx, img); }
+  }
+  ctx.imageSmoothingQuality = "high";
+  ctx.drawImage(img, 0, 0, v.sw, v.sh,
+                Math.round(W / 2 - v.cx * v.nw), Math.round(H / 2 - v.cy * v.nh),
+                Math.round(v.nw), Math.round(v.nh));
+}
+
 function bottomGradient(ctx, startFrac) {
   const start = Math.trunc(H * startFrac);
   for (let y = start; y < H; y++) {
@@ -600,8 +748,8 @@ function drawSource(ctx, source) {
 /* ── 슬라이드 ──────────────────────────────────────────────────────────── */
 function fillEmpty(ctx) { ctx.fillStyle = "rgb(20,20,20)"; ctx.fillRect(0, 0, W, H); }
 
-function slideCover(ctx, img, tag, title, subtitle, source) {
-  if (img) fitCover(ctx, img, "center"); else fillEmpty(ctx);
+function slideCover(ctx, img, tag, title, subtitle, source, fit) {
+  if (img) drawPhoto(ctx, img, fit); else fillEmpty(ctx);
   bottomGradient(ctx, 0.42);
   pasteLogo(ctx); applyTag(ctx, tag);
   const maxW = TEXT_MAX_X - 76;
@@ -614,12 +762,12 @@ function slideCover(ctx, img, tag, title, subtitle, source) {
     if (parts.length > 2) parts = [parts[0], parts.slice(1).join(" ")];
     for (const part of parts)
       y = drawFitted(ctx, part, 76, y, maxW, "eb", 84,
-                     { minSize: 40, maxLines: 1, style: "cover_title" });
+                     { minSize: 40, maxLines: 1, style: "cover_title", field: "title" });
     titleBottom = y;
     subtitleY = Math.max(y + SUB_GAP, 1057);
   } else {
     const bottom = drawFitted(ctx, t, 76, 940, maxW, "eb", 84,
-                              { minSize: 40, maxLines: 2, style: "cover_title" });
+                              { minSize: 40, maxLines: 2, style: "cover_title", field: "title" });
     titleBottom = bottom;
     subtitleY = Math.max(bottom + SUB_GAP, 1057);
   }
@@ -627,7 +775,7 @@ function slideCover(ctx, img, tag, title, subtitle, source) {
   hit("subtitle", 87, subtitleY - 6, maxW, 46);
   if (subtitle)
     drawFitted(ctx, subtitle, 87, subtitleY, maxW, "eb", 29,
-               { minSize: 18, maxLines: 1, style: "cover_subtitle" });
+               { minSize: 18, maxLines: 1, style: "cover_subtitle", field: "subtitle" });
   drawSource(ctx, source);
   hitCommon(tag, source);
 }
@@ -646,11 +794,16 @@ function fitCommonHeadingSize(headings, maxW) {
       while (size > HEADING_MIN && twTracked(line, "eb", size, em * size) > maxW) size -= 2;
     }
   }
+  // 소제목은 덱 전체가 같은 크기를 쓴다(한 장만 커 보이면 안 되니까). 그래서
+  // 줄어든 것도 여기서 한 번만 알린다 — slideBody 쪽은 이미 정해진 값을 받는다.
+  if (size < HEADING_SIZE)
+    fitSay("heading", { kind: "shrink", want: HEADING_SIZE, got: size, min: HEADING_MIN,
+                        deckWide: true });
   return size;
 }
 
-function slideBody(ctx, img, category, heading, bodyText, source, headingSize) {
-  if (img) fitCover(ctx, img, "center"); else fillEmpty(ctx);
+function slideBody(ctx, img, category, heading, bodyText, source, headingSize, fit) {
+  if (img) drawPhoto(ctx, img, fit); else fillEmpty(ctx);
   bottomGradient(ctx, 0.35);
   pasteLogo(ctx); applyTag(ctx, category);
   const maxW = TEXT_MAX_X - BODY_LEFT;
@@ -667,6 +820,7 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize) {
       bodyLines.push(...wrapSmart(para, "eb", BODY_SIZE, maxW, bodyTr, false));
     }
     if (bodyLines.length > BODY_MAX_LINES) {
+      fitSay("body", { kind: "lines", want: BODY_MAX_LINES, got: bodyLines.length });
       bodyLines = bodyLines.slice(0, BODY_MAX_LINES);
       bodyLines[bodyLines.length - 1] =
         ellipsisTracked(bodyLines[bodyLines.length - 1], "eb", BODY_SIZE, maxW, bodyTr);
@@ -683,6 +837,8 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize) {
       while (hSize > HEADING_MIN &&
              parts.some((x) => twTracked(x, "eb", hSize, em * hSize) > maxW)) hSize -= 2;
     }
+    if (hSize < HEADING_SIZE)
+      fitSay("heading", { kind: "shrink", want: HEADING_SIZE, got: hSize, min: HEADING_MIN });
     headTr = em * hSize;
     headAdv = lineAdvance(hSize, TYPO.body_heading.leading);
     for (const x of parts) headLines.push(...wrapSmart(x, "eb", hSize, maxW, headTr, false));
@@ -722,8 +878,8 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize) {
   hitCommon(category, source);
 }
 
-function slideLast(ctx, img, tag, source) {
-  if (img) fitCover(ctx, img, "center"); else fillEmpty(ctx);
+function slideLast(ctx, img, tag, source, fit) {
+  if (img) drawPhoto(ctx, img, fit); else fillEmpty(ctx);
   darkOverlay(ctx, 140);
   pasteLogo(ctx); applyTag(ctx, tag);
   ctx.fillStyle = "#ffffff";
@@ -850,9 +1006,142 @@ const Store = {
   },
 };
 
+/* ── 글 검사 ────────────────────────────────────────────────────────────────
+ *
+ * 두 가지를 본다.
+ *   ① 렌더가 겪은 일 — 폰트가 줄었나, 줄이 잘렸나, 말줄임이 붙었나.
+ *      글자수를 세는 것보다 정확하다. 실제로 그려 보고 얻은 값이니까.
+ *   ② 글 자체 — 자주 틀리는 맞춤법·띄어쓰기, 너무 긴 문장, 같은 어미 반복.
+ *      규칙으로만 본다. 문맥을 모르니 놓치는 것이 있고, 그래서 '확실한 것'만 담았다.
+ *      애매하면 아예 말하지 않는다 — 틀린 지적이 쌓이면 다음부터 안 읽는다.
+ */
+const FIELD_KO = { title: "커버 제목", subtitle: "커버 부제", heading: "소제목",
+                   body: "본문", credit: "출처", category: "카테고리" };
+
+/* 규칙: [찾을 것, 이름, 고칠 말]. 되도록 '거의 항상 틀린' 것만 둔다. */
+const SPELL = [
+  // '되요' 는 앞에 무엇이 오든 거의 항상 틀린다 — '안되요' 를 놓치면 안 된다.
+  [/되요/g, "되요 → 돼요", "돼요"],
+  [/됬/g, "됬 → 됐", "됐"],
+  [/안\s?되(?=[다어었지요])/g, "안되다 → 안 되다 (부정은 띄어 쓴다)", "안 되"],
+  [/(?<![가-힣])몇일(?![가-힣])/g, "몇일 → 며칠", "며칠"],
+  [/(?<![가-힣])오랫만/g, "오랫만 → 오랜만", "오랜만"],
+  [/(?<![가-힣])어떻해(?![가-힣])/g, "어떻해 → 어떡해", "어떡해"],
+  [/(?<![가-힣])역활/g, "역활 → 역할", "역할"],
+  [/(?<![가-힣])금새(?![가-힣])/g, "금새 → 금세", "금세"],
+  [/(?<![가-힣])왠만/g, "왠만 → 웬만", "웬만"],
+  [/(?<![가-힣])웬지(?![가-힣])/g, "웬지 → 왠지", "왠지"],
+  [/(?<![가-힣])일일히(?![가-힣])/g, "일일히 → 일일이", "일일이"],
+  [/(?<![가-힣])갯수(?![가-힣])/g, "갯수 → 개수", "개수"],
+  [/(?<![가-힣])뭐에요(?![가-힣])/g, "뭐에요 → 뭐예요", "뭐예요"],
+  [/([가-힣])로서(?=\s|$|[,.])/g, "로서/로써 — 자격이면 '로서', 수단이면 '로써'", null],
+  [/(?<=[가-힣])율(?=\s|$|[,.])/g, null, null],   // 아래에서 따로 본다
+  [/할수(?![가-힣])/g, "할수 → 할 수", "할 수"],
+  [/(?<![가-힣])(수있|수없)/g, "수있다·수없다 → 수 있다·수 없다", null],
+  [/([가-힣])지않/g, "-지않 → -지 않", null],
+  [/([가-힣])같은경우/g, "같은경우 → 같은 경우", null],
+  [/  +/g, "공백이 두 칸 이상입니다", " "],
+  [/\s+([,.!?])/g, "문장부호 앞에 공백이 있습니다", "$1"],
+];
+
+/* '-율/-률' 은 앞 글자에 따라 갈린다. 받침이 없거나 ㄴ 이면 '율'. */
+function checkYul(t) {
+  const out = [];
+  // 조사가 붙어도 잡아야 한다 — '비률이' 에서 뒤 글자를 막으면 못 본다.
+  const re = /([가-힣])(율|률)(?=[이가은는을를에의로도과와만]|\s|$|[,.!?])/g;
+  let m;
+  while ((m = re.exec(t))) {
+    const code = m[1].charCodeAt(0) - 0xac00;
+    if (code < 0 || code > 11171) continue;
+    const jong = code % 28;                       // 0 = 받침 없음, 4 = ㄴ
+    const want = (jong === 0 || jong === 4) ? "율" : "률";
+    if (m[2] !== want) out.push(`${m[1]}${m[2]} → ${m[1]}${want}`);
+  }
+  return out;
+}
+
+function lintText(field, text) {
+  const t = (text || "").trim();
+  const msgs = [];
+  if (!t) return msgs;
+  for (const [re, name] of SPELL) {
+    if (!name) continue;
+    re.lastIndex = 0;
+    if (re.test(t)) msgs.push(name);
+  }
+  checkYul(t).forEach((x) => msgs.push(x));
+  // 한 문장이 너무 길면 카드에서 읽히지 않는다.
+  if (field === "body") {
+    const longest = t.split(/(?<=[.!?])\s+|\n/).map((x) => x.trim())
+                     .filter(Boolean).sort((a, b) => b.length - a.length)[0] || "";
+    if (longest.length > 90) msgs.push(`한 문장이 ${longest.length}자입니다 — 둘로 나누면 읽기 쉬워집니다`);
+    // 같은 어미가 내리 세 번이면 글이 단조로워진다.
+    const ends = t.split(/(?<=[.!?])\s+/).map((x) => x.trim()).filter(Boolean)
+                  .map((x) => x.replace(/[.!?]+$/, "").slice(-2));
+    for (let i = 0; i + 2 < ends.length; i++)
+      if (ends[i] && ends[i] === ends[i + 1] && ends[i] === ends[i + 2]) {
+        msgs.push(`'${ends[i]}' 로 끝나는 문장이 내리 세 번입니다`); break;
+      }
+  }
+  return [...new Set(msgs)];
+}
+
+/* 렌더가 남긴 기록 → 사람이 읽을 말. */
+function lintFromRender(rep) {
+  const by = {};
+  for (const r of rep || []) (by[r.field] = by[r.field] || []).push(r);
+  const out = [];
+  for (const [f, list] of Object.entries(by)) {
+    const ko = FIELD_KO[f] || f;
+    const sh = list.find((r) => r.kind === "shrink");
+    const cut = list.find((r) => r.kind === "cut");
+    const ln = list.find((r) => r.kind === "lines");
+    if (sh) out.push({ lv: sh.got <= sh.min ? "bad" : "warn",
+      m: `${ko} — ${sh.want}px 로 설계됐는데 ${sh.got}px 까지 줄었습니다`
+         + (sh.deckWide ? " (가장 긴 소제목에 맞춰 전 장이 같이 줄어듭니다)" : "")
+         + (sh.got <= sh.min ? " · 더는 못 줄입니다" : "") });
+    if (ln) out.push({ lv: "bad", m: `${ko} — ${ln.got}줄이 됐습니다. ${ln.want}줄까지만 들어갑니다` });
+    if (cut) out.push({ lv: "bad", m: `${ko} — 끝이 ${cut.n}자 잘려 …로 끝납니다` });
+  }
+  return out;
+}
+
+function runLint() {
+  const box = document.getElementById("lintBox");
+  if (!box || !deck) return;
+  const sl = deck.slides[cur];
+  const items = sl ? lintFromRender(FITREP) : [];
+  if (sl) {
+    for (const f of ["title", "subtitle", "heading", "body", "credit"]) {
+      for (const m of lintText(f, sl[f]))
+        items.push({ lv: "tip", m: `${FIELD_KO[f]} — ${m}` });
+    }
+  }
+  // 태그 문자열이 어긋나면 디자인된 PNG 태그 대신 밋밋한 글자 태그가 나온다.
+  const tag = (deck.category || "").trim();
+  if (/new\s*release/i.test(tag) && !NR_VARIANTS.has(tag))
+    items.push({ lv: "warn", m: `카테고리 — '${tag}' 는 디자인 태그가 안 붙습니다. 'New Release!' 로 적어 주세요` });
+
+  // 여기 담기는 말에는 사용자가 쓴 글자가 섞인다. 문자열로 붙이지 않고
+  // textContent 로 넣는다 — 제목에 <b> 를 적었다고 화면이 망가지면 안 된다.
+  box.hidden = !items.length;
+  box.replaceChildren();
+  if (!items.length) return;
+  const h = document.createElement("div");
+  h.className = "lintHead"; h.textContent = "글 검사 " + items.length + "건";
+  box.appendChild(h);
+  for (const i of items) {
+    const d = document.createElement("div");
+    d.className = "lintItem " + i.lv; d.textContent = i.m;
+    box.appendChild(d);
+  }
+}
+
 /* ── 상태 ──────────────────────────────────────────────────────────────── */
-const blankCover = () => ({ kind: "cover", title: "", subtitle: "", heading: "", body: "", credit: "", srcUrl: "", img: null, el: null });
-const blankBody  = () => ({ kind: "body",  title: "", subtitle: "", heading: "", body: "", credit: "", srcUrl: "", img: null, el: null });
+const blankCover = () => ({ kind: "cover", title: "", subtitle: "", heading: "", body: "", credit: "", srcUrl: "", img: null, el: null, fit: null });
+const blankBody  = () => ({ kind: "body",  title: "", subtitle: "", heading: "", body: "", credit: "", srcUrl: "", img: null, el: null,
+  // null = 손대지 않음(예전처럼 꽉 채우기). 만지면 {z,cx,cy,bg,snap} 가 들어간다.
+  fit: null });
 
 let deck = null, cur = 0, dirty = false, deckId = null;
 
@@ -890,18 +1179,29 @@ function paint(ctx, i, track) {
   ctx.clearRect(0, 0, 1080, 1350);
   const tag = deck.category || "";
   if (i >= deck.slides.length) {
-    slideLast(ctx, deck.slides[0] && deck.slides[0].el, tag, "");
+    // 엔딩은 커버 사진을 그대로 받는다 — 앉히는 방식도 같이 받아야 그림이 같다.
+    slideLast(ctx, deck.slides[0] && deck.slides[0].el, tag, "",
+              deck.slides[0] && deck.slides[0].fit);
   } else {
     const s = deck.slides[i];
-    if (i === 0) slideCover(ctx, s.el, tag, lit(s.title), s.subtitle, s.credit);
-    else slideBody(ctx, s.el, tag, lit(s.heading), lit(s.body), s.credit, headingSizeForDeck());
+    if (i === 0) slideCover(ctx, s.el, tag, lit(s.title), s.subtitle, s.credit, s.fit);
+    else slideBody(ctx, s.el, tag, lit(s.heading), lit(s.body), s.credit,
+                   headingSizeForDeck(), s.fit);
   }
   TRACK = false;
 }
 let paintTimer = null;
 function repaint(now) {
   clearTimeout(paintTimer);
-  const run = () => { paint(sctx, cur, true); layoutHotspots(); scheduleThumbs(); };
+  const run = () => {
+    FITREP = [];                       // 본 미리보기를 그리는 동안만 적는다
+    paint(sctx, cur, true);
+    const got = FITREP; FITREP = null; // 섬네일 렌더가 섞이지 않게 바로 끈다
+    FITREP = got;
+    layoutHotspots(); scheduleThumbs();
+    try { runLint(); } catch (_) {}
+    FITREP = null;
+  };
   if (now) run(); else paintTimer = setTimeout(run, 90);
 }
 
@@ -1103,9 +1403,214 @@ function syncAll() {
   document.querySelectorAll(".thumb").forEach((t, i) => t.classList.toggle("on", i === cur));
   document.getElementById("counter").textContent = `${cur + 1} / ${deck.slides.length + 1}`;
   syncFields();
+  if (fitMode && !fitActive()) fitExit();
+  fitPaintBar();
   repaint(true);
   const t = rail.children[cur];
   if (t && t.scrollIntoView) t.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+}
+
+/* ── 사진 맞추기 ────────────────────────────────────────────────────────────
+ *
+ * 4:5 가 아닌 사진을 억지로 채우면 원본이 잘린다. 여기서는 끌어서 자리를 잡고,
+ * 두 손가락(또는 휠)으로 크기를 바꾸고, 남는 자리를 무엇으로 채울지 고른다.
+ * 가장자리 근처에서는 자석이 붙여 준다 — 손으로 1px 을 맞출 수는 없다.
+ */
+const FIT_SNAP_PX = 22;      // 1080 기준. 이 안에 들어오면 가장자리에 붙인다.
+let fitMode = false;
+let fitDrag = null;
+let fitPts  = null;          // 손가락 두 개
+
+function fitSlide() { return deck.slides[cur]; }
+function fitActive() { const s = fitSlide(); return s && s.el ? s : null; }
+
+/* 손대지 않은 사진은 fit 이 없다(= 예전처럼 꽉 채우기).
+   한 번이라도 만지면 그때의 모습 그대로를 값으로 굳혀 둔다. */
+function fitEnsure(sl) {
+  if (!sl.fit) sl.fit = { z: fitCoverZ(sl.el), cx: .5, cy: .5, bg: "blur", snap: true };
+  return sl.fit;
+}
+
+function fitSetZoom(sl, z, ax, ay) {
+  const f = fitEnsure(sl);
+  const before = fitNorm(sl.el, f);
+  f.z = Math.max(1, Math.min(FIT_ZMAX, z));
+  const after = fitNorm(sl.el, f);
+  // 집은 지점을 붙잡아 둔다 — 안 그러면 확대할 때마다 보던 곳이 달아난다.
+  if (ax != null && before.nw > 0 && after.nw > 0) {
+    f.cx = before.cx + (ax - 0.5) * (W / before.nw - W / after.nw);
+    f.cy = before.cy + (ay - 0.5) * (H / before.nh - H / after.nh);
+  }
+  Object.assign(f, { cx: fitNorm(sl.el, f).cx, cy: fitNorm(sl.el, f).cy });
+}
+
+/* 가장자리에 가까우면 붙인다. 후보는 왼끝·가운데·오른끝 셋뿐이다. */
+function fitSnapAxis(c, n, size) {
+  const cands = [(size / 2) / n, 0.5, (n - size / 2) / n];
+  let best = c, bestD = Infinity;
+  for (const t of cands) {
+    const d = Math.abs((c - t) * n);       // 화면에서 몇 px 떨어졌나
+    if (d < bestD) { bestD = d; best = t; }
+  }
+  return bestD <= FIT_SNAP_PX ? best : c;
+}
+
+function fitApplySnap(sl) {
+  const f = sl.fit; if (!f || !f.snap) return;
+  const v = fitNorm(sl.el, f);
+  f.cx = fitSnapAxis(v.cx, v.nw, W);
+  f.cy = fitSnapAxis(v.cy, v.nh, H);
+}
+
+function fitPaintBar() {
+  const sl = fitActive();
+  const bar = document.getElementById("fitBar");
+  const btn = document.getElementById("photoFitBtn");
+  if (btn) btn.hidden = !sl;
+  if (!bar) return;
+  bar.hidden = !(fitMode && sl);
+  if (bar.hidden) return;
+  // 여기서 fitEnsure 를 부르면 '되돌리기' 로 비운 값이 곧바로 되살아난다.
+  // 화면에 보여줄 값은 fitNorm 이 null 도 알아서 채워 준다.
+  const f = sl.fit || fitNorm(sl.el, null), v = fitNorm(sl.el, sl.fit);
+  const coverZ = fitCoverZ(sl.el);
+  bar.querySelectorAll("[data-bg]").forEach((b) =>
+    b.classList.toggle("on", b.dataset.bg === f.bg));
+  bar.querySelector('[data-fit="cover"]').classList.toggle("on", Math.abs(f.z - coverZ) < .01);
+  bar.querySelector('[data-fit="contain"]').classList.toggle("on", Math.abs(f.z - 1) < .01);
+  const sb = document.getElementById("fitSnap");
+  sb.textContent = f.snap ? "자석 켬" : "자석 끔";
+  sb.classList.toggle("on", !!f.snap);
+  const gap = (v.nw < W - .5 || v.nh < H - .5);
+  document.getElementById("fitNow").textContent =
+    Math.round(f.z / coverZ * 100) + "% · " + (gap ? "남는 자리 있음" : "꽉 참");
+}
+
+function fitEnter() {
+  const sl = fitActive(); if (!sl) return;
+  fitEnsure(sl);
+  fitMode = true;
+  document.getElementById("hot").hidden = true;
+  document.getElementById("fitLayer").hidden = false;
+  fitPaintBar(); repaint(true);
+}
+
+function fitExit() {
+  fitMode = false;
+  document.getElementById("hot").hidden = false;
+  document.getElementById("fitLayer").hidden = true;
+  fitPaintBar(); repaint(true);
+}
+
+/* 화면 좌표 → 틀 좌표(0~1). 미리보기는 축소돼 있으므로 비율로 바꾼다. */
+function fitAt(e, rect) {
+  return { x: (e.clientX - rect.left) / rect.width,
+           y: (e.clientY - rect.top) / rect.height };
+}
+
+function fitDown(e) {
+  const sl = fitActive(); if (!sl) return;
+  const layer = document.getElementById("fitLayer");
+  if (e.pointerType === "touch") {
+    fitPts = fitPts || new Map();
+    fitPts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (fitPts.size === 2) {
+      const p = [...fitPts.values()];
+      const rect = layer.getBoundingClientRect();
+      fitDrag = null;
+      fitPts.pinch = {
+        d: Math.hypot(p[0].x - p[1].x, p[0].y - p[1].y) || 1,
+        z: fitEnsure(sl).z,
+        ax: ((p[0].x + p[1].x) / 2 - rect.left) / rect.width,
+        ay: ((p[0].y + p[1].y) / 2 - rect.top) / rect.height,
+      };
+      return;
+    }
+  }
+  const rect = layer.getBoundingClientRect();
+  const f = fitEnsure(sl);
+  fitDrag = { at: fitAt(e, rect), cx: f.cx, cy: f.cy, rect };
+  layer.classList.add("drag");
+  try { layer.setPointerCapture(e.pointerId); } catch (_) {}
+  e.preventDefault();
+}
+
+function fitMove(e) {
+  const sl = fitActive(); if (!sl) return;
+  if (fitPts && fitPts.has(e.pointerId)) fitPts.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  if (fitPts && fitPts.pinch && fitPts.size === 2) {
+    const p = [...fitPts.values()];
+    const nd = Math.hypot(p[0].x - p[1].x, p[0].y - p[1].y) || 1;
+    fitSetZoom(sl, fitPts.pinch.z * (nd / fitPts.pinch.d), fitPts.pinch.ax, fitPts.pinch.ay);
+    fitPaintBar(); repaint(true);
+    return;
+  }
+  if (!fitDrag) return;
+  const now = fitAt(e, fitDrag.rect);
+  const f = sl.fit, v = fitNorm(sl.el, f);
+  // 손가락이 움직인 만큼 사진이 따라온다 — 미는 방향과 보이는 방향이 같아야 한다.
+  f.cx = fitDrag.cx - (now.x - fitDrag.at.x) * (W / v.nw);
+  f.cy = fitDrag.cy - (now.y - fitDrag.at.y) * (H / v.nh);
+  fitApplySnap(sl);
+  Object.assign(f, { cx: fitNorm(sl.el, f).cx, cy: fitNorm(sl.el, f).cy });
+  fitPaintBar(); repaint(true);
+}
+
+function fitUp(e) {
+  if (fitPts) { fitPts.delete(e.pointerId); if (fitPts.size < 2) fitPts.pinch = null; }
+  if (!fitDrag) return;
+  fitDrag = null;
+  document.getElementById("fitLayer").classList.remove("drag");
+  markDirty && markDirty();
+}
+
+function bindFit() {
+  const layer = document.getElementById("fitLayer");
+  if (!layer) return;
+  layer.addEventListener("pointerdown", fitDown);
+  layer.addEventListener("pointermove", fitMove);
+  layer.addEventListener("pointerup", fitUp);
+  layer.addEventListener("pointercancel", fitUp);
+  layer.addEventListener("wheel", (e) => {
+    const sl = fitActive(); if (!sl) return;
+    e.preventDefault();
+    const rect = layer.getBoundingClientRect(), at = fitAt(e, rect);
+    fitSetZoom(sl, fitEnsure(sl).z * (e.deltaY < 0 ? 1.12 : 1 / 1.12), at.x, at.y);
+    fitPaintBar(); repaint(true); markDirty && markDirty();
+  }, { passive: false });
+  layer.addEventListener("dblclick", () => {
+    const sl = fitActive(); if (!sl) return;
+    const f = fitEnsure(sl), coverZ = fitCoverZ(sl.el);
+    fitSetZoom(sl, Math.abs(f.z - coverZ) < .01 ? 1 : coverZ);
+    fitPaintBar(); repaint(true); markDirty && markDirty();
+  });
+
+  document.getElementById("photoFitBtn").onclick = () => fitMode ? fitExit() : fitEnter();
+  document.getElementById("fitDone").onclick = fitExit;
+  document.getElementById("fitSnap").onclick = () => {
+    const sl = fitActive(); if (!sl) return;
+    const f = fitEnsure(sl); f.snap = !f.snap; fitPaintBar();
+  };
+  document.querySelectorAll("[data-bg]").forEach((b) => {
+    b.onclick = () => {
+      const sl = fitActive(); if (!sl) return;
+      fitEnsure(sl).bg = b.dataset.bg;
+      fitPaintBar(); repaint(true); markDirty && markDirty();
+    };
+  });
+  document.querySelectorAll("[data-fit]").forEach((b) => {
+    b.onclick = () => {
+      const sl = fitActive(); if (!sl) return;
+      const f = fitEnsure(sl);
+      const k = b.dataset.fit;
+      if (k === "cover")        fitSetZoom(sl, fitCoverZ(sl.el));
+      else if (k === "contain") fitSetZoom(sl, 1);
+      else if (k === "zoomin")  fitSetZoom(sl, f.z * 1.15, .5, .5);
+      else if (k === "zoomout") fitSetZoom(sl, f.z / 1.15, .5, .5);
+      else if (k === "reset")   sl.fit = null;
+      fitPaintBar(); repaint(true); markDirty && markDirty();
+    };
+  });
 }
 
 /* ── 사진 ──────────────────────────────────────────────────────────────── */
@@ -1132,7 +1637,7 @@ function downscale(dataUrl) {
 function attachImage(slide, dataUrl) {
   return new Promise((res) => {
     const im = new Image();
-    im.onload = () => { slide.img = dataUrl; slide.el = im; res(true); };
+    im.onload = () => { slide.img = dataUrl; slide.el = im; slide.fit = null; res(true); };
     im.onerror = () => res(false);
     im.src = dataUrl;
   });
@@ -1162,9 +1667,12 @@ document.getElementById("photoHint").onclick = pickPhoto;
 document.getElementById("photoClear").onclick = () => {
   const s = deck.slides[cur];
   if (!s) return;
-  s.img = null; s.el = null;
+  // 사진을 빼면 앉히는 방식도 같이 버린다 — 다음 사진에 남의 자리가 적용되면 안 된다.
+  s.img = null; s.el = null; s.fit = null;
+  if (fitMode) fitExit();
   markDirty(); syncAll();
 };
+bindFit();
 const canvasBox = document.getElementById("canvasbox");
 canvasBox.addEventListener("click", (e) => {
   if (e.target === stage && !quick.hidden) closeQuick();
@@ -1297,7 +1805,7 @@ async function saveDeck() {
     name: deck.name, category: deck.category, caption: deck.caption, updatedAt: Date.now(),
     slides: JSON.stringify(deck.slides.map((s) => ({
       kind: s.kind, title: s.title, subtitle: s.subtitle, heading: s.heading,
-      body: s.body, credit: s.credit, srcUrl: s.srcUrl, hasImg: !!s.img,
+      body: s.body, credit: s.credit, srcUrl: s.srcUrl, hasImg: !!s.img, fit: s.fit || null,
     }))),
   };
   try {
