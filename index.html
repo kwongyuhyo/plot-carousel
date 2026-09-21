@@ -129,6 +129,21 @@ main{display:grid;gap:0;padding-bottom:96px}
 .fitRow .fitLbl{font-size:11.5px;opacity:.6}
 .fitRow .fitNow{flex:1;text-align:right;font-size:11px;opacity:.6;
   font-family:ui-monospace,Menlo,monospace}
+/* 4:5 가 아닌 사진이 들어오면 「사진 맞추기」를 눈에 띄게. 회색 버튼 하나로는
+   그런 기능이 있는 줄 몰랐다 (2026-09-21 "사이즈 조정이 아직 안 되는 것 같아"). */
+#photoFitBtn.nudge{border-color:rgba(232,179,74,.85);color:#f3cf86;
+  background:rgba(232,179,74,.14);font-family:"Pretendard-ExtraBold",sans-serif}
+/* 폰에서는 미리보기가 맨 위, 맞추기 버튼은 한참 아래라 끌면서 결과를 볼 수 없었다.
+   맞추는 동안에는 도구 줄을 화면 아래에 붙이고(저장 바 자리), 미리보기로 올려 준다. */
+@media(max-width:979px){
+  body.fitting .actions{display:none}
+  body.fitting .fitBar{position:fixed;left:0;right:0;bottom:0;z-index:25;margin:0;
+    background:var(--bg);border-top:1px solid var(--line);
+    padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    box-shadow:0 -8px 24px rgba(0,0,0,.35)}
+  body.fitting .fitBar .hint{display:none}
+  body.fitting #toast{bottom:170px}
+}
 .hs{position:absolute;padding:0;border:1px solid transparent;border-radius:3px;
   background:transparent;transition:background .12s,border-color .12s}
 .hs:hover,.hs:focus-visible{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.55);
@@ -1457,7 +1472,10 @@ function fitPaintBar() {
   const sl = fitActive();
   const bar = document.getElementById("fitBar");
   const btn = document.getElementById("photoFitBtn");
-  if (btn) btn.hidden = !sl;
+  if (btn) {
+    btn.hidden = !sl;
+    btn.classList.toggle("nudge", !!sl && !fitMode && !sl.fit && fitOffRatio(sl.el));
+  }
   if (!bar) return;
   bar.hidden = !(fitMode && sl);
   if (bar.hidden) return;
@@ -1477,10 +1495,20 @@ function fitPaintBar() {
     Math.round(f.z / coverZ * 100) + "% · " + (gap ? "남는 자리 있음" : "꽉 참");
 }
 
+/* 4:5 에서 2% 넘게 벗어난 사진인가 — 꽉 채우면 어딘가 잘려 나간다. */
+function fitOffRatio(el) {
+  if (!el || !el.naturalWidth || !el.naturalHeight) return false;
+  return Math.abs((el.naturalWidth / el.naturalHeight) / (W / H) - 1) > 0.02;
+}
+
 function fitEnter() {
   const sl = fitActive(); if (!sl) return;
   fitEnsure(sl);
   fitMode = true;
+  document.body.classList.add("fitting");
+  const box = document.getElementById("canvasbox");
+  if (box && box.scrollIntoView && window.innerWidth < 980)
+    box.scrollIntoView({ block: "start", behavior: "smooth" });
   document.getElementById("hot").hidden = true;
   document.getElementById("fitLayer").hidden = false;
   fitPaintBar(); repaint(true);
@@ -1488,6 +1516,7 @@ function fitEnter() {
 
 function fitExit() {
   fitMode = false;
+  document.body.classList.remove("fitting");
   document.getElementById("hot").hidden = false;
   document.getElementById("fitLayer").hidden = true;
   fitPaintBar(); repaint(true);
@@ -1648,7 +1677,10 @@ async function addPhotos(files) {
     idx++;
   }
   markDirty(); syncAll();
-  toast("사진을 넣었습니다");
+  const now = deck.slides[cur];
+  toast(now && now.el && fitOffRatio(now.el)
+    ? "4:5 가 아닌 사진이라 꽉 채우면 잘립니다 — 「사진 맞추기」로 살릴 수 있어요"
+    : "사진을 넣었습니다");
 }
 const photoInput = document.getElementById("photoInput");
 function pickPhoto() { photoInput.value = ""; photoInput.click(); }
