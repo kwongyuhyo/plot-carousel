@@ -2469,6 +2469,12 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
+    a.title = '판 09.21 18:55';
+    var ver = document.createElement('span');
+    ver.textContent = '09.21 18:55';
+    ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
+                        'margin-left:6px;letter-spacing:0;';
+    a.appendChild(ver);
     // 테두리를 두르면 제목보다 무거워진다. 글자만 남기고 흐리게.
     var base = 'font:700 11.5px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
                'color:#8A8A96;text-decoration:none;white-space:nowrap;letter-spacing:-.01em;' +
