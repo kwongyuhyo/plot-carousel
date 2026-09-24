@@ -489,6 +489,20 @@ pre.form{
 .resume .btn{padding:6px 11px; font-size:12px}
 
 .imBody{flex:1; min-height:0; padding:14px 16px 0; display:flex}
+.svBody{overflow:auto; -webkit-overflow-scrolling:touch}
+.svName{width:100%; background:var(--raise,#15161a); color:var(--text);
+  border:1px solid var(--line); border-radius:8px; padding:10px 11px; font:inherit;
+  font-size:14px; margin-bottom:10px}
+.svList{display:flex; flex-direction:column; gap:7px}
+.svRow{display:flex; align-items:center; gap:9px; border:1px solid var(--line);
+  border-radius:8px; padding:9px 11px}
+.svRow b{font-size:13.5px; font-weight:700; max-width:50%; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap}
+.svRow span{font-size:11.5px; color:var(--dim); flex:1}
+.svRow button{border:1px solid var(--line); border-radius:6px; background:none;
+  color:var(--text); font:inherit; font-size:12px; padding:6px 10px}
+.svRow button.del{color:#e06a6a; border-color:transparent}
+.svEmpty{font-size:12.5px; color:var(--dim); padding:14px 2px; line-height:1.6}
 .imBody textarea{
   flex:1; width:100%; resize:none; border-radius:9px; padding:12px 13px;
   background:var(--panel-2); border:1px solid var(--line); color:var(--ink);
@@ -540,6 +554,8 @@ pre.form{
     <div class="addRow">
       <button class="addBtn" id="add">＋ 영상 추가</button>
       <button class="addBtn ghost" id="paste" title="링크 여러 개 또는 [영상] 양식 텍스트">📥 붙여넣기</button>
+      <button class="addBtn ghost" id="saveBtn" title="지금 쓴 양식을 이름 붙여 저장">💾 저장</button>
+      <button class="addBtn ghost" id="openBtn" title="저장해 둔 양식 열기">📂 불러오기</button>
     </div>
     <div class="summary" id="summary"></div>
     <div id="outsideBar" hidden>
@@ -674,6 +690,27 @@ pre.form{
   </div>
 </div>
 
+<!-- 저장해 둔 양식. 임시저장(쓰다 만 것 하나)과 달리 이름을 붙여 여러 개 둔다. -->
+<div class="sheet" id="saves" hidden>
+  <div class="pkHead">
+    <button class="pkX" id="svClose" aria-label="닫기">✕</button>
+    <b id="svTitle">저장한 양식</b>
+    <span class="pkWho" id="svWho"></span>
+  </div>
+  <div class="imBody svBody">
+    <div style="width:100%">
+      <div id="svNameRow" hidden>
+        <input id="svName" class="svName" placeholder="이름 (예: 9월 신보 3편)" maxlength="40" />
+      </div>
+      <div id="svList" class="svList"></div>
+    </div>
+  </div>
+  <div class="pkFoot">
+    <div class="pkTip" id="svTip"></div>
+    <button class="pkApply" id="svGo">저장</button>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 <script>
 const LOGO = "data:image/png;base64,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";
@@ -765,6 +802,46 @@ function draftSave() {
   }, 400);
 }
 function draftClear() { try { localStorage.removeItem(DRAFT); } catch (_) {} }
+
+/* ── 이름 붙여 저장 ──────────────────────────────────────────────
+ * 임시저장은 '쓰다 만 것' 하나뿐이라, 이번 주 신보 묶음을 두고 급한 이슈를
+ * 먼저 만들면 앞의 것이 덮인다 (2026-09-24 규효: "기존 작업 저장 기능").
+ * 그래서 이름을 붙여 여러 개 둔다. 저장하는 건 글자뿐이라(영상·사진 없음)
+ * localStorage 로 충분하다 — 한 벌에 1KB 안팎이다.
+ * 기기 안에만 남는다. 폰에서 저장한 걸 맥에서 열 수는 없다.
+ */
+const SAVES = 'plot.shorts.saves';
+const SAVE_MAX = 30;
+
+function savesRead() {
+  try {
+    const a = JSON.parse(localStorage.getItem(SAVES) || '[]');
+    return Array.isArray(a) ? a : [];
+  } catch (_) { return []; }
+}
+function savesWrite(list) {
+  try { localStorage.setItem(SAVES, JSON.stringify(list.slice(0, SAVE_MAX))); return true; }
+  catch (_) { toast('저장 공간이 가득 찼습니다 — 오래된 것을 지워 주세요'); return false; }
+}
+function slimNow() {
+  return blocks.map(b => { const o = {}; KEEP.forEach(k => { o[k] = b[k]; }); return o; });
+}
+function saveNamed(name) {
+  const list = savesRead();
+  const now = Date.now();
+  const row = { id: 's' + now.toString(36), name: name, at: now, blocks: slimNow() };
+  const i = list.findIndex(r => r.name === name);
+  if (i >= 0) list[i] = row; else list.unshift(row);
+  list.sort((a, b) => b.at - a.at);
+  return savesWrite(list) ? row : null;
+}
+function saveDefaultName() {
+  const first = blocks.find(b => b.title.trim());
+  const d = new Date();
+  const stamp = (d.getMonth() + 1) + '.' + d.getDate();
+  return first ? first.title.trim().slice(0, 20) + (blocks.length > 1 ? ' 외 ' + (blocks.length - 1) + '편' : '')
+               : stamp + ' 양식 ' + blocks.length + '편';
+}
 function draftRead() {
   try {
     const d = JSON.parse(localStorage.getItem(DRAFT) || 'null');
@@ -2354,6 +2431,68 @@ function imCheck() {
     : '줄마다 링크를 하나씩 넣으면 그만큼 편이 생깁니다. [영상] 양식 텍스트도 그대로 됩니다.';
 }
 
+/* ── 저장한 양식 시트 ─────────────────────────────── */
+let svMode = 'save';
+
+function openSaves(mode) {
+  svMode = mode;
+  const name = $('#svName');
+  $('#saves').hidden = false;
+  document.body.style.overflow = 'hidden';
+  $('#svTitle').textContent = mode === 'save' ? '양식 저장' : '저장한 양식';
+  $('#svNameRow').hidden = mode !== 'save';
+  $('#svGo').hidden = mode !== 'save';
+  if (mode === 'save') {
+    name.value = saveDefaultName();
+    setTimeout(() => { try { name.focus(); name.select(); } catch (_) {} }, 40);
+  }
+  svPaint();
+}
+function closeSaves() {
+  $('#saves').hidden = true;
+  document.body.style.overflow = '';
+}
+
+function svPaint() {
+  const list = savesRead();
+  const box = $('#svList');
+  box.replaceChildren();
+  $('#svWho').textContent = list.length ? list.length + '개 저장됨' : '';
+  $('#svTip').textContent = svMode === 'save'
+    ? '같은 이름으로 저장하면 덮어씁니다. 이 기기에만 남습니다.'
+    : (list.length ? '열면 지금 쓰던 양식은 사라집니다 — 필요하면 먼저 저장하세요.' : '');
+  if (!list.length) {
+    const p = el('p', 'svEmpty');
+    p.textContent = '저장한 양식이 없습니다. 양식을 쓰고 💾 저장을 누르면 여기에 쌓입니다.';
+    box.appendChild(p);
+    return;
+  }
+  list.forEach((r) => {
+    const row = el('div', 'svRow');
+    const b = el('b'); b.textContent = r.name;
+    const s2 = el('span'); s2.textContent = r.blocks.length + '편 · ' + ago(r.at);
+    const open = el('button'); open.type = 'button'; open.textContent = '열기';
+    open.onclick = () => {
+      if (blocks.some(hasContent) &&
+          !confirm('지금 쓰던 양식을 덮어씁니다. 계속할까요?')) return;
+      blocks = fromSlim(r.blocks);
+      active = 0;
+      $('#resume').hidden = true;
+      render();
+      closeSaves();
+      toast('「' + r.name + '」 ' + blocks.length + '편을 열었습니다');
+    };
+    const del = el('button', 'del'); del.type = 'button'; del.textContent = '삭제';
+    del.onclick = () => {
+      if (!confirm('「' + r.name + '」을 지울까요?')) return;
+      savesWrite(savesRead().filter((x) => x.id !== r.id));
+      svPaint();
+    };
+    row.append(b, s2, open, del);
+    box.appendChild(row);
+  });
+}
+
 /* ── 단축키 ───────────────────────────────────────────
  * ⌘Enter 로 보낸다 — 어느 칸에 있든. 구간 고르기가 열려 있으면 그쪽이 임자다.
  */
@@ -2443,6 +2582,16 @@ function boot() {
   bindPicker();
 
   $('#paste').onclick = openImporter;
+  $('#saveBtn').onclick = () => {
+    if (!blocks.some(hasContent)) { toast('저장할 내용이 없습니다'); return; }
+    openSaves('save');
+  };
+  $('#openBtn').onclick = () => openSaves('open');
+  $('#svClose').onclick = closeSaves;
+  $('#svGo').onclick = () => {
+    const name = ($('#svName').value || '').trim() || saveDefaultName();
+    if (saveNamed(name)) { closeSaves(); toast('「' + name + '」으로 저장했습니다'); }
+  };
   $('#imClose').onclick = closeImporter;
   $('#imText').addEventListener('input', imCheck);
   $('#imGo').onclick = () => {
@@ -2497,9 +2646,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.24 18:29';
+    a.title = '판 09.24 19:06';
     var ver = document.createElement('span');
-    ver.textContent = '09.24 18:29';
+    ver.textContent = '09.24 19:06';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);

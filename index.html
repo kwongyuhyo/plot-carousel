@@ -34,7 +34,12 @@ header{position:sticky;top:0;z-index:20;background:var(--bg);
 #deckName::placeholder{color:var(--dim)}
 #dot{width:7px;height:7px;border-radius:50%;background:var(--line);flex:none;transition:background .2s}
 #dot.on{background:var(--amber)}
-.hbtns{display:flex;gap:6px}
+.hbtns{display:flex;gap:6px;flex-wrap:wrap}
+/* 저장하지 않은 변경이 있으면 저장 버튼이 눈에 띄어야 한다. 점 하나로는
+   못 알아챘다 (2026-09-24 규효: "캐러셀 저장이 잘 안 보임"). */
+.hbtns button.dirty{background:var(--text);color:#0A0A0C;border-color:var(--text);
+  font-family:"Pretendard-ExtraBold",sans-serif}
+@media(max-width:520px){.hbtns button{padding:5px 9px;font-size:11.5px}}
 .hbtns button{border:1px solid var(--line);border-radius:6px;padding:5px 11px;
   font-size:13px;color:var(--muted);background:var(--panel)}
 .hbtns button:hover{color:var(--text);border-color:var(--dim)}
@@ -230,7 +235,7 @@ main{display:grid;gap:0;padding-bottom:96px}
     <span id="dot" title="저장하지 않은 변경"></span>
   </div>
   <div class="hbtns">
-    <button id="saveBtn" type="button">저장</button>
+    <button id="saveBtn" type="button">작업 저장</button>
     <button id="openBtn" type="button">불러오기</button>
     <button id="pasteBtn" type="button">양식 붙여넣기</button>
     <button id="newBtn" type="button">새 작업</button>
@@ -330,8 +335,8 @@ main{display:grid;gap:0;padding-bottom:96px}
 
 <div class="actions">
   <button id="copyBtn" type="button">양식 복사</button>
-  <button id="pngBtn" type="button">이 장 저장</button>
-  <button id="allBtn" type="button" class="primary">전체 저장</button>
+  <button id="pngBtn" type="button">이 장 이미지</button>
+  <button id="allBtn" type="button" class="primary">전체 이미지</button>
 </div>
 
 <div class="sheet" id="listBox" hidden>
@@ -1958,8 +1963,18 @@ function showBig(blob) {
 document.getElementById("bigClose").onclick = () => { document.getElementById("bigBox").hidden = true; };
 
 /* ── 저장 · 불러오기 ───────────────────────────────────────────────────── */
-function markDirty() { dirty = true; document.getElementById("dot").classList.add("on"); }
-function markClean() { dirty = false; document.getElementById("dot").classList.remove("on"); }
+function markDirty() {
+  dirty = true;
+  document.getElementById("dot").classList.add("on");
+  const b = document.getElementById("saveBtn");
+  b.classList.add("dirty"); b.textContent = "작업 저장 •";
+}
+function markClean() {
+  dirty = false;
+  document.getElementById("dot").classList.remove("on");
+  const b = document.getElementById("saveBtn");
+  b.classList.remove("dirty"); b.textContent = "작업 저장";
+}
 
 async function saveDeck() {
   if (!deckId) deckId = "d" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
@@ -2141,6 +2156,7 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
   await bootAssets();
   await Store.init();
   if (canShareFiles()) document.getElementById("allBtn").textContent = "전체 내보내기";
+  if (inTG()) document.getElementById("allBtn").textContent = "전체 이미지";
   deck = sampleDeck();
   document.getElementById("deckName").value = deck.name;
   document.getElementById("catInput").value = deck.category;
