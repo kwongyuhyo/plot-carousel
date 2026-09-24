@@ -1087,6 +1087,8 @@ function scan(text) {
   const t = String(text || '');
   const forms = (t.match(/^\[영상\]/gm) || []).length;
   if (forms) return { kind: 'form', n: forms };
+  // 카드뉴스 양식도 여기서 받는다 — 붙여넣는 사람은 어느 화면인지 신경 쓰지 않는다.
+  if (isCardForm(t)) return { kind: 'card', n: (t.match(/^\[(커버|슬라이드)\]/gm) || []).length };
   const seen = {};
   let n = 0;
   for (const raw of (t.match(URL_RE) || [])) {
@@ -1096,7 +1098,30 @@ function scan(text) {
   return { kind: n ? 'link' : 'none', n };
 }
 
+/* 캐러셀 화면에서 넘어온 양식을 받는다(그쪽에서 저장소에 두고 건너온다).
+   반대로 여기 붙여넣은 카드뉴스 양식은 캐러셀로 넘긴다 — 한 입구에서
+   양쪽을 다 받게 하려는 것이다 (2026-09-24 규효). */
+const HANDOFF = 'plot.form.handoff';
+
+function takeHandoff() {
+  let t = null;
+  try { t = localStorage.getItem(HANDOFF); localStorage.removeItem(HANDOFF); } catch (e) {}
+  if (t && t.trim()) importText(t, false);
+}
+
+function isCardForm(t) { return /\[커버\]/.test(String(t || '')); }
+
+function toCarousel(text) {
+  try { localStorage.setItem(HANDOFF, text); } catch (e) {}
+  location.href = 'carousel.html';
+}
+
 function importText(text, append) {
+  if (isCardForm(text) && !/^\[영상\]/m.test(String(text))) {
+    if (/shorts\.html$/.test(location.pathname)) { toCarousel(String(text)); return 0; }
+    toast('카드뉴스 양식입니다 — 캐러셀 화면에서 열어주세요');
+    return 0;
+  }
   const t = String(text || '').trim();
   if (!t) { toast('붙여넣을 내용이 없습니다'); return 0; }
   let got = parseForm(t);
@@ -2323,7 +2348,8 @@ function imCheck() {
   go.disabled = !found.n;
   go.textContent = found.n ? found.n + '편 불러오기' : '불러오기';
   $('#imTip').textContent =
-      found.kind === 'form' ? '양식 ' + found.n + '편을 찾았습니다. 그대로 블록으로 펼칩니다.'
+      found.kind === 'card' ? '카드뉴스 양식 ' + found.n + '장입니다 — 캐러셀 화면에서 펼칩니다.'
+    : found.kind === 'form' ? '양식 ' + found.n + '편을 찾았습니다. 그대로 블록으로 펼칩니다.'
     : found.kind === 'link' ? '링크 ' + found.n + '개를 찾았습니다. 곡·아티스트·출처는 유튜브에서 채웁니다.'
     : '줄마다 링크를 하나씩 넣으면 그만큼 편이 생깁니다. [영상] 양식 텍스트도 그대로 됩니다.';
 }
@@ -2445,6 +2471,8 @@ function boot() {
 
   render();
   fitStage();
+  // 캐러셀 화면에서 숏폼 양식을 붙여넣어 넘어온 경우 — 여기서 받아 펼친다.
+  takeHandoff();
   window.addEventListener('resize', fitStage);
   // 폰트가 늦게 오면 미리보기 폭 계산이 틀어진다 — 로드 후 한 번 더.
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => refresh());
@@ -2469,9 +2497,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.21 19:07';
+    a.title = '판 09.24 18:29';
     var ver = document.createElement('span');
-    ver.textContent = '09.21 19:07';
+    ver.textContent = '09.24 18:29';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);

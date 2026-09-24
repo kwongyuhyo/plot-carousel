@@ -175,6 +175,21 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .bar .in{max-width:620px; margin:0 auto; display:flex; align-items:center; gap:12px}
 .bar .cnt{flex:1; font-size:12px; color:var(--muted); letter-spacing:-.01em}
 .bar .cnt b{color:var(--text)}
+.bar .send.alt{background:none; border:1px solid var(--line); color:var(--text)}
+/* 초안 양식 판 — 봇에 그대로 붙여넣거나 제작 앱에 붙여넣는다. */
+#formSheet{position:fixed; inset:0; z-index:60; background:rgba(6,6,8,.86);
+  display:flex; align-items:center; justify-content:center; padding:18px}
+#formSheet .box{background:var(--panel,#15161a); border:1px solid var(--line);
+  border-radius:12px; padding:16px; width:100%; max-width:620px}
+#formSheet h3{margin:0 0 4px; font-size:15px}
+#formSheet p{margin:0 0 10px; font-size:12px; color:var(--muted)}
+#formSheet textarea{width:100%; height:44vh; background:#0c0d10; color:var(--text);
+  border:1px solid var(--line); border-radius:8px; padding:10px;
+  font-family:ui-monospace,Menlo,monospace; font-size:12px; line-height:1.55}
+#formSheet .row{display:flex; gap:8px; margin-top:10px}
+#formSheet .row button{flex:1; border:1px solid var(--line); border-radius:8px;
+  background:none; color:var(--text); font:inherit; font-size:13px; padding:10px}
+#formSheet .row button.primary{background:var(--text); color:#0A0A0C; border-color:var(--text)}
 .send{background:var(--amber); border:0; border-radius:5px; color:#17130A;
   font:inherit; font-size:13px; font-weight:800; padding:10px 18px; cursor:pointer;
   letter-spacing:-.015em}
@@ -234,9 +249,20 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   <div class="note" id="note"></div>
 </div>
 
+<div id="formSheet" hidden><div class="box">
+  <h3>초안 양식</h3>
+  <p>봇에 그대로 붙여넣으면 제작이 시작됩니다. 제작 앱에 붙여넣으면 미리보기로 열립니다.</p>
+  <textarea id="formText" readonly></textarea>
+  <div class="row">
+    <button id="formCopy" class="primary" type="button">복사</button>
+    <button id="formClose" type="button">닫기</button>
+  </div>
+</div></div>
+
 <div class="bar" id="bar" hidden>
   <div class="in">
     <div class="cnt" id="cnt"></div>
+    <button class="send alt" id="formBtn" hidden>양식</button>
     <button class="send" id="send">보내기</button>
   </div>
 </div>
@@ -554,6 +580,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     document.getElementById('cnt').innerHTML =
       parts.join(' · ') + (d > 3 ? ' <i>— 초안은 3건까지 만듭니다</i>' : '');
     document.getElementById('send').disabled = (p + s + d) === 0;
+    document.getElementById('formBtn').hidden = d === 0;
   }
 
   function onClick(e) {
@@ -586,11 +613,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 
   function payload() {
     var now = new Date().toISOString();
-    var byId = {};
-    (D.candidates || []).forEach(function (c) { byId[c.id] = c; });
-    Object.keys(D.by_account || {}).forEach(function (a) {
-      (D.by_account[a] || []).forEach(function (c) { if (!byId[c.id]) byId[c.id] = c; });
-    });
+    var byId = indexAll();
     return Object.keys(marks).map(function (id) {
       var c = byId[id] || {};
       var o = { v: 1, action: marks[id], id: id, account: c.account || '?', at: now };
@@ -601,6 +624,73 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       if (c.genres) o.genres = c.genres;
       return o;
     });
+  }
+
+  /* ── 초안 → 봇 양식 ──────────────────────────────────────────────
+     예전에는 '보내기' 가 선택 기록 JSON 을 복사했다. 그건 텔레그램 안에서
+     미니앱이 봇에게 보내는 전용 데이터라, 사람이 봇 대화창에 붙여넣으면
+     아무 일도 일어나지 않는다 (2026-09-24 규효: "이상한 코드로 나오는데
+     봇에 붙여도 작동하지 않아"). 초안은 사람이 쓰는 것이므로 사람이 읽고
+     붙여넣을 수 있는 양식으로 낸다 — 봇의 manual_flow / parse_simple_batch
+     가 읽는 바로 그 형식이다. */
+  /* 카드는 네 곳에서 나온다 — 후보·급상승·계정별·소식. 후보만 훑으면 급상승에서
+     고른 카드가 빈 껍데기로 남는다(제목도 출처도 없이 나갔다). */
+  function indexAll() {
+    var byId = {};
+    function add(list) {
+      (list || []).forEach(function (c) { if (c && c.id && !byId[c.id]) byId[c.id] = c; });
+    }
+    add(D.candidates); add(D.fast);
+    Object.keys(D.by_account || {}).forEach(function (a) { add(D.by_account[a]); });
+    return byId;
+  }
+
+  function headline(c) {
+    var t = String(c.caption || '').split('\n')[0];
+    t = t.replace(/^[^0-9A-Za-z가-힣]+/, '').trim();
+    return t.slice(0, 40) || (c.account ? '@' + c.account + ' 소재' : '제목');
+  }
+  function srcOf(c) { return c.account ? '@' + c.account : ''; }
+  function cardCat(c) { return c.kind === 'curation' ? 'Feature' : 'News'; }
+  function shortsCat(c) {
+    var k = (c.plot_kind && c.plot_kind.kind) || '';
+    return k.indexOf('발매') >= 0 || k.indexOf('신보') >= 0 ? 'New release!' : 'Issue';
+  }
+  function cardForm(c) {
+    return ['[카테고리]', cardCat(c), '',
+            '[캡션]', '', '',
+            '[커버]',
+            '소스: ',                    // 비우면 봇이 사진을 직접 받는다
+            '제목: ' + headline(c),
+            '부제: ',
+            '출처: ' + srcOf(c), '',
+            '[슬라이드]', '소스: ', '소제목: ', '본문: ', '출처: ' + srcOf(c), ''].join('\n');
+  }
+  function shortsForm(c) {
+    return ['[영상]',
+            '카테고리: ' + shortsCat(c),
+            'URL: ', '구간: ',
+            '곡: ' + headline(c),
+            '아티스트: ', '피처링: ', '후킹: ',
+            '출처: ' + srcOf(c),
+            '리프레임: 자동'].join('\n');
+  }
+  function draftForms() {
+    var byId = indexAll();
+    var out = [];
+    Object.keys(marks).forEach(function (id) {
+      if (marks[id] !== 'drafted') return;
+      var c = byId[id] || {}, f = forms[id] || 'shorts';
+      if (f === 'shorts' || f === 'both') out.push(shortsForm(c));
+      if (f === 'card' || f === 'both') out.push(cardForm(c));
+    });
+    return out.join('\n\n');
+  }
+  function openForms() {
+    var txt = draftForms();
+    if (!txt) { alert('초안으로 표시한 소재가 없습니다.'); return; }
+    document.getElementById('formText').value = txt;
+    document.getElementById('formSheet').hidden = false;
   }
 
   function send() {
@@ -663,6 +753,23 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   document.addEventListener('click', onClick);
   document.addEventListener('input', onInput);
   document.getElementById('send').addEventListener('click', send);
+  document.getElementById('formBtn').addEventListener('click', openForms);
+  document.getElementById('formClose').addEventListener('click', function () {
+    document.getElementById('formSheet').hidden = true;
+  });
+  document.getElementById('formCopy').addEventListener('click', function () {
+    var ta = document.getElementById('formText');
+    ta.removeAttribute('readonly'); ta.select(); ta.setSelectionRange(0, 999999);
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    if (!ok && navigator.clipboard) {
+      try { navigator.clipboard.writeText(ta.value); ok = true; } catch (e) {}
+    }
+    ta.setAttribute('readonly', 'readonly');
+    this.textContent = ok ? '복사했습니다' : '길게 눌러 복사하세요';
+    var self = this;
+    setTimeout(function () { self.textContent = '복사'; }, 1800);
+  });
   /* 밝기 — 시스템 설정을 기본으로 두고, 누르면 그 기기에서만 고정한다.
      텔레그램 안에서 열면 앱 테마를 따라간다. localStorage 는 막히는 데가
      있으므로(시크릿 창·저장 차단) 읽기·쓰기를 모두 감싼다. */
@@ -756,9 +863,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.21 19:07';
+    a.title = '판 09.24 18:29';
     var ver = document.createElement('span');
-    ver.textContent = '09.21 19:07';
+    ver.textContent = '09.24 18:29';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
