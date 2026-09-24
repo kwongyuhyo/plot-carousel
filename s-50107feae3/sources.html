@@ -176,6 +176,22 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .bar .cnt{flex:1; font-size:12px; color:var(--muted); letter-spacing:-.01em}
 .bar .cnt b{color:var(--text)}
 .bar .send.alt{background:none; border:1px solid var(--line); color:var(--text)}
+/* 이어지는 이야기 — 같은 인물·페스티벌을 여러 매거진이 며칠에 걸쳐 다룬 줄기 */
+.fw{border:1px solid var(--line); border-radius:12px; padding:12px 13px; margin:0 0 14px}
+.fwh{font-size:13px; font-weight:700; margin:0 0 3px}
+.fwh .sub{display:block; font-size:11.5px; font-weight:400; color:var(--muted); margin-top:3px}
+.fwRow{border-top:1px solid var(--line); padding:10px 0 9px}
+.fwTop{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.fwName{font-size:13.5px; font-weight:700}
+.fwMeta{font-size:11.5px; color:var(--muted); flex:1}
+.fwNew{font-size:11px; color:#e8b34a; font-weight:700}
+.fwBtn{border:1px solid var(--line); border-radius:6px; background:none; color:var(--text);
+  font:inherit; font-size:11.5px; padding:5px 9px}
+.fwBtn.on{background:rgba(232,179,74,.16); border-color:rgba(232,179,74,.75); color:#f3cf86}
+.fwList{margin:7px 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:4px}
+.fwList li{font-size:12px; color:var(--muted); line-height:1.5}
+.fwList a{color:var(--text); text-decoration:none}
+.fwList .w{color:var(--dim)}
 /* 초안 양식 판 — 봇에 그대로 붙여넣거나 제작 앱에 붙여넣는다. */
 #formSheet{position:fixed; inset:0; z-index:60; background:rgba(6,6,8,.86);
   display:flex; align-items:center; justify-content:center; padding:18px}
@@ -281,6 +297,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   var marks = {};          // id → 'pick' | 'skip'
   var angles = {};         // id → 문자열
   var forms  = {};         // id → 'shorts' | 'card' | 'both'
+  var tracks = {};         // 이름 → true(추적 켜기) | false(끄기)
   // 초안 버튼을 다시 누르면 다음 형식으로 돈다 — 칸을 더 만들지 않는다.
   var FORM_NEXT  = { shorts: 'card', card: 'both', both: null };
   var FORM_LABEL = { shorts: '숏폼', card: '캐러셀', both: '둘다' };
@@ -545,9 +562,36 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       : '';
 
     var list = D.candidates.filter(pass);
-    v.innerHTML = hint + fastBlock + (list.length
+    v.innerHTML = hint + followBlock() + fastBlock + (list.length
       ? list.map(function (c) { return card(c); }).join('')
       : '<p class="note">이 조건에 맞는 후보가 없습니다. 기간이나 매거진을 넓혀보세요.</p>');
+  }
+
+  /* 이어지는 이야기. 저절로 잡힌 줄기 + 내가 추적을 켠 이름.
+     "어제 본 이야기가 오늘 어떻게 됐나" 를 목록 맨 위에 둔다. */
+  function followBlock() {
+    var rows = D.followups || [];
+    if (!rows.length) return '';
+    var body = rows.map(function (r) {
+      var on = (tracks[r.name] !== undefined) ? tracks[r.name] : !!r.tracked;
+      var meta = '매거진 ' + r.accounts.length + '곳 · 글 ' + r.posts + '건 · ' +
+                 r.days + '일째';
+      var items = (r.latest || []).map(function (x) {
+        return '<li><span class="w">' + esc(x.at.slice(5, 10)) + ' @' + esc(x.account) +
+               '</span> <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' +
+               esc(x.head || '(캡션 없음)') + '</a></li>';
+      }).join('');
+      return '<div class="fwRow" data-name="' + esc(r.name) + '">' +
+        '<div class="fwTop"><span class="fwName">' + esc(r.name) + '</span>' +
+        (r.fresh ? '<span class="fwNew">새 소식 ' + r.fresh + '건</span>' : '') +
+        '<span class="fwMeta">' + esc(meta) + '</span>' +
+        '<button class="fwBtn' + (on ? ' on' : '') + '" data-act="track">' +
+        (on ? '🔔 추적 중' : '추적') + '</button></div>' +
+        '<ul class="fwList">' + items + '</ul></div>';
+    }).join('');
+    return '<div class="fw"><h3 class="fwh">이어지는 이야기 ' + rows.length + '줄기' +
+      '<span class="sub">여러 매거진이 며칠에 걸쳐 같은 이름을 다뤘습니다. ' +
+      '추적을 켜면 그 이름의 새 소식이 여기 모입니다</span></h3>' + body + '</div>';
   }
 
   function renderAcct() {
@@ -571,21 +615,34 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       else if (marks[k] === 'skip') s++;
       else if (marks[k] === 'drafted') d++;
     });
+    var t = Object.keys(tracks).length;
     var bar = document.getElementById('bar');
-    bar.hidden = (p + s + d) === 0;
+    bar.hidden = (p + s + d + t) === 0;
     var parts = [];
     if (p) parts.push('고른 <b>' + p + '</b>건');
     if (d) parts.push('초안 <b>' + d + '</b>건');
     if (s) parts.push('건너뛴 ' + s + '건');
+    if (t) parts.push('추적 <b>' + t + '</b>건');
     document.getElementById('cnt').innerHTML =
       parts.join(' · ') + (d > 3 ? ' <i>— 초안은 3건까지 만듭니다</i>' : '');
-    document.getElementById('send').disabled = (p + s + d) === 0;
+    document.getElementById('send').disabled = (p + s + d + t) === 0;
     document.getElementById('formBtn').hidden = d === 0;
   }
 
   function onClick(e) {
     var btn = e.target.closest('[data-act]');
     if (!btn || btn.tagName === 'INPUT') return;
+    if (btn.getAttribute('data-act') === 'track') {
+      var host = btn.closest('[data-name]');
+      if (!host) return;
+      var nm = host.getAttribute('data-name');
+      var was = btn.classList.contains('on');
+      tracks[nm] = !was;
+      btn.classList.toggle('on', !was);
+      btn.textContent = !was ? '🔔 추적 중' : '추적';
+      refreshBar();
+      return;
+    }
     var host = e.target.closest('[data-id]');
     if (!host) return;
     var id = host.getAttribute('data-id');
@@ -614,7 +671,10 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   function payload() {
     var now = new Date().toISOString();
     var byId = indexAll();
-    return Object.keys(marks).map(function (id) {
+    var out = Object.keys(tracks).map(function (nm) {
+      return { v: 1, action: tracks[nm] ? 'track' : 'untrack', name: nm, at: now };
+    });
+    return out.concat(Object.keys(marks).map(function (id) {
       var c = byId[id] || {};
       var o = { v: 1, action: marks[id], id: id, account: c.account || '?', at: now };
       if (angles[id]) o.angle = angles[id].slice(0, 200);
@@ -623,7 +683,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       if (c.kind) o.kind = c.kind;
       if (c.genres) o.genres = c.genres;
       return o;
-    });
+    }));
   }
 
   /* ── 초안 → 봇 양식 ──────────────────────────────────────────────
@@ -863,9 +923,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.24 19:06';
+    a.title = '판 09.24 19:18';
     var ver = document.createElement('span');
-    ver.textContent = '09.24 19:06';
+    ver.textContent = '09.24 19:18';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
