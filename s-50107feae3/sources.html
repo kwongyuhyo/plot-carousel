@@ -176,6 +176,15 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .bar .cnt{flex:1; font-size:12px; color:var(--muted); letter-spacing:-.01em}
 .bar .cnt b{color:var(--text)}
 .bar .send.alt{background:none; border:1px solid var(--line); color:var(--text)}
+.fq{flex:1; min-width:0; background:var(--raise,#1B1B22); color:var(--text);
+  border:1px solid var(--line); border-radius:7px; padding:7px 10px; font:inherit; font-size:12.5px}
+.fq::placeholder{color:var(--dim)}
+/* 고른 조건이 실제로 먹었는지 숫자로 보여준다 — 칩만으로는 안 먹은 줄 알았다 */
+.fsum{display:flex; align-items:center; gap:8px; font-size:11.5px; color:var(--muted);
+  padding:2px 0 0}
+.fsum b{color:var(--text)}
+.fsum button{margin-left:auto; border:1px solid var(--line); border-radius:6px; background:none;
+  color:var(--text); font:inherit; font-size:11.5px; padding:4px 9px}
 /* 이어지는 이야기 — 같은 인물·페스티벌을 여러 매거진이 며칠에 걸쳐 다룬 줄기 */
 .fw{border:1px solid var(--line); border-radius:12px; padding:12px 13px; margin:0 0 14px}
 .fwh{font-size:13px; font-weight:700; margin:0 0 3px}
@@ -224,6 +233,61 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="PLOT">
 <meta name="mobile-web-app-capable" content="yes">
+
+<style id="plotTheme">
+:root{ --accent:#E8B34A; }
+:root[data-accent="blue"]  { --accent:#5B8DEF }
+:root[data-accent="green"] { --accent:#4FB477 }
+:root[data-accent="violet"]{ --accent:#8B7CF0 }
+:root[data-accent="mono"]  { --accent:#ECECF1 }
+:root[data-theme="light"]{
+  --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
+  --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
+  --muted:#5F5C55; --dim:#8A867C; --faint:#8A867C;
+}
+:root[data-theme="light"][data-accent="mono"]{ --accent:#1A1A1E }
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
+    --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
+    --muted:#5F5C55; --dim:#8A867C; --faint:#8A867C;
+  }
+  :root:not([data-theme="dark"])[data-accent="mono"]{ --accent:#1A1A1E }
+}
+/* 강조색을 쓰는 자리 — 앰버로 굳어 있던 곳들 */
+.chip.on, .fwBtn.on, .fitRow button.on, #photoFitBtn.nudge{
+  border-color:var(--accent) !important; color:var(--accent) !important;
+}
+.plotThemeBtn{border:1px solid var(--line); border-radius:6px; background:none;
+  color:var(--muted,#8A8A96); font:inherit; font-size:11.5px; padding:5px 9px; cursor:pointer}
+/* 숏폼은 버튼 줄에 붙는다. 그 줄은 한 줄로 고정돼 있어서 하나 더 얹으면 390px 에서
+   18px 밀려났다 — 넘치면 접히게 한다. */
+.addRow{flex-wrap:wrap}
+.addRow .plotThemeBtn{flex:0 0 auto}
+.plotThemeBox{position:fixed; right:12px; z-index:9999; background:var(--panel,#131318);
+  border:1px solid var(--line); border-radius:10px; padding:11px 12px; min-width:186px;
+  box-shadow:0 12px 34px rgba(0,0,0,.4); font-size:12px; color:var(--text,#ECECF1)}
+.plotThemeBox b{display:block; font-size:11px; color:var(--muted,#8A8A96);
+  font-weight:600; margin:0 0 6px}
+.plotThemeBox .row{display:flex; gap:6px; margin-bottom:10px; align-items:center}
+.plotThemeBox .row:last-child{margin-bottom:0}
+.plotThemeBox button{flex:1; border:1px solid var(--line); border-radius:7px; background:none;
+  color:inherit; font:inherit; font-size:11.5px; padding:7px 4px; cursor:pointer}
+.plotThemeBox button.on{border-color:var(--accent); color:var(--accent)}
+.plotThemeBox .sw{width:26px; height:26px; flex:none; border-radius:50%; padding:0; border:0}
+.plotThemeBox .sw.on{box-shadow:0 0 0 2px var(--bg,#0A0A0C), 0 0 0 4px currentColor}
+</style>
+<script>
+/* 첫 그림이 그려지기 전에 얹는다 — 안 그러면 어두운 화면이 한 번 번쩍인다. */
+(function () {
+  try {
+    var t = localStorage.getItem('plot.app.theme');
+    var a = localStorage.getItem('plot.app.accent');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    if (a) document.documentElement.setAttribute('data-accent', a);
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -255,6 +319,15 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
       <span class="flab">매거진</span>
       <div class="chips" id="chipAcct"></div>
     </div>
+    <div class="frow">
+      <span class="flab">정렬</span>
+      <div class="chips" id="chipSort"></div>
+    </div>
+    <div class="frow">
+      <span class="flab">찾기</span>
+      <input class="fq" id="fq" placeholder="이름·말·계정으로 거르기" />
+    </div>
+    <div class="fsum" id="fsum" hidden></div>
   </div>
 
   <div id="viewCand"></div>
@@ -384,11 +457,33 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
               { k: 7, t: '일주일' }, { k: 0, t: '전체' }];
   var fDays = 0;         // 0 = 전체
   var fAcct = null;      // null = 전체
+  var fSort = 'reco';    // 추천순(봇이 낸 차례)
+  var fQ = '';           // 찾는 말
+  var SORTS = [{ k: 'reco', t: '추천순' }, { k: 'new', t: '최신순' },
+               { k: 'mult', t: '배수순' }, { k: 'fast', t: '빠른순' }];
 
-  function pass(c) {
-    if (fAcct && c.account !== fAcct) return false;
-    if (fDays && (c.hours == null || c.hours > fDays * 24)) return false;
-    return true;
+  function passAcct(c) { return !fAcct || c.account === fAcct; }
+  function passDays(c) { return !fDays || (c.hours != null && c.hours <= fDays * 24); }
+
+  /* 찾기 — 캡션·계정·해시태그·장르를 한 덩어리로 보고 훑는다.
+     띄어쓰기로 나눠 모두 들어 있어야 통과(그래야 두 낱말로 좁힐 수 있다). */
+  function passQ(c) {
+    if (!fQ) return true;
+    var hay = [c.caption, c.account, (c.genres || []).join(' '),
+               (c.plot_kind && c.plot_kind.kind) || '',
+               (c.why || []).join(' ')].join(' ').toLowerCase();
+    return fQ.toLowerCase().split(/\s+/).every(function (w) { return !w || hay.indexOf(w) >= 0; });
+  }
+
+  function pass(c) { return passAcct(c) && passDays(c) && passQ(c); }
+
+  /* 정렬 — 추천순은 봇이 낸 차례를 그대로 둔다(그게 점수순이다). */
+  function sorted(list) {
+    var a = list.slice();
+    if (fSort === 'new') a.sort(function (x, y) { return (x.hours || 0) - (y.hours || 0); });
+    else if (fSort === 'mult') a.sort(function (x, y) { return (y.multiple || 0) - (x.multiple || 0); });
+    else if (fSort === 'fast') a.sort(function (x, y) { return (y.velocity || 0) - (x.velocity || 0); });
+    return a;
   }
 
   function renderFilters() {
@@ -396,9 +491,11 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     if (!all.length) { document.getElementById('filters').hidden = true; return; }
     document.getElementById('filters').hidden = false;
 
+    // 매거진을 고른 뒤에도 기간 숫자가 12 그대로면 '안 먹었다' 로 읽힌다.
+    // 각 칩의 숫자는 '나머지 조건을 건 상태에서 이걸 고르면 몇 건' 이어야 한다.
     var d = DAYS.map(function (o) {
       var n = all.filter(function (c) {
-        return !o.k || (c.hours != null && c.hours <= o.k * 24);
+        return passAcct(c) && passQ(c) && (!o.k || (c.hours != null && c.hours <= o.k * 24));
       }).length;
       return '<button class="chip' + (fDays === o.k ? ' on' : '') + '" data-days="' + o.k +
              '">' + o.t + '<span class="n">' + n + '</span></button>';
@@ -406,14 +503,41 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     document.getElementById('chipDays').innerHTML = d.join('');
 
     var by = {};
-    all.forEach(function (c) { by[c.account] = (by[c.account] || 0) + 1; });
+    all.forEach(function (c) {
+      if (passDays(c) && passQ(c)) by[c.account] = (by[c.account] || 0) + 1;
+    });
+    var seen = all.filter(function (c) { return passDays(c) && passQ(c); }).length;
     var a = ['<button class="chip' + (fAcct ? '' : ' on') + '" data-acct="">전체' +
-             '<span class="n">' + all.length + '</span></button>'];
+             '<span class="n">' + seen + '</span></button>'];
     Object.keys(by).sort(function (x, y) { return by[y] - by[x]; }).forEach(function (k) {
       a.push('<button class="chip' + (fAcct === k ? ' on' : '') + '" data-acct="' + esc(k) +
              '">' + esc(k) + '<span class="n">' + by[k] + '</span></button>');
     });
     document.getElementById('chipAcct').innerHTML = a.join('');
+
+    document.getElementById('chipSort').innerHTML = SORTS.map(function (o) {
+      return '<button class="chip' + (fSort === o.k ? ' on' : '') + '" data-sort="' + o.k +
+             '">' + o.t + '</button>';
+    }).join('');
+
+    var shown = all.filter(pass).length;
+    var box = document.getElementById('fsum');
+    var on = fDays || fAcct || fQ || fSort !== 'reco';
+    box.hidden = !on;
+    if (on) {
+      var what = [];
+      if (fAcct) what.push('@' + fAcct);
+      if (fDays) what.push((DAYS.filter(function (o) { return o.k === fDays; })[0] || {}).t);
+      if (fQ) what.push('「' + fQ + '」');
+      if (fSort !== 'reco') what.push((SORTS.filter(function (o) { return o.k === fSort; })[0] || {}).t);
+      box.innerHTML = what.join(' · ') + ' — <b>' + shown + '</b>건 보임 (전체 ' + all.length + ')' +
+        '<button type="button" id="fclear">조건 지우기</button>';
+      document.getElementById('fclear').onclick = function () {
+        fDays = 0; fAcct = null; fQ = ''; fSort = 'reco';
+        document.getElementById('fq').value = '';
+        renderFilters(); renderCand();
+      };
+    }
   }
 
   /* 결 경고 — '확실한' 결에만 붙인다. 흔들리는 수치를 카드에 박으면
@@ -553,7 +677,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     }
     /* 빠른 글 — 절대 배수로는 아직 상위에 못 오지만 이 나이치고 빠른 글.
        순위를 건드리지 않고 따로 낸다. 후보 안에 이미 든 글은 여기 안 나온다. */
-    var fast = (D.fast || []).filter(pass);
+    var fast = sorted((D.fast || []).filter(pass));
     var fastBlock = fast.length
       ? '<div class="fastwrap"><h3 class="fasth">빠른 글 ' + fast.length + '건' +
         '<span class="sub">아직 숫자는 작지만 이 나이치고 빠릅니다 — ' +
@@ -561,7 +685,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
         fast.map(function (c) { return card(c); }).join('') + '</div>'
       : '';
 
-    var list = D.candidates.filter(pass);
+    var list = sorted(D.candidates.filter(pass));
     v.innerHTML = hint + followBlock() + fastBlock + (list.length
       ? list.map(function (c) { return card(c); }).join('')
       : '<p class="note">이 조건에 맞는 후보가 없습니다. 기간이나 매거진을 넓혀보세요.</p>');
@@ -868,6 +992,18 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     fDays = parseInt(b.getAttribute('data-days'), 10) || 0;
     renderFilters(); renderCand();
   });
+  document.getElementById('chipSort').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-sort]');
+    if (!b) return;
+    fSort = b.getAttribute('data-sort') || 'reco';
+    renderFilters(); renderCand();
+  });
+  var fqT;
+  document.getElementById('fq').addEventListener('input', function (e) {
+    clearTimeout(fqT);
+    var v = e.target.value.trim();
+    fqT = setTimeout(function () { fQ = v; renderFilters(); renderCand(); }, 180);
+  });
   document.getElementById('chipAcct').addEventListener('click', function (e) {
     var b = e.target.closest('[data-acct]');
     if (!b) return;
@@ -923,9 +1059,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.24 19:18';
+    a.title = '판 09.28 16:06';
     var ver = document.createElement('span');
-    ver.textContent = '09.24 19:18';
+    ver.textContent = '09.28 16:06';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
