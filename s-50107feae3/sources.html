@@ -236,23 +236,56 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 
 <style id="plotTheme">
 :root{ --accent:#E8B34A; }
-:root[data-accent="blue"]  { --accent:#5B8DEF }
-:root[data-accent="green"] { --accent:#4FB477 }
-:root[data-accent="violet"]{ --accent:#8B7CF0 }
-:root[data-accent="mono"]  { --accent:#ECECF1 }
-:root[data-theme="light"]{
+html:root[data-accent="amber"]{ --accent:#E8B34A; --amber:#E8B34A }
+html:root[data-accent="blue"]{ --accent:#5B8DEF; --amber:#5B8DEF }
+html:root[data-accent="green"]{ --accent:#4FB477; --amber:#4FB477 }
+html:root[data-accent="violet"]{ --accent:#8B7CF0; --amber:#8B7CF0 }
+html:root[data-accent="mono"]{ --accent:#ECECF1; --amber:#ECECF1 }
+html:root[data-theme="light"]{
   --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
   --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
   --muted:#5F5C55; --dim:#8A867C; --faint:#8A867C;
+  color-scheme:light;
 }
-:root[data-theme="light"][data-accent="mono"]{ --accent:#1A1A1E }
+html:root[data-theme="light"][data-accent="amber"]{ --accent:#7A6B10; --amber:#7A6B10 }
+html:root[data-theme="light"][data-accent="blue"]{ --accent:#2B5BC4; --amber:#2B5BC4 }
+html:root[data-theme="light"][data-accent="green"]{ --accent:#216E45; --amber:#216E45 }
+html:root[data-theme="light"][data-accent="violet"]{ --accent:#5240B8; --amber:#5240B8 }
+html:root[data-theme="light"][data-accent="mono"]{ --accent:#1A1A1E; --amber:#1A1A1E }
+html:root[data-theme="light"] input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),
+html:root[data-theme="light"] textarea,
+html:root[data-theme="light"] select{
+  background:var(--panel)!important; color:var(--text)!important;
+  -webkit-text-fill-color:var(--text)!important;
+}
+html:root[data-theme="light"] input:focus, html:root[data-theme="light"] textarea:focus{ background:var(--bg)!important }
+html:root[data-theme="light"] ::placeholder{ color:var(--dim)!important; opacity:1 }
+html:root[data-theme="light"] .err{ background:#FBEFEF!important; border-color:#E2BDBD!important;
+  color:#8A2F2F!important }
+html:root[data-theme="light"] .send{ color:var(--bg)!important }
 @media (prefers-color-scheme: light){
-  :root:not([data-theme="dark"]){
-    --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
-    --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
-    --muted:#5F5C55; --dim:#8A867C; --faint:#8A867C;
-  }
-  :root:not([data-theme="dark"])[data-accent="mono"]{ --accent:#1A1A1E }
+html:root:not([data-theme="dark"]){
+  --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
+  --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
+  --muted:#5F5C55; --dim:#8A867C; --faint:#8A867C;
+  color-scheme:light;
+}
+html:root:not([data-theme="dark"])[data-accent="amber"]{ --accent:#7A6B10; --amber:#7A6B10 }
+html:root:not([data-theme="dark"])[data-accent="blue"]{ --accent:#2B5BC4; --amber:#2B5BC4 }
+html:root:not([data-theme="dark"])[data-accent="green"]{ --accent:#216E45; --amber:#216E45 }
+html:root:not([data-theme="dark"])[data-accent="violet"]{ --accent:#5240B8; --amber:#5240B8 }
+html:root:not([data-theme="dark"])[data-accent="mono"]{ --accent:#1A1A1E; --amber:#1A1A1E }
+html:root:not([data-theme="dark"]) input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),
+html:root:not([data-theme="dark"]) textarea,
+html:root:not([data-theme="dark"]) select{
+  background:var(--panel)!important; color:var(--text)!important;
+  -webkit-text-fill-color:var(--text)!important;
+}
+html:root:not([data-theme="dark"]) input:focus, html:root:not([data-theme="dark"]) textarea:focus{ background:var(--bg)!important }
+html:root:not([data-theme="dark"]) ::placeholder{ color:var(--dim)!important; opacity:1 }
+html:root:not([data-theme="dark"]) .err{ background:#FBEFEF!important; border-color:#E2BDBD!important;
+  color:#8A2F2F!important }
+html:root:not([data-theme="dark"]) .send{ color:var(--bg)!important }
 }
 /* 강조색을 쓰는 자리 — 앰버로 굳어 있던 곳들 */
 .chip.on, .fwBtn.on, .fitRow button.on, #photoFitBtn.nudge{
@@ -957,7 +990,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   /* 밝기 — 시스템 설정을 기본으로 두고, 누르면 그 기기에서만 고정한다.
      텔레그램 안에서 열면 앱 테마를 따라간다. localStorage 는 막히는 데가
      있으므로(시크릿 창·저장 차단) 읽기·쓰기를 모두 감싼다. */
-  var THEME_KEY = 'plot.sources.theme';
+  var THEME_KEY = 'plot.app.theme';   // 세 화면이 같은 열쇠를 쓴다
 
   function systemTheme() {
     if (inTG && TG && TG.colorScheme) return TG.colorScheme;
@@ -1059,9 +1092,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.28 16:06';
+    a.title = '판 09.28 16:48';
     var ver = document.createElement('span');
-    ver.textContent = '09.28 16:06';
+    ver.textContent = '09.28 16:48';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
