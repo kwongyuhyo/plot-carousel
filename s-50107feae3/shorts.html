@@ -43,7 +43,7 @@ body{
 
 /* ── 상단 ─────────────────────────────────────────────── */
 header{
-  position:sticky; top:0; z-index:30; height:calc(var(--hdr) + env(safe-area-inset-top)); background:rgba(18,19,26,.92);
+  position:sticky; top:0; z-index:30; height:calc(var(--hdr) + env(safe-area-inset-top)); background:var(--glass,rgba(18,19,26,.92));
   backdrop-filter:blur(12px); border-bottom:1px solid var(--line);
   padding:0 16px; padding-top:env(safe-area-inset-top);
   display:flex; align-items:center; gap:10px;
@@ -78,7 +78,7 @@ header .count{
   .previewCol{
     order:0; position:sticky; top:var(--hdr); z-index:20;
     margin:-14px -16px 14px; padding:10px 16px 11px;
-    background:rgba(18,19,26,.97); backdrop-filter:blur(12px);
+    background:var(--glass,rgba(18,19,26,.97)); backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line);
     display:grid; grid-template-columns:94px minmax(0,1fr); gap:13px; align-items:center;
   }
@@ -192,7 +192,7 @@ header .count{
 .previewCol.big{
   position:fixed; inset:0; z-index:70; margin:0; padding:22px; border:0;
   display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px;
-  background:rgba(9,10,14,.975); backdrop-filter:blur(8px);
+  background:var(--glass,rgba(9,10,14,.975)); backdrop-filter:blur(8px);
 }
 .previewCol.big .stage{max-width:none; width:auto; height:76vh; cursor:zoom-out}
 .previewCol.big .side{text-align:center; max-width:420px}
@@ -534,16 +534,30 @@ pre.form{
 <meta name="mobile-web-app-capable" content="yes">
 
 <style id="plotTheme">
-:root{ --accent:#E8B34A; }
+:root{ --accent:#E8B34A; --glass:rgba(18,19,26,.93); }
+/* 흐린 보조 글씨가 어두운 바탕에서 2.3~2.9:1 이었다 — 해 아래 폰에서 안 읽힌다.
+   세 화면이 이름만 다를 뿐 같은 자리라 한 군데서 올린다. */
+html:root[data-theme="dark"]{ --dim:#82828F; --faint:#82828F; --skip:#82828F;
+  --bad:#E0786A }
+@media (prefers-color-scheme: dark){
+  html:root:not([data-theme="light"]){ --dim:#82828F; --faint:#82828F;
+    --skip:#82828F; --bad:#E0786A }
+}
 html:root[data-accent="amber"]{ --accent:#E8B34A; --amber:#E8B34A }
 html:root[data-accent="blue"]{ --accent:#5B8DEF; --amber:#5B8DEF }
 html:root[data-accent="green"]{ --accent:#4FB477; --amber:#4FB477 }
 html:root[data-accent="violet"]{ --accent:#8B7CF0; --amber:#8B7CF0 }
 html:root[data-accent="mono"]{ --accent:#ECECF1; --amber:#ECECF1 }
+html:root .plotThemeBox .sw[data-accent="amber"]{ background:#E8B34A; color:#E8B34A }
+html:root .plotThemeBox .sw[data-accent="blue"]{ background:#5B8DEF; color:#5B8DEF }
+html:root .plotThemeBox .sw[data-accent="green"]{ background:#4FB477; color:#4FB477 }
+html:root .plotThemeBox .sw[data-accent="violet"]{ background:#8B7CF0; color:#8B7CF0 }
+html:root .plotThemeBox .sw[data-accent="mono"]{ background:#ECECF1; color:#ECECF1 }
 html:root[data-theme="light"]{
   --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
   --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
-  --muted:#5F5C55; --dim:#8A867C; --faint:#8A867C;
+  --muted:#57544D; --dim:#6B6760; --faint:#6B6760; --skip:#6E6A78;
+  --glass:rgba(246,244,239,.93); --bad:#A63A2B; --warn:#8A6B12; --danger:#A63A2B;
   color-scheme:light;
 }
 html:root[data-theme="light"][data-accent="amber"]{ --accent:#7A6B10; --amber:#7A6B10 }
@@ -562,11 +576,17 @@ html:root[data-theme="light"] ::placeholder{ color:var(--dim)!important; opacity
 html:root[data-theme="light"] .err{ background:#FBEFEF!important; border-color:#E2BDBD!important;
   color:#8A2F2F!important }
 html:root[data-theme="light"] .send{ color:var(--bg)!important }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="amber"]{ background:#7A6B10; color:#7A6B10 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="blue"]{ background:#2B5BC4; color:#2B5BC4 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
 @media (prefers-color-scheme: light){
 html:root:not([data-theme="dark"]){
   --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
   --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
-  --muted:#5F5C55; --dim:#8A867C; --faint:#8A867C;
+  --muted:#57544D; --dim:#6B6760; --faint:#6B6760; --skip:#6E6A78;
+  --glass:rgba(246,244,239,.93); --bad:#A63A2B; --warn:#8A6B12; --danger:#A63A2B;
   color-scheme:light;
 }
 html:root:not([data-theme="dark"])[data-accent="amber"]{ --accent:#7A6B10; --amber:#7A6B10 }
@@ -585,13 +605,18 @@ html:root:not([data-theme="dark"]) ::placeholder{ color:var(--dim)!important; op
 html:root:not([data-theme="dark"]) .err{ background:#FBEFEF!important; border-color:#E2BDBD!important;
   color:#8A2F2F!important }
 html:root:not([data-theme="dark"]) .send{ color:var(--bg)!important }
-}
-/* 강조색을 쓰는 자리 — 앰버로 굳어 있던 곳들 */
-.chip.on, .fwBtn.on, .fitRow button.on, #photoFitBtn.nudge{
-  border-color:var(--accent) !important; color:var(--accent) !important;
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="amber"]{ background:#7A6B10; color:#7A6B10 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="blue"]{ background:#2B5BC4; color:#2B5BC4 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
 }
 .plotThemeBtn{border:1px solid var(--line); border-radius:6px; background:none;
   color:var(--muted,#8A8A96); font:inherit; font-size:11.5px; padding:5px 9px; cursor:pointer}
+/* 머리줄에 붙을 자리가 없으면 화면 오른쪽 위에 떠 있는다. 이 배경을 인라인으로
+   까맣게 박아 두면 밝은 테마에서 글자가 묻는다 — 변수로 둔다. */
+.plotThemeBtn.float{position:fixed; right:12px; top:12px; z-index:9998;
+  background:var(--panel); color:var(--text); backdrop-filter:blur(8px)}
 /* 숏폼은 버튼 줄에 붙는다. 그 줄은 한 줄로 고정돼 있어서 하나 더 얹으면 390px 에서
    18px 밀려났다 — 넘치면 접히게 한다. */
 .addRow{flex-wrap:wrap}
@@ -2734,15 +2759,15 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.28 16:48';
+    a.title = '판 09.28 18:36';
     var ver = document.createElement('span');
-    ver.textContent = '09.28 16:48';
-    ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:#5A5A66;' +
+    ver.textContent = '09.28 18:36';
+    ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
     // 테두리를 두르면 제목보다 무거워진다. 글자만 남기고 흐리게.
     var base = 'font:700 11.5px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
-               'color:#8A8A96;text-decoration:none;white-space:nowrap;letter-spacing:-.01em;' +
+               'color:var(--dim,#8A8A96);text-decoration:none;white-space:nowrap;letter-spacing:-.01em;' +
                'padding:5px 0;border:0;background:none;flex:none;';
     // 텔레그램 데스크톱은 미니앱을 폰 크기 창으로 띄운다 — 화면이 넓어도 창은 그대로다.
     // 그래서 컴퓨터에서는 브라우저로 넘어가는 길을 한 번에 열어준다.
@@ -2770,13 +2795,13 @@ document.addEventListener('DOMContentLoaded', boot);
     } else {
       a.style.cssText = base +
         'position:fixed;left:12px;top:12px;z-index:9999;padding:6px 10px;' +
-        'border-radius:6px;background:rgba(10,10,12,.72);color:#ECECF1;' +
+        'border-radius:6px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
         'backdrop-filter:blur(8px);';
       document.body.appendChild(a);
       if (wide) {
         wide.style.cssText = base +
           'position:fixed;left:122px;top:12px;z-index:9999;padding:6px 10px;' +
-          'border-radius:6px;background:rgba(10,10,12,.72);color:#ECECF1;' +
+          'border-radius:6px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
           'backdrop-filter:blur(8px);cursor:pointer;';
         document.body.appendChild(wide);
       }
@@ -2840,7 +2865,7 @@ document.addEventListener('DOMContentLoaded', boot);
       }).join('') + '</div><b>강조색</b><div class="row">' +
       ACCENTS.map(function (a) {
         return '<button type="button" class="sw" data-accent="' + a[0] +
-               '" style="background:' + a[1] + '; color:' + a[1] + '"></button>';
+               '" title="' + a[0] + '"></button>';
       }).join('') + '</div>';
     document.body.appendChild(box);
     box.style.top = Math.round(btn.getBoundingClientRect().bottom + 8) + 'px';
@@ -2860,10 +2885,11 @@ document.addEventListener('DOMContentLoaded', boot);
     btn.textContent = '◐ 테마';
     btn.title = '밝기와 강조색';
     btn.onclick = function (e) { e.stopPropagation(); open(btn); };
-    var h = document.querySelector('header .hbtns') || document.querySelector('.addRow');
+    var own = document.getElementById('theme');
+    var h = document.querySelector('header .hbtns') || document.querySelector('.addRow')
+            || (own && own.parentElement);
     if (h) { h.appendChild(btn); return; }
-    btn.style.cssText += ';position:fixed; right:12px; top:12px; z-index:9998;' +
-      'background:rgba(10,10,12,.72); backdrop-filter:blur(8px)';
+    btn.className += ' float';
     document.body.appendChild(btn);
   }
 
