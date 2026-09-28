@@ -85,6 +85,26 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   border-radius:7px; color:var(--text); font:inherit; font-size:12.5px; font-weight:700;
   padding:9px 0; cursor:pointer}
 .pempty{font-size:12px; color:var(--dim); line-height:1.7; padding:16px 0}
+.pcard.pdone{opacity:.5}
+.pchips{display:flex; gap:5px; margin-top:11px}
+.pchips button{flex:none; background:none; border:1px solid var(--line); border-radius:999px;
+  color:var(--dim); font:inherit; font-size:11px; padding:4px 10px; cursor:pointer}
+.pchips button[aria-pressed="true"]{color:var(--amber); border-color:var(--amber)}
+.pitem{border-top:1px solid var(--hair); padding:9px 0 8px; display:flex; gap:10px;
+  align-items:flex-start}
+.pitem:first-of-type{border-top:1px solid var(--line); margin-top:9px}
+.pitem .pin{flex:1; min-width:0}
+.pitem .pname{font-size:13.5px; font-weight:700; letter-spacing:-.01em}
+.pitem .pwhy2{font-size:11.5px; color:var(--dim); line-height:1.5; margin-top:1px}
+.pitem .pmini{flex:none; background:none; border:1px solid var(--line); border-radius:6px;
+  color:var(--text); font:inherit; font-size:11.5px; font-weight:600; padding:6px 10px;
+  cursor:pointer; margin-top:2px}
+.pmore{margin-top:10px; border-top:1px dashed var(--line); padding-top:8px}
+.pmore summary{font-size:11.5px; color:var(--dim); cursor:pointer; list-style:none}
+.pmore summary::-webkit-details-marker{display:none}
+.pmore summary::before{content:"▸ "; color:var(--amber)}
+.pmore[open] summary::before{content:"▾ "}
+.pmore .prow{font-size:11.5px}
 
 .tabs{display:flex; gap:18px; margin:calc(var(--u)*3) 0 calc(var(--u)*1);
   border-bottom:1px solid var(--line)}
@@ -769,7 +789,9 @@ html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ backgr
       : '';
 
     var list = sorted(D.candidates.filter(pass));
-    v.innerHTML = hint + followBlock() + fastBlock + (list.length
+    // 이어지는 이야기는 기획 갈래로 옮겼다 — 성격이 기획거리인데
+    // 이슈 목록에 섞여 있으면 반응 배수에 밀려 매일 아래로 내려간다.
+    v.innerHTML = hint + fastBlock + (list.length
       ? list.map(function (c) { return card(c); }).join('')
       : '<p class="note">이 조건에 맞는 후보가 없습니다. 기간이나 매거진을 넓혀보세요.</p>');
   }
@@ -1109,35 +1131,97 @@ html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ backgr
   }
   /* 기획 소스 — 차트 기록으로 만든 시장 분석, 낱개 대신 묶은 주간 발매.
      둘 다 새 수집 없이 이미 쌓인 기록만 읽는다. 카드마다 봇 양식이 붙어 있다. */
+  var PSTATE = 'plot.plan.state';
+  var pstate = (function () {
+    try { return JSON.parse(localStorage.getItem(PSTATE) || '{}') || {}; }
+    catch (e) { return {}; }
+  })();
+  function psave() {
+    try { localStorage.setItem(PSTATE, JSON.stringify(pstate)); } catch (e) {}
+  }
+  var PSTEPS = [['idea', '아이디어'], ['prep', '준비중'], ['done', '제작함']];
+
+  function planRows() {
+    return (D.plan || []).filter(function (p) {
+      return p && (p.form || (p.items || []).length);
+    });
+  }
+
   function renderPlan() {
     var host = document.getElementById('viewPlan');
-    var rows = (D.plan || []).filter(function (p) { return p && p.form; });
-    if (!rows.length) {
+    var rows = planRows();
+    var fw = followBlock();          // 이어지는 이야기 — 기획거리라 이쪽이 제자리다
+    if (!rows.length && !fw) {
       host.innerHTML = '<div class="pempty">아직 기획 소스가 없습니다.<br>' +
-        '맥에서 스캔이 한 번 돌면 차트 기록으로 만든 시장 분석과 ' +
-        '이번 주 발매 묶음이 여기 들어옵니다.</div>';
+        '맥에서 스캔이 한 번 돌면 인물 후보와 차트 기록으로 만든 시장 분석이 ' +
+        '여기 들어옵니다.</div>';
       return;
     }
-    host.innerHTML = rows.map(function (p, i) {
+    host.innerHTML = fw + rows.map(function (p, i) {
+      var st = pstate[p.id] || '';
       var body = (p.rows || []).map(function (r) {
         return '<div class="prow"><b>' + esc(r.label) + '</b><span>' +
                esc(r.value) + '</span></div>';
       }).join('');
-      return '<div class="pcard"><div class="pwhy">' + esc(p.why || '') + '</div>' +
+      // 사람처럼 항목마다 제 양식이 있는 카드
+      var items = (p.items || []).map(function (it, j) {
+        return '<div class="pitem"><div class="pin">' +
+               '<div class="pname">' + esc(it.name) + '</div>' +
+               '<div class="pwhy2">' + esc(it.why || '') + '</div></div>' +
+               '<button class="pmini" type="button" data-plan="' + i +
+               '" data-item="' + j + '">양식</button></div>';
+      }).join('');
+      // 접어 둔 전체 — 요약 몇 줄만 두면 카드 안에서 판단이 안 끝난다
+      var more = (p.more || []).length
+        ? '<details class="pmore"><summary>전체 ' + p.more.length + '줄 보기</summary>' +
+          p.more.map(function (r) {
+            return '<div class="prow"><b>' + esc(r.label) + '</b><span>' +
+                   esc(r.value) + '</span></div>';
+          }).join('') + '</details>'
+        : '';
+      var chips = '<div class="pchips" data-chips="' + i + '">' +
+        PSTEPS.map(function (x) {
+          return '<button type="button" data-step="' + x[0] + '" aria-pressed="' +
+                 (st === x[0]) + '">' + x[1] + '</button>';
+        }).join('') + '</div>';
+      return '<div class="pcard' + (st === 'done' ? ' pdone' : '') + '">' +
+             '<div class="pwhy">' + esc(p.why || '') + '</div>' +
              '<h4>' + esc(p.title || '') + '</h4>' +
-             '<div class="pstat">' + esc(p.stat || '') + '</div>' + body +
-             '<button class="pbtn" type="button" data-plan="' + i + '">봇 양식 만들기</button>' +
-             '</div>';
+             '<div class="pstat">' + esc(p.stat || '') + '</div>' +
+             body + items + more +
+             (p.form ? '<button class="pbtn" type="button" data-plan="' + i +
+                       '">봇 양식 만들기</button>' : '') +
+             chips + '</div>';
     }).join('');
   }
+
+  function openForm(txt) {
+    document.getElementById('formText').value = txt;
+    document.getElementById('formSheet').hidden = false;
+  }
+
   document.getElementById('viewPlan').addEventListener('click', function (e) {
+    var step = e.target.closest('[data-step]');
+    if (step) {                              // 아이디어 → 준비중 → 제작함
+      var box = step.closest('[data-chips]');
+      var card = planRows()[parseInt(box.getAttribute('data-chips'), 10)];
+      if (!card) return;
+      var want = step.getAttribute('data-step');
+      pstate[card.id] = (pstate[card.id] === want) ? '' : want;
+      psave(); renderPlan();
+      return;
+    }
     var b = e.target.closest('[data-plan]');
     if (!b) return;
-    var rows = (D.plan || []).filter(function (p) { return p && p.form; });
-    var p = rows[parseInt(b.getAttribute('data-plan'), 10)];
+    var p = planRows()[parseInt(b.getAttribute('data-plan'), 10)];
     if (!p) return;
-    document.getElementById('formText').value = p.form;
-    document.getElementById('formSheet').hidden = false;
+    var idx = b.getAttribute('data-item');
+    if (idx !== null) {                      // 사람 하나의 양식
+      var it = (p.items || [])[parseInt(idx, 10)];
+      if (it && it.form) openForm(it.form);
+      return;
+    }
+    if (p.form) openForm(p.form);
   });
 
   var GRP = 'info';
@@ -1200,9 +1284,9 @@ html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ backgr
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.28 18:36';
+    a.title = '판 09.29 01:44';
     var ver = document.createElement('span');
-    ver.textContent = '09.28 18:36';
+    ver.textContent = '09.29 01:44';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
