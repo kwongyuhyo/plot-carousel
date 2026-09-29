@@ -3141,7 +3141,7 @@
     {
       "id": "people-20260929",
       "kind": "people",
-      "title": "다음에 깊게 팔 사람",
+      "title": "다룰 만한 인물",
       "why": "8명 · 우리가 90일간 안 다룬 이름",
       "stat": "후보 풀 538명 · 중간 도달 24,780 인 형식의 재료",
       "items": [
@@ -3194,11 +3194,13 @@
           "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: WOODZ 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 뉴스 314건 · 차트 최고 12위\n출처: 정리 | PLOT\n"
         }
       ],
-      "generated_at": "2026-09-29 19:23 KST"
+      "generated_at": "2026-09-29 20:04 KST"
     },
     {
       "id": "market-20260929",
       "kind": "market",
+      "where": "plan",
+      "order": 90,
       "title": "2026.09 차트 정리",
       "why": "새 얼굴 2명 · 빠진 이름 6명 · 최고 기록 경신 3명",
       "stat": "관측 21일 · 아티스트 56명",
@@ -3431,7 +3433,7 @@
         }
       ],
       "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 2026.09 차트 정리\n부제: 28일 동안 우리가 적어 둔 기록\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 가장 오래 버틴 이름\n본문: 리센느 21일(최고 1위) / 소녀시대-효리수 21일(최고 1위) / aespa 21일(최고 1위)\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 이번 주 새로 들어온\n본문: ALLDAY PROJECT(최고 3위) / NMIXX(최고 27위)\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 조용히 빠진 이름\n본문: 아홉 / 레드벨벳 / 이창섭 / 다비치 / BLACKPINK\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 한 주 만에 올라온\n본문: 머무르 9.4위→1.0위 / 아이브 28.0위→25.0위 / 로제 25.5위→23.7위\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 제 최고 기록을 갈아치운\n본문: 머무르 2위→1위 / 아일릿 13위→12위 / 로제 22위→20위\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 뉴스는 시끄러운데 차트엔 없는\n본문: 시스템서울 / 실리카겔 / 박재범 / 스윙스 / 비오\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 말은 없는데 계속 듣는\n본문: 소녀시대-효리수(1위) / 태연(3위) / 아이오아이(4위) / WOODZ(11위) / 화사(12위)\n출처: 집계 | PLOT (벅스 차트 21일)\n",
-      "generated_at": "2026-09-29 19:23 KST"
+      "generated_at": "2026-09-29 20:04 KST"
     },
     {
       "id": "today-20260929",
@@ -3732,7 +3734,7 @@
         }
       ],
       "note": "실마리는 남의 캡션에서 따온 단서다. 사실만 확인하고 문장은 새로 쓴다.",
-      "generated_at": "2026-09-29 19:23 KST"
+      "generated_at": "2026-09-29 20:04 KST"
     },
     {
       "id": "release-20260929",
@@ -3768,93 +3770,94 @@
       ],
       "more": [
         {
-          "label": "09/28",
-          "value": "ALLDAY PROJECT 〈CRASH〉"
+          "label": "음반",
+          "value": "09/28 ALLDAY PROJECT 〈CRASH〉"
         },
         {
-          "label": "09/28",
-          "value": "BOYNEXTDOOR 〈HOME: DELUXE〉"
+          "label": "음반",
+          "value": "09/28 BOYNEXTDOOR 〈HOME: DELUXE〉"
         },
         {
-          "label": "09/28",
-          "value": "예성 〈Winds of Time〉"
+          "label": "음반",
+          "value": "09/28 예성 〈Winds of Time〉"
         },
         {
-          "label": "09/28",
-          "value": "고세구 〈NO CAT, NO LIFE!〉"
+          "label": "음반",
+          "value": "09/28 고세구 〈NO CAT, NO LIFE!〉"
         },
         {
-          "label": "09/28",
-          "value": "니쥬 〈Sour Grapes〉"
+          "label": "음반",
+          "value": "09/28 니쥬 〈Sour Grapes〉"
         },
         {
-          "label": "09/28",
-          "value": "그_냥 〈시_지〉"
+          "label": "음반",
+          "value": "09/28 그_냥 〈시_지〉"
         },
         {
-          "label": "09/28",
-          "value": "공민지 〈Calling〉"
+          "label": "음반",
+          "value": "09/28 공민지 〈Calling〉"
         },
         {
-          "label": "09/28",
-          "value": "신예영 〈그 시절의 우리로 돌아간 것처럼〉"
+          "label": "음반",
+          "value": "09/28 신예영 〈그 시절의 우리로 돌아간 것처럼〉"
         },
         {
-          "label": "09/28",
-          "value": "오오오 〈영원〉"
+          "label": "음반",
+          "value": "09/28 오오오 〈영원〉"
         },
         {
-          "label": "09/28",
-          "value": "박다울 〈비밀의 정원〉"
+          "label": "음반",
+          "value": "09/28 박다울 〈비밀의 정원〉"
         },
         {
-          "label": "09/28",
-          "value": "엔플라잉 〈아는 결말 (Our Ending)〉"
+          "label": "음반",
+          "value": "09/28 엔플라잉 〈아는 결말 (Our Ending)〉"
         },
         {
-          "label": "09/28",
-          "value": "유리상자 〈Month Lee 2609〉"
+          "label": "음반",
+          "value": "09/28 유리상자 〈Month Lee 2609〉"
         },
         {
-          "label": "09/28",
-          "value": "준서 〈그댄 내 사랑입니다〉"
+          "label": "음반",
+          "value": "09/28 준서 〈그댄 내 사랑입니다〉"
         },
         {
-          "label": "09/28",
-          "value": "Touch the Sky 〈Bad Son′s Good News〉"
+          "label": "음반",
+          "value": "09/28 Touch the Sky 〈Bad Son′s Good News〉"
         },
         {
-          "label": "09/28",
-          "value": "잼빗 〈UNFOLD〉"
+          "label": "음반",
+          "value": "09/28 잼빗 〈UNFOLD〉"
         },
         {
-          "label": "09/28",
-          "value": "달담 〈청춘기수〉"
+          "label": "음반",
+          "value": "09/28 달담 〈청춘기수〉"
         },
         {
-          "label": "09/28",
-          "value": "1DAY & Urban Fisher 〈JUNKIES〉"
+          "label": "음반",
+          "value": "09/28 1DAY & Urban Fisher 〈JUNKIES〉"
         },
         {
-          "label": "09/28",
-          "value": "박창민 〈기분이 (Feat. KANGHYUK)〉"
+          "label": "음반",
+          "value": "09/28 박창민 〈기분이 (Feat. KANGHYUK)〉"
         },
         {
-          "label": "09/28",
-          "value": "진혁 〈온통 너뿐이라〉"
+          "label": "음반",
+          "value": "09/28 진혁 〈온통 너뿐이라〉"
         },
         {
-          "label": "09/28",
-          "value": "내귀에도청장치 〈유체이탈〉"
+          "label": "음반",
+          "value": "09/28 내귀에도청장치 〈유체이탈〉"
         }
       ],
       "form": "[카테고리]\nNews\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 9월 5주 신보\n부제: 이번 주에 나온 20장\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 9월 28일 (월)\n본문: ALLDAY PROJECT 〈CRASH〉 / BOYNEXTDOOR 〈HOME: DELUXE〉 / 예성 〈Winds of Time〉 / 고세구 〈NO CAT, NO LIFE!〉\n출처: 정리 | PLOT\n",
-      "generated_at": "2026-09-29 19:23 KST"
+      "generated_at": "2026-09-29 20:04 KST"
     },
     {
       "id": "themes-20260929",
       "kind": "themes",
-      "title": "판이 하는 이야기, 우리가 안 하는 이야기",
+      "where": "news",
+      "title": "우리가 안 다룬 이야기",
       "why": "12개 주제 · 판이 더 많이 쓴 순서",
       "stat": "매거진 글 427건 vs 우리 133건 · 최근 21일 · 가사 묶음은 코퍼스가 생기면",
       "rows": [
@@ -3877,6 +3880,362 @@
         {
           "label": "컴백·복귀",
           "value": "매거진 45건(10곳) · 우리 10건 · aob_interview:, 광인셔틀"
+        }
+      ],
+      "detail": [
+        {
+          "theme": "주년·재발매",
+          "stat": "매거진 32건 · 7곳 · 우리 4건",
+          "posts": [
+            {
+              "at": "09/16",
+              "from": "ageofband",
+              "head": "#AoB #싱싱음악 #生生音樂 ❶ 장기하 - 산산조각 ❷ 단편선 순간들 - 폭설 혹은 난시 ❸ Haruomi Hosono - ",
+              "url": "https://www.instagram.com/p/DdVUJRlEnxV/"
+            },
+            {
+              "at": "09/14",
+              "from": "ageofband",
+              "head": "#AoB 놓치면 아쉬운 9월 2주차 #음악소식 ❶ 실리카겔, CD•Vinyl•MD 온라인 선판매... 11주년을 지나 12주년",
+              "url": "https://www.instagram.com/p/DdQHwcEEnP1/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "서울과 부산의 이름이 새겨진 라이카 카메라.💙 라이카가 전 세계 라이카 스토어 20주년을 기념해 각 도시의 개성과 라이카 스토",
+              "url": "https://www.instagram.com/p/DdYrAJkiQmF/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "탬버린즈가 중독적인 향과 세련된 패키지의 ’오 핸드크림‘을 새롭게 출시했습니다.🪽 본 제품은 탬버린즈(@tamburinsoff",
+              "url": "https://www.instagram.com/p/DdYVIDfiSr7/"
+            }
+          ]
+        },
+        {
+          "theme": "해외·빌보드",
+          "stat": "매거진 28건 · 8곳 · 우리 4건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "#광고 리바이스의 과거부터 현재, 미래까지 볼 수 있는 팝업은 못 참지.💙 글로벌 데님 브랜드 리바이스(@levis_korea",
+              "url": "https://www.instagram.com/p/DdYYYcgp3gi/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "#광고 우즈가 착용한 휠라 ‘에어플로우 경량다운’을 구매하면 특별한 선물이 따라옵니다.🎁 9월 17일 오전 11시부터 컬러와 ",
+              "url": "https://www.instagram.com/p/DdXiplAAU0p/"
+            },
+            {
+              "at": "09/16",
+              "from": "eyesmag",
+              "head": "캘빈클라인 그냥도 좋은데 정국이 입은 캘빈클라인은 더 좋음.💜 캘빈클라인(@calvinklein)이 글로벌 앰버서더 BTS(@",
+              "url": "https://www.instagram.com/p/DdWSseQicSD/"
+            },
+            {
+              "at": "09/16",
+              "from": "eyesmag",
+              "head": "저도 샤넬 하이 주얼리 한 번만요...🥹 최근 다양한 시상식에서 우아한 샤넬(@chanelofficial) 하이 주얼리를 착용",
+              "url": "https://www.instagram.com/p/DdV2uiuCUIt/"
+            }
+          ]
+        },
+        {
+          "theme": "리메이크·샘플링",
+          "stat": "매거진 15건 · 5곳 · 우리 0건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "hiptake_",
+              "head": "\"리센느의 벽을 넘었다\" 1️⃣ 전소연의 \"퇴사할게요\"가 멜론 TOP 100 차트 1위를 거머쥐었습니다. 한동안 대국민 아이돌",
+              "url": "https://www.instagram.com/p/DdX-w0Ak_Ii/"
+            },
+            {
+              "at": "09/17",
+              "from": "hiptake_",
+              "head": "”세 남자의 홈파티, 진짜 잘노네“ 🎧 싸이커스가 민재, 수민, 예찬으로 구성된 랩 유닛 콘텐츠 ’저스트 포 펀(JUST FO",
+              "url": "https://www.instagram.com/p/DdYVsbLk8kC/"
+            },
+            {
+              "at": "09/16",
+              "from": "hiptake_",
+              "head": "\"KPOPIUM\" 😈 에스파가 새롭게 발표한 [SYNK : COMPLaeXITY - 2026 Special Digital Si",
+              "url": "https://www.instagram.com/p/DdVRRzYTuGX/"
+            },
+            {
+              "at": "09/16",
+              "from": "nitemagkr",
+              "head": "“30대도 락스타가 될 수 있어” 🤘 최근 새 정규앨범 [31Rockstar]로 돌아온 래퍼 Odd95. 그는 과거 ‘스물다섯",
+              "url": "https://www.instagram.com/p/DdWRMC9CaFB/"
+            }
+          ]
+        },
+        {
+          "theme": "팬덤·굿즈",
+          "stat": "매거진 14건 · 7곳 · 우리 0건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "#광고 성수동 한복판에 ’오끼뜨 방앗간‘ 팝업 스토어가 바로 오늘 문을 열었습니다.🍡 K-패션 브랜드 오끼뜨(@oggitt.o",
+              "url": "https://www.instagram.com/p/DdYgLcnpI8T/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "무신사에서만 만나볼 수 있는 ’창백카츄 키링‘과 ’흔들풍손 썬캐쳐 모빌‘을 <아이즈매거진>이 언박싱해 봤습니다.❤️ 두 제품은",
+              "url": "https://www.instagram.com/p/DdYxeWBiQCJ/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "#광고 리바이스의 과거부터 현재, 미래까지 볼 수 있는 팝업은 못 참지.💙 글로벌 데님 브랜드 리바이스(@levis_korea",
+              "url": "https://www.instagram.com/p/DdYYYcgp3gi/"
+            },
+            {
+              "at": "09/16",
+              "from": "eyesmag",
+              "head": "#광고 올리브영 X 산리오캐릭터즈 1차 굿즈를 놓치고 울고 있었다면 주목.🎀 1차 굿즈가 공개된 후 SNS를 뜨겁게 달구며 폭",
+              "url": "https://www.instagram.com/p/DdV0CLvCcFC/"
+            }
+          ]
+        },
+        {
+          "theme": "컴백·복귀",
+          "stat": "매거진 45건 · 10곳 · 우리 10건",
+          "posts": [
+            {
+              "at": "09/11",
+              "from": "ageofband",
+              "head": "#AoB_interview: 윤마치(@yooonmarch) ”그래도 나름 행복한 다큐멘터리!“ EP 〈상생관계〉를 발매하며 얼",
+              "url": "https://www.instagram.com/p/DdInBuhkgP1/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "써코니 신으면 지구 반대편도 뛰어간다.🖤 써코니(@sauconykr)의 ʻOmni 9‘과 ʻRide 1’이 리뉴얼되어 돌아왔습",
+              "url": "https://www.instagram.com/p/DdY0d0dCbmd/"
+            },
+            {
+              "at": "09/11",
+              "from": "fstvl.life",
+              "head": "🔥광인셔틀 2 공지🔥 작년에 이어 다시 돌아온 광인셔틀 2의 노선과 가격, 예약 방법 안내드립니다. [운행 일정] 출발 - 인",
+              "url": "https://www.instagram.com/p/DdI8G7RgfBD/"
+            },
+            {
+              "at": "09/17",
+              "from": "glowupmag",
+              "head": "가방 맛집 보테가 베네타(@newbottega), 또 일냈습니다. 이번에는 보부상들을 위한 토트백으로 돌아왔습니다. 👜 루이스",
+              "url": "https://www.instagram.com/p/DdXw1IUgdXN/"
+            }
+          ]
+        },
+        {
+          "theme": "인터뷰",
+          "stat": "매거진 24건 · 8곳 · 우리 4건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "NCT 과거부터 현재까지 전원 미남 그룹인 점 축하드립니다.💚 NCT 10주년 기념 전시 <NEO DIMENSION>에 다녀왔",
+              "url": "https://www.instagram.com/p/DdYAYbeCcUB/"
+            },
+            {
+              "at": "09/17",
+              "from": "glowupmag",
+              "head": "‘결혼식, 아직 안 올렸다고? 💍’ 톰 홀랜드(@tomholland2013)와 젠데이아(@zendaya)의 결혼 여부를 두고 ",
+              "url": "https://www.instagram.com/p/DdYn8LLBC1p/"
+            },
+            {
+              "at": "09/17",
+              "from": "glowupmag",
+              "head": "패밀리 위크 할인에 신제품도 포함됩니다. ’세이투셰(@say_touche)‘의 시그니처 컬렉션 ’리퀴파이드 러그‘가 새로운 디",
+              "url": "https://www.instagram.com/p/DdXlrl4ATiF/"
+            },
+            {
+              "at": "09/16",
+              "from": "glowupmag",
+              "head": "‘드레이크, 돈 톨리버 🤝🏻’ 드레이크(@champagnepapi)의 새 프로젝트가 베일을 벗었습니다. 돈 톨리버(@donto",
+              "url": "https://www.instagram.com/p/DdWBZkPAQrc/"
+            }
+          ]
+        },
+        {
+          "theme": "페스티벌·라인업",
+          "stat": "매거진 43건 · 9곳 · 우리 10건",
+          "posts": [
+            {
+              "at": "09/16",
+              "from": "ageofband",
+              "head": "#AoB #언니네이발관 의 #이석원 이 마침내 페스티벌 무대로 귀환합니다. 최근 비밀리에 소규모 라이브를 몇 차례 이어오던 그",
+              "url": "https://www.instagram.com/p/DdV92d0kpVd/"
+            },
+            {
+              "at": "09/08",
+              "from": "ageofband",
+              "head": "#AoB 정형화된 문법을 벗어난 쇼케이스 페스티벌의 묘미를 다시 보여주며 올해 #잔다리페스타(@zandarifesta)가 막을",
+              "url": "https://www.instagram.com/p/DdBqbf8kgDK/"
+            },
+            {
+              "at": "09/12",
+              "from": "ageofband",
+              "head": "#AoB 성수동 락페스티벌 다녀왔습니다. 헤드라이너급 무대를 평일 저녁에 연달아 볼 수 있다니, 지금 바로 슬라이드를 넘겨서 ",
+              "url": "https://www.instagram.com/p/DdK1PDbD2kf/"
+            },
+            {
+              "at": "09/14",
+              "from": "ageofband",
+              "head": "#AoB 놓치면 아쉬운 9월 2주차 #음악소식 ❶ 실리카겔, CD•Vinyl•MD 온라인 선판매... 11주년을 지나 12주년",
+              "url": "https://www.instagram.com/p/DdQHwcEEnP1/"
+            }
+          ]
+        },
+        {
+          "theme": "콘셉트·세계관",
+          "stat": "매거진 17건 · 4곳 · 우리 4건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "무신사에서만 만나볼 수 있는 ’창백카츄 키링‘과 ’흔들풍손 썬캐쳐 모빌‘을 <아이즈매거진>이 언박싱해 봤습니다.❤️ 두 제품은",
+              "url": "https://www.instagram.com/p/DdYxeWBiQCJ/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "다이와피어39가 드디어 서울에 상륙했습니다.🎣 다이와피어39는 일본 피싱 브랜드 다이와가 오랜 시간 축적해온 기술과 소재에 대",
+              "url": "https://www.instagram.com/p/DdYP1iuiZa6/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "베르디의 첫 오프라인 스토어, 먼저 다녀왔습니다.👀 <아이즈매거진>이 정식 오픈을 앞둔 오사카 신사이바시 파르코(@parco_",
+              "url": "https://www.instagram.com/p/DdYqPOyCeXB/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "NCT 과거부터 현재까지 전원 미남 그룹인 점 축하드립니다.💚 NCT 10주년 기념 전시 <NEO DIMENSION>에 다녀왔",
+              "url": "https://www.instagram.com/p/DdYAYbeCcUB/"
+            }
+          ]
+        },
+        {
+          "theme": "챌린지·숏폼",
+          "stat": "매거진 7건 · 6곳 · 우리 1건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "hiptake_",
+              "head": "\"리센느의 벽을 넘었다\" 1️⃣ 전소연의 \"퇴사할게요\"가 멜론 TOP 100 차트 1위를 거머쥐었습니다. 한동안 대국민 아이돌",
+              "url": "https://www.instagram.com/p/DdX-w0Ak_Ii/"
+            },
+            {
+              "at": "09/14",
+              "from": "hiptake_",
+              "head": "\"어차피 나도 받은 돈이야\" 🙉 최근 정규 10집 선공개곡 \"젊은날\"을 발표한 MC몽은 대학교 축제에 올랐습니다. 그가 오른 ",
+              "url": "https://www.instagram.com/p/DdQcTqWztW8/"
+            },
+            {
+              "at": "09/14",
+              "from": "kpopburger_magazine",
+              "head": "“여러분은 어떠신가요?“ ✨하이어뮤직(@h1ghrmusic ) 새로운 팟캐스트 콘텐츠에서 재밌는 주제가 나왔는데요. 릴스와 틱",
+              "url": "https://www.instagram.com/p/DdQp5w-Rgba/"
+            },
+            {
+              "at": "09/13",
+              "from": "wavemag.kr",
+              "head": "2007년 발매된 Arctic Monkeys의 <505>는 오랜 시간이 지난 지금까지도 새로운 세대에게 꾸준히 발견되고 있는 ",
+              "url": "https://www.instagram.com/p/DdNpQGcR-JG/"
+            }
+          ]
+        },
+        {
+          "theme": "유튜브·SNS",
+          "stat": "매거진 23건 · 7곳 · 우리 6건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "한국 x 후지이 카제 x ‘You' 이 조합 확실히 사랑해.🖤 한국에서 촬영한 후지이 카제의 ‘You’ 뮤직비디오가 공개됐습니",
+              "url": "https://www.instagram.com/p/DdY470-p_Wn/"
+            },
+            {
+              "at": "09/15",
+              "from": "hiptake_",
+              "head": "\"박이형도 힙갤러였구나\" ⌨️ 9월 14일 저녁, 존박은 갑자기 디시인사이드 힙합갤러리에 등판했습니다. 존박은 '인증샷으로 시",
+              "url": "https://www.instagram.com/p/DdS9ozoBm2R/"
+            },
+            {
+              "at": "09/14",
+              "from": "hiptake_",
+              "head": "\"에픽하이의 리더 투컷\" 🚩 에픽하이의 리더가 데뷔 23년 만에 타블로에서 DJ 투컷으로 변경됐습니다. 사건의 발단은 그들의 ",
+              "url": "https://www.instagram.com/p/DdQ0gunhLOD/"
+            },
+            {
+              "at": "09/11",
+              "from": "hiptake_",
+              "head": "\"존박의 래퍼 도전기가 시작된다\" 🎤 최근 존박은 래퍼에 도전하기 시작했습니다. 그의 자컨 유튜브 채널 '존이냐박이냐'의 새로",
+              "url": "https://www.instagram.com/p/DdInFrSzyH-/"
+            }
+          ]
+        },
+        {
+          "theme": "피처링·협업",
+          "stat": "매거진 48건 · 7곳 · 우리 14건",
+          "posts": [
+            {
+              "at": "09/13",
+              "from": "ageofband",
+              "head": "#AoB ”오늘의 주인공은 베이스라구 ..설마 못 들은 거 아니지?“ 밴드 사운드의 중심을 든든하게 잡아주는 여성 베이시스트 ",
+              "url": "https://www.instagram.com/p/DdN52jUEvlD/"
+            },
+            {
+              "at": "09/08",
+              "from": "ageofband",
+              "head": "#AoB 정형화된 문법을 벗어난 쇼케이스 페스티벌의 묘미를 다시 보여주며 올해 #잔다리페스타(@zandarifesta)가 막을",
+              "url": "https://www.instagram.com/p/DdBqbf8kgDK/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "키스가 테크니컬 액티브웨어 레이블 K-Tech의 26 가을 컬렉션을 선보입니다. 이번 컬렉션은 퍼포먼스를 중심으로 설계한 의류",
+              "url": "https://www.instagram.com/p/DdYwaAICTAs/"
+            },
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "베르디의 첫 오프라인 스토어, 먼저 다녀왔습니다.👀 <아이즈매거진>이 정식 오픈을 앞둔 오사카 신사이바시 파르코(@parco_",
+              "url": "https://www.instagram.com/p/DdYqPOyCeXB/"
+            }
+          ]
+        },
+        {
+          "theme": "해체·탈퇴",
+          "stat": "매거진 3건 · 3곳 · 우리 0건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "glowupmag",
+              "head": "데님 스커트에 실크 프린지를 달았습니다. 바람에 흩날리며 반짝이는 프린지가 클래식한 데님 스커트와 만나 전에 없던 새로운 분위",
+              "url": "https://www.instagram.com/p/DdXuez2AV2l/"
+            },
+            {
+              "at": "09/14",
+              "from": "hiptake_",
+              "head": "\"모어비전과 3년 동행 마침표\" 👋 청하가 박재범이 이끄는 모어비전과 결별합니다. 모어비전은 14일 공식 SNS를 통해 '신중",
+              "url": "https://www.instagram.com/p/DdQcX5qkw22/"
+            },
+            {
+              "at": "09/19",
+              "from": "ualive_mag",
+              "head": "테임 임팔라(@tameimpala)의 케빈 파커는 오랫동안 자신의 머릿속에 있는 소리를 현실로 옮기기 위해 집요하게 음악을 다",
+              "url": "https://www.instagram.com/p/DddC9GJANWP/"
+            }
+          ]
         }
       ],
       "more": [
@@ -3978,7 +4337,7 @@
         }
       ],
       "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 요즘 판이 하는 말\n부제: 최근 21일 매거진이 다룬 주제\n출처: 집계 | PLOT (매거진 427건)\n\n[슬라이드]\n소스: \n소제목: 주년·재발매\n본문: 매거진 7곳 · 글 32건 · 우리 4건 · aob, 싱싱음악, 오아시스\n출처: 집계 | PLOT (매거진 427건)\n\n[슬라이드]\n소스: \n소제목: 해외·빌보드\n본문: 매거진 8곳 · 글 28건 · 우리 4건 · 오아시스, live27, aob_interview:\n출처: 집계 | PLOT (매거진 427건)\n\n[슬라이드]\n소스: \n소제목: 리메이크·샘플링\n본문: 매거진 5곳 · 글 15건 · 우리 0건 · odd95, 울지마나까지그러고파ㅠ, 도은\n출처: 집계 | PLOT (매거진 427건)\n\n[슬라이드]\n소스: \n소제목: 팬덤·굿즈\n본문: 매거진 7곳 · 글 14건 · 우리 0건 · crush, 크러쉬, 제작협업\n출처: 집계 | PLOT (매거진 427건)\n\n[슬라이드]\n소스: \n소제목: 컴백·복귀\n본문: 매거진 10곳 · 글 45건 · 우리 10건 · aob_interview:, 광인셔틀, 부산국제록페스티벌\n출처: 집계 | PLOT (매거진 427건)\n\n[슬라이드]\n소스: \n소제목: 인터뷰\n본문: 매거진 8곳 · 글 24건 · 우리 4건 · 양홍원, 헤어스타일, aob\n출처: 집계 | PLOT (매거진 427건)\n",
-      "generated_at": "2026-09-29 19:23 KST"
+      "generated_at": "2026-09-29 20:04 KST"
     }
   ]
 }

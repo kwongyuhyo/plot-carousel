@@ -363,9 +363,19 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
     if (a) document.documentElement.setAttribute('data-accent', a);
     var n = localStorage.getItem('plot.app.neon');
     document.documentElement.setAttribute('data-neon', n || 'cyan');
+    var g = localStorage.getItem('plot.app.gap');
+    document.documentElement.setAttribute('data-gap', g || 'normal');
   } catch (e) {}
 })();
 </script>
+
+<style id="plotGap">
+html:root[data-gap="tight"]{ --u:6px }
+html:root[data-gap="wide"]{ --u:10px }
+html:root[data-gap="tight"] body{ padding-left:12px; padding-right:12px }
+html:root[data-gap="normal"] body{ padding-left:22px; padding-right:22px }
+html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -488,11 +498,13 @@ if ('serviceWorker' in navigator) {
   }
 })();
 </script>
-<div style="text-align:center;font:500 11px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 09.29 19:23</div>
+<div style="text-align:center;font:500 11px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 09.29 20:04</div>
 
 <script>
 (function () {
-  var TK = 'plot.app.theme', AK = 'plot.app.accent', NK = 'plot.app.neon';
+  var TK = 'plot.app.theme', AK = 'plot.app.accent', NK = 'plot.app.neon',
+      GK = 'plot.app.gap';
+  var GAPS = [['tight', '좁게'], ['normal', '보통'], ['wide', '넓게']];
   var HUES = ['cyan', 'magenta', 'lime', 'orange', 'violet'];
   var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
   var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
@@ -504,12 +516,14 @@ if ('serviceWorker' in navigator) {
   function mode() { var t = get(TK, ''); return (t === 'light' || t === 'dark') ? t : 'system'; }
   function accent() { return get(AK, 'amber'); }
   function hue() { var h = get(NK, 'cyan'); return HUES.indexOf(h) < 0 ? 'cyan' : h; }
+  function gap() { var g = get(GK, 'normal'); return /^(tight|normal|wide)$/.test(g) ? g : 'normal'; }
 
   function apply() {
     var r = document.documentElement, m = mode();
     if (m === 'system') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', m);
     r.setAttribute('data-accent', accent());
     r.setAttribute('data-neon', hue());
+    r.setAttribute('data-gap', gap());
     var meta = document.querySelector('meta[name=theme-color]');
     if (meta) {
       var dark = m === 'dark' ||
@@ -528,6 +542,9 @@ if ('serviceWorker' in navigator) {
     });
     [].forEach.call(box.querySelectorAll('[data-hue]'), function (b) {
       b.classList.toggle('on', b.getAttribute('data-hue') === hue());
+    });
+    [].forEach.call(box.querySelectorAll('[data-gap]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-gap') === gap());
     });
   }
 
@@ -554,6 +571,9 @@ if ('serviceWorker' in navigator) {
       '<div class="row hues">' + HUES.map(function (h) {
         return '<button type="button" class="hue" data-hue="' + h +
                '" title="' + h + '"></button>';
+      }).join('') + '</div>' +
+      '<b>여백</b><div class="row">' + GAPS.map(function (g) {
+        return '<button type="button" data-gap="' + g[0] + '">' + g[1] + '</button>';
       }).join('') + '</div>';
     document.body.appendChild(box);
     box.style.top = Math.round(btn.getBoundingClientRect().bottom + 8) + 'px';
@@ -563,6 +583,8 @@ if ('serviceWorker' in navigator) {
       if (a) { set(AK, a.getAttribute('data-accent')); apply(); }
       var h = e.target.closest('[data-hue]');
       if (h) { set(NK, h.getAttribute('data-hue')); apply(); }
+      var g = e.target.closest('[data-gap]');
+      if (g) { set(GK, g.getAttribute('data-gap')); apply(); }
     };
     paint();
     setTimeout(function () { document.addEventListener('click', away); }, 0);

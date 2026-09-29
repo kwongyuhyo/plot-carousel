@@ -69,11 +69,11 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 
 /* 대분류 — 이슈는 이틀이면 식고 기획은 안 식는다. 같은 줄에 세우면 매일
    이슈가 이기고 기획거리는 아래로 밀려 사라진다. 그래서 갈래부터 가른다. */
-.grp{display:flex; gap:6px; margin:calc(var(--u)*2) 0 0}
-.grp button{flex:1; background:none; border:1px solid var(--line); border-radius:8px;
+.split{display:flex; gap:6px; margin:calc(var(--u)*2) 0 0}
+.split button{flex:1; background:none; border:1px solid var(--line); border-radius:8px;
   color:var(--dim); font:inherit; font-size:12.5px; font-weight:700; padding:9px 0;
   cursor:pointer}
-.grp button[aria-selected="true"]{color:var(--text); border-color:var(--amber)}
+.split button[aria-selected="true"]{color:var(--text); border-color:var(--amber)}
 .pcard{border:1px solid var(--line); border-radius:10px; padding:14px;
   margin-top:calc(var(--u)*1.5)}
 .pcard h4{margin:0 0 2px; font-size:14.5px; letter-spacing:-.02em}
@@ -218,6 +218,15 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .angle::placeholder{color:var(--skip)}
 
 .grp{margin-top:calc(var(--u)*4)}
+/* 계정별은 훑는 화면이다 — 한 줄에 하나씩 쌓으면 스무 번 스크롤한다. */
+.acctGrid{display:grid; gap:calc(var(--u)*1.5);
+  grid-template-columns:repeat(auto-fill, minmax(230px, 1fr))}
+.acctGrid .card{border:1px solid var(--line); border-radius:10px;
+  padding:calc(var(--u)*1.5); margin:0; border-bottom:1px solid var(--line)}
+.acctHead{display:flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+  position:sticky; top:0; background:var(--bg); padding:4px 0 6px; z-index:2}
+.acctHead b{font-size:13.5px}
+.acctHead .base{font-size:11px; color:var(--dim); font-weight:400}
 .grp h3{margin:0 0 calc(var(--u)*1); font-size:12px; font-weight:700; color:var(--muted);
   font-family:var(--mono); letter-spacing:.06em}
 .grp .base{font-size:10.5px; color:var(--dim); font-family:var(--mono)}
@@ -234,6 +243,17 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   border:1px solid var(--line); border-radius:7px; padding:7px 10px; font:inherit; font-size:12.5px}
 .fq::placeholder{color:var(--dim)}
 /* 고른 조건이 실제로 먹었는지 숫자로 보여준다 — 칩만으로는 안 먹은 줄 알았다 */
+.dates{display:flex; align-items:center; gap:6px; flex-wrap:wrap}
+.dates input[type=date]{background:var(--panel); border:1px solid var(--line);
+  border-radius:7px; color:var(--text); font:inherit; font-size:12px; padding:5px 8px}
+.dates .dsep{color:var(--dim); font-size:12px}
+.dates button{background:none; border:1px solid var(--line); border-radius:7px;
+  color:var(--dim); font:inherit; font-size:11.5px; padding:5px 9px; cursor:pointer}
+.fhelp{font-size:11.5px; color:var(--dim); line-height:1.6; padding-top:2px}
+.ago{color:var(--dim)}
+.ns.missed{border:1px solid var(--line); border-radius:10px;
+  padding:14px; margin-top:calc(var(--u)*2)}
+.ns.missed .pbtn{margin-top:10px}
 .fsum{display:flex; align-items:center; gap:8px; font-size:11.5px; color:var(--muted);
   padding:2px 0 0}
 .fsum b{color:var(--text)}
@@ -526,9 +546,19 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
     if (a) document.documentElement.setAttribute('data-accent', a);
     var n = localStorage.getItem('plot.app.neon');
     document.documentElement.setAttribute('data-neon', n || 'cyan');
+    var g = localStorage.getItem('plot.app.gap');
+    document.documentElement.setAttribute('data-gap', g || 'normal');
   } catch (e) {}
 })();
 </script>
+
+<style id="plotGap">
+html:root[data-gap="tight"]{ --u:6px }
+html:root[data-gap="wide"]{ --u:10px }
+html:root[data-gap="tight"] body{ padding-left:12px; padding-right:12px }
+html:root[data-gap="normal"] body{ padding-left:22px; padding-right:22px }
+html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
+</style>
 <style>#theme{display:none!important}</style></head>
 <body>
 <div class="wrap">
@@ -544,7 +574,7 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
 
   <div id="err" class="err" hidden></div>
 
-  <div class="grp" id="grp">
+  <div class="split" id="grp">
     <button type="button" data-grp="info" aria-selected="true">이슈 · 뉴스</button>
     <button type="button" data-grp="plan" aria-selected="false">기획 소스</button>
   </div>
@@ -569,10 +599,20 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
       <span class="flab">정렬</span>
       <div class="chips" id="chipSort"></div>
     </div>
-    <div class="frow">
-      <span class="flab">찾기</span>
-      <input class="fq" id="fq" placeholder="이름·말·계정으로 거르기" />
+    <div class="frow" id="rowDate" hidden>
+      <span class="flab">직접</span>
+      <div class="dates">
+        <input type="date" id="dFrom" aria-label="시작일" />
+        <span class="dsep">~</span>
+        <input type="date" id="dTo" aria-label="종료일" />
+        <button type="button" id="dClear">지우기</button>
+      </div>
     </div>
+    <div class="frow">
+      <span class="flab">검색</span>
+      <input class="fq" id="fq" placeholder="검색" />
+    </div>
+    <div class="fhelp" id="fhelp" hidden></div>
     <div class="fsum" id="fsum" hidden></div>
   </div>
 
@@ -703,14 +743,45 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
   var DAYS = [{ k: 1, t: '오늘' }, { k: 2, t: '이틀' }, { k: 3, t: '사흘' },
               { k: 7, t: '일주일' }, { k: 0, t: '전체' }];
   var fDays = 0;         // 0 = 전체
+  var fFrom = '', fTo = '';   // 직접 고른 기간 (YYYY-MM-DD). 있으면 칩보다 우선한다.
   var fAcct = null;      // null = 전체
   var fSort = 'reco';    // 추천순(봇이 낸 차례)
   var fQ = '';           // 찾는 말
-  var SORTS = [{ k: 'reco', t: '추천순' }, { k: 'new', t: '최신순' },
-               { k: 'mult', t: '배수순' }, { k: 'fast', t: '빠른순' }];
+  /* 이름만 보면 무슨 차이인지 모른다 — 고르면 아래에 한 줄로 설명한다. */
+  var SORTS = [
+    { k: 'reco', t: '추천순',   h: '봇이 매긴 차례 — 반응·신선도·우리가 다뤘는지를 함께 본 순서' },
+    { k: 'new',  t: '새로 올라온 순', h: '올라온 시각이 최근인 것부터. 지금 도는 이야기를 볼 때' },
+    { k: 'mult', t: '반응 많은 순', h: '그 계정 평소보다 몇 배 반응인지. 계정 크기를 지운 값' },
+    { k: 'fast', t: '빨리 퍼진 순', h: '올라온 지 얼마 안 됐는데 반응이 빠른 것. 아직 오르는 중' },
+  ];
 
   function passAcct(c) { return !fAcct || c.account === fAcct; }
-  function passDays(c) { return !fDays || (c.hours != null && c.hours <= fDays * 24); }
+
+  /* 글이 올라온 날. 스캔 시각에서 나이(시간)를 빼면 나온다. */
+  function scanMs() {
+    var g = (D.generated_at || '').replace(' KST', '+09:00').replace(' ', 'T');
+    var t = Date.parse(g);
+    return isNaN(t) ? Date.now() : t;
+  }
+  function ymd(ms) {
+    var d = new Date(ms);
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') +
+           '-' + String(d.getDate()).padStart(2, '0');
+  }
+  function dayOf(c) {
+    if (c.hours == null) return '';
+    return ymd(scanMs() - c.hours * 3600000);
+  }
+  function passDays(c) {
+    if (fFrom || fTo) {                       // 직접 고른 기간이 먼저다
+      var d = dayOf(c);
+      if (!d) return false;
+      if (fFrom && d < fFrom) return false;
+      if (fTo && d > fTo) return false;
+      return true;
+    }
+    return !fDays || (c.hours != null && c.hours <= fDays * 24);
+  }
 
   /* 찾기 — 캡션·계정·해시태그·장르를 한 덩어리로 보고 훑는다.
      띄어쓰기로 나눠 모두 들어 있어야 통과(그래야 두 낱말로 좁힐 수 있다). */
@@ -747,7 +818,12 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
       return '<button class="chip' + (fDays === o.k ? ' on' : '') + '" data-days="' + o.k +
              '">' + o.t + '<span class="n">' + n + '</span></button>';
     });
+    d.push('<button class="chip' + ((fFrom || fTo) ? ' on' : '') +
+           '" data-days="cal">📅 직접</button>');
     document.getElementById('chipDays').innerHTML = d.join('');
+    document.getElementById('rowDate').hidden = !(fFrom || fTo || fDays === 'cal');
+    document.getElementById('dFrom').value = fFrom;
+    document.getElementById('dTo').value = fTo;
 
     var by = {};
     all.forEach(function (c) {
@@ -766,21 +842,27 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
       return '<button class="chip' + (fSort === o.k ? ' on' : '') + '" data-sort="' + o.k +
              '">' + o.t + '</button>';
     }).join('');
+    // 고른 정렬이 무슨 뜻인지 한 줄로 — 이름만으로는 아무도 모른다
+    var cur = SORTS.filter(function (o) { return o.k === fSort; })[0];
+    var help = document.getElementById('fhelp');
+    help.hidden = !cur;
+    if (cur) help.innerHTML = '<b>' + esc(cur.t) + '</b> · ' + esc(cur.h);
 
     var shown = all.filter(pass).length;
     var box = document.getElementById('fsum');
-    var on = fDays || fAcct || fQ || fSort !== 'reco';
+    var on = fDays || fAcct || fQ || fSort !== 'reco' || fFrom || fTo;
     box.hidden = !on;
     if (on) {
       var what = [];
       if (fAcct) what.push('@' + fAcct);
-      if (fDays) what.push((DAYS.filter(function (o) { return o.k === fDays; })[0] || {}).t);
+      if (fFrom || fTo) what.push((fFrom || '처음') + '~' + (fTo || '오늘'));
+      else if (fDays) what.push((DAYS.filter(function (o) { return o.k === fDays; })[0] || {}).t);
       if (fQ) what.push('「' + fQ + '」');
       if (fSort !== 'reco') what.push((SORTS.filter(function (o) { return o.k === fSort; })[0] || {}).t);
       box.innerHTML = what.join(' · ') + ' — <b>' + shown + '</b>건 보임 (전체 ' + all.length + ')' +
         '<button type="button" id="fclear">조건 지우기</button>';
       document.getElementById('fclear').onclick = function () {
-        fDays = 0; fAcct = null; fQ = ''; fSort = 'reco';
+        fDays = 0; fAcct = null; fQ = ''; fSort = 'reco'; fFrom = ''; fTo = '';
         document.getElementById('fq').value = '';
         renderFilters(); renderCand();
       };
@@ -800,12 +882,130 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
 
   /* 뉴스 급상승 — 매거진과 다른 축이다. 매거진은 '편집자가 고른 것',
      이쪽은 '세상이 갑자기 찾는 것'. 둘 다 걸리면 제일 강한 신호라 짚어준다. */
+  /* 뉴스 급상승에도 제 정렬·기간이 필요하다. 후보 쪽 조건과 섞지 않는다 —
+     보는 물건이 다르다(글 vs 아티스트). */
+  var nSort = 'reco', nDays = 0, nFrom = '', nTo = '';
+  var NSORTS = [
+    { k: 'reco', t: '추천순',   h: '발언이 잡힌 것 먼저, 그다음 배수 큰 순' },
+    { k: 'new',  t: '최신순',   h: '오늘 잡힌 것부터' },
+    { k: 'old',  t: '오래된순', h: '사흘 전 것부터 — 놓친 게 있나 훑을 때' },
+    { k: 'mult', t: '배수순',   h: '평소의 몇 배인지 큰 것부터' },
+    { k: 'multr', t: '배수 역순', h: '작게 움직인 것부터 — 아직 안 터진 것' },
+  ];
+
+  function newsDay(s2) { return ymd(scanMs() - (s2.days_ago || 0) * 86400000); }
+  function newsPass(s2) {
+    var d = newsDay(s2);
+    if (nFrom || nTo) {
+      if (nFrom && d < nFrom) return false;
+      if (nTo && d > nTo) return false;
+      return true;
+    }
+    return !nDays || (s2.days_ago || 0) < nDays;
+  }
+  function newsSorted(list) {
+    var a = list.slice();
+    if (nSort === 'new') a.sort(function (x, y) { return (x.days_ago || 0) - (y.days_ago || 0); });
+    else if (nSort === 'old') a.sort(function (x, y) { return (y.days_ago || 0) - (x.days_ago || 0); });
+    else if (nSort === 'mult') a.sort(function (x, y) { return (y.multiple || 0) - (x.multiple || 0); });
+    else if (nSort === 'multr') a.sort(function (x, y) { return (x.multiple || 0) - (y.multiple || 0); });
+    else a.sort(function (x, y) {
+      var sx = (x.speech || 0) > 0 ? 0 : 1, sy = (y.speech || 0) > 0 ? 0 : 1;
+      return sx - sy || (y.multiple || 0) - (x.multiple || 0);
+    });
+    return a;
+  }
+
+  function newsBar() {
+    var days = [{ k: 0, t: '전체' }, { k: 1, t: '오늘' }, { k: 2, t: '이틀' }, { k: 3, t: '사흘' }];
+    var chips = days.map(function (o) {
+      return '<button class="chip' + (!nFrom && !nTo && nDays === o.k ? ' on' : '') +
+             '" data-nd="' + o.k + '">' + o.t + '</button>';
+    }).join('') +
+      '<button class="chip' + ((nFrom || nTo) ? ' on' : '') + '" data-nd="cal">📅 직접</button>';
+    var sorts = NSORTS.map(function (o) {
+      return '<button class="chip' + (nSort === o.k ? ' on' : '') + '" data-ns="' + o.k +
+             '">' + o.t + '</button>';
+    }).join('');
+    var cur = NSORTS.filter(function (o) { return o.k === nSort; })[0];
+    return '<div class="filters" id="nfilters">' +
+      '<div class="frow"><span class="flab">기간</span><div class="chips" id="nDays">' +
+        chips + '</div></div>' +
+      ((nFrom || nTo)
+        ? '<div class="frow"><span class="flab">직접</span><div class="dates">' +
+          '<input type="date" id="nFrom" value="' + esc(nFrom) + '" aria-label="시작일">' +
+          '<span class="dsep">~</span>' +
+          '<input type="date" id="nTo" value="' + esc(nTo) + '" aria-label="종료일">' +
+          '<button type="button" id="nClear">지우기</button></div></div>'
+        : '') +
+      '<div class="frow"><span class="flab">정렬</span><div class="chips" id="nSortRow">' +
+        sorts + '</div></div>' +
+      '<div class="fhelp">' + (cur ? '<b>' + esc(cur.t) + '</b> · ' + esc(cur.h) : '') + '</div>' +
+      '</div>';
+  }
+
+  /* 우리가 안 다룬 이야기 — 기획거리가 아니라 '놓친 것' 이라 이슈·뉴스 쪽에 둔다. */
+  function missedBlock() {
+    var blk = (D.plan || []).filter(function (b) { return b && b.where === 'news'; })[0];
+    if (!blk) return '';
+    var det = (blk.detail || []).map(function (t) {
+      var posts = (t.posts || []).map(function (x) {
+        return '<div class="q">' + esc(x.at) + ' @' + esc(x.from) +
+               (x.url ? ' <a class="qa" href="' + esc(x.url) + '" target="_blank" rel="noopener">' +
+                        esc(x.head) + '</a>' : ' ' + esc(x.head)) + '</div>';
+      }).join('');
+      return '<details class="quiet"><summary>' + esc(t.theme) + ' — ' + esc(t.stat) +
+             '</summary>' + (posts || '<div class="q">글을 못 붙였습니다</div>') + '</details>';
+    }).join('');
+    return '<div class="ns missed"><div class="who">' + esc(blk.title) + '</div>' +
+      '<div class="sig">' + esc(blk.why) + '</div>' +
+      '<div class="arts">' + esc(blk.stat || '') + '</div>' + det +
+      (blk.form ? '<button class="pbtn" type="button" data-missed="1">봇 양식 만들기</button>' : '') +
+      '</div>';
+  }
+
+  function bindNewsBar() {
+    var nd = document.getElementById('nDays');
+    if (nd) nd.onclick = function (e) {
+      var b = e.target.closest('[data-nd]'); if (!b) return;
+      var v2 = b.getAttribute('data-nd');
+      if (v2 === 'cal') { nTo = ymd(scanMs()); nFrom = ymd(scanMs() - 2 * 86400000); }
+      else { nDays = parseInt(v2, 10) || 0; nFrom = ''; nTo = ''; }
+      renderNews();
+    };
+    var ns = document.getElementById('nSortRow');
+    if (ns) ns.onclick = function (e) {
+      var b = e.target.closest('[data-ns]'); if (!b) return;
+      nSort = b.getAttribute('data-ns') || 'reco';
+      renderNews();
+    };
+    ['nFrom', 'nTo'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.onchange = function () {
+        nFrom = (document.getElementById('nFrom') || {}).value || '';
+        nTo = (document.getElementById('nTo') || {}).value || '';
+        if (nFrom && nTo && nFrom > nTo) { var t = nFrom; nFrom = nTo; nTo = t; }
+        renderNews();
+      };
+    });
+    var nc = document.getElementById('nClear');
+    if (nc) nc.onclick = function () { nFrom = ''; nTo = ''; nDays = 0; renderNews(); };
+    var mb = document.querySelector('[data-missed]');
+    if (mb) mb.onclick = function () {
+      var blk = (D.plan || []).filter(function (b) { return b && b.where === 'news'; })[0];
+      if (blk && blk.form) openForm(blk.form);
+    };
+  }
+
   function renderNews() {
     var v = document.getElementById('viewNews');
-    var list = (D.news || []);
+    var list = newsSorted((D.news || []).filter(newsPass));
     if (!list.length) {
-      v.innerHTML = '<p class="note">지금은 기준(평소의 3배)을 넘은 아티스트가 없습니다. ' +
-                    '차트·기사 수를 매일 재고 있으니 움직이면 여기 올라옵니다.</p>';
+      v.innerHTML = newsBar() +
+        '<p class="note">이 조건에 맞는 급상승이 없습니다. 기간을 넓혀보세요. ' +
+        '기준은 평소의 <b>3배</b>이고, 지난 <b>사흘</b>치까지 남겨 둡니다.</p>' +
+        missedBlock();
+      bindNewsBar();
       return;
     }
 
@@ -814,8 +1014,9 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
     var loud = list.filter(function (s) { return (s.speech || 0) > 0; });
     var quiet = list.filter(function (s) { return !(s.speech || 0); });
 
-    var out = ['<p class="note">아티스트별로 기사 수와 차트를 매일 재서 평소의 <b>3배</b>를 ' +
-               '넘은 것만 올립니다. 그중 <b>누가 무슨 말을 했는지</b> 잡힌 것을 먼저 폅니다.</p>'];
+    var out = [newsBar(),
+               '<p class="note">아티스트별로 기사 수와 차트를 매일 재서 평소의 <b>3배</b>를 ' +
+               '넘은 것만 올립니다. 새로 모을 때마다 지워지지 않게 <b>사흘치</b>를 남깁니다.</p>'];
 
     (loud.length ? loud : list).forEach(function (s) {
       var arts = (s.articles || []);
@@ -831,7 +1032,8 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
           ? '<a class="lede" href="' + esc(head.url) + '" target="_blank" rel="noopener">' +
             esc(head.title) + '</a>'
           : '<div class="lede">기사를 못 불러왔습니다 — 맥에서 스캔이 돌면 붙습니다</div>') +
-        '<div class="sig"><span class="mult">' + s.multiple + '배</span> · ' + esc(s.why) + '</div>' +
+        '<div class="sig"><span class="mult">' + s.multiple + '배</span> · ' + esc(s.why || '') +
+          (s.days_ago ? ' · <span class="ago">' + s.days_ago + '일 전에 잡힘</span>' : '') + '</div>' +
         (s.also_in_magazine
           ? '<div class="xref">매거진에도 ' + s.also_in_magazine.length + '건 — 먼저 보세요</div>'
           : '') +
@@ -851,7 +1053,9 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
       out.push('<details class="quiet"><summary>조용한 급상승 ' + quiet.length +
                '건 — 숫자만 움직이고 발언은 안 잡혔습니다</summary>' + qs + '</details>');
     }
+    out.push(missedBlock());
     v.innerHTML = out.join('');
+    bindNewsBar();
   }
 
   function renderPerf() {
@@ -906,17 +1110,7 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
 
   function renderCand() {
     var v = document.getElementById('viewCand');
-    var hint = '';
-    if (P) {
-      var best = (P.kinds || []).filter(function (k) {
-        return k.stable && k.multiple > 1.2;
-      }).sort(function (a, b) { return b.multiple - a.multiple; })[0];
-      if (best) {
-        hint = '<div class="hint">PLOT 에서 가장 멀리 가는 건 <b>' + esc(best.kind) +
-          '</b> 결입니다 — 기준선의 <b>' + best.multiple + '배</b> (n=' + best.n +
-          ', ' + best.weeks + '주). 어떤 소재든 이 결로 쓸 수 있습니다.</div>';
-      }
-    }
+    var hint = '';      // 성과 요약 한 줄은 뺐다 — 고르는 데 도움이 안 됐다(규효)
     if (!D.candidates || !D.candidates.length) {
       v.innerHTML = hint + '<p class="note">오늘은 기준을 넘은 소식이 없습니다. ' +
                     '계정별 탭에서 직접 훑어보세요.</p>';
@@ -962,7 +1156,7 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
         (on ? '🔔 추적 중' : '추적') + '</button></div>' +
         '<ul class="fwList">' + items + '</ul></div>';
     }).join('');
-    return '<div class="fw"><h3 class="fwh">이어지는 이야기 ' + rows.length + '줄기' +
+    return '<div class="fw"><h3 class="fwh">팔로우업 할 소재 ' + rows.length + '건' +
       '<span class="sub">여러 매거진이 며칠에 걸쳐 같은 이름을 다뤘습니다. ' +
       '추적을 켜면 그 이름의 새 소식이 여기 모입니다</span></h3>' + body + '</div>';
   }
@@ -972,13 +1166,20 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
     var out = [];
     Object.keys(D.by_account || {}).forEach(function (a) {
       var meta = (D.accounts || {})[a] || {};
-      out.push('<div class="grp"><h3>@' + esc(a) +
-        ' <span class="base">기준선 ' + num(Math.round(meta.baseline || 0)) +
-        ' · 하루 ' + (meta.per_day != null ? meta.per_day : '?') + '개</span></h3>' +
-        D.by_account[a].map(function (c) { return card(c, { plain: true }); }).join('') +
-        '</div>');
+      var list = (D.by_account[a] || []).filter(function (c) {
+        return passDays(c) && passQ(c);
+      });
+      if (!list.length) return;
+      out.push('<div class="grp"><div class="acctHead"><b>@' + esc(a) + '</b>' +
+        '<span class="base">글 ' + list.length + '건 · 기준선 ' +
+        num(Math.round(meta.baseline || 0)) +
+        ' · 하루 ' + (meta.per_day != null ? meta.per_day : '?') + '개</span></div>' +
+        '<div class="acctGrid">' +
+        list.map(function (c) { return card(c, { plain: true }); }).join('') +
+        '</div></div>');
     });
-    v.innerHTML = out.join('') || '<p class="note">계정 데이터가 없습니다.</p>';
+    v.innerHTML = out.join('') ||
+      '<p class="note">이 조건에 맞는 글이 없습니다. 기간을 넓히거나 검색을 지워보세요.</p>';
   }
 
   function refreshBar() {
@@ -1238,26 +1439,49 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
   document.getElementById('chipDays').addEventListener('click', function (e) {
     var b = e.target.closest('[data-days]');
     if (!b) return;
-    fDays = parseInt(b.getAttribute('data-days'), 10) || 0;
-    renderFilters(); renderCand();
+    var v = b.getAttribute('data-days');
+    if (v === 'cal') {                       // 달력으로 직접
+      fDays = 'cal';
+      if (!fFrom && !fTo) {                  // 처음 열면 최근 이레를 넣어 둔다
+        fTo = ymd(scanMs());
+        fFrom = ymd(scanMs() - 6 * 86400000);
+      }
+    } else {
+      fDays = parseInt(v, 10) || 0;
+      fFrom = ''; fTo = '';
+    }
+    renderFilters(); renderCand(); renderAcct();
   });
+  ['dFrom', 'dTo'].forEach(function (id) {
+    document.getElementById(id).addEventListener('change', function () {
+      fFrom = document.getElementById('dFrom').value;
+      fTo = document.getElementById('dTo').value;
+      if (fFrom && fTo && fFrom > fTo) { var t = fFrom; fFrom = fTo; fTo = t; }
+      fDays = (fFrom || fTo) ? 'cal' : 0;
+      renderFilters(); renderCand(); renderAcct();
+    });
+  });
+  document.getElementById('dClear').onclick = function () {
+    fFrom = ''; fTo = ''; fDays = 0;
+    renderFilters(); renderCand(); renderAcct();
+  };
   document.getElementById('chipSort').addEventListener('click', function (e) {
     var b = e.target.closest('[data-sort]');
     if (!b) return;
     fSort = b.getAttribute('data-sort') || 'reco';
-    renderFilters(); renderCand();
+    renderFilters(); renderCand(); renderAcct();
   });
   var fqT;
   document.getElementById('fq').addEventListener('input', function (e) {
     clearTimeout(fqT);
     var v = e.target.value.trim();
-    fqT = setTimeout(function () { fQ = v; renderFilters(); renderCand(); }, 180);
+    fqT = setTimeout(function () { fQ = v; renderFilters(); renderCand(); renderAcct(); }, 180);
   });
   document.getElementById('chipAcct').addEventListener('click', function (e) {
     var b = e.target.closest('[data-acct]');
     if (!b) return;
     fAcct = b.getAttribute('data-acct') || null;
-    renderFilters(); renderCand();
+    renderFilters(); renderCand(); renderAcct();
   });
 
   function showTab(which) {
@@ -1287,8 +1511,8 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
 
   function planRows() {
     return (D.plan || []).filter(function (p) {
-      return p && (p.form || (p.items || []).length);
-    });
+      return p && p.where !== 'news' && (p.form || (p.items || []).length);
+    }).sort(function (a, b) { return (a.order || 10) - (b.order || 10); });
   }
 
   function renderPlan() {
@@ -1461,9 +1685,9 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 19:23';
+    a.title = '판 09.29 20:04';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 19:23';
+    ver.textContent = '09.29 20:04';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
@@ -1517,7 +1741,9 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
 
 <script>
 (function () {
-  var TK = 'plot.app.theme', AK = 'plot.app.accent', NK = 'plot.app.neon';
+  var TK = 'plot.app.theme', AK = 'plot.app.accent', NK = 'plot.app.neon',
+      GK = 'plot.app.gap';
+  var GAPS = [['tight', '좁게'], ['normal', '보통'], ['wide', '넓게']];
   var HUES = ['cyan', 'magenta', 'lime', 'orange', 'violet'];
   var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
   var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
@@ -1529,12 +1755,14 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
   function mode() { var t = get(TK, ''); return (t === 'light' || t === 'dark') ? t : 'system'; }
   function accent() { return get(AK, 'amber'); }
   function hue() { var h = get(NK, 'cyan'); return HUES.indexOf(h) < 0 ? 'cyan' : h; }
+  function gap() { var g = get(GK, 'normal'); return /^(tight|normal|wide)$/.test(g) ? g : 'normal'; }
 
   function apply() {
     var r = document.documentElement, m = mode();
     if (m === 'system') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', m);
     r.setAttribute('data-accent', accent());
     r.setAttribute('data-neon', hue());
+    r.setAttribute('data-gap', gap());
     var meta = document.querySelector('meta[name=theme-color]');
     if (meta) {
       var dark = m === 'dark' ||
@@ -1553,6 +1781,9 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
     });
     [].forEach.call(box.querySelectorAll('[data-hue]'), function (b) {
       b.classList.toggle('on', b.getAttribute('data-hue') === hue());
+    });
+    [].forEach.call(box.querySelectorAll('[data-gap]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-gap') === gap());
     });
   }
 
@@ -1579,6 +1810,9 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
       '<div class="row hues">' + HUES.map(function (h) {
         return '<button type="button" class="hue" data-hue="' + h +
                '" title="' + h + '"></button>';
+      }).join('') + '</div>' +
+      '<b>여백</b><div class="row">' + GAPS.map(function (g) {
+        return '<button type="button" data-gap="' + g[0] + '">' + g[1] + '</button>';
       }).join('') + '</div>';
     document.body.appendChild(box);
     box.style.top = Math.round(btn.getBoundingClientRect().bottom + 8) + 'px';
@@ -1588,6 +1822,8 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
       if (a) { set(AK, a.getAttribute('data-accent')); apply(); }
       var h = e.target.closest('[data-hue]');
       if (h) { set(NK, h.getAttribute('data-hue')); apply(); }
+      var g = e.target.closest('[data-gap]');
+      if (g) { set(GK, g.getAttribute('data-gap')); apply(); }
     };
     paint();
     setTimeout(function () { document.addEventListener('click', away); }, 0);
