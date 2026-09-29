@@ -146,7 +146,7 @@ html:root .plotThemeBox .sw[data-accent="blue"]{ background:#5B8DEF; color:#5B8D
 html:root .plotThemeBox .sw[data-accent="green"]{ background:#4FB477; color:#4FB477 }
 html:root .plotThemeBox .sw[data-accent="violet"]{ background:#8B7CF0; color:#8B7CF0 }
 html:root .plotThemeBox .sw[data-accent="mono"]{ background:#ECECF1; color:#ECECF1 }
-html:root .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#B5008C 100%); color:#00F0FF }
+html:root .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#FF2BD6 45%,#B6FF3B 100%); color:#00F0FF }
 html:root[data-theme="light"]{
   --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
   --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
@@ -176,7 +176,7 @@ html:root[data-theme="light"] .plotThemeBox .sw[data-accent="blue"]{ background:
 html:root[data-theme="light"] .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
 html:root[data-theme="light"] .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
 html:root[data-theme="light"] .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
-html:root[data-theme="light"] .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#B5008C 100%); color:#B5008C }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#FF2BD6 45%,#B6FF3B 100%); color:#B5008C }
 @media (prefers-color-scheme: light){
 html:root:not([data-theme="dark"]){
   --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
@@ -207,7 +207,7 @@ html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="blue"]{ backgr
 html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
 html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
 html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
-html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#B5008C 100%); color:#B5008C }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#FF2BD6 45%,#B6FF3B 100%); color:#B5008C }
 }
 /* 네온 — 바탕째 갈아 끼우므로 밝은 한 벌보다 뒤에 온다 */
 html:root[data-theme="dark"][data-accent="neon"]{
@@ -224,6 +224,24 @@ html:root[data-theme="dark"][data-accent="neon"] .plotThemeBox button.on{ box-sh
 html:root[data-theme="dark"][data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
   0 0 12px rgba(0,240,255,.5) }
 html:root[data-theme="dark"][data-accent="neon"] header, html:root[data-theme="dark"][data-accent="neon"] .bar{ border-color:var(--line) }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="cyan"]{ --accent:#00F0FF; --amber:#00F0FF; --neonrgb:0,240,255 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="magenta"]{ --accent:#FF2BD6; --amber:#FF2BD6; --neonrgb:255,43,214 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="lime"]{ --accent:#B6FF3B; --amber:#B6FF3B; --neonrgb:182,255,59 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="orange"]{ --accent:#FF9F43; --amber:#FF9F43; --neonrgb:255,159,67 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="violet"]{ --accent:#B08CFF; --amber:#B08CFF; --neonrgb:176,140,255 }
+html:root[data-theme="dark"][data-accent="neon"] body{
+  background-image:
+    radial-gradient(120% 60% at 50% -10%, rgba(var(--neonrgb,0,240,255),.16), transparent 60%),
+    linear-gradient(rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px);
+  background-size:100% 420px, 36px 36px, 36px 36px;
+  background-attachment:fixed;
+}
+html:root[data-theme="dark"][data-accent="neon"] .pwhy, html:root[data-theme="dark"][data-accent="neon"] .fwNew, html:root[data-theme="dark"][data-accent="neon"] .lat, html:root[data-theme="dark"][data-accent="neon"] .stamp,
+html:root[data-theme="dark"][data-accent="neon"] .badge, html:root[data-theme="dark"][data-accent="neon"] .pkLbl{ text-shadow:0 0 8px rgba(var(--neonrgb,0,240,255),.45) }
+html:root[data-theme="dark"][data-accent="neon"] .pcard, html:root[data-theme="dark"][data-accent="neon"] .card, html:root[data-theme="dark"][data-accent="neon"] .fw, html:root[data-theme="dark"][data-accent="neon"] .block{
+  border-color:rgba(var(--neonrgb,0,240,255),.22) }
+html:root[data-theme="dark"][data-accent="neon"] header{ border-bottom-color:rgba(var(--neonrgb,0,240,255),.35) }
 html:root[data-theme="light"][data-accent="neon"]{
   --bg:#FBF6FF; --panel:#F2E9FF; --raise:#E9DCFF; --panel-2:#E9DCFF;
   --line:#DCC9F5; --hair:#EDE3FB; --text:#14082A; --ink:#14082A;
@@ -238,6 +256,12 @@ html:root[data-theme="light"][data-accent="neon"] .plotThemeBox button.on{ box-s
 html:root[data-theme="light"][data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
   0 0 12px rgba(181,0,140,.35) }
 html:root[data-theme="light"][data-accent="neon"] header, html:root[data-theme="light"][data-accent="neon"] .bar{ border-color:var(--line) }
+html:root[data-theme="light"][data-accent="neon"][data-neon="cyan"]{ --accent:#0A6C78; --amber:#0A6C78; --neonrgb:0,240,255 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="magenta"]{ --accent:#A3007E; --amber:#A3007E; --neonrgb:255,43,214 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="lime"]{ --accent:#4C6B00; --amber:#4C6B00; --neonrgb:182,255,59 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="orange"]{ --accent:#8A4B00; --amber:#8A4B00; --neonrgb:255,159,67 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="violet"]{ --accent:#5A3BC4; --amber:#5A3BC4; --neonrgb:176,140,255 }
+html:root[data-theme="light"][data-accent="neon"] body{ background-image:linear-gradient(rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px),linear-gradient(90deg, rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px); background-size:36px 36px; background-attachment:fixed }
 @media (prefers-color-scheme: dark){
 html:root:not([data-theme="light"])[data-accent="neon"]{
   --bg:#06040F; --panel:#0E0A1C; --raise:#161029; --panel-2:#161029;
@@ -253,6 +277,24 @@ html:root:not([data-theme="light"])[data-accent="neon"] .plotThemeBox button.on{
 html:root:not([data-theme="light"])[data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
   0 0 12px rgba(0,240,255,.5) }
 html:root:not([data-theme="light"])[data-accent="neon"] header, html:root:not([data-theme="light"])[data-accent="neon"] .bar{ border-color:var(--line) }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="cyan"]{ --accent:#00F0FF; --amber:#00F0FF; --neonrgb:0,240,255 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="magenta"]{ --accent:#FF2BD6; --amber:#FF2BD6; --neonrgb:255,43,214 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="lime"]{ --accent:#B6FF3B; --amber:#B6FF3B; --neonrgb:182,255,59 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="orange"]{ --accent:#FF9F43; --amber:#FF9F43; --neonrgb:255,159,67 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="violet"]{ --accent:#B08CFF; --amber:#B08CFF; --neonrgb:176,140,255 }
+html:root:not([data-theme="light"])[data-accent="neon"] body{
+  background-image:
+    radial-gradient(120% 60% at 50% -10%, rgba(var(--neonrgb,0,240,255),.16), transparent 60%),
+    linear-gradient(rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px);
+  background-size:100% 420px, 36px 36px, 36px 36px;
+  background-attachment:fixed;
+}
+html:root:not([data-theme="light"])[data-accent="neon"] .pwhy, html:root:not([data-theme="light"])[data-accent="neon"] .fwNew, html:root:not([data-theme="light"])[data-accent="neon"] .lat, html:root:not([data-theme="light"])[data-accent="neon"] .stamp,
+html:root:not([data-theme="light"])[data-accent="neon"] .badge, html:root:not([data-theme="light"])[data-accent="neon"] .pkLbl{ text-shadow:0 0 8px rgba(var(--neonrgb,0,240,255),.45) }
+html:root:not([data-theme="light"])[data-accent="neon"] .pcard, html:root:not([data-theme="light"])[data-accent="neon"] .card, html:root:not([data-theme="light"])[data-accent="neon"] .fw, html:root:not([data-theme="light"])[data-accent="neon"] .block{
+  border-color:rgba(var(--neonrgb,0,240,255),.22) }
+html:root:not([data-theme="light"])[data-accent="neon"] header{ border-bottom-color:rgba(var(--neonrgb,0,240,255),.35) }
 }
 @media (prefers-color-scheme: light){
 html:root:not([data-theme="dark"])[data-accent="neon"]{
@@ -269,6 +311,12 @@ html:root:not([data-theme="dark"])[data-accent="neon"] .plotThemeBox button.on{ 
 html:root:not([data-theme="dark"])[data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
   0 0 12px rgba(181,0,140,.35) }
 html:root:not([data-theme="dark"])[data-accent="neon"] header, html:root:not([data-theme="dark"])[data-accent="neon"] .bar{ border-color:var(--line) }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="cyan"]{ --accent:#0A6C78; --amber:#0A6C78; --neonrgb:0,240,255 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="magenta"]{ --accent:#A3007E; --amber:#A3007E; --neonrgb:255,43,214 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="lime"]{ --accent:#4C6B00; --amber:#4C6B00; --neonrgb:182,255,59 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="orange"]{ --accent:#8A4B00; --amber:#8A4B00; --neonrgb:255,159,67 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="violet"]{ --accent:#5A3BC4; --amber:#5A3BC4; --neonrgb:176,140,255 }
+html:root:not([data-theme="dark"])[data-accent="neon"] body{ background-image:linear-gradient(rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px),linear-gradient(90deg, rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px); background-size:36px 36px; background-attachment:fixed }
 }
 /* 강조색이 여섯이 되면서 한 줄에 안 들어간다 */
 .plotThemeBox .row{flex-wrap:wrap}
@@ -294,6 +342,16 @@ html:root:not([data-theme="dark"])[data-accent="neon"] header, html:root:not([da
 .plotThemeBox button.on{border-color:var(--accent); color:var(--accent)}
 .plotThemeBox .sw{width:26px; height:26px; flex:none; border-radius:50%; padding:0; border:0}
 .plotThemeBox .sw.on{box-shadow:0 0 0 2px var(--bg,#0A0A0C), 0 0 0 4px currentColor}
+.plotThemeBox .hues{display:none}
+html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
+.plotThemeBox .hue{width:22px; height:22px; flex:none; border-radius:50%; padding:0; border:0}
+.plotThemeBox .hue.on{box-shadow:0 0 0 2px var(--bg,#0A0A0C), 0 0 0 4px currentColor,
+  0 0 12px currentColor}
+.plotThemeBox .hue[data-hue="cyan"]{ background:#00F0FF; color:#00F0FF }
+.plotThemeBox .hue[data-hue="magenta"]{ background:#FF2BD6; color:#FF2BD6 }
+.plotThemeBox .hue[data-hue="lime"]{ background:#B6FF3B; color:#B6FF3B }
+.plotThemeBox .hue[data-hue="orange"]{ background:#FF9F43; color:#FF9F43 }
+.plotThemeBox .hue[data-hue="violet"]{ background:#B08CFF; color:#B08CFF }
 </style>
 <script>
 /* 첫 그림이 그려지기 전에 얹는다 — 안 그러면 어두운 화면이 한 번 번쩍인다. */
@@ -303,6 +361,8 @@ html:root:not([data-theme="dark"])[data-accent="neon"] header, html:root:not([da
     var a = localStorage.getItem('plot.app.accent');
     if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
     if (a) document.documentElement.setAttribute('data-accent', a);
+    var n = localStorage.getItem('plot.app.neon');
+    document.documentElement.setAttribute('data-neon', n || 'cyan');
   } catch (e) {}
 })();
 </script>
@@ -428,11 +488,12 @@ if ('serviceWorker' in navigator) {
   }
 })();
 </script>
-<div style="text-align:center;font:500 11px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 09.29 18:41</div>
+<div style="text-align:center;font:500 11px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 09.29 19:23</div>
 
 <script>
 (function () {
-  var TK = 'plot.app.theme', AK = 'plot.app.accent';
+  var TK = 'plot.app.theme', AK = 'plot.app.accent', NK = 'plot.app.neon';
+  var HUES = ['cyan', 'magenta', 'lime', 'orange', 'violet'];
   var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
   var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
                  ['violet', '#8B7CF0'], ['mono', '#ECECF1'], ['neon', '#00F0FF']];
@@ -442,11 +503,13 @@ if ('serviceWorker' in navigator) {
   function set(k, v) { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch (e) {} }
   function mode() { var t = get(TK, ''); return (t === 'light' || t === 'dark') ? t : 'system'; }
   function accent() { return get(AK, 'amber'); }
+  function hue() { var h = get(NK, 'cyan'); return HUES.indexOf(h) < 0 ? 'cyan' : h; }
 
   function apply() {
     var r = document.documentElement, m = mode();
     if (m === 'system') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', m);
     r.setAttribute('data-accent', accent());
+    r.setAttribute('data-neon', hue());
     var meta = document.querySelector('meta[name=theme-color]');
     if (meta) {
       var dark = m === 'dark' ||
@@ -462,6 +525,9 @@ if ('serviceWorker' in navigator) {
     });
     [].forEach.call(box.querySelectorAll('[data-accent]'), function (b) {
       b.classList.toggle('on', b.getAttribute('data-accent') === accent());
+    });
+    [].forEach.call(box.querySelectorAll('[data-hue]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-hue') === hue());
     });
   }
 
@@ -483,6 +549,11 @@ if ('serviceWorker' in navigator) {
       ACCENTS.map(function (a) {
         return '<button type="button" class="sw" data-accent="' + a[0] +
                '" title="' + a[0] + '"></button>';
+      }).join('') + '</div>' +
+      // 네온을 골랐을 때만 열리는 줄 — 색이 하나면 사이버펑크가 안 산다
+      '<div class="row hues">' + HUES.map(function (h) {
+        return '<button type="button" class="hue" data-hue="' + h +
+               '" title="' + h + '"></button>';
       }).join('') + '</div>';
     document.body.appendChild(box);
     box.style.top = Math.round(btn.getBoundingClientRect().bottom + 8) + 'px';
@@ -490,6 +561,8 @@ if ('serviceWorker' in navigator) {
       var m = e.target.closest('[data-mode]'), a = e.target.closest('[data-accent]');
       if (m) { set(TK, m.getAttribute('data-mode') === 'system' ? '' : m.getAttribute('data-mode')); apply(); }
       if (a) { set(AK, a.getAttribute('data-accent')); apply(); }
+      var h = e.target.closest('[data-hue]');
+      if (h) { set(NK, h.getAttribute('data-hue')); apply(); }
     };
     paint();
     setTimeout(function () { document.addEventListener('click', away); }, 0);
