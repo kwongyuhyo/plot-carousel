@@ -257,6 +257,7 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
   } catch (e) {}
 })();
 </script>
+<script>window.PLOT_BOT="";</script>
 
 <style id="plotGap">
 html:root[data-gap="tight"]{ --u:6px }
@@ -402,7 +403,13 @@ main{display:grid;gap:0;padding-bottom:96px}
 /* 폰에서는 미리보기가 맨 위, 맞추기 버튼은 한참 아래라 끌면서 결과를 볼 수 없었다.
    맞추는 동안에는 도구 줄을 화면 아래에 붙이고(저장 바 자리), 미리보기로 올려 준다. */
 @media(max-width:979px){
-  body.fitting .actions{display:none}
+  body.fitting .catChips{display:flex; flex-wrap:wrap; gap:5px; margin:0 0 6px}
+.catChips button{background:none; border:1px solid var(--line); border-radius:999px;
+  color:var(--muted); font:inherit; font-size:11.5px; padding:4px 10px; cursor:pointer}
+.catChips button.on{color:var(--amber); border-color:var(--amber)}
+.tgRow{display:flex; gap:8px; margin-top:8px; flex-wrap:wrap}
+.tgRow button{flex:1; min-width:140px}
+.actions{display:none}
   body.fitting .fitBar{position:fixed;left:0;right:0;bottom:0;z-index:25;margin:0;
     background:var(--bg);border-top:1px solid var(--line);
     padding:10px 14px calc(10px + env(safe-area-inset-bottom));
@@ -538,10 +545,13 @@ main{display:grid;gap:0;padding-bottom:96px}
     <div id="rail"></div>
 
     <div class="metarow">
-      <label class="field" style="margin:0">
-        <span class="flabel">카테고리<em>좌상단 태그</em></span>
-        <input id="catInput" type="text" placeholder="News" />
-      </label>
+      <div class="field" style="margin:0">
+        <span class="flabel">카테고리<em>좌상단 태그 · 눌러서 고르거나 직접 적습니다</em></span>
+        <div class="catChips" id="catChips"></div>
+        <label style="display:block">
+          <input id="catInput" type="text" placeholder="News" />
+        </label>
+      </div>
       <label class="field" style="margin:0">
         <span class="flabel">캡션<em>인스타 본문 · 양식에만 실립니다</em></span>
         <input id="capInput" type="text" placeholder="비우면 봇이 자동 생성" />
@@ -596,6 +606,8 @@ main{display:grid;gap:0;padding-bottom:96px}
 
 <div class="actions">
   <button id="copyBtn" type="button">양식 복사</button>
+  <button id="tgBtn" type="button" title="양식을 복사하고 텔레그램을 엽니다">📨 복사 + 텔레그램</button>
+  <button id="capBtn" type="button" title="봇에게 캡션을 부탁하는 명령을 복사합니다">✍️ 캡션 만들기</button>
   <button id="pngBtn" type="button">이 장 이미지</button>
   <button id="allBtn" type="button" class="primary">전체 이미지</button>
 </div>
@@ -2065,6 +2077,10 @@ function applyDeckForm(d) {
   deckId = null; cur = 0;
   document.getElementById("deckName").value = deck.name;
   document.getElementById("catInput").value = deck.category;
+  if (typeof paintCatChips === "function") paintCatChips();
+  if (typeof paintCatChips === "function") paintCatChips();
+  if (typeof paintCatChips === "function") paintCatChips();
+  if (typeof paintCatChips === "function") paintCatChips();
   document.getElementById("capInput").value = deck.caption;
   const bar = document.getElementById("sampleBar"); if (bar) bar.hidden = true;
   markDirty(); closeQuick(); buildRail(); syncAll();
@@ -2402,6 +2418,73 @@ document.getElementById("newBtn").onclick = () => {
   markClean(); closeQuick(); buildRail(); syncAll();
 };
 document.getElementById("copyBtn").onclick = copyForm;
+
+/* 카테고리는 봇 쪽 값이 정해져 있다(카드 좌상단에 그대로 그려진다).
+   손으로 적다 오타가 나면 디자인 태그가 안 붙어서, 눌러서 고르게 한다. */
+const CAT_CHIPS = ["News", "Feature", "Issue", "New Release!"];
+function paintCatChips() {
+  const box = document.getElementById("catChips");
+  if (!box) return;
+  const cur = (document.getElementById("catInput").value || "").trim().toLowerCase();
+  box.innerHTML = CAT_CHIPS.map((c) =>
+    `<button type="button" data-cat="${c}" class="${cur === c.toLowerCase() ? "on" : ""}">${c}</button>`
+  ).join("");
+}
+document.getElementById("catChips").onclick = (e) => {
+  const b = e.target.closest("[data-cat]");
+  if (!b) return;
+  e.preventDefault();
+  e.stopPropagation();
+  const inp = document.getElementById("catInput");
+  const v = b.getAttribute("data-cat");
+  inp.value = (inp.value.trim() === v) ? "" : v;      // 다시 누르면 비운다
+  inp.dispatchEvent(new Event("input", { bubbles: true }));
+  paintCatChips();
+};
+document.getElementById("catInput").addEventListener("input", paintCatChips);
+paintCatChips();
+
+/* 텔레그램으로 넘어가는 길 — 복사와 앱 바꾸기를 한 번에. */
+function botLink() {
+  const u = (window.PLOT_BOT || "").replace(/^@/, "");
+  return u ? "https://t.me/" + u : "https://t.me/";
+}
+function openTelegram() {
+  const url = botLink();
+  try {
+    const TG = window.Telegram && window.Telegram.WebApp;
+    if (TG && TG.openTelegramLink) { TG.openTelegramLink(url); return; }
+  } catch (_) {}
+  window.open(url, "_blank", "noopener");
+}
+document.getElementById("tgBtn").onclick = async () => {
+  const text = buildForm();
+  try {
+    await navigator.clipboard.writeText(text);
+    toast("양식을 복사했습니다 — 텔레그램에 붙여넣으세요");
+  } catch (_) {
+    document.getElementById("formOut").value = text;
+    document.getElementById("formBox").hidden = false;
+    toast("복사가 막혀 있어 창으로 펼쳤습니다");
+  }
+  setTimeout(openTelegram, 250);
+};
+
+/* 캡션은 앱이 못 쓴다 — 글을 짓는 건 봇 몫이다. 봇에게 시키는 명령을 만들어
+   복사하고 텔레그램을 연다. 커버 제목·부제를 관점으로 같이 넘긴다. */
+document.getElementById("capBtn").onclick = () => {
+  const cover = ((deck && deck.slides) || [])[0] || {};
+  const title = (cover.title || "").trim();
+  const sub = (cover.subtitle || "").trim();
+  if (!title) { toast("커버 제목을 먼저 적어주세요"); return; }
+  const cmd = "/caption " + title + (sub ? " | " + sub : "");
+  try {
+    navigator.clipboard.writeText(cmd).then(
+      () => toast("「" + cmd + "」 복사 — 텔레그램에 붙여넣으면 캡션을 써 줍니다"),
+      () => window.prompt("봇에 붙여넣으세요", cmd));
+  } catch (_) { window.prompt("봇에 붙여넣으세요", cmd); }
+  setTimeout(openTelegram, 250);
+};
 document.getElementById("pngBtn").onclick = () => saveOne(cur);
 document.getElementById("allBtn").onclick = async () => {
   // 텔레그램 인앱 웹뷰는 내려받기도 파일 공유도 막는다(사진이 빠진 채 글만 가기도 한다).
@@ -2451,9 +2534,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 20:04';
+    a.title = '판 09.29 20:18';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 20:04';
+    ver.textContent = '09.29 20:18';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);

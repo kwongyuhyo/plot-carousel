@@ -425,6 +425,8 @@ pre.form{
   .pkKeys b{color:var(--dim); font-weight:700}
 }
 .pkGhost{color:var(--dim)}
+.tgRow{display:flex; gap:8px; margin-top:8px}
+.tgRow .btn{flex:1; font-size:12.5px}
 #picker:focus{outline:none}
 .pkMarks{display:flex; gap:9px; padding:12px 16px 0; flex:none}
 .pkMark{
@@ -785,6 +787,7 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
   } catch (e) {}
 })();
 </script>
+<script>window.PLOT_BOT="";</script>
 
 <style id="plotGap">
 html:root[data-gap="tight"]{ --u:6px }
@@ -821,6 +824,10 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <div class="summary" id="summary"></div>
     <div id="outsideBar" hidden>
       <button class="btn primary" id="copyBtn" style="width:100%">📋 양식 텍스트 복사</button>
+      <div class="tgRow">
+        <button class="btn" id="tgBtn" title="양식을 복사하고 텔레그램을 엽니다">📨 복사 + 텔레그램 열기</button>
+        <button class="btn" id="capBtn" title="봇에게 캡션을 부탁하는 명령을 복사합니다">✍️ 캡션 만들기</button>
+      </div>
       <pre class="form" id="formOut"></pre>
     </div>
   </div>
@@ -2825,6 +2832,53 @@ function pagePaste(ev) {
 }
 
 /* ── 보내기 ───────────────────────────────────────────── */
+/* 텔레그램으로 넘어가는 길. 브라우저에서 열었을 때 손이 제일 많이 가는 자리가
+   '복사 → 앱 바꾸기 → 붙여넣기' 라, 앞의 둘을 한 번에 한다. */
+function botLink() {
+  var u = (window.PLOT_BOT || '').replace(/^@/, '');
+  return u ? 'https://t.me/' + u : 'https://t.me/';
+}
+
+function openTelegram() {
+  var url = botLink();
+  try {
+    if (IN_TG && TG && TG.openTelegramLink) { TG.openTelegramLink(url); return; }
+  } catch (_) {}
+  window.open(url, '_blank', 'noopener');
+}
+
+async function copyThenTelegram() {
+  const bad = blocks.map(check).filter(e => Object.keys(e).length).length;
+  if (bad) { toast('확인이 필요한 편이 있습니다'); return; }
+  const text = formText();
+  try {
+    await navigator.clipboard.writeText(text);
+    toast('양식을 복사했습니다 — 텔레그램에 붙여넣으세요');
+  } catch (_) {
+    toast('복사가 막혀 있습니다 — 아래 양식을 길게 눌러 복사하세요');
+    const out = $('#formOut'); if (out) out.textContent = text;
+  }
+  setTimeout(openTelegram, 250);
+}
+
+/* 캡션은 앱이 못 쓴다(글을 지어내는 건 봇 몫이다). 대신 봇에게 시키는 명령을
+   만들어 복사하고 텔레그램을 연다 — 붙여넣기 한 번이면 봇이 써 준다. */
+function askCaption() {
+  const b = blocks[0] || {};
+  const song = (b.title || '').trim();
+  const artist = (b.artist || '').trim();
+  if (!song && !artist) { toast('곡이나 아티스트를 먼저 적어주세요'); return; }
+  const hook = (b.hook || '').trim();
+  const cmd = '/caption ' + (artist || '아티스트') + ' - ' + (song || '곡') +
+              (hook ? ' | ' + hook : '');
+  try {
+    navigator.clipboard.writeText(cmd).then(function () {
+      toast('「' + cmd + '」 복사 — 텔레그램에 붙여넣으면 캡션을 써 줍니다');
+    }, function () { window.prompt('봇에 붙여넣으세요', cmd); });
+  } catch (_) { window.prompt('봇에 붙여넣으세요', cmd); }
+  setTimeout(openTelegram, 250);
+}
+
 function submit() {
   const bad = blocks.map(check).filter(e => Object.keys(e).length).length;
   if (bad) { toast('확인이 필요한 편이 있습니다'); return; }
@@ -2877,6 +2931,8 @@ function boot() {
   } else {
     $('#outsideBar').hidden = false;
     $('#copyBtn').onclick = submit;
+    var tg = $('#tgBtn'); if (tg) tg.onclick = copyThenTelegram;
+    var cb = $('#capBtn'); if (cb) cb.onclick = askCaption;
   }
 
   // 폰에서는 썸네일이 작다 — 탭하면 전체화면으로 키운다.
@@ -2953,9 +3009,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 20:04';
+    a.title = '판 09.29 20:18';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 20:04';
+    ver.textContent = '09.29 20:18';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
