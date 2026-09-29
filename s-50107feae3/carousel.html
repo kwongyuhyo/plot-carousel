@@ -210,7 +210,7 @@ html:root:not([data-theme="dark"])[data-accent="neon"] body{ background-image:li
 /* 강조색이 여섯이 되면서 한 줄에 안 들어간다 */
 .plotThemeBox .row{flex-wrap:wrap}
 .plotThemeBtn{border:1px solid var(--line); border-radius:6px; background:none;
-  color:var(--muted,#8A8A96); font:inherit; font-size:11.5px; padding:5px 9px; cursor:pointer}
+  color:var(--muted,#8A8A96); font:inherit; font-size:13px; padding:5px 9px; cursor:pointer}
 /* 머리줄에 붙을 자리가 없으면 화면 오른쪽 위에 떠 있는다. 이 배경을 인라인으로
    까맣게 박아 두면 밝은 테마에서 글자가 묻는다 — 변수로 둔다. */
 .plotThemeBtn.float{position:fixed; right:12px; top:12px; z-index:9998;
@@ -221,13 +221,13 @@ html:root:not([data-theme="dark"])[data-accent="neon"] body{ background-image:li
 .addRow .plotThemeBtn{flex:0 0 auto}
 .plotThemeBox{position:fixed; right:12px; z-index:9999; background:var(--panel,#131318);
   border:1px solid var(--line); border-radius:10px; padding:11px 12px; min-width:186px;
-  box-shadow:0 12px 34px rgba(0,0,0,.4); font-size:12px; color:var(--text,#ECECF1)}
-.plotThemeBox b{display:block; font-size:11px; color:var(--muted,#8A8A96);
+  box-shadow:0 12px 34px rgba(0,0,0,.4); font-size:13px; color:var(--text,#ECECF1)}
+.plotThemeBox b{display:block; font-size:12.5px; color:var(--muted,#8A8A96);
   font-weight:600; margin:0 0 6px}
 .plotThemeBox .row{display:flex; gap:6px; margin-bottom:10px; align-items:center}
 .plotThemeBox .row:last-child{margin-bottom:0}
 .plotThemeBox button{flex:1; border:1px solid var(--line); border-radius:7px; background:none;
-  color:inherit; font:inherit; font-size:11.5px; padding:7px 4px; cursor:pointer}
+  color:inherit; font:inherit; font-size:13px; padding:7px 4px; cursor:pointer}
 .plotThemeBox button.on{border-color:var(--accent); color:var(--accent)}
 .plotThemeBox .sw{width:26px; height:26px; flex:none; border-radius:50%; padding:0; border:0}
 .plotThemeBox .sw.on{box-shadow:0 0 0 2px var(--bg,#0A0A0C), 0 0 0 4px currentColor}
@@ -236,6 +236,10 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
 .plotThemeBox .hue{width:22px; height:22px; flex:none; border-radius:50%; padding:0; border:0}
 .plotThemeBox .hue.on{box-shadow:0 0 0 2px var(--bg,#0A0A0C), 0 0 0 4px currentColor,
   0 0 12px currentColor}
+/* 글자 크기 — 브라우저 확대와 같은 방식(칸도 같이 큰다). 기기마다 따로 기억한다. */
+html:root[data-fs="s"] body{ zoom:.92 }
+html:root[data-fs="l"] body{ zoom:1.12 }
+html:root[data-fs="xl"] body{ zoom:1.26 }
 .plotThemeBox .hue[data-hue="cyan"]{ background:#00F0FF; color:#00F0FF }
 .plotThemeBox .hue[data-hue="magenta"]{ background:#FF2BD6; color:#FF2BD6 }
 .plotThemeBox .hue[data-hue="lime"]{ background:#B6FF3B; color:#B6FF3B }
@@ -254,6 +258,8 @@ html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
     document.documentElement.setAttribute('data-neon', n || 'cyan');
     var g = localStorage.getItem('plot.app.gap');
     document.documentElement.setAttribute('data-gap', g || 'normal');
+    var f = localStorage.getItem('plot.app.fs');
+    document.documentElement.setAttribute('data-fs', f || 'm');
   } catch (e) {}
 })();
 </script>
@@ -289,7 +295,7 @@ header{position:sticky;top:0;z-index:20;background:var(--bg);
   border-bottom:1px solid var(--line);padding:10px 14px 12px;
   display:flex;flex-direction:column;gap:10px}
 .brand{display:flex;align-items:center;gap:10px}
-.mark{font-family:"Pretendard-ExtraBold",sans-serif;font-size:13px;letter-spacing:.22em;
+.mark{font-family:"Pretendard-ExtraBold",sans-serif;font-size:14px;letter-spacing:.22em;
   color:var(--text);border:1px solid var(--line);padding:3px 8px 2px;border-radius:3px}
 #deckName{flex:1;min-width:0;background:none;border:none;color:var(--text);
   font-family:"Pretendard-ExtraBold",sans-serif;font-size:17px;padding:2px 0}
@@ -301,9 +307,9 @@ header{position:sticky;top:0;z-index:20;background:var(--bg);
    못 알아챘다 (2026-09-24 규효: "캐러셀 저장이 잘 안 보임"). */
 .hbtns button.dirty{background:var(--text);color:#0A0A0C;border-color:var(--text);
   font-family:"Pretendard-ExtraBold",sans-serif}
-@media(max-width:520px){.hbtns button{padding:5px 9px;font-size:11.5px}}
+@media(max-width:520px){.hbtns button{padding:5px 9px;font-size:13px}}
 .hbtns button{border:1px solid var(--line);border-radius:6px;padding:5px 11px;
-  font-size:13px;color:var(--muted);background:var(--panel)}
+  font-size:14px;color:var(--muted);background:var(--panel)}
 .hbtns button:hover{color:var(--text);border-color:var(--dim)}
 
 /* 본문 격자 */
@@ -323,7 +329,7 @@ main{display:grid;gap:0;padding-bottom:96px}
 .nav button{border:1px solid var(--line);border-radius:6px;width:38px;height:32px;
   color:var(--muted);font-size:16px;line-height:1}
 .nav button:hover{color:var(--text)}
-#counter{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+#counter{font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
 
 /* 레일 */
 #rail{display:flex;gap:8px;overflow-x:auto;padding:12px 14px;scrollbar-width:thin}
@@ -332,11 +338,11 @@ main{display:grid;gap:0;padding-bottom:96px}
   padding:0;border-radius:6px}
 .thumb canvas{width:76px;height:95px;border-radius:4px;border:1px solid var(--line);
   background:#141414;display:block}
-.thumb span{font-size:11px;color:var(--dim)}
+.thumb span{font-size:12.5px;color:var(--dim)}
 .thumb.on canvas{border-color:var(--text);box-shadow:0 0 0 1px var(--text)}
 .thumb.on span{color:var(--text)}
 .thumb.add{width:76px;height:95px;border:1px dashed var(--line);border-radius:4px;
-  justify-content:center;color:var(--dim);font-size:11px;gap:2px}
+  justify-content:center;color:var(--dim);font-size:12.5px;gap:2px}
 .thumb.add:hover{border-color:var(--dim);color:var(--muted)}
 .thumb.add .plus{font-size:19px;line-height:1}
 
@@ -345,15 +351,15 @@ main{display:grid;gap:0;padding-bottom:96px}
 @media(min-width:980px){.right{padding:0}}
 .sectionhead{display:flex;align-items:center;justify-content:space-between;gap:10px;
   padding:6px 0 12px;border-bottom:1px solid var(--line);margin-bottom:14px}
-#slideMeta{font-size:13px;color:var(--muted)}
+#slideMeta{font-size:14px;color:var(--muted)}
 .tools{display:flex;gap:6px}
 .tools button,.mini{border:1px solid var(--line);border-radius:6px;padding:4px 9px;
-  font-size:12px;color:var(--muted);background:var(--panel)}
+  font-size:13px;color:var(--muted);background:var(--panel)}
 .tools button:hover,.mini:hover{color:var(--text)}
 .mini.danger{color:var(--danger);border-color:#3A2A2C}
 .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
-.flabel{font-size:12px;color:var(--muted);display:flex;gap:8px;align-items:baseline}
-.flabel em{font-style:normal;font-size:11px;color:var(--dim)}
+.flabel{font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:baseline}
+.flabel em{font-style:normal;font-size:12.5px;color:var(--dim)}
 .field input,.field textarea{background:var(--panel);border:1px solid var(--line);
   border-radius:7px;color:var(--text);padding:9px 11px;width:100%;resize:vertical}
 .field textarea{line-height:1.55;min-height:70px}
@@ -362,7 +368,7 @@ main{display:grid;gap:0;padding-bottom:96px}
 @media(max-width:520px){.metarow{grid-template-columns:1fr}}
 .photorow{display:flex;gap:8px;margin:2px 0 18px;flex-wrap:wrap}
 .photorow label,.photorow button{border:1px solid var(--line);border-radius:7px;
-  padding:9px 14px;font-size:13px;background:var(--panel);color:var(--text);cursor:pointer}
+  padding:9px 14px;font-size:14px;background:var(--panel);color:var(--text);cursor:pointer}
 .photorow button{color:var(--muted)}
 #photoInput{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 
@@ -379,8 +385,8 @@ main{display:grid;gap:0;padding-bottom:96px}
 /* 글 검사 — 렌더가 겪은 일과 자주 틀리는 맞춤법 */
 .lintBox{margin-top:9px;border:1px solid rgba(255,255,255,.14);border-radius:7px;
   padding:8px 10px;display:flex;flex-direction:column;gap:4px}
-.lintHead{font-size:11px;opacity:.55;margin-bottom:2px}
-.lintItem{font-size:12px;line-height:1.5;padding-left:15px;position:relative}
+.lintHead{font-size:12.5px;opacity:.55;margin-bottom:2px}
+.lintItem{font-size:13px;line-height:1.5;padding-left:15px;position:relative}
 .lintItem::before{position:absolute;left:0;top:0}
 .lintItem.bad::before{content:"✗";color:#e06a6a}
 .lintItem.warn::before{content:"!";color:var(--amber)}
@@ -390,11 +396,11 @@ main{display:grid;gap:0;padding-bottom:96px}
 .fitBar{margin-top:8px;display:flex;flex-direction:column;gap:6px}
 .fitRow{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .fitRow button{background:none;border:1px solid var(--line,rgba(255,255,255,.22));
-  border-radius:6px;color:inherit;font:inherit;font-size:12px;padding:7px 10px;cursor:pointer}
+  border-radius:6px;color:inherit;font:inherit;font-size:13px;padding:7px 10px;cursor:pointer}
 .fitRow button.on{background:rgba(232,179,74,.16);border-color:var(--amber);color:var(--amber)}
 .fitRow button.strong{background:rgba(255,255,255,.90);color:#111;border-color:transparent;font-weight:700}
-.fitRow .fitLbl{font-size:11.5px;opacity:.6}
-.fitRow .fitNow{flex:1;text-align:right;font-size:11px;opacity:.6;
+.fitRow .fitLbl{font-size:13px;opacity:.6}
+.fitRow .fitNow{flex:1;text-align:right;font-size:12.5px;opacity:.6;
   font-family:ui-monospace,Menlo,monospace}
 /* 4:5 가 아닌 사진이 들어오면 「사진 맞추기」를 눈에 띄게. 회색 버튼 하나로는
    그런 기능이 있는 줄 몰랐다 (2026-09-21 "사이즈 조정이 아직 안 되는 것 같아"). */
@@ -405,7 +411,7 @@ main{display:grid;gap:0;padding-bottom:96px}
 @media(max-width:979px){
   body.fitting .catChips{display:flex; flex-wrap:wrap; gap:5px; margin:0 0 6px}
 .catChips button{background:none; border:1px solid var(--line); border-radius:999px;
-  color:var(--muted); font:inherit; font-size:11.5px; padding:4px 10px; cursor:pointer}
+  color:var(--muted); font:inherit; font-size:13px; padding:4px 10px; cursor:pointer}
 .catChips button.on{color:var(--amber); border-color:var(--amber)}
 .tgRow{display:flex; gap:8px; margin-top:8px; flex-wrap:wrap}
 .tgRow button{flex:1; min-width:140px}
@@ -424,20 +430,20 @@ main{display:grid;gap:0;padding-bottom:96px}
 #photoHint{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);
   display:flex;align-items:center;gap:7px;line-height:1;
   background:var(--glass,rgba(12,12,14,.78));border:1px solid var(--line);border-radius:999px;
-  padding:11px 18px;font-size:13px;color:var(--text);backdrop-filter:blur(2px)}
+  padding:11px 18px;font-size:14px;color:var(--text);backdrop-filter:blur(2px)}
 #photoHint:hover{border-color:var(--text)}
 #photoHint .pi{font-size:15px}
 #quick{position:absolute;left:8px;right:8px;bottom:8px;z-index:5;line-height:1.5;
   background:rgba(11,11,14,.96);border:1px solid var(--line);border-radius:9px;padding:10px 11px 11px}
 #quick.top{bottom:auto;top:8px}
 .qhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:7px}
-#qlabel{font-size:12px;color:var(--muted)}
-#qdone{border:1px solid var(--line);border-radius:6px;padding:3px 11px;font-size:12px;color:var(--text)}
+#qlabel{font-size:13px;color:var(--muted)}
+#qdone{border:1px solid var(--line);border-radius:6px;padding:3px 11px;font-size:13px;color:var(--text)}
 #qinput{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:7px;
   color:var(--text);padding:8px 10px;resize:none;line-height:1.55}
 #qinput.single{height:38px}
-#qhint{margin:6px 0 0;font-size:11px;color:var(--dim)}
-.tapnote{margin:0;font-size:11px;color:var(--dim);text-align:center;line-height:1.5}
+#qhint{margin:6px 0 0;font-size:12.5px;color:var(--dim)}
+.tapnote{margin:0;font-size:12.5px;color:var(--dim);text-align:center;line-height:1.5}
 .photorow button.strong{color:var(--text);font-family:"Pretendard-ExtraBold",sans-serif}
 
 /* 아래 고정 바 */
@@ -458,12 +464,12 @@ main{display:grid;gap:0;padding-bottom:96px}
 .sheet .row{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
 .sheet .row>div{flex:1;min-width:0;display:flex;flex-direction:column}
 .sheet .row strong{font-weight:400;font-family:"Pretendard-ExtraBold",sans-serif;font-size:14px}
-.sheet .row span{font-size:12px;color:var(--muted)}
+.sheet .row span{font-size:13px;color:var(--muted)}
 .sheet textarea{width:100%;height:300px;background:var(--bg);border:1px solid var(--line);
   border-radius:8px;color:var(--text);padding:11px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
-  font-size:12px;line-height:1.6}
+  font-size:13px;line-height:1.6}
 .sheet .close{margin-top:12px;border:1px solid var(--line);border-radius:7px;padding:8px 14px;
-  font-size:13px;color:var(--muted);width:100%}
+  font-size:14px;color:var(--muted);width:100%}
 #bigImg{width:100%;height:auto;border-radius:6px;display:block}
 /* 한 장씩 내려받기가 막힌 자리(텔레그램 웹뷰 등)에서는 전 장을 늘어놓고
    길게 눌러 저장하게 한다. 2026-09-24 규효: "전체 저장이 안 되어 개별로 저장해야 함" */
@@ -471,28 +477,28 @@ main{display:grid;gap:0;padding-bottom:96px}
   -webkit-overflow-scrolling:touch}
 #bigList figure{margin:0}
 #bigList img{width:100%;height:auto;border-radius:6px;display:block}
-#bigList figcaption{font-size:11.5px;color:var(--muted);margin-top:5px;display:flex;
+#bigList figcaption{font-size:13px;color:var(--muted);margin-top:5px;display:flex;
   align-items:center;gap:8px}
 #bigList figcaption button{margin-left:auto;border:1px solid var(--line);border-radius:6px;
-  background:none;color:var(--text);font:inherit;font-size:11.5px;padding:5px 9px}
+  background:none;color:var(--text);font:inherit;font-size:13px;padding:5px 9px}
 #bigOpen{margin-top:10px;width:100%;border:1px solid var(--line);border-radius:7px;
-  padding:9px 14px;font-size:13px;background:none;color:var(--text)}
-.hint{font-size:12px;color:var(--muted);margin:0 0 10px}
+  padding:9px 14px;font-size:14px;background:none;color:var(--text)}
+.hint{font-size:13px;color:var(--muted);margin:0 0 10px}
 
 /* 예시 알림 */
 #sampleBar{display:flex;align-items:center;gap:10px;margin:12px 14px 0;padding:9px 12px;
   border:1px solid var(--line);border-left:2px solid var(--amber);border-radius:6px;
-  font-size:12px;color:var(--muted);background:var(--panel)}
+  font-size:13px;color:var(--muted);background:var(--panel)}
 @media(min-width:980px){#sampleBar{margin:0 0 14px}}
-#sampleBar button{color:var(--text);text-decoration:underline;font-size:12px;flex:none}
+#sampleBar button{color:var(--text);text-decoration:underline;font-size:13px;flex:none}
 
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:88px;z-index:60;
   background:var(--raise);border:1px solid var(--line);border-radius:8px;
-  padding:9px 15px;font-size:13px;opacity:0;pointer-events:none;transition:opacity .2s;
+  padding:9px 15px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;
   max-width:88vw;text-align:center}
 #toast.on{opacity:1}
 #boot{position:fixed;inset:0;z-index:80;background:var(--bg);display:flex;
-  align-items:center;justify-content:center;color:var(--muted);font-size:13px;letter-spacing:.04em}
+  align-items:center;justify-content:center;color:var(--muted);font-size:14px;letter-spacing:.04em}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 
@@ -2534,16 +2540,18 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 20:18';
+    a.title = '판 09.29 20:53';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 20:18';
-    ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
-                        'margin-left:6px;letter-spacing:0;';
+    ver.textContent = '09.29 20:53';
+    ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
+                        'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
-    // 테두리를 두르면 제목보다 무거워진다. 글자만 남기고 흐리게.
-    var base = 'font:700 11.5px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
-               'color:var(--dim,#8A8A96);text-decoration:none;white-space:nowrap;letter-spacing:-.01em;' +
-               'padding:5px 0;border:0;background:none;flex:none;';
+    // 이 링크가 화면을 빠져나가는 유일한 길이다. 작게 두면 못 찾는다(규효 9/29).
+    // 손가락이 닿는 크기(44px)를 세로로 확보하고, 흐린 색 대신 본문색을 쓴다.
+    var base = 'font:700 16px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
+               'color:var(--text,#ECECF1);text-decoration:none;white-space:nowrap;letter-spacing:-.02em;' +
+               'display:inline-flex;align-items:center;min-height:44px;' +
+               'padding:6px 2px;border:0;background:none;flex:none;cursor:pointer;';
     // 텔레그램 데스크톱은 미니앱을 폰 크기 창으로 띄운다 — 화면이 넓어도 창은 그대로다.
     // 그래서 컴퓨터에서는 브라우저로 넘어가는 길을 한 번에 열어준다.
     var TG = window.Telegram && window.Telegram.WebApp;
@@ -2569,15 +2577,17 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
       }
     } else {
       a.style.cssText = base +
-        'position:fixed;left:12px;top:12px;z-index:9999;padding:6px 10px;' +
-        'border-radius:6px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
+        'position:fixed;left:12px;top:12px;z-index:9999;padding:8px 14px;' +
+        'border-radius:10px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
+        'border:1px solid var(--line,#20202A);box-shadow:0 6px 18px rgba(0,0,0,.28);' +
         'backdrop-filter:blur(8px);';
       document.body.appendChild(a);
       if (wide) {
         wide.style.cssText = base +
-          'position:fixed;left:122px;top:12px;z-index:9999;padding:6px 10px;' +
-          'border-radius:6px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
-          'backdrop-filter:blur(8px);cursor:pointer;';
+          'position:fixed;left:150px;top:12px;z-index:9999;padding:8px 14px;' +
+          'border-radius:10px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
+          'border:1px solid var(--line,#20202A);cursor:pointer;' +
+          'backdrop-filter:blur(8px);';
         document.body.appendChild(wide);
       }
     }
@@ -2591,8 +2601,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
 <script>
 (function () {
   var TK = 'plot.app.theme', AK = 'plot.app.accent', NK = 'plot.app.neon',
-      GK = 'plot.app.gap';
+      GK = 'plot.app.gap', FK = 'plot.app.fs';
   var GAPS = [['tight', '좁게'], ['normal', '보통'], ['wide', '넓게']];
+  var FSIZES = [['s', '작게'], ['m', '보통'], ['l', '크게'], ['xl', '더 크게']];
   var HUES = ['cyan', 'magenta', 'lime', 'orange', 'violet'];
   var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
   var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
@@ -2605,6 +2616,7 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
   function accent() { return get(AK, 'amber'); }
   function hue() { var h = get(NK, 'cyan'); return HUES.indexOf(h) < 0 ? 'cyan' : h; }
   function gap() { var g = get(GK, 'normal'); return /^(tight|normal|wide)$/.test(g) ? g : 'normal'; }
+  function fsize() { var f = get(FK, 'm'); return /^(s|m|l|xl)$/.test(f) ? f : 'm'; }
 
   function apply() {
     var r = document.documentElement, m = mode();
@@ -2612,6 +2624,7 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     r.setAttribute('data-accent', accent());
     r.setAttribute('data-neon', hue());
     r.setAttribute('data-gap', gap());
+    r.setAttribute('data-fs', fsize());
     var meta = document.querySelector('meta[name=theme-color]');
     if (meta) {
       var dark = m === 'dark' ||
@@ -2633,6 +2646,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     });
     [].forEach.call(box.querySelectorAll('[data-gap]'), function (b) {
       b.classList.toggle('on', b.getAttribute('data-gap') === gap());
+    });
+    [].forEach.call(box.querySelectorAll('[data-fs]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-fs') === fsize());
     });
   }
 
@@ -2660,11 +2676,17 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
         return '<button type="button" class="hue" data-hue="' + h +
                '" title="' + h + '"></button>';
       }).join('') + '</div>' +
+      '<b>글자 크기</b><div class="row">' + FSIZES.map(function (f) {
+        return '<button type="button" data-fs="' + f[0] + '">' + f[1] + '</button>';
+      }).join('') + '</div>' +
       '<b>여백</b><div class="row">' + GAPS.map(function (g) {
         return '<button type="button" data-gap="' + g[0] + '">' + g[1] + '</button>';
       }).join('') + '</div>';
     document.body.appendChild(box);
-    box.style.top = Math.round(btn.getBoundingClientRect().bottom + 8) + 'px';
+    // body 에 배율이 걸려 있으면 getBoundingClientRect 는 이미 곱해진 값을 준다.
+    // 상자는 그 배율 안에 놓이므로 되나눠야 제자리에 선다.
+    var z = parseFloat(getComputedStyle(document.body).zoom) || 1;
+    box.style.top = Math.round(btn.getBoundingClientRect().bottom / z + 8) + 'px';
     box.onclick = function (e) {
       var m = e.target.closest('[data-mode]'), a = e.target.closest('[data-accent]');
       if (m) { set(TK, m.getAttribute('data-mode') === 'system' ? '' : m.getAttribute('data-mode')); apply(); }
@@ -2673,6 +2695,8 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
       if (h) { set(NK, h.getAttribute('data-hue')); apply(); }
       var g = e.target.closest('[data-gap]');
       if (g) { set(GK, g.getAttribute('data-gap')); apply(); }
+      var f = e.target.closest('[data-fs]');
+      if (f) { set(FK, f.getAttribute('data-fs')); apply(); }
     };
     paint();
     setTimeout(function () { document.addEventListener('click', away); }, 0);
@@ -2720,7 +2744,7 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
       'position:fixed; left:10px; right:10px; bottom:calc(10px + env(safe-area-inset-bottom));' +
       'z-index:9997; background:var(--panel,#131318); color:var(--text,#ECECF1);' +
       'border:1px solid var(--line,#2A2A34); border-radius:12px; padding:12px 13px;' +
-      'font:13px/1.55 -apple-system,BlinkMacSystemFont,sans-serif;' +
+      'font:14px/1.55 -apple-system,BlinkMacSystemFont,sans-serif;' +
       'box-shadow:0 14px 40px rgba(0,0,0,.45)';
     var msg = inTG
       ? '홈 화면에 추가하려면 <b>사파리에서 열어야</b> 합니다 — 텔레그램 안에는 그 메뉴가 없어요.'

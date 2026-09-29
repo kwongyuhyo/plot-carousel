@@ -3,12 +3,120 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PLOT 제작</title>
-<meta name="description" content="PLOT 콘텐츠 제작 도구">
+<title>PLOT 성과 — PLOT</title>
+<meta name="description" content="주간 도달·팔로워·결별 성과">
 <meta name="robots" content="noindex, nofollow">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0A0C; --panel:#131318; --raise:#1B1B22;
+  --line:#20202A; --hair:#17171E;
+  --text:#ECECF1; --muted:#8A8A96; --dim:#565663;
+  --amber:#E8B34A; --pick:#6FBF8B; --skip:#4A4A57; --bad:#E0786A;
+  --u:8px;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE;
+  --line:#DCD8CE; --hair:#E6E3DA;
+  --text:#1A1A1F; --muted:#5E5E6B; --dim:#746E7C;
+  --amber:#7A6B10; --pick:#2E7D51; --skip:#8C8C99; --bad:#A63A2B;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE;
+    --line:#DCD8CE; --hair:#E6E3DA;
+    --text:#1A1A1F; --muted:#5E5E6B; --dim:#746E7C;
+    --amber:#7A6B10; --pick:#2E7D51; --skip:#8C8C99; --bad:#A63A2B;
+    color-scheme:light;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); min-height:100dvh;
+  font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:15px; line-height:1.6;
+  -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased;
+  padding:calc(var(--u)*4 + env(safe-area-inset-top)) 22px
+          calc(var(--u)*10 + env(safe-area-inset-bottom));
+}
+[hidden]{display:none!important}
+.wrap{max-width:620px; margin:0 auto}
+.lat{font-family:var(--mono); letter-spacing:.14em; text-transform:uppercase}
+
+header{display:flex; align-items:center; gap:14px; padding-bottom:calc(var(--u)*2)}
+header .rule{flex:1; height:1px; background:var(--line)}
+header .kicker{flex:none; font-size:12px; font-weight:700; color:var(--dim)}
+.hbtns{display:flex; gap:8px; align-items:center; flex:none}
+
+h1{font-size:29px; line-height:1.15; letter-spacing:-.03em; margin:0 0 6px}
+.stamp{font-family:var(--mono); font-size:12px; color:var(--dim);
+  letter-spacing:.02em; margin-bottom:calc(var(--u)*3)}
+
+h2{font-size:14px; font-weight:700; color:var(--muted); margin:0 0 10px;
+  letter-spacing:-.01em}
+section{border-top:1px solid var(--line); padding:calc(var(--u)*3) 0}
+
+/* ── 요약 세 칸 ── */
+.sum{display:grid; grid-template-columns:repeat(3,1fr); gap:9px; margin-bottom:calc(var(--u)*2)}
+.sum .box{background:var(--panel); border:1px solid var(--line); border-radius:12px;
+  padding:13px 12px}
+.sum .lab{font-size:12px; color:var(--dim); font-weight:600; margin-bottom:5px}
+.sum .big{font-size:23px; font-weight:800; letter-spacing:-.03em; line-height:1.1}
+.sum .delta{font-size:13px; font-weight:700; margin-top:3px}
+.sum .up{color:var(--pick)} .sum .down{color:var(--bad)} .sum .flat{color:var(--dim)}
+
+/* ── 주간 막대 ── */
+.wk{display:flex; align-items:flex-end; gap:7px; height:132px; margin-bottom:10px}
+.wk .col{flex:1; display:flex; flex-direction:column; justify-content:flex-end;
+  align-items:center; gap:5px; min-width:0}
+.wk .bar{width:100%; background:var(--amber); border-radius:4px 4px 0 0; min-height:3px;
+  opacity:.9}
+.wk .col.last .bar{opacity:1; box-shadow:0 0 0 1px var(--amber)}
+.wk .tag{font-family:var(--mono); font-size:11px; color:var(--dim); white-space:nowrap}
+.wk .val{font-size:12px; font-weight:700; color:var(--muted); white-space:nowrap}
+
+/* ── 줄 목록 ── */
+.rows{display:flex; flex-direction:column; gap:1px}
+.ln{display:flex; align-items:center; gap:10px; padding:10px 0;
+  border-bottom:1px solid var(--hair)}
+.ln:last-child{border-bottom:0}
+.ln .nm{flex:1; min-width:0; font-size:14px; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap}
+.ln .nm a{color:inherit; text-decoration:none}
+.ln .nm a:hover{color:var(--amber)}
+.ln b{flex:none; font-size:14px; font-weight:800; letter-spacing:-.02em}
+.ln .sub{flex:none; font-size:12px; color:var(--dim); font-family:var(--mono)}
+
+/* 배수 막대 (결별 성과) */
+.mb{flex:none; width:92px; height:7px; background:var(--raise); border-radius:4px;
+  position:relative; overflow:hidden}
+.mb i{position:absolute; left:0; top:0; bottom:0; background:var(--amber); border-radius:4px}
+
+/* 두 줄 비교 막대 (발행 대비 도달) */
+.cmp .ln{flex-wrap:wrap}
+.cmp .two{flex:1 0 100%; display:flex; flex-direction:column; gap:4px; margin-top:6px}
+.cmp .t{display:flex; align-items:center; gap:8px}
+.cmp .t span{flex:none; width:44px; font-size:11.5px; color:var(--dim)}
+.cmp .t i{height:8px; border-radius:4px; display:block; min-width:2px}
+.cmp .t .pub{background:var(--skip)}
+.cmp .t .rch{background:var(--amber)}
+.cmp .t em{font-style:normal; font-size:12px; color:var(--muted); font-weight:700}
+.gapUp{color:var(--pick); font-weight:800}
+.gapDn{color:var(--bad); font-weight:800}
+
+.note{font-size:13px; color:var(--dim); line-height:1.7; margin:10px 0 0}
+.empty{background:var(--panel); border:1px solid var(--line); border-radius:12px;
+  padding:22px 18px; color:var(--muted); font-size:14px; line-height:1.7}
+.err{background:var(--panel); border:1px solid var(--bad); border-radius:10px;
+  padding:12px 14px; color:var(--bad); font-size:13px; margin-bottom:14px}
+</style>
+
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0A0A0C">
 <link rel="icon" href="icon-192.png">
@@ -17,115 +125,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="PLOT">
 <meta name="mobile-web-app-capable" content="yes">
-<style>
-/* 잡지 목차의 문법으로 짠다.
-   큰 활자는 '제작' 같은 껍데기 낱말이 아니라 실제 항목 이름이 갖는다.
-   구조는 번호 · 괘선 · 여백이 만들고, 색은 흑백에 앰버 하나.
-   8px 배수로 수직 리듬을 맞춘다. */
-:root{
-  --bg:#0A0A0C; --panel:#131318; --raise:#1B1B22;
-  --line:#20202A; --hair:#17171E;
-  --text:#ECECF1; --muted:#8A8A96; --dim:#565663;
-  --amber:#E8B34A;
-  --u:8px;
-  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-  background:var(--bg); color:var(--text); min-height:100dvh;
-  font-family:Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  font-size:15px; line-height:1.55;
-  -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased;
-  padding:calc(var(--u)*4 + env(safe-area-inset-top)) 22px
-          calc(var(--u)*5 + env(safe-area-inset-bottom));
-}
-/* 종이 느낌의 아주 옅은 결. 3.5% 라 '보이지는 않고 느껴지는' 정도. */
-body::after{
-  content:''; position:fixed; inset:0; pointer-events:none; z-index:99; opacity:.035;
-  background-size:170px 170px;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='170' height='170'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-[hidden]{display:none!important}
-.wrap{max-width:560px; margin:0 auto; position:relative}
-
-/* ── 제호: 마크 · 괘선 · 작은 대문자 ── */
-.masthead{display:flex; align-items:center; gap:14px; padding-bottom:calc(var(--u)*2)}
-.masthead .mark{width:40px; height:25px; flex:none;
-  background-size:contain; background-repeat:no-repeat; opacity:.9}
-.masthead .rule{flex:1; height:1px; background:var(--line)}
-/* 테마 버튼이 갈 자리. 없으면 화면 오른쪽 위에 떠서 제호를 덮는다. */
-.masthead .hbtns{flex:none; display:flex; gap:8px; align-items:center}
-/* 넓은 자간은 라틴에만 맞다. 한글에 .18em 을 주면 낱자가 흩어져 보인다.
-   그래서 마이크로 활자를 둘로 나눈다 — .lat 는 넓게, 한글은 촘촘하게. */
-.masthead .kicker{
-  flex:none; font-size:12px; font-weight:700; color:var(--dim);
-  letter-spacing:.02em;
-}
-.lat{font-family:var(--mono); letter-spacing:.14em; text-transform:uppercase}
-
-/* ── 목차 ── */
-.index{border-top:1px solid var(--line)}
-.row{
-  display:block; text-decoration:none; color:inherit; position:relative;
-  border-bottom:1px solid var(--hair);
-  padding:calc(var(--u)*3.5) 0 calc(var(--u)*3.5);
-  transition:opacity .2s ease;
-}
-.num{
-  display:flex; align-items:center; gap:10px;
-  font-family:var(--mono); font-size:12px; font-weight:500;
-  color:var(--dim); letter-spacing:.1em;
-}
-.num i{flex:0 0 22px; height:1px; background:var(--line); font-style:normal;
-  transition:flex-basis .24s ease, background .2s ease}
-.row:hover .num i{flex-basis:42px; background:var(--amber)}
-.row h2{
-  margin:calc(var(--u)*1.5) 0 0; font-size:29px; font-weight:800;
-  letter-spacing:-.045em; line-height:1.12;
-  transition:color .2s ease;
-}
-.row p{
-  margin:calc(var(--u)*1.25) 0 0; color:var(--muted);
-  font-size:13.5px; line-height:1.6; letter-spacing:-.012em;
-  max-width:40ch;
-}
-.row .meta{
-  margin-top:calc(var(--u)*2); font-size:12px; font-weight:700; color:var(--dim);
-  letter-spacing:.015em;
-}
-.row .meta.warn{color:var(--amber)}
-.row:active{opacity:.6}
-@media(hover:hover){ .row:hover h2{color:#fff} }
-
-/* ── 아래 동작 ── */
-.acts{display:flex; flex-direction:column; gap:8px}
-.acts:has(.act:not([hidden])){margin-top:calc(var(--u)*4)}
-.act{
-  width:100%; text-align:left; cursor:pointer; position:relative;
-  background:none; border:0; border-bottom:1px solid var(--hair);
-  color:var(--text); font:inherit; font-size:14px; font-weight:700;
-  letter-spacing:-.015em; padding:calc(var(--u)*1.75) 0;
-  transition:border-color .2s ease;
-}
-.act::after{content:'→'; position:absolute; right:2px; top:calc(var(--u)*1.6);
-  color:var(--dim); font-size:13px; transition:transform .2s ease}
-.act:hover{border-color:var(--line)}
-.act:hover::after{transform:translateX(3px)}
-.act[disabled]{cursor:default}
-.act[disabled]::after{content:''}
-.act small{display:block; margin-top:4px; color:var(--dim); font-size:12.5px;
-  font-weight:400; letter-spacing:-.005em}
-.act b{color:var(--muted); font-weight:700}
-
-/* ── 꼬리 ── */
-.foot{
-  margin-top:calc(var(--u)*4); color:var(--dim); font-size:13px;
-  line-height:1.75; letter-spacing:-.005em;
-}
-.foot b{color:var(--muted); font-weight:600}
-.foot code{font-family:var(--mono); font-size:12.5px; color:var(--muted)}
-</style>
 
 <style id="plotTheme">
 :root{ --accent:#E8B34A; --glass:rgba(18,19,26,.93); }
@@ -388,160 +387,240 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
 <body>
 <div class="wrap">
 
-  <header class="masthead">
-    <div class="mark" id="mark"></div>
+  <header>
+    <div class="hbtns" id="hbtns"></div>
     <div class="rule"></div>
-    <div class="kicker">제작 도구</div>
-    <div class="hbtns"></div>
+    <div class="kicker lat">Performance</div>
   </header>
 
-  <nav class="index">
-    <a class="row" href="carousel.html">
-      <div class="num">01<i></i><span class="lat">Carousel</span></div>
-      <h2>캐러셀 스튜디오</h2>
-      <p>제목·본문·사진을 넣으면 화면에서 바로 슬라이드가 됩니다.
-         봇과 같은 렌더 규칙.</p>
-      <div class="meta" id="cMeta"></div>
-    </a>
-    <a class="row" href="shorts.html">
-      <div class="num">02<i></i><span class="lat">Shorts</span></div>
-      <h2>숏폼 양식</h2>
-      <p>곡·아티스트·구간을 채우면 글자 배치가 바로 보입니다.
-         다 쓰면 제작 대기열로.</p>
-      <div class="meta" id="sMeta"></div>
-    </a>
-    <a class="row" href="sources.html">
-      <div class="num">03<i></i><span class="lat">Sources</span></div>
-      <h2>오늘의 소재</h2>
-      <p>지정한 매거진에서 평소보다 크게 터진 음악 소식.
-         고르면 제작으로 넘어갑니다.</p>
-      <div class="meta" id="mMeta"></div>
-    </a>
-    <a class="row" href="perf.html">
-      <div class="num">04<i></i><span class="lat">Performance</span></div>
-      <h2>PLOT 성과</h2>
-      <p>주간 도달과 팔로워, 결별로 본 성과.
-         무엇을 더 만들지 정할 때 봅니다.</p>
-      <div class="meta" id="pMeta"></div>
-    </a>
-  </nav>
+  <h1>PLOT 성과</h1>
+  <div class="stamp" id="stamp">불러오는 중…</div>
 
-  <div class="acts">
-    <button class="act" id="openWide" hidden></button>
-    <button class="act" id="install" hidden></button>
-  </div>
+  <div id="err" class="err" hidden></div>
+  <div id="body"></div>
 
-  <div class="foot" id="foot"></div>
 </div>
 
 <script>
-const LOGO = "data:image/png;base64,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";
-
-if ('serviceWorker' in navigator) {
-  addEventListener('load', function () {
-    // updateViaCache:'none' — 워커 파일 자체가 HTTP 캐시에 걸리지 않게.
-    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
-      .then(function (r) { r.update(); })
-      .catch(function () {});
-  });
-}
-
 (function () {
-  document.getElementById('mark').style.backgroundImage = 'url(' + LOGO + ')';
+  'use strict';
+  var P = null;
 
-  const TG = window.Telegram && window.Telegram.WebApp;
-  const inTG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
-
-  const cMeta = document.getElementById('cMeta');
-  const sMeta = document.getElementById('sMeta');
-  const wide  = document.getElementById('openWide');
-  const foot  = document.getElementById('foot');
-
-  if (inTG) {
-    TG.ready(); TG.expand();
-    try { TG.setHeaderColor('#0A0A0C'); TG.setBackgroundColor('#0A0A0C'); } catch (e) {}
-
-    cMeta.className = 'meta warn';
-    cMeta.textContent = '저장은 브라우저에서';
-    sMeta.textContent = '여기서 대기열까지';
-
-    wide.hidden = false;
-    wide.innerHTML = '브라우저에서 열기' +
-      '<small>텔레그램 창은 폰 크기로 고정됩니다. 컴퓨터에서는 이쪽이 넓어요.</small>';
-    wide.onclick = () => {
-      try { TG.openLink(location.href); } catch (e) { window.open(location.href, '_blank'); }
-    };
-
-    foot.innerHTML =
-      '진행 상황은 채팅에서 <code>/queue</code>. ' +
-      '완성본은 만들어지는 대로 <b>폰으로 · 레이어만 · 리프레임 수정</b> 버튼과 함께 도착합니다.';
-  } else {
-    cMeta.textContent = '브라우저에서 완결 · 오프라인';
-    sMeta.className = 'meta warn';
-    sMeta.textContent = '제작까지 가려면 텔레그램에서';
-
-    foot.innerHTML =
-      '숏폼 양식은 봇에 작업을 거는 것이 목적이라, 일반 브라우저에서는 ' +
-      '<b>양식 텍스트 복사</b>까지만 됩니다. 채팅 하단 키보드의 ' +
-      '<b>숏폼 양식</b> 버튼으로 열면 쓴 내용이 곧장 제작 대기열로 넘어갑니다.';
-    setupInstall();
-  }
-
-  /* 목차 줄에 지금 숫자를 한 줄씩 얹는다 — 들어가 보기 전에 뭐가 있는지 알게.
-     둘 다 곁다리라, 못 받아도 목차는 그대로 뜬다. */
-  fetch('./performance.json', { cache: 'no-cache' })
-    .then((r) => (r.ok ? r.json() : null))
-    .then((d) => {
-      if (!d) return;
-      const ws = (d.weeks || []).filter((w) => (w.reach || 0) > 0);
-      const w = ws[ws.length - 1];
-      if (!w) return;
-      const dl = w.followers_delta;
-      document.getElementById('pMeta').textContent =
-        '팔로워 ' + (w.followers || 0).toLocaleString('ko-KR') +
-        (dl ? (dl > 0 ? ' (+' + dl + ')' : ' (' + dl + ')') : '') +
-        ' · 이번 주 도달 ' + (w.reach || 0).toLocaleString('ko-KR');
-    })
-    .catch(() => {});
-
-  fetch('./magazines.json', { cache: 'no-cache' })
-    .then((r) => (r.ok ? r.json() : null))
-    .then((d) => {
-      if (!d) return;
-      const n = (d.candidates || []).length;
-      if (n) document.getElementById('mMeta').textContent =
-        '오늘 후보 ' + n + '건' + (d.generated_at ? ' · ' + d.generated_at : '');
-    })
-    .catch(() => {});
-
-  function setupInstall() {
-    const btn = document.getElementById('install');
-    if (window.matchMedia('(display-mode: standalone)').matches ||
-        window.navigator.standalone === true) return;
-
-    let prompt = null;
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault(); prompt = e;
-      btn.hidden = false;
-      btn.innerHTML = '앱으로 설치' +
-        '<small>독·홈 화면에 아이콘이 생기고 자체 창으로 열립니다.</small>';
-      btn.onclick = async () => {
-        btn.disabled = true;
-        try { await prompt.prompt(); } catch (_) {}
-        prompt = null; btn.hidden = true;
-      };
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
-
-    const ua = navigator.userAgent;
-    if (/iPad|iPhone|iPod/.test(ua) && !/CriOS|FxiOS|EdgiOS/.test(ua)) {
-      btn.hidden = false; btn.disabled = true;
-      btn.innerHTML = '앱으로 설치하려면' +
-        '<small>아래 공유 버튼 → <b>홈 화면에 추가</b></small>';
-    }
   }
+  function num(n) {
+    n = Number(n) || 0;
+    if (n >= 10000) return (n / 10000).toFixed(n >= 100000 ? 0 : 1).replace(/\.0$/, '') + '만';
+    return n.toLocaleString('ko-KR');
+  }
+  function pct(x) { return (Math.round(x * 1000) / 10) + '%'; }
+
+  /* 주간 — 값이 0 인 주가 섞여 있다(수집 전). 그건 막대에서 뺀다. */
+  function weeks() {
+    return (P.weeks || []).filter(function (w) { return (w.reach || 0) > 0 || (w.posts || 0) > 0; });
+  }
+
+  function sumBox() {
+    var ws = weeks();
+    if (!ws.length) return '';
+    var last = ws[ws.length - 1];
+    var d = last.followers_delta;
+    var cls = d == null ? 'flat' : (d > 0 ? 'up' : (d < 0 ? 'down' : 'flat'));
+    var dtx = d == null ? '지난주 기록 없음' : (d > 0 ? '+' + num(d) : (d < 0 ? num(d) : '변화 없음'));
+    return '<div class="sum">' +
+      '<div class="box"><div class="lab">이번 주 도달</div>' +
+        '<div class="big">' + num(last.reach) + '</div></div>' +
+      '<div class="box"><div class="lab">팔로워</div>' +
+        '<div class="big">' + num(last.followers) + '</div>' +
+        '<div class="delta ' + cls + '">' + esc(dtx) + '</div></div>' +
+      '<div class="box"><div class="lab">발행</div>' +
+        '<div class="big">' + (last.posts || 0) + '</div>' +
+        '<div class="delta flat">건 · ' + esc((last.week || '').replace(/^\d+-/, '')) + '</div></div>' +
+      '</div>';
+  }
+
+  function weekBars() {
+    var ws = weeks().slice(-8);
+    if (ws.length < 2) return '';
+    var hi = Math.max.apply(null, ws.map(function (w) { return w.reach || 0; })) || 1;
+    var cols = ws.map(function (w, i) {
+      var h = Math.max(3, Math.round(((w.reach || 0) / hi) * 96));
+      return '<div class="col' + (i === ws.length - 1 ? ' last' : '') + '">' +
+        '<div class="val">' + num(w.reach) + '</div>' +
+        '<div class="bar" style="height:' + h + 'px"></div>' +
+        '<div class="tag">' + esc((w.week || '').replace(/^\d+-W/, 'W')) + '</div></div>';
+    }).join('');
+    return '<section><h2>주간 도달</h2><div class="wk">' + cols + '</div>' +
+      '<p class="note">막대는 그 주에 올린 글이 닿은 사람 수다. 발행 건수가 다르면 ' +
+      '높낮이만 보고 잘했다 못했다 하기 어렵다 — 아래 결별 성과가 그걸 보정한 값이다.</p></section>';
+  }
+
+  function kindBars() {
+    var solid = (P.kinds || []).filter(function (k) { return k.stable; });
+    var shaky = (P.kinds || []).filter(function (k) { return !k.stable; });
+    if (!solid.length && !shaky.length) return '';
+    var hi = Math.max.apply(null, solid.map(function (k) { return k.multiple || 0; })) || 1;
+    var rows = solid.map(function (k) {
+      var w = Math.round(((k.multiple || 0) / hi) * 100);
+      return '<div class="ln"><span class="nm">' + esc(k.kind) + '</span>' +
+        '<span class="sub">' + k.n + '건</span>' +
+        '<span class="mb"><i style="width:' + w + '%"></i></span>' +
+        '<b>' + k.multiple + '배</b></div>';
+    }).join('');
+    return '<section><h2>결별 성과 — 주차 보정</h2><div class="rows">' + rows + '</div>' +
+      '<p class="note">그 주의 중앙값을 1로 놓고 잰 값이다. 3배면 같은 주 다른 글보다 ' +
+      '세 배 멀리 갔다는 뜻. 한 주를 빼도 순서가 안 바뀌는 결만 실었다.' +
+      (shaky.length ? ' 아직 흔들려서 뺀 결: ' +
+        shaky.map(function (k) { return esc(k.kind); }).join(', ') + '.' : '') +
+      '</p></section>';
+  }
+
+  /* 발행 대비 도달 — 손이 많이 간 결과 실제로 멀리 간 결이 같은지 본다.
+     이게 어긋나 있으면 제작 배분을 바꿔야 한다는 신호다. */
+  function balance() {
+    var pub = P.published || [];
+    if (pub.length < 10) return '';
+    var by = {};
+    pub.forEach(function (p) {
+      var k = p.kind || '기타';
+      if (!by[k]) by[k] = { n: 0, reach: 0 };
+      by[k].n += 1; by[k].reach += (p.reach || 0);
+    });
+    var tn = pub.length;
+    var tr = pub.reduce(function (a, p) { return a + (p.reach || 0); }, 0) || 1;
+    var ks = Object.keys(by).sort(function (a, b) { return by[b].reach - by[a].reach; });
+    var rows = ks.map(function (k) {
+      var o = by[k], pn = o.n / tn, pr = o.reach / tr;
+      var gap = pr - pn;
+      var mark = Math.abs(gap) < 0.04 ? ''
+        : (gap > 0 ? '<span class="gapUp">더 써도 된다</span>'
+                   : '<span class="gapDn">줄여도 된다</span>');
+      return '<div class="ln"><span class="nm">' + esc(k) + '</span>' + mark +
+        '<div class="two">' +
+          '<div class="t"><span>발행</span><i class="pub" style="width:' +
+            Math.max(2, Math.round(pn * 100)) + '%"></i><em>' + pct(pn) + ' · ' + o.n + '건</em></div>' +
+          '<div class="t"><span>도달</span><i class="rch" style="width:' +
+            Math.max(2, Math.round(pr * 100)) + '%"></i><em>' + pct(pr) + '</em></div>' +
+        '</div></div>';
+    }).join('');
+    return '<section class="cmp"><h2>손이 간 곳과 멀리 간 곳</h2><div class="rows">' + rows + '</div>' +
+      '<p class="note">위 막대는 최근 ' + tn + '건 중 그 결이 차지한 비율, 아래는 그 결이 가져온 ' +
+      '도달의 비율이다. 아래가 위보다 길면 적게 만들고도 멀리 간 결 — 더 만들 자리가 있다.</p></section>';
+  }
+
+  function topPosts() {
+    var top = (P.top || []).slice(0, 10);
+    if (!top.length) return '';
+    var rows = top.map(function (t) {
+      var head = (t.head || '').replace(/\n+/g, ' ').trim().slice(0, 42);
+      var nm = t.permalink
+        ? '<a href="' + esc(t.permalink) + '" target="_blank" rel="noopener">' + esc(head) + '</a>'
+        : esc(head);
+      return '<div class="ln"><span class="nm">' + nm + '</span>' +
+        '<span class="sub">' + esc(t.kind || '') + '</span>' +
+        '<b>' + num(t.reach) + '</b></div>';
+    }).join('');
+    return '<section><h2>가장 멀리 간 글</h2><div class="rows">' + rows + '</div></section>';
+  }
+
+  function runs() {
+    if (!P.runs) return '';
+    var rows = Object.keys(P.runs).map(function (k) {
+      return '<div class="ln"><span class="nm">' + esc(k) + '</span>' +
+        '<span class="sub">' + esc(P.runs[k]) + '</span></div>';
+    }).join('');
+    return '<section><h2>마지막 실행</h2><div class="rows">' + rows + '</div>' +
+      (P.note ? '<p class="note">' + esc(P.note) + '</p>' : '') + '</section>';
+  }
+
+  function render() {
+    var host = document.getElementById('body');
+    document.getElementById('stamp').textContent = (P.generated_at || '') + ' 기준';
+    var out = sumBox() + weekBars() + kindBars() + balance() + topPosts() + runs();
+    host.innerHTML = out || '<div class="empty">아직 실을 숫자가 없습니다.</div>';
+  }
+
+  fetch('./performance.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { P = j; render(); })
+    .catch(function (e) {
+      document.getElementById('stamp').textContent = '';
+      document.getElementById('body').innerHTML =
+        '<div class="empty">성과 데이터가 아직 배포되지 않았습니다.<br>' +
+        '맥에서 스캔이 한 번 더 돌면 여기에 올라옵니다.</div>';
+    });
 })();
 </script>
-<div style="text-align:center;font:500 12.5px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 09.29 20:53</div>
+</body>
+</html>
+
+<script>
+(function () {
+  function put() {
+    var a = document.createElement('a');
+    a.href = './';
+    a.textContent = '← PLOT 제작';
+    a.setAttribute('aria-label', 'PLOT 제작 홈으로');
+    a.title = '판 09.29 20:53';
+    var ver = document.createElement('span');
+    ver.textContent = '09.29 20:53';
+    ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
+                        'margin-left:7px;letter-spacing:0;';
+    a.appendChild(ver);
+    // 이 링크가 화면을 빠져나가는 유일한 길이다. 작게 두면 못 찾는다(규효 9/29).
+    // 손가락이 닿는 크기(44px)를 세로로 확보하고, 흐린 색 대신 본문색을 쓴다.
+    var base = 'font:700 16px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
+               'color:var(--text,#ECECF1);text-decoration:none;white-space:nowrap;letter-spacing:-.02em;' +
+               'display:inline-flex;align-items:center;min-height:44px;' +
+               'padding:6px 2px;border:0;background:none;flex:none;cursor:pointer;';
+    // 텔레그램 데스크톱은 미니앱을 폰 크기 창으로 띄운다 — 화면이 넓어도 창은 그대로다.
+    // 그래서 컴퓨터에서는 브라우저로 넘어가는 길을 한 번에 열어준다.
+    var TG = window.Telegram && window.Telegram.WebApp;
+    var inTG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
+    var wide = null;
+    if (inTG) {
+      wide = document.createElement('button');
+      wide.type = 'button';
+      wide.textContent = '🖥 브라우저에서';
+      wide.title = '넓은 화면에서 열기';
+      wide.onclick = function () {
+        try { TG.openLink(location.href); } catch (e) { window.open(location.href, '_blank'); }
+      };
+    }
+
+    var h = document.querySelector('header');
+    if (h) {
+      a.style.cssText = base + 'margin-right:14px;';
+      h.insertBefore(a, h.firstChild);
+      if (wide) {
+        wide.style.cssText = base + 'margin-right:14px;cursor:pointer;';
+        h.insertBefore(wide, a.nextSibling);
+      }
+    } else {
+      a.style.cssText = base +
+        'position:fixed;left:12px;top:12px;z-index:9999;padding:8px 14px;' +
+        'border-radius:10px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
+        'border:1px solid var(--line,#20202A);box-shadow:0 6px 18px rgba(0,0,0,.28);' +
+        'backdrop-filter:blur(8px);';
+      document.body.appendChild(a);
+      if (wide) {
+        wide.style.cssText = base +
+          'position:fixed;left:150px;top:12px;z-index:9999;padding:8px 14px;' +
+          'border-radius:10px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
+          'border:1px solid var(--line,#20202A);cursor:pointer;' +
+          'backdrop-filter:blur(8px);';
+        document.body.appendChild(wide);
+      }
+    }
+  }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', put);
+  else put();
+})();
+</script>
 
 <script>
 (function () {
@@ -719,5 +798,15 @@ if ('serviceWorker' in navigator) {
   else show();
 })();
 </script>
-</body>
-</html>
+
+<script>
+if ('serviceWorker' in navigator) {
+  addEventListener('load', function () {
+    // updateViaCache:'none' — 이게 없으면 sw.js 자체가 HTTP 캐시에 걸린다.
+    // 캐시 규칙을 고친 새 워커가 옛 캐시 때문에 안 실리는, 웃기지만 실제로 겪은 일.
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+      .then(function (r) { r.update(); })
+      .catch(function () {});
+  });
+}
+</script>
