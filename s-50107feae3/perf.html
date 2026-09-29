@@ -70,15 +70,22 @@ section{border-top:1px solid var(--line); padding:calc(var(--u)*3) 0}
 .sum .big{font-size:23px; font-weight:800; letter-spacing:-.03em; line-height:1.1}
 .sum .delta{font-size:13px; font-weight:700; margin-top:3px}
 .sum .up{color:var(--pick)} .sum .down{color:var(--bad)} .sum .flat{color:var(--dim)}
+/* 요약 바로 밑 — '이번 주' 가 정확히 며칠인지. 줄임말만 있으면 아무도 모른다. */
+.wkline{font-size:13px; color:var(--dim); margin:-4px 0 calc(var(--u)*1)}
+.stale{font-size:13px; line-height:1.6; color:var(--bad); border:1px solid var(--bad);
+  border-radius:9px; padding:9px 11px; margin:8px 0 calc(var(--u)*1)}
 
 /* ── 주간 막대 ── */
-.wk{display:flex; align-items:flex-end; gap:7px; height:132px; margin-bottom:10px}
+.wk{display:flex; align-items:flex-end; gap:9px; height:152px; margin-bottom:10px}
 .wk .col{flex:1; display:flex; flex-direction:column; justify-content:flex-end;
   align-items:center; gap:5px; min-width:0}
 .wk .bar{width:100%; background:var(--amber); border-radius:4px 4px 0 0; min-height:3px;
   opacity:.9}
 .wk .col.last .bar{opacity:1; box-shadow:0 0 0 1px var(--amber)}
-.wk .tag{font-family:var(--mono); font-size:11px; color:var(--dim); white-space:nowrap}
+.wk .tag{font-size:12px; font-weight:700; color:var(--muted); white-space:nowrap}
+.wk .tag2{font-family:var(--mono); font-size:11px; color:var(--dim); white-space:nowrap;
+  margin-top:-3px}
+.wk .col.last .tag{color:var(--text)}
 .wk .val{font-size:12px; font-weight:700; color:var(--muted); white-space:nowrap}
 
 /* ── 줄 목록 ── */
@@ -418,6 +425,56 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function pct(x) { return (Math.round(x * 1000) / 10) + '%'; }
 
+  /* ── 주 이름 ──────────────────────────────────────────────────────────
+     성과 데이터는 ISO 주(2026-W38)로 쌓인다. 기계끼리는 그게 제일 안 헷갈리지만
+     사람은 그게 며칠인지 모른다. 화면에서만 사람 말로 바꾼다 — 데이터는 그대로 둔다.
+
+     '몇 주차' 는 그 주의 목요일이 드는 달을 기준으로 센다(ISO 와 같은 규칙).
+     목요일끼리는 정확히 7일 간격이라, 그 날짜를 7로 나눠 올리면 곧 몇째 주다.
+     한 주가 달을 걸치면(8월 31일~9월 6일) 목요일이 있는 달로 간다 — 그래야
+     '9월 1주' 가 9월에 한 번만 나온다. */
+  function weekMon(tag) {
+    var m = /^(\d{4})-W(\d{1,2})$/.exec(String(tag || ''));
+    if (!m) return null;
+    var y = +m[1], w = +m[2];
+    var jan4 = new Date(Date.UTC(y, 0, 4));          // 1월 4일은 언제나 1주차다
+    var dow = (jan4.getUTCDay() + 6) % 7;            // 월=0
+    return new Date(jan4.getTime() - dow * 864e5 + (w - 1) * 7 * 864e5);
+  }
+  function nowWeekTag(d) {
+    d = d || new Date();
+    var u = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+    var dow = (u.getUTCDay() + 6) % 7;                 // 월=0
+    var thu = new Date(u.getTime() + (3 - dow) * 864e5);   // 그 주의 목요일
+    var y = thu.getUTCFullYear();
+    var jan4 = new Date(Date.UTC(y, 0, 4));
+    var j = (jan4.getUTCDay() + 6) % 7;
+    var wk1 = new Date(jan4.getTime() - j * 864e5);
+    var n = Math.round((thu - wk1) / (7 * 864e5)) + 1;
+    return y + '-W' + (n < 10 ? '0' + n : String(n));
+  }
+  function weekGap(a, b) {
+    var x = weekMon(a), y = weekMon(b);
+    return (x && y) ? Math.round((y - x) / (7 * 864e5)) : 0;
+  }
+
+  function weekName(tag) {
+    var mon = weekMon(tag);
+    if (!mon) return { short: String(tag || ''), days: '', full: String(tag || '') };
+    var sun = new Date(mon.getTime() + 6 * 864e5);
+    var thu = new Date(mon.getTime() + 3 * 864e5);
+    var Y = thu.getUTCFullYear(), M = thu.getUTCMonth() + 1;
+    var nth = Math.ceil(thu.getUTCDate() / 7);
+    var m1 = mon.getUTCMonth() + 1, d1 = mon.getUTCDate();
+    var m2 = sun.getUTCMonth() + 1, d2 = sun.getUTCDate();
+    return {
+      short: M + '월 ' + nth + '주',
+      days: m1 === m2 ? (m1 + '.' + d1 + '~' + d2) : (m1 + '.' + d1 + '~' + m2 + '.' + d2),
+      full: Y + '년 ' + M + '월 ' + nth + '주차 (' + m1 + '월 ' + d1 + '일~' +
+            m2 + '월 ' + d2 + '일)',
+    };
+  }
+
   /* 주간 — 값이 0 인 주가 섞여 있다(수집 전). 그건 막대에서 뺀다. */
   function weeks() {
     return (P.weeks || []).filter(function (w) { return (w.reach || 0) > 0 || (w.posts || 0) > 0; });
@@ -427,31 +484,44 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var ws = weeks();
     if (!ws.length) return '';
     var last = ws[ws.length - 1];
+    var cur = nowWeekTag();
+    var gap = weekGap(last.week, cur);              // 몇 주가 비었나
     var d = last.followers_delta;
     var cls = d == null ? 'flat' : (d > 0 ? 'up' : (d < 0 ? 'down' : 'flat'));
     var dtx = d == null ? '지난주 기록 없음' : (d > 0 ? '+' + num(d) : (d < 0 ? num(d) : '변화 없음'));
     return '<div class="sum">' +
-      '<div class="box"><div class="lab">이번 주 도달</div>' +
+      '<div class="box"><div class="lab">' + (gap > 0 ? '마지막 주 도달' : '이번 주 도달') + '</div>' +
         '<div class="big">' + num(last.reach) + '</div></div>' +
       '<div class="box"><div class="lab">팔로워</div>' +
         '<div class="big">' + num(last.followers) + '</div>' +
         '<div class="delta ' + cls + '">' + esc(dtx) + '</div></div>' +
       '<div class="box"><div class="lab">발행</div>' +
         '<div class="big">' + (last.posts || 0) + '</div>' +
-        '<div class="delta flat">건 · ' + esc((last.week || '').replace(/^\d+-/, '')) + '</div></div>' +
-      '</div>';
+        '<div class="delta flat">건 · ' + esc(weekName(last.week).short) + '</div></div>' +
+      '</div>' +
+      '<div class="wkline">' + esc(weekName(last.week).full) + '</div>' +
+      /* 주간 스냅샷은 목요일 아침에 한 번만 돈다. 그날 봇이 자고 있으면 그 주가
+         통째로 빈다 — 화면이 아무 말도 안 하면 옛 숫자를 이번 주로 읽게 된다. */
+      (gap > 0
+        ? '<div class="stale">기록이 ' + gap + '주 밀려 있습니다 — 지금은 ' +
+          esc(weekName(cur).short) + '차. 주간 스냅샷은 목요일 아침에 돌고, ' +
+          '놓치면 다음 날 아침에 채웁니다.</div>'
+        : '');
   }
 
   function weekBars() {
-    var ws = weeks().slice(-8);
+    var ws = weeks().slice(-6);        // 여덟 주를 넣으면 칸이 좁아 날짜가 안 들어간다
     if (ws.length < 2) return '';
     var hi = Math.max.apply(null, ws.map(function (w) { return w.reach || 0; })) || 1;
     var cols = ws.map(function (w, i) {
       var h = Math.max(3, Math.round(((w.reach || 0) / hi) * 96));
-      return '<div class="col' + (i === ws.length - 1 ? ' last' : '') + '">' +
+      var n = weekName(w.week);
+      return '<div class="col' + (i === ws.length - 1 ? ' last' : '') +
+        '" title="' + esc(n.full) + '">' +
         '<div class="val">' + num(w.reach) + '</div>' +
         '<div class="bar" style="height:' + h + 'px"></div>' +
-        '<div class="tag">' + esc((w.week || '').replace(/^\d+-W/, 'W')) + '</div></div>';
+        '<div class="tag">' + esc(n.short) + '</div>' +
+        '<div class="tag2">' + esc(n.days) + '</div></div>';
     }).join('');
     return '<section><h2>주간 도달</h2><div class="wk">' + cols + '</div>' +
       '<p class="note">막대는 그 주에 올린 글이 닿은 사람 수다. 발행 건수가 다르면 ' +
@@ -564,9 +634,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 21:17';
+    a.title = '판 09.29 21:41';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 21:17';
+    ver.textContent = '09.29 21:41';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
