@@ -459,6 +459,17 @@ pre.form{
 .pkCropRow button{flex:0 1 auto; min-width:0; padding-left:11px; padding-right:11px}
 .pkCropNow{font-size:13px; color:var(--dim); flex:1 0 100%; padding-top:1px}
 .pkCropNow.fixed{color:var(--warn)}
+/* 1% 씩 밀기 — 세 칸(왼쪽·가운데·오른쪽)만으로는 얼굴이 살짝 빗나갈 때 답이 없다 */
+.pkFine{display:inline-flex; gap:4px; flex:none; margin-left:2px}
+.pkFine button{padding:0; width:38px; min-width:38px; font-size:14px; font-weight:800}
+.pkCropBar{flex:1 0 100%; height:16px; margin-top:7px; border-radius:5px;
+  background:var(--line); position:relative; cursor:pointer; touch-action:none;
+  overflow:hidden}
+.pkCropBar i{position:absolute; top:0; bottom:0; border-radius:5px;
+  background:var(--accent); opacity:.5; min-width:10px;
+  box-shadow:0 0 0 1px var(--accent) inset;
+  transition:left .06s linear}
+.pkCropBar.fixed i{opacity:.95}
 /* 위치를 직접 잡는 중에는 영상을 끄는 손짓이 자연스러워야 한다 */
 .pkFrame{touch-action:pan-y}
 .pkFrame.grab{cursor:grab}
@@ -934,6 +945,7 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
   <div class="pkKeys" id="pkKeys">
     <b>← →</b> 한 프레임 · <b>Shift</b> 1초 · <b>I</b> 여기부터 · <b>O</b> 여기까지
     · <b>Space</b> 재생 · <b>C</b> 구간 지우기
+    <br><b>[ ]</b> 또는 <b>Alt+← →</b> 리프레임 1% 씩 · <b>Shift</b> 5%
   </div>
 
   <div class="pkRow pkCropRow">
@@ -942,7 +954,18 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <button data-crop="0">왼쪽</button>
     <button data-crop="0.5">가운데</button>
     <button data-crop="1">오른쪽</button>
+    <span class="pkFine">
+      <button data-cropnudge="-1" aria-label="왼쪽으로 조금"
+              title="왼쪽으로 1% (Shift 5%) · Alt+←">◀</button>
+      <button data-cropnudge="1" aria-label="오른쪽으로 조금"
+              title="오른쪽으로 1% (Shift 5%) · Alt+→">▶</button>
+    </span>
     <span class="pkCropNow" id="pkCropNow"></span>
+    <!-- 미리보기는 잘린 뒤를 보여준다. 무엇을 버리고 있는지는 안 보인다 —
+         원본 가로 전체에서 9:16 창이 어디쯤인지 이 막대가 보여준다. 눌러서 옮겨도 된다. -->
+    <span class="pkCropBar" id="pkCropBar" hidden
+          title="원본 가로에서 9:16 창이 보는 자리 — 눌러서 옮길 수 있습니다"><i
+          id="pkCropWin"></i></span>
   </div>
 
   <div class="pkFoot">
@@ -2102,6 +2125,8 @@ function pkFit() {
     n.style.left = off + 'px'; n.style.top = '0'; n.style.transform = 'none';
   });
   $('#pkFrame').classList.toggle('grab', !PK.wide && f.w - w > 1);
+  // 칸 크기가 정해진 뒤라야 창이 차지하는 비율을 잴 수 있다
+  if (typeof pkCropBarPaint === 'function') pkCropBarPaint();
 }
 
 async function openPicker(b) {
@@ -2518,7 +2543,8 @@ function pkNudge(sec) {
 /* 영상을 좌우로 끌면 9:16 창이 옮겨진다 — 끄는 방향과 보이는 그림이 같아야 한다. */
 function pkCropSet(r, why) {
   const was = PK.crop;
-  PK.crop = (r === null) ? null : Math.max(0, Math.min(1, r));
+  PK.crop = (r === null) ? null
+          : Math.round(Math.max(0, Math.min(1, r)) * 1000) / 1000;
   pkFit();
   pkCropPaint();
   // 영상을 손으로 한 번 밀면 그 순간 '고정' 으로 넘어간다. 그런데 넘어갔다는
@@ -2533,6 +2559,64 @@ function pkCropSet(r, why) {
                            (PK.crop === null ? '' : ' · 가로 ' + Math.round(PK.crop * 100) + '%'));
 }
 
+/* ── 리프레임 미세조정 ───────────────────────────────
+ * 왼쪽·가운데·오른쪽 세 칸뿐이었다. 인물이 가운데서 살짝 비켜 서 있으면
+ * 셋 중 어느 것도 안 맞고, 영상을 손으로 끄는 것 말고는 방법이 없었다.
+ * 그래서 봇에 보내 결과를 받아 보고 고치는 왕복이 생겼다(규효 9/29).
+ * 1% 씩 미는 길을 열어 그 왕복을 앱 안에서 끝낸다. */
+const CROP_STEP = 0.01, CROP_BIG = 0.05;
+
+function pkCropRoom() {
+  // 9:16 창이 좌우로 움직일 수 있는 폭(px). 세로 소스면 0 이다.
+  const frame = $('#pkFrame');
+  if (!frame || PK.wide) return 0;
+  const r = frame.getBoundingClientRect();
+  return (r.height * 16 / 9) - r.width;
+}
+
+function pkCropNudge(dir, big) {
+  if (pkCropRoom() <= 1) { toast('세로 영상이라 좌우로 옮길 폭이 없습니다'); return; }
+  const from = (PK.crop == null) ? 0.5 : PK.crop;
+  const next = Math.max(0, Math.min(1, from + dir * (big ? CROP_BIG : CROP_STEP)));
+  if (PK.crop != null && Math.abs(next - PK.crop) < 1e-6) {
+    toast(dir < 0 ? '왼쪽 끝입니다' : '오른쪽 끝입니다');
+    return;
+  }
+  pkCropSet(next, 'nudge');
+}
+
+/* 막대 위의 한 점 → 비율. 창 자체가 폭을 가지므로 가운데를 기준으로 잰다. */
+function pkBarSet(clientX) {
+  const bar = $('#pkCropBar'); if (!bar || bar.hidden) return;
+  const r = bar.getBoundingClientRect();
+  const frac = pkCropFrac();
+  const room = r.width * (1 - frac);
+  if (room <= 1) return;
+  const left = clientX - r.left - (r.width * frac) / 2;
+  pkCropSet(Math.max(0, Math.min(1, left / room)), 'nudge');
+}
+
+function pkCropFrac() {
+  // 9:16 창이 원본 가로에서 차지하는 비율 (16:9 소스면 9/16 ≈ .5625)
+  const frame = $('#pkFrame');
+  if (!frame || PK.wide) return 1;
+  const r = frame.getBoundingClientRect();
+  const full = r.height * 16 / 9;
+  return full > 0 ? Math.min(1, r.width / full) : 1;
+}
+
+function pkCropBarPaint() {
+  const bar = $('#pkCropBar'), win = $('#pkCropWin');
+  if (!bar || !win) return;
+  const frac = pkCropFrac();
+  if (frac >= 0.999) { bar.hidden = true; return; }   // 옮길 폭이 없으면 안 보인다
+  bar.hidden = false;
+  const r = (PK.crop == null) ? 0.5 : PK.crop;
+  win.style.width = (frac * 100) + '%';
+  win.style.left = (r * (1 - frac) * 100) + '%';
+  bar.classList.toggle('fixed', PK.crop !== null);
+}
+
 function pkCropPaint() {
   const now = $('#pkCropNow');
   if (now) {
@@ -2541,6 +2625,7 @@ function pkCropPaint() {
   }
   const auto = $('#pkAuto');
   if (auto) auto.classList.toggle('on', PK.crop === null);
+  pkCropBarPaint();
   document.querySelectorAll('[data-crop]').forEach((n) => {
     n.classList.toggle('on', PK.crop !== null &&
       Math.abs(PK.crop - Number(n.dataset.crop)) < 0.02);
@@ -2613,6 +2698,13 @@ function pkApply() {
 
 function pkKeys(e) {
   if ($('#picker').hidden) return;
+  // 화살표는 이미 프레임 넘기기가 쓴다. 리프레임은 Alt 를 얹어 겹치지 않게.
+  if (e.altKey && !e.metaKey && !e.ctrlKey) {
+    const a = e.key.toLowerCase();
+    if (a === 'arrowleft')  { e.preventDefault(); pkCropNudge(-1, e.shiftKey); return; }
+    if (a === 'arrowright') { e.preventDefault(); pkCropNudge( 1, e.shiftKey); return; }
+    return;
+  }
   if (e.metaKey || e.ctrlKey || e.altKey) return;   // ⌘R·⌘C 는 브라우저 몫이다
   const k = e.key.toLowerCase();
   const map = {
@@ -2623,6 +2715,7 @@ function pkKeys(e) {
     arrowright: () => pkStep( 1, e.shiftKey),
     ',': () => pkStep(-1, false), '.': () => pkStep(1, false),
     c: pkReset, backspace: pkReset, delete: pkReset,
+    '[': () => pkCropNudge(-1, e.shiftKey), ']': () => pkCropNudge(1, e.shiftKey),
     '=': () => pkZoom(0.5, PK.player ? PK.player.getCurrentTime() : null),
     '+': () => pkZoom(0.5, PK.player ? PK.player.getCurrentTime() : null),
     '-': () => pkZoom(2, PK.player ? PK.player.getCurrentTime() : null),
@@ -2651,6 +2744,20 @@ function bindPicker() {
   // 어디를 누르든(재생기 포함) 초점을 화면으로 돌려놔야 방향키가 계속 먹는다.
   $('#picker').addEventListener('pointerup', () => setTimeout(pkFocus, 0));
   $('#pkAuto').onclick = () => pkCropSet(null, 'tap');
+  document.querySelectorAll('[data-cropnudge]').forEach((n) => {
+    n.onclick = (ev) => pkCropNudge(Number(n.dataset.cropnudge), ev.shiftKey);
+  });
+  const bar = $('#pkCropBar');
+  if (bar) {
+    let on = false;
+    bar.addEventListener('pointerdown', (ev) => {
+      on = true;
+      try { bar.setPointerCapture(ev.pointerId); } catch (_) {}
+      pkBarSet(ev.clientX);
+    });
+    bar.addEventListener('pointermove', (ev) => { if (on) { ev.preventDefault(); pkBarSet(ev.clientX); } });
+    ['pointerup', 'pointercancel'].forEach((t) => bar.addEventListener(t, () => { on = false; }));
+  }
   document.querySelectorAll('[data-crop]').forEach((n) => {
     n.onclick = () => pkCropSet(Number(n.dataset.crop), 'tap');
   });
@@ -3015,9 +3122,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 21:41';
+    a.title = '판 09.30 00:48';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 21:41';
+    ver.textContent = '09.30 00:48';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
