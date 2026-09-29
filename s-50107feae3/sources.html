@@ -289,11 +289,13 @@ html:root[data-accent="blue"]{ --accent:#5B8DEF; --amber:#5B8DEF }
 html:root[data-accent="green"]{ --accent:#4FB477; --amber:#4FB477 }
 html:root[data-accent="violet"]{ --accent:#8B7CF0; --amber:#8B7CF0 }
 html:root[data-accent="mono"]{ --accent:#ECECF1; --amber:#ECECF1 }
+html:root[data-accent="neon"]{ --accent:#00F0FF; --amber:#00F0FF }
 html:root .plotThemeBox .sw[data-accent="amber"]{ background:#E8B34A; color:#E8B34A }
 html:root .plotThemeBox .sw[data-accent="blue"]{ background:#5B8DEF; color:#5B8DEF }
 html:root .plotThemeBox .sw[data-accent="green"]{ background:#4FB477; color:#4FB477 }
 html:root .plotThemeBox .sw[data-accent="violet"]{ background:#8B7CF0; color:#8B7CF0 }
 html:root .plotThemeBox .sw[data-accent="mono"]{ background:#ECECF1; color:#ECECF1 }
+html:root .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#B5008C 100%); color:#00F0FF }
 html:root[data-theme="light"]{
   --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
   --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
@@ -306,6 +308,7 @@ html:root[data-theme="light"][data-accent="blue"]{ --accent:#2B5BC4; --amber:#2B
 html:root[data-theme="light"][data-accent="green"]{ --accent:#216E45; --amber:#216E45 }
 html:root[data-theme="light"][data-accent="violet"]{ --accent:#5240B8; --amber:#5240B8 }
 html:root[data-theme="light"][data-accent="mono"]{ --accent:#1A1A1E; --amber:#1A1A1E }
+html:root[data-theme="light"][data-accent="neon"]{ --accent:#B5008C; --amber:#B5008C }
 html:root[data-theme="light"] input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),
 html:root[data-theme="light"] textarea,
 html:root[data-theme="light"] select{
@@ -322,6 +325,7 @@ html:root[data-theme="light"] .plotThemeBox .sw[data-accent="blue"]{ background:
 html:root[data-theme="light"] .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
 html:root[data-theme="light"] .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
 html:root[data-theme="light"] .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#B5008C 100%); color:#B5008C }
 @media (prefers-color-scheme: light){
 html:root:not([data-theme="dark"]){
   --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
@@ -335,6 +339,7 @@ html:root:not([data-theme="dark"])[data-accent="blue"]{ --accent:#2B5BC4; --ambe
 html:root:not([data-theme="dark"])[data-accent="green"]{ --accent:#216E45; --amber:#216E45 }
 html:root:not([data-theme="dark"])[data-accent="violet"]{ --accent:#5240B8; --amber:#5240B8 }
 html:root:not([data-theme="dark"])[data-accent="mono"]{ --accent:#1A1A1E; --amber:#1A1A1E }
+html:root:not([data-theme="dark"])[data-accent="neon"]{ --accent:#B5008C; --amber:#B5008C }
 html:root:not([data-theme="dark"]) input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),
 html:root:not([data-theme="dark"]) textarea,
 html:root:not([data-theme="dark"]) select{
@@ -351,7 +356,71 @@ html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="blue"]{ backgr
 html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
 html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
 html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#B5008C 100%); color:#B5008C }
 }
+/* 네온 — 바탕째 갈아 끼우므로 밝은 한 벌보다 뒤에 온다 */
+html:root[data-theme="dark"][data-accent="neon"]{
+  --bg:#06040F; --panel:#0E0A1C; --raise:#161029; --panel-2:#161029;
+  --line:#2B1D52; --hair:#14102A; --text:#EAE6FF; --ink:#EAE6FF;
+  --muted:#B9AEE8; --dim:#8E85C9; --faint:#8E85C9; --skip:#8E85C9;
+  --bad:#FF5C8A; --warn:#FFD166; --danger:#FF5C8A;
+  --glass:rgba(10,7,22,.93); --pick:#3DFFA8;
+  color-scheme:dark;
+}
+html:root[data-theme="dark"][data-accent="neon"] .chip.on, html:root[data-theme="dark"][data-accent="neon"] .btn.primary, html:root[data-theme="dark"][data-accent="neon"] .grp button[aria-selected="true"],
+html:root[data-theme="dark"][data-accent="neon"] .tab[aria-selected="true"], html:root[data-theme="dark"][data-accent="neon"] .pcard .pbtn:hover,
+html:root[data-theme="dark"][data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(0,240,255,.35) }
+html:root[data-theme="dark"][data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(0,240,255,.5) }
+html:root[data-theme="dark"][data-accent="neon"] header, html:root[data-theme="dark"][data-accent="neon"] .bar{ border-color:var(--line) }
+html:root[data-theme="light"][data-accent="neon"]{
+  --bg:#FBF6FF; --panel:#F2E9FF; --raise:#E9DCFF; --panel-2:#E9DCFF;
+  --line:#DCC9F5; --hair:#EDE3FB; --text:#14082A; --ink:#14082A;
+  --muted:#4A2E70; --dim:#5F4490; --faint:#5F4490; --skip:#5F4490;
+  --bad:#A6112E; --warn:#7A4E00; --danger:#A6112E;
+  --glass:rgba(248,242,255,.93); --pick:#136B45;
+  color-scheme:light;
+}
+html:root[data-theme="light"][data-accent="neon"] .chip.on, html:root[data-theme="light"][data-accent="neon"] .btn.primary, html:root[data-theme="light"][data-accent="neon"] .grp button[aria-selected="true"],
+html:root[data-theme="light"][data-accent="neon"] .tab[aria-selected="true"], html:root[data-theme="light"][data-accent="neon"] .pcard .pbtn:hover,
+html:root[data-theme="light"][data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(181,0,140,.22) }
+html:root[data-theme="light"][data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(181,0,140,.35) }
+html:root[data-theme="light"][data-accent="neon"] header, html:root[data-theme="light"][data-accent="neon"] .bar{ border-color:var(--line) }
+@media (prefers-color-scheme: dark){
+html:root:not([data-theme="light"])[data-accent="neon"]{
+  --bg:#06040F; --panel:#0E0A1C; --raise:#161029; --panel-2:#161029;
+  --line:#2B1D52; --hair:#14102A; --text:#EAE6FF; --ink:#EAE6FF;
+  --muted:#B9AEE8; --dim:#8E85C9; --faint:#8E85C9; --skip:#8E85C9;
+  --bad:#FF5C8A; --warn:#FFD166; --danger:#FF5C8A;
+  --glass:rgba(10,7,22,.93); --pick:#3DFFA8;
+  color-scheme:dark;
+}
+html:root:not([data-theme="light"])[data-accent="neon"] .chip.on, html:root:not([data-theme="light"])[data-accent="neon"] .btn.primary, html:root:not([data-theme="light"])[data-accent="neon"] .grp button[aria-selected="true"],
+html:root:not([data-theme="light"])[data-accent="neon"] .tab[aria-selected="true"], html:root:not([data-theme="light"])[data-accent="neon"] .pcard .pbtn:hover,
+html:root:not([data-theme="light"])[data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(0,240,255,.35) }
+html:root:not([data-theme="light"])[data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(0,240,255,.5) }
+html:root:not([data-theme="light"])[data-accent="neon"] header, html:root:not([data-theme="light"])[data-accent="neon"] .bar{ border-color:var(--line) }
+}
+@media (prefers-color-scheme: light){
+html:root:not([data-theme="dark"])[data-accent="neon"]{
+  --bg:#FBF6FF; --panel:#F2E9FF; --raise:#E9DCFF; --panel-2:#E9DCFF;
+  --line:#DCC9F5; --hair:#EDE3FB; --text:#14082A; --ink:#14082A;
+  --muted:#4A2E70; --dim:#5F4490; --faint:#5F4490; --skip:#5F4490;
+  --bad:#A6112E; --warn:#7A4E00; --danger:#A6112E;
+  --glass:rgba(248,242,255,.93); --pick:#136B45;
+  color-scheme:light;
+}
+html:root:not([data-theme="dark"])[data-accent="neon"] .chip.on, html:root:not([data-theme="dark"])[data-accent="neon"] .btn.primary, html:root:not([data-theme="dark"])[data-accent="neon"] .grp button[aria-selected="true"],
+html:root:not([data-theme="dark"])[data-accent="neon"] .tab[aria-selected="true"], html:root:not([data-theme="dark"])[data-accent="neon"] .pcard .pbtn:hover,
+html:root:not([data-theme="dark"])[data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(181,0,140,.22) }
+html:root:not([data-theme="dark"])[data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(181,0,140,.35) }
+html:root:not([data-theme="dark"])[data-accent="neon"] header, html:root:not([data-theme="dark"])[data-accent="neon"] .bar{ border-color:var(--line) }
+}
+/* 강조색이 여섯이 되면서 한 줄에 안 들어간다 */
+.plotThemeBox .row{flex-wrap:wrap}
 .plotThemeBtn{border:1px solid var(--line); border-radius:6px; background:none;
   color:var(--muted,#8A8A96); font:inherit; font-size:11.5px; padding:5px 9px; cursor:pointer}
 /* 머리줄에 붙을 자리가 없으면 화면 오른쪽 위에 떠 있는다. 이 배경을 인라인으로
@@ -1286,9 +1355,9 @@ html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ backgr
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 03:17';
+    a.title = '판 09.29 18:29';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 03:17';
+    ver.textContent = '09.29 18:29';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
@@ -1345,7 +1414,7 @@ html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ backgr
   var TK = 'plot.app.theme', AK = 'plot.app.accent';
   var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
   var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
-                 ['violet', '#8B7CF0'], ['mono', '#ECECF1']];
+                 ['violet', '#8B7CF0'], ['mono', '#ECECF1'], ['neon', '#00F0FF']];
   var box = null;
 
   function get(k, d) { try { return localStorage.getItem(k) || d; } catch (e) { return d; } }
