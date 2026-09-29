@@ -417,6 +417,15 @@ pre.form{
 .pkNums .pkLen{color:var(--ink); font-weight:700}
 .pkNums .pkLen.warn{color:var(--warn)}
 
+/* 자판이 있는 기기에서만 말해 준다 — 폰에서는 자리만 먹는다. */
+.pkKeys{display:none}
+@media (hover:hover) and (pointer:fine){
+  .pkKeys{display:block; width:100%; max-width:560px; margin:0 auto;
+    padding:2px 16px 0; font-size:11px; color:var(--faint); letter-spacing:-.01em}
+  .pkKeys b{color:var(--dim); font-weight:700}
+}
+.pkGhost{color:var(--dim)}
+#picker:focus{outline:none}
 .pkMarks{display:flex; gap:9px; padding:12px 16px 0; flex:none}
 .pkMark{
   flex:1; background:var(--panel-2); border:1px solid var(--line); border-radius:8px;
@@ -769,7 +778,7 @@ html:root:not([data-theme="dark"])[data-accent="neon"] header, html:root:not([da
 <!-- ── 구간 고르기 ─────────────────────────────────────────────────
      영상을 보면서 시작·끝을 찍는다. 그 위에 완성본 글자를 얹어 두어
      "이 구간에서 글자가 읽히는가" 를 같은 화면에서 판단할 수 있게 한다. -->
-<div class="sheet" id="picker" hidden>
+<div class="sheet" id="picker" tabindex="-1" hidden>
   <div class="pkHead">
     <button class="pkX" id="pkClose" aria-label="닫기">✕</button>
     <b>구간 고르기</b>
@@ -836,6 +845,12 @@ html:root:not([data-theme="dark"])[data-accent="neon"] header, html:root:not([da
     <button data-len="20">20초</button>
     <button data-len="30">30초</button>
     <button data-len="45">45초</button>
+    <button id="pkReset" class="pkGhost" title="시작·끝을 지우고 처음부터">구간 지우기</button>
+  </div>
+
+  <div class="pkKeys" id="pkKeys">
+    <b>← →</b> 한 프레임 · <b>Shift</b> 1초 · <b>I</b> 여기부터 · <b>O</b> 여기까지
+    · <b>Space</b> 재생 · <b>C</b> 구간 지우기
   </div>
 
   <div class="pkRow pkCropRow">
@@ -2377,6 +2392,37 @@ function pkUnitPaint() {
   });
 }
 
+/* 방향키는 한 프레임씩 — 클릭으로 맞추면 손이 먼저 지친다.
+   Shift 를 누르면 1초. 프레임 수는 단위 버튼(초 ↔ 24f…)에서 고른 값을 쓴다. */
+function pkStep(dir, big) {
+  if (!PK.ready) return;
+  // 돌아가는 중에 한 프레임씩 밟는 건 뜻이 없다 — 먼저 세운다.
+  try {
+    if (PK.player.getPlayerState() === YT.PlayerState.PLAYING) PK.player.pauseVideo();
+  } catch (_) {}
+  const fps = UNIT.fps || 30;
+  const step = big ? 1 : 1 / fps;
+  const t = pkClampT((PK.player.getCurrentTime() || 0) + dir * step);
+  PK.player.seekTo(t, true);
+  pkPaint(t);
+}
+
+/* 구간을 지운다. 확대해 둔 창도 전체로 되돌린다 — '처음부터 다시' 가 이 버튼의 뜻이다. */
+function pkReset() {
+  PK.inS = null;
+  PK.outS = null;
+  PK.view = null;
+  pkPaint();
+  toast('구간을 지웠습니다 — 다시 고르세요');
+}
+
+/* 재생기(아이프레임)를 한 번 누르면 자판 입력이 그쪽으로 넘어가 방향키가 먹지 않는다.
+   누른 뒤에는 화면으로 초점을 도로 가져온다. */
+function pkFocus() {
+  const el = $('#picker');
+  if (el && !el.hidden) { try { el.focus({ preventScroll: true }); } catch (_) {} }
+}
+
 function pkNudge(sec) {
   if (!PK.ready) return;
   // 프레임 보기에서 ±1 은 한 프레임이다.
@@ -2490,8 +2536,10 @@ function pkKeys(e) {
     i: () => pkMark('in'), o: () => pkMark('out'),
     ' ': pkTogglePlay, k: pkTogglePlay,
     j: () => pkNudge(-5), l: () => pkNudge(5),
-    arrowleft:  () => pkNudge(e.shiftKey ? -5 : -1),
-    arrowright: () => pkNudge(e.shiftKey ?  5 :  1),
+    arrowleft:  () => pkStep(-1, e.shiftKey),
+    arrowright: () => pkStep( 1, e.shiftKey),
+    ',': () => pkStep(-1, false), '.': () => pkStep(1, false),
+    c: pkReset, backspace: pkReset, delete: pkReset,
     '=': () => pkZoom(0.5, PK.player ? PK.player.getCurrentTime() : null),
     '+': () => pkZoom(0.5, PK.player ? PK.player.getCurrentTime() : null),
     '-': () => pkZoom(2, PK.player ? PK.player.getCurrentTime() : null),
@@ -2499,7 +2547,7 @@ function pkKeys(e) {
     '0': () => { PK.view = null; pkPaint(); },
     enter: pkApply, escape: closePicker,
   };
-  const fn = map[k === 'arrowleft' || k === 'arrowright' ? k : (e.key === ' ' ? ' ' : k)];
+  const fn = map[e.key === ' ' ? ' ' : k];
   if (fn) { e.preventDefault(); fn(); }
 }
 
@@ -2516,6 +2564,9 @@ function bindPicker() {
     n.onclick = () => pkLen(Number(n.dataset.len));
   });
   $('#pkUnit').onclick = pkUnitCycle;
+  $('#pkReset').onclick = pkReset;
+  // 어디를 누르든(재생기 포함) 초점을 화면으로 돌려놔야 방향키가 계속 먹는다.
+  $('#picker').addEventListener('pointerup', () => setTimeout(pkFocus, 0));
   $('#pkAuto').onclick = () => pkCropSet(null, 'tap');
   document.querySelectorAll('[data-crop]').forEach((n) => {
     n.onclick = () => pkCropSet(Number(n.dataset.crop), 'tap');
@@ -2577,6 +2628,7 @@ function bindPicker() {
   $('#pkZAll').onclick = () => { PK.view = null; pkPaint(); };
 
   pkUnitPaint();
+  pkFocus();
   document.addEventListener('keydown', pkKeys);
   window.addEventListener('resize', () => { if (!$('#picker').hidden) pkFit(); });
 }
@@ -2831,9 +2883,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 09.29 18:35';
+    a.title = '판 09.29 18:41';
     var ver = document.createElement('span');
-    ver.textContent = '09.29 18:35';
+    ver.textContent = '09.29 18:41';
     ver.style.cssText = 'font:500 10px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:6px;letter-spacing:0;';
     a.appendChild(ver);
