@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-09-29 22:06 KST",
+  "generated_at": "2026-09-30 15:05 KST",
   "window": {
     "mature_hours": 24,
     "max_age_days": 60,
@@ -14,10 +14,10 @@
         "밴드",
         "인디"
       ],
-      "baseline": 907.8,
+      "baseline": 909.0,
       "per_format": {
         "reel": 890.1,
-        "post": 942.7
+        "post": 944.1
       },
       "n": 70,
       "pinned": 0,
@@ -113,9 +113,9 @@
       "followers": null,
       "tier": "daily",
       "genres": [],
-      "baseline": 10297.2,
+      "baseline": 10397.5,
       "per_format": {
-        "reel": 10297.2
+        "reel": 10397.5
       },
       "n": 21,
       "pinned": 0,
@@ -127,9 +127,9 @@
       "genres": [
         "힙합"
       ],
-      "baseline": 5371.1,
+      "baseline": 5373.0,
       "per_format": {
-        "reel": 5371.1
+        "reel": 5373.0
       },
       "n": 43,
       "pinned": 11,
@@ -153,11 +153,11 @@
       "genres": [
         "해외"
       ],
-      "baseline": 1069.5,
+      "baseline": 965.1,
       "per_format": {
-        "reel": 1105.6
+        "reel": 1060.2
       },
-      "n": 29,
+      "n": 30,
       "pinned": 0,
       "per_day": 1.9
     },
@@ -168,13 +168,13 @@
         "해외",
         "카탈로그"
       ],
-      "baseline": 604.0,
+      "baseline": 585.2,
       "per_format": {
-        "reel": 1200.6,
-        "post": 499.9
+        "reel": 1202.0,
+        "post": 497.8
       },
       "n": 44,
-      "pinned": 11,
+      "pinned": 12,
       "per_day": 0.8
     }
   },
@@ -187,7 +187,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdvxXHKT0wm/",
       "timestamp": "2026-09-26T10:00:12+00:00",
-      "hours": 75.1,
+      "hours": 92.1,
       "likes": 10758,
       "comments": 115,
       "views": 160739,
@@ -227,9 +227,13 @@
       },
       "picked_before": false,
       "caption": "\"역시 라이브는 대승\" 🎤\n\n머쉬베놈의 신곡 \"내리고\"에 피처링으로 참여한 저스디스가, 공개 이후 화제를 모았던 자신의 벌스를 라이브에서 처음 선보였습니다. 'K-Pop bus 탄 래퍼들', 'Made in Korea로 택갈이', '근데 넌 왜 아직 은퇴를 안 하지?'처럼 시작부터 꽤 노골적인 문장들이 이어지는데요. 곡 자체도 지난 9월 14일 공개된 머쉬베놈의 EP 선공개 싱글입니다.\n\n특히 리스너들 사이에서는 이 벌스가 식케이를 겨냥한 것 아니냐는 해석이 나온 바 있습니다. 식케이와 릴 모쉬핏의 [K-FLIP+]에는 \"MADE IN KCOREA\"가 수록돼 있고, KC의 컴필레이션 앨범 [KC3]에는 \"KARMA COLLECTOR\"가 존재하죠. 저스디스의 '넌 아직 카르마 시작도 안 했지'라는 라인까지 겹",
-      "cluster": 217,
+      "cluster": 218,
       "pace": null,
-      "rank": 29
+      "rank": 29,
+      "news_surge": {
+        "entity": "머쉬베놈",
+        "multiple": 8.0
+      }
     },
     {
       "id": "DdqjSHLRXY2",
@@ -239,16 +243,16 @@
       "music_native": false,
       "url": "https://www.instagram.com/p/DdqjSHLRXY2/",
       "timestamp": "2026-09-24T09:22:53+00:00",
-      "hours": 123.7,
+      "hours": 140.7,
       "likes": 23342,
       "comments": 168,
       "views": 49644,
       "is_reel": true,
       "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/820000012_17882577813688504_9163045513276760909_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=Mzk5MzE1OTE5NTkwMTEzMDI5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=bnckLWVF38cQ7kNvwEdGC6G&_nc_oc=Adp_G_hQV2t9G-6Z26urAqALUsPKyoWhWMwtJ4_z-7iDaaTuO7b6r1XXEehOGwcF_Do&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=PXAhUnLaQ7yE-QSDtnsoNQ&_nc_ss=7a22e&oh=00_AQNDuIRakT-eUyt2HhZI1YXd2kexn8d9OkvFci_u_4BaxA&oe=6AC038EE",
       "score": 23846,
-      "baseline": 10297.2,
+      "baseline": 10397.5,
       "baseline_kind": "reel",
-      "multiple": 2.32,
+      "multiple": 2.29,
       "velocity": 239.97373472067886,
       "label": "music",
       "kind": "news",
@@ -275,9 +279,9 @@
       },
       "picked_before": false,
       "caption": "🐺 와 진짜 굿보이들이시다\n\n오늘 24일 앤팀의 한국 미니 2집 수록곡\n‘Good Boy’ 뮤직비디오가 공개됐습니다!\n\n지난 8일 공개된 타이틀곡 ‘Mark on Me’와는\n또 다른 분위기를 보여주는 곡인데요.\n강렬한 퍼포먼스로 팬들의 관심을 모았던 ‘Good Boy’의\n뮤직비디오까지 공개되며 반가움을 더했습니다.\n\n‘Good Boy’는 역동적인 808 비트와 묵직한 저음이\n중심을 이루는 힙합 곡입니다. 자신감 넘치는 랩과 구호처럼\n반복되는 후렴이 강한 인상을 남기는데요.\n\n장난스러운 ‘Good Boy’라는 표현에 야수적인 본능을 더해\n앤팀만의 활기와 자연스러운 멋을 담아냈습니다.\n\n특히 이번 미니 2집에서 ‘Mark on Me’와 ‘Good Boy’처럼\n서로 다른 분위기의 곡을 보여주며 앤팀의 음악적 스펙",
-      "cluster": 396,
+      "cluster": 402,
       "pace": null,
-      "rank": 89
+      "rank": 91
     },
     {
       "id": "DdvWfLjAQfv",
@@ -287,16 +291,16 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdvWfLjAQfv/",
       "timestamp": "2026-09-26T06:06:34+00:00",
-      "hours": 79.0,
+      "hours": 96.0,
       "likes": 4972,
       "comments": 38,
       "views": 55077,
       "is_reel": true,
       "image": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/825269630_18068154959751025_1488092410484352721_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=Mzk5NDUxMDI5NDIyNjM3MjU5MTE4MDY4MTU0OTU2NzUxMDI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=5I10jDKjKyMQ7kNvwH1jtrr&_nc_oc=Ado9p31XRME4ZaT-jF1Lt7Env1FBFYv5iW1vk2KYemK2hMH62dHAO3dTr2OowUM9cUo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=oCcGTmgz8oVOSfNwtmPcDg&_nc_ss=7a22e&oh=00_AQNrVpnHd3yJD5n3j_2x4vMMYBZGqKtZqBIcA8lqHYGakg&oe=6AC1A115",
       "score": 5086,
-      "baseline": 1105.6,
+      "baseline": 1060.2,
       "baseline_kind": "reel",
-      "multiple": 4.6,
+      "multiple": 4.8,
       "velocity": 17.780827288766908,
       "label": "music",
       "kind": "unknown",
@@ -318,9 +322,9 @@
       },
       "picked_before": false,
       "caption": "소울헤드는 홋카이도 출신의 친자매 듀오로, 언니 요시카(YOSHIKA)와 동생 츠구미(TSUGUMI)로 구성되어 있습니다. 음악적으로는 R&B와 힙합을 중심으로 다양한 음악적 요소를 자신들만의 방식으로 풀어낸 것이 특징인데요. 특히 두 사람의 탄탄한 하모니와 영어와 일본어를 자연스럽게 오가는 보컬은 소울헤드의 음악을 더욱 특별하게 만들어주는 요소입니다.\n\n저는 ‘Sora’를 처음 들었을 때 마치 황홀경에 빠지는 듯한 느낌을 받았습니다. 두 자매의 목소리가 만들어내는 환상적인 조화에 세련된 사운드까지 더해지면서, 처음부터 끝까지 온전히 곡에 집중해서 들었던 기억이 있는데요. 이 곡을 계기로 일본 R&B라는 장르 자체에도 더욱 좋은 인상을 갖게 됐죠.\n\n여기서 조금만 더 욕심을 내보자면, ‘Sora’뿐만 아니라",
-      "cluster": 362,
+      "cluster": 366,
       "pace": null,
-      "rank": 94
+      "rank": 92
     },
     {
       "id": "DdtO3kexvjt",
@@ -330,17 +334,17 @@
       "music_native": false,
       "url": "https://www.instagram.com/p/DdtO3kexvjt/",
       "timestamp": "2026-09-25T10:21:31+00:00",
-      "hours": 98.7,
-      "likes": 21819,
+      "hours": 115.7,
+      "likes": 22225,
       "comments": 14,
-      "views": 84306,
+      "views": 86299,
       "is_reel": true,
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/823000491_17882720142688504_8674756267622523528_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzk5MzkxMzgzNTk0MDkzNTkxNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzIifQ%3D%3D&_nc_ohc=wGuJZT8K-iwQ7kNvwF92ZhD&_nc_oc=AdpRjX4OA7CuFQOis-sN7UXmBmyr4ZyLgEcVlAGYV7GKn50bfR0Y1hV2EhqHFHkTzNA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=c5TgauvQCowHULFKsqiEoQ&_nc_ss=7a22e&oh=00_AQPWjPa6nyV4WpEnI3ofVIJnv6lSTjfousUo4lrMUF2yMA&oe=6AC177F7",
-      "score": 21861,
-      "baseline": 10297.2,
+      "image": "https://scontent-waw2-2.cdninstagram.com/v/t51.82787-15/823000491_17882720142688504_8674756267622523528_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzk5MzkxMzgzNTk0MDkzNTkxNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=wGuJZT8K-iwQ7kNvwF92ZhD&_nc_oc=AdpRjX4OA7CuFQOis-sN7UXmBmyr4ZyLgEcVlAGYV7GKn50bfR0Y1hV2EhqHFHkTzNA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_gid=jkHXy7qq2oC7KJC9-psS0g&_nc_ss=7a22e&oh=00_AQPaDnze8242UO0tiXCnIdkg3muLGKNgQ4oNRQlYISLXsA&oe=6AC29137",
+      "score": 22267,
+      "baseline": 10397.5,
       "baseline_kind": "reel",
-      "multiple": 2.12,
-      "velocity": 52.029013918839446,
+      "multiple": 2.14,
+      "velocity": 44.99614003700663,
       "label": "music",
       "kind": "news",
       "genres": [
@@ -368,9 +372,9 @@
       },
       "picked_before": false,
       "caption": "💫 어깨 털기의 여신 덕분에 내 하루가 풍요로워졌습니다\n\n지난 23일 일본 사이타마현 베루나 돔에서 열린\n'SBS 인기가요 LIVE in TOKYO’ 2회차에\n하츠투하츠가 출연했습니다!\n\n이날 하츠투하츠는 ‘Lemon Tang’과 ‘Rude!’ 무대를\n선보였는데요. 무대 중간에는 팬들과 소통하며 지난달\n일본 데뷔곡 ‘ICONIC HEART’도 짧게 선보였습니다.\n\n‘ICONIC HEART’는 발매 직후 지우의 어깨 털기 춤이\n화제를 모으며 많은 사랑을 받았던 곡인데요. 짧은 순간에도\n팬들이 바로 알아볼 만큼 강한 인상을 남겼답니다.\n\n그리고 이 곡을 곧 한국어 버전으로도 만나볼 수 있습니다.\n하츠투하츠는 오는 10월 2일 스포티파이의 ‘Spotify Closers’\n첫 주자로 나서며 한국어 버전 ‘ICONI",
-      "cluster": 398,
+      "cluster": 404,
       "pace": null,
-      "rank": 103
+      "rank": 102
     },
     {
       "id": "DdqPzdbgnGV",
@@ -380,16 +384,16 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdqPzdbgnGV/",
       "timestamp": "2026-09-24T06:46:36+00:00",
-      "hours": 126.3,
+      "hours": 143.3,
       "likes": 4050,
       "comments": 11,
       "views": 33398,
       "is_reel": true,
       "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/817624899_18067870079751025_757959163662872927_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzk5MzA3MzUyNjYwODM5MjU5NzE4MDY3ODcwMDc2NzUxMDI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjU0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=WMueZEqGnTYQ7kNvwFeP7hW&_nc_oc=Ado-s-7QUHMQuiJBMOctPy9AnWFMiRs7vYqGsrovVe-pnnVJcqFjWQBLF9F3pkHBLRg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=lIt0qHg-i5FkeKFMhFwrIw&_nc_ss=7a22e&oh=00_AQLH-T3r2A6QXsXwCMZgR8Ai6Q-xENYq3BBEvAqOpDkyww&oe=6ABEE790",
       "score": 4083,
-      "baseline": 1105.6,
+      "baseline": 1060.2,
       "baseline_kind": "reel",
-      "multiple": 3.69,
+      "multiple": 3.85,
       "velocity": 52.158450612916255,
       "label": "music",
       "kind": "news",
@@ -416,9 +420,9 @@
       },
       "picked_before": false,
       "caption": "마룬 5(@Maroon5)와 래퍼 위즈 칼리파(@wizkhalifa)가 함께한 ‘Payphone’의 뮤직비디오가 유튜브(Youtube) 조회수 10억 회를 돌파했습니다.\n\n이번 기록으로 마룬 5는 ‘Sugar’, ‘Memories’, ‘One More Night’, ‘Girls Like You (Volume 2)’, ‘Girls Like You’에 이어 ‘Payphone’까지 총 여섯 편의 뮤직비디오를 유튜브 10억 뷰 클럽에 올리게 됐는데요. 발매 당시 기록적인 디지털 판매량을 기록하며 큰 사랑을 받았던 ‘Payphone’이 14년이 지난 지금, 유튜브 10억 뷰라는 또 하나의 기록을 추가하게 된 셈이죠.\n\n한편 마룬 5는 2025년 여덟 번째 정규 앨범 [Love Is Like]를 발표하며 활동을 이어가",
-      "cluster": 358,
+      "cluster": 362,
       "pace": null,
-      "rank": 105
+      "rank": 103
     },
     {
       "id": "DdvvUpJRciA",
@@ -428,17 +432,17 @@
       "music_native": false,
       "url": "https://www.instagram.com/p/DdvvUpJRciA/",
       "timestamp": "2026-09-26T09:44:15+00:00",
-      "hours": 75.4,
-      "likes": 19825,
-      "comments": 89,
-      "views": 49852,
+      "hours": 92.4,
+      "likes": 20147,
+      "comments": 91,
+      "views": 50733,
       "is_reel": true,
-      "image": "https://scontent-arn2-1.cdninstagram.com/v/t51.82787-15/825322700_17882859900688504_413112559607565970_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzk5NDYxOTUyMTI1NTQ1ODk0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=dBppQd1Hr_kQ7kNvwEOgqWk&_nc_oc=Ado9DwV7xs3h-l-rXhuj7cFvKgX0PRz8RUMG7snWeQYcW0mVIxMc0qQT2eWakM9cmpY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-arn2-1.cdninstagram.com&_nc_gid=5DraxoJSHIh8WPPQ3euBwA&_nc_ss=7a22e&oh=00_AQNJE5qlDm_e-Bpiu3LrqvCEIsi8CKbYQSES8zhR17W5Pg&oe=6AC1A36A",
-      "score": 20092,
-      "baseline": 10297.2,
+      "image": "https://scontent-lga3-3.cdninstagram.com/v/t51.82787-15/825322700_17882859900688504_413112559607565970_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=108&ig_cache_key=Mzk5NDYxOTUyMTI1NTQ1ODk0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=dBppQd1Hr_kQ7kNvwES-XN2&_nc_oc=AdqP390r3J31nTUQPuZRY9CcLjJLoDevBtzZOk_vxG-YYx_JW4MTzPd5oVJKYfdURZ0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_gid=ZSZU78XRnaaBbcIwpdvgQA&_nc_ss=7a22e&oh=00_AQON4TaYZjhNNHzUsd6EZzu3sHBh47Kwylo9vvUVuaEZLg&oe=6AC2846A",
+      "score": 20420,
+      "baseline": 10397.5,
       "baseline_kind": "reel",
-      "multiple": 1.95,
-      "velocity": 99.72554401097824,
+      "multiple": 1.96,
+      "velocity": 79.6255223203892,
       "label": "music",
       "kind": "news",
       "genres": [
@@ -467,9 +471,9 @@
       },
       "picked_before": false,
       "caption": "💘 여러분 저 됐어요... 앤팀밖에 모르는 바봉\n\n오늘 앤팀 공식 계정에 지난 5일부터 6일까지\n일본 베루나돔에서 열린 앙코르 콘서트\n‘Gee’ 무대가 공개됐습니다!\n\n당시에도 많은 화제를 모았던 무대인데요.\n의주, 후마, 니콜라스가 제복을 입고 선보인 ‘Gee’를\n공식 영상으로 다시 만나볼 수 있어 더욱 반갑습니다.\n\n이번 앙코르 콘서트는 앤팀에게도 특별한 의미가 있었는데요.\n일본 활동에서 목표처럼 여겨졌던 첫 돔 공연을 베루나돔에서\n개최한 만큼 멤버들과 팬들 모두 울컥하는 순간이 많았다고 합니다.\n\n또한 기존 공연과 달리 셋리스트에도 변화를 주며\n앙코르 공연만의 무대를 선보였는데요.\n\n이제 곧 10월 한국 앙코르 공연을 앞두고 있는 앤팀\n이번에는 어떤 무대가 팬들의 기억에 남게 될까요? 💭\n\n🔗 &TEA",
-      "cluster": 399,
+      "cluster": 405,
       "pace": null,
-      "rank": 109
+      "rank": 108
     },
     {
       "id": "Ddsxaj0xPPm",
@@ -479,7 +483,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/Ddsxaj0xPPm/",
       "timestamp": "2026-09-25T06:04:33+00:00",
-      "hours": 103.0,
+      "hours": 120.0,
       "likes": 9934,
       "comments": 68,
       "views": 140059,
@@ -510,9 +514,9 @@
       },
       "picked_before": false,
       "caption": "”김상민을 샤라웃한 양홍원“\n\n✨양홍원(@yanghongwon )님이 개인 유튜브를 통해 미발매곡을 공개하였습니다. 해당 영상에 최근 구속된 ✨김상민(@ksmartboi )을 샤라웃하는 ’FREE KSM‘이라는 문구가 눈에 띄였는데요. 여러분은 양홍원의 미발매곡 ’EDEN+MATE‘ 어떻게 들으셨나요?\n\n📷 HWMUSIC YouTube",
-      "cluster": 250,
+      "cluster": 253,
       "pace": null,
-      "rank": 113
+      "rank": 112
     },
     {
       "id": "DdwIYCJNu46",
@@ -522,7 +526,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdwIYCJNu46/",
       "timestamp": "2026-09-26T12:58:23+00:00",
-      "hours": 72.1,
+      "hours": 89.1,
       "likes": 3046,
       "comments": 14,
       "views": 18797,
@@ -565,7 +569,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdwCg82tcbc/",
       "timestamp": "2026-09-26T12:12:41+00:00",
-      "hours": 72.9,
+      "hours": 89.9,
       "likes": 2976,
       "comments": 20,
       "views": 14484,
@@ -612,7 +616,7 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdnypDqhmw-/",
       "timestamp": "2026-09-23T07:39:20+00:00",
-      "hours": 149.4,
+      "hours": 166.4,
       "likes": 3067,
       "comments": 4,
       "views": 122046,
@@ -647,9 +651,9 @@
       },
       "picked_before": false,
       "caption": "\"쌰갈\" 🫠\n\n한때 하루 만에 팔로워가 몇만 명씩 늘고, 첫 앨범을 내자마자 염따, 더콰이엇과 계약한 황세현. 당시에는 한 달 만에 다음 앨범을 끝내고 '최연소 한대음'까지 꿈꿀 만큼 모든 게 빠르게 흘러갔습니다. 말 그대로 “나 진짜 된 줄 알았어”라고 생각할 만한 시기였죠.\n\n하지만 현실은 생각보다 훨씬 복잡했습니다. 눈을 뜨니 자신의 얼굴은 음악이 아닌 논란을 다루는 유튜브 영상에 등장했고, 겉으로는 괜찮다고 말하면서도 속으로는 '똥줄이 타는' 시간을 보내야 했죠. '엄마 차 바꿔주겠다'는 가사를 쓰던 때와 달리, 어느 순간에는 학력과 생계까지 걱정하는 자신을 마주하게 됩니다.\n\n최근 발매된 황세현의 정규 3집 [그냥 그렇게 됐다] 수록곡 \"됐어요!\"는 갈수록 다른 의미로 들립니다. 처음에는 '나 성공",
-      "cluster": 199,
+      "cluster": 200,
       "pace": null,
-      "rank": 148
+      "rank": 147
     },
     {
       "id": "DdxqrJmEl0M",
@@ -659,14 +663,14 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/DdxqrJmEl0M/",
       "timestamp": "2026-09-27T02:33:27+00:00",
-      "hours": 58.5,
+      "hours": 75.5,
       "likes": 2746,
       "comments": 9,
       "views": null,
       "is_reel": false,
       "image": "https://scontent-dfw5-1.cdninstagram.com/v/t51.82787-15/825352448_17984739219081819_8473645125982261350_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ig_cache_key=Mzk5NTEyMjE3NzI5Njk1OTg4OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=WPkqQbs4y5gQ7kNvwH_5Jo8&_nc_oc=AdqhmHvliQ8XACcErxLYQozUBSd8ztNQ2xZxqk6me6rXkm9d7UWz6XVuSrFpb4H05q0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw5-1.cdninstagram.com&_nc_gid=H4kSTL8lkGDCk8LBAvJUxg&_nc_ss=7a22e&oh=00_AQLDPtXgAoSCrrC-izo1O7gKwp2ygkOt7bwvoyyz6C5esQ&oe=6ABEFA50",
       "score": 2773,
-      "baseline": 942.7,
+      "baseline": 944.1,
       "baseline_kind": "post",
       "multiple": 2.94,
       "velocity": 109.0909090909091,
@@ -700,7 +704,7 @@
       "caption": "#AoB 결국 KSPO DOME 입성에 성공한 밴드 #실리카겔 과 함께 세상을 조금 더 왜곡된 시선으로 바라보기. 이번 공연에서는 기존 대표곡들과 더불어 최근 발매한 정규 3집 〈Ballad of You〉 수록곡들, 그리고 공연 시작 전 한국을 대표하는 턴테이블리스트 #DJ소울스케이프 의 디제잉까지 즐길 수 있었습니다. 실리카겔의 다음 목적지는 과연 어디일까요?\n\nVideo @ageofband(26.09.26)",
       "cluster": 58,
       "pace": null,
-      "rank": 152
+      "rank": 154
     },
     {
       "id": "Dd3E14FkQXh",
@@ -710,17 +714,17 @@
       "music_native": true,
       "url": "https://www.instagram.com/p/Dd3E14FkQXh/",
       "timestamp": "2026-09-29T06:05:40+00:00",
-      "hours": 7.0,
-      "likes": 652,
-      "comments": 2,
+      "hours": 24.0,
+      "likes": 918,
+      "comments": 3,
       "views": null,
       "is_reel": false,
-      "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/830572795_17992815348042493_2443974149462477431_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk5NjY4MzQ0MTc0MzAxMDQ0Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjAwMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=KuMgXMF_Yl8Q7kNvwGz9fN-&_nc_oc=Adq3VkhsDjfyjphgRfNnykMH8w0sdKGHYHD_DyxP3wPqzaIhuVZPROYULuma0ZzWefE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=8m_7mBECF-Wfq8uxygRBYw&_nc_ss=7a22e&oh=00_AQMpreu7MBJzHZq6PmHCo2KclGG-kkdBcdcm_VgzZWwbFg&oe=6AC19C4C",
-      "score": 658,
-      "baseline": 499.9,
+      "image": "https://scontent-waw2-1.cdninstagram.com/v/t51.82787-15/830572795_17992815348042493_2443974149462477431_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&cb=8438d1d6-b026aa3b&ig_cache_key=Mzk5NjY4MzQ0MTc0MzAxMDQ0Ng%3D%3D.3-ccb7-5-cb8438d1d6-b026aa3b&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjAwMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=KuMgXMF_Yl8Q7kNvwF-JzKj&_nc_oc=AdrCHo2A4ufcwwZVzVNSoc_NTy4jmB02vGNiTzzvivU-jjstr2fwYEwdh5Zo3p9U2UU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-1.cdninstagram.com&_nc_gid=IeAzpmjBjT49-yXs5-g8_Q&_nc_ss=7a22e&oh=00_AQMFbZR3Sz6Cg0K8piaJw-5cFtozdYQCi8Q2nXrNPAr8dw&oe=6AC27D4C",
+      "score": 927,
+      "baseline": 497.8,
       "baseline_kind": "post",
-      "multiple": 1.32,
-      "velocity": 44.7619931335251,
+      "multiple": 1.86,
+      "velocity": 20.160640337956142,
       "label": "non_music",
       "kind": "unknown",
       "genres": [
@@ -737,23 +741,98 @@
       },
       "picked_before": false,
       "caption": "친구의 전 애인을 사랑해버렸다\n\n팝스타로 많은 사랑을 받아온 빌리 아일리시(@billieeilish). 그녀는 한때 자신의 친구 데본 리 칼슨의 전 남자친구와 교제하며 여러 가지 구설수에 휘말렸는데요.\n\n금기를 어긴 사랑은 오래가지 못했고 얼마가지 않아 끝을 맞이했습니다. 제시와 사귀는 동안에도 빌리는 데본에게 미안한 감정을 떨쳐내지 못했고, 그 마음이 그녀를 괴롭혔죠. 그 감정이 담겨 만들어진 곡. 오늘은〈WILDFLOWER〉 에 담긴 감정을 온전히 감상해보는 것은 어떨까요.\n\n𝙱𝚎𝚑𝚒𝚗𝚍 WILDFLOWER\n𝚙𝚑𝚘𝚝𝚘 @billieeilish\n𝚎𝚍𝚒𝚝 HONG JUNSEO\n\n#WILDFLOWER #빌리아일리시",
-      "cluster": 339,
-      "pace": 3.02,
-      "rank": 377
+      "cluster": 343,
+      "pace": 2.74,
+      "rank": 314
     }
   ],
   "fast": [],
   "news": [
     {
-      "entity": "제니 (JENNIE)",
+      "entity": "머쉬베놈",
       "kind": "news",
-      "multiple": 9.1,
-      "at_least": true,
-      "now": 50,
-      "base": 6,
-      "capped": true,
-      "why": "기사 50건 이상 (평소 6) · 차트 24→16위",
+      "multiple": 8.0,
+      "at_least": false,
+      "now": 8,
+      "base": 1,
+      "capped": false,
+      "why": "기사 8건 (평소 1)",
+      "articles": [
+        {
+          "title": "지상렬, \"몸 안에 리듬 있어\"…머쉬베놈 힙합 레슨에 래퍼 꿈 재가동",
+          "url": "https://www.topstarnews.net/news/articleView.html?idxno=16158842",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": true
+        },
+        {
+          "title": "지상렬, 김도훈 작곡가 추천에 머쉬베놈 제자로 “폭탄 돌리기 아냐?”...",
+          "url": "https://www.newsen.com/news_view.php?uid=202608082153462110",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": true
+        },
+        {
+          "title": "'살림남' 지상렬X머쉬베놈 랩 레슨→박서진 남매 절약 프로젝트…최고...",
+          "url": "http://enews.imbc.com/News/RetrieveNewsInfo/514221",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        }
+      ],
+      "speech": 2,
+      "also_in_magazine": [
+        "DdvxXHKT0wm",
+        "DdvxXHKT0wm"
+      ],
+      "days_ago": 0,
+      "seen_at": "2026-09-30T06:05:50.435203+00:00"
+    },
+    {
+      "entity": "이창섭",
+      "kind": "chart",
+      "multiple": 2.0,
+      "now": 17,
+      "base": 27,
+      "capped": false,
+      "chart_jump": 10,
+      "why": "차트 27위 → 17위",
+      "articles": [
+        {
+          "title": "이창섭, ‘호감 예능캐’ 이미지 타격 제대로…“예능 욕심에 선 넘었다...",
+          "url": "https://www.sportschosun.com/entertainment/2026-09-27/202609270100174940011554",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": true
+        },
+        {
+          "title": "이창섭, 댓글 1만개 '욕 바가지'..김원훈만 호감됐다 \"픽업과 쓰레기는...",
+          "url": "https://www.starnewskorea.com/broadcast-show/2026/09/26/2026092618245922348",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": true
+        },
+        {
+          "title": "‘쓰레기 하나에 왜 그렇게 화났나’…이창섭도 뒤늦게 깨달았다 “재밌...",
+          "url": "https://www.sportsseoul.com/news/read/1637586?ref=naver",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": true
+        }
+      ],
+      "speech": 3,
+      "days_ago": 0,
+      "seen_at": "2026-09-30T06:05:50.435203+00:00"
+    },
+    {
+      "entity": "제니 (JENNIE)",
+      "kind": "chart",
+      "multiple": 1.8,
+      "now": 15,
+      "base": 23,
+      "capped": false,
       "chart_jump": 8,
+      "why": "차트 23위 → 15위",
       "articles": [
         {
           "title": "“10년 만의 반가운 만남”… 롯데백화점, 글로벌 뮤즈 ‘제니’와 새 ...",
@@ -779,17 +858,114 @@
       ],
       "speech": 3,
       "days_ago": 0,
-      "seen_at": "2026-09-29T13:06:05.542468+00:00"
+      "seen_at": "2026-09-30T06:05:50.435203+00:00"
     },
     {
-      "entity": "노엘",
+      "entity": "나우아임영",
+      "kind": "news",
+      "multiple": 5.0,
+      "at_least": false,
+      "now": 5,
+      "base": 1,
+      "capped": false,
+      "why": "기사 5건 (평소 1)",
+      "articles": [
+        {
+          "title": "최예나, 나우아임영 피처링 '보기 드문 여자'로 7개월 만 국내 컴백",
+          "url": "https://www.joongangenews.com/news/articleView.html?idxno=550931",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        },
+        {
+          "title": "무신사 스탠다드, 힙합 아티스트 나우아임영과 협업",
+          "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=359590",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        },
+        {
+          "title": "무신사 스탠다드 힙합 아티스트 나우아임영 협업 의류 및 단독 구성 상...",
+          "url": "http://www.lawissue.co.kr/view.php?ud=202609231425508659204ead0791_12",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        }
+      ],
+      "speech": 0,
+      "days_ago": 0,
+      "seen_at": "2026-09-30T06:05:50.435203+00:00"
+    },
+    {
+      "entity": "한로로",
       "kind": "news",
       "multiple": 4.0,
       "at_least": false,
-      "now": 4,
-      "base": 1,
+      "now": 8,
+      "base": 2,
       "capped": false,
-      "why": "기사 4건 (평소 1)",
+      "why": "기사 8건 (평소 2)",
+      "articles": [
+        {
+          "title": "한로로→QWER, '원더리벳 2026' 타임테이블 공개",
+          "url": "http://enews.imbc.com/News/RetrieveNewsInfo/519624",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        },
+        {
+          "title": "가수 한로로 소설이 1위…문단권력 가고 ‘알고리즘 권력’ 왔다",
+          "url": "https://www.joongang.co.kr/article/25465443",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        }
+      ],
+      "speech": 0,
+      "days_ago": 0,
+      "seen_at": "2026-09-30T06:05:50.435203+00:00"
+    },
+    {
+      "entity": "화사 (HWASA)",
+      "kind": "chart",
+      "multiple": 1.9,
+      "now": 18,
+      "base": 27,
+      "capped": false,
+      "chart_jump": 9,
+      "why": "차트 27위 → 18위",
+      "articles": [
+        {
+          "title": "화사, 호주 밤거리 공중전화 앞 포즈…'록 인 리오' 여운 잇는 행보",
+          "url": "https://www.topstarnews.net/news/articleView.html?idxno=16215416",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        },
+        {
+          "title": "8만 관객 전율·떼창…'볼륨' 화사, 브라질 녹였다",
+          "url": "https://www.mydaily.co.kr/page/view/2026091707523109531",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        },
+        {
+          "title": "마마무 화사, 브라질 국기 두른 채 로큰롤 페스티벌 무대 달궜다",
+          "url": "https://www.topstarnews.net/news/articleView.html?idxno=16194712",
+          "source": "네이버뉴스",
+          "at": "2026-09-30T06:05:50.435203+00:00",
+          "speech": false
+        }
+      ],
+      "speech": 0,
+      "days_ago": 0,
+      "seen_at": "2026-09-30T06:05:50.435203+00:00"
+    },
+    {
+      "entity": "노엘",
+      "multiple": 4.0,
+      "speech": 3,
+      "also_mag": null,
       "articles": [
         {
           "title": "‘故장제원 아들’ 노엘, ‘1억 롤렉스’ 찼는데…“부잣집 아들” 언급...",
@@ -813,22 +989,38 @@
           "speech": true
         }
       ],
-      "speech": 3,
-      "also_in_magazine": [
-        "DcpshGYxXWQ"
+      "days_ago": 1,
+      "stale": true
+    },
+    {
+      "entity": "노이",
+      "multiple": 4.0,
+      "speech": 0,
+      "also_mag": null,
+      "articles": [
+        {
+          "title": "에이노이헤어, 연남동 사옥 중심 교육 시스템 구축…전 지점 기술 표준...",
+          "url": "https://www.livesnews.com/news/article.html?no=64552",
+          "source": "네이버뉴스",
+          "at": "2026-09-29T13:06:05.542468+00:00",
+          "speech": false
+        },
+        {
+          "title": "노이리움, 초경량 플렉서블 스톤 '노이스톤' 공개",
+          "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=393000",
+          "source": "네이버뉴스",
+          "at": "2026-09-29T13:06:05.542468+00:00",
+          "speech": false
+        }
       ],
-      "days_ago": 0,
-      "seen_at": "2026-09-29T13:06:05.542468+00:00"
+      "days_ago": 1,
+      "stale": true
     },
     {
       "entity": "소연 (SOYEON)",
-      "kind": "news",
       "multiple": 4.0,
-      "at_least": false,
-      "now": 8,
-      "base": 2,
-      "capped": false,
-      "why": "기사 8건 (평소 2)",
+      "speech": 1,
+      "also_mag": null,
       "articles": [
         {
           "title": "아이들 소연, 대학 축제서 캠퍼스 낭만 완성 “분위기 너무 좋아”",
@@ -852,19 +1044,14 @@
           "speech": false
         }
       ],
-      "speech": 1,
-      "days_ago": 0,
-      "seen_at": "2026-09-29T13:06:05.542468+00:00"
+      "days_ago": 1,
+      "stale": true
     },
     {
       "entity": "김하온",
-      "kind": "news",
       "multiple": 5.0,
-      "at_least": false,
-      "now": 5,
-      "base": 1,
-      "capped": false,
-      "why": "기사 5건 (평소 1)",
+      "speech": 0,
+      "also_mag": null,
       "articles": [
         {
           "title": "김하온, 거울 셀카로 복근 공개…11월 앨범 예고",
@@ -888,52 +1075,14 @@
           "speech": false
         }
       ],
-      "speech": 0,
-      "also_in_magazine": [
-        "DdYzrqviBn9",
-        "Dc73j9AxDKD"
-      ],
-      "days_ago": 0,
-      "seen_at": "2026-09-29T13:06:05.542468+00:00"
-    },
-    {
-      "entity": "노이",
-      "kind": "news",
-      "multiple": 4.0,
-      "at_least": false,
-      "now": 8,
-      "base": 2,
-      "capped": false,
-      "why": "기사 8건 (평소 2)",
-      "articles": [
-        {
-          "title": "에이노이헤어, 연남동 사옥 중심 교육 시스템 구축…전 지점 기술 표준...",
-          "url": "https://www.livesnews.com/news/article.html?no=64552",
-          "source": "네이버뉴스",
-          "at": "2026-09-29T13:06:05.542468+00:00",
-          "speech": false
-        },
-        {
-          "title": "노이리움, 초경량 플렉서블 스톤 '노이스톤' 공개",
-          "url": "https://www.fntoday.co.kr/news/articleView.html?idxno=393000",
-          "source": "네이버뉴스",
-          "at": "2026-09-29T13:06:05.542468+00:00",
-          "speech": false
-        }
-      ],
-      "speech": 0,
-      "days_ago": 0,
-      "seen_at": "2026-09-29T13:06:05.542468+00:00"
+      "days_ago": 1,
+      "stale": true
     },
     {
       "entity": "CORTIS (코르티스)",
-      "kind": "chart",
       "multiple": 2.0,
-      "now": 7,
-      "base": 17,
-      "capped": false,
-      "chart_jump": 10,
-      "why": "차트 17위 → 7위",
+      "speech": 0,
+      "also_mag": null,
       "articles": [
         {
           "title": "코르티스·영탁, 한터 주간차트 정상⋯월드·음반 각각 1위",
@@ -957,9 +1106,8 @@
           "speech": false
         }
       ],
-      "speech": 0,
-      "days_ago": 0,
-      "seen_at": "2026-09-29T13:06:05.542468+00:00"
+      "days_ago": 1,
+      "stale": true
     }
   ],
   "followups": [
@@ -990,6 +1138,36 @@
           "url": "https://www.instagram.com/p/Ddihw0JRR0E/",
           "at": "2026-09-21T15:35+09:00",
           "head": "사랑한다는 말 없이 전하는 사랑"
+        }
+      ]
+    },
+    {
+      "key": "린킨파크",
+      "name": "린킨파크",
+      "tracked": false,
+      "posts": 2,
+      "accounts": [
+        "ageofband",
+        "fstvl.life"
+      ],
+      "days": 2,
+      "first_at": "2026-09-21T18:03+09:00",
+      "last_at": "2026-09-29T22:58+09:00",
+      "fresh": 0,
+      "latest": [
+        {
+          "id": "Dd360ZVyW-x",
+          "account": "ageofband",
+          "url": "https://www.instagram.com/p/Dd360ZVyW-x/",
+          "at": "2026-09-29T22:58+09:00",
+          "head": "AoB 2017년 프론트맨 체스터 베닝턴의 사망 이후, 밴드 #린킨파크 가 겪은 상"
+        },
+        {
+          "id": "Ddiy1SYhqML",
+          "account": "fstvl.life",
+          "url": "https://www.instagram.com/p/Ddiy1SYhqML/",
+          "at": "2026-09-21T18:03+09:00",
+          "head": "LINKIN PARK 다큐멘터리 영화 <언섀터> 개봉"
         }
       ]
     },
@@ -1026,47 +1204,47 @@
   ],
   "plan": [
     {
-      "id": "people-20260929",
+      "id": "people-20260930",
       "kind": "people",
       "title": "다룰 만한 인물",
       "why": "8명 · 우리가 90일간 안 다룬 이름",
-      "stat": "후보 풀 547명 · 중간 도달 24,780 인 형식의 재료",
+      "stat": "후보 풀 550명 · 중간 도달 24,780 인 형식의 재료",
       "items": [
         {
           "id": "person-alldayproject",
           "name": "alldayproject",
-          "why": "매거진 1곳(mini_magkr) · 뉴스 386건 · 차트 9회 관측·최고 3위 · 우리는 안 다룸",
-          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: alldayproject 나무위키 …\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 1곳이 다룸 · 뉴스 386건 · 차트 최고 3위\n출처: 정리 | PLOT\n"
+          "why": "매거진 1곳(mini_magkr) · 뉴스 572건 · 차트 16회 관측·최고 3위 · 우리는 안 다룸",
+          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: alldayproject 나무위키 …\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 1곳이 다룸 · 뉴스 572건 · 차트 최고 3위\n출처: 정리 | PLOT\n"
         },
         {
           "id": "person-최예나",
           "name": "최예나",
-          "why": "매거진 2곳(mini_magkr, nitemagkr) · 차트 38회 관측·최고 20위 · 우리는 안 다룸",
+          "why": "매거진 2곳(mini_magkr, nitemagkr) · 차트 43회 관측·최고 20위 · 우리는 안 다룸",
           "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 최예나 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 2곳이 다룸 · 차트 최고 20위\n출처: 정리 | PLOT\n"
-        },
-        {
-          "id": "person-아일릿",
-          "name": "아일릿",
-          "why": "뉴스 865건 · 차트 68회 관측·최고 12위 · 우리는 안 다룸",
-          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 아일릿 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 뉴스 865건 · 차트 최고 12위\n출처: 정리 | PLOT\n"
-        },
-        {
-          "id": "person-키키",
-          "name": "키키",
-          "why": "뉴스 794건 · 차트 68회 관측·최고 13위 · 우리는 안 다룸",
-          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 키키 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 뉴스 794건 · 차트 최고 13위\n출처: 정리 | PLOT\n"
         },
         {
           "id": "person-지소쿠리클럽",
           "name": "지소쿠리클럽",
-          "why": "매거진 1곳(ageofband) · 우리는 안 다룸",
-          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 지소쿠리클럽 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 1곳이 다룸 · 뉴스 48건\n출처: 정리 | PLOT\n"
+          "why": "매거진 1곳(ageofband) · 뉴스 58건 · 우리는 안 다룸",
+          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 지소쿠리클럽 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 1곳이 다룸 · 뉴스 58건\n출처: 정리 | PLOT\n"
         },
         {
-          "id": "person-backnumberofficial",
-          "name": "back_number_official",
-          "why": "매거진 2곳(ageofband, wavemag.kr) · 우리는 안 다룸",
-          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: back_number_officia…\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 2곳이 다룸\n출처: 정리 | PLOT\n"
+          "id": "person-아일릿",
+          "name": "아일릿",
+          "why": "뉴스 862건 · 차트 66회 관측·최고 12위 · 우리는 안 다룸",
+          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 아일릿 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 뉴스 862건 · 차트 최고 12위\n출처: 정리 | PLOT\n"
+        },
+        {
+          "id": "person-키키",
+          "name": "키키",
+          "why": "뉴스 691건 · 차트 66회 관측·최고 14위 · 우리는 안 다룸",
+          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 키키 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 뉴스 691건 · 차트 최고 14위\n출처: 정리 | PLOT\n"
+        },
+        {
+          "id": "person-린킨파크",
+          "name": "린킨파크",
+          "why": "매거진 2곳(ageofband, fstvl.life) · 우리는 안 다룸",
+          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 린킨파크 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 2곳이 다룸\n출처: 정리 | PLOT\n"
         },
         {
           "id": "person-balmingtiger",
@@ -1075,22 +1253,22 @@
           "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: balmingtiger 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 2곳이 다룸\n출처: 정리 | PLOT\n"
         },
         {
-          "id": "person-woodz",
-          "name": "WOODZ",
-          "why": "뉴스 314건 · 차트 68회 관측·최고 12위 · 우리는 안 다룸",
-          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: WOODZ 나무위키 털기\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 뉴스 314건 · 차트 최고 12위\n출처: 정리 | PLOT\n"
+          "id": "person-backnumberofficial",
+          "name": "back_number_official",
+          "why": "매거진 2곳(ageofband, wavemag.kr) · 우리는 안 다룸",
+          "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: back_number_officia…\n부제: 왜 지금 이 사람인가\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 어디서 시작했나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 무엇으로 알려졌나\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 최근에 무슨 일이\n본문: \n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 왜 지금 이 사람인가\n본문: 최근 3주 매거진 2곳이 다룸\n출처: 정리 | PLOT\n"
         }
       ],
-      "generated_at": "2026-09-29 22:06 KST"
+      "generated_at": "2026-09-30 15:05 KST"
     },
     {
-      "id": "market-20260929",
+      "id": "market-20260930",
       "kind": "market",
       "where": "plan",
       "order": 90,
       "title": "2026.09 차트 정리",
-      "why": "새 얼굴 2명 · 빠진 이름 6명 · 최고 기록 경신 3명",
-      "stat": "관측 21일 · 아티스트 57명",
+      "why": "새 얼굴 2명 · 빠진 이름 4명 · 최고 기록 경신 5명",
+      "stat": "관측 21일 · 아티스트 61명",
       "rows": [
         {
           "label": "오래 버틴",
@@ -1102,11 +1280,11 @@
         },
         {
           "label": "빠진",
-          "value": "아홉, 레드벨벳, 이창섭"
+          "value": "아홉, 다비치, 레드벨벳"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "시스템서울, 실리카겔, 박재범"
+          "value": "시스템서울, 실리카겔, 이예준"
         }
       ],
       "more": [
@@ -1116,7 +1294,7 @@
         },
         {
           "label": "오래 버틴",
-          "value": "소녀시대-효리수 21일 · 최고 1위 · 지금 7위"
+          "value": "소녀시대-효리수 21일 · 최고 1위 · 지금 6위"
         },
         {
           "label": "오래 버틴",
@@ -1124,15 +1302,15 @@
         },
         {
           "label": "오래 버틴",
-          "value": "빅뱅 21일 · 최고 2위 · 지금 21위"
-        },
-        {
-          "label": "오래 버틴",
           "value": "에이티즈 21일 · 최고 2위 · 지금 5위"
         },
         {
           "label": "오래 버틴",
-          "value": "태연 21일 · 최고 3위 · 지금 11위"
+          "value": "태연 21일 · 최고 3위 · 지금 14위"
+        },
+        {
+          "label": "오래 버틴",
+          "value": "코르티스 21일 · 최고 4위 · 지금 10위"
         },
         {
           "label": "오래 버틴",
@@ -1140,15 +1318,15 @@
         },
         {
           "label": "오래 버틴",
-          "value": "코르티스 21일 · 최고 4위 · 지금 7위"
+          "value": "한로로 21일 · 최고 9위 · 지금 21위"
         },
         {
           "label": "오래 버틴",
-          "value": "키키 21일 · 최고 8위 · 지금 16위"
+          "value": "제니 21일 · 최고 10위 · 지금 15위"
         },
         {
           "label": "오래 버틴",
-          "value": "한로로 21일 · 최고 9위 · 지금 23위"
+          "value": "WOODZ 21일 · 최고 11위 · 지금 11위"
         },
         {
           "label": "이번 주 진입",
@@ -1156,7 +1334,7 @@
         },
         {
           "label": "이번 주 진입",
-          "value": "NMIXX 최고 27위"
+          "value": "NMIXX 최고 24위"
         },
         {
           "label": "빠진",
@@ -1164,27 +1342,27 @@
         },
         {
           "label": "빠진",
-          "value": "레드벨벳 (최고 20위였다)"
-        },
-        {
-          "label": "빠진",
-          "value": "이창섭 (최고 23위였다)"
-        },
-        {
-          "label": "빠진",
           "value": "다비치 (최고 24위였다)"
+        },
+        {
+          "label": "빠진",
+          "value": "레드벨벳 (최고 25위였다)"
         },
         {
           "label": "빠진",
           "value": "BLACKPINK (최고 27위였다)"
         },
         {
-          "label": "빠진",
-          "value": "로이킴 (최고 29위였다)"
+          "label": "올라온",
+          "value": "이창섭 26.5위 → 17.0위"
         },
         {
           "label": "올라온",
-          "value": "머무르 9.4위 → 1.0위"
+          "value": "머무르 7.8위 → 1.2위"
+        },
+        {
+          "label": "올라온",
+          "value": "김나영 27.5위 → 24.0위"
         },
         {
           "label": "올라온",
@@ -1192,59 +1370,51 @@
         },
         {
           "label": "올라온",
-          "value": "최예나 25.7위 → 23.0위"
+          "value": "최예나 25.0위 → 23.0위"
         },
         {
           "label": "올라온",
-          "value": "로제 25.5위 → 23.7위"
+          "value": "로제 25.6위 → 23.7위"
         },
         {
           "label": "올라온",
-          "value": "아일릿 15.6위 → 14.0위"
+          "value": "아일릿 15.3위 → 14.0위"
         },
         {
           "label": "올라온",
-          "value": "태연 9.6위 → 10.7위"
-        },
-        {
-          "label": "올라온",
-          "value": "한로로 19.7위 → 21.3위"
-        },
-        {
-          "label": "올라온",
-          "value": "하츠투하츠 24.7위 → 26.3위"
+          "value": "HUNTR/X 29.0위 → 28.0위"
         },
         {
           "label": "내려간",
-          "value": "빅뱅 12.1위 → 19.0위"
+          "value": "이무진 19.0위 → 27.0위"
         },
         {
           "label": "내려간",
-          "value": "제니 15.0위 → 20.3위"
+          "value": "빅뱅 12.5위 → 18.3위"
         },
         {
           "label": "내려간",
-          "value": "화사 17.1위 → 22.0위"
+          "value": "화사 17.0위 → 21.0위"
         },
         {
           "label": "내려간",
-          "value": "도경수 3.7위 → 8.0위"
+          "value": "잔나비 22.0위 → 26.0위"
         },
         {
           "label": "내려간",
-          "value": "최유리 13.4위 → 16.3위"
+          "value": "도경수 4.0위 → 7.8위"
         },
         {
           "label": "내려간",
-          "value": "아이오아이 5.9위 → 8.7위"
+          "value": "제니 15.3위 → 19.0위"
         },
         {
           "label": "내려간",
-          "value": "악뮤 26.8위 → 29.5위"
+          "value": "서동현 23.6위 → 27.0위"
         },
         {
           "label": "내려간",
-          "value": "소녀시대-효리수 4.3위 → 6.3위"
+          "value": "악뮤 26.4위 → 29.5위"
         },
         {
           "label": "최고 경신",
@@ -1256,35 +1426,47 @@
         },
         {
           "label": "최고 경신",
+          "value": "이창섭 23위 → 17위"
+        },
+        {
+          "label": "최고 경신",
+          "value": "김나영 24위 → 20위"
+        },
+        {
+          "label": "최고 경신",
           "value": "로제 22위 → 20위"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "시스템서울 뉴스 550건"
+          "value": "시스템서울 뉴스 900건"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "실리카겔 뉴스 257건"
+          "value": "실리카겔 뉴스 421건"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "박재범 뉴스 201건"
+          "value": "이예준 뉴스 314건"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "스윙스 뉴스 173건"
+          "value": "박재범 뉴스 289건"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "비오 뉴스 147건"
+          "value": "스윙스 뉴스 264건"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "최성 뉴스 144건"
+          "value": "비오 뉴스 262건"
         },
         {
           "label": "뉴스만 시끄러운",
-          "value": "로꼬 뉴스 114건"
+          "value": "최성 뉴스 237건"
+        },
+        {
+          "label": "뉴스만 시끄러운",
+          "value": "KC 뉴스 157건"
         },
         {
           "label": "말 없이 듣는",
@@ -1297,10 +1479,6 @@
         {
           "label": "말 없이 듣는",
           "value": "아이오아이 4위"
-        },
-        {
-          "label": "말 없이 듣는",
-          "value": "WOODZ 11위"
         },
         {
           "label": "말 없이 듣는",
@@ -1317,13 +1495,17 @@
         {
           "label": "말 없이 듣는",
           "value": "최예나 20위"
+        },
+        {
+          "label": "말 없이 듣는",
+          "value": "서동현 11위"
         }
       ],
-      "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 2026.09 차트 정리\n부제: 28일 동안 우리가 적어 둔 기록\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 가장 오래 버틴 이름\n본문: 리센느 21일(최고 1위) / 소녀시대-효리수 21일(최고 1위) / aespa 21일(최고 1위)\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 이번 주 새로 들어온\n본문: ALLDAY PROJECT(최고 3위) / NMIXX(최고 27위)\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 조용히 빠진 이름\n본문: 아홉 / 레드벨벳 / 이창섭 / 다비치 / BLACKPINK\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 한 주 만에 올라온\n본문: 머무르 9.4위→1.0위 / 아이브 28.0위→25.0위 / 최예나 25.7위→23.0위\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 제 최고 기록을 갈아치운\n본문: 머무르 2위→1위 / 아일릿 13위→12위 / 로제 22위→20위\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 뉴스는 시끄러운데 차트엔 없는\n본문: 시스템서울 / 실리카겔 / 박재범 / 스윙스 / 비오\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 말은 없는데 계속 듣는\n본문: 소녀시대-효리수(1위) / 태연(3위) / 아이오아이(4위) / WOODZ(11위) / 화사(12위)\n출처: 집계 | PLOT (벅스 차트 21일)\n",
-      "generated_at": "2026-09-29 22:06 KST"
+      "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 2026.09 차트 정리\n부제: 28일 동안 우리가 적어 둔 기록\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 가장 오래 버틴 이름\n본문: 리센느 21일(최고 1위) / 소녀시대-효리수 21일(최고 1위) / aespa 21일(최고 1위)\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 이번 주 새로 들어온\n본문: ALLDAY PROJECT(최고 3위) / NMIXX(최고 24위)\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 조용히 빠진 이름\n본문: 아홉 / 다비치 / 레드벨벳 / BLACKPINK\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 한 주 만에 올라온\n본문: 이창섭 26.5위→17.0위 / 머무르 7.8위→1.2위 / 김나영 27.5위→24.0위\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 제 최고 기록을 갈아치운\n본문: 머무르 2위→1위 / 아일릿 13위→12위 / 이창섭 23위→17위\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 뉴스는 시끄러운데 차트엔 없는\n본문: 시스템서울 / 실리카겔 / 이예준 / 박재범 / 스윙스\n출처: 집계 | PLOT (벅스 차트 21일)\n\n[슬라이드]\n소스: \n소제목: 말은 없는데 계속 듣는\n본문: 소녀시대-효리수(1위) / 태연(3위) / 아이오아이(4위) / 화사(12위) / 하츠투하츠(17위)\n출처: 집계 | PLOT (벅스 차트 21일)\n",
+      "generated_at": "2026-09-30 15:05 KST"
     },
     {
-      "id": "today-20260929",
+      "id": "today-20260930",
       "kind": "today",
       "title": "134번째 오늘의 노래",
       "why": "6명 · 이야기가 붙을 이름",
@@ -1332,7 +1514,7 @@
         {
           "id": "song-최예나",
           "name": "최예나",
-          "why": "매거진 2곳 · 차트 32일·최고 17위",
+          "why": "매거진 2곳 · 차트 31일·최고 17위",
           "angles": [
             "이 상이 이 사람에게 무슨 뜻인가",
             "받기까지의 시간",
@@ -1376,7 +1558,7 @@
         {
           "id": "song-alldayproject",
           "name": "alldayproject",
-          "why": "매거진 1곳 · 차트 2일·최고 3위 · 최근 발매 CRASH",
+          "why": "매거진 1곳 · 차트 3일·최고 3위 · 최근 발매 CRASH",
           "angles": [
             "비어 있던 시간에 무슨 일이 있었나",
             "돌아온 소리가 어떻게 달라졌나",
@@ -1621,13 +1803,13 @@
         }
       ],
       "note": "실마리는 남의 캡션에서 따온 단서다. 사실만 확인하고 문장은 새로 쓴다.",
-      "generated_at": "2026-09-29 22:06 KST"
+      "generated_at": "2026-09-30 15:05 KST"
     },
     {
-      "id": "release-20260929",
+      "id": "release-20260930",
       "kind": "release",
       "title": "이번 주 신보 묶음",
-      "why": "40장 · 낱개 고지 대신 한 편으로",
+      "why": "58장 · 낱개 고지 대신 한 편으로",
       "stat": "출처 멜론 · 최근 7일",
       "rows": [
         {
@@ -1817,32 +1999,32 @@
           "value": "09/29 엔하이픈 (ENHYPEN) & SANTOS BRAVOS & PETERBLUE 〈Bloody Paradise x VELOCIDADE (PETERBLUE Remix)〉"
         }
       ],
-      "form": "[카테고리]\nNews\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 9월 5주 신보\n부제: 이번 주에 나온 40장\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 이번 주 눈에 띄는\n본문: 니쥬 〈Sour Grapes〉\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 9월 28일 (월)\n본문: 니쥬 〈Sour Grapes〉 / ALLDAY PROJECT 〈CRASH〉 / BOYNEXTDOOR 〈HOME: DELUXE〉 / 예성 〈Winds of Time〉\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 9월 29일 (화)\n본문: 박재정 〈기록 (上)〉(EP) / 온유 (ONEW) & 유주 〈Mind Games〉(싱글) / 죠지 & 프라이머리 〈AGAIN and AGAIN (부활남: 더 레드 OST)〉(OST) / 버벌진트 〈SUPERDRY〉(싱글)\n출처: 정리 | PLOT\n",
-      "generated_at": "2026-09-29 22:06 KST"
+      "form": "[카테고리]\nNews\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 9월 5주 신보\n부제: 이번 주에 나온 58장\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 이번 주 눈에 띄는\n본문: 니쥬 〈Sour Grapes〉\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 9월 28일 (월)\n본문: 니쥬 〈Sour Grapes〉 / ALLDAY PROJECT 〈CRASH〉 / BOYNEXTDOOR 〈HOME: DELUXE〉 / 예성 〈Winds of Time〉\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 9월 29일 (화)\n본문: 박재정 〈기록 (上)〉(EP) / 온유 (ONEW) & 유주 〈Mind Games〉(싱글) / 죠지 & 프라이머리 〈AGAIN and AGAIN (부활남: 더 레드 OST)〉(OST) / 버벌진트 〈SUPERDRY〉(싱글)\n출처: 정리 | PLOT\n\n[슬라이드]\n소스: \n소제목: 9월 30일 (수)\n본문: 김결 〈다 괜찮을 거야〉(싱글) / NC.A 〈어쩌면 (해시태그는 첫사랑 X NC.A)〉(싱글) / 김연자 〈NEWNIVERSE〉(싱글) / 38 K-POP HUNTERS 〈RISING : POCHEON 38〉(싱글)\n출처: 정리 | PLOT\n",
+      "generated_at": "2026-09-30 15:05 KST"
     },
     {
-      "id": "themes-20260929",
+      "id": "themes-20260930",
       "kind": "themes",
       "where": "news",
       "title": "우리가 안 다룬 이야기",
       "why": "12개 주제 · 판이 더 많이 쓴 순서",
-      "stat": "매거진 글 434건 vs 우리 133건 · 최근 21일 · 가사 묶음은 코퍼스가 생기면",
+      "stat": "매거진 글 430건 vs 우리 133건 · 최근 21일 · 가사 묶음은 코퍼스가 생기면",
       "rows": [
         {
           "label": "주년·재발매",
           "value": "매거진 32건(7곳) · 우리 4건 · aob, 싱싱음악"
         },
         {
-          "label": "리메이크·샘플링",
-          "value": "매거진 15건(5곳) · 우리 0건 · odd95, 울지마나까지그러고파ㅠ"
+          "label": "컴백·복귀",
+          "value": "매거진 48건(10곳) · 우리 10건 · aob_interview:, 광인셔틀"
         },
         {
           "label": "해외·빌보드",
           "value": "매거진 28건(8곳) · 우리 4건 · 오아시스, live27"
         },
         {
-          "label": "컴백·복귀",
-          "value": "매거진 47건(10곳) · 우리 10건 · aob_interview:, 광인셔틀"
+          "label": "리메이크·샘플링",
+          "value": "매거진 15건(5곳) · 우리 0건 · odd95, 울지마나까지그러고파ㅠ"
         },
         {
           "label": "팬덤·굿즈",
@@ -1881,32 +2063,32 @@
           ]
         },
         {
-          "theme": "리메이크·샘플링",
-          "stat": "매거진 15건 · 5곳 · 우리 0건",
+          "theme": "컴백·복귀",
+          "stat": "매거진 48건 · 10곳 · 우리 10건",
           "posts": [
             {
-              "at": "09/17",
-              "from": "hiptake_",
-              "head": "\"리센느의 벽을 넘었다\" 1️⃣ 전소연의 \"퇴사할게요\"가 멜론 TOP 100 차트 1위를 거머쥐었습니다. 한동안 대국민 아이돌",
-              "url": "https://www.instagram.com/p/DdX-w0Ak_Ii/"
+              "at": "09/11",
+              "from": "ageofband",
+              "head": "#AoB_interview: 윤마치(@yooonmarch) ”그래도 나름 행복한 다큐멘터리!“ EP 〈상생관계〉를 발매하며 얼",
+              "url": "https://www.instagram.com/p/DdInBuhkgP1/"
             },
             {
               "at": "09/17",
-              "from": "hiptake_",
-              "head": "”세 남자의 홈파티, 진짜 잘노네“ 🎧 싸이커스가 민재, 수민, 예찬으로 구성된 랩 유닛 콘텐츠 ’저스트 포 펀(JUST FO",
-              "url": "https://www.instagram.com/p/DdYVsbLk8kC/"
+              "from": "eyesmag",
+              "head": "써코니 신으면 지구 반대편도 뛰어간다.🖤 써코니(@sauconykr)의 ʻOmni 9‘과 ʻRide 1’이 리뉴얼되어 돌아왔습",
+              "url": "https://www.instagram.com/p/DdY0d0dCbmd/"
             },
             {
-              "at": "09/16",
-              "from": "hiptake_",
-              "head": "\"KPOPIUM\" 😈 에스파가 새롭게 발표한 [SYNK : COMPLaeXITY - 2026 Special Digital Si",
-              "url": "https://www.instagram.com/p/DdVRRzYTuGX/"
+              "at": "09/11",
+              "from": "fstvl.life",
+              "head": "🔥광인셔틀 2 공지🔥 작년에 이어 다시 돌아온 광인셔틀 2의 노선과 가격, 예약 방법 안내드립니다. [운행 일정] 출발 - 인",
+              "url": "https://www.instagram.com/p/DdI8G7RgfBD/"
             },
             {
-              "at": "09/16",
-              "from": "nitemagkr",
-              "head": "“30대도 락스타가 될 수 있어” 🤘 최근 새 정규앨범 [31Rockstar]로 돌아온 래퍼 Odd95. 그는 과거 ‘스물다섯",
-              "url": "https://www.instagram.com/p/DdWRMC9CaFB/"
+              "at": "09/17",
+              "from": "glowupmag",
+              "head": "가방 맛집 보테가 베네타(@newbottega), 또 일냈습니다. 이번에는 보부상들을 위한 토트백으로 돌아왔습니다. 👜 루이스",
+              "url": "https://www.instagram.com/p/DdXw1IUgdXN/"
             }
           ]
         },
@@ -1941,32 +2123,32 @@
           ]
         },
         {
-          "theme": "컴백·복귀",
-          "stat": "매거진 47건 · 10곳 · 우리 10건",
+          "theme": "리메이크·샘플링",
+          "stat": "매거진 15건 · 5곳 · 우리 0건",
           "posts": [
             {
-              "at": "09/11",
-              "from": "ageofband",
-              "head": "#AoB_interview: 윤마치(@yooonmarch) ”그래도 나름 행복한 다큐멘터리!“ EP 〈상생관계〉를 발매하며 얼",
-              "url": "https://www.instagram.com/p/DdInBuhkgP1/"
+              "at": "09/17",
+              "from": "hiptake_",
+              "head": "\"리센느의 벽을 넘었다\" 1️⃣ 전소연의 \"퇴사할게요\"가 멜론 TOP 100 차트 1위를 거머쥐었습니다. 한동안 대국민 아이돌",
+              "url": "https://www.instagram.com/p/DdX-w0Ak_Ii/"
             },
             {
               "at": "09/17",
-              "from": "eyesmag",
-              "head": "써코니 신으면 지구 반대편도 뛰어간다.🖤 써코니(@sauconykr)의 ʻOmni 9‘과 ʻRide 1’이 리뉴얼되어 돌아왔습",
-              "url": "https://www.instagram.com/p/DdY0d0dCbmd/"
+              "from": "hiptake_",
+              "head": "”세 남자의 홈파티, 진짜 잘노네“ 🎧 싸이커스가 민재, 수민, 예찬으로 구성된 랩 유닛 콘텐츠 ’저스트 포 펀(JUST FO",
+              "url": "https://www.instagram.com/p/DdYVsbLk8kC/"
             },
             {
-              "at": "09/11",
-              "from": "fstvl.life",
-              "head": "🔥광인셔틀 2 공지🔥 작년에 이어 다시 돌아온 광인셔틀 2의 노선과 가격, 예약 방법 안내드립니다. [운행 일정] 출발 - 인",
-              "url": "https://www.instagram.com/p/DdI8G7RgfBD/"
+              "at": "09/16",
+              "from": "hiptake_",
+              "head": "\"KPOPIUM\" 😈 에스파가 새롭게 발표한 [SYNK : COMPLaeXITY - 2026 Special Digital Si",
+              "url": "https://www.instagram.com/p/DdVRRzYTuGX/"
             },
             {
-              "at": "09/17",
-              "from": "glowupmag",
-              "head": "가방 맛집 보테가 베네타(@newbottega), 또 일냈습니다. 이번에는 보부상들을 위한 토트백으로 돌아왔습니다. 👜 루이스",
-              "url": "https://www.instagram.com/p/DdXw1IUgdXN/"
+              "at": "09/16",
+              "from": "nitemagkr",
+              "head": "“30대도 락스타가 될 수 있어” 🤘 최근 새 정규앨범 [31Rockstar]로 돌아온 래퍼 Odd95. 그는 과거 ‘스물다섯",
+              "url": "https://www.instagram.com/p/DdWRMC9CaFB/"
             }
           ]
         },
@@ -2002,7 +2184,7 @@
         },
         {
           "theme": "인터뷰",
-          "stat": "매거진 24건 · 8곳 · 우리 4건",
+          "stat": "매거진 23건 · 8곳 · 우리 4건",
           "posts": [
             {
               "at": "09/17",
@@ -2091,36 +2273,6 @@
           ]
         },
         {
-          "theme": "유튜브·SNS",
-          "stat": "매거진 24건 · 7곳 · 우리 6건",
-          "posts": [
-            {
-              "at": "09/17",
-              "from": "eyesmag",
-              "head": "한국 x 후지이 카제 x ‘You' 이 조합 확실히 사랑해.🖤 한국에서 촬영한 후지이 카제의 ‘You’ 뮤직비디오가 공개됐습니",
-              "url": "https://www.instagram.com/p/DdY470-p_Wn/"
-            },
-            {
-              "at": "09/15",
-              "from": "hiptake_",
-              "head": "\"박이형도 힙갤러였구나\" ⌨️ 9월 14일 저녁, 존박은 갑자기 디시인사이드 힙합갤러리에 등판했습니다. 존박은 '인증샷으로 시",
-              "url": "https://www.instagram.com/p/DdS9ozoBm2R/"
-            },
-            {
-              "at": "09/14",
-              "from": "hiptake_",
-              "head": "\"에픽하이의 리더 투컷\" 🚩 에픽하이의 리더가 데뷔 23년 만에 타블로에서 DJ 투컷으로 변경됐습니다. 사건의 발단은 그들의 ",
-              "url": "https://www.instagram.com/p/DdQ0gunhLOD/"
-            },
-            {
-              "at": "09/11",
-              "from": "hiptake_",
-              "head": "\"존박의 래퍼 도전기가 시작된다\" 🎤 최근 존박은 래퍼에 도전하기 시작했습니다. 그의 자컨 유튜브 채널 '존이냐박이냐'의 새로",
-              "url": "https://www.instagram.com/p/DdInFrSzyH-/"
-            }
-          ]
-        },
-        {
           "theme": "챌린지·숏폼",
           "stat": "매거진 7건 · 6곳 · 우리 1건",
           "posts": [
@@ -2147,6 +2299,36 @@
               "from": "wavemag.kr",
               "head": "2007년 발매된 Arctic Monkeys의 <505>는 오랜 시간이 지난 지금까지도 새로운 세대에게 꾸준히 발견되고 있는 ",
               "url": "https://www.instagram.com/p/DdNpQGcR-JG/"
+            }
+          ]
+        },
+        {
+          "theme": "유튜브·SNS",
+          "stat": "매거진 23건 · 7곳 · 우리 6건",
+          "posts": [
+            {
+              "at": "09/17",
+              "from": "eyesmag",
+              "head": "한국 x 후지이 카제 x ‘You' 이 조합 확실히 사랑해.🖤 한국에서 촬영한 후지이 카제의 ‘You’ 뮤직비디오가 공개됐습니",
+              "url": "https://www.instagram.com/p/DdY470-p_Wn/"
+            },
+            {
+              "at": "09/15",
+              "from": "hiptake_",
+              "head": "\"박이형도 힙갤러였구나\" ⌨️ 9월 14일 저녁, 존박은 갑자기 디시인사이드 힙합갤러리에 등판했습니다. 존박은 '인증샷으로 시",
+              "url": "https://www.instagram.com/p/DdS9ozoBm2R/"
+            },
+            {
+              "at": "09/14",
+              "from": "hiptake_",
+              "head": "\"에픽하이의 리더 투컷\" 🚩 에픽하이의 리더가 데뷔 23년 만에 타블로에서 DJ 투컷으로 변경됐습니다. 사건의 발단은 그들의 ",
+              "url": "https://www.instagram.com/p/DdQ0gunhLOD/"
+            },
+            {
+              "at": "09/11",
+              "from": "hiptake_",
+              "head": "\"존박의 래퍼 도전기가 시작된다\" 🎤 최근 존박은 래퍼에 도전하기 시작했습니다. 그의 자컨 유튜브 채널 '존이냐박이냐'의 새로",
+              "url": "https://www.instagram.com/p/DdInFrSzyH-/"
             }
           ]
         },
@@ -2211,16 +2393,16 @@
           "value": "매거진 32건(7곳) · 우리 4건"
         },
         {
-          "label": "리메이크·샘플링",
-          "value": "매거진 15건(5곳) · 우리 0건"
+          "label": "컴백·복귀",
+          "value": "매거진 48건(10곳) · 우리 10건"
         },
         {
           "label": "해외·빌보드",
           "value": "매거진 28건(8곳) · 우리 4건"
         },
         {
-          "label": "컴백·복귀",
-          "value": "매거진 47건(10곳) · 우리 10건"
+          "label": "리메이크·샘플링",
+          "value": "매거진 15건(5곳) · 우리 0건"
         },
         {
           "label": "팬덤·굿즈",
@@ -2228,7 +2410,7 @@
         },
         {
           "label": "인터뷰",
-          "value": "매거진 24건(8곳) · 우리 4건"
+          "value": "매거진 23건(8곳) · 우리 4건"
         },
         {
           "label": "페스티벌·라인업",
@@ -2239,12 +2421,12 @@
           "value": "매거진 18건(4곳) · 우리 4건"
         },
         {
-          "label": "유튜브·SNS",
-          "value": "매거진 24건(7곳) · 우리 6건"
-        },
-        {
           "label": "챌린지·숏폼",
           "value": "매거진 7건(6곳) · 우리 1건"
+        },
+        {
+          "label": "유튜브·SNS",
+          "value": "매거진 23건(7곳) · 우리 6건"
         },
         {
           "label": "해체·탈퇴",
@@ -2255,32 +2437,32 @@
           "value": "매거진 6건(4곳) · 우리 1건"
         },
         {
-          "label": "자작·프로듀싱",
-          "value": "매거진 34건(7곳) · 우리 10건"
-        },
-        {
           "label": "피처링·협업",
           "value": "매거진 47건(7곳) · 우리 14건"
+        },
+        {
+          "label": "내한·투어",
+          "value": "매거진 37건(7곳) · 우리 11건"
         },
         {
           "label": "군백기·입대",
           "value": "매거진 4건(2곳) · 우리 1건"
         },
         {
-          "label": "내한·투어",
-          "value": "매거진 36건(7곳) · 우리 11건"
-        },
-        {
-          "label": "예능·방송",
-          "value": "매거진 32건(7곳) · 우리 10건"
+          "label": "자작·프로듀싱",
+          "value": "매거진 33건(7곳) · 우리 10건"
         },
         {
           "label": "논란·해명",
           "value": "매거진 11건(3곳) · 우리 4건"
         },
         {
+          "label": "예능·방송",
+          "value": "매거진 30건(7곳) · 우리 10건"
+        },
+        {
           "label": "연애·결혼·육아",
-          "value": "매거진 14건(8곳) · 우리 5건"
+          "value": "매거진 13건(8곳) · 우리 5건"
         },
         {
           "label": "역주행·차트",
@@ -2292,218 +2474,19 @@
         },
         {
           "label": "수상·시상식",
-          "value": "매거진 23건(6곳) · 우리 9건"
+          "value": "매거진 22건(6곳) · 우리 9건"
         },
         {
           "label": "데뷔·신인",
-          "value": "매거진 39건(8곳) · 우리 18건"
+          "value": "매거진 40건(8곳) · 우리 18건"
         },
         {
           "label": "계약·이적",
           "value": "매거진 23건(6곳) · 우리 21건"
         }
       ],
-      "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 요즘 판이 하는 말\n부제: 최근 21일 매거진이 다룬 주제\n출처: 집계 | PLOT (매거진 434건)\n\n[슬라이드]\n소스: \n소제목: 주년·재발매\n본문: 매거진 7곳 · 글 32건 · 우리 4건 · aob, 싱싱음악, 오아시스\n출처: 집계 | PLOT (매거진 434건)\n\n[슬라이드]\n소스: \n소제목: 리메이크·샘플링\n본문: 매거진 5곳 · 글 15건 · 우리 0건 · odd95, 울지마나까지그러고파ㅠ, 도은\n출처: 집계 | PLOT (매거진 434건)\n\n[슬라이드]\n소스: \n소제목: 해외·빌보드\n본문: 매거진 8곳 · 글 28건 · 우리 4건 · 오아시스, live27, aob_interview:\n출처: 집계 | PLOT (매거진 434건)\n\n[슬라이드]\n소스: \n소제목: 컴백·복귀\n본문: 매거진 10곳 · 글 47건 · 우리 10건 · aob_interview:, 광인셔틀, 부산국제록페스티벌\n출처: 집계 | PLOT (매거진 434건)\n\n[슬라이드]\n소스: \n소제목: 팬덤·굿즈\n본문: 매거진 7곳 · 글 14건 · 우리 0건 · crush, 크러쉬, 제작협업\n출처: 집계 | PLOT (매거진 434건)\n\n[슬라이드]\n소스: \n소제목: 인터뷰\n본문: 매거진 8곳 · 글 24건 · 우리 4건 · 양홍원, 헤어스타일, aob\n출처: 집계 | PLOT (매거진 434건)\n",
-      "generated_at": "2026-09-29 22:06 KST"
-    },
-    {
-      "id": "yt-20260929",
-      "kind": "youtube",
-      "where": "news",
-      "title": "공식 채널 새 영상",
-      "why": "21건 · 채널 6곳 · 최근 3일",
-      "stat": "기사가 나기 전에 올라오는 자리다 — 숏폼 구간을 여기서 고른다",
-      "rows": [
-        {
-          "label": "HYBE LABELS",
-          "value": "4건"
-        },
-        {
-          "label": "COLORS",
-          "value": "4건"
-        },
-        {
-          "label": "JYP Entertainment",
-          "value": "4건"
-        },
-        {
-          "label": "STUDIO CHOOM",
-          "value": "4건"
-        },
-        {
-          "label": "1theK",
-          "value": "1건"
-        },
-        {
-          "label": "SMTOWN",
-          "value": "4건"
-        }
-      ],
-      "detail": [
-        {
-          "theme": "HYBE LABELS · K-pop",
-          "stat": "4건 · 가장 최근 2시간 전",
-          "posts": [
-            {
-              "at": "2시간 전",
-              "from": "YouTube",
-              "head": "ILLIT (아일릿) ‘BREAK EVEN’ Concept Film BURNING🔥 - #MINJU",
-              "url": "https://www.youtube.com/shorts/I4NJtlDTDKM"
-            },
-            {
-              "at": "2시간 전",
-              "from": "YouTube",
-              "head": "ILLIT (아일릿) ‘BREAK EVEN’ Concept Film BURNING🔥 - #MINJU",
-              "url": "https://www.youtube.com/watch?v=MPOojjbuLmI"
-            },
-            {
-              "at": "9시간 전",
-              "from": "YouTube",
-              "head": "ENHYPEN x SANTOS BRAVOS - Bloody Paradise x VELOCIDADE (PETERBLUE Remix)",
-              "url": "https://www.youtube.com/watch?v=JXe4S-WY4h4"
-            },
-            {
-              "at": "10시간 전",
-              "from": "YouTube",
-              "head": "ILLIT (아일릿) ‘BREAK EVEN’ Promotion Calendar",
-              "url": "https://www.youtube.com/shorts/vl-_W3oy61s"
-            }
-          ]
-        },
-        {
-          "theme": "COLORS · 라이브",
-          "stat": "4건 · 가장 최근 21시간 전",
-          "posts": [
-            {
-              "at": "21시간 전",
-              "from": "YouTube",
-              "head": "Ino Casablanca - PA’ TOUCH | A COLORS MOMENT",
-              "url": "https://www.youtube.com/shorts/5IhpbNY6K80"
-            },
-            {
-              "at": "21시간 전",
-              "from": "YouTube",
-              "head": "Ino Casablanca - PA' TOUCH | A COLORS SHOW",
-              "url": "https://www.youtube.com/watch?v=4Rhd0TMrvl0"
-            },
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "Ino Casablanca | 5:01",
-              "url": "https://www.youtube.com/shorts/r--rAoFdX_E"
-            },
-            {
-              "at": "2일 전",
-              "from": "YouTube",
-              "head": "AJULLIACOSTA - Nasci pra ser | A COLORS MOMENT",
-              "url": "https://www.youtube.com/shorts/ixSE9H5UKEc"
-            }
-          ]
-        },
-        {
-          "theme": "JYP Entertainment · K-pop",
-          "stat": "4건 · 가장 최근 1일 전",
-          "posts": [
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "NMIXX(엔믹스) “Strange Muse” Trailer",
-              "url": "https://www.youtube.com/watch?v=k6K0UadWsL0"
-            },
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "NiziU(니쥬) \"Sour Grapes\" M/V",
-              "url": "https://www.youtube.com/shorts/C2ZoCHz05g4"
-            },
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "NiziU(니쥬) \"Sour Grapes\" M/V",
-              "url": "https://www.youtube.com/watch?v=9M4W-t8_zK8"
-            },
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "Xdinary Heroes 9th Mini Album 〈IMPULSE〉 Instrumental Live Sampler",
-              "url": "https://www.youtube.com/watch?v=tfoSplQnzKA"
-            }
-          ]
-        },
-        {
-          "theme": "STUDIO CHOOM · 퍼포먼스",
-          "stat": "4건 · 가장 최근 1일 전",
-          "posts": [
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "이런 전단지라면 매일 정기구독 원해요 | EVNNE HOUR",
-              "url": "https://www.youtube.com/shorts/fWQdpD8P32k"
-            },
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "한국어로만 표현 가능한 감정 | EVNNE HOUR",
-              "url": "https://www.youtube.com/shorts/_k0NjeXlDd8"
-            },
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "(Teaser) [EVNNE HOUR] 여전히 낯선 '또 다른 나'로 살아가는 이븐의 두 번째 하루 | Ep.3 (ENG/JPN)",
-              "url": "https://www.youtube.com/watch?v=zFzzgunXZ1Q"
-            },
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "안녕하세요 이븐 이정현&박한빈이구요, 아르바이트하기 전 저희 모습입니다! | EVNNE HOUR",
-              "url": "https://www.youtube.com/shorts/vE61nRtWP5Y"
-            }
-          ]
-        },
-        {
-          "theme": "1theK · K-pop",
-          "stat": "1건 · 가장 최근 1일 전",
-          "posts": [
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "╭˖𖥔⌦ 기억해봐요 두근거리던 순간을  ݁˖ ☁️ 응원받고 싶을 때 듣는 플레이리스트 | 소년만화, 피카레스크, 염라, 초록별 | QWER, 윤하(YOUNHA),",
-              "url": "https://www.youtube.com/watch?v=HC7a9Wlk0rk"
-            }
-          ]
-        },
-        {
-          "theme": "SMTOWN · K-pop",
-          "stat": "4건 · 가장 최근 1일 전",
-          "posts": [
-            {
-              "at": "1일 전",
-              "from": "YouTube",
-              "head": "NCT WISH 엔시티 위시 'I SPY' Trailer Part 2. Lover Boy",
-              "url": "https://www.youtube.com/watch?v=_t9bc8WNA1c"
-            },
-            {
-              "at": "2일 전",
-              "from": "YouTube",
-              "head": "cool #SION #NCTWISH #ISPY #NCTWISH_ISPY",
-              "url": "https://www.youtube.com/shorts/d_wOo6xW_2c"
-            },
-            {
-              "at": "2일 전",
-              "from": "YouTube",
-              "head": "난 어떡하나요 #SAKUYA #NCTWISH #ISPY #NCTWISH_ISPY",
-              "url": "https://www.youtube.com/shorts/k8TifC8wh8k"
-            },
-            {
-              "at": "2일 전",
-              "from": "YouTube",
-              "head": "d꩜uble c꩜nfusion #RIKU #YUSHI #NCTWISH #ISPY #NCTWISH_ISPY",
-              "url": "https://www.youtube.com/shorts/5E8m4vVFZaM"
-            }
-          ]
-        }
-      ],
-      "generated_at": "2026-09-29 22:06 KST"
+      "form": "[카테고리]\nFeature\n\n[캡션]\n\n\n[커버]\n소스: \n제목: 요즘 판이 하는 말\n부제: 최근 21일 매거진이 다룬 주제\n출처: 집계 | PLOT (매거진 430건)\n\n[슬라이드]\n소스: \n소제목: 주년·재발매\n본문: 매거진 7곳 · 글 32건 · 우리 4건 · aob, 싱싱음악, 오아시스\n출처: 집계 | PLOT (매거진 430건)\n\n[슬라이드]\n소스: \n소제목: 컴백·복귀\n본문: 매거진 10곳 · 글 48건 · 우리 10건 · aob_interview:, 광인셔틀, 부산국제록페스티벌\n출처: 집계 | PLOT (매거진 430건)\n\n[슬라이드]\n소스: \n소제목: 해외·빌보드\n본문: 매거진 8곳 · 글 28건 · 우리 4건 · 오아시스, live27, aob_interview:\n출처: 집계 | PLOT (매거진 430건)\n\n[슬라이드]\n소스: \n소제목: 리메이크·샘플링\n본문: 매거진 5곳 · 글 15건 · 우리 0건 · odd95, 울지마나까지그러고파ㅠ, 도은\n출처: 집계 | PLOT (매거진 430건)\n\n[슬라이드]\n소스: \n소제목: 팬덤·굿즈\n본문: 매거진 7곳 · 글 14건 · 우리 0건 · crush, 크러쉬, 제작협업\n출처: 집계 | PLOT (매거진 430건)\n\n[슬라이드]\n소스: \n소제목: 인터뷰\n본문: 매거진 8곳 · 글 23건 · 우리 4건 · 양홍원, 헤어스타일, aob\n출처: 집계 | PLOT (매거진 430건)\n",
+      "generated_at": "2026-09-30 15:05 KST"
     }
   ],
   "by_account": {
@@ -2516,7 +2499,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdQcTqWztW8/",
         "timestamp": "2026-09-14T05:01:46+00:00",
-        "hours": 368.1,
+        "hours": 385.1,
         "likes": 46208,
         "comments": 685,
         "views": 2346554,
@@ -2553,7 +2536,7 @@
         },
         "picked_before": true,
         "caption": "\"어차피 나도 받은 돈이야\" 🙉\n\n최근 정규 10집 선공개곡 \"젊은날\"을 발표한 MC몽은 대학교 축제에 올랐습니다. 그가 오른 무대는 경기대 축제의 마지막 엔딩 타임. 히트곡 메들리로 10곡을 부른 뒤 유독 떼창을 잘하던 어느 학생에게 등록금을 쾌척했는데요.\n\n그는 얼마 전 틱톡 라이브에서 경기대학교 축제 엔딩 타임에 섭외된 것을 밝히며 기쁨을 드러내던 와중 '학생 한 명에게 한 학기 등록금을 주겠다'고 공약한 바 있습니다. 이번 일은 바로 그 공약을 이행한 것.\n\n그는 등록금을 학생에게 전달하며 '이 돈도 어차피 학교에서 받은 돈이니 꽂히는 애한테 주려고 한다'고 덧붙였습니다. 이로 미루어 보아 공연 섭외 페이의 일부를 자신의 눈에 든 학생에게 전달한 것으로 보입니다.",
-        "cluster": 165,
+        "cluster": 166,
         "pace": null,
         "rank": -7
       },
@@ -2565,7 +2548,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdVRRzYTuGX/",
         "timestamp": "2026-09-16T02:32:20+00:00",
-        "hours": 322.6,
+        "hours": 339.6,
         "likes": 33510,
         "comments": 158,
         "views": 511986,
@@ -2604,7 +2587,7 @@
         },
         "picked_before": false,
         "caption": "\"KPOPIUM\" 😈\n\n에스파가 새롭게 발표한 [SYNK : COMPLaeXITY - 2026 Special Digital Single]. 카리나, 닝닝, 지젤, 윈터 개개인의 솔로곡을 한 곡 씩 모은 싱글입니다. 그중 지젤의 솔로곡 \"BYEB4HELLO\"가 특히 주목할만한데요. 지젤이 샤라웃했던 미국 언더 래퍼 Zayok이 작곡에, 플레이보이 카티의 레이블 오피움의 프로듀서들인 Lucian 과 Clayco가 편곡에 참여했기 때문.\n\nZayok의 경우 미국에서도 그리 인지도가 크지 않지만 지젤이 인스타그램에 그의 \"Still love still love still love\"를 배경음으로 삽입하며, Zayok 스스로도 놀랐던 일화가 있었죠. 소소하게 화제가 됐었던 지젤의 샤라웃이 결국 콜라보로 이어졌습니다.\n",
-        "cluster": 175,
+        "cluster": 176,
         "pace": null,
         "rank": -1
       },
@@ -2616,7 +2599,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Ddn6rg3hp94/",
         "timestamp": "2026-09-23T08:49:00+00:00",
-        "hours": 148.3,
+        "hours": 165.3,
         "likes": 17508,
         "comments": 48,
         "views": 209486,
@@ -2657,7 +2640,7 @@
         },
         "picked_before": false,
         "caption": "\"오빠 저를 부르세요\" ☔️\n\n지난 9월 20일, 올림픽공원 88잔디마당에서 열린 KB 조이올팍 페스티벌 2026 무대에 오른 에픽하이. 이날 대표곡 \"우산\"을 부르던 타블로는 피처링을 맡았던 윤하의 파트까지 직접 소화했는데요. 문제는 곡이 진행될수록 점점 윤하의 빈자리가 크게 느껴졌다는 것.\n\n해당 장면이 SNS에 '실시간 타블로 우산 라이브 개망함'이라는 문구와 함께 퍼지자, 이를 본 윤하가 직접 등판했습니다. '오빠 저를 부르세요'라는 단 한마디를 남겼죠. 원곡에서 워낙 강렬한 존재감을 남긴 피처링인 만큼, 몇 글자만으로 상황 정리가 끝나버렸는데요.\n\n2008년 발매 이후 지금까지도 비 오는 날마다 소환되는 에픽하이의 대표곡 \"우산\". 세월이 아무리 흘러도 이 노래만큼은 에픽하이 제4의 멤버 윤하가 필",
-        "cluster": 198,
+        "cluster": 199,
         "pace": null,
         "rank": 28
       },
@@ -2669,7 +2652,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdvxXHKT0wm/",
         "timestamp": "2026-09-26T10:00:12+00:00",
-        "hours": 75.1,
+        "hours": 92.1,
         "likes": 10758,
         "comments": 115,
         "views": 160739,
@@ -2709,9 +2692,13 @@
         },
         "picked_before": false,
         "caption": "\"역시 라이브는 대승\" 🎤\n\n머쉬베놈의 신곡 \"내리고\"에 피처링으로 참여한 저스디스가, 공개 이후 화제를 모았던 자신의 벌스를 라이브에서 처음 선보였습니다. 'K-Pop bus 탄 래퍼들', 'Made in Korea로 택갈이', '근데 넌 왜 아직 은퇴를 안 하지?'처럼 시작부터 꽤 노골적인 문장들이 이어지는데요. 곡 자체도 지난 9월 14일 공개된 머쉬베놈의 EP 선공개 싱글입니다.\n\n특히 리스너들 사이에서는 이 벌스가 식케이를 겨냥한 것 아니냐는 해석이 나온 바 있습니다. 식케이와 릴 모쉬핏의 [K-FLIP+]에는 \"MADE IN KCOREA\"가 수록돼 있고, KC의 컴필레이션 앨범 [KC3]에는 \"KARMA COLLECTOR\"가 존재하죠. 저스디스의 '넌 아직 카르마 시작도 안 했지'라는 라인까지 겹",
-        "cluster": 217,
+        "cluster": 218,
         "pace": null,
-        "rank": 29
+        "rank": 29,
+        "news_surge": {
+          "entity": "머쉬베놈",
+          "multiple": 8.0
+        }
       },
       {
         "id": "DdDUyBSk0W4",
@@ -2721,7 +2708,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdDUyBSk0W4/",
         "timestamp": "2026-09-09T03:44:26+00:00",
-        "hours": 489.4,
+        "hours": 506.4,
         "likes": 5620,
         "comments": 5,
         "views": null,
@@ -2753,7 +2740,7 @@
         },
         "picked_before": false,
         "caption": "\"정반합 커플\" 🩰\n\n발레와 힙합은 은근히 자주 엮이는 소재입니다. 20년 전에도 한국 뮤지컬계를 풍미했던 '비보이를 사랑한 발레리나'라는 작품이 있었죠. 외국 힙합 뮤비에서도 힙합과 발레가 한 컷에서 등장한다면 하류 인생에서 고급 예술을 향유하는 위치까지 올라갔다거나, 새하얀 코카인과 순백의 발레리나를 시각적으로 등치시키는 은유 혹은 미장센으로 활용되는데요.\n\n이러한 소재의 조합은 정반합의 구조를 띠고 있습니다. 서로 정반대에 있는 소재가 한데 놓이는 순간 오히려 각자의 성질을 더욱 선명하게 만들죠. 정제되고 우아하면서도 상류층의 예술이라는 이미지가 있는 발레와 자유분방한 날 것의 힙합이 자주 엮이는 이유가 여기에 있을 겁니다.\n\n그런데 이러한 조합을 의도치 않게 보여준 커플이 있습니다. 바로 양홍원과 원",
-        "cluster": 181,
+        "cluster": 182,
         "pace": null,
         "rank": 64
       }
@@ -2767,16 +2754,16 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/Ddd6izNRpWk/",
         "timestamp": "2026-09-19T11:36:07+00:00",
-        "hours": 241.5,
+        "hours": 258.5,
         "likes": 113558,
         "comments": 254,
         "views": 761807,
         "is_reel": true,
         "image": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-15/799869106_17881859118688504_9101400145514255841_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=Mzk4OTYwMjMyMzA2MzU0MzIwNDE3ODgxODU5MTE1Njg4NTA0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=4o3tW23luGgQ7kNvwEpkPzy&_nc_oc=AdoRMtRWFP6mkddzfI9yq-Bz6s7JcdzTupNJjxLXf4QYF1VdsMdbj7_vIxwyGPmYVX4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_gid=c0B8CbfZ3soYvmT6yaTh8w&_nc_ss=7a22e&oh=00_AQLjIQjoVHo9GeYRRlheaH1U0PEEEnFHn5V8FPy0Vq6nHw&oe=6ABAD105",
         "score": 114320,
-        "baseline": 10297.2,
+        "baseline": 10397.5,
         "baseline_kind": "reel",
-        "multiple": 11.1,
+        "multiple": 10.99,
         "velocity": 706.0966110320618,
         "label": "music",
         "kind": "news",
@@ -2799,7 +2786,7 @@
         },
         "picked_before": false,
         "caption": "🐈‍⬛ 괴도 냥이 제 마음을 훔쳐갔다고요...\n\n오늘 열린 ‘2026 더팩트 뮤직어워즈’에 고양이가 나타나\n많은 사람들의 마음을 훔쳤다는 사실 알고 계신가요… 👀\n\n예나가 ‘괴도 냥’으로 등장해 시상식 현장을 사로잡았는데요.\n평소에도 스타일링과 콘셉트 소화력으로 많은 호평을\n받고 있는 만큼 오늘은 화려한 깜냥까지 제대로 보여줬습니다.\n\n지난 3월 발매된 ‘Catch Catch’는 쫓고 쫓기는 관계에서\n오는 미묘한 긴장감을 경쾌하고 재치 있게 풀어낸 곡으로\n많은 챌린지까지 만들어 내며 화제를 모았습니다.\n\n특히 예나 특유의 당차고 귀여운 에너지를 더해\n곡의 상황을 장난스럽게 표현하며 무대마다\n새로운 모습을 보여주는 예나만의 콘셉트 소화력을\n다시 한번 보여줬는데요.\n\n보면 볼수록 다음 무대가 궁금해지는 예나,\n",
-        "cluster": 387,
+        "cluster": 393,
         "pace": null,
         "rank": -5
       },
@@ -2811,16 +2798,16 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DdbQcIbxbF2/",
         "timestamp": "2026-09-18T10:49:53+00:00",
-        "hours": 266.3,
+        "hours": 283.3,
         "likes": 75528,
         "comments": 183,
         "views": 755140,
         "is_reel": true,
         "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/800115168_17881715736688504_3592867875527549344_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzk4ODg1NDE5NjkxMjEwNzg5NDE3ODgxNzE1NzMzNjg4NTA0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=EjkwbTXpocIQ7kNvwEEht93&_nc_oc=AdrbH93uS5GeManI63h2frIzONkGLRitbpAHc_RnTU2eVxSMqnZVCDW2pT6nIaK32PQ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=Zku7_0j3JtkTmnLHIbMjqg&_nc_ss=7a22e&oh=00_AQLliU8CBeifg4cwmbjRNW17hCLwzHvpZz4AbFwt6qq3NQ&oe=6AB99A52",
         "score": 76077,
-        "baseline": 10297.2,
+        "baseline": 10397.5,
         "baseline_kind": "reel",
-        "multiple": 7.39,
+        "multiple": 7.32,
         "velocity": 181.8165324866765,
         "label": "music",
         "kind": "news",
@@ -2842,7 +2829,7 @@
         },
         "picked_before": false,
         "caption": "☀️ 내 추석이 지금 너무 풍요로워졌잖아\n\n오늘 18일 리센느의 또 다른 채널\n‘안녕하세요원이입니다잘부탁드립니다’에\n[추석 특집] 제나의 트로트 메들리가 공개됐습니다!\n\n현재 많은 사랑을 받고 있는 리센느인 만큼\n이번 추석 특집도 반가울 수밖에 없었는데요.\n\n제나가 보컬을 맡고 리센느 네 명의 멤버가\n코러스로 함께하며 팬들이 좋아할 만한\n콘텐츠를 완성했습니다.\n\n이번 메들리에서는 ‘용두산 엘레지’, ‘빵빵’,\n‘내 나이가 어때서’, ‘녹아 버려요’, ‘어머나’, ‘초혼’까지\n총 여섯 곡을 선보였는데요. 익숙한 트로트 곡들을\n제나의 목소리로 들으니 또 다른 재미가 느껴집니다.\n\n추석에 트로트까지 섭렵한 제나, 너무 기특한데요.\n여러분은 제나의 트로트 메들리 어떻게 들으셨나요? 🥰\n\n🔗 안녕하세요원이입니다잘부탁",
-        "cluster": 383,
+        "cluster": 389,
         "pace": null,
         "rank": 13
       },
@@ -2854,16 +2841,16 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/Ddd30osx2jt/",
         "timestamp": "2026-09-19T11:12:22+00:00",
-        "hours": 241.9,
+        "hours": 258.9,
         "likes": 51780,
         "comments": 119,
         "views": 312678,
         "is_reel": true,
         "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/817846512_17881856871688504_7303716236677153858_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=Mzk4OTU5MDM1NDU5MTk2NzQ2OTE3ODgxODU2ODY4Njg4NTA0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=DBdSdtXaViIQ7kNvwEdWIGv&_nc_oc=AdqU4EDI8FhU8ukAGDuJ80SUf0xYuugKG1HJQjryDpSOLk9e_b7266zCFdxkO8yAB9s&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=s9kTBMWHFRSYSI5arIkNsA&_nc_ss=7a22e&oh=00_AQL9bkLh5FajxfYm9-tX40XlFsJdOa1uqhp87UqHft0sPA&oe=6ABA986E",
         "score": 52137,
-        "baseline": 10297.2,
+        "baseline": 10397.5,
         "baseline_kind": "reel",
-        "multiple": 5.06,
+        "multiple": 5.01,
         "velocity": 248.42143856537058,
         "label": "music",
         "kind": "news",
@@ -2890,9 +2877,9 @@
         },
         "picked_before": false,
         "caption": "📍 편곡 맛집 위치 공유합니다\n\n오늘 19일 부산아시아드주경기장에서 열린\n‘2026 더팩트 뮤직어워즈’에 리센느가 출연했습니다!\n\n리센느는 시상식마다 기존 곡에 새로운 편곡을 더하며\n같은 곡도 다른 무대로 만들어내고 있는데요.\n\n이번 더팩트 뮤직어워즈에서는 ‘LOVE ATTACK’\n오케스트라 버전으로 무대를 꾸미며 또 다른 분위기를\n보여줬습니다.\n\n익숙한 곡에 오케스트라 사운드가 더해지면서\n리센느만의 무대도 색다르게 완성됐는데요.\n\n또한 리센느는 11월 3일 컴백을 확정하며\n약 4개월 만에 새로운 음악으로 돌아올 예정입니다.\n\n매번 새로운 무대를 보여주며 성장하고 있는 리센느\n다음에는 어떤 모습으로 돌아올지 벌써부터 기대가 됩니다 💞\n\n🔗 2026 THE FACT MUSIC AWARDS\n\n#Kpop #케이팝",
-        "cluster": 388,
+        "cluster": 394,
         "pace": null,
-        "rank": 24
+        "rank": 23
       },
       {
         "id": "Ddi14HJREvI",
@@ -2902,16 +2889,16 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/Ddi14HJREvI/",
         "timestamp": "2026-09-21T09:31:22+00:00",
-        "hours": 195.6,
+        "hours": 212.6,
         "likes": 29671,
         "comments": 79,
         "views": 103660,
         "is_reel": true,
         "image": "https://scontent-dfw6-1.cdninstagram.com/v/t51.82787-15/819272073_17882156823688504_5227080430785195246_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzk5MDk4OTE3MjIzMTEzMDA1NjE3ODgyMTU2ODE3Njg4NTA0.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=mAsIKQhtGqkQ7kNvwGt18qY&_nc_oc=AdqFI-qlOcxURg_NmV7Fe3A248tlMAinsP5WOMO9URlty5tGK7zjv72ehdHZJaSm2wk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw6-1.cdninstagram.com&_nc_gid=CD7q2jzPmbtFDstbQZO7UQ&_nc_ss=7a22e&oh=00_AQKJ9vBgVfm_Lm8hn2CFI4vsXql5VSk6xlvqH974d-nuzQ&oe=6ABAF166",
         "score": 29908,
-        "baseline": 10297.2,
+        "baseline": 10397.5,
         "baseline_kind": "reel",
-        "multiple": 2.9,
+        "multiple": 2.88,
         "velocity": 397.09105443725224,
         "label": "music",
         "kind": "news",
@@ -2942,9 +2929,9 @@
         },
         "picked_before": false,
         "caption": "🗯️ 28일까지 이것만 듣게 생겼습니다...\n\n그룹 올데이 프로젝트가 오늘 오후 6시 신곡\n‘TALK’을 선공개하며 컴백의 신호탄을 쐈습니다!\n\n지난해 12월 첫 EP <ALLDAY PROJECT> 이후\n약 9개월 만에 선보이는 신곡인데요. 오는 28일\n발매되는 두 번째 EP <CRASH>의 핵심 트랙으로\n먼저 공개됐습니다.\n\n‘TALK’는 묵직한 베이스 사운드와 웅장하게 이어지는\n전개가 인상적인 곡입니다. 멤버들의 개성 있는 보컬과\n타이트한 랩이 어우러지며 올데이 프로젝트만의 장르를\n넘나드는 음악적 색깔을 보여주는데요.\n\n올블랙 레더 재킷과 짙은 스모키 메이크업으로 완성한\n이번 비주얼 역시 곡의 강한 분위기와 맞물리며 이전보다\n성숙해진 모습을 보여줬습니다.\n\n더욱 짙어진 색깔로 돌아온 올데이 프로젝트\n여러",
-        "cluster": 391,
+        "cluster": 397,
         "pace": null,
-        "rank": 66
+        "rank": 68
       },
       {
         "id": "DdqjSHLRXY2",
@@ -2954,16 +2941,16 @@
         "music_native": false,
         "url": "https://www.instagram.com/p/DdqjSHLRXY2/",
         "timestamp": "2026-09-24T09:22:53+00:00",
-        "hours": 123.7,
+        "hours": 140.7,
         "likes": 23342,
         "comments": 168,
         "views": 49644,
         "is_reel": true,
         "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/820000012_17882577813688504_9163045513276760909_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=109&ig_cache_key=Mzk5MzE1OTE5NTkwMTEzMDI5NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=bnckLWVF38cQ7kNvwEdGC6G&_nc_oc=Adp_G_hQV2t9G-6Z26urAqALUsPKyoWhWMwtJ4_z-7iDaaTuO7b6r1XXEehOGwcF_Do&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=PXAhUnLaQ7yE-QSDtnsoNQ&_nc_ss=7a22e&oh=00_AQNDuIRakT-eUyt2HhZI1YXd2kexn8d9OkvFci_u_4BaxA&oe=6AC038EE",
         "score": 23846,
-        "baseline": 10297.2,
+        "baseline": 10397.5,
         "baseline_kind": "reel",
-        "multiple": 2.32,
+        "multiple": 2.29,
         "velocity": 239.97373472067886,
         "label": "music",
         "kind": "news",
@@ -2990,9 +2977,9 @@
         },
         "picked_before": false,
         "caption": "🐺 와 진짜 굿보이들이시다\n\n오늘 24일 앤팀의 한국 미니 2집 수록곡\n‘Good Boy’ 뮤직비디오가 공개됐습니다!\n\n지난 8일 공개된 타이틀곡 ‘Mark on Me’와는\n또 다른 분위기를 보여주는 곡인데요.\n강렬한 퍼포먼스로 팬들의 관심을 모았던 ‘Good Boy’의\n뮤직비디오까지 공개되며 반가움을 더했습니다.\n\n‘Good Boy’는 역동적인 808 비트와 묵직한 저음이\n중심을 이루는 힙합 곡입니다. 자신감 넘치는 랩과 구호처럼\n반복되는 후렴이 강한 인상을 남기는데요.\n\n장난스러운 ‘Good Boy’라는 표현에 야수적인 본능을 더해\n앤팀만의 활기와 자연스러운 멋을 담아냈습니다.\n\n특히 이번 미니 2집에서 ‘Mark on Me’와 ‘Good Boy’처럼\n서로 다른 분위기의 곡을 보여주며 앤팀의 음악적 스펙",
-        "cluster": 396,
+        "cluster": 402,
         "pace": null,
-        "rank": 89
+        "rank": 91
       }
     ],
     "nitemagkr": [
@@ -3004,16 +2991,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DcdE_YoCMaA/",
         "timestamp": "2026-08-25T07:17:52+00:00",
-        "hours": 845.8,
+        "hours": 862.8,
         "likes": 82792,
         "comments": 200,
         "views": 1058206,
         "is_reel": true,
         "image": "",
         "score": 83392,
-        "baseline": 5371.1,
+        "baseline": 5373.0,
         "baseline_kind": "reel",
-        "multiple": 15.53,
+        "multiple": 15.52,
         "velocity": null,
         "label": "music",
         "kind": "unknown",
@@ -3034,7 +3021,7 @@
         },
         "picked_before": false,
         "caption": "“힙합보단 사랑, 사랑보단 돈이 아니야” 😘\n\n최근 많은 관심 속에 공개된 ‘래퍼여친구함’의 마지막 에피소드.\n\n에피소드 3의 여자 주인공은 인플루언서 위성희였는데요.\n\n그녀는 과거 썸을 탄 적이 있는 래퍼 노윤하와 JMIN 사이에서 고민하는 모습을 보이다가, 결국 최종 선택에서 JMIN을 선택하며 볼 뽀뽀를 하기도 했습니다.\n\n그동안 ‘래퍼여친구함’에서는 래퍼들이 사랑 대신 다이아 목걸이를 선택하며 화제가 되었던 만큼, JMIN 역시 같은 선택을 할지 관심이 모였는데요.\n\n그런데 예상 밖의 반전이 펼쳐졌습니다.\n\nJMIN은 다이아 목걸이를 그대로 모래사장에 던져버린 뒤, 위성희에게 볼 뽀뽀를 하며 사랑을 선택하는 모습을 보여줬습니다.\n\n시리즈의 마지막을 장식한 JMIN의 선택.\n\n여러분은 이 장면, 어떻게",
-        "cluster": 275,
+        "cluster": 280,
         "pace": null,
         "rank": 2
       },
@@ -3046,16 +3033,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdJAiSPidE7/",
         "timestamp": "2026-09-11T08:48:00+00:00",
-        "hours": 436.3,
+        "hours": 453.3,
         "likes": 87162,
         "comments": 192,
         "views": 952212,
         "is_reel": true,
         "image": "https://scontent-lga3-3.cdninstagram.com/v/t51.82787-15/802504034_17895102336606002_856588106102444910_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzk4MzcxNzcwMTQzNjE2NjQ1OTE3ODk1MTAyMzMzNjA2MDAy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=E47TqsxepYoQ7kNvwHRJREr&_nc_oc=AdrJKXRpqnidYtkWengDZ6c8jg84fLeOphT2M3qGWWV1zchGxg0ySsKM0RmpT6wcsUA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_gid=jyJpg_IpqByll18o_hg5EQ&_nc_ss=7a22e&oh=00_AQIEoGv_XnjvvM_5F2MZb6Isw_4sNLKQznjuX7f44tgcMQ&oe=6ABA78FA",
         "score": 87738,
-        "baseline": 5371.1,
+        "baseline": 5373.0,
         "baseline_kind": "reel",
-        "multiple": 16.34,
+        "multiple": 16.33,
         "velocity": 7.889760698993674,
         "label": "non_music",
         "kind": "unknown",
@@ -3073,7 +3060,7 @@
         },
         "picked_before": false,
         "caption": "“이거는 너가 아니면 못 하는 거야” 🥹\n\n최근 공개된 ‘양홍원의 육아일기’ 새 에피소드.\n\n이날 현주는 감정 기복이 심해 남편인 양홍원에게 전화를 거는 모습이 담겼는데요.\n\n현주는 자신의 감정 때문에 양홍원에게 방해가 될까 봐 걱정하는 모습을 보였지만, 양홍원은 “그냥 내가 가면 되는 거 아니야?”라며 그녀를 달래는 모습을 보였습니다.\n\n곧장 집으로 달려간 양홍원은 감정이 북받친 그녀를 달래며 “걱정하지 마, 너가 아니면 못 하는 거야 이거는”이라는 말을 남기기도 했습니다.\n\n최근 양홍원은 확실한 순애남 모먼트를 연일 보여주고 있는데요.\n\n이에 팬들은 “이런 사랑이 아니라면 사랑 안 하고 싶다”, “이게 진짜 순애야” 등의 반응을 보이기도 했습니다.\n\n여러분은 이 장면, 어떻게 보셨나요?\n\n🎥 YouTub",
-        "cluster": 257,
+        "cluster": 262,
         "pace": null,
         "rank": 3
       },
@@ -3085,14 +3072,14 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dciq__si5Zp/",
         "timestamp": "2026-08-27T11:24:57+00:00",
-        "hours": 793.7,
+        "hours": 810.7,
         "likes": 47339,
         "comments": 74,
         "views": 554019,
         "is_reel": true,
         "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/783144010_17892874068606002_8553334415960380487_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzk3MjkyNjkzNjk2Nzc3OTk0NTE3ODkyODc0MDYyNjA2MDAy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=GGAaphPrH9IQ7kNvwH7GC-E&_nc_oc=AdpvlwokljN4rXeGIhIsSfKG5MY77RzhkiEQ8PkrWYpAeYdClJGcojun5LcTIK9CkQ0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=qShP1ElPQkys_fIZ7FD55w&_nc_ss=7a22e&oh=00_AQIM-IjGAWHT8D460Q6_mAKIzBNKVeIbaNHXi3vI8ARPQw&oe=6ABA7CE7",
         "score": 47561,
-        "baseline": 5371.1,
+        "baseline": 5373.0,
         "baseline_kind": "reel",
         "multiple": 8.85,
         "velocity": 11.991132169792866,
@@ -3113,7 +3100,7 @@
         },
         "picked_before": false,
         "caption": "“확실히 순애남이야” 😍\n\n최근 많은 관심 속에 공개되고 있는 ‘양홍원의 육아일기’.\n\n오늘 공개된 에피소드에서는 최근 결혼식을 준비하고 있는 양홍원과 그의 아내 원현주가 웨딩드레스를 피팅하는 모습이 담겼는데요.\n\n이날 양홍원은 웨딩드레스를 입은 아내에게서 눈을 떼지 못하는 모습을 보여주며, 다시 한번 순애남 면모를 보여주기도 했습니다.\n\n여러분은 이 장면, 어떻게 보셨나요?\n\n🎥 YouTube ‘양홍원의 육아일기’\n—\n#양홍원 #원현주 #양홍원의육아일기 #웨딩드레스 #결혼식",
-        "cluster": 263,
+        "cluster": 268,
         "pace": null,
         "rank": 12
       },
@@ -3125,14 +3112,14 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdYzrqviBn9/",
         "timestamp": "2026-09-17T12:00:59+00:00",
-        "hours": 289.1,
+        "hours": 306.1,
         "likes": 45509,
         "comments": 172,
         "views": 399405,
         "is_reel": true,
         "image": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/813861029_17896060470606002_6212014417135632118_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=Mzk4ODE2NDc3MTI0MDc0NTQ2OTE3ODk2MDYwNDY0NjA2MDAy.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=7U-9TwR-56YQ7kNvwEeCGZB&_nc_oc=AdpmcPHbS8epP4n4b8YBpu5RioXbjjpL2AZprbqTn7ZbT4SEFvEQtZ6EWBDfsRCxF70&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=99MqrJHgU1c3WZ8yh4J5QA&_nc_ss=7a22e&oh=00_AQJv681uVr3NuHteg_GEnfTsToH1qk1f9nuaUvrAGXXBLA&oe=6ABA8436",
         "score": 46025,
-        "baseline": 5371.1,
+        "baseline": 5373.0,
         "baseline_kind": "reel",
         "multiple": 8.57,
         "velocity": 251.8072551022626,
@@ -3157,13 +3144,9 @@
         },
         "picked_before": false,
         "caption": "“푸끼푸끼어푸끼푸끼어” 😵\n\n얼마 전 ‘래퍼가 되겠다’는 콘텐츠로 김하온과 스윙스가 직접 댓글을 남길 만큼 화제가 됐던 유튜버 다인이공.\n\n그랬던 그녀가 이번에는 뮤직비디오까지 공개했습니다.\n\n‘푸끼’라는 랩네임으로 공개 한 곡 ‘코리안갱씥’에는 피처링으로 유튜버 류정란이 참여했는데요.\n\n이를 본 시청자들은 “다인이공 이제 썰 풀 거 없어서 스스로 나중에 풀려고 만들어내는 중이네” 등의 반응을 보이기도 했습니다.\n\n과연 다인이공의 래퍼 도전은 어디까지 이어질까요? \n\n여러분은 이 장면, 어떻게 보셨나요?\n\n🎥 YouTube ‘류정란’\n—\n#다인이공 #푸끼 #코리안갱씥 #류정란",
-        "cluster": 256,
+        "cluster": 261,
         "pace": null,
-        "rank": 14,
-        "news_surge": {
-          "entity": "김하온",
-          "multiple": 5.0
-        }
+        "rank": 14
       },
       {
         "id": "Db5lGiwCcGw",
@@ -3173,16 +3156,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Db5lGiwCcGw/",
         "timestamp": "2026-08-11T12:25:28+00:00",
-        "hours": 1176.7,
+        "hours": 1193.7,
         "likes": 34719,
         "comments": 346,
         "views": 1532391,
         "is_reel": true,
         "image": "",
         "score": 35757,
-        "baseline": 5371.1,
+        "baseline": 5373.0,
         "baseline_kind": "reel",
-        "multiple": 6.66,
+        "multiple": 6.65,
         "velocity": null,
         "label": "unsure",
         "kind": "unknown",
@@ -3201,7 +3184,7 @@
         },
         "picked_before": false,
         "caption": "“래퍼한테 필요한건 사랑일까, 다이아일까” 💎\n\n최근 많은 관심 속에 첫 방송을 시작한 연애 프로그램 ‘래퍼여친구함’.\n\n1편의 여자 주인공 채화린은 Royal 44와 정준혁 사이에서 고민한 끝에 최종 선택에서 Royal 44를 선택했는데요.\n\n이제는 Royal 44가 사랑과 다이아 목걸이 중 하나를 선택해야 하는 상황이 찾아왔습니다.\n\n마지막 데이트에서 두 사람 사이에 좋은 분위기가 형성되며 매칭을 예상했던 시청자들이 많았지만, 모두의 예상을 깨고 Royal 44가 선택한 것은 사랑이 아닌 다이아 목걸이였습니다.\n\n심지어 그는 인터뷰에서 “내가 사랑하는 여자는 엄마와 신사임당밖에 없다”는 말을 남기며 웃음을 자아내기도 했는데요.\n\n알려진 바에 따르면 해당 다이아 목걸이의 가격은 약 1,000만 원 상당이라",
-        "cluster": 282,
+        "cluster": 287,
         "pace": null,
         "rank": 41
       }
@@ -3215,7 +3198,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdIpSOYR0Gm/",
         "timestamp": "2026-09-11T05:20:32+00:00",
-        "hours": 439.8,
+        "hours": 456.8,
         "likes": 46694,
         "comments": 89,
         "views": 725251,
@@ -3240,7 +3223,7 @@
         },
         "picked_before": false,
         "caption": "”엄마의 눈물“\n\n✨이번 화에서 육아를 하는 현주님의 모습을 자세히 볼 수 있었는데요. 엄마라는 이름을 가진다는 게 얼마나 위대한 일인 지 다시 한 번 느낄 수 있었습니다. 이제는 정말로 이 가족이 행복해졌으면 좋겠습니다..\n\n📷 양홍원의 육아일기(솔파스튜디오)",
-        "cluster": 240,
+        "cluster": 243,
         "pace": null,
         "rank": 13
       },
@@ -3252,7 +3235,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc5BkT5RhMd/",
         "timestamp": "2026-09-05T03:46:17+00:00",
-        "hours": 585.3,
+        "hours": 602.3,
         "likes": 15034,
         "comments": 45,
         "views": 202317,
@@ -3281,9 +3264,9 @@
         },
         "picked_before": false,
         "caption": "“EK 그 라인”\n\n현재 ✨메들리메들리(@madly_medley )에서 ✨EK(@m.b.a_ek )님의 무대가 진행중인데요. 역시나 그 라인은 때창이 쉽게 나와버리네요. 모시핏 하시다가 다치시는 분들도 계셨는데 열기가 장난아닙니다🔥\n\n📷 케이팝버거매거진",
-        "cluster": 241,
+        "cluster": 244,
         "pace": null,
-        "rank": 69
+        "rank": 68
       },
       {
         "id": "Ddsxaj0xPPm",
@@ -3293,7 +3276,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Ddsxaj0xPPm/",
         "timestamp": "2026-09-25T06:04:33+00:00",
-        "hours": 103.0,
+        "hours": 120.0,
         "likes": 9934,
         "comments": 68,
         "views": 140059,
@@ -3324,9 +3307,9 @@
         },
         "picked_before": false,
         "caption": "”김상민을 샤라웃한 양홍원“\n\n✨양홍원(@yanghongwon )님이 개인 유튜브를 통해 미발매곡을 공개하였습니다. 해당 영상에 최근 구속된 ✨김상민(@ksmartboi )을 샤라웃하는 ’FREE KSM‘이라는 문구가 눈에 띄였는데요. 여러분은 양홍원의 미발매곡 ’EDEN+MATE‘ 어떻게 들으셨나요?\n\n📷 HWMUSIC YouTube",
-        "cluster": 250,
+        "cluster": 253,
         "pace": null,
-        "rank": 113
+        "rank": 112
       },
       {
         "id": "Dc5YLZVxQUL",
@@ -3336,7 +3319,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc5YLZVxQUL/",
         "timestamp": "2026-09-05T07:04:05+00:00",
-        "hours": 582.0,
+        "hours": 599.0,
         "likes": 10254,
         "comments": 111,
         "views": 165438,
@@ -3364,7 +3347,7 @@
         },
         "picked_before": false,
         "caption": "“아 내 고통”\n\n✨매들리 메들리 2026(@madly_medley )에서 ✨희대의(@heedaeof )와 함께 이야기를 나눠봤는데요. 이번 희대의의 앨범 도모에서부터 앞으로의 행보까지 인터뷰를 통해서 확인해보세요🔥\n\n📷 케이팝버거매거진",
-        "cluster": 241,
+        "cluster": 244,
         "pace": null,
         "rank": 115
       },
@@ -3376,7 +3359,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc73j9AxDKD/",
         "timestamp": "2026-09-06T06:15:18+00:00",
-        "hours": 558.8,
+        "hours": 575.8,
         "likes": 8186,
         "comments": 82,
         "views": 335425,
@@ -3404,13 +3387,9 @@
         },
         "picked_before": false,
         "caption": "“역시 한국힙합 현재는 KC”\n\n✨매들리 메들리 2026(@madly_medley )에서 ✨KC(@kcthecompany )와 함께 이야기를 나눠봤는데요. 김하온님께서 생각하시는 한국힙합부터 2027 KC까지 인터뷰를 통해서 확인해보세요🔥\n\n📷 케이팝버거매거진",
-        "cluster": 241,
+        "cluster": 244,
         "pace": null,
-        "rank": 141,
-        "news_surge": {
-          "entity": "김하온",
-          "multiple": 5.0
-        }
+        "rank": 141
       }
     ],
     "wavemag.kr": [
@@ -3422,16 +3401,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc8AlVTxKzT/",
         "timestamp": "2026-09-06T07:34:11+00:00",
-        "hours": 557.5,
+        "hours": 574.5,
         "likes": 15086,
         "comments": 16,
         "views": 94799,
         "is_reel": true,
         "image": "https://scontent-lga3-3.cdninstagram.com/v/t51.82787-15/796941354_17989430826042493_1038063423361366317_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=Mzk4MDA1ODczNjE4OTU0OTc3OTE3OTg5NDMwODIwMDQyNDkz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=z2YSrCRIODkQ7kNvwEBAOh6&_nc_oc=AdoYU7XBciSB3wKUhv6HyMFFAAYu3sF-AQqLf5Tjdm7j_bf0P35odU9EhOiVH8hKDl0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_gid=z64TMuK64syKnPSINNwZVw&_nc_ss=7a22e&oh=00_AQOfUMhwPYRRdWtmVXTMe8qUZx4H78DmjBu73pxZyYMLmw&oe=6AC14B2B",
         "score": 15134,
-        "baseline": 1200.6,
+        "baseline": 1202.0,
         "baseline_kind": "reel",
-        "multiple": 12.61,
+        "multiple": 12.59,
         "velocity": 5.895586223198921,
         "label": "music",
         "kind": "curation",
@@ -3466,7 +3445,7 @@
         },
         "picked_before": false,
         "caption": "여름의 끝에서.\n\n미국의 록 밴드 그린데이(Green Day)의 <Wake Me Up When September Ends>는 매년 9월이 돌아올 때마다 다시금 사람들의 플레이리스트에 소환되는 곡입니다. 2004년 발매된 정규 앨범 <American Idiot>에 수록된 이 곡은 단순히 가을을 대표하는 시즌송처럼 보이지만, 그 이면에는 보컬 빌리 조 암스트롱(Billie Joe Armstrong)의 깊은 상실과 기억이 담겨 있습니다.\n\n빌리 조 암스트롱은 어린 시절 아버지를 떠나보낸 경험을 바탕으로 이 곡을 썼습니다. 그의 아버지는 1982년 9월 세상을 떠났고, 당시 열 살이었던 빌리 조 암스트롱에게 9월은 사랑하는 사람을 잃었던 기억과 자연스럽게 연결된 시간이 되었습니다. <Wake Me Up When S",
-        "cluster": 303,
+        "cluster": 308,
         "pace": null,
         "rank": 34
       },
@@ -3478,16 +3457,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Ddihw0JRR0E/",
         "timestamp": "2026-09-21T06:35:10+00:00",
-        "hours": 198.5,
+        "hours": 215.5,
         "likes": 8058,
         "comments": 6,
         "views": 56129,
         "is_reel": true,
         "image": "https://scontent-dfw5-2.cdninstagram.com/v/t51.82787-15/807868709_17991637584042493_6981999019545059545_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=Mzk5MDkwMDcwOTg2MzUyOTczMjE3OTkxNjM3NTc4MDQyNDkz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=k2BP-haq4b0Q7kNvwEt7dyw&_nc_oc=AdoigDIBJOl7lHdR5qTT3_JwnEeDt1_Pby_eRFR0u_JY-ARuwEzYEF1MACWFKhjjRXU&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_gid=G6QM-3fAku_Oeh3F-9hkaw&_nc_ss=7a22e&oh=00_AQOb0UJCV4UYrrKGTQIYfkneuKTVDmRXc0cxrfKXeNXGMw&oe=6AC15CD6",
         "score": 8076,
-        "baseline": 1200.6,
+        "baseline": 1202.0,
         "baseline_kind": "reel",
-        "multiple": 6.73,
+        "multiple": 6.72,
         "velocity": 39.057151410238056,
         "label": "music",
         "kind": "news",
@@ -3519,7 +3498,7 @@
         },
         "picked_before": false,
         "caption": "사랑한다는 말 없이 전하는 사랑\n\n싱어송라이터 트로이 시반(Troye Sivan)은 자신의 경험과 감정을 솔직하게 담아내는 음악으로 사랑받아왔습니다. 그중<for him.>은 2015년 발매된 그의 데뷔 정규 앨범 <Blue Neighbourhood>에 수록된 곡으로, 트로이 시반이 직접 가장 개인적인 곡이라고 꼽은 노래입니다. 처음부터 앨범에 넣을 생각으로 만든 곡은 아니었지만, 계속 듣게 될 만큼 마음에 들어 결국 앨범에 수록하게 됐다고 밝혔습니다.\n\n이 곡이 특별한 이유는 사랑을 표현하는 방식에 있습니다. “You don’t have to say I love you to say I love you”라는 가사처럼 사랑한다고 직접 말하지 않아도 서로를 향한 행동과 순간만으로 사랑을 전할 수 있다는 의미를 ",
-        "cluster": 336,
+        "cluster": 340,
         "pace": null,
         "rank": 55
       },
@@ -3531,16 +3510,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdNpQGcR-JG/",
         "timestamp": "2026-09-13T03:57:01+00:00",
-        "hours": 393.2,
+        "hours": 410.1,
         "likes": 6065,
         "comments": 10,
         "views": 38175,
         "is_reel": true,
         "image": "https://scontent-lga3-3.cdninstagram.com/v/t51.82787-15/796461421_17990415270042493_6410057078297272430_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=Mzk4NTAyMjY3MTYyODI2NDAwNjE3OTkwNDE1MjY0MDQyNDkz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=yDINi-bkcvAQ7kNvwEkGXyY&_nc_oc=Adq8JFzWO1mSPSrJjdF7CvCL8iKhrBw98JpGp0rMf-Wl1WLpoEw4yaECJvZtKuIcT1A&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_gid=RpqTxEep3OyUqdYDODThTw&_nc_ss=7a22e&oh=00_AQOJBuR5QQXEl9401TqXxSfYJO-34pR-znM1I7QV2DdikQ&oe=6AC1536E",
         "score": 6095,
-        "baseline": 1200.6,
+        "baseline": 1202.0,
         "baseline_kind": "reel",
-        "multiple": 5.08,
+        "multiple": 5.07,
         "velocity": 1.586579778720199,
         "label": "music",
         "kind": "curation",
@@ -3570,9 +3549,9 @@
         },
         "picked_before": false,
         "caption": "2007년 발매된 Arctic Monkeys의 <505>는 오랜 시간이 지난 지금까지도 새로운 세대에게 꾸준히 발견되고 있는 곡입니다. 특히 2022년 틱톡을 중심으로 다시 주목받으며 2000년대에 발표된 곡임에도 젊은 음악 팬들에게 사랑받았습니다. 이후 스트리밍과 SNS를 통해 꾸준히 소비되며 Arctic Monkeys를 대표하는 곡 중 하나로 자리 잡았습니다.\n\n빠르고 거친 사운드가 돋보이는 앨범 속에서 <505>는 비교적 느리고 몽환적인 분위기로 시작해, 곡이 진행될수록 기타와 드럼이 격렬해지며 감정을 폭발시키는 듯한 사운드를 들려줍니다.\n\n가사에는 멀리 떨어진 누군가를 향한 그리움과 복잡한 감정이 담겨 있으며, Alex Turner는 당시 <505>를 Arctic Monkeys의 ‘첫 번째 제대로 된",
-        "cluster": 302,
+        "cluster": 307,
         "pace": null,
-        "rank": 92
+        "rank": 91
       },
       {
         "id": "DcpshGYxXWQ",
@@ -3582,14 +3561,14 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DcpshGYxXWQ/",
         "timestamp": "2026-08-30T04:52:25+00:00",
-        "hours": 728.2,
+        "hours": 745.2,
         "likes": 4848,
         "comments": 6,
         "views": 22315,
         "is_reel": true,
         "image": "",
         "score": 4866,
-        "baseline": 1200.6,
+        "baseline": 1202.0,
         "baseline_kind": "reel",
         "multiple": 4.05,
         "velocity": null,
@@ -3621,55 +3600,40 @@
         },
         "picked_before": false,
         "caption": "오아시스의 <Stop Crying Your Heart Out>은 유난히 ‘위로’라는 단어와 잘 어울리는 곡입니다. 노엘 갤러거가 작사,작곡한 이 곡은 2002년 발매된 오아시스의 정규 5집 앨범의 수록곡으로, 노엘 갤러거가 힘든 시기를 보내고 있던 친구를 염두에 두고 쓴 곡으로 알려져 있습니다.\n\n개인적인 위로에서 시작된 노래는 뜻밖의 순간, 영국을 위로하는 곡이 되었습니다. 2002년 월드컵에서 잉글랜드가 브라질에 패해 8강에서 탈락한 뒤, BBC는 경기 후 영상에 이 곡을 삽입했습니다. 패배의 아쉬움을 달래는 순간에 흐르던 노래는 자연스럽게 많은 영국인들의 마음에 남았습니다.\n\n이후 영화 <나비효과>에도 삽입되며 상실과 후회, 지나간 시간을 바라보는 장면을 더욱 깊게 만들었습니다. “You’ll neve",
-        "cluster": 310,
+        "cluster": 315,
         "pace": null,
-        "rank": 110,
-        "news_surge": {
-          "entity": "노엘",
-          "multiple": 4.0
-        }
+        "rank": 109
       },
       {
-        "id": "Dbe5Ox-EeDC",
+        "id": "DcxQgWNEhcg",
         "account": "wavemag.kr",
         "tier": "daily",
         "allow_curation": false,
         "music_native": true,
-        "url": "https://www.instagram.com/p/Dbe5Ox-EeDC/",
-        "timestamp": "2026-08-01T03:39:39+00:00",
-        "hours": 1425.4,
-        "likes": 2549,
-        "comments": 9,
+        "url": "https://www.instagram.com/p/DcxQgWNEhcg/",
+        "timestamp": "2026-09-02T03:20:45+00:00",
+        "hours": 674.8,
+        "likes": 2223,
+        "comments": 4,
         "views": null,
         "is_reel": false,
-        "image": "",
-        "score": 2576,
-        "baseline": 499.9,
+        "image": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/792021496_17988848703042493_5606164054388075122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk3NzAzMjE3NTc0ODQyODY2NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMjAwMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=2DIJlX2nX9wQ7kNvwH2QENh&_nc_oc=AdqcrjznrmmEtjN2YccER5moaC-6HrOin82xnbEs8vFhH3NNjZF6DLEvve28LvQ-C80&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=QI7k5O95ZkP_CmK0gabMfg&_nc_ss=7a22e&oh=00_AQOx3sxkrj0deLL6S0Th4urjvvOXZ4MltQqNx59s-KKf8A&oe=6AC14C8E",
+        "score": 2235,
+        "baseline": 497.8,
         "baseline_kind": "post",
-        "multiple": 5.15,
-        "velocity": null,
-        "label": "music",
+        "multiple": 4.49,
+        "velocity": 0.6526612271553546,
+        "label": "unsure",
         "kind": "curation",
         "genres": [
-          "밴드·인디"
+          "기타"
         ],
         "why": [
-          "+발매",
-          "+싱글",
-          "+정규",
-          "+선공개",
-          "+ost",
-          "+밴드",
-          "~노래",
-          "~가사",
-          "-감독"
+          "+앨범",
+          "=단일근거"
         ],
         "kind_why": [
-          "+발매",
-          "+공개",
-          "+선공개",
-          "-지난연도",
-          "=회고"
+          "-여전히"
         ],
         "covered": false,
         "plot_kind": {
@@ -3677,10 +3641,10 @@
           "n": 26
         },
         "picked_before": false,
-        "caption": "악틱몽키즈의 첫 번째 사랑노래\n\n2007년 발매된 악틱몽키즈의 정규 2집〈Favourite Worst Nightmare〉의 마지막 트랙〈505〉는 발매 당시 선공개 싱글이 아니었음에도 시간이 흐르며 밴드를 대표하는 곡으로 자리 잡았습니다. 잔잔한 오르간으로 시작해 후반부로 갈수록 감정을 폭발시키는 전개, 그리고 밴드의 프론트맨 알렉스 터너의 가장 솔직한 사랑 이야기를 담은 가사는 지금까지도 많은 팬들의 사랑을 받고 있죠.\n\n〈505〉는 분명 사랑 노래지만, 그 탄생의 이면에는 뜻밖에도 세르지오 레오네 감독의 고전 서부 영화〈석양의 무법자〉 가 자리합니다. 알렉스 터너는 영화의 마지막 총격전 씬에서 직접적인 영감을 얻었는데요. \n\n그는 영화 속 해당 장면을 장식한 엔니오 모리코네의 OST 〈The Ecstas",
-        "cluster": 332,
+        "caption": "직접 다 그리지 못한 동그라미\n\n맥 밀러(@macmiller)가 우리 곁을 떠나기 전 그가 그리고 있던 원이 있었습니다. 바로 〈Circles〉라는 앨범이죠.\n\n〈Circles〉는 사후 앨범이었지만, 맥 밀러가 생각한 방향성과 의지 그대로 작업되었습다. 맥 밀러의 유족과 앨범을 프로듀싱한 존 브라이언 역시 그의 의도를 최대한 훼손하지 않는 것을 의무로 삼았다고 하죠.\n\n맥 밀러가 마무리 짓지는 못했지만, 여전히 그의 앨범처럼 느껴지는 이유도 이 모든 것들 때문은 아닐까요.\n\n𝙱𝚎𝚑𝚒𝚗𝚍 Mac Miller\n𝚙𝚑𝚘𝚝𝚘 ©macmiller ©LAtimes\n𝚎𝚍𝚒𝚝 HONG JUNSEO\n\n#맥밀러 #MacMiller #Circles",
+        "cluster": 306,
         "pace": null,
-        "rank": 141
+        "rank": 168
       }
     ],
     "ageofband": [
@@ -3692,16 +3656,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdV92d0kpVd/",
         "timestamp": "2026-09-16T09:29:38+00:00",
-        "hours": 315.6,
+        "hours": 332.6,
         "likes": 7676,
         "comments": 175,
         "views": null,
         "is_reel": false,
         "image": "",
         "score": 8201,
-        "baseline": 942.7,
+        "baseline": 944.1,
         "baseline_kind": "post",
-        "multiple": 8.7,
+        "multiple": 8.69,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -3741,16 +3705,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdiuiE3kpp-/",
         "timestamp": "2026-09-21T08:25:55+00:00",
-        "hours": 196.7,
+        "hours": 213.7,
         "likes": 8737,
         "comments": 26,
         "views": null,
         "is_reel": false,
         "image": "https://scontent-dfw6-2.cdninstagram.com/v/t51.82787-15/819560555_17983861023081819_3829762629296381400_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ig_cache_key=Mzk5MDk1NjE4ODU2MDM1ODI0MA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=iuF43SDTy7cQ7kNvwFoc1Ds&_nc_oc=AdrPk6wD1aNh29IzFF84ut187xYlfDzxwcZlvB-RdmFKkYorjVD4C5GuvNhj7YSKMvI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-dfw6-2.cdninstagram.com&_nc_gid=7NVLqXVXdELMo56N4K5vxg&_nc_ss=7a22e&oh=00_AQLqCISDURLdsdBt-qWo_aLzQGed_5KWibKbalYB76o2sA&oe=6AB92EFF",
         "score": 8815,
-        "baseline": 942.7,
+        "baseline": 944.1,
         "baseline_kind": "post",
-        "multiple": 9.35,
+        "multiple": 9.34,
         "velocity": 169.9759792702994,
         "label": "unsure",
         "kind": "unknown",
@@ -3781,16 +3745,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dcq6LJ6kmyw/",
         "timestamp": "2026-08-30T15:58:05+00:00",
-        "hours": 717.1,
+        "hours": 734.1,
         "likes": 3445,
         "comments": 8,
         "views": null,
         "is_reel": false,
         "image": "",
         "score": 3469,
-        "baseline": 942.7,
+        "baseline": 944.1,
         "baseline_kind": "post",
-        "multiple": 3.68,
+        "multiple": 3.67,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -3829,7 +3793,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdwIYCJNu46/",
         "timestamp": "2026-09-26T12:58:23+00:00",
-        "hours": 72.1,
+        "hours": 89.1,
         "likes": 3046,
         "comments": 14,
         "views": 18797,
@@ -3872,7 +3836,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdwCg82tcbc/",
         "timestamp": "2026-09-26T12:12:41+00:00",
-        "hours": 72.9,
+        "hours": 89.9,
         "likes": 2976,
         "comments": 20,
         "views": 14484,
@@ -3921,16 +3885,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Ddi0h56AURj/",
         "timestamp": "2026-09-21T09:19:15+00:00",
-        "hours": 195.8,
+        "hours": 212.8,
         "likes": 8760,
         "comments": 32,
         "views": 51218,
         "is_reel": true,
         "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/795438483_18067473695751025_1182108603626156856_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=110&ig_cache_key=Mzk5MDk4MzI0ODE0MTQzNjAwMzE4MDY3NDczNjg5NzUxMDI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=LMYk6ZoNrNEQ7kNvwH-yDWW&_nc_oc=Adp1Kspg6fMDsEBEdbuLOsLUfKKNv_PxatiMvGE8DVehGw3-h82du1gxqCWdv34WI9E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=LEKi5w8ns60DIuwAMItvFQ&_nc_ss=7a22e&oh=00_AQL9Ta09CNlLkzV5xBvVW2ZAuF66qpx1ILluIoFMJvvS8g&oe=6ABAED70",
         "score": 8856,
-        "baseline": 1105.6,
+        "baseline": 1060.2,
         "baseline_kind": "reel",
-        "multiple": 8.01,
+        "multiple": 8.35,
         "velocity": 116.55323259351371,
         "label": "music",
         "kind": "curation",
@@ -3967,7 +3931,7 @@
         },
         "picked_before": false,
         "caption": "위켄드(@theweeknd)가 <After Hours Til Dawn> 투어의 아시아 일정을 시작하며, 일본의 전설적인 가수 타카하시 요코(@yoko_takahashi_official)와 함께 미발표 신곡 ‘Tokyo’를 처음으로 공개했습니다.\n\n위켄드는 지난 9월 19일 일본 사이타마 베루나 돔(Belluna Dome)에서 열린 두 차례 공연 중 첫 번째 무대에서 ‘Tokyo’를 라이브로 최초 공개했습니다. 이날 무대에는 타카하시 요코도 함께했는데요. 타카하시 요코는 1995년 방영을 시작한 애니메이션 <신세기 에반게리온(Neon Genesis Evangelion)>의 오프닝 테마곡 ‘잔혹한 천사의 테제(A Cruel Angel’s Thesis)’를 부른 가수로 잘 알려져 있습니다. 신곡 ‘Tokyo’에는",
-        "cluster": 353,
+        "cluster": 357,
         "pace": null,
         "rank": 63
       },
@@ -3979,16 +3943,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdYfSE_ghMx/",
         "timestamp": "2026-09-17T09:01:38+00:00",
-        "hours": 292.1,
+        "hours": 309.1,
         "likes": 5660,
         "comments": 18,
         "views": 38407,
         "is_reel": true,
         "image": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/813765443_18066876767751025_4688323691126681975_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=Mzk4ODA3NTA1MTc4OTQ1NjE3NzE4MDY2ODc2NzY0NzUxMDI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=-EELYx2PlC0Q7kNvwHnng-y&_nc_oc=AdrPpNrUaAsOV5HsAKGavwodBkuoPy0YrTS1kkhMhHVjZXZ0FCi2NW-Acc-EHGzpiH8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=_ZdXdoVUTT9OjHAmrPkt_Q&_nc_ss=7a22e&oh=00_AQIzyrk8LIFR66DdHZu1kHMMDBnfG-pZXVXc_isPij3mKw&oe=6ABB0B37",
         "score": 5714,
-        "baseline": 1105.6,
+        "baseline": 1060.2,
         "baseline_kind": "reel",
-        "multiple": 5.17,
+        "multiple": 5.39,
         "velocity": 24.3290878254797,
         "label": "music",
         "kind": "news",
@@ -4023,9 +3987,9 @@
         },
         "picked_before": false,
         "caption": "스티비 원더(Stevie Wonder)가 자신의 명반 [Songs In The Key Of Life] 발매 50주년을 기념하는 영국 투어를 개최합니다.\n\n이번 투어는 1976년 발표된 [Songs In The Key Of Life]의 50주년을 기념하는 공연으로, 현지 시간 오는 10월 13일 버밍엄 유틸리타 아레나(Utilita Arena)에서 시작되는데요. 이후 11월 3일 런던 O2, 11월 8일 맨체스터 코옵 라이브 아레나(Co-op Live Arena)를 거쳐 11월 11일 글래스고 OVO 하이드로(OVO Hydro)에서 마지막 공연을 펼칠 예정입니다.\n\n[Songs In The Key Of Life]는 ‘As’, ‘Love’s in Need of Love Today’, ‘Sir Duke’, ‘Is",
-        "cluster": 341,
+        "cluster": 345,
         "pace": null,
-        "rank": 74
+        "rank": 72
       },
       {
         "id": "DdvWfLjAQfv",
@@ -4035,16 +3999,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdvWfLjAQfv/",
         "timestamp": "2026-09-26T06:06:34+00:00",
-        "hours": 79.0,
+        "hours": 96.0,
         "likes": 4972,
         "comments": 38,
         "views": 55077,
         "is_reel": true,
         "image": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/825269630_18068154959751025_1488092410484352721_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=101&ig_cache_key=Mzk5NDUxMDI5NDIyNjM3MjU5MTE4MDY4MTU0OTU2NzUxMDI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=5I10jDKjKyMQ7kNvwH1jtrr&_nc_oc=Ado9p31XRME4ZaT-jF1Lt7Env1FBFYv5iW1vk2KYemK2hMH62dHAO3dTr2OowUM9cUo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=oCcGTmgz8oVOSfNwtmPcDg&_nc_ss=7a22e&oh=00_AQNrVpnHd3yJD5n3j_2x4vMMYBZGqKtZqBIcA8lqHYGakg&oe=6AC1A115",
         "score": 5086,
-        "baseline": 1105.6,
+        "baseline": 1060.2,
         "baseline_kind": "reel",
-        "multiple": 4.6,
+        "multiple": 4.8,
         "velocity": 17.780827288766908,
         "label": "music",
         "kind": "unknown",
@@ -4066,9 +4030,9 @@
         },
         "picked_before": false,
         "caption": "소울헤드는 홋카이도 출신의 친자매 듀오로, 언니 요시카(YOSHIKA)와 동생 츠구미(TSUGUMI)로 구성되어 있습니다. 음악적으로는 R&B와 힙합을 중심으로 다양한 음악적 요소를 자신들만의 방식으로 풀어낸 것이 특징인데요. 특히 두 사람의 탄탄한 하모니와 영어와 일본어를 자연스럽게 오가는 보컬은 소울헤드의 음악을 더욱 특별하게 만들어주는 요소입니다.\n\n저는 ‘Sora’를 처음 들었을 때 마치 황홀경에 빠지는 듯한 느낌을 받았습니다. 두 자매의 목소리가 만들어내는 환상적인 조화에 세련된 사운드까지 더해지면서, 처음부터 끝까지 온전히 곡에 집중해서 들었던 기억이 있는데요. 이 곡을 계기로 일본 R&B라는 장르 자체에도 더욱 좋은 인상을 갖게 됐죠.\n\n여기서 조금만 더 욕심을 내보자면, ‘Sora’뿐만 아니라",
-        "cluster": 362,
+        "cluster": 366,
         "pace": null,
-        "rank": 94
+        "rank": 92
       },
       {
         "id": "DdqPzdbgnGV",
@@ -4078,16 +4042,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdqPzdbgnGV/",
         "timestamp": "2026-09-24T06:46:36+00:00",
-        "hours": 126.3,
+        "hours": 143.3,
         "likes": 4050,
         "comments": 11,
         "views": 33398,
         "is_reel": true,
         "image": "https://scontent-lga3-1.cdninstagram.com/v/t51.82787-15/817624899_18067870079751025_757959163662872927_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzk5MzA3MzUyNjYwODM5MjU5NzE4MDY3ODcwMDc2NzUxMDI1.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjU0MC5zZHIudmlkZW9fZGVmYXVsdF9jb3Zlcl9mcmFtZS5DMyJ9&_nc_ohc=WMueZEqGnTYQ7kNvwFeP7hW&_nc_oc=Ado-s-7QUHMQuiJBMOctPy9AnWFMiRs7vYqGsrovVe-pnnVJcqFjWQBLF9F3pkHBLRg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_gid=lIt0qHg-i5FkeKFMhFwrIw&_nc_ss=7a22e&oh=00_AQLH-T3r2A6QXsXwCMZgR8Ai6Q-xENYq3BBEvAqOpDkyww&oe=6ABEE790",
         "score": 4083,
-        "baseline": 1105.6,
+        "baseline": 1060.2,
         "baseline_kind": "reel",
-        "multiple": 3.69,
+        "multiple": 3.85,
         "velocity": 52.158450612916255,
         "label": "music",
         "kind": "news",
@@ -4114,9 +4078,9 @@
         },
         "picked_before": false,
         "caption": "마룬 5(@Maroon5)와 래퍼 위즈 칼리파(@wizkhalifa)가 함께한 ‘Payphone’의 뮤직비디오가 유튜브(Youtube) 조회수 10억 회를 돌파했습니다.\n\n이번 기록으로 마룬 5는 ‘Sugar’, ‘Memories’, ‘One More Night’, ‘Girls Like You (Volume 2)’, ‘Girls Like You’에 이어 ‘Payphone’까지 총 여섯 편의 뮤직비디오를 유튜브 10억 뷰 클럽에 올리게 됐는데요. 발매 당시 기록적인 디지털 판매량을 기록하며 큰 사랑을 받았던 ‘Payphone’이 14년이 지난 지금, 유튜브 10억 뷰라는 또 하나의 기록을 추가하게 된 셈이죠.\n\n한편 마룬 5는 2025년 여덟 번째 정규 앨범 [Love Is Like]를 발표하며 활동을 이어가",
-        "cluster": 358,
+        "cluster": 362,
         "pace": null,
-        "rank": 105
+        "rank": 103
       },
       {
         "id": "DdNi-5wg-5B",
@@ -4126,16 +4090,16 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdNi-5wg-5B/",
         "timestamp": "2026-09-13T03:02:14+00:00",
-        "hours": 394.1,
+        "hours": 411.1,
         "likes": 2965,
         "comments": 114,
         "views": 43547,
         "is_reel": true,
         "image": "",
         "score": 3307,
-        "baseline": 1105.6,
+        "baseline": 1060.2,
         "baseline_kind": "reel",
-        "multiple": 2.99,
+        "multiple": 3.12,
         "velocity": null,
         "label": "music",
         "kind": "news",
@@ -4169,9 +4133,9 @@
         },
         "picked_before": false,
         "caption": "“이게 57세라고?”\n\n최근 SNS를 중심으로 마릴린 맨슨(@marilynmanson)의 라이브 영상이 다시 화제를 모으고 있습니다. 여전히 강렬한 비주얼과 무대 장악력을 보여주는 것은 물론, 팬들 사이에서는 과거보다 오히려 안정적인 라이브를 보여주고 있다는 반응까지 나오고 있는데요. 마릴린 맨슨은 2025년 약 4년간 술과 담배, 약물을 멀리해왔다고 밝히기도 했으며, 오랜 시간 무대에서 함께했던 앨리스 쿠퍼 역시 달라진 그의 모습을 언급한 바 있습니다.\n\n하지만 그의 ‘복귀’를 이야기하면서 빼놓을 수 없는 것도 있는데요. 2021년부터 이어진 성폭력 및 가정폭력 의혹과 그에 따른 법적 공방입니다. 마릴린 맨슨은 혐의를 지속적으로 부인했고, 2025년 1월 로스앤젤레스 카운티 검찰은 형사 기소를 진행하지 않",
-        "cluster": 344,
+        "cluster": 348,
         "pace": null,
-        "rank": 131
+        "rank": 128
       }
     ],
     "fstvl.life": [
@@ -4183,7 +4147,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Db7JgAtlNN7/",
         "timestamp": "2026-08-12T03:00:33+00:00",
-        "hours": 1162.1,
+        "hours": 1179.1,
         "likes": 1352,
         "comments": 33,
         "views": null,
@@ -4223,9 +4187,9 @@
         },
         "picked_before": false,
         "caption": "XMF 2026 - 2차 라인업 및 티켓오픈\n\n일정: 2026년 10월 3~4일 (토~일)\n장소: 파라다이스시티\n가격 (할인, 한정수량)\n- 1일권 132,000원, 양일권 237,600원\n오픈: 8월 12일 (수) 오후 7시\n예매: 예스24(국내, 글로벌)\n\nXMF 2026 - 2nd Lineup & Ticket Open\n​\nDates | OCT 3-4, 2026 (Sat-Sun)\nVenue | Paradise City, Incheon\nTickets (Limited)\n- 1-DAY ₩132,000, 2-DAY ₩237,600\nOn Sale | 8. 12 (WED) 7PM\nBooking\n- Global: YES24\n- Japan: Ticket Pia, Lawson\n- China: Spring Travel J",
-        "cluster": 102,
+        "cluster": 103,
         "pace": null,
-        "rank": 178
+        "rank": 179
       },
       {
         "id": "Dc2XxvlmJig",
@@ -4235,7 +4199,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dc2XxvlmJig/",
         "timestamp": "2026-09-04T03:00:29+00:00",
-        "hours": 610.1,
+        "hours": 627.1,
         "likes": 1297,
         "comments": 44,
         "views": null,
@@ -4273,9 +4237,9 @@
         },
         "picked_before": false,
         "caption": "부산 국제 록 페스티벌 2026 - 최종 라인업\n\n일정: 2026년 10월 2~4일 (금~일)\n장소: 삼락생태공원\n가격:  3일권 266,000원, 2일권 193,000원, 1일권 120,000원\n예매: 예스24\n\nBusan International Rock Festival - Final Lineup\n\nDates | 2026. 10. 2-4 (Fri-Sun)\nVenue | Samnak Ecological Park, Busan\nTickets | 3-Day ₩266,000, 2-Day ₩193,000, 1-Day ₩120,000\nBooking | YES24\n\n#부산국제록페스티벌 #부락 #락페스티벌",
-        "cluster": 90,
+        "cluster": 91,
         "pace": null,
-        "rank": 186
+        "rank": 187
       },
       {
         "id": "DdSoxdlAbaB",
@@ -4285,7 +4249,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DdSoxdlAbaB/",
         "timestamp": "2026-09-15T02:27:44+00:00",
-        "hours": 346.6,
+        "hours": 363.6,
         "likes": 1301,
         "comments": 11,
         "views": null,
@@ -4323,9 +4287,9 @@
         },
         "picked_before": false,
         "caption": "오아시스 2027 투어 일정 및 티켓 정보\n\n내년 5월 글래스고를 시작으로 유럽 주요 도시를 거쳐 미국을 다녀와 아일랜드, 그리고 넵워스에서 마무리하는 투어 일정입니다.\n\n메일 등록: 9월 18일 (금) 0시까지 (한국 시각)\n코드 발송: 9월 24~27일 중 발송, 무작위 추첨\n판매 일정: 9월 25~27일, 도시별 티켓오픈 상이\n\n티켓 예매를 위해 메일을 등록해야 하고, 현재 홈페이지에서 신청 받고 있습니다. 예매 코드를 받아야 예매가 가능하며, 무작위 추첨으로 발송됩니다.\n\n등록 홈페이지와 오픈채팅방 모두 프로필 링크에 있습니다!\n\n#oasis #오아시스 #live27",
-        "cluster": 78,
+        "cluster": 79,
         "pace": null,
-        "rank": 195
+        "rank": 197
       },
       {
         "id": "DcgcJPlxmf0",
@@ -4335,7 +4299,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/DcgcJPlxmf0/",
         "timestamp": "2026-08-26T14:36:09+00:00",
-        "hours": 814.5,
+        "hours": 831.5,
         "likes": 1415,
         "comments": 10,
         "views": null,
@@ -4368,9 +4332,9 @@
         },
         "picked_before": false,
         "caption": "소규모 라이브클럽의 공연 활동 보장을 위한 「공연법」·「식품위생법」 등 관련 법령 및 제도 개선 촉구에 관한 청원\n\n동의하기: 프로필 링크에 있습니다.\n동의기간: 2026년 9월 25일까지!",
-        "cluster": 81,
+        "cluster": 82,
         "pace": null,
-        "rank": 200
+        "rank": 201
       },
       {
         "id": "Dcf52YzFNhd",
@@ -4380,7 +4344,7 @@
         "music_native": true,
         "url": "https://www.instagram.com/p/Dcf52YzFNhd/",
         "timestamp": "2026-08-26T09:35:42+00:00",
-        "hours": 819.5,
+        "hours": 836.5,
         "likes": 1252,
         "comments": 12,
         "views": null,
@@ -4418,26 +4382,26 @@
         },
         "picked_before": false,
         "caption": "그랜드민트페스티벌 2026 - 3차 라인업\n\n일정: 2026년 10월 17~18일 (토~일)\n장소: 올림픽공원\n가격: 1일권 132,000원\n예매: NOL, 예스24, 네이버\n\nGrand Mint Festival 2026 - 3rd Lineup\n​\nDates | OCT 17-18, 2026 (Sat-Sun)\nVenue | Olympic Park\nTickets | 1-DAY ₩132,000\nBooking | NOL, YES24, NAVER\n\n#그랜드민트페스티벌 #GMF #뮤직페스티벌",
-        "cluster": 105,
+        "cluster": 106,
         "pace": null,
-        "rank": 202
+        "rank": 203
       }
     ]
   },
   "stats": {
-    "pool": 429,
+    "pool": 435,
     "picked": 12,
-    "clusters": 404,
+    "clusters": 410,
     "skipped": {
-      "curation": 4,
+      "curation": 3,
       "non_music": 66,
       "ad": 20,
       "no_baseline": 0,
       "weak": 0,
-      "weekly_tier": 13,
+      "weekly_tier": 11,
       "picked_before": 0,
-      "stale": 151,
-      "quota": 11
+      "stale": 124,
+      "quota": 5
     }
   }
 }
