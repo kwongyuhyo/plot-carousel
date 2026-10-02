@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-01 22:05 KST",
+ "generated_at": "2026-10-02 22:06 KST",
  "weeks": [
   {
    "week": "2026-W24",
@@ -78,34 +78,45 @@
    "followers_delta": 147,
    "reach_total": 1581821,
    "top": "https://www.instagram.com/reel/DdTi4TLvlmq/"
+  },
+  {
+   "week": "2026-W40",
+   "posts": 8,
+   "reach": 164654,
+   "saved": 265,
+   "shares": 7840,
+   "followers": 3047,
+   "followers_delta": 70,
+   "reach_total": 867989,
+   "top": "https://www.instagram.com/p/Dd6HjL9D7Hm/"
   }
  ],
  "kinds": [
   {
    "kind": "인물해부",
-   "n": 27,
-   "weeks": 5,
-   "multiple": 3.04,
-   "low": 1.3,
-   "high": 4.53,
+   "n": 28,
+   "weeks": 6,
+   "multiple": 2.85,
+   "low": 1.62,
+   "high": 3.55,
    "stable": true
   },
   {
    "kind": "기타",
-   "n": 47,
-   "weeks": 6,
-   "multiple": 1.06,
-   "low": 0.85,
-   "high": 1.12,
+   "n": 52,
+   "weeks": 7,
+   "multiple": 1.05,
+   "low": 1.0,
+   "high": 1.1,
    "stable": false
   },
   {
    "kind": "발매·신보",
-   "n": 26,
-   "weeks": 6,
-   "multiple": 0.98,
-   "low": 0.92,
-   "high": 1.05,
+   "n": 28,
+   "weeks": 7,
+   "multiple": 0.93,
+   "low": 0.85,
+   "high": 1.03,
    "stable": false
   },
   {
@@ -171,6 +182,17 @@
    "shares": 3417,
    "kind": "인물해부",
    "head": "올여름 연프를 통틀어 가장 많이 회자된 인물을 꼽자면 단연 로얄44(@royal44k)인데요.\n\n〈래퍼 여친"
+  },
+  {
+   "id": "Dd6HjL9D7Hm",
+   "week": "2026-W40",
+   "permalink": "https://www.instagram.com/p/Dd6HjL9D7Hm/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 123342,
+   "saved": 113,
+   "shares": 7041,
+   "kind": "기타",
+   "head": "김감전이 재판에 넘겨졌습니다.\n\n서울서부지검은 김감전을 대마 관련 혐의로 구속기소했습니다. 지난해 12월부터"
   },
   {
    "id": "Dck7QkuCeHJ",
@@ -248,20 +270,65 @@
    "shares": 2250,
    "kind": "인물해부",
    "head": "힙합과 바다, 둘 다 좋아하신다면 10월 넷째 주 토요일을 비워두셔야겠습니다.\n\n오는 10월 24일 강릉 경"
-  },
-  {
-   "id": "Dbapy2Ivs27",
-   "week": "2026-W32",
-   "permalink": "https://www.instagram.com/reel/Dbapy2Ivs27/",
-   "media_type": "VIDEO",
-   "reach": 33940,
-   "saved": 83,
-   "shares": 704,
-   "kind": "인물해부",
-   "head": "[NEW RELEASE] 한로로- 잔혹한 천사의 테제\n\nJ-POP REMAKE Vol.2 ‘한로로x잔혹한 천"
   }
  ],
  "published": [
+  {
+   "id": "Dd0liDWvnhX",
+   "week": "2026-W40",
+   "kind": "기타",
+   "reach": 10591,
+   "head": "로얄44가 동묘에 떴습니다.\n\n새로 연 유튜브 채널 '로얄왕국'에서 한복 차림으로 동묘를 돌았는데요. \n길에서 만난 어르신이 \"이쁘네\" 하자 로"
+  },
+  {
+   "id": "Dd3ztg4PlUF",
+   "week": "2026-W40",
+   "kind": "기타",
+   "reach": 1980,
+   "head": "로얄44가 동묘에서 용돈을 뿌렸습니다.\n\n로얄44(@royal44k)가 본인의 유튜브 채널 '로얄왕국'에서 한복 차림으로 동묘를 돌던 중 현장 "
+  },
+  {
+   "id": "Dd3z24vvlj1",
+   "week": "2026-W40",
+   "kind": "기타",
+   "reach": 5718,
+   "head": "로얄44의 걸음이 갑자기 빨라졌습니다.\n\n로얄44(@royal44k)가 본인의 유튜브 채널 '로얄왕국'에서 동묘 일대를 걷다가 경찰서 앞을 지나"
+  },
+  {
+   "id": "Dd3z_AdvD7s",
+   "week": "2026-W40",
+   "kind": "발매·신보",
+   "reach": 883,
+   "head": "로얄44가 'C.S.C.B' 뮤직비디오를 공개했습니다.\n\n붉은 조명이 깔린 실내를 배경으로 한 영상입니다. \n커튼과 스탠드 조명, 테이블 위에 "
+  },
+  {
+   "id": "Dd31bFIviNk",
+   "week": "2026-W40",
+   "kind": "기타",
+   "reach": 5424,
+   "head": "로꼬가 두오버엔터테인먼트와 전속계약을 맺었습니다.\n\n지난 28일 발표된 소식입니다. 2024년 1인 기획사 로꼬모티브를 세워 2년간 독립으로 활"
+  },
+  {
+   "id": "Dd32BbvPDCQ",
+   "week": "2026-W40",
+   "kind": "발매·신보",
+   "reach": 4329,
+   "head": "유튜브 채널 빠더너스의 새로운 시리즈 '야유회 마니아' 1회에서 문상훈, 엄지윤과 나우아임영(@now_im_young)이 오프닝에서 담타(담배타"
+  },
+  {
+   "id": "Dd32jK9j3W2",
+   "week": "2026-W40",
+   "kind": "인물해부",
+   "reach": 12387,
+   "head": "김하온은 서바이벌에서 두 번 우승했습니다.\n\n2018년 〈고등래퍼 2〉로 이름을 알렸고, 올해 〈쇼미더머니 12〉에서 다시 정상에 섰는데요. 그"
+  },
+  {
+   "id": "Dd6HjL9D7Hm",
+   "week": "2026-W40",
+   "kind": "기타",
+   "reach": 123342,
+   "head": "김감전이 재판에 넘겨졌습니다.\n\n서울서부지검은 김감전을 대마 관련 혐의로 구속기소했습니다. 지난해 12월부터 올해 3월까지 미성년자와 네 차례에"
+  },
   {
    "id": "DdG4ucoj7Kf",
    "week": "2026-W38",
@@ -1196,6 +1263,6 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-01 19:06 KST"
+  "daily": "2026-10-01 22:05 KST"
  }
 }
