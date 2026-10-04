@@ -1091,7 +1091,7 @@ function blank() {
            // 컷을 나눈 뒤 한 번 보여주고 확정을 받는다. 지난 선택을 기억한다.
            check: !!r.check,
            // [서사] 서사형 오늘의 노래 — 한 줄에 하나, 첫 줄이 첫 화면. 서사영상은 「링크 시작-끝」
-           story: '', storyClip: '' };
+           story: '', storyClip: '', storyCredit: '' };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1103,7 +1103,7 @@ function blank() {
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
-              'story', 'storyClip'];
+              'story', 'storyClip', 'storyCredit'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1475,6 +1475,7 @@ function parseForm(text) {
       .indexOf((kv['컷확인'] || '').trim().toLowerCase()) >= 0;
     b.story = (kv['서사'] || '').split('|').map(x => x.trim()).filter(Boolean).join('\n');
     b.storyClip = (kv['서사영상'] || '').trim();
+    b.storyCredit = (kv['서사출처'] || '').trim();
     out.push(b);
   }
   return out;
@@ -1607,6 +1608,7 @@ function blockText(b) {
     // [서사] 비어 있으면 줄을 아예 넣지 않는다 — 지금까지의 양식과 똑같이 보인다.
     ...(storyLines(b).length ? ['서사: ' + storyLines(b).join(' | ')] : []),
     ...((b.storyClip || '').trim() ? ['서사영상: ' + b.storyClip.trim()] : []),
+    ...((b.storyClip || '').trim() && (b.storyCredit || '').trim() ? ['서사출처: ' + b.storyCredit.trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
@@ -1676,10 +1678,12 @@ function buildBlock(b) {
     <input type="text" data-f="hook" placeholder="짧은 한마디">
 
     <div data-r="storyBox" hidden>
-      <label>서사 <span class="opt">— 노래 앞에 띄울 곡 이야기, 한 줄에 하나 · 첫 줄이 첫 화면</span></label>
-      <textarea data-f="story" rows="4" placeholder="한 커플을 보고 쓴 노래&#10;10년째 연애 중이던 두 사람&#10;“쉽지 않을 거야, 그래도 같이 가자”"></textarea>
-      <label>서사 영상 <span class="opt">— 선택, 아티스트가 그 노래 얘기를 하는 장면 「링크 시작-끝」</span></label>
+      <label>여담 영상 <span class="opt">— 노래 앞에 붙일 장면, 아티스트가 그 곡 얘기를 하는 인터뷰·방송 「링크 시작-끝」</span></label>
       <input type="text" data-f="storyClip" placeholder="https://youtu.be/… 12:03-12:25">
+      <label>장면 위 제목 <span class="opt">— 여담 장면 위에 계속 떠 있을 한 줄 (20자 안팎)</span></label>
+      <textarea data-f="story" rows="2" placeholder="윤종신이 〈오르막길〉을 쓴 진짜 이유"></textarea>
+      <label>여담 출처 <span class="opt">— 장면 아래 작게 (예: 출처: SBS 파워FM 컬투쇼)</span></label>
+      <input type="text" data-f="storyCredit" placeholder="출처: ">
       <div class="hint" data-r="storyErr" hidden></div>
       <div class="hint" data-r="storyTip"></div>
     </div>
@@ -1903,10 +1907,14 @@ function refresh() {
         t + Math.max(1.8, Math.min(3.8, 0.9 + x.replace(/\s/g, '').length * 0.085)) + (i ? 0 : 0.4), 0.3);
       const tip = $('[data-r=storyTip]', body);
       tip.className = 'hint';
-      tip.textContent = !n ? '비우면 지금까지처럼 노래만 나갑니다.'
-        : (b.storyClip || '').trim()
-          ? '발언 장면 뒤에 노래가 붙습니다. 문구 ' + n + '줄은 장면 위에 자막처럼 뜹니다.'
-          : '문구 ' + n + '줄이 노래 앞 약 ' + Math.round(secs) + '초를 덮습니다 — 구간을 후렴 ' +
+      const clipTxt = (b.storyClip || '').trim();
+      const cm = /^https?:\/\/\S+\s+(\S+)\s*-\s*(\S+)$/.exec(clipTxt);
+      const clen = cm ? (toSec(cm[2], 30) - toSec(cm[1], 30)) : 0;
+      tip.textContent = clipTxt
+          ? '여담 장면' + (clen > 0 ? ' ' + Math.round(clen) + '초' : '') + ' 뒤에 노래가 붙습니다 — 말자막은 자동으로 들어갑니다.'
+            + (clen > 35 ? ' 35초가 넘으면 앞 30초만 씁니다.' : '')
+        : !n ? '여담 영상을 넣으면 노래 앞에 그 장면이 먼저 나옵니다. 비우면 지금까지처럼 노래만.'
+        : '여담 영상 없이 문구 ' + n + '줄이 노래 앞 약 ' + Math.round(secs) + '초를 덮습니다 — 구간을 후렴 ' +
             Math.round(secs) + '초 전부터 잡으면 문구가 끝날 때 후렴이 나옵니다.';
     }
     $('[data-f=start]', body).classList.toggle('bad', !!e.span);
@@ -3386,9 +3394,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.05 00:36';
+    a.title = '판 10.05 01:07';
     var ver = document.createElement('span');
-    ver.textContent = '10.05 00:36';
+    ver.textContent = '10.05 01:07';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
