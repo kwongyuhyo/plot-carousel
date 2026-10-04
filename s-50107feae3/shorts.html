@@ -1089,7 +1089,9 @@ function blank() {
            // null = 자동(얼굴 따라). 0~1 = 가로 위치를 직접 고정.
            crop: null,
            // 컷을 나눈 뒤 한 번 보여주고 확정을 받는다. 지난 선택을 기억한다.
-           check: !!r.check };
+           check: !!r.check,
+           // [서사] 서사형 오늘의 노래 — 한 줄에 하나, 첫 줄이 첫 화면. 서사영상은 「링크 시작-끝」
+           story: '', storyClip: '' };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1100,7 +1102,8 @@ function blank() {
  */
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
-              'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check'];
+              'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
+              'story', 'storyClip'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1272,6 +1275,14 @@ function check(b) {
     else if (t <= s) e.span = '끝이 시작보다 뒤여야 합니다.';
   }
 
+  const sc = (b.storyClip || '').trim();
+  if (sc && !/^https?:\/\/\S+\s+\S+\s*-\s*\S+$/.test(sc)) {
+    e.story = '서사 영상은 「링크 시작-끝」 형식입니다. (예: https://youtu.be/… 12:03-12:25)';
+  } else if (sc) {
+    const mm = /^https?:\/\/\S+\s+(\S+)\s*-\s*(\S+)$/.exec(sc);
+    const a = toSec(mm[1], 30), z = toSec(mm[2], 30);
+    if (a === null || z === null || z <= a) e.story = '서사 영상 구간을 확인해주세요.';
+  }
   if (!b.title.trim())  e.title  = '곡 제목은 필수입니다.';
   if (!b.source.trim()) e.source = '출처는 필수입니다.';
   return e;
@@ -1462,6 +1473,8 @@ function parseForm(text) {
     b.crop   = cropOf(kv['리프레임']);
     b.check = ['예','y','yes','on','1','true','확인']
       .indexOf((kv['컷확인'] || '').trim().toLowerCase()) >= 0;
+    b.story = (kv['서사'] || '').split('|').map(x => x.trim()).filter(Boolean).join('\n');
+    b.storyClip = (kv['서사영상'] || '').trim();
     out.push(b);
   }
   return out;
@@ -1591,9 +1604,15 @@ function blockText(b) {
     '리프레임: ' + (b.crop === null ? '자동' : String(b.crop)),
     // 켰을 때만 적는다 — 안 적으면 봇은 지금까지처럼 쭉 만든다.
     ...(b.check ? ['컷확인: 예'] : []),
+    // [서사] 비어 있으면 줄을 아예 넣지 않는다 — 지금까지의 양식과 똑같이 보인다.
+    ...(storyLines(b).length ? ['서사: ' + storyLines(b).join(' | ')] : []),
+    ...((b.storyClip || '').trim() ? ['서사영상: ' + b.storyClip.trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
+function storyLines(b) {
+  return String(b.story || '').split(/\n|\|/).map(x => x.trim()).filter(Boolean).slice(0, 6);
+}
 
 /* ── 블록 DOM ─────────────────────────────────────────
  * 블록마다 한 번만 그리고 이후엔 값만 갱신한다.
@@ -1655,6 +1674,15 @@ function buildBlock(b) {
 
     <label>후킹 <span class="opt">— 선택, 제목 위 한 줄</span></label>
     <input type="text" data-f="hook" placeholder="짧은 한마디">
+
+    <div data-r="storyBox" hidden>
+      <label>서사 <span class="opt">— 노래 앞에 띄울 곡 이야기, 한 줄에 하나 · 첫 줄이 첫 화면</span></label>
+      <textarea data-f="story" rows="4" placeholder="한 커플을 보고 쓴 노래&#10;10년째 연애 중이던 두 사람&#10;“쉽지 않을 거야, 그래도 같이 가자”"></textarea>
+      <label>서사 영상 <span class="opt">— 선택, 아티스트가 그 노래 얘기를 하는 장면 「링크 시작-끝」</span></label>
+      <input type="text" data-f="storyClip" placeholder="https://youtu.be/… 12:03-12:25">
+      <div class="hint" data-r="storyErr" hidden></div>
+      <div class="hint" data-r="storyTip"></div>
+    </div>
 
     <label>출처</label>
     <input type="text" data-f="source" placeholder="하이브 / 제공 | 하이브 / 촬영 | PLOT">
@@ -1866,6 +1894,21 @@ function refresh() {
     put('spanErr', e.span);
     put('titleErr', e.title, 'title');
     put('srcErr', e.source, 'source');
+    put('storyErr', e.story, 'storyClip');
+    const sbox = $('[data-r=storyBox]', body);
+    sbox.hidden = !(cat === '오늘의 노래' || storyLines(b).length || (b.storyClip || '').trim());
+    if (!sbox.hidden) {
+      const n = storyLines(b).length;
+      const secs = storyLines(b).reduce((t, x, i) =>
+        t + Math.max(1.8, Math.min(3.8, 0.9 + x.replace(/\s/g, '').length * 0.085)) + (i ? 0 : 0.4), 0.3);
+      const tip = $('[data-r=storyTip]', body);
+      tip.className = 'hint';
+      tip.textContent = !n ? '비우면 지금까지처럼 노래만 나갑니다.'
+        : (b.storyClip || '').trim()
+          ? '발언 장면 뒤에 노래가 붙습니다. 문구 ' + n + '줄은 장면 위에 자막처럼 뜹니다.'
+          : '문구 ' + n + '줄이 노래 앞 약 ' + Math.round(secs) + '초를 덮습니다 — 구간을 후렴 ' +
+            Math.round(secs) + '초 전부터 잡으면 문구가 끝날 때 후렴이 나옵니다.';
+    }
     $('[data-f=start]', body).classList.toggle('bad', !!e.span);
     $('[data-f=end]', body).classList.toggle('bad', !!e.span);
     const pick = $('[data-a=pick]', body);
@@ -3033,6 +3076,24 @@ function b64urlJson(s) {
   return JSON.parse(new TextDecoder().decode(bytes));
 }
 
+/* 봇이 만든 양식(?form=…, base64url)을 그대로 펼친다 — /story 의 「제작 앱에서 열기」 */
+function takeFormParam() {
+  let raw = null;
+  try { raw = new URLSearchParams(location.search).get('form'); } catch (_) {}
+  if (!raw) return 0;
+  try { history.replaceState(null, '', location.pathname + location.hash); } catch (_) {}
+  let text = '';
+  try {
+    let s = raw.replace(/-/g, '+').replace(/_/g, '/');
+    while (s.length % 4) s += '=';
+    const bin = atob(s);
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    text = new TextDecoder().decode(bytes);
+  } catch (_) { toast('양식을 읽지 못했습니다'); return 0; }
+  return importText(text, false);
+}
+
 /* 봇이 보낸 추천을 양식으로 펼친다. 반환: 펼친 편 수 */
 function takePcut() {
   let raw = null;
@@ -3300,7 +3361,7 @@ function boot() {
   // 캐러셀 화면에서 숏폼 양식을 붙여넣어 넘어온 경우 — 여기서 받아 펼친다.
   takeHandoff();
   // 봇의 '추천 구간 앱에서 다듬기' 버튼으로 열린 경우
-  if (takePcut()) $('#resume').hidden = true;
+  if (takePcut() || takeFormParam()) $('#resume').hidden = true;
   window.addEventListener('resize', fitStage);
   // 폰트가 늦게 오면 미리보기 폭 계산이 틀어진다 — 로드 후 한 번 더.
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => refresh());
@@ -3325,9 +3386,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.04 18:02';
+    a.title = '판 10.05 00:36';
     var ver = document.createElement('span');
-    ver.textContent = '10.04 18:02';
+    ver.textContent = '10.05 00:36';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

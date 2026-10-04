@@ -1985,6 +1985,7 @@ async function downscale(f) {
   let d = null;
   try { d = await decodeFile(f); } catch (e) { return null; }
   try {
+    if (!(d.w > 0 && d.h > 0)) { d.done(); return null; }
     const k = Math.min(1, 2000 / Math.max(d.w, d.h));
     const cw = Math.max(1, Math.round(d.w * k)), ch = Math.max(1, Math.round(d.h * k));
     const c = document.createElement("canvas");
@@ -2070,8 +2071,22 @@ canvasBox.addEventListener("click", (e) => {
 ["dragleave", "drop"].forEach((ev) => canvasBox.addEventListener(ev, (e) => {
   e.preventDefault(); canvasBox.classList.remove("drop");
 }));
-canvasBox.addEventListener("drop", (e) => {
-  if (e.dataTransfer && e.dataTransfer.files) addPhotos(e.dataTransfer.files);
+canvasBox.addEventListener("drop", async (e) => {
+  const dt = e.dataTransfer;
+  if (!dt) return;
+  if (dt.files && dt.files.length) { addPhotos(dt.files); return; }
+  // 다른 웹페이지(클로드 대화창 등)에서 끌어온 사진은 파일이 아니라 주소로 온다
+  let u = (dt.getData("text/uri-list") || "").split("\n").find((x) => x && !x.startsWith("#")) || "";
+  if (!u) { const m = /<img[^>]+src="([^"]+)"/i.exec(dt.getData("text/html") || ""); if (m) u = m[1]; }
+  if (!u) return;
+  try {
+    const r = await fetch(u.replace(/&amp;/g, "&"), { mode: "cors" });
+    if (!r.ok) throw new Error(r.status);
+    const b = await r.blob();
+    await addPhotos([new File([b], "dropped", { type: b.type || "" })]);
+  } catch (err) {
+    toast("웹페이지에서 끌어온 사진은 바로 못 받습니다 — 사진을 저장한 뒤 넣거나, 복사해서 붙여넣으세요");
+  }
 });
 window.addEventListener("paste", (e) => {
   const cd = e.clipboardData;
@@ -2694,9 +2709,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.04 18:02';
+    a.title = '판 10.05 00:36';
     var ver = document.createElement('span');
-    ver.textContent = '10.04 18:02';
+    ver.textContent = '10.05 00:36';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
