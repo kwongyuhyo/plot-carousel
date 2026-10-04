@@ -1091,7 +1091,7 @@ function blank() {
            // 컷을 나눈 뒤 한 번 보여주고 확정을 받는다. 지난 선택을 기억한다.
            check: !!r.check,
            // [서사] 서사형 오늘의 노래 — 한 줄에 하나, 첫 줄이 첫 화면. 서사영상은 「링크 시작-끝」
-           story: '', storyClip: '', storyCredit: '' };
+           story: '', storyClip: '', storyCredit: '', storyCrop: '' };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1103,7 +1103,7 @@ function blank() {
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
-              'story', 'storyClip', 'storyCredit'];
+              'story', 'storyClip', 'storyCredit', 'storyCrop'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1276,12 +1276,16 @@ function check(b) {
   }
 
   const sc = (b.storyClip || '').trim();
-  if (sc && !/^https?:\/\/\S+\s+\S+\s*-\s*\S+$/.test(sc)) {
-    e.story = '서사 영상은 「링크 시작-끝」 형식입니다. (예: https://youtu.be/… 12:03-12:25)';
-  } else if (sc) {
-    const mm = /^https?:\/\/\S+\s+(\S+)\s*-\s*(\S+)$/.exec(sc);
-    const a = toSec(mm[1], 30), z = toSec(mm[2], 30);
-    if (a === null || z === null || z <= a) e.story = '서사 영상 구간을 확인해주세요.';
+  if (sc) {
+    const rg = storyRanges(sc);
+    if (rg === null) e.story = '서사 영상은 「링크 시작-끝」 형식입니다. 덜어낼 곳이 있으면 쉼표로 나눠 적습니다. (예: https://youtu.be/… 12:03-12:10, 12:14-12:25)';
+    else if (rg === false) e.story = '서사 영상 구간을 확인해주세요.';
+  }
+  const cr = (b.storyCrop || '').trim();
+  if (cr && !/^(자동|auto|-|왼쪽|가운데|중앙|오른쪽|left|center|right)$/i.test(cr)) {
+    const pct = cr.endsWith('%'), v = parseFloat(pct ? cr.slice(0, -1) : cr);
+    const r = pct ? v / 100 : v;
+    if (!(r >= 0 && r <= 1) || !/^[\d.]+%?$/.test(cr)) e.story = '여담 화면 위치는 왼쪽·가운데·오른쪽, 0~1, 또는 30% 처럼 적습니다.';
   }
   if (!b.title.trim())  e.title  = '곡 제목은 필수입니다.';
   if (!b.source.trim()) e.source = '출처는 필수입니다.';
@@ -1476,6 +1480,7 @@ function parseForm(text) {
     b.story = (kv['서사'] || '').split('|').map(x => x.trim()).filter(Boolean).join('\n');
     b.storyClip = (kv['서사영상'] || '').trim();
     b.storyCredit = (kv['서사출처'] || '').trim();
+    b.storyCrop = (kv['서사리프레임'] || '').trim();
     out.push(b);
   }
   return out;
@@ -1609,9 +1614,27 @@ function blockText(b) {
     ...(storyLines(b).length ? ['서사: ' + storyLines(b).join(' | ')] : []),
     ...((b.storyClip || '').trim() ? ['서사영상: ' + b.storyClip.trim()] : []),
     ...((b.storyClip || '').trim() && (b.storyCredit || '').trim() ? ['서사출처: ' + b.storyCredit.trim()] : []),
+    ...((b.storyClip || '').trim() && (b.storyCrop || '').trim() && b.storyCrop.trim() !== '자동' ? ['서사리프레임: ' + b.storyCrop.trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
+/* 서사영상 「링크 a-b, c-d」 → [[초,초],…] · 형식이 틀리면 null · 구간이 거꾸로거나 겹치면 false */
+function storyRanges(txt) {
+  const m = /^https?:\/\/\S+\s+(.+)$/.exec(String(txt || '').trim());
+  if (!m) return null;
+  const out = [];
+  for (const part of m[1].split(/\s*,\s*/)) {
+    const mm = /^([\d:.]+)\s*-\s*([\d:.]+)$/.exec(part.trim());
+    if (!mm) return null;
+    const a = toSec(mm[1], 30), z = toSec(mm[2], 30);
+    if (a === null || z === null || z <= a) return false;
+    out.push([a, z]);
+  }
+  out.sort((x, y) => x[0] - y[0]);
+  for (let i = 1; i < out.length; i++) if (out[i][0] < out[i - 1][1]) return false;
+  return out;
+}
+
 function storyLines(b) {
   return String(b.story || '').split(/\n|\|/).map(x => x.trim()).filter(Boolean).slice(0, 6);
 }
@@ -1678,12 +1701,14 @@ function buildBlock(b) {
     <input type="text" data-f="hook" placeholder="짧은 한마디">
 
     <div data-r="storyBox" hidden>
-      <label>여담 영상 <span class="opt">— 노래 앞에 붙일 장면, 아티스트가 그 곡 얘기를 하는 인터뷰·방송 「링크 시작-끝」</span></label>
-      <input type="text" data-f="storyClip" placeholder="https://youtu.be/… 12:03-12:25">
+      <label>여담 영상 <span class="opt">— 노래 앞에 붙일 장면 「링크 시작-끝」 · 중간에 뺄 말이 있으면 쉼표로 나눠 적기</span></label>
+      <input type="text" data-f="storyClip" placeholder="https://youtu.be/… 12:03-12:10, 12:14-12:25">
       <label>장면 위 제목 <span class="opt">— 여담 장면 위에 계속 떠 있을 한 줄 (20자 안팎)</span></label>
       <textarea data-f="story" rows="2" placeholder="윤종신이 〈오르막길〉을 쓴 진짜 이유"></textarea>
       <label>여담 출처 <span class="opt">— 장면 아래 작게 (예: 출처: SBS 파워FM 컬투쇼)</span></label>
       <input type="text" data-f="storyCredit" placeholder="출처: ">
+      <label>여담 화면 위치 <span class="opt">— 비우면 자동(얼굴 따라감) · 왼쪽 / 가운데 / 오른쪽 · 0~1 · 30%</span></label>
+      <input type="text" data-f="storyCrop" placeholder="자동">
       <div class="hint" data-r="storyErr" hidden></div>
       <div class="hint" data-r="storyTip"></div>
     </div>
@@ -1908,11 +1933,13 @@ function refresh() {
       const tip = $('[data-r=storyTip]', body);
       tip.className = 'hint';
       const clipTxt = (b.storyClip || '').trim();
-      const cm = /^https?:\/\/\S+\s+(\S+)\s*-\s*(\S+)$/.exec(clipTxt);
-      const clen = cm ? (toSec(cm[2], 30) - toSec(cm[1], 30)) : 0;
+      const rg = storyRanges(clipTxt);
+      const clen = rg ? rg.reduce((t, r) => t + r[1] - r[0], 0) : 0;
+      const ncut = rg ? rg.length - 1 : 0;
       tip.textContent = clipTxt
-          ? '여담 장면' + (clen > 0 ? ' ' + Math.round(clen) + '초' : '') + ' 뒤에 노래가 붙습니다 — 말자막은 자동으로 들어갑니다.'
-            + (clen > 35 ? ' 35초가 넘으면 앞 30초만 씁니다.' : '')
+          ? '여담 장면' + (clen > 0 ? ' ' + Math.round(clen) + '초' : '') + (ncut ? ' (' + ncut + '곳 덜어냄)' : '')
+            + ' 뒤에 노래가 붙습니다 — 말 사이 쉼은 자동으로 줄이고, 말자막도 자동으로 들어갑니다.'
+            + (clen > 40 ? ' 40초가 넘으면 앞 40초만 씁니다.' : '')
         : !n ? '여담 영상을 넣으면 노래 앞에 그 장면이 먼저 나옵니다. 비우면 지금까지처럼 노래만.'
         : '여담 영상 없이 문구 ' + n + '줄이 노래 앞 약 ' + Math.round(secs) + '초를 덮습니다 — 구간을 후렴 ' +
             Math.round(secs) + '초 전부터 잡으면 문구가 끝날 때 후렴이 나옵니다.';
@@ -3394,9 +3421,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.05 01:07';
+    a.title = '판 10.05 02:53';
     var ver = document.createElement('span');
-    ver.textContent = '10.05 01:07';
+    ver.textContent = '10.05 02:53';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
