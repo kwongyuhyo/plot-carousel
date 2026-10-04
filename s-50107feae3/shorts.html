@@ -1906,8 +1906,9 @@ function refresh() {
     TG.MainButton.setText(label);
     if (bad) TG.MainButton.disable(); else TG.MainButton.enable();
     // 색이 아니라 반전으로 상태를 보인다 — 완성물의 태그와 같은 장치.
-    TG.MainButton.color = bad ? '#22222B' : '#ECECF1';
-    TG.MainButton.textColor = bad ? '#5E5E6A' : '#0A0A0C';
+    const tc = tgColors();
+    TG.MainButton.color = bad ? tc.off : tc.ink;
+    TG.MainButton.textColor = bad ? tc.offText : tc.bg;
     TG.MainButton.show();
   } else {
     $('#formOut').textContent = formText();
@@ -3206,12 +3207,39 @@ function toast(msg) {
   toastT = setTimeout(() => t.classList.remove('on'), 2000);
 }
 
+/* ── 텔레그램 색 ───────────────────────────────────────
+ * 머리줄·바탕·아래 큰 버튼은 텔레그램이 그린다. 지금 테마의 색을 읽어 넘긴다. */
+function cssVar(name, fallback) {
+  try {
+    const v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return /^#[0-9a-f]{6}$/i.test(v) ? v : fallback;
+  } catch (_) { return fallback; }
+}
+function tgColors() {
+  return { bg: cssVar('--bg', '#0A0A0C'), ink: cssVar('--ink', '#ECECF1'),
+           off: cssVar('--panel-2', '#22222B'), offText: cssVar('--faint', '#5E5E6A') };
+}
+function tgTheme() {
+  if (!IN_TG) return;
+  const c = tgColors();
+  try { TG.setHeaderColor(c.bg); TG.setBackgroundColor(c.bg); } catch (_) {}
+  try { if (TG.setBottomBarColor) TG.setBottomBarColor(c.bg); } catch (_) {}
+}
+
 /* ── 시작 ─────────────────────────────────────────────── */
 function boot() {
 
   if (IN_TG) {
     TG.ready(); TG.expand();
-    try { TG.setHeaderColor('#0A0A0C'); TG.setBackgroundColor('#0A0A0C'); } catch (_) {}
+    tgTheme();
+    // 테마를 바꾸면 텔레그램 머리줄·바탕·아래 버튼도 같이 바꾼다
+    // (예전엔 어두운색으로 박혀 있어서 밝게로 바꿔도 위아래가 검게 남았다)
+    try {
+      new MutationObserver(() => { tgTheme(); refresh(); })
+        .observe(document.documentElement, { attributes: true,
+                                              attributeFilter: ['data-theme', 'data-accent', 'data-neon'] });
+      matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => { tgTheme(); refresh(); });
+    } catch (_) {}
     TG.MainButton.onClick(submit);
     try { TG.enableClosingConfirmation(); } catch (_) {}
   } else {
@@ -3297,9 +3325,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.04 17:27';
+    a.title = '판 10.04 18:02';
     var ver = document.createElement('span');
-    ver.textContent = '10.04 17:27';
+    ver.textContent = '10.04 18:02';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

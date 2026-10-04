@@ -473,6 +473,14 @@ main{display:grid;gap:0;padding-bottom:96px}
   font-size:13px;color:var(--muted);background:var(--panel)}
 @media(min-width:980px){#sampleBar{margin:0 0 14px}}
 #sampleBar button{color:var(--text);text-decoration:underline;font-size:13px;flex:none}
+#autoBar{display:flex;align-items:center;gap:12px;margin:12px 14px 0;padding:9px 12px;
+  border:1px solid var(--line);border-left:2px solid var(--amber);border-radius:6px;
+  font-size:13px;color:var(--text);background:var(--panel)}
+#autoBar[hidden]{display:none}
+#autoBar span{flex:1;min-width:0}
+@media(min-width:980px){#autoBar{margin:0 0 14px}}
+#autoBar button{color:var(--text);text-decoration:underline;font-size:13px;flex:none}
+#autoBar #autoGo{font-weight:700}
 
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:88px;z-index:60;
   background:var(--raise);border:1px solid var(--line);border-radius:8px;
@@ -525,6 +533,12 @@ main{display:grid;gap:0;padding-bottom:96px}
   </div>
 
   <div class="right">
+    <div id="autoBar" hidden>
+      <span></span>
+      <button id="autoGo" type="button">이어서 하기</button>
+      <button id="autoNo" type="button">버리기</button>
+    </div>
+
     <div id="sampleBar">
       <span>예시 내용이 들어 있습니다. 그대로 고쳐 쓰거나 비우고 시작하세요.</span>
       <button id="clearSample" type="button">비우기</button>
@@ -1929,25 +1943,46 @@ function bindFit() {
 }
 
 /* ── 사진 ──────────────────────────────────────────────────────────────── */
-function downscale(dataUrl) {
-  return new Promise((res) => {
+/* 큰 사진을 data URL 로 통째 읽으면(1200만 화소면 문자열만 수십 MB) 폰과 텔레그램
+   안에서 메모리가 터져 앱이 튕긴다. 파일을 바로 디코드해 2000px 로 줄인 것만 남긴다.
+   (2026-10 규효 "캐러셀 제작에서 사진이 안 들어감 · 가끔 앱이 튕김") */
+function decodeFile(f) {
+  // 1순위: createImageBitmap — 디코드와 축소를 브라우저가 알아서, 메모리도 적게
+  const viaBitmap = () => (window.createImageBitmap
+    ? createImageBitmap(f, { imageOrientation: "from-image" }).catch(() => createImageBitmap(f))
+    : Promise.reject(new Error("no bitmap")));
+  // 2순위: 객체 URL 로 <img> — data URL 보다 훨씬 가볍다
+  const viaImg = () => new Promise((res, rej) => {
+    const u = URL.createObjectURL(f);
     const im = new Image();
-    im.onload = () => {
-      let w = im.width, h = im.height;
-      const k = Math.min(1, 2000 / Math.max(w, h));
-      const cw = Math.round(w * k), ch = Math.round(h * k);
-      const c = document.createElement("canvas");
-      c.width = cw; c.height = ch;
-      const cx = c.getContext("2d");
-      cx.imageSmoothingQuality = "high";
-      cx.drawImage(im, 0, 0, cw, ch);
-      let q = 0.9, out = c.toDataURL("image/jpeg", q);
-      while (out.length > 740000 && q > 0.45) { q -= 0.1; out = c.toDataURL("image/jpeg", q); }
-      res(out);
-    };
-    im.onerror = () => res(null);
-    im.src = dataUrl;
+    im.onload = () => { res({ src: im, w: im.naturalWidth, h: im.naturalHeight, done: () => URL.revokeObjectURL(u) }); };
+    im.onerror = () => { URL.revokeObjectURL(u); rej(new Error("decode")); };
+    im.src = u;
   });
+  return viaBitmap()
+    .then((b) => ({ src: b, w: b.width, h: b.height, done: () => { try { b.close(); } catch (e) {} } }))
+    .catch(viaImg);
+}
+async function downscale(f) {
+  let d = null;
+  try { d = await decodeFile(f); } catch (e) { return null; }
+  try {
+    const k = Math.min(1, 2000 / Math.max(d.w, d.h));
+    const cw = Math.max(1, Math.round(d.w * k)), ch = Math.max(1, Math.round(d.h * k));
+    const c = document.createElement("canvas");
+    c.width = cw; c.height = ch;
+    const cx = c.getContext("2d");
+    cx.imageSmoothingQuality = "high";
+    cx.drawImage(d.src, 0, 0, cw, ch);
+    d.done();
+    let q = 0.9, out = c.toDataURL("image/jpeg", q);
+    while (out.length > 740000 && q > 0.45) { q -= 0.1; out = c.toDataURL("image/jpeg", q); }
+    c.width = c.height = 0;          // 캔버스 메모리를 바로 돌려준다 (사파리는 늦게 푼다)
+    return out;
+  } catch (e) {
+    try { d.done(); } catch (_) {}
+    return null;
+  }
 }
 function attachImage(slide, dataUrl) {
   return new Promise((res) => {
@@ -1957,28 +1992,44 @@ function attachImage(slide, dataUrl) {
     im.src = dataUrl;
   });
 }
-function readFile(f) {
-  return new Promise((r) => { const fr = new FileReader(); fr.onload = () => r(fr.result); fr.readAsDataURL(f); });
-}
 async function addPhotos(files) {
-  const imgs = Array.from(files).filter((f) => f.type.startsWith("image/"));
-  if (!imgs.length) return;
+  // 안드로이드 갤러리·구글 포토·텔레그램은 종류(type)를 비우고, 이름에 확장자도 없이 넘기기도 한다.
+  // 예전엔 그런 파일을 전부 버려서 '어떤 사진도 안 들어가는' 기기가 있었다. 종류가 비면 일단 읽어 본다.
+  const isImg = (f) => !f.type || (f.type || "").startsWith("image/") ||
+    /\.(jpe?g|png|webp|gif|heic|heif|avif|bmp)$/i.test(f.name || "");
+  const imgs = Array.from(files).filter(isImg);
+  if (!imgs.length) { if (files.length) toast("사진 파일이 아닙니다"); return; }
   toast(imgs.length > 1 ? `사진 ${imgs.length}장 넣는 중…` : "사진 넣는 중…");
   let idx = cur >= deck.slides.length ? 0 : cur;
+  let put = 0, bad = 0, heic = 0;
   for (const f of imgs) {
     if (idx >= deck.slides.length) break;
-    const small = await downscale(await readFile(f));
-    if (small) await attachImage(deck.slides[idx], small);
-    idx++;
+    const small = await downscale(f);
+    if (small && await attachImage(deck.slides[idx], small)) { put++; idx++; }
+    else { bad++; if (/hei[cf]/i.test((f.type || "") + (f.name || ""))) heic++; }
   }
-  markDirty(); syncAll();
+  if (put) { markDirty(); syncAll(); }
+  if (!put) {
+    toast(heic ? "HEIC 사진을 이 화면에서 못 읽었습니다 — JPG 로 바꾸거나 스크린샷으로 넣어주세요"
+               : "사진을 읽지 못했습니다 — 다른 사진으로 해보세요");
+    return;
+  }
   const now = deck.slides[cur];
-  toast(now && now.el && fitOffRatio(now.el)
+  toast(bad ? `${put}장 넣음 · ${bad}장은 못 읽었습니다${heic ? " (HEIC)" : ""}`
+    : now && now.el && fitOffRatio(now.el)
     ? "4:5 가 아닌 사진이라 꽉 채우면 잘립니다 — 「사진 맞추기」로 살릴 수 있어요"
     : "사진을 넣었습니다");
 }
 const photoInput = document.getElementById("photoInput");
-function pickPhoto() { photoInput.value = ""; photoInput.click(); }
+function pickPhoto() {
+  photoInput.value = ""; photoInput.click();
+  // 텔레그램 맥·PC 앱의 미니앱은 사진 고르는 창을 아예 안 여는 판이 있다.
+  // 아무 일도 안 일어나면 왜인지 모르니 다른 길을 먼저 말해 둔다.
+  const T = window.Telegram && window.Telegram.WebApp;
+  if (inTG() && T && /^(macos|tdesktop|weba|webk|web)$/.test(T.platform || "")) {
+    setTimeout(() => toast("사진 창이 안 열리면 사진을 미리보기에 끌어다 놓거나 복사해 붙여넣으세요"), 600);
+  }
+}
 photoInput.addEventListener("change", (e) => addPhotos(e.target.files || []));
 document.getElementById("photoBtn").onclick = pickPhoto;
 document.getElementById("photoHint").onclick = pickPhoto;
@@ -2005,8 +2056,14 @@ canvasBox.addEventListener("drop", (e) => {
   if (e.dataTransfer && e.dataTransfer.files) addPhotos(e.dataTransfer.files);
 });
 window.addEventListener("paste", (e) => {
-  const items = (e.clipboardData && e.clipboardData.files) || [];
-  if (items.length) addPhotos(items);
+  const cd = e.clipboardData;
+  let files = Array.from((cd && cd.files) || []);
+  // 사파리·웹 이미지 복사는 files 가 비고 items 에만 온다
+  if (!files.length && cd && cd.items) {
+    files = Array.from(cd.items).filter((it) => it.kind === "file" && /^image\//.test(it.type))
+      .map((it) => it.getAsFile()).filter(Boolean);
+  }
+  if (files.length) { e.preventDefault(); addPhotos(files); }
 });
 
 /* ── 양식 ──────────────────────────────────────────────────────────────── */
@@ -2228,8 +2285,99 @@ function showBig(blob) {
 document.getElementById("bigClose").onclick = () => { document.getElementById("bigBox").hidden = true; };
 
 /* ── 저장 · 불러오기 ───────────────────────────────────────────────────── */
+/* ── 자동 저장 ──────────────────────────────────────────────────────────
+ * 손으로 「작업 저장」 을 누르기 전에 앱이 튕기거나 텔레그램 창을 닫으면 다 날아갔다.
+ * 바뀔 때마다(잠깐 쉬었다가) 이 기기에 몰래 적어 두고, 다시 열면 이어서 할지 묻는다.
+ * 저장 목록과는 따로 둔다 — 목록이 자동 저장본으로 어지러워지지 않게.
+ * 사진은 무거우니 바뀌었을 때만 다시 쓴다.
+ */
+const Auto = {
+  idb: null, timer: null, imgSig: "", busy: false, again: false,
+  open() {
+    if (this.idb) return Promise.resolve(this.idb);
+    return new Promise((res) => {
+      try {
+        const rq = indexedDB.open("plot-carousel-auto", 1);
+        rq.onupgradeneeded = () => rq.result.createObjectStore("kv");
+        rq.onsuccess = () => { this.idb = rq.result; res(this.idb); };
+        rq.onerror = () => res(null);
+      } catch (e) { res(null); }
+    });
+  },
+  async _put(k, v) {
+    const db = await this.open(); if (!db) return;
+    await new Promise((res) => {
+      try {
+        const tx = db.transaction("kv", "readwrite");
+        tx.objectStore("kv").put(v, k);
+        tx.oncomplete = res; tx.onerror = res; tx.onabort = res;
+      } catch (e) { res(); }
+    });
+  },
+  async _get(k) {
+    const db = await this.open(); if (!db) return null;
+    return new Promise((res) => {
+      try {
+        const rq = db.transaction("kv", "readonly").objectStore("kv").get(k);
+        rq.onsuccess = () => res(rq.result || null); rq.onerror = () => res(null);
+      } catch (e) { res(null); }
+    });
+  },
+  soon() { clearTimeout(this.timer); this.timer = setTimeout(() => this.now(), 1500); },
+  async now() {
+    clearTimeout(this.timer);
+    if (!deck || !dirty) return;
+    if (this.busy) { this.again = true; return; }
+    this.busy = true;
+    try {
+      const imgs = deck.slides.map((s) => s.img || null);
+      const sig = imgs.map((x) => x ? x.length + ":" + x.slice(-24) : "").join("|");
+      if (sig !== this.imgSig) { await this._put("imgs", imgs); this.imgSig = sig; }
+      await this._put("meta", {
+        at: Date.now(), deckId: deckId, name: deck.name, category: deck.category, caption: deck.caption,
+        slides: JSON.stringify(deck.slides.map((s) => ({
+          kind: s.kind, title: s.title, subtitle: s.subtitle, heading: s.heading,
+          body: s.body, credit: s.credit, srcUrl: s.srcUrl, hasImg: !!s.img, fit: s.fit || null,
+        }))),
+      });
+    } catch (e) {}
+    this.busy = false;
+    if (this.again) { this.again = false; this.soon(); }
+  },
+  async clear() {
+    clearTimeout(this.timer);
+    this.imgSig = "";
+    await this._put("meta", null);
+    await this._put("imgs", null);
+  },
+  async offer() {
+    const m = await this._get("meta");
+    if (!m || !m.slides) return;
+    let n = 0; try { n = JSON.parse(m.slides).length; } catch (e) { return; }
+    const bar = document.getElementById("autoBar");
+    if (!bar) return;
+    const mins = Math.max(0, Math.round((Date.now() - (m.at || 0)) / 60000));
+    const ago = mins < 1 ? "방금" : mins < 60 ? mins + "분 전" : mins < 1440 ? Math.round(mins / 60) + "시간 전"
+              : Math.round(mins / 1440) + "일 전";
+    bar.querySelector("span").textContent =
+      `저장 안 한 작업이 남아 있습니다 — 「${m.name || "무제"}」 ${n}장, ${ago}`;
+    bar.hidden = false;
+    document.getElementById("autoGo").onclick = async () => {
+      bar.hidden = true;
+      const imgs = (await this._get("imgs")) || [];
+      await loadDeck({ id: m.deckId || null, name: m.name, category: m.category, caption: m.caption,
+                       slides: m.slides }, imgs, "이어서 엽니다 — 다 되면 「작업 저장」");
+      markDirty();
+    };
+    document.getElementById("autoNo").onclick = () => { bar.hidden = true; this.clear(); };
+  },
+};
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") Auto.now(); });
+window.addEventListener("pagehide", () => Auto.now());
+
 function markDirty() {
   dirty = true;
+  Auto.soon();
   document.getElementById("dot").classList.add("on");
   const b = document.getElementById("saveBtn");
   b.classList.add("dirty"); b.textContent = "작업 저장 •";
@@ -2254,6 +2402,7 @@ async function saveDeck() {
   try {
     await Store.put(deckId, meta, deck.slides.map((s) => s.img || null));
     markClean();
+    Auto.clear();
     toast(Store.mode === "db" ? "저장했습니다 (팀 공용)" : "이 기기에 저장했습니다");
   } catch (err) {
     toast("저장 실패: " + (err && err.message ? err.message : "알 수 없는 오류"));
@@ -2295,14 +2444,14 @@ async function openList() {
     body.appendChild(el);
   }
 }
-async function loadDeck(row) {
+async function loadDeck(row, imgsGiven, msg) {
   const parsed = JSON.parse(row.slides);
   deck = {
     name: row.name || "무제", category: row.category || "", caption: row.caption || "",
     slides: parsed.map((s) => Object.assign(blankBody(), s, { img: null, el: null })),
   };
   deck.slides[0].kind = "cover";
-  const imgs = await Store.images(row.id, parsed.length);
+  const imgs = imgsGiven || await Store.images(row.id, parsed.length);
   for (let i = 0; i < parsed.length; i++) {
     if (imgs[i]) await attachImage(deck.slides[i], imgs[i]);
   }
@@ -2312,8 +2461,9 @@ async function loadDeck(row) {
   document.getElementById("catInput").value = deck.category;
   document.getElementById("capInput").value = deck.caption;
   document.getElementById("sampleBar").hidden = true;
+  document.getElementById("autoBar").hidden = true;
   markClean(); closeQuick(); buildRail(); syncAll();
-  toast("불러왔습니다");
+  toast(msg || "불러왔습니다");
 }
 
 /* ── 잡동사니 ──────────────────────────────────────────────────────────── */
@@ -2399,6 +2549,8 @@ document.getElementById("newBtn").onclick = () => {
   if (dirty && !confirm("저장하지 않은 변경이 있습니다. 새로 시작할까요?")) return;
   deck = { name: "무제 카드뉴스", category: "News", caption: "", slides: [blankCover(), blankBody()] };
   deckId = null; cur = 0;
+  Auto.clear();
+  document.getElementById("autoBar").hidden = true;
   document.getElementById("deckName").value = deck.name;
   document.getElementById("catInput").value = deck.category;
   document.getElementById("capInput").value = "";
@@ -2502,6 +2654,8 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     const d = parseDeckForm(over);
     if (d) { applyDeckForm(d); toast(`${d.slides.length}장을 펼쳤습니다`); }
   }
+  // 넘어온 양식을 펼친 게 아니면, 튕기기 전 작업이 있는지 본다
+  if (!(over && /\[커버\]/.test(over))) Auto.offer();
 })();
 
 </script>
