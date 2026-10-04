@@ -816,7 +816,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
   } catch (e) {}
 })();
 </script>
-<script>window.PLOT_BOT="";</script>
+<script>window.PLOT_BOT="plot_magazine_bot";</script>
 
 <style id="plotGap">
 html:root[data-gap="tight"]{ --u:6px }
@@ -3006,6 +3006,15 @@ function askCut(b) {
     TG.sendData(JSON.stringify({ plutocut: 1, url: url, n: 5 }));
     return;
   }
+  // 봇 이름을 알면 딥링크로 바로 시킨다 — 텔레그램이 열리며 /start cut_<영상ID> 가 간다.
+  // 결과 끝의 「🖥 제작 앱에서 열기」 를 누르면 추천이 채워진 채 이 화면으로 돌아온다.
+  const bot = (window.PLOT_BOT || '').replace(/^@/, '');
+  if (bot) {
+    toast('텔레그램에서 추천을 뽑습니다 — 끝나면 「🖥 제작 앱에서 열기」');
+    const link = 'https://t.me/' + bot + '?start=cut_' + id;
+    setTimeout(function () { window.open(link, '_blank', 'noopener'); }, 250);
+    return;
+  }
   const cmd = '/cut ' + url;
   const done = () => toast('「/cut」 복사 — 텔레그램에 붙여넣으면 추천 구간을 뽑습니다');
   try {
@@ -3288,9 +3297,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.02 05:06';
+    a.title = '판 10.04 17:27';
     var ver = document.createElement('span');
-    ver.textContent = '10.02 05:06';
+    ver.textContent = '10.04 17:27';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
