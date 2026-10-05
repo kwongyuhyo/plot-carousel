@@ -1091,7 +1091,7 @@ function blank() {
            // 컷을 나눈 뒤 한 번 보여주고 확정을 받는다. 지난 선택을 기억한다.
            check: !!r.check,
            // [서사] 서사형 오늘의 노래 — 한 줄에 하나, 첫 줄이 첫 화면. 서사영상은 「링크 시작-끝」
-           story: '', storyClip: '', storyCredit: '', storyCrop: '' };
+           story: '', storyClip: '', storyCredit: '', storyCrop: '', storyZoom: '' };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1103,7 +1103,7 @@ function blank() {
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
-              'story', 'storyClip', 'storyCredit', 'storyCrop'];
+              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1484,6 +1484,7 @@ function parseForm(text) {
     b.storyClip = (kv['서사영상'] || '').trim();
     b.storyCredit = (kv['서사출처'] || '').trim();
     b.storyCrop = (kv['서사리프레임'] || '').trim();
+    b.storyZoom = (kv['서사확대'] || '').trim();
     out.push(b);
   }
   return out;
@@ -1618,6 +1619,7 @@ function blockText(b) {
     ...((b.storyClip || '').trim() ? ['서사영상: ' + b.storyClip.trim()] : []),
     ...((b.storyClip || '').trim() && (b.storyCredit || '').trim() ? ['서사출처: ' + b.storyCredit.trim()] : []),
     ...((b.storyClip || '').trim() && (b.storyCrop || '').trim() && b.storyCrop.trim() !== '자동' ? ['서사리프레임: ' + b.storyCrop.trim()] : []),
+    ...((b.storyClip || '').trim() && (b.storyZoom || '').trim() ? ['서사확대: ' + b.storyZoom.trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
@@ -3424,9 +3426,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.06 04:35';
+    a.title = '판 10.06 05:53';
     var ver = document.createElement('span');
-    ver.textContent = '10.06 04:35';
+    ver.textContent = '10.06 05:53';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
