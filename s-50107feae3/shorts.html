@@ -1281,6 +1281,9 @@ function check(b) {
     if (rg === null) e.story = '서사 영상은 「링크 시작-끝」 형식입니다. 덜어낼 곳이 있으면 쉼표로 나눠 적습니다. (예: https://youtu.be/… 12:03-12:10, 12:14-12:25)';
     else if (rg === false) e.story = '서사 영상 구간을 확인해주세요.';
   }
+  const sl = storyLines(b);
+  if ((b.storyClip || '').trim() && sl.length > 3) e.story = '여담 제목은 최대 3줄입니다 (제목 블록 세 자리).';
+  else if (sl.some(x => x.length > 17)) e.story = '여담 제목 한 줄이 너무 깁니다 — 줄마다 16자 안쪽으로 (18자부터 잘립니다).';
   const cr = (b.storyCrop || '').trim();
   if (cr && !/^(자동|auto|-|왼쪽|가운데|중앙|오른쪽|left|center|right)$/i.test(cr)) {
     const pct = cr.endsWith('%'), v = parseFloat(pct ? cr.slice(0, -1) : cr);
@@ -1703,8 +1706,8 @@ function buildBlock(b) {
     <div data-r="storyBox" hidden>
       <label>여담 영상 <span class="opt">— 노래 앞에 붙일 장면 「링크 시작-끝」 · 중간에 뺄 말이 있으면 쉼표로 나눠 적기</span></label>
       <input type="text" data-f="storyClip" placeholder="https://youtu.be/… 12:03-12:10, 12:14-12:25">
-      <label>장면 위 제목 <span class="opt">— 여담 장면 위에 계속 떠 있을 한 줄 (20자 안팎)</span></label>
-      <textarea data-f="story" rows="2" placeholder="윤종신이 〈오르막길〉을 쓴 진짜 이유"></textarea>
+      <label>여담 제목 <span class="opt">— 첫 화면 제목 블록, 한 줄에 하나 최대 3줄 · 줄마다 13자 안팎, 16자 넘으면 작아지고 18자부터 잘림</span></label>
+      <textarea data-f="story" rows="3" placeholder="윤종신이 직접 밝힌&#10;〈오르막길〉의 주인공&#10;정인·조정치 부부"></textarea>
       <label>여담 출처 <span class="opt">— 장면 아래 작게 (예: 출처: SBS 파워FM 컬투쇼)</span></label>
       <input type="text" data-f="storyCredit" placeholder="출처: ">
       <label>여담 화면 위치 <span class="opt">— 비우면 자동(얼굴 따라감) · 왼쪽 / 가운데 / 오른쪽 · 0~1 · 30%</span></label>
@@ -3421,9 +3424,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.05 02:53';
+    a.title = '판 10.06 04:35';
     var ver = document.createElement('span');
-    ver.textContent = '10.05 02:53';
+    ver.textContent = '10.06 04:35';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
