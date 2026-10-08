@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-07 19:07 KST",
+ "generated_at": "2026-10-08 15:06 KST",
  "weeks": [
   {
    "week": "2026-W25",
@@ -81,29 +81,29 @@
   },
   {
    "week": "2026-W41",
-   "posts": 10,
-   "reach": 189332,
-   "saved": 344,
-   "shares": 8785,
+   "posts": 6,
+   "reach": 11912,
+   "saved": 35,
+   "shares": 109,
    "followers": 3049,
    "followers_delta": 2,
-   "reach_total": 653501,
-   "top": "https://www.instagram.com/p/Dd6HjL9D7Hm/"
+   "reach_total": 530361,
+   "top": "https://www.instagram.com/p/DeJdFutD-1r/"
   }
  ],
  "kinds": [
   {
    "kind": "인물해부",
-   "n": 30,
+   "n": 29,
    "weeks": 7,
-   "multiple": 2.71,
-   "low": 1.62,
-   "high": 3.04,
+   "multiple": 3.04,
+   "low": 1.92,
+   "high": 3.39,
    "stable": true
   },
   {
    "kind": "기타",
-   "n": 58,
+   "n": 56,
    "weeks": 8,
    "multiple": 1.05,
    "low": 1.0,
@@ -112,10 +112,10 @@
   },
   {
    "kind": "발매·신보",
-   "n": 30,
+   "n": 29,
    "weeks": 8,
-   "multiple": 0.93,
-   "low": 0.85,
+   "multiple": 0.92,
+   "low": 0.78,
    "high": 1.03,
    "stable": false
   },
@@ -171,17 +171,6 @@
    "shares": 3296,
    "kind": "인물해부",
    "head": "리센느 제나 나무위키 털기\n\n올해 가장 자주 언급된 걸그룹은 역시 리센느인데요.\n\n리센느(@rescene_o"
-  },
-  {
-   "id": "Dd6HjL9D7Hm",
-   "week": "2026-W41",
-   "permalink": "https://www.instagram.com/p/Dd6HjL9D7Hm/",
-   "media_type": "CAROUSEL_ALBUM",
-   "reach": 133237,
-   "saved": 123,
-   "shares": 7703,
-   "kind": "기타",
-   "head": "김감전이 재판에 넘겨졌습니다.\n\n서울서부지검은 김감전을 대마 관련 혐의로 구속기소했습니다. 지난해 12월부터"
   },
   {
    "id": "Dc5jQfLD-uu",
@@ -270,78 +259,61 @@
    "shares": 751,
    "kind": "인물해부",
    "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official) "
+  },
+  {
+   "id": "DclAcGwCee3",
+   "week": "2026-W36",
+   "permalink": "https://www.instagram.com/p/DclAcGwCee3/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 36897,
+   "saved": 377,
+   "shares": 2250,
+   "kind": "인물해부",
+   "head": "힙합과 바다, 둘 다 좋아하신다면 10월 넷째 주 토요일을 비워두셔야겠습니다.\n\n오는 10월 24일 강릉 경"
   }
  ],
  "published": [
   {
-   "id": "Dd0liDWvnhX",
-   "week": "2026-W41",
-   "kind": "기타",
-   "reach": 11900,
-   "head": "로얄44가 동묘에 떴습니다.\n\n새로 연 유튜브 채널 '로얄왕국'에서 한복 차림으로 동묘를 돌았는데요. \n길에서 만난 어르신이 \"이쁘네\" 하자 로"
-  },
-  {
-   "id": "Dd3ztg4PlUF",
-   "week": "2026-W41",
-   "kind": "기타",
-   "reach": 2630,
-   "head": "로얄44가 동묘에서 용돈을 뿌렸습니다.\n\n로얄44(@royal44k)가 본인의 유튜브 채널 '로얄왕국'에서 한복 차림으로 동묘를 돌던 중 현장 "
-  },
-  {
-   "id": "Dd3z24vvlj1",
-   "week": "2026-W41",
-   "kind": "기타",
-   "reach": 7909,
-   "head": "로얄44의 걸음이 갑자기 빨라졌습니다.\n\n로얄44(@royal44k)가 본인의 유튜브 채널 '로얄왕국'에서 동묘 일대를 걷다가 경찰서 앞을 지나"
-  },
-  {
-   "id": "Dd3z_AdvD7s",
-   "week": "2026-W41",
-   "kind": "발매·신보",
-   "reach": 1024,
-   "head": "로얄44가 'C.S.C.B' 뮤직비디오를 공개했습니다.\n\n붉은 조명이 깔린 실내를 배경으로 한 영상입니다. \n커튼과 스탠드 조명, 테이블 위에 "
-  },
-  {
-   "id": "Dd31bFIviNk",
-   "week": "2026-W41",
-   "kind": "기타",
-   "reach": 5734,
-   "head": "로꼬가 두오버엔터테인먼트와 전속계약을 맺었습니다.\n\n지난 28일 발표된 소식입니다. 2024년 1인 기획사 로꼬모티브를 세워 2년간 독립으로 활"
-  },
-  {
-   "id": "Dd32BbvPDCQ",
-   "week": "2026-W41",
-   "kind": "발매·신보",
-   "reach": 6499,
-   "head": "유튜브 채널 빠더너스의 새로운 시리즈 '야유회 마니아' 1회에서 문상훈, 엄지윤과 나우아임영(@now_im_young)이 오프닝에서 담타(담배타"
-  },
-  {
-   "id": "Dd32jK9j3W2",
-   "week": "2026-W41",
-   "kind": "인물해부",
-   "reach": 16804,
-   "head": "김하온은 서바이벌에서 두 번 우승했습니다.\n\n2018년 〈고등래퍼 2〉로 이름을 알렸고, 올해 〈쇼미더머니 12〉에서 다시 정상에 섰는데요. 그"
-  },
-  {
-   "id": "Dd6HjL9D7Hm",
-   "week": "2026-W41",
-   "kind": "기타",
-   "reach": 133237,
-   "head": "김감전이 재판에 넘겨졌습니다.\n\n서울서부지검은 김감전을 대마 관련 혐의로 구속기소했습니다. 지난해 12월부터 올해 3월까지 미성년자와 네 차례에"
-  },
-  {
    "id": "DeEW4Kvj0IX",
    "week": "2026-W41",
    "kind": "기타",
-   "reach": 1216,
+   "reach": 1487,
    "head": "JYP가 그래미에 곡을 내지 않기로 했습니다.\n\n3일 JYP엔터테인먼트는 내년 2월 열리는 제69회 그래미 어워즈에 스트레이 키즈의 어떤 곡도 "
   },
   {
    "id": "DeEXJLrj6hA",
    "week": "2026-W41",
    "kind": "인물해부",
-   "reach": 2379,
+   "reach": 3927,
    "head": "최예나의 별명은 한둘이 아닙니다.\n\n입술이 삐죽 나오면 오리가 된다고 '오리', 큰소리쳤다가 당하는 일이 잦아 '최허세', 데뷔 전 요리 프로그"
+  },
+  {
+   "id": "DeJdFutD-1r",
+   "week": "2026-W41",
+   "kind": "기타",
+   "reach": 4105,
+   "head": "노윤하의 인스타그램 이름이 바뀌었습니다.\n\n지금 인스타그램에서 '노윤하'를 검색하면 '꼼질꼼질 오고쌌노'라는 이름으로 뜨는데요. 정작 본인도 브"
+  },
+  {
+   "id": "DeJlFsKPQ9E",
+   "week": "2026-W41",
+   "kind": "발매·신보",
+   "reach": 631,
+   "head": "[NEW RELEASE] Kid Milli, TRADE L- 합작 앨범 'SINS'\n\n래퍼 Kid Milli와 TRADE L이 첫 합작 앨범 '"
+  },
+  {
+   "id": "DeJuFDTvkdr",
+   "week": "2026-W41",
+   "kind": "기타",
+   "reach": 940,
+   "head": "로얄44가 설거지를 미뤘습니다.\n\n유튜브 채널 '로얄왕국'에서, 로얄44가 설거지 안 하냐는 말에 \"좋아하지 않아요\" 한마디로 넘어갔고, 그릇을"
+  },
+  {
+   "id": "DeJuVbrvzgC",
+   "week": "2026-W41",
+   "kind": "기타",
+   "reach": 822,
+   "head": "스윙스가 쇼핑을 갔습니다.\n\n유튜브 채널 '에겐남 스윙스'에서, 스윙스(@itsjustswings)는 옷을 걸쳐보자마자 \"이거 결제해주세요\"라고"
   },
   {
    "id": "Dd0liDWvnhX",
@@ -1333,6 +1305,6 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-07 15:02 KST"
+  "daily": "2026-10-07 19:07 KST"
  }
 }
