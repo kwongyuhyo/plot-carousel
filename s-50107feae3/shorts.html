@@ -355,20 +355,44 @@ pre.form{
 /* 큰 화면에서는 영상 옆에 조작부를 세운다.
    세로로만 쌓으면 9:16 영상이 손바닥만 해진다 — 컴퓨터에서 쓰기 힘들다는 말의 정체. */
 .pkCtl{flex:none; display:flex; flex-direction:column}
+/* [2026-10 가사] 폰에서는 조작 줄이 늘어날수록 영상이 0 으로 눌렸다(가사 줄을 넣기 전에도 100px 남짓).
+   영상 칸 높이를 지키고 조작부만 안에서 굴린다. 「이 구간 쓰기」는 바닥에 붙여 늘 보이게. */
+@media(max-width:899px){
+  #picker .pkStage{flex:0 0 42vh; min-height:0}
+  #picker .pkCtl{flex:1 1 auto; min-height:0; overflow-y:auto; -webkit-overflow-scrolling:touch}
+  #picker .pkFoot{position:sticky; bottom:0; background:var(--bg); padding-bottom:8px; z-index:2}
+}
+/* 단축키 안내는 키보드가 있는 화면에서만 */
+@media(pointer:coarse){ #picker .pkKeys{display:none} }
 @media(min-width:900px){
   /* flex-wrap 으로 두 줄을 만들면 줄 높이가 반씩 나뉘어 머리말이 화면 가운데로 내려온다.
      행·열을 직접 정하는 편이 흔들리지 않는다. */
   /* align-items 는 stretch 로 둔다. 가운데로 맞추면 .pkStage 높이가 내용만큼으로
      줄고, 그 안의 height:100% 인 9:16 틀이 0 이 된다 — 영상이 사라진다. */
-  #picker{display:grid; grid-template-columns:minmax(0,1fr) 430px;
+  /* [2026-10] 전체화면에서 영상·조작부가 오른쪽으로 몰리고 조작부가 430px 로 너무 작았다.
+     → 가운데에 '영상 | 조작부' 한 덩어리로 모으고, 조작부는 화면 폭에 맞춰 넓히고 글자·버튼을 키운다.
+     영상 칸 폭은 높이에서 계산한다(9:16) — 칸을 auto 로 두면 aspect-ratio 틀이 0 폭으로 접힌다. */
+  #picker{display:grid;
+          grid-template-columns:1fr calc((100dvh - 96px) * 0.5625 + 40px) clamp(480px, 36vw, 760px) 1fr;
           grid-template-rows:auto minmax(0,1fr)}
   #picker .pkHead{grid-column:1 / -1; grid-row:1}
-  /* 영상은 조작부 쪽으로 붙인다 — 가운데 두면 둘 사이가 손 한 뼘씩 벌어진다. */
-  #picker .pkStage{grid-column:1; grid-row:2; min-height:0;
-    justify-content:flex-end; padding:16px 26px 16px 22px}
-  #picker .pkCtl{grid-column:2; grid-row:2; align-self:center; padding:0 22px 8px 0}
-  #picker .pkTrackWrap,#picker .pkMarks,#picker .pkRow,#picker .pkFoot{
+  #picker .pkStage{grid-column:2; grid-row:2; min-height:0; justify-content:center; padding:16px 20px}
+  #picker .pkCtl{grid-column:3; grid-row:2; align-self:center; padding:0 8px 8px 12px; font-size:15px}
+  /* [가사] 가사 칸을 열면 조작부가 화면보다 길어진다 — 조작부만 굴리고 「이 구간 쓰기」는 바닥에 붙인다 */
+  #picker .pkCtl{max-height:calc(100dvh - 64px); overflow-y:auto}
+  #picker .pkFoot{position:sticky; bottom:0; background:var(--bg); z-index:2; padding-bottom:8px}
+  #picker .pkTrackWrap,#picker .pkMarks,#picker .pkRow,#picker .pkFoot,#picker .pkKeys{
     max-width:none; padding-left:0; padding-right:0}
+  #picker .pkTrack{height:60px}
+  #picker .pkNums{font-size:15px; margin-top:9px}
+  #picker .pkZoom button{font-size:14.5px; padding:8px 13px}
+  #picker .pkMark{font-size:16.5px; padding:18px 10px}
+  #picker .pkPlay{min-width:72px; font-size:20px}
+  #picker .pkRow button{font-size:14.5px; padding:9px 12px}
+}
+/* 9:16 이 아니라 원본(16:9)으로 볼 때는 영상 칸을 넓힌다 */
+@media(min-width:900px){
+  #picker.wideView{grid-template-columns:1fr minmax(0, calc((100dvh - 96px) * 1.4)) clamp(420px, 30vw, 640px) 1fr}
 }
 
 .pkTrackWrap{flex:none; padding:4px 16px 0}
@@ -451,6 +475,34 @@ pre.form{
 .pkRow button.on{color:var(--warn); border-color:rgba(232,179,74,.45)}
 .pkFoot{padding:12px 16px 0; flex:none}
 .pkCropRow{align-items:center}
+/* [가사] */
+.pkOver .lyr{position:absolute; left:0; width:1080px; top:1035px; text-align:center;
+  font-size:54px; line-height:1.25; color:#fff; font-style:italic; transform:skewX(-10deg);
+  padding:0 60px; box-sizing:border-box; text-shadow:0 2px 6px rgba(0,0,0,.35)}
+.pkLyMode .pkBot.on{color:var(--bg); background:var(--accent); border-color:var(--accent)}
+.pkLyMode button[data-ly="none"].on{color:var(--warn); border-color:rgba(232,179,74,.45)}
+.pkLy{width:100%; max-width:560px; padding:6px 16px 0; box-sizing:border-box; flex:none}
+.pkLyHead{display:flex; gap:8px; align-items:center; font-size:12.5px; color:var(--faint)}
+.pkLyHead span{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.pkLyHead button{flex:none}
+.pkLyHelp{font-size:12.5px; color:var(--dim); margin:4px 0 6px}
+.pkLyList{max-height:190px; overflow:auto; border:1px solid var(--line, rgba(255,255,255,.12));
+  border-radius:10px}
+.pkLyRow{display:flex; gap:10px; padding:7px 10px; font-size:14px; cursor:pointer;
+  border-bottom:1px solid rgba(255,255,255,.05)}
+.pkLyRow .t{flex:none; width:58px; color:var(--faint); font-variant-numeric:tabular-nums}
+.pkLyRow .x{flex:1; min-width:0}
+.pkLyRow .b{flex:none; font-size:11px; color:var(--warn)}
+.pkLyRow.fixed .t{color:var(--accent)}
+.pkLyRow.now{background:rgba(255,255,255,.07)}
+.pkLyRow.sel{outline:2px solid var(--accent); outline-offset:-2px}
+.pkLyEmpty{padding:12px; font-size:13px; color:var(--faint)}
+.pkLyBtns{padding-left:0; padding-right:0}
+.pkLyBtns button{white-space:nowrap; flex:1 1 auto; padding-left:9px; padding-right:9px}
+.pkLyBtns .pkLyTap{flex:2 1 30%; font-size:16px}
+.pkLyTap{font-weight:800; color:var(--bg)!important; background:var(--accent)!important;
+  border-color:var(--accent)!important}
+#pkLyBrk.on{color:var(--warn); border-color:rgba(232,179,74,.45)}
 /* 「봇이 알아서」 가 기본값이다. 켜져 있을 때 눈에 띄어야, 영상을 밀어
    고정으로 넘어간 것을 알아챌 수 있다. */
 .pkCropRow .pkBot{flex:0 0 auto; font-weight:700}
@@ -853,6 +905,7 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <div class="summary" id="summary"></div>
     <div id="outsideBar" hidden>
       <button class="btn primary" id="copyBtn" style="width:100%">📋 양식 텍스트 복사</button>
+      <button class="btn" id="copyOneBtn" style="width:100%;margin-top:8px" hidden>📋 지금 편만 복사</button>
       <div class="tgRow">
         <button class="btn" id="tgBtn" title="양식을 복사하고 텔레그램을 엽니다">📨 복사 + 텔레그램 열기</button>
         <button class="btn" id="capBtn" title="봇에게 캡션을 부탁하는 명령을 복사합니다">✍️ 캡션 만들기</button>
@@ -903,6 +956,7 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
         <div class="line artist"></div>
         <div class="line title"></div>
         <div class="src"></div>
+        <div class="lyr" id="pkLyOver"></div>
       </div>
     </div>
   </div>
@@ -980,6 +1034,29 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <span class="pkCropBar" id="pkCropBar" hidden
           title="원본 가로에서 9:16 창이 보는 자리 — 눌러서 옮길 수 있습니다"><i
           id="pkCropWin"></i></span>
+  </div>
+
+  <!-- [가사] 노래 파트 가사. 직접 맞추기는 첫 줄만 탭하면 나머지가 따라붙는다. -->
+  <div class="pkRow pkCropRow pkLyMode">
+    <span class="pkLbl">가사</span>
+    <button data-ly="none">없음</button>
+    <button data-ly="auto" class="pkBot">🤖 봇이 알아서</button>
+    <button data-ly="sync" class="pkBot">🎤 직접 맞추기</button>
+    <span class="pkCropNow" id="pkLyNow"></span>
+  </div>
+  <div class="pkLy" id="pkLy" hidden>
+    <div class="pkLyHead"><span id="pkLyMeta"></span><button id="pkLyAlt" hidden>다른 판본</button></div>
+    <div class="pkLyHelp" id="pkLyHelp"></div>
+    <div class="pkLyList" id="pkLyList"></div>
+    <div class="pkRow pkLyBtns">
+      <button id="pkLyTap" class="pkLyTap">지금! <small>T</small></button>
+      <button data-lynudge="-0.1">−0.1초</button>
+      <button data-lynudge="0.1">+0.1초</button>
+      <button id="pkLyBrk" title="이 줄 뒤가 간주 — 다음 줄까지 이어 붙이지 않는다">여기서 끊기</button>
+      <button id="pkLyUndo" class="pkGhost">이 줄 원래대로</button>
+      <button data-lyall="-0.1" class="pkGhost">전체 −0.1</button>
+      <button data-lyall="0.1" class="pkGhost">전체 +0.1</button>
+    </div>
   </div>
 
   <div class="pkFoot">
@@ -1091,7 +1168,9 @@ function blank() {
            // 컷을 나눈 뒤 한 번 보여주고 확정을 받는다. 지난 선택을 기억한다.
            check: !!r.check,
            // [서사] 서사형 오늘의 노래 — 한 줄에 하나, 첫 줄이 첫 화면. 서사영상은 「링크 시작-끝」
-           story: '', storyClip: '', storyCredit: '', storyCrop: '', storyZoom: '' };
+           story: '', storyClip: '', storyCredit: '', storyCrop: '', storyZoom: '',
+           // [가사] '' = 없음 · '자동' = 봇이 맞춤 · '#id 어긋남 | 고친줄 | 끊기' = 앱에서 맞춘 싱크
+           lyr: '' };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1103,7 +1182,7 @@ function blank() {
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
-              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom'];
+              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1485,6 +1564,7 @@ function parseForm(text) {
     b.storyCredit = (kv['서사출처'] || '').trim();
     b.storyCrop = (kv['서사리프레임'] || '').trim();
     b.storyZoom = (kv['서사확대'] || '').trim();
+    b.lyr = (kv['가사'] || '').trim();
     out.push(b);
   }
   return out;
@@ -1620,6 +1700,8 @@ function blockText(b) {
     ...((b.storyClip || '').trim() && (b.storyCredit || '').trim() ? ['서사출처: ' + b.storyCredit.trim()] : []),
     ...((b.storyClip || '').trim() && (b.storyCrop || '').trim() && b.storyCrop.trim() !== '자동' ? ['서사리프레임: ' + b.storyCrop.trim()] : []),
     ...((b.storyClip || '').trim() && (b.storyZoom || '').trim() ? ['서사확대: ' + b.storyZoom.trim()] : []),
+    // [가사] 정했을 때만 — 안 적으면 봇은 지금까지처럼 가사 없이 만든다.
+    ...((b.lyr || '').trim() ? ['가사: ' + b.lyr.trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
@@ -1723,6 +1805,7 @@ function buildBlock(b) {
     <div class="hint" data-r="srcErr" hidden></div>
 
     <div class="bfoot">
+      <button class="btn" data-a="one" title="여러 편 중 이 편 하나만 내보냅니다">📤 이 편만</button>
       <button class="btn" data-a="dup">복제</button>
       <button class="btn danger" data-a="del">🗑 삭제</button>
     </div>`;
@@ -1773,6 +1856,7 @@ function buildBlock(b) {
   };
   $('[data-a=pick]', body).onclick = () => { active = blocks.indexOf(b); openPicker(b); };
   $('[data-a=cut]', body).onclick = () => { active = blocks.indexOf(b); askCut(b); };
+  $('[data-a=one]', body).onclick = () => { active = blocks.indexOf(b); sendOne(b); };
   $('[data-a=dup]', body).onclick = () => {
     const copy = Object.assign({}, b, { id: ++seq });
     blocks.splice(blocks.indexOf(b) + 1, 0, copy);
@@ -1995,6 +2079,10 @@ function refresh() {
     TG.MainButton.show();
   } else {
     $('#formOut').textContent = formText();
+    const cb = $('#copyBtn');
+    if (cb) cb.textContent = blocks.length > 1 ? '📋 전체 ' + blocks.length + '편 양식 복사' : '📋 양식 텍스트 복사';
+    const ob = $('#copyOneBtn');
+    if (ob) { ob.hidden = blocks.length < 2; ob.textContent = '📋 지금 편(' + (active + 1) + '번)만 복사'; }
   }
   draftSave();
 }
@@ -2247,11 +2335,13 @@ async function openPicker(b) {
   PK.drag = null;
   $('#picker').hidden = false;
   $('#pkFrame').classList.remove('wide');
+  $('#picker').classList.remove('wideView');
   $('#pkWho').textContent = (b.title.trim() || '제목 없음') +
     (b.artist.trim() ? ' — ' + b.artist.trim() : '');
   paintFrame($('#pkOver'), b);
   pkCropPaint();
   pkSuggPaint();
+  lyOpen(b);
   requestAnimationFrame(pkFit);
   const tip = $('#pkTip');
   // 넘치는 줄이 있으면 여기서 말한다 — 글자가 읽히는지 보는 자리가 바로 여기다.
@@ -2416,6 +2506,7 @@ function pkPaint(now) {
   }
   pkZoomPaint();
   pkSuggMarks();
+  lyPaint(now);
 
   const ok = PK.inS != null && PK.outS != null && PK.outS > PK.inS;
   const len = ok ? PK.outS - PK.inS : 0;
@@ -2797,12 +2888,15 @@ function pkApply() {
   b.end   = fmtStamp(PK.outS);
   b.crop  = PK.crop;
   b._dur  = PK.dur || b._dur || 0;
+  const lyWas = b.lyr;
+  b.lyr   = lyOut();
   closePicker();
   refresh();
   // 이제서야 영상 길이와 가로 위치를 안다 — 고른 구간의 장면으로 미리보기를 다시 깐다.
   restage(b);
   toast('구간 ' + b.start + ' – ' + b.end + ' 적용' +
-        (b.crop === null ? '' : ' · 리프레임 가로 ' + Math.round(b.crop * 100) + '%'));
+        (b.crop === null ? '' : ' · 리프레임 가로 ' + Math.round(b.crop * 100) + '%') +
+        (b.lyr && b.lyr !== lyWas ? ' · 가사 ' + (b.lyr === '자동' ? '자동' : '맞춤') : ''));
 }
 
 function pkKeys(e) {
@@ -2831,9 +2925,256 @@ function pkKeys(e) {
     f: pkZoomFit,
     '0': () => { PK.view = null; pkPaint(); },
     enter: pkApply, escape: closePicker,
+    t: () => { if (LY.mode === 'sync') lyTap(); },
   };
   const fn = map[e.key === ' ' ? ' ' : k];
   if (fn) { e.preventDefault(); fn(); }
+}
+
+/* ── 가사 ───────────────────────────────────────────────────────────
+ * 2026-10-07 규효 "앱으로 조정할 수 있는 기능만 넣어주면 진짜 금방 될거 같아"
+ *
+ * 공식 싱크 가사(LRCLIB)는 줄마다 '음원' 기준 시각을 갖고 있다. 우리가 자르는 건
+ * 뮤비·라이브라 음원과 시작이 다르다 — 예전에 타이밍이 통째로 밀린 이유가 이것이다.
+ * 그래서 첫 줄이 나오는 순간 한 번만 탭하면(어긋남) 나머지 줄이 음원 간격 그대로
+ * 따라붙는다. 뮤비는 거의 이걸로 끝나고, 라이브처럼 밀리는 줄만 골라 다시 탭한다.
+ *
+ * 끝은 따로 안 잡는다 — 프리미어 한 트랙처럼 다음 줄 시작까지 붙어 있고(봇과 같은 규칙),
+ * 간주 자리만 「여기서 끊기」로 표시한다. 시각은 전부 유튜브 영상 기준 초다.
+ * 양식에는 「가사: #번호 어긋남 | 줄@초 … | 끊기 줄,…」 한 줄로 실린다.
+ */
+const LY = { mode: 'none', cands: [], ci: 0, lrc: null, id: null, meta: '',
+             off: null, fix: {}, brk: new Set(), sel: 0, loading: false, last: -1 };
+const LY_REACT = 0.1;          // 사람 손은 늘 조금 늦게 누른다 — 탭한 시각에서 이만큼 당긴다
+const LRCLIB = 'https://lrclib.net/api';
+
+function lyParse(raw) {
+  const v = String(raw || '').trim();
+  if (!v || /^(없음|끔|off|no)$/i.test(v)) return { mode: 'none' };
+  if (/^(자동|auto|on)$/i.test(v)) return { mode: 'auto' };
+  const m = /^#?(\d+)\s+([+-]?\d+(?:\.\d+)?)/.exec(v);
+  if (!m) return { mode: 'none' };
+  const fix = {}, brk = new Set();
+  v.split('|').slice(1).forEach((p) => {
+    p = p.trim();
+    if (p.startsWith('끊기')) (p.match(/\d+/g) || []).forEach(x => brk.add(Number(x)));
+    else (p.match(/\d+@\d+(?:\.\d+)?/g) || []).forEach((x) => {
+      const [i, t] = x.split('@'); fix[Number(i)] = Number(t);
+    });
+  });
+  return { mode: 'sync', id: Number(m[1]), off: Number(m[2]), fix: fix, brk: brk };
+}
+function lySpec() {
+  const r2 = (x) => (Math.round(x * 100) / 100).toFixed(2);
+  const fx = Object.keys(LY.fix).map(Number).sort((a, b) => a - b).map(i => i + '@' + r2(LY.fix[i]));
+  const parts = ['#' + LY.id + ' ' + r2(LY.off)];
+  if (fx.length || LY.brk.size) parts.push(fx.join(' '));
+  if (LY.brk.size) parts.push('끊기 ' + [...LY.brk].sort((a, b) => a - b).join(','));
+  return parts.join(' | ');
+}
+function lyOut() {
+  if (LY.mode === 'auto') return '자동';
+  if (LY.mode === 'sync') {
+    if (LY.lrc && LY.off != null) return lySpec();
+    toast('첫 줄을 아직 안 찍어서 가사는 봇이 자동으로 맞춥니다');
+    return '자동';
+  }
+  return '';
+}
+function lyParseLrc(txt) {
+  const out = [];
+  String(txt || '').split('\n').forEach((ln) => {
+    const m = /^\[(\d+):(\d+(?:\.\d+)?)\]\s*(.*)$/.exec(ln.trim());
+    if (m) out.push([Number(m[1]) * 60 + Number(m[2]), m[3].trim()]);
+  });
+  return out;
+}
+async function lyGet(url) {
+  let last;
+  for (const w of [0, 1500, 4000]) {           // LRCLIB 은 가끔 503 을 준다
+    if (w) await new Promise(r => setTimeout(r, w));
+    try {
+      const r = await fetch(url);
+      if (r.ok) return await r.json();
+      last = new Error('LRCLIB ' + r.status);
+      if (r.status === 404) break;
+    } catch (e) { last = e; }
+  }
+  throw last || new Error('LRCLIB 응답 없음');
+}
+const lyNorm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]/gu, '');
+async function lySearch(b) {
+  const title = b.title.trim(), artist = b.artist.trim();
+  const names = artist.split(/\s*(?:,|&|\bx\b|×|feat\.?)\s*/i).map(x => x.trim()).filter(Boolean);
+  const seen = new Map();
+  for (const a of names.concat([''])) {
+    const q = new URLSearchParams({ track_name: title });
+    if (a) q.set('artist_name', a);
+    let rows = [];
+    try { rows = await lyGet(LRCLIB + '/search?' + q); } catch (_) { continue; }
+    rows.forEach((r) => {
+      if (!r.syncedLyrics || seen.has(r.id)) return;
+      const who = lyNorm(r.artistName);
+      if (names.length && !names.some(n => lyNorm(n) && who.includes(lyNorm(n)))) return;
+      seen.set(r.id, r);
+    });
+    if (seen.size) break;
+  }
+  return [...seen.values()].sort((x, y) =>
+    (/조회수/.test(x.albumName || '') - /조회수/.test(y.albumName || '')) ||
+    ((y.syncedLyrics.match(/\n/g) || []).length - (x.syncedLyrics.match(/\n/g) || []).length));
+}
+function lyUse(r) {
+  LY.id = r.id; LY.lrc = lyParseLrc(r.syncedLyrics);
+  LY.meta = (r.artistName || '') + ' — ' + (r.trackName || '') + (r.albumName ? ' · ' + r.albumName : '');
+  LY.sel = Math.max(0, LY.lrc.findIndex(x => x[1]));
+}
+async function lyLoad() {
+  const b = PK.b; if (!b) return;
+  if (!b.title.trim()) { toast('곡 제목을 먼저 넣어주세요'); return; }
+  LY.loading = true; lyPaintList();
+  try {
+    LY.cands = await lySearch(b); LY.ci = 0;
+    if (!LY.cands.length) { toast('싱크 가사를 못 찾았습니다 — 「봇이 알아서」로 두면 가사 없이 나올 수 있어요'); }
+    else lyUse(LY.cands[0]);
+  } catch (e) { toast('가사를 불러오지 못했습니다 (' + e.message + ')'); }
+  LY.loading = false; lyPaintList();
+}
+async function lyOpen(b) {
+  const sp = lyParse(b.lyr);
+  Object.assign(LY, { mode: sp.mode, cands: [], ci: 0, lrc: null, id: null, meta: '',
+                      off: null, fix: {}, brk: new Set(), sel: 0, loading: false, last: -1 });
+  lyModePaint();
+  if (sp.mode === 'sync') {
+    LY.loading = true; lyPaintList();
+    try {
+      const r = await lyGet(LRCLIB + '/get/' + sp.id);
+      lyUse(r); LY.cands = [r];
+      LY.off = sp.off; LY.fix = sp.fix; LY.brk = sp.brk;
+    } catch (e) { toast('맞춰 둔 가사를 다시 못 불러왔습니다 (' + e.message + ')'); }
+    LY.loading = false; lyPaintList();
+  }
+}
+function lyStart(i) {
+  if (LY.fix[i] != null) return LY.fix[i];
+  return LY.off == null ? null : LY.lrc[i][0] + LY.off;
+}
+/* 줄 i 가 화면에서 끝나는 시각 — 다음 줄 시작. 끊기·간주(빈 줄)면 대략 부르는 길이만큼. */
+function lyEnd(i) {
+  const s = lyStart(i); if (s == null) return null;
+  let j = i + 1;
+  const nxt = j < LY.lrc.length ? lyStart(j) : null;
+  const sung = Math.max(2.5, Math.min(7, lyNorm(LY.lrc[i][1]).length * 0.35 + 1));
+  if (nxt == null) return s + sung;
+  if (LY.brk.has(i) || !LY.lrc[j][1]) return Math.min(nxt, s + sung);
+  return nxt;
+}
+function lyAt(now) {
+  if (!LY.lrc || LY.off == null) return -1;
+  for (let i = 0; i < LY.lrc.length; i++) {
+    if (!LY.lrc[i][1]) continue;
+    const s = lyStart(i), e = lyEnd(i);
+    if (s != null && now >= s && now < e) return i;
+  }
+  return -1;
+}
+function lyNextLine(i) {
+  for (let j = i + 1; j < LY.lrc.length; j++) if (LY.lrc[j][1]) return j;
+  return i;
+}
+function lyTap() {
+  if (!PK.ready || !LY.lrc) return;
+  const now = Math.max(0, (PK.player.getCurrentTime() || 0) - LY_REACT);
+  const i = LY.sel;
+  if (LY.off == null) {
+    LY.off = now - LY.lrc[i][0];                 // 첫 탭 — 나머지 줄이 전부 따라붙는다
+    toast('첫 줄 기준으로 전체를 맞췄습니다 — 어긋난 줄만 골라 다시 탭하세요');
+  } else {
+    LY.fix[i] = now;
+  }
+  LY.sel = lyNextLine(i);                        // 노래 따라 계속 탭할 수 있게 다음 줄로
+  lyPaintList(true);
+}
+function lyNudge(d) {
+  const i = LY.sel, s = lyStart(i);
+  if (s == null) return;
+  LY.fix[i] = Math.max(0, s + d);
+  lyPaintList(); lySeek(i, 0.8);
+}
+function lyAll(d) {
+  if (LY.off == null) return;
+  LY.off += d;
+  Object.keys(LY.fix).forEach(k => { LY.fix[k] += d; });
+  lyPaintList();
+}
+function lySeek(i, pre) {
+  const s = lyStart(i);
+  if (s != null && PK.ready) { PK.player.seekTo(Math.max(0, s - (pre || 0)), true); pkPaint(s); }
+}
+function lyModePaint() {
+  document.querySelectorAll('[data-ly]').forEach(n => n.classList.toggle('on', n.dataset.ly === LY.mode));
+  $('#pkLy').hidden = LY.mode !== 'sync';
+  const now = $('#pkLyNow');
+  if (now) now.textContent = LY.mode === 'auto' ? '봇이 받아써서 맞춤 (자신 없으면 가사 없이)'
+    : LY.mode === 'none' ? '가사 없이' : '';
+}
+function lyPaintList(follow) {
+  const box = $('#pkLyList'), help = $('#pkLyHelp'), meta = $('#pkLyMeta');
+  if (!box) return;
+  $('#pkLyAlt').hidden = LY.cands.length < 2;
+  if (LY.loading) { box.innerHTML = '<div class="pkLyEmpty">가사 불러오는 중…</div>'; return; }
+  if (!LY.lrc) { box.innerHTML = '<div class="pkLyEmpty">가사가 없습니다</div>'; meta.textContent = ''; return; }
+  meta.textContent = LY.meta + (LY.cands.length > 1 ? '  (' + (LY.ci + 1) + '/' + LY.cands.length + ')' : '');
+  help.textContent = LY.off == null
+    ? '① 영상에서 처음 나오는 줄을 아래에서 고르고 ② 재생하다 그 줄이 시작될 때 「지금!」(T)'
+    : '어긋난 줄을 눌러 고른 뒤, 재생 중 그 줄 시작에 「지금!」 — 다음 줄로 자동으로 넘어갑니다';
+  const a = PK.inS != null ? PK.inS - 3 : -1e9, z = PK.outS != null ? PK.outS + 3 : 1e9;
+  const rows = [];
+  LY.lrc.forEach(([t, text], i) => {
+    if (!text) return;
+    const s = lyStart(i);
+    if (LY.off != null && s != null && (s < a || s > z)) return;   // 맞춘 뒤엔 구간 안 줄만
+    rows.push('<div class="pkLyRow' + (i === LY.sel ? ' sel' : '') + (LY.fix[i] != null ? ' fixed' : '') +
+      '" data-i="' + i + '"><span class="t">' + (s == null ? '—' : fmtStamp(Math.max(0, s))) + '</span>' +
+      '<span class="x">' + escapeHtml(text) + '</span>' +
+      (LY.brk.has(i) ? '<span class="b">끊기</span>' : '') + '</div>');
+  });
+  box.innerHTML = rows.join('') || '<div class="pkLyEmpty">고른 구간 안에 가사가 없습니다</div>';
+  $('#pkLyBrk').classList.toggle('on', LY.brk.has(LY.sel));
+  const selEl = box.querySelector('.sel');
+  if (selEl && (follow || LY.last < 0)) selEl.scrollIntoView({ block: 'nearest' });
+}
+function lyPaint(now) {
+  const over = $('#pkLyOver'); if (!over) return;
+  const i = LY.mode === 'sync' ? lyAt(now) : -1;
+  over.textContent = i >= 0 ? LY.lrc[i][1] : '';
+  if (i !== LY.last) {
+    LY.last = i;
+    const box = $('#pkLyList');
+    if (box) box.querySelectorAll('.pkLyRow').forEach(n => n.classList.toggle('now', Number(n.dataset.i) === i));
+  }
+}
+function lyBind() {
+  document.querySelectorAll('[data-ly]').forEach((n) => {
+    n.onclick = () => {
+      LY.mode = n.dataset.ly; lyModePaint();
+      if (LY.mode === 'sync' && !LY.lrc && !LY.loading) lyLoad();
+    };
+  });
+  $('#pkLyTap').onclick = lyTap;
+  $('#pkLyAlt').onclick = () => {
+    if (LY.cands.length < 2) return;
+    LY.ci = (LY.ci + 1) % LY.cands.length; lyUse(LY.cands[LY.ci]);
+    LY.off = null; LY.fix = {}; LY.brk = new Set(); lyPaintList();
+  };
+  $('#pkLyBrk').onclick = () => { LY.brk.has(LY.sel) ? LY.brk.delete(LY.sel) : LY.brk.add(LY.sel); lyPaintList(); };
+  $('#pkLyUndo').onclick = () => { delete LY.fix[LY.sel]; lyPaintList(); };
+  document.querySelectorAll('[data-lynudge]').forEach(n => { n.onclick = () => lyNudge(Number(n.dataset.lynudge)); });
+  document.querySelectorAll('[data-lyall]').forEach(n => { n.onclick = () => lyAll(Number(n.dataset.lyall)); });
+  $('#pkLyList').onclick = (e) => {
+    const row = e.target.closest('.pkLyRow'); if (!row) return;
+    LY.sel = Number(row.dataset.i); lyPaintList(); lySeek(LY.sel, 1.0);
+  };
 }
 
 function bindPicker() {
@@ -2853,6 +3194,7 @@ function bindPicker() {
   // 어디를 누르든(재생기 포함) 초점을 화면으로 돌려놔야 방향키가 계속 먹는다.
   $('#picker').addEventListener('pointerup', () => setTimeout(pkFocus, 0));
   $('#pkAuto').onclick = () => pkCropSet(null, 'tap');
+  lyBind();
   document.querySelectorAll('[data-cropnudge]').forEach((n) => {
     n.onclick = (ev) => pkCropNudge(Number(n.dataset.cropnudge), ev.shiftKey);
   });
@@ -2887,6 +3229,7 @@ function bindPicker() {
   $('#pkView').onclick = () => {
     PK.wide = !PK.wide;
     $('#pkFrame').classList.toggle('wide', PK.wide);
+    $('#picker').classList.toggle('wideView', PK.wide);
     $('#pkFrame').classList.toggle('noOver', PK.wide);
     $('#pkView').textContent = PK.wide ? '16:9' : '9:16';
     PK.drag = null;
@@ -3286,8 +3629,25 @@ function submit() {
   }
 }
 
-function copy(text) {
-  const done = () => toast('복사했습니다 — 봇에 붙여넣으세요');
+/* 여러 편을 불러와 놓고(재밌는 구간 추천 5개 등) 그중 한 편만 만들고 싶을 때.
+   텔레그램 안에서는 그 편만 봇으로 보내고, 밖에서는 그 편 양식만 복사한다.
+   나머지 편은 임시 저장에 그대로 남아 있어 다시 열면 이어서 고를 수 있다. */
+function sendOne(b) {
+  const e = check(b);
+  if (Object.keys(e).length) { toast('이 편에 확인이 필요한 칸이 있습니다'); return; }
+  const text = blockText(b);
+  remember(b);
+  if (IN_TG) {
+    try { TG.HapticFeedback.notificationOccurred('success'); } catch (_) {}
+    TG.sendData(text);
+  } else {
+    copy(text, '이 편 양식만 복사했습니다 — 봇에 붙여넣으세요');
+  }
+}
+
+function copy(text, msg) {
+  const done = () => toast(msg || (blocks.length > 1 ? blocks.length + '편 양식을 모두 복사했습니다 — 봇에 붙여넣으세요'
+                                                      : '복사했습니다 — 봇에 붙여넣으세요'));
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text).then(done, () => fallback());
   } else fallback();
@@ -3347,6 +3707,7 @@ function boot() {
     $('#outsideBar').hidden = false;
     $('#copyBtn').onclick = submit;
     var tg = $('#tgBtn'); if (tg) tg.onclick = copyThenTelegram;
+    var one = $('#copyOneBtn'); if (one) one.onclick = () => sendOne(blocks[active] || blocks[0]);
     var cb = $('#capBtn'); if (cb) cb.onclick = askCaption;
   }
 
@@ -3426,9 +3787,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.06 05:53';
+    a.title = '판 10.08 21:24';
     var ver = document.createElement('span');
-    ver.textContent = '10.06 05:53';
+    ver.textContent = '10.08 21:24';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

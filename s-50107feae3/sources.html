@@ -297,6 +297,26 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .send[disabled]{opacity:.3; cursor:default}
 .note{margin-top:calc(var(--u)*3); color:var(--dim); font-size:13px; line-height:1.7}
 .note b{color:var(--muted)}
+/* ── 오늘의 초안 ── */
+.dr{border:1px solid var(--line); border-radius:12px; padding:calc(var(--u)*2.5); margin:calc(var(--u)*2.5) 0}
+.dr .src{font-size:12.5px; color:var(--dim); display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+.dr .src a{color:inherit}
+.dr .head{font-size:14.5px; margin:6px 0 10px; line-height:1.45}
+.dr .fm{border-top:1px solid var(--hair); padding-top:10px; margin-top:10px}
+.dr .fm b{font-size:13px; letter-spacing:-.02em}
+.dr .fm .t{font-size:15px; font-weight:700; margin:4px 0}
+.dr .fm .c{font-size:13px; color:var(--dim); white-space:pre-wrap; max-height:4.5em; overflow:hidden}
+.dr .thumbs{display:flex; gap:6px; margin:8px 0; overflow:auto}
+.dr .thumbs img{width:54px; height:68px; object-fit:cover; border-radius:6px; background:var(--hair); flex:none}
+.dr .vid{font-size:13px; margin:4px 0; overflow:hidden; text-overflow:ellipsis}
+.dr .vid a{color:var(--text)} .dr .vid.alt{color:var(--dim)} .dr .vid.alt a{color:var(--dim)}
+.dr .fm b .sub{font-weight:400; color:var(--dim); font-size:12px}
+.dr .chk{font-size:12px; color:var(--amber); margin:6px 0 0; padding-left:16px}
+.dr .err{font-size:12.5px; color:var(--amber)}
+.dr .go{margin-top:10px; width:100%; padding:11px; border-radius:9px; border:1px solid var(--amber);
+  background:var(--amber); color:#111; font:inherit; font-weight:800; cursor:pointer}
+.dr .go.done{background:none; color:var(--amber)}
+.drEmpty{padding:calc(var(--u)*6) 0; color:var(--dim); font-size:14px; line-height:1.6}
 .split .jump{flex:1; display:flex; align-items:center; justify-content:center;
   gap:5px; border:1px solid var(--line); border-radius:8px; color:var(--dim);
   font-size:13.5px; font-weight:700; padding:9px 0; text-decoration:none}
@@ -589,6 +609,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   <div class="split" id="grp">
     <button type="button" data-grp="info" aria-selected="true">이슈 · 뉴스</button>
     <button type="button" data-grp="plan" aria-selected="false">기획 소스</button>
+    <button type="button" data-grp="draft" aria-selected="false" id="grpDraft">오늘의 초안</button>
     <a class="jump" href="perf.html">PLOT 성과 <span aria-hidden="true">→</span></a>
   </div>
 
@@ -632,6 +653,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   <div id="viewAcct" hidden></div>
   <div id="viewNews" hidden></div>
   <div id="viewPlan" hidden></div>
+  <div id="viewDraft" hidden></div>
 
   <div class="note" id="note"></div>
 </div>
@@ -1454,7 +1476,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   });
 
   function showTab(which) {
-    if (GRP === 'plan') return;          // 기획 갈래에서는 후보 화면을 켜지 않는다
+    if (GRP !== 'info') return;          // 기획·초안 갈래에서는 후보 화면을 켜지 않는다
     var t = { cand: 'tCand', acct: 'tAcct', news: 'tNews' };
     var v = { cand: 'viewCand', acct: 'viewAcct', news: 'viewNews' };
     Object.keys(t).forEach(function (k) {
@@ -1601,6 +1623,15 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     });
     document.querySelector('.tabs').hidden = (g !== 'info');
     document.getElementById('viewPlan').hidden = (g !== 'plan');
+    document.getElementById('viewDraft').hidden = (g !== 'draft');
+    if (g === 'draft') {
+      ['viewCand', 'viewAcct', 'viewNews'].forEach(function (id) {
+        document.getElementById(id).hidden = true;
+      });
+      document.getElementById('filters').hidden = true;
+      renderDrafts();
+      return;
+    }
     if (g === 'plan') {
       ['viewCand', 'viewAcct', 'viewNews'].forEach(function (id) {
         document.getElementById(id).hidden = true;
@@ -1620,6 +1651,107 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
   document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
   document.getElementById('tNews').addEventListener('click', function () { showTab('news'); });
+
+
+  /* ── 오늘의 초안 ─────────────────────────────────────────────────
+   * 2026-10-08 규효 "자동 수집해서 초안 제작해서 앱에서 미리 보기하고 제작 확정 … 캐러셀에도"
+   * 맥이 스캔 뒤 상위 후보를 숏폼·캐러셀 초안으로 미리 써서 drafts.json 으로 올린다.
+   * 여기서 누르면 양식을 저장소에 두고 숏폼 화면·캐러셀 스튜디오로 건너간다 —
+   * 두 화면 다 열릴 때 저장소의 양식(plot.form.handoff)을 받아 펼친다. 거기서 미리 보고
+   * 고치고 보내는 게 제작 확정이다. 붙여넣기가 없다. */
+  var DR = null;
+  var DR_OPENED = 'plot.drafts.opened';
+  function drOpened() { try { return JSON.parse(localStorage.getItem(DR_OPENED) || '{}') || {}; } catch (e) { return {}; } }
+  function drMark(key) {
+    var o = drOpened(); o[key] = Date.now();
+    try { localStorage.setItem(DR_OPENED, JSON.stringify(o)); } catch (e) {}
+  }
+  function drField(form, key) {
+    var m = new RegExp('^' + key + '\\s*:\\s*(.*)$', 'm').exec(form || '');
+    return m ? m[1].trim() : '';
+  }
+  function drOpen(i, kind) {
+    var it = (DR && DR.items || [])[i]; if (!it) return;
+    var form = (it[kind] || {}).form;
+    if (!form) return;
+    try { localStorage.setItem('plot.form.handoff', form); } catch (e) {
+      alert('저장소를 쓸 수 없어 넘길 수 없습니다 — 양식을 복사해 붙여넣어 주세요'); return;
+    }
+    drMark(it.source.id + ':' + kind);
+    location.href = kind === 'card' ? 'carousel.html' : 'shorts.html';
+  }
+  function drChecks(x) {
+    var L = (x.issues || []).map(function (s) { return '⚠️ ' + s; })
+      .concat((x.confirm || []).map(function (s) { return '확인 필요 · ' + s; }));
+    return L.length ? '<ul class="chk">' + L.slice(0, 5).map(function (s) {
+      return '<li>' + esc(s) + '</li>'; }).join('') + '</ul>' : '';
+  }
+  function renderDrafts() {
+    var host = document.getElementById('viewDraft');
+    var items = (DR && DR.items) || [];
+    if (!items.length) {
+      host.innerHTML = '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
+        '맥이 매일 오후 3시 이후 첫 스캔에서 상위 후보를 숏폼·캐러셀 초안으로 미리 써 둡니다.' +
+        (DR && DR.generated_at ? '<br>마지막: ' + esc(DR.generated_at) : '') + '</div>';
+      return;
+    }
+    var op = drOpened();
+    var sk = (DR && DR.skipped) || [];
+    host.innerHTML = '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length +
+      '건 — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
+      (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
+        return '@' + esc(x.account || '') + ' (' + esc((x.why || '').slice(0, 40)) + ')'; }).join(' · ') : '') + '</div>' +
+      items.map(function (it, i) {
+        var s = it.source || {}, sh = it.shorts || {}, cd = it.card || {};
+        var h = '<div class="dr"><div class="src">@' + esc(s.account || '') +
+          (s.multiple ? ' · 평소 ' + esc(s.multiple) + '배' : '') +
+          (s.url ? ' · <a href="' + esc(s.url) + '" target="_blank" rel="noopener">원문</a>' : '') +
+          '</div><div class="head">' + esc(s.head || '') + '</div>';
+        if (sh.error) h += '<div class="fm err">숏폼 초안 실패 — ' + esc(sh.error) + '</div>';
+        else if (sh.form) {
+          var k1 = s.id + ':shorts';
+          var vd = sh.video || {};
+          var vline = vd.url ? '<div class="vid">▶ <a href="' + esc(vd.url) + '" target="_blank" rel="noopener">' +
+              esc(vd.title || vd.url) + '</a>' + (vd.credit ? ' · ' + esc(vd.credit) : '') +
+              (drField(sh.form, '구간') ? ' · 구간 ' + esc(drField(sh.form, '구간')) : '') + '</div>' +
+              ((vd.alts || []).length > 1 ? '<div class="vid alt">다른 후보: ' + vd.alts.slice(1).map(function (a) {
+                return '<a href="' + esc(a.url) + '" target="_blank" rel="noopener">' + esc((a.title || a.url).slice(0, 40)) + '</a>';
+              }).join(' · ') + '</div>' : '')
+            : '<div class="vid alt">원본 영상 없음 — 열어서 URL 을 넣어 주세요</div>';
+          h += '<div class="fm"><b>🎬 숏폼</b><div class="t">' + esc(drField(sh.form, '후킹') || drField(sh.form, '곡')) +
+            '</div>' + vline + '<div class="c">' + esc(sh.caption || '') + '</div>' + drChecks(sh) +
+            '<button class="go' + (op[k1] ? ' done' : '') + '" data-dr="' + i + '" data-kind="shorts">' +
+            (op[k1] ? '숏폼 다시 열기' : '숏폼으로 열기') + '</button></div>';
+        }
+        if (cd.error) h += '<div class="fm err">캐러셀 초안 실패 — ' + esc(cd.error) + '</div>';
+        else if (cd.form) {
+          var k2 = s.id + ':card';
+          var n = (cd.form.match(/^\[(커버|슬라이드)\]/gm) || []).length;
+          var imgs = (cd.form.match(/^소스:\s*(\S+)/gm) || []).map(function (l) { return l.replace(/^소스:\s*/, ''); });
+          h += '<div class="fm"><b>🗂 ' + (n === 1 ? '단신 1장 <span class="sub">+ 자동 엔딩</span>' : '캐러셀 ' + n + '장') + '</b><div class="t">' + esc(drField(cd.form, '제목')) +
+            '</div><div class="c">' + esc(drField(cd.form, '부제')) + '</div>' +
+            (imgs.length ? '<div class="thumbs">' + imgs.map(function (u) {
+              return '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(u) + '" alt="">'; }).join('') + '</div>' : '') +
+            drChecks(cd) +
+            '<button class="go' + (op[k2] ? ' done' : '') + '" data-dr="' + i + '" data-kind="card">' +
+            (op[k2] ? '캐러셀 다시 열기' : '캐러셀 스튜디오로 열기') + '</button></div>';
+        }
+        return h + '</div>';
+      }).join('');
+  }
+  document.getElementById('viewDraft').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-dr]');
+    if (b) drOpen(Number(b.getAttribute('data-dr')), b.getAttribute('data-kind'));
+  });
+  fetch('./drafts.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      DR = d;
+      var n = (d && d.items || []).length;
+      if (n) document.getElementById('grpDraft').textContent = '오늘의 초안 ' + n;
+      if (GRP === 'draft') renderDrafts();
+    })
+    .catch(function () { DR = null; });
 
   fetch('./magazines.json', { cache: 'no-cache' })
     .then(function (r) {
@@ -1646,9 +1778,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.06 05:53';
+    a.title = '판 10.08 21:24';
     var ver = document.createElement('span');
-    ver.textContent = '10.06 05:53';
+    ver.textContent = '10.08 21:24';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

@@ -2144,6 +2144,28 @@ function applyDeckForm(d) {
   document.getElementById("capInput").value = deck.caption;
   const bar = document.getElementById("sampleBar"); if (bar) bar.hidden = true;
   markDirty(); closeQuick(); buildRail(); syncAll();
+  fetchSrcPhotos();
+}
+/* [자동 초안 · 2026-10-08] 넘어온 양식의 소스가 사진 주소면 받아서 바로 넣는다.
+   사진이 빈 칸이면 미리보기로 확인이 안 된다. 자동 초안은 사진을 발행용 호스팅에 올려
+   두므로 그대로 받아진다. 다른 사이트 주소는 막혀 있을 수 있다 — 그땐 조용히 빈 칸으로 둔다
+   (소스 칸의 주소는 그대로라, 봇이 만들 때는 그 주소로 받는다). */
+async function fetchSrcPhotos() {
+  const isPic = (u) => /^https?:\/\//.test(u) && !/youtu\.?be|instagram\.com\/(p|reel)\//.test(u);
+  const want = deck.slides.filter((s) => !s.img && s.srcUrl && isPic(s.srcUrl));
+  if (!want.length) return;
+  let n = 0;
+  for (const s of want) {
+    try {
+      const r = await fetch(s.srcUrl, { mode: "cors" });
+      if (!r.ok) continue;
+      const b = await r.blob();
+      if (!/^image\//.test(b.type || "")) continue;
+      const d = await downscale(b);
+      if (d && await attachImage(s, d)) n++;
+    } catch (e) {}
+  }
+  if (n) { markDirty(); buildRail(); syncAll(); toast(`사진 ${n}장을 소스 주소에서 불러왔습니다`); }
 }
 function buildForm() {
   const L = [];
