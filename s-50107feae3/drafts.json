@@ -1,7 +1,7 @@
 {
  "schema": 1,
  "date": "2026-10-09",
- "generated_at": "2026-10-09 18:50 KST",
+ "generated_at": "2026-10-09 19:51 KST",
  "items": [
   {
    "source": {
@@ -10,40 +10,92 @@
     "url": "https://www.instagram.com/p/DeJaYWvTYvz/",
     "image": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-15/838328424_18474561268119742_9121609491836269049_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&ig_cache_key=NDAwMTg0NTc2Njc4ODA1ODA5OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwODAuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=LUBVWMCpUVgQ7kNvwHE0Ffp&_nc_oc=AdqahnSi7i3RtJIECWS8lMuaseGN897-sNFZOsBW8JnnVZYkSHqAfBn2brQ09Q7H_6M&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=WBnsaCFmevfojJcE90bBpw&_nc_ss=7a22e&oh=00_AQPM7IQOIkaw0v8aNvIkHwPgZmcmWcHeLVEkpffIHFo7DQ&oe=6ACAC60F",
     "head": "\"김감전을 가장 먼저 알아봤던 팔로알토\" 🚔",
-    "multiple": 1.14,
+    "multiple": 1.16,
     "is_reel": true,
     "kind": "mag"
    },
-   "made_at": "2026-10-09T18:50+09:00",
+   "made_at": "2026-10-09T19:51+09:00",
    "shorts": {
-    "error": "No module named 'faster_whisper'"
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=G7QTaxGCBK8\n구간: \n곡:\n아티스트: 팔로알토\n피처링:\n후킹: 팔로알토가 [P2P]에서 고등학생 김감전을 가장 먼저 알아본 후배.\n출처: Hi-Lite Records 하이라이트레코즈",
+    "caption": "AK! CAST에 출연한 팔로알토가 김감전 이야기에 \"형이 몇 번 얘기하냐\"며 한탄했습니다. 팔로알토에게 김감전은 특별한 후배입니다. 유튜브 콘텐츠 [P2P]에서 당시 고등학생이던 김감전을 가장 먼저 알아본 인물이 바로 팔로알토였기 때문입니다.\n#PLOT #팔로알토 #김감전 #AK!CAST #P2P",
+    "hooks": {
+     "A": "김감전 이야기만 나오면 \"상민아 그러지 좀 말라니까\"라며 한탄하던 팔로알토.",
+     "B": "팔로알토가 [P2P]에서 고등학생 김감전을 가장 먼저 알아본 후배.",
+     "C": "신인 발굴 무대에서 시작된 선후배의 인연."
+    },
+    "issues": [
+     "양식 파싱 실패: 곡 제목이 없습니다."
+    ],
+    "confirm": [
+     "기사가 없어 @hiptake_ 원문만 근거로 썼습니다 — 원문에 없는 말이 없는지, 사실 한 번 더 확인",
+     "구간 정보가 없어 비웠습니다 — 앱 「구간 고르기」에서 잡아 주세요",
+     "인스타 @paloaltongue (인물 계정 기준 — 맞는지만 확인)",
+     "곡 제목 — 확인된 기사에 없어 비웠습니다",
+     "원본 영상이 맞는지 확인 — 다른 후보도 실어 뒀습니다"
+    ],
+    "research": [
+     {
+      "title": "@hiptake_ 원문 (매거진 글)",
+      "link": "https://www.instagram.com/p/DeJaYWvTYvz/"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=G7QTaxGCBK8",
+     "title": "[P2P] 이분은 오프라인 공연 때 꼭 부를 거예요 (Episode 6) 팔로알토 / 허클베리피",
+     "credit": "Hi-Lite Records 하이라이트레코즈",
+     "range": null,
+     "alts": [
+      {
+       "url": "https://www.youtube.com/watch?v=G7QTaxGCBK8",
+       "title": "[P2P] 이분은 오프라인 공연 때 꼭 부를 거예요 (Episode 6) 팔로알토 / 허클베리피",
+       "channel": "Hi-Lite Records 하이라이트레코즈",
+       "score": 7.5
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=WQ0n7UMUdDU",
+       "title": "[P2P] 역대급, 우울증에 걸린 엄마에게 바치는 노래 (Episode 5) 팔로알토 / 허클베리피",
+       "channel": "Hi-Lite Records 하이라이트레코즈",
+       "score": 7.5
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=JZN26-n4QZo",
+       "title": "[P2P] 성공의 피드백을 보아라~ 팔로알토 / 허클베리피 / 염따 (Episode 3)",
+       "channel": "Hi-Lite Records 하이라이트레코즈",
+       "score": 7.5
+      }
+     ],
+     "note": "구간 정보가 없어 비웠습니다 — 앱 「구간 고르기」에서 잡아 주세요"
+    }
    },
    "card": {
-    "form": "[카테고리]\nHiphop\n\n[캡션]\n팔로알토가 신인 시절 김감전을 발굴했던 유튜브 콘텐츠 P2P의 인연. 최근 AK! CAST 출연에서 팔로알토는 후배의 근황을 듣고 안타까움을 드러냈습니다. 지난 10월 6일 hiptake_ 매거진 보도.\n#PLOT #팔로알토 #김감전 #P2P #CAST #신인발굴\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791539472/cpuidwwglgxlf5cyxhb5.jpg\n제목: 팔로알토가 본 김감전\n부제: P2P에서 고등학생을 발굴한 선배의 근황 소식\n출처: hiptake_\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791539480/fe7uchy8w5ud45wv0bnb.jpg\n소제목: 선배가 들은 안타까운 소식\n본문: AK! CAST에 출연한 팔로알토는 뷰티풀너드의 음악 취향을 묻는 중 갑자기 불거진 이름에 반응했습니다. 케이셉이 '너가 좋아하는 김상민 감옥 들어갔더라?'라고 던지자, 팔로알토는 '상민아 그러지 좀 말라니까', '형이 몇 번 얘기하냐'며 한탄했습니다.\n출처: hiptake_\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791539486/ka87ofvgderndiow1x5t.jpg\n소제목: 신인 발굴의 인연\n본문: 팔로알토에게 김감전은 특별한 후배입니다. 수년 전 유튜브 콘텐츠 [P2P]에서 당시 고등학생이던 김감전을 가장 먼저 알아본 사람이 팔로알토였거든요. 김감전이 컴피티션에서 1위를 차지했을 때, 팔로알토는 뮤직비디오 제작비를 지원했습니다.\n출처: hiptake_\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791539493/zdt4rs8483nmtdaeirjc.jpg\n소제목: P2P를 통한 만남\n본문: P2P는 신인 래퍼를 발굴하는 유튜브 콘텐츠였습니다. 팔로알토가 고등학생 김상민을 처음 본 것이 바로 이 무대였고, 그 이후 지원으로 이어졌습니다. 래퍼와 선배 사이의 인연을 만든 플랫폼이었습니다.\n출처: hiptake_\n",
-    "caption": "팔로알토가 신인 시절 김감전을 발굴했던 유튜브 콘텐츠 P2P의 인연. 최근 AK! CAST 출연에서 팔로알토는 후배의 근황을 듣고 안타까움을 드러냈습니다. 지난 10월 6일 hiptake_ 매거진 보도.\n#PLOT #팔로알토 #김감전 #P2P #CAST #신인발굴",
+    "form": "[카테고리]\nHiphop\n\n[캡션]\n팔로알토가 먼저 발굴한 후배 김감전. 방송 출연 중 그의 이름이 나오자 팔로알토는 즉각 반응하며 관심을 드러냈다. 수년 전 [P2P]의 인연이 지금도 이어지는 모습이다.\n#PLOT #팔로알토 #김감전 #AK캐스트 #P2P\n\n[커버]\n소스: https://i.ibb.co/9m0HwS05/7bd5ee940522.jpg\n제목: 팔로알토가 김감전을 먼저 봤다\n부제: AK! CAST 출연 중 \"상민아 그러지 좀 말라니까\"\n출처: @hiptake_\n\n[슬라이드]\n소스: https://i.ibb.co/wbDfj8h/4f579a082c40.jpg\n소제목: 케이셉의 질문에서 튀어나온 이름\n본문: AK! CAST에 출연한 팔로알토가 뷰티풀너드의 힙합 취향을 묻던 중 김감전 이야기가 나왔다. 케이셉이 \"너가 좋아하는 김상민 감옥 들어갔더라?\"라고 던지자 팔로알토는 즉시 반응했다.\n출처: @hiptake_\n\n[슬라이드]\n소스: https://i.ibb.co/8nQJpn0W/aea502ce2e3c.jpg\n소제목: \"형이 몇 번 얘기하냐\"\n본문: 팔로알토는 \"상민아 그러지 좀 말라니까\", \"형이 몇 번 얘기하냐\"라고 말했다. 김감전에 대한 각별한 감정을 드러낸 순간이었다.\n출처: @hiptake_\n\n[슬라이드]\n소스: https://i.ibb.co/MyfdNK7b/09b84066e09d.jpg\n소제목: [P2P]에서 처음 발굴한 후배\n본문: 팔로알토는 유튜브 콘텐츠 [P2P]에서 당시 고등학생이던 김감전을 가장 먼저 알아본 인물이다. 김감전이 컴피티션에서 1위를 차지하자 뮤직비디오 제작비를 지원했다.\n출처: @hiptake_\n",
+    "caption": "팔로알토가 먼저 발굴한 후배 김감전. 방송 출연 중 그의 이름이 나오자 팔로알토는 즉각 반응하며 관심을 드러냈다. 수년 전 [P2P]의 인연이 지금도 이어지는 모습이다.\n#PLOT #팔로알토 #김감전 #AK캐스트 #P2P",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791539472/cpuidwwglgxlf5cyxhb5.jpg",
+      "url": "https://i.ibb.co/9m0HwS05/7bd5ee940522.jpg",
       "credit": "신뢰"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791539480/fe7uchy8w5ud45wv0bnb.jpg",
+      "url": "https://i.ibb.co/wbDfj8h/4f579a082c40.jpg",
       "credit": "신뢰"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791539486/ka87ofvgderndiow1x5t.jpg",
+      "url": "https://i.ibb.co/8nQJpn0W/aea502ce2e3c.jpg",
       "credit": "신뢰"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791539493/zdt4rs8483nmtdaeirjc.jpg",
+      "url": "https://i.ibb.co/MyfdNK7b/09b84066e09d.jpg",
       "credit": "신뢰"
      }
     ],
     "shape": "맥락",
-    "issues": [],
+    "facts_fixed": [],
+    "issues": [
+     "표지제목 16자 (최대 15). 줄여주세요."
+    ],
     "confirm": [
      "기사가 없어 @hiptake_ 원문만 근거로 썼습니다 — 원문에 없는 말이 없는지, 사실 한 번 더 확인",
-     "[출처] (규효 기입 — 추측하지 않았습니다)",
+     "[출처] @hiptake_ 원문 — 매거진 이름을 쓸지, 원래 출처(방송·인터뷰·곡)로 바꿀지 확인",
      "인스타 @paloaltongue (인물 계정 기준 — 맞는지만 확인)"
     ],
     "research": [
@@ -55,9 +107,9 @@
    },
    "editor": {
     "grade": "A",
-    "kind": "인물해부",
-    "angle": "고등학생 김상민을 P2P에서 가장 먼저 알아본 팔로알토, 그가 김감전 수감 소식에 보인 반응",
-    "why": "구속·기소는 이미 다뤘지만 이번엔 선배의 발언과 둘의 관계라는 새 각도의 씬 안쪽 사람 이야기라 단순 후속이 아님"
+    "kind": "갈등·반응",
+    "angle": "팔로알토가 'AK! CAST'에서 김감전 이야기에 \"상민아 그러지 좀 말라니까\"라며 한탄한 장면, 그리고 [P2P]에서 고등학생 김감전을 처음 알아본 인연",
+    "why": "씬 선배가 후배에 대해 직접 한 발언과 둘의 관계라 사람 이야기로 강하지만, 김감전 사건은 이미 다뤘으니 사건 후속"
    },
    "subjects": [
     "팔로알토",
@@ -67,119 +119,74 @@
   },
   {
    "source": {
-    "id": "Dd-_HMECSAh",
-    "account": "nitemagkr",
-    "url": "https://www.instagram.com/reel/Dd-_HMECSAh/",
-    "image": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/831542966_17898328749606002_5210585364214710943_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=uGqdFq-feK4Q7kNvwEakHNR&_nc_oc=AdreFFiWT3B-HSoSzTY4JdXWqJr9hyLgJXVno6Z6S79-FNqmarJkyzTnje7W7MmOwkA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=8aMOQYTfBvUwZj33Mmlfeg&_nc_tpa=Q5bMBQJ01s3TjfLfRxuoB7yXZb5oveEBZQ_zkeVvyZs9F9U7sZr4XLU7MW4Vx11YPRBOv5cRQeE6dDGcWQ&oh=00_AQP-3INnSZhS9SKySve5jPPogbWuycOegFXjruOBdtmfjQ&oe=6ACE6A51",
-    "head": "“왜 거리X이 거리놈을 거리 둬?” 😭",
-    "multiple": 0.96,
-    "is_reel": true,
-    "kind": "mag"
-   },
-   "made_at": "2026-10-09T18:50+09:00",
-   "shorts": {
-    "error": "No module named 'faster_whisper'"
-   },
-   "card": {
-    "form": "[카테고리]\nHiphop\n\n[캡션]\n\"왜 거리년이 거리놈을 거리 둬?\" 창모의 정규앨범 'MONOLITH'가 10월 1일 공개됐습니다. 앨범 수록곡 '불러봐'에서 DIMO REX의 훅이 두드러집니다.\n#PLOT #창모 #MONOLITH #DIMOREX #불러봐\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791539516/twypv0ojn4pzrd3uwvdc.jpg\n제목: 창모, 10년 만의 신작\n부제: 정규앨범 'MONOLITH' 발매, DIMO REX 훅\n출처: nitemagkr\n",
-    "caption": "\"왜 거리년이 거리놈을 거리 둬?\" 창모의 정규앨범 'MONOLITH'가 10월 1일 공개됐습니다. 앨범 수록곡 '불러봐'에서 DIMO REX의 훅이 두드러집니다.\n#PLOT #창모 #MONOLITH #DIMOREX #불러봐",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791539516/twypv0ojn4pzrd3uwvdc.jpg",
-      "credit": "멜론"
-     }
-    ],
-    "shape": "단신",
-    "issues": [],
-    "confirm": [
-     "기사가 없어 @nitemagkr 원문만 근거로 썼습니다 — 원문에 없는 말이 없는지, 사실 한 번 더 확인",
-     "[출처] (규효 기입 — 추측하지 않았습니다)",
-     "인스타 @changmo_ (인물 계정 기준 — 맞는지만 확인)"
-    ],
-    "research": [
-     {
-      "title": "@nitemagkr 원문 (매거진 글)",
-      "link": "https://www.instagram.com/reel/Dd-_HMECSAh/"
-     }
-    ]
-   },
-   "editor": {
-    "grade": "B",
-    "kind": "발매·신보",
-    "angle": "창모 데뷔 10년 만의 'MONOLITH', \"거리년이 거리놈을\" 가사와 DIMO REX 훅",
-    "why": "씬 안쪽이고 가사 화제는 있지만 뼈대가 앨범 발매 소개라 평소 수준에 그칠 것 같음"
-   },
-   "subjects": [
-    "창모",
-    "MUSIK에",
-    "10년"
-   ]
-  },
-  {
-   "source": {
     "id": "news:한로로:2026-10-09",
     "account": "뉴스 급등",
-    "url": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8680645&ref=A",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16242681",
     "image": null,
-    "head": "2년 만에 대세가 된 한로로가 악플로 인한 심적 고통을 겪으며 음악을 관둘까 생각했다.",
+    "head": "한로로 — 기사 10건 (평소 1) · 차트 22→16위",
     "multiple": 10.6,
     "is_reel": false,
     "kind": "news"
    },
-   "made_at": "2026-10-09T18:50+09:00",
+   "made_at": "2026-10-09T19:51+09:00",
    "card": {
-    "form": "[카테고리]\nKpop\n\n[캡션]\n악플 속에서도 음악을 놓지 않은 한로로가 최근 방송에서 솔직한 마음을 나눴다. 악플로 인한 극단적인 생각까지 했던 시간을 거친 뒤, 음악에 대한 초심과 무대의 소중함을 더욱 깊이 있게 마주하게 됐다고 전했다. 10월 3일·4일 방송.\n#PLOT #한로로 #악플 #음악 #무대\n\n[커버]\n소스: https://i.ibb.co/4n7kxHS1/a6554be5f1ad.jpg\n제목: 악플에 음악 관둘까 한로로\n부제: 2년 만에 대세가 된 아티스트의 솔직한 고백\n출처: 뉴시스 · 마이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/HDXkZB6J/67f4c4931873.jpg\n소제목: 악플의 무게에 흔들렸던 시간\n본문: 한로로는 최근 방송 출연에서 악플로 인한 심적 고통을 토로했다. \"홧김에 '그러면 내가 음악을 그만둬야 이 사람들이 이렇게 안 하나?'라는 생각도 들었다\"고 말했다. 악플에 휘둘려 극단적인 생각까지 하게 되는 순간이 있었음을 드러냈다.\n출처: 뉴시스 · 마이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/Kjxbd16y/8f5d9701ac40.jpg\n소제목: 음악에 대한 초심으로 돌아가다\n본문: 흔들렸던 시간을 지나며 한로로는 자신의 태도를 다시 정돈했다. \"나는 애초에 음악에 뛰어든 것도 사랑해서 뛰어든 건데 '고작 이런 거에 포기를 한다니. 내 사랑을'\"이라며 자신을 갈고닦았다고 설명했다. 악플보다 음악 자체에 집중하는 과정이었다.\n출처: 뉴시스 · 마이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/ymsVCbpB/5f540f3a1057.jpg\n소제목: 무대를 보는 눈이 달라졌다\n본문: 악플과의 싸움을 거치면서 한로로의 무대를 향한 태도는 변했다. 무대에 대한 소중함이 더해졌다는 설명이다. 고통스러운 시간도 음악을 하는 아티스트로서 의미 있는 과정이 되었다.\n출처: 뉴시스 · 마이데일리\n",
-    "caption": "악플 속에서도 음악을 놓지 않은 한로로가 최근 방송에서 솔직한 마음을 나눴다. 악플로 인한 극단적인 생각까지 했던 시간을 거친 뒤, 음악에 대한 초심과 무대의 소중함을 더욱 깊이 있게 마주하게 됐다고 전했다. 10월 3일·4일 방송.\n#PLOT #한로로 #악플 #음악 #무대",
+    "form": "[카테고리]\nIndie\n\n[캡션]\n한로로의 음악에 먼저 감동해 다가간 수빈과 한로로의 3년 우정. 실제 만남에서 서로의 예상을 깨며 통하는 친구임을 증명했다. 9일 '집대성' 영상에 그 장면이 담겼다.\n#PLOT #수빈 #한로로 #집대성 #투모로우바이투게더\n\n[커버]\n소스: https://i.ibb.co/4n7kxHS1/a6554be5f1ad.jpg\n제목: 수빈이 먼저 보낸 DM\n부제: 한로로 가사에 울었다던 수빈, 3년 우정의 결\n출처: 톱스타뉴스 · MHN / 엠에이치앤\n\n[슬라이드]\n소스: https://i.ibb.co/ZpGYbyjh/68975491ffce.jpg\n소제목: 한로로 음악에 먼저 감동\n본문: 투모로우바이투게더 수빈은 한로로의 음악을 먼저 알아봤다. 수빈은 한로로가 작사에 참여한 투모로우바이투게더 수록곡 '물수제비'를 포함해 평소 한로로의 곡을 즐겨 들으며 샤라웃을 많이 했다. 이를 통해 두 사람의 인연이 시작됐다.\n출처: 톱스타뉴스 · MHN / 엠에이치앤\n\n[슬라이드]\n소스: https://i.ibb.co/jvS4kPKh/f2b76335e405.jpg\n소제목: \"재미가 없다\" 솔직한 걱정\n본문: 9일 유튜브 채널 '집대성'에 출연한 수빈은 한로로를 앞두고 걱정했다고 했다. 수빈은 \"착하고 좋은 친구는 맞지만 재미가 없다\"며 \"얘를 데리고 어떡하지?\"라고 생각했다고 밝혔다. 한로로는 웃으며 \"님이 재밌게 하셔야죠\"라고 받아쳤다.\n출처: 톱스타뉴스 · MHN / 엠에이치앤\n\n[슬라이드]\n소스: https://i.ibb.co/WN26gxvH/ba45da6f6672.jpg\n소제목: 만나보니 예상 깬 둘\n본문: 실제로 만난 두 사람은 다른 모습을 보였다. 수빈은 한로로에 대해 \"친해지니까 남자 중학생 같다\"고 했다. 한로로 역시 \"저도 수빈 씨를 알기 전에는 점잖을 줄 알았는데 말이 많다\"며 \"오히려 고마웠다\"고 화답했다.\n출처: 톱스타뉴스 · MHN / 엠에이치앤\n",
+    "caption": "한로로의 음악에 먼저 감동해 다가간 수빈과 한로로의 3년 우정. 실제 만남에서 서로의 예상을 깨며 통하는 친구임을 증명했다. 9일 '집대성' 영상에 그 장면이 담겼다.\n#PLOT #수빈 #한로로 #집대성 #투모로우바이투게더",
     "photos": [
      {
       "url": "https://i.ibb.co/4n7kxHS1/a6554be5f1ad.jpg",
       "credit": "신뢰"
      },
      {
-      "url": "https://i.ibb.co/HDXkZB6J/67f4c4931873.jpg",
-      "credit": "mydaily.co.kr",
-      "from": "https://mydaily.co.kr/photos/2025/12/20/2025122016582562332_l.jpg"
+      "url": "https://i.ibb.co/ZpGYbyjh/68975491ffce.jpg",
+      "credit": "topstarnews.net",
+      "from": "https://cdn.topstarnews.net/news/photo/202610/16242681_2050180_933_crop.jpg"
      },
      {
-      "url": "https://i.ibb.co/Kjxbd16y/8f5d9701ac40.jpg",
-      "credit": "신뢰"
+      "url": "https://i.ibb.co/jvS4kPKh/f2b76335e405.jpg",
+      "credit": "topstarnews.net",
+      "from": "https://cdn.topstarnews.net/news/photo/202610/16242680_2050179_631_crop.jpg"
      },
      {
-      "url": "https://i.ibb.co/ymsVCbpB/5f540f3a1057.jpg",
-      "credit": "신뢰"
+      "url": "https://i.ibb.co/WN26gxvH/ba45da6f6672.jpg",
+      "credit": "mhnse.com",
+      "from": "https://cdn.mhnse.com/mhnsports/2026/10/09190750/thumb_ccms_70164.jpg"
      }
     ],
     "shape": "맥락",
+    "facts_fixed": [
+     "[표지부제] 왜곡: \"2년 우정의 결\"이라고 했으나 근거에는 \"벌써 3년 차다. 친구가 된 지\"라고 명시되어 있음."
+    ],
     "issues": [],
     "confirm": [
-     "[출처] 뉴시스 · 마이데일리 (확인된 기사 기준 — 맞는지만 확인)",
+     "[출처] 톱스타뉴스 · MHN / 엠에이치앤 (확인된 기사 기준 — 맞는지만 확인)",
      "인스타 @hanr0r0 (인물 계정 기준 — 맞는지만 확인)"
     ],
     "research": [
      {
-      "title": "한로로 \"악플에 휘둘려 음악 관둘까 생각한 적도 있다\"",
-      "link": "https://www.newsis.com/view/NISX20261003_0003813716"
+      "title": "[종합] \"걱정했는데 진짜 맛있다\"… '집대성' 수빈·한로로, 웰컴티부터...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242681"
      },
      {
-      "title": "한로로, 2년 만에 대세 됐는데…악플에 \"음악 그만둬야 하나 싶었다\"",
-      "link": "https://www.mydaily.co.kr/page/view/2026100318241878922"
+      "title": "\"착하고 좋은 친구지만 재미가 없다\"… '집대성' 수빈, 절친 한로로 향...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242680"
      },
      {
-      "title": "한로로 “음악 그만둘까 극단적 생각도” 악플 고충 토로",
-      "link": "https://www.mk.co.kr/article/12167831"
+      "title": "수빈 “한로로 가사에 울었다”…먼저 DM 보내 시작된 특별한 인연",
+      "link": "https://mhnse.com/news/articleView.html?idxno=1583525"
      }
     ]
    },
    "editor": {
-    "grade": "A",
+    "grade": "S",
     "kind": "인물해부",
-    "angle": "2년 만에 대세가 된 한로로, 악플에 음악을 관둘까 했던 이면 정리",
-    "why": "사람 이야기에 차트 22→16위 상승이 겹치고 한로로 J-POP 리메이크가 27배를 기록했으며, 부산국제록페 무대는 공연 공지가 아닌 인물 서사로 풀 때만 먹힌다."
+    "angle": "한로로 나무위키 털기: 수빈이 먼저 보낸 DM에서 '집대성' 절친이 되기까지, 2년 만의 대세, 악플에 음악을 그만둬야 하나 싶던 시간",
+    "why": "기사 10건에 차트도 오르는 지금 뜨는 인물이고, 인물해부가 3.04배인 데다 한로로 글은 27배 기록도 있다."
    },
    "subjects": [
     "한로로",
-    "오가",
-    "10건"
+    "10건",
+    "16위"
    ]
   },
   {
@@ -193,10 +200,10 @@
     "is_reel": false,
     "kind": "news"
    },
-   "made_at": "2026-10-09T18:50+09:00",
+   "made_at": "2026-10-09T19:51+09:00",
    "card": {
-    "form": "[카테고리]\nKpop\n\n[캡션]\n팬들의 별명이 팝업까지 간 이야기. 리센느 리브·메이 조합이 팬 호칭 '리트와 메트'를 내걸고 'RESCENE' 팝업을 열었다. 팬 문화에서 비롯된 이름이 공식 무대로 나아간 사례다.\n\n#PLOT #리센느 #리브 #메이 #팝업\n\n[커버]\n소스: https://i.ibb.co/W4fNBCPf/70da19207357.jpg\n제목: 팬 호칭이 현실이 되다\n부제: 리센느 리브·메이, '리트와 메트' 팝업 오픈\n출처: 뉴스컬처 · 티브이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/20gynpXZ/a2369d850bb0.jpg\n소제목: 팬들의 별명이 공식화되기까지\n본문: 리센느의 리브와 메이 조합이 팬들 사이에서 '리트와 메트'라고 불려오던 별명이 현실의 팝업으로 구현됐다. 팬들이 자체적으로 붙인 호칭이 공식 무대와 공간으로 확장된 사례다.\n출처: 뉴스컬처 · 티브이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/gLtXmHX2/d8b46c7b50b7.jpg\n소제목: 팝업 '리트와 메트' 오픈\n본문: 리브와 메이의 팝업 'RESCENE'이 문을 열었다. 팬들의 호칭이 실제 공간으로 만들어지는 과정을 거쳐, 리센느의 또 다른 활동 무대가 추가됐다.\n출처: 뉴스컬처 · 티브이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/nNbTnMK3/612dc083e797.jpg\n소제목: 팬 문화에서 공식으로\n본문: 온라인에서 팬들이 자유롭게 만들어낸 조합명이 실제 팝업 공간으로 인정받은 것. 리브·메이 조합이 '리트와 메트'라는 이름으로 더 확장된 활동을 펼치는 계기가 됐다.\n출처: 뉴스컬처 · 티브이데일리\n",
-    "caption": "팬들의 별명이 팝업까지 간 이야기. 리센느 리브·메이 조합이 팬 호칭 '리트와 메트'를 내걸고 'RESCENE' 팝업을 열었다. 팬 문화에서 비롯된 이름이 공식 무대로 나아간 사례다.\n\n#PLOT #리센느 #리브 #메이 #팝업",
+    "form": "[카테고리]\nKpop\n\n[캡션]\n팬이 만든 이름이 현실이 됐다. 리센느 리브와 메이가 '리트와 메트' 팝업을 열며 팬 교감을 심화시킨다. 16~22일 서울 용산 아이파크몰.\n#PLOT #리센느 #리브 #메이 #팬덤\n\n[커버]\n소스: https://i.ibb.co/W4fNBCPf/70da19207357.jpg\n제목: 팬 애칭이 팝업이 되다\n부제: 리센느 리브·메이 '리트와 메트' 오프라인 공간화\n출처: 뉴스컬처 · 티브이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/20gynpXZ/a2369d850bb0.jpg\n소제목: 패트와 매트에서 시작된 이름\n본문: 리센느 리브와 메이의 유쾌한 케미스트리를 팬들이 인기 애니메이션 '패트와 매트'에 빗대 '리트와 메트'라 부르기 시작했다. 원이의 '파이리', 제나의 '신라공주', 미나미의 '거제 야호' 같은 개별 애칭에 이어 두 멤버를 함께 지칭하는 캐릭터성이 확보됐다.\n출처: 뉴스컬처 · 티브이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/gLtXmHX2/d8b46c7b50b7.jpg\n소제목: 멤버가 함께 만든 공간\n본문: 리브와 메이는 공간 구성부터 굿즈 아이디어까지 팝업에 직접 참여했다. 기획 과정을 담은 유튜브 영상은 118만 뷰를 넘겼다. 팬의 아이디어에 멤버들의 제안이 더해지며 온오프라인 화제성을 얻었다.\n출처: 뉴스컬처 · 티브이데일리\n\n[슬라이드]\n소스: https://i.ibb.co/nNbTnMK3/612dc083e797.jpg\n소제목: 서울 용산에서 7일간 운영\n본문: '리트와 메트' 팝업 스토어는 16~22일 서울 용산 아이파크몰 4층 더팝업에서 열린다. 리브와 메이의 아이디어가 담긴 공식 MD를 선보인다.\n출처: 뉴스컬처 · 티브이데일리\n",
+    "caption": "팬이 만든 이름이 현실이 됐다. 리센느 리브와 메이가 '리트와 메트' 팝업을 열며 팬 교감을 심화시킨다. 16~22일 서울 용산 아이파크몰.\n#PLOT #리센느 #리브 #메이 #팬덤",
     "photos": [
      {
       "url": "https://i.ibb.co/W4fNBCPf/70da19207357.jpg",
@@ -216,6 +223,9 @@
      }
     ],
     "shape": "맥락",
+    "facts_fixed": [
+     "카드3: 지어냄: \"10월 16일 개시\"라고 했으나 근거에는 \"오는 16일 전격 오픈\"이라고만 되어 있고, 기사 작성일이 명시되지 않아 \"10월\"이라는 월(月)을 확정할 수 없음. 또한 기사에서 \"이번 팝업\"과 \"오는 16일\"이라는 표현만 있어 정확한 월의 정보가 없음."
+    ],
     "issues": [],
     "confirm": [
      "[출처] 뉴스컬처 · 티브이데일리 (확인된 기사 기준 — 맞는지만 확인)",
@@ -235,8 +245,8 @@
    "editor": {
     "grade": "A",
     "kind": "인물해부",
-    "angle": "팬들이 붙인 '리트와 메트'가 팝업까지 간 과정, 리브·메이 조합 정리",
-    "why": "리센느는 올해 PLOT 최강 인물이고 인물 정리가 14만 기록인데, 팬덤 밈이 현실이 된 이야기라 팝업 공지로만 쓰면 약하다."
+    "angle": "팬들이 붙인 '리트와 메트'가 팝업까지 된 과정 정리 (비서진 김광규 '조카' 반응 포함)",
+    "why": "리센느는 최근 가장 잘 되는 인물이고 팬 별명이 현실이 된 서사가 있지만, 팝업 소식 자체는 공지라 정리 각도가 필요하다."
    },
    "subjects": [
     "리센느",
@@ -247,70 +257,88 @@
  ],
  "skipped": [
   {
+   "id": "DeG2k22EmVP",
+   "account": "changmo_",
+   "entity": null,
+   "why": "편집장 B — 국힙 씬 안쪽 협업이고 합창단이라는 그림은 감다살이지만, 본인 계정 데모 공개라 갈등이나 인물 서사 없이는 "
+  },
+  {
    "id": "DeDuo_6gabE",
    "account": "ualive_mag",
    "entity": null,
-   "why": "편집장 C — 한국 독자와 접점이 약한 해외 팝스타 근황이고 제목도 없는 예고 단계"
-  },
-  {
-   "id": "Dd_INhzgZCR",
-   "account": "ualive_mag",
-   "entity": null,
-   "why": "편집장 B — 해외 힙합 팬에게는 의미가 있지만 재발매 공지라 PLOT 각도가 약함"
+   "why": "편집장 C — 제목도 없는 해외 팝스타 근황이라 한국 독자와 접점이 약하고 PLOT 씬 바깥이다."
   },
   {
    "id": "DeJXij0xzRO",
    "account": "kpopburger_magazine",
    "entity": null,
-   "why": "편집장 B — 참여 유도형 질문이라 반응은 나올 수 있어도 사람 이야기나 새로운 각도가 없음"
+   "why": "편집장 B — 추천·모음은 평균 1.58배로 괜찮지만, 질문만 던지는 타 매거진 투표 글이라 PLOT이 후보와 근거를 직접"
+  },
+  {
+   "id": "DeOznZnTsTE",
+   "account": "bignaughtyboi",
+   "entity": null,
+   "why": "찾은 기사가 원문과 다른 소식 — 글은 빅나티 본인이 shin_in_ryu 밴드의 노스탈지아 커버에 대해 올린 글이지만, 찾은 기사들은 빅나티가 출연한 TV 프로그램, 디스전 논"
+  },
+  {
+   "id": "DeG1tpZkjtl",
+   "account": "redvelvet.smtown",
+   "entity": null,
+   "why": "찾은 기사가 원문과 다른 소식 — "
   },
   {
    "id": "news:KC:2026-10-09",
    "account": "뉴스 급등",
    "entity": "KC",
-   "why": "편집장 C — 휴대용 에탄올 화로 안전검사 소식으로, 음악과 무관한 KC 인증 기사가 키워드만 겹쳐 잡힌 것이다."
+   "why": "편집장 C — 음악과 무관한 KC 안전기준 기사로, PLOT의 KC(@kcthecompany)와는 이름만 같은 노이즈다."
   },
   {
    "id": "news:CORTIS (코르티스):2026-10-09",
    "account": "뉴스 급등",
    "entity": "CORTIS (코르티스)",
-   "why": "편집장 B — 뜨는 신인이라 소재는 되지만 화보·브랜드지수 기사가 대부분이고 PLOT 독자와 접점이 약해 나무위키형 정리가"
+   "why": "편집장 B — 신인으로 화제는 되나 최근 잘 된 인물이 아니고, 화보와 지수 기사는 정보성이라 각도가 필요하다."
   },
   {
    "id": "news:ATEEZ(에이티즈):2026-10-09",
    "account": "뉴스 급등",
    "entity": "ATEEZ(에이티즈)",
-   "why": "편집장 C — 생일 기부 러닝과 OST 발매 공지가 전부라 씬 안쪽 이야기가 없고 PLOT 결이 아니다."
+   "why": "편집장 B — 기부와 OST 소식은 선하지만 씬 안쪽 이야기가 아니라 공지 옮기기에 가깝다."
   },
   {
    "id": "news:루피:2026-10-09",
    "account": "뉴스 급등",
    "entity": "루피",
-   "why": "편집장 C — 잔망루피 캐릭터 마케팅 기사로 음악과 무관하고, 루피는 음악 인물이 아니라 캐릭터다."
+   "why": "편집장 C — 잔망루피 캐릭터 마케팅 기사라 음악 이야기가 아니다."
   },
   {
-   "id": "news:머무르:2026-10-09",
+   "id": "news:박재범:2026-10-09",
    "account": "뉴스 급등",
-   "entity": "머무르",
-   "why": "편집장 B — 새롭고 감다살 각도는 있으나 차트 점수 기사만으로는 사람 이야기가 없어서 독자 반응이 갈릴 소재다."
+   "entity": "박재범",
+   "why": "편집장 B — 이름은 크지만 사유가 '예기치 못한 사정'뿐이라 공연 공지 범주(0.35배)이고, 새로 밝혀지는 내용이 있으"
   },
   {
    "id": "news:노이:2026-10-09",
    "account": "뉴스 급등",
    "entity": "노이",
-   "why": "편집장 C — '노이'가 독일 지명·AI 플랫폼·미용실로 잡힌 동음이의 노이즈이며 음악 소재가 아니다."
+   "why": "편집장 C — '노이'가 들어간 무관한 키워드(노이마르크트, 노이모스AI, 에이노이헤어)가 섞인 노이즈다."
   },
   {
    "id": "news:방탄소년단:2026-10-09",
    "account": "뉴스 급등",
    "entity": "방탄소년단",
-   "why": "편집장 B — 이름은 크지만 해외 팬덤 근황 위주라 PLOT 씬 결과 거리가 있고, RM의 호소는 반응 요소라 갈등·반응으"
+   "why": "편집장 B — 시상식 후보 공지는 정보 옮기기라 약하고, 페루 ARMY 웨딩베일 일화를 쓰면 조금 낫다."
+  },
+  {
+   "id": "news:AKMU(악뮤):2026-10-09",
+   "account": "뉴스 급등",
+   "entity": "AKMU(악뮤)",
+   "why": "편집장 B — 비타500 모델 발탁은 광고 공지이고, 이수현 식단 쪽이 사람 이야기로는 낫지만 씬 안쪽은 아니다."
   },
   {
    "id": "lyric:603329607",
    "account": "가사 속 이름",
    "entity": "김진호 (SG워너비)",
-   "why": "편집장 B — SG워너비 김진호는 이름이 크지만 PLOT의 최근 인물군과 씬 안쪽 접점이 약하고, 신곡 가사 소개는 발매 "
+   "why": "편집장 B — 가사 속 가족 이야기는 사람 이야기로 읽히지만, SG워너비는 PLOT 씬 바깥이고 최근 뜨는 인물과도 접점이"
   }
  ]
 }
