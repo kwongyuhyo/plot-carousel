@@ -596,6 +596,31 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     return '<section><h2>가장 멀리 간 글</h2><div class="rows">' + rows + '</div></section>';
   }
 
+  /* 오늘의 초안 → 발행 (2026-10-11) — 자동으로 만든 초안이 실제로 올라갔나, 올라간 건 잘 됐나 */
+  function drafts() {
+    var D = P.drafts;
+    if (!D || !D.drafts) return '';
+    var ks = Object.keys(D.lanes || {});
+    var rows = ks.map(function (k) {
+      var v = D.lanes[k], w = v.drafts ? Math.round(100 * v.posted / v.drafts) : 0;
+      return '<div class="ln"><span class="nm">' + esc(k) + '</span>' +
+        '<span class="sub">초안 ' + v.drafts + ' · 발행 ' + v.posted + '</span>' +
+        '<span class="mb"><i style="width:' + w + '%"></i></span>' +
+        '<b>' + (v.mult != null ? v.mult + '배' : '—') + '</b></div>';
+    }).join('');
+    var rec = (D.recent || []).map(function (d) {
+      return '<div class="ln"><span class="nm">' + (d.url ? '<a href="' + esc(d.url) + '" target="_blank" rel="noopener">' + esc(d.head || d.who) + '</a>' : esc(d.head || d.who)) +
+        '</span><span class="sub">' + esc(d.day.slice(5)) + ' ' + esc(d.lane) + '</span><b>' + (d.mult != null ? d.mult + '배' : '집계 전') + '</b></div>';
+    }).join('');
+    return '<section><h2>오늘의 초안 → 발행</h2>' +
+      '<p class="note">최근 ' + D.days + '일 초안 ' + D.drafts + '건 중 ' + D.posted + '건 발행 (채택률 ' + Math.round((D.rate || 0) * 100) + '%) · ' +
+      '같은 기간 전체 발행 ' + D.posts + '건. 채택 글 배수 ' + (D.adopted_mult != null ? D.adopted_mult + '배' : '—') +
+      ' · 직접 만든 글 ' + (D.own_mult != null ? D.own_mult + '배' : '—') + ' (그 주 중앙값 = 1)</p>' +
+      '<div class="rows">' + rows + '</div>' + (rec ? '<div class="rows" style="margin-top:10px">' + rec + '</div>' : '') +
+      '<p class="note">초안 날짜부터 나흘 안에 올라간 글 중 주인공 이름이 첫머리에 있거나 초안 캡션과 많이 겹치면 그 초안에서 나온 글로 셉니다. ' +
+      '배수는 주간 성과표가 나온 주만.</p></section>';
+  }
+
   function runs() {
     if (!P.runs) return '';
     var rows = Object.keys(P.runs).map(function (k) {
@@ -609,7 +634,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function render() {
     var host = document.getElementById('body');
     document.getElementById('stamp').textContent = (P.generated_at || '') + ' 기준';
-    var out = sumBox() + weekBars() + kindBars() + balance() + topPosts() + runs();
+    var out = sumBox() + weekBars() + drafts() + kindBars() + balance() + topPosts() + runs();
     host.innerHTML = out || '<div class="empty">아직 실을 숫자가 없습니다.</div>';
   }
 
@@ -634,9 +659,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.10 23:56';
+    a.title = '판 10.11 03:45';
     var ver = document.createElement('span');
-    ver.textContent = '10.10 23:56';
+    ver.textContent = '10.11 03:45';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
