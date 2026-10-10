@@ -2155,13 +2155,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var w = window.open(u, '_blank');
     if (!w) location.href = u;
   }
-  function plotAction(code, label, confirmed) {
+  function plotAction(code, label, confirmed, token) {
     actMark(code);
     var ch = chGet();
     if (ch.url && ch.key) {
       fetch(ch.url.replace(/\/+$/, '') + '/a', {
         method: 'POST', headers: { 'content-type': 'application/json', 'x-app-key': ch.key },
-        body: JSON.stringify({ code: code, confirmed: !!confirmed })
+        body: JSON.stringify({ code: code, confirmed: !!confirmed, token: token || '' })
       }).then(function (r) { return r.json(); }).then(function (d) {
         if (d && d.ok) toast((label || '보냈습니다') + ' — 맥이 1분 안에 받습니다 (결과는 텔레그램으로)');
         else { toast('대기열이 거절했습니다 — 텔레그램으로 보냅니다'); viaTelegram(code); }
@@ -2191,6 +2191,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function openPublish(it) {
     var cd = it.card || {}, sl = slidesOf(it), cv = coverKey(it);
     var code = 'pb-' + it.key + '-' + cv, ch = chGet();
+    // 지문 — 맥이 지금 가진 초안이 이 화면과 같을 때만 올린다 (다시 쓰기 뒤 옛 화면으로 확정하는 일 막기)
+    var tok = ((cd.preview || {}).v || {})[cv] || '';
+    if (sl.length > 10) { toast('10장을 넘어 바로 발행할 수 없습니다 — 캐러셀 스튜디오에서 줄여 주세요'); return; }
+    if (ch.url && ch.key && !tok) { toast('앱을 새로 고친 뒤 다시 눌러 주세요 (초안 지문이 없습니다)'); return; }
     var sh = document.createElement('div'); sh.className = 'sheet pubsheet';
     sh.innerHTML = '<div class="pn"><div class="hd"></div>' +
       '<div style="padding:0 20px 8px;font-weight:800">이대로 인스타에 올릴까요? · 표지 ' + esc(cv) + ' · ' + sl.length + '장</div>' +
@@ -2203,7 +2207,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       if (e.target === sh) { sh.remove(); return; }
       var b = e.target.closest('[data-act]'); if (!b) return;
       sh.remove();
-      if (b.getAttribute('data-act') === 'go') plotAction(code, '발행 요청', true);
+      if (b.getAttribute('data-act') === 'go') plotAction(code, '발행 요청', true, tok);
     });
     document.body.appendChild(sh);
   }
@@ -2268,7 +2272,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '「이걸로 초안」을 누르면 맥이 오늘의 초안에 덧붙입니다.</div>' + cards.map(function (c) {
         var o = c.origin || {};
         var st = c.status === 'drafted' ? '✍️ 초안 씀 (' + esc(c.status_why || '') + ')' : c.status === 'drafting' ? '✍️ 초안 쓰는 중' :
-          c.status === 'tracking' ? '👀 추적 중' : '';
+          c.status === 'tracking' ? '👀 추적 중' : c.status === 'failed' ? '⚠️ 초안 실패 — ' + esc(c.status_why || '') : '';
         return '<div class="fu"><div class="top"><span class="kd ' + esc(c.kind) + '">' + esc(c.kind_label || c.kind) + '</span>' +
           '<span class="who">' + esc((c.who || []).join(' · ')) + '</span><span class="sc">점수 ' + esc(c.score) + '</span></div>' +
           (o.head ? '<div class="org">원래 글: ' + (o.url ? '<a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.head) + '</a>' : esc(o.head)) +
@@ -2458,9 +2462,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 07:00';
+    a.title = '판 10.11 07:21';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 07:00';
+    ver.textContent = '10.11 07:21';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
