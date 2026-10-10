@@ -72,6 +72,8 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 /* 대분류 — 이슈는 이틀이면 식고 기획은 안 식는다. 같은 줄에 세우면 매일
    이슈가 이기고 기획거리는 아래로 밀려 사라진다. 그래서 갈래부터 가른다. */
 .split{display:flex; gap:6px; margin:calc(var(--u)*2) 0 0}
+.split{flex-wrap:wrap}
+.split button, .split .jump{flex:1 1 30%; white-space:nowrap}
 .split button{flex:1; background:none; border:1px solid var(--line); border-radius:8px;
   color:var(--dim); font:inherit; font-size:13.5px; font-weight:700; padding:9px 0;
   cursor:pointer}
@@ -407,6 +409,47 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .sheet .pn button small{display:block; color:var(--dim); font-size:12px; margin-top:2px}
 .toast{position:fixed; left:50%; bottom:calc(30px + env(safe-area-inset-bottom)); transform:translateX(-50%); background:#262626; color:#fff;
   padding:10px 16px; border-radius:10px; font-size:13.5px; z-index:60}
+/* 편성표 · 후속 기획 · 앱 버튼 (2026-10-11) */
+.corn{border:1px solid var(--line); border-radius:10px; padding:10px 12px; margin:10px 0; font-size:13px; color:var(--muted)}
+.corn .hd{display:flex; justify-content:space-between; gap:8px; margin-bottom:8px}
+.corn .hd b{color:var(--text)}
+.corn .cs{display:flex; flex-wrap:wrap; gap:6px}
+.corn .cs span{border:1px solid var(--line); border-radius:999px; padding:3px 9px; font-size:12px; white-space:nowrap}
+.corn .cs span.ok{border-color:var(--ok, #2e9e5b); color:var(--ok, #2e9e5b)}
+.corn .cs span.need{border-color:var(--amber); color:var(--amber)}
+.corn .cs span i{font-style:normal; opacity:.7; margin-left:3px}
+.ig .crn{display:inline-block; margin-left:6px; padding:0 7px; border:1px solid var(--line); border-radius:999px; font-size:11px; color:var(--muted)}
+.ig .pubd{margin:6px 14px 0; font-size:13px; color:var(--ok, #2e9e5b)}
+.fu{border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:12px 0}
+.fu .top{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.fu .kd{font-size:11px; border-radius:999px; padding:2px 8px; border:1px solid var(--line); color:var(--muted)}
+.fu .kd.hit{border-color:var(--amber); color:var(--amber)}
+.fu .who{font-weight:800; font-size:16px}
+.fu .sc{margin-left:auto; font-size:12px; color:var(--dim)}
+.fu .org{margin-top:8px; font-size:13px; color:var(--muted); line-height:1.5}
+.fu .org a{color:inherit}
+.fu .ev{margin:6px 0 0; padding-left:16px; font-size:12.5px; color:var(--dim); line-height:1.55}
+.fu .pl{border-top:1px solid var(--hair, var(--line)); margin-top:10px; padding-top:10px}
+.fu .pl .f{font-size:11px; color:var(--amber); font-weight:700}
+.fu .pl .t{font-size:15px; font-weight:800; margin:2px 0}
+.fu .pl .a{font-size:13px; color:var(--muted); line-height:1.5}
+.fu .pl .y{font-size:12.5px; color:var(--dim); margin-top:2px}
+.fu .pl .ck{font-size:12px; color:var(--amber); margin-top:2px}
+.fu button.act{margin-top:8px; border:1px solid var(--line); background:none; color:var(--text); border-radius:8px; padding:7px 12px; font-size:13px}
+.fu button.act.main{border-color:#3897f0; color:#3897f0}
+.fu button.act.sent{opacity:.55}
+.fu .bt{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.fu .st{font-size:12px; color:var(--ok, #2e9e5b); margin-top:6px}
+.chn{margin:18px 0 6px; font-size:13px; color:var(--muted)}
+.chn summary{cursor:pointer; color:var(--dim)}
+.chn input{width:100%; box-sizing:border-box; margin:6px 0; padding:8px 10px; border:1px solid var(--line); border-radius:8px;
+  background:var(--panel); color:var(--text); font-size:14px}
+.chn button{border:1px solid var(--line); background:none; color:var(--text); border-radius:8px; padding:7px 12px; font-size:13px; margin-right:6px}
+.pubsheet .pv{display:flex; gap:6px; overflow-x:auto; padding:0 16px}
+.pubsheet .pv img{width:120px; aspect-ratio:4/5; object-fit:cover; border-radius:6px; flex:none}
+.pubsheet .cp{margin:10px 16px; max-height:30vh; overflow:auto; white-space:pre-wrap; font-size:13px; color:var(--muted);
+  border:1px solid var(--line); border-radius:8px; padding:8px 10px}
+.pubsheet .warn{margin:0 16px 6px; font-size:12.5px; color:var(--amber)}
 .drEmpty{padding:calc(var(--u)*6) 0; color:var(--dim); font-size:14px; line-height:1.6}
 .split .jump{flex:1; display:flex; align-items:center; justify-content:center;
   gap:5px; border:1px solid var(--line); border-radius:8px; color:var(--dim);
@@ -675,6 +718,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
   } catch (e) {}
 })();
 </script>
+<script>window.PLOT_BOT="plot_magazine_bot";</script>
 
 <style id="plotGap">
 html:root[data-gap="tight"]{ --u:6px }
@@ -702,6 +746,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     <button type="button" data-grp="info" aria-selected="true">이슈 · 뉴스</button>
     <button type="button" data-grp="plan" aria-selected="false">기획 소스</button>
     <button type="button" data-grp="draft" aria-selected="false" id="grpDraft">오늘의 초안</button>
+    <button type="button" data-grp="follow" aria-selected="false" id="grpFollow">후속 기획</button>
     <a class="jump" href="perf.html">PLOT 성과 <span aria-hidden="true">→</span></a>
   </div>
 
@@ -746,6 +791,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   <div id="viewNews" hidden></div>
   <div id="viewPlan" hidden></div>
   <div id="viewDraft" hidden></div>
+  <div id="viewFollow" hidden></div>
 
   <div class="note" id="note"></div>
 </div>
@@ -1718,6 +1764,16 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     document.querySelector('.tabs').hidden = (g !== 'info');
     document.getElementById('viewPlan').hidden = (g !== 'plan');
     document.getElementById('viewDraft').hidden = (g !== 'draft');
+    document.getElementById('viewFollow').hidden = (g !== 'follow');
+    document.getElementById('note').hidden = (g !== 'info');      // 후보 화면 설명은 후보 화면에서만
+    if (g === 'follow') {
+      ['viewCand', 'viewAcct', 'viewNews'].forEach(function (id) {
+        document.getElementById(id).hidden = true;
+      });
+      document.getElementById('filters').hidden = true;
+      renderFollow();
+      return;
+    }
     if (g === 'draft') {
       ['viewCand', 'viewAcct', 'viewNews'].forEach(function (id) {
         document.getElementById(id).hidden = true;
@@ -1863,7 +1919,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var sub = [it.lane, kind === 'shorts' ? '릴스' : '', ed.grade ? '편집장 ' + ed.grade : '',
       pe.score >= 2 ? '선점 기회' : pe.score < 0 ? '최근 다룸' : ''].filter(Boolean).join(' · ');
     return '<div class="igh"><img class="av" src="icon-192.png" alt=""><div class="who"><b>plot_music</b>' +
-      drTrust(x) + '<span>' + esc(sub) + '</span></div></div>';
+      cornerTag(it) + drTrust(x) + '<span>' + esc(sub) + '</span></div></div>';
   }
   function postInfo(it, x) {
     var s = it.source || {}, ed = it.editor || {};
@@ -1878,6 +1934,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       ((it.captures || []).length ? '<div style="margin-top:6px">원문 캡처 (길게 눌러 저장 → 스튜디오에 넣기)</div><div class="thumbs">' +
         it.captures.map(function (c) { return '<a href="' + esc(c.url) + '" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="' + esc(c.url) + '" alt="" style="width:108px;height:135px;object-fit:cover;border-radius:6px"></a>'; }).join('') + '</div>' : '') +
       drChecks(x) + '</details>';
+  }
+  function pubMark(it) {
+    var p = it.published || {};
+    return p.permalink ? '<div class="pubd">✓ 발행됨 · <a href="' + esc(p.permalink) + '" target="_blank" rel="noopener">인스타에서 보기</a></div>' : '';
   }
   function cardPost(it, i) {
     var cd = it.card, sl = slidesOf(it), cvs = cd.covers || [], ci = drCovers()[it.source.id] || 0;
@@ -1894,7 +1954,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글">' + IC.chat +
       '</button><button aria-label="공유" data-share="' + i + ':card">' + IC.send + '</button><span class="sp"></span><button aria-label="저장">' + IC.save + '</button></div>' +
       cov + '<div class="igc cl" data-cap><b>plot_music</b> ' + esc(cap) + '</div>' +
-      (cap.length > 60 ? '<button class="more" data-morecap>더 보기</button>' : '') + postInfo(it, cd) + '</article>';
+      (cap.length > 60 ? '<button class="more" data-morecap>더 보기</button>' : '') + pubMark(it) + postInfo(it, cd) + '</article>';
   }
   var SF_LABELS = ['출처','제공','촬영','직접촬영','사진','영상','자료','협찬','취재','디자인','그래픽','번역'];
   function sfCredit(raw) {                    // 숏폼 앱 creditLine 과 같다 (generators/credit.py credit_line)
@@ -2054,6 +2114,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if ((it.shorts || {}).form) acts.push(['shorts', '숏폼 제작으로', '영상·구간·후킹이 채워진 채 열립니다']);
     acts.push(['cap', '캡션 복사', '']);
     if ((it.source || {}).url) acts.push(['src', '원문 보기', '']);
+    acts = acts.concat(itemActs(it, kind));
     var sh = document.createElement('div'); sh.className = 'sheet';
     sh.innerHTML = '<div class="pn"><div class="hd"></div>' + acts.map(function (a) {
       return '<button data-act="' + a[0] + '">' + esc(a[1]) + (a[2] ? '<small>' + esc(a[2]) + '</small>' : '') + '</button>'; }).join('') + '</div>';
@@ -2066,9 +2127,204 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       else if (a === 'card' || a === 'shorts') drOpen(i, a);
       else if (a === 'cap') { copyText(captionOf(it, kind)); toast('캡션을 복사했습니다'); }
       else if (a === 'src') window.open(it.source.url, '_blank');
+      else runItemAct(it, a);
     });
     document.body.appendChild(sh);
   }
+  /* ── 앱 ↔ 맥 통로 (collectors/app_actions · bot/app_bridge · scripts/app_inbox) ──────────────
+     인터넷 대기열이 설정돼 있으면 거기로, 아니면 텔레그램 봇 링크(t.me/<봇>?start=<코드>)로.
+     누른 것은 이 기기에 적어 둔다 — 맥이 앱을 다시 올리기 전까지도 '보냄' 이 보이게. */
+  var CH_KEY = 'plot.inbox', ACTS_KEY = 'plot.acts';
+  function chGet() { try { return JSON.parse(localStorage.getItem(CH_KEY) || '{}') || {}; } catch (e) { return {}; } }
+  function chSet(v) { try { localStorage.setItem(CH_KEY, JSON.stringify(v || {})); } catch (e) {} }
+  function actsGet() { try { return JSON.parse(localStorage.getItem(ACTS_KEY) || '{}') || {}; } catch (e) { return {}; } }
+  function actMark(code) {
+    var a = actsGet(); a[code] = Date.now();
+    var ks = Object.keys(a).sort(function (x, y) { return a[y] - a[x]; }).slice(0, 300), o = {};
+    ks.forEach(function (k) { o[k] = a[k]; });
+    try { localStorage.setItem(ACTS_KEY, JSON.stringify(o)); } catch (e) {}
+  }
+  function actSent(prefix) {
+    var a = actsGet();
+    return Object.keys(a).some(function (k) { return k.indexOf(prefix) === 0; });
+  }
+  function botName() { return String(window.PLOT_BOT || 'plot_magazine_bot').replace(/^@/, ''); }
+  function viaTelegram(code) {
+    var u = 'https://t.me/' + encodeURIComponent(botName()) + '?start=' + encodeURIComponent(code);
+    var w = window.open(u, '_blank');
+    if (!w) location.href = u;
+  }
+  function plotAction(code, label, confirmed) {
+    actMark(code);
+    var ch = chGet();
+    if (ch.url && ch.key) {
+      fetch(ch.url.replace(/\/+$/, '') + '/a', {
+        method: 'POST', headers: { 'content-type': 'application/json', 'x-app-key': ch.key },
+        body: JSON.stringify({ code: code, confirmed: !!confirmed })
+      }).then(function (r) { return r.json(); }).then(function (d) {
+        if (d && d.ok) toast((label || '보냈습니다') + ' — 맥이 1분 안에 받습니다 (결과는 텔레그램으로)');
+        else { toast('대기열이 거절했습니다 — 텔레그램으로 보냅니다'); viaTelegram(code); }
+      }).catch(function () { toast('대기열에 못 닿았습니다 — 텔레그램으로 보냅니다'); viaTelegram(code); });
+      return;
+    }
+    toast((label || '보냅니다') + ' — 텔레그램이 열리면 보내기(시작)를 눌러 주세요');
+    viaTelegram(code);
+  }
+  function sheetOf(title, acts, onPick) {
+    var sh = document.createElement('div'); sh.className = 'sheet';
+    sh.innerHTML = '<div class="pn"><div class="hd"></div>' + (title ? '<div style="padding:0 20px 6px;font-size:13px;color:var(--dim)">' + esc(title) + '</div>' : '') +
+      acts.map(function (a) { return '<button data-act="' + esc(a[0]) + '">' + esc(a[1]) + (a[2] ? '<small>' + esc(a[2]) + '</small>' : '') + '</button>'; }).join('') + '</div>';
+    sh.addEventListener('click', function (e) {
+      if (e.target === sh) { sh.remove(); return; }
+      var b = e.target.closest('[data-act]'); if (!b) return;
+      sh.remove(); onPick(b.getAttribute('data-act'));
+    });
+    document.body.appendChild(sh);
+  }
+  var NO_WHY = [['a', '결이 안 맞음'], ['b', '사실·근거가 약함'], ['c', '이미 다룸'], ['d', '글이 별로'], ['e', '사진이 별로'], ['x', '기타']];
+  var SKIP_WHY = [['a', '이미 다룸'], ['b', '결이 안 맞음'], ['c', '근거가 약함'], ['d', '때가 지남'], ['x', '기타']];
+  function coverKey(it) {
+    var cvs = (it.card || {}).covers || [], ci = drCovers()[(it.source || {}).id] || 0;
+    return String((cvs[ci] || {}).key || 'A').toUpperCase();
+  }
+  function openPublish(it) {
+    var cd = it.card || {}, sl = slidesOf(it), cv = coverKey(it);
+    var code = 'pb-' + it.key + '-' + cv, ch = chGet();
+    var sh = document.createElement('div'); sh.className = 'sheet pubsheet';
+    sh.innerHTML = '<div class="pn"><div class="hd"></div>' +
+      '<div style="padding:0 20px 8px;font-weight:800">이대로 인스타에 올릴까요? · 표지 ' + esc(cv) + ' · ' + sl.length + '장</div>' +
+      '<div class="pv">' + sl.map(function (u) { return '<img referrerpolicy="no-referrer" src="' + esc(u) + '" alt="">'; }).join('') + '</div>' +
+      '<div class="cp">' + esc(cd.caption || '') + '</div>' +
+      ((cd.confirm || []).length ? '<div class="warn">확인 필요 ' + (cd.confirm || []).length + '건 — 편집 정보에서 먼저 보세요</div>' : '') +
+      '<button data-act="go"><b>📤 발행 확정</b><small>' + (ch.url && ch.key ? '맥이 바로 올립니다' : '텔레그램에서 한 번 더 [발행 확정] 을 눌러야 올라갑니다') + '</small></button>' +
+      '<button data-act="no">취소</button></div>';
+    sh.addEventListener('click', function (e) {
+      if (e.target === sh) { sh.remove(); return; }
+      var b = e.target.closest('[data-act]'); if (!b) return;
+      sh.remove();
+      if (b.getAttribute('data-act') === 'go') plotAction(code, '발행 요청', true);
+    });
+    document.body.appendChild(sh);
+  }
+  function itemActs(it, kind) {
+    var acts = [];
+    if (!it.key) return acts;
+    var pubd = (it.published || {}).permalink;
+    if (kind === 'card' && !pubd && slidesOf(it).length && (it.card || {}).caption) {
+      acts.push(['pub', '바로 발행', '맥이 미리보기 그대로 인스타에 올립니다 (표지 ' + coverKey(it) + ') — 확인을 한 번 더 거칩니다']);
+    }
+    acts.push(['ok', '채택 — 좋은 초안', actSent('ok-' + it.key) ? '이미 보냈습니다' : '편집장 보정에 씁니다']);
+    acts.push(['no', '버림 — 이유 고르기', actSent('no-' + it.key) ? '이미 보냈습니다' : '버린 이유는 편집장 보정에 들어갑니다']);
+    if (((it.source || {}).kind || 'mag') === 'mag') acts.push(['rd', '다시 쓰기', '맥이 이 초안만 다시 씁니다 (몇 분)']);
+    return acts;
+  }
+  function runItemAct(it, a) {
+    if (a === 'pub') { openPublish(it); return true; }
+    if (a === 'ok') { plotAction('ok-' + it.key, '채택'); return true; }
+    if (a === 'rd') { plotAction('rd-' + it.key, '다시 쓰기'); return true; }
+    if (a === 'no') {
+      sheetOf('버린 이유', NO_WHY.map(function (r) { return [r[0], r[1], '']; }), function (r) { plotAction('no-' + it.key + '-' + r, '버림'); });
+      return true;
+    }
+    return false;
+  }
+
+  /* ── 편성표 (collectors/corners) — 이번 주 코너별 발행 n/목표 ── */
+  function cornerBar() {
+    var c = DR && DR.corners;
+    if (!c || !(c.corners || []).length) return '';
+    return '<div class="corn"><div class="hd"><span><b>이번 주 편성</b> ' + esc(c.week || '') + '</span><span>발행 <b>' + esc(c.done) + '</b> / ' + esc(c.goal) +
+      ' · 남은 날 ' + esc(c.days_left) + '</span></div><div class="cs">' + c.corners.map(function (r) {
+        var cls = r.done >= r.weekly ? 'ok' : (r.need_today ? 'need' : '');
+        return '<span class="' + cls + '" title="' + esc(r.why || '') + '">' + esc(r.name) + ' ' + esc(r.done) + '/' + esc(r.weekly) +
+          (r.drafts ? '<i>초안 ' + esc(r.drafts) + '</i>' : '') + '</span>';
+      }).join('') + '</div></div>';
+  }
+  function cornerTag(it) {
+    if (!it || !it.corner_name || it.corner === 'news') return '';
+    return '<span class="crn">' + esc(it.corner_name) + (it.corner_no ? ' #' + esc(it.corner_no) : '') + '</span>';
+  }
+
+  /* ── 후속 기획 (collectors/followup_plans) ── */
+  var FU = null;
+  function renderFollow() {
+    var host = document.getElementById('viewFollow');
+    var cards = (FU && FU.cards) || [];
+    var ch = chGet();
+    var chBox = '<details class="chn"><summary>앱 버튼 통로 — ' + (ch.url && ch.key ? '인터넷 대기열 연결됨' : '텔레그램 @' + esc(botName())) + '</summary>' +
+      '<div style="margin-top:6px;line-height:1.55">버튼을 누르면 맥이 받아서 합니다. 기본은 텔레그램 봇 링크(텔레그램이 열리면 보내기). ' +
+      '인터넷 대기열(Cloudflare)을 만들었으면 아래 두 칸을 채우면 텔레그램 없이 바로 갑니다 — docs/APP_CHANNEL.md.</div>' +
+      '<input id="chUrl" placeholder="대기열 주소 (https://plot-inbox….workers.dev)" value="' + esc(ch.url || '') + '">' +
+      '<input id="chKey" placeholder="앱 키 (APP_KEY)" value="' + esc(ch.key || '') + '">' +
+      '<button data-ch="save">저장</button><button data-ch="clear">지우기 (텔레그램으로)</button></details>';
+    if (!cards.length) {
+      host.innerHTML = '<div class="drEmpty">지금은 후속 기획 카드가 없습니다.<br>PLOT 글이 평소의 2배를 넘거나, 잘 다룬 사람에게 새 소식이 붙거나, ' +
+        '레이더에 강한 이슈가 뜨면 맥이 기획안을 만들어 올립니다 (한 시간마다 확인 · 카드는 72시간).' +
+        (FU && FU.generated_at ? '<br>마지막 확인: ' + esc(FU.generated_at) : '') + '</div>' + chBox;
+      return;
+    }
+    host.innerHTML = '<div class="fsum">' + esc(FU.generated_at || '') + ' · ' + cards.length + '건 — 이어서 만들 만한 다음 편. ' +
+      '「이걸로 초안」을 누르면 맥이 오늘의 초안에 덧붙입니다.</div>' + cards.map(function (c) {
+        var o = c.origin || {};
+        var st = c.status === 'drafted' ? '✍️ 초안 씀 (' + esc(c.status_why || '') + ')' : c.status === 'drafting' ? '✍️ 초안 쓰는 중' :
+          c.status === 'tracking' ? '👀 추적 중' : '';
+        return '<div class="fu"><div class="top"><span class="kd ' + esc(c.kind) + '">' + esc(c.kind_label || c.kind) + '</span>' +
+          '<span class="who">' + esc((c.who || []).join(' · ')) + '</span><span class="sc">점수 ' + esc(c.score) + '</span></div>' +
+          (o.head ? '<div class="org">원래 글: ' + (o.url ? '<a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.head) + '</a>' : esc(o.head)) +
+            (o.mult ? ' · 평소의 <b>' + esc(o.mult) + '배</b>' : '') + (o.at ? ' · ' + esc(String(o.at).slice(5, 10)) : '') + '</div>' : '') +
+          (c.preempt && c.preempt.line ? '<div class="org">선점: ' + esc(c.preempt.line) + '</div>' : '') +
+          ((c.evidence || []).length || (c.news || []).length ? '<ul class="ev">' + (c.evidence || []).slice(0, 4).map(function (e) {
+              return '<li>' + esc(e.from || '') + (e.title ? ' — ' + esc(e.title) : '') + (e.at ? ' · ' + esc(String(e.at).slice(5, 16).replace('T', ' ')) : '') + '</li>';
+            }).join('') + (c.news || []).slice(0, 4).map(function (n) {
+              return '<li><a href="' + esc(n.link || '#') + '" target="_blank" rel="noopener">' + esc(n.title || '') + '</a> · ' + esc(n.date || '') + '</li>';
+            }).join('') + '</ul>' : '') +
+          (c.plans || []).map(function (p, k) {
+            var code = 'fu-' + c.id + '-' + k, sent = actSent(code);
+            return '<div class="pl"><div class="f">' + esc(p.format) + '</div><div class="t">' + esc(p.title) + '</div>' +
+              '<div class="a">' + esc(p.angle) + '</div>' + (p.why ? '<div class="y">왜 지금: ' + esc(p.why) + '</div>' : '') +
+              (p.check ? '<div class="ck">확인: ' + esc(p.check) + '</div>' : '') +
+              '<button class="act main' + (sent ? ' sent' : '') + '" data-fu="' + code + '">' + (sent ? '보냄 · 다시 보내기' : '이걸로 초안') + '</button></div>';
+          }).join('') +
+          '<div class="bt"><button class="act' + (actSent('tr-' + c.id) ? ' sent' : '') + '" data-fu="tr-' + c.id + '">추적 켜기</button>' +
+          '<button class="act' + (actSent('sk-' + c.id) ? ' sent' : '') + '" data-fusk="' + c.id + '">넘기기</button></div>' +
+          (st ? '<div class="st">' + st + '</div>' : '') + '</div>';
+      }).join('') + chBox;
+  }
+  document.getElementById('viewFollow').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-fu]');
+    if (b) {
+      var code = b.getAttribute('data-fu');
+      plotAction(code, code.indexOf('tr-') === 0 ? '추적 켜기' : '초안 요청');
+      b.classList.add('sent');
+      return;
+    }
+    var s = e.target.closest('[data-fusk]');
+    if (s) {
+      var id = s.getAttribute('data-fusk');
+      sheetOf('넘기는 이유', SKIP_WHY.map(function (r) { return [r[0], r[1], '']; }), function (r) {
+        plotAction('sk-' + id + '-' + r, '넘기기'); s.classList.add('sent');
+      });
+      return;
+    }
+    var c = e.target.closest('[data-ch]');
+    if (c) {
+      if (c.getAttribute('data-ch') === 'save') {
+        chSet({ url: (document.getElementById('chUrl').value || '').trim(), key: (document.getElementById('chKey').value || '').trim() });
+        toast('저장했습니다');
+      } else { chSet({}); toast('텔레그램으로 보냅니다'); }
+      renderFollow();
+    }
+  });
+  fetch('./followups.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) {
+      FU = d;
+      var n = (d && d.cards || []).length;
+      if (n) document.getElementById('grpFollow').textContent = '후속 기획 ' + n;
+      if (GRP === 'follow') renderFollow();
+    })
+    .catch(function () { FU = null; });
+
   function renderDrafts() {
     var host = document.getElementById('viewDraft');
     var mode = drView();
@@ -2083,16 +2339,16 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var sk = (DR && DR.skipped) || [];
     var lc = {};
     items.forEach(function (it) { if (it.lane) lc[it.lane] = (lc[it.lane] || 0) + 1; });
-    var lsum = ['정보', '재미', '시리즈', '클립', '재포장'].filter(function (k) { return lc[k]; }).map(function (k) { return k + ' ' + lc[k]; }).join(' · ');
+    var lsum = ['정보', '재미', '시리즈', '클립', '재포장', '오늘의 노래', '후속'].filter(function (k) { return lc[k]; }).map(function (k) { return k + ' ' + lc[k]; }).join(' · ');
     var cvSel = drCovers();
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = pubBox() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로.</div>';
+      host.innerHTML = pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
       return;
     }
-    host.innerHTML = pubBox() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + esc((x.why || '').slice(0, 40)) + ')'; }).join(' · ') : '') + '</div>' +
@@ -2201,9 +2457,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 03:45';
+    a.title = '판 10.11 06:39';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 03:45';
+    ver.textContent = '10.11 06:39';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
