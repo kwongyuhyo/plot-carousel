@@ -372,6 +372,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .ig details{margin:6px 14px 0; font-size:13px; color:var(--muted)}
 .ig details summary{cursor:pointer; color:var(--dim)}
 .ig details .chk{color:var(--amber)}
+.ig .thumbs{display:flex; gap:6px; overflow:auto; margin:6px 0}
 .sheet{position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:50; display:flex; align-items:flex-end}
 .sheet .pn{width:100%; background:var(--panel); border-radius:14px 14px 0 0; padding:10px 0 calc(16px + env(safe-area-inset-bottom))}
 .sheet .pn .hd{width:36px; height:4px; border-radius:2px; background:var(--line); margin:0 auto 10px}
@@ -1831,7 +1832,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function captionOf(it, kind) { return ((kind === 'shorts' ? it.shorts : it.card) || {}).caption || ''; }
   function postHead(it, kind, x) {
     var ed = it.editor || {};
-    var sub = [it.lane, kind === 'shorts' ? '릴스' : '', ed.grade ? '편집장 ' + ed.grade : ''].filter(Boolean).join(' · ');
+    var pe = it.preempt || {};
+    var sub = [it.lane, kind === 'shorts' ? '릴스' : '', ed.grade ? '편집장 ' + ed.grade : '',
+      pe.score >= 2 ? '선점 기회' : pe.score < 0 ? '최근 다룸' : ''].filter(Boolean).join(' · ');
     return '<div class="igh"><img class="av" src="icon-192.png" alt=""><div class="who"><b>plot_music</b>' +
       drTrust(x) + '<span>' + esc(sub) + '</span></div></div>';
   }
@@ -1842,8 +1845,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     return '<details><summary>편집 정보' + (n ? ' · 확인 ' + n : '') + '</summary>' +
       '<div>' + src + esc(s.account || s.kind || '') + (s.head ? ' — ' + esc(s.head) : '') + '</div>' +
       (ed.angle ? '<div>각도: ' + esc(ed.angle) + '</div>' : '') +
+      (it.preempt && it.preempt.line ? '<div>선점 ' + (it.preempt.score > 0 ? '+' : '') + esc(it.preempt.score) + ' — ' + esc(it.preempt.line) + '</div>' : '') +
       (it.repack ? '<div>재포장 · ' + esc(it.repack.date || '') + ' 원글 도달 ' + esc(Number(it.repack.reach || 0).toLocaleString()) + '</div>' : '') +
       (x.trust && x.trust.why ? '<div>신뢰도 근거: ' + esc(x.trust.why.join(' · ')) + '</div>' : '') +
+      ((it.captures || []).length ? '<div style="margin-top:6px">원문 캡처 (길게 눌러 저장 → 스튜디오에 넣기)</div><div class="thumbs">' +
+        it.captures.map(function (c) { return '<a href="' + esc(c.url) + '" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="' + esc(c.url) + '" alt="" style="width:108px;height:135px;object-fit:cover;border-radius:6px"></a>'; }).join('') + '</div>' : '') +
       drChecks(x) + '</details>';
   }
   function cardPost(it, i) {
@@ -2068,9 +2074,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.10 23:18';
+    a.title = '판 10.10 23:56';
     var ver = document.createElement('span');
-    ver.textContent = '10.10 23:18';
+    ver.textContent = '10.10 23:56';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

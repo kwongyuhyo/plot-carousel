@@ -173,7 +173,13 @@
     "3년",
     "집대성"
    ],
-   "lane": "재미"
+   "lane": "재미",
+   "captures": [
+    {
+     "url": "https://i.ibb.co/PGcM3NVM/741e39927f2b.jpg",
+     "from": "http://www.osen.co.kr/article/G1112890657"
+    }
+   ]
   },
   {
    "source": {
@@ -340,7 +346,8 @@
     "언오피셜보이",
     "지드래곤"
    ],
-   "lane": "정보"
+   "lane": "정보",
+   "captures": []
   },
   {
    "source": {
@@ -442,7 +449,13 @@
     "JENNIE",
     "5만"
    ],
-   "lane": "정보"
+   "lane": "정보",
+   "captures": [
+    {
+     "url": "https://i.ibb.co/35mQQnb8/74584b446db6.jpg",
+     "from": "https://news.jtbc.co.kr/article/NB12322065?influxDiv=NAVER"
+    }
+   ]
   },
   {
    "source": {
@@ -610,7 +623,13 @@
     "CORTIS",
     "6만"
    ],
-   "lane": "정보"
+   "lane": "정보",
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791643042/xihbujsyvs1hnugsal96.jpg",
+     "from": "https://mhnse.com/news/articleView.html?idxno=1584842"
+    }
+   ]
   },
   {
    "source": {
@@ -668,7 +687,8 @@
    "subjects": [
     "와쿤"
    ],
-   "lane": "클립"
+   "lane": "클립",
+   "captures": []
   },
   {
    "source": {
@@ -780,7 +800,13 @@
    "subjects": [
     "권은비"
    ],
-   "lane": "재포장"
+   "lane": "재포장",
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791643081/lklajb4evbzxemiqg9xy.jpg",
+     "from": "http://enews.imbc.com/News/RetrieveNewsInfo/520163"
+    }
+   ]
   }
  ],
  "skipped": [
