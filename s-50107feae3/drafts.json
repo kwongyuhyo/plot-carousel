@@ -1,8 +1,144 @@
 {
  "schema": 1,
  "date": "2026-10-10",
- "generated_at": "2026-10-10 15:03 KST",
+ "generated_at": "2026-10-10 18:41 KST",
  "items": [
+  {
+   "source": {
+    "id": "news:한로로:2026-10-10",
+    "account": "뉴스 급등",
+    "url": "http://www.osen.co.kr/article/G1112890657",
+    "image": null,
+    "head": "한로로 — TXT 수빈·한로로, 친구라더니 반말 어색? “존댓말 쓰는 병 있어” 폭소",
+    "multiple": 14.0,
+    "is_reel": false,
+    "kind": "news"
+   },
+   "made_at": "2026-10-10T18:41+09:00",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=jZslHAsTitA\n구간: 21:37-22:07\n곡: 물수제비\n아티스트: han roro\n피처링:\n후킹: TXT 수빈이 한로로의 곡을 듣고 먼저 DM을 보낸 3년 우정.\n출처: 목캔디의 인디밴드 라이브",
+    "caption": "투모로우바이투게더 수빈과 가수 한로로가 유튜브 채널 '집대성'에 함께 출연했다.\n둘은 3년을 친구로 지내면서도 반말을 놓지 못하는 독특한 관계다. 수빈은 이를 두고 \"존댓말 쓰는 병 있어\"라며 웃음을 터뜨렸다.\n두 사람의 인연은 음악에서 비롯됐다. 수빈은 한로로의 수록곡 '물수제비'를 듣고 감동받은 뒤 직접 DM을 보냈고, 이것이 우정의 시작이 됐다고 밝혔다.\n9일 공개된 영상에서 수빈과 한로로는 웰컴티 만들기, 슬라임 놀이 등을 함께하며 편안한 분위기를 이어갔다.\n#PLOT #수빈 #TXT #한로로 #집대성",
+    "hooks": {
+     "A": "3년을 친구라 했는데 왜 자꾸 존댓말이 나올까.",
+     "B": "TXT 수빈이 한로로의 곡을 듣고 먼저 DM을 보낸 3년 우정.",
+     "C": "\"가사가 사무쳤다\"며 눈물 흘린 팬이 직접 손을 내밀었다."
+    },
+    "issues": [],
+    "confirm": [
+     "인스타 @hanr0r0 (인물 계정 기준 — 맞는지만 확인)",
+     "원본 영상이 맞는지 확인 — 다른 후보도 실어 뒀습니다"
+    ],
+    "research": [
+     {
+      "title": "TXT 수빈·한로로, 친구라더니 반말 어색? “존댓말 쓰는 병 있어” 폭소",
+      "link": "http://www.osen.co.kr/article/G1112890657"
+     },
+     {
+      "title": "TXT 수빈, 한로로에 먼저 DM 연락..“가사듣고 울었다” 3년 우정 고백",
+      "link": "http://www.osen.co.kr/article/G1112890655"
+     },
+     {
+      "title": "[종합] \"걱정했는데 진짜 맛있다\"… '집대성' 수빈·한로로, 웰컴티부터...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242681"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=jZslHAsTitA",
+     "title": "[Full] 한로로 HANRORO / COLDPLAY 내한공연 오프닝 / 250424 @고양종합운동장",
+     "credit": "목캔디의 인디밴드 라이브",
+     "range": [
+      1296.7,
+      1326.7
+     ],
+     "alts": [
+      {
+       "url": "https://www.youtube.com/watch?v=jZslHAsTitA",
+       "title": "[Full] 한로로 HANRORO / COLDPLAY 내한공연 오프닝 / 250424 @고양종합운동장",
+       "channel": "목캔디의 인디밴드 라이브",
+       "score": 14.5
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=kzkJ8FBmKAk",
+       "title": "한로로 - 먹이사슬 콜드플레이 내한 오프닝 250425 @ 고양종합운동장  #ColdplaySeoul",
+       "channel": "ahkim's gig",
+       "score": 14.5
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=Aby2-e5YmM0",
+       "title": "[타로카드/종합운] 시기별 흐름으로 보는 ‘3년 후 당신의 모습’ (+ 미래 예측 / 년도별 흐름/ 현실 조언)",
+       "channel": "타로솔티",
+       "score": 10.0
+      }
+     ],
+     "note": "구간은 유튜브 '가장 많이 다시 본 구간' 기준"
+    }
+   },
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n음악에 감동해 먼저 건넨 메시지로 시작된 인연. TXT 수빈과 한로로는 3년을 함께하면서도 존댓말을 놓지 못한 독특한 우정을 이어가고 있다. 9일 유튜브 채널 '집대성'에서 두 사람은 솔직한 장난 속에 깊은 친분을 드러냈다.\n\n#PLOT #수빈 #TXT #한로로 #집대성\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791625451/mwzsar9v64uilst30vfk.jpg\n제목: 3년 친구인데 존댓말\n부제: TXT 수빈·한로로, '집대성'서 드러낸 독특한 우정\n출처: @hanr0r0\n\n[슬라이드]\n소스: https://i.ibb.co/rRpBCP7Q/333610658ccc.jpg\n소제목: 가사에 울었다, 먼저 DM 보낸 수빈\n본문: TXT 수빈은 한로로의 수록곡 '물수제비'를 듣고 감동해 직접 연락을 건 팬이다. 수빈은 \"가사가 사무치게 다가왔다\"며 \"너무 좋아하는 곡을 써줘서 감사하다고 먼저 DM을 보냈다\"고 밝혔다. 이렇게 시작된 인연이 어느덧 3년째 이어지고 있다.\n출처: @hanr0r0\n\n[슬라이드]\n소스: https://i.ibb.co/hSbLPxx/cbdb48121757.jpg\n소제목: 3년 친구도 존댓말\n본문: 절친임에도 서로 존댓말을 쓰는 두 사람의 독특한 우정이 화제다. 9일 공개된 '집대성' 영상에서 한로로가 \"여기 알바생으로 뽑혀도 반말해도 되냐\"고 묻자 수빈은 \"그래도 공과 사는 구분해야지\"라며 웃음을 안겼다.\n출처: @hanr0r0\n\n[슬라이드]\n소스: https://i.ibb.co/kVHgxQpY/9017518ec627.jpg\n소제목: \"재미없는 친구\"라며 웃음\n본문: 수빈은 한로로를 향해 \"착하고 좋은 친구는 맞지만 재미가 없다\"고 솔직하게 평가했다. 이에 한로로는 \"님이 재밌게 하셔야죠\"라고 받아쳤다. 두 사람의 거리낌 없는 장난 속에 진정한 친분이 묻어났다.\n출처: 톱스타뉴스\n",
+    "caption": "음악에 감동해 먼저 건넨 메시지로 시작된 인연. TXT 수빈과 한로로는 3년을 함께하면서도 존댓말을 놓지 못한 독특한 우정을 이어가고 있다. 9일 유튜브 채널 '집대성'에서 두 사람은 솔직한 장난 속에 깊은 친분을 드러냈다.\n\n#PLOT #수빈 #TXT #한로로 #집대성",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791625451/mwzsar9v64uilst30vfk.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/776985361_18372081433300688_8100310902428263670_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=LJAY9oyIPGgQ7kNvwGwizgx&_nc_oc=AdolrPv-5EO4J_-afGRPfqiV_9WFiAEgYgqnpNftWGE2W6k7HHCjusLo3K6SVhPdebM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=cx9TicZw_owuomEnkeePUg&oh=00_AQOlCQvq_CEX9T1k_PXggX0szQMje0V4A3lPb15jhDgv5Q&oe=6ACFEEF7",
+      "post": "https://www.instagram.com/p/DcQ8mOiTQ3f/"
+     },
+     {
+      "url": "https://i.ibb.co/rRpBCP7Q/333610658ccc.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772440614_18370084645300688_9158151031758300946_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=LLKtAqGs0FIQ7kNvwH5azjs&_nc_oc=Ador7ghrURsp2sIDXkrI0QFsQFj2zYQyA5BdjuqebH3rVaOcs8b3rsXiOryNoZtuHLg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=cx9TicZw_owuomEnkeePUg&oh=00_AQPraqBR8Zb5RLu11giJXVozVpeD31l7cWzOvBiJFnokmw&oe=6ACFCED4",
+      "post": "https://www.instagram.com/p/Db3M14iGabC/"
+     },
+     {
+      "url": "https://i.ibb.co/hSbLPxx/cbdb48121757.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749714052_18365483005300688_5249689812497286898_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aUQI_uO2uOwQ7kNvwEaL6s3&_nc_oc=AdqEtgq4GxlXVIf8xVj_fHhIaP7AOiMDhSiyh5NxKJoc6oATJ_c05gk6uQ3qmh84UiY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=cx9TicZw_owuomEnkeePUg&oh=00_AQP_71S41UdIxzpYzUsI_k7vF5Ty9W245yxwqdC1PLJ7vg&oe=6ACFDAD4",
+      "post": "https://www.instagram.com/p/Da2De0OGcm_/"
+     },
+     {
+      "url": "https://i.ibb.co/kVHgxQpY/9017518ec627.jpg",
+      "credit": "topstarnews.net",
+      "from": "https://cdn.topstarnews.net/news/photo/202610/16242681_2050180_933_crop.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "facts_fixed": [
+     "[카드1] 인용: \"너무 좋아하는 곡을 써줘서 감사하다고 먼저 DM을 보냈다\"는 수빈의 발언인데, 근거에는 \"너무 좋아하는 곡을 써줘서 감사하다고 먼저 DM을 보냈다\"고 되어 있음. 문제없음.",
+     "[카드3] 왜곡: 초안은 한로로가 \"여기 알바생으로 뽑혀도 반말해도 되냐\"고 먼저 물었다는 순서인데, 근거에서는 \"두 사람은 게임을 진행하던 중 서로 반말을 써도 되는지 이야기를 나눴다\"고 되어 있음. 또한 근거의 다른 기사에서는 한로로가 \"내가 여기 알바생으로 뽑혀도 반말해도 되냐\"고 물은 후 수빈이 \"그래도 공과 사는 구분해야지\"라고 선을 그었다고 되어 있어 초안의 표현은 정확함."
+    ],
+    "issues": [],
+    "confirm": [
+     "인스타 @hanr0r0 (인물 계정 기준 — 맞는지만 확인)",
+     "근거 기사: OSEN · 톱스타뉴스"
+    ],
+    "research": [
+     {
+      "title": "TXT 수빈·한로로, 친구라더니 반말 어색? “존댓말 쓰는 병 있어” 폭소",
+      "link": "http://www.osen.co.kr/article/G1112890657"
+     },
+     {
+      "title": "TXT 수빈, 한로로에 먼저 DM 연락..“가사듣고 울었다” 3년 우정 고백",
+      "link": "http://www.osen.co.kr/article/G1112890655"
+     },
+     {
+      "title": "[종합] \"걱정했는데 진짜 맛있다\"… '집대성' 수빈·한로로, 웰컴티부터...",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16242681"
+     }
+    ]
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "인물해부",
+    "angle": "한로로·수빈의 '집대성' 반말 어색 장면과 \"가사 듣고 울었다\" DM으로 시작된 3년 우정",
+    "why": "한로로는 PLOT에서 이미 잘 된 인물이고, 예능 장면에 관계 서사까지 붙는다"
+   },
+   "subjects": [
+    "한로로",
+    "3년",
+    "집대성"
+   ],
+   "lane": "재미"
+  },
   {
    "source": {
     "id": "DeRPoUDTDX-",
@@ -14,21 +150,21 @@
     "is_reel": true,
     "kind": "mag"
    },
-   "made_at": "2026-10-10T15:03+09:00",
+   "made_at": "2026-10-10T18:41+09:00",
    "shorts": {
-    "form": "[영상]\n카테고리: Feature\nURL:\n구간:\n곡:\n아티스트:\n피처링:\n후킹: 지드래곤이 한국 힙합의 새로운 레퍼런스가 되고 있다.\n출처:",
-    "caption": "힙합은 과거의 전설들을 오마주하는 문화가 강한 장르다. 미국에서 제이콜이 비기와 나스를, 켄드릭 라마가 투팍을 소환해온 것처럼, 한국에서도 지드래곤이 그 위치에 놓이기 시작했다. 빅뱅의 전성기를 어린 시절 통과한 래퍼들이 씬의 전면에서 활동할 나이가 되면서 자연스럽게 그의 음악과 스타일을 레퍼런스로 삼는 경우가 많아졌다. 언오피셜보이 같은 래퍼들이 이를 자기 방식으로 풀어내고 있다.\n#PLOT #지드래곤 #힙합 #레퍼런스 #언오피셜보이",
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=TS5f7Y9h4II\n구간: \n곡:\n아티스트:\n피처링:\n후킹: 빅뱅의 전성기를 거쳐간 세대의 래퍼들이 자신이 자란 시대의 아이콘을 음악과 스타일에 담아내고 있다.\n출처: KBS강원",
+    "caption": "미국 힙합에서 제이콜이 나스를, 켄드릭 라마가 투팍을 소환해왔듯, 한국 씬에서도 이제 그 위치에 지드래곤이 놓이고 있다. 빅뱅의 전성기를 어린 시절 거친 래퍼들이 씬의 전면에서 활동할 나이가 되면서, 자연스럽게 그의 음악과 스타일을 레퍼런스로 삼는 경우가 많아졌다. 언오피셜보이는 비교적 일찍부터 지드래곤의 영향력을 자기 방식으로 풀어온 래퍼 중 한 명이다.\n#PLOT #지드래곤 #힙합 #레퍼런스 #언오피셜보이",
     "hooks": {
-     "A": "힙합이 전설을 소환하는 방식을 알고 싶다면 지금의 한국 씬을 봐라.",
-     "B": "지드래곤이 한국 힙합의 새로운 레퍼런스가 되고 있다.",
-     "C": "한 세대가 자란 아이콘을 다음 세대가 자신의 언어로 변주한다."
+     "A": "힙합이 전설을 오마주하는 방식을 봤다면, 한국 래퍼들이 지드래곤을 레퍼런스로 삼는 움직임도 자연스러운 흐름이다.",
+     "B": "빅뱅의 전성기를 거쳐간 세대의 래퍼들이 자신이 자란 시대의 아이콘을 음악과 스타일에 담아내고 있다.",
+     "C": "지드래곤이 한국 힙합의 계보 안에서 오마주의 대상으로 자리 잡기 시작했다."
     },
     "issues": [
      "양식 파싱 실패: 곡 제목이 없습니다."
     ],
     "confirm": [
      "기사가 없어 @hiptake_ 원문만 근거로 썼습니다 — 원문에 없는 말이 없는지, 사실 한 번 더 확인",
-     "원본 영상을 못 찾았습니다 — URL 을 직접 넣어 주세요",
+     "구간 정보가 없어 비웠습니다 — 앱 「구간 고르기」에서 잡아 주세요",
      "아티스트 인스타 핸들 (@______)",
      "곡 제목 — 확인된 기사에 없어 비웠습니다"
     ],
@@ -39,42 +175,37 @@
      }
     ],
     "video": {
-     "url": null,
-     "title": null,
-     "credit": null,
+     "url": "https://www.youtube.com/watch?v=TS5f7Y9h4II",
+     "title": "[문화가 톡톡] ‘오마주 밀레·오마주 박수근’ 전시회 한창 / KBS  2021.12.23.",
+     "credit": "KBS강원",
      "range": null,
-     "alts": [],
-     "note": "원본 영상을 못 찾았습니다 — URL 을 직접 넣어 주세요"
+     "alts": [
+      {
+       "url": "https://www.youtube.com/watch?v=TS5f7Y9h4II",
+       "title": "[문화가 톡톡] ‘오마주 밀레·오마주 박수근’ 전시회 한창 / KBS  2021.12.23.",
+       "channel": "KBS강원",
+       "score": 3.0
+      }
+     ],
+     "note": "구간 정보가 없어 비웠습니다 — 앱 「구간 고르기」에서 잡아 주세요"
     }
    },
    "card": {
-    "form": "[카테고리]\nFeature\n\n[캡션]\n힙합의 세대는 선대를 기억하는 방식으로 진행된다. 미국에서 그래왔듯 한국 래퍼들도 이제 지드래곤을 음악의 자산으로 소환하고 있다. 과거의 아이콘이 새로운 언어로 부활하는 지점에서 장르의 시간이 흐른다.\n#PLOT #지드래곤 #한국힙합 #오마주 #언오피셜보이\n\n[커버]\n소스: https://i.ibb.co/cc8S2wcv/e47ce4e1f369.jpg\n제목: 지드래곤 키드의 시대\n부제: 한국 힙합이 새로운 세대의 아이콘을 오마주하기 시작했다\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/cS2qJHM2/06267e570033.jpg\n소제목: 힙합의 오래된 문법\n본문: 힙합은 과거의 전설을 오마주하는 문화가 강한 장르다. 미국에서 제이콜이 비기와 나스를, 켄드릭 라마가 투팍을, 에이셉 라키가 빅 대디 케인, DMX, 캠론 등을 음악과 비주얼로 소환해온 것처럼, 선대 아이콘을 새로운 세대의 언어로 변주하는 것은 힙합의 관습이다.\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/Wvc0v7Tx/fa5b59c0de50.jpg\n소제목: 한국 힙합의 새로운 위치\n본문: 한국에서 지드래곤이 그 자리에 놓이기 시작했다. 빅뱅의 전성기를 어린 시절 통과한 래퍼들이 이제 씬의 전면에서 활동하는 나이가 되면서, 자연스럽게 지드래곤의 음악과 스타일을 레퍼런스로 삼는 경우가 많아졌다.\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/cS2qJHM2/06267e570033.jpg\n소제목: 언오피셜보이의 해석\n본문: 그중 언오피셜보이는 비교적 일찍부터 지드래곤의 영향력을 자기 방식으로 풀어온 래퍼다. 특히 평단의 호평을 받았던 작업들에서 그 맥락이 드러난다.\n출처:\n",
-    "caption": "힙합의 세대는 선대를 기억하는 방식으로 진행된다. 미국에서 그래왔듯 한국 래퍼들도 이제 지드래곤을 음악의 자산으로 소환하고 있다. 과거의 아이콘이 새로운 언어로 부활하는 지점에서 장르의 시간이 흐른다.\n#PLOT #지드래곤 #한국힙합 #오마주 #언오피셜보이",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n미국 힙합의 전통적 관례가 한국 씬에서도 작동하고 있다. 지드래곤을 음악적 선구자로 삼는 래퍼들이 주류 무대에 진출하면서, 레퍼런스와 변주의 계보가 선명해지고 있는 상황이다. 2026년 10월 @hiptake_ 매거진 보도.\n#PLOT #지드래곤 #한국힙합 #언오피셜보이 #오마주\n\n[커버]\n소스: \n제목: 지드래곤 키드의 시대\n부제: 힙합의 오마주 문법이 한국에서 작동하기 시작했다\n출처: \n\n[슬라이드]\n소스: \n소제목: 미국 힙합의 오래된 문법\n본문: 힙합은 과거의 전설을 오마주하는 문화가 강한 장르다. 제이콜은 비기와 나스를, 켄드릭 라마는 투팍을, 에이셉 라키는 빅 대디 케인, DMX, 캠론 등을 자신의 음악과 비주얼 안에서 소환해왔다. 자신이 듣고 자란 세대의 아이콘을 새로운 세대의 언어로 변주하는 것 자체가 힙합의 오래된 문법 중 하나다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 한국에서의 재현\n본문: 한국에서는 이제 그 위치에 지드래곤이 놓이기 시작했다. 빅뱅의 전성기를 어린 시절 통과한 래퍼들이 씬의 전면에서 활동할 나이가 됐고, 자연스럽게 그의 음악과 스타일을 레퍼런스로 삼는 경우가 많아졌다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 언오피셜보이의 계보\n본문: 언오피셜보이는 비교적 일찍부터 지드래곤의 영향력을 자기 방식으로 풀어온 래퍼다. 평단의 호평을 받았던 작업들에서 이러한 레퍼런스가 두드러진다.\n출처:\n",
+    "caption": "미국 힙합의 전통적 관례가 한국 씬에서도 작동하고 있다. 지드래곤을 음악적 선구자로 삼는 래퍼들이 주류 무대에 진출하면서, 레퍼런스와 변주의 계보가 선명해지고 있는 상황이다. 2026년 10월 @hiptake_ 매거진 보도.\n#PLOT #지드래곤 #한국힙합 #언오피셜보이 #오마주",
     "photos": [
-     {
-      "url": "https://i.ibb.co/cc8S2wcv/e47ce4e1f369.jpg",
-      "credit": "신뢰"
-     },
-     {
-      "url": "https://i.ibb.co/cS2qJHM2/06267e570033.jpg",
-      "credit": "신뢰"
-     },
-     {
-      "url": "https://i.ibb.co/Wvc0v7Tx/fa5b59c0de50.jpg",
-      "credit": "신뢰"
-     },
-     {
-      "url": "https://i.ibb.co/cS2qJHM2/06267e570033.jpg",
-      "credit": "신뢰"
-     }
+     null,
+     null,
+     null,
+     null
     ],
     "shape": "맥락",
     "facts_fixed": [],
     "issues": [],
     "confirm": [
      "기사가 없어 @hiptake_ 원문만 근거로 썼습니다 — 원문에 없는 말이 없는지, 사실 한 번 더 확인",
-     "아티스트 인스타 핸들 (@______)",
-     "사진 출처가 빈 장이 있습니다 — 보도 사진이면 매체 이름을 적어 주세요"
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요",
+     "아티스트 인스타 핸들 (@______)"
     ],
     "research": [
      {
@@ -86,87 +217,15 @@
    "editor": {
     "grade": "A",
     "kind": "인물해부",
-    "angle": "지드래곤을 레퍼런스로 삼은 국힙 래퍼들(언오피셜보이 등)의 '지드래곤 키드' 계보 정리",
-    "why": "국힙 씬 안쪽 이야기에 사람 중심 정리라 PLOT의 인물해부·감다살 각도와 맞지만, 힙합 매체 글이 원문이라 PLOT만의 정리·해석을 더해야 한다."
+    "angle": "지드래곤을 레퍼런스로 삼은 래퍼들(언오피셜보이 등)을 '지드래곤 키드' 계보로 정리",
+    "why": "국힙 씬 안쪽 이야기이고 래퍼별로 인물 정리가 서지만, 힙테이크 글을 그대로 옮기면 B로 떨어진다"
    },
    "subjects": [
-    "힙합",
     "오마주하",
-    "문화"
-   ]
-  },
-  {
-   "source": {
-    "id": "news:한로로:2026-10-10",
-    "account": "뉴스 급등",
-    "url": "http://www.osen.co.kr/article/G1112890657",
-    "image": null,
-    "head": "TXT 수빈과 싱어송라이터 한로로가 3년 우정을 공개하며 수빈이 먼저 DM을 보낸 인연과 가사 듣고 울었다는 고백을 나눴다.",
-    "multiple": 14.0,
-    "is_reel": false,
-    "kind": "news"
-   },
-   "made_at": "2026-10-10T15:03+09:00",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n수빈이 한로로 음악에 눈물 흘린 사연과 먼저 보낸 DM으로 시작된 3년 우정. 9일 유튜브 '집대성'에서 공개된 웹예능에서 동갑내기 친구이면서도 존댓말을 놓지 못하는 독특한 케미를 드러냈다.\n#PLOT #수빈 #한로로 #TXT #집대성\n\n[커버]\n소스: https://i.ibb.co/0VFS4hW3/7d52710b2e82.jpg\n제목: 수빈, 한로로 가사에 눈물\n부제: 3년 우정의 시작은 먼저 보낸 DM\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/JwvZ1W3v/1e0008434d6d.jpg\n소제목: 음악에 감동해 먼저 연락\n본문: TXT 수빈은 싱어송라이터 한로로가 작사·작곡한 '물수제비'를 듣고 눈물을 흘렸다. 가사가 사무치게 다가왔던 수빈은 직접 DM을 보내 \"너무 좋아하는 곡을 써줘서 감사하다\"고 인사했다. 이 진심 어린 메시지가 두 사람을 잇는 인연이 되었다.\n출처: TV리포트\n\n[슬라이드]\n소스: https://i.ibb.co/HDN6FgK3/83af69d5688b.jpg\n소제목: 동갑내기 00년생 친구\n본문: 9일 유튜브 채널 '집대성'에 공개된 웹예능에서 수빈은 한로로와 함께 출연했다. 두 사람은 등장부터 편한 분위기를 드러냈고, 수빈은 \"처음 보는 분들은 우리가 무례하다고 생각할 수도 있는데, 사실 저희가 00년생 친구 사이\"라고 설명했다. 어느덧 3년째 이어온 우정이다.\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/JwvZ1W3v/1e0008434d6d.jpg\n소제목: 3년 친구인데 존댓말\n본문: 친구 사이임에도 두 사람은 서로 존댓말을 놓지 못한다. 수빈은 \"존댓말 쓰는 병이 있어\"라며 웃음을 자아냈다. 한로로는 \"가까워지면 말이 많아지는 스타일\"이라며 자신의 성격을 설명했고, 수빈은 한로로의 \"고급스러운 어휘\"에 감탄했다.\n출처: TV리포트\n",
-    "caption": "수빈이 한로로 음악에 눈물 흘린 사연과 먼저 보낸 DM으로 시작된 3년 우정. 9일 유튜브 '집대성'에서 공개된 웹예능에서 동갑내기 친구이면서도 존댓말을 놓지 못하는 독특한 케미를 드러냈다.\n#PLOT #수빈 #한로로 #TXT #집대성",
-    "photos": [
-     {
-      "url": "https://i.ibb.co/0VFS4hW3/7d52710b2e82.jpg",
-      "credit": "신뢰"
-     },
-     {
-      "url": "https://i.ibb.co/JwvZ1W3v/1e0008434d6d.jpg",
-      "credit": "tvreport.co.kr",
-      "from": "https://d3h3k01ny8mjr.cloudfront.net/tv-report/2026/10/10003216/CP-2022-0227-40278339-thumb.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/HDN6FgK3/83af69d5688b.jpg",
-      "credit": "mhnse.com",
-      "from": "https://cdn.mhnse.com/mhnsports/2026/10/09190750/thumb_ccms_70164.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/JwvZ1W3v/1e0008434d6d.jpg",
-      "credit": "tvreport.co.kr",
-      "from": "https://d3h3k01ny8mjr.cloudfront.net/tv-report/2026/10/10003216/CP-2022-0227-40278339-thumb.jpg"
-     }
-    ],
-    "shape": "맥락",
-    "facts_fixed": [
-     "[카드1] 지어냄: \"물수제비\"는 한로로가 \"작사에 참여한\" 곡이지 \"작사한\" 곡이 아님. 근거에는 \"한로로가 작사·작곡한 투바투의 수록곡\"이라 명시되어 있음."
-    ],
-    "issues": [],
-    "confirm": [
-     "인스타 @hanr0r0 (인물 계정 기준 — 맞는지만 확인)",
-     "근거 기사: OSEN · TV리포트",
-     "사진 출처가 빈 장이 있습니다 — 보도 사진이면 매체 이름을 적어 주세요"
-    ],
-    "research": [
-     {
-      "title": "TXT 수빈, 한로로에 먼저 DM 연락..“가사듣고 울었다” 3년 우정 고백",
-      "link": "http://www.osen.co.kr/article/G1112890655"
-     },
-     {
-      "title": "TXT 수빈, \"한로로가 쓴 노래 듣고 눈물\"…먼저 DM 보내 맺은 3년 우정 [...",
-      "link": "https://www.tvreport.co.kr/breaking/article/1081934/"
-     },
-     {
-      "title": "수빈 “한로로 가사에 울었다”…먼저 DM 보내 시작된 특별한 인연",
-      "link": "https://mhnse.com/news/articleView.html?idxno=1583525"
-     }
-    ]
-   },
-   "editor": {
-    "grade": "A",
-    "kind": "인물해부",
-    "angle": "수빈×한로로 3년 우정 정리: 수빈이 먼저 보낸 DM, 가사 듣고 울었다는 고백, 반말 어색한 존댓말 케미",
-    "why": "최근 잘 된 한로로 + 예능 '집대성'으로 뜨는 두 사람의 관계 서사라 사람 이야기 요건을 충족함"
-   },
-   "subjects": [
-    "한로로",
-    "수빈",
-    "3년"
-   ]
+    "문화",
+    "제이콜"
+   ],
+   "lane": "정보"
   },
   {
    "source": {
@@ -174,34 +233,354 @@
     "account": "뉴스 급등",
     "url": "https://www.newsis.com/view/NISX20261008_0003819840",
     "image": null,
-    "head": "제니 (JENNIE) — 위켄드 노래 따라 부르던 연습생 제니, 우상과 함께 선 5만 스타디움(종...",
+    "head": "연습생 시절 객석에서 따라 부르던 위켄드를 8년 만에 내한 공연에서 협업 게스트로 무대에 올랐다.",
     "multiple": 2.0,
     "is_reel": false,
     "kind": "news"
    },
-   "made_at": "2026-10-10T15:03+09:00",
+   "made_at": "2026-10-10T18:41+09:00",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n8년 전 객석의 팬이었던 제니가 이번엔 무대 위 협업자로 만난 위켄드. 2026년 10월 8일 경기 고양종합운동장에서 열린 현대카드 슈퍼콘서트 28 위켄드 2회차 공연에서 '원 오브 더 걸스'를 함께 불렀다. 글로벌 팝스타들의 만남이 만든 현장의 순간들.\n#PLOT #제니 #위켄드 #협업 #내한공연 #고양종합운동장\n\n[커버]\n소스: https://i.ibb.co/TMNfshwg/f8122e1fbf61.jpg\n제목: 8년 만의 재회\n부제: 위켄드 객석 팬에서 무대 협업자로, 제니의 변화\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/1YhkY8JF/524c73398392.jpg\n소제목: 객석에서 무대로\n본문: 2018년 위켄드의 첫 내한공연에서 객석에 앉아 공연을 지켜봤던 제니. 8년이 흐른 2026년 10월 8일, 고양종합운동장에서 열린 위켄드 내한공연 둘째 날 무대에 깜짝 게스트로 올랐다. 풀뱅 헤어스타일에 감각적인 착장으로 등장한 제니는 5만여 관객 앞에서 위켄드와 협업했다.\n출처: 뉴시스\n\n[슬라이드]\n소스: https://i.ibb.co/1YhkY8JF/524c73398392.jpg\n소제목: '원 오브 더 걸스' 함께하다\n본문: 제니와 위켄드가 부른 곡은 '원 오브 더 걸스'. 2023년 미국 HBO 시리즈 '디 아이돌'의 OST로, 제니의 연기 데뷔작 사운드트랙이기도 하다. 제니·위켄드·릴리 로즈 뎁이 함께 협업한 이 곡은 미국 빌보드 '핫 100'에 20주간 머물며 글로벌 흥행을 기록했다.\n출처: 뉴시스\n\n[슬라이드]\n소스: https://i.ibb.co/1YhkY8JF/524c73398392.jpg\n소제목: 무대 후 객석으로\n본문: 공연을 마친 뒤 제니와 위켄드는 따뜻한 포옹을 나눴다. 이후 제니는 객석에서 위켄드의 나머지 공연을 함께 지켜봤다. 팬에서 협업 가수로, 그리고 다시 공연의 감상자로 돌아간 제니의 하루였다.\n출처: 뉴시스\n",
-    "caption": "8년 전 객석의 팬이었던 제니가 이번엔 무대 위 협업자로 만난 위켄드. 2026년 10월 8일 경기 고양종합운동장에서 열린 현대카드 슈퍼콘서트 28 위켄드 2회차 공연에서 '원 오브 더 걸스'를 함께 불렀다. 글로벌 팝스타들의 만남이 만든 현장의 순간들.\n#PLOT #제니 #위켄드 #협업 #내한공연 #고양종합운동장",
+    "form": "[카테고리]\nNews\n\n[캡션]\n객석에서 관람하던 제니가 8년 만에 같은 무대에 섰다. 10월 8일 고양종합운동장에서 열린 위켄드 내한공연 2회차 무대에 깜짝 게스트로 나타나 '원 오브 더 걸스'를 협업했다. 2023년 HBO 시리즈 '디 아이돌'의 OST를 5만 관객 앞에서 다시 함께 불렀다.\n#PLOT #제니 #위켄드 #원오브더걸스 #현대카드슈퍼콘서트\n\n[커버]\n소스: https://i.ibb.co/jvHjbdhs/85c9fdfa6cc1.jpg\n제목: 8년 만에 같은 무대\n부제: 객석의 팬에서 협업 아티스트로, 제니와 위켄드의 재만남\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/wrzSJwTx/8a13eb1ac2fc.jpg\n소제목: 2018년 객석에서 2026년 무대로\n본문: 2018년 고척스카이돔에서 열린 위켄드의 첫 내한공연. 당시 연습생이던 제니는 객석에서 무대를 관람했다. 8년이 지난 지금, 제니는 같은 아티스트의 무대에 협업 게스트로 올랐다. 10월 8일 경기 고양종합운동장 주경기장에서 열린 위켄드의 내한공연 2회차 무대였다.\n출처: 뉴시스\n\n[슬라이드]\n소스: https://i.ibb.co/wrzSJwTx/8a13eb1ac2fc.jpg\n소제목: '원 오브 더 걸스' 함께 부르다\n본문: 제니와 위켄드가 함께 부른 곡은 '원 오브 더 걸스(One Of the Girls)'. 2023년 미국 HBO 시리즈 '디 아이돌(The Idol)'의 OST로, 제니와 위켄드, 릴리 로즈 뎁이 협업한 곡이다. 미국 빌보드 메인 싱글차트 '핫 100'에 20주간 올랐던 글로벌 히트곡이다.\n출처: 뉴시스\n\n[슬라이드]\n소스: https://i.ibb.co/wrzSJwTx/8a13eb1ac2fc.jpg\n소제목: 5만 관객 앞에서의 재만남\n본문: 이날 제니는 보랏빛 스윔수트와 풀뱅 헤어스타일로 무대에 올랐다. 노래 후 위켄드와 뜨거운 포옹을 나눴고, 퇴장할 때 \"주말오빠 즐거운 공연해요\"라고 한국말로 인사했다. 이후 객석에서 위켄드의 공연을 지켜봤다고 전해졌다.\n출처: 뉴시스\n",
+    "caption": "객석에서 관람하던 제니가 8년 만에 같은 무대에 섰다. 10월 8일 고양종합운동장에서 열린 위켄드 내한공연 2회차 무대에 깜짝 게스트로 나타나 '원 오브 더 걸스'를 협업했다. 2023년 HBO 시리즈 '디 아이돌'의 OST를 5만 관객 앞에서 다시 함께 불렀다.\n#PLOT #제니 #위켄드 #원오브더걸스 #현대카드슈퍼콘서트",
     "photos": [
      {
-      "url": "https://i.ibb.co/TMNfshwg/f8122e1fbf61.jpg",
+      "url": "https://i.ibb.co/jvHjbdhs/85c9fdfa6cc1.jpg",
       "credit": "신뢰"
      },
      {
-      "url": "https://i.ibb.co/1YhkY8JF/524c73398392.jpg",
+      "url": "https://i.ibb.co/wrzSJwTx/8a13eb1ac2fc.jpg",
       "credit": "newsis.com",
       "from": "https://img1.newsis.com/2026/09/10/NISI20260910_0002235754_web.jpg"
      },
      {
-      "url": "https://i.ibb.co/1YhkY8JF/524c73398392.jpg",
+      "url": "https://i.ibb.co/wrzSJwTx/8a13eb1ac2fc.jpg",
       "credit": "newsis.com",
       "from": "https://img1.newsis.com/2026/09/10/NISI20260910_0002235754_web.jpg"
      },
      {
-      "url": "https://i.ibb.co/1YhkY8JF/524c73398392.jpg",
+      "url": "https://i.ibb.co/wrzSJwTx/8a13eb1ac2fc.jpg",
       "credit": "newsis.com",
       "from": "https://img1.newsis.com/2026/09/10/NISI20260910_0002235754_web.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "facts_fixed": [
+     "[카드1] 왜곡: \"당시 연습생이던 제니는 객석에서 그의 노래를 따라 부르며 응원했다\"고 했으나, 근거에는 \"객석에서 무대를 관람했던\" 것만 명시되어 있고 \"노래를 따라 부르며 응원했다\"는 구체적 행동은 없음. 다만 제목에서는 \"위켄드 노래 따라 부르던 연습생 제니\"라고 표현한 기사가 있으나, 본문의 초안에서는 근거 없이 구체화함."
+    ],
+    "issues": [],
+    "confirm": [
+     "아티스트 인스타 핸들 (@______)",
+     "근거 기사: JTBC · OSEN",
+     "사진 출처가 빈 장이 있습니다 — 보도 사진이면 매체 이름을 적어 주세요"
+    ],
+    "research": [
+     {
+      "title": "[단독] 제니, 위켄드 내한 공연 깜짝 게스트 선다",
+      "link": "https://news.jtbc.co.kr/article/NB12322065?influxDiv=NAVER"
+     },
+     {
+      "title": "제니, 파격의상 입고 위켄드 내한 공연 게스트 깜짝 등장 “주말오빠”...",
+      "link": "http://www.osen.co.kr/article/G1112890312"
+     },
+     {
+      "title": "제니, 위켄드 내한 공연 깜짝 등장…\"오빠 즐거운 공연해요\"",
+      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3717280"
+     }
+    ]
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "인물해부",
+    "angle": "연습생 시절 객석에서 위켄드를 따라 부르던 제니가 8년 만에 같은 무대에 선 서사",
+    "why": "우상과의 재회라는 인물 서사와 드라큘라 19주 차트 맥락이 붙어 있지만, 내한 공연 소식이라 공연 공지로 흐르면 약해진다"
+   },
+   "subjects": [
+    "제니",
+    "JENNIE",
+    "5만"
+   ],
+   "lane": "정보"
+  },
+  {
+   "source": {
+    "id": "news:CORTIS (코르티스):2026-10-10",
+    "account": "뉴스 급등",
+    "url": "https://mhnse.com/news/articleView.html?idxno=1584842",
+    "image": null,
+    "head": "CORTIS (코르티스) — 기사 9건 (평소 1)",
+    "multiple": 9.0,
+    "is_reel": false,
+    "kind": "news"
+   },
+   "made_at": "2026-10-10T18:41+09:00",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=OPPowVJ7B6c\n구간: 1:25-1:55\n곡:\n아티스트: CORTIS\n피처링:\n후킹: 코르티스가 싱가포르 F1 그랑프리 파당 스테이지에서 6만 관객 앞 15곡을 선보였다.\n출처: ASIA ARTIST AWARDS 스타뉴스",
+    "caption": "그룹 코르티스가 싱가포르 F1 그랑프리 특별공연에서 'TNT', 'FaSHioN', 'REDRED' 등 15곡을 가창했다. 주최 측 추산 6만 명이 모인 마리나 베이 시가지 서킷 메인 무대에서 50분간 무대를 장악했으며, 'YOUNGCREATORCREW' 무렵엔 관객석으로 내려가 직접 소통했다. 멤버들은 \"함께 해주셔서 감사하다\"고 인사했다. NBA·레드불에 이어 F1까지, 국내외 메이저 무대로의 행보를 이어가는 중이다.\n#PLOT #코르티스 #F1싱가포르그랑프리 #파당스테이지 #글로벌무대",
+    "hooks": {
+     "A": "3주 만에 일본 페스티벌부터 F1 무대까지, 코르티스의 행보는 멈추지 않는다.",
+     "B": "코르티스가 싱가포르 F1 그랑프리 파당 스테이지에서 6만 관객 앞 15곡을 선보였다.",
+     "C": "마리나 베이의 밤, 글로벌 아티스트의 50분이 한 도시를 물들였다."
+    },
+    "issues": [
+     "양식 파싱 실패: 곡 제목이 없습니다."
+    ],
+    "confirm": [
+     "인스타 @cortis (인물 계정 기준 — 맞는지만 확인)",
+     "곡 제목 — 확인된 기사에 없어 비웠습니다",
+     "원본 영상이 맞는지 확인 — 다른 후보도 실어 뒀습니다"
+    ],
+    "research": [
+     {
+      "title": "코르티스, 6만 관객 앞 15곡 열창… \"함께 해주셔서 감사하다\"",
+      "link": "https://mhnse.com/news/articleView.html?idxno=1584842"
+     },
+     {
+      "title": "[현장영상] \"대세는 바빠\"...코르티스, 3주 만에 입국",
+      "link": "http://www.dispatch.co.kr/2349095"
+     },
+     {
+      "title": "코르티스, NBA·레드불 이어 F1 무대까지..“폭발적 에너지 쏟아낼 것”",
+      "link": "http://www.breaknews.com/1241762"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=OPPowVJ7B6c",
+     "title": "[#AAA2025] CORTIS(코르티스) -‘GO!+What You Want’ Broadcast Stage | Official Video",
+     "credit": "ASIA ARTIST AWARDS 스타뉴스",
+     "range": [
+      85.1,
+      115.1
+     ],
+     "alts": [
+      {
+       "url": "https://www.youtube.com/watch?v=OPPowVJ7B6c",
+       "title": "[#AAA2025] CORTIS(코르티스) -‘GO!+What You Want’ Broadcast Stage | Official Video",
+       "channel": "ASIA ARTIST AWARDS 스타뉴스",
+       "score": 7.0
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=lXfS-GcRgtc",
+       "title": "'FaSHioN' Official MV Behind | CORTIS (코르티스)",
+       "channel": "CORTIS",
+       "score": 7.0
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=Wk8QzgJ6sFg",
+       "title": "‘TNT’ Official MV Behind | CORTIS (코르티스)",
+       "channel": "CORTIS",
+       "score": 7.0
+      }
+     ],
+     "note": "구간은 유튜브 '가장 많이 다시 본 구간' 기준"
+    }
+   },
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n코르티스가 모터스포츠 세계 최고 무대인 F1 싱가포르 그랑프리에 올랐다. 주최 측 추산 6만 관객 앞에서 50분간 15곡을 펼쳤고, 멤버들은 \"많은 코어분들이 함께 해주셔서 감사하다\"는 인사를 전했다. 3주간의 해외 일정을 마친 후 10일 인천국제공항을 통해 입국했다. 2026년 10월 9일, 싱가포르 마리나 베이.\n#PLOT #코르티스 #F1싱가포르 #글로벌무대\n\n[커버]\n소스: https://i.ibb.co/twfN7J1z/5a38c038fbd9.jpg\n제목: 코르티스, F1 싱가포르\n부제: 6만 관객 앞 15곡 열창\n출처: @cortis\n\n[슬라이드]\n소스: https://i.ibb.co/Xk4x6VxS/7d5e67ed7ae7.jpg\n소제목: 싱가포르 F1 그랑프리 파당 스테이지\n본문: 코르티스가 지난 9일 싱가포르 마리나 베이 시가지 서킷 메인 무대에서 열린 '포뮬러 원 싱가포르 그랑프리 2026' 공연을 펼쳤다. 주최 측 추산 6만 명의 관객이 모인 가운데 50분간 총 15곡을 가창했다.\n출처: @cortis\n\n[슬라이드]\n소스: https://i.ibb.co/KpZBFzHg/affee171f98a.jpg\n소제목: TNT부터 MOTION까지 세트 구성\n본문: 'TNT'로 시작해 'FaSHioN', 'REDRED', 'GO!', 'MOTION (feat. Juicy J)' 등이 이어졌다. 'YOUNGCREATORCREW' 무대에는 관객석으로 내려가 직접 소통하며 현장을 압도했다.\n출처: @cortis\n",
+    "caption": "코르티스가 모터스포츠 세계 최고 무대인 F1 싱가포르 그랑프리에 올랐다. 주최 측 추산 6만 관객 앞에서 50분간 15곡을 펼쳤고, 멤버들은 \"많은 코어분들이 함께 해주셔서 감사하다\"는 인사를 전했다. 3주간의 해외 일정을 마친 후 10일 인천국제공항을 통해 입국했다. 2026년 10월 9일, 싱가포르 마리나 베이.\n#PLOT #코르티스 #F1싱가포르 #글로벌무대",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/twfN7J1z/5a38c038fbd9.jpg",
+      "credit": "@cortis",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/838715281_17919582750490405_9157808649205189699_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=f2ydo93HHD4Q7kNvwFglXtz&_nc_oc=Adqkk_nkiRqfbh3PKxvj9tTAOXcfGYRkOFR1WNndtwJ3Yk5Ma4sMnGoYjl-mo4IMLow&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=XJOtMaCPw_-sfadtYAUM3Q&oh=00_AQMgvs4ng6XTl9JRG7bHehOHKHb03LKhelRcQdwIfpm2UQ&oe=6ACFF530",
+      "post": "https://www.instagram.com/p/DeOBsZ2Gli_/"
+     },
+     {
+      "url": "https://i.ibb.co/Xk4x6VxS/7d5e67ed7ae7.jpg",
+      "credit": "@cortis",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/838985575_17919451032490405_2246932769911644778_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RzSal_ISi7QQ7kNvwFTO_-2&_nc_oc=AdokuhELLTNFEs0RwXLIK10fzUsIHovc6-U5MUggN91W8srEOZzn0aKQMfD5Rnlb2E8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=XJOtMaCPw_-sfadtYAUM3Q&oh=00_AQMIZvvODot0vwnZvqVOioKTtW6QjV3ZcKOqyGBhlZs4_w&oe=6ACFE5B6",
+      "post": "https://www.instagram.com/p/DeLteJ3mpAm/"
+     },
+     {
+      "url": "https://i.ibb.co/KpZBFzHg/affee171f98a.jpg",
+      "credit": "@cortis",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/838620569_17919424698490405_2620814457333215061_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=2z5CUcg7Z24Q7kNvwGz_tkE&_nc_oc=AdpcAV3BH5u2zvJEuwD8mPDzu9u_3E5-UOguhXOWZDa2c_rtzCFJYc1tAPqDoLQ8JyI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=XJOtMaCPw_-sfadtYAUM3Q&oh=00_AQNmyfFpk-HZW78rA-7AtCjzv8oFA8DOZf2w7ALr_ywfzw&oe=6ACFD62F",
+      "post": "https://www.instagram.com/p/DeLJ6FFn8Sp/"
+     }
+    ],
+    "shape": "맥락",
+    "facts_fixed": [
+     "카드3: 지어냄: \"NBA, 레드불, F1 등 글로벌 무대로 활동 범위를 확대 중\"이라고 했으나, 근거에는 NBA 출연 사실이 없고 레드불은 F1 공연 중 \"레드불의 초청으로 패독 방문\"만 기록되어 있음."
+    ],
+    "issues": [],
+    "confirm": [
+     "인스타 @cortis (인물 계정 기준 — 맞는지만 확인)",
+     "근거 기사: MHN · 디스패치"
+    ],
+    "research": [
+     {
+      "title": "코르티스, 6만 관객 앞 15곡 열창… \"함께 해주셔서 감사하다\"",
+      "link": "https://mhnse.com/news/articleView.html?idxno=1584842"
+     },
+     {
+      "title": "[현장영상] \"대세는 바빠\"...코르티스, 3주 만에 입국",
+      "link": "http://www.dispatch.co.kr/2349095"
+     },
+     {
+      "title": "코르티스, NBA·레드불 이어 F1 무대까지..“폭발적 에너지 쏟아낼 것”",
+      "link": "http://www.breaknews.com/1241762"
+     }
+    ]
+   },
+   "editor": {
+    "grade": "B",
+    "kind": "공연·페스티벌",
+    "angle": "코르티스가 NBA·레드불·F1 무대로 이어가는 행보 정리",
+    "why": "뜨는 신인이긴 하나 소재가 공연 근황이라 기록상 약하다"
+   },
+   "subjects": [
+    "코르티스",
+    "CORTIS",
+    "6만"
+   ],
+   "lane": "정보"
+  },
+  {
+   "source": {
+    "id": "clip:zV-E2Gzhzkg:1474",
+    "account": "KBS 쿨FM",
+    "url": "https://www.youtube.com/watch?v=zV-E2Gzhzkg",
+    "image": null,
+    "head": "와쿤 — \"\"갑비 깔끔하시긴 하세요. 깔끔하게 깔깔한데 화장을 안 하지.\"\"",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "clip"
+   },
+   "made_at": "2026-10-10T16:10+09:00",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=zV-E2Gzhzkg\n구간: 24:34-24:49\n곡:\n아티스트: 가비\n피처링:\n후킹: KBS CoolFM 라디오 프로그램에서 와쿤이 갑비의 비하인드 모습을 공개했다.\n출처: KBS CoolFM",
+    "caption": "와쿤이 라디오에서 갑비의 일상 스타일을 언급했다. 여행을 갈 때 짐을 덜고 싶어 하는 갑비에 대해 와쿤은 \"깔끔하면서도 화장을 하지 않는다\"고 설명했다.\nKBS CoolFM의 <가비의 슈퍼라디오>에 출연한 와쿤의 발언이다. 지난 10월 10일 방송분.\n#PLOT #가비 #와쿤 #가비의슈퍼라디오 #KBS",
+    "hooks": {
+     "A": "와쿤이 본 갑비의 스타일은 깔끔하면서도 화장 없는 게 특징이라고.",
+     "B": "KBS CoolFM 라디오 프로그램에서 와쿤이 갑비의 비하인드 모습을 공개했다.",
+     "C": "여행 갈 때 짐을 덜고 싶다는 사람과 어디서나 자신의 모습을 유지하려는 사람, 둘 다 있는 법이다."
+    },
+    "issues": [
+     "양식 파싱 실패: 곡 제목이 없습니다."
+    ],
+    "confirm": [
+     "기사가 없어 아티스트 공식 영상만 근거로 썼습니다 — 사실 한 번 더 확인",
+     "아티스트 인스타 핸들 (@______)",
+     "곡 제목 — 확인된 기사에 없어 비웠습니다"
+    ],
+    "research": [
+     {
+      "title": "KBS CoolFM — 미련한 사연 with 와쿤 full ver. / [가비의 슈퍼라디오] I KBS 261010 방송",
+      "link": "https://www.youtube.com/watch?v=zV-E2Gzhzkg"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=zV-E2Gzhzkg",
+     "title": "미련한 사연 with 와쿤 full ver. / [가비의 슈퍼라디오] I KBS 261010 방송",
+     "credit": "KBS CoolFM",
+     "range": [
+      1474.0,
+      1489.0
+     ],
+     "alts": [],
+     "note": "구간은 자막에서 고른 순간 — 앞뒤만 확인"
+    }
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "발언",
+    "angle": "와쿤이 직접 본 갑비의 비하인드 스타일을 공개합니다.",
+    "why": "음악인의 일상 습관에 대한 구체적인 여담, 15초 클립으로 완성도 높음."
+   },
+   "subjects": [
+    "와쿤"
+   ],
+   "lane": "클립"
+  },
+  {
+   "source": {
+    "id": "clip:Y4eRUNq0yPY:12",
+    "account": "KBS Kpop (리무진서비스·더 시즌즈)",
+    "url": "https://www.youtube.com/watch?v=Y4eRUNq0yPY",
+    "image": null,
+    "head": "CLOSE YOUR EYES — \"\"사실은 처음은 정말 긴장도 많이 했는데 우리째 행장님 덕분에 그리고 저희 멤버들 그리고 저 응원해와 주신 팬",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "clip"
+   },
+   "made_at": "2026-10-10T16:10+09:00",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=Y4eRUNq0yPY\n구간: 0:12-0:29\n곡:\n아티스트: CLOSE YOUR EYES\n피처링:\n후킹: CLOSE YOUR EYES가 음악뱅크 1위 발표 무대에서 감사를 전했다.\n출처: KBS Kpop",
+    "caption": "CLOSE YOUR EYES는 최근 음악뱅크 1위 발표 무대에 올랐다. \n무대 후 소감에서 \"처음은 정말 긴장도 많이 했는데\" 팀원과 팬들 덕분에 잘 해낼 수 있었다고 말했다. \n음악뱅크에 불러준 점도 감사 인사로 전했다.\n#PLOT #음악뱅크 #CLOSEYOUREYES #1위 #무대",
+    "hooks": {
+     "A": "음악뱅크 무대 앞에서 \"처음엔 정말 긴장했다\"고 털어놓은 아티스트의 소감을 들어봤다.",
+     "B": "CLOSE YOUR EYES가 음악뱅크 1위 발표 무대에서 감사를 전했다.",
+     "C": "긴장 속에서도 무대를 마친 순간, 팬과 팀원에게 고마움을 전했다."
+    },
+    "issues": [
+     "양식 파싱 실패: 곡 제목이 없습니다."
+    ],
+    "confirm": [
+     "기사가 없어 아티스트 공식 영상만 근거로 썼습니다 — 사실 한 번 더 확인",
+     "곡 제목 — 확인된 기사에 없어 비웠습니다"
+    ],
+    "research": [
+     {
+      "title": "KBS Kpop — [MusicBank chart-topping Interview] 클로즈 유어 아이즈 (CLOSE YOUR EYES Interview) l @MusicBank KBS 261009",
+      "link": "https://www.youtube.com/watch?v=Y4eRUNq0yPY"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Y4eRUNq0yPY",
+     "title": "[MusicBank chart-topping Interview] 클로즈 유어 아이즈 (CLOSE YOUR EYES Interview) l @MusicBank KBS 261009",
+     "credit": "KBS Kpop",
+     "range": [
+      12.0,
+      29.0
+     ],
+     "alts": [],
+     "note": "구간은 자막에서 고른 순간 — 앞뒤만 확인"
+    }
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "발언",
+    "angle": "음악뱅크 첫 무대, 긴장과 감사로 채운 진솔한 순간.",
+    "why": "아티스트의 솔직한 감정 표현과 팬 감사 메시지가 담겨있고 15초 내 완결성 있음."
+   },
+   "subjects": [
+    "CLOSE YOUR EYES"
+   ],
+   "lane": "클립"
+  },
+  {
+   "source": {
+    "id": "series:CORTIS:2026-10-10",
+    "account": "시리즈 · 나무위키 털기",
+    "url": "https://namu.wiki/w/CORTIS",
+    "image": null,
+    "head": "CORTIS 나무위키 털기 — 지금 뜨는 이유: 기사 급증 9.0배",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "series"
+   },
+   "made_at": "2026-10-10T16:10+09:00",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n데뷔 1년 만에 NBA, 레드불, F1이 러브콜을 보낸 코르티스. 10월 9일 싱가포르 마리나 베이 F1 그랑프리 파당 스테이지에서 약 50분간 공연을 펼쳤다. 글로벌 스포츠·문화 이벤트로 활동 반경을 확장하며 국제 무대에서의 입지를 다지고 있다.\n#PLOT #CORTIS #F1싱가포르그랑프리 #글로벌공연 #빅히트뮤직\n\n[커버]\n소스: https://i.ibb.co/67DDXxBY/e6c11cf7a637.jpg\n제목: F1 무대 위의 코르티스\n부제: 글로벌 스포츠 이벤트 러브콜 잇따르는 이유\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/xtxpHbQT/f0553c079c27.jpg\n소제목: NBA에서 F1으로\n본문: 코르티스가 데뷔 1년 만에 세계 스포츠 무대 진출을 이어가고 있다. NBA 올스타 셀러브리티 게임에 이어 포뮬러 원 싱가포르 그랑프리에 참가한다. F1 싱가포르는 도심 야간 레이스와 대규모 공연이 어우러진 아시아 최대 규모의 모터스포츠·엔터테인먼트 행사다.\n출처: 스타뉴스\n\n[슬라이드]\n소스: https://i.ibb.co/TXR7M9m/87865e6d793c.jpg\n소제목: 싱가포르 '파당 스테이지'에 선다\n본문: 멤버들은 10월 9일(현지시간) 싱가포르 마리나 베이 시가지 서킷에서 약 50분간 공연을 펼쳤다. 이들이 서는 '파당 스테이지'는 6만여 명의 관객을 수용할 수 있는 야외 무대다. 린쥔지에, 자넷 잭슨, 라나 델 레이 등이 함께 참가했다.\n출처: 스포츠경향\n\n[슬라이드]\n소스: https://i.ibb.co/5x69V9v0/0d3c2603bc21.jpg\n소제목: \"글로벌 존재감을 키우는 중\"\n본문: 멤버들은 빅히트 뮤직을 통해 \"싱가포르는 첫 방문인데 전 세계 관람객이 모이는 큰 축제에서 코르티스의 음악과 퍼포먼스를 보여드리게 돼 무척 설렌다\"고 전했다. \"F1의 뜨거운 열기에 걸맞은 폭발적 에너지를 남김없이 쏟아내겠다\"라고 덧붙였다.\n출처:\n",
+    "caption": "데뷔 1년 만에 NBA, 레드불, F1이 러브콜을 보낸 코르티스. 10월 9일 싱가포르 마리나 베이 F1 그랑프리 파당 스테이지에서 약 50분간 공연을 펼쳤다. 글로벌 스포츠·문화 이벤트로 활동 반경을 확장하며 국제 무대에서의 입지를 다지고 있다.\n#PLOT #CORTIS #F1싱가포르그랑프리 #글로벌공연 #빅히트뮤직",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/67DDXxBY/e6c11cf7a637.jpg",
+      "credit": "신뢰"
+     },
+     {
+      "url": "https://i.ibb.co/xtxpHbQT/f0553c079c27.jpg",
+      "credit": "starnewskorea.com",
+      "from": "https://image.starnewskorea.com/21/2026/10/2026101009451639230_1.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/TXR7M9m/87865e6d793c.jpg",
+      "credit": "sports.khan.co.kr",
+      "from": "https://images.khan.co.kr/article/2026/10/08/news-p.v1.20261008.2bd798a64714426bbbc4fef03479864f_P1.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/5x69V9v0/0d3c2603bc21.jpg",
+      "credit": "bntnews.co.kr",
+      "from": "https://www.bntnews.co.kr/data/bnt/image/2026/10/10/bnt202610100166.jpg"
      }
     ],
     "shape": "맥락",
@@ -209,35 +588,212 @@
     "issues": [],
     "confirm": [
      "아티스트 인스타 핸들 (@______)",
-     "근거 기사: 뉴시스 · JTBC",
+     "근거 기사: 나무위키 · 스타뉴스",
      "사진 출처가 빈 장이 있습니다 — 보도 사진이면 매체 이름을 적어 주세요"
     ],
     "research": [
      {
-      "title": "위켄드 노래 따라 부르던 연습생 제니, 우상과 함께 선 5만 스타디움(종...",
-      "link": "https://www.newsis.com/view/NISX20261008_0003819840"
+      "title": "나무위키 — CORTIS",
+      "link": "https://namu.wiki/w/CORTIS"
      },
      {
-      "title": "제니, 8년 전엔 객석 팬·이번엔 무대 협업가수…위켄드 韓 콘서트 등판...",
-      "link": "https://www.newsis.com/view/NISX20261008_0003819736"
+      "title": "코르티스 '빛나는 CORTIS!' [★영상]",
+      "link": "https://www.starnewskorea.com/photo/2026/10/10/2026101009451639230"
      },
      {
-      "title": "[단독] 제니, 위켄드 내한 공연 깜짝 게스트 선다",
-      "link": "https://news.jtbc.co.kr/article/NB12322065?influxDiv=NAVER"
+      "title": "코르티스(CORTIS), NBA 레드불 이어 F1 무대로",
+      "link": "https://sports.khan.co.kr/article/202610082135003?pt=nv"
      }
     ]
    },
    "editor": {
     "grade": "A",
     "kind": "인물해부",
-    "angle": "위켄드 노래 따라 부르던 연습생 제니가 8년 만에 우상과 같은 무대에 서기까지",
-    "why": "위켄드 내한 깜짝 게스트라는 서사가 있고 '드라큘라' 19주째 톱 흐름과 이어져 한국 독자 접점이 큼"
+    "angle": "CORTIS 멤버별 나무위키 털기, 일화와 별명 위주",
+    "why": ""
    },
    "subjects": [
-    "제니",
-    "JENNIE",
-    "5만"
-   ]
+    "CORTIS"
+   ],
+   "lane": "시리즈"
+  },
+  {
+   "source": {
+    "id": "series:노이:2026-10-10",
+    "account": "시리즈 · 나무위키 털기",
+    "url": "https://namu.wiki/w/노이",
+    "image": null,
+    "head": "노이 나무위키 털기 — 지금 뜨는 이유: 기사 급증 3.3배",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "series"
+   },
+   "made_at": "2026-10-10T16:10+09:00",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n귀여운 외모와 실력을 갖춘 가수 노이. 키 때문에 국내 걸그룹 진출에 실패했던 그가 청춘스타로 얼굴을 알린 뒤, 일본 데뷔를 거쳐 2026년 국내로 돌아왔습니다.\n#PLOT #노이 #가수 #일본데뷔 #청춘스타 #애송이의사랑\n\n[커버]\n소스: https://i.ibb.co/5WfpJ8Ly/355d8a2c4438.jpg\n제목: 노이, 나무위키로 읽다\n부제: 가수 노이의 활동 궤적과 디테일을 정리했습니다.\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/jPmJ2Z7n/0494e12f2346.jpg\n소제목: 본명 한인혜, 155cm 이하\n본문: 대한민국 국적의 가수 노이(ノイ)는 본명이 한인혜다. 귀여운 외모에 실력도 상당했으나, 국내 걸그룹 선별 과정에서 키가 작다는 이유로 매번 탈락했다. 155cm 이하로 추정되는 단신이 국내 활동의 걸림돌이었다.\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/Z6qwWQqN/6f23946bdba4.jpg\n소제목: 청춘스타로 대중에 알려지다\n본문: 청춘스타를 통해 대중에게 알려지면서 실력과 매력을 발산해 팬층을 형성했다. 2024년 5월에는 범진의 뮤직비디오 '이별이라도 잘해주려고' 주인공 역으로도 출연했으나, 뚜렷한 활동이 없다가 전환점을 맞는다.\n출처: \n\n[슬라이드]\n소스: https://i.ibb.co/jPmJ2Z7n/0494e12f2346.jpg\n소제목: 2026년, 일본 데뷔와 국내 복귀\n본문: 2026년 양파의 '애송이의 사랑'을 일본어로 리메이크하며 일본에서 데뷔했다. 4월에는 한국에서 싱글곡 '뻔하잖아'를 내놓으며 국내 활동을 개시했다. 여성 평균 키가 한국보다 작은 일본에서는 단신이 장점으로 작용했다. (나무위키 기반)\n출처:\n",
+    "caption": "귀여운 외모와 실력을 갖춘 가수 노이. 키 때문에 국내 걸그룹 진출에 실패했던 그가 청춘스타로 얼굴을 알린 뒤, 일본 데뷔를 거쳐 2026년 국내로 돌아왔습니다.\n#PLOT #노이 #가수 #일본데뷔 #청춘스타 #애송이의사랑",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/5WfpJ8Ly/355d8a2c4438.jpg",
+      "credit": "신뢰"
+     },
+     {
+      "url": "https://i.ibb.co/jPmJ2Z7n/0494e12f2346.jpg",
+      "credit": "신뢰"
+     },
+     {
+      "url": "https://i.ibb.co/Z6qwWQqN/6f23946bdba4.jpg",
+      "credit": "신뢰"
+     },
+     {
+      "url": "https://i.ibb.co/jPmJ2Z7n/0494e12f2346.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "맥락",
+    "facts_fixed": [
+     "카드3: 왜곡: 근거에는 \"2026년 양파의 애송이의 사랑을 일본어로 리메이크하며 일본에서 데뷔했고, 4월에 한국에서 싱글 곡 뻔하잖아를 내놓으며 국내 활동을 개시\"라고 돼 있는데, 초안은 \"뮤직비디오에서 보여준 예쁜 외모로 주목받은 뒤\"라고 순서를 바꿈. 근거에는 일본 데뷔 후 국내 복귀 사이에 뮤비 반응이 개입하지 않음."
+    ],
+    "issues": [],
+    "confirm": [
+     "아티스트 인스타 핸들 (@______)",
+     "근거 기사: 나무위키 · 국제뉴스",
+     "사진 출처가 빈 장이 있습니다 — 보도 사진이면 매체 이름을 적어 주세요"
+    ],
+    "research": [
+     {
+      "title": "나무위키 — 노이",
+      "link": "https://namu.wiki/w/노이"
+     },
+     {
+      "title": "드레스덴 저녁, 프라우엔 교회 향한 노이마르크트 풍경 포착",
+      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3717003"
+     },
+     {
+      "title": "美 대중 기술제재, 로봇·AI로... 中 로봇기업 관련 첫 제재",
+      "link": "https://www.newspim.com/news/view/20261008000042"
+     }
+    ]
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "인물해부",
+    "angle": "노이의 별명, 일화, 팬들이 아는 사소한 디테일을 나무위키 털기로 정리",
+    "why": "기사가 3.3배 늘며 뜨는 중이고 2030 싱어송라이터 결과도 맞다. 다만 급증 이유가 분명하지 않고 한로로만큼의 폭발력은 없다."
+   },
+   "subjects": [
+    "노이"
+   ],
+   "lane": "시리즈"
+  },
+  {
+   "source": {
+    "id": "clip:YesImRa4fJ8:31",
+    "account": "KBS Kpop (리무진서비스·더 시즌즈)",
+    "url": "https://www.youtube.com/watch?v=YesImRa4fJ8",
+    "image": null,
+    "head": "N.Flying — \"\"저희 새로운 도약의 신곡 잔불은요. 한글날에 어울리기 가사가 전부 한글로 되어 있고요. 그리고 새 아 우리 청춘들을 지친",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "clip"
+   },
+   "made_at": "2026-10-10T16:10+09:00",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=YesImRa4fJ8\n구간: 0:31-0:46\n곡: 잔불\n아티스트: N.Flying\n피처링:\n후킹: N.Flying이 지친 청춘을 응원하는 메시지를 담은 새 곡을 선보였다.\n출처: KBS Kpop",
+    "caption": "N.Flying의 신곡 〈잔불〉은 가사 전부를 한글로 작성했다. \n밴드는 KBS 뮤직뱅크와의 인터뷰에서 \"지친 청춘들을 응원하는 곡\"이라고 소개했다.\n한글날의 의미에 맞춘 곡 구성으로, 밴드의 새로운 앨범 타이틀곡은 두 곡이다.\n\n#PLOT #N.Flying #한글날 #뮤직뱅크 #신곡",
+    "hooks": {
+     "A": "한글날을 맞춰 가사 전부 한글로 쓴 신곡이 나왔다.",
+     "B": "N.Flying이 지친 청춘을 응원하는 메시지를 담은 새 곡을 선보였다.",
+     "C": "한글날의 의미를 곡에 담아낸 밴드의 신곡."
+    },
+    "issues": [],
+    "confirm": [
+     "기사가 없어 아티스트 공식 영상만 근거로 썼습니다 — 사실 한 번 더 확인"
+    ],
+    "research": [
+     {
+      "title": "KBS Kpop — 엔플라잉&킥플립 (N.Flying & KickFlip Interview) l @MusicBank KBS 261009",
+      "link": "https://www.youtube.com/watch?v=YesImRa4fJ8"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=YesImRa4fJ8",
+     "title": "엔플라잉&킥플립 (N.Flying & KickFlip Interview) l @MusicBank KBS 261009",
+     "credit": "KBS Kpop",
+     "range": [
+      31.0,
+      46.0
+     ],
+     "alts": [],
+     "note": "구간은 자막에서 고른 순간 — 앞뒤만 확인"
+    }
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "발언",
+    "angle": "한글날 맞춰 가사 전부 한글로 만든 신곡, 지친 청춘을 응원하는 메시지를 담았어요.",
+    "why": "아티스트의 신곡 기획 의도가 명확하고 감정이 담긴 직접 발언"
+   },
+   "subjects": [
+    "N.Flying"
+   ],
+   "lane": "클립"
+  },
+  {
+   "source": {
+    "id": "clip:ry86SrNVU2k:96",
+    "account": "KBS Kpop (리무진서비스·더 시즌즈)",
+    "url": "https://www.youtube.com/watch?v=ry86SrNVU2k",
+    "image": null,
+    "head": "타잔 — \"\"우리 은행장님 애니아 가을이 왔다고 또 체크무니 스커트의 흰색 블라우스. 아, 역시 크래쉬 파티 하러 갈 계절이죠. 또 은행장님으로",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "clip"
+   },
+   "made_at": "2026-10-10T16:10+09:00",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=ry86SrNVU2k\n구간: 1:36-1:54\n곡:\n아티스트: ALLDAY PROJECT\n피처링:\n후킹: ALLDAY PROJECT의 타잔이 음악방송 진행자 애니를 향해 응원의 말을 건넸다.\n출처: KBS Kpop",
+    "caption": "ALLDAY PROJECT의 타잔이 KBS 음악방송에서 진행자 애니를 향해 응원의 말을 전했다.\n10월 10일 방송된 음악방송 올데이 프로젝트 인터뷰 코너에서의 순간이다.\n#PLOT #ALLDAY프로젝트 #타잔 #애니 #KBS",
+    "hooks": {
+     "A": "음악방송 진행자 애니에게 건넨 따뜻한 응원, 그 한마디를 놓치지 말자.",
+     "B": "ALLDAY PROJECT의 타잔이 음악방송 진행자 애니를 향해 응원의 말을 건넸다.",
+     "C": "스튜디오 무대 사이사이, 멤버의 진심 어린 인사."
+    },
+    "issues": [
+     "양식 파싱 실패: 곡 제목이 없습니다."
+    ],
+    "confirm": [
+     "기사가 없어 아티스트 공식 영상만 근거로 썼습니다 — 사실 한 번 더 확인",
+     "곡 제목 — 확인된 기사에 없어 비웠습니다"
+    ],
+    "research": [
+     {
+      "title": "KBS Kpop — 올데이 프로젝트 (ALLDAY PROJECT Interview) l @MusicBank KBS 261009",
+      "link": "https://www.youtube.com/watch?v=ry86SrNVU2k"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=ry86SrNVU2k",
+     "title": "올데이 프로젝트 (ALLDAY PROJECT Interview) l @MusicBank KBS 261009",
+     "credit": "KBS Kpop",
+     "range": [
+      96.0,
+      114.0
+     ],
+     "alts": [],
+     "note": "구간은 자막에서 고른 순간 — 앞뒤만 확인"
+    }
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "발언",
+    "angle": "멤버 타잔이 진행자 애니를 향해 건넨 따뜻한 응원의 말.",
+    "why": "멤버 간 친근한 관계와 자랑스러움을 드러내는 감정 있는 발언, 샤라웃 요소"
+   },
+   "subjects": [
+    "타잔"
+   ],
+   "lane": "클립"
   }
  ],
  "skipped": [
@@ -245,79 +801,43 @@
    "id": "DeJbhiTN4UE",
    "account": "ateez_official_",
    "entity": null,
-   "why": "편집장 C — 아이돌 멤버의 OST 발매 공지를 옮기는 글로, 사람 이야기도 씬 내부 관계도 없고 일반 발매 공지는 가장 "
+   "why": "편집장 C — 팬 대상 발매 공지라 사람 이야기가 없고 PLOT 독자와 접점이 약하다"
+  },
+  {
+   "id": "news:노이:2026-10-10",
+   "account": "뉴스 급등",
+   "entity": "노이",
+   "why": "편집장 C — 음악 이야기가 아니고 '노이' 키워드가 지명에 잘못 걸린 기사다"
+  },
+  {
+   "id": "news:머무르:2026-10-10",
+   "account": "뉴스 급등",
+   "entity": "머무르",
+   "why": "편집장 C — 차트 수치 단신이라 사람 이야기가 없고 PLOT이 더할 게 없다"
+  },
+  {
+   "id": "news:AKMU(악뮤):2026-10-10",
+   "account": "뉴스 급등",
+   "entity": "AKMU(악뮤)",
+   "why": "편집장 C — 광고·브랜드 공지는 PLOT 결이 아니고 씬 안쪽 관계나 발언도 없어서 약하다"
+  },
+  {
+   "id": "news:KiiiKiii (키키):2026-10-10",
+   "account": "뉴스 급등",
+   "entity": "KiiiKiii (키키)",
+   "why": "편집장 C — 일정 공지형 공연 소식이고 PLOT 이 다룰 사람 이야기나 씬 관계가 없다."
+  },
+  {
+   "id": "profile:traybbbbb:게시물 정리:2026-10-10",
+   "account": "traybbbbb",
+   "entity": "트레이비",
+   "why": "재조사에서 기사를 못 찾았습니다 — 사실을 직접 확인하세요"
   },
   {
    "id": "DeMohAdjcox",
    "account": "ateez_official_",
    "entity": null,
    "why": "글에서 아티스트를 못 찾아 재조사를 건너뛰었습니다 — 사실을 직접 확인하세요"
-  },
-  {
-   "id": "news:CORTIS (코르티스):2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "CORTIS (코르티스)",
-   "why": "편집장 B — 기사 내용이 공연·입국·행사 소식 위주라 그대로 옮기면 약하고, 인물·관계 각도를 따로 만들어야 함"
-  },
-  {
-   "id": "news:노이:2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "노이",
-   "why": "편집장 C — 독일 드레스덴 풍경 기사로 음악과 무관한 키워드 오인이라 PLOT 결이 아님"
-  },
-  {
-   "id": "news:머무르:2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "머무르",
-   "why": "편집장 B — 차트 수치 기사 위주라 사람 이야기가 약하고, 역주행 배경 인물 서사가 있어야 올릴 수 있음"
-  },
-  {
-   "id": "news:방탄소년단:2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "방탄소년단",
-   "why": "편집장 B — 이름은 크지만 브랜드평판·어워드 후보·출품 명단은 산업·시상식 소식이고, JYP 그래미 불참 건과 겹쳐 새 "
-  },
-  {
-   "id": "news:AKMU(악뮤):2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "AKMU(악뮤)",
-   "why": "편집장 C — 광고 모델 발탁 공지로 씬 안쪽 이야기가 아니고 PLOT 결이 아님"
-  },
-  {
-   "id": "news:이창섭:2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "이창섭",
-   "why": "편집장 B — 사람 이야기지만 예능 콘텐츠 가벼운 에피소드이고 최근 잘 된 인물 목록에도 없어 평범함"
-  },
-  {
-   "id": "news:화사 (HWASA):2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "화사 (HWASA)",
-   "why": "편집장 B — 해외 페스티벌 성과는 좋은 소재지만 크록스 캠페인·포즈 기사가 섞여 있어 공연·화보 소식으로 흐르기 쉬움"
-  },
-  {
-   "id": "news:AHOF(아홉):2026-10-10",
-   "account": "뉴스 급등",
-   "entity": "AHOF(아홉)",
-   "why": "편집장 B — 공연 취소라는 변수가 있지만 안전 검토 공지가 전부라 사람 이야기·반응이 없고 신인 그룹이라 파급이 제한적임"
-  },
-  {
-   "id": "sns:아이유:2026-10-10",
-   "account": "SNS 발 이슈",
-   "entity": "아이유",
-   "why": "편집장 C — 음악 씬과 무관한 연예 가십이고, '아이유' 키워드만 걸린 급등이라 PLOT 결이 아님"
-  },
-  {
-   "id": "sns:최자:2026-10-10",
-   "account": "SNS 발 이슈",
-   "entity": "최자",
-   "why": "편집장 B — 국힙 씬 인물과 개코 관계라는 소재는 있지만, 예능 발언을 옮기는 수준이고 최근 뜨는 인물도 아니라 평범"
-  },
-  {
-   "id": "profile:traybbbbb:게시물 정리:2026-10-10",
-   "account": "traybbbbb",
-   "entity": "트레이비",
-   "why": "편집장 B — 게시물 정리만으로는 이유가 보이지 않고 확인된 사건·발언도 없어 지금은 근거가 약하다. 컴백 준비든 논란이든"
   }
  ]
 }
