@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-11 05:49 KST",
+ "generated_at": "2026-10-11 15:43 KST",
  "weeks": [
   {
    "week": "2026-W25",
@@ -1305,10 +1305,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-10 22:42 KST"
+  "daily": "2026-10-11 05:49 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-11T05:49:16+09:00",
+  "fetched_at": "2026-10-11T15:34:27+09:00",
   "posts": [
    {
     "t": "2026-10-09T19:45+09:00",
@@ -1439,17 +1439,12 @@
     "t": "2026-09-20T21:18+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "양홍원(@yanghongwon)이 한 시간 사이에 스토리 두 개를 올렸습"
-   },
-   {
-    "t": "2026-09-20T12:35+09:00",
-    "type": "VIDEO",
-    "head": "제나가 추석 특집으로 트로트를 들고 왔습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 4,
+  "drafts": 9,
   "posted": 0,
   "posts": 39,
   "rate": 0.0,
@@ -1461,7 +1456,39 @@
     "posted": 0,
     "mult": null
    },
+   "재미": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "정보": {
+    "drafts": 3,
+    "posted": 0,
+    "mult": null
+   },
+   "클립": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
    "재포장": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   }
+  },
+  "corners": {
+   "news": {
+    "drafts": 7,
+    "posted": 0,
+    "mult": null
+   },
+   "mal": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "again": {
     "drafts": 1,
     "posted": 0,
     "mult": null
@@ -1471,9 +1498,11 @@
    {
     "day": "2026-10-10",
     "lane": "재포장",
-    "who": "리센느",
+    "who": "권은비",
     "repack": true,
-    "grade": "A"
+    "grade": "A",
+    "corner": "again",
+    "key": "0a64e57d"
    }
   ],
   "recent": []
