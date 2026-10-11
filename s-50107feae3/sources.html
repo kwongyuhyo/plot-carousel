@@ -388,6 +388,30 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   background:rgba(0,0,0,.5); display:flex; align-items:center; justify-content:center}
 .ig .reel .pl svg{width:18px; height:18px}
 .ig .reel .pl{border:0; color:#fff; cursor:pointer}
+/* 요청한 초안 — 앱에서 고른 소재·후속 기획이 맥에서 써지는 동안 (2026-10-11) */
+.rq{border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:12px 0}
+.rq h5{margin:0 0 6px; font-size:13px}
+.rq .r{display:flex; align-items:center; gap:8px; padding:6px 0; border-top:1px solid var(--line); font-size:13px}
+.rq .r:first-of-type{border-top:0}
+.rq .r .t{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.rq .r .s{color:var(--dim); font-size:12px; white-space:nowrap}
+.rq .r .s.ok{color:var(--pick)} .rq .r .s.bad{color:#d6404a}
+.rq .r button{font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--text); border-radius:6px; padding:5px 9px}
+/* 카테고리 — 인스타 하이라이트처럼 동그라미 한 줄 */
+.hl{display:flex; gap:14px; overflow-x:auto; padding:12px 2px 6px; margin:0 -2px; scrollbar-width:none}
+.hl::-webkit-scrollbar{display:none}
+.hl button{flex:none; width:68px; background:none; border:0; padding:0; color:var(--text); font:inherit; cursor:pointer; text-align:center}
+.hl .o{display:block; width:62px; height:62px; margin:0 auto 5px; border-radius:50%; padding:2px; border:1.5px solid var(--line)}
+.hl button.on .o{border:2px solid transparent; background:linear-gradient(var(--bg), var(--bg)) padding-box,
+  linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7) border-box}
+.hl .o i{display:block; width:100%; height:100%; border-radius:50%; background:var(--panel) center/cover no-repeat;
+  font-style:normal; font-size:22px; line-height:56px}
+.hl .l{display:block; font-size:11.5px; line-height:1.25; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.hl .l b{font-weight:400; color:var(--dim); margin-left:2px}
+.srt{display:flex; align-items:center; gap:6px; margin:4px 0 8px; font-size:12px; color:var(--dim)}
+.srt button{font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--muted); border-radius:999px; padding:5px 11px}
+.srt button[aria-pressed="true"]{border-color:var(--text); color:var(--text)}
+.srt span{margin-left:4px}
 /* 원본 영상을 틀 뒤에 깔고, 로고·카테고리·세 줄은 그대로 위에 — 완성본 모양을 눈으로 대충 본다 (10/11 규효) */
 .ig .reel .yv{position:absolute; inset:0; z-index:0; overflow:hidden; background:#000}
 .ig .reel .yv iframe{position:absolute; border:0; top:0; left:-108.02%; width:316.05%; height:100%}
@@ -912,6 +936,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
             '<button class="btn' + (m === 'drafted' ? ' draft' : '') + '" data-act="drafted">' +
               (m === 'drafted' ? '✎ ' + FORM_LABEL[forms[c.id] || 'shorts'] : '초안') +
             '</button>' +
+            '<button class="btn draft" data-act="mkdraft">✍️ 앱 초안</button>' +
             '<button class="btn' + (m === 'skip' ? ' off' : '') + '" data-act="skip">' +
               (m === 'skip' ? '건너뜀' : '건너뛰기') + '</button>' +
             '<a class="btn link" href="' + escU(c.url) + '" target="_blank" rel="noopener">원문 →</a>' +
@@ -1367,6 +1392,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!host) return;
     var id = host.getAttribute('data-id');
     var act = btn.getAttribute('data-act');
+    if (act === 'mkdraft') {
+      var cc = indexAll()[id] || {};
+      askDraft('dr-' + skey(id), headline(cc) || ('@' + (cc.account || '')));
+      return;
+    }
     if (act === 'drafted') {
       // 처음 누르면 숏폼. 누를수록 캐러셀 → 둘다 → 해제.
       var nxt = marks[id] === 'drafted' ? FORM_NEXT[forms[id] || 'shorts'] : 'shorts';
@@ -1698,8 +1728,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
                '<div class="pname">' + esc(it.name) + '</div>' +
                '<div class="pwhy2">' + esc(it.why || '') + '</div>' +
                ang + clue + lnk + qs + '</div>' +
+               '<div style="display:flex;flex-direction:column;gap:6px">' +
+               (it.id ? '<button class="pmini" type="button" data-mk="' + esc(it.id) + '" data-mkname="' + esc(it.name || '') + '">✍️ 앱 초안</button>' : '') +
                '<button class="pmini" type="button" data-plan="' + i +
-               '" data-item="' + j + '">양식</button></div>';
+               '" data-item="' + j + '">양식</button></div></div>';
       }).join('');
       // 접어 둔 전체 — 요약 몇 줄만 두면 카드 안에서 판단이 안 끝난다
       var more = (p.more || []).length
@@ -1732,6 +1764,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
 
   document.getElementById('viewPlan').addEventListener('click', function (e) {
+    var mk = e.target.closest('[data-mk]');
+    if (mk) { askDraft('dr-' + skey(mk.getAttribute('data-mk')), mk.getAttribute('data-mkname')); return; }
     var cp = e.target.closest('[data-copy]');
     if (cp) {                                // 검색어를 눌러 담는다
       var q = cp.getAttribute('data-copy');
@@ -2028,6 +2062,159 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     // maxresdefault 가 없는 영상은 120×90 회색 그림이 온다 — 그때는 4:3(위아래 띠) hqdefault 를 띠만큼 키워 깐다
     return '<img class="ph" data-sfph referrerpolicy="no-referrer" src="' + esc(th) + '" alt="">';
   }
+  function sha1hex(str) {
+    function rol(v, n) { return (v << n) | (v >>> (32 - n)); }
+    var b = new TextEncoder().encode(String(str)), l = b.length, nb = ((l + 8) >> 6) + 1, w = [], i, j;
+    for (i = 0; i < nb * 16; i++) w[i] = 0;
+    for (i = 0; i < l; i++) w[i >> 2] |= b[i] << (24 - (i % 4) * 8);
+    w[l >> 2] |= 0x80 << (24 - (l % 4) * 8);
+    w[nb * 16 - 1] = l * 8;
+    var h = [0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476, 0xC3D2E1F0], x = [];
+    for (j = 0; j < w.length; j += 16) {
+      var a = h[0], bb = h[1], c = h[2], d = h[3], e = h[4];
+      for (i = 0; i < 80; i++) {
+        x[i] = i < 16 ? w[j + i] : rol(x[i - 3] ^ x[i - 8] ^ x[i - 14] ^ x[i - 16], 1);
+        var f = i < 20 ? (bb & c) | (~bb & d) : i < 40 ? bb ^ c ^ d : i < 60 ? (bb & c) | (bb & d) | (c & d) : bb ^ c ^ d;
+        var k = i < 20 ? 0x5A827999 : i < 40 ? 0x6ED9EBA1 : i < 60 ? 0x8F1BBCDC : 0xCA62C1D6;
+        var t = (rol(a, 5) + f + e + k + x[i]) | 0;
+        e = d; d = c; c = rol(bb, 30); bb = a; a = t;
+      }
+      h[0] = (h[0] + a) | 0; h[1] = (h[1] + bb) | 0; h[2] = (h[2] + c) | 0; h[3] = (h[3] + d) | 0; h[4] = (h[4] + e) | 0;
+    }
+    return h.map(function (v) { return ('00000000' + (v >>> 0).toString(16)).slice(-8); }).join('');
+  }
+  function skey(id) { return sha1hex(String(id)).slice(0, 8); }
+  window.__plotSkey = skey;
+  var REQ_KEY = 'plot.req', REQ_WAIT = 20 * 60e3;
+  function reqGet() { try { return JSON.parse(localStorage.getItem(REQ_KEY) || '{}') || {}; } catch (e) { return {}; } }
+  function reqSave(m) {
+    var now = Date.now(), o = {};
+    Object.keys(m).forEach(function (k) { if (now - (m[k].at || 0) < 36 * 3600e3) o[k] = m[k]; });
+    try { localStorage.setItem(REQ_KEY, JSON.stringify(o)); } catch (e) {}
+  }
+  function reqAdd(code, title) { var m = reqGet(); m[code] = { at: Date.now(), title: String(title || '').slice(0, 60) }; reqSave(m); reqPoll(); }
+  function reqDrop(code) { var m = reqGet(); delete m[code]; reqSave(m); }
+  function reqFind(code) {                         // 도착한 초안의 번호 (DR.items 안) — 없으면 -1
+    var items = (DR && DR.items) || [], key = code.split('-')[1];
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      if (it.req === code) return i;
+      if (code.indexOf('dr-') === 0 && (it.source || {}).id != null && skey((it.source || {}).id) === key) return i;
+      if (code.indexOf('fu-') === 0 && it.followup && it.followup.card === key && String(it.followup.k) === code.split('-')[2]) return i;
+    }
+    return -1;
+  }
+  function reqState(code, r) {
+    var i = reqFind(code);
+    if (i >= 0) return { st: 'ok', i: i };
+    var f = ((DR && DR.req_fail) || {})[code];
+    if (f) return { st: 'bad', why: f.reason };
+    return { st: Date.now() - r.at > REQ_WAIT ? 'late' : 'wait' };
+  }
+  function reqBox() {
+    var m = reqGet(), ks = Object.keys(m).sort(function (a, b) { return m[b].at - m[a].at; });
+    if (!ks.length) return '';
+    return '<div class="rq"><h5>요청한 초안</h5>' + ks.map(function (k) {
+      var r = m[k], s = reqState(k, r), min = Math.max(1, Math.round((Date.now() - r.at) / 60e3));
+      var lab = s.st === 'ok' ? '<span class="s ok">✓ 도착</span><button data-rqgo="' + s.i + '">보기</button>'
+        : s.st === 'bad' ? '<span class="s bad">⚠️ ' + esc(String(s.why || '실패').slice(0, 40)) + '</span><button data-rqx="' + esc(k) + '">지우기</button>'
+        : s.st === 'late' ? '<span class="s bad">' + min + '분째 — 텔레그램 결과를 확인해 주세요</span><button data-rqx="' + esc(k) + '">지우기</button>'
+        : '<span class="s">✍️ 쓰는 중 · ' + min + '분째</span>';
+      return '<div class="r"><span class="t">' + esc(r.title || k) + '</span>' + lab + '</div>';
+    }).join('') + '</div>';
+  }
+  var REQ_T = null, REQ_SEEN = {};
+  function reqPoll() {                             // 기다리는 요청이 있으면 30초마다 drafts.json 을 다시 받는다
+    if (REQ_T) return;
+    REQ_T = setInterval(function () {
+      var m = reqGet(), wait = Object.keys(m).filter(function (k) { var s = reqState(k, m[k]); return s.st === 'wait'; });
+      if (!wait.length) { clearInterval(REQ_T); REQ_T = null; return; }
+      if (document.visibilityState !== 'visible' || document.querySelector('.sheet')) return;
+      loadDrafts().then(function () {
+        wait.forEach(function (k) {
+          if (!REQ_SEEN[k] && reqState(k, m[k]).st === 'ok') { REQ_SEEN[k] = 1; toast('초안 도착 — ' + (m[k].title || '')); }
+        });
+      });
+    }, 30e3);
+  }
+  function reqGo(i) {
+    if (DR_CAT !== 'all') { DR_CAT = 'all'; catSave(); }
+    if (drView() !== 'feed') { try { localStorage.setItem(DR_VIEW, 'feed'); } catch (x) {} }
+    showGroup('draft'); renderDrafts();
+    var b = document.querySelector('[data-share="' + i + ':card"]') || document.querySelector('[data-share="' + i + ':shorts"]');
+    var a = b && b.closest('article');
+    if (a) a.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  function askDraft(code3, title) {                // code3 = 'dr-<key>' — 무엇으로 쓸지 고르고 보낸다
+    sheetOf('앱에서 초안 만들기 — ' + String(title || '').slice(0, 30), [
+      ['b', '숏폼 + 캐러셀', '맥이 3~5분 안에 써서 오늘의 초안 맨 위 「요청한 초안」 에 띄웁니다'],
+      ['s', '숏폼만', ''], ['c', '캐러셀만', ''], ['x', '닫기', '']], function (f) {
+      if (f === 'x') return;
+      var code = code3 + '-' + f;
+      reqAdd(code, title);
+      plotAction(code, '초안 요청');
+    });
+  }
+
+  /* 카테고리 — 편성표 코너별로 (인스타 하이라이트 모양) */
+  var DR_CAT = (function () { try { return sessionStorage.getItem('plot.drcat') || 'all'; } catch (e) { return 'all'; } })();
+  function catSave() { try { sessionStorage.setItem('plot.drcat', DR_CAT); } catch (e) {} }
+  var CAT_NAME = { news: '소식', mal: '그 말', tteolgi: '나무위키 털기', song: '오늘의 노래', spotlight: 'SPOTLIGHT',
+    lyric: '가사 속 이름', again: '다시 보기', followup: '후속' };
+  function catOf(it) { return it.corner || 'etc'; }
+  function catName(k) {
+    var c = ((DR && DR.corners && DR.corners.corners) || []).filter(function (x) { return x.key === k; })[0];
+    return (c && c.name) || CAT_NAME[k] || '기타';
+  }
+  function catThumb(it) {
+    var sl = slidesOf(it);
+    return sl[0] || ((it.shorts || {}).still || {}).url || String((it.shorts || {}).thumb || '');
+  }
+  function catMatch(it, kind) {
+    if (DR_CAT === 'all') return true;
+    if (DR_CAT === 'reel') return kind === 'shorts';
+    if (DR_CAT === 'card') return kind === 'card';
+    return catOf(it) === DR_CAT;
+  }
+  /* 정렬 — 쓴 순서(맥이 쓴 차례: 갈래별 몫) / 올릴 순서(편집장 등급 → 이번 주 편성표에 급한 코너 → 쓴 차례, 올린 것은 맨 뒤) */
+  var DR_SORT = (function () { try { return localStorage.getItem('plot.drsort') || 'made'; } catch (e) { return 'made'; } })();
+  function feedOrder(items) {
+    var idx = items.map(function (_, i) { return i; });
+    if (DR_SORT !== 'pub') return idx;
+    var need = {};
+    ((DR && DR.corners && DR.corners.corners) || []).forEach(function (c) { need[c.key] = Number(c.need_today || c.left || 0); });
+    var g = function (it) { return { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] != null ? { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] : 2.5; };
+    var done = function (it) { return (it.published || {}).permalink ? 1 : 0; };
+    return idx.sort(function (a, b) {
+      var x = items[a], y = items[b];
+      return done(x) - done(y) || g(x) - g(y) || (need[catOf(y)] || 0) - (need[catOf(x)] || 0) || a - b;
+    });
+  }
+  function sortBar() {
+    return '<div class="srt"><button data-sort="made" aria-pressed="' + (DR_SORT !== 'pub') + '">쓴 순서</button>' +
+      '<button data-sort="pub" aria-pressed="' + (DR_SORT === 'pub') + '">올릴 순서</button>' +
+      '<span>' + (DR_SORT === 'pub' ? '편집장 등급 → 이번 주 급한 코너 순' : '맥이 쓴 차례 (갈래별)') + '</span></div>';
+  }
+  function catRow(items) {
+    var order = [], cnt = {}, th = {};
+    items.forEach(function (it) {
+      var k = catOf(it);
+      if (!cnt[k]) { order.push(k); cnt[k] = 0; th[k] = catThumb(it); }
+      cnt[k]++;
+      if (!th[k]) th[k] = catThumb(it);
+    });
+    var reels = items.filter(function (it) { return (it.shorts || {}).form; }).length;
+    var cards = items.filter(function (it) { return (it.card || {}).form; }).length;
+    var firstThumb = items.map(catThumb).filter(Boolean)[0] || '';
+    var bt = function (k, name, n, img, icon) {
+      return '<button data-cat="' + esc(k) + '" class="' + (DR_CAT === k ? 'on' : '') + '"><span class="o"><i' +
+        (img ? ' style="background-image:url(&quot;' + esc(safeUrl(img)) + '&quot;)"' : '') + '>' + (img ? '' : icon || '') + '</i></span>' +
+        '<span class="l">' + esc(name) + '<b>' + n + '</b></span></button>';
+    };
+    return '<div class="hl">' + bt('all', '전체', items.length, firstThumb, '') +
+      order.map(function (k) { return bt(k, catName(k), cnt[k], th[k], '•'); }).join('') +
+      (reels ? bt('reel', '릴스', reels, '', '▶') : '') + (cards ? bt('card', '캐러셀', cards, '', '▦') : '') + '</div>';
+  }
   function ytId(u) {
     var m = String(u || '').match(/(?:[?&]v=|youtu\.be\/|\/shorts\/|\/embed\/|\/live\/)([\w-]{11})/);
     return m ? m[1] : '';
@@ -2045,7 +2232,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     document.querySelectorAll('[data-reel].playing').forEach(reelStop);       // 한 번에 하나만
     var id = r.getAttribute('data-vid'); if (!id) return;
     var st = Number(r.getAttribute('data-s')) || 0, en = Number(r.getAttribute('data-e')) || 0;
-    var src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&mute=1&playsinline=1&controls=1&rel=0&modestbranding=1' +
+    var src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&mute=1&playsinline=1&controls=1&rel=0&modestbranding=1&cc_load_policy=0&iv_load_policy=3' +
       (st ? '&start=' + st : '') + (en > st ? '&end=' + en : '');
     var y = document.createElement('div'); y.className = 'yv';
     y.innerHTML = '<iframe src="' + esc(src) + '" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="원본 영상"></iframe>';
@@ -2141,11 +2328,15 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function renderFeed(host) {
     var items = (DR && DR.items) || [];
     var h = '';
-    items.forEach(function (it, i) {
-      if ((it.card || {}).form) h += cardPost(it, i);
-      if ((it.shorts || {}).form) h += reelPost(it, i);
+    feedOrder(items).forEach(function (i) {
+      var it = items[i];
+      if ((it.card || {}).form && catMatch(it, 'card')) h += cardPost(it, i);
+      if ((it.shorts || {}).form && catMatch(it, 'shorts')) h += reelPost(it, i);
     });
+    if (!h) h = '<div class="drEmpty">이 카테고리엔 초안이 없습니다.</div>';
     host.insertAdjacentHTML('beforeend', h);
+    var hon = host.querySelector('.hl button.on');
+    if (hon) hon.parentNode.scrollLeft = Math.max(0, hon.offsetLeft - hon.parentNode.offsetLeft - 40);
     sfInit(host);
     host.querySelectorAll('[data-track]').forEach(function (tr) {
       tr.addEventListener('scroll', function () {
@@ -2443,6 +2634,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var b = e.target.closest('[data-fu]');
     if (b) {
       var code = b.getAttribute('data-fu');
+      if (code.indexOf('fu-') === 0) {
+        var fw = b.closest('.fu'), who = fw && fw.querySelector('.who');
+        reqAdd(code, '후속 · ' + (who ? who.textContent : ''));
+      }
       plotAction(code, code.indexOf('tr-') === 0 ? '추적 켜기' : '초안 요청');
       b.classList.add('sent');
       return;
@@ -2479,7 +2674,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var mode = drView();
     var items = (DR && DR.items) || [];
     if (!items.length) {
-      host.innerHTML = pubBox() + '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
+      host.innerHTML = reqBox() + pubBox() + '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
         '맥이 매일 오후 3시 이후 첫 스캔에서 상위 후보를 숏폼·캐러셀 초안으로 미리 써 둡니다.' +
         (DR && DR.generated_at ? '<br>마지막: ' + esc(DR.generated_at) : '') + '</div>';
       return;
@@ -2493,13 +2688,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = pubBox() + cornerBar() + modeBar +
+      host.innerHTML = reqBox() + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 오후 3시 이후 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
       return;
     }
-    host.innerHTML = pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = reqBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + esc((x.why || '').slice(0, 40)) + ')'; }).join(' · ') : '') + '</div>' +
@@ -2558,6 +2753,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (vm) { try { localStorage.setItem(DR_VIEW, vm.getAttribute('data-vmode')); } catch (x) {} renderDrafts(); return; }
     var shb = e.target.closest('[data-share]');
     if (shb) { var sp = shb.getAttribute('data-share').split(':'); openSheet(Number(sp[0]), sp[1]); return; }
+    var so = e.target.closest('[data-sort]');
+    if (so) { DR_SORT = so.getAttribute('data-sort'); try { localStorage.setItem('plot.drsort', DR_SORT); } catch (x) {} renderDrafts(); return; }
+    var ct = e.target.closest('[data-cat]');
+    if (ct) { DR_CAT = ct.getAttribute('data-cat'); catSave(); renderDrafts(); return; }
+    var rg = e.target.closest('[data-rqgo]');
+    if (rg) { reqGo(Number(rg.getAttribute('data-rqgo'))); return; }
+    var rx = e.target.closest('[data-rqx]');
+    if (rx) { reqDrop(rx.getAttribute('data-rqx')); renderDrafts(); return; }
     var pb = e.target.closest('[data-play]');
     if (pb) { var rr = pb.closest('[data-reel]'); if (rr) reelToggle(rr); return; }
     var vf = e.target.closest('[data-vfit]');
@@ -2604,6 +2807,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     .catch(function () {});
   }
   loadDrafts();
+  reqPoll();
   document.addEventListener('visibilitychange', function () {   // 홈 화면 앱은 새로 고침 버튼이 없다 — 10분 넘게 비웠다 돌아오면 다시 받는다
     if (document.visibilityState === 'visible' && Date.now() - DR_AT > 10 * 60e3 && !document.querySelector('.sheet')) loadDrafts();
   });
@@ -2633,9 +2837,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 14:43';
+    a.title = '판 10.11 15:50';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 14:43';
+    ver.textContent = '10.11 15:50';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

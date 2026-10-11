@@ -1369,7 +1369,7 @@ function check(b) {
     const r = pct ? v / 100 : v;
     if (!(r >= 0 && r <= 1) || !/^[\d.]+%?$/.test(cr)) e.story = '여담 화면 위치는 왼쪽·가운데·오른쪽, 0~1, 또는 30% 처럼 적습니다.';
   }
-  if (!b.title.trim())  e.title  = '곡 제목은 필수입니다.';
+  if (!b.title.trim())  e.title  = '3줄(맨 아래 줄)은 필수입니다.';
   if (!b.source.trim()) e.source = '출처는 필수입니다.';
   return e;
 }
@@ -1774,17 +1774,17 @@ function buildBlock(b) {
     <button class="pickBtn cutBtn" data-a="cut" type="button" disabled>✂️ 재밌는 구간 추천받기</button>
     <div class="hint" data-r="spanErr" hidden></div>
 
-    <label>곡</label>
-    <input type="text" data-f="title" placeholder="곡 제목">
+    <label>3줄 <span class="opt">— 맨 아래 큰 글씨 · 필수 (곡 제목·영상 제목·내용 무엇이든)</span></label>
+    <input type="text" data-f="title" placeholder="곡 제목 · 영상 제목 · 내용">
     <div class="hint" data-r="titleErr" hidden></div>
 
-    <label>아티스트</label>
-    <input type="text" data-f="artist" placeholder="아티스트명">
+    <label>2줄 <span class="opt">— 가운데 큰 글씨 (아티스트·누가·무엇)</span></label>
+    <input type="text" data-f="artist" placeholder="아티스트 · 누가·무엇">
 
-    <label>피처링 <span class="opt">— 선택, 적은 그대로 제목 옆에 붙습니다</span></label>
+    <label>피처링 <span class="opt">— 선택, 적은 그대로 3줄 옆에 붙습니다</span></label>
     <input type="text" data-f="feat" placeholder="(feat. ...)">
 
-    <label>후킹 <span class="opt">— 선택, 제목 위 한 줄</span></label>
+    <label>1줄 <span class="opt">— 맨 위 큰 글씨 · 선택 (후킹·제목) — 세 줄은 같은 크기로 이어 읽힙니다</span></label>
     <input type="text" data-f="hook" placeholder="짧은 한마디">
 
     <div data-r="storyBox" hidden>
@@ -2145,7 +2145,7 @@ const FIT_LS    = -5.61;          // .line 설계 자간 (-8.5 × 0.66)
 const FIT_CUT   = (1920 - 110) * 0.66;
 
 function fitFrame(root) {
-  const names = { cat: '카테고리', hook: '후킹', artist: '아티스트', title: '곡 제목' };
+  const names = { cat: '카테고리', hook: '1줄', artist: '2줄', title: '3줄' };
   const rep = { over: [], shrunk: [], wrapFeat: false, cut: [] };
   const leftOf = (n) => parseFloat(getComputedStyle(n).left) || 0;
 
@@ -3031,7 +3031,7 @@ function lyUse(r) {
 }
 async function lyLoad() {
   const b = PK.b; if (!b) return;
-  if (!b.title.trim()) { toast('곡 제목을 먼저 넣어주세요'); return; }
+  if (!b.title.trim()) { toast('3줄(맨 아래 줄)을 먼저 넣어주세요'); return; }
   LY.loading = true; lyPaintList();
   try {
     LY.cands = await lySearch(b); LY.ci = 0;
@@ -3787,9 +3787,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 14:43';
+    a.title = '판 10.11 15:50';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 14:43';
+    ver.textContent = '10.11 15:50';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
