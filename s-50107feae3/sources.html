@@ -391,6 +391,24 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 /* 요청한 초안 — 앱에서 고른 소재·후속 기획이 맥에서 써지는 동안 (2026-10-11) */
 .rq{border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:12px 0}
 .rq h5{margin:0 0 6px; font-size:13px}
+.sy{border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:12px 0}
+.sy h5{margin:0 0 8px; font-size:13px; display:flex; justify-content:space-between; gap:8px}
+.sy h5 small{font-weight:500; color:var(--dim)}
+.sy .it{border-top:1px solid var(--line)} .sy .it:first-of-type{border-top:0}
+.sy .hd{display:block; width:100%; text-align:left; background:none; border:0; color:var(--text); padding:9px 0; font:inherit}
+.sy .hd b{font-size:14px} .sy .hd small{display:block; font-size:12.5px; color:var(--muted); margin-top:2px}
+.sy .hd small.w{color:var(--dim); font-size:11.5px}
+.sy .ln{display:inline-block; font-size:11px; font-weight:700; color:var(--amber); border:1px solid var(--amber); border-radius:999px; padding:0 7px; margin-right:6px}
+.sy .cd{margin:4px 0 12px; padding:10px; border-radius:10px; background:rgba(127,127,127,.07)}
+.sy .tl span{display:block; font-weight:800; font-size:15px; line-height:1.35}
+.sy .mt{font-size:12px; color:var(--dim); margin-top:5px}
+.sy .cp{white-space:pre-wrap; font-size:13px; line-height:1.6; margin-top:8px; max-height:9.6em; overflow:auto}
+.sy .yv{margin-top:8px} .sy .yv iframe{width:100%; aspect-ratio:16/9; border:0; border-radius:8px}
+.sy .yv button,.sy .pl button{border:1px solid var(--line); border-radius:999px; background:none; color:var(--text); padding:6px 11px; font-size:13px}
+.sy .go{display:block; width:100%; margin-top:10px; padding:10px; border-radius:10px; border:1px solid var(--amber); background:rgba(232,179,74,.12); color:var(--text); font-weight:700}
+.sy .go small{display:block; font-weight:500; font-size:11.5px; color:var(--dim)}
+.sy .pl{display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-top:8px; padding-top:8px; border-top:1px solid var(--line)}
+.sy .pl span{font-size:12px; color:var(--dim); margin-right:2px} .sy .pl em{font-style:normal; color:var(--dim); font-size:11px; margin-left:5px}
 .rq .r{display:flex; align-items:center; gap:8px; padding:6px 0; border-top:1px solid var(--line); font-size:13px}
 .rq .r:first-of-type{border-top:0}
 .rq .r .t{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
@@ -2376,6 +2394,77 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (f) return { st: 'bad', why: f.reason };
     return { st: Date.now() - r.at > REQ_WAIT ? 'late' : 'wait' };
   }
+  /* ── 서사형 오늘의 노래 (collectors/story_picks · 2026-10-11 규효) ──
+     맥이 아침에 고른 2곡(씬 하나 + 대중 하나)을 미리 만들어 둔다. 고르면 텔레그램에서 곡 영상·후렴 → 양식 → 화면 위치 → 제작.
+     '다른 후보' 를 누르면 맥이 그 곡도 만든다 (5~10분, 하루 상한 밖). */
+  var SY = null, SY_OPEN = {};
+  function loadStories() {
+    return fetch('./stories.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { SY = d; if (GRP === 'draft') renderDrafts(); }).catch(function () {});
+  }
+  function syClock(s) { s = Math.max(0, Math.round(Number(s) || 0)); return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2); }
+  function storyBox() {
+    if (!SY || (!(SY.items || []).length && !(SY.pool || []).length)) return '';
+    var bud = SY.budget || {};
+    var h = '<div class="sy"><h5>📖 서사형 오늘의 노래<small>' + (bud.cap ? '오늘 $' + Number(bud.spent || 0).toFixed(2) + ' / $' + bud.cap : '') + '</small></h5>';
+    (SY.items || []).forEach(function (it) {
+      var open = !!SY_OPEN[it.key], c0 = (it.cands || [])[0] || {};
+      h += '<div class="it' + (open ? ' on' : '') + '"><button class="hd" data-syo="' + esc(it.key) + '">' +
+        '<span class="ln">' + esc(it.lane || '') + '</span><b>' + esc(it.artist) + ' — ' + esc(it.song) + '</b>' +
+        '<small>' + esc(String(c0.title || '').replace(/ \| /g, ' / ')) + '</small>' +
+        '<small class="w">' + esc(String(it.why || '').slice(0, 70)) + ' · ' + esc(String(it.made_at || '').slice(5, 16).replace('T', ' ')) + '</small></button>';
+      if (open) {
+        (it.cands || []).forEach(function (c, i) {
+          var cuts = c.cuts || [[c.clip_s, c.clip_e]], len = cuts.reduce(function (a, x) { return a + (x[1] - x[0]); }, 0);
+          var yid = ytId(c.scene_url);
+          h += '<div class="cd"><div class="tl">' + String(c.title || '').split(' | ').map(function (x) { return '<span>' + esc(x) + '</span>'; }).join('') + '</div>' +
+            '<div class="mt">' + (i + 1) + '안 · ' + esc(c.kind || '') + ' — ' + esc(c.angle || '') + '</div>' +
+            '<div class="mt">🎙 ' + esc(String(c.scene_title || '').slice(0, 60)) + (c.scene_channel ? ' (' + esc(c.scene_channel) + ')' : '') +
+            ' ' + syClock(c.clip_s) + '–' + syClock(c.clip_e) + ' · ' + Math.round(len) + '초' + (cuts.length > 1 ? ' (✂️ ' + (cuts.length - 1) + '곳 덜어냄)' : '') + '</div>' +
+            (yid ? '<div class="yv" data-syv="' + esc(yid) + ':' + Math.floor(c.clip_s || 0) + ':' + Math.ceil(c.clip_e || 0) + '"><button>▶ 장면 보기</button></div>' : '') +
+            '<div class="cp">' + esc(c.caption || '') + '</div>' +
+            '<button class="go" data-sygo="' + esc(it.key) + ':' + i + '">이걸로 만들기<small>텔레그램에서 곡 영상·후렴 → 양식 → 화면 위치</small></button></div>';
+        });
+        if ((it.notes || []).length) h += '<div class="mt">ℹ️ ' + esc(it.notes.join(' · ')) + '</div>';
+      }
+      h += '</div>';
+    });
+    if ((SY.pool || []).length) {
+      h += '<div class="pl"><span>다른 후보</span>' + SY.pool.map(function (c) {
+        return '<button data-syq="' + esc(c.key) + '" title="' + esc(c.why || '') + '">' + esc(c.artist) + ' — ' + esc(c.song) + '<em>' + esc(c.lane || '') + '</em></button>';
+      }).join('') + '</div>';
+    }
+    return h + '</div>';
+  }
+  function syClick(e) {
+    var o = e.target.closest('[data-syo]');
+    if (o) { var k = o.getAttribute('data-syo'); SY_OPEN[k] = !SY_OPEN[k]; renderDrafts(); return true; }
+    var v = e.target.closest('[data-syv]');
+    if (v && !v.querySelector('iframe')) {
+      var p = v.getAttribute('data-syv').split(':');
+      v.innerHTML = '<iframe src="https://www.youtube.com/embed/' + encodeURIComponent(p[0]) + '?start=' + p[1] + '&end=' + p[2] +
+        '&autoplay=1&playsinline=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+      return true;
+    }
+    var g = e.target.closest('[data-sygo]');
+    if (g) {
+      var q = g.getAttribute('data-sygo').split(':');
+      toast('텔레그램이 열리면 보내기(시작)를 눌러 주세요 — 곡 영상·후렴을 찾습니다 (1~3분)');
+      viaTelegram('sy-' + q[0] + '-' + q[1]);
+      return true;
+    }
+    var s = e.target.closest('[data-syq]');
+    if (s) {
+      var key = s.getAttribute('data-syq'), lab = s.textContent;
+      sheetOf('서사형 초안 만들기 — ' + lab.slice(0, 30), [
+        ['y', '이 곡으로 만들기', '맥이 여담 영상을 찾아 받아쓰고 초안을 씁니다 (5~10분, 곡당 약 $0.1~0.6 · 하루 상한 밖)'],
+        ['x', '닫기', '']], function (r) { if (r === 'y') plotAction('sq-' + key, '서사 초안 요청'); });
+      return true;
+    }
+    return false;
+  }
+  loadStories();
+
   function reqBox() {
     var m = reqGet(), ks = Object.keys(m).sort(function (a, b) { return m[b].at - m[a].at; });
     if (!ks.length) return '';
@@ -2953,7 +3042,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = reqBox() + evNote(items) + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = reqBox() + storyBox() + evNote(items) + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 오후 3시 이후 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
@@ -3026,6 +3115,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (so) { DR_SORT = so.getAttribute('data-sort'); try { localStorage.setItem('plot.drsort', DR_SORT); } catch (x) {} renderDrafts(); return; }
     var ct = e.target.closest('[data-cat]');
     if (ct) { DR_CAT = ct.getAttribute('data-cat'); catSave(); renderDrafts(); return; }
+    if (syClick(e)) return;
     var rg = e.target.closest('[data-rqgo]');
     if (rg) { reqGo(Number(rg.getAttribute('data-rqgo'))); return; }
     var rx = e.target.closest('[data-rqx]');
@@ -3079,7 +3169,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   loadDrafts();
   reqPoll();
   document.addEventListener('visibilitychange', function () {   // 홈 화면 앱은 새로 고침 버튼이 없다 — 10분 넘게 비웠다 돌아오면 다시 받는다
-    if (document.visibilityState === 'visible' && Date.now() - DR_AT > 10 * 60e3 && !document.querySelector('.sheet')) loadDrafts();
+    if (document.visibilityState === 'visible' && Date.now() - DR_AT > 10 * 60e3 && !document.querySelector('.sheet')) { loadDrafts(); loadStories(); }
   });
 
   fetch('./magazines.json', { cache: 'no-cache' })
@@ -3107,9 +3197,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 21:09';
+    a.title = '판 10.11 22:54';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 21:09';
+    ver.textContent = '10.11 22:54';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
