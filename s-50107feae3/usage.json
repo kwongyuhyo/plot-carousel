@@ -1,0 +1,16 @@
+{
+ "generated_at": "2026-10-12T07:07+09:00",
+ "cycle_start": "2026-09-15",
+ "next_credit": "2026-10-15",
+ "credit": 100.0,
+ "spent": 3.88,
+ "today": 0,
+ "per_day": 0.14,
+ "calls": 0,
+ "by": [
+  {
+   "name": "장부 전 (Console)",
+   "usd": 3.88
+  }
+ ]
+}

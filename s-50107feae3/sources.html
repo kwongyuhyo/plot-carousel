@@ -391,6 +391,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 /* 요청한 초안 — 앱에서 고른 소재·후속 기획이 맥에서 써지는 동안 (2026-10-11) */
 .rq{border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:12px 0}
 .rq h5{margin:0 0 6px; font-size:13px}
+.ug{display:block; width:100%; text-align:left; background:none; border:1px solid var(--line); border-radius:12px; padding:9px 12px; margin:10px 0 0; color:var(--text); font:inherit; font-size:13px}
+.ug small{color:var(--dim); font-size:11.5px} .ug .bar{display:block; height:4px; border-radius:2px; background:var(--line); margin:6px 0 5px; overflow:hidden}
+.ug .bar i{display:block; height:100%; background:var(--amber)}
 .sy{border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:12px 0}
 .sy h5{margin:0 0 8px; font-size:13px; display:flex; justify-content:space-between; gap:8px}
 .sy h5 small{font-weight:500; color:var(--dim)}
@@ -2467,6 +2470,24 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   loadStories();
 
+  /* ── 요금 장부 (collectors/usage_ledger · 10/12 규효 "요금이 어떤 걸 기준으로") — Max 5x API 크레딧 월 $100 (매달 15일) ── */
+  var UG = null;
+  fetch('./usage.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { UG = d; if (GRP === 'draft') renderDrafts(); }).catch(function () {});
+  function usageBox() {
+    if (!UG || UG.spent == null) return '';
+    var pct = UG.credit ? Math.min(100, Math.round(UG.spent / UG.credit * 100)) : 0;
+    return '<button class="ug" data-ug="1"><span>API $' + Number(UG.spent).toFixed(2) + ' / $' + Number(UG.credit || 0).toFixed(0) +
+      ' <small>(' + esc(String(UG.next_credit || '').slice(5).replace('-', '/')) + ' 새 크레딧)</small></span>' +
+      '<span class="bar"><i style="width:' + pct + '%"></i></span>' +
+      '<small>오늘 $' + Number(UG.today || 0).toFixed(2) + ' · 하루 평균 $' + Number(UG.per_day || 0).toFixed(2) + '</small></button>';
+  }
+  function usageSheet() {
+    sheetOf('이번 크레딧 주기 (' + (UG.cycle_start || '') + '~) — 기능별', (UG.by || []).map(function (b) {
+      return ['x', b.name + ' — $' + Number(b.usd).toFixed(2), ''];
+    }).concat([['x', '닫기', '맥이 Claude 를 부를 때마다 장부에 적은 값 · 실제 청구는 Console 비용 화면']]), function () {});
+  }
+
   function reqBox() {
     var m = reqGet(), ks = Object.keys(m).sort(function (a, b) { return m[b].at - m[a].at; });
     if (!ks.length) return '';
@@ -3044,7 +3065,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = reqBox() + storyBox() + evNote(items) + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = usageBox() + reqBox() + storyBox() + evNote(items) + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 오후 3시 이후 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
@@ -3118,6 +3139,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var ct = e.target.closest('[data-cat]');
     if (ct) { DR_CAT = ct.getAttribute('data-cat'); catSave(); renderDrafts(); return; }
     if (syClick(e)) return;
+    if (e.target.closest('[data-ug]') && UG) { usageSheet(); return; }
     var rg = e.target.closest('[data-rqgo]');
     if (rg) { reqGo(Number(rg.getAttribute('data-rqgo'))); return; }
     var rx = e.target.closest('[data-rqx]');
@@ -3199,9 +3221,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.12 06:06';
+    a.title = '판 10.12 07:07';
     var ver = document.createElement('span');
-    ver.textContent = '10.12 06:06';
+    ver.textContent = '10.12 07:07';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
