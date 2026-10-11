@@ -421,6 +421,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .ig .who span.crn{display:inline-block; width:auto; vertical-align:1px}
 .ig .crn{display:inline-block; margin-left:6px; padding:0 7px; border:1px solid var(--line); border-radius:999px; font-size:11px; color:var(--muted)}
 .ig .pubd{margin:6px 14px 0; font-size:13px; color:var(--ok, #2e9e5b)}
+.ig .pubd.sch{color:var(--amber)}
 .fu{border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:12px 0}
 .fu .top{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
 .fu .kd{font-size:11px; border-radius:999px; padding:2px 8px; border:1px solid var(--line); color:var(--muted)}
@@ -1938,7 +1939,15 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function pubMark(it) {
     var p = it.published || {};
-    return p.permalink ? '<div class="pubd">✓ 발행됨 · <a href="' + esc(p.permalink) + '" target="_blank" rel="noopener">인스타에서 보기</a></div>' : '';
+    if (p.permalink) {
+      schedSet(it.key, null);
+      return '<div class="pubd">✓ 발행됨 · <a href="' + esc(p.permalink) + '" target="_blank" rel="noopener">인스타에서 보기</a></div>';
+    }
+    var loc = it.key && schedGet()[it.key], sv = it.scheduled;
+    if (loc && loc.at < Date.now() - 2 * 3600e3) { schedSet(it.key, null); loc = null; }
+    var lab = sv && sv.at ? String(sv.at).slice(5, 16).replace('T', ' ').replace('-', '/') : loc ? loc.label : '';
+    return lab ? '<div class="pubd sch">⏰ ' + esc(lab) + ' 예약' + (sv ? '됨' : ' 요청함') +
+      ' · <button class="more" data-sx="' + esc(it.key) + '" style="padding:0">취소</button></div>' : '';
   }
   function cardPost(it, i) {
     var cd = it.card, sl = slidesOf(it), cvs = cd.covers || [], ci = drCovers()[it.source.id] || 0;
@@ -2188,26 +2197,76 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var cvs = (it.card || {}).covers || [], ci = drCovers()[(it.source || {}).id] || 0;
     return String((cvs[ci] || {}).key || 'A').toUpperCase();
   }
-  function openPublish(it) {
+  function openPublish(it, at) {
     var cd = it.card || {}, sl = slidesOf(it), cv = coverKey(it);
-    var code = 'pb-' + it.key + '-' + cv, ch = chGet();
+    var code = at ? 'sc-' + it.key + '-' + cv + nextAt(at).dd + at.replace(':', '') : 'pb-' + it.key + '-' + cv, ch = chGet();
+    var when = at ? nextAt(at).label : '';
     // 지문 — 맥이 지금 가진 초안이 이 화면과 같을 때만 올린다 (다시 쓰기 뒤 옛 화면으로 확정하는 일 막기)
     var tok = ((cd.preview || {}).v || {})[cv] || '';
     if (sl.length > 10) { toast('10장을 넘어 바로 발행할 수 없습니다 — 캐러셀 스튜디오에서 줄여 주세요'); return; }
     if (ch.url && ch.key && !tok) { toast('앱을 새로 고친 뒤 다시 눌러 주세요 (초안 지문이 없습니다)'); return; }
     var sh = document.createElement('div'); sh.className = 'sheet pubsheet';
     sh.innerHTML = '<div class="pn"><div class="hd"></div>' +
-      '<div style="padding:0 20px 8px;font-weight:800">이대로 인스타에 올릴까요? · 표지 ' + esc(cv) + ' · ' + sl.length + '장</div>' +
+      '<div style="padding:0 20px 8px;font-weight:800">' + (at ? esc(when) + ' 에 이대로 올릴까요?' : '이대로 인스타에 올릴까요?') +
+      ' · 표지 ' + esc(cv) + ' · ' + sl.length + '장</div>' +
       '<div class="pv">' + sl.map(function (u) { return '<img referrerpolicy="no-referrer" src="' + esc(u) + '" alt="">'; }).join('') + '</div>' +
       '<div class="cp">' + esc(cd.caption || '') + '</div>' +
       ((cd.confirm || []).length ? '<div class="warn">확인 필요 ' + (cd.confirm || []).length + '건 — 편집 정보에서 먼저 보세요</div>' : '') +
-      '<button data-act="go"><b>📤 발행 확정</b><small>' + (ch.url && ch.key ? '맥이 바로 올립니다' : '텔레그램에서 한 번 더 [발행 확정] 을 눌러야 올라갑니다') + '</small></button>' +
+      '<button data-act="go"><b>' + (at ? '⏰ ' + esc(when) + ' 예약 확정' : '📤 발행 확정') + '</b><small>' +
+      (ch.url && ch.key ? (at ? '맥이 그 시각에 올립니다 (맥이 켜져 있어야 합니다)' : '맥이 바로 올립니다')
+        : '텔레그램에서 한 번 더 [' + (at ? '예약 확정' : '발행 확정') + '] 을 눌러야 ' + (at ? '예약됩니다' : '올라갑니다')) + '</small></button>' +
       '<button data-act="no">취소</button></div>';
     sh.addEventListener('click', function (e) {
       if (e.target === sh) { sh.remove(); return; }
       var b = e.target.closest('[data-act]'); if (!b) return;
       sh.remove();
-      if (b.getAttribute('data-act') === 'go') plotAction(code, '발행 요청', true, tok);
+      if (b.getAttribute('data-act') === 'go') {
+        plotAction(code, at ? '예약 요청' : '발행 요청', true, tok);
+        if (at) { schedSet(it.key, { at: nextAt(at).ms, label: when }); if (GRP === 'draft') renderDrafts(); }
+      }
+    });
+    document.body.appendChild(sh);
+  }
+  /* ── 예약 발행 (collectors/app_actions sc/sx · collectors/publish_slots) ── */
+  var SCHED_KEY = 'plot.sched';
+  function schedGet() { try { return JSON.parse(localStorage.getItem(SCHED_KEY) || '{}') || {}; } catch (e) { return {}; } }
+  function schedSet(key, v) {
+    var m = schedGet(); if (v) m[key] = v; else delete m[key];
+    try { localStorage.setItem(SCHED_KEY, JSON.stringify(m)); } catch (e) {}
+  }
+  function nextAt(hhmm) {                       // 그 시각이 오늘 5분 안이거나 지났으면 내일
+    var now = new Date(), k = new Date(now.getTime() + 9 * 3600e3);
+    var h = Number(hhmm.slice(0, 2)), m = Number(hhmm.slice(3, 5));
+    var t = Date.UTC(k.getUTCFullYear(), k.getUTCMonth(), k.getUTCDate(), h, m) - 9 * 3600e3;
+    if (t <= now.getTime() + 5 * 60e3) t += 86400e3;
+    var d = new Date(t + 9 * 3600e3);
+    return { ms: t, dd: ('0' + d.getUTCDate()).slice(-2), label: (d.getUTCMonth() + 1) + '/' + d.getUTCDate() + ' ' + hhmm };
+  }
+  function slotChips() {
+    var sl = ((DR && DR.slots) || {}).card || [];
+    return sl.map(function (r) {
+      return { at: r.at, why: r.from + '~' + r.to + '시 · 평소의 ' + r.mult + '배 (' + r.n + '편)' };
+    });
+  }
+  function openSchedule(it) {
+    var chips = slotChips();
+    var sh = document.createElement('div'); sh.className = 'sheet';
+    sh.innerHTML = '<div class="pn"><div class="hd"></div>' +
+      '<div style="padding:0 20px 8px;font-weight:800">언제 올릴까요? <span style="font-weight:400;color:var(--dim);font-size:12px">표지 ' + esc(coverKey(it)) + '</span></div>' +
+      (chips.length ? chips.map(function (c) {
+        return '<button data-at="' + esc(c.at) + '"><b>' + esc(nextAt(c.at).label) + '</b> 추천<small>' + esc(c.why) + ' — 지난 발행 글 기준</small></button>';
+      }).join('') : '<div style="padding:0 20px 8px;font-size:13px;color:var(--dim)">아직 추천할 만큼 기록이 없습니다</div>') +
+      '<div style="padding:8px 20px;display:flex;gap:8px;align-items:center"><input type="time" id="schAt" value="20:00" ' +
+      'style="flex:1;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);font-size:15px">' +
+      '<button data-at="custom" style="width:auto;padding:8px 14px;border:1px solid var(--line);border-radius:8px">이 시각</button></div>' +
+      '<button data-at="">취소</button></div>';
+    sh.addEventListener('click', function (e) {
+      if (e.target === sh) { sh.remove(); return; }
+      var b = e.target.closest('[data-at]'); if (!b) return;
+      var at = b.getAttribute('data-at');
+      if (at === 'custom') at = (document.getElementById('schAt').value || '').slice(0, 5);
+      sh.remove();
+      if (/^\d{2}:\d{2}$/.test(at)) openPublish(it, at);
     });
     document.body.appendChild(sh);
   }
@@ -2217,6 +2276,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var pubd = (it.published || {}).permalink;
     if (kind === 'card' && !pubd && slidesOf(it).length && (it.card || {}).caption) {
       acts.push(['pub', '바로 발행', '맥이 미리보기 그대로 인스타에 올립니다 (표지 ' + coverKey(it) + ') — 확인을 한 번 더 거칩니다']);
+      var best = slotChips()[0];
+      acts.push(['sch', '예약 발행', (best ? '추천 ' + best.at + ' (' + best.why + ')' : '시각을 골라 예약') + ' — 맥이 켜져 있으면 그 시각에 올립니다']);
     }
     acts.push(['ok', '채택 — 좋은 초안', actSent('ok-' + it.key) ? '이미 보냈습니다' : '편집장 보정에 씁니다']);
     acts.push(['no', '버림 — 이유 고르기', actSent('no-' + it.key) ? '이미 보냈습니다' : '버린 이유는 편집장 보정에 들어갑니다']);
@@ -2225,6 +2286,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function runItemAct(it, a) {
     if (a === 'pub') { openPublish(it); return true; }
+    if (a === 'sch') { openSchedule(it); return true; }
     if (a === 'ok') { plotAction('ok-' + it.key, '채택'); return true; }
     if (a === 'rd') { plotAction('rd-' + it.key, '다시 쓰기'); return true; }
     if (a === 'no') {
@@ -2412,6 +2474,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (vm) { try { localStorage.setItem(DR_VIEW, vm.getAttribute('data-vmode')); } catch (x) {} renderDrafts(); return; }
     var shb = e.target.closest('[data-share]');
     if (shb) { var sp = shb.getAttribute('data-share').split(':'); openSheet(Number(sp[0]), sp[1]); return; }
+    var sx = e.target.closest('[data-sx]');
+    if (sx) {
+      var k = sx.getAttribute('data-sx');
+      sheetOf('예약을 취소할까요?', [['y', '예약 취소', ''], ['n', '그대로 두기', '']], function (r) {
+        if (r === 'y') { plotAction('sx-' + k, '예약 취소'); schedSet(k, null); renderDrafts(); }
+      });
+      return;
+    }
     var mc = e.target.closest('[data-morecap]');
     if (mc) { var cp = mc.previousElementSibling; if (cp) cp.classList.remove('cl'); mc.remove(); return; }
     var c = e.target.closest('[data-cv]');
@@ -2462,9 +2532,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 07:21';
+    a.title = '판 10.11 11:00';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 07:21';
+    ver.textContent = '10.11 11:00';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
