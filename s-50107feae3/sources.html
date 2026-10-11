@@ -236,7 +236,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .grp .base{font-size:12px; color:var(--dim); font-family:var(--mono)}
 
 .bar{position:fixed; left:0; right:0; bottom:0; z-index:50;
-  background:rgba(10,10,12,.94); backdrop-filter:blur(8px);
+  background:var(--bg); backdrop-filter:blur(8px);
   border-top:1px solid var(--line);
   padding:12px 22px calc(12px + env(safe-area-inset-bottom));}
 .bar .in{max-width:620px; margin:0 auto; display:flex; align-items:center; gap:12px}
@@ -274,7 +274,7 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .fwNew{font-size:12.5px; color:var(--amber); font-weight:700}
 .fwBtn{border:1px solid var(--line); border-radius:6px; background:none; color:var(--text);
   font:inherit; font-size:13px; padding:5px 9px}
-.fwBtn.on{background:rgba(232,179,74,.16); border-color:rgba(232,179,74,.75); color:#f3cf86}
+.fwBtn.on{background:rgba(232,179,74,.16); border-color:rgba(232,179,74,.75); color:var(--amber)}
 .fwList{margin:7px 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:4px}
 .fwList li{font-size:13px; color:var(--muted); line-height:1.5}
 .fwList a{color:var(--text); text-decoration:none}
@@ -286,13 +286,13 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   border-radius:12px; padding:16px; width:100%; max-width:620px}
 #formSheet h3{margin:0 0 4px; font-size:15px}
 #formSheet p{margin:0 0 10px; font-size:13px; color:var(--muted)}
-#formSheet textarea{width:100%; height:44vh; background:#0c0d10; color:var(--text);
+#formSheet textarea{width:100%; height:44vh; background:var(--bg); color:var(--text);
   border:1px solid var(--line); border-radius:8px; padding:10px;
   font-family:ui-monospace,Menlo,monospace; font-size:13px; line-height:1.55}
 #formSheet .row{display:flex; gap:8px; margin-top:10px}
 #formSheet .row button{flex:1; border:1px solid var(--line); border-radius:8px;
   background:none; color:var(--text); font:inherit; font-size:14px; padding:10px}
-#formSheet .row button.primary{background:var(--text); color:#0A0A0C; border-color:var(--text)}
+#formSheet .row button.primary{background:var(--text); color:var(--bg); border-color:var(--text)}
 .send{background:var(--amber); border:0; border-radius:5px; color:#17130A;
   font:inherit; font-size:14px; font-weight:800; padding:10px 18px; cursor:pointer;
   letter-spacing:-.015em}
@@ -322,7 +322,8 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .pub{border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:calc(var(--u)*2) 0; font-size:13px; color:var(--dim)}
 .pub .row{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap}
 .pub b{font-size:20px; color:var(--text); letter-spacing:-.02em} .pub b.ok{color:var(--pick)}
-.pub .bar{height:5px; border-radius:3px; background:var(--hair); margin:7px 0 4px; overflow:hidden}
+.pub .bar{position:static; z-index:auto; padding:0; border:0; backdrop-filter:none;
+  height:5px; border-radius:3px; background:var(--hair); margin:7px 0 4px; overflow:hidden}
 .pub .bar i{display:block; height:100%; background:var(--amber)} .pub .bar i.ok{background:var(--pick)}
 .pub .days{display:flex; gap:3px; margin-top:6px} .pub .days span{flex:1; text-align:center; font-size:10.5px}
 .pub .days em{display:block; font-style:normal; height:22px; border-radius:3px; background:var(--hair); position:relative}
@@ -379,9 +380,9 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
   font-size:32px; line-height:1; color:#606060; white-space:nowrap}
 .sf .over{outline:4px dashed #ff5a5f; outline-offset:10px}
 .sf .empty{opacity:.35}
-.ig .reel .rk{position:absolute; top:10px; left:10px; display:flex; flex-direction:column; align-items:flex-start; gap:5px; z-index:2; pointer-events:none}
-.ig .reel .rk span{color:#fff; font-size:11.5px; background:rgba(0,0,0,.55); padding:3px 8px; border-radius:6px}
-.ig .reel .rk span.bad{background:rgba(220,50,60,.9)}
+.ig .rk{display:flex; flex-wrap:wrap; gap:5px; padding:8px 14px 0}
+.ig .rk span{color:var(--muted); font-size:12px; background:var(--panel); border:1px solid var(--line); padding:3px 8px; border-radius:6px}
+.ig .rk span.bad{color:#d6404a; background:rgba(220,50,60,.10); border-color:rgba(220,50,60,.55)}
 .ig .reel .pl{position:absolute; right:10px; top:10px; z-index:2; width:40px; height:40px; border-radius:50%;
   background:rgba(0,0,0,.5); display:flex; align-items:center; justify-content:center}
 .ig .reel .pl svg{width:18px; height:18px}
@@ -403,10 +404,12 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .ig details .chk{color:var(--amber)}
 .ig .thumbs{display:flex; gap:6px; overflow:auto; margin:6px 0}
 .sheet{position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:50; display:flex; align-items:flex-end}
-.sheet .pn{width:100%; background:var(--panel); border-radius:14px 14px 0 0; padding:10px 0 calc(16px + env(safe-area-inset-bottom))}
+.sheet .pn{width:100%; background:var(--panel); border-radius:14px 14px 0 0; padding:10px 0 calc(16px + env(safe-area-inset-bottom));
+  max-height:88vh; max-height:88dvh; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch}
 .sheet .pn .hd{width:36px; height:4px; border-radius:2px; background:var(--line); margin:0 auto 10px}
 .sheet .pn button{display:block; width:100%; text-align:left; background:none; border:0; color:var(--text); padding:14px 20px; font-size:15px}
 .sheet .pn button small{display:block; color:var(--dim); font-size:12px; margin-top:2px}
+@supports (-webkit-touch-callout:none){ input, textarea, select{font-size:16px !important} }
 .toast{position:fixed; left:50%; bottom:calc(30px + env(safe-area-inset-bottom)); transform:translateX(-50%); background:#262626; color:#fff;
   padding:10px 16px; border-radius:10px; font-size:13.5px; z-index:60}
 /* 편성표 · 후속 기획 · 앱 버튼 (2026-10-11) */
@@ -901,7 +904,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
             '</button>' +
             '<button class="btn' + (m === 'skip' ? ' off' : '') + '" data-act="skip">' +
               (m === 'skip' ? '건너뜀' : '건너뛰기') + '</button>' +
-            '<a class="btn link" href="' + esc(c.url) + '" target="_blank" rel="noopener">원문 →</a>' +
+            '<a class="btn link" href="' + escU(c.url) + '" target="_blank" rel="noopener">원문 →</a>' +
           '</div>' +
           (m === 'pick' || m === 'drafted' ?
             '<input class="angle" data-act="angle" placeholder="' +
@@ -1131,7 +1134,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var det = (blk.detail || []).map(function (t) {
       var posts = (t.posts || []).map(function (x) {
         return '<div class="q">' + esc(x.at) + ' @' + esc(x.from) +
-               (x.url ? ' <a class="qa" href="' + esc(x.url) + '" target="_blank" rel="noopener">' +
+               (x.url ? ' <a class="qa" href="' + escU(x.url) + '" target="_blank" rel="noopener">' +
                         esc(x.head) + '</a>' : ' ' + esc(x.head)) + '</div>';
       }).join('');
       return '<details class="quiet"><summary>' + esc(t.theme) + ' — ' + esc(t.stat) +
@@ -1205,14 +1208,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       var arts = (s.articles || []);
       var head = arts[0];
       var rest = arts.slice(1).map(function (a) {
-        return '<a href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
+        return '<a href="' + escU(a.url) + '" target="_blank" rel="noopener">' +
                esc(a.title) + (a.source ? ' <span class="src">' + esc(a.source) + '</span>' : '') +
                '</a>';
       }).join('');
       out.push('<div class="ns">' +
         '<div class="who">' + esc(s.entity) + '</div>' +
         (head
-          ? '<a class="lede" href="' + esc(head.url) + '" target="_blank" rel="noopener">' +
+          ? '<a class="lede" href="' + escU(head.url) + '" target="_blank" rel="noopener">' +
             esc(head.title) + '</a>'
           : '<div class="lede">기사를 못 불러왔습니다 — 맥에서 스캔이 돌면 붙습니다</div>') +
         '<div class="sig"><span class="mult">' + s.multiple + '배</span> · ' + esc(s.why || '') +
@@ -1230,7 +1233,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       var qs = quiet.map(function (s) {
         var a = (s.articles || [])[0];
         return '<div class="q">' + esc(s.entity) + ' · ' + s.multiple + '배 · ' + esc(s.why) +
-               (a ? '<a class="qa" href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
+               (a ? '<a class="qa" href="' + escU(a.url) + '" target="_blank" rel="noopener">' +
                     esc(a.title) + '</a>' : '') + '</div>';
       }).join('');
       out.push('<details class="quiet"><summary>조용한 급상승 ' + quiet.length +
@@ -1274,11 +1277,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!rows.length) return '';
     var body = rows.map(function (r) {
       var on = (tracks[r.name] !== undefined) ? tracks[r.name] : !!r.tracked;
-      var meta = '매거진 ' + r.accounts.length + '곳 · 글 ' + r.posts + '건 · ' +
+      var meta = '매거진 ' + (r.accounts || []).length + '곳 · 글 ' + r.posts + '건 · ' +
                  r.days + '일째';
       var items = (r.latest || []).map(function (x) {
-        return '<li><span class="w">' + esc(x.at.slice(5, 10)) + ' @' + esc(x.account) +
-               '</span> <a href="' + esc(x.url) + '" target="_blank" rel="noopener">' +
+        return '<li><span class="w">' + esc(String(x.at || '').slice(5, 10)) + ' @' + esc(x.account) +
+               '</span> <a href="' + escU(x.url) + '" target="_blank" rel="noopener">' +
                esc(x.head || '(캡션 없음)') + '</a></li>';
       }).join('');
       return '<div class="fwRow" data-name="' + esc(r.name) + '">' +
@@ -1675,7 +1678,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         // 어디서 찾을지 — 이야기는 말보다 화면에서 잡힌다.
         var lnk = (it.links || []).length
           ? '<div class="plinks">' + it.links.map(function (l) {
-              return '<a href="' + esc(l.url) + '" target="_blank" rel="noopener">' +
+              return '<a href="' + escU(l.url) + '" target="_blank" rel="noopener">' +
                      esc(l.label) + '</a>'; }).join('') + '</div>' : '';
         var qs = (it.queries || []).length
           ? '<div class="pqs">' + it.queries.map(function (q) {
@@ -1760,6 +1763,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   var GRP = 'info';
   function showGroup(g) {
     GRP = g;
+    try { sessionStorage.setItem('plot.grp', g); } catch (e) {}
     [].forEach.call(document.querySelectorAll('#grp button'), function (b) {
       b.setAttribute('aria-selected', String(b.getAttribute('data-grp') === g));
     });
@@ -1799,6 +1803,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var b = e.target.closest('[data-grp]');
     if (b) showGroup(b.getAttribute('data-grp'));
   });
+  try { var G0 = sessionStorage.getItem('plot.grp'); if (G0 === 'draft' || G0 === 'follow') showGroup(G0); } catch (e) {}
 
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
   document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
@@ -1837,6 +1842,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   // 오늘 발행 칸 — 발행 목록(performance.json feed)을 한국 시각으로 센다
   var PF = null;
+  function drStale() { return DR && DR.date && DR.date !== kstDay(new Date()) ? String(DR.date) : ''; }
+  function safeUrl(u) { u = String(u || '').trim(); return /^https?:\/\//i.test(u) ? u : '#'; }
+  function escU(u) { return esc(safeUrl(u)); }
   function kstDay(d) { return new Date(d.getTime() + 9 * 3600e3).toISOString().slice(0, 10); }
   function pubBox() {
     if (!PF || !PF.feed || !PF.feed.posts) return '';
@@ -1845,7 +1853,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var k = new Date(now.getTime() + 9 * 3600e3), wd = (k.getUTCDay() + 6) % 7;
     var monday = new Date(k.getTime() - wd * 86400e3).toISOString().slice(0, 10);
     var per = {};
-    PF.feed.posts.forEach(function (p) { var d = kstDay(new Date(p.t)); per[d] = (per[d] || 0) + 1; });
+    PF.feed.posts.forEach(function (p) { var t = new Date(p.t); if (isNaN(t)) return; var d = kstDay(t); per[d] = (per[d] || 0) + 1; });
     var nt = per[today] || 0, nw = 0;
     Object.keys(per).forEach(function (d) { if (d >= monday && d <= today) nw += per[d]; });
     var days = [];
@@ -1871,18 +1879,18 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var form = (it[kind] || {}).form;
     if (!form) return;
     if (kind === 'card') {
-      var cvs = (it.card || {}).covers || [], ci = drCovers()[it.source.id];
+      var cvs = (it.card || {}).covers || [], ci = drCovers()[(it.source || {}).id];
       if (ci && cvs[ci]) form = drApplyCover(form, cvs[ci]);
     }
     try { localStorage.setItem('plot.form.handoff', form); } catch (e) {
       alert('저장소를 쓸 수 없어 넘길 수 없습니다 — 양식을 복사해 붙여넣어 주세요'); return;
     }
-    drMark(it.source.id + ':' + kind);
+    drMark((it.source || {}).id + ':' + kind);
     location.href = kind === 'card' ? 'carousel.html' : 'shorts.html';
   }
   function drTrust(x) {
     var t = x && x.trust; if (!t || !t.grade) return '';
-    return '<span class="tr t' + esc(t.grade) + '" title="' + esc((t.why || []).join(' · ')) + '">신뢰도 ' + esc(t.grade) + '</span>';
+    return '<span class="tr t' + esc(t.grade) + '" title="' + esc([].concat(t.why || []).join(' · ')) + '">신뢰도 ' + esc(t.grade) + '</span>';
   }
   function drChecks(x) {
     var L = (x.issues || []).map(function (s) { return '⚠️ ' + s; })
@@ -1904,13 +1912,21 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var d = document.createElement('div'); d.className = 'toast'; d.textContent = t;
     document.body.appendChild(d); setTimeout(function () { d.remove(); }, 2200);
   }
+  function copyLegacy(t) {
+    try { var a = document.createElement('textarea'); a.value = t; document.body.appendChild(a); a.select(); document.execCommand('copy'); a.remove(); return true; } catch (e) { return false; }
+  }
   function copyText(t) {
-    try { navigator.clipboard.writeText(t); return true; } catch (e) {}
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(t).catch(function () { if (!copyLegacy(t)) toast('복사하지 못했습니다 — 길게 눌러 복사해 주세요'); });
+        return true;
+      }
+    } catch (e) {}
     try { var a = document.createElement('textarea'); a.value = t; document.body.appendChild(a); a.select(); document.execCommand('copy'); a.remove(); return true; } catch (e) { return false; }
   }
   function slidesOf(it) {
     var cd = it.card || {}, pv = cd.preview || {}, sl = (pv.slides || []).slice();
-    var ci = drCovers()[it.source.id] || 0, cv = (cd.covers || [])[ci];
+    var ci = drCovers()[(it.source || {}).id] || 0, cv = (cd.covers || [])[ci];
     if (sl.length && cv && pv.covers && pv.covers[cv.key]) sl[0] = pv.covers[cv.key];
     return sl;
   }
@@ -1925,32 +1941,32 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function postInfo(it, x) {
     var s = it.source || {}, ed = it.editor || {};
-    var src = s.url ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + (s.kind === 'news' ? '기사' : s.kind === 'repack' ? '원글' : '원문') + '</a> · ' : '';
+    var src = s.url ? '<a href="' + escU(s.url) + '" target="_blank" rel="noopener">' + (s.kind === 'news' ? '기사' : s.kind === 'repack' ? '원글' : '원문') + '</a> · ' : '';
     var n = ((x.issues || []).length + (x.confirm || []).length);
     return '<details><summary>편집 정보' + (n ? ' · 확인 ' + n : '') + '</summary>' +
       '<div>' + src + esc(s.account || s.kind || '') + (s.head ? ' — ' + esc(s.head) : '') + '</div>' +
       (ed.angle ? '<div>각도: ' + esc(ed.angle) + '</div>' : '') +
       (it.preempt && it.preempt.line ? '<div>선점 ' + (it.preempt.score > 0 ? '+' : '') + esc(it.preempt.score) + ' — ' + esc(it.preempt.line) + '</div>' : '') +
       (it.repack ? '<div>재포장 · ' + esc(it.repack.date || '') + ' 원글 도달 ' + esc(Number(it.repack.reach || 0).toLocaleString()) + '</div>' : '') +
-      (x.trust && x.trust.why ? '<div>신뢰도 근거: ' + esc(x.trust.why.join(' · ')) + '</div>' : '') +
+      (x.trust && x.trust.why ? '<div>신뢰도 근거: ' + esc([].concat(x.trust.why).join(' · ')) + '</div>' : '') +
       ((it.captures || []).length ? '<div style="margin-top:6px">원문 캡처 (길게 눌러 저장 → 스튜디오에 넣기)</div><div class="thumbs">' +
-        it.captures.map(function (c) { return '<a href="' + esc(c.url) + '" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="' + esc(c.url) + '" alt="" style="width:108px;height:135px;object-fit:cover;border-radius:6px"></a>'; }).join('') + '</div>' : '') +
+        it.captures.map(function (c) { return '<a href="' + escU(c.url) + '" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="' + esc(c.url) + '" alt="" style="width:108px;height:135px;object-fit:cover;border-radius:6px"></a>'; }).join('') + '</div>' : '') +
       drChecks(x) + '</details>';
   }
   function pubMark(it) {
     var p = it.published || {};
     if (p.permalink) {
       schedSet(it.key, null);
-      return '<div class="pubd">✓ 발행됨 · <a href="' + esc(p.permalink) + '" target="_blank" rel="noopener">인스타에서 보기</a></div>';
+      return '<div class="pubd">✓ 발행됨 · <a href="' + escU(p.permalink) + '" target="_blank" rel="noopener">인스타에서 보기</a></div>';
     }
     var loc = it.key && schedGet()[it.key], sv = it.scheduled;
     if (loc && loc.at < Date.now() - 2 * 3600e3) { schedSet(it.key, null); loc = null; }
     var lab = sv && sv.at ? String(sv.at).slice(5, 16).replace('T', ' ').replace('-', '/') : loc ? loc.label : '';
     return lab ? '<div class="pubd sch">⏰ ' + esc(lab) + ' 예약' + (sv ? '됨' : ' 요청함') +
-      ' · <button class="more" data-sx="' + esc(it.key) + '" style="padding:0">취소</button></div>' : '';
+      (it.key ? ' · <button class="more" data-sx="' + esc(it.key) + '" style="padding:6px 8px;margin:-6px 0">취소</button>' : '') + '</div>' : '';
   }
   function cardPost(it, i) {
-    var cd = it.card, sl = slidesOf(it), cvs = cd.covers || [], ci = drCovers()[it.source.id] || 0;
+    var cd = it.card, sl = slidesOf(it), cvs = cd.covers || [], ci = drCovers()[(it.source || {}).id] || 0;
     var media = sl.length ? '<div class="med"><div class="track" data-track="' + i + '">' + sl.map(function (u) {
         return '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(u) + '" alt="">'; }).join('') + '</div>' +
         (sl.length > 1 ? '<span class="cnt" data-cnt="' + i + '">1/' + sl.length + '</span>' : '') + '</div>' +
@@ -2018,8 +2034,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var marks = '<span>' + esc(span ? '구간 ' + span : '구간 미정') + '</span>' +
       (song ? '' : '<span class="bad">곡 제목 필요</span>');
     return '<article class="ig">' + postHead(it, 'shorts', sh) +
-      '<div class="reel" data-reel><div class="rk">' + marks + '</div>' + frame +
-      (vd.url ? '<a class="pl" href="' + esc(vd.url) + (vd.range ? (vd.url.indexOf('?') >= 0 ? '&' : '?') + 't=' + Math.floor(vd.range[0]) : '') +
+      '<div class="rk">' + marks + '</div><div class="reel" data-reel>' + frame +
+      (vd.url ? '<a class="pl" href="' + escU(vd.url) + (vd.range ? (vd.url.indexOf('?') >= 0 ? '&' : '?') + 't=' + Math.floor(vd.range[0]) : '') +
         '" target="_blank" rel="noopener" aria-label="원본 영상">' + IC.play + '</a>' : '') + '</div>' +
       '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글">' + IC.chat +
       '</button><button aria-label="공유" data-share="' + i + ':shorts">' + IC.send + '</button><span class="sp"></span><button aria-label="저장">' + IC.save + '</button></div>' +
@@ -2047,7 +2063,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       n.classList.toggle('over', still);
       if (still) bad.push(names[c]);
     });
-    var rk = reel.querySelector('.rk');
+    var rk = reel.parentNode.querySelector('.rk');
+    if (!rk) return;
     var old = rk.querySelector('[data-over]');
     if (old) old.remove();
     if (bad.length) rk.insertAdjacentHTML('beforeend', '<span class="bad" data-over>' + esc(bad.join('·')) + ' 잘림 — 줄여야 합니다</span>');
@@ -2096,28 +2113,41 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       }, { passive: true });
     });
   }
-  async function shareToInsta(it) {
+  function prefetchSlides(it) {
+    var sl = slidesOf(it), key = sl.join('|');
+    if (!sl.length || (it.__pf && it.__pf.key === key)) return;
+    var pf = it.__pf = { key: key, files: null };
+    Promise.all(sl.map(function (u, j) {
+      return fetch(u).then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); }).then(function (b) {
+        return new File([b], 'plot_' + (j + 1) + '.jpg', { type: 'image/jpeg' }); });
+    })).then(function (fs) { pf.files = fs; }).catch(function () { pf.files = false; });
+  }
+  function slideViewer(sl) {                         // 공유가 안 되면 — 길게 눌러 저장할 수 있게 장들을 늘어놓는다
+    var sh = document.createElement('div'); sh.className = 'sheet';
+    sh.innerHTML = '<div class="pn"><div class="hd"></div><div style="padding:0 20px 8px;font-size:13px;color:var(--dim)">이미지를 길게 눌러 저장해 주세요 (캡션은 복사됐습니다)</div>' +
+      sl.map(function (u) { return '<img src="' + escU(u) + '" referrerpolicy="no-referrer" alt="" style="display:block;width:calc(100% - 40px);margin:0 20px 10px;border-radius:8px">'; }).join('') +
+      '<button data-act="x">닫기</button></div>';
+    sh.addEventListener('click', function (e) { if (e.target === sh || e.target.closest('[data-act]')) sh.remove(); });
+    document.body.appendChild(sh);
+  }
+  function shareToInsta(it) {
     var cap = captionOf(it, 'card'), sl = slidesOf(it);
     copyText(cap);
     if (!sl.length) { toast('캡션을 복사했습니다 — 미리보기 이미지가 없어 스튜디오에서 만들어 주세요'); return; }
-    try {
-      var files = await Promise.all(sl.map(function (u, j) {
-        return fetch(u).then(function (r) { return r.blob(); }).then(function (b) {
-          return new File([b], 'plot_' + (j + 1) + '.jpg', { type: 'image/jpeg' }); });
-      }));
-      if (navigator.canShare && navigator.canShare({ files: files })) {
-        toast('캡션을 복사했습니다 — 인스타를 골라 붙여 넣으세요');
-        await navigator.share({ files: files });
-        return;
-      }
-    } catch (e) { if (e && e.name === 'AbortError') return; }
-    toast('캡션 복사됨 — 이미지를 길게 눌러 저장해 주세요');
-    window.open(sl[0], '_blank');
+    var fs = it.__pf && it.__pf.key === sl.join('|') && it.__pf.files;
+    if (fs && navigator.canShare && navigator.canShare({ files: fs })) {
+      toast('캡션을 복사했습니다 — 인스타를 골라 붙여 넣으세요');
+      navigator.share({ files: fs }).catch(function (e) { if (!e || e.name !== 'AbortError') slideViewer(sl); });
+      return;
+    }
+    if (it.__pf && it.__pf.files === null) toast('이미지를 받는 중입니다 — 잠시 뒤 다시 눌러 주세요');
+    else slideViewer(sl);
   }
   function openSheet(i, kind) {
     var it = (DR && DR.items || [])[i]; if (!it) return;
     var acts = [];
     if (kind === 'card') {
+      prefetchSlides(it);
       acts.push(['insta', '인스타에 올리기', '이미지와 캡션을 인스타로 넘깁니다 (캡션은 복사돼요)']);
       acts.push(['card', '캐러셀 스튜디오에서 고치기', '고른 표지로 양식이 채워진 채 열립니다']);
     }
@@ -2136,7 +2166,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       if (a === 'insta') shareToInsta(it);
       else if (a === 'card' || a === 'shorts') drOpen(i, a);
       else if (a === 'cap') { copyText(captionOf(it, kind)); toast('캡션을 복사했습니다'); }
-      else if (a === 'src') window.open(it.source.url, '_blank');
+      else if (a === 'src') window.open(safeUrl((it.source || {}).url), '_blank');
       else runItemAct(it, a);
     });
     document.body.appendChild(sh);
@@ -2159,8 +2189,15 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     return Object.keys(a).some(function (k) { return k.indexOf(prefix) === 0; });
   }
   function botName() { return String(window.PLOT_BOT || 'plot_magazine_bot').replace(/^@/, ''); }
-  function viaTelegram(code) {
+  function viaTelegram(code, later) {
     var u = 'https://t.me/' + encodeURIComponent(botName()) + '?start=' + encodeURIComponent(code);
+    if (later) {                                     // 대기열 응답을 기다린 뒤라 팝업이 막힌다 — 한 번 더 누르게
+      sheetOf('대기열로 못 보냈습니다', [['tg', '텔레그램으로 보내기', '텔레그램이 열리면 보내기(시작)를 눌러 주세요'], ['x', '닫기', '']],
+        function (r) { if (r === 'tg') viaTelegram(code); });
+      return;
+    }
+    var tg = window.Telegram && window.Telegram.WebApp;
+    if (tg && tg.initData && tg.openTelegramLink) { tg.openTelegramLink(u); return; }
     var w = window.open(u, '_blank');
     if (!w) location.href = u;
   }
@@ -2173,8 +2210,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         body: JSON.stringify({ code: code, confirmed: !!confirmed, token: token || '' })
       }).then(function (r) { return r.json(); }).then(function (d) {
         if (d && d.ok) toast((label || '보냈습니다') + ' — 맥이 1분 안에 받습니다 (결과는 텔레그램으로)');
-        else { toast('대기열이 거절했습니다 — 텔레그램으로 보냅니다'); viaTelegram(code); }
-      }).catch(function () { toast('대기열에 못 닿았습니다 — 텔레그램으로 보냅니다'); viaTelegram(code); });
+        else viaTelegram(code, true);
+      }).catch(function () { viaTelegram(code, true); });
       return;
     }
     toast((label || '보냅니다') + ' — 텔레그램이 열리면 보내기(시작)를 눌러 주세요');
@@ -2275,7 +2312,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!it.key) return acts;
     var pubd = (it.published || {}).permalink;
     if (kind === 'card' && !pubd && slidesOf(it).length && (it.card || {}).caption) {
-      acts.push(['pub', '바로 발행', '맥이 미리보기 그대로 인스타에 올립니다 (표지 ' + coverKey(it) + ') — 확인을 한 번 더 거칩니다']);
+      var pbSent = actSent('pb-' + it.key) || actSent('sc-' + it.key);
+      acts.push(['pub', '바로 발행', pbSent ? '이미 발행·예약 요청을 보냈습니다 — 텔레그램 결과를 먼저 확인해 주세요 (맥이 두 번은 안 올립니다)'
+        : '맥이 미리보기 그대로 인스타에 올립니다 (표지 ' + coverKey(it) + ') — 확인을 한 번 더 거칩니다']);
       var best = slotChips()[0];
       acts.push(['sch', '예약 발행', (best ? '추천 ' + best.at + ' (' + best.why + ')' : '시각을 골라 예약') + ' — 맥이 켜져 있으면 그 시각에 올립니다']);
     }
@@ -2337,23 +2376,23 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
           c.status === 'tracking' ? '👀 추적 중' : c.status === 'failed' ? '⚠️ 초안 실패 — ' + esc(c.status_why || '') : '';
         return '<div class="fu"><div class="top"><span class="kd ' + esc(c.kind) + '">' + esc(c.kind_label || c.kind) + '</span>' +
           '<span class="who">' + esc((c.who || []).join(' · ')) + '</span><span class="sc">점수 ' + esc(c.score) + '</span></div>' +
-          (o.head ? '<div class="org">원래 글: ' + (o.url ? '<a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.head) + '</a>' : esc(o.head)) +
+          (o.head ? '<div class="org">원래 글: ' + (o.url ? '<a href="' + escU(o.url) + '" target="_blank" rel="noopener">' + esc(o.head) + '</a>' : esc(o.head)) +
             (o.mult ? ' · 평소의 <b>' + esc(o.mult) + '배</b>' : '') + (o.at ? ' · ' + esc(String(o.at).slice(5, 10)) : '') + '</div>' : '') +
           (c.preempt && c.preempt.line ? '<div class="org">선점: ' + esc(c.preempt.line) + '</div>' : '') +
           ((c.evidence || []).length || (c.news || []).length ? '<ul class="ev">' + (c.evidence || []).slice(0, 4).map(function (e) {
               return '<li>' + esc(e.from || '') + (e.title ? ' — ' + esc(e.title) : '') + (e.at ? ' · ' + esc(String(e.at).slice(5, 16).replace('T', ' ')) : '') + '</li>';
             }).join('') + (c.news || []).slice(0, 4).map(function (n) {
-              return '<li><a href="' + esc(n.link || '#') + '" target="_blank" rel="noopener">' + esc(n.title || '') + '</a> · ' + esc(n.date || '') + '</li>';
+              return '<li><a href="' + escU(n.link || '#') + '" target="_blank" rel="noopener">' + esc(n.title || '') + '</a> · ' + esc(n.date || '') + '</li>';
             }).join('') + '</ul>' : '') +
           (c.plans || []).map(function (p, k) {
             var code = 'fu-' + c.id + '-' + k, sent = actSent(code);
             return '<div class="pl"><div class="f">' + esc(p.format) + '</div><div class="t">' + esc(p.title) + '</div>' +
               '<div class="a">' + esc(p.angle) + '</div>' + (p.why ? '<div class="y">왜 지금: ' + esc(p.why) + '</div>' : '') +
-              (p.check ? '<div class="ck">확인: ' + esc(p.check) + '</div>' : '') +
+              (p.check ? '<div class="ck">확인: ' + esc(String(p.check).replace(/^\s*확인\s*[:：]\s*/, '')) + '</div>' : '') +
               '<button class="act main' + (sent ? ' sent' : '') + '" data-fu="' + code + '">' + (sent ? '보냄 · 다시 보내기' : '이걸로 초안') + '</button></div>';
           }).join('') +
-          '<div class="bt"><button class="act' + (actSent('tr-' + c.id) ? ' sent' : '') + '" data-fu="tr-' + c.id + '">추적 켜기</button>' +
-          '<button class="act' + (actSent('sk-' + c.id) ? ' sent' : '') + '" data-fusk="' + c.id + '">넘기기</button></div>' +
+          '<div class="bt"><button class="act' + (actSent('tr-' + c.id) ? ' sent' : '') + '" data-fu="tr-' + esc(c.id) + '">추적 켜기</button>' +
+          '<button class="act' + (actSent('sk-' + c.id) ? ' sent' : '') + '" data-fusk="' + esc(c.id) + '">넘기기</button></div>' +
           (st ? '<div class="st">' + st + '</div>' : '') + '</div>';
       }).join('') + chBox;
   }
@@ -2411,7 +2450,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
+      host.innerHTML = pubBox() + cornerBar() + modeBar +
+        (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 오후 3시 이후 맥이 씁니다.</div>' : '') +
+        '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
       return;
     }
@@ -2425,7 +2466,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
           s.kind === 'series' ? '📚 나무위키 털기' : s.kind === 'repack' ? '♻️ 재포장' : '@' + esc(s.account || '');
         var h = '<div class="dr"><div class="src">' + (it.lane ? '<b class="lane">' + esc(it.lane) + '</b> ' : '') + lbl +
           (s.multiple ? (s.kind === 'news' ? ' · 기사 평소 ' : ' · 평소 ') + esc(s.multiple) + '배' : '') +
-          (s.url ? ' · <a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + (s.kind === 'news' ? '기사' : s.kind === 'repack' ? '원글' : '원문') + '</a>' : '') +
+          (s.url ? ' · <a href="' + escU(s.url) + '" target="_blank" rel="noopener">' + (s.kind === 'news' ? '기사' : s.kind === 'repack' ? '원글' : '원문') + '</a>' : '') +
           '</div><div class="head">' + esc(s.head || '') + '</div>' +
           (it.repack ? '<div class="rp">' + esc(it.repack.date || '') + ' 원글 · 도달 ' + esc(Number(it.repack.reach || 0).toLocaleString()) +
             ' (그 주 평소의 ' + esc(it.repack.mult) + '배) · 저장·공유는 평소의 ' + esc(it.repack.rate_x) + '배 — 표지·첫 장을 새로</div>' : '') +
@@ -2435,11 +2476,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         else if (sh.form) {
           var k1 = s.id + ':shorts';
           var vd = sh.video || {};
-          var vline = vd.url ? '<div class="vid">▶ <a href="' + esc(vd.url) + '" target="_blank" rel="noopener">' +
+          var vline = vd.url ? '<div class="vid">▶ <a href="' + escU(vd.url) + '" target="_blank" rel="noopener">' +
               esc(vd.title || vd.url) + '</a>' + (vd.credit ? ' · ' + esc(vd.credit) : '') +
               (drField(sh.form, '구간') ? ' · 구간 ' + esc(drField(sh.form, '구간')) : '') + '</div>' +
               ((vd.alts || []).length > 1 ? '<div class="vid alt">다른 후보: ' + vd.alts.slice(1).map(function (a) {
-                return '<a href="' + esc(a.url) + '" target="_blank" rel="noopener">' + esc((a.title || a.url).slice(0, 40)) + '</a>';
+                return '<a href="' + escU(a.url) + '" target="_blank" rel="noopener">' + esc((a.title || a.url).slice(0, 40)) + '</a>';
               }).join(' · ') + '</div>' : '')
             : '<div class="vid alt">원본 영상 없음 — 열어서 URL 을 넣어 주세요</div>';
           h += '<div class="fm"><b>🎬 숏폼</b>' + drTrust(sh) + '<div class="t">' + esc(drField(sh.form, '후킹') || drField(sh.form, '곡')) +
@@ -2487,7 +2528,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var c = e.target.closest('[data-cv]');
     if (c) {
       var pr = c.getAttribute('data-cv').split(':'), it = (DR && DR.items || [])[Number(pr[0])];
-      if (it) { drSetCover(it.source.id, Number(pr[1])); renderDrafts(); }
+      if (it) { drSetCover((it.source || {}).id, Number(pr[1])); renderDrafts(); }
       return;
     }
     var b = e.target.closest('[data-dr]');
@@ -2497,15 +2538,24 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { PF = d; if (GRP === 'draft') renderDrafts(); })
     .catch(function () { PF = null; });
-  fetch('./drafts.json', { cache: 'no-cache' })
+  var DR_AT = Date.now();
+  function loadDrafts() {
+    DR_AT = Date.now();
+    return fetch('./drafts.json', { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
+      if (!d) return;
       DR = d;
       var n = (d && d.items || []).length;
-      if (n) document.getElementById('grpDraft').textContent = '오늘의 초안 ' + n;
+      if (n) document.getElementById('grpDraft').textContent = (drStale() ? drStale().slice(5).replace('-', '/') + ' 초안 ' : '오늘의 초안 ') + n;
       if (GRP === 'draft') renderDrafts();
     })
-    .catch(function () { DR = null; });
+    .catch(function () {});
+  }
+  loadDrafts();
+  document.addEventListener('visibilitychange', function () {   // 홈 화면 앱은 새로 고침 버튼이 없다 — 10분 넘게 비웠다 돌아오면 다시 받는다
+    if (document.visibilityState === 'visible' && Date.now() - DR_AT > 10 * 60e3 && !document.querySelector('.sheet')) loadDrafts();
+  });
 
   fetch('./magazines.json', { cache: 'no-cache' })
     .then(function (r) {
@@ -2532,9 +2582,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 11:00';
+    a.title = '판 10.11 14:24';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 11:00';
+    ver.textContent = '10.11 14:24';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

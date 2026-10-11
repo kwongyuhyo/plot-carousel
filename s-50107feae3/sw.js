@@ -6,7 +6,7 @@
  *
  * 버전을 올리면 옛 캐시는 activate 에서 통째로 지운다.
  */
-const V = 'plot-app-v17';
+const V = 'plot-app-v18';
 const SHELL = [
   './', './index.html', './carousel.html', './shorts.html', './sources.html',
   './perf.html',
@@ -56,8 +56,7 @@ self.addEventListener('fetch', (e) => {
       // 그러면 이 핸들러가 통째로 죽고 결국 HTTP 캐시가 답한다. 주소로 새로 만든다.
       fetch(new Request(req.url, { cache: 'no-cache', credentials: 'same-origin' }))
         .then((res) => {
-          const copy = res.clone();
-          caches.open(V).then((c) => c.put(req, copy));
+          if (res.ok) { const copy = res.clone(); caches.open(V).then((c) => c.put(req, copy)); }
           return res;
         })
         .catch(() => caches.match(req).then((r) => r || (isDoc ? caches.match('./index.html') : undefined)))
@@ -65,8 +64,7 @@ self.addEventListener('fetch', (e) => {
   } else {
     e.respondWith(
       caches.match(req).then((hit) => hit || fetch(req).then((res) => {
-        const copy = res.clone();
-        caches.open(V).then((c) => c.put(req, copy));
+        if (res.ok) { const copy = res.clone(); caches.open(V).then((c) => c.put(req, copy)); }
         return res;
       }))
     );
