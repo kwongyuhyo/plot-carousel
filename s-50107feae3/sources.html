@@ -436,6 +436,18 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .evn .top span{color:var(--dim)}
 .evn .top button{margin-left:auto; font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--text); border-radius:6px; padding:5px 9px}
 .evn .top button + button{margin-left:0}
+.evs .eg{margin:16px 20px 2px; font-size:12px; font-weight:800; letter-spacing:.06em; color:var(--dim)}
+.evs .er{display:flex; align-items:center; gap:10px; margin:6px 20px 0; padding:6px 0; border-top:1px solid var(--line)}
+.evs .er.sub2{border-top:0; padding-top:0}
+.evs .er .et{flex:1; min-width:0} .evs .er .et b{display:block; font-size:14px} .evs .er .et small{display:block; font-size:12px; color:var(--dim)}
+.evs .er .em{display:flex; gap:6px} .evs .er .cs{display:flex; gap:6px; flex-wrap:wrap}
+.evs .er .em button{width:42px; height:38px; display:inline-flex; align-items:center; justify-content:center; padding:0; font-size:17px;
+  border:1px solid var(--line); border-radius:10px; background:none; color:var(--muted)}
+.evs .er .em button.mo[aria-pressed="true"]{border-color:#2e9e5b; background:rgba(46,158,91,.15); color:#2e9e5b}
+.evs .er .em button.mt[aria-pressed="true"]{border-color:var(--amber); background:rgba(232,179,74,.16); color:var(--amber)}
+.evs .er .em button.mx[aria-pressed="true"]{border-color:#d6404a; background:rgba(214,64,74,.14); color:#d6404a}
+.evs .er .cs button{width:auto; padding:6px 11px; font-size:13px; border:1px solid var(--line); border-radius:999px; background:none; color:var(--text)}
+.evs .er .cs button[aria-pressed="true"]{border-color:var(--amber); background:rgba(232,179,74,.14)}
 .evl .it{border-top:1px solid var(--line); padding:10px 20px; font-size:13px; line-height:1.5}
 .evl .it .h{font-weight:700} .evl .it .v{color:var(--muted); font-size:12.5px} .evl .it .r{margin-top:3px}
 .srt{display:flex; align-items:center; gap:6px; margin:4px 0 8px; font-size:12px; color:var(--dim)}
@@ -2093,9 +2105,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     return '<img class="ph" data-sfph referrerpolicy="no-referrer" src="' + esc(th) + '" alt="">';
   }
   /* ── 평가 노트 (2026-10-11 규효 "평가용 노트 — 우리 프로그램 학습의 기준") ──────────────────────
-     초안마다 선정·독자·표지·숏폼 세 줄·캡션 판정 + 이유 + '이렇게 썼으면' 을 남긴다. Supabase plot_evals 에 쌓이고
-     맥(collectors/eval_notes)이 매일 읽어 편집장 판정과 작성기 예문에 넣는다. 평가할 때 본 그대로(snapshot)를 같이
-     얼려 둔다 — 초안은 매일 바뀌어서, 나중에 '무엇을 보고 그렇게 판정했는지' 가 남아야 학습이 된다.
+     양식은 'PLOT 초안 평가표' 문서와 같다: 네 묶음 열 항목을 ○△✕ 로, 독자 · 올릴까 · 이유 한 줄 · 이렇게 썼으면.
+     Supabase plot_evals 에 쌓이고 맥(collectors/eval_notes)이 매시 읽어 편집장 판정과 작성기 예문에 넣는다.
+     평가할 때 본 그대로(snapshot)를 같이 얼려 둔다 — 초안은 매일 바뀌어서, 무엇을 보고 그렇게 판정했는지 남아야 학습이 된다.
      연결이 없으면 이 기기에 줄 세워 두었다가 다음에 올린다. */
   var SB = { url: 'https://jipqujwziezeubtthbnw.supabase.co', key: 'sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK' };
   function sbOn() { return /^https:\/\//.test(SB.url) && SB.key && SB.key.indexOf('__') !== 0; }
@@ -2123,17 +2135,27 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function evQPut(q) { try { localStorage.setItem(EVQ_KEY, JSON.stringify(q.slice(-200))); } catch (e) {} }
   function evKey(it) { return it.key || skey((it.source || {}).id); }
   function evId(it) { return String((DR && DR.date) || kstDay(new Date())) + ':' + evKey(it); }
-  var EV_G = [
-    ['sel', '선정', [['great', '딱 PLOT 거리'], ['weak', '결은 맞는데 약함'], ['off', '결이 아님'], ['angle', '소재 좋은데 각도 틀림']], false, ''],
-    ['genre', '독자', [['hiphop', '힙합'], ['kpop', '케이팝'], ['indie', '인디·밴드'], ['etc', '그 외']], false, ''],
-    ['cover', '표지 문구', [['good', '좋음'], ['weak', '약함'], ['wrong', '틀림']], false, 'card'],
-    ['best', '제일 나은 표지', [['A', 'A'], ['B', 'B'], ['C', 'C'], ['none', '다 별로']], false, 'card'],
-    ['lines', '숏폼 세 줄', [['good', '좋음'], ['weak', '약함'], ['long', '너무 김'], ['mismatch', '장면과 안 맞음']], true, 'shorts'],
-    ['cap', '캡션', [['good', '좋음'], ['flat', '기사체·밋밋'], ['awk', '어색'], ['miss', '핵심 놓침'], ['fact', '사실 문제']], true, '']];
-  function evLabel(g, v) {
-    var gr = EV_G.filter(function (x) { return x[0] === g; })[0];
-    var o = gr && gr[2].filter(function (x) { return x[0] === v; })[0];
-    return o ? o[1] : v;
+  // 평가표 열 항목 — [키, 묶음, 이름, 묻는 것, 어느 초안에만]
+  var EV_ITEMS = [
+    ['fit', '선정', '결', 'PLOT 이 다룰 사람·이야기인가', ''],
+    ['reader', '선정', '독자 맞춤', '그 장르 독자가 보러 오는 이유를 건드리나', ''],
+    ['now', '선정', '지금성', '지금 올릴 이유가 있나', ''],
+    ['own', '선정', '우리만의 것', '남들과 다른 게 있나', ''],
+    ['angle', '각도', '핵심 한 가지', '사람들이 반응할 한 가지를 잡았나', ''],
+    ['cover', '작문', '표지', '누르고 싶고 한 번에 읽히나', 'card'],
+    ['lines', '작문', '숏폼 세 줄', '짧고 장면과 맞나', 'shorts'],
+    ['cap', '작문', '캡션', '사람이 쓴 글처럼 자연스럽나', ''],
+    ['fact', '작문', '사실', '틀린 데 없나', '']];
+  var EV_MARK = { o: '○', t: '△', x: '✕' };
+  var EV_GENRE = [['hiphop', '힙합'], ['kpop', '케이팝'], ['indie', '인디·밴드'], ['etc', '그 외']];
+  var EV_GO = [['now', '바로 올림'], ['fix', '손보면 올림'], ['no', '안 올림']];
+  function evName(k) { var r = EV_ITEMS.filter(function (x) { return x[0] === k; })[0]; return r ? r[2] : k; }
+  function evOpt(list, v) { var o = list.filter(function (x) { return x[0] === v; })[0]; return o ? o[1] : ''; }
+  function evSum(v) {                              // '결✕ 독자 맞춤✕ · 안 올림' — 짧은 요약
+    v = v || {};
+    var marks = EV_ITEMS.filter(function (x) { return v[x[0]] && v[x[0]] !== 'o'; }).map(function (x) { return x[2] + EV_MARK[v[x[0]]]; });
+    var oks = EV_ITEMS.filter(function (x) { return v[x[0]] === 'o'; }).length;
+    return [evOpt(EV_GENRE, v.genre), marks.join(' ') || (oks ? '전부 ○' : ''), evOpt(EV_GO, v.go)].filter(Boolean).join(' · ');
   }
   function evLines(it) {
     var f = (it.shorts || {}).form || '';
@@ -2187,30 +2209,38 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function evBar(it, i) {
     var r = evGet()[evId(it)], pend = evQ().some(function (x) { return x.id === evId(it); });
-    var v = (r && r.verdict) || {};
     return '<div class="evb"><button data-ev="' + i + '" class="' + (r ? 'done' : '') + '">' +
       (r ? (pend ? '⏳ 평가함 · 고치기' : '✓ 평가함 · 고치기') : '✎ 평가') + '</button>' +
-      (r ? '<span class="ws">' + esc([v.sel ? evLabel('sel', v.sel) : '', r.reason || ''].filter(Boolean).join(' — ')) + '</span>' : '') + '</div>';
+      (r ? '<span class="ws">' + esc([evSum(r.verdict), r.reason || ''].filter(Boolean).join(' — ')) + '</span>' : '') + '</div>';
+  }
+  function evChips(key, list, cur) {
+    return '<div class="cs" data-g="' + key + '">' + list.map(function (o) {
+      return '<button type="button" data-o="' + esc(o[0]) + '" aria-pressed="' + (cur === o[0]) + '">' + esc(o[1]) + '</button>'; }).join('') + '</div>';
   }
   function openEval(i) {
     var it = (DR && DR.items || [])[i]; if (!it) return;
     var id = evId(it), old = evGet()[id] || {}, v = JSON.parse(JSON.stringify(old.verdict || {})), rw = old.rewrite || {};
-    var hasCard = !!(it.card || {}).form, hasSh = !!(it.shorts || {}).form;
+    var hasCard = !!(it.card || {}).form, hasSh = !!(it.shorts || {}).form, covers = (it.card || {}).covers || [];
     var head = (it.subjects || [])[0] || String((it.source || {}).head || '').slice(0, 30);
     var sh = document.createElement('div'); sh.className = 'sheet evs';
-    var groups = EV_G.filter(function (g) { return !g[4] || (g[4] === 'card' ? hasCard : hasSh); }).map(function (g) {
-      var cur = v[g[0]];
-      return '<div class="g" data-g="' + g[0] + '" data-multi="' + (g[3] ? 1 : 0) + '"><b>' + esc(g[1]) + (g[3] ? ' <small>(여러 개)</small>' : '') + '</b><div class="cs">' +
-        g[2].map(function (o) {
-          var on = g[3] ? [].concat(cur || []).indexOf(o[0]) >= 0 : cur === o[0];
-          return '<button type="button" data-o="' + esc(o[0]) + '" aria-pressed="' + on + '">' + esc(o[1]) + '</button>';
-        }).join('') + '</div></div>';
+    var lastGroup = '';
+    var rows = EV_ITEMS.filter(function (x) { return !x[4] || (x[4] === 'card' ? hasCard : hasSh); }).map(function (x) {
+      var g = x[1] !== lastGroup ? '<div class="eg">' + esc(x[1]) + '</div>' : '';
+      lastGroup = x[1];
+      return g + '<div class="er"><div class="et"><b>' + esc(x[2]) + '</b><small>' + esc(x[3]) + '</small></div>' +
+        '<div class="em" data-g="' + x[0] + '">' + ['o', 't', 'x'].map(function (m) {
+          return '<button type="button" data-o="' + m + '" class="m' + m + '" aria-pressed="' + (v[x[0]] === m) + '">' + EV_MARK[m] + '</button>'; }).join('') +
+        '</div></div>' + (x[0] === 'cover' && covers.length > 1 ? '<div class="er sub2"><div class="et"><small>제일 나은 표지</small></div>' +
+          evChips('best', covers.map(function (c) { return [c.key, c.key]; }).concat([['none', '다 별로']]), v.best) + '</div>' : '');
     }).join('');
     var lines = hasSh ? evLines(it) : [];
     sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>평가 — ' + esc(head) + '</h4>' +
       '<div class="sub">' + esc([it.lane, it.corner ? catName(it.corner) : '', (it.editor || {}).grade ? '편집장 ' + it.editor.grade : ''].filter(Boolean).join(' · ')) +
-      ((it.editor || {}).why ? '<br>고른 이유: ' + esc(String(it.editor.why).slice(0, 140)) : '') + '</div>' + groups +
-      '<div class="g"><b>이유 — 이게 제일 중요해요 (한 줄이면 충분)</b><textarea data-f="reason" placeholder="예) 케이팝 팬은 재미보다 사람을 좋아해서 본다 — 웹예능 공식을 억지로 씌움">' +
+      ((it.editor || {}).why ? '<br>고른 이유: ' + esc(String(it.editor.why).slice(0, 140)) : '') +
+      '<br>○ 된다 · △ 애매하다 · ✕ 안 된다 — 자신 없으면 비워 두세요</div>' +
+      '<div class="g"><b>독자</b>' + evChips('genre', EV_GENRE, v.genre) + '</div>' + rows +
+      '<div class="eg">종합</div><div class="g"><b>올릴까</b>' + evChips('go', EV_GO, v.go) + '</div>' +
+      '<div class="g"><b>이유 — ✕·△ 를 준 까닭 한 줄 (이게 제일 중요해요)</b><textarea data-f="reason" placeholder="예) 케이팝 팬은 재미보다 사람을 좋아해서 본다 — 웹예능 공식을 억지로 씌움">' +
       esc(old.reason || '') + '</textarea></div>' +
       '<details' + (Object.keys(rw).length ? ' open' : '') + '><summary>이렇게 썼으면 (선택 — 고쳐 쓴 문구가 그대로 예문이 됩니다)</summary>' +
       (hasCard ? '<input data-r="cover" placeholder="표지 제목" value="' + esc(rw.cover || '') + '">' : '') +
@@ -2223,27 +2253,22 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       var o = e.target.closest('[data-o]');
       if (o) {
         var g = o.closest('[data-g]'), key = g.getAttribute('data-g'), val = o.getAttribute('data-o');
-        if (g.getAttribute('data-multi') === '1') {
-          var arr = [].concat(v[key] || []), at = arr.indexOf(val);
-          if (val === 'good') arr = at >= 0 ? [] : ['good'];
-          else { arr = arr.filter(function (x) { return x !== 'good'; }); if (at >= 0) arr.splice(arr.indexOf(val), 1); else arr.push(val); }
-          v[key] = arr;
-        } else v[key] = v[key] === val ? undefined : val;
-        [].forEach.call(g.querySelectorAll('[data-o]'), function (b) {
-          var x = b.getAttribute('data-o');
-          b.setAttribute('aria-pressed', String(g.getAttribute('data-multi') === '1' ? [].concat(v[key] || []).indexOf(x) >= 0 : v[key] === x));
-        });
+        v[key] = v[key] === val ? undefined : val;
+        [].forEach.call(g.querySelectorAll('[data-o]'), function (b) { b.setAttribute('aria-pressed', String(v[key] === b.getAttribute('data-o'))); });
         return;
       }
       if (e.target.closest('[data-save]')) {
-        Object.keys(v).forEach(function (k) { if (v[k] === undefined || (Array.isArray(v[k]) && !v[k].length)) delete v[k]; });
+        Object.keys(v).forEach(function (k) { if (v[k] === undefined) delete v[k]; });
+        v.form = 2;
         var reason = sh.querySelector('[data-f="reason"]').value.trim();
         var rwn = {}, q = function (sel) { var el = sh.querySelector(sel); return el ? el.value.trim() : ''; };
         if (q('[data-r="cover"]')) rwn.cover = q('[data-r="cover"]');
         var ls = [q('[data-r="l1"]'), q('[data-r="l2"]'), q('[data-r="l3"]')];
         if (ls.some(Boolean)) rwn.lines = ls;
         if (q('[data-r="cap"]')) rwn.cap = q('[data-r="cap"]');
-        if (!Object.keys(v).length && !reason && !Object.keys(rwn).length) { toast('고른 것이 없습니다'); return; }
+        if (Object.keys(v).length <= 1 && !reason && !Object.keys(rwn).length) { toast('고른 것이 없습니다'); return; }
+        var bad = EV_ITEMS.some(function (x) { return v[x[0]] === 'x' || v[x[0]] === 't'; });
+        if (bad && !reason && !confirm('✕·△ 를 줬는데 이유가 비었어요. 이유 없이 저장할까요?')) return;
         sh.remove();
         evSave({ id: id, kind: 'draft', draft_date: (DR && DR.date) || null, draft_key: evKey(it), source_id: String((it.source || {}).id || ''),
           verdict: v, reason: reason, rewrite: rwn, snapshot: old.snapshot && old.snapshot.key ? old.snapshot : evSnap(it),
@@ -2256,8 +2281,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var sh = document.createElement('div'); sh.className = 'sheet evs';
     sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>놓친 소재 적기</h4><div class="sub">이건 잡았어야 했다 — 어디서 봤고 왜 PLOT 거리인지. 수집·선정 기준을 넓히는 데 씁니다.</div>' +
       '<div class="g"><b>링크 또는 출처</b><input data-f="url" placeholder="인스타·유튜브·기사 주소, 또는 @계정"></div>' +
-      '<div class="g" data-g="genre" data-multi="0"><b>독자</b><div class="cs">' + EV_G[1][2].map(function (o) {
-        return '<button type="button" data-o="' + o[0] + '" aria-pressed="false">' + o[1] + '</button>'; }).join('') + '</div></div>' +
+      '<div class="g"><b>독자</b>' + evChips('genre', EV_GENRE, '') + '</div>' +
       '<div class="g"><b>왜 PLOT 거리인가</b><textarea data-f="reason" placeholder="예) 인디 밴드 단독 공연 매진 — 팬들이 공연 후기를 같이 나눌 거리"></textarea></div>' +
       '<div class="row"><button type="button" data-x>닫기</button><button type="button" class="go" data-save>저장</button></div></div>';
     var genre = '';
@@ -2271,7 +2295,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         if (!url && !reason) { toast('링크나 이유를 적어 주세요'); return; }
         sh.remove();
         evSave({ id: 'miss:' + Date.now(), kind: 'miss', draft_date: kstDay(new Date()), draft_key: null, source_id: url.slice(0, 300),
-          verdict: genre ? { genre: genre } : {}, reason: reason, rewrite: {}, snapshot: { url: url }, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0] });
+          verdict: genre ? { genre: genre, form: 2 } : { form: 2 }, reason: reason, rewrite: {}, snapshot: { url: url },
+          device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0] });
       }
     });
     document.body.appendChild(sh);
@@ -2284,9 +2309,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var draw = function (rows, note) {
       sh.querySelector('.pn').innerHTML = '<div class="hd"></div><h4>평가 노트 · ' + rows.length + '건</h4><div class="sub">' + esc(note) + '</div>' +
         rows.map(function (r) {
-          var v = r.verdict || {}, sn = r.snapshot || {};
+          var sn = r.snapshot || {};
           var head = r.kind === 'miss' ? '놓친 소재 — ' + String(sn.url || r.source_id || '') : ((sn.subjects || [])[0] || (sn.source || {}).head || r.draft_key || '');
-          var vs = Object.keys(v).map(function (k) { return [].concat(v[k]).map(function (x) { return evLabel(k, x); }).join('·'); }).join(' / ');
+          var vs = (r.verdict || {}).form === 2 ? evSum(r.verdict) : Object.keys(r.verdict || {}).map(function (k) { return [].concat(r.verdict[k]).join('·'); }).join(' / ');
           return '<div class="it"><div class="h">' + esc(String(r.draft_date || '').slice(5).replace('-', '/') + ' ' + String(head).slice(0, 60)) + '</div>' +
             (vs ? '<div class="v">' + esc(vs) + '</div>' : '') + (r.reason ? '<div class="r">' + esc(r.reason) + '</div>' : '') + '</div>';
         }).join('') + '<div class="row"><button type="button" data-x>닫기</button></div>';
@@ -2295,7 +2320,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       return String(b.updated_at || '').localeCompare(String(a.updated_at || '')); }); };
     if (!sbOn()) { draw(local(), '이 기기에 남긴 것만 보입니다 (저장소 설정 전)'); return; }
     sbReq('plot_evals?select=id,kind,draft_date,draft_key,source_id,verdict,reason,snapshot,updated_at&order=updated_at.desc&limit=100')
-      .then(function (rows) { draw(rows || [], '최근 100건 — 맥이 매일 이걸 읽어 편집장 판정과 작성 예문에 넣습니다'); })
+      .then(function (rows) { draw(rows || [], '최근 100건 — 맥이 매시 이걸 읽어 편집장 판정과 작성 예문에 넣습니다'); })
       .catch(function () { draw(local(), '저장소에 못 닿아 이 기기 것만 보입니다'); });
   }
   function evNote(items) {
@@ -3083,9 +3108,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 16:34';
+    a.title = '판 10.11 16:46';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 16:34';
+    ver.textContent = '10.11 16:46';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
