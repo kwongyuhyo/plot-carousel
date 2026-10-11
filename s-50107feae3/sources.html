@@ -2136,16 +2136,12 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function evKey(it) { return it.key || skey((it.source || {}).id); }
   function evId(it) { return String((DR && DR.date) || kstDay(new Date())) + ':' + evKey(it); }
   // 평가표 열 항목 — [키, 묶음, 이름, 묻는 것, 어느 초안에만]
-  var EV_ITEMS = [
-    ['fit', '선정', '결', 'PLOT 이 다룰 사람·이야기인가', ''],
-    ['reader', '선정', '독자 맞춤', '그 장르 독자가 보러 오는 이유를 건드리나', ''],
-    ['now', '선정', '지금성', '지금 올릴 이유가 있나', ''],
-    ['own', '선정', '우리만의 것', '남들과 다른 게 있나', ''],
+  var EV_ITEMS = [                                 // 10/11 규효: 열 개는 많다 → 맥이 숫자로 아는 것(지금성·선점)은 빼고, 결·독자 맞춤은 합침
+    ['fit', '선정', '결', '이 독자가 보고 싶어할 사람·이야기인가', ''],
     ['angle', '각도', '핵심 한 가지', '사람들이 반응할 한 가지를 잡았나', ''],
     ['cover', '작문', '표지', '누르고 싶고 한 번에 읽히나', 'card'],
     ['lines', '작문', '숏폼 세 줄', '짧고 장면과 맞나', 'shorts'],
-    ['cap', '작문', '캡션', '사람이 쓴 글처럼 자연스럽나', ''],
-    ['fact', '작문', '사실', '틀린 데 없나', '']];
+    ['cap', '작문', '캡션', '사람이 쓴 글처럼 자연스럽나', '']];
   var EV_MARK = { o: '○', t: '△', x: '✕' };
   var EV_GENRE = [['hiphop', '힙합'], ['kpop', '케이팝'], ['indie', '인디·밴드'], ['etc', '그 외']];
   var EV_GO = [['now', '바로 올림'], ['fix', '손보면 올림'], ['no', '안 올림']];
@@ -2154,6 +2150,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function evSum(v) {                              // '결✕ 독자 맞춤✕ · 안 올림' — 짧은 요약
     v = v || {};
     var marks = EV_ITEMS.filter(function (x) { return v[x[0]] && v[x[0]] !== 'o'; }).map(function (x) { return x[2] + EV_MARK[v[x[0]]]; });
+    if (v.fact === 'x') marks.push('사실 틀림');
     var oks = EV_ITEMS.filter(function (x) { return v[x[0]] === 'o'; }).length;
     return [evOpt(EV_GENRE, v.genre), marks.join(' ') || (oks ? '전부 ○' : ''), evOpt(EV_GO, v.go)].filter(Boolean).join(' · ');
   }
@@ -2233,6 +2230,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         '</div></div>' + (x[0] === 'cover' && covers.length > 1 ? '<div class="er sub2"><div class="et"><small>제일 나은 표지</small></div>' +
           evChips('best', covers.map(function (c) { return [c.key, c.key]; }).concat([['none', '다 별로']]), v.best) + '</div>' : '');
     }).join('');
+    rows += '<div class="er"><div class="et"><b>사실 틀림</b><small>틀린 이름·숫자·추측이 있을 때만</small></div>' +
+      '<div class="em" data-g="fact"><button type="button" data-o="x" class="mx" aria-pressed="' + (v.fact === 'x') + '">✕</button></div></div>';
     var lines = hasSh ? evLines(it) : [];
     sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>평가 — ' + esc(head) + '</h4>' +
       '<div class="sub">' + esc([it.lane, it.corner ? catName(it.corner) : '', (it.editor || {}).grade ? '편집장 ' + it.editor.grade : ''].filter(Boolean).join(' · ')) +
@@ -2267,7 +2266,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         if (ls.some(Boolean)) rwn.lines = ls;
         if (q('[data-r="cap"]')) rwn.cap = q('[data-r="cap"]');
         if (Object.keys(v).length <= 1 && !reason && !Object.keys(rwn).length) { toast('고른 것이 없습니다'); return; }
-        var bad = EV_ITEMS.some(function (x) { return v[x[0]] === 'x' || v[x[0]] === 't'; });
+        var bad = v.fact === 'x' || EV_ITEMS.some(function (x) { return v[x[0]] === 'x' || v[x[0]] === 't'; });
         if (bad && !reason && !confirm('✕·△ 를 줬는데 이유가 비었어요. 이유 없이 저장할까요?')) return;
         sh.remove();
         evSave({ id: id, kind: 'draft', draft_date: (DR && DR.date) || null, draft_key: evKey(it), source_id: String((it.source || {}).id || ''),
@@ -3108,9 +3107,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.11 16:46';
+    a.title = '판 10.11 16:55';
     var ver = document.createElement('span');
-    ver.textContent = '10.11 16:46';
+    ver.textContent = '10.11 16:55';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
