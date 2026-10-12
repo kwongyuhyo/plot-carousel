@@ -1,16 +1,60 @@
 {
- "generated_at": "2026-10-12T07:07+09:00",
+ "generated_at": "2026-10-12T13:01+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 3.88,
- "today": 0,
- "per_day": 0.14,
- "calls": 0,
+ "spent": 6.52,
+ "today": 2.64,
+ "per_day": 2.64,
+ "calls": 240,
  "by": [
   {
    "name": "장부 전 (Console)",
    "usd": 3.88
+  },
+  {
+   "name": "초안 쓰기",
+   "usd": 1.93
+  },
+  {
+   "name": "process",
+   "usd": 0.53
+  },
+  {
+   "name": "표지",
+   "usd": 0.1
+  },
+  {
+   "name": "팩트체크",
+   "usd": 0.05
+  },
+  {
+   "name": "naver_music",
+   "usd": 0.01
+  },
+  {
+   "name": "클립 고르기",
+   "usd": 0.01
+  },
+  {
+   "name": "봇",
+   "usd": 0.01
+  },
+  {
+   "name": "초안 고르기·조사",
+   "usd": 0.01
+  },
+  {
+   "name": "사진 DB",
+   "usd": 0.0
+  },
+  {
+   "name": "숏폼 영상 찾기",
+   "usd": 0.0
+  },
+  {
+   "name": "사진 찾기",
+   "usd": 0.0
   }
  ]
 }

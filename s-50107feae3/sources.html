@@ -2039,11 +2039,33 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (sl.length && cv && pv.covers && pv.covers[cv.key]) sl[0] = pv.covers[cv.key];
     return sl;
   }
+  // 가공 판정 (2026-10-12) — 몇 점이었고 무엇을 팔기로 했나, 같은 사람 다른 출처를 묶었나
+  function sellOf(it) { return ((it && it.process) || {}).sell || {}; }
+  function sellLines(it) {
+    var s = sellOf(it), b = it.bundled || [];
+    if (s.score == null && !b.length) return '';
+    return (s.score != null ? '<div>판정 <b>' + esc(s.score) + '점</b>' + (s.importance ? ' · 중요도 ' + esc(s.importance) : '') +
+        (s.why ? ' — ' + esc(String(s.why).slice(0, 120)) : '') + '</div>' : '') +
+      (s.core ? '<div>팔 것: ' + esc(s.core) + '</div>' : '') +
+      ((s.selling || []).length ? '<div>셀링포인트: ' + esc(s.selling.join(' / ')) + '</div>' : '') +
+      (s.risk ? '<div>조심: ' + esc(s.risk) + '</div>' : '') +
+      (b.length ? '<div>같이 묶은 출처: ' + esc(b.map(function (x) { return x.account || x.id; }).join(', ')) + '</div>' : '');
+  }
+  function skipBox() {
+    var sk = ((DR && DR.skipped) || []).filter(function (x) { return x.sell != null; });
+    if (!sk.length) return '';
+    return '<details class="fsum"><summary>판정에서 떨어진 소재 ' + sk.length + '건</summary>' +
+      sk.map(function (x) {
+        return '<div>' + esc(x.entity || '@' + (x.account || '')) + ' <b>' + esc(x.sell) + '점</b> · ' +
+          esc(String(x.why || '').replace(/^가공:\s*/, '').slice(0, 80)) + '</div>';
+      }).join('') + '</details>';
+  }
   function captionOf(it, kind) { return ((kind === 'shorts' ? it.shorts : it.card) || {}).caption || ''; }
   function postHead(it, kind, x) {
     var ed = it.editor || {};
     var pe = it.preempt || {};
     var sub = [it.lane, kind === 'shorts' ? '릴스' : '', ed.grade ? '편집장 ' + ed.grade : '',
+      sellOf(it).score != null ? '판정 ' + sellOf(it).score + '점' : '',
       pe.score >= 2 ? '선점 기회' : pe.score < 0 ? '최근 다룸' : ''].filter(Boolean).join(' · ');
     return '<div class="igh"><img class="av" src="icon-192.png" alt=""><div class="who"><b>plot_music</b>' +
       cornerTag(it) + drTrust(x) + '<span>' + esc(sub) + '</span></div></div>';
@@ -2054,7 +2076,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var n = ((x.issues || []).length + (x.confirm || []).length);
     return '<details><summary>편집 정보' + (n ? ' · 확인 ' + n : '') + '</summary>' +
       '<div>' + src + esc(s.account || s.kind || '') + (s.head ? ' — ' + esc(s.head) : '') + '</div>' +
-      (ed.angle ? '<div>각도: ' + esc(ed.angle) + '</div>' : '') +
+      (ed.angle ? '<div>각도: ' + esc(ed.angle) + '</div>' : '') + sellLines(it) +
       (it.preempt && it.preempt.line ? '<div>선점 ' + (it.preempt.score > 0 ? '+' : '') + esc(it.preempt.score) + ' — ' + esc(it.preempt.line) + '</div>' : '') +
       (it.repack ? '<div>재포장 · ' + esc(it.repack.date || '') + ' 원글 도달 ' + esc(Number(it.repack.reach || 0).toLocaleString()) + '</div>' : '') +
       (x.trust && x.trust.why ? '<div>신뢰도 근거: ' + esc([].concat(x.trust.why).join(' · ')) + '</div>' : '') +
@@ -3065,7 +3087,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = usageBox() + reqBox() + storyBox() + evNote(items) + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = usageBox() + reqBox() + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 오후 3시 이후 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
@@ -3074,7 +3096,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     host.innerHTML = reqBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
-        return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + esc((x.why || '').slice(0, 40)) + ')'; }).join(' · ') : '') + '</div>' +
+        return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
+          esc((x.why || '').slice(0, 40)) + ')'; }).join(' · ') : '') + '</div>' +
       items.map(function (it, i) {
         var s = it.source || {}, sh = it.shorts || {}, cd = it.card || {};
         var lbl = s.kind === 'news' ? '📰 ' + esc(s.account || '뉴스 급등') : s.kind === 'clip' ? '🎬 ' + esc(s.account || '클립') :
@@ -3086,7 +3109,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
           (it.repack ? '<div class="rp">' + esc(it.repack.date || '') + ' 원글 · 도달 ' + esc(Number(it.repack.reach || 0).toLocaleString()) +
             ' (그 주 평소의 ' + esc(it.repack.mult) + '배) · 저장·공유는 평소의 ' + esc(it.repack.rate_x) + '배 — 표지·첫 장을 새로</div>' : '') +
           (it.editor && it.editor.grade ? '<div class="ed"><b class="g' + esc(it.editor.grade) + '">편집장 ' + esc(it.editor.grade) + '</b> ' +
-            esc(it.editor.kind || '') + (it.editor.angle ? ' — ' + esc(it.editor.angle) : '') + '</div>' : '');
+            esc(it.editor.kind || '') + (it.editor.angle ? ' — ' + esc(it.editor.angle) : '') + '</div>' : '') +
+          (sellOf(it).score != null || (it.bundled || []).length ? '<div class="ed">' + sellLines(it) + '</div>' : '');
         if (sh.error) h += '<div class="fm err">숏폼 초안 실패 — ' + esc(sh.error) + '</div>';
         else if (sh.form) {
           var k1 = s.id + ':shorts';
@@ -3221,9 +3245,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.12 07:07';
+    a.title = '판 10.12 13:05';
     var ver = document.createElement('span');
-    ver.textContent = '10.12 07:07';
+    ver.textContent = '10.12 13:05';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
