@@ -1,28 +1,36 @@
 {
- "generated_at": "2026-10-12T14:06+09:00",
+ "generated_at": "2026-10-12T15:10+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 6.83,
- "today": 2.95,
- "per_day": 2.95,
- "calls": 264,
+ "spent": 12.93,
+ "today": 9.05,
+ "per_day": 9.05,
+ "calls": 616,
  "by": [
+  {
+   "name": "process",
+   "usd": 5.81
+  },
   {
    "name": "장부 전 (Console)",
    "usd": 3.88
   },
   {
    "name": "초안 쓰기",
-   "usd": 2.13
-  },
-  {
-   "name": "process",
-   "usd": 0.59
+   "usd": 2.6
   },
   {
    "name": "표지",
-   "usd": 0.12
+   "usd": 0.19
+  },
+  {
+   "name": "편집장",
+   "usd": 0.18
+  },
+  {
+   "name": "sell_calib",
+   "usd": 0.15
   },
   {
    "name": "팩트체크",
@@ -41,20 +49,12 @@
    "usd": 0.01
   },
   {
-   "name": "봇",
-   "usd": 0.01
-  },
-  {
    "name": "초안 고르기·조사",
    "usd": 0.01
   },
   {
-   "name": "사진 DB",
-   "usd": 0.0
-  },
-  {
-   "name": "숏폼 영상 찾기",
-   "usd": 0.0
+   "name": "봇",
+   "usd": 0.01
   }
  ]
 }
