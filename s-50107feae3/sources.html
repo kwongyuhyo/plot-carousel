@@ -575,6 +575,43 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .err{border:1px solid #4A2A2A; background:#1A1214; border-radius:5px;
   padding:14px 16px; color:#E8A0A0; font-size:14px; line-height:1.6}
   .dr .src .lane{display:inline-block;padding:1px 7px;border:1px solid var(--line);border-radius:999px;font-size:11px;margin-right:4px}
+/* 댓글창 — 인스타처럼 (2026-10-12): 선정 사유·빠름은 고정 댓글, 피드백은 댓글 */
+.sheet.cmt .pn{display:flex; flex-direction:column; height:80vh; height:80dvh; max-height:none; overflow:hidden; padding-bottom:0; max-width:620px; margin:0 auto}
+.sheet.cmt{justify-content:center}
+.cmt h4{margin:0 0 8px; text-align:center; font-size:15px; padding-bottom:10px; border-bottom:1px solid var(--line)}
+.cmt .cl{flex:1; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; padding:6px 0 10px}
+.cmt .cm{display:flex; gap:10px; padding:10px 16px; align-items:flex-start}
+.cmt .cm.pin{background:rgba(127,127,127,.07)}
+.cmt .av{width:32px; height:32px; border-radius:50%; flex:none; object-fit:cover; border:1px solid var(--line); background:#111}
+.cmt .av.me{display:flex; align-items:center; justify-content:center; background:var(--amber); color:#111; font-weight:800; font-size:13px; border:0}
+.cmt .bd{flex:1; min-width:0; font-size:13.5px; line-height:1.5}
+.cmt .nm{display:flex; gap:6px; align-items:baseline; flex-wrap:wrap}
+.cmt .nm b{font-size:13px} .cmt .nm span{font-size:11.5px; color:var(--dim)}
+.cmt .pr{margin-top:5px} .cmt .pr em{display:inline-block; font-style:normal; font-size:11px; font-weight:700; color:var(--amber);
+  border:1px solid var(--amber); border-radius:999px; padding:0 7px; margin-right:6px}
+.cmt .tx{white-space:pre-wrap; word-break:break-word}
+.cmt .none{padding:16px 20px; font-size:13px; color:var(--dim); line-height:1.6}
+.cmt .ib{border-top:1px solid var(--line); padding:8px 12px calc(10px + env(safe-area-inset-bottom)); background:var(--panel)}
+.cmt .ch{display:flex; gap:6px; overflow-x:auto; padding-bottom:8px; scrollbar-width:none}
+.sheet.cmt .pn .ch button{display:inline-block; width:auto; flex:none; font:inherit; font-size:13px; padding:6px 12px; border:1px solid var(--line);
+  border-radius:999px; background:none; color:var(--text)}
+.sheet.cmt .pn .ch button[aria-pressed="true"]{border-color:var(--amber); background:rgba(232,179,74,.14)}
+.cmt .ir{display:flex; align-items:center; gap:8px}
+.cmt .ir input{flex:1; min-width:0; font:inherit; font-size:16px; padding:9px 12px; border:1px solid var(--line); border-radius:999px; background:var(--bg); color:var(--text)}
+.sheet.cmt .pn .ir button{display:inline-block; width:auto; padding:6px 4px; font-weight:700; color:#3897f0; font-size:14px}
+.ig .cml{display:block; background:none; border:0; color:var(--dim); padding:3px 14px; font-size:13.5px; text-align:left; font-family:inherit}
+.ig button.evcm{display:block; width:calc(100% - 28px); text-align:left; border:0; font-family:inherit}
+.ig .iga button.on svg{fill:#ff3040; stroke:#ff3040} .ig .iga button.sv.on svg{fill:currentColor; stroke:currentColor}
+.ig .igl{padding:2px 14px; font-size:13.5px} .ig .igt{padding:2px 14px; font-size:11.5px; color:var(--dim)}
+.ig .avt{display:flex; align-items:center; justify-content:center; font-weight:800; font-size:14px; color:#fff; background:#333}
+.ig .who a{color:inherit; text-decoration:none}
+.ig .igx{background:none; border:0; color:var(--dim); font-size:13px; padding:6px 4px; font-family:inherit}
+.ig.skipped{opacity:.45}
+.ig .med .one{width:100%; aspect-ratio:4/5; object-fit:cover; display:block}
+.ig .med .alt{display:none}
+.ig .med.gone{aspect-ratio:4/5; display:flex; align-items:center; justify-content:center; background:var(--panel); padding:28px; box-sizing:border-box}
+.ig .med.gone .alt{display:block; font-size:16px; font-weight:700; line-height:1.55; color:var(--text); text-align:center; white-space:pre-wrap}
+.ig .med.gone .one{display:none}
 </style>
 
 <link rel="manifest" href="manifest.webmanifest">
@@ -1357,7 +1394,59 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     bindNewsBar();
   }
 
+  // 오늘의 후보 — 인스타 피드처럼 (2026-10-12 규효 "이슈 뉴스도 인스타 보기 탭처럼").
+  // ♥ 고르기 · 💬 고정 댓글(빠름·선정 사유) + 앵글은 댓글로 · ✈︎ 앱에 초안 맡기기 · 🔖 봇 초안 표시
+  var CV_KEY = 'plot.cand.view';
+  function candView() { try { return localStorage.getItem(CV_KEY) || 'feed'; } catch (e) { return 'feed'; } }
+  function candPost(c) {
+    var m = marks[c.id], sub = [], cap = String(c.caption || ''), id = esc(c.id);
+    if (c.kind === 'news') sub.push('소식'); else if (c.kind === 'curation') sub.push('큐레이션');
+    if (c.is_reel) sub.push('릴스');
+    (c.genres || []).forEach(function (g) { if (g !== '기타') sub.push(g.indexOf('인물:') === 0 ? '본인 · ' + g.slice(3) : g); });
+    if (c.covered) sub.push('이미 다룸');
+    var notes = CNOTE[c.id] || (angles[c.id] ? [angles[c.id]] : []);
+    var media = '<div class="med' + (c.image ? '' : ' gone') + '">' + (c.image ? '<img class="one" loading="lazy" referrerpolicy="no-referrer" src="' + esc(c.image) +
+      '" alt="" onerror="this.parentNode.classList.add(\'gone\')">' : '') + '<div class="alt">' + esc(cap.slice(0, 160)) + '</div></div>';
+    return '<article class="ig' + (m === 'skip' ? ' skipped' : '') + '" data-id="' + id + '">' +
+      '<div class="igh"><span class="av avt">' + esc(String(c.account || '?').slice(0, 1).toUpperCase()) + '</span>' +
+      '<div class="who"><a href="' + escU(c.url) + '" target="_blank" rel="noopener"><b>' + esc(c.account) + '</b></a><span>' + esc(sub.join(' · ')) + '</span></div>' +
+      '<button type="button" class="igx" data-act="skip">' + (m === 'skip' ? '건너뜀' : '건너뛰기') + '</button></div>' + media +
+      '<div class="iga"><button type="button" class="' + (m === 'pick' ? 'on' : '') + '" data-act="pick" aria-label="고르기">' + IC.heart + '</button>' +
+      '<button type="button" data-cmt="c:' + id + '" aria-label="댓글">' + IC.chat + '</button>' +
+      '<button type="button" data-act="mkdraft" aria-label="앱 초안 맡기기">' + IC.send + '</button><span class="sp"></span>' +
+      '<button type="button" class="sv' + (m === 'drafted' ? ' on' : '') + '" data-act="drafted" aria-label="초안 표시">' + IC.save + '</button></div>' +
+      '<div class="igl"><b>좋아요 ' + num(c.likes) + '개</b>' + (m === 'drafted' ? ' · ✎ ' + FORM_LABEL[forms[c.id] || 'shorts'] + ' 초안' : '') + '</div>' +
+      '<div class="igc cl" data-cap><b>' + esc(c.account) + '</b> ' + esc(cap) + '</div>' +
+      (cap.length > 60 ? '<button type="button" class="more" data-morecap2>더 보기</button>' : '') +
+      (notes.length ? '<button type="button" class="evcm" data-cmt="c:' + id + '">💬 ' + esc(notes[notes.length - 1]) + '</button>' : '') +
+      '<button type="button" class="cml" data-cmt="c:' + id + '">' + (c.comments ? '댓글 ' + num(c.comments) + '개 · ' : '') + '빠름·선정 사유 보기</button>' +
+      '<div class="igt">' + esc(ago(c.hours)) + '</div></article>';
+  }
+  function candModeBar(mode) {
+    return '<div class="vmode"><button type="button" data-cvmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
+      '<button type="button" data-cvmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
+  }
+  function renderCandFeed() {
+    var v = document.getElementById('viewCand');
+    if (!D.candidates || !D.candidates.length) {
+      v.innerHTML = candModeBar('feed') + '<p class="note">오늘은 기준을 넘은 소식이 없습니다. 계정별 탭에서 직접 훑어보세요.</p>';
+      return;
+    }
+    var fast = sorted((D.fast || []).filter(pass)), list = sorted(D.candidates.filter(pass));
+    v.innerHTML = candModeBar('feed') +
+      '<div class="fsum">♥ 고르기 · 💬 빠름·선정 사유 (앵글은 댓글로) · ✈︎ 앱에 초안 맡기기 · 🔖 봇 초안 표시</div>' +
+      (fast.length ? '<h3 class="fasth">빠른 글 ' + fast.length + '건<span class="sub">아직 숫자는 작지만 이 나이치고 빠릅니다</span></h3>' +
+        fast.map(candPost).join('') : '') +
+      (list.length ? list.map(candPost).join('') : '<p class="note">이 조건에 맞는 후보가 없습니다. 기간이나 매거진을 넓혀보세요.</p>');
+  }
+  document.getElementById('viewCand').addEventListener('click', function (e) {
+    var vm = e.target.closest('[data-cvmode]');
+    if (vm) { try { localStorage.setItem(CV_KEY, vm.getAttribute('data-cvmode')); } catch (x) {} renderCand(); return; }
+    var mc = e.target.closest('[data-morecap2]');
+    if (mc) { var cp = mc.previousElementSibling; if (cp) cp.classList.remove('cl'); mc.remove(); }
+  });
   function renderCand() {
+    if (candView() === 'feed') return renderCandFeed();
     var v = document.getElementById('viewCand');
     var hint = '';      // 성과 요약 한 줄은 뺐다 — 고르는 데 도움이 안 됐다(규효)
     if (!D.candidates || !D.candidates.length) {
@@ -1378,7 +1467,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var list = sorted(D.candidates.filter(pass));
     // 이어지는 이야기는 기획 갈래로 옮겼다 — 성격이 기획거리인데
     // 이슈 목록에 섞여 있으면 반응 배수에 밀려 매일 아래로 내려간다.
-    v.innerHTML = hint + fastBlock + (list.length
+    v.innerHTML = candModeBar('list') + hint + fastBlock + (list.length
       ? list.map(function (c) { return card(c); }).join('')
       : '<p class="note">이 조건에 맞는 후보가 없습니다. 기간이나 매거진을 넓혀보세요.</p>');
   }
@@ -2137,7 +2226,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       return '<button class="' + (j === ci ? 'on' : '') + '" data-cv="' + i + ':' + j + '">' + esc(cv.key) + ' ' + esc(cv.title) + '</button>'; }).join('') + '</div>' : '';
     var cap = captionOf(it, 'card');
     return '<article class="ig">' + postHead(it, 'card', cd) + media +
-      '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글">' + IC.chat +
+      '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글" data-cmt="d:' + i + '">' + IC.chat +
       '</button><button aria-label="공유" data-share="' + i + ':card">' + IC.send + '</button><span class="sp"></span><button aria-label="저장">' + IC.save + '</button></div>' +
       cov + '<div class="igc cl" data-cap><b>plot_music</b> ' + esc(cap) + '</div>' +
       (cap.length > 60 ? '<button class="more" data-morecap>더 보기</button>' : '') + pubMark(it) + evBar(it, i) + postInfo(it, cd) + '</article>';
@@ -2257,7 +2346,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     rec.updated_at = new Date().toISOString();
     var m = evGet(); m[rec.id] = rec; evPut(m);
     var q = evQ().filter(function (x) { return x.id !== rec.id; }); q.push(rec); evQPut(q);
+    cmtRefresh();
     return evFlush().then(function (left) {
+      cmtRefresh();
       toast(!sbOn() ? '이 기기에 저장했습니다 — 저장소 설정 전이라 맥에는 아직 안 갑니다' :
         left ? '저장 대기 — 연결되면 올라갑니다' : '평가를 저장했습니다 ✓');
       if (GRP === 'draft') renderDrafts();
@@ -2295,6 +2386,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     evSave(old);
   }
   function evBar(it, i) {
+    return cmtLink(it, i) + evBar0(it, i);
+  }
+  function evBar0(it, i) {
     var r = evGet()[evId(it)], pend = evQ().some(function (x) { return x.id === evId(it); });
     if (!r) {
       return '<div class="evb q">' + EV_GO.map(function (o) {
@@ -2303,7 +2397,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     }
     var v = r.verdict || {};
     // 사유는 댓글로 (10/12 규효 "피드백할때, 그냥 댓글에 사유를 적게 해줘") — 고르는 칩 대신 한 줄 글
-    if (!r.reason && !EVC_SKIP[evId(it)] && v.go) {
+    if (false && !r.reason && !EVC_SKIP[evId(it)] && v.go) {   // 10/12 댓글창으로 옮김
       var ph = v.go === 'now' ? '좋았던 점 한마디 (안 적어도 됨)' : '왜? 댓글처럼 적어 주세요 — 예) 디스 내용 나열뿐, 둘 관계가 없음';
       return '<div class="evb evc"><span class="ws">' + esc(evOpt(EV_GO, v.go)) + (pend ? ' ⏳' : ' ✓') + '</span>' +
         '<input type="text" data-evci="' + i + '" placeholder="' + esc(ph) + '" enterkeyhint="send">' +
@@ -2313,7 +2407,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     return '<div class="evb"><button data-ev="' + i + '" class="' + (r ? 'done' : '') + '">' +
       (pend ? '⏳ 평가함 · 고치기' : '✓ 평가함 · 고치기') + '</button>' +
       '<span class="ws">' + esc(evSum(r.verdict)) + '</span></div>' +
-      (r.reason ? '<div class="evcm">💬 ' + esc(r.reason) + '</div>' : '');
+      (r.reason ? '<button type="button" class="evcm" data-cmt="d:' + i + '">💬 ' + esc(String(r.reason).split('\n').filter(Boolean).pop()) + '</button>'
+        : v.go && v.go !== 'now' ? '<button type="button" class="cml" data-cmt="d:' + i + '">💬 왜인지 댓글 달기</button>' : '');
   }
   var EVC_SKIP = {};
   function evComment(it, text) {
@@ -2322,6 +2417,118 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     old.reason = text.slice(0, 600);
     evSave(old);
   }
+  /* ── 댓글창 — 인스타처럼 (2026-10-12 규효: "빠름 정도나 선정 사유는 댓글 열면 고정 댓글로, 댓글창에 피드백") ──
+     맨 위 고정 댓글(plot_music)에 왜 골랐나·얼마나 빠른가, 아래에 규효의 피드백. 아래 칩은 인스타 이모지 줄 자리. */
+  var CMT = null, CNOTE = {};
+  function cmtN(it) { var r = evGet()[evId(it)]; return r ? String(r.reason || '').split('\n').filter(function (x) { return x.trim(); }).length + (r.verdict && r.verdict.go ? 1 : 0) : 0; }
+  function cmtLink(it, i) {
+    var n = cmtN(it);
+    return '<button type="button" class="cml" data-cmt="d:' + i + '">' + (n ? '댓글 ' + n + '개 · ' : '') + '선정 사유 보기</button>';
+  }
+  function cmtAgo(iso) {
+    var t = Date.parse(iso || ''); if (isNaN(t)) return '';
+    var h = (Date.now() - t) / 3600e3;
+    return h < 1 ? Math.max(1, Math.round(h * 60)) + '분' : h < 24 ? Math.round(h) + '시간' : Math.round(h / 24) + '일';
+  }
+  function pinRow(label, html) { return html ? '<div class="pr"><em>' + esc(label) + '</em>' + html + '</div>' : ''; }
+  function drPin(it) {
+    var ed = it.editor || {}, s = sellOf(it), pe = it.preempt || {}, src = it.source || {}, b = it.bundled || [];
+    var why = [ed.grade ? '편집장 ' + esc(ed.grade) + (ed.kind ? ' · ' + esc(ed.kind) : '') : '', ed.why ? esc(ed.why) : '',
+      ed.angle ? '각도 — ' + esc(ed.angle) : ''].filter(Boolean).join('<br>');
+    var sell = s.score != null ? '<b>' + esc(s.score) + '점</b>' + (s.importance ? ' · 중요도 ' + esc(s.importance) : '') + (s.why ? ' — ' + esc(s.why) : '') +
+      (s.core ? '<br>팔 것: ' + esc(s.core) : '') + ((s.selling || []).length ? '<br>셀링포인트: ' + esc(s.selling.join(' / ')) : '') : '';
+    var fast = [pe.line ? esc(pe.line) : '', src.multiple ? (src.kind === 'news' ? '기사 평소의 ' : '반응 평소의 ') + esc(src.multiple) + '배' : '',
+      it.made_at ? cmtAgo(it.made_at) + ' 전에 씀' : ''].filter(Boolean).join(' · ');
+    var chk = [s.check ? '발행 전 확인: ' + esc(s.check) : '', s.risk ? '피할 것: ' + esc(s.risk) : '',
+      b.length ? '같이 묶은 출처: ' + esc(b.map(function (x) { return x.account || x.id; }).join(', ')) : ''].filter(Boolean).join('<br>');
+    var srcl = (src.head ? esc(src.head) : '') + (src.url ? ' · <a href="' + escU(src.url) + '" target="_blank" rel="noopener">' + (src.kind === 'news' ? '기사' : '원문') + '</a>' : '');
+    return pinRow('선정 사유', why) + pinRow('판정', sell) + pinRow('빠름', fast) + pinRow('확인', chk) + pinRow('출처', srcl);
+  }
+  function cdPin(c) {
+    var fast = [c.hours != null ? '올라온 지 ' + ago(c.hours).replace(' 전', '') : '', c.pace ? '이 나이치고 <b>' + esc(c.pace) + '배</b> 빠름' : '',
+      c.velocity != null ? '시간당 +' + Math.round(c.velocity) : '', c.multiple != null ? '평소의 <b>' + c.multiple.toFixed(1) + '배</b> 반응' : ''].filter(Boolean).join(' · ');
+    var why = [esc([].concat(c.why || []).join(' ')), [].concat(c.kind_why || []).map(esc).join('<br>')].filter(Boolean).join('<br>');
+    var more = [c.news_surge ? '뉴스도 ' + esc(c.news_surge.multiple) + '배 (' + esc(c.news_surge.entity) + ') — 먼저 보세요' : '',
+      c.covered ? '이미 다룬 소재' : ''].filter(Boolean).join('<br>');
+    var st = '♥ ' + num(c.likes) + ' · 댓글 ' + num(c.comments) + (c.views != null ? ' · 조회 ' + num(c.views) : '');
+    return pinRow('빠름', fast) + pinRow('선정 사유', why) + pinRow('같이 볼 것', more) + pinRow('숫자', st) + kindWarn(c);
+  }
+  function cmtDraft(i) {
+    var it = (DR && DR.items || [])[i]; if (!it) return null;
+    var r = evGet()[evId(it)], v = (r && r.verdict) || {}, pend = evQ().some(function (x) { return x.id === evId(it); });
+    var list = [];
+    if (v.go) list.push({ text: evSum(v) || evOpt(EV_GO, v.go), sub: '평가' + (pend ? ' · 저장 대기' : '') });
+    String((r && r.reason) || '').split('\n').forEach(function (t) { if (t.trim()) list.push({ text: t.trim(), sub: pend ? '저장 대기' : '' }); });
+    return { pin: drPin(it), list: list,
+      empty: '아직 피드백이 없습니다. 아래 칩으로 판정하고 사유를 적으면 맥이 편집장·작성기 학습에 씁니다.',
+      ph: v.go && v.go !== 'now' ? '왜? 예) 디스 내용 나열뿐, 둘 관계가 없음' : '피드백 남기기…',
+      chips: EV_GO.map(function (g) { return [g[0], g[1], v.go === g[0]]; }).concat([['_ev', '✎ 자세히', false]]),
+      focus: !!(v.go && v.go !== 'now' && !(r && r.reason)),
+      chip: function (k) { if (k === '_ev') { cmtClose(); openEval(i); return; } evQuick(it, i, k); },
+      send: function (t) { evAddComment(it, t); } };
+  }
+  function evAddComment(it, text) {
+    text = String(text || '').trim().slice(0, 600); if (!text) return;
+    var id = evId(it), old = evGet()[id];
+    if (!old) old = { id: id, kind: 'draft', draft_date: (DR && DR.date) || null, draft_key: evKey(it), source_id: String((it.source || {}).id || ''),
+      verdict: { form: 2 }, reason: '', rewrite: {}, snapshot: evSnap(it), device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0] };
+    old.reason = [old.reason, text].filter(Boolean).join('\n').slice(-1500);
+    evSave(old);
+  }
+  function cmtCand(id) {
+    var c = indexAll()[id]; if (!c) return null;
+    var notes = CNOTE[id] || (angles[id] ? [angles[id]] : []), m = marks[id];
+    return { pin: cdPin(c), list: notes.map(function (t) { return { text: t, sub: '앵글' }; }),
+      empty: '앵글이나 메모를 적으면 이 소재를 고른 걸로 표시하고, 보내기 할 때 같이 실립니다.',
+      ph: '앵글 한 줄 — 어떻게 쓸지',
+      chips: [['pick', m === 'pick' ? '♥ 고름' : '♡ 고르기', m === 'pick'], ['mkdraft', '✍️ 앱 초안 맡기기', false], ['skip', m === 'skip' ? '건너뜀' : '건너뛰기', m === 'skip']],
+      chip: function (k) {
+        if (k === 'mkdraft') { cmtClose(); askDraft('dr-' + skey(id), headline(c) || ('@' + (c.account || ''))); return; }
+        marks[id] = marks[id] === k ? undefined : k; if (!marks[id]) delete marks[id]; delete forms[id];
+        renderCand(); refreshBar(); cmtRefresh();
+      },
+      send: function (t) {
+        CNOTE[id] = notes.concat([t]); angles[id] = CNOTE[id].join(' / ').slice(0, 200);
+        if (!marks[id]) marks[id] = 'pick';
+        renderCand(); refreshBar(); cmtRefresh();
+      } };
+  }
+  function cmtClose() { var o = document.querySelector('.sheet.cmt'); if (o) o.remove(); CMT = null; }
+  function cmtRefresh() { if (CMT && document.querySelector('.sheet.cmt')) cmtOpen(CMT.kind, CMT.ref); }
+  function cmtOpen(kind, ref) {
+    var old = document.querySelector('.sheet.cmt'), keep = 0, draft = '', foc = false;
+    if (old) { keep = old.querySelector('.cl').scrollTop; var oi = old.querySelector('input'); draft = oi.value; foc = document.activeElement === oi; old.remove(); }
+    var o = kind === 'd' ? cmtDraft(Number(ref)) : cmtCand(ref); if (!o) { CMT = null; return; }
+    CMT = { kind: kind, ref: ref };
+    var sh = document.createElement('div'); sh.className = 'sheet cmt';
+    sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>댓글</h4><div class="cl">' +
+      '<div class="cm pin"><img class="av" src="icon-192.png" alt=""><div class="bd"><div class="nm"><b>plot_music</b><span>📌 고정됨</span></div>' +
+      (o.pin || '<div class="pr">아직 적힌 사유가 없습니다</div>') + '</div></div>' +
+      o.list.map(function (x) {
+        return '<div class="cm"><span class="av me">규</span><div class="bd"><div class="nm"><b>규효</b>' + (x.sub ? '<span>' + esc(x.sub) + '</span>' : '') +
+          '</div><div class="tx">' + esc(x.text) + '</div></div></div>'; }).join('') +
+      (o.list.length ? '' : '<div class="none">' + esc(o.empty || '') + '</div>') + '</div>' +
+      '<div class="ib">' + ((o.chips || []).length ? '<div class="ch">' + o.chips.map(function (x) {
+        return '<button type="button" data-cc="' + esc(x[0]) + '" aria-pressed="' + !!x[2] + '">' + esc(x[1]) + '</button>'; }).join('') + '</div>' : '') +
+      '<div class="ir"><span class="av me">규</span><input type="text" placeholder="' + esc(o.ph) + '" enterkeyhint="send"><button type="button" data-cs>게시</button></div></div></div>';
+    document.body.appendChild(sh);
+    sh.querySelector('.cl').scrollTop = keep;
+    var inp = sh.querySelector('input'); inp.value = draft;
+    function send() { var t = inp.value.trim(); if (!t) return; inp.value = ''; o.send(t); }
+    sh.addEventListener('click', function (e) {
+      if (e.target === sh) { cmtClose(); return; }
+      if (e.target.closest('[data-cs]')) { send(); return; }
+      var cc = e.target.closest('[data-cc]'); if (cc) o.chip(cc.getAttribute('data-cc'));
+    });
+    inp.addEventListener('keydown', function (e) { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); send(); } });
+    if (foc || (o.focus && !old)) setTimeout(function () { try { inp.focus(); } catch (x) {} }, 60);
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-cmt]'); if (!b) return;
+    var v = b.getAttribute('data-cmt'), k = v.indexOf(':');
+    e.stopPropagation();
+    cmtOpen(v.slice(0, k), v.slice(k + 1));
+  }, true);
   function evChips(key, list, cur) {
     return '<div class="cs" data-g="' + key + '">' + list.map(function (o) {
       return '<button type="button" data-o="' + esc(o[0]) + '" aria-pressed="' + (cur === o[0]) + '">' + esc(o[1]) + '</button>'; }).join('') + '</div>';
@@ -2798,7 +3005,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       (ytId(vd.url) ? ' data-vid="' + esc(ytId(vd.url)) + '" data-s="' + Math.floor((vd.range || [0])[0] || 0) + '" data-e="' +
         Math.ceil((vd.range || [0, 0])[1] || 0) + '"' : '') + '>' + frame +
       (ytId(vd.url) ? '<button class="pl" data-play aria-label="여기서 재생">' + IC.play + '</button>' : '') + '</div>' +
-      '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글">' + IC.chat +
+      '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글" data-cmt="d:' + i + '">' + IC.chat +
       '</button><button aria-label="공유" data-share="' + i + ':shorts">' + IC.send + '</button><span class="sp"></span><button aria-label="저장">' + IC.save + '</button></div>' +
       '<div class="igc cl" data-cap><b>plot_music</b> ' + esc(cap) + '</div>' +
       (cap.length > 60 ? '<button class="more" data-morecap>더 보기</button>' : '') + evBar(it, i) + postInfo(it, sh) + '</article>';
@@ -3303,7 +3510,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var shb = e.target.closest('[data-share]');
     if (shb) { var sp = shb.getAttribute('data-share').split(':'); openSheet(Number(sp[0]), sp[1]); return; }
     var evq = e.target.closest('[data-evq]');
-    if (evq) { var q1 = evq.getAttribute('data-evq').split(':'); evQuick((DR.items || [])[Number(q1[0])], Number(q1[0]), q1[1]); return; }
+    if (evq) { var q1 = evq.getAttribute('data-evq').split(':'); evQuick((DR.items || [])[Number(q1[0])], Number(q1[0]), q1[1]);
+      if (q1[1] !== 'now') cmtOpen('d', q1[0]); return; }
     var evw = e.target.closest('[data-evw]');
     if (evw) { var w1 = evw.getAttribute('data-evw').split(':'); evWhy((DR.items || [])[Number(w1[0])], Number(w1[0]), w1[1]); return; }
     var evcs = e.target.closest('[data-evcs]');
@@ -3404,9 +3612,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.12 19:39';
+    a.title = '판 10.12 20:27';
     var ver = document.createElement('span');
-    ver.textContent = '10.12 19:39';
+    ver.textContent = '10.12 20:27';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
