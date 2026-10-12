@@ -3074,7 +3074,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var items = (DR && DR.items) || [];
     if (!items.length) {
       host.innerHTML = reqBox() + pubBox() + '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
-        '맥이 매일 오후 3시 이후 첫 스캔에서 상위 후보를 숏폼·캐러셀 초안으로 미리 써 둡니다.' +
+        '맥이 매일 8시부터 밤 12시까지 한 시간마다 새 후보를 숏폼·캐러셀 초안으로 써 둡니다.' +
         (DR && DR.generated_at ? '<br>마지막: ' + esc(DR.generated_at) : '') + '</div>';
       return;
     }
@@ -3088,12 +3088,12 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
       host.innerHTML = usageBox() + reqBox() + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
-        (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 오후 3시 이후 맥이 씁니다.</div>' : '') +
-        '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
+        (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
+        '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
       return;
     }
-    host.innerHTML = reqBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = reqBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
@@ -3245,9 +3245,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.12 13:05';
+    a.title = '판 10.12 13:21';
     var ver = document.createElement('span');
-    ver.textContent = '10.12 13:05';
+    ver.textContent = '10.12 13:21';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
