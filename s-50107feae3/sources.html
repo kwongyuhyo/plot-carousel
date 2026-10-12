@@ -464,6 +464,10 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .evn .top span{color:var(--dim)}
 .evn .top button{margin-left:auto; font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--text); border-radius:6px; padding:5px 9px}
 .evn .top button + button{margin-left:0}
+.odb .odr{margin-top:6px; font-size:12.5px; line-height:1.45} .odb .odr small{color:var(--dim)}
+.odb .s{display:inline-block; font-size:11px; border-radius:999px; padding:1px 7px; border:1px solid var(--line); color:var(--dim)}
+.odb .s-done{border-color:var(--pick); color:var(--pick)} .odb .s-fail{border-color:var(--amber); color:var(--amber)}
+.odb .s-running{border-color:var(--text); color:var(--text)}
 .evs .eg{margin:12px 20px 2px; font-size:12px; font-weight:800; letter-spacing:.06em; color:var(--dim)}
 .evs .er{display:flex; align-items:center; gap:10px; margin:0 20px; padding:7px 0; border-top:1px solid var(--line)}
 .evs .er.sub2{border-top:0; padding-top:0}
@@ -2472,6 +2476,71 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   /* ── 서사형 오늘의 노래 (collectors/story_picks · 2026-10-11 규효) ──
      맥이 아침에 고른 2곡(씬 하나 + 대중 하나)을 미리 만들어 둔다. 고르면 텔레그램에서 곡 영상·후렴 → 양식 → 화면 위치 → 제작.
      '다른 후보' 를 누르면 맥이 그 곡도 만든다 (5~10분, 하루 상한 밖). */
+  // 제작 맡기기 (2026-10-12 규효 "내가 먼저 찾은 이슈나 만들고 싶은 특집이 있으면 내가 제안") — collectors/orders
+  var OD = null, OD_T = null;
+  var OD_TYPE = [['draft', '이슈·소재 초안'], ['special', '특집'], ['story', '서사형 오늘의 노래']];
+  var OD_FORM = [['b', '숏폼·캐러셀'], ['s', '숏폼'], ['c', '캐러셀']];
+  var OD_ST = { queued: '맥이 받음', running: '만드는 중', done: '완료', fail: '못 만듦' };
+  function odLoad() {
+    if (!sbOn()) return;
+    sbReq('plot_evals?select=id,reason,snapshot,created_at&kind=eq.order&order=created_at.desc&limit=8').then(function (rows) {
+      var before = JSON.stringify((OD || []).map(function (r) { return [r.id, (r.snapshot || {}).status]; }));
+      OD = rows || [];
+      var after = JSON.stringify(OD.map(function (r) { return [r.id, (r.snapshot || {}).status]; }));
+      if (before !== after) {
+        if (OD.some(function (r) { return (r.snapshot || {}).status === 'done'; })) { loadDrafts(); loadStories(); }
+        if (GRP === 'draft') renderDrafts();
+      }
+      clearTimeout(OD_T);
+      if (OD.some(function (r) { var st = (r.snapshot || {}).status; return !st || st === 'queued' || st === 'running'; })) OD_T = setTimeout(odLoad, 45000);
+    }).catch(function () {});
+  }
+  function orderBox() {
+    var rows = (OD || []).slice(0, 4);
+    return '<div class="evn odb"><div class="top"><b>제작 맡기기</b><span>내가 찾은 이슈 · 특집 · 서사형 노래</span>' +
+      '<button type="button" data-odnew>+ 맡기기</button></div>' + rows.map(function (r) {
+        var sn = r.snapshot || {}, st = sn.status || '';
+        return '<div class="odr"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> ' +
+          '<b>' + esc(String(sn.what || '').slice(0, 40)) + '</b> <small>' + esc(evOpt(OD_TYPE, sn.type) || '') +
+          (sn.note && st !== 'queued' ? ' — ' + esc(String(sn.note).slice(0, 70)) : '') + '</small></div>';
+      }).join('') + '</div>';
+  }
+  function openOrder() {
+    if (!sbOn()) { toast('저장소 설정이 있어야 맡길 수 있습니다 (평가 노트와 같은 설정)'); return; }
+    var v = { type: 'draft', form: 'b' };
+    var sh = document.createElement('div'); sh.className = 'sheet evs';
+    var ph = { draft: '예) 저스디스 스카이민혁 디스 / 이영지 고스트 페스티벌 사과', special: '예) 빈지노 나무위키 털기 / 일리네어 10년 타임라인',
+               story: '아티스트 - 곡   예) 한로로 - 0+0' };
+    var draw = function () {
+      sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>제작 맡기기</h4><div class="sub">고른 소재는 판정이 버리지 않고 씁니다. 맥이 5분 안에 받아 3~10분 뒤 오늘의 초안(서사형은 서사 칸)에 올립니다.</div>' +
+        '<div class="g"><b>무엇을</b>' + evChips('type', OD_TYPE, v.type) + '</div>' +
+        (v.type === 'draft' ? '<div class="g"><b>형식</b>' + evChips('form', OD_FORM, v.form) + '</div>' : '') +
+        '<div class="g"><b>' + (v.type === 'story' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>' +
+        '<div class="g"><b>링크 (있으면)</b><input data-f="url" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '"></div>' +
+        '<div class="g"><b>각도·메모 (있으면)</b><textarea data-f="memo" placeholder="예) 디스 내용보다 둘의 예전 관계를 먼저">' + esc(v.memo || '') + '</textarea></div>' +
+        '<div class="row"><button type="button" data-x>닫기</button><button type="button" class="go" data-save>맡기기</button></div></div>';
+    };
+    var keep = function () { ['what', 'url', 'memo'].forEach(function (k) { var el = sh.querySelector('[data-f="' + k + '"]'); if (el) v[k] = el.value.trim(); }); };
+    draw();
+    sh.addEventListener('click', function (e) {
+      if (e.target === sh || e.target.closest('[data-x]')) { sh.remove(); return; }
+      var o = e.target.closest('[data-o]');
+      if (o) { keep(); v[o.closest('[data-g]').getAttribute('data-g')] = o.getAttribute('data-o'); draw(); return; }
+      if (e.target.closest('[data-save]')) {
+        keep();
+        if (!v.what) { toast((v.type === 'story' ? '곡을' : '소재를') + ' 적어 주세요'); return; }
+        if (v.type === 'story' && !/\s[-–—\/|]\s?|[-–—\/|]/.test(v.what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
+        var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: (v.url || '').slice(0, 300),
+          verdict: {}, reason: v.memo || '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
+          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : (v.type === 'special' ? 'c' : ''), what: v.what, url: v.url || '' } };
+        sh.remove();
+        sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } })
+          .then(function () { toast('맡겼습니다 — 맥이 5분 안에 받습니다'); OD = [rec].concat(OD || []); if (GRP === 'draft') renderDrafts(); clearTimeout(OD_T); OD_T = setTimeout(odLoad, 45000); })
+          .catch(function (er) { toast('못 보냈습니다 — ' + String(er && er.message || er).slice(0, 60)); });
+      }
+    });
+    document.body.appendChild(sh);
+  }
   var SY = null, SY_OPEN = {};
   function loadStories() {
     return fetch('./stories.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
@@ -3133,7 +3202,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var mode = drView();
     var items = (DR && DR.items) || [];
     if (!items.length) {
-      host.innerHTML = reqBox() + pubBox() + '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
+      host.innerHTML = reqBox() + orderBox() + pubBox() + '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
         '맥이 매일 8시부터 밤 12시까지 한 시간마다 새 후보를 숏폼·캐러셀 초안으로 써 둡니다.' +
         (DR && DR.generated_at ? '<br>마지막: ' + esc(DR.generated_at) : '') + '</div>';
       return;
@@ -3147,13 +3216,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = usageBox() + reqBox() + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = usageBox() + reqBox() + orderBox() + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
       return;
     }
-    host.innerHTML = reqBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = reqBox() + orderBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
@@ -3223,6 +3292,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var evb = e.target.closest('[data-ev]');
     if (evb) { openEval(Number(evb.getAttribute('data-ev'))); return; }
     if (e.target.closest('[data-evmiss]')) { openMiss(); return; }
+    if (e.target.closest('[data-odnew]')) { openOrder(); return; }
     if (e.target.closest('[data-evlist]')) { openEvList(); return; }
     var so = e.target.closest('[data-sort]');
     if (so) { DR_SORT = so.getAttribute('data-sort'); try { localStorage.setItem('plot.drsort', DR_SORT); } catch (x) {} renderDrafts(); return; }
@@ -3273,7 +3343,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     .then(function (d) {
       if (!d) return;
       DR = d;
-      setTimeout(function () { evLoad(); }, 0);
+      setTimeout(function () { evLoad(); if (OD === null) odLoad(); }, 0);
       var n = (d && d.items || []).length;
       if (n) document.getElementById('grpDraft').textContent = (drStale() ? drStale().slice(5).replace('-', '/') + ' 초안 ' : '오늘의 초안 ') + n;
       if (GRP === 'draft') renderDrafts();
@@ -3311,9 +3381,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.12 16:29';
+    a.title = '판 10.12 16:42';
     var ver = document.createElement('span');
-    ver.textContent = '10.12 16:29';
+    ver.textContent = '10.12 16:42';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
