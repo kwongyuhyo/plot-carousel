@@ -1,18 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-10-11 15:43 KST",
+ "generated_at": "2026-10-12 18:28 KST",
  "weeks": [
-  {
-   "week": "2026-W25",
-   "posts": 36,
-   "reach": 51946,
-   "saved": 90,
-   "shares": 1048,
-   "followers": 1109,
-   "followers_delta": -63,
-   "reach_total": 47368,
-   "top": "https://www.instagram.com/reel/DZj9z7xvOsd/"
-  },
   {
    "week": "2026-W30",
    "posts": 5,
@@ -89,35 +78,46 @@
    "followers_delta": 2,
    "reach_total": 530361,
    "top": "https://www.instagram.com/p/DeJdFutD-1r/"
+  },
+  {
+   "week": "2026-W42",
+   "posts": 5,
+   "reach": 40852,
+   "saved": 44,
+   "shares": 481,
+   "followers": 3086,
+   "followers_delta": 37,
+   "reach_total": 767410,
+   "top": "https://www.instagram.com/p/DeRU1FID52k/"
   }
  ],
  "kinds": [
   {
    "kind": "인물해부",
-   "n": 29,
-   "weeks": 7,
-   "multiple": 3.04,
-   "low": 1.92,
-   "high": 3.39,
+   "n": 30,
+   "weeks": 8,
+   "multiple": 3.14,
+   "low": 2.22,
+   "high": 3.55,
    "stable": true
   },
   {
    "kind": "기타",
-   "n": 56,
-   "weeks": 8,
-   "multiple": 1.05,
+   "n": 59,
+   "weeks": 9,
+   "multiple": 1.03,
    "low": 1.0,
-   "high": 1.1,
+   "high": 1.08,
    "stable": false
   },
   {
    "kind": "발매·신보",
-   "n": 29,
-   "weeks": 8,
+   "n": 30,
+   "weeks": 9,
    "multiple": 0.92,
-   "low": 0.78,
-   "high": 1.03,
-   "stable": false
+   "low": 0.77,
+   "high": 0.98,
+   "stable": true
   },
   {
    "kind": "갈등·반응",
@@ -273,6 +273,41 @@
   }
  ],
  "published": [
+  {
+   "id": "DeJdFutD-1r",
+   "week": "2026-W42",
+   "kind": "기타",
+   "reach": 9718,
+   "head": "노윤하의 인스타그램 이름이 바뀌었습니다.\n\n지금 인스타그램에서 '노윤하'를 검색하면 '꼼질꼼질 오고쌌노'라는 이름으로 뜨는데요. 정작 본인도 브"
+  },
+  {
+   "id": "DeJlFsKPQ9E",
+   "week": "2026-W42",
+   "kind": "발매·신보",
+   "reach": 869,
+   "head": "[NEW RELEASE] Kid Milli, TRADE L- 합작 앨범 'SINS'\n\n래퍼 Kid Milli와 TRADE L이 첫 합작 앨범 '"
+  },
+  {
+   "id": "DeJuFDTvkdr",
+   "week": "2026-W42",
+   "kind": "기타",
+   "reach": 1664,
+   "head": "로얄44가 설거지를 미뤘습니다.\n\n유튜브 채널 '로얄왕국'에서, 로얄44가 설거지 안 하냐는 말에 \"좋아하지 않아요\" 한마디로 넘어갔고, 그릇을"
+  },
+  {
+   "id": "DeJuVbrvzgC",
+   "week": "2026-W42",
+   "kind": "기타",
+   "reach": 1107,
+   "head": "스윙스가 쇼핑을 갔습니다.\n\n유튜브 채널 '에겐남 스윙스'에서, 스윙스(@itsjustswings)는 옷을 걸쳐보자마자 \"이거 결제해주세요\"라고"
+  },
+  {
+   "id": "DeRU1FID52k",
+   "week": "2026-W42",
+   "kind": "인물해부",
+   "reach": 27494,
+   "head": "스윙스가 인디고의 새 멤버를 예고했습니다.\n\n스윙스(@itsjustswings)가 인스타그램 스토리를 통해 오는 10월 16일 생일파티에서 인디"
+  },
   {
    "id": "DeEW4Kvj0IX",
    "week": "2026-W41",
@@ -1305,10 +1340,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-11 05:49 KST"
+  "daily": "2026-10-11 15:48 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-11T15:34:27+09:00",
+  "fetched_at": "2026-10-12T18:22:16+09:00",
   "posts": [
    {
     "t": "2026-10-09T19:45+09:00",
@@ -1419,37 +1454,17 @@
     "t": "2026-09-21T18:29+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "올해 가장 자주 언급된 걸그룹은 역시 리센느인데요."
-   },
-   {
-    "t": "2026-09-20T22:37+09:00",
-    "type": "VIDEO",
-    "head": "로얄44가 나라를 세우기로 했습니다."
-   },
-   {
-    "t": "2026-09-20T22:29+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "양홍원이 문득 빅나티가 그리워진 모양입니다."
-   },
-   {
-    "t": "2026-09-20T22:26+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "실리카겔이라는 이름은 껌통에서 나왔습니다."
-   },
-   {
-    "t": "2026-09-20T21:18+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "양홍원(@yanghongwon)이 한 시간 사이에 스토리 두 개를 올렸습"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 9,
+  "drafts": 29,
   "posted": 0,
   "posts": 39,
   "rate": 0.0,
   "adopted_mult": null,
-  "own_mult": 0.88,
+  "own_mult": 0.97,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1457,17 +1472,17 @@
     "mult": null
    },
    "재미": {
-    "drafts": 1,
-    "posted": 0,
-    "mult": null
-   },
-   "정보": {
     "drafts": 3,
     "posted": 0,
     "mult": null
    },
+   "정보": {
+    "drafts": 13,
+    "posted": 0,
+    "mult": null
+   },
    "클립": {
-    "drafts": 1,
+    "drafts": 4,
     "posted": 0,
     "mult": null
    },
@@ -1475,20 +1490,60 @@
     "drafts": 1,
     "posted": 0,
     "mult": null
-   }
-  },
-  "corners": {
-   "news": {
-    "drafts": 7,
-    "posted": 0,
-    "mult": null
    },
-   "mal": {
+   "오늘의 노래": {
     "drafts": 1,
     "posted": 0,
     "mult": null
    },
+   "후속": {
+    "drafts": 2,
+    "posted": 0,
+    "mult": null
+   },
+   "시리즈": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "속보": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   }
+  },
+  "corners": {
+   "news": {
+    "drafts": 19,
+    "posted": 0,
+    "mult": null
+   },
+   "mal": {
+    "drafts": 4,
+    "posted": 0,
+    "mult": null
+   },
    "again": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "song": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "tteolgi": {
+    "drafts": 2,
+    "posted": 0,
+    "mult": null
+   },
+   "followup": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "spotlight": {
     "drafts": 1,
     "posted": 0,
     "mult": null
