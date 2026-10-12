@@ -2263,168 +2263,6 @@
    ],
    "corner": "news",
    "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "order:1791796333466",
-    "account": "규효 요청",
-    "url": "",
-    "image": null,
-    "head": "[규효가 고른 소재] 저스디스 스카이민혁 디스",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "plan"
-   },
-   "made_at": "2026-10-12T18:12+09:00",
-   "key": "21e7b1c3",
-   "process": {
-    "event": {
-     "who": "범키",
-     "others": [
-      "비와이(BewhY)",
-      "저스디스(JUSTHIS)",
-      "릴보이(lIlBOI)",
-      "지소울(GSoul)",
-      "따마(THAMA)",
-      "호림(Horim)"
-     ],
-     "what": "범키가 정규 3집 '온 마이 웨이'를 공개하며 여러 아티스트가 참여했다.",
-     "when": "Mon, 31 Aug 2026 보도 기준 31일 공개",
-     "new_fact": "범키 정규 3집 '온 마이 웨이' 공개 및 비와이·저스디스·릴보이·지소울·따마·호림 등 참여 아티스트",
-     "relation": "저스디스와 함께 작업한 트랙이 있으나 세부 내용은 확인되지 않음",
-     "reaction": "",
-     "quotes": [],
-     "timeline": [
-      "2026-08-31 — 범키 정규 3집 '온 마이 웨이' 공개"
-     ],
-     "kind": "발매·신보",
-     "reading": "빠르게 흘러가는 일상 속에서 자신이 원하는 삶의 방향을 되묻는 메시지의 앨범이라는 기사 작성자의 해석이 있다.",
-     "gaps": [
-      "저스디스 참여 트랙의 세부 내용은 자료가 잘려 확인 불가",
-      "곡 주제는 기사 작성자의 해석이며 단일 출처(자료 1건)",
-      "나머지 참여 아티스트(비와이 외)의 곡별 참여 여부 미확인",
-      "'등'으로 표기된 추가 참여자 존재 여부 불확실",
-      "반응·인용 정보 없음"
-     ]
-    },
-    "sell": {
-     "score": 2,
-     "go": false,
-     "pre": true,
-     "core": "범키 정규 3집 '온 마이 웨이' 공개, 여러 아티스트 참여",
-     "format": "both",
-     "why": "(거름막) 발매·신보 공급자 발표형이며 반응·인용·관계 정보가 없고 출처도 단일이라, PLOT 성공 모델상 평소 이하가 될 가능성이 높다. 다만 저스디스·비와이 등 이름 두 개 이상이 연결된 점은 '관계' 요소로 약하게 살릴 여지가 있다."
-    }
-   },
-   "card": {
-    "form": "[카테고리]\nNew Release!\n\n[캡션]\n범키가 정규 3집 '온 마이 웨이'를 8월 31일 공개합니다. 비와이, 저스디스, 릴보이, 지소울, 따마, 호림 등 여러 아티스트가 참여했습니다. 빠르게 흘러가는 일상에서 자신이 원하는 삶의 방향을 되묻는 메시지를 담은 앨범입니다.\n#PLOT #범키 #온마이웨이 #비와이 #저스디스 #릴보이\n\n[커버]\n소스: https://i.ibb.co/dJ32fRLZ/5e8782ee3b72.jpg\n제목: 범키, 정규 3집 공개합니다\n부제: 8월 31일, 비와이·저스디스·릴보이 등 참여\n출처: 멜론\n\n[슬라이드]\n소스: https://i.ibb.co/qftmFy0/bac620014256.jpg\n소제목: 8월 31일 공개\n본문: 범키가 정규 3집 '온 마이 웨이'를 8월 31일 공개합니다. 빠르게 흘러가는 일상 속에서 스스로 원하는 삶의 방향을 되묻는 메시지를 담은 앨범이라는 소개가 나왔습니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://i.ibb.co/99V2nmnp/6440dcd082b6.jpg\n소제목: 여러 아티스트가 참여\n본문: 이번 앨범에는 비와이(BewhY), 저스디스(JUSTHIS), 릴보이(lIlBOI), 지소울(GSoul), 따마(THAMA), 호림(Horim) 등이 참여했습니다. 저스디스는 한 곡에서 범키와 함께 이름을 올렸습니다.\n출처: 멜론\n",
-    "caption": "범키가 정규 3집 '온 마이 웨이'를 8월 31일 공개합니다. 비와이, 저스디스, 릴보이, 지소울, 따마, 호림 등 여러 아티스트가 참여했습니다. 빠르게 흘러가는 일상에서 자신이 원하는 삶의 방향을 되묻는 메시지를 담은 앨범입니다.\n#PLOT #범키 #온마이웨이 #비와이 #저스디스 #릴보이",
-    "photos": [
-     {
-      "url": "https://i.ibb.co/dJ32fRLZ/5e8782ee3b72.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/105/83/370/10583370_20210325192744.jpg/melon/resize/1000/quality/90/optimize",
-      "look": 3.0
-     },
-     {
-      "url": "https://i.ibb.co/qftmFy0/bac620014256.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm/album/images/101/14/929/10114929.jpg/melon/resize/1000/quality/90/optimize",
-      "look": 2.0
-     },
-     {
-      "url": "https://i.ibb.co/99V2nmnp/6440dcd082b6.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm/album/images/101/45/509/10145509.jpg/melon/resize/1000/quality/90/optimize",
-      "look": 1.0
-     }
-    ],
-    "shape": "맥락",
-    "facts_fixed": [],
-    "gate": {
-     "pass": true,
-     "fails": []
-    },
-    "issues": [],
-    "confirm": [
-     "원문과 거의 같은 문장 2개 — 고쳐 주세요: '이번 앨범에는 비와이(BewhY), 저스디스(JUSTHIS), 릴보이(l…'",
-     "검증 필요 · 부분 — 참여 곡 — 저스디스와 함께 작업한 트랙 존재 (자료 내 \"저스디스와...\" 이후 내용 잘 (저스디스 참여는 나오지만 \"저스디스와...\"에서 문장이)",
-     "아티스트 인스타 핸들 (@______)"
-    ],
-    "research": [
-     {
-      "title": "범키, 정규 3집 ‘온 마이 웨이’ 31일 공개…비와이·저스디스·릴보이...",
-      "link": "https://swtvnews.com/news/newsview.php?ncode=1065573300639847"
-     }
-    ],
-    "copy": 0.25,
-    "trust": {
-     "grade": "보통",
-     "why": [
-      "기사 1곳",
-      "부풀린 메모 1줄 고침"
-     ],
-     "checks": [
-      "부분 — 참여 곡 — 저스디스와 함께 작업한 트랙 존재 (자료 내 \"저스디스와...\" 이후 내용 잘 (저스디스 참여는 나오지만 \"저스디스와...\"에서 문장이)"
-     ]
-    },
-    "covers": [
-     {
-      "key": "A",
-      "hook": "작성기",
-      "title": "범키, 정규 3집 공개합니다",
-      "sub": "8월 31일, 비와이·저스디스·릴보이 등 참여"
-     },
-     {
-      "key": "B",
-      "hook": "질문",
-      "title": "범키가 되묻는 것은?",
-      "sub": "정규 3집 '온 마이 웨이', 8월 31일 공개"
-     },
-     {
-      "key": "C",
-      "hook": "의외",
-      "title": "범키와 한 곡, 저스디스",
-      "sub": "비와이·릴보이 등과 함께한 정규 3집, 8월 31일 공개"
-     }
-    ],
-    "preview": {
-     "slides": [
-      "https://i.ibb.co/Lh8gfYrg/69ec410c4c7d.jpg",
-      "https://i.ibb.co/5hJfNN7D/3d062aa153fe.jpg",
-      "https://i.ibb.co/JwPRYjQc/7ce46e2907ad.jpg",
-      "https://i.ibb.co/Xr6vpq3J/7ebf9214f2b4.jpg"
-     ],
-     "covers": {
-      "B": "https://i.ibb.co/v497j7tF/593cc34748ac.jpg",
-      "C": "https://i.ibb.co/60WJGHGs/ff14029576bd.jpg",
-      "A": "https://i.ibb.co/Lh8gfYrg/69ec410c4c7d.jpg"
-     },
-     "at": "2026-10-12T18:13+09:00",
-     "v": {
-      "A": "e75700c0",
-      "B": "b15f855a",
-      "C": "a0ab7a03"
-     }
-    }
-   },
-   "subjects": [
-    "저스디스"
-   ],
-   "lane": "요청",
-   "added": "app",
-   "added_at": "2026-10-12T18:12+09:00",
-   "req": "order",
-   "corner": "followup",
-   "followup": {
-    "card": null,
-    "k": null,
-    "format": "요청"
-   },
-   "corner_name": "후속"
   }
  ],
  "skipped": [
@@ -2624,7 +2462,7 @@
     "left": 2,
     "need_today": 1,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 0,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -2639,7 +2477,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-12T18:12+09:00"
+  "at": "2026-10-12T18:16+09:00"
  },
  "slots": {
   "basis": 190,
