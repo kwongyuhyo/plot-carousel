@@ -1,32 +1,40 @@
 {
- "generated_at": "2026-10-12T19:29+09:00",
+ "generated_at": "2026-10-13T08:29+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 15.5,
- "today": 11.62,
- "per_day": 11.62,
- "calls": 838,
+ "spent": 17.57,
+ "today": 0.37,
+ "per_day": 13.08,
+ "calls": 1893,
  "by": [
   {
    "name": "process",
-   "usd": 6.37
+   "usd": 6.64
+  },
+  {
+   "name": "초안 쓰기",
+   "usd": 4.09
   },
   {
    "name": "장부 전 (Console)",
    "usd": 3.88
   },
   {
-   "name": "초안 쓰기",
-   "usd": 3.79
+   "name": "편집장",
+   "usd": 0.89
   },
   {
-   "name": "편집장",
-   "usd": 0.73
+   "name": "criteria",
+   "usd": 0.74
   },
   {
    "name": "표지",
-   "usd": 0.37
+   "usd": 0.41
+  },
+  {
+   "name": "criteria_audit",
+   "usd": 0.38
   },
   {
    "name": "sell_calib",
@@ -34,27 +42,19 @@
   },
   {
    "name": "클립 고르기",
-   "usd": 0.1
+   "usd": 0.14
+  },
+  {
+   "name": "후속 기획",
+   "usd": 0.12
   },
   {
    "name": "팩트체크",
    "usd": 0.05
   },
   {
-   "name": "후속 기획",
-   "usd": 0.02
-  },
-  {
    "name": "naver_music",
-   "usd": 0.01
-  },
-  {
-   "name": "초안 고르기·조사",
-   "usd": 0.01
-  },
-  {
-   "name": "사진 DB",
-   "usd": 0.01
+   "usd": 0.03
   }
  ]
 }
