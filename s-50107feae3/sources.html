@@ -2048,7 +2048,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         (s.why ? ' — ' + esc(String(s.why).slice(0, 120)) : '') + '</div>' : '') +
       (s.core ? '<div>팔 것: ' + esc(s.core) + '</div>' : '') +
       ((s.selling || []).length ? '<div>셀링포인트: ' + esc(s.selling.join(' / ')) + '</div>' : '') +
-      (s.risk ? '<div>조심: ' + esc(s.risk) + '</div>' : '') +
+      (s.check ? '<div>발행 전 확인: ' + esc(s.check) + '</div>' : '') +
+      (s.risk ? '<div>피할 것: ' + esc(s.risk) + '</div>' : '') +
       (b.length ? '<div>같이 묶은 출처: ' + esc(b.map(function (x) { return x.account || x.id; }).join(', ')) + '</div>' : '');
   }
   function skipBox() {
@@ -3245,9 +3246,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.12 13:21';
+    a.title = '판 10.12 14:27';
     var ver = document.createElement('span');
-    ver.textContent = '10.12 13:21';
+    ver.textContent = '10.12 14:27';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
