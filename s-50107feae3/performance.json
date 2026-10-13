@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-13 15:07 KST",
+ "generated_at": "2026-10-13 20:13 KST",
  "weeks": [
   {
    "week": "2026-W30",
@@ -1340,10 +1340,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-12 22:06 KST"
+  "daily": "2026-10-13 15:16 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-13T15:04:00+09:00",
+  "fetched_at": "2026-10-13T20:11:38+09:00",
   "posts": [
    {
     "t": "2026-10-09T19:45+09:00",
@@ -1429,32 +1429,17 @@
     "t": "2026-09-24T22:27+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "2026년 가장 핫한 레이블 KC의 수장."
-   },
-   {
-    "t": "2026-09-22T18:07+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "리센느가 돌아온다"
-   },
-   {
-    "t": "2026-09-22T18:00+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "올 여름 가장 뜨거운 앨범."
-   },
-   {
-    "t": "2026-09-22T17:54+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "검정치마(@holideez)가 오랜만에 자신의 블로그에 근황을 남겼습니다"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 42,
+  "drafts": 46,
   "posted": 0,
-  "posts": 36,
+  "posts": 35,
   "rate": 0.0,
   "adopted_mult": null,
-  "own_mult": 0.88,
+  "own_mult": 0.78,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1462,12 +1447,12 @@
     "mult": null
    },
    "재미": {
-    "drafts": 3,
+    "drafts": 4,
     "posted": 0,
     "mult": null
    },
    "정보": {
-    "drafts": 25,
+    "drafts": 28,
     "posted": 0,
     "mult": null
    },
@@ -1504,7 +1489,7 @@
   },
   "corners": {
    "news": {
-    "drafts": 29,
+    "drafts": 33,
     "posted": 0,
     "mult": null
    },

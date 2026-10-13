@@ -2,7 +2,7 @@
  "schema": 1,
  "date": "2026-10-13",
  "generated_at": "2026-10-13 08:31 KST",
- "updated_at": "2026-10-13 18:28 KST",
+ "updated_at": "2026-10-13 20:13 KST",
  "items": [
   {
    "source": {
@@ -2706,6 +2706,164 @@
    ],
    "corner": "news",
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "yt_owMvPqinack",
+    "account": "유튜브 · STUDIO CHOOM",
+    "url": "https://www.youtube.com/watch?v=owMvPqinack",
+    "image": null,
+    "head": "(Teaser) [EVNNE HOUR] 이븐아워, 그 마지막 이야기 | Ep.5 (ENG/JPN)",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "video"
+   },
+   "made_at": "2026-10-13T20:13+09:00",
+   "key": "05685d7d",
+   "process": {
+    "event": {},
+    "sell": {}
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=owMvPqinack\n구간: \n곡: 채널 중앙값의 6.7배\n아티스트: Ep.5 티저 공개\n피처링:\n후킹: 이븐아워 마지막 이야기\n출처: STUDIO CHOOM",
+    "caption": "이븐아워의 마지막 이야기를 예고한 Ep.5 티저가 채널 최근 영상 중앙값의 6.7배 조회를 얻었습니다.\n\n〈EVNNE HOUR〉 Ep.5 티저는 10월 12일 오후 5시 STUDIO CHOOM 채널에 올라왔고, 조회 수는 48,450회입니다. 영상 제목에 '그 마지막 이야기'를 내건 만큼, 시리즈의 끝을 향한 예고편으로 눈길을 끌었습니다.\n\n티저 속 멤버들이 본편에서 어떤 이야기를 꺼내는지는 본편 공개 후 확인할 대목입니다.\n\n영상 출처: STUDIO CHOOM 채널\n\n#PLOT #이븐아워 #EVNNEHOUR #STUDIOCHOOM #티저",
+    "hooks": {
+     "A": "마지막 이야기의 / 문이 열렸다 / 이븐아워 Ep.5",
+     "B": "이븐아워 마지막 이야기 / Ep.5 티저 공개 / 채널 중앙값의 6.7배",
+     "C": "마지막 이야기의 / 예고편이 열렸다 / 이븐아워 Ep.5"
+    },
+    "issues": [],
+    "gate": {
+     "pass": false,
+     "fails": [
+      "1 — 표지/캡션 첫 문장에 사람·팀 실명이 없다. 캡션 첫 문장은 '이븐아워'라는 그룹명을 쓰지만 표지 '아티스트' 칸에는 '이븐아워' 대신 제목 문장이 들어가 있어 실명 배치가 틀렸다.",
+      "2 — 독자가 반응할 한 가지를 한 문장으로 말할 수 있는지 불분명하다. 표지·첫 문장이 '티저가 공개됐다'는 사실 전달에 그친다.",
+      "3 — 캡션에 '2026년 10월 12일' 같은 날짜가 있다. 시점 표현은 시간이 지나면 낡으므로 맥락 없이 날짜를 박는 것은 점검 기준에 걸린다.",
+      "4 — 캐러셀 표지 좌상단 태그는 'News'로 있으나 사진·영상 출처 칸이 비어 있다.",
+      "6 — 첫 문장이 '~에 대하여'류는 아니지만 '티저 영상이 공개됐습니다'로 끝나는 발표형 문장이다. 반응 상태·질문·반전·시점 최상급 중 해당하는 것이 없다.",
+      "8 — 티저 공개는 신보·발매 소식에 해당하는데 '왜 이 사람이 지금 이 소식인가'를 한 문장으로 붙이지 않았다."
+     ],
+     "polished": true,
+     "lint": []
+    },
+    "confirm": [
+     "구간 정보가 없어 비웠습니다 — 앱 「구간 고르기」에서 잡아 주세요",
+     "아티스트 인스타 핸들 (@______)"
+    ],
+    "research": [
+     {
+      "title": "STUDIO CHOOM 공식 업로드 — (Teaser) [EVNNE HOUR] 이븐아워, 그 마지막 이야기 | Ep.5 (ENG/JPN)",
+      "link": "https://www.youtube.com/watch?v=owMvPqinack"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=owMvPqinack",
+     "title": "(Teaser) [EVNNE HOUR] 이븐아워, 그 마지막 이야기 | Ep.5 (ENG/JPN)",
+     "credit": "STUDIO CHOOM",
+     "range": null,
+     "alts": [],
+     "note": "구간 정보가 없어 비웠습니다 — 앱 「구간 고르기」에서 잡아 주세요"
+    },
+    "trust": {
+     "grade": "보통",
+     "why": [
+      "공식 영상 근거"
+     ],
+     "checks": []
+    },
+    "thumb": "https://i.ytimg.com/vi/owMvPqinack/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791890277/hsd9dsqs2e3y0hr2br3v.jpg",
+     "key": "owMvPqinack@0"
+    }
+   },
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n이븐아워의 마지막 이야기가 티저 영상으로 공개됐습니다.\n\nSTUDIO CHOOM 채널은 2026년 10월 12일 오후 5시, 티저 영상 '[EVNNE HOUR] 이븐아워, 그 마지막 이야기 | Ep.5 (ENG/JPN)'를 업로드했습니다. 영상 제목에 표기된 ENG/JPN은 영문 및 일본어 버전이 함께 있음을 나타냅니다. 업로드 이후 조회수는 48,450회로, 채널 최근 영상 조회수 중앙값의 6.7배입니다.\n\n다만 이번 티저에서 멤버가 어떤 이야기를 전할지는 영상 내용만으로는 확인되지 않았습니다. 본편 공개 일정도 확인되지 않은 상태입니다.\n\n#PLOT #이븐아워 #EVNNEHOUR #STUDIOCHOOM #Ep5\n\n[커버]\n소스: \n제목: 이븐아워의 마지막 이야기\n부제: 티저 'Ep.5' 공개\n출처:\n",
+    "caption": "이븐아워의 마지막 이야기가 티저 영상으로 공개됐습니다.\n\nSTUDIO CHOOM 채널은 2026년 10월 12일 오후 5시, 티저 영상 '[EVNNE HOUR] 이븐아워, 그 마지막 이야기 | Ep.5 (ENG/JPN)'를 업로드했습니다. 영상 제목에 표기된 ENG/JPN은 영문 및 일본어 버전이 함께 있음을 나타냅니다. 업로드 이후 조회수는 48,450회로, 채널 최근 영상 조회수 중앙값의 6.7배입니다.\n\n다만 이번 티저에서 멤버가 어떤 이야기를 전할지는 영상 내용만으로는 확인되지 않았습니다. 본편 공개 일정도 확인되지 않은 상태입니다.\n\n#PLOT #이븐아워 #EVNNEHOUR #STUDIOCHOOM #Ep5",
+    "photos": [
+     null
+    ],
+    "shape": "단신",
+    "facts_fixed": [
+     "[캡션] 지어냄: \"한국어와 일본어 자막이 함께 제공되는 영문 자막 버전\"이라고 썼지만, 근거에는 제목 끝의 \"(ENG/JPN)\" 표기뿐이다. 한국어 자막이 있다는 내용은 근거에 없고, 이 표기를 영어·일본어 버전으로 읽는 것이 가능한 범위다."
+    ],
+    "gate": {
+     "pass": true,
+     "fails": [],
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요",
+     "아티스트 인스타 핸들 (@______)",
+     "근거 기사: 유튜브"
+    ],
+    "research": [
+     {
+      "title": "STUDIO CHOOM 공식 업로드 — (Teaser) [EVNNE HOUR] 이븐아워, 그 마지막 이야기 | Ep.5 (ENG/JPN)",
+      "link": "https://www.youtube.com/watch?v=owMvPqinack"
+     }
+    ],
+    "copy": 0.03,
+    "trust": {
+     "grade": "보통",
+     "why": [
+      "공식 영상 근거"
+     ],
+     "checks": []
+    },
+    "covers": [
+     {
+      "key": "A",
+      "hook": "작성기",
+      "title": "이븐아워의 마지막 이야기",
+      "sub": "티저 'Ep.5' 공개"
+     },
+     {
+      "key": "B",
+      "hook": "질문",
+      "title": "무슨 이야기를 전합니까?",
+      "sub": "이븐아워 티저 Ep.5, 내용은 아직 확인되지 않았습니다"
+     },
+     {
+      "key": "C",
+      "hook": "의외",
+      "title": "중앙값의 6.7배 조회",
+      "sub": "이븐아워 Ep.5 티저, 정작 내용은 확인되지 않았습니다"
+     }
+    ],
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791890267/qyhsomuk5pviizyraaeb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791890266/p8zlldhgljzpdkonqfz5.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791890271/ouilaktrslnl0c2uxuka.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791890270/meqxwkjkgovwz1ic53ih.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791890267/qyhsomuk5pviizyraaeb.jpg"
+     },
+     "at": "2026-10-13T20:17+09:00",
+     "v": {
+      "A": "fdb09edf",
+      "B": "6ef3f554",
+      "C": "444260e1"
+     }
+    }
+   },
+   "editor": {
+    "grade": "B",
+    "kind": "인물해부",
+    "angle": "이븐아워 마지막 에피소드 티저, 본편에서 멤버 본인이 드러나는 한 장면을 잡을 수 있을 때만",
+    "why": "방송 계기(+3)는 있지만 티저라 반응할 장면이 없고, 출연 내용 나열로 흐르면 한로로 건처럼 안 되는 글이 됨"
+   },
+   "subjects": [
+    "이븐아워(EVNNE HOUR)",
+    "스튜디오 춤 (STUDIO CHOOM 채널 운영 측)"
+   ],
+   "lane": "재미",
+   "captures": [],
+   "corner": "news",
+   "corner_name": "소식"
   }
  ],
  "skipped": [
@@ -2964,6 +3122,44 @@
    "account": "살롱드립 (TEO)",
    "entity": "에이티즈",
    "why": "같은 사람 초안이 오늘 이미 있음"
+  },
+  {
+   "id": "yt_i8qo0DMzACU",
+   "account": "유튜브 · First We Feast (Hot Ones)",
+   "entity": "",
+   "why": "편집장 C — 한국 독자와 이어지는 관계가 없는 해외 소식이라 24kGoldn(0.21배)과 같은 결이고, 씬 안쪽 이야기"
+  },
+  {
+   "id": "sns:에이티즈:2026-10-13",
+   "account": "SNS 발 이슈",
+   "entity": "에이티즈",
+   "why": "같은 사람 초안이 오늘 이미 있음"
+  },
+  {
+   "id": "conflict:에픽하이:2026-10-13",
+   "account": "갈등·반응",
+   "entity": "에픽하이",
+   "why": "같은 사람 초안이 오늘 이미 있음"
+  },
+  {
+   "id": "DeZVx8tRcp0",
+   "account": "mini_magkr",
+   "entity": null,
+   "why": "오늘 이미 많이 씀 — 7점 이상만 (5점)",
+   "sell": 5
+  },
+  {
+   "id": "DeL_NMUEqjG",
+   "account": "redvelvet.smtown",
+   "entity": null,
+   "why": "오늘 이미 많이 씀 — 7점 이상만 (5점)",
+   "sell": 5
+  },
+  {
+   "id": "DePNLI_DDjO",
+   "account": "ateez_official_",
+   "entity": null,
+   "why": "같은 사람 초안이 이미 있음"
   }
  ],
  "corners": {
@@ -3057,11 +3253,11 @@
     "left": 7,
     "need_today": 2,
     "next_no": null,
-    "drafts": 8,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-13T18:28+09:00"
+  "at": "2026-10-13T20:13+09:00"
  },
  "slots": {
   "basis": 190,
