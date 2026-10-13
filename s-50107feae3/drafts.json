@@ -2,7 +2,7 @@
  "schema": 1,
  "date": "2026-10-13",
  "generated_at": "2026-10-13 08:31 KST",
- "updated_at": "2026-10-13 10:41 KST",
+ "updated_at": "2026-10-13 11:50 KST",
  "items": [
   {
    "source": {
@@ -875,6 +875,276 @@
    "corner": "spotlight",
    "corner_name": "SPOTLIGHT",
    "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "sp_96712b2dfe",
+    "account": "해외 · hollywoodreporter.com",
+    "url": "https://www.hollywoodreporter.com/music/music-features/lisa-sue-kim-always-lalisa-interview-1236699144/",
+    "image": null,
+    "head": "[할리우드리포터] Lisa and Director Sue Kim on Documenting the Star’s Break From the K-p",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "spotlight"
+   },
+   "made_at": "2026-10-13T11:50+09:00",
+   "key": "05758dd3",
+   "process": {
+    "event": {
+     "who": "리사 (Lisa, 블랙핑크)",
+     "others": [
+      "Sue Kim (다큐멘터리 감독)",
+      "Nicole Fell (할리우드리포터 Associate Editor, 기사 작성자)",
+      "EJAE (교포 대상 추석 행사 수상자)",
+      "「The Body」 Netflix 심리극 출연진 (가톨릭 학교 댄스팀 등장, 구체 인물 메모 없음)"
+     ],
+     "what": "리사가 출연한 다큐멘터리 「Always Lalisa」가 K팝 시스템으로부터 이탈하는 과정을 기록했다는 할리우드리포터 기사가 게재됐다.",
+     "when": "2026-10-10T00:45, 할리우드리포터 Music Features 섹션",
+     "new_fact": "「Always Lalisa」는 K팝 아이돌의 '가장 방어막 없는' 한 해를 기록한 다큐이며, 점쟁이의 조언, 코첼라 솔로 무대, 「White Lotus」 출연 에피소드가 등장한다.",
+     "relation": "",
+     "reaction": "",
+     "quotes": [
+      "[인용] \"I'm just so proud of myself.\" — 리사 (다큐 속 발언, 자료 인용 제목)",
+      "[인용] \"I'm So Proud to Celebrate Where We Come From\" — EJAE (교포 대상 Gyopo's Chuseok Benefit 수상 발언)"
+     ],
+     "timeline": [
+      "2026-10-10T00:45 — 할리우드리포터, 리사·감독 Sue Kim 인터뷰 기사 게재 「Always Lalisa」",
+      "메모 기재 시점 — EJAE, Gyopo's Chuseok Benefit 수상 (추석 행사, 날짜 메모 없음)",
+      "메모 기재 시점 — Netflix 「The Body」 첫 예고편 공개 (날짜 메모 없음)"
+     ],
+     "kind": "발매·신보",
+     "reading": "블랙핑크 멤버가 K팝 시스템과의 거리두기를 직접 다룬 다큐가 공개되면서, 소속 체계와 개인 활동 방향에 대한 팬들의 관심이 집중되는 시점이다.",
+     "gaps": [
+      "다큐의 발매·공개일과 플랫폼 확인 불가 (본문 잘림)",
+      "다큐 구체 내용 확인 불가 — 'K팝 시스템으로부터의 이탈 과정'은 기사 제목·요약 수준의 메모이므로 세부 서술 금지",
+      "'시스템 이탈'이 소속사와의 계약 종료나 활동 중단을 뜻하는지 메모만으로 판단 불가",
+      "EJAE·「The Body」 항목은 리사 사건과 직접 연결되는 근거가 메모에 없음",
+      "EJAE 인용의 정확한 날짜 미확인",
+      "리사 인용은 다큐 속 발언이라는 메모 표기 그대로 사용, 발언 시점 불명"
+     ]
+    },
+    "sell": {
+     "score": 5,
+     "core": "리사가 출연한 다큐 「Always Lalisa」가 K팝 아이돌의 '가장 방어막 없는' 한 해를 기록했고, 점쟁이의 조언·코첼라 솔로 무대·「White Lotus」 출연 에피소드가 담겼다는 할리우드리포터 기사가 10일 올라왔다.",
+     "angle": "'가장 방어막 없는 한 해'라는 할리우드리포터의 표현을 먼저 내세우고, 점쟁이 조언·코첼라 솔로·「White Lotus」 세 장면으로 리사의 그 한 해를 보여준다. 기사 출처임을 밝히고, 리사의 말은 다큐 속 발언으로만 인용한다.",
+     "selling": [
+      "점쟁이 조언, 코첼라 솔로 무대, 「White Lotus」 출연. 한 해를 구체 장면 세 개로 읽을 수 있다.",
+      "'가장 방어막 없는 한 해'라는 할리우드리포터의 표현. 기사가 그렇게 규정했다고 귀속해서 쓴다.",
+      "다큐 속 리사의 한마디 \"I'm just so proud of myself.\" 본인의 말이 한 줄 있다."
+     ],
+     "format": "card",
+     "cover": [
+      "리사,",
+      "점쟁이부터 코첼라까지",
+      "「Always Lalisa」가 기록한 가장 방어막 없는 한 해"
+     ],
+     "hook": "",
+     "importance": "보통",
+     "why": "리사라는 실명과 구체 장면 세 개, 10월 10일이라는 시점은 있지만, 다큐 공개 소식이라 공급자 발표에 가깝고 독자 반응·관계 자료가 없다.",
+     "risk": "편집자 메모의 'YG 시스템을 벗어난'은 카드에 없는 표현이므로 쓰지 않는다. 계약 종료·독립·활동 중단 같은 단정도 금지다. 'K팝 시스템 이탈'은 기사 제목·요약 수준이라 세부를 풀어 쓰지 않는다. 점쟁이가 무슨 말을 했는지, 코첼라·「White Lotus」 에피소드의 내용은 지어내지 않는다. 다큐 공개일·플랫폼은 단정하지 않는다. 팬 반응과 소속사 입장은 카드에 없으니 쓰지 않는다. EJAE 수상, 「The Body」 예고편은 리사와 연결 근거가 없어 섞지 않는다. '~로 보입니다' 같은 추정도 쓰지 않는다. 리사 인용은 '다큐 속 발언'으로만 쓰고 발언 시점은 말하지 않는다.",
+     "check": "할리우드리포터 원문에서 다큐 공개일·플랫폼, 감독 Sue Kim 표기를 확인한다. 리사 인용 \"I'm just so proud of myself.\"가 다큐 속 발언인지 기사 제목인지 대조한다. 기사 게재 시각(10월 10일 00:45)이 한국 시간으로 며칠인지 맞춘다. 표지에 쓸 사진·스틸의 출처와 사용 허락을 확인한다. 캐러셀 표지에 좌상단 태그(Feature)와 출처를 넣는다.",
+     "go": true,
+     "pre_score": 6
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=43HrCxRUGf0\n구간: 0:22-0:52\n곡: 「Always Lalisa」\n아티스트: 점쟁이부터 코첼라까지\n피처링:\n후킹: “가장 방어막 없는 한 해”\n출처: K-POP REPUBLIC",
+    "caption": "리사의 한 해를 두고 \"가장 방어막 없는\"이라는 표현이 나왔습니다.\n\n할리우드리포터가 10일 게재한 글에서 다큐멘터리 「Always Lalisa」(감독 Sue Kim)를 K팝 아이돌의 \"가장 방어막 없는\" 한 해를 기록한 작품이라고 표현했습니다. 이 다큐는 K팝 시스템으로부터의 이탈 과정을 담았다고 소개됐습니다.\n\n그 한 해를 보여주는 장면은 세 가지입니다. 점쟁이의 조언, 코첼라 솔로 무대, 「White Lotus」 출연 에피소드가 담겼습니다.\n\n다큐 속 발언으로는 \"I'm just so proud of myself.\"가 인용됐습니다.\n\n다만 다큐의 공개일과 플랫폼은 확인되지 않았습니다.\n\n#PLOT #리사 #AlwaysLalisa #코첼라 #WhiteLotus",
+    "hooks": {
+     "A": "“가장 방어막 없는 한 해” / 점쟁이부터 코첼라까지 / 「Always Lalisa」",
+     "B": "리사, 점쟁이부터 / 코첼라까지 담은 다큐 / 「Always Lalisa」",
+     "C": "점쟁이에서 코첼라로 / 「White Lotus」까지 / 리사의 한 해"
+    },
+    "issues": [],
+    "gate": {
+     "pass": false,
+     "fails": [
+      "1 — 캡션 첫 문장에 리사(Lisa)라는 실명은 있으나 표지 기준 확인이 필요하다는 점은 무관하고, 대신 3 항목에서 걸림: 캡션에 '10일 게재'라는 날짜는 있으나 이는 기사 게재일이고 다큐 공개 시점 정보는 없어 시점 표기는 충분함. 따라서 1은 통과.",
+      "3 — 캡션 마지막 문단에 '10일 게재'로 날짜가 명시되어 있어 시점 항목은 해당하나 확인된 날짜로 적힌 것이 맞는지 검토가 필요함 (※ 이 항목은 실제 표기 기준으로 보면 '아니오'가 아니므로 제외)",
+      "5 — 캐러셀 표지 문구가 초안에 없음",
+      "4 — 좌상단 태그(News)는 기재되어 있으나 사진·영상 출처 칸이 비어 있음",
+      "6 — 첫 문장 '할리우드리포터는 ~ 소개했습니다'는 보도 인용형 문장으로, 반응 상태·질문·반전·시점 최상급 중 어느 것도 없고 '소개했습니다'로 끝남",
+      "7 — '규정했습니다', '소개됐습니다'는 귀속 처리되어 통과. 단, '방어막 없는 한 해'를 인용부호로 표기했으나 귀속 출처(기사)는 명확함 — 통과"
+     ],
+     "polished": true
+    },
+    "confirm": [
+     "검증 필요 · 부분 — \"I'm just so proud of myself.\" — 리사 (다큐 속 발언, 자료 인 (인용문은 부제에 있으나 화자와 출처(다큐 속 발언인지 )",
+     "검증 필요 · 부분 — 관련 기사 — EJAE, 교포 대상 추석 행사 Gyopo's Chuseok Benefit에 (자료는 \"Honored at\"(영예를 받음)일 뿐 수상)",
+     "아티스트 인스타 핸들 (@______)",
+     "원본 영상이 맞는지 확인 — 다른 후보도 실어 뒀습니다"
+    ],
+    "research": [
+     {
+      "title": "할리우드리포터 — Lisa and Director Sue Kim on Documenting the Star’s Break From the K-pop System in ‘Always Lalisa’",
+      "link": "https://www.hollywoodreporter.com/music/music-features/lisa-sue-kim-always-lalisa-interview-1236699144/"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=43HrCxRUGf0",
+     "title": "속보! 리사, 'ALWAYS LALISA' 월드 프리미어 참석차 2026 TIFF 공식 초청!",
+     "credit": "K-POP REPUBLIC",
+     "range": [
+      21.6,
+      51.6
+     ],
+     "alts": [
+      {
+       "url": "https://www.youtube.com/watch?v=43HrCxRUGf0",
+       "title": "속보! 리사, 'ALWAYS LALISA' 월드 프리미어 참석차 2026 TIFF 공식 초청!",
+       "channel": "K-POP REPUBLIC",
+       "score": 9.0
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=Aljt73rGQO4",
+       "title": "리사 오스카 레드카펫부터 토론토 영화제까지, 다큐 '올웨이즈 라리사' 엇갈린 두 마디와 응원할 점",
+       "channel": "사랑해한국",
+       "score": 8.0
+      },
+      {
+       "url": "https://www.youtube.com/watch?v=UgtIQmFr3ow",
+       "title": "리사: 어나더 그레이트 데이 | 공식 예고편 | 넷플릭스",
+       "channel": "Netflix Korea 넷플릭스 코리아",
+       "score": 4.0
+      }
+     ],
+     "note": "구간은 자막에서 원문 낱말이 나오는 자리 기준 — 한 번 확인"
+    },
+    "trust": {
+     "grade": "보통",
+     "why": [
+      "기사 1곳",
+      "부풀린 메모 2줄 고침"
+     ],
+     "checks": [
+      "부분 — \"I'm just so proud of myself.\" — 리사 (다큐 속 발언, 자료 인 (인용문은 부제에 있으나 화자와 출처(다큐 속 발언인지 )",
+      "부분 — 관련 기사 — EJAE, 교포 대상 추석 행사 Gyopo's Chuseok Benefit에 (자료는 \"Honored at\"(영예를 받음)일 뿐 수상)"
+     ]
+    },
+    "thumb": "https://i.ytimg.com/vi/43HrCxRUGf0/maxresdefault.jpg",
+    "still": {
+     "url": "https://i.ibb.co/4w9znv66/3ef5fb2459dc.jpg",
+     "key": "43HrCxRUGf0@21.6"
+    }
+   },
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n'가장 방어막 없는 한 해'. 할리우드리포터는 리사의 다큐멘터리 〈Always Lalisa〉를 이렇게 표현했습니다. 감독은 Sue Kim이고, 이 작품은 K팝 아이돌의 한 해를 기록했습니다.\n\n그 한 해에는 점쟁이의 조언, 코첼라 솔로 무대, 〈White Lotus〉 출연 에피소드가 담겼습니다. 다큐 속 리사의 한마디는 \"I'm just so proud of myself.\"입니다.\n\n10일 리사와 Sue Kim 감독이 이 작품을 직접 이야기한 인터뷰 기사가 올라왔습니다. 리사의 한 해가 구체적인 장면 세 개로 소개된 것은 이 기사를 통해서입니다.\n\n#PLOT #리사 #AlwaysLalisa #코첼라 #WhiteLotus\n\n[커버]\n소스: https://i.ibb.co/bjYMZRYs/ec80a498dfb2.jpg\n제목: 리사, 방어막 없는 한 해\n부제: 점쟁이부터 코첼라까지, 〈Always Lalisa〉 속 한 해\n출처:\n",
+    "caption": "'가장 방어막 없는 한 해'. 할리우드리포터는 리사의 다큐멘터리 〈Always Lalisa〉를 이렇게 표현했습니다. 감독은 Sue Kim이고, 이 작품은 K팝 아이돌의 한 해를 기록했습니다.\n\n그 한 해에는 점쟁이의 조언, 코첼라 솔로 무대, 〈White Lotus〉 출연 에피소드가 담겼습니다. 다큐 속 리사의 한마디는 \"I'm just so proud of myself.\"입니다.\n\n10일 리사와 Sue Kim 감독이 이 작품을 직접 이야기한 인터뷰 기사가 올라왔습니다. 리사의 한 해가 구체적인 장면 세 개로 소개된 것은 이 기사를 통해서입니다.\n\n#PLOT #리사 #AlwaysLalisa #코첼라 #WhiteLotus",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/bjYMZRYs/ec80a498dfb2.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_kq4znr0m/auto_pdb_리사_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "facts_fixed": [
+     "[캡션] 인용: 리사가 \"작품 속에서\" \"I'm just so proud of myself.\"라고 말한다고 썼지만, 근거에서 이 문장은 기사 부제에 나온 따옴표 말일 뿐이다. 다큐 안의 발언이라는 설명은 없고, 인터뷰 발언인지도 확인되지 않는다. 바로 뒤 문장의 \"언제 이뤄진 것인지 확인되지 않습니다\"와도 모순된다.",
+     "[캡션] 왜곡: 기사 공개일을 \"10일\"이라고 썼지만, 근거에는 October 9, 2026으로 돼 있다."
+    ],
+    "gate": {
+     "pass": false,
+     "fails": [
+      "3번 — 캡션에 '10월 9일'이라는 구체적 날짜가 있어 시점 표기가 포함되어 있음(날짜 자체가 아니라 시점 표현이 있는 항목이므로 '아니오')",
+      "4번 — 캐러셀 표지에 좌상단 태그는 'Feature'로 되어 있으나 사진·영상 출처 표기가 표지 이미지 정보에 명시되지 않음(표지이미지 항목은 스틸 이름만 있고 출처 없음)",
+      "6번 — 첫 문장이 '공개를 앞두고 있습니다'로 끝나 발표형 문장만으로 구성되어 반응 상태·질문·반전·시점 최상급 중 해당하는 요소가 없음",
+      "7번 — '가장 방어막 없는 한 해'라는 평가 문장은 할리우드리포터 인용으로 귀속되어 있어 통과 가능하나, 'K팝 시스템으로부터 이탈해 가는 과정을 기록한 작품'이라는 해석이 출처 귀속 없이 단정으로 서술됨",
+      "8번 — 다큐 공개 소식인데 '왜 이 사람이 지금 이 소식인가'를 설명하는 한 문장이 없음",
+      "10번 — 해시태그에 #PLOT가 포함되어 있으나 곡·프로그램 표기 확인 결과 본문의 「Always Lalisa」·「White Lotus」 표기는 프로그램 표기 〈 〉 규칙과 맞지 않음"
+     ],
+     "polished": true
+    },
+    "issues": [],
+    "confirm": [
+     "검증 필요 · 부분 — \"I'm just so proud of myself.\" — 리사 (다큐 속 발언, 자료 인 (인용문은 부제에 있으나 화자와 출처(다큐 속 발언인지 )",
+     "검증 필요 · 부분 — 관련 기사 — EJAE, 교포 대상 추석 행사 Gyopo's Chuseok Benefit에 (자료는 \"Honored at\"(영예를 받음)일 뿐 수상)",
+     "검증 필요 · 남은 사실 문제 — [캡션] 인용: \"다큐 속 리사의 한마디\"라고 했지만, 근거에는 \"I'm just so proud of myself.\"가 기사",
+     "아티스트 인스타 핸들 (@______)",
+     "사진 출처가 빈 장이 있습니다 — 보도 사진이면 매체 이름을 적어 주세요"
+    ],
+    "research": [
+     {
+      "title": "할리우드리포터 — Lisa and Director Sue Kim on Documenting the Star’s Break From the K-pop System in ‘Always Lalisa’",
+      "link": "https://www.hollywoodreporter.com/music/music-features/lisa-sue-kim-always-lalisa-interview-1236699144/"
+     }
+    ],
+    "copy": 0.01,
+    "trust": {
+     "grade": "낮음",
+     "why": [
+      "기사 1곳",
+      "부풀린 메모 2줄 고침"
+     ],
+     "checks": [
+      "부분 — \"I'm just so proud of myself.\" — 리사 (다큐 속 발언, 자료 인 (인용문은 부제에 있으나 화자와 출처(다큐 속 발언인지 )",
+      "부분 — 관련 기사 — EJAE, 교포 대상 추석 행사 Gyopo's Chuseok Benefit에 (자료는 \"Honored at\"(영예를 받음)일 뿐 수상)",
+      "남은 사실 문제 — [캡션] 인용: \"다큐 속 리사의 한마디\"라고 했지만, 근거에는 \"I'm just so proud of myself.\"가 기사",
+      "남은 사실 문제 — [캡션] 왜곡: \"10일 … 기사가 올라왔습니다\"라고 했지만, 근거의 기사 날짜는 October 9, 2026이다.",
+      "남은 사실 문제 — [캡션] 지어냄: \"한 해가 구체적인 장면 세 개로 소개된 것은 이 기사를 통해서입니다\"라고 했지만, 근거에는 이 기사가 처음"
+     ]
+    },
+    "covers": [
+     {
+      "key": "A",
+      "hook": "작성기",
+      "title": "리사, 방어막 없는 한 해",
+      "sub": "점쟁이부터 코첼라까지, 〈Always Lalisa〉 속 한 해"
+     },
+     {
+      "key": "B",
+      "hook": "질문",
+      "title": "방어막 없는 한 해란?",
+      "sub": "리사가 〈Always Lalisa〉에 담은 한 해, 세 장면"
+     },
+     {
+      "key": "C",
+      "hook": "의외",
+      "title": "점쟁이와 코첼라 사이",
+      "sub": "리사의 한마디 “I'm just so proud of myself."
+     }
+    ],
+    "preview": {
+     "slides": [
+      "https://i.ibb.co/ccnk8pQc/d0e0855ec74a.jpg",
+      "https://i.ibb.co/tw1KxrMw/0b0b95b812c6.jpg"
+     ],
+     "covers": {
+      "B": "https://i.ibb.co/VYMRQngz/1417f225f8a8.jpg",
+      "C": "https://i.ibb.co/8gT5pdVd/b54283f131f0.jpg",
+      "A": "https://i.ibb.co/ccnk8pQc/d0e0855ec74a.jpg"
+     },
+     "at": "2026-10-13T11:54+09:00",
+     "v": {
+      "A": "73bbeee1",
+      "B": "5a4ed38b",
+      "C": "467e0549"
+     }
+    }
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "인물해부",
+    "angle": "리사가 YG 시스템을 벗어난 가장 날것의 한 해(점쟁이 조언·코첼라 솔로·화이트 로투스)를 다큐 증언으로 정리",
+    "why": "국내 미보도 해외 증언이고 지금 뜨는 인물이라 선점 기회, 사람 이야기라 케이팝 독자가 반응할 소재"
+   },
+   "subjects": [
+    "리사",
+    "김수(Sue Kim",
+    "감독)"
+   ],
+   "lane": "정보",
+   "preempt": {
+    "score": 2,
+    "mags_3d": 0,
+    "plot_days": 37,
+    "hot": true,
+    "line": "다른 매거진 3일 안 0곳 · PLOT 37일 전 다룸 · 지금 뜸"
+   },
+   "captures": [],
+   "corner": "spotlight",
+   "corner_name": "SPOTLIGHT",
+   "corner_no": 2
   }
  ],
  "skipped": [
@@ -1005,6 +1275,18 @@
    "account": "지금 터진 것",
    "entity": "식케이",
    "why": "재조사에서 기사를 못 찾았습니다 — 사실을 직접 확인하세요"
+  },
+  {
+   "id": "sp_c3cb482737",
+   "account": "해외 · deadline.com",
+   "entity": "리사",
+   "why": "편집장 C — NBC 임원 리사 카츠 인터뷰라 블랙핑크 리사와 이름만 같고 음악·한국 독자와 접점이 없다"
+  },
+  {
+   "id": "sp_fb63934130",
+   "account": "해외 · apnews.com",
+   "entity": "리사",
+   "why": "같은 사람 초안이 이미 있음"
   }
  ],
  "corners": {
@@ -1054,7 +1336,7 @@
     "left": 2,
     "need_today": 1,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 2,
     "why": "해외 매체가 먼저 다룬 한국 아티스트 — 선점"
    },
    {
@@ -1102,7 +1384,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-13T10:41+09:00"
+  "at": "2026-10-13T11:50+09:00"
  },
  "slots": {
   "basis": 190,

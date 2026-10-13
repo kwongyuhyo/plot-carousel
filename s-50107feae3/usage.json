@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-13T10:39+09:00",
+ "generated_at": "2026-10-13T11:48+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 18.48,
- "today": 1.28,
- "per_day": 12.84,
- "calls": 1990,
+ "spent": 18.7,
+ "today": 1.51,
+ "per_day": 12.52,
+ "calls": 2540,
  "by": [
   {
    "name": "process",
@@ -22,7 +22,7 @@
   },
   {
    "name": "편집장",
-   "usd": 1.09
+   "usd": 1.12
   },
   {
    "name": "criteria",
@@ -37,6 +37,10 @@
    "usd": 0.38
   },
   {
+   "name": "후속 기획",
+   "usd": 0.15
+  },
+  {
    "name": "sell_calib",
    "usd": 0.15
   },
@@ -45,16 +49,12 @@
    "usd": 0.14
   },
   {
-   "name": "후속 기획",
+   "name": "criteria_split",
    "usd": 0.12
   },
   {
-   "name": "팩트체크",
+   "name": "사진 DB",
    "usd": 0.05
-  },
-  {
-   "name": "naver_music",
-   "usd": 0.03
   }
  ]
 }
