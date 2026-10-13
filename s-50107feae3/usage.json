@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-14T01:49+09:00",
+ "generated_at": "2026-10-14T03:00+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 22.46,
- "today": 0.23,
- "per_day": 10.51,
- "calls": 4065,
+ "spent": 22.62,
+ "today": 0.4,
+ "per_day": 10.31,
+ "calls": 4118,
  "by": [
   {
    "name": "process",
@@ -14,7 +14,7 @@
   },
   {
    "name": "초안 쓰기",
-   "usd": 5.79
+   "usd": 5.9
   },
   {
    "name": "장부 전 (Console)",
@@ -42,7 +42,7 @@
   },
   {
    "name": "후속 기획",
-   "usd": 0.27
+   "usd": 0.32
   },
   {
    "name": "cover_read",
