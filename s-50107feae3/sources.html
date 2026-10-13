@@ -1561,7 +1561,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var act = btn.getAttribute('data-act');
     if (act === 'mkdraft') {
       var cc = indexAll()[id] || {};
-      askDraft('dr-' + skey(id), headline(cc) || ('@' + (cc.account || '')));
+      askDraft('dr-' + skey(id), headline(cc) || ('@' + (cc.account || '')), cc.account ? cc : null);
       return;
     }
     if (act === 'drafted') {
@@ -2483,7 +2483,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       ph: '앵글 한 줄 — 어떻게 쓸지',
       chips: [['pick', m === 'pick' ? '♥ 고름' : '♡ 고르기', m === 'pick'], ['mkdraft', '✍️ 앱 초안 맡기기', false], ['skip', m === 'skip' ? '건너뜀' : '건너뛰기', m === 'skip']],
       chip: function (k) {
-        if (k === 'mkdraft') { cmtClose(); askDraft('dr-' + skey(id), headline(c) || ('@' + (c.account || ''))); return; }
+        if (k === 'mkdraft') { cmtClose(); askDraft('dr-' + skey(id), headline(c) || ('@' + (c.account || '')), c); return; }
         marks[id] = marks[id] === k ? undefined : k; if (!marks[id]) delete marks[id]; delete forms[id];
         renderCand(); refreshBar(); cmtRefresh();
       },
@@ -2883,11 +2883,24 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var a = b && b.closest('article');
     if (a) a.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
-  function askDraft(code3, title) {                // code3 = 'dr-<key>' — 무엇으로 쓸지 고르고 보낸다
-    sheetOf('앱에서 초안 만들기 — ' + String(title || '').slice(0, 30), [
-      ['b', '숏폼 + 캐러셀', '맥이 3~5분 안에 써서 오늘의 초안 맨 위 「요청한 초안」 에 띄웁니다'],
-      ['s', '숏폼만', ''], ['c', '캐러셀만', ''], ['x', '닫기', '']], function (f) {
+  // 10/14 규효 "매거진 글을 봇 안 거치고 앱에서 바로 캐러셀 스튜디오나 숏폼 제작으로" — AI 초안 없이 양식만 채워 넘긴다
+  function studioOpen(c, kind) {
+    var f = kind === 'card' ? cardForm(c).replace(/^소스: $/m, '소스: ' + (c.image || ''))
+                            : shortsForm(c).replace(/^URL: $/m, 'URL: ' + (c.is_reel ? (c.url || '') : ''));
+    try { localStorage.setItem('plot.form.handoff', f); } catch (e) {
+      alert('저장소를 쓸 수 없어 넘길 수 없습니다'); return;
+    }
+    location.href = kind === 'card' ? 'carousel.html' : 'shorts.html';
+  }
+  function askDraft(code3, title, c) {             // code3 = 'dr-<key>' — 무엇으로 쓸지 고르고 보낸다
+    var acts = [['b', '숏폼 + 캐러셀', '맥이 3~5분 안에 써서 오늘의 초안 맨 위 「요청한 초안」 에 띄웁니다'],
+      ['s', '숏폼만', ''], ['c', '캐러셀만', '']];
+    if (c) acts.push(['go-card', '캐러셀 스튜디오로 바로', 'AI 초안 없이 — 원문 사진·출처·제목 줄이 채워진 채 열립니다'],
+                     ['go-shorts', '숏폼 화면으로 바로', 'AI 초안 없이 — ' + (c.is_reel ? '릴스 주소까지 채워집니다' : '출처만 채워집니다')]);
+    acts.push(['x', '닫기', '']);
+    sheetOf('앱에서 초안 만들기 — ' + String(title || '').slice(0, 30), acts, function (f) {
       if (f === 'x') return;
+      if (f === 'go-card' || f === 'go-shorts') { studioOpen(c, f === 'go-card' ? 'card' : 'shorts'); return; }
       var code = code3 + '-' + f;
       reqAdd(code, title);
       plotAction(code, '초안 요청');
@@ -3612,9 +3625,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.14 02:00';
+    a.title = '판 10.14 02:31';
     var ver = document.createElement('span');
-    ver.textContent = '10.14 02:00';
+    ver.textContent = '10.14 02:31';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
