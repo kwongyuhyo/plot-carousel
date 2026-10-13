@@ -869,6 +869,70 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
 })();
 </script>
 <script>window.PLOT_BOT="plot_magazine_bot";</script>
+<script>(function () {
+  var SB = { url: "https://jipqujwziezeubtthbnw.supabase.co", key: "sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK" };
+  function on() { return /^https:\/\//.test(SB.url || '') && !!SB.key; }
+  function req(path, opt) {
+    opt = opt || {};
+    var h = { apikey: SB.key, Authorization: 'Bearer ' + SB.key, 'Content-Type': 'application/json' };
+    if (opt.prefer) h.Prefer = opt.prefer;
+    return fetch(SB.url.replace(/\/+$/, '') + '/rest/v1/' + path, { method: opt.method || 'GET', headers: h, body: opt.body })
+      .then(function (r) {
+        if (!r.ok) return r.text().then(function (t) { throw new Error(r.status + ' ' + t.slice(0, 100)); });
+        return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
+      });
+  }
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3 };
+  function send(op, data, onStep) {
+    var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
+    var sn = { op: op, at: new Date().toISOString() };
+    Object.keys(data || {}).forEach(function (k) { sn[k] = data[k]; });
+    var rec = { id: id, kind: 'studio', draft_date: null, draft_key: null, source_id: op, verdict: {}, reason: '', rewrite: {},
+      device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0], snapshot: sn };
+    return req('plot_evals', { method: 'POST', body: JSON.stringify(rec), prefer: 'resolution=merge-duplicates,return=minimal' })
+      .then(function () { return wait(id, LIMIT[op] || 5 * 60e3, onStep); });
+  }
+  function wait(id, limit, onStep) {
+    var t0 = Date.now();
+    return new Promise(function (ok, no) {
+      (function tick() {
+        req('plot_evals?select=snapshot&id=eq.' + encodeURIComponent(id)).then(function (rows) {
+          var sn = (rows && rows[0] && rows[0].snapshot) || {};
+          if (sn.status === 'done') return ok(sn);
+          if (sn.status === 'fail') return no(new Error(sn.note || '맥에서 실패했습니다'));
+          var gone = Date.now() - t0;
+          if (gone > limit) return no(new Error(sn.status ? '오래 걸려 화면에서 기다리기를 멈췄습니다 — 맥에서는 계속합니다'
+                                                            : '맥이 받지 않습니다 — 맥과 봇이 켜져 있는지 봐 주세요'));
+          if (onStep) { try { onStep(sn.status === 'running' ? (sn.note || '맥이 처리 중') : '맥이 받기를 기다리는 중', gone); } catch (_) {} }
+          setTimeout(tick, 3000);
+        }).catch(function (e) { if (Date.now() - t0 > limit) no(e); else setTimeout(tick, 5000); });
+      })();
+    });
+  }
+  function sheet(title, text) {
+    var o = document.createElement('div');
+    o.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center';
+    o.innerHTML = '<div style="background:var(--bg,#111);color:var(--fg,#eee);width:100%;max-width:640px;max-height:80vh;overflow:auto;' +
+      'border-radius:16px 16px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom))">' +
+      '<div data-t style="font-weight:800;margin-bottom:8px"></div><textarea style="width:100%;min-height:42vh;box-sizing:border-box;' +
+      'font:inherit;font-size:14px;line-height:1.55;padding:10px;border-radius:10px;border:1px solid rgba(127,127,127,.4);background:transparent;color:inherit"></textarea>' +
+      '<div style="display:flex;gap:8px;margin-top:10px"><button data-x="c" style="flex:1;padding:12px;border-radius:10px;font-weight:700">📋 복사</button>' +
+      '<button data-x="q" style="padding:12px 16px;border-radius:10px">닫기</button></div></div>';
+    o.querySelector('[data-t]').textContent = title;
+    var ta = o.querySelector('textarea'); ta.value = text;
+    o.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-x]');
+      if (e.target === o || (b && b.getAttribute('data-x') === 'q')) { o.remove(); return; }
+      if (b) {
+        var done = function () { b.textContent = '✓ 복사했습니다'; };
+        try { navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); document.execCommand('copy'); done(); }); }
+        catch (_) { ta.select(); document.execCommand('copy'); done(); }
+      }
+    });
+    document.body.appendChild(o);
+  }
+  window.plotStudio = { on: on, send: send, sheet: sheet };
+})();</script>
 
 <style id="plotGap">
 html:root[data-gap="tight"]{ --u:6px }
@@ -2082,7 +2146,7 @@ function refresh() {
     const cb = $('#copyBtn');
     if (cb) cb.textContent = blocks.length > 1 ? '📋 전체 ' + blocks.length + '편 양식 복사' : '📋 양식 텍스트 복사';
     const ob = $('#copyOneBtn');
-    if (ob) { ob.hidden = blocks.length < 2; ob.textContent = '📋 지금 편(' + (active + 1) + '번)만 복사'; }
+    if (ob) { ob.hidden = blocks.length < 2; ob.textContent = (studioOn() ? '🎬 지금 편(' : '📋 지금 편(') + (active + 1) + (studioOn() ? '번)만 제작' : '번)만 복사'); }
   }
   draftSave();
 }
@@ -3433,6 +3497,20 @@ function askCut(b) {
     TG.sendData(JSON.stringify({ plutocut: 1, url: url, n: 5 }));
     return;
   }
+  // 10/14 규효 "텔레그램이 열린다" — 맥(봇)이 바로 뽑아 이 화면에 펼친다 (bot/app_studio op=cut)
+  if (studioOn()) {
+    if (CUT_BUSY[id]) { toast('이 영상은 이미 추천을 뽑는 중입니다'); return; }
+    CUT_BUSY[id] = 1;
+    toast('✂️ 맥이 추천 구간을 뽑습니다 — 처음 보는 영상이면 몇 분 걸려요 (화면을 열어 두세요)');
+    let shown = '';
+    plotStudio.send('cut', { url: url, n: 5 }, function (step) {
+      if (step !== shown) { shown = step; toast('✂️ ' + step); }
+    }).then(function (sn) {
+      delete CUT_BUSY[id];
+      if (!takePcut(sn.pc)) toast('추천을 받았지만 펼치지 못했습니다');
+    }).catch(function (e) { delete CUT_BUSY[id]; toast('추천을 못 뽑았습니다 — ' + String(e && e.message || e).slice(0, 90)); });
+    return;
+  }
   // 봇 이름을 알면 딥링크로 바로 시킨다 — 텔레그램이 열리며 /start cut_<영상ID> 가 간다.
   // 결과 끝의 「🖥 제작 앱에서 열기」 를 누르면 추천이 채워진 채 이 화면으로 돌아온다.
   const bot = (window.PLOT_BOT || '').replace(/^@/, '');
@@ -3478,12 +3556,14 @@ function takeFormParam() {
 }
 
 /* 봇이 보낸 추천을 양식으로 펼친다. 반환: 펼친 편 수 */
-function takePcut() {
-  let raw = null;
-  try { raw = new URLSearchParams(location.search).get('pc'); } catch (_) {}
-  if (!raw) return 0;
-  // 새로고침해도 다시 펼치지 않게 주소에서 지운다(텔레그램이 쓰는 # 은 그대로 둔다)
-  try { history.replaceState(null, '', location.pathname + location.hash); } catch (_) {}
+function takePcut(given) {
+  let raw = typeof given === 'string' ? given : null;
+  if (!raw) {
+    try { raw = new URLSearchParams(location.search).get('pc'); } catch (_) {}
+    if (!raw) return 0;
+    // 새로고침해도 다시 펼치지 않게 주소에서 지운다(텔레그램이 쓰는 # 은 그대로 둔다)
+    try { history.replaceState(null, '', location.pathname + location.hash); } catch (_) {}
+  }
   let d;
   try { d = b64urlJson(raw); } catch (_) { toast('추천 구간을 읽지 못했습니다'); return 0; }
   const id = ytId(d.u || '');
@@ -3578,10 +3658,24 @@ function openTelegram() {
   window.open(url, '_blank', 'noopener');
 }
 
+/* ── 텔레그램 없이 맥으로 (10/14 규효 "앱 버튼 누르면 텔레그램이 열린다 — 다 바꿔") ──────────────
+   Supabase plot_evals 에 kind='studio' 한 줄 → 봇(bot/app_studio)이 5초마다 받아 처리하고 결과를 같은 줄에 적는다.
+   제작은 렌더 대기열로, 캡션·추천 구간은 이 화면에 바로. 연결이 없으면(주소·키 없음) 예전처럼 복사 + 텔레그램. */
+const CUT_BUSY = {};
+function studioOn() { return !IN_TG && !!(window.plotStudio && window.plotStudio.on()); }
+function studioMake(text, n) {
+  if (new TextEncoder().encode(text).length > 30000) { toast('양식이 너무 깁니다 — 편 수를 줄여주세요'); return; }
+  toast('🎬 ' + n + '편을 맥으로 보냅니다…');
+  plotStudio.send('shorts', { text: text }).then(function (sn) {
+    toast('✓ ' + (sn.note || '제작 대기열에 넣었습니다'));
+  }).catch(function (e) { toast('못 보냈습니다 — ' + String(e && e.message || e).slice(0, 90)); });
+}
+
 async function copyThenTelegram() {
   const bad = blocks.map(check).filter(e => Object.keys(e).length).length;
   if (bad) { toast('확인이 필요한 편이 있습니다'); return; }
   const text = formText();
+  if (studioOn()) { remember(blocks[blocks.length - 1]); studioMake(text, blocks.length); return; }
   try {
     await navigator.clipboard.writeText(text);
     toast('양식을 복사했습니다 — 텔레그램에 붙여넣으세요');
@@ -3600,6 +3694,13 @@ function askCaption() {
   const artist = (b.artist || '').trim();
   if (!song && !artist) { toast('곡이나 아티스트를 먼저 적어주세요'); return; }
   const hook = (b.hook || '').trim();
+  if (studioOn()) {
+    toast('✍️ 맥이 캡션을 씁니다 — 30초~1분');
+    plotStudio.send('caption', { artist: artist, title: song, note: hook }).then(function (sn) {
+      plotStudio.sheet('✍️ 캡션 초안 — ' + (sn.note || ''), sn.caption || '');
+    }).catch(function (e) { toast('캡션을 못 썼습니다 — ' + String(e && e.message || e).slice(0, 90)); });
+    return;
+  }
   const cmd = '/caption ' + (artist || '아티스트') + ' - ' + (song || '곡') +
               (hook ? ' | ' + hook : '');
   try {
@@ -3640,6 +3741,8 @@ function sendOne(b) {
   if (IN_TG) {
     try { TG.HapticFeedback.notificationOccurred('success'); } catch (_) {}
     TG.sendData(text);
+  } else if (studioOn()) {
+    studioMake(text, 1);
   } else {
     copy(text, '이 편 양식만 복사했습니다 — 봇에 붙여넣으세요');
   }
@@ -3709,6 +3812,10 @@ function boot() {
     var tg = $('#tgBtn'); if (tg) tg.onclick = copyThenTelegram;
     var one = $('#copyOneBtn'); if (one) one.onclick = () => sendOne(blocks[active] || blocks[0]);
     var cb = $('#capBtn'); if (cb) cb.onclick = askCaption;
+    if (studioOn()) {                  // 텔레그램을 안 거치니 이름도 바꾼다
+      if (tg) { tg.textContent = '🎬 맥으로 바로 제작'; tg.title = '양식을 맥으로 보내 제작 대기열에 넣습니다 — 완성 영상은 텔레그램 대화로 옵니다'; }
+      if (cb) cb.title = '맥이 캡션 초안을 써서 이 화면에 띄웁니다';
+    }
   }
 
   // 폰에서는 썸네일이 작다 — 탭하면 전체화면으로 키운다.
@@ -3787,9 +3894,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.14 03:26';
+    a.title = '판 10.14 03:41';
     var ver = document.createElement('span');
-    ver.textContent = '10.14 03:26';
+    ver.textContent = '10.14 03:41';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

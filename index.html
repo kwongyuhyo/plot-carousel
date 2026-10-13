@@ -2634,8 +2634,28 @@ function openTelegram() {
   } catch (_) {}
   window.open(url, "_blank", "noopener");
 }
+/* 10/14 규효 "앱 버튼 누르면 텔레그램이 열린다" — 연결(Supabase)이 있으면 맥(봇 bot/app_studio)이 바로 받는다.
+   캡션은 이 화면에 뜨고, 양식은 복사만 한다(캐러셀은 이 화면에서 바로 저장·발행하므로 봇으로 보낼 일이 없다). */
+function studioOn() {
+  const TG = window.Telegram && window.Telegram.WebApp;
+  return !(TG && TG.initData) && !!(window.plotStudio && window.plotStudio.on());
+}
+if (studioOn()) {
+  const b = document.getElementById("tgBtn");
+  b.textContent = "📋 양식 복사"; b.title = "양식 텍스트를 복사합니다";
+  document.getElementById("capBtn").title = "맥이 캡션 초안을 써서 이 화면에 띄웁니다";
+}
 document.getElementById("tgBtn").onclick = async () => {
   const text = buildForm();
+  if (studioOn()) {
+    try { await navigator.clipboard.writeText(text); toast("양식을 복사했습니다"); }
+    catch (_) {
+      document.getElementById("formOut").value = text;
+      document.getElementById("formBox").hidden = false;
+      toast("복사가 막혀 있어 창으로 펼쳤습니다");
+    }
+    return;
+  }
   try {
     await navigator.clipboard.writeText(text);
     toast("양식을 복사했습니다 — 텔레그램에 붙여넣으세요");
@@ -2654,6 +2674,13 @@ document.getElementById("capBtn").onclick = () => {
   const title = (cover.title || "").trim();
   const sub = (cover.subtitle || "").trim();
   if (!title) { toast("커버 제목을 먼저 적어주세요"); return; }
+  if (studioOn()) {
+    toast("✍️ 맥이 캡션을 씁니다 — 30초~1분");
+    plotStudio.send("caption", { artist: "", title: title, note: sub }).then(
+      (sn) => plotStudio.sheet("✍️ 캡션 초안 — " + (sn.note || ""), sn.caption || ""),
+      (e) => toast("캡션을 못 썼습니다 — " + String((e && e.message) || e).slice(0, 90)));
+    return;
+  }
   const cmd = "/caption " + title + (sub ? " | " + sub : "");
   try {
     navigator.clipboard.writeText(cmd).then(

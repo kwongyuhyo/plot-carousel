@@ -2359,7 +2359,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var day = DR && DR.date;
     if (!sbOn() || !day || (EV_LOADED === day && !force)) return;
     EV_LOADED = day;
-    sbReq('plot_evals?select=id,verdict,reason,rewrite,updated_at,kind,snapshot&kind=neq.act&draft_date=eq.' + encodeURIComponent(day)).then(function (rows) {
+    sbReq('plot_evals?select=id,verdict,reason,rewrite,updated_at,kind,snapshot&kind=not.in.(act,studio)&draft_date=eq.' + encodeURIComponent(day)).then(function (rows) {
       var m = evGet(), ch = false;
       (rows || []).forEach(function (r) {
         var mine = m[r.id];
@@ -2637,7 +2637,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var local = function () { var m = evGet(); return Object.keys(m).map(function (k) { return m[k]; }).sort(function (a, b) {
       return String(b.updated_at || '').localeCompare(String(a.updated_at || '')); }); };
     if (!sbOn()) { draw(local(), '이 기기에 남긴 것만 보입니다 (저장소 설정 전)'); return; }
-    sbReq('plot_evals?select=id,kind,draft_date,draft_key,source_id,verdict,reason,snapshot,updated_at&kind=neq.act&order=updated_at.desc&limit=100')
+    sbReq('plot_evals?select=id,kind,draft_date,draft_key,source_id,verdict,reason,snapshot,updated_at&kind=not.in.(act,studio)&order=updated_at.desc&limit=100')
       .then(function (rows) { draw(rows || [], '최근 100건 — 맥이 매시 이걸 읽어 편집장 판정과 작성 예문에 넣습니다'); })
       .catch(function () { draw(local(), '저장소에 못 닿아 이 기기 것만 보입니다'); });
   }
@@ -3647,9 +3647,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.14 03:26';
+    a.title = '판 10.14 03:41';
     var ver = document.createElement('span');
-    ver.textContent = '10.14 03:26';
+    ver.textContent = '10.14 03:41';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
