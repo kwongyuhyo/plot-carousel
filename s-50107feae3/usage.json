@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-13T17:18+09:00",
+ "generated_at": "2026-10-13T18:27+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 21.49,
- "today": 4.29,
- "per_day": 12.46,
- "calls": 3789,
+ "spent": 21.55,
+ "today": 4.36,
+ "per_day": 12.1,
+ "calls": 3828,
  "by": [
   {
    "name": "process",
@@ -22,7 +22,7 @@
   },
   {
    "name": "편집장",
-   "usd": 1.33
+   "usd": 1.37
   },
   {
    "name": "guided_writer",
@@ -49,12 +49,12 @@
    "usd": 0.17
   },
   {
-   "name": "sell_calib",
+   "name": "클립 고르기",
    "usd": 0.15
   },
   {
-   "name": "criteria_split",
-   "usd": 0.14
+   "name": "sell_calib",
+   "usd": 0.15
   }
  ]
 }
