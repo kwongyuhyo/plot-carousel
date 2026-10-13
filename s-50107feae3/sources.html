@@ -2359,7 +2359,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var day = DR && DR.date;
     if (!sbOn() || !day || (EV_LOADED === day && !force)) return;
     EV_LOADED = day;
-    sbReq('plot_evals?select=id,verdict,reason,rewrite,updated_at,kind,snapshot&draft_date=eq.' + encodeURIComponent(day)).then(function (rows) {
+    sbReq('plot_evals?select=id,verdict,reason,rewrite,updated_at,kind,snapshot&kind=neq.act&draft_date=eq.' + encodeURIComponent(day)).then(function (rows) {
       var m = evGet(), ch = false;
       (rows || []).forEach(function (r) {
         var mine = m[r.id];
@@ -2637,7 +2637,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var local = function () { var m = evGet(); return Object.keys(m).map(function (k) { return m[k]; }).sort(function (a, b) {
       return String(b.updated_at || '').localeCompare(String(a.updated_at || '')); }); };
     if (!sbOn()) { draw(local(), '이 기기에 남긴 것만 보입니다 (저장소 설정 전)'); return; }
-    sbReq('plot_evals?select=id,kind,draft_date,draft_key,source_id,verdict,reason,snapshot,updated_at&order=updated_at.desc&limit=100')
+    sbReq('plot_evals?select=id,kind,draft_date,draft_key,source_id,verdict,reason,snapshot,updated_at&kind=neq.act&order=updated_at.desc&limit=100')
       .then(function (rows) { draw(rows || [], '최근 100건 — 맥이 매시 이걸 읽어 편집장 판정과 작성 예문에 넣습니다'); })
       .catch(function () { draw(local(), '저장소에 못 닿아 이 기기 것만 보입니다'); });
   }
@@ -2815,8 +2815,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var g = e.target.closest('[data-sygo]');
     if (g) {
       var q = g.getAttribute('data-sygo').split(':');
-      toast('텔레그램이 열리면 보내기(시작)를 눌러 주세요 — 곡 영상·후렴을 찾습니다 (1~3분)');
-      viaTelegram('sy-' + q[0] + '-' + q[1]);
+      plotAction('sy-' + q[0] + '-' + q[1], '곡 영상·후렴 찾기 (1~3분)');
       return true;
     }
     var s = e.target.closest('[data-syq]');
@@ -3189,6 +3188,29 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function plotAction(code, label, confirmed, token) {
     actMark(code);
     var ch = chGet();
+    // 10/14 규효 "앱에서 누르면 텔레그램이 열린다" — 맡기기와 같은 표(plot_evals)에 kind='act' 로 바로 (collectors/orders.pull_acts)
+    if (sbOn() && !ch.url) {
+      var pub = /^(pb|sc|sx)-/.test(code);
+      if (pub && !ch.key) {
+        var k = window.prompt('발행은 앱 열쇠가 필요합니다 — 맥 .env 의 PLOT_APP_KEY 와 같은 값을 한 번만 넣어 주세요');
+        if (!k || !k.trim()) { toast('열쇠가 없어 발행을 보내지 않았습니다'); return; }
+        chSet({ key: k.trim() }); ch = chGet();
+      }
+      var at = new Date().toISOString();
+      var sign = (pub && window.crypto && crypto.subtle && window.TextEncoder)
+        ? crypto.subtle.digest('SHA-256', new TextEncoder().encode(ch.key + '|' + code + '|' + at)).then(function (b) {
+            return Array.prototype.map.call(new Uint8Array(b), function (x) { return ('0' + x.toString(16)).slice(-2); }).join('');
+          })
+        : Promise.resolve('');
+      sign.then(function (sig) {
+        var rec = { id: 'act:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6), kind: 'act', draft_date: kstDay(new Date()), draft_key: null,
+          source_id: code, verdict: {}, reason: '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
+          snapshot: { code: code, confirmed: !!confirmed, token: token || '', at: at, sig: sig, label: label || '' } };
+        return sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } });
+      }).then(function () { toast((label || '보냈습니다') + ' — 맥이 1~5분 안에 받습니다'); })
+        .catch(function (er) { toast('못 보냈습니다 — ' + String(er && er.message || er).slice(0, 60)); });
+      return;
+    }
     if (ch.url && ch.key) {
       fetch(ch.url.replace(/\/+$/, '') + '/a', {
         method: 'POST', headers: { 'content-type': 'application/json', 'x-app-key': ch.key },
@@ -3354,11 +3376,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var host = document.getElementById('viewFollow');
     var cards = (FU && FU.cards) || [];
     var ch = chGet();
-    var chBox = '<details class="chn"><summary>앱 버튼 통로 — ' + (ch.url && ch.key ? '인터넷 대기열 연결됨' : '텔레그램 @' + esc(botName())) + '</summary>' +
-      '<div style="margin-top:6px;line-height:1.55">버튼을 누르면 맥이 받아서 합니다. 기본은 텔레그램 봇 링크(텔레그램이 열리면 보내기). ' +
-      '인터넷 대기열(Cloudflare)을 만들었으면 아래 두 칸을 채우면 텔레그램 없이 바로 갑니다 — docs/APP_CHANNEL.md.</div>' +
-      '<input id="chUrl" placeholder="대기열 주소 (https://plot-inbox….workers.dev)" value="' + esc(ch.url || '') + '">' +
-      '<input id="chKey" placeholder="앱 키 (APP_KEY)" value="' + esc(ch.key || '') + '">' +
+    var chBox = '<details class="chn"><summary>앱 버튼 통로 — ' + (sbOn() && !ch.url ? '텔레그램 없이 바로 (발행 열쇠 ' + (ch.key ? '있음' : '없음') + ')' : (ch.url && ch.key ? '인터넷 대기열(Cloudflare) 연결됨' : '텔레그램 @' + esc(botName()))) + '</summary>' +
+      '<div style="margin-top:6px;line-height:1.55">버튼을 누르면 텔레그램 없이 맥이 1~5분 안에 받아서 합니다. 발행 버튼만 앱 열쇠가 필요합니다 — 맥 .env 의 PLOT_APP_KEY 와 같은 값. ' +
+      '주소 칸은 비워 두세요 (Cloudflare 대기열을 쓸 때만).</div>' +
+      '<input id="chUrl" placeholder="(비워 두기) Cloudflare 대기열 주소" value="' + esc(ch.url || '') + '">' +
+      '<input id="chKey" placeholder="앱 열쇠 (.env 의 PLOT_APP_KEY)" value="' + esc(ch.key || '') + '">' +
       '<button data-ch="save">저장</button><button data-ch="clear">지우기 (텔레그램으로)</button></details>';
     if (!cards.length) {
       host.innerHTML = '<div class="drEmpty">지금은 후속 기획 카드가 없습니다.<br>PLOT 글이 평소의 2배를 넘거나, 잘 다룬 사람에게 새 소식이 붙거나, ' +
@@ -3625,9 +3647,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.14 03:05';
+    a.title = '판 10.14 03:26';
     var ver = document.createElement('span');
-    ver.textContent = '10.14 03:05';
+    ver.textContent = '10.14 03:26';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
