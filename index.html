@@ -466,6 +466,16 @@ main{display:grid;gap:0;padding-bottom:96px}
 #bigOpen{margin-top:10px;width:100%;border:1px solid var(--line);border-radius:7px;
   padding:9px 14px;font-size:14px;background:none;color:var(--text)}
 .hint{font-size:13px;color:var(--muted);margin:0 0 10px}
+/* 내보내기 판 (10/14 규효 "공유·전체 저장이 이상하다") */
+#exBox .bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin:4px 0 12px}
+#exBox .bar i{display:block;height:100%;width:0;background:var(--text);transition:width .15s}
+#exBox .ex{display:block;width:100%;text-align:left;border:1px solid var(--line);border-radius:9px;
+  padding:12px 14px;margin-top:8px;background:none;color:var(--text);font:inherit;font-size:15px}
+#exBox .ex.main{background:var(--text);color:var(--bg);border-color:var(--text);font-family:"Pretendard-ExtraBold",sans-serif}
+#exBox .ex small{display:block;font-size:12px;opacity:.7;margin-top:3px;font-family:inherit}
+#exBox .ex[disabled]{opacity:.4}
+#exThumbs{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;-webkit-overflow-scrolling:touch}
+#exThumbs img{height:84px;width:auto;border-radius:4px;flex:none}
 
 /* 예시 알림 */
 #sampleBar{display:flex;align-items:center;gap:10px;margin:12px 14px 0;padding:9px 12px;
@@ -653,6 +663,17 @@ main{display:grid;gap:0;padding-bottom:96px}
     <div id="bigList" hidden></div>
     <button id="bigOpen" type="button" hidden>🖥 브라우저에서 열기</button>
     <button class="close" id="bigClose" type="button">닫기</button>
+  </div>
+</div>
+
+<div class="sheet" id="exBox" hidden>
+  <div class="card">
+    <h2 id="exTitle">내보내기</h2>
+    <p class="hint" id="exHint">이미지를 만드는 중…</p>
+    <div class="bar"><i id="exBar"></i></div>
+    <div id="exThumbs"></div>
+    <div id="exBtns"></div>
+    <button class="close" id="exClose" type="button">닫기</button>
   </div>
 </div>
 
@@ -2264,7 +2285,10 @@ function showGallery(blobs, why) {
     btn.type = "button";
     btn.textContent = "이 장만 저장";
     btn.onclick = async () => {
-      const r = await saveBlob(`${slug()}_${String(i + 1).padStart(2, "0")}.png`, b);
+      const f = new File([b], `${slug()}_${String(i + 1).padStart(2, "0")}.png`, { type: "image/png" });
+      // 아이폰 홈 화면 앱에서 내려받기는 뒤로 가기 없는 미리보기로 빠진다 — 공유 창(이미지 저장)으로
+      if (isIOS() && !inTG() && canShare([f])) { const x = await exShare([f]); if (x === "ok" || x === "abort") return; }
+      const r = await saveBlob(f.name, b);
       toast(r === "ok" ? "저장했습니다" : "저장이 막혀 있습니다 — 사진을 길게 눌러 주세요");
     };
     cap.appendChild(btn);
@@ -2292,13 +2316,218 @@ function canShareFiles() {
       navigator.canShare({ files: [new File([new Blob(["x"])], "a.png", { type: "image/png" })] }));
   } catch (e) { return false; }
 }
-async function saveOne(i) {
-  const b = await blobOf(i);
-  const n = String(i + 1).padStart(2, "0");
-  const r = await saveBlob(`${slug()}_${n}.png`, b);
-  if (r === "ok") toast(`${n}번 장을 저장했습니다`);
-  else if (r === "fail") showBig(b);
+async function saveOne(i) { openExport([i]); }
+
+/* ── 내보내기 판 (10/14 규효 "완성된 캐러셀 공유·저장이 오류 나고 불편 · 한 번에 전체 저장도 안 됨") ─────────
+ * 원인: ① 공유는 '누른 그 순간'에만 열린다(아이폰·안드로이드). 10장을 그리는 사이 그 순간이 지나 공유가 막혀
+ *         늘 '공유가 막혀 있습니다' 판으로 떨어졌다.  ② 여러 파일 내려받기는 브라우저가 첫 장만 받거나 막는다.
+ *       ③ 아이폰 홈 화면 앱에서 한 장 내려받기는 뒤로 가기 없는 미리보기로 빠진다.
+ * 고침: 먼저 다 그려 두고(바뀐 게 없으면 그려 둔 것을 바로 쓴다) 버튼을 '새로' 누르게 한다 → 공유가 그 순간에 열린다.
+ *       기기마다 되는 길만 보여 준다 — 아이폰: 공유(사진 n장 저장) · 안드로이드: 전부 내려받기 + 공유 · 맥: ZIP 한 파일 + 따로 저장. */
+const EX = { rev: null, blobs: null };
+const isIOS = () => /iPhone|iPad|iPod/.test(navigator.userAgent) ||
+  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+const isAndroid = () => /Android/.test(navigator.userAgent);
+function exName(i) { return `${slug()}_${String(i + 1).padStart(2, "0")}.png`; }
+function deckSig() {                                     // 바뀐 게 있는지 — 긴 값(사진 데이터)은 길이·앞뒤만 본다
+  try {
+    return JSON.stringify(deck, (k, v) => (typeof v === "string" && v.length > 300) ? v.length + ":" + v.slice(0, 40) + v.slice(-40) : v);
+  } catch (e) { return String(Math.random()); }
 }
+async function exRender(onStep) {
+  const sig = deckSig();
+  if (EX.blobs && EX.rev === sig && EX.blobs.length === deck.slides.length + 1) return EX.blobs;
+  const total = deck.slides.length + 1, out = [], rev = sig, d = deck;
+  for (let i = 0; i < total; i++) {
+    out.push(await blobOf(i));
+    if (onStep) onStep(i + 1, total);
+    await new Promise((r) => setTimeout(r, 0));          // 화면이 멈추지 않게 한 장씩 숨 돌리기
+  }
+  const ready = deck.slides.every((x) => !x.img || (x.el && x.el.complete));   // 사진이 덜 읽힌 채 그린 건 남기지 않는다
+  if (d === deck && rev === deckSig() && ready) { EX.rev = rev; EX.blobs = out; }
+  return out;
+}
+let exWarm = null;
+function exPrewarm() {                                    // 손 뗀 지 4초 지나면 미리 그려 둔다 — 누르면 바로 열리게
+  clearTimeout(exWarm);
+  exWarm = setTimeout(() => { if (deck && document.getElementById("exBox").hidden) exRender().catch(() => {}); }, 4000);
+}
+function canShare(files) {
+  try { return !!(navigator.share && navigator.canShare && navigator.canShare({ files })); } catch (e) { return false; }
+}
+async function exShare(files) {
+  try {
+    await navigator.share({ files });                     // 제목·글을 같이 넘기면 사진을 빼는 앱이 있다 — 파일만
+    return "ok";
+  } catch (e) {
+    if (e && e.name === "AbortError") return "abort";
+    return (e && e.name) || "fail";
+  }
+}
+async function exDownloadEach(blobs, idx) {
+  for (let k = 0; k < blobs.length; k++) {
+    const r = await saveBlob(exName(idx[k]), blobs[k]);
+    if (r !== "ok") return k;
+    await new Promise((res) => setTimeout(res, 450));      // 너무 빨리 이어 받으면 브라우저가 뒤엣것을 버린다
+  }
+  return blobs.length;
+}
+/* 압축 없는 ZIP (PNG 는 이미 압축돼 있다) — 맥에서 한 번에 한 파일로 */
+const CRC_T = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(u8) { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CRC_T[(c ^ u8[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+async function makeZip(entries) {
+  const enc = new TextEncoder(), parts = [], cen = []; let off = 0;
+  for (const e of entries) {
+    const data = new Uint8Array(await e.blob.arrayBuffer()), name = enc.encode(e.name), crc = crc32(data);
+    const h = new DataView(new ArrayBuffer(30));
+    h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x0800, true);
+    h.setUint32(14, crc, true); h.setUint32(18, data.length, true); h.setUint32(22, data.length, true);
+    h.setUint16(26, name.length, true);
+    parts.push(h, name, data);
+    const c = new DataView(new ArrayBuffer(46));
+    c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true);
+    c.setUint32(16, crc, true); c.setUint32(20, data.length, true); c.setUint32(24, data.length, true);
+    c.setUint16(28, name.length, true); c.setUint32(42, off, true);
+    cen.push(c, name);
+    off += 30 + name.length + data.length;
+  }
+  const csize = cen.reduce((a, x) => a + x.byteLength, 0);
+  const end = new DataView(new ArrayBuffer(22));
+  end.setUint32(0, 0x06054b50, true); end.setUint16(8, entries.length, true); end.setUint16(10, entries.length, true);
+  end.setUint32(12, csize, true); end.setUint32(16, off, true);
+  return new Blob([...parts, ...cen, end], { type: "application/zip" });
+}
+async function openExport(only) {
+  const box = document.getElementById("exBox"), hint = document.getElementById("exHint");
+  const bar = document.getElementById("exBar"), btns = document.getElementById("exBtns"), th = document.getElementById("exThumbs");
+  const one = Array.isArray(only) && only.length === 1;
+  document.getElementById("exTitle").textContent = one ? `${only[0] + 1}번 장 내보내기` : `전체 ${deck.slides.length + 1}장 내보내기`;
+  btns.replaceChildren(); th.replaceChildren(); bar.style.width = "0";
+  hint.textContent = "이미지를 만드는 중…";
+  box.hidden = false;
+  let all;
+  try {
+    all = await exRender((k, n) => { bar.style.width = Math.round(k / n * 100) + "%"; hint.textContent = `이미지를 만드는 중… ${k}/${n}`; });
+  } catch (e) { hint.textContent = "이미지를 만들지 못했습니다 — " + String(e && e.message || e).slice(0, 80); return; }
+  bar.style.width = "100%";
+  const idx = one ? only : all.map((_, i) => i);
+  const blobs = idx.map((i) => all[i]);
+  const files = blobs.map((b, k) => new File([b], exName(idx[k]), { type: "image/png" }));
+  blobs.forEach((b) => { const im = document.createElement("img"); im.src = URL.createObjectURL(b); th.appendChild(im); });
+  const n = blobs.length, tg = inTG(), share = !tg && canShare(files), ios = isIOS(), android = isAndroid();
+  const add = (label, sub, fn, main) => {
+    const b = document.createElement("button"); b.type = "button"; b.className = "ex" + (main ? " main" : "");
+    b.innerHTML = label + (sub ? "<small>" + sub + "</small>" : "");
+    b.onclick = async () => { b.disabled = true; try { await fn(b); } finally { b.disabled = false; } };
+    btns.appendChild(b); return b;
+  };
+  const doShare = async () => {
+    const r = await exShare(files);
+    if (r === "ok") toast(ios ? "공유 창에서 「이미지 " + n + "개 저장」을 누르면 사진첩에 들어갑니다" : "공유 창을 열었습니다");
+    else if (r === "NotAllowedError") toast("공유가 막혔습니다 — 버튼을 한 번 더 눌러 주세요");
+    else if (r !== "abort") toast("공유를 열지 못했습니다 — 아래 「한 장씩 보기」로 저장하세요");
+  };
+  const doEach = async () => {
+    const got = await exDownloadEach(blobs, idx);
+    if (got === n) toast(n + "장을 내려받았습니다" + (android ? " — 갤러리 또는 「다운로드」 폴더" : ""));
+    else showGallery(blobs, got ? `${got}장까지 받았습니다` : "내려받기가 막혀 있습니다");
+  };
+  const doZip = async (b) => {
+    b.querySelector("small") && (b.querySelector("small").textContent = "묶는 중…");
+    const z = await makeZip(blobs.map((bl, k) => ({ name: exName(idx[k]), blob: bl })));
+    const r = await saveBlob(`${slug()}.zip`, z);
+    toast(r === "ok" ? "ZIP 한 파일로 저장했습니다 — 열면 " + n + "장" : "저장이 막혀 있습니다 — 「따로 저장」을 써 주세요");
+  };
+  if (tg) {
+    hint.textContent = "텔레그램 안에서는 내려받기·공유가 막혀 있습니다. 브라우저에서 열거나 사진을 길게 눌러 저장하세요.";
+    add("🖥 브라우저에서 열기", "한 번에 저장·공유가 됩니다", async () => {
+      const T = window.Telegram && window.Telegram.WebApp;
+      try { T.openLink(location.href); } catch (e) { window.open(location.href, "_blank"); }
+    }, true);
+  } else if (ios) {
+    hint.textContent = n > 1 ? "공유 창의 「이미지 " + n + "개 저장」으로 사진첩에 한 번에 들어갑니다. 인스타로 바로 보내도 됩니다."
+                             : "공유 창의 「이미지 저장」으로 사진첩에 들어갑니다.";
+    if (share) add("📲 사진첩에 저장 · 공유", n + "장 · 공유 창이 열립니다", doShare, true);
+  } else if (android) {
+    hint.textContent = "「전부 내려받기」는 처음 한 번 '여러 파일 다운로드 허용'을 물을 수 있습니다 — 허용을 누르세요.";
+    add("📥 전부 내려받기", n + "장 · 갤러리/다운로드 폴더로", doEach, true);
+    if (share) add("📤 공유", "인스타·카톡 등으로 바로", doShare);
+  } else {
+    hint.textContent = n > 1 ? "한 파일(ZIP)로 받으면 브라우저가 중간에 막지 않습니다." : "";
+    if (n > 1) add("📦 ZIP 한 파일로 저장", n + "장을 한 번에", doZip, true);
+    add(n > 1 ? "🖼 PNG 따로 저장" : "🖼 PNG 저장", n > 1 ? n + "개 파일 (브라우저가 '여러 파일 허용'을 물을 수 있음)" : "", doEach, n === 1);
+    if (share) add("📤 공유", "에어드롭·메시지 등", doShare);
+  }
+  if (!tg && !one && window.plotStudio && plotStudio.on()) {
+    add("🚀 인스타에 바로 올리기", "맥이 PLOT 계정으로 올립니다 · 캡션 포함", async (b) => {
+      box.hidden = true; await publishDeck();
+    });
+  }
+  add("🔍 한 장씩 보기", "길게 눌러 저장", async () => { box.hidden = true; showGallery(blobs, ""); });
+}
+
+/* ── 인스타에 바로 올리기 (10/14 규효 "캐러셀도 앱에서 바로 발행") ─────────────────────────────
+ * 그린 그림을 JPEG 로 장마다 plot_evals(kind='studio_img')에 올리고, 캡션과 함께 발행 요청(op=carousel)을 낸다.
+ * 맥(봇 bot/app_studio)은 앱 열쇠 서명과 그림·캡션 지문이 맞을 때만 올린다 — 열쇠는 소재 화면과 같은 곳(plot.inbox)에 둔다. */
+function jpegOf(i, q) {
+  paint(octx, i, false);
+  return new Promise((res) => off.toBlob(res, "image/jpeg", q));
+}
+async function sha256hex(buf) {
+  const h = await crypto.subtle.digest("SHA-256", buf);
+  return Array.from(new Uint8Array(h)).map((x) => x.toString(16).padStart(2, "0")).join("");
+}
+function b64of(u8) {
+  let s = ""; for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode.apply(null, u8.subarray(i, i + 0x8000));
+  return btoa(s);
+}
+function appKey() {
+  let ch = {}; try { ch = JSON.parse(localStorage.getItem("plot.inbox") || "{}") || {}; } catch (e) {}
+  if (ch.key) return ch.key;
+  const k = (window.prompt("발행은 앱 열쇠가 필요합니다 — 맥 .env 의 PLOT_APP_KEY 와 같은 값을 한 번만 넣어 주세요") || "").trim();
+  if (!k) return "";
+  ch.key = k; try { localStorage.setItem("plot.inbox", JSON.stringify(ch)); } catch (e) {}
+  return k;
+}
+let PUB_BUSY = false;
+async function publishDeck() {
+  if (PUB_BUSY) { toast("올리는 중입니다"); return; }
+  const cap = (deck.caption || "").trim();
+  if (!cap) { toast("캡션이 비어 있습니다 — 캡션을 먼저 넣어 주세요"); return; }
+  const total = deck.slides.length + 1;
+  if (total > 10) { toast("10장을 넘어 올릴 수 없습니다 — 줄여 주세요"); return; }
+  if (!window.confirm(`PLOT 인스타에 지금 올릴까요?\n\n${total}장 · 캡션 첫 줄: ${cap.split("\n")[0].slice(0, 60)}\n\n올리면 되돌릴 수 없습니다.`)) return;
+  const key = appKey(); if (!key) { toast("열쇠가 없어 올리지 않았습니다"); return; }
+  PUB_BUSY = true;
+  try {
+    const pub = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    const hashes = [];
+    for (let i = 0; i < total; i++) {
+      toast(`그림 보내는 중 ${i + 1}/${total}`);
+      let sent = false;
+      for (const q of [0.92, 0.82, 0.72]) {                // 줄이 너무 크면 화질을 조금씩 낮춰 다시
+        const u8 = new Uint8Array(await (await jpegOf(i, q)).arrayBuffer());
+        try {
+          await plotStudio.post({ id: `stimg:${pub}-${i}`, kind: "studio_img", snapshot: { pub, n: i, data: b64of(u8) } });
+          hashes.push(await sha256hex(u8)); sent = true; break;
+        } catch (e) { if (q === 0.72) throw e; }
+      }
+      if (!sent) throw new Error("그림을 못 보냈습니다");
+    }
+    const digest = await sha256hex(new TextEncoder().encode(hashes.join("|") + "|" + cap));
+    const at = new Date().toISOString();
+    const sig = await sha256hex(new TextEncoder().encode(key + "|" + digest + "|" + at));
+    let shown = "";
+    const sn = await plotStudio.send("carousel", { pub, total, caption: cap, digest, at, sig },
+      (step) => { if (step !== shown) { shown = step; toast("🚀 " + step); } });
+    plotStudio.sheet("🚀 " + (sn.note || "발행했습니다"), sn.permalink || "");
+  } catch (e) {
+    const m = String((e && e.message) || e);
+    if (/열쇠/.test(m)) { try { const ch = JSON.parse(localStorage.getItem("plot.inbox") || "{}"); delete ch.key; localStorage.setItem("plot.inbox", JSON.stringify(ch)); } catch (_) {} }
+    toast("올리지 못했습니다 — " + m.slice(0, 100));
+  } finally { PUB_BUSY = false; }
+}
+document.getElementById("exClose").onclick = () => { document.getElementById("exBox").hidden = true; };
 async function saveAll() {
   const blobs = await allBlobs();
   for (let i = 0; i < blobs.length; i++) {
@@ -2414,6 +2643,7 @@ window.addEventListener("pagehide", () => Auto.now());
 
 function markDirty() {
   dirty = true;
+  exPrewarm();
   Auto.soon();
   document.getElementById("dot").classList.add("on");
   const b = document.getElementById("saveBtn");
@@ -2690,12 +2920,7 @@ document.getElementById("capBtn").onclick = () => {
   setTimeout(openTelegram, 250);
 };
 document.getElementById("pngBtn").onclick = () => saveOne(cur);
-document.getElementById("allBtn").onclick = async () => {
-  // 텔레그램 인앱 웹뷰는 내려받기도 파일 공유도 막는다(사진이 빠진 채 글만 가기도 한다).
-  // 되는 길로 바로 간다 — 2026-09-24 규효: 공유에 이미지가 안 가고 전체 저장도 안 됨.
-  if (inTG()) { showGallery(await allBlobs(), "텔레그램 안에서는 내려받기가 막힙니다"); return; }
-  return canShareFiles() ? sharePhotos() : saveAll();
-};
+document.getElementById("allBtn").onclick = () => openExport(null);   // 기기별로 되는 길은 내보내기 판이 고른다
 document.getElementById("formClose").onclick = () => { document.getElementById("formBox").hidden = true; };
 document.getElementById("clearSample").onclick = () => document.getElementById("newBtn").click();
 
@@ -2703,8 +2928,8 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
 (async function start() {
   await bootAssets();
   await Store.init();
-  if (canShareFiles()) document.getElementById("allBtn").textContent = "전체 내보내기";
-  if (inTG()) document.getElementById("allBtn").textContent = "전체 이미지";
+  document.getElementById("allBtn").textContent = "전체 저장·공유";
+  document.getElementById("pngBtn").textContent = "이 장 저장";
   deck = sampleDeck();
   document.getElementById("deckName").value = deck.name;
   document.getElementById("catInput").value = deck.category;

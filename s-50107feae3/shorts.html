@@ -882,7 +882,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
@@ -931,7 +931,12 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     });
     document.body.appendChild(o);
   }
-  window.plotStudio = { on: on, send: send, sheet: sheet };
+  function post(rec) {                                   // 그림 한 장 같은 날 줄 (kind='studio_img')
+    var r = { draft_date: null, draft_key: null, source_id: rec.kind || '', verdict: {}, reason: '', rewrite: {}, device: '' };
+    Object.keys(rec).forEach(function (k) { r[k] = rec[k]; });
+    return req('plot_evals', { method: 'POST', body: JSON.stringify(r), prefer: 'resolution=merge-duplicates,return=minimal' });
+  }
+  window.plotStudio = { on: on, send: send, sheet: sheet, post: post };
 })();</script>
 
 <style id="plotGap">
@@ -3894,9 +3899,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.14 03:53';
+    a.title = '판 10.14 04:11';
     var ver = document.createElement('span');
-    ver.textContent = '10.14 03:53';
+    ver.textContent = '10.14 04:11';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
