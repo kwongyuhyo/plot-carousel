@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-14T04:09+09:00",
+ "generated_at": "2026-10-14T05:15+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 22.82,
+ "spent": 22.83,
  "today": 0.6,
- "per_day": 10.15,
- "calls": 4154,
+ "per_day": 9.91,
+ "calls": 4196,
  "by": [
   {
    "name": "process",
