@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-10-13T09:34+09:00",
+ "generated_at": "2026-10-13T10:39+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 18.43,
- "today": 1.24,
- "per_day": 13.34,
- "calls": 1975,
+ "spent": 18.48,
+ "today": 1.28,
+ "per_day": 12.84,
+ "calls": 1990,
  "by": [
   {
    "name": "process",
-   "usd": 6.81
+   "usd": 6.82
   },
   {
    "name": "초안 쓰기",
@@ -22,7 +22,7 @@
   },
   {
    "name": "편집장",
-   "usd": 1.05
+   "usd": 1.09
   },
   {
    "name": "criteria",
