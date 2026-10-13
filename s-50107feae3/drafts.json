@@ -2,7 +2,7 @@
  "schema": 1,
  "date": "2026-10-13",
  "generated_at": "2026-10-13 08:31 KST",
- "updated_at": "2026-10-13 20:18 KST",
+ "updated_at": "2026-10-13 22:06 KST",
  "items": [
   {
    "source": {
@@ -3160,6 +3160,32 @@
    "account": "ateez_official_",
    "entity": null,
    "why": "같은 사람 초안이 이미 있음"
+  },
+  {
+   "id": "yt_93j1fDGi_-8",
+   "account": "유튜브 · STUDIO CHOOM",
+   "entity": "A2O LITE",
+   "why": "편집장 C — 공급자 공개물 소개라 독자가 감정을 걸 사람이나 장면이 없고(MV 공개 0.16배와 같은 유형), 기준표도 "
+  },
+  {
+   "id": "news:AHOF(아홉):2026-10-13",
+   "account": "뉴스 급등",
+   "entity": "AHOF(아홉)",
+   "why": "같은 사람 초안이 오늘 이미 있음"
+  },
+  {
+   "id": "news:CLOSE YOUR EYES (클로즈 유어 아이즈):2026-10-13",
+   "account": "뉴스 급등",
+   "entity": "CLOSE YOUR EYES (클로즈 유어 아이즈)",
+   "why": "오늘 이미 많이 씀 — 7점 이상만 (5점)",
+   "sell": 5
+  },
+  {
+   "id": "profile:whereistrade:게시물 정리:2026-10-13",
+   "account": "whereistrade",
+   "entity": "트레이드엘",
+   "why": "셀링포인트 약함 (4점) — 발매 소식은 성과가 낮은 유형(0.16~0.26배)이지만, '첫 합작'과 지금 발매됐다는 시점을 한 줄로 말할 수 있어 올릴 수 있다. 다만 반",
+   "sell": 4
   }
  ],
  "corners": {
@@ -3257,7 +3283,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-13T20:18+09:00"
+  "at": "2026-10-13T22:06+09:00"
  },
  "slots": {
   "basis": 190,
