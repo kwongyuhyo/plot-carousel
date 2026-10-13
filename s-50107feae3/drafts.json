@@ -2,7 +2,7 @@
  "schema": 1,
  "date": "2026-10-13",
  "generated_at": "2026-10-13 08:31 KST",
- "updated_at": "2026-10-13 22:06 KST",
+ "updated_at": "2026-10-13 22:20 KST",
  "items": [
   {
    "source": {
@@ -2864,6 +2864,101 @@
    "captures": [],
    "corner": "news",
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "clip:VmD9lTsCNNA:162",
+    "account": "Rolling Stone",
+    "url": "https://www.youtube.com/watch?v=VmD9lTsCNNA",
+    "image": null,
+    "head": "Kevin Parker — \"\"It was in a bar in Seoul... I was actually DJing at like a Celi",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "clip"
+   },
+   "made_at": "2026-10-13T22:20+09:00",
+   "key": "fc68bba8",
+   "process": {
+    "event": {},
+    "sell": {}
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=VmD9lTsCNNA\n구간: 2:42-3:13\n곡: 케빈 파커 × 제니\n아티스트: 친구 좀 소개해줘요\n피처링:\n후킹: 키위 억양 되찾게\n출처: Rolling Stone",
+    "caption": "제니가 케빈 파커에게 뉴질랜드 친구를 소개해 달라며 키위 억양을 되찾고 싶다고 말했습니다.\n\n10월 13일 공개된 Rolling Stone의 〈Musicians on Musicians〉 영상에서 나온 대화입니다. 뉴질랜드 오클랜드에서 지낸 제니는 \"억양이 사라졌다\"며 아쉬워했는데요. 케빈 파커는 뉴질랜드 친구가 많다고 답했습니다.\n\n호주에서 나고 자란 케빈 파커는 외진 곳에서 살았던 경험을 자주 질문받는다며, 그다지 고립돼 느껴지지 않았다고 말했습니다.\n\n영상 출처: Rolling Stone\n\n#PLOT #케빈파커 #제니 #롤링스톤 #뮤지션온뮤지션",
+    "hooks": {
+     "A": "키위 억양 되찾게 / 친구 좀 소개해줘요 / 케빈 파커 × 제니",
+     "B": "제니, 뉴질랜드 억양이 / 사라졌다고 말했다 / 롤링스톤 대담",
+     "C": "호주 출신 케빈 파커 / 뉴질랜드서 자란 제니 / 억양 이야기가 오갔다"
+    },
+    "issues": [],
+    "gate": {
+     "pass": false,
+     "fails": [
+      "1 — 표지·캡션 첫 문장에 실명이 있으나 이 항목은 '예'가 맞음 (해당 없음). 실제 실패 항목은 아래",
+      "2 — 독자가 반응할 한 가지를 한 문장으로 말할 수 있는 요소가 표지(\"한 장면으로 남았다\", \"그날 밤의 기록\")에 명확히 드러나지 않음: 무엇에 반응하라는 것인지 불분명",
+      "4 — 캐러셀 표지 좌상단 태그는 Feature로 있으나 사진·영상 출처 칸(출처) 이 비어 있음",
+      "5 — 표지 문구 '그날 밤의 기록' 등이 2~3줄 구조로 정리되지 않았고 줄 구성이 확인되지 않음",
+      "6 — 캡션 첫 문장 '털어놓았습니다'는 발표형 종결이며 반응 상태·질문·반전·시점 최상급 중 어느 것도 없음",
+      "7 — '제니를 처음 만난 날의 기억' 등 확인되지 않은 서사를 단정 문장으로 서술함; 인터뷰 원문에서 확인되지 않은 '서울 지하 바 DJ 시절' 내용이 단정됨"
+     ],
+     "polished": true,
+     "lint": []
+    },
+    "confirm": [
+     "기사가 없어 아티스트 공식 영상만 근거로 썼습니다 — 사실 한 번 더 확인",
+     "아티스트 인스타 핸들 (@______)"
+    ],
+    "research": [
+     {
+      "title": "Rolling Stone — Kevin Parker & Jennie | Musicians on Musicians",
+      "link": "https://www.youtube.com/watch?v=VmD9lTsCNNA"
+     }
+    ],
+    "video": {
+     "url": "https://www.youtube.com/watch?v=VmD9lTsCNNA",
+     "title": "Kevin Parker & Jennie | Musicians on Musicians",
+     "credit": "Rolling Stone",
+     "range": [
+      162.0,
+      193.0
+     ],
+     "alts": [],
+     "note": "구간은 자막에서 고른 순간 — 앞뒤만 확인"
+    },
+    "trust": {
+     "grade": "보통",
+     "why": [
+      "공식 영상 근거"
+     ],
+     "checks": []
+    },
+    "thumb": "https://i.ytimg.com/vi/VmD9lTsCNNA/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791897709/tvz1aujduniok4uuznao.jpg",
+     "key": "VmD9lTsCNNA@162.0"
+    }
+   },
+   "editor": {
+    "grade": "A",
+    "kind": "갈등·반응",
+    "angle": "서울 지하 바에서 DJ하던 케빈 파커가 제니를 처음 만난 날, 두 사람이 이어진 순간을 본인 말 그대로 인용해 타임라인으로 정리",
+    "why": "기준표 +10에 관계·본인 한마디가 살아 있지만, 다른 매거진 5곳이 이미 다뤄 선점은 0이라 S는 아니고 인터뷰 번역 나열이 아니라 두 사람의 관계가 읽히는 장면 하나에 집중해야 함"
+   },
+   "subjects": [
+    "Kevin Parker"
+   ],
+   "lane": "클립",
+   "preempt": {
+    "score": 0,
+    "mags_3d": 5,
+    "plot_days": 46,
+    "hot": true,
+    "line": "다른 매거진 3일 안 5곳(billboard_korea, eyesmag, glowupmag, hip) · PLOT 46일 전 다룸 · 지금 뜸"
+   },
+   "captures": [],
+   "corner": "mal",
+   "corner_name": "그 말",
+   "corner_no": 2
   }
  ],
  "skipped": [
@@ -3224,7 +3319,7 @@
     "left": 3,
     "need_today": 1,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 2,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -3283,7 +3378,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-13T22:06+09:00"
+  "at": "2026-10-13T22:20+09:00"
  },
  "slots": {
   "basis": 190,

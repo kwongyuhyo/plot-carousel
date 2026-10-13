@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-13T20:11+09:00",
+ "generated_at": "2026-10-13T22:19+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 21.59,
- "today": 4.4,
- "per_day": 11.55,
- "calls": 3866,
+ "spent": 22.12,
+ "today": 4.93,
+ "per_day": 11.25,
+ "calls": 3935,
  "by": [
   {
    "name": "process",
-   "usd": 7.1
+   "usd": 7.26
   },
   {
    "name": "초안 쓰기",
-   "usd": 5.51
+   "usd": 5.73
   },
   {
    "name": "장부 전 (Console)",
@@ -22,7 +22,7 @@
   },
   {
    "name": "편집장",
-   "usd": 1.4
+   "usd": 1.52
   },
   {
    "name": "guided_writer",
@@ -34,7 +34,7 @@
   },
   {
    "name": "표지",
-   "usd": 0.63
+   "usd": 0.65
   },
   {
    "name": "criteria_audit",
@@ -50,7 +50,7 @@
   },
   {
    "name": "클립 고르기",
-   "usd": 0.15
+   "usd": 0.16
   },
   {
    "name": "sell_calib",
