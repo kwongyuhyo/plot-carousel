@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-13T18:27+09:00",
+ "generated_at": "2026-10-13T20:11+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 21.55,
- "today": 4.36,
- "per_day": 12.1,
- "calls": 3828,
+ "spent": 21.59,
+ "today": 4.4,
+ "per_day": 11.55,
+ "calls": 3866,
  "by": [
   {
    "name": "process",
@@ -22,7 +22,7 @@
   },
   {
    "name": "편집장",
-   "usd": 1.37
+   "usd": 1.4
   },
   {
    "name": "guided_writer",
