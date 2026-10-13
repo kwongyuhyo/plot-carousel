@@ -3696,7 +3696,7 @@ function askCaption() {
   const hook = (b.hook || '').trim();
   if (studioOn()) {
     toast('✍️ 맥이 캡션을 씁니다 — 30초~1분');
-    plotStudio.send('caption', { artist: artist, title: song, note: hook }).then(function (sn) {
+    plotStudio.send('caption', { artist: artist, title: song, note: hook, category: ((b.cat === '__custom__' ? b.custom : b.cat) || '').trim() }).then(function (sn) {
       plotStudio.sheet('✍️ 캡션 초안 — ' + (sn.note || ''), sn.caption || '');
     }).catch(function (e) { toast('캡션을 못 썼습니다 — ' + String(e && e.message || e).slice(0, 90)); });
     return;
@@ -3894,9 +3894,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.14 03:41';
+    a.title = '판 10.14 03:53';
     var ver = document.createElement('span');
-    ver.textContent = '10.14 03:41';
+    ver.textContent = '10.14 03:53';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
