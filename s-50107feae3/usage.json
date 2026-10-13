@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-14T05:15+09:00",
+ "generated_at": "2026-10-14T08:37+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 22.83,
- "today": 0.6,
- "per_day": 9.91,
- "calls": 4196,
+ "spent": 22.97,
+ "today": 0.75,
+ "per_day": 9.31,
+ "calls": 4367,
  "by": [
   {
    "name": "process",
@@ -49,12 +49,12 @@
    "usd": 0.17
   },
   {
-   "name": "클립 고르기",
-   "usd": 0.16
+   "name": "팩트체크",
+   "usd": 0.17
   },
   {
-   "name": "sell_calib",
-   "usd": 0.15
+   "name": "클립 고르기",
+   "usd": 0.17
   }
  ]
 }
