@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-14T00:38+09:00",
+ "generated_at": "2026-10-14T01:49+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 22.23,
- "today": 0.01,
- "per_day": 10.68,
- "calls": 4016,
+ "spent": 22.46,
+ "today": 0.23,
+ "per_day": 10.51,
+ "calls": 4065,
  "by": [
   {
    "name": "process",
@@ -26,7 +26,7 @@
   },
   {
    "name": "guided_writer",
-   "usd": 0.87
+   "usd": 1.03
   },
   {
    "name": "criteria",
@@ -42,7 +42,7 @@
   },
   {
    "name": "후속 기획",
-   "usd": 0.22
+   "usd": 0.27
   },
   {
    "name": "cover_read",
