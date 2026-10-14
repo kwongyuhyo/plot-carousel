@@ -331,6 +331,418 @@
    "corner": "news",
    "corner_name": "소식",
    "captures": []
+  },
+  {
+   "source": {
+    "id": "claude:tablo-jyp-noel",
+    "account": "TABLO 유튜브",
+    "url": "https://www.youtube.com/watch?v=4potEGJaZuI",
+    "image": null,
+    "head": "타블로, JYP 보이그룹 제안 거절 썰 — 그 그룹이 노을이었던 것 같다",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-14T09:24+09:00",
+   "key": "7594b746",
+   "by": "claude",
+   "subjects": [
+    "타블로",
+    "에픽하이"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "S",
+    "kind": "재미",
+    "angle": "거절한 아이돌 제안 — 본인 입으로 '천만다행'",
+    "why": "어제 공개된 본인 유튜브 · 실제 말이 웃김(4분 노래에 5초) · 인물 서사"
+   },
+   "added": "claude",
+   "added_at": "2026-10-14T09:24+09:00",
+   "corner": "mal",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n타블로가 대학 시절 JYP의 보이그룹 제안을 거절했던 이야기를 직접 꺼냈습니다.\n\n지난 13일 타블로(@blobyblo)는 자신의 유튜브 채널에 '타블로 JYP 아이돌로 데뷔할 뻔한 썰' 영상을 올렸습니다. 스탠퍼드대에 다니며 언더그라운드 힙합 그룹으로 활동하던 무렵, 어느 날 밤 국제전화가 걸려 왔고 상대는 \"JYP예요\"라며 \"만들고 있는 그룹에 같이 했으면 좋겠어요\"라고 했다고 합니다.\n\n타블로는 \"아이돌 같은 건 못 할 것 같아요, 저랑 안 맞아요\"라며 학업을 이유로 거절했습니다. 그리고 바로 다음에 나온 보이그룹을 보고, 그 그룹이 노을이었던 것 같다고 짐작했는데요.\n\n거절한 게 천만다행이라는 이유도 덧붙였습니다. 노을은 \"완전 보컬 그룹\"이라 \"래퍼가 뭘 할 자리가 전혀 없어요\"라며 \"4분짜리 노래에 저는 한 5초 나오겠죠\"라고 말했습니다.\n\nJYP가 당시 실제로 어떤 그룹을 준비하고 있었는지는 확인되지 않았습니다.\n\n#PLOT #타블로 #에픽하이 #JYP #노을\n\n[커버]\n소스: https://i.ibb.co/nGF6yqK/362762498ede.jpg\n제목: JYP 제안 거절한 타블로|\"노을이었던 것 같아요\"\n부제: 4분짜리 노래에 5초 나왔을 거라는 타블로\n출처:\n",
+    "caption": "타블로가 대학 시절 JYP의 보이그룹 제안을 거절했던 이야기를 직접 꺼냈습니다.\n\n지난 13일 타블로(@blobyblo)는 자신의 유튜브 채널에 '타블로 JYP 아이돌로 데뷔할 뻔한 썰' 영상을 올렸습니다. 스탠퍼드대에 다니며 언더그라운드 힙합 그룹으로 활동하던 무렵, 어느 날 밤 국제전화가 걸려 왔고 상대는 \"JYP예요\"라며 \"만들고 있는 그룹에 같이 했으면 좋겠어요\"라고 했다고 합니다.\n\n타블로는 \"아이돌 같은 건 못 할 것 같아요, 저랑 안 맞아요\"라며 학업을 이유로 거절했습니다. 그리고 바로 다음에 나온 보이그룹을 보고, 그 그룹이 노을이었던 것 같다고 짐작했는데요.\n\n거절한 게 천만다행이라는 이유도 덧붙였습니다. 노을은 \"완전 보컬 그룹\"이라 \"래퍼가 뭘 할 자리가 전혀 없어요\"라며 \"4분짜리 노래에 저는 한 5초 나오겠죠\"라고 말했습니다.\n\nJYP가 당시 실제로 어떤 그룹을 준비하고 있었는지는 확인되지 않았습니다.\n\n#PLOT #타블로 #에픽하이 #JYP #노을",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/nGF6yqK/362762498ede.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_h7a4tk1p/auto_pdb_에픽하이_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "JYP 제안 거절한 타블로|\"노을이었던 것 같아요\"",
+      "sub": "4분짜리 노래에 5초 나왔을 거라는 타블로"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "4분짜리 노래에|저는 5초 나오겠죠",
+      "sub": "JYP 제안을 거절한 타블로가 '천만다행'이라는 이유"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "스탠퍼드 시절 온 전화|타블로, JYP 거절",
+      "sub": "그 그룹은 노을이었던 것 같다고"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "영상 속 말은 한국어 자막 기준 — 원래 영어로 말했으면 자막 문장 그대로인지 한 번"
+    ],
+    "research": [
+     {
+      "title": "타블로 JYP 아이돌로 데뷔할 뻔한 썰 (TABLO 유튜브, 10/13)",
+      "link": "https://www.youtube.com/watch?v=4potEGJaZuI"
+     },
+     {
+      "title": "스타뉴스 — 타블로, JYP 아이돌 데뷔할 뻔했다",
+      "link": "https://www.starnewskorea.com/star/2026/10/13/2026101319483632165"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937500/y4eugmxtthlrxgbpdv2i.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937500/vhfwxay8tusvyl5odxeb.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937510/cp0wwcsqqxykd0um1nwq.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937510/makiwebwmi7zhcf3qm3s.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937500/y4eugmxtthlrxgbpdv2i.jpg"
+     },
+     "at": "2026-10-14T09:25+09:00",
+     "v": {
+      "A": "7deefa78",
+      "B": "95a042ae",
+      "C": "40fc8fb8"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=4potEGJaZuI\n구간: 18:38-19:19\n곡: 타블로의 JYP 썰\n아티스트: 저는 5초 나오겠죠\n피처링:\n후킹: 4분짜리 노래에\n출처: TABLO",
+    "caption": "타블로가 JYP 보이그룹 제안을 거절한 게 천만다행이라고 말했습니다.\n\n지난 13일 타블로(@blobyblo)는 유튜브에 대학 시절 JYP에서 \"만들고 있는 그룹에 같이 했으면 좋겠어요\"라는 전화를 받았던 이야기를 올렸습니다. 학업을 이유로 거절했고, 바로 다음에 나온 보이그룹이 노을이라 그 그룹이었던 것 같다고 짐작했습니다.\n\n노을은 \"완전 보컬 그룹\"이라 \"래퍼가 뭘 할 자리가 전혀 없어요\"라며 \"4분짜리 노래에 저는 한 5초 나오겠죠\"라고 했습니다.\n\n#PLOT #타블로 #에픽하이 #JYP #노을",
+    "hooks": {
+     "A": "4분짜리 노래에 / 저는 5초 나오겠죠 / 타블로의 JYP 썰",
+     "B": "JYP 제안 거절한 / 타블로가 / 천만다행이라는 이유",
+     "C": "거절해서 / 천만다행이에요 / 타블로 × 노을"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=4potEGJaZuI",
+     "credit": "TABLO",
+     "range": [
+      1118.0,
+      1159.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "영상 속 말은 한국어 자막 기준 — 원래 영어로 말했으면 자막 문장 그대로인지 한 번"
+    ],
+    "research": [
+     {
+      "title": "타블로 JYP 아이돌로 데뷔할 뻔한 썰 (TABLO 유튜브, 10/13)",
+      "link": "https://www.youtube.com/watch?v=4potEGJaZuI"
+     },
+     {
+      "title": "스타뉴스 — 타블로, JYP 아이돌 데뷔할 뻔했다",
+      "link": "https://www.starnewskorea.com/star/2026/10/13/2026101319483632165"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/4potEGJaZuI/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937516/zdf4cot0jjk9kazz3gc4.jpg",
+     "key": "4potEGJaZuI@1118.0"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "claude:ateez-san-salondrip",
+    "account": "TEO 테오 · 살롱드립 159회",
+    "url": "https://www.youtube.com/watch?v=PwvVfsgcnBs",
+    "image": null,
+    "head": "에이티즈 산, 살롱드립에서 밀라노 열애설 '성공하면 그런가 봐요'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-14T09:24+09:00",
+   "key": "aefcf68c",
+   "by": "claude",
+   "subjects": [
+    "에이티즈",
+    "ATEEZ",
+    "산"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "열애설 해명보다 '몰래 따라와 찍었다' — 본인 말",
+    "why": "어제 공개된 살롱드립 본편 · 실제 말 · 팬 반응 큰 그룹"
+   },
+   "added": "claude",
+   "added_at": "2026-10-14T09:24+09:00",
+   "corner": "mal",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n에이티즈 산이 밀라노 열애설을 두고 \"성공하면 그런가 봐요\"라고 말했습니다.\n\n지난 13일 공개된 웹예능 〈살롱드립〉 159회에 에이티즈(@ateez_official_) 산과 우영이 출연했습니다. 녹화 날 밀라노에서 막 돌아왔다는 산은 \"관계자분이랑 핸드폰 케이스 사러 가고 있는데 그게 찍혔더라고요\"라고 설명했습니다.\n\n\"못된 사람들이 또 몰래 따라와서 찍더라고요\"라는 말도 덧붙였는데요. 산은 앞서 팬 소통 플랫폼에서도 \"몰래 찍은 것도 잘못이고요. 범죄는 하지 맙시다\"라고 적은 바 있습니다.\n\n열애설은 지난달 밀라노 패션위크 일정 중 산이 한 여성과 걷는 사진과 영상이 퍼지며 불거졌습니다. 소속사 KQ엔터테인먼트는 이 여성이 현지 브랜드 관계자이며, 일정에 필요한 물품을 사러 가던 길이었다고 밝혔습니다.\n\n에이티즈는 11월 13일 [GOLDEN HOUR : Part.6]를 발매합니다.\n\n#PLOT #에이티즈 #ATEEZ #산 #살롱드립\n\n[커버]\n소스: https://i.ibb.co/pvZrNLqT/8bb7400bad26.jpg\n제목: 산의 밀라노 열애설 해명|\"성공하면 그런가 봐요\"\n부제: 못된 사람들이 몰래 따라와 찍었다는 산\n출처:\n",
+    "caption": "에이티즈 산이 밀라노 열애설을 두고 \"성공하면 그런가 봐요\"라고 말했습니다.\n\n지난 13일 공개된 웹예능 〈살롱드립〉 159회에 에이티즈(@ateez_official_) 산과 우영이 출연했습니다. 녹화 날 밀라노에서 막 돌아왔다는 산은 \"관계자분이랑 핸드폰 케이스 사러 가고 있는데 그게 찍혔더라고요\"라고 설명했습니다.\n\n\"못된 사람들이 또 몰래 따라와서 찍더라고요\"라는 말도 덧붙였는데요. 산은 앞서 팬 소통 플랫폼에서도 \"몰래 찍은 것도 잘못이고요. 범죄는 하지 맙시다\"라고 적은 바 있습니다.\n\n열애설은 지난달 밀라노 패션위크 일정 중 산이 한 여성과 걷는 사진과 영상이 퍼지며 불거졌습니다. 소속사 KQ엔터테인먼트는 이 여성이 현지 브랜드 관계자이며, 일정에 필요한 물품을 사러 가던 길이었다고 밝혔습니다.\n\n에이티즈는 11월 13일 [GOLDEN HOUR : Part.6]를 발매합니다.\n\n#PLOT #에이티즈 #ATEEZ #산 #살롱드립",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/pvZrNLqT/8bb7400bad26.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_p42su12o/auto_pdb_ateez_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "산의 밀라노 열애설 해명|\"성공하면 그런가 봐요\"",
+      "sub": "못된 사람들이 몰래 따라와 찍었다는 산"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "케이스 사러 가던 길|에이티즈 산의 열애설",
+      "sub": "산이 직접 밝힌 밀라노 사진의 진짜 사정"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "열애설 자체는 10/6 예고편부터 기사가 많이 나온 이야기 — 오늘 올릴지 판단"
+    ],
+    "research": [
+     {
+      "title": "살롱드립 EP.159 에이티즈 우영 산 (10/13)",
+      "link": "https://www.youtube.com/watch?v=PwvVfsgcnBs"
+     },
+     {
+      "title": "텐아시아 — 에이티즈 산, 女관계자와 뜬금 열애설…'못된 사람들이 몰래 따라와'",
+      "link": "https://www.tenasia.co.kr/article/2026101398034"
+     },
+     {
+      "title": "세계일보 — 에이티즈 산, 밀라노 열애설 직접 해명",
+      "link": "https://www.segye.com/newsView/20261014505162"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937524/nvntjlbnjdwstilgqy5j.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937524/bnwg6juhf9yjtxe5mpwz.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937531/y5h77wygwntjgkcg7yvd.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937524/nvntjlbnjdwstilgqy5j.jpg"
+     },
+     "at": "2026-10-14T09:25+09:00",
+     "v": {
+      "A": "f27d4328",
+      "B": "72010cba"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=PwvVfsgcnBs\n구간: 4:19-4:56\n곡: 에이티즈 산\n아티스트: 몰래 따라와 찍더라고요\n피처링:\n후킹: 못된 사람들이\n출처: TEO 테오",
+    "caption": "에이티즈 산이 밀라노 열애설을 두고 \"성공하면 그런가 봐요\"라고 말했습니다.\n\n지난 13일 공개된 〈살롱드립〉 159회에서 산은 \"관계자분이랑 핸드폰 케이스 사러 가고 있는데 그게 찍혔더라고요\"라며 \"못된 사람들이 또 몰래 따라와서 찍더라고요\"라고 설명했습니다.\n\n소속사 KQ엔터테인먼트도 앞서 사진 속 여성이 현지 브랜드 관계자라고 밝혔습니다. 에이티즈(@ateez_official_)는 11월 13일 [GOLDEN HOUR : Part.6]를 발매합니다.\n\n#PLOT #에이티즈 #ATEEZ #산 #살롱드립",
+    "hooks": {
+     "A": "못된 사람들이 / 몰래 따라와 찍더라고요 / 에이티즈 산",
+     "B": "밀라노 열애설 / 산의 해명은 / 성공하면 그런가 봐요",
+     "C": "성공하면 / 그런가 봐요 / 에이티즈 산"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=PwvVfsgcnBs",
+     "credit": "TEO 테오",
+     "range": [
+      259.0,
+      296.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "열애설 자체는 10/6 예고편부터 기사가 많이 나온 이야기 — 오늘 올릴지 판단"
+    ],
+    "research": [
+     {
+      "title": "살롱드립 EP.159 에이티즈 우영 산 (10/13)",
+      "link": "https://www.youtube.com/watch?v=PwvVfsgcnBs"
+     },
+     {
+      "title": "텐아시아 — 에이티즈 산, 女관계자와 뜬금 열애설…'못된 사람들이 몰래 따라와'",
+      "link": "https://www.tenasia.co.kr/article/2026101398034"
+     },
+     {
+      "title": "세계일보 — 에이티즈 산, 밀라노 열애설 직접 해명",
+      "link": "https://www.segye.com/newsView/20261014505162"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/PwvVfsgcnBs/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937537/et0no20jxmjocrmenw7q.jpg",
+     "key": "PwvVfsgcnBs@259.0"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:jennie-kevinparker-seoul",
+    "account": "Rolling Stone · Musicians on Musicians",
+    "url": "https://www.youtube.com/watch?v=VmD9lTsCNNA",
+    "image": null,
+    "head": "제니·케빈 파커, 서울의 한 바에서 처음 만나 [Dracula] 리믹스까지",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-14T09:24+09:00",
+   "key": "a0805684",
+   "by": "claude",
+   "subjects": [
+    "제니",
+    "JENNIE",
+    "테임 임팔라"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "[Dracula] 리믹스의 시작은 서울의 한 바",
+    "why": "롤링스톤 대담 · 한국 팬이 처음 듣는 서울 비하인드 · 해외 선점"
+   },
+   "added": "claude",
+   "added_at": "2026-10-14T09:24+09:00",
+   "corner": "spotlight",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n제니와 테임 임팔라 케빈 파커의 [Dracula] 리믹스는 서울의 한 바에서 시작됐습니다.\n\n제니(@jennierubyjane)와 케빈 파커(@tameimpala)는 롤링스톤 대담 〈Musicians on Musicians〉에서 처음 만난 날을 돌아봤습니다. 케빈 파커는 당시 셀린느에서 일하던 공통의 친구 피터의 행사에서 DJ를 하려고 며칠 서울에 와 있었다고 말했습니다. 늦은 밤, \"지하 식당 같은 바\"였다고 하는데요.\n\n리믹스는 그 뒤에 이어졌습니다. 케빈 파커가 친구에게 \"제니 목소리를 정말 좋아한다\"고 말하자 친구가 제니를 안다며 연결해 줬고, 제니는 문자를 받자마자 해야겠다고 생각했다고 밝혔습니다. 녹음은 서로 다른 도시에서 줌으로 했습니다.\n\n[Dracula] 리믹스는 올해 2월 발매돼 빌보드 글로벌 200 26위까지 올랐습니다.\n\n#PLOT #제니 #JENNIE #테임임팔라 #Dracula\n\n[커버]\n소스: https://i.ibb.co/Rpg3pLn2/9e4709dc5edc.jpg\n제목: 서울의 한 바에서 시작됐다|제니 × 테임 임팔라\n부제: [Dracula] 리믹스, 롤링스톤 대담에서 꺼낸 첫 만남\n출처:\n",
+    "caption": "제니와 테임 임팔라 케빈 파커의 [Dracula] 리믹스는 서울의 한 바에서 시작됐습니다.\n\n제니(@jennierubyjane)와 케빈 파커(@tameimpala)는 롤링스톤 대담 〈Musicians on Musicians〉에서 처음 만난 날을 돌아봤습니다. 케빈 파커는 당시 셀린느에서 일하던 공통의 친구 피터의 행사에서 DJ를 하려고 며칠 서울에 와 있었다고 말했습니다. 늦은 밤, \"지하 식당 같은 바\"였다고 하는데요.\n\n리믹스는 그 뒤에 이어졌습니다. 케빈 파커가 친구에게 \"제니 목소리를 정말 좋아한다\"고 말하자 친구가 제니를 안다며 연결해 줬고, 제니는 문자를 받자마자 해야겠다고 생각했다고 밝혔습니다. 녹음은 서로 다른 도시에서 줌으로 했습니다.\n\n[Dracula] 리믹스는 올해 2월 발매돼 빌보드 글로벌 200 26위까지 올랐습니다.\n\n#PLOT #제니 #JENNIE #테임임팔라 #Dracula",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/Rpg3pLn2/9e4709dc5edc.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_jwzddbs0/auto_pdb_제니_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "서울의 한 바에서 시작됐다|제니 × 테임 임팔라",
+      "sub": "[Dracula] 리믹스, 롤링스톤 대담에서 꺼낸 첫 만남"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "제니 목소리가 좋다는 말|그날 바로 문자가 갔다",
+      "sub": "케빈 파커가 밝힌 [Dracula] 리믹스의 시작"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "누가 한 말인지는 자동 영어 자막으로 갈랐습니다 — 'DJ 하러 서울에 며칠' 은 케빈 파커, '문자 받자마자' 는 제니로 봤으니 영상으로 한 번",
+     "숏폼은 영어 대화라 한국어 자막이 필요합니다"
+    ],
+    "research": [
+     {
+      "title": "Kevin Parker & Jennie | Musicians on Musicians (Rolling Stone)",
+      "link": "https://www.youtube.com/watch?v=VmD9lTsCNNA"
+     },
+     {
+      "title": "Rolling Stone — How Jennie and Kevin Parker's Chance Encounter Led to One of the Year's Biggest Hits",
+      "link": "https://www.rollingstone.com/music/music-features/jennie-kevin-parker-musicians-on-musicians-interview-1235635921/"
+     },
+     {
+      "title": "Dracula (Tame Impala song) — 리믹스 2026.2.6 발매 · 빌보드 글로벌 200 26위",
+      "link": "https://en.wikipedia.org/wiki/Dracula_(Tame_Impala_song)"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937544/hkfpssrlipbwtlhn5efk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937543/zcbktiqmu6t6zv49buzb.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937550/q61fuu9udozexbe7onuh.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937544/hkfpssrlipbwtlhn5efk.jpg"
+     },
+     "at": "2026-10-14T09:25+09:00",
+     "v": {
+      "A": "37292fd5",
+      "B": "ae081a59"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=VmD9lTsCNNA\n구간: 2:42-3:24\n곡: 제니 × 케빈 파커\n아티스트: 아주 우연히 만났죠\n피처링:\n후킹: 서울의 한 바에서\n출처: Rolling Stone",
+    "caption": "제니와 케빈 파커의 [Dracula] 리믹스는 서울의 한 바에서 시작됐습니다.\n\n롤링스톤 대담 〈Musicians on Musicians〉에서 케빈 파커(@tameimpala)는 공통의 친구 피터의 셀린느 행사에서 DJ를 하려고 서울에 며칠 와 있다가 제니(@jennierubyjane)를 만났다고 돌아봤습니다. 친구에게 \"제니 목소리를 정말 좋아한다\"고 말한 게 연결의 시작이었습니다.\n\n리믹스는 올해 2월 발매돼 빌보드 글로벌 200 26위까지 올랐습니다.\n\n#PLOT #제니 #JENNIE #테임임팔라 #Dracula",
+    "hooks": {
+     "A": "서울의 한 바에서 / 아주 우연히 만났죠 / 제니 × 케빈 파커",
+     "B": "테임 임팔라 리믹스 / 시작은 서울의 / 늦은 밤 바였다",
+     "C": "제니 목소리를 / 정말 좋아해요 / 케빈 파커의 그날 밤"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=VmD9lTsCNNA",
+     "credit": "Rolling Stone",
+     "range": [
+      162.0,
+      204.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "누가 한 말인지는 자동 영어 자막으로 갈랐습니다 — 'DJ 하러 서울에 며칠' 은 케빈 파커, '문자 받자마자' 는 제니로 봤으니 영상으로 한 번",
+     "숏폼은 영어 대화라 한국어 자막이 필요합니다"
+    ],
+    "research": [
+     {
+      "title": "Kevin Parker & Jennie | Musicians on Musicians (Rolling Stone)",
+      "link": "https://www.youtube.com/watch?v=VmD9lTsCNNA"
+     },
+     {
+      "title": "Rolling Stone — How Jennie and Kevin Parker's Chance Encounter Led to One of the Year's Biggest Hits",
+      "link": "https://www.rollingstone.com/music/music-features/jennie-kevin-parker-musicians-on-musicians-interview-1235635921/"
+     },
+     {
+      "title": "Dracula (Tame Impala song) — 리믹스 2026.2.6 발매 · 빌보드 글로벌 200 26위",
+      "link": "https://en.wikipedia.org/wiki/Dracula_(Tame_Impala_song)"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/VmD9lTsCNNA/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791937559/zqjwcglyvqh2ohgmxyfa.jpg",
+     "key": "VmD9lTsCNNA@162.0"
+    }
+   },
+   "corner_name": "SPOTLIGHT",
+   "corner_no": 1
   }
  ],
  "skipped": [
@@ -377,7 +789,7 @@
     "left": 3,
     "need_today": 1,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 2,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -388,7 +800,7 @@
     "left": 2,
     "need_today": 1,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "해외 매체가 먼저 다룬 한국 아티스트 — 선점"
    },
    {
@@ -436,7 +848,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-14T08:38+09:00"
+  "at": "2026-10-14T09:24+09:00"
  },
  "slots": {
   "basis": 190,
