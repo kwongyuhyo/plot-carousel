@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-10-14T08:37+09:00",
+ "generated_at": "2026-10-14T09:43+09:00",
  "cycle_start": "2026-09-15",
  "next_credit": "2026-10-15",
  "credit": 100.0,
- "spent": 22.97,
- "today": 0.75,
- "per_day": 9.31,
- "calls": 4367,
+ "spent": 23.31,
+ "today": 1.09,
+ "per_day": 9.26,
+ "calls": 4425,
  "by": [
   {
    "name": "process",
-   "usd": 7.26
+   "usd": 7.31
   },
   {
    "name": "초안 쓰기",
-   "usd": 5.9
+   "usd": 5.99
   },
   {
    "name": "장부 전 (Console)",
@@ -22,15 +22,15 @@
   },
   {
    "name": "편집장",
-   "usd": 1.55
+   "usd": 1.7
   },
   {
    "name": "guided_writer",
-   "usd": 1.03
+   "usd": 1.07
   },
   {
    "name": "criteria",
-   "usd": 0.74
+   "usd": 0.75
   },
   {
    "name": "표지",
