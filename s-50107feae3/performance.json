@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-13 22:06 KST",
+ "generated_at": "2026-10-14 15:07 KST",
  "weeks": [
   {
    "week": "2026-W30",
@@ -1340,10 +1340,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-13 20:18 KST"
+  "daily": "2026-10-13 22:08 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-13T22:06:14+09:00",
+  "fetched_at": "2026-10-14T15:07:47+09:00",
   "posts": [
    {
     "t": "2026-10-09T19:45+09:00",
@@ -1434,12 +1434,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 47,
+  "drafts": 53,
   "posted": 0,
-  "posts": 35,
+  "posts": 33,
   "rate": 0.0,
   "adopted_mult": null,
-  "own_mult": 0.78,
+  "own_mult": 0.97,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1447,17 +1447,17 @@
     "mult": null
    },
    "재미": {
-    "drafts": 5,
+    "drafts": 7,
     "posted": 0,
     "mult": null
    },
    "정보": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 0,
     "mult": null
    },
    "클립": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 0,
     "mult": null
    },
@@ -1467,7 +1467,7 @@
     "mult": null
    },
    "오늘의 노래": {
-    "drafts": 1,
+    "drafts": 2,
     "posted": 0,
     "mult": null
    },
@@ -1485,16 +1485,21 @@
     "drafts": 1,
     "posted": 0,
     "mult": null
+   },
+   "요청": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
    }
   },
   "corners": {
    "news": {
-    "drafts": 34,
+    "drafts": 35,
     "posted": 0,
     "mult": null
    },
    "mal": {
-    "drafts": 5,
+    "drafts": 8,
     "posted": 0,
     "mult": null
    },
@@ -1504,7 +1509,7 @@
     "mult": null
    },
    "song": {
-    "drafts": 1,
+    "drafts": 2,
     "posted": 0,
     "mult": null
    },
@@ -1519,7 +1524,7 @@
     "mult": null
    },
    "spotlight": {
-    "drafts": 3,
+    "drafts": 4,
     "posted": 0,
     "mult": null
    }
