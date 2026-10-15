@@ -1,60 +1,40 @@
 {
- "generated_at": "2026-10-14T16:18+09:00",
- "cycle_start": "2026-09-15",
- "next_credit": "2026-10-15",
+ "generated_at": "2026-10-15T20:37+09:00",
+ "cycle_start": "2026-10-15",
+ "next_credit": "2026-11-15",
  "credit": 100.0,
- "spent": 23.35,
- "today": 1.13,
- "per_day": 8.21,
- "calls": 4629,
+ "spent": 0.27,
+ "today": 0.27,
+ "per_day": 0.27,
+ "calls": 568,
  "by": [
   {
-   "name": "process",
-   "usd": 7.31
-  },
-  {
-   "name": "초안 쓰기",
-   "usd": 5.99
-  },
-  {
-   "name": "장부 전 (Console)",
-   "usd": 3.88
-  },
-  {
-   "name": "편집장",
-   "usd": 1.7
-  },
-  {
-   "name": "guided_writer",
-   "usd": 1.07
-  },
-  {
-   "name": "criteria",
-   "usd": 0.75
-  },
-  {
-   "name": "표지",
-   "usd": 0.65
-  },
-  {
-   "name": "criteria_audit",
-   "usd": 0.38
-  },
-  {
    "name": "후속 기획",
-   "usd": 0.38
+   "usd": 0.14
+  },
+  {
+   "name": "사진 DB",
+   "usd": 0.06
   },
   {
    "name": "클립 고르기",
-   "usd": 0.18
+   "usd": 0.03
   },
   {
-   "name": "cover_read",
-   "usd": 0.17
+   "name": "naver_music",
+   "usd": 0.03
   },
   {
-   "name": "팩트체크",
-   "usd": 0.17
+   "name": "SPOTLIGHT",
+   "usd": 0.0
+  },
+  {
+   "name": "봇",
+   "usd": 0.0
+  },
+  {
+   "name": "사진 찾기",
+   "usd": 0.0
   }
  ]
 }
