@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-14 15:07 KST",
+ "generated_at": "2026-10-15 19:07 KST",
  "weeks": [
   {
    "week": "2026-W30",
@@ -81,13 +81,13 @@
   },
   {
    "week": "2026-W42",
-   "posts": 5,
-   "reach": 40852,
-   "saved": 44,
-   "shares": 481,
-   "followers": 3086,
-   "followers_delta": 37,
-   "reach_total": 767410,
+   "posts": 2,
+   "reach": 45409,
+   "saved": 43,
+   "shares": 1203,
+   "followers": 3122,
+   "followers_delta": 73,
+   "reach_total": 807899,
    "top": "https://www.instagram.com/p/DeRU1FID52k/"
   }
  ],
@@ -96,28 +96,28 @@
    "kind": "인물해부",
    "n": 30,
    "weeks": 8,
-   "multiple": 3.14,
-   "low": 2.22,
-   "high": 3.55,
+   "multiple": 2.85,
+   "low": 1.62,
+   "high": 3.24,
    "stable": true
   },
   {
    "kind": "기타",
-   "n": 59,
+   "n": 57,
    "weeks": 9,
    "multiple": 1.03,
-   "low": 1.0,
+   "low": 0.99,
    "high": 1.08,
    "stable": false
   },
   {
    "kind": "발매·신보",
-   "n": 30,
-   "weeks": 9,
+   "n": 29,
+   "weeks": 8,
    "multiple": 0.92,
-   "low": 0.77,
-   "high": 0.98,
-   "stable": true
+   "low": 0.78,
+   "high": 1.03,
+   "stable": false
   },
   {
    "kind": "갈등·반응",
@@ -274,39 +274,18 @@
  ],
  "published": [
   {
-   "id": "DeJdFutD-1r",
-   "week": "2026-W42",
-   "kind": "기타",
-   "reach": 9718,
-   "head": "노윤하의 인스타그램 이름이 바뀌었습니다.\n\n지금 인스타그램에서 '노윤하'를 검색하면 '꼼질꼼질 오고쌌노'라는 이름으로 뜨는데요. 정작 본인도 브"
-  },
-  {
-   "id": "DeJlFsKPQ9E",
-   "week": "2026-W42",
-   "kind": "발매·신보",
-   "reach": 869,
-   "head": "[NEW RELEASE] Kid Milli, TRADE L- 합작 앨범 'SINS'\n\n래퍼 Kid Milli와 TRADE L이 첫 합작 앨범 '"
-  },
-  {
-   "id": "DeJuFDTvkdr",
-   "week": "2026-W42",
-   "kind": "기타",
-   "reach": 1664,
-   "head": "로얄44가 설거지를 미뤘습니다.\n\n유튜브 채널 '로얄왕국'에서, 로얄44가 설거지 안 하냐는 말에 \"좋아하지 않아요\" 한마디로 넘어갔고, 그릇을"
-  },
-  {
-   "id": "DeJuVbrvzgC",
-   "week": "2026-W42",
-   "kind": "기타",
-   "reach": 1107,
-   "head": "스윙스가 쇼핑을 갔습니다.\n\n유튜브 채널 '에겐남 스윙스'에서, 스윙스(@itsjustswings)는 옷을 걸쳐보자마자 \"이거 결제해주세요\"라고"
-  },
-  {
    "id": "DeRU1FID52k",
    "week": "2026-W42",
    "kind": "인물해부",
-   "reach": 27494,
+   "reach": 29827,
    "head": "스윙스가 인디고의 새 멤버를 예고했습니다.\n\n스윙스(@itsjustswings)가 인스타그램 스토리를 통해 오는 10월 16일 생일파티에서 인디"
+  },
+  {
+   "id": "DeeX3wPj0ok",
+   "week": "2026-W42",
+   "kind": "기타",
+   "reach": 15582,
+   "head": "빅나티(본명 서동현)가 10월 14일 팬들과의 단체 메시지방에서 직접 결혼 소식을 전했습니다.\n\n상대는 곡 [Vancouver]의 주인공입니다."
   },
   {
    "id": "DeEW4Kvj0IX",
@@ -1340,11 +1319,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-13 22:08 KST"
+  "daily": "2026-10-15 15:07 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-14T15:07:47+09:00",
+  "fetched_at": "2026-10-15T19:07:30+09:00",
   "posts": [
+   {
+    "t": "2026-10-14T21:22+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "빅나티(본명 서동현)가 10월 14일 팬들과의 단체 메시지방에서 직접 결"
+   },
    {
     "t": "2026-10-09T19:45+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1434,12 +1418,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 53,
+  "drafts": 56,
   "posted": 0,
-  "posts": 33,
+  "posts": 31,
   "rate": 0.0,
   "adopted_mult": null,
-  "own_mult": 0.97,
+  "own_mult": 1.0,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1452,12 +1436,12 @@
     "mult": null
    },
    "정보": {
-    "drafts": 29,
+    "drafts": 31,
     "posted": 0,
     "mult": null
    },
    "클립": {
-    "drafts": 6,
+    "drafts": 7,
     "posted": 0,
     "mult": null
    },
@@ -1494,12 +1478,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 35,
+    "drafts": 36,
     "posted": 0,
     "mult": null
    },
    "mal": {
-    "drafts": 8,
+    "drafts": 9,
     "posted": 0,
     "mult": null
    },
@@ -1509,7 +1493,7 @@
     "mult": null
    },
    "song": {
-    "drafts": 2,
+    "drafts": 3,
     "posted": 0,
     "mult": null
    },
