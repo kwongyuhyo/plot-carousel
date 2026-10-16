@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-16T08:38+09:00",
+ "generated_at": "2026-10-16T18:14+09:00",
  "cycle_start": "2026-10-15",
  "next_credit": "2026-11-15",
  "credit": 100.0,
- "spent": 0.47,
- "today": 0.2,
- "per_day": 0.35,
- "calls": 659,
+ "spent": 0.5,
+ "today": 0.22,
+ "per_day": 0.29,
+ "calls": 720,
  "by": [
   {
    "name": "후속 기획",
@@ -17,16 +17,16 @@
    "usd": 0.06
   },
   {
+   "name": "클립 고르기",
+   "usd": 0.06
+  },
+  {
    "name": "naver_music",
    "usd": 0.06
   },
   {
-   "name": "클립 고르기",
-   "usd": 0.05
-  },
-  {
    "name": "SPOTLIGHT",
-   "usd": 0.01
+   "usd": 0.02
   },
   {
    "name": "봇",
