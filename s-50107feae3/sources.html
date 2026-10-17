@@ -612,6 +612,7 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .ig .med.gone{aspect-ratio:4/5; display:flex; align-items:center; justify-content:center; background:var(--panel); padding:28px; box-sizing:border-box}
 .ig .med.gone .alt{display:block; font-size:16px; font-weight:700; line-height:1.55; color:var(--text); text-align:center; white-space:pre-wrap}
 .ig .med.gone .one{display:none}
+.drAfter{margin-top:28px}
 </style>
 
 <link rel="manifest" href="manifest.webmanifest">
@@ -2227,7 +2228,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var cap = captionOf(it, 'card');
     return '<article class="ig">' + postHead(it, 'card', cd) + media +
       '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글" data-cmt="d:' + i + '">' + IC.chat +
-      '</button><button aria-label="공유" data-share="' + i + ':card">' + IC.send + '</button><span class="sp"></span><button aria-label="저장">' + IC.save + '</button></div>' +
+      '</button><button aria-label="공유" data-share="' + i + ':card">' + IC.send + '</button><span class="sp"></span><button aria-label="저장" data-save="' + i + ':card">' + IC.save + '</button></div>' +
       cov + '<div class="igc cl" data-cap><b>plot_music</b> ' + esc(cap) + '</div>' +
       (cap.length > 60 ? '<button class="more" data-morecap>더 보기</button>' : '') + pubMark(it) + evBar(it, i) + postInfo(it, cd) + '</article>';
   }
@@ -2930,7 +2931,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   var DR_SORT = (function () { try { return localStorage.getItem('plot.drsort') || 'made'; } catch (e) { return 'made'; } })();
   function feedOrder(items) {
     var idx = items.map(function (_, i) { return i; });
-    if (DR_SORT !== 'pub') return idx;
+    // 10/17 규효 "초안 생성한게 너무 밑에 떠" — 쓴 순서는 새로 쓴 것이 맨 위 (같은 회차 안에서는 쓴 차례대로)
+    var at = function (it) { return String(it.added_at || it.made_at || ''); };
+    if (DR_SORT !== 'pub') return idx.sort(function (a, b) { return at(items[b]).localeCompare(at(items[a])) || a - b; });
     var need = {};
     ((DR && DR.corners && DR.corners.corners) || []).forEach(function (c) { need[c.key] = Number(c.need_today || c.left || 0); });
     var g = function (it) { return { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] != null ? { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] : 2.5; };
@@ -2943,7 +2946,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function sortBar() {
     return '<div class="srt"><button data-sort="made" aria-pressed="' + (DR_SORT !== 'pub') + '">쓴 순서</button>' +
       '<button data-sort="pub" aria-pressed="' + (DR_SORT === 'pub') + '">올릴 순서</button>' +
-      '<span>' + (DR_SORT === 'pub' ? '편집장 등급 → 이번 주 급한 코너 순' : '맥이 쓴 차례 (갈래별)') + '</span></div>';
+      '<span>' + (DR_SORT === 'pub' ? '편집장 등급 → 이번 주 급한 코너 순' : '새로 쓴 것이 위') + '</span></div>';
   }
   function catRow(items) {
     var order = [], cnt = {}, th = {};
@@ -3018,7 +3021,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         Math.ceil((vd.range || [0, 0])[1] || 0) + '"' : '') + '>' + frame +
       (ytId(vd.url) ? '<button class="pl" data-play aria-label="여기서 재생">' + IC.play + '</button>' : '') + '</div>' +
       '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글" data-cmt="d:' + i + '">' + IC.chat +
-      '</button><button aria-label="공유" data-share="' + i + ':shorts">' + IC.send + '</button><span class="sp"></span><button aria-label="저장">' + IC.save + '</button></div>' +
+      '</button><button aria-label="공유" data-share="' + i + ':shorts">' + IC.send + '</button><span class="sp"></span><button aria-label="저장" data-save="' + i + ':shorts">' + IC.save + '</button></div>' +
       '<div class="igc cl" data-cap><b>plot_music</b> ' + esc(cap) + '</div>' +
       (cap.length > 60 ? '<button class="more" data-morecap>더 보기</button>' : '') + evBar(it, i) + postInfo(it, sh) + '</article>';
   }
@@ -3085,6 +3088,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     });
     if (!h) h = '<div class="drEmpty">이 카테고리엔 초안이 없습니다.</div>';
     host.insertAdjacentHTML('beforeend', h);
+    feedOrder(items).forEach(function (i) { if (((items[i].card || {}).preview || {}).slides) prefetchSlides(items[i]); });   // 저장·인스타 버튼이 바로 되게
     var hon = host.querySelector('.hl button.on');
     if (hon) hon.parentNode.scrollLeft = Math.max(0, hon.offsetLeft - hon.parentNode.offsetLeft - 40);
     sfInit(host);
@@ -3126,6 +3130,29 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     }
     if (it.__pf && it.__pf.files === null) toast('이미지를 받는 중입니다 — 잠시 뒤 다시 눌러 주세요');
     else slideViewer(sl);
+  }
+  /* 10/17 규효 "사진 다운 안 됨" — 저장(🔖)을 누르면 미리보기 장들을 기기에 저장한다.
+     폰: 공유 시트(이미지 저장) · 컴퓨터: 파일로 내려받기 · 둘 다 안 되면 길게 눌러 저장하는 화면 */
+  function saveSlides(it) {
+    var sl = slidesOf(it);
+    if (!sl.length) { toast('아직 미리보기 이미지가 없습니다 — 캐러셀 스튜디오에서 열어 주세요'); return; }
+    var pf = it.__pf && it.__pf.key === sl.join('|') && it.__pf.files;
+    if (pf && navigator.canShare && navigator.canShare({ files: pf })) {
+      navigator.share({ files: pf }).catch(function (e) { if (!e || e.name !== 'AbortError') slideViewer(sl); });
+      return;
+    }
+    if (pf && !/iPhone|iPad|Android/i.test(navigator.userAgent)) {
+      pf.forEach(function (f, j) {
+        var u = URL.createObjectURL(f), a = document.createElement('a');
+        a.href = u; a.download = 'plot_' + (j + 1) + '.jpg'; document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
+      });
+      toast(pf.length + '장을 내려받았습니다');
+      return;
+    }
+    if (it.__pf && it.__pf.files === null) { toast('이미지를 받는 중입니다 — 잠시 뒤 다시 눌러 주세요'); return; }
+    prefetchSlides(it);
+    slideViewer(sl);
   }
   function openSheet(i, kind) {
     var it = (DR && DR.items || [])[i]; if (!it) return;
@@ -3473,10 +3500,12 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var modeBar = '<div class="vmode"><button data-vmode="feed" aria-pressed="' + (mode === 'feed') + '">피드로 보기</button>' +
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
-      host.innerHTML = usageBox() + reqBox() + orderBox() + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + modeBar + catRow(items) + sortBar() +
+      // 10/17 — 초안 피드를 위로: 서사형·평가 노트·발행 현황·편성은 피드 아래로 내린다
+      host.innerHTML = usageBox() + reqBox() + orderBox() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
+      host.insertAdjacentHTML('beforeend', '<div class="drAfter">' + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + '</div>');
       return;
     }
     host.innerHTML = reqBox() + orderBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
@@ -3544,6 +3573,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (vm) { try { localStorage.setItem(DR_VIEW, vm.getAttribute('data-vmode')); } catch (x) {} renderDrafts(); return; }
     var shb = e.target.closest('[data-share]');
     if (shb) { var sp = shb.getAttribute('data-share').split(':'); openSheet(Number(sp[0]), sp[1]); return; }
+    var svb = e.target.closest('[data-save]');
+    if (svb) { var sv = svb.getAttribute('data-save').split(':'), sit = (DR.items || [])[Number(sv[0])];
+      if (sit && sv[1] === 'card') saveSlides(sit);
+      else if (sit) toast('숏폼은 영상이라 저장할 이미지가 없습니다 — 숏폼 제작 화면에서 만들어 주세요');
+      return; }
     var evq = e.target.closest('[data-evq]');
     if (evq) { var q1 = evq.getAttribute('data-evq').split(':'); evQuick((DR.items || [])[Number(q1[0])], Number(q1[0]), q1[1]);
       if (q1[1] !== 'now') cmtOpen('d', q1[0]); return; }
@@ -3647,9 +3681,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.17 17:10';
+    a.title = '판 10.17 18:15';
     var ver = document.createElement('span');
-    ver.textContent = '10.17 17:10';
+    ver.textContent = '10.17 18:15';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
