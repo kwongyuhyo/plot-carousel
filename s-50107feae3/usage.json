@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-17T09:04+09:00",
+ "generated_at": "2026-10-17T12:12+09:00",
  "cycle_start": "2026-10-15",
  "next_credit": "2026-11-15",
  "credit": 100.0,
  "spent": 1.72,
  "today": 0.85,
- "per_day": 0.73,
- "calls": 884,
+ "per_day": 0.7,
+ "calls": 886,
  "by": [
   {
    "name": "팩트체크",
@@ -21,11 +21,11 @@
    "usd": 0.16
   },
   {
-   "name": "guided_writer",
+   "name": "클립 고르기",
    "usd": 0.12
   },
   {
-   "name": "클립 고르기",
+   "name": "guided_writer",
    "usd": 0.12
   },
   {
