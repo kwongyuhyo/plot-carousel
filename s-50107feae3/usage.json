@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-17T12:12+09:00",
+ "generated_at": "2026-10-17T14:19+09:00",
  "cycle_start": "2026-10-15",
  "next_credit": "2026-11-15",
  "credit": 100.0,
- "spent": 1.72,
- "today": 0.85,
- "per_day": 0.7,
- "calls": 886,
+ "spent": 1.92,
+ "today": 1.05,
+ "per_day": 0.75,
+ "calls": 916,
  "by": [
   {
    "name": "팩트체크",
@@ -18,14 +18,14 @@
   },
   {
    "name": "초안 쓰기",
+   "usd": 0.28
+  },
+  {
+   "name": "guided_writer",
    "usd": 0.16
   },
   {
    "name": "클립 고르기",
-   "usd": 0.12
-  },
-  {
-   "name": "guided_writer",
    "usd": 0.12
   },
   {
@@ -42,15 +42,15 @@
   },
   {
    "name": "process",
+   "usd": 0.05
+  },
+  {
+   "name": "표지",
    "usd": 0.04
   },
   {
    "name": "SPOTLIGHT",
-   "usd": 0.03
-  },
-  {
-   "name": "표지",
-   "usd": 0.02
+   "usd": 0.04
   },
   {
    "name": "봇",
