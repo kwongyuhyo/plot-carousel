@@ -860,6 +860,154 @@
     "format": "요청"
    },
    "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "order:1792211506812",
+    "account": "규효 요청",
+    "url": "https://www.melon.com/search/total/index.htm?q=주혜린",
+    "image": null,
+    "head": "[규효가 고른 소재] 주혜린 신곡 발매",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "plan"
+   },
+   "made_at": "2026-10-17T14:38+09:00",
+   "key": "e62a24df",
+   "process": {
+    "event": {
+     "who": "주혜린",
+     "others": [],
+     "what": "주혜린이 싱글·앨범 『Good For Me (これでいい)』를 멜론을 통해 발매했다.",
+     "when": "2026년 10월 15일",
+     "new_fact": "주혜린의 『Good For Me (これでいい)』 발매 사실 (발매일 2026년 10월 15일, 발매처 멜론)",
+     "relation": "",
+     "reaction": "",
+     "quotes": [],
+     "timeline": [
+      "2026-10-15 — 『Good For Me (これでいい)』 발매 (멜론)"
+     ],
+     "kind": "발매·신보",
+     "reading": "발매 정보가 멜론 검색으로만 확인된 신보라, 음원 공개 자체가 화제성의 출발점이 된다.",
+     "gaps": [
+      "발매 형태(싱글/앨범 구분), 수록곡, 제작·참여진, 발매 배경에 대한 정보는 메모에 없어 확인 불가",
+      "반응·평가·인터뷰 등 사후 반응 자료가 없음",
+      "확인 근거가 멜론 검색 결과 하나뿐이므로 발매 정보의 최종 교차 확인이 필요함"
+     ]
+    },
+    "sell": {
+     "score": 2,
+     "go": false,
+     "pre": true,
+     "core": "주혜린이 신곡 『Good For Me (これでいい)』를 멜론으로 발매했다.",
+     "format": "both",
+     "why": "(거름막) 사람과 발매일은 있으나 공급자 발표(발매)뿐이고, 관계·반응·장면·인터뷰가 없어 PLOT 성공 모델의 '공급자 발표만 있는 소재'에 해당한다."
+    }
+   },
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n주혜린이 신곡 『Good For Me (これでいい)』를 멜론에 발매했습니다.\n\n발매일은 2026년 10월 15일입니다. 이 곡은 멜론을 통해 공개됐으며, 레이블과 유통사 등 발매처는 확인되지 않았습니다.\n\n#PLOT #주혜린 #GoodForMe #これでいい #멜론 #신곡\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791901628/lanagaywpsebqbqzrdkd.jpg\n제목: 10월 15일 멜론에서|주혜린 신곡 발매\n부제: 제목에 일본어 'これでいい'를 함께 적었습니다\n출처: 멜론",
+    "caption": "주혜린이 10월 15일 멜론을 통해 『Good For Me (これでいい)』를 발매했습니다.\n\n제목 뒤에는 일본어 'これでいい'가 함께 적혀 있습니다. 한국어로는 '이걸로 됐다'에 해당하는 말입니다.\n\n발매일은 2026년 10월 15일, 발매처는 멜론입니다. 지금 멜론에서 들을 수 있습니다.\n#PLOT #주혜린 #GoodForMe #これでいい #멜론",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791901628/lanagaywpsebqbqzrdkd.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/120/44/651/12044651_20250813150630.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "단신",
+    "facts_fixed": [
+     "[캡션] 지어냄: \"최근 활동 흐름에서 새로운 음원 공개라는 점에서 주목을 받고 있습니다\"는 근거에 없다. 근거에는 아티스트·제목·발매일만 있고, 최근 활동이나 주목받는 반응에 대한 내용은 없다.",
+     "[캡션] 지어냄: \"소속사 공식 발표를 통해 확인할 수 있을 것으로 보입니다\"는 근거에 없다. 소속사나 공식 발표가 있다는 내용은 근거 어디에도 없다."
+    ],
+    "gate": {
+     "pass": true,
+     "fails": [],
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "검증 필요 · 부분 — 발매처 멜론 (자료는 멜론에 발매됐다는 것까지만 말하고, 확인된 사실)",
+     "인스타 @joohyelyn (인물 계정 기준 — 맞는지만 확인)",
+     "근거 기사: 멜론"
+    ],
+    "research": [
+     {
+      "title": "멜론 발매 정보 — 주혜린 『Good For Me (これでいい)』",
+      "link": "https://www.melon.com/search/total/index.htm?q=주혜린"
+     }
+    ],
+    "copy": 0.06,
+    "trust": {
+     "grade": "보통",
+     "why": [
+      "부풀린 메모 1줄 고침"
+     ],
+     "checks": [
+      "부분 — 발매처 멜론 (자료는 멜론에 발매됐다는 것까지만 말하고, 확인된 사실)"
+     ]
+    },
+    "guided": {
+     "lint": []
+    },
+    "covers": [
+     {
+      "key": "A",
+      "hook": "작성기",
+      "title": "주혜린, 신곡 발매",
+      "sub": "『Good For Me (これでいい)』 멜론 공개"
+     },
+     {
+      "key": "B",
+      "hook": "질문",
+      "title": "어디서 들을 수 있습니까?",
+      "sub": "주혜린 『Good For Me (これでいい)』, 멜론에서 공개됐습니다"
+     },
+     {
+      "key": "C",
+      "hook": "의외",
+      "title": "발매처 미확인 신곡",
+      "sub": "주혜린 『Good For Me』 멜론 공개 · 2026.10.15"
+     }
+    ],
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792215581/qtyriinh9pr65062z1zs.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792215582/dbjd2ieyzisalnorcujw.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792215584/ejrlny2rgskunyimkefk.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792215584/mgcelpxnol2dudciguh4.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792215581/qtyriinh9pr65062z1zs.jpg"
+     },
+     "at": "2026-10-17T14:39+09:00",
+     "v": {
+      "A": "d9b0911e",
+      "B": "0ec38607",
+      "C": "90f669c4"
+     }
+    }
+   },
+   "prev_copy": {
+    "card": {
+     "form": "[카테고리]\nNew Release!\n\n[캡션]\n주혜린이 신곡 『Good For Me (これでいい)』를 멜론에 발매했습니다.\n\n발매일은 2026년 10월 15일입니다. 이 곡은 멜론을 통해 공개됐으며, 레이블과 유통사 등 발매처는 확인되지 않았습니다.\n\n#PLOT #주혜린 #GoodForMe #これでいい #멜론 #신곡\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1791901628/lanagaywpsebqbqzrdkd.jpg\n제목: 주혜린, 신곡 발매\n부제: 『Good For Me (これでいい)』 멜론 공개\n출처: 멜론\n",
+     "caption": "주혜린이 신곡 『Good For Me (これでいい)』를 멜론에 발매했습니다.\n\n발매일은 2026년 10월 15일입니다. 이 곡은 멜론을 통해 공개됐으며, 레이블과 유통사 등 발매처는 확인되지 않았습니다.\n\n#PLOT #주혜린 #GoodForMe #これでいい #멜론 #신곡"
+    }
+   },
+   "subjects": [
+    "주혜린"
+   ],
+   "lane": "요청",
+   "added": "app",
+   "added_at": "2026-10-17T14:38+09:00",
+   "req": "order",
+   "corner": "followup",
+   "followup": {
+    "card": null,
+    "k": null,
+    "format": "요청"
+   },
+   "corner_name": "후속"
   }
  ],
  "skipped": [],
@@ -943,7 +1091,7 @@
     "left": 2,
     "need_today": 1,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 2,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -958,7 +1106,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-17T14:35+09:00"
+  "at": "2026-10-17T14:38+09:00"
  },
  "slots": {
   "basis": 192,
