@@ -154,7 +154,7 @@ textarea{width:100%;resize:vertical;line-height:1.5}
 .mOnly{display:none !important}
 .themeSlot{display:inline-flex}.themeSlot .plotThemeBtn{position:static !important}
 .more{display:none}
-.ruler,.tbar.meta,.clip .h{touch-action:none}
+.ruler,.tbar[data-meta],.clip .h{touch-action:none}
 /* ── 휴대폰 ── */
 @media (max-width:900px){
   body{font-size:15px}
@@ -171,11 +171,14 @@ textarea{width:100%;resize:vertical;line-height:1.5}
   .tb.primary .lg{display:none}
   .more{display:inline-block}
   .mid{grid-template-columns:1fr}
-  .pvWrap{padding:8px 8px 6px;gap:6px}
+  .pvWrap{padding:8px 8px 6px;gap:6px;overflow:hidden}
+  .stage{flex:1 1 0;height:auto;min-height:120px}
   .transport .tc{min-width:120px;font-size:13px}
   .transport button{width:44px;height:38px}
-  .mbar{gap:5px;flex-wrap:nowrap}
-  .mbar button{padding:9px 11px;font-size:15px}
+  .mbar{gap:5px;flex-wrap:nowrap;max-width:100%;overflow-x:auto;scrollbar-width:none;padding:0 2px}
+  .mbar::-webkit-scrollbar{display:none}
+  .mbar button{flex:none;padding:9px 11px;font-size:15px}
+  .mbar [data-m=redo]{display:none}
   .mbar .lg,.dsk{display:none}
   .pvNote{display:none}
   .side{position:fixed;left:0;right:0;bottom:0;z-index:80;max-height:76dvh;border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;
@@ -551,6 +554,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     <button class="tb sec" id="rawBtn" hidden title="리프레임·글자 없이 고른 구간만 편집용 파일로 (텔레그램으로 옵니다)">🎞 원본만</button>
     <button class="tb sec" id="ovBtn" hidden title="영상 없이 정보 레이어만 투명 .mov 로">🧾 레이어만</button>
     <button class="tb more" id="moreBtn" aria-label="더 보기">⋯</button>
+    <button id="redoBtn" hidden></button>
     <button class="tb primary" id="makeBtn" hidden>🎬 <span class="lg">맥으로 </span>제작</button>
   </div>
   <div class="mid">
@@ -569,6 +573,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         <button id="toStart" title="처음으로 (Home)">⏮</button>
         <button id="playBtn" title="재생·멈춤 (Space)">▶</button>
         <span class="tc" id="tc">0:00.00 / 0:00.00</span>
+        <button id="sndBtn" hidden title="유튜브 소리 켜기·끄기 (휴대폰은 처음에 꺼진 채로 재생됩니다)">🔇</button>
       </div>
       <div class="mbar" id="mbar">
         <button data-m="add" class="mOnly" title="휴대폰의 영상·사진 넣기">＋ 넣기</button>
@@ -614,7 +619,7 @@ const FR_KIND = [['auto', '자동'], ['fill', '꽉 채움'], ['fit', '통째로'
 const CTAS = ['이슈', '오늘의노래', '특집', '데일리', '신보', '인터뷰', '라이브'];
 const CTA_OF = { 'New release!': '신보', 'Issue': '이슈', '오늘의 노래': '오늘의노래', 'Feature': '특집', 'Daily': '데일리', 'Interview': '인터뷰', 'Live clip': '라이브' };
 const IMG_DEF = 4, MIN_LEN = 0.3, IMG_MAX = 60, MIN_SEG_META = 1.5;
-const SAVE = 'plot.timeline.seq', IN_KEY = 'plot.timeline.in', HANDOFF = 'plot.form.handoff';
+const SAVE = 'plot.timeline.seq', SAVE_SP = 'plot.timeline.sp', IN_KEY = 'plot.timeline.in', HANDOFF = 'plot.form.handoff';
 const META_DEF = 6, CUT_T = 1 / 30;
 
 function blankS() {
@@ -628,6 +633,8 @@ let S = blankS();
 let ctx = null;            // 숏폼 양식에서 넘어왔으면 {idx, texts}
 let sel = null, selGap = null, t = 0, playing = false, pps = 60, seq = 0;
 let hist = [], fut = [], FPS = 30;
+/* 아이폰·안드로이드는 다른 사이트(유튜브) 영상의 소리를 그 안을 직접 눌러야만 허락한다 — 꺼진 채 재생하고 🔇 로 켠다 */
+let YT_MUTE = window.matchMedia('(pointer: coarse)').matches;
 const BUSY = {};           // 추천을 뽑는 중인 유튜브 id
 
 /* 이전 판에서 저장한 편집도 그대로 열리게 빈 칸을 채운다 */
@@ -685,8 +692,9 @@ const srcTxt = (s) => String(s || '').trim().replace(/^출처\s*:\s*/, '');
 const len = (c) => Math.max(MIN_LEN, c.out - c.in);
 /* 이음새 i (클립 i-1 → i) 의 전환 — 따로 정한 게 없으면 기본(S.trans). 겹치는 길이는 맥의 gap_times 와 같은 셈 */
 function gapOf(i) { const c = S.clips[i]; return (c && S.gaps && S.gaps[c.id]) || S.trans; }
+function allCut() { return S.clips.slice(1).every((_, j) => gapOf(j + 1).k === '컷'); }
 function gapT(i) {
-  if (SP()) return 0;
+  if (SP() || allCut()) return 0;
   const g = gapOf(i), a = S.clips[i - 1], b = S.clips[i];
   const want = g.k === '컷' ? CUT_T : (Number(g.d) || 0.5);
   return Math.max(CUT_T, Math.min(want, len(a) / 2, len(b) / 2));
@@ -730,13 +738,17 @@ function snap() { hist.push(JSON.stringify(S)); if (hist.length > 80) hist.shift
 function undo() { if (!hist.length) return; fut.push(JSON.stringify(S)); S = JSON.parse(hist.pop()); norm(); afterLoad(); toast('되돌렸습니다'); }
 function redo() { if (!fut.length) return; hist.push(JSON.stringify(S)); S = JSON.parse(fut.pop()); norm(); afterLoad(); toast('다시 했습니다'); }
 let saveT;
-function save() { clearTimeout(saveT); saveT = setTimeout(() => { try { localStorage.setItem(SAVE, JSON.stringify({ S: S, ctx: ctx, fps: FPS, at: Date.now() })); } catch (_) {} }, 250); }
+/* 한 편과 특집·차트는 따로 남긴다 — 숏폼에서 한 편을 열어도 하던 특집이 사라지지 않게 */
+function saveNow() { clearTimeout(saveT); try { localStorage.setItem(SP() ? SAVE_SP : SAVE, JSON.stringify({ S: S, ctx: SP() ? null : ctx, fps: FPS, at: Date.now() })); } catch (_) {} }
+function save() { clearTimeout(saveT); saveT = setTimeout(saveNow, 250); }
+function loadSlot(k) { try { const o = JSON.parse(localStorage.getItem(k) || 'null'); return o && o.S ? o : null; } catch (_) { return null; } }
 
 /* ── 클립 넣기 ── */
 function newClip(url, kind, name, srcDur) {
   const c = { id: 'c' + (++seq) + Date.now().toString(36), url: url, kind: kind, name: name || '', srcDur: srcDur || null, in: 0, out: 0,
               fr: { m: 'auto', x: 0.5 }, song: { title: '', artist: '', feat: '', hook: '', source: '', rank: '' } };
   c.out = kind === 'image' ? IMG_DEF : (srcDur || 10);
+  c.dflt = kind !== 'image' && !srcDur;          // 길이를 아직 모름 — 원본 길이를 읽으면 통째로 (사람이 정한 구간은 건드리지 않는다)
   return c;
 }
 function addClip(c, at) {
@@ -778,15 +790,25 @@ function addFiles(fs) {
     });
   })();
 }
+/* 주소 여러 개를 한 번에 — 「주소 0:10-0:16 주소 1:02-1:08 …」 (차트·특집 곡을 한꺼번에 넣을 때) */
 function addUrl() {
-  const v = (window.prompt('영상·사진 주소 (유튜브 등). 뒤에 0:03-0:07 처럼 구간을 붙여도 됩니다') || '').trim();
+  const v = (window.prompt('영상 주소 (유튜브·올린 파일). 뒤에 0:03-0:07 처럼 구간을 붙이고, 여러 개는 띄어서 이어 적어도 됩니다') || '').trim();
   if (!v) return;
-  const m = /^(https?:\/\/\S+)(?:\s+([\d:.;f]+)\s*-\s*([\d:.;f]+))?$/.exec(v);
-  if (!m) { toast('http 로 시작하는 주소를 넣어 주세요'); return; }
-  const k = kindOf(m[1]);
-  const c = newClip(m[1], k, k === 'yt' ? '유튜브 ' + ytId(m[1]) : m[1].split('/').pop().slice(0, 30));
-  if (m[2] != null && toSec(m[3]) > toSec(m[2])) { if (k === 'image') c.out = toSec(m[3]) - toSec(m[2]); else { c.in = toSec(m[2]); c.out = toSec(m[3]); } }
-  addClip(c);
+  const rx = /(https?:\/\/\S+)(?:\s+([\d:.;f]+)\s*-\s*([\d:.;f]+))?/g;
+  let m, add = [], bad = 0;
+  while ((m = rx.exec(v))) {
+    const k = kindOf(m[1]);
+    if (k === 'image' && !UP_RX.test(m[1])) { bad++; continue; }   // 웹 사진은 맥이 못 받는다 — 올려서 넣는다
+    const c = newClip(m[1], k, k === 'yt' ? '유튜브 ' + ytId(m[1]) : m[1].split('/').pop().slice(0, 30));
+    if (m[2] != null && toSec(m[3]) > toSec(m[2])) { if (k === 'image') c.out = toSec(m[3]) - toSec(m[2]); else { c.in = toSec(m[2]); c.out = toSec(m[3]); c.dflt = false; } }
+    add.push(c);
+  }
+  if (!add.length) { toast(bad ? '웹 사진 주소는 맥이 못 받습니다 — 사진은 저장한 뒤 「＋ 올리기」로 넣어 주세요' : 'http 로 시작하는 주소를 넣어 주세요', true); return; }
+  snap();
+  add.forEach(c => S.clips.push(c));
+  sel = add[0].id; selGap = null; afterLoad(); zoomFit();
+  toast((add.length > 1 ? add.length + '개 넣었습니다' : '넣었습니다') + (bad ? ' · 웹 사진 ' + bad + '개는 빼고 (사진은 올려서 넣어 주세요)' : '') + (MOB.matches ? '' : ' — 클립을 눌러 구간을 고치세요'), true);
+  if (MOB.matches) sheet(true);
 }
 
 /* ── 썸네일 ── */
@@ -820,10 +842,10 @@ function mediaFor(c) {
     box.append(bg, im); o.media = im;
   } else if (c.kind === 'video') {
     const bg = document.createElement('div'); bg.className = 'bgblur'; bg.style.backgroundImage = 'url("' + thumbAt(c, 0) + '")';
-    const v = document.createElement('video'); v.src = c.url; v.preload = 'auto'; v.playsInline = true; v.setAttribute('playsinline', ''); v.crossOrigin = 'anonymous';
+    const v = document.createElement('video'); v.src = c.url; v.preload = 'auto'; v.playsInline = true; v.setAttribute('playsinline', '');
     v.onloadedmetadata = () => {
       o.vertical = v.videoHeight >= v.videoWidth * 1.5;
-      if (!c.srcDur && v.duration && isFinite(v.duration)) { c.srcDur = v.duration; if (c.out > c.srcDur || c.out === 10) c.out = Math.min(c.srcDur, c.out === 10 ? c.srcDur : c.out); renderTl(); renderSide(); }
+      if (!c.srcDur && v.duration && isFinite(v.duration)) { gotDur(c, v.duration); }
     };
     box.append(bg, v); o.media = v;
   } else {
@@ -832,12 +854,18 @@ function mediaFor(c) {
     o.vertical = /\/shorts\//.test(c.url);
     ytApi().then(() => {
       o.media = new YT.Player(d, { videoId: ytId(c.url), playerVars: { controls: 0, disablekb: 1, modestbranding: 1, playsinline: 1, rel: 0, start: Math.floor(c.in) },
-        events: { onReady: (e) => { o.ready = true; const dd = e.target.getDuration(); if (dd && !c.srcDur) { c.srcDur = dd; c.out = Math.min(c.out, dd); renderTl(); renderSide(); } } } });
+        events: { onReady: (e) => { o.ready = true; if (YT_MUTE) { try { e.target.mute(); } catch (_) {} } const dd = e.target.getDuration(); if (dd && !c.srcDur) gotDur(c, dd); } } });
     });
   }
   $('#medias').append(box);
   M[c.id] = o;
   return o;
+}
+function gotDur(c, d) {
+  c.srcDur = d;
+  if (c.dflt) { c.out = d; c.dflt = false; } else c.out = Math.min(c.out, d);
+  clampClip(c); renderTl(); renderSideSoon(); save();
+  if (layout().total * pps > $('#scroll').clientWidth - 40) zoomFit();
 }
 function gcMedia() {
   const ids = new Set(S.clips.map(c => c.id));
@@ -1053,6 +1081,7 @@ function renderTl() {
   });
   $('#ph').style.left = (t * pps) + 'px';
   const none = !S.clips.length;
+  $('#sndBtn').hidden = !S.clips.some(c => c.kind === 'yt');
   $('#makeBtn').disabled = $('#ovBtn').disabled = $('#toShorts').disabled = $('#rawBtn').disabled = none;
 }
 
@@ -1160,7 +1189,12 @@ function spPanel(L) {
     (chart ? '순위 넘버링은 전체 제목 뒤부터 나옵니다. ' : '') + '곡과 곡은 바로 잇고(컷), 소리 크기는 맥이 곡마다 맞춥니다. 클립을 누르면 그 곡의 글자를 고칩니다.</div>';
 }
 const dOpen = { more: false };
+let sidePending = false, sideTimer = null, ptrDown = false;
+function typingInSide() { const a = document.activeElement; return !!(a && $('#side').contains(a) && a.matches('input[type=text],textarea')); }
+/* 칸을 떠나며(change) 다시 그리면 방금 누른 단추·칸이 사라져 첫 탭이 먹지 않는다 — 손을 뗀 뒤에 그린다 */
+function renderSideSoon() { clearTimeout(sideTimer); sideTimer = setTimeout(() => { if (ptrDown || typingInSide()) { sidePending = true; return; } renderSide(); }, 60); }
 function renderSide() {
+  sidePending = false;
   const side = $('#side'), c = selClip(), L = layout();
   const keepY = side.scrollTop;
   let h = '<div class="sideHd"><b>' + (c ? (SP() ? '곡 ' : '클립 ') + (S.clips.indexOf(c) + 1) : selGap ? '이음새' : SP() ? (S.mode === 'chart' ? '차트' : '특집') : '편집') + '</b><button type="button" data-a="close">닫기</button></div>';
@@ -1218,6 +1252,7 @@ function problems() {
 /* ── 손으로 고치기 ── */
 function selClip() { return S.clips.find(x => x.id === sel); }
 function clampClip(c) {
+  if (c.srcDur) c.dflt = false;
   if (c.kind === 'image') { c.in = 0; c.out = Math.max(MIN_LEN, Math.min(IMG_MAX, c.out)); return; }
   const max = c.srcDur || Infinity;
   c.in = Math.max(0, Math.min(c.in, max - MIN_LEN));
@@ -1255,10 +1290,10 @@ function trimHere(side) {
 function dup() { const c = selClip(); if (!c) return; const b = JSON.parse(JSON.stringify(c)); b.id = 'c' + (++seq) + Date.now().toString(36); addClip(b, S.clips.indexOf(c) + 1); }
 function del() { const c = selClip(); if (!c) return; snap(); S.clips.splice(S.clips.indexOf(c), 1); if (S.gaps) delete S.gaps[c.id]; sel = null; afterLoad(); toast('뺐습니다 — ⌘Z·↶ 로 되돌릴 수 있어요'); }
 function move(d) { const c = selClip(); if (!c) return; const i = S.clips.indexOf(c), j = i + d; if (j < 0 || j >= S.clips.length) return; snap(); S.clips.splice(i, 1); S.clips.splice(j, 0, c); afterLoad(); }
-function afterLoad() {
+function afterLoad(soon) {
   gcMedia();
   const tot = layout().total; if (t > tot) t = tot;
-  renderTl(); renderSide(); paintFrame(); save(); paintMode();
+  renderTl(); if (soon) renderSideSoon(); else renderSide(); paintFrame(); save(); paintMode();
 }
 function setMode(m) {
   if (m === S.mode) return;
@@ -1282,6 +1317,20 @@ function paintMode() {
   $('#makeBtn').innerHTML = '🎬 <span class="lg">맥으로 </span>' + lab + '제작';
 }
 
+/* 트랙을 눌렀을 때 — 이음새 표시 · 빈 곳(재생헤드) · 클립(고르기, 두 번째는 편집 시트) */
+function tapTrack(xb, cd, ev) {
+  const tAtX = (x) => Math.max(0, (x - $('#inner').getBoundingClientRect().left) / pps);
+  if (xb) { if (!xb.dataset.xf) return; sel = null; selGap = xb.dataset.xf; renderTl(); renderSide(); if (MOB.matches) sheet(true); return; }
+  selGap = null;
+  if (!cd) { sel = null; setPlay(false); t = Math.min(tAtX(ev.clientX), layout().total); renderTl(); renderSide(); return; }
+  const c = S.clips.find(x => x.id === cd.dataset.id); if (!c) return;
+  const again = sel === c.id;
+  sel = c.id; setPlay(false);
+  const L0 = layout(), i0 = S.clips.indexOf(c);
+  if (t < L0.st[i0] || t > L0.st[i0] + len(c)) t = L0.st[i0];
+  renderTl(); renderSide();
+  if (MOB.matches) { if (again) { sheet(true); $('#toast').classList.remove('on'); } else toast('한 번 더 누르면 이 ' + (SP() ? '곡' : '클립') + '을 고칩니다'); }
+}
 /* 타임라인 끌기: 눈금자=재생헤드 · 양끝=자르기 · 가운데=순서 */
 function bindTl() {
   const inner = $('#inner'), ru = $('#ruler');
@@ -1295,20 +1344,21 @@ function bindTl() {
   $('#trV').addEventListener('pointerdown', (ev) => {
     const cd = ev.target.closest('.clip');
     const xb = ev.target.closest('.xf');
-    if (xb) { if (!xb.dataset.xf) return; sel = null; selGap = xb.dataset.xf; renderTl(); renderSide(); if (MOB.matches) sheet(true); return; }
-    selGap = null;
-    if (!cd) { sel = null; setPlay(false); t = Math.min(tAt(ev), layout().total); renderTl(); renderSide(); return; }   // 빈 곳을 누르면 그 자리로
-    const c = S.clips.find(x => x.id === cd.dataset.id); if (!c) return;
-    const again = sel === c.id;
-    sel = c.id; setPlay(false);
     const hd = ev.target.dataset.h;
-    // 손가락으로 클립 가운데를 누르면 고르기만 한다 — 끌면 타임라인이 밀린다. 순서는 ⚙ 편집의 ←·→ 로
+    // 손가락: 누른 채 밀면 타임라인이 넘어간다 — 손을 뗐을 때 거의 안 움직였으면 그때 누른 것으로 본다
     if (ev.pointerType === 'touch' && !hd) {
-      const L0 = layout(), i0 = S.clips.indexOf(c);
-      if (t < L0.st[i0] || t > L0.st[i0] + len(c)) t = L0.st[i0];
-      renderTl(); renderSide(); if (again) { sheet(true); $('#toast').classList.remove('on'); } else toast('한 번 더 누르면 이 ' + (SP() ? '곡' : '클립') + '을 고칩니다');
+      const x0 = ev.clientX, y0 = ev.clientY, pid = ev.pointerId;
+      const tapUp = (e) => {
+        window.removeEventListener('pointerup', tapUp); window.removeEventListener('pointercancel', tapUp);
+        if (e.type === 'pointercancel' || e.pointerId !== pid || Math.hypot(e.clientX - x0, e.clientY - y0) > 8) return;
+        tapTrack(xb, cd, e);
+      };
+      window.addEventListener('pointerup', tapUp); window.addEventListener('pointercancel', tapUp);
       return;
     }
+    if (xb || !cd) { tapTrack(xb, cd, ev); return; }
+    const c = S.clips.find(x => x.id === cd.dataset.id); if (!c) return;
+    selGap = null; sel = c.id; setPlay(false);
     const x0 = ev.clientX, in0 = c.in, out0 = c.out, before = JSON.stringify(S);
     let moved = false;
     const drop = $('#drop');
@@ -1335,6 +1385,7 @@ function bindTl() {
       drop.style.display = 'none';
       if (moved) {
         hist.push(before); if (hist.length > 80) hist.shift(); fut = [];
+        if (hd) c.dflt = false;
         if (!hd) {
           const i = S.clips.indexOf(c); let k = Number(drop.dataset.k);
           if (k !== i && k !== i + 1) { S.clips.splice(i, 1); if (k > i) k--; S.clips.splice(k, 0, c); }
@@ -1350,10 +1401,16 @@ function bindTl() {
   $('#trT').addEventListener('pointerdown', (ev) => {
     const sg = ev.target.closest('[data-seg]'), mn = ev.target.closest('[data-main]');
     if (sg || mn) {
-      setPlay(false); sel = sg ? sg.dataset.seg : null; selGap = null;
-      if (sg) { const P = spPlan(layout()), i = S.clips.findIndex(x => x.id === sel); if (i >= 0) t = P.plan[i].ms; } else t = 0;
-      renderTl(); renderSide(); if (MOB.matches) sheet(true);
-      else { const n = $(sg ? '#side [data-s=title]' : '#side [data-mn=title]'); if (n) n.focus(); }
+      const x0 = ev.clientX, y0 = ev.clientY;
+      const tapUp = (e) => {
+        window.removeEventListener('pointerup', tapUp); window.removeEventListener('pointercancel', tapUp);
+        if (e.type === 'pointercancel' || Math.hypot(e.clientX - x0, e.clientY - y0) > 8) return;
+        setPlay(false); sel = sg ? sg.dataset.seg : null; selGap = null;
+        if (sg) { const P = spPlan(layout()), i = S.clips.findIndex(x => x.id === sel); if (i >= 0) t = P.plan[i].ms; } else t = 0;
+        renderTl(); renderSide(); if (MOB.matches) sheet(true);
+        else { const n = $(sg ? '#side [data-s=title]' : '#side [data-mn=title]'); if (n) n.focus(); }
+      };
+      window.addEventListener('pointerup', tapUp); window.addEventListener('pointercancel', tapUp);
       return;
     }
     const bar = ev.target.closest('[data-meta]'); if (!bar) return;
@@ -1391,7 +1448,7 @@ function unlockMedia() {
   Object.values(M).forEach(o => {
     try {
       if (o.kind === 'video' && o.media && o.media.paused) { const v = o.media, pr = v.play(); if (pr && pr.then) pr.then(() => { if (!playing) v.pause(); }).catch(() => {}); }
-      else if (o.kind === 'yt' && o.media && o.ready && o.media.getPlayerState() !== 1) { o.media.mute(); o.media.playVideo(); setTimeout(() => { try { o.media.unMute(); } catch (_) {} }, 300); }
+      else if (o.kind === 'yt' && o.media && o.ready && o.media.getPlayerState() !== 1) { o.media.mute(); o.media.playVideo(); if (!YT_MUTE) setTimeout(() => { try { o.media.unMute(); } catch (_) {} }, 300); }
     } catch (_) {}
   });
 }
@@ -1399,13 +1456,18 @@ function bindMbar() {
   $('#mbar').addEventListener('click', (e) => {
     const b = e.target.closest('[data-m]'); if (!b) return;
     const m = b.dataset.m;
-    if (m === 'add') $('#addFile').click();
+    if (m === 'add') {
+      const sh = document.createElement('div'); sh.className = 'sheet';
+      sh.innerHTML = '<div class="pn"><div class="btns" style="flex-direction:column"><button data-go="addFile">📁 휴대폰의 영상·사진 올리기</button><button data-go="addUrl">🔗 유튜브·영상 주소 (여러 개 한 번에)</button><button data-go="">닫기</button></div></div>';
+      sh.addEventListener('click', (e) => { const b = e.target.closest('[data-go]'); if (e.target === sh || b) sh.remove(); if (b && b.dataset.go) $('#' + b.dataset.go).click(); });
+      document.body.append(sh);
+    }
     else if (m === 'split') split(); else if (m === 'dup') dup(); else if (m === 'del') del();
     else if (m === 'undo') undo(); else if (m === 'redo') redo();
     else if (m === 'props') { renderSide(); sheet(true); }
   });
   $('#moreBtn').onclick = () => {
-    const acts = [['addUrl', '＋ 주소로 넣기 (유튜브 등)'], ['showForm', '양식 보기·복사']].concat(SP() ? [] : [['toShorts', '↩ 숏폼 양식에 넣기']])
+    const acts = [['addUrl', '＋ 주소로 넣기 (유튜브 등 · 여러 개 한 번에)'], ['redoBtn', '↷ 다시 하기'], ['showForm', '양식 보기·복사']].concat(SP() ? [] : [['toShorts', '↩ 숏폼 양식에 넣기']])
       .concat(studioOn() ? (SP() ? [] : [['rawBtn', '🎞 원본만 받기 (리프레임·글자 없이)']]).concat([['ovBtn', '🧾 레이어만 (투명 .mov)']]) : []).concat([['newBtn', '새로 시작']]);
     const sh = document.createElement('div'); sh.className = 'sheet';
     sh.innerHTML = '<div class="pn"><div class="btns" style="flex-direction:column">' + acts.map(a => '<button data-go="' + a[0] + '">' + a[1] + '</button>').join('') +
@@ -1463,7 +1525,7 @@ function bindSide() {
     else if (a === 'cut' && c) askCut(c);
     else if (a === 'inHere') trimHere('in');
     else if (a === 'outHere') trimHere('out');
-    else if (a === 'songPrev' || a === 'songNext') { const i = S.clips.indexOf(c) + (a === 'songNext' ? 1 : -1); if (S.clips[i]) { sel = S.clips[i].id; t = spPlan(layout()).plan[i].ms; renderTl(); renderSide(); } }
+    else if (a === 'songPrev' || a === 'songNext') { const i = S.clips.indexOf(c) + (a === 'songNext' ? 1 : -1); if (S.clips[i]) { sel = S.clips[i].id; t = spPlan(layout()).plan[i].ms; renderTl(); renderSide(); const n = $('#side [data-s=title]'); if (n) { n.focus(); $('#side').scrollTop = 0; } } }
     else if (a === 'songCopySrc' && c) { const i = S.clips.indexOf(c); snap(); c.song.source = S.clips[i - 1].song.source; afterLoad(); }
     else if (a === 'close') sheet(false);
     else if (a === 'split') split();
@@ -1489,8 +1551,8 @@ function bindSide() {
   side.addEventListener('pointerdown', (ev) => { if (ev.target.dataset && ev.target.dataset.fx != null) snap(); });
   side.addEventListener('change', (ev) => {
     const n = ev.target;
-    if (n.dataset.fx != null) { afterLoad(); return; }
-    if (n.type === 'checkbox' && n.dataset.o) { snap(); S.opt[n.dataset.o] = n.checked; afterLoad(); return; }
+    if (n.dataset.fx != null) { afterLoad(true); return; }
+    if (n.type === 'checkbox' && n.dataset.o) { snap(); S.opt[n.dataset.o] = n.checked; afterLoad(true); return; }
     const mk = n.dataset.m;
     if (mk) {
       const v = n.value.trim(), tot = layout().total, mw = metaWin(tot);
@@ -1499,20 +1561,24 @@ function bindSide() {
       if (mk === 's') { const x = toSec(v); if (x != null) cur.s = x; }
       else cur.e = /^끝/.test(v) ? null : (toSec(v) != null ? toSec(v) : cur.e);
       if (cur.e != null && cur.e <= cur.s) cur.e = cur.s + 0.5;
-      S.metaT = cur; afterLoad(); return;
+      S.metaT = cur; afterLoad(true); return;
     }
-    if (n.dataset.du) { const x = Number(n.value); snap(); S.durs[n.dataset.du] = x > 0 ? Math.min(30, x) : 6; afterLoad(); return; }
+    if (n.dataset.du) { const x = Number(n.value); snap(); S.durs[n.dataset.du] = x > 0 ? Math.min(30, x) : 6; afterLoad(true); return; }
     if (n.dataset.t || n.dataset.s || n.dataset.mn || n.dataset.o) {
       if (typing && typing !== JSON.stringify(S)) { hist.push(typing); if (hist.length > 80) hist.shift(); fut = []; }
-      typing = JSON.stringify(S); renderSide(); return;
+      typing = JSON.stringify(S); renderSideSoon(); return;
     }
     const k = n.dataset.c, c = selClip(); if (!k || !c) return;
     const v = n.value.trim();
     snap();
     if (k === 'len') { const x = Number(v); if (x > 0) c.out = x; }
-    else { const s = toSec(v); if (s != null) c[k] = s; }
-    clampClip(c); afterLoad();
+    else { const s = toSec(v); if (s != null) { c[k] = s; c.dflt = false; } }
+    clampClip(c); afterLoad(true);
   });
+  side.addEventListener('pointerdown', () => { ptrDown = true; }, true);
+  const lift = () => { if (!ptrDown) return; ptrDown = false; if (sidePending) setTimeout(() => { if (sidePending && !typingInSide()) renderSide(); }, 40); };
+  window.addEventListener('pointerup', lift, true); window.addEventListener('pointercancel', lift, true);
+  side.addEventListener('focusout', () => { setTimeout(() => { if (sidePending && !ptrDown && !typingInSide()) renderSide(); }, 40); });
   side.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' && ev.target.matches('input[type=text]')) ev.target.blur(); });
 }
 /* 추천의 제목·후킹·아티스트를 빈 칸에만 채운다 */
@@ -1543,13 +1609,13 @@ function askCut(c) {
       delete BUSY[id];
       let d = null; try { d = b64urlJson(sn.pc); } catch (_) {}
       const rows = d && (d.c || []).filter(r => Array.isArray(r) && isFinite(r[0]) && isFinite(r[1]) && r[1] > r[0]);
-      if (!rows || !rows.length) { toast('추천을 받았지만 비어 있습니다'); renderSide(); return; }
+      if (!rows || !rows.length) { toast('추천을 받았지만 비어 있습니다'); renderSideSoon(); return; }
       const list = rows.map(r => ({ s: +r[0], e: +r[1], t: r[2] || '', h: r[3] || '', a: r[4] || '', src: d.src || '' }));
       S.clips.forEach(x => { if (ytId(x.url) === id) x.sugg = list; });
-      save(); renderSide(); if (MOB.matches) sheet(true);
+      save(); renderSideSoon(); if (MOB.matches) sheet(true);
       toast('✂️ 추천 ' + list.length + '개 — 누르면 그 구간으로 바뀝니다', true);
     })
-    .catch((e) => { delete BUSY[id]; renderSide(); toast('추천을 못 뽑았습니다 — ' + String(e && e.message || e).slice(0, 90), true); });
+    .catch((e) => { delete BUSY[id]; renderSideSoon(); toast('추천을 못 뽑았습니다 — ' + String(e && e.message || e).slice(0, 90), true); });
 }
 
 /* ── 양식 ── */
@@ -1605,7 +1671,10 @@ function transLine() {
 }
 function ready() { const e = problems(); if (e.length) { toast(e[0], true); renderSide(); if (MOB.matches) sheet(true); return false; } return true; }
 function studioOn() { return !!(window.plotStudio && window.plotStudio.on && window.plotStudio.on()); }
+let SENDING = false;
+function sendLock(on) { SENDING = on; ['#makeBtn', '#ovBtn', '#rawBtn'].forEach(k => { $(k).disabled = on || !S.clips.length; }); }
 function make(ovl) {
+  if (SENDING) { toast('보내는 중입니다'); return; }
   if (!ready()) return;
   setPlay(false);
   const text = formText();
@@ -1615,26 +1684,31 @@ function make(ovl) {
   if (ovl) data.overlay = 1;
   if (SP()) { data.title_dur = Number(S.durs.title) || 6; data.seg_dur = Number(S.durs.seg) || 6; }
   toast((ovl ? '🧾 정보 레이어를' : '🎬 ' + (SP() ? (S.mode === 'chart' ? '차트를' : '특집을') : '이 편을')) + ' 맥으로 보냅니다…', true);
+  sendLock(true);
   plotStudio.send(op, data).then((sn) => toast('✓ ' + (sn.note || '대기열에 넣었습니다'), true))
-    .catch((e) => toast('못 보냈습니다 — ' + String(e && e.message || e).slice(0, 90), true));
+    .catch((e) => toast('못 보냈습니다 — ' + String(e && e.message || e).slice(0, 90), true))
+    .finally(() => sendLock(false));
 }
 function makeRaw() {
   if (!S.clips.length || SP()) return;
+  if (SENDING) { toast('보내는 중입니다'); return; }
   setPlay(false);
   const c0 = S.clips[0];
   if (S.clips.length === 1 && c0.kind === 'image') { toast('사진은 원본 그대로 쓰면 됩니다'); return; }
-  toast('🎞 원본(' + (S.clips.length > 1 ? '이어 붙인 ' + S.clips.length + '개' : '구간') + ')을 받아 텔레그램으로 보냅니다 — 리프레임·글자 없이', true);
+  toast(S.clips.length > 1 ? '🎞 이어 붙인 ' + S.clips.length + '개를 글자 없이 받아 텔레그램으로 보냅니다 (조각은 세로로 맞춘 그대로)' : '🎞 고른 구간을 리프레임·글자 없이 받아 텔레그램으로 보냅니다', true);
   let shown = '';
+  sendLock(true);
   plotStudio.send('raw', { text: oneText() }, (step) => { if (step !== shown) { shown = step; toast('🎞 ' + step, true); } })
     .then((sn) => toast('✓ ' + (sn.note || '보냈습니다'), true))
-    .catch((e) => toast('못 받았습니다 — ' + String(e && e.message || e).slice(0, 90), true));
+    .catch((e) => toast('못 받았습니다 — ' + String(e && e.message || e).slice(0, 90), true))
+    .finally(() => sendLock(false));
 }
+/* 숏폼 화면은 지금 쓰던 양식을 그대로 두고 그 편만 바꾼다 (숏폼에서 안 왔으면 뒤에 붙인다) — 다른 편을 덮지 않는다 */
 function toShorts() {
   if (!S.clips.length || SP()) return;
-  const mine = oneText();
-  const texts = ctx && Array.isArray(ctx.texts) ? ctx.texts.slice() : [];
-  if (ctx && ctx.idx >= 0 && ctx.idx < texts.length) texts[ctx.idx] = mine; else texts.push(mine);
-  try { localStorage.setItem(HANDOFF, texts.join('\n\n')); } catch (_) { toast('저장소를 쓸 수 없어 넘길 수 없습니다'); return; }
+  try { localStorage.setItem('plot.timeline.back', JSON.stringify({ idx: ctx && ctx.idx >= 0 ? ctx.idx : -1, text: oneText() })); }
+  catch (_) { toast('저장소를 쓸 수 없어 넘길 수 없습니다'); return; }
+  saveNow();
   location.href = 'shorts.html';
 }
 function showForm() {
@@ -1663,8 +1737,8 @@ function fromBlock(b) {
   const mk = (url, s0, e0) => {
     const k = kindOf(url), c = newClip(url, k, k === 'yt' ? '유튜브 ' + ytId(url) : url.split('/').pop().slice(0, 30));
     const s = toSec(s0), e = toSec(e0);
-    if (s != null && e != null && e > s) { if (k === 'image') c.out = e - s; else { c.in = s; c.out = e; } }
-    else if (s != null && k !== 'image') { c.in = s; c.out = s + 10; }
+    if (s != null && e != null && e > s) { if (k === 'image') c.out = e - s; else { c.in = s; c.out = e; c.dflt = false; } }
+    else if (s != null && k !== 'image') { c.in = s; c.out = s + 10; c.dflt = false; }
     return c;
   };
   if (b.url && !b.send) clips.push(mk(b.url, b.start, b.end));
@@ -1675,7 +1749,7 @@ function fromBlock(b) {
   const fr = parseFr(b.frames);
   clips.forEach((c, i) => { if (fr[i] && b.frames) c.fr = fr[i]; });
   if (clips.length === 1 && b.crop != null && b.crop !== '' && clips[0].fr.m === 'auto') clips[0].fr = { m: 'fill', x: r3(b.crop) };
-  const one = (x) => ({ k: /^블랙/.test(x) ? '블랙' : /^컷/.test(x) ? '컷' : '디졸브', d: (/(\d+(?:\.\d+)?)/.exec(x) || [, '0.5'])[1] });
+  const one = (x) => ({ k: /^블랙/.test(x) ? '블랙' : /^컷/.test(x) ? '컷' : '디졸브', d: String(Math.max(0.2, Math.min(1.5, Number((/(\d+(?:\.\d+)?)/.exec(x) || [, '0.5'])[1]) || 0.5))) });
   const trs = String(b.trans || '디졸브 0.5').split('|').map(x => x.trim()).filter(Boolean);
   const gaps = {};
   if (trs.length > 1) clips.slice(1).forEach((c, j) => { if (trs[j]) gaps[c.id] = one(trs[j]); });
@@ -1699,19 +1773,19 @@ function boot() {
     const note = fromBlock(inc.block); ctx = { idx: inc.idx, texts: inc.texts || [] };
     toast(note || '숏폼 양식 ' + (inc.idx + 1) + '번 편을 열었습니다', !!note);
   } else {
-    try { const o = JSON.parse(localStorage.getItem(SAVE) || 'null'); if (o && o.S) { S = o.S; ctx = o.ctx || null; if (o.fps) FPS = o.fps; } } catch (_) {}
+    // 숏폼 화면의 「🏆 특집·차트」 → timeline.html#special — 하던 특집이 있으면 이어서, 아니면 새로
+    const hm = /^#(special|chart)$/.exec(location.hash);
+    const one = loadSlot(SAVE), sp = loadSlot(SAVE_SP);
+    const o = hm ? sp : ((one && sp) ? (sp.at > one.at ? sp : one) : (one || sp));
+    if (o) { S = o.S; ctx = o.ctx || null; if (o.fps) FPS = o.fps; }
+    if (hm) {
+      if (!o) { S = blankS(); S.mode = hm[1]; setTimeout(() => toast('특집·차트 — 클립 하나가 곡 하나입니다. 「＋ 올리기」나 「주소로 넣기」로 곡을 넣으세요 (주소는 여러 개를 한 번에)', true), 300); }
+      else S.mode = hm[1];
+      ctx = null;
+      try { history.replaceState(null, '', location.pathname); } catch (_) {}
+    }
   }
   norm();
-  // 숏폼 화면의 「🏆 특집·차트」 → timeline.html#special — 하던 특집이 있으면 이어서, 아니면 새로
-  const hm = /^#(special|chart)$/.exec(location.hash);
-  if (hm && !(inc && inc.block)) {
-    if (!SP() || !S.clips.length) {
-      if (S.clips.length) hist.push(JSON.stringify(S));
-      const src = S.text.source; S = blankS(); S.mode = hm[1]; S.main.source = src; norm(); ctx = null;
-      setTimeout(() => toast('특집·차트 — 클립 하나가 곡 하나입니다. 「＋ 올리기」나 「주소로 넣기」로 곡을 넣으세요', true), 300);
-    }
-    try { history.replaceState(null, '', location.pathname); } catch (_) {}
-  }
   S.clips.forEach(c => { const m = /^c(\d+)/.exec(c.id); if (m) seq = Math.max(seq, Number(m[1])); });
   if (studioOn()) { $('#makeBtn').hidden = false; $('#ovBtn').hidden = false; }
   boot.link = () => { $('#backLink').innerHTML = '←<span class="bl"> <span class="lg">숏폼 </span>양식' + (ctx ? ' ' + (ctx.idx + 1) + '번' : '') + '</span>'; };
@@ -1720,8 +1794,14 @@ function boot() {
   $('#addFile').onclick = () => { if (!upOn()) { toast('파일 올리기가 연결되지 않았습니다'); return; } $('#fileIn').click(); };
   $('#fileIn').onchange = (e) => { const fs = Array.from(e.target.files || []); e.target.value = ''; addFiles(fs); };
   $('#addUrl').onclick = addUrl;
+  $('#redoBtn').onclick = redo;
   $('#playBtn').onclick = () => { if (!playing) unlockMedia(); setPlay(!playing); };
   $('#toStart').onclick = () => { setPlay(false); t = 0; followPh(); };
+  $('#sndBtn').onclick = () => {
+    YT_MUTE = !YT_MUTE; $('#sndBtn').textContent = YT_MUTE ? '🔇' : '🔊';
+    Object.values(M).forEach(o => { if (o.kind === 'yt' && o.media && o.ready) { try { YT_MUTE ? o.media.mute() : o.media.unMute(); } catch (_) {} } });
+    if (!YT_MUTE) toast('유튜브 소리를 켰습니다 — 그래도 안 나면 맥 결과물로 확인하세요 (휴대폰 제한)');
+  };
   $('#makeBtn').onclick = () => make(false);
   $('#ovBtn').onclick = () => make(true);
   $('#rawBtn').onclick = makeRaw;
@@ -1760,7 +1840,7 @@ function boot() {
     else if (e.key === '\\') zoomFit();
   });
   window.addEventListener('resize', () => { paintFrame(); renderTl(); });
-  window.addEventListener('pagehide', () => { try { localStorage.setItem(SAVE, JSON.stringify({ S: S, ctx: ctx, fps: FPS, at: Date.now() })); } catch (_) {} });
+  window.addEventListener('pagehide', saveNow);
   bindTl(); bindSide(); bindMbar();
   afterLoad(); zoomFit();
   requestAnimationFrame(loop);

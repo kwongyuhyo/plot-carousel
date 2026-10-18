@@ -1293,6 +1293,15 @@ function draftSave() {
   }, 400);
 }
 function draftClear() { try { localStorage.removeItem(DRAFT); } catch (_) {} }
+/* 다른 화면으로 넘어가기 직전 — 기다리지 않고 바로 남긴다 (타임라인에서 돌아올 때 이걸 바탕으로 그 편만 바꾼다) */
+function draftNow() {
+  clearTimeout(draftT);
+  try {
+    if (!blocks.some(hasContent)) return;
+    const slim = blocks.map(b => { const o = {}; KEEP.forEach(k => { o[k] = b[k]; }); return o; });
+    localStorage.setItem(DRAFT, JSON.stringify({ at: Date.now(), blocks: slim }));
+  } catch (_) {}
+}
 
 /* ── 이름 붙여 저장 ──────────────────────────────────────────────
  * 임시저장은 '쓰다 만 것' 하나뿐이라, 이번 주 신보 묶음을 두고 급한 이슈를
@@ -1354,6 +1363,7 @@ function fromSlim(list) {
     KEEP.forEach(k => {
       if (o[k] === undefined || o[k] === null) return;
       b[k] = (k === 'send' || k === 'check') ? !!o[k]
+           : (k === 'storyBed') ? !(o[k] === false || o[k] === 'false')
            : (k === 'crop') ? cropOf(o[k])
            : String(o[k]);
     });
@@ -1700,6 +1710,26 @@ function scan(text) {
    반대로 여기 붙여넣은 카드뉴스 양식은 캐러셀로 넘긴다 — 한 입구에서
    양쪽을 다 받게 하려는 것이다 (2026-09-24 규효). */
 const HANDOFF = 'plot.form.handoff';
+
+/* 타임라인에서 돌아옴 (10/18) — {idx, text}. 지금 쓰던 양식(임시 저장)을 그대로 두고 그 편만 바꾼다.
+   타임라인에서 바로 시작한 편(idx<0)이면 뒤에 붙인다 — 다른 편을 지우지 않는다. */
+function takeTimelineBack() {
+  let o = null;
+  try { o = JSON.parse(localStorage.getItem('plot.timeline.back') || 'null'); localStorage.removeItem('plot.timeline.back'); } catch (_) {}
+  if (!o || !o.text) return 0;
+  const got = parseForm(o.text);
+  if (!got.length) { toast('타임라인에서 온 양식을 읽지 못했습니다'); return 0; }
+  const d = draftRead();
+  let base = d && d.blocks && d.blocks.length ? fromSlim(d.blocks) : blocks.filter(hasContent);
+  const i = Number(o.idx);
+  if (i >= 0 && i < base.length) { base.splice(i, 1, got[0]); active = i; }
+  else { base = base.concat(got); active = base.length - 1; }
+  blocks = base;
+  render();
+  got.forEach(b => { if (ytId(b.url)) pullFrom(b); });
+  toast(i >= 0 && i < base.length ? (i + 1) + '번 편을 타임라인 편집으로 바꿨습니다' : '타임라인에서 만든 편을 ' + (active + 1) + '번으로 붙였습니다');
+  return 1;
+}
 
 function takeHandoff() {
   let t = null;
@@ -2074,6 +2104,7 @@ function openTimeline(b) {
     localStorage.setItem('plot.timeline.in', JSON.stringify({ idx: idx, texts: blocks.map(blockText), block: o, fps: UNIT.fps }));
   } catch (_) { toast('저장소를 쓸 수 없어 넘길 수 없습니다'); return; }
   remember(b);
+  draftNow();
   location.href = 'timeline.html';
 }
 
@@ -4133,6 +4164,7 @@ function boot() {
   render();
   fitStage();
   // 캐러셀 화면에서 숏폼 양식을 붙여넣어 넘어온 경우 — 여기서 받아 펼친다.
+  if (takeTimelineBack()) $('#resume').hidden = true;
   takeHandoff();
   // 봇의 '추천 구간 앱에서 다듬기' 버튼으로 열린 경우
   if (takePcut() || takeFormParam()) $('#resume').hidden = true;
@@ -4160,9 +4192,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.18 19:40';
+    a.title = '판 10.18 19:57';
     var ver = document.createElement('span');
-    ver.textContent = '10.18 19:40';
+    ver.textContent = '10.18 19:57';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

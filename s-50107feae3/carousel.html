@@ -1870,8 +1870,12 @@ function syncFields() {
                 plainField("소스 주소", vidOf(s) ? "영상 장 — 미리보기 아래 영상 칸에서 바꿉니다" : "양식으로 넘길 때만 쓰입니다 (미리보기에는 안 보임) · 영상 주소를 넣으면 영상 장이 됩니다",
                            vidOf(s) ? vidOf(s).url : s.srcUrl, (v) => {
                              s.srcUrl = v;
-                             if (isVidUrl(v.trim()) && !(vidOf(s) && vidOf(s).url === v.trim())) { setVid(s, v.trim()); vidStage(); }
-                             else if (vidOf(s) && !isVidUrl(v.trim())) { s.vid = null; s.vidOut = null; vidStage(); }
+                             clearTimeout(s._srcT);           // 치는 중에는 기다렸다가 — 한 글자마다 영상을 새로 열지 않게
+                             s._srcT = setTimeout(() => {
+                               const u = (s.srcUrl || "").trim();
+                               if (isVidUrl(u) && !(vidOf(s) && vidOf(s).url === u)) { setVid(s, u); vidStage(); buildRail(); }
+                               else if (vidOf(s) && !isVidUrl(u)) { s.vid = null; s.vidOut = null; vidStage(); buildRail(); }
+                             }, 700);
                            }));
 }
 
@@ -2936,6 +2940,8 @@ function loadStill(s) {
   im.src = u;
 }
 let VP = null, VIEW_OUT = false, VLOOP = false, vTick = null;
+/* 휴대폰은 유튜브 소리를 그 안을 직접 눌러야만 허락한다 — 꺼진 채 재생하고 🔇 로 켠다 */
+let V_MUTE = window.matchMedia("(pointer: coarse)").matches;
 function vpTime() { if (!VP) return 0; try { return VP.yt ? (VP.yt.getCurrentTime() || 0) : (VP.el.currentTime || 0); } catch (e) { return 0; } }
 function vpSeek(x) { if (!VP) return; try { if (VP.yt) VP.yt.seekTo(x, true); else VP.el.currentTime = x; } catch (e) {} }
 function vpPlaying() { if (!VP) return false; try { return VP.yt ? VP.yt.getPlayerState() === 1 : !VP.el.paused; } catch (e) { return false; } }
@@ -2984,11 +2990,12 @@ function vidStage() {
     vYtApi().then(() => {
       if (VP !== me) return;
       me.yt = new YT.Player(d, { videoId: vYt(want), playerVars: { controls: 0, disablekb: 1, modestbranding: 1, playsinline: 1, rel: 0, start: Math.floor(v.s || 0) },
-        events: { onReady: (e) => { me.ready = true; const dd = e.target.getDuration(); if (dd && !v.dur) { v.dur = dd; } vpSeek(v.s || 0); vidPanel(); } } });
+        events: { onReady: (e) => { me.ready = true; if (V_MUTE) { try { e.target.mute(); } catch (er) {} }
+          const dd = e.target.getDuration(); if (dd && !v.dur) { v.dur = dd; if (v.e == null && dd - (v.s || 0) > VID_MAX) { v.e = (v.s || 0) + VID_MAX; markDirty(); } } vpSeek(v.s || 0); vidPanel(); } } });
     });
   } else if (out || vDirect(want)) {
     const el = document.createElement("video");
-    el.src = want; el.playsInline = true; el.setAttribute("playsinline", ""); el.preload = "auto"; el.crossOrigin = "anonymous";
+    el.src = want; el.playsInline = true; el.setAttribute("playsinline", ""); el.preload = "auto";
     el.onloadedmetadata = () => { if (!out && el.duration && isFinite(el.duration) && !v.dur) v.dur = el.duration; if (!out) el.currentTime = v.s || 0; vidPanel(); };
     el.onended = () => vidPanel();
     lay.appendChild(el);
@@ -3021,6 +3028,7 @@ function vidPanel() {
     '<div class="vrow">' +
       (direct ? '<button type="button" data-v="play">' + (vpPlaying() ? "❚❚ 멈춤" : (VIEW_OUT ? "▶ 결과 재생" : "▶ 구간 재생")) + '</button>' +
         (VIEW_OUT ? '' : '<button type="button" data-v="back">−1초</button><button type="button" data-v="fwd">+1초</button>') +
+        (VP && VP.yt ? '<button type="button" data-v="snd" title="유튜브 소리">' + (V_MUTE ? "🔇" : "🔊") + '</button>' : '') +
         '<span class="vt" data-v="now">' + vFmt(vpTime()) + (totOf() ? " / " + vFmt(totOf()) : "") + '</span>' : '') +
     '</div>' +
     (VIEW_OUT ? '' :
@@ -3061,6 +3069,7 @@ function vidBind() {
       else { if (!VIEW_OUT) { const now = vpTime(); const e2 = v.e != null ? v.e : (v.s || 0) + VID_MAX; if (now < (v.s || 0) || now >= e2 - 0.1) vpSeek(v.s || 0); VLOOP = true; } vpPlay(true); }
       setTimeout(vidPanel, 150);
     }
+    else if (k === "snd") { V_MUTE = !V_MUTE; try { V_MUTE ? VP.yt.mute() : VP.yt.unMute(); } catch (er) {} vidPanel(); }
     else if (k === "back" || k === "fwd") { vpSeek(Math.max(0, vpTime() + (k === "fwd" ? 1 : -1))); }
     else if (k === "sHere" || k === "eHere") {
       const now = Math.round(vpTime() * 10) / 10;
@@ -3389,9 +3398,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.18 19:40';
+    a.title = '판 10.18 19:57';
     var ver = document.createElement('span');
-    ver.textContent = '10.18 19:40';
+    ver.textContent = '10.18 19:57';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
