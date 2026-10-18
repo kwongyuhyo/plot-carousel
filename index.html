@@ -3251,8 +3251,9 @@ document.getElementById("capBtn").onclick = () => {
   const sub = (cover.subtitle || "").trim();
   if (!title) { toast("커버 제목을 먼저 적어주세요"); return; }
   if (studioOn()) {
-    toast("✍️ 맥이 캡션을 씁니다 — 30초~1분");
-    plotStudio.send("caption", { artist: "", title: title, note: sub, category: (deck && deck.category) || "" }).then(
+    toast("✍️ 맥이 취재하고 캡션을 씁니다 — 1~3분");
+    const slides = ((deck && deck.slides) || []).slice(1).map((s) => ((s.heading || "") + " — " + (s.body || "")).trim()).join("\n").slice(0, 1500);
+    plotStudio.send("caption", { artist: "", title: title, note: sub, category: (deck && deck.category) || "", slides: slides }).then(
       (sn) => plotStudio.sheet("✍️ 캡션 초안 — " + (sn.note || ""), sn.caption || ""),
       (e) => toast("캡션을 못 썼습니다 — " + String((e && e.message) || e).slice(0, 90)));
     return;
