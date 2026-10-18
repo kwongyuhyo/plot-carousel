@@ -1249,7 +1249,9 @@ function blank() {
            // [가사] '' = 없음 · '자동' = 봇이 맞춤 · '#id 어긋남 | 고친줄 | 끊기' = 앱에서 맞춘 싱크
            lyr: '',
            // [이어붙이기] 'URL 0:03-0:07 | URL' — 첫 원본 뒤에 붙일 사진·영상 · 전환 '디졸브 0.5' / '블랙 0.5' / '컷'
-           joins: '', trans: '디졸브 0.5' };
+           joins: '', trans: '디졸브 0.5',
+           // [글자시간] 1~3줄이 나오는 때 '0:02-0:08' · '0:02-끝' · '' = 기본(처음 6초) — 타임라인 화면에서 정한다
+           metaTime: '' };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1261,7 +1263,7 @@ function blank() {
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
-              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans'];
+              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans', 'metaTime'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1649,6 +1651,7 @@ function parseForm(text) {
     b.lyr = (kv['가사'] || '').trim();
     b.joins = (kv['이어붙이기'] || '').trim();
     if ((kv['전환'] || '').trim()) b.trans = kv['전환'].trim();
+    b.metaTime = (kv['글자시간'] || '').trim();
     out.push(b);
   }
   return out;
@@ -1787,6 +1790,7 @@ function blockText(b) {
     // [가사] 정했을 때만 — 안 적으면 봇은 지금까지처럼 가사 없이 만든다.
     ...((b.lyr || '').trim() ? ['가사: ' + b.lyr.trim()] : []),
     ...(joinList(b).length ? ['이어붙이기: ' + (b.joins || '').trim(), '전환: ' + (b.trans || '디졸브 0.5').trim()] : []),
+    ...((b.metaTime || '').trim() ? ['글자시간: ' + b.metaTime.trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
@@ -4104,9 +4108,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.18 18:45';
+    a.title = '판 10.18 18:56';
     var ver = document.createElement('span');
-    ver.textContent = '10.18 18:45';
+    ver.textContent = '10.18 18:56';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
