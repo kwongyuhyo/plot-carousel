@@ -1903,6 +1903,7 @@ function buildBlock(b) {
     <div class="hint" data-r="srcErr" hidden></div>
 
     <div class="bfoot">
+      <button class="btn" data-a="tl" title="이 편을 타임라인 편집 화면에서 엽니다 — 클립 자르기·순서·전환·미리보기">🎞 타임라인</button>
       <button class="btn" data-a="one" title="여러 편 중 이 편 하나만 내보냅니다">📤 이 편만</button>
       <button class="btn" data-a="dup">복제</button>
       <button class="btn danger" data-a="del">🗑 삭제</button>
@@ -1966,6 +1967,7 @@ function buildBlock(b) {
   };
   $('[data-a=cut]', body).onclick = () => { active = blocks.indexOf(b); askCut(b); };
   $('[data-a=one]', body).onclick = () => { active = blocks.indexOf(b); sendOne(b); };
+  $('[data-a=tl]', body).onclick = () => openTimeline(b);
   $('[data-a=dup]', body).onclick = () => {
     const copy = Object.assign({}, b, { id: ++seq });
     blocks.splice(blocks.indexOf(b) + 1, 0, copy);
@@ -2026,6 +2028,17 @@ function upload(b, f, root) {
                                                    : ' · 구간을 비우면 영상 전체를 씁니다'));
     refresh();
   });
+}
+
+/* 🎞 타임라인 편집으로 (10/18) — 이 편과 다른 편 양식을 넘기고, 돌아올 때 이 편 자리에 편집 결과를 끼운다 */
+function openTimeline(b) {
+  const idx = blocks.indexOf(b);
+  const o = {}; KEEP.forEach(k => { o[k] = b[k]; });
+  try {
+    localStorage.setItem('plot.timeline.in', JSON.stringify({ idx: idx, texts: blocks.map(blockText), block: o }));
+  } catch (_) { toast('저장소를 쓸 수 없어 넘길 수 없습니다'); return; }
+  remember(b);
+  location.href = 'timeline.html';
 }
 
 /* ── 이어 붙이기 + 전환 (10/18 규효 "사진과 영상 사이에 짜치지 않는 디졸브") ─────────────────────
@@ -4091,9 +4104,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.18 18:34';
+    a.title = '판 10.18 18:45';
     var ver = document.createElement('span');
-    ver.textContent = '10.18 18:34';
+    ver.textContent = '10.18 18:45';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
