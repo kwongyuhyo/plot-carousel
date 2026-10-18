@@ -869,7 +869,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
 })();
 </script>
 <script>window.PLOT_BOT="plot_magazine_bot";</script>
-<script>(function () {
+<script>window.PLOT_UPLOAD={"cloud": "dwndhzqod", "preset": "plot_studio"};</script><script>(function () {
   var SB = { url: "https://jipqujwziezeubtthbnw.supabase.co", key: "sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK" };
   function on() { return /^https:\/\//.test(SB.url || '') && !!SB.key; }
   function req(path, opt) {
@@ -1411,7 +1411,7 @@ function check(b) {
   }
 
   const hasStart = !!b.start.trim(), hasEnd = !!b.end.trim();
-  if (!b.send && !hasStart && !hasEnd) {
+  if (!b.send && !hasStart && !hasEnd && !isUpload(url)) {
     e.span = '구간이 필요합니다. (예: 1:09 – 1:23)';
   } else if (hasStart !== hasEnd) {
     // 한쪽만 적혀 있다. 링크에서 시작만 가져온 직후가 대부분이라
@@ -1818,6 +1818,9 @@ function buildBlock(b) {
 
     <label>원본 <span class="opt">— 유튜브 등 주소, 또는 영상 직접 전송</span></label>
     <input type="text" data-f="url" inputmode="url" placeholder="https://...">
+    <button class="pickBtn upBtn" data-a="up" type="button">📁 휴대폰·컴퓨터에서 영상·사진 올리기</button>
+    <input type="file" data-r="upFile" accept="video/*,image/*" hidden>
+    <div class="hint" data-r="upMsg" hidden></div>
     <div class="srcToggle" data-r="toggle">
       <input type="checkbox" data-f="send">
       <span>영상 직접 전송
@@ -1924,6 +1927,16 @@ function buildBlock(b) {
     refresh();
   };
   $('[data-a=pick]', body).onclick = () => { active = blocks.indexOf(b); openPicker(b); };
+  $('[data-a=up]', body).onclick = () => {
+    active = blocks.indexOf(b);
+    if (!upOn()) { toast('파일 올리기가 아직 연결되지 않았습니다 — 「영상 직접 전송」을 써 주세요'); return; }
+    $('[data-r=upFile]', body).click();
+  };
+  $('[data-r=upFile]', body).onchange = (ev) => {
+    const f = ev.target.files && ev.target.files[0];
+    ev.target.value = '';
+    if (f) upload(b, f, root);
+  };
   $('[data-a=cut]', body).onclick = () => { active = blocks.indexOf(b); askCut(b); };
   $('[data-a=one]', body).onclick = () => { active = blocks.indexOf(b); sendOne(b); };
   $('[data-a=dup]', body).onclick = () => {
@@ -1940,6 +1953,47 @@ function buildBlock(b) {
   root.append(head, body);
   root._parts = { num, ttl, badge, body };
   return root;
+}
+
+/* ── 휴대폰·컴퓨터에서 원본 올리기 (10/18 규효 "사진이랑 영상 소스를 올릴 수 있게") ──────────
+ * 파일을 Cloudinary plot_studio 폴더로 바로 올리고 그 주소를 URL 칸에 넣는다. 맥은 그 주소를 알아보고
+ * yt-dlp 대신 그대로 받아 쓴다(scripts/studio_upload.py). 구간을 비우면 영상 전체, 사진은 6초 정지 화면.
+ * 무료 요금제 한도: 영상 100MB · 사진 10MB — 넘으면 「영상 직접 전송」(텔레그램)으로. */
+const UP_RX = /^https:\/\/res\.cloudinary\.com\/[^/]+\/(image|video|raw)\/upload\/(?:[^?#]*\/)?plot_studio\/[^?#]+$/i;
+function isUpload(u) { return UP_RX.test(String(u || '').trim()); }
+function upOn() { const c = window.PLOT_UPLOAD; return !!(c && c.cloud && c.preset); }
+function upload(b, f, root) {
+  const img = /^image\//.test(f.type) || /\.(jpe?g|png|webp|heic|heif|gif|avif)$/i.test(f.name);
+  const cap = img ? 10 : 100, mb = f.size / 1048576;
+  const msg = $('[data-r=upMsg]', root);
+  const say = (t) => { msg.hidden = !t; msg.textContent = t || ''; };
+  if (mb > cap) {
+    say((img ? '사진' : '영상') + '이 ' + mb.toFixed(0) + 'MB 라 올릴 수 없습니다 (한도 ' + cap + 'MB). ' +
+        (img ? '조금 줄여서 올려 주세요.' : '「영상 직접 전송」을 켜고 텔레그램으로 보내 주세요.'));
+    return;
+  }
+  const c = window.PLOT_UPLOAD, fd = new FormData();
+  fd.append('file', f); fd.append('upload_preset', c.preset);
+  const x = new XMLHttpRequest();
+  x.open('POST', 'https://api.cloudinary.com/v1_1/' + encodeURIComponent(c.cloud) + '/auto/upload');
+  x.upload.onprogress = (e) => { if (e.lengthComputable) say('⏫ 올리는 중 ' + Math.round(100 * e.loaded / e.total) + '% · ' + f.name); };
+  x.onerror = () => say('올리지 못했습니다 — 연결을 확인하고 다시 눌러 주세요');
+  x.onload = () => {
+    let r = {};
+    try { r = JSON.parse(x.responseText || '{}'); } catch (_) {}
+    if (x.status >= 300 || !r.secure_url) {
+      say('올리지 못했습니다 — ' + String((r.error && r.error.message) || x.status).slice(0, 120)); return;
+    }
+    b.url = r.secure_url; b.send = false;
+    const inp = $('[data-f=url]', root); if (inp) inp.value = b.url;
+    const sd = $('[data-f=send]', root); if (sd) sd.checked = false;
+    const len = r.duration ? ' · ' + fmtStamp(r.duration) : '';
+    say('✓ 올렸습니다 — ' + f.name + len + (img ? ' · 사진은 정지 화면 6초 (구간을 0:00-0:08 처럼 적으면 그 길이)'
+                                                 : ' · 구간을 비우면 영상 전체를 씁니다'));
+    refresh();
+  };
+  say('⏫ 올리는 중 0% · ' + f.name);
+  x.send(fd);
 }
 
 /* ── 유튜브에서 가져와 빈 칸만 채운다 ──────────────────
@@ -3899,9 +3953,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.18 12:14';
+    a.title = '판 10.18 13:16';
     var ver = document.createElement('span');
-    ver.textContent = '10.18 12:14';
+    ver.textContent = '10.18 13:16';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
