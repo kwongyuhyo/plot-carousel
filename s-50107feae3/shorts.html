@@ -19,6 +19,13 @@
   font-weight:900; font-display:swap}
 @font-face{font-family:PlotPre;  src:url(f-eb.woff2) format('woff2');
   font-weight:800; font-display:swap}
+.joinBox{margin-top:10px;padding:10px;border:1px dashed var(--line,rgba(127,127,127,.35));border-radius:12px}
+.joinBox .jrow{display:flex;align-items:center;gap:6px;margin:6px 0}
+.joinBox .jrow b{font-size:12px;opacity:.6;width:16px}
+.joinBox .jrow .jn{flex:1;min-width:0;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.joinBox .jrow input{width:62px;padding:6px 8px;font-size:13px}
+.joinBox .jrow button{border:0;background:transparent;color:inherit;font-size:15px;padding:4px 6px;opacity:.7}
+.joinBox .chips{margin-top:8px}
 </style>
 <style>
 /* 완성물·캐러셀 스튜디오와 같은 팔레트. 흑백으로 두고 앰버 하나만 액센트로.
@@ -1239,7 +1246,9 @@ function blank() {
            // [서사] 서사형 오늘의 노래 — 한 줄에 하나, 첫 줄이 첫 화면. 서사영상은 「링크 시작-끝」
            story: '', storyClip: '', storyCredit: '', storyCrop: '', storyZoom: '',
            // [가사] '' = 없음 · '자동' = 봇이 맞춤 · '#id 어긋남 | 고친줄 | 끊기' = 앱에서 맞춘 싱크
-           lyr: '' };
+           lyr: '',
+           // [이어붙이기] 'URL 0:03-0:07 | URL' — 첫 원본 뒤에 붙일 사진·영상 · 전환 '디졸브 0.5' / '블랙 0.5' / '컷'
+           joins: '', trans: '디졸브 0.5' };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1251,7 +1260,7 @@ function blank() {
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
-              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr'];
+              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1438,6 +1447,9 @@ function check(b) {
     const r = pct ? v / 100 : v;
     if (!(r >= 0 && r <= 1) || !/^[\d.]+%?$/.test(cr)) e.story = '여담 화면 위치는 왼쪽·가운데·오른쪽, 0~1, 또는 30% 처럼 적습니다.';
   }
+  const jl = joinList(b);
+  if (jl.some(x => !x.ok)) e.join = '이어 붙일 원본의 주소나 구간을 확인해 주세요.';
+  else if (jl.length && b.send) e.join = '이어 붙이기는 「영상 직접 전송」과 같이 쓸 수 없습니다 — 첫 원본도 올리거나 주소로 넣어 주세요.';
   if (!b.title.trim())  e.title  = '3줄(맨 아래 줄)은 필수입니다.';
   if (!b.source.trim()) e.source = '출처는 필수입니다.';
   return e;
@@ -1634,6 +1646,8 @@ function parseForm(text) {
     b.storyCrop = (kv['서사리프레임'] || '').trim();
     b.storyZoom = (kv['서사확대'] || '').trim();
     b.lyr = (kv['가사'] || '').trim();
+    b.joins = (kv['이어붙이기'] || '').trim();
+    if ((kv['전환'] || '').trim()) b.trans = kv['전환'].trim();
     out.push(b);
   }
   return out;
@@ -1771,6 +1785,7 @@ function blockText(b) {
     ...((b.storyClip || '').trim() && (b.storyZoom || '').trim() ? ['서사확대: ' + b.storyZoom.trim()] : []),
     // [가사] 정했을 때만 — 안 적으면 봇은 지금까지처럼 가사 없이 만든다.
     ...((b.lyr || '').trim() ? ['가사: ' + b.lyr.trim()] : []),
+    ...(joinList(b).length ? ['이어붙이기: ' + (b.joins || '').trim(), '전환: ' + (b.trans || '디졸브 0.5').trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
@@ -1821,6 +1836,16 @@ function buildBlock(b) {
     <button class="pickBtn upBtn" data-a="up" type="button">📁 휴대폰·컴퓨터에서 영상·사진 올리기</button>
     <input type="file" data-r="upFile" accept="video/*,image/*" hidden>
     <div class="hint" data-r="upMsg" hidden></div>
+    <div class="joinBox">
+      <label>이어 붙이기 <span class="opt">— 원본 뒤에 사진·영상을 더 붙이고 그 사이를 전환으로 잇습니다 · 사진은 4초</span></label>
+      <div data-r="joinList"></div>
+      <button class="pickBtn" data-a="joinUp" type="button">＋ 사진·영상 올려서 붙이기</button>
+      <input type="file" data-r="joinFile" accept="video/*,image/*" multiple hidden>
+      <input type="text" data-r="joinUrl" inputmode="url" placeholder="또는 주소를 붙여넣고 엔터 (유튜브 등 · 뒤에 0:03-0:07 처럼 구간)">
+      <div class="chips" data-r="transKind"></div>
+      <div class="chips" data-r="transDur"></div>
+      <div class="hint" data-r="joinMsg" hidden></div>
+    </div>
     <div class="srcToggle" data-r="toggle">
       <input type="checkbox" data-f="send">
       <span>영상 직접 전송
@@ -1932,6 +1957,7 @@ function buildBlock(b) {
     if (!upOn()) { toast('파일 올리기가 아직 연결되지 않았습니다 — 「영상 직접 전송」을 써 주세요'); return; }
     $('[data-r=upFile]', body).click();
   };
+  joinBind(b, body);
   $('[data-r=upFile]', body).onchange = (ev) => {
     const f = ev.target.files && ev.target.files[0];
     ev.target.value = '';
@@ -1962,38 +1988,135 @@ function buildBlock(b) {
 const UP_RX = /^https:\/\/res\.cloudinary\.com\/[^/]+\/(image|video|raw)\/upload\/(?:[^?#]*\/)?plot_studio\/[^?#]+$/i;
 function isUpload(u) { return UP_RX.test(String(u || '').trim()); }
 function upOn() { const c = window.PLOT_UPLOAD; return !!(c && c.cloud && c.preset); }
-function upload(b, f, root) {
+function upFile(f, onPct, done) {
   const img = /^image\//.test(f.type) || /\.(jpe?g|png|webp|heic|heif|gif|avif)$/i.test(f.name);
   const cap = img ? 10 : 100, mb = f.size / 1048576;
-  const msg = $('[data-r=upMsg]', root);
-  const say = (t) => { msg.hidden = !t; msg.textContent = t || ''; };
   if (mb > cap) {
-    say((img ? '사진' : '영상') + '이 ' + mb.toFixed(0) + 'MB 라 올릴 수 없습니다 (한도 ' + cap + 'MB). ' +
-        (img ? '조금 줄여서 올려 주세요.' : '「영상 직접 전송」을 켜고 텔레그램으로 보내 주세요.'));
+    done((img ? '사진' : '영상') + '이 ' + mb.toFixed(0) + 'MB 라 올릴 수 없습니다 (한도 ' + cap + 'MB). ' +
+         (img ? '조금 줄여서 올려 주세요.' : '「영상 직접 전송」을 켜고 텔레그램으로 보내 주세요.'));
     return;
   }
   const c = window.PLOT_UPLOAD, fd = new FormData();
   fd.append('file', f); fd.append('upload_preset', c.preset);
   const x = new XMLHttpRequest();
   x.open('POST', 'https://api.cloudinary.com/v1_1/' + encodeURIComponent(c.cloud) + '/auto/upload');
-  x.upload.onprogress = (e) => { if (e.lengthComputable) say('⏫ 올리는 중 ' + Math.round(100 * e.loaded / e.total) + '% · ' + f.name); };
-  x.onerror = () => say('올리지 못했습니다 — 연결을 확인하고 다시 눌러 주세요');
+  x.upload.onprogress = (e) => { if (e.lengthComputable) onPct(Math.round(100 * e.loaded / e.total)); };
+  x.onerror = () => done('올리지 못했습니다 — 연결을 확인하고 다시 눌러 주세요');
   x.onload = () => {
     let r = {};
     try { r = JSON.parse(x.responseText || '{}'); } catch (_) {}
-    if (x.status >= 300 || !r.secure_url) {
-      say('올리지 못했습니다 — ' + String((r.error && r.error.message) || x.status).slice(0, 120)); return;
-    }
+    if (x.status >= 300 || !r.secure_url) { done('올리지 못했습니다 — ' + String((r.error && r.error.message) || x.status).slice(0, 120)); return; }
+    r._img = img;
+    done(null, r);
+  };
+  onPct(0);
+  x.send(fd);
+}
+function upload(b, f, root) {
+  const msg = $('[data-r=upMsg]', root);
+  const say = (t) => { msg.hidden = !t; msg.textContent = t || ''; };
+  upFile(f, (pct) => say('⏫ 올리는 중 ' + pct + '% · ' + f.name), (err, r) => {
+    if (err) { say(err); return; }
     b.url = r.secure_url; b.send = false;
     const inp = $('[data-f=url]', root); if (inp) inp.value = b.url;
     const sd = $('[data-f=send]', root); if (sd) sd.checked = false;
     const len = r.duration ? ' · ' + fmtStamp(r.duration) : '';
-    say('✓ 올렸습니다 — ' + f.name + len + (img ? ' · 사진은 정지 화면 6초 (구간을 0:00-0:08 처럼 적으면 그 길이)'
-                                                 : ' · 구간을 비우면 영상 전체를 씁니다'));
+    say('✓ 올렸습니다 — ' + f.name + len + (r._img ? ' · 사진은 정지 화면 6초 (구간을 0:00-0:08 처럼 적으면 그 길이 · 이어 붙이면 4초)'
+                                                   : ' · 구간을 비우면 영상 전체를 씁니다'));
     refresh();
+  });
+}
+
+/* ── 이어 붙이기 + 전환 (10/18 규효 "사진과 영상 사이에 짜치지 않는 디졸브") ─────────────────────
+ * b.joins = 'URL 0:03-0:07 | URL' (양식 줄 그대로), b.trans = '디졸브 0.5' · '블랙 0.5' · '컷'.
+ * 맥(scripts/studio_upload.fetch_join)이 조각마다 세로 1080x1920 으로 맞추고 전환으로 잇는다. */
+const TR_KIND = [['디졸브', '디졸브', '겹쳐서 부드럽게'], ['블랙', '블랙 디졸브', '검은 화면을 거쳐서'], ['컷', '컷', '전환 없이']];
+const TR_DUR = [['0.3', '빠르게'], ['0.5', '보통'], ['0.8', '느리게']];
+function joinList(b) {
+  return String(b.joins || '').split('|').map(x => x.trim()).filter(Boolean).map(t => {
+    const m = /^(https?:\/\/\S+)(?:\s+([\d:.;f]+)\s*-\s*([\d:.;f]+))?$/.exec(t);
+    if (!m) return { raw: t, ok: false };
+    const ok = !m[2] || (toSec(m[2]) !== null && toSec(m[3]) !== null && toSec(m[3]) > toSec(m[2]));
+    return { raw: t, url: m[1], start: m[2] || '', end: m[3] || '', ok: ok };
+  });
+}
+function joinSet(b, list) {
+  b.joins = list.map(x => x.url ? x.url + (x.start && x.end ? ' ' + x.start + '-' + x.end : '') : x.raw).join(' | ');
+}
+function transOf(b) {
+  const t = String(b.trans || '디졸브 0.5').trim();
+  const k = /^블랙/.test(t) ? '블랙' : /^컷/.test(t) ? '컷' : '디졸브';
+  const d = (/(\d+(?:\.\d+)?)/.exec(t) || [, '0.5'])[1];
+  return { k: k, d: d };
+}
+function joinName(u) {
+  if (isUpload(u)) return (/\/image\//.test(u) ? '🖼 사진 ' : '🎞 영상 ') + u.split('/').pop().slice(0, 12);
+  const y = ytId(u);
+  return y ? '▶ 유튜브 ' + y : '🔗 ' + u.replace(/^https?:\/\//, '').slice(0, 28);
+}
+function joinPaint(b, body) {
+  const box = $('[data-r=joinList]', body), list = joinList(b);
+  box.innerHTML = list.map((x, i) => '<div class="jrow" data-j="' + i + '"><b>' + (i + 2) + '</b>' +
+    '<span class="jn">' + escapeHtml(x.url ? joinName(x.url) : x.raw) + '</span>' +
+    '<input type="text" data-js="' + i + '" inputmode="numeric" placeholder="시작" value="' + escapeHtml(x.start || '') + '">' +
+    '<input type="text" data-je="' + i + '" inputmode="numeric" placeholder="끝" value="' + escapeHtml(x.end || '') + '">' +
+    '<button type="button" data-jx="' + i + '" aria-label="빼기">✕</button></div>').join('');
+  const tr = transOf(b);
+  const kind = $('[data-r=transKind]', body), dur = $('[data-r=transDur]', body);
+  kind.hidden = dur.hidden = !list.length;
+  kind.innerHTML = TR_KIND.map(x => '<button type="button" class="chip' + (tr.k === x[0] ? ' on' : '') + '" data-tk="' + x[0] +
+    '" title="' + x[2] + '">' + x[1] + '</button>').join('');
+  dur.innerHTML = tr.k === '컷' ? '' : TR_DUR.map(x => '<button type="button" class="chip' + (tr.d === x[0] ? ' on' : '') +
+    '" data-td="' + x[0] + '">' + x[1] + ' ' + x[0] + '초</button>').join('');
+}
+function joinBind(b, body) {
+  const msg = $('[data-r=joinMsg]', body);
+  const say = (t) => { msg.hidden = !t; msg.textContent = t || ''; };
+  const add = (u) => { const l = joinList(b); l.push({ url: u, start: '', end: '' }); joinSet(b, l); joinPaint(b, body); refresh(); };
+  $('[data-a=joinUp]', body).onclick = () => {
+    if (!upOn()) { toast('파일 올리기가 아직 연결되지 않았습니다'); return; }
+    $('[data-r=joinFile]', body).click();
   };
-  say('⏫ 올리는 중 0% · ' + f.name);
-  x.send(fd);
+  $('[data-r=joinFile]', body).onchange = (ev) => {
+    const fs = Array.from(ev.target.files || []); ev.target.value = '';
+    (function next(i) {
+      if (i >= fs.length) return;
+      upFile(fs[i], (pct) => say('⏫ ' + (i + 1) + '/' + fs.length + ' 올리는 중 ' + pct + '% · ' + fs[i].name), (err, r) => {
+        if (err) { say(err); return; }
+        add(r.secure_url);
+        say('✓ ' + (i + 1) + '/' + fs.length + ' 붙였습니다 — ' + fs[i].name);
+        next(i + 1);
+      });
+    })(0);
+  };
+  $('[data-r=joinUrl]', body).addEventListener('keydown', (ev) => {
+    if (ev.key !== 'Enter' || ev.isComposing) return;
+    ev.preventDefault();
+    const v = ev.target.value.trim();
+    if (!/^https?:\/\//i.test(v)) { say('http 로 시작하는 주소를 넣어 주세요'); return; }
+    const l = joinList(b); l.push({ raw: v }); b.joins = l.map(x => x.raw).join(' | ');
+    ev.target.value = ''; say(''); joinPaint(b, body); refresh();
+  });
+  body.addEventListener('click', (ev) => {
+    const x = ev.target.closest('[data-jx]'), k = ev.target.closest('[data-tk]'), d = ev.target.closest('[data-td]');
+    if (x) { const l = joinList(b); l.splice(Number(x.dataset.jx), 1); joinSet(b, l); }
+    else if (k) b.trans = k.dataset.tk === '컷' ? '컷' : k.dataset.tk + ' ' + transOf(b).d;
+    else if (d) b.trans = transOf(b).k + ' ' + d.dataset.td;
+    else return;
+    joinPaint(b, body); refresh();
+  });
+  body.addEventListener('change', (ev) => {
+    const t = ev.target, i = t.dataset.js !== undefined ? t.dataset.js : t.dataset.je;
+    if (i === undefined) return;
+    const l = joinList(b), it = l[Number(i)];
+    if (!it || !it.url) return;
+    // 한 줄의 시작·끝을 같이 읽는다 — 한쪽만 적힌 동안에는 양식에 넣지 않고 칸에만 둔다
+    const row = t.closest('.jrow');
+    it.start = ($('[data-js]', row).value || '').trim(); it.end = ($('[data-je]', row).value || '').trim();
+    if ((it.start && !it.end) || (!it.start && it.end)) return;
+    joinSet(b, l); refresh();
+  });
+  joinPaint(b, body);
 }
 
 /* ── 유튜브에서 가져와 빈 칸만 채운다 ──────────────────
@@ -2073,7 +2196,7 @@ function sync() {
       if (inp.type === 'checkbox') { if (inp.checked !== v) inp.checked = v; }
       else if (inp.value !== v && document.activeElement !== inp) inp.value = v;
     });
-    body.querySelectorAll('.chip').forEach(c =>
+    body.querySelectorAll('[data-r=chips] .chip').forEach(c =>
       c.classList.toggle('on', c.dataset.cat === b.cat));
     $('[data-f=custom]', body).hidden = b.cat !== '__custom__';
     // 직접 전송이면 URL 칸은 잠근다 — 둘 다 채우면 무엇이 쓰일지 헷갈린다.
@@ -2133,6 +2256,8 @@ function refresh() {
       }
     }
     put('spanErr', e.span);
+    { const jm = $('[data-r=joinMsg]', body); if (e.join) { jm.hidden = false; jm.textContent = e.join; jm.classList.add('bad'); }
+      else if (jm.classList.contains('bad')) { jm.hidden = true; jm.textContent = ''; jm.classList.remove('bad'); } }
     put('titleErr', e.title, 'title');
     put('srcErr', e.source, 'source');
     put('storyErr', e.story, 'storyClip');
@@ -3953,9 +4078,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.18 13:16';
+    a.title = '판 10.18 15:31';
     var ver = document.createElement('span');
-    ver.textContent = '10.18 13:16';
+    ver.textContent = '10.18 15:31';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
