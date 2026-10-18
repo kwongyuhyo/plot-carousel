@@ -572,6 +572,8 @@ pre.form{
 .addRow .addBtn.ghost{flex:0 0 auto; white-space:nowrap;
   padding-left:15px; padding-right:15px; color:var(--dim)}
 .addBtn.ghost:hover{color:var(--ink)}
+.addRow{flex-wrap:wrap}
+a.addBtn{text-decoration:none; text-align:center; box-sizing:border-box; display:block}
 
 .resume{
   display:flex; align-items:center; gap:10px; flex-wrap:wrap;
@@ -889,7 +891,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
@@ -977,6 +979,7 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
       <button class="addBtn ghost" id="paste" title="링크 여러 개 또는 [영상] 양식 텍스트">📥 붙여넣기</button>
       <button class="addBtn ghost" id="saveBtn" title="지금 쓴 양식을 이름 붙여 저장">💾 저장</button>
       <button class="addBtn ghost" id="openBtn" title="저장해 둔 양식 열기">📂 불러오기</button>
+      <a class="addBtn ghost" id="spLink" href="timeline.html#special" title="여러 곡을 이어 보여주는 특집·순위 카운트다운 차트 — 타임라인 편집에서 만듭니다">🏆 특집·차트</a>
     </div>
     <div class="summary" id="summary"></div>
     <div id="outsideBar" hidden>
@@ -1251,7 +1254,11 @@ function blank() {
            // [이어붙이기] 'URL 0:03-0:07 | URL' — 첫 원본 뒤에 붙일 사진·영상 · 전환 '디졸브 0.5' / '블랙 0.5' / '컷'
            joins: '', trans: '디졸브 0.5',
            // [글자시간] 1~3줄이 나오는 때 '0:02-0:08' · '0:02-끝' · '' = 기본(처음 6초) — 타임라인 화면에서 정한다
-           metaTime: '' };
+           metaTime: '',
+           // [화면] 조각마다 '자동 | 채움 0.3 | 맞춤' — 타임라인에서 정한다 · [CTA] '' = 카테고리 따라 자동
+           frames: '', cta: '',
+           // [서사배경음] 여담 밑에 노래 깔기 (기본 켬)
+           storyBed: true };
 }
 
 /* ── 임시 저장 ─────────────────────────────────────────
@@ -1263,7 +1270,8 @@ function blank() {
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
-              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans', 'metaTime'];
+              'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans', 'metaTime',
+              'frames', 'cta', 'storyBed'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1652,6 +1660,9 @@ function parseForm(text) {
     b.joins = (kv['이어붙이기'] || '').trim();
     if ((kv['전환'] || '').trim()) b.trans = kv['전환'].trim();
     b.metaTime = (kv['글자시간'] || '').trim();
+    b.frames = (kv['화면'] || '').trim();
+    b.cta = CTA_LIST.indexOf((kv['CTA'] || '').replace(/\s/g, '')) >= 0 ? (kv['CTA'] || '').replace(/\s/g, '') : '';
+    b.storyBed = ['끔', '없음', 'off', 'no', '0', 'x'].indexOf((kv['서사배경음'] || '').trim().toLowerCase()) < 0;
     out.push(b);
   }
   return out;
@@ -1791,9 +1802,15 @@ function blockText(b) {
     ...((b.lyr || '').trim() ? ['가사: ' + b.lyr.trim()] : []),
     ...(joinList(b).length ? ['이어붙이기: ' + (b.joins || '').trim(), '전환: ' + (b.trans || '디졸브 0.5').trim()] : []),
     ...((b.metaTime || '').trim() ? ['글자시간: ' + b.metaTime.trim()] : []),
+    ...((b.storyClip || '').trim() && b.storyBed === false ? ['서사배경음: 끔'] : []),
+    ...((b.frames || '').trim() ? ['화면: ' + b.frames.trim()] : []),
+    ...((b.cta || '').trim() ? ['CTA: ' + b.cta.trim()] : []),
   ].join('\n');
 }
 const formText = () => blocks.map(blockText).join('\n\n');
+/* 끝 화면(CTA) — bot/telegram_bot 의 _CTA_OK 와 같은 7종 · 비우면 카테고리를 따른다 (scripts/cta_concat.map_category_to_fmt) */
+const CTA_LIST = ['이슈', '오늘의노래', '특집', '데일리', '신보', '인터뷰', '라이브'];
+const CTA_OF = { 'New release!': '신보', 'Issue': '이슈', '오늘의 노래': '오늘의노래', 'Feature': '특집', 'Daily': '데일리', 'Interview': '인터뷰', 'Live clip': '라이브' };
 /* 서사영상 「링크 a-b, c-d」 → [[초,초],…] · 형식이 틀리면 null · 구간이 거꾸로거나 겹치면 false */
 function storyRanges(txt) {
   const m = /^https?:\/\/\S+\s+(.+)$/.exec(String(txt || '').trim());
@@ -1898,6 +1915,9 @@ function buildBlock(b) {
       <input type="text" data-f="storyCredit" placeholder="출처: ">
       <label>여담 화면 위치 <span class="opt">— 비우면 자동(얼굴 따라감) · 왼쪽 / 가운데 / 오른쪽 · 0~1 · 30%</span></label>
       <input type="text" data-f="storyCrop" placeholder="자동">
+      <label>방송 자막띠 밀어내기 <span class="opt">— 여담 장면 아래 방송 자막이 겹치면 1.1~1.4 로 확대 · 비우면 그대로</span></label>
+      <input type="text" data-f="storyZoom" inputmode="decimal" placeholder="1.0">
+      <div class="srcToggle"><input type="checkbox" data-f="storyBed"><span>여담 밑에 노래 깔기<small>끄면 여담은 말소리만 나옵니다.</small></span></div>
       <div class="hint" data-r="storyErr" hidden></div>
       <div class="hint" data-r="storyTip"></div>
     </div>
@@ -1906,9 +1926,14 @@ function buildBlock(b) {
     <input type="text" data-f="source" placeholder="하이브 / 제공 | 하이브 / 촬영 | PLOT">
     <div class="hint" data-r="srcErr" hidden></div>
 
+    <label>끝 화면 (CTA) <span class="opt">— 비우면 카테고리에 맞춰 자동</span></label>
+    <div class="chips" data-r="ctaChips"></div>
+    <div class="hint" data-r="frameNote" hidden></div>
+
     <div class="bfoot">
       <button class="btn" data-a="tl" title="이 편을 타임라인 편집 화면에서 엽니다 — 클립 자르기·순서·전환·미리보기">🎞 타임라인</button>
       <button class="btn" data-a="one" title="여러 편 중 이 편 하나만 내보냅니다">📤 이 편만</button>
+      <button class="btn" data-a="raw" hidden title="리프레임·글자 없이 고른 구간만 편집용 파일로 받습니다 (텔레그램으로 옵니다)">🎞 원본만</button>
       <button class="btn" data-a="dup">복제</button>
       <button class="btn danger" data-a="del">🗑 삭제</button>
     </div>`;
@@ -1972,6 +1997,13 @@ function buildBlock(b) {
   $('[data-a=cut]', body).onclick = () => { active = blocks.indexOf(b); askCut(b); };
   $('[data-a=one]', body).onclick = () => { active = blocks.indexOf(b); sendOne(b); };
   $('[data-a=tl]', body).onclick = () => openTimeline(b);
+  { const rb = $('[data-a=raw]', body); if (studioOn()) { rb.hidden = false; rb.onclick = () => { active = blocks.indexOf(b); sendRaw(b); }; } }
+  { const cc = $('[data-r=ctaChips]', body);
+    [''].concat(CTA_LIST).forEach(x => {
+      const chip = el('button', 'chip'); chip.type = 'button'; chip.dataset.cta = x;
+      chip.onclick = () => { b.cta = x; sync(); refresh(); };
+      cc.append(chip);
+    }); }
   $('[data-a=dup]', body).onclick = () => {
     const copy = Object.assign({}, b, { id: ++seq });
     blocks.splice(blocks.indexOf(b) + 1, 0, copy);
@@ -2039,7 +2071,7 @@ function openTimeline(b) {
   const idx = blocks.indexOf(b);
   const o = {}; KEEP.forEach(k => { o[k] = b[k]; });
   try {
-    localStorage.setItem('plot.timeline.in', JSON.stringify({ idx: idx, texts: blocks.map(blockText), block: o }));
+    localStorage.setItem('plot.timeline.in', JSON.stringify({ idx: idx, texts: blocks.map(blockText), block: o, fps: UNIT.fps }));
   } catch (_) { toast('저장소를 쓸 수 없어 넘길 수 없습니다'); return; }
   remember(b);
   location.href = 'timeline.html';
@@ -2210,12 +2242,20 @@ function sync() {
     if (!root) return;
     const body = root._parts.body;
     body.querySelectorAll('[data-f]').forEach(inp => {
-      const v = b[inp.dataset.f];
-      if (inp.type === 'checkbox') { if (inp.checked !== v) inp.checked = v; }
+      const v = inp.dataset.f === 'storyBed' ? b.storyBed !== false : b[inp.dataset.f];
+      if (inp.type === 'checkbox') { if (inp.checked !== !!v) inp.checked = !!v; }
       else if (inp.value !== v && document.activeElement !== inp) inp.value = v;
     });
     body.querySelectorAll('[data-r=chips] .chip').forEach(c =>
       c.classList.toggle('on', c.dataset.cat === b.cat));
+    body.querySelectorAll('[data-r=ctaChips] .chip').forEach(c => {
+      c.classList.toggle('on', c.dataset.cta === (b.cta || ''));
+      if (!c.dataset.cta) c.textContent = '자동 (' + (CTA_OF[b.cat] || '이슈') + ')';
+      else c.textContent = c.dataset.cta;
+    });
+    { const fn = $('[data-r=frameNote]', body);
+      fn.hidden = !(b.frames || '').trim();
+      if (!fn.hidden) fn.textContent = '🎞 화면 배치: ' + b.frames.trim() + ' — 타임라인에서 정했습니다 (바꾸려면 「🎞 타임라인」)'; }
     $('[data-f=custom]', body).hidden = b.cat !== '__custom__';
     // 직접 전송이면 URL 칸은 잠근다 — 둘 다 채우면 무엇이 쓰일지 헷갈린다.
     const u = $('[data-f=url]', body);
@@ -3961,6 +4001,18 @@ function sendOne(b) {
   }
 }
 
+/* 🎞 원본만 (10/18) — 리프레임·글자 없이 구간만 편집용 파일로 텔레그램에. 봇의 「원본만」·/dl 과 같은 길 (bot/app_studio op=raw) */
+function sendRaw(b) {
+  if (b.send || !b.url.trim()) { toast('원본 주소가 있어야 받을 수 있습니다'); return; }
+  const e = check(b);
+  if (e.url || e.span || e.join) { toast('주소·구간을 먼저 확인해 주세요'); return; }
+  toast('🎞 원본을 받아 텔레그램으로 보냅니다 — 리프레임·글자 없이');
+  let shown = '';
+  plotStudio.send('raw', { text: blockText(b) }, function (step) { if (step !== shown) { shown = step; toast('🎞 ' + step); } })
+    .then(function (sn) { toast('✓ ' + (sn.note || '보냈습니다')); })
+    .catch(function (er) { toast('못 받았습니다 — ' + String(er && er.message || er).slice(0, 90)); });
+}
+
 function copy(text, msg) {
   const done = () => toast(msg || (blocks.length > 1 ? blocks.length + '편 양식을 모두 복사했습니다 — 봇에 붙여넣으세요'
                                                       : '복사했습니다 — 봇에 붙여넣으세요'));
@@ -4108,9 +4160,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.18 18:56';
+    a.title = '판 10.18 19:40';
     var ver = document.createElement('span');
-    ver.textContent = '10.18 18:56';
+    ver.textContent = '10.18 19:40';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

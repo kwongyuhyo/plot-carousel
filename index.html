@@ -364,6 +364,44 @@ main{display:grid;gap:0;padding-bottom:96px}
 #fitLayer{position:absolute;inset:0;cursor:grab;touch-action:none;
   box-shadow:inset 0 0 0 2px rgba(232,179,74,.85)}
 #fitLayer.drag{cursor:grabbing}
+/* 영상 장 (10/18) — 미리보기 뒤에 영상을 깔고, 캔버스는 글자만 그린다 */
+#stage{position:relative;z-index:1}
+#hot{z-index:2}
+#vidLayer{position:absolute;inset:0;overflow:hidden;border-radius:4px;background:#141414;display:none;z-index:0}
+#canvasbox.vid #vidLayer{display:block}
+#canvasbox.vid #stage{background:transparent}
+#canvasbox.out #stage,#canvasbox.out #hot{visibility:hidden}
+#canvasbox.out #vidLayer{z-index:3}
+#vidLayer video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+#vidLayer .ytw{position:absolute;top:0;height:100%;width:222.3%;left:-61.15%;pointer-events:none}
+#vidLayer .ytw iframe,#vidLayer .ytw>div{width:100%;height:100%;border:0}
+#vidLayer .vnote{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#aaa;font-size:13px;line-height:1.5;text-align:center;padding:20px}
+.vidrow{display:flex;gap:8px;margin:-8px 0 18px;flex-wrap:wrap}
+.vidrow button{border:1px solid var(--line);border-radius:7px;padding:9px 14px;font-size:14px;background:var(--panel);color:var(--muted);cursor:pointer}
+.vidbox{border:1px solid var(--line);border-radius:10px;padding:12px;margin:-6px 0 18px;background:var(--panel)}
+.vidbox .vh{font-size:13px;font-weight:700;margin-bottom:6px;display:flex;justify-content:space-between;gap:8px}
+.vidbox .vh span{font-weight:400;color:var(--muted);word-break:break-all;font-size:12px}
+.vidbox .vrow{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.vidbox .vrow label{font-size:12.5px;color:var(--muted);min-width:28px}
+.vidbox input{width:96px;border:1px solid var(--line);border-radius:7px;padding:7px 8px;background:var(--bg);color:var(--text);font:inherit;font-size:14px}
+.vidbox button{border:1px solid var(--line);border-radius:7px;padding:7px 10px;font-size:13px;background:var(--raise);color:var(--text);cursor:pointer}
+.vidbox button.go{background:var(--accent,#E8B34A);border-color:var(--accent,#E8B34A);color:#111;font-weight:700}
+.vidbox button:disabled{opacity:.45;cursor:default}
+.vidbox .vt{font:12.5px ui-monospace,Menlo,monospace;color:var(--muted)}
+.vidbox .vstat{font-size:12.5px;margin-top:10px;line-height:1.55;color:var(--muted)}
+.vidbox .vstat b{color:var(--text)}
+.vidbox .vstat.bad{color:#E0786A}
+.vidbox .vstat.ok b{color:#6FBF8B}
+.vidbox input[type=range]{width:100%;accent-color:var(--accent,#E8B34A);padding:0;border:0}
+@media(max-width:979px){.vidbox input{width:84px;font-size:16px}.vidbox button{padding:9px 11px;font-size:14px}
+}
+/* 영상 칸은 미리보기 바로 아래 — 영상을 보면서 구간을 정한다 */
+.stagewrap .vidbox{margin:0}
+body.vidOn .tapnote{display:none}
+@media(min-width:980px){
+  body.vidOn .left{max-height:calc(100vh - 110px);overflow:auto}
+  body.vidOn #canvasbox{width:min(100%,calc((100vh - 470px) * .8));min-width:260px;margin:0 auto}
+}
 /* 글 검사 — 렌더가 겪은 일과 자주 틀리는 맞춤법 */
 .lintBox{margin-top:9px;border:1px solid rgba(255,255,255,.14);border-radius:7px;
   padding:8px 10px;display:flex;flex-direction:column;gap:4px}
@@ -520,6 +558,7 @@ main{display:grid;gap:0;padding-bottom:96px}
   <div class="left">
     <div class="stagewrap">
       <div id="canvasbox">
+        <div id="vidLayer"></div>
         <canvas id="stage" width="1080" height="1350" aria-label="카드뉴스 미리보기"></canvas>
         <div id="hot"></div>
         <div id="fitLayer" hidden></div>
@@ -533,6 +572,7 @@ main{display:grid;gap:0;padding-bottom:96px}
           <p id="qhint"></p>
         </div>
       </div>
+      <div class="vidbox" id="vidBox" hidden></div>
       <p class="tapnote">미리보기의 글자를 눌러 바로 고칠 수 있습니다. 사진은 빈 자리를 누르세요.</p>
       <div class="nav">
         <button id="prev" type="button" aria-label="이전 장">‹</button>
@@ -586,6 +626,11 @@ main{display:grid;gap:0;padding-bottom:96px}
       <input id="photoInput" type="file" accept="image/*" multiple />
       <button id="photoFitBtn" type="button" hidden>사진 맞추기</button>
       <button id="photoClear" type="button">사진 빼기</button>
+    </div>
+    <div class="vidrow" id="vidRow">
+      <button id="vidUpBtn" type="button" title="휴대폰·컴퓨터의 영상을 올려 이 장을 영상으로 (100MB 까지)">🎞 영상 올리기</button>
+      <input id="vidInput" type="file" accept="video/*" hidden>
+      <button id="vidUrlBtn" type="button" title="유튜브·인스타 릴스·영상 파일 주소로 이 장을 영상으로">▶ 영상 주소로</button>
     </div>
 
     <div class="lintBox" id="lintBox" hidden></div>
@@ -706,7 +751,7 @@ const TYPO = {
 
 /* 미리보기에서 눌러 고칠 수 있도록, 그리면서 글자 영역을 같이 적어둔다.
    섬네일을 그릴 때는 TRACK 을 꺼서 본 화면 영역만 남긴다. */
-let HITS = [], TRACK = false;
+let HITS = [], TRACK = false, NOFILL = false, OVERLAY = false;   // NOFILL: 영상 장은 사진 자리를 비워 둔다 (뒤에 영상)
 function hit(kind, x, y, w, h) { if (TRACK && w > 0 && h > 0) HITS.push({ kind, x, y, w, h }); }
 
 const fontStr = (fk, size) => `${size}px "${F[fk].name}"`;
@@ -1082,7 +1127,7 @@ function drawSource(ctx, source) {
 }
 
 /* ── 슬라이드 ──────────────────────────────────────────────────────────── */
-function fillEmpty(ctx) { ctx.fillStyle = "rgb(20,20,20)"; ctx.fillRect(0, 0, W, H); }
+function fillEmpty(ctx) { if (NOFILL) return; ctx.fillStyle = "rgb(20,20,20)"; ctx.fillRect(0, 0, W, H); }
 
 function slideCover(ctx, img, tag, title, subtitle, source, fit) {
   if (img) drawPhoto(ctx, img, fit); else fillEmpty(ctx);
@@ -1519,10 +1564,14 @@ function paint(ctx, i, track) {
     slideLast(ctx, deck.slides[0] && deck.slides[0].el, tag, "",
               deck.slides[0] && deck.slides[0].fit);
   } else {
-    const s = deck.slides[i];
-    if (i === 0) slideCover(ctx, s.el, tag, lit(s.title), s.subtitle, s.credit, s.fit);
-    else slideBody(ctx, s.el, tag, lit(s.heading), lit(s.body), s.credit,
-                   headingSizeForDeck(), s.fit);
+    const s = deck.slides[i], v = vidOf(s);
+    // 영상 장: 큰 미리보기·글자 레이어는 사진 자리를 비워 뒤의 영상이 보이게, 작은 그림은 한 장면(있으면)으로
+    const img = v ? ((track || OVERLAY) ? null : s._still) : s.el;
+    NOFILL = !!(v && (track || OVERLAY));
+    if (i === 0) slideCover(ctx, img, tag, lit(s.title), s.subtitle, s.credit, v ? null : s.fit);
+    else slideBody(ctx, img, tag, lit(s.heading), lit(s.body), s.credit,
+                   headingSizeForDeck(), v ? null : s.fit);
+    NOFILL = false;
   }
   TRACK = false;
 }
@@ -1576,7 +1625,7 @@ function layoutHotspots() {
   }
   const s = deck.slides[cur];
   const hintBtn = document.getElementById("photoHint");
-  hintBtn.hidden = isEnd || !!(s && s.img);
+  hintBtn.hidden = isEnd || !!(s && (s.img || vidOf(s)));
 }
 function readKind(kind) {
   if (kind === "category") return deck.category;
@@ -1633,7 +1682,7 @@ function buildRail() {
     cv.width = 152; cv.height = 190;
     btn.appendChild(cv);
     const lab = document.createElement("span");
-    lab.textContent = i === 0 ? "커버" : i >= deck.slides.length ? "엔딩" : String(i);
+    lab.textContent = (i < deck.slides.length && vidOf(deck.slides[i]) ? "🎞 " : "") + (i === 0 ? "커버" : i >= deck.slides.length ? "엔딩" : String(i));
     btn.appendChild(lab);
     btn.onclick = () => { closeQuick(); cur = i; syncAll(); };
     rail.appendChild(btn);
@@ -1731,8 +1780,12 @@ function syncFields() {
                   field("body", s.body, (v) => (s.body = v)));
   }
   fields.append(field("credit", s.credit, (v) => (s.credit = v)),
-                plainField("소스 주소", "양식으로 넘길 때만 쓰입니다 (미리보기에는 안 보임)",
-                           s.srcUrl, (v) => (s.srcUrl = v)));
+                plainField("소스 주소", vidOf(s) ? "영상 장 — 미리보기 아래 영상 칸에서 바꿉니다" : "양식으로 넘길 때만 쓰입니다 (미리보기에는 안 보임) · 영상 주소를 넣으면 영상 장이 됩니다",
+                           vidOf(s) ? vidOf(s).url : s.srcUrl, (v) => {
+                             s.srcUrl = v;
+                             if (isVidUrl(v.trim()) && !(vidOf(s) && vidOf(s).url === v.trim())) { setVid(s, v.trim()); vidStage(); }
+                             else if (vidOf(s) && !isVidUrl(v.trim())) { s.vid = null; s.vidOut = null; vidStage(); }
+                           }));
 }
 
 function syncAll() {
@@ -1741,6 +1794,7 @@ function syncAll() {
   syncFields();
   if (fitMode && !fitActive()) fitExit();
   fitPaintBar();
+  vidStage();
   repaint(true);
   const t = rail.children[cur];
   if (t && t.scrollIntoView) t.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
@@ -2009,7 +2063,7 @@ async function downscale(f) {
 function attachImage(slide, dataUrl) {
   return new Promise((res) => {
     const im = new Image();
-    im.onload = () => { slide.img = dataUrl; slide.el = im; slide.fit = null; res(true); };
+    im.onload = () => { slide.img = dataUrl; slide.el = im; slide.fit = null; slide.vid = null; slide.vidOut = null; slide._still = null; res(true); };
     im.onerror = () => res(false);
     im.src = dataUrl;
   });
@@ -2123,11 +2177,15 @@ function parseDeckForm(text) {
     else {
       const kv = {};
       body.split("\n").forEach((l) => {
-        const m = /^\s*(소스|제목|부제|소제목|본문|출처)\s*[:：]\s*(.*)$/.exec(l);
+        const m = /^\s*(소스|제목|부제|소제목|본문|출처|구간)\s*[:：]\s*(.*)$/.exec(l);
         if (m) kv[m[1]] = m[2];
       });
       const sl = name === "커버" ? blankCover() : blankBody();
       sl.srcUrl = (kv["소스"] || "").trim();
+      if (isVidUrl(sl.srcUrl)) {                       // 영상 장 — 봇 양식의 「구간: 0:10-0:25」 그대로
+        const g = /^\s*([\d:.]+)\s*-\s*([\d:.]+)\s*$/.exec(kv["구간"] || "");
+        sl.vid = { url: sl.srcUrl, s: g ? vSec(g[1]) || 0 : 0, e: g ? vSec(g[2]) : null, dur: null };
+      }
       sl.credit = unlit(kv["출처"] || "");
       if (name === "커버") { sl.title = unlit(kv["제목"] || ""); sl.subtitle = unlit(kv["부제"] || ""); }
       else { sl.heading = unlit(kv["소제목"] || ""); sl.body = unlit(kv["본문"] || ""); }
@@ -2193,10 +2251,11 @@ function buildForm() {
   L.push("[카테고리]", deck.category || "", "");
   L.push("[캡션]", deck.caption || "", "");
   const c = deck.slides[0];
-  L.push("[커버]", "소스: " + (c.srcUrl || ""), "제목: " + esc(c.title),
+  const span = (s) => { const v = vidOf(s); return v && (v.s > 0 || v.e != null) ? ["구간: " + vFmt(v.s) + "-" + (v.e != null ? vFmt(v.e) : vFmt((v.dur || v.s + 60)))] : []; };
+  L.push("[커버]", "소스: " + (vidOf(c) ? vidOf(c).url : c.srcUrl || ""), ...span(c), "제목: " + esc(c.title),
          "부제: " + oneline(c.subtitle), "출처: " + oneline(c.credit), "");
   for (const s of deck.slides.slice(1)) {
-    L.push("[슬라이드]", "소스: " + (s.srcUrl || ""), "소제목: " + esc(s.heading),
+    L.push("[슬라이드]", "소스: " + (vidOf(s) ? vidOf(s).url : s.srcUrl || ""), ...span(s), "소제목: " + esc(s.heading),
            "본문: " + esc(s.body), "출처: " + oneline(s.credit), "");
   }
   return L.join("\n").trim() + "\n";
@@ -2463,6 +2522,13 @@ async function openExport(only) {
       box.hidden = true; await publishDeck();
     });
   }
+  { const vs = idx.filter((i) => i < deck.slides.length && vidOf(deck.slides[i]));
+    if (vs.length) {
+      const made = vs.filter((i) => deck.slides[i].vidOut);
+      hint.textContent += (hint.textContent ? " " : "") + "영상 장(" + vs.map((i) => i + 1).join("·") + "번)은 그림에 한 장면만 들어갑니다 — 영상은 아래에서 mp4 로 받으세요.";
+      if (made.length) add("🎞 영상 장 mp4 받기", made.length + "개 · 맥에서 만든 그대로", async () => { for (const i of made) await vidSave(deck.slides[i], i); });
+      else add("🎞 영상 장 만들기", "그 장에서 「🎬 이 장 영상 만들기」를 먼저", async () => { box.hidden = true; cur = vs[0]; syncAll(); });
+    } }
   add("🔍 한 장씩 보기", "길게 눌러 저장", async () => { box.hidden = true; showGallery(blobs, ""); });
 }
 
@@ -2496,13 +2562,17 @@ async function publishDeck() {
   if (!cap) { toast("캡션이 비어 있습니다 — 캡션을 먼저 넣어 주세요"); return; }
   const total = deck.slides.length + 1;
   if (total > 10) { toast("10장을 넘어 올릴 수 없습니다 — 줄여 주세요"); return; }
-  if (!window.confirm(`PLOT 인스타에 지금 올릴까요?\n\n${total}장 · 캡션 첫 줄: ${cap.split("\n")[0].slice(0, 60)}\n\n올리면 되돌릴 수 없습니다.`)) return;
+  const vidIdx = deck.slides.map((s, i) => vidOf(s) ? i : -1).filter((i) => i >= 0);
+  const stale = vidIdx.filter((i) => !vidFresh(i));
+  if (stale.length) { cur = stale[0]; syncAll(); toast(`${stale.map((i) => i + 1).join("·")}번 장 영상을 먼저 「🎬 이 장 영상 만들기」로 만들어 주세요`); return; }
+  if (!window.confirm(`PLOT 인스타에 지금 올릴까요?\n\n${total}장${vidIdx.length ? " (영상 " + vidIdx.length + "장)" : ""} · 캡션 첫 줄: ${cap.split("\n")[0].slice(0, 60)}\n\n올리면 되돌릴 수 없습니다.`)) return;
   const key = appKey(); if (!key) { toast("열쇠가 없어 올리지 않았습니다"); return; }
   PUB_BUSY = true;
   try {
     const pub = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
-    const hashes = [];
+    const hashes = [], vids = {};
     for (let i = 0; i < total; i++) {
+      if (i < deck.slides.length && vidOf(deck.slides[i])) { hashes.push(deck.slides[i].vidOut.sha); vids[i] = deck.slides[i].vidOut.sha; continue; }
       toast(`그림 보내는 중 ${i + 1}/${total}`);
       let sent = false;
       for (const q of [0.92, 0.82, 0.72]) {                // 줄이 너무 크면 화질을 조금씩 낮춰 다시
@@ -2518,7 +2588,7 @@ async function publishDeck() {
     const at = new Date().toISOString();
     const sig = await sha256hex(new TextEncoder().encode(key + "|" + digest + "|" + at));
     let shown = "";
-    const sn = await plotStudio.send("carousel", { pub, total, caption: cap, digest, at, sig },
+    const sn = await plotStudio.send("carousel", Object.assign({ pub, total, caption: cap, digest, at, sig }, vidIdx.length ? { vids } : {}),
       (step) => { if (step !== shown) { shown = step; toast("🚀 " + step); } });
     plotStudio.sheet("🚀 " + (sn.note || "발행했습니다"), sn.permalink || "");
   } catch (e) {
@@ -2604,6 +2674,7 @@ const Auto = {
         slides: JSON.stringify(deck.slides.map((s) => ({
           kind: s.kind, title: s.title, subtitle: s.subtitle, heading: s.heading,
           body: s.body, credit: s.credit, srcUrl: s.srcUrl, hasImg: !!s.img, fit: s.fit || null,
+          vid: s.vid || null, vidOut: s.vidOut || null,
         }))),
       });
     } catch (e) {}
@@ -2664,6 +2735,7 @@ async function saveDeck() {
     slides: JSON.stringify(deck.slides.map((s) => ({
       kind: s.kind, title: s.title, subtitle: s.subtitle, heading: s.heading,
       body: s.body, credit: s.credit, srcUrl: s.srcUrl, hasImg: !!s.img, fit: s.fit || null,
+      vid: s.vid || null, vidOut: s.vidOut || null,
     }))),
   };
   try {
@@ -2720,7 +2792,8 @@ async function loadDeck(row, imgsGiven, msg) {
   deck.slides[0].kind = "cover";
   const imgs = imgsGiven || await Store.images(row.id, parsed.length);
   for (let i = 0; i < parsed.length; i++) {
-    if (imgs[i]) await attachImage(deck.slides[i], imgs[i]);
+    if (imgs[i] && !vidOf(deck.slides[i])) await attachImage(deck.slides[i], imgs[i]);
+    if (vidOf(deck.slides[i])) loadStill(deck.slides[i]);
   }
   deckId = row.id; cur = 0;
   document.getElementById("listBox").hidden = true;
@@ -2732,6 +2805,270 @@ async function loadDeck(row, imgsGiven, msg) {
   markClean(); closeQuick(); buildRail(); syncAll();
   toast(msg || "불러왔습니다");
 }
+
+/* ── 영상 장 (10/18 규효 "캐러셀도 영상이 필요한 경우 — 수정·편집·미리보기·인코딩") ───────────────────────────
+ * 한 장을 영상으로: 휴대폰·컴퓨터에서 올리거나(클라우디너리) 유튜브·릴스·영상 주소를 넣는다.
+ * 미리보기는 캔버스 뒤에 영상을 깔고(4:5 로 가운데 채움) 캔버스는 글자만 그린다 — 실제 글자 그대로 보인다.
+ * 구간은 재생하면서 「지금을 시작/끝으로」. 인스타 캐러셀 영상은 3~60초.
+ * 「🎬 이 장 영상 만들기」 → 앱이 글자 레이어(투명 PNG)를 그려 보내고, 맥(op=cardvid)이 영상을 받아
+ * 봇과 같은 4:5 얼굴 따라 맞추기 → 글자 얹기 → mp4. 결과를 이 화면에서 바로 재생하고, 발행 때 그 파일을 쓴다.
+ * 양식(텔레그램 봇)으로 보내면 「소스: 영상주소 · 구간: a-b」 그대로 — 봇이 예전처럼 만든다. */
+const VID_MIN = 3, VID_MAX = 60;
+const vYt = (u) => { const m = /(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|live\/|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/.exec(String(u || "")); return m ? m[1] : null; };
+const V_UP = /^https:\/\/res\.cloudinary\.com\/[^/]+\/video\/upload\//i;
+function isVidUrl(u) {
+  u = String(u || "").trim();
+  return /^https?:\/\//.test(u) && (!!vYt(u) || V_UP.test(u) || /instagram\.com\/(reel|reels)\/|tiktok\.com\/|vimeo\.com\/|\.(mp4|mov|m4v|webm)(\?|#|$)/i.test(u));
+}
+const vDirect = (u) => V_UP.test(u) || /\.(mp4|mov|m4v|webm)(\?|#|$)/i.test(u);
+function vidOf(s) { return s && s.vid && s.vid.url ? s.vid : null; }
+function vSec(x) { x = String(x == null ? "" : x).trim(); if (!x || !/^[\d:.]+$/.test(x)) return null; return x.split(":").map(Number).reduce((a, b) => a * 60 + b, 0); }
+function vFmt(v) { v = Math.max(0, Math.round((v || 0) * 10) / 10); const m = Math.floor(v / 60), r = v - m * 60; let ss = r.toFixed(1).replace(/\.0$/, ""); if (r < 10) ss = "0" + ss; return m + ":" + ss; }
+function vLen(v) { const e = v.e != null ? v.e : v.dur; return e != null ? Math.max(0, e - (v.s || 0)) : null; }
+/* 이 장을 맥에서 만든 뒤 바뀐 게 있으면 다시 만들어야 한다 — 글자·카테고리·영상·구간 */
+function vidKey(i) {
+  const s = deck.slides[i], v = vidOf(s);
+  return JSON.stringify([deck.category, i === 0 ? [s.title, s.subtitle] : [s.heading, s.body, headingSizeForDeck()], s.credit, v && [v.url, v.s, v.e]]);
+}
+function vidFresh(i) { const s = deck.slides[i]; return !!(vidOf(s) && s.vidOut && s.vidOut.key === vidKey(i)); }
+function setVid(s, url, dur) {
+  s.vid = { url: url, s: 0, e: null, dur: dur || null };
+  s.srcUrl = url; s.img = null; s.el = null; s.fit = null; s.vidOut = null; s._still = null;
+  loadStill(s); markDirty();
+}
+function stillUrl(v) {
+  if (V_UP.test(v.url)) return v.url.replace(/#.*$/, "").replace("/video/upload/", "/video/upload/so_" + (v.s || 0).toFixed(1) + ",w_540/").replace(/\.[a-z0-9]+$/i, ".jpg");
+  return null;
+}
+function loadStill(s) {
+  const v = vidOf(s); if (!v) return;
+  const u = stillUrl(v); s._still = null;
+  if (!u) return;
+  const im = new Image(); im.crossOrigin = "anonymous";
+  im.onload = () => { if (vidOf(s) === v) { s._still = im; scheduleThumbs(); } };
+  im.src = u;
+}
+let VP = null, VIEW_OUT = false, VLOOP = false, vTick = null;
+function vpTime() { if (!VP) return 0; try { return VP.yt ? (VP.yt.getCurrentTime() || 0) : (VP.el.currentTime || 0); } catch (e) { return 0; } }
+function vpSeek(x) { if (!VP) return; try { if (VP.yt) VP.yt.seekTo(x, true); else VP.el.currentTime = x; } catch (e) {} }
+function vpPlaying() { if (!VP) return false; try { return VP.yt ? VP.yt.getPlayerState() === 1 : !VP.el.paused; } catch (e) { return false; } }
+function vpPlay(on) {
+  if (!VP) return;
+  try {
+    if (VP.yt) { on ? VP.yt.playVideo() : VP.yt.pauseVideo(); }
+    else if (on) { const pr = VP.el.play(); if (pr && pr.catch) pr.catch(() => { VP.el.muted = true; VP.el.play().catch(() => {}); }); }
+    else VP.el.pause();
+  } catch (e) {}
+}
+let vYtReady = null;
+function vYtApi() {
+  if (vYtReady) return vYtReady;
+  vYtReady = new Promise((ok) => {
+    if (window.YT && window.YT.Player) return ok();
+    const prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => { if (prev) try { prev(); } catch (e) {} ok(); };
+    const sc = document.createElement("script"); sc.src = "https://www.youtube.com/iframe_api"; document.head.appendChild(sc);
+  });
+  return vYtReady;
+}
+function vpDrop() {
+  if (VP) { try { VP.yt ? VP.yt.destroy() : VP.el.pause(); } catch (e) {} }
+  VP = null; VLOOP = false;
+  document.getElementById("vidLayer").innerHTML = "";
+}
+/* 큰 미리보기 뒤의 영상 — 지금 장이 영상이면 그 영상을, 「맥 결과 보기」면 만든 mp4 를 */
+function vidStage() {
+  const box = document.getElementById("canvasbox"), lay = document.getElementById("vidLayer");
+  const s = cur < deck.slides.length ? deck.slides[cur] : null, v = vidOf(s);
+  const out = !!(v && VIEW_OUT && s.vidOut && s.vidOut.url);
+  box.classList.toggle("vid", !!v);
+  box.classList.toggle("out", out);
+  document.body.classList.toggle("vidOn", !!v);
+  document.getElementById("photoRow").style.display = (cur >= deck.slides.length) ? "none" : "";
+  document.getElementById("vidRow").style.display = (cur >= deck.slides.length) ? "none" : "";
+  const want = v ? (out ? s.vidOut.url : v.url) : null;
+  if (!want) { vpDrop(); vidPanel(); return; }
+  if (VP && VP.url === want && VP.slide === s) { vidPanel(); return; }
+  vpDrop();
+  if (!out && vYt(want)) {
+    const w = document.createElement("div"); w.className = "ytw"; const d = document.createElement("div"); w.appendChild(d); lay.appendChild(w);
+    const me = { url: want, slide: s, yt: null, ready: false };
+    VP = me;
+    vYtApi().then(() => {
+      if (VP !== me) return;
+      me.yt = new YT.Player(d, { videoId: vYt(want), playerVars: { controls: 0, disablekb: 1, modestbranding: 1, playsinline: 1, rel: 0, start: Math.floor(v.s || 0) },
+        events: { onReady: (e) => { me.ready = true; const dd = e.target.getDuration(); if (dd && !v.dur) { v.dur = dd; } vpSeek(v.s || 0); vidPanel(); } } });
+    });
+  } else if (out || vDirect(want)) {
+    const el = document.createElement("video");
+    el.src = want; el.playsInline = true; el.setAttribute("playsinline", ""); el.preload = "auto"; el.crossOrigin = "anonymous";
+    el.onloadedmetadata = () => { if (!out && el.duration && isFinite(el.duration) && !v.dur) v.dur = el.duration; if (!out) el.currentTime = v.s || 0; vidPanel(); };
+    el.onended = () => vidPanel();
+    lay.appendChild(el);
+    VP = { url: want, slide: s, el: el, out: out };
+  } else {
+    lay.innerHTML = '<div class="vnote">이 주소(' + (/instagram/.test(want) ? "인스타 릴스" : "외부 영상") + ')는 여기서 재생할 수 없습니다.<br>구간을 적고 「🎬 이 장 영상 만들기」로 맥 결과를 보세요.</div>';
+    VP = null;
+  }
+  vidPanel();
+}
+function vidPanel() {
+  const box = document.getElementById("vidBox");
+  const s = cur < deck.slides.length ? deck.slides[cur] : null, v = vidOf(s);
+  box.hidden = !v;
+  if (!v) { clearInterval(vTick); vTick = null; return; }
+  const ln = vLen(v), fresh = vidFresh(cur), busy = !!s._busy;
+  const totOf = () => VIEW_OUT ? ((VP && VP.el && isFinite(VP.el.duration) && VP.el.duration) || (s.vidOut && s.vidOut.secs) || 0) : (v.dur || 0);
+  const direct = !!VP;
+  const src = vYt(v.url) ? "유튜브" : V_UP.test(v.url) ? "올린 영상" : /instagram/.test(v.url) ? "인스타" : "영상 주소";
+  const lenTxt = ln == null ? "끝까지 (최대 " + VID_MAX + "초)" : ln.toFixed(1) + "초";
+  const badLen = ln != null && (ln < VID_MIN || ln > VID_MAX);
+  let st;
+  if (busy) st = '<div class="vstat">맥이 만드는 중… <b>' + (s._step || "") + '</b> — 화면을 열어 두세요</div>';
+  else if (s.vidOut && fresh) st = '<div class="vstat ok"><b>✓ 맥에서 만든 영상이 있습니다</b> (' + (s.vidOut.secs || "") + '초) — 발행하면 이 영상이 들어갑니다.</div>';
+  else if (s.vidOut) st = '<div class="vstat bad">글자·구간이 바뀌었습니다 — 다시 만들어야 발행할 수 있습니다.</div>';
+  else st = '<div class="vstat">미리보기는 가운데를 채워 보여 줍니다. 실제는 맥이 컷마다 얼굴을 따라 4:5 로 맞춥니다.</div>';
+  box.innerHTML =
+    '<div class="vh"><b style="white-space:nowrap">🎞 영상 장</b><span>' + src + ' · ' + escHtml(v.url.replace(/#.*$/, "").slice(0, 60)) + '</span></div>' +
+    (direct && !VIEW_OUT ? '<input type="range" min="0" max="' + (v.dur || Math.max(60, (v.e || 0) + 10)).toFixed(1) + '" step="0.1" value="' + vpTime().toFixed(1) + '" data-v="scrub">' : '') +
+    '<div class="vrow">' +
+      (direct ? '<button type="button" data-v="play">' + (vpPlaying() ? "❚❚ 멈춤" : (VIEW_OUT ? "▶ 결과 재생" : "▶ 구간 재생")) + '</button>' +
+        (VIEW_OUT ? '' : '<button type="button" data-v="back">−1초</button><button type="button" data-v="fwd">+1초</button>') +
+        '<span class="vt" data-v="now">' + vFmt(vpTime()) + (totOf() ? " / " + vFmt(totOf()) : "") + '</span>' : '') +
+    '</div>' +
+    (VIEW_OUT ? '' :
+    '<div class="vrow"><label>시작</label><input type="text" inputmode="decimal" data-v="s" value="' + vFmt(v.s || 0) + '">' +
+      (direct ? '<button type="button" data-v="sHere">지금을 시작으로</button>' : '') + '</div>' +
+    '<div class="vrow"><label>끝</label><input type="text" inputmode="decimal" data-v="e" value="' + (v.e != null ? vFmt(v.e) : "") + '" placeholder="끝까지">' +
+      (direct ? '<button type="button" data-v="eHere">지금을 끝으로</button>' : '') +
+      '<span class="vt"' + (badLen ? ' style="color:#E0786A"' : '') + '>길이 ' + lenTxt + '</span></div>') +
+    st +
+    '<div class="vrow">' +
+      '<button type="button" class="go" data-v="make"' + (busy || badLen ? " disabled" : "") + '>🎬 ' + (s.vidOut ? "다시 만들기" : "이 장 영상 만들기") + '</button>' +
+      (s.vidOut ? '<button type="button" data-v="view">' + (VIEW_OUT ? "✎ 편집으로" : "👁 맥 결과 보기") + '</button><button type="button" data-v="dl">⬇ mp4</button>' : '') +
+      '<button type="button" data-v="clear">영상 빼기</button>' +
+    '</div>' +
+    (badLen ? '<div class="vstat bad">인스타 캐러셀 영상은 ' + VID_MIN + '~' + VID_MAX + '초입니다.</div>' : '');
+  clearInterval(vTick);
+  vTick = direct ? setInterval(() => {
+    if (!VP) return;
+    const now = vpTime();
+    if (!VIEW_OUT && VLOOP && vpPlaying()) {
+      const e = v.e != null ? v.e : (v.s || 0) + VID_MAX;
+      if (now >= e - 0.05 || now < (v.s || 0) - 0.5) vpSeek(v.s || 0);
+    }
+    const t = box.querySelector('[data-v="now"]'); if (t) t.textContent = vFmt(now) + (totOf() ? " / " + vFmt(totOf()) : "");
+    const r = box.querySelector('[data-v="scrub"]'); if (r && document.activeElement !== r) { r.value = now.toFixed(1); if (v.dur && Number(r.max) !== v.dur) r.max = v.dur.toFixed(1); }
+    const pb = box.querySelector('[data-v="play"]'); if (pb) pb.textContent = vpPlaying() ? "❚❚ 멈춤" : (VIEW_OUT ? "▶ 결과 재생" : "▶ 구간 재생");
+  }, 200) : null;
+}
+const escHtml = (x) => String(x == null ? "" : x).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+function vidBind() {
+  const box = document.getElementById("vidBox");
+  box.addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-v]"); if (!b || b.disabled) return;
+    const s = deck.slides[cur], v = vidOf(s); if (!v) return;
+    const k = b.dataset.v;
+    if (k === "play") {
+      if (vpPlaying()) { vpPlay(false); VLOOP = false; }
+      else { if (!VIEW_OUT) { const now = vpTime(); const e2 = v.e != null ? v.e : (v.s || 0) + VID_MAX; if (now < (v.s || 0) || now >= e2 - 0.1) vpSeek(v.s || 0); VLOOP = true; } vpPlay(true); }
+      setTimeout(vidPanel, 150);
+    }
+    else if (k === "back" || k === "fwd") { vpSeek(Math.max(0, vpTime() + (k === "fwd" ? 1 : -1))); }
+    else if (k === "sHere" || k === "eHere") {
+      const now = Math.round(vpTime() * 10) / 10;
+      if (k === "sHere") { v.s = now; if (v.e != null && v.e <= now + 0.5) v.e = null; loadStill(s); }
+      else { if (now <= (v.s || 0) + 0.5) { toast("시작보다 뒤여야 합니다"); return; } v.e = now; }
+      markDirty(); vidPanel(); repaint();
+    }
+    else if (k === "make") vidMake(cur);
+    else if (k === "view") { VIEW_OUT = !VIEW_OUT; vidStage(); if (VIEW_OUT) setTimeout(() => vpPlay(true), 200); }
+    else if (k === "dl") vidSave(s, cur);
+    else if (k === "clear") { s.vid = null; s.vidOut = null; s._still = null; s.srcUrl = ""; VIEW_OUT = false; markDirty(); syncAll(); }
+  });
+  box.addEventListener("change", (e) => {
+    const n = e.target, s = deck.slides[cur], v = vidOf(s); if (!v) return;
+    if (n.dataset.v === "s") { const x = vSec(n.value); if (x != null) { v.s = x; if (v.e != null && v.e <= x) v.e = null; vpSeek(x); loadStill(s); } }
+    else if (n.dataset.v === "e") { const x = n.value.trim() ? vSec(n.value) : null; if (!n.value.trim()) v.e = null; else if (x != null && x > (v.s || 0)) v.e = x; else toast("끝은 시작보다 뒤여야 합니다"); }
+    else return;
+    markDirty(); vidPanel(); repaint();
+  });
+  box.addEventListener("input", (e) => { if (e.target.dataset.v === "scrub") vpSeek(Number(e.target.value)); });
+  const inp = document.getElementById("vidInput");
+  document.getElementById("vidUpBtn").onclick = () => {
+    const c = window.PLOT_UPLOAD;
+    if (!(c && c.cloud && c.preset)) { toast("영상 올리기가 연결되지 않았습니다 — 영상 주소로 넣어 주세요"); return; }
+    inp.value = ""; inp.click();
+  };
+  inp.onchange = () => { const f = inp.files && inp.files[0]; if (f) vidUpload(f); };
+  document.getElementById("vidUrlBtn").onclick = () => {
+    const u = (window.prompt("영상 주소 — 유튜브·인스타 릴스·영상 파일 (뒤에 0:10-0:25 처럼 구간을 붙여도 됩니다)") || "").trim();
+    if (!u) return;
+    const m = /^(https?:\/\/\S+)(?:\s+([\d:.]+)\s*-\s*([\d:.]+))?$/.exec(u);
+    if (!m || !isVidUrl(m[1])) { toast("영상 주소가 아닙니다 — 유튜브·릴스·mp4 주소를 넣어 주세요"); return; }
+    const s = deck.slides[cur]; if (!s) return;
+    setVid(s, m[1]);
+    if (m[2] && vSec(m[3]) > vSec(m[2])) { s.vid.s = vSec(m[2]); s.vid.e = vSec(m[3]); }
+    VIEW_OUT = false; syncAll(); buildRail();
+    toast("이 장을 영상으로 바꿨습니다 — 재생하면서 구간을 정하세요");
+  };
+}
+function vidUpload(f) {
+  const c = window.PLOT_UPLOAD, mb = f.size / 1048576;
+  if (mb > 100) { toast("영상이 " + mb.toFixed(0) + "MB 라 올릴 수 없습니다 (100MB 까지) — 쓸 부분만 잘라 올려 주세요"); return; }
+  const s = deck.slides[cur]; if (!s) return;
+  const fd = new FormData(); fd.append("file", f); fd.append("upload_preset", c.preset);
+  const x = new XMLHttpRequest();
+  x.open("POST", "https://api.cloudinary.com/v1_1/" + encodeURIComponent(c.cloud) + "/video/upload");
+  x.upload.onprogress = (e) => { if (e.lengthComputable) toast("⏫ 영상 올리는 중 " + Math.round(100 * e.loaded / e.total) + "%"); };
+  x.onerror = () => toast("올리지 못했습니다 — 연결을 확인해 주세요");
+  x.onload = () => {
+    let r = {}; try { r = JSON.parse(x.responseText || "{}"); } catch (e) {}
+    if (x.status >= 300 || !r.secure_url) { toast("올리지 못했습니다 — " + String((r.error && r.error.message) || x.status).slice(0, 90)); return; }
+    setVid(s, r.secure_url, Number(r.duration) || null);
+    if (s.vid.dur && s.vid.dur > VID_MAX) s.vid.e = VID_MAX;
+    VIEW_OUT = false; syncAll(); buildRail();
+    toast("✓ 영상을 넣었습니다" + (s.vid.dur > VID_MAX ? " — " + VID_MAX + "초가 넘어 앞 " + VID_MAX + "초로 잡았습니다" : ""));
+  };
+  x.send(fd);
+}
+function overlayBlob(i) {
+  OVERLAY = true;
+  try { paint(octx, i, false); } finally { OVERLAY = false; }
+  return new Promise((res) => off.toBlob(res, "image/png"));
+}
+async function vidMake(i) {
+  const s = deck.slides[i], v = vidOf(s); if (!v || s._busy) return;
+  if (!(window.plotStudio && plotStudio.on())) { toast("맥 연결이 없어 여기서 못 만듭니다 — 「양식 복사」로 텔레그램 봇에 보내면 봇이 만듭니다"); return; }
+  const ln = vLen(v);
+  if (ln != null && (ln < VID_MIN || ln > VID_MAX)) { toast("영상은 " + VID_MIN + "~" + VID_MAX + "초로 잡아 주세요"); return; }
+  vpPlay(false);
+  s._busy = true; s._step = "글자 레이어 보내는 중"; vidPanel();
+  const key = vidKey(i);
+  try {
+    const pub = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    const u8 = new Uint8Array(await (await overlayBlob(i)).arrayBuffer());
+    await plotStudio.post({ id: `stvid:${pub}-${i}`, kind: "studio_img", snapshot: { pub: pub, n: i, data: b64of(u8), png: 1 } });
+    const sn = await plotStudio.send("cardvid", { pub: pub, n: i, url: v.url.replace(/#.*$/, ""), s: v.s || 0, e: v.e }, (step) => { s._step = step; if (cur === i) vidPanel(); });
+    s.vidOut = { url: sn.mp4, sha: sn.sha, secs: sn.secs, key: key };
+    markDirty();
+    toast("✓ " + (sn.note || "만들었습니다") + (vidKey(i) !== key ? " — 그사이 글자가 바뀌어 한 번 더 만들어야 합니다" : ""));
+    if (cur === i) { VIEW_OUT = true; vidStage(); setTimeout(() => vpPlay(true), 250); }
+  } catch (e) {
+    toast("못 만들었습니다 — " + String((e && e.message) || e).slice(0, 100));
+  } finally { s._busy = false; s._step = ""; if (cur === i) vidPanel(); }
+}
+async function vidSave(s, i) {
+  if (!s.vidOut || !s.vidOut.url) return;
+  toast("영상 받는 중…");
+  try {
+    const r = await fetch(s.vidOut.url); if (!r.ok) throw new Error(r.status);
+    const b = await r.blob();
+    const res = await saveBlob(`${slug()}_${String(i + 1).padStart(2, "0")}.mp4`, b);
+    toast(res === "ok" ? "영상을 저장했습니다" : "저장하지 못했습니다");
+  } catch (e) { window.open(s.vidOut.url, "_blank", "noopener"); }
+}
+vidBind();
 
 /* ── 잡동사니 ──────────────────────────────────────────────────────────── */
 let toastTimer = null;
