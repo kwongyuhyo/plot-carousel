@@ -1,18 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-10-18 22:07 KST",
+ "generated_at": "2026-10-19 15:07 KST",
  "weeks": [
-  {
-   "week": "2026-W30",
-   "posts": 5,
-   "reach": 4044,
-   "saved": 9,
-   "shares": 71,
-   "followers": 1040,
-   "followers_delta": -69,
-   "reach_total": 35030,
-   "top": "https://www.instagram.com/reel/DbAqEzdCuP0/"
-  },
   {
    "week": "2026-W32",
    "posts": 24,
@@ -89,6 +78,17 @@
    "followers_delta": 73,
    "reach_total": 807899,
    "top": "https://www.instagram.com/p/DeRU1FID52k/"
+  },
+  {
+   "week": "2026-W43",
+   "posts": 12,
+   "reach": 138627,
+   "saved": 150,
+   "shares": 4123,
+   "followers": 3111,
+   "followers_delta": -11,
+   "reach_total": 625389,
+   "top": "https://www.instagram.com/p/DemoUcbj-zy/"
   }
  ],
  "kinds": [
@@ -103,8 +103,8 @@
   },
   {
    "kind": "기타",
-   "n": 57,
-   "weeks": 9,
+   "n": 59,
+   "weeks": 10,
    "multiple": 1.03,
    "low": 0.99,
    "high": 1.08,
@@ -112,17 +112,17 @@
   },
   {
    "kind": "발매·신보",
-   "n": 29,
-   "weeks": 8,
+   "n": 34,
+   "weeks": 9,
    "multiple": 0.92,
-   "low": 0.78,
-   "high": 1.03,
-   "stable": false
+   "low": 0.77,
+   "high": 0.98,
+   "stable": true
   },
   {
    "kind": "갈등·반응",
-   "n": 14,
-   "weeks": 4,
+   "n": 16,
+   "weeks": 5,
    "multiple": 0.77,
    "low": 0.75,
    "high": 0.92,
@@ -130,11 +130,11 @@
   },
   {
    "kind": "공연·페스티벌",
-   "n": 15,
-   "weeks": 5,
-   "multiple": 0.35,
-   "low": 0.34,
-   "high": 0.37,
+   "n": 18,
+   "weeks": 6,
+   "multiple": 0.44,
+   "low": 0.35,
+   "high": 0.51,
    "stable": true
   }
  ],
@@ -250,6 +250,17 @@
    "head": "더 자세히 알고 싶은 빅나티(@bignaughtyboi)\n\n하이어뮤직 소속의 래퍼이자, [정이라고 하자], "
   },
   {
+   "id": "DemoUcbj-zy",
+   "week": "2026-W43",
+   "permalink": "https://www.instagram.com/p/DemoUcbj-zy/",
+   "media_type": "CAROUSEL_ALBUM",
+   "reach": 56081,
+   "saved": 71,
+   "shares": 2525,
+   "kind": "발매·신보",
+   "head": "양홍원과 원현주가 오늘(18일) 결혼식을 올립니다.\n\n식을 하루 앞둔 17일 원현주가 자신의 계정에 웨딩 화"
+  },
+  {
    "id": "Dc5scRej6Sh",
    "week": "2026-W37",
    "permalink": "https://www.instagram.com/p/Dc5scRej6Sh/",
@@ -259,20 +270,93 @@
    "shares": 751,
    "kind": "인물해부",
    "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official) "
-  },
-  {
-   "id": "DclAcGwCee3",
-   "week": "2026-W36",
-   "permalink": "https://www.instagram.com/p/DclAcGwCee3/",
-   "media_type": "CAROUSEL_ALBUM",
-   "reach": 36897,
-   "saved": 377,
-   "shares": 2250,
-   "kind": "인물해부",
-   "head": "힙합과 바다, 둘 다 좋아하신다면 10월 넷째 주 토요일을 비워두셔야겠습니다.\n\n오는 10월 24일 강릉 경"
   }
  ],
  "published": [
+  {
+   "id": "DeeX3wPj0ok",
+   "week": "2026-W43",
+   "kind": "기타",
+   "reach": 27174,
+   "head": "빅나티(본명 서동현)가 10월 14일 팬들과의 단체 메시지방에서 직접 결혼 소식을 전했습니다.\n\n상대는 곡 [Vancouver]의 주인공입니다."
+  },
+  {
+   "id": "DekqbFvEoqV",
+   "week": "2026-W43",
+   "kind": "공연·페스티벌",
+   "reach": 4523,
+   "head": "인디고 새멤버는 YF 이정운\n\n스윙스가 16일 열린 생일 공연에서 래퍼 YF(이정운)를 인디고 뮤직의 새 멤버로 직접 공개했습니다.\n\n#PLOT"
+  },
+  {
+   "id": "Dela4ehD4Cq",
+   "week": "2026-W43",
+   "kind": "발매·신보",
+   "reach": 738,
+   "head": "주혜린이 10월 15일 일본 데뷔 싱글 [Good For Me (これでいい)]를 발매했습니다.\n\n타이틀곡 'Good For Me'에는 래퍼 pH"
+  },
+  {
+   "id": "DemUavNj38_",
+   "week": "2026-W43",
+   "kind": "발매·신보",
+   "reach": 907,
+   "head": "이수만이 국내에 선보인 신인 걸그룹 A2O LITE가 데뷔곡 'NEON'으로 멜론 TOP100 1위에 올랐습니다.\n\n'NEON'은 지난 13일 "
+  },
+  {
+   "id": "DemhnJTD0_l",
+   "week": "2026-W43",
+   "kind": "발매·신보",
+   "reach": 714,
+   "head": "빅나티가 '밴쿠버' 속 주인공과 결혼했습니다.\n\n빅나티는 14일 팬 소통 플랫폼을 통해 직접 결혼 소식을 전했는데요, 'Vancouver'와 '"
+  },
+  {
+   "id": "DemoUcbj-zy",
+   "week": "2026-W43",
+   "kind": "발매·신보",
+   "reach": 56081,
+   "head": "양홍원과 원현주가 오늘(18일) 결혼식을 올립니다.\n\n식을 하루 앞둔 17일 원현주가 자신의 계정에 웨딩 화보를 공개했는데요, 클래식한 턱시도와"
+  },
+  {
+   "id": "DenzY4VD7J4",
+   "week": "2026-W43",
+   "kind": "공연·페스티벌",
+   "reach": 638,
+   "head": "요네즈 켄시가 두 번째 내한을 확정했습니다.\n\n'KENSHI YONEZU 2026-2027 WORLD TOUR / GHOST'의 한국 일정으로,"
+  },
+  {
+   "id": "Den23ulj26V",
+   "week": "2026-W43",
+   "kind": "기타",
+   "reach": 1105,
+   "head": "데뷔 20주년을 맞은 빅뱅이 11월 21일 일본 교세라 돔 오사카에서 열리는 '2026 MAMA AWARDS' 무대에 오릅니다.\n\n지난해 솔로로"
+  },
+  {
+   "id": "DeoXLIPj42v",
+   "week": "2026-W43",
+   "kind": "갈등·반응",
+   "reach": 43278,
+   "head": "양홍원이 오늘(18일) 원현주와 결혼식을 올렸습니다.\n\n식을 앞두고 양홍원은 인스타그램 스토리에 잠옷 차림으로 이마에 수건을 올린 거울 셀카를 "
+  },
+  {
+   "id": "Deo17COjzwK",
+   "week": "2026-W43",
+   "kind": "발매·신보",
+   "reach": 1406,
+   "head": "양홍원과 원현주가 오늘(18일) 결혼식을 올렸습니다.\n\n현장에서 공개된 영상에는 두 사람이 웨딩마치를 하는 모습이 담겼는데요, 양홍원은 양옆 하"
+  },
+  {
+   "id": "Deo3TC7D3fk",
+   "week": "2026-W43",
+   "kind": "갈등·반응",
+   "reach": 479,
+   "head": "배드보이 레코드 설립자이자 미국 힙합의 거물인 디디(퍼프 대디)가 호화 수감 생활이 들통나 결국 다른 교도소로 옮겨졌는데요, 디디는 뉴저지주 포"
+  },
+  {
+   "id": "Deo7LLzD-bx",
+   "week": "2026-W43",
+   "kind": "공연·페스티벌",
+   "reach": 1584,
+   "head": "양홍원과 원현주의 웨딩 화보 속 한 장이 익숙한 장면을 떠올리게 합니다.\n\n의자에 앉아 두 손을 모은 채 정면을 바라보는 양홍원의 모습은 201"
+  },
   {
    "id": "DeRU1FID52k",
    "week": "2026-W42",
@@ -1319,11 +1403,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-18 19:07 KST"
+  "daily": "2026-10-18 22:07 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-18T21:52:05+09:00",
+  "fetched_at": "2026-10-19T15:07:57+09:00",
   "posts": [
+   {
+    "t": "2026-10-18T23:43+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원과 원현주의 웨딩 화보 속 한 장이 익숙한 장면을 떠올리게 합니다."
+   },
+   {
+    "t": "2026-10-18T23:09+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "배드보이 레코드 설립자이자 미국 힙합의 거물인 디디(퍼프 대디)가 호화 "
+   },
+   {
+    "t": "2026-10-18T22:57+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원과 원현주가 오늘(18일) 결혼식을 올렸습니다."
+   },
    {
     "t": "2026-10-18T18:28+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1448,12 +1547,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 67,
+  "drafts": 71,
   "posted": 4,
   "posts": 34,
   "rate": 0.06,
-  "adopted_mult": null,
-  "own_mult": 1.0,
+  "adopted_mult": 0.65,
+  "own_mult": 1.12,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1466,12 +1565,12 @@
     "mult": null
    },
    "정보": {
-    "drafts": 34,
+    "drafts": 37,
     "posted": 1,
-    "mult": null
+    "mult": 0.57
    },
    "클립": {
-    "drafts": 10,
+    "drafts": 11,
     "posted": 0,
     "mult": null
    },
@@ -1503,17 +1602,17 @@
    "요청": {
     "drafts": 5,
     "posted": 3,
-    "mult": null
+    "mult": 0.72
    }
   },
   "corners": {
    "news": {
-    "drafts": 42,
+    "drafts": 43,
     "posted": 3,
-    "mult": null
+    "mult": 0.57
    },
    "mal": {
-    "drafts": 12,
+    "drafts": 13,
     "posted": 0,
     "mult": null
    },
@@ -1533,9 +1632,9 @@
     "mult": null
    },
    "followup": {
-    "drafts": 2,
+    "drafts": 4,
     "posted": 1,
-    "mult": null
+    "mult": 0.72
    },
    "spotlight": {
     "drafts": 4,
@@ -1566,7 +1665,7 @@
     "posted": "DemhnJTD0_l",
     "head": "빅나티가 '밴쿠버' 속 주인공과 결혼했습니다.",
     "url": "https://www.instagram.com/p/DemhnJTD0_l/",
-    "mult": null
+    "mult": 0.57
    },
    {
     "day": "2026-10-17",
@@ -1579,7 +1678,7 @@
     "posted": "DemUavNj38_",
     "head": "이수만이 국내에 선보인 신인 걸그룹 A2O LITE가 데뷔곡 'NEON'으로 멜론 TOP1",
     "url": "https://www.instagram.com/p/DemUavNj38_/",
-    "mult": null
+    "mult": 0.72
    },
    {
     "day": "2026-10-18",
@@ -1592,7 +1691,7 @@
     "posted": "Den23ulj26V",
     "head": "데뷔 20주년을 맞은 빅뱅이 11월 21일 일본 교세라 돔 오사카에서 열리는 '2026 M",
     "url": "https://www.instagram.com/p/Den23ulj26V/",
-    "mult": null
+    "mult": 0.88
    },
    {
     "day": "2026-10-18",
@@ -1605,7 +1704,7 @@
     "posted": "DenzY4VD7J4",
     "head": "요네즈 켄시가 두 번째 내한을 확정했습니다.",
     "url": "https://www.instagram.com/p/DenzY4VD7J4/",
-    "mult": null
+    "mult": 0.51
    }
   ]
  },
