@@ -619,6 +619,260 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:bobby-smtm3-prize",
+    "account": "에겐남 스윙스 유튜브",
+    "url": "https://www.youtube.com/watch?v=TVrxFe_w-OM",
+    "image": null,
+    "head": "12년 만에 성사된 쇼미3 레전드들의 만남 — 바비 \"1억 원이 총상금\"",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-19T16:21+09:00",
+   "key": "86ab7fc0",
+   "by": "claude",
+   "subjects": [
+    "바비"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "S",
+    "kind": "클립",
+    "angle": "12년 만에 쇼미3 사람들과 마주 앉은 바비가 웃으며 꺼낸 우승 상금의 실제 — 본인의 말",
+    "why": "오늘(19일) 오후 기사 여러 곳이 동시에 다룬 중심 화제 · 스윙스 채널 원본 영상에 본인 말이 자막으로 또렷 · 스윙스 기사 급상승(32건)과 같은 줄기"
+   },
+   "added": "claude",
+   "added_at": "2026-10-19T16:21+09:00",
+   "corner": "mal",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n바비(@bobbyindaeyo)가 받은 〈쇼미더머니3〉 우승 상금은 1천만 원 정도였습니다.\n\n스윙스(@itsjustswings)의 유튜브 채널 '에겐남 스윙스'에 올라온 '12년 만에 성사된 쇼미3 레전드들의 만남' 영상에서 바비는 \"상금이 1억 원인 줄 아시는 분이 되게 많은데 1억 원이 총상금\"이라고 웃으며 말했는데요, 그 시즌 바비 팀의 프로듀서였던 더콰이엇(@thequiett), 다른 팀을 이끌던 스윙스와 함께한 자리였습니다.\n\n더콰이엇은 '총상금'이라는 단어부터 수상하다며 받아쳤고, 자리는 웃음으로 넘어갔습니다. 12년 만에 같은 자리에 앉은 세 사람에게 우승 상금은 이제 웃으며 꺼내는 이야기가 됐습니다.\n\n#PLOT #바비 #쇼미더머니3 #더콰이엇 #스윙스\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792394473/c1snstlpc5vnlzex6zfo.jpg\n제목: 바비가 받은 쇼미3|우승 상금은 1천만 원\n부제: 12년 만에 쇼미3 사람들과 다시 마주 앉은 자리에서\n출처: TV리포트\n",
+    "caption": "바비(@bobbyindaeyo)가 받은 〈쇼미더머니3〉 우승 상금은 1천만 원 정도였습니다.\n\n스윙스(@itsjustswings)의 유튜브 채널 '에겐남 스윙스'에 올라온 '12년 만에 성사된 쇼미3 레전드들의 만남' 영상에서 바비는 \"상금이 1억 원인 줄 아시는 분이 되게 많은데 1억 원이 총상금\"이라고 웃으며 말했는데요, 그 시즌 바비 팀의 프로듀서였던 더콰이엇(@thequiett), 다른 팀을 이끌던 스윙스와 함께한 자리였습니다.\n\n더콰이엇은 '총상금'이라는 단어부터 수상하다며 받아쳤고, 자리는 웃음으로 넘어갔습니다. 12년 만에 같은 자리에 앉은 세 사람에게 우승 상금은 이제 웃으며 꺼내는 이야기가 됐습니다.\n\n#PLOT #바비 #쇼미더머니3 #더콰이엇 #스윙스",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394473/c1snstlpc5vnlzex6zfo.jpg",
+      "credit": "TV리포트",
+      "from": "https://d3h3k01ny8mjr.cloudfront.net/tv-report/2026/10/19153324/CP-2022-0227-40482704-thumb.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "바비가 받은 쇼미3|우승 상금은 1천만 원",
+      "sub": "12년 만에 쇼미3 사람들과 다시 마주 앉은 자리에서"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "\"1억 원이 총상금이고\"|12년 만에 꺼낸 바비",
+      "sub": "쇼미3 우승 상금 이야기"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "영상 공개일이 기사마다 17일·18일로 엇갈려 캡션에서 날짜를 뺐습니다. 기사들은 '폭로'라고 했지만 영상 속 분위기는 웃음이라 그 단어는 쓰지 않았습니다",
+     "표지 사진이 바비 얼굴인지(기사 대표 사진은 영상 캡처) 확인해 주세요"
+    ],
+    "research": [
+     {
+      "title": "에겐남 스윙스 — 12년 만에 성사된 쇼미3 레전드들의 만남 (원본 영상, 37:19~37:52)",
+      "link": "https://www.youtube.com/watch?v=TVrxFe_w-OM"
+     },
+     {
+      "title": "마이데일리 — 바비 \"'쇼미3' 우승 상금 1억인데 실수령액 1000만 원\" (10/19)",
+      "link": "https://www.mydaily.co.kr/page/view/2026101915245236160"
+     },
+     {
+      "title": "뉴스1 — 바비, '쇼미3' 우승 총 상금 1억원…\"실제로는 1천만 원 받았다\" (10/19)",
+      "link": "https://www.news1.kr/entertain/celebrity-topic/6324458"
+     },
+     {
+      "title": "스타뉴스 — 바비, 12년 만 폭로 \"'쇼미3' 우승 상금..1억이라더니 1천만원 받아\" (10/19)",
+      "link": "https://starnewskorea.com/star/2026/10/19/2026101915000958706"
+     },
+     {
+      "title": "텐아시아 — Mnet '쇼미더머니3'에서 우승한 바비 (2014)",
+      "link": "https://www.tenasia.co.kr/article/2014090590144"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394478/ir7aj79ysgv7rjg3o6iy.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394477/jctzejez1qr5ijgpn0os.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394480/cl8cusgt3m1i8ioex1g1.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394478/ir7aj79ysgv7rjg3o6iy.jpg"
+     },
+     "at": "2026-10-19T16:21+09:00",
+     "v": {
+      "A": "8bcf1aaa",
+      "B": "2b24b7af"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=TVrxFe_w-OM\n구간: 37:18-37:53\n곡: 1억 원이 총상금이고\n아티스트: 아시는 분이 많은데\n피처링:\n후킹: 상금이 1억 원인 줄\n출처: 에겐남 스윙스",
+    "caption": "바비(@bobbyindaeyo)가 받은 〈쇼미더머니3〉 우승 상금은 1천만 원 정도였습니다.\n\n스윙스(@itsjustswings)의 유튜브 채널 '에겐남 스윙스' 영상에서 바비는 \"상금이 1억 원인 줄 아시는 분이 되게 많은데 1억 원이 총상금\"이라고 웃으며 말했는데요, 그 시즌 바비 팀의 프로듀서였던 더콰이엇(@thequiett), 다른 팀을 이끌던 스윙스와 12년 만에 마주 앉은 자리였습니다.\n\n더콰이엇은 '총상금'이라는 단어부터 수상하다며 받아쳤고, 자리는 웃음으로 넘어갔습니다.\n\n#PLOT #바비 #쇼미더머니3 #더콰이엇 #스윙스",
+    "hooks": {
+     "A": "상금이 1억 원인 줄 / 아시는 분이 많은데 / 1억 원이 총상금이고",
+     "B": "바비가 받은 / 쇼미3 우승 상금은 / 1천만 원 정도",
+     "C": "12년 만에 꺼낸 / 쇼미3 우승 상금 / 바비가 받은 금액"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=TVrxFe_w-OM",
+     "credit": "에겐남 스윙스",
+     "range": [
+      2238.0,
+      2273.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "영상 공개일이 기사마다 17일·18일로 엇갈려 캡션에서 날짜를 뺐습니다. 기사들은 '폭로'라고 했지만 영상 속 분위기는 웃음이라 그 단어는 쓰지 않았습니다",
+     "표지 사진이 바비 얼굴인지(기사 대표 사진은 영상 캡처) 확인해 주세요"
+    ],
+    "research": [
+     {
+      "title": "에겐남 스윙스 — 12년 만에 성사된 쇼미3 레전드들의 만남 (원본 영상, 37:19~37:52)",
+      "link": "https://www.youtube.com/watch?v=TVrxFe_w-OM"
+     },
+     {
+      "title": "마이데일리 — 바비 \"'쇼미3' 우승 상금 1억인데 실수령액 1000만 원\" (10/19)",
+      "link": "https://www.mydaily.co.kr/page/view/2026101915245236160"
+     },
+     {
+      "title": "뉴스1 — 바비, '쇼미3' 우승 총 상금 1억원…\"실제로는 1천만 원 받았다\" (10/19)",
+      "link": "https://www.news1.kr/entertain/celebrity-topic/6324458"
+     },
+     {
+      "title": "스타뉴스 — 바비, 12년 만 폭로 \"'쇼미3' 우승 상금..1억이라더니 1천만원 받아\" (10/19)",
+      "link": "https://starnewskorea.com/star/2026/10/19/2026101915000958706"
+     },
+     {
+      "title": "텐아시아 — Mnet '쇼미더머니3'에서 우승한 바비 (2014)",
+      "link": "https://www.tenasia.co.kr/article/2014090590144"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/TVrxFe_w-OM/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394487/efqez6w6pwsqhnlietqc.jpg",
+     "key": "TVrxFe_w-OM@2238.0"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:rescene-scent-pulse",
+    "account": "뉴시스",
+    "url": "https://nwww.newsis.com/view/NISX20260922_0003799349",
+    "image": null,
+    "head": "리센느, 맥박에 닿아 번지는 향기…1년 만의 실물 음반 '펄스'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-19T16:21+09:00",
+   "key": "aa79f6b2",
+   "by": "claude",
+   "subjects": [
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "[실험] 짧은 해부 — 이름부터 향인 리센느, 앨범마다 바꿔 온 향이 11월 [PULSE]에서 '맥박'으로 이어진다",
+    "why": "리센느는 PLOT 팔로우 상위 단골(네 번) · 오늘 시사저널 '차세대 리더' 선정과 향 마케팅 칼럼이 같이 나왔고, 11/3 미니 4집 일정이 돌기 시작 · 발표가 아니라 '왜'로 쓰는 실험"
+   },
+   "added": "claude",
+   "added_at": "2026-10-19T16:21+09:00",
+   "corner": "tteolgi",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n리센느(@rescene_official)라는 이름에는 향이 들어 있습니다.\n\n장면을 뜻하는 'Scene'과 향을 뜻하는 'Scent'를 엮은 이름인데요, 2024년 데뷔 때 원이는 \"리센느만의 향기를 여러분에게 퍼뜨리겠다는 의미\"라고 소개했습니다. 그 뒤로 리센느는 풀 향, 베리 향, 인센스 향처럼 앨범마다 새 향을 콘셉트로 삼았고, [Glow Up]은 비누 향이었습니다.\n\n11월 3일 나오는 미니 4집의 제목은 [PULSE]입니다. 향수는 맥박이 뛰는 자리, '펄스 포인트'에 뿌리는 법이라 향으로 앨범을 이어 온 리센느와 맞닿은 제목입니다. 공개된 일정표 영상에도 심장 박동 소리가 깔렸습니다.\n\n'러브 어택'으로 올해를 보낸 리센느의 다음 향은 맥박 위에 얹힙니다.\n\n#PLOT #리센느 #RESCENE #PULSE #러브어택\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792394475/t2dm5i7qz6785c1qzwag.jpg\n제목: 리센느는 앨범마다|향을 바꿉니다\n부제: 이름부터 향이었던 그룹, 다음은 [PULSE]\n출처: 스포츠경향\n",
+    "caption": "리센느(@rescene_official)라는 이름에는 향이 들어 있습니다.\n\n장면을 뜻하는 'Scene'과 향을 뜻하는 'Scent'를 엮은 이름인데요, 2024년 데뷔 때 원이는 \"리센느만의 향기를 여러분에게 퍼뜨리겠다는 의미\"라고 소개했습니다. 그 뒤로 리센느는 풀 향, 베리 향, 인센스 향처럼 앨범마다 새 향을 콘셉트로 삼았고, [Glow Up]은 비누 향이었습니다.\n\n11월 3일 나오는 미니 4집의 제목은 [PULSE]입니다. 향수는 맥박이 뛰는 자리, '펄스 포인트'에 뿌리는 법이라 향으로 앨범을 이어 온 리센느와 맞닿은 제목입니다. 공개된 일정표 영상에도 심장 박동 소리가 깔렸습니다.\n\n'러브 어택'으로 올해를 보낸 리센느의 다음 향은 맥박 위에 얹힙니다.\n\n#PLOT #리센느 #RESCENE #PULSE #러브어택",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394475/t2dm5i7qz6785c1qzwag.jpg",
+      "credit": "스포츠경향",
+      "from": "https://images.khan.co.kr/article/2026/07/15/news-p.v1.20260715.ed29451dcfc948cd94bd8a62dbe6aab3_P1.png"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "리센느는 앨범마다|향을 바꿉니다",
+      "sub": "이름부터 향이었던 그룹, 다음은 [PULSE]"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'러브 어택' 다음은|리센느의 [PULSE]",
+      "sub": "앨범마다 이어 온 향의 다음 장"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "'펄스 포인트'와 앨범명의 연결은 소속사 공식 설명이 아니라 뉴시스 해석이라, 캡션에선 '맞닿은 제목'이라는 PLOT 해석으로만 썼습니다. 기사 사진 해상도가 모자라 속지 없이 표지 한 장으로 줄였습니다 — 표지 사진은 7월 '프리티 걸' 무렵 사진이니, 콘셉트 포토 A(19일 예정)가 나왔으면 그걸로 바꿔도 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "뉴시스 — 리센느 데뷔 (팀명 = 장면 Scene + 향 Scent, 원이 발언) (2024-03-26)",
+      "link": "https://www.newsis.com/view/NISX20240326_0002675777"
+     },
+     {
+      "title": "더팩트 — 리센느, 비주얼도 노래도 언행도 '비누향' ([Glow Up], 2025-02-05)",
+      "link": "https://news.tf.co.kr/read/ogmeta/2176126.htm"
+     },
+     {
+      "title": "MK스포츠 — 리센느, 11월 3일 '새 향기'로 컴백…미니 4집 'PULSE' (풀 향·베리 향·인센스 향) (2026-09-22)",
+      "link": "https://www.mksports.co.kr/news/entertain/12158948"
+     },
+     {
+      "title": "뉴시스 — 리센느, 맥박에 닿아 번지는 향기…1년 만의 실물 음반 '펄스' (2026-09-22)",
+      "link": "https://nwww.newsis.com/view/NISX20260922_0003799349"
+     },
+     {
+      "title": "YTN — 리센느 'PULSE' 스케줄러, 심장 박동 소리 (2026-10-13)",
+      "link": "https://www.ytn.co.kr/_ln/0117_202610131039493415"
+     },
+     {
+      "title": "시사저널 — [2026 차세대 리더-문화예술] 리센느 (2026-10-19)",
+      "link": "https://www.sisajournal.com/news/articleView.html?idxno=390097"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394490/zaax7bcqakjyl2huutui.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394490/e6fcpkyjqojpuak05r8g.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394491/z3n5i5fvub6tmhjmnjf6.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792394490/zaax7bcqakjyl2huutui.jpg"
+     },
+     "at": "2026-10-19T16:21+09:00",
+     "v": {
+      "A": "40e6b8fd",
+      "B": "51065698"
+     }
+    }
+   },
+   "corner_name": "나무위키 털기",
+   "corner_no": 22
   }
  ],
  "skipped": [],
@@ -636,7 +890,7 @@
     "left": 3,
     "need_today": 1,
     "next_no": 22,
-    "drafts": 0,
+    "drafts": 1,
     "why": "유일하게 꾸준히 평소의 3배 (인물해부 29건 · 3.04배)"
    },
    {
@@ -658,7 +912,7 @@
     "left": 3,
     "need_today": 1,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 2,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -717,7 +971,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-19T15:18+09:00"
+  "at": "2026-10-19T16:21+09:00"
  },
  "slots": {
   "basis": 202,
