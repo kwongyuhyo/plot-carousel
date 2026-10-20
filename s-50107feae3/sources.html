@@ -340,6 +340,10 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .dr .tr.t높음{color:var(--pick); border-color:var(--pick)} .dr .tr.t낮음{color:var(--amber); border-color:var(--amber)}
 /* 오늘의 초안 — 인스타 피드처럼 (2026-10-10) */
 .vmode{display:flex; gap:6px; margin:calc(var(--u)*2) 0}
+.dayrow{display:flex; gap:6px; overflow-x:auto; margin:calc(var(--u)*2) 0 0; padding-bottom:2px; scrollbar-width:none}
+.dayrow::-webkit-scrollbar{display:none}
+.dayrow button{flex:none; padding:6px 10px; border:1px solid var(--line); border-radius:999px; background:none; color:var(--dim); font-size:12.5px; white-space:nowrap}
+.dayrow button[aria-pressed="true"]{color:var(--text); border-color:var(--text)}
 .vmode button{flex:1; padding:8px; border:1px solid var(--line); border-radius:8px; background:none; color:var(--dim); font-size:13px}
 .vmode button[aria-pressed="true"]{color:var(--text); border-color:var(--text)}
 .ig{margin:0 -22px calc(var(--u)*6); border-bottom:1px solid var(--hair); padding-bottom:12px}
@@ -2029,6 +2033,35 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
    * 두 화면 다 열릴 때 저장소의 양식(plot.form.handoff)을 받아 펼친다. 거기서 미리 보고
    * 고치고 보내는 게 제작 확정이다. 붙여넣기가 없다. */
   var DR = null;
+  // 10/20 규효 "날짜별로 지난 날짜것도" — DR 은 지금 보는 날, DR_LIVE 는 오늘(drafts.json). 지난 날은 drafts-YYYY-MM-DD.json
+  var DR_LIVE = null, DR_DAY = '', DR_DAYS = [];
+  function dayLabel(d) { return String(d).slice(5).replace('-', '/'); }
+  function dayBar() {
+    var live = (DR_LIVE && DR_LIVE.date) || '';
+    var past = DR_DAYS.filter(function (x) { return x.date !== live; });
+    if (!past.length) return '';
+    return '<div class="dayrow" role="group" aria-label="날짜">' +
+      '<button data-drday="" aria-pressed="' + (!DR_DAY) + '">' + (live && live !== kstDay(new Date()) ? esc(dayLabel(live)) + ' (최근)' : '오늘') + '</button>' +
+      past.map(function (x) {
+        return '<button data-drday="' + esc(x.date) + '" aria-pressed="' + (DR_DAY === x.date) + '">' + esc(dayLabel(x.date)) + ' · ' + x.n + '</button>';
+      }).join('') + '</div>' +
+      (DR_DAY ? '<div class="fsum" style="color:var(--amber)">' + esc(dayLabel(DR_DAY)) + ' 초안 — 지난 날짜입니다. 보내기·발행·예약은 그대로 되고, 다시 쓰기는 오늘 것만 됩니다.</div>' : '');
+  }
+  function drDay(day) {
+    if (!day) { DR_DAY = ''; DR = DR_LIVE; renderDrafts(); return; }
+    fetch('./drafts-' + day + '.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d) { toast('그날 초안을 못 받았습니다'); return; }
+        DR_DAY = day; DR = d; renderDrafts();
+        window.scrollTo({ top: 0 });
+      })
+      .catch(function () { toast('그날 초안을 못 받았습니다'); });
+  }
+  fetch('./drafts-days.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { DR_DAYS = (d && d.days) || []; if (GRP === 'draft' && DR) renderDrafts(); })
+    .catch(function () {});
   var DR_OPENED = 'plot.drafts.opened';
   function drOpened() { try { return JSON.parse(localStorage.getItem(DR_OPENED) || '{}') || {}; } catch (e) { return {}; } }
   function drMark(key) {
@@ -2054,7 +2087,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   // 오늘 발행 칸 — 발행 목록(performance.json feed)을 한국 시각으로 센다
   var PF = null;
-  function drStale() { return DR && DR.date && DR.date !== kstDay(new Date()) ? String(DR.date) : ''; }
+  function drStale() { return !DR_DAY && DR && DR.date && DR.date !== kstDay(new Date()) ? String(DR.date) : ''; }
   function safeUrl(u) { u = String(u || '').trim(); return /^https?:\/\//i.test(u) ? u : '#'; }
   function escU(u) { return esc(safeUrl(u)); }
   function kstDay(d) { return new Date(d.getTime() + 9 * 3600e3).toISOString().slice(0, 10); }
@@ -2679,8 +2712,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function reqAdd(code, title) { var m = reqGet(); m[code] = { at: Date.now(), title: String(title || '').slice(0, 60) }; reqSave(m); reqPoll(); }
   function reqDrop(code) { var m = reqGet(); delete m[code]; reqSave(m); }
-  function reqFind(code) {                         // 도착한 초안의 번호 (DR.items 안) — 없으면 -1
-    var items = (DR && DR.items) || [], key = code.split('-')[1];
+  function reqFind(code) {                         // 도착한 초안의 번호 (오늘 목록 안) — 없으면 -1
+    var items = (DR_LIVE && DR_LIVE.items) || [], key = code.split('-')[1];
     for (var i = 0; i < items.length; i++) {
       var it = items[i];
       if (it.req === code) return i;
@@ -2692,7 +2725,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function reqState(code, r) {
     var i = reqFind(code);
     if (i >= 0) return { st: 'ok', i: i };
-    var f = ((DR && DR.req_fail) || {})[code];
+    var f = ((DR_LIVE && DR_LIVE.req_fail) || {})[code];
     if (f) return { st: 'bad', why: f.reason };
     return { st: Date.now() - r.at > REQ_WAIT ? 'late' : 'wait' };
   }
@@ -2876,6 +2909,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     }, 30e3);
   }
   function reqGo(i) {
+    if (DR_DAY) { DR_DAY = ''; DR = DR_LIVE; }
     if (DR_CAT !== 'all') { DR_CAT = 'all'; catSave(); }
     if (drView() !== 'feed') { try { localStorage.setItem(DR_VIEW, 'feed'); } catch (x) {} }
     showGroup('draft'); renderDrafts();
@@ -3366,7 +3400,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     }
     acts.push(['ok', '채택 — 좋은 초안', actSent('ok-' + it.key) ? '이미 보냈습니다' : '편집장 보정에 씁니다']);
     acts.push(['no', '버림 — 이유 고르기', actSent('no-' + it.key) ? '이미 보냈습니다' : '버린 이유는 편집장 보정에 들어갑니다']);
-    if (['mag', 'claude'].indexOf((it.source || {}).kind || 'mag') >= 0) acts.push(['rd', '다시 쓰기', '작성기가 이 초안을 처음부터 다시 씁니다 (3~5분)']);
+    if (!DR_DAY && ['mag', 'claude'].indexOf((it.source || {}).kind || 'mag') >= 0) acts.push(['rd', '다시 쓰기', '작성기가 이 초안을 처음부터 다시 씁니다 (3~5분)']);
     return acts;
   }
   function runItemAct(it, a) {
@@ -3486,7 +3520,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var mode = drView();
     var items = (DR && DR.items) || [];
     if (!items.length) {
-      host.innerHTML = reqBox() + orderBox() + pubBox() + '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
+      if (DR_DAY) { host.innerHTML = dayBar() + '<div class="drEmpty">그날 남은 초안이 없습니다.</div>'; return; }
+      host.innerHTML = reqBox() + orderBox() + pubBox() + dayBar() + '<div class="drEmpty">아직 오늘 초안이 없습니다.<br>' +
         '맥이 매일 8시부터 밤 12시까지 한 시간마다 새 후보를 숏폼·캐러셀 초안으로 써 둡니다.' +
         (DR && DR.generated_at ? '<br>마지막: ' + esc(DR.generated_at) : '') + '</div>';
       return;
@@ -3501,14 +3536,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
       // 10/17 — 초안 피드를 위로: 서사형·평가 노트·발행 현황·편성은 피드 아래로 내린다
-      host.innerHTML = usageBox() + reqBox() + orderBox() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = (DR_DAY ? '' : usageBox() + reqBox() + orderBox()) + dayBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
       host.insertAdjacentHTML('beforeend', '<div class="drAfter">' + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + '</div>');
       return;
     }
-    host.innerHTML = reqBox() + orderBox() + pubBox() + cornerBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = (DR_DAY ? '' : reqBox() + orderBox() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
@@ -3569,6 +3604,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (inp && e.key === 'Enter' && !e.isComposing) { e.preventDefault(); evComment((DR.items || [])[Number(inp.getAttribute('data-evci'))], inp.value); }
   });
   document.getElementById('viewDraft').addEventListener('click', function (e) {
+    var dd = e.target.closest('[data-drday]');
+    if (dd) { drDay(dd.getAttribute('data-drday')); return; }
     var vm = e.target.closest('[data-vmode]');
     if (vm) { try { localStorage.setItem(DR_VIEW, vm.getAttribute('data-vmode')); } catch (x) {} renderDrafts(); return; }
     var shb = e.target.closest('[data-share]');
@@ -3642,10 +3679,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) {
       if (!d) return;
-      DR = d;
+      DR_LIVE = d;
+      if (!DR_DAY) DR = d;
       setTimeout(function () { evLoad(); if (OD === null) odLoad(); }, 0);
-      var n = (d && d.items || []).length;
-      if (n) document.getElementById('grpDraft').textContent = (drStale() ? drStale().slice(5).replace('-', '/') + ' 초안 ' : '오늘의 초안 ') + n;
+      var n = (d && d.items || []).length, ld = d.date && d.date !== kstDay(new Date()) ? String(d.date) : '';
+      if (n) document.getElementById('grpDraft').textContent = (ld ? dayLabel(ld) + ' 초안 ' : '오늘의 초안 ') + n;
       if (GRP === 'draft') renderDrafts();
     })
     .catch(function () {});
@@ -3681,9 +3719,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.20 09:52';
+    a.title = '판 10.20 13:05';
     var ver = document.createElement('span');
-    ver.textContent = '10.20 09:52';
+    ver.textContent = '10.20 13:05';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
