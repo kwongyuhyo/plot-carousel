@@ -873,13 +873,193 @@
    },
    "corner_name": "나무위키 털기",
    "corner_no": 22
+  },
+  {
+   "source": {
+    "id": "claude:brk-a319fe53",
+    "account": "@갈등·반응",
+    "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000074828",
+    "image": null,
+    "head": "양홍원이 결혼식 날 남긴 '여전히' 한 줄과 갈린 반응",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-20T09:39+09:00",
+   "key": "d5725232",
+   "by": "claude",
+   "subjects": [
+    "양홍원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "결혼식 날 인스타그램에 남긴 '여전히' 한 줄이 왜 이틀째 화제인가 — 말과 갈린 반응만, 논란 서사·가족 이야기 없이",
+    "why": "10/18 결혼 이후 소감 한 줄로 기사·커뮤니티 반응이 몰렸고, 양홍원은 지금 가장 뜨거운 인물이라 이어서 다룬다 (화보·식과 다른 각도)"
+   },
+   "added": "claude",
+   "added_at": "2026-10-20T09:39+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n양홍원(@yanghongwon)이 결혼식 날 남긴 한 줄이 이틀째 화제입니다.\n\n지난 18일 원현주와 식을 올린 양홍원은 인스타그램에 \"현주야 사랑해 난 여전히 천호동 ○○모텔로 들어가는 기분이야\"라고 적었는데요, 2017년 무렵부터 만나 온 두 사람의 오래된 장소를 결혼식 날 다시 꺼낸 셈입니다.\n\n반응은 갈렸습니다. 오랜 연애에도 설렘이 여전하다는 뜻으로 읽는 시선이 있는 반면, 결혼 소감으로는 지나치게 사적이라는 지적도 나왔고, 그 숙박업소 리뷰란에는 소감을 따라 쓴 글까지 올라왔습니다.\n\n8년의 연애 끝에 식을 올린 두 사람에게 축하를 보냅니다.\n\n#PLOT #양홍원 #원현주 #결혼 #인디고뮤직\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792456741/pqsfgvnvhauqetqhpwij.jpg\n제목: 양홍원이 결혼식 날|남긴 한 줄\n부제: 8년을 만나고도 '여전히'\n출처: 전남일보\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg\n소제목: 결혼식 날 남긴 한 줄\n본문: 지난 18일 원현주와 식을 올린 양홍원은 인스타그램에 \"현주야 사랑해 난 여전히 천호동 ○○모텔로 들어가는 기분이야\"라고 적었습니다.\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg\n소제목: 8년, 그리고 '여전히'\n본문: 두 사람은 2017년 무렵부터 만나 왔습니다. 오랜 연애 끝에도 설렘이 그대로라는 뜻으로 읽는 시선이 있는 반면, 결혼 소감으로는 지나치게 사적이라는 지적도 나왔습니다.\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://i.ibb.co/yF8HhYv9/5518203184d5.jpg\n소제목: 리뷰란의 패러디\n본문: 그 숙박업소의 온라인 리뷰란에는 18일부터 양홍원의 소감을 따라 쓴 글이 잇따라 올라왔습니다.\n출처: @yanghongwon\n",
+    "caption": "양홍원(@yanghongwon)이 결혼식 날 남긴 한 줄이 이틀째 화제입니다.\n\n지난 18일 원현주와 식을 올린 양홍원은 인스타그램에 \"현주야 사랑해 난 여전히 천호동 ○○모텔로 들어가는 기분이야\"라고 적었는데요, 2017년 무렵부터 만나 온 두 사람의 오래된 장소를 결혼식 날 다시 꺼낸 셈입니다.\n\n반응은 갈렸습니다. 오랜 연애에도 설렘이 여전하다는 뜻으로 읽는 시선이 있는 반면, 결혼 소감으로는 지나치게 사적이라는 지적도 나왔고, 그 숙박업소 리뷰란에는 소감을 따라 쓴 글까지 올라왔습니다.\n\n8년의 연애 끝에 식을 올린 두 사람에게 축하를 보냅니다.\n\n#PLOT #양홍원 #원현주 #결혼 #인디고뮤직",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456741/pqsfgvnvhauqetqhpwij.jpg",
+      "credit": "전남일보",
+      "from": "https://cdn.jnilbo.com/news/photo/202610/90000074828_601779_558.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg",
+      "credit": "@yanghongwon",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/705341035_18560568136068013_2206778758427998637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TWg_OhgJoeoQ7kNvwHjviZx&_nc_oc=AdpcPVfGM1_phE68DwrGl7jZWjUMgaKZNU7PfneT-JWeNAV1oiwvFbtLWaGjzayQ4sY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQMJQiVzyUk2uGi9x4n912NTC03biKFk7ChQ4hzTT81Zlg&oe=6AD96205"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088231_18601669921068013_7415273064331475522_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X0G_tJayB44Q7kNvwH7z2NK&_nc_oc=AdqBaZrMm6WXy659cO4wzhM73akk-rQBPNH0zsG5bIYyP4rd_pF4a4SMkFru3Ks2AHc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=nezvaE7fueheY2maeqhsxA&oh=00_AQPZgmHDDkochWrVlDzjbqHOnZpW1yewU7Kn9ecQc5-c4w&oe=6ADAC924"
+     },
+     {
+      "url": "https://i.ibb.co/yF8HhYv9/5518203184d5.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/833323904_18596877385068013_7268755776048696997_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AvsUCeJrigkQ7kNvwHqHc_2&_nc_oc=AdpbtSKdfVtHs77kLTNQTCBvr68Z_r9q0o1QWVyGQOg6c8Y3L2wf4KEzL7jLsLdO82o&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=bqPKa4OX_mXtYt9IMIrbtA&oh=00_AQN-5eBfv6wjWtgkeM5RVCaVWlRBLVGTuMPjyVrdywelYg&oe=6ACFF56D"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "양홍원이 결혼식 날|남긴 한 줄",
+      "sub": "8년을 만나고도 '여전히'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "8년을 만나고도|\"난 여전히\"",
+      "sub": "양홍원 결혼 소감"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "양홍원 결혼 소감에|리뷰란까지 들썩",
+      "sub": "결혼식 날 남긴 한 줄"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "양홍원 인스타그램 원문 게시물이 아직 그대로 있는지 (수정·삭제 시 캡션의 인용을 고쳐야 함). 업소 이름은 일부러 가렸습니다",
+     "표지 사진(전남일보 대표 사진·웨딩 화보)이 작아 살짝 흐림 — 원현주 인스타 원본 화보로 바꿀지"
+    ],
+    "research": [
+     {
+      "title": "엑스포츠뉴스 — 양홍원, 결혼식 날 '모텔 발언' 파장…천호동 숙박업소에 때아닌 리뷰",
+      "link": "https://www.xportsnews.com/article/2209099"
+     },
+     {
+      "title": "조이뉴스24 — [퇴근길이슈] 양홍원 모텔·지성 악플러…",
+      "link": "http://www.joynews24.com/view/2016614"
+     },
+     {
+      "title": "케이스타뉴스 — 양홍원♥원현주, 9년 연애 끝 혼인...결혼 소감에 뜻밖의 '모텔 발언'",
+      "link": "http://www.starnewsk.com/news/articleView.html?idxno=60082"
+     },
+     {
+      "title": "전남일보 — 8년 열애 끝 결혼…양홍원♥원현주",
+      "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000074828"
+     },
+     {
+      "title": "혼돈즈 — [혼돈쇼] 1부 게스트 양홍원, 결혼식 전 혼돈즈 방문 (2026-10-07)",
+      "link": "https://www.youtube.com/watch?v=R-hsfNVoMpw"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456748/e54oqzt4bghgbf5j0u2b.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456748/x9ktr9fk1lo1xvsugfvc.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456748/soui2erna2iejhpgxvra.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456748/uq8jjswa6a9ik6tq5p5a.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456749/asbqc9fcazepsxqhk5gh.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456751/ngvjirvtglvmh337vgdj.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456751/e2w2c6vqj0v1akfupyuj.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456748/e54oqzt4bghgbf5j0u2b.jpg"
+     },
+     "at": "2026-10-20T09:39+09:00",
+     "v": {
+      "A": "a3026bba",
+      "B": "03d810c1",
+      "C": "42c898b3"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=R-hsfNVoMpw\n구간: 0:32-1:09\n곡: 품어야죠\n아티스트: 넓게 보자,\n피처링:\n후킹: 새 신랑 마음가짐은\n출처: 혼돈즈",
+    "caption": "양홍원(@yanghongwon)이 결혼을 앞두고 새 신랑의 마음가짐을 \"넓게 보자\"는 한 마디로 정리했습니다.\n\n결혼식 열하루 전 공개된 혼돈즈 채널의 〈혼돈쇼〉에 게스트로 나선 자리였는데요, 그렇게 답한 뒤 품어야 한다고 덧붙였습니다.\n\n그리고 지난 18일, 양홍원은 2017년 무렵부터 만나 온 원현주와 식을 올렸습니다. 두 사람에게 축하를 보냅니다.\n\n#PLOT #양홍원 #원현주 #혼돈쇼 #혼돈즈",
+    "hooks": {
+     "A": "새 신랑 마음가짐은 / 넓게 보자, / 품어야죠",
+     "B": "결혼 앞둔 양홍원이 / 밝힌 새 신랑의 / 마음가짐",
+     "C": "새 신랑 양홍원의 / 다짐은 하나, / 넓게 보자"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=R-hsfNVoMpw",
+     "credit": "혼돈즈",
+     "range": [
+      32.0,
+      69.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "양홍원 인스타그램 원문 게시물이 아직 그대로 있는지 (수정·삭제 시 캡션의 인용을 고쳐야 함). 업소 이름은 일부러 가렸습니다",
+     "표지 사진(전남일보 대표 사진·웨딩 화보)이 작아 살짝 흐림 — 원현주 인스타 원본 화보로 바꿀지"
+    ],
+    "research": [
+     {
+      "title": "엑스포츠뉴스 — 양홍원, 결혼식 날 '모텔 발언' 파장…천호동 숙박업소에 때아닌 리뷰",
+      "link": "https://www.xportsnews.com/article/2209099"
+     },
+     {
+      "title": "조이뉴스24 — [퇴근길이슈] 양홍원 모텔·지성 악플러…",
+      "link": "http://www.joynews24.com/view/2016614"
+     },
+     {
+      "title": "케이스타뉴스 — 양홍원♥원현주, 9년 연애 끝 혼인...결혼 소감에 뜻밖의 '모텔 발언'",
+      "link": "http://www.starnewsk.com/news/articleView.html?idxno=60082"
+     },
+     {
+      "title": "전남일보 — 8년 열애 끝 결혼…양홍원♥원현주",
+      "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000074828"
+     },
+     {
+      "title": "혼돈즈 — [혼돈쇼] 1부 게스트 양홍원, 결혼식 전 혼돈즈 방문 (2026-10-07)",
+      "link": "https://www.youtube.com/watch?v=R-hsfNVoMpw"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/R-hsfNVoMpw/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792456759/hxu9vwvqldbnrdula66k.jpg",
+     "key": "R-hsfNVoMpw@32.0"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
-  "days_left": 7,
-  "done": 0,
+  "days_left": 6,
+  "done": 1,
   "goal": 28,
   "corners": [
    {
@@ -899,7 +1079,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 1,
+    "need_today": 2,
     "next_no": 1,
     "drafts": 0,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
@@ -963,18 +1143,18 @@
     "key": "news",
     "name": "소식",
     "weekly": 7,
-    "done": 0,
-    "left": 7,
+    "done": 1,
+    "left": 6,
     "need_today": 1,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-19T16:21+09:00"
+  "at": "2026-10-20T09:39+09:00"
  },
  "slots": {
-  "basis": 202,
+  "basis": 203,
   "card": [
    {
     "from": 18,
@@ -983,6 +1163,14 @@
     "mult": 2.82,
     "median": 3.27,
     "n": 27
+   },
+   {
+    "from": 15,
+    "to": 18,
+    "at": "16:30",
+    "mult": 1.92,
+    "median": 2.4,
+    "n": 6
    },
    {
     "from": 21,
@@ -1021,10 +1209,10 @@
   ]
  },
  "factors": {
-  "first": 3.61,
-  "later": 0.97,
-  "n": 81,
-  "night": 0.22,
-  "at": "2026-10-12T16:28+09:00"
+  "first": 3.19,
+  "later": 1.13,
+  "n": 94,
+  "night": 0.37,
+  "at": "2026-10-19T16:31+09:00"
  }
 }
