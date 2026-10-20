@@ -245,6 +245,176 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:loco-minami-tata",
+    "account": "로꼬 유튜브",
+    "url": "https://www.youtube.com/watch?v=As3WTkyaDVc",
+    "image": null,
+    "head": "로꼬, 미나미에게 '타타'를 맡긴 이유",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-20T16:18+09:00",
+   "key": "7e047d33",
+   "by": "claude",
+   "subjects": [
+    "로꼬",
+    "미나미"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "로꼬가 녹음 비하인드에서 직접 밝힌, '타타'의 목소리로 리센느 미나미를 고른 이유 — '고향이 아닌 곳에서 활동하니까'",
+    "why": "리센느 후속 기획 칸('미나미의 목소리로 듣는 타타') · 리센느 털기 원글 48배 · 원본 영상 자막으로 말과 구간 확인 · 10/19 뉴스1 등 보도"
+   },
+   "added": "claude",
+   "added_at": "2026-10-20T16:18+09:00",
+   "corner": "followup",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n로꼬(@satgotloco)가 '타타'의 목소리로 리센느(@rescene_official) 미나미를 고른 이유를 직접 밝혔습니다.\n\n지난 15일 나온 '타타'는 로꼬가 \"사랑하는 사람에게 달려가는 발소리\"라고 소개한 곡인데요, 제주도 송캠프에서 논밭이 내다보이는 펜션에 머물며 만든 노래입니다. 로꼬는 자신의 유튜브 채널에 올린 녹음 비하인드 영상에서 이 곡에는 순수한 보컬이 필요했다고 돌아봤습니다.\n\n멀리 떨어진 사람에게 건네는 노래라는 점도 이유였습니다. 고향이 아닌 곳에서 활동하는 미나미라면 비슷한 감정을 노래할 수 있겠다고 생각했다는 것입니다.\n\n멀리 있는 사람에게 달려가는 노래를, 고향을 떠나 노래하는 사람이 함께 부른 셈입니다.\n\n#PLOT #로꼬 #리센느 #미나미 #타타\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792480733/hg3vlyw0oclzztfeuxph.jpg\n제목: 로꼬가 미나미에게|'타타'를 맡긴 이유\n부제: 리센느 미나미가 함께 부른 신곡\n출처: @satgotloco\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792480735/ypax2jjdq3ddtbdp6yek.jpg\n소제목: 달려가는 발소리\n본문: '타타'는 로꼬가 \"사랑하는 사람에게 달려가는 발소리\"라고 소개한 곡입니다. 지난 15일 리센느 미나미의 목소리와 함께 나왔습니다.\n출처: @rescene_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792480738/ieqjiwzbzxsdg1mjazjn.jpg\n소제목: 논밭 앞에서 쓴 노래\n본문: 로꼬는 제주도 송캠프에서 논밭이 내다보이는 펜션에 머물며 이 곡을 만들었습니다. 그때 피어오른 순수하고 맑은 생각들이 곡에 담겼다고 돌아봤습니다.\n출처: @satgotloco\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792480742/rpfqfbcy2oyxals2drsh.jpg\n소제목: 고향이 아닌 곳에서\n본문: 멀리 떨어진 사람에게 건네는 노래라, 고향이 아닌 곳에서 활동하는 미나미라면 비슷한 감정을 노래할 수 있겠다고 생각했다는 것이 로꼬의 설명입니다.\n출처: @rescene_official\n",
+    "caption": "로꼬(@satgotloco)가 '타타'의 목소리로 리센느(@rescene_official) 미나미를 고른 이유를 직접 밝혔습니다.\n\n지난 15일 나온 '타타'는 로꼬가 \"사랑하는 사람에게 달려가는 발소리\"라고 소개한 곡인데요, 제주도 송캠프에서 논밭이 내다보이는 펜션에 머물며 만든 노래입니다. 로꼬는 자신의 유튜브 채널에 올린 녹음 비하인드 영상에서 이 곡에는 순수한 보컬이 필요했다고 돌아봤습니다.\n\n멀리 떨어진 사람에게 건네는 노래라는 점도 이유였습니다. 고향이 아닌 곳에서 활동하는 미나미라면 비슷한 감정을 노래할 수 있겠다고 생각했다는 것입니다.\n\n멀리 있는 사람에게 달려가는 노래를, 고향을 떠나 노래하는 사람이 함께 부른 셈입니다.\n\n#PLOT #로꼬 #리센느 #미나미 #타타",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480733/hg3vlyw0oclzztfeuxph.jpg",
+      "credit": "@satgotloco",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851887352_18641749060001181_1464506811303888956_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hVHEKnfK4sUQ7kNvwGMQXOh&_nc_oc=AdrTmohon352pq1ediQn_bRvD46YGOIR-W2a-WvR_Gt8j21FU1R1oCtcXK4CtVpUjys&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=APIXiy9iZ2SFfgjjpg2NSA&oh=00_AQOyxaNYlt7NLQQGk8ONnK3avzBM3N-lYjW-ZHGqdvK-LQ&oe=6ADCA497"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480735/ypax2jjdq3ddtbdp6yek.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257426/jzseezoz8goj3qh5zu6n.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480738/ieqjiwzbzxsdg1mjazjn.jpg",
+      "credit": "@satgotloco",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791946430/bozzkytm8p6tgvlnz5es.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480742/rpfqfbcy2oyxals2drsh.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436494/t04z1lae6cduxeintpn1.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "로꼬가 미나미에게|'타타'를 맡긴 이유",
+      "sub": "리센느 미나미가 함께 부른 신곡"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "\"순수한 보컬이|필요했어요\"",
+      "sub": "로꼬가 미나미를 부른 이유"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "영상 2:15~2:57 에서 '순수한 보컬'·'고향이 아닌 곳' 말을 로꼬가 하는지(옆 사람 말과 섞이지 않는지) 귀로 한 번 확인해 주세요 — 기사들은 로꼬 발언으로 적었습니다",
+     "2·4장 미나미 사진은 사진 DB(리센느 공식) 것입니다 — 다른 멤버가 아닌지, 4장(천사 날개·얼굴 반)을 바꿀지 봐 주세요"
+    ],
+    "research": [
+     {
+      "title": "로꼬 유튜브 — '타타' 녹음 비하인드 with 미나미 (원본, 0:57~3:02)",
+      "link": "https://www.youtube.com/watch?v=As3WTkyaDVc"
+     },
+     {
+      "title": "로꼬 인스타그램 — 타타 발매 (곡 소개 '사랑하는 사람에게 달려가는 발소리')",
+      "link": "https://www.instagram.com/satgotloco/"
+     },
+     {
+      "title": "뉴스1 — 로꼬, 리센느 미나미에게 신곡 피처링 요청…'순수한 보컬 필요했다' (10/19)",
+      "link": "https://www.news1.kr/entertain/celebrity-topic/6324922"
+     },
+     {
+      "title": "뉴스1 — 로꼬, 15일 신곡 '타타' 발매…리센느 미나미 피처링",
+      "link": "https://www.news1.kr/entertain/music/6320768"
+     },
+     {
+      "title": "스타데일리뉴스 — 로꼬, 오늘 신곡 '타타' 발매",
+      "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=551771"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480747/nvi8exrooa2eevbfaelc.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480747/p0b7zrumfxuq8eysdmhi.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480747/vozzmzllcc7gwor7jogy.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480747/vyvpsvv8cwo1izivb2gu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480749/tfbfzopr1cnqz2dpwkpo.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480751/gpykxzvxhqnob1gwauyh.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480747/nvi8exrooa2eevbfaelc.jpg"
+     },
+     "at": "2026-10-20T16:19+09:00",
+     "v": {
+      "A": "08a1ffc9",
+      "B": "2b4f59a4"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=As3WTkyaDVc\n구간: 2:34-3:02\n곡: 활동하고 계시니까\n아티스트: 고향이 아닌 곳에서\n피처링:\n후킹: 미나미 씨도\n출처: Loco",
+    "caption": "로꼬(@satgotloco)가 '타타'의 목소리로 리센느(@rescene_official) 미나미를 고른 이유를 직접 밝혔습니다.\n\n녹음 비하인드 영상에서 로꼬는 이 곡에 순수한 보컬이 필요했다고 했는데요, 멀리 떨어진 사람에게 건네는 노래라 고향이 아닌 곳에서 활동하는 미나미라면 비슷한 감정을 노래할 수 있겠다고 봤다는 설명입니다.\n\n'타타'는 지난 15일 발매됐습니다.\n\n#PLOT #로꼬 #리센느 #미나미 #타타",
+    "hooks": {
+     "A": "미나미 씨도 / 고향이 아닌 곳에서 / 활동하고 계시니까",
+     "B": "저는 사실 / 순수한 보컬이 / 필요하긴 했어요",
+     "C": "로꼬가 직접 밝힌 / 미나미에게 / '타타'를 맡긴 이유"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=As3WTkyaDVc",
+     "credit": "Loco",
+     "range": [
+      154.0,
+      182.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "영상 2:15~2:57 에서 '순수한 보컬'·'고향이 아닌 곳' 말을 로꼬가 하는지(옆 사람 말과 섞이지 않는지) 귀로 한 번 확인해 주세요 — 기사들은 로꼬 발언으로 적었습니다",
+     "2·4장 미나미 사진은 사진 DB(리센느 공식) 것입니다 — 다른 멤버가 아닌지, 4장(천사 날개·얼굴 반)을 바꿀지 봐 주세요"
+    ],
+    "research": [
+     {
+      "title": "로꼬 유튜브 — '타타' 녹음 비하인드 with 미나미 (원본, 0:57~3:02)",
+      "link": "https://www.youtube.com/watch?v=As3WTkyaDVc"
+     },
+     {
+      "title": "로꼬 인스타그램 — 타타 발매 (곡 소개 '사랑하는 사람에게 달려가는 발소리')",
+      "link": "https://www.instagram.com/satgotloco/"
+     },
+     {
+      "title": "뉴스1 — 로꼬, 리센느 미나미에게 신곡 피처링 요청…'순수한 보컬 필요했다' (10/19)",
+      "link": "https://www.news1.kr/entertain/celebrity-topic/6324922"
+     },
+     {
+      "title": "뉴스1 — 로꼬, 15일 신곡 '타타' 발매…리센느 미나미 피처링",
+      "link": "https://www.news1.kr/entertain/music/6320768"
+     },
+     {
+      "title": "스타데일리뉴스 — 로꼬, 오늘 신곡 '타타' 발매",
+      "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=551771"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/As3WTkyaDVc/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792480756/kdkqvieogutep8vk5mcn.jpg",
+     "key": "As3WTkyaDVc@154.0"
+    }
+   },
+   "corner_name": "후속"
   }
  ],
  "skipped": [],
@@ -328,7 +498,7 @@
     "left": 2,
     "need_today": 1,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -343,7 +513,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-20T09:51+09:00"
+  "at": "2026-10-20T16:18+09:00"
  },
  "slots": {
   "basis": 203,
