@@ -204,7 +204,7 @@ html:root:not([data-theme="dark"])[data-accent="neon"] body{ background-image:li
   color:var(--muted,#8A8A96); font:inherit; font-size:13px; padding:5px 9px; cursor:pointer}
 /* 머리줄에 붙을 자리가 없으면 화면 오른쪽 위에 떠 있는다. 이 배경을 인라인으로
    까맣게 박아 두면 밝은 테마에서 글자가 묻는다 — 변수로 둔다. */
-.plotThemeBtn.float{position:fixed; right:12px; top:12px; z-index:9998;
+.plotThemeBtn.float{position:fixed; right:12px; top:calc(12px + env(safe-area-inset-top)); z-index:9998;
   background:var(--panel); color:var(--text); backdrop-filter:blur(8px)}
 /* 숏폼은 버튼 줄에 붙는다. 그 줄은 한 줄로 고정돼 있어서 하나 더 얹으면 390px 에서
    18px 밀려났다 — 넘치면 접히게 한다. */
@@ -275,6 +275,7 @@ input,textarea{font:inherit}
 /* 상단 */
 header{position:sticky;top:0;z-index:20;background:var(--bg);
   border-bottom:1px solid var(--line);padding:10px 14px 12px;
+  padding-top:calc(10px + env(safe-area-inset-top));      /* 10/20 아이폰 홈 화면 앱 — 상태 막대(시계·배터리) 밑으로 */
   display:flex;flex-direction:column;gap:10px}
 .brand{display:flex;align-items:center;gap:10px}
 .mark{font-family:"Pretendard-ExtraBold",sans-serif;font-size:14px;letter-spacing:.22em;
