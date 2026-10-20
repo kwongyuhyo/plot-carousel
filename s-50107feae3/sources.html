@@ -3045,7 +3045,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       ln('hk', hook, '1줄') + ln('ar', art, music ? '아티스트' : '2줄') + ln('tt', song, music ? '곡 제목' : '3줄') +
       '<div class="sr">' + esc(sfCredit(sfField(f, '출처'))) + '</div></div>';
     var vlink = vd.url ? vd.url + (vd.range ? (vd.url.indexOf('?') >= 0 ? '&' : '?') + 't=' + Math.floor(vd.range[0]) : '') : '';
+    var rd = sh.rendered || {}, rq = sh.render || {};
     var marks = '<span>' + esc(span ? '구간 ' + span : '구간 미정') + '</span>' +
+      (rd.url ? '<a class="yt" href="' + escU(rd.url) + '" target="_blank" rel="noopener">완성 영상 ▶</a>' :
+        rq.status ? '<span>🎬 맥이 만드는 중</span>' : '') +
       (ytId(vd.url) ? '<button data-vfit hidden>전체 보기</button>' : '') +
       (vlink ? '<a class="yt" href="' + escU(vlink) + '" target="_blank" rel="noopener">원본 ↗</a>' : '') +
       (song ? '' : '<span class="bad">' + (music ? '곡 제목 필요' : '3줄이 비었습니다 — 숏폼 앱은 맨 아래 줄이 있어야 만듭니다') + '</span>');
@@ -3719,9 +3722,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.20 16:19';
+    a.title = '판 10.20 18:24';
     var ver = document.createElement('span');
-    ver.textContent = '10.20 16:19';
+    ver.textContent = '10.20 18:24';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
