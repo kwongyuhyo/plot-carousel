@@ -2734,7 +2734,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
      '다른 후보' 를 누르면 맥이 그 곡도 만든다 (5~10분, 하루 상한 밖). */
   // 제작 맡기기 (2026-10-12 규효 "내가 먼저 찾은 이슈나 만들고 싶은 특집이 있으면 내가 제안") — collectors/orders
   var OD = null, OD_T = null;
-  var OD_TYPE = [['draft', '이슈·소재 초안'], ['special', '특집'], ['story', '서사형 오늘의 노래']];
+  var OD_TYPE = [['draft', '이슈·소재 초안'], ['tteolgi', '나무위키 털기'], ['special', '특집'], ['story', '서사형 오늘의 노래']];
   var OD_FORM = [['b', '숏폼·캐러셀'], ['s', '숏폼'], ['c', '캐러셀']];
   var OD_ST = { queued: '맥이 받음', running: '만드는 중', done: '완료', fail: '못 만듦' };
   function odLoad() {
@@ -2765,10 +2765,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!sbOn()) { toast('저장소 설정이 있어야 맡길 수 있습니다 (평가 노트와 같은 설정)'); return; }
     var v = { type: 'draft', form: 'b' };
     var sh = document.createElement('div'); sh.className = 'sheet evs';
-    var ph = { draft: '예) 저스디스 스카이민혁 디스 / 이영지 고스트 페스티벌 사과', special: '예) 빈지노 나무위키 털기 / 일리네어 10년 타임라인',
+    var ph = { draft: '예) 저스디스 스카이민혁 디스 / 이영지 고스트 페스티벌 사과', special: '예) 일리네어 10년 타임라인 / KC 관계도',
+               tteolgi: '사람·대상 이름   예) 리센느 제나 / 실리카겔 — 나무위키만 보고 재미있는 건 전부 (장 수 제한 없음)',
                story: '아티스트 - 곡   예) 한로로 - 0+0' };
     var draw = function () {
-      sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>제작 맡기기</h4><div class="sub">고른 소재는 판정이 버리지 않고 씁니다. 맥이 5분 안에 받아 3~10분 뒤 오늘의 초안(서사형은 서사 칸)에 올립니다.</div>' +
+      sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>제작 맡기기</h4><div class="sub">고른 소재는 판정이 버리지 않고 씁니다. 맥이 5분 안에 받아 작성기(Opus)가 취재·검증한 뒤 오늘의 초안에 올립니다 — 보통 10~20분, 나무위키 털기는 20~40분.</div>' +
         '<div class="g"><b>무엇을</b>' + evChips('type', OD_TYPE, v.type) + '</div>' +
         (v.type === 'draft' ? '<div class="g"><b>형식</b>' + evChips('form', OD_FORM, v.form) + '</div>' : '') +
         '<div class="g"><b>' + (v.type === 'story' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>' +
@@ -2788,7 +2789,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         if (v.type === 'story' && !/\s[-–—\/|]\s?|[-–—\/|]/.test(v.what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
         var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: (v.url || '').slice(0, 300),
           verdict: {}, reason: v.memo || '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
-          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : (v.type === 'special' ? 'c' : ''), what: v.what, url: v.url || '' } };
+          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : (v.type === 'special' || v.type === 'tteolgi' ? 'c' : ''), what: v.what, url: v.url || '' } };
         sh.remove();
         sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } })
           .then(function () { toast('맡겼습니다 — 맥이 5분 안에 받습니다'); OD = [rec].concat(OD || []); if (GRP === 'draft') renderDrafts(); clearTimeout(OD_T); OD_T = setTimeout(odLoad, 45000); })
@@ -3722,9 +3723,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.20 18:28';
+    a.title = '판 10.20 18:35';
     var ver = document.createElement('span');
-    ver.textContent = '10.20 18:28';
+    ver.textContent = '10.20 18:35';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
