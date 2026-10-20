@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20 19:04 KST",
+ "generated_at": "2026-10-20 22:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1403,11 +1403,21 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-20 15:06 KST"
+  "daily": "2026-10-20 19:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-20T18:47:15+09:00",
+  "fetched_at": "2026-10-20T22:04:30+09:00",
   "posts": [
+   {
+    "t": "2026-10-20T20:41+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@rescene"
+   },
+   {
+    "t": "2026-10-20T20:03+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "인디고뮤직(@indigomusic_official)이라는 이름은"
+   },
    {
     "t": "2026-10-19T17:15+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1527,30 +1537,15 @@
     "t": "2026-09-29T22:11+09:00",
     "type": "VIDEO",
     "head": "로꼬가 두오버엔터테인먼트와 전속계약을 맺었습니다."
-   },
-   {
-    "t": "2026-09-29T21:58+09:00",
-    "type": "VIDEO",
-    "head": "로얄44가 'C.S.C.B' 뮤직비디오를 공개했습니다."
-   },
-   {
-    "t": "2026-09-29T21:57+09:00",
-    "type": "VIDEO",
-    "head": "로얄44의 걸음이 갑자기 빨라졌습니다."
-   },
-   {
-    "t": "2026-09-29T21:55+09:00",
-    "type": "VIDEO",
-    "head": "로얄44가 동묘에서 용돈을 뿌렸습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 80,
-  "posted": 5,
-  "posts": 30,
-  "rate": 0.06,
+  "drafts": 82,
+  "posted": 7,
+  "posts": 32,
+  "rate": 0.09,
   "adopted_mult": 0.65,
   "own_mult": 1.12,
   "lanes": {
@@ -1560,13 +1555,13 @@
     "mult": null
    },
    "재미": {
-    "drafts": 9,
+    "drafts": 10,
     "posted": 0,
     "mult": null
    },
    "정보": {
-    "drafts": 42,
-    "posted": 2,
+    "drafts": 43,
+    "posted": 4,
     "mult": 0.57
    },
    "클립": {
@@ -1607,7 +1602,7 @@
   },
   "corners": {
    "news": {
-    "drafts": 45,
+    "drafts": 46,
     "posted": 4,
     "mult": 0.57
    },
@@ -1627,8 +1622,8 @@
     "mult": null
    },
    "tteolgi": {
-    "drafts": 5,
-    "posted": 0,
+    "drafts": 6,
+    "posted": 2,
     "mult": null
    },
    "followup": {
@@ -1709,6 +1704,19 @@
    {
     "day": "2026-10-19",
     "lane": "정보",
+    "who": "YF",
+    "repack": false,
+    "grade": "A",
+    "corner": "tteolgi",
+    "key": "12be8b13",
+    "posted": "DetrpJ0Dz8s",
+    "head": "인디고뮤직(@indigomusic_official)이라는 이름은",
+    "url": "https://www.instagram.com/p/DetrpJ0Dz8s/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-19",
+    "lane": "정보",
     "who": "크러쉬",
     "repack": false,
     "grade": "A",
@@ -1717,6 +1725,19 @@
     "posted": "DeqzmNhj4Fo",
     "head": "크러쉬가 1년 2개월 만의 신곡에 아이유(@dlwlrma)를 불렀습니다.",
     "url": "https://www.instagram.com/p/DeqzmNhj4Fo/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-19",
+    "lane": "정보",
+    "who": "리센느",
+    "repack": false,
+    "grade": "A",
+    "corner": "tteolgi",
+    "key": "aa79f6b2",
+    "posted": "Detv-dlD-sH",
+    "head": "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@rescene_official)",
+    "url": "https://www.instagram.com/p/Detv-dlD-sH/",
     "mult": null
    }
   ]
