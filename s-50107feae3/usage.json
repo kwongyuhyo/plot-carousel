@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-20T22:11+09:00",
+ "generated_at": "2026-10-21T05:10+09:00",
  "cycle_start": "2026-10-15",
  "next_credit": "2026-11-15",
  "credit": 100.0,
- "spent": 20.27,
- "today": 7.3,
- "per_day": 3.44,
- "calls": 4320,
+ "spent": 20.53,
+ "today": 0.18,
+ "per_day": 3.32,
+ "calls": 4966,
  "by": [
   {
    "name": "작성기 (Claude Code)",
@@ -22,15 +22,15 @@
   },
   {
    "name": "후속 기획",
-   "usd": 0.86
+   "usd": 1.01
+  },
+  {
+   "name": "사진 DB",
+   "usd": 0.64
   },
   {
    "name": "guided_writer",
    "usd": 0.57
-  },
-  {
-   "name": "사진 DB",
-   "usd": 0.54
   },
   {
    "name": "성공 모델",
@@ -50,7 +50,7 @@
   },
   {
    "name": "클립 고르기",
-   "usd": 0.24
+   "usd": 0.25
   },
   {
    "name": "naver_music",
