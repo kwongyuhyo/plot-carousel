@@ -2894,10 +2894,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>제작 맡기기</h4><div class="sub">고른 소재는 판정이 버리지 않고 씁니다. 맥이 5분 안에 받아 작성기(Opus)가 취재·검증한 뒤 오늘의 초안에 올립니다 — 보통 10~20분, 나무위키 털기는 20~40분.</div>' +
         '<div class="g"><b>무엇을</b>' + evChips('type', OD_TYPE, v.type) + '</div>' +
         (v.type === 'draft' ? '<div class="g"><b>형식</b>' + evChips('form', OD_FORM, v.form) + '</div>' : '') +
-        '<div class="g"><b>' + (v.type === 'story' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>' +
-        '<div class="g"><b>링크 (있으면)</b><div style="display:flex;gap:6px"><input data-f="url" style="flex:1" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '">' +
-          '<button type="button" data-paste style="white-space:nowrap">붙여넣기</button></div></div>' +
-        '<div class="g"><b>각도·메모 (있으면)</b><textarea data-f="memo" placeholder="예) 디스 내용보다 둘의 예전 관계를 먼저">' + esc(v.memo || '') + '</textarea></div>' +
+        (v.type === 'share' ? '' : '<div class="g"><b>' + (v.type === 'story' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>') +
+        '<div class="g"><b>' + (v.type === 'share' ? '본 게시물 링크' : '링크 (있으면)') + '</b><input data-f="url" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '">' +
+          '<button type="button" data-paste style="margin-top:6px;font:inherit;font-size:12.5px;border:1px solid var(--line);background:none;color:var(--text);border-radius:8px;padding:5px 10px">📋 복사한 링크 붙여넣기</button></div>' +
+        '<div class="g"><b>' + (v.type === 'share' ? '메모 (안 적어도 됨)' : '각도·메모 (있으면)') + '</b><textarea data-f="memo" placeholder="' + (v.type === 'share' ? '예) 숏폼으로 / 표지 한 장으로 / 둘의 예전 관계를 먼저' : '예) 디스 내용보다 둘의 예전 관계를 먼저') + '">' + esc(v.memo || '') + '</textarea></div>' +
         '<div class="row"><button type="button" data-x>닫기</button><button type="button" class="go" data-save>맡기기</button></div></div>';
     };
     var keep = function () { ['what', 'url', 'memo'].forEach(function (k) { var el = sh.querySelector('[data-f="' + k + '"]'); if (el) v[k] = el.value.trim(); }); };
@@ -3870,9 +3870,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.21 06:07';
+    a.title = '판 10.21 06:10';
     var ver = document.createElement('span');
-    ver.textContent = '10.21 06:07';
+    ver.textContent = '10.21 06:10';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
