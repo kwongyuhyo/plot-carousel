@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20 15:06 KST",
+ "generated_at": "2026-10-20 19:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1403,10 +1403,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-19 22:06 KST"
+  "daily": "2026-10-20 15:06 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-20T15:06:55+09:00",
+  "fetched_at": "2026-10-20T18:47:15+09:00",
   "posts": [
    {
     "t": "2026-10-19T17:15+09:00",
@@ -1547,9 +1547,9 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 78,
+  "drafts": 80,
   "posted": 5,
-  "posts": 33,
+  "posts": 30,
   "rate": 0.06,
   "adopted_mult": 0.65,
   "own_mult": 1.12,
@@ -1560,7 +1560,7 @@
     "mult": null
    },
    "재미": {
-    "drafts": 8,
+    "drafts": 9,
     "posted": 0,
     "mult": null
    },
@@ -1570,7 +1570,7 @@
     "mult": 0.57
    },
    "클립": {
-    "drafts": 13,
+    "drafts": 14,
     "posted": 0,
     "mult": null
    },
@@ -1627,12 +1627,12 @@
     "mult": null
    },
    "tteolgi": {
-    "drafts": 4,
+    "drafts": 5,
     "posted": 0,
     "mult": null
    },
    "followup": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 1,
     "mult": 0.72
    },
