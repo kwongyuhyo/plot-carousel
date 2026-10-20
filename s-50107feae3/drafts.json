@@ -534,7 +534,7 @@
     }
    },
    "corner_name": "나무위키 털기",
-   "corner_no": 22
+   "corner_no": 24
   },
   {
    "source": {
@@ -683,24 +683,206 @@
     "by": "claude"
    },
    "corner_name": "나무위키 털기",
-   "corner_no": 23
+   "corner_no": 25
+  },
+  {
+   "source": {
+    "id": "claude:brk-3d049710",
+    "account": "@갈등·반응",
+    "url": "https://www.tenasia.co.kr/article/2026102038614",
+    "image": null,
+    "head": "1위와 중국 자본설이 함께 온 A2O, 이수만이 데뷔쇼에서 던진 질문 '무엇이 다른가'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-20T21:09+09:00",
+   "key": "f023e1c4",
+   "by": "claude",
+   "subjects": [
+    "A2O LITE",
+    "이수만"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "멜론 1위와 중국 자본설이 함께 온 A2O — 이수만이 데뷔쇼에서 던진 '무엇이 다른가'가 바깥에서 되돌아오고 있다",
+    "why": "A2O LITE 'NEON' 멜론 1위 유지 중 중국 자본 논란·반응 급증 (10/20). 미성년 멤버 부모 폭로는 지침상 제외"
+   },
+   "added": "claude",
+   "added_at": "2026-10-20T21:09+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\nA2O LITE의 데뷔곡 'NEON'이 멜론 TOP100 1위를 지키고 있습니다.\n\n이수만이 키 프로듀서를 맡은 A2O엔터테인먼트의 9인조 걸그룹으로, 13일 발표한 'NEON'은 29시간 만인 14일 정상에 올랐는데요, 그 사이 회사를 둘러싸고는 중국 자본이 들어왔다는 의혹이 번졌습니다. A2O 측은 19일 \"중국 자본의 투자를 받은 사실이 없다\"고 밝혔습니다.\n\n12일 데뷔쇼에서 이수만은 K팝을 만들며 늘 던져 온 질문이 '무엇이 다른가'였다고 말했습니다. 기존 K팝과 무엇이 다르냐는 그 물음이 이제 바깥에서 그에게 돌아오고 있는 셈입니다.\n\n#PLOT #A2OLITE #이수만 #NEON #A2O엔터테인먼트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792498153/n7y3hjpg9dyzujeyzieg.jpg\n제목: A2O LITE 멜론 1위|중국 자본설은 부인\n부제: 이수만이 데뷔쇼에서 던진 질문, '무엇이 다른가'\n출처: YTN\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792498162/icyzm0ze5vtzshfkgwmw.jpg\n소제목: 29시간 만의 1위\n본문: 13일 발표된 A2O LITE의 데뷔곡 'NEON'은 29시간 만인 14일 멜론 TOP100 정상에 올랐고, 20일 오전까지 자리를 지켰습니다.\n출처: 연합뉴스\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792498156/dotb2ysiozoecfsv3mtu.jpg\n소제목: 번진 중국 자본설\n본문: 같은 시기 A2O를 둘러싸고 중국 자본이 들어왔다는 의혹이 번졌습니다. A2O 측은 19일 \"중국 자본의 투자를 받은 사실이 없다\"고 밝혔습니다.\n출처: 일간스포츠\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792498159/umfegkpp1buuaov1imtd.jpg\n소제목: '무엇이 다른가'\n본문: 12일 데뷔쇼에서 이수만은 새 콘텐츠를 만들 때마다 '무엇이 다른가'를 물어 왔다고 말했습니다. 기존 K팝과 무엇이 다르냐는 물음은 이제 바깥에서도 나오고 있습니다.\n출처: 조이뉴스24\n",
+    "caption": "A2O LITE의 데뷔곡 'NEON'이 멜론 TOP100 1위를 지키고 있습니다.\n\n이수만이 키 프로듀서를 맡은 A2O엔터테인먼트의 9인조 걸그룹으로, 13일 발표한 'NEON'은 29시간 만인 14일 정상에 올랐는데요, 그 사이 회사를 둘러싸고는 중국 자본이 들어왔다는 의혹이 번졌습니다. A2O 측은 19일 \"중국 자본의 투자를 받은 사실이 없다\"고 밝혔습니다.\n\n12일 데뷔쇼에서 이수만은 K팝을 만들며 늘 던져 온 질문이 '무엇이 다른가'였다고 말했습니다. 기존 K팝과 무엇이 다르냐는 그 물음이 이제 바깥에서 그에게 돌아오고 있는 셈입니다.\n\n#PLOT #A2OLITE #이수만 #NEON #A2O엔터테인먼트",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498153/n7y3hjpg9dyzujeyzieg.jpg",
+      "credit": "YTN",
+      "from": "https://image.ytn.co.kr/general/jpg/2026/1016/202610161300203196_t.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498155/wmkthdqahp6e3l8lfd4k.jpg",
+      "credit": "연합뉴스",
+      "from": "https://image.koreajoongangdaily.com/12921899.webp?imageId=12921899&width=1920&height=1096&format=jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498156/dotb2ysiozoecfsv3mtu.jpg",
+      "credit": "일간스포츠",
+      "from": "https://isplus.com/data/isp/image/2026/10/12/isp20261012000220.800x.0.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498159/umfegkpp1buuaov1imtd.jpg",
+      "credit": "조이뉴스24",
+      "from": "https://image.inews24.com/v1/56d0fdd97bfdef.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "A2O LITE 멜론 1위|중국 자본설은 부인",
+      "sub": "이수만이 데뷔쇼에서 던진 질문, '무엇이 다른가'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'무엇이 다른가'|이수만이 던진 질문",
+      "sub": "1위와 의혹이 함께 온 A2O"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "이수만 새 걸그룹,|1위와 함께 온 의혹",
+      "sub": "A2O 측 \"중국 자본의 투자를 받은 사실이 없다\""
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "A2O 측 '중국 자본의 투자를 받은 사실이 없다'는 텐아시아 단독 취재 발언(스포츠서울은 이를 재인용) — 공식 입장문이 따로 나왔는지",
+     "'NEON' 멜론 TOP100 1위가 올리는 시점에도 유지 중인지 (20일 오전 7시 기준까지 확인)"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 — 중국자본설→바이럴 의혹까지…A2O 둘러싼 논란과 억측 (10/20)",
+      "link": "https://www.tenasia.co.kr/article/2026102038614"
+     },
+     {
+      "title": "스포츠서울 — “K팝 시스템 떼어 중국에?”…이수만 ‘잘파팝’ A2O, 중국 자본 논란 (10/20)",
+      "link": "https://www.sportsseoul.com/news/read/1642876?ref=naver"
+     },
+     {
+      "title": "일간스포츠 — A2O 라이트 신드롬급 인기…다시 한 번 K팝신 홀린 이수만 (10/20)",
+      "link": "https://isplus.com/article/view/isp202610200008"
+     },
+     {
+      "title": "YTN — 9인조 신인 'A2O LITE', 멜론 '톱100'·'핫100' 1위 (10/16)",
+      "link": "https://www.ytn.co.kr/_ln/0106_202610161300203196"
+     },
+     {
+      "title": "iMBC연예 유튜브 — 이수만의 새로운 도전 'A2O' 글로벌 데뷔 쇼케이스 (10/12)",
+      "link": "https://www.youtube.com/watch?v=5VDbj-CA2V0"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498167/fon8urcorkf2uwnnekmx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498167/mzceqnecv6sarwcmdpov.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498167/fmdra4mkn57fg6xhvdhu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498167/ox8sffsdgzkm6qnja2ge.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498168/tfl6obfq5ua5h1yhmc8l.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498170/nf4bvofwhsdovjgwxlgf.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498170/jss1mc166xnogr5cg1aw.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498167/fon8urcorkf2uwnnekmx.jpg"
+     },
+     "at": "2026-10-20T21:09+09:00",
+     "v": {
+      "A": "f2c101ac",
+      "B": "836464c1",
+      "C": "d66b7119"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=5VDbj-CA2V0\n구간: 0:00-0:50\n곡: 이수만이 답했다\n아티스트: '뭐가 다른 거야'\n피처링:\n후킹: 가장 많은 질문은\n출처: iMBC연예",
+    "caption": "이수만이 A2O 데뷔쇼 무대에서 요즘 가장 많이 받는 질문을 직접 꺼냈습니다.\n\n뭐가 다르냐, 어떻게 다르냐는 질문이었는데요, 그는 K팝을 시작한 뒤 새 콘텐츠를 만들 때마다 스스로 '무엇이 다른가'를 물어 왔다며 그 출발점은 곡이어야 한다고 말했습니다.\n\n이날 데뷔쇼를 연 A2O LITE의 'NEON'은 발매 29시간 만에 멜론 TOP100 1위에 올랐습니다. 다르다는 것만으로는 충분하지 않다던 그가 관객에게 부탁한 건 '좋다'는 느낌 하나였습니다.\n\n#PLOT #이수만 #A2OLITE #A2O #NEON",
+    "hooks": {
+     "A": "가장 많은 질문은 / '뭐가 다른 거야' / 이수만이 답했다",
+     "B": "이수만 새 걸그룹 / 데뷔곡 29시간 만에 / 멜론 1위",
+     "C": "무엇이 다른가 / 이수만이 데뷔쇼에서 / 다시 꺼낸 질문"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=5VDbj-CA2V0",
+     "credit": "iMBC연예",
+     "range": [
+      0.0,
+      50.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "A2O 측 '중국 자본의 투자를 받은 사실이 없다'는 텐아시아 단독 취재 발언(스포츠서울은 이를 재인용) — 공식 입장문이 따로 나왔는지",
+     "'NEON' 멜론 TOP100 1위가 올리는 시점에도 유지 중인지 (20일 오전 7시 기준까지 확인)"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 — 중국자본설→바이럴 의혹까지…A2O 둘러싼 논란과 억측 (10/20)",
+      "link": "https://www.tenasia.co.kr/article/2026102038614"
+     },
+     {
+      "title": "스포츠서울 — “K팝 시스템 떼어 중국에?”…이수만 ‘잘파팝’ A2O, 중국 자본 논란 (10/20)",
+      "link": "https://www.sportsseoul.com/news/read/1642876?ref=naver"
+     },
+     {
+      "title": "일간스포츠 — A2O 라이트 신드롬급 인기…다시 한 번 K팝신 홀린 이수만 (10/20)",
+      "link": "https://isplus.com/article/view/isp202610200008"
+     },
+     {
+      "title": "YTN — 9인조 신인 'A2O LITE', 멜론 '톱100'·'핫100' 1위 (10/16)",
+      "link": "https://www.ytn.co.kr/_ln/0106_202610161300203196"
+     },
+     {
+      "title": "iMBC연예 유튜브 — 이수만의 새로운 도전 'A2O' 글로벌 데뷔 쇼케이스 (10/12)",
+      "link": "https://www.youtube.com/watch?v=5VDbj-CA2V0"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/5VDbj-CA2V0/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792498174/iotb7zatoocydhujeru2.jpg",
+     "key": "5VDbj-CA2V0@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-20T21:09+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 6,
-  "done": 1,
+  "done": 3,
   "goal": 28,
   "corners": [
    {
     "key": "tteolgi",
     "name": "나무위키 털기",
     "weekly": 0,
-    "done": 0,
+    "done": 2,
     "left": 0,
     "need_today": 0,
-    "next_no": 22,
+    "next_no": 24,
     "drafts": 2,
     "why": "제작 맡기기로 맡길 때만 (10/20) — 나무위키만 보고 장 수 제한 없이"
    },
@@ -778,22 +960,22 @@
     "left": 6,
     "need_today": 1,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-20T19:40+09:00"
+  "at": "2026-10-20T21:09+09:00"
  },
  "slots": {
-  "basis": 203,
+  "basis": 205,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.82,
-    "median": 3.27,
-    "n": 27
+    "mult": 2.65,
+    "median": 3.24,
+    "n": 29
    },
    {
     "from": 15,
