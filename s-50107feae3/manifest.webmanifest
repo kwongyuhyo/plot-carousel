@@ -14,6 +14,11 @@
     { "src": "icon-512.png",      "sizes": "512x512", "type": "image/png", "purpose": "any" },
     { "src": "maskable-512.png",  "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ],
+  "share_target": {
+    "action": "sources.html",
+    "method": "GET",
+    "params": { "title": "share_title", "text": "share_text", "url": "share_url" }
+  },
   "shortcuts": [
     { "name": "캐러셀 스튜디오", "short_name": "캐러셀", "url": "carousel.html",
       "icons": [{ "src": "icon-192.png", "sizes": "192x192" }] },

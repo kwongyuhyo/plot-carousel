@@ -2076,6 +2076,20 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       .catch(function () { toast('그날 초안을 못 받았습니다'); });
   }
   ytLoad(); rndLoad();
+  // 10/21 — 갤럭시(안드로이드 크롬) 공유 받기: 인스타 공유 → 「PLOT」 → 여기로 (manifest share_target) → 제작 맡기기 '본 게시물로' 가 채워진 채
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var raw = [q.get('share_url'), q.get('share_text'), q.get('share_title')].filter(Boolean).join(' ');
+    if (!raw) return;
+    var m = raw.match(/https?:\/\/[^\s]+/);
+    try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    if (!m) { toast('공유한 것에서 링크를 못 찾았습니다'); return; }
+    showGroup('draft');
+    setTimeout(function () {
+      openOrder({ type: 'share', form: 'b', url: m[0].replace(/[)\]>"'.,]+$/, ''), what: '', memo: '' });
+      toast('링크를 받았습니다 — 메모는 안 적어도 됩니다');
+    }, 300);
+  })();
   fetch('./drafts-days.json', { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { DR_DAYS = (d && d.days) || []; if (GRP === 'draft' && DR) renderDrafts(); })
@@ -2853,7 +2867,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var rows = (OD || []).slice(0, 4);
     return '<div class="evn odb"><div class="top"><b>제작 맡기기</b><span>내가 찾은 이슈 · 특집 · 서사형 노래</span>' +
       '<button type="button" data-odnew>+ 맡기기</button></div>' +
-      '<div class="odsc">인스타에서 보다가 바로 — <a href="./plot-share.shortcut" download>📲 공유 메뉴에 「PLOT 맡기기」 넣기</a> (아이폰에서 한 번 누르고 추가)</div>' + rows.map(function (r) {
+      '<div class="odsc">인스타에서 보다가 바로 — 갤럭시: 공유 → 「PLOT」 · 아이폰: <a href="./plot-share.shortcut" download>공유 메뉴에 「PLOT 맡기기」 넣기</a></div>' + rows.map(function (r) {
         var sn = r.snapshot || {}, st = sn.status || '';
         return '<div class="odr" data-odr="' + esc(r.id) + '"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> ' +
           '<b>' + esc(String(sn.what || (sn.type === 'share' ? '📲 ' + String(sn.url || '').replace(/^https?:\/\/(www\.)?/, '') : '')).slice(0, 40)) + '</b> <small>' + esc(evOpt(OD_TYPE, sn.type) || '') +
@@ -3856,9 +3870,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.21 06:06';
+    a.title = '판 10.21 06:07';
     var ver = document.createElement('span');
-    ver.textContent = '10.21 06:06';
+    ver.textContent = '10.21 06:07';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
