@@ -6,7 +6,7 @@
  *
  * 버전을 올리면 옛 캐시는 activate 에서 통째로 지운다.
  */
-const V = 'plot-app-v37';
+const V = 'plot-app-v38';
 const SHELL = [
   './', './index.html', './carousel.html', './shorts.html', './sources.html',
   './perf.html', './timeline.html',
@@ -42,8 +42,7 @@ self.addEventListener('fetch', (e) => {
                 url.pathname.endsWith('/');
   // 데이터 파일은 하루 두 번 갱신된다. 캐시 우선으로 주면 처음 받은 후보가
   // 영원히 고정돼서 '어제 것을 보고 있는' 사고가 난다. HTML 과 같은 규칙으로.
-  const isData = url.pathname.endsWith('.json') &&
-                 !url.pathname.endsWith('manifest.webmanifest');
+  const isData = url.pathname.endsWith('.json') || url.pathname.endsWith('manifest.webmanifest');   // 10/21 매니페스트도 늘 새로 (공유 받기 share_target)
 
   if (isDoc || isData) {
     e.respondWith(
