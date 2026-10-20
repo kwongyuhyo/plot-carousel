@@ -434,7 +434,21 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .hl .l{display:block; font-size:11.5px; line-height:1.25; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .hl .l b{font-weight:400; color:var(--dim); margin-left:2px}
 /* 평가 노트 (2026-10-11) — 규효의 판정이 맥의 편집장·작성기 학습 기준이 된다 */
+.ytx{margin:10px 14px; padding:10px 12px; border:1px solid var(--line); border-radius:12px; font-size:13px}
+.ytx .hd{display:flex; justify-content:space-between; gap:8px; margin-bottom:6px} .ytx .hd span{color:var(--dim); font-size:12px}
+.ytx .yr{padding:8px 0; border-top:1px solid var(--line)} .ytx .yr:first-of-type{border-top:0}
+.ytx .ys{color:var(--dim); font-size:12px; margin-top:3px; word-break:break-all} .ytx .yw{color:var(--amber); font-size:12px; margin-top:3px}
+.ytx .bt{display:flex; gap:6px; margin-top:6px}
+.todo{margin:10px 14px 0; padding:9px 12px; border-radius:10px; background:var(--panel); font-size:13px} .todo b{color:var(--pick)} .todo.ok{color:var(--dim)}
+.ytx a.act{display:inline-block; border:1px solid var(--line); border-radius:8px; padding:7px 12px; font-size:13px; color:var(--text); text-decoration:none}
+.ytx .yr.new .yt::after{content:' · 새'; color:var(--pick); font-size:12px}
+.ytx button.more{margin-top:6px; border:0; background:none; color:var(--dim); font:inherit; font-size:12.5px; padding:4px 0}
+.ytx button.act{border:1px solid var(--line); background:none; color:var(--text); border-radius:8px; padding:7px 12px; font-size:13px} .ytx button.act.sent{color:var(--dim)}
 .evb{display:flex; align-items:center; gap:8px; margin:8px 14px 0; font-size:13px}
+.evw{display:flex; flex-wrap:wrap; gap:6px; margin:8px 14px 0; font-size:12.5px; align-items:center}
+.evw span{color:var(--dim); margin-right:2px}
+.evw button{font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--text); border-radius:999px; padding:5px 10px}
+.evw button.on{border-color:var(--pick); background:var(--pick); color:#fff}
 .evb button{font:inherit; font-size:13px; border:1px solid var(--line); background:none; color:var(--text); border-radius:999px; padding:6px 12px}
 .evb button.done{border-color:var(--pick); color:var(--pick)}
 .evb .ws{color:var(--dim); font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
@@ -596,7 +610,7 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .cmt .tx{white-space:pre-wrap; word-break:break-word}
 .cmt .none{padding:16px 20px; font-size:13px; color:var(--dim); line-height:1.6}
 .cmt .ib{border-top:1px solid var(--line); padding:8px 12px calc(10px + env(safe-area-inset-bottom)); background:var(--panel)}
-.cmt .ch{display:flex; gap:6px; overflow-x:auto; padding-bottom:8px; scrollbar-width:none}
+.cmt .ch{display:flex; flex-wrap:wrap; gap:6px; padding-bottom:8px}   /* 10/20 이유 칩까지 — 옆으로 숨기지 않고 접어 보인다 */
 .sheet.cmt .pn .ch button{display:inline-block; width:auto; flex:none; font:inherit; font-size:13px; padding:6px 12px; border:1px solid var(--line);
   border-radius:999px; background:none; color:var(--text)}
 .sheet.cmt .pn .ch button[aria-pressed="true"]{border-color:var(--amber); background:rgba(232,179,74,.14)}
@@ -1139,7 +1153,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function renderFilters() {
     var all = D.candidates || [];
     if (!all.length) { document.getElementById('filters').hidden = true; return; }
-    document.getElementById('filters').hidden = false;
+    document.getElementById('filters').hidden = (typeof GRP !== 'undefined' && GRP !== 'info');   // 10/20 — 초안 칸으로 열 때 위에 후보 필터가 겹쳐 보였다
 
     // 매거진을 고른 뒤에도 기간 숫자가 12 그대로면 '안 먹었다' 로 읽힌다.
     // 각 칩의 숫자는 '나머지 조건을 건 상태에서 이걸 고르면 몇 건' 이어야 한다.
@@ -1979,7 +1993,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   var GRP = 'info';
   function showGroup(g) {
     GRP = g;
-    try { sessionStorage.setItem('plot.grp', g); } catch (e) {}
+    try { sessionStorage.setItem('plot.grp', g); localStorage.setItem('plot.grp', g); } catch (e) {}
     [].forEach.call(document.querySelectorAll('#grp button'), function (b) {
       b.setAttribute('aria-selected', String(b.getAttribute('data-grp') === g));
     });
@@ -2019,7 +2033,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var b = e.target.closest('[data-grp]');
     if (b) showGroup(b.getAttribute('data-grp'));
   });
-  try { var G0 = sessionStorage.getItem('plot.grp'); if (G0 === 'draft' || G0 === 'follow') showGroup(G0); } catch (e) {}
+  // 10/20 — 앱을 새로 열면 늘 '이슈·뉴스' 였다. 마지막에 보던 칸으로, 처음이면 오늘의 초안으로 (하루 일의 시작점)
+  try { var G0 = sessionStorage.getItem('plot.grp') || localStorage.getItem('plot.grp') || 'draft';
+    if (G0 === 'draft' || G0 === 'follow' || G0 === 'plan') showGroup(G0); } catch (e) {}
 
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
   document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
@@ -2058,6 +2074,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       })
       .catch(function () { toast('그날 초안을 못 받았습니다'); });
   }
+  ytLoad(); rndLoad();
   fetch('./drafts-days.json', { cache: 'no-cache' })
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { DR_DAYS = (d && d.days) || []; if (GRP === 'draft' && DR) renderDrafts(); })
@@ -2091,6 +2108,69 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function safeUrl(u) { u = String(u || '').trim(); return /^https?:\/\//i.test(u) ? u : '#'; }
   function escU(u) { return esc(safeUrl(u)); }
   function kstDay(d) { return new Date(d.getTime() + 9 * 3600e3).toISOString().slice(0, 10); }
+  /* ── 새 릴스 → 유튜브 쇼츠 (collectors/yt_crosspost · 10/20 규효 "유튜브 크로스포스트도 앱으로") ── */
+  var YTX = null;
+  function ytLoad() {
+    fetch('./ytx.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { YTX = d; if (GRP === 'draft' && !DR_DAY) renderDrafts(); }).catch(function () {});
+  }
+  function ytBox() {
+    var rows = ((YTX && YTX.items) || []).filter(function (x) { return ['asked', 'failed', 'unknown', 'uploading', 'uploaded'].indexOf(x.status) >= 0; });
+    if (!rows.length) return '';
+    var ST = { asked: '', failed: '실패 — 다시 누를 수 있음', unknown: '올라갔는지 모름 — 유튜브 스튜디오 먼저 확인', uploading: '올리는 중', uploaded: '올림' };
+    return '<div class="ytx"><div class="hd"><b>유튜브 쇼츠에도?</b> <span>새 릴스 ' + rows.length + '건' +
+      (YTX.ready ? '' : ' · ⚠️ 유튜브 인증이 아직입니다 (맥 docs/YOUTUBE_SETUP.md)') + '</span></div>' + rows.map(function (x) {
+        var sent = actSent('yu-' + x.k) || actSent('ys-' + x.k);
+        return '<div class="yr"><div class="yt">' + esc(x.head || '') + (x.permalink ? ' · <a href="' + escU(x.permalink) + '" target="_blank" rel="noopener">원글</a>' : '') + '</div>' +
+          '<div class="ys">유튜브 제목: ' + esc(x.title || '') + '</div>' +
+          (x.risky && x.status !== 'uploaded' ? '<div class="yw">MV·방송 화면이 들어간 릴스로 보입니다 — 유튜브는 저작권 클레임이 잦습니다. 원본 촬영·자체 영상만 올리세요.</div>' : '') +
+          (x.status === 'uploaded' ? '<div class="ys">✓ <a href="' + escU(x.url) + '" target="_blank" rel="noopener">' + esc(x.url) + '</a></div>' :
+            (ST[x.status] ? '<div class="yw">' + esc(ST[x.status]) + (x.error ? ' · ' + esc(String(x.error).slice(0, 80)) : '') + '</div>' : '') +
+            '<div class="bt"><button class="act' + (sent ? ' sent' : '') + '" data-ytu="' + esc(x.k) + '">' + (sent ? '보냄 · 다시' : '유튜브에 올리기') + '</button>' +
+            '<button class="act" data-yts="' + esc(x.k) + '">건너뛰기</button></div>') + '</div>';
+      }).join('') + '</div>';
+  }
+  /* ── 완성본 (bot/renders_app · 10/20) — 렌더 대기열이 만든 영상을 앱에서 보고 저장 ── */
+  var RND = null, RND_OPEN = false;
+  function rndLoad() {
+    fetch('./renders.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { RND = d; if (GRP === 'draft' && !DR_DAY) renderDrafts(); }).catch(function () {});
+  }
+  function rndBox() {
+    var rows = (RND && RND.items) || [];
+    if (!rows.length) return '';
+    var seen = {}; try { seen = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; } catch (e) {}
+    var fresh = rows.filter(function (x) { return !seen[x.url]; }).length;
+    var show = RND_OPEN ? rows : rows.slice(0, 3);
+    return '<div class="ytx rnd"><div class="hd"><b>완성본</b> <span>최근 ' + rows.length + '편' + (fresh ? ' · 새 ' + fresh : '') + '</span></div>' +
+      show.map(function (x) {
+        var dl = String(x.url || '').replace('/upload/', '/upload/fl_attachment/');
+        return '<div class="yr' + (seen[x.url] ? '' : ' new') + '"><div class="yt">' + (x.kind === 'layer' ? '🧾 ' : '🎬 ') + esc(x.label || '') + '</div>' +
+          '<div class="ys">' + esc(String(x.at || '').slice(5, 16).replace('T', ' ')) + (x.kind === 'layer' ? ' · 정보 레이어(.mov)' : '') + '</div>' +
+          '<div class="bt"><a class="act" data-rndseen="' + esc(x.url) + '" href="' + escU(x.url) + '" target="_blank" rel="noopener">▶ 보기</a>' +
+          '<a class="act" data-rndseen="' + esc(x.url) + '" href="' + escU(dl) + '">⬇ 저장</a></div></div>';
+      }).join('') + (rows.length > 3 ? '<button class="more" data-rndmore>' + (RND_OPEN ? '접기' : '모두 보기 (' + rows.length + ')') + '</button>' : '') + '</div>';
+  }
+  function todoBar() {                            // 10/20 — 오늘 할 일 한 줄 (평가 안 한 초안 · 새 완성본 · 못 만든 맡기기 · 유튜브 물음)
+    var items = (DR && DR.items) || [], ev = evGet();
+    var noEv = items.filter(function (it) { var r = ev[evId(it)]; return !(r && r.verdict && r.verdict.go); }).length;
+    var seen = {}; try { seen = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; } catch (e) {}
+    var rnew = ((RND && RND.items) || []).filter(function (x) { return !seen[x.url]; }).length;
+    var odf = (OD || []).filter(function (r) { return (r.snapshot || {}).status === 'fail'; }).length;
+    var yq = ((YTX && YTX.items) || []).filter(function (x) { return x.status === 'asked'; }).length;
+    var bits = [];
+    if (noEv) bits.push('평가 안 한 초안 <b>' + noEv + '</b>');
+    if (rnew) bits.push('새 완성본 <b>' + rnew + '</b>');
+    if (odf) bits.push('못 만든 맡기기 <b>' + odf + '</b>');
+    if (yq) bits.push('유튜브 물음 <b>' + yq + '</b>');
+    return bits.length ? '<div class="todo">오늘 할 일 · ' + bits.join(' · ') + '</div>' : '<div class="todo ok">오늘 할 일 없음 — 다 봤습니다</div>';
+  }
+  function ytUpload(k) {
+    var x = ((YTX && YTX.items) || []).filter(function (r) { return r.k === k; })[0] || {};
+    sheetOf('유튜브 쇼츠로 공개 업로드할까요?' + (x.risky ? ' (MV·방송 화면 주의)' : ''),
+      [['go', '📤 올리기 확정', '맥이 인스타 원본 영상을 받아 유튜브 쇼츠(공개)로 올립니다 — 제목: ' + (x.title || '')], ['x', '취소', '']],
+      function (r) { if (r === 'go') { plotAction('yu-' + k, '유튜브 업로드 요청', true); if (GRP === 'draft') renderDrafts(); } });
+  }
   function pubBox() {
     if (!PF || !PF.feed || !PF.feed.posts) return '';
     var goal = PF.goal || { daily: 4, weekly: 28 };
@@ -2404,7 +2484,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     evFlush();
   }
   // 한 번에 평가 (2026-10-12 규효 "앱 내부에서") — 시트를 안 열고 카드에서 바로. 자세한 건 ✎ 로
-  var EV_WHY = [['fit', '결이 아님'], ['angle', '핵심이 약함'], ['cap', '글이 어색함'], ['fact', '사실 틀림'], ['dup', '이미 다룸']];
+  // 10/20 규효 '이유 칩 좋다' — 안 올림·손보면 올림을 누르면 카드 바로 아래 이유 칩 (여러 개 · 다시 누르면 뺌). verdict.why 에 쌓여 작성기 브리프·성적표로 간다
+  var EV_WHY = [['fit', '결이 아님'], ['weak', '소재가 약함'], ['dup', '이미 다룸'], ['late', '때가 지남'], ['fact', '사실 틀림'],
+    ['angle', '핵심이 약함'], ['cap', '글이 어색함'], ['cover', '표지·제목 별로'], ['photo', '사진 별로'], ['clip', '영상·구간 별로'], ['hook', '후킹 약함']];
   function evQuick(it, i, go) {
     var id = evId(it), old = evGet()[id] || {};
     var v = JSON.parse(JSON.stringify(old.verdict || {})); v.form = 2; v.go = go;
@@ -2415,9 +2497,18 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function evWhy(it, i, k) {
     var id = evId(it), old = evGet()[id] || {}; if (!old.id) return;
     var v = JSON.parse(JSON.stringify(old.verdict || {})), lab = evOpt(EV_WHY, k);
-    if (k === 'fact') v.fact = 'x'; else if (k !== 'dup') v[k] = 'x';
-    old.verdict = v; old.reason = [old.reason, lab].filter(Boolean).join(' · ');
+    var w = (v.why || []).slice(), at = w.indexOf(k);
+    if (at >= 0) w.splice(at, 1); else w.push(k);
+    v.why = w;
+    old.verdict = v;
     evSave(old);
+  }
+  function evWhyRow(it, i, v) {
+    if (!v.go || v.go === 'now') return '';
+    var w = v.why || [];
+    return '<div class="evw"><span>' + (v.go === 'no' ? '왜 안 올려요?' : '어디를 손봐요?') + '</span>' + EV_WHY.map(function (o) {
+      return '<button type="button" data-evw="' + i + ':' + o[0] + '" class="' + (w.indexOf(o[0]) >= 0 ? 'on' : '') + '">' + esc(o[1]) + '</button>';
+    }).join('') + '</div>';
   }
   function evBar(it, i) {
     return cmtLink(it, i) + evBar0(it, i);
@@ -2440,7 +2531,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     }
     return '<div class="evb"><button data-ev="' + i + '" class="' + (r ? 'done' : '') + '">' +
       (pend ? '⏳ 평가함 · 고치기' : '✓ 평가함 · 고치기') + '</button>' +
-      '<span class="ws">' + esc(evSum(r.verdict)) + '</span></div>' +
+      '<span class="ws">' + esc(evSum(r.verdict)) + '</span></div>' + evWhyRow(it, i, v) +
       (r.reason ? '<button type="button" class="evcm" data-cmt="d:' + i + '">💬 ' + esc(String(r.reason).split('\n').filter(Boolean).pop()) + '</button>'
         : v.go && v.go !== 'now' ? '<button type="button" class="cml" data-cmt="d:' + i + '">💬 왜인지 댓글 달기</button>' : '');
   }
@@ -2491,14 +2582,20 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var it = (DR && DR.items || [])[i]; if (!it) return null;
     var r = evGet()[evId(it)], v = (r && r.verdict) || {}, pend = evQ().some(function (x) { return x.id === evId(it); });
     var list = [];
-    if (v.go) list.push({ text: evSum(v) || evOpt(EV_GO, v.go), sub: '평가' + (pend ? ' · 저장 대기' : '') });
+    if (v.go) list.push({ text: (evSum(v) || evOpt(EV_GO, v.go)) + ((v.why || []).length ? ' — ' + v.why.map(function (k) { return evOpt(EV_WHY, k); }).join(' · ') : ''),
+      sub: '평가' + (pend ? ' · 저장 대기' : '') });
     String((r && r.reason) || '').split('\n').forEach(function (t) { if (t.trim()) list.push({ text: t.trim(), sub: pend ? '저장 대기' : '' }); });
     return { pin: drPin(it), list: list,
       empty: '아직 피드백이 없습니다. 아래 칩으로 판정하고 사유를 적으면 맥이 편집장·작성기 학습에 씁니다.',
-      ph: v.go && v.go !== 'now' ? '왜? 예) 디스 내용 나열뿐, 둘 관계가 없음' : '피드백 남기기…',
-      chips: EV_GO.map(function (g) { return [g[0], g[1], v.go === g[0]]; }).concat([['_ev', '✎ 자세히', false]]),
-      focus: !!(v.go && v.go !== 'now' && !(r && r.reason)),
-      chip: function (k) { if (k === '_ev') { cmtClose(); openEval(i); return; } evQuick(it, i, k); },
+      ph: v.go && v.go !== 'now' ? '칩으로 고르고, 더 할 말이 있으면 한 줄 — 예) 디스 내용 나열뿐' : '피드백 남기기…',
+      chips: EV_GO.map(function (g) { return [g[0], g[1], v.go === g[0]]; }).concat([['_ev', '✎ 자세히', false]])
+        .concat(v.go && v.go !== 'now' ? EV_WHY.map(function (w) { return ['w:' + w[0], w[1], (v.why || []).indexOf(w[0]) >= 0]; }) : []),
+      focus: false,
+      chip: function (k) {
+        if (k === '_ev') { cmtClose(); openEval(i); return; }
+        if (k.indexOf('w:') === 0) { evWhy(it, i, k.slice(2)); return; }
+        evQuick(it, i, k);
+      },
       send: function (t) { evAddComment(it, t); } };
   }
   function evAddComment(it, text) {
@@ -2756,14 +2853,22 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     return '<div class="evn odb"><div class="top"><b>제작 맡기기</b><span>내가 찾은 이슈 · 특집 · 서사형 노래</span>' +
       '<button type="button" data-odnew>+ 맡기기</button></div>' + rows.map(function (r) {
         var sn = r.snapshot || {}, st = sn.status || '';
-        return '<div class="odr"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> ' +
+        return '<div class="odr" data-odr="' + esc(r.id) + '"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> ' +
           '<b>' + esc(String(sn.what || '').slice(0, 40)) + '</b> <small>' + esc(evOpt(OD_TYPE, sn.type) || '') +
-          (sn.note && st !== 'queued' ? ' — ' + esc(String(sn.note).slice(0, 70)) : '') + '</small></div>';
+          (sn.note && st !== 'queued' ? ' — ' + esc(String(sn.note).slice(0, 70)) + (String(sn.note).length > 70 || st === 'fail' ? ' <u>더 보기</u>' : '') : '') + '</small></div>';
       }).join('') + '</div>';
   }
-  function openOrder() {
+  function odDetail(id) {                         // 10/20 — 못 만든 이유가 70자에서 잘려 안 보였다. 전체 + 고쳐서 다시 맡기기
+    var r = (OD || []).filter(function (x) { return x.id === id; })[0]; if (!r) return;
+    var sn = r.snapshot || {};
+    sheetOf((OD_ST[sn.status] || '보냄') + ' — ' + String(sn.what || '').slice(0, 40) + (sn.note ? '\n\n' + sn.note : ''),
+      [['re', '고쳐서 다시 맡기기', '같은 내용이 채워진 채 열립니다 — 링크·메모를 보태 주세요'], ['x', '닫기', '']],
+      function (k) { if (k === 're') openOrder({ type: sn.type || 'draft', form: sn.form || 'b', what: sn.what || '', url: sn.url || '', memo: r.reason || '' }); });
+  }
+  function openOrder(pre) {
     if (!sbOn()) { toast('저장소 설정이 있어야 맡길 수 있습니다 (평가 노트와 같은 설정)'); return; }
-    var v = { type: 'draft', form: 'b' };
+    var v = pre || { type: 'draft', form: 'b' };
+    if (v.form === 'c' && v.type !== 'draft') v.form = 'b';
     var sh = document.createElement('div'); sh.className = 'sheet evs';
     var ph = { draft: '예) 저스디스 스카이민혁 디스 / 이영지 고스트 페스티벌 사과', special: '예) 일리네어 10년 타임라인 / KC 관계도',
                tteolgi: '사람·대상 이름   예) 리센느 제나 / 실리카겔 — 나무위키만 보고 재미있는 건 전부 (장 수 제한 없음)',
@@ -2773,7 +2878,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         '<div class="g"><b>무엇을</b>' + evChips('type', OD_TYPE, v.type) + '</div>' +
         (v.type === 'draft' ? '<div class="g"><b>형식</b>' + evChips('form', OD_FORM, v.form) + '</div>' : '') +
         '<div class="g"><b>' + (v.type === 'story' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>' +
-        '<div class="g"><b>링크 (있으면)</b><input data-f="url" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '"></div>' +
+        '<div class="g"><b>링크 (있으면)</b><div style="display:flex;gap:6px"><input data-f="url" style="flex:1" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '">' +
+          '<button type="button" data-paste style="white-space:nowrap">붙여넣기</button></div></div>' +
         '<div class="g"><b>각도·메모 (있으면)</b><textarea data-f="memo" placeholder="예) 디스 내용보다 둘의 예전 관계를 먼저">' + esc(v.memo || '') + '</textarea></div>' +
         '<div class="row"><button type="button" data-x>닫기</button><button type="button" class="go" data-save>맡기기</button></div></div>';
     };
@@ -2781,6 +2887,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     draw();
     sh.addEventListener('click', function (e) {
       if (e.target === sh || e.target.closest('[data-x]')) { sh.remove(); return; }
+      if (e.target.closest('[data-paste]')) {             // 10/20 — 인스타에서 링크 복사 → 여기서 한 번에
+        keep();
+        if (navigator.clipboard && navigator.clipboard.readText) navigator.clipboard.readText().then(function (t) {
+          t = String(t || '').trim(); if (!/^https?:\/\//.test(t)) { toast('복사한 게 링크가 아닙니다'); return; }
+          v.url = t; draw();
+        }).catch(function () { toast('붙여넣기 권한이 없습니다 — 칸을 길게 눌러 붙여 넣어 주세요'); });
+        return;
+      }
       var o = e.target.closest('[data-o]');
       if (o) { keep(); v[o.closest('[data-g]').getAttribute('data-g')] = o.getAttribute('data-o'); draw(); return; }
       if (e.target.closest('[data-save]')) {
@@ -3255,7 +3369,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var ch = chGet();
     // 10/14 규효 "앱에서 누르면 텔레그램이 열린다" — 맡기기와 같은 표(plot_evals)에 kind='act' 로 바로 (collectors/orders.pull_acts)
     if (sbOn() && !ch.url) {
-      var pub = /^(pb|sc|sx)-/.test(code);
+      var pub = /^(pb|sc|sx|yu)-/.test(code);
       if (pub && !ch.key) {
         var k = window.prompt('발행은 앱 열쇠가 필요합니다 — 맥 .env 의 PLOT_APP_KEY 와 같은 값을 한 번만 넣어 주세요');
         if (!k || !k.trim()) { toast('열쇠가 없어 발행을 보내지 않았습니다'); return; }
@@ -3291,7 +3405,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function sheetOf(title, acts, onPick) {
     var sh = document.createElement('div'); sh.className = 'sheet';
-    sh.innerHTML = '<div class="pn"><div class="hd"></div>' + (title ? '<div style="padding:0 20px 6px;font-size:13px;color:var(--dim)">' + esc(title) + '</div>' : '') +
+    sh.innerHTML = '<div class="pn"><div class="hd"></div>' + (title ? '<div style="padding:0 20px 6px;font-size:13px;color:var(--dim);white-space:pre-wrap;max-height:45vh;overflow:auto">' + esc(title) + '</div>' : '') +
       acts.map(function (a) { return '<button data-act="' + esc(a[0]) + '">' + esc(a[1]) + (a[2] ? '<small>' + esc(a[2]) + '</small>' : '') + '</button>'; }).join('') + '</div>';
     sh.addEventListener('click', function (e) {
       if (e.target === sh) { sh.remove(); return; }
@@ -3402,9 +3516,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       var best = slotChips()[0];
       acts.push(['sch', '예약 발행', (best ? '추천 ' + best.at + ' (' + best.why + ')' : '시각을 골라 예약') + ' — 맥이 켜져 있으면 그 시각에 올립니다']);
     }
-    acts.push(['ok', '채택 — 좋은 초안', actSent('ok-' + it.key) ? '이미 보냈습니다' : '편집장 보정에 씁니다']);
-    acts.push(['no', '버림 — 이유 고르기', actSent('no-' + it.key) ? '이미 보냈습니다' : '버린 이유는 편집장 보정에 들어갑니다']);
+    // 10/20 — 채택·버림은 카드 아래 '바로 올림 · 손보면 올림 · 안 올림' + 이유 칩 한 곳으로 (둘이 따로 있어 헷갈렸다)
     if (!DR_DAY && ['mag', 'claude'].indexOf((it.source || {}).kind || 'mag') >= 0) acts.push(['rd', '다시 쓰기', '작성기가 이 초안을 처음부터 다시 씁니다 (3~5분)']);
+    if (!DR_DAY && kind === 'card' && (it.source || {}).kind === 'claude' && it.corner !== 'tteolgi') {   // 10/20 기사형 표지 한 장 ↔ 장 붙이기
+      var nCard = (((it.card || {}).form || '').match(/^\[(커버|슬라이드)\]/gm) || []).length;
+      if (nCard <= 1) acts.push(['ex', '본문 장 붙여 다시', '표지 한 장 초안에 본문 4~8장을 붙여 다시 씁니다 (5~10분)']);
+      else acts.push(['fd', '표지 한 장으로 다시', '기사형으로 — 장을 빼고 정보는 캡션으로 (3~5분)']);
+    }
     return acts;
   }
   function runItemAct(it, a) {
@@ -3412,6 +3530,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (a === 'sch') { openSchedule(it); return true; }
     if (a === 'ok') { plotAction('ok-' + it.key, '채택'); return true; }
     if (a === 'rd') { plotAction('rd-' + it.key, '다시 쓰기'); return true; }
+    if (a === 'ex') { plotAction('ex-' + it.key, '본문 장 붙여 다시'); return true; }
+    if (a === 'fd') { plotAction('fd-' + it.key, '표지 한 장으로 다시'); return true; }
     if (a === 'no') {
       sheetOf('버린 이유', NO_WHY.map(function (r) { return [r[0], r[1], '']; }), function (r) { plotAction('no-' + it.key + '-' + r, '버림'); });
       return true;
@@ -3540,14 +3660,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
       // 10/17 — 초안 피드를 위로: 서사형·평가 노트·발행 현황·편성은 피드 아래로 내린다
-      host.innerHTML = (DR_DAY ? '' : usageBox() + reqBox() + orderBox()) + dayBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = (DR_DAY ? '' : todoBar() + usageBox() + reqBox() + orderBox() + rndBox() + ytBox()) + dayBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
       host.insertAdjacentHTML('beforeend', '<div class="drAfter">' + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + '</div>');
       return;
     }
-    host.innerHTML = (DR_DAY ? '' : reqBox() + orderBox() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = (DR_DAY ? '' : todoBar() + reqBox() + orderBox() + rndBox() + ytBox() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
@@ -3608,6 +3728,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (inp && e.key === 'Enter' && !e.isComposing) { e.preventDefault(); evComment((DR.items || [])[Number(inp.getAttribute('data-evci'))], inp.value); }
   });
   document.getElementById('viewDraft').addEventListener('click', function (e) {
+    var rs = e.target.closest('[data-rndseen]');
+    if (rs) { try { var sm = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; sm[rs.getAttribute('data-rndseen')] = Date.now(); localStorage.setItem('plot.rndseen', JSON.stringify(sm)); } catch (x) {} setTimeout(renderDrafts, 300); return; }
+    if (e.target.closest('[data-rndmore]')) { RND_OPEN = !RND_OPEN; renderDrafts(); return; }
+    var ytu = e.target.closest('[data-ytu]');
+    if (ytu) { ytUpload(ytu.getAttribute('data-ytu')); return; }
+    var yts = e.target.closest('[data-yts]');
+    if (yts) { plotAction('ys-' + yts.getAttribute('data-yts'), '유튜브 건너뛰기'); YTX.items = YTX.items.filter(function (r) { return r.k !== yts.getAttribute('data-yts'); }); renderDrafts(); return; }
     var dd = e.target.closest('[data-drday]');
     if (dd) { drDay(dd.getAttribute('data-drday')); return; }
     var vm = e.target.closest('[data-vmode]');
@@ -3634,6 +3761,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (evb) { openEval(Number(evb.getAttribute('data-ev'))); return; }
     if (e.target.closest('[data-evmiss]')) { openMiss(); return; }
     if (e.target.closest('[data-odnew]')) { openOrder(); return; }
+    var odr = e.target.closest('[data-odr]');
+    if (odr) { odDetail(odr.getAttribute('data-odr')); return; }
     if (e.target.closest('[data-evlist]')) { openEvList(); return; }
     var so = e.target.closest('[data-sort]');
     if (so) { DR_SORT = so.getAttribute('data-sort'); try { localStorage.setItem('plot.drsort', DR_SORT); } catch (x) {} renderDrafts(); return; }
@@ -3723,9 +3852,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.20 21:13';
+    a.title = '판 10.20 22:29';
     var ver = document.createElement('span');
-    ver.textContent = '10.20 21:13';
+    ver.textContent = '10.20 22:29';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
