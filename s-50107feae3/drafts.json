@@ -1046,9 +1046,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792567143/iv0ttbkax9j7nydsxoog.jpg",
      "key": "TVrxFe_w-OM@1270.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-21T16:19+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792567375/plot_studio/jrqtwjluc2buxgev4kym.mp4",
+     "at": "2026-10-21T16:22+09:00",
+     "file": "BoGo_SipDaYa_GeonGangHaGil_BaLaGo_Issue_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "그 말",
@@ -1225,7 +1226,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T16:19+09:00"
+  "at": "2026-10-21T16:22+09:00"
  },
  "slots": {
   "basis": 208,
