@@ -1246,12 +1246,118 @@
    },
    "corner_name": "그 말",
    "corner_no": 5
+  },
+  {
+   "source": {
+    "id": "claude:ord-4d3433af",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/p/DewW6U7E9U3/?rpxt=MTBpNzZpc2J3bXgzaQ==",
+    "image": null,
+    "head": "스포티파이 추천에서 AI 슬롭·스팸 5천만 곡이 빠졌다 — 7,500만 곡 삭제는 지난해 나온 숫자",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-22T01:59+09:00",
+   "key": "f4a8d526",
+   "by": "claude",
+   "subjects": [
+    "스포티파이"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "지우는 것에서 '들리지 않게' 하는 것으로 — 스포티파이 추천에서 빠진 AI 슬롭 5천만 곡",
+    "why": "규효 맡기기 · 10/20 스포티파이 1년 집계 발표, 기사형이라 표지 한 장 + 캡션"
+   },
+   "added": "claude",
+   "added_at": "2026-10-22T01:59+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n올해 스포티파이 추천 목록에서 5천만 곡 넘게 빠졌습니다.\n\n스포티파이가 20일 공개한 집계로, 'AI 슬롭'과 스팸으로 분류된 곡들인데요, 리스너가 건너뛰거나 듣고 싶지 않다고 표시한 곡을 들여다보니 대부분 이런 곡이었다고 합니다. 걸러 낼 때는 리스너 반응과 업로드 패턴, 메타데이터, 외부 AI 탐지 도구를 함께 봤습니다.\n\nAI로 만든 가상 아티스트에는 'AI 페르소나' 배지가 붙어, 리스너가 직접 팔로우하지 않으면 추천에 뜨지 않습니다. 반대편에서는 사람 아티스트 30만 명 이상이 인증을 받았습니다.\n\n규칙을 심하게 어긴 곡을 아예 지운 수는 7,500만 곡으로, 지난해 9월 처음 밝힌 숫자입니다. 지우는 것에서 한 걸음 더 나아가, 이제는 '들리지 않게' 하는 쪽으로 방어선이 옮겨 간 셈입니다.\n\n#PLOT #스포티파이 #AI음악 #AI슬롭 #스트리밍\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792601986/pvdibk5fazdagk0ok4jk.jpg\n제목: 스포티파이 추천에서|5천만 곡이 빠졌다\n부제: AI 슬롭·스팸을 걸러 낸 1년, 스포티파이 집계\n출처: NBC News\n",
+    "caption": "올해 스포티파이 추천 목록에서 5천만 곡 넘게 빠졌습니다.\n\n스포티파이가 20일 공개한 집계로, 'AI 슬롭'과 스팸으로 분류된 곡들인데요, 리스너가 건너뛰거나 듣고 싶지 않다고 표시한 곡을 들여다보니 대부분 이런 곡이었다고 합니다. 걸러 낼 때는 리스너 반응과 업로드 패턴, 메타데이터, 외부 AI 탐지 도구를 함께 봤습니다.\n\nAI로 만든 가상 아티스트에는 'AI 페르소나' 배지가 붙어, 리스너가 직접 팔로우하지 않으면 추천에 뜨지 않습니다. 반대편에서는 사람 아티스트 30만 명 이상이 인증을 받았습니다.\n\n규칙을 심하게 어긴 곡을 아예 지운 수는 7,500만 곡으로, 지난해 9월 처음 밝힌 숫자입니다. 지우는 것에서 한 걸음 더 나아가, 이제는 '들리지 않게' 하는 쪽으로 방어선이 옮겨 간 셈입니다.\n\n#PLOT #스포티파이 #AI음악 #AI슬롭 #스트리밍",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792601986/pvdibk5fazdagk0ok4jk.jpg",
+      "credit": "NBC News",
+      "from": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-10/261020-spotify-rs-b9194a.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "스포티파이 추천에서|5천만 곡이 빠졌다",
+      "sub": "AI 슬롭·스팸을 걸러 낸 1년, 스포티파이 집계"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "AI 슬롭 5천만 곡,|스포티파이 추천에서 퇴출",
+      "sub": "지우지 않고, 들리지 않게"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "팔로우해야만 들린다|스포티파이 'AI 페르소나'",
+      "sub": "AI 가상 아티스트는 추천에서 기본 제외"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지 사진: 기사 대표 사진(NBC)이 스포티파이 로고·일반 이미지인지, 무대 스틸이 아닌지",
+     "숏폼은 비움 — 사람이 말하는 장면이 없는 플랫폼 발표라 맞는 원본 영상이 없음"
+    ],
+    "research": [
+     {
+      "title": "Gizmodo — Spotify Purged Over 50 Million AI Slop and Spam Songs From User Recommendations (2026-10-20)",
+      "link": "https://gizmodo.com/spotify-purged-over-50-million-ai-slop-and-spam-songs-from-user-recommendations-2000828403"
+     },
+     {
+      "title": "NBC News — Spotify says it removed 50 million 'slop' and spam AI tracks this year",
+      "link": "https://www.nbcnews.com/business/media/spotify-slop-spam-ai-tracks-rcna604571"
+     },
+     {
+      "title": "Digital Music News — Spotify Says It's Removed 50M+ AI Tracks from Recommendations (2026-10-20)",
+      "link": "https://www.digitalmusicnews.com/2026/10/20/spotify-ai-recommendations-stats/"
+     },
+     {
+      "title": "MusicTech — Spotify to label AI-generated artists and exclude them from recommendations by default (2026-08)",
+      "link": "https://musictech.com/news/industry/spotify-label-ai-generated-artists-exclude-recommendations-default/"
+     },
+     {
+      "title": "Mediaweek — Spotify removes 75m spammy tracks (2025-09-26)",
+      "link": "https://www.mediaweek.com.au/spotify-rolls-out-tougher-ai-safeguards/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792601989/klr8mleo1ehxfyauw56o.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792601989/adjfhp8zbvjkkejy9mdz.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792601991/ojgvdgb1cwlfdk5zxy91.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792601991/ljqbqiysiyoq4fdfrb0c.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792601989/klr8mleo1ehxfyauw56o.jpg"
+     },
+     "at": "2026-10-22T01:59+09:00",
+     "v": {
+      "A": "924cc9f8",
+      "B": "2458b07d",
+      "C": "041773b2"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
-  "days_left": 5,
+  "days_left": 4,
   "done": 7,
   "goal": 28,
   "corners": [
@@ -1340,11 +1446,11 @@
     "left": 2,
     "need_today": 1,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T22:24+09:00"
+  "at": "2026-10-22T01:59+09:00"
  },
  "slots": {
   "basis": 209,
@@ -1369,8 +1475,8 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.51,
-    "median": 0.39,
+    "mult": 1.52,
+    "median": 0.53,
     "n": 9
    }
   ],
