@@ -2877,6 +2877,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function odDetail(id) {                         // 10/20 — 못 만든 이유가 70자에서 잘려 안 보였다. 전체 + 고쳐서 다시 맡기기
     var r = (OD || []).filter(function (x) { return x.id === id; })[0]; if (!r) return;
     var sn = r.snapshot || {};
+    odLoad();                                      // 10/21 — 연 김에 최신 상태로
+    var mins = Math.round((Date.now() - Date.parse(r.created_at || '')) / 60000);
+    if (!isNaN(mins) && (sn.status === 'running' || sn.status === 'queued')) sn = Object.assign({}, sn, { note: (sn.note || '') + ' · 맡긴 지 ' + (mins >= 60 ? Math.floor(mins / 60) + '시간 ' : '') + (mins % 60) + '분 — 보통 10~20분, 40분 넘으면 맥을 확인해 주세요' });
     sheetOf((OD_ST[sn.status] || '보냄') + ' — ' + String(sn.what || '').slice(0, 40) + (sn.note ? '\n\n' + sn.note : ''),
       [['re', '고쳐서 다시 맡기기', '같은 내용이 채워진 채 열립니다 — 링크·메모를 보태 주세요'], ['x', '닫기', '']],
       function (k) { if (k === 're') openOrder({ type: sn.type || 'draft', form: sn.form || 'b', what: sn.what || '', url: sn.url || '', memo: r.reason || '' }); });
@@ -3842,7 +3845,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   loadDrafts();
   reqPoll();
   document.addEventListener('visibilitychange', function () {   // 홈 화면 앱은 새로 고침 버튼이 없다 — 10분 넘게 비웠다 돌아오면 다시 받는다
-    if (document.visibilityState === 'visible' && Date.now() - DR_AT > 10 * 60e3 && !document.querySelector('.sheet')) { loadDrafts(); loadStories(); }
+    if (document.visibilityState !== 'visible') return;
+    odLoad(); reqPoll && reqPoll();                      // 10/21 — 맡기기 상태는 돌아올 때마다 (백그라운드에선 45초 타이머가 멈춰 '만드는 중'에 머물렀다)
+    if (Date.now() - DR_AT > 10 * 60e3 && !document.querySelector('.sheet')) { loadDrafts(); loadStories(); ytLoad(); rndLoad(); }
   });
 
   fetch('./magazines.json', { cache: 'no-cache' })
@@ -3870,9 +3875,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.21 14:43';
+    a.title = '판 10.21 15:01';
     var ver = document.createElement('span');
-    ver.textContent = '10.21 14:43';
+    ver.textContent = '10.21 15:01';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
