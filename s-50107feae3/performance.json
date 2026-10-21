@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21 19:04 KST",
+ "generated_at": "2026-10-21 22:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1403,11 +1403,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-21 15:04 KST"
+  "daily": "2026-10-21 19:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-21T19:04:38+09:00",
+  "fetched_at": "2026-10-21T21:40:38+09:00",
   "posts": [
+   {
+    "t": "2026-10-21T19:24+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "브루노 마스가 한국의 한 음악 큐레이터에게 직접 DM을 보냈습니다."
+   },
    {
     "t": "2026-10-21T15:12+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1532,20 +1537,15 @@
     "t": "2026-10-04T18:53+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "JYP가 그래미에 곡을 내지 않기로 했습니다."
-   },
-   {
-    "t": "2026-09-30T19:27+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "김감전이 재판에 넘겨졌습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
   "drafts": 93,
-  "posted": 10,
-  "posts": 35,
-  "rate": 0.11,
+  "posted": 11,
+  "posts": 36,
+  "rate": 0.12,
   "adopted_mult": 0.65,
   "own_mult": 1.12,
   "lanes": {
@@ -1556,7 +1556,7 @@
    },
    "재미": {
     "drafts": 12,
-    "posted": 0,
+    "posted": 1,
     "mult": null
    },
    "정보": {
@@ -1603,7 +1603,7 @@
   "corners": {
    "news": {
     "drafts": 51,
-    "posted": 7,
+    "posted": 8,
     "mult": 0.57
    },
    "mal": {
@@ -1649,19 +1649,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-18",
-    "lane": "요청",
-    "who": "빅뱅",
-    "repack": false,
-    "grade": null,
-    "corner": "news",
-    "key": "6605d030",
-    "posted": "Den23ulj26V",
-    "head": "데뷔 20주년을 맞은 빅뱅이 11월 21일 일본 교세라 돔 오사카에서 열리는 '2026 M",
-    "url": "https://www.instagram.com/p/Den23ulj26V/",
-    "mult": 0.88
-   },
    {
     "day": "2026-10-18",
     "lane": "요청",
@@ -1751,6 +1738,19 @@
     "posted": "DevuZPiFPZ9",
     "head": "빌스택스가 대마 구매·투약 혐의로 불구속 기소됐습니다.",
     "url": "https://www.instagram.com/p/DevuZPiFPZ9/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-21",
+    "lane": "재미",
+    "who": "브루노 마스",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "6b6cd370",
+    "posted": "DewL8DLFMHv",
+    "head": "브루노 마스가 한국의 한 음악 큐레이터에게 직접 DM을 보냈습니다.",
+    "url": "https://www.instagram.com/p/DewL8DLFMHv/",
     "mult": null
    }
   ]
