@@ -1157,13 +1157,101 @@
    },
    "corner_name": "그 말",
    "corner_no": 4
+  },
+  {
+   "source": {
+    "id": "claude:req-1da84e96",
+    "account": "@glowupmag",
+    "url": "https://www.instagram.com/p/DesmiZsgeyo/",
+    "image": null,
+    "head": "리센느가 말한 미니 4집 [PULSE] — 심장 박동을 건드릴 앨범, 지금도 울컥한다",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-21T22:17+09:00",
+   "key": "d4862ac9",
+   "by": "claude",
+   "subjects": [
+    "리센느"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "수호천사 콘셉트 포토가 화제인 지금, 리센느가 직접 말한 [PULSE] — '지금도 가사 생각하면 울컥울컥해요'",
+    "why": "콘셉트 포토(19·20일)로 컴백 관심이 오른 시점에, 멤버가 새 앨범을 직접 소개한 SBS 8뉴스 발언을 붙여 사람의 말로 연다"
+   },
+   "added": "claude",
+   "added_at": "2026-10-21T22:17+09:00",
+   "corner": "mal",
+   "req": "dr-1da84e96-s",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=6DnrV_LnJg4\n구간: 4:38-5:34\n곡: 지금도 울컥울컥해요\n아티스트: 이번 노래 들으면\n피처링:\n후킹: 가사 생각하면서\n출처: SBS 뉴스\n자막: 자동",
+    "caption": "리센느(@rescene_official)가 11월 3일 미니 4집 [PULSE]로 돌아옵니다.\n\n앨범명 'PULSE'는 심장 박동을 뜻하는데요, 지난 11일 〈SBS 8뉴스〉에 나온 리센느는 대중과 팬덤 리마인의 심장 박동을 건드릴 수 있는 앨범이 될 것이라고 소개했습니다. 한 멤버는 지금도 가사를 생각하며 이번 노래를 들으면 \"울컥울컥해요\"라고 덧붙였습니다.\n\n19일부터 공개된 콘셉트 포토에서 다섯 멤버는 날개 모양 소품과 깃털 장식으로 수호천사를 떠올리게 하는 모습을 보였습니다. 서로를 지키고 지켜 주는 사랑, 서로에게 힘이 되는 존재와의 관계가 '심장 박동'이라는 앨범 이름과 그대로 이어집니다.\n\n[PULSE]는 11월 3일 오후 6시 발매됩니다.\n\n#PLOT #리센느 #RESCENE #PULSE #펄스 #SBS8뉴스",
+    "hooks": {
+     "A": "가사 생각하면서 / 이번 노래 들으면 / 지금도 울컥울컥해요",
+     "B": "리센느가 11월 3일 / 미니 4집 PULSE로 / 돌아옵니다",
+     "C": "모두의 심장 박동을 / 건드릴 앨범이라고 / 리센느가 말했다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=6DnrV_LnJg4",
+     "credit": "SBS 뉴스",
+     "range": [
+      278.0,
+      334.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "앨범명은 보도·공식 계정 모두 'PULSE' — 원 게시물(glowupmag)의 'PURSE' 는 오기로 보고 따르지 않음",
+     "'울컥울컥해요' 발언 멤버가 누구인지 자막·기사로 특정 못 해 캡션에 이름 없이 '한 멤버'로 씀 — 영상에서 확인되면 이름 넣기"
+    ],
+    "research": [
+     {
+      "title": "SBS 뉴스 — [인터뷰] 리센느 \"향기처럼 오래 기억에 남는 그룹이고 싶어\" / SBS 8뉴스 (10/11)",
+      "link": "https://www.youtube.com/watch?v=6DnrV_LnJg4"
+     },
+     {
+      "title": "미주중앙일보 — 리센느 SBS 8뉴스 출연 (10/11)",
+      "link": "https://www.koreadaily.com/article/20261011161357485"
+     },
+     {
+      "title": "YTN star — 리센느, 수호천사로 변신…'PULSE' 콘셉트 포토 공개 (10/20)",
+      "link": "https://www.youtube.com/watch?v=Mjv606RhxGU"
+     },
+     {
+      "title": "일간스포츠 — 리센느 미니 4집 '펄스' 콘셉트 포토 (10/20)",
+      "link": "https://isplus.com/article/view/isp202610200014"
+     },
+     {
+      "title": "YTN — 리센느 미니 4집 'PULSE' 11월 3일 발매 (10/13)",
+      "link": "https://www.ytn.co.kr/_ln/0117_202610131039493415"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/6DnrV_LnJg4/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792588647/lvt8h1lnhm1zcyljhhjn.jpg",
+     "key": "6DnrV_LnJg4@278.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-21T22:17+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 5
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 5,
-  "done": 6,
+  "done": 7,
   "goal": 28,
   "corners": [
    {
@@ -1196,7 +1284,7 @@
     "left": 6,
     "need_today": 2,
     "next_no": 1,
-    "drafts": 4,
+    "drafts": 5,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -1247,26 +1335,26 @@
     "key": "news",
     "name": "소식",
     "weekly": 7,
-    "done": 4,
-    "left": 3,
+    "done": 5,
+    "left": 2,
     "need_today": 1,
     "next_no": null,
     "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T17:10+09:00"
+  "at": "2026-10-21T22:17+09:00"
  },
  "slots": {
-  "basis": 208,
+  "basis": 209,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.66,
-    "median": 3.24,
-    "n": 29
+    "mult": 2.58,
+    "median": 3.08,
+    "n": 30
    },
    {
     "from": 21,
@@ -1280,8 +1368,8 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.49,
-    "median": 0.29,
+    "mult": 1.51,
+    "median": 0.39,
     "n": 9
    }
   ],
