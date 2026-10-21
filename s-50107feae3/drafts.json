@@ -458,6 +458,117 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-3ca00f0e",
+    "account": "@규효 공유 · @popga_official",
+    "url": "https://www.instagram.com/p/DesffcJErWD/?dlrf=MWdxdWY2a3B5d3p3aQ==",
+    "image": null,
+    "head": "저스틴 비버 브랜드 SKYLRK, 10/22~25 성수 첫 서울 팝업 — 비버 방한은 미발표",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-21T13:27+09:00",
+   "key": "95cc7f3d",
+   "by": "claude",
+   "subjects": [
+    "저스틴 비버"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "도쿄·코첼라·뉴욕에 이어 비버의 브랜드가 서울로 — 비버 방한은 발표 없음",
+    "why": "규효 공유 · 비버가 오느냐는 반응이 몰린 소식"
+   },
+   "added": "claude",
+   "added_at": "2026-10-21T13:27+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n저스틴 비버의 브랜드 SKYLRK가 서울에 첫 팝업을 엽니다.\n\nSKYLRK는 지난해 12월 도쿄, 올해 4월 인디오, 7월 뉴욕에서 팝업을 열었는데요, 4월 인디오 팝업은 비버가 헤드라이너로 오른 코첼라 현장에 차려졌습니다. 서울은 네 번째 도시입니다.\n\n그래서 비버가 직접 오느냐는 기대도 나오고 있지만, 서울 팝업과 관련한 방한이나 공연 일정은 아직 공식 발표된 것이 없습니다.\n\n팝업은 10월 22일부터 25일까지 서울 성수동에서, 매일 오전 10시부터 오후 8시까지 열립니다.\n\n#PLOT #저스틴비버 #SKYLRK #스카이라크 #성수팝업 #코첼라\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792556848/kobyi0dk9mbbzymepni1.jpg\n제목: 저스틴 비버 브랜드가|성수에 온다\n부제: SKYLRK 첫 서울 팝업 · 10월 22~25일\n출처: 보그 코리아\n",
+    "caption": "저스틴 비버의 브랜드 SKYLRK가 서울에 첫 팝업을 엽니다.\n\nSKYLRK는 지난해 12월 도쿄, 올해 4월 인디오, 7월 뉴욕에서 팝업을 열었는데요, 4월 인디오 팝업은 비버가 헤드라이너로 오른 코첼라 현장에 차려졌습니다. 서울은 네 번째 도시입니다.\n\n그래서 비버가 직접 오느냐는 기대도 나오고 있지만, 서울 팝업과 관련한 방한이나 공연 일정은 아직 공식 발표된 것이 없습니다.\n\n팝업은 10월 22일부터 25일까지 서울 성수동에서, 매일 오전 10시부터 오후 8시까지 열립니다.\n\n#PLOT #저스틴비버 #SKYLRK #스카이라크 #성수팝업 #코첼라",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792556848/kobyi0dk9mbbzymepni1.jpg",
+      "credit": "보그 코리아",
+      "from": "https://www.vogue.co.kr/wp_data/vogue/2026/10/style_6ad6f938d1354-scaled-1920x1080.jpg?x=2048&y=1851&ver=1.1.62"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "저스틴 비버 브랜드가|성수에 온다",
+      "sub": "SKYLRK 첫 서울 팝업 · 10월 22~25일"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "도쿄·코첼라·뉴욕 다음은|서울 성수",
+      "sub": "저스틴 비버의 SKYLRK 팝업"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "비버는 오나요?|SKYLRK 서울 팝업",
+      "sub": "10월 22~25일 · 성수동"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 서울 한정 의류·DOMO 스피커(WWD 코리아만)와 '2025년 론칭·온라인 위주'(보그 코리아만)는 출처가 한 곳뿐이라 캡션에서 뺐다 — SKYLRK 공식 계정에서 확인되면 다시 넣을 것",
+     "표지 사진이 기사 대표 사진(보그 코리아)이다 — 비버 얼굴이 맞는지, 브랜드 홍보 이미지 느낌이 강하지 않은지",
+     "팝업 운영 시간(오전 10시~오후 8시)을 SKYLRK 공식 계정에서 한 번 더"
+    ],
+    "research": [
+     {
+      "title": "보그 코리아 — 저스틴 비버 브랜드 'SKYLRK', 서울 팝업 연다 (10/20)",
+      "link": "https://www.vogue.co.kr/2026/10/20/%EC%A0%80%EC%8A%A4%ED%8B%B4-%EB%B9%84%EB%B2%84-%EB%B8%8C%EB%9E%9C%EB%93%9C-skylrk-%EC%84%9C%EC%9A%B8-%ED%8C%9D%EC%97%85-%EC%97%B0%EB%8B%A4"
+     },
+     {
+      "title": "WWD 코리아 — SKYLRK 서울 첫 팝업 (10/20)",
+      "link": "https://www.wwdkorea.com/news/articleView.html?idxno=20374"
+     },
+     {
+      "title": "한국사회복지저널 — SKYLRK 성수동 팝업 운영 (10/20)",
+      "link": "https://www.ksw-news.com/news/articleView.html?idxno=3049673"
+     },
+     {
+      "title": "스포츠서울(네이트) — 저스틴 비버, 성수동 팝업 개최 (10/20)",
+      "link": "https://m.news.nate.com/view/20261020n21144"
+     },
+     {
+      "title": "Gulf News — Coachella 2026 lineup",
+      "link": "https://gulfnews.com/entertainment/coachella-2026-justin-bieber-sabrina-carpenter-lead-star-studded-lineup-1.500272230"
+     },
+     {
+      "title": "Complex — SKYLRK Coachella merch",
+      "link": "https://www.complex.com/style/a/cmplxtara-mahadevan/justin-bieber-coachella-merch-skylrk"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792556851/fnscw89cuv1krumjri6i.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792556851/zxzpx09thquptdpchqdq.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792556853/fzisunynppejinvjzzjr.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792556853/odz8xwzj4p0eyg8b5vp5.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792556851/fnscw89cuv1krumjri6i.jpg"
+     },
+     "at": "2026-10-21T13:27+09:00",
+     "v": {
+      "A": "481bfbff",
+      "B": "36a5865c",
+      "C": "addc189a"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -552,11 +663,11 @@
     "left": 6,
     "need_today": 2,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T09:57+09:00"
+  "at": "2026-10-21T13:27+09:00"
  },
  "slots": {
   "basis": 205,
