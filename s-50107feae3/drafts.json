@@ -263,9 +263,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792544013/ssq0yvrmhye8v2uehott.jpg",
      "key": "TVrxFe_w-OM@2232.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-21T09:54+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792544222/plot_studio/qzhd9xpuopl6na2aupfu.mp4",
+     "at": "2026-10-21T09:57+09:00",
+     "file": "ASiNeun_BunI_ManhEun_JeGa_BadEun_Geon_1Ch_Issue_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "그 말",
@@ -555,7 +556,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T09:54+09:00"
+  "at": "2026-10-21T09:57+09:00"
  },
  "slots": {
   "basis": 205,
