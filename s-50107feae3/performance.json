@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-21 15:04 KST",
+ "generated_at": "2026-10-21 19:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1403,11 +1403,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-20 22:04 KST"
+  "daily": "2026-10-21 15:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-21T14:39:55+09:00",
+  "fetched_at": "2026-10-21T19:04:38+09:00",
   "posts": [
+   {
+    "t": "2026-10-21T15:12+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "원진의 첫 솔로 정규 앨범 제목은 [망상록]입니다."
+   },
+   {
+    "t": "2026-10-21T15:06+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "빌스택스가 대마 구매·투약 혐의로 불구속 기소됐습니다."
+   },
+   {
+    "t": "2026-10-21T15:01+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "저스틴 비버의 브랜드 SKYLRK가 서울에 첫 팝업을 엽니다."
+   },
    {
     "t": "2026-10-20T20:41+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1527,10 +1542,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 88,
-  "posted": 7,
-  "posts": 32,
-  "rate": 0.08,
+  "drafts": 93,
+  "posted": 10,
+  "posts": 35,
+  "rate": 0.11,
   "adopted_mult": 0.65,
   "own_mult": 1.12,
   "lanes": {
@@ -1540,17 +1555,17 @@
     "mult": null
    },
    "재미": {
-    "drafts": 10,
+    "drafts": 12,
     "posted": 0,
     "mult": null
    },
    "정보": {
-    "drafts": 47,
-    "posted": 4,
+    "drafts": 48,
+    "posted": 7,
     "mult": 0.57
    },
    "클립": {
-    "drafts": 16,
+    "drafts": 18,
     "posted": 0,
     "mult": null
    },
@@ -1587,12 +1602,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 50,
-    "posted": 4,
+    "drafts": 51,
+    "posted": 7,
     "mult": 0.57
    },
    "mal": {
-    "drafts": 17,
+    "drafts": 19,
     "posted": 0,
     "mult": null
    },
@@ -1612,7 +1627,7 @@
     "mult": null
    },
    "followup": {
-    "drafts": 6,
+    "drafts": 8,
     "posted": 1,
     "mult": 0.72
    },
@@ -1634,32 +1649,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-15",
-    "lane": "정보",
-    "who": "빅나티",
-    "repack": false,
-    "grade": "S",
-    "corner": "news",
-    "key": "f6f13a84",
-    "posted": "DemhnJTD0_l",
-    "head": "빅나티가 '밴쿠버' 속 주인공과 결혼했습니다.",
-    "url": "https://www.instagram.com/p/DemhnJTD0_l/",
-    "mult": 0.57
-   },
-   {
-    "day": "2026-10-17",
-    "lane": "요청",
-    "who": "이수만",
-    "repack": false,
-    "grade": null,
-    "corner": "followup",
-    "key": "2052554c",
-    "posted": "DemUavNj38_",
-    "head": "이수만이 국내에 선보인 신인 걸그룹 A2O LITE가 데뷔곡 'NEON'으로 멜론 TOP1",
-    "url": "https://www.instagram.com/p/DemUavNj38_/",
-    "mult": 0.72
-   },
    {
     "day": "2026-10-18",
     "lane": "요청",
@@ -1723,6 +1712,45 @@
     "posted": "Detv-dlD-sH",
     "head": "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@rescene_official)",
     "url": "https://www.instagram.com/p/Detv-dlD-sH/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-21",
+    "lane": "정보",
+    "who": "원진",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "2607607e",
+    "posted": "DevvD8NlA2d",
+    "head": "원진의 첫 솔로 정규 앨범 제목은 [망상록]입니다.",
+    "url": "https://www.instagram.com/p/DevvD8NlA2d/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-21",
+    "lane": "정보",
+    "who": "저스틴 비버",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "95cc7f3d",
+    "posted": "Devt4vSlLKr",
+    "head": "저스틴 비버의 브랜드 SKYLRK가 서울에 첫 팝업을 엽니다.",
+    "url": "https://www.instagram.com/p/Devt4vSlLKr/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-21",
+    "lane": "정보",
+    "who": "빌스택스",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "cecd1bbf",
+    "posted": "DevuZPiFPZ9",
+    "head": "빌스택스가 대마 구매·투약 혐의로 불구속 기소됐습니다.",
+    "url": "https://www.instagram.com/p/DevuZPiFPZ9/",
     "mult": null
    }
   ]
