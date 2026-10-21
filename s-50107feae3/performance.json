@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-20 22:04 KST",
+ "generated_at": "2026-10-21 15:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1403,10 +1403,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-20 19:04 KST"
+  "daily": "2026-10-20 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-20T22:04:30+09:00",
+  "fetched_at": "2026-10-21T14:39:55+09:00",
   "posts": [
    {
     "t": "2026-10-20T20:41+09:00",
@@ -1522,30 +1522,15 @@
     "t": "2026-09-30T19:27+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "김감전이 재판에 넘겨졌습니다."
-   },
-   {
-    "t": "2026-09-29T22:20+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "김하온은 서바이벌에서 두 번 우승했습니다."
-   },
-   {
-    "t": "2026-09-29T22:16+09:00",
-    "type": "VIDEO",
-    "head": "유튜브 채널 빠더너스의 새로운 시리즈 '야유회 마니아' 1회에서 문상훈,"
-   },
-   {
-    "t": "2026-09-29T22:11+09:00",
-    "type": "VIDEO",
-    "head": "로꼬가 두오버엔터테인먼트와 전속계약을 맺었습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 82,
+  "drafts": 88,
   "posted": 7,
   "posts": 32,
-  "rate": 0.09,
+  "rate": 0.08,
   "adopted_mult": 0.65,
   "own_mult": 1.12,
   "lanes": {
@@ -1560,12 +1545,12 @@
     "mult": null
    },
    "정보": {
-    "drafts": 43,
+    "drafts": 47,
     "posted": 4,
     "mult": 0.57
    },
    "클립": {
-    "drafts": 14,
+    "drafts": 16,
     "posted": 0,
     "mult": null
    },
@@ -1602,12 +1587,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 46,
+    "drafts": 50,
     "posted": 4,
     "mult": 0.57
    },
    "mal": {
-    "drafts": 15,
+    "drafts": 17,
     "posted": 0,
     "mult": null
    },
@@ -1617,12 +1602,12 @@
     "mult": null
    },
    "song": {
-    "drafts": 4,
+    "drafts": 5,
     "posted": 0,
     "mult": null
    },
    "tteolgi": {
-    "drafts": 6,
+    "drafts": 5,
     "posted": 2,
     "mult": null
    },
