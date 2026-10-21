@@ -896,6 +896,237 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:bruno-mars-milestone-lp",
+    "account": "파이낸셜뉴스",
+    "url": "https://www.fnnews.com/news/202610211050368268",
+    "image": null,
+    "head": "브루노 마스, 한국 큐레이터에 DM — 마일스톤 LP와 공연 티켓",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-21T16:18+09:00",
+   "key": "6b6cd370",
+   "by": "claude",
+   "subjects": [
+    "브루노 마스"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "브루노 마스가 한국 음악 큐레이터의 숏폼을 보고 직접 DM — 마일스톤 LP를 사겠다는 말에 선물로 답하자 돌아온 건 내한 공연 티켓",
+    "why": "레이더 '마스' · 오늘(21일) 파이낸셜뉴스·한국경제 등 동시 보도 · 사람과 음악 취향이 보이는 이야기 — 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-10-21T16:18+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n브루노 마스가 한국의 한 음악 큐레이터에게 직접 DM을 보냈습니다.\n\n큐레이터가 R&B 그룹 마일스톤을 소개한 1분짜리 숏폼을 본 브루노 마스가 그 음반을 사고 싶다며 연락해 왔는데요, 가격을 묻는 말에 큐레이터는 돈 대신 선물로 보내겠다고 답했습니다.\n\n마일스톤은 1997년 영화 〈소울 푸드〉 OST를 위해 모인 그룹입니다. 30년 가까이 된 R&B 음반 한 장이 브루노 마스의 내한 공연 티켓으로 돌아온 셈입니다.\n\n브루노 마스는 내년 5월 고양종합운동장에서 내한 공연을 엽니다.\n\n#PLOT #브루노마스 #마일스톤 #소울푸드 #BrunoMars\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792567115/fdzxyvjnl9hrprabvvbu.jpg\n제목: 브루노 마스가|한국 팬에게 보낸 DM\n부제: LP를 사겠다는 말에 선물로 답하자 돌아온 건 공연 티켓\n출처: 헤럴드경제\n",
+    "caption": "브루노 마스가 한국의 한 음악 큐레이터에게 직접 DM을 보냈습니다.\n\n큐레이터가 R&B 그룹 마일스톤을 소개한 1분짜리 숏폼을 본 브루노 마스가 그 음반을 사고 싶다며 연락해 왔는데요, 가격을 묻는 말에 큐레이터는 돈 대신 선물로 보내겠다고 답했습니다.\n\n마일스톤은 1997년 영화 〈소울 푸드〉 OST를 위해 모인 그룹입니다. 30년 가까이 된 R&B 음반 한 장이 브루노 마스의 내한 공연 티켓으로 돌아온 셈입니다.\n\n브루노 마스는 내년 5월 고양종합운동장에서 내한 공연을 엽니다.\n\n#PLOT #브루노마스 #마일스톤 #소울푸드 #BrunoMars",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792567115/fdzxyvjnl9hrprabvvbu.jpg",
+      "credit": "헤럴드경제",
+      "from": "https://wimg.heraldcorp.com/news/cms/2026/09/15/news-p.v1.20260915.1599f51e1b0743c18a680d20f6dc58d4_P1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "브루노 마스가|한국 팬에게 보낸 DM",
+      "sub": "LP를 사겠다는 말에 선물로 답하자 돌아온 건 공연 티켓"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "LP가 마일스톤(영화 〈소울 푸드〉 OST 그룹) 음반이라는 건 파이낸셜뉴스에만 있습니다 — 원 스레드 글에서 한 번 봐 주세요",
+     "표지 사진이 브루노 마스 본인인지 (기사 대표 사진)"
+    ],
+    "research": [
+     {
+      "title": "파이낸셜뉴스 — \"브루노 마스가 DM 보냈다\"… 'LP 직거래' 제안에 선물로 줬다는 한국팬 (10/21)",
+      "link": "https://www.fnnews.com/news/202610211050368268"
+     },
+     {
+      "title": "한국경제 — 이거 실화? 팝스타 브루노 마스, 한국 팬과 LP판 중고거래 (10/21)",
+      "link": "https://www.hankyung.com/article/2026102152667"
+     },
+     {
+      "title": "JTBC — 중고거래 상대가 '브루노 마스'였다…LP 공짜로 넘기자 공연 초대",
+      "link": "https://news.jtbc.co.kr/article/NB12324120"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792567135/xg0yjfobm0kyr73oy3uw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792567135/bpasv8tue5wdc9j6g1ur.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792567135/xg0yjfobm0kyr73oy3uw.jpg"
+     },
+     "at": "2026-10-21T16:18+09:00",
+     "v": {
+      "A": "5f811a4d"
+     }
+    }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:swings-kissum-smtm3",
+    "account": "에겐남 스윙스 유튜브",
+    "url": "https://www.youtube.com/watch?v=TVrxFe_w-OM",
+    "image": null,
+    "head": "스윙스, 쇼미3 키썸 장면 뒷이야기",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-21T16:18+09:00",
+   "key": "9f79d995",
+   "by": "claude",
+   "subjects": [
+    "스윙스"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "쇼미3 '랩에나 신경 써라' 그 장면 — 12년 뒤 스윙스가 직접 꺼낸 뒷이야기, '그때 나 악플 달렸어' · '키썸 보고 있다면 건강하길'",
+    "why": "그 말 칸 · 레이더 1위 스윙스 · 쇼미더머니 후속 기획 · 원본 자막으로 화자·구간 확인 (21:10~21:50, 브리핑은 타블로로 잘못 적힘)"
+   },
+   "added": "claude",
+   "added_at": "2026-10-21T16:18+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=TVrxFe_w-OM\n구간: 21:10-21:50\n곡: 건강하길 바라고\n아티스트: 보고 싶다야\n피처링:\n후킹: 키썸 보고 있다면\n출처: 에겐남 스윙스\n자막: 자동",
+    "caption": "스윙스(@itsjustswings)가 〈쇼미더머니3〉의 그 장면을 다시 꺼냈습니다.\n\n바비(@bobbyindaeyo)·더콰이엇(@thequiett)과 쇼미3를 돌아본 '에겐남 스윙스' 영상에서 스윙스는 키썸에게 외모 말고 랩에 신경 쓰라고 했던 말을 떠올렸는데요, 편집이 나가고 '키썸 건들지 마라'는 악플이 자신에게 달렸다고 웃었습니다.\n\n사적인 감정은 없었다는 스윙스는 \"보고 있다면 보고 싶다\"며 키썸에게 건강하길 바란다는 말을 남겼습니다.\n\n#PLOT #스윙스 #키썸 #쇼미더머니 #바비",
+    "hooks": {
+     "A": "키썸 보고 있다면 / 보고 싶다야 / 건강하길 바라고",
+     "B": "외모 말고 랩에 / 신경 쓰라던 그날 / 나 악플 달렸어",
+     "C": "쇼미3 그 장면, / 스윙스가 12년 만에 / 직접 꺼낸 이야기"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=TVrxFe_w-OM",
+     "credit": "에겐남 스윙스",
+     "range": [
+      1270.0,
+      1310.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "21:22~21:48 이 스윙스 목소리인지 귀로 한 번 — 자막상 '유명한 말'을 한 본인이 이어 말합니다",
+     "오늘 아침 같은 영상의 바비 상금 숏폼이 이미 있습니다 — 둘 중 하나만 올릴지"
+    ],
+    "research": [
+     {
+      "title": "에겐남 스윙스 — The reunion of Show Me The Money 3 legends after 12 years (원본, 21:10~21:50)",
+      "link": "https://www.youtube.com/watch?v=TVrxFe_w-OM"
+     },
+     {
+      "title": "텐아시아 — 쇼미더머니3 스윙스·키썸 장면 (2014)",
+      "link": "https://www.tenasia.co.kr/article/2014071004214"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/TVrxFe_w-OM/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792567143/iv0ttbkax9j7nydsxoog.jpg",
+     "key": "TVrxFe_w-OM@1270.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-21T16:19+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:quiett-smtm3-offline",
+    "account": "에겐남 스윙스 유튜브",
+    "url": "https://www.youtube.com/shorts/Qpw1_m9nud4",
+    "image": null,
+    "head": "쇼미 첫 출연 만에 방송 접으려 한 더콰이엇",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-21T16:18+09:00",
+   "key": "f552a5c1",
+   "by": "claude",
+   "subjects": [
+    "더콰이엇"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "쇼미3 첫 심사 뒤 '나락 갈 것 같다'며 방송 나가면 인터넷도 안 하려 했다는 더콰이엇",
+    "why": "그 말 칸 · 에겐남 스윙스 쇼미3 재회 편 클립 · 자막으로 말 확인 (0~34초)"
+   },
+   "added": "claude",
+   "added_at": "2026-10-21T16:18+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/shorts/Qpw1_m9nud4\n구간: 0:00-0:34\n곡: 인터넷도 안 봐야겠다\n아티스트: 쇼미 방영하면\n피처링:\n후킹: 나락을 갈 거 같다,\n출처: 에겐남 스윙스\n자막: 자동",
+    "caption": "더콰이엇(@thequiett)은 〈쇼미더머니3〉 첫 촬영 뒤 인터넷을 끊을 생각이었습니다.\n\n'에겐남 스윙스(@itsjustswings)'에서 쇼미3를 함께 돌아본 더콰이엇은 1차 심사를 찍으며 이러다 나락에 갈 것 같다는 생각이 들었다고 했는데요, 그래서 방송이 시작되면 인터넷도 하지 않고 아예 보지 않으려 했다고 털어놨습니다.\n\n그해 더콰이엇은 도끼와 한 팀으로 프로듀서석에 앉았는데요, 나락을 걱정하던 그 팀에서 우승자 바비(@bobbyindaeyo)가 나왔습니다.\n\n#PLOT #더콰이엇 #쇼미더머니 #스윙스 #바비",
+    "hooks": {
+     "A": "나락을 갈 거 같다, / 쇼미 방영하면 / 인터넷도 안 봐야겠다",
+     "B": "쇼미 첫 심사 뒤 / 더콰이엇이 / 하려던 일",
+     "C": "방송 나가면 / 인터넷을 끊으려 했던 / 쇼미3 더콰이엇"
+    },
+    "video": {
+     "url": "https://www.youtube.com/shorts/Qpw1_m9nud4",
+     "credit": "에겐남 스윙스",
+     "range": [
+      0.0,
+      34.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "0:10~0:34 화자가 더콰이엇인지 귀로 한 번 (쇼츠 제목 기준) · '심사를 너무 세게' 부분은 자막이 깨져 훅에서 뺐습니다"
+    ],
+    "research": [
+     {
+      "title": "에겐남 스윙스 쇼츠 — 쇼미 첫 출연 만에 방송 접으려 한 더콰이엇",
+      "link": "https://www.youtube.com/shorts/Qpw1_m9nud4"
+     },
+     {
+      "title": "에겐남 스윙스 — The reunion of Show Me The Money 3 legends after 12 years (원본)",
+      "link": "https://www.youtube.com/watch?v=TVrxFe_w-OM"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Qpw1_m9nud4/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792567147/m5lbtkgvzx6a3srn44hy.jpg",
+     "key": "Qpw1_m9nud4@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-21T16:19+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 4
   }
  ],
  "skipped": [],
@@ -935,7 +1166,7 @@
     "left": 6,
     "need_today": 2,
     "next_no": 1,
-    "drafts": 2,
+    "drafts": 4,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -990,11 +1221,11 @@
     "left": 3,
     "need_today": 1,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T16:07+09:00"
+  "at": "2026-10-21T16:19+09:00"
  },
  "slots": {
   "basis": 208,
