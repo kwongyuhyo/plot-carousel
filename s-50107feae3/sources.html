@@ -2075,7 +2075,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       })
       .catch(function () { toast('그날 초안을 못 받았습니다'); });
   }
-  ytLoad(); rndLoad();
+  ytLoad(); rndLoad(); wrLoad(); alrLoad();
   // 10/21 — 갤럭시(안드로이드 크롬) 공유 받기: 인스타 공유 → 「PLOT」 → 여기로 (manifest share_target) → 제작 맡기기 '본 게시물로' 가 채워진 채
   (function () {
     var q = new URLSearchParams(location.search);
@@ -2166,6 +2166,19 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
           '<a class="act" data-rndseen="' + esc(x.url) + '" href="' + escU(dl) + '">⬇ 저장</a></div></div>';
       }).join('') + (rows.length > 3 ? '<button class="more" data-rndmore>' + (RND_OPEN ? '접기' : '모두 보기 (' + rows.length + ')') + '</button>' : '') + '</div>';
   }
+  var ALR = null;
+  function alrLoad() {
+    fetch('./alerts.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { ALR = d; if (GRP === 'draft' && !DR_DAY) renderDrafts(); }).catch(function () {});
+  }
+  function alrBox() {                              // 10/21 지켜보기 알림 (config/watch.json · collectors/watch_alerts)
+    var rows = (ALR && ALR.items) || [];
+    if (!rows.length) return '';
+    return '<div class="ytx alr"><div class="hd"><b>🔔 지켜보던 것</b> <span>' + rows.length + '건</span></div>' + rows.slice(0, 3).map(function (x) {
+      return '<div class="yr"><div class="yt">' + esc(x.kw) + ' — ' + esc(x.why) + '</div><div class="ys">@' + esc(x.account) + ' · ' +
+        esc(String(x.at || '').slice(5, 10)) + ' · ' + esc(x.head) + (x.url ? ' · <a href="' + escU(x.url) + '" target="_blank" rel="noopener">원글</a>' : '') + '</div></div>';
+    }).join('') + '</div>';
+  }
   function todoBar() {                            // 10/20 — 오늘 할 일 한 줄 (평가 안 한 초안 · 새 완성본 · 못 만든 맡기기 · 유튜브 물음)
     var items = (DR && DR.items) || [], ev = evGet();
     var noEv = items.filter(function (it) { var r = ev[evId(it)]; return !(r && r.verdict && r.verdict.go); }).length;
@@ -2178,7 +2191,32 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (rnew) bits.push('새 완성본 <b>' + rnew + '</b>');
     if (odf) bits.push('못 만든 맡기기 <b>' + odf + '</b>');
     if (yq) bits.push('유튜브 물음 <b>' + yq + '</b>');
+    var al = ((ALR && ALR.items) || []).length;
+    if (al) bits.push('지켜보던 것 <b>' + al + '</b>');
     return bits.length ? '<div class="todo">오늘 할 일 · ' + bits.join(' · ') + '</div>' : '<div class="todo ok">오늘 할 일 없음 — 다 봤습니다</div>';
+  }
+  /* ── 작성기 성적표 (scripts/writer_report · 10/21) — 이번 7일 vs 지난 7일, 숫자와 화살표만 ── */
+  var WR = null;
+  function wrLoad() {
+    fetch('./writer_report.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { WR = d; }).catch(function () {});
+  }
+  function wrBox() {
+    if (!WR || !WR.cur) return '';
+    var c = WR.cur, p = WR.prev || {};
+    function ar(a, b) { return (a == null || b == null) ? '' : a > b ? ' ↑' : a < b ? ' ↓' : ' →'; }
+    function pct(x) { return x == null ? '-' : Math.round(x * 100) + '%'; }
+    var g = c.go || {}, med = (c.reach_mult || []).slice().sort(function (a, b) { return a - b; });
+    var m = med.length ? med[Math.floor(med.length / 2)] : null;
+    return '<div class="ytx wr"><div class="hd"><b>작성기 성적표</b> <span>' + esc((WR.range || []).join(' ~ ')) + ' · 지난 7일과 비교</span></div>' +
+      '<div class="ys">초안 <b>' + c.drafts + '</b>' + ar(c.drafts, p.drafts) + ' · 평가 ' + c.evaluated + ' (' + pct(c.eval_rate) + ')' +
+      ' · 발행 ' + c.published + ' (' + pct(c.publish_rate) + ar(c.publish_rate, p.publish_rate) + ')</div>' +
+      '<div class="ys">바로 올림 ' + (g['바로 올림'] || 0) + ' · 손보면 올림 ' + (g['손보면 올림'] || 0) + ' · 안 올림 ' + (g['안 올림'] || 0) +
+      ((c.why_top || []).length ? ' · 많이 나온 이유 ' + c.why_top.map(function (w) { return esc(w[0]) + ' ' + w[1]; }).join(', ') : '') + '</div>' +
+      (m != null ? '<div class="ys">발행한 작성기 글 도달: 그 주 중간값의 ' + m + '배 (' + med.length + '편)</div>' : '') +
+      '<div class="ys">검증이 손댄 초안 ' + c.verify_touched + ' · 맡기기 만듦 ' + ((c.orders || {})['만듦'] || 0) + ' / 못 만듦 ' + ((c.orders || {})['못 만듦'] || 0) +
+      ' · 작성기 ' + c.runs + '회 (실패 ' + c.run_fail + ') 평균 ' + (c.avg_secs || 0) + '초</div>' +
+      (c.evaluated ? '' : '<div class="yw">평가가 쌓여야 숫자가 의미가 있어요 — 카드 아래 바로 올림·손보면·안 올림만 눌러도 됩니다</div>') + '</div>';
   }
   function ytUpload(k) {
     var x = ((YTX && YTX.items) || []).filter(function (r) { return r.k === k; })[0] || {};
@@ -3681,14 +3719,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
       // 10/17 — 초안 피드를 위로: 서사형·평가 노트·발행 현황·편성은 피드 아래로 내린다
-      host.innerHTML = (DR_DAY ? '' : todoBar() + usageBox() + reqBox() + orderBox() + rndBox() + ytBox()) + dayBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = (DR_DAY ? '' : todoBar() + alrBox() + usageBox() + reqBox() + orderBox() + rndBox() + ytBox()) + dayBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
       renderFeed(host);
-      host.insertAdjacentHTML('beforeend', '<div class="drAfter">' + storyBox() + evNote(items) + skipBox() + pubBox() + cornerBar() + '</div>');
+      host.insertAdjacentHTML('beforeend', '<div class="drAfter">' + storyBox() + evNote(items) + skipBox() + wrBox() + pubBox() + cornerBar() + '</div>');
       return;
     }
-    host.innerHTML = (DR_DAY ? '' : todoBar() + reqBox() + orderBox() + rndBox() + ytBox() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = (DR_DAY ? '' : todoBar() + alrBox() + reqBox() + orderBox() + rndBox() + ytBox() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
@@ -3875,9 +3913,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.21 22:24';
+    a.title = '판 10.21 23:33';
     var ver = document.createElement('span');
-    ver.textContent = '10.21 22:24';
+    ver.textContent = '10.21 23:33';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
