@@ -792,13 +792,117 @@
     }
    },
    "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "claude:ord-50d47ea3",
+    "account": "@규효 요청",
+    "url": "https://www.instagram.com/p/DevWwgLknVh/?srtk=MTV0d3h5Nzk4bHh5Zg==",
+    "image": null,
+    "head": "한로로 '애증(LOVE&HATE)'과 지훈 팔의 LOVE·HATE 문구가 겹친다는 비교로 다시 돈 열애설",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-21T15:52+09:00",
+   "key": "9be541f8",
+   "by": "claude",
+   "subjects": [
+    "한로로",
+    "트레저 지훈"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "공개 게시물의 겹침으로 다시 돈 한로로·트레저 지훈 열애설 — 축은 한로로 '애증(LOVE&HATE)'과 지훈 팔의 LOVE·HATE 문구라는 이야기",
+    "why": "규효가 맡긴 열애설 화제 · 인디×케이팝 교차라 도달 대비 팔로우가 높은 조합"
+   },
+   "added": "claude",
+   "added_at": "2026-10-21T15:52+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n한로로(@hanr0r0)와 트레저 지훈의 열애설이 온라인에서 다시 돌고 있습니다.\n\n두 사람이 각자 SNS와 위버스에 올린 게시물을 나란히 놓은 비교가 퍼졌는데요, 차 안에서 바나나와 사과를 들고 찍은 스토리, '좋아해'라는 문구와 george의 'something between us'를 함께 단 영상, 비슷한 시기에 올라온 타워레코드 'NO MUSIC, NO LIFE.' 포스터 사진이 한데 묶였습니다.\n\n그중 눈길을 끈 건 지훈의 양팔에 새겨졌다는 'LOVE'와 'HATE' 문구입니다. 한로로가 지난 4월 2일 낸 디지털 싱글 '애증'의 영문 제목이 'LOVE&HATE'라 둘을 잇는 이야기가 나왔습니다.\n\n모두 두 사람이 공개적으로 올린 게시물 속 겹침이고, 양측은 아직 입장을 내지 않았습니다.\n\n#PLOT #한로로 #트레저 #지훈 #애증 #열애설\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792565530/zuoqmqjahbtqg9opp4wx.jpg\n제목: 한로로 x 트레저 지훈|열애설...?\n부제: 공개 게시물 속 겹침으로 다시 돈 이야기\n출처: @hanr0r0\n",
+    "caption": "한로로(@hanr0r0)와 트레저 지훈의 열애설이 온라인에서 다시 돌고 있습니다.\n\n두 사람이 각자 SNS와 위버스에 올린 게시물을 나란히 놓은 비교가 퍼졌는데요, 차 안에서 바나나와 사과를 들고 찍은 스토리, '좋아해'라는 문구와 george의 'something between us'를 함께 단 영상, 비슷한 시기에 올라온 타워레코드 'NO MUSIC, NO LIFE.' 포스터 사진이 한데 묶였습니다.\n\n그중 눈길을 끈 건 지훈의 양팔에 새겨졌다는 'LOVE'와 'HATE' 문구입니다. 한로로가 지난 4월 2일 낸 디지털 싱글 '애증'의 영문 제목이 'LOVE&HATE'라 둘을 잇는 이야기가 나왔습니다.\n\n모두 두 사람이 공개적으로 올린 게시물 속 겹침이고, 양측은 아직 입장을 내지 않았습니다.\n\n#PLOT #한로로 #트레저 #지훈 #애증 #열애설",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565530/zuoqmqjahbtqg9opp4wx.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565533/nz0aefjotefdp0l1l4jt.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/ynLYS14J/eb2c7a5a4f4a.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "한로로 x 트레저 지훈|열애설...?",
+      "sub": "공개 게시물 속 겹침으로 다시 돈 이야기"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "한로로 '애증'과|지훈의 LOVE·HATE",
+      "sub": "온라인에서 나온 비교"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "같은 BGM에 '좋아해'|한로로·지훈 열애설",
+      "sub": "양측은 아직 입장 없음"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "비교로 나온 정황(과일 스토리·george 'something between us' 배경음악·지훈 팔의 LOVE/HATE 문구·타워레코드 포스터)은 맡긴 게시물 기준이고 원 게시물은 직접 못 봤습니다 — 둘 중 하나라도 실제 공개 게시물로 보이면 그대로, 아니면 캡션의 '~라는' 꼴 유지",
+     "숏폼은 비웠습니다 — 두 사람이 함께 나오거나 이 일을 말하는 유튜브 원본이 없음 (검색에 걸린 '지훈'은 TWS 지훈·팬 직캠 채널)"
+    ],
+    "research": [
+     {
+      "title": "[TF프리즘] \"우리도 있다\"…싱어송라이터, 4월 컴백 대란 합류 (한로로 디지털 싱글 '애증(LOVE&HATE)' 4/2 발매)",
+      "link": "https://news.tf.co.kr/read/ogmeta/2308834.htm"
+     },
+     {
+      "title": "Han Roro 'Love & Hate' warm-up complete (스포츠경향, 4/2 오후 6시 발매)",
+      "link": "https://sports.khan.co.kr/en/article/202603240756007"
+     },
+     {
+      "title": "에이티즈부터 트레저·키키 컬래버까지…'2026 더팩트 뮤직 어워즈' (트레저 지훈 활동)",
+      "link": "https://news.tf.co.kr/read/ogmeta/2355298.htm"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565536/qv3ljublvapgxxhprooo.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565536/wv2csfgqzess9qpzekqf.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565538/gwkz0r1tubfevru4iszk.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565538/iq3t0t7v0gxmwft1xv8c.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565536/qv3ljublvapgxxhprooo.jpg"
+     },
+     "at": "2026-10-21T15:52+09:00",
+     "v": {
+      "A": "b5e98bde",
+      "B": "a7700fba",
+      "C": "dd69171a"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 5,
-  "done": 3,
+  "done": 6,
   "goal": 28,
   "corners": [
    {
@@ -882,18 +986,18 @@
     "key": "news",
     "name": "소식",
     "weekly": 7,
-    "done": 1,
-    "left": 6,
-    "need_today": 2,
+    "done": 4,
+    "left": 3,
+    "need_today": 1,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T15:44+09:00"
+  "at": "2026-10-21T15:52+09:00"
  },
  "slots": {
-  "basis": 205,
+  "basis": 208,
   "card": [
    {
     "from": 18,
@@ -904,20 +1008,20 @@
     "n": 29
    },
    {
-    "from": 15,
-    "to": 18,
-    "at": "16:30",
-    "mult": 1.92,
-    "median": 2.4,
-    "n": 6
-   },
-   {
     "from": 21,
     "to": 24,
     "at": "22:30",
     "mult": 1.7,
     "median": 0.43,
     "n": 25
+   },
+   {
+    "from": 15,
+    "to": 18,
+    "at": "16:30",
+    "mult": 1.48,
+    "median": 0.29,
+    "n": 9
    }
   ],
   "shorts": [
