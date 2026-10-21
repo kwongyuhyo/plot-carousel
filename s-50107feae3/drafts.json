@@ -569,6 +569,105 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-75b6ecc6",
+    "account": "@갈등·반응",
+    "url": "https://www.bntnews.co.kr/article/view/bnt202610210208",
+    "image": null,
+    "head": "빌스택스, 대마 구매·투약 혐의로 불구속 기소 (혐의 단계)",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-21T14:43+09:00",
+   "key": "cecd1bbf",
+   "by": "claude",
+   "subjects": [
+    "빌스택스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "빌스택스 대마 구매·투약 혐의 불구속 기소 — 혐의 단계 사실만, 표지 한 장",
+    "why": "쇼미더머니 출신 래퍼 기소 보도로 오늘 뉴스·커뮤니티 반응 급증"
+   },
+   "added": "claude",
+   "added_at": "2026-10-21T14:43+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n빌스택스가 대마 구매·투약 혐의로 불구속 기소됐습니다.\n\n검찰은 지난 16일 빌스택스를 마약류 관리에 관한 법률 위반 혐의로 재판에 넘겼는데요, 지난해 11월 30대 판매책에게서 대마와 대마 젤리를 사 투약한 혐의입니다. 판매책을 수사하던 중 구매 정황이 드러난 것으로 전해졌습니다.\n\n2004년 바스코라는 이름으로 데뷔한 그는 2014년 〈쇼미더머니 3〉로 이름을 알렸고, 2016년 활동명을 빌스택스로 바꿨습니다. 이번 기소는 혐의 단계로, 유죄가 확정된 것은 아닙니다.\n\n#PLOT #빌스택스 #바스코 #쇼미더머니 #힙합\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792561415/tyis1oppzsihqwkwlm7r.jpg\n제목: 빌스택스, 대마 구매·투약|혐의로 불구속 기소\n부제: \n출처: 텐아시아\n",
+    "caption": "빌스택스가 대마 구매·투약 혐의로 불구속 기소됐습니다.\n\n검찰은 지난 16일 빌스택스를 마약류 관리에 관한 법률 위반 혐의로 재판에 넘겼는데요, 지난해 11월 30대 판매책에게서 대마와 대마 젤리를 사 투약한 혐의입니다. 판매책을 수사하던 중 구매 정황이 드러난 것으로 전해졌습니다.\n\n2004년 바스코라는 이름으로 데뷔한 그는 2014년 〈쇼미더머니 3〉로 이름을 알렸고, 2016년 활동명을 빌스택스로 바꿨습니다. 이번 기소는 혐의 단계로, 유죄가 확정된 것은 아닙니다.\n\n#PLOT #빌스택스 #바스코 #쇼미더머니 #힙합",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792561415/tyis1oppzsihqwkwlm7r.jpg",
+      "credit": "텐아시아",
+      "from": "https://img.tenasia.co.kr/photo/202610/BF.46137045.1.png"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "빌스택스, 대마 구매·투약|혐의로 불구속 기소",
+      "sub": ""
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'쇼미3' 출신 빌스택스,|대마 혐의로 재판행",
+      "sub": ""
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "빌스택스, 대마 젤리|투약 혐의로 기소",
+      "sub": ""
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사진은 무대 스틸이 아니라 본인 셀카입니다 — 텐아시아 사진 설명상 출처가 '빌스택스 인스타그램'이라 크레딧(현재 '텐아시아')을 바꿀지 봐 주세요 · 사실은 bnt·텐아시아·나무위키(2016년 12월 개명)와 맞습니다",
+     "숏폼 비움: 기소 건엔 본인이 말한 영상이 없고, 옛 대마 발언 영상을 붙이면 서사를 만드는 꼴이라 뺐습니다 · 기소 기관은 매체마다 표기가 달라(검찰청/공소청) '검찰'로만 썼습니다",
+     "사진: 사진 DB·인스타에 없어서 텐아시아 기사 대표 사진을 썼습니다 — 무대 스틸이 아닌지 확인해 주세요"
+    ],
+    "research": [
+     {
+      "title": "bnt뉴스 — ‘쇼미더머니’ 빌스택스, 대마 구매·투약 혐의로 불구속 기소",
+      "link": "https://www.bntnews.co.kr/article/view/bnt202610210208"
+     },
+     {
+      "title": "텐아시아 — '대마 투약 혐의' 40대 유명 래퍼, 정체 밝혀졌다…'쇼미' 출신 빌스택스",
+      "link": "https://www.tenasia.co.kr/article/2026102159114"
+     },
+     {
+      "title": "톱스타뉴스 — 식케이 이어 마약 투약 혐의로 기소된 '쇼미더머니' 출연 40대 유명 래퍼",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16252885"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792561418/qsdyjbkwk3u96n6uhjnu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792561418/rshjrashikkqukxrogda.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792561420/gxnae2i5xisz65fmyxu5.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792561420/sxdbfjtndtevkfsgkehb.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792561418/qsdyjbkwk3u96n6uhjnu.jpg"
+     },
+     "at": "2026-10-21T14:43+09:00",
+     "v": {
+      "A": "ecfb7538",
+      "B": "0d3d6b30",
+      "C": "57e8d511"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -663,11 +762,11 @@
     "left": 6,
     "need_today": 2,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-21T13:27+09:00"
+  "at": "2026-10-21T14:43+09:00"
  },
  "slots": {
   "basis": 205,
