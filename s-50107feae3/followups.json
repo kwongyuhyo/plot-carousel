@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22 01:18 KST",
+ "generated_at": "2026-10-22 02:30 KST",
  "cards": [
   {
    "id": "6e5dd687",
@@ -817,6 +817,65 @@
    },
    "made_at": "2026-10-22T01:18+09:00",
    "expires": "2026-10-25T01:18+09:00"
+  },
+  {
+   "id": "7a1b074c",
+   "key": "dev:ph1:2026-10-21",
+   "kind": "dev",
+   "kind_label": "새 소식",
+   "who": [
+    "ph1"
+   ],
+   "origin": {
+    "head": "래퍼 pH-1과 아이브 레이의 SNS 소통을 두고 온라인이 갈렸습니다.",
+    "mult": 73.22,
+    "url": "https://www.instagram.com/p/Dcz7Gujj_uK/",
+    "at": "2026-09-03T13:11+09:00"
+   },
+   "evidence": [
+    {
+     "from": "매거진 @ageofband",
+     "at": "2026-10-21T20:15+09:00",
+     "title": "#AoB #싱싱음악 #生生音樂"
+    }
+   ],
+   "news": [],
+   "plans": [
+    {
+     "format": "그 후",
+     "corner": "followup",
+     "title": "4월부터 10월까지, 3U 이후",
+     "angle": "4월 [PURPLE TAPE] 발매부터 8월 게시물, [STUCK!], 9월 보도까지 시간순으로 짚습니다.",
+     "why": "새 소식이 붙은 지금, 달라진 점을 한 번에 정리할 때입니다.",
+     "check": "확인: 10월 새 소식의 내용, 9월 2일 보도 속 양측 소속사 입장"
+    },
+    {
+     "format": "관계도",
+     "corner": "followup",
+     "title": "3U에 엮인 사람들",
+     "angle": "pH-1, 릴보이, BIG Naughty, Woodie Gochild와 레이가 이 곡으로 어떻게 이어지는지 그립니다.",
+     "why": "논란의 출발점이 된 곡이라 참여진 구도부터 다시 볼 만합니다.",
+     "check": "확인: 레이와 참여 아티스트 사이의 공식 관계는 자료에 없음"
+    },
+    {
+     "format": "오늘의 노래",
+     "corner": "song",
+     "title": "오늘의 노래: 〈3U",
+     "angle": "논란의 배경음악이 된 [〈3U]에서 pH-1이 참여한 대목을 곡 한 곡으로 소개합니다.",
+     "why": "이야기의 출발이 된 곡이라 음악 자체로 돌아갈 때입니다.",
+     "check": "확인: pH-1 파트 구간과 음원 사용 가능 여부"
+    }
+   ],
+   "score": 7.0,
+   "preempt": {
+    "score": 0,
+    "mags_3d": 1,
+    "plot_days": 4,
+    "hot": false,
+    "line": "다른 매거진 3일 안 1곳(ageofband) · PLOT 4일 전 다룸"
+   },
+   "made_at": "2026-10-22T02:30+09:00",
+   "expires": "2026-10-25T02:30+09:00"
   }
  ]
 }
