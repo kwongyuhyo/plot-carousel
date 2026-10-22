@@ -4677,6 +4677,8 @@ function bindPlay() {
   };
   $('#pvPlay').onclick = () => openPlay(Math.max(0, blocks.indexOf(blocks[active] || blocks[0])));
   window.addEventListener('resize', ppFit);
+  // 아래 버튼·자막 칸이 생기고 사라지면 화면 칸 크기가 바뀐다 — 그때마다 글자 판을 다시 맞춘다
+  try { new ResizeObserver(() => ppFit()).observe($('#ppFrame')); } catch (_) {}
   document.addEventListener('keydown', (e) => {
     if ($('#pp').hidden) return;
     if (e.target && e.target.tagName === 'INPUT') return;
@@ -4700,9 +4702,9 @@ document.addEventListener('DOMContentLoaded', bindPlay);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.22 22:21';
+    a.title = '판 10.22 22:43';
     var ver = document.createElement('span');
-    ver.textContent = '10.22 22:21';
+    ver.textContent = '10.22 22:43';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
