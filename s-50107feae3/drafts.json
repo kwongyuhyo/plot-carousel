@@ -107,7 +107,12 @@
      }
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DeyEnOemYqb/",
+    "cover": "A",
+    "at": "2026-10-22T12:59+09:00"
+   }
   },
   {
    "source": {
@@ -387,7 +392,7 @@
  "corners": {
   "week": "10/19~10/25",
   "days_left": 4,
-  "done": 7,
+  "done": 8,
   "goal": 28,
   "corners": [
    {
@@ -471,18 +476,18 @@
     "key": "news",
     "name": "소식",
     "weekly": 7,
-    "done": 5,
-    "left": 2,
+    "done": 6,
+    "left": 1,
     "need_today": 1,
     "next_no": null,
     "drafts": 1,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-22T12:27+09:00"
+  "at": "2026-10-22T12:59+09:00"
  },
  "slots": {
-  "basis": 209,
+  "basis": 210,
   "card": [
    {
     "from": 18,
