@@ -2289,6 +2289,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     chat: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20.7 16.3A9 9 0 1 0 17 20l3.9 1-1-3.9-.2-.8z"/></svg>',
     send: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 3 9.2 10.2M22 3l-6.8 18-4-8.4L3 9.6z"/></svg>',
     save: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M19 21l-7-5-7 5V3h14z"/></svg>',
+    photo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.6"/><path d="M19.5 4.5v3M18 6h3"/></svg>',
     play: '<svg viewBox="0 0 24 24" width="26" height="26" fill="#fff"><path d="M8 5v14l11-7z"/></svg>'
   };
   function toast(t) {
@@ -2399,7 +2400,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var cap = captionOf(it, 'card');
     return '<article class="ig">' + postHead(it, 'card', cd) + media +
       '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글" data-cmt="d:' + i + '">' + IC.chat +
-      '</button><button aria-label="공유" data-share="' + i + ':card">' + IC.send + '</button><span class="sp"></span><button aria-label="저장" data-save="' + i + ':card">' + IC.save + '</button></div>' +
+      '</button><button aria-label="공유" data-share="' + i + ':card">' + IC.send + '</button>' +
+      (it.key && !DR_DAY ? '<button aria-label="사진 바꾸기" title="보이는 장의 사진 바꾸기" data-ps="' + i + '">' + IC.photo + '</button>' : '') +
+      '<span class="sp"></span><button aria-label="저장" data-save="' + i + ':card">' + IC.save + '</button></div>' +
       cov + '<div class="igc cl" data-cap><b>plot_music</b> ' + esc(cap) + '</div>' +
       (cap.length > 60 ? '<button class="more" data-morecap>더 보기</button>' : '') + pubMark(it) + evBar(it, i) + postInfo(it, cd) + '</article>';
   }
@@ -3467,6 +3470,30 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     toast((label || '보냅니다') + ' — 텔레그램이 열리면 보내기(시작)를 눌러 주세요');
     viaTelegram(code);
   }
+  /* 사진 바꾸기 (10/22 규효 "갈아엎지 말고 사진만 몇 번 바꿔 보게") — 지금 보이는 장의 사진을 맥이 다음 후보로 바꾸고
+     미리보기를 다시 그려 올린다 (collectors/app_actions ps · scripts/photo_swap). 바뀌면 이 화면이 저절로 새로 고친다. */
+  function psBlocks(it) { return (String((it.card || {}).form || '').match(/^\[(커버|슬라이드)\]/gm) || []).length; }
+  function photoSwap(i) {
+    var it = (DR && DR.items || [])[i]; if (!it || !it.key) return;
+    var tr = document.querySelector('[data-track="' + i + '"]');
+    var k = tr ? Math.round(tr.scrollLeft / Math.max(1, tr.clientWidth)) : 0;
+    if (k >= psBlocks(it)) { toast('마지막 장은 사진이 없습니다'); return; }
+    plotAction('ps-' + it.key + '-' + k, (k ? (k + 1) + '번째 장' : '표지') + ' 사진 바꾸기', true);
+    psWatch(it.key, JSON.stringify(((it.card || {}).preview || {}).slides || []));
+  }
+  var PS_T = {};
+  function psWatch(key, old) {
+    clearInterval(PS_T[key]); var n = 0;
+    PS_T[key] = setInterval(function () {
+      if (++n > 24) { clearInterval(PS_T[key]); return; }          // 8분까지 본다
+      fetch('./drafts.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+        var x = ((d && d.items) || []).filter(function (y) { return y.key === key; })[0];
+        if (x && JSON.stringify(((x.card || {}).preview || {}).slides || []) !== old) {
+          clearInterval(PS_T[key]); loadDrafts(); toast('📷 사진을 바꿨습니다');
+        }
+      }).catch(function () {});
+    }, 20000);
+  }
   function sheetOf(title, acts, onPick) {
     var sh = document.createElement('div'); sh.className = 'sheet';
     sh.innerHTML = '<div class="pn"><div class="hd"></div>' + (title ? '<div style="padding:0 20px 6px;font-size:13px;color:var(--dim);white-space:pre-wrap;max-height:45vh;overflow:auto">' + esc(title) + '</div>' : '') +
@@ -3803,6 +3830,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (dd) { drDay(dd.getAttribute('data-drday')); return; }
     var vm = e.target.closest('[data-vmode]');
     if (vm) { try { localStorage.setItem(DR_VIEW, vm.getAttribute('data-vmode')); } catch (x) {} renderDrafts(); return; }
+    var psb = e.target.closest('[data-ps]');
+    if (psb) { photoSwap(Number(psb.getAttribute('data-ps'))); return; }
     var shb = e.target.closest('[data-share]');
     if (shb) { var sp = shb.getAttribute('data-share').split(':'); openSheet(Number(sp[0]), sp[1]); return; }
     var svb = e.target.closest('[data-save]');
@@ -3918,9 +3947,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.22 22:43';
+    a.title = '판 10.23 03:02';
     var ver = document.createElement('span');
-    ver.textContent = '10.22 22:43';
+    ver.textContent = '10.23 03:02';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
