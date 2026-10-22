@@ -291,9 +291,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792630431/keo4esimgwnvt2cti10m.jpg",
      "key": "QXv_cidwUJA@103.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-22T09:54+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792630628/plot_studio/mttg6iy45ecesvatk9wj.mp4",
+     "at": "2026-10-22T09:57+09:00",
+     "file": "BulAnHan_NeuKkimI_De_JeoLang_Han_Mom_GatA_Feature_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "SPOTLIGHT",
@@ -472,7 +473,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-22T09:54+09:00"
+  "at": "2026-10-22T09:57+09:00"
  },
  "slots": {
   "basis": 209,
