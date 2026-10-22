@@ -917,6 +917,106 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-013e7717",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/p/Dey06uJE937/?psln=MXVubnRmaHdpcHcwNQ==",
+    "image": null,
+    "head": "명재현, 이광수 버블 두고 한 '고객 유치' 표현 위버스 라이브에서 사과",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-22T21:29+09:00",
+   "key": "caefdc07",
+   "by": "claude",
+   "subjects": [
+    "보이넥스트도어",
+    "명재현"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "명재현이 이광수 버블을 두고 한 '고객 유치' 표현을 위버스 라이브에서 직접 사과",
+    "why": "팬을 고객으로 부를 수 있나라는 논쟁이 붙어 규효가 맡긴 화제 — 사과한 말 중심으로 짧게"
+   },
+   "added": "claude",
+   "added_at": "2026-10-22T21:29+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n보이넥스트도어(@boynextdoor_official) 명재현이 '고객 유치' 발언을 사과했습니다.\n\n명재현은 최근 팬들에게 보낸 메시지에서 버블을 시작한 이광수를 두고 \"고객 유치 능력이 말이 안 된다\"며 재능의 영역이라고 말했는데요, 팬을 고객으로 생각하지 않는 자신은 따라 하기 어렵다는 말이 이어지면서 선배의 팬 소통을 장사에 빗댄 것처럼 읽힌다는 지적이 나왔습니다.\n\n명재현은 21일 위버스 라이브에서 존경하고 배우고 싶다는 뜻이었는데 표현을 잘못 골랐다고 밝혔습니다. 사과가 오히려 이광수에게 피해가 될까 망설였지만, 죄송한 건 죄송하다고 하는 게 맞다며 앞으로 더 조심하겠다고 고개를 숙였습니다.\n\n#PLOT #보이넥스트도어 #명재현 #이광수 #버블\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792672184/idsfj0gvlpealee5tnma.jpg\n제목: 보넥도 명재현,|'고객 유치' 발언 사과\n부제: 이광수 버블을 두고 한 말\n출처: 머니투데이\n",
+    "caption": "보이넥스트도어(@boynextdoor_official) 명재현이 '고객 유치' 발언을 사과했습니다.\n\n명재현은 최근 팬들에게 보낸 메시지에서 버블을 시작한 이광수를 두고 \"고객 유치 능력이 말이 안 된다\"며 재능의 영역이라고 말했는데요, 팬을 고객으로 생각하지 않는 자신은 따라 하기 어렵다는 말이 이어지면서 선배의 팬 소통을 장사에 빗댄 것처럼 읽힌다는 지적이 나왔습니다.\n\n명재현은 21일 위버스 라이브에서 존경하고 배우고 싶다는 뜻이었는데 표현을 잘못 골랐다고 밝혔습니다. 사과가 오히려 이광수에게 피해가 될까 망설였지만, 죄송한 건 죄송하다고 하는 게 맞다며 앞으로 더 조심하겠다고 고개를 숙였습니다.\n\n#PLOT #보이넥스트도어 #명재현 #이광수 #버블",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792672184/idsfj0gvlpealee5tnma.jpg",
+      "credit": "머니투데이",
+      "from": "https://thumb.mt.co.kr/cdn-cgi/image/f=avif/21/2026/10/2026102215522080670_1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792672186/ossu7xwbfg2itegdefrg.jpg",
+      "credit": "MHN",
+      "from": "https://cdn.mhnse.com/mhnsports/2026/10/22122511/thumb_ccms_76910.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "보넥도 명재현,|'고객 유치' 발언 사과",
+      "sub": "이광수 버블을 두고 한 말"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "이광수 버블 두고|명재현이 고개 숙였다",
+      "sub": "21일 위버스 라이브"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "\"죄송한 건|죄송하다고 하는 게 맞다\"",
+      "sub": "보이넥스트도어 명재현"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지 사진: 머니투데이 기사 대표 사진(명재현·이광수 나란히, 시상식 포토월로 보임) — 명재현 단독 사진이 사진 DB에 없어 대신 씀. 스틸 규칙에 걸리면 교체",
+     "사과 원본이 위버스 라이브라 숏폼은 비움 — 유튜브에 원본이 없음"
+    ],
+    "research": [
+     {
+      "title": "뉴스핌 — 보넥도 명재현, 이광수 팬 소통 두고 '고객 유치' 표현…결국 사과",
+      "link": "https://www.newspim.com/news/view/20261022000558"
+     },
+     {
+      "title": "TV리포트 — \"팬 소통=고객 유치?\"…이광수 버블 두고 한 말→3일 만 사과",
+      "link": "https://tvreport.co.kr/entertainment/article/1085017/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792672189/ctbjchwzljv8ekanbkvl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792672189/xfqtdniws2chkdpefr2k.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792672192/ebyzli9p7lq3ir8vfnph.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792672192/tp6vcfhftvyflqdjxm0y.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792672189/ctbjchwzljv8ekanbkvl.jpg"
+     },
+     "at": "2026-10-22T21:29+09:00",
+     "v": {
+      "A": "e88278b3",
+      "B": "3db4bc87",
+      "C": "3f496d27"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1011,11 +1111,11 @@
     "left": 0,
     "need_today": 0,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-22T18:35+09:00"
+  "at": "2026-10-22T21:29+09:00"
  },
  "slots": {
   "basis": 211,
@@ -1032,7 +1132,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.81,
+    "mult": 1.8,
     "median": 1.05,
     "n": 9
    },
