@@ -379,13 +379,9 @@
      "key": "xEy46jQlSOA@1066.0"
     },
     "rendered": {
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792630881/plot_studio/u9f1ub0poegzho9vk7gc.mp4",
-     "at": "2026-10-22T10:01+09:00",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792661584/plot_studio/kw3f6kfvss4azq4f8dk4.mp4",
+     "at": "2026-10-22T18:33+09:00",
      "file": "OSeYo_JangNanHaessNe_JinJja_On_GeoYeYo_Feature_no_lyrics__cta.mp4"
-    },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-22T18:26+09:00"
     }
    },
    "corner_name": "그 말",
@@ -826,6 +822,105 @@
     }
    },
    "corner_name": "다시 보기"
+  },
+  {
+   "source": {
+    "id": "claude:brk-bf64b009",
+    "account": "@갈등·반응",
+    "url": "https://isplus.com/article/view/isp202610220187",
+    "image": null,
+    "head": "'민희진 효과'를 어떻게 셀 것인가 — 330억 손배소 6차 변론의 쟁점",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-22T18:34+09:00",
+   "key": "72f0ba6b",
+   "by": "claude",
+   "subjects": [
+    "민희진"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "330억 손배소 6차 변론 — 재판부가 '민희진 효과'를 감정의 핵심으로 꼽았다",
+    "why": "오늘 변론에서 '민희진 없으면 매출 0원?' 공방이 기사·반응으로 번짐"
+   },
+   "added": "claude",
+   "added_at": "2026-10-22T18:34+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n'민희진(@min.hee.jin) 효과'를 어떻게 셀 것인가가 법정의 쟁점이 됐습니다.\n\n어도어가 뉴진스(@newjeans_official) 전 멤버 다니엘과 그 가족, 민희진 전 대표를 상대로 낸 330억 원대 손해배상 소송의 6차 변론이 22일 서울중앙지법에서 열렸는데요, 뉴진스가 정상적으로 활동했다면 얻었을 수익을 감정하면서 민 전 대표의 기여를 어떻게 반영할지를 두고 양측이 맞섰습니다.\n\n민 전 대표 측은 창작자로서의 가치는 대체할 수 없고 숫자로 따질 수도 없다고 했고, 어도어 측은 그 논리라면 민희진이 없을 때 매출이 0원이라는 말이 된다며 경험을 쌓은 멤버들에게 프로듀서 한 명이 결정적이라고 보긴 어렵다고 반박했습니다.\n\n재판장은 이것이 \"민희진 효과인지, 사업적인 효과인지, 두 가지가 결합된 효과인지\" 양측이 논리를 마련해 달라고 당부했습니다.\n\n#PLOT #뉴진스 #민희진 #다니엘 #어도어\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792661672/mcxlo850aumuob6eihtp.jpg\n제목: '민희진 효과',|숫자로 셀 수 있나\n부제: 어도어·다니엘 330억 손배소 6차 변론\n출처:\n",
+    "caption": "'민희진(@min.hee.jin) 효과'를 어떻게 셀 것인가가 법정의 쟁점이 됐습니다.\n\n어도어가 뉴진스(@newjeans_official) 전 멤버 다니엘과 그 가족, 민희진 전 대표를 상대로 낸 330억 원대 손해배상 소송의 6차 변론이 22일 서울중앙지법에서 열렸는데요, 뉴진스가 정상적으로 활동했다면 얻었을 수익을 감정하면서 민 전 대표의 기여를 어떻게 반영할지를 두고 양측이 맞섰습니다.\n\n민 전 대표 측은 창작자로서의 가치는 대체할 수 없고 숫자로 따질 수도 없다고 했고, 어도어 측은 그 논리라면 민희진이 없을 때 매출이 0원이라는 말이 된다며 경험을 쌓은 멤버들에게 프로듀서 한 명이 결정적이라고 보긴 어렵다고 반박했습니다.\n\n재판장은 이것이 \"민희진 효과인지, 사업적인 효과인지, 두 가지가 결합된 효과인지\" 양측이 논리를 마련해 달라고 당부했습니다.\n\n#PLOT #뉴진스 #민희진 #다니엘 #어도어",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661672/mcxlo850aumuob6eihtp.jpg",
+      "credit": "",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661368/nv0z6g30tyrpgukqsc0r.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "'민희진 효과',|숫자로 셀 수 있나",
+      "sub": "어도어·다니엘 330억 손배소 6차 변론"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "재판부가 물었다|'민희진 효과'는 얼마",
+      "sub": "어도어·다니엘 330억 손배소 6차 변론"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "어도어 \"민희진 없으면|매출 0원? 말 안 돼\"",
+      "sub": "330억 손배소 6차 변론"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진은 화보가 아니라 출근·현장 보도 사진으로 보이는데 credit 이 비어 있음 — 원출처(언론사·사진기자) 확인 후 크레딧 기입 필요",
+     "숏폼 비움 — 오늘 변론을 담은 당사자·레이블 영상이 없음 (뉴스 리포트 클립만 있어 말 장면이 아님)",
+     "표지 사진(민희진 화보 컷) 출처 표기 확인"
+    ],
+    "research": [
+     {
+      "title": "일간스포츠 — 어도어 “민희진 없으면 뉴진스 매출 0원? 말 안 돼”…재판부, 기여도 검토 요구",
+      "link": "https://isplus.com/article/view/isp202610220187"
+     },
+     {
+      "title": "데일리안 — “민희진 효과 산정 불가” vs “아티스트 가치가 우선”…어도어·다니엘 330억 손배소 총력전",
+      "link": "https://www.dailian.co.kr/news/view/1704924/%E2%80%9C%EB%AF%BC%ED%9D%AC%EC%A7%84-%ED%9A%A8%EA%B3%BC-%EC%82%B0%EC%A0%95-%EB%B6%88%EA%B0%80%E2%80%9D-vs-%E2%80%9C%EC%95%84-2026"
+     },
+     {
+      "title": "스타뉴스 — \"악의적 소송 지연\" 다니엘 측, 어도어와 날선 공방..손배 범위부터 '민희진 효과'까지",
+      "link": "https://starnewskorea.com/music/2026/10/22/2026102213175186423"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661675/s3awgiiaprlntakb3uuc.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661675/pfdrwvn4yawzazzabien.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661677/epdxyfqq0sy8sctriuvr.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661677/wuxiurzq6kqt7dvnzgxu.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661675/s3awgiiaprlntakb3uuc.jpg"
+     },
+     "at": "2026-10-22T18:34+09:00",
+     "v": {
+      "A": "12341bf2",
+      "B": "64b56106",
+      "C": "274e021a"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -920,11 +1015,11 @@
     "left": 0,
     "need_today": 0,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-22T18:28+09:00"
+  "at": "2026-10-22T18:34+09:00"
  },
  "slots": {
   "basis": 211,
