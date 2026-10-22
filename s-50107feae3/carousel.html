@@ -277,7 +277,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
@@ -285,7 +285,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     var rec = { id: id, kind: 'studio', draft_date: null, draft_key: null, source_id: op, verdict: {}, reason: '', rewrite: {},
       device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0], snapshot: sn };
     return req('plot_evals', { method: 'POST', body: JSON.stringify(rec), prefer: 'resolution=merge-duplicates,return=minimal' })
-      .then(function () { return wait(id, LIMIT[op] || 5 * 60e3, onStep); });
+      .then(function () { return wait(id, LIMIT[op] || 5 * 60e3, onStep).then(function (sn) { sn._id = id; return sn; }); });
   }
   function wait(id, limit, onStep) {
     var t0 = Date.now();
@@ -3400,9 +3400,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.22 22:06';
+    a.title = '판 10.22 22:21';
     var ver = document.createElement('span');
-    ver.textContent = '10.22 22:06';
+    ver.textContent = '10.22 22:21';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

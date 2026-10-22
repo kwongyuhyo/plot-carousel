@@ -2263,6 +2263,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     try { localStorage.setItem('plot.form.handoff', form); } catch (e) {
       alert('저장소를 쓸 수 없어 넘길 수 없습니다 — 양식을 복사해 붙여넣어 주세요'); return;
     }
+    try {                                              // 10/22 미리 렌더한 완성본도 같이 넘긴다
+      var rdn = kind === 'shorts' && ((it.shorts || {}).rendered || {});
+      if (rdn && rdn.url) localStorage.setItem('plot.form.handoff.done', JSON.stringify({ url: rdn.url, at: rdn.at || '' }));
+      else localStorage.removeItem('plot.form.handoff.done');
+    } catch (e) {}
     drMark((it.source || {}).id + ':' + kind);
     location.href = kind === 'card' ? 'carousel.html' : 'shorts.html';
   }
@@ -3913,9 +3918,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.22 22:06';
+    a.title = '판 10.22 22:21';
     var ver = document.createElement('span');
-    ver.textContent = '10.22 22:06';
+    ver.textContent = '10.22 22:21';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
