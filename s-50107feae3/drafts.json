@@ -368,9 +368,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792630438/myqam7qtbl9pslrzwfgv.jpg",
      "key": "xEy46jQlSOA@1066.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-22T09:54+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792630881/plot_studio/u9f1ub0poegzho9vk7gc.mp4",
+     "at": "2026-10-22T10:01+09:00",
+     "file": "OSeYo_JangNanHaessNe_JinJja_On_GeoYeYo_Feature_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "그 말",
@@ -473,7 +474,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-22T09:57+09:00"
+  "at": "2026-10-22T10:01+09:00"
  },
  "slots": {
   "basis": 209,
