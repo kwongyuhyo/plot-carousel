@@ -1171,6 +1171,129 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-56fe8eac",
+    "account": "@규효 공유 · @outtakemusic",
+    "url": "https://www.instagram.com/p/DeymS34ku0A/?exln=MTkyZndvdmF4M3ZqaQ==",
+    "image": null,
+    "head": "SYSTEM SEOUL 의류 홍보 속 AI 지드래곤 이미지 논란",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-23T03:05+09:00",
+   "key": "208d21b2",
+   "by": "claude",
+   "subjects": [
+    "SYSTEM SEOUL",
+    "지드래곤"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "SYSTEM SEOUL 의류 홍보에 AI로 만든 것으로 알려진 지드래곤 이미지 — 실존 아티스트 초상 상업 사용 논란",
+    "why": "규효 맡기기 · 아웃테이크·HHP 등 매거진들이 같은 날 다룬 화제"
+   },
+   "added": "claude",
+   "added_at": "2026-10-23T03:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\nSYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrgn)이 모델처럼 등장했습니다.\n\n실제 촬영이 아니라 AI로 만든 이미지라는 이야기가 나오면서 온라인에서 논란이 일고 있는데요, 지드래곤이 직접 옷을 입은 듯한 연출을 두고 실존 아티스트의 얼굴을 상업 홍보에 써도 되느냐는 물음이 이어지고 있습니다.\n\nSYSTEM SEOUL은 2000년대 초중반 음악을 샘플링한 [SS-POP] 시리즈로 이름을 알린 서울의 힙합 크루입니다.\n\nSYSTEM SEOUL과 지드래곤 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #시스템서울 #SYSTEMSEOUL #지드래곤 #AI이미지 #초상권\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792692350/sz28hs4edzyk4q3mhilm.jpg\n제목: 시스템서울 굿즈 홍보에|등장한 AI 지드래곤\n부제: 실존 아티스트 초상 사용 논란\n출처:\n",
+    "caption": "SYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrgn)이 모델처럼 등장했습니다.\n\n실제 촬영이 아니라 AI로 만든 이미지라는 이야기가 나오면서 온라인에서 논란이 일고 있는데요, 지드래곤이 직접 옷을 입은 듯한 연출을 두고 실존 아티스트의 얼굴을 상업 홍보에 써도 되느냐는 물음이 이어지고 있습니다.\n\nSYSTEM SEOUL은 2000년대 초중반 음악을 샘플링한 [SS-POP] 시리즈로 이름을 알린 서울의 힙합 크루입니다.\n\nSYSTEM SEOUL과 지드래곤 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #시스템서울 #SYSTEMSEOUL #지드래곤 #AI이미지 #초상권",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692350/sz28hs4edzyk4q3mhilm.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792594038/w5a1d02tbfkgemcic95g.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791918373/wc0hyo0pes71lkzcwzvk.jpg",
+      "credit": "@systemseoul82",
+      "kind": "앨범커버",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747718822_17952221697219437_3157649105292591413_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oPxje-0y1Z4Q7kNvwFAkjPi&_nc_oc=AdoiyH3iHD8_fijd0RtEeW9-zLZlpn8-6VB8KuNNqFzDngVtuJIKRBNp2PotNEAwIeA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WfOyaYcp2JFHaTxFy5yNzg&oh=00_AQMt1HhwXpO2iYs6kw8oVrlomOEIpnvEAIoMT-8mLb0H4w&oe=6AD43C2C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792656882/xe4uhvz6xtwqj5fczgwx.jpg",
+      "credit": "신뢰",
+      "kind": "단체",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_qqmjgtp4/auto_pdb_시스템서울_단체 프로필_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692350/sz28hs4edzyk4q3mhilm.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792594038/w5a1d02tbfkgemcic95g.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791918373/wc0hyo0pes71lkzcwzvk.jpg",
+      "credit": "@systemseoul82",
+      "kind": "앨범커버",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747718822_17952221697219437_3157649105292591413_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oPxje-0y1Z4Q7kNvwFAkjPi&_nc_oc=AdoiyH3iHD8_fijd0RtEeW9-zLZlpn8-6VB8KuNNqFzDngVtuJIKRBNp2PotNEAwIeA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WfOyaYcp2JFHaTxFy5yNzg&oh=00_AQMt1HhwXpO2iYs6kw8oVrlomOEIpnvEAIoMT-8mLb0H4w&oe=6AD43C2C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792656882/xe4uhvz6xtwqj5fczgwx.jpg",
+      "credit": "신뢰",
+      "kind": "단체",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_qqmjgtp4/auto_pdb_시스템서울_단체 프로필_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "시스템서울 굿즈 홍보에|등장한 AI 지드래곤",
+      "sub": "실존 아티스트 초상 사용 논란"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "시스템서울,|지드래곤 AI 이미지 논란",
+      "sub": "굿즈 홍보 이미지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 아웃테이크 게시물은 열리지 않아 hhp_mag 캡션('굿즈 홍보에 AI 이미지')으로만 대조 — '의류'→'굿즈'로 고치고, 샘플 무단 사용과 엮은 문단·표지 C(나무위키 한 곳뿐, 크루를 '또 그랬다' 서사로 몲)는 뺌. 기사 0건이라 '양측 입장 없음'은 발행 직전 다시 확인",
+     "SYSTEM SEOUL 공식 인스타(systemseoul82) 10/22 캐러셀이 문제의 이미지인지, 아직 올라 있는지 눈으로 확인 — 기사는 아직 없음",
+     "지드래곤 측(갤럭시코퍼레이션) 입장 나왔는지 — 나오면 마지막 줄 교체"
+    ],
+    "research": [
+     {
+      "title": "인스타그램 게시물 — outtakemusic (10/22)",
+      "link": "https://www.instagram.com/p/DeymS34ku0A/"
+     },
+     {
+      "title": "인스타그램 게시물 — hhp_mag (10/22)",
+      "link": "https://www.instagram.com/p/Dey_YuME5G5/"
+     },
+     {
+      "title": "SYSTEM SEOUL - 나무위키",
+      "link": "https://namu.wiki/w/SYSTEM%20SEOUL"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692353/p07sgbnpfrflxkglpkvw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692353/pp0ognit12wwh2hols1b.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692356/u7qv2dzxk7x7hgpqxgqt.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692353/p07sgbnpfrflxkglpkvw.jpg"
+     },
+     "at": "2026-10-23T03:05+09:00",
+     "v": {
+      "A": "9d006c98",
+      "B": "4c7fed9a"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1265,11 +1388,11 @@
     "left": 0,
     "need_today": 0,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T03:02+09:00"
+  "at": "2026-10-23T03:05+09:00"
  },
  "slots": {
   "basis": 212,
