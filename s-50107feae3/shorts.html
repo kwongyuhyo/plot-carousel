@@ -204,6 +204,45 @@ header .count{
 .previewCol.big .stage{max-width:none; width:auto; height:76vh; cursor:zoom-out}
 .previewCol.big .side{text-align:center; max-width:420px}
 
+
+/* ── 재생 미리보기 (10/22 규효 "미리보기가 잘 안 되는 게 불편 — 편하게") ───────────
+   고른 구간을 9:16 으로 잘라 돌리고 그 위에 완성본 글자(로고·카테고리·1~3줄·출처)를
+   얹는다. 1~3줄은 완성본처럼 처음 6초(글자시간이 있으면 그 때)만 보인다.
+   렌더(3~7분)를 기다리지 않고 '이렇게 나온다' 를 바로 본다. */
+.ppSheet{position:fixed; inset:0; z-index:75; background:#000; display:flex; flex-direction:column;
+  padding:env(safe-area-inset-top) 0 calc(8px + env(safe-area-inset-bottom)); overscroll-behavior:contain}
+.ppSheet[hidden]{display:none}
+.ppTop{display:flex; align-items:center; gap:10px; padding:10px 14px; color:#fff; flex:none}
+.ppTop b{font-size:14px; font-weight:800; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.ppTop span{font-size:12.5px; color:rgba(255,255,255,.6); font-family:ui-monospace,Menlo,monospace}
+.ppBtn{background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); color:#fff; border-radius:8px;
+  font:inherit; font-size:13.5px; padding:8px 12px; cursor:pointer; flex:none}
+.ppBtn:disabled{opacity:.35}
+.ppStage{flex:1; min-height:0; display:flex; align-items:center; justify-content:center; padding:0 10px}
+.ppFrame{position:relative; height:100%; max-height:100%; aspect-ratio:1080/1920; max-width:100%;
+  overflow:hidden; border-radius:10px; background:#111}
+.ppVideo{position:absolute; inset:0; overflow:hidden}
+.ppVideo>div,.ppVideo iframe{position:absolute; top:0; border:0; pointer-events:none; max-width:none}
+.ppVideo video,.ppVideo img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover}
+.ppOver{background:none; transform-origin:0 0; pointer-events:none}
+.ppOver::after{display:none}
+.ppOver .photo{display:none}
+.ppOver .line{transition:opacity .35s ease}
+.ppOver.metaOff .line{opacity:0}
+.ppTap{position:absolute; inset:0; background:none; border:0; cursor:pointer}
+.ppBig{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); font-size:54px; color:#fff;
+  text-shadow:0 2px 16px rgba(0,0,0,.6); pointer-events:none; opacity:0; transition:opacity .2s}
+.ppFrame.paused .ppBig{opacity:.9}
+.ppBar{height:4px; margin:10px 14px 0; background:rgba(255,255,255,.18); border-radius:2px; flex:none; position:relative; cursor:pointer}
+.ppBar i{position:absolute; left:0; top:0; bottom:0; background:#fff; border-radius:2px; width:0}
+.ppBar u{position:absolute; top:-3px; bottom:-3px; background:rgba(255,214,0,.35); border-radius:2px}
+.ppCtl{display:flex; gap:8px; justify-content:center; align-items:center; padding:10px 14px 0; flex:none; flex-wrap:wrap}
+.ppNote{color:rgba(255,255,255,.62); font-size:12.5px; text-align:center; padding:8px 18px 0; line-height:1.45; flex:none}
+.pvPlayBtn{margin-top:8px; width:100%; background:var(--accent); color:var(--bg); border:0; border-radius:9px;
+  font:inherit; font-size:14px; font-weight:800; padding:10px 12px; cursor:pointer}
+.pvPlayBtn[hidden]{display:none}
+@media(max-width:899px){ .pvPlayBtn{margin-top:6px; padding:9px 10px} }
+
 /* ── 블록 ─────────────────────────────────────────────── */
 .block{
   background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
@@ -1009,7 +1048,8 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <div class="side">
       <div class="pvHead"><b>미리보기</b><span id="pvWhich"></span></div>
       <div class="pvStatus" id="pvStatus"></div>
-      <div class="pvNote">완성본 1080×1920 기준 글자 배치입니다.<br>실제 영상·애니메이션은 제작 후 확인하세요.</div>
+      <div class="pvNote" id="pvNote">완성본 1080×1920 기준 글자 배치입니다.</div>
+      <button class="pvPlayBtn" id="pvPlay" type="button" hidden>▶ 구간 재생해서 보기</button>
     </div>
   </div>
 </div>
@@ -1183,6 +1223,39 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <div class="pkTip" id="svTip"></div>
     <button class="pkApply" id="svGo">저장</button>
   </div>
+</div>
+
+
+<!-- 재생 미리보기 — 고른 구간을 완성본 글자와 같이 돌려 본다 -->
+<div class="ppSheet" id="pp" tabindex="-1" hidden>
+  <div class="ppTop">
+    <button class="ppBtn" id="ppClose" aria-label="닫기">✕</button>
+    <b id="ppWho"></b><span id="ppTime"></span>
+  </div>
+  <div class="ppStage"><div class="ppFrame" id="ppFrame">
+    <div class="ppVideo" id="ppVideo"><div id="ppYT"></div></div>
+    <div class="frame ppOver" id="ppOver">
+      <div class="photo"></div>
+      <div class="grad"></div>
+      <div class="logo"></div>
+      <div class="catBar"></div>
+      <div class="cat"></div>
+      <div class="line hook"></div>
+      <div class="line artist"></div>
+      <div class="line title"></div>
+      <div class="src"></div>
+    </div>
+    <div class="ppBig">▶</div>
+    <button class="ppTap" id="ppTap" aria-label="재생·멈춤"></button>
+  </div></div>
+  <div class="ppBar" id="ppBar"><u id="ppMeta"></u><i id="ppFill"></i></div>
+  <div class="ppCtl">
+    <button class="ppBtn" id="ppPrev">◀ 이전 편</button>
+    <button class="ppBtn" id="ppSound">🔇 소리 켜기</button>
+    <button class="ppBtn" id="ppEdit">✂️ 구간 고치기</button>
+    <button class="ppBtn" id="ppNext">다음 편 ▶</button>
+  </div>
+  <div class="ppNote" id="ppNote"></div>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -2558,6 +2631,7 @@ function drawPreview(b) {
     photo.style.backgroundImage = '';
     frame.classList.remove('hasPhoto');
   }
+  ppSide(b);
 
 }
 let overflow = [];
@@ -4129,6 +4203,9 @@ function boot() {
   // 폰에서는 썸네일이 작다 — 탭하면 전체화면으로 키운다.
   const col = $('.previewCol');
   $('.stage').addEventListener('click', () => {
+    // 재생할 수 있으면 바로 재생 미리보기로 (10/22) — 아니면 예전처럼 크게
+    const cur = blocks[active] || blocks[0];
+    if (!col.classList.contains('big') && ppKind(cur)) { openPlay(blocks.indexOf(cur)); return; }
     col.classList.toggle('big');
     requestAnimationFrame(fitStage);
   });
@@ -4192,6 +4269,214 @@ function boot() {
 unitLoad();
 document.addEventListener('DOMContentLoaded', boot);
 
+
+/* ── 재생 미리보기 (10/22 규효 "미리보기가 잘 안 되는 게 불편 — 편하게") ──────────
+ * 작은 정지 그림 대신, 고른 구간을 9:16 으로 잘라 돌리고 완성본 글자를 그 위에 얹는다.
+ * 1~3줄(후킹·아티스트·제목)은 완성본처럼 처음 6초(글자시간이 있으면 그 때)만 보이고,
+ * 로고·카테고리·출처는 계속 있다. 구간 끝에 닿으면 처음으로 돌아간다.
+ * 유튜브는 구간 고르기와 같은 재생기, 올린 파일은 <video> 로.
+ */
+const PP = { i: -1, b: null, yt: null, ytReady: false, vid: null, a: 0, e: 0, mw: [0, 6], timer: null,
+             muted: true, paused: false, kind: '' };
+
+function ppKind(b) {
+  if (!b) return '';
+  if (ytId(b.url)) return 'yt';
+  if (isUpload(b.url)) return /\/image\/upload\//.test(b.url) ? 'img' : 'file';
+  return '';
+}
+function ppRange(b, dur) {
+  const a = toSec(b.start);
+  const e = toSec(b.end);
+  const A = a != null ? a : 0;
+  let E = e != null && e > A ? e : (dur ? dur : A + 15);
+  if (dur && E > dur) E = dur;
+  return [A, E];
+}
+function ppMetaWin(b, len) {
+  const t = (b.metaTime || '').trim();
+  const m = /^(.+?)\s*-\s*(.+)$/.exec(t);
+  if (!m) return [0, Math.min(6, len)];
+  const a = toSec(m[1].trim());
+  const e = /끝/.test(m[2]) ? len : toSec(m[2].trim());
+  return [a != null ? a : 0, e != null ? Math.min(e, len) : len];
+}
+function ppSide(b) {
+  const btn = $('#pvPlay'); if (!btn) return;
+  const k = ppKind(b);
+  btn.hidden = !k;
+  btn.textContent = k === 'img' ? '▶ 크게 보기' : '▶ 구간 재생해서 보기';
+  const note = $('#pvNote');
+  if (note) note.textContent = k ? '누르면 고른 구간이 완성본 글자와 같이 돌아갑니다.'
+                                 : '원본 주소를 넣으면 구간을 재생해서 볼 수 있어요.';
+}
+function ppNav() {
+  const ok = (j) => j >= 0 && j < blocks.length && ppKind(blocks[j]);
+  let p = -1, n = -1;
+  for (let j = PP.i - 1; j >= 0; j--) if (ok(j)) { p = j; break; }
+  for (let j = PP.i + 1; j < blocks.length; j++) if (ok(j)) { n = j; break; }
+  $('#ppPrev').disabled = p < 0; $('#ppNext').disabled = n < 0;
+  $('#ppPrev').hidden = $('#ppNext').hidden = blocks.length < 2;
+  $('#ppPrev').onclick = () => { if (p >= 0) openPlay(p); };
+  $('#ppNext').onclick = () => { if (n >= 0) openPlay(n); };
+}
+function ppFit() {
+  const fr = $('#ppFrame'); if (!fr || $('#pp').hidden) return;
+  const w = fr.clientWidth, h = fr.clientHeight;
+  $('#ppOver').style.transform = 'scale(' + (w / 1080) + ')';
+  if (PP.kind !== 'yt') return;
+  const node = document.getElementById('ppYT'); if (!node) return;
+  const fw = h * 16 / 9;
+  const shorts = /\/shorts\//.test(PP.b.url || '');
+  const c = cropOf(PP.b.crop);
+  const r = (shorts || c == null) ? 0.5 : c;
+  node.style.width = fw + 'px'; node.style.height = h + 'px';
+  node.style.left = (-r * Math.max(0, fw - w)) + 'px';
+}
+function ppNow() {
+  try {
+    if (PP.kind === 'yt') return PP.ytReady ? (PP.yt.getCurrentTime() || 0) : PP.a;
+    if (PP.kind === 'file' && PP.vid) return PP.vid.currentTime || 0;
+  } catch (_) {}
+  return PP.a;
+}
+function ppSeek(t) {
+  try {
+    if (PP.kind === 'yt' && PP.ytReady) PP.yt.seekTo(t, true);
+    if (PP.kind === 'file' && PP.vid) PP.vid.currentTime = t;
+  } catch (_) {}
+}
+function ppSetPaused(v) {
+  PP.paused = v;
+  $('#ppFrame').classList.toggle('paused', v);
+  try {
+    if (PP.kind === 'yt' && PP.ytReady) v ? PP.yt.pauseVideo() : PP.yt.playVideo();
+    if (PP.kind === 'file' && PP.vid) v ? PP.vid.pause() : PP.vid.play().catch(() => {});
+  } catch (_) {}
+}
+function ppSetMuted(v) {
+  PP.muted = v;
+  $('#ppSound').textContent = v ? '🔇 소리 켜기' : '🔊 소리 끄기';
+  try {
+    if (PP.kind === 'yt' && PP.ytReady) v ? PP.yt.mute() : PP.yt.unMute();
+    if (PP.kind === 'file' && PP.vid) PP.vid.muted = v;
+  } catch (_) {}
+}
+function ppTick() {
+  const len = Math.max(0.1, PP.e - PP.a);
+  let t = ppNow();
+  if (PP.kind !== 'img' && !PP.paused && (t > PP.e + 0.05 || t < PP.a - 0.6)) { ppSeek(PP.a); t = PP.a; }
+  const rel = Math.max(0, Math.min(len, t - PP.a));
+  $('#ppFill').style.width = (rel / len * 100) + '%';
+  const f = (x) => { x = Math.max(0, x); return Math.floor(x / 60) + ':' + String(Math.floor(x % 60)).padStart(2, '0'); };
+  $('#ppTime').textContent = PP.kind === 'img' ? '' : f(rel) + ' / ' + f(len);
+  $('#ppOver').classList.toggle('metaOff', PP.kind !== 'img' && !(rel >= PP.mw[0] && rel < PP.mw[1]));
+}
+async function openPlay(i) {
+  const b = blocks[i];
+  const kind = ppKind(b);
+  if (!kind) { toast('원본 주소를 먼저 넣어 주세요'); return; }
+  ppStop(true);
+  PP.i = i; PP.b = b; PP.kind = kind; PP.paused = false;
+  $('#pp').hidden = false;
+  document.body.style.overflow = 'hidden';
+  $('#ppWho').textContent = (blocks.length > 1 ? (i + 1) + '번 · ' : '') +
+    ((b.title || '').trim() || '제목 없음') + ((b.artist || '').trim() ? ' — ' + b.artist.trim() : '');
+  paintFrame($('#ppOver'), b);
+  const notes = [];
+  if (b.subs) notes.push('말자막은 제작할 때 받아써서 넣습니다 (여기엔 안 보여요).');
+  if ((b.lyr || '').trim()) notes.push('가사 자막은 제작할 때 들어갑니다.');
+  if (joinList(b).length) notes.push('이어 붙일 영상은 여기선 안 나오고, 첫 원본만 돕니다.');
+  if (kind === 'yt' && cropOf(b.crop) == null && !/\/shorts\//.test(b.url)) notes.push('가로 위치는 가운데로 보여 줍니다 — 완성본은 얼굴을 따라 자동으로 잡아요.');
+  $('#ppNote').textContent = notes.join(' ');
+  $('#ppEdit').hidden = kind !== 'yt';
+  ppNav();
+  const box = $('#ppVideo');
+  [...box.querySelectorAll('video,img')].forEach(n => n.remove());
+  const ytNode = document.getElementById('ppYT');
+  if (ytNode) ytNode.style.display = kind === 'yt' ? '' : 'none';
+  requestAnimationFrame(ppFit);
+  if (kind === 'img') {
+    const im = el('img'); im.src = b.url; box.prepend(im);
+    PP.a = 0; PP.e = 4; PP.mw = [0, 4];
+    $('#ppFrame').classList.remove('paused');
+  } else if (kind === 'file') {
+    const v = el('video'); v.src = b.url; v.playsInline = true; v.muted = PP.muted; v.preload = 'auto';
+    v.setAttribute('playsinline', ''); box.prepend(v); PP.vid = v;
+    v.addEventListener('loadedmetadata', () => {
+      [PP.a, PP.e] = ppRange(b, v.duration || 0);
+      PP.mw = ppMetaWin(b, PP.e - PP.a);
+      v.currentTime = PP.a;
+      if (!PP.paused) v.play().catch(() => ppSetPaused(true));
+    }, { once: true });
+    [PP.a, PP.e] = ppRange(b, 0); PP.mw = ppMetaWin(b, PP.e - PP.a);
+  } else {
+    [PP.a, PP.e] = ppRange(b, 0); PP.mw = ppMetaWin(b, PP.e - PP.a);
+    try { await ytApi(); } catch (e) { toast(e.message); return; }
+    const id = ytId(b.url);
+    if (!PP.yt) {
+      PP.ytReady = false;
+      PP.yt = new YT.Player('ppYT', {
+        videoId: id,
+        playerVars: { controls: 0, rel: 0, modestbranding: 1, playsinline: 1, disablekb: 1, iv_load_policy: 3,
+                      cc_load_policy: 0, autoplay: 1, mute: 1, start: Math.floor(PP.a), origin: location.origin },
+        events: {
+          onReady: () => {
+            PP.ytReady = true;
+            try { PP.yt.unloadModule('captions'); PP.yt.unloadModule('cc'); } catch (_) {}
+            const d = PP.yt.getDuration() || 0;
+            if (d) { [PP.a, PP.e] = ppRange(PP.b, d); PP.mw = ppMetaWin(PP.b, PP.e - PP.a); }
+            PP.yt.seekTo(PP.a, true);
+            ppSetMuted(PP.muted);
+            if (!PP.paused) PP.yt.playVideo();
+            ppFit();
+          },
+          onError: () => toast('이 영상은 미리 볼 수 없습니다 (비공개·지역제한)'),
+        },
+      });
+    } else if (PP.ytReady) {
+      PP.yt.loadVideoById({ videoId: id, startSeconds: PP.a });
+      ppSetMuted(PP.muted);
+      setTimeout(() => { const d = PP.yt.getDuration() || 0;
+        if (d) { [PP.a, PP.e] = ppRange(PP.b, d); PP.mw = ppMetaWin(PP.b, PP.e - PP.a); } }, 1200);
+    }
+  }
+  const len = Math.max(0.1, PP.e - PP.a);
+  const mu = $('#ppMeta');
+  mu.style.left = (PP.mw[0] / len * 100) + '%'; mu.style.width = (Math.max(0, PP.mw[1] - PP.mw[0]) / len * 100) + '%';
+  clearInterval(PP.timer);
+  PP.timer = setInterval(() => { if (!$('#pp').hidden) ppTick(); }, 100);
+  ppTick();
+  $('#pp').focus();
+}
+function ppStop(keep) {
+  clearInterval(PP.timer); PP.timer = null;
+  try { if (PP.yt && PP.ytReady) PP.yt.pauseVideo(); } catch (_) {}
+  if (PP.vid) { try { PP.vid.pause(); } catch (_) {} PP.vid.remove(); PP.vid = null; }
+  if (!keep) { $('#pp').hidden = true; document.body.style.overflow = ''; }
+}
+function bindPlay() {
+  if (!$('#pp')) return;
+  $('#ppClose').onclick = () => ppStop();
+  $('#ppTap').onclick = () => { if (PP.kind !== 'img') ppSetPaused(!PP.paused); };
+  $('#ppSound').onclick = () => ppSetMuted(!PP.muted);
+  $('#ppEdit').onclick = () => { const b = PP.b; ppStop(); if (b) openPicker(b); };
+  $('#ppBar').onclick = (e) => {
+    const r = e.currentTarget.getBoundingClientRect();
+    ppSeek(PP.a + (e.clientX - r.left) / r.width * (PP.e - PP.a));
+  };
+  $('#pvPlay').onclick = () => openPlay(Math.max(0, blocks.indexOf(blocks[active] || blocks[0])));
+  window.addEventListener('resize', ppFit);
+  document.addEventListener('keydown', (e) => {
+    if ($('#pp').hidden) return;
+    if (e.key === 'Escape') { e.preventDefault(); ppStop(); }
+    else if (e.key === ' ') { e.preventDefault(); $('#ppTap').click(); }
+    else if (e.key === 'ArrowRight' && !$('#ppNext').disabled) $('#ppNext').click();
+    else if (e.key === 'ArrowLeft' && !$('#ppPrev').disabled) $('#ppPrev').click();
+  });
+}
+document.addEventListener('DOMContentLoaded', bindPlay);
+
 </script>
 </body>
 </html>
@@ -4203,9 +4488,9 @@ document.addEventListener('DOMContentLoaded', boot);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.22 21:30';
+    a.title = '판 10.22 22:06';
     var ver = document.createElement('span');
-    ver.textContent = '10.22 21:30';
+    ver.textContent = '10.22 22:06';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
