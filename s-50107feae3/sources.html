@@ -554,6 +554,7 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .corn .cs span i{font-style:normal; opacity:.7; margin-left:3px}
 .ig .who span.crn{display:inline-block; width:auto; vertical-align:1px}
 .ig .crn{display:inline-block; margin-left:6px; padding:0 7px; border:1px solid var(--line); border-radius:999px; font-size:11px; color:var(--muted)}
+.ig .crn.pk{border-color:var(--pick); color:var(--pick); font-weight:700}
 .ig .pubd{margin:6px 14px 0; font-size:13px; color:var(--ok, #2e9e5b)}
 .ig .pubd.sch{color:var(--amber)}
 .fu{border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:12px 0}
@@ -3149,14 +3150,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var idx = items.map(function (_, i) { return i; });
     // 10/17 규효 "초안 생성한게 너무 밑에 떠" — 쓴 순서는 새로 쓴 것이 맨 위 (같은 회차 안에서는 쓴 차례대로)
     var at = function (it) { return String(it.added_at || it.made_at || ''); };
-    if (DR_SORT !== 'pub') return idx.sort(function (a, b) { return at(items[b]).localeCompare(at(items[a])) || a - b; });
+    if (DR_SORT !== 'pub') return idx.sort(function (a, b) { return pickRank(items[a]) - pickRank(items[b]) || at(items[b]).localeCompare(at(items[a])) || a - b; });
     var need = {};
     ((DR && DR.corners && DR.corners.corners) || []).forEach(function (c) { need[c.key] = Number(c.need_today || c.left || 0); });
     var g = function (it) { return { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] != null ? { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] : 2.5; };
     var done = function (it) { return (it.published || {}).permalink ? 1 : 0; };
     return idx.sort(function (a, b) {
       var x = items[a], y = items[b];
-      return done(x) - done(y) || g(x) - g(y) || (need[catOf(y)] || 0) - (need[catOf(x)] || 0) || a - b;
+      return done(x) - done(y) || pickRank(x) - pickRank(y) || g(x) - g(y) || (need[catOf(y)] || 0) - (need[catOf(x)] || 0) || a - b;
     });
   }
   function sortBar() {
@@ -3641,9 +3642,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
           (r.drafts ? '<i>초안 ' + esc(r.drafts) + '</i>' : '') + '</span>';
       }).join('') + '</div></div>';
   }
+  /* 10/23 「오늘 올릴 3」 — 편집 회차가 고른 셋. 아직 안 올린 것만 표시하고 맨 위로 */
+  function pickRank(it) { return it && it.pick && it.pick.rank && !((it.published || {}).permalink) ? Number(it.pick.rank) : 99; }
   function cornerTag(it) {
-    if (!it || !it.corner_name || it.corner === 'news') return '';
-    return '<span class="crn">' + esc(it.corner_name) + (it.corner_no ? ' #' + esc(it.corner_no) : '') + '</span>';
+    var pk = pickRank(it) < 99 ? '<span class="crn pk" title="' + esc((it.pick || {}).why || '') + '">★ 오늘 올릴 ' + esc(it.pick.rank) + '</span>' : '';
+    if (!it || !it.corner_name || it.corner === 'news') return pk;
+    return pk +
+    '<span class="crn">' + esc(it.corner_name) + (it.corner_no ? ' #' + esc(it.corner_no) : '') + '</span>';
   }
 
   /* ── 후속 기획 (collectors/followup_plans) ── */
@@ -3947,9 +3952,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 03:12';
+    a.title = '판 10.23 08:37';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 03:12';
+    ver.textContent = '10.23 08:37';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

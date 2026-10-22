@@ -385,7 +385,7 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 1
+   "corner_no": 2
   },
   {
    "source": {
@@ -568,7 +568,7 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 2
+   "corner_no": 3
   },
   {
    "source": {
@@ -649,7 +649,7 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 3
+   "corner_no": 4
   },
   {
    "source": {
@@ -1444,13 +1444,219 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-84be4b76",
+    "account": "@갈등·반응",
+    "url": "https://www.hankyung.com/article/202610239942H",
+    "image": null,
+    "head": "저스틴 비버, 13년 만에 아내 헤일리와 방한 — 성수동 스카이라크 팝업",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-23T08:37+09:00",
+   "key": "e28ec6f5",
+   "by": "claude",
+   "subjects": [
+    "저스틴 비버"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "2013년 첫 내한 공연 이후 13년 만에, 무대가 아니라 자기 브랜드 팝업으로 서울에 온 저스틴 비버",
+    "why": "23일 새벽 헤일리 비버와 입국 — 성수동 팝업 밤샘 줄과 함께 오늘 아침 기사·반응이 몰림"
+   },
+   "added": "claude",
+   "added_at": "2026-10-23T08:37+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n저스틴 비버가 13년 만에 한국에 왔습니다.\n\n2013년 첫 내한 공연 이후 공식적으로 확인된 방한이 없었는데요, 이번엔 무대가 아니라 자신의 패션 브랜드 스카이라크(SKYLRK)의 국내 첫 팝업 때문입니다. 23일 새벽 아내 헤일리 비버와 함께 인천국제공항으로 들어왔습니다.\n\n성수동 팝업은 비버가 직접 오기 전부터 붐볐습니다. 첫날 오전 10시 개장을 앞두고 새벽부터 줄이 늘어섰습니다. 13년 전엔 노래로 왔던 그가 이번엔 자기 옷으로 성수동에 줄을 세운 셈입니다.\n\n스카이라크 서울 팝업은 서울 성동구 성수동에서 25일까지 열립니다.\n\n#PLOT #저스틴비버 #헤일리비버 #스카이라크 #성수동팝업 #내한\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792712240/gskwzq57xrag2bfjfne9.jpg\n제목: 저스틴 비버,|13년 만에 한국 왔다\n부제: 헤일리 비버와 함께 · 성수동 스카이라크 팝업\n출처: 한국경제\n",
+    "caption": "저스틴 비버가 13년 만에 한국에 왔습니다.\n\n2013년 첫 내한 공연 이후 공식적으로 확인된 방한이 없었는데요, 이번엔 무대가 아니라 자신의 패션 브랜드 스카이라크(SKYLRK)의 국내 첫 팝업 때문입니다. 23일 새벽 아내 헤일리 비버와 함께 인천국제공항으로 들어왔습니다.\n\n성수동 팝업은 비버가 직접 오기 전부터 붐볐습니다. 첫날 오전 10시 개장을 앞두고 새벽부터 줄이 늘어섰습니다. 13년 전엔 노래로 왔던 그가 이번엔 자기 옷으로 성수동에 줄을 세운 셈입니다.\n\n스카이라크 서울 팝업은 서울 성동구 성수동에서 25일까지 열립니다.\n\n#PLOT #저스틴비버 #헤일리비버 #스카이라크 #성수동팝업 #내한",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712240/gskwzq57xrag2bfjfne9.jpg",
+      "credit": "한국경제",
+      "from": "https://img.hankyung.com/photo/202610/BF.46161960.1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565244/fyu2jibslknhghlxlf1w.jpg",
+      "credit": "@lilbieber",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/743995998_18928232611012190_6920148518090485289_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=okWpcRCO9BEQ7kNvwGtDwPe&_nc_oc=AdopuSdK_3C19DqO6lrKegLkVDLkGxinfzcjeOs6rBiuxXIkqdQUyocOf5643p2MeRg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=DMCnWAuVYJKe6tKw99EQlA&oh=00_AQMOsc6abddGhmLywXsIDkL-d2EudAvC2L0H74K8XGEltA&oe=6ADE3658"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476983/gqbbc0ughapt07n9mbeh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_7s0idhgk/auto_pdb_비버_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476992/ci5vhl4xbirpbzydvr8c.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_swxfc9px/auto_pdb_비버_인터뷰 화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712240/gskwzq57xrag2bfjfne9.jpg",
+      "credit": "한국경제",
+      "from": "https://img.hankyung.com/photo/202610/BF.46161960.1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565244/fyu2jibslknhghlxlf1w.jpg",
+      "credit": "@lilbieber",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/743995998_18928232611012190_6920148518090485289_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=okWpcRCO9BEQ7kNvwGtDwPe&_nc_oc=AdopuSdK_3C19DqO6lrKegLkVDLkGxinfzcjeOs6rBiuxXIkqdQUyocOf5643p2MeRg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=DMCnWAuVYJKe6tKw99EQlA&oh=00_AQMOsc6abddGhmLywXsIDkL-d2EudAvC2L0H74K8XGEltA&oe=6ADE3658"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476983/gqbbc0ughapt07n9mbeh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_7s0idhgk/auto_pdb_비버_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476992/ci5vhl4xbirpbzydvr8c.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_swxfc9px/auto_pdb_비버_인터뷰 화보_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "저스틴 비버,|13년 만에 한국 왔다",
+      "sub": "헤일리 비버와 함께 · 성수동 스카이라크 팝업"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "헤일리와 함께|서울 온 저스틴 비버",
+      "sub": "2013년 첫 내한 이후 13년 만"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "공연 말고 팝업으로,|저스틴 비버 방한",
+      "sub": "성수동 스카이라크 서울 · 25일까지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 중간 — K-POPIT 케이팝잇 (공항 직캠 · 자막 없음, 말이 없어 사건 한 줄 후킹)",
+     "표지 사진이 한국경제 기사 대표 사진(공항 현장)이다 — 사람이 비버 부부가 맞는지, 매체 워터마크가 없는지"
+    ],
+    "research": [
+     {
+      "title": "저스틴 비버, 아내와 한국 왔다…성수동 팝업엔 밤샘 대기줄 (한국경제)",
+      "link": "https://www.hankyung.com/article/202610239942H"
+     },
+     {
+      "title": "“설마 했는데 진짜 왔다”…저스틴 비버, ♥헤일리와 13년 만에 깜짝 내한 (스포츠서울)",
+      "link": "https://www.sportsseoul.com/news/read/1643476?ref=naver"
+     },
+     {
+      "title": "'설마 했는데'...저스틴 비버, 13년 만에 한국행 (마이데일리)",
+      "link": "https://www.mydaily.co.kr/page/view/2026102306365838803"
+     },
+     {
+      "title": "'새벽 1시부터 줄 섰다'…저스틴 비버 성수동 팝업에 '오픈런' (뉴시스)",
+      "link": "https://www.newsis.com/view/NISX20261022_0003836530"
+     },
+     {
+      "title": "저스틴비버X헤일리 비버, 인천공항 입국 (K-POPIT 케이팝잇)",
+      "link": "https://www.youtube.com/watch?v=9Ah-dTBEGuE"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712243/vh10njubdfw3pi1hnnnq.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712243/mx2nwrdzxnnkjuujzhwr.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712245/cim84zzlxtz8iirtnodn.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712245/idjqszhxs6kjomffyh4z.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712243/vh10njubdfw3pi1hnnnq.jpg"
+     },
+     "at": "2026-10-23T08:37+09:00",
+     "v": {
+      "A": "8736e0c1",
+      "B": "53ceff79",
+      "C": "5f2a9d25"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=9Ah-dTBEGuE\n구간: 0:10-0:50\n곡: 한국 입국\n아티스트: 13년 만에\n피처링:\n후킹: 저스틴 비버,\n출처: K-POPIT 케이팝잇\n자막: 자동",
+    "caption": "저스틴 비버가 13년 만에 한국 땅을 밟았습니다.\n\n23일 새벽 아내 헤일리 비버와 함께 인천국제공항으로 들어온 장면인데요, 2013년 첫 내한 공연 이후 공식적으로 확인된 첫 방한입니다. 비버는 자신의 브랜드 후드 재킷 차림이었습니다.\n\n이번 방한은 공연이 아니라 그의 패션 브랜드 스카이라크(SKYLRK)의 국내 첫 팝업 때문으로, 성수동 팝업은 25일까지 열립니다.\n\n#PLOT #저스틴비버 #헤일리비버 #스카이라크 #내한",
+    "hooks": {
+     "A": "저스틴 비버가 / 아내와 함께 / 한국에 왔습니다",
+     "B": "저스틴 비버, / 13년 만에 / 한국 입국",
+     "C": "헤일리와 함께 / 인천공항에 선 / 저스틴 비버"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=9Ah-dTBEGuE",
+     "credit": "K-POPIT 케이팝잇",
+     "range": [
+      10.0,
+      50.0
+     ]
+    },
+    "guided": {
+     "rec": "B",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 중간 — K-POPIT 케이팝잇 (공항 직캠 · 자막 없음, 말이 없어 사건 한 줄 후킹)",
+     "표지 사진이 한국경제 기사 대표 사진(공항 현장)이다 — 사람이 비버 부부가 맞는지, 매체 워터마크가 없는지"
+    ],
+    "research": [
+     {
+      "title": "저스틴 비버, 아내와 한국 왔다…성수동 팝업엔 밤샘 대기줄 (한국경제)",
+      "link": "https://www.hankyung.com/article/202610239942H"
+     },
+     {
+      "title": "“설마 했는데 진짜 왔다”…저스틴 비버, ♥헤일리와 13년 만에 깜짝 내한 (스포츠서울)",
+      "link": "https://www.sportsseoul.com/news/read/1643476?ref=naver"
+     },
+     {
+      "title": "'설마 했는데'...저스틴 비버, 13년 만에 한국행 (마이데일리)",
+      "link": "https://www.mydaily.co.kr/page/view/2026102306365838803"
+     },
+     {
+      "title": "'새벽 1시부터 줄 섰다'…저스틴 비버 성수동 팝업에 '오픈런' (뉴시스)",
+      "link": "https://www.newsis.com/view/NISX20261022_0003836530"
+     },
+     {
+      "title": "저스틴비버X헤일리 비버, 인천공항 입국 (K-POPIT 케이팝잇)",
+      "link": "https://www.youtube.com/watch?v=9Ah-dTBEGuE"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/9Ah-dTBEGuE/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712249/oppxdauvkfjfs1gdjvlt.jpg",
+     "key": "9Ah-dTBEGuE@10.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-23T08:37+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 3,
-  "done": 10,
+  "done": 13,
   "goal": 28,
   "corners": [
    {
@@ -1460,6 +1666,7 @@
     "done": 2,
     "left": 0,
     "need_today": 0,
+    "day": null,
     "next_no": 24,
     "drafts": 0,
     "why": "제작 맡기기로 맡길 때만 (10/20) — 나무위키만 보고 장 수 제한 없이"
@@ -1471,6 +1678,7 @@
     "done": 0,
     "left": 7,
     "need_today": 3,
+    "day": null,
     "next_no": 1,
     "drafts": 0,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
@@ -1479,10 +1687,11 @@
     "key": "mal",
     "name": "그 말",
     "weekly": 6,
-    "done": 0,
-    "left": 6,
+    "done": 1,
+    "left": 5,
     "need_today": 2,
-    "next_no": 1,
+    "day": null,
+    "next_no": 2,
     "drafts": 3,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
@@ -1493,6 +1702,7 @@
     "done": 0,
     "left": 2,
     "need_today": 1,
+    "day": null,
     "next_no": 1,
     "drafts": 1,
     "why": "해외 매체가 먼저 다룬 한국 아티스트 — 선점"
@@ -1504,6 +1714,7 @@
     "done": 0,
     "left": 1,
     "need_today": 1,
+    "day": null,
     "next_no": null,
     "drafts": 0,
     "why": "신곡 가사 속 샤라웃·디스 — 역대 1위(26만)가 이 결. 걸릴 때만"
@@ -1511,10 +1722,11 @@
    {
     "key": "again",
     "name": "다시 보기",
-    "weekly": 3,
+    "weekly": 2,
     "done": 0,
-    "left": 3,
+    "left": 2,
     "need_today": 1,
+    "day": null,
     "next_no": null,
     "drafts": 1,
     "why": "덜 터졌지만 좋았던 PLOT 글을 새 표지로 (리센느 730 → 4.7만)"
@@ -1526,26 +1738,64 @@
     "done": 0,
     "left": 2,
     "need_today": 1,
+    "day": null,
     "next_no": null,
     "drafts": 1,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
+    "key": "tickets",
+    "name": "이번 주 티켓 오픈",
+    "weekly": 1,
+    "done": 0,
+    "left": 1,
+    "need_today": 0,
+    "day": 0,
+    "next_no": 1,
+    "drafts": 0,
+    "why": "월요일 고정 — 이번 주 예매가 열리는 공연·내한·페스티벌을 날짜·시간·예매처로"
+   },
+   {
+    "key": "newalbums",
+    "name": "이번 주 나온 앨범",
+    "weekly": 1,
+    "done": 0,
+    "left": 1,
+    "need_today": 1,
+    "day": 4,
+    "next_no": 1,
+    "drafts": 0,
+    "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
+   },
+   {
+    "key": "anniv",
+    "name": "그날의 앨범",
+    "weekly": 2,
+    "done": 0,
+    "left": 2,
+    "need_today": 1,
+    "day": null,
+    "next_no": 1,
+    "drafts": 0,
+    "why": "오늘(이번 주) 발매 5·10·15·20·25·30주년 앨범을 다시 꺼낸다 — 그때 무슨 일이었고 지금 왜 다시 듣나"
+   },
+   {
     "key": "news",
     "name": "소식",
-    "weekly": 7,
-    "done": 8,
+    "weekly": 4,
+    "done": 10,
     "left": 0,
     "need_today": 0,
+    "day": null,
     "next_no": null,
-    "drafts": 7,
+    "drafts": 8,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T03:11+09:00"
+  "at": "2026-10-23T08:37+09:00"
  },
  "slots": {
-  "basis": 212,
+  "basis": 215,
   "card": [
    {
     "from": 18,
