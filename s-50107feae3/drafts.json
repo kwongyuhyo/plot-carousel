@@ -302,8 +302,8 @@
      "key": "QXv_cidwUJA@103.0"
     },
     "rendered": {
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792630628/plot_studio/mttg6iy45ecesvatk9wj.mp4",
-     "at": "2026-10-22T09:57+09:00",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792661333/plot_studio/cby8pwx3xhkjut5ucdrz.mp4",
+     "at": "2026-10-22T18:28+09:00",
      "file": "BulAnHan_NeuKkimI_De_JeoLang_Han_Mom_GatA_Feature_no_lyrics__cta.mp4"
     }
    },
@@ -382,6 +382,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792630881/plot_studio/u9f1ub0poegzho9vk7gc.mp4",
      "at": "2026-10-22T10:01+09:00",
      "file": "OSeYo_JangNanHaessNe_JinJja_On_GeoYeYo_Feature_no_lyrics__cta.mp4"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-22T18:26+09:00"
     }
    },
    "corner_name": "그 말",
@@ -565,6 +569,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792653912/plot_studio/qyvkrcqtc9rs7omkjaur.mp4",
      "at": "2026-10-22T16:25+09:00",
      "file": "JeIl_Keun_BangHwangGiYeossEoYo_Feature_no_lyrics__cta.mp4"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-22T18:26+09:00"
     }
    },
    "corner_name": "그 말",
@@ -916,7 +924,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-22T18:25+09:00"
+  "at": "2026-10-22T18:28+09:00"
  },
  "slots": {
   "basis": 211,
