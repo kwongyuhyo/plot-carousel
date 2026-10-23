@@ -2826,6 +2826,11 @@ async function openPicker(b) {
   PK.wide = false;
   PK.drag = null;
   $('#picker').hidden = false;
+  // 폰 '뒤로' 가 구간 고르기만 닫게 (10/23) — 재생 미리보기에서 넘어왔으면 그 기록을 이어 쓴다
+  try {
+    if (history.state && history.state.pp) history.replaceState({ pk: 1 }, '');
+    else if (!(history.state && history.state.pk)) history.pushState({ pk: 1 }, '');
+  } catch (_) {}
   $('#pkFrame').classList.remove('wide');
   $('#picker').classList.remove('wideView');
   $('#pkWho').textContent = (b.title.trim() || '제목 없음') +
@@ -2889,6 +2894,8 @@ function pkAfterLoad() {
 function closePicker() {
   $('#picker').hidden = true;
   document.body.style.overflow = '';
+  if (typeof draftNow === 'function') draftNow();
+  try { if (history.state && history.state.pk && !PK._popping) history.back(); } catch (_) {}
   clearInterval(PK.timer); PK.timer = null;
   clearTimeout(PK.stallT);
   try { PK.player && PK.player.pauseVideo(); } catch (_) {}
@@ -4573,6 +4580,8 @@ async function openPlay(i, mode) {
   PP.i = i; PP.b = b; PP.kind = kind; PP.mode = mode; PP.paused = false;
   $('#pp').hidden = false;
   document.body.style.overflow = 'hidden';
+  // 폰 '뒤로' 가 미리보기만 닫게 (10/23 규효 "완성본 보다가 뒤로 가면 다 초기화") — 화면 하나를 기록에 쌓아 둔다
+  try { if (!(history.state && history.state.pp)) history.pushState({ pp: 1 }, ''); } catch (_) {}
   $('#ppWho').textContent = (blocks.length > 1 ? (i + 1) + '번 · ' : '') +
     ((b.title || '').trim() || '제목 없음') + ((b.artist || '').trim() ? ' — ' + b.artist.trim() : '');
   paintFrame($('#ppOver'), b);
@@ -4650,7 +4659,11 @@ function ppStop(keep) {
   clearInterval(PP.timer); PP.timer = null;
   try { if (PP.yt && PP.ytReady) PP.yt.pauseVideo(); } catch (_) {}
   if (PP.vid) { try { PP.vid.pause(); } catch (_) {} PP.vid.remove(); PP.vid = null; }
-  if (!keep) { $('#pp').hidden = true; document.body.style.overflow = ''; }
+  if (!keep) {
+    $('#pp').hidden = true; document.body.style.overflow = '';
+    if (typeof draftNow === 'function') draftNow();
+    try { if (history.state && history.state.pp && !PP._popping) history.back(); } catch (_) {}
+  }
 }
 function takeDoneHandoff() {
   let o = null;
@@ -4666,7 +4679,7 @@ function bindPlay() {
   $('#ppClose').onclick = () => ppStop();
   $('#ppTap').onclick = () => { if (PP.kind !== 'img') ppSetPaused(!PP.paused); };
   $('#ppSound').onclick = () => ppSetMuted(!PP.muted);
-  $('#ppEdit').onclick = () => { const b = PP.b; ppStop(); if (b) openPicker(b); };
+  $('#ppEdit').onclick = () => { const b = PP.b; PP._popping = true; ppStop(); PP._popping = false; if (b) openPicker(b); };
   $('#ppSubs').onclick = ppSubsFetch;
   $('#ppSubEdit').onclick = () => { PP.editOpen = !PP.editOpen; ppSubsPaint(); };
   $('#ppTabDone').onclick = () => { if (PP.mode !== 'done') openPlay(PP.i, 'done'); };
@@ -4677,6 +4690,10 @@ function bindPlay() {
   };
   $('#pvPlay').onclick = () => openPlay(Math.max(0, blocks.indexOf(blocks[active] || blocks[0])));
   window.addEventListener('resize', ppFit);
+  window.addEventListener('popstate', () => {          // 폰 뒤로 → 미리보기·구간 고르기만 닫는다
+    if (!$('#pp').hidden) { PP._popping = true; ppStop(); PP._popping = false; }
+    if (!$('#picker').hidden) { PK._popping = true; closePicker(); PK._popping = false; }
+  });
   // 아래 버튼·자막 칸이 생기고 사라지면 화면 칸 크기가 바뀐다 — 그때마다 글자 판을 다시 맞춘다
   try { new ResizeObserver(() => ppFit()).observe($('#ppFrame')); } catch (_) {}
   document.addEventListener('keydown', (e) => {
@@ -4702,9 +4719,9 @@ document.addEventListener('DOMContentLoaded', bindPlay);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 14:10';
+    a.title = '판 10.23 14:40';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 14:10';
+    ver.textContent = '10.23 14:40';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
