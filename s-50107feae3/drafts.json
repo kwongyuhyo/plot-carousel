@@ -1135,9 +1135,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717504/nrv33vgsqlxoivrmvirr.jpg",
      "key": "sxqRBf5b0yU@598.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-23T10:05+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792717788/plot_studio/ud9y56nyarjerjid8cgm.mp4",
+     "at": "2026-10-23T10:09+09:00",
+     "file": "ChinGuGa_IGeo_CrushN_HaNeun_GeoYeYo_Feature_no_lyrics__cta.mp4"
     }
    },
    "pick": {
@@ -1289,7 +1290,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T10:05+09:00"
+  "at": "2026-10-23T10:09+09:00"
  },
  "slots": {
   "basis": 215,
