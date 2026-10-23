@@ -1148,6 +1148,144 @@
    },
    "corner_name": "그 말",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:brk-12d3f22d",
+    "account": "@갈등·반응",
+    "url": "https://www.nocutnews.co.kr/news/6595928?utm_source=naver&utm_medium=article&utm_campaign=20261023090032",
+    "image": null,
+    "head": "뉴진스 성공에서 '민희진 효과'는 얼마인가 — 재판부가 꼽은 손해배상 소송의 핵심",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-23T10:52+09:00",
+   "key": "fa952e4b",
+   "by": "claude",
+   "subjects": [
+    "민희진",
+    "뉴진스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "재판부가 어도어-다니엘·민희진 손해배상 소송의 핵심으로 '민희진 효과'를 꼽았다",
+    "why": "10/22 6차 변론 보도 직후 반응 급증 — 뉴진스 성공에서 한 사람의 몫을 따질 수 있느냐는 질문이 법정에 올라옴"
+   },
+   "added": "claude",
+   "added_at": "2026-10-23T10:52+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n재판부가 뉴진스(@newjeans_official) 손해배상 소송의 핵심으로 '민희진(@min.hee.jin) 효과'를 꼽았습니다.\n\n어도어가 다니엘과 그 가족, 민희진 전 대표를 상대로 낸 330억 원대 위약벌·손해배상 소송의 여섯 번째 변론이 22일 서울중앙지법에서 열렸는데요, 뉴진스가 거뒀을 것으로 보는 수익을 따지는 자리에서 재판장은 \"제일 중요한 게 '민희진 효과'\"라고 짚었습니다.\n\n다니엘 측은 사람의 창작 가치는 숫자로 매길 수 없어 감정 자체가 어렵다는 입장입니다. 어도어 측은 이미 성과를 쌓은 뉴진스는 신생 그룹처럼 프로듀서 한 명이 결정적이라고 보기 어렵다며, 민희진 전 대표가 없으면 매출이 0원이라는 논리는 말이 안 된다고 반박했습니다.\n\n재판부는 이 효과를 민희진 개인의 몫으로 볼지, 어도어의 사업 효과로 볼지, 둘이 섞인 것으로 볼지 양측에 정리해 오라고 했습니다. 뉴진스의 성공을 사람별로 나눌 수 있느냐는 질문이 이제 법정에 올라와 있습니다.\n\n#PLOT #뉴진스 #민희진 #다니엘 #어도어\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792720373/butzqurxwlb353nt4vbs.jpg\n제목: 재판부가 꼽은 핵심,|'민희진 효과'\n부제: 어도어-다니엘·민희진 손해배상 소송 6차 변론\n출처: 사진 DB\n",
+    "caption": "재판부가 뉴진스(@newjeans_official) 손해배상 소송의 핵심으로 '민희진(@min.hee.jin) 효과'를 꼽았습니다.\n\n어도어가 다니엘과 그 가족, 민희진 전 대표를 상대로 낸 330억 원대 위약벌·손해배상 소송의 여섯 번째 변론이 22일 서울중앙지법에서 열렸는데요, 뉴진스가 거뒀을 것으로 보는 수익을 따지는 자리에서 재판장은 \"제일 중요한 게 '민희진 효과'\"라고 짚었습니다.\n\n다니엘 측은 사람의 창작 가치는 숫자로 매길 수 없어 감정 자체가 어렵다는 입장입니다. 어도어 측은 이미 성과를 쌓은 뉴진스는 신생 그룹처럼 프로듀서 한 명이 결정적이라고 보기 어렵다며, 민희진 전 대표가 없으면 매출이 0원이라는 논리는 말이 안 된다고 반박했습니다.\n\n재판부는 이 효과를 민희진 개인의 몫으로 볼지, 어도어의 사업 효과로 볼지, 둘이 섞인 것으로 볼지 양측에 정리해 오라고 했습니다. 뉴진스의 성공을 사람별로 나눌 수 있느냐는 질문이 이제 법정에 올라와 있습니다.\n\n#PLOT #뉴진스 #민희진 #다니엘 #어도어",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720373/butzqurxwlb353nt4vbs.jpg",
+      "credit": "사진 DB",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ziswua2k/auto_pdb_민희진_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661373/uhuf3g4uycjj0lobq4vo.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_onu5wpu4/auto_pdb_민희진_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661377/c7qilkmdwftbhgptvkpf.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb__qbzqjub/auto_pdb_민희진_매거진 화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720373/butzqurxwlb353nt4vbs.jpg",
+      "credit": "사진 DB",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ziswua2k/auto_pdb_민희진_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661373/uhuf3g4uycjj0lobq4vo.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_onu5wpu4/auto_pdb_민희진_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661377/c7qilkmdwftbhgptvkpf.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb__qbzqjub/auto_pdb_민희진_매거진 화보_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "재판부가 꼽은 핵심,|'민희진 효과'",
+      "sub": "어도어-다니엘·민희진 손해배상 소송 6차 변론"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "뉴진스의 성공에서|민희진의 몫은?",
+      "sub": "330억 원대 손해배상 소송 6차 변론"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "330억 소송 법정에 오른|'민희진 효과'",
+      "sub": "재판부 \"제일 중요한 게 민희진 효과\""
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼 비움 — 법정 변론이라 맞는 원본 영상이 없음",
+     "표지 사진은 사진 DB 화보(원출처 credit 미상) — 출처 확인 필요"
+    ],
+    "research": [
+     {
+      "title": "뉴진스 성공에 '민희진 효과' 얼마만큼인지 감정 가능할까[현장EN:] (노컷뉴스, 10/23)",
+      "link": "https://www.nocutnews.co.kr/news/6595928"
+     },
+     {
+      "title": "어도어 “민희진 없으면 뉴진스 매출 0원? 말 안 돼”…재판부, 기여도... (일간스포츠, 10/22)",
+      "link": "https://isplus.com/article/view/isp202610220187"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720378/nsgp8nmwocm3wenqzqvk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720378/awx5k59gzilas3e2vyzm.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720380/zzdpsn9x5wazghpl3tn6.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720380/tx3l0k8wqekdkjia2kfn.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720378/nsgp8nmwocm3wenqzqvk.jpg"
+     },
+     "at": "2026-10-23T10:53+09:00",
+     "v": {
+      "A": "71daf465",
+      "B": "a454647c",
+      "C": "45cfb094"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1286,11 +1424,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T10:09+09:00"
+  "at": "2026-10-23T10:52+09:00"
  },
  "slots": {
   "basis": 215,
