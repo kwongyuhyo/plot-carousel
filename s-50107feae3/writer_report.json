@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23T10:53+09:00",
+ "generated_at": "2026-10-23T12:33+09:00",
  "range": [
   "2026-10-17",
   "2026-10-23"
@@ -30,8 +30,8 @@
    "안 올림": 0
   },
   "why_top": [],
-  "published": 4,
-  "publish_rate": 0.08,
+  "published": 5,
+  "publish_rate": 0.1,
   "reach_mult": [
    0.37,
    0.51
