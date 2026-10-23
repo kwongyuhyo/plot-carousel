@@ -3343,6 +3343,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     copyText(cap);
     if (!sl.length) { toast('캡션을 복사했습니다 — 미리보기 이미지가 없어 스튜디오에서 만들어 주세요'); return; }
     var fs = it.__pf && it.__pf.key === sl.join('|') && it.__pf.files;
+    // 10/23 규효 "1:1 로 올라가는데 4:5 로 전환이 안 된다" — 안드로이드 공유 창으로 인스타 피드에 넘기면
+    // 인스타가 정사각형으로 자르고 비율 버튼을 안 준다. 갤러리에 받아 두고 인스타 앱 안에서 고르게 한다.
+    if (fs && /Android/i.test(navigator.userAgent)) {
+      dlFiles(fs);
+      toast('캡션 복사 · ' + fs.length + '장 받음 — 인스타 + → 게시물 → 첫 장 고르고 왼쪽 아래 ⤢ 눌러 4:5 → 여러 장 선택');
+      setTimeout(function () { location.href = 'intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end'; }, 1800);
+      return;
+    }
     if (fs && navigator.canShare && navigator.canShare({ files: fs })) {
       toast('캡션을 복사했습니다 — 인스타를 골라 붙여 넣으세요');
       navigator.share({ files: fs }).catch(function (e) { if (!e || e.name !== 'AbortError') slideViewer(sl); });
@@ -3353,10 +3361,24 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   /* 10/17 규효 "사진 다운 안 됨" — 저장(🔖)을 누르면 미리보기 장들을 기기에 저장한다.
      폰: 공유 시트(이미지 저장) · 컴퓨터: 파일로 내려받기 · 둘 다 안 되면 길게 눌러 저장하는 화면 */
+  function dlFiles(fs) {                              // 파일로 내려받기 (안드로이드: 갤러리 '다운로드' 앨범에 들어간다)
+    fs.forEach(function (f, j) {
+      setTimeout(function () {
+        var u = URL.createObjectURL(f), a = document.createElement('a');
+        a.href = u; a.download = f.name || ('plot_' + (j + 1) + '.jpg'); document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(function () { URL.revokeObjectURL(u); }, 6000);
+      }, j * 250);
+    });
+  }
   function saveSlides(it) {
     var sl = slidesOf(it);
     if (!sl.length) { toast('아직 미리보기 이미지가 없습니다 — 캐러셀 스튜디오에서 열어 주세요'); return; }
     var pf = it.__pf && it.__pf.key === sl.join('|') && it.__pf.files;
+    if (pf && /Android/i.test(navigator.userAgent)) {   // 10/23 — 공유 창 대신 바로 갤러리로 (인스타 1:1 자르기 피함)
+      dlFiles(pf);
+      toast(pf.length + '장을 받았습니다 — 갤러리 「다운로드」 앨범');
+      return;
+    }
     if (pf && navigator.canShare && navigator.canShare({ files: pf })) {
       navigator.share({ files: pf }).catch(function (e) { if (!e || e.name !== 'AbortError') slideViewer(sl); });
       return;
@@ -3952,9 +3974,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 13:10';
+    a.title = '판 10.23 14:10';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 13:10';
+    ver.textContent = '10.23 14:10';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
