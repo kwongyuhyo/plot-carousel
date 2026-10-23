@@ -948,7 +948,7 @@
     }
    },
    "corner_name": "그날의 앨범",
-   "corner_no": 1
+   "corner_no": 2
   },
   {
    "source": {
@@ -1306,13 +1306,157 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-1baa19e6",
+    "account": "@규효 공유 · @deepdeep_enter",
+    "url": "https://www.instagram.com/p/DeyY9zXKXOv/?vrfl=YmYyNTJtdWdkYWpq",
+    "image": null,
+    "head": "A2O LITE 'NEON' 하루 30만 회 — 브라질 매체 팝라인의 봇 의혹과 반론",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-23T15:19+09:00",
+   "key": "4fbe3952",
+   "by": "claude",
+   "subjects": [
+    "A2O LITE"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "하루 30만 회라는 숫자 하나가 기록이냐 봇이냐의 논쟁이 됐다 — 의혹과 반론을 같은 무게로",
+    "why": "규효 맡기기 · 여러 매거진이 다루는 A2O LITE 화제의 다음 단계(봇 의혹)"
+   },
+   "added": "claude",
+   "added_at": "2026-10-23T15:19+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\nA2O LITE(@a2o.lite)의 데뷔곡 'NEON'이 하루 재생 수 하나로 논쟁에 올랐습니다.\n\n음원 집계 사이트 콰브 기준으로 'NEON'은 16일 한국 스포티파이(@spotifykr)에서 29만 9,898회 재생됐는데요, 뉴진스(@newjeans_official) 'Ditto'의 한국 하루 최고 기록보다 67.5%, 로제와 브루노 마스의 'APT.'보다 28.4% 많은 숫자입니다. 브라질 음악 매체 팝라인은 19일(현지시간) 이 기록을 두고 재생 봇 의혹을 제기했지만, 이를 입증할 자료는 내놓지 않았습니다.\n\n반대쪽에서는 스포티파이 차트가 검색과 다른 플레이리스트 재생까지 함께 세고, 비정상 재생을 걸러 내는 장치도 있다는 반론이 나옵니다. 'NEON'은 13일 발매돼 이튿날 멜론 TOP100 1위에 올랐고, 데뷔 일주일 만에 음악방송 1위도 차지했습니다.\n\n봇 의혹에 대해 A2O 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #이수만 #스포티파이\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg\n제목: 에이투오 라이트 데뷔곡에|봇 의혹이 나왔다\n부제: 브라질 매체의 의혹 제기, 근거는 내놓지 않았다\n출처: @a2o.lite\n",
+    "caption": "A2O LITE(@a2o.lite)의 데뷔곡 'NEON'이 하루 재생 수 하나로 논쟁에 올랐습니다.\n\n음원 집계 사이트 콰브 기준으로 'NEON'은 16일 한국 스포티파이(@spotifykr)에서 29만 9,898회 재생됐는데요, 뉴진스(@newjeans_official) 'Ditto'의 한국 하루 최고 기록보다 67.5%, 로제와 브루노 마스의 'APT.'보다 28.4% 많은 숫자입니다. 브라질 음악 매체 팝라인은 19일(현지시간) 이 기록을 두고 재생 봇 의혹을 제기했지만, 이를 입증할 자료는 내놓지 않았습니다.\n\n반대쪽에서는 스포티파이 차트가 검색과 다른 플레이리스트 재생까지 함께 세고, 비정상 재생을 걸러 내는 장치도 있다는 반론이 나옵니다. 'NEON'은 13일 발매돼 이튿날 멜론 TOP100 1위에 올랐고, 데뷔 일주일 만에 음악방송 1위도 차지했습니다.\n\n봇 의혹에 대해 A2O 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #이수만 #스포티파이",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858213140_17901261432606064_1793344857703458437_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p54hatWcYskQ7kNvwE68zL2&_nc_oc=AdqsM-lgNyHpDo5KYKI6c9yWdvzn3MRrzYwDb6c4Bc8LTQ6fn_Hvzr0yXZJhE2EbaZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMhdQCAl8WoUIzYCva1XFE2KFKsGPyh7iHwzlHEeMpsxw&oe=6ADD70F8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518507/ju9hr9h13vlwlxfxdsfl.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/857497152_17901261276606064_9082982577915728495_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=LDqYgQSMFkMQ7kNvwHrNQVx&_nc_oc=AdrSEn3yQiGIKgjh6985oJaPtPlOhUV4ywPBubxpsfysvG9HAiJlNJhYrIonN7jJItk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPVDQgtwgDjQOZHqbbo8nQJxpo5TpAaaTLc0z9dc3P4tw&oe=6ADD69F1"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518516/q0nrpgisfd8wcy7ntio5.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/853672350_17901261300606064_1083013704045046596_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5_pS6LfbWuMQ7kNvwGHKsc1&_nc_oc=AdrVNohFZTGJt3yi6OTOgQTjvk85dOGnNrW9Jsz2iyrigNmrp5qjqTP_q6PBdAp51VQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOHghfIOQWY3us70au_KLKGs-2pln-ICYEzBW05YDyD2A&oe=6ADD6E5F"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518520/ekks8kwituhi5eepao2g.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855291464_17901261075606064_8592024997119778748_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bnq1vylUVKkQ7kNvwGe4clh&_nc_oc=AdojlAYcY9_b_dcAaftOb4Eh5QPmNEIA4uI_OM2knZW-rQVM6XOCJJp25FmbUPZHMmA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMW2bx9G41_1fzNNALjIADr7Yd7Ju_x1H-J9ZYpR-PY_Q&oe=6ADD7502"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858213140_17901261432606064_1793344857703458437_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p54hatWcYskQ7kNvwE68zL2&_nc_oc=AdqsM-lgNyHpDo5KYKI6c9yWdvzn3MRrzYwDb6c4Bc8LTQ6fn_Hvzr0yXZJhE2EbaZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMhdQCAl8WoUIzYCva1XFE2KFKsGPyh7iHwzlHEeMpsxw&oe=6ADD70F8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518507/ju9hr9h13vlwlxfxdsfl.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/857497152_17901261276606064_9082982577915728495_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=LDqYgQSMFkMQ7kNvwHrNQVx&_nc_oc=AdrSEn3yQiGIKgjh6985oJaPtPlOhUV4ywPBubxpsfysvG9HAiJlNJhYrIonN7jJItk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPVDQgtwgDjQOZHqbbo8nQJxpo5TpAaaTLc0z9dc3P4tw&oe=6ADD69F1"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518516/q0nrpgisfd8wcy7ntio5.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/853672350_17901261300606064_1083013704045046596_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5_pS6LfbWuMQ7kNvwGHKsc1&_nc_oc=AdrVNohFZTGJt3yi6OTOgQTjvk85dOGnNrW9Jsz2iyrigNmrp5qjqTP_q6PBdAp51VQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOHghfIOQWY3us70au_KLKGs-2pln-ICYEzBW05YDyD2A&oe=6ADD6E5F"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518520/ekks8kwituhi5eepao2g.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855291464_17901261075606064_8592024997119778748_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bnq1vylUVKkQ7kNvwGe4clh&_nc_oc=AdojlAYcY9_b_dcAaftOb4Eh5QPmNEIA4uI_OM2knZW-rQVM6XOCJJp25FmbUPZHMmA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMW2bx9G41_1fzNNALjIADr7Yd7Ju_x1H-J9ZYpR-PY_Q&oe=6ADD7502"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "에이투오 라이트 데뷔곡에|봇 의혹이 나왔다",
+      "sub": "브라질 매체의 의혹 제기, 근거는 내놓지 않았다"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'디토'보다 많이 들은|신인 데뷔곡에 봇 의혹",
+      "sub": "하루 30만 회를 두고 엇갈린 해석"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "하루 30만 회 재생,|기록일까 봇일까",
+      "sub": "팝라인의 의혹 제기와 반론"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진 오른쪽 위 로고(흰 글씨 'i…')가 A2O 공식 로고인지 다른 계정 워터마크인지 확인 못 함 · 미성년 멤버 한 명 단독 사진이 '봇 의혹' 제목 아래 놓임 — 단체 사진이나 'NEON' 커버로 교체 권장",
+     "봇 의혹에 대한 A2O 측 공식 입장이 10/20 이후 나왔는지 (찾은 기사에선 중국 자본설 부인만 있음) — 나왔으면 맺음 줄 교체",
+     "표지 사진이 멤버 한 명 단독 콘셉트 화보(@a2o.lite) — 멤버 전원 2008~2013년생이라 한 사람이 의혹의 얼굴처럼 보이지 않게 단체 사진이나 'NEON' 커버로 바꾸는 게 나음 (앨범 커버 자동 검색 실패)"
+    ],
+    "research": [
+     {
+      "title": "뉴진스·로제까지 넘은 A2O LITE, 바이럴·봇 의혹 '활활' — 스포츠경향 (10/20)",
+      "link": "https://sports.khan.co.kr/article/202610201520003"
+     },
+     {
+      "title": "중국자본설→바이럴 의혹까지…A2O 둘러싼 논란과 억측 — 텐아시아 (10/20)",
+      "link": "https://www.tenasia.co.kr/article/2026102038614"
+     },
+     {
+      "title": "A2O LITE tops a music show one week after debut — Sports Kyunghyang",
+      "link": "https://sports.khan.co.kr/en/article/202610201955007/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736346/mdken5cmznie7bkpa5sd.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736346/ygakystrvahalkgopgue.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736348/vdxhre32idpf9nvudesy.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736348/r8r4nils6sqov9adqx7l.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736346/mdken5cmznie7bkpa5sd.jpg"
+     },
+     "at": "2026-10-23T15:19+09:00",
+     "v": {
+      "A": "166508cf",
+      "B": "aa61e361",
+      "C": "6bcb2e6a"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 3,
-  "done": 13,
+  "done": 15,
   "goal": 28,
   "corners": [
    {
@@ -1427,11 +1571,11 @@
     "key": "anniv",
     "name": "그날의 앨범",
     "weekly": 2,
-    "done": 0,
-    "left": 2,
+    "done": 1,
+    "left": 1,
     "need_today": 1,
     "day": null,
-    "next_no": 1,
+    "next_no": 2,
     "drafts": 1,
     "why": "오늘(이번 주) 발매 5·10·15·20·25·30주년 앨범을 다시 꺼낸다 — 그때 무슨 일이었고 지금 왜 다시 듣나"
    },
@@ -1439,19 +1583,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 10,
+    "done": 11,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 6,
+    "drafts": 7,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T12:44+09:00"
+  "at": "2026-10-23T15:19+09:00"
  },
  "slots": {
-  "basis": 215,
+  "basis": 217,
   "card": [
    {
     "from": 18,

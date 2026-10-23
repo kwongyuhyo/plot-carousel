@@ -555,6 +555,15 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .ig .who span.crn{display:inline-block; width:auto; vertical-align:1px}
 .ig .crn{display:inline-block; margin-left:6px; padding:0 7px; border:1px solid var(--line); border-radius:999px; font-size:11px; color:var(--muted)}
 .ig .crn.pk{border-color:var(--pick); color:var(--pick); font-weight:700}
+.sheet .dlg{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; padding:0 20px 12px}
+.sheet .dlg button{margin:0; padding:12px 0; text-align:center; font-size:14px; font-weight:700; border:1px solid var(--line); border-radius:10px}
+.sheet .dlg button.on{opacity:.55}
+.sheet .pn .dlnx{background:var(--text); color:var(--bg); text-align:center; font-weight:700; border-radius:12px; margin:0 20px 12px; width:calc(100% - 40px)}
+.sheet .pn .dlnx[disabled], .sheet .pn .dlnx.done{opacity:.5}
+.sheet .pn a.btnlike{display:block; text-decoration:none; color:inherit}
+.sheet .pn a.dlnx{color:var(--bg); padding:14px 20px; font-size:15px; box-sizing:border-box}
+.sheet .dlg a.btnlike{padding:12px 0; text-align:center; font-size:14px; font-weight:700; border:1px solid var(--line); border-radius:10px}
+.sheet .dlg a.btnlike.on{opacity:.55}
 .ig .pubd{margin:6px 14px 0; font-size:13px; color:var(--ok, #2e9e5b)}
 .ig .pubd.sch{color:var(--amber)}
 .fu{border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:12px 0}
@@ -3346,9 +3355,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     // 10/23 규효 "1:1 로 올라가는데 4:5 로 전환이 안 된다" — 안드로이드 공유 창으로 인스타 피드에 넘기면
     // 인스타가 정사각형으로 자르고 비율 버튼을 안 준다. 갤러리에 받아 두고 인스타 앱 안에서 고르게 한다.
     if (fs && /Android/i.test(navigator.userAgent)) {
-      dlFiles(fs);
-      toast('캡션 복사 · ' + fs.length + '장 받음 — 인스타 + → 게시물 → 첫 장 고르고 왼쪽 아래 ⤢ 눌러 4:5 → 여러 장 선택');
-      setTimeout(function () { location.href = 'intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end'; }, 1800);
+      toast('캡션을 복사했습니다');
+      dlSheet(fs, { urls: sl, stem: 'plot', after: ['인스타 열기', function () {
+        location.href = 'intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end'; }, '다 받은 뒤 — + → 게시물 → 첫 장 고르고 ⤢ 로 4:5 → 여러 장 선택'] });
       return;
     }
     if (fs && navigator.canShare && navigator.canShare({ files: fs })) {
@@ -3361,13 +3370,86 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   /* 10/17 규효 "사진 다운 안 됨" — 저장(🔖)을 누르면 미리보기 장들을 기기에 저장한다.
      폰: 공유 시트(이미지 저장) · 컴퓨터: 파일로 내려받기 · 둘 다 안 되면 길게 눌러 저장하는 화면 */
-  function dlFiles(fs) {                              // 파일로 내려받기 (안드로이드: 갤러리 '다운로드' 앨범에 들어간다)
-    fs.forEach(function (f, j) {
-      setTimeout(function () {
-        var u = URL.createObjectURL(f), a = document.createElement('a');
-        a.href = u; a.download = f.name || ('plot_' + (j + 1) + '.jpg'); document.body.appendChild(a); a.click(); a.remove();
-        setTimeout(function () { URL.revokeObjectURL(u); }, 6000);
-      }, j * 250);
+  /* 10/23 규효 "표지 한 장만 받아진다" — 안드로이드 크롬은 두 번째 파일부터 '여러 파일 자동 다운로드' 를 막는다.
+     첫 장은 누른 그 순간 받고 나머지는 이어서 시도 + 장마다 다시 받는 버튼 (누를 때마다 새 다운로드라 막히지 않는다). */
+  function dlOne(f, name) {
+    var u = URL.createObjectURL(f), a = document.createElement('a');
+    a.href = u; a.download = name || f.name || 'plot.jpg'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(u); }, 8000);
+  }
+  /* 10/23 3차 — 폰 크롬이 이 사이트 '자동 다운로드' 를 막힘으로 기억하면 한 페이지에서 첫 장만 받아진다.
+     장마다 Cloudinary 받기 주소(fl_attachment)를 새 탭으로 연다 — 새 탭은 막힘이 따로라 한 장씩 받아진다. */
+  function attUrl(u, name) {
+    u = String(u || '');
+    return u.indexOf('/upload/') > 0 ? u.replace('/upload/', '/upload/fl_attachment:' + name + '/') : u;
+  }
+  function dlSheet(fs, opts) {
+    /* 10/23 2차 — 여러 장을 한꺼번에 받으려 하면 크롬이 그 탭의 다운로드를 통째로 막는다 (그 뒤엔 버튼도 안 먹는다).
+       누른 순간 한 장만 받고, 다음 장은 「n장 받기」를 누를 때마다 한 장씩 — 사람이 누른 다운로드는 막지 않는다. */
+    opts = opts || {};
+    var n = fs.length, got = {}, next = 0;
+    var urls = opts.urls && opts.urls.length === n ? opts.urls : null, stem = opts.stem || 'plot';
+    function att(j) { return attUrl(urls[j], stem + '_' + (j + 1)); }
+    function take(j) { if (!urls || j === 0 && !opts.manual && !got[0]) dlOne(fs[j]); got[j] = 1; }
+    if (!opts.manual) { take(0); next = 1; }
+    if (n < 2 && !opts.after && !opts.manual) return;
+    var many = n > 1, sh = document.createElement('div'); sh.className = 'sheet';
+    function label() {
+      if (next >= n) return many ? '✓ ' + n + '장 다 받았습니다' : '✓ 받았습니다';
+      return many ? (next + 1) + '장 받기  (' + (next + 1) + '/' + n + ')' : (opts.label || '받기');
+    }
+    sh.innerHTML = '<div class="pn" style="padding-bottom:calc(env(safe-area-inset-bottom, 0px) + 28px)"><div class="hd"></div>' +
+      '<div style="padding:0 20px 10px;font-size:13px;color:var(--dim);line-height:1.5">' +
+      esc(opts.note || (many ? '한 번에 한 장씩 받습니다 (폰이 여러 장을 한꺼번에 받는 걸 막아서요). 아래 버튼을 장 수만큼 눌러 주세요.' : '받기를 눌러 주세요.')) + '</div>' +
+      (urls ? '<a data-act="nx" class="dlnx btnlike" target="_blank" rel="noopener" href="' + escU(next < n ? att(next) : '#') + '">' + esc(label()) + '</a>'
+        : '<button data-act="nx" class="dlnx"' + (next >= n ? ' disabled' : '') + '>' + esc(label()) + '</button>') +
+      (many ? '<div class="dlg">' + fs.map(function (f, k) {
+        return urls ? '<a data-dl="' + k + '" class="btnlike' + (got[k] ? ' on' : '') + '" target="_blank" rel="noopener" href="' + escU(att(k)) + '">' + (k + 1) + '장' + (got[k] ? ' ✓' : '') + '</a>'
+          : '<button data-dl="' + k + '"' + (got[k] ? ' class="on"' : '') + '>' + (k + 1) + '장' + (got[k] ? ' ✓' : '') + '</button>'; }).join('') + '</div>' : '') +
+      (opts.after ? '<button data-act="go">' + esc(opts.after[0]) + (opts.after[2] ? '<small>' + esc(opts.after[2]) + '</small>' : '') + '</button>' : '') +
+      '<button data-act="x">닫기</button></div>';
+    function mark(k) {
+      var c = sh.querySelector('[data-dl="' + k + '"]'); if (c) { c.classList.add('on'); c.textContent = (k + 1) + '장 ✓'; }
+      while (next < n && got[next]) next++;
+      var b = sh.querySelector('.dlnx');
+      if (b) { b.textContent = label(); if (urls) { b.setAttribute('href', next < n ? att(next) : '#'); b.classList.toggle('done', next >= n); } else b.disabled = next >= n; }
+    }
+    sh.addEventListener('click', function (e) {
+      var d = e.target.closest('[data-dl]');
+      if (d) { var k = Number(d.getAttribute('data-dl')); take(k); setTimeout(function () { mark(k); }, 0); return; }   // 주소 받기는 링크가 그대로 연다
+      var b = e.target.closest('[data-act]');
+      if (b && b.getAttribute('data-act') === 'nx') {
+        if (next >= n) { e.preventDefault(); return; }
+        var k2 = next; take(k2); setTimeout(function () { mark(k2); }, 0); return; }
+      if (e.target === sh || b) { sh.remove(); if (b && b.getAttribute('data-act') === 'go' && opts.after) opts.after[1](); }
+    });
+    document.body.appendChild(sh);
+  }
+  function dlFiles(fs) { dlSheet(fs); }
+  /* 10/23 규효 "숏폼도 다운로드" — 맥이 미리 만든 완성 영상(shorts.rendered.url)을 받는다. 캡션은 복사.
+     영상은 받는 데 몇 초 걸려서, 다 받으면 '받기' 버튼을 한 번 더 누르게 한다 (누른 순간이어야 폰이 막지 않는다). */
+  function saveShorts(it) {
+    var rd = (it.shorts || {}).rendered || {};
+    if (!rd.url) { toast('아직 완성 영상이 없습니다 — 「숏폼 제작으로」에서 만들면 여기서 받을 수 있어요'); return; }
+    copyText(captionOf(it, 'shorts'));
+    toast('영상을 받는 중입니다 — 캡션은 복사했어요');
+    var name = 'plot_shorts_' + (it.key || 'x') + '.mp4';
+    fetch(rd.url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); }).then(function (b) {
+      var f = new File([b], name, { type: 'video/mp4' });
+      if (/iPhone|iPad/i.test(navigator.userAgent) && navigator.canShare && navigator.canShare({ files: [f] })) {
+        sheetOf('영상이 준비됐습니다', [['sv', '영상 저장 · 인스타로', '공유 창에서 「동영상 저장」 또는 인스타를 고르세요'], ['x', '닫기', '']], function (a) {
+          if (a === 'sv') navigator.share({ files: [f] }).catch(function () {});
+        });
+        return;
+      }
+      dlSheet([f], { manual: true, label: '영상 받기 (' + Math.round(b.size / 1e5) / 10 + 'MB)',
+        note: '영상이 준비됐습니다. 받기를 누르면 갤러리 「다운로드」에 들어갑니다 — 캡션은 복사돼 있어요.',
+        after: /Android/i.test(navigator.userAgent) ? ['인스타 열기', function () {
+          location.href = 'intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end'; }, '받은 뒤 — + → 릴스 → 갤러리에서 고르기'] : null });
+    }).catch(function () {
+      sheetOf('영상을 바로 받지 못했습니다', [['op', '영상 열기', '열린 화면에서 ⋮ → 다운로드 (또는 길게 눌러 저장)'], ['x', '닫기', '']], function (a) {
+        if (a === 'op') window.open(safeUrl(rd.url), '_blank');
+      });
     });
   }
   function saveSlides(it) {
@@ -3375,8 +3457,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!sl.length) { toast('아직 미리보기 이미지가 없습니다 — 캐러셀 스튜디오에서 열어 주세요'); return; }
     var pf = it.__pf && it.__pf.key === sl.join('|') && it.__pf.files;
     if (pf && /Android/i.test(navigator.userAgent)) {   // 10/23 — 공유 창 대신 바로 갤러리로 (인스타 1:1 자르기 피함)
-      dlFiles(pf);
-      toast(pf.length + '장을 받았습니다 — 갤러리 「다운로드」 앨범');
+      dlSheet(pf, { urls: sl, stem: 'plot' });
       return;
     }
     if (pf && navigator.canShare && navigator.canShare({ files: pf })) {
@@ -3384,12 +3465,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       return;
     }
     if (pf && !/iPhone|iPad|Android/i.test(navigator.userAgent)) {
-      pf.forEach(function (f, j) {
-        var u = URL.createObjectURL(f), a = document.createElement('a');
-        a.href = u; a.download = 'plot_' + (j + 1) + '.jpg'; document.body.appendChild(a); a.click(); a.remove();
-        setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
-      });
-      toast(pf.length + '장을 내려받았습니다');
+      dlSheet(pf);
       return;
     }
     if (it.__pf && it.__pf.files === null) { toast('이미지를 받는 중입니다 — 잠시 뒤 다시 눌러 주세요'); return; }
@@ -3405,6 +3481,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       acts.push(['card', '캐러셀 스튜디오에서 고치기', '고른 표지로 양식이 채워진 채 열립니다']);
     }
     if ((it.shorts || {}).form) acts.push(['shorts', '숏폼 제작으로', '영상·구간·후킹이 채워진 채 열립니다']);
+    if (((it.shorts || {}).rendered || {}).url) acts.push(['vid', '숏폼 영상 받기', '맥이 만든 완성 영상을 폰에 받습니다 (캡션은 복사돼요)']);
     acts.push(['cap', '캡션 복사', '']);
     if ((it.source || {}).url) acts.push(['src', '원문 보기', '']);
     acts = acts.concat(itemActs(it, kind));
@@ -3417,6 +3494,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       if (!b) return;
       var a = b.getAttribute('data-act'); sh.remove();
       if (a === 'insta') shareToInsta(it);
+      else if (a === 'vid') saveShorts(it);
       else if (a === 'card' || a === 'shorts') drOpen(i, a);
       else if (a === 'cap') { copyText(captionOf(it, kind)); toast('캡션을 복사했습니다'); }
       else if (a === 'src') window.open(safeUrl((it.source || {}).url), '_blank');
@@ -3864,7 +3942,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var svb = e.target.closest('[data-save]');
     if (svb) { var sv = svb.getAttribute('data-save').split(':'), sit = (DR.items || [])[Number(sv[0])];
       if (sit && sv[1] === 'card') saveSlides(sit);
-      else if (sit) toast('숏폼은 영상이라 저장할 이미지가 없습니다 — 숏폼 제작 화면에서 만들어 주세요');
+      else if (sit) saveShorts(sit);
       return; }
     var evq = e.target.closest('[data-evq]');
     if (evq) { var q1 = evq.getAttribute('data-evq').split(':'); evQuick((DR.items || [])[Number(q1[0])], Number(q1[0]), q1[1]);
@@ -3974,9 +4052,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 14:45';
+    a.title = '판 10.23 15:19';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 14:45';
+    ver.textContent = '10.23 15:19';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
