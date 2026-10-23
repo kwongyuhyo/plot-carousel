@@ -3159,7 +3159,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var idx = items.map(function (_, i) { return i; });
     // 10/17 규효 "초안 생성한게 너무 밑에 떠" — 쓴 순서는 새로 쓴 것이 맨 위 (같은 회차 안에서는 쓴 차례대로)
     var at = function (it) { return String(it.added_at || it.made_at || ''); };
-    if (DR_SORT !== 'pub') return idx.sort(function (a, b) { return pickRank(items[a]) - pickRank(items[b]) || at(items[b]).localeCompare(at(items[a])) || a - b; });
+    // 10/23 규효 "제작한 순으로" — 쓴 순서는 오로지 새로 쓴 것이 위 ('오늘 올릴 ★' 도 끌어올리지 않는다 · 꼬리표만)
+    if (DR_SORT !== 'pub') return idx.sort(function (a, b) { return at(items[b]).localeCompare(at(items[a])) || b - a; });
     var need = {};
     ((DR && DR.corners && DR.corners.corners) || []).forEach(function (c) { need[c.key] = Number(c.need_today || c.left || 0); });
     var g = function (it) { return { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] != null ? { S: 0, A: 1, B: 2, C: 3 }[(it.editor || {}).grade] : 2.5; };
@@ -3868,7 +3869,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
           esc((x.why || '').slice(0, 40)) + ')'; }).join(' · ') : '') + '</div>' +
-      items.map(function (it, i) {
+      feedOrder(items).map(function (i) {                // 10/23 — '자세히 보기' 도 같은 순서 (새로 쓴 것이 위)
+        var it = items[i];
         var s = it.source || {}, sh = it.shorts || {}, cd = it.card || {};
         var lbl = s.kind === 'news' ? '📰 ' + esc(s.account || '뉴스 급등') : s.kind === 'clip' ? '🎬 ' + esc(s.account || '클립') :
           s.kind === 'series' ? '📚 나무위키 털기' : s.kind === 'repack' ? '♻️ 재포장' : '@' + esc(s.account || '');
@@ -4052,9 +4054,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 23:00';
+    a.title = '판 10.23 23:07';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 23:00';
+    ver.textContent = '10.23 23:07';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
