@@ -1685,6 +1685,212 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-1d9ece64",
+    "account": "@규효 공유 · @nop_kr",
+    "url": "https://www.instagram.com/p/De1UxyKo8fU/?exln=MXhyZ2hzaDBpcWk0Yg==",
+    "image": null,
+    "head": "양홍원 사생활 의혹 정리 — 폭로·발언·반박·입장 준비, 진위 미확인",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-23T22:25+09:00",
+   "key": "606d46db",
+   "by": "claude",
+   "subjects": [
+    "양홍원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "결혼 닷새 만의 사생활 의혹 — 폭로·폭로자 발언·반박·지금 상황을 기사로 확인된 만큼만 정리 (진위 미확인)",
+    "why": "규효 결정 10/23 22:20 — 기사 6곳이 나와 '정리본' 으로. 세부(장소·상대·녹취)는 옮기지 않음"
+   },
+   "added": "claude",
+   "added_at": "2026-10-23T22:25+09:00",
+   "corner": "followup",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.\n\n지난 18일 원현주와 결혼식을 올린 양홍원을 두고 23일 익명의 폭로자 A씨가 SNS에 의혹을 올렸는데요, A씨가 이후 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답하면서 주장의 진위를 두고도 논란이 일고 있습니다.\n\n현장에 함께 있었다고 밝힌 한 지인은 A씨가 돈을 노리고 주장을 꾸며냈다고 반박한 것으로 전해졌습니다. 지금까지 나온 내용은 어느 쪽도 사실로 확인되지 않았습니다.\n\n양홍원 측은 입장을 준비 중인 것으로 알려졌습니다.\n\n#PLOT #양홍원 #래퍼양홍원 #국힙 #힙합\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg\n제목: 결혼 닷새 만의 폭로|양홍원, 사생활 의혹\n부제: 진위는 확인되지 않았습니다\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg\n소제목: 무슨 일이 있었나\n본문: 지난 18일 원현주와 결혼식을 올린 양홍원을 두고, 닷새 뒤인 23일 익명의 폭로자 A씨가 SNS에 사생활 의혹을 제기했습니다.|지금까지 나온 내용은 A씨의 일방적인 주장이며, 사실관계는 확인되지 않았습니다.||출처: 뉴시스 · 스타뉴스 · 헤럴드경제\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg\n소제목: 폭로자의 말\n본문: A씨는 같은 날 인스타그램 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답했습니다.|사실인지 아닌지는 보는 사람이 판단하라는 취지의 말도 남겨, 주장의 진위를 두고 논란이 일고 있습니다.||출처: 머니투데이 · 스타뉴스\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792505219/szbkzyg9egvlsk6aazcy.jpg\n소제목: 반박\n본문: 현장에 함께 있었다고 밝힌 한 지인은 A씨가 돈을 노리고 주장을 꾸며냈다며 반박한 것으로 전해졌습니다.||출처: 뉴시스\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792505254/i6klfotykq84gzgryhiz.jpg\n소제목: 지금 상황\n본문: 양홍원 측은 입장을 준비 중인 것으로 알려졌습니다.|폭로와 반박 모두 아직 사실로 확인된 것은 없습니다.||출처: 뉴시스\n출처: 멜론\n",
+    "caption": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.\n\n지난 18일 원현주와 결혼식을 올린 양홍원을 두고 23일 익명의 폭로자 A씨가 SNS에 의혹을 올렸는데요, A씨가 이후 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답하면서 주장의 진위를 두고도 논란이 일고 있습니다.\n\n현장에 함께 있었다고 밝힌 한 지인은 A씨가 돈을 노리고 주장을 꾸며냈다고 반박한 것으로 전해졌습니다. 지금까지 나온 내용은 어느 쪽도 사실로 확인되지 않았습니다.\n\n양홍원 측은 입장을 준비 중인 것으로 알려졌습니다.\n\n#PLOT #양홍원 #래퍼양홍원 #국힙 #힙합",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249302/a99acxqltbqtt2sfnhfs.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/800065702_18593863249068013_7659673952264151381_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-ntux6Dc1qIQ7kNvwFRZA9M&_nc_oc=Adq6jwMWOz3t-pP-JMz5rQy55mlXm083uBIQCaQpp6Ros8HskniHfWRArFVPOhmhxPs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=bqPKa4OX_mXtYt9IMIrbtA&oh=00_AQPjNslESJmR5VdXwa8jcEMGsNlALf-UHFBumK5sCr0j1w&oe=6AD000D4"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg",
+      "credit": "@yanghongwon",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/705341035_18560568136068013_2206778758427998637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TWg_OhgJoeoQ7kNvwHjviZx&_nc_oc=AdpcPVfGM1_phE68DwrGl7jZWjUMgaKZNU7PfneT-JWeNAV1oiwvFbtLWaGjzayQ4sY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQMJQiVzyUk2uGi9x4n912NTC03biKFk7ChQ4hzTT81Zlg&oe=6AD96205"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088231_18601669921068013_7415273064331475522_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X0G_tJayB44Q7kNvwH7z2NK&_nc_oc=AdqBaZrMm6WXy659cO4wzhM73akk-rQBPNH0zsG5bIYyP4rd_pF4a4SMkFru3Ks2AHc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=nezvaE7fueheY2maeqhsxA&oh=00_AQPZgmHDDkochWrVlDzjbqHOnZpW1yewU7Kn9ecQc5-c4w&oe=6ADAC924"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249302/a99acxqltbqtt2sfnhfs.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/800065702_18593863249068013_7659673952264151381_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-ntux6Dc1qIQ7kNvwFRZA9M&_nc_oc=Adq6jwMWOz3t-pP-JMz5rQy55mlXm083uBIQCaQpp6Ros8HskniHfWRArFVPOhmhxPs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=bqPKa4OX_mXtYt9IMIrbtA&oh=00_AQPjNslESJmR5VdXwa8jcEMGsNlALf-UHFBumK5sCr0j1w&oe=6AD000D4"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg",
+      "credit": "@yanghongwon",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/705341035_18560568136068013_2206778758427998637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TWg_OhgJoeoQ7kNvwHjviZx&_nc_oc=AdpcPVfGM1_phE68DwrGl7jZWjUMgaKZNU7PfneT-JWeNAV1oiwvFbtLWaGjzayQ4sY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQMJQiVzyUk2uGi9x4n912NTC03biKFk7ChQ4hzTT81Zlg&oe=6AD96205"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088231_18601669921068013_7415273064331475522_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X0G_tJayB44Q7kNvwH7z2NK&_nc_oc=AdqBaZrMm6WXy659cO4wzhM73akk-rQBPNH0zsG5bIYyP4rd_pF4a4SMkFru3Ks2AHc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=nezvaE7fueheY2maeqhsxA&oh=00_AQPZgmHDDkochWrVlDzjbqHOnZpW1yewU7Kn9ecQc5-c4w&oe=6ADAC924"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "결혼 닷새 만의 폭로|양홍원, 사생활 의혹",
+      "sub": "진위는 확인되지 않았습니다"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "양홍원 사생활 의혹|지금까지 확인된 것",
+      "sub": "폭로·반박·입장, 진위는 미확인"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "폭로자 \"관심 플러스 돈\"|양홍원 의혹 정리",
+      "sub": "사실관계는 확인되지 않았습니다"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기는 01~04장만 만들어져 마지막 장('지금 상황', 멜론 사진)은 눈으로 못 봄 — 앱에서 확인 · '입장 준비 중'·지인 반박은 뉴시스 한 곳 보도라 출처를 뉴시스로만 고침",
+     "지인 반박·'입장 준비 중' 은 읽은 6곳 중 뉴시스에만 있음 (머니투데이는 '입장을 밝히지 않았다') — 올리기 전 양홍원 측 입장이 이미 나왔는지 확인",
+     "사진은 양홍원 단독 본인 게시물만 골랐음 — 장마다 표정·분위기가 글 결에 맞는지 눈으로 확인"
+    ],
+    "research": [
+     {
+      "title": "뉴시스 — '새신랑' 유명 래퍼, 사생활 의혹…폭로 진위 여부 논란도 (10/23)",
+      "link": "https://www.newsis.com/view/NISX20261023_0003839291"
+     },
+     {
+      "title": "머니투데이 — 양홍원 결혼식 5일만 '불륜설' (10/23)",
+      "link": "https://www.mt.co.kr/society/2026/10/23/2026102321545829492"
+     },
+     {
+      "title": "스타뉴스 — '5일 전 결혼' 양홍원, 불륜 의혹..폭로자 \"돈과 관심 필요\" (10/23)",
+      "link": "https://www.starnewskorea.com/star/2026/10/23/2026102317555144519"
+     },
+     {
+      "title": "마이데일리 — 양홍원, 결혼식 5일 만에 불륜설 [MD이슈] (10/23)",
+      "link": "https://www.mydaily.co.kr/page/view/2026102319482806424"
+     },
+     {
+      "title": "MK스포츠 — 양홍원 불륜 폭로자, 라이브로 켠 속내 (10/23)",
+      "link": "https://www.mksports.co.kr/news/entertain/12184474"
+     },
+     {
+      "title": "헤럴드경제 — 유명 래퍼, 결혼 5일만에 '불륜설' (10/23)",
+      "link": "https://biz.heraldcorp.com/article/10913317"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761940/kqqf0ue7egi6yd1i5kn7.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761940/ptgj6hjwhs24tizqilfp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761940/mc4m5lcxqthnfluep5ie.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761940/duz07ban7bl7fbvh1tt3.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761942/qzadrygyqhlg85muk1dp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761942/cbgk3pynpzqfglxe0hkl.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761944/ch0rjz0zfq7hdiyayib9.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761944/voyiwo3pbgvu9jwjxul9.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761940/kqqf0ue7egi6yd1i5kn7.jpg"
+     },
+     "at": "2026-10-23T22:25+09:00",
+     "v": {
+      "A": "34b97355",
+      "B": "5a01823c",
+      "C": "417693c5"
+     }
+    }
+   },
+   "corner_name": "후속"
   }
  ],
  "skipped": [],
@@ -1775,7 +1981,7 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -1827,7 +2033,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T20:33+09:00"
+  "at": "2026-10-23T22:25+09:00"
  },
  "slots": {
   "basis": 219,
@@ -1852,7 +2058,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.57,
+    "mult": 1.58,
     "median": 0.75,
     "n": 11
    }

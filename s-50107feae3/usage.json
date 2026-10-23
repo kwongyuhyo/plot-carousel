@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-23T20:19+09:00",
+ "generated_at": "2026-10-23T21:26+09:00",
  "cycle_start": "2026-10-15",
  "next_credit": "2026-11-15",
  "credit": 100.0,
- "spent": 26.21,
- "today": 0.47,
- "per_day": 2.97,
- "calls": 9771,
+ "spent": 26.23,
+ "today": 0.5,
+ "per_day": 2.96,
+ "calls": 9840,
  "by": [
   {
    "name": "작성기 (Claude Code)",
@@ -14,7 +14,7 @@
   },
   {
    "name": "사진 DB",
-   "usd": 1.4
+   "usd": 1.41
   },
   {
    "name": "후속 기획",
@@ -38,7 +38,7 @@
   },
   {
    "name": "클립 고르기",
-   "usd": 0.34
+   "usd": 0.35
   },
   {
    "name": "표지",
