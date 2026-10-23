@@ -293,9 +293,12 @@ details.formFold>summary{cursor:pointer; font-size:12.5px; color:var(--faint); p
 .ppOver[hidden]{display:none}
 .ppSubList{max-height:30vh; overflow:auto; margin:8px 14px 0; flex:none; -webkit-overflow-scrolling:touch}
 .ppSubList[hidden]{display:none}
-.ppSubRow{display:flex; gap:6px; align-items:center; margin-bottom:5px}
+.ppSubRow{display:flex; gap:6px; align-items:center; margin-bottom:8px; flex-wrap:wrap}
+.ppSubCtl{display:flex; gap:5px; width:100%; padding-left:54px; box-sizing:border-box}
+.ppSubCtl button{flex:1; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); color:#fff;
+  border-radius:6px; font:inherit; font-size:12.5px; padding:5px 0; cursor:pointer}
 .ppSubRow.on input{border-color:#fff}
-.ppSubT{flex:none; width:48px; background:none; border:0; color:rgba(255,255,255,.6); font-family:ui-monospace,Menlo,monospace; font-size:12px; cursor:pointer}
+.ppSubT{flex:none; width:48px; text-align:left; background:none; border:0; color:rgba(255,255,255,.6); font-family:ui-monospace,Menlo,monospace; font-size:12px; cursor:pointer}
 .ppSubRow input{flex:1; min-width:0; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); color:#fff;
   border-radius:7px; padding:7px 9px; font:inherit; font-size:14px}
 
@@ -1292,8 +1295,8 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <b id="ppWho"></b><span id="ppTime"></span>
   </div>
   <div class="ppTabs" id="ppTabs" hidden>
+    <button class="ppTab" id="ppTabSeg" type="button">미리보기</button>
     <button class="ppTab" id="ppTabDone" type="button">완성본</button>
-    <button class="ppTab" id="ppTabSeg" type="button">구간 미리보기</button>
   </div>
   <div class="ppStage"><div class="ppFrame" id="ppFrame">
     <div class="ppVideo" id="ppVideo"><div id="ppYT"></div></div>
@@ -4378,7 +4381,7 @@ function coreSig(b) {
   return [b.cat, b.custom, b.url, b.start, b.end, b.title, b.artist, b.feat, b.hook, b.source, b.crop, b.metaTime]
     .map(x => String(x == null ? '' : x).trim()).join('|');
 }
-function doneStale(b) { return !!(b && b.done && b.done.sig && b.done.sig !== coreSig(b)); }
+function doneStale(b) { return !!(b && b.done && ((b.done.sig && b.done.sig !== coreSig(b)) || (b.subsRef && b.subsRef.edited))); }
 function subsOk(b) {
   const r = b && b.subsRef;
   return !!(r && r.id && r.segs && r.segs.length && r.url === (b.url || '').trim() &&
@@ -4406,10 +4409,10 @@ function ppSide(b) {
   const btn = $('#pvPlay'); if (!btn) return;
   const k = ppKind(b);
   btn.hidden = !k;
-  btn.textContent = k === 'done' ? (doneStale(b) ? '▶ 완성본(고치기 전)' : '▶ 완성본 보기')
-                  : k === 'img' ? '▶ 크게 보기' : '▶ 구간 재생해서 보기';
+  btn.textContent = (k === 'done' && !ppSrcKind(b)) ? '▶ 완성본 보기'
+                  : k === 'img' ? '▶ 크게 보기' : '▶ 미리보기 재생';
   const note = $('#pvNote');
-  if (note) note.textContent = k === 'done' ? '미리 만들어 둔 완성본이 있습니다. 구간 미리보기로도 바꿔 볼 수 있어요.'
+  if (note) note.textContent = k === 'done' ? '완성본도 있어요 — 미리보기 위 「완성본」 칸.'
                              : k ? '누르면 고른 구간이 완성본 글자와 같이 돌아갑니다.'
                                  : '원본 주소를 넣으면 구간을 재생해서 볼 수 있어요.';
 }
@@ -4493,24 +4496,48 @@ function ppSubsPaint() {
   if (!btn) return;
   const can = PP.mode === 'seg' && (PP.kind === 'yt' || PP.kind === 'file') && typeof plotStudio !== 'undefined' && plotStudio.on();
   btn.hidden = !can;
-  ed.hidden = !(can && subsOk(b));
+  ed.hidden = !(subsOk(b) && (can || (PP.mode === 'done' && ppSrcKind(b))));
   if (PP.subsBusy) return;
   btn.disabled = false;
   btn.textContent = subsOk(b) ? '💬 말자막 다시 받기'
                   : (b.subsRef && b.subsRef.id) ? '💬 구간이 바뀌어 다시 받기' : '💬 말자막 미리 받기';
-  $('#ppSubList').hidden = !PP.editOpen;
-  ed.textContent = PP.editOpen ? '✏️ 고치기 닫기' : '✏️ 자막 고치기';
+  $('#ppSubList').hidden = !PP.editOpen || PP.mode !== 'seg';
+  ed.textContent = PP.mode === 'done' ? '✏️ 자막 고치기 (미리보기에서)' : PP.editOpen ? '✏️ 고치기 닫기' : '✏️ 자막 고치기 · 시간';
 }
 function ppSubsList() {
   const box = $('#ppSubList'); box.innerHTML = '';
   const b = PP.b; if (!subsOk(b)) return;
-  b.subsRef.segs.forEach((s, k) => {
+  const segs = b.subsRef.segs;
+  const f1 = (x) => Math.floor(x / 60) + ':' + (x % 60).toFixed(1).padStart(4, '0');
+  // 한 줄 시작을 옮긴다 — 앞줄 끝이 붙어 있었으면 같이 따라온다. 겹치거나 0.3초보다 짧아지지 않게.
+  const move = (k, t) => {
+    const s0 = segs[k], prev = segs[k - 1];
+    t = Math.max(prev ? prev.start + 0.3 : 0, Math.min(t, s0.end - 0.3));
+    if (prev && (Math.abs(prev.end - s0.start) < 0.06 || prev.end > t)) prev.end = Math.round(t * 100) / 100;
+    s0.start = Math.round(t * 100) / 100;
+    b.subsRef.edited = true; ppSubsSave(); ppSubsList();
+  };
+  const moveEnd = (k, t) => {
+    const s0 = segs[k], next = segs[k + 1];
+    t = Math.max(s0.start + 0.3, Math.min(t, next ? next.end - 0.3 : t));
+    if (next && (Math.abs(next.start - s0.end) < 0.06 || next.start < t)) next.start = Math.round(t * 100) / 100;
+    s0.end = Math.round(t * 100) / 100;
+    b.subsRef.edited = true; ppSubsSave(); ppSubsList();
+  };
+  segs.forEach((s0, k) => {
     const row = el('div', 'ppSubRow');
-    const t = el('button', 'ppSubT'); t.type = 'button'; t.textContent = ppFmt(s.start);
-    t.onclick = () => { ppSeek(PP.a + s.start + 0.05); ppSetPaused(false); };
-    const inp = el('input'); inp.type = 'text'; inp.value = s.text;
-    inp.oninput = () => { s.text = inp.value; b.subsRef.edited = true; ppSubsSave(); };
-    row.append(t, inp); box.append(row);
+    const t = el('button', 'ppSubT'); t.type = 'button'; t.textContent = f1(s0.start);
+    t.title = '이 줄로 가기';
+    t.onclick = () => { ppSeek(PP.a + s0.start + 0.05); ppSetPaused(false); };
+    const inp = el('input'); inp.type = 'text'; inp.value = s0.text;
+    inp.oninput = () => { s0.text = inp.value; b.subsRef.edited = true; ppSubsSave(); };
+    const ctl = el('div', 'ppSubCtl');
+    const mk = (label, title, fn) => { const x = el('button'); x.type = 'button'; x.textContent = label; x.title = title; x.onclick = fn; ctl.append(x); };
+    mk('◀', '시작 0.1초 앞으로', () => move(k, s0.start - 0.1));
+    mk('지금', '재생 중인 지금부터 이 줄', () => move(k, ppNow() - PP.a));
+    mk('▶', '시작 0.1초 뒤로', () => move(k, s0.start + 0.1));
+    mk('끝', '재생 중인 지금 이 줄 끝', () => moveEnd(k, ppNow() - PP.a));
+    row.append(t, inp, ctl); box.append(row);
   });
 }
 let ppSaveT = null;
@@ -4520,7 +4547,7 @@ function ppSubsSave() {
     const r = PP.b && PP.b.subsRef; if (!r || !r.sn) return;
     if (typeof draftNow === 'function') draftNow();
     plotStudio.post({ id: r.id, kind: 'studio', snapshot: Object.assign({}, r.sn, { subs: r.segs, edited: true, status: 'done' }) })
-      .then(() => toast('고친 자막을 맥에 남겼습니다 — 제작할 때 그대로 씁니다'))
+      .then(() => { if (!r._told) { r._told = 1; toast('고친 자막은 맥에 바로 남습니다 — 제작할 때 그대로 씁니다'); } })
       .catch((e) => toast('고친 자막을 못 남겼습니다 — ' + String(e && e.message || e).slice(0, 60)));
   }, 900);
 }
@@ -4573,7 +4600,8 @@ function ppNotesPaint() {
 async function openPlay(i, mode) {
   const b = blocks[i];
   if (!ppKind(b)) { toast('원본 주소를 먼저 넣어 주세요'); return; }
-  mode = mode || (b.done && b.done.url ? 'done' : 'seg');
+  // 10/23 규효 "구간 미리보기를 기본으로" — 글자·자막을 얹어 고칠 수 있는 쪽이 먼저. 원본이 없을 때만 완성본
+  mode = mode || (ppSrcKind(b) ? 'seg' : 'done');
   if (mode === 'seg' && !ppSrcKind(b)) mode = 'done';
   const kind = mode === 'done' ? 'done' : ppSrcKind(b);
   ppStop(true);
@@ -4671,8 +4699,16 @@ function takeDoneHandoff() {
   if (!o || !o.url || !blocks.length) return;
   const b = blocks[active] || blocks[0];
   b.done = { url: String(o.url), at: String(o.at || ''), sig: coreSig(b) };
+  const sb = o.subs;
+  if (sb && sb.id && Array.isArray(sb.segs) && sb.segs.length) {     // 초안 완성본에 들어간 자막 — 고쳐서 다시 만들 수 있게
+    const u = (b.url || '').trim(), st = (b.start || '').trim(), en = (b.end || '').trim();
+    b.subsRef = { id: String(sb.id), url: u, start: st, end: en, edited: false,
+                  segs: sb.segs.map(x => ({ start: Number(x.start), end: Number(x.end), text: String(x.text || '') })),
+                  sn: { op: 'subs', status: 'done', from: 'draft', url: u, start: st, end: en } };
+    b.subs = true;
+  }
   refresh();
-  toast('미리 만들어 둔 완성본이 있습니다 — 위 「▶ 완성본 보기」');
+  toast('완성본이 있어요' + (subsOk(b) ? ' · 자막도 같이 왔어요 — 미리보기에서 고칠 수 있어요' : ''));
 }
 function bindPlay() {
   if (!$('#pp')) return;
@@ -4681,7 +4717,10 @@ function bindPlay() {
   $('#ppSound').onclick = () => ppSetMuted(!PP.muted);
   $('#ppEdit').onclick = () => { const b = PP.b; PP._popping = true; ppStop(); PP._popping = false; if (b) openPicker(b); };
   $('#ppSubs').onclick = ppSubsFetch;
-  $('#ppSubEdit').onclick = () => { PP.editOpen = !PP.editOpen; ppSubsPaint(); };
+  $('#ppSubEdit').onclick = () => {
+    if (PP.mode === 'done') { openPlay(PP.i, 'seg').then(() => { PP.editOpen = true; ppSubsPaint(); }); return; }
+    PP.editOpen = !PP.editOpen; ppSubsPaint();
+  };
   $('#ppTabDone').onclick = () => { if (PP.mode !== 'done') openPlay(PP.i, 'done'); };
   $('#ppTabSeg').onclick = () => { if (PP.mode !== 'seg') openPlay(PP.i, 'seg'); };
   $('#ppBar').onclick = (e) => {
@@ -4719,9 +4758,9 @@ document.addEventListener('DOMContentLoaded', bindPlay);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 14:40';
+    a.title = '판 10.23 14:45';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 14:40';
+    ver.textContent = '10.23 14:45';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
