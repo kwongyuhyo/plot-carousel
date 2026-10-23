@@ -4758,9 +4758,9 @@ document.addEventListener('DOMContentLoaded', bindPlay);
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 23:57';
+    a.title = '판 10.24 00:12';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 23:57';
+    ver.textContent = '10.24 00:12';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -4810,9 +4810,69 @@ document.addEventListener('DOMContentLoaded', bindPlay);
       }
     }
   }
+  /* 10/24 규효 "봇 UI 사용자 편의 — 메뉴·화면 이동" — 다른 화면으로 가려면 늘 홈을 거쳐야 했다.
+     '← PLOT 제작' 옆 ▾ 를 누르면 화면 목록이 펼쳐진다. 지금 화면은 표시만. */
+  var PAGES = [['./', '홈'], ['sources.html', '오늘의 초안'], ['shorts.html', '숏폼 제작'],
+               ['carousel.html', '캐러셀 스튜디오'], ['perf.html', 'PLOT 성과'], ['photos.html', '사진 DB']];
+  function menu() {
+    if (document.getElementById('plotNavMenu')) return;
+    var here = (location.pathname.split('/').pop() || '');
+    var m = document.createElement('div');
+    m.id = 'plotNavMenu';
+    m.style.cssText = 'position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.35);';
+    var box = document.createElement('div');
+    box.style.cssText = 'position:absolute;left:12px;top:calc(60px + env(safe-area-inset-top));min-width:220px;' +
+      'background:var(--bg,var(--paper,#111));color:var(--text,var(--ink,#ECECF1));border:1px solid var(--line,#2A2A33);' +
+      'border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.35);padding:6px;';
+    PAGES.forEach(function (pg) {
+      var cur = pg[0] === here || (pg[0] === './' && (here === '' || here === 'index.html'));
+      var a = document.createElement('a');
+      a.href = pg[0]; a.textContent = (cur ? '● ' : '') + pg[1];
+      a.style.cssText = 'display:flex;align-items:center;min-height:46px;padding:0 14px;border-radius:10px;' +
+        'font:' + (cur ? '800' : '600') + ' 16px/1 Pretendard,-apple-system,sans-serif;color:inherit;text-decoration:none;' +
+        (cur ? 'opacity:.55;pointer-events:none;' : '');
+      box.appendChild(a);
+    });
+    m.appendChild(box);
+    m.addEventListener('click', function (e) { if (e.target === m) close(); });
+    document.body.appendChild(m);
+    try { history.pushState({ plotNav: 1 }, ''); } catch (e) {}
+  }
+  function close() {
+    var m = document.getElementById('plotNavMenu');
+    if (!m) return;
+    m.remove();
+    try { if (history.state && history.state.plotNav) history.back(); } catch (e) {}
+  }
+  window.addEventListener('popstate', function () { var m = document.getElementById('plotNavMenu'); if (m) m.remove(); });
+  function addMenu() {
+    var a = document.querySelector('a[aria-label="PLOT 제작 홈으로"]');
+    if (!a || document.getElementById('plotNavBtn')) return;
+    var b = document.createElement('button');
+    b.id = 'plotNavBtn'; b.type = 'button'; b.textContent = '▾';
+    b.setAttribute('aria-label', '다른 화면으로');
+    b.style.cssText = 'font:700 15px/1 -apple-system,sans-serif;color:var(--text,var(--ink,#ECECF1));background:none;' +
+      'border:1px solid var(--line,#2A2A33);border-radius:9px;min-width:34px;min-height:34px;margin:0 10px 0 -8px;cursor:pointer;flex:none;';
+    if (a.style.position === 'fixed') {
+      b.style.cssText += 'position:fixed;top:calc(16px + env(safe-area-inset-top));left:' + (a.getBoundingClientRect().right + 16) + 'px;z-index:9999;' +
+        'background:var(--glass,rgba(10,10,12,.72));backdrop-filter:blur(8px);';
+      document.body.appendChild(b);
+    } else {                                        // 링크와 ▾ 를 한 줄로 묶는다 (헤더가 세로로 쌓는 화면에서도)
+      var w = document.createElement('span');
+      w.style.cssText = 'display:inline-flex;align-items:center;flex:none;align-self:flex-start;';
+      a.parentNode.insertBefore(w, a);
+      w.appendChild(a); w.appendChild(b);
+      b.style.margin = '0 10px 0 -6px';
+    }
+    b.onclick = function () { document.getElementById('plotNavMenu') ? close() : menu(); };
+    if (window.innerWidth < 380) {                  // 좁은 폰에서는 판 번호를 숨겨 자리를 만든다 (판은 길게 눌러 title 로)
+      var v = a.querySelector('span'); if (v) v.style.display = 'none';
+    }
+  }
+  function boot() { put(); addMenu(); }
   if (document.readyState === 'loading')
-    document.addEventListener('DOMContentLoaded', put);
-  else put();
+    document.addEventListener('DOMContentLoaded', boot);
+  else boot();
 })();
 </script>
 

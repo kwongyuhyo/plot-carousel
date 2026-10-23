@@ -396,26 +396,27 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   </header>
 
   <nav class="index">
-    <a class="row" href="carousel.html">
-      <div class="num">01<i></i><span class="lat">Carousel</span></div>
-      <h2>캐러셀 스튜디오</h2>
-      <p>제목·본문·사진을 넣으면 화면에서 바로 슬라이드가 됩니다.
-         봇과 같은 렌더 규칙.</p>
-      <div class="meta" id="cMeta"></div>
+    <!-- 10/24 규효 "봇 UI 사용자 편의 측면에서 다듬고 정리" — 매일 여는 순서대로: 초안 → 숏폼 → 캐러셀 → 성과 → 사진 -->
+    <a class="row" href="sources.html">
+      <div class="num">01<i></i><span class="lat">Drafts</span></div>
+      <h2>오늘의 초안</h2>
+      <p>맥이 한 시간마다 써 둔 캐러셀·숏폼 초안. 보고 고치고 올립니다.
+         이슈·기획 소스와 맡기기도 여기.</p>
+      <div class="meta" id="dMeta"></div>
     </a>
     <a class="row" href="shorts.html">
       <div class="num">02<i></i><span class="lat">Shorts</span></div>
-      <h2>숏폼 양식</h2>
-      <p>곡·아티스트·구간을 채우면 글자 배치가 바로 보입니다.
-         다 쓰면 제작 대기열로.</p>
+      <h2>숏폼 제작</h2>
+      <p>영상 주소·구간·세 줄을 넣고 구간 재생으로 미리 본 뒤
+         맥으로 바로 제작.</p>
       <div class="meta" id="sMeta"></div>
     </a>
-    <a class="row" href="sources.html">
-      <div class="num">03<i></i><span class="lat">Sources</span></div>
-      <h2>오늘의 소재</h2>
-      <p>지정한 매거진에서 평소보다 크게 터진 음악 소식.
-         고르면 제작으로 넘어갑니다.</p>
-      <div class="meta" id="mMeta"></div>
+    <a class="row" href="carousel.html">
+      <div class="num">03<i></i><span class="lat">Carousel</span></div>
+      <h2>캐러셀 스튜디오</h2>
+      <p>제목·본문·사진을 넣으면 화면에서 바로 슬라이드가 됩니다.
+         초안을 열어 고치는 곳.</p>
+      <div class="meta" id="cMeta"></div>
     </a>
     <a class="row" href="perf.html">
       <div class="num">04<i></i><span class="lat">Performance</span></div>
@@ -482,14 +483,9 @@ if ('serviceWorker' in navigator) {
       '진행 상황은 채팅에서 <code>/queue</code>. ' +
       '완성본은 만들어지는 대로 <b>폰으로 · 레이어만 · 리프레임 수정</b> 버튼과 함께 도착합니다.';
   } else {
-    cMeta.textContent = '브라우저에서 완결 · 오프라인';
-    sMeta.className = 'meta warn';
-    sMeta.textContent = '제작까지 가려면 텔레그램에서';
-
-    foot.innerHTML =
-      '숏폼 양식은 봇에 작업을 거는 것이 목적이라, 일반 브라우저에서는 ' +
-      '<b>양식 텍스트 복사</b>까지만 됩니다. 채팅 하단 키보드의 ' +
-      '<b>숏폼 양식</b> 버튼으로 열면 쓴 내용이 곧장 제작 대기열로 넘어갑니다.';
+    cMeta.textContent = '';
+    sMeta.textContent = '';
+    foot.innerHTML = '';
     setupInstall();
   }
 
@@ -510,13 +506,15 @@ if ('serviceWorker' in navigator) {
     })
     .catch(() => {});
 
-  fetch('./magazines.json', { cache: 'no-cache' })
+  fetch('./drafts.json', { cache: 'no-cache' })
     .then((r) => (r.ok ? r.json() : null))
     .then((d) => {
       if (!d) return;
-      const n = (d.candidates || []).length;
-      if (n) document.getElementById('mMeta').textContent =
-        '오늘 후보 ' + n + '건' + (d.generated_at ? ' · ' + d.generated_at : '');
+      const it = d.items || [];
+      if (!it.length) return;
+      const last = it.map((x) => String(x.made_at || '')).sort().pop() || '';
+      document.getElementById('dMeta').textContent =
+        '초안 ' + it.length + '건' + (last ? ' · 마지막 ' + last.slice(5, 10).replace('-', '/') + ' ' + last.slice(11, 16) : '');
     })
     .catch(() => {});
 
@@ -547,7 +545,7 @@ if ('serviceWorker' in navigator) {
   }
 })();
 </script>
-<div style="text-align:center;font:500 12.5px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 10.23 23:57</div>
+<div style="text-align:center;font:500 12.5px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 10.24 00:12</div>
 
 <script>
 (function () {

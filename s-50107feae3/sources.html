@@ -642,6 +642,17 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .ig .med.gone .alt{display:block; font-size:16px; font-weight:700; line-height:1.55; color:var(--text); text-align:center; white-space:pre-wrap}
 .ig .med.gone .one{display:none}
 .drAfter{margin-top:28px}
+
+/* 10/24 오늘 할 일 접기 */
+details.todoFold{margin:0 0 12px;border:1px solid var(--line);border-radius:12px;background:var(--card,transparent)}
+details.todoFold>summary{list-style:none;display:flex;align-items:center;gap:8px;cursor:pointer;padding:2px 6px 2px 0}
+details.todoFold>summary::-webkit-details-marker{display:none}
+details.todoFold>summary .todo{flex:1;margin:0;border:0;background:none}
+details.todoFold .tfR{display:flex;align-items:center;gap:6px;flex:none}
+details.todoFold .tfNew{font:inherit;font-size:13px;font-weight:700;padding:7px 10px;border-radius:9px;border:1px solid var(--line);background:none;color:inherit;min-height:34px}
+details.todoFold .tfR i{font-style:normal;opacity:.6;transition:transform .15s}
+details.todoFold[open] .tfR i{transform:rotate(180deg)}
+details.todoFold .tfIn{padding:0 10px 4px}
 </style>
 
 <link rel="manifest" href="manifest.webmanifest?v=37">
@@ -929,7 +940,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   <div class="split" id="grp">
     <button type="button" data-grp="info" aria-selected="true">이슈 · 뉴스</button>
     <button type="button" data-grp="plan" aria-selected="false">기획 소스</button>
-    <button type="button" data-grp="draft" aria-selected="false" id="grpDraft">오늘의 초안</button>
+    <button type="button" data-grp="draft" aria-selected="false" id="grpDraft">초안</button>
     <button type="button" data-grp="follow" aria-selected="false" id="grpFollow">후속 기획</button>
     <a class="jump" href="perf.html">PLOT 성과 <span aria-hidden="true">→</span></a>
   </div>
@@ -2182,12 +2193,38 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       .then(function (d) { ALR = d; if (GRP === 'draft' && !DR_DAY) renderDrafts(); }).catch(function () {});
   }
   function alrBox() {                              // 10/21 지켜보기 알림 (config/watch.json · collectors/watch_alerts)
-    var rows = (ALR && ALR.items) || [];
+    var rows = alrRows();
     if (!rows.length) return '';
-    return '<div class="ytx alr"><div class="hd"><b>🔔 지켜보던 것</b> <span>' + rows.length + '건</span></div>' + rows.slice(0, 3).map(function (x) {
+    return '<div class="ytx alr"><div class="hd"><b>🔔 지켜보던 것</b> <span>' + rows.length + '건</span></div>' + rows.slice(0, 4).map(function (x) {
       return '<div class="yr"><div class="yt">' + esc(x.kw) + ' — ' + esc(x.why) + '</div><div class="ys">@' + esc(x.account) + ' · ' +
-        esc(String(x.at || '').slice(5, 10)) + ' · ' + esc(x.head) + (x.url ? ' · <a href="' + escU(x.url) + '" target="_blank" rel="noopener">원글</a>' : '') + '</div></div>';
+        esc(String(x.at || '').slice(5, 10)) + ' · ' + esc(String(x.head || '').slice(0, 90)) + (x.url ? ' · <a href="' + escU(x.url) + '" target="_blank" rel="noopener">원글</a>' : '') +
+        (x.more ? ' <small>외 ' + x.more + '건</small>' : '') + '</div></div>';
     }).join('') + '</div>';
+  }
+  /* 10/24 규효 "봇 UI 사용자 편의" — 초안 위에 쌓여 있던 지켜보기·API·맡기기·완성본·유튜브 물음을 접어 둔다.
+     초안이 열자마자 보이게. 접은 줄에 할 일 숫자가 그대로 보이고, 맡기기는 접힌 채로도 바로 누를 수 있다. */
+  function todoFold() {
+    var open = false; try { open = localStorage.getItem('plot.todoOpen') === '1'; } catch (e) {}
+    var inner = alrBox() + usageBox() + orderBox() + rndBox() + ytBox();
+    return '<details class="todoFold"' + (open ? ' open' : '') + '><summary>' + todoBar() +
+      '<span class="tfR"><button type="button" class="tfNew" data-odnew>+ 맡기기</button><i aria-hidden="true">▾</i></span></summary>' +
+      '<div class="tfIn">' + inner + '</div></details>';
+  }
+  document.addEventListener('toggle', function (e) {
+    var d = e.target; if (!d || !d.classList || !d.classList.contains('todoFold')) return;
+    try { localStorage.setItem('plot.todoOpen', d.open ? '1' : '0'); } catch (x) {}
+  }, true);
+  document.addEventListener('click', function (e) {            // 접힌 줄 안의 '+ 맡기기' 는 펼치지 않고 맡기기만
+    if (e.target.closest && e.target.closest('summary .tfNew')) e.preventDefault();
+  }, true);
+  function alrRows() {                                          // 같은 지켜보기(kw·why)에 걸린 글은 한 줄로 — 10/24
+    var seen = {}, out = [];
+    ((ALR && ALR.items) || []).forEach(function (x) {
+      var k = (x.kw || '') + '|' + (x.why || '');
+      if (seen[k]) { seen[k].more = (seen[k].more || 0) + 1; return; }
+      var y = Object.assign({}, x); seen[k] = y; out.push(y);
+    });
+    return out;
   }
   function todoBar() {                            // 10/20 — 오늘 할 일 한 줄 (평가 안 한 초안 · 새 완성본 · 못 만든 맡기기 · 유튜브 물음)
     var items = (DR && DR.items) || [], ev = evGet();
@@ -2201,9 +2238,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (rnew) bits.push('새 완성본 <b>' + rnew + '</b>');
     if (odf) bits.push('못 만든 맡기기 <b>' + odf + '</b>');
     if (yq) bits.push('유튜브 물음 <b>' + yq + '</b>');
-    var al = ((ALR && ALR.items) || []).length;
+    var al = alrRows().length;
     if (al) bits.push('지켜보던 것 <b>' + al + '</b>');
-    return bits.length ? '<div class="todo">오늘 할 일 · ' + bits.join(' · ') + '</div>' : '<div class="todo ok">오늘 할 일 없음 — 다 봤습니다</div>';
+    return bits.length ? '<div class="todo">오늘 할 일 · ' + bits.join(' · ') + '</div>' : '<div class="todo ok">오늘 할 일 없음 — 맡기기·완성본·비용은 여기</div>';
   }
   /* ── 작성기 성적표 (scripts/writer_report · 10/21) — 이번 7일 vs 지난 7일, 숫자와 화살표만 ── */
   var WR = null;
@@ -3857,14 +3894,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
       // 10/17 — 초안 피드를 위로: 서사형·평가 노트·발행 현황·편성은 피드 아래로 내린다
-      host.innerHTML = (DR_DAY ? '' : todoBar() + alrBox() + usageBox() + reqBox() + orderBox() + rndBox() + ytBox()) + dayBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = (DR_DAY ? '' : reqBox() + todoFold()) + dayBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
-        '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length + '건 — 발행될 모양 그대로. 보내기(✈︎)를 누르면 인스타·스튜디오·숏폼으로' + (items.some(function (x) { return x.key; }) ? ', 바로 발행·채택·버림까지' : '') + '.</div>';
+        '<div class="fsum">' + esc(String(DR.updated_at || DR.generated_at || '').replace(/^\d{4}-/, '').replace(' KST', '')) + ' · ' + items.length + '건 · 발행될 모양 그대로 — ✈︎ 로 인스타·스튜디오·숏폼' + (items.some(function (x) { return x.key; }) ? '·바로 발행' : '') + '</div>';
       renderFeed(host);
       host.insertAdjacentHTML('beforeend', '<div class="drAfter">' + storyBox() + evNote(items) + skipBox() + wrBox() + pubBox() + cornerBar() + '</div>');
       return;
     }
-    host.innerHTML = (DR_DAY ? '' : todoBar() + alrBox() + reqBox() + orderBox() + rndBox() + ytBox() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = (DR_DAY ? '' : reqBox() + todoFold() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
@@ -4016,7 +4053,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       if (!DR_DAY) DR = d;
       setTimeout(function () { evLoad(); if (OD === null) odLoad(); }, 0);
       var n = (d && d.items || []).length, ld = d.date && d.date !== kstDay(new Date()) ? String(d.date) : '';
-      if (n) document.getElementById('grpDraft').textContent = (ld ? dayLabel(ld) + ' 초안 ' : '오늘의 초안 ') + n;
+      if (n) document.getElementById('grpDraft').textContent = '초안 ' + n;
       if (GRP === 'draft') renderDrafts();
     })
     .catch(function () {});
@@ -4054,9 +4091,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.23 23:57';
+    a.title = '판 10.24 00:12';
     var ver = document.createElement('span');
-    ver.textContent = '10.23 23:57';
+    ver.textContent = '10.24 00:12';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -4106,9 +4143,69 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       }
     }
   }
+  /* 10/24 규효 "봇 UI 사용자 편의 — 메뉴·화면 이동" — 다른 화면으로 가려면 늘 홈을 거쳐야 했다.
+     '← PLOT 제작' 옆 ▾ 를 누르면 화면 목록이 펼쳐진다. 지금 화면은 표시만. */
+  var PAGES = [['./', '홈'], ['sources.html', '오늘의 초안'], ['shorts.html', '숏폼 제작'],
+               ['carousel.html', '캐러셀 스튜디오'], ['perf.html', 'PLOT 성과'], ['photos.html', '사진 DB']];
+  function menu() {
+    if (document.getElementById('plotNavMenu')) return;
+    var here = (location.pathname.split('/').pop() || '');
+    var m = document.createElement('div');
+    m.id = 'plotNavMenu';
+    m.style.cssText = 'position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.35);';
+    var box = document.createElement('div');
+    box.style.cssText = 'position:absolute;left:12px;top:calc(60px + env(safe-area-inset-top));min-width:220px;' +
+      'background:var(--bg,var(--paper,#111));color:var(--text,var(--ink,#ECECF1));border:1px solid var(--line,#2A2A33);' +
+      'border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.35);padding:6px;';
+    PAGES.forEach(function (pg) {
+      var cur = pg[0] === here || (pg[0] === './' && (here === '' || here === 'index.html'));
+      var a = document.createElement('a');
+      a.href = pg[0]; a.textContent = (cur ? '● ' : '') + pg[1];
+      a.style.cssText = 'display:flex;align-items:center;min-height:46px;padding:0 14px;border-radius:10px;' +
+        'font:' + (cur ? '800' : '600') + ' 16px/1 Pretendard,-apple-system,sans-serif;color:inherit;text-decoration:none;' +
+        (cur ? 'opacity:.55;pointer-events:none;' : '');
+      box.appendChild(a);
+    });
+    m.appendChild(box);
+    m.addEventListener('click', function (e) { if (e.target === m) close(); });
+    document.body.appendChild(m);
+    try { history.pushState({ plotNav: 1 }, ''); } catch (e) {}
+  }
+  function close() {
+    var m = document.getElementById('plotNavMenu');
+    if (!m) return;
+    m.remove();
+    try { if (history.state && history.state.plotNav) history.back(); } catch (e) {}
+  }
+  window.addEventListener('popstate', function () { var m = document.getElementById('plotNavMenu'); if (m) m.remove(); });
+  function addMenu() {
+    var a = document.querySelector('a[aria-label="PLOT 제작 홈으로"]');
+    if (!a || document.getElementById('plotNavBtn')) return;
+    var b = document.createElement('button');
+    b.id = 'plotNavBtn'; b.type = 'button'; b.textContent = '▾';
+    b.setAttribute('aria-label', '다른 화면으로');
+    b.style.cssText = 'font:700 15px/1 -apple-system,sans-serif;color:var(--text,var(--ink,#ECECF1));background:none;' +
+      'border:1px solid var(--line,#2A2A33);border-radius:9px;min-width:34px;min-height:34px;margin:0 10px 0 -8px;cursor:pointer;flex:none;';
+    if (a.style.position === 'fixed') {
+      b.style.cssText += 'position:fixed;top:calc(16px + env(safe-area-inset-top));left:' + (a.getBoundingClientRect().right + 16) + 'px;z-index:9999;' +
+        'background:var(--glass,rgba(10,10,12,.72));backdrop-filter:blur(8px);';
+      document.body.appendChild(b);
+    } else {                                        // 링크와 ▾ 를 한 줄로 묶는다 (헤더가 세로로 쌓는 화면에서도)
+      var w = document.createElement('span');
+      w.style.cssText = 'display:inline-flex;align-items:center;flex:none;align-self:flex-start;';
+      a.parentNode.insertBefore(w, a);
+      w.appendChild(a); w.appendChild(b);
+      b.style.margin = '0 10px 0 -6px';
+    }
+    b.onclick = function () { document.getElementById('plotNavMenu') ? close() : menu(); };
+    if (window.innerWidth < 380) {                  // 좁은 폰에서는 판 번호를 숨겨 자리를 만든다 (판은 길게 눌러 title 로)
+      var v = a.querySelector('span'); if (v) v.style.display = 'none';
+    }
+  }
+  function boot() { put(); addMenu(); }
   if (document.readyState === 'loading')
-    document.addEventListener('DOMContentLoaded', put);
-  else put();
+    document.addEventListener('DOMContentLoaded', boot);
+  else boot();
 })();
 </script>
 
