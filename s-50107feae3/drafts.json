@@ -1576,13 +1576,122 @@
     "at": "2026-10-23T16:17+09:00"
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-2f585825",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/reel/De1FfhRBrEO/?srtk=MTlnZjgxdTJyOTVxaQ==",
+    "image": null,
+    "head": "막내 율음을 위해 저스트뮤직 식구들이 학교 축제 무대에 섰다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-23T20:29+09:00",
+   "key": "97464d40",
+   "by": "claude",
+   "subjects": [
+    "율음"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "막내 율음의 학교 축제 무대를 저스트뮤직 식구들이 함께 채웠다",
+    "why": "규효 제작 결정 — 레이블이 막내를 위해 움직인 공개 이야기 (다른 매거진 릴스로 화제)"
+   },
+   "added": "claude",
+   "added_at": "2026-10-23T20:29+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n저스트뮤직 식구들이 막내 율음의 학교 축제 무대에 함께 오른 것으로 알려졌습니다.\n\n율음은 열세 살에 스윙스(@itsjustswings)의 눈에 띄어 WEDAPLUGG RECORDS에 들어간 래퍼인데요, 레이블이 해체된 뒤 저스트뮤직으로 다시 영입됐습니다. 2024년 10월에는 프로듀싱까지 혼자 맡은 정규 2집 [CICADA]를 냈습니다.\n\n열세 살에 스윙스가 알아본 막내의 학교 축제 무대에 레이블 식구들이 직접 걸음한 셈입니다.\n\n#PLOT #율음 #저스트뮤직 #스윙스 #CICADA #국힙\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792754951/mi1favsrcumwtpwtslqa.jpg\n제목: 막내 율음을 위해|저스트뮤직이 나섰다\n부제: 학교 축제 무대에 함께 선 레이블 식구들\n출처: 멜론\n",
+    "caption": "저스트뮤직 식구들이 막내 율음의 학교 축제 무대에 함께 오른 것으로 알려졌습니다.\n\n율음은 열세 살에 스윙스(@itsjustswings)의 눈에 띄어 WEDAPLUGG RECORDS에 들어간 래퍼인데요, 레이블이 해체된 뒤 저스트뮤직으로 다시 영입됐습니다. 2024년 10월에는 프로듀싱까지 혼자 맡은 정규 2집 [CICADA]를 냈습니다.\n\n열세 살에 스윙스가 알아본 막내의 학교 축제 무대에 레이블 식구들이 직접 걸음한 셈입니다.\n\n#PLOT #율음 #저스트뮤직 #스윙스 #CICADA #국힙",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754951/mi1favsrcumwtpwtslqa.jpg",
+      "credit": "멜론",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/116/18/537/11618537_20241016162731.jpg/melon/resize/1000/quality/90/optimize",
+      "album": "CICADA"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754951/mi1favsrcumwtpwtslqa.jpg",
+      "credit": "멜론",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/116/18/537/11618537_20241016162731.jpg/melon/resize/1000/quality/90/optimize",
+      "album": "CICADA"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "막내 율음을 위해|저스트뮤직이 나섰다",
+      "sub": "학교 축제 무대에 함께 선 레이블 식구들"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "저스트뮤직 식구들이|막내 축제 무대에 떴다",
+      "sub": "율음의 학교 축제"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "스윙스가 알아본 막내|율음의 축제 무대",
+      "sub": "저스트뮤직이 함께 섰다"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진([CICADA] 커버)이 저해상도라 확대된 티가 나고 깨져 보임 — 고화질 커버나 율음 본인 사진으로 바꿔 주세요",
+     "[검증] 축제 무대(어느 학교·누가 섰는지·율음이 저스트뮤직 '막내'인지)는 @hiptake_ 릴스 말고 웹에서 확인 못 함 — 릴스 원문·원출처를 보고 발행해 주세요 (WebFetch 로 릴스 캡션도 안 열림)",
+     "축제 무대 자체는 @hiptake_ 릴스 말고 원출처(저스트뮤직·멤버·율음 본인 게시물)를 못 찾아 '~로 알려졌다' 로 썼습니다 — 누가 무대에 올랐는지는 확인 못 해 이름을 뺐습니다",
+     "표지 사진은 [CICADA] 앨범 커버(율음 본인 사진이 사진 DB 에 없음) — 율음 본인 공개 사진이 있으면 바꿔 주세요"
+    ],
+    "research": [
+     {
+      "title": "나무위키 — 율음",
+      "link": "https://namu.wiki/w/율음"
+     },
+     {
+      "title": "나무위키 — Just Music",
+      "link": "https://namu.wiki/w/Just%20Music"
+     },
+     {
+      "title": "[앨범 리뷰] 율음 정규 2집 <CICADA> (브런치)",
+      "link": "https://brunch.co.kr/@breakevenpoint/127"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754956/ljapzrbqimpxz6dais3t.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754956/ypzbrmhyrkov0qkzxqsa.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754959/iq65cgcpion5y36paofv.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754959/wkefay8zqojvicxy7kuf.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754956/ljapzrbqimpxz6dais3t.jpg"
+     },
+     "at": "2026-10-23T20:29+09:00",
+     "v": {
+      "A": "2c2963f3",
+      "B": "73354b5e",
+      "C": "42cb86b7"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 3,
-  "done": 15,
+  "done": 17,
   "goal": 28,
   "corners": [
    {
@@ -1661,8 +1770,8 @@
     "key": "followup",
     "name": "후속",
     "weekly": 2,
-    "done": 0,
-    "left": 2,
+    "done": 1,
+    "left": 1,
     "need_today": 1,
     "day": null,
     "next_no": null,
@@ -1709,19 +1818,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 11,
+    "done": 12,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 8,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T16:17+09:00"
+  "at": "2026-10-23T20:29+09:00"
  },
  "slots": {
-  "basis": 217,
+  "basis": 219,
   "card": [
    {
     "from": 18,
@@ -1732,20 +1841,20 @@
     "n": 30
    },
    {
-    "from": 15,
-    "to": 18,
-    "at": "16:30",
-    "mult": 1.8,
-    "median": 1.05,
-    "n": 9
-   },
-   {
     "from": 21,
     "to": 24,
     "at": "22:30",
     "mult": 1.7,
     "median": 0.56,
     "n": 26
+   },
+   {
+    "from": 15,
+    "to": 18,
+    "at": "16:30",
+    "mult": 1.57,
+    "median": 0.75,
+    "n": 11
    }
   ],
   "shorts": [
