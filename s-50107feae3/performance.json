@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22 22:04 KST",
+ "generated_at": "2026-10-23 15:05 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1445,11 +1445,41 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-22 19:04 KST"
+  "daily": "2026-10-22 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-22T21:52:26+09:00",
+  "fetched_at": "2026-10-23T15:05:01+09:00",
   "posts": [
+   {
+    "t": "2026-10-23T12:44+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "트와이스 지효(@_zyozyo)가 21년 만에 JYP엔터테인먼트를 떠났습"
+   },
+   {
+    "t": "2026-10-23T12:33+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "저스틴 비버가 13년 만에 한국에 왔습니다."
+   },
+   {
+    "t": "2026-10-23T06:50+09:00",
+    "type": "VIDEO",
+    "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문"
+   },
+   {
+    "t": "2026-10-23T03:25+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "SYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrg"
+   },
+   {
+    "t": "2026-10-23T03:19+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "GGM 킴보(@ggm_kimbo)가 23일 오후 6시, 솔쟈와 함께한 새"
+   },
+   {
+    "t": "2026-10-22T21:59+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "'민희진(@min.hee.jin) 효과'를 어떻게 셀 것인가가 법정의 쟁"
+   },
    {
     "t": "2026-10-22T12:59+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1594,12 +1624,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 104,
-  "posted": 13,
-  "posts": 38,
-  "rate": 0.12,
-  "adopted_mult": 0.78,
-  "own_mult": 1.23,
+  "drafts": 113,
+  "posted": 18,
+  "posts": 42,
+  "rate": 0.16,
+  "adopted_mult": 0.86,
+  "own_mult": 1.13,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1612,13 +1642,13 @@
     "mult": 0.68
    },
    "정보": {
-    "drafts": 54,
-    "posted": 9,
-    "mult": 0.78
+    "drafts": 60,
+    "posted": 12,
+    "mult": 0.92
    },
    "클립": {
-    "drafts": 23,
-    "posted": 0,
+    "drafts": 24,
+    "posted": 1,
     "mult": null
    },
    "재포장": {
@@ -1637,8 +1667,8 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 1,
-    "posted": 0,
+    "drafts": 3,
+    "posted": 1,
     "mult": null
    },
    "속보": {
@@ -1654,13 +1684,13 @@
   },
   "corners": {
    "news": {
-    "drafts": 55,
-    "posted": 10,
-    "mult": 0.75
+    "drafts": 61,
+    "posted": 13,
+    "mult": 0.78
    },
    "mal": {
-    "drafts": 23,
-    "posted": 0,
+    "drafts": 24,
+    "posted": 1,
     "mult": null
    },
    "again": {
@@ -1687,6 +1717,16 @@
     "drafts": 5,
     "posted": 0,
     "mult": null
+   },
+   "newalbums": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "anniv": {
+    "drafts": 1,
+    "posted": 1,
+    "mult": null
    }
   },
   "repack": [
@@ -1701,71 +1741,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-19",
-    "lane": "정보",
-    "who": "크러쉬",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "59fe0b4d",
-    "posted": "DeqzmNhj4Fo",
-    "head": "크러쉬가 1년 2개월 만의 신곡에 아이유(@dlwlrma)를 불렀습니다.",
-    "url": "https://www.instagram.com/p/DeqzmNhj4Fo/",
-    "mult": 1.05
-   },
-   {
-    "day": "2026-10-19",
-    "lane": "정보",
-    "who": "리센느",
-    "repack": false,
-    "grade": "A",
-    "corner": "tteolgi",
-    "key": "aa79f6b2",
-    "posted": "Detv-dlD-sH",
-    "head": "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@rescene_official)",
-    "url": "https://www.instagram.com/p/Detv-dlD-sH/",
-    "mult": 1.22
-   },
-   {
-    "day": "2026-10-20",
-    "lane": "정보",
-    "who": "A2O LITE",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "f023e1c4",
-    "posted": "DeyA8tAmeic",
-    "head": "A2O LITE(@a2o.lite)가 데뷔 8일 만에 음악방송 트로피 두 개를 들어 올렸습",
-    "url": "https://www.instagram.com/p/DeyA8tAmeic/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-21",
-    "lane": "정보",
-    "who": "원진",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "2607607e",
-    "posted": "DevvD8NlA2d",
-    "head": "원진의 첫 솔로 정규 앨범 제목은 [망상록]입니다.",
-    "url": "https://www.instagram.com/p/DevvD8NlA2d/",
-    "mult": 0.37
-   },
-   {
-    "day": "2026-10-21",
-    "lane": "정보",
-    "who": "저스틴 비버",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "95cc7f3d",
-    "posted": "Devt4vSlLKr",
-    "head": "저스틴 비버의 브랜드 SKYLRK가 서울에 첫 팝업을 엽니다.",
-    "url": "https://www.instagram.com/p/Devt4vSlLKr/",
-    "mult": 0.51
-   },
    {
     "day": "2026-10-21",
     "lane": "정보",
@@ -1803,6 +1778,71 @@
     "posted": "DeyEnOemYqb",
     "head": "올해 스포티파이 추천 목록에서 5천만 곡 넘게 빠졌습니다.",
     "url": "https://www.instagram.com/p/DeyEnOemYqb/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-22",
+    "lane": "클립",
+    "who": "언오피셜보이",
+    "repack": false,
+    "grade": "A",
+    "corner": "mal",
+    "key": "9e042f97",
+    "posted": "Dez_QQxzyuc",
+    "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문자 이야기를 직접 ",
+    "url": "https://www.instagram.com/reel/Dez_QQxzyuc/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-22",
+    "lane": "정보",
+    "who": "민희진",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "72f0ba6b",
+    "posted": "DezCdnVGVQP",
+    "head": "'민희진(@min.hee.jin) 효과'를 어떻게 셀 것인가가 법정의 쟁점이 됐습니다.",
+    "url": "https://www.instagram.com/p/DezCdnVGVQP/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
+    "lane": "정보",
+    "who": "킴보",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "8314cbca",
+    "posted": "DeznGVBmbWW",
+    "head": "GGM 킴보(@ggm_kimbo)가 23일 오후 6시, 솔쟈와 함께한 새 앨범을 발표합니다",
+    "url": "https://www.instagram.com/p/DeznGVBmbWW/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
+    "lane": "정보",
+    "who": "SYSTEM SEOUL",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "208d21b2",
+    "posted": "DeznwWamaQD",
+    "head": "SYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrgn)이 모델처럼 등",
+    "url": "https://www.instagram.com/p/DeznwWamaQD/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
+    "lane": "시리즈",
+    "who": "트와이스",
+    "repack": false,
+    "grade": "A",
+    "corner": "anniv",
+    "key": "873fdb5d",
+    "posted": "De0ntugmc8z",
+    "head": "트와이스 지효(@_zyozyo)가 21년 만에 JYP엔터테인먼트를 떠났습니다.",
+    "url": "https://www.instagram.com/p/De0ntugmc8z/",
     "mult": null
    }
   ]
