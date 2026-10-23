@@ -646,11 +646,6 @@
     }
    },
    "corner_name": "소식",
-   "pick": {
-    "rank": 2,
-    "why": "오늘 레이더 상위 · 13년 만의 방한이 지금 진행 중 — 10/21 팝업 글의 다음 편",
-    "at": "2026-10-23T10:04+09:00"
-   },
    "published": {
     "permalink": "https://www.instagram.com/p/De0mgK4meFj/",
     "cover": "A",
@@ -850,7 +845,12 @@
     }
    },
    "corner_name": "이번 주 나온 앨범",
-   "corner_no": 1
+   "corner_no": 1,
+   "pick": {
+    "rank": 1,
+    "why": "오늘이 금요일 — 고정 연재 「이번 주 나온 앨범」 첫 회는 오늘 올려야 연재가 선다",
+    "at": "2026-10-23T16:17+09:00"
+   }
   },
   {
    "source": {
@@ -1080,11 +1080,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "케이팝 쪽 이번 주 가장 큰 사람 소식 — 21년 만의 독립, 본인 손편지 말이 있다 · 케이팝은 도달 대비 팔로우가 높다",
-    "at": "2026-10-23T10:04+09:00"
-   },
    "corner_name": "소식",
    "published": {
     "permalink": "https://www.instagram.com/p/De0ntugmc8z/",
@@ -1161,13 +1156,13 @@
      "file": "ChinGuGa_IGeo_CrushN_HaNeun_GeoYeYo_Feature_no_lyrics__cta.mp4"
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "숏폼 한 자리 — 실제 한 말로 여는 '그 말' 결 · 이번 주 신곡 '삐그덕'과 같은 주",
-    "at": "2026-10-23T10:04+09:00"
-   },
    "corner_name": "그 말",
-   "corner_no": 2
+   "corner_no": 2,
+   "pick": {
+    "rank": 2,
+    "why": "숏폼 한 자리 — 실제 한 말로 여는 '그 말' 결 · 신곡 '삐그덕' 활동 주",
+    "at": "2026-10-23T16:17+09:00"
+   }
   },
   {
    "source": {
@@ -1450,6 +1445,137 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:lisa-pressplay",
+    "account": "텐아시아",
+    "url": "https://www.tenasia.co.kr/article/2026102302014",
+    "image": null,
+    "head": "블핑 리사, 고향 '태국' 뿌리 앨범에 담았다…'PRESS PLAY'로 솔로 컴백",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-23T16:17+09:00",
+   "key": "3219e927",
+   "by": "claude",
+   "subjects": [
+    "리사"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "리사가 새 EP [PRESS PLAY]의 첫인사를 태국어 '사와디카'로 건넸다 — 선공개곡 이름과 방콕 뮤직비디오",
+    "why": "오늘(23일) 0시 발매 · 텐아시아·보그·멜로딕 등 여러 곳 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-10-23T16:17+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n리사(@lalalalisa_m)가 오늘(23일) 솔로 EP [PRESS PLAY]를 냈습니다.\n\n여섯 곡 가운데 9월에 먼저 공개한 'SaWaDiKa'는 태국어로 '안녕하세요'라는 뜻의 인사말에서 이름을 따왔는데요, 뮤직비디오도 태국 방콕에서 찍었습니다.\n\n지난해 첫 정규 [ALTER EGO] 이후 1년 8개월 만의 솔로 앨범, 그 첫인사를 리사는 자기 나라의 말로 건넸습니다.\n\n#PLOT #리사 #블랙핑크 #프레스플레이 #사와디카\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792739867/sfojlapqkfhdzokghmcf.jpg\n제목: 리사, 새 EP 첫인사는|태국어 '사와디카'\n부제: 솔로 EP [PRESS PLAY] 오늘 발매\n출처: 텐아시아\n",
+    "caption": "리사(@lalalalisa_m)가 오늘(23일) 솔로 EP [PRESS PLAY]를 냈습니다.\n\n여섯 곡 가운데 9월에 먼저 공개한 'SaWaDiKa'는 태국어로 '안녕하세요'라는 뜻의 인사말에서 이름을 따왔는데요, 뮤직비디오도 태국 방콕에서 찍었습니다.\n\n지난해 첫 정규 [ALTER EGO] 이후 1년 8개월 만의 솔로 앨범, 그 첫인사를 리사는 자기 나라의 말로 건넸습니다.\n\n#PLOT #리사 #블랙핑크 #프레스플레이 #사와디카",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739867/sfojlapqkfhdzokghmcf.jpg",
+      "credit": "텐아시아",
+      "from": "https://img.tenasia.co.kr/photo/202610/BF.46162870.1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739869/g2l7amenpb0mazbe6wm9.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_959xq_c1/auto_pdb_리사_근황_.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/bjYMZRYs/ec80a498dfb2.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_kq4znr0m/auto_pdb_리사_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739867/sfojlapqkfhdzokghmcf.jpg",
+      "credit": "텐아시아",
+      "from": "https://img.tenasia.co.kr/photo/202610/BF.46162870.1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739869/g2l7amenpb0mazbe6wm9.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_959xq_c1/auto_pdb_리사_근황_.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/bjYMZRYs/ec80a498dfb2.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_kq4znr0m/auto_pdb_리사_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "리사, 새 EP 첫인사는|태국어 '사와디카'",
+      "sub": "솔로 EP [PRESS PLAY] 오늘 발매"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "'SaWaDiKa' 빌보드 핫100 69위 · 지미 팰런 쇼에서 한 앨범 설명은 텐아시아 한 곳에서만 봐서 뺐습니다 — 타이틀곡 이름도 기사에 없어 쓰지 않았습니다"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 — 블핑 리사, 고향 '태국' 뿌리 앨범에 담았다…'PRESS PLAY'로 솔로 컴백 (10/23)",
+      "link": "https://www.tenasia.co.kr/article/2026102302014"
+     },
+     {
+      "title": "보그 코리아 — 리사의 솔로 EP 'Press Play' 힌트들 (9/1 · 6곡 · 10/23 발매)",
+      "link": "https://www.vogue.co.kr/2026/09/01/%eb%a6%ac%ec%82%ac%ec%9d%98-%ec%86%94%eb%a1%9c-ep-press-play-%ed%9e%8c%ed%8a%b8%eb%93%a4/"
+     },
+     {
+      "title": "Melodic Magazine — LISA announces new EP Press Play to drop on October 23",
+      "link": "https://www.melodicmag.com/news/album-announcements/blackpinks-lisa-announces-new-ep-press-play-to-drop-on-october-23/"
+     },
+     {
+      "title": "We Are Resonate — LISA returns to her rap roots in Bangkok with 'SaWaDiKa'",
+      "link": "https://www.weareresonate.com/2026/09/blackpinks-lisa-returns-to-her-rap-roots-in-bangkok-with-sawadika/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739872/xwkif7ifmdkpyloynpcw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739872/ynywq5rbglroyxxfpuvq.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739872/xwkif7ifmdkpyloynpcw.jpg"
+     },
+     "at": "2026-10-23T16:17+09:00",
+     "v": {
+      "A": "c97a1824"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "오늘 0시 발매된 리사 EP — 오늘이 지나면 늦는 소식 · 표지 한 장으로 가볍게",
+    "at": "2026-10-23T16:17+09:00"
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1588,11 +1714,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 7,
+    "drafts": 8,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T15:19+09:00"
+  "at": "2026-10-23T16:17+09:00"
  },
  "slots": {
   "basis": 217,
