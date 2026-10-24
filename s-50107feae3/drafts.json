@@ -841,9 +841,110 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826408/le1lkxjmyob8k6flbeqb.jpg",
      "key": "sxqRBf5b0yU@583.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-24T16:20+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792826680/plot_studio/wnki68wfabmmkuymd3vs.mp4",
+     "at": "2026-10-24T16:24+09:00",
+     "file": "ChinGuGa_IGeo_CrushNyaGo_HaNeun_Ge_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792826681625-17fd4e2e",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 0.37,
+        "text": "그러면 닉네임을"
+       },
+       {
+        "start": 0.37,
+        "end": 0.77,
+        "text": "정해야 할 것 같다"
+       },
+       {
+        "start": 0.77,
+        "end": 1.14,
+        "text": "중학교 1학년 때!"
+       },
+       {
+        "start": 1.14,
+        "end": 3.09,
+        "text": "제가 중학교 때 별명이"
+       },
+       {
+        "start": 3.09,
+        "end": 4.44,
+        "text": "'시셥'이었거든요"
+       },
+       {
+        "start": 4.44,
+        "end": 5.45,
+        "text": "'신효섭'(본명)을"
+       },
+       {
+        "start": 5.45,
+        "end": 6.29,
+        "text": "빨리 (발음)하면"
+       },
+       {
+        "start": 6.29,
+        "end": 7.11,
+        "text": "'셥' 이렇게 해서"
+       },
+       {
+        "start": 7.11,
+        "end": 10.33,
+        "text": "그냥 아무튼 그런 게 있었어서"
+       },
+       {
+        "start": 10.33,
+        "end": 14.91,
+        "text": "아 그러면 'C-sub'을 써야겠다"
+       },
+       {
+        "start": 14.91,
+        "end": 17.16,
+        "text": "해서 C-sub을 썼어요"
+       },
+       {
+        "start": 17.16,
+        "end": 21.04,
+        "text": "C 하고 sub을 썼는데"
+       },
+       {
+        "start": 21.04,
+        "end": 22.28,
+        "text": "영어로 친구가"
+       },
+       {
+        "start": 22.28,
+        "end": 24.45,
+        "text": "이거 'Crush'냐고 하는 거예요"
+       },
+       {
+        "start": 24.45,
+        "end": 26.48,
+        "text": "제가 악필이어서"
+       },
+       {
+        "start": 26.48,
+        "end": 27.85,
+        "text": "엄청 악필이거든요"
+       },
+       {
+        "start": 27.85,
+        "end": 28.5,
+        "text": "\"Crush라는"
+       },
+       {
+        "start": 28.5,
+        "end": 29.63,
+        "text": "뜻 좋은 것 같아\" 막 이러더라고요"
+       },
+       {
+        "start": 29.63,
+        "end": 30.23,
+        "text": "그래서"
+       }
+      ]
+     }
     }
    },
    "pick": {
@@ -995,7 +1096,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-24T16:20+09:00"
+  "at": "2026-10-24T16:24+09:00"
  },
  "slots": {
   "basis": 225,
