@@ -1046,9 +1046,70 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792845182/djiqfinhvuinz7isrb8k.jpg",
      "key": "Sfmzkj5QSto@67.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-24T21:33+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792845385/plot_studio/hpdpsvbw5vlcg6rrjmik.mp4",
+     "at": "2026-10-24T21:36+09:00",
+     "file": "HanGug_HoTelBangESeo_SseuGi_SiJagHan_NoLa_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792845386204-17b9bd0d",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 3.29,
+        "text": "There's an army of"
+       },
+       {
+        "start": 3.29,
+        "end": 7.23,
+        "text": "them But you'll"
+       },
+       {
+        "start": 7.23,
+        "end": 9.62,
+        "text": "never fight alone"
+       },
+       {
+        "start": 9.62,
+        "end": 13.73,
+        "text": "Cause I wanted you"
+       },
+       {
+        "start": 13.73,
+        "end": 17.2,
+        "text": "to do That the"
+       },
+       {
+        "start": 17.2,
+        "end": 19.08,
+        "text": "wildness is ugly"
+       },
+       {
+        "start": 19.08,
+        "end": 22.35,
+        "text": "But you're"
+       },
+       {
+        "start": 22.35,
+        "end": 24.9,
+        "text": "beautiful to me"
+       },
+       {
+        "start": 24.9,
+        "end": 27.16,
+        "text": "Well, I have"
+       },
+       {
+        "start": 27.16,
+        "end": 28.82,
+        "text": "figured it out"
+       },
+       {
+        "start": 28.82,
+        "end": 30.24,
+        "text": "made my own"
+       }
+      ]
+     }
     }
    },
    "corner_name": "오늘의 노래",
@@ -1195,7 +1256,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-24T21:33+09:00"
+  "at": "2026-10-24T21:36+09:00"
  },
  "slots": {
   "basis": 227,
