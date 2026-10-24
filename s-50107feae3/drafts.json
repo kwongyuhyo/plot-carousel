@@ -964,13 +964,102 @@
    },
    "corner_name": "그 말",
    "corner_no": 4
+  },
+  {
+   "source": {
+    "id": "claude:req-73862401",
+    "account": "@ualive_mag",
+    "url": "https://www.instagram.com/reel/Dey1h13AYt9/",
+    "image": null,
+    "head": "제라드 웨이가 한국 호텔방에서 쓰기 시작한 'The World Is Ugly'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-24T21:32+09:00",
+   "key": "17b9bd0d",
+   "by": "claude",
+   "subjects": [
+    "마이 케미컬 로맨스",
+    "제라드 웨이"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "마이 케미컬 로맨스 'The World Is Ugly'는 제라드 웨이가 블랙 퍼레이드 투어 중 한국 호텔방에서 쓰기 시작한 노래",
+    "why": "한국과 이어진 해외 밴드 곡 이야기 — 제라드 웨이 본인 글이 근거 (실험 칸: 해외·음악 자체)"
+   },
+   "added": "claude",
+   "added_at": "2026-10-24T21:32+09:00",
+   "corner": "song",
+   "req": "dr-73862401-s",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=Sfmzkj5QSto\n구간: 1:07-1:38\n곡: 쓰기 시작한 노래\n아티스트: 한국 호텔방에서\n피처링:\n후킹: 제라드 웨이가\n출처: My Chemical Romance\n자막: 자동",
+    "caption": "마이 케미컬 로맨스의 'The World Is Ugly'는 한국에서 시작된 노래입니다.\n\n제라드 웨이는 2013년 4월 트위터에 이 곡을 두고 \"블랙 퍼레이드 투어 때 한국의 호텔방에서 쓰기 시작했다\"고 적었는데요, 밴드가 그 투어로 한국을 찾은 건 2008년 서울 공연 한 번뿐이었습니다.\n\n곡은 한동안 세상에 나오지 못하다가 2012년 12월 [Conventional Weapons]의 세 번째 싱글로 발표됐습니다. 제라드 웨이가 가장 좋아하는 마음 중 하나라고 꼽은 '세상은 추하지만 너는 내게 아름답다'는 노래가, 18년 전 한국의 어느 호텔방에서 시작된 셈입니다.\n\n#PLOT #마이케미컬로맨스 #제라드웨이 #TheWorldIsUgly #ConventionalWeapons",
+    "hooks": {
+     "A": "제라드 웨이가 / 한국 호텔방에서 / 쓰기 시작한 노래",
+     "B": "마이 케미컬 로맨스 / 숨은 명곡의 시작은 / 2008년 한국",
+     "C": "세상은 추하지만 / 너는 내게 / 아름답다는 노래"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Sfmzkj5QSto",
+     "credit": "My Chemical Romance",
+     "range": [
+      67.0,
+      98.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — My Chemical Romance (공식 오디오, 1:07-1:38 첫 후렴)",
+     "제라드 웨이 원글은 '서울'이 아니라 '한국의 호텔방'(Korea) — 캡션도 한국으로 씀"
+    ],
+    "research": [
+     {
+      "title": "Gerard Way on X — \"The World Is Ugly\". Started writing this in a hotel room in Korea on the BP tour. (2013-04-01)",
+      "link": "https://x.com/gerardway/status/318764741109620736"
+     },
+     {
+      "title": "Wikipedia — The World Is Ugly / The Light Behind Your Eyes",
+      "link": "https://en.wikipedia.org/wiki/The_World_Is_Ugly_/_The_Light_Behind_Your_Eyes"
+     },
+     {
+      "title": "My Chemical Romance — The World Is Ugly [Official Audio] (2012-12-18)",
+      "link": "https://www.youtube.com/watch?v=Sfmzkj5QSto"
+     },
+     {
+      "title": "Korea Times — Celine Dion, My Chemical Romance, Maroon 5 to Hit Seoul in 2008",
+      "link": "https://www.koreatimes.co.kr/entertainment/k-pop/20071218/celine-dion-my-chemical-romance-maroon-5-to-hit-seoul-in-2008"
+     },
+     {
+      "title": "마리끌레르 코리아 — 마이 케미컬 로맨스 18년 만의 내한",
+      "link": "https://www.marieclairekorea.com/culture/music/2025/07/my-chemical-romance-korea/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Sfmzkj5QSto/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792845182/djiqfinhvuinz7isrb8k.jpg",
+     "key": "Sfmzkj5QSto@67.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-24T21:33+09:00"
+    }
+   },
+   "corner_name": "오늘의 노래",
+   "corner_no": 1
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 2,
-  "done": 23,
+  "done": 25,
   "goal": 28,
   "corners": [
    {
@@ -994,7 +1083,7 @@
     "need_today": 4,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -1097,7 +1186,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 16,
+    "done": 18,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -1106,10 +1195,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-24T17:54+09:00"
+  "at": "2026-10-24T21:33+09:00"
  },
  "slots": {
-  "basis": 225,
+  "basis": 227,
   "card": [
    {
     "from": 18,
@@ -1131,9 +1220,9 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.49,
-    "median": 0.63,
-    "n": 12
+    "mult": 1.36,
+    "median": 0.44,
+    "n": 14
    }
   ],
   "shorts": [
