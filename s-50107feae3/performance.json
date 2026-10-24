@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24 15:04 KST",
+ "generated_at": "2026-10-24 19:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1445,11 +1445,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-23 22:04 KST"
+  "daily": "2026-10-24 15:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-24T14:59:44+09:00",
+  "fetched_at": "2026-10-24T19:04:25+09:00",
   "posts": [
+   {
+    "t": "2026-10-24T17:54+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "스톤스 스로우는 세상을 떠난 친구의 노래를 내려고 만든 레이블입니다."
+   },
+   {
+    "t": "2026-10-24T17:53+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "잔나비(@bandjannabi)가 데뷔 후 처음으로 발라드만 부르는 단독"
+   },
+   {
+    "t": "2026-10-24T15:25+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "에픽하이가 어제(23일) 데뷔 23주년을 맞았습니다."
+   },
    {
     "t": "2026-10-23T23:53+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1659,10 +1674,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 129,
-  "posted": 24,
-  "posts": 49,
-  "rate": 0.19,
+  "drafts": 131,
+  "posted": 27,
+  "posts": 52,
+  "rate": 0.21,
   "adopted_mult": 0.95,
   "own_mult": 1.03,
   "lanes": {
@@ -1677,12 +1692,12 @@
     "mult": null
    },
    "정보": {
-    "drafts": 74,
-    "posted": 17,
+    "drafts": 75,
+    "posted": 20,
     "mult": 0.92
    },
    "클립": {
-    "drafts": 25,
+    "drafts": 26,
     "posted": 2,
     "mult": null
    },
@@ -1719,12 +1734,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 73,
-    "posted": 16,
+    "drafts": 74,
+    "posted": 19,
     "mult": 0.92
    },
    "mal": {
-    "drafts": 25,
+    "drafts": 26,
     "posted": 2,
     "mult": null
    },
@@ -1781,45 +1796,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-22",
-    "lane": "정보",
-    "who": "민희진",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "72f0ba6b",
-    "posted": "DezCdnVGVQP",
-    "head": "'민희진(@min.hee.jin) 효과'를 어떻게 셀 것인가가 법정의 쟁점이 됐습니다.",
-    "url": "https://www.instagram.com/p/DezCdnVGVQP/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-23",
-    "lane": "정보",
-    "who": "킴보",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "8314cbca",
-    "posted": "DeznGVBmbWW",
-    "head": "GGM 킴보(@ggm_kimbo)가 23일 오후 6시, 솔쟈와 함께한 새 앨범을 발표합니다",
-    "url": "https://www.instagram.com/p/DeznGVBmbWW/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-23",
-    "lane": "정보",
-    "who": "SYSTEM SEOUL",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "208d21b2",
-    "posted": "DeznwWamaQD",
-    "head": "SYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrgn)이 모델처럼 등",
-    "url": "https://www.instagram.com/p/DeznwWamaQD/",
-    "mult": null
-   },
    {
     "day": "2026-10-23",
     "lane": "정보",
@@ -1883,6 +1859,45 @@
     "posted": "De1y_Ktj0Jk",
     "head": "일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 한 교차로 근처에서",
     "url": "https://www.instagram.com/p/De1y_Ktj0Jk/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-24",
+    "lane": "정보",
+    "who": "에픽하이",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "230b4d69",
+    "posted": "De3fBcUlMsS",
+    "head": "에픽하이가 어제(23일) 데뷔 23주년을 맞았습니다.",
+    "url": "https://www.instagram.com/p/De3fBcUlMsS/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-24",
+    "lane": "정보",
+    "who": "Peanut Butter Wolf",
+    "repack": false,
+    "grade": "B",
+    "corner": "news",
+    "key": "0ab67517",
+    "posted": "De3v_rdlMkR",
+    "head": "스톤스 스로우는 세상을 떠난 친구의 노래를 내려고 만든 레이블입니다.",
+    "url": "https://www.instagram.com/p/De3v_rdlMkR/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-24",
+    "lane": "정보",
+    "who": "잔나비",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "d39b599e",
+    "posted": "De3v75FFOkN",
+    "head": "잔나비(@bandjannabi)가 데뷔 후 처음으로 발라드만 부르는 단독 공연을 열었습니다",
+    "url": "https://www.instagram.com/p/De3v75FFOkN/",
     "mult": null
    }
   ]
