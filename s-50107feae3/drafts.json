@@ -104,13 +104,13 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "오늘(24일)이 정확히 20주년 · 고정 연재 「그날의 앨범」 #2 · 해외 팬덤이 이번 주 내내 기다린 날",
-    "at": "2026-10-24T09:59+09:00"
-   },
    "corner_name": "그날의 앨범",
-   "corner_no": 2
+   "corner_no": 2,
+   "pick": {
+    "rank": 3,
+    "why": "오늘(24일)이 정확히 20주년 · 고정 연재 「그날의 앨범」 — 오늘 지나면 의미가 줄어듦",
+    "at": "2026-10-24T16:19+09:00"
+   }
   },
   {
    "source": {
@@ -240,11 +240,6 @@
       "A": "c744073a"
      }
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "오늘이 데뷔 8주년 당일 · 'Drip' 릴스가 평소의 5.9배 — 지금 가장 뜨거운 케이팝 소식, 표지 한 장으로 싸게",
-    "at": "2026-10-24T09:59+09:00"
    },
    "corner_name": "소식"
   },
@@ -380,11 +375,6 @@
       "B": "241a19ae"
      }
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "타블로 생일 인사 4.4배 · 23년 만의 '처음'들을 잇는 사람 각도 — 국힙 쪽 도달",
-    "at": "2026-10-24T09:59+09:00"
    },
    "corner_name": "소식",
    "published": {
@@ -642,13 +632,234 @@
    },
    "corner_name": "그 말",
    "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:jannabi-ballad-kspo",
+    "account": "진일보",
+    "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000076289",
+    "image": null,
+    "head": "잔나비, KSPO돔서 '발라드' 가을밤 수놓다…\"얌전한 공연도 재미있다\"",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-24T16:19+09:00",
+   "key": "d39b599e",
+   "by": "claude",
+   "subjects": [
+    "잔나비"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "'얌전한 밴드'라는 선입견을 아예 공연으로 만들어 버렸다 — 데뷔 후 첫 발라드 단독 공연 (최정훈 본인 말)",
+    "why": "당사자 인스타 발라드 공연 글 1.7배 · AoB 잔나비 콘서트 릴스 22.5배 · 23일 첫 발라드 공연 → 24·25일 투어 파이널로 이어지는 중 · PLOT 90일간 안 다룬 이름"
+   },
+   "added": "claude",
+   "added_at": "2026-10-24T16:19+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n잔나비(@bandjannabi)가 데뷔 후 처음으로 발라드만 부르는 단독 공연을 열었습니다.\n\n23일 서울 KSPO DOME에서 열린 '10월의 어느 멋진 날에 in 서울'에서 최정훈은 \"얌전하게 공연하는 친구들이라는 선입견이 있길래 아예 그런 공연을 해버리고 싶었다\"고 말했는데요, 정장을 입은 두 사람은 브라운관 TV와 원목 의자가 놓인 방 같은 원형 무대에 섰습니다.\n\n이날 최정훈과 김도형은 자전거탄풍경의 '너에게 난, 나에게 넌'을 함께 기타를 치며 불렀습니다. 최정훈은 발라드를 부르는 것도 재미있다는 말도 남겼습니다.\n\n잔나비는 오늘(24일)과 내일 같은 무대에서 아시아 투어 파이널 '스웨트 앤 스타더스트 in 서울'을 이어 갑니다.\n\n#PLOT #잔나비 #최정훈 #김도형 #10월의어느멋진날에\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792826396/df7fncy7t66ttkh1oret.jpg\n제목: 잔나비, 데뷔 후 처음|'얌전한 공연'을 했다\n부제: 데뷔 후 첫 발라드 단독 공연, KSPO DOME\n출처: @bandjannabi\n",
+    "caption": "잔나비(@bandjannabi)가 데뷔 후 처음으로 발라드만 부르는 단독 공연을 열었습니다.\n\n23일 서울 KSPO DOME에서 열린 '10월의 어느 멋진 날에 in 서울'에서 최정훈은 \"얌전하게 공연하는 친구들이라는 선입견이 있길래 아예 그런 공연을 해버리고 싶었다\"고 말했는데요, 정장을 입은 두 사람은 브라운관 TV와 원목 의자가 놓인 방 같은 원형 무대에 섰습니다.\n\n이날 최정훈과 김도형은 자전거탄풍경의 '너에게 난, 나에게 넌'을 함께 기타를 치며 불렀습니다. 최정훈은 발라드를 부르는 것도 재미있다는 말도 남겼습니다.\n\n잔나비는 오늘(24일)과 내일 같은 무대에서 아시아 투어 파이널 '스웨트 앤 스타더스트 in 서울'을 이어 갑니다.\n\n#PLOT #잔나비 #최정훈 #김도형 #10월의어느멋진날에",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826396/df7fncy7t66ttkh1oret.jpg",
+      "credit": "@bandjannabi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg",
+      "credit": "@bandjannabi",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863101069_18649835107004950_3445643485234413709_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XSgRwPpj1nEQ7kNvwHedHq-&_nc_oc=AdoK-UJGYq3rbgM-MLCcstQ5OkQEKLjJpkklhymPtYxdcXWIs8d49AIEgoaJGMKa8es&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=wgm5z39ra0PaWTH3tOwvrQ&oh=00_AQN9VrlPjvsim39aICErfTGmPR5M0tJXlChQyxCeP1zCTw&oe=6AE0D3BD"
+     },
+     {
+      "url": "https://i.ibb.co/gpYShZp/78abec59311e.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/117/90/345/11790345_20250428151043.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/wN4YDY2W/24ea08ef6ccf.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/109/47/409/10947409_20220510101604.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826396/df7fncy7t66ttkh1oret.jpg",
+      "credit": "@bandjannabi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg",
+      "credit": "@bandjannabi",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863101069_18649835107004950_3445643485234413709_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XSgRwPpj1nEQ7kNvwHedHq-&_nc_oc=AdoK-UJGYq3rbgM-MLCcstQ5OkQEKLjJpkklhymPtYxdcXWIs8d49AIEgoaJGMKa8es&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=wgm5z39ra0PaWTH3tOwvrQ&oh=00_AQN9VrlPjvsim39aICErfTGmPR5M0tJXlChQyxCeP1zCTw&oe=6AE0D3BD"
+     },
+     {
+      "url": "https://i.ibb.co/gpYShZp/78abec59311e.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/117/90/345/11790345_20250428151043.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/wN4YDY2W/24ea08ef6ccf.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/109/47/409/10947409_20220510101604.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "잔나비, 데뷔 후 처음|'얌전한 공연'을 했다",
+      "sub": "데뷔 후 첫 발라드 단독 공연, KSPO DOME"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "잔나비가 발라드만|불러 본 날",
+      "sub": "\"발라드를 부르는 것도 재미있네요\""
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지 사진은 공식 인스타 10/23 포토부스 사진(두 사람) — 공연 현장 사진이 아님 · 기사 사진은 'Sweat & Stardust' 투어 무대라 발라드 공연 제목과 어긋나 뺐습니다"
+    ],
+    "research": [
+     {
+      "title": "진일보 — 잔나비, KSPO돔서 '발라드' 가을밤 수놓다 (10/24 · 최정훈·김도형 발언 · 세트리스트)",
+      "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000076289"
+     },
+     {
+      "title": "한국경제 — 진하고 깊게 우려낸 잔나비 감성…가을, 발라드 콘서트 (10/24 · 같은 발언 · '너에게 난, 나에게 넌')",
+      "link": "https://www.hankyung.com/article/202610242385H"
+     },
+     {
+      "title": "잔나비 공식 인스타 — 발라드 컬렉션 후기 · 24일 '스웨트 앤 스타더스트' 예고",
+      "link": "https://www.instagram.com/reel/De17XAXSiiq/"
+     },
+     {
+      "title": "한국경제 — 발라드 컬렉션·亞 투어 파이널 콘서트 예고 (9/21 · 23일 발라드 · 24~25일 투어 파이널)",
+      "link": "https://www.hankyung.com/article/202609217240H"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826399/fumluhmupn6prj0lz179.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826398/nz0zv4ejlvbisgghlgyi.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826401/q8ijjurxl8xpf7grt1yn.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826399/fumluhmupn6prj0lz179.jpg"
+     },
+     "at": "2026-10-24T16:20+09:00",
+     "v": {
+      "A": "8dbd77ad",
+      "B": "a19bedfa"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "90일간 안 다룬 잔나비 · 데뷔 후 첫 발라드 공연 다음 날, 오늘·내일 투어 파이널이 이어져 지금 가장 뜨거움 · 밴드는 도달 대비 팔로우가 높음",
+    "at": "2026-10-24T16:19+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:crush-name-csub",
+    "account": "KBS Kpop",
+    "url": "https://www.youtube.com/watch?v=sxqRBf5b0yU",
+    "image": null,
+    "head": "[리무진서비스] EP.238 크러쉬 | 삐그덕, 이런 엔딩, 미워",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-24T16:19+09:00",
+   "key": "17fd4e2e",
+   "by": "claude",
+   "subjects": [
+    "크러쉬"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "크러쉬라는 이름은 악필에서 나왔다 — 중1 때 'C-sub'(시셥)을 친구가 'Crush'로 읽었다 (본인 말)",
+    "why": "클립 순간 · 〈리무진서비스〉 238회 (신곡 '삐그덕' 발매 주) · 이름 유래라는 묘한 사실이 본인 입으로 나옴"
+   },
+   "added": "claude",
+   "added_at": "2026-10-24T16:19+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=sxqRBf5b0yU\n구간: 9:43-10:13\n곡: 'Crush'냐고 하는 거예요\n아티스트: 친구가 이거\n피처링:\n후킹: C-sub을 썼는데\n출처: KBS Kpop\n자막: 자동",
+    "caption": "크러쉬(@crush9244)라는 이름은 악필에서 나왔습니다.\n\n크러쉬는 KBS Kpop 〈리무진서비스〉 238회에서 이름이 생긴 날을 직접 꺼냈는데요, 다이나믹 듀오를 롤모델로 삼던 중학교 1학년 때 본명 신효섭에서 따온 별명 '시셥'을 'C-sub'으로 적었더니, 친구가 악필인 그 글씨를 'Crush'로 읽었다고 합니다.\n\n찾아보니 '깨부수다'와 '반하다' 두 뜻이 있었고, 크러쉬는 그중 '반하다' 쪽을 골랐습니다. 신곡 '삐그덕'을 낸 지금까지 그 이름 그대로입니다.\n\n#PLOT #크러쉬 #Crush #리무진서비스 #이무진 #삐그덕",
+    "hooks": {
+     "A": "C-sub을 썼는데 / 친구가 이거 / 'Crush'냐고 하는 거예요",
+     "B": "크러쉬라는 이름은 / 중학교 1학년 때 / 악필에서 시작됐다",
+     "C": "본명 신효섭의 '셥' / C-sub을 잘못 읽은 친구 / 그렇게 크러쉬가 됐다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=sxqRBf5b0yU",
+     "credit": "KBS Kpop",
+     "range": [
+      583.0,
+      613.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — KBS Kpop (30초 · 9:43~10:13)",
+     "영상 공개일 2026-10-22 (yt_subs 로 확인) · 9:44~10:13 화자 크러쉬 본인 자막 대조 완료"
+    ],
+    "research": [
+     {
+      "title": "KBS Kpop — [리무진서비스] EP.238 크러쉬 (자막 9:09~10:40 이름 유래)",
+      "link": "https://www.youtube.com/watch?v=sxqRBf5b0yU"
+     },
+     {
+      "title": "톱스타뉴스 — 크러쉬 '삐그덕 (Feat. 아이유)' 10/21 발매",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16253098"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/sxqRBf5b0yU/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792826408/le1lkxjmyob8k6flbeqb.jpg",
+     "key": "sxqRBf5b0yU@583.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-24T16:20+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "본인이 직접 한 말로 서는 숏폼 ('친구가 이거 Crush냐고') · '삐그덕' 발매 주 · 실제 말 첫 줄이 가장 잘 되는 결",
+    "at": "2026-10-24T16:19+09:00"
+   },
+   "corner_name": "그 말",
+   "corner_no": 4
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
   "days_left": 2,
-  "done": 22,
+  "done": 23,
   "goal": 28,
   "corners": [
    {
@@ -684,7 +895,7 @@
     "need_today": 2,
     "day": null,
     "next_no": 3,
-    "drafts": 1,
+    "drafts": 2,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -775,19 +986,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 15,
+    "done": 16,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-24T15:26+09:00"
+  "at": "2026-10-24T16:20+09:00"
  },
  "slots": {
-  "basis": 224,
+  "basis": 225,
   "card": [
    {
     "from": 18,
@@ -809,9 +1020,9 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.58,
-    "median": 0.75,
-    "n": 11
+    "mult": 1.49,
+    "median": 0.63,
+    "n": 12
    }
   ],
   "shorts": [
