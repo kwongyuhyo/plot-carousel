@@ -4426,6 +4426,24 @@ function subsOk(b) {
   return !!(r && r.id && r.segs && r.segs.length && r.url === (b.url || '').trim() &&
             r.start === (b.start || '').trim() && r.end === (b.end || '').trim());
 }
+// 10/24 규효 "자막 받기뿐만 아니라 자막 수정도" — 받아쓰기 없이 직접 쓰는 자막도 편집기를 연다 (줄이 0개여도)
+function stOk(b) {
+  const r = b && b.subsRef;
+  return !!(r && r.id && Array.isArray(r.segs) && r.url === (b.url || '').trim() &&
+            r.start === (b.start || '').trim() && r.end === (b.end || '').trim());
+}
+function ppSubsManual() {
+  const b = PP.b; if (!b) return;
+  if (!(b.start || '').trim() || !(b.end || '').trim()) { toast('구간(시작·끝)을 먼저 정해 주세요'); return; }
+  const u = (b.url || '').trim(), st = (b.start || '').trim(), en = (b.end || '').trim();
+  const id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
+  b.subsRef = { id: id, url: u, start: st, end: en, segs: [], edited: true,
+                sn: { op: 'subs', status: 'done', from: 'manual', url: u, start: st, end: en } };
+  b.subs = true;
+  PP.editOpen = true;
+  ppSubsList(); ppSubsPaint(); ppNotesPaint(); refresh();
+  toast('재생하다 멈춘 자리에서 「＋ 새 줄」 — 글을 쓰고 양 끝을 끌어 길이를 맞추세요');
+}
 function subsSpec(b) { return subsOk(b) ? '받음 ' + b.subsRef.id : '자동'; }
 
 function ppRange(b, dur) {
@@ -4533,23 +4551,23 @@ function ppSubsPaint() {
   if (!btn) return;
   const can = PP.mode === 'seg' && (PP.kind === 'yt' || PP.kind === 'file') && typeof plotStudio !== 'undefined' && plotStudio.on();
   btn.hidden = !can;
-  ed.hidden = !(subsOk(b) && (can || (PP.mode === 'done' && ppSrcKind(b))));
+  ed.hidden = !((stOk(b) && (can || (PP.mode === 'done' && ppSrcKind(b)))) || (can && !stOk(b)));
   if (PP.subsBusy) return;
   btn.disabled = false;
   btn.textContent = subsOk(b) ? '💬 말자막 다시 받기'
-                  : (b.subsRef && b.subsRef.id) ? '💬 구간이 바뀌어 다시 받기' : '💬 말자막 미리 받기';
-  const box = $('#ppSubList'), show = PP.editOpen && PP.mode === 'seg' && subsOk(b);
+                  : (b.subsRef && b.subsRef.id && !stOk(b)) ? '💬 구간이 바뀌어 다시 받기' : '💬 말자막 미리 받기';
+  const box = $('#ppSubList'), show = PP.editOpen && PP.mode === 'seg' && stOk(b);
   box.hidden = !show;
   $('#pp').classList.toggle('stEditing', show);
   if (show && !box.classList.contains('stOn')) { ST.sel = -1; ST.undo = []; stBuild(); }   // 10/24 타임라인 편집 (프리미어식)
   else if (show) { stPaint(); stCenter(stHeadRel()); stLoop(); }
-  ed.textContent = PP.mode === 'done' ? '✏️ 자막 고치기 (미리보기에서)' : PP.editOpen ? '✏️ 고치기 닫기' : '✏️ 자막 고치기 · 타임라인';
+  ed.textContent = !stOk(b) ? '✏️ 자막 직접 쓰기' : PP.mode === 'done' ? '✏️ 자막 고치기 (미리보기에서)' : PP.editOpen ? '✏️ 고치기 닫기' : '✏️ 자막 고치기 · 타임라인';
 }
 function ppSubsList() {               // 10/24 — 목록 대신 타임라인. 보일 때 다시 짓는다 (폭을 재야 해서)
   const box = $('#ppSubList'); if (!box) return;
   box.innerHTML = ''; box.classList.remove('stOn');
   ST.sel = -1; ST.undo = [];
-  if (!box.hidden && subsOk(PP.b)) stBuild();
+  if (!box.hidden && stOk(PP.b)) stBuild();
 }
 let ppSaveT = null;
 function ppSubsSave() {
@@ -4730,6 +4748,7 @@ function bindPlay() {
   $('#ppEdit').onclick = () => { const b = PP.b; PP._popping = true; ppStop(); PP._popping = false; if (b) openPicker(b); };
   $('#ppSubs').onclick = ppSubsFetch;
   $('#ppSubEdit').onclick = () => {
+    if (!stOk(PP.b)) { if (PP.mode === 'done') openPlay(PP.i, 'seg').then(ppSubsManual); else ppSubsManual(); return; }
     if (PP.mode === 'done') { openPlay(PP.i, 'seg').then(() => { PP.editOpen = true; ppSubsPaint(); }); return; }
     PP.editOpen = !PP.editOpen; ppSubsPaint();
   };
@@ -4866,7 +4885,7 @@ function stText() {
   const s = stSegs()[ST.sel], inp = box.querySelector('.stText'), w = box.querySelector('.stWhen');
   inp.disabled = !s;
   if (s) { if (document.activeElement !== inp && inp.value !== s.text) inp.value = s.text; w.textContent = (ST.sel + 1) + '번 · ' + stF(s.start) + ' → ' + stF(s.end); }
-  else { inp.value = ''; w.textContent = '줄을 누르면 여기서 글을 고칩니다'; }
+  else { inp.value = ''; w.textContent = stSegs().length ? '줄을 누르면 여기서 글을 고칩니다' : '아직 자막이 없습니다 — 넣을 자리에서 멈추고 「＋ 새 줄」'; }
   box.querySelectorAll('[data-st=split],[data-st=in],[data-st=out],[data-st=merge],[data-st=del]').forEach((x) => { x.disabled = !s; });
   const m = box.querySelector('[data-st=merge]'); if (m && s) m.disabled = ST.sel >= stSegs().length - 1;
 }
@@ -5064,9 +5083,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.24 21:36';
+    a.title = '판 10.24 22:25';
     var ver = document.createElement('span');
-    ver.textContent = '10.24 21:36';
+    ver.textContent = '10.24 22:25';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
