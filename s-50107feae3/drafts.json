@@ -1,897 +1,50 @@
 {
  "schema": 1,
- "date": "2026-10-23",
- "generated_at": "2026-10-23 09:54 KST",
+ "date": "2026-10-24",
+ "generated_at": "2026-10-24 09:55 KST",
  "items": [
   {
    "source": {
-    "id": "claude:ord-2b182eb8",
-    "account": "@규효 공유 · @hiptake_",
-    "url": "https://www.instagram.com/p/Dex98VEEzbO/?cplk=YzdhZjUxNGlsY3hv",
+    "id": "claude:anniv-taylor-debut-20",
+    "account": "AOL",
+    "url": "https://www.aol.com/articles/taylor-swifts-debut-album-turns-045000000.html",
     "image": null,
-    "head": "'내가 화근이었나'를 털어냈다는 킴보, 23일 솔쟈와 새 앨범으로 복귀",
+    "head": "Taylor Swift's Debut Album Turns 20",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-10-23T03:02+09:00",
-   "key": "8314cbca",
+   "made_at": "2026-10-24T09:59+09:00",
+   "key": "ba2d57fb",
    "by": "claude",
    "subjects": [
-    "킴보"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "'내가 화근이었나' — 지난 몇 달을 털어냈다는 킴보가 솔쟈 옆에서 다시 음악으로 돌아온다",
-    "why": "규효 맡김 · 킴보 본인 스토리 발언 + 23일 오후 6시 솔쟈와 새 앨범 (본인 게시물 확인)"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T03:02+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\nGGM 킴보(@ggm_kimbo)가 23일 오후 6시, 솔쟈와 함께한 새 앨범을 발표합니다.\n\n발매를 앞두고 킴보는 인스타그램 스토리에서 지난 몇 달을 직접 돌아본 것으로 알려졌는데요, 올해 1월 합작 [KIMBO IGGY]를 함께 낸 리치이기, 그리고 지난 9월 대마 투약 혐의로 구속된 김감전(@ksmartboi)을 떠올리며 한때 \"내가 화근이었나\"라는 생각도 했다고 적었습니다. 그러면서 결국 일어날 일이었고, 이제는 다 털어냈다고 덧붙였습니다.\n\n털어낸 자리에서 그가 다시 선 곳은 듀오로 함께해 온 솔쟈 옆입니다. 몇 달 사이 주변은 크게 달라졌지만, 킴보는 일단 음악으로 다시 움직입니다.\n\n#PLOT #킴보 #GGM킴보 #솔쟈 #솔쟈앤킴보\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792692146/djnxtpt3dclpqc8crhdw.jpg\n제목: \"내가 화근이었나\"|털어냈다는 킴보\n부제: 23일 오후 6시, 솔쟈와 새 앨범\n출처: @ggm_kimbo\n",
-    "caption": "GGM 킴보(@ggm_kimbo)가 23일 오후 6시, 솔쟈와 함께한 새 앨범을 발표합니다.\n\n발매를 앞두고 킴보는 인스타그램 스토리에서 지난 몇 달을 직접 돌아본 것으로 알려졌는데요, 올해 1월 합작 [KIMBO IGGY]를 함께 낸 리치이기, 그리고 지난 9월 대마 투약 혐의로 구속된 김감전(@ksmartboi)을 떠올리며 한때 \"내가 화근이었나\"라는 생각도 했다고 적었습니다. 그러면서 결국 일어날 일이었고, 이제는 다 털어냈다고 덧붙였습니다.\n\n털어낸 자리에서 그가 다시 선 곳은 듀오로 함께해 온 솔쟈 옆입니다. 몇 달 사이 주변은 크게 달라졌지만, 킴보는 일단 음악으로 다시 움직입니다.\n\n#PLOT #킴보 #GGM킴보 #솔쟈 #솔쟈앤킴보",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692146/djnxtpt3dclpqc8crhdw.jpg",
-      "credit": "@ggm_kimbo",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621838/pnuulzyfxzbtqu9u3kus.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621838/pnuulzyfxzbtqu9u3kus.jpg",
-      "credit": "@ggm_kimbo",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/730313338_18095445110525799_3463639889786876656_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TFfWnCIXB0sQ7kNvwHfZv8W&_nc_oc=AdoSjD4tOEtlZ4LlUC3Ih3kd1yodvou9JNdPxVeeZQoxyt8kBSGJxv7yGaifz7z4EBw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=q7WkXeRA6YKgtNXTFaEusQ&oh=00_AQPuW5UUmSGc9LUJ22UOSg8WkK5VD2ztyQWp4tcxmwR39Q&oe=6ADF2488"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621841/vlci382qkpxvgryvib61.jpg",
-      "credit": "@ggm_kimbo",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/696350943_18089493500525799_3876241349755008772_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VKU2TkweVvUQ7kNvwHO_udd&_nc_oc=Adp_R6A6R4s-9LYnVQZo4J49TOcWaX0B77LU4gRp1d5RUc1WG5OpSI2b1Oeq06Fop8A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=q7WkXeRA6YKgtNXTFaEusQ&oh=00_AQPTT3BGhfHChplQS_E565w2TAtYBO9ooCb2vl7e6eRPEg&oe=6ADF01D1"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792036857/ckp5lgj3ttsdlijolzkw.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/104/34/257/10434257_20200522152130.jpg/melon/resize/1000/quality/90/optimize"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692146/djnxtpt3dclpqc8crhdw.jpg",
-      "credit": "@ggm_kimbo",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621838/pnuulzyfxzbtqu9u3kus.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621838/pnuulzyfxzbtqu9u3kus.jpg",
-      "credit": "@ggm_kimbo",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/730313338_18095445110525799_3463639889786876656_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TFfWnCIXB0sQ7kNvwHfZv8W&_nc_oc=AdoSjD4tOEtlZ4LlUC3Ih3kd1yodvou9JNdPxVeeZQoxyt8kBSGJxv7yGaifz7z4EBw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=q7WkXeRA6YKgtNXTFaEusQ&oh=00_AQPuW5UUmSGc9LUJ22UOSg8WkK5VD2ztyQWp4tcxmwR39Q&oe=6ADF2488"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621841/vlci382qkpxvgryvib61.jpg",
-      "credit": "@ggm_kimbo",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/696350943_18089493500525799_3876241349755008772_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VKU2TkweVvUQ7kNvwHO_udd&_nc_oc=Adp_R6A6R4s-9LYnVQZo4J49TOcWaX0B77LU4gRp1d5RUc1WG5OpSI2b1Oeq06Fop8A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=q7WkXeRA6YKgtNXTFaEusQ&oh=00_AQPTT3BGhfHChplQS_E565w2TAtYBO9ooCb2vl7e6eRPEg&oe=6ADF01D1"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792036857/ckp5lgj3ttsdlijolzkw.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/104/34/257/10434257_20200522152130.jpg/melon/resize/1000/quality/90/optimize"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "\"내가 화근이었나\"|털어냈다는 킴보",
-      "sub": "23일 오후 6시, 솔쟈와 새 앨범"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "GGM 킴보, 오늘|솔쟈와 새 앨범",
-      "sub": "23일 오후 6시"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "다 털어냈다는 킴보|다시 솔쟈 옆으로",
-      "sub": "23일 오후 6시 새 앨범"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] '2021년 [Dark Road]부터' 는 어느 원문에도 연도가 없어 뺐음 · 스토리 발언('화근'·'일어날 일이었다'·'털어냈다')과 '오후 6시'는 인스타그램이 열리지 않아 대조 못 함 (23일 발매는 나무위키, [KIMBO IGGY] 1월 23일은 나무위키·벅스로 확인)",
-     "스토리 발언('내가 화근이었나'·이제 다 털어냈다)은 hiptake 게시물로만 확인 — 그래서 '~것으로 알려졌다' 꼴. 킴보 스토리 원본이 남아 있으면 확인",
-     "앨범 제목 [Dark Road 3]는 나무위키에만 있어 본문에서 뺐음 — 발매 후 제목 넣을지"
-    ],
-    "research": [
-     {
-      "title": "킴보 인스타그램 게시물 (2026-10-15 '10월 23일 6시에')",
-      "link": "https://www.instagram.com/ggm_kimbo/"
-     },
-     {
-      "title": "나무위키 — GGM Kimbo",
-      "link": "https://namu.wiki/w/GGM%20Kimbo"
-     },
-     {
-      "title": "나무위키 — Soulja and Kimbo",
-      "link": "https://namu.wiki/w/Soulja%20and%20Kimbo"
-     },
-     {
-      "title": "한국경제 — '스윙스 레이블' 래퍼 김감전, 집유 기간 중 대마 투약…구속",
-      "link": "https://www.hankyung.com/article/202609170638H"
-     },
-     {
-      "title": "위키트리 — 동료 디스하던 '이 가수' 마약 투약 혐의로 구속",
-      "link": "https://www.wikitree.co.kr/articles/1160161"
-     },
-     {
-      "title": "벅스 — GGM Kimbo",
-      "link": "https://music.bugs.co.kr/artist/12282410"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692149/le2v07ra6yqorbfqyngo.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692149/oswloemlhkiiey0lpgxq.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692151/xvynxvxyptxsijlwcyqi.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692151/tc03jm1fpoj02w684jgu.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692149/le2v07ra6yqorbfqyngo.jpg"
-     },
-     "at": "2026-10-23T03:02+09:00",
-     "v": {
-      "A": "e06e5757",
-      "B": "7f772660",
-      "C": "3232e4aa"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ord-56fe8eac",
-    "account": "@규효 공유 · @outtakemusic",
-    "url": "https://www.instagram.com/p/DeymS34ku0A/?exln=MTkyZndvdmF4M3ZqaQ==",
-    "image": null,
-    "head": "SYSTEM SEOUL 의류 홍보 속 AI 지드래곤 이미지 논란",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T03:05+09:00",
-   "key": "208d21b2",
-   "by": "claude",
-   "subjects": [
-    "SYSTEM SEOUL",
-    "지드래곤"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "SYSTEM SEOUL 의류 홍보에 AI로 만든 것으로 알려진 지드래곤 이미지 — 실존 아티스트 초상 상업 사용 논란",
-    "why": "규효 맡기기 · 아웃테이크·HHP 등 매거진들이 같은 날 다룬 화제"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T03:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\nSYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrgn)이 모델처럼 등장했습니다.\n\n실제 촬영이 아니라 AI로 만든 이미지라는 이야기가 나오면서 온라인에서 논란이 일고 있는데요, 지드래곤이 직접 옷을 입은 듯한 연출을 두고 실존 아티스트의 얼굴을 상업 홍보에 써도 되느냐는 물음이 이어지고 있습니다.\n\nSYSTEM SEOUL은 2000년대 초중반 음악을 샘플링한 [SS-POP] 시리즈로 이름을 알린 서울의 힙합 크루입니다.\n\nSYSTEM SEOUL과 지드래곤 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #시스템서울 #SYSTEMSEOUL #지드래곤 #AI이미지 #초상권\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792692350/sz28hs4edzyk4q3mhilm.jpg\n제목: 시스템서울 굿즈 홍보에|등장한 AI 지드래곤\n부제: 실존 아티스트 초상 사용 논란\n출처:\n",
-    "caption": "SYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrgn)이 모델처럼 등장했습니다.\n\n실제 촬영이 아니라 AI로 만든 이미지라는 이야기가 나오면서 온라인에서 논란이 일고 있는데요, 지드래곤이 직접 옷을 입은 듯한 연출을 두고 실존 아티스트의 얼굴을 상업 홍보에 써도 되느냐는 물음이 이어지고 있습니다.\n\nSYSTEM SEOUL은 2000년대 초중반 음악을 샘플링한 [SS-POP] 시리즈로 이름을 알린 서울의 힙합 크루입니다.\n\nSYSTEM SEOUL과 지드래곤 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #시스템서울 #SYSTEMSEOUL #지드래곤 #AI이미지 #초상권",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692350/sz28hs4edzyk4q3mhilm.jpg",
-      "credit": "신뢰",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792594038/w5a1d02tbfkgemcic95g.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791918373/wc0hyo0pes71lkzcwzvk.jpg",
-      "credit": "@systemseoul82",
-      "kind": "앨범커버",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747718822_17952221697219437_3157649105292591413_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oPxje-0y1Z4Q7kNvwFAkjPi&_nc_oc=AdoiyH3iHD8_fijd0RtEeW9-zLZlpn8-6VB8KuNNqFzDngVtuJIKRBNp2PotNEAwIeA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WfOyaYcp2JFHaTxFy5yNzg&oh=00_AQMt1HhwXpO2iYs6kw8oVrlomOEIpnvEAIoMT-8mLb0H4w&oe=6AD43C2C"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792656882/xe4uhvz6xtwqj5fczgwx.jpg",
-      "credit": "신뢰",
-      "kind": "단체",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_qqmjgtp4/auto_pdb_시스템서울_단체 프로필_.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692350/sz28hs4edzyk4q3mhilm.jpg",
-      "credit": "신뢰",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792594038/w5a1d02tbfkgemcic95g.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791918373/wc0hyo0pes71lkzcwzvk.jpg",
-      "credit": "@systemseoul82",
-      "kind": "앨범커버",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747718822_17952221697219437_3157649105292591413_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oPxje-0y1Z4Q7kNvwFAkjPi&_nc_oc=AdoiyH3iHD8_fijd0RtEeW9-zLZlpn8-6VB8KuNNqFzDngVtuJIKRBNp2PotNEAwIeA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=WfOyaYcp2JFHaTxFy5yNzg&oh=00_AQMt1HhwXpO2iYs6kw8oVrlomOEIpnvEAIoMT-8mLb0H4w&oe=6AD43C2C"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792656882/xe4uhvz6xtwqj5fczgwx.jpg",
-      "credit": "신뢰",
-      "kind": "단체",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_qqmjgtp4/auto_pdb_시스템서울_단체 프로필_.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "시스템서울 굿즈 홍보에|등장한 AI 지드래곤",
-      "sub": "실존 아티스트 초상 사용 논란"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "시스템서울,|지드래곤 AI 이미지 논란",
-      "sub": "굿즈 홍보 이미지"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 아웃테이크 게시물은 열리지 않아 hhp_mag 캡션('굿즈 홍보에 AI 이미지')으로만 대조 — '의류'→'굿즈'로 고치고, 샘플 무단 사용과 엮은 문단·표지 C(나무위키 한 곳뿐, 크루를 '또 그랬다' 서사로 몲)는 뺌. 기사 0건이라 '양측 입장 없음'은 발행 직전 다시 확인",
-     "SYSTEM SEOUL 공식 인스타(systemseoul82) 10/22 캐러셀이 문제의 이미지인지, 아직 올라 있는지 눈으로 확인 — 기사는 아직 없음",
-     "지드래곤 측(갤럭시코퍼레이션) 입장 나왔는지 — 나오면 마지막 줄 교체"
-    ],
-    "research": [
-     {
-      "title": "인스타그램 게시물 — outtakemusic (10/22)",
-      "link": "https://www.instagram.com/p/DeymS34ku0A/"
-     },
-     {
-      "title": "인스타그램 게시물 — hhp_mag (10/22)",
-      "link": "https://www.instagram.com/p/Dey_YuME5G5/"
-     },
-     {
-      "title": "SYSTEM SEOUL - 나무위키",
-      "link": "https://namu.wiki/w/SYSTEM%20SEOUL"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692353/p07sgbnpfrflxkglpkvw.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692353/pp0ognit12wwh2hols1b.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692356/u7qv2dzxk7x7hgpqxgqt.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692353/p07sgbnpfrflxkglpkvw.jpg"
-     },
-     "at": "2026-10-23T03:05+09:00",
-     "v": {
-      "A": "9d006c98",
-      "B": "4c7fed9a"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ord-245c1421",
-    "account": "@규효 공유 · @hakuna_issue",
-    "url": "https://www.instagram.com/p/DezAhvNI21b/?rpxt=anVvNzh6dGJhajI0",
-    "image": null,
-    "head": "양홍원 장문 속 씨앗 비유는 CP컴퍼니 한국 30주년 전시, 최희 대표의 말과 겹친다",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T03:11+09:00",
-   "key": "82b8976a",
-   "by": "claude",
-   "subjects": [
-    "양홍원"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "양홍원이 올린 CP컴퍼니 장문 — 글 속 '씨앗' 비유가 한국 진출 30주년 전시와 GF패션 최희 대표의 말로 이어진다",
-    "why": "규효 맡기기 · 결혼 직후 양홍원 게시물이 '누가 쓴 글이냐'로 다시 화제"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T03:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n양홍원(@yanghongwon)이 올린 장문 속 '씨앗'은 CP컴퍼니였습니다.\n\n양홍원은 CP컴퍼니 한국 진출 30주년 전시 '996-026'의 이름이 적힌 사진과 함께 긴 글을 올렸는데요, 가뭄과 태풍을 견딘 씨앗이 열매를 맺고 꽃까지 피웠다는 내용으로 알려지면서 그가 직접 쓴 글인지를 두고 온라인에서 이야기가 오갔습니다.\n\n같은 비유는 1996년 국내 첫 CP컴퍼니 매장을 연 GF패션 최진원 창립자의 딸, 최희 대표의 말에도 나옵니다. 해외 매체가 전한 이번 전시 관련 발언에서 최 대표는 아버지가 'C.P. 컴퍼니라는 특별한 씨앗'을 처음 발견했다고 말했습니다. 글 속에 해외 브랜드에서 일하다 아버지의 권유로 회사에 합류했다는 대목이 있어, 양홍원 본인의 이야기라기보다 브랜드의 30년을 정리한 글을 옮긴 것이라는 이야기가 나오는 이유입니다.\n\n양홍원은 평소 CP컴퍼니를 즐겨 입는 것으로 알려져 왔습니다. 양홍원 측은 아직 글의 작성자를 밝히지 않았습니다.\n\n#PLOT #양홍원 #CP컴퍼니 #996026 #HWMUSIC\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792692705/paxccf01qe5y0n3w9xrd.jpg\n제목: 양홍원이 올린 장문,|브랜드의 30년 이야기\n부제: CP컴퍼니 한국 진출 30주년\n출처: @yanghongwon\n",
-    "caption": "양홍원(@yanghongwon)이 올린 장문 속 '씨앗'은 CP컴퍼니였습니다.\n\n양홍원은 CP컴퍼니 한국 진출 30주년 전시 '996-026'의 이름이 적힌 사진과 함께 긴 글을 올렸는데요, 가뭄과 태풍을 견딘 씨앗이 열매를 맺고 꽃까지 피웠다는 내용으로 알려지면서 그가 직접 쓴 글인지를 두고 온라인에서 이야기가 오갔습니다.\n\n같은 비유는 1996년 국내 첫 CP컴퍼니 매장을 연 GF패션 최진원 창립자의 딸, 최희 대표의 말에도 나옵니다. 해외 매체가 전한 이번 전시 관련 발언에서 최 대표는 아버지가 'C.P. 컴퍼니라는 특별한 씨앗'을 처음 발견했다고 말했습니다. 글 속에 해외 브랜드에서 일하다 아버지의 권유로 회사에 합류했다는 대목이 있어, 양홍원 본인의 이야기라기보다 브랜드의 30년을 정리한 글을 옮긴 것이라는 이야기가 나오는 이유입니다.\n\n양홍원은 평소 CP컴퍼니를 즐겨 입는 것으로 알려져 왔습니다. 양홍원 측은 아직 글의 작성자를 밝히지 않았습니다.\n\n#PLOT #양홍원 #CP컴퍼니 #996026 #HWMUSIC",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692705/paxccf01qe5y0n3w9xrd.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692705/paxccf01qe5y0n3w9xrd.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "양홍원이 올린 장문,|브랜드의 30년 이야기",
-      "sub": "CP컴퍼니 한국 진출 30주년"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "양홍원 장문 속|'씨앗'은 CP컴퍼니",
-      "sub": "누가 쓴 글인지 이야기가 오가는 중"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "양홍원이 올린 장문,|씨앗 비유는 어디서 왔나",
-      "sub": "그가 올린 장문의 출처"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 양홍원 원 게시물(Dewdfh0Ezrx)은 열리지 않아 글 내용·'996-026' 사진·게시일을 직접 대조 못 함 — 씨앗·가뭄·태풍·꽃·'해외 브랜드 10년 뒤 아버지 권유로 합류'는 hakuna_issue 캡션에서만 확인. 게시일 '21일'은 확인 못 해 뺐고, 해외 기사에 없는 '남들이 열매를 맺지 못할 거라던' 대목도 뺌",
-     "양홍원 10/21 게시물(Dewdfh0Ezrx) 뒷장의 글이 hakuna 가 옮긴 내용(씨앗·가뭄·태풍·꽃 비유, '해외 브랜드 10년 뒤 아버지 권유로 합류')과 맞는지 눈으로 확인 — 캡션 2·3단락이 여기에 기대 있음",
-     "숏폼은 비움 — 이 소식에 맞는 유튜브 원본 영상이 없음 (인스타 게시물 소식)"
-    ],
-    "research": [
-     {
-      "title": "양홍원 인스타그램 10/21 게시물 ('996-026' 전시 사진 · cpcompany 태그)",
-      "link": "https://www.instagram.com/yanghongwon/p/Dewdfh0Ezrx/"
-     },
-     {
-      "title": "아이즈매거진 — C.P. 컴퍼니, 한국 진출 30주년 기념 아카이브 전시 개최",
-      "link": "https://www.eyesmag.com/posts/165506/cp-company-korea-30th-anniversary-exhibition"
-     },
-     {
-      "title": "Viacomit — Exposition C.P. Company '996-026' (최희 대표 '씨앗' 발언)",
-      "link": "https://viacomit.net/2026/10/21/exposition-c-p-company-30-ans-en-coree-du-sud/"
-     },
-     {
-      "title": "HUB Style — C.P. Company celebra 30 anni in Corea del Sud (최희 대표 씨앗·열매 발언)",
-      "link": "https://hubstyle.it/2026/10/22/c-p-company-celebra-30-anni-in-corea-del-sud-con-la-mostra-996-026/"
-     },
-     {
-      "title": "나무위키 C.P. 컴퍼니 (주로 입는 유명인 양홍원)",
-      "link": "https://namu.wiki/w/C.P.%20%EC%BB%B4%ED%8D%BC%EB%8B%88"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692708/fbuaxj2ltnjuiyuqbyct.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692707/is8qzuhakcebnhnzzutz.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692710/rjjd9ppbr2fw56fpjb9t.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692710/xoximwlrdre75olegge4.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792692708/fbuaxj2ltnjuiyuqbyct.jpg"
-     },
-     "at": "2026-10-23T03:11+09:00",
-     "v": {
-      "A": "3bce1418",
-      "B": "9683452e",
-      "C": "c9a12876"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:brk-84be4b76",
-    "account": "@갈등·반응",
-    "url": "https://www.hankyung.com/article/202610239942H",
-    "image": null,
-    "head": "저스틴 비버, 13년 만에 아내 헤일리와 방한 — 성수동 스카이라크 팝업",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T08:37+09:00",
-   "key": "e28ec6f5",
-   "by": "claude",
-   "subjects": [
-    "저스틴 비버"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "2013년 첫 내한 공연 이후 13년 만에, 무대가 아니라 자기 브랜드 팝업으로 서울에 온 저스틴 비버",
-    "why": "23일 새벽 헤일리 비버와 입국 — 성수동 팝업 밤샘 줄과 함께 오늘 아침 기사·반응이 몰림"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T08:37+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n저스틴 비버가 13년 만에 한국에 왔습니다.\n\n2013년 첫 내한 공연 이후 공식적으로 확인된 방한이 없었는데요, 이번엔 무대가 아니라 자신의 패션 브랜드 스카이라크(SKYLRK)의 국내 첫 팝업 때문입니다. 23일 새벽 아내 헤일리 비버와 함께 인천국제공항으로 들어왔습니다.\n\n성수동 팝업은 비버가 직접 오기 전부터 붐볐습니다. 첫날 오전 10시 개장을 앞두고 새벽부터 줄이 늘어섰습니다. 13년 전엔 노래로 왔던 그가 이번엔 자기 옷으로 성수동에 줄을 세운 셈입니다.\n\n스카이라크 서울 팝업은 서울 성동구 성수동에서 25일까지 열립니다.\n\n#PLOT #저스틴비버 #헤일리비버 #스카이라크 #성수동팝업 #내한\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792565244/fyu2jibslknhghlxlf1w.jpg\n제목: 저스틴 비버,|13년 만에 한국 왔다\n부제: 헤일리 비버와 함께 · 성수동 스카이라크 팝업\n출처: @lilbieber\n",
-    "caption": "저스틴 비버가 13년 만에 한국에 왔습니다.\n\n2013년 첫 내한 공연 이후 공식적으로 확인된 방한이 없었는데요, 이번엔 무대가 아니라 자신의 패션 브랜드 스카이라크(SKYLRK)의 국내 첫 팝업 때문입니다. 23일 새벽 아내 헤일리 비버와 함께 인천국제공항으로 들어왔습니다.\n\n성수동 팝업은 비버가 직접 오기 전부터 붐볐습니다. 첫날 오전 10시 개장을 앞두고 새벽부터 줄이 늘어섰습니다. 13년 전엔 노래로 왔던 그가 이번엔 자기 옷으로 성수동에 줄을 세운 셈입니다.\n\n스카이라크 서울 팝업은 서울 성동구 성수동에서 25일까지 열립니다.\n\n#PLOT #저스틴비버 #헤일리비버 #스카이라크 #성수동팝업 #내한",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712240/gskwzq57xrag2bfjfne9.jpg",
-      "credit": "한국경제",
-      "from": "https://img.hankyung.com/photo/202610/BF.46161960.1.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565244/fyu2jibslknhghlxlf1w.jpg",
-      "credit": "@lilbieber",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/743995998_18928232611012190_6920148518090485289_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=okWpcRCO9BEQ7kNvwGtDwPe&_nc_oc=AdopuSdK_3C19DqO6lrKegLkVDLkGxinfzcjeOs6rBiuxXIkqdQUyocOf5643p2MeRg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=DMCnWAuVYJKe6tKw99EQlA&oh=00_AQMOsc6abddGhmLywXsIDkL-d2EudAvC2L0H74K8XGEltA&oe=6ADE3658"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476983/gqbbc0ughapt07n9mbeh.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_7s0idhgk/auto_pdb_비버_화보_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476992/ci5vhl4xbirpbzydvr8c.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_swxfc9px/auto_pdb_비버_인터뷰 화보_.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712240/gskwzq57xrag2bfjfne9.jpg",
-      "credit": "한국경제",
-      "from": "https://img.hankyung.com/photo/202610/BF.46161960.1.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565244/fyu2jibslknhghlxlf1w.jpg",
-      "credit": "@lilbieber",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/743995998_18928232611012190_6920148518090485289_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=okWpcRCO9BEQ7kNvwGtDwPe&_nc_oc=AdopuSdK_3C19DqO6lrKegLkVDLkGxinfzcjeOs6rBiuxXIkqdQUyocOf5643p2MeRg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=DMCnWAuVYJKe6tKw99EQlA&oh=00_AQMOsc6abddGhmLywXsIDkL-d2EudAvC2L0H74K8XGEltA&oe=6ADE3658"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476983/gqbbc0ughapt07n9mbeh.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_7s0idhgk/auto_pdb_비버_화보_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792476992/ci5vhl4xbirpbzydvr8c.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_swxfc9px/auto_pdb_비버_인터뷰 화보_.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "저스틴 비버,|13년 만에 한국 왔다",
-      "sub": "헤일리 비버와 함께 · 성수동 스카이라크 팝업"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "헤일리와 함께|서울 온 저스틴 비버",
-      "sub": "2013년 첫 내한 이후 13년 만"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "공연 말고 팝업으로,|저스틴 비버 방한",
-      "sub": "성수동 스카이라크 서울 · 25일까지"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "클립 위험: 중간 — K-POPIT 케이팝잇 (공항 직캠 · 자막 없음, 말이 없어 사건 한 줄 후킹)"
-    ],
-    "research": [
-     {
-      "title": "저스틴 비버, 아내와 한국 왔다…성수동 팝업엔 밤샘 대기줄 (한국경제)",
-      "link": "https://www.hankyung.com/article/202610239942H"
-     },
-     {
-      "title": "“설마 했는데 진짜 왔다”…저스틴 비버, ♥헤일리와 13년 만에 깜짝 내한 (스포츠서울)",
-      "link": "https://www.sportsseoul.com/news/read/1643476?ref=naver"
-     },
-     {
-      "title": "'설마 했는데'...저스틴 비버, 13년 만에 한국행 (마이데일리)",
-      "link": "https://www.mydaily.co.kr/page/view/2026102306365838803"
-     },
-     {
-      "title": "'새벽 1시부터 줄 섰다'…저스틴 비버 성수동 팝업에 '오픈런' (뉴시스)",
-      "link": "https://www.newsis.com/view/NISX20261022_0003836530"
-     },
-     {
-      "title": "저스틴비버X헤일리 비버, 인천공항 입국 (K-POPIT 케이팝잇)",
-      "link": "https://www.youtube.com/watch?v=9Ah-dTBEGuE"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792726424/hp8zybwg6r5qknmhfeae.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792726424/u74y89l9zn5vqbpgluzr.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792726427/tj5xbq6wr6wqjzixyqet.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792726427/errpg8cerytqqca76zhc.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792726424/hp8zybwg6r5qknmhfeae.jpg"
-     },
-     "at": "2026-10-23T12:33+09:00",
-     "v": {
-      "A": "b1106913",
-      "B": "002c81e9",
-      "C": "a56d9fee"
-     }
-    },
-    "photo_tried": {
-     "0": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565244/fyu2jibslknhghlxlf1w.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712240/gskwzq57xrag2bfjfne9.jpg"
-     ]
-    },
-    "photo_swapped": {
-     "at": "2026-10-23T12:33+09:00",
-     "slide": 0,
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792565244/fyu2jibslknhghlxlf1w.jpg"
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=9Ah-dTBEGuE\n구간: 0:10-0:50\n곡: 한국 입국\n아티스트: 13년 만에\n피처링:\n후킹: 저스틴 비버,\n출처: K-POPIT 케이팝잇\n자막: 자동",
-    "caption": "저스틴 비버가 13년 만에 한국 땅을 밟았습니다.\n\n23일 새벽 아내 헤일리 비버와 함께 인천국제공항으로 들어온 장면인데요, 2013년 첫 내한 공연 이후 공식적으로 확인된 첫 방한입니다. 비버는 자신의 브랜드 후드 재킷 차림이었습니다.\n\n이번 방한은 공연이 아니라 그의 패션 브랜드 스카이라크(SKYLRK)의 국내 첫 팝업 때문으로, 성수동 팝업은 25일까지 열립니다.\n\n#PLOT #저스틴비버 #헤일리비버 #스카이라크 #내한",
-    "hooks": {
-     "A": "저스틴 비버가 / 아내와 함께 / 한국에 왔습니다",
-     "B": "저스틴 비버, / 13년 만에 / 한국 입국",
-     "C": "헤일리와 함께 / 인천공항에 선 / 저스틴 비버"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=9Ah-dTBEGuE",
-     "credit": "K-POPIT 케이팝잇",
-     "range": [
-      10.0,
-      50.0
-     ]
-    },
-    "guided": {
-     "rec": "B",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "클립 위험: 중간 — K-POPIT 케이팝잇 (공항 직캠 · 자막 없음, 말이 없어 사건 한 줄 후킹)",
-     "표지 사진이 한국경제 기사 대표 사진(공항 현장)이다 — 사람이 비버 부부가 맞는지, 매체 워터마크가 없는지"
-    ],
-    "research": [
-     {
-      "title": "저스틴 비버, 아내와 한국 왔다…성수동 팝업엔 밤샘 대기줄 (한국경제)",
-      "link": "https://www.hankyung.com/article/202610239942H"
-     },
-     {
-      "title": "“설마 했는데 진짜 왔다”…저스틴 비버, ♥헤일리와 13년 만에 깜짝 내한 (스포츠서울)",
-      "link": "https://www.sportsseoul.com/news/read/1643476?ref=naver"
-     },
-     {
-      "title": "'설마 했는데'...저스틴 비버, 13년 만에 한국행 (마이데일리)",
-      "link": "https://www.mydaily.co.kr/page/view/2026102306365838803"
-     },
-     {
-      "title": "'새벽 1시부터 줄 섰다'…저스틴 비버 성수동 팝업에 '오픈런' (뉴시스)",
-      "link": "https://www.newsis.com/view/NISX20261022_0003836530"
-     },
-     {
-      "title": "저스틴비버X헤일리 비버, 인천공항 입국 (K-POPIT 케이팝잇)",
-      "link": "https://www.youtube.com/watch?v=9Ah-dTBEGuE"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/9Ah-dTBEGuE/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712249/oppxdauvkfjfs1gdjvlt.jpg",
-     "key": "9Ah-dTBEGuE@10.0"
-    },
-    "rendered": {
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792712562/plot_studio/ppadjtnl711artofxpw9.mp4",
-     "at": "2026-10-23T08:42+09:00",
-     "file": "13Nyeon_ManE_HanGug_IbGug_News_no_lyrics__cta.mp4"
-    }
-   },
-   "corner_name": "소식",
-   "published": {
-    "permalink": "https://www.instagram.com/p/De0mgK4meFj/",
-    "cover": "A",
-    "at": "2026-10-23T12:33+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:newalbums-1023",
-    "account": "기사 종합",
-    "url": "https://www.tenasia.co.kr/article/2026102028934",
-    "image": null,
-    "head": "이번 주 신보 다섯 장",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T10:04+09:00",
-   "key": "e592551f",
-   "by": "claude",
-   "subjects": [
-    "NMIXX",
-    "정한",
-    "볼빨간사춘기"
+    "테일러 스위프트"
    ],
    "lane": "시리즈",
    "editor": {
     "grade": "A",
     "kind": "시리즈",
-    "angle": "「이번 주 나온 앨범」 #1 — 10/16~10/22 미니·정규 다섯 장, 장마다 들어 볼 한 곡",
-    "why": "금요일 고정 연재 첫 회 · 싱글을 빼고 미니·정규만, 발매일·타이틀곡은 기사 두 곳 이상에서 확인"
+    "angle": "「그날의 앨범」 #2 — 2006년 10월 24일 [Taylor Swift] 20주년 · 주인이 바뀌었던 노래들이 스무 해 만에 본인 것이 됐다",
+    "why": "주 2회 고정 연재 · 오늘이 정확히 20주년 · 2025년 원본 매입 + '데뷔 앨범은 이미 다 다시 녹음했다'는 본인 글로 지금과 이어진다"
    },
    "added": "claude",
-   "added_at": "2026-10-23T10:04+09:00",
-   "corner": "newalbums",
-   "card": {
-    "form": "[카테고리]\nNew Release!\n\n[캡션]\n이번 주 나온 앨범 다섯 장을 모았습니다.\n\n엔믹스는 유닛곡 세 곡을 담은 [Strange Muse]를 냈고, 세븐틴 정한과 조슈아는 첫 유닛 앨범 [DREAMSCAPE]를 내놓았는데요, 같은 날 최강창민도 세 번째 솔로 미니앨범 [All Of My Life]로 돌아왔습니다.\n\n바밍타이거(@balmingtiger) 원진의 첫 솔로 정규 [망상록], 데뷔 10주년을 맞은 볼빨간사춘기의 [October Archive]까지, 장마다 먼저 들어 볼 한 곡을 함께 적었습니다.\n\n#PLOT #이번주나온앨범 #엔믹스 #정한 #조슈아 #볼빨간사춘기\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792717464/b82bgdukt6rnoowt30hw.jpg\n제목: 이번 주 나온 앨범|10월 셋째 주 다섯 장\n부제: 엔믹스부터 볼빨간사춘기까지 다섯 장\n출처: 텐아시아\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792621815/yo0cfdrudlnswpithp3n.jpg\n소제목: 엔믹스 [Strange Muse]\n본문: 10월 19일 · 미니 6집|두 명씩 짝을 이룬 유닛곡 세 곡을 담았습니다. 릴리·해원의 '너는 달', 설윤·배이의 'Hot 'n Unbothered', 지우·규진의 '휙'.|들어 볼 한 곡 — 타이틀곡 '긴 소원 (Birthday Wish)'.\n출처: @nmixx_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792717466/k5ochh3wnt5vnaiikwcs.jpg\n소제목: 정한X조슈아 [DREAMSCAPE]\n본문: 10월 19일 · 첫 미니앨범 · 7곡|세븐틴 정한과 조슈아의 첫 유닛 앨범입니다.|들어 볼 한 곡 — 타이틀곡 '12 o'clock'. 낮 12시와 자정 사이를 오가며 각자의 꿈을 향해 나아가는 두 사람을 그린 댄스 록으로, 1970~80년대 디스코와 펑크를 지금의 소리로 다시 짰습니다.\n출처: 이투데이\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792717468/zimztapvyf7ljdhascio.jpg\n소제목: 최강창민 [All Of My Life]\n본문: 10월 19일 · 미니 3집 · 6곡|세 번째 솔로 미니앨범입니다.|들어 볼 한 곡 — 타이틀곡 'All Of My Life'. 어떤 상황에서도 자기 길을 묵묵히 걸으며 삶을 긍정하는 태도를 담은 팝 록입니다. 수록곡 'Yeah We Go'는 최강창민이 혼자 가사를 썼습니다.\n출처: 텐아시아\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792527010/yo5u3uszjoq2iicptljo.jpg\n소제목: 원진 [망상록]\n본문: 10월 20일 · 첫 솔로 정규 · 11곡|바밍타이거 원진이 머릿속을 떠도는 망상을 기록한 앨범입니다. 아직 일어나지 않은 일을 걱정하고, 작은 말과 몸짓을 곱씹는 생각들을 한 권으로 묶었습니다.|들어 볼 한 곡 — 앨범에서 가장 먼저 공개된 'Candy'.\n출처: @balmingtiger\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792717471/xej5lq1ewuipziahyqjw.jpg\n소제목: 볼빨간사춘기 [October Archive]\n본문: 10월 22일 · 미니 10집 · 5곡|데뷔 10주년, 열 번째 미니앨범, 10월. 안지영이 가장 좋아하는 계절인 가을을 주제로 전곡을 쓰고 만들었습니다.|들어 볼 한 곡 — 서브 타이틀곡 '풀카운트'. 야구를 좋아하는 안지영이 승부를 가르는 풀카운트를 인생에 빗대, 끝까지 희망을 놓지 말자고 응원하는 곡입니다.\n출처: 일간스포츠\n",
-    "caption": "이번 주 나온 앨범 다섯 장을 모았습니다.\n\n엔믹스는 유닛곡 세 곡을 담은 [Strange Muse]를 냈고, 세븐틴 정한과 조슈아는 첫 유닛 앨범 [DREAMSCAPE]를 내놓았는데요, 같은 날 최강창민도 세 번째 솔로 미니앨범 [All Of My Life]로 돌아왔습니다.\n\n바밍타이거(@balmingtiger) 원진의 첫 솔로 정규 [망상록], 데뷔 10주년을 맞은 볼빨간사춘기의 [October Archive]까지, 장마다 먼저 들어 볼 한 곡을 함께 적었습니다.\n\n#PLOT #이번주나온앨범 #엔믹스 #정한 #조슈아 #볼빨간사춘기",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717464/b82bgdukt6rnoowt30hw.jpg",
-      "credit": "텐아시아",
-      "from": "https://img.tenasia.co.kr/photo/202610/BF.46109269.1.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621815/yo0cfdrudlnswpithp3n.jpg",
-      "credit": "@nmixx_official",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855924150_18121669247590953_3565326105977095372_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WM0au7ZcioAQ7kNvwHmIcj5&_nc_oc=AdrPHu-E4bfTYmp9oCDyHTSMnVsWlG-aWmNR-Gz27f0GlqwahWecdDCQfWRO8SuHTE8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=MPyd4Mkgl6pwHBPvCpRnTg&oh=00_AQPhKQ5cjhc5dvMxN2Jdfn4wioph18Mla3CiDevNAWbzAg&oe=6ADF25FE"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792694605/cdx0ijkddtr8uuznpbxb.jpg",
-      "credit": "@nmixx_official",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858606936_18121816307590953_7864113172533992284_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aBIT7l2sbAoQ7kNvwGRVR3k&_nc_oc=AdoODzN73s6aeunmgM0ZFINuNBeGX6dYHbIZGRVRer6h0KnbLMhQFK_R88lXMxEhM-g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=gvciJXpjsYemsahbmwUiXA&oh=00_AQMMBXrHiVjonoldhSaTZcmQ6_RxIQoOiPJx4xutBOMeOw&oe=6AE02759"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621806/vrw2g8a0w2ipyzktyrje.jpg",
-      "credit": "@nmixx_official",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/849773049_18121672031590953_8810882603199125777_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=4rakzOco5ywQ7kNvwHHkQdc&_nc_oc=Adqn74-MhyG-2lkegKlQLISVliKZjWka9NTx1RS1cVqvWuhWa2TNiwl_xIV44BkW-Go&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=MPyd4Mkgl6pwHBPvCpRnTg&oh=00_AQMY1AWLLlThVR-diJUteehv6TvSkPFAhqZ6oZYrSidtrg&oe=6ADF2019"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621811/qi8miulxjtylxjmwf62j.jpg",
-      "credit": "@nmixx_official",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855104882_18121671851590953_2959801964263411679_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=uVAYwvED1l8Q7kNvwEB5jlm&_nc_oc=AdqyK4GDqjFXXu6jyRURplq-E7iTWAxRc3pYTr3dlls_cCBTIKUZGSEhgHZAKNT1qu4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=MPyd4Mkgl6pwHBPvCpRnTg&oh=00_AQPEwvaYzAn5nSfvzcqepV8sxnx-krKD_e-ZSccZuqrhZg&oe=6ADEFB82"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792025040/gt81a9kdks8ovahdd5i9.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/133/57/541/13357541_20260511133217.jpg/melon/resize/1000/quality/90/optimize"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792025042/vbbors84hcdn3t2qusdw.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/121/49/391/12149391_20251013150421.jpg/melon/resize/1000/quality/90/optimize"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792025044/qay2umh1vhqebs7w3x6x.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/117/26/557/11726557_20250317134424.jpg/melon/resize/1000/quality/90/optimize"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717464/b82bgdukt6rnoowt30hw.jpg",
-      "credit": "텐아시아",
-      "from": "https://img.tenasia.co.kr/photo/202610/BF.46109269.1.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621815/yo0cfdrudlnswpithp3n.jpg",
-      "credit": "@nmixx_official",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855924150_18121669247590953_3565326105977095372_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WM0au7ZcioAQ7kNvwHmIcj5&_nc_oc=AdrPHu-E4bfTYmp9oCDyHTSMnVsWlG-aWmNR-Gz27f0GlqwahWecdDCQfWRO8SuHTE8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=MPyd4Mkgl6pwHBPvCpRnTg&oh=00_AQPhKQ5cjhc5dvMxN2Jdfn4wioph18Mla3CiDevNAWbzAg&oe=6ADF25FE"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792694605/cdx0ijkddtr8uuznpbxb.jpg",
-      "credit": "@nmixx_official",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858606936_18121816307590953_7864113172533992284_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aBIT7l2sbAoQ7kNvwGRVR3k&_nc_oc=AdoODzN73s6aeunmgM0ZFINuNBeGX6dYHbIZGRVRer6h0KnbLMhQFK_R88lXMxEhM-g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=gvciJXpjsYemsahbmwUiXA&oh=00_AQMMBXrHiVjonoldhSaTZcmQ6_RxIQoOiPJx4xutBOMeOw&oe=6AE02759"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621806/vrw2g8a0w2ipyzktyrje.jpg",
-      "credit": "@nmixx_official",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/849773049_18121672031590953_8810882603199125777_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=4rakzOco5ywQ7kNvwHHkQdc&_nc_oc=Adqn74-MhyG-2lkegKlQLISVliKZjWka9NTx1RS1cVqvWuhWa2TNiwl_xIV44BkW-Go&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=MPyd4Mkgl6pwHBPvCpRnTg&oh=00_AQMY1AWLLlThVR-diJUteehv6TvSkPFAhqZ6oZYrSidtrg&oe=6ADF2019"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621811/qi8miulxjtylxjmwf62j.jpg",
-      "credit": "@nmixx_official",
-      "kind": "셀카·일상",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855104882_18121671851590953_2959801964263411679_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=uVAYwvED1l8Q7kNvwEB5jlm&_nc_oc=AdqyK4GDqjFXXu6jyRURplq-E7iTWAxRc3pYTr3dlls_cCBTIKUZGSEhgHZAKNT1qu4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=MPyd4Mkgl6pwHBPvCpRnTg&oh=00_AQPEwvaYzAn5nSfvzcqepV8sxnx-krKD_e-ZSccZuqrhZg&oe=6ADEFB82"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792025040/gt81a9kdks8ovahdd5i9.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/133/57/541/13357541_20260511133217.jpg/melon/resize/1000/quality/90/optimize"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792025042/vbbors84hcdn3t2qusdw.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/121/49/391/12149391_20251013150421.jpg/melon/resize/1000/quality/90/optimize"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792025044/qay2umh1vhqebs7w3x6x.jpg",
-      "credit": "멜론",
-      "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/117/26/557/11726557_20250317134424.jpg/melon/resize/1000/quality/90/optimize"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "이번 주 나온 앨범|10월 셋째 주 다섯 장",
-      "sub": "엔믹스부터 볼빨간사춘기까지 다섯 장"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 미리보기에 원진·볼빨간사춘기 장(5·6장)이 만들어지지 않았습니다 — 앱에서 두 장이 붙었는지, 사진이 맞는지 봐 주세요",
-     "[검증] 원진 [망상록] 타이틀곡은 원문에서 확인 못 함 — '유랑가'(원문 표기 Yuranga, 2번 트랙) 대신 첫 선공개곡 'Candy'로 바꿨습니다 · 엔믹스 '데뷔 후 처음 유닛곡'·타이틀곡 설명, 정한X조슈아 '범주 참여', 최강창민 '일렉 기타·드럼'은 원문에 없어 뺐습니다",
-     "장마다 사진이 그 장의 아티스트인지 — 기사 대표 사진이라 순서가 밀렸을 수 있습니다",
-     "이은상 [꿈의 정원](10/21 예정)은 발매 확인을 못 해 뺐습니다"
-    ],
-    "research": [
-     {
-      "title": "텐아시아 — 엔믹스 미니 6집 [Strange Muse] (10/20)",
-      "link": "https://www.tenasia.co.kr/article/2026102028934"
-     },
-     {
-      "title": "이투데이 — 세븐틴 정한X조슈아, 오늘(19일) 첫 유닛 '드림스케이프' 발매",
-      "link": "https://etoday.co.kr/news/view/2637538"
-     },
-     {
-      "title": "텐아시아 — 최강창민 미니 3집 [All Of My Life] (10/19)",
-      "link": "https://www.tenasia.co.kr/article/2026101906974"
-     },
-     {
-      "title": "The Line of Best Fit — Balming Tiger's Wonjin details debut solo album, Mangsangrok",
-      "link": "https://www.thelineofbestfit.com/news/balming-tigers-wonjin-details-debut-solo-album-mangsangrok"
-     },
-     {
-      "title": "이투데이 — 볼빨간사춘기, 데뷔 10주년 미니 10집 발매⋯채종협 뮤비 출연",
-      "link": "https://www.etoday.co.kr/news/view/2638949"
-     },
-     {
-      "title": "일간스포츠 — 데뷔 10주년 볼빨간사춘기, 오늘(22일) 미니 10집 발매…더블 타이틀곡",
-      "link": "https://isplus.com/article/view/isp202610220028"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717484/qnnu0fvca6iiveiuaf0n.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717484/rpiiufzjkrb1n7kfq9xs.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717484/jpvvothcrszzyxmh1ra3.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717484/s5qdhvpqexgdt6slwzvg.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717486/ikn75b6embinpt3mg7co.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717486/y5syixmnlhwnsqw2utry.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717486/k0bkykna4bpihkh0ocwi.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717484/qnnu0fvca6iiveiuaf0n.jpg"
-     },
-     "at": "2026-10-23T10:04+09:00",
-     "v": {
-      "A": "5e3d6998"
-     }
-    }
-   },
-   "corner_name": "이번 주 나온 앨범",
-   "corner_no": 1,
-   "pick": {
-    "rank": 1,
-    "why": "오늘이 금요일 — 고정 연재 「이번 주 나온 앨범」 첫 회는 오늘 올려야 연재가 선다",
-    "at": "2026-10-23T16:17+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:anniv-twicecoaster-tt",
-    "account": "텐아시아 2016",
-    "url": "https://www.tenasia.co.kr/article/2016102523424",
-    "image": null,
-    "head": "[트와이스코스터①] 트와이스의 짜릿한 성장史",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T10:04+09:00",
-   "key": "873fdb5d",
-   "by": "claude",
-   "subjects": [
-    "트와이스"
-   ],
-   "lane": "시리즈",
-   "editor": {
-    "grade": "A",
-    "kind": "시리즈",
-    "angle": "「그날의 앨범」 #1 — 2016년 10월 24일, 트와이스 [TWICEcoaster : LANE1]과 'TT' 10주년",
-    "why": "주 2회 고정 연재 · 내일(24일)이 정확히 10주년 · 이번 주 지효 독립 소식으로 트와이스가 다시 이야기되는 때"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T10:04+09:00",
+   "added_at": "2026-10-24T09:59+09:00",
    "corner": "anniv",
    "card": {
-    "form": "[카테고리]\nFeature\n\n[캡션]\n트와이스의 'TT'가 내일(24일)로 발매 10주년을 맞습니다.\n\n2016년 10월 24일 0시에 나온 세 번째 미니앨범 [TWICEcoaster : LANE1]의 타이틀곡인데요, '우아하게'와 'CHEER UP'에 이어 블랙아이드필승과 세 번째로 만난 곡이었습니다.\n\n'TT'는 발매 직후 음원 차트 1위에 올랐고, 뮤직비디오는 이틀이 채 안 돼 1천만 뷰를 넘기며 당시 K팝 아이돌 최단 기록을 세웠습니다. 사랑에 처음 빠진 소녀들의 마음을 담은 노래가 열 번째 가을을 맞았습니다.\n\n#PLOT #트와이스 #TT #TWICEcoaster #블랙아이드필승\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792717473/ltxtl0zpt8dax5t4re6l.jpg\n제목: 그날의 앨범|트와이스 'TT' 10주년\n부제: 2016.10.24 [TWICEcoaster : LANE1]\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792717475/qmit2pkyds54ga87baoy.jpg\n소제목: 2016년 10월 24일 0시\n본문: 트와이스의 세 번째 미니앨범 [TWICEcoaster : LANE1]이 나왔습니다. 트와이스와 함께 롤러코스터를 타듯 짜릿한 시간을 보내자는 뜻의 이름입니다.\n출처: 전자신문 엔터온뉴스\n\n[슬라이드]\n소스: \n소제목: 블랙아이드필승과 세 번째\n본문: '우아하게', 'CHEER UP'을 만든 블랙아이드필승이 다시 맡은 타이틀곡 'TT'. 사랑에 처음 빠진 소녀들의 어쩔 줄 모르는 마음을 담았습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 이틀이 안 돼 1천만 뷰\n본문: 'TT'는 발매 직후 음원 차트 1위에 올랐고, 뮤직비디오는 공개 이틀이 채 안 돼 유튜브 조회 수 1천만 회를 넘겼습니다. 당시 K팝 아이돌 최단 기록이었습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 들어 볼 한 곡, 'TT'\n본문: 10년 전 가을을 연 곡입니다. 그때 뮤직비디오 끝에는 'to be continued'라는 문구가 붙어 있었고, 앨범 이름의 'LANE1'과 함께 다음 편을 점치는 이야기가 나왔습니다.\n출처:\n",
-    "caption": "트와이스의 'TT'가 내일(24일)로 발매 10주년을 맞습니다.\n\n2016년 10월 24일 0시에 나온 세 번째 미니앨범 [TWICEcoaster : LANE1]의 타이틀곡인데요, '우아하게'와 'CHEER UP'에 이어 블랙아이드필승과 세 번째로 만난 곡이었습니다.\n\n'TT'는 발매 직후 음원 차트 1위에 올랐고, 뮤직비디오는 이틀이 채 안 돼 1천만 뷰를 넘기며 당시 K팝 아이돌 최단 기록을 세웠습니다. 사랑에 처음 빠진 소녀들의 마음을 담은 노래가 열 번째 가을을 맞았습니다.\n\n#PLOT #트와이스 #TT #TWICEcoaster #블랙아이드필승",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n테일러 스위프트의 데뷔 앨범 [Taylor Swift]가 오늘(24일)로 발매 20주년을 맞습니다.\n\n2006년 빅 머신 레코드에서 나온 이 앨범의 원본 녹음은 2019년 다른 쪽으로 넘어갔는데요, 스위프트는 그때부터 첫 여섯 장을 다시 녹음하는 'Taylor's Version'으로 맞섰습니다.\n\n그리고 지난해 5월, 스위프트는 첫 여섯 장의 원본을 직접 사들였다고 알렸습니다. 데뷔 앨범은 이미 전부 다시 녹음해 두었다는 말도 함께였습니다. 스무 해 전의 첫 앨범이 이제 온전히 본인의 것이 됐습니다.\n\n#PLOT #테일러스위프트 #TaylorSwift #그날의앨범 #TimMcGraw\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792803589/l00zryuodubuyq3lo4gu.jpg\n제목: 그날의 앨범|테일러 스위프트 20주년\n부제: 2006.10.24 [Taylor Swift]\n출처: AOL\n\n[슬라이드]\n소스: \n소제목: 2006년 10월 24일\n본문: 테일러 스위프트의 첫 앨범 [Taylor Swift]가 빅 머신 레코드에서 나왔습니다.||'Tim McGraw', 'Teardrops on My Guitar', 'Our Song', 'Picture to Burn'이 이 앨범에 실렸습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 주인이 바뀐 노래들\n본문: 2019년, 이 앨범을 포함한 첫 여섯 장의 원본 녹음 권리가 다른 쪽으로 넘어갔습니다.||스위프트가 고른 길이 다시 녹음하기, 'Taylor's Version'이었습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 2025년 5월 30일\n본문: 스위프트는 첫 여섯 장의 원본을 직접 사들였다고 팬들에게 편지로 알렸습니다.||같은 편지에서 데뷔 앨범은 이미 전부 다시 녹음했고, 지금의 소리가 정말 마음에 든다고 했습니다. 언제 내놓을지는 밝히지 않았습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 들어 볼 한 곡, 'Tim McGraw'\n본문: 모든 것이 시작된 첫 싱글입니다.||스무 해 전 그 목소리 그대로, 이제는 스위프트 본인이 가진 원본으로 들을 수 있습니다.\n출처:\n",
+    "caption": "테일러 스위프트의 데뷔 앨범 [Taylor Swift]가 오늘(24일)로 발매 20주년을 맞습니다.\n\n2006년 빅 머신 레코드에서 나온 이 앨범의 원본 녹음은 2019년 다른 쪽으로 넘어갔는데요, 스위프트는 그때부터 첫 여섯 장을 다시 녹음하는 'Taylor's Version'으로 맞섰습니다.\n\n그리고 지난해 5월, 스위프트는 첫 여섯 장의 원본을 직접 사들였다고 알렸습니다. 데뷔 앨범은 이미 전부 다시 녹음해 두었다는 말도 함께였습니다. 스무 해 전의 첫 앨범이 이제 온전히 본인의 것이 됐습니다.\n\n#PLOT #테일러스위프트 #TaylorSwift #그날의앨범 #TimMcGraw",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717473/ltxtl0zpt8dax5t4re6l.jpg",
-      "credit": "신뢰"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803589/l00zryuodubuyq3lo4gu.jpg",
+      "credit": "AOL",
+      "from": "https://hermes.media.static.aol.com/media/2026/10/18/73ef54fa-dea7-30aa-ad13-c3758cb6ac9d/6c2ec8f4-db38-4f69-88dd-2e1f2a7e6b14.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717473/ltxtl0zpt8dax5t4re6l.jpg",
-      "credit": "신뢰"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803589/l00zryuodubuyq3lo4gu.jpg",
+      "credit": "AOL",
+      "from": "https://hermes.media.static.aol.com/media/2026/10/18/73ef54fa-dea7-30aa-ad13-c3758cb6ac9d/6c2ec8f4-db38-4f69-88dd-2e1f2a7e6b14.jpg"
      }
     ],
     "shape": "맥락",
@@ -899,135 +52,142 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "그날의 앨범|트와이스 'TT' 10주년",
-      "sub": "2016.10.24 [TWICEcoaster : LANE1]"
+      "title": "그날의 앨범|테일러 스위프트 20주년",
+      "sub": "2006.10.24 [Taylor Swift]"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 1장 사진의 EnTer on News 워터마크가 화면 가운데·아래에 크게 박혀 있고 해상도도 낮습니다(549px) — 사진을 바꾸거나 빼 주세요 · 사실은 원문과 맞습니다",
-     "표지 사진은 사진 DB가 고른 것으로, 'One More Time' 글자가 보이는 다른 시기 스캔본입니다 — TT 시기 공식 사진으로 바꿔 주세요 (2016년 기사 사진은 모두 해상도 미달)",
-     "1·2장은 쇼케이스 보도 사진(엔터온뉴스 워터마크 있음)입니다 — 3·4장은 글만 둔 장 · 뮤직비디오 캡처는 쓰지 않았습니다",
-     "사진이 모자라 3장(2, 3, 4번)은 비워 뒀습니다 — 같은 사진을 두 번 쓰지 않으려고. 스튜디오에서 빈 자리를 눌러 넣어 주세요"
+     "[검증] Deseret 사진은 받기 실패 — 표지는 AOL 대표 사진(데뷔 무렵 스위프트 본인)으로 들어감. '살 기회가 주어지지 않았다'는 원문에서 확인 못 해 뺌",
+     "다시 녹음한 데뷔 앨범의 발매설은 팬 추측뿐이라 쓰지 않았습니다 (10/23 기준 공식 발표 없음) — 올리기 전 스위프트 쪽 새 발표가 있었는지 한 번 보기",
+     "표지 사진은 Deseret 기사 대표 사진 — 스위프트 본인 사진인지, 데뷔 시절 사진이 아니어도 괜찮은지",
+     "사진이 모자라 4장(1, 2, 3, 4번)은 비워 뒀습니다 — 같은 사진을 두 번 쓰지 않으려고. 스튜디오에서 빈 자리를 눌러 넣어 주세요"
     ],
     "research": [
      {
-      "title": "텐아시아 — [트와이스코스터①] 트와이스의 짜릿한 성장史 (2016.10.25)",
-      "link": "https://www.tenasia.co.kr/article/2016102523424"
+      "title": "AOL — Taylor Swift's Debut Album Turns 20: Fans Anticipate News on 'Taylor's Version'",
+      "link": "https://www.aol.com/articles/taylor-swifts-debut-album-turns-045000000.html"
      },
      {
-      "title": "CBS노컷뉴스 — 트와이스, 'TT' 멤버별 티저 공개 '9人9色' (2016.10.22)",
-      "link": "https://www.nocutnews.co.kr/news/4672859"
+      "title": "Wikipedia — Taylor Swift (album) (발매일·레이블·싱글·마스터 매입)",
+      "link": "https://en.wikipedia.org/wiki/Taylor_Swift_(album)"
      },
      {
-      "title": "텐아시아 — 'TT' 뮤직비디오 40시간 만에 1천만 뷰 (2016.10)",
-      "link": "https://www.tenasia.co.kr/article/2016102537054"
+      "title": "Deseret News — Taylor Swift fans speculate debut album rerelease this week (10/22)",
+      "link": "https://www.deseret.com/entertainment/2026/10/22/taylor-swift-debut-album-rerelease/"
      },
      {
-      "title": "스포츠경향 — 트와이스, 이들은 어떻게 톱 걸그룹이 됐나 (2016.11.01)",
-      "link": "https://sports.khan.co.kr/article/201611011725013"
+      "title": "Good Morning America — Taylor Swift reclaims her masters (2025.5.30 편지)",
+      "link": "https://www.goodmorningamerica.com/culture/story/taylor-swift-reclaims-her-masters-shares-powerful-letter-my-greatest-dream-come-true-122348547"
+     },
+     {
+      "title": "Attitude — Taylor Swift announces purchase of her masters",
+      "link": "https://www.attitude.co.uk/culture/music/taylor-swift-masters-purchase-484568/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717491/olk1x3qhry15oyx0ugil.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717491/fcxoferrcggyam6xjg4k.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717490/kxyehhuicvjayadatcmk.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717490/g67hwf3gneuuyphllt6a.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717492/kh1iecnun7ynyrexdgmc.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717492/icnbgul31xaeg6idqlor.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803604/ey7cwcafd7ge8wuamsln.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803604/zombppcsfqydfdjsowjf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803604/lhd3oplvv8vuguep3izs.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803604/xikpc5pnlquccg5cduko.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803605/dr64j8wru6qm7qktlwns.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803605/clgnsehaw3ecussezerk.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717491/olk1x3qhry15oyx0ugil.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803604/ey7cwcafd7ge8wuamsln.jpg"
      },
-     "at": "2026-10-23T10:04+09:00",
+     "at": "2026-10-24T10:00+09:00",
      "v": {
-      "A": "b2d78eab"
+      "A": "3db00df8"
      }
     }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "오늘(24일)이 정확히 20주년 · 고정 연재 「그날의 앨범」 #2 · 해외 팬덤이 이번 주 내내 기다린 날",
+    "at": "2026-10-24T09:59+09:00"
    },
    "corner_name": "그날의 앨범",
    "corner_no": 2
   },
   {
    "source": {
-    "id": "claude:jihyo-emithaus",
-    "account": "뉴시스",
-    "url": "https://www.newsis.com/view/NISX20261021_0003835158",
+    "id": "claude:ateez-drip-8th",
+    "account": "@ateez_official_",
+    "url": "https://www.instagram.com/reel/De0prIAtzr_/",
     "image": null,
-    "head": "트와이스 지효, 21년 만에 JYP 떠났다…독립 레이블 '이밋하우스' 설립",
+    "head": "ATEEZ(에이티즈) - 'Drip' Official MV · 2026. 11. 13 2PM ALBUM RELEASE",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-10-23T10:04+09:00",
-   "key": "a9cb908c",
+   "made_at": "2026-10-24T09:59+09:00",
+   "key": "2af05b1d",
    "by": "claude",
    "subjects": [
-    "지효"
+    "에이티즈"
    ],
    "lane": "정보",
    "editor": {
-    "grade": "A",
+    "grade": "B",
     "kind": "정보",
-    "angle": "트와이스 지효, 21년 만에 JYP를 떠나 이밋하우스로 — 손편지 '독립은 앞으로의 시간에 대한 선택' · '팀과의 이별은 아니다'",
-    "why": "10/21 본인 손편지 + 뉴시스·한국경제·뉴스엔 등 여러 매체 · PLOT 미보도 · 기사형이라 표지 한 장"
+    "angle": "데뷔 8주년(10/24)을 하루 앞두고 낸 선공개곡 'Drip' — 빌보드 200 세 번째 1위 다음 장, 여덟 명 그대로",
+    "why": "당사자 인스타 'Drip' 릴스 5.9배 · 오늘이 데뷔 8주년 당일 · 기사형이라 표지 한 장"
    },
    "added": "claude",
-   "added_at": "2026-10-23T10:04+09:00",
+   "added_at": "2026-10-24T09:59+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n트와이스 지효(@_zyozyo)가 21년 만에 JYP엔터테인먼트를 떠났습니다.\n\n2005년 연습생으로 들어가 어린 시절을 JYP에서 보낸 지효는 21일 손편지로 이 소식을 전했는데요, 독립은 지나온 시간의 결론이라기보다 \"앞으로의 시간을 어떻게 살아갈 것인가에 대한 선택\"에 가깝다고 했습니다.\n\n새 회사 이름은 '발산하다'라는 뜻의 영어 단어 EMIT에서 딴 이밋하우스(EMITHAUS)입니다. 지효는 이번 선택이 팀과의 이별은 아니라며, 트와이스 멤버로서의 활동도 이어 갑니다.\n\n#PLOT #지효 #트와이스 #이밋하우스 #JYP\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792717478/zbdxlhcani7unni7oft2.jpg\n제목: 트와이스 지효,|21년 만의 독립\n부제: 새 회사 이밋하우스 — \"팀과의 이별은 아니다\"\n출처:\n",
-    "caption": "트와이스 지효(@_zyozyo)가 21년 만에 JYP엔터테인먼트를 떠났습니다.\n\n2005년 연습생으로 들어가 어린 시절을 JYP에서 보낸 지효는 21일 손편지로 이 소식을 전했는데요, 독립은 지나온 시간의 결론이라기보다 \"앞으로의 시간을 어떻게 살아갈 것인가에 대한 선택\"에 가깝다고 했습니다.\n\n새 회사 이름은 '발산하다'라는 뜻의 영어 단어 EMIT에서 딴 이밋하우스(EMITHAUS)입니다. 지효는 이번 선택이 팀과의 이별은 아니라며, 트와이스 멤버로서의 활동도 이어 갑니다.\n\n#PLOT #지효 #트와이스 #이밋하우스 #JYP",
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n에이티즈(@ateez_official_)가 데뷔 8주년을 하루 앞둔 어제(23일) 선공개곡 'Drip'의 뮤직비디오를 공개했습니다.\n\n지난 6월 미니 14집 [GOLDEN HOUR : Part.5]로 빌보드 200 통산 세 번째 1위에 올랐는데요, 'Drip'은 그다음 장인 미니 15집 [GOLDEN HOUR : Part.6]에서 가장 먼저 꺼낸 곡입니다.\n\n2018년 10월 24일 [TREASURE(@yg_treasure_official) EP.1 : All To Zero]로 데뷔한 여덟 명은 지난해 7월 전원 재계약을 맺었고, 오늘 그대로 아홉 번째 해에 들어섭니다.\n\n미니 15집은 11월 13일 오후 2시에 나옵니다.\n\n#PLOT #에이티즈 #ATEEZ #Drip #골든아워\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792803592/woute88zp98wtith4y3g.jpg\n제목: 데뷔 8주년 앞두고|에이티즈의 'Drip'\n부제: 미니 15집 [GOLDEN HOUR : Part.6] 선공개곡\n출처: @ateez_official_\n",
+    "caption": "에이티즈(@ateez_official_)가 데뷔 8주년을 하루 앞둔 어제(23일) 선공개곡 'Drip'의 뮤직비디오를 공개했습니다.\n\n지난 6월 미니 14집 [GOLDEN HOUR : Part.5]로 빌보드 200 통산 세 번째 1위에 올랐는데요, 'Drip'은 그다음 장인 미니 15집 [GOLDEN HOUR : Part.6]에서 가장 먼저 꺼낸 곡입니다.\n\n2018년 10월 24일 [TREASURE(@yg_treasure_official) EP.1 : All To Zero]로 데뷔한 여덟 명은 지난해 7월 전원 재계약을 맺었고, 오늘 그대로 아홉 번째 해에 들어섭니다.\n\n미니 15집은 11월 13일 오후 2시에 나옵니다.\n\n#PLOT #에이티즈 #ATEEZ #Drip #골든아워",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717478/zbdxlhcani7unni7oft2.jpg",
-      "credit": "신뢰",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930634/jrfrfgeq69naozovpfk1.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803592/woute88zp98wtith4y3g.jpg",
+      "credit": "@ateez_official_",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/860844039_18345987700251678_1509210722277029591_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0XzsB9v-s-4Q7kNvwE5r28Y&_nc_oc=Adrbwn-BfMnv_BO4MZC3Fn8azTCL1lh5u-_UaorzEe_MECb-_4QxY6VTQWCHETdSoxU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=HZS9jftrhOfuhPRmj1gxRQ&oh=00_AQMFnmQBlD3nypLuSkN7BGTWJHvjcdD8V7Lf4ab_Nd201A&oe=6AE1B67C"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930634/jrfrfgeq69naozovpfk1.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803594/vlmzvfxqrxjxqqmnyivf.jpg",
       "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb__gqpjenv/auto_pdb_지효_프로필_.jpg"
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792403677/qzikcboizg6ujw0jeeo4.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930638/rzccssnply73vjaajteu.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_iu848u0_/auto_pdb_지효_화보_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930629/szvjgriplvlujzkcekg7.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501454/vh2dqfrbeii5yhqmomrr.jpg",
       "credit": "멜론",
       "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/113/08/528/11308528_20230817180024.jpg/melon/resize/1000/quality/90/optimize"
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/103/71/984/10371984_20200106135411.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501456/i9kuk363q8nsrdaivwkt.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/95/279/10295279.jpg/melon/resize/1000/quality/90/optimize"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717478/zbdxlhcani7unni7oft2.jpg",
-      "credit": "신뢰",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930634/jrfrfgeq69naozovpfk1.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803592/woute88zp98wtith4y3g.jpg",
+      "credit": "@ateez_official_",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/860844039_18345987700251678_1509210722277029591_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0XzsB9v-s-4Q7kNvwE5r28Y&_nc_oc=Adrbwn-BfMnv_BO4MZC3Fn8azTCL1lh5u-_UaorzEe_MECb-_4QxY6VTQWCHETdSoxU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=HZS9jftrhOfuhPRmj1gxRQ&oh=00_AQMFnmQBlD3nypLuSkN7BGTWJHvjcdD8V7Lf4ab_Nd201A&oe=6AE1B67C"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930634/jrfrfgeq69naozovpfk1.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803594/vlmzvfxqrxjxqqmnyivf.jpg",
       "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb__gqpjenv/auto_pdb_지효_프로필_.jpg"
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792403677/qzikcboizg6ujw0jeeo4.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930638/rzccssnply73vjaajteu.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_iu848u0_/auto_pdb_지효_화보_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791930629/szvjgriplvlujzkcekg7.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501454/vh2dqfrbeii5yhqmomrr.jpg",
       "credit": "멜론",
       "kind": "앨범커버",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/113/08/528/11308528_20230817180024.jpg/melon/resize/1000/quality/90/optimize"
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/103/71/984/10371984_20200106135411.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501456/i9kuk363q8nsrdaivwkt.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/95/279/10295279.jpg/melon/resize/1000/quality/90/optimize"
      }
     ],
     "shape": "단신",
@@ -1035,353 +195,136 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "트와이스 지효,|21년 만의 독립",
-      "sub": "새 회사 이밋하우스 — \"팀과의 이별은 아니다\""
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "지효가 손편지로 전한|21년 만의 독립",
-      "sub": "JYP를 떠나 이밋하우스로"
+      "title": "데뷔 8주년 앞두고|에이티즈의 'Drip'",
+      "sub": "미니 15집 [GOLDEN HOUR : Part.6] 선공개곡"
      }
     ],
     "issues": [],
     "confirm": [
-     "10/21 소식이라 이틀 지났습니다 — 이미 늦었다고 보면 넘겨 주세요 · JYP 쪽 별도 입장은 기사에서 확인 못 해 쓰지 않았습니다"
+     "[검증] '지난해 7월 전원 재계약'은 마리끌레르 한 곳에서만 확인 — 다른 보도 한 곳 더 보기",
+     "사람 각도가 얇은 발매 소식이라 표지 한 장으로만 썼습니다 — 넘겨도 되는 건"
     ],
     "research": [
      {
-      "title": "뉴시스 — 트와이스 지효, 21년 만에 JYP 떠났다…독립 레이블 '이밋하우스' 설립 (10/21)",
-      "link": "https://www.newsis.com/view/NISX20261021_0003835158"
+      "title": "에이티즈 공식 인스타 — 'Drip' Official MV · 11.13 2PM 앨범 발매 (10/23)",
+      "link": "https://www.instagram.com/reel/De0prIAtzr_/"
      },
      {
-      "title": "한국경제 — 트와이스 지효, JYP 떠난다…팀과의 이별은 아냐 (10/21)",
-      "link": "https://www.hankyung.com/article/2026102170357"
+      "title": "일간스포츠 — 에이티즈, '드립' 스포일러 이미지 공개 (10/19 · 23일 MV · 11/13 발매 · Part.5 빌보드 200 세 번째 1위)",
+      "link": "https://isplus.com/article/view/isp202610190088"
      },
      {
-      "title": "뉴스엔 — 트와이스 지효, 21년만 JYP 떠난다 'EMITHAUS' 설립 [전문]",
-      "link": "https://www.newsen.com/news_view.php?uid=202610211220372410"
+      "title": "스타뉴스 — ATEEZ releases teaser for 'Drip' MV (10/21)",
+      "link": "https://www.starnewskorea.com/en/music/2026/10/21/2026102107120768926"
+     },
+     {
+      "title": "엑스포츠뉴스 — 에이티즈 2018.10.24 데뷔 쇼케이스",
+      "link": "https://www.xportsnews.com/article/1033745"
+     },
+     {
+      "title": "마리끌레르 — 8명이 함께 걸어갈 또 한 번의 7년 (2025.7 재계약)",
+      "link": "https://www.marieclairekorea.com/celebrity/2025/07/ateez-8/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717495/yiuefj9tsl6fltjd8xxz.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717495/cgmn06tv0jmr47ymzqp6.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803608/djv6e5vopizofqztjre1.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803608/xci7vyexvnpdiuljnqnb.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717497/hmokytsp43uxhflbkeoi.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717495/yiuefj9tsl6fltjd8xxz.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803608/djv6e5vopizofqztjre1.jpg"
      },
-     "at": "2026-10-23T10:04+09:00",
+     "at": "2026-10-24T10:00+09:00",
      "v": {
-      "A": "7b7d13ab",
-      "B": "49869937"
+      "A": "c744073a"
      }
     }
    },
-   "corner_name": "소식",
-   "published": {
-    "permalink": "https://www.instagram.com/p/De0ntugmc8z/",
-    "cover": "A",
-    "at": "2026-10-23T12:44+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:crush-name-origin",
-    "account": "KBS Kpop 유튜브",
-    "url": "https://www.youtube.com/watch?v=sxqRBf5b0yU",
-    "image": null,
-    "head": "크러쉬 활동명의 유래",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T10:04+09:00",
-   "key": "786b0553",
-   "by": "claude",
-   "subjects": [
-    "크러쉬"
-   ],
-   "lane": "클립",
-   "editor": {
-    "grade": "A",
-    "kind": "클립",
-    "angle": "크러쉬라는 이름은 악필에서 나왔다 — 중학교 별명 '시셥'을 C-sub으로 적었더니 친구가 'Crush'냐고",
-    "why": "그 말 칸 · 클립 순간 · 이번 주 신곡 '삐그덕'(10/21) 활동 중 · 원본 자막으로 화자·구간 확인 (9:58~10:28)"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T10:04+09:00",
-   "corner": "mal",
-   "shorts": {
-    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=sxqRBf5b0yU\n구간: 9:58-10:28\n곡: 하는 거예요\n아티스트: 친구가 이거 Crush냐고\n피처링:\n후킹: C 하고 sub을 썼는데\n출처: KBS Kpop\n자막: 자동",
-    "caption": "크러쉬라는 이름은 악필에서 나왔습니다.\n\nKBS 〈리무진서비스〉 238회에 나온 크러쉬는 본명 신효섭을 빨리 부른 '시셥'이 중학교 때 별명이라 활동명을 'C-sub'으로 정했다고 했는데요, 그걸 영어로 적은 글씨를 본 친구가 'Crush'냐고 물었다고 합니다.\n\n찾아보니 Crush에는 '깨부수다'와 '반하다'라는 정반대의 뜻이 함께 있었고, 크러쉬는 '반하다' 쪽을 골랐습니다. 다이나믹 듀오처럼 되자며 같은 반 친구와 공연을 보러 다니던 중학교 1학년 때의 일입니다.\n\n#PLOT #크러쉬 #리무진서비스 #이무진 #삐그덕",
-    "hooks": {
-     "A": "C 하고 sub을 썼는데 / 친구가 이거 Crush냐고 / 하는 거예요",
-     "B": "크러쉬라는 이름은 / 중학생 크러쉬의 / 악필에서 나왔다",
-     "C": "본명 신효섭, / 별명 시셥, / 그리고 크러쉬"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=sxqRBf5b0yU",
-     "credit": "KBS Kpop",
-     "range": [
-      598.0,
-      628.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "클립 위험: 높음 — KBS Kpop (구간 30초)",
-     "이름 유래는 이 영상 속 크러쉬 본인의 말로만 확인했습니다 (기사 없음)"
-    ],
-    "research": [
-     {
-      "title": "KBS Kpop — [리무진서비스] EP.238 크러쉬 | 삐그덕, 이런 엔딩, 미워 (원본, 9:09~10:45)",
-      "link": "https://www.youtube.com/watch?v=sxqRBf5b0yU"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/sxqRBf5b0yU/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792717504/nrv33vgsqlxoivrmvirr.jpg",
-     "key": "sxqRBf5b0yU@598.0"
-    },
-    "rendered": {
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792717788/plot_studio/ud9y56nyarjerjid8cgm.mp4",
-     "at": "2026-10-23T10:09+09:00",
-     "file": "ChinGuGa_IGeo_CrushN_HaNeun_GeoYeYo_Feature_no_lyrics__cta.mp4"
-    }
-   },
-   "corner_name": "그 말",
-   "corner_no": 3,
    "pick": {
     "rank": 2,
-    "why": "숏폼 한 자리 — 실제 한 말로 여는 '그 말' 결 · 신곡 '삐그덕' 활동 주",
-    "at": "2026-10-23T16:17+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:brk-12d3f22d",
-    "account": "@갈등·반응",
-    "url": "https://www.nocutnews.co.kr/news/6595928?utm_source=naver&utm_medium=article&utm_campaign=20261023090032",
-    "image": null,
-    "head": "뉴진스 성공에서 '민희진 효과'는 얼마인가 — 재판부가 꼽은 손해배상 소송의 핵심",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T10:52+09:00",
-   "key": "fa952e4b",
-   "by": "claude",
-   "subjects": [
-    "민희진",
-    "뉴진스"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "재판부가 어도어-다니엘·민희진 손해배상 소송의 핵심으로 '민희진 효과'를 꼽았다",
-    "why": "10/22 6차 변론 보도 직후 반응 급증 — 뉴진스 성공에서 한 사람의 몫을 따질 수 있느냐는 질문이 법정에 올라옴"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T10:52+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\n재판부가 뉴진스(@newjeans_official) 손해배상 소송의 핵심으로 '민희진(@min.hee.jin) 효과'를 꼽았습니다.\n\n어도어가 다니엘과 그 가족, 민희진 전 대표를 상대로 낸 330억 원대 위약벌·손해배상 소송의 여섯 번째 변론이 22일 서울중앙지법에서 열렸는데요, 뉴진스가 거뒀을 것으로 보는 수익을 따지는 자리에서 재판장은 \"제일 중요한 게 '민희진 효과'\"라고 짚었습니다.\n\n다니엘 측은 사람의 창작 가치는 숫자로 매길 수 없어 감정 자체가 어렵다는 입장입니다. 어도어 측은 이미 성과를 쌓은 뉴진스는 신생 그룹처럼 프로듀서 한 명이 결정적이라고 보기 어렵다며, 민희진 전 대표가 없으면 매출이 0원이라는 논리는 말이 안 된다고 반박했습니다.\n\n재판부는 이 효과를 민희진 개인의 몫으로 볼지, 어도어의 사업 효과로 볼지, 둘이 섞인 것으로 볼지 양측에 정리해 오라고 했습니다. 뉴진스의 성공을 사람별로 나눌 수 있느냐는 질문이 이제 법정에 올라와 있습니다.\n\n#PLOT #뉴진스 #민희진 #다니엘 #어도어\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792720373/butzqurxwlb353nt4vbs.jpg\n제목: 재판부가 꼽은 핵심,|'민희진 효과'\n부제: 어도어-다니엘·민희진 손해배상 소송 6차 변론\n출처: 사진 DB\n",
-    "caption": "재판부가 뉴진스(@newjeans_official) 손해배상 소송의 핵심으로 '민희진(@min.hee.jin) 효과'를 꼽았습니다.\n\n어도어가 다니엘과 그 가족, 민희진 전 대표를 상대로 낸 330억 원대 위약벌·손해배상 소송의 여섯 번째 변론이 22일 서울중앙지법에서 열렸는데요, 뉴진스가 거뒀을 것으로 보는 수익을 따지는 자리에서 재판장은 \"제일 중요한 게 '민희진 효과'\"라고 짚었습니다.\n\n다니엘 측은 사람의 창작 가치는 숫자로 매길 수 없어 감정 자체가 어렵다는 입장입니다. 어도어 측은 이미 성과를 쌓은 뉴진스는 신생 그룹처럼 프로듀서 한 명이 결정적이라고 보기 어렵다며, 민희진 전 대표가 없으면 매출이 0원이라는 논리는 말이 안 된다고 반박했습니다.\n\n재판부는 이 효과를 민희진 개인의 몫으로 볼지, 어도어의 사업 효과로 볼지, 둘이 섞인 것으로 볼지 양측에 정리해 오라고 했습니다. 뉴진스의 성공을 사람별로 나눌 수 있느냐는 질문이 이제 법정에 올라와 있습니다.\n\n#PLOT #뉴진스 #민희진 #다니엘 #어도어",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720373/butzqurxwlb353nt4vbs.jpg",
-      "credit": "사진 DB",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg",
-      "credit": "신뢰",
-      "kind": "프로필",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ziswua2k/auto_pdb_민희진_근황_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661373/uhuf3g4uycjj0lobq4vo.jpg",
-      "credit": "신뢰",
-      "kind": "프로필",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_onu5wpu4/auto_pdb_민희진_근황_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661377/c7qilkmdwftbhgptvkpf.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb__qbzqjub/auto_pdb_민희진_매거진 화보_.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720373/butzqurxwlb353nt4vbs.jpg",
-      "credit": "사진 DB",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661349/djbgg9zj6jltgwpvcegt.jpg",
-      "credit": "신뢰",
-      "kind": "프로필",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ziswua2k/auto_pdb_민희진_근황_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661373/uhuf3g4uycjj0lobq4vo.jpg",
-      "credit": "신뢰",
-      "kind": "프로필",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_onu5wpu4/auto_pdb_민희진_근황_.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792661377/c7qilkmdwftbhgptvkpf.jpg",
-      "credit": "신뢰",
-      "kind": "화보",
-      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb__qbzqjub/auto_pdb_민희진_매거진 화보_.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "재판부가 꼽은 핵심,|'민희진 효과'",
-      "sub": "어도어-다니엘·민희진 손해배상 소송 6차 변론"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "뉴진스의 성공에서|민희진의 몫은?",
-      "sub": "330억 원대 손해배상 소송 6차 변론"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "330억 소송 법정에 오른|'민희진 효과'",
-      "sub": "재판부 \"제일 중요한 게 민희진 효과\""
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "숏폼 비움 — 법정 변론이라 맞는 원본 영상이 없음",
-     "표지 사진은 사진 DB 화보(원출처 credit 미상) — 출처 확인 필요"
-    ],
-    "research": [
-     {
-      "title": "뉴진스 성공에 '민희진 효과' 얼마만큼인지 감정 가능할까[현장EN:] (노컷뉴스, 10/23)",
-      "link": "https://www.nocutnews.co.kr/news/6595928"
-     },
-     {
-      "title": "어도어 “민희진 없으면 뉴진스 매출 0원? 말 안 돼”…재판부, 기여도... (일간스포츠, 10/22)",
-      "link": "https://isplus.com/article/view/isp202610220187"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720378/nsgp8nmwocm3wenqzqvk.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720378/awx5k59gzilas3e2vyzm.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720380/zzdpsn9x5wazghpl3tn6.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720380/tx3l0k8wqekdkjia2kfn.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792720378/nsgp8nmwocm3wenqzqvk.jpg"
-     },
-     "at": "2026-10-23T10:53+09:00",
-     "v": {
-      "A": "71daf465",
-      "B": "a454647c",
-      "C": "45cfb094"
-     }
-    }
+    "why": "오늘이 데뷔 8주년 당일 · 'Drip' 릴스가 평소의 5.9배 — 지금 가장 뜨거운 케이팝 소식, 표지 한 장으로 싸게",
+    "at": "2026-10-24T09:59+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:ord-1baa19e6",
-    "account": "@규효 공유 · @deepdeep_enter",
-    "url": "https://www.instagram.com/p/DeyY9zXKXOv/?vrfl=YmYyNTJtdWdkYWpq",
+    "id": "claude:epikhigh-23-firsts",
+    "account": "@blobyblo",
+    "url": "https://www.instagram.com/p/De0bMkXz_WU/",
     "image": null,
-    "head": "A2O LITE 'NEON' 하루 30만 회 — 브라질 매체 팝라인의 봇 의혹과 반론",
+    "head": "오늘 에픽하이 생일입니다. 23년 전 데뷔하던 날 처럼…",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-10-23T15:19+09:00",
-   "key": "4fbe3952",
+   "made_at": "2026-10-24T09:59+09:00",
+   "key": "230b4d69",
    "by": "claude",
    "subjects": [
-    "A2O LITE"
+    "에픽하이",
+    "타블로"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "하루 30만 회라는 숫자 하나가 기록이냐 봇이냐의 논쟁이 됐다 — 의혹과 반론을 같은 무게로",
-    "why": "규효 맡기기 · 여러 매거진이 다루는 A2O LITE 화제의 다음 단계(봇 의혹)"
+    "angle": "데뷔 23주년 — 타블로 '셋이 여전히 모여 있다는 것만으로도' · 올해 팬 커뮤니티·국내 팬미팅·KSPO DOME 모두 '처음'",
+    "why": "타블로 인스타 생일 글 4.4배 · 23년 만의 첫 팬 커뮤니티(5월)·첫 팬미팅(7월)·첫 KSPO DOME(2027.1) 세 사실을 잇는 각도"
    },
    "added": "claude",
-   "added_at": "2026-10-23T15:19+09:00",
+   "added_at": "2026-10-24T09:59+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\nA2O LITE(@a2o.lite)의 데뷔곡 'NEON'이 하루 재생 수 하나로 논쟁에 올랐습니다.\n\n음원 집계 사이트 콰브 기준으로 'NEON'은 16일 한국 스포티파이(@spotifykr)에서 29만 9,898회 재생됐는데요, 뉴진스(@newjeans_official) 'Ditto'의 한국 하루 최고 기록보다 67.5%, 로제와 브루노 마스의 'APT.'보다 28.4% 많은 숫자입니다. 브라질 음악 매체 팝라인은 19일(현지시간) 이 기록을 두고 재생 봇 의혹을 제기했지만, 이를 입증할 자료는 내놓지 않았습니다.\n\n반대쪽에서는 스포티파이 차트가 검색과 다른 플레이리스트 재생까지 함께 세고, 비정상 재생을 걸러 내는 장치도 있다는 반론이 나옵니다. 'NEON'은 13일 발매돼 이튿날 멜론 TOP100 1위에 올랐고, 데뷔 일주일 만에 음악방송 1위도 차지했습니다.\n\n봇 의혹에 대해 A2O 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #이수만 #스포티파이\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg\n제목: 에이투오 라이트 데뷔곡에|봇 의혹이 나왔다\n부제: 브라질 매체의 의혹 제기, 근거는 내놓지 않았다\n출처: @a2o.lite\n",
-    "caption": "A2O LITE(@a2o.lite)의 데뷔곡 'NEON'이 하루 재생 수 하나로 논쟁에 올랐습니다.\n\n음원 집계 사이트 콰브 기준으로 'NEON'은 16일 한국 스포티파이(@spotifykr)에서 29만 9,898회 재생됐는데요, 뉴진스(@newjeans_official) 'Ditto'의 한국 하루 최고 기록보다 67.5%, 로제와 브루노 마스의 'APT.'보다 28.4% 많은 숫자입니다. 브라질 음악 매체 팝라인은 19일(현지시간) 이 기록을 두고 재생 봇 의혹을 제기했지만, 이를 입증할 자료는 내놓지 않았습니다.\n\n반대쪽에서는 스포티파이 차트가 검색과 다른 플레이리스트 재생까지 함께 세고, 비정상 재생을 걸러 내는 장치도 있다는 반론이 나옵니다. 'NEON'은 13일 발매돼 이튿날 멜론 TOP100 1위에 올랐고, 데뷔 일주일 만에 음악방송 1위도 차지했습니다.\n\n봇 의혹에 대해 A2O 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #이수만 #스포티파이",
+    "form": "[카테고리]\nNews\n\n[캡션]\n에픽하이가 어제(23일) 데뷔 23주년을 맞았습니다.\n\n타블로(@blobyblo)는 이날 인스타그램에 \"셋이 여전히 모여 있다는 것만으로도 너무 행복합니다\"라고 적었는데요, 올해 에픽하이에게는 23년 만에 처음 해 보는 일이 유난히 많았습니다.\n\n5월에는 처음으로 팬 커뮤니티를 열었고, 7월에는 국내 첫 팬미팅 '동창회'로 팬들을 만났습니다. 그리고 내년 1월 22일부터 사흘 동안, 데뷔 후 처음으로 KSPO DOME 단독 무대에 오릅니다.\n\n셋이 함께 걸어온 스물세 해 끝에도 아직 '처음'이 남아 있는 셈입니다.\n\n#PLOT #에픽하이 #타블로 #미쓰라 #투컷\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792803596/je1ayv7xr6d9uysdtg1t.jpg\n제목: 데뷔 23주년 에픽하이,|올해는 '처음'이 많다\n부제: 타블로 \"셋이 여전히 모여 있다는 것만으로도\"\n출처: 스포츠경향\n",
+    "caption": "에픽하이가 어제(23일) 데뷔 23주년을 맞았습니다.\n\n타블로(@blobyblo)는 이날 인스타그램에 \"셋이 여전히 모여 있다는 것만으로도 너무 행복합니다\"라고 적었는데요, 올해 에픽하이에게는 23년 만에 처음 해 보는 일이 유난히 많았습니다.\n\n5월에는 처음으로 팬 커뮤니티를 열었고, 7월에는 국내 첫 팬미팅 '동창회'로 팬들을 만났습니다. 그리고 내년 1월 22일부터 사흘 동안, 데뷔 후 처음으로 KSPO DOME 단독 무대에 오릅니다.\n\n셋이 함께 걸어온 스물세 해 끝에도 아직 '처음'이 남아 있는 셈입니다.\n\n#PLOT #에픽하이 #타블로 #미쓰라 #투컷",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858213140_17901261432606064_1793344857703458437_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p54hatWcYskQ7kNvwE68zL2&_nc_oc=AdqsM-lgNyHpDo5KYKI6c9yWdvzn3MRrzYwDb6c4Bc8LTQ6fn_Hvzr0yXZJhE2EbaZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMhdQCAl8WoUIzYCva1XFE2KFKsGPyh7iHwzlHEeMpsxw&oe=6ADD70F8"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803596/je1ayv7xr6d9uysdtg1t.jpg",
+      "credit": "스포츠경향",
+      "from": "https://images.khan.co.kr/article/2026/05/04/news-p.v1.20260504.21181a3f08884814965b31725ce0cf52_P1.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518507/ju9hr9h13vlwlxfxdsfl.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/857497152_17901261276606064_9082982577915728495_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=LDqYgQSMFkMQ7kNvwHrNQVx&_nc_oc=AdrSEn3yQiGIKgjh6985oJaPtPlOhUV4ywPBubxpsfysvG9HAiJlNJhYrIonN7jJItk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPVDQgtwgDjQOZHqbbo8nQJxpo5TpAaaTLc0z9dc3P4tw&oe=6ADD69F1"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803599/srtpnto1pipdbsntw2xn.jpg",
+      "credit": "TV리포트",
+      "from": "https://d3h3k01ny8mjr.cloudfront.net/tv-report/2026/09/29182002/CP-2022-0227-40050758-thumb.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518516/q0nrpgisfd8wcy7ntio5.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/853672350_17901261300606064_1083013704045046596_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5_pS6LfbWuMQ7kNvwGHKsc1&_nc_oc=AdrVNohFZTGJt3yi6OTOgQTjvk85dOGnNrW9Jsz2iyrigNmrp5qjqTP_q6PBdAp51VQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOHghfIOQWY3us70au_KLKGs-2pln-ICYEzBW05YDyD2A&oe=6ADD6E5F"
+      "url": "https://i.ibb.co/8nGk2k5k/9e74b038a63e.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/145/51/518/14551518_20260915101948.jpg/melon/resize/1000/quality/90/optimize"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518520/ekks8kwituhi5eepao2g.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855291464_17901261075606064_8592024997119778748_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bnq1vylUVKkQ7kNvwGe4clh&_nc_oc=AdojlAYcY9_b_dcAaftOb4Eh5QPmNEIA4uI_OM2knZW-rQVM6XOCJJp25FmbUPZHMmA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMW2bx9G41_1fzNNALjIADr7Yd7Ju_x1H-J9ZYpR-PY_Q&oe=6ADD7502"
+      "url": "https://i.ibb.co/q39fP6Wx/6ccf32a9203e.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/145/17/986/14517986_20260918103030.jpg/melon/resize/1000/quality/90/optimize"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858213140_17901261432606064_1793344857703458437_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p54hatWcYskQ7kNvwE68zL2&_nc_oc=AdqsM-lgNyHpDo5KYKI6c9yWdvzn3MRrzYwDb6c4Bc8LTQ6fn_Hvzr0yXZJhE2EbaZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMhdQCAl8WoUIzYCva1XFE2KFKsGPyh7iHwzlHEeMpsxw&oe=6ADD70F8"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803596/je1ayv7xr6d9uysdtg1t.jpg",
+      "credit": "스포츠경향",
+      "from": "https://images.khan.co.kr/article/2026/05/04/news-p.v1.20260504.21181a3f08884814965b31725ce0cf52_P1.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518507/ju9hr9h13vlwlxfxdsfl.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/857497152_17901261276606064_9082982577915728495_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=LDqYgQSMFkMQ7kNvwHrNQVx&_nc_oc=AdrSEn3yQiGIKgjh6985oJaPtPlOhUV4ywPBubxpsfysvG9HAiJlNJhYrIonN7jJItk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPVDQgtwgDjQOZHqbbo8nQJxpo5TpAaaTLc0z9dc3P4tw&oe=6ADD69F1"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803599/srtpnto1pipdbsntw2xn.jpg",
+      "credit": "TV리포트",
+      "from": "https://d3h3k01ny8mjr.cloudfront.net/tv-report/2026/09/29182002/CP-2022-0227-40050758-thumb.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518516/q0nrpgisfd8wcy7ntio5.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/853672350_17901261300606064_1083013704045046596_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5_pS6LfbWuMQ7kNvwGHKsc1&_nc_oc=AdrVNohFZTGJt3yi6OTOgQTjvk85dOGnNrW9Jsz2iyrigNmrp5qjqTP_q6PBdAp51VQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOHghfIOQWY3us70au_KLKGs-2pln-ICYEzBW05YDyD2A&oe=6ADD6E5F"
+      "url": "https://i.ibb.co/8nGk2k5k/9e74b038a63e.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/145/51/518/14551518_20260915101948.jpg/melon/resize/1000/quality/90/optimize"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518520/ekks8kwituhi5eepao2g.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855291464_17901261075606064_8592024997119778748_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bnq1vylUVKkQ7kNvwGe4clh&_nc_oc=AdojlAYcY9_b_dcAaftOb4Eh5QPmNEIA4uI_OM2knZW-rQVM6XOCJJp25FmbUPZHMmA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMW2bx9G41_1fzNNALjIADr7Yd7Ju_x1H-J9ZYpR-PY_Q&oe=6ADD7502"
+      "url": "https://i.ibb.co/q39fP6Wx/6ccf32a9203e.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/145/17/986/14517986_20260918103030.jpg/melon/resize/1000/quality/90/optimize"
      }
     ],
     "shape": "단신",
@@ -1389,429 +332,104 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "에이투오 라이트 데뷔곡에|봇 의혹이 나왔다",
-      "sub": "브라질 매체의 의혹 제기, 근거는 내놓지 않았다"
+      "title": "데뷔 23주년 에픽하이,|올해는 '처음'이 많다",
+      "sub": "타블로 \"셋이 여전히 모여 있다는 것만으로도\""
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "'디토'보다 많이 들은|신인 데뷔곡에 봇 의혹",
-      "sub": "하루 30만 회를 두고 엇갈린 해석"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "하루 30만 회 재생,|기록일까 봇일까",
-      "sub": "팝라인의 의혹 제기와 반론"
+      "title": "타블로가 남긴|에픽하이 생일 인사",
+      "sub": "23년 만의 첫 KSPO DOME까지"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 표지 사진 오른쪽 위 로고(흰 글씨 'i…')가 A2O 공식 로고인지 다른 계정 워터마크인지 확인 못 함 · 미성년 멤버 한 명 단독 사진이 '봇 의혹' 제목 아래 놓임 — 단체 사진이나 'NEON' 커버로 교체 권장",
-     "봇 의혹에 대한 A2O 측 공식 입장이 10/20 이후 나왔는지 (찾은 기사에선 중국 자본설 부인만 있음) — 나왔으면 맺음 줄 교체",
-     "표지 사진이 멤버 한 명 단독 콘셉트 화보(@a2o.lite) — 멤버 전원 2008~2013년생이라 한 사람이 의혹의 얼굴처럼 보이지 않게 단체 사진이나 'NEON' 커버로 바꾸는 게 나음 (앨범 커버 자동 검색 실패)"
+     "표지 사진은 스포츠경향 기사 대표 사진 — 세 사람이 다 보이는지 (사진 DB 단체 사진은 5명이 나와 뺐습니다)"
     ],
     "research": [
      {
-      "title": "뉴진스·로제까지 넘은 A2O LITE, 바이럴·봇 의혹 '활활' — 스포츠경향 (10/20)",
-      "link": "https://sports.khan.co.kr/article/202610201520003"
+      "title": "타블로 인스타 — 에픽하이 생일 글 (10/23)",
+      "link": "https://www.instagram.com/p/De0bMkXz_WU/"
      },
      {
-      "title": "중국자본설→바이럴 의혹까지…A2O 둘러싼 논란과 억측 — 텐아시아 (10/20)",
-      "link": "https://www.tenasia.co.kr/article/2026102038614"
+      "title": "스포츠경향 — 에픽하이, 데뷔 23년 만에 팬 커뮤니티 오픈 (5/4 · '국내 첫 팬미팅' 예고)",
+      "link": "https://sports.khan.co.kr/article/202605041813013"
      },
      {
-      "title": "A2O LITE tops a music show one week after debut — Sports Kyunghyang",
-      "link": "https://sports.khan.co.kr/en/article/202610201955007/"
+      "title": "TV리포트 — 에픽하이 '단독 돔 콘서트' 개최 (9/29 · 데뷔 후 처음 KSPO DOME · 7월 첫 팬미팅 '동창회')",
+      "link": "https://www.tvreport.co.kr/music/article/1079240/"
+     },
+     {
+      "title": "Sports Kyunghyang — EPIK HIGH to take the stage at KSPO DOME (9/29)",
+      "link": "https://sports.khan.co.kr/en/article/202609291423007"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736346/mdken5cmznie7bkpa5sd.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736346/ygakystrvahalkgopgue.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803611/ti2e7inguys100yrkvcb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803611/j1pcpcave8lsefjr5yy2.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736348/vdxhre32idpf9nvudesy.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736348/r8r4nils6sqov9adqx7l.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792736346/mdken5cmznie7bkpa5sd.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803613/g3m5ilebvhei302yt7ut.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803611/ti2e7inguys100yrkvcb.jpg"
      },
-     "at": "2026-10-23T15:19+09:00",
+     "at": "2026-10-24T10:00+09:00",
      "v": {
-      "A": "166508cf",
-      "B": "aa61e361",
-      "C": "6bcb2e6a"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:lisa-pressplay",
-    "account": "텐아시아",
-    "url": "https://www.tenasia.co.kr/article/2026102302014",
-    "image": null,
-    "head": "블핑 리사, 고향 '태국' 뿌리 앨범에 담았다…'PRESS PLAY'로 솔로 컴백",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T16:17+09:00",
-   "key": "3219e927",
-   "by": "claude",
-   "subjects": [
-    "리사"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "리사가 새 EP [PRESS PLAY]의 첫인사를 태국어 '사와디카'로 건넸다 — 선공개곡 이름과 방콕 뮤직비디오",
-    "why": "오늘(23일) 0시 발매 · 텐아시아·보그·멜로딕 등 여러 곳 · 기사형이라 표지 한 장"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T16:17+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNew Release!\n\n[캡션]\n리사(@lalalalisa_m)가 오늘(23일) 솔로 EP [PRESS PLAY]를 냈습니다.\n\n여섯 곡 가운데 9월에 먼저 공개한 'SaWaDiKa'는 태국어로 '안녕하세요'라는 뜻의 인사말에서 이름을 따왔는데요, 뮤직비디오도 태국 방콕에서 찍었습니다.\n\n지난해 첫 정규 [ALTER EGO] 이후 1년 8개월 만의 솔로 앨범, 그 첫인사를 리사는 자기 나라의 말로 건넸습니다.\n\n#PLOT #리사 #블랙핑크 #프레스플레이 #사와디카\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792739867/sfojlapqkfhdzokghmcf.jpg\n제목: 리사, 새 EP 첫인사는|태국어 '사와디카'\n부제: 솔로 EP [PRESS PLAY] 오늘 발매\n출처: 텐아시아\n",
-    "caption": "리사(@lalalalisa_m)가 오늘(23일) 솔로 EP [PRESS PLAY]를 냈습니다.\n\n여섯 곡 가운데 9월에 먼저 공개한 'SaWaDiKa'는 태국어로 '안녕하세요'라는 뜻의 인사말에서 이름을 따왔는데요, 뮤직비디오도 태국 방콕에서 찍었습니다.\n\n지난해 첫 정규 [ALTER EGO] 이후 1년 8개월 만의 솔로 앨범, 그 첫인사를 리사는 자기 나라의 말로 건넸습니다.\n\n#PLOT #리사 #블랙핑크 #프레스플레이 #사와디카",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739867/sfojlapqkfhdzokghmcf.jpg",
-      "credit": "텐아시아",
-      "from": "https://img.tenasia.co.kr/photo/202610/BF.46162870.1.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739869/g2l7amenpb0mazbe6wm9.jpg",
-      "credit": "신뢰",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg",
-      "credit": "신뢰",
-      "kind": "셀카·일상",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_959xq_c1/auto_pdb_리사_근황_.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/bjYMZRYs/ec80a498dfb2.jpg",
-      "credit": "신뢰",
-      "kind": "셀카·일상",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_kq4znr0m/auto_pdb_리사_.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739867/sfojlapqkfhdzokghmcf.jpg",
-      "credit": "텐아시아",
-      "from": "https://img.tenasia.co.kr/photo/202610/BF.46162870.1.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739869/g2l7amenpb0mazbe6wm9.jpg",
-      "credit": "신뢰",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791922452/qr0mjhsocyp6q6lviylw.jpg",
-      "credit": "신뢰",
-      "kind": "셀카·일상",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_959xq_c1/auto_pdb_리사_근황_.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/bjYMZRYs/ec80a498dfb2.jpg",
-      "credit": "신뢰",
-      "kind": "셀카·일상",
-      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_kq4znr0m/auto_pdb_리사_.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "리사, 새 EP 첫인사는|태국어 '사와디카'",
-      "sub": "솔로 EP [PRESS PLAY] 오늘 발매"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "'SaWaDiKa' 빌보드 핫100 69위 · 지미 팰런 쇼에서 한 앨범 설명은 텐아시아 한 곳에서만 봐서 뺐습니다 — 타이틀곡 이름도 기사에 없어 쓰지 않았습니다"
-    ],
-    "research": [
-     {
-      "title": "텐아시아 — 블핑 리사, 고향 '태국' 뿌리 앨범에 담았다…'PRESS PLAY'로 솔로 컴백 (10/23)",
-      "link": "https://www.tenasia.co.kr/article/2026102302014"
-     },
-     {
-      "title": "보그 코리아 — 리사의 솔로 EP 'Press Play' 힌트들 (9/1 · 6곡 · 10/23 발매)",
-      "link": "https://www.vogue.co.kr/2026/09/01/%eb%a6%ac%ec%82%ac%ec%9d%98-%ec%86%94%eb%a1%9c-ep-press-play-%ed%9e%8c%ed%8a%b8%eb%93%a4/"
-     },
-     {
-      "title": "Melodic Magazine — LISA announces new EP Press Play to drop on October 23",
-      "link": "https://www.melodicmag.com/news/album-announcements/blackpinks-lisa-announces-new-ep-press-play-to-drop-on-october-23/"
-     },
-     {
-      "title": "We Are Resonate — LISA returns to her rap roots in Bangkok with 'SaWaDiKa'",
-      "link": "https://www.weareresonate.com/2026/09/blackpinks-lisa-returns-to-her-rap-roots-in-bangkok-with-sawadika/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739872/xwkif7ifmdkpyloynpcw.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739872/ynywq5rbglroyxxfpuvq.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792739872/xwkif7ifmdkpyloynpcw.jpg"
-     },
-     "at": "2026-10-23T16:17+09:00",
-     "v": {
-      "A": "c97a1824"
+      "A": "045980f3",
+      "B": "241a19ae"
      }
     }
    },
    "pick": {
     "rank": 3,
-    "why": "오늘 0시 발매된 리사 EP — 오늘이 지나면 늦는 소식 · 표지 한 장으로 가볍게",
-    "at": "2026-10-23T16:17+09:00"
+    "why": "타블로 생일 인사 4.4배 · 23년 만의 '처음'들을 잇는 사람 각도 — 국힙 쪽 도달",
+    "at": "2026-10-24T09:59+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:ord-2f585825",
-    "account": "@규효 공유 · @hiptake_",
-    "url": "https://www.instagram.com/reel/De1FfhRBrEO/?srtk=MTlnZjgxdTJyOTVxaQ==",
+    "id": "claude:stonesthrow-30",
+    "account": "NPR",
+    "url": "https://www.kpbs.org/news/2026/10/16/to-madvillainy-and-beyond-how-stones-throw-records-created-a-galaxy-of-taste",
     "image": null,
-    "head": "막내 율음을 위해 저스트뮤직 식구들이 학교 축제 무대에 섰다",
+    "head": "To 'Madvillainy' and beyond: How Stones Throw Records created a galaxy of taste",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-10-23T20:29+09:00",
-   "key": "97464d40",
+   "made_at": "2026-10-24T09:59+09:00",
+   "key": "0ab67517",
    "by": "claude",
    "subjects": [
-    "율음"
+    "Peanut Butter Wolf"
    ],
    "lane": "정보",
    "editor": {
-    "grade": "A",
+    "grade": "B",
     "kind": "정보",
-    "angle": "막내 율음의 학교 축제 무대를 저스트뮤직 식구들이 함께 채웠다",
-    "why": "규효 제작 결정 — 레이블이 막내를 위해 움직인 공개 이야기 (다른 매거진 릴스로 화제)"
+    "angle": "[실험] 스톤스 스로우 30주년 — 세상을 떠난 친구의 노래를 내려고 만든 레이블이 [Madvillainy]와 [Donuts]의 집이 되기까지",
+    "why": "실험 칸 (해외·언더그라운드·음악 자체) · NPR 10/16 30주년 기획 + 10/16~18 하이랜드 파크 30주년 페스티벌 · 레이블 시작의 사람 이야기가 섬"
    },
    "added": "claude",
-   "added_at": "2026-10-23T20:29+09:00",
+   "added_at": "2026-10-24T09:59+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n저스트뮤직 식구들이 막내 율음의 학교 축제 무대에 함께 오른 것으로 알려졌습니다.\n\n율음은 스윙스(@itsjustswings)의 눈에 띄어 WEDAPLUGG RECORDS에 들어간 래퍼인데요, 레이블이 해체된 뒤 저스트뮤직으로 다시 영입됐습니다. 2024년 10월에는 프로듀싱까지 혼자 맡은 정규 2집 [CICADA]를 냈습니다.\n\n스윙스가 일찍 알아본 막내의 학교 축제 무대에 레이블 식구들이 직접 걸음한 셈입니다.\n\n#PLOT #율음 #저스트뮤직 #스윙스 #CICADA #국힙\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792754951/mi1favsrcumwtpwtslqa.jpg\n제목: 막내 율음을 위해|저스트뮤직이 나섰다\n부제: 학교 축제 무대에 함께 선 레이블 식구들\n출처: 멜론\n",
-    "caption": "저스트뮤직 식구들이 막내 율음의 학교 축제 무대에 함께 오른 것으로 알려졌습니다.\n\n율음은 스윙스(@itsjustswings)의 눈에 띄어 WEDAPLUGG RECORDS에 들어간 래퍼인데요, 레이블이 해체된 뒤 저스트뮤직으로 다시 영입됐습니다. 2024년 10월에는 프로듀싱까지 혼자 맡은 정규 2집 [CICADA]를 냈습니다.\n\n스윙스가 일찍 알아본 막내의 학교 축제 무대에 레이블 식구들이 직접 걸음한 셈입니다.\n\n#PLOT #율음 #저스트뮤직 #스윙스 #CICADA #국힙",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n스톤스 스로우는 세상을 떠난 친구의 노래를 내려고 만든 레이블입니다.\n\n1996년 피넛 버터 울프가 로스앤젤레스에서 세운 이 레이블은 스무 살에 세상을 떠난 래퍼 카리스마와 함께 만든 음악을 내놓는 데서 시작했는데요, 이후 매드립과 MF 둠의 [Madvillainy], 제이 딜라의 [Donuts]가 모두 이곳에서 나왔습니다.\n\n스타가 아니라 멋진 레코드를 찾았다고 말해 온 울프의 레이블이 올해 서른 살이 됐습니다. 지난 16일부터 사흘 동안 하이랜드 파크에서 그 서른 해를 기념하는 페스티벌이 열렸습니다.\n\n#PLOT #스톤스스로우 #피넛버터울프 #매드립 #제이딜라\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792803601/sjhavcmw5vzuti3pb9ou.jpg\n제목: 스톤스 스로우는|친구의 노래로 시작됐다\n부제: 피넛 버터 울프의 레이블, 서른 살\n출처: NPR\n\n[슬라이드]\n소스: \n소제목: 1996년, 로스앤젤레스\n본문: DJ이자 프로듀서인 피넛 버터 울프(본명 크리스 마낙)가 레이블을 세웠습니다.||이유는 함께 음악을 만들던 래퍼 카리스마와의 녹음을 세상에 내놓기 위해서였습니다. 카리스마는 스무 살에 세상을 떠났습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 스타가 아니라 레코드\n본문: 울프는 스타를 찾아다닌 게 아니라, 함께 이름을 올리고 싶은 멋진 레코드를 찾았다고 말합니다.||그렇게 매드립, MF 둠, 제이 딜라가 이 레이블의 뼈대가 됐습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: [Madvillainy]와 [Donuts]\n본문: 2004년, 매드립과 MF 둠이 매드빌런이라는 이름으로 [Madvillainy]를 냈습니다. 울프의 말로는 둠의 목소리를 울프의 침실에서 녹음했습니다.||2006년에는 제이 딜라가 세상을 떠나기 직전 [Donuts]가 이곳에서 나왔습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 서른 번째 해\n본문: 지난 16일부터 사흘 동안, 로스앤젤레스 하이랜드 파크에서 30주년 페스티벌이 열렸습니다.||라인업에는 울프 본인의 이름도 올랐습니다. 친구의 노래 한 장으로 시작한 레이블의 서른 번째 생일입니다.\n출처:\n",
+    "caption": "스톤스 스로우는 세상을 떠난 친구의 노래를 내려고 만든 레이블입니다.\n\n1996년 피넛 버터 울프가 로스앤젤레스에서 세운 이 레이블은 스무 살에 세상을 떠난 래퍼 카리스마와 함께 만든 음악을 내놓는 데서 시작했는데요, 이후 매드립과 MF 둠의 [Madvillainy], 제이 딜라의 [Donuts]가 모두 이곳에서 나왔습니다.\n\n스타가 아니라 멋진 레코드를 찾았다고 말해 온 울프의 레이블이 올해 서른 살이 됐습니다. 지난 16일부터 사흘 동안 하이랜드 파크에서 그 서른 해를 기념하는 페스티벌이 열렸습니다.\n\n#PLOT #스톤스스로우 #피넛버터울프 #매드립 #제이딜라",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754951/mi1favsrcumwtpwtslqa.jpg",
-      "credit": "멜론",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/116/18/537/11618537_20241016162731.jpg/melon/resize/1000/quality/90/optimize",
-      "album": "CICADA"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803601/sjhavcmw5vzuti3pb9ou.jpg",
+      "credit": "NPR",
+      "from": "https://cdn.kpbs.org/dims4/default/44d6ab2/2147483647/strip/true/crop/3840x2016+0+72/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F84%2Fd3%2F2fa6feda4ccdb6888b0235de23b9%2Fstonesthrow2.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792754951/mi1favsrcumwtpwtslqa.jpg",
-      "credit": "멜론",
-      "from": "https://cdnimg.melon.co.kr/cm2/album/images/116/18/537/11618537_20241016162731.jpg/melon/resize/1000/quality/90/optimize",
-      "album": "CICADA"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "막내 율음을 위해|저스트뮤직이 나섰다",
-      "sub": "학교 축제 무대에 함께 선 레이블 식구들"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "저스트뮤직 식구들이|막내 축제 무대에 떴다",
-      "sub": "율음의 학교 축제"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "스윙스가 알아본 막내|율음의 축제 무대",
-      "sub": "저스트뮤직이 함께 섰다"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진([CICADA] 커버)이 저해상도라 확대된 티가 나고 깨져 보임 — 고화질 커버나 율음 본인 사진으로 바꿔 주세요",
-     "[검증] 축제 무대(어느 학교·누가 섰는지·율음이 저스트뮤직 '막내'인지)는 @hiptake_ 릴스 말고 웹에서 확인 못 함 — 릴스 원문·원출처를 보고 발행해 주세요 (WebFetch 로 릴스 캡션도 안 열림)",
-     "축제 무대 자체는 @hiptake_ 릴스 말고 원출처(저스트뮤직·멤버·율음 본인 게시물)를 못 찾아 '~로 알려졌다' 로 썼습니다 — 누가 무대에 올랐는지는 확인 못 해 이름을 뺐습니다",
-     "표지 사진은 [CICADA] 앨범 커버(율음 본인 사진이 사진 DB 에 없음) — 율음 본인 공개 사진이 있으면 바꿔 주세요"
-    ],
-    "research": [
-     {
-      "title": "나무위키 — 율음",
-      "link": "https://namu.wiki/w/율음"
-     },
-     {
-      "title": "나무위키 — Just Music",
-      "link": "https://namu.wiki/w/Just%20Music"
-     },
-     {
-      "title": "[앨범 리뷰] 율음 정규 2집 <CICADA> (브런치)",
-      "link": "https://brunch.co.kr/@breakevenpoint/127"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792755234/shetiupyqeh0aa3f1gc3.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792755234/wq9e2va6je7uttayvdr2.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792755236/zcwyykeolhtlstyrubaq.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792755236/yhfwgj9onyzc0pe7xs0r.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792755234/shetiupyqeh0aa3f1gc3.jpg"
-     },
-     "at": "2026-10-23T20:33+09:00",
-     "v": {
-      "A": "12cb2c61",
-      "B": "f6a8b437",
-      "C": "bbf3f176"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ord-1d9ece64",
-    "account": "@규효 공유 · @nop_kr",
-    "url": "https://www.instagram.com/p/De1UxyKo8fU/?exln=MXhyZ2hzaDBpcWk0Yg==",
-    "image": null,
-    "head": "양홍원 사생활 의혹 정리 — 폭로·발언·반박·입장 준비, 진위 미확인",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T22:25+09:00",
-   "key": "606d46db",
-   "by": "claude",
-   "subjects": [
-    "양홍원"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "결혼 닷새 만의 사생활 의혹 — 폭로·폭로자 발언·반박·지금 상황을 기사로 확인된 만큼만 정리 (진위 미확인)",
-    "why": "규효 결정 10/23 22:20 — 기사 6곳이 나와 '정리본' 으로. 세부(장소·상대·녹취)는 옮기지 않음"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T22:25+09:00",
-   "corner": "followup",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\n결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.\n\n지난 18일 원현주와 결혼식을 올린 양홍원을 두고 23일 익명의 폭로자 A씨가 SNS에 의혹을 올렸는데요, A씨가 이후 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답하면서 주장의 진위를 두고도 논란이 일고 있습니다.\n\n현장에 함께 있었다고 밝힌 한 지인은 A씨가 돈을 노리고 주장을 꾸며냈다고 반박한 것으로 전해졌습니다. 지금까지 나온 내용은 어느 쪽도 사실로 확인되지 않았습니다.\n\n양홍원 측은 입장을 준비 중인 것으로 알려졌습니다.\n\n#PLOT #양홍원 #래퍼양홍원 #국힙 #힙합\n\n[커버]\n소스: https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg\n제목: 결혼 닷새 만의 폭로|양홍원, 사생활 의혹\n부제: 진위는 확인되지 않았습니다\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg\n소제목: 무슨 일이 있었나\n본문: 지난 18일 원현주와 결혼식을 올린 양홍원을 두고, 닷새 뒤인 23일 익명의 폭로자 A씨가 SNS에 사생활 의혹을 제기했습니다.|지금까지 나온 내용은 A씨의 일방적인 주장이며, 사실관계는 확인되지 않았습니다.||출처: 뉴시스 · 스타뉴스 · 헤럴드경제\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg\n소제목: 폭로자의 말\n본문: A씨는 같은 날 인스타그램 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답했습니다.|사실인지 아닌지는 보는 사람이 판단하라는 취지의 말도 남겨, 주장의 진위를 두고 논란이 일고 있습니다.||출처: 머니투데이 · 스타뉴스\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg\n소제목: 반박\n본문: 현장에 함께 있었다고 밝힌 한 지인은 A씨가 돈을 노리고 주장을 꾸며냈다며 반박한 것으로 전해졌습니다.||출처: 뉴시스\n출처: @yanghongwon\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792505254/i6klfotykq84gzgryhiz.jpg\n소제목: 지금 상황\n본문: 양홍원 측은 입장을 준비 중인 것으로 알려졌습니다.|폭로와 반박 모두 아직 사실로 확인된 것은 없습니다.||출처: 뉴시스\n출처: 멜론\n",
-    "caption": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.\n\n지난 18일 원현주와 결혼식을 올린 양홍원을 두고 23일 익명의 폭로자 A씨가 SNS에 의혹을 올렸는데요, A씨가 이후 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답하면서 주장의 진위를 두고도 논란이 일고 있습니다.\n\n현장에 함께 있었다고 밝힌 한 지인은 A씨가 돈을 노리고 주장을 꾸며냈다고 반박한 것으로 전해졌습니다. 지금까지 나온 내용은 어느 쪽도 사실로 확인되지 않았습니다.\n\n양홍원 측은 입장을 준비 중인 것으로 알려졌습니다.\n\n#PLOT #양홍원 #래퍼양홍원 #국힙 #힙합",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249302/a99acxqltbqtt2sfnhfs.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/800065702_18593863249068013_7659673952264151381_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-ntux6Dc1qIQ7kNvwFRZA9M&_nc_oc=Adq6jwMWOz3t-pP-JMz5rQy55mlXm083uBIQCaQpp6Ros8HskniHfWRArFVPOhmhxPs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=bqPKa4OX_mXtYt9IMIrbtA&oh=00_AQPjNslESJmR5VdXwa8jcEMGsNlALf-UHFBumK5sCr0j1w&oe=6AD000D4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg",
-      "credit": "@yanghongwon",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/705341035_18560568136068013_2206778758427998637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TWg_OhgJoeoQ7kNvwHjviZx&_nc_oc=AdpcPVfGM1_phE68DwrGl7jZWjUMgaKZNU7PfneT-JWeNAV1oiwvFbtLWaGjzayQ4sY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQMJQiVzyUk2uGi9x4n912NTC03biKFk7ChQ4hzTT81Zlg&oe=6AD96205"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088231_18601669921068013_7415273064331475522_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X0G_tJayB44Q7kNvwH7z2NK&_nc_oc=AdqBaZrMm6WXy659cO4wzhM73akk-rQBPNH0zsG5bIYyP4rd_pF4a4SMkFru3Ks2AHc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=nezvaE7fueheY2maeqhsxA&oh=00_AQPZgmHDDkochWrVlDzjbqHOnZpW1yewU7Kn9ecQc5-c4w&oe=6ADAC924"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249302/a99acxqltbqtt2sfnhfs.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/800065702_18593863249068013_7659673952264151381_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-ntux6Dc1qIQ7kNvwFRZA9M&_nc_oc=Adq6jwMWOz3t-pP-JMz5rQy55mlXm083uBIQCaQpp6Ros8HskniHfWRArFVPOhmhxPs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=bqPKa4OX_mXtYt9IMIrbtA&oh=00_AQPjNslESJmR5VdXwa8jcEMGsNlALf-UHFBumK5sCr0j1w&oe=6AD000D4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg",
-      "credit": "@yanghongwon",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/705341035_18560568136068013_2206778758427998637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TWg_OhgJoeoQ7kNvwHjviZx&_nc_oc=AdpcPVfGM1_phE68DwrGl7jZWjUMgaKZNU7PfneT-JWeNAV1oiwvFbtLWaGjzayQ4sY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQMJQiVzyUk2uGi9x4n912NTC03biKFk7ChQ4hzTT81Zlg&oe=6AD96205"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088231_18601669921068013_7415273064331475522_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X0G_tJayB44Q7kNvwH7z2NK&_nc_oc=AdqBaZrMm6WXy659cO4wzhM73akk-rQBPNH0zsG5bIYyP4rd_pF4a4SMkFru3Ks2AHc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=nezvaE7fueheY2maeqhsxA&oh=00_AQPZgmHDDkochWrVlDzjbqHOnZpW1yewU7Kn9ecQc5-c4w&oe=6ADAC924"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803601/sjhavcmw5vzuti3pb9ou.jpg",
+      "credit": "NPR",
+      "from": "https://cdn.kpbs.org/dims4/default/44d6ab2/2147483647/strip/true/crop/3840x2016+0+72/resize/1200x630!/quality/90/?url=https%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F84%2Fd3%2F2fa6feda4ccdb6888b0235de23b9%2Fstonesthrow2.jpg"
      }
     ],
     "shape": "맥락",
@@ -1819,1112 +437,46 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "결혼 닷새 만의 폭로|양홍원, 사생활 의혹",
-      "sub": "진위는 확인되지 않았습니다"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "양홍원 사생활 의혹|지금까지 확인된 것",
-      "sub": "폭로·반박·입장, 진위는 미확인"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "폭로자 \"관심 플러스 돈\"|양홍원 의혹 정리",
-      "sub": "사실관계는 확인되지 않았습니다"
+      "title": "스톤스 스로우는|친구의 노래로 시작됐다",
+      "sub": "피넛 버터 울프의 레이블, 서른 살"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 미리보기는 01~04장만 만들어져 마지막 장('지금 상황', 멜론 사진)은 눈으로 못 봄 — 앱에서 확인 · '입장 준비 중'·지인 반박은 뉴시스 한 곳 보도라 출처를 뉴시스로만 고침",
-     "지인 반박·'입장 준비 중' 은 읽은 6곳 중 뉴시스에만 있음 (머니투데이는 '입장을 밝히지 않았다') — 올리기 전 양홍원 측 입장이 이미 나왔는지 확인",
-     "사진은 양홍원 단독 본인 게시물만 골랐음 — 장마다 표정·분위기가 글 결에 맞는지 눈으로 확인"
+     "첫 발매가 카리스마와의 'My World Premiere'라는 건 위키 한 곳에서만 봐서 쓰지 않았습니다 · 둠 보컬을 울프 침실에서 녹음했다는 건 NPR 속 울프 본인의 말로만 옮겼습니다",
+     "사진은 NPR 기사 대표 사진 — 누가 나온 사진인지 확인",
+     "사진이 모자라 4장(1, 2, 3, 4번)은 비워 뒀습니다 — 같은 사진을 두 번 쓰지 않으려고. 스튜디오에서 빈 자리를 눌러 넣어 주세요"
     ],
     "research": [
      {
-      "title": "뉴시스 — '새신랑' 유명 래퍼, 사생활 의혹…폭로 진위 여부 논란도 (10/23)",
-      "link": "https://www.newsis.com/view/NISX20261023_0003839291"
+      "title": "NPR — To 'Madvillainy' and beyond: How Stones Throw Records created a galaxy of taste (10/16)",
+      "link": "https://www.kpbs.org/news/2026/10/16/to-madvillainy-and-beyond-how-stones-throw-records-created-a-galaxy-of-taste"
      },
      {
-      "title": "머니투데이 — 양홍원 결혼식 5일만 '불륜설' (10/23)",
-      "link": "https://www.mt.co.kr/society/2026/10/23/2026102321545829492"
+      "title": "Wikipedia — Stones Throw Records (1996 LA 설립 · 카리스마 · 첫 발매 · 2004 Madvillainy · 2006 Donuts)",
+      "link": "https://en.wikipedia.org/wiki/Stones_Throw_Records"
      },
      {
-      "title": "스타뉴스 — '5일 전 결혼' 양홍원, 불륜 의혹..폭로자 \"돈과 관심 필요\" (10/23)",
-      "link": "https://www.starnewskorea.com/star/2026/10/23/2026102317555144519"
-     },
-     {
-      "title": "마이데일리 — 양홍원, 결혼식 5일 만에 불륜설 [MD이슈] (10/23)",
-      "link": "https://www.mydaily.co.kr/page/view/2026102319482806424"
-     },
-     {
-      "title": "MK스포츠 — 양홍원 불륜 폭로자, 라이브로 켠 속내 (10/23)",
-      "link": "https://www.mksports.co.kr/news/entertain/12184474"
-     },
-     {
-      "title": "헤럴드경제 — 유명 래퍼, 결혼 5일만에 '불륜설' (10/23)",
-      "link": "https://biz.heraldcorp.com/article/10913317"
+      "title": "Pollstar — Stones Throw Commemorates 30 Years With Three-Day Festival (10/16~18 하이랜드 파크)",
+      "link": "https://news.pollstar.com/2026/06/24/stones-throw-commemorates-30-years-with-three-day-festival/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762663/fqk6dqzoqqxewcdqjiuk.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762663/pdydq2alxy1modwi3qum.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762663/weuhnzrxljsgqwnj61ni.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762663/gwpymq0fdzmlf7k6hlbt.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762664/rthpasrcigztsjgnxrys.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762665/qzbatdo9icgmtriof90q.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803616/htsbhfegpo4huyenglpj.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803616/fpdsxhumnfugjxs2qfan.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803616/teblqf5z3mugdqu6eksx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803616/kb41qx4maavjktqyhgl5.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803618/bqqnhbog3dbbpzavrsn2.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803618/bpqp3f8xpxhibufc0wcq.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762691/ujee5ryi3azscqmgdcwp.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762672/utlm2iddpfqmk4eeef36.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792762663/fqk6dqzoqqxewcdqjiuk.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792803616/htsbhfegpo4huyenglpj.jpg"
      },
-     "at": "2026-10-23T22:38+09:00",
+     "at": "2026-10-24T10:00+09:00",
      "v": {
-      "A": "e4c32665",
-      "B": "cb894960",
-      "C": "afc3ef91"
-     }
-    },
-    "photo_tried": {
-     "0": [
-      "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg"
-     ],
-     "3": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505219/szbkzyg9egvlsk6aazcy.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg"
-     ]
-    },
-    "photo_swapped": {
-     "at": "2026-10-23T22:37+09:00",
-     "slide": 3,
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792761937/ilhnmyryjkqwdkbbyy0z.jpg"
-    }
-   },
-   "corner_name": "후속"
-  },
-  {
-   "source": {
-    "id": "claude:ord-b7e0fd99",
-    "account": "@규효 공유 · @ap_alchemy",
-    "url": "https://www.instagram.com/p/De1rAZSJMWs/?exln=eXprM3c1NXVsemp0",
-    "image": null,
-    "head": "AP알케미, 양홍원 외도 폭로에 '사실과 다르다'며 폭로자 고소",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T23:00+09:00",
-   "key": "05d635cc",
-   "by": "claude",
-   "subjects": [
-    "양홍원"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "결혼 닷새 만의 외도 폭로에 소속사가 '사실과 다르다'며 고소로 맞섰다 — 소속사 입장 그대로, 표지 한 장",
-    "why": "규효 지켜보기(양홍원 입장·공식 대응) 대상의 공식 입장이 나옴 · 규효 맡기기"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T23:00+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\n양홍원(@yanghongwon)의 소속사 AP알케미가 외도 의혹을 제기한 폭로에 대해 공식 입장을 냈습니다.\n\n지난 18일 원현주와 결혼식을 올린 양홍원은 23일 한 인물이 SNS에 올린 폭로로 외도 의혹에 휩싸였는데요, 소속사는 폭로 내용이 사실과 다르고 폭로자가 내놓은 자료는 악의적으로 편집된 것이라고 밝혔습니다.\n\n소속사에 따르면 폭로자는 금전을 요구했다가 뜻대로 되지 않자 폭로에 나섰습니다. 고소는 양홍원 본인과, 폭로에 함께 거론된 여성이 각각 냈고 혐의는 공갈, 스토킹처벌법 위반, 명예훼손입니다. 소속사는 허위 사실을 퍼뜨리는 게시글과 댓글 작성자에게도 법적 대응을 예고했습니다.\n\n#PLOT #양홍원 #AP알케미 #입장문\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792765008/wptlbv0ithksn07buci3.jpg\n제목: 양홍원 측, 외도 의혹에|\"폭로는 사실과 달라\"\n부제: AP알케미 공식 입장\n출처: @yanghongwon\n",
-    "caption": "양홍원(@yanghongwon)의 소속사 AP알케미가 외도 의혹을 제기한 폭로에 대해 공식 입장을 냈습니다.\n\n지난 18일 원현주와 결혼식을 올린 양홍원은 23일 한 인물이 SNS에 올린 폭로로 외도 의혹에 휩싸였는데요, 소속사는 폭로 내용이 사실과 다르고 폭로자가 내놓은 자료는 악의적으로 편집된 것이라고 밝혔습니다.\n\n소속사에 따르면 폭로자는 금전을 요구했다가 뜻대로 되지 않자 폭로에 나섰습니다. 고소는 양홍원 본인과, 폭로에 함께 거론된 여성이 각각 냈고 혐의는 공갈, 스토킹처벌법 위반, 명예훼손입니다. 소속사는 허위 사실을 퍼뜨리는 게시글과 댓글 작성자에게도 법적 대응을 예고했습니다.\n\n#PLOT #양홍원 #AP알케미 #입장문",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764010/xvn5kqbp1zo1oicfffa4.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764010/xvn5kqbp1zo1oicfffa4.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765008/wptlbv0ithksn07buci3.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765010/p6bwev8bvlaqgdj1iz6p.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765012/okivw2h67wohzqifaobh.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505232/bmbzkvdl0g69bxucktir.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765015/yvwmikq1wwohphjd7ude.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505219/szbkzyg9egvlsk6aazcy.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765018/uleqwxbux1ekt6cumzaw.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249302/a99acxqltbqtt2sfnhfs.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "양홍원 측, 외도 의혹에|\"폭로는 사실과 달라\"",
-      "sub": "AP알케미 공식 입장"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "양홍원 측,|폭로자 고소",
-      "sub": "\"자료는 악의적으로 편집\""
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "결혼 닷새 만의 폭로,|양홍원 측 입장",
-      "sub": "AP알케미 공식 입장"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 입장문은 공연 후 술자리·모텔 동행 사실은 인정하고(대화·애정 행위·금전 지급은 부인) 심려를 끼친 데 사과·재발 방지를 약속함 — 캡션은 이 대목을 빼 '전면 부인'처럼 읽힐 수 있어 소속사 편 글이 되지 않는지 규효가 판단 · 고소 주체를 소속사→양홍원 본인·여성으로 바로잡음(입장문 '소속 아티스트와 피해 여성은 각각')",
-     "소속사 입장문을 다룬 기사는 아직 못 찾음 — 입장 내용은 AP Alchemy 공식 게시물 하나로만 확인 (모텔 동행 인정 대목·폭로 세부·함께 거론된 여성 이야기는 일부러 뺐음)",
-     "결혼 소식 직후라 사생활 소재 — 올릴지 규효가 판단 (폭로자 쪽 주장은 소속사 발표로만 옮겼고 단정하지 않음)",
-     "반복 — 「양홍원」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
-    ],
-    "research": [
-     {
-      "title": "AP Alchemy 공식 인스타그램 입장문 (2026-10-23)",
-      "link": "https://www.instagram.com/p/De1rAZSJMWs/"
-     },
-     {
-      "title": "톱스타뉴스 — '원현주♥'와 결혼식 올린 양홍원, 불륜 의혹 제기된 이유? (2026-10-23)",
-      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16256223"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765021/bgwc4ht34tdqmunrof62.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765021/sbqcusfxdi4ddxu2b7py.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765023/uhdhtgl3xjj92zsh1kwt.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765023/eiss54pmu0ie6p0zpzey.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765021/bgwc4ht34tdqmunrof62.jpg"
-     },
-     "at": "2026-10-23T23:17+09:00",
-     "v": {
-      "A": "6cc6fb88",
-      "B": "a9ccf4a5",
-      "C": "a4d46641"
-     }
-    },
-    "photo_tried": {
-     "0": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764010/xvn5kqbp1zo1oicfffa4.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765008/wptlbv0ithksn07buci3.jpg"
-     ]
-    },
-    "photo_swapped": {
-     "at": "2026-10-23T23:16+09:00",
-     "slide": 0,
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792765008/wptlbv0ithksn07buci3.jpg"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ord-94a823dc",
-    "account": "@규효 공유 · @fromhanroro",
-    "url": "https://www.instagram.com/p/De1KsRQzHzs/?rpxt=MTAxaXpzcjJoZmN2aw==",
-    "image": null,
-    "head": "한로로 5th 단독콘서트 [물음표], 2027년 1월 2~3일 인스파이어 아레나 — 상상마당에서 아레나까지",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T23:07+09:00",
-   "key": "f573168a",
-   "by": "claude",
-   "subjects": [
-    "한로로"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "상상마당 홍대에서 시작한 한로로의 단독 공연이 다섯 번째 [물음표]로 인스파이어 아레나까지 왔다",
-    "why": "규효 맡기기 · 본인 계정 공식 발표 · 공연장이 해마다 커진 사람 각도가 있다"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T23:07+09:00",
-   "corner": "tickets",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n한로로(@hanr0r0)가 다섯 번째 단독 콘서트 [물음표]로 인스파이어 아레나 무대에 섭니다.\n\n2023년 KT&G 상상마당 홍대 라이브홀에서 시작한 한로로의 단독 공연은 노들섬 라이브하우스, YES24 라이브홀을 지나 지난해 11월 고려대학교 화정체육관까지 왔는데요, 이번엔 아레나로 한 걸음 더 나아갑니다.\n\n한로로는 음악을 하기 전부터 세상에 물음표를 던져 왔다며, 이해하기 힘든 의문들을 끌어안는 '강력한 다정'을 이번 무대에서 이루고 싶다고 했습니다. 그 물음표에 대한 대답은 공연장을 찾는 사람들의 몫으로 남겨 두었습니다.\n\n공연은 2027년 1월 2일(토) 오후 6시, 3일(일) 오후 5시에 열리고, 티켓은 11월 13일(금) 오후 6시 멜론티켓과 NOL 티켓에서 열립니다.\n\n#PLOT #한로로 #물음표 #인스파이어아레나 #단독콘서트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792764422/v9rsyn2lye84c4e153na.jpg\n제목: 한로로, 다섯 번째 단콘|인스파이어 아레나로\n부제: [물음표] · 2027년 1월 2~3일\n출처: @hanr0r0\n",
-    "caption": "한로로(@hanr0r0)가 다섯 번째 단독 콘서트 [물음표]로 인스파이어 아레나 무대에 섭니다.\n\n2023년 KT&G 상상마당 홍대 라이브홀에서 시작한 한로로의 단독 공연은 노들섬 라이브하우스, YES24 라이브홀을 지나 지난해 11월 고려대학교 화정체육관까지 왔는데요, 이번엔 아레나로 한 걸음 더 나아갑니다.\n\n한로로는 음악을 하기 전부터 세상에 물음표를 던져 왔다며, 이해하기 힘든 의문들을 끌어안는 '강력한 다정'을 이번 무대에서 이루고 싶다고 했습니다. 그 물음표에 대한 대답은 공연장을 찾는 사람들의 몫으로 남겨 두었습니다.\n\n공연은 2027년 1월 2일(토) 오후 6시, 3일(일) 오후 5시에 열리고, 티켓은 11월 13일(금) 오후 6시 멜론티켓과 NOL 티켓에서 열립니다.\n\n#PLOT #한로로 #물음표 #인스파이어아레나 #단독콘서트",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764422/v9rsyn2lye84c4e153na.jpg",
-      "credit": "@hanr0r0",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764422/v9rsyn2lye84c4e153na.jpg",
-      "credit": "@hanr0r0",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "한로로, 다섯 번째 단콘|인스파이어 아레나로",
-      "sub": "[물음표] · 2027년 1월 2~3일"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "상상마당에서 아레나까지|한로로 [물음표]",
-      "sub": "다섯 번째 단독 콘서트"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "한로로가 던지는|다섯 번째 물음표",
-      "sub": "2027년 1월 · 인스파이어 아레나"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "숏폼은 비움 — [물음표] 관련 원본 영상(티저 등)이 유튜브에 아직 없음",
-     "공연 날짜·장소·예매처는 본인 계정 공지 기준 (멜론·인터파크 목록에선 공연명·오픈 시각만 확인)"
-    ],
-    "research": [
-     {
-      "title": "인스타그램 @fromhanroro — 한로로 5th 단독콘서트 [물음표] 공지 (2026-10-23)",
-      "link": "https://www.instagram.com/p/De1KsRQzHzs/"
-     },
-     {
-      "title": "멜론 티켓 — 한로로 5th 단독콘서트 [물음표] 오픈 26.11.13(금) 18:00",
-      "link": "https://ticket.melon.com/main/index.htm"
-     },
-     {
-      "title": "인터파크 티켓 오픈예정 — 한로로 (HANRORO) 5th 단독콘서트 [물음표]",
-      "link": "https://tickets.interpark.com/contents/notice/detail/10708"
-     },
-     {
-      "title": "스포츠경향 — 한로로, 단독 콘서트 2회차 전석 매진 (2025-10-15)",
-      "link": "https://sports.khan.co.kr/article/202510151510003"
-     },
-     {
-      "title": "뉴시스 — 한로로, 내달 네 번째 단독 콘서트 (2025-10-01)",
-      "link": "https://www.newsis.com/view/NISX20251001_0003351439"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764425/monjhb6vm7361pm2jtbv.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764425/elsiffch0uj6b99yvtb6.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764429/laijdu9te2bqc1brnyzp.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764427/m3ob8ruegloklk8fy0wl.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764425/monjhb6vm7361pm2jtbv.jpg"
-     },
-     "at": "2026-10-23T23:07+09:00",
-     "v": {
-      "A": "a1606618",
-      "B": "4bf9e8cf",
-      "C": "023aaee7"
-     }
-    }
-   },
-   "corner_name": "이번 주 티켓 오픈",
-   "corner_no": 1
-  },
-  {
-   "source": {
-    "id": "claude:ord-1edea71b",
-    "account": "@규효 공유 · @deepdeep_enter",
-    "url": "https://www.instagram.com/p/De03dd9qZGk/?rpxt=ZmphM2N0cHV2dXhx",
-    "image": null,
-    "head": "부모 회사 임금 체불 논란 → 중국 팬 '대신 갚자' 모금 제안 → 역풍 → 모친 '딸과는 무관'",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T23:09+09:00",
-   "key": "c6cf8620",
-   "by": "claude",
-   "subjects": [
-    "A2O LITE"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "아이찡이 아니라 어른들 이야기 — 부모 회사 임금 체불 논란이 중국 팬들의 '대신 갚자' 제안과 역풍으로 번졌고, 모친은 '딸과는 무관'이라고 밝혔다",
-    "why": "10/23 국내 매체 여러 곳이 다룬 화제 · 규효 결정(10/23 22:57)으로 제작 · 기사형이라 표지 한 장"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T23:09+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\nA2O LITE(@a2o.lite) 아이찡의 부모를 둘러싼 임금 체불 논란이 중국 팬들의 '대신 갚자' 제안으로 번졌습니다.\n\n부모가 베이징에서 운영한 교육업체의 전 직원들이 2024년부터 임금을 받지 못했다고 주장하면서 논란이 시작됐는데요, 이후 웨이보에서는 팬들이 돈을 모아 부모의 채무를 대신 해결하자는 제안이 나왔습니다.\n\n제안은 곧 역풍을 맞았습니다. 임금을 받지 못한 직원들의 문제가 아직 풀리지 않았는데 팬이 먼저 빚을 떠안는 게 맞느냐는 비판이 국내외 온라인에서 이어졌습니다.\n\n모친은 앞서 사과문을 내고 제때 지급하지 못한 것은 자신이 책임져야 할 잘못이라며, \"아이는 내가 과거 운영했던 사업 및 관련 분쟁과 아무런 관계가 없다\"고 밝혔습니다. 소속사 A2O엔터테인먼트는 모금 논란에 대해 아직 별도 입장을 내지 않았습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #아이찡 #A2O엔터테인먼트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518482/exrhbomtvnokak7qipbt.jpg\n제목: 아이찡 부모 빚 논란,|팬들 '대신 갚자' 역풍\n부제: 모친은 사과 · 소속사는 모금엔 입장 없어\n출처: @a2o.lite\n",
-    "caption": "A2O LITE(@a2o.lite) 아이찡의 부모를 둘러싼 임금 체불 논란이 중국 팬들의 '대신 갚자' 제안으로 번졌습니다.\n\n부모가 베이징에서 운영한 교육업체의 전 직원들이 2024년부터 임금을 받지 못했다고 주장하면서 논란이 시작됐는데요, 이후 웨이보에서는 팬들이 돈을 모아 부모의 채무를 대신 해결하자는 제안이 나왔습니다.\n\n제안은 곧 역풍을 맞았습니다. 임금을 받지 못한 직원들의 문제가 아직 풀리지 않았는데 팬이 먼저 빚을 떠안는 게 맞느냐는 비판이 국내외 온라인에서 이어졌습니다.\n\n모친은 앞서 사과문을 내고 제때 지급하지 못한 것은 자신이 책임져야 할 잘못이라며, \"아이는 내가 과거 운영했던 사업 및 관련 분쟁과 아무런 관계가 없다\"고 밝혔습니다. 소속사 A2O엔터테인먼트는 모금 논란에 대해 아직 별도 입장을 내지 않았습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #아이찡 #A2O엔터테인먼트",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764575/ox5fsrta8jjwrxdeibxv.jpg",
-      "credit": "@a2o.lite",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858263539_17901442896606064_1843732236746234733_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5tJzVYwjpMwQ7kNvwEQ4Ima&_nc_oc=AdqWRbA0N-bgb_UxbIfD64nmSVEifm6NWDcRj5tFyCWzWNncnZwf8nI53joBPwq_piY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=RKd8vwDz8auUS4Fj50rN_Q&_nc_tpa=Q5bMBQIanJVYDb0MrG4x4lkHXocIEZiquJG-_W4IVkvKddHY83PolQdVZgY1Ok9iYYpy-gWJrUYyVpCimQ&oh=00_AQN6tEHCP1RSvR5mcbbjfN7AUM0STp0Ax7Zju8muzOgfyw&oe=6AE10C86"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518482/exrhbomtvnokak7qipbt.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855291456_17901261510606064_1648973343175254290_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZKhmJkQfvusQ7kNvwFnCY1q&_nc_oc=Adp6t8WGZmUBkVPM88hID25-4nzr-8dGHG-emXZWvBviM-fprcCWz4kevbftAtRY3Ps&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPHhQhwM71y-Dad_sPrMg5zGfJ0BSCGv5HDZL6hKnvjUA&oe=6ADD74F2"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518495/rrxqebnzimhwffcssznb.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856933976_17901261405606064_1969362482175439804_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VJ5I3Zqy3HMQ7kNvwGP9IvO&_nc_oc=AdoyTY4TP6UuTUNYf_jG1J-4RbPonkIaVuPQxTRk9v456OP0_btQFwmHUWrKQiJtBdA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOhRnvBZDqTAg4gJngIGpAQYhObw0w5YlYehZ7yKqgcZw&oe=6ADD8242"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858213140_17901261432606064_1793344857703458437_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p54hatWcYskQ7kNvwE68zL2&_nc_oc=AdqsM-lgNyHpDo5KYKI6c9yWdvzn3MRrzYwDb6c4Bc8LTQ6fn_Hvzr0yXZJhE2EbaZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMhdQCAl8WoUIzYCva1XFE2KFKsGPyh7iHwzlHEeMpsxw&oe=6ADD70F8"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764575/ox5fsrta8jjwrxdeibxv.jpg",
-      "credit": "@a2o.lite",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858263539_17901442896606064_1843732236746234733_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=5tJzVYwjpMwQ7kNvwEQ4Ima&_nc_oc=AdqWRbA0N-bgb_UxbIfD64nmSVEifm6NWDcRj5tFyCWzWNncnZwf8nI53joBPwq_piY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=RKd8vwDz8auUS4Fj50rN_Q&_nc_tpa=Q5bMBQIanJVYDb0MrG4x4lkHXocIEZiquJG-_W4IVkvKddHY83PolQdVZgY1Ok9iYYpy-gWJrUYyVpCimQ&oh=00_AQN6tEHCP1RSvR5mcbbjfN7AUM0STp0Ax7Zju8muzOgfyw&oe=6AE10C86"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518482/exrhbomtvnokak7qipbt.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855291456_17901261510606064_1648973343175254290_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZKhmJkQfvusQ7kNvwFnCY1q&_nc_oc=Adp6t8WGZmUBkVPM88hID25-4nzr-8dGHG-emXZWvBviM-fprcCWz4kevbftAtRY3Ps&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPHhQhwM71y-Dad_sPrMg5zGfJ0BSCGv5HDZL6hKnvjUA&oe=6ADD74F2"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518495/rrxqebnzimhwffcssznb.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856933976_17901261405606064_1969362482175439804_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VJ5I3Zqy3HMQ7kNvwGP9IvO&_nc_oc=AdoyTY4TP6UuTUNYf_jG1J-4RbPonkIaVuPQxTRk9v456OP0_btQFwmHUWrKQiJtBdA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOhRnvBZDqTAg4gJngIGpAQYhObw0w5YlYehZ7yKqgcZw&oe=6ADD8242"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518499/xnpvfiwelwc64zyyehxs.jpg",
-      "credit": "@a2o.lite",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858213140_17901261432606064_1793344857703458437_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=p54hatWcYskQ7kNvwE68zL2&_nc_oc=AdqsM-lgNyHpDo5KYKI6c9yWdvzn3MRrzYwDb6c4Bc8LTQ6fn_Hvzr0yXZJhE2EbaZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMhdQCAl8WoUIzYCva1XFE2KFKsGPyh7iHwzlHEeMpsxw&oe=6ADD70F8"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "아이찡 부모 빚 논란,|팬들 '대신 갚자' 역풍",
-      "sub": "모친은 사과 · 소속사는 아직 입장 없어"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "부모 빚 대신 갚자는|팬들, 갑론을박",
-      "sub": "A2O LITE 아이찡 모친 \"딸과는 무관\""
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "아이찡 모친,|딸과는 무관하다며 사과",
-      "sub": "부모 회사 임금 체불 논란 · 팬 모금 제안엔 역풍"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 지침 1 '미성년 가족 이야기는 다루지 않는다' 위반 소지 — 아이찡은 2013년생(에스콰이어 코리아 멤버 프로필, 만 12~13세)이고, 이 글 전체가 미성년 멤버 부모의 빚 이야기라 문장을 빼서 고칠 수 없음. 발행 여부 규효 판단 필요 (사실 자체는 더팩트·헤럴드경제·스타뉴스와 맞음)",
-     "[검증] 표지 사진 오른쪽 위에 로고('i|||' 모양)가 있음 — 원본 릴스 속 로고인지 확인, 남의 계정·방송 워터마크면 사진 교체. 사진에 아이찡이 들어 있는지도 확인 못 함",
-     "[검증] '소속사는 아직 입장 없어'(표지 부제·캡션 끝)는 헤럴드경제 한 곳 근거 — 더팩트에선 소속사가 모친 입장문을 전달함",
-     "소속사 입장: 헤럴드경제(10/23 16:21)만 '공식 입장 없음'을 명시 — 다른 기사엔 언급 없음. 올리기 전 A2O엔터테인먼트 입장이 새로 나왔는지 한 번 더 확인",
-     "반복 — 「A2O LITE」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
-    ],
-    "research": [
-     {
-      "title": "더팩트 — A2O LITE 아이찡 모친 \"임금 체불 내 책임…딸과는 무관\" (10/15)",
-      "link": "https://news.tf.co.kr/read/entertain/2376393.htm"
-     },
-     {
-      "title": "헤럴드경제 — 中 팬들 '대신 갚기' 나섰다가 역풍 (10/23)",
-      "link": "https://biz.heraldcorp.com/article/10913117"
-     },
-     {
-      "title": "마이데일리 — 中서 모금제안 '갑론을박' (10/23)",
-      "link": "https://www.mydaily.co.kr/page/view/2026102311214118972"
-     },
-     {
-      "title": "텐아시아 — 中 팬들 '대신 갚아주자' (10/23)",
-      "link": "https://www.tenasia.co.kr/article/2026102308494"
-     },
-     {
-      "title": "스타뉴스 — 中 팬들 나섰다 \"대신 갚자\" (10/23)",
-      "link": "https://www.starnewskorea.com/star/2026/10/23/2026102309421333450"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764946/krngywmj30cfxk2lagsl.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764946/no3nshr6omo54dji1nhg.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764948/d8sy7xfvt6k8ssqerahp.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764948/y9dbj6h3vautbxyyta6y.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764946/krngywmj30cfxk2lagsl.jpg"
-     },
-     "at": "2026-10-23T23:15+09:00",
-     "v": {
-      "A": "3caf0b6c",
-      "B": "d101a1f9",
-      "C": "9c681561"
-     }
-    },
-    "photo_tried": {
-     "0": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518482/exrhbomtvnokak7qipbt.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764575/ox5fsrta8jjwrxdeibxv.jpg"
-     ]
-    },
-    "photo_swapped": {
-     "at": "2026-10-23T23:15+09:00",
-     "slide": 0,
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518482/exrhbomtvnokak7qipbt.jpg"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ord-a66dd4eb",
-    "account": "@규효 공유 · @hiphopplayashow",
-    "url": "https://www.instagram.com/p/DetlQv7En7u/?xtok=ZXBuZWZhcjExcmJs",
-    "image": null,
-    "head": "비프리, 11월 6일 힙플쇼 Vol.65 출연 — 바비·노엘과 같은 라인업",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T23:10+09:00",
-   "key": "3fbd2a3b",
-   "by": "claude",
-   "subjects": [
-    "비프리"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "비프리가 11월 첫째 금요일 힙플쇼 Vol.65 무대에 선다 — 표지 한 장 + 캡션",
-    "why": "규효 맡기기 · 힙플쇼 Vol.65 라인업 공개(10/20) 뒤 티켓 오픈(10/22), 바비·노엘과 한 무대"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T23:10+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n비프리가 11월 6일 힙플쇼 Vol.65 무대에 오릅니다.\n\n힙플쇼는 2005년부터 이어진 힙합플레이야의 정기 공연으로, 한동안 멈췄다가 올해 7월 다시 열렸는데요, 그 뒤로 매달 첫째 주 금요일마다 새 라인업으로 찾아오고 있습니다.\n\n이번 회에는 비프리와 함께 바비(@bobbyindaeyo), 노엘(@noel____________), EK(@m.b.a_ek), 쥬이안이 이름을 올렸고, BOJVCK이 호스트 DJ를 맡습니다. 시크릿 게스트 한 자리도 남겨 두었습니다.\n\n11월 6일(금) 오후 8시 YES24 원더로크홀. 예매는 YES24, 티켓 가격은 49,000원입니다.\n\n#PLOT #비프리 #힙플쇼 #힙합플레이야 #바비 #노엘\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792764614/knq4obaslimnsgezxry5.jpg\n제목: 비프리, 11월 6일|힙플쇼 무대에 선다\n부제: HIPHOPPLAYA SHOW Vol.65 · YES24 원더로크홀\n출처: W Magazine\n",
-    "caption": "비프리가 11월 6일 힙플쇼 Vol.65 무대에 오릅니다.\n\n힙플쇼는 2005년부터 이어진 힙합플레이야의 정기 공연으로, 한동안 멈췄다가 올해 7월 다시 열렸는데요, 그 뒤로 매달 첫째 주 금요일마다 새 라인업으로 찾아오고 있습니다.\n\n이번 회에는 비프리와 함께 바비(@bobbyindaeyo), 노엘(@noel____________), EK(@m.b.a_ek), 쥬이안이 이름을 올렸고, BOJVCK이 호스트 DJ를 맡습니다. 시크릿 게스트 한 자리도 남겨 두었습니다.\n\n11월 6일(금) 오후 8시 YES24 원더로크홀. 예매는 YES24, 티켓 가격은 49,000원입니다.\n\n#PLOT #비프리 #힙플쇼 #힙합플레이야 #바비 #노엘",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764614/knq4obaslimnsgezxry5.jpg",
-      "credit": "W Magazine",
-      "from": "https://imgix.bustle.com/wmag/2018/03/23/5ab523e317f09c08a62212d5_DSC_6200.jpg?w=1200&amp;h=630&amp;fit=crop&amp;crop=faces&amp;fm=jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764614/knq4obaslimnsgezxry5.jpg",
-      "credit": "W Magazine",
-      "from": "https://imgix.bustle.com/wmag/2018/03/23/5ab523e317f09c08a62212d5_DSC_6200.jpg?w=1200&amp;h=630&amp;fit=crop&amp;crop=faces&amp;fm=jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "비프리, 11월 6일|힙플쇼 무대에 선다",
-      "sub": "HIPHOPPLAYA SHOW Vol.65 · YES24 원더로크홀"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "힙플쇼 Vol.65에|비프리가 온다",
-      "sub": "바비·노엘과 한 무대"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "비프리·바비·노엘,|11월 힙플쇼 라인업",
-      "sub": "11/6(금) 오후 8시 · YES24 원더로크홀"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "표지 사진은 W 매거진 2018년 화보(사진 Yeongmo Lee) — 더 최근 본인 인스타 사진으로 바꿀지",
-     "숏폼은 비움 — 라인업 공지라 쓸 장면·말이 없음"
-    ],
-    "research": [
-     {
-      "title": "힙플쇼 공식 인스타그램 — Vol.65 비프리 출연 공지 (10/20)",
-      "link": "https://www.instagram.com/p/DetlQv7En7u/"
-     },
-     {
-      "title": "힙합플레이야 인스타그램 — Vol.65 라인업 공개 (10/20)",
-      "link": "https://www.instagram.com/p/DetkYEXkqWg/"
-     },
-     {
-      "title": "에스콰이어 코리아 — 힙플쇼 Vol.64 (재개·매달 첫째 금요일)",
-      "link": "https://www.esquirekorea.co.kr/article/1910301"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764617/cbdikkuowngbjm7cehxj.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764617/y77e2mxyjl7inh6vpwe8.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764619/ifahxnytwhxd9wb4hgic.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764619/hnndxeoaezxdrw7mpl97.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792764617/cbdikkuowngbjm7cehxj.jpg"
-     },
-     "at": "2026-10-23T23:10+09:00",
-     "v": {
-      "A": "1748093d",
-      "B": "c195bf0c",
-      "C": "58b79ac8"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ord-fb2799d1",
-    "account": "@규효 공유 · @two.zzal",
-    "url": "https://www.instagram.com/p/De0V9NVE9UJ/?rpxt=MXB5amhkMWNuNm5iZQ==",
-    "image": null,
-    "head": "챤미나, 시부야 교통사고 뒤 SNS로 직접 '음주·약물·도주 없었다' 해명",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T23:38+09:00",
-   "key": "ca2f1ca4",
-   "by": "claude",
-   "subjects": [
-    "챤미나"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "사고 뒤 따라붙은 추측에 챤미나가 직접 '아닌 건 아니다'라고 답했다",
-    "why": "규효 맡기기 · 다른 매거진도 다루는 화제 · 본인 SNS 해명으로 사람이 보이는 소식"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T23:38+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 한 교차로 근처에서 사고를 냈습니다.\n\n길가의 전동 킥보드와 부딪힌 차는 교차로를 지나 멈추려다 정차해 있던 트럭과도 닿았는데요, 다친 사람은 없었습니다. 챤미나는 차량 감각을 잘못 판단했다는 취지로 진술했고, 소속사는 사고가 난 것은 사실이며 자세한 경위를 확인하고 있다고 밝혔습니다. 정확한 원인은 경시청이 조사하고 있습니다.\n\n사고가 알려진 뒤 여러 추측이 따라붙자 챤미나는 SNS에 직접 글을 올려 걱정을 끼친 데 사과했습니다. 음주운전과 약물, 도주는 물론 휴대전화를 보는 '딴짓 운전'도 일절 하지 않았다며, \"아닌 것은 아니라고 제대로 전하고 싶다\"고 적었습니다.\n\n#PLOT #챤미나 #ちゃんみな #일본힙합 #교통사고\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792766296/qa7t58ug9rfrvxo9qzlt.jpg\n제목: 챤미나, 도쿄서 교통사고|직접 밝힌 입장\n부제: \"음주·약물·도주 일절 없었다\"\n출처:\n",
-    "caption": "일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 한 교차로 근처에서 사고를 냈습니다.\n\n길가의 전동 킥보드와 부딪힌 차는 교차로를 지나 멈추려다 정차해 있던 트럭과도 닿았는데요, 다친 사람은 없었습니다. 챤미나는 차량 감각을 잘못 판단했다는 취지로 진술했고, 소속사는 사고가 난 것은 사실이며 자세한 경위를 확인하고 있다고 밝혔습니다. 정확한 원인은 경시청이 조사하고 있습니다.\n\n사고가 알려진 뒤 여러 추측이 따라붙자 챤미나는 SNS에 직접 글을 올려 걱정을 끼친 데 사과했습니다. 음주운전과 약물, 도주는 물론 휴대전화를 보는 '딴짓 운전'도 일절 하지 않았다며, \"아닌 것은 아니라고 제대로 전하고 싶다\"고 적었습니다.\n\n#PLOT #챤미나 #ちゃんみな #일본힙합 #교통사고",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766296/qa7t58ug9rfrvxo9qzlt.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766296/qa7t58ug9rfrvxo9qzlt.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "챤미나, 도쿄서 교통사고|직접 밝힌 입장",
-      "sub": "\"음주·약물·도주 일절 없었다\""
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "\"아닌 건 아니라고\"|챤미나의 사고 해명",
-      "sub": "도쿄 시부야 접촉 사고 · 다친 사람 없어"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "챤미나 차량, 킥보드·트럭과|잇따라 접촉 사고",
-      "sub": "본인 \"음주·약물·도주 없었다\""
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "챤미나 본인 SNS 해명 글 원문을 직접 보지 못함 — 인용 '아닌 것은 아니라고 제대로 전하고 싶다'는 헤럴드경제·텐아시아 번역 기준",
-     "숏폼 비움 — 사고 소식이라 맞는 원본 영상 없음 · 표지 사진은 기사 대표 사진이니 얼굴·워터마크 확인"
-    ],
-    "research": [
-     {
-      "title": "ちゃんみな 車運転中に電動キックボードに接触する事故 けが人なし 事務所「詳細は確認中」(스포츠호치)",
-      "link": "https://news.infoseek.co.jp/article/hochi_20261022-OHT1T51069/"
-     },
-     {
-      "title": "'애쉬아일랜드♥' 챤미나, 日서 교통사고…\"음주운전·약물 절대 아냐\" (텐아시아)",
-      "link": "https://tenasia.co.kr/article/2026102305164"
-     },
-     {
-      "title": "\"음주운전·약물·도주 일절 안 했다\"…챤미나, 교통사고에 직접 해명 (헤럴드경제)",
-      "link": "https://biz.heraldcorp.com/article/10912871"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766299/u3toaari8ywimpjoq7ue.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766299/unhsyxdeznoc1b5nsxid.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766301/hhcw11wsgsvr2ertna2t.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766301/zbhehlyxa5lf9bwf8zfc.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766299/u3toaari8ywimpjoq7ue.jpg"
-     },
-     "at": "2026-10-23T23:38+09:00",
-     "v": {
-      "A": "1f8372f7",
-      "B": "eb7c0d47",
-      "C": "421c85c5"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ord-b65525be",
-    "account": "@규효 공유 · @hipcokr",
-    "url": "https://www.instagram.com/p/De1ulSwlNTJ/?vrfl=N3l0Mm83YjcwczQ=",
-    "image": null,
-    "head": "양홍원 측, 불륜 의혹에 '폭로 자료는 악의적 편집' · 폭로자 공갈 등 고소",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T23:40+09:00",
-   "key": "7912e49f",
-   "by": "claude",
-   "subjects": [
-    "양홍원"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "결혼 닷새 만의 불륜 의혹에 소속사가 '자료 악의적 편집'으로 맞섰다 — 소속사 입장만, 확인된 만큼",
-    "why": "규효 맡기기 · 23일 밤 소속사 공식 입장 (스포츠서울·국제뉴스 확인) · 양홍원은 이번 달 PLOT 이 이어 다룬 사람"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T23:40+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\n양홍원(@yanghongwon) 측이 불륜 의혹에 대해 공식 입장을 냈습니다.\n\n결혼식을 올린 지 닷새 만에 온라인에서 폭로 글이 퍼졌는데요, 소속사 AP Alchemy는 23일 \"폭로자가 제시한 자료는 악의적으로 편집된 결과물\"이라며 의혹을 부인했습니다. 그날 자리를 함께한 사실은 인정했지만 애정 행위는 없었다는 설명입니다.\n\n소속사는 폭로자가 금전을 요구하며 협박했고 돈은 지급하지 않았다고 밝혔습니다. 양홍원과 상대 여성은 폭로자를 공갈, 스토킹처벌법 위반, 명예훼손 혐의로 각각 고소했으며, 소속사는 허위 글과 댓글에도 엄정히 대응하겠다고 덧붙였습니다.\n\n#PLOT #양홍원 #불륜의혹 #공식입장 #국힙\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792766458/zbxxb3rqwy3qusgsjho2.jpg\n제목: 양홍원 측, 불륜 의혹에|\"자료 악의적 편집\"\n부제: 폭로자 공갈 등 혐의로 고소\n출처: @yanghongwon\n",
-    "caption": "양홍원(@yanghongwon) 측이 불륜 의혹에 대해 공식 입장을 냈습니다.\n\n결혼식을 올린 지 닷새 만에 온라인에서 폭로 글이 퍼졌는데요, 소속사 AP Alchemy는 23일 \"폭로자가 제시한 자료는 악의적으로 편집된 결과물\"이라며 의혹을 부인했습니다. 그날 자리를 함께한 사실은 인정했지만 애정 행위는 없었다는 설명입니다.\n\n소속사는 폭로자가 금전을 요구하며 협박했고 돈은 지급하지 않았다고 밝혔습니다. 양홍원과 상대 여성은 폭로자를 공갈, 스토킹처벌법 위반, 명예훼손 혐의로 각각 고소했으며, 소속사는 허위 글과 댓글에도 엄정히 대응하겠다고 덧붙였습니다.\n\n#PLOT #양홍원 #불륜의혹 #공식입장 #국힙",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766458/zbxxb3rqwy3qusgsjho2.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/j1XLJnx/026a3da6108a.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/833323904_18596877385068013_7268755776048696997_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3wXj36JdWfsQ7kNvwFEipv_&_nc_oc=Ado4T9QfsVQJalYpf9E-LW4g0aeFV4Y5lMIKprZDCOtkYjxMned6ESd-5xnBaSPpaf3l4Pe_2pLp1T7cIRlIhntw&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=B58zMe0beYN3zUqssmKtug&oh=00_AQPA1xDeZVBqLcvc3eRH00jzOB4tGlfht3oC5Z1Vq0z7UA&oe=6AD146ED"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816953149_18593955190068013_7414787818138565865_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=i7Ng2Ta_VyoQ7kNvwH4nEl1&_nc_oc=AdrKSZtHn6byb8KPAlWIyCvf1TXutiPR00fApsLdHa-JpbQ6pNJ0I2tNYKLmV5m3Sdg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQNkY3gXfnuVk0DWQydua0EphR84eHzY8en-Vv-3Z0fclA&oe=6ADD5F13"
-     },
-     {
-      "url": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/800065702_18593863249068013_7659673952264151381_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-ntux6Dc1qIQ7kNvwFRZA9M&_nc_oc=Adq6jwMWOz3t-pP-JMz5rQy55mlXm083uBIQCaQpp6Ros8HskniHfWRArFVPOhmhxPs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=bqPKa4OX_mXtYt9IMIrbtA&oh=00_AQPjNslESJmR5VdXwa8jcEMGsNlALf-UHFBumK5sCr0j1w&oe=6AD000D4"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766458/zbxxb3rqwy3qusgsjho2.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
-     },
-     {
-      "url": "https://i.ibb.co/j1XLJnx/026a3da6108a.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/833323904_18596877385068013_7268755776048696997_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3wXj36JdWfsQ7kNvwFEipv_&_nc_oc=Ado4T9QfsVQJalYpf9E-LW4g0aeFV4Y5lMIKprZDCOtkYjxMned6ESd-5xnBaSPpaf3l4Pe_2pLp1T7cIRlIhntw&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=B58zMe0beYN3zUqssmKtug&oh=00_AQPA1xDeZVBqLcvc3eRH00jzOB4tGlfht3oC5Z1Vq0z7UA&oe=6AD146ED"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816953149_18593955190068013_7414787818138565865_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=i7Ng2Ta_VyoQ7kNvwH4nEl1&_nc_oc=AdrKSZtHn6byb8KPAlWIyCvf1TXutiPR00fApsLdHa-JpbQ6pNJ0I2tNYKLmV5m3Sdg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQNkY3gXfnuVk0DWQydua0EphR84eHzY8en-Vv-3Z0fclA&oe=6ADD5F13"
-     },
-     {
-      "url": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/800065702_18593863249068013_7659673952264151381_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-ntux6Dc1qIQ7kNvwFRZA9M&_nc_oc=Adq6jwMWOz3t-pP-JMz5rQy55mlXm083uBIQCaQpp6Ros8HskniHfWRArFVPOhmhxPs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=bqPKa4OX_mXtYt9IMIrbtA&oh=00_AQPjNslESJmR5VdXwa8jcEMGsNlALf-UHFBumK5sCr0j1w&oe=6AD000D4"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "양홍원 측, 불륜 의혹에|\"자료 악의적 편집\"",
-      "sub": "폭로자 공갈 등 혐의로 고소"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "결혼 닷새 만의 폭로,|양홍원 측 \"사실과 달라\"",
-      "sub": "소속사 23일 공식 입장"
-     },
-     {
-      "key": "C",
-      "hook": "다른 안",
-      "title": "양홍원 측, 불륜설 부인|폭로자 공갈 고소",
-      "sub": "\"자료는 악의적으로 편집\""
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "숏폼 없음 — 소속사 입장문 소식이라 쓸 원본 영상이 없음 (폭로자 라이브 방송 영상은 쓰지 않음)",
-     "소속사 입장만 담았음 — 폭로자 측 반박이 새로 나오면 올리기 전에 캡션 셋째 단락을 맞출 것",
-     "반복 — 「양홍원」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
-    ],
-    "research": [
-     {
-      "title": "스포츠서울 — 양홍원 측 “모텔은 갔지만 불륜 NO…금전 협박 당해” [공식] (10/23)",
-      "link": "https://www.sportsseoul.com/news/read/1643618"
-     },
-     {
-      "title": "국제뉴스 — [속보] 양홍원 소속사 \"불륜 폭로글은 허위 사실… 금전 갈취·협박 고소\" (10/23)",
-      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3731183"
-     },
-     {
-      "title": "뉴스엔 — 양홍원 소속사, 모텔 동행은 인정·불륜설은 부인 [전문] (10/23)",
-      "link": "https://www.newsen.com/news_view.php?uid=202610232306082510"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766461/dccaagxlabaiokmswpgx.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766461/df74hwqekyitkh7cr1jk.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766463/dk71eag4l66detn5q3pu.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766463/mmhtjaptpnlplgnpvdpu.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792766461/dccaagxlabaiokmswpgx.jpg"
-     },
-     "at": "2026-10-23T23:41+09:00",
-     "v": {
-      "A": "c110c8c3",
-      "B": "19e5635a",
-      "C": "ace6c41d"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:yhw-timeline",
-    "account": "@plot_music",
-    "url": "https://www.instagram.com/p/De1wNZZGVmo/",
-    "image": null,
-    "head": "AP알케미 공식 입장 (우리 23:17 게시물)",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-10-23T23:56+09:00",
-   "key": "59800117",
-   "by": "claude",
-   "subjects": [
-    "양홍원"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "하루 동안 나온 폭로·반박·소속사 입장을 '누가 말했나' 순서로 정리 (타임라인형 첫 시험)",
-    "why": "10/23 규효 '타임라인 총정리 하나 하고싶은데' — 레퍼런스 @hipcokr"
-   },
-   "added": "claude",
-   "added_at": "2026-10-23T23:56+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nIssue\n\n[캡션]\n결혼 닷새 만에 터진 양홍원(@yanghongwon) 사생활 의혹, 하루 동안 나온 이야기를 순서대로 정리했습니다.\n\n23일 익명의 폭로자 A씨가 SNS에 의혹을 올렸고, 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답했습니다. 현장에 함께 있었다고 밝힌 지인은 A씨가 돈을 노리고 주장을 꾸며냈다고 반박했습니다.\n\n이후 소속사 AP알케미는 폭로 내용이 사실과 다르고 자료는 악의적으로 편집된 것이라는 입장을 냈습니다. 양홍원과 함께 거론된 여성은 각각 공갈, 스토킹처벌법 위반, 명예훼손 혐의로 고소장을 냈습니다.\n\n어느 쪽 주장도 아직 사실로 확인되지 않았습니다.\n\n#PLOT #양홍원 #AP알케미 #타임라인\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792767414/a94kqm5wpztcnza57j1k.jpg\n제목: 결혼 닷새 만의 폭로|양홍원 논란 타임라인\n부제: 폭로부터 소속사 입장까지, 하루 정리\n출처: @yanghongwon\n\n[슬라이드]\n형식: 정리\n말한이: 폭로자 A씨\n소스: \n소제목: 폭로\n본문: 지난 18일 원현주와 결혼식을 올린 양홍원을 두고, 닷새 뒤인 23일 익명의 폭로자 A씨가 SNS에 **사생활 의혹**을 올렸습니다.||A씨는 같은 날 인스타그램 라이브 방송에서 폭로 목적을 묻는 말에 **\"관심 플러스 돈\"**이라고 답했습니다.||사실인지는 보는 사람이 판단하라는 취지의 말도 남겼습니다.||출처: 뉴시스 · 스타뉴스 · 머니투데이\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 현장에 있었다는 지인\n소스: \n소제목: 반박\n본문: 현장에 함께 있었다고 밝힌 한 지인은 A씨가 **돈을 노리고 주장을 꾸며냈다**며 반박한 것으로 전해졌습니다.||폭로 직후부터 주장의 진위를 두고 논란이 이어졌습니다.||출처: 뉴시스\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 소속사 AP알케미\n소스: \n소제목: 공식 입장\n본문: 폭로 내용은 **사실과 다르며**, 폭로자가 내놓은 자료는 **악의적으로 편집**된 것이라고 밝혔습니다.||소속사에 따르면 폭로자는 **금전을 요구**했다가 뜻대로 되지 않자 폭로에 나섰습니다.||양홍원과, 폭로에 함께 거론된 여성이 각각 고소장을 냈습니다. 혐의는 **공갈 · 스토킹처벌법 위반 · 명예훼손**입니다.||허위 사실을 퍼뜨리는 게시글과 댓글 작성자에게도 **법적 대응**을 예고했습니다.\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: \n소스: \n소제목: 지금 상황\n본문: 폭로자는 목적을 \"관심 플러스 돈\"이라 했고, 소속사는 금전 요구 끝의 허위 폭로라며 **고소**로 맞섰습니다.||고소장이 접수된 만큼 사실관계는 앞으로 **수사**에서 가려지게 됩니다.||지금까지 나온 내용은 **어느 쪽도 사실로 확인되지 않았습니다.**\n출처:\n",
-    "caption": "결혼 닷새 만에 터진 양홍원(@yanghongwon) 사생활 의혹, 하루 동안 나온 이야기를 순서대로 정리했습니다.\n\n23일 익명의 폭로자 A씨가 SNS에 의혹을 올렸고, 라이브 방송에서 폭로 목적을 묻는 말에 \"관심 플러스 돈\"이라고 답했습니다. 현장에 함께 있었다고 밝힌 지인은 A씨가 돈을 노리고 주장을 꾸며냈다고 반박했습니다.\n\n이후 소속사 AP알케미는 폭로 내용이 사실과 다르고 자료는 악의적으로 편집된 것이라는 입장을 냈습니다. 양홍원과 함께 거론된 여성은 각각 공갈, 스토킹처벌법 위반, 명예훼손 혐의로 고소장을 냈습니다.\n\n어느 쪽 주장도 아직 사실로 확인되지 않았습니다.\n\n#PLOT #양홍원 #AP알케미 #타임라인",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767414/a94kqm5wpztcnza57j1k.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg",
-      "credit": "@yanghongwon",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/705341035_18560568136068013_2206778758427998637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TWg_OhgJoeoQ7kNvwHjviZx&_nc_oc=AdpcPVfGM1_phE68DwrGl7jZWjUMgaKZNU7PfneT-JWeNAV1oiwvFbtLWaGjzayQ4sY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQMJQiVzyUk2uGi9x4n912NTC03biKFk7ChQ4hzTT81Zlg&oe=6AD96205"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088231_18601669921068013_7415273064331475522_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X0G_tJayB44Q7kNvwH7z2NK&_nc_oc=AdqBaZrMm6WXy659cO4wzhM73akk-rQBPNH0zsG5bIYyP4rd_pF4a4SMkFru3Ks2AHc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=nezvaE7fueheY2maeqhsxA&oh=00_AQPZgmHDDkochWrVlDzjbqHOnZpW1yewU7Kn9ecQc5-c4w&oe=6ADAC924"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505189/pdnbt5r00jnkjtly4tlw.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088222_18601669930068013_6443667269466546263_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DTaNWosNPVsQ7kNvwF0PPWb&_nc_oc=AdpCaOC9_VcpRV4anTYcITQHXnDDv8iNscBR9ds5eXKw2EvU6dgzBMgV-fYXbONCGdE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQN86BIjBFIaa1P_etUPDHIA_X6UDEF1GSeb7OamcBMT7g&oe=6ADD5A5E"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767414/a94kqm5wpztcnza57j1k.jpg",
-      "credit": "@yanghongwon",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/816452355_18593863240068013_8535478978787421419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8W5oKaYmCtQQ7kNvwFZnIRN&_nc_oc=AdqSj-958s7xhgQ_InOLDzRBktQoODnKIk5sHNy9VntBEQ6QwsP0YYtnopF7X61uzpE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQP4r-l23qQCoawts-cNrTGS44pXI1V_7jenMPpoWxulNQ&oe=6ADD46F4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505247/vv8nr2glgtqrwhujcwf6.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/793257777_18589294351068013_2364869178560022472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=D8a4X7cEsWYQ7kNvwEUvTu7&_nc_oc=AdrrskXq1mKhntb1u1RitEYm7-DVcNnT8wT2AqDduDCvFp_iMhIkMGuycCZT8l_H7lM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQOXCh5nJsyfFzB0A1l4vLGCcaVAmKQXJ7cB8FhruaJOww&oe=6ADD4B09"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249307/izkzf5odou4epdrljcol.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716290440_18563989609068013_1126277026224233063_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0HQRLqQpbWEQ7kNvwELnS6i&_nc_oc=AdrbNCnjK-6VwC1rPUn-LD3XfrEJ2MRCkWoVmRh9tbvNi3e1LAz22YNQXlv9W1c5ZgA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQOzo2r13-waSwNdQpmSXVzDJxSGye-xYBYmC4x_c0UfYQ&oe=6AD9726E"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg",
-      "credit": "@yanghongwon",
-      "kind": "프로필",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/705341035_18560568136068013_2206778758427998637_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TWg_OhgJoeoQ7kNvwHjviZx&_nc_oc=AdpcPVfGM1_phE68DwrGl7jZWjUMgaKZNU7PfneT-JWeNAV1oiwvFbtLWaGjzayQ4sY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=THju7PqblLuQ5MgQIWWKFQ&oh=00_AQMJQiVzyUk2uGi9x4n912NTC03biKFk7ChQ4hzTT81Zlg&oe=6AD96205"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505194/b7dhpu52myp9xdmf9nyf.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844023270_18599780062068013_8616121308686130279_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nKiMyJV4NN0Q7kNvwG6lIT1&_nc_oc=AdpymavbaIT1xu1tmIRn1sUYH1chcgeqQPqbePkkdUzsS0OGyAtvS_Y4iSPQbGf6uaE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQMlr_Y_ByRlC2rdRd0D-RQqxgaeYYGXbhlpF-px4_iHQA&oe=6ADD3947"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792339679/ejhpfr1svx5a7rgc3jej.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088231_18601669921068013_7415273064331475522_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=X0G_tJayB44Q7kNvwH7z2NK&_nc_oc=AdqBaZrMm6WXy659cO4wzhM73akk-rQBPNH0zsG5bIYyP4rd_pF4a4SMkFru3Ks2AHc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=nezvaE7fueheY2maeqhsxA&oh=00_AQPZgmHDDkochWrVlDzjbqHOnZpW1yewU7Kn9ecQc5-c4w&oe=6ADAC924"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505189/pdnbt5r00jnkjtly4tlw.jpg",
-      "credit": "@yanghongwon",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088222_18601669930068013_6443667269466546263_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DTaNWosNPVsQ7kNvwF0PPWb&_nc_oc=AdpCaOC9_VcpRV4anTYcITQHXnDDv8iNscBR9ds5eXKw2EvU6dgzBMgV-fYXbONCGdE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dUhscZHMIBmvD6vIlfesTw&oh=00_AQN86BIjBFIaa1P_etUPDHIA_X6UDEF1GSeb7OamcBMT7g&oe=6ADD5A5E"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "결혼 닷새 만의 폭로|양홍원 논란 타임라인",
-      "sub": "폭로부터 소속사 입장까지, 하루 정리"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "양홍원 논란|하루 타임라인",
-      "sub": "폭로 · 반박 · 공식 입장"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "'지금 상황' 장은 정리 문장(우리 말) — 단정 없이 썼는지 한 번 보기",
-     "표지 사진(@yanghongwon 스튜디오 흑백) 괜찮은지",
-     "반복 — 「양홍원」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
-    ],
-    "research": [
-     {
-      "title": "뉴시스·스타뉴스·머니투데이 (폭로·라이브 발언·지인 반박) — 606d46db 초안 근거",
-      "link": "https://www.instagram.com/p/De1sZygj_WE/"
-     },
-     {
-      "title": "AP알케미 공식 입장 — 05d635cc 초안 근거",
-      "link": "https://www.instagram.com/p/De1wNZZGVmo/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767418/kexu5q1eqcgz6ye0b0cu.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767418/ou7jahrphxn18phgadvi.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767417/rp1fcuncknys8za8jhog.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767418/akbe7iuyqyz0z7wionzz.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767419/vndcctoxatbhrkynwqk6.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767419/d7ogpptnjlcbc2lw0sdd.jpg"
-     ],
-     "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767421/rn2ackqccdo4w7b6k3sl.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792767418/kexu5q1eqcgz6ye0b0cu.jpg"
-     },
-     "at": "2026-10-23T23:57+09:00",
-     "v": {
-      "A": "154b2061",
-      "B": "96d29e00"
+      "A": "bbb6a9f0"
      }
     }
    },
@@ -2934,7 +486,7 @@
  "skipped": [],
  "corners": {
   "week": "10/19~10/25",
-  "days_left": 3,
+  "days_left": 2,
   "done": 22,
   "goal": 28,
   "corners": [
@@ -2956,7 +508,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 3,
+    "need_today": 4,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -2971,7 +523,7 @@
     "need_today": 2,
     "day": null,
     "next_no": 3,
-    "drafts": 1,
+    "drafts": 0,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -3019,7 +571,7 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 0,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -3031,7 +583,7 @@
     "need_today": 0,
     "day": 0,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 0,
     "why": "월요일 고정 — 이번 주 예매가 열리는 공연·내한·페스티벌을 날짜·시간·예매처로"
    },
    {
@@ -3040,10 +592,10 @@
     "weekly": 1,
     "done": 0,
     "left": 1,
-    "need_today": 1,
+    "need_today": 0,
     "day": 4,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 0,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
    {
@@ -3067,11 +619,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 15,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-23T23:56+09:00"
+  "at": "2026-10-24T09:59+09:00"
  },
  "slots": {
   "basis": 224,
@@ -3096,7 +648,7 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.52,
+    "mult": 1.57,
     "median": 0.43,
     "n": 31
    }
