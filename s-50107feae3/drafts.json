@@ -481,6 +481,81 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-f61d3ec8",
+    "account": "@갈등·반응",
+    "url": "http://www.osen.co.kr/article/G1112897630",
+    "image": null,
+    "head": "리즈의 가수 꿈은 태연 뮤직비디오 출연에서 시작됐다 (더 시즌즈 10/23)",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-24T13:55+09:00",
+   "key": "ecc0849b",
+   "by": "claude",
+   "subjects": [
+    "리즈"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "리즈가 가수를 꿈꾼 계기 — 중학생 때 짧게 출연한 태연 뮤직비디오",
+    "why": "10/23 〈더 시즌즈〉 리즈 발언이 기사·반응으로 번지는 중, 컴백 주간이라 관심이 몰림"
+   },
+   "added": "claude",
+   "added_at": "2026-10-24T13:55+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=E8ACQDHkEWo\n구간: 0:44-1:13\n곡: 되어야겠다 했어요\n아티스트: 아리따운 여성이\n피처링:\n후킹: 태연 선배님 보고\n출처: KBS Kpop\n자막: 자동",
+    "caption": "아이브 리즈가 가수를 꿈꾸게 된 건 태연의 뮤직비디오 한 편이었습니다.\n\n리즈는 23일 방송된 KBS2 〈더 시즌즈-성시경의 고막남친〉에서 중학생 때 우연히 태연의 뮤직비디오에 짧게 출연했다고 밝혔는데요, 그때 태연의 모습을 보고 \"이런 아리따운 여성이 되어야겠다\"는 생각을 했다고 말했습니다. 그전까지는 그저 음악을 좋아하는 학생이었다고 합니다.\n\n데뷔 뒤 실제로 태연을 만났지만, 리즈는 여전히 너무 대선배이자 스타라 눈을 잘 못 쳐다본다고 털어놨습니다. 뮤직비디오 속 짧은 한 장면이 지금의 리즈로 이어진 셈입니다.\n\n#PLOT #아이브 #리즈 #태연 #더시즌즈 #성시경",
+    "hooks": {
+     "A": "태연 선배님 보고 / 아리따운 여성이 / 되어야겠다 했어요",
+     "B": "리즈가 가수를 / 꿈꾼 건 태연 / 뮤비 한 편이었다",
+     "C": "중학생 때 찍은 / 태연 뮤비 한 장면이 / 꿈의 시작이었다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=E8ACQDHkEWo",
+     "credit": "KBS Kpop",
+     "range": [
+      44.0,
+      73.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — KBS Kpop (29초)",
+     "0:44-1:13 구간에 '태연 선배님의 모습을 보고 … 아리따운 여성이 되어야겠다' 가 들어가는지 (자막상 0:46~0:59)"
+    ],
+    "research": [
+     {
+      "title": "OSEN — 아이브 리즈, 태연 뮤직비디오 그 꼬마였다 (10/24)",
+      "link": "http://www.osen.co.kr/article/G1112897630"
+     },
+     {
+      "title": "KBS Kpop — 어렸던 리즈가 가수의 꿈을 키우게 된 계기는?! [더 시즌즈] 261023 방송",
+      "link": "https://www.youtube.com/watch?v=E8ACQDHkEWo"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/E8ACQDHkEWo/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792817727/jvamcxrj9au1t993ns0g.jpg",
+     "key": "E8ACQDHkEWo@44.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-24T13:56+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 3
   }
  ],
  "skipped": [],
@@ -523,7 +598,7 @@
     "need_today": 2,
     "day": null,
     "next_no": 3,
-    "drafts": 0,
+    "drafts": 1,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -623,7 +698,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-24T09:59+09:00"
+  "at": "2026-10-24T13:56+09:00"
  },
  "slots": {
   "basis": 224,
@@ -633,8 +708,16 @@
     "to": 21,
     "at": "19:30",
     "mult": 2.65,
-    "median": 3.08,
+    "median": 3.07,
     "n": 30
+   },
+   {
+    "from": 21,
+    "to": 24,
+    "at": "22:30",
+    "mult": 1.58,
+    "median": 0.43,
+    "n": 31
    },
    {
     "from": 15,
@@ -643,14 +726,6 @@
     "mult": 1.58,
     "median": 0.75,
     "n": 11
-   },
-   {
-    "from": 21,
-    "to": 24,
-    "at": "22:30",
-    "mult": 1.57,
-    "median": 0.43,
-    "n": 31
    }
   ],
   "shorts": [
