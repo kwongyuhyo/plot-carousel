@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-23 22:04 KST",
+ "generated_at": "2026-10-24 15:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1445,11 +1445,36 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-23 19:04 KST"
+  "daily": "2026-10-23 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-23T22:04:27+09:00",
+  "fetched_at": "2026-10-24T14:59:44+09:00",
   "posts": [
+   {
+    "t": "2026-10-23T23:53+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "비프리가 11월 6일 힙플쇼 Vol.65 무대에 오릅니다."
+   },
+   {
+    "t": "2026-10-23T23:41+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 "
+   },
+   {
+    "t": "2026-10-23T23:26+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "A2O LITE(@a2o.lite) 아이찡의 부모를 둘러싼 임금 체불 논"
+   },
+   {
+    "t": "2026-10-23T23:17+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원(@yanghongwon)의 소속사 AP알케미가 외도 의혹을 제기한"
+   },
+   {
+    "t": "2026-10-23T22:44+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 "
+   },
    {
     "t": "2026-10-23T17:57+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1634,12 +1659,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 116,
-  "posted": 20,
-  "posts": 44,
-  "rate": 0.17,
-  "adopted_mult": 0.86,
-  "own_mult": 1.13,
+  "drafts": 129,
+  "posted": 24,
+  "posts": 49,
+  "rate": 0.19,
+  "adopted_mult": 0.95,
+  "own_mult": 1.03,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1649,16 +1674,16 @@
    "재미": {
     "drafts": 12,
     "posted": 1,
-    "mult": 0.68
+    "mult": null
    },
    "정보": {
-    "drafts": 63,
-    "posted": 14,
+    "drafts": 74,
+    "posted": 17,
     "mult": 0.92
    },
    "클립": {
-    "drafts": 24,
-    "posted": 1,
+    "drafts": 25,
+    "posted": 2,
     "mult": null
    },
    "재포장": {
@@ -1677,7 +1702,7 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 3,
+    "drafts": 4,
     "posted": 1,
     "mult": null
    },
@@ -1694,13 +1719,13 @@
   },
   "corners": {
    "news": {
-    "drafts": 64,
-    "posted": 14,
-    "mult": 0.78
+    "drafts": 73,
+    "posted": 16,
+    "mult": 0.92
    },
    "mal": {
-    "drafts": 24,
-    "posted": 1,
+    "drafts": 25,
+    "posted": 2,
     "mult": null
    },
    "again": {
@@ -1719,8 +1744,8 @@
     "mult": 0.9
    },
    "followup": {
-    "drafts": 9,
-    "posted": 2,
+    "drafts": 10,
+    "posted": 3,
     "mult": 0.95
    },
    "spotlight": {
@@ -1734,8 +1759,13 @@
     "mult": null
    },
    "anniv": {
-    "drafts": 1,
+    "drafts": 2,
     "posted": 1,
+    "mult": null
+   },
+   "tickets": {
+    "drafts": 1,
+    "posted": 0,
     "mult": null
    }
   },
@@ -1751,45 +1781,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-22",
-    "lane": "정보",
-    "who": "스포티파이",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "f4a8d526",
-    "posted": "DeyEnOemYqb",
-    "head": "올해 스포티파이 추천 목록에서 5천만 곡 넘게 빠졌습니다.",
-    "url": "https://www.instagram.com/p/DeyEnOemYqb/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-22",
-    "lane": "정보",
-    "who": "A2O LITE",
-    "repack": false,
-    "grade": "A",
-    "corner": "followup",
-    "key": "e2065a14",
-    "posted": "DeyA8tAmeic",
-    "head": "A2O LITE(@a2o.lite)가 데뷔 8일 만에 음악방송 트로피 두 개를 들어 올렸습",
-    "url": "https://www.instagram.com/p/DeyA8tAmeic/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-22",
-    "lane": "클립",
-    "who": "언오피셜보이",
-    "repack": false,
-    "grade": "A",
-    "corner": "mal",
-    "key": "9e042f97",
-    "posted": "Dez_QQxzyuc",
-    "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문자 이야기를 직접 ",
-    "url": "https://www.instagram.com/reel/Dez_QQxzyuc/",
-    "mult": null
-   },
    {
     "day": "2026-10-22",
     "lane": "정보",
@@ -1831,6 +1822,19 @@
    },
    {
     "day": "2026-10-23",
+    "lane": "정보",
+    "who": "양홍원",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "82b8976a",
+    "posted": "De1sZygj_WE",
+    "head": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.",
+    "url": "https://www.instagram.com/p/De1sZygj_WE/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
     "lane": "시리즈",
     "who": "트와이스",
     "repack": false,
@@ -1853,6 +1857,32 @@
     "posted": "De1LmJ6D95f",
     "head": "리사(@lalalalisa_m)가 오늘(23일) 솔로 EP [PRESS PLAY]를 냈습니",
     "url": "https://www.instagram.com/p/De1LmJ6D95f/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
+    "lane": "정보",
+    "who": "양홍원",
+    "repack": false,
+    "grade": "A",
+    "corner": "followup",
+    "key": "606d46db",
+    "posted": "Dez_QQxzyuc",
+    "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문자 이야기를 직접 ",
+    "url": "https://www.instagram.com/reel/Dez_QQxzyuc/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
+    "lane": "정보",
+    "who": "챤미나",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "ca2f1ca4",
+    "posted": "De1y_Ktj0Jk",
+    "head": "일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 한 교차로 근처에서",
+    "url": "https://www.instagram.com/p/De1y_Ktj0Jk/",
     "mult": null
    }
   ]
