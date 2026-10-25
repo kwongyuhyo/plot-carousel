@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-25 15:04 KST",
+ "generated_at": "2026-10-25 19:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1445,11 +1445,31 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-24 22:04 KST"
+  "daily": "2026-10-25 15:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-25T14:33:43+09:00",
+  "fetched_at": "2026-10-25T19:04:35+09:00",
   "posts": [
+   {
+    "t": "2026-10-25T18:54+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "고척스카이돔 지붕 철골 연결부 23개가 기준보다 크게 꺾여 있었습니다."
+   },
+   {
+    "t": "2026-10-25T17:49+09:00",
+    "type": "VIDEO",
+    "head": "양홍원(@yanghongwon) 외도 의혹 속 그날 밤, 현장 모습이라며"
+   },
+   {
+    "t": "2026-10-25T16:41+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "빅나티(@bignaughtyboi)의 '밴쿠버'는 세 곡이 되어서야 끝났"
+   },
+   {
+    "t": "2026-10-25T16:41+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "한로로(@hanr0r0)가 데뷔 후 처음으로 아레나에서 단독 공연을 엽니"
+   },
    {
     "t": "2026-10-25T11:59+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1664,25 +1684,15 @@
     "t": "2026-10-06T18:23+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "노윤하의 인스타그램 이름이 바뀌었습니다."
-   },
-   {
-    "t": "2026-10-04T18:55+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "최예나의 별명은 한둘이 아닙니다."
-   },
-   {
-    "t": "2026-10-04T18:53+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "JYP가 그래미에 곡을 내지 않기로 했습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 138,
-  "posted": 28,
-  "posts": 53,
-  "rate": 0.2,
+  "drafts": 142,
+  "posted": 32,
+  "posts": 57,
+  "rate": 0.23,
   "adopted_mult": 0.95,
   "own_mult": 1.03,
   "lanes": {
@@ -1692,13 +1702,13 @@
     "mult": null
    },
    "재미": {
-    "drafts": 12,
+    "drafts": 13,
     "posted": 1,
     "mult": null
    },
    "정보": {
-    "drafts": 79,
-    "posted": 21,
+    "drafts": 82,
+    "posted": 25,
     "mult": 0.92
    },
    "클립": {
@@ -1740,7 +1750,7 @@
   "corners": {
    "news": {
     "drafts": 76,
-    "posted": 20,
+    "posted": 22,
     "mult": 0.92
    },
    "mal": {
@@ -1754,22 +1764,22 @@
     "mult": null
    },
    "song": {
-    "drafts": 6,
+    "drafts": 7,
     "posted": 0,
     "mult": null
    },
    "tteolgi": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 2,
     "mult": 0.9
    },
    "followup": {
-    "drafts": 11,
-    "posted": 3,
+    "drafts": 12,
+    "posted": 4,
     "mult": 0.95
    },
    "spotlight": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 0,
     "mult": null
    },
@@ -1785,7 +1795,7 @@
    },
    "tickets": {
     "drafts": 1,
-    "posted": 0,
+    "posted": 1,
     "mult": null
    }
   },
@@ -1803,54 +1813,15 @@
   "recent": [
    {
     "day": "2026-10-23",
-    "lane": "시리즈",
-    "who": "트와이스",
-    "repack": false,
-    "grade": "A",
-    "corner": "anniv",
-    "key": "873fdb5d",
-    "posted": "De0ntugmc8z",
-    "head": "트와이스 지효(@_zyozyo)가 21년 만에 JYP엔터테인먼트를 떠났습니다.",
-    "url": "https://www.instagram.com/p/De0ntugmc8z/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-23",
     "lane": "정보",
-    "who": "리사",
+    "who": "한로로",
     "repack": false,
     "grade": "A",
-    "corner": "news",
-    "key": "3219e927",
-    "posted": "De1LmJ6D95f",
-    "head": "리사(@lalalalisa_m)가 오늘(23일) 솔로 EP [PRESS PLAY]를 냈습니",
-    "url": "https://www.instagram.com/p/De1LmJ6D95f/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-23",
-    "lane": "정보",
-    "who": "양홍원",
-    "repack": false,
-    "grade": "A",
-    "corner": "followup",
-    "key": "606d46db",
-    "posted": "De1sZygj_WE",
-    "head": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.",
-    "url": "https://www.instagram.com/p/De1sZygj_WE/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-23",
-    "lane": "정보",
-    "who": "양홍원",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "05d635cc",
-    "posted": "Dez_QQxzyuc",
-    "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문자 이야기를 직접 ",
-    "url": "https://www.instagram.com/reel/Dez_QQxzyuc/",
+    "corner": "tickets",
+    "key": "f573168a",
+    "posted": "De6McajFLmo",
+    "head": "한로로(@hanr0r0)가 데뷔 후 처음으로 아레나에서 단독 공연을 엽니다.",
+    "url": "https://www.instagram.com/p/De6McajFLmo/",
     "mult": null
    },
    {
@@ -1864,6 +1835,19 @@
     "posted": "De1y_Ktj0Jk",
     "head": "일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 한 교차로 근처에서",
     "url": "https://www.instagram.com/p/De1y_Ktj0Jk/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
+    "lane": "정보",
+    "who": "양홍원",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "7912e49f",
+    "posted": "Dez_QQxzyuc",
+    "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문자 이야기를 직접 ",
+    "url": "https://www.instagram.com/reel/Dez_QQxzyuc/",
     "mult": null
    },
    {
@@ -1903,6 +1887,32 @@
     "posted": "De3v75FFOkN",
     "head": "잔나비(@bandjannabi)가 데뷔 후 처음으로 발라드만 부르는 단독 공연을 열었습니다",
     "url": "https://www.instagram.com/p/De3v75FFOkN/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-25",
+    "lane": "정보",
+    "who": "고척스카이돔",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "c37b8158",
+    "posted": "De6bqvKlOTR",
+    "head": "고척스카이돔 지붕 철골 연결부 23개가 기준보다 크게 꺾여 있었습니다.",
+    "url": "https://www.instagram.com/p/De6bqvKlOTR/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-25",
+    "lane": "정보",
+    "who": "빅나티",
+    "repack": false,
+    "grade": "A",
+    "corner": "followup",
+    "key": "c45c3426",
+    "posted": "De6MgkKFKWq",
+    "head": "빅나티(@bignaughtyboi)의 '밴쿠버'는 세 곡이 되어서야 끝났습니다.",
+    "url": "https://www.instagram.com/p/De6MgkKFKWq/",
     "mult": null
    }
   ]
