@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-24 22:04 KST",
+ "generated_at": "2026-10-25 15:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1445,11 +1445,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-24 19:04 KST"
+  "daily": "2026-10-24 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-24T21:47:43+09:00",
+  "fetched_at": "2026-10-25T14:33:43+09:00",
   "posts": [
+   {
+    "t": "2026-10-25T11:59+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원(@yanghongwon)의 모텔 동행 의혹에 함께 있던 여성이 직"
+   },
    {
     "t": "2026-10-24T17:54+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1674,9 +1679,9 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 132,
-  "posted": 27,
-  "posts": 52,
+  "drafts": 138,
+  "posted": 28,
+  "posts": 53,
   "rate": 0.2,
   "adopted_mult": 0.95,
   "own_mult": 1.03,
@@ -1692,12 +1697,12 @@
     "mult": null
    },
    "정보": {
-    "drafts": 76,
-    "posted": 20,
+    "drafts": 79,
+    "posted": 21,
     "mult": 0.92
    },
    "클립": {
-    "drafts": 26,
+    "drafts": 28,
     "posted": 2,
     "mult": null
    },
@@ -1717,7 +1722,7 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 4,
+    "drafts": 5,
     "posted": 1,
     "mult": null
    },
@@ -1734,12 +1739,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 74,
-    "posted": 19,
+    "drafts": 76,
+    "posted": 20,
     "mult": 0.92
    },
    "mal": {
-    "drafts": 26,
+    "drafts": 28,
     "posted": 2,
     "mult": null
    },
@@ -1759,7 +1764,7 @@
     "mult": 0.9
    },
    "followup": {
-    "drafts": 10,
+    "drafts": 11,
     "posted": 3,
     "mult": 0.95
    },
@@ -1774,7 +1779,7 @@
     "mult": null
    },
    "anniv": {
-    "drafts": 2,
+    "drafts": 3,
     "posted": 1,
     "mult": null
    },
@@ -1796,19 +1801,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-23",
-    "lane": "정보",
-    "who": "양홍원",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "82b8976a",
-    "posted": "De1sZygj_WE",
-    "head": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.",
-    "url": "https://www.instagram.com/p/De1sZygj_WE/",
-    "mult": null
-   },
    {
     "day": "2026-10-23",
     "lane": "시리즈",
@@ -1843,6 +1835,19 @@
     "grade": "A",
     "corner": "followup",
     "key": "606d46db",
+    "posted": "De1sZygj_WE",
+    "head": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 제기됐습니다.",
+    "url": "https://www.instagram.com/p/De1sZygj_WE/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-23",
+    "lane": "정보",
+    "who": "양홍원",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "05d635cc",
     "posted": "Dez_QQxzyuc",
     "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문자 이야기를 직접 ",
     "url": "https://www.instagram.com/reel/Dez_QQxzyuc/",
