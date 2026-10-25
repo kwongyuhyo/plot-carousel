@@ -470,7 +470,7 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 3,
+   "corner_no": 4,
    "pick": {
     "rank": 1,
     "why": "숏폼 한 자리 — 영상 속 실제 말로 여는 클립 · 아이브 컴백 주간이라 지금 뜨겁다",
@@ -622,7 +622,7 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 4
+   "corner_no": 5
   },
   {
    "source": {
@@ -3160,7 +3160,7 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 5,
+   "corner_no": 6,
    "published": {
     "permalink": "https://www.instagram.com/p/De6vAZQmVCq/",
     "cover": "A",
@@ -3376,20 +3376,179 @@
     }
    },
    "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "claude:ord-777dc2e9",
+    "account": "@규효 공유 · @lemag.kr",
+    "url": "https://www.instagram.com/p/De7EXH6T5nr/?obrf=amdkcTIxcGNvbTJ0",
+    "image": null,
+    "head": "'Plan A-Z' 다음 장 — 양홍원·닥스후드 'Plan B'에 릴 나르·코스타 캐시맨 참여",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T02:46+09:00",
+   "key": "166b8161",
+   "by": "claude",
+   "subjects": [
+    "양홍원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "'Plan A-Z' 10개월 뒤, 양홍원·닥스후드의 'Plan B'에 미국·필리핀 래퍼까지 모였다",
+    "why": "규효 맡기기 · 발매 소식이라 표지 한 장 + 캡션"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T02:46+09:00",
+   "corner": "newalbums",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n양홍원(@yanghongwon)과 닥스후드가 합작 싱글 'Plan B'를 공개했습니다.\n\n두 사람은 지난해 12월에도 합작 싱글 'Plan A-Z'를 함께 냈는데요, 10개월 만에 나온 이번 곡에는 샤이보이토비(@shyboiitobii)와 BIG 9ULPO에 더해 바다 건너 두 이름이 실렸습니다. 치프 키프가 세운 레이블 43B의 첫 아티스트인 미국 래퍼 릴 나르, 그리고 필리핀 랩 그룹 O $ide Mafia의 멤버 코스타 캐시맨입니다.\n\n'A-Z'에서 시작한 두 사람의 계획이 'B'에 와서 국경 밖까지 넓어진 셈입니다.\n\n'Plan B'는 10월 24일 발매돼 지금 음원 사이트에서 들을 수 있습니다.\n\n#PLOT #양홍원 #닥스후드 #PlanB #릴나르 #샤이보이토비\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792950396/z8uv023dtcbg7ljcvap6.jpg\n제목: 양홍원·닥스후드,|이번엔 'Plan B'\n부제: 릴 나르·코스타 캐시맨 참여\n출처: 벅스\n",
+    "caption": "양홍원(@yanghongwon)과 닥스후드가 합작 싱글 'Plan B'를 공개했습니다.\n\n두 사람은 지난해 12월에도 합작 싱글 'Plan A-Z'를 함께 냈는데요, 10개월 만에 나온 이번 곡에는 샤이보이토비(@shyboiitobii)와 BIG 9ULPO에 더해 바다 건너 두 이름이 실렸습니다. 치프 키프가 세운 레이블 43B의 첫 아티스트인 미국 래퍼 릴 나르, 그리고 필리핀 랩 그룹 O $ide Mafia의 멤버 코스타 캐시맨입니다.\n\n'A-Z'에서 시작한 두 사람의 계획이 'B'에 와서 국경 밖까지 넓어진 셈입니다.\n\n'Plan B'는 10월 24일 발매돼 지금 음원 사이트에서 들을 수 있습니다.\n\n#PLOT #양홍원 #닥스후드 #PlanB #릴나르 #샤이보이토비",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950396/z8uv023dtcbg7ljcvap6.jpg",
+      "credit": "벅스",
+      "from": "https://image.bugsm.co.kr/album/images/1000/41570/4157072.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950399/qto6rxiuyob9qeqtnyhl.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950400/daz7zwz4tcq0uzlvzqpn.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950402/k11sd2eplsbwzqnyiobe.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950404/q2ttnyiy0tuf00cqazfy.jpg",
+      "credit": "벅스",
+      "from": "https://image.bugsm.co.kr/album/images/1000/207754/20775492.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950396/z8uv023dtcbg7ljcvap6.jpg",
+      "credit": "벅스",
+      "from": "https://image.bugsm.co.kr/album/images/1000/41570/4157072.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950399/qto6rxiuyob9qeqtnyhl.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950400/daz7zwz4tcq0uzlvzqpn.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950402/k11sd2eplsbwzqnyiobe.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950404/q2ttnyiy0tuf00cqazfy.jpg",
+      "credit": "벅스",
+      "from": "https://image.bugsm.co.kr/album/images/1000/207754/20775492.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "양홍원·닥스후드,|이번엔 'Plan B'",
+      "sub": "릴 나르·코스타 캐시맨 참여"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "양홍원·닥스후드 신곡에|릴 나르가 왔다",
+      "sub": "샤이보이토비·BIG 9ULPO·코스타 캐시맨 참여"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "한국·미국·필리핀|한 곡에 모인 'Plan B'",
+      "sub": "양홍원·닥스후드 합작 싱글"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼은 비움 — 유튜브에 공식 뮤직비디오 없이 음원(Dakshood 채널 'Plan B')·가사 영상만 확인됨. 뮤비가 나오면 그때 숏폼으로",
+     "lemag 의 '닥스후드 정규 앨범 선공개곡'은 다른 곳에서 확인 못 해 뺐음. 최근 양홍원 관련 의혹 보도 시점이라 발행 타이밍은 규효 판단 (글에는 의혹을 다루지 않음)",
+     "반복 — 「양홍원」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "Apple Music — 양홍원 (Plan B 싱글, 2026.10.24)",
+      "link": "https://music.apple.com/kr/artist/%EC%96%91%ED%99%8D%EC%9B%90/1265125493"
+     },
+     {
+      "title": "벅스 — Dakshood (Plan B 2026.10.24 · Plan A-Z 2025.12.08)",
+      "link": "https://music.bugs.co.kr/artist/80272263?wl_ref=list_ar_01_ar"
+     },
+     {
+      "title": "나무위키 — 양홍원 (디스코그래피)",
+      "link": "https://namu.wiki/w/%EC%96%91%ED%99%8D%EC%9B%90"
+     },
+     {
+      "title": "The FADER — Chief Keef launches new label 43B, signs Lil Gnar",
+      "link": "https://www.thefader.com/2022/06/06/chief-keef-launches-new-label-43b-signs-lil-gnar"
+     },
+     {
+      "title": "Our Generation Music — Chief Keef announces new label 43B, signs Lil Gnar",
+      "link": "https://ourgenerationmusic.com/news/chief-keef-announces-new-label-signs-lil-gnar/"
+     },
+     {
+      "title": "Rolling Stone Philippines — Costa Cashman debut solo",
+      "link": "https://rollingstonephilippines.com/music/rapper-costa-cashman-dares-you-to-talk-shit-in-debut-solo/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950407/so38lv9ioyjg71apcxpf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950407/y5snhlslr046vc5mtg1e.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950409/viapebuhhwnwueuyynm9.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950409/breoanpvh9zju86q4iom.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950407/so38lv9ioyjg71apcxpf.jpg"
+     },
+     "at": "2026-10-26T02:46+09:00",
+     "v": {
+      "A": "27a715e3",
+      "B": "d239b4bc",
+      "C": "1b481a34"
+     }
+    }
+   },
+   "corner_name": "이번 주 나온 앨범",
+   "corner_no": 1
   }
  ],
  "skipped": [],
  "corners": {
-  "week": "10/19~10/25",
-  "days_left": 1,
-  "done": 33,
+  "week": "10/26~11/01",
+  "days_left": 7,
+  "done": 0,
   "goal": 28,
   "corners": [
    {
     "key": "tteolgi",
     "name": "나무위키 털기",
     "weekly": 0,
-    "done": 2,
+    "done": 0,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -3413,7 +3572,7 @@
     "key": "intro",
     "name": "입문 가이드",
     "weekly": 0,
-    "done": 1,
+    "done": 0,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -3427,7 +3586,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 7,
+    "need_today": 1,
     "day": null,
     "next_no": 1,
     "drafts": 1,
@@ -3437,11 +3596,11 @@
     "key": "mal",
     "name": "그 말",
     "weekly": 6,
-    "done": 2,
-    "left": 4,
-    "need_today": 4,
+    "done": 0,
+    "left": 6,
+    "need_today": 1,
     "day": null,
-    "next_no": 3,
+    "next_no": 4,
     "drafts": 3,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
@@ -3451,7 +3610,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": 1,
     "drafts": 1,
@@ -3475,7 +3634,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -3485,9 +3644,9 @@
     "key": "followup",
     "name": "후속",
     "weekly": 2,
-    "done": 3,
-    "left": 0,
-    "need_today": 0,
+    "done": 0,
+    "left": 2,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 3,
@@ -3497,9 +3656,9 @@
     "key": "tickets",
     "name": "이번 주 티켓 오픈",
     "weekly": 1,
-    "done": 1,
-    "left": 0,
-    "need_today": 0,
+    "done": 0,
+    "left": 1,
+    "need_today": 1,
     "day": 0,
     "next_no": 2,
     "drafts": 0,
@@ -3514,15 +3673,15 @@
     "need_today": 0,
     "day": 4,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
    {
     "key": "anniv",
     "name": "그날의 앨범",
     "weekly": 2,
-    "done": 1,
-    "left": 1,
+    "done": 0,
+    "left": 2,
     "need_today": 1,
     "day": null,
     "next_no": 2,
@@ -3533,25 +3692,25 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 23,
-    "left": 0,
-    "need_today": 0,
+    "done": 0,
+    "left": 4,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 7,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T21:44+09:00"
+  "at": "2026-10-26T02:46+09:00"
  },
  "slots": {
-  "basis": 235,
+  "basis": 236,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.53,
+    "mult": 2.54,
     "median": 2.88,
     "n": 34
    },
@@ -3559,16 +3718,16 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.6,
-    "median": 0.43,
-    "n": 31
+    "mult": 1.56,
+    "median": 0.42,
+    "n": 32
    },
    {
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.41,
-    "median": 0.85,
+    "mult": 1.44,
+    "median": 0.86,
     "n": 16
    }
   ],
