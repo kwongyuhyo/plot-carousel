@@ -2812,6 +2812,209 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-0b44d268",
+    "account": "@규효 공유 · @wikitree",
+    "url": "https://www.instagram.com/p/DeyeCrhgQMi/?dlrf=YWd4ampibnAycm5h",
+    "image": null,
+    "head": "강남이 '대한민국에서 제일 잘 맞는 사람'이라며 고른 최예나의 '사쿠란보' 리메이크",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-25T20:05+09:00",
+   "key": "9b81b156",
+   "by": "claude",
+   "subjects": [
+    "최예나"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "강남이 '누가 봐도 제일 잘 맞는 사람'이라며 J팝 리메이크 다음 목소리로 최예나를 소개 — 곡은 오오츠카 아이 '사쿠란보'",
+    "why": "규효 공유 · 짠한형 EP.167에서 직접 밝힌 장면이 발표의 출발점이라 사람의 말로 쓸 수 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-10-25T20:05+09:00",
+   "corner": "mal",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n최예나(@yena.jigumina)가 오오츠카 아이의 '사쿠란보'를 한국어로 다시 부릅니다.\n\n가수 강남(@kangkangnam)이 총괄 기획을 맡은 'J-POP REMAKE' 프로젝트의 새 곡인데요, 강남은 〈짠한형 신동엽〉에 나와 로이킴에 이어 최예나가 다음 타자라고 직접 소개했습니다. 이유는 한 마디였습니다. \"누가 봐도 대한민국에서 제일 잘 맞는 사람.\"\n\n'사쿠란보'는 2003년 발표된 오오츠카 아이의 대표곡으로, 이 프로젝트는 일본 인기곡을 한국어 가사로 옮겨 국내 아티스트의 목소리로 다시 들려줍니다. 공개된 티저에는 분홍 바탕 위 체리 유리잔과 'SAKURANBO' 문구가 담겼습니다.\n\n최예나의 '사쿠란보'는 11월 17일 오후 6시 음원 사이트에 공개됩니다.\n\n#PLOT #최예나 #사쿠란보 #오오츠카아이 #강남 #JPOP리메이크\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792926327/vp5hup9bste5jrpqe6o1.jpg\n제목: 최예나, 오오츠카 아이|'사쿠란보' 다시 부른다\n부제: 강남 'J-POP REMAKE' · 11월 17일 공개\n출처: @yena.jigumina\n",
+    "caption": "최예나(@yena.jigumina)가 오오츠카 아이의 '사쿠란보'를 한국어로 다시 부릅니다.\n\n가수 강남(@kangkangnam)이 총괄 기획을 맡은 'J-POP REMAKE' 프로젝트의 새 곡인데요, 강남은 〈짠한형 신동엽〉에 나와 로이킴에 이어 최예나가 다음 타자라고 직접 소개했습니다. 이유는 한 마디였습니다. \"누가 봐도 대한민국에서 제일 잘 맞는 사람.\"\n\n'사쿠란보'는 2003년 발표된 오오츠카 아이의 대표곡으로, 이 프로젝트는 일본 인기곡을 한국어 가사로 옮겨 국내 아티스트의 목소리로 다시 들려줍니다. 공개된 티저에는 분홍 바탕 위 체리 유리잔과 'SAKURANBO' 문구가 담겼습니다.\n\n최예나의 '사쿠란보'는 11월 17일 오후 6시 음원 사이트에 공개됩니다.\n\n#PLOT #최예나 #사쿠란보 #오오츠카아이 #강남 #JPOP리메이크",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926327/vp5hup9bste5jrpqe6o1.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607798/h6yf410q6ikowu7tzyfo.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926330/dvjxsf03pivtsgondygb.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607787/i9dkayr4micpsurk27gh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926334/s7qjwdiopxtbj5z34xtp.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792020882/mshik1smgjyqmyxnfqw6.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926340/twmzegcsscwkadu731pc.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607782/upjfjydcs45wxnaxp56n.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926327/vp5hup9bste5jrpqe6o1.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607798/h6yf410q6ikowu7tzyfo.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926330/dvjxsf03pivtsgondygb.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607787/i9dkayr4micpsurk27gh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926334/s7qjwdiopxtbj5z34xtp.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792020882/mshik1smgjyqmyxnfqw6.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926340/twmzegcsscwkadu731pc.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607782/upjfjydcs45wxnaxp56n.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "최예나, 오오츠카 아이|'사쿠란보' 다시 부른다",
+      "sub": "강남 'J-POP REMAKE' · 11월 17일 공개"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "\"누가 봐도 제일 잘 맞는\"|최예나가 부르는 '사쿠란보'",
+      "sub": "강남이 고른 J팝 리메이크 다음 목소리"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "로이킴 다음 타자는 최예나,|곡은 '사쿠란보'",
+      "sub": "11월 17일 오후 6시 공개"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 강남의 역할을 '프로듀서'에서 '총괄 기획'(한국경제 표기)으로 고쳤다 — '프로듀서' 표기는 대조한 기사에서 확인 못 함. 총괄 기획 표기도 한 곳뿐이니 한 번 봐 주세요",
+     "클립 위험: 중간 — 짠한형 신동엽 (46:39-47:10, 31초)",
+     "J-POP REMAKE 앞선 참여자 중 태연만 캡션에 넣었다 — 다른 회차 가수 이름은 기사로 확인되지 않아 뺐다"
+    ],
+    "research": [
+     {
+      "title": "짠한형 EP.167 강남 로이킴 예나 (유튜브 · 짠한형 신동엽)",
+      "link": "https://www.youtube.com/watch?v=pXsDb3H-Dps"
+     },
+     {
+      "title": "일간스포츠 — 짠한형 강남, 예나 '사쿠란보' 소개",
+      "link": "https://isplus.com/article/view/isp202610190262"
+     },
+     {
+      "title": "텐아시아 — 최예나 '사쿠란보' 11월 17일 발매",
+      "link": "https://www.tenasia.co.kr/article/2026102023844"
+     },
+     {
+      "title": "한국경제 — 강남 총괄 기획 'J-POP REMAKE', 태연 '만찬가'",
+      "link": "https://www.hankyung.com/article/202607034252H"
+     },
+     {
+      "title": "스포츠경향 — 'J-POP REMAKE' 첫 음원 태연 '만찬가'",
+      "link": "https://sports.khan.co.kr/article/202607020841003"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926346/d8l0aievxkbqtyof36r5.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926343/r6j5tzbkl4gkb2j0nju2.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926348/rclzbb1g3vphomj4erkt.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926348/jiwq2urjfr4zp4qyx4ni.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926346/d8l0aievxkbqtyof36r5.jpg"
+     },
+     "at": "2026-10-25T20:05+09:00",
+     "v": {
+      "A": "4852bd90",
+      "B": "8b43d0fd",
+      "C": "47128fa4"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=pXsDb3H-Dps\n구간: 46:39-47:10\n곡: 잘 맞는 사람이니까\n아티스트: 대한민국에서 제일\n피처링:\n후킹: 누가 봐도\n출처: 짠한형 신동엽\n자막: 자동",
+    "caption": "강남(@kangkangnam)이 J팝 리메이크의 다음 목소리로 최예나(@yena.jigumina)를 골랐습니다.\n\n〈짠한형 신동엽〉 167회에 로이킴, 최예나와 함께 나온 강남은 로이킴에 이어 최예나가 다음 타자라고 소개했는데요, 곡은 오오츠카 아이가 2003년 발표한 '사쿠란보'입니다. 왜 최예나냐는 대목에서 강남이 꺼낸 말은 \"누가 봐도 대한민국에서 제일 잘 맞는 사람\"이었습니다.\n\n'J-POP REMAKE'는 강남이 총괄 기획을 맡아 일본 인기곡을 한국어 가사와 국내 아티스트의 목소리로 다시 부르는 프로젝트로, 태연과 로이킴이 앞서 바통을 이어 왔습니다. 최예나는 방송에서 이제 막 시작하는 단계라고 전했습니다.\n\n최예나의 '사쿠란보'는 11월 17일 오후 6시 음원 사이트에 공개됩니다.\n\n#PLOT #최예나 #강남 #사쿠란보 #짠한형 #로이킴",
+    "hooks": {
+     "A": "누가 봐도 / 대한민국에서 제일 / 잘 맞는 사람이니까",
+     "B": "강남이 고른 / J팝 리메이크 / 다음 목소리 최예나",
+     "C": "로이킴 다음은 / 최예나의 / '사쿠란보'"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=pXsDb3H-Dps",
+     "credit": "짠한형 신동엽",
+     "range": [
+      2799.0,
+      2830.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 강남의 역할을 '프로듀서'에서 '총괄 기획'(한국경제 표기)으로 고쳤다 — '프로듀서' 표기는 대조한 기사에서 확인 못 함. 총괄 기획 표기도 한 곳뿐이니 한 번 봐 주세요",
+     "클립 위험: 중간 — 짠한형 신동엽 (46:39-47:10, 31초)",
+     "J-POP REMAKE 앞선 참여자 중 태연만 캡션에 넣었다 — 다른 회차 가수 이름은 기사로 확인되지 않아 뺐다"
+    ],
+    "research": [
+     {
+      "title": "짠한형 EP.167 강남 로이킴 예나 (유튜브 · 짠한형 신동엽)",
+      "link": "https://www.youtube.com/watch?v=pXsDb3H-Dps"
+     },
+     {
+      "title": "일간스포츠 — 짠한형 강남, 예나 '사쿠란보' 소개",
+      "link": "https://isplus.com/article/view/isp202610190262"
+     },
+     {
+      "title": "텐아시아 — 최예나 '사쿠란보' 11월 17일 발매",
+      "link": "https://www.tenasia.co.kr/article/2026102023844"
+     },
+     {
+      "title": "한국경제 — 강남 총괄 기획 'J-POP REMAKE', 태연 '만찬가'",
+      "link": "https://www.hankyung.com/article/202607034252H"
+     },
+     {
+      "title": "스포츠경향 — 'J-POP REMAKE' 첫 음원 태연 '만찬가'",
+      "link": "https://sports.khan.co.kr/article/202607020841003"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/pXsDb3H-Dps/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926357/g1yelpxsopqpcqf7ff5v.jpg",
+     "key": "pXsDb3H-Dps@2799.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-25T20:06+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 5
   }
  ],
  "skipped": [],
@@ -2878,7 +3081,7 @@
     "need_today": 4,
     "day": null,
     "next_no": 3,
-    "drafts": 2,
+    "drafts": 3,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -2978,7 +3181,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T20:01+09:00"
+  "at": "2026-10-25T20:06+09:00"
  },
  "slots": {
   "basis": 232,
