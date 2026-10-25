@@ -1269,13 +1269,308 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792910937/ommquct5uubju4vikbk3.jpg",
      "key": "L8hrfxz3-eQ@15.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-25T15:49+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792911179/plot_studio/wp9yii8sovimdybgcfex.mp4",
+     "at": "2026-10-25T15:53+09:00",
+     "file": "JeonNamChin_GatDaNeu_I_Ne_SaLam_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792911180861-4f43941a",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 27.37,
+        "text": "OOO 다음"
+       },
+       {
+        "start": 27.37,
+        "end": 29.64,
+        "text": "영상에서 만나요"
+       }
+      ]
+     }
     }
    },
    "corner_name": "SPOTLIGHT",
    "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "claude:ord-1091c4f7",
+    "account": "@규효 공유 · @nop_kr",
+    "url": "https://www.instagram.com/p/De38CyOI_G1/?rpxt=MTJ5ZjM1YjQzdnpsdg==",
+    "image": null,
+    "head": "짝사랑 노래 'Vancouver'가 세 곡 만에 결혼으로 끝났다 — 곡으로 짚는 빅나티의 15년",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-25T15:56+09:00",
+   "key": "c45c3426",
+   "by": "claude",
+   "subjects": [
+    "빅나티"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "결혼 소식 다음 편 — 'Vancouver' 1·2·3 세 곡으로 짚는 빅나티의 15년",
+    "why": "규효 맡기기(열애서사 총정리) · 다른 매거진 다섯 곳이 다룬 화제 · PLOT 은 결혼 소식만 썼고 곡 연표 각도는 처음"
+   },
+   "added": "claude",
+   "added_at": "2026-10-25T15:56+09:00",
+   "corner": "followup",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n빅나티(@bignaughtyboi)의 '밴쿠버'는 세 곡이 되어서야 끝났습니다.\n\n2022년 EP [낭만]에 실린 'Vancouver'는 초등학생 때부터 좋아해 온 한 사람을 향한 노래였는데요, 이듬해 'Vancouver 2'로 이어진 그 이야기의 주인공과 빅나티가 평생을 함께하기로 했습니다. 소속사 하이어뮤직(@h1ghrmusic)은 두 사람이 이미 혼인신고를 마쳤다고 밝혔습니다.\n\n결혼 소식과 함께 올라온 곡의 제목은 'Vancouver 3 (찐막)'입니다. 영상 설명에는 \"2011, First met. 2026, Married.\"라고 적혀 있습니다.\n\n짝사랑의 노래로 시작한 시리즈가 '찐막'이라는 이름으로 마침표를 찍은 셈입니다. 두 사람의 앞날에 축하를 보냅니다.\n\n#PLOT #빅나티 #서동현 #밴쿠버 #Vancouver3 #하이어뮤직\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792911399/kid25llhyahwmruzxzrb.jpg\n제목: 짝사랑에서 결혼까지|빅나티 '밴쿠버' 서사\n부제: Vancouver 1·2·3으로 짚는 15년\n출처: @bignaughtyboi\n\n[슬라이드]\n형식: 정리\n말한이: 2011 · 첫 만남\n소스: \n소제목: 9살의 짝사랑\n본문: 빅나티는 결혼을 알리며 두 사람이 **9살**에 처음 만났다고 적었습니다.||유튜브 영상 설명에도 같은 이야기가 짧게 남아 있습니다. **2011, First met.**||초등학생 시절 시작된 마음은 10년 넘는 짝사랑으로 이어졌습니다.||출처: 빅나티 인스타그램 · 위키트리 · TV리포트\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 2022 · EP [낭만]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792505178/hixpg57slyfbqqkkztox.jpg\n소제목: 'Vancouver'\n본문: 2022년 EP [낭만]에 실린 'Vancouver'는 그 짝사랑을 노래한 곡입니다.||제목 속 **밴쿠버**의 그 사람이 바로 2011년 초등학생 시절부터 좋아해 온 친구였습니다.||출처: 일간스포츠 · 텐아시아 · 연합뉴스\n출처: 멜론\n\n[슬라이드]\n형식: 정리\n말한이: 2023.9.19 · 디지털 싱글\n소스: \n소제목: 'Vancouver 2'\n본문: 이듬해 9월 19일, 빅나티는 'Vancouver'의 이야기를 잇는 **'Vancouver 2'**를 냈습니다.||빅나티 자신의 이야기를 담은 곡인데요, 그는 가사 속 '벤쿠버 녀'가 지금의 여자친구라고 밝혔습니다.||출처: 일간스포츠 · 텐아시아 · 연합뉴스\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 2026.10.14 · 빅나티 · 하이어뮤직\n소스: \n소제목: 결혼 발표\n본문: 빅나티는 팬들과 소통하는 메시지방에서 먼저 소식을 전했습니다.||**'밴쿠버'와 '밴쿠버 2'** 등 많은 노래 속 그 친구와 평생 함께하기로 했다는 이야기였는데요, 소속사 하이어뮤직은 두 사람이 이미 **혼인신고**를 마쳤다고 밝혔습니다.||출처: 위키트리 · 연합뉴스 · TV리포트\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 2026 · 유튜브\n소스: \n소제목: 'Vancouver 3 (찐막)'\n본문: 결혼 소식과 함께 빅나티는 유튜브에 **'Vancouver 3 (찐막)'**을 올렸습니다.||영상은 차 안에서 반지를 건네는 프러포즈로 시작해 두 사람의 추억으로 이어집니다. 설명 칸에는 이렇게 적혀 있습니다. **2011, First met. 2026, Married.**||지금은 사회복무요원으로 복무 중인 그는 복무를 마치고 더 성숙한 모습으로 돌아오겠다고 전했습니다.||출처: BIG Naughty (서동현) 유튜브 · 위키트리 · 보그 코리아\n출처:\n",
+    "caption": "빅나티(@bignaughtyboi)의 '밴쿠버'는 세 곡이 되어서야 끝났습니다.\n\n2022년 EP [낭만]에 실린 'Vancouver'는 초등학생 때부터 좋아해 온 한 사람을 향한 노래였는데요, 이듬해 'Vancouver 2'로 이어진 그 이야기의 주인공과 빅나티가 평생을 함께하기로 했습니다. 소속사 하이어뮤직(@h1ghrmusic)은 두 사람이 이미 혼인신고를 마쳤다고 밝혔습니다.\n\n결혼 소식과 함께 올라온 곡의 제목은 'Vancouver 3 (찐막)'입니다. 영상 설명에는 \"2011, First met. 2026, Married.\"라고 적혀 있습니다.\n\n짝사랑의 노래로 시작한 시리즈가 '찐막'이라는 이름으로 마침표를 찍은 셈입니다. 두 사람의 앞날에 축하를 보냅니다.\n\n#PLOT #빅나티 #서동현 #밴쿠버 #Vancouver3 #하이어뮤직",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911399/kid25llhyahwmruzxzrb.jpg",
+      "credit": "@bignaughtyboi",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/847536376_18377829409237588_4054496295142825092_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=K18gX48o24wQ7kNvwEqXvRL&_nc_oc=AdoAghNlKHiMf7jM3419R8I9lRbD7P2-7IA7b9vVXUQzvVtZLZCYP-eUeyDDogyEF_U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=1RTx8OkLIPreROsgkIuHig&_nc_tpa=Q5bMBQIJL5xL5ZRgvRZh5LMS8h8Yv5MDXUdR7-ZJjoWRpA3EM5w-j4pPUt0tu-Ijlz4s59DmrzAgYG0Y6g&oh=00_AQPM2zjkdsaV4aN1PGhLX3A4tLSGkSdYGQBRndTrgC5uuA&oe=6AE356AD"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505172/kfjwelfsmeukt286tyys.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/820374001_18374673268237588_8718127128424098262_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzIifQ%3D%3D&_nc_ohc=gaJ5MFPvgL4Q7kNvwGO90PA&_nc_oc=AdqXsEY6LuKqYuz29vuaNsLa7dKU4DdXmhe7p_fxHE2klwzxs2q4VaheLVUsPtaUYYY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&_nc_tpa=Q5bMBQJmWrW-XF_-LYDK3NW-Aa0-3LRYKxwdEMM2lfCU7UQ6hZjxjglgTZRzaU7YbcDpV2OG4MQ_-2tqHw&oh=00_AQNs8qyh7SFZQB5PrBlax3OevR3NXBKoDJCAS9orVzDD3g&oe=6ADD3666"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249253/ikl2w7eloggoz6n1iqvz.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/785214192_18370436344237588_4564755687040392790_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YMlZ26lDEMEQ7kNvwHfFhxQ&_nc_oc=Adr0lumZlfL2myNBETOYT6z8m2t7ljwVg4DahBTwHwyMjL94qLifl2j4corg6Wgqgr8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQO_KWzKzUOahy3ZbMFHN8hqhmK72NWFBkrRflPfJnPgdw&oe=6AD96C77"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505013/uzsgfucz59zm5usqn77i.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/787769306_18370436377237588_6207971193868739720_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=17K0LIcOORcQ7kNvwG2fBVe&_nc_oc=AdqM4QefOjNL-8hcd5iwYBNvZO4nIFIufM9e6G3IeM7a0MWwV1YGAc9rT01JUqlNnuY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&oh=00_AQPM-dzZWdST8pdk8GEE4p5-ucEdNCF4GBt35E0kENIHPA&oe=6ADD46DE"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505026/xoxicij3sm1lefqg1v5m.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/787574245_18370436491237588_4566522076660021248_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=B4LFpADrTnUQ7kNvwHsY-mk&_nc_oc=AdoxGBmmf-ykj_GSROoKDVJxMO9X6zfIJxB4hXzCkzRuqcF-GF0VRAt6EawC8vrgOl0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&oh=00_AQPoqdDcHtbXO_ssbysoTsvdSAPpYYjp48M1jEh4tLBKwA&oe=6ADD54D0"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505030/kghwmgnsf2gzuv7a29e9.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/788284517_18370436482237588_3281215684452336257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=c6KEs9Z370AQ7kNvwG2kklT&_nc_oc=AdpAzGkmXmzrCk5TxCQTYcFyTSOOCfom6H41GTq4fxArX6ECK-VNkjJ_jpimNqM6J3s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&oh=00_AQMKApjRu5mhY5gNsH2ZdlmvEEBdCYjJMG0_1VTs_MWOmA&oe=6ADD3C11"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249256/h1not4wxrktsuyisilie.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/762166831_18366200542237588_9029233572139073984_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bd69mVy-GVkQ7kNvwH3VdH0&_nc_oc=Adp0-oxtWjsNNA3IgmoOsaqaTxNydVll27y9s8rjykypQfOlxRaaOE-MnTSiZcOWuAE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQOTmg8fMKlU3NA0tl8ZnAS8VsQxEkOoyNmFcOLZjjV9nQ&oe=6AD94CFA"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249259/y6vz4epcuffo8rckgnct.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/755033947_18365155111237588_8393964227859307898_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XrbT0W4pjNoQ7kNvwGTfBFa&_nc_oc=AdqOJhQsdqWt-bVttjlLyfuvhDixVrxO1IYcbKKjUAo4aSpudZB6oDKQlsQeNtHoPTE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQMGrLKFEbcLnp-j1jX7WK135BfKVMcpifctRr6lTpIHtA&oe=6AD9647F"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249263/dsxz4ummecxvuup7aewi.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/752648795_18364730500237588_1785933622969048996_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=7jUaW5q3UdkQ7kNvwE_h9tb&_nc_oc=AdrAAEHUbZnelx1YczCzLSQ6JOobxk0qMuRCWiSvjQ5a7VmYYl3c6twBSepacEDjEeI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQNI6ZWwyVYJbE8IbdfbPUWHxM_pfftdjbvuuHLt3zs1bQ&oe=6AD966D1"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911399/kid25llhyahwmruzxzrb.jpg",
+      "credit": "@bignaughtyboi",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/847536376_18377829409237588_4054496295142825092_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=K18gX48o24wQ7kNvwEqXvRL&_nc_oc=AdoAghNlKHiMf7jM3419R8I9lRbD7P2-7IA7b9vVXUQzvVtZLZCYP-eUeyDDogyEF_U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=1RTx8OkLIPreROsgkIuHig&_nc_tpa=Q5bMBQIJL5xL5ZRgvRZh5LMS8h8Yv5MDXUdR7-ZJjoWRpA3EM5w-j4pPUt0tu-Ijlz4s59DmrzAgYG0Y6g&oh=00_AQPM2zjkdsaV4aN1PGhLX3A4tLSGkSdYGQBRndTrgC5uuA&oe=6AE356AD"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505172/kfjwelfsmeukt286tyys.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/820374001_18374673268237588_8718127128424098262_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzIifQ%3D%3D&_nc_ohc=gaJ5MFPvgL4Q7kNvwGO90PA&_nc_oc=AdqXsEY6LuKqYuz29vuaNsLa7dKU4DdXmhe7p_fxHE2klwzxs2q4VaheLVUsPtaUYYY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&_nc_tpa=Q5bMBQJmWrW-XF_-LYDK3NW-Aa0-3LRYKxwdEMM2lfCU7UQ6hZjxjglgTZRzaU7YbcDpV2OG4MQ_-2tqHw&oh=00_AQNs8qyh7SFZQB5PrBlax3OevR3NXBKoDJCAS9orVzDD3g&oe=6ADD3666"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249253/ikl2w7eloggoz6n1iqvz.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/785214192_18370436344237588_4564755687040392790_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YMlZ26lDEMEQ7kNvwHfFhxQ&_nc_oc=Adr0lumZlfL2myNBETOYT6z8m2t7ljwVg4DahBTwHwyMjL94qLifl2j4corg6Wgqgr8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQO_KWzKzUOahy3ZbMFHN8hqhmK72NWFBkrRflPfJnPgdw&oe=6AD96C77"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505013/uzsgfucz59zm5usqn77i.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/787769306_18370436377237588_6207971193868739720_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=17K0LIcOORcQ7kNvwG2fBVe&_nc_oc=AdqM4QefOjNL-8hcd5iwYBNvZO4nIFIufM9e6G3IeM7a0MWwV1YGAc9rT01JUqlNnuY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&oh=00_AQPM-dzZWdST8pdk8GEE4p5-ucEdNCF4GBt35E0kENIHPA&oe=6ADD46DE"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505026/xoxicij3sm1lefqg1v5m.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/787574245_18370436491237588_4566522076660021248_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=B4LFpADrTnUQ7kNvwHsY-mk&_nc_oc=AdoxGBmmf-ykj_GSROoKDVJxMO9X6zfIJxB4hXzCkzRuqcF-GF0VRAt6EawC8vrgOl0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&oh=00_AQPoqdDcHtbXO_ssbysoTsvdSAPpYYjp48M1jEh4tLBKwA&oe=6ADD54D0"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505030/kghwmgnsf2gzuv7a29e9.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/788284517_18370436482237588_3281215684452336257_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=c6KEs9Z370AQ7kNvwG2kklT&_nc_oc=AdpAzGkmXmzrCk5TxCQTYcFyTSOOCfom6H41GTq4fxArX6ECK-VNkjJ_jpimNqM6J3s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pjV0oFw7XxvijYtbEMrBAw&oh=00_AQMKApjRu5mhY5gNsH2ZdlmvEEBdCYjJMG0_1VTs_MWOmA&oe=6ADD3C11"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249256/h1not4wxrktsuyisilie.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/762166831_18366200542237588_9029233572139073984_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bd69mVy-GVkQ7kNvwH3VdH0&_nc_oc=Adp0-oxtWjsNNA3IgmoOsaqaTxNydVll27y9s8rjykypQfOlxRaaOE-MnTSiZcOWuAE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQOTmg8fMKlU3NA0tl8ZnAS8VsQxEkOoyNmFcOLZjjV9nQ&oe=6AD94CFA"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249259/y6vz4epcuffo8rckgnct.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/755033947_18365155111237588_8393964227859307898_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XrbT0W4pjNoQ7kNvwGTfBFa&_nc_oc=AdqOJhQsdqWt-bVttjlLyfuvhDixVrxO1IYcbKKjUAo4aSpudZB6oDKQlsQeNtHoPTE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQMGrLKFEbcLnp-j1jX7WK135BfKVMcpifctRr6lTpIHtA&oe=6AD9647F"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249263/dsxz4ummecxvuup7aewi.jpg",
+      "credit": "@bignaughtyboi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/752648795_18364730500237588_1785933622969048996_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=7jUaW5q3UdkQ7kNvwE_h9tb&_nc_oc=AdrAAEHUbZnelx1YczCzLSQ6JOobxk0qMuRCWiSvjQ5a7VmYYl3c6twBSepacEDjEeI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=AhckfbqNEJwpZdpF7MInSw&oh=00_AQNI6ZWwyVYJbE8IbdfbPUWHxM_pfftdjbvuuHLt3zs1bQ&oe=6AD966D1"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "짝사랑에서 결혼까지|빅나티 '밴쿠버' 서사",
+      "sub": "Vancouver 1·2·3으로 짚는 15년"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "9살에 만나 24살에 결혼|빅나티의 밴쿠버 세 곡",
+      "sub": "2011, First met. 2026, Married."
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "노래가 된 첫사랑|빅나티 밴쿠버 1·2·3",
+      "sub": "열애 서사 총정리"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — BIG Naughty (서동현) 본인 채널 · 영상과 표지에 비연예인 배우자 얼굴이 나오는지 보고 괜찮은 컷인지 고르기",
+     "PLOT 은 10/14·10/15 결혼 소식을 이미 두 번 냈다 — 이번은 곡 연표 각도라 첫 문장을 결혼이 아니라 '밴쿠버'로 열었음"
+    ],
+    "research": [
+     {
+      "title": "위키트리 — 9살에 처음 만나 24살에 결혼 (10/15)",
+      "link": "https://www.wikitree.co.kr/articles/1166309"
+     },
+     {
+      "title": "위키트리 — 빅나티가 간밤에 올린 영상 1개 (10/15)",
+      "link": "https://www.wikitree.co.kr/articles/1166319"
+     },
+     {
+      "title": "TV리포트 — 빅나티 15년 인연 (10/18)",
+      "link": "https://tvreport.co.kr/entertainment/article/1083914/"
+     },
+     {
+      "title": "연합뉴스(supple) — 빅나티, 어린 시절 짝사랑과 결혼 (10/14)",
+      "link": "https://supple.kr/news/cmv86kleu000mdhn5d7qw4hir"
+     },
+     {
+      "title": "보그 코리아 — 로맨틱한 러브 스토리의 주인공, 빅나티 (10/15)",
+      "link": "https://www.vogue.co.kr/2026/10/15/%eb%a1%9c%eb%a7%a8%ed%8b%b1%ed%95%9c-%eb%9f%ac%eb%b8%8c-%ec%8a%a4%ed%86%a0%eb%a6%ac%ec%9d%98-%ec%a3%bc%ec%9d%b8%ea%b3%b5-%eb%b9%85%eb%82%98%ed%8b%b0/"
+     },
+     {
+      "title": "일간스포츠 — 빅나티 'Vancouver 2' 발매 (2023/9/19)",
+      "link": "https://isplus.com/article/view/isp202309190223"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911403/embktcjazr9e9wluphgp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911403/zqiislrbo3jdbailemlg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911403/vwvzplie49e8skphqvvg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911403/qjoxcxt4y6dxjozbr7ws.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911404/m98lrcnitvx5gvqaswpz.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911404/jodmc5sslj2iqhz7cryk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911404/osmsmaambrbpsqoleynn.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911406/dxlc3qpvdbakhfmgjqu3.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911406/kljvuedsqqzwyq2tqyg6.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911403/embktcjazr9e9wluphgp.jpg"
+     },
+     "at": "2026-10-25T15:56+09:00",
+     "v": {
+      "A": "0fe60e22",
+      "B": "007de918",
+      "C": "5788ef5d"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=9LJn-arv0kk\n구간: 0:00-0:45\n곡: 빅나티가 내민 반지\n아티스트: 9살에 만난 친구에게\n피처링:\n후킹: 나랑 결혼해 줄래\n출처: BIG Naughty (서동현)\n자막: 자동",
+    "caption": "빅나티(@bignaughtyboi)가 차 안에서 반지를 내밀며 물었습니다. \"Would Ju marry me?!\"\n\n빅나티가 결혼 소식과 함께 유튜브에 올린 'Vancouver 3 (찐막)' 영상의 첫 장면인데요, 2022년 'Vancouver'와 2023년 'Vancouver 2'에 담긴 짝사랑의 주인공이 바로 이 영상 속 그 사람입니다. 소속사 하이어뮤직(@h1ghrmusic)은 두 사람이 이미 혼인신고를 마쳤다고 밝혔습니다.\n\n영상 설명에는 이렇게 적혀 있습니다. \"2011, First met. 2026, Married.\" 9살의 짝사랑이 세 번째 '밴쿠버'로 마침표를 찍었습니다. 축하를 보냅니다.\n\n#PLOT #빅나티 #서동현 #밴쿠버 #Vancouver3",
+    "hooks": {
+     "A": "나랑 결혼해 줄래 / 9살에 만난 친구에게 / 빅나티가 내민 반지",
+     "B": "9살에 처음 만나 / 24살에 결혼한 / 빅나티의 밴쿠버",
+     "C": "짝사랑으로 시작한 / 밴쿠버 시리즈의 / 마지막 곡 '찐막'"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=9LJn-arv0kk",
+     "credit": "BIG Naughty (서동현)",
+     "range": [
+      0.0,
+      45.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — BIG Naughty (서동현) 본인 채널 · 영상과 표지에 비연예인 배우자 얼굴이 나오는지 보고 괜찮은 컷인지 고르기",
+     "PLOT 은 10/14·10/15 결혼 소식을 이미 두 번 냈다 — 이번은 곡 연표 각도라 첫 문장을 결혼이 아니라 '밴쿠버'로 열었음"
+    ],
+    "research": [
+     {
+      "title": "위키트리 — 9살에 처음 만나 24살에 결혼 (10/15)",
+      "link": "https://www.wikitree.co.kr/articles/1166309"
+     },
+     {
+      "title": "위키트리 — 빅나티가 간밤에 올린 영상 1개 (10/15)",
+      "link": "https://www.wikitree.co.kr/articles/1166319"
+     },
+     {
+      "title": "TV리포트 — 빅나티 15년 인연 (10/18)",
+      "link": "https://tvreport.co.kr/entertainment/article/1083914/"
+     },
+     {
+      "title": "연합뉴스(supple) — 빅나티, 어린 시절 짝사랑과 결혼 (10/14)",
+      "link": "https://supple.kr/news/cmv86kleu000mdhn5d7qw4hir"
+     },
+     {
+      "title": "보그 코리아 — 로맨틱한 러브 스토리의 주인공, 빅나티 (10/15)",
+      "link": "https://www.vogue.co.kr/2026/10/15/%eb%a1%9c%eb%a7%a8%ed%8b%b1%ed%95%9c-%eb%9f%ac%eb%b8%8c-%ec%8a%a4%ed%86%a0%eb%a6%ac%ec%9d%98-%ec%a3%bc%ec%9d%b8%ea%b3%b5-%eb%b9%85%eb%82%98%ed%8b%b0/"
+     },
+     {
+      "title": "일간스포츠 — 빅나티 'Vancouver 2' 발매 (2023/9/19)",
+      "link": "https://isplus.com/article/view/isp202309190223"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/9LJn-arv0kk/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911410/nicuolzoxx0c67haefvc.jpg",
+     "key": "9LJn-arv0kk@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-25T15:57+09:00"
+    }
+   },
+   "corner_name": "후속"
   }
  ],
  "skipped": [],
@@ -1366,7 +1661,7 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 2,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -1418,7 +1713,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T15:49+09:00"
+  "at": "2026-10-25T15:57+09:00"
  },
  "slots": {
   "basis": 228,
