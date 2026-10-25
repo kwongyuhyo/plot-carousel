@@ -3378,7 +3378,7 @@
    },
    "corner_name": "후속",
    "scheduled": {
-    "at": "2026-10-26T19:30+09:00",
+    "at": "2026-10-26T16:30+09:00",
     "cover": "A"
    }
   },
@@ -3539,7 +3539,11 @@
     }
    },
    "corner_name": "이번 주 나온 앨범",
-   "corner_no": 1
+   "corner_no": 1,
+   "scheduled": {
+    "at": "2026-10-26T15:30+09:00",
+    "cover": "A"
+   }
   },
   {
    "source": {
@@ -4327,7 +4331,11 @@
      }
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "scheduled": {
+    "at": "2026-10-26T08:00+09:00",
+    "cover": "B"
+   }
   },
   {
    "source": {
@@ -4466,7 +4474,11 @@
      }
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "scheduled": {
+    "at": "2026-10-26T08:30+09:00",
+    "cover": "A"
+   }
   },
   {
    "source": {
@@ -4581,6 +4593,168 @@
    },
    "corner_name": "이번 주 나온 앨범",
    "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:ord-54c1fbfd",
+    "account": "@규효 공유 · @m1n_ten",
+    "url": "https://www.instagram.com/p/DeLnwb5j5LT/?srtk=MXZwMzh4NmoxNjUy",
+    "image": null,
+    "head": "드릴 대신 레이지·하이퍼팝을 고른 플리키뱅 [ANTI], 리드머 1.5점으로 갈린 평가",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T06:05+09:00",
+   "key": "0b1dae5d",
+   "by": "claude",
+   "subjects": [
+    "플리키뱅"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "드릴을 내려놓은 플리키뱅의 정규 4집 [ANTI], 리드머 1.5점으로 호불호가 다시 불붙었다",
+    "why": "리드머 리뷰 캡처에 '올해의 앨범이야'를 붙인 게시물이 돌며 [ANTI] 평가가 화제 — 국힙 도달 소재, 장르 변신이라는 해부 각도가 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T06:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n플리키뱅(@fleekybang)의 정규 4집 [ANTI]가 리드머에서 별점 1.5점을 받았습니다.\n\n[ANTI]는 그동안 드릴 위에서 랩을 하던 플리키뱅이 레이지·하이퍼팝·디지코어 쪽으로 방향을 튼 앨범인데요, 15곡을 29분 남짓에 담았고 씨스타의 'Touch My Body'를 샘플링한 'Touch My Body (2027)'도 들어 있습니다.\n\n리드머는 최근 유행한 장르를 한데 모은 시도를 짚으면서도 그 변화가 성공적이었는지에는 물음표를 남겼고, 리뷰 캡처가 온라인에서 돌며 앨범을 둘러싼 호불호가 다시 불붙었습니다.\n\n드릴을 내려놓은 선택에 붙은 첫 점수가 1.5점, 이 앨범의 평가는 이제 시작입니다.\n\n#PLOT #플리키뱅 #ANTI #리드머 #국힙\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792962326/mdafhxigajgicg6jaryc.jpg\n제목: 드릴 내려놓은 플리키뱅,|리드머 별점은 1.5점\n부제: 정규 4집 [ANTI]를 두고 갈린 평가\n출처: @fleekybang\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792269391/xllvvk6ukfre5gh48lp9.jpg\n소제목: 드릴 대신 고른 소리\n본문: [ANTI]는 9월 22일 나온 플리키뱅의 정규 4집입니다. 드릴 위에서 랩을 하던 이전 앨범들과 달리 레이지·하이퍼팝·디지코어를 바탕으로 오토튠 싱잉 랩을 택했고, 15곡을 29분 남짓에 담았습니다. 씨스타의 'Touch My Body'를 샘플링한 'Touch My Body (2027)'도 이 앨범에 있습니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792269369/qz9wsl57zwwhrurap6q5.jpg\n소제목: 리드머가 짚은 것\n본문: 리드머는 하드 테크노·레이지·크렁크·디지코어까지 최근 유행한 장르를 한데 모은 시도를 짚으면서도, 짧은 러닝타임 안에서 곡마다 완성도가 받쳐주지 못하면 산만하게 들릴 수 있다고 봤습니다. 결론은 그 변화가 성공적이었는지에 대한 물음표였습니다.\n출처: @fleekybang\n",
+    "caption": "플리키뱅(@fleekybang)의 정규 4집 [ANTI]가 리드머에서 별점 1.5점을 받았습니다.\n\n[ANTI]는 그동안 드릴 위에서 랩을 하던 플리키뱅이 레이지·하이퍼팝·디지코어 쪽으로 방향을 튼 앨범인데요, 15곡을 29분 남짓에 담았고 씨스타의 'Touch My Body'를 샘플링한 'Touch My Body (2027)'도 들어 있습니다.\n\n리드머는 최근 유행한 장르를 한데 모은 시도를 짚으면서도 그 변화가 성공적이었는지에는 물음표를 남겼고, 리뷰 캡처가 온라인에서 돌며 앨범을 둘러싼 호불호가 다시 불붙었습니다.\n\n드릴을 내려놓은 선택에 붙은 첫 점수가 1.5점, 이 앨범의 평가는 이제 시작입니다.\n\n#PLOT #플리키뱅 #ANTI #리드머 #국힙",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962326/mdafhxigajgicg6jaryc.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269373/edkvzwjpubhlelylebgr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962328/csxwuz0bmwzxltedbxhc.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269391/xllvvk6ukfre5gh48lp9.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962330/lp7di51kvblj8rlcosv7.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269369/qz9wsl57zwwhrurap6q5.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962333/d3xwnemwhn3cpxvzcbt8.jpg",
+      "credit": "DAZED",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269376/i1nmed2yieg5vff5h1zh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962335/hh0m8slnet7xhfx2bff0.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792582469/eemp8kszsgpj5mofnkjl.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962338/rups0nyjtf5boqgdmzdz.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792582487/ivlmnbnbfoveh0iweg7v.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962326/mdafhxigajgicg6jaryc.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269373/edkvzwjpubhlelylebgr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962328/csxwuz0bmwzxltedbxhc.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269391/xllvvk6ukfre5gh48lp9.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962330/lp7di51kvblj8rlcosv7.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269369/qz9wsl57zwwhrurap6q5.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962333/d3xwnemwhn3cpxvzcbt8.jpg",
+      "credit": "DAZED",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792269376/i1nmed2yieg5vff5h1zh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962335/hh0m8slnet7xhfx2bff0.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792582469/eemp8kszsgpj5mofnkjl.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962338/rups0nyjtf5boqgdmzdz.jpg",
+      "credit": "@fleekybang",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792582487/ivlmnbnbfoveh0iweg7v.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "드릴 내려놓은 플리키뱅,|리드머 별점은 1.5점",
+      "sub": "정규 4집 [ANTI]를 두고 갈린 평가"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "플리키뱅, 드릴 대신|하이퍼팝을 골랐다",
+      "sub": "정규 4집 [ANTI] · 리드머 1.5점"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "올해의 앨범?|플리키뱅 [ANTI] 1.5점",
+      "sub": "리드머 리뷰가 불붙인 호불호"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 리드머 원문은 인증서 문제로 검증 데스크도 못 열었다 — 검색 요약으로 리뷰 요지(하드 테크노·레이지·크렁크·디지코어, 30분 남짓 러닝타임에 산만할 수 있음, 변화 성공은 의문)는 맞췄으나 직접 인용 문장은 원문 대조가 안 돼 따옴표를 풀어 바꿔 썼다. 별점 1.5점도 나무위키·캡처로만 확인. 표지는 DAZED 로고가 찍힌 화보 대신 @fleekybang 사진으로 바꿨다. 2장 앨범 커버(멜론) 사진이 저해상도라 흐리다 — 고화질로 바꿀지 볼 것",
+     "리드머 별점 1.5점 — 나무위키와 공유 게시물 캡처 기준. 리드머 원문(인증서 문제로 직접 못 열었다)에서 점수 한 번 확인",
+     "숏폼은 비웠다 — 누가 한 말·장면이 있는 영상 소재가 아니고, '올해의 앨범이야'를 누가 했는지 확인 못 해 쓰지 않았다"
+    ],
+    "research": [
+     {
+      "title": "리드머 [국내 리뷰] 플리키 뱅 - ANTI",
+      "link": "http://m.rhythmer.net/src/magazine/review/view.php?n=21594"
+     },
+     {
+      "title": "나무위키 — ANTI(플리키뱅)",
+      "link": "https://namu.wiki/w/ANTI(%ED%94%8C%EB%A6%AC%ED%82%A4%EB%B1%85)"
+     },
+     {
+      "title": "Apple Music — ANTI · Fleeky Bang",
+      "link": "https://music.apple.com/us/album/anti/6813435423"
+     },
+     {
+      "title": "나무위키 — Fleeky Bang/디스코그래피",
+      "link": "https://namu.wiki/w/Fleeky%20Bang/%EB%94%94%EC%8A%A4%EC%BD%94%EA%B7%B8%EB%9E%98%ED%94%BC"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/grbnnmfoyrakphzftglv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/er672gjir6c4t9kcdx5b.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/hk7bjvtpfqs4ulfvkpf1.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/norzjiphnbeourcodnqn.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962343/wqdteabknokkxbhyks8l.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962343/idy858zxinqp0f4xhchy.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/grbnnmfoyrakphzftglv.jpg"
+     },
+     "at": "2026-10-26T06:05+09:00",
+     "v": {
+      "A": "24cbd2bd",
+      "B": "d3efc965",
+      "C": "c858fb86"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -4743,11 +4917,11 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 11,
+    "drafts": 12,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T05:18+09:00"
+  "at": "2026-10-26T06:05+09:00"
  },
  "slots": {
   "basis": 237,
