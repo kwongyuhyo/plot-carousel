@@ -2184,7 +2184,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         return '<div class="yr' + (seen[x.url] ? '' : ' new') + '"><div class="yt">' + (x.kind === 'layer' ? '🧾 ' : '🎬 ') + esc(x.label || '') + '</div>' +
           '<div class="ys">' + esc(String(x.at || '').slice(5, 16).replace('T', ' ')) + (x.kind === 'layer' ? ' · 정보 레이어(.mov)' : '') + '</div>' +
           '<div class="bt"><a class="act" data-rndseen="' + esc(x.url) + '" href="' + escU(x.url) + '" target="_blank" rel="noopener">▶ 보기</a>' +
-          '<a class="act" data-rndseen="' + esc(x.url) + '" href="' + escU(dl) + '">⬇ 저장</a></div></div>';
+          '<a class="act" data-rndsave="' + esc(x.url) + '" data-rndlab="' + esc(x.label || '') + '" href="' + escU(dl) + '">⬇ 저장</a></div></div>';
       }).join('') + (rows.length > 3 ? '<button class="more" data-rndmore>' + (RND_OPEN ? '접기' : '모두 보기 (' + rows.length + ')') + '</button>' : '') + '</div>';
   }
   var ALR = null;
@@ -3493,6 +3493,27 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       });
     });
   }
+  /* 10/25 규효 "아이폰에서 사진앱으로 안 가는데?" — 링크로 받으면 아이폰은 「파일」 앱에 넣는다.
+     영상을 먼저 받아 두고, 준비되면 한 번 더 눌러 공유 창 → 「동영상 저장」(사진 앱). 안드로이드·컴퓨터는 그대로 링크 받기. */
+  function saveRnd(url, label) {
+    var ios = /iPhone|iPad/i.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+    if (!ios) return false;
+    var mov = /\.mov(\?|$)/i.test(url);
+    var name = 'plot_' + String(label || 'video').replace(/[\\/:*?"<>|\s]+/g, '_').slice(0, 30) + (mov ? '.mov' : '.mp4');
+    toast('영상을 받는 중입니다 — 다 받으면 저장 버튼이 뜹니다');
+    fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.blob(); }).then(function (b) {
+      var f = new File([b], name, { type: mov ? 'video/quicktime' : 'video/mp4' });
+      if (!(navigator.canShare && navigator.canShare({ files: [f] }))) throw new Error('share');
+      sheetOf('영상이 준비됐습니다 (' + Math.round(b.size / 1e5) / 10 + 'MB)', [['sv', '사진 앱에 저장', '공유 창에서 「동영상 저장」을 고르세요 — 인스타로 바로 보내도 됩니다'], ['x', '닫기', '']], function (a) {
+        if (a === 'sv') navigator.share({ files: [f] }).catch(function () {});
+      });
+    }).catch(function () {
+      sheetOf('영상을 바로 받지 못했습니다', [['op', '영상 열기', '열린 화면에서 공유 버튼 → 「동영상 저장」'], ['x', '닫기', '']], function (a) {
+        if (a === 'op') window.open(safeUrl(url), '_blank');
+      });
+    });
+    return true;
+  }
   function saveSlides(it) {
     var sl = slidesOf(it);
     if (!sl.length) { toast('아직 미리보기 이미지가 없습니다 — 캐러셀 스튜디오에서 열어 주세요'); return; }
@@ -3966,6 +3987,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (inp && e.key === 'Enter' && !e.isComposing) { e.preventDefault(); evComment((DR.items || [])[Number(inp.getAttribute('data-evci'))], inp.value); }
   });
   document.getElementById('viewDraft').addEventListener('click', function (e) {
+    var rv = e.target.closest('[data-rndsave]');
+    if (rv) {
+      var ru = rv.getAttribute('data-rndsave');
+      try { var sm0 = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; sm0[ru] = Date.now(); localStorage.setItem('plot.rndseen', JSON.stringify(sm0)); } catch (x) {}
+      if (saveRnd(ru, rv.getAttribute('data-rndlab'))) e.preventDefault();
+      setTimeout(renderDrafts, 300); return;
+    }
     var rs = e.target.closest('[data-rndseen]');
     if (rs) { try { var sm = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; sm[rs.getAttribute('data-rndseen')] = Date.now(); localStorage.setItem('plot.rndseen', JSON.stringify(sm)); } catch (x) {} setTimeout(renderDrafts, 300); return; }
     if (e.target.closest('[data-rndmore]')) { RND_OPEN = !RND_OPEN; renderDrafts(); return; }
@@ -4094,9 +4122,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.25 16:31';
+    a.title = '판 10.25 16:36';
     var ver = document.createElement('span');
-    ver.textContent = '10.25 16:31';
+    ver.textContent = '10.25 16:36';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
