@@ -2133,8 +2133,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!cv) return form;
     var done = { t: false, s: false };
     return form.split('\n').map(function (l) {
-      if (!done.t && /^제목\s*:/.test(l)) { done.t = true; return '제목: ' + drLit(cv.title); }
-      if (!done.s && /^부제\s*:/.test(l)) { done.s = true; return '부제: ' + drLit(cv.sub); }
+      // 표지 안의 '|' 는 줄바꿈 표시 (claude_drafts covers) — 글자 '|' 로 막지 않는다 (10/26 규효 "줄바꿈 제대로 안 된다")
+      if (!done.t && /^제목\s*:/.test(l)) { done.t = true; return '제목: ' + drLit(String(cv.title || '').replace(/\|/g, '\n')); }
+      if (!done.s && /^부제\s*:/.test(l)) { done.s = true; return '부제: ' + drLit(String(cv.sub || '').replace(/\|/g, '\n')); }
       return l;
     }).join('\n');
   }
@@ -4139,9 +4140,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.26 03:47';
+    a.title = '판 10.26 04:11';
     var ver = document.createElement('span');
-    ver.textContent = '10.26 03:47';
+    ver.textContent = '10.26 04:11';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
