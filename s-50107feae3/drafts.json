@@ -1194,6 +1194,88 @@
    },
    "corner_name": "나무위키 털기",
    "corner_no": 24
+  },
+  {
+   "source": {
+    "id": "claude:ord-14f899e1",
+    "account": "@규효 공유 · @yabai.iiiiii",
+    "url": "https://www.instagram.com/p/De0mwi8khDu/?rpxt=aHc3emltejI1enF3",
+    "image": null,
+    "head": "쌔끈보이즈 엠카 데뷔 무대, 일본에서 '친구가 4개월 사귄 전남친' 같다며 뒤늦게 화제",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-25T15:48+09:00",
+   "key": "4f43941a",
+   "by": "claude",
+   "subjects": [
+    "박재범",
+    "넉살",
+    "로꼬"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "5년 전 쌔끈보이즈 엠카 데뷔 무대가 일본 SNS에서 '친구가 4개월 사귄 전남친' 같다는 별명을 얻으며 다시 돌고 있다",
+    "why": "국힙 네 사람의 웃자고 만든 데뷔 무대가 해외 밈으로 되살아남 — 무대 영상이 핵심이라 숏폼"
+   },
+   "added": "claude",
+   "added_at": "2026-10-25T15:48+09:00",
+   "corner": "spotlight",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=L8hrfxz3-eQ\n구간: 0:15-0:45\n곡: 이 네 사람\n아티스트: 전남친 같다는\n피처링:\n후킹: 친구가 4개월 사귄\n출처: Mnet K-POP\n자막: 자동",
+    "caption": "쌔끈보이즈가 일본에서 '친구가 4개월 사귄 전남친' 같다는 말을 듣고 있습니다.\n\n박재범(@moresojuplease), 넉살, 로꼬(@satgotloco), 던밀스가 2021년 6월 3일 Mnet 〈엠카운트다운〉에서 선보인 데뷔 무대 영상이 일본 SNS에서 뒤늦게 돌고 있는데요, 한 일본 누리꾼이 영상 속 네 사람에게 붙인 이 한 줄이 화제가 된 것으로 알려졌습니다.\n\n쌔끈보이즈는 딩고 프리스타일의 오리지널 콘텐츠에서 시작된 그룹으로, 던밀스와 넉살이 박재범과 일일 계약을 맺은 뒤 로꼬가 합류해 넷이 됐습니다. 이날 부른 곡은 데뷔곡 '궁금해'입니다.\n\n5년 전 부캐로 데뷔한 그룹이 바다 건너에서 새 별명을 얻은 셈입니다.\n\n#PLOT #쌔끈보이즈 #박재범 #넉살 #로꼬 #던밀스",
+    "hooks": {
+     "A": "친구가 4개월 사귄 / 전남친 같다는 / 이 네 사람",
+     "B": "쌔끈보이즈 데뷔 무대 / 5년 만에 일본에서 / 다시 돌고 있다",
+     "C": "박재범 넉살 로꼬 던밀스 / 일본 SNS가 붙인 / 새 별명"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=L8hrfxz3-eQ",
+     "credit": "Mnet K-POP",
+     "range": [
+      15.0,
+      45.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 맡긴 인스타 게시물은 로그인 벽으로 열리지 않아 '한 일본 누리꾼이 붙인 말·화제' 부분은 원문 대조 못 함 — 게시물 기준으로만 남김 (답글이 이어졌다는 문장·'농담에 가깝다'는 속뜻 해석은 뺌). 무대 영상에 자막이 없어 0:15-0:45 구간 화면 확인 필요",
+     "클립 위험: 높음 — Mnet K-POP (30초로 잡음). 원본에 자막이 없어 0:15-0:45 는 네 사람이 다 잡히는 구간인지 눈으로 확인 필요",
+     "일본 원글(누리꾼 게시물)은 직접 찾지 못했습니다 — 맡긴 게시물 기준으로 '~로 알려졌다' 로 낮춰 썼고, 확산 수치(140만)는 뺐습니다"
+    ],
+    "research": [
+     {
+      "title": "[SGBOYZ - ? (Prod.GRAY)] Hot Debut Stage | 엠카운트다운 | Mnet 210603 방송 (Mnet K-POP)",
+      "link": "https://www.youtube.com/watch?v=L8hrfxz3-eQ"
+     },
+     {
+      "title": "[MPD직캠] 쌔끈보이즈 직캠 4K '궁금해 (Prod. GRAY)' @MCOUNTDOWN_2021.6.3 (M2)",
+      "link": "https://www.youtube.com/watch?v=MtYneJNoTb8"
+     },
+     {
+      "title": "GQ Korea — 힙합계에 부는 색다른 콜라보레이션 바람",
+      "link": "https://www.gqkorea.co.kr/?p=170187"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/L8hrfxz3-eQ/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792910937/ommquct5uubju4vikbk3.jpg",
+     "key": "L8hrfxz3-eQ@15.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-25T15:49+09:00"
+    }
+   },
+   "corner_name": "SPOTLIGHT",
+   "corner_no": 1
   }
  ],
  "skipped": [],
@@ -1248,7 +1330,7 @@
     "need_today": 2,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "해외 매체가 먼저 다룬 한국 아티스트 — 선점"
    },
    {
@@ -1336,7 +1418,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T15:08+09:00"
+  "at": "2026-10-25T15:49+09:00"
  },
  "slots": {
   "basis": 228,
