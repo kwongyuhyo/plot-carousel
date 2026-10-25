@@ -3376,7 +3376,11 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926684/mzoiqzl36i3lxzi8herr.jpg"
     }
    },
-   "corner_name": "후속"
+   "corner_name": "후속",
+   "scheduled": {
+    "at": "2026-10-26T19:30+09:00",
+    "cover": "A"
+   }
   },
   {
    "source": {
@@ -3724,6 +3728,190 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-e315c242",
+    "account": "@규효 공유 · @lemag.kr",
+    "url": "https://www.instagram.com/p/De6-Ph3GilW/?cplk=OGFqOXNvOHY3OGZz",
+    "image": null,
+    "head": "12년 만에 돌아온 '파급효과' — 선공개곡 뒤 아직 나오지 않은 [파급효과2]",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T03:32+09:00",
+   "key": "68069c6c",
+   "by": "claude",
+   "subjects": [
+    "스윙스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "2014 '파급효과'에서 2026 '파급효과2'로 — 선공개곡은 나왔고 앨범 전체는 아직",
+    "why": "연말을 앞두고 '아직 안 나온 올해의 힙합 앨범'이 매거진들 사이에서 돌고 있고, 그 맨 앞이 [파급효과2]"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T03:32+09:00",
+   "corner": "newalbums",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n저스트뮤직이 12년 만에 '파급효과'라는 이름을 다시 꺼냈습니다.\n\n2014년 6월 스윙스(@itsjustswings), 빌스택스(@trapdaddy.420), 씨잼이 함께 부른 '파급효과'는 저스트뮤직의 같은 이름 앨범 [파급효과]에 실린 곡인데요, 올해 7월 4일 공개된 '파급효과2'에서는 스윙스 곁에 율음(@yuleumhong), shinjihang, 그냥노창이 섰고 비트는 hyeminsong 이 만들었습니다.\n\n다만 7월에 나온 건 선공개곡 한 곡입니다. 2026년이 두 달 남은 지금, [파급효과2] 앨범 전체는 아직 공개되지 않았습니다.\n\n#PLOT #저스트뮤직 #파급효과2 #스윙스 #율음 #그냥노창\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792953169/y3fxcu7uzzghmqihooqc.jpg\n제목: 12년 만의 파급효과,|앨범은 아직입니다\n부제: 저스트뮤직 [파급효과2]\n출처: @itsjustswings\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792257295/hzl66dod425076qiu974.jpg\n소제목: 2014, 파급효과\n본문: 스윙스·빌스택스·씨잼이 함께 부른 '파급효과'. 저스트뮤직이 2014년 6월 같은 이름으로 낸 앨범 [파급효과]에 실린 곡입니다.\n출처: @itsjustswings\n\n[슬라이드]\n소스: https://i.ibb.co/45cm1kQ/43b3984d08a5.jpg\n소제목: 2026, 파급효과2\n본문: 올해 7월 4일 나온 '파급효과2'. 스윙스 곁에 율음·shinjihang·그냥노창이 섰고, hyeminsong 이 비트를 만들었습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792500868/lhbrtlxotsu3e7cxitkd.jpg\n소제목: 그리고 아직\n본문: 7월에 공개된 건 선공개곡 한 곡입니다. 2026년이 두 달 남은 지금, [파급효과2] 앨범 전체는 아직 나오지 않았습니다.\n출처: @itsjustswings\n",
+    "caption": "저스트뮤직이 12년 만에 '파급효과'라는 이름을 다시 꺼냈습니다.\n\n2014년 6월 스윙스(@itsjustswings), 빌스택스(@trapdaddy.420), 씨잼이 함께 부른 '파급효과'는 저스트뮤직의 같은 이름 앨범 [파급효과]에 실린 곡인데요, 올해 7월 4일 공개된 '파급효과2'에서는 스윙스 곁에 율음(@yuleumhong), shinjihang, 그냥노창이 섰고 비트는 hyeminsong 이 만들었습니다.\n\n다만 7월에 나온 건 선공개곡 한 곡입니다. 2026년이 두 달 남은 지금, [파급효과2] 앨범 전체는 아직 공개되지 않았습니다.\n\n#PLOT #저스트뮤직 #파급효과2 #스윙스 #율음 #그냥노창",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953169/y3fxcu7uzzghmqihooqc.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257290/pc38cnj1rvjcamxwnlsc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953171/baqshgqvaoouuqccwd2g.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500896/py1zzxbron48qsd6gcsj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953173/wdtkauhb6qxyrygd1z6r.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792347500/mtthp1siqb68twga0kiq.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953176/h2wjjjnu6yfxt7g6kll8.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500900/mgogfdrzt0jypdjqgo0t.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500890/dpfarjrnsfhivjtdflgh.jpg",
+      "credit": "@itsjustswings",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/846567933_18635828680049017_6966760911300938389_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hUM8HbcY57UQ7kNvwF7TMhW&_nc_oc=AdqrK-GLN6q8r3IQybODiEFsBamFGi25Gvy16auIoeCh5RNjQjnbSCACgFhNTf_GfHU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qH3xFifI8IGQNidTBBDLyw&oh=00_AQNrw4thjBXY0cCT_6iZRBlzVAyjJ4yBITThHpHIM96DQg&oe=6ADD3EE8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500896/py1zzxbron48qsd6gcsj.jpg",
+      "credit": "@itsjustswings",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/841645070_18633762070049017_1180394796985412920_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xYDRfsIMRPIQ7kNvwHkOKxv&_nc_oc=Adq1M-S92oZqgVlD0X0eGZI_j8e41VFRRbun7qRl_PBIoN3QKj9j6XQNDdCIJiyataw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qH3xFifI8IGQNidTBBDLyw&oh=00_AQMe4-8lQiilU5gHqRo5D7fWu3B9cqUD7r5T0sseAfu2Aw&oe=6ADD4631"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500900/mgogfdrzt0jypdjqgo0t.jpg",
+      "credit": "@itsjustswings",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/839010464_18633762088049017_1216263606408755091_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kHFrYuwOBUAQ7kNvwFboPmo&_nc_oc=AdrwlLUvvJdBew2JnGTcz9hl-7hzfdRfz__Y9lBjOsyEm6yPu5R-Gj9CvOIKlxP8Rb8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qH3xFifI8IGQNidTBBDLyw&oh=00_AQP8eOR_yLxPaiaojQRp7Zwp7W4iFHJon4viLiJ2PmP0jw&oe=6ADD4361"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953169/y3fxcu7uzzghmqihooqc.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257290/pc38cnj1rvjcamxwnlsc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953171/baqshgqvaoouuqccwd2g.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500896/py1zzxbron48qsd6gcsj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953173/wdtkauhb6qxyrygd1z6r.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792347500/mtthp1siqb68twga0kiq.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953176/h2wjjjnu6yfxt7g6kll8.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500900/mgogfdrzt0jypdjqgo0t.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500890/dpfarjrnsfhivjtdflgh.jpg",
+      "credit": "@itsjustswings",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/846567933_18635828680049017_6966760911300938389_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hUM8HbcY57UQ7kNvwF7TMhW&_nc_oc=AdqrK-GLN6q8r3IQybODiEFsBamFGi25Gvy16auIoeCh5RNjQjnbSCACgFhNTf_GfHU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qH3xFifI8IGQNidTBBDLyw&oh=00_AQNrw4thjBXY0cCT_6iZRBlzVAyjJ4yBITThHpHIM96DQg&oe=6ADD3EE8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500896/py1zzxbron48qsd6gcsj.jpg",
+      "credit": "@itsjustswings",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/841645070_18633762070049017_1180394796985412920_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xYDRfsIMRPIQ7kNvwHkOKxv&_nc_oc=Adq1M-S92oZqgVlD0X0eGZI_j8e41VFRRbun7qRl_PBIoN3QKj9j6XQNDdCIJiyataw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qH3xFifI8IGQNidTBBDLyw&oh=00_AQMe4-8lQiilU5gHqRo5D7fWu3B9cqUD7r5T0sseAfu2Aw&oe=6ADD4631"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500900/mgogfdrzt0jypdjqgo0t.jpg",
+      "credit": "@itsjustswings",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/839010464_18633762088049017_1216263606408755091_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kHFrYuwOBUAQ7kNvwFboPmo&_nc_oc=AdrwlLUvvJdBew2JnGTcz9hl-7hzfdRfz__Y9lBjOsyEm6yPu5R-Gj9CvOIKlxP8Rb8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qH3xFifI8IGQNidTBBDLyw&oh=00_AQP8eOR_yLxPaiaojQRp7Zwp7W4iFHJon4viLiJ2PmP0jw&oe=6ADD4361"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "12년 만의 파급효과,|앨범은 아직입니다",
+      "sub": "저스트뮤직 [파급효과2]"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "2014 파급효과에서|2026 파급효과2까지",
+      "sub": "저스트뮤직"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "스윙스와 저스트뮤직,|남은 두 달의 앨범",
+      "sub": "[파급효과2]"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] '선공개곡'·'앨범 전체 미발매'는 나무위키(컴필레이션 앨범의 선공개곡, 9/5 미공개 수록곡 라이브)와 맡기신 lemag 글에만 있고, 벅스는 '싱글'로만 표기 — 공식 발표·기사로 앨범 예정이 확인되는지 봐 주세요 · 2번 장 사진 credit 이 '신뢰'로 돼 있어 출처 확인 필요",
+     "lemag 글의 그루비룸 '9년 만의 정규' 등 다른 예고작은 원출처를 못 찾아 뺐습니다 — 저스트뮤직 한 건으로만 썼습니다",
+     "숏폼은 비웠습니다 — 말 장면이 아니라 7월 공개 MV뿐이라 지금 쓸 각도가 약합니다"
+    ],
+    "research": [
+     {
+      "title": "벅스 — 파급효과2 (Ripple Effect2) / 저스트뮤직 (2026.07.04 싱글·크레딧)",
+      "link": "https://music.bugs.co.kr/album/4150965"
+     },
+     {
+      "title": "나무위키 — 파급효과2 (Ripple Effect2)",
+      "link": "https://namu.wiki/w/%ED%8C%8C%EA%B8%89%ED%9A%A8%EA%B3%BC2%20(Ripple%20Effect2)"
+     },
+     {
+      "title": "위키백과 — 저스트뮤직의 음반 (파급효과 2014.06.13)",
+      "link": "https://ko.wikipedia.org/wiki/%EC%A0%80%EC%8A%A4%ED%8A%B8%EB%AE%A4%EC%A7%81%EC%9D%98_%EC%9D%8C%EB%B0%98"
+     },
+     {
+      "title": "벅스 — 파급효과 (Ripple Effect) / 스윙스, BILL STAX, C JAMM",
+      "link": "https://music.bugs.co.kr/track/3547291"
+     },
+     {
+      "title": "[Official Video] Just Music - 파급효과2 (Ripple Effect2) · AP Alchemy",
+      "link": "https://www.youtube.com/watch?v=olzR1p2FhzY"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/hqyevc6gsatb7caiii7j.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/sqj1bqw1tiketohp5g5h.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/nqq84ybvuw6xbp8gmrok.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/luczg48pkq2w39jr13ev.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953183/sr8j7nsfripicttihm2j.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953185/gooxrtwax9q8aomsrb8l.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953185/hqpkmzkqyv08pd48zvia.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/hqyevc6gsatb7caiii7j.jpg"
+     },
+     "at": "2026-10-26T03:33+09:00",
+     "v": {
+      "A": "6b84fd05",
+      "B": "2fde3e99",
+      "C": "b7e4df88"
+     }
+    }
+   },
+   "corner_name": "이번 주 나온 앨범",
+   "corner_no": 2
   }
  ],
  "skipped": [],
@@ -3862,7 +4050,7 @@
     "need_today": 0,
     "day": 4,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 2,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
    {
@@ -3890,7 +4078,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T02:56+09:00"
+  "at": "2026-10-26T03:32+09:00"
  },
  "slots": {
   "basis": 236,
