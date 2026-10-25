@@ -1853,6 +1853,121 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-d0a1427f",
+    "account": "@규효 요청 · 만나는 법",
+    "url": "",
+    "image": null,
+    "head": "자우림 연말연시 투어 발표 — 서울 예매 10/27부터, 남은 자리 정리",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-25T19:20+09:00",
+   "key": "56b70159",
+   "by": "claude",
+   "subjects": [
+    "자우림"
+   ],
+   "lane": "시리즈",
+   "editor": {
+    "grade": "A",
+    "kind": "시리즈",
+    "angle": "연말연시 전국 투어 'MIDNIGHT EXPRESS 2026-2027' 발표 — 올해 남은 자우림 공연을 한 장씩",
+    "why": "10/23 투어 발표, 서울 예매가 10/27 선예매로 코앞"
+   },
+   "added": "claude",
+   "added_at": "2026-10-25T19:20+09:00",
+   "corner": "meet",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n자우림이 연말연시 전국 투어 'MIDNIGHT EXPRESS 2026-2027'로 한 해의 끝과 다음 해의 시작을 잇습니다.\n\n12월 18~20일 서울 올림픽홀에서 출발해 25일 부산, 2027년 1월 2일 대전, 9일 대구로 이어지는데요, 그 전에 11월 19일 경기 광주에서도 한 번 무대에 오릅니다.\n\n서울 공연은 10월 27일 선예매, 부산·대전·대구는 11월 3일 선예매로 시작합니다. 저장해 두고 예매 날 꺼내 보세요.\n\n출처: 놀유니버스 발표 · NOL 티켓\n\n#PLOT #자우림 #김윤아 #미드나잇익스프레스 #자우림콘서트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792923651/k2j8sgcs9mcx0bulpdle.jpg\n제목: 2026년 자우림|만나는 법\n부제: 연말연시 투어까지, 남은 공연 한눈에\n출처: \n\n[슬라이드]\n소스: \n소제목: 단독 콘서트 「MIDNIGHT EXPRESS 2026-2027」 · 서울\n본문: 12월 18~20일, 사흘|올림픽공원 올림픽홀||선예매 10월 27일 · 일반예매 10월 28일|예매처 NOL 티켓\n출처: \n\n[슬라이드]\n소스: \n소제목: 같은 투어 · 부산 · 대전 · 대구\n본문: 부산 12월 25일 · 벡스코 오디토리움|대전 2027년 1월 2일 · 충남대학교 정심화홀|대구 2027년 1월 9일 · 엑스코 오디토리움||선예매 11월 3일 · 일반예매 11월 4일|예매처 NOL 티켓\n출처: \n\n[슬라이드]\n소스: \n소제목: 기념 콘서트 · 경기 광주\n본문: 2026 어서옵SHOW 〈자우림〉|11월 19일(목) 오후 7시 30분|광주시문화예술의전당 남한산성홀||광주시문화재단 출범 6주년 기념 공연|일반예매는 10월 2일 시작 · 예매처 NOL 티켓\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: \n소스: \n소제목: 놓치지 않으려면\n본문: 예매는 모두 **NOL 티켓**. 세부 사항은 예매 페이지에서 확인할 수 있습니다.||**서울 10월 27일 · 부산·대전·대구 11월 3일** 선예매부터 시작합니다.||출처: 놀유니버스 발표, NOL 티켓\n출처:\n",
+    "caption": "자우림이 연말연시 전국 투어 'MIDNIGHT EXPRESS 2026-2027'로 한 해의 끝과 다음 해의 시작을 잇습니다.\n\n12월 18~20일 서울 올림픽홀에서 출발해 25일 부산, 2027년 1월 2일 대전, 9일 대구로 이어지는데요, 그 전에 11월 19일 경기 광주에서도 한 번 무대에 오릅니다.\n\n서울 공연은 10월 27일 선예매, 부산·대전·대구는 11월 3일 선예매로 시작합니다. 저장해 두고 예매 날 꺼내 보세요.\n\n출처: 놀유니버스 발표 · NOL 티켓\n\n#PLOT #자우림 #김윤아 #미드나잇익스프레스 #자우림콘서트",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923651/k2j8sgcs9mcx0bulpdle.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923651/k2j8sgcs9mcx0bulpdle.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "2026년 자우림|만나는 법",
+      "sub": "연말연시 투어까지, 남은 공연 한눈에"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "2026년 자우림|만나는 법",
+      "sub": "서울 예매는 10월 27일부터"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "2026년 자우림|만나는 법",
+      "sub": "12월 서울부터 1월 대구까지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 지정한 뉴시스 사진은 해상도 미달로 떨어지고 표지에 출처 모를 분홍 포스터 크롭이 들어감(김윤아만 보이고 두 멤버는 잘림) — 표지 사진 교체 권장. 경기 광주 장의 NOL 포스터는 포스터 글씨와 본문이 겹쳐 뺐음",
+     "[검증] 사진(뉴시스 · 놀유니버스 제공)에 '재판매 및 DB 금지' 표기 — 사용 범위 확인. 경기 광주 공연 페이지엔 잔여석·매진 표시 없음('예매대기')",
+     "11/19 경기 광주 공연은 NOL 예매 페이지 한 곳으로만 확인 — 잔여석이 남았는지 보고 장을 뺄지 정해 주세요",
+     "투어 예매 시각(몇 시 오픈)은 기사에 없어 적지 않았습니다 — NOL 공지 나오면 덧붙이기",
+     "사진이 모자라 3장(1, 2, 3번)은 비워 뒀습니다 — 같은 사진을 두 번 쓰지 않으려고. 스튜디오에서 빈 자리를 눌러 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "자우림, 연말연시 전국투어 '미드나잇 익스프레스'…4개 도시 순회 (뉴시스)",
+      "link": "https://www.newsis.com/view/NISX20261023_0003838065"
+     },
+     {
+      "title": "자우림, 12월부터 전국 4개 도시서 단독 콘서트 개최 (스타데일리뉴스)",
+      "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=600444"
+     },
+     {
+      "title": "자우림, 12월 단독 콘서트 'MIDNIGHT EXPRESS 2026-2027' 개최 (스포츠경향)",
+      "link": "https://sports.khan.co.kr/article/202610240350003?pt=nv"
+     },
+     {
+      "title": "2026 어서옵SHOW 〈자우림〉 - 경기 광주 (NOL 티켓)",
+      "link": "https://nol.yanolja.com/ticket/products/26013843"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923654/aprvar55eidg90tii2zw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923654/tztv4cqxjpdrgxcqdisf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923654/x8xg4lll3nyh8hef1sk2.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923654/nj6l7fdoexeioaxlaor2.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923655/fj3r16v51nbab8rtesa6.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923655/whot25d3vgcff4uwwemu.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923657/o2fy1n0sj1mf5v4i2pkn.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923657/twm9iih7viuyq9pezdjb.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792923654/aprvar55eidg90tii2zw.jpg"
+     },
+     "at": "2026-10-25T19:20+09:00",
+     "v": {
+      "A": "952755fe",
+      "B": "406045ab",
+      "C": "ffd382a1"
+     }
+    }
+   },
+   "corner_name": "만나는 법",
+   "corner_no": 1
   }
  ],
  "skipped": [],
@@ -1873,6 +1988,30 @@
     "next_no": 24,
     "drafts": 1,
     "why": "제작 맡기기로 맡길 때만 (10/20) — 나무위키만 보고 장 수 제한 없이"
+   },
+   {
+    "key": "meet",
+    "name": "만나는 법",
+    "weekly": 0,
+    "done": 0,
+    "left": 0,
+    "need_today": 0,
+    "day": null,
+    "next_no": 1,
+    "drafts": 1,
+    "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
+   },
+   {
+    "key": "intro",
+    "name": "입문 가이드",
+    "weekly": 0,
+    "done": 0,
+    "left": 0,
+    "need_today": 0,
+    "day": null,
+    "next_no": 1,
+    "drafts": 0,
+    "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
     "key": "song",
@@ -1995,7 +2134,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T19:12+09:00"
+  "at": "2026-10-25T19:20+09:00"
  },
  "slots": {
   "basis": 232,
