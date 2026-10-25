@@ -928,9 +928,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792907975/w5nzu7veq9hu2r4s7toq.jpg",
      "key": "2V-6r1Y8ywo@0.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-25T14:59+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792908197/plot_studio/omph943doxi2dlyczxhm.mp4",
+     "at": "2026-10-25T15:03+09:00",
+     "file": "BiWaIGa_PiCheoLing_MigSeuKkaJi_HamKkeHa_New_Release_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "소식"
@@ -1076,7 +1077,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T14:59+09:00"
+  "at": "2026-10-25T15:03+09:00"
  },
  "slots": {
   "basis": 228,
