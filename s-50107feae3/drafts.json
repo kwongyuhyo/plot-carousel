@@ -2667,6 +2667,151 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-34d1f047",
+    "account": "@규효 요청",
+    "url": "https://www.wikitree.co.kr/articles/1168053",
+    "image": null,
+    "head": "스포티파이, AI 슬롭·스팸 5천만 곡 추천 제외 — 삭제 아닌 노출 차단",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-25T20:01+09:00",
+   "key": "ac5d0678",
+   "by": "claude",
+   "subjects": [
+    "스포티파이"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "5천만 곡은 지워진 게 아니라 추천에서 빠졌다 — 스포티파이의 답은 '삭제'보다 '덜 들려주기'",
+    "why": "규효 맡기기 · 국내 기사 제목 대부분이 '삭제'로 써서 오해가 돌고 있음, hiptake_ 도 다룬 소재"
+   },
+   "added": "claude",
+   "added_at": "2026-10-25T20:01+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n스포티파이(@spotifykr)가 올해 'AI 슬롭'과 스팸으로 분류한 음원 5천만 곡 이상을 추천에서 뺐다고 밝혔습니다.\n\n곡이 지워진 건 아닌데요, 플랫폼에 남아 검색으로는 들을 수 있지만 알고리즘과 에디터 추천에는 더 이상 오르지 않습니다. 아예 삭제된 7,500만 곡 이상은 규정을 심각하게 또는 반복해서 어긴 음원으로, 따로 집계된 숫자입니다.\n\n스포티파이는 이용자가 자주 건너뛴 곡, 업로드 방식, 메타데이터, 외부 AI 탐지 도구를 함께 보고 걸렀다고 설명했습니다. 4월부터는 곡의 어느 과정에 AI를 썼는지 밝히는 'AI 크레딧'을 받고, AI로 만든 가상 아티스트에는 'AI 페르소나' 표시를 붙여 기본 추천에서 빼고 있습니다.\n\nAI 음악 규칙을 내놓은 지 1년, 스포티파이가 고른 방법은 지우기보다 덜 들려주기입니다. 수치는 모두 스포티파이 발표 기준입니다.\n\n#PLOT #스포티파이 #Spotify #AI음악 #AI슬롭 #음원스트리밍\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792926074/dnd8cj8tqskmgcdwn7fs.jpg\n제목: 스포티파이, AI 음원|5천만 곡 추천에서 뺐다\n부제: 지운 게 아니라 덜 들려주기로\n출처: Spotify\n",
+    "caption": "스포티파이(@spotifykr)가 올해 'AI 슬롭'과 스팸으로 분류한 음원 5천만 곡 이상을 추천에서 뺐다고 밝혔습니다.\n\n곡이 지워진 건 아닌데요, 플랫폼에 남아 검색으로는 들을 수 있지만 알고리즘과 에디터 추천에는 더 이상 오르지 않습니다. 아예 삭제된 7,500만 곡 이상은 규정을 심각하게 또는 반복해서 어긴 음원으로, 따로 집계된 숫자입니다.\n\n스포티파이는 이용자가 자주 건너뛴 곡, 업로드 방식, 메타데이터, 외부 AI 탐지 도구를 함께 보고 걸렀다고 설명했습니다. 4월부터는 곡의 어느 과정에 AI를 썼는지 밝히는 'AI 크레딧'을 받고, AI로 만든 가상 아티스트에는 'AI 페르소나' 표시를 붙여 기본 추천에서 빼고 있습니다.\n\nAI 음악 규칙을 내놓은 지 1년, 스포티파이가 고른 방법은 지우기보다 덜 들려주기입니다. 수치는 모두 스포티파이 발표 기준입니다.\n\n#PLOT #스포티파이 #Spotify #AI음악 #AI슬롭 #음원스트리밍",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926074/dnd8cj8tqskmgcdwn7fs.jpg",
+      "credit": "Spotify",
+      "from": "https://storage.googleapis.com/pr-newsroom-wp/1/2026/10/new-header-AI-34829304823-1920x733.png"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792634927/mddsk5nm8nvvbqphcrdb.jpg",
+      "credit": "@spotifykr",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844826457_18127983295881413_5666247295342535802_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=K-cq4x9FyvMQ7kNvwHDEk2i&_nc_oc=AdqLLCYUuQZCuWeLGeJICzAh2VFX3oQg-ZqQUjLGufm3k6kUrF61bdPsBllZ8t-tfak&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ZZsDffwt-H1jr09Ky2tYqA&oh=00_AQPvRxX-HXjhxySi8kBIwPGwZkT3WhYHYhoHVXBN6LpcDw&oe=6ADF5672"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792634932/s75bxu3d6zivpsp9wxie.jpg",
+      "credit": "@spotifykr",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844773143_18127983310881413_6284186653394940398_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oI93Wa7XRbMQ7kNvwHTTx1W&_nc_oc=Adp6-nIVIX2tdvCq7yfctE4Aukq_JQlUU0eWRop3S6-VVFX02qLVxR-cVGsXNs4zfOA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ZZsDffwt-H1jr09Ky2tYqA&oh=00_AQOzcXN0IlalBQOkgF-e0ZAWHErpPX2cZAEguGhDktkmRA&oe=6ADF3888"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792634937/w9a8nm84h2xj05u71rk4.jpg",
+      "credit": "@spotifykr",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/846346726_18127983313881413_7945475654269899562_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=v2w_ZxTHNtYQ7kNvwGQi4WA&_nc_oc=AdqphUFVgK1H7GX4f1tkwYNu_hCgdIU-Doeth3sI5NkZLVerPyroEPDxhrgec0elK3A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ZZsDffwt-H1jr09Ky2tYqA&oh=00_AQPMnEZrDDrKUVKu13pLfKlkkJcEjtMZX9GTs78lyJn40w&oe=6ADF4A3F"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926074/dnd8cj8tqskmgcdwn7fs.jpg",
+      "credit": "Spotify",
+      "from": "https://storage.googleapis.com/pr-newsroom-wp/1/2026/10/new-header-AI-34829304823-1920x733.png"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792634927/mddsk5nm8nvvbqphcrdb.jpg",
+      "credit": "@spotifykr",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844826457_18127983295881413_5666247295342535802_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=K-cq4x9FyvMQ7kNvwHDEk2i&_nc_oc=AdqLLCYUuQZCuWeLGeJICzAh2VFX3oQg-ZqQUjLGufm3k6kUrF61bdPsBllZ8t-tfak&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ZZsDffwt-H1jr09Ky2tYqA&oh=00_AQPvRxX-HXjhxySi8kBIwPGwZkT3WhYHYhoHVXBN6LpcDw&oe=6ADF5672"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792634932/s75bxu3d6zivpsp9wxie.jpg",
+      "credit": "@spotifykr",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/844773143_18127983310881413_6284186653394940398_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=oI93Wa7XRbMQ7kNvwHTTx1W&_nc_oc=Adp6-nIVIX2tdvCq7yfctE4Aukq_JQlUU0eWRop3S6-VVFX02qLVxR-cVGsXNs4zfOA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ZZsDffwt-H1jr09Ky2tYqA&oh=00_AQOzcXN0IlalBQOkgF-e0ZAWHErpPX2cZAEguGhDktkmRA&oe=6ADF3888"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792634937/w9a8nm84h2xj05u71rk4.jpg",
+      "credit": "@spotifykr",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/846346726_18127983313881413_7945475654269899562_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=v2w_ZxTHNtYQ7kNvwGQi4WA&_nc_oc=AdqphUFVgK1H7GX4f1tkwYNu_hCgdIU-Doeth3sI5NkZLVerPyroEPDxhrgec0elK3A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ZZsDffwt-H1jr09Ky2tYqA&oh=00_AQPMnEZrDDrKUVKu13pLfKlkkJcEjtMZX9GTs78lyJn40w&oe=6ADF4A3F"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "스포티파이, AI 음원|5천만 곡 추천에서 뺐다",
+      "sub": "지운 게 아니라 덜 들려주기로"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "5천만 곡은|지워지지 않았습니다",
+      "sub": "스포티파이의 AI 슬롭 대응"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "스포티파이가 내건|'사람의 음악이 먼저'",
+      "sub": "AI 슬롭·스팸 5천만 곡 추천 제외"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼은 비움 — 유튜브에 사람이 직접 말하는 영상이 없고 미국 지역 방송 앵커 리포트(자막 없음)뿐이라 PLOT 숏폼 각도가 서지 않음",
+     "7,500만 곡 삭제는 2025년 9월 발표 당시 수치(그 전 12개월 기준)라고 해외 보도에 나옴 — 캡션은 '따로 집계된 숫자'로만 썼음"
+    ],
+    "research": [
+     {
+      "title": "Spotify Newsroom — One Year In: Putting Human Artistry First on Spotify (2026-10-20)",
+      "link": "https://newsroom.spotify.com/2026-10-20/prioritizing-human-artistry/"
+     },
+     {
+      "title": "위키트리 — AI로 찍어낸 쓰레기 음원 퇴출 (10/25)",
+      "link": "https://www.wikitree.co.kr/articles/1168053"
+     },
+     {
+      "title": "뉴시스 — AI 음악 홍수에 추천 시스템 손본 스포티파이 (10/22)",
+      "link": "https://www.newsis.com/view/NISX20261022_0003836048"
+     },
+     {
+      "title": "The Next Web — Spotify pulls 50M AI slop and spam tracks from its recommendations",
+      "link": "https://thenextweb.com/news/spotify-50-million-ai-slop-tracks-recommendations"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926077/fbrmpiolg6quqctjhed8.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926077/pgocy0ibo52cidlcwniv.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926079/zqeua8qy29qor0tnyejr.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926079/sdfgqeoj2pzam81rm3m8.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792926077/fbrmpiolg6quqctjhed8.jpg"
+     },
+     "at": "2026-10-25T20:01+09:00",
+     "v": {
+      "A": "275f5028",
+      "B": "2b4dd4ef",
+      "C": "8b268ef8"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2829,11 +2974,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 6,
+    "drafts": 7,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T19:57+09:00"
+  "at": "2026-10-25T20:01+09:00"
  },
  "slots": {
   "basis": 232,
