@@ -4467,13 +4467,127 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-7952a9a2",
+    "account": "@규효 공유 · @lemag.kr",
+    "url": "https://www.instagram.com/p/DeRztxwh9_0/?obrf=b2pxdW1xMHRmNmc2",
+    "image": null,
+    "head": "본명을 1집 제목으로 붙였던 가오가이, 5년 만의 정규 2집 [노모]",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T05:18+09:00",
+   "key": "7fc6f128",
+   "by": "claude",
+   "subjects": [
+    "가오가이"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "본명을 1집 제목으로 붙였던 가오가이가 5년 만에 정규 2집 [노모]를 냈다",
+    "why": "규효 맡기기 · 국힙 신보 — 기사형이라 표지 한 장 + 캡션"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T05:18+09:00",
+   "corner": "newalbums",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n가오가이가 두 번째 정규 앨범 [노모]를 발매했습니다.\n\n첫 정규 앨범에는 자신의 본명인 '백한솔'을 그대로 제목으로 붙였는데요, 2021년 그 앨범 이후 5년 만에 내놓은 정규작입니다.\n\n[노모]에는 열두 곡이 31분 남짓에 담겼고, 10번 트랙 'Wash'에는 코훼이가 피처링으로 참여했습니다. [노모]는 10월 9일 공개돼 지금 음원 사이트에서 들을 수 있습니다.\n\n#PLOT #가오가이 #노모 #코훼이 #호프갱 #국내힙합\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792959505/ofwdzeyafnmphhaf5gsz.jpg\n제목: 가오가이, 5년 만의|정규 2집 [노모]\n부제: 1집 [백한솔] 이후 두 번째 정규 앨범\n출처: 가오가이 [노모] 앨범 커버\n",
+    "caption": "가오가이가 두 번째 정규 앨범 [노모]를 발매했습니다.\n\n첫 정규 앨범에는 자신의 본명인 '백한솔'을 그대로 제목으로 붙였는데요, 2021년 그 앨범 이후 5년 만에 내놓은 정규작입니다.\n\n[노모]에는 열두 곡이 31분 남짓에 담겼고, 10번 트랙 'Wash'에는 코훼이가 피처링으로 참여했습니다. [노모]는 10월 9일 공개돼 지금 음원 사이트에서 들을 수 있습니다.\n\n#PLOT #가오가이 #노모 #코훼이 #호프갱 #국내힙합",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959505/ofwdzeyafnmphhaf5gsz.jpg",
+      "credit": "가오가이 [노모] 앨범 커버",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d7/73/c3/d773c38c-9154-d4c3-2997-6767e427025a/888272190144_Cover.jpg/1200x1200bb.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959505/ofwdzeyafnmphhaf5gsz.jpg",
+      "credit": "가오가이 [노모] 앨범 커버",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d7/73/c3/d773c38c-9154-d4c3-2997-6767e427025a/888272190144_Cover.jpg/1200x1200bb.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "가오가이, 5년 만의|정규 2집 [노모]",
+      "sub": "1집 [백한솔] 이후 두 번째 정규 앨범"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "본명 [백한솔] 다음은|가오가이의 [노모]",
+      "sub": "5년 만의 정규 2집 · 12곡"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "가오가이가 돌아왔다|정규 2집 [노모]",
+      "sub": "코훼이 피처링 'Wash' 수록"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼 비움 — [노모] 수록곡 뮤직비디오·공식 영상을 유튜브에서 못 찾음. 레이블 채널에 올라오면 숏폼 추가 가능",
+     "lemag 이 쓴 '이안캐시 8곡 프로듀싱'·'단독 콘서트 예고'는 다른 출처로 확인 못 해 뺐음 — 가오가이 인스타에서 보이면 캡션에 한 줄 추가"
+    ],
+    "research": [
+     {
+      "title": "벅스 — 가오가이 아티스트 (노모 · 2026.10.09 · 정규)",
+      "link": "https://music.bugs.co.kr/artist/20099014"
+     },
+     {
+      "title": "Apple Music — 노모 (2026.10.9 · 12곡 · ℗ 2026 HOFGANG)",
+      "link": "https://music.apple.com/us/album/nomo/6819636389?l=ko"
+     },
+     {
+      "title": "나무위키 — 노모(가오가이)",
+      "link": "https://namu.wiki/w/%EB%85%B8%EB%AA%A8(%EA%B0%80%EC%98%A4%EA%B0%80%EC%9D%B4)"
+     },
+     {
+      "title": "나무위키 — 가오가이 (백한솔 2021.8.3.)",
+      "link": "https://namu.wiki/w/%EA%B0%80%EC%98%A4%EA%B0%80%EC%9D%B4"
+     },
+     {
+      "title": "kprofiles — kaogaii (본명 백한솔)",
+      "link": "https://kprofiles.com/?p=496278"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959508/w2uqvqc3eu87e7ndpy5f.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959508/bnwpvau0jmuwrwgsgtcs.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959510/aezyasittodvout6ictr.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959510/kufvq0eu8rykfhmak8u2.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959508/w2uqvqc3eu87e7ndpy5f.jpg"
+     },
+     "at": "2026-10-26T05:18+09:00",
+     "v": {
+      "A": "bc8fbd3b",
+      "B": "3f916f44",
+      "C": "8faacfe9"
+     }
+    }
+   },
+   "corner_name": "이번 주 나온 앨범",
+   "corner_no": 3
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 7,
-  "done": 0,
+  "done": 1,
   "goal": 28,
   "corners": [
    {
@@ -4605,7 +4719,7 @@
     "need_today": 0,
     "day": 4,
     "next_no": 1,
-    "drafts": 2,
+    "drafts": 3,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
    {
@@ -4624,8 +4738,8 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 0,
-    "left": 4,
+    "done": 1,
+    "left": 3,
     "need_today": 1,
     "day": null,
     "next_no": null,
@@ -4633,10 +4747,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T04:15+09:00"
+  "at": "2026-10-26T05:18+09:00"
  },
  "slots": {
-  "basis": 236,
+  "basis": 237,
   "card": [
    {
     "from": 18,
