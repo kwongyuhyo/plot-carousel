@@ -2205,6 +2205,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
      초안이 열자마자 보이게. 접은 줄에 할 일 숫자가 그대로 보이고, 맡기기는 접힌 채로도 바로 누를 수 있다. */
   function todoFold() {
     var open = false; try { open = localStorage.getItem('plot.todoOpen') === '1'; } catch (e) {}
+    // 10/25 규효 "맥으로 바로 제작 눌렀는데 어디서 받냐" — 안 본 완성본이 있으면 접어 두지 않는다
+    var seen = {}; try { seen = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; } catch (e) {}
+    if (((RND && RND.items) || []).some(function (x) { return !seen[x.url]; })) open = true;
     var inner = alrBox() + usageBox() + orderBox() + rndBox() + ytBox();
     return '<details class="todoFold"' + (open ? ' open' : '') + '><summary>' + todoBar() +
       '<span class="tfR"><button type="button" class="tfNew" data-odnew>+ 맡기기</button><i aria-hidden="true">▾</i></span></summary>' +
@@ -4091,9 +4094,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.25 16:30';
+    a.title = '판 10.25 16:31';
     var ver = document.createElement('span');
-    ver.textContent = '10.25 16:30';
+    ver.textContent = '10.25 16:31';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
