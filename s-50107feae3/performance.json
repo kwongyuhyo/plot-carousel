@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-25 19:04 KST",
+ "generated_at": "2026-10-25 22:04 KST",
  "weeks": [
   {
    "week": "2026-W32",
@@ -1445,11 +1445,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-25 15:04 KST"
+  "daily": "2026-10-25 19:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-25T19:04:35+09:00",
+  "fetched_at": "2026-10-25T21:37:29+09:00",
   "posts": [
+   {
+    "t": "2026-10-25T19:40+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "아일릿(@illit_official) 원희가 27일 아침 뉴스의 날씨를 "
+   },
+   {
+    "t": "2026-10-25T19:38+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "슈게이즈는 기타 소리로 안개를 만드는 음악입니다."
+   },
+   {
+    "t": "2026-10-25T19:23+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원(@yanghongwon) 외도 의혹 속 바로 그날, 9월 19일 "
+   },
    {
     "t": "2026-10-25T18:54+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1689,9 +1704,9 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 142,
-  "posted": 32,
-  "posts": 57,
+  "drafts": 151,
+  "posted": 35,
+  "posts": 60,
   "rate": 0.23,
   "adopted_mult": 0.95,
   "own_mult": 1.03,
@@ -1707,12 +1722,12 @@
     "mult": null
    },
    "정보": {
-    "drafts": 82,
-    "posted": 25,
+    "drafts": 88,
+    "posted": 27,
     "mult": 0.92
    },
    "클립": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 2,
     "mult": null
    },
@@ -1732,8 +1747,8 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 5,
-    "posted": 1,
+    "drafts": 7,
+    "posted": 2,
     "mult": null
    },
    "속보": {
@@ -1749,12 +1764,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 76,
-    "posted": 22,
+    "drafts": 81,
+    "posted": 24,
     "mult": 0.92
    },
    "mal": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 2,
     "mult": null
    },
@@ -1774,7 +1789,7 @@
     "mult": 0.9
    },
    "followup": {
-    "drafts": 12,
+    "drafts": 13,
     "posted": 4,
     "mult": 0.95
    },
@@ -1797,6 +1812,16 @@
     "drafts": 1,
     "posted": 1,
     "mult": null
+   },
+   "meet": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
+   },
+   "intro": {
+    "drafts": 1,
+    "posted": 1,
+    "mult": null
    }
   },
   "repack": [
@@ -1814,37 +1839,11 @@
    {
     "day": "2026-10-23",
     "lane": "정보",
-    "who": "한로로",
-    "repack": false,
-    "grade": "A",
-    "corner": "tickets",
-    "key": "f573168a",
-    "posted": "De6McajFLmo",
-    "head": "한로로(@hanr0r0)가 데뷔 후 처음으로 아레나에서 단독 공연을 엽니다.",
-    "url": "https://www.instagram.com/p/De6McajFLmo/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-23",
-    "lane": "정보",
-    "who": "챤미나",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "ca2f1ca4",
-    "posted": "De1y_Ktj0Jk",
-    "head": "일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 한 교차로 근처에서",
-    "url": "https://www.instagram.com/p/De1y_Ktj0Jk/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-23",
-    "lane": "정보",
     "who": "양홍원",
     "repack": false,
     "grade": "A",
     "corner": "news",
-    "key": "7912e49f",
+    "key": "59800117",
     "posted": "Dez_QQxzyuc",
     "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문자 이야기를 직접 ",
     "url": "https://www.instagram.com/reel/Dez_QQxzyuc/",
@@ -1913,6 +1912,32 @@
     "posted": "De6MgkKFKWq",
     "head": "빅나티(@bignaughtyboi)의 '밴쿠버'는 세 곡이 되어서야 끝났습니다.",
     "url": "https://www.instagram.com/p/De6MgkKFKWq/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-25",
+    "lane": "정보",
+    "who": "원희",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "1df772e4",
+    "posted": "De6g57clEdp",
+    "head": "아일릿(@illit_official) 원희가 27일 아침 뉴스의 날씨를 전합니다.",
+    "url": "https://www.instagram.com/p/De6g57clEdp/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-25",
+    "lane": "시리즈",
+    "who": "슈게이즈",
+    "repack": false,
+    "grade": "A",
+    "corner": "intro",
+    "key": "a7a8736d",
+    "posted": "De6gqqdFBIH",
+    "head": "슈게이즈는 기타 소리로 안개를 만드는 음악입니다.",
+    "url": "https://www.instagram.com/p/De6gqqdFBIH/",
     "mult": null
    }
   ]
