@@ -4276,9 +4276,55 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955450/jr1xcyqefw9tav4ioual.jpg",
      "key": "1XxNXkOHKZw@4.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-26T04:11+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792955699/plot_studio/vst0c0vrgnlw6feiikgt.mp4",
+     "at": "2026-10-26T04:15+09:00",
+     "file": "GeuLimEul_ManDeulGe_HaGo_SipEossEoYo_News_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792955700777-2b99befd",
+      "segs": [
+       {
+        "start": 0.82,
+        "end": 2.3,
+        "text": "Elim bel las que"
+       },
+       {
+        "start": 26.9,
+        "end": 27.42,
+        "text": "이기어슷가 이쁘는ena가"
+       },
+       {
+        "start": 27.42,
+        "end": 27.62,
+        "text": "Very much the use"
+       },
+       {
+        "start": 27.62,
+        "end": 28.37,
+        "text": "the love to do"
+       },
+       {
+        "start": 28.37,
+        "end": 29.06,
+        "text": "There is a lot of"
+       },
+       {
+        "start": 29.06,
+        "end": 29.39,
+        "text": "you So to go to the"
+       },
+       {
+        "start": 29.39,
+        "end": 29.69,
+        "text": "He is a good So to"
+       },
+       {
+        "start": 29.69,
+        "end": 30.29,
+        "text": "go to the The"
+       }
+      ]
+     }
     }
    },
    "corner_name": "소식"
@@ -4587,7 +4633,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T04:14+09:00"
+  "at": "2026-10-26T04:15+09:00"
  },
  "slots": {
   "basis": 236,
