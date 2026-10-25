@@ -2184,7 +2184,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         return '<div class="yr' + (seen[x.url] ? '' : ' new') + '"><div class="yt">' + (x.kind === 'layer' ? '🧾 ' : '🎬 ') + esc(x.label || '') + '</div>' +
           '<div class="ys">' + esc(String(x.at || '').slice(5, 16).replace('T', ' ')) + (x.kind === 'layer' ? ' · 정보 레이어(.mov)' : '') + '</div>' +
           '<div class="bt"><a class="act" data-rndseen="' + esc(x.url) + '" href="' + escU(x.url) + '" target="_blank" rel="noopener">▶ 보기</a>' +
-          '<a class="act" data-rndsave="' + esc(x.url) + '" data-rndlab="' + esc(x.label || '') + '" href="' + escU(dl) + '">⬇ 저장</a></div></div>';
+          '<a class="act" data-rndsave="' + esc(x.url) + '" data-rndlab="' + esc(x.label || '') + '" href="' + escU(dl) + '">⬇ 저장</a>' +
+          (x.caption ? '<button class="act" data-rndcap="' + esc(x.url) + '">📋 캡션</button>' : '') + '</div>' +
+          (x.caption ? '<div class="ys rcap">' + esc(String(x.caption).split('\n')[0].slice(0, 70)) + '…</div>' : '') + '</div>';
       }).join('') + (rows.length > 3 ? '<button class="more" data-rndmore>' + (RND_OPEN ? '접기' : '모두 보기 (' + rows.length + ')') + '</button>' : '') + '</div>';
   }
   var ALR = null;
@@ -2313,6 +2315,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     try { localStorage.setItem('plot.form.handoff', form); } catch (e) {
       alert('저장소를 쓸 수 없어 넘길 수 없습니다 — 양식을 복사해 붙여넣어 주세요'); return;
     }
+    try {                                              // 10/25 숏폼 캡션도 같이 — 그 편을 만들면 완성본 칸에 캡션이 붙는다
+      if (kind === 'shorts' && captionOf(it, 'shorts')) localStorage.setItem('plot.form.handoff.cap', captionOf(it, 'shorts'));
+      else localStorage.removeItem('plot.form.handoff.cap');
+    } catch (e) {}
     try {                                              // 10/22 미리 렌더한 완성본도 같이 넘긴다
       var rdn = kind === 'shorts' && ((it.shorts || {}).rendered || {});
       if (rdn && rdn.url) localStorage.setItem('plot.form.handoff.done', JSON.stringify({ url: rdn.url, at: rdn.at || '', subs: rdn.subs || null }));
@@ -3987,9 +3993,17 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (inp && e.key === 'Enter' && !e.isComposing) { e.preventDefault(); evComment((DR.items || [])[Number(inp.getAttribute('data-evci'))], inp.value); }
   });
   document.getElementById('viewDraft').addEventListener('click', function (e) {
+    var rc = e.target.closest('[data-rndcap]');
+    if (rc) {
+      var rx = ((RND && RND.items) || []).filter(function (x) { return x.url === rc.getAttribute('data-rndcap'); })[0];
+      if (rx && rx.caption) { copyText(rx.caption); toast('캡션을 복사했습니다'); }
+      return;
+    }
     var rv = e.target.closest('[data-rndsave]');
     if (rv) {
       var ru = rv.getAttribute('data-rndsave');
+      var rx2 = ((RND && RND.items) || []).filter(function (x) { return x.url === ru; })[0];
+      if (rx2 && rx2.caption) copyText(rx2.caption);              // 저장하면서 캡션도 복사 (인스타에 바로 붙여넣게)
       try { var sm0 = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; sm0[ru] = Date.now(); localStorage.setItem('plot.rndseen', JSON.stringify(sm0)); } catch (x) {}
       if (saveRnd(ru, rv.getAttribute('data-rndlab'))) e.preventDefault();
       setTimeout(renderDrafts, 300); return;
@@ -4122,9 +4136,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.25 17:28';
+    a.title = '판 10.25 17:37';
     var ver = document.createElement('span');
-    ver.textContent = '10.25 17:28';
+    ver.textContent = '10.25 17:37';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
