@@ -378,9 +378,95 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792890064/mdeivq0wocpjd5ilclvm.jpg",
      "key": "5a67tDi9uc4@8.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-25T10:01+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792890299/plot_studio/nagfujzo438b0o8ctko8.mp4",
+     "at": "2026-10-25T10:05+09:00",
+     "file": "DaEumNal_AChimE_ONeu_DoeGe_SinGiHaessEo_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792890301116-b201944e",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 1.44,
+        "text": "섬 소녀였어요?"
+       },
+       {
+        "start": 1.44,
+        "end": 4.51,
+        "text": "네 와 아일랜드 소녀 그러면"
+       },
+       {
+        "start": 4.51,
+        "end": 6.48,
+        "text": "서울에 왔을 때 그런 문화 충격도"
+       },
+       {
+        "start": 6.48,
+        "end": 7.18,
+        "text": "있었나요?"
+       },
+       {
+        "start": 7.18,
+        "end": 9.08,
+        "text": "저는 그게 제일 좋았어요"
+       },
+       {
+        "start": 9.08,
+        "end": 11.5,
+        "text": "쿠팡 와우 예?"
+       },
+       {
+        "start": 11.5,
+        "end": 14.29,
+        "text": "쿠팡 와우 배송 밤에 시키면"
+       },
+       {
+        "start": 14.29,
+        "end": 15.2,
+        "text": "다음날 아침에"
+       },
+       {
+        "start": 15.2,
+        "end": 17.44,
+        "text": "오는 게 되게 신기했어요"
+       },
+       {
+        "start": 17.44,
+        "end": 19.72,
+        "text": "제주도는 다음날 아침에 오지 않죠?"
+       },
+       {
+        "start": 19.72,
+        "end": 21.01,
+        "text": "절대 못 오고 도서"
+       },
+       {
+        "start": 21.01,
+        "end": 22.15,
+        "text": "산간 비용 5천 원을"
+       },
+       {
+        "start": 22.15,
+        "end": 24.24,
+        "text": "추가해야 된다고 하더라고요"
+       },
+       {
+        "start": 24.24,
+        "end": 26.36,
+        "text": "항상 그래서 오래 걸리고"
+       },
+       {
+        "start": 26.36,
+        "end": 27.42,
+        "text": "너무 좋았구나 네"
+       },
+       {
+        "start": 27.42,
+        "end": 28.02,
+        "text": "너무 좋았어요"
+       }
+      ]
+     }
     }
    },
    "pick": {
@@ -603,7 +689,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T10:01+09:00"
+  "at": "2026-10-25T10:05+09:00"
  },
  "slots": {
   "basis": 227,
