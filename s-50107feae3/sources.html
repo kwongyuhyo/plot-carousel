@@ -2948,7 +2948,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
      '다른 후보' 를 누르면 맥이 그 곡도 만든다 (5~10분, 하루 상한 밖). */
   // 제작 맡기기 (2026-10-12 규효 "내가 먼저 찾은 이슈나 만들고 싶은 특집이 있으면 내가 제안") — collectors/orders
   var OD = null, OD_T = null;
-  var OD_TYPE = [['draft', '이슈·소재 초안'], ['share', '본 게시물로 (링크만)'], ['tteolgi', '나무위키 털기'], ['special', '특집'], ['story', '서사형 오늘의 노래']];
+  var OD_TYPE = [['draft', '이슈·소재 초안'], ['share', '본 게시물로 (링크만)'], ['tteolgi', '나무위키 털기'], ['special', '특집'], ['story', '서사형 오늘의 노래'],
+                 ['meet', '2026년 ○○ 만나는 법'], ['intro', '장르 입문 가이드']];
   var OD_FORM = [['b', '숏폼·캐러셀'], ['s', '숏폼'], ['c', '캐러셀']];
   var OD_ST = { queued: '맥이 받음', running: '만드는 중', done: '완료', fail: '못 만듦' };
   function odLoad() {
@@ -2994,6 +2995,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var ph = { draft: '예) 저스디스 스카이민혁 디스 / 이영지 고스트 페스티벌 사과', special: '예) 일리네어 10년 타임라인 / KC 관계도',
                tteolgi: '사람·대상 이름   예) 리센느 제나 / 실리카겔 — 나무위키만 보고 재미있는 건 전부 (장 수 제한 없음)',
                story: '아티스트 - 곡   예) 한로로 - 0+0',
+               meet: '아티스트 이름   예) 잔나비 / 데이식스 — 남은 공연·페스티벌·행사를 확인된 것만',
+               intro: '장르 이름   예) 시티팝 / 슈게이즈 / 한국 R&B — 정의·역사·입문 곡·지금의 아티스트',
                share: '안 적어도 됩니다 — 아래 링크만 넣으면 맥이 원출처를 찾아 PLOT 각도로 씁니다 (형식은 맥이 내용 보고)' };
     var draw = function () {
       sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>제작 맡기기</h4><div class="sub">고른 소재는 판정이 버리지 않고 씁니다. 맥이 5분 안에 받아 작성기(Opus)가 취재·검증한 뒤 오늘의 초안에 올립니다 — 보통 10~20분, 나무위키 털기는 20~40분.</div>' +
@@ -3026,7 +3029,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         if (v.type === 'story' && !/\s[-–—\/|]\s?|[-–—\/|]/.test(v.what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
         var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: (v.url || '').slice(0, 300),
           verdict: {}, reason: v.memo || '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
-          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : (v.type === 'special' || v.type === 'tteolgi' ? 'c' : ''), what: v.what, url: v.url || '' } };
+          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : (/^(special|tteolgi|meet|intro)$/.test(v.type) ? 'c' : ''), what: v.what, url: v.url || '' } };
         sh.remove();
         sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } })
           .then(function () { toast('맡겼습니다 — 맥이 5분 안에 받습니다'); OD = [rec].concat(OD || []); if (GRP === 'draft') renderDrafts(); clearTimeout(OD_T); OD_T = setTimeout(odLoad, 45000); })
@@ -3183,7 +3186,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   var DR_CAT = (function () { try { return sessionStorage.getItem('plot.drcat') || 'all'; } catch (e) { return 'all'; } })();
   function catSave() { try { sessionStorage.setItem('plot.drcat', DR_CAT); } catch (e) {} }
   var CAT_NAME = { news: '소식', mal: '그 말', tteolgi: '나무위키 털기', song: '오늘의 노래', spotlight: 'SPOTLIGHT',
-    lyric: '가사 속 이름', again: '다시 보기', followup: '후속' };
+    lyric: '가사 속 이름', again: '다시 보기', followup: '후속', meet: '만나는 법', intro: '입문 가이드' };
   function catOf(it) { return it.corner || 'etc'; }
   function catName(k) {
     var c = ((DR && DR.corners && DR.corners.corners) || []).filter(function (x) { return x.key === k; })[0];
@@ -4136,9 +4139,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.25 19:12';
+    a.title = '판 10.25 19:15';
     var ver = document.createElement('span');
-    ver.textContent = '10.25 19:12';
+    ver.textContent = '10.25 19:15';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
