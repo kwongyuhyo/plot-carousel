@@ -1,7 +1,15 @@
 {
  "schema": 1,
- "generated_at": "2026-10-22T21:15+09:00",
+ "generated_at": "2026-10-25T16:28+09:00",
  "items": [
+  {
+   "at": "2026-10-25T16:28+09:00",
+   "label": "사건 당일 현장 영상",
+   "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792913332/plot_studio/j2ruklpjh5m0gtcpygyk.mp4",
+   "kind": "video",
+   "file": "YangHongWon_SaGeon_DangIl_HyeonJ_Issue_no_lyrics__cta.mp4",
+   "job": 64
+  },
   {
    "at": "2026-10-22T21:15+09:00",
    "label": "양홍원과의 관계",
