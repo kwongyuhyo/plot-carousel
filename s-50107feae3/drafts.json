@@ -1598,7 +1598,12 @@
      }
     }
    },
-   "corner_name": "후속"
+   "corner_name": "후속",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De6MgkKFKWq/",
+    "cover": "A",
+    "at": "2026-10-25T16:41+09:00"
+   }
   },
   {
    "source": {
@@ -1729,7 +1734,12 @@
     "why": "오늘 뉴스 급상승 1위(기사 17건) · 오늘 나온 공식 발표 · 인디는 도달 대비 팔로우가 가장 높다 · 표지 한 장으로 가볍게",
     "at": "2026-10-25T16:16+09:00"
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De6McajFLmo/",
+    "cover": "A",
+    "at": "2026-10-25T16:41+09:00"
+   }
   }
  ],
  "skipped": [],
@@ -1872,7 +1882,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T16:16+09:00"
+  "at": "2026-10-25T16:41+09:00"
  },
  "slots": {
   "basis": 228,
