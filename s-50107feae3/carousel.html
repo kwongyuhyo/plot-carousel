@@ -449,7 +449,8 @@ main{display:grid;gap:0;padding-bottom:96px}
   align-items:center;justify-content:center;background:rgba(10,10,12,.72);
   border:2px dashed var(--text);border-radius:4px;color:var(--text);font-size:14px;line-height:1}
 #hot{position:absolute;inset:0}
-#fitLayer{position:absolute;inset:0;cursor:grab;touch-action:none;
+#fitLayer{position:absolute;inset:0;cursor:grab;touch-action:none;z-index:4;   /* 10/25 — 글자 그림(#stage z1) 아래 깔려 끌기가 안 먹던 것 */
+ 
   box-shadow:inset 0 0 0 2px rgba(232,179,74,.85)}
 #fitLayer.drag{cursor:grabbing}
 /* 영상 장 (10/18) — 미리보기 뒤에 영상을 깔고, 캔버스는 글자만 그린다 */
@@ -637,6 +638,15 @@ body.vidOn .tapnote{display:none}
 .field.tlToggle input[type=checkbox]{width:22px;height:22px;margin-top:2px;flex:none}
 .field.tlToggle .tlTxt{flex:1;font-size:13px;line-height:1.5;opacity:.85}
 .field.tlToggle .tlTxt b{font-weight:800;opacity:1}
+
+/* 10/25 영상 장 — 구간 자르기 막대 · 맞춘 뒤 흐린 배경 */
+.vtrim{position:relative;height:34px;margin:8px 2px 2px;border-radius:7px;background:rgba(127,127,127,.18);touch-action:none;cursor:pointer}
+.vtrim .sel{position:absolute;top:0;bottom:0;background:rgba(255,196,0,.28);border-top:2px solid #f5b800;border-bottom:2px solid #f5b800;box-sizing:border-box}
+.vtrim .h{position:absolute;top:-3px;bottom:-3px;width:16px;margin-left:-8px;border-radius:5px;background:#f5b800;cursor:ew-resize;z-index:2}
+.vtrim .h::after{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:2px;background:rgba(0,0,0,.45)}
+.vtrim .ph{position:absolute;top:-4px;bottom:-4px;width:2px;margin-left:-1px;background:#ff3b30;pointer-events:none;z-index:3}
+.vtrimTxt{font-size:12px;opacity:.75;margin:2px 2px 6px}
+#vidLayer .vbg{position:absolute;inset:-30px;background-size:cover;background-position:center;filter:blur(22px) brightness(.72);z-index:0}
 </style>
 
 <header>
@@ -1793,10 +1803,10 @@ function paint(ctx, i, track) {
     // 영상 장: 큰 미리보기·글자 레이어는 사진 자리를 비워 뒤의 영상이 보이게, 작은 그림은 한 장면(있으면)으로
     const img = v ? ((track || OVERLAY) ? null : s._still) : s.el;
     NOFILL = !!(v && (track || OVERLAY));
-    if (i === 0) slideCover(ctx, img, tag, lit(s.title), s.subtitle, s.credit, v ? null : s.fit);
+    if (i === 0) slideCover(ctx, img, tag, lit(s.title), s.subtitle, s.credit, s.fit);
     else if (s.style === "timeline") slideTimeline(ctx, v ? null : s.el, tag, s.speaker, s.heading, s.body, s.credit);
     else slideBody(ctx, img, tag, lit(s.heading), lit(s.body), s.credit,
-                   headingSizeForDeck(), v ? null : s.fit);
+                   headingSizeForDeck(), s.fit);
     NOFILL = false;
   }
   TRACK = false;
@@ -1810,6 +1820,7 @@ function repaint(now) {
     const got = FITREP; FITREP = null; // 섬네일 렌더가 섞이지 않게 바로 끈다
     FITREP = got;
     layoutHotspots(); scheduleThumbs();
+    try { vidFitApply(); } catch (_) {}
     try { runLint(); } catch (_) {}
     FITREP = null;
   };
@@ -2053,26 +2064,34 @@ let fitDrag = null;
 let fitPts  = null;          // 손가락 두 개
 
 function fitSlide() { return deck.slides[cur]; }
-function fitActive() { const s = fitSlide(); return s && s.el ? s : null; }
+/* 10/25 규효 "캐러셀에 영상 올렸을 때 사이즈나 위치 조정" — 영상 장도 같은 맞추기를 쓴다. 영상은 크기만 알면 된다. */
+function vidDims(s) {
+  const v = vidOf(s); if (!v) return null;
+  if (v.w && v.h) return { naturalWidth: v.w, naturalHeight: v.h };
+  if (s._still && s._still.naturalWidth) return { naturalWidth: s._still.naturalWidth, naturalHeight: s._still.naturalHeight };
+  return /\/shorts\//.test(v.url) ? { naturalWidth: 1080, naturalHeight: 1920 } : { naturalWidth: 1920, naturalHeight: 1080 };
+}
+function fitSrc(sl) { return (sl && sl.el) || vidDims(sl); }
+function fitActive() { const s = fitSlide(); return s && (s.el || (vidOf(s) && !VIEW_OUT)) ? s : null; }
 
 /* 손대지 않은 사진은 fit 이 없다(= 예전처럼 꽉 채우기).
    한 번이라도 만지면 그때의 모습 그대로를 값으로 굳혀 둔다. */
 function fitEnsure(sl) {
-  if (!sl.fit) sl.fit = { z: fitCoverZ(sl.el), cx: .5, cy: .5, bg: "blur", snap: true };
+  if (!sl.fit) sl.fit = { z: fitCoverZ(fitSrc(sl)), cx: .5, cy: .5, bg: "blur", snap: true };
   return sl.fit;
 }
 
 function fitSetZoom(sl, z, ax, ay) {
   const f = fitEnsure(sl);
-  const before = fitNorm(sl.el, f);
+  const before = fitNorm(fitSrc(sl), f);
   f.z = Math.max(1, Math.min(FIT_ZMAX, z));
-  const after = fitNorm(sl.el, f);
+  const after = fitNorm(fitSrc(sl), f);
   // 집은 지점을 붙잡아 둔다 — 안 그러면 확대할 때마다 보던 곳이 달아난다.
   if (ax != null && before.nw > 0 && after.nw > 0) {
     f.cx = before.cx + (ax - 0.5) * (W / before.nw - W / after.nw);
     f.cy = before.cy + (ay - 0.5) * (H / before.nh - H / after.nh);
   }
-  Object.assign(f, { cx: fitNorm(sl.el, f).cx, cy: fitNorm(sl.el, f).cy });
+  Object.assign(f, { cx: fitNorm(fitSrc(sl), f).cx, cy: fitNorm(fitSrc(sl), f).cy });
 }
 
 /* 가장자리에 가까우면 붙인다. 후보는 왼끝·가운데·오른끝 셋뿐이다. */
@@ -2088,7 +2107,7 @@ function fitSnapAxis(c, n, size) {
 
 function fitApplySnap(sl) {
   const f = sl.fit; if (!f || !f.snap) return;
-  const v = fitNorm(sl.el, f);
+  const v = fitNorm(fitSrc(sl), f);
   f.cx = fitSnapAxis(v.cx, v.nw, W);
   f.cy = fitSnapAxis(v.cy, v.nh, H);
 }
@@ -2099,15 +2118,16 @@ function fitPaintBar() {
   const btn = document.getElementById("photoFitBtn");
   if (btn) {
     btn.hidden = !sl;
-    btn.classList.toggle("nudge", !!sl && !fitMode && !sl.fit && fitOffRatio(sl.el));
+    btn.textContent = sl && vidOf(sl) ? "📐 영상 크기·위치" : "사진 맞추기";
+    btn.classList.toggle("nudge", !!sl && !fitMode && !sl.fit && fitOffRatio(fitSrc(sl)));
   }
   if (!bar) return;
   bar.hidden = !(fitMode && sl);
   if (bar.hidden) return;
   // 여기서 fitEnsure 를 부르면 '되돌리기' 로 비운 값이 곧바로 되살아난다.
   // 화면에 보여줄 값은 fitNorm 이 null 도 알아서 채워 준다.
-  const f = sl.fit || fitNorm(sl.el, null), v = fitNorm(sl.el, sl.fit);
-  const coverZ = fitCoverZ(sl.el);
+  const f = sl.fit || fitNorm(fitSrc(sl), null), v = fitNorm(fitSrc(sl), sl.fit);
+  const coverZ = fitCoverZ(fitSrc(sl));
   bar.querySelectorAll("[data-bg]").forEach((b) =>
     b.classList.toggle("on", b.dataset.bg === f.bg));
   bar.querySelector('[data-fit="cover"]').classList.toggle("on", Math.abs(f.z - coverZ) < .01);
@@ -2192,12 +2212,12 @@ function fitMove(e) {
   }
   if (!fitDrag) return;
   const now = fitAt(e, fitDrag.rect);
-  const f = sl.fit, v = fitNorm(sl.el, f);
+  const f = sl.fit, v = fitNorm(fitSrc(sl), f);
   // 손가락이 움직인 만큼 사진이 따라온다 — 미는 방향과 보이는 방향이 같아야 한다.
   f.cx = fitDrag.cx - (now.x - fitDrag.at.x) * (W / v.nw);
   f.cy = fitDrag.cy - (now.y - fitDrag.at.y) * (H / v.nh);
   fitApplySnap(sl);
-  Object.assign(f, { cx: fitNorm(sl.el, f).cx, cy: fitNorm(sl.el, f).cy });
+  Object.assign(f, { cx: fitNorm(fitSrc(sl), f).cx, cy: fitNorm(fitSrc(sl), f).cy });
   fitPaintBar(); repaint(true);
 }
 
@@ -2225,7 +2245,7 @@ function bindFit() {
   }, { passive: false });
   layer.addEventListener("dblclick", () => {
     const sl = fitActive(); if (!sl) return;
-    const f = fitEnsure(sl), coverZ = fitCoverZ(sl.el);
+    const f = fitEnsure(sl), coverZ = fitCoverZ(fitSrc(sl));
     fitSetZoom(sl, Math.abs(f.z - coverZ) < .01 ? 1 : coverZ);
     fitPaintBar(); repaint(true); markDirty && markDirty();
   });
@@ -2248,7 +2268,7 @@ function bindFit() {
       const sl = fitActive(); if (!sl) return;
       const f = fitEnsure(sl);
       const k = b.dataset.fit;
-      if (k === "cover")        fitSetZoom(sl, fitCoverZ(sl.el));
+      if (k === "cover")        fitSetZoom(sl, fitCoverZ(fitSrc(sl)));
       else if (k === "contain") fitSetZoom(sl, 1);
       else if (k === "zoomin")  fitSetZoom(sl, f.z * 1.15, .5, .5);
       else if (k === "zoomout") fitSetZoom(sl, f.z / 1.15, .5, .5);
@@ -3073,7 +3093,8 @@ function vLen(v) { const e = v.e != null ? v.e : v.dur; return e != null ? Math.
 /* 이 장을 맥에서 만든 뒤 바뀐 게 있으면 다시 만들어야 한다 — 글자·카테고리·영상·구간 */
 function vidKey(i) {
   const s = deck.slides[i], v = vidOf(s);
-  return JSON.stringify([deck.category, i === 0 ? [s.title, s.subtitle] : [s.heading, s.body, headingSizeForDeck()], s.credit, v && [v.url, v.s, v.e]]);
+  return JSON.stringify([deck.category, i === 0 ? [s.title, s.subtitle] : [s.heading, s.body, headingSizeForDeck()], s.credit, v && [v.url, v.s, v.e],
+                         s.fit && [s.fit.z, s.fit.cx, s.fit.cy, s.fit.bg]]);
 }
 function vidFresh(i) { const s = deck.slides[i]; return !!(vidOf(s) && s.vidOut && s.vidOut.key === vidKey(i)); }
 function setVid(s, url, dur) {
@@ -3150,7 +3171,9 @@ function vidStage() {
   } else if (out || vDirect(want)) {
     const el = document.createElement("video");
     el.src = want; el.playsInline = true; el.setAttribute("playsinline", ""); el.preload = "auto";
-    el.onloadedmetadata = () => { if (!out && el.duration && isFinite(el.duration) && !v.dur) v.dur = el.duration; if (!out) el.currentTime = v.s || 0; vidPanel(); };
+    el.onloadedmetadata = () => { if (!out && el.duration && isFinite(el.duration) && !v.dur) v.dur = el.duration; if (!out) el.currentTime = v.s || 0;
+      if (!out && el.videoWidth && !(v.w && v.h)) { v.w = el.videoWidth; v.h = el.videoHeight; }
+      vidPanel(); vidFitApply(); };
     el.onended = () => vidPanel();
     lay.appendChild(el);
     VP = { url: want, slide: s, el: el, out: out };
@@ -3175,10 +3198,13 @@ function vidPanel() {
   if (busy) st = '<div class="vstat">맥이 만드는 중… <b>' + (s._step || "") + '</b> — 화면을 열어 두세요</div>';
   else if (s.vidOut && fresh) st = '<div class="vstat ok"><b>✓ 맥에서 만든 영상이 있습니다</b> (' + (s.vidOut.secs || "") + '초) — 발행하면 이 영상이 들어갑니다.</div>';
   else if (s.vidOut) st = '<div class="vstat bad">글자·구간이 바뀌었습니다 — 다시 만들어야 발행할 수 있습니다.</div>';
-  else st = '<div class="vstat">미리보기는 가운데를 채워 보여 줍니다. 실제는 맥이 컷마다 얼굴을 따라 4:5 로 맞춥니다.</div>';
+  else st = s.fit ? '<div class="vstat">📐 맞춘 크기·위치 그대로 만듭니다.</div>'
+    : '<div class="vstat">미리보기는 가운데를 채워 보여 줍니다. 그대로 두면 맥이 컷마다 얼굴을 따라 4:5 로 맞춥니다 — 직접 정하려면 「📐 영상 크기·위치」.</div>';
   box.innerHTML =
     '<div class="vh"><b style="white-space:nowrap">🎞 영상 장</b><span>' + src + ' · ' + escHtml(v.url.replace(/#.*$/, "").slice(0, 60)) + '</span></div>' +
-    (direct && !VIEW_OUT ? '<input type="range" min="0" max="' + (v.dur || Math.max(60, (v.e || 0) + 10)).toFixed(1) + '" step="0.1" value="' + vpTime().toFixed(1) + '" data-v="scrub">' : '') +
+    (direct && !VIEW_OUT && v.dur ? '<div class="vtrim" data-v="trim" title="양 끝을 끌어 쓸 부분을 고릅니다 · 가운데를 누르면 그 자리로"><i class="sel"></i><u class="ph"></u><b class="h hs"></b><b class="h he"></b></div>' +
+      '<div class="vtrimTxt"><span>✂ 양 끝 손잡이를 끌어 쓸 부분만 남기세요</span></div>' : '') +
+    (direct && !VIEW_OUT && !v.dur ? '<input type="range" min="0" max="' + (v.dur || Math.max(60, (v.e || 0) + 10)).toFixed(1) + '" step="0.1" value="' + vpTime().toFixed(1) + '" data-v="scrub">' : '') +
     '<div class="vrow">' +
       (direct ? '<button type="button" data-v="play">' + (vpPlaying() ? "❚❚ 멈춤" : (VIEW_OUT ? "▶ 결과 재생" : "▶ 구간 재생")) + '</button>' +
         (VIEW_OUT ? '' : '<button type="button" data-v="back">−1초</button><button type="button" data-v="fwd">+1초</button>') +
@@ -3198,6 +3224,7 @@ function vidPanel() {
       '<button type="button" data-v="clear">영상 빼기</button>' +
     '</div>' +
     (badLen ? '<div class="vstat bad">인스타 캐러셀 영상은 ' + VID_MIN + '~' + VID_MAX + '초입니다.</div>' : '');
+  vTrimPaint(box, v, vpTime());
   clearInterval(vTick);
   vTick = direct ? setInterval(() => {
     if (!VP) return;
@@ -3208,6 +3235,7 @@ function vidPanel() {
     }
     const t = box.querySelector('[data-v="now"]'); if (t) t.textContent = vFmt(now) + (totOf() ? " / " + vFmt(totOf()) : "");
     const r = box.querySelector('[data-v="scrub"]'); if (r && document.activeElement !== r) { r.value = now.toFixed(1); if (v.dur && Number(r.max) !== v.dur) r.max = v.dur.toFixed(1); }
+    vTrimPaint(box, v, now);
     const pb = box.querySelector('[data-v="play"]'); if (pb) pb.textContent = vpPlaying() ? "❚❚ 멈춤" : (VIEW_OUT ? "▶ 결과 재생" : "▶ 구간 재생");
   }, 200) : null;
 }
@@ -3276,6 +3304,7 @@ function vidUpload(f) {
     let r = {}; try { r = JSON.parse(x.responseText || "{}"); } catch (e) {}
     if (x.status >= 300 || !r.secure_url) { toast("올리지 못했습니다 — " + String((r.error && r.error.message) || x.status).slice(0, 90)); return; }
     setVid(s, r.secure_url, Number(r.duration) || null);
+    if (r.width && r.height) { s.vid.w = Number(r.width); s.vid.h = Number(r.height); }
     if (s.vid.dur && s.vid.dur > VID_MAX) s.vid.e = VID_MAX;
     VIEW_OUT = false; syncAll(); buildRail();
     toast("✓ 영상을 넣었습니다" + (s.vid.dur > VID_MAX ? " — " + VID_MAX + "초가 넘어 앞 " + VID_MAX + "초로 잡았습니다" : ""));
@@ -3299,7 +3328,8 @@ async function vidMake(i) {
     const pub = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
     const u8 = new Uint8Array(await (await overlayBlob(i)).arrayBuffer());
     await plotStudio.post({ id: `stvid:${pub}-${i}`, kind: "studio_img", snapshot: { pub: pub, n: i, data: b64of(u8), png: 1 } });
-    const sn = await plotStudio.send("cardvid", { pub: pub, n: i, url: v.url.replace(/#.*$/, ""), s: v.s || 0, e: v.e }, (step) => { s._step = step; if (cur === i) vidPanel(); });
+    const fit = s.fit ? { z: s.fit.z, cx: s.fit.cx, cy: s.fit.cy, bg: s.fit.bg } : null;   // 10/25 크기·위치 (없으면 맥이 얼굴 따라)
+    const sn = await plotStudio.send("cardvid", { pub: pub, n: i, url: v.url.replace(/#.*$/, ""), s: v.s || 0, e: v.e, fit: fit }, (step) => { s._step = step; if (cur === i) vidPanel(); });
     s.vidOut = { url: sn.mp4, sha: sn.sha, secs: sn.secs, key: key };
     markDirty();
     toast("✓ " + (sn.note || "만들었습니다") + (vidKey(i) !== key ? " — 그사이 글자가 바뀌어 한 번 더 만들어야 합니다" : ""));
@@ -3319,6 +3349,65 @@ async function vidSave(s, i) {
   } catch (e) { window.open(s.vidOut.url, "_blank", "noopener"); }
 }
 vidBind();
+function vTrimPaint(box, v, now) {
+  const t = box.querySelector(".vtrim"); if (!t || !v.dur) return;
+  const d = v.dur, s0 = v.s || 0, e0 = v.e != null ? v.e : Math.min(d, s0 + VID_MAX);
+  const pc = (x) => (Math.max(0, Math.min(d, x)) / d * 100) + "%";
+  t.querySelector(".sel").style.left = pc(s0); t.querySelector(".sel").style.width = ((e0 - s0) / d * 100) + "%";
+  t.querySelector(".hs").style.left = pc(s0); t.querySelector(".he").style.left = pc(e0);
+  if (now != null) t.querySelector(".ph").style.left = pc(now);
+  const tx = box.querySelector(".vtrimTxt span");
+  if (tx && VTRIM) tx.textContent = "✂ " + vFmt(s0) + " → " + vFmt(e0) + " · " + (e0 - s0).toFixed(1) + "초";
+}
+let VTRIM = null;
+document.getElementById("vidBox").addEventListener("pointerdown", (e) => {
+  const t = e.target.closest(".vtrim"); if (!t) return;
+  const s = deck.slides[cur], v = vidOf(s); if (!v || !v.dur) return;
+  e.preventDefault();
+  const r = t.getBoundingClientRect(), at = (x) => Math.max(0, Math.min(1, (x - r.left) / r.width)) * v.dur;
+  const which = e.target.classList.contains("hs") ? "s" : e.target.classList.contains("he") ? "e" : null;
+  if (!which) { vpSeek(at(e.clientX)); return; }                       // 막대를 누르면 그 자리로
+  VTRIM = { which, id: e.pointerId };
+  try { t.setPointerCapture(e.pointerId); } catch (_) {}
+  vpPlay(false); VLOOP = false;
+  const move = (ev) => {
+    if (!VTRIM) return;
+    let x = Math.round(at(ev.clientX) * 10) / 10;
+    if (VTRIM.which === "s") { const e0 = v.e != null ? v.e : Math.min(v.dur, x + VID_MAX); x = Math.max(0, Math.min(x, e0 - VID_MIN)); if (v.e != null && v.e - x > VID_MAX) v.e = x + VID_MAX; v.s = x; }
+    else { x = Math.max((v.s || 0) + VID_MIN, Math.min(x, v.dur, (v.s || 0) + VID_MAX)); v.e = x; }
+    vpSeek(x); vTrimPaint(document.getElementById("vidBox"), v, x);
+  };
+  const up = () => {
+    t.removeEventListener("pointermove", move); t.removeEventListener("pointerup", up); t.removeEventListener("pointercancel", up);
+    const w = VTRIM && VTRIM.which; VTRIM = null;
+    if (w === "s") loadStill(s);
+    vpSeek(v.s || 0); markDirty(); vidPanel(); repaint();
+  };
+  t.addEventListener("pointermove", move); t.addEventListener("pointerup", up); t.addEventListener("pointercancel", up);
+});
+/* 큰 미리보기 뒤 영상을 맞춘 값대로 놓는다 — 사진 맞추기와 같은 셈 (fitNorm). 맥 결과 보기일 땐 손대지 않는다. */
+function vidFitApply() {
+  const lay = document.getElementById("vidLayer"); if (!lay) return;
+  const s = cur < deck.slides.length ? deck.slides[cur] : null, v = vidOf(s);
+  const node = lay.querySelector("video, .ytw");
+  let bgEl = lay.querySelector(".vbg");
+  if (!node || !v || !s.fit || VIEW_OUT) {
+    if (node) node.removeAttribute("style");
+    if (bgEl) bgEl.remove();
+    lay.style.background = "";
+    return;
+  }
+  const n = fitNorm(vidDims(s), s.fit), k = lay.clientWidth / W;
+  node.style.cssText = "left:" + ((W / 2 - n.cx * n.nw) * k) + "px;top:" + ((H / 2 - n.cy * n.nh) * k) + "px;width:" + (n.nw * k) + "px;height:" + (n.nh * k) +
+                       "px;object-fit:fill;z-index:1";
+  lay.style.background = n.bg === "white" ? "#fff" : "#000";
+  const su = n.bg === "blur" ? stillUrl(v) : null;
+  if (su) {
+    if (!bgEl) { bgEl = document.createElement("div"); bgEl.className = "vbg"; lay.prepend(bgEl); }
+    bgEl.style.backgroundImage = 'url("' + su + '")';
+  } else if (bgEl) bgEl.remove();
+}
+window.addEventListener("resize", () => { try { vidFitApply(); } catch (_) {} });
 
 /* ── 잡동사니 ──────────────────────────────────────────────────────────── */
 let toastTimer = null;
@@ -3553,9 +3642,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.25 17:44';
+    a.title = '판 10.25 17:59';
     var ver = document.createElement('span');
-    ver.textContent = '10.25 17:44';
+    ver.textContent = '10.25 17:59';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
