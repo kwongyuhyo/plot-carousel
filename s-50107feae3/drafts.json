@@ -1565,9 +1565,65 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792911410/nicuolzoxx0c67haefvc.jpg",
      "key": "9LJn-arv0kk@0.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-25T15:57+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792911725/plot_studio/obm9pfqlvqudhpe6p4t6.mp4",
+     "at": "2026-10-25T16:02+09:00",
+     "file": "9SalE_ManNan_ChinGuE_BigNaTiGa_NaeMin_Ban_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792911726298-c45c3426",
+      "segs": [
+       {
+        "start": 4.21,
+        "end": 6.51,
+        "text": "WOULD JU MARRY ME?!"
+       },
+       {
+        "start": 10.2,
+        "end": 12.5,
+        "text": "YES!!!"
+       },
+       {
+        "start": 24.31,
+        "end": 25.5,
+        "text": "FIRST MEAL THAT SHE"
+       },
+       {
+        "start": 25.5,
+        "end": 26.61,
+        "text": "MADE FOR ME ;)"
+       },
+       {
+        "start": 32.23,
+        "end": 33.17,
+        "text": "SOME RANDOM DUDE"
+       },
+       {
+        "start": 33.17,
+        "end": 34.53,
+        "text": "TOOK THE CAMERA LOL"
+       },
+       {
+        "start": 38.7,
+        "end": 41.97,
+        "text": "NAJABABARA WHY DO"
+       },
+       {
+        "start": 41.97,
+        "end": 42.76,
+        "text": "GIRLS LOVE FLOWER"
+       },
+       {
+        "start": 42.76,
+        "end": 44.44,
+        "text": "SO MUCH STILL DON'T"
+       },
+       {
+        "start": 44.44,
+        "end": 45.04,
+        "text": "KNOW"
+       }
+      ]
+     }
     }
    },
    "corner_name": "후속"
@@ -1713,7 +1769,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-25T15:57+09:00"
+  "at": "2026-10-25T16:02+09:00"
  },
  "slots": {
   "basis": 228,
