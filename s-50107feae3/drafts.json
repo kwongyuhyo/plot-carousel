@@ -4282,6 +4282,145 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-41ac9f6b",
+    "account": "@규효 공유 · @glowupmag",
+    "url": "https://www.instagram.com/p/De0za4wgf-s/?srtk=NXNxc2U1cHljNHg0",
+    "image": null,
+    "head": "혁오, 11월 14일 스포티파이 스픽이지에서 미발매곡 포함 6곡 · 카더가든 토크",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T04:14+09:00",
+   "key": "dc40aa38",
+   "by": "claude",
+   "subjects": [
+    "혁오"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "올해 싱글 세 곡을 낸 혁오가 아직 안 낸 다음 곡을 500여 명 앞에서 먼저 부른다",
+    "why": "규효 맡김 · 혁오 '지는 날' 이후 이어지는 행보, 카더가든 토크"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T04:14+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n혁오가 아직 발표하지 않은 신곡을 500여 명 앞에서 먼저 들려줍니다.\n\n스포티파이(@spotifykr)의 라이브 시리즈 '스포티파이 스픽이지'가 올해 무대의 주인공으로 혁오를 골랐는데요, 혁오는 11월 14일 성수동 에스팩토리에서 미발매곡을 포함한 6곡을 부르고, 공연 뒤에는 카더가든(@carthegarden)의 진행으로 음악 작업과 창작 이야기를 나눕니다.\n\n혁오는 8월 'Godspeed!'와 'KoK', 이달 '지는 날'까지 올해 싱글 세 곡을 차례로 내놨습니다. 그다음 노래를 음원보다 무대에서 먼저 듣게 되는 셈입니다.\n\n지난해에는 실리카겔(@sillicagel.official)과 DAY6가 이 무대에 섰습니다. 관객은 사전 선정된 스포티파이 프리미엄 이용자로 채워지며, 공연과 토크 영상은 추후 스포티파이 앱에서 공개될 예정입니다.\n\n#PLOT #혁오 #스포티파이스픽이지 #카더가든 #지는날 #오혁\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792955646/ffaja8aqejoa646ogxyj.jpg\n제목: 혁오, 미발매곡을|성수에서 먼저 부른다\n부제: 11월 14일 스포티파이 스픽이지 · 토크 진행 카더가든\n출처: @hyukohofficial\n",
+    "caption": "혁오가 아직 발표하지 않은 신곡을 500여 명 앞에서 먼저 들려줍니다.\n\n스포티파이(@spotifykr)의 라이브 시리즈 '스포티파이 스픽이지'가 올해 무대의 주인공으로 혁오를 골랐는데요, 혁오는 11월 14일 성수동 에스팩토리에서 미발매곡을 포함한 6곡을 부르고, 공연 뒤에는 카더가든(@carthegarden)의 진행으로 음악 작업과 창작 이야기를 나눕니다.\n\n혁오는 8월 'Godspeed!'와 'KoK', 이달 '지는 날'까지 올해 싱글 세 곡을 차례로 내놨습니다. 그다음 노래를 음원보다 무대에서 먼저 듣게 되는 셈입니다.\n\n지난해에는 실리카겔(@sillicagel.official)과 DAY6가 이 무대에 섰습니다. 관객은 사전 선정된 스포티파이 프리미엄 이용자로 채워지며, 공연과 토크 영상은 추후 스포티파이 앱에서 공개될 예정입니다.\n\n#PLOT #혁오 #스포티파이스픽이지 #카더가든 #지는날 #오혁",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955646/ffaja8aqejoa646ogxyj.jpg",
+      "credit": "@hyukohofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792871789/ft46r3f6qb0mtwf1ckw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955649/vdztg7edv4jiluppcmyo.jpg",
+      "credit": "@hyukohofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792871778/sctpbypiymk0g87rvv8r.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955651/epaxivhh8zqifcjdmtah.jpg",
+      "credit": "@hyukohofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792871783/qpdrkoqcfj0pgc20nnce.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955655/kavsj116mlvwc7taa5tq.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/KjNb84y2/c9cdf7300a1e.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955646/ffaja8aqejoa646ogxyj.jpg",
+      "credit": "@hyukohofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792871789/ft46r3f6qb0mtwf1ckw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955649/vdztg7edv4jiluppcmyo.jpg",
+      "credit": "@hyukohofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792871778/sctpbypiymk0g87rvv8r.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955651/epaxivhh8zqifcjdmtah.jpg",
+      "credit": "@hyukohofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792871783/qpdrkoqcfj0pgc20nnce.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955655/kavsj116mlvwc7taa5tq.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/KjNb84y2/c9cdf7300a1e.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "혁오, 미발매곡을|성수에서 먼저 부른다",
+      "sub": "11월 14일 스포티파이 스픽이지 · 토크 진행 카더가든"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "혁오의 다음 노래,|500명이 먼저 듣는다",
+      "sub": "11월 14일 성수 에스팩토리"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "혁오 공연 끝나면|카더가든이 토크",
+      "sub": "스포티파이 스픽이지 · 미발매곡 포함 6곡"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 응모(11월 1일까지·스포티파이 코리아 인스타) 문장은 기사 두 곳 모두에 없어(기사는 '사전 선정 이용자 초대'만) 캡션에서 뺐음 — 스포티파이 코리아 게시물로 확인되면 맨 끝에 다시 넣기",
+     "숏폼 비움 — 공연이 11/14라 아직 영상이 없음 (공연 뒤 스포티파이 앱 공개 예정)"
+    ],
+    "research": [
+     {
+      "title": "싱글리스트 — 혁오, 스포티파이서 500명 한정 라이브 공연…카더가든 진행 (10/23)",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=775796"
+     },
+     {
+      "title": "파이낸셜투데이 — 스포티파이, 혁오와 함께 'Spotify SPEAKEASY' 개최 (10/25)",
+      "link": "https://www.ftoday.co.kr/news/articleView.html?idxno=368030"
+     },
+     {
+      "title": "싱글리스트 — 혁오, 새 싱글 '지는 날' 발매 (10/7)",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=771531"
+     },
+     {
+      "title": "혁오 인스타그램 — '지는 날' Out Now (10/7)",
+      "link": "https://www.instagram.com/hyukohofficial/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955657/sahwzgcb0id550cwsshw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955658/xj05ojie3vuqbztm7hu9.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955659/i8etvgdfdimlnbooplmg.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955659/fzi89sbnp65wni2nlqik.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955657/sahwzgcb0id550cwsshw.jpg"
+     },
+     "at": "2026-10-26T04:14+09:00",
+     "v": {
+      "A": "b1e9db8f",
+      "B": "5d4c7554",
+      "C": "ac7d661e"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -4444,11 +4583,11 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 10,
+    "drafts": 11,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T04:11+09:00"
+  "at": "2026-10-26T04:14+09:00"
  },
  "slots": {
   "basis": 236,
