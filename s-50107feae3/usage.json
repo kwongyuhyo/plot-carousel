@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-25T17:02+09:00",
+ "generated_at": "2026-10-25T18:09+09:00",
  "cycle_start": "2026-10-15",
  "next_credit": "2026-11-15",
  "credit": 100.0,
  "spent": 27.16,
  "today": 0.43,
- "per_day": 2.54,
- "calls": 13339,
+ "per_day": 2.53,
+ "calls": 13342,
  "by": [
   {
    "name": "작성기 (Claude Code)",
