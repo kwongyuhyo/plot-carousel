@@ -2388,6 +2388,128 @@
      }
     }
    },
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De8gxNqGdlQ/",
+    "cover": "A",
+    "at": "2026-10-26T14:17+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:ord-32dc9c7e",
+    "account": "@규효 공유 · @newsourcemag",
+    "url": "https://www.instagram.com/p/De8QjQ-TLon/?exln=NDZjczlmamN5Yjhu",
+    "image": null,
+    "head": "윤하, 정산금 미지급으로 14년 함께한 C9에 전속계약 해지 통보",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T14:57+09:00",
+   "key": "7f9ba6cd",
+   "by": "claude",
+   "subjects": [
+    "윤하"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "14년 함께한 C9과의 동행 마무리 — 그 안에 '사건의 지평선'과 20주년 7집이 있었다",
+    "why": "규효 맡기기 · 오늘(26일) 법률대리인 발표로 기사 다수 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T14:57+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n윤하가 14년을 함께한 소속사 C9엔터테인먼트를 떠납니다.\n\n윤하의 법률대리인 법무법인 일로는 26일, 오래 이어진 정산금 미지급 문제를 바로잡아 달라고 요구했지만 이행되지 않아 지난 9월 전속계약 해지를 통보했다고 밝혔는데요, C9 측도 공문으로 해지 효력이 9월 14일 발생했다는 점을 인정했다고 전했습니다. 윤하 측은 미지급 정산금 청구 소송도 낸 상태입니다.\n\n2012년 C9과 처음 계약을 맺은 뒤로, '사건의 지평선'의 역주행도 데뷔 20주년 정규 7집도 모두 이 14년 안에서 나왔습니다.\n\n윤하 측은 C9의 다른 아티스트와 직원은 이번 일과 무관하다고 덧붙이며, \"앞으로도 음악 활동을 이어갈 것\"이라고 전했습니다.\n\n#PLOT #윤하 #C9엔터테인먼트 #전속계약 #사건의지평선\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792994252/ha0ijeu8muzc3lcrztmi.jpg\n제목: 윤하, 14년 함께한|C9과 전속계약 해지\n부제: 정산금 미지급 문제로 지난 9월 통보\n출처:\n",
+    "caption": "윤하가 14년을 함께한 소속사 C9엔터테인먼트를 떠납니다.\n\n윤하의 법률대리인 법무법인 일로는 26일, 오래 이어진 정산금 미지급 문제를 바로잡아 달라고 요구했지만 이행되지 않아 지난 9월 전속계약 해지를 통보했다고 밝혔는데요, C9 측도 공문으로 해지 효력이 9월 14일 발생했다는 점을 인정했다고 전했습니다. 윤하 측은 미지급 정산금 청구 소송도 낸 상태입니다.\n\n2012년 C9과 처음 계약을 맺은 뒤로, '사건의 지평선'의 역주행도 데뷔 20주년 정규 7집도 모두 이 14년 안에서 나왔습니다.\n\n윤하 측은 C9의 다른 아티스트와 직원은 이번 일과 무관하다고 덧붙이며, \"앞으로도 음악 활동을 이어갈 것\"이라고 전했습니다.\n\n#PLOT #윤하 #C9엔터테인먼트 #전속계약 #사건의지평선",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792994252/ha0ijeu8muzc3lcrztmi.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792994252/ha0ijeu8muzc3lcrztmi.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "윤하, 14년 함께한|C9과 전속계약 해지",
+      "sub": "정산금 미지급 문제로 지난 9월 통보"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "윤하가 소속사에|전속계약 해지 통보",
+      "sub": "정산금 미지급 시정 요구가 이행되지 않아"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "\"앞으로도 음악 활동|이어갈 것\"",
+      "sub": "윤하, C9과 14년 동행 마무리"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진이 마스크 쓴 공항 사진이라 윤하 본인인지 얼굴로 확인할 수 없고 출처도 모름. 오른쪽 위 로고가 PLOT 로고인지 남의 워터마크인지 봐 주세요. 윤하 공식 사진으로 바꾸길 권함",
+     "숏폼은 비움 — 기사형 소식이고 본인 발언 영상이 없어 표지 한 장 + 캡션으로만 씀",
+     "표지 사진: 사진 DB에 윤하가 없고 기사·위키미디어 사진은 워터마크·해상도 문제로 빠져 자동 검색 사진(마스크 쓴 출국길)이 들어감 — 출처 확인 후 윤하 인스타 사진으로 바꾸길 권함"
+    ],
+    "research": [
+     {
+      "title": "경향신문 — 가수 윤하 \"정산금 미지급\"···소속사에 전속계약 해지 통보",
+      "link": "https://www.khan.co.kr/article/202610261405001"
+     },
+     {
+      "title": "문화일보 — \"정산금 못받았다\"…윤하, C9이엔티와 전속계약 종료",
+      "link": "https://www.munhwa.com/article/11626202"
+     },
+     {
+      "title": "일간스포츠 — '전속계약 해지' 윤하 [왓IS]",
+      "link": "https://isplus.com/article/view/isp202610260099"
+     },
+     {
+      "title": "SBS 뉴스 — \"정산금 미지급\" 윤하 결국…14년 함께한 소속사에 통보",
+      "link": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008814990"
+     },
+     {
+      "title": "위키트리 — '사건의 지평선' 역주행 1위",
+      "link": "https://www.wikitree.co.kr/articles/804034"
+     },
+     {
+      "title": "뉴스서울 — '20주년' 윤하 정규 7집",
+      "link": "https://newsseoul.co.kr/news/view/1065576024052231"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792994255/pe4gzvbjl9py271fuhv0.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792994255/qkpwzwznvzzhsy395xfh.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792994257/smnzml7wojlckridmihn.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792994257/d4u9x6okm0gnm57pfiya.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792994255/pe4gzvbjl9py271fuhv0.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T14:57+09:00",
+     "v": {
+      "A": "4d1dee2d",
+      "B": "cfe9afce",
+      "C": "5a9fa2e1"
+     }
+    }
+   },
    "corner_name": "소식"
   }
  ],
@@ -2395,7 +2517,7 @@
  "corners": {
   "week": "10/26~11/01",
   "days_left": 7,
-  "done": 4,
+  "done": 5,
   "goal": 28,
   "corners": [
    {
@@ -2546,19 +2668,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 3,
-    "left": 1,
-    "need_today": 1,
+    "done": 4,
+    "left": 0,
+    "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 10,
+    "drafts": 11,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T11:32+09:00"
+  "at": "2026-10-26T14:57+09:00"
  },
  "slots": {
-  "basis": 240,
+  "basis": 241,
   "card": [
    {
     "from": 18,
