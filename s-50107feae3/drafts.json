@@ -1540,7 +1540,7 @@
     }
    },
    "corner_name": "이번 주 티켓 오픈",
-   "corner_no": 2,
+   "corner_no": 3,
    "captures": [
     {
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978537/xtmunwolqnv1hfnrwtas.jpg",
@@ -3220,7 +3220,7 @@
     }
    },
    "corner_name": "이번 주 티켓 오픈",
-   "corner_no": 3,
+   "corner_no": 4,
    "published": {
     "permalink": "https://www.instagram.com/p/De9F0ZdFFJ_/",
     "cover": "A",
@@ -4100,13 +4100,129 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-eea4dfbb",
+    "account": "@규효 공유 · @lemag.kr",
+    "url": "https://www.instagram.com/p/DeZDesyzUY5/?dlrf=MTBsZHczcHF0Zzl0eQ==",
+    "image": null,
+    "head": "솔자 보이 'SOULJA BOY 2028' — SNL 패러디 속 출마 선언을 7년 만에 본인이 꺼냈다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T21:07+09:00",
+   "key": "071fe00c",
+   "by": "claude",
+   "subjects": [
+    "Soulja Boy"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "2019년 SNL 패러디 속 '솔자 보이 대선 출마'를 7년 뒤 본인이 직접 꺼냈다",
+    "why": "규효 맡기기 · 해외 힙합 화제, 여러 매체가 다룸"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T21:07+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n솔자 보이가 'SOULJA BOY 2028'이라는 문구를 내걸었습니다.\n\n지난 10일 성조기 앞에서 찍은 사진과 함께 올린 글에서, 그는 음악에서 사업, 기술까지 늘 더 크게 생각해 왔다며 그 비전을 공직에서 펼친다는 게 어떤 의미일지 고민하고 있다고 적었는데요, 경제적 기회, 형사사법 개혁, 교육, 기술과 AI 네 가지를 앞으로 꺼낼 이야기로 꼽았습니다. 정식 출마 선언이나 소속 정당은 밝히지 않았습니다.\n\n그런데 이 장면, 어딘가 익숙하지 않나요? 2019년 1월 〈SNL〉에서 크리스 레드가 솔자 보이로 분장해 2020년 대선 출마를 선언하는 패러디를 선보인 적이 있습니다. 7년 전 코미디 속 장면을 이번엔 솔자 보이 본인이 직접 꺼낸 셈입니다.\n\n#PLOT #솔자보이 #SouljaBoy #2028대선 #SNL #힙합\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793016465/krjctqd9ct2w3llivkgj.jpg\n제목: 솔자 보이,|2028 대선 출마 시사\n부제: 성조기 앞에서 'SOULJA BOY 2028'\n출처: @souljaboy\n",
+    "caption": "솔자 보이가 'SOULJA BOY 2028'이라는 문구를 내걸었습니다.\n\n지난 10일 성조기 앞에서 찍은 사진과 함께 올린 글에서, 그는 음악에서 사업, 기술까지 늘 더 크게 생각해 왔다며 그 비전을 공직에서 펼친다는 게 어떤 의미일지 고민하고 있다고 적었는데요, 경제적 기회, 형사사법 개혁, 교육, 기술과 AI 네 가지를 앞으로 꺼낼 이야기로 꼽았습니다. 정식 출마 선언이나 소속 정당은 밝히지 않았습니다.\n\n그런데 이 장면, 어딘가 익숙하지 않나요? 2019년 1월 〈SNL〉에서 크리스 레드가 솔자 보이로 분장해 2020년 대선 출마를 선언하는 패러디를 선보인 적이 있습니다. 7년 전 코미디 속 장면을 이번엔 솔자 보이 본인이 직접 꺼낸 셈입니다.\n\n#PLOT #솔자보이 #SouljaBoy #2028대선 #SNL #힙합",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016465/krjctqd9ct2w3llivkgj.jpg",
+      "credit": "@souljaboy",
+      "from": "https://static.arynews.tv/zip-archives/wp-content/uploads/2026/10/Soujla.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016468/re8yzdxy38k98rav7ie6.jpg",
+      "credit": "Black America Web",
+      "from": "https://hiphopwired.com/wp-content/uploads/sites/43/2026/06/17821406455114.jpg?quality=80&amp;strip=all&amp;w=1024&amp;crop=0,0,100,715px"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016465/krjctqd9ct2w3llivkgj.jpg",
+      "credit": "@souljaboy",
+      "from": "https://static.arynews.tv/zip-archives/wp-content/uploads/2026/10/Soujla.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016468/re8yzdxy38k98rav7ie6.jpg",
+      "credit": "Black America Web",
+      "from": "https://hiphopwired.com/wp-content/uploads/sites/43/2026/06/17821406455114.jpg?quality=80&amp;strip=all&amp;w=1024&amp;crop=0,0,100,715px"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "솔자 보이,|2028 대선 출마 시사",
+      "sub": "성조기 앞에서 'SOULJA BOY 2028'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "SNL 속 대선 출마,|솔자 보이가 직접 꺼냈다",
+      "sub": "2019년 패러디, 7년 뒤 본인 게시물로"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "성조기 앞에 선 솔자 보이|'SOULJA BOY 2028'",
+      "sub": "정당·정식 선언은 아직"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼은 비웠습니다 — 유튜브에 본인·공식 영상이 없고, 재업로드·리액션 채널(WHY TV 등)뿐이며 자막도 없습니다",
+     "표지 사진: 사진 DB에 없어 ARY News가 'Instagram' 출처로 실은 본인 게시물 사진(성조기 앞)을 썼습니다 — 얼굴이 오른쪽 끝에 걸리고 조금 흐려 보이니 확인 부탁드립니다"
+    ],
+    "research": [
+     {
+      "title": "FOX LA — Rapper Soulja Boy hints at 2028 run for president (2026-10-12)",
+      "link": "https://www.foxla.com/news/soulja-boy-hints-2028-run-president"
+     },
+     {
+      "title": "Black America Web — Soulja Boy Teases 2028 White House Run (2026-10-13)",
+      "link": "https://blackamericaweb.com/2026/10/13/soulja-boy-teases-2028-president-run/"
+     },
+     {
+      "title": "The Fader — Saturday Night Live's Soulja Boy parody has the rapper running for president (2019-01-27)",
+      "link": "https://www.thefader.com/2019/01/27/saturday-night-lives-soulja-boy-parody-president"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016470/qooydx1wlwwhc7g9rlmc.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016470/iyuhkr4edr3vx1tfr922.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016472/mmzesqsvxfe28f1prswi.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016472/zkku901j1swca0gthdbm.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016470/qooydx1wlwwhc7g9rlmc.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T21:07+09:00",
+     "v": {
+      "A": "e360ca23",
+      "B": "2b7d5151",
+      "C": "141c02c3"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 7,
-  "done": 9,
+  "done": 14,
   "goal": 28,
   "corners": [
    {
@@ -4209,9 +4325,9 @@
     "key": "followup",
     "name": "후속",
     "weekly": 2,
-    "done": 1,
-    "left": 1,
-    "need_today": 1,
+    "done": 2,
+    "left": 0,
+    "need_today": 0,
     "day": null,
     "next_no": null,
     "drafts": 1,
@@ -4221,11 +4337,11 @@
     "key": "tickets",
     "name": "이번 주 티켓 오픈",
     "weekly": 1,
-    "done": 0,
-    "left": 1,
-    "need_today": 1,
+    "done": 1,
+    "left": 0,
+    "need_today": 0,
     "day": 0,
-    "next_no": 2,
+    "next_no": 3,
     "drafts": 2,
     "why": "월요일 고정 — 이번 주 예매가 열리는 공연·내한·페스티벌을 날짜·시간·예매처로"
    },
@@ -4257,27 +4373,27 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 7,
+    "done": 10,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 15,
+    "drafts": 16,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T20:38+09:00"
+  "at": "2026-10-26T21:07+09:00"
  },
  "slots": {
-  "basis": 245,
+  "basis": 250,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.6,
-    "median": 2.88,
-    "n": 34
+    "mult": 2.34,
+    "median": 1.73,
+    "n": 39
    },
    {
     "from": 21,
@@ -4291,7 +4407,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.52,
+    "mult": 1.53,
     "median": 0.87,
     "n": 19
    }
