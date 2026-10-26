@@ -143,20 +143,16 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950407/so38lv9ioyjg71apcxpf.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950407/y5snhlslr046vc5mtg1e.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978364/pqxfsaduswp6kysk0xlr.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978364/ignqzidlwv97nfjsk1pq.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950409/viapebuhhwnwueuyynm9.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950409/breoanpvh9zju86q4iom.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950407/so38lv9ioyjg71apcxpf.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978365/ekeyzqdv0p3s2katui7j.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978365/plwonknbnege2exg2xgw.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978364/pqxfsaduswp6kysk0xlr.jpg"
      },
-     "at": "2026-10-26T02:46+09:00",
-     "v": {
-      "A": "27a715e3",
-      "B": "d239b4bc",
-      "C": "1b481a34"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:32+09:00"
     }
    },
    "corner_name": "이번 주 나온 앨범",
@@ -164,7 +160,13 @@
    "scheduled": {
     "at": "2026-10-26T15:30+09:00",
     "cover": "A"
-   }
+   },
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978449/m5agwdbhfc1ge6e41x8a.jpg",
+     "from": "https://music.bugs.co.kr/artist/80272263?wl_ref=list_ar_01_ar"
+    }
+   ]
   },
   {
    "source": {
@@ -282,20 +284,16 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950997/ysnxzprhiv6ooiepdadc.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950997/anucjnfkc2xspnqaacl0.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978367/kvw4vjnbs2mymvfsfzyb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978367/shobbhwsylhfnce0n7d2.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950999/mbydjwgthi0p0yf7aei2.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950999/jnghaw4zwo3hlnmyzuht.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792950997/ysnxzprhiv6ooiepdadc.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978369/n2akbzm1tzxzzhcijdo3.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978369/lw754t0h2xuvdaie2phx.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978367/kvw4vjnbs2mymvfsfzyb.jpg"
      },
-     "at": "2026-10-26T02:56+09:00",
-     "v": {
-      "A": "a3248ce9",
-      "B": "4e9aa657",
-      "C": "6c6fe874"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:32+09:00"
     }
    },
    "shorts": {
@@ -352,7 +350,13 @@
      "key": "EAsY981YIIE@0.0"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978456/fjfesxmewc0qexapzpbg.jpg",
+     "from": "https://www.specialtimes.co.kr/news/articleView.html?idxno=477908"
+    }
+   ]
   },
   {
    "source": {
@@ -516,27 +520,29 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/hqyevc6gsatb7caiii7j.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/sqj1bqw1tiketohp5g5h.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/nqq84ybvuw6xbp8gmrok.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/luczg48pkq2w39jr13ev.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953183/sr8j7nsfripicttihm2j.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978375/krzx0kcftnm8utesat6a.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978375/qutw5m5w3zte8csl3qfs.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978375/mhorcipkm26g6rbo6vee.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978375/msjivyjgwhmt1ocym6kf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978376/xyh0ha9ftjn96yav5afi.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953185/gooxrtwax9q8aomsrb8l.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953185/hqpkmzkqyv08pd48zvia.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792953182/hqyevc6gsatb7caiii7j.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978378/cyluhfajq4hi3bl6msjw.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978378/a0emxpzlxxgiy6s3i3xj.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978375/krzx0kcftnm8utesat6a.jpg"
      },
-     "at": "2026-10-26T03:33+09:00",
-     "v": {
-      "A": "6b84fd05",
-      "B": "2fde3e99",
-      "C": "b7e4df88"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:32+09:00"
     }
    },
    "corner_name": "이번 주 나온 앨범",
-   "corner_no": 2
+   "corner_no": 2,
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978461/m6q2h2p7cpbzdrxmy070.jpg",
+     "from": "https://music.bugs.co.kr/album/4150965"
+    }
+   ]
   },
   {
    "source": {
@@ -656,20 +662,16 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792954021/bpgqtrrbxxnkblodlnfd.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792954021/qblbktpmpoqfs0zp17vn.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978380/pjadmza0nl1lxdti6lth.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978380/kkulwl1tpcgxlqc5ibu2.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792954024/lbgun2208cbcul5uweao.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792954023/zypxovzcyynz8v8ko5fz.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792954021/bpgqtrrbxxnkblodlnfd.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978382/gbefrrmebyjujoljxam8.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978382/tvfjwpkwxdvbkwewcz1o.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978380/pjadmza0nl1lxdti6lth.jpg"
      },
-     "at": "2026-10-26T03:47+09:00",
-     "v": {
-      "A": "bfe02bfc",
-      "B": "93dff4f2",
-      "C": "21b931d6"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:33+09:00"
     }
    },
    "shorts": {
@@ -723,7 +725,13 @@
     "permalink": "https://www.instagram.com/p/De7a_SuAf79/",
     "cover": "A",
     "at": "2026-10-26T04:07+09:00"
-   }
+   },
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978465/e5jq1doonsgujhszgmy9.jpg",
+     "from": "https://www.melon.com/song/detail.htm?songId=603674574"
+    }
+   ]
   },
   {
    "source": {
@@ -837,20 +845,16 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955445/c1sjlllgovcgkbddzg6v.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955445/gevdre5r8nrofp3lhez0.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978384/zuynrdvun3s1ezwmnytg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978384/ata9np9isba1mthxdmcy.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955447/v4jinwn9owgyfhmajtbd.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955447/ykl5supukdeldkjmryrn.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955445/c1sjlllgovcgkbddzg6v.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978386/q1vtbbfs6wfeofxb15bz.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978386/qlntbr8riebe1tsxlzdv.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978384/zuynrdvun3s1ezwmnytg.jpg"
      },
-     "at": "2026-10-26T04:10+09:00",
-     "v": {
-      "A": "de40de91",
-      "B": "523f44bc",
-      "C": "bd504fa9"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:33+09:00"
     }
    },
    "shorts": {
@@ -957,7 +961,13 @@
     "permalink": "https://www.instagram.com/p/De71qKhEgTi/",
     "cover": "A",
     "at": "2026-10-26T08:00+09:00"
-   }
+   },
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978517/oraejtizsweil3f6v5nb.jpg",
+     "from": "https://www.thatericalper.com/2026/10/22/fred-again-helps-apple-music-turn-sound-into-its-new-visual-identity/"
+    }
+   ]
   },
   {
    "source": {
@@ -1080,20 +1090,16 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955657/sahwzgcb0id550cwsshw.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955658/xj05ojie3vuqbztm7hu9.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978388/b1fxtcaqkqpiiomi9dbe.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978388/akpcydlx60vp9lp1aiuw.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955659/i8etvgdfdimlnbooplmg.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955659/fzi89sbnp65wni2nlqik.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792955657/sahwzgcb0id550cwsshw.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978390/aosrpaprawiu3zxdyo2g.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978390/iuvcj0bw0r6owxumhflw.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978388/b1fxtcaqkqpiiomi9dbe.jpg"
      },
-     "at": "2026-10-26T04:14+09:00",
-     "v": {
-      "A": "b1e9db8f",
-      "B": "5d4c7554",
-      "C": "ac7d661e"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:33+09:00"
     }
    },
    "corner_name": "소식",
@@ -1101,7 +1107,13 @@
     "permalink": "https://www.instagram.com/p/De75FuegerO/",
     "cover": "A",
     "at": "2026-10-26T08:30+09:00"
-   }
+   },
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978522/fl4bqion0ewmq33pdcg3.jpg",
+     "from": "https://www.slist.kr/news/articleView.html?idxno=775796"
+    }
+   ]
   },
   {
    "source": {
@@ -1198,24 +1210,26 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959508/w2uqvqc3eu87e7ndpy5f.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959508/bnwpvau0jmuwrwgsgtcs.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978392/fgfs6bggj5i8c9de5ea9.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978392/hy19b03de2lngqofahsq.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959510/aezyasittodvout6ictr.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959510/kufvq0eu8rykfhmak8u2.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792959508/w2uqvqc3eu87e7ndpy5f.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978394/eqd4tfq00r7abftmjqgo.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978394/rysmknealus7txyaemff.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978392/fgfs6bggj5i8c9de5ea9.jpg"
      },
-     "at": "2026-10-26T05:18+09:00",
-     "v": {
-      "A": "bc8fbd3b",
-      "B": "3f916f44",
-      "C": "8faacfe9"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:33+09:00"
     }
    },
    "corner_name": "이번 주 나온 앨범",
-   "corner_no": 3
+   "corner_no": 3,
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978526/zakg7j22jmmye0nhqmar.jpg",
+     "from": "https://music.bugs.co.kr/artist/20099014"
+    }
+   ]
   },
   {
    "source": {
@@ -1359,25 +1373,27 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/grbnnmfoyrakphzftglv.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/er672gjir6c4t9kcdx5b.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/hk7bjvtpfqs4ulfvkpf1.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/norzjiphnbeourcodnqn.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978396/uitiolf6lewwrtdqo8ab.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978396/d9uzwzoneekrn8nj3suv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978396/zlqhl0qkfvef5tbdfq4t.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978396/d6jmvjkhuvjx3fkphxtq.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962343/wqdteabknokkxbhyks8l.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962343/idy858zxinqp0f4xhchy.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792962341/grbnnmfoyrakphzftglv.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978398/iajm6n0qzas0ah1ceqxg.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978398/fycwunk3j6lz3mkkdxly.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978396/uitiolf6lewwrtdqo8ab.jpg"
      },
-     "at": "2026-10-26T06:05+09:00",
-     "v": {
-      "A": "24cbd2bd",
-      "B": "d3efc965",
-      "C": "c858fb86"
-     }
+     "cvr": 2,
+     "at": "2026-10-26T10:33+09:00"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978531/yzriag0axlbfhekwvedk.jpg",
+     "from": "http://m.rhythmer.net/src/magazine/review/view.php?n=21594"
+    }
+   ]
   },
   {
    "source": {
@@ -1488,7 +1504,13 @@
     "at": "2026-10-26T09:58+09:00"
    },
    "corner_name": "이번 주 티켓 오픈",
-   "corner_no": 2
+   "corner_no": 2,
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978537/xtmunwolqnv1hfnrwtas.jpg",
+     "from": "https://nol.yanolja.com/ticket/products/26015370"
+    }
+   ]
   },
   {
    "source": {
@@ -1672,7 +1694,13 @@
     "at": "2026-10-26T09:58+09:00"
    },
    "corner_name": "그날의 앨범",
-   "corner_no": 2
+   "corner_no": 2,
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978587/xbysmkwps91dw8qz6nx7.jpg",
+     "from": "https://en.wikipedia.org/wiki/TT_(song)"
+    }
+   ]
   },
   {
    "source": {
@@ -1798,7 +1826,13 @@
     "why": "레이더 4위(A2O · 기사 다수) · A2O LITE 팔로워 하루 +4.9만 · 규효 10/17 '이수만의 녹슬지 않은 감' 결 그대로",
     "at": "2026-10-26T09:58+09:00"
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978639/njyrklajd0luof9gyhgc.jpg",
+     "from": "http://www.osen.co.kr/article/G1112898102"
+    }
+   ]
   },
   {
    "source": {
@@ -1892,7 +1926,13 @@
     "permalink": "https://www.instagram.com/p/De8GoHuGRKA/",
     "cover": "A",
     "at": "2026-10-26T10:29+09:00"
-   }
+   },
+   "captures": [
+    {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978649/ldconcrbcre1afjhqmjq.jpg",
+     "from": "https://isplus.com/article/view/isp202610260024"
+    }
+   ]
   }
  ],
  "skipped": [],
