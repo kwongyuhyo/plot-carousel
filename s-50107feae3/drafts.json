@@ -3211,13 +3211,220 @@
    },
    "corner_name": "이번 주 티켓 오픈",
    "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:brk-edb5c21e",
+    "account": "@갈등·반응",
+    "url": "https://www.mediapen.com/news/view/1132379",
+    "image": null,
+    "head": "A2O LITE, 'NEON'으로 데뷔 13일 만에 인기가요 1위 · 음방 4관왕",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T18:40+09:00",
+   "key": "f8211259",
+   "by": "claude",
+   "subjects": [
+    "A2O LITE"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "데뷔 13일 만에 인기가요까지 — 이수만 걸그룹 A2O LITE 의 음방 4관왕과 소감",
+    "why": "A2O 관련 기사·반응이 오늘 몰렸고, 사람이 보이는 깨끗한 축은 25일 인기가요 1위와 멤버들의 소감"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T18:40+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nA2O LITE(@a2o.lite)가 데뷔곡 'NEON'으로 SBS 〈인기가요〉 1위에 올랐습니다.\n\n지난 13일 발표한 곡인데요, 20일 〈더쇼〉를 시작으로 〈쇼! 챔피언〉, 〈엠카운트다운〉에 이어 25일 〈인기가요〉까지 데뷔 13일 만에 음악방송 네 곳에서 1위를 했습니다.\n\n1위 소감에서 A2O LITE는 데뷔한 지 얼마 안 됐는데 많은 사랑을 받아 \"아직 실감이 잘 안 나는 것 같다\"며 이수만 프로듀서를 비롯한 제작진에게 고마움을 전했습니다. SM엔터테인먼트를 떠난 이수만이 내놓은 걸그룹이 첫 지상파 트로피까지 손에 쥐었습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #이수만 #인기가요\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793007631/cg2pciyjiju81dv9ba3g.jpg\n제목: A2O LITE, 데뷔|13일 만에 음방 4관왕\n부제: 'NEON'으로 SBS 〈인기가요〉 1위\n출처: @a2o.lite\n",
+    "caption": "A2O LITE(@a2o.lite)가 데뷔곡 'NEON'으로 SBS 〈인기가요〉 1위에 올랐습니다.\n\n지난 13일 발표한 곡인데요, 20일 〈더쇼〉를 시작으로 〈쇼! 챔피언〉, 〈엠카운트다운〉에 이어 25일 〈인기가요〉까지 데뷔 13일 만에 음악방송 네 곳에서 1위를 했습니다.\n\n1위 소감에서 A2O LITE는 데뷔한 지 얼마 안 됐는데 많은 사랑을 받아 \"아직 실감이 잘 안 나는 것 같다\"며 이수만 프로듀서를 비롯한 제작진에게 고마움을 전했습니다. SM엔터테인먼트를 떠난 이수만이 내놓은 걸그룹이 첫 지상파 트로피까지 손에 쥐었습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #이수만 #인기가요",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007631/cg2pciyjiju81dv9ba3g.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/867783109_17902292769606064_9039097889988779849_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=iu3HcB3NmBcQ7kNvwHKhjQ9&_nc_oc=AdoDyNfm4nl_me_DljkIUX_ksPDrLoCCfLtsNjOBkRboW8LlV_xNesfzvbtqs26fApc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=1raiZ_5oZmBPp9mH4KmDjg&oh=00_AQP8BxTmusTOtkx2t8TRsTlkfMlMaCgwDO1ONHAVbvbJeA&oe=6AE4E5EC"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007633/asgpabbdd2tzc3qaihyj.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518431/urujzoevdmiofqedghng.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007636/siebrv9e6sripzme4v30.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518439/dkj2ijyqm8bnnfstsj6m.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007638/c2mstzkdrzsdvfvyik12.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518530/veobneuw0p9mfyuexuk9.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007631/cg2pciyjiju81dv9ba3g.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/867783109_17902292769606064_9039097889988779849_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=iu3HcB3NmBcQ7kNvwHKhjQ9&_nc_oc=AdoDyNfm4nl_me_DljkIUX_ksPDrLoCCfLtsNjOBkRboW8LlV_xNesfzvbtqs26fApc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=1raiZ_5oZmBPp9mH4KmDjg&oh=00_AQP8BxTmusTOtkx2t8TRsTlkfMlMaCgwDO1ONHAVbvbJeA&oe=6AE4E5EC"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007633/asgpabbdd2tzc3qaihyj.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518431/urujzoevdmiofqedghng.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007636/siebrv9e6sripzme4v30.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518439/dkj2ijyqm8bnnfstsj6m.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007638/c2mstzkdrzsdvfvyik12.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518530/veobneuw0p9mfyuexuk9.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "A2O LITE, 데뷔|13일 만에 음방 4관왕",
+      "sub": "'NEON'으로 SBS 〈인기가요〉 1위"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "이수만의 걸그룹,|인기가요까지 1위",
+      "sub": "A2O LITE, 데뷔 13일 만에 음악방송 4관왕"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "\"아직 실감이 잘|안 나는 것 같습니다\"",
+      "sub": "A2O LITE, 'NEON'으로 인기가요 1위"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] '실물 음반 없이·디지털 싱글'은 기사 한 곳에서만 보여 뺐습니다. 소감은 멤버 한 명이 말했는데 누군지 확인하지 못해 그룹명으로 적었습니다",
+     "클립 위험: 높음 — SBSKPOP X INKIGAYO (30초로 자름)",
+     "아이찡 부모 회사 임금체불·모친 사과 건은 가족 사생활이라 뺐습니다 — 이 소식으로 터진 것이라면 그 각도는 다루지 않는 게 맞는지"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 — A2O LITE, 데뷔 2주도 안 됐는데…음악방송 4관왕 달성 (10/26)",
+      "link": "https://www.tenasia.co.kr/article/2026102642064"
+     },
+     {
+      "title": "인터뷰365 — 이수만의 A2O, 마인드로직 AI 기술로 글로벌 팬 소통 확대 (10/26)",
+      "link": "http://www.interview365.com/news/articleView.html?idxno=112281"
+     },
+     {
+      "title": "스타뉴스 — 이수만 귀환, '리틀 보아' 탄생..A2O LITE의 화려한 데뷔 (10/25)",
+      "link": "https://www.starnewskorea.com/music/2026/10/25/2026102315165092030"
+     },
+     {
+      "title": "텐아시아 — '이수만 걸그룹' A2O LITE, 음방 앙코르도 문제 없어 (10/22)",
+      "link": "https://www.tenasia.co.kr/article/2026102275274"
+     },
+     {
+      "title": "미디어펜 — 장민호·김대호, A2O 라이트 '니온' 챌린지 (10/26)",
+      "link": "https://www.mediapen.com/news/view/1132379"
+     },
+     {
+      "title": "SBSKPOP X INKIGAYO — A2O LITE 'NEON' 인기가요 1위 앵콜 직캠 261025",
+      "link": "https://www.youtube.com/watch?v=nPiDysinjIs"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007641/rimbrqjpw9apo8oanddr.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007641/koawardq1gyizkpewwiy.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007643/gb3mufh1sodhxfdzvg5i.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007643/crvwkfkqjkxviargtx2s.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793007641/rimbrqjpw9apo8oanddr.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T18:40+09:00",
+     "v": {
+      "A": "1e3e2dc0",
+      "B": "cb6a618a",
+      "C": "f9332741"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=nPiDysinjIs\n구간: 0:38-1:08\n곡: 실감이 잘 안 나요\n아티스트: 이렇게 많은 사랑을 받아\n피처링:\n후킹: 데뷔한 지 얼마 안 됐는데\n출처: SBSKPOP X INKIGAYO\n자막: 자동",
+    "caption": "A2O LITE(@a2o.lite)가 데뷔 13일 만에 SBS 〈인기가요〉 1위에 올랐습니다.\n\n25일 방송에서 데뷔곡 'NEON'으로 받은 트로피인데요, 20일 〈더쇼〉, 21일 〈쇼! 챔피언〉, 22일 〈엠카운트다운〉에 이어 네 번째 음악방송 1위이자 첫 지상파 1위입니다.\n\n영상은 1위 발표 직후 소감 장면입니다. A2O LITE는 \"아직 실감이 잘 안 나는 것 같다\"며 이수만 프로듀서와 유영진 이사를 비롯한 제작진 이름을 하나하나 불렀습니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #인기가요",
+    "hooks": {
+     "A": "데뷔한 지 얼마 안 됐는데 / 이렇게 많은 사랑을 받아 / 실감이 잘 안 나요",
+     "B": "이수만 걸그룹 A2O LITE / 데뷔 13일 만에 / 음방 4관왕",
+     "C": "데뷔 13일 만에 / 지상파 첫 1위까지 / 'NEON'의 2주"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=nPiDysinjIs",
+     "credit": "SBSKPOP X INKIGAYO",
+     "range": [
+      38.0,
+      68.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] '실물 음반 없이·디지털 싱글'은 기사 한 곳에서만 보여 뺐습니다. 소감은 멤버 한 명이 말했는데 누군지 확인하지 못해 그룹명으로 적었습니다",
+     "클립 위험: 높음 — SBSKPOP X INKIGAYO (30초로 자름)",
+     "아이찡 부모 회사 임금체불·모친 사과 건은 가족 사생활이라 뺐습니다 — 이 소식으로 터진 것이라면 그 각도는 다루지 않는 게 맞는지"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 — A2O LITE, 데뷔 2주도 안 됐는데…음악방송 4관왕 달성 (10/26)",
+      "link": "https://www.tenasia.co.kr/article/2026102642064"
+     },
+     {
+      "title": "인터뷰365 — 이수만의 A2O, 마인드로직 AI 기술로 글로벌 팬 소통 확대 (10/26)",
+      "link": "http://www.interview365.com/news/articleView.html?idxno=112281"
+     },
+     {
+      "title": "스타뉴스 — 이수만 귀환, '리틀 보아' 탄생..A2O LITE의 화려한 데뷔 (10/25)",
+      "link": "https://www.starnewskorea.com/music/2026/10/25/2026102315165092030"
+     },
+     {
+      "title": "텐아시아 — '이수만 걸그룹' A2O LITE, 음방 앙코르도 문제 없어 (10/22)",
+      "link": "https://www.tenasia.co.kr/article/2026102275274"
+     },
+     {
+      "title": "미디어펜 — 장민호·김대호, A2O 라이트 '니온' 챌린지 (10/26)",
+      "link": "https://www.mediapen.com/news/view/1132379"
+     },
+     {
+      "title": "SBSKPOP X INKIGAYO — A2O LITE 'NEON' 인기가요 1위 앵콜 직캠 261025",
+      "link": "https://www.youtube.com/watch?v=nPiDysinjIs"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/nPiDysinjIs/maxresdefault.jpg",
+    "render": {
+     "status": "queued",
+     "at": "2026-10-26T18:40+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 7,
-  "done": 6,
+  "done": 9,
   "goal": 28,
   "corners": [
    {
@@ -3320,8 +3527,8 @@
     "key": "followup",
     "name": "후속",
     "weekly": 2,
-    "done": 0,
-    "left": 2,
+    "done": 1,
+    "left": 1,
     "need_today": 1,
     "day": null,
     "next_no": null,
@@ -3368,19 +3575,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 5,
+    "done": 7,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 12,
+    "drafts": 13,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T17:02+09:00"
+  "at": "2026-10-26T18:40+09:00"
  },
  "slots": {
-  "basis": 242,
+  "basis": 245,
   "card": [
    {
     "from": 18,
@@ -3402,9 +3609,9 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.69,
-    "median": 1.16,
-    "n": 16
+    "mult": 1.51,
+    "median": 0.87,
+    "n": 19
    }
   ],
   "shorts": [
@@ -3435,10 +3642,10 @@
   ]
  },
  "factors": {
-  "first": 3.19,
-  "later": 1.13,
-  "n": 94,
-  "night": 0.37,
-  "at": "2026-10-19T16:31+09:00"
+  "first": 2.35,
+  "later": 1.25,
+  "n": 124,
+  "night": 0.65,
+  "at": "2026-10-26T17:27+09:00"
  }
 }
