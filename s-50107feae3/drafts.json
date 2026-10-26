@@ -4476,9 +4476,10 @@
     }
    },
    "corner_name": "소식",
-   "scheduled": {
-    "at": "2026-10-26T08:30+09:00",
-    "cover": "A"
+   "published": {
+    "permalink": "https://www.instagram.com/p/De75FuegerO/",
+    "cover": "A",
+    "at": "2026-10-26T08:30+09:00"
    }
   },
   {
@@ -4762,7 +4763,7 @@
  "corners": {
   "week": "10/26~11/01",
   "days_left": 7,
-  "done": 1,
+  "done": 2,
   "goal": 28,
   "corners": [
    {
@@ -4913,8 +4914,8 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 1,
-    "left": 3,
+    "done": 2,
+    "left": 2,
     "need_today": 1,
     "day": null,
     "next_no": null,
@@ -4922,16 +4923,16 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T08:00+09:00"
+  "at": "2026-10-26T08:30+09:00"
  },
  "slots": {
-  "basis": 237,
+  "basis": 238,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.54,
+    "mult": 2.6,
     "median": 2.88,
     "n": 34
    },
@@ -4939,16 +4940,16 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.56,
-    "median": 0.42,
+    "mult": 1.79,
+    "median": 0.71,
     "n": 32
    },
    {
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.45,
-    "median": 0.86,
+    "mult": 1.69,
+    "median": 1.16,
     "n": 16
    }
   ],
