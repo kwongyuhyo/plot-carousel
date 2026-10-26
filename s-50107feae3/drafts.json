@@ -4465,6 +4465,123 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-4203c761",
+    "account": "@규효 공유 · @donotdisturb_mag",
+    "url": "https://www.instagram.com/p/De8ScUFGdGT/?xtok=MTB2NjdrNjlzNGZveA==",
+    "image": null,
+    "head": "누자베스 레이블의 라이브 프로젝트가 10/31 서울 공연 — '지금의 누자베스'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-27T04:23+09:00",
+   "key": "bdbe8332",
+   "by": "claude",
+   "subjects": [
+    "누자베스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "누자베스의 레이블이 꾸린 앙상블이 '지금의 누자베스'를 들고 서울에 온다 — 데뷔 정규 [Metaphorical Music]에서 이어진 이름",
+    "why": "규효 맡기기 · 10/31 공연 + 합정 팝업, 인디·해외 실험 칸"
+   },
+   "added": "claude",
+   "added_at": "2026-10-27T04:23+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n누자베스의 레이블 하이드아웃 프로덕션이 꾸린 라이브 프로젝트 '누자베스 메타포리컬 앙상블'이 10월 31일 서울 무대에 오릅니다.\n\n2010년 세상을 떠난 누자베스의 이름을 건 이 앙상블은 2023년 12월 도쿄 에비스에서 '지금의 누자베스'를 내걸고 처음 공개됐는데요, 이름에는 2003년 데뷔 정규 [Metaphorical Music]과 같은 낱말을 달았습니다.\n\n그 앨범에서 시작된 음악이 23년 뒤 라이브 무대로 서울에 닿는 셈입니다.\n\n공연은 NOL 씨어터 합정 동양생명홀에서 오후 6시에 시작하며, 한정판 의류를 파는 팝업도 열릴 예정입니다.\n\n#PLOT #누자베스 #Nujabes #하이드아웃 #메타포리컬앙상블 #내한공연\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793042631/yc1qk0xkiktwvvzvtcwq.jpg\n제목: 누자베스의 레이블이 꾸린|앙상블, 서울에 온다\n부제: Nujabes Metaphorical Ensemble · 10월 31일 합정\n출처: NOL 티켓\n",
+    "caption": "누자베스의 레이블 하이드아웃 프로덕션이 꾸린 라이브 프로젝트 '누자베스 메타포리컬 앙상블'이 10월 31일 서울 무대에 오릅니다.\n\n2010년 세상을 떠난 누자베스의 이름을 건 이 앙상블은 2023년 12월 도쿄 에비스에서 '지금의 누자베스'를 내걸고 처음 공개됐는데요, 이름에는 2003년 데뷔 정규 [Metaphorical Music]과 같은 낱말을 달았습니다.\n\n그 앨범에서 시작된 음악이 23년 뒤 라이브 무대로 서울에 닿는 셈입니다.\n\n공연은 NOL 씨어터 합정 동양생명홀에서 오후 6시에 시작하며, 한정판 의류를 파는 팝업도 열릴 예정입니다.\n\n#PLOT #누자베스 #Nujabes #하이드아웃 #메타포리컬앙상블 #내한공연",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042631/yc1qk0xkiktwvvzvtcwq.jpg",
+      "credit": "NOL 티켓",
+      "from": "https://ticketimage.interpark.com/Play/image/large/26/26012781_p.gif"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042633/av7clxk4gyqayuj6splh.jpg",
+      "credit": "Hydeout Productions",
+      "from": "https://media.timeout.com/images/106074008/image.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042631/yc1qk0xkiktwvvzvtcwq.jpg",
+      "credit": "NOL 티켓",
+      "from": "https://ticketimage.interpark.com/Play/image/large/26/26012781_p.gif"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042633/av7clxk4gyqayuj6splh.jpg",
+      "credit": "Hydeout Productions",
+      "from": "https://media.timeout.com/images/106074008/image.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "누자베스의 레이블이 꾸린|앙상블, 서울에 온다",
+      "sub": "Nujabes Metaphorical Ensemble · 10월 31일 합정"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'지금의 누자베스'|10월 31일 서울로",
+      "sub": "Nujabes Metaphorical Ensemble Live in Seoul"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "누자베스 메타포리컬|앙상블 서울 공연",
+      "sub": "하이드아웃 프로덕션 공식 라이브 프로젝트"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진이 글자 많은 공연 포스터라 포스터 제목·날짜가 표지 제목 뒤에 겹쳐 읽기 어려움 — 멤버 사진만 잘라 쓰거나 다른 사진으로 바꿀 것",
+     "[검증] 캡션의 '샘플링·재즈·힙합의 결을 라이브 연주로' · 'DJ와 연주자들' 은 출처에 없어 뺐고, 팝업 날짜·장소(10/31~11/3 · 우물서울)는 맡긴 게시물에만 있고 예매처는 '추후 공지'라 날짜·장소를 뺐음 — 공식 공지가 나오면 넣을 것",
+     "숏폼 비움 — 유튜브에 공식 채널 라이브 영상이 없고 관객 직캠뿐"
+    ],
+    "research": [
+     {
+      "title": "NOL 티켓 — Nujabes Metaphorical Ensemble Live in Seoul",
+      "link": "https://nol.yanolja.com/ticket/products/26012781"
+     },
+     {
+      "title": "Time Out Tokyo — Nujabes 50 anniversary flows -An Introduction-",
+      "link": "https://www.timeout.jp/tokyo/ja/news/nujabes-50-anniversary-flows-an-introduction-121223"
+     },
+     {
+      "title": "Wikipedia — Metaphorical Music",
+      "link": "https://en.wikipedia.org/wiki/Metaphorical_Music"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042637/lk8gqlb4bnjbvfn7vqxl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042637/qp5cxaet2uhpep1pzpbo.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042639/qdedwglfxi1limgccqcg.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042639/q6d1oo569v6xfbquysn9.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793042637/lk8gqlb4bnjbvfn7vqxl.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-27T04:23+09:00",
+     "v": {
+      "A": "1866dbd4",
+      "B": "c8b6f0df",
+      "C": "86cd8c7e"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -4627,11 +4744,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 18,
+    "drafts": 19,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T00:55+09:00"
+  "at": "2026-10-27T04:23+09:00"
  },
  "slots": {
   "basis": 253,
@@ -4640,15 +4757,15 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.42,
-    "median": 2.0,
+    "mult": 2.44,
+    "median": 2.25,
     "n": 39
    },
    {
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.72,
+    "mult": 1.73,
     "median": 0.68,
     "n": 34
    },
