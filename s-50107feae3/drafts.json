@@ -162,10 +162,6 @@
    },
    "corner_name": "이번 주 나온 앨범",
    "corner_no": 1,
-   "scheduled": {
-    "at": "2026-10-26T15:30+09:00",
-    "cover": "A"
-   },
    "captures": [
     {
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978449/m5agwdbhfc1ge6e41x8a.jpg",
@@ -2511,13 +2507,244 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-f20197d3",
+    "account": "@갈등·반응",
+    "url": "https://www.nocutnews.co.kr/news/6597138?utm_source=naver&utm_medium=article&utm_campaign=20261026033312",
+    "image": null,
+    "head": "아일릿 윤아, '체포하겠어' 경찰 의상 논란에 \"어떤 관심이든 감사\"",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T16:14+09:00",
+   "key": "b4ed0f40",
+   "by": "claude",
+   "subjects": [
+    "아일릿"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "'체포하겠어' 경찰 의상 비판에 쇼케이스에서 윤아가 직접 답한 말",
+    "why": "17일 첫 공개 무대 의상 논란이 발매 당일 쇼케이스 질문으로 이어져 기사가 몰림"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T16:14+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n아일릿(@illit_official) 윤아가 '체포하겠어' 무대 의상을 둘러싼 질문에 답했습니다.\n\n'체포하겠어'는 지난 17일 인천 인스파이어 아레나 앙코르 콘서트에서 처음 공개됐는데요, 경찰 제복을 변형한 의상에 짧은 치마와 니삭스를 입은 무대를 두고 여성 경찰을 성적 대상화한 것 아니냐는 비판이 나왔습니다.\n\n26일 미니 5집 [BREAK EVEN] 쇼케이스에서 윤아는 \"어떤 관심이든 저희 무대에 관심을 가져주시는 것 자체가 감사하다\"고 말했습니다. '체포하겠어'는 블랙 요원을 바탕으로 한 콘셉트이고, 남은 무대에서 다양한 스타일링을 보여 줄 예정이라는 설명도 덧붙였습니다.\n\n[BREAK EVEN]은 오늘 오후 6시 공개됩니다.\n\n#PLOT #아일릿 #ILLIT #체포하겠어 #BREAKEVEN #윤아\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792998851/l1ysuza4fvovbqweo3kn.jpg\n제목: 아일릿 윤아,|경찰 의상 논란에 답하다\n부제: 미니 5집 [BREAK EVEN] 쇼케이스\n출처: @illit_official\n",
+    "caption": "아일릿(@illit_official) 윤아가 '체포하겠어' 무대 의상을 둘러싼 질문에 답했습니다.\n\n'체포하겠어'는 지난 17일 인천 인스파이어 아레나 앙코르 콘서트에서 처음 공개됐는데요, 경찰 제복을 변형한 의상에 짧은 치마와 니삭스를 입은 무대를 두고 여성 경찰을 성적 대상화한 것 아니냐는 비판이 나왔습니다.\n\n26일 미니 5집 [BREAK EVEN] 쇼케이스에서 윤아는 \"어떤 관심이든 저희 무대에 관심을 가져주시는 것 자체가 감사하다\"고 말했습니다. '체포하겠어'는 블랙 요원을 바탕으로 한 콘셉트이고, 남은 무대에서 다양한 스타일링을 보여 줄 예정이라는 설명도 덧붙였습니다.\n\n[BREAK EVEN]은 오늘 오후 6시 공개됩니다.\n\n#PLOT #아일릿 #ILLIT #체포하겠어 #BREAKEVEN #윤아",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998851/l1ysuza4fvovbqweo3kn.jpg",
+      "credit": "@illit_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792285405/ckpqkubihb9mxkxs807n.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998853/fi1os4o70ybbb1kpcjud.jpg",
+      "credit": "빌리프랩",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792285452/cqdh96e5pktt0mj2anhr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998855/kjlwbwenrxrz2zevhodf.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/865107458_1667513441556777_8819256407119984650_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=AoRB1cIDSAsQ7kNvwGwHxVv&_nc_oc=AdpOq8OJd1m7GGGaNIA6ufNQCUC8vLMcdhu91pU8gfogS3Liynqn9FG2WJsFiawp13g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQJdbS9mRqu9XNA4jNXol-DEUxSQsMHJSJRZb46NfxEJB5X-Su6VpPxxEx47QwX4dOPvLI-riDGk7A&oh=00_AQM0xEf60J_PpUsUss3Fr4NBw3NbFzNpsZb7xtUdxo44UQ&oe=6AE43704"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998856/qlz1rrlgldzvagix8dej.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/864023055_1575578167675607_5309476625100597333_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=3ZLpIdSaqXAQ7kNvwH4mFBm&_nc_oc=AdoT24cLg7ziOOkhaaIo_z_uLay465caflZyMpb2jHjIhV2s0D9d3qNPV1eRJau3_xw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQJoBYHdNz57YVzi1gj00iJN9qyrCTOV_27BoaOXnhzdX3IZrH0bHjVTvCOEF7fBYl55-OnhIH0k6A&oh=00_AQNTgiVNuPTaV9-SM5K29f8JSJdLY5jPdxjlJRkNxDDkrQ&oe=6AE44728"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998858/hfgg7jgcr3ozst4u9v3r.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863486547_18004198977051886_2217012827541500781_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=yf1K7LfzwysQ7kNvwH9cCAl&_nc_oc=AdqxmBDGRTOBMaNI9Jv3bZ2HJXeb1osO_yRSoLk6ZSnDI42R6RBjUL7woHhJXqCdpTw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQLT47DIPb9tVWOgG_XNWTWnl2jAX0ZwrwtjSSHVm3x07-ln_HqtSQaAptQwK7ln5E7LvGt2hbZB2w&oh=00_AQNfYdeGcsF9ctgUjgNdjGq7HHC98gAyq6IWE-WmEgnQsw&oe=6AE41E99"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998860/kveuvo4z4h5gouvn3msz.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/866185333_1786403475812132_7570805218060996147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cTkj6QEWUJUQ7kNvwHUUozP&_nc_oc=AdoooaxKju_RCOk5_PJbFztmGX1Fb9HGOvUcEtxfWcXj1rcyFEMzbT9RyL75J-guM7Q&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQLXLMj85M09bGR-qR34aI-tCoH2B8mspH21zMpOsan0wz1AexsEJ0vmF4mwf_XBrjYbxcndA20zAQ&oh=00_AQMICZ87SJ8kAkkjFdzoK4FkMN8yWJBQqaEiyBTVA6dhuQ&oe=6AE4144D"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998851/l1ysuza4fvovbqweo3kn.jpg",
+      "credit": "@illit_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792285405/ckpqkubihb9mxkxs807n.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998853/fi1os4o70ybbb1kpcjud.jpg",
+      "credit": "빌리프랩",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792285452/cqdh96e5pktt0mj2anhr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998855/kjlwbwenrxrz2zevhodf.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/865107458_1667513441556777_8819256407119984650_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=AoRB1cIDSAsQ7kNvwGwHxVv&_nc_oc=AdpOq8OJd1m7GGGaNIA6ufNQCUC8vLMcdhu91pU8gfogS3Liynqn9FG2WJsFiawp13g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQJdbS9mRqu9XNA4jNXol-DEUxSQsMHJSJRZb46NfxEJB5X-Su6VpPxxEx47QwX4dOPvLI-riDGk7A&oh=00_AQM0xEf60J_PpUsUss3Fr4NBw3NbFzNpsZb7xtUdxo44UQ&oe=6AE43704"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998856/qlz1rrlgldzvagix8dej.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/864023055_1575578167675607_5309476625100597333_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=3ZLpIdSaqXAQ7kNvwH4mFBm&_nc_oc=AdoT24cLg7ziOOkhaaIo_z_uLay465caflZyMpb2jHjIhV2s0D9d3qNPV1eRJau3_xw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQJoBYHdNz57YVzi1gj00iJN9qyrCTOV_27BoaOXnhzdX3IZrH0bHjVTvCOEF7fBYl55-OnhIH0k6A&oh=00_AQNTgiVNuPTaV9-SM5K29f8JSJdLY5jPdxjlJRkNxDDkrQ&oe=6AE44728"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998858/hfgg7jgcr3ozst4u9v3r.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863486547_18004198977051886_2217012827541500781_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=yf1K7LfzwysQ7kNvwH9cCAl&_nc_oc=AdqxmBDGRTOBMaNI9Jv3bZ2HJXeb1osO_yRSoLk6ZSnDI42R6RBjUL7woHhJXqCdpTw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQLT47DIPb9tVWOgG_XNWTWnl2jAX0ZwrwtjSSHVm3x07-ln_HqtSQaAptQwK7ln5E7LvGt2hbZB2w&oh=00_AQNfYdeGcsF9ctgUjgNdjGq7HHC98gAyq6IWE-WmEgnQsw&oe=6AE41E99"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998860/kveuvo4z4h5gouvn3msz.jpg",
+      "credit": "@illit_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/866185333_1786403475812132_7570805218060996147_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=cTkj6QEWUJUQ7kNvwHUUozP&_nc_oc=AdoooaxKju_RCOk5_PJbFztmGX1Fb9HGOvUcEtxfWcXj1rcyFEMzbT9RyL75J-guM7Q&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4QzUIyj3EQiZFXTe9O_t9w&_nc_tpa=Q5bMBQLXLMj85M09bGR-qR34aI-tCoH2B8mspH21zMpOsan0wz1AexsEJ0vmF4mwf_XBrjYbxcndA20zAQ&oh=00_AQMICZ87SJ8kAkkjFdzoK4FkMN8yWJBQqaEiyBTVA6dhuQ&oe=6AE4144D"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "아일릿 윤아,|경찰 의상 논란에 답하다",
+      "sub": "미니 5집 [BREAK EVEN] 쇼케이스"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'어떤 관심이든 감사하다'|아일릿, 의상 논란에 답했다",
+      "sub": "'체포하겠어' 쇼케이스"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "'체포하겠어' 경찰 의상,|아일릿이 내놓은 답",
+      "sub": "블랙 요원 콘셉트라는 설명"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — ILLIT 공식 채널",
+     "표지 사진(사진 DB '윤아' 화보)이 윤아 본인이 맞는지",
+     "반복 — 「아일릿」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "노컷뉴스 — 아일릿 '체포하겠어' 경찰 의상 논란…'뜨거운 관심 놀라워'",
+      "link": "https://www.nocutnews.co.kr/news/6597138"
+     },
+     {
+      "title": "스포츠경향 — 아일릿, '여경 성적 대상화' 논란에 입 열었다",
+      "link": "https://sports.khan.co.kr/article/202610261500003/"
+     },
+     {
+      "title": "허프포스트코리아 — '체포하겠어' 무대 '짧은 치마' 여성 경찰 콘셉트 논란",
+      "link": "https://www.huffingtonpost.kr/article/261315"
+     },
+     {
+      "title": "미주중앙일보(OSEN) — 앙코르 콘서트 '체포하겠어' 첫 공개",
+      "link": "https://www.koreadaily.com/article/20261018161411358"
+     },
+     {
+      "title": "브레이크뉴스 — 미니 5집 'BREAK EVEN' 쇼케이스 종합",
+      "link": "http://www.breaknews.com/1245714"
+     },
+     {
+      "title": "스포츠경향 — 신곡 MV 송강 출연, 오후 6시 발매",
+      "link": "https://sports.khan.co.kr/article/202610261448003?pt=nv"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998863/tx5wpkaklvqlkwspngtp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998863/hl947yrsuomyp8tuq68z.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998865/xmz7e0eo9vivw44izqcf.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998865/nkyxqwpv4f5flmhi7p67.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998863/tx5wpkaklvqlkwspngtp.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T16:14+09:00",
+     "v": {
+      "A": "94957fd2",
+      "B": "69657170",
+      "C": "f83447c8"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=6ruo4VVRjvo\n구간: 1:25-2:10\n곡: 아일릿 '체포하겠어'\n아티스트: 논란이 된 무대\n피처링:\n후킹: 경찰 의상으로\n출처: ILLIT\n자막: 자동",
+    "caption": "아일릿(@illit_official)의 '체포하겠어' 무대 의상이 논란이 됐습니다.\n\n영상은 지난 17일 인천 인스파이어 아레나 앙코르 콘서트에서 처음 공개된 무대인데요, 경찰 제복을 변형한 의상에 짧은 치마와 니삭스를 입은 모습을 두고 여성 경찰을 성적 대상화한 것 아니냐는 비판이 나왔습니다.\n\n26일 미니 5집 [BREAK EVEN] 쇼케이스에서 윤아는 \"어떤 관심이든 저희 무대에 관심을 가져주시는 것 자체가 감사하다\"며, '체포하겠어'는 블랙 요원을 바탕으로 한 콘셉트이고 남은 무대에서 다양한 스타일링을 보여 줄 예정이라고 말했습니다.\n\n[BREAK EVEN]은 오늘 오후 6시 공개됩니다.\n\n영상: ILLIT 공식 유튜브\n\n#PLOT #아일릿 #ILLIT #체포하겠어 #BREAKEVEN #윤아",
+    "hooks": {
+     "A": "어떤 관심이든 / 감사하다는 아일릿 / 논란이 된 그 무대",
+     "B": "경찰 의상으로 / 논란이 된 무대 / 아일릿 '체포하겠어'",
+     "C": "블랙 요원 콘셉트라는 / 아일릿의 설명 / 바로 이 무대입니다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=6ruo4VVRjvo",
+     "credit": "ILLIT",
+     "range": [
+      85.0,
+      130.0
+     ]
+    },
+    "guided": {
+     "rec": "B",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — ILLIT 공식 채널",
+     "표지 사진(사진 DB '윤아' 화보)이 윤아 본인이 맞는지",
+     "반복 — 「아일릿」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "노컷뉴스 — 아일릿 '체포하겠어' 경찰 의상 논란…'뜨거운 관심 놀라워'",
+      "link": "https://www.nocutnews.co.kr/news/6597138"
+     },
+     {
+      "title": "스포츠경향 — 아일릿, '여경 성적 대상화' 논란에 입 열었다",
+      "link": "https://sports.khan.co.kr/article/202610261500003/"
+     },
+     {
+      "title": "허프포스트코리아 — '체포하겠어' 무대 '짧은 치마' 여성 경찰 콘셉트 논란",
+      "link": "https://www.huffingtonpost.kr/article/261315"
+     },
+     {
+      "title": "미주중앙일보(OSEN) — 앙코르 콘서트 '체포하겠어' 첫 공개",
+      "link": "https://www.koreadaily.com/article/20261018161411358"
+     },
+     {
+      "title": "브레이크뉴스 — 미니 5집 'BREAK EVEN' 쇼케이스 종합",
+      "link": "http://www.breaknews.com/1245714"
+     },
+     {
+      "title": "스포츠경향 — 신곡 MV 송강 출연, 오후 6시 발매",
+      "link": "https://sports.khan.co.kr/article/202610261448003?pt=nv"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/6ruo4VVRjvo/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998870/qt4erlqvoiwxrmnnc4ug.jpg",
+     "key": "6ruo4VVRjvo@85.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-26T16:14+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 7,
-  "done": 5,
+  "done": 6,
   "goal": 28,
   "corners": [
    {
@@ -2668,19 +2895,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 4,
+    "done": 5,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 11,
+    "drafts": 12,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T14:57+09:00"
+  "at": "2026-10-26T16:14+09:00"
  },
  "slots": {
-  "basis": 241,
+  "basis": 242,
   "card": [
    {
     "from": 18,
