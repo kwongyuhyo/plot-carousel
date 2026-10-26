@@ -55,6 +55,8 @@
 .stBlk.sel b::after{content:''; position:absolute; left:5px; top:16px; bottom:16px; width:2px; background:#5a3fd0; border-radius:1px}
 .stHeadLine{position:absolute; left:50%; top:0; bottom:0; width:2px; margin-left:-1px; background:#ff3b30; pointer-events:none; z-index:3}
 .stHeadLine::before{content:''; position:absolute; left:-5px; top:0; border:6px solid transparent; border-top:7px solid #ff3b30}
+.stOn.pr .stHeadLine{left:0; margin-left:-1px; will-change:transform}
+.stOn.pr .stRuler{cursor:ew-resize; background:rgba(255,255,255,.03)}
 .stEdit{display:flex; flex-direction:column; gap:4px; padding:8px 12px 0}
 .stWhen{font:500 11.5px/1.2 ui-monospace,Menlo,monospace; color:rgba(255,255,255,.55)}
 .stText{width:100%; box-sizing:border-box; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.22); color:#fff;
@@ -1364,6 +1366,7 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
   </div>
   <div class="ppCtl">
     <button class="ppBtn" id="ppSubs" hidden>💬 말자막 미리 받기</button>
+    <button class="ppBtn" id="ppSubsSrc" hidden title="말자막을 어디서 받을지 — 누르면 바뀝니다">📺 유튜브 자막 먼저</button>
     <button class="ppBtn" id="ppSubEdit" hidden>✏️ 자막 고치기</button>
   </div>
   <div class="ppSubList" id="ppSubList" hidden></div>
@@ -4556,11 +4559,22 @@ function ppTick() {
     if (sub.textContent !== txt) sub.textContent = txt;
   }
 }
+/* 10/26 규효 "요즘 유튜브 자막 잘 되는 거 같은데 그거 기본으로 먼저 받게 선택하는 버튼" — 기본은 유튜브 자막 먼저
+   (사람이 올린 자막 → 유튜브 자동자막 → 없으면 받아쓰기). 누르면 「받아쓰기만」으로. 고른 건 이 기기에 남는다. */
+const CC_KEY = MEM + '.cc';
+function ccMode() { try { return localStorage.getItem(CC_KEY) === 'stt' ? 'stt' : 'yt'; } catch (_) { return 'yt'; } }
+function ccPaint() {
+  const s = $('#ppSubsSrc'); if (!s) return;
+  s.hidden = $('#ppSubs').hidden || PP.kind !== 'yt';
+  s.textContent = ccMode() === 'yt' ? '📺 유튜브 자막 먼저' : '🎙 받아쓰기만';
+  s.classList.toggle('on', ccMode() === 'yt');
+}
 function ppSubsPaint() {
   const b = PP.b, btn = $('#ppSubs'), ed = $('#ppSubEdit');
   if (!btn) return;
   const can = PP.mode === 'seg' && (PP.kind === 'yt' || PP.kind === 'file') && typeof plotStudio !== 'undefined' && plotStudio.on();
   btn.hidden = !can;
+  ccPaint();
   ed.hidden = !((stOk(b) && (can || (PP.mode === 'done' && ppSrcKind(b)))) || (can && !stOk(b)));
   if (PP.subsBusy) return;
   btn.disabled = false;
@@ -4600,6 +4614,7 @@ function ppSubsFetch() {
   const want = { url: (b.url || '').trim(), start: (b.start || '').trim(), end: (b.end || '').trim(),
                  artist: (b.artist || '').trim(), title: (b.title || '').trim(), hook: (b.hook || '').trim(),
                  source: (b.source || '').trim(), category: cat };
+  if (PP.kind === 'yt') want.cc = ccMode();
   plotStudio.send('subs', want, (step, ms) => { btn.textContent = '💬 ' + step + ' · ' + Math.round(ms / 1000) + '초'; })
     .then((sn) => {
       const segs = (sn.subs || []).map(s => ({ start: Number(s.start), end: Number(s.end), text: String(s.text || '') }));
@@ -4757,6 +4772,11 @@ function bindPlay() {
   $('#ppSound').onclick = () => ppSetMuted(!PP.muted);
   $('#ppEdit').onclick = () => { const b = PP.b; PP._popping = true; ppStop(); PP._popping = false; if (b) openPicker(b); };
   $('#ppSubs').onclick = ppSubsFetch;
+  $('#ppSubsSrc').onclick = () => {
+    try { localStorage.setItem(CC_KEY, ccMode() === 'yt' ? 'stt' : 'yt'); } catch (_) {}
+    ccPaint();
+    toast(ccMode() === 'yt' ? '📺 유튜브 자막(사람 → 자동)을 먼저 받고, 없으면 받아쓰기합니다' : '🎙 유튜브 자막 없이 맥이 직접 받아씁니다');
+  };
   $('#ppSubEdit').onclick = () => {
     if (!stOk(PP.b)) { if (PP.mode === 'done') openPlay(PP.i, 'seg').then(ppSubsManual); else ppSubsManual(); return; }
     if (PP.mode === 'done') { openPlay(PP.i, 'seg').then(() => { PP.editOpen = true; ppSubsPaint(); }); return; }
@@ -4795,7 +4815,25 @@ document.addEventListener('DOMContentLoaded', bindPlay);
  *   ✂ 자르기(헤드에서 둘로 — 글자 칸에 커서를 두면 거기서 글을 나눈다) · ⇤ 시작=지금 · 끝=지금 ⇥ · 다음과 합치기 · 지우기 · ＋ 새 줄 · ↶ 되돌리기
  * 컴퓨터 단축키(프리미어처럼): Space 재생 · C 자르기 · I 시작=지금 · O 끝=지금 · Delete 지우기 · ←/→ 0.1초 (Shift 1초) · ⌘/Ctrl+Z 되돌리기 · +/- 확대
  * 바뀔 때마다 기존 ppSubsSave 로 맥에 남는다 (제작할 때 그대로 쓴다). */
-const ST = { pps: 70, sel: -1, undo: [], prog: false, scrubT: 0, raf: 0, lastRel: -1, drag: null, wasPaused: false, scrubbing: false };
+const ST = { pps: 70, sel: -1, undo: [], prog: false, scrubT: 0, raf: 0, lastRel: -1, drag: null, wasPaused: false, scrubbing: false, pr: false, snap: true };
+/* 10/26 규효 "프리미어 프로랑 타임라인 조작 자체를 비슷한 느낌으로" — 마우스(컴퓨터)면 프리미어식(PR):
+   타임라인은 가만히 있고 빨간 재생 헤드가 움직인다 · 눈금을 누르고 끌면 그 시각으로 · 휠=옆으로 · Alt(⌥)/⌘+휠=확대(커서 기준)
+   Space 재생 · J 1초 뒤로 · K 멈춤 · L 재생 · ↑↓ 앞뒤 편집점 · Home/End · \\ 전체 맞춤 · S 붙기 켜고 끄기 · 블록 두 번 누르면 글 고치기.
+   폰(손가락)은 예전처럼 가운데 고정 헤드 + 타임라인을 미는 방식. */
+function stPrNow() { try { return matchMedia('(hover:hover) and (pointer:fine)').matches; } catch (_) { return false; } }
+function stPad() { const w = $('#ppSubList .stWrap'); return ST.pr ? 14 : Math.round((w ? w.clientWidth : 0) / 2); }
+function stRelAt(clientX) {                       // 화면 x → 구간 안 시각
+  const sc = $('#ppSubList .stScroll'); if (!sc) return 0;
+  const rc = sc.getBoundingClientRect();
+  return Math.max(0, Math.min(stLen(), (sc.scrollLeft + (clientX - rc.left) - stPad()) / ST.pps));
+}
+function stHeadPaint(rel) {                       // PR: 재생 헤드 선을 그 시각 자리로
+  const sc = $('#ppSubList .stScroll'), hl = $('#ppSubList .stHeadLine'); if (!sc || !hl) return;
+  if (!ST.pr) { hl.style.transform = ''; hl.style.opacity = ''; return; }
+  const x = stPad() + rel * ST.pps - sc.scrollLeft;
+  hl.style.transform = 'translateX(' + x.toFixed(1) + 'px)';
+  hl.style.opacity = (x < -2 || x > sc.clientWidth + 2) ? '0' : '1';
+}
 const ST_MIN = 0.3, ST_SNAP_PX = 10;
 function stSegs() { return (PP.b && PP.b.subsRef && PP.b.subsRef.segs) || []; }
 function stLen() { return Math.max(0.1, PP.e - PP.a); }
@@ -4822,7 +4860,8 @@ function stBuild() {
   box.classList.add('stOn');
   box.innerHTML =
     '<div class="stHead"><button type="button" class="stB" data-st="play">▶</button><b class="stNow">0:00.0</b>' +
-    '<span class="stHint">타임라인을 밀어 이동 · 블록을 끌어 옮기기 · 양 끝으로 길이</span>' +
+    '<span class="stHint">' + (stPrNow() ? '눈금 끌기=재생 헤드 · 휠=이동 · ⌥/⌘+휠=확대 · Space 재생 · J K L · C 자르기 · I/O · ↑↓ 편집점 · \\ 맞춤 · S 붙기'
+      : '타임라인을 밀어 이동 · 블록을 끌어 옮기기 · 양 끝으로 길이') + '</span>' +
     '<button type="button" class="stB" data-st="undo" title="되돌리기 (⌘Z)">↶</button>' +
     '<button type="button" class="stB" data-st="zout" title="축소 (-)">−</button><button type="button" class="stB" data-st="zin" title="확대 (+)">＋</button></div>' +
     '<div class="stWrap"><div class="stScroll"><div class="stInner"><div class="stRuler"></div><div class="stTrack"></div></div></div><i class="stHeadLine"></i></div>' +
@@ -4832,16 +4871,37 @@ function stBuild() {
       '<button type="button" data-st="out" title="O">끝=지금 ⇥</button><button type="button" data-st="merge">⇢ 다음과 합치기</button>' +
       '<button type="button" data-st="add">＋ 새 줄</button><button type="button" data-st="del" title="Delete">🗑 지우기</button>' +
     '</div>';
+  ST.pr = stPrNow(); box.classList.toggle('pr', ST.pr);
   const sc = box.querySelector('.stScroll');
   sc.addEventListener('scroll', stOnScroll, { passive: true });
   sc.addEventListener('wheel', (e) => {
-    if (e.ctrlKey || e.metaKey) { e.preventDefault(); stZoom(e.deltaY < 0 ? 1.25 : 0.8); return; }
+    if (e.ctrlKey || e.metaKey || (ST.pr && e.altKey)) {
+      e.preventDefault();
+      const f = e.deltaY < 0 ? 1.25 : 0.8;
+      if (ST.pr) stZoomAt(ST.pps * f, stRelAt(e.clientX), e.clientX - sc.getBoundingClientRect().left); else stZoom(f);
+      return;
+    }
     // 컴퓨터 마우스 휠(세로)도 타임라인을 옆으로 민다 (10/26 규효 "컴퓨터로 하는데 타임라인 이동이 안 된다")
     if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) { e.preventDefault(); sc.scrollLeft += e.deltaY * (e.deltaMode === 1 ? 16 : 1); }
   }, { passive: false });
   // 마우스로 빈 곳을 끌면 타임라인이 따라 움직이고, 끌지 않고 누르면 그 자리로 간다 (블록은 stDown 이 따로 받는다)
   sc.addEventListener('pointerdown', (e) => {
     if (e.pointerType !== 'mouse' || e.button !== 0 || (e.target.closest && e.target.closest('.stBlk'))) return;
+    if (ST.pr && e.target.closest && e.target.closest('.stRuler')) {      // 프리미어: 눈금을 누르고 끌면 재생 헤드가 따라온다
+      e.preventDefault();
+      try { sc.setPointerCapture(e.pointerId); } catch (_) {}
+      const was = PP.paused; if (!was) ppSetPaused(true);
+      let tq = 0;
+      const go = (cx) => { const r = stRelAt(cx); ST.lastRel = r; stHeadPaint(r); stNowPaint(r); const n = Date.now(); if (n - tq > 70) { tq = n; ppSeek(PP.a + r); } };
+      go(e.clientX);
+      const mv2 = (ev) => go(ev.clientX);
+      const up2 = (ev) => {
+        sc.removeEventListener('pointermove', mv2); sc.removeEventListener('pointerup', up2); sc.removeEventListener('pointercancel', up2);
+        ppSeek(PP.a + ST.lastRel); if (!was) ppSetPaused(false);
+      };
+      sc.addEventListener('pointermove', mv2); sc.addEventListener('pointerup', up2); sc.addEventListener('pointercancel', up2);
+      return;
+    }
     const x0 = e.clientX, l0 = sc.scrollLeft; let moved = false;
     try { sc.setPointerCapture(e.pointerId); } catch (_) {}
     const mv = (ev) => {
@@ -4853,8 +4913,8 @@ function stBuild() {
       sc.removeEventListener('pointermove', mv); sc.removeEventListener('pointerup', up); sc.removeEventListener('pointercancel', up);
       sc.classList.remove('pan');
       if (moved || ev.type === 'pointercancel') return;
-      const half = Math.round(box.querySelector('.stWrap').clientWidth / 2), rc = sc.getBoundingClientRect();
-      const rel = Math.max(0, Math.min(stLen(), (sc.scrollLeft + (ev.clientX - rc.left) - half) / ST.pps));
+      if (ST.pr) { if (ST.sel >= 0) { ST.sel = -1; stPaintBlocks(); stText(); } return; }   // 프리미어: 빈 곳 클릭은 선택 풀기
+      const rel = stRelAt(ev.clientX);
       ppSeek(PP.a + rel); stCenter(rel); ST.lastRel = rel;
     };
     sc.addEventListener('pointermove', mv); sc.addEventListener('pointerup', up); sc.addEventListener('pointercancel', up);
@@ -4878,8 +4938,8 @@ function stBuild() {
 function stPaint() {
   const box = $('#ppSubList'); if (!box || !box.classList.contains('stOn')) return;
   const wrap = box.querySelector('.stWrap'), inner = box.querySelector('.stInner'), ruler = box.querySelector('.stRuler');
-  const half = Math.round(wrap.clientWidth / 2);
-  inner.style.width = (stLen() * ST.pps + half * 2) + 'px';
+  const half = stPad();
+  inner.style.width = (stLen() * ST.pps + (ST.pr ? Math.max(half * 2, Math.round(wrap.clientWidth * 0.3)) : half * 2)) + 'px';
   inner.style.setProperty('--pad', half + 'px');
   // 눈금 — 확대 정도에 맞춰 1·2·5초
   const step = ST.pps > 120 ? 1 : ST.pps > 45 ? 2 : 5, minor = step / (step === 1 ? 4 : 2);
@@ -4894,7 +4954,7 @@ function stPaint() {
 }
 function stPaintBlocks() {
   const box = $('#ppSubList'); if (!box || !box.classList.contains('stOn')) return;
-  const track = box.querySelector('.stTrack'), half = Math.round(box.querySelector('.stWrap').clientWidth / 2);
+  const track = box.querySelector('.stTrack'), half = stPad();
   const segs = stSegs();
   while (track.children.length > segs.length) track.lastChild.remove();
   segs.forEach((s, k) => {
@@ -4903,6 +4963,7 @@ function stPaintBlocks() {
       n = el('div', 'stBlk');
       n.innerHTML = '<b class="hL"></b><span></span><b class="hR"></b>';
       n.addEventListener('pointerdown', (e) => stDown(e, n));
+      n.addEventListener('dblclick', () => { const inp = $('#ppSubList .stText'); if (inp && !inp.disabled) { inp.focus(); inp.select(); } });
       track.append(n);
     }
     n.dataset.k = k;
@@ -4925,6 +4986,16 @@ function stText() {
 }
 function stCenter(rel) {
   const sc = $('#ppSubList .stScroll'); if (!sc) return;
+  if (ST.pr) {                                     // 프리미어: 화면 밖으로 나갈 때만 한 쪽 넘긴다
+    const x = stPad() + rel * ST.pps - sc.scrollLeft, w = sc.clientWidth;
+    if (x < 0 || x > w - 8) {
+      ST.prog = true;
+      sc.scrollLeft = Math.max(0, Math.round(stPad() + rel * ST.pps - w * (x < 0 ? 0.5 : 0.08)));
+      requestAnimationFrame(() => { ST.prog = false; });
+    }
+    stHeadPaint(rel); stNowPaint(rel);
+    return;
+  }
   ST.prog = true;
   sc.scrollLeft = Math.round(rel * ST.pps);
   requestAnimationFrame(() => { ST.prog = false; });
@@ -4935,6 +5006,7 @@ function stNowPaint(rel) {
   const p = $('#ppSubList [data-st=play]'); if (p) p.textContent = PP.paused ? '▶' : '❚❚';
 }
 function stOnScroll() {
+  if (ST.pr) { stHeadPaint(stHeadRel()); return; }   // 프리미어: 옆으로 밀어도 재생 헤드는 그 자리
   if (ST.prog || ST.drag) return;
   const sc = $('#ppSubList .stScroll');
   const rel = Math.max(0, Math.min(stLen(), sc.scrollLeft / ST.pps));
@@ -4954,7 +5026,7 @@ function stLoop() {
     if (!ST.scrubbing && !ST.drag) {
       // 재생 중에만 영상을 따라 흐른다. 멈춰 있을 땐 타임라인이 주인 — 유튜브는 찾아가기 직후 시간을 늦게 알려 줘서 되돌아가 보였다
       if (!PP.paused) { const rel = Math.max(0, Math.min(stLen(), ppNow() - PP.a)); stCenter(rel); ST.lastRel = rel; }
-      else stNowPaint(stHeadRel());
+      else { stNowPaint(stHeadRel()); if (ST.pr) stHeadPaint(stHeadRel()); }
     }
     ST.raf = requestAnimationFrame(go);
   };
@@ -4962,8 +5034,22 @@ function stLoop() {
 }
 function stZoomTo(p) {
   const rel = ST.lastRel >= 0 ? ST.lastRel : Math.max(0, ppNow() - PP.a);
+  if (ST.pr) { const sc = $('#ppSubList .stScroll'); return stZoomAt(p, rel, sc ? stPad() + rel * ST.pps - sc.scrollLeft : 0); }
   ST.pps = Math.max(18, Math.min(400, p));
   stPaint(); stCenter(rel);
+}
+function stZoomAt(p, rel, x) {                     // PR: rel 시각이 화면 x 자리에 그대로 남게 확대
+  const sc = $('#ppSubList .stScroll'); if (!sc) return;
+  ST.pps = Math.max(8, Math.min(600, p));
+  stPaint();
+  ST.prog = true; sc.scrollLeft = Math.max(0, Math.round(stPad() + rel * ST.pps - x));
+  requestAnimationFrame(() => { ST.prog = false; });
+  stHeadPaint(stHeadRel());
+}
+function stFit() {                                 // \ — 구간 전체가 한 화면에
+  const sc = $('#ppSubList .stScroll'); if (!sc) return;
+  ST.pps = Math.max(8, Math.min(600, (sc.clientWidth - stPad() * 2 - 10) / stLen()));
+  stPaint(); ST.prog = true; sc.scrollLeft = 0; requestAnimationFrame(() => { ST.prog = false; }); stHeadPaint(stHeadRel());
 }
 function stZoom(f) { stZoomTo(ST.pps * f); }
 function stSelect(k, seek) {
@@ -5058,7 +5144,7 @@ function stDown(e, n) {
     if (!d.moved) { d.moved = true; stPush(); n.classList.add('drag'); }
     const segs = stSegs(), cur = segs[d.k], prev = segs[d.k - 1], next = segs[d.k + 1];
     const lo = prev ? prev.end : 0, hi = next ? next.start : stLen(), dt = dx / ST.pps, head = stHeadRel();
-    const snap = (v, pts) => { for (const p of pts) if (Math.abs((v - p) * ST.pps) < ST_SNAP_PX) return p; return v; };
+    const snap = (v, pts) => { if (!ST.snap) return v; for (const p of pts) if (Math.abs((v - p) * ST.pps) < ST_SNAP_PX) return p; return v; };
     if (d.mode === 'L') cur.start = stR(Math.max(lo, Math.min(d.e0 - ST_MIN, snap(d.s0 + dt, [lo, head]))));
     else if (d.mode === 'R') cur.end = stR(Math.min(hi, Math.max(d.s0 + ST_MIN, snap(d.e0 + dt, [hi, head]))));
     else {
@@ -5098,6 +5184,19 @@ document.addEventListener('keydown', (e) => {
   else if (k === 'Delete' || k === 'Backspace') stAct('del');
   else if (k === 'ArrowLeft') step(e.shiftKey ? -1 : -0.1);
   else if (k === 'ArrowRight') step(e.shiftKey ? 1 : 0.1);
+  else if (k === ' ' && !mod) { ppSetPaused(!PP.paused); stNowPaint(stHeadRel()); }
+  else if ((k === 'j' || k === 'J') && !mod) { ppSetPaused(true); step(-1); }
+  else if ((k === 'k' || k === 'K') && !mod) { ppSetPaused(true); stNowPaint(stHeadRel()); }
+  else if ((k === 'l' || k === 'L') && !mod) { ppSetPaused(false); stNowPaint(stHeadRel()); }
+  else if (k === 'ArrowUp' || k === 'ArrowDown') {          // 앞·뒤 편집점 (줄 시작·끝)
+    const h = stHeadRel(), pts = [0, stLen()].concat(...stSegs().map((x) => [x.start, x.end])).sort((p, q) => p - q);
+    const to = k === 'ArrowUp' ? pts.filter((x) => x < h - 0.02).pop() : pts.find((x) => x > h + 0.02);
+    if (to != null) step(to - h);
+  }
+  else if (k === 'Home') step(-stHeadRel());
+  else if (k === 'End') step(stLen() - stHeadRel());
+  else if (k === '\\') stFit();
+  else if ((k === 's' || k === 'S') && !mod) { ST.snap = !ST.snap; toast(ST.snap ? '붙기 켬 — 끌 때 이웃 줄·재생 헤드에 붙습니다' : '붙기 끔'); }
   else if (k === '+' || k === '=') stZoom(1.4);
   else if (k === '-') stZoom(1 / 1.4);
   else if (k === 'Enter') { const inp = box.querySelector('.stText'); if (inp && !inp.disabled) inp.focus(); }
@@ -5117,9 +5216,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.26 20:33';
+    a.title = '판 10.26 20:42';
     var ver = document.createElement('span');
-    ver.textContent = '10.26 20:33';
+    ver.textContent = '10.26 20:42';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
