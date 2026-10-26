@@ -4225,6 +4225,122 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793016468/re8yzdxy38k98rav7ie6.jpg"
     }
    },
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De9Sh7ymVN4/",
+    "cover": "A",
+    "at": "2026-10-26T21:32+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:ord-33539c84",
+    "account": "@규효 공유 · @sapx2yhiphopmag",
+    "url": "https://www.instagram.com/p/DecChxEH5gQ/?rpxt=Ynhub3B3b3k5c2xp",
+    "image": null,
+    "head": "영 떡 YSL 재판 다큐, 재판 맡은 판사 입에서 먼저 나왔다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T21:35+09:00",
+   "key": "1620ffef",
+   "by": "claude",
+   "subjects": [
+    "영 떡"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "재판을 마무리한 판사가 먼저 꺼낸 영 떡 YSL 재판 넷플릭스 다큐 소식",
+    "why": "규효 맡기기 · 가사가 증거가 된 재판이라 음악 각도가 선다"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T21:35+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n영 떡(Young Thug)의 YSL 재판이 넷플릭스 다큐멘터리로 만들어지는 것으로 알려졌습니다.\n\n이 다큐에는 재판을 마무리한 풀턴 카운티의 페이지 리스 휘태커 판사도 참여했는데요, 이달 한 유튜브 토크쇼에 나와 다큐멘터리를 위해 인터뷰를 했고 내년쯤 공개될 예정이라고 밝혔습니다. 제목은 [Young Thug on Trial], 90분 분량의 장편이라는 이야기가 함께 나왔습니다.\n\n이 재판에서 검찰은 YSL을 음악 레이블의 모습을 한 갱단이라고 주장했고, 영 떡의 가사 일부가 증거로 채택되며 랩을 법정에서 어디까지 읽을 수 있느냐는 물음을 남겼습니다. 2024년 10월 유죄·불항쟁 답변 끝에 15년 보호관찰을 받고 풀려난 그 재판을, 이제 재판을 맡았던 판사의 말까지 담아 다시 보게 됩니다.\n\n#PLOT #영떡 #YoungThug #YSL #넷플릭스 #외힙\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793018137/ky6aqjbwcm4pwk8ixath.jpg\n제목: 영 떡의 YSL 재판,|넷플릭스 다큐로\n부제: 재판을 맡은 판사도 인터뷰에 응했다\n출처: Wikimedia Commons\n",
+    "caption": "영 떡(Young Thug)의 YSL 재판이 넷플릭스 다큐멘터리로 만들어지는 것으로 알려졌습니다.\n\n이 다큐에는 재판을 마무리한 풀턴 카운티의 페이지 리스 휘태커 판사도 참여했는데요, 이달 한 유튜브 토크쇼에 나와 다큐멘터리를 위해 인터뷰를 했고 내년쯤 공개될 예정이라고 밝혔습니다. 제목은 [Young Thug on Trial], 90분 분량의 장편이라는 이야기가 함께 나왔습니다.\n\n이 재판에서 검찰은 YSL을 음악 레이블의 모습을 한 갱단이라고 주장했고, 영 떡의 가사 일부가 증거로 채택되며 랩을 법정에서 어디까지 읽을 수 있느냐는 물음을 남겼습니다. 2024년 10월 유죄·불항쟁 답변 끝에 15년 보호관찰을 받고 풀려난 그 재판을, 이제 재판을 맡았던 판사의 말까지 담아 다시 보게 됩니다.\n\n#PLOT #영떡 #YoungThug #YSL #넷플릭스 #외힙",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793018137/ky6aqjbwcm4pwk8ixath.jpg",
+      "credit": "Wikimedia Commons",
+      "from": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Young_Thug_in_2021.png"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793018137/ky6aqjbwcm4pwk8ixath.jpg",
+      "credit": "Wikimedia Commons",
+      "from": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Young_Thug_in_2021.png"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "영 떡의 YSL 재판,|넷플릭스 다큐로",
+      "sub": "재판을 맡은 판사도 인터뷰에 응했다"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "재판 맡은 판사도|인터뷰한 다큐",
+      "sub": "영 떡 [Young Thug on Trial]"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "가사가 증거였던 재판,|다큐멘터리로",
+      "sub": "영 떡 YSL 재판 넷플릭스 다큐"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 넷플릭스 공식 발표 여부가 매체마다 엇갈림(HNHH '공식 발표' vs FOX5·XXL '미확인') — 캡션의 '공식 발표 안 냄' 문장 뺐다. 판사가 '먼저' 꺼냈다는 순서도 확인 안 돼(HNHH 발표도 10/13) '판사도 참여'로 고쳤다",
+     "넷플릭스 공식 발표는 아직 없음(XXL 문의에 미확인) — 제목·90분은 '알려졌다'로만 썼다. 숏폼은 판사 출연 ClassE 영상에 자막이 없어 구간을 확인 못 해 비움",
+     "표지 사진은 사진 DB 에 없어 위키미디어 공용 'Young_Thug_in_2021' — 화질·라이선스 표기 확인"
+    ],
+    "research": [
+     {
+      "title": "FOX 5 Atlanta — Young Thug trial documentary reportedly headed to Netflix in 2027",
+      "link": "https://www.fox5atlanta.com/news/young-thug-trial-documentary-reportedly-headed-netflix-2027"
+     },
+     {
+      "title": "HotNewHipHop — Netflix Announces \"Young Thug On Trial\" Documentary",
+      "link": "https://www.hotnewhiphop.com/1012898-netflix-young-thug-on-trial-documentary"
+     },
+     {
+      "title": "Black America Web — Netflix To Release Young Thug YSL RICO Trial Documentary",
+      "link": "https://blackamericaweb.com/2026/10/14/young-thug-netflix/"
+     },
+     {
+      "title": "Jamaica Observer(AP) — Prosecutors can use rap lyrics as evidence in Young Thug trial",
+      "link": "https://jamaicaobserver.com/2023/11/09/prosecutors-can-use-rap-lyrics-as-evidence-in-young-thug-trial-judge-rules"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793018140/xxorg8afbjtrtu8msujo.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793018140/q67tga9matswyttkshgq.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793018142/pikiawm6doincd515p9x.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793018142/ol8bforqntofob0gusw5.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793018140/xxorg8afbjtrtu8msujo.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T21:35+09:00",
+     "v": {
+      "A": "ae560007",
+      "B": "3ecb76e3",
+      "C": "74457802"
+     }
+    }
+   },
    "corner_name": "소식"
   }
  ],
@@ -4388,11 +4504,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 16,
+    "drafts": 17,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T21:25+09:00"
+  "at": "2026-10-26T21:35+09:00"
  },
  "slots": {
   "basis": 250,
