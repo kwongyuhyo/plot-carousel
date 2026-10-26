@@ -4800,9 +4800,30 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793052812/x6owymdr04wq2t82g6me.jpg",
      "key": "V2V9-9VhYJo@157.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-27T07:13+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793053057/plot_studio/tl4ujj3naztcu5rmve4d.mp4",
+     "at": "2026-10-27T07:17+09:00",
+     "file": "ChePoHaGessEo_MyuBiE_KkamJjag_DeungJangHa_News_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793053059035-b0cdee6f",
+      "segs": [
+       {
+        "start": 0.7,
+        "end": 5.27,
+        "text": "체포하겠어 체포하겠어 crime"
+       },
+       {
+        "start": 5.27,
+        "end": 9.33,
+        "text": "signs 체포하겠어"
+       },
+       {
+        "start": 10.65,
+        "end": 12.65,
+        "text": "체포하겠어 crime signs"
+       }
+      ]
+     }
     }
    },
    "corner_name": "소식"
@@ -4972,7 +4993,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T07:13+09:00"
+  "at": "2026-10-27T07:17+09:00"
  },
  "slots": {
   "basis": 253,
