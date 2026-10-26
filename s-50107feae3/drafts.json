@@ -2077,6 +2077,154 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-71a412a6",
+    "account": "@규효 공유 · @fastpapermag",
+    "url": "https://www.instagram.com/p/De78OydBdAW/?dlrf=MTMyNzZ5ZjhtMm9keg==",
+    "image": null,
+    "head": "인스파이어 아레나, 12월부터 '네이버 아레나 앳 인스파이어'로 — 3년 명명권 계약",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T11:23+09:00",
+   "key": "c569b8dd",
+   "by": "claude",
+   "subjects": [
+    "인스파이어 아레나"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "개관 3년 만에 바뀌는 국내 첫 아레나의 간판 — 요네즈 켄시는 1월에 새 이름의 같은 무대로 돌아온다",
+    "why": "규효 맡기기 · 다른 매거진에서도 도는 공연장 소식, 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T11:23+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n인스파이어 아레나가 12월부터 '네이버 아레나'로 이름을 바꿉니다.\n\n인스파이어 리조트는 26일 네이버와 3년간의 명명권 계약을 맺었다고 밝혔는데요, 새 공식 명칭은 '네이버 아레나 앳 인스파이어'(NAVER ARENA at INSPIRE)입니다. 2023년 12월 멜론뮤직어워드로 문을 연 지 3년 만에 바뀌는 간판입니다.\n\n지난해 3월 첫 내한 공연을 이곳에서 열었던 요네즈 켄시(@hachi_08)는 내년 1월 14일과 16·17일 같은 무대로 돌아옵니다. 그때 그를 맞는 건 새 이름의 아레나입니다.\n\n#PLOT #인스파이어아레나 #네이버아레나 #요네즈켄시 #영종도\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792981390/iqwijdhy7w217tj7vdps.jpg\n제목: 인스파이어 아레나,|12월부터 네이버 아레나로\n부제: 3년 명명권 계약 · 공식 명칭 '네이버 아레나 앳 인스파이어'\n출처: 인스파이어 리조트\n",
+    "caption": "인스파이어 아레나가 12월부터 '네이버 아레나'로 이름을 바꿉니다.\n\n인스파이어 리조트는 26일 네이버와 3년간의 명명권 계약을 맺었다고 밝혔는데요, 새 공식 명칭은 '네이버 아레나 앳 인스파이어'(NAVER ARENA at INSPIRE)입니다. 2023년 12월 멜론뮤직어워드로 문을 연 지 3년 만에 바뀌는 간판입니다.\n\n지난해 3월 첫 내한 공연을 이곳에서 열었던 요네즈 켄시(@hachi_08)는 내년 1월 14일과 16·17일 같은 무대로 돌아옵니다. 그때 그를 맞는 건 새 이름의 아레나입니다.\n\n#PLOT #인스파이어아레나 #네이버아레나 #요네즈켄시 #영종도",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981390/iqwijdhy7w217tj7vdps.jpg",
+      "credit": "인스파이어 리조트",
+      "from": "https://i3n.news1.kr/system/photos/2026/10/26/8177999/high.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981391/czsxmjsqv8ky1uox3rfa.jpg",
+      "credit": "인스파이어 리조트",
+      "from": "https://image.fnnews.com/resource/media/image/2026/10/26/202610260841051869_e.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981393/btgkqeuz4eulemdagpxu.jpg",
+      "credit": "@hachi_08",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889315/vsrmqr98b1uwipcbaqac.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981396/zhyf443s7mpi9j77perg.jpg",
+      "credit": "@hachi_08",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889423/vmijtuy3y2j0ckbdywci.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981390/iqwijdhy7w217tj7vdps.jpg",
+      "credit": "인스파이어 리조트",
+      "from": "https://i3n.news1.kr/system/photos/2026/10/26/8177999/high.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981391/czsxmjsqv8ky1uox3rfa.jpg",
+      "credit": "인스파이어 리조트",
+      "from": "https://image.fnnews.com/resource/media/image/2026/10/26/202610260841051869_e.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981393/btgkqeuz4eulemdagpxu.jpg",
+      "credit": "@hachi_08",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889315/vsrmqr98b1uwipcbaqac.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981396/zhyf443s7mpi9j77perg.jpg",
+      "credit": "@hachi_08",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889423/vmijtuy3y2j0ckbdywci.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "인스파이어 아레나,|12월부터 네이버 아레나로",
+      "sub": "3년 명명권 계약 · 공식 명칭 '네이버 아레나 앳 인스파이어'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "개관 3년 만에|간판 바꾸는 인스파이어",
+      "sub": "12월부터 '네이버 아레나 앳 인스파이어'"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "요네즈 켄시가 돌아올 땐|이름이 바뀐 아레나",
+      "sub": "인스파이어 아레나, 12월부터 '네이버 아레나'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지 사진: 뉴스1 기사 대표 사진(인스파이어 제공 아레나 사진)이 맞는지 — 아니면 요네즈 켄시 사진으로 바꾸기",
+     "요네즈 켄시 1월 공연 예매처 표기가 아직 '인스파이어 아레나'라 '새 이름의 아레나' 문장이 괜찮은지"
+    ],
+    "research": [
+     {
+      "title": "인스파이어 아레나, 12월부터 '네이버 아레나'로 이름 바꾼다 - 파이낸셜뉴스",
+      "link": "https://www.fnnews.com/news/202610260932371172"
+     },
+     {
+      "title": "인스파이어 아레나, '네이버' 이름 단다…12월부터 새 간판 - 디지털데일리",
+      "link": "https://www.ddaily.co.kr/page/view/2026102610185159350"
+     },
+     {
+      "title": "인스파이어 아레나, '네이버 아레나'로 새 단장…12월 명칭 변경 - 뉴스1",
+      "link": "https://www.news1.kr/industry/hotel-tourism/6331380"
+     },
+     {
+      "title": "요네즈 켄시 2027년 1월 인스파이어 아레나 공연 - iMBC",
+      "link": "https://enews.imbc.com/News/RetrieveNewsInfo/521432"
+     },
+     {
+      "title": "Kenshi Yonezu announces 'GHOST' world tour shows for Singapore & Seoul - Bandwagon",
+      "link": "https://www.bandwagon.asia/articles/kenshi-yonezu-announces-ghost-world-tour-shows-for-singapore-seoul-in-january-2027"
+     },
+     {
+      "title": "12월 초부터 아레나서 MMA2023 등 대규모 공연 개최 - 뉴데일리",
+      "link": "https://biz.newdaily.co.kr/site/data/html/2024/01/23/2024012300261.html"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981398/pfsw6gemj6tav7m7in16.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981398/lbwpduoeajs6lkzzgadg.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981400/qgvykg3xpjwd0onsnaoo.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981400/bockw9jvfvqfkugkhecp.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981398/pfsw6gemj6tav7m7in16.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T11:23+09:00",
+     "v": {
+      "A": "fc877c34",
+      "B": "628745d2",
+      "C": "550ef987"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2239,11 +2387,11 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 8,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T11:20+09:00"
+  "at": "2026-10-26T11:23+09:00"
  },
  "slots": {
   "basis": 240,
