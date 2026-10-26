@@ -3412,9 +3412,80 @@
      }
     ],
     "thumb": "https://i.ytimg.com/vi/nPiDysinjIs/maxresdefault.jpg",
-    "render": {
-     "status": "queued",
-     "at": "2026-10-26T18:40+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793007906/plot_studio/fjoiipydtkhax5r2gmuo.mp4",
+     "at": "2026-10-26T18:45+09:00",
+     "file": "ILeohGe_ManhEun_SaLa_SilGamI_Jal_An_NaYo_News_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793007909015-f8211259",
+      "segs": [
+       {
+        "start": 3.1,
+        "end": 6.09,
+        "text": "일단 저희 데뷔한 지 정말 얼마 안"
+       },
+       {
+        "start": 6.09,
+        "end": 7.73,
+        "text": "됐는데 이렇게 많은 사랑을"
+       },
+       {
+        "start": 7.73,
+        "end": 10.13,
+        "text": "받고 있어서 정말 행복하고"
+       },
+       {
+        "start": 10.13,
+        "end": 11.42,
+        "text": "아직 실감이"
+       },
+       {
+        "start": 11.42,
+        "end": 13.24,
+        "text": "잘 안 나는 것 같습니다"
+       },
+       {
+        "start": 13.24,
+        "end": 14.71,
+        "text": "이렇게 값진 상 주셔서"
+       },
+       {
+        "start": 14.71,
+        "end": 15.88,
+        "text": "너무너무 감사하고"
+       },
+       {
+        "start": 15.88,
+        "end": 18.05,
+        "text": "영광스럽게 생각하고 있습니다"
+       },
+       {
+        "start": 18.05,
+        "end": 21.9,
+        "text": "저희 이렇게 사랑받을 수 있게"
+       },
+       {
+        "start": 21.9,
+        "end": 23.66,
+        "text": "만들어 주신 이수만 선생님"
+       },
+       {
+        "start": 23.66,
+        "end": 25.7,
+        "text": "유영진 이사님, 이진규 대표님"
+       },
+       {
+        "start": 25.7,
+        "end": 26.58,
+        "text": "써니 PD님"
+       },
+       {
+        "start": 26.58,
+        "end": 29.74,
+        "text": "이명균 PD님 정말 감사합니다 그리고"
+       }
+      ]
+     }
     }
    },
    "corner_name": "소식"
@@ -3584,7 +3655,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T18:40+09:00"
+  "at": "2026-10-26T18:45+09:00"
  },
  "slots": {
   "basis": 245,
