@@ -3001,9 +3001,85 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999195/b2umtrwpqipwm5sikkjt.jpg",
      "key": "UXkJWg-3fG0@8.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-26T16:20+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792999403/plot_studio/jxcyiimlrxfihr68qr7f.mp4",
+     "at": "2026-10-26T16:23+09:00",
+     "file": "10SiYeossGeoDeunYo_SuNeungNal_KaDeoGaDe_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792999404755-517f20ad",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 1.76,
+        "text": "사실입니다"
+       },
+       {
+        "start": 1.76,
+        "end": 4.0,
+        "text": "제가 고모네서 컸잖아요"
+       },
+       {
+        "start": 4.0,
+        "end": 6.1,
+        "text": "고모가 전날에 분명히 도시락도"
+       },
+       {
+        "start": 6.1,
+        "end": 7.06,
+        "text": "싸 주셨거든요"
+       },
+       {
+        "start": 7.06,
+        "end": 8.56,
+        "text": "김치볶음밥 간단하게"
+       },
+       {
+        "start": 8.56,
+        "end": 10.03,
+        "text": "반찬 이렇게 해서 먹으면"
+       },
+       {
+        "start": 10.03,
+        "end": 10.75,
+        "text": "좀 귀찮으니까"
+       },
+       {
+        "start": 10.75,
+        "end": 12.46,
+        "text": "김치볶음밥 딱 먹어. 알았지?"
+       },
+       {
+        "start": 12.46,
+        "end": 13.92,
+        "text": "저는 이제 아침에 일어났는데"
+       },
+       {
+        "start": 13.92,
+        "end": 15.56,
+        "text": "10시였거든요"
+       },
+       {
+        "start": 15.56,
+        "end": 17.72,
+        "text": "볶음밥 먹으면서 이제 생각을 했죠"
+       },
+       {
+        "start": 17.72,
+        "end": 19.6,
+        "text": "왜 안 깨우셨을까"
+       },
+       {
+        "start": 19.8,
+        "end": 22.06,
+        "text": "최근에 한번 물어봤어요"
+       },
+       {
+        "start": 22.06,
+        "end": 24.14,
+        "text": "제가 가는 게 좀 피해가 있을 거라고"
+       }
+      ]
+     }
     }
    },
    "pick": {
@@ -3179,7 +3255,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T16:20+09:00"
+  "at": "2026-10-26T16:23+09:00"
  },
  "slots": {
   "basis": 242,
