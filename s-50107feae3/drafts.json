@@ -4053,9 +4053,45 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013634/cxivebsdcpw1cdmvuczp.jpg",
      "key": "RpjZnoA7Qq8@44.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-26T20:20+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793014077/plot_studio/aufc5uaihjsegd4afvnw.mp4",
+     "at": "2026-10-26T20:27+09:00",
+     "file": "GatEun_ILeumUi_SinGo_HanLoLo_MulEumPyo_News_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793014079349-7edbab1d",
+      "segs": [
+       {
+        "start": 4.74,
+        "end": 10.4,
+        "text": "웅크려도 분열될 것만 같은 꿈의"
+       },
+       {
+        "start": 10.4,
+        "end": 17.26,
+        "text": "성설설 우는 너를 다"
+       },
+       {
+        "start": 17.26,
+        "end": 24.14,
+        "text": "돌려주는 손에 사실 망설여"
+       },
+       {
+        "start": 27.64,
+        "end": 35.96,
+        "text": "밤을 넘어가는 질문과 자꾸 넘어지는"
+       },
+       {
+        "start": 35.96,
+        "end": 43.96,
+        "text": "대답이 우리에게 뭘 남기겠니"
+       },
+       {
+        "start": 45.08,
+        "end": 47.88,
+        "text": "짙어가는 멍뿐인걸"
+       }
+      ]
+     }
     }
    },
    "corner_name": "소식"
@@ -4225,7 +4261,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T20:20+09:00"
+  "at": "2026-10-26T20:27+09:00"
  },
  "slots": {
   "basis": 245,
