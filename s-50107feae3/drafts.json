@@ -3866,6 +3866,199 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-bca36d58",
+    "account": "@규효 공유",
+    "url": "https://www.youtube.com/watch?v=RpjZnoA7Qq8",
+    "image": null,
+    "head": "한로로 신곡 '물음표', 같은 이름의 첫 아레나 콘서트 앞두고 퍼포먼스 비디오 선공개",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T20:20+09:00",
+   "key": "7edbab1d",
+   "by": "claude",
+   "subjects": [
+    "한로로"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "첫 아레나 콘서트 '물음표'와 같은 이름의 신곡이 퍼포먼스 비디오로 먼저 도착",
+    "why": "규효 맡기기 — 한로로 신곡 '물음표' 퍼포먼스 비디오 오늘(10/26) 공식 채널 공개, 콘서트 제목과 이어짐"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T20:20+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n한로로(@hanr0r0)가 신곡 '물음표'의 퍼포먼스 비디오를 먼저 공개했습니다.\n\n'물음표'는 내년 1월 열리는 다섯 번째 단독 콘서트의 이름이기도 한데요, 데뷔 후 처음 아레나에 서는 공연과 같은 제목의 곡이 무대보다 먼저 도착한 셈입니다.\n\n이 공연은 한로로가 세상을 바라보며 품어 온 수많은 질문에서 출발한다고 소개됐습니다. 같은 이름의 신곡 '물음표'는 11월 5일 오후 6시 음원으로 나옵니다.\n\n콘서트는 2027년 1월 2일과 3일 인천 인스파이어 아레나에서 열리며, 예매는 11월 13일 오후 6시 NOL 티켓과 멜론티켓에서 시작됩니다.\n\n#PLOT #한로로 #물음표 #인스파이어아레나 #한로로콘서트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793013616/izinznsela1kxt1gkf9z.jpg\n제목: 한로로, 아레나 공연과|같은 이름의 신곡\n부제: 신곡 '물음표' 퍼포먼스 비디오 선공개\n출처: @hanr0r0\n",
+    "caption": "한로로(@hanr0r0)가 신곡 '물음표'의 퍼포먼스 비디오를 먼저 공개했습니다.\n\n'물음표'는 내년 1월 열리는 다섯 번째 단독 콘서트의 이름이기도 한데요, 데뷔 후 처음 아레나에 서는 공연과 같은 제목의 곡이 무대보다 먼저 도착한 셈입니다.\n\n이 공연은 한로로가 세상을 바라보며 품어 온 수많은 질문에서 출발한다고 소개됐습니다. 같은 이름의 신곡 '물음표'는 11월 5일 오후 6시 음원으로 나옵니다.\n\n콘서트는 2027년 1월 2일과 3일 인천 인스파이어 아레나에서 열리며, 예매는 11월 13일 오후 6시 NOL 티켓과 멜론티켓에서 시작됩니다.\n\n#PLOT #한로로 #물음표 #인스파이어아레나 #한로로콘서트",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013616/izinznsela1kxt1gkf9z.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013618/nv9a68nlaqyehsuwqxxl.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013621/isvlprceimalho4hvfrg.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504576/yjn34dvx4c5xugn2c8su.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013623/zivy5jxmr2qg5ozr4wya.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013616/izinznsela1kxt1gkf9z.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013618/nv9a68nlaqyehsuwqxxl.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013621/isvlprceimalho4hvfrg.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504576/yjn34dvx4c5xugn2c8su.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013623/zivy5jxmr2qg5ozr4wya.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "한로로, 아레나 공연과|같은 이름의 신곡",
+      "sub": "신곡 '물음표' 퍼포먼스 비디오 선공개"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "한로로 신곡 '물음표'|무대 먼저 공개",
+      "sub": "11월 5일 오후 6시 발매"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "첫 아레나 앞두고|한로로가 던진 '물음표'",
+      "sub": "같은 이름의 신곡과 콘서트"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 한로로 HANRORO (본인 공식 채널)",
+     "발매일 11월 5일 오후 6시는 공식 영상 설명란(+그걸 옮긴 루리웹 글)으로만 확인 — 기사로는 아직 없음"
+    ],
+    "research": [
+     {
+      "title": "[Performance] 한로로 - 물음표 (Question Mark) — 한로로 HANRORO 공식 채널 (10/26, 설명란: 11.5 Thu 6PM 발매)",
+      "link": "https://www.youtube.com/watch?v=RpjZnoA7Qq8"
+     },
+     {
+      "title": "루리웹 — [한로로] '물음표' 퍼포먼스 비디오 선공개 (10/26)",
+      "link": "https://bbs.ruliweb.com/news/board/1005/read/3820721"
+     },
+     {
+      "title": "일간스포츠 — 한로로, 데뷔 첫 아레나 입성…내년 1월 인스파이어 단독 공연",
+      "link": "https://isplus.com/article/view/isp202610250010"
+     },
+     {
+      "title": "헤럴드뮤즈 — 한로로, 데뷔 첫 아레나 입성..내년 1월 단독 콘서트 개최(공식)",
+      "link": "https://www.heraldmuse.com/article/10913775"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013627/zpq70npcov7ot8ajdrya.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013627/dti49a1wazfgzafco4gz.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013629/jirapazn01iybj1svuat.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013629/njeb3bdyfikfoov48wua.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013627/zpq70npcov7ot8ajdrya.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T20:20+09:00",
+     "v": {
+      "A": "64267e17",
+      "B": "01c1549c",
+      "C": "5429a85f"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=RpjZnoA7Qq8\n구간: 0:44-1:34\n곡: 한로로 '물음표'\n아티스트: 같은 이름의 신곡\n피처링:\n후킹: 첫 아레나 공연과\n출처: 한로로 HANRORO\n자막: 자동",
+    "caption": "한로로(@hanr0r0)가 신곡 '물음표'의 퍼포먼스 비디오를 공식 채널에 먼저 공개했습니다.\n\n'물음표'는 내년 1월 인스파이어 아레나에서 열리는 다섯 번째 단독 콘서트의 이름이기도 한데요, 데뷔 첫 아레나 공연을 앞두고 같은 제목의 곡을 먼저 꺼내 든 셈입니다.\n\n음원은 11월 5일 오후 6시에 나옵니다.\n\n#PLOT #한로로 #물음표 #인스파이어아레나 #한로로콘서트",
+    "hooks": {
+     "A": "한로로가 던진 / 신곡 '물음표' / 무대가 먼저 왔다",
+     "B": "11월 5일 나오는 / 한로로 신곡 '물음표' / 퍼포먼스 선공개",
+     "C": "첫 아레나 공연과 / 같은 이름의 신곡 / 한로로 '물음표'"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=RpjZnoA7Qq8",
+     "credit": "한로로 HANRORO",
+     "range": [
+      44.0,
+      94.0
+     ]
+    },
+    "guided": {
+     "rec": "C",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 한로로 HANRORO (본인 공식 채널)",
+     "발매일 11월 5일 오후 6시는 공식 영상 설명란(+그걸 옮긴 루리웹 글)으로만 확인 — 기사로는 아직 없음"
+    ],
+    "research": [
+     {
+      "title": "[Performance] 한로로 - 물음표 (Question Mark) — 한로로 HANRORO 공식 채널 (10/26, 설명란: 11.5 Thu 6PM 발매)",
+      "link": "https://www.youtube.com/watch?v=RpjZnoA7Qq8"
+     },
+     {
+      "title": "루리웹 — [한로로] '물음표' 퍼포먼스 비디오 선공개 (10/26)",
+      "link": "https://bbs.ruliweb.com/news/board/1005/read/3820721"
+     },
+     {
+      "title": "일간스포츠 — 한로로, 데뷔 첫 아레나 입성…내년 1월 인스파이어 단독 공연",
+      "link": "https://isplus.com/article/view/isp202610250010"
+     },
+     {
+      "title": "헤럴드뮤즈 — 한로로, 데뷔 첫 아레나 입성..내년 1월 단독 콘서트 개최(공식)",
+      "link": "https://www.heraldmuse.com/article/10913775"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/RpjZnoA7Qq8/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793013634/cxivebsdcpw1cdmvuczp.jpg",
+     "key": "RpjZnoA7Qq8@44.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-26T20:20+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -4028,11 +4221,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 14,
+    "drafts": 15,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T20:11+09:00"
+  "at": "2026-10-26T20:20+09:00"
  },
  "slots": {
   "basis": 245,
