@@ -53,6 +53,9 @@ body::after{
 .masthead{display:flex; align-items:center; gap:14px; padding-bottom:calc(var(--u)*2)}
 .masthead .mark{width:40px; height:25px; flex:none;
   background-size:contain; background-repeat:no-repeat; opacity:.9}
+/* 마크는 흰 그림이라 밝은 테마(컴퓨터 기본)에선 크림 바탕에 묻혀 깨진 것처럼 보였다 (10/26 규효) — 밝을 땐 검게 */
+html:root[data-theme="light"] .masthead .mark{filter:brightness(0); opacity:.86}
+@media (prefers-color-scheme: light){ html:root:not([data-theme="dark"]) .masthead .mark{filter:brightness(0); opacity:.86} }
 .masthead .rule{flex:1; height:1px; background:var(--line)}
 /* 테마 버튼이 갈 자리. 없으면 화면 오른쪽 위에 떠서 제호를 덮는다. */
 .masthead .hbtns{flex:none; display:flex; gap:8px; align-items:center}
@@ -545,7 +548,7 @@ if ('serviceWorker' in navigator) {
   }
 })();
 </script>
-<div style="text-align:center;font:500 12.5px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 10.26 20:42</div>
+<div style="text-align:center;font:500 12.5px/1.6 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);padding:4px 0 18px">판 10.26 20:57</div>
 
 <script>
 (function () {
