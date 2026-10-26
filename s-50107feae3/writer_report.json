@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26T09:58+09:00",
+ "generated_at": "2026-10-26T10:30+09:00",
  "range": [
   "2026-10-20",
   "2026-10-26"
@@ -30,8 +30,8 @@
    "안 올림": 0
   },
   "why_top": [],
-  "published": 18,
-  "publish_rate": 0.21,
+  "published": 19,
+  "publish_rate": 0.22,
   "reach_mult": [
    0.37,
    0.51
@@ -46,7 +46,7 @@
   "avg_secs": 102,
   "denied": 12,
   "auto": {
-   "올림": 32,
+   "올림": 33,
    "안 올림": 31
   }
  },
