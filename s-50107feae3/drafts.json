@@ -2076,7 +2076,12 @@
      }
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De8N3N5mWhx/",
+    "cover": "A",
+    "at": "2026-10-26T11:32+09:00"
+   }
   },
   {
    "source": {
@@ -2106,7 +2111,7 @@
    "added_at": "2026-10-26T11:23+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n인스파이어 아레나가 12월부터 '네이버 아레나'로 이름을 바꿉니다.\n\n인스파이어 리조트는 26일 네이버와 3년간의 명명권 계약을 맺었다고 밝혔는데요, 새 공식 명칭은 '네이버 아레나 앳 인스파이어'(NAVER ARENA at INSPIRE)입니다. 2023년 12월 멜론뮤직어워드로 문을 연 지 3년 만에 바뀌는 간판입니다.\n\n지난해 3월 첫 내한 공연을 이곳에서 열었던 요네즈 켄시(@hachi_08)는 내년 1월 14일과 16·17일 같은 무대로 돌아옵니다. 그때 그를 맞는 건 새 이름의 아레나입니다.\n\n#PLOT #인스파이어아레나 #네이버아레나 #요네즈켄시 #영종도\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792981390/iqwijdhy7w217tj7vdps.jpg\n제목: 인스파이어 아레나,|12월부터 네이버 아레나로\n부제: 3년 명명권 계약 · 공식 명칭 '네이버 아레나 앳 인스파이어'\n출처: 인스파이어 리조트\n",
+    "form": "[카테고리]\nNews\n\n[캡션]\n인스파이어 아레나가 12월부터 '네이버 아레나'로 이름을 바꿉니다.\n\n인스파이어 리조트는 26일 네이버와 3년간의 명명권 계약을 맺었다고 밝혔는데요, 새 공식 명칭은 '네이버 아레나 앳 인스파이어'(NAVER ARENA at INSPIRE)입니다. 2023년 12월 멜론뮤직어워드로 문을 연 지 3년 만에 바뀌는 간판입니다.\n\n지난해 3월 첫 내한 공연을 이곳에서 열었던 요네즈 켄시(@hachi_08)는 내년 1월 14일과 16·17일 같은 무대로 돌아옵니다. 그때 그를 맞는 건 새 이름의 아레나입니다.\n\n#PLOT #인스파이어아레나 #네이버아레나 #요네즈켄시 #영종도\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792981391/czsxmjsqv8ky1uox3rfa.jpg\n제목: 인스파이어 아레나,|12월부터 네이버 아레나로\n부제: 3년 명명권 계약 · 공식 명칭 '네이버 아레나 앳 인스파이어'\n출처: 인스파이어 리조트\n",
     "caption": "인스파이어 아레나가 12월부터 '네이버 아레나'로 이름을 바꿉니다.\n\n인스파이어 리조트는 26일 네이버와 3년간의 명명권 계약을 맺었다고 밝혔는데요, 새 공식 명칭은 '네이버 아레나 앳 인스파이어'(NAVER ARENA at INSPIRE)입니다. 2023년 12월 멜론뮤직어워드로 문을 연 지 3년 만에 바뀌는 간판입니다.\n\n지난해 3월 첫 내한 공연을 이곳에서 열었던 요네즈 켄시(@hachi_08)는 내년 1월 14일과 16·17일 같은 무대로 돌아옵니다. 그때 그를 맞는 건 새 이름의 아레나입니다.\n\n#PLOT #인스파이어아레나 #네이버아레나 #요네즈켄시 #영종도",
     "photos": [
      {
@@ -2175,7 +2180,6 @@
     ],
     "issues": [],
     "confirm": [
-     "표지 사진: 뉴스1 기사 대표 사진(인스파이어 제공 아레나 사진)이 맞는지 — 아니면 요네즈 켄시 사진으로 바꾸기",
      "요네즈 켄시 1월 공연 예매처 표기가 아직 '인스파이어 아레나'라 '새 이름의 아레나' 문장이 괜찮은지"
     ],
     "research": [
@@ -2207,24 +2211,40 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981398/pfsw6gemj6tav7m7in16.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981398/lbwpduoeajs6lkzzgadg.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981957/untbkhsa1buwkzqfvbgt.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981957/zejc5wtwscsh6dpgj75y.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981400/qgvykg3xpjwd0onsnaoo.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981400/bockw9jvfvqfkugkhecp.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981398/pfsw6gemj6tav7m7in16.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981959/qo4qf5u25hj0sezzqkap.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981959/ihxzkgorisva81uyqa80.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981957/untbkhsa1buwkzqfvbgt.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T11:23+09:00",
+     "at": "2026-10-26T11:32+09:00",
      "v": {
-      "A": "fc877c34",
-      "B": "628745d2",
-      "C": "550ef987"
+      "A": "98901d0b",
+      "B": "0ca4c8ab",
+      "C": "54e34888"
      }
+    },
+    "photo_tried": {
+     "0": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981390/iqwijdhy7w217tj7vdps.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981391/czsxmjsqv8ky1uox3rfa.jpg"
+     ]
+    },
+    "photo_swapped": {
+     "at": "2026-10-26T11:32+09:00",
+     "slide": 0,
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981391/czsxmjsqv8ky1uox3rfa.jpg"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De8N5NymfsC/",
+    "cover": "A",
+    "at": "2026-10-26T11:32+09:00"
+   }
   },
   {
    "source": {
@@ -2535,7 +2555,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T11:26+09:00"
+  "at": "2026-10-26T11:32+09:00"
  },
  "slots": {
   "basis": 240,
