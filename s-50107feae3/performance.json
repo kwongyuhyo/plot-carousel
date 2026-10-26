@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-26 15:04 KST",
+ "generated_at": "2026-10-26 19:04 KST",
  "weeks": [
   {
    "week": "2026-W36",
@@ -1662,11 +1662,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-25 22:04 KST"
+  "daily": "2026-10-26 15:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-26T15:02:41+09:00",
+  "fetched_at": "2026-10-26T18:34:48+09:00",
   "posts": [
+   {
+    "t": "2026-10-26T17:02+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "윤하가 14년을 함께한 소속사 C9엔터테인먼트를 떠납니다."
+   },
+   {
+    "t": "2026-10-26T16:55+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "Mnet의 대국민 오디션 〈슈퍼스타K〉가 11년 만에 새 시즌을 준비하고"
+   },
+   {
+    "t": "2026-10-26T16:30+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "사전심의를 끝낸 노래가 다시 '사전'이라는 말 앞에 섰습니다."
+   },
    {
     "t": "2026-10-26T14:17+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1956,12 +1971,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 167,
-  "posted": 42,
-  "posts": 67,
-  "rate": 0.25,
+  "drafts": 172,
+  "posted": 45,
+  "posts": 69,
+  "rate": 0.26,
   "adopted_mult": 0.96,
-  "own_mult": 1.16,
+  "own_mult": 1.09,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -1974,12 +1989,12 @@
     "mult": 1.61
    },
    "정보": {
-    "drafts": 101,
-    "posted": 32,
+    "drafts": 105,
+    "posted": 35,
     "mult": 1.1
    },
    "클립": {
-    "drafts": 29,
+    "drafts": 30,
     "posted": 4,
     "mult": 0.7
    },
@@ -2016,12 +2031,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 92,
-    "posted": 29,
+    "drafts": 94,
+    "posted": 31,
     "mult": 1.0
    },
    "mal": {
-    "drafts": 29,
+    "drafts": 30,
     "posted": 4,
     "mult": 0.7
    },
@@ -2041,8 +2056,8 @@
     "mult": 1.28
    },
    "followup": {
-    "drafts": 13,
-    "posted": 4,
+    "drafts": 14,
+    "posted": 5,
     "mult": 1.12
    },
    "spotlight": {
@@ -2061,7 +2076,7 @@
     "mult": 0.85
    },
    "tickets": {
-    "drafts": 2,
+    "drafts": 3,
     "posted": 1,
     "mult": 1.32
    },
@@ -2090,32 +2105,6 @@
   "recent": [
    {
     "day": "2026-10-25",
-    "lane": "정보",
-    "who": "원희",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "1df772e4",
-    "posted": "De6g57clEdp",
-    "head": "아일릿(@illit_official) 원희가 27일 아침 뉴스의 날씨를 전합니다.",
-    "url": "https://www.instagram.com/p/De6g57clEdp/",
-    "mult": 0.96
-   },
-   {
-    "day": "2026-10-25",
-    "lane": "시리즈",
-    "who": "슈게이즈",
-    "repack": false,
-    "grade": "A",
-    "corner": "intro",
-    "key": "a7a8736d",
-    "posted": "De6gqqdFBIH",
-    "head": "슈게이즈는 기타 소리로 안개를 만드는 음악입니다.",
-    "url": "https://www.instagram.com/p/De6gqqdFBIH/",
-    "mult": 0.49
-   },
-   {
-    "day": "2026-10-25",
     "lane": "클립",
     "who": "최예나",
     "repack": false,
@@ -2126,6 +2115,19 @@
     "head": "최예나(@yena.jigumina)가 오오츠카 아이의 '사쿠란보'를 한국어로 다시 부릅니다",
     "url": "https://www.instagram.com/p/De6vAZQmVCq/",
     "mult": 0.66
+   },
+   {
+    "day": "2026-10-25",
+    "lane": "정보",
+    "who": "매시브 어택",
+    "repack": false,
+    "grade": "A",
+    "corner": "followup",
+    "key": "00837920",
+    "posted": "De8wCRJFPjY",
+    "head": "사전심의를 끝낸 노래가 다시 '사전'이라는 말 앞에 섰습니다.",
+    "url": "https://www.instagram.com/p/De8wCRJFPjY/",
+    "mult": null
    },
    {
     "day": "2026-10-26",
@@ -2164,6 +2166,19 @@
     "posted": "De8GoHuGRKA",
     "head": "아이브가 오늘(26일) 오후 6시 미니앨범 [Looks Can Kill]을 냅니다.",
     "url": "https://www.instagram.com/p/De8GoHuGRKA/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-26",
+    "lane": "정보",
+    "who": "슈퍼스타K",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "dcafe2fd",
+    "posted": "De8y3silPDD",
+    "head": "Mnet의 대국민 오디션 〈슈퍼스타K〉가 11년 만에 새 시즌을 준비하고 있는 것으로 알려",
+    "url": "https://www.instagram.com/p/De8y3silPDD/",
     "mult": null
    },
    {
