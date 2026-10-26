@@ -152,7 +152,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978364/pqxfsaduswp6kysk0xlr.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:32+09:00"
+     "at": "2026-10-26T10:32+09:00",
+     "v": {
+      "A": "30a607b7",
+      "B": "7df5fdc2",
+      "C": "288a3cc1"
+     }
     }
    },
    "corner_name": "이번 주 나온 앨범",
@@ -293,7 +298,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978367/kvw4vjnbs2mymvfsfzyb.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:32+09:00"
+     "at": "2026-10-26T10:32+09:00",
+     "v": {
+      "A": "9bb91fe3",
+      "B": "52ad6b04",
+      "C": "c62984d4"
+     }
     }
    },
    "shorts": {
@@ -532,7 +542,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978375/krzx0kcftnm8utesat6a.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:32+09:00"
+     "at": "2026-10-26T10:32+09:00",
+     "v": {
+      "A": "5ba89035",
+      "B": "09a3bdc0",
+      "C": "780d6118"
+     }
     }
    },
    "corner_name": "이번 주 나온 앨범",
@@ -671,7 +686,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978380/pjadmza0nl1lxdti6lth.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:33+09:00"
+     "at": "2026-10-26T10:33+09:00",
+     "v": {
+      "A": "85b03ff3",
+      "B": "65110e01",
+      "C": "e931daa6"
+     }
     }
    },
    "shorts": {
@@ -854,7 +874,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978384/zuynrdvun3s1ezwmnytg.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:33+09:00"
+     "at": "2026-10-26T10:33+09:00",
+     "v": {
+      "A": "02b5edca",
+      "B": "ace82c68",
+      "C": "24e5e7cd"
+     }
     }
    },
    "shorts": {
@@ -1099,7 +1124,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978388/b1fxtcaqkqpiiomi9dbe.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:33+09:00"
+     "at": "2026-10-26T10:33+09:00",
+     "v": {
+      "A": "ef589fd9",
+      "B": "7b861185",
+      "C": "e95eda97"
+     }
     }
    },
    "corner_name": "소식",
@@ -1219,7 +1249,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978392/fgfs6bggj5i8c9de5ea9.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:33+09:00"
+     "at": "2026-10-26T10:33+09:00",
+     "v": {
+      "A": "feed190f",
+      "B": "32d01b72",
+      "C": "2cee5d19"
+     }
     }
    },
    "corner_name": "이번 주 나온 앨범",
@@ -1384,7 +1419,12 @@
       "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978396/uitiolf6lewwrtdqo8ab.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-26T10:33+09:00"
+     "at": "2026-10-26T10:33+09:00",
+     "v": {
+      "A": "89317eb6",
+      "B": "bd358358",
+      "C": "74be4069"
+     }
     }
    },
    "corner_name": "소식",
@@ -1933,13 +1973,117 @@
      "from": "https://isplus.com/article/view/isp202610260024"
     }
    ]
+  },
+  {
+   "source": {
+    "id": "claude:ord-8cdb60bf",
+    "account": "@규효 공유 · @hipkr_",
+    "url": "https://www.instagram.com/p/De8BhjVTPKY/?rpxt=M3k3MnhvOHk0c29j",
+    "image": null,
+    "head": "서인국·허각을 낸 〈슈퍼스타K〉가 11년 만에 나이·장르 제한 없는 오디션으로 돌아온다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T11:20+09:00",
+   "key": "dcafe2fd",
+   "by": "claude",
+   "subjects": [
+    "슈퍼스타K"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "아이돌 오디션으로 옮겨 간 Mnet이 11년 만에 '누구나'의 오디션 〈슈퍼스타K〉를 다시 연다",
+    "why": "규효 맡기기 · 서인국·허각·버스커버스커를 낸 오디션의 귀환, 여러 매체 동시 보도"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T11:20+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nMnet의 대국민 오디션 〈슈퍼스타K〉가 11년 만에 새 시즌을 준비하고 있는 것으로 알려졌습니다.\n\n2009년 서인국을 시작으로 허각, 울랄라세션, 로이킴, 박재정, 곽진언, 케빈오, 김영근이 우승했고, 버스커버스커·존박·볼빨간사춘기도 이 무대를 거쳤는데요, 그사이 Mnet의 오디션은 〈프로듀스 101〉, 〈보이즈 플래닛〉처럼 아이돌 데뷔를 목표로 한 쪽으로 옮겨 갔습니다.\n\n이번 시즌은 나이·성별·장르·국적에 제한을 두지 않고 지원자를 받을 계획입니다. 아이돌이 아닌 '누구나'의 오디션이 다시 열리는 셈입니다.\n\n가제는 〈슈퍼스타K 2027〉로, 2027년 방송을 목표로 다음 달 모집 공고와 함께 공개 오디션을 시작할 전망입니다.\n\n#PLOT #슈퍼스타K #엠넷 #허각 #서인국 #오디션\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792981207/dlwbcflt6stlbbgqhluh.jpg\n제목: 슈퍼스타K,|11년 만에 돌아온다\n부제: 나이·장르·국적 제한 없는 새 시즌 준비\n출처:\n",
+    "caption": "Mnet의 대국민 오디션 〈슈퍼스타K〉가 11년 만에 새 시즌을 준비하고 있는 것으로 알려졌습니다.\n\n2009년 서인국을 시작으로 허각, 울랄라세션, 로이킴, 박재정, 곽진언, 케빈오, 김영근이 우승했고, 버스커버스커·존박·볼빨간사춘기도 이 무대를 거쳤는데요, 그사이 Mnet의 오디션은 〈프로듀스 101〉, 〈보이즈 플래닛〉처럼 아이돌 데뷔를 목표로 한 쪽으로 옮겨 갔습니다.\n\n이번 시즌은 나이·성별·장르·국적에 제한을 두지 않고 지원자를 받을 계획입니다. 아이돌이 아닌 '누구나'의 오디션이 다시 열리는 셈입니다.\n\n가제는 〈슈퍼스타K 2027〉로, 2027년 방송을 목표로 다음 달 모집 공고와 함께 공개 오디션을 시작할 전망입니다.\n\n#PLOT #슈퍼스타K #엠넷 #허각 #서인국 #오디션",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981207/dlwbcflt6stlbbgqhluh.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981207/dlwbcflt6stlbbgqhluh.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "슈퍼스타K,|11년 만에 돌아온다",
+      "sub": "나이·장르·국적 제한 없는 새 시즌 준비"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "서인국·허각의 그 오디션|슈퍼스타K 부활",
+      "sub": "2027년 방송 목표"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "아이돌 말고 누구나,|슈퍼스타K가 다시 연다",
+      "sub": "다음 달 모집 공고 전망"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "원보도는 마이데일리 단독이고 Mnet 공식 발표는 못 찾았습니다 — 그래서 캡션은 '알려졌습니다·전망입니다' 꼴로 썼습니다.",
+     "숏폼은 안 만들었습니다: 이번 건 발표형 소식이라 장면이나 발언이 없고, 옛 시즌 영상은 Mnet 영상(클립 위험 높음)이라 소식과 맞지도 않습니다."
+    ],
+    "research": [
+     {
+      "title": "서인국·허각 배출한 '슈퍼스타K', 11년 만에 부활 - 일간스포츠",
+      "link": "https://isplus.com/article/view/isp202610260018"
+     },
+     {
+      "title": "'슈퍼스타K' 11년 만에 부활 … 내달 공개 오디션 시작 - 뉴데일리",
+      "link": "https://www.newdaily.co.kr/site/data/html/2026/10/26/2026102600112.html"
+     },
+     {
+      "title": "엠넷, '슈퍼스타K' 새 시즌 준비…대국민 오디션 부활 예고 - 싱글리스트",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=776318"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981210/m6e0tskloctwuqcwodcb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981210/wywobcbpth370lavakda.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981212/nm2anrupupzukxdlhwjd.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981212/bjycdbvbjl1cjqgqgqpa.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792981210/m6e0tskloctwuqcwodcb.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T11:20+09:00",
+     "v": {
+      "A": "c812f33f",
+      "B": "9af1c6c5",
+      "C": "07c9047b"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 7,
-  "done": 3,
+  "done": 4,
   "goal": 28,
   "corners": [
    {
@@ -2090,19 +2234,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 2,
-    "left": 2,
+    "done": 3,
+    "left": 1,
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 7,
+    "drafts": 8,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T10:29+09:00"
+  "at": "2026-10-26T11:20+09:00"
  },
  "slots": {
-  "basis": 239,
+  "basis": 240,
   "card": [
    {
     "from": 18,
