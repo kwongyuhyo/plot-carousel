@@ -658,6 +658,8 @@ pre.form{
 .pkCropRow button{flex:0 1 auto; min-width:0; padding-left:11px; padding-right:11px}
 .pkCropNow{font-size:13px; color:var(--dim); flex:1 0 100%; padding-top:1px}
 .pkCropNow.fixed{color:var(--warn)}
+.pkLbRow input[type=range]{flex:1 1 120px; min-width:100px; accent-color:var(--accent)}
+.pkLbRow button.on{color:var(--bg); background:var(--accent); border-color:var(--accent)}
 /* 1% 씩 밀기 — 세 칸(왼쪽·가운데·오른쪽)만으로는 얼굴이 살짝 빗나갈 때 답이 없다 */
 .pkFine{display:inline-flex; gap:4px; flex:none; margin-left:2px}
 .pkFine button{padding:0; width:38px; min-width:38px; font-size:14px; font-weight:800}
@@ -1260,6 +1262,15 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
           id="pkCropWin"></i></span>
   </div>
 
+  <!-- [레터박스] 시네마 비율 영상의 위아래 검은 띠 (10/26) — 자동은 맥이 찾아 자르고, 숫자는 위아래 그만큼 잘라 확대 -->
+  <div class="pkRow pkCropRow pkLbRow">
+    <span class="pkLbl">위아래 검은 띠</span>
+    <button data-lb="" class="pkBot">🤖 자동</button>
+    <button data-lb="끄기">안 자름</button>
+    <input type="range" id="pkLbRange" min="0" max="25" step="1" value="0" aria-label="위아래 자를 비율(%)" title="위아래 각각 몇 % 자를지 — 끌면 미리보기가 따라 확대됩니다">
+    <span class="pkCropNow" id="pkLbNow"></span>
+  </div>
+
   <!-- [가사] 노래 파트 가사. 직접 맞추기는 첫 줄만 탭하면 나머지가 따라붙는다. -->
   <div class="pkRow pkCropRow pkLyMode">
     <span class="pkLbl">가사</span>
@@ -1433,6 +1444,8 @@ function blank() {
            feat: '', hook: '', source: r.source || '',
            // null = 자동(얼굴 따라). 0~1 = 가로 위치를 직접 고정.
            crop: null,
+           // [레터박스] '' = 자동(맥이 위아래 검은 띠를 찾아 잘라냄) · '끄기' · '12' = 위아래 12%씩 (10/26)
+           lb: '',
            // 컷을 나눈 뒤 한 번 보여주고 확정을 받는다. 지난 선택을 기억한다.
            check: !!r.check,
            // [서사] 서사형 오늘의 노래 — 한 줄에 하나, 첫 줄이 첫 화면. 서사영상은 「링크 시작-끝」
@@ -1459,7 +1472,7 @@ function blank() {
  */
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
-              'title', 'artist', 'feat', 'hook', 'source', 'crop', 'check',
+              'title', 'artist', 'feat', 'hook', 'source', 'crop', 'lb', 'check',
               'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans', 'metaTime',
               'frames', 'cta', 'storyBed', 'subs', 'done', 'subsRef', 'caption'];
 
@@ -1850,6 +1863,7 @@ function parseForm(text) {
     const _f = Number((kv['프레임레이트'] || '').trim());
     if (isFinite(_f) && FPS_LIST.indexOf(_f) >= 0) { UNIT.fps = _f; unitSave(); }
     b.crop   = cropOf(kv['리프레임']);
+    b.lb     = lbOf(kv['레터박스']);
     b.check = ['예','y','yes','on','1','true','확인']
       .indexOf((kv['컷확인'] || '').trim().toLowerCase()) >= 0;
     b.story = (kv['서사'] || '').split('|').map(x => x.trim()).filter(Boolean).join('\n');
@@ -1969,6 +1983,23 @@ function importText(text, append) {
  * 0 = 왼쪽 끝, 0.5 = 가운데, 1 = 오른쪽 끝. 비우면 자동.
  * 파이프라인(test_auto_reframe_v3.py)이 같은 0~1 비율을 그대로 받는다.
  */
+/* ── 레터박스(위아래 검은 띠) — 10/26 규효 "시네마토그래피로 찍은 영상은 위아래가 검다, 자동으로 맞추거나 수동으로" ──
+ * 자동: 맥이 리프레임 전에 띠를 찾아 빼고 9:16 을 잡는다(조금 확대). 끄기: 그대로. 숫자: 위아래 각각 그만큼(%) 잘라 확대.
+ * 미리보기는 숫자일 때만 따라 한다 — 자동은 맥이 영상을 봐야 안다. */
+function lbOf(v) {
+  const t = String(v == null ? '' : v).trim().replace(/%$/, '').trim();
+  if (!t || t === '자동' || t === 'auto') return '';
+  if (['끄기', 'off', '없음', '0', '안 자름'].indexOf(t) >= 0) return '끄기';
+  const n = Number(t);
+  return isFinite(n) && n > 0 ? String(Math.max(1, Math.min(25, Math.round(n)))) : '';
+}
+function lbPct(v) { const s = lbOf(v); return s && s !== '끄기' ? Number(s) / 100 : 0; }
+function lbLabel(v) {
+  const s = lbOf(v);
+  return !s ? '자동 — 위아래 검은 띠가 있으면 맥이 찾아 잘라냅니다 (미리보기엔 안 보임)'
+       : s === '끄기' ? '안 자름 — 원본 그대로'
+       : '위아래 ' + s + '%씩 잘라 확대';
+}
 const CROP_WORDS = { '왼쪽': 0, '좌': 0, '가운데': 0.5, '중앙': 0.5, '오른쪽': 1, '우': 1 };
 
 function cropOf(v) {
@@ -2016,6 +2047,8 @@ function blockText(b) {
     // 프레임으로 적었으면 세는 데 쓴 fps 를 같이 보낸다. 없으면 봇이 30 으로 읽는다.
     ...(usesFrames(b) ? ['프레임레이트: ' + UNIT.fps] : []),
     '리프레임: ' + (b.crop === null ? '자동' : String(b.crop)),
+    // 자동이면 안 적는다 — 봇은 비어 있으면 띠를 찾아 잘라낸다
+    ...(lbOf(b.lb) ? ['레터박스: ' + lbOf(b.lb)] : []),
     // 켰을 때만 적는다 — 안 적으면 봇은 지금까지처럼 쭉 만든다.
     ...(b.check ? ['컷확인: 예'] : []),
     // [서사] 비어 있으면 줄을 아예 넣지 않는다 — 지금까지의 양식과 똑같이 보인다.
@@ -2851,7 +2884,8 @@ function pkFit() {
   const w = frame.clientWidth, h = frame.clientHeight;
   $('#pkOver').style.transform = 'scale(' + (w / 1080) + ')';
   // 9:16 안에 16:9 를 중앙 크롭 — 리프레임의 기본 동작에 가깝다.
-  const f = PK.wide ? { w: w, h: h } : { w: h * 16 / 9, h: h };
+  const lp = PK.wide ? 0 : lbPct(PK.lb), zh = h / (1 - 2 * lp);   // 레터박스를 숫자로 정했으면 그만큼 확대
+  const f = PK.wide ? { w: w, h: h } : { w: zh * 16 / 9, h: zh };
   // 9:16 창이 16:9 영상의 어디를 보는가. r=0 왼쪽 끝, 0.5 가운데, 1 오른쪽 끝.
   // 자동일 때는 가운데를 보여 준다 — 자동 리프레임의 기본값과 같다.
   const r = (PK.wide || PK.crop == null) ? 0.5 : PK.crop;
@@ -2859,7 +2893,7 @@ function pkFit() {
   const box = $('#pkFrame').querySelector('.pkVideo');
   [...box.children].forEach((n) => {
     n.style.width = f.w + 'px'; n.style.height = f.h + 'px';
-    n.style.left = off + 'px'; n.style.top = '0'; n.style.transform = 'none';
+    n.style.left = off + 'px'; n.style.top = (-lp * f.h) + 'px'; n.style.transform = 'none';
   });
   $('#pkFrame').classList.toggle('grab', !PK.wide && f.w - w > 1);
   // 칸 크기가 정해진 뒤라야 창이 차지하는 비율을 잴 수 있다
@@ -2873,6 +2907,7 @@ async function openPicker(b) {
   PK.inS  = toSec(b.start);
   PK.outS = toSec(b.end);
   PK.crop = cropOf(b.crop);
+  PK.lb = lbOf(b.lb);
   PK.wide = false;
   PK.drag = null;
   $('#picker').hidden = false;
@@ -3366,7 +3401,14 @@ function pkCropBarPaint() {
   bar.classList.toggle('fixed', PK.crop !== null);
 }
 
+function pkLbPaint() {
+  const s = lbOf(PK.lb);
+  document.querySelectorAll('[data-lb]').forEach((n) => n.classList.toggle('on', lbOf(n.dataset.lb) === s));
+  const r = $('#pkLbRange'); if (r) { r.value = s && s !== '끄기' ? s : 0; r.classList.toggle('on', !!s && s !== '끄기'); }
+  const t = $('#pkLbNow'); if (t) { t.textContent = lbLabel(s); t.classList.toggle('fixed', !!s); }
+}
 function pkCropPaint() {
+  pkLbPaint();
   const now = $('#pkCropNow');
   if (now) {
     now.textContent = cropLabel(PK.crop);
@@ -3436,6 +3478,7 @@ function pkApply() {
   b.start = fmtStamp(PK.inS);
   b.end   = fmtStamp(PK.outS);
   b.crop  = PK.crop;
+  b.lb    = PK.lb || '';
   b._dur  = PK.dur || b._dur || 0;
   const lyWas = b.lyr;
   b.lyr   = lyOut();
@@ -3743,6 +3786,12 @@ function bindPicker() {
   // 어디를 누르든(재생기 포함) 초점을 화면으로 돌려놔야 방향키가 계속 먹는다.
   $('#picker').addEventListener('pointerup', () => setTimeout(pkFocus, 0));
   $('#pkAuto').onclick = () => pkCropSet(null, 'tap');
+  // 레터박스 (10/26)
+  document.querySelectorAll('[data-lb]').forEach((n) => {
+    n.onclick = () => { PK.lb = lbOf(n.dataset.lb); pkFit(); pkLbPaint(); };
+  });
+  const lbR = $('#pkLbRange');
+  if (lbR) lbR.oninput = () => { PK.lb = Number(lbR.value) > 0 ? String(lbR.value) : '끄기'; pkFit(); pkLbPaint(); };
   lyBind();
   document.querySelectorAll('[data-cropnudge]').forEach((n) => {
     n.onclick = (ev) => pkCropNudge(Number(n.dataset.cropnudge), ev.shiftKey);
@@ -4502,12 +4551,13 @@ function ppFit() {
   $('#ppOver').style.transform = 'scale(' + (w / 1080) + ')';
   if (PP.kind !== 'yt') return;
   const node = document.getElementById('ppYT'); if (!node) return;
-  const fw = h * 16 / 9;
   const shorts = /\/shorts\//.test(PP.b.url || '');
+  const lp = shorts ? 0 : lbPct(PP.b.lb), zh = h / (1 - 2 * lp);     // 레터박스 숫자면 확대 (10/26)
+  const fw = zh * 16 / 9;
   const c = cropOf(PP.b.crop);
   const r = (shorts || c == null) ? 0.5 : c;
-  node.style.width = fw + 'px'; node.style.height = h + 'px';
-  node.style.left = (-r * Math.max(0, fw - w)) + 'px';
+  node.style.width = fw + 'px'; node.style.height = zh + 'px';
+  node.style.left = (-r * Math.max(0, fw - w)) + 'px'; node.style.top = (-lp * zh) + 'px';
 }
 function ppNow() {
   try {
@@ -5216,9 +5266,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.26 21:35';
+    a.title = '판 10.26 21:40';
     var ver = document.createElement('span');
-    ver.textContent = '10.26 21:35';
+    ver.textContent = '10.26 21:40';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
