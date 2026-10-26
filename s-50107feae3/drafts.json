@@ -3488,7 +3488,12 @@
      }
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De9FvWllJpy/",
+    "cover": "A",
+    "at": "2026-10-26T19:40+09:00"
+   }
   }
  ],
  "skipped": [],
@@ -3655,7 +3660,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T18:45+09:00"
+  "at": "2026-10-26T19:40+09:00"
  },
  "slots": {
   "basis": 245,
@@ -3680,7 +3685,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.51,
+    "mult": 1.52,
     "median": 0.87,
     "n": 19
    }
