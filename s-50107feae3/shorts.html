@@ -35,6 +35,7 @@
 .stWrap{position:relative; background:#111; border-top:1px solid #222; border-bottom:1px solid #222}
 .stScroll{overflow-x:auto; overflow-y:hidden; scrollbar-width:none; -webkit-overflow-scrolling:touch; touch-action:pan-x}
 .stScroll::-webkit-scrollbar{display:none}
+@media (hover:hover){.stScroll{cursor:grab}.stScroll.pan{cursor:grabbing}.stScroll .stBlk{cursor:pointer}}
 .stInner{position:relative; height:84px}
 .stRuler{position:absolute; left:0; right:0; top:0; height:22px}
 .stRuler i{position:absolute; top:14px; width:1px; height:8px; background:rgba(255,255,255,.25)}
@@ -4833,7 +4834,31 @@ function stBuild() {
     '</div>';
   const sc = box.querySelector('.stScroll');
   sc.addEventListener('scroll', stOnScroll, { passive: true });
-  sc.addEventListener('wheel', (e) => { if (e.ctrlKey || e.metaKey) { e.preventDefault(); stZoom(e.deltaY < 0 ? 1.25 : 0.8); } }, { passive: false });
+  sc.addEventListener('wheel', (e) => {
+    if (e.ctrlKey || e.metaKey) { e.preventDefault(); stZoom(e.deltaY < 0 ? 1.25 : 0.8); return; }
+    // 컴퓨터 마우스 휠(세로)도 타임라인을 옆으로 민다 (10/26 규효 "컴퓨터로 하는데 타임라인 이동이 안 된다")
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) { e.preventDefault(); sc.scrollLeft += e.deltaY * (e.deltaMode === 1 ? 16 : 1); }
+  }, { passive: false });
+  // 마우스로 빈 곳을 끌면 타임라인이 따라 움직이고, 끌지 않고 누르면 그 자리로 간다 (블록은 stDown 이 따로 받는다)
+  sc.addEventListener('pointerdown', (e) => {
+    if (e.pointerType !== 'mouse' || e.button !== 0 || (e.target.closest && e.target.closest('.stBlk'))) return;
+    const x0 = e.clientX, l0 = sc.scrollLeft; let moved = false;
+    try { sc.setPointerCapture(e.pointerId); } catch (_) {}
+    const mv = (ev) => {
+      const dx = ev.clientX - x0;
+      if (!moved && Math.abs(dx) < 4) return;
+      moved = true; sc.classList.add('pan'); sc.scrollLeft = l0 - dx;
+    };
+    const up = (ev) => {
+      sc.removeEventListener('pointermove', mv); sc.removeEventListener('pointerup', up); sc.removeEventListener('pointercancel', up);
+      sc.classList.remove('pan');
+      if (moved || ev.type === 'pointercancel') return;
+      const half = Math.round(box.querySelector('.stWrap').clientWidth / 2), rc = sc.getBoundingClientRect();
+      const rel = Math.max(0, Math.min(stLen(), (sc.scrollLeft + (ev.clientX - rc.left) - half) / ST.pps));
+      ppSeek(PP.a + rel); stCenter(rel); ST.lastRel = rel;
+    };
+    sc.addEventListener('pointermove', mv); sc.addEventListener('pointerup', up); sc.addEventListener('pointercancel', up);
+  });
   // 두 손가락 벌리기 = 확대 (트랙 빈 곳에서)
   let pinch = null;
   sc.addEventListener('touchstart', (e) => { if (e.touches.length === 2) pinch = { d: Math.abs(e.touches[0].clientX - e.touches[1].clientX), p: ST.pps }; }, { passive: true });
@@ -5092,9 +5117,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.26 20:28';
+    a.title = '판 10.26 20:33';
     var ver = document.createElement('span');
-    ver.textContent = '10.26 20:28';
+    ver.textContent = '10.26 20:33';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
