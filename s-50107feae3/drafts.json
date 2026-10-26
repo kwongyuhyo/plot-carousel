@@ -1534,11 +1534,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "월요일 고정 연재 「이번 주 티켓 오픈」 · 페퍼톤스·백현진·오월오일 등 인디·밴드 위주라 도달 대비 팔로우 기대",
-    "at": "2026-10-26T09:58+09:00"
-   },
    "corner_name": "이번 주 티켓 오픈",
    "corner_no": 2,
    "captures": [
@@ -1724,11 +1719,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "고정 연재 「그날의 앨범」 · 이틀 전이 10주년, 핼러윈 닷새 전 · 이름만으로 읽히는 곡",
-    "at": "2026-10-26T09:58+09:00"
-   },
    "corner_name": "그날의 앨범",
    "corner_no": 2,
    "captures": [
@@ -1857,18 +1847,18 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "레이더 4위(A2O · 기사 다수) · A2O LITE 팔로워 하루 +4.9만 · 규효 10/17 '이수만의 녹슬지 않은 감' 결 그대로",
-    "at": "2026-10-26T09:58+09:00"
-   },
    "corner_name": "소식",
    "captures": [
     {
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978639/njyrklajd0luof9gyhgc.jpg",
      "from": "http://www.osen.co.kr/article/G1112898102"
     }
-   ]
+   ],
+   "pick": {
+    "rank": 2,
+    "why": "규효 10/17 '이수만의 녹슬지 않은 감' 결 그대로 · A2O LITE 팔로워 5일 새 +21만",
+    "at": "2026-10-26T16:19+09:00"
+   }
   },
   {
    "source": {
@@ -2732,12 +2722,297 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792998870/qt4erlqvoiwxrmnnc4ug.jpg",
      "key": "6ruo4VVRjvo@85.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-26T16:14+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1792999199/plot_studio/pgbmbcwrqwvujkk7u5uu.mp4",
+     "at": "2026-10-26T16:20+09:00",
+     "file": "NonLanI_Doen_MuDae_AIlLis_ChePoHaGessEo_Issue_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1792999201575-b4ed0f40",
+      "segs": [
+       {
+        "start": 2.92,
+        "end": 6.78,
+        "text": "새끼손가락은 약속을 안 했지만"
+       },
+       {
+        "start": 6.78,
+        "end": 11.06,
+        "text": "죽잖아 진짜 하이스티는"
+       },
+       {
+        "start": 11.06,
+        "end": 15.43,
+        "text": "내 말 죄 없잖아 없잖아 Crime"
+       },
+       {
+        "start": 15.43,
+        "end": 19.56,
+        "text": "signs 체포하겠어"
+       },
+       {
+        "start": 20.48,
+        "end": 22.8,
+        "text": "체포하겠어 Crime signs"
+       },
+       {
+        "start": 22.8,
+        "end": 29.56,
+        "text": "체포하겠어 체포하겠어"
+       },
+       {
+        "start": 36.72,
+        "end": 37.8,
+        "text": "클라이 Hold up"
+       },
+       {
+        "start": 37.8,
+        "end": 39.0,
+        "text": "don't say I'm not"
+       },
+       {
+        "start": 39.0,
+        "end": 40.26,
+        "text": "the war"
+       },
+       {
+        "start": 40.84,
+        "end": 42.26,
+        "text": "Cause boy, love me"
+       },
+       {
+        "start": 42.26,
+        "end": 43.0,
+        "text": "me, you"
+       },
+       {
+        "start": 43.0,
+        "end": 43.82,
+        "text": "James Please hold"
+       },
+       {
+        "start": 43.82,
+        "end": 44.82,
+        "text": "up, don't say I'm"
+       },
+       {
+        "start": 44.82,
+        "end": 45.42,
+        "text": "not the war"
+       }
+      ]
+     }
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:rescene-geoje-citizen",
+    "account": "부산일보",
+    "url": "https://www.busan.com/view/busan/view.php?code=2026102615042726866",
+    "image": null,
+    "head": "\"거제 야호\" 리센느, 거제 첫 연예인 명예시민 됐다 (10/26)",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T16:19+09:00",
+   "key": "f3358691",
+   "by": "claude",
+   "subjects": [
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "미나미의 '거제 야호' 한마디가 홍보대사를 거쳐 거제시 첫 연예인 명예시민증으로 — 같은 날 빗속 무대",
+    "why": "뉴스 급상승 1위(기사 24건, 평소 6) · PLOT 리센느 글은 팔로우 상위 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T16:19+09:00",
+   "corner": "followup",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n리센느(@rescene_official)가 거제시의 첫 연예인 명예시민이 됐습니다.\n\n거제시는 지난 24일 리센느에게 제70호 명예시민증을 건넸는데요, 시작은 원이의 유튜브 채널에서 미나미가 외친 \"거제 야호\" 한마디였습니다. 원이의 고향 거제를 부른 이 말이 밈으로 퍼졌고, 거제시는 5월 리센느를 홍보대사로 위촉했습니다.\n\n같은 날 거제에서 열린 '오션하모니' 공연에는 비가 내렸습니다. 리센느는 객석의 팬들과 함께 비를 맞으며 무대를 이어갔습니다.\n\n장난처럼 나온 한마디가 한 도시의 명예시민증으로 돌아온 셈입니다.\n\n#PLOT #리센느 #RESCENE #거제야호 #원이 #미나미\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792999172/n2badoh9ghujw56dsrtu.jpg\n제목: '거제 야호' 리센느,|거제시 첫 연예인 명예시민\n부제: 제70호 명예시민증 · 같은 날 빗속 무대\n출처: @rescene_official\n",
+    "caption": "리센느(@rescene_official)가 거제시의 첫 연예인 명예시민이 됐습니다.\n\n거제시는 지난 24일 리센느에게 제70호 명예시민증을 건넸는데요, 시작은 원이의 유튜브 채널에서 미나미가 외친 \"거제 야호\" 한마디였습니다. 원이의 고향 거제를 부른 이 말이 밈으로 퍼졌고, 거제시는 5월 리센느를 홍보대사로 위촉했습니다.\n\n같은 날 거제에서 열린 '오션하모니' 공연에는 비가 내렸습니다. 리센느는 객석의 팬들과 함께 비를 맞으며 무대를 이어갔습니다.\n\n장난처럼 나온 한마디가 한 도시의 명예시민증으로 돌아온 셈입니다.\n\n#PLOT #리센느 #RESCENE #거제야호 #원이 #미나미",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999172/n2badoh9ghujw56dsrtu.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999175/mtcttqgo16wk326ppq6k.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505897/ayxdzoodbamrcaewvoru.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856933982_17972711043150563_7307401756450022083_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AFNU_MEsQpoQ7kNvwHGFaQh&_nc_oc=AdqUWeK6_IfROc_dUJnFILqd4UHSK-Tx_6D1bxjzpMI16mFdRHWuZb2pLxQ1tCe_sLU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=Xpz02Pr1aW30YQx9wClzrw&oh=00_AQMt9oFnXC66FYLOqzrRXazC-eCP1S2taj2Cnh-lcIMRGA&oe=6ADD3A3A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758359/hhmspk2g7ptpquqgvsvo.jpg",
+      "credit": "@rescene_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858297726_17973189405150563_3361436159954750575_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DBFUja_UOcUQ7kNvwHevsFw&_nc_oc=AdpgGch66RySwJ4bHDm55YSFaAD7aA5tt5ZTHJ4PuuJBd58DVd4IevBQVHU3yclf_Bg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQPeyiHP3ioDFFMUChiSLcKYSQccdRBpVltOQKeU1BlQCA&oe=6AE126D8"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999172/n2badoh9ghujw56dsrtu.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999175/mtcttqgo16wk326ppq6k.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505897/ayxdzoodbamrcaewvoru.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856933982_17972711043150563_7307401756450022083_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AFNU_MEsQpoQ7kNvwHGFaQh&_nc_oc=AdqUWeK6_IfROc_dUJnFILqd4UHSK-Tx_6D1bxjzpMI16mFdRHWuZb2pLxQ1tCe_sLU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=Xpz02Pr1aW30YQx9wClzrw&oh=00_AQMt9oFnXC66FYLOqzrRXazC-eCP1S2taj2Cnh-lcIMRGA&oe=6ADD3A3A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758359/hhmspk2g7ptpquqgvsvo.jpg",
+      "credit": "@rescene_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858297726_17973189405150563_3361436159954750575_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DBFUja_UOcUQ7kNvwHevsFw&_nc_oc=AdpgGch66RySwJ4bHDm55YSFaAD7aA5tt5ZTHJ4PuuJBd58DVd4IevBQVHU3yclf_Bg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQPeyiHP3ioDFFMUChiSLcKYSQccdRBpVltOQKeU1BlQCA&oe=6AE126D8"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "'거제 야호' 리센느,|거제시 첫 연예인 명예시민",
+      "sub": "제70호 명예시민증 · 같은 날 빗속 무대"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] '천막을 걷었다'·'무료 공연'·'하루 종일 비'(스포츠서울만)·'올해 초'(부산일보만)는 한 곳뿐이라 캡션에서 뺌 — 빗속 공연·오션하모니는 스포츠서울·CBCI 두 곳",
+     "'천막을 걷었다'는 스포츠서울 한 곳(제목·본문) · CBCI는 빗속 공연만 — 원이가 요청했다는 대목과 멤버 발언은 한 곳뿐이라 뺌"
+    ],
+    "research": [
+     {
+      "title": "부산일보 — 거제 70번째 명예시민 · 24일 한화리조트 벨버디어 수여 · '거제 야호' 유래 · 5월 홍보대사",
+      "link": "https://www.busan.com/view/busan/view.php?code=2026102615042726866"
+     },
+     {
+      "title": "스포티비뉴스 — 연예인 최초 거제시 명예시민 · 제70호 · 원이 채널 속 미나미 '거제 야호'",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1015353"
+     },
+     {
+      "title": "스포츠서울 — 24일 한화오션 '오션하모니' 공연 · 무대 천막 치우고 빗속 공연",
+      "link": "https://www.sportsseoul.com/news/read/1644115"
+     },
+     {
+      "title": "CBCI — 리센느, 거제 빗속 공연 '관객과 함께 비 맞겠다'",
+      "link": "https://www.cbci.co.kr/news/articleView.html?idxno=619324"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999191/x5lnkul3e1d9yiodzi6u.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999191/uikjrb0kwr3mlro6nsh5.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999191/x5lnkul3e1d9yiodzi6u.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-26T16:19+09:00",
+     "v": {
+      "A": "e5d9e647"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "리센느는 PLOT 역대 팔로우 상위 인물 · 오늘 뉴스 급상승 1위(기사 24건) · '거제 야호' 밈이 명예시민증으로 이어진 사람 각도",
+    "at": "2026-10-26T16:19+09:00"
+   },
+   "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "claude:kardgarden-suneung",
+    "account": "빠더너스 BDNS",
+    "url": "https://www.youtube.com/shorts/UXkJWg-3fG0",
+    "image": null,
+    "head": "수능날 늦잠 잔 카더가든",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-26T16:19+09:00",
+   "key": "517f20ad",
+   "by": "claude",
+   "subjects": [
+    "카더가든"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "수능날 아침 10시에 눈 뜬 카더가든 — 고모가 싸 준 볶음밥을 먹으며 든 생각 '왜 안 깨우셨을까?'",
+    "why": "클립 순간 · 실제 한 말로 여는 짧은 썰 · 웹예능 채널 쇼츠라 중간 위험"
+   },
+   "added": "claude",
+   "added_at": "2026-10-26T16:19+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/shorts/UXkJWg-3fG0\n구간: 0:08-0:37\n곡: 수능날 카더가든 이야기\n아티스트: 10시였거든요\n피처링:\n후킹: 아침에 일어났는데\n출처: 빠더너스 BDNS\n자막: 자동",
+    "caption": "카더가든(@carthegarden)이 수능날 아침 10시에 눈을 떴던 이야기를 꺼냈습니다.\n\n빠더너스 채널에서 수능 이야기가 나오자 카더가든은 \"사실입니다\"라며 그날을 떠올렸는데요, 전날 고모가 김치볶음밥 도시락까지 챙겨 줬지만 일어나 보니 이미 10시였다고 합니다. 그 볶음밥을 먹으며 든 생각은 하나, 왜 안 깨우셨을까였습니다.\n\n최근에야 그 이유를 직접 물어봤다는 카더가든이 들은 답은 영상 끝에 있습니다.\n\n#PLOT #카더가든 #빠더너스 #수능 #수능날",
+    "hooks": {
+     "A": "아침에 일어났는데 / 10시였거든요 / 수능날 카더가든 이야기",
+     "B": "김치볶음밥 먹으면서 / 이제 생각을 했죠 / 수능날 늦잠 잔 카더가든",
+     "C": "고모가 싸 준 볶음밥 / 먹으면서 든 생각 / 왜 안 깨우셨을까"
+    },
+    "video": {
+     "url": "https://www.youtube.com/shorts/UXkJWg-3fG0",
+     "credit": "빠더너스 BDNS",
+     "range": [
+      8.0,
+      37.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 중간 — 빠더너스 BDNS",
+     "원본 본편 회차·업로드 날짜를 확인 못 해 캡션에 회차를 안 씀 · 화자는 영상 제목과 자막 '제가 고모에서 컸잖아요'로 카더가든 판단 — 영상으로 한 번 확인"
+    ],
+    "research": [
+     {
+      "title": "빠더너스 BDNS — 수능날 늦잠 잔 카더가든 (쇼츠 · 자막 0:08~0:34)",
+      "link": "https://www.youtube.com/shorts/UXkJWg-3fG0"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/UXkJWg-3fG0/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792999195/b2umtrwpqipwm5sikkjt.jpg",
+     "key": "UXkJWg-3fG0@8.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-26T16:20+09:00"
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "숏폼 한 자리 · 실제 한 말로 여는 짧은 썰 · 웹예능(중간 위험) 30초 구간",
+    "at": "2026-10-26T16:19+09:00"
+   },
+   "corner_name": "그 말",
+   "corner_no": 5
   }
  ],
  "skipped": [],
@@ -2804,7 +3079,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 5,
-    "drafts": 0,
+    "drafts": 1,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -2852,7 +3127,7 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -2904,7 +3179,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-26T16:14+09:00"
+  "at": "2026-10-26T16:20+09:00"
  },
  "slots": {
   "basis": 242,
