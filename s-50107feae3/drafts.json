@@ -1411,7 +1411,97 @@
      "key": "rsNhWkC4neE@46.0"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De_QAzRlJ7D/",
+    "cover": "A",
+    "at": "2026-10-27T15:48+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:ord-b837eb0d",
+    "account": "@규효 공유",
+    "url": "https://www.youtube.com/watch?v=BPEj30D0xz0",
+    "image": null,
+    "head": "아일릿 원희, JTBC 〈아침&〉에서 컴백 인사 후 날씨 전해",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-27T16:05+09:00",
+   "key": "cb6042f9",
+   "by": "claude",
+   "subjects": [
+    "원희",
+    "아일릿"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "JTBC 오디션으로 데뷔한 원희가 JTBC 아침 뉴스에서 컴백 인사와 날씨를 전했다",
+    "why": "컴백 즈음 아이돌이 뉴스 날씨를 맡은 장면 — 원희 본인 말로 앨범 소개까지 들어 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-10-27T16:05+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=BPEj30D0xz0\n구간: 0:00-0:28\n곡: 전해 드리겠습니다\n아티스트: 오늘의 날씨를\n피처링:\n후킹: 그럼 지금부터\n출처: JTBC News\n자막: 자동",
+    "caption": "아일릿(@illit_official) 원희가 JTBC 〈아침&〉에서 날씨를 전했습니다.\n\n원희는 날씨에 앞서 미니 5집 [BREAK EVEN]으로 돌아온 아일릿을 직접 소개했는데요, 타이틀곡 '체포하겠어'를 \"애매한 친절로 헷갈리게 하는 상대에게 당당하게 경고하는\" 곡이라고 설명한 뒤 전국 강풍 소식으로 넘어갔습니다.\n\n아일릿은 JTBC 서바이벌 〈R U Next?〉를 거쳐 데뷔한 그룹입니다. 데뷔 멤버를 뽑았던 그 방송사에서, 이번엔 컴백 인사와 함께 출근길 날씨를 맡은 셈입니다.\n\n[BREAK EVEN]은 지난 26일 발매됐습니다.\n\n#PLOT #아일릿 #원희 #체포하겠어 #BREAKEVEN #아침앤",
+    "hooks": {
+     "A": "그럼 지금부터 / 오늘의 날씨를 / 전해 드리겠습니다",
+     "B": "아일릿 원희가 / JTBC 아침 뉴스 / 날씨를 맡았다",
+     "C": "JTBC 오디션 출신 / 이번엔 같은 방송사 / 아침 날씨 예보로"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=BPEj30D0xz0",
+     "credit": "JTBC News",
+     "range": [
+      0.0,
+      28.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — JTBC News (구간 28초)",
+     "방송 날짜가 영상 업로드일(10/26)과 같은지 — 캡션엔 방송 날짜를 넣지 않았다",
+     "반복 — 「아일릿」 글이 이틀 안에 이미 4편 나갔습니다. 새 사실이 없으면 5번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "[날씨] '아일릿' 원희의 당찬 아침 인사…\"전국 강풍에 종일 쌀쌀\" / JTBC 아침& (JTBC News)",
+      "link": "https://www.youtube.com/watch?v=BPEj30D0xz0"
+     },
+     {
+      "title": "[음악중심M] 아일릿, 일본 팬심도 '체포하겠어!' (iMBC연예, 10/16)",
+      "link": "https://enews.imbc.com/News/RetrieveNewsInfo/520938"
+     },
+     {
+      "title": "아일릿, 데뷔곡으로 9억 찍었다 (텐아시아, 10/20)",
+      "link": "https://www.tenasia.co.kr/article/2026102021174"
+     },
+     {
+      "title": "아일릿, 하이브 '5인조 걸그룹' 신화 잇나 (스포츠경향)",
+      "link": "https://sports.khan.co.kr/article/202403201655013"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/BPEj30D0xz0/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793084757/mvsvt9qu2ctviwcrjrmb.jpg",
+     "key": "BPEj30D0xz0@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-27T16:06+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 5
   }
  ],
  "skipped": [],
@@ -1478,7 +1568,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 5,
-    "drafts": 0,
+    "drafts": 1,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -1578,7 +1668,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T15:23+09:00"
+  "at": "2026-10-27T16:06+09:00"
  },
  "slots": {
   "basis": 256,
