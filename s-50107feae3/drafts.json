@@ -1056,9 +1056,160 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080775/b1sut9rh8gkbmk4sklsn.jpg",
      "key": "up29qcnTgnc@1380.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-27T14:59+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793081245/plot_studio/km9ivzsumapfnyislg5z.mp4",
+     "at": "2026-10-27T15:07+09:00",
+     "file": "YeongHwa_JeonHwa_Han_YangHongWonEun_BaLo__News_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793081246424-cee2e20a",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 0.78,
+        "text": "마무리 짓기 전에"
+       },
+       {
+        "start": 0.78,
+        "end": 1.92,
+        "text": "한마디 또 해드리자면"
+       },
+       {
+        "start": 1.92,
+        "end": 4.17,
+        "text": "제가 독립영화를 현재 만들고 있는데"
+       },
+       {
+        "start": 4.17,
+        "end": 4.96,
+        "text": "대본 거의 다"
+       },
+       {
+        "start": 4.96,
+        "end": 7.13,
+        "text": "나왔었지 1년 가까이 썼는데"
+       },
+       {
+        "start": 7.13,
+        "end": 10.34,
+        "text": "이제 드디어 촬영에 돌입할 건데"
+       },
+       {
+        "start": 10.34,
+        "end": 16.72,
+        "text": "한 명의 출연진 배우를 소개하죠 홍원이에요"
+       },
+       {
+        "start": 16.72,
+        "end": 18.12,
+        "text": "홍원이 섭외했어요"
+       },
+       {
+        "start": 18.12,
+        "end": 21.4,
+        "text": "영화를 모르는 거 아니야 일어나는데"
+       },
+       {
+        "start": 21.4,
+        "end": 23.03,
+        "text": "스윙스 형한테 전화가 와 있는"
+       },
+       {
+        "start": 23.03,
+        "end": 24.0,
+        "text": "거예요 아"
+       },
+       {
+        "start": 24.52,
+        "end": 26.65,
+        "text": "나 아이스크림 사러 나가고 있는데"
+       },
+       {
+        "start": 26.65,
+        "end": 29.19,
+        "text": "아.. 전화해야 되는데"
+       },
+       {
+        "start": 29.19,
+        "end": 30.98,
+        "text": "몇 초 뒤에 기분 괜찮으면"
+       },
+       {
+        "start": 30.98,
+        "end": 32.54,
+        "text": "전화하자 네 형 왜요?"
+       },
+       {
+        "start": 32.94,
+        "end": 34.22,
+        "text": "나 독립영화 만들고 있다"
+       },
+       {
+        "start": 34.22,
+        "end": 35.24,
+        "text": "전화해서 네"
+       },
+       {
+        "start": 35.24,
+        "end": 36.78,
+        "text": "네.. 그쵸 너 할래?"
+       },
+       {
+        "start": 36.78,
+        "end": 39.12,
+        "text": "네 어떤 느낌이었냐면 거의"
+       },
+       {
+        "start": 39.12,
+        "end": 41.08,
+        "text": "쇼미더머니 처음 나올래?"
+       },
+       {
+        "start": 41.08,
+        "end": 42.08,
+        "text": "이런 느낌으로"
+       },
+       {
+        "start": 42.08,
+        "end": 44.36,
+        "text": "가수 실수해야지 약간 이런 느낌?"
+       },
+       {
+        "start": 44.36,
+        "end": 45.56,
+        "text": "이런 느낌?"
+       },
+       {
+        "start": 45.56,
+        "end": 47.1,
+        "text": "그 래퍼로 나간다고?"
+       },
+       {
+        "start": 47.1,
+        "end": 50.0,
+        "text": "랩으로 나와요? 제가요?"
+       },
+       {
+        "start": 50.0,
+        "end": 51.22,
+        "text": "현재의 홍원이랑은"
+       },
+       {
+        "start": 51.22,
+        "end": 53.42,
+        "text": "좀 다른 느낌이야 그때 비중이"
+       },
+       {
+        "start": 53.42,
+        "end": 55.52,
+        "text": "있어요 임팩트가 정말 셀 것 같아요"
+       },
+       {
+        "start": 55.52,
+        "end": 57.98,
+        "text": "그래서 너의 부분은 대부분 나왔는데"
+       }
+      ]
+     }
     }
    },
    "corner_name": "소식"
@@ -1068,7 +1219,7 @@
  "corners": {
   "week": "10/26~11/01",
   "days_left": 6,
-  "done": 18,
+  "done": 20,
   "goal": 28,
   "corners": [
    {
@@ -1219,7 +1370,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 13,
+    "done": 15,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -1228,10 +1379,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T14:59+09:00"
+  "at": "2026-10-27T15:07+09:00"
  },
  "slots": {
-  "basis": 254,
+  "basis": 256,
   "card": [
    {
     "from": 18,
