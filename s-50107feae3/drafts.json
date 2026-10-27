@@ -119,7 +119,12 @@
      }
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/De_J3XFFJgj/",
+    "cover": "A",
+    "at": "2026-10-27T14:55+09:00"
+   }
   },
   {
    "source": {
@@ -835,6 +840,228 @@
    },
    "corner_name": "그날의 앨범",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:ord-f34dd40a",
+    "account": "@규효 공유 · @outtakemusic",
+    "url": "https://www.instagram.com/p/De-2y5ckjVt/?vrfl=b3J1YnRnaGw1cHhy",
+    "image": null,
+    "head": "스윙스가 직접 만든 영화 〈물처럼〉 편집 완료 — 양홍원 출연, 11~12월 공개 예상",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-27T14:59+09:00",
+   "key": "cee2e20a",
+   "by": "claude",
+   "subjects": [
+    "스윙스",
+    "양홍원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "래퍼가 배우로 다시 시작하는 이야기를 스윙스가 직접 만들었다 — 편집 마친 〈물처럼〉, 그리고 전화 한 통으로 합류한 양홍원",
+    "why": "편집 완료 근황으로 11~12월 공개 예고가 다시 돌고 있다 · 양홍원 출연 장면은 스윙스 본인 채널 원본이 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-10-27T14:59+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n스윙스(@itsjustswings)가 직접 만든 영화 〈물처럼〉의 편집을 마친 것으로 알려졌습니다.\n\n〈물처럼〉은 꽤 성공한 래퍼가 바닥부터 배우로 다시 시작하며 겪는 갈등을 그린 독립영화인데요, 스윙스는 스토리 전반에 참여해 대본의 30% 정도를 쓰고 캐스팅과 투자, 주연까지 맡았다고 밝혔습니다. 올해 〈타짜: 벨제붑의 노래〉로 스크린에 데뷔한 그의 길과도 겹치는 이야기입니다.\n\n스윙스가 첫 출연진으로 소개한 배우는 양홍원(@yanghongwon)입니다. 스윙스의 \"너 할래?\" 전화에 바로 \"네\"라고 답했다는 그는 실제 자신과는 다른 결의 래퍼를 맡았고, 스윙스는 \"꽤 비중 있다\"고 예고했습니다.\n\n스윙스는 공개 시기를 11~12월쯤으로 내다봤습니다.\n\n#PLOT #스윙스 #물처럼 #양홍원 #독립영화 #인디고뮤직\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793080756/zqhtmcm88l3lfyzkn4ij.jpg\n제목: 스윙스가 만든 영화,|양홍원도 나온다\n부제: 독립영화 〈물처럼〉 편집 마친 근황\n출처: @itsjustswings\n",
+    "caption": "스윙스(@itsjustswings)가 직접 만든 영화 〈물처럼〉의 편집을 마친 것으로 알려졌습니다.\n\n〈물처럼〉은 꽤 성공한 래퍼가 바닥부터 배우로 다시 시작하며 겪는 갈등을 그린 독립영화인데요, 스윙스는 스토리 전반에 참여해 대본의 30% 정도를 쓰고 캐스팅과 투자, 주연까지 맡았다고 밝혔습니다. 올해 〈타짜: 벨제붑의 노래〉로 스크린에 데뷔한 그의 길과도 겹치는 이야기입니다.\n\n스윙스가 첫 출연진으로 소개한 배우는 양홍원(@yanghongwon)입니다. 스윙스의 \"너 할래?\" 전화에 바로 \"네\"라고 답했다는 그는 실제 자신과는 다른 결의 래퍼를 맡았고, 스윙스는 \"꽤 비중 있다\"고 예고했습니다.\n\n스윙스는 공개 시기를 11~12월쯤으로 내다봤습니다.\n\n#PLOT #스윙스 #물처럼 #양홍원 #독립영화 #인디고뮤직",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080756/zqhtmcm88l3lfyzkn4ij.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257290/pc38cnj1rvjcamxwnlsc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080759/aaljmn2ciakymlbcatp1.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500896/py1zzxbron48qsd6gcsj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080762/lgrhcdag35ewr0edvlow.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500900/mgogfdrzt0jypdjqgo0t.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080764/lhctgygilvpp9tgyvug7.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500911/axnn9ghj80lpx5xedaji.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080767/t6agpnsscpijhkjnskq2.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080756/zqhtmcm88l3lfyzkn4ij.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257290/pc38cnj1rvjcamxwnlsc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080759/aaljmn2ciakymlbcatp1.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500896/py1zzxbron48qsd6gcsj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080762/lgrhcdag35ewr0edvlow.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500900/mgogfdrzt0jypdjqgo0t.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080764/lhctgygilvpp9tgyvug7.jpg",
+      "credit": "@itsjustswings",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500911/axnn9ghj80lpx5xedaji.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080767/t6agpnsscpijhkjnskq2.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "스윙스가 만든 영화,|양홍원도 나온다",
+      "sub": "독립영화 〈물처럼〉 편집 마친 근황"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "래퍼가 배우로 다시,|스윙스의 〈물처럼〉",
+      "sub": "각본·캐스팅·투자·주연까지 직접"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "\"너 할래\" 전화 한 통,|양홍원의 대답은 \"네\"",
+      "sub": "스윙스 독립영화 〈물처럼〉"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 에겐남 스윙스 (스윙스 본인 채널)",
+     "'편집을 마쳤다'는 근황은 outtakemusic 이 스윙스 인스타를 출처로 든 것뿐이고 피드엔 해당 글이 없다(스토리였던 듯) — '~으로 알려졌다'로 낮춰 썼다",
+     "반복 — 「양홍원」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "TV리포트 — 스윙스, 배우 넘어 감독 도전→\"직접 쓴 영화 제작\" (2026.10.10)",
+      "link": "https://tvreport.co.kr/entertainment/article/1082002/"
+     },
+     {
+      "title": "스포츠경향 — 스윙스 \"독립영화 제작중…양홍원, 배우로 출연한다\" (2026.04.27)",
+      "link": "https://sports.khan.co.kr/article/202604270959003"
+     },
+     {
+      "title": "엑스포츠뉴스(다음) — 스윙스, 영화감독 됐다…양홍원 캐스팅 (2026.04.27)",
+      "link": "https://v.daum.net/v/20260427084616562"
+     },
+     {
+      "title": "엘르 — '배우 문지훈'으로 사극까지 출연하는 스윙스 근황 (2026.04.28)",
+      "link": "https://www.elle.co.kr/article/1901735"
+     },
+     {
+      "title": "일간스포츠 — '타짜: 벨제붑의 노래' 스윙스 캐스팅 이유 (2026.09.09)",
+      "link": "https://isplus.com/article/view/isp202609090122"
+     },
+     {
+      "title": "에겐남 스윙스 — 개과천선한 힙합씬의 문제아들 (유튜브, 2026.04.25)",
+      "link": "https://www.youtube.com/watch?v=up29qcnTgnc"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080770/csl8ghsqtyqzebvwpuey.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080769/ldzqmc9aiq2ficvnu9eg.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080772/tx7ioatflz5q9ff5tssz.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080772/yf55tdqqgfxr9hyegtcp.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080770/csl8ghsqtyqzebvwpuey.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-27T14:59+09:00",
+     "v": {
+      "A": "f43b17ae",
+      "B": "8651b697",
+      "C": "ee891cee"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=up29qcnTgnc\n구간: 23:00-23:58\n곡: 양홍원은 바로 \"네\"\n아티스트: 영화 전화 한 통에\n피처링:\n후킹: 스윙스의 \"너 할래\"\n출처: 에겐남 스윙스\n자막: 자동",
+    "caption": "스윙스(@itsjustswings)가 직접 만든 영화 〈물처럼〉에 양홍원(@yanghongwon)이 출연합니다.\n\n지난 4월 스윙스의 유튜브 채널 '에겐남 스윙스'에 올라온 영상 말미, 스윙스는 1년 가까이 쓴 대본이 거의 나왔다며 첫 출연진으로 양홍원을 소개했는데요, 아이스크림을 사러 나가던 길에 \"너 할래?\" 전화를 받았다는 양홍원은 그 느낌을 '쇼미더머니 처음 나올래?'에 빗댔습니다.\n\n그가 맡은 역은 실제 자신과는 다른 결의 래퍼입니다. 성공한 래퍼가 바닥부터 배우로 다시 시작하는 이야기인 〈물처럼〉은 최근 편집을 마친 것으로 알려졌고, 스윙스는 공개 시기를 11~12월쯤으로 내다봤습니다.\n\n#PLOT #스윙스 #양홍원 #물처럼 #독립영화",
+    "hooks": {
+     "A": "스윙스의 \"너 할래\" / 영화 전화 한 통에 / 양홍원은 바로 \"네\"",
+     "B": "스윙스가 만든 영화 / 편집 마친 〈물처럼〉 / 양홍원도 나온다",
+     "C": "쇼미 처음 나가는 / 느낌이었다는 / 양홍원의 첫 영화"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=up29qcnTgnc",
+     "credit": "에겐남 스윙스",
+     "range": [
+      1380.0,
+      1438.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 에겐남 스윙스 (스윙스 본인 채널)",
+     "'편집을 마쳤다'는 근황은 outtakemusic 이 스윙스 인스타를 출처로 든 것뿐이고 피드엔 해당 글이 없다(스토리였던 듯) — '~으로 알려졌다'로 낮춰 썼다",
+     "반복 — 「양홍원」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "TV리포트 — 스윙스, 배우 넘어 감독 도전→\"직접 쓴 영화 제작\" (2026.10.10)",
+      "link": "https://tvreport.co.kr/entertainment/article/1082002/"
+     },
+     {
+      "title": "스포츠경향 — 스윙스 \"독립영화 제작중…양홍원, 배우로 출연한다\" (2026.04.27)",
+      "link": "https://sports.khan.co.kr/article/202604270959003"
+     },
+     {
+      "title": "엑스포츠뉴스(다음) — 스윙스, 영화감독 됐다…양홍원 캐스팅 (2026.04.27)",
+      "link": "https://v.daum.net/v/20260427084616562"
+     },
+     {
+      "title": "엘르 — '배우 문지훈'으로 사극까지 출연하는 스윙스 근황 (2026.04.28)",
+      "link": "https://www.elle.co.kr/article/1901735"
+     },
+     {
+      "title": "일간스포츠 — '타짜: 벨제붑의 노래' 스윙스 캐스팅 이유 (2026.09.09)",
+      "link": "https://isplus.com/article/view/isp202609090122"
+     },
+     {
+      "title": "에겐남 스윙스 — 개과천선한 힙합씬의 문제아들 (유튜브, 2026.04.25)",
+      "link": "https://www.youtube.com/watch?v=up29qcnTgnc"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/up29qcnTgnc/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793080775/b1sut9rh8gkbmk4sklsn.jpg",
+     "key": "up29qcnTgnc@1380.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-27T14:59+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -997,11 +1224,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T14:12+09:00"
+  "at": "2026-10-27T14:59+09:00"
  },
  "slots": {
   "basis": 254,
