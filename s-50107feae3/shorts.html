@@ -45,6 +45,9 @@
 .stBlk{position:absolute; top:2px; height:50px; box-sizing:border-box; border-radius:7px; background:rgba(150,110,255,.30);
   border:1px solid rgba(180,150,255,.65); color:#fff; overflow:hidden; touch-action:none; cursor:grab; user-select:none; -webkit-user-select:none}
 .stBlk.empty{background:rgba(255,255,255,.08); border-style:dashed}
+.stBlk.chk{border:2px dashed #ff5a4f; box-shadow:inset 0 0 0 1px rgba(255,90,79,.35)}
+.stBlk.chk.sel{border:2px solid #fff; box-shadow:0 0 0 2px #ff5a4f}
+.stB.stChk{min-width:auto; padding:0 10px; font-size:13px; font-weight:800; color:#ffb4ae; border-color:rgba(255,90,79,.6); background:rgba(255,90,79,.14)}
 .stBlk.sel{background:rgba(150,110,255,.62); border:2px solid #fff; z-index:2}
 .stBlk.drag{cursor:grabbing; opacity:.9}
 .stBlk span{display:block; padding:7px 15px 0; font-size:12.5px; line-height:1.3; font-weight:700; white-space:normal; word-break:keep-all;
@@ -4612,12 +4615,13 @@ function ppTick() {
 /* 10/26 규효 "요즘 유튜브 자막 잘 되는 거 같은데 그거 기본으로 먼저 받게 선택하는 버튼" — 기본은 유튜브 자막 먼저
    (사람이 올린 자막 → 유튜브 자동자막 → 없으면 받아쓰기). 누르면 「받아쓰기만」으로. 고른 건 이 기기에 남는다. */
 const CC_KEY = MEM + '.cc';
-function ccMode() { try { return localStorage.getItem(CC_KEY) === 'stt' ? 'stt' : 'yt'; } catch (_) { return 'yt'; } }
+// 10/27 기본을 「받아쓰기 먼저」로 — 목소리 분리·이름 힌트 받아쓰기가 시험에서 유튜브 자막보다 정확했다. 유튜브 자막은 대조(⚠ 확인할 줄)에 쓴다
+function ccMode() { try { return localStorage.getItem(CC_KEY + '2') === 'yt' ? 'yt' : 'stt'; } catch (_) { return 'stt'; } }
 function ccPaint() {
   const s = $('#ppSubsSrc'); if (!s) return;
   s.hidden = $('#ppSubs').hidden || PP.kind !== 'yt';
-  s.textContent = ccMode() === 'yt' ? '📺 유튜브 자막 먼저' : '🎙 받아쓰기만';
-  s.classList.toggle('on', ccMode() === 'yt');
+  s.textContent = ccMode() === 'yt' ? '📺 유튜브 자막 먼저' : '🎙 받아쓰기 먼저 · 유튜브와 대조';
+  s.classList.toggle('on', ccMode() === 'stt');
 }
 function ppSubsPaint() {
   const b = PP.b, btn = $('#ppSubs'), ed = $('#ppSubEdit');
@@ -4649,7 +4653,8 @@ function ppSubsSave() {
   ppSaveT = setTimeout(() => {
     const r = PP.b && PP.b.subsRef; if (!r || !r.sn) return;
     if (typeof draftNow === 'function') draftNow();
-    plotStudio.post({ id: r.id, kind: 'studio', snapshot: Object.assign({}, r.sn, { subs: r.segs, edited: true, status: 'done' }) })
+    const orig = r.orig ? { subs_orig: r.orig } : {};      // 10/27 처음 받은 자막 — 맥이 고친 것과 비교해 교정 사전을 만든다
+    plotStudio.post({ id: r.id, kind: 'studio', snapshot: Object.assign({}, r.sn, orig, { subs: r.segs, edited: true, status: 'done' }) })
       .then(() => { if (!r._told) { r._told = 1; toast('고친 자막은 맥에 바로 남습니다 — 제작할 때 그대로 씁니다'); } })
       .catch((e) => toast('고친 자막을 못 남겼습니다 — ' + String(e && e.message || e).slice(0, 60)));
   }, 900);
@@ -4667,10 +4672,11 @@ function ppSubsFetch() {
   if (PP.kind === 'yt') want.cc = ccMode();
   plotStudio.send('subs', want, (step, ms) => { btn.textContent = '💬 ' + step + ' · ' + Math.round(ms / 1000) + '초'; })
     .then((sn) => {
-      const segs = (sn.subs || []).map(s => ({ start: Number(s.start), end: Number(s.end), text: String(s.text || '') }));
+      const segs = (sn.subs || []).map(s => ({ start: Number(s.start), end: Number(s.end), text: String(s.text || ''), chk: !!s.chk }));
       const keep = Object.assign({}, sn); delete keep.subs;
       delete keep._id;
-      b.subsRef = { id: sn._id || '', url: want.url, start: want.start, end: want.end, segs: segs, sn: keep, edited: false };
+      b.subsRef = { id: sn._id || '', url: want.url, start: want.start, end: want.end, segs: segs, sn: keep, edited: false,
+                    orig: segs.map(s => ({ start: s.start, end: s.end, text: s.text })) };
       b.subs = true;
       PP.subsBusy = false;
       PP.editOpen = true;                                // 받자마자 타임라인을 연다 (10/24)
@@ -4823,9 +4829,10 @@ function bindPlay() {
   $('#ppEdit').onclick = () => { const b = PP.b; PP._popping = true; ppStop(); PP._popping = false; if (b) openPicker(b); };
   $('#ppSubs').onclick = ppSubsFetch;
   $('#ppSubsSrc').onclick = () => {
-    try { localStorage.setItem(CC_KEY, ccMode() === 'yt' ? 'stt' : 'yt'); } catch (_) {}
+    try { localStorage.setItem(CC_KEY + '2', ccMode() === 'yt' ? 'stt' : 'yt'); } catch (_) {}
     ccPaint();
-    toast(ccMode() === 'yt' ? '📺 유튜브 자막(사람 → 자동)을 먼저 받고, 없으면 받아쓰기합니다' : '🎙 유튜브 자막 없이 맥이 직접 받아씁니다');
+    toast(ccMode() === 'yt' ? '📺 유튜브 자막(사람 → 자동)을 먼저 받고, 없으면 받아쓰기합니다'
+                            : '🎙 맥이 목소리만 뽑아 받아쓰고, 유튜브 자막과 다른 줄은 ⚠ 로 표시합니다');
   };
   $('#ppSubEdit').onclick = () => {
     if (!stOk(PP.b)) { if (PP.mode === 'done') openPlay(PP.i, 'seg').then(ppSubsManual); else ppSubsManual(); return; }
@@ -4912,6 +4919,7 @@ function stBuild() {
     '<div class="stHead"><button type="button" class="stB" data-st="play">▶</button><b class="stNow">0:00.0</b>' +
     '<span class="stHint">' + (stPrNow() ? '눈금 끌기=재생 헤드 · 휠=이동 · ⌥/⌘+휠=확대 · Space 재생 · J K L · C 자르기 · I/O · ↑↓ 편집점 · \\ 맞춤 · S 붙기'
       : '타임라인을 밀어 이동 · 블록을 끌어 옮기기 · 양 끝으로 길이') + '</span>' +
+    '<button type="button" class="stB stChk" data-st="chk" hidden title="확인할 줄로 (U) — 받아쓰기가 자신 없었거나 유튜브 자막과 다른 줄"></button>' +
     '<button type="button" class="stB" data-st="undo" title="되돌리기 (⌘Z)">↶</button>' +
     '<button type="button" class="stB" data-st="zout" title="축소 (-)">−</button><button type="button" class="stB" data-st="zin" title="확대 (+)">＋</button></div>' +
     '<div class="stWrap"><div class="stScroll"><div class="stInner"><div class="stRuler"></div><div class="stTrack"></div></div></div><i class="stHeadLine"></i></div>' +
@@ -4979,7 +4987,7 @@ function stBuild() {
   box.querySelectorAll('[data-st]').forEach((x) => x.addEventListener('click', () => stAct(x.getAttribute('data-st'))));
   const inp = box.querySelector('.stText');
   inp.addEventListener('focus', () => { const s = stSegs()[ST.sel]; if (s) stPush(); });
-  inp.addEventListener('input', () => { const s = stSegs()[ST.sel]; if (!s) return; s.text = inp.value; PP.b.subsRef.edited = true; ppSubsSave(); stPaintBlocks(); });
+  inp.addEventListener('input', () => { const s = stSegs()[ST.sel]; if (!s) return; s.text = inp.value; s.chk = false; PP.b.subsRef.edited = true; ppSubsSave(); stPaintBlocks(); stChkPaint(); });
   inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); inp.blur(); } });
   stPaint();
   stCenter(Math.max(0, ppNow() - PP.a));
@@ -5001,6 +5009,7 @@ function stPaint() {
   ruler.innerHTML = h;
   stPaintBlocks();
   stText();
+  stChkPaint();
 }
 function stPaintBlocks() {
   const box = $('#ppSubList'); if (!box || !box.classList.contains('stOn')) return;
@@ -5021,11 +5030,18 @@ function stPaintBlocks() {
     n.style.width = Math.max(6, (s.end - s.start) * ST.pps) + 'px';
     n.classList.toggle('sel', k === ST.sel);
     n.classList.toggle('empty', !String(s.text || '').trim());
+    n.classList.toggle('chk', !!s.chk);
     const sp = n.querySelector('span'); const tx = String(s.text || '').trim() || '(빈 줄)';
     if (sp.textContent !== tx) sp.textContent = tx;
   });
 }
+function stChkPaint() {                            // 「⚠ 확인 n」 — 남은 확인할 줄 수 (10/27)
+  const b = $('#ppSubList .stChk'); if (!b) return;
+  const n = stSegs().filter((x) => x.chk).length;
+  b.hidden = !n; b.textContent = '⚠ ' + n;
+}
 function stText() {
+  stChkPaint();
   const box = $('#ppSubList'); if (!box || !box.classList.contains('stOn')) return;
   const s = stSegs()[ST.sel], inp = box.querySelector('.stText'), w = box.querySelector('.stWhen');
   inp.disabled = !s;
@@ -5113,6 +5129,11 @@ function stAct(a) {
   const segs = stSegs(), s = segs[ST.sel], t = stHeadRel();
   if (a === 'play') { ppSetPaused(!PP.paused); stNowPaint(t); return; }
   if (a === 'undo') return stUndo();
+  if (a === 'chk') {                                  // 10/27 다음 확인할 줄로 (재생 헤드 뒤 첫 줄, 없으면 처음부터)
+    const i = segs.findIndex((x) => x.chk && x.start > t + 0.05), k = i >= 0 ? i : segs.findIndex((x) => x.chk);
+    if (k < 0) { toast('확인할 줄이 없습니다'); return; }
+    stSelect(k, true); return;
+  }
   if (a === 'zin') return stZoom(1.4);
   if (a === 'zout') return stZoom(1 / 1.4);
   if (a === 'add') {
@@ -5191,7 +5212,7 @@ function stDown(e, n) {
     const d = ST.drag; if (!d) return;
     const dx = ev.clientX - d.x0;
     if (!d.moved && Math.abs(dx) < 4) return;
-    if (!d.moved) { d.moved = true; stPush(); n.classList.add('drag'); }
+    if (!d.moved) { d.moved = true; stPush(); n.classList.add('drag'); const c = stSegs()[d.k]; if (c && c.chk) { c.chk = false; stChkPaint(); } }
     const segs = stSegs(), cur = segs[d.k], prev = segs[d.k - 1], next = segs[d.k + 1];
     const lo = prev ? prev.end : 0, hi = next ? next.start : stLen(), dt = dx / ST.pps, head = stHeadRel();
     const snap = (v, pts) => { if (!ST.snap) return v; for (const p of pts) if (Math.abs((v - p) * ST.pps) < ST_SNAP_PX) return p; return v; };
@@ -5250,6 +5271,7 @@ document.addEventListener('keydown', (e) => {
   else if (k === '+' || k === '=') stZoom(1.4);
   else if (k === '-') stZoom(1 / 1.4);
   else if (k === 'Enter') { const inp = box.querySelector('.stText'); if (inp && !inp.disabled) inp.focus(); }
+  else if ((k === 'u' || k === 'U') && !mod) stAct('chk');
   else hit = false;
   if (hit) { e.preventDefault(); e.stopImmediatePropagation(); }
 }, true);
@@ -5266,9 +5288,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.27 16:23';
+    a.title = '판 10.27 17:12';
     var ver = document.createElement('span');
-    ver.textContent = '10.27 16:23';
+    ver.textContent = '10.27 17:12';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
