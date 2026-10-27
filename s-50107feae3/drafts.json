@@ -2247,7 +2247,12 @@
      "at": "2026-10-27T17:48+09:00"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfAH-gwGfaP/",
+    "cover": "B",
+    "at": "2026-10-27T23:57+09:00"
+   }
   },
   {
    "source": {
@@ -2389,13 +2394,158 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-cf29e997",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/p/De_nSMZk42N/?img_index=2&dlrf=MjMyYTVtcXZ3OXA=",
+    "image": null,
+    "head": "2019년 곡 'ROSE', 스카 페스티벌 무대 뒤 애플뮤직 한국 차트 4위로 역주행",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-28T03:03+09:00",
+   "key": "f0afbfd0",
+   "by": "claude",
+   "subjects": [
+    "양홍원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "헤어졌을 무렵 만든 'ROSE'가 결혼 직후, 무대에서 '현주'를 부른 뒤 애플뮤직 한국 4위로 역주행",
+    "why": "규효 맡기기 · hiptake·hhp_mag 이 같은 날 다룸 · 사건 다섯 편과 다른 각도(곡·차트)"
+   },
+   "added": "claude",
+   "added_at": "2026-10-28T03:03+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n양홍원(@yanghongwon)의 2019년 곡 'ROSE'가 애플뮤직 한국 차트 4위까지 올라왔습니다.\n\n정규 1집 [Stranger]에 실린 이 곡은 양홍원이 원현주와 헤어졌을 무렵 만든 곡으로 알려져 있는데요, 결혼 직후 사생활 의혹이 불거진 가운데 지난 24일 KBS아레나에서 열린 '2026 스카 페스티벌' 무대에서 \"현주\"의 이름이 들어간 이 곡을 부르는 장면이 온라인에서 퍼졌습니다. 양홍원 측은 의혹을 부인하고 폭로자를 고소했습니다.\n\n헤어진 사람에게 돌아와 달라고 부르던 노래가, 그 사람과 결혼식을 올린 지 열흘이 채 안 돼 다시 차트 위로 올라온 셈입니다.\n\n순위는 음원 집계 사이트 콰브 기준 27일 집계입니다.\n\n#PLOT #양홍원 #ROSE #Stranger #원현주\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793124195/caeudep4deyoljdcui8z.jpg\n제목: 양홍원의 2019년 곡|'ROSE'가 역주행 중\n부제: 애플뮤직 한국 차트 4위\n출처: 멜론\n",
+    "caption": "양홍원(@yanghongwon)의 2019년 곡 'ROSE'가 애플뮤직 한국 차트 4위까지 올라왔습니다.\n\n정규 1집 [Stranger]에 실린 이 곡은 양홍원이 원현주와 헤어졌을 무렵 만든 곡으로 알려져 있는데요, 결혼 직후 사생활 의혹이 불거진 가운데 지난 24일 KBS아레나에서 열린 '2026 스카 페스티벌' 무대에서 \"현주\"의 이름이 들어간 이 곡을 부르는 장면이 온라인에서 퍼졌습니다. 양홍원 측은 의혹을 부인하고 폭로자를 고소했습니다.\n\n헤어진 사람에게 돌아와 달라고 부르던 노래가, 그 사람과 결혼식을 올린 지 열흘이 채 안 돼 다시 차트 위로 올라온 셈입니다.\n\n순위는 음원 집계 사이트 콰브 기준 27일 집계입니다.\n\n#PLOT #양홍원 #ROSE #Stranger #원현주",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124195/caeudep4deyoljdcui8z.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505254/i6klfotykq84gzgryhiz.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124197/vuvmeozn1mu4gvbqrxpw.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124199/ytxzwphh8z5aepyvdl96.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/j1XLJnx/026a3da6108a.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/833323904_18596877385068013_7268755776048696997_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3wXj36JdWfsQ7kNvwFEipv_&_nc_oc=Ado4T9QfsVQJalYpf9E-LW4g0aeFV4Y5lMIKprZDCOtkYjxMned6ESd-5xnBaSPpaf3l4Pe_2pLp1T7cIRlIhntw&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=B58zMe0beYN3zUqssmKtug&oh=00_AQPA1xDeZVBqLcvc3eRH00jzOB4tGlfht3oC5Z1Vq0z7UA&oe=6AD146ED"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124195/caeudep4deyoljdcui8z.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505254/i6klfotykq84gzgryhiz.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124197/vuvmeozn1mu4gvbqrxpw.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124199/ytxzwphh8z5aepyvdl96.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/j1XLJnx/026a3da6108a.jpg",
+      "credit": "@yanghongwon",
+      "kind": "화보",
+      "from": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/833323904_18596877385068013_7268755776048696997_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3wXj36JdWfsQ7kNvwFEipv_&_nc_oc=Ado4T9QfsVQJalYpf9E-LW4g0aeFV4Y5lMIKprZDCOtkYjxMned6ESd-5xnBaSPpaf3l4Pe_2pLp1T7cIRlIhntw&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=B58zMe0beYN3zUqssmKtug&oh=00_AQPA1xDeZVBqLcvc3eRH00jzOB4tGlfht3oC5Z1Vq0z7UA&oe=6AD146ED"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "양홍원의 2019년 곡|'ROSE'가 역주행 중",
+      "sub": "애플뮤직 한국 차트 4위"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "현주를 부르던 노래,|다시 차트 위로",
+      "sub": "양홍원 'ROSE'"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "7년 전 [Stranger] 속|'ROSE'가 돌아왔다",
+      "sub": "애플뮤직 한국 차트 4위"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진(멜론 [Stranger] 커버)이 저해상도라 깨져 보임 — 고해상도 커버나 다른 사진으로 바꿀 것",
+     "[검증] '헤어졌을 무렵 만든 곡'은 뉴시스에만 있음(머니투데이는 '연애 시절을 담은 곡'). 두 번째 출처 없음 — 발행 전 판단",
+     "차트 순위는 콰브 집계 27일 기준 4위(hiptake 는 5위로 적음) — 올리기 직전 애플뮤직 한국 차트를 한 번 보고 숫자를 맞출 것. 멜론·스포티파이 순위는 두 번째 출처를 못 찾아 뺐다",
+     "숏폼은 비움 — 24일 스카 페스티벌 'ROSE' 무대의 공식 영상이 없고 팬 직캠뿐",
+     "반복 — 「양홍원」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "뉴시스 — '불륜 의혹' 양홍원, 무대서 아내 이름 외쳤다 (10/25)",
+      "link": "https://www.newsis.com/view/NISX20261025_0003840069"
+     },
+     {
+      "title": "머니투데이 — 결혼 직후 불륜 의혹 터진 양홍원…공연서 \"돌아와 현주\" (10/25)",
+      "link": "https://mt.co.kr/entertainment/2026/10/25/2026102515361165507"
+     },
+     {
+      "title": "kworb — 양홍원 애플뮤직 국가별 차트 (10/27 13:35 EDT · Rose 한국 4위)",
+      "link": "https://kworb.net/itunes/artist/E1848BE185A3E186BCE18492E185A9....html"
+     },
+     {
+      "title": "Apple Music — Rose (feat. Skinny Brown & Homeboy) · [Stranger] 2019",
+      "link": "https://music.apple.com/kr/song/rose-feat-skinny-brown-homeboy/1453379466"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124202/bvtae9oole4uwwnzvg70.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124202/sxs6tv2deeu6dy7d1a23.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124204/nzbzssz9firnvcuk2gjr.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124204/lucghybcltrhesjuqpgg.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124202/bvtae9oole4uwwnzvg70.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-28T03:03+09:00",
+     "v": {
+      "A": "ef273725",
+      "B": "ca1f83aa",
+      "C": "65dead87"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
-  "days_left": 6,
-  "done": 23,
+  "days_left": 5,
+  "done": 24,
   "goal": 28,
   "corners": [
    {
@@ -2546,25 +2696,25 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 17,
+    "done": 18,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 9,
+    "drafts": 10,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T19:18+09:00"
+  "at": "2026-10-28T03:03+09:00"
  },
  "slots": {
-  "basis": 259,
+  "basis": 260,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.47,
+    "mult": 2.49,
     "median": 2.34,
     "n": 39
    },
@@ -2572,16 +2722,16 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.74,
-    "median": 0.71,
-    "n": 34
+    "mult": 1.71,
+    "median": 0.69,
+    "n": 35
    },
    {
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.46,
-    "median": 0.8,
+    "mult": 1.49,
+    "median": 0.87,
     "n": 21
    }
   ],
