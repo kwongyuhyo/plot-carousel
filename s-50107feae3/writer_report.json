@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-27T09:55+09:00",
+ "generated_at": "2026-10-27T14:08+09:00",
  "range": [
   "2026-10-21",
   "2026-10-27"
@@ -30,8 +30,8 @@
    "안 올림": 0
   },
   "why_top": [],
-  "published": 30,
-  "publish_rate": 0.3,
+  "published": 31,
+  "publish_rate": 0.31,
   "reach_mult": [
    0.37,
    0.51,
@@ -54,9 +54,9 @@
    "만듦": 56,
    "못 만듦": 10
   },
-  "runs": 200,
+  "runs": 202,
   "run_fail": 2,
-  "avg_secs": 96,
+  "avg_secs": 95,
   "denied": 15,
   "auto": {
    "올림": 43,
