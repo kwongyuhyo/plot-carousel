@@ -4917,7 +4917,7 @@ function stBuild() {
   box.classList.add('stOn');
   box.innerHTML =
     '<div class="stHead"><button type="button" class="stB" data-st="play">▶</button><b class="stNow">0:00.0</b>' +
-    '<span class="stHint">' + (stPrNow() ? '눈금 끌기=재생 헤드 · 휠=이동 · ⌥/⌘+휠=확대 · Space 재생 · J K L · C 자르기 · I/O · ↑↓ 편집점 · \\ 맞춤 · S 붙기'
+    '<span class="stHint">' + (stPrNow() ? '눈금 끌기=재생 헤드 · 휠=이동 · ⌥/⌘+휠=확대 · Space 재생 · J K L · C 자르기 · I/O · ↑↓ 편집점 · U 확인할 줄 · \\ 맞춤 · S 붙기'
       : '타임라인을 밀어 이동 · 블록을 끌어 옮기기 · 양 끝으로 길이') + '</span>' +
     '<button type="button" class="stB stChk" data-st="chk" hidden title="확인할 줄로 (U) — 받아쓰기가 자신 없었거나 유튜브 자막과 다른 줄"></button>' +
     '<button type="button" class="stB" data-st="undo" title="되돌리기 (⌘Z)">↶</button>' +
@@ -5288,9 +5288,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.27 17:12';
+    a.title = '판 10.27 17:18';
     var ver = document.createElement('span');
-    ver.textContent = '10.27 17:12';
+    ver.textContent = '10.27 17:18';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
