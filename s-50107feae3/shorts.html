@@ -1444,7 +1444,7 @@ function blank() {
   const r = recall();
   return { id: ++seq, cat: r.cat || 'New release!', custom: r.custom || '',
            url: '', send: false, start: '', end: '', title: '', artist: '',
-           feat: '', hook: '', source: r.source || '',
+           feat: '', hook: '', source: r.source || '', song: '',
            // null = 자동(얼굴 따라). 0~1 = 가로 위치를 직접 고정.
            crop: null,
            // [레터박스] '' = 자동(맥이 위아래 검은 띠를 찾아 잘라냄) · '끄기' · '12' = 위아래 12%씩 (10/26)
@@ -1475,7 +1475,7 @@ function blank() {
  */
 const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
-              'title', 'artist', 'feat', 'hook', 'source', 'crop', 'lb', 'check',
+              'title', 'artist', 'feat', 'hook', 'source', 'song', 'crop', 'lb', 'check',
               'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans', 'metaTime',
               'frames', 'cta', 'storyBed', 'subs', 'done', 'subsRef', 'caption'];
 
@@ -1858,6 +1858,7 @@ function parseForm(text) {
     const j = span.indexOf('-');
     if (j > 0) { b.start = span.slice(0, j).trim(); b.end = span.slice(j + 1).trim(); }
     b.title  = (kv['곡'] || '').trim();
+    b.song   = (kv['음원'] || '').trim();
     b.artist = (kv['아티스트'] || '').trim();
     b.feat   = (kv['피처링'] || '').trim();
     b.hook   = (kv['후킹'] || '').trim();
@@ -2041,6 +2042,8 @@ function blockText(b) {
     '곡: ' + b.title.trim(),
     '아티스트: ' + b.artist.trim(),
     '피처링: ' + b.feat.trim(),
+    // [음원] 화면에 안 나오는 영상 속 곡 — 가사 찾기용 (10/27). 비면 안 적는다
+    ...((b.song || '').trim() ? ['음원: ' + b.song.trim()] : []),
     '후킹: ' + b.hook.trim(),
     // 사람이 '출처: 하이브' 처럼 접두어까지 쳐 넣으면 '출처: 출처: 하이브' 가 됐다.
     '출처: ' + b.source.trim().replace(/^출처\s*:\s*/, ''),
@@ -2146,6 +2149,8 @@ function buildBlock(b) {
     <div class="hint" data-r="titleErr" hidden></div>
     <label>피처링 <span class="opt">— 선택, 3줄 옆에 작게 붙습니다</span></label>
     <input type="text" data-f="feat" placeholder="(feat. ...)">
+    <label>음원 <span class="opt">— 선택 · 화면엔 안 나옴 · 영상에 흐르는 곡 「아티스트 - 곡」 (가사 찾기에 씀). 세 줄은 이름 칸에 얽매이지 않고 자유롭게</span></label>
+    <input type="text" data-f="song" placeholder="한로로 - 사랑하게 될 거야">
     <div data-r="storyBox" hidden>
       <label>여담 영상 <span class="opt">— 노래 앞에 붙일 장면 「링크 시작-끝」 · 중간에 뺄 말이 있으면 쉼표로 나눠 적기</span></label>
       <input type="text" data-f="storyClip" placeholder="https://youtu.be/… 12:03-12:10, 12:14-12:25">
@@ -2461,6 +2466,7 @@ async function pullFrom(b) {
     const m = await ytMeta(b.url);
     const g = guessMeta(m.title, m.author_name);
     if (!b.title.trim()  && g.song)        { b.title  = g.song;        filled.title  = g.song; }
+    if (!(b.song || '').trim() && g.song) { b.song = [g.artist, g.song].filter(Boolean).join(' - '); }
     if (!b.artist.trim() && g.artist)      { b.artist = g.artist;      filled.artist = g.artist; }
     if (!b.source.trim() && g.channel)     { b.source = g.channel;    filled.source = g.channel; }
   } catch (_) { /* 비공개·삭제된 영상 — 조용히 넘어간다 */ }
@@ -3598,8 +3604,13 @@ async function lyGet(url) {
   throw last || new Error('LRCLIB 응답 없음');
 }
 const lyNorm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[^\p{L}\p{N}]/gu, '');
+function songOf(b) {                                 // 「음원」 칸이 있으면 그걸로 가사를 찾는다 (10/27)
+  const s = String(b.song || '').trim();
+  if (s) { const i = s.indexOf(' - '); return i > 0 ? { artist: s.slice(0, i).trim(), title: s.slice(i + 3).trim() } : { artist: '', title: s }; }
+  return { artist: b.artist.trim(), title: b.title.trim() };
+}
 async function lySearch(b) {
-  const title = b.title.trim(), artist = b.artist.trim();
+  const { title, artist } = songOf(b);
   const names = artist.split(/\s*(?:,|&|\bx\b|×|feat\.?)\s*/i).map(x => x.trim()).filter(Boolean);
   const seen = new Map();
   for (const a of names.concat([''])) {
@@ -3626,7 +3637,7 @@ function lyUse(r) {
 }
 async function lyLoad() {
   const b = PK.b; if (!b) return;
-  if (!b.title.trim()) { toast('3줄(맨 아래 줄)을 먼저 넣어주세요'); return; }
+  if (!songOf(b).title) { toast('「음원」 칸(아티스트 - 곡)이나 3줄을 먼저 넣어주세요'); return; }
   LY.loading = true; lyPaintList();
   try {
     LY.cands = await lySearch(b); LY.ci = 0;
@@ -5288,9 +5299,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.27 17:18';
+    a.title = '판 10.27 17:34';
     var ver = document.createElement('span');
-    ver.textContent = '10.27 17:18';
+    ver.textContent = '10.27 17:34';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
