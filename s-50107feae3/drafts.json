@@ -1651,9 +1651,130 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793085551/l19u6mhjyydc1zknfjra.jpg",
      "key": "CVVbc1JMn9Y@577.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-27T16:19+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793085818/plot_studio/iv23arxwdhpw6rgnkxl1.mp4",
+     "at": "2026-10-27T16:23+09:00",
+     "file": "HaNeun_SaLamI_JalHae_AIJjing-SiLiGa_JalHa_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793085819260-d4968a46",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 0.05,
+        "text": "제가 너무 뿌듯해서"
+       },
+       {
+        "start": 0.05,
+        "end": 0.13,
+        "text": "제 SNS에 일부러 올린 거예요"
+       },
+       {
+        "start": 0.13,
+        "end": 0.79,
+        "text": "내가 했어요"
+       },
+       {
+        "start": 0.79,
+        "end": 3.02,
+        "text": "이 리뷰가 어떻게 보면은 저한테는"
+       },
+       {
+        "start": 3.02,
+        "end": 5.3,
+        "text": "되게 뜻깊은 게 제가 안무를 제작을"
+       },
+       {
+        "start": 5.3,
+        "end": 6.95,
+        "text": "해서 이렇게 많은 분들이"
+       },
+       {
+        "start": 6.95,
+        "end": 8.2,
+        "text": "알게 되신 게 처음이에요"
+       },
+       {
+        "start": 8.2,
+        "end": 9.72,
+        "text": "아이돌 안무를 제작을 몇 번을"
+       },
+       {
+        "start": 9.72,
+        "end": 10.6,
+        "text": "하긴 했지만 근데"
+       },
+       {
+        "start": 10.6,
+        "end": 12.7,
+        "text": "이번에 이렇게 이슈가 돼서 저도"
+       },
+       {
+        "start": 12.7,
+        "end": 14.57,
+        "text": "뿌듯하고 A2O도"
+       },
+       {
+        "start": 14.57,
+        "end": 16.28,
+        "text": "너무 좋은 서로 윈윈하는"
+       },
+       {
+        "start": 16.28,
+        "end": 18.25,
+        "text": "그런 작업물이 돼서"
+       },
+       {
+        "start": 18.25,
+        "end": 19.56,
+        "text": "너무 뜻깊습니다"
+       },
+       {
+        "start": 19.56,
+        "end": 20.72,
+        "text": "그리고 또 여러분께"
+       },
+       {
+        "start": 20.72,
+        "end": 22.47,
+        "text": "분명히 또 말씀드리고 싶은"
+       },
+       {
+        "start": 22.47,
+        "end": 23.71,
+        "text": "부분 하나가 뭐냐면"
+       },
+       {
+        "start": 23.71,
+        "end": 25.95,
+        "text": "안무가가 아무리 트레이닝을 잘하고"
+       },
+       {
+        "start": 25.95,
+        "end": 27.51,
+        "text": "아무리 안무를 잘 짜도"
+       },
+       {
+        "start": 27.51,
+        "end": 29.28,
+        "text": "하는 사람이 잘해야 된다고"
+       },
+       {
+        "start": 29.28,
+        "end": 31.27,
+        "text": "아이찡·시리가 잘한 거예요"
+       },
+       {
+        "start": 31.27,
+        "end": 33.13,
+        "text": "저에게도 도움을 준 거죠"
+       },
+       {
+        "start": 33.13,
+        "end": 34.0,
+        "text": "제가 느끼기에"
+       }
+      ]
+     }
     }
    },
    "pick": {
@@ -1829,7 +1950,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T16:19+09:00"
+  "at": "2026-10-27T16:23+09:00"
  },
  "slots": {
   "basis": 256,
