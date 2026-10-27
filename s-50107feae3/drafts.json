@@ -1495,9 +1495,85 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793084757/mvsvt9qu2ctviwcrjrmb.jpg",
      "key": "BPEj30D0xz0@0.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-27T16:06+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793084957/plot_studio/e145m6pqup92ms4a7taq.mp4",
+     "at": "2026-10-27T16:09+09:00",
+     "file": "ONeulUi_NalSsiLeul_JeonHae_DeuLiGessSeu_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793084959104-cb6042f9",
+      "segs": [
+       {
+        "start": 2.68,
+        "end": 4.26,
+        "text": "안녕하세요"
+       },
+       {
+        "start": 4.26,
+        "end": 6.3,
+        "text": "그룹 아일릿 멤버 원희입니다"
+       },
+       {
+        "start": 6.3,
+        "end": 7.51,
+        "text": "저희 아일릿은"
+       },
+       {
+        "start": 7.51,
+        "end": 9.26,
+        "text": "미니 5집 브레이크 이븐으로"
+       },
+       {
+        "start": 9.26,
+        "end": 11.02,
+        "text": "컴백했는데요"
+       },
+       {
+        "start": 11.02,
+        "end": 12.54,
+        "text": "타이틀곡 체포하겠어를"
+       },
+       {
+        "start": 12.54,
+        "end": 14.62,
+        "text": "통해 애매한 친절로 헷갈리게 하는"
+       },
+       {
+        "start": 14.62,
+        "end": 17.6,
+        "text": "상대에게 당당하게 경고하는 메시지를"
+       },
+       {
+        "start": 17.6,
+        "end": 19.0,
+        "text": "담았습니다"
+       },
+       {
+        "start": 19.0,
+        "end": 21.08,
+        "text": "한층 당당해진 저희 아일릿의"
+       },
+       {
+        "start": 21.08,
+        "end": 22.82,
+        "text": "새로운 모습 많이 기대해 주시면"
+       },
+       {
+        "start": 22.82,
+        "end": 24.14,
+        "text": "좋겠습니다"
+       },
+       {
+        "start": 24.14,
+        "end": 26.38,
+        "text": "그럼 지금부터 오늘의 날씨를"
+       },
+       {
+        "start": 26.38,
+        "end": 27.12,
+        "text": "전해 드리겠습니다"
+       }
+      ]
+     }
     }
    },
    "corner_name": "그 말",
@@ -1668,7 +1744,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-27T16:06+09:00"
+  "at": "2026-10-27T16:09+09:00"
  },
  "slots": {
   "basis": 256,
