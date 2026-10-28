@@ -1545,7 +1545,12 @@
      "at": "2026-10-28T17:32+09:00"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfCGLaElNCC/",
+    "cover": "A",
+    "at": "2026-10-28T18:20+09:00"
+   }
   },
   {
    "source": {
@@ -1947,7 +1952,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-28T17:50+09:00"
+  "at": "2026-10-28T18:20+09:00"
  },
  "slots": {
   "basis": 261,

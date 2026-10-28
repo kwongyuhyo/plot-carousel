@@ -1631,7 +1631,7 @@ function runLint() {
  * 파이썬 generators/timeline_slide.py 와 같은 자리·크기. 양식: 형식: 정리 · 말한이: …
  * 어두운 종이 바탕 · 위에 '누구의 말' 알약 · 큰 소제목 · (사진이 있으면) 자료 상자 · 가운데 정렬 본문.
  * 본문 **굵게** 는 흰색 굵게, 나머지는 회색. 줄바꿈 | · 문단 || · '출처:' 로 시작하는 줄은 작게. */
-const TL = { TOP: 175, BOTTOM: 1185, SIDE: 92, SPK: 29, HEAD: 70, BODY: 37, NOTE: 25, LEAD: 1.58, HLEAD: 1.2, BOXW: 860, BOXH: 400 };
+const TL = { TOP: 175, BOTTOM: 1185, SIDE: 92, SPK: 29, HEAD: 70, BODY: 37, NOTE: 25, LEAD: 1.58, HLEAD: 1.2, BOXW: 860, BOXH: 400, SOLOW: 960, SOLOH: 880 }   // SOLO = 자료만 있는 장 (형식: 자료 · 10/28);
 let TL_BG = null;
 function tlBackground() {
   if (TL_BG) return TL_BG;
@@ -1702,7 +1702,9 @@ function slideTimeline(ctx, img, tag, speaker, heading, body, source) {
   head.forEach((p) => blocks.push(["head", p, lineAdvance(hs, TL.HLEAD)]));
   let ev = null;
   if (img && (img.naturalWidth || img.width)) {
-    const iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height, s = Math.min(TL.BOXW / iw, TL.BOXH / ih);
+    const solo = !head.length && !String(body || "").trim();
+    const iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height,
+      s = solo ? Math.min(TL.SOLOW / iw, TL.SOLOH / ih) : Math.min(TL.BOXW / iw, TL.BOXH / ih);
     ev = { w: Math.round(iw * s), h: Math.round(ih * s) };
     blocks.push(["gap", null, 34], ["box", ev, ev.h]);
   }
@@ -2451,7 +2453,7 @@ function parseDeckForm(text) {
       if (name === "커버") { sl.title = unlit(kv["제목"] || ""); sl.subtitle = unlit(kv["부제"] || ""); }
       else {
         sl.heading = unlit(kv["소제목"] || ""); sl.body = unlit(kv["본문"] || "");
-        if (/^(정리|타임라인|timeline)$/.test((kv["형식"] || "").trim())) { sl.style = "timeline"; sl.speaker = unlit(kv["말한이"] || ""); }
+        if (/^(정리|타임라인|timeline|자료)$/.test((kv["형식"] || "").trim())) { sl.style = "timeline"; sl.speaker = unlit(kv["말한이"] || ""); }
       }
       out.slides.push(sl);
     }
@@ -3642,9 +3644,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.28 17:50';
+    a.title = '판 10.28 18:33';
     var ver = document.createElement('span');
-    ver.textContent = '10.28 17:50';
+    ver.textContent = '10.28 18:33';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
