@@ -575,9 +575,120 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793149064/pxh5d7dg0yhgd9tcgibb.jpg",
      "key": "BPEj30D0xz0@0.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-28T09:58+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793181100/plot_studio/qeecadho3mtgcuwbre9o.mp4",
+     "at": "2026-10-28T18:51+09:00",
+     "file": "AChim_NyuSeu_NalSsiL_JeonHaLeo_On_WonHui_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793181101393-49a4356d",
+      "segs": [
+       {
+        "start": 2.6,
+        "end": 3.85,
+        "text": "안녕하세요"
+       },
+       {
+        "start": 3.85,
+        "end": 6.43,
+        "text": "그룹 아일릿 멤버 원희입니다"
+       },
+       {
+        "start": 6.43,
+        "end": 7.56,
+        "text": "저희 아일릿은"
+       },
+       {
+        "start": 7.56,
+        "end": 9.26,
+        "text": "미니 5집 브레이크 이븐으로"
+       },
+       {
+        "start": 9.26,
+        "end": 11.02,
+        "text": "컴백했는데요"
+       },
+       {
+        "start": 11.02,
+        "end": 12.52,
+        "text": "타이틀곡 체포하겠서를"
+       },
+       {
+        "start": 12.52,
+        "end": 14.62,
+        "text": "통해 애매한 친절로 헷갈리게 하는"
+       },
+       {
+        "start": 14.62,
+        "end": 17.6,
+        "text": "상대에게 당당하게 경고하는 메시지를"
+       },
+       {
+        "start": 17.6,
+        "end": 19.0,
+        "text": "담았습니다"
+       },
+       {
+        "start": 19.0,
+        "end": 21.08,
+        "text": "한층 당당해진 저희 아일릿의"
+       },
+       {
+        "start": 21.08,
+        "end": 22.82,
+        "text": "새로운 모습 많이 기대해 주시면"
+       },
+       {
+        "start": 22.82,
+        "end": 24.18,
+        "text": "좋겠습니다"
+       },
+       {
+        "start": 24.18,
+        "end": 26.38,
+        "text": "그럼 지금부터 오늘의 날씨를"
+       },
+       {
+        "start": 26.38,
+        "end": 28.22,
+        "text": "전해드리겠습니다"
+       },
+       {
+        "start": 28.9,
+        "end": 30.88,
+        "text": "오늘 전국적으로 바람이"
+       },
+       {
+        "start": 30.88,
+        "end": 32.59,
+        "text": "강하게 불겠습니다"
+       },
+       {
+        "start": 32.59,
+        "end": 34.06,
+        "text": "서해안과 제주도"
+       },
+       {
+        "start": 34.06,
+        "end": 37.03,
+        "text": "전라권 등엔 강풍특보가 예상되고요"
+       },
+       {
+        "start": 37.03,
+        "end": 39.39,
+        "text": "그 밖에 전국 대부분 지역에서도"
+       },
+       {
+        "start": 39.39,
+        "end": 41.47,
+        "text": "초속 15m 안팎의 강한 바람이"
+       },
+       {
+        "start": 41.47,
+        "end": 42.66,
+        "text": "불 것으로 보입니다"
+       }
+      ]
+     }
     }
    },
    "corner_name": "그 말",
@@ -1781,7 +1892,7 @@
  "corners": {
   "week": "10/26~11/01",
   "days_left": 5,
-  "done": 25,
+  "done": 26,
   "goal": 28,
   "corners": [
    {
@@ -1944,7 +2055,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 18,
+    "done": 19,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -1953,18 +2064,18 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-28T18:47+09:00"
+  "at": "2026-10-28T18:51+09:00"
  },
  "slots": {
-  "basis": 261,
+  "basis": 262,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.5,
-    "median": 2.4,
-    "n": 39
+    "mult": 2.45,
+    "median": 2.37,
+    "n": 40
    },
    {
     "from": 21,
