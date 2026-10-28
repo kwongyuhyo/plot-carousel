@@ -361,9 +361,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793148291/t4tpcxpanmhval631uci.jpg",
      "key": "kmDGZd1mv7I@104.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-28T09:45+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793180824/plot_studio/srqi6lutlpj5d8x148h5.mp4",
+     "at": "2026-10-28T18:47+09:00",
+     "file": "KeomBaeg_IlJuIl_ApDu_LiSenNeuUi_SinGog_Mi_New_release_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "소식"
@@ -1952,7 +1953,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-28T18:20+09:00"
+  "at": "2026-10-28T18:47+09:00"
  },
  "slots": {
   "basis": 261,
