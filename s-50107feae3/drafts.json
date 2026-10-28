@@ -2214,13 +2214,138 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-0b65d264",
+    "account": "@규효 공유 · @shhseoulmag",
+    "url": "https://www.instagram.com/p/De-9rW9GUBc/?psln=dDZyZXppZmhhdDdk",
+    "image": null,
+    "head": "칸예 한국 무대를 두 번 연 채널캔디 대표의 스토리에 'Ye Korea 2027' — 세 번째 내한 기대",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-28T20:42+09:00",
+   "key": "d6c9744f",
+   "by": "claude",
+   "subjects": [
+    "칸예"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "칸예 한국 무대를 두 번 연 채널캔디 대표의 스토리에 'Ye Korea 2027'",
+    "why": "규효 공유 · 다른 매거진 3곳이 같은 소재를 다루며 도는 중 — 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-10-28T20:42+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n채널캔디 박재형 대표의 인스타그램 스토리에 'Ye Korea 2027'이라는 문구가 올라왔습니다.\n\n채널캔디는 예(칸예 웨스트)의 한국 무대를 두 번 연 곳인데요, 2024년 8월 고양종합운동장에서 [VULTURES] 리스닝 파티를 열었고, 지난해 7월에는 인천 문학경기장에서 단독 공연 'YE LIVE IN KOREA'를 열었습니다.\n\n두 무대를 모두 만든 사람이 올린 연도라, 온라인에서는 다음 한국 무대를 기다리는 이야기가 나오고 있습니다. 채널캔디와 예 측은 아직 공연에 대한 공식 입장을 내지 않았습니다.\n\n#PLOT #칸예 #예 #채널캔디 #YELIVEINKOREA #내한공연\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793187722/mfhq8lddyp0m6hiwfk60.jpg\n제목: 칸예 다시 한국 오나?|Ye Korea 2027\n부제: 채널캔디 대표의 인스타그램 스토리\n출처: 채널캔디\n",
+    "caption": "채널캔디 박재형 대표의 인스타그램 스토리에 'Ye Korea 2027'이라는 문구가 올라왔습니다.\n\n채널캔디는 예(칸예 웨스트)의 한국 무대를 두 번 연 곳인데요, 2024년 8월 고양종합운동장에서 [VULTURES] 리스닝 파티를 열었고, 지난해 7월에는 인천 문학경기장에서 단독 공연 'YE LIVE IN KOREA'를 열었습니다.\n\n두 무대를 모두 만든 사람이 올린 연도라, 온라인에서는 다음 한국 무대를 기다리는 이야기가 나오고 있습니다. 채널캔디와 예 측은 아직 공연에 대한 공식 입장을 내지 않았습니다.\n\n#PLOT #칸예 #예 #채널캔디 #YELIVEINKOREA #내한공연",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187722/mfhq8lddyp0m6hiwfk60.jpg",
+      "credit": "채널캔디",
+      "from": "https://img.marieclairekorea.com/2025/06/mck_6858c97e76ae0.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187724/yztkaarbakppddfp5n9z.jpg",
+      "credit": "채널캔디",
+      "from": "https://image.starnewskorea.com/cdn-cgi/image/f=auto,w=1200,h=1483,fit=cover,q=high,sharpen=2/21/2025/07/2025072617503926429_1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187722/mfhq8lddyp0m6hiwfk60.jpg",
+      "credit": "채널캔디",
+      "from": "https://img.marieclairekorea.com/2025/06/mck_6858c97e76ae0.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187724/yztkaarbakppddfp5n9z.jpg",
+      "credit": "채널캔디",
+      "from": "https://image.starnewskorea.com/cdn-cgi/image/f=auto,w=1200,h=1483,fit=cover,q=high,sharpen=2/21/2025/07/2025072617503926429_1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "칸예 다시 한국 오나?|Ye Korea 2027",
+      "sub": "채널캔디 대표의 인스타그램 스토리"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "채널캔디 대표 스토리에|Ye Korea 2027",
+      "sub": "칸예의 다음 한국 무대?"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "칸예, 2027년에|다시 한국 오나?",
+      "sub": "'Ye Korea 2027' 문구가 올라왔다"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진 아래쪽 포스터 글씨(YE LIVE IN KOREA·26 JULY 2025)가 제목·소제목과 겹침 — 사진 바꾸기 필요 · '세 번째 내한'은 2024년이 14년 만의 방문(얼루어)이라 틀려 '다시/다음'으로 고침 · 2024 고양 공연 채널캔디 주최는 검색(엘르 등)으로만 확인, sources 기사엔 없음",
+     "숏폼 없음 — 소재가 인스타 스토리 사진 한 장이라 맞는 원본 영상이 없음",
+     "박재형 대표 이름·직함은 PAP·shhseoulmag 두 매거진 표기 기준 (기사로는 미확인) · 표지는 2025 'YE LIVE IN KOREA' 공식 포스터(채널캔디)뿐 — 아래쪽 포스터 글씨가 제목과 겹쳐 보여 「사진 바꾸기」 권장 (칸예는 사진 DB에 없음)"
+    ],
+    "research": [
+     {
+      "title": "PAP Magazine — Ye May Return to Seoul in 2027 (2026-10-27)",
+      "link": "https://www.pap-magazine.com/en/article/ye-kanye-west-seoul-2027-concert-hint"
+     },
+     {
+      "title": "스타뉴스 — 칸예 웨스트, 인천서 내한 공연 (2025-07-26)",
+      "link": "https://www.starnewskorea.com/music/2025/07/26/2025072617503926429"
+     },
+     {
+      "title": "얼루어 코리아 — 14년 만에 한국을 찾은 칸예 내한 공연 (2024-08)",
+      "link": "https://www.allurekorea.com/2024/08/25/14%eb%85%84-%eb%a7%8c%ec%97%90-%ed%95%9c%ea%b5%ad%ec%9d%84-%ec%b0%be%ec%9d%80-%ea%b0%90%eb%8f%99%ec%9d%98-%ec%b9%b8%ec%98%88-%eb%82%b4%ed%95%9c-%ea%b3%b5%ec%97%b0%ec%97%90-%ed%95%a8%ea%bb%98%ed%95%9c/"
+     },
+     {
+      "title": "엘르 — 칸예 웨스트 첫 한국 단독 콘서트 정보",
+      "link": "https://www.elle.co.kr/article/1880188"
+     },
+     {
+      "title": "마리끌레르 — 취소되었던 YE의 내한 공연이 7월에 다시 열린다",
+      "link": "https://www.marieclairekorea.com/hot-news/2025/06/ye-korea-3/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187727/rbolvvwitmwb8wgcsgsi.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187727/fucuww6fcx79sgdshxih.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187729/shmmpkk7976xqj0macd1.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187729/wbgsn1iukiktlbsp8rwn.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793187727/rbolvvwitmwb8wgcsgsi.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-28T20:42+09:00",
+     "v": {
+      "A": "aebc3368",
+      "B": "4089136a",
+      "C": "3d202883"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 5,
-  "done": 26,
+  "done": 27,
   "goal": 28,
   "corners": [
    {
@@ -2383,16 +2508,16 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 19,
+    "done": 20,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 6,
+    "drafts": 7,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-28T19:40+09:00"
+  "at": "2026-10-28T20:42+09:00"
  },
  "slots": {
   "basis": 262,
