@@ -941,10 +941,18 @@ function splitTokens(text) {
   if (cur) out.push(cur);
   return out;
 }
+/* 줄 첫머리 ASCII 따옴표가 여는 것인가 — 앞 줄들에 같은 따옴표가 짝수 개면 여는 것 (card_news._opening_quote 와 같다) */
+function openingQuote(lines, i) {
+  const c = chars(lines[i]), q = c[0];
+  if ((q !== "'" && q !== '"') || c.length < 2 || c[1] === " ") return false;
+  let n = 0;
+  for (let k = 0; k < i; k++) n += chars(lines[k]).filter((x) => x === q).length;
+  return n % 2 === 0;
+}
 function kinsoku(lines, fk, size, maxW, tr) {
   const out = lines.slice();
   for (let i = 1; i < out.length; i++) {
-    while (out[i] && NO_LINE_START.has(chars(out[i])[0])) {
+    while (out[i] && NO_LINE_START.has(chars(out[i])[0]) && !openingQuote(out, i)) {
       const first = chars(out[i])[0];
       const moved = out[i - 1] + first;
       if (twTracked(moved, fk, size, tr) > maxW) break;
@@ -3687,9 +3695,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.28 22:40';
+    a.title = '판 10.29 03:01';
     var ver = document.createElement('span');
-    ver.textContent = '10.28 22:40';
+    ver.textContent = '10.29 03:01';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
