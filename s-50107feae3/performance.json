@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-28 15:07 KST",
+ "generated_at": "2026-10-28 19:05 KST",
  "weeks": [
   {
    "week": "2026-W36",
@@ -1662,11 +1662,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-27 22:04 KST"
+  "daily": "2026-10-28 15:07 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-28T15:07:23+09:00",
+  "fetched_at": "2026-10-28T18:49:57+09:00",
   "posts": [
+   {
+    "t": "2026-10-28T18:20+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "다이나믹 듀오가 홍대입구역 앞 광장에서 무료로 공연합니다."
+   },
    {
     "t": "2026-10-28T12:14+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2031,9 +2036,9 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 197,
-  "posted": 58,
-  "posts": 79,
+  "drafts": 200,
+  "posted": 59,
+  "posts": 80,
   "rate": 0.29,
   "adopted_mult": 0.93,
   "own_mult": 1.31,
@@ -2049,8 +2054,8 @@
     "mult": 1.61
    },
    "정보": {
-    "drafts": 122,
-    "posted": 47,
+    "drafts": 125,
+    "posted": 48,
     "mult": 1.05
    },
    "클립": {
@@ -2091,8 +2096,8 @@
   },
   "corners": {
    "news": {
-    "drafts": 110,
-    "posted": 39,
+    "drafts": 112,
+    "posted": 40,
     "mult": 1.0
    },
    "mal": {
@@ -2116,7 +2121,7 @@
     "mult": 1.28
    },
    "followup": {
-    "drafts": 14,
+    "drafts": 15,
     "posted": 7,
     "mult": 0.78
    },
@@ -2168,19 +2173,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-26",
-    "lane": "정보",
-    "who": "리센느",
-    "repack": false,
-    "grade": "A",
-    "corner": "followup",
-    "key": "f3358691",
-    "posted": "De9HCGulILg",
-    "head": "리센느(@rescene_official)가 거제시의 첫 연예인 명예시민이 됐습니다.",
-    "url": "https://www.instagram.com/p/De9HCGulILg/",
-    "mult": null
-   },
    {
     "day": "2026-10-26",
     "lane": "정보",
@@ -2270,6 +2262,19 @@
     "posted": "DfAH-gwGfaP",
     "head": "제이지가 내년 2월 슈퍼볼 하프타임 쇼 무대에 오릅니다.",
     "url": "https://www.instagram.com/p/DfAH-gwGfaP/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-28",
+    "lane": "정보",
+    "who": "다이나믹 듀오",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "2bd0d62f",
+    "posted": "DfCGLaElNCC",
+    "head": "다이나믹 듀오가 홍대입구역 앞 광장에서 무료로 공연합니다.",
+    "url": "https://www.instagram.com/p/DfCGLaElNCC/",
     "mult": null
    }
   ]
