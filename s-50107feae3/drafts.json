@@ -1546,6 +1546,229 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-549b9690",
+    "account": "@갈등·반응",
+    "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1015997",
+    "image": null,
+    "head": "9년 만에 솔로로 선 이한결 '번지' 챌린지에 최예나·곽범이 함께했다",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-28T17:49+09:00",
+   "key": "65fbdc6d",
+   "by": "claude",
+   "subjects": [
+    "이한결",
+    "최예나"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "9년 만에 첫 솔로로 선 이한결의 '번지' 챌린지에 최예나·곽범이 깜짝 등장",
+    "why": "속보 감지 — 오늘 기사 세 곳, 최예나·곽범 의외의 조합으로 반응 급증"
+   },
+   "added": "claude",
+   "added_at": "2026-10-28T17:49+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n이한결의 '번지' 댄스 챌린지에 최예나(@yena.jigumina)와 곽범이 등장했습니다.\n\n이한결은 지난 14일 첫 솔로 미니앨범 [NOISE]를 냈는데요, 2017년 그룹 IM으로 데뷔해 X1과 BAE173 등을 거친 뒤 9년 만에 처음 혼자 서는 무대입니다. 그 첫 활동곡 챌린지에서 최예나는 하이틴 느낌의 스트리트 패션으로, 곽범은 이한결과 맞춘 축구 유니폼 차림으로 함께 춤을 췄습니다.\n\n김요한과 명형서, 주이, 그리고 BAE173 시절을 함께한 무진과 영서도 챌린지에 얼굴을 비쳤습니다. 소속사 오르카뮤직은 오랫동안 이한결의 성장을 지켜봐 온 이들이 흔쾌히 동참했다고 전했습니다.\n\n'번지'에는 '번지'라는 말이 52번 나오고, 이한결은 음악방송 1위를 하면 번지점프 52번을 뛰겠다고 공약했습니다.\n\n#PLOT #이한결 #최예나 #곽범 #번지 #NOISE\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793177371/kqmcdkld2poheue2ohxu.jpg\n제목: 이한결 '번지' 챌린지에|최예나·곽범 등장\n부제: 9년 만의 첫 솔로곡에 모인 동료들\n출처: 오르카뮤직\n",
+    "caption": "이한결의 '번지' 댄스 챌린지에 최예나(@yena.jigumina)와 곽범이 등장했습니다.\n\n이한결은 지난 14일 첫 솔로 미니앨범 [NOISE]를 냈는데요, 2017년 그룹 IM으로 데뷔해 X1과 BAE173 등을 거친 뒤 9년 만에 처음 혼자 서는 무대입니다. 그 첫 활동곡 챌린지에서 최예나는 하이틴 느낌의 스트리트 패션으로, 곽범은 이한결과 맞춘 축구 유니폼 차림으로 함께 춤을 췄습니다.\n\n김요한과 명형서, 주이, 그리고 BAE173 시절을 함께한 무진과 영서도 챌린지에 얼굴을 비쳤습니다. 소속사 오르카뮤직은 오랫동안 이한결의 성장을 지켜봐 온 이들이 흔쾌히 동참했다고 전했습니다.\n\n'번지'에는 '번지'라는 말이 52번 나오고, 이한결은 음악방송 1위를 하면 번지점프 52번을 뛰겠다고 공약했습니다.\n\n#PLOT #이한결 #최예나 #곽범 #번지 #NOISE",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177371/kqmcdkld2poheue2ohxu.jpg",
+      "credit": "오르카뮤직",
+      "from": "https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202610/1015997_2034349_1210.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177374/pq4rwqhvirvnga8nyjvn.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792514157/s8sd5umsmlkeltwfhuye.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177376/tux4opc4oatfjzp58ujc.jpg",
+      "credit": "오르카뮤직",
+      "from": "https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/09/14/b16c59aa-27cb-4968-ae5f-4fba069370b7.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177381/odgwhpy6kcuxsitohmx4.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://i.ibb.co/3m3xFvLM/cc30d6b885d8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177384/h4rq7lwufbd09rtwltjp.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607798/h6yf410q6ikowu7tzyfo.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177371/kqmcdkld2poheue2ohxu.jpg",
+      "credit": "오르카뮤직",
+      "from": "https://7lgigmttrjuyfehsudec15072.edge.naverncp.com/news/photo/202610/1015997_2034349_1210.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177374/pq4rwqhvirvnga8nyjvn.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792514157/s8sd5umsmlkeltwfhuye.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177376/tux4opc4oatfjzp58ujc.jpg",
+      "credit": "오르카뮤직",
+      "from": "https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/09/14/b16c59aa-27cb-4968-ae5f-4fba069370b7.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177381/odgwhpy6kcuxsitohmx4.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://i.ibb.co/3m3xFvLM/cc30d6b885d8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177384/h4rq7lwufbd09rtwltjp.jpg",
+      "credit": "@yena.jigumina",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792607798/h6yf410q6ikowu7tzyfo.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "이한결 '번지' 챌린지에|최예나·곽범 등장",
+      "sub": "9년 만의 첫 솔로곡에 모인 동료들"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "9년 만에 솔로로 선|이한결 곁의 동료들",
+      "sub": "최예나·곽범·김요한까지 '번지' 챌린지"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "최예나와 곽범도|함께한 '번지'",
+      "sub": "이한결 첫 솔로 미니앨범 [NOISE] 타이틀곡"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 제목 글씨가 왼쪽 아래 칸 두 사람 얼굴에 걸림 · 왼쪽 위 후드 인물(최예나 추정) 얼굴이 가려져 누군지 안 보임 · MV 자막 없어 0:40-1:10 이 후렴인지 귀로 확인 · 사진 i.ibb.co 한 장은 503 으로 못 받음",
+     "클립 위험: 낮음 — LEEHANGYUL (본인 공식 MV) · 후렴 구간은 자막이 없어 추정치 — 구간 확인",
+     "표지 사진(오르카뮤직 제공 챌린지 컷)에 최예나·곽범이 실제로 보이는지"
+    ],
+    "research": [
+     {
+      "title": "SPOTV NEWS — 이한결, '번지' 댄스 챌린지에 최예나·곽범 깜짝 등장 (10/28)",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1015997"
+     },
+     {
+      "title": "스타뉴스 — 이한결, 신곡 'BUNZI' 댄스 챌린지 화제 (10/28)",
+      "link": "http://www.starnewsk.com/news/articleView.html?idxno=60418"
+     },
+     {
+      "title": "스타뉴스 — 이한결 '번지' 챌린지에 최예나·곽범이 왜 나와? (10/28)",
+      "link": "https://www.starnewskorea.com/music/2026/10/28/2026102808260772359"
+     },
+     {
+      "title": "더팩트 — '여섯 번째 데뷔' 이한결 \"이젠 솔로 아티스트\" (종합)",
+      "link": "https://news.tf.co.kr/read/ogmeta/2376346.htm"
+     },
+     {
+      "title": "일간스포츠 — 이한결, 음악방송 1위 공약이 번지점프 52번? (10/14)",
+      "link": "https://isplus.com/article/view/isp202610140211"
+     },
+     {
+      "title": "iMBC 연예 — 이한결, 'NOISE'로 첫 솔로 출격 (9/14)",
+      "link": "https://enews.imbc.com/News/ViewAmp/518177"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177389/prb7jz9chv6omac8rvxp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177389/iphjxmloibh4r13mq2vm.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177391/jhd89voycivjysulnbtp.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177391/i0sh7ihc6eksxxekz7ah.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177389/prb7jz9chv6omac8rvxp.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-28T17:49+09:00",
+     "v": {
+      "A": "65c968d4",
+      "B": "23bb20ce",
+      "C": "a24b2496"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=fKRHJUbqwvA\n구간: 0:40-1:10\n곡: 그 '번지' 후렴\n아티스트: 최예나·곽범도 따라 춘\n피처링:\n후킹: \n출처: LEEHANGYUL\n음원: 이한결 - 번지 (BUNZI)",
+    "caption": "최예나(@yena.jigumina)와 곽범까지 챌린지에 불러낸 곡, 이한결의 '번지'입니다.\n\n지난 14일 나온 첫 솔로 미니앨범 [NOISE]의 타이틀곡인데요, 강렬한 베이스 라인 위에 라틴 팝 리듬을 얹었고 가사에는 '번지'라는 말이 52번 나옵니다.\n\n2017년 IM으로 데뷔해 X1과 BAE173을 거친 이한결이 9년 만에 처음 혼자 부르는 활동곡입니다.\n\n#PLOT #이한결 #번지 #NOISE #최예나",
+    "hooks": {
+     "A": "9년 만에 혼자 선 / 이한결의 '번지'",
+     "B": "'번지'가 52번 나오는 /이한결 첫 솔로곡",
+     "C": "최예나·곽범도 따라 춘 / 그 '번지' 후렴"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=fKRHJUbqwvA",
+     "credit": "LEEHANGYUL",
+     "range": [
+      40.0,
+      70.0
+     ]
+    },
+    "guided": {
+     "rec": "C",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 제목 글씨가 왼쪽 아래 칸 두 사람 얼굴에 걸림 · 왼쪽 위 후드 인물(최예나 추정) 얼굴이 가려져 누군지 안 보임 · MV 자막 없어 0:40-1:10 이 후렴인지 귀로 확인 · 사진 i.ibb.co 한 장은 503 으로 못 받음",
+     "클립 위험: 낮음 — LEEHANGYUL (본인 공식 MV) · 후렴 구간은 자막이 없어 추정치 — 구간 확인",
+     "표지 사진(오르카뮤직 제공 챌린지 컷)에 최예나·곽범이 실제로 보이는지",
+     "[작문 H2] 후킹B: 16자 넘는 줄 ''번지'가 52번 나오는 /이한결 첫 솔로곡' → 한 줄 16자 안 · 세 줄 합 42자 안 · 세 줄이 같은 말을 되풀이하지 않는다"
+    ],
+    "research": [
+     {
+      "title": "SPOTV NEWS — 이한결, '번지' 댄스 챌린지에 최예나·곽범 깜짝 등장 (10/28)",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1015997"
+     },
+     {
+      "title": "스타뉴스 — 이한결, 신곡 'BUNZI' 댄스 챌린지 화제 (10/28)",
+      "link": "http://www.starnewsk.com/news/articleView.html?idxno=60418"
+     },
+     {
+      "title": "스타뉴스 — 이한결 '번지' 챌린지에 최예나·곽범이 왜 나와? (10/28)",
+      "link": "https://www.starnewskorea.com/music/2026/10/28/2026102808260772359"
+     },
+     {
+      "title": "더팩트 — '여섯 번째 데뷔' 이한결 \"이젠 솔로 아티스트\" (종합)",
+      "link": "https://news.tf.co.kr/read/ogmeta/2376346.htm"
+     },
+     {
+      "title": "일간스포츠 — 이한결, 음악방송 1위 공약이 번지점프 52번? (10/14)",
+      "link": "https://isplus.com/article/view/isp202610140211"
+     },
+     {
+      "title": "iMBC 연예 — 이한결, 'NOISE'로 첫 솔로 출격 (9/14)",
+      "link": "https://enews.imbc.com/News/ViewAmp/518177"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/fKRHJUbqwvA/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793177397/okimwmewtiy6ikyv5dmr.jpg",
+     "key": "fKRHJUbqwvA@40.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-28T17:50+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1720,11 +1943,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-28T17:32+09:00"
+  "at": "2026-10-28T17:50+09:00"
  },
  "slots": {
   "basis": 261,
