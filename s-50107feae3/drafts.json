@@ -157,12 +157,7 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793124197/vuvmeozn1mu4gvbqrxpw.jpg"
     }
    },
-   "corner_name": "소식",
-   "pick": {
-    "rank": 3,
-    "why": "양홍원은 지금도 레이더 1위 · 폭로 반복이 아닌 음악 쪽 새 사실(ROSE 역주행)",
-    "at": "2026-10-28T09:57+09:00"
-   }
+   "corner_name": "소식"
   },
   {
    "source": {
@@ -499,13 +494,13 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "의외의 만남 — 송강 출연 릴스 1.2만 도달의 결 · 기사 쏟아지는 중 · 원희가 불러 온 아이유 노래라는 연결",
-    "at": "2026-10-28T09:57+09:00"
-   },
    "corner_name": "만나는 법",
-   "corner_no": 1
+   "corner_no": 1,
+   "pick": {
+    "rank": 2,
+    "why": "의외의 만남 — 송강 출연 릴스 1.2만 도달의 결 · 아일릿 기사 50건 넘게",
+    "at": "2026-10-28T16:21+09:00"
+   }
   },
   {
    "source": {
@@ -584,13 +579,13 @@
      "at": "2026-10-28T09:58+09:00"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "릴스가 7%뿐 — 바로 올릴 수 있는 숏폼 · 아일릿 기사 50건 넘게 · 장면 하나로 읽히는 영상",
-    "at": "2026-10-28T09:57+09:00"
-   },
    "corner_name": "그 말",
-   "corner_no": 5
+   "corner_no": 5,
+   "pick": {
+    "rank": 3,
+    "why": "바로 올릴 수 있는 숏폼 · 아일릿 오늘 기사 최다 (원희 챌린지와 시간 띄워서)",
+    "at": "2026-10-28T16:21+09:00"
+   }
   },
   {
    "source": {
@@ -1093,6 +1088,278 @@
    },
    "corner_name": "듣는다면",
    "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "claude:rescene-wonyi-geoje",
+    "account": "스포츠서울",
+    "url": "https://www.sportsseoul.com/news/read/1644115",
+    "image": null,
+    "head": "“팬들 비 맞는데 우리만 어떻게”…리센느, 무대 천막 치우고 팬들과…",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-28T16:21+09:00",
+   "key": "291a8bf5",
+   "by": "claude",
+   "subjects": [
+    "원이",
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "고향 거제에서 천막을 걷어 달라던 원이 — '거제 야호' 한마디에서 홍보대사·수해 성금·명예시민·빗속 무대까지, 원이와 거제의 다섯 장면",
+    "why": "목표 인물해부 · 리센느 해부 역대 14만 · 10/24 빗속 공연 기사(스포츠서울·YTN) · 10/26 명예시민 단신의 다음 편"
+   },
+   "added": "claude",
+   "added_at": "2026-10-28T16:21+09:00",
+   "corner": "followup",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n리센느(@rescene_official) 원이가 고향 거제에서 팬들과 함께 비를 맞으며 노래했습니다.\n\n지난 24일 옥포에서 열린 무료 공연 '거제 야호-! 리센느와 함께하는 오션하모니'에서 무대에는 천막이 있었지만 객석의 팬들은 빗속에 서 있었는데요, 이를 본 원이가 스태프에게 천막을 치울 수 있는지 물었고 멤버들도 천막을 뒤로 옮겨 달라고 부탁했습니다.\n\n원이의 개인 유튜브에서 나온 '거제 야호'가 밈이 된 뒤로 리센느는 5월 거제시 홍보대사가 됐고, 8월 수해 때는 성금 5,000만 원을 보냈으며, 9월에는 연예인 처음으로 거제시 명예시민에 선정됐습니다. 인사 한마디로 시작된 고향과의 인연이 빗속 무대까지 이어진 셈입니다.\n\n#PLOT #리센느 #원이 #거제 #거제야호\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793172072/j5tbztjopojdbh9uioeg.jpg\n제목: 원이가 고향 거제에서|천막을 걷은 날\n부제: '거제 야호'에서 빗속 무대까지\n출처: @rescene_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792436503/zlc49bw5wtdch7nqvuis.jpg\n소제목: '거제 야호'의 시작\n본문: 원이가 2월에 연 개인 유튜브 채널. 그 영상 속 '거제 야호' 한마디가 숏폼을 타고 번졌고, 2024년 8월에 낸 'LOVE ATTACK'까지 다시 불려 나왔습니다.\n출처: @rescene_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792257384/mqwsfplwcbsofvcoqwip.jpg\n소제목: 5월, 거제시 홍보대사\n본문: 거제시는 5월 22일 리센느 다섯 명을 홍보대사로 위촉했습니다. 위촉 영상에서도 다섯 명은 '거제 야호'를 외쳤습니다.\n출처: @rescene_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg\n소제목: 8월, 수해 성금\n본문: 집중호우로 거제 곳곳이 피해를 입자 리센느 쪽은 거제시를 찾아 성금 5,000만 원을 팬덤 리마인의 이름으로 전달했습니다.\n출처: @rescene_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg\n소제목: 9월, 연예인 첫 명예시민\n본문: 9월 9일 거제시의회가 명예시민 수여 대상 승인 건을 가결하면서 리센느 멤버 전원이 거제시 명예시민이 됐습니다. 연예인으로는 처음입니다.\n출처: @rescene_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792257423/kgs0q6lb6vqbqy4phlus.jpg\n소제목: 10월 24일, 천막을 걷다\n본문: 옥포에서 열린 무료 공연 날, 무대 위엔 천막이 있었지만 객석은 빗속이었습니다. 원이가 스태프에게 천막을 치울 수 있는지 물었고, 멤버들도 뒤로 옮겨 달라고 부탁해 함께 비를 맞으며 노래했습니다.\n출처: @rescene_official\n",
+    "caption": "리센느(@rescene_official) 원이가 고향 거제에서 팬들과 함께 비를 맞으며 노래했습니다.\n\n지난 24일 옥포에서 열린 무료 공연 '거제 야호-! 리센느와 함께하는 오션하모니'에서 무대에는 천막이 있었지만 객석의 팬들은 빗속에 서 있었는데요, 이를 본 원이가 스태프에게 천막을 치울 수 있는지 물었고 멤버들도 천막을 뒤로 옮겨 달라고 부탁했습니다.\n\n원이의 개인 유튜브에서 나온 '거제 야호'가 밈이 된 뒤로 리센느는 5월 거제시 홍보대사가 됐고, 8월 수해 때는 성금 5,000만 원을 보냈으며, 9월에는 연예인 처음으로 거제시 명예시민에 선정됐습니다. 인사 한마디로 시작된 고향과의 인연이 빗속 무대까지 이어진 셈입니다.\n\n#PLOT #리센느 #원이 #거제 #거제야호",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172072/j5tbztjopojdbh9uioeg.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257396/ommqiolizxnv3klj4pfi.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436503/zlc49bw5wtdch7nqvuis.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851150085_17972545563150563_4881626687882309939_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GicgOcQ9O8IQ7kNvwGZveiP&_nc_oc=AdqVfZjlpIFfuSuEU_-QZTtFLKISd6JHmYsamxM5y83QAwWVd6uABuUcvrV-hTKISwQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=SADwvxxqHIeBUs34aZ0DTA&oh=00_AQPpqI-P7vjpmVy9ZK6AK8thWEOcXX3rnCXJqsDor_vpXA&oe=6ADC53D7"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257396/ommqiolizxnv3klj4pfi.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/848804815_1462873192570464_5485625387428363727_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-Nl0ldnZglwQ7kNvwFf9chY&_nc_oc=AdrHkn5PmEYWkbE88IItq88ssHD2AW0ERyKji55CJ9XbFS7RGO1O7TLMVnrlDYam-eo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-YDjciaOxIlddBnpPYGJ7w&_nc_tpa=Q5bMBQLpn7SH8KblktJsyUojOUPIvH0qpPBGAZiEGTko0iPRa8eU6_UFweMd7yxXg9iKr7znRAeZNoueiw&oh=00_AQONBp1wIndt4TzdXzmKUDwk4kHUwFo01UaqnJwysOx_-g&oe=6AD97F25"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257423/kgs0q6lb6vqbqy4phlus.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/829647793_17969988885150563_2637229497987367556_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mm3bgSCUp1AQ7kNvwHxMhgm&_nc_oc=Adp9hYWU_XukWRteVRXgdy40Nu-SZxpD8OmaH-o4hjG0nL24cMfZKmXr5XzhZKfYgjM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-YDjciaOxIlddBnpPYGJ7w&_nc_tpa=Q5bMBQLN1XI3raP8GjEzVac2o-lhD4KqSCiDgtQH-GSw7Dh_1UL3xUACYwti73g2sOS7tDAzfOKyN2R3Iw&oh=00_AQPhlgg5mcEnCgKfk95wF2d_3y1psvfz3uiDKTwW5yam1Q&oe=6AD992A9"
+     },
+     {
+      "url": "https://i.ibb.co/QFhpS3qk/1aab935b28b8.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_sza253ue/auto_pdb_안녕하세요원이입니다잘부탁드립니다_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792939870/vzh1mk0hjkfdnih5w0tj.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_k935udci/auto_pdb_원이리센느_콘셉트 포토_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792939852/oou3quzao7kpwovfzndj.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_wayg0y9_/auto_pdb_원이리센느_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792939874/qfbo19cz5pp6jsoyq6eg.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_hc_r9cgf/auto_pdb_원이리센느_근황_.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/QFhpS3qk/1aab935b28b8.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_04w7eann/auto_pdb_안녕하세요원이입니다잘부탁드립니다_화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172072/j5tbztjopojdbh9uioeg.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257396/ommqiolizxnv3klj4pfi.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436503/zlc49bw5wtdch7nqvuis.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851150085_17972545563150563_4881626687882309939_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GicgOcQ9O8IQ7kNvwGZveiP&_nc_oc=AdqVfZjlpIFfuSuEU_-QZTtFLKISd6JHmYsamxM5y83QAwWVd6uABuUcvrV-hTKISwQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=SADwvxxqHIeBUs34aZ0DTA&oh=00_AQPpqI-P7vjpmVy9ZK6AK8thWEOcXX3rnCXJqsDor_vpXA&oe=6ADC53D7"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257396/ommqiolizxnv3klj4pfi.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/848804815_1462873192570464_5485625387428363727_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-Nl0ldnZglwQ7kNvwFf9chY&_nc_oc=AdrHkn5PmEYWkbE88IItq88ssHD2AW0ERyKji55CJ9XbFS7RGO1O7TLMVnrlDYam-eo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-YDjciaOxIlddBnpPYGJ7w&_nc_tpa=Q5bMBQLpn7SH8KblktJsyUojOUPIvH0qpPBGAZiEGTko0iPRa8eU6_UFweMd7yxXg9iKr7znRAeZNoueiw&oh=00_AQONBp1wIndt4TzdXzmKUDwk4kHUwFo01UaqnJwysOx_-g&oe=6AD97F25"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257423/kgs0q6lb6vqbqy4phlus.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/829647793_17969988885150563_2637229497987367556_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=mm3bgSCUp1AQ7kNvwHxMhgm&_nc_oc=Adp9hYWU_XukWRteVRXgdy40Nu-SZxpD8OmaH-o4hjG0nL24cMfZKmXr5XzhZKfYgjM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=-YDjciaOxIlddBnpPYGJ7w&_nc_tpa=Q5bMBQLN1XI3raP8GjEzVac2o-lhD4KqSCiDgtQH-GSw7Dh_1UL3xUACYwti73g2sOS7tDAzfOKyN2R3Iw&oh=00_AQPhlgg5mcEnCgKfk95wF2d_3y1psvfz3uiDKTwW5yam1Q&oe=6AD992A9"
+     },
+     {
+      "url": "https://i.ibb.co/QFhpS3qk/1aab935b28b8.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_sza253ue/auto_pdb_안녕하세요원이입니다잘부탁드립니다_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792939870/vzh1mk0hjkfdnih5w0tj.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_k935udci/auto_pdb_원이리센느_콘셉트 포토_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792939852/oou3quzao7kpwovfzndj.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_wayg0y9_/auto_pdb_원이리센느_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792939874/qfbo19cz5pp6jsoyq6eg.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_hc_r9cgf/auto_pdb_원이리센느_근황_.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/QFhpS3qk/1aab935b28b8.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_04w7eann/auto_pdb_안녕하세요원이입니다잘부탁드립니다_화보_.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "원이가 고향 거제에서|천막을 걷은 날",
+      "sub": "'거제 야호'에서 빗속 무대까지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — YTN star · 자막이 없어 0:00-0:30 구간을 자막으로 못 맞춤 — 천막 걷는 장면이 30초 안에 들어오는지 영상으로 볼 것",
+     "표지·1·5장 사진이 원이인지 (사진 DB '원이' 태그 기준 · 스포츠서울 빗속 사진은 해상도 미달로 못 씀) · 오늘 리센느 폰 캠페인 초안과는 하나만 올리길 권함",
+     "반복 — 「원이」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "스포츠서울 10/26 — 24일 옥포 한화오션 오션플라자 '거제 야호-! 리센느와 함께하는 오션하모니' · 원이가 천막 치울 수 있는지 물음 · 원이·미나미 발언",
+      "link": "https://www.sportsseoul.com/news/read/1644115"
+     },
+     {
+      "title": "YTN star — \"팬들 비 맞는데...\" 리센느, 무대 위 천막 치웠다 (69초)",
+      "link": "https://www.youtube.com/watch?v=SXWVzlW9mwk"
+     },
+     {
+      "title": "더팩트(다음) 5/30 — 원이 개인 유튜브 '거제 야호' 밈 · 2024년 8월 'LOVE ATTACK' 역주행",
+      "link": "https://v.daum.net/v/20260530000221158"
+     },
+     {
+      "title": "데일리안 — 거제시 5월 22일 홍보대사 위촉 · 위촉 영상 속 '거제 야호'",
+      "link": "https://www.dailian.co.kr/news/view/1647899/"
+     },
+     {
+      "title": "서울신문 8/24 — 리센느부터 익명 기부자까지…거제 수해 성금",
+      "link": "https://m.go.seoul.co.kr/news/2026/08/24/20260824500240"
+     },
+     {
+      "title": "위키트리 — '거제 야호'로 맺은 인연…리센느, 폭우 피해에 5000만원 기부",
+      "link": "https://www.wikitree.co.kr/articles/1153544"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172075/bw7k0pnlcg3mjhukys7d.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172075/ihjwsby74qfdxwprmhkx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172075/pqakycbcjrgkikuzxjka.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172075/eh5dyqkv9eytcargyscg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172077/biydxrhpguhc2lycphkl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172077/owzfc5dmqwzj91ab0wgl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172077/wirqfu29ybacnizwabig.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172075/bw7k0pnlcg3mjhukys7d.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-28T16:21+09:00",
+     "v": {
+      "A": "6d977752"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=SXWVzlW9mwk\n구간: 0:00-0:30\n곡: 천막을 걷은 리센느\n아티스트: 팬들 비 맞는 걸 보고\n피처링:\n후킹: \n출처: YTN star\n자막: 자동",
+    "caption": "리센느(@rescene_official)가 무대 위 천막을 걷고 팬들과 함께 비를 맞았습니다.\n\n지난 24일 거제 옥포에서 열린 무료 공연 '거제 야호-! 리센느와 함께하는 오션하모니'에서 객석이 빗속에 젖어 가자, 거제 출신 원이가 스태프에게 천막을 치울 수 있는지 물었는데요, 멤버들도 천막을 뒤로 옮겨 달라고 부탁하면서 무대와 객석이 같은 비를 맞게 됐습니다.\n\n무대를 마치며 미나미는 \"꼭 오늘 감기약 먹고\" 따뜻하게 자라는 인사를 남겼습니다.\n\n#PLOT #리센느 #원이 #미나미 #거제",
+    "hooks": {
+     "A": "팬들 비 맞는 걸 보고 / 천막을 걷은 리센느",
+     "B": "고향 거제 빗속 무대 / 천막을 치운 원이",
+     "C": "천막 대신 팬들과 / 비를 맞은 리센느"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=SXWVzlW9mwk",
+     "credit": "YTN star",
+     "range": [
+      0.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — YTN star · 자막이 없어 0:00-0:30 구간을 자막으로 못 맞춤 — 천막 걷는 장면이 30초 안에 들어오는지 영상으로 볼 것",
+     "표지·1·5장 사진이 원이인지 (사진 DB '원이' 태그 기준 · 스포츠서울 빗속 사진은 해상도 미달로 못 씀) · 오늘 리센느 폰 캠페인 초안과는 하나만 올리길 권함",
+     "반복 — 「원이」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "스포츠서울 10/26 — 24일 옥포 한화오션 오션플라자 '거제 야호-! 리센느와 함께하는 오션하모니' · 원이가 천막 치울 수 있는지 물음 · 원이·미나미 발언",
+      "link": "https://www.sportsseoul.com/news/read/1644115"
+     },
+     {
+      "title": "YTN star — \"팬들 비 맞는데...\" 리센느, 무대 위 천막 치웠다 (69초)",
+      "link": "https://www.youtube.com/watch?v=SXWVzlW9mwk"
+     },
+     {
+      "title": "더팩트(다음) 5/30 — 원이 개인 유튜브 '거제 야호' 밈 · 2024년 8월 'LOVE ATTACK' 역주행",
+      "link": "https://v.daum.net/v/20260530000221158"
+     },
+     {
+      "title": "데일리안 — 거제시 5월 22일 홍보대사 위촉 · 위촉 영상 속 '거제 야호'",
+      "link": "https://www.dailian.co.kr/news/view/1647899/"
+     },
+     {
+      "title": "서울신문 8/24 — 리센느부터 익명 기부자까지…거제 수해 성금",
+      "link": "https://m.go.seoul.co.kr/news/2026/08/24/20260824500240"
+     },
+     {
+      "title": "위키트리 — '거제 야호'로 맺은 인연…리센느, 폭우 피해에 5000만원 기부",
+      "link": "https://www.wikitree.co.kr/articles/1153544"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/SXWVzlW9mwk/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793172081/rwwnrstqn9nj87kxtb32.jpg",
+     "key": "SXWVzlW9mwk@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-28T16:21+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "목표 '인물해부' — 리센느는 역대 해부 14만의 결 · 빗속 천막 기사 이틀째 · 숏폼까지 한 건에",
+    "at": "2026-10-28T16:21+09:00"
+   },
+   "corner_name": "후속"
   }
  ],
  "skipped": [],
@@ -1219,7 +1486,7 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -1271,7 +1538,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-28T14:08+09:00"
+  "at": "2026-10-28T16:21+09:00"
  },
  "slots": {
   "basis": 261,
