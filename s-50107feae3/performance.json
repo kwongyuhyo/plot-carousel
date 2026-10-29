@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29 19:05 KST",
+ "generated_at": "2026-10-29 22:04 KST",
  "weeks": [
   {
    "week": "2026-W36",
@@ -1676,11 +1676,31 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-29 15:05 KST"
+  "daily": "2026-10-29 19:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-29T19:05:00+09:00",
+  "fetched_at": "2026-10-29T21:44:23+09:00",
   "posts": [
+   {
+    "t": "2026-10-29T19:47+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "스윙스(@itsjustswings)가 배우 매니지먼트사 에이스팩토리와 전"
+   },
+   {
+    "t": "2026-10-29T19:35+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "뉴진스(@newjeans_official) 'ETA' 뮤직비디오 감독판 "
+   },
+   {
+    "t": "2026-10-29T19:27+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "패닉이 '2026 MAMA AWARDS'에서 후배들과 한 무대를 꾸밉니다"
+   },
+   {
+    "t": "2026-10-29T19:24+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "버벌진트(@freevjfreevj)가 14년 전 앨범 속 얼굴들을 다시 "
+   },
    {
     "t": "2026-10-29T15:14+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2060,10 +2080,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 211,
-  "posted": 60,
-  "posts": 81,
-  "rate": 0.28,
+  "drafts": 214,
+  "posted": 64,
+  "posts": 85,
+  "rate": 0.3,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
   "lanes": {
@@ -2073,13 +2093,13 @@
     "mult": null
    },
    "재미": {
-    "drafts": 15,
+    "drafts": 17,
     "posted": 1,
     "mult": 2.05
    },
    "정보": {
-    "drafts": 134,
-    "posted": 49,
+    "drafts": 135,
+    "posted": 53,
     "mult": 0.99
    },
    "클립": {
@@ -2120,9 +2140,9 @@
   },
   "corners": {
    "news": {
-    "drafts": 118,
-    "posted": 41,
-    "mult": 1.06
+    "drafts": 120,
+    "posted": 43,
+    "mult": 1.05
    },
    "mal": {
     "drafts": 34,
@@ -2150,18 +2170,18 @@
     "mult": 0.93
    },
    "spotlight": {
-    "drafts": 6,
+    "drafts": 7,
     "posted": 0,
     "mult": null
    },
    "newalbums": {
     "drafts": 4,
     "posted": 1,
-    "mult": 0.67
+    "mult": null
    },
    "anniv": {
     "drafts": 8,
-    "posted": 1,
+    "posted": 2,
     "mult": 1.08
    },
    "tickets": {
@@ -2170,8 +2190,8 @@
     "mult": 0.78
    },
    "meet": {
-    "drafts": 4,
-    "posted": 0,
+    "drafts": 3,
+    "posted": 1,
     "mult": null
    },
    "intro": {
@@ -2180,7 +2200,7 @@
     "mult": 0.78
    },
    "listen": {
-    "drafts": 1,
+    "drafts": 2,
     "posted": 0,
     "mult": null
    }
@@ -2198,58 +2218,6 @@
   ],
   "recent": [
    {
-    "day": "2026-10-26",
-    "lane": "정보",
-    "who": "아일릿",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "8f04db64",
-    "posted": "De9SJs-vPgS",
-    "head": "\"말했지 습관성 친절은 범죄야.\"",
-    "url": "https://www.instagram.com/reel/De9SJs-vPgS/",
-    "mult": 2.54
-   },
-   {
-    "day": "2026-10-26",
-    "lane": "정보",
-    "who": "Soulja Boy",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "071fe00c",
-    "posted": "De9Sh7ymVN4",
-    "head": "솔자 보이가 'SOULJA BOY 2028'이라는 문구를 내걸었습니다.",
-    "url": "https://www.instagram.com/p/De9Sh7ymVN4/",
-    "mult": 0.66
-   },
-   {
-    "day": "2026-10-26",
-    "lane": "정보",
-    "who": "영 떡",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "1620ffef",
-    "posted": "De9XVAMGaRK",
-    "head": "영 떡(Young Thug)의 YSL 재판이 넷플릭스 다큐멘터리로 만들어지는 것으로 알려졌",
-    "url": "https://www.instagram.com/p/De9XVAMGaRK/",
-    "mult": 0.74
-   },
-   {
-    "day": "2026-10-27",
-    "lane": "정보",
-    "who": "돈 톨리버",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "4e0fe185",
-    "posted": "De_J3XFFJgj",
-    "head": "돈 톨리버가 제69회 그래미(@grammys) 어워즈 최우수 신인 아티스트 부문에 출품한 ",
-    "url": "https://www.instagram.com/p/De_J3XFFJgj/",
-    "mult": 0.56
-   },
-   {
     "day": "2026-10-27",
     "lane": "정보",
     "who": "누자베스",
@@ -2261,6 +2229,19 @@
     "head": "누자베스의 레이블 하이드아웃 프로덕션이 꾸린 라이브 프로젝트 '누자베스 메타포리컬 앙상블'",
     "url": "https://www.instagram.com/p/De_E7vVGRfr/",
     "mult": 0.79
+   },
+   {
+    "day": "2026-10-27",
+    "lane": "정보",
+    "who": "스윙스",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "cee2e20a",
+    "posted": "DfBcPzQmdTx",
+    "head": "스윙스(@itsjustswings)가 첫 영화로 청룡영화상 신인남우상 후보에 올랐습니다.",
+    "url": "https://www.instagram.com/p/DfBcPzQmdTx/",
+    "mult": 0.67
    },
    {
     "day": "2026-10-27",
@@ -2299,6 +2280,45 @@
     "posted": "DfEVs9EFKvw",
     "head": "지코(@woozico0914)가 일본 연말 페스티벌 '카운트다운 재팬 26/27' 무대에 ",
     "url": "https://www.instagram.com/p/DfEVs9EFKvw/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-29",
+    "lane": "정보",
+    "who": "뉴진스",
+    "repack": false,
+    "grade": "A",
+    "corner": "anniv",
+    "key": "18a9fe77",
+    "posted": "DfEzjQslCL5",
+    "head": "뉴진스(@newjeans_official) 'ETA' 뮤직비디오 감독판 소송에서 2심도 어",
+    "url": "https://www.instagram.com/p/DfEzjQslCL5/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-29",
+    "lane": "정보",
+    "who": "버벌진트",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "839df4ad",
+    "posted": "DfEyVAklGvz",
+    "head": "버벌진트(@freevjfreevj)가 14년 전 앨범 속 얼굴들을 다시 찾고 있습니다.",
+    "url": "https://www.instagram.com/p/DfEyVAklGvz/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-29",
+    "lane": "정보",
+    "who": "패닉",
+    "repack": false,
+    "grade": "A",
+    "corner": "meet",
+    "key": "78152e66",
+    "posted": "DfEyrTuFEbH",
+    "head": "패닉이 '2026 MAMA AWARDS'에서 후배들과 한 무대를 꾸밉니다.",
+    "url": "https://www.instagram.com/p/DfEyrTuFEbH/",
     "mult": null
    }
   ]
