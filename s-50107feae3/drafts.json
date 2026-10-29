@@ -152,13 +152,13 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg"
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "씬 안쪽의 연결 — 쇼미12 우승자가 같은 시즌 떨어진 14세 래퍼 작업실을 직접 찾음 · 김하온 기사 급상승 · 고등래퍼 결 국힙 도달",
-    "at": "2026-10-29T10:04+09:00"
-   },
    "corner_name": "만나는 법",
-   "corner_no": 1
+   "corner_no": 1,
+   "pick": {
+    "rank": 3,
+    "why": "씬 안쪽의 연결 — 쇼미12 우승자가 같은 시즌 떨어진 14세 래퍼 작업실을 찾음 · 국힙 도달",
+    "at": "2026-10-29T16:21+09:00"
+   }
   },
   {
    "source": {
@@ -309,13 +309,13 @@
      }
     }
    },
+   "corner_name": "그 말",
+   "corner_no": 5,
    "pick": {
     "rank": 2,
-    "why": "릴스 9% — 바로 올릴 숏폼 · 로꼬 기사 12건 급상승 · 본인 채널이라 클립 위험 낮음",
-    "at": "2026-10-29T10:04+09:00"
-   },
-   "corner_name": "그 말",
-   "corner_no": 5
+    "why": "릴스 비중 9% — 본인 채널 원본이라 바로 올릴 수 있는 숏폼 · 로꼬 기사 급상승",
+    "at": "2026-10-29T16:21+09:00"
+   }
   },
   {
    "source": {
@@ -583,11 +583,6 @@
      "at": "2026-10-29T10:13+09:00",
      "file": "KeuLeoSwi_YeopESeo_PpiGeuDeog_BuLeun_Mi_ONeulUi_NoLae_no_lyrics__cta.mp4"
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "의외의 만남 칸 1순위 · 레이·미나미 이름이 붙은 장면 · 2019 '술이 달다'와 이어지는 연결",
-    "at": "2026-10-29T10:04+09:00"
    },
    "corner_name": "만나는 법",
    "corner_no": 2
@@ -1217,6 +1212,503 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:a2o-neon-why",
+    "account": "경향신문",
+    "url": "https://www.khan.co.kr/article/202610290600101",
+    "image": null,
+    "head": "칼군무·당당함, 다시 만난 쾌감 — A2O 라이트 '니온' 돌풍의 이유",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-29T16:21+09:00",
+   "key": "e64d954e",
+   "by": "claude",
+   "subjects": [
+    "A2O LITE",
+    "이수만"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "S",
+    "kind": "정보",
+    "angle": "인물해부 — 이수만의 'NEON'은 왜 통했나: 3년 경업 금지 뒤의 복귀 · 29시간 · '미혼 앤 비혼' · 3분 28초의 옛 공식",
+    "why": "계정 건강 목표(인물해부 5%) · 프로필 급상승(5일 +166,238명) · 경향 분석 기사 10/29 · 규효 10/17 '이수만의 녹슬지 않은 감' 결"
+   },
+   "added": "claude",
+   "added_at": "2026-10-29T16:21+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\nA2O LITE(@a2o.lite)의 'NEON'은 요즘 걸그룹 곡과 반대로 갑니다.\n\n이수만이 SM을 떠나 세운 A2O엔터테인먼트의 걸그룹 A2O LITE는 지난 13일 데뷔곡 'NEON'을 냈는데요, 3분 28초의 긴 곡에 댄스 브레이크, 맞춘 의상과 칼군무까지 자연스러움이 대세인 요즘과는 다른 길을 골랐습니다.\n\n그 곡이 약 29시간 만에 멜론 TOP100 1위에 올랐습니다. 도입부 'Neon and beyond'는 들리는 대로 '미혼 앤 비혼'이라는 별명이 붙어 챌린지와 AI 영상으로 번졌고, 공식 인스타그램 팔로워는 최근 5일 사이 16만 명 넘게 늘었습니다(PLOT 집계).\n\n경업 금지가 풀린 뒤, 이수만은 SM 시절의 공식으로 돌아왔고 그게 지금 통하고 있습니다.\n\n#PLOT #A2OLITE #이수만 #니온 #유영진\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793258487/fpkdltmwkuej2dzt6qdi.jpg\n제목: 이수만의 'NEON'은|왜 통했나\n부제: A2O LITE 데뷔 2주\n출처: @a2o.lite\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518431/urujzoevdmiofqedghng.jpg\n소제목: 3년 만의 국내\n본문: 2023년 SM 지분을 하이브에 넘기며 국내 활동을 멈췄던 이수만이, 경업 금지가 풀린 뒤 내놓은 아홉 명의 걸그룹입니다. 데뷔곡 프로듀서는 SM 시절부터 함께한 유영진.\n출처: @a2o.lite\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518443/zvbpzwonjbdyc2zbmbgn.jpg\n소제목: 29시간\n본문: 10월 13일 저녁 공개된 'NEON'은 약 29시간 만에 멜론 TOP100 1위에 올랐습니다. 실물 앨범 없이 데뷔 일주일 만에 음악방송 1위도 했습니다.\n출처: @a2o.lite\n\n[슬라이드]\n형식: 자료\n말한이: \n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793258491/svlg2ngcllhdgwikuxpj.jpg\n소제목: \n본문: \n출처: A2O WORLD\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518456/zkc3m0glwpen5ytb5x06.jpg\n소제목: '미혼 앤 비혼'\n본문: 도입부 'Neon and beyond'는 들리는 대로 '미혼 앤 비혼'이 됐습니다. 이 소절은 챌린지와 AI 합성 영상으로 번졌고, 이수만·유영진이 'NEON'을 추는 AI 영상까지 나왔습니다.\n출처: @a2o.lite\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518465/lxl535yoa4mllvkjjy0c.jpg\n소제목: 3분 28초\n본문: 요즘 곡보다 긴 3분 28초에 댄스 브레이크를 넣고, 의상을 맞추고, 칼군무로 밀어붙였습니다. 자연스러움이 대세인 요즘 걸그룹과는 반대쪽입니다.\n출처: @a2o.lite\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792518468/b05e7rrxarao8gwisael.jpg\n소제목: 지금\n본문: 공식 인스타그램 팔로워는 최근 5일 사이 16만 명 넘게 늘었습니다(PLOT 집계). SM 시절의 공식으로 돌아간 이수만의 수가 지금 먹히고 있는 셈입니다.\n출처: @a2o.lite\n",
+    "caption": "A2O LITE(@a2o.lite)의 'NEON'은 요즘 걸그룹 곡과 반대로 갑니다.\n\n이수만이 SM을 떠나 세운 A2O엔터테인먼트의 걸그룹 A2O LITE는 지난 13일 데뷔곡 'NEON'을 냈는데요, 3분 28초의 긴 곡에 댄스 브레이크, 맞춘 의상과 칼군무까지 자연스러움이 대세인 요즘과는 다른 길을 골랐습니다.\n\n그 곡이 약 29시간 만에 멜론 TOP100 1위에 올랐습니다. 도입부 'Neon and beyond'는 들리는 대로 '미혼 앤 비혼'이라는 별명이 붙어 챌린지와 AI 영상으로 번졌고, 공식 인스타그램 팔로워는 최근 5일 사이 16만 명 넘게 늘었습니다(PLOT 집계).\n\n경업 금지가 풀린 뒤, 이수만은 SM 시절의 공식으로 돌아왔고 그게 지금 통하고 있습니다.\n\n#PLOT #A2OLITE #이수만 #니온 #유영진",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258487/fpkdltmwkuej2dzt6qdi.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518447/yhyjgh0irtm3dl1tjetb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518525/zcm4hujobuzchq8jimnv.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/854336780_17901261090606064_8346495670392944879_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TR1NAuYX7ScQ7kNvwGXL4MD&_nc_oc=AdpUb_DckkjzRnuxZuKcdfhX_t2bluzkCe1w9WlIfaxDCv9b8SbqM5t96XEZnYSf7no&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOqb01w6IJAhBxxUX2zGnmi3Hgly47bxZqvxlveGMSt4w&oe=6ADD686C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518530/veobneuw0p9mfyuexuk9.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858263507_17901261108606064_6094741043989987274_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aqwOiwV9DB8Q7kNvwFRzEDd&_nc_oc=AdpUiASDV_y1C6EXMywl4ORk4Owh1MVUN9g2NIVug1QkNQFMaNOTp6zbdaLufUPsqxc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPmwdfAnoBkb1HoKO20P0Xe2hnhCRL7crBKSJI2Ffru4w&oe=6ADD8EC8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518486/wfjozqr1jkp9mi31luh6.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851100133_17901261534606064_7501794366053442859_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xvFLB9NvL7YQ7kNvwHC999k&_nc_oc=AdpzvIQdJMY-rL3g93MVxlJ6h-tQkzQSaC0H3IlaPNfL9xxhiaGjQ22G4w9klYJkV5U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPsz0FPJFdL5i3ETRlLrDQpADIA2xTfQU5nuIRK4lCajQ&oe=6ADD7516"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518490/rgnpbioiyiwfamdpdrco.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855484948_17901261546606064_6576593819561480943_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=mbRPOiUif0MQ7kNvwG5EC-Q&_nc_oc=AdrVXC2VYIRc9Qw7_boqcPX3REnaJxFQOXOUfvbyvWzTgWtd3gsNf1dYiJWg-pRB6OE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQP_r3jkV5Ut0J1rq3t-1_GkRoXp_6_Bm0XQXTP6dyqSoA&oe=6ADD933D"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518504/ea6tsasjw5g45q8rvgy4.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/854567661_17901261447606064_7287991276376817848_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1_GbmZjkXx8Q7kNvwFyiTxJ&_nc_oc=Adr6J7PlOtxkrPjtZCImB7ohRbler1iPn0LdjEVujLzQ5GZIjQJAWndg-DcP9VyDiw0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQNHWv4Yj1VeNs1lfxdhUZIU-prPZnyR34qnGc3O3PRWvA&oe=6ADD94C3"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518512/xj6i7dzzsnxbvglnrfei.jpg",
+      "credit": "@a2o.lite",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855410368_17901261291606064_6837384772346098241_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WWNJObbgXu8Q7kNvwH7hXiR&_nc_oc=AdqRxg-hNH-HQIa7g1Jsabln1fq5uLMkUyuAFjPZd0Plf3cvyOZRTMdd1wlSupMXEdY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMkxunaEfu0VSnIwAcGlDoHZOlsVdG4LK6QkFyFTH_0Lg&oe=6ADD6DC2"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518431/urujzoevdmiofqedghng.jpg",
+      "credit": "@a2o.lite",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851100124_17901262941606064_8716296611729431047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=lKVL5CKwygsQ7kNvwEUqZA3&_nc_oc=AdrJF8J7ER09x2VHcvN079dWeSmCtVD8azGx7MVee21LqApg3zeop3aHeu8R8214BKM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOfzsWXdzbbZBbn-0TRygIsJ0pWG3gXCQs5_dVyN2wTmA&oe=6ADD656B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518435/adxs7pifjjbai8ep1wjk.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856360456_17901262956606064_7345343935254938237_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0fVak-0AfegQ7kNvwEEMobC&_nc_oc=Adq2tB7f4J0Nvz3LhI_CxeFuUlehzakMnjz_gJdFyX8dpnji0yezm1LWymHWs-DAOGo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPh9JDeknDhAjonkxkAAHK4vUrdUuDkfilLHsCd2SjW3w&oe=6ADD7E8E"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518439/dkj2ijyqm8bnnfstsj6m.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855061688_17901262977606064_2128578645527949689_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Wyon_aTsDtIQ7kNvwH1XjcD&_nc_oc=AdrKsBQsv85ha6qSW6eRJiR3yHQqRQaf7Swgb3p7iE3ltZRwjtvv7YIsXB5IyRpCs-Q&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMPdqhagIQ-PZ3XdXFD8EExqAJbW5IGrGjOE2shrn3Y7g&oe=6ADD9787"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258487/fpkdltmwkuej2dzt6qdi.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518447/yhyjgh0irtm3dl1tjetb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518525/zcm4hujobuzchq8jimnv.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/854336780_17901261090606064_8346495670392944879_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TR1NAuYX7ScQ7kNvwGXL4MD&_nc_oc=AdpUb_DckkjzRnuxZuKcdfhX_t2bluzkCe1w9WlIfaxDCv9b8SbqM5t96XEZnYSf7no&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOqb01w6IJAhBxxUX2zGnmi3Hgly47bxZqvxlveGMSt4w&oe=6ADD686C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518530/veobneuw0p9mfyuexuk9.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858263507_17901261108606064_6094741043989987274_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aqwOiwV9DB8Q7kNvwFRzEDd&_nc_oc=AdpUiASDV_y1C6EXMywl4ORk4Owh1MVUN9g2NIVug1QkNQFMaNOTp6zbdaLufUPsqxc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPmwdfAnoBkb1HoKO20P0Xe2hnhCRL7crBKSJI2Ffru4w&oe=6ADD8EC8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518486/wfjozqr1jkp9mi31luh6.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851100133_17901261534606064_7501794366053442859_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xvFLB9NvL7YQ7kNvwHC999k&_nc_oc=AdpzvIQdJMY-rL3g93MVxlJ6h-tQkzQSaC0H3IlaPNfL9xxhiaGjQ22G4w9klYJkV5U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPsz0FPJFdL5i3ETRlLrDQpADIA2xTfQU5nuIRK4lCajQ&oe=6ADD7516"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518490/rgnpbioiyiwfamdpdrco.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855484948_17901261546606064_6576593819561480943_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=mbRPOiUif0MQ7kNvwG5EC-Q&_nc_oc=AdrVXC2VYIRc9Qw7_boqcPX3REnaJxFQOXOUfvbyvWzTgWtd3gsNf1dYiJWg-pRB6OE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQP_r3jkV5Ut0J1rq3t-1_GkRoXp_6_Bm0XQXTP6dyqSoA&oe=6ADD933D"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518504/ea6tsasjw5g45q8rvgy4.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/854567661_17901261447606064_7287991276376817848_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1_GbmZjkXx8Q7kNvwFyiTxJ&_nc_oc=Adr6J7PlOtxkrPjtZCImB7ohRbler1iPn0LdjEVujLzQ5GZIjQJAWndg-DcP9VyDiw0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQNHWv4Yj1VeNs1lfxdhUZIU-prPZnyR34qnGc3O3PRWvA&oe=6ADD94C3"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518512/xj6i7dzzsnxbvglnrfei.jpg",
+      "credit": "@a2o.lite",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855410368_17901261291606064_6837384772346098241_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=WWNJObbgXu8Q7kNvwH7hXiR&_nc_oc=AdqRxg-hNH-HQIa7g1Jsabln1fq5uLMkUyuAFjPZd0Plf3cvyOZRTMdd1wlSupMXEdY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMkxunaEfu0VSnIwAcGlDoHZOlsVdG4LK6QkFyFTH_0Lg&oe=6ADD6DC2"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518431/urujzoevdmiofqedghng.jpg",
+      "credit": "@a2o.lite",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851100124_17901262941606064_8716296611729431047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=lKVL5CKwygsQ7kNvwEUqZA3&_nc_oc=AdrJF8J7ER09x2VHcvN079dWeSmCtVD8azGx7MVee21LqApg3zeop3aHeu8R8214BKM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQOfzsWXdzbbZBbn-0TRygIsJ0pWG3gXCQs5_dVyN2wTmA&oe=6ADD656B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518435/adxs7pifjjbai8ep1wjk.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856360456_17901262956606064_7345343935254938237_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0fVak-0AfegQ7kNvwEEMobC&_nc_oc=Adq2tB7f4J0Nvz3LhI_CxeFuUlehzakMnjz_gJdFyX8dpnji0yezm1LWymHWs-DAOGo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQPh9JDeknDhAjonkxkAAHK4vUrdUuDkfilLHsCd2SjW3w&oe=6ADD7E8E"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518439/dkj2ijyqm8bnnfstsj6m.jpg",
+      "credit": "@a2o.lite",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855061688_17901262977606064_2128578645527949689_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Wyon_aTsDtIQ7kNvwH1XjcD&_nc_oc=AdrKsBQsv85ha6qSW6eRJiR3yHQqRQaf7Swgb3p7iE3ltZRwjtvv7YIsXB5IyRpCs-Q&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=LMApE0epJNUNnseEX1GPnw&oh=00_AQMPdqhagIQ-PZ3XdXFD8EExqAJbW5IGrGjOE2shrn3Y7g&oe=6ADD9787"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "이수만의 'NEON'은|왜 통했나",
+      "sub": "A2O LITE 데뷔 2주"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "팔로워 +16만은 PLOT 프로필 추적 집계(5일 새 +166,238명) — 캡션에 'PLOT 집계'로 밝힘 · 멤버 평균 14.9세라 아이찡 부모 논란·AI 얼굴 논란은 넣지 않음"
+    ],
+    "research": [
+     {
+      "title": "경향신문 10/29 — 9명 · 13일 데뷔 · 29시간 멜론 1위 · 실물 앨범 없이 7일 만에 음방 1위 · '미혼 앤 비혼' · 3분 28초 댄스 브레이크 · 2023 하이브 지분 매각·경업 금지",
+      "link": "https://www.khan.co.kr/article/202610290600101"
+     },
+     {
+      "title": "코리아중앙데일리 10/15 — 9명 · 약 29시간 멜론 TOP100 1위 · 2023년 2월 지분 매각 3년 경업 금지 만료 · 3분 28초 · 칼군무·맞춘 의상·댄스 브레이크 · 유영진 프로듀싱",
+      "link": "https://www.koreajoongangdaily.com/entertainment/lee-soomans-a2o-lite-tops-melon/12921658"
+     },
+     {
+      "title": "노컷뉴스 — 13일 저녁 음원 발매 · '미혼 앤드 비혼' 밈 · 이수만·유영진 등장 AI 댄스 챌린지",
+      "link": "https://nocutnews.co.kr/news/6592889"
+     },
+     {
+      "title": "뉴스핌 10/28 — 'NEON' 뮤비에 얼굴을 넣는 AI 영상 놀이 (인스타·유튜브 쇼츠)",
+      "link": "https://www.newspim.com/news/view/20261027001255"
+     },
+     {
+      "title": "A2O WORLD 공식 MV — 0:00 'Neon and beyond' (자막)",
+      "link": "https://www.youtube.com/watch?v=D968qfUZMUE"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258502/s3wfxpk6odijdcwezke1.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258502/bvfoj0xd1xoctmbclvr5.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258502/ekhxq3fst1fi0od1rvwx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258502/qshbou1npjmeyg4dddg0.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258503/k1qkefjskyznbcf3kzde.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258504/bhsrqiylfr3s1evtzipe.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258504/ttctaxrbmirdr9gw5qgz.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258504/kcwoeuvbx582snpzd89z.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258502/s3wfxpk6odijdcwezke1.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-29T16:21+09:00",
+     "v": {
+      "A": "a3779e14"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=D968qfUZMUE\n구간: 0:00-0:28\n곡: A2O LITE의 첫 소절\n아티스트: '미혼 앤 비혼'으로 들린\n피처링:\n후킹: \n출처: A2O WORLD\n자막: 자동",
+    "caption": "A2O LITE(@a2o.lite) 'NEON'의 첫 소절은 '미혼 앤 비혼'으로 들립니다.\n\n원래 가사는 'Neon and beyond'인데요, 들리는 대로 붙은 이 별명이 챌린지와 AI 합성 영상으로 번지며 곡을 먼저 알렸습니다.\n\n이수만이 세운 A2O엔터테인먼트의 걸그룹 A2O LITE는 지난 13일 이 곡으로 데뷔해 약 29시간 만에 멜론 TOP100 1위에 올랐습니다.\n\n#PLOT #A2OLITE #NEON #이수만 #니온",
+    "hooks": {
+     "A": "'미혼 앤 비혼'으로 들린 / A2O LITE의 첫 소절",
+     "B": "들리는 대로 밈이 된 / 'NEON'의 첫 소절",
+     "C": "이수만이 다시 만든 / 걸그룹의 첫 소절"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=D968qfUZMUE",
+     "credit": "A2O WORLD",
+     "range": [
+      0.0,
+      28.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "팔로워 +16만은 PLOT 프로필 추적 집계(5일 새 +166,238명) — 캡션에 'PLOT 집계'로 밝힘 · 멤버 평균 14.9세라 아이찡 부모 논란·AI 얼굴 논란은 넣지 않음"
+    ],
+    "research": [
+     {
+      "title": "경향신문 10/29 — 9명 · 13일 데뷔 · 29시간 멜론 1위 · 실물 앨범 없이 7일 만에 음방 1위 · '미혼 앤 비혼' · 3분 28초 댄스 브레이크 · 2023 하이브 지분 매각·경업 금지",
+      "link": "https://www.khan.co.kr/article/202610290600101"
+     },
+     {
+      "title": "코리아중앙데일리 10/15 — 9명 · 약 29시간 멜론 TOP100 1위 · 2023년 2월 지분 매각 3년 경업 금지 만료 · 3분 28초 · 칼군무·맞춘 의상·댄스 브레이크 · 유영진 프로듀싱",
+      "link": "https://www.koreajoongangdaily.com/entertainment/lee-soomans-a2o-lite-tops-melon/12921658"
+     },
+     {
+      "title": "노컷뉴스 — 13일 저녁 음원 발매 · '미혼 앤드 비혼' 밈 · 이수만·유영진 등장 AI 댄스 챌린지",
+      "link": "https://nocutnews.co.kr/news/6592889"
+     },
+     {
+      "title": "뉴스핌 10/28 — 'NEON' 뮤비에 얼굴을 넣는 AI 영상 놀이 (인스타·유튜브 쇼츠)",
+      "link": "https://www.newspim.com/news/view/20261027001255"
+     },
+     {
+      "title": "A2O WORLD 공식 MV — 0:00 'Neon and beyond' (자막)",
+      "link": "https://www.youtube.com/watch?v=D968qfUZMUE"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/D968qfUZMUE/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258508/q1umk6r5x80fgtem2knk.jpg",
+     "key": "D968qfUZMUE@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-29T16:22+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "이번 회차 목표 '인물해부' · 팔로워 5일 +16만(PLOT 집계) 지금 가장 뜨거운 신인 · 케이팝은 도달 대비 팔로우가 높다",
+    "at": "2026-10-29T16:21+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:panic-mama-juniors",
+    "account": "마이데일리",
+    "url": "https://www.mydaily.co.kr/page/view/2026102911250929213",
+    "image": null,
+    "head": "'2026 마마' 측 '패닉, 코르티스·우즈·제베원·올데프·하투하와 컬래버 무대'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-29T16:21+09:00",
+   "key": "78152e66",
+   "by": "claude",
+   "subjects": [
+    "패닉",
+    "이적",
+    "김진표"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "데뷔 31년 패닉이 MAMA에서 코르티스 마틴·성현, 우즈, 김태래, 우찬, 유하와 한 무대 — 4월엔 이적이 김진표를 무대로 불렀고, 이번엔 둘이 후배들을 부른다",
+    "why": "🍯 의외의 만남 칸 3위 · 오늘(29일) 미디어데이 공식 발표 · 세대를 넘는 만남"
+   },
+   "added": "claude",
+   "added_at": "2026-10-29T16:21+09:00",
+   "corner": "meet",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n패닉이 '2026 MAMA AWARDS'에서 후배들과 한 무대를 꾸밉니다.\n\n29일 열린 미디어데이에서 Mnet은 패닉을 깜짝 퍼포머로 공개했는데요, 코르티스(@cortis) 마틴과 성현, 우즈, 제로베이스원 김태래, 올데이 프로젝트 우찬, 하츠투하츠 유하가 함께 무대에 섭니다.\n\n패닉은 지난 4월 20년 만의 단독 공연 〈패닉 이즈 커밍〉으로 다시 모였습니다. 그때 김진표는 자신을 다시 무대로 불러 준 이적에게 고맙다고 했는데, 반년 뒤엔 데뷔 31주년을 맞은 두 사람이 한참 아래 후배들과 한 무대에 서게 됐습니다.\n\n'2026 MAMA AWARDS'는 11월 20일과 21일 일본 교세라 돔 오사카에서 열립니다.\n\n#PLOT #패닉 #이적 #김진표 #MAMA\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793258494/xwqvizehyvyblhare8oj.jpg\n제목: 패닉, MAMA에서|후배들과 한 무대\n부제: 마틴·성현 · 우즈 · 김태래 · 우찬 · 유하\n출처: 경향신문\n",
+    "caption": "패닉이 '2026 MAMA AWARDS'에서 후배들과 한 무대를 꾸밉니다.\n\n29일 열린 미디어데이에서 Mnet은 패닉을 깜짝 퍼포머로 공개했는데요, 코르티스(@cortis) 마틴과 성현, 우즈, 제로베이스원 김태래, 올데이 프로젝트 우찬, 하츠투하츠 유하가 함께 무대에 섭니다.\n\n패닉은 지난 4월 20년 만의 단독 공연 〈패닉 이즈 커밍〉으로 다시 모였습니다. 그때 김진표는 자신을 다시 무대로 불러 준 이적에게 고맙다고 했는데, 반년 뒤엔 데뷔 31주년을 맞은 두 사람이 한참 아래 후배들과 한 무대에 서게 됐습니다.\n\n'2026 MAMA AWARDS'는 11월 20일과 21일 일본 교세라 돔 오사카에서 열립니다.\n\n#PLOT #패닉 #이적 #김진표 #MAMA",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258494/xwqvizehyvyblhare8oj.jpg",
+      "credit": "경향신문",
+      "from": "https://img.khan.co.kr/news/2026/04/19/news-p.v1.20260419.a2f6b3884b75458c9600e818ded58e39_P1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258494/xwqvizehyvyblhare8oj.jpg",
+      "credit": "경향신문",
+      "from": "https://img.khan.co.kr/news/2026/04/19/news-p.v1.20260419.a2f6b3884b75458c9600e818ded58e39_P1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "패닉, MAMA에서|후배들과 한 무대",
+      "sub": "마틴·성현 · 우즈 · 김태래 · 우찬 · 유하"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "패닉 무대가 20·21일 중 어느 날인지 기사에 없음 — 그래서 날짜는 시상식 이틀로만 씀 · 표지 사진이 4월 공연의 패닉(이적·김진표)인지 볼 것"
+    ],
+    "research": [
+     {
+      "title": "마이데일리 10/29 — 윤신혜 사업부장 '코르티스 마틴·성현, 우즈, 제로베이스원 김태래, 올데이 프로젝트 우찬, 하츠투하츠 유하와 컬래버' · '세대를 초월한 컬래버 무대' · 11/20~21 교세라 돔 오사카",
+      "link": "https://www.mydaily.co.kr/page/view/2026102911250929213"
+     },
+     {
+      "title": "세계일보 10/29 — 데뷔 31주년 · '지난 4월 20년 만에 연 단독 콘서트가 빠르게 매진'",
+      "link": "https://www.segye.com/newsView/20261029512679"
+     },
+     {
+      "title": "뉴스1 10/29 — 패닉, '2026 마마' 무대 오른다",
+      "link": "https://www.news1.kr/entertain/music/6336170"
+     },
+     {
+      "title": "경향신문 2026-04-19 — 〈패닉 이즈 커밍〉 4/16~19 LG아트센터 · 2006 이후 20년 · 김진표 '적이 형이 저를 다시 이렇게 무대 위로 불러 세워줘서 고맙다'",
+      "link": "https://www.khan.co.kr/article/202604192100001"
+     },
+     {
+      "title": "뉴시스 2026-04-19 — 김진표, 자신을 다시 무대로 이끈 이적에게 감사",
+      "link": "https://www.newsis.com/view/NISX20260419_0003596793"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258511/jpprzfjdl6prutnwmjdk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258511/m01d7zyikr8n0daddhp0.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258511/jpprzfjdl6prutnwmjdk.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-29T16:21+09:00",
+     "v": {
+      "A": "3966aceb"
+     }
+    }
+   },
+   "corner_name": "만나는 법",
+   "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:newjeans-eta-appeal",
+    "account": "스타뉴스",
+    "url": "https://www.starnewskorea.com/music/2026/10/29/2026102914514666710",
+    "image": null,
+    "head": "'뉴진스 MV 무단 게시' 돌고래유괴단, 어도어에 또 패소",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-29T16:21+09:00",
+   "key": "5eb8e20a",
+   "by": "claude",
+   "subjects": [
+    "뉴진스",
+    "신우석"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "뉴진스 'ETA' 감독판 소송 2심도 어도어 승소 — 민희진 '구두 동의' 증언에도 서면 동의가 없었다는 판단 · 기사형 표지 한 장",
+    "why": "레이더 뉴진스 · 오늘(29일) 선고 · 기사 여러 곳"
+   },
+   "added": "claude",
+   "added_at": "2026-10-29T16:21+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n뉴진스(@newjeans_official) 'ETA' 뮤직비디오 감독판 소송에서 2심도 어도어의 손을 들어 줬습니다.\n\n서울고등법원은 29일 돌고래유괴단이 어도어에 10억 원을 배상하라는 1심 판단을 그대로 유지했는데요, 신우석 감독 개인에게 청구된 1억 원은 이번에도 받아들여지지 않았습니다.\n\n쟁점은 2024년 8월 돌고래유괴단 유튜브 채널에 올라온 감독판이었습니다. 신우석 감독 측은 민희진(@min.hee.jin) 전 대표와 미리 합의했다고 주장했고, 민 전 대표도 증인으로 나와 구두 동의가 있었다고 말했습니다. 재판부는 구두 동의가 있었다 하더라도 회사의 서면 동의 없이 영상을 올린 것은 계약 위반이라고 봤습니다.\n\n#PLOT #뉴진스 #ETA #돌고래유괴단 #어도어\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793258496/eeecnosahmkalvkin6wv.jpg\n제목: 뉴진스 'ETA' 감독판,|2심도 어도어 승소\n부제: 돌고래유괴단 10억 배상 유지\n출처: 스타뉴스\n",
+    "caption": "뉴진스(@newjeans_official) 'ETA' 뮤직비디오 감독판 소송에서 2심도 어도어의 손을 들어 줬습니다.\n\n서울고등법원은 29일 돌고래유괴단이 어도어에 10억 원을 배상하라는 1심 판단을 그대로 유지했는데요, 신우석 감독 개인에게 청구된 1억 원은 이번에도 받아들여지지 않았습니다.\n\n쟁점은 2024년 8월 돌고래유괴단 유튜브 채널에 올라온 감독판이었습니다. 신우석 감독 측은 민희진(@min.hee.jin) 전 대표와 미리 합의했다고 주장했고, 민 전 대표도 증인으로 나와 구두 동의가 있었다고 말했습니다. 재판부는 구두 동의가 있었다 하더라도 회사의 서면 동의 없이 영상을 올린 것은 계약 위반이라고 봤습니다.\n\n#PLOT #뉴진스 #ETA #돌고래유괴단 #어도어",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258496/eeecnosahmkalvkin6wv.jpg",
+      "credit": "스타뉴스",
+      "from": "https://image.starnewskorea.com/21/2026/10/2026102914514666710_1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258498/pgu3eddqnvkttfrsfidm.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202610/16261936_2071321_305_crop.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793227205/hbeqacvgsgtirll4qeui.jpg",
+      "credit": "@newjeans_official",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/870005297_18099604910704989_2787966695010959078_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=MpHVuJFw8ikQ7kNvwG2S1Zz&_nc_oc=Adolmq9wj3saWm2p7-VSaNHftrK7j2Br9oVvDTMhk00D6m6tC4Eke0yN8ivBSUJ4pFE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=oAi8i4zihgz4AgpJvdaBFg&oh=00_AQRNo3Cr7LXM14rfm_bfUUNkojsL7SsLasuLJlddbTf7eg&oe=6AE846FC"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914403/bxen7eicxkcqjmzjrwb2.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/111/27/145/11127145_20231213133532.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258496/eeecnosahmkalvkin6wv.jpg",
+      "credit": "스타뉴스",
+      "from": "https://image.starnewskorea.com/21/2026/10/2026102914514666710_1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258498/pgu3eddqnvkttfrsfidm.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202610/16261936_2071321_305_crop.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793227205/hbeqacvgsgtirll4qeui.jpg",
+      "credit": "@newjeans_official",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/870005297_18099604910704989_2787966695010959078_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=MpHVuJFw8ikQ7kNvwG2S1Zz&_nc_oc=Adolmq9wj3saWm2p7-VSaNHftrK7j2Br9oVvDTMhk00D6m6tC4Eke0yN8ivBSUJ4pFE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=oAi8i4zihgz4AgpJvdaBFg&oh=00_AQRNo3Cr7LXM14rfm_bfUUNkojsL7SsLasuLJlddbTf7eg&oe=6AE846FC"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914403/bxen7eicxkcqjmzjrwb2.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/111/27/145/11127145_20231213133532.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "뉴진스 'ETA' 감독판,|2심도 어도어 승소",
+      "sub": "돌고래유괴단 10억 배상 유지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지는 스타뉴스 기사 사진(뉴진스 네 명) — 아래에 STARNEWS 워터마크가 보임, 거슬리면 사진만 바꿀 것"
+    ],
+    "research": [
+     {
+      "title": "스타뉴스 10/29 — 서울고법 민사5-3부 오후 2시 · 양측 항소 기각 · 10억 · 신우석 개인 1억 제외 · 민희진 증인 구두 동의 진술 · 서면 동의 없음·애플 로고",
+      "link": "https://www.starnewskorea.com/music/2026/10/29/2026102914514666710"
+     },
+     {
+      "title": "톱스타뉴스 10/29 — 2심도 어도어 승소 · 2024년 8월 감독판 · 2024년 9월 소송",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16261936"
+     },
+     {
+      "title": "헤럴드경제 10/29 — 어도어 10억 받는다",
+      "link": "https://biz.heraldcorp.com/article/10919338"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258514/zcsiq5ohlrbzurvvvd8m.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258514/hhhflwyidnrub64wvsep.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258514/zcsiq5ohlrbzurvvvd8m.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-29T16:21+09:00",
+     "v": {
+      "A": "b79eb606"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1247,7 +1739,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 1,
-    "drafts": 2,
+    "drafts": 3,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
    {
@@ -1391,14 +1883,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-29T16:16+09:00"
+  "at": "2026-10-29T16:22+09:00"
  },
  "queue": {
-  "next": "2026-10-29T16:18+09:00",
+  "next": "2026-10-29T16:24+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-29T15:14+09:00"
