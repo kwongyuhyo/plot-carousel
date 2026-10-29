@@ -2164,11 +2164,6 @@
     }
    },
    "corner_name": "소식",
-   "scheduled": {
-    "at": "2026-10-29T20:20+09:00",
-    "cover": "A",
-    "queue": true
-   },
    "published": {
     "permalink": "https://www.instagram.com/p/DfE062vFDPl/",
     "cover": "A",
@@ -2181,122 +2176,117 @@
     "account": "@규효 요청 · 듣는다면",
     "url": "",
     "image": null,
-    "head": "끝을 알고 시작하는 사랑에서 나를 사랑하는 날까지, 사랑의 순서대로 듣는 인디 네 곡",
+    "head": "레이디버드에서 시작해 봄으로 끝나는 사랑의 순서, 잔나비·한로로 네 곡",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-10-29T19:41+09:00",
+   "made_at": "2026-10-29T20:26+09:00",
    "key": "170e597b",
    "by": "claude",
    "subjects": [
-    "한로로",
     "잔나비",
-    "검정치마"
+    "한로로"
    ],
    "lane": "재미",
    "editor": {
     "grade": "A",
     "kind": "재미",
-    "angle": "사랑의 처음(잔나비)부터 그다음, 나를 사랑하는 날(한로로)까지 — 인디 네 곡을 사랑의 순서대로",
-    "why": "규효 요청 '듣는다면' — 끝을 알고 시작하는 사랑부터 나를 사랑하게 될 날까지"
+    "angle": "사랑의 순서대로 듣는 네 곡 — 유명한 곡 대신 잔나비 소곡집 수록곡과 한로로 '애증'으로",
+    "why": "규효 수정 방향: 곡이 너무 유명하다, 덜 유명한 곡으로"
    },
    "added": "claude",
-   "added_at": "2026-10-29T19:41+09:00",
+   "added_at": "2026-10-29T20:26+09:00",
    "corner": "listen",
    "card": {
-    "form": "[카테고리]\nFeature\n\n[캡션]\n사랑의 처음부터 그다음까지, 인디 네 곡으로 따라가 봅니다.\n\n잔나비의 '주저하는 연인들을 위해'는 끝이 올 걸 알면서도 다시 사랑에 속아 주려는 마음을 그린 곡인데요, 검정치마(@holideez)의 'Everything'이 그 한가운데를, 브로콜리너마저(@band_broccoliyoutoo)의 '앵콜요청금지'가 끝난 자리를 지나고 나면 사랑은 한로로(@hanr0r0)의 '사랑하게 될 거야'에서 결국 나에게로 돌아옵니다.\n\n한로로가 스스로를 미워하던 시기에 쓴 곡이 이 순서의 마지막에 놓인 이유입니다.\n\n잔나비 – 주저하는 연인들을 위해\n검정치마 – Everything\n브로콜리너마저 – 앵콜요청금지\n한로로 – 사랑하게 될 거야\n\n#PLOT #잔나비 #검정치마 #브로콜리너마저 #한로로 #인디음악\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793270489/relp0knzdnyyprb861if.jpg\n제목: 끝을 알고 시작한 사랑부터|나를 사랑하게 될 날까지\n부제: 사랑의 순서대로 듣는 인디 네 곡\n출처: @hanr0r0\n\n[슬라이드]\n형식: 곡\n음원: 잔나비 - 주저하는 연인들을 위해\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793270499/avcpelsq2jda5ymdyxwh.jpg\n소제목: 끝을 알고 시작하는 사랑\n본문: 2019년 3월 정규 2집 [전설]의 타이틀곡입니다. 끝이 올 걸 알면서도 또 한 번 사랑에 속아 주려는 청춘을 그렸는데요, 설렘보다 최정훈의 씁쓸한 목소리가 먼저 들립니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 검정치마 - Everything\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793270500/lglxombmhjwfgkbagogc.jpg\n소제목: 한가운데의 사랑\n본문: 2016년 1월 싱글로 먼저 공개된 뒤 3집 [TEAM BABY]에 실렸습니다. 제목부터 'Everything'인 노래인데요, 사랑이 한창일 때의 마음이 이 자리에 놓입니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 브로콜리너마저 - 앵콜요청금지\n소스: \n소제목: 끝난 뒤에는 앙코르가 없다\n본문: 2007년 홈레코딩으로 만든 첫 EP [앵콜요청금지]의 동명 곡입니다. 별다른 홍보 없이 입소문만으로 퍼졌는데요, 끝난 무대에 앙코르를 청하지 말라는 제목이 이 순서의 이별을 맡습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 한로로 - 사랑하게 될 거야\n소스: \n소제목: 그다음, 나를 사랑하게 될 날\n본문: 2023년 8월 첫 EP [이상비행]의 수록곡입니다. 한로로가 스스로를 미워하고 음악을 계속할지 고민하던 시기에 직접 쓴 곡인데요, 타이틀곡이 아닌 수록곡인데도 한로로의 대표곡으로 꼽힙니다.\n출처: 멜론 · 소리 공식 MV\n",
-    "caption": "사랑의 처음부터 그다음까지, 인디 네 곡으로 따라가 봅니다.\n\n잔나비의 '주저하는 연인들을 위해'는 끝이 올 걸 알면서도 다시 사랑에 속아 주려는 마음을 그린 곡인데요, 검정치마(@holideez)의 'Everything'이 그 한가운데를, 브로콜리너마저(@band_broccoliyoutoo)의 '앵콜요청금지'가 끝난 자리를 지나고 나면 사랑은 한로로(@hanr0r0)의 '사랑하게 될 거야'에서 결국 나에게로 돌아옵니다.\n\n한로로가 스스로를 미워하던 시기에 쓴 곡이 이 순서의 마지막에 놓인 이유입니다.\n\n잔나비 – 주저하는 연인들을 위해\n검정치마 – Everything\n브로콜리너마저 – 앵콜요청금지\n한로로 – 사랑하게 될 거야\n\n#PLOT #잔나비 #검정치마 #브로콜리너마저 #한로로 #인디음악",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n사랑의 순서대로 듣는 네 곡, 이번에는 잔나비(@bandjannabi)의 소곡집과 한로로(@hanr0r0)의 싱글에서 골랐습니다.\n\n시작은 최정훈이 \"딱 제가 쓰고 싶었던 사랑 노래\"라고 부른 '레이디버드'인데요, 사랑과 미움이 함께 있는 한가운데는 한로로의 싱글 [애증]에 실린 '게임 오버 ?'가, 끝난 자리는 그리움을 내려놓는 '슬픔이여안녕'이 맡습니다.\n\n마지막은 봄을 사계절의 맨 끝에 둔 '여름가을겨울 봄.'입니다. 이 순서도 그 곡처럼 끝에서 봄을 만나도록 놓았습니다.\n\n잔나비 – 레이디버드\n한로로 – 게임 오버 ?\n잔나비 – 슬픔이여안녕\n잔나비 – 여름가을겨울 봄.\n\n#PLOT #잔나비 #한로로 #최정훈 #초록을거머쥔우리는 #인디음악\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273167/wuxtqngp7ahgekt1dawq.jpg\n제목: 레이디버드에서 봄까지,|사랑의 순서대로 네 곡\n부제: 잔나비 소곡집과 한로로 [애증]\n출처: @hanr0r0\n\n[슬라이드]\n형식: 곡\n음원: 잔나비 - 레이디버드\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273186/nekcxmwjnfnctdhfjco1.jpg\n소제목: 시작하는 사랑\n본문: 2022년 5월 10일 공개된 소곡집 [초록을거머쥔우리는]의 1번 트랙입니다. 악기를 많이 넣지 않고 처음 들었을 때 좋았던 편곡을 그대로 살린 곡인데요, 제목은 그레타 거윅의 영화 〈레이디 버드〉에서 따왔습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 한로로 - 게임 오버 ?\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273188/poedrlw2dzd9riragxqd.jpg\n소제목: 사랑과 미움 사이\n본문: 올해 4월 2일 발매한 디지털 싱글 [애증]에 실린 곡입니다. '애'를 담은 이 곡과 '증'을 담은 '1111'이 함께 실렸는데요, 한로로는 인터뷰에서 \"애증 자체가 우리 삶이다\"라고 말했습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 잔나비 - 슬픔이여안녕\n소스: https://i.ibb.co/wN4YDY2W/24ea08ef6ccf.jpg\n소제목: 끝난 뒤, 그리움을 내려놓기\n본문: 같은 소곡집의 마지막 트랙입니다. 3집의 마지막 곡 '컴백홈'과 이어지는 곡인데요, 최정훈은 과거를 그리워하는 걸 그만두고 앞을 보며 살고 싶다는 다짐이 담겼다고 설명했습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 잔나비 - 여름가을겨울 봄.\n소스: https://i.ibb.co/wN4YDY2W/24ea08ef6ccf.jpg\n소제목: 그리고, 봄\n본문: 같은 소곡집의 3번 트랙입니다. 보통 맨 앞에 놓이는 봄을 사계절의 마지막에 둔 곡인데요, 최정훈은 \"우리 모든 여정의 끝에 봄이 있었으면 좋겠다\"고 말했습니다.\n출처: 멜론 · 소리 공식 MV\n",
+    "caption": "사랑의 순서대로 듣는 네 곡, 이번에는 잔나비(@bandjannabi)의 소곡집과 한로로(@hanr0r0)의 싱글에서 골랐습니다.\n\n시작은 최정훈이 \"딱 제가 쓰고 싶었던 사랑 노래\"라고 부른 '레이디버드'인데요, 사랑과 미움이 함께 있는 한가운데는 한로로의 싱글 [애증]에 실린 '게임 오버 ?'가, 끝난 자리는 그리움을 내려놓는 '슬픔이여안녕'이 맡습니다.\n\n마지막은 봄을 사계절의 맨 끝에 둔 '여름가을겨울 봄.'입니다. 이 순서도 그 곡처럼 끝에서 봄을 만나도록 놓았습니다.\n\n잔나비 – 레이디버드\n한로로 – 게임 오버 ?\n잔나비 – 슬픔이여안녕\n잔나비 – 여름가을겨울 봄.\n\n#PLOT #잔나비 #한로로 #최정훈 #초록을거머쥔우리는 #인디음악",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270489/relp0knzdnyyprb861if.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273167/wuxtqngp7ahgekt1dawq.jpg",
       "credit": "@hanr0r0",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270492/lk8ipsoqyah6jyedgrxr.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273172/pyib5axypgsypcvd74tc.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/wN4YDY2W/24ea08ef6ccf.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273177/uacho7van6tfhqrkuuxp.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/ynLYS14J/eb2c7a5a4f4a.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273180/yopxnvep1yaghhtmqtuz.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792829771/nhf0wsaotrmrn6joqtbo.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273183/urbgxlczuobzlbk74wmx.jpg",
       "credit": "@hanr0r0",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270494/t4jlppzvtlllz65kgucy.jpg",
-      "credit": "@hanr0r0",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791905717/q15porxifxydbzwy5iys.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273184/sfewk6exmw8zjfdn0sek.jpg",
+      "credit": "@bandjannabi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270497/vl4elgddw2uhz8na7ebz.jpg",
-      "credit": "@hanr0r0",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792901410/hqqhiak5wmtkx377jpru.jpg",
+      "credit": "@bandjannabi",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/861814739_18650517304004950_8644378678715477242_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=gY8YU-5PibUQ7kNvwF9NRWs&_nc_oc=AdqbEKAxV3t9jcBu0qksTXMZTHwqVjKUPpz48D3IZ7dUef6DA3gEuCUl4hS5x-1-O8k&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ok8rAZC1mXxJGtiSz2WLkw&oh=00_AQNSofrDMYFXnHM0iyigQZfAXOKYSN732aPo8GmZBgFSCA&oe=6AE357C8"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747719071_18365482957300688_4984386217578665787_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=2mLhl0SBDZUQ7kNvwFuXW_R&_nc_oc=AdqNcHn1a3at2hAShyOEcLrY5Co5q-l0QX5d0nkWcKv-tuZQjLuM09k1b_TOJp80BKc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOTwDqFPT2Xw_8h2qtQ8_MEnjuRcES59Rli5KhpPM5CKg&oe=6ADD4C18"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg",
+      "credit": "@bandjannabi",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863101069_18649835107004950_3445643485234413709_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XSgRwPpj1nEQ7kNvwHedHq-&_nc_oc=AdoK-UJGYq3rbgM-MLCcstQ5OkQEKLjJpkklhymPtYxdcXWIs8d49AIEgoaJGMKa8es&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=wgm5z39ra0PaWTH3tOwvrQ&oh=00_AQN9VrlPjvsim39aICErfTGmPR5M0tJXlChQyxCeP1zCTw&oe=6AE0D3BD"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270489/relp0knzdnyyprb861if.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273167/wuxtqngp7ahgekt1dawq.jpg",
       "credit": "@hanr0r0",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270492/lk8ipsoqyah6jyedgrxr.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273172/pyib5axypgsypcvd74tc.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/wN4YDY2W/24ea08ef6ccf.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273177/uacho7van6tfhqrkuuxp.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/ynLYS14J/eb2c7a5a4f4a.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273180/yopxnvep1yaghhtmqtuz.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792829771/nhf0wsaotrmrn6joqtbo.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273183/urbgxlczuobzlbk74wmx.jpg",
       "credit": "@hanr0r0",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270494/t4jlppzvtlllz65kgucy.jpg",
-      "credit": "@hanr0r0",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791905717/q15porxifxydbzwy5iys.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273184/sfewk6exmw8zjfdn0sek.jpg",
+      "credit": "@bandjannabi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270497/vl4elgddw2uhz8na7ebz.jpg",
-      "credit": "@hanr0r0",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792901410/hqqhiak5wmtkx377jpru.jpg",
+      "credit": "@bandjannabi",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/861814739_18650517304004950_8644378678715477242_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=gY8YU-5PibUQ7kNvwF9NRWs&_nc_oc=AdqbEKAxV3t9jcBu0qksTXMZTHwqVjKUPpz48D3IZ7dUef6DA3gEuCUl4hS5x-1-O8k&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ok8rAZC1mXxJGtiSz2WLkw&oh=00_AQNSofrDMYFXnHM0iyigQZfAXOKYSN732aPo8GmZBgFSCA&oe=6AE357C8"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747719071_18365482957300688_4984386217578665787_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=2mLhl0SBDZUQ7kNvwFuXW_R&_nc_oc=AdqNcHn1a3at2hAShyOEcLrY5Co5q-l0QX5d0nkWcKv-tuZQjLuM09k1b_TOJp80BKc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOTwDqFPT2Xw_8h2qtQ8_MEnjuRcES59Rli5KhpPM5CKg&oe=6ADD4C18"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
-      "credit": "@hanr0r0",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792741479/ahnazw04b27pcz8dfnrf.jpg",
+      "credit": "@bandjannabi",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863101069_18649835107004950_3445643485234413709_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XSgRwPpj1nEQ7kNvwHedHq-&_nc_oc=AdoK-UJGYq3rbgM-MLCcstQ5OkQEKLjJpkklhymPtYxdcXWIs8d49AIEgoaJGMKa8es&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=wgm5z39ra0PaWTH3tOwvrQ&oh=00_AQN9VrlPjvsim39aICErfTGmPR5M0tJXlChQyxCeP1zCTw&oe=6AE0D3BD"
      }
     ],
     "shape": "맥락",
@@ -2304,74 +2294,76 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "끝을 알고 시작한 사랑부터|나를 사랑하게 될 날까지",
-      "sub": "사랑의 순서대로 듣는 인디 네 곡"
+      "title": "레이디버드에서 봄까지,|사랑의 순서대로 네 곡",
+      "sub": "잔나비 소곡집과 한로로 [애증]"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "잔나비에서 한로로까지|사랑을 순서대로 듣는다면",
-      "sub": "인디 네 곡"
+      "title": "시작은 레이디버드,|끝은 봄",
+      "sub": "사랑의 순서대로 듣는 네 곡"
      },
      {
       "key": "C",
       "hook": "다른 안",
-      "title": "사랑의 처음과 그다음을|인디로 듣는다면",
-      "sub": "잔나비 · 검정치마 · 브로콜리너마저 · 한로로"
+      "title": "사랑하고 미워하다|결국 봄에 닿는 네 곡",
+      "sub": "잔나비 · 한로로"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 미리보기에 4번째 곡 장(한로로 '사랑하게 될 거야')이 안 나옴 — 표지+3장만 렌더됨 (멜론 커버 200x200 해상도 미달 2건). 캡션이 이 곡으로 끝나니 장 확인·커버 보충 필요",
-     "한로로 '사랑하게 될 거야'를 스스로를 미워하던 시기에 썼다는 배경 — 스포츠경향 기사 설명 기준 (본인 직접 발언 원문은 못 찾음)"
+     "[검증] '애증'은 곡이 아니라 '게임 오버 ?'·'1111' 두 곡이 실린 싱글 이름이라(씨네21·검색), 2번 장을 '게임 오버 ?'로 바꿨습니다 — '1111'이 순서에 더 맞는지, 2번 장 커버가 맞게 잡혔는지 봐 주세요",
+     "[검증] 미리보기에 4번 장('여름가을겨울 봄.')이 안 보입니다 (01~04.jpg만 생성) — 앱에서 4번 장이 렌더됐는지 봐 주세요",
+     "세 곡이 같은 잔나비 소곡집 [초록을거머쥔우리는]에서 나왔습니다 — 한 앨범에 몰린 게 괜찮은지 봐 주세요",
+     "3·4번 장 커버는 멜론 자동 검색이 같은 제목의 드라마 OST를 잡아서, 소곡집 커버를 직접 넣었습니다 (1·3·4번 장 커버가 같음)"
     ],
     "research": [
      {
-      "title": "스포츠경향 — 한로로 '사랑하게 될 거야' 뮤비 1000만뷰 (2026.07.03)",
-      "link": "https://sports.khan.co.kr/article/202607031201003"
+      "title": "에스콰이어 — 잔나비 최정훈 인터뷰 (소곡집 초록을거머쥔우리는)",
+      "link": "https://www.esquirekorea.co.kr/article/66523"
      },
      {
-      "title": "iMBC연예 — 한로로 라디오스타 출연, '사랑하게 될 거야' 라이브 (2026.05.19)",
-      "link": "https://enews.imbc.com/News/ViewAmp/505463"
+      "title": "에스콰이어 — 잔나비 인터뷰 ('레이디버드' 사랑 노래)",
+      "link": "https://www.esquirekorea.co.kr/article/66520"
      },
      {
-      "title": "Wikipedia — Legend (Jannabi album)",
-      "link": "https://en.wikipedia.org/wiki/Legend_(Jannabi_album)"
+      "title": "iMBC연예 — 잔나비 소곡집 II 곡 설명",
+      "link": "https://enews.imbc.com/News/ViewAmp/347413"
      },
      {
-      "title": "스포츠경향 — 바다, 잔나비 '주저하는 연인들을 위해' 커버 (2020.03.09)",
-      "link": "https://sports.khan.co.kr/article/202003090929003"
+      "title": "더팩트 — 한로로 4월 2일 디지털 싱글 '애증'",
+      "link": "https://news.tf.co.kr/read/ogmeta/2308834.htm"
      },
      {
-      "title": "텐아시아 — 검정치마 신곡 'EVERYTHING' 29일 발표 (2016.01.27)",
-      "link": "https://www.tenasia.co.kr/article/2016012790954"
+      "title": "GQ Korea — 한로로 인터뷰 (애증)",
+      "link": "https://www.gqkorea.co.kr/?p=372159"
      },
      {
-      "title": "Wikipedia — Team Baby",
-      "link": "https://en.wikipedia.org/wiki/Team_Baby"
+      "title": "씨네21 — 한로로 인터뷰 (애증)",
+      "link": "https://cine21.com/news/view/?mag_id=109826"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270506/srq1afuxhkno2p1mqlds.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270506/jfdgldcbgj0y8eqorkf9.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270505/qqo6sn0w4w55iejg6nut.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270505/sdcuwhbz75bg39mta5zg.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270507/gvlvw7ylz7mbnzoyn3au.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270507/kxiai1ddgnj1xzbwyu8y.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273197/tz99qirbxgpduq4opmq2.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273197/q7nbagbye2b3kaudx8sg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273197/qxep5xf4njrwxe9mxauv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273197/des9whzvb04fuyyvyeka.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273198/ipjhqcmjee019rdg7lft.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273199/vzutgozosstd24btmijl.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270509/pcdqrkgxjminjlq7gjwe.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270509/axeylgnasz1fszk12m5t.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793270506/srq1afuxhkno2p1mqlds.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273201/evls1b4y3cpea8yjxzlx.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273201/wembgoslrqreotzfpb0c.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273197/tz99qirbxgpduq4opmq2.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-29T19:41+09:00",
+     "at": "2026-10-29T20:26+09:00",
      "v": {
-      "A": "2a6f4d2a",
-      "B": "d1f4b6e6",
-      "C": "0374a6dd"
+      "A": "900bab6c",
+      "B": "16d8224d",
+      "C": "7de32e4b"
      }
     }
    },
@@ -2555,11 +2547,11 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-29T19:47+09:00"
+  "at": "2026-10-29T20:26+09:00"
  },
  "queue": {
-  "next": "2026-10-29T21:20+09:00",
-  "n": 1,
+  "next": "2026-10-29T20:47+09:00",
+  "n": 0,
   "gap": 60,
   "last": "2026-10-29T19:47+09:00"
  },
