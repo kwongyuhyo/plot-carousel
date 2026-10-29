@@ -1199,9 +1199,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793254726/xt92muikcbqwrz6dbcjv.jpg",
      "key": "7cjnmtktcbI@56.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-29T15:18+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793254821/plot_studio/nwxpop3fudvendyowodd.mp4",
+     "at": "2026-10-29T15:20+09:00",
+     "file": "LoSeuKulE_NamAssDaMy_BeoBeolJinTeuNeun_By_ONeulUi_NoLae_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "소식"
@@ -1383,7 +1384,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-29T15:18+09:00"
+  "at": "2026-10-29T15:20+09:00"
  },
  "queue": {
   "next": "2026-10-29T16:14+09:00",
