@@ -3894,6 +3894,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       acts.push(['que', '대기열에 넣기', queueNote()]);
       var best = slotChips()[0];
       acts.push(['sch', '예약 발행', (best ? '추천 ' + best.at + ' (' + best.why + ')' : '시각을 골라 예약') + ' — 맥이 켜져 있으면 그 시각에 올립니다']);
+      var hasEv = /^형식:\s*자료\s*$/m.test(String((it.card || {}).form || ''));       // 자료 장 (10/29) — 원문 캡처를 글 없이 한 장
+      acts.push(['ev', hasEv ? '자료 장 다시 뜨기' : '자료 장 붙이기', '원문 영상 장면·게시물(없으면 기사 첫 화면)을 캡처해 글 없는 장으로 넣습니다 (1~2분 · 다시 그려 올림)']);
     }
     // 10/20 — 채택·버림은 카드 아래 '바로 올림 · 손보면 올림 · 안 올림' + 이유 칩 한 곳으로 (둘이 따로 있어 헷갈렸다)
     if (!DR_DAY && ['mag', 'claude'].indexOf((it.source || {}).kind || 'mag') >= 0) acts.push(['rd', '다시 쓰기', '작성기가 이 초안을 처음부터 다시 씁니다 (3~5분)']);
@@ -3907,6 +3909,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function runItemAct(it, a) {
     if (a === 'pub') { openPublish(it); return true; }
     if (a === 'sch') { openSchedule(it); return true; }
+    if (a === 'ev') { plotAction('ev-' + it.key, '자료 장 붙이기'); return true; }
     if (a === 'que') { openPublish(it, '', true); return true; }
     if (a === 'ok') { plotAction('ok-' + it.key, '채택'); return true; }
     if (a === 'rd') { plotAction('rd-' + it.key, '다시 쓰기'); return true; }
@@ -4259,9 +4262,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.29 13:13';
+    a.title = '판 10.29 13:24';
     var ver = document.createElement('span');
-    ver.textContent = '10.29 13:13';
+    ver.textContent = '10.29 13:24';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
