@@ -153,7 +153,7 @@
     }
    },
    "corner_name": "만나는 법",
-   "corner_no": 1,
+   "corner_no": 2,
    "pick": {
     "rank": 3,
     "why": "씬 안쪽의 연결 — 쇼미12 우승자가 같은 시즌 떨어진 14세 래퍼 작업실을 찾음 · 국힙 도달",
@@ -320,40 +320,54 @@
   {
    "source": {
     "id": "claude:crush-seesaw-allstars",
-    "account": "톱스타뉴스",
+    "account": "@톱스타뉴스",
     "url": "https://www.topstarnews.net/news/articleView.html?idxno=16260177",
     "image": null,
-    "head": "크러쉬, 아이유·에픽하이 등과 '삐그덕' 컬래버…유튜브 인기 급상승 2위",
+    "head": "'삐그덕' 챌린지 영상을 찍은 사람마다 한 장씩 — 아이유부터 웬디·싸이·미나미까지",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-10-29T10:04+09:00",
+   "made_at": "2026-10-29T20:39+09:00",
    "key": "18478b8b",
    "by": "claude",
    "subjects": [
     "크러쉬",
-    "아이유",
-    "미나미"
+    "아이유"
    ],
    "lane": "재미",
    "editor": {
     "grade": "A",
     "kind": "재미",
-    "angle": "크러쉬 '삐그덕' 한 곡에 모인 사람들 — 이수현·레이·미나미·화사·카더가든·웬디·싸이·에픽하이, 그리고 2019 '술이 달다'의 세 이름",
-    "why": "🍯 의외의 만남 칸 1·2위 · 기사 여러 곳 · 크러쉬 인스타 레이 라이브 좋아요 13만"
+    "angle": "가사 '닿을 듯 말 듯' 한 줄로 일주일째 이어지는 크러쉬 '삐그덕' 챌린지 — 찍은 사람마다 한 장씩",
+    "why": "규효 수정 방향: 챌린지 영상으로 장을 채운다 (아이유·웬디·미나미 등)"
    },
    "added": "claude",
-   "added_at": "2026-10-29T10:04+09:00",
-   "corner": "meet",
+   "added_at": "2026-10-29T20:39+09:00",
+   "corner": "spotlight",
    "card": {
-    "form": "[카테고리]\nFeature\n\n[캡션]\n크러쉬의 '삐그덕' 한 곡에 동료들이 줄줄이 얼굴을 비추고 있습니다.\n\n지난 21일 아이유(@dlwlrma)와 함께 낸 '삐그덕'은 라이브와 챌린지로 이어졌는데요, 악뮤 이수현과 아이브 레이가 라이브 클립에서 이 곡을 불렀고, 리센느(@rescene_official) 미나미는 밴드 라이브 무대에 함께 섰습니다. 카더가든(@carthegarden)·웬디·싸이는 가사 '닿을 듯 말 듯'에 맞춘 챌린지로, 화사는 안신애와 가창 챌린지로 함께했습니다.\n\n에픽하이의 이름도 보입니다. 2019년 에픽하이의 '술이 달다'에는 크러쉬가 피처링으로, 아이유가 뮤직비디오 주인공으로 나섰습니다. 7년 전 한 곡에 모였던 세 이름이 이번엔 크러쉬의 곡을 중심으로 다시 모인 셈입니다.\n\n#PLOT #크러쉬 #삐그덕 #아이유 #에픽하이\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793235857/pvqpaxq1kodny9xqeqrj.jpg\n제목: 크러쉬 '삐그덕'에|모인 사람들\n부제: 아이유부터 싸이·에픽하이까지\n출처: @crush9244\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792724279/lyswbmt4vrbby2ovz6vc.jpg\n소제목: 아이유\n본문: 피처링과 뮤직비디오. 크러쉬는 \"아이유가 아니었다면 이 곡은 세상에 나오지 못했을 것\"이라고 했습니다.\n출처: 멜론\n\n[슬라이드]\n형식: 자료\n말한이: \n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793235863/efiipdjic6mmcmwomdkm.jpg\n소제목: \n본문: \n출처: it's Live\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792257426/jzseezoz8goj3qh5zu6n.jpg\n소제목: 라이브\n본문: 악뮤 이수현과 아이브 레이는 라이브 클립에서, 리센느 미나미는 it's Live 밴드 라이브에서 '삐그덕'을 함께 불렀습니다.\n출처: @rescene_official\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792724244/pskt1ifukow4ncirzzlk.jpg\n소제목: 챌린지\n본문: 카더가든·웬디·싸이는 가사 '닿을 듯 말 듯'에 맞춘 영상을, 화사는 안신애와 가창 챌린지를 올렸습니다.\n출처: @crush9244\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792724240/a0ej6rksndujslk3wfmr.jpg\n소제목: 에픽하이\n본문: 'Now I see' 구절로 만든 영상. 2019년 에픽하이 '술이 달다'에는 크러쉬가 피처링으로, 아이유가 뮤직비디오 주인공으로 나섰습니다.\n출처: @crush9244\n",
-    "caption": "크러쉬의 '삐그덕' 한 곡에 동료들이 줄줄이 얼굴을 비추고 있습니다.\n\n지난 21일 아이유(@dlwlrma)와 함께 낸 '삐그덕'은 라이브와 챌린지로 이어졌는데요, 악뮤 이수현과 아이브 레이가 라이브 클립에서 이 곡을 불렀고, 리센느(@rescene_official) 미나미는 밴드 라이브 무대에 함께 섰습니다. 카더가든(@carthegarden)·웬디·싸이는 가사 '닿을 듯 말 듯'에 맞춘 챌린지로, 화사는 안신애와 가창 챌린지로 함께했습니다.\n\n에픽하이의 이름도 보입니다. 2019년 에픽하이의 '술이 달다'에는 크러쉬가 피처링으로, 아이유가 뮤직비디오 주인공으로 나섰습니다. 7년 전 한 곡에 모였던 세 이름이 이번엔 크러쉬의 곡을 중심으로 다시 모인 셈입니다.\n\n#PLOT #크러쉬 #삐그덕 #아이유 #에픽하이",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n가사 '닿을 듯 말 듯' 한 줄이 크러쉬의 동료들 사이를 돌고 있습니다.\n\n지난 21일 아이유(@dlwlrma)와 함께 낸 '삐그덕'의 노랫말인데요, 카더가든(@carthegarden)·웬디·싸이가 이 구절에 맞춘 챌린지로 함께했습니다. 화사와 안신애는 가창 챌린지를, 아이브 레이와 악뮤 이수현은 크러쉬와 라이브 클립을 찍었습니다.\n\n피처링한 아이유도 뮤직비디오 촬영 날 챌린지를 찍었고, 리센느(@rescene_official) 미나미는 it's Live 밴드 라이브에서 크러쉬 옆에 섰습니다. 발매 일주일, 한 곡이 동료들의 짧은 영상으로 이어지고 있습니다.\n\n#PLOT #크러쉬 #삐그덕 #아이유 #웬디 #미나미\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273949/hjkfjbbrqhupmxyv17ei.jpg\n제목: 크러쉬 '삐그덕' 챌린지에|모인 사람들\n부제: 아이유부터 웬디·싸이·미나미까지\n출처: @crush9244\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273720/iro3awxeoyrd7idbvjvg.jpg\n소제목: 아이유\n본문: 피처링으로 함께한 아이유는 27일 자신의 채널에 뮤직비디오 촬영 날을 올렸는데요, 그 안에 '삐그덕' 챌린지를 찍는 장면도 담겼습니다.\n출처: 이지금 [IU Official]\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792599120/z1xvpovgnf50pop3fsw2.jpg\n소제목: 웬디\n본문: 가사 '닿을 듯 말 듯'에 맞춘 챌린지로 함께했습니다.\n출처: @todayis_wendy\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273958/ltutlq5ifxe27kmsmdik.jpg\n소제목: 카더가든\n본문: 크러쉬 계정에 카더가든과 함께한 '닿을 듯 말 듯' 챌린지 영상이 올라왔습니다.\n출처: @crush9244\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273959/lytbg6oskfvwdwxjt80n.jpg\n소제목: 싸이\n본문: 싸이도 같은 구절로 크러쉬 옆에 섰습니다.\n출처: @crush9244\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273952/ghui69jcb79kv2hkojml.jpg\n소제목: 레이\n본문: 아이브 레이는 크러쉬와 '삐그덕'을 나눠 부르는 라이브 클립을 찍었습니다.\n출처: @crush9244\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273549/ce7g3bvowjrqdx09hoja.jpg\n소제목: 이수현\n본문: 악뮤 이수현도 라이브 클립으로 '삐그덕'을 함께 불렀습니다.\n출처: Crush\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793273554/bqkrrajtwgq5kulnjqih.jpg\n소제목: 미나미\n본문: 리센느 미나미는 it's Live 밴드 라이브에서 크러쉬 옆에 서서 아이유의 자리를 채웠습니다.\n출처: it's Live\n",
+    "caption": "가사 '닿을 듯 말 듯' 한 줄이 크러쉬의 동료들 사이를 돌고 있습니다.\n\n지난 21일 아이유(@dlwlrma)와 함께 낸 '삐그덕'의 노랫말인데요, 카더가든(@carthegarden)·웬디·싸이가 이 구절에 맞춘 챌린지로 함께했습니다. 화사와 안신애는 가창 챌린지를, 아이브 레이와 악뮤 이수현은 크러쉬와 라이브 클립을 찍었습니다.\n\n피처링한 아이유도 뮤직비디오 촬영 날 챌린지를 찍었고, 리센느(@rescene_official) 미나미는 it's Live 밴드 라이브에서 크러쉬 옆에 섰습니다. 발매 일주일, 한 곡이 동료들의 짧은 영상으로 이어지고 있습니다.\n\n#PLOT #크러쉬 #삐그덕 #아이유 #웬디 #미나미",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235857/pvqpaxq1kodny9xqeqrj.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273949/hjkfjbbrqhupmxyv17ei.jpg",
+      "credit": "@crush9244",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235857/pvqpaxq1kodny9xqeqrj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273952/ghui69jcb79kv2hkojml.jpg",
       "credit": "@crush9244",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724165/pmywmqze0tcsrvsdrvly.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273954/xamrgwahccwkgr0exwuo.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724279/lyswbmt4vrbby2ovz6vc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273956/o1xjvbgw1uici9ibl1eg.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257426/jzseezoz8goj3qh5zu6n.jpg"
      },
      {
       "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724165/pmywmqze0tcsrvsdrvly.jpg",
@@ -396,19 +410,28 @@
       "credit": "@crush9244",
       "kind": "화보",
       "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/687320674_18603384577053682_2091702864303852856_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XrdOCUjsFN8Q7kNvwGnSnf_&_nc_oc=AdqUOWTQv_il24Oz_ReAU2-iK3QqxWee6S86Del5l_uZDvbLsAPzxgc32xIB4DfFY1M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fuZJafQR9s7S9d99Gvh2tw&oh=00_AQNm3tIc7aqGM5TkVoIDm8rwbmAisQYvSNctxq9lLVBL7w&oe=6AE087B4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724265/ci2psaistt1yoheqauzf.jpg",
-      "credit": "@crush9244",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670814507_18603384586053682_3015772558831584258_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=jF2hVqkzwfQQ7kNvwHDm8V7&_nc_oc=Adq1SbMSTOjEHAGCFglp-ux85nxRHkeLbqjTnKyD9cCyu9rv8bzH7WYji4VPZExT4ZI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fuZJafQR9s7S9d99Gvh2tw&oh=00_AQNT57WczRZaHurjAL6Psqcln76xl7mzamwnSp60ih-0uQ&oe=6AE08705"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235857/pvqpaxq1kodny9xqeqrj.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273949/hjkfjbbrqhupmxyv17ei.jpg",
+      "credit": "@crush9244",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235857/pvqpaxq1kodny9xqeqrj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273952/ghui69jcb79kv2hkojml.jpg",
       "credit": "@crush9244",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724165/pmywmqze0tcsrvsdrvly.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273954/xamrgwahccwkgr0exwuo.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724279/lyswbmt4vrbby2ovz6vc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273956/o1xjvbgw1uici9ibl1eg.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257426/jzseezoz8goj3qh5zu6n.jpg"
      },
      {
       "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724165/pmywmqze0tcsrvsdrvly.jpg",
@@ -451,12 +474,6 @@
       "credit": "@crush9244",
       "kind": "화보",
       "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/687320674_18603384577053682_2091702864303852856_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XrdOCUjsFN8Q7kNvwGnSnf_&_nc_oc=AdqUOWTQv_il24Oz_ReAU2-iK3QqxWee6S86Del5l_uZDvbLsAPzxgc32xIB4DfFY1M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fuZJafQR9s7S9d99Gvh2tw&oh=00_AQNm3tIc7aqGM5TkVoIDm8rwbmAisQYvSNctxq9lLVBL7w&oe=6AE087B4"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792724265/ci2psaistt1yoheqauzf.jpg",
-      "credit": "@crush9244",
-      "kind": "화보",
-      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/670814507_18603384586053682_3015772558831584258_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=jF2hVqkzwfQQ7kNvwHDm8V7&_nc_oc=Adq1SbMSTOjEHAGCFglp-ux85nxRHkeLbqjTnKyD9cCyu9rv8bzH7WYji4VPZExT4ZI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fuZJafQR9s7S9d99Gvh2tw&oh=00_AQNT57WczRZaHurjAL6Psqcln76xl7mzamwnSp60ih-0uQ&oe=6AE08705"
      }
     ],
     "shape": "맥락",
@@ -464,70 +481,88 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "크러쉬 '삐그덕'에|모인 사람들",
-      "sub": "아이유부터 싸이·에픽하이까지"
+      "title": "크러쉬 '삐그덕' 챌린지에|모인 사람들",
+      "sub": "아이유부터 웬디·싸이·미나미까지"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'닿을 듯 말 듯' 한 줄로|이어진 크러쉬의 일주일",
+      "sub": "카더가든·웬디·싸이"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "아이유도 찍었다|크러쉬 '삐그덕' 챌린지",
+      "sub": "동료들이 이어 간 일주일"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 숏폼 구간 0:58-1:38 자막 없음 — 1:10 캡처에 '닿을 듯 말 듯' 자막·두 사람 노래 장면 확인, 누가 어느 파트를 부르는지는 못 봄(캡션·후킹 B 에서 파트 언급 뺌)",
-     "클립 위험: 중간 — it's Live (숏폼 구간 40초 · 자막이 없어 후렴 1:10 캡처로만 확인 — 구간 시작·끝 영상으로 볼 것)",
-     "PLOT 이 W44 에 크러쉬×아이유 발매 글을 올림 — 이번 건 컬래버 정리 각도"
+     "[검증] 가비 챌린지는 기사 세 곳에 없고 크러쉬 인스타 원글을 열어 확인하지 못해 장·캡션에서 뺐습니다 (사진: crush9244 870149170_… 게시물). 카더가든 22일·싸이 27일 날짜도 확인하지 못해 뺐습니다 — 원글에서 확인되면 다시 넣어 주세요",
+     "클립 위험: 중간 — it's Live (숏폼 0:58-1:38, 40초 · 후렴 첫 줄부터인지 구간 확인)",
+     "주혜린·박준형의 '삐그덕' 챌린지 영상은 기사·유튜브·크러쉬 인스타 최근 글에서 찾지 못해 장을 만들지 않았습니다 — 원본 주소가 있으면 알려 주세요"
     ],
     "research": [
      {
-      "title": "톱스타뉴스 10/28 — 이수현·레이 라이브 클립 · 화사·안신애 가창 챌린지 · 미나미 it's Live · 카더가든·웬디·싸이 · 에픽하이",
+      "title": "톱스타뉴스 — 크러쉬, 아이유·에픽하이 등과 '삐그덕' 컬래버…유튜브 인기 급상승 2위 (10/28)",
       "link": "https://www.topstarnews.net/news/articleView.html?idxno=16260177"
      },
      {
-      "title": "뉴스엔 10/28 — 아이유→아이브 레이, '삐그덕' 콘텐츠에 올스타 라인업 ('닿을 듯 말 듯' · 'Now I see')",
-      "link": "https://www.newsen.com/news_view.php?uid=202610281644002410"
+      "title": "스타뉴스 — 크러쉬, '삐그덕' 컬래버 '올스타 라인업' 화제 (10/29)",
+      "link": "https://starnewskorea.com/music/2026/10/29/2026102915063038590"
      },
      {
-      "title": "뉴스1 10/28 — 아이유부터 싸이까지 프로모션 총출동",
-      "link": "https://www.news1.kr/entertain/music/6335136"
+      "title": "프레임리스 — 크러쉬 '삐그덕', 아이유부터 싸이·에픽하이까지 (10/28)",
+      "link": "https://www.frame-less.co.kr/news/articleView.html?idxno=5683"
      },
      {
-      "title": "일간스포츠 10/21 일문일답 — '아이유가 아니었다면 이 곡은 세상에 나오지 못했을 것'",
-      "link": "https://isplus.com/article/view/isp202610210163"
+      "title": "[IU TV] 아이유 X 크러쉬 | 삐그덕한 하루 (10/27)",
+      "link": "https://www.youtube.com/watch?v=1q46kUP7dXg"
      },
      {
-      "title": "it's Live — Crush & MINAMI '삐그덕' Band LIVE",
-      "link": "https://www.youtube.com/watch?v=q1UlFoMomxI"
+      "title": "Crush - 삐그덕 Live with 이수현",
+      "link": "https://www.youtube.com/watch?v=zaDSuNlhcvc"
      },
      {
-      "title": "서울신문 2019-03-11 — 에픽하이 '술이 달다'(feat. 크러쉬) · 아이유 MV 주인공",
-      "link": "https://m.seoul.co.kr/news/2019/03/11/20190311500210"
+      "title": "Crush - 삐그덕 Live with IVE REI",
+      "link": "https://www.youtube.com/watch?v=JGRkF5_3V6g"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235884/nfrrq4xmbfjl8duqmf0e.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235884/ccagpd1ei1dq94qul0ls.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235884/dccoewl7ha0iy8ghmich.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235884/bzixyj0mm6vexzqvpl8h.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235885/liilc2uutngn4ln7bdaq.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235886/a1jwbkic0rumapaqnzm8.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235886/fk5getluw7vkjv0bta0e.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273969/aghypqnojztfzcolua3l.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273969/adbaiboni3uagi7hyvhu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273969/suoxh9xkbdzqyvibbar2.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273969/ukehmoeu4e19lobtnvwp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273970/jvlp2aq5rm0aibdsdfkq.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273970/dmn1thajzxbsghq1lylc.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273970/ffcvtqakaqpxwzmhaznz.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273970/yjhl9owruak1zc39fpmp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273972/ogrgmfltdxt78oukjyrn.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235884/nfrrq4xmbfjl8duqmf0e.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273974/uygykwsnge2tz3hjoyji.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273974/ymafvukl7jeymp7s2yxt.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273969/aghypqnojztfzcolua3l.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-29T10:04+09:00",
+     "at": "2026-10-29T20:39+09:00",
      "v": {
-      "A": "c026f6b8"
+      "A": "8bb2867e",
+      "B": "ec12799b",
+      "C": "d6b701d2"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=q1UlFoMomxI\n구간: 0:58-1:38\n곡: '삐그덕' 부른 미나미\n아티스트: 크러쉬 옆에서\n피처링:\n후킹: \n출처: it's Live",
-    "caption": "리센느(@rescene_official) 미나미가 크러쉬와 '삐그덕'을 불렀습니다.\n\n아이유(@dlwlrma)가 피처링한 크러쉬의 신곡을 it's Live 밴드 라이브로 다시 꾸몄는데요, 원곡에서 아이유가 함께한 곡을 이번엔 미나미가 크러쉬 옆에서 불렀습니다.\n\n'삐그덕'은 이수현·레이의 라이브 클립, 싸이·카더가든(@carthegarden)의 챌린지로도 이어지고 있습니다.\n\n#PLOT #크러쉬 #미나미 #리센느 #삐그덕",
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=q1UlFoMomxI\n구간: 0:58-1:38\n곡: '삐그덕' 부른 미나미\n아티스트: 크러쉬 옆에서\n피처링:\n후킹: \n출처: it's Live\n음원: 크러쉬 - 삐그덕",
+    "caption": "리센느(@rescene_official) 미나미가 크러쉬와 '삐그덕'을 불렀습니다.\n\n아이유(@dlwlrma)가 피처링한 크러쉬의 신곡을 it's Live 밴드 라이브로 다시 꾸몄는데요, 원곡에서 아이유가 부른 자리를 이번엔 미나미가 크러쉬 옆에서 채웠습니다.\n\n'삐그덕'은 이수현·레이의 라이브 클립, 웬디·싸이·카더가든(@carthegarden)의 챌린지로도 이어지고 있습니다.\n\n#PLOT #크러쉬 #미나미 #리센느 #삐그덕",
     "hooks": {
      "A": "크러쉬 옆에서 / '삐그덕' 부른 미나미",
-     "B": "리센느 미나미와 함께 / 밴드로 부른 '삐그덕'",
-     "C": "밴드 라이브로 다시 / 듣는 크러쉬 '삐그덕'"
+     "B": "아이유 자리에 / 리센느 미나미가 섰다",
+     "C": "밴드 소리 위로 / 주고받는 두 목소리"
     },
     "video": {
      "url": "https://www.youtube.com/watch?v=q1UlFoMomxI",
@@ -543,49 +578,48 @@
     },
     "issues": [],
     "confirm": [
-     "[검증] 숏폼 구간 0:58-1:38 자막 없음 — 1:10 캡처에 '닿을 듯 말 듯' 자막·두 사람 노래 장면 확인, 누가 어느 파트를 부르는지는 못 봄(캡션·후킹 B 에서 파트 언급 뺌)",
-     "클립 위험: 중간 — it's Live (숏폼 구간 40초 · 자막이 없어 후렴 1:10 캡처로만 확인 — 구간 시작·끝 영상으로 볼 것)",
-     "PLOT 이 W44 에 크러쉬×아이유 발매 글을 올림 — 이번 건 컬래버 정리 각도"
+     "[검증] 가비 챌린지는 기사 세 곳에 없고 크러쉬 인스타 원글을 열어 확인하지 못해 장·캡션에서 뺐습니다 (사진: crush9244 870149170_… 게시물). 카더가든 22일·싸이 27일 날짜도 확인하지 못해 뺐습니다 — 원글에서 확인되면 다시 넣어 주세요",
+     "클립 위험: 중간 — it's Live (숏폼 0:58-1:38, 40초 · 후렴 첫 줄부터인지 구간 확인)",
+     "주혜린·박준형의 '삐그덕' 챌린지 영상은 기사·유튜브·크러쉬 인스타 최근 글에서 찾지 못해 장을 만들지 않았습니다 — 원본 주소가 있으면 알려 주세요"
     ],
     "research": [
      {
-      "title": "톱스타뉴스 10/28 — 이수현·레이 라이브 클립 · 화사·안신애 가창 챌린지 · 미나미 it's Live · 카더가든·웬디·싸이 · 에픽하이",
+      "title": "톱스타뉴스 — 크러쉬, 아이유·에픽하이 등과 '삐그덕' 컬래버…유튜브 인기 급상승 2위 (10/28)",
       "link": "https://www.topstarnews.net/news/articleView.html?idxno=16260177"
      },
      {
-      "title": "뉴스엔 10/28 — 아이유→아이브 레이, '삐그덕' 콘텐츠에 올스타 라인업 ('닿을 듯 말 듯' · 'Now I see')",
-      "link": "https://www.newsen.com/news_view.php?uid=202610281644002410"
+      "title": "스타뉴스 — 크러쉬, '삐그덕' 컬래버 '올스타 라인업' 화제 (10/29)",
+      "link": "https://starnewskorea.com/music/2026/10/29/2026102915063038590"
      },
      {
-      "title": "뉴스1 10/28 — 아이유부터 싸이까지 프로모션 총출동",
-      "link": "https://www.news1.kr/entertain/music/6335136"
+      "title": "프레임리스 — 크러쉬 '삐그덕', 아이유부터 싸이·에픽하이까지 (10/28)",
+      "link": "https://www.frame-less.co.kr/news/articleView.html?idxno=5683"
      },
      {
-      "title": "일간스포츠 10/21 일문일답 — '아이유가 아니었다면 이 곡은 세상에 나오지 못했을 것'",
-      "link": "https://isplus.com/article/view/isp202610210163"
+      "title": "[IU TV] 아이유 X 크러쉬 | 삐그덕한 하루 (10/27)",
+      "link": "https://www.youtube.com/watch?v=1q46kUP7dXg"
      },
      {
-      "title": "it's Live — Crush & MINAMI '삐그덕' Band LIVE",
-      "link": "https://www.youtube.com/watch?v=q1UlFoMomxI"
+      "title": "Crush - 삐그덕 Live with 이수현",
+      "link": "https://www.youtube.com/watch?v=zaDSuNlhcvc"
      },
      {
-      "title": "서울신문 2019-03-11 — 에픽하이 '술이 달다'(feat. 크러쉬) · 아이유 MV 주인공",
-      "link": "https://m.seoul.co.kr/news/2019/03/11/20190311500210"
+      "title": "Crush - 삐그덕 Live with IVE REI",
+      "link": "https://www.youtube.com/watch?v=JGRkF5_3V6g"
      }
     ],
     "thumb": "https://i.ytimg.com/vi/q1UlFoMomxI/maxresdefault.jpg",
     "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793235892/pv8ochs5iwpijbzzeq4a.jpg",
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273980/hw6o5ges4zctr653gyfj.jpg",
      "key": "q1UlFoMomxI@58.0"
     },
-    "rendered": {
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793236395/plot_studio/hplbu5ejlj8s5hlsr5zz.mp4",
-     "at": "2026-10-29T10:13+09:00",
-     "file": "KeuLeoSwi_YeopESeo_PpiGeuDeog_BuLeun_Mi_ONeulUi_NoLae_no_lyrics__cta.mp4"
+    "render": {
+     "status": "queued",
+     "at": "2026-10-29T20:39+09:00"
     }
    },
-   "corner_name": "만나는 법",
-   "corner_no": 2
+   "corner_name": "SPOTLIGHT",
+   "corner_no": 1
   },
   {
    "source": {
@@ -847,7 +881,7 @@
     }
    },
    "corner_name": "그날의 앨범",
-   "corner_no": 2
+   "corner_no": 3
   },
   {
    "source": {
@@ -980,7 +1014,7 @@
     }
    },
    "corner_name": "그날의 앨범",
-   "corner_no": 3
+   "corner_no": 4
   },
   {
    "source": {
@@ -2375,7 +2409,7 @@
  "corners": {
   "week": "10/26~11/01",
   "days_left": 4,
-  "done": 28,
+  "done": 32,
   "goal": 28,
   "corners": [
    {
@@ -2394,12 +2428,12 @@
     "key": "meet",
     "name": "만나는 법",
     "weekly": 0,
-    "done": 0,
+    "done": 1,
     "left": 0,
     "need_today": 0,
     "day": null,
-    "next_no": 1,
-    "drafts": 3,
+    "next_no": 2,
+    "drafts": 2,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
    {
@@ -2459,7 +2493,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "해외 매체가 먼저 다룬 한국 아티스트 — 선점"
    },
    {
@@ -2526,11 +2560,11 @@
     "key": "anniv",
     "name": "그날의 앨범",
     "weekly": 2,
-    "done": 0,
-    "left": 2,
+    "done": 1,
+    "left": 1,
     "need_today": 1,
     "day": null,
-    "next_no": 2,
+    "next_no": 3,
     "drafts": 2,
     "why": "오늘(이번 주) 발매 5·10·15·20·25·30주년 앨범을 다시 꺼낸다 — 그때 무슨 일이었고 지금 왜 다시 듣나"
    },
@@ -2538,7 +2572,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 21,
+    "done": 23,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -2547,7 +2581,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-29T20:26+09:00"
+  "at": "2026-10-29T20:39+09:00"
  },
  "queue": {
   "next": "2026-10-29T20:47+09:00",
@@ -2556,15 +2590,15 @@
   "last": "2026-10-29T19:47+09:00"
  },
  "slots": {
-  "basis": 264,
+  "basis": 268,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.36,
-    "median": 1.57,
-    "n": 40
+    "mult": 2.19,
+    "median": 1.38,
+    "n": 44
    },
    {
     "from": 21,
