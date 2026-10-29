@@ -370,6 +370,19 @@ h1{margin:0 0 calc(var(--u)*0.5); font-size:29px; font-weight:800; letter-spacin
 .ig .track{display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none}
 .ig .track::-webkit-scrollbar{display:none}
 .ig .track img{flex:none; width:100%; aspect-ratio:4/5; object-fit:cover; scroll-snap-align:start; display:block; background:#111}
+.ig .track video{flex:none; width:100%; aspect-ratio:4/5; object-fit:cover; scroll-snap-align:start; display:block; background:#111}
+.ig .med .tvb{position:absolute; left:10px; bottom:10px; z-index:2; border:0; border-radius:999px; background:rgba(0,0,0,.62); color:#fff; font-size:12.5px; padding:6px 11px; cursor:pointer}
+.ig .med .tvb[hidden]{display:none}
+.ig .med .tvn{position:absolute; left:10px; top:10px; background:rgba(0,0,0,.55); color:#fff; font-size:11.5px; padding:3px 8px; border-radius:999px; pointer-events:none}
+.ig .reel .yv video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; background:#000}
+.ig .reel .yv iframe.igE{left:0; top:0; width:100%; height:100%}
+.ig .reel.playing .yv{z-index:2}
+.ig .reel .plt{position:absolute; right:56px; top:18px; z-index:2; background:rgba(0,0,0,.55); color:#fff; font-size:11.5px; padding:3px 8px; border-radius:999px; pointer-events:none}
+.ig .reel.playing .plt{display:none}
+.vsheet .pn{padding:12px}
+.vsheet video{display:block; width:100%; max-height:76vh; background:#000; border-radius:10px}
+.vsheet .vbt{display:flex; gap:8px; margin-top:10px}
+.vsheet .vbt a,.vsheet .vbt button{flex:1; text-align:center; font:inherit; font-size:14px; border:1px solid var(--line); border-radius:10px; padding:10px; background:none; color:var(--text); text-decoration:none}
 .ig .cnt{position:absolute; top:10px; right:10px; background:rgba(0,0,0,.6); color:#fff; font-size:12px; padding:3px 8px; border-radius:999px}
 /* 숏폼 미리보기 — 숏폼 앱의 완성본 틀(webapp/shorts/page.html .frame)을 그대로 옮겼다.
    10/11 규효 "숏폼은 미리보기가 안됨. 폼이 좀 다른거 같기도" — 예전엔 유튜브 썸네일 가운데에 작은 글자를 얹어서
@@ -2217,6 +2230,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       (pst ? ' style="background-image:url(\'' + esc(pst) + '\')"' : '') + '><i>▶</i></a><div class="mi">' +
       '<div class="ml' + (seen[url] ? '' : ' new') + '">' + label + '</div><div class="ms">' + esc(sub) + '</div><div class="bt">' + btns + '</div></div></div>';
   }
+  function vidSheet(url) {                         // 완성 영상 바로 보기 (10/29)
+    var sh = document.createElement('div'); sh.className = 'sheet vsheet';
+    sh.innerHTML = '<div class="pn"><video src="' + escU(url) + '" controls autoplay playsinline></video>' +
+      '<div class="vbt"><a href="' + escU(mdSave(url, 'plot_video')) + '">⬇ 저장</a><button data-act="x">닫기</button></div></div>';
+    sh.addEventListener('click', function (ev) { if (ev.target === sh || ev.target.closest('[data-act]')) { var v = sh.querySelector('video'); try { v.pause(); } catch (x) {} sh.remove(); setTimeout(renderMade, 200); } });
+    document.body.appendChild(sh);
+    var v = sh.querySelector('video'); var pr = v.play(); if (pr && pr.catch) pr.catch(function () { v.muted = true; v.play().catch(function () {}); });
+  }
   function renderMade() {
     var host = document.getElementById('viewMade');
     if (!host) return;
@@ -2260,6 +2281,12 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       return;
     }
     var rs = e.target.closest('[data-rndseen]');
+    if (rs && rs.classList.contains('mp')) {           // 10/29 썸네일을 누르면 새 창 대신 여기서 바로 재생
+      e.preventDefault();
+      try { var sm0 = mdSeen(); sm0[rs.getAttribute('data-rndseen')] = Date.now(); localStorage.setItem('plot.rndseen', JSON.stringify(sm0)); } catch (x) {}
+      vidSheet(rs.getAttribute('data-rndseen'));
+      return;
+    }
     if (rs) { try { var sm = mdSeen(); sm[rs.getAttribute('data-rndseen')] = Date.now(); localStorage.setItem('plot.rndseen', JSON.stringify(sm)); } catch (x) {} setTimeout(renderMade, 400); return; }
     var cp = e.target.closest('[data-mdcap]');
     if (cp) { var it = mdItems()[Number(cp.getAttribute('data-mdcap'))]; if (it) { copyText(((it.shorts || {}).caption) || ''); toast('캡션을 복사했습니다'); } }
@@ -2541,8 +2568,12 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function cardPost(it, i) {
     var cd = it.card, sl = slidesOf(it), cvs = cd.covers || [], ci = drCovers()[(it.source || {}).id] || 0;
-    var media = sl.length ? '<div class="med"><div class="track" data-track="' + i + '">' + sl.map(function (u) {
+    var vids = (cd.preview || {}).videos || {}, nv = Object.keys(vids).length;
+    var media = sl.length ? '<div class="med' + (nv ? ' hasv' : '') + '"><div class="track" data-track="' + i + '">' + sl.map(function (u, j) {
+        // 10/29 곡 장은 소리 있는 영상으로 — 넘겨서 그 장이 보이면 저절로 돈다 (🔇 눌러 소리)
+        if (vids[j]) return '<video class="tv" data-tv src="' + esc(vids[j]) + '" poster="' + esc(u) + '" muted playsinline loop preload="none"></video>';
         return '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(u) + '" alt="">'; }).join('') + '</div>' +
+        (nv ? '<button class="tvb" data-tvb hidden>🔇 눌러서 소리</button><span class="tvn">♪ 곡 장 ' + nv + '장은 영상</span>' : '') +
         (sl.length > 1 ? '<span class="cnt" data-cnt="' + i + '">1/' + sl.length + '</span>' : '') + '</div>' +
         (sl.length > 1 ? '<div class="dots" data-dots="' + i + '">' + sl.map(function (_, j) { return '<i' + (j ? '' : ' class="on"') + '></i>'; }).join('') + '</div>' : '')
       : '<div class="noimg">아직 미리보기를 못 그렸습니다 — 공유하기 → 캐러셀 스튜디오에서 열면 바로 그려집니다.<br><br><b>' +
@@ -3356,6 +3387,29 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function reelToggle(r) {
     if (r.classList.contains('playing')) { reelStop(r); return; }
     document.querySelectorAll('[data-reel].playing').forEach(reelStop);       // 한 번에 하나만
+    document.querySelectorAll('video.tv').forEach(function (v) { try { v.pause(); } catch (e) {} });
+    var mp4 = r.getAttribute('data-mp4'), igE = r.getAttribute('data-ig');
+    if (mp4 || igE) {                                   // 10/29 완성본(맥이 만든 영상) · 올린 영상 · 인스타 릴스도 여기서
+      var w = document.createElement('div'); w.className = 'yv';
+      if (mp4) {
+        var v = document.createElement('video');
+        v.src = mp4; v.controls = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.preload = 'auto';
+        var s0 = Number(r.getAttribute('data-s')) || 0, e0 = Number(r.getAttribute('data-e')) || 0;
+        if (s0) v.addEventListener('loadedmetadata', function () { try { v.currentTime = s0; } catch (x) {} }, { once: true });
+        if (e0 > s0) v.addEventListener('timeupdate', function () { if (v.currentTime >= e0) { v.currentTime = s0; } });
+        w.appendChild(v);
+        r.insertBefore(w, r.firstChild);
+        v.muted = false;
+        var pr = v.play(); if (pr && pr.catch) pr.catch(function () { v.muted = true; v.play().catch(function () {}); });
+      } else {
+        w.innerHTML = '<iframe class="igE" src="' + esc(igE) + '" allow="autoplay; encrypted-media" allowfullscreen scrolling="no" title="인스타 릴스"></iframe>';
+        r.insertBefore(w, r.firstChild);
+      }
+      r.classList.add('playing');
+      var bb = r.querySelector('[data-play]'); if (bb) { bb.innerHTML = IC_STOP; bb.setAttribute('aria-label', '멈추기'); }
+      toast(r.getAttribute('data-done') ? '🎬 맥이 만든 완성본입니다' : mp4 ? '올린 원본 구간을 재생합니다' : '인스타 릴스 원본입니다 — 소리는 영상을 눌러 켜세요');
+      return;
+    }
     var id = r.getAttribute('data-vid'); if (!id) return;
     var st = Number(r.getAttribute('data-s')) || 0, en = Number(r.getAttribute('data-e')) || 0;
     var src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&mute=1&playsinline=1&controls=1&rel=0&modestbranding=1&cc_load_policy=0&iv_load_policy=3' +
@@ -3391,11 +3445,18 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       (ytId(vd.url) ? '<button data-vfit hidden>전체 보기</button>' : '') +
       (vlink ? '<a class="yt" href="' + escU(vlink) + '" target="_blank" rel="noopener">원본 ↗</a>' : '') +
       (song ? '' : '<span class="bad">' + (music ? '곡 제목 필요' : '3줄이 비었습니다 — 숏폼 앱은 맨 아래 줄이 있어야 만듭니다') + '</span>');
+    // 10/29 규효 "초안으로 나온 숏폼도 재생되게" — 완성본이 있으면 그것을, 없으면 원본 구간(유튜브·올린 영상·인스타 릴스)을
+    var vs = Math.floor((vd.range || [0])[0] || 0), ve = Math.ceil((vd.range || [0, 0])[1] || 0);
+    var direct = /res\.cloudinary\.com\/[^/]+\/video\/upload\/|\.(mp4|mov|m4v|webm)(\?|#|$)/i.test(vd.url || '');
+    var igc = (/instagram\.com\/(?:reel|reels|p)\/([\w-]+)/.exec(vd.url || '') || [])[1];
+    var pa = rd.url ? ' data-mp4="' + esc(rd.url) + '" data-done="1"'
+      : ytId(vd.url) ? ' data-vid="' + esc(ytId(vd.url)) + '" data-s="' + vs + '" data-e="' + ve + '"'
+      : direct ? ' data-mp4="' + esc(vd.url) + '" data-s="' + vs + '" data-e="' + ve + '"'
+      : igc ? ' data-ig="' + esc('https://www.instagram.com/reel/' + igc + '/embed/') + '"' : '';
     return '<article class="ig">' + postHead(it, 'shorts', sh) +
-      '<div class="rk">' + marks + '</div><div class="reel" data-reel' +
-      (ytId(vd.url) ? ' data-vid="' + esc(ytId(vd.url)) + '" data-s="' + Math.floor((vd.range || [0])[0] || 0) + '" data-e="' +
-        Math.ceil((vd.range || [0, 0])[1] || 0) + '"' : '') + '>' + frame +
-      (ytId(vd.url) ? '<button class="pl" data-play aria-label="여기서 재생">' + IC.play + '</button>' : '') + '</div>' +
+      '<div class="rk">' + marks + '</div><div class="reel' + (rd.url ? ' done' : '') + '" data-reel' + pa + '>' + frame +
+      (pa ? '<button class="pl" data-play aria-label="' + (rd.url ? '완성본 재생' : '여기서 재생') + '">' + IC.play + '</button>' +
+        (rd.url ? '<span class="plt">완성본</span>' : '') : '') + '</div>' +
       '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글" data-cmt="d:' + i + '">' + IC.chat +
       '</button><button aria-label="공유" data-share="' + i + ':shorts">' + IC.send + '</button><span class="sp"></span><button aria-label="저장" data-save="' + i + ':shorts">' + IC.save + '</button></div>' +
       '<div class="igc cl" data-cap><b>plot_music</b> ' + esc(cap) + '</div>' +
@@ -3474,8 +3535,40 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         var c = host.querySelector('[data-cnt="' + i + '"]'), d = host.querySelector('[data-dots="' + i + '"]');
         if (c) c.textContent = (k + 1) + '/' + tr.children.length;
         if (d) [].forEach.call(d.children, function (x, j) { x.className = j === k ? 'on' : ''; });
+        if (tr.querySelector('video')) tvSync(tr);
       }, { passive: true });
     });
+    tvWatch(host);
+  }
+  /* 캐러셀 곡 장 영상 (10/29) — 인스타처럼: 보이는 장이 영상이면 돈다 · 한 번에 하나 · 소리는 한 번 켜면 계속 */
+  var TV_SOUND = false, TV_IO = null;
+  function tvIdx(tr) { return Math.round(tr.scrollLeft / Math.max(1, tr.clientWidth)); }
+  function tvSync(tr) {
+    var med = tr.parentNode, k = tvIdx(tr), on = med.__vis === true;
+    var cur = tr.children[k], isV = !!(cur && cur.tagName === 'VIDEO');
+    [].forEach.call(tr.querySelectorAll('video'), function (v) { if (v !== cur || !on) { try { v.pause(); } catch (e) {} } });
+    var b = med.querySelector('[data-tvb]');
+    if (b) { b.hidden = !isV; b.textContent = TV_SOUND ? '🔊 소리 켬' : '🔇 눌러서 소리'; }
+    if (isV && on) {
+      document.querySelectorAll('video.tv').forEach(function (v) { if (v !== cur) { try { v.pause(); } catch (e) {} } });
+      if (cur.preload !== 'auto') cur.preload = 'auto';
+      cur.muted = !TV_SOUND;
+      var pr = cur.play(); if (pr && pr.catch) pr.catch(function () { cur.muted = true; TV_SOUND = false; try { cur.play(); } catch (e) {} });
+    }
+  }
+  function tvWatch(host) {
+    if (!window.IntersectionObserver) { host.querySelectorAll('.med.hasv').forEach(function (m) { m.__vis = true; }); return; }
+    if (!TV_IO) TV_IO = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { var m = e.target; m.__vis = e.intersectionRatio >= 0.6; var tr = m.querySelector('[data-track]'); if (tr) tvSync(tr); });
+    }, { threshold: [0, 0.6, 1] });
+    host.querySelectorAll('.med.hasv').forEach(function (m) { TV_IO.observe(m); });
+  }
+  function tvTap(med) {
+    var tr = med.querySelector('[data-track]'); if (!tr) return;
+    var cur = tr.children[tvIdx(tr)]; if (!cur || cur.tagName !== 'VIDEO') return;
+    TV_SOUND = !TV_SOUND || cur.paused;
+    med.__vis = true; tvSync(tr);
+    toast(TV_SOUND ? '🔊 소리를 켰습니다 — 곡 장마다 후렴이 나옵니다' : '🔇 소리를 껐습니다');
   }
   function prefetchSlides(it) {
     var sl = slidesOf(it), key = sl.join('|');
@@ -4187,6 +4280,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (rx) { reqDrop(rx.getAttribute('data-rqx')); renderDrafts(); return; }
     var pb = e.target.closest('[data-play]');
     if (pb) { var rr = pb.closest('[data-reel]'); if (rr) reelToggle(rr); return; }
+    var tvx = e.target.closest('[data-tvb]') || e.target.closest('video[data-tv]');
+    if (tvx) { var md0 = tvx.closest('.med'); if (md0) tvTap(md0); return; }
     var vf = e.target.closest('[data-vfit]');
     if (vf) {
       var vm = vf, rv = vm.closest('article').querySelector('[data-reel]');
@@ -4268,9 +4363,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.29 21:04';
+    a.title = '판 10.29 21:26';
     var ver = document.createElement('span');
-    ver.textContent = '10.29 21:04';
+    ver.textContent = '10.29 21:26';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
