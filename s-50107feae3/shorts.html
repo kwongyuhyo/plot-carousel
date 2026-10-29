@@ -71,6 +71,43 @@
   color:#fff; font-size:13px; font-weight:700; white-space:nowrap; cursor:pointer}
 .stTools button:disabled{opacity:.3}
 .ppSheet.stEditing .ppNote{display:none}
+/* 10/29 자막 글 목록 · 찾아 바꾸기 */
+.stTabs{display:flex; gap:6px; padding:0 12px 8px}
+.stTabs button{flex:1; height:34px; border-radius:9px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.7); font-size:13.5px; font-weight:700; cursor:pointer}
+.stTabs button[data-st=find]{flex:none; padding:0 12px}
+#ppSubList:not(.stLv) .stTabs [data-st=find].on{background:rgba(255,255,255,.07); color:rgba(255,255,255,.7); border-color:rgba(255,255,255,.14)}
+.stTabs button.on{background:#fff; color:#111; border-color:#fff}
+.stLv .stWrap,.stLv .stEdit,.stLv .stTools,.stLv .stHint,.stLv .stHead [data-st=zin],.stLv .stHead [data-st=zout]{display:none}
+.stLv .stHead .stNow{margin-right:auto}
+.stList{display:none; position:relative; max-height:46vh; overflow-y:auto; -webkit-overflow-scrolling:touch; overscroll-behavior:contain; padding:2px 12px 0; border-top:1px solid #222}
+.stLv .stList{display:block}
+.stRow{display:flex; align-items:flex-start; gap:8px; padding:5px 0; border-bottom:1px solid rgba(255,255,255,.07)}
+.stRt{flex:none; width:70px; height:36px; border-radius:8px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.75); font:600 12px/1 ui-monospace,Menlo,monospace; cursor:pointer; padding:0}
+.stRt::before{content:'▶ '; font-size:9px}
+#ppSubList .stRx{flex:1; min-width:0; box-sizing:border-box; resize:none; overflow:hidden; background:transparent; border:1px solid transparent; border-radius:8px; color:#fff; font:600 16px/1.4 system-ui,-apple-system,sans-serif; padding:6px 8px; min-height:36px; margin:0}
+#ppSubList .stRx:focus{outline:none; background:rgba(255,255,255,.08); border-color:rgba(150,110,255,.85)}
+#ppSubList .stRx::placeholder{color:rgba(255,255,255,.3)}
+.stRd{flex:none; width:30px; height:36px; border:0; background:none; color:rgba(255,255,255,.32); font-size:19px; cursor:pointer; padding:0}
+#ppSubList .stRow.sel .stRx{border-color:rgba(150,110,255,.5)}
+.stRow.now .stRt{background:#ff3b30; border-color:#ff3b30; color:#fff}
+#ppSubList .stRow.chk .stRx{border:1px dashed #ff5a4f; background:rgba(255,90,79,.08)}
+#ppSubList .stRow.hit .stRx{background:rgba(255,214,10,.16)}
+.stLadd{display:block; width:100%; margin:8px 0 2px; height:38px; border-radius:9px; background:rgba(255,255,255,.06); border:1px dashed rgba(255,255,255,.25); color:#fff; font-size:14px; cursor:pointer}
+.stLhint{font-size:11.5px; color:rgba(255,255,255,.45); padding:6px 0 10px; line-height:1.45}
+.stFind{display:flex; gap:6px; padding:2px 12px 8px; align-items:center}
+.stFind[hidden],#ppSubList:not(.stLv) .stFind{display:none}
+#ppSubList .stFind input{flex:1; min-width:0; height:36px; box-sizing:border-box; border-radius:8px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.22); color:#fff; font-size:16px; padding:0 9px}
+.stFind button{flex:none; height:36px; padding:0 10px; border-radius:8px; background:#fff; color:#111; border:0; font-weight:800; font-size:13px; cursor:pointer}
+.stFind button:disabled{opacity:.35}
+/* 밝은 테마도 자막 칸은 검은 판 위 — 앱 공통 입력칸 밝은 색(!important)을 이긴다 */
+html:root #ppSubList .stRx, html:root #ppSubList .stText, html:root #ppSubList .stFind input{color:#fff!important; -webkit-text-fill-color:#fff!important}
+html:root #ppSubList .stRx{background:transparent!important}
+html:root #ppSubList .stRx:focus{background:rgba(255,255,255,.1)!important}
+html:root #ppSubList .stRow.chk .stRx{background:rgba(255,90,79,.1)!important}
+html:root #ppSubList .stRow.hit .stRx{background:rgba(255,214,10,.26)!important; border-color:rgba(255,214,10,.7)}
+html:root #ppSubList .stText, html:root #ppSubList .stFind input{background:rgba(255,255,255,.08)!important}
+html:root #ppSubList .stText:focus, html:root #ppSubList .stFind input:focus{background:rgba(255,255,255,.13)!important}
+html:root #ppSubList ::placeholder{color:rgba(255,255,255,.35)!important}
 </style>
 <style>
 /* 완성물·캐러셀 스튜디오와 같은 팔레트. 흑백으로 두고 앰버 하나만 액센트로.
@@ -4745,7 +4782,7 @@ function ppSubsPaint() {
   $('#pp').classList.toggle('stEditing', show);
   if (show && !box.classList.contains('stOn')) { ST.sel = -1; ST.undo = []; stBuild(); }   // 10/24 타임라인 편집 (프리미어식)
   else if (show) { stPaint(); stCenter(stHeadRel()); stLoop(); }
-  ed.textContent = !stOk(b) ? '✏️ 자막 직접 쓰기' : PP.mode === 'done' ? '✏️ 자막 고치기 (미리보기에서)' : PP.editOpen ? '✏️ 고치기 닫기' : '✏️ 자막 고치기 · 타임라인';
+  ed.textContent = !stOk(b) ? '✏️ 자막 직접 쓰기' : PP.mode === 'done' ? '✏️ 자막 고치기 (미리보기에서)' : PP.editOpen ? '✏️ 고치기 닫기' : '✏️ 자막 고치기';
 }
 function ppSubsList() {               // 10/24 — 목록 대신 타임라인. 보일 때 다시 짓는다 (폭을 재야 해서)
   const box = $('#ppSubList'); if (!box) return;
@@ -4961,7 +4998,7 @@ function bindPlay() {
   try { new ResizeObserver(() => ppFit()).observe($('#ppFrame')); } catch (_) {}
   document.addEventListener('keydown', (e) => {
     if ($('#pp').hidden) return;
-    if (e.target && e.target.tagName === 'INPUT') return;
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;   // 10/29 글 목록 칸에서 띄어쓰기·Esc
     if (e.key === 'Escape') { e.preventDefault(); ppStop(); }
     else if (e.key === ' ') { e.preventDefault(); $('#ppTap').click(); }
     else if (e.key === 'ArrowRight' && !$('#ppNext').disabled) $('#ppNext').click();
@@ -5022,6 +5059,8 @@ function stBuild() {
   const box = $('#ppSubList'); box.innerHTML = '';
   box.classList.add('stOn');
   box.innerHTML =
+    '<div class="stTabs"><button type="button" data-st="vls">📝 글 목록</button><button type="button" data-st="vtl">🎞 타임라인</button>' +
+    '<button type="button" data-st="find" title="찾아 바꾸기 — 같은 오타·이름을 한 번에">🔎 바꾸기</button></div>' +
     '<div class="stHead"><button type="button" class="stB" data-st="play">▶</button><b class="stNow">0:00.0</b>' +
     '<span class="stHint">' + (stPrNow() ? '눈금 끌기=재생 헤드 · 휠=이동 · ⌥/⌘+휠=확대 · Space 재생 · J K L · C 자르기 · I/O · ↑↓ 편집점 · U 확인할 줄 · \\ 맞춤 · S 붙기'
       : '타임라인을 밀어 이동 · 블록을 끌어 옮기기 · 양 끝으로 길이') + '</span>' +
@@ -5035,7 +5074,10 @@ function stBuild() {
       '<button type="button" data-st="split" title="C">✂ 자르기</button><button type="button" data-st="in" title="I">⇤ 시작=지금</button>' +
       '<button type="button" data-st="out" title="O">끝=지금 ⇥</button><button type="button" data-st="merge">⇢ 다음과 합치기</button>' +
       '<button type="button" data-st="add">＋ 새 줄</button><button type="button" data-st="del" title="Delete">🗑 지우기</button>' +
-    '</div>';
+    '</div>' +
+    '<div class="stFind" hidden><input type="text" class="stFq" placeholder="찾을 말" enterkeyhint="next">' +
+      '<input type="text" class="stFr" placeholder="바꿀 말" enterkeyhint="done"><button type="button" data-st="repl" disabled>모두 바꾸기</button></div>' +
+    '<div class="stList"></div>';
   ST.pr = stPrNow(); box.classList.toggle('pr', ST.pr);
   const sc = box.querySelector('.stScroll');
   sc.addEventListener('scroll', stOnScroll, { passive: true });
@@ -5096,9 +5138,15 @@ function stBuild() {
   inp.addEventListener('focus', () => { const s = stSegs()[ST.sel]; if (s) stPush(); });
   inp.addEventListener('input', () => { const s = stSegs()[ST.sel]; if (!s) return; s.text = inp.value; s.chk = false; PP.b.subsRef.edited = true; ppSubsSave(); stPaintBlocks(); stChkPaint(); });
   inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); inp.blur(); } });
+  stListBind(box.querySelector('.stList'));
+  const fq = box.querySelector('.stFq'), fr = box.querySelector('.stFr');
+  fq.addEventListener('input', () => { stFindCount(); stListSync(); });
+  fq.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) { e.preventDefault(); fr.focus(); } });
+  fr.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) { e.preventDefault(); stFindRepl(); } });
   stPaint();
   stCenter(Math.max(0, ppNow() - PP.a));
   stLoop();
+  stViewSet(ST.view || stViewLoad());
 }
 function stPaint() {
   const box = $('#ppSubList'); if (!box || !box.classList.contains('stOn')) return;
@@ -5141,6 +5189,7 @@ function stPaintBlocks() {
     const sp = n.querySelector('span'); const tx = String(s.text || '').trim() || '(빈 줄)';
     if (sp.textContent !== tx) sp.textContent = tx;
   });
+  stListSync();
 }
 function stChkPaint() {                            // 「⚠ 확인 n」 — 남은 확인할 줄 수 (10/27)
   const b = $('#ppSubList .stChk'); if (!b) return;
@@ -5177,6 +5226,7 @@ function stCenter(rel) {
 function stNowPaint(rel) {
   const n = $('#ppSubList .stNow'); if (n) n.textContent = stF(rel);
   const p = $('#ppSubList [data-st=play]'); if (p) p.textContent = PP.paused ? '▶' : '❚❚';
+  if (ST.view === 'list') stListNow(rel);
 }
 function stOnScroll() {
   if (ST.pr) { stHeadPaint(stHeadRel()); return; }   // 프리미어: 옆으로 밀어도 재생 헤드는 그 자리
@@ -5196,6 +5246,7 @@ function stLoop() {
   const go = () => {
     const box = $('#ppSubList');
     if ($('#pp').hidden || !box || box.hidden || !box.classList.contains('stOn')) { ST.raf = 0; return; }
+    if (ST.stopAt && !PP.paused && ppNow() >= ST.stopAt - 0.03) { ST.stopAt = 0; ppSetPaused(true); }   // 「그 줄만 듣기」 끝
     if (!ST.scrubbing && !ST.drag) {
       // 재생 중에만 영상을 따라 흐른다. 멈춰 있을 땐 타임라인이 주인 — 유튜브는 찾아가기 직후 시간을 늦게 알려 줘서 되돌아가 보였다
       if (!PP.paused) { const rel = Math.max(0, Math.min(stLen(), ppNow() - PP.a)); stCenter(rel); ST.lastRel = rel; }
@@ -5229,12 +5280,16 @@ function stSelect(k, seek) {
   ST.sel = k; stPaintBlocks(); stText();
   const s = stSegs()[k];
   if (s && seek) { ppSeek(PP.a + s.start + 0.02); stCenter(s.start + 0.02); ST.lastRel = s.start + 0.02; }
+  if (ST.view === 'list') stListShow(k);
 }
 function stHeadRel() { return Math.max(0, Math.min(stLen(), ST.lastRel >= 0 ? ST.lastRel : ppNow() - PP.a)); }
 function stAt(rel) { return stSegs().findIndex((s) => rel >= s.start && rel < s.end); }
 function stAct(a) {
   const segs = stSegs(), s = segs[ST.sel], t = stHeadRel();
-  if (a === 'play') { ppSetPaused(!PP.paused); stNowPaint(t); return; }
+  if (a === 'play') { ST.stopAt = 0; ppSetPaused(!PP.paused); stNowPaint(t); return; }
+  if (a === 'vls' || a === 'vtl') return stViewSet(a === 'vls' ? 'list' : 'tl');
+  if (a === 'find') return stFindToggle();
+  if (a === 'repl') return stFindRepl();
   if (a === 'undo') return stUndo();
   if (a === 'ai') {                                   // 10/29 자막 AI 손보기 — 줄 수·시간 그대로, 글만
     const b = PP.b;
@@ -5317,6 +5372,196 @@ function stAct(a) {
     stChanged(true);
   }
 }
+/* ── 글 목록으로 고치기 (10/29 규효 "자막 수정을 조금 쉽게") ─────────────────────────────
+   타임라인 블록을 하나씩 눌러 고치는 대신, 모든 줄을 글로 펼쳐 놓고 바로 고친다 (Vrew 식).
+   시간 단추 = 그 줄만 들려 주고 멈춤 · Enter = 커서 자리에서 둘로 (재생을 멈춘 자리가 줄 안이면 그 시각에서) ·
+   맨 앞에서 ⌫ = 앞줄과 합치기 · ↑↓ = 앞뒤 줄 · 🔎 찾아 바꾸기 = 같은 오타(이름)를 한 번에.
+   지금 나오는 줄은 빨간 시간으로 표시되고, 재생하면 목록이 따라 내려간다. 고친 것은 타임라인과 같은 자막(segs)이다. */
+const ST_VIEW_KEY = 'plotStView';
+function stViewLoad() { try { return localStorage.getItem(ST_VIEW_KEY) === 'tl' ? 'tl' : 'list'; } catch (_) { return 'list'; } }
+function stViewSet(v) {
+  ST.view = v === 'tl' ? 'tl' : 'list';
+  try { localStorage.setItem(ST_VIEW_KEY, ST.view); } catch (_) {}
+  const box = $('#ppSubList'); if (!box || !box.classList.contains('stOn')) return;
+  box.classList.toggle('stLv', ST.view === 'list');
+  box.querySelectorAll('.stTabs [data-st=vtl],.stTabs [data-st=vls]').forEach((x) => x.classList.toggle('on', (x.getAttribute('data-st') === 'vls') === (ST.view === 'list')));
+  if (ST.view === 'list') { stListBuild(); stListShow(ST.sel >= 0 ? ST.sel : stAt(stHeadRel())); }
+  else { stPaint(); stCenter(stHeadRel()); }
+}
+function stListEl() { const box = $('#ppSubList'); return box && box.classList.contains('stOn') ? box.querySelector('.stList') : null; }
+function stListRows() { const L = stListEl(); return L ? L.querySelectorAll('.stRow') : []; }
+function stFit1(ta) { if (!ta || !ta.offsetParent) return; ta.style.height = 'auto'; ta.style.height = ta.scrollHeight + 'px'; }
+function stListBuild() {
+  const L = stListEl(); if (!L) return;
+  const segs = stSegs();
+  L.innerHTML = '';
+  segs.forEach((s, k) => {
+    const r = el('div', 'stRow'); r.dataset.k = k;
+    r.innerHTML = '<button type="button" class="stRt" title="이 줄만 듣기"></button>' +
+      '<textarea class="stRx" rows="1" spellcheck="false" enterkeyhint="next" placeholder="(빈 줄)"></textarea>' +
+      '<button type="button" class="stRd" title="이 줄 지우기">×</button>';
+    L.append(r);
+  });
+  const add = el('button', 'stLadd'); add.type = 'button'; add.textContent = '＋ 지금 자리 뒤에 새 줄'; L.append(add);
+  const hint = el('div', 'stLhint');
+  hint.textContent = segs.length
+    ? '시간을 누르면 그 줄만 들려 줍니다 · Enter = 커서 자리에서 둘로 나누기 · 맨 앞에서 ⌫ = 앞줄과 합치기 · 시간을 크게 옮길 땐 🎞 타임라인'
+    : '아직 자막이 없습니다 — 영상을 넣을 자리까지 돌리고 「＋ 새 줄」';
+  L.append(hint);
+  ST.lnow = -2;
+  stListSync();
+}
+function stListSync() {
+  if (ST.view !== 'list') return;
+  const L = stListEl(); if (!L) return;
+  const segs = stSegs(), rows = stListRows();
+  if (rows.length !== segs.length) { stListBuild(); return; }
+  const q = stFindQ();
+  rows.forEach((r, k) => {
+    const s = segs[k], ta = r.querySelector('.stRx'), t = r.querySelector('.stRt');
+    const tl = stF(s.start); if (t.textContent !== tl) t.textContent = tl;
+    if (document.activeElement !== ta && ta.value !== String(s.text || '')) ta.value = String(s.text || '');
+    r.classList.toggle('sel', k === ST.sel);
+    r.classList.toggle('chk', !!s.chk);
+    r.classList.toggle('hit', !!q && String(s.text || '').includes(q));
+    stFit1(ta);
+  });
+  stListNow(stHeadRel(), true);
+}
+function stListNow(rel, force) {                    // 지금 나오는 줄 — 빨간 시간, 재생 중이면 목록이 따라간다
+  const L = stListEl(); if (!L || ST.view !== 'list') return;
+  const k = stAt(rel);
+  if (k === ST.lnow && !force) return;
+  ST.lnow = k;
+  stListRows().forEach((r, i) => r.classList.toggle('now', i === k));
+  const ae = document.activeElement;
+  if (k >= 0 && !PP.paused && !(ae && ae.classList && ae.classList.contains('stRx'))) stListShow(k);
+}
+function stListShow(k) {                            // 그 줄이 목록 안에 보이게 (목록만 스크롤)
+  const L = stListEl(), r = stListRows()[k]; if (!L || !r) return;
+  const top = r.offsetTop, bot = top + r.offsetHeight;
+  if (top < L.scrollTop || bot > L.scrollTop + L.clientHeight) L.scrollTop = Math.max(0, top - L.clientHeight * 0.3);
+}
+function stListFocus(k, pos) {
+  const r = stListRows()[k]; if (!r) return;
+  const ta = r.querySelector('.stRx');
+  ta.focus();
+  const p = pos == null ? ta.value.length : Math.max(0, Math.min(ta.value.length, pos));
+  try { ta.setSelectionRange(p, p); } catch (_) {}
+  stListShow(k);
+}
+function stListPlay(k) {                            // 그 줄만 듣기 — 처음부터 틀고 줄 끝에서 멈춘다
+  const s = stSegs()[k]; if (!s) return;
+  ST.sel = k; stPaintBlocks(); stText();
+  ST.lastRel = s.start; ppSeek(PP.a + s.start);
+  ST.stopAt = PP.a + s.end;
+  ppSetPaused(false); stNowPaint(s.start);
+}
+function stListSplit(k, ta) {                       // Enter — 커서 자리에서 둘로
+  const segs = stSegs(), s = segs[k]; if (!s) return;
+  const txt = ta.value, cut = ta.selectionStart;
+  if (!(cut > 0 && cut < txt.length) || ta.selectionEnd !== cut) { if (cut >= txt.length && segs[k + 1]) stListFocus(k + 1, 0); return; }
+  if (s.end - s.start < ST_MIN * 2) { toast('줄이 너무 짧아 나눌 수 없습니다 — 🎞 타임라인에서 길이를 늘려 주세요'); return; }
+  const h = stHeadRel();
+  let t = (PP.paused && h > s.start + ST_MIN && h < s.end - ST_MIN) ? h            // 멈춘 자리가 이 줄 안이면 거기서
+        : s.start + (s.end - s.start) * cut / Math.max(1, txt.length);              // 아니면 글자 비율로
+  t = Math.max(s.start + ST_MIN, Math.min(s.end - ST_MIN, t));
+  stPush();
+  const ns = { start: stR(t), end: s.end, text: txt.slice(cut).trim() };
+  s.text = txt.slice(0, cut).trim(); s.end = stR(t); s.chk = false;
+  segs.splice(k + 1, 0, ns);
+  ST.sel = k + 1;
+  stChanged(true);
+  stListBuild(); stListFocus(k + 1, 0);
+}
+function stListJoin(k) {                            // 맨 앞 ⌫ — 앞줄과 합치기
+  const segs = stSegs(), s = segs[k], p = segs[k - 1]; if (!s || !p) return;
+  stPush();
+  const a = String(p.text || '').trim(), b = String(s.text || '').trim();
+  p.text = (a + ' ' + b).trim(); p.end = s.end; p.chk = false;
+  segs.splice(k, 1);
+  ST.sel = k - 1;
+  stChanged(true);
+  stListBuild(); stListFocus(k - 1, a.length + (a && b ? 1 : 0));
+}
+function stListAdd() {                              // ＋ 새 줄 — 재생 헤드가 줄 위에 있으면 그 줄 바로 뒤에
+  let t = stHeadRel();
+  const at = stAt(t);
+  if (at >= 0) t = stSegs()[at].end;
+  const nx = stSegs().filter((x) => x.start >= t - 1e-6).sort((p, q) => p.start - q.start)[0];
+  if ((nx ? nx.start : stLen()) - t < ST_MIN) { toast('그 뒤에 빈 자리가 없습니다 — 🎞 타임라인에서 줄 길이를 줄여 자리를 만들어 주세요'); return; }
+  const n0 = stSegs().length;
+  ST.lastRel = t; ppSeek(PP.a + t);
+  stAct('add');
+  if (stSegs().length > n0) { stListBuild(); stListFocus(ST.sel, 0); }
+}
+function stListBind(L) {
+  L.addEventListener('click', (e) => {
+    const r = e.target.closest('.stRow'), k = r ? +r.dataset.k : -1;
+    if (e.target.closest('.stRt')) { stListPlay(k); return; }
+    if (e.target.closest('.stRd')) {
+      stPush(); stSegs().splice(k, 1);
+      ST.sel = Math.min(k, stSegs().length - 1);
+      stChanged(true); stListBuild();
+      return;
+    }
+    if (e.target.closest('.stLadd')) stListAdd();
+  });
+  L.addEventListener('focusin', (e) => {
+    const ta = e.target.closest('.stRx'); if (!ta) return;
+    const k = +ta.closest('.stRow').dataset.k, s = stSegs()[k]; if (!s) return;
+    stPush();
+    ST.sel = k; stPaintBlocks(); stText();
+    const h = stHeadRel();
+    if (!(h >= s.start && h < s.end)) {             // 고치는 줄로 영상을 옮겨 둔다 (멈춘 채)
+      if (!PP.paused) ppSetPaused(true);
+      ST.lastRel = s.start + 0.02; ppSeek(PP.a + ST.lastRel); stNowPaint(ST.lastRel);
+    }
+  });
+  L.addEventListener('input', (e) => {
+    const ta = e.target.closest('.stRx'); if (!ta) return;
+    const s = stSegs()[+ta.closest('.stRow').dataset.k]; if (!s) return;
+    s.text = ta.value.replace(/\n/g, ' '); s.chk = false;
+    if (ta.value !== s.text) ta.value = s.text;
+    PP.b.subsRef.edited = true; ppSubsSave();
+    stFit1(ta); stPaintBlocks(); stChkPaint();
+  });
+  L.addEventListener('keydown', (e) => {
+    const ta = e.target.closest('.stRx'); if (!ta) return;
+    if (e.isComposing || e.keyCode === 229) return;            // 한글 조합 중 Enter 는 글자 확정
+    const k = +ta.closest('.stRow').dataset.k, a = ta.selectionStart, b = ta.selectionEnd;
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); stListSplit(k, ta); }
+    else if (e.key === 'Backspace' && a === 0 && b === 0 && k > 0) { e.preventDefault(); stListJoin(k); }
+    else if (e.key === 'ArrowUp' && a === 0 && k > 0) { e.preventDefault(); stListFocus(k - 1); }
+    else if (e.key === 'ArrowDown' && b === ta.value.length && k < stSegs().length - 1) { e.preventDefault(); stListFocus(k + 1, 0); }
+    else if (e.key === 'Escape') ta.blur();
+  });
+}
+/* 🔎 찾아 바꾸기 — 받아쓰기가 같은 이름을 줄마다 똑같이 틀릴 때 (예: 노엘님 → 노엘 님) 한 번에 */
+function stFindQ() { const b = $('#ppSubList .stFind'); return b && !b.hidden ? String((b.querySelector('.stFq') || {}).value || '') : ''; }
+function stFindCount() {
+  const q = stFindQ(), btn = $('#ppSubList .stFind [data-st=repl]'); if (!btn) return 0;
+  const n = q ? stSegs().reduce((m, s) => m + (String(s.text || '').split(q).length - 1), 0) : 0;
+  btn.textContent = q ? '모두 바꾸기 · ' + n + '곳' : '모두 바꾸기';
+  btn.disabled = !n;
+  return n;
+}
+function stFindToggle() {
+  const f = $('#ppSubList .stFind'); if (!f) return;
+  f.hidden = !f.hidden;
+  const tb = $('#ppSubList .stTabs [data-st=find]'); if (tb) tb.classList.toggle('on', !f.hidden);
+  if (!f.hidden) { if (ST.view !== 'list') stViewSet('list'); setTimeout(() => f.querySelector('.stFq').focus(), 30); }
+  stFindCount(); stListSync();
+}
+function stFindRepl() {
+  const f = $('#ppSubList .stFind'); if (!f) return;
+  const q = stFindQ(), r = String(f.querySelector('.stFr').value || ''), n = stFindCount();
+  if (!q || !n) { toast('찾을 말이 자막에 없습니다'); return; }
+  stPush();
+  stSegs().forEach((s) => { if (String(s.text || '').includes(q)) { s.text = String(s.text).split(q).join(r).replace(/\s{2,}/g, ' ').trim(); s.chk = false; } });
+  stChanged(true); stListBuild(); stFindCount();
+  toast('✓ ' + n + '곳 바꿨습니다 — ↶ 로 되돌릴 수 있어요');
+}
 /* 끌기 — 손잡이(양 끝 14px)는 길이, 가운데는 옮기기. 이웃 줄을 넘지 않고, 이웃 끝·재생 헤드에 붙는다. */
 function stDown(e, n) {
   const k = +n.dataset.k, s = stSegs()[k]; if (!s) return;
@@ -5374,7 +5619,7 @@ document.addEventListener('keydown', (e) => {
   else if (k === 'Delete' || k === 'Backspace') stAct('del');
   else if (k === 'ArrowLeft') step(e.shiftKey ? -1 : -0.1);
   else if (k === 'ArrowRight') step(e.shiftKey ? 1 : 0.1);
-  else if (k === ' ' && !mod) { ppSetPaused(!PP.paused); stNowPaint(stHeadRel()); }
+  else if (k === ' ' && !mod) { ST.stopAt = 0; ppSetPaused(!PP.paused); stNowPaint(stHeadRel()); }
   else if ((k === 'j' || k === 'J') && !mod) { ppSetPaused(true); step(-1); }
   else if ((k === 'k' || k === 'K') && !mod) { ppSetPaused(true); stNowPaint(stHeadRel()); }
   else if ((k === 'l' || k === 'L') && !mod) { ppSetPaused(false); stNowPaint(stHeadRel()); }
@@ -5389,7 +5634,7 @@ document.addEventListener('keydown', (e) => {
   else if ((k === 's' || k === 'S') && !mod) { ST.snap = !ST.snap; toast(ST.snap ? '붙기 켬 — 끌 때 이웃 줄·재생 헤드에 붙습니다' : '붙기 끔'); }
   else if (k === '+' || k === '=') stZoom(1.4);
   else if (k === '-') stZoom(1 / 1.4);
-  else if (k === 'Enter') { const inp = box.querySelector('.stText'); if (inp && !inp.disabled) inp.focus(); }
+  else if (k === 'Enter') { if (ST.view === 'list') stListFocus(Math.max(0, ST.sel)); else { const inp = box.querySelector('.stText'); if (inp && !inp.disabled) inp.focus(); } }
   else if ((k === 'u' || k === 'U') && !mod) stAct('chk');
   else hit = false;
   if (hit) { e.preventDefault(); e.stopImmediatePropagation(); }
@@ -5407,9 +5652,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.29 20:27';
+    a.title = '판 10.29 20:30';
     var ver = document.createElement('span');
-    ver.textContent = '10.29 20:27';
+    ver.textContent = '10.29 20:30';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
