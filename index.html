@@ -1977,6 +1977,80 @@ const fields = document.getElementById("fields");
 const slideMeta = document.getElementById("slideMeta");
 const fieldNodes = {};
 
+/* ── AI 손보기 (10/29 규효 "제작에도 초안처럼 AI 수정 기능") — 맥 op=ai_edit (generators/ai_edit) ─────────────
+   칸 하나의 글을 작성기가 2~3안으로 고쳐 준다. 고른 안만 칸에 들어간다 (고르기 전엔 아무것도 안 바뀜). */
+const AI_ACTS = {
+  cover:    [["strong", "✨ 더 끌리게 3안"], ["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  hook:     [["strong", "✨ 새 제목 3안"], ["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  heading:  [["polish", "다듬기"], ["strong", "더 끌리게"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  subtitle: [["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  body:     [["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법·띄어쓰기만"], ["custom", "직접 지시"]],
+  caption:  [["polish", "다듬기"], ["short", "더 짧게"], ["strong", "첫 줄 더 끌리게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  subs:     [["fix", "받아쓰기 오타·이름 고치기"], ["custom", "직접 지시"]],
+};
+function aiSheet(kind, getText, setText, ctxOf, title) {
+  if (!(window.plotStudio && plotStudio.on && plotStudio.on())) { toast("맥 연결이 없어 AI 손보기를 못 씁니다"); return; }
+  const old = document.getElementById("aiSheet"); if (old) old.remove();
+  const sh = document.createElement("div"); sh.id = "aiSheet";
+  sh.style.cssText = "position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center";
+  const pn = document.createElement("div");
+  pn.style.cssText = "width:100%;max-width:560px;max-height:82vh;overflow:auto;background:#1c1c1e;color:#f2f2f2;border-radius:16px 16px 0 0;" +
+    "padding:16px 16px calc(16px + env(safe-area-inset-bottom));font:15px/1.45 system-ui,-apple-system,sans-serif;box-sizing:border-box";
+  sh.append(pn);
+  const btn = (label, fn, strong) => {
+    const b = document.createElement("button"); b.type = "button";
+    b.style.cssText = "display:block;width:100%;text-align:left;margin:6px 0;padding:11px 13px;border-radius:11px;border:1px solid rgba(255,255,255,.14);" +
+      "background:" + (strong ? "#f2f2f2;color:#111" : "rgba(255,255,255,.06);color:#f2f2f2") + ";font:inherit;font-weight:600;cursor:pointer;white-space:pre-wrap";
+    b.textContent = label;
+    b.onclick = fn; pn.append(b); return b;
+  };
+  const head = (t) => { const d = document.createElement("div"); d.style.cssText = "font-weight:800;margin:0 2px 8px"; d.textContent = t; pn.append(d); return d; };
+  const close = () => sh.remove();
+  sh.addEventListener("click", (e) => { if (e.target === sh) close(); });
+  const menu = () => {
+    pn.innerHTML = "";
+    head("✨ AI 손보기 — " + (title || kind));
+    const pre = document.createElement("div");
+    pre.style.cssText = "opacity:.7;font-size:13px;white-space:pre-wrap;margin:0 2px 8px;max-height:120px;overflow:auto";
+    pre.textContent = String(getText() || "") || "(비어 있음)"; pn.append(pre);
+    (AI_ACTS[kind] || AI_ACTS.body).forEach(([act, label]) => btn(label, () => { if (act === "custom") ask(); else run(act, ""); }, act === "strong"));
+    btn("닫기", close);
+  };
+  const ask = () => {
+    pn.innerHTML = ""; head("어떻게 고칠까요?");
+    const ta = document.createElement("textarea"); ta.rows = 3; ta.placeholder = "예) 아티스트 이름을 앞으로 · 존댓말로 · 숫자 빼고";
+    ta.style.cssText = "width:100%;box-sizing:border-box;border-radius:10px;padding:10px;font:inherit;background:#2a2a2c;color:#fff;border:1px solid rgba(255,255,255,.2)";
+    pn.append(ta); setTimeout(() => ta.focus(), 50);
+    btn("보내기", () => { if (ta.value.trim()) run("custom", ta.value.trim()); }, true);
+    btn("뒤로", menu);
+  };
+  const run = (act, askTxt) => {
+    pn.innerHTML = ""; const h = head("작성기가 고치는 중… (20~60초)");
+    plotStudio.send("ai_edit", { kind: kind, act: act, text: String(getText() || ""), ask: askTxt, ctx: (ctxOf && ctxOf()) || {} },
+      (step) => { h.textContent = "✨ " + step; })
+      .then((sn) => {
+        pn.innerHTML = ""; head("하나를 고르면 그 칸에 들어갑니다");
+        if (sn.note) { const n = document.createElement("div"); n.style.cssText = "font-size:12.5px;opacity:.75;margin:0 2px 6px"; n.textContent = "📝 " + sn.note; pn.append(n); }
+        (sn.options || []).forEach((o) => btn(o, () => { setText(o); close(); toast("✓ 바꿨습니다 — 마음에 안 들면 그 칸에서 고치세요"); }));
+        btn("다른 손보기", menu); btn("닫기", close);
+      })
+      .catch((e) => { pn.innerHTML = ""; head("못 고쳤습니다 — " + String((e && e.message) || e).slice(0, 120)); btn("다시", menu); btn("닫기", close); });
+  };
+  menu();
+  document.body.append(sh);
+}
+function aiButton(onClick) {
+  const b = document.createElement("button"); b.type = "button"; b.textContent = "✨ AI"; b.className = "aiBtn";
+  b.style.cssText = "margin-left:8px;padding:2px 9px;border-radius:999px;border:1px solid currentColor;background:none;color:inherit;font:inherit;font-size:12px;opacity:.85;cursor:pointer;vertical-align:middle";
+  b.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); onClick(); });
+  return b;
+}
+const AI_FIELD = { title: "cover", subtitle: "subtitle", heading: "heading", body: "body" };
+function aiCtx() {
+  const s = deck && deck.slides[cur] || {}, c = deck && deck.slides[0] || {};
+  return { "카테고리": deck && deck.category || "", "표지 제목": c.title || "", "캡션": String(deck && deck.caption || "").slice(0, 500),
+           "몇 번째 장": cur + 1, "이 장 소제목": s.heading || "", "이 장 본문": s.body || "", "출처": s.credit || "" };
+}
 function field(kind, value, onInput) {
   const k = KIND[kind];
   const wrap = document.createElement("label");
@@ -1992,6 +2066,9 @@ function field(kind, value, onInput) {
   input.value = value || "";
   if (k.multi) input.rows = kind === "body" ? 5 : 3;
   input.addEventListener("input", () => { onInput(input.value); markDirty(); repaint(); });
+  const aiKind = kind === "title" ? (cur === 0 ? "cover" : "heading") : AI_FIELD[kind];
+  if (aiKind) head.appendChild(aiButton(() => aiSheet(aiKind, () => input.value,
+    (v) => { input.value = v; onInput(v); markDirty(); repaint(); }, aiCtx, head.firstChild ? head.firstChild.textContent : kind)));
   wrap.append(head, input);
   fieldNodes[kind] = input;
   return wrap;
@@ -3506,6 +3583,9 @@ function toast(msg) {
 document.getElementById("deckName").addEventListener("input", (e) => { deck.name = e.target.value; markDirty(); });
 document.getElementById("catInput").addEventListener("input", (e) => { deck.category = e.target.value; markDirty(); repaint(); });
 document.getElementById("capInput").addEventListener("input", (e) => { deck.caption = e.target.value; markDirty(); });
+{ const capEl = document.getElementById("capInput");           // 캡션 AI 손보기 (10/29)
+  capEl.insertAdjacentElement("afterend", aiButton(() => aiSheet("caption", () => deck.caption || "",
+    (v) => { deck.caption = v; capEl.value = v; markDirty(); }, aiCtx, "캡션"))); }
 document.getElementById("prev").onclick = () => { closeQuick(); cur = Math.max(0, cur - 1); syncAll(); };
 document.getElementById("next").onclick = () => { closeQuick(); cur = Math.min(deck.slides.length, cur + 1); syncAll(); };
 document.getElementById("delBtn").onclick = () => {

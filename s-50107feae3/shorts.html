@@ -334,7 +334,8 @@ details.formFold>summary{cursor:pointer; font-size:12.5px; color:var(--faint); p
 .ppTab[hidden]{display:none}
 .ppOver .sub{position:absolute; left:110px; width:860px; top:1070px; transform:translateY(-50%) skewX(-10.2deg);
   text-align:center; color:#fff; font-family:'Noto Sans KR','Noto Sans CJK KR',sans-serif; font-weight:400;
-  font-size:54px; line-height:1.25; text-wrap:balance; white-space:pre-line}
+  font-size:54px; line-height:1.25; text-wrap:balance; white-space:pre-line;
+  text-shadow:0 0 2px rgba(0,0,0,.4), 0 2px 4px rgba(0,0,0,.45), 0 0 22px rgba(0,0,0,.4)}   /* 10/29 밝은 화면 — 렌더러 _legible 과 같게 */
 .ppOver[hidden]{display:none}
 .ppSubList{max-height:30vh; overflow:auto; margin:8px 14px 0; flex:none; -webkit-overflow-scrolling:touch}
 .ppSubList[hidden]{display:none}
@@ -1036,7 +1037,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
@@ -1678,7 +1679,7 @@ function check(b) {
   const jl = joinList(b);
   if (jl.some(x => !x.ok)) e.join = '이어 붙일 원본의 주소나 구간을 확인해 주세요.';
   else if (jl.length && b.send) e.join = '이어 붙이기는 「영상 직접 전송」과 같이 쓸 수 없습니다 — 첫 원본도 올리거나 주소로 넣어 주세요.';
-  if (!b.title.trim())  e.title  = '3줄(맨 아래 줄)은 필수입니다.';
+  if (!b.title.trim())  e.title  = '제목을 적어 주세요 (두 줄이 기본).';
   if (!b.source.trim()) e.source = '출처는 필수입니다.';
   return e;
 }
@@ -2140,15 +2141,19 @@ function buildBlock(b) {
         <small>사람이 말하는 장면이면 켜세요. 맥이 구간 말소리를 받아써(무료) 이름·띄어쓰기를 다듬어 입힙니다. 위 「▶ 구간 재생」 화면에서 「말자막 미리 받기」로 먼저 보고 고칠 수도 있어요.</small>
       </span>
     </div>
-    <label>1줄 <span class="opt">— 맨 위 · 선택 (후킹·한마디) · 세 줄은 같은 크기로 이어 읽힙니다</span></label>
-    <input type="text" data-f="hook" placeholder="짧은 한마디">
-    <label>2줄 <span class="opt">— 가운데 (아티스트·누가·무엇)</span></label>
-    <input type="text" data-f="artist" placeholder="아티스트 · 누가·무엇">
-    <label>3줄 <span class="opt">— 맨 아래 · 필수 (곡 제목·영상 제목·내용 무엇이든)</span></label>
-    <input type="text" data-f="title" placeholder="곡 제목 · 영상 제목 · 내용">
+    <label data-r="titleLbl">제목 <span class="opt">— 영상 위 큰 글씨 · 두 줄이 기본 (줄마다 15자 안팎) · 엔터로 줄을 나눕니다 · 세 줄까지</span></label>
+    <textarea data-r="titleBox" rows="2" placeholder="일일 기상캐스터로&#10;나타난 원희"></textarea>
     <div class="hint" data-r="titleErr" hidden></div>
-    <label>피처링 <span class="opt">— 선택, 3줄 옆에 작게 붙습니다</span></label>
+    <details class="lines3"><summary>줄마다 따로 고치기 · 피처링</summary>
+    <label>1줄 <span class="opt">— 맨 위 · 세 줄일 때만</span></label>
+    <input type="text" data-f="hook" placeholder="짧은 한마디">
+    <label>2줄 <span class="opt">— 두 줄이면 윗줄</span></label>
+    <input type="text" data-f="artist" placeholder="윗줄">
+    <label>3줄 <span class="opt">— 맨 아래 · 필수</span></label>
+    <input type="text" data-f="title" placeholder="아랫줄">
+    <label>피처링 <span class="opt">— 선택, 맨 아래 줄 옆에 작게 붙습니다</span></label>
     <input type="text" data-f="feat" placeholder="(feat. ...)">
+    </details>
     <label>음원 <span class="opt">— 선택 · 화면엔 안 나옴 · 영상에 흐르는 곡 「아티스트 - 곡」 (가사 찾기에 씀). 세 줄은 이름 칸에 얽매이지 않고 자유롭게</span></label>
     <input type="text" data-f="song" placeholder="한로로 - 사랑하게 될 거야">
     <div data-r="storyBox" hidden>
@@ -2248,6 +2253,19 @@ function buildBlock(b) {
       importText(t, true);
     });
   });
+
+  // 제목 한 칸 (10/29 규효 "숏폼 제작 불편") — 적은 줄을 아래 칸부터 채운다 (두 줄 = 2줄·3줄, 세 줄 = 1·2·3줄)
+  const tbox = body.querySelector('[data-r=titleBox]');
+  if (tbox) {
+    tbox.value = titleLines(b);
+    tbox.addEventListener('input', () => { setTitleLines(b, tbox.value); sync(); refresh(); });
+    tbox.addEventListener('focus', () => { active = blocks.indexOf(b); refresh(); });
+    const lbl = body.querySelector('[data-r=titleLbl]');
+    if (lbl && typeof aiButton === 'function') lbl.appendChild(aiButton(() => aiSheet('hook', () => titleLines(b).replace(/\n/g, ' / '),
+      (v) => { setTitleLines(b, String(v).split(/\s*\/\s*|\n|\|/).join('\n')); tbox.value = titleLines(b); sync(); refresh(); },
+      () => ({ '카테고리': (b.cat === '__custom__' ? b.custom : b.cat) || '', '원본': b.url || '', '구간': (b.start || '') + '-' + (b.end || ''),
+               '음원': b.song || '', '출처': b.source || '', '캡션': String(b.caption || '').slice(0, 400) }), '숏폼 제목')));
+  }
 
   head.onclick = () => {
     const open = root.classList.contains('open');
@@ -2511,11 +2529,19 @@ function undoPull(b) {
 }
 
 /* 값 → DOM 반영 (다시 그리지 않는다) */
+function titleLines(b) { return [b.hook, b.artist, b.title].map(x => String(x || '').trim()).filter(Boolean).join('\n'); }
+function setTitleLines(b, raw) {
+  const xs = String(raw || '').split('\n').map(x => x.trim()).filter(Boolean).slice(0, 3);
+  const z = ['', '', ''].slice(0, 3 - xs.length).concat(xs);
+  b.hook = z[0]; b.artist = z[1]; b.title = z[2];
+}
 function sync() {
   blocks.forEach(b => {
     const root = document.querySelector('.block[data-id="' + b.id + '"]');
     if (!root) return;
     const body = root._parts.body;
+    const tb = body.querySelector('[data-r=titleBox]');
+    if (tb && document.activeElement !== tb && tb.value !== titleLines(b)) tb.value = titleLines(b);
     body.querySelectorAll('[data-f]').forEach(inp => {
       const v = inp.dataset.f === 'storyBed' ? b.storyBed !== false : b[inp.dataset.f];
       if (inp.type === 'checkbox') { if (inp.checked !== !!v) inp.checked = !!v; }
@@ -4341,6 +4367,75 @@ function copy(text, msg) {
 }
 
 let toastT;
+/* ── AI 손보기 (10/29 규효 "제작에도 초안처럼 AI 수정 기능") — 맥 op=ai_edit (generators/ai_edit) ─────────────
+   칸 하나의 글을 작성기가 2~3안으로 고쳐 준다. 고른 안만 칸에 들어간다 (고르기 전엔 아무것도 안 바뀜). */
+const AI_ACTS = {
+  cover:    [["strong", "✨ 더 끌리게 3안"], ["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  hook:     [["strong", "✨ 새 제목 3안"], ["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  heading:  [["polish", "다듬기"], ["strong", "더 끌리게"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  subtitle: [["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  body:     [["polish", "다듬기"], ["short", "더 짧게"], ["fix", "맞춤법·띄어쓰기만"], ["custom", "직접 지시"]],
+  caption:  [["polish", "다듬기"], ["short", "더 짧게"], ["strong", "첫 줄 더 끌리게"], ["fix", "맞춤법만"], ["custom", "직접 지시"]],
+  subs:     [["fix", "받아쓰기 오타·이름 고치기"], ["custom", "직접 지시"]],
+};
+function aiSheet(kind, getText, setText, ctxOf, title) {
+  if (!(window.plotStudio && plotStudio.on && plotStudio.on())) { toast("맥 연결이 없어 AI 손보기를 못 씁니다"); return; }
+  const old = document.getElementById("aiSheet"); if (old) old.remove();
+  const sh = document.createElement("div"); sh.id = "aiSheet";
+  sh.style.cssText = "position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center";
+  const pn = document.createElement("div");
+  pn.style.cssText = "width:100%;max-width:560px;max-height:82vh;overflow:auto;background:#1c1c1e;color:#f2f2f2;border-radius:16px 16px 0 0;" +
+    "padding:16px 16px calc(16px + env(safe-area-inset-bottom));font:15px/1.45 system-ui,-apple-system,sans-serif;box-sizing:border-box";
+  sh.append(pn);
+  const btn = (label, fn, strong) => {
+    const b = document.createElement("button"); b.type = "button";
+    b.style.cssText = "display:block;width:100%;text-align:left;margin:6px 0;padding:11px 13px;border-radius:11px;border:1px solid rgba(255,255,255,.14);" +
+      "background:" + (strong ? "#f2f2f2;color:#111" : "rgba(255,255,255,.06);color:#f2f2f2") + ";font:inherit;font-weight:600;cursor:pointer;white-space:pre-wrap";
+    b.textContent = label;
+    b.onclick = fn; pn.append(b); return b;
+  };
+  const head = (t) => { const d = document.createElement("div"); d.style.cssText = "font-weight:800;margin:0 2px 8px"; d.textContent = t; pn.append(d); return d; };
+  const close = () => sh.remove();
+  sh.addEventListener("click", (e) => { if (e.target === sh) close(); });
+  const menu = () => {
+    pn.innerHTML = "";
+    head("✨ AI 손보기 — " + (title || kind));
+    const pre = document.createElement("div");
+    pre.style.cssText = "opacity:.7;font-size:13px;white-space:pre-wrap;margin:0 2px 8px;max-height:120px;overflow:auto";
+    pre.textContent = String(getText() || "") || "(비어 있음)"; pn.append(pre);
+    (AI_ACTS[kind] || AI_ACTS.body).forEach(([act, label]) => btn(label, () => { if (act === "custom") ask(); else run(act, ""); }, act === "strong"));
+    btn("닫기", close);
+  };
+  const ask = () => {
+    pn.innerHTML = ""; head("어떻게 고칠까요?");
+    const ta = document.createElement("textarea"); ta.rows = 3; ta.placeholder = "예) 아티스트 이름을 앞으로 · 존댓말로 · 숫자 빼고";
+    ta.style.cssText = "width:100%;box-sizing:border-box;border-radius:10px;padding:10px;font:inherit;background:#2a2a2c;color:#fff;border:1px solid rgba(255,255,255,.2)";
+    pn.append(ta); setTimeout(() => ta.focus(), 50);
+    btn("보내기", () => { if (ta.value.trim()) run("custom", ta.value.trim()); }, true);
+    btn("뒤로", menu);
+  };
+  const run = (act, askTxt) => {
+    pn.innerHTML = ""; const h = head("작성기가 고치는 중… (20~60초)");
+    plotStudio.send("ai_edit", { kind: kind, act: act, text: String(getText() || ""), ask: askTxt, ctx: (ctxOf && ctxOf()) || {} },
+      (step) => { h.textContent = "✨ " + step; })
+      .then((sn) => {
+        pn.innerHTML = ""; head("하나를 고르면 그 칸에 들어갑니다");
+        if (sn.note) { const n = document.createElement("div"); n.style.cssText = "font-size:12.5px;opacity:.75;margin:0 2px 6px"; n.textContent = "📝 " + sn.note; pn.append(n); }
+        (sn.options || []).forEach((o) => btn(o, () => { setText(o); close(); toast("✓ 바꿨습니다 — 마음에 안 들면 그 칸에서 고치세요"); }));
+        btn("다른 손보기", menu); btn("닫기", close);
+      })
+      .catch((e) => { pn.innerHTML = ""; head("못 고쳤습니다 — " + String((e && e.message) || e).slice(0, 120)); btn("다시", menu); btn("닫기", close); });
+  };
+  menu();
+  document.body.append(sh);
+}
+function aiButton(onClick) {
+  const b = document.createElement("button"); b.type = "button"; b.textContent = "✨ AI"; b.className = "aiBtn";
+  b.style.cssText = "margin-left:8px;padding:2px 9px;border-radius:999px;border:1px solid currentColor;background:none;color:inherit;font:inherit;font-size:12px;opacity:.85;cursor:pointer;vertical-align:middle";
+  b.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); onClick(); });
+  return b;
+}
+
 function toast(msg) {
   const t = $('#toast');
   t.textContent = msg; t.classList.add('on');
@@ -4931,6 +5026,7 @@ function stBuild() {
     '<span class="stHint">' + (stPrNow() ? '눈금 끌기=재생 헤드 · 휠=이동 · ⌥/⌘+휠=확대 · Space 재생 · J K L · C 자르기 · I/O · ↑↓ 편집점 · U 확인할 줄 · \\ 맞춤 · S 붙기'
       : '타임라인을 밀어 이동 · 블록을 끌어 옮기기 · 양 끝으로 길이') + '</span>' +
     '<button type="button" class="stB stChk" data-st="chk" hidden title="확인할 줄로 (U) — 받아쓰기가 자신 없었거나 유튜브 자막과 다른 줄"></button>' +
+    '<button type="button" class="stB" data-st="ai" title="AI 로 받아쓰기 오타·이름 고치기 (줄·시간은 그대로)">✨ AI</button>' +
     '<button type="button" class="stB" data-st="undo" title="되돌리기 (⌘Z)">↶</button>' +
     '<button type="button" class="stB" data-st="zout" title="축소 (-)">−</button><button type="button" class="stB" data-st="zin" title="확대 (+)">＋</button></div>' +
     '<div class="stWrap"><div class="stScroll"><div class="stInner"><div class="stRuler"></div><div class="stTrack"></div></div></div><i class="stHeadLine"></i></div>' +
@@ -5140,6 +5236,18 @@ function stAct(a) {
   const segs = stSegs(), s = segs[ST.sel], t = stHeadRel();
   if (a === 'play') { ppSetPaused(!PP.paused); stNowPaint(t); return; }
   if (a === 'undo') return stUndo();
+  if (a === 'ai') {                                   // 10/29 자막 AI 손보기 — 줄 수·시간 그대로, 글만
+    const b = PP.b;
+    aiSheet('subs', () => stSegs().map((x) => x.text).join('\n'), (v) => {
+      const xs = String(v).split('\n'), sg = stSegs();
+      if (xs.length !== sg.length) { toast('줄 수가 달라 넣지 않았습니다'); return; }
+      stPush();
+      sg.forEach((x, i) => { if (x.text !== xs[i]) { x.text = xs[i]; x.chk = false; } });
+      b.subsRef.edited = true; ppSubsSave(); stPaintBlocks(); stChkPaint();
+    }, () => ({ '카테고리': (b && (b.cat === '__custom__' ? b.custom : b.cat)) || '', '제목': b ? [b.hook, b.artist, b.title].filter(Boolean).join(' / ') : '',
+                '출처': (b && b.source) || '', '음원': (b && b.song) || '', '원본': (b && b.url) || '' }), '말자막');
+    return;
+  }
   if (a === 'chk') {                                  // 10/27 다음 확인할 줄로 (재생 헤드 뒤 첫 줄, 없으면 처음부터)
     const i = segs.findIndex((x) => x.chk && x.start > t + 0.05), k = i >= 0 ? i : segs.findIndex((x) => x.chk);
     if (k < 0) { toast('확인할 줄이 없습니다'); return; }
@@ -5299,9 +5407,9 @@ window.addEventListener('resize', () => { if ($('#ppSubList') && $('#ppSubList')
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.29 13:24';
+    a.title = '판 10.29 14:09';
     var ver = document.createElement('span');
-    ver.textContent = '10.29 13:24';
+    ver.textContent = '10.29 14:09';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
