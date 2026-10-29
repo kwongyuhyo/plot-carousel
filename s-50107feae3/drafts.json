@@ -613,9 +613,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793273980/hw6o5ges4zctr653gyfj.jpg",
      "key": "q1UlFoMomxI@58.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-29T20:39+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793274187/plot_studio/twywnzpubxk7lirjbhnv.mp4",
+     "at": "2026-10-29T20:43+09:00",
+     "file": "KeuLeoSwi_YeopESeo_PpiGeuDeog_BuLeun_Mi_ONeulUi_NoLae_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "SPOTLIGHT",
@@ -2581,7 +2582,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-29T20:39+09:00"
+  "at": "2026-10-29T20:43+09:00"
  },
  "queue": {
   "next": "2026-10-29T20:47+09:00",
