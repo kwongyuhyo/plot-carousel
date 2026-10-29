@@ -3700,7 +3700,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var w = window.open(u, '_blank');
     if (!w) location.href = u;
   }
-  function plotAction(code, label, confirmed, token) {
+  function plotAction(code, label, confirmed, token, text) {
     actMark(code);
     var ch = chGet();
     // 10/14 규효 "앱에서 누르면 텔레그램이 열린다" — 맡기기와 같은 표(plot_evals)에 kind='act' 로 바로 (collectors/orders.pull_acts)
@@ -3720,7 +3720,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       sign.then(function (sig) {
         var rec = { id: 'act:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6), kind: 'act', draft_date: kstDay(new Date()), draft_key: null,
           source_id: code, verdict: {}, reason: '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
-          snapshot: { code: code, confirmed: !!confirmed, token: token || '', at: at, sig: sig, label: label || '' } };
+          snapshot: { code: code, confirmed: !!confirmed, token: token || '', at: at, sig: sig, label: label || '', text: text || '' } };
         return sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } });
       }).then(function () { toast((label || '보냈습니다') + ' — 맥이 1~5분 안에 받습니다'); })
         .catch(function (er) { toast('못 보냈습니다 — ' + String(er && er.message || er).slice(0, 60)); });
@@ -3729,7 +3729,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (ch.url && ch.key) {
       fetch(ch.url.replace(/\/+$/, '') + '/a', {
         method: 'POST', headers: { 'content-type': 'application/json', 'x-app-key': ch.key },
-        body: JSON.stringify({ code: code, confirmed: !!confirmed, token: token || '' })
+        body: JSON.stringify({ code: code, confirmed: !!confirmed, token: token || '', text: text || '' })
       }).then(function (r) { return r.json(); }).then(function (d) {
         if (d && d.ok) toast((label || '보냈습니다') + ' — 맥이 1분 안에 받습니다 (결과는 텔레그램으로)');
         else viaTelegram(code, true);
@@ -3898,7 +3898,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       acts.push(['ev', hasEv ? '자료 장 다시 뜨기' : '자료 장 붙이기', '원문 영상 장면·게시물(없으면 기사 첫 화면)을 캡처해 글 없는 장으로 넣습니다 (1~2분 · 다시 그려 올림)']);
     }
     // 10/20 — 채택·버림은 카드 아래 '바로 올림 · 손보면 올림 · 안 올림' + 이유 칩 한 곳으로 (둘이 따로 있어 헷갈렸다)
-    if (!DR_DAY && ['mag', 'claude'].indexOf((it.source || {}).kind || 'mag') >= 0) acts.push(['rd', '다시 쓰기', '작성기가 이 초안을 처음부터 다시 씁니다 (3~5분)']);
+    if (!DR_DAY && ['mag', 'claude'].indexOf((it.source || {}).kind || 'mag') >= 0) acts.push(['rd', '다시 쓰기 (방향 달기)', '고칠 방향을 적어 보내면 작성기가 그대로 고쳐 씁니다 — 비워 두면 처음부터 다시 (3~5분)']);
     if (!DR_DAY && kind === 'card' && (it.source || {}).kind === 'claude' && it.corner !== 'tteolgi') {   // 10/20 기사형 표지 한 장 ↔ 장 붙이기
       var nCard = (((it.card || {}).form || '').match(/^\[(커버|슬라이드)\]/gm) || []).length;
       if (nCard <= 1) acts.push(['ex', '본문 장 붙여 다시', '표지 한 장 초안에 본문 4~8장을 붙여 다시 씁니다 (5~10분)']);
@@ -3912,7 +3912,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (a === 'ev') { plotAction('ev-' + it.key, '자료 장 붙이기'); return true; }
     if (a === 'que') { openPublish(it, '', true); return true; }
     if (a === 'ok') { plotAction('ok-' + it.key, '채택'); return true; }
-    if (a === 'rd') { plotAction('rd-' + it.key, '다시 쓰기'); return true; }
+    if (a === 'rd') {                               // 10/29 규효 "수정 방향성 다는 거 플롯 제작앱에도"
+      var dir = window.prompt('어떻게 고칠까요? 예) 각도를 이 앨범의 첫 곡 중심으로 · 제목 더 짧게 · 사진을 공연 것으로 · 숏폼 구간을 후렴으로\n비워 두고 확인하면 처음부터 다시 씁니다.', '');
+      if (dir == null) return true;
+      dir = dir.replace(/\s+/g, ' ').trim().slice(0, 600);
+      plotAction('rd-' + it.key, dir ? '방향 달아 다시 쓰기' : '다시 쓰기', false, '', dir);
+      return true;
+    }
     if (a === 'ex') { plotAction('ex-' + it.key, '본문 장 붙여 다시'); return true; }
     if (a === 'fd') { plotAction('fd-' + it.key, '표지 한 장으로 다시'); return true; }
     if (a === 'no') {
@@ -4262,9 +4268,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.29 19:41';
+    a.title = '판 10.29 20:10';
     var ver = document.createElement('span');
-    ver.textContent = '10.29 19:41';
+    ver.textContent = '10.29 20:10';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
