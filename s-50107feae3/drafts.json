@@ -1474,9 +1474,50 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793258508/q1umk6r5x80fgtem2knk.jpg",
      "key": "D968qfUZMUE@0.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-29T16:22+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793258741/plot_studio/ye6csndwv6qrfd6jtdt3.mp4",
+     "at": "2026-10-29T16:25+09:00",
+     "file": "MiHon_Aen_BiHonEuLo__A2O_LITEUi_Cheos_SoJ_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793258743861-e64d954e",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 6.84,
+        "text": "NEON AND BEYOND A2O"
+       },
+       {
+        "start": 6.84,
+        "end": 8.02,
+        "text": "LITE WE KEEP IT"
+       },
+       {
+        "start": 8.02,
+        "end": 15.65,
+        "text": "TIGHT NEON AND"
+       },
+       {
+        "start": 15.65,
+        "end": 20.71,
+        "text": "BEYOND A2O LITE WE"
+       },
+       {
+        "start": 20.71,
+        "end": 22.75,
+        "text": "KEEP IT TIGHT NEON"
+       },
+       {
+        "start": 22.75,
+        "end": 27.79,
+        "text": "AND BEYOND A2O LITE"
+       },
+       {
+        "start": 27.79,
+        "end": 28.39,
+        "text": "WE KEEP IT TIGHT"
+       }
+      ]
+     }
     }
    },
    "pick": {
@@ -1887,10 +1928,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-29T16:22+09:00"
+  "at": "2026-10-29T16:25+09:00"
  },
  "queue": {
-  "next": "2026-10-29T16:24+09:00",
+  "next": "2026-10-29T16:27+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-29T15:14+09:00"
