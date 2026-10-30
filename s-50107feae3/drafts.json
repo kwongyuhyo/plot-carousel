@@ -840,6 +840,142 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-7a00207a",
+    "account": "@규효 공유 · @fastpapermag",
+    "url": "https://www.instagram.com/p/DfEAyYhFJ8-/?rpxt=cmVkY3FoY2dtMTZw",
+    "image": null,
+    "head": "빅뱅이 2026 MAMA에서 아기공룡 둘리와 협업 무대 — 29일 미디어 데이 공개",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T12:20+09:00",
+   "key": "562ed4af",
+   "by": "claude",
+   "subjects": [
+    "빅뱅"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "20주년 빅뱅의 MAMA 무대 짝은 1983년생 국민 캐릭터 둘리",
+    "why": "규효 맡김 · 매거진 두 곳(@fastpapermag·@hiptake_)이 다룬 의외의 조합, 지난 MAMA 출연 글과 다른 새 각도"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T12:20+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n데뷔 20주년을 맞은 빅뱅(@bigbang_official)이 '2026 MAMA AWARDS'에서 아기공룡 둘리와 한 무대를 꾸밉니다.\n\n지난 29일 CJ ENM이 연 미디어 데이에서 공개된 협업인데요, 1983년 만화로 태어난 둘리와 2006년 데뷔한 빅뱅, 저마다 한 세대를 대표해 온 두 이름이 한자리에 서게 됐습니다.\n\n올해 코첼라와 월드투어로 이어진 빅뱅의 20주년이 이번엔 국민 캐릭터와 함께 MAMA로 향하는 셈입니다.\n\n'2026 MAMA AWARDS'는 11월 20일과 21일 일본 교세라 돔 오사카에서 열립니다.\n\n#PLOT #빅뱅 #BIGBANG #둘리 #아기공룡둘리 #마마어워즈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793330411/rjm79ezgmc7ddqkh9pcr.jpg\n제목: 빅뱅이 MAMA에서|둘리를 만납니다\n부제: 데뷔 20주년 특별 협업 무대\n출처: @bigbang_2xx6\n",
+    "caption": "데뷔 20주년을 맞은 빅뱅(@bigbang_official)이 '2026 MAMA AWARDS'에서 아기공룡 둘리와 한 무대를 꾸밉니다.\n\n지난 29일 CJ ENM이 연 미디어 데이에서 공개된 협업인데요, 1983년 만화로 태어난 둘리와 2006년 데뷔한 빅뱅, 저마다 한 세대를 대표해 온 두 이름이 한자리에 서게 됐습니다.\n\n올해 코첼라와 월드투어로 이어진 빅뱅의 20주년이 이번엔 국민 캐릭터와 함께 MAMA로 향하는 셈입니다.\n\n'2026 MAMA AWARDS'는 11월 20일과 21일 일본 교세라 돔 오사카에서 열립니다.\n\n#PLOT #빅뱅 #BIGBANG #둘리 #아기공룡둘리 #마마어워즈",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330411/rjm79ezgmc7ddqkh9pcr.jpg",
+      "credit": "@bigbang_2xx6",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501695/hftr2eysv3aoz3e5ok8j.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330413/wgjds2huennlp9gbn6wr.jpg",
+      "credit": "@bigbang_2xx6",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501749/vfobvljam4jjdoefny9p.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330416/dkckxdujmwismpfyniw6.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501758/cnpbrylm9ioqdpztdvw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330418/pruzbksaeugdfltraykc.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792293183/g7prhlwjas5dcehronke.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330411/rjm79ezgmc7ddqkh9pcr.jpg",
+      "credit": "@bigbang_2xx6",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501695/hftr2eysv3aoz3e5ok8j.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330413/wgjds2huennlp9gbn6wr.jpg",
+      "credit": "@bigbang_2xx6",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501749/vfobvljam4jjdoefny9p.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330416/dkckxdujmwismpfyniw6.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792501758/cnpbrylm9ioqdpztdvw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330418/pruzbksaeugdfltraykc.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792293183/g7prhlwjas5dcehronke.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "빅뱅이 MAMA에서|둘리를 만납니다",
+      "sub": "데뷔 20주년 특별 협업 무대"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "20주년 빅뱅의|무대 짝꿍은 둘리",
+      "sub": "2026 MAMA AWARDS"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "빅뱅 X 아기공룡 둘리,|MAMA에서 만난다",
+      "sub": "11월 교세라 돔 오사카"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼은 비움 — 빅뱅·둘리 협업 장면이 담긴 공식 영상(Mnet K-POP 등)이 아직 없음. 티저가 나오면 그때 숏폼으로",
+     "표지 사진은 빅뱅 단체 화보만 — 둘리 공식 이미지(둘리나라)를 넣을지 앱에서 확인"
+    ],
+    "research": [
+     {
+      "title": "중앙이코노미뉴스 — “빅뱅과 아기공룡 둘리가 만난다” 데뷔 20주년 특별 무대 예고",
+      "link": "https://www.joongangenews.com/news/articleView.html?idxno=559853"
+     },
+     {
+      "title": "싱글리스트 — 빅뱅·둘리→엔하이픈·‘듄3’...‘2026 MAMA AWARDS’ 스페셜 문화 컬래버 예고",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=777640"
+     },
+     {
+      "title": "PAP Magazine — BIGBANG Meets Dooly at 2026 MAMA",
+      "link": "https://www.pap-magazine.com/en/article/bigbang-dooly-2026-mama-awards-collaboration"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330424/d2rxaq0z9sxdh2l61wrq.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330423/krp4lbi0xowfrroz0smd.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330426/rbvygvu3nf7usnw9h1a9.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330426/d5xjvighu56vkyebosh3.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793330424/d2rxaq0z9sxdh2l61wrq.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T12:20+09:00",
+     "v": {
+      "A": "b9213a73",
+      "B": "18728b5e",
+      "C": "2397bb01"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1014,14 +1150,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T10:39+09:00"
+  "at": "2026-10-30T12:20+09:00"
  },
  "queue": {
-  "next": "2026-10-30T10:41+09:00",
+  "next": "2026-10-30T12:22+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-29T19:47+09:00"
