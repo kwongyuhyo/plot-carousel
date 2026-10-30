@@ -635,7 +635,7 @@
      },
      "vkey": "27d9855d16a5",
      "v": {
-      "A": "c1278176"
+      "A": "8bfb2fe2"
      }
     }
    },
@@ -2609,6 +2609,86 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-e7b7c2da",
+    "account": "@규효 공유",
+    "url": "https://www.youtube.com/watch?v=ATQn2UhDPVw",
+    "image": null,
+    "head": "베이비몬스터 'DESERVE' 잇츠라이브 밴드 라이브, 사흘 만에 250만 회",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T18:40+09:00",
+   "key": "8a0e2cb7",
+   "by": "claude",
+   "subjects": [
+    "베이비몬스터"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "팝 발라드 'DESERVE'를 밴드와 라이브로 — 잇츠라이브 네 번째 출연, 사흘 만에 250만 회",
+    "why": "규효 맡김 · 발매 일주일 만의 밴드 라이브가 빠르게 퍼지는 중"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T18:40+09:00",
+   "corner": "song",
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=ATQn2UhDPVw\n구간: 1:05-1:35\n곡: 베이비몬스터 'DESERVE'\n아티스트: 밴드 소리로 다시 부른\n피처링:\n후킹: \n출처: it's Live\n음원: BABYMONSTER - DESERVE",
+    "caption": "베이비몬스터가 신곡 'DESERVE'를 밴드와 함께 라이브로 불렀습니다.\n\n지난 23일 나온 'DESERVE'는 섬세한 보컬을 앞세운 팝 발라드인데요, 양현석 총괄 프로듀서는 템포는 느려도 지금까지의 어떤 곡보다 에너지가 강한 곡이라고 소개했습니다. 그 곡을 27일 it's Live 에서 밴드 편곡으로 다시 들려줬고, 영상은 사흘 만에 유튜브 조회 250만 회를 넘겼습니다.\n\n멤버들은 영상 끝에서 이번이 잇츠라이브 네 번째 출연이라며, 후렴에서 감정이 터지는 곡이고 이어폰을 끼고 혼자 듣기 좋은 노래라고 소개했습니다.\n\n#PLOT #베이비몬스터 #BABYMONSTER #DESERVE #잇츠라이브",
+    "hooks": {
+     "A": "밴드 소리로 다시 부른 / 베이비몬스터 'DESERVE'",
+     "B": "발매 나흘 만에 / 밴드 라이브로 다시",
+     "C": "이어폰 끼고 / 혼자 듣기 좋다던 발라드"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=ATQn2UhDPVw",
+     "credit": "it's Live",
+     "range": [
+      65.0,
+      95.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 1:05-1:35 구간 — 자막에 가사 줄이 없어(멘트만 3:27~) 후렴인지 확인 못 함. 직접 들어 보고 옮겨 주세요",
+     "클립 위험: 낮음~중간 — it's Live (음악 라이브 채널 · 30초 구간)",
+     "구간 확인 — 후렴 첫 줄 시각을 도구로 못 뽑아 1:05-1:35 로 어림잡음. 후렴 첫 줄에 맞춰 앞뒤로 옮겨 주세요"
+    ],
+    "research": [
+     {
+      "title": "[4K] BABYMONSTER(베이비몬스터) “DESERVE” Band LIVE | it's Live (2026-10-27)",
+      "link": "https://www.youtube.com/watch?v=ATQn2UhDPVw"
+     },
+     {
+      "title": "Korea Times — BABYMONSTER to return with slow-tempo single 'DESERVE'",
+      "link": "https://www.koreatimes.co.kr/entertainment/k-pop/20261014/babymonster-to-return-with-slow-tempo-single-deserve"
+     },
+     {
+      "title": "iMBC 연예 — '음중' 베이비몬스터, 'DESERVE' 첫 음방 무대 장악",
+      "link": "https://enews.imbc.com/News/ViewAmp/522387"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/ATQn2UhDPVw/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793353270/nymuuwdlzvfhqcysrte4.jpg",
+     "key": "ATQn2UhDPVw@65.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-30T18:41+09:00"
+    }
+   },
+   "corner_name": "오늘의 노래",
+   "corner_no": 1
   }
  ],
  "skipped": [],
@@ -2675,7 +2755,7 @@
     "need_today": 3,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -2787,10 +2867,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T18:20+09:00"
+  "at": "2026-10-30T18:41+09:00"
  },
  "queue": {
-  "next": "2026-10-30T18:22+09:00",
+  "next": "2026-10-30T18:43+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
