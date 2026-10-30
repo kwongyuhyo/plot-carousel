@@ -1303,9 +1303,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793335475/u4dfvnexlw2qlburpb9h.jpg",
      "key": "TiOpGgCXeT0@40.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-30T13:44+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793335623/plot_studio/rmu5gki6cu3jay3ehpbg.mp4",
+     "at": "2026-10-30T13:47+09:00",
+     "file": "MelLon_SinIn_HuBoE_O_SiSeuTemSeoUlUi_EumA_News_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "소식"
@@ -1487,7 +1488,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T13:44+09:00"
+  "at": "2026-10-30T13:47+09:00"
  },
  "queue": {
   "next": "2026-10-30T14:23+09:00",
