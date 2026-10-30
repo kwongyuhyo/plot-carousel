@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-30 19:05 KST",
+ "generated_at": "2026-10-30 22:04 KST",
  "weeks": [
   {
    "week": "2026-W36",
@@ -1676,11 +1676,41 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-30 15:06 KST"
+  "daily": "2026-10-30 19:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-30T18:38:41+09:00",
+  "fetched_at": "2026-10-30T21:58:43+09:00",
   "posts": [
+   {
+    "t": "2026-10-30T20:55+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "리센느(@rescene_official)가 미니 4집 [PULSE]의 타"
+   },
+   {
+    "t": "2026-10-30T20:45+09:00",
+    "type": "VIDEO",
+    "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다."
+   },
+   {
+    "t": "2026-10-30T20:34+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "포스트 말론이 미발매 신곡 한 소절을 직접 공개했습니다."
+   },
+   {
+    "t": "2026-10-30T20:28+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)"
+   },
+   {
+    "t": "2026-10-30T20:20+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다."
+   },
+   {
+    "t": "2026-10-30T19:51+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "고 신해철에게 은관문화훈장이 추서됐습니다."
+   },
    {
     "t": "2026-10-30T13:23+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2075,19 +2105,14 @@
     "t": "2026-10-14T21:22+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "빅나티(본명 서동현)가 10월 14일 팬들과의 단체 메시지방에서 직접 결"
-   },
-   {
-    "t": "2026-10-09T19:45+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "스윙스가 인디고의 새 멤버를 예고했습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 234,
-  "posted": 65,
-  "posts": 86,
+  "drafts": 243,
+  "posted": 69,
+  "posts": 92,
   "rate": 0.28,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
@@ -2098,13 +2123,13 @@
     "mult": null
    },
    "재미": {
-    "drafts": 19,
+    "drafts": 21,
     "posted": 1,
     "mult": 2.05
    },
    "정보": {
-    "drafts": 149,
-    "posted": 54,
+    "drafts": 156,
+    "posted": 58,
     "mult": 0.99
    },
    "클립": {
@@ -2145,8 +2170,8 @@
   },
   "corners": {
    "news": {
-    "drafts": 132,
-    "posted": 43,
+    "drafts": 138,
+    "posted": 47,
     "mult": 1.05
    },
    "mal": {
@@ -2160,7 +2185,7 @@
     "mult": null
    },
    "song": {
-    "drafts": 8,
+    "drafts": 9,
     "posted": 0,
     "mult": null
    },
@@ -2170,7 +2195,7 @@
     "mult": 0.9
    },
    "followup": {
-    "drafts": 15,
+    "drafts": 16,
     "posted": 7,
     "mult": 0.93
    },
@@ -2190,7 +2215,7 @@
     "mult": 1.08
    },
    "tickets": {
-    "drafts": 3,
+    "drafts": 4,
     "posted": 3,
     "mult": 0.78
    },
@@ -2223,45 +2248,6 @@
   ],
   "recent": [
    {
-    "day": "2026-10-27",
-    "lane": "정보",
-    "who": "스윙스",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "cee2e20a",
-    "posted": "DfBcPzQmdTx",
-    "head": "스윙스(@itsjustswings)가 첫 영화로 청룡영화상 신인남우상 후보에 올랐습니다.",
-    "url": "https://www.instagram.com/p/DfBcPzQmdTx/",
-    "mult": 0.67
-   },
-   {
-    "day": "2026-10-27",
-    "lane": "정보",
-    "who": "제이지",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "debea971",
-    "posted": "DfAH-gwGfaP",
-    "head": "제이지가 내년 2월 슈퍼볼 하프타임 쇼 무대에 오릅니다.",
-    "url": "https://www.instagram.com/p/DfAH-gwGfaP/",
-    "mult": 0.49
-   },
-   {
-    "day": "2026-10-28",
-    "lane": "정보",
-    "who": "다이나믹 듀오",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "2bd0d62f",
-    "posted": "DfCGLaElNCC",
-    "head": "다이나믹 듀오가 홍대입구역 앞 광장에서 무료로 공연합니다.",
-    "url": "https://www.instagram.com/p/DfCGLaElNCC/",
-    "mult": 0.75
-   },
-   {
     "day": "2026-10-29",
     "lane": "정보",
     "who": "지코",
@@ -2269,9 +2255,9 @@
     "grade": "A",
     "corner": "news",
     "key": "070b17a8",
-    "posted": "DfEVs9EFKvw",
-    "head": "지코(@woozico0914)가 일본 연말 페스티벌 '카운트다운 재팬 26/27' 무대에 ",
-    "url": "https://www.instagram.com/p/DfEVs9EFKvw/",
+    "posted": "DfHec_1FPfB",
+    "head": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후",
+    "url": "https://www.instagram.com/p/DfHec_1FPfB/",
     "mult": null
    },
    {
@@ -2282,9 +2268,9 @@
     "grade": "A",
     "corner": "anniv",
     "key": "18a9fe77",
-    "posted": "DfEzjQslCL5",
-    "head": "뉴진스(@newjeans_official) 'ETA' 뮤직비디오 감독판 소송에서 2심도 어",
-    "url": "https://www.instagram.com/p/DfEzjQslCL5/",
+    "posted": "DfHgTR2EaR9",
+    "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다.",
+    "url": "https://www.instagram.com/reel/DfHgTR2EaR9/",
     "mult": null
    },
    {
@@ -2314,6 +2300,19 @@
     "mult": null
    },
    {
+    "day": "2026-10-29",
+    "lane": "정보",
+    "who": "뉴진스",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "5eb8e20a",
+    "posted": "DfHdjJeD2-P",
+    "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다.",
+    "url": "https://www.instagram.com/p/DfHdjJeD2-P/",
+    "mult": null
+   },
+   {
     "day": "2026-10-30",
     "lane": "정보",
     "who": "빅뱅",
@@ -2324,6 +2323,32 @@
     "posted": "DfGtxidmfJ_",
     "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS'에서 아기공룡 둘",
     "url": "https://www.instagram.com/p/DfGtxidmfJ_/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-30",
+    "lane": "정보",
+    "who": "포스트 말론",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "7e3fe5b0",
+    "posted": "DfHfH-1DLkZ",
+    "head": "포스트 말론이 미발매 신곡 한 소절을 직접 공개했습니다.",
+    "url": "https://www.instagram.com/p/DfHfH-1DLkZ/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-30",
+    "lane": "정보",
+    "who": "신해철",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "5156da3b",
+    "posted": "DfHaJc-FAoA",
+    "head": "고 신해철에게 은관문화훈장이 추서됐습니다.",
+    "url": "https://www.instagram.com/p/DfHaJc-FAoA/",
     "mult": null
    }
   ]
