@@ -1978,6 +1978,216 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-01d7b17a",
+    "account": "@갈등·반응",
+    "url": "http://www.biztribune.co.kr/news/articleView.html?idxno=361647",
+    "image": null,
+    "head": "리센느가 직접 부른 우리은행 CM송 '우리는 해' 공개",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T17:32+09:00",
+   "key": "a9e509c7",
+   "by": "claude",
+   "subjects": [
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "리센느가 직접 부른 우리은행 CM송 '우리는 해' — 컴백 나흘 앞둔 새 얼굴",
+    "why": "우리은행 공식 영상 공개 직후 기사 다수 · '올해 대표 아이돌' 리센느 이어 다루기"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T17:32+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n리센느(@rescene_official)가 우리은행의 새 광고 모델이 됐습니다.\n\n우리은행이 리센느와 함께한 CM송 '우리는 해'를 공개했는데요, 멤버들은 첫 인터뷰 영상에서 이번 광고 노래를 직접 불렀다고 전했습니다. 제목은 '우리 모두 해낼 수 있다'는 응원에 은행 이름을 겹친 말입니다.\n\n'LOVE ATTACK' 역주행으로 올해 차트를 오르내린 리센느는 나흘 뒤 새 앨범으로 돌아옵니다. 미니 4집 [PULSE]는 11월 3일 오후 6시 공개됩니다.\n\n#PLOT #리센느 #RESCENE #우리는해 #PULSE\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793349150/xndfguk0pdufagdl4hxv.jpg\n제목: 리센느가 직접 부른|응원가 '우리는 해'\n부제: 우리은행 새 광고 모델\n출처: @rescene_official\n\n[슬라이드]\n형식: 자료\n말한이: \n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793349165/izff3b1mapwokf2imhhq.jpg\n소제목: \n본문: \n출처: 우리은행\n",
+    "caption": "리센느(@rescene_official)가 우리은행의 새 광고 모델이 됐습니다.\n\n우리은행이 리센느와 함께한 CM송 '우리는 해'를 공개했는데요, 멤버들은 첫 인터뷰 영상에서 이번 광고 노래를 직접 불렀다고 전했습니다. 제목은 '우리 모두 해낼 수 있다'는 응원에 은행 이름을 겹친 말입니다.\n\n'LOVE ATTACK' 역주행으로 올해 차트를 오르내린 리센느는 나흘 뒤 새 앨범으로 돌아옵니다. 미니 4집 [PULSE]는 11월 3일 오후 6시 공개됩니다.\n\n#PLOT #리센느 #RESCENE #우리는해 #PULSE",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349150/xndfguk0pdufagdl4hxv.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349153/dvpuqxbhwybcmytcehki.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349156/dff9yii0uom1srnlrfdu.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257384/mqwsfplwcbsofvcoqwip.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349160/u6n8e6qixd3ac67ulppq.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500827/opwxvqrxvmcpxw9zfz4i.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349150/xndfguk0pdufagdl4hxv.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349153/dvpuqxbhwybcmytcehki.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349156/dff9yii0uom1srnlrfdu.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257384/mqwsfplwcbsofvcoqwip.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349160/u6n8e6qixd3ac67ulppq.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500827/opwxvqrxvmcpxw9zfz4i.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "리센느가 직접 부른|응원가 '우리는 해'",
+      "sub": "우리은행 새 광고 모델"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "컴백 나흘 앞두고|은행 모델 된 리센느",
+      "sub": "CM송 '우리는 해' 공개"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "리센느,|우리은행 새 얼굴로",
+      "sub": "직접 부른 CM송 '우리는 해'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 우리은행 공식 채널 (광고 영상 · 기업 홍보물로 읽히지 않는지 한 번 볼 것)",
+     "'직접 노래를 불렀다'는 우리은행 첫 인터뷰 영상 속 멤버 발언 기준 — 영상 0:11 확인"
+    ],
+    "research": [
+     {
+      "title": "메가경제 — 우리銀, 리센느 광고 모델 선정…젊은 고객층 공략",
+      "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065598622808240"
+     },
+     {
+      "title": "일간투데이 — 우리은행, 광고 모델 리센느와 '우리는 해' CM송 광고 공개",
+      "link": "https://www.dtoday.co.kr/news/articleView.html?idxno=800449"
+     },
+     {
+      "title": "이코노미사이언스 — 우리은행, 걸그룹 리센느와 새 광고 공개",
+      "link": "https://www.e-science.co.kr/news/articleView.html?idxno=138531"
+     },
+     {
+      "title": "뉴스컬처 — 리센느, 우리은행 새 얼굴 발탁",
+      "link": "https://www.nc.press/news/articleView.html?idxno=629830"
+     },
+     {
+      "title": "뉴스1 — 우리銀, 리센느와 '우리는 해' CM송 공개",
+      "link": "https://www.news1.kr/finance/general-finance/6337472"
+     },
+     {
+      "title": "일간스포츠 — 리센느 미니 4집 '펄스' 11월 3일 오후 6시 발매",
+      "link": "https://isplus.com/article/view/isp202610280010"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349169/kbvmiduajgicvgodrkpu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349169/klqkpk94d6ic2v9koezr.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349169/dfrgx1dhvca1d56r3n0l.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349171/db6v3lafniqebtmai8cc.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349171/hhqvb7funrhudzg0muf1.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349169/kbvmiduajgicvgodrkpu.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T17:32+09:00",
+     "v": {
+      "A": "45842d2b",
+      "B": "f7edcd90",
+      "C": "6960e3cc"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=ep7Ak9MKi8U\n구간: 0:00-0:31\n곡: 우리은행 새 CM송\n아티스트: 리센느가 직접 부른\n피처링:\n후킹: \n출처: 우리은행\n음원: 리센느 - 우리는 해",
+    "caption": "리센느(@rescene_official)가 우리은행의 새 광고 모델이 됐습니다.\n\n우리은행 공식 채널에 올라온 CM송 '우리는 해' 광고 영상인데요, 멤버들은 첫 인터뷰 영상에서 이 노래를 직접 불렀다고 전했습니다. '우리 모두 해낼 수 있다'는 응원에 은행 이름을 겹친 제목입니다.\n\n리센느는 11월 3일 오후 6시 미니 4집 [PULSE]로 돌아옵니다.\n\n#PLOT #리센느 #RESCENE #우리는해 #PULSE",
+    "hooks": {
+     "A": "리센느가 직접 부른 / 우리은행 새 CM송",
+     "B": "컴백 나흘 앞두고 / 은행 모델 된 리센느",
+     "C": "함께라면 끝까지, / 리센느의 응원가"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=ep7Ak9MKi8U",
+     "credit": "우리은행",
+     "range": [
+      0.0,
+      31.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 우리은행 공식 채널 (광고 영상 · 기업 홍보물로 읽히지 않는지 한 번 볼 것)",
+     "'직접 노래를 불렀다'는 우리은행 첫 인터뷰 영상 속 멤버 발언 기준 — 영상 0:11 확인"
+    ],
+    "research": [
+     {
+      "title": "메가경제 — 우리銀, 리센느 광고 모델 선정…젊은 고객층 공략",
+      "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065598622808240"
+     },
+     {
+      "title": "일간투데이 — 우리은행, 광고 모델 리센느와 '우리는 해' CM송 광고 공개",
+      "link": "https://www.dtoday.co.kr/news/articleView.html?idxno=800449"
+     },
+     {
+      "title": "이코노미사이언스 — 우리은행, 걸그룹 리센느와 새 광고 공개",
+      "link": "https://www.e-science.co.kr/news/articleView.html?idxno=138531"
+     },
+     {
+      "title": "뉴스컬처 — 리센느, 우리은행 새 얼굴 발탁",
+      "link": "https://www.nc.press/news/articleView.html?idxno=629830"
+     },
+     {
+      "title": "뉴스1 — 우리銀, 리센느와 '우리는 해' CM송 공개",
+      "link": "https://www.news1.kr/finance/general-finance/6337472"
+     },
+     {
+      "title": "일간스포츠 — 리센느 미니 4집 '펄스' 11월 3일 오후 6시 발매",
+      "link": "https://isplus.com/article/view/isp202610280010"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/ep7Ak9MKi8U/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793349174/kkr9krrrujvgszweebqr.jpg",
+     "key": "ep7Ak9MKi8U@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-30T17:33+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2152,14 +2362,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 8,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T17:03+09:00"
+  "at": "2026-10-30T17:33+09:00"
  },
  "queue": {
-  "next": "2026-10-30T17:05+09:00",
+  "next": "2026-10-30T17:35+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
@@ -2171,7 +2381,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.21,
+    "mult": 2.22,
     "median": 1.38,
     "n": 44
    },
