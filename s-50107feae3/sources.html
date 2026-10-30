@@ -2582,10 +2582,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var cd = it.card, sl = slidesOf(it), cvs = cd.covers || [], ci = drCovers()[(it.source || {}).id] || 0;
     var vids = (cd.preview || {}).videos || {}, nv = Object.keys(vids).length;
     var media = sl.length ? '<div class="med' + (nv ? ' hasv' : '') + '"><div class="track" data-track="' + i + '">' + sl.map(function (u, j) {
-        // 10/29 곡 장은 소리 있는 영상으로 — 넘겨서 그 장이 보이면 저절로 돈다 (🔇 눌러 소리)
+        // 10/29 곡 장·10/30 자료 장(영상 원본)은 소리 있는 영상으로 — 넘겨서 그 장이 보이면 저절로 돈다 (🔇 눌러 소리)
         if (vids[j]) return '<video class="tv" data-tv src="' + esc(vids[j]) + '" poster="' + esc(u) + '" muted playsinline loop preload="none"></video>';
         return '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(u) + '" alt="">'; }).join('') + '</div>' +
-        (nv ? '<button class="tvb" data-tvb hidden>🔇 눌러서 소리</button><span class="tvn">♪ 곡 장 ' + nv + '장은 영상</span>' : '') +
+        (nv ? '<button class="tvb" data-tvb hidden>🔇 눌러서 소리</button><span class="tvn">▶ 영상 장 ' + nv + '</span>' : '') +
         (sl.length > 1 ? '<span class="cnt" data-cnt="' + i + '">1/' + sl.length + '</span>' : '') + '</div>' +
         (sl.length > 1 ? '<div class="dots" data-dots="' + i + '">' + sl.map(function (_, j) { return '<i' + (j ? '' : ' class="on"') + '></i>'; }).join('') + '</div>' : '')
       : '<div class="noimg">아직 미리보기를 못 그렸습니다 — 공유하기 → 캐러셀 스튜디오에서 열면 바로 그려집니다.<br><br><b>' +
@@ -3584,7 +3584,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var cur = tr.children[tvIdx(tr)]; if (!cur || cur.tagName !== 'VIDEO') return;
     TV_SOUND = !TV_SOUND || cur.paused;
     med.__vis = true; tvSync(tr);
-    toast(TV_SOUND ? '🔊 소리를 켰습니다 — 곡 장마다 후렴이 나옵니다' : '🔇 소리를 껐습니다');
+    toast(TV_SOUND ? '🔊 소리를 켰습니다' : '🔇 소리를 껐습니다');
   }
   function prefetchSlides(it) {
     var sl = slidesOf(it), key = sl.join('|');
@@ -4441,9 +4441,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 18:56';
+    a.title = '판 10.30 19:01';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 18:56';
+    ver.textContent = '10.30 19:01';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
