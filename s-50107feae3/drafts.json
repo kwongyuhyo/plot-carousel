@@ -4145,6 +4145,126 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-a6093820",
+    "account": "@규효 공유 · @ourlogmag",
+    "url": "https://www.instagram.com/p/DfGqpyOyq3P/?vrfl=MXU0Zm1nZno2bmRxeA==",
+    "image": null,
+    "head": "직접 세운 회사와 분쟁 중인 백현이 가처분 사흘 뒤 새 회사를 세웠다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T20:28+09:00",
+   "key": "667af130",
+   "by": "claude",
+   "subjects": [
+    "백현"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "직접 세운 INB100과 분쟁 중인 백현이, 가처분 사흘 뒤 새 회사를 세우고 대표가 됐다",
+    "why": "규효 맡기기 · 비즈한국 단독(10/30) · 다른 매거진에서도 돌고 있는 첸백시 소식"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T20:28+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n백현이 새 회사 비온엔터테인먼트를 세우고 대표를 맡은 것으로 알려졌습니다.\n\n백현은 첸, 시우민과 함께 2023년 자신이 직접 세운 INB100을 상대로 전속계약 분쟁을 이어 가고 있는데요, 9월 15일 법원이 세 사람의 전속계약 효력정지 가처분을 받아들인 지 사흘 만에 새 법인을 세웠습니다. 직접 만든 회사와 다투는 사이 또 하나의 회사를 세운 셈입니다.\n\n비온엔터테인먼트 관계자는 아직 계약을 맺은 것은 없지만 \"첸백시가 같이 하는 것이 맞다\"고 밝혔습니다. 법인은 행사 수익 정산과 세금 문제 때문에 먼저 세웠고, 본격적인 활동은 내년 3월 이후로 내다봤습니다. INB100 측은 새 회사 설립에 대해 알고 있는 바가 없다는 입장이며, 본안 소송 첫 변론은 11월 4일 열립니다.\n\n#PLOT #백현 #첸백시 #엑소 #비온엔터테인먼트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793359718/mjunp88ddo5n1ibvaxko.jpg\n제목: 백현, 새 회사 세우고|대표 됐다\n부제: 첸백시, 다시 함께할까\n출처: 비즈한국\n",
+    "caption": "백현이 새 회사 비온엔터테인먼트를 세우고 대표를 맡은 것으로 알려졌습니다.\n\n백현은 첸, 시우민과 함께 2023년 자신이 직접 세운 INB100을 상대로 전속계약 분쟁을 이어 가고 있는데요, 9월 15일 법원이 세 사람의 전속계약 효력정지 가처분을 받아들인 지 사흘 만에 새 법인을 세웠습니다. 직접 만든 회사와 다투는 사이 또 하나의 회사를 세운 셈입니다.\n\n비온엔터테인먼트 관계자는 아직 계약을 맺은 것은 없지만 \"첸백시가 같이 하는 것이 맞다\"고 밝혔습니다. 법인은 행사 수익 정산과 세금 문제 때문에 먼저 세웠고, 본격적인 활동은 내년 3월 이후로 내다봤습니다. INB100 측은 새 회사 설립에 대해 알고 있는 바가 없다는 입장이며, 본안 소송 첫 변론은 11월 4일 열립니다.\n\n#PLOT #백현 #첸백시 #엑소 #비온엔터테인먼트",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359718/mjunp88ddo5n1ibvaxko.jpg",
+      "credit": "비즈한국",
+      "from": "https://s.bizhankook.com/attachments_og/2026/10/136789_og_17bb6a2e.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359720/eef1vpo3y5np7xjtpath.jpg",
+      "credit": "TV리포트",
+      "from": "https://d3h3k01ny8mjr.cloudfront.net/tv-report/2026/10/01182511/CP-2022-0227-40112733-thumb.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359718/mjunp88ddo5n1ibvaxko.jpg",
+      "credit": "비즈한국",
+      "from": "https://s.bizhankook.com/attachments_og/2026/10/136789_og_17bb6a2e.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359720/eef1vpo3y5np7xjtpath.jpg",
+      "credit": "TV리포트",
+      "from": "https://d3h3k01ny8mjr.cloudfront.net/tv-report/2026/10/01182511/CP-2022-0227-40112733-thumb.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "백현, 새 회사 세우고|대표 됐다",
+      "sub": "첸백시, 다시 함께할까"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "첸백시 다시 함께?|백현이 세운 새 회사",
+      "sub": "가처분 사흘 뒤 설립"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "가처분 사흘 뒤|백현이 회사를 세웠다",
+      "sub": "비온엔터테인먼트"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "새 회사(비온엔터테인먼트) 설립은 비즈한국 단독 한 곳뿐이라 '~로 알려졌다'로 낮춰 썼습니다 — 백현 본인 발표는 아직 없습니다",
+     "숏폼은 비웠습니다 — 등기·기사로 나온 소식이라 쓸 원본 영상이 없습니다 · 사진 DB 에 백현이 없어 기사 대표 사진을 넣었으니 표지 사진을 확인해 주세요"
+    ],
+    "research": [
+     {
+      "title": "비즈한국 — [단독] 백현, 전속계약 분쟁 중 새 회사 설립…첸백시 독자 활동 본격화하나 (10/30)",
+      "link": "https://bizhankook.com/articles/baekhyun-establishes-new-company.html"
+     },
+     {
+      "title": "일간스포츠 — 첸백시 전속계약 효력정지 가처분 인용 (9/15)",
+      "link": "https://isplus.com/article/view/isp202609150106"
+     },
+     {
+      "title": "TV리포트 — 첸백시 본안 첫 변론기일 11월 4일 (10/1)",
+      "link": "https://tvreport.co.kr/breaking/article/1079921/"
+     },
+     {
+      "title": "OSEN — 첸·백현·시우민 가처분 심문 · INB100 2023년 6월 설립 (9/7)",
+      "link": "https://www.osen.co.kr/article/G1112871353"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359727/wn0ft1nyxdrmlawwqjsb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359727/eswsyje3bzojudqe3nlt.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359729/gtrhme0v5nhav0bsxtlm.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359729/b9gextelollxvhlfpran.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359727/wn0ft1nyxdrmlawwqjsb.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T20:28+09:00",
+     "v": {
+      "A": "27236e00",
+      "B": "49885d00",
+      "C": "aa2f380b"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -4319,11 +4439,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 14,
+    "drafts": 15,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T20:26+09:00"
+  "at": "2026-10-30T20:28+09:00"
  },
  "queue": {
   "next": "2026-10-30T21:20+09:00",

@@ -3506,7 +3506,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var rd = sh.rendered || {}, rq = sh.render || {};
     var marks = '<span>' + esc(span ? '구간 ' + span : '구간 미정') + '</span>' +
       (rd.url ? '<a class="yt" href="' + escU(rd.url) + '" target="_blank" rel="noopener">완성 영상 ▶</a>' :
-        rq.status ? '<span>🎬 맥이 만드는 중</span>' : '') +
+        rq.status || (Date.now() - (actsGet()['mk-' + it.key] || 0) < 15 * 60e3) ? '<span>🎬 맥이 만드는 중</span>' : (it.key && !DR_DAY ? '<button data-rmk="' + i + '">🎬 완성본 만들기</button>' : '')) +
       // 10/30 규효 "PLOT 도 비슷하게" — 완성본을 @plot_music 릴스로 (collectors/app_actions rl · reel_pub)
       ((sh.published || {}).permalink ? '<a class="yt" href="' + escU(sh.published.permalink) + '" target="_blank" rel="noopener">올린 릴스 ↗</a>' :
         reelSched(it) ? '<span>⏰ ' + esc(reelSched(it)) + ' 대기열</span><button data-sx="' + esc(it.key) + '">취소</button>' :
@@ -4534,6 +4534,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (pb) { var rr = pb.closest('[data-reel]'); if (rr) reelToggle(rr); return; }
     var rqb = e.target.closest('[data-rque]');
     if (rqb) { var qit = (DR && DR.items || [])[Number(rqb.getAttribute('data-rque'))]; if (qit && qit.key) openReelPublish(qit, true); return; }
+    var rmk = e.target.closest('[data-rmk]');
+    if (rmk) { var mit = (DR && DR.items || [])[Number(rmk.getAttribute('data-rmk'))]; if (mit && mit.key) { plotAction('mk-' + mit.key, '숏폼 완성본 만들기'); rmk.outerHTML = '<span>🎬 맥이 만드는 중</span>'; } return; }
     var rpb = e.target.closest('[data-rpub]');
     if (rpb) { var rit = (DR && DR.items || [])[Number(rpb.getAttribute('data-rpub'))]; if (rit && rit.key) openReelPublish(rit); return; }
     var tvx = e.target.closest('[data-tvb]') || e.target.closest('video[data-tv]');
@@ -4619,9 +4621,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 20:26';
+    a.title = '판 10.30 20:29';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 20:26';
+    ver.textContent = '10.30 20:29';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
