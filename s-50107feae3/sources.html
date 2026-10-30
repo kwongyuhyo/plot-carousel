@@ -562,30 +562,30 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .ig details .chk{color:var(--amber)}
 .ig .thumbs{display:flex; gap:6px; overflow:auto; margin:6px 0}
 /* 📷 사진 직접 고르기 (10/30) */
-.pk{position:fixed; inset:0; z-index:60; background:var(--bg); display:flex; flex-direction:column}
-.pk .pkh{display:flex; align-items:center; gap:8px; padding:calc(10px + env(safe-area-inset-top)) 12px 8px; font-size:15px}
-.pk .pkh button{background:none; border:0; color:var(--text); font-size:18px; padding:4px 8px; cursor:pointer}
-.pk .pkt{display:flex; gap:6px; overflow-x:auto; padding:0 14px 10px; scrollbar-width:none}
-.pk .pkt::-webkit-scrollbar{display:none}
-.pk .pkt button{flex:none; border:1px solid var(--line); background:none; color:var(--muted); border-radius:999px; padding:6px 12px; font-size:13px; cursor:pointer}
-.pk .pkt button.on{background:var(--text); color:var(--bg); border-color:var(--text)}
-.pk .pkg{flex:1; overflow-y:auto}
-.pk .pkgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px}
-@media (min-width:700px){.pk .pkgrid{grid-template-columns:repeat(5,1fr)}}
-.pk .pkc{position:relative; padding:0; border:0; background:var(--raise); aspect-ratio:4/5; overflow:hidden; cursor:pointer}
-.pk .pkc img{width:100%; height:100%; object-fit:cover; display:block}
-.pk .pkc.on{outline:3px solid var(--amber); outline-offset:-3px}
-.pk .pkc i{position:absolute; top:6px; right:6px; background:rgba(0,0,0,.6); color:#fff; font-style:normal; font-size:11px; border-radius:999px; padding:2px 7px}
-.pk .pkc em{position:absolute; top:6px; left:6px; background:var(--amber); color:#000; font-style:normal; font-size:11px; font-weight:700; border-radius:999px; padding:2px 7px}
-.pk .pkc small{position:absolute; left:4px; bottom:4px; background:rgba(0,0,0,.55); color:#fff; font-size:10.5px; border-radius:6px; padding:1px 5px}
-.pk .pkn{padding:40px 20px; text-align:center; color:var(--dim); font-size:14px; line-height:1.6}
-.pk .pki{display:flex; gap:8px; padding:0 14px 8px}
-.pk .pki input{flex:1; min-width:0; background:var(--panel); border:1px solid var(--line); color:var(--text); border-radius:10px; padding:10px 12px; font-size:16px}
-.pk .pki button,.pk .pkhs button{border:1px solid var(--line); background:none; color:var(--text); border-radius:10px; padding:8px 12px; font-size:13px; cursor:pointer}
-.pk .pkhs{display:flex; gap:6px; flex-wrap:wrap; padding:0 14px 8px}
-.pk .pkf{padding:10px 14px calc(10px + env(safe-area-inset-bottom)); border-top:1px solid var(--line)}
-.pk .pkf button{width:100%; padding:14px; border-radius:12px; border:0; background:var(--text); color:var(--bg); font-weight:700; font-size:15px; cursor:pointer}
-.pk .pkf button:disabled{opacity:.4; cursor:default}
+.phx{position:fixed; inset:0; z-index:60; background:var(--bg); display:flex; flex-direction:column}
+.phx .pkh{display:flex; align-items:center; gap:8px; padding:calc(10px + env(safe-area-inset-top)) 12px 8px; font-size:15px}
+.phx .pkh button{background:none; border:0; color:var(--text); font-size:18px; padding:4px 8px; cursor:pointer}
+.phx .pkt{display:flex; gap:6px; overflow-x:auto; padding:0 14px 10px; scrollbar-width:none}
+.phx .pkt::-webkit-scrollbar{display:none}
+.phx .pkt button{flex:none; border:1px solid var(--line); background:none; color:var(--muted); border-radius:999px; padding:6px 12px; font-size:13px; cursor:pointer}
+.phx .pkt button.on{background:var(--text); color:var(--bg); border-color:var(--text)}
+.phx .pkg{flex:1; overflow-y:auto}
+.phx .pkgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px}
+@media (min-width:700px){.phx .pkgrid{grid-template-columns:repeat(5,1fr)}}
+.phx .pkc{position:relative; padding:0; border:0; background:var(--raise); aspect-ratio:4/5; overflow:hidden; cursor:pointer}
+.phx .pkc img{width:100%; height:100%; object-fit:cover; display:block}
+.phx .pkc.on{outline:3px solid var(--amber); outline-offset:-3px}
+.phx .pkc i{position:absolute; top:6px; right:6px; background:rgba(0,0,0,.6); color:#fff; font-style:normal; font-size:11px; border-radius:999px; padding:2px 7px}
+.phx .pkc em{position:absolute; top:6px; left:6px; background:var(--amber); color:#000; font-style:normal; font-size:11px; font-weight:700; border-radius:999px; padding:2px 7px}
+.phx .pkc small{position:absolute; left:4px; bottom:4px; background:rgba(0,0,0,.55); color:#fff; font-size:10.5px; border-radius:6px; padding:1px 5px}
+.phx .pkn{padding:40px 20px; text-align:center; color:var(--dim); font-size:14px; line-height:1.6}
+.phx .pki{display:flex; gap:8px; padding:0 14px 8px}
+.phx .pki input{flex:1; min-width:0; background:var(--panel); border:1px solid var(--line); color:var(--text); border-radius:10px; padding:10px 12px; font-size:16px}
+.phx .pki button,.phx .pkhs button{border:1px solid var(--line); background:none; color:var(--text); border-radius:10px; padding:8px 12px; font-size:13px; cursor:pointer}
+.phx .pkhs{display:flex; gap:6px; flex-wrap:wrap; padding:0 14px 8px}
+.phx .pkf{padding:10px 14px calc(10px + env(safe-area-inset-bottom)); border-top:1px solid var(--line)}
+.phx .pkf button{width:100%; padding:14px; border-radius:12px; border:0; background:var(--text); color:var(--bg); font-weight:700; font-size:15px; cursor:pointer}
+.phx .pkf button:disabled{opacity:.4; cursor:default}
 .sheet{position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:50; display:flex; align-items:flex-end}
 .sheet .pn{width:100%; background:var(--panel); border-radius:14px 14px 0 0; padding:10px 0 calc(16px + env(safe-area-inset-bottom));
   max-height:88vh; max-height:88dvh; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch}
@@ -3922,7 +3922,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   var PK = null;
   function pkOpen(it, k, tab) {
     pkClose();
-    var o = document.createElement('div'); o.className = 'pk';
+    var o = document.createElement('div'); o.className = 'phx';
     o.innerHTML = '<div class="pkh"><button data-pk="x" aria-label="닫기">✕</button><b>' + esc(k ? (k + 1) + '번째 장' : '표지') + ' 사진 고르기</b></div>' +
       '<div class="pkt" data-pktabs></div><div class="pkg" data-pkg><div class="pkn">맥에서 사진을 불러오는 중…</div></div>' +
       '<div class="pkf"><button data-pk="go" disabled>사진을 골라 주세요</button></div>';
@@ -4596,9 +4596,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 19:50';
+    a.title = '판 10.30 19:51';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 19:50';
+    ver.textContent = '10.30 19:51';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
