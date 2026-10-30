@@ -833,9 +833,10 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793324175/b6or6vqzdejorkmseuq5.jpg",
      "key": "rsNhWkC4neE@60.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-30T10:36+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793324362/plot_studio/sqatiwpdljeauwa2holw.mp4",
+     "at": "2026-10-30T10:39+09:00",
+     "file": "AIBeu_LugSeu_Kaen_Ki_TaIGeo_JKGa_DeulEoWa_News_no_lyrics__cta.mp4"
     }
    },
    "corner_name": "소식"
@@ -1017,10 +1018,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T10:36+09:00"
+  "at": "2026-10-30T10:39+09:00"
  },
  "queue": {
-  "next": "2026-10-30T10:38+09:00",
+  "next": "2026-10-30T10:41+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-29T19:47+09:00"
