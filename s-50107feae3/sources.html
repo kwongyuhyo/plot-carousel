@@ -2456,6 +2456,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     } catch (e) {}
     try {                                              // 10/22 미리 렌더한 완성본도 같이 넘긴다
       var rdn = kind === 'shorts' && ((it.shorts || {}).rendered || {});
+      var px = kind === 'shorts' && (it.shorts || {}).px;     // 10/30 광고 없는 사본 — 숏폼 앱이 유튜브 대신 튼다
+      if (px && px.vid && px.url) {
+        var pm = {}; try { pm = JSON.parse(localStorage.getItem('plot.px') || '{}') || {}; } catch (e) {}
+        px.at = Date.now(); pm[px.vid + '@' + px.off] = px; localStorage.setItem('plot.px', JSON.stringify(pm));
+      }
       if (rdn && rdn.url) localStorage.setItem('plot.form.handoff.done', JSON.stringify({ url: rdn.url, at: rdn.at || '', subs: rdn.subs || null }));
       else localStorage.removeItem('plot.form.handoff.done');
     } catch (e) {}
@@ -4441,9 +4446,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 19:12';
+    a.title = '판 10.30 19:22';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 19:12';
+    ver.textContent = '10.30 19:22';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

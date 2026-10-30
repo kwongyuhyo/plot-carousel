@@ -476,7 +476,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };

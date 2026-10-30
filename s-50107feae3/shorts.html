@@ -1304,7 +1304,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
@@ -4847,6 +4847,43 @@ document.addEventListener('DOMContentLoaded', boot);
 const PP = { i: -1, b: null, yt: null, ytReady: false, vid: null, a: 0, e: 0, mw: [0, 6], timer: null,
              muted: true, paused: false, kind: '', mode: 'seg', subsBusy: false, editOpen: false };
 
+/* ── 광고 없는 사본 (10/30 규효 "숏폼 편집할 때 광고 없게") ─────────────────
+ * 맥이 고른 구간 앞뒤를 낮은 화질 mp4 로 올려 둔다 (generators/proxy_clip). 미리보기는 유튜브 대신 그 파일을 튼다.
+ * {vid, url, off, end, full} — 원본 시각 = 사본 시각 + off. 구간이 [off, end] 안일 때만 쓴다.
+ * 초안에서 넘어온 편은 초안이 이미 갖고 있고(오늘의 초안이 넘길 때 적어 둠), 없으면 처음 열 때 맥에 부탁한다. */
+const PXK = 'plot.px';
+function pxAll() { try { return JSON.parse(localStorage.getItem(PXK) || '{}') || {}; } catch (_) { return {}; } }
+function pxPut(px) {
+  if (!px || !px.vid || !px.url) return;
+  const m = pxAll(); px.at = Date.now(); m[px.vid + '@' + px.off] = px;
+  Object.keys(m).sort((x, y) => (m[y].at || 0) - (m[x].at || 0)).slice(40).forEach((k) => delete m[k]);
+  try { localStorage.setItem(PXK, JSON.stringify(m)); } catch (_) {}
+}
+function pxFor(b) {
+  const id = ytId(b && b.url); if (!id) return null;
+  const a = toSec(b.start), e = toSec(b.end);
+  if (a == null || e == null || e <= a) return null;
+  const m = pxAll(); let best = null;
+  Object.keys(m).forEach((k) => { const p = m[k]; if (p && p.vid === id && p.off <= a + 0.01 && e <= p.end + 0.01) best = p; });
+  return best;
+}
+const PXQ = {};
+function pxAsk(b) {
+  if (typeof plotStudio === 'undefined' || !plotStudio.on() || !b) return;
+  const id = ytId(b.url); if (!id || pxFor(b) || toSec(b.start) == null || toSec(b.end) == null) return;
+  const k = id + '|' + (b.start || '').trim() + '|' + (b.end || '').trim(); if (PXQ[k]) return;
+  PXQ[k] = 1;
+  plotStudio.send('proxy', { url: (b.url || '').trim(), start: (b.start || '').trim(), end: (b.end || '').trim() })
+    .then((sn) => {
+      if (!sn || !sn.px) return;
+      pxPut(sn.px);
+      if (PP.b === b && PP.kind === 'yt' && !$('#pp').hidden && !PP.editOpen && !(window.PR && PR.on) && pxFor(b)) {
+        openPlay(PP.i, 'seg'); toast('🚫 광고 없는 사본으로 바꿨어요');
+      }
+    })
+    .catch(() => { delete PXQ[k]; });
+}
+
 function ppSrcKind(b) {
   if (!b) return '';
   if (ytId(b.url)) return 'yt';
@@ -4925,7 +4962,7 @@ function ppFit() {
   const fr = $('#ppFrame'); if (!fr || $('#pp').hidden) return;
   const w = fr.clientWidth, h = fr.clientHeight;
   $('#ppOver').style.transform = 'scale(' + (w / 1080) + ')';
-  if (PP.kind === 'file' && PP.vid && PP.b) { const c0 = cropOf(PP.b.crop); PP.vid.style.objectPosition = ((c0 == null ? 0.5 : c0) * 100) + '% 50%'; }   // 10/29 올린 영상도 가로 위치대로
+  if ((PP.kind === 'file' || PP.kind === 'px') && PP.vid && PP.b) { const c0 = cropOf(PP.b.crop); PP.vid.style.objectPosition = ((c0 == null ? 0.5 : c0) * 100) + '% 50%'; }   // 10/29 올린 영상도 가로 위치대로
   if (PP.kind !== 'yt') return;
   const node = document.getElementById('ppYT'); if (!node) return;
   const shorts = /\/shorts\//.test(PP.b.url || '');
@@ -4939,6 +4976,7 @@ function ppFit() {
 function ppNow() {
   try {
     if (PP.kind === 'yt') return PP.ytReady ? (PP.yt.getCurrentTime() || 0) : PP.a;
+    if (PP.kind === 'px' && PP.vid) return (PP.vid.currentTime || 0) + (PP.off || 0);
     if ((PP.kind === 'file' || PP.kind === 'done') && PP.vid) return PP.vid.currentTime || 0;
   } catch (_) {}
   return PP.a;
@@ -4946,6 +4984,7 @@ function ppNow() {
 function ppSeek(t) {
   try {
     if (PP.kind === 'yt' && PP.ytReady) PP.yt.seekTo(t, true);
+    if (PP.kind === 'px' && PP.vid) PP.vid.currentTime = Math.max(0, t - (PP.off || 0));
     if ((PP.kind === 'file' || PP.kind === 'done') && PP.vid) PP.vid.currentTime = t;
   } catch (_) {}
 }
@@ -4954,7 +4993,7 @@ function ppSetPaused(v) {
   $('#ppFrame').classList.toggle('paused', v);
   try {
     if (PP.kind === 'yt' && PP.ytReady) v ? PP.yt.pauseVideo() : PP.yt.playVideo();
-    if ((PP.kind === 'file' || PP.kind === 'done') && PP.vid) v ? PP.vid.pause() : PP.vid.play().catch(() => {});
+    if ((PP.kind === 'file' || PP.kind === 'done' || PP.kind === 'px') && PP.vid) v ? PP.vid.pause() : PP.vid.play().catch(() => {});
   } catch (_) {}
 }
 function ppSetMuted(v) {
@@ -4962,7 +5001,7 @@ function ppSetMuted(v) {
   $('#ppSound').textContent = v ? '🔇 소리 켜기' : '🔊 소리 끄기';
   try {
     if (PP.kind === 'yt' && PP.ytReady) v ? PP.yt.mute() : PP.yt.unMute();
-    if ((PP.kind === 'file' || PP.kind === 'done') && PP.vid) PP.vid.muted = v;
+    if ((PP.kind === 'file' || PP.kind === 'done' || PP.kind === 'px') && PP.vid) PP.vid.muted = v;
   } catch (_) {}
 }
 function ppFmt(x) { x = Math.max(0, x); return Math.floor(x / 60) + ':' + String(Math.floor(x % 60)).padStart(2, '0'); }
@@ -4993,14 +5032,14 @@ const CC_KEY = MEM + '.cc';
 function ccMode() { try { return localStorage.getItem(CC_KEY + '2') === 'yt' ? 'yt' : 'stt'; } catch (_) { return 'stt'; } }
 function ccPaint() {
   const s = $('#ppSubsSrc'); if (!s) return;
-  s.hidden = $('#ppSubs').hidden || PP.kind !== 'yt';
+  s.hidden = $('#ppSubs').hidden || (PP.kind !== 'yt' && PP.kind !== 'px');
   s.textContent = ccMode() === 'yt' ? '📺 유튜브 자막 먼저' : '🎙 받아쓰기 먼저 · 유튜브와 대조';
   s.classList.toggle('on', ccMode() === 'stt');
 }
 function ppSubsPaint() {
   const b = PP.b, btn = $('#ppSubs'), ed = $('#ppSubEdit');
   if (!btn) return;
-  const can = PP.mode === 'seg' && (PP.kind === 'yt' || PP.kind === 'file') && typeof plotStudio !== 'undefined' && plotStudio.on();
+  const can = PP.mode === 'seg' && (PP.kind === 'yt' || PP.kind === 'file' || PP.kind === 'px') && typeof plotStudio !== 'undefined' && plotStudio.on();
   btn.hidden = !can;
   ccPaint();
   ed.hidden = !((stOk(b) && (can || (PP.mode === 'done' && ppSrcKind(b)))) || (can && !stOk(b)));
@@ -5043,7 +5082,7 @@ function ppSubsFetch() {
   const want = { url: (b.url || '').trim(), start: (b.start || '').trim(), end: (b.end || '').trim(),
                  artist: (b.artist || '').trim(), title: (b.title || '').trim(), hook: (b.hook || '').trim(),
                  source: (b.source || '').trim(), category: cat };
-  if (PP.kind === 'yt') want.cc = ccMode();
+  if (PP.kind === 'yt' || PP.kind === 'px') want.cc = ccMode();
   plotStudio.send('subs', want, (step, ms) => { btn.textContent = '💬 ' + step + ' · ' + Math.round(ms / 1000) + '초'; })
     .then((sn) => {
       const segs = (sn.subs || []).map(s => ({ start: Number(s.start), end: Number(s.end), text: String(s.text || ''), chk: !!s.chk }));
@@ -5078,7 +5117,8 @@ function ppNotesPaint() {
     if (b.subs && !subsOk(b)) notes.push('말자막은 「말자막 미리 받기」를 누르면 여기서 보입니다 (안 받아도 제작할 때 넣어요).');
     if ((b.lyr || '').trim()) notes.push('가사 자막은 제작할 때 들어갑니다.');
     if (joinList(b).length) notes.push('이어 붙일 영상은 여기선 안 나오고, 첫 원본만 돕니다.');
-    if (kind === 'yt' && cropOf(b.crop) == null && !/\/shorts\//.test(b.url)) notes.push('가로 위치는 가운데로 보여 줍니다 — 완성본은 얼굴을 따라 자동으로 잡아요.');
+    if (kind === 'px') notes.push('🚫 광고 없는 사본으로 재생 중입니다.');
+    if ((kind === 'yt' || kind === 'px') && cropOf(b.crop) == null && !/\/shorts\//.test(b.url)) notes.push('가로 위치는 가운데로 보여 줍니다 — 완성본은 얼굴을 따라 자동으로 잡아요.');
   }
   $('#ppNote').textContent = notes.join(' ');
 }
@@ -5088,8 +5128,11 @@ async function openPlay(i, mode) {
   // 10/23 규효 "구간 미리보기를 기본으로" — 글자·자막을 얹어 고칠 수 있는 쪽이 먼저. 원본이 없을 때만 완성본
   mode = mode || (ppSrcKind(b) ? 'seg' : 'done');
   if (mode === 'seg' && !ppSrcKind(b)) mode = 'done';
-  const kind = mode === 'done' ? 'done' : ppSrcKind(b);
+  let kind = mode === 'done' ? 'done' : ppSrcKind(b);
+  const px = kind === 'yt' ? pxFor(b) : null;          // 10/30 광고 없는 사본이 있으면 그걸로
+  if (px) kind = 'px';
   ppStop(true);
+  PP.px = px; PP.off = px ? Number(px.off) || 0 : 0;
   PP.i = i; PP.b = b; PP.kind = kind; PP.mode = mode; PP.paused = false;
   $('#pp').hidden = false;
   document.body.style.overflow = 'hidden';
@@ -5101,7 +5144,7 @@ async function openPlay(i, mode) {
   $('#ppOver').hidden = kind === 'done';
   $('#ppFrame').classList.remove('paused');
   ppNotesPaint();
-  $('#ppEdit').hidden = kind !== 'yt';
+  $('#ppEdit').hidden = kind !== 'yt' && kind !== 'px';
   PP.editOpen = false;
   ppModePaint(); ppNav(); ppSubsList(); ppSubsPaint();
   const box = $('#ppVideo');
@@ -5113,8 +5156,8 @@ async function openPlay(i, mode) {
     const im = el('img'); im.src = b.url; box.prepend(im);
     PP.a = 0; PP.e = 4; PP.mw = [0, 4];
     $('#ppFrame').classList.remove('paused');
-  } else if (kind === 'file' || kind === 'done') {
-    const v = el('video'); v.src = kind === 'done' ? b.done.url : b.url; v.playsInline = true; v.preload = 'auto';
+  } else if (kind === 'file' || kind === 'done' || kind === 'px') {
+    const v = el('video'); v.src = kind === 'done' ? b.done.url : kind === 'px' ? px.url : b.url; v.playsInline = true; v.preload = 'auto';
     v.setAttribute('playsinline', ''); box.prepend(v); PP.vid = v;
     // 누른 그 순간에 틀어야 소리를 켠 채로 시작된다 (폰 브라우저 규칙). 막히면 소리 없이.
     v.muted = false; PP.muted = false;
@@ -5122,6 +5165,7 @@ async function openPlay(i, mode) {
     ppSetMuted(PP.muted);
     v.addEventListener('loadedmetadata', () => {
       if (kind === 'done') { PP.a = 0; PP.e = v.duration || 30; PP.mw = [0, 0]; }
+      else if (kind === 'px') { [PP.a, PP.e] = ppRange(b, Number(px.full) || Number(px.end) || 0); PP.mw = ppMetaWin(b, PP.e - PP.a); v.currentTime = Math.max(0, PP.a - PP.off); }
       else { [PP.a, PP.e] = ppRange(b, v.duration || 0); PP.mw = ppMetaWin(b, PP.e - PP.a); v.currentTime = PP.a; }
       ppBarPaint();
     }, { once: true });
@@ -5129,6 +5173,7 @@ async function openPlay(i, mode) {
     else { [PP.a, PP.e] = ppRange(b, 0); PP.mw = ppMetaWin(b, PP.e - PP.a); }
   } else {
     [PP.a, PP.e] = ppRange(b, 0); PP.mw = ppMetaWin(b, PP.e - PP.a);
+    pxAsk(b);                                          // 10/30 다음부터는 광고 없이 — 맥에 사본을 부탁해 둔다
     try { await ytApi(); } catch (e) { toast(e.message); return; }
     const id = ytId(b.url);
     if (!PP.yt) {
@@ -6280,9 +6325,9 @@ function prSetRange(a, e) {
 }
 function prPgmRange() {
   const b = prB();
-  if (PP.b !== b || PP.mode !== 'seg' || !PP.kind || PP.kind === 'img') { PR.pgmKey = ''; prLoad(); return; }
+  if (PP.b !== b || PP.mode !== 'seg' || !PP.kind || PP.kind === 'img' || (PP.kind === 'px' && !pxFor(b))) { PR.pgmKey = ''; prLoad(); return; }
   let dur = 0;
-  try { dur = PP.kind === 'yt' ? (PP.yt && PP.ytReady ? PP.yt.getDuration() : 0) || 0 : (PP.vid ? PP.vid.duration || 0 : 0); } catch (_) {}
+  try { dur = PP.kind === 'yt' ? (PP.yt && PP.ytReady ? PP.yt.getDuration() : 0) || 0 : PP.kind === 'px' ? (Number((PP.px || {}).full) || Number((PP.px || {}).end) || 0) : (PP.vid ? PP.vid.duration || 0 : 0); } catch (_) {}
   [PP.a, PP.e] = ppRange(b, dur);
   PP.mw = ppMetaWin(b, PP.e - PP.a);
   ppBarPaint();
@@ -6467,6 +6512,7 @@ function prProgramDrag() {                            // 프로그램 화면을 
     const fr = $('#ppFrame'), w = fr.clientWidth, h = fr.clientHeight;
     let fw = 0;
     if (PP.kind === 'yt') { const lp = lbPct(PP.b.lb); fw = h / (1 - 2 * lp) * 16 / 9; }
+    else if (PP.kind === 'px') fw = h * 16 / 9;
     else if (PP.vid && PP.vid.videoWidth) fw = PP.vid.videoWidth / PP.vid.videoHeight * h;
     const room = fw - w; if (room < 2) return;
     const b = PP.b, c0 = cropOf(b.crop), r0 = c0 == null ? 0.5 : c0, x0 = e.clientX;
@@ -6548,7 +6594,7 @@ function prTrkBind(inner) {
     const mode = x < edge ? 'L' : x > r.width - edge ? 'R' : 'M';
     if (isV && mode === 'M') { toast('영상 양 끝을 끌면 구간이 줄고 늘어납니다 (받아 둔 자막도 같이 밀림)'); return; }
     let dur = 0;
-    try { dur = PP.kind === 'yt' ? (PP.yt && PP.ytReady ? PP.yt.getDuration() : 0) || 0 : (PP.vid ? PP.vid.duration || 0 : 0); } catch (_) {}
+    try { dur = PP.kind === 'yt' ? (PP.yt && PP.ytReady ? PP.yt.getDuration() : 0) || 0 : PP.kind === 'px' ? (Number((PP.px || {}).full) || Number((PP.px || {}).end) || 0) : (PP.vid ? PP.vid.duration || 0 : 0); } catch (_) {}
     if (!dur) dur = PR.src.dur || 0;
     const D = { k: isV ? 'v' : 't', mode, x0: e.clientX, a0: isV ? 0 : PP.mw[0], e0: isV ? len : PP.mw[1], dur, moved: false, seekT: 0 };
     D.a = D.a0; D.e = D.e0;
@@ -6902,9 +6948,9 @@ document.addEventListener('DOMContentLoaded', () => {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 19:12';
+    a.title = '판 10.30 19:22';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 19:12';
+    ver.textContent = '10.30 19:22';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
