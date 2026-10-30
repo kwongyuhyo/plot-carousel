@@ -1532,9 +1532,100 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344944/eat38lafxu77tklj4nrc.jpg",
      "key": "PnaKtFPlKoo@1370.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-30T16:22+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793345279/plot_studio/x3hyknebyxrsmhfhflgb.mp4",
+     "at": "2026-10-30T16:28+09:00",
+     "file": "LaebEuLo_HaemBeoGeo__LoKkoGa_NaeLin_Pyeon_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793345281314-ef8fecea",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 2.95,
+        "text": "저희 힙합 선생님으로 하루 함께"
+       },
+       {
+        "start": 2.95,
+        "end": 4.17,
+        "text": "해주셨는데"
+       },
+       {
+        "start": 4.17,
+        "end": 6.2,
+        "text": "네. 좋았나요?"
+       },
+       {
+        "start": 6.2,
+        "end": 8.94,
+        "text": "재미로 주문을 랩으로 했지만"
+       },
+       {
+        "start": 8.94,
+        "end": 10.84,
+        "text": "자꾸 생각이 든 게"
+       },
+       {
+        "start": 10.84,
+        "end": 13.24,
+        "text": "진지하게 하셔도 됩니다"
+       },
+       {
+        "start": 13.48,
+        "end": 16.84,
+        "text": "여기서 끝내면 너무 아깝다"
+       },
+       {
+        "start": 17.33,
+        "end": 19.06,
+        "text": "이런 생각이 들었습니다"
+       },
+       {
+        "start": 19.06,
+        "end": 19.8,
+        "text": "시켰지?"
+       },
+       {
+        "start": 19.8,
+        "end": 20.76,
+        "text": "선생님한테?"
+       },
+       {
+        "start": 20.76,
+        "end": 22.77,
+        "text": "만약에 뭐 나중에 앨범 가실 때"
+       },
+       {
+        "start": 22.77,
+        "end": 24.86,
+        "text": "필요하신 거 있으시면 연락 주시면"
+       },
+       {
+        "start": 24.86,
+        "end": 25.54,
+        "text": "정말요?"
+       },
+       {
+        "start": 25.54,
+        "end": 27.19,
+        "text": "네. 뭐, 조 마디라고"
+       },
+       {
+        "start": 27.19,
+        "end": 29.81,
+        "text": "그리고 매년 뮤직비디오 찍으실 때"
+       },
+       {
+        "start": 29.81,
+        "end": 32.22,
+        "text": "힙합은 또 뺏어 하시잖아요"
+       },
+       {
+        "start": 32.22,
+        "end": 33.68,
+        "text": "로꼬 선생님이네"
+       }
+      ]
+     }
     }
    },
    "pick": {
@@ -2061,10 +2152,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T16:22+09:00"
+  "at": "2026-10-30T16:28+09:00"
  },
  "queue": {
-  "next": "2026-10-30T16:24+09:00",
+  "next": "2026-10-30T16:30+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
