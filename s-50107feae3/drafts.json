@@ -185,13 +185,13 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "릴스 7% 경보 — 폴킴 본인 채널(위험 낮음) 클립 · 2천만 원 영수증이라는 한 마디가 바로 읽힌다 · 케이팝은 도달 대비 팔로우가 높다",
-    "at": "2026-10-30T10:05+09:00"
-   },
    "corner_name": "그 말",
-   "corner_no": 5
+   "corner_no": 5,
+   "pick": {
+    "rank": 3,
+    "why": "오전 1순위 숏폼 · 케이팝은 도달 대비 팔로우가 높다 · 존박 릴스와 시간 간격을 두고",
+    "at": "2026-10-30T16:22+09:00"
+   }
   },
   {
    "source": {
@@ -455,11 +455,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "어제 나온 신곡 · 당사자 인스타 2.0배 · 발행으로 본 판정에서 잘 올라가는 정보·news 결",
-    "at": "2026-10-30T10:05+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -642,11 +637,6 @@
       "A": "c1278176"
      }
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "오늘 고정 연재 「그날의 앨범」 · 11/1 발매 10년 · 규효 '덜 유명한 곡' 지적대로 '불장난' 대신 'STAY'",
-    "at": "2026-10-30T10:05+09:00"
    },
    "corner_name": "그날의 앨범",
    "corner_no": 3
@@ -1465,6 +1455,434 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:johnpark-rap-loco",
+    "account": "존이냐박이냐",
+    "url": "https://www.youtube.com/watch?v=PnaKtFPlKoo",
+    "image": null,
+    "head": "John Park orders at McDonald's by rapping (with Loco)",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T16:22+09:00",
+   "key": "ef8fecea",
+   "by": "claude",
+   "subjects": [
+    "존박",
+    "로꼬"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "S",
+    "kind": "클립",
+    "angle": "랩으로 햄버거를 주문한 발라드 가수 존박 — 선생님 로꼬의 평가 '진지하게 하셔도 된다', '앨범 낼 때 연락 달라'",
+    "why": "이번 회차 목표 숏폼 · 23일 공개 영상이 일주일째 기사로 이어지는 오늘의 화제 · 존박 본인 채널 원본"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T16:22+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=PnaKtFPlKoo\n구간: 22:50-23:24\n곡: 로꼬가 내린 평가는\n아티스트: 랩으로 햄버거 시킨 존박,\n피처링:\n후킹: \n출처: 존이냐박이냐\n자막: 자동",
+    "caption": "존박(@johnparkgram)이 랩으로 햄버거를 주문했습니다.\n\n존박의 유튜브 채널 '존이냐박이냐'에서 곽진언과 함께 로꼬(@satgotloco)에게 랩 레슨을 받고, 직접 쓴 가사로 매장에서 주문하는 미션이었는데요, 레슨을 맡은 로꼬는 \"진지하게 하셔도 된다\"고 평했습니다.\n\n로꼬는 여기에 앨범을 낼 때 필요한 게 있으면 연락 달라는 말까지 덧붙였습니다. 발라드 가수의 랩 도전이 선생님의 약속으로 마무리된 셈입니다.\n\n#PLOT #존박 #로꼬 #곽진언 #존이냐박이냐",
+    "hooks": {
+     "A": "랩으로 햄버거 시킨 존박, / 로꼬가 내린 평가는",
+     "B": "발라드 가수 존박의 / 랩을 다 들은 로꼬",
+     "C": "존박에게 랩을 가르친 / 로꼬의 마지막 한 마디"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=PnaKtFPlKoo",
+     "credit": "존이냐박이냐",
+     "range": [
+      1370.0,
+      1404.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 존이냐박이냐 (존박 본인 채널)",
+     "원본이 맥도날드 협업 콘텐츠라 캡션에서 브랜드·세트 메뉴·광고 이야기는 뺐음 · 22:56 말이 로꼬 목소리인지 영상으로 볼 것"
+    ],
+    "research": [
+     {
+      "title": "존이냐박이냐 본편 — 22:56 '진지하게 하셔도 된다' · 23:11 '나중에 앨범 때 필요하신 거 있으시면 연락 주세요' · 19:46 '이런 곳에서 랩을 하는게 오글거릴 수밖에 없거든요. 근데 너무 멋있는 거예요' (자막)",
+      "link": "https://www.youtube.com/watch?v=PnaKtFPlKoo"
+     },
+     {
+      "title": "뉴시스 10/28 — 곽진언과 로꼬에게 힙합 레슨 · 랩으로 햄버거 주문 미션 · 로꼬 '나중에 앨범 내실 때 필요한 게 있으시면 연락 달라'",
+      "link": "https://www.newsis.com/view/NISX20261028_0003844724"
+     },
+     {
+      "title": "아이뉴스24 — 로꼬 '진지하게 하셔도 될 것 같다'",
+      "link": "https://m.inews24.com/v/2020079"
+     },
+     {
+      "title": "헤럴드경제 10/29 — 23일 공개 · 맥도날드와 협업 콘텐츠 · 댓글이 실제 광고로",
+      "link": "https://biz.heraldcorp.com/article/10919563"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/PnaKtFPlKoo/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344944/eat38lafxu77tklj4nrc.jpg",
+     "key": "PnaKtFPlKoo@1370.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-30T16:22+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "릴스 8% 경보 · 지금 가장 뜨거운 영상(23일 공개 뒤 기사 10곳 넘게) · 존박 본인 채널이라 위험 낮음 · 로꼬 한 마디가 바로 읽힌다",
+    "at": "2026-10-30T16:22+09:00"
+   },
+   "corner_name": "그 말",
+   "corner_no": 6
+  },
+  {
+   "source": {
+    "id": "claude:haon-two-crowns",
+    "account": "스포츠서울 10/28",
+    "url": "https://www.sportsseoul.com/news/read/1644899",
+    "image": null,
+    "head": "'14세 래퍼' 한재희, 김하온이 직접 찾아왔다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T16:22+09:00",
+   "key": "0a7c12c5",
+   "by": "claude",
+   "subjects": [
+    "김하온"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "인물해부 — 〈고등래퍼2〉 우승 8년 뒤 〈쇼미더머니12〉 우승, 그리고 14세 래퍼를 부르는 쪽이 된 김하온 · 11월 새 정규와 첫 단독을 앞두고",
+    "why": "이번 회차 목표 인물해부 · 레이더(김하온 11/12 앨범 예고 · 한재희 기사) · 90일 안 PLOT 미다룸"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T16:22+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n김하온(@noahmik)은 서바이벌 우승을 두 번 한 래퍼입니다.\n\n2018년 〈고등래퍼2〉에서 우승하고 그해 하이어뮤직(@h1ghrmusic)에서 첫 EP [TRAVEL: NOAH]를 냈는데요, 8년 뒤인 올해 4월 〈쇼미더머니12〉에서 다시 정상에 섰습니다. 파이널 무대엔 개코, 그리고 오랜 친구 빈첸이 올랐습니다.\n\n6월 〈유 퀴즈 온 더 블럭〉에 나온 14세 래퍼 한재희(@ageha_hee)는 김하온 쪽 연락을 받고 그의 신곡에 '스페셜 보이스'로 참여했다고 밝혔습니다. 우승자로 불리던 사람이 이제 후배를 부르는 쪽에 선 셈입니다.\n\n김하온의 새 정규 앨범은 11월에 나오고, 첫 단독 콘서트에서 수록곡을 처음 라이브로 들려줍니다.\n\n#PLOT #김하온 #HAON #쇼미더머니12 #고등래퍼2\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793344933/d5m9kxmuzkktgf468wfq.jpg\n제목: 고등래퍼 우승 8년 뒤,|다시 왕관 쓴 김하온\n부제: 11월 새 정규 · 첫 단독 콘서트\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793240183/hglsw8d7rihp1zarerdk.jpg\n소제목: 2018, 고등래퍼\n본문: 2018년 Mnet 〈고등래퍼2〉 우승. 그해 9월 하이어뮤직에서 첫 EP [TRAVEL: NOAH]를 내며 HAON이라는 이름으로 데뷔했습니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg\n소제목: 2026, 쇼미더머니\n본문: 8년 뒤 〈쇼미더머니12〉 파이널. 'R.I.L'에는 개코가, 'King's gambit'에는 오랜 친구 빈첸이 함께 섰습니다. 결과는 두 번째 우승.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg\n소제목: \"체스에 희생 없는 플레이는 없습니다\"\n본문: 우승 뒤 인터뷰에서 남긴 말입니다. 파이널 곡 이름 'King's gambit'도 체스에서 나온 말입니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490208/aq5g774hyy5s54wbjv90.jpg\n소제목: 열네 살 래퍼\n본문: 6월 〈유 퀴즈 온 더 블럭〉에 나온 14세 래퍼 한재희는 김하온 쪽에서 연락을 받고 그의 신곡에 '스페셜 보이스'로 참여했다고 말했습니다. 우승자로 불리던 사람이 이제 후배를 부르는 쪽에 섰습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490375/urx1jmwbkoibvxpagbul.jpg\n소제목: 그리고 11월\n본문: 새 정규 앨범이 11월에 나옵니다. 첫 단독 콘서트에서는 수록곡을 처음 라이브로 들려줄 예정입니다.\n출처:\n",
+    "caption": "김하온(@noahmik)은 서바이벌 우승을 두 번 한 래퍼입니다.\n\n2018년 〈고등래퍼2〉에서 우승하고 그해 하이어뮤직(@h1ghrmusic)에서 첫 EP [TRAVEL: NOAH]를 냈는데요, 8년 뒤인 올해 4월 〈쇼미더머니12〉에서 다시 정상에 섰습니다. 파이널 무대엔 개코, 그리고 오랜 친구 빈첸이 올랐습니다.\n\n6월 〈유 퀴즈 온 더 블럭〉에 나온 14세 래퍼 한재희(@ageha_hee)는 김하온 쪽 연락을 받고 그의 신곡에 '스페셜 보이스'로 참여했다고 밝혔습니다. 우승자로 불리던 사람이 이제 후배를 부르는 쪽에 선 셈입니다.\n\n김하온의 새 정규 앨범은 11월에 나오고, 첫 단독 콘서트에서 수록곡을 처음 라이브로 들려줍니다.\n\n#PLOT #김하온 #HAON #쇼미더머니12 #고등래퍼2",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344933/d5m9kxmuzkktgf468wfq.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490375/urx1jmwbkoibvxpagbul.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ws8rp73y/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792241339/bddv88zvxzq5ixfd9vcs.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8hk5oo37/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490167/vc6lc85ax7p7unbrgo70.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_hab66700/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490355/dj7m0w723u67vwneymvp.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ivlopaqb/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490183/shafh1gjxuojkfikspcg.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ker5myy5/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vepv2vrs/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_744s5ov7/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_152vj4z1/auto_pdb_김하온_화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344933/d5m9kxmuzkktgf468wfq.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490375/urx1jmwbkoibvxpagbul.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ws8rp73y/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792241339/bddv88zvxzq5ixfd9vcs.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8hk5oo37/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490167/vc6lc85ax7p7unbrgo70.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_hab66700/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490355/dj7m0w723u67vwneymvp.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ivlopaqb/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490183/shafh1gjxuojkfikspcg.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ker5myy5/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vepv2vrs/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_744s5ov7/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_152vj4z1/auto_pdb_김하온_화보_.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "고등래퍼 우승 8년 뒤,|다시 왕관 쓴 김하온",
+      "sub": "11월 새 정규 · 첫 단독 콘서트"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사진: 체스 인터뷰 장 사진 오른쪽 아래에 ELLE 워터마크 — 다른 사진으로 바꿀 것 · 고등래퍼 장의 〈고등래퍼2〉 로고 이미지 해상도 낮아 흐림 · 미리보기는 4장까지만 나와서 '열네 살 래퍼'·'그리고 11월' 장 사진은 못 봤음",
+     "[검증] '첫 단독 콘서트'·'11월 정규·수록곡 첫 라이브'는 금강일보 한 곳(+스포츠서울의 '단독 콘서트' 언급)뿐 — 두 번째 출처 확인 필요 · 빈첸 '〈고등래퍼2〉를 함께 지나온 동갑내기'는 두 곳 확인 안 돼 '오랜 친구'(뉴시스)로 바꿈",
+     "김하온이 한재희 작업실을 찾아가 장비를 선물한 일은 스포츠서울 한 곳뿐이라 뺐음 · 'ARK' 11/21 KBS아레나도 금강일보 한 곳뿐이라 캡션엔 '첫 단독'까지만",
+     "11/12 앨범 [i+em]은 힙합엘이의 인스타 캡처뿐 — 김하온 인스타로 날짜·제목 확인되면 넣을 것"
+    ],
+    "research": [
+     {
+      "title": "뉴시스 2026-05-08 — '고등래퍼2' 이후 8년 만 쇼미12 우승 · 인터뷰 '체스에 희생 없는 플레이는 없습니다'",
+      "link": "https://mobile.newsis.com/view/NISX20260507_0003619475"
+     },
+     {
+      "title": "머니투데이 2026-04-03 — 4월 2일 파이널 · 'R.I.L'(개코) · 'King's gambit'(동갑내기 빈첸)",
+      "link": "https://www.mt.co.kr/entertainment/2026/04/03/2026040312157239942"
+     },
+     {
+      "title": "스포츠경향 2026-04-08 — 개코 'R.I.L' 피처링",
+      "link": "https://sports.khan.co.kr/article/202604081140003/"
+     },
+     {
+      "title": "위키백과 하온 — 2018 고등래퍼2 우승 · 2018.9.5 첫 EP [TRAVEL: NOAH] · 2026 쇼미12 우승",
+      "link": "https://ko.wikipedia.org/wiki/하온"
+     },
+     {
+      "title": "뉴스엔 2026-06-24 — 유퀴즈 한재희 '하온 씨 회사에서 DM, 스페셜 보이스로 신곡 참여'",
+      "link": "https://www.newsen.com/news_view.php?uid=202606241914396110&code=100100"
+     },
+     {
+      "title": "스포츠서울 10/28 — 한재희 작업실 방문·장비 선물 · 한재희 SNS '단독 콘서트 축하해요. 장비 정말 감사합니다'",
+      "link": "https://www.sportsseoul.com/news/read/1644899"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344948/urh0htckhlvlaipsfk8s.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344948/mqqsleaebjvw4anjsgad.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344948/jdy06rtytajfuezu8swe.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344948/jgowjxtt55t8vqrqcej6.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344949/vv8ykywythkzgf80qddi.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344949/pkxm39lptwwqzzpunyac.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344949/axwbrb1opse5p4mnk2tj.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344948/urh0htckhlvlaipsfk8s.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T16:22+09:00",
+     "v": {
+      "A": "6fe4daa6"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "인물해부 목표(1.9배인데 최근 5%) · 11월 정규·첫 단독을 앞둔 지금 김하온을 한 번에 정리",
+    "at": "2026-10-30T16:22+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:roykim-fall-14years",
+    "account": "한국일보 10/30",
+    "url": "https://www.hankookilbo.com/news/article/A2026103013420002958",
+    "image": null,
+    "head": "로이킴, 공연 중 무대서 추락 사고… '콘서트 전까진 나을 것'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T16:22+09:00",
+   "key": "b15bbb52",
+   "by": "claude",
+   "subjects": [
+    "로이킴"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "로이킴 '14년 만에 떨어져 봤다' — 첫 KSPO DOME 단독 3주 앞 무대 추락, 본인 말로 · 기사형 표지 한 장",
+    "why": "레이더 · 오늘(30일) 기사 여럿 · 본인 SNS 발언이 있는 사람 소식"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T16:22+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n로이킴이 공연 도중 무대에서 떨어졌습니다.\n\n29일 오른쪽 무릎에 보호대를 찬 사진과 함께 \"무대에서 공연을 하다 14년 만에 떨어져 봤다\"고 적었는데요, 매진 행렬에 몸 둘 바를 몰라서 그랬나 보다는 말도 덧붙였습니다. 다행히 다음 달 콘서트 전까지는 충분히 나을 거라고 전했습니다.\n\n그 콘서트는 로이킴이 처음 서는 KSPO DOME 단독 공연입니다. 이틀로 시작해 추가 회차까지 열린 '[R:O:Y] 인 서울'은 11월 20일부터 22일까지 이어집니다.\n\n#PLOT #로이킴 #ROYKIM #KSPODOME\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793344935/v1m563opk4d3uht4acc3.jpg\n제목: 로이킴, 공연하다|14년 만에 무대서 추락\n부제: \"콘서트까진 충분히 나을 것\"\n출처:\n",
+    "caption": "로이킴이 공연 도중 무대에서 떨어졌습니다.\n\n29일 오른쪽 무릎에 보호대를 찬 사진과 함께 \"무대에서 공연을 하다 14년 만에 떨어져 봤다\"고 적었는데요, 매진 행렬에 몸 둘 바를 몰라서 그랬나 보다는 말도 덧붙였습니다. 다행히 다음 달 콘서트 전까지는 충분히 나을 거라고 전했습니다.\n\n그 콘서트는 로이킴이 처음 서는 KSPO DOME 단독 공연입니다. 이틀로 시작해 추가 회차까지 열린 '[R:O:Y] 인 서울'은 11월 20일부터 22일까지 이어집니다.\n\n#PLOT #로이킴 #ROYKIM #KSPODOME",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344935/v1m563opk4d3uht4acc3.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424373/zzh26te4qaimam6pikoj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424384/f9oth4qzsmrcw4qr17qf.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_tlhx4rsz/auto_pdb_로이킴_콘셉트 포토_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424373/zzh26te4qaimam6pikoj.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_94su85dl/auto_pdb_로이킴_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424380/a8hvao8a0tj241hf8w6v.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_9q_913il/auto_pdb_로이킴_인터뷰 화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344935/v1m563opk4d3uht4acc3.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424373/zzh26te4qaimam6pikoj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424384/f9oth4qzsmrcw4qr17qf.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_tlhx4rsz/auto_pdb_로이킴_콘셉트 포토_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424373/zzh26te4qaimam6pikoj.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_94su85dl/auto_pdb_로이킴_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792424380/a8hvao8a0tj241hf8w6v.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_9q_913il/auto_pdb_로이킴_인터뷰 화보_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "로이킴, 공연하다|14년 만에 무대서 추락",
+      "sub": "\"콘서트까진 충분히 나을 것\""
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "어느 공연에서 언제 떨어졌는지는 기사 두 곳 모두 없음 · 무릎 보호대 사진은 본인 인스타라 표지는 사진 DB 화보로"
+    ],
+    "research": [
+     {
+      "title": "한국일보 10/30 — 29일 SNS '무대에서 공연을 하다 14년 만에 떨어져 봤다' · 오른쪽 무릎 파란 보호대 · '콘서트까진 충분히 나을 거라 한다' · 11/20~22 KSPO DOME",
+      "link": "https://www.hankookilbo.com/news/article/A2026103013420002958"
+     },
+     {
+      "title": "헤럴드경제 10/30 — 같은 글 · '매진 행렬에, 그 감사함에 몸 둘 바를 몰라서 그랬나' · '콘서트까지는 충분히 나을 것'",
+      "link": "https://biz.heraldcorp.com/article/10920529"
+     },
+     {
+      "title": "일간스포츠 10/14 — 첫 KSPO돔 콘서트 3일 전석 매진",
+      "link": "https://isplus.com/article/view/isp202610140170"
+     },
+     {
+      "title": "NOL 티켓 — 2026-27 로이킴 LIVE TOUR [R:O:Y] in SEOUL",
+      "link": "https://nol.yanolja.com/ticket/products/26013078"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344952/hexkbrvf4t9acgdqr4wx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344952/gdfvpnzxdkujmuacdp4l.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793344952/hexkbrvf4t9acgdqr4wx.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T16:22+09:00",
+     "v": {
+      "A": "851724fb"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1543,7 +1961,7 @@
     "need_today": 2,
     "day": null,
     "next_no": 5,
-    "drafts": 1,
+    "drafts": 2,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -1639,14 +2057,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 6,
+    "drafts": 8,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T14:51+09:00"
+  "at": "2026-10-30T16:22+09:00"
  },
  "queue": {
-  "next": "2026-10-30T14:53+09:00",
+  "next": "2026-10-30T16:24+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
