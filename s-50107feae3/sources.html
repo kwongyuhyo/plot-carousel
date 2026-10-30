@@ -4619,9 +4619,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 20:09';
+    a.title = '판 10.30 20:26';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 20:09';
+    ver.textContent = '10.30 20:26';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -4674,7 +4674,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   /* 10/24 규효 "봇 UI 사용자 편의 — 메뉴·화면 이동" — 다른 화면으로 가려면 늘 홈을 거쳐야 했다.
      '← PLOT 제작' 옆 ▾ 를 누르면 화면 목록이 펼쳐진다. 지금 화면은 표시만. */
   var PAGES = [['./', '홈'], ['sources.html', '오늘의 초안'], ['shorts.html', '숏폼 제작'],
-               ['carousel.html', '캐러셀 스튜디오'], ['perf.html', 'PLOT 성과'], ['photos.html', '사진 DB']];
+               ['carousel.html', '캐러셀 스튜디오'], ['perf.html', 'PLOT 성과'], ['photos.html', '사진 DB'], ['mac.html', '맥 상태']];
   function menu() {
     if (document.getElementById('plotNavMenu')) return;
     var here = (location.pathname.split('/').pop() || '');

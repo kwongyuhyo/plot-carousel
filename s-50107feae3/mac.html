@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>맥 상태 — PLOT</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0C;--panel:#131318;--raise:#1B1B22;--line:#20202A;--text:#ECECF1;--muted:#8A8A96;--dim:#565663;--amber:#E8B34A;--pick:#6FBF8B;--bad:#E0786A;color-scheme:dark}
+:root[data-theme="light"]{--bg:#FBFAF7;--panel:#F2F0EA;--raise:#E9E6DE;--line:#DCD8CE;--text:#1A1A1F;--muted:#5E5E6B;--dim:#746E7C;--amber:#7A6B10;--pick:#2E7D51;--bad:#A63A2B;color-scheme:light}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#FBFAF7;--panel:#F2F0EA;--raise:#E9E6DE;--line:#DCD8CE;--text:#1A1A1F;--muted:#5E5E6B;--dim:#746E7C;--amber:#7A6B10;--pick:#2E7D51;--bad:#A63A2B;color-scheme:light}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 Pretendard,-apple-system,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:16px 16px 90px}
+h1{font-size:26px;margin:8px 0 2px;letter-spacing:-.03em}
+.top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;color:var(--muted);font-size:13px;margin-bottom:14px}
+.top b{color:var(--text)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--pick);margin-right:6px;vertical-align:1px}
+.dot.off{background:var(--bad)}.dot.warn{background:var(--amber)}
+.warn{color:var(--amber)}.bad{color:var(--bad)}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:860px){.grid{grid-template-columns:1fr 1fr}}
+.grid>*{min-width:0}
+.repo{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 14px 8px}
+.repo h2{margin:0 0 8px;font-size:18px;display:flex;align-items:center;gap:8px}
+.repo h2 small{font-size:12px;font-weight:400;color:var(--muted)}
+.sec{border-top:1px solid var(--line);padding:10px 0 8px}
+.sec h3{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600;display:flex;justify-content:space-between}
+.row{display:flex;gap:10px;align-items:flex-start;padding:6px 0}
+.row img{width:44px;height:55px;object-fit:cover;border-radius:6px;background:var(--raise);flex:none}
+.row .t{flex:1;min-width:0}
+.row .t b{font-size:14px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .t small{display:block;color:var(--muted);font-size:12px;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .r{flex:none;text-align:right;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.row .r b{display:block;color:var(--text);font-size:13px}
+.spin{display:inline-block;width:10px;height:10px;border:2px solid var(--amber);border-right-color:transparent;border-radius:50%;animation:sp 1s linear infinite;margin-right:6px;vertical-align:-1px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.bar{height:4px;background:var(--raise);border-radius:2px;overflow:hidden;margin-top:4px}
+.bar i{display:block;height:100%;background:var(--amber)}
+.empty{color:var(--dim);font-size:13px;padding:2px 0 6px}
+.ok{color:var(--pick)}
+.chip{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:999px;padding:0 7px;margin-left:4px;color:var(--muted)}
+.more{background:none;border:0;color:var(--muted);font:inherit;font-size:12px;padding:4px 0;cursor:pointer}
+.note{color:var(--dim);font-size:12px;margin-top:18px;line-height:1.6}
+</style>
+
+<link rel="manifest" href="manifest.webmanifest?v=37">
+<meta name="theme-color" content="#0A0A0C">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PLOT">
+<meta name="mobile-web-app-capable" content="yes">
+
+<style id="plotTheme">
+:root{ --accent:#E8B34A; --glass:rgba(18,19,26,.93); }
+/* 흐린 보조 글씨가 어두운 바탕에서 2.3~2.9:1 이었다 — 해 아래 폰에서 안 읽힌다.
+   세 화면이 이름만 다를 뿐 같은 자리라 한 군데서 올린다. */
+html:root[data-theme="dark"]{ --dim:#82828F; --faint:#82828F; --skip:#82828F;
+  --bad:#E0786A }
+@media (prefers-color-scheme: dark){
+  html:root:not([data-theme="light"]){ --dim:#82828F; --faint:#82828F;
+    --skip:#82828F; --bad:#E0786A }
+}
+html:root[data-accent="amber"]{ --accent:#E8B34A; --amber:#E8B34A }
+html:root[data-accent="blue"]{ --accent:#5B8DEF; --amber:#5B8DEF }
+html:root[data-accent="green"]{ --accent:#4FB477; --amber:#4FB477 }
+html:root[data-accent="violet"]{ --accent:#8B7CF0; --amber:#8B7CF0 }
+html:root[data-accent="mono"]{ --accent:#ECECF1; --amber:#ECECF1 }
+html:root[data-accent="neon"]{ --accent:#00F0FF; --amber:#00F0FF }
+html:root .plotThemeBox .sw[data-accent="amber"]{ background:#E8B34A; color:#E8B34A }
+html:root .plotThemeBox .sw[data-accent="blue"]{ background:#5B8DEF; color:#5B8DEF }
+html:root .plotThemeBox .sw[data-accent="green"]{ background:#4FB477; color:#4FB477 }
+html:root .plotThemeBox .sw[data-accent="violet"]{ background:#8B7CF0; color:#8B7CF0 }
+html:root .plotThemeBox .sw[data-accent="mono"]{ background:#ECECF1; color:#ECECF1 }
+html:root .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#FF2BD6 45%,#B6FF3B 100%); color:#00F0FF }
+html:root[data-theme="light"]{
+  --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
+  --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
+  --muted:#57544D; --dim:#6B6760; --faint:#6B6760; --skip:#6E6A78;
+  --glass:rgba(246,244,239,.93); --bad:#A63A2B; --warn:#8A6B12; --danger:#A63A2B;
+  color-scheme:light;
+}
+html:root[data-theme="light"][data-accent="amber"]{ --accent:#7A6B10; --amber:#7A6B10 }
+html:root[data-theme="light"][data-accent="blue"]{ --accent:#2B5BC4; --amber:#2B5BC4 }
+html:root[data-theme="light"][data-accent="green"]{ --accent:#216E45; --amber:#216E45 }
+html:root[data-theme="light"][data-accent="violet"]{ --accent:#5240B8; --amber:#5240B8 }
+html:root[data-theme="light"][data-accent="mono"]{ --accent:#1A1A1E; --amber:#1A1A1E }
+html:root[data-theme="light"][data-accent="neon"]{ --accent:#B5008C; --amber:#B5008C }
+html:root[data-theme="light"] input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),
+html:root[data-theme="light"] textarea,
+html:root[data-theme="light"] select{
+  background:var(--panel)!important; color:var(--text)!important;
+  -webkit-text-fill-color:var(--text)!important;
+}
+html:root[data-theme="light"] input:focus, html:root[data-theme="light"] textarea:focus{ background:var(--bg)!important }
+html:root[data-theme="light"] ::placeholder{ color:var(--dim)!important; opacity:1 }
+html:root[data-theme="light"] .err{ background:#FBEFEF!important; border-color:#E2BDBD!important;
+  color:#8A2F2F!important }
+html:root[data-theme="light"] .send{ color:var(--bg)!important }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="amber"]{ background:#7A6B10; color:#7A6B10 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="blue"]{ background:#2B5BC4; color:#2B5BC4 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
+html:root[data-theme="light"] .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#FF2BD6 45%,#B6FF3B 100%); color:#B5008C }
+@media (prefers-color-scheme: light){
+html:root:not([data-theme="dark"]){
+  --bg:#FBFAF7; --panel:#F2F0EA; --raise:#E9E6DE; --panel-2:#E9E6DE;
+  --line:#DAD6CB; --text:#1A1A1E; --ink:#1A1A1E;
+  --muted:#57544D; --dim:#6B6760; --faint:#6B6760; --skip:#6E6A78;
+  --glass:rgba(246,244,239,.93); --bad:#A63A2B; --warn:#8A6B12; --danger:#A63A2B;
+  color-scheme:light;
+}
+html:root:not([data-theme="dark"])[data-accent="amber"]{ --accent:#7A6B10; --amber:#7A6B10 }
+html:root:not([data-theme="dark"])[data-accent="blue"]{ --accent:#2B5BC4; --amber:#2B5BC4 }
+html:root:not([data-theme="dark"])[data-accent="green"]{ --accent:#216E45; --amber:#216E45 }
+html:root:not([data-theme="dark"])[data-accent="violet"]{ --accent:#5240B8; --amber:#5240B8 }
+html:root:not([data-theme="dark"])[data-accent="mono"]{ --accent:#1A1A1E; --amber:#1A1A1E }
+html:root:not([data-theme="dark"])[data-accent="neon"]{ --accent:#B5008C; --amber:#B5008C }
+html:root:not([data-theme="dark"]) input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]),
+html:root:not([data-theme="dark"]) textarea,
+html:root:not([data-theme="dark"]) select{
+  background:var(--panel)!important; color:var(--text)!important;
+  -webkit-text-fill-color:var(--text)!important;
+}
+html:root:not([data-theme="dark"]) input:focus, html:root:not([data-theme="dark"]) textarea:focus{ background:var(--bg)!important }
+html:root:not([data-theme="dark"]) ::placeholder{ color:var(--dim)!important; opacity:1 }
+html:root:not([data-theme="dark"]) .err{ background:#FBEFEF!important; border-color:#E2BDBD!important;
+  color:#8A2F2F!important }
+html:root:not([data-theme="dark"]) .send{ color:var(--bg)!important }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="amber"]{ background:#7A6B10; color:#7A6B10 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="blue"]{ background:#2B5BC4; color:#2B5BC4 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="green"]{ background:#216E45; color:#216E45 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="violet"]{ background:#5240B8; color:#5240B8 }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="mono"]{ background:#1A1A1E; color:#1A1A1E }
+html:root:not([data-theme="dark"]) .plotThemeBox .sw[data-accent="neon"]{ background:linear-gradient(135deg,#00F0FF 0%,#FF2BD6 45%,#B6FF3B 100%); color:#B5008C }
+}
+/* 네온 — 바탕째 갈아 끼우므로 밝은 한 벌보다 뒤에 온다 */
+html:root[data-theme="dark"][data-accent="neon"]{
+  --bg:#06040F; --panel:#0E0A1C; --raise:#161029; --panel-2:#161029;
+  --line:#2B1D52; --hair:#14102A; --text:#EAE6FF; --ink:#EAE6FF;
+  --muted:#B9AEE8; --dim:#8E85C9; --faint:#8E85C9; --skip:#8E85C9;
+  --bad:#FF5C8A; --warn:#FFD166; --danger:#FF5C8A;
+  --glass:rgba(10,7,22,.93); --pick:#3DFFA8;
+  color-scheme:dark;
+}
+html:root[data-theme="dark"][data-accent="neon"] .chip.on, html:root[data-theme="dark"][data-accent="neon"] .btn.primary, html:root[data-theme="dark"][data-accent="neon"] .grp button[aria-selected="true"],
+html:root[data-theme="dark"][data-accent="neon"] .tab[aria-selected="true"], html:root[data-theme="dark"][data-accent="neon"] .pcard .pbtn:hover,
+html:root[data-theme="dark"][data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(0,240,255,.35) }
+html:root[data-theme="dark"][data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(0,240,255,.5) }
+html:root[data-theme="dark"][data-accent="neon"] header, html:root[data-theme="dark"][data-accent="neon"] .bar{ border-color:var(--line) }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="cyan"]{ --accent:#00F0FF; --amber:#00F0FF; --neonrgb:0,240,255 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="magenta"]{ --accent:#FF2BD6; --amber:#FF2BD6; --neonrgb:255,43,214 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="lime"]{ --accent:#B6FF3B; --amber:#B6FF3B; --neonrgb:182,255,59 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="orange"]{ --accent:#FF9F43; --amber:#FF9F43; --neonrgb:255,159,67 }
+html:root[data-theme="dark"][data-accent="neon"][data-neon="violet"]{ --accent:#B08CFF; --amber:#B08CFF; --neonrgb:176,140,255 }
+html:root[data-theme="dark"][data-accent="neon"] body{
+  background-image:
+    radial-gradient(120% 60% at 50% -10%, rgba(var(--neonrgb,0,240,255),.16), transparent 60%),
+    linear-gradient(rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px);
+  background-size:100% 420px, 36px 36px, 36px 36px;
+  background-attachment:fixed;
+}
+html:root[data-theme="dark"][data-accent="neon"] .pwhy, html:root[data-theme="dark"][data-accent="neon"] .fwNew, html:root[data-theme="dark"][data-accent="neon"] .lat, html:root[data-theme="dark"][data-accent="neon"] .stamp,
+html:root[data-theme="dark"][data-accent="neon"] .badge, html:root[data-theme="dark"][data-accent="neon"] .pkLbl{ text-shadow:0 0 8px rgba(var(--neonrgb,0,240,255),.45) }
+html:root[data-theme="dark"][data-accent="neon"] .pcard, html:root[data-theme="dark"][data-accent="neon"] .card, html:root[data-theme="dark"][data-accent="neon"] .fw, html:root[data-theme="dark"][data-accent="neon"] .block{
+  border-color:rgba(var(--neonrgb,0,240,255),.22) }
+html:root[data-theme="dark"][data-accent="neon"] header{ border-bottom-color:rgba(var(--neonrgb,0,240,255),.35) }
+html:root[data-theme="light"][data-accent="neon"]{
+  --bg:#FBF6FF; --panel:#F2E9FF; --raise:#E9DCFF; --panel-2:#E9DCFF;
+  --line:#DCC9F5; --hair:#EDE3FB; --text:#14082A; --ink:#14082A;
+  --muted:#4A2E70; --dim:#5F4490; --faint:#5F4490; --skip:#5F4490;
+  --bad:#A6112E; --warn:#7A4E00; --danger:#A6112E;
+  --glass:rgba(248,242,255,.93); --pick:#136B45;
+  color-scheme:light;
+}
+html:root[data-theme="light"][data-accent="neon"] .chip.on, html:root[data-theme="light"][data-accent="neon"] .btn.primary, html:root[data-theme="light"][data-accent="neon"] .grp button[aria-selected="true"],
+html:root[data-theme="light"][data-accent="neon"] .tab[aria-selected="true"], html:root[data-theme="light"][data-accent="neon"] .pcard .pbtn:hover,
+html:root[data-theme="light"][data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(181,0,140,.22) }
+html:root[data-theme="light"][data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(181,0,140,.35) }
+html:root[data-theme="light"][data-accent="neon"] header, html:root[data-theme="light"][data-accent="neon"] .bar{ border-color:var(--line) }
+html:root[data-theme="light"][data-accent="neon"][data-neon="cyan"]{ --accent:#0A6C78; --amber:#0A6C78; --neonrgb:0,240,255 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="magenta"]{ --accent:#A3007E; --amber:#A3007E; --neonrgb:255,43,214 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="lime"]{ --accent:#4C6B00; --amber:#4C6B00; --neonrgb:182,255,59 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="orange"]{ --accent:#8A4B00; --amber:#8A4B00; --neonrgb:255,159,67 }
+html:root[data-theme="light"][data-accent="neon"][data-neon="violet"]{ --accent:#5A3BC4; --amber:#5A3BC4; --neonrgb:176,140,255 }
+html:root[data-theme="light"][data-accent="neon"] body{ background-image:linear-gradient(rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px),linear-gradient(90deg, rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px); background-size:36px 36px; background-attachment:fixed }
+@media (prefers-color-scheme: dark){
+html:root:not([data-theme="light"])[data-accent="neon"]{
+  --bg:#06040F; --panel:#0E0A1C; --raise:#161029; --panel-2:#161029;
+  --line:#2B1D52; --hair:#14102A; --text:#EAE6FF; --ink:#EAE6FF;
+  --muted:#B9AEE8; --dim:#8E85C9; --faint:#8E85C9; --skip:#8E85C9;
+  --bad:#FF5C8A; --warn:#FFD166; --danger:#FF5C8A;
+  --glass:rgba(10,7,22,.93); --pick:#3DFFA8;
+  color-scheme:dark;
+}
+html:root:not([data-theme="light"])[data-accent="neon"] .chip.on, html:root:not([data-theme="light"])[data-accent="neon"] .btn.primary, html:root:not([data-theme="light"])[data-accent="neon"] .grp button[aria-selected="true"],
+html:root:not([data-theme="light"])[data-accent="neon"] .tab[aria-selected="true"], html:root:not([data-theme="light"])[data-accent="neon"] .pcard .pbtn:hover,
+html:root:not([data-theme="light"])[data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(0,240,255,.35) }
+html:root:not([data-theme="light"])[data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(0,240,255,.5) }
+html:root:not([data-theme="light"])[data-accent="neon"] header, html:root:not([data-theme="light"])[data-accent="neon"] .bar{ border-color:var(--line) }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="cyan"]{ --accent:#00F0FF; --amber:#00F0FF; --neonrgb:0,240,255 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="magenta"]{ --accent:#FF2BD6; --amber:#FF2BD6; --neonrgb:255,43,214 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="lime"]{ --accent:#B6FF3B; --amber:#B6FF3B; --neonrgb:182,255,59 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="orange"]{ --accent:#FF9F43; --amber:#FF9F43; --neonrgb:255,159,67 }
+html:root:not([data-theme="light"])[data-accent="neon"][data-neon="violet"]{ --accent:#B08CFF; --amber:#B08CFF; --neonrgb:176,140,255 }
+html:root:not([data-theme="light"])[data-accent="neon"] body{
+  background-image:
+    radial-gradient(120% 60% at 50% -10%, rgba(var(--neonrgb,0,240,255),.16), transparent 60%),
+    linear-gradient(rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--neonrgb,0,240,255),.055) 1px, transparent 1px);
+  background-size:100% 420px, 36px 36px, 36px 36px;
+  background-attachment:fixed;
+}
+html:root:not([data-theme="light"])[data-accent="neon"] .pwhy, html:root:not([data-theme="light"])[data-accent="neon"] .fwNew, html:root:not([data-theme="light"])[data-accent="neon"] .lat, html:root:not([data-theme="light"])[data-accent="neon"] .stamp,
+html:root:not([data-theme="light"])[data-accent="neon"] .badge, html:root:not([data-theme="light"])[data-accent="neon"] .pkLbl{ text-shadow:0 0 8px rgba(var(--neonrgb,0,240,255),.45) }
+html:root:not([data-theme="light"])[data-accent="neon"] .pcard, html:root:not([data-theme="light"])[data-accent="neon"] .card, html:root:not([data-theme="light"])[data-accent="neon"] .fw, html:root:not([data-theme="light"])[data-accent="neon"] .block{
+  border-color:rgba(var(--neonrgb,0,240,255),.22) }
+html:root:not([data-theme="light"])[data-accent="neon"] header{ border-bottom-color:rgba(var(--neonrgb,0,240,255),.35) }
+}
+@media (prefers-color-scheme: light){
+html:root:not([data-theme="dark"])[data-accent="neon"]{
+  --bg:#FBF6FF; --panel:#F2E9FF; --raise:#E9DCFF; --panel-2:#E9DCFF;
+  --line:#DCC9F5; --hair:#EDE3FB; --text:#14082A; --ink:#14082A;
+  --muted:#4A2E70; --dim:#5F4490; --faint:#5F4490; --skip:#5F4490;
+  --bad:#A6112E; --warn:#7A4E00; --danger:#A6112E;
+  --glass:rgba(248,242,255,.93); --pick:#136B45;
+  color-scheme:light;
+}
+html:root:not([data-theme="dark"])[data-accent="neon"] .chip.on, html:root:not([data-theme="dark"])[data-accent="neon"] .btn.primary, html:root:not([data-theme="dark"])[data-accent="neon"] .grp button[aria-selected="true"],
+html:root:not([data-theme="dark"])[data-accent="neon"] .tab[aria-selected="true"], html:root:not([data-theme="dark"])[data-accent="neon"] .pcard .pbtn:hover,
+html:root:not([data-theme="dark"])[data-accent="neon"] .plotThemeBox button.on{ box-shadow:0 0 10px rgba(181,0,140,.22) }
+html:root:not([data-theme="dark"])[data-accent="neon"] .plotThemeBox .sw.on{ box-shadow:0 0 0 2px var(--bg), 0 0 0 4px currentColor,
+  0 0 12px rgba(181,0,140,.35) }
+html:root:not([data-theme="dark"])[data-accent="neon"] header, html:root:not([data-theme="dark"])[data-accent="neon"] .bar{ border-color:var(--line) }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="cyan"]{ --accent:#0A6C78; --amber:#0A6C78; --neonrgb:0,240,255 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="magenta"]{ --accent:#A3007E; --amber:#A3007E; --neonrgb:255,43,214 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="lime"]{ --accent:#4C6B00; --amber:#4C6B00; --neonrgb:182,255,59 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="orange"]{ --accent:#8A4B00; --amber:#8A4B00; --neonrgb:255,159,67 }
+html:root:not([data-theme="dark"])[data-accent="neon"][data-neon="violet"]{ --accent:#5A3BC4; --amber:#5A3BC4; --neonrgb:176,140,255 }
+html:root:not([data-theme="dark"])[data-accent="neon"] body{ background-image:linear-gradient(rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px),linear-gradient(90deg, rgba(var(--neonrgb,181,0,140),.05) 1px, transparent 1px); background-size:36px 36px; background-attachment:fixed }
+}
+/* 강조색이 여섯이 되면서 한 줄에 안 들어간다 */
+.plotThemeBox .row{flex-wrap:wrap}
+.plotThemeBtn{border:1px solid var(--line); border-radius:6px; background:none;
+  color:var(--muted,#8A8A96); font:inherit; font-size:13px; padding:5px 9px; cursor:pointer}
+/* 머리줄에 붙을 자리가 없으면 화면 오른쪽 위에 떠 있는다. 이 배경을 인라인으로
+   까맣게 박아 두면 밝은 테마에서 글자가 묻는다 — 변수로 둔다. */
+.plotThemeBtn.float{position:fixed; right:12px; top:calc(12px + env(safe-area-inset-top)); z-index:9998;
+  background:var(--panel); color:var(--text); backdrop-filter:blur(8px)}
+/* 숏폼은 버튼 줄에 붙는다. 그 줄은 한 줄로 고정돼 있어서 하나 더 얹으면 390px 에서
+   18px 밀려났다 — 넘치면 접히게 한다. */
+.addRow{flex-wrap:wrap}
+.addRow .plotThemeBtn{flex:0 0 auto}
+.plotThemeBox{position:fixed; right:12px; z-index:9999; background:var(--panel,#131318);
+  border:1px solid var(--line); border-radius:10px; padding:11px 12px; min-width:186px;
+  box-shadow:0 12px 34px rgba(0,0,0,.4); font-size:13px; color:var(--text,#ECECF1)}
+.plotThemeBox b{display:block; font-size:12.5px; color:var(--muted,#8A8A96);
+  font-weight:600; margin:0 0 6px}
+.plotThemeBox .row{display:flex; gap:6px; margin-bottom:10px; align-items:center}
+.plotThemeBox .row:last-child{margin-bottom:0}
+.plotThemeBox button{flex:1; border:1px solid var(--line); border-radius:7px; background:none;
+  color:inherit; font:inherit; font-size:13px; padding:7px 4px; cursor:pointer}
+.plotThemeBox button.on{border-color:var(--accent); color:var(--accent)}
+.plotThemeBox .sw{width:26px; height:26px; flex:none; border-radius:50%; padding:0; border:0}
+.plotThemeBox .sw.on{box-shadow:0 0 0 2px var(--bg,#0A0A0C), 0 0 0 4px currentColor}
+.plotThemeBox .hues{display:none}
+html:root[data-accent="neon"] .plotThemeBox .hues{display:flex}
+.plotThemeBox .hue{width:22px; height:22px; flex:none; border-radius:50%; padding:0; border:0}
+.plotThemeBox .hue.on{box-shadow:0 0 0 2px var(--bg,#0A0A0C), 0 0 0 4px currentColor,
+  0 0 12px currentColor}
+/* 글자 크기 — 브라우저 확대와 같은 방식(칸도 같이 큰다). 기기마다 따로 기억한다. */
+html:root[data-fs="s"] body{ zoom:.92 }
+html:root[data-fs="l"] body{ zoom:1.12 }
+html:root[data-fs="xl"] body{ zoom:1.26 }
+.plotThemeBox .hue[data-hue="cyan"]{ background:#00F0FF; color:#00F0FF }
+.plotThemeBox .hue[data-hue="magenta"]{ background:#FF2BD6; color:#FF2BD6 }
+.plotThemeBox .hue[data-hue="lime"]{ background:#B6FF3B; color:#B6FF3B }
+.plotThemeBox .hue[data-hue="orange"]{ background:#FF9F43; color:#FF9F43 }
+.plotThemeBox .hue[data-hue="violet"]{ background:#B08CFF; color:#B08CFF }
+</style>
+<script>
+/* 첫 그림이 그려지기 전에 얹는다 — 안 그러면 어두운 화면이 한 번 번쩍인다. */
+(function () {
+  try {
+    var t = localStorage.getItem('plot.app.theme');
+    var a = localStorage.getItem('plot.app.accent');
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    if (a) document.documentElement.setAttribute('data-accent', a);
+    var n = localStorage.getItem('plot.app.neon');
+    document.documentElement.setAttribute('data-neon', n || 'cyan');
+    var g = localStorage.getItem('plot.app.gap');
+    document.documentElement.setAttribute('data-gap', g || 'normal');
+    var f = localStorage.getItem('plot.app.fs');
+    document.documentElement.setAttribute('data-fs', f || 'm');
+  } catch (e) {}
+})();
+</script>
+
+<style id="plotGap">
+html:root[data-gap="tight"]{ --u:6px }
+html:root[data-gap="wide"]{ --u:10px }
+html:root[data-gap="tight"] body{ padding-left:12px; padding-right:12px }
+html:root[data-gap="normal"] body{ padding-left:22px; padding-right:22px }
+html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>맥 상태</h1>
+  <div class="top" id="top"><span><span class="spin"></span>맥 상태를 불러오는 중…</span></div>
+  <div class="grid" id="grid"></div>
+  <div class="note">맥 미니가 30초마다 상태를 올리고, 이 화면은 10초마다 다시 읽습니다. 보기만 하는 화면이라 여기서 바꾸는 건 없습니다.<br>
+    예약 발행은 오늘의 초안의 「예약」·「릴스 대기열」로 넣은 것, 숏폼 렌더는 제작·미리 렌더 대기열입니다.</div>
+</div>
+<script>
+(function () {
+  var SB = { url: 'https://jipqujwziezeubtthbnw.supabase.co', key: 'sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK' };
+  var ST = null, OPEN = {};
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function ago(iso) {
+    var t = Date.parse(iso || ''); if (isNaN(t)) return '';
+    var s = Math.max(0, Math.round((Date.now() - t) / 1000));
+    return s < 60 ? s + '초' : s < 3600 ? Math.floor(s / 60) + '분' : Math.floor(s / 3600) + '시간 ' + Math.floor(s % 3600 / 60) + '분';
+  }
+  function until(iso) {
+    var t = Date.parse(iso || ''); if (isNaN(t)) return '';
+    var m = Math.round((t - Date.now()) / 60000);
+    if (m <= 0) return '곧';
+    return m < 60 ? m + '분 뒤' : Math.floor(m / 60) + '시간 ' + (m % 60) + '분 뒤';
+  }
+  function clock(iso) {
+    var d = new Date(iso || ''); if (isNaN(d)) return '';
+    var now = new Date(), same = d.toDateString() === now.toDateString();
+    return (same ? '' : (d.getMonth() + 1) + '/' + d.getDate() + ' ') + ('0' + d.getHours()).slice(-2) + ':' + ('0' + d.getMinutes()).slice(-2);
+  }
+  function kst(s) { return String(s || '').replace('T', ' ').slice(5, 16); }
+  function jobName(j) { return j.desc || j.job || j.id; }
+  function optLine(j) {
+    var o = j.opts || {}, ks = Object.keys(o);
+    return ks.length ? ks.map(function (k) { return k + ' ' + o[k]; }).join(' · ') : '';
+  }
+  function repoCard(r) {
+    var h = '<div class="repo"><h2><span class="dot' + (r.bot ? '' : ' off') + '"></span>' + esc(r.name) +
+      ' <small>' + (r.bot ? '봇 켜짐' : '<span class="bad">봇 꺼짐</span>') + '</small></h2>';
+    // 지금 하는 일
+    h += '<div class="sec"><h3>지금 하는 일<span>' + (r.running.length ? r.running.length + '개' : '') + '</span></h3>';
+    var rr = (r.renders || {}).active || [];
+    if (!r.running.length && !rr.filter(function (x) { return x.status === 'running'; }).length) h += '<div class="empty">쉬는 중</div>';
+    r.running.forEach(function (j) {
+      h += '<div class="row"><div class="t"><b><span class="spin"></span>' + esc(jobName(j)) + '</b>' +
+        (optLine(j) ? '<small>' + esc(optLine(j)) + '</small>' : '') + (j.now ? '<small>' + esc(j.now) + '</small>' : '') +
+        '</div><div class="r"><b>' + ago(j.since) + '째</b>' + esc(j.job) + '</div></div>';
+    });
+    rr.filter(function (x) { return x.status === 'running'; }).forEach(function (x) {
+      var p = Math.max(0, Math.min(100, Number(x.progress) || 0));
+      h += '<div class="row"><div class="t"><b><span class="spin"></span>숏폼 렌더 — ' + esc(x.title || x.kind) + '</b>' +
+        '<div class="bar"><i style="width:' + p + '%"></i></div></div><div class="r"><b>' + ago(String(x.started_at || '') + '+09:00') + '째</b>' + p + '%</div></div>';
+    });
+    h += '</div>';
+    // 기다리는 일
+    var wq = r.inbox || [], wr = rr.filter(function (x) { return x.status === 'queued'; });
+    h += '<div class="sec"><h3>기다리는 일<span>' + ((wq.length + wr.length) ? (wq.length + wr.length) + '개' : '') + '</span></h3>';
+    if (!wq.length && !wr.length) h += '<div class="empty">없음</div>';
+    wq.forEach(function (j) {
+      h += '<div class="row"><div class="t"><b>' + esc(jobName(j)) + '</b>' + (optLine(j) ? '<small>' + esc(optLine(j)) + '</small>' : '') +
+        '</div><div class="r">' + ago(j.since) + ' 전 들어옴</div></div>';
+    });
+    wr.forEach(function (x) {
+      h += '<div class="row"><div class="t"><b>숏폼 렌더 — ' + esc(x.title || x.kind) + '</b></div><div class="r">' + kst(x.created_at) + ' 들어옴</div></div>';
+    });
+    h += '</div>';
+    // 예약 발행
+    var sc = r.schedule || [];
+    h += '<div class="sec"><h3>예약 발행<span>' + (sc.length ? sc.length + '개' : '') + '</span></h3>';
+    if (!sc.length) h += '<div class="empty">예약된 게 없습니다</div>';
+    sc.forEach(function (x) {
+      h += '<div class="row">' + (x.thumb ? '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(x.thumb) + '" alt="">' : '') +
+        '<div class="t"><b>' + esc(x.title) + '</b><small>' + (x.kind === 'reel' ? '릴스' : '캐러셀') + (x.cover && x.cover !== 'A' ? ' · 표지 ' + esc(x.cover) : '') +
+        (x.claimed ? ' · <span class="warn">올리는 중</span>' : '') + '</small></div>' +
+        '<div class="r"><b>' + esc(clock(x.due)) + '</b>' + esc(until(x.due)) + '</div></div>';
+    });
+    h += '</div>';
+    // 최근 끝난 것
+    var rc = r.recent || [], open = !!OPEN[r.name], show = open ? rc : rc.slice(0, 4);
+    h += '<div class="sec"><h3>최근 끝난 일</h3>';
+    if (!rc.length) h += '<div class="empty">기록 없음</div>';
+    show.forEach(function (j) {
+      h += '<div class="row"><div class="t"><b>' + (j.ok ? '<span class="ok">✓</span> ' : '<span class="bad">✗</span> ') + esc(jobName(j)) + '</b>' +
+        (j.ok ? '' : '<small class="bad">' + esc(j.res) + '</small>') + '</div><div class="r">' + esc(j.at) + '</div></div>';
+    });
+    ((r.renders || {}).done || []).slice(0, open ? 5 : 2).forEach(function (x) {
+      h += '<div class="row"><div class="t"><b>' + (x.status === 'done' ? '<span class="ok">✓</span> ' : '<span class="bad">✗</span> ') + '숏폼 렌더 — ' + esc(x.title || x.kind) + '</b>' +
+        (x.error ? '<small class="bad">' + esc(x.error) + '</small>' : '') + '</div><div class="r">' + kst(x.finished_at || x.created_at) + '</div></div>';
+    });
+    if (rc.length > 4) h += '<button class="more" data-more="' + esc(r.name) + '">' + (open ? '접기' : '더 보기') + '</button>';
+    return h + '</div></div>';
+  }
+  function render() {
+    var top = document.getElementById('top'), grid = document.getElementById('grid');
+    if (!ST) return;
+    var age = (Date.now() - Date.parse(ST.at || '')) / 1000, stale = !(age < 120);
+    var busy = (ST.repos || []).reduce(function (n, r) { return n + r.running.length + ((r.renders || {}).active || []).filter(function (x) { return x.status === 'running'; }).length; }, 0);
+    var load = (ST.load || [])[0], cpus = ST.cpus || 0;
+    top.innerHTML = '<span><span class="dot' + (stale ? ' off' : busy ? ' warn' : '') + '"></span><b>' +
+      (stale ? '맥 소식이 끊김' : busy ? '일하는 중' : '쉬는 중') + '</b></span>' +
+      '<span>' + (stale ? '<span class="bad">마지막 소식 ' + ago(ST.at) + ' 전 — 맥·봇이 꺼졌을 수 있습니다</span>' : ago(ST.at) + ' 전 소식') + '</span>' +
+      (load != null ? '<span>부하 <b>' + load + '</b>' + (cpus ? ' / ' + cpus + '코어' : '') + '</span>' : '') +
+      (ST.disk_free_gb != null ? '<span>저장 공간 <b' + (ST.disk_free_gb < 20 ? ' class="bad"' : '') + '>' + ST.disk_free_gb + 'GB</b> 남음</span>' : '');
+    grid.innerHTML = (ST.repos || []).map(repoCard).join('');
+  }
+  function load() {
+    if (!SB.url || SB.url.indexOf('__') === 0) { document.getElementById('top').textContent = '저장소 설정이 없어 볼 수 없습니다'; return; }
+    fetch(SB.url.replace(/\/+$/, '') + '/rest/v1/plot_evals?select=snapshot&id=eq.' + encodeURIComponent('mac:status'),
+      { headers: { apikey: SB.key, Authorization: 'Bearer ' + SB.key }, cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (rows) {
+        var sn = rows && rows[0] && rows[0].snapshot;
+        if (sn) { ST = sn; render(); }
+        else if (!ST) document.getElementById('top').textContent = '아직 맥이 상태를 올린 적이 없습니다 — 봇을 다시 띄우면 30초 안에 나옵니다';
+      }).catch(function () {});
+  }
+  document.addEventListener('click', function (e) {
+    var m = e.target.closest('[data-more]'); if (m) { var k = m.getAttribute('data-more'); OPEN[k] = !OPEN[k]; render(); }
+  });
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') load(); });
+  load(); setInterval(function () { if (document.visibilityState === 'visible') load(); }, 10000);
+  setInterval(function () { if (ST && document.visibilityState === 'visible') render(); }, 5000);
+})();
+</script>
+</body>
+</html>
+
+<script>
+(function () {
+  function put() {
+    var a = document.createElement('a');
+    a.href = './';
+    a.textContent = '← PLOT 제작';
+    a.setAttribute('aria-label', 'PLOT 제작 홈으로');
+    a.title = '판 10.30 20:26';
+    var ver = document.createElement('span');
+    ver.textContent = '10.30 20:26';
+    ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
+                        'margin-left:7px;letter-spacing:0;';
+    a.appendChild(ver);
+    // 이 링크가 화면을 빠져나가는 유일한 길이다. 작게 두면 못 찾는다(규효 9/29).
+    // 손가락이 닿는 크기(44px)를 세로로 확보하고, 흐린 색 대신 본문색을 쓴다.
+    var base = 'font:700 16px/1 Pretendard,-apple-system,BlinkMacSystemFont,sans-serif;' +
+               'color:var(--text,#ECECF1);text-decoration:none;white-space:nowrap;letter-spacing:-.02em;' +
+               'display:inline-flex;align-items:center;min-height:44px;' +
+               'padding:6px 2px;border:0;background:none;flex:none;cursor:pointer;';
+    // 텔레그램 데스크톱은 미니앱을 폰 크기 창으로 띄운다 — 화면이 넓어도 창은 그대로다.
+    // 그래서 컴퓨터에서는 브라우저로 넘어가는 길을 한 번에 열어준다.
+    var TG = window.Telegram && window.Telegram.WebApp;
+    var inTG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
+    var wide = null;
+    if (inTG) {
+      wide = document.createElement('button');
+      wide.type = 'button';
+      wide.textContent = '🖥 브라우저에서';
+      wide.title = '넓은 화면에서 열기';
+      wide.onclick = function () {
+        try { TG.openLink(location.href); } catch (e) { window.open(location.href, '_blank'); }
+      };
+    }
+
+    var h = document.querySelector('header');
+    if (h) {
+      a.style.cssText = base + 'margin-right:14px;';
+      h.insertBefore(a, h.firstChild);
+      if (wide) {
+        wide.style.cssText = base + 'margin-right:14px;cursor:pointer;';
+        h.insertBefore(wide, a.nextSibling);
+      }
+    } else {
+      a.style.cssText = base +
+        'position:fixed;left:12px;top:calc(12px + env(safe-area-inset-top));z-index:9999;padding:8px 14px;' +
+        'border-radius:10px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
+        'border:1px solid var(--line,#20202A);box-shadow:0 6px 18px rgba(0,0,0,.28);' +
+        'backdrop-filter:blur(8px);';
+      document.body.appendChild(a);
+      if (wide) {
+        wide.style.cssText = base +
+          'position:fixed;left:150px;top:calc(12px + env(safe-area-inset-top));z-index:9999;padding:8px 14px;' +
+          'border-radius:10px;background:var(--glass,rgba(10,10,12,.72));color:var(--text,var(--ink,#ECECF1));' +
+          'border:1px solid var(--line,#20202A);cursor:pointer;' +
+          'backdrop-filter:blur(8px);';
+        document.body.appendChild(wide);
+      }
+    }
+  }
+  /* 10/24 규효 "봇 UI 사용자 편의 — 메뉴·화면 이동" — 다른 화면으로 가려면 늘 홈을 거쳐야 했다.
+     '← PLOT 제작' 옆 ▾ 를 누르면 화면 목록이 펼쳐진다. 지금 화면은 표시만. */
+  var PAGES = [['./', '홈'], ['sources.html', '오늘의 초안'], ['shorts.html', '숏폼 제작'],
+               ['carousel.html', '캐러셀 스튜디오'], ['perf.html', 'PLOT 성과'], ['photos.html', '사진 DB'], ['mac.html', '맥 상태']];
+  function menu() {
+    if (document.getElementById('plotNavMenu')) return;
+    var here = (location.pathname.split('/').pop() || '');
+    var m = document.createElement('div');
+    m.id = 'plotNavMenu';
+    m.style.cssText = 'position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.35);';
+    var box = document.createElement('div');
+    box.style.cssText = 'position:absolute;left:12px;top:calc(60px + env(safe-area-inset-top));min-width:220px;' +
+      'background:var(--bg,var(--paper,#111));color:var(--text,var(--ink,#ECECF1));border:1px solid var(--line,#2A2A33);' +
+      'border-radius:14px;box-shadow:0 14px 40px rgba(0,0,0,.35);padding:6px;';
+    PAGES.forEach(function (pg) {
+      var cur = pg[0] === here || (pg[0] === './' && (here === '' || here === 'index.html'));
+      var a = document.createElement('a');
+      a.href = pg[0]; a.textContent = (cur ? '● ' : '') + pg[1];
+      a.style.cssText = 'display:flex;align-items:center;min-height:46px;padding:0 14px;border-radius:10px;' +
+        'font:' + (cur ? '800' : '600') + ' 16px/1 Pretendard,-apple-system,sans-serif;color:inherit;text-decoration:none;' +
+        (cur ? 'opacity:.55;pointer-events:none;' : '');
+      box.appendChild(a);
+    });
+    m.appendChild(box);
+    m.addEventListener('click', function (e) { if (e.target === m) close(); });
+    document.body.appendChild(m);
+    try { history.pushState({ plotNav: 1 }, ''); } catch (e) {}
+  }
+  function close() {
+    var m = document.getElementById('plotNavMenu');
+    if (!m) return;
+    m.remove();
+    try { if (history.state && history.state.plotNav) history.back(); } catch (e) {}
+  }
+  window.addEventListener('popstate', function () { var m = document.getElementById('plotNavMenu'); if (m) m.remove(); });
+  function addMenu() {
+    var a = document.querySelector('a[aria-label="PLOT 제작 홈으로"]');
+    if (!a || document.getElementById('plotNavBtn')) return;
+    var b = document.createElement('button');
+    b.id = 'plotNavBtn'; b.type = 'button'; b.textContent = '▾';
+    b.setAttribute('aria-label', '다른 화면으로');
+    b.style.cssText = 'font:700 15px/1 -apple-system,sans-serif;color:var(--text,var(--ink,#ECECF1));background:none;' +
+      'border:1px solid var(--line,#2A2A33);border-radius:9px;min-width:34px;min-height:34px;margin:0 10px 0 -8px;cursor:pointer;flex:none;';
+    if (a.style.position === 'fixed') {
+      b.style.cssText += 'position:fixed;top:calc(16px + env(safe-area-inset-top));left:' + (a.getBoundingClientRect().right + 16) + 'px;z-index:9999;' +
+        'background:var(--glass,rgba(10,10,12,.72));backdrop-filter:blur(8px);';
+      document.body.appendChild(b);
+    } else {                                        // 링크와 ▾ 를 한 줄로 묶는다 (헤더가 세로로 쌓는 화면에서도)
+      var w = document.createElement('span');
+      w.style.cssText = 'display:inline-flex;align-items:center;flex:none;align-self:flex-start;';
+      a.parentNode.insertBefore(w, a);
+      w.appendChild(a); w.appendChild(b);
+      b.style.margin = '0 10px 0 -6px';
+    }
+    b.onclick = function () { document.getElementById('plotNavMenu') ? close() : menu(); };
+    if (window.innerWidth < 380) {                  // 좁은 폰에서는 판 번호를 숨겨 자리를 만든다 (판은 길게 눌러 title 로)
+      var v = a.querySelector('span'); if (v) v.style.display = 'none';
+    }
+  }
+  function boot() { put(); addMenu(); }
+  if (document.readyState === 'loading')
+    document.addEventListener('DOMContentLoaded', boot);
+  else boot();
+})();
+</script>
+
+<script>
+(function () {
+  var TK = 'plot.app.theme', AK = 'plot.app.accent', NK = 'plot.app.neon',
+      GK = 'plot.app.gap', FK = 'plot.app.fs';
+  var GAPS = [['tight', '좁게'], ['normal', '보통'], ['wide', '넓게']];
+  var FSIZES = [['s', '작게'], ['m', '보통'], ['l', '크게'], ['xl', '더 크게']];
+  var HUES = ['cyan', 'magenta', 'lime', 'orange', 'violet'];
+  var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
+  var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
+                 ['violet', '#8B7CF0'], ['mono', '#ECECF1'], ['neon', '#00F0FF']];
+  var box = null;
+
+  function get(k, d) { try { return localStorage.getItem(k) || d; } catch (e) { return d; } }
+  function set(k, v) { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch (e) {} }
+  function mode() { var t = get(TK, ''); return (t === 'light' || t === 'dark') ? t : 'system'; }
+  function accent() { return get(AK, 'amber'); }
+  function hue() { var h = get(NK, 'cyan'); return HUES.indexOf(h) < 0 ? 'cyan' : h; }
+  function gap() { var g = get(GK, 'normal'); return /^(tight|normal|wide)$/.test(g) ? g : 'normal'; }
+  function fsize() { var f = get(FK, 'm'); return /^(s|m|l|xl)$/.test(f) ? f : 'm'; }
+
+  function apply() {
+    var r = document.documentElement, m = mode();
+    if (m === 'system') r.removeAttribute('data-theme'); else r.setAttribute('data-theme', m);
+    r.setAttribute('data-accent', accent());
+    r.setAttribute('data-neon', hue());
+    r.setAttribute('data-gap', gap());
+    r.setAttribute('data-fs', fsize());
+    var meta = document.querySelector('meta[name=theme-color]');
+    if (meta) {
+      var dark = m === 'dark' ||
+        (m === 'system' && !matchMedia('(prefers-color-scheme: light)').matches);
+      meta.setAttribute('content', dark ? '#0A0A0C' : '#FBFAF7');
+    }
+    if (box) paint();
+  }
+
+  function paint() {
+    [].forEach.call(box.querySelectorAll('[data-mode]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-mode') === mode());
+    });
+    [].forEach.call(box.querySelectorAll('[data-accent]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-accent') === accent());
+    });
+    [].forEach.call(box.querySelectorAll('[data-hue]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-hue') === hue());
+    });
+    [].forEach.call(box.querySelectorAll('[data-gap]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-gap') === gap());
+    });
+    [].forEach.call(box.querySelectorAll('[data-fs]'), function (b) {
+      b.classList.toggle('on', b.getAttribute('data-fs') === fsize());
+    });
+  }
+
+  function close() {
+    if (box) { box.remove(); box = null; document.removeEventListener('click', away); }
+  }
+  function away(e) {
+    if (box && !box.contains(e.target) && !e.target.closest('.plotThemeBtn')) close();
+  }
+
+  function open(btn) {
+    if (box) { close(); return; }
+    box = document.createElement('div');
+    box.className = 'plotThemeBox';
+    box.innerHTML = '<b>밝기</b><div class="row">' +
+      MODES.map(function (m) {
+        return '<button type="button" data-mode="' + m[0] + '">' + m[1] + '</button>';
+      }).join('') + '</div><b>강조색</b><div class="row">' +
+      ACCENTS.map(function (a) {
+        return '<button type="button" class="sw" data-accent="' + a[0] +
+               '" title="' + a[0] + '"></button>';
+      }).join('') + '</div>' +
+      // 네온을 골랐을 때만 열리는 줄 — 색이 하나면 사이버펑크가 안 산다
+      '<div class="row hues">' + HUES.map(function (h) {
+        return '<button type="button" class="hue" data-hue="' + h +
+               '" title="' + h + '"></button>';
+      }).join('') + '</div>' +
+      '<b>글자 크기</b><div class="row">' + FSIZES.map(function (f) {
+        return '<button type="button" data-fs="' + f[0] + '">' + f[1] + '</button>';
+      }).join('') + '</div>' +
+      '<b>여백</b><div class="row">' + GAPS.map(function (g) {
+        return '<button type="button" data-gap="' + g[0] + '">' + g[1] + '</button>';
+      }).join('') + '</div>';
+    document.body.appendChild(box);
+    // body 에 배율이 걸려 있으면 getBoundingClientRect 는 이미 곱해진 값을 준다.
+    // 상자는 그 배율 안에 놓이므로 되나눠야 제자리에 선다.
+    var z = parseFloat(getComputedStyle(document.body).zoom) || 1;
+    box.style.top = Math.round(btn.getBoundingClientRect().bottom / z + 8) + 'px';
+    box.onclick = function (e) {
+      var m = e.target.closest('[data-mode]'), a = e.target.closest('[data-accent]');
+      if (m) { set(TK, m.getAttribute('data-mode') === 'system' ? '' : m.getAttribute('data-mode')); apply(); }
+      if (a) { set(AK, a.getAttribute('data-accent')); apply(); }
+      var h = e.target.closest('[data-hue]');
+      if (h) { set(NK, h.getAttribute('data-hue')); apply(); }
+      var g = e.target.closest('[data-gap]');
+      if (g) { set(GK, g.getAttribute('data-gap')); apply(); }
+      var f = e.target.closest('[data-fs]');
+      if (f) { set(FK, f.getAttribute('data-fs')); apply(); }
+    };
+    paint();
+    setTimeout(function () { document.addEventListener('click', away); }, 0);
+  }
+
+  function put() {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'plotThemeBtn';
+    btn.textContent = '◐ 테마';
+    btn.title = '밝기와 강조색';
+    btn.onclick = function (e) { e.stopPropagation(); open(btn); };
+    var own = document.getElementById('theme');
+    var h = document.querySelector('header .hbtns') || document.querySelector('.addRow')
+            || (own && own.parentElement);
+    if (h) { h.appendChild(btn); return; }
+    btn.className += ' float';
+    document.body.appendChild(btn);
+  }
+
+  apply();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', put);
+  else put();
+})();
+</script>
+
+<script>
+(function () {
+  var KEY = 'plot.app.installHint';
+  var ua = navigator.userAgent;
+  var iOS = /iPad|iPhone|iPod/.test(ua) ||
+            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (!iOS) return;
+  if (window.navigator.standalone === true ||
+      matchMedia('(display-mode: standalone)').matches) return;   // 이미 앱으로 열었다
+  try { if (localStorage.getItem(KEY) === 'off') return; } catch (e) {}
+
+  var TG = window.Telegram && window.Telegram.WebApp;
+  var inTG = !!(TG && TG.initData !== undefined && TG.platform && TG.platform !== 'unknown');
+  var safari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS|Chrome/.test(ua);
+
+  function show() {
+    var box = document.createElement('div');
+    box.style.cssText =
+      'position:fixed; left:10px; right:10px; bottom:calc(10px + env(safe-area-inset-bottom));' +
+      'z-index:9997; background:var(--panel,#131318); color:var(--text,#ECECF1);' +
+      'border:1px solid var(--line,#2A2A34); border-radius:12px; padding:12px 13px;' +
+      'font:14px/1.55 -apple-system,BlinkMacSystemFont,sans-serif;' +
+      'box-shadow:0 14px 40px rgba(0,0,0,.45)';
+    var msg = inTG
+      ? '홈 화면에 추가하려면 <b>사파리에서 열어야</b> 합니다 — 텔레그램 안에는 그 메뉴가 없어요.'
+      : safari
+        ? '아래 <b>공유 버튼(↑)</b> → <b>홈 화면에 추가</b> 를 누르면 앱처럼 열립니다.'
+        : '홈 화면에 추가는 <b>사파리에서만</b> 됩니다 — 이 주소를 사파리로 열어 주세요.';
+    box.innerHTML = '<div style="margin-bottom:9px">' + msg + '</div>' +
+      '<div style="display:flex; gap:7px">' +
+      (inTG ? '<button id="plotOpenSafari" style="flex:1; border:0; border-radius:8px;' +
+              'padding:9px; font:inherit; font-weight:700; background:var(--text,#ECECF1);' +
+              'color:var(--bg,#0A0A0C)">브라우저에서 열기</button>' : '') +
+      '<button id="plotHintNo" style="flex:' + (inTG ? '0 0 92px' : '1') + ';' +
+      'border:1px solid var(--line,#2A2A34); border-radius:8px; padding:9px; font:inherit;' +
+      'background:none; color:var(--muted,#8A8A96)">다시 안 보기</button></div>';
+    document.body.appendChild(box);
+    var go = document.getElementById('plotOpenSafari');
+    if (go) go.onclick = function () {
+      try { TG.openLink(location.href); } catch (e) { window.open(location.href, '_blank'); }
+    };
+    document.getElementById('plotHintNo').onclick = function () {
+      try { localStorage.setItem(KEY, 'off'); } catch (e) {}
+      box.remove();
+    };
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', show);
+  else show();
+})();
+</script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  addEventListener('load', function () {
+    // updateViaCache:'none' — 이게 없으면 sw.js 자체가 HTTP 캐시에 걸린다.
+    // 캐시 규칙을 고친 새 워커가 옛 캐시 때문에 안 실리는, 웃기지만 실제로 겪은 일.
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
+      .then(function (r) { r.update(); })
+      .catch(function () {});
+  });
+}
+</script>

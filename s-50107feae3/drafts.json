@@ -3855,7 +3855,12 @@
      "full": 94.0
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfHdjJeD2-P/",
+    "cover": "A",
+    "at": "2026-10-30T20:20+09:00"
+   }
   },
   {
    "source": {
@@ -3942,6 +3947,204 @@
    },
    "corner_name": "오늘의 노래",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:ord-5943307c",
+    "account": "@규효 공유 · @histofit_",
+    "url": "https://www.instagram.com/p/DfHSTK-AY7B/?img_index=2&dlrf=MXM3Z2g1bjJ6aGFheA==",
+    "image": null,
+    "head": "리센느, 11월 3일 미니 4집 [PULSE] 타이틀곡 'With' 뮤직비디오 티저 공개",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T20:25+09:00",
+   "key": "abd24db1",
+   "by": "claude",
+   "subjects": [
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "리센느 미니 4집 타이틀곡 'With' MV 티저 — 털복숭이 인형탈과 '함께'인 장면",
+    "why": "규효 맡기기 · 10/30 공식 채널 티저 공개(조회 17만) · 리센느는 PLOT 팔로우 상위 인물"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T20:25+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n리센느(@rescene_official)가 미니 4집 [PULSE]의 타이틀곡 'With' 뮤직비디오 티저를 공개했습니다.\n\n20초 남짓한 티저에는 하얀 털복숭이 인형탈이 멤버를 끌어안는 장면과 둘이 볼링장 레인 위를 나란히 달리는 장면이 담겼는데요, 'With'라는 제목처럼 누군가와 함께인 순간들이 이어집니다.\n\n미니 4집 [PULSE]는 11월 3일 오후 6시 발매됩니다.\n\n#PLOT #리센느 #RESCENE #PULSE #위드\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793359531/ykmxtleucwl05l6yrnmv.jpg\n제목: 리센느, 타이틀곡|'With' 티저 공개\n부제: 미니 4집 [PULSE] · 11월 3일 오후 6시\n출처: @rescene_official\n",
+    "caption": "리센느(@rescene_official)가 미니 4집 [PULSE]의 타이틀곡 'With' 뮤직비디오 티저를 공개했습니다.\n\n20초 남짓한 티저에는 하얀 털복숭이 인형탈이 멤버를 끌어안는 장면과 둘이 볼링장 레인 위를 나란히 달리는 장면이 담겼는데요, 'With'라는 제목처럼 누군가와 함께인 순간들이 이어집니다.\n\n미니 4집 [PULSE]는 11월 3일 오후 6시 발매됩니다.\n\n#PLOT #리센느 #RESCENE #PULSE #위드",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359531/ykmxtleucwl05l6yrnmv.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359534/e89awjw2yx7xhb9bpdhb.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359538/f8jtfkxefi4uo5yw3nsx.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758359/hhmspk2g7ptpquqgvsvo.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359541/qq7vktpop59ykn7mlheh.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500827/opwxvqrxvmcpxw9zfz4i.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359531/ykmxtleucwl05l6yrnmv.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359534/e89awjw2yx7xhb9bpdhb.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359538/f8jtfkxefi4uo5yw3nsx.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758359/hhmspk2g7ptpquqgvsvo.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359541/qq7vktpop59ykn7mlheh.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500827/opwxvqrxvmcpxw9zfz4i.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "리센느, 타이틀곡|'With' 티저 공개",
+      "sub": "미니 4집 [PULSE] · 11월 3일 오후 6시"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "털복숭이 친구와|돌아온 리센느",
+      "sub": "타이틀곡 'With' 뮤직비디오 티저"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "리센느 'With',|누구와 함께일까",
+      "sub": "미니 4집 [PULSE] · 11월 3일"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 티저 장면 묘사(털복숭이 인형탈이 멤버를 끌어안음 · 볼링장 레인 질주 · 숏폼 후킹 C '별빛 속 포옹')는 자막·기사로 확인 불가 — 영상 직접 보고 확인",
+     "클립 위험: 낮음 — RESCENE (공식 채널 티저 21초 전체)",
+     "챌린지 참여 선배 단락(운학·크러쉬·나띠·하늘·최예나)은 sources 어디에도 없어 캡션에서 뺌 — 공식 릴스로 확인되면 다시 넣을 수 있음"
+    ],
+    "research": [
+     {
+      "title": "RESCENE (리센느) 'With' Official MV Teaser — RESCENE 유튜브 (2026-10-30)",
+      "link": "https://www.youtube.com/watch?v=CQXZp8vTiTU"
+     },
+     {
+      "title": "일간스포츠 — 리센느 타이틀곡 '위드' 리듬게임 프로모션 사이트·챌린지 (2026-10-28)",
+      "link": "https://isplus.com/article/view/isp202610280010"
+     },
+     {
+      "title": "일간스포츠 — 리센느 [PULSE] 하이라이트 메들리, 타이틀곡 '위드' (2026-10-27)",
+      "link": "https://isplus.com/article/view/isp202610270031"
+     },
+     {
+      "title": "YTN star — 리센느 [PULSE] 프로모션 스케줄러, 30일 타이틀곡 MV 티저 (2026-10-13)",
+      "link": "https://www.ytn.co.kr/_ln/0117_202610131039493415"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359547/or768mzhln1bxctuqlqu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359547/sgolvskicwrdvzxibxju.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359549/v2oupxff9pkgatgsyxue.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359549/tq8hm0b6zyagbsob13u1.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359547/or768mzhln1bxctuqlqu.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T20:25+09:00",
+     "v": {
+      "A": "b8c43814",
+      "B": "659f84b4",
+      "C": "837d547a"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=CQXZp8vTiTU\n구간: 0:00-0:21\n곡: 볼링장에 나타난 리센느\n아티스트: 털복숭이 친구와\n피처링:\n후킹: \n출처: RESCENE\n음원: RESCENE - With\n가사: 자동",
+    "caption": "리센느(@rescene_official)가 미니 4집 [PULSE]의 타이틀곡 'With' 뮤직비디오 티저를 공개했습니다.\n\n하얀 털복숭이 인형탈이 멤버를 끌어안고, 둘이 볼링장 레인 위를 나란히 달리는데요, 제목처럼 누군가와 함께인 장면들로 채워졌습니다.\n\n미니 4집 [PULSE]는 11월 3일 오후 6시 발매됩니다.\n\n영상 RESCENE\n\n#PLOT #리센느 #RESCENE #PULSE #위드",
+    "hooks": {
+     "A": "털복숭이 친구와 / 볼링장에 나타난 리센느",
+     "B": "리센느 새 타이틀곡 / 'With' 티저가 나왔다",
+     "C": "별빛 속 포옹으로 / 시작하는 'With' 티저"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=CQXZp8vTiTU",
+     "credit": "RESCENE",
+     "range": [
+      0.0,
+      21.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 티저 장면 묘사(털복숭이 인형탈이 멤버를 끌어안음 · 볼링장 레인 질주 · 숏폼 후킹 C '별빛 속 포옹')는 자막·기사로 확인 불가 — 영상 직접 보고 확인",
+     "클립 위험: 낮음 — RESCENE (공식 채널 티저 21초 전체)",
+     "챌린지 참여 선배 단락(운학·크러쉬·나띠·하늘·최예나)은 sources 어디에도 없어 캡션에서 뺌 — 공식 릴스로 확인되면 다시 넣을 수 있음"
+    ],
+    "research": [
+     {
+      "title": "RESCENE (리센느) 'With' Official MV Teaser — RESCENE 유튜브 (2026-10-30)",
+      "link": "https://www.youtube.com/watch?v=CQXZp8vTiTU"
+     },
+     {
+      "title": "일간스포츠 — 리센느 타이틀곡 '위드' 리듬게임 프로모션 사이트·챌린지 (2026-10-28)",
+      "link": "https://isplus.com/article/view/isp202610280010"
+     },
+     {
+      "title": "일간스포츠 — 리센느 [PULSE] 하이라이트 메들리, 타이틀곡 '위드' (2026-10-27)",
+      "link": "https://isplus.com/article/view/isp202610270031"
+     },
+     {
+      "title": "YTN star — 리센느 [PULSE] 프로모션 스케줄러, 30일 타이틀곡 MV 티저 (2026-10-13)",
+      "link": "https://www.ytn.co.kr/_ln/0117_202610131039493415"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/CQXZp8vTiTU/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793359552/mayxkwe6abjcn9fahftf.jpg",
+     "key": "CQXZp8vTiTU@0.0"
+    },
+    "px": {
+     "vid": "CQXZp8vTiTU",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793359559/plot_studio/fbcobqi7kohmslyaxdfc.mp4",
+     "off": 0.0,
+     "end": 20.0,
+     "full": 20.0
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -4116,17 +4319,17 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 13,
+    "drafts": 14,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T20:09+09:00"
+  "at": "2026-10-30T20:26+09:00"
  },
  "queue": {
-  "next": "2026-10-30T20:51+09:00",
+  "next": "2026-10-30T21:20+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-10-30T19:51+09:00"
+  "last": "2026-10-30T20:20+09:00"
  },
  "slots": {
   "basis": 269,
