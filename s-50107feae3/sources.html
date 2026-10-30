@@ -561,6 +561,31 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .ig details summary{cursor:pointer; color:var(--dim)}
 .ig details .chk{color:var(--amber)}
 .ig .thumbs{display:flex; gap:6px; overflow:auto; margin:6px 0}
+/* 📷 사진 직접 고르기 (10/30) */
+.pk{position:fixed; inset:0; z-index:60; background:var(--bg); display:flex; flex-direction:column}
+.pk .pkh{display:flex; align-items:center; gap:8px; padding:calc(10px + env(safe-area-inset-top)) 12px 8px; font-size:15px}
+.pk .pkh button{background:none; border:0; color:var(--text); font-size:18px; padding:4px 8px; cursor:pointer}
+.pk .pkt{display:flex; gap:6px; overflow-x:auto; padding:0 14px 10px; scrollbar-width:none}
+.pk .pkt::-webkit-scrollbar{display:none}
+.pk .pkt button{flex:none; border:1px solid var(--line); background:none; color:var(--muted); border-radius:999px; padding:6px 12px; font-size:13px; cursor:pointer}
+.pk .pkt button.on{background:var(--text); color:var(--bg); border-color:var(--text)}
+.pk .pkg{flex:1; overflow-y:auto}
+.pk .pkgrid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px}
+@media (min-width:700px){.pk .pkgrid{grid-template-columns:repeat(5,1fr)}}
+.pk .pkc{position:relative; padding:0; border:0; background:var(--raise); aspect-ratio:4/5; overflow:hidden; cursor:pointer}
+.pk .pkc img{width:100%; height:100%; object-fit:cover; display:block}
+.pk .pkc.on{outline:3px solid var(--amber); outline-offset:-3px}
+.pk .pkc i{position:absolute; top:6px; right:6px; background:rgba(0,0,0,.6); color:#fff; font-style:normal; font-size:11px; border-radius:999px; padding:2px 7px}
+.pk .pkc em{position:absolute; top:6px; left:6px; background:var(--amber); color:#000; font-style:normal; font-size:11px; font-weight:700; border-radius:999px; padding:2px 7px}
+.pk .pkc small{position:absolute; left:4px; bottom:4px; background:rgba(0,0,0,.55); color:#fff; font-size:10.5px; border-radius:6px; padding:1px 5px}
+.pk .pkn{padding:40px 20px; text-align:center; color:var(--dim); font-size:14px; line-height:1.6}
+.pk .pki{display:flex; gap:8px; padding:0 14px 8px}
+.pk .pki input{flex:1; min-width:0; background:var(--panel); border:1px solid var(--line); color:var(--text); border-radius:10px; padding:10px 12px; font-size:16px}
+.pk .pki button,.pk .pkhs button{border:1px solid var(--line); background:none; color:var(--text); border-radius:10px; padding:8px 12px; font-size:13px; cursor:pointer}
+.pk .pkhs{display:flex; gap:6px; flex-wrap:wrap; padding:0 14px 8px}
+.pk .pkf{padding:10px 14px calc(10px + env(safe-area-inset-bottom)); border-top:1px solid var(--line)}
+.pk .pkf button{width:100%; padding:14px; border-radius:12px; border:0; background:var(--text); color:var(--bg); font-weight:700; font-size:15px; cursor:pointer}
+.pk .pkf button:disabled{opacity:.4; cursor:default}
 .sheet{position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:50; display:flex; align-items:flex-end}
 .sheet .pn{width:100%; background:var(--panel); border-radius:14px 14px 0 0; padding:10px 0 calc(16px + env(safe-area-inset-bottom));
   max-height:88vh; max-height:88dvh; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch}
@@ -3877,6 +3902,131 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       }).catch(function () {});
     }, 20000);
   }
+  /* 📷 사진 직접 고르기 (10/30 규효 "사진 DB 나도 봐도 됨? · 그 아티스트 인스타 이미지·영상 바로 가져오기")
+     사진 DB(그 글에 나온 사람) · 이 초안 후보 · 인스타 최근 게시물에서 골라 그 장을 바꾼다.
+     맥(bot/app_studio photo_list · ig_media · photo_set)이 받아 올리고 미리보기를 다시 그려 앱에 올린다. 표지는 사진만. */
+  function psSlide(i) { var tr = document.querySelector('[data-track="' + i + '"]'); return tr ? Math.round(tr.scrollLeft / Math.max(1, tr.clientWidth)) : 0; }
+  function photoMenu(i) {
+    var it = (DR && DR.items || [])[i]; if (!it || !it.key) return;
+    if (typeof langGet === 'function' && langGet(it) !== 'ko') { toast('사진은 KO 에서 바꿔 주세요 — 영어·일본어판도 같은 사진으로 바뀝니다'); return; }
+    var k = psSlide(i);
+    if (k >= psBlocks(it)) { toast('마지막 장은 사진이 없습니다'); return; }
+    if (!(window.plotStudio && window.plotStudio.on())) { photoSwap(i); return; }
+    var where = k ? (k + 1) + '번째 장' : '표지';
+    sheetOf(where + ' 사진 바꾸기', [['db', '📚 사진 DB에서 고르기', '그 글에 나온 사람 사진 · 이 초안 후보'],
+      ['ig', '📸 인스타에서 가져오기', '그 아티스트 계정 최근 사진' + (k ? '·영상' : ' (표지는 사진만)')],
+      ['next', '🔄 다음 후보로', '지금처럼 알아서 하나 넘기기']], function (a) {
+      if (a === 'next') photoSwap(i); else pkOpen(it, k, a);
+    });
+  }
+  var PK = null;
+  function pkOpen(it, k, tab) {
+    pkClose();
+    var o = document.createElement('div'); o.className = 'pk';
+    o.innerHTML = '<div class="pkh"><button data-pk="x" aria-label="닫기">✕</button><b>' + esc(k ? (k + 1) + '번째 장' : '표지') + ' 사진 고르기</b></div>' +
+      '<div class="pkt" data-pktabs></div><div class="pkg" data-pkg><div class="pkn">맥에서 사진을 불러오는 중…</div></div>' +
+      '<div class="pkf"><button data-pk="go" disabled>사진을 골라 주세요</button></div>';
+    document.body.appendChild(o);
+    PK = { it: it, k: k, o: o, tab: tab, data: null, ig: {}, sel: null, items: [] };
+    o.addEventListener('click', pkClick);
+    o.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target.matches('[data-pkh]')) pkIg(e.target.value); });
+    window.plotStudio.send('photo_list', { key: it.key }).then(function (sn) {
+      if (PK && PK.o === o) { PK.data = sn; pkTabs(); }
+    }).catch(function (e) {
+      if (!PK || PK.o !== o) return;
+      PK.data = { people: [], pool: [], cur: [], handles: [] }; pkTabs();
+      toast('사진 DB를 못 불러왔습니다 — ' + String(e && e.message || e).slice(0, 80));
+    });
+  }
+  function pkTabs() {
+    var d = PK.data || {}, tabs = [];
+    (d.people || []).forEach(function (p, j) { tabs.push(['p' + j, p.name + ' ' + p.photos.length]); });
+    if ((d.pool || []).length) tabs.push(['pool', '이 초안 후보 ' + d.pool.length]);
+    tabs.push(['ig', '📸 인스타']);
+    if (PK.tab !== 'ig' && !tabs.some(function (t) { return t[0] === PK.tab; })) PK.tab = tabs[0][0];
+    PK.o.querySelector('[data-pktabs]').innerHTML = tabs.map(function (t) {
+      return '<button data-pkt="' + esc(t[0]) + '" class="' + (t[0] === PK.tab ? 'on' : '') + '">' + esc(t[1]) + '</button>'; }).join('');
+    pkGrid();
+  }
+  function pkCell(x, j, cur) {
+    return '<button class="pkc' + (cur && x.url === cur ? ' cur' : '') + '" data-pkc="' + j + '"><img loading="lazy" referrerpolicy="no-referrer" src="' +
+      esc(x.thumb || x.url) + '" alt="">' + (x.type === 'video' ? '<i>▶ 영상</i>' : '') + (cur && x.url === cur ? '<em>지금</em>' : '') +
+      (x.kind ? '<small>' + esc(x.kind) + '</small>' : '') + '</button>';
+  }
+  function pkGrid() {
+    var g = PK.o.querySelector('[data-pkg]'), d = PK.data || {}, cur = (d.cur || [])[PK.k] || '';
+    PK.sel = null; pkFoot();
+    if (PK.tab === 'ig') {
+      var hs = d.handles || [], h = PK.igH || hs[0] || '';
+      g.innerHTML = '<div class="pki"><input data-pkh placeholder="@인스타 핸들" autocapitalize="off" value="' + esc(h ? '@' + h : '') +
+        '"><button data-pk="igl">불러오기</button></div>' +
+        (hs.length > 1 ? '<div class="pkhs">' + hs.map(function (x) { return '<button data-pkhs="' + esc(x) + '">@' + esc(x) + '</button>'; }).join('') + '</div>' : '') +
+        '<div data-pkig>' + (h ? '' : '<div class="pkn">핸들을 넣고 불러오기 — 비즈니스·크리에이터 계정만 됩니다</div>') + '</div>';
+      PK.items = [];
+      if (h) pkIg(h);
+      return;
+    }
+    var items = [];
+    if (PK.tab === 'pool') items = (d.pool || []).map(function (p) { return { type: 'image', url: p.url, credit: p.credit, kind: p.kind }; });
+    else { var p = (d.people || [])[Number(PK.tab.slice(1))]; if (p) items = p.photos.map(function (x) { return { type: 'image', url: x.url, credit: x.credit, kind: x.kind }; }); }
+    PK.items = items;
+    g.innerHTML = items.length ? '<div class="pkgrid">' + items.map(function (x, j) { return pkCell(x, j, cur); }).join('') + '</div>'
+      : '<div class="pkn">사진 DB에 이 글 사람 사진이 아직 없습니다<br>📸 인스타 칸에서 가져와 보세요</div>';
+  }
+  function pkIg(h) {
+    h = String(h || '').trim().replace(/^@/, '').replace(/^https?:\/\/(www\.)?instagram\.com\//, '').replace(/[\/?].*$/, '');
+    if (!h) return;
+    PK.igH = h;
+    var box = PK.o.querySelector('[data-pkig]'); if (!box) return;
+    var o = PK.o;
+    var show = function (list) {
+      PK.items = list; PK.sel = null; pkFoot();
+      box.innerHTML = list.length ? '<div class="pkgrid">' + list.map(function (x, j) { return pkCell(x, j, ''); }).join('') + '</div>'
+        : '<div class="pkn">불러올 게시물이 없습니다</div>';
+    };
+    if (PK.ig[h]) { show(PK.ig[h]); return; }
+    box.innerHTML = '<div class="pkn">@' + esc(h) + ' 최근 게시물 불러오는 중…</div>';
+    window.plotStudio.send('ig_media', { handle: h }).then(function (sn) {
+      if (!PK || PK.o !== o) return;
+      var list = (sn.media || []).filter(function (x) { return PK.k || x.type !== 'video'; });
+      PK.ig[h] = list;
+      if (PK.tab === 'ig' && PK.igH === h) show(list);
+    }).catch(function (e) {
+      if (PK && PK.o === o && PK.igH === h) box.innerHTML = '<div class="pkn">못 불러왔습니다 — ' + esc(String(e && e.message || e).slice(0, 90)) + '</div>';
+    });
+  }
+  function pkFoot() {
+    var b = PK.o.querySelector('[data-pk="go"]'); b.disabled = !PK.sel;
+    b.textContent = !PK.sel ? '사진을 골라 주세요' : PK.sel.type === 'video' ? '이 영상으로 바꾸기 (15초까지)' : '이 사진으로 바꾸기';
+  }
+  function pkClose() { if (PK) { PK.o.remove(); PK = null; } }
+  function pkClick(e) {
+    var t = e.target, x = t.closest('[data-pk]');
+    if (x) {
+      var a = x.getAttribute('data-pk');
+      if (a === 'x') { pkClose(); return; }
+      if (a === 'igl') { pkIg(PK.o.querySelector('[data-pkh]').value); return; }
+      if (a === 'go') { pkGo(); return; }
+    }
+    var tb = t.closest('[data-pkt]'); if (tb) { PK.tab = tb.getAttribute('data-pkt'); pkTabs(); return; }
+    var hs = t.closest('[data-pkhs]');
+    if (hs) { PK.o.querySelector('[data-pkh]').value = '@' + hs.getAttribute('data-pkhs'); pkIg(hs.getAttribute('data-pkhs')); return; }
+    var c = t.closest('[data-pkc]');
+    if (c) {
+      [].forEach.call(PK.o.querySelectorAll('.pkc.on'), function (n) { n.classList.remove('on'); });
+      c.classList.add('on'); PK.sel = PK.items[Number(c.getAttribute('data-pkc'))] || null; pkFoot();
+    }
+  }
+  function pkGo() {
+    var s = PK && PK.sel; if (!s) return;
+    var it = PK.it, k = PK.k, old = JSON.stringify(((it.card || {}).preview || {}).slides || []);
+    pkClose();
+    toast('📷 맥이 ' + (s.type === 'video' ? '영상' : '사진') + '을 넣고 미리보기를 다시 그립니다 — 1~3분');
+    window.plotStudio.send('photo_set', { key: it.key, idx: k, url: s.url, credit: s.credit || '', kind: s.type }).then(function (sn) {
+      toast('✓ ' + (sn.note || '바꿨습니다') + ' — 앱에 올라오면 바로 보입니다');
+      psWatch(it.key, old);
+    }).catch(function (e) { toast('못 바꿨습니다 — ' + String(e && e.message || e).slice(0, 90)); });
+  }
   function sheetOf(title, acts, onPick) {
     var sh = document.createElement('div'); sh.className = 'sheet';
     sh.innerHTML = '<div class="pn"><div class="hd"></div>' + (title ? '<div style="padding:0 20px 6px;font-size:13px;color:var(--dim);white-space:pre-wrap;max-height:45vh;overflow:auto">' + esc(title) + '</div>' : '') +
@@ -4321,7 +4471,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var vm = e.target.closest('[data-vmode]');
     if (vm) { try { localStorage.setItem(DR_VIEW, vm.getAttribute('data-vmode')); } catch (x) {} renderDrafts(); return; }
     var psb = e.target.closest('[data-ps]');
-    if (psb) { photoSwap(Number(psb.getAttribute('data-ps'))); return; }
+    if (psb) { photoMenu(Number(psb.getAttribute('data-ps'))); return; }
     var shb = e.target.closest('[data-share]');
     if (shb) { var sp = shb.getAttribute('data-share').split(':'); openSheet(Number(sp[0]), sp[1]); return; }
     var svb = e.target.closest('[data-save]');
@@ -4446,9 +4596,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 19:34';
+    a.title = '판 10.30 19:47';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 19:34';
+    ver.textContent = '10.30 19:47';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -4752,3 +4902,72 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
+<script>window.PLOT_UPLOAD={"cloud": "dwndhzqod", "preset": "plot_studio"};</script><script>(function () {
+  var SB = { url: "https://jipqujwziezeubtthbnw.supabase.co", key: "sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK" };
+  function on() { return /^https:\/\//.test(SB.url || '') && !!SB.key; }
+  function req(path, opt) {
+    opt = opt || {};
+    var h = { apikey: SB.key, Authorization: 'Bearer ' + SB.key, 'Content-Type': 'application/json' };
+    if (opt.prefer) h.Prefer = opt.prefer;
+    return fetch(SB.url.replace(/\/+$/, '') + '/rest/v1/' + path, { method: opt.method || 'GET', headers: h, body: opt.body })
+      .then(function (r) {
+        if (!r.ok) return r.text().then(function (t) { throw new Error(r.status + ' ' + t.slice(0, 100)); });
+        return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
+      });
+  }
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3, premiere: 25 * 60e3, photo_list: 3 * 60e3, ig_media: 3 * 60e3, photo_set: 12 * 60e3 };
+  function send(op, data, onStep) {
+    var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
+    var sn = { op: op, at: new Date().toISOString() };
+    Object.keys(data || {}).forEach(function (k) { sn[k] = data[k]; });
+    var rec = { id: id, kind: 'studio', draft_date: null, draft_key: null, source_id: op, verdict: {}, reason: '', rewrite: {},
+      device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0], snapshot: sn };
+    return req('plot_evals', { method: 'POST', body: JSON.stringify(rec), prefer: 'resolution=merge-duplicates,return=minimal' })
+      .then(function () { return wait(id, LIMIT[op] || 5 * 60e3, onStep).then(function (sn) { sn._id = id; return sn; }); });
+  }
+  function wait(id, limit, onStep) {
+    var t0 = Date.now();
+    return new Promise(function (ok, no) {
+      (function tick() {
+        req('plot_evals?select=snapshot&id=eq.' + encodeURIComponent(id)).then(function (rows) {
+          var sn = (rows && rows[0] && rows[0].snapshot) || {};
+          if (sn.status === 'done') return ok(sn);
+          if (sn.status === 'fail') return no(new Error(sn.note || '맥에서 실패했습니다'));
+          var gone = Date.now() - t0;
+          if (gone > limit) return no(new Error(sn.status ? '오래 걸려 화면에서 기다리기를 멈췄습니다 — 맥에서는 계속합니다'
+                                                            : '맥이 받지 않습니다 — 맥과 봇이 켜져 있는지 봐 주세요'));
+          if (onStep) { try { onStep(sn.status === 'running' ? (sn.note || '맥이 처리 중') : '맥이 받기를 기다리는 중', gone); } catch (_) {} }
+          setTimeout(tick, 3000);
+        }).catch(function (e) { if (Date.now() - t0 > limit) no(e); else setTimeout(tick, 5000); });
+      })();
+    });
+  }
+  function sheet(title, text) {
+    var o = document.createElement('div');
+    o.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center';
+    o.innerHTML = '<div style="background:var(--bg,#111);color:var(--fg,#eee);width:100%;max-width:640px;max-height:80vh;overflow:auto;' +
+      'border-radius:16px 16px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom))">' +
+      '<div data-t style="font-weight:800;margin-bottom:8px"></div><textarea style="width:100%;min-height:42vh;box-sizing:border-box;' +
+      'font:inherit;font-size:14px;line-height:1.55;padding:10px;border-radius:10px;border:1px solid rgba(127,127,127,.4);background:transparent;color:inherit"></textarea>' +
+      '<div style="display:flex;gap:8px;margin-top:10px"><button data-x="c" style="flex:1;padding:12px;border-radius:10px;font-weight:700">📋 복사</button>' +
+      '<button data-x="q" style="padding:12px 16px;border-radius:10px">닫기</button></div></div>';
+    o.querySelector('[data-t]').textContent = title;
+    var ta = o.querySelector('textarea'); ta.value = text;
+    o.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-x]');
+      if (e.target === o || (b && b.getAttribute('data-x') === 'q')) { o.remove(); return; }
+      if (b) {
+        var done = function () { b.textContent = '✓ 복사했습니다'; };
+        try { navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); document.execCommand('copy'); done(); }); }
+        catch (_) { ta.select(); document.execCommand('copy'); done(); }
+      }
+    });
+    document.body.appendChild(o);
+  }
+  function post(rec) {                                   // 그림 한 장 같은 날 줄 (kind='studio_img')
+    var r = { draft_date: null, draft_key: null, source_id: rec.kind || '', verdict: {}, reason: '', rewrite: {}, device: '' };
+    Object.keys(rec).forEach(function (k) { r[k] = rec[k]; });
+    return req('plot_evals', { method: 'POST', body: JSON.stringify(r), prefer: 'resolution=merge-duplicates,return=minimal' });
+  }
+  window.plotStudio = { on: on, send: send, sheet: sheet, post: post };
+})();</script>
