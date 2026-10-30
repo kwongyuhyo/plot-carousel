@@ -323,7 +323,7 @@
     }
    },
    "corner_name": "만나는 법",
-   "corner_no": 2,
+   "corner_no": 3,
    "published": {
     "permalink": "https://www.instagram.com/p/DfGtxidmfJ_/",
     "cover": "A",
@@ -1310,13 +1310,158 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-7bd8718f",
+    "account": "@규효 공유 · @yanghongwon",
+    "url": "https://www.instagram.com/p/DfGwIgaE_h4/?cplk=Nm1vNnhwdDczbHNk",
+    "image": null,
+    "head": "의혹 이후 양홍원의 첫 게시물 — 닥스후드 [808 Ceremony] 커버, 참여곡 'adidas'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T14:45+09:00",
+   "key": "d85f0c00",
+   "by": "claude",
+   "subjects": [
+    "양홍원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "불륜 의혹 이후 양홍원이 처음 올린 게시물은 닥스후드 새 앨범 [808 Ceremony] — 참여곡 'adidas'",
+    "why": "의혹 이후 첫 SNS 행보라 화제(스포츠경향 10/30) · 근거는 음악(참여곡·크레딧)으로"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T14:45+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n양홍원(@yanghongwon)이 불륜 의혹 이후 처음 올린 게시물은 동료 프로듀서의 앨범이었습니다.\n\n닥스후드가 30일 발매한 [808 Ceremony]의 커버를 올렸는데요, 양홍원은 이 앨범의 수록곡 'adidas'에 Ashiroo, APE FREDDA와 함께 피처링으로 참여했습니다. 크레딧에는 작사·작곡자로도 이름이 올라 있습니다.\n\n양홍원은 지난 18일 원현주와 결혼식을 올렸고, 23일 불륜 의혹이 제기됐습니다. 소속사 AP알케미는 모텔 동행은 인정하면서도 부적절한 관계는 부인했고, 의혹 제기자는 공갈 등 혐의로 고소됐습니다.\n\n[808 Ceremony]는 닥스후드가 프로듀싱한 21곡짜리 앨범입니다.\n\n#PLOT #양홍원 #닥스후드 #808Ceremony #adidas #국힙\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793339134/mfg8nmkulykyerzcz3b7.jpg\n제목: 의혹 이후 양홍원이|처음 올린 게시물\n부제: 닥스후드 [808 Ceremony] · 참여곡 'adidas'\n출처: @yanghongwon\n",
+    "caption": "양홍원(@yanghongwon)이 불륜 의혹 이후 처음 올린 게시물은 동료 프로듀서의 앨범이었습니다.\n\n닥스후드가 30일 발매한 [808 Ceremony]의 커버를 올렸는데요, 양홍원은 이 앨범의 수록곡 'adidas'에 Ashiroo, APE FREDDA와 함께 피처링으로 참여했습니다. 크레딧에는 작사·작곡자로도 이름이 올라 있습니다.\n\n양홍원은 지난 18일 원현주와 결혼식을 올렸고, 23일 불륜 의혹이 제기됐습니다. 소속사 AP알케미는 모텔 동행은 인정하면서도 부적절한 관계는 부인했고, 의혹 제기자는 공갈 등 혐의로 고소됐습니다.\n\n[808 Ceremony]는 닥스후드가 프로듀싱한 21곡짜리 앨범입니다.\n\n#PLOT #양홍원 #닥스후드 #808Ceremony #adidas #국힙",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339134/mfg8nmkulykyerzcz3b7.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339136/uuv5h0qndvcftybnfijc.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339139/be3r0qblaao16daxnfch.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339143/jls04bmfwehbteiwxttk.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339134/mfg8nmkulykyerzcz3b7.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339136/uuv5h0qndvcftybnfijc.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339139/be3r0qblaao16daxnfch.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339143/jls04bmfwehbteiwxttk.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://i.ibb.co/JjZZr78w/8d30b0e26608.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "의혹 이후 양홍원이|처음 올린 게시물",
+      "sub": "닥스후드 [808 Ceremony] · 참여곡 'adidas'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "양홍원, 닥스후드 앨범으로|전한 첫 근황",
+      "sub": "[808 Ceremony] 'adidas' 피처링"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "닥스후드 새 앨범에|이름 올린 양홍원",
+      "sub": "수록곡 'adidas' 작사·작곡 참여"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 게시물 캡션의 '염소 이모지 두 개'는 인스타 원문을 열지 못해 뺐음 · 고소 주체가 스포츠경향(소속사)과 한국경제(동행 여성)에서 엇갈려 '의혹 제기자는 고소됐다'로 고침",
+     "숏폼은 비움 — 'adidas' 공식 영상이 정지 커버 음원(자막 없음)이라 양홍원 파트 구간을 확인하지 못함",
+     "의혹 맥락 한 단락(결혼 18일 · 의혹 23일 · 소속사 입장)을 넣을지 — 빼면 순수 발매 소식"
+    ],
+    "research": [
+     {
+      "title": "[스경X이슈] '불륜 의혹' 양홍원, 논란 후 첫 행보가 앨범 홍보 (스포츠경향)",
+      "link": "https://sports.khan.co.kr/article/202610301403003"
+     },
+     {
+      "title": "Sports Kyunghyang (영문) — first move after controversy is album promotion",
+      "link": "https://sports.khan.co.kr/en/article/202610301405007/"
+     },
+     {
+      "title": "Apple Music — 808 Ceremony (DAKSHOOD) · 2026-10-30 · 21곡",
+      "link": "https://music.apple.com/cl/album/808-ceremony/6827430298"
+     },
+     {
+      "title": "adidas — Dakshood (YG PLUS 제공 · Featured Artist YANGHONGWON)",
+      "link": "https://www.youtube.com/watch?v=CHiIn6xK4qk"
+     },
+     {
+      "title": "양홍원 고소 카드 꺼내자…불륜 의혹 제기자, 돌연 미안해 (한국경제)",
+      "link": "https://www.hankyung.com/article/202610265538H"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339146/xx6obgeynzgeahbox2l4.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339145/o4zdww63prvqwjnulwvf.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339147/yjdqcrtsrqjjluclvtbd.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339147/iovadl7c9ay7duyvxkzz.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793339146/xx6obgeynzgeahbox2l4.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T14:45+09:00",
+     "v": {
+      "A": "1713f474",
+      "B": "b89d7882",
+      "C": "a0cf87f6"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 3,
-  "done": 32,
+  "done": 33,
   "goal": 28,
   "corners": [
    {
@@ -1335,11 +1480,11 @@
     "key": "meet",
     "name": "만나는 법",
     "weekly": 0,
-    "done": 1,
+    "done": 2,
     "left": 0,
     "need_today": 0,
     "day": null,
-    "next_no": 2,
+    "next_no": 3,
     "drafts": 1,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
@@ -1484,20 +1629,20 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T13:47+09:00"
+  "at": "2026-10-30T14:45+09:00"
  },
  "queue": {
-  "next": "2026-10-30T14:23+09:00",
+  "next": "2026-10-30T14:47+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
  },
  "slots": {
-  "basis": 268,
+  "basis": 269,
   "card": [
    {
     "from": 18,
