@@ -586,6 +586,9 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .phx .pkf{padding:10px 14px calc(10px + env(safe-area-inset-bottom)); border-top:1px solid var(--line)}
 .phx .pkf button{width:100%; padding:14px; border-radius:12px; border:0; background:var(--text); color:var(--bg); font-weight:700; font-size:15px; cursor:pointer}
 .phx .pkf button:disabled{opacity:.4; cursor:default}
+.spk{display:flex; flex-direction:column; gap:6px; max-height:34vh; overflow-y:auto}
+.spk button{text-align:left; border:1px solid var(--line); background:none; color:var(--text); border-radius:10px; padding:8px 11px; font:inherit; font-size:13.5px; cursor:pointer}
+.spk button small{display:block; color:var(--dim); font-size:11.5px; margin-top:2px}
 .sheet{position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:50; display:flex; align-items:flex-end}
 .sheet .pn{width:100%; background:var(--panel); border-radius:14px 14px 0 0; padding:10px 0 calc(16px + env(safe-area-inset-bottom));
   max-height:88vh; max-height:88dvh; overflow-y:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch}
@@ -3117,7 +3120,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
      '다른 후보' 를 누르면 맥이 그 곡도 만든다 (5~10분, 하루 상한 밖). */
   // 제작 맡기기 (2026-10-12 규효 "내가 먼저 찾은 이슈나 만들고 싶은 특집이 있으면 내가 제안") — collectors/orders
   var OD = null, OD_T = null;
-  var OD_TYPE = [['draft', '이슈·소재 초안'], ['share', '본 게시물로 (링크만)'], ['tteolgi', '나무위키 털기'], ['special', '특집'], ['story', '서사형 오늘의 노래'],
+  var OD_TYPE = [['draft', '이슈·소재 초안'], ['share', '본 게시물로 (링크만)'], ['tteolgi', '나무위키 털기'], ['special', '특집'], ['song', '🎵 오늘의 노래'],
                  ['meet', '2026년 ○○ 만나는 법'], ['intro', '장르 입문 가이드'], ['listen', '○○을 ○○로 듣는다면']];
   var OD_FORM = [['b', '숏폼·캐러셀'], ['s', '숏폼'], ['c', '캐러셀']];
   var OD_ST = { queued: '맥이 받음', running: '만드는 중', done: '완료', fail: '못 만듦' };
@@ -3137,7 +3140,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function orderBox() {
     var rows = (OD || []).slice(0, 4);
-    return '<div class="evn odb"><div class="top"><b>제작 맡기기</b><span>내가 찾은 이슈 · 특집 · 서사형 노래</span>' +
+    return '<div class="evn odb"><div class="top"><b>제작 맡기기</b><span>내가 찾은 이슈 · 특집 · 오늘의 노래</span>' +
       '<button type="button" data-odnew>+ 맡기기</button></div>' +
       '<div class="odsc">인스타에서 보다가 바로 — 갤럭시: 공유 → 「PLOT」 · 아이폰: <a href="./plot-share.shortcut" download>공유 메뉴에 「PLOT 맡기기」 넣기</a></div>' + rows.map(function (r) {
         var sn = r.snapshot || {}, st = sn.status || '';
@@ -3156,6 +3159,20 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       [['re', '고쳐서 다시 맡기기', '같은 내용이 채워진 채 열립니다 — 링크·메모를 보태 주세요'], ['x', '닫기', '']],
       function (k) { if (k === 're') openOrder({ type: sn.type || 'draft', form: sn.form || 'b', what: sn.what || '', url: sn.url || '', memo: r.reason || '' }); });
   }
+  /* 🎵 오늘의 노래 추천곡 (10/30 규효 "오늘의 노래는 내가 직접 선곡 · 추천곡 정도만") — collectors/song_today.write_app */
+  var SP = null;
+  function spLoad(cb) {
+    fetch('./song_picks.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { SP = d || { items: [] }; if (cb) cb(); }).catch(function () { SP = { items: [] }; if (cb) cb(); });
+  }
+  function spBox() {
+    if (!SP) return '<div class="g"><b>추천곡</b><small style="color:var(--dim)">불러오는 중…</small></div>';
+    var its = SP.items || [];
+    if (!its.length) return '';
+    return '<div class="g"><b>추천곡 <small style="font-weight:400;color:var(--dim)">신곡·씬 기준 · 누르면 채워짐</small></b><div class="spk">' + its.map(function (x, i) {
+      return '<button type="button" data-sp="' + i + '"><b>' + esc(x.artist) + '</b> — ' + esc(x.title) +
+        '<small>' + esc([x.genre, (x.why || []).join(' · ')].filter(Boolean).join(' · ')) + '</small></button>'; }).join('') + '</div></div>';
+  }
   function openOrder(pre) {
     if (!sbOn()) { toast('저장소 설정이 있어야 맡길 수 있습니다 (평가 노트와 같은 설정)'); return; }
     var v = pre || { type: 'draft', form: 'b' };
@@ -3164,6 +3181,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var ph = { draft: '예) 저스디스 스카이민혁 디스 / 이영지 고스트 페스티벌 사과', special: '예) 일리네어 10년 타임라인 / KC 관계도',
                tteolgi: '사람·대상 이름   예) 리센느 제나 / 실리카겔 — 나무위키만 보고 재미있는 건 전부 (장 수 제한 없음)',
                story: '아티스트 - 곡   예) 한로로 - 0+0',
+               song: '아티스트 - 곡   예) 한로로 - 0+0  (아래 추천곡을 눌러도 됩니다)',
                meet: '아티스트 이름   예) 잔나비 / 데이식스 — 남은 공연·페스티벌·행사를 확인된 것만',
                intro: '장르 이름   예) 시티팝 / 슈게이즈 / 한국 R&B — 정의·역사·입문 곡·지금의 아티스트',
                listen: '주제 / 장르   예) 사랑 / 인디 · 죽음 / 힙합 · 겨울 (장르를 비우면 음악) — 곡마다 다르게 듣는 4~6곡',
@@ -3172,7 +3190,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>제작 맡기기</h4><div class="sub">고른 소재는 판정이 버리지 않고 씁니다. 맥이 5분 안에 받아 작성기(Opus)가 취재·검증한 뒤 오늘의 초안에 올립니다 — 보통 10~20분, 나무위키 털기는 20~40분.</div>' +
         '<div class="g"><b>무엇을</b>' + evChips('type', OD_TYPE, v.type) + '</div>' +
         (v.type === 'draft' ? '<div class="g"><b>형식</b>' + evChips('form', OD_FORM, v.form) + '</div>' : '') +
-        (v.type === 'share' ? '' : '<div class="g"><b>' + (v.type === 'story' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>') +
+        (v.type === 'share' ? '' : '<div class="g"><b>' + (v.type === 'story' || v.type === 'song' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>') +
+        (v.type === 'song' ? spBox() : '') +
         '<div class="g"><b>' + (v.type === 'share' ? '본 게시물 링크' : '링크 (있으면)') + '</b><input data-f="url" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '">' +
           '<button type="button" data-paste style="margin-top:6px;font:inherit;font-size:12.5px;border:1px solid var(--line);background:none;color:var(--text);border-radius:8px;padding:5px 10px">📋 복사한 링크 붙여넣기</button></div>' +
         '<div class="g"><b>' + (v.type === 'share' ? '메모 (안 적어도 됨)' : '각도·메모 (있으면)') + '</b><textarea data-f="memo" placeholder="' + (v.type === 'share' ? '예) 숏폼으로 / 표지 한 장으로 / 둘의 예전 관계를 먼저' : '예) 디스 내용보다 둘의 예전 관계를 먼저') + '">' + esc(v.memo || '') + '</textarea></div>' +
@@ -3180,6 +3199,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     };
     var keep = function () { ['what', 'url', 'memo'].forEach(function (k) { var el = sh.querySelector('[data-f="' + k + '"]'); if (el) v[k] = el.value.trim(); }); };
     draw();
+    if (v.type === 'song' && !SP) spLoad(draw);
     sh.addEventListener('click', function (e) {
       if (e.target === sh || e.target.closest('[data-x]')) { sh.remove(); return; }
       if (e.target.closest('[data-paste]')) {             // 10/20 — 인스타에서 링크 복사 → 여기서 한 번에
@@ -3191,15 +3211,17 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         return;
       }
       var o = e.target.closest('[data-o]');
-      if (o) { keep(); v[o.closest('[data-g]').getAttribute('data-g')] = o.getAttribute('data-o'); draw(); return; }
+      if (o) { keep(); v[o.closest('[data-g]').getAttribute('data-g')] = o.getAttribute('data-o'); draw(); if (v.type === 'song' && !SP) spLoad(draw); return; }
+      var spb = e.target.closest('[data-sp]');
+      if (spb) { keep(); var x = ((SP || {}).items || [])[Number(spb.getAttribute('data-sp'))]; if (x) { v.what = x.artist + ' - ' + x.title; if (x.url && !v.url) v.url = x.url; } draw(); return; }
       if (e.target.closest('[data-save]')) {
         keep();
         if (v.type === 'share' && !/^https?:\/\//.test(v.url || '')) { toast('본 게시물 링크를 넣어 주세요'); return; }
-        if (!v.what && v.type !== 'share') { toast((v.type === 'story' ? '곡을' : '소재를') + ' 적어 주세요'); return; }
-        if (v.type === 'story' && !/\s[-–—\/|]\s?|[-–—\/|]/.test(v.what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
+        if (!v.what && v.type !== 'share') { toast((v.type === 'story' || v.type === 'song' ? '곡을' : '소재를') + ' 적어 주세요'); return; }
+        if ((v.type === 'story' || v.type === 'song') && !/\s[-–—\/|]\s?|[-–—\/|]/.test(v.what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
         var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: (v.url || '').slice(0, 300),
           verdict: {}, reason: v.memo || '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
-          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : (/^(special|tteolgi|meet|intro|listen)$/.test(v.type) ? 'c' : ''), what: v.what, url: v.url || '' } };
+          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : v.type === 'song' ? 's' : (/^(special|tteolgi|meet|intro|listen)$/.test(v.type) ? 'c' : ''), what: v.what, url: v.url || '' } };
         sh.remove();
         sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } })
           .then(function () { toast('맡겼습니다 — 맥이 5분 안에 받습니다'); OD = [rec].concat(OD || []); if (GRP === 'draft') renderDrafts(); clearTimeout(OD_T); OD_T = setTimeout(odLoad, 45000); })
@@ -3208,13 +3230,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     });
     document.body.appendChild(sh);
   }
-  var SY = null, SY_OPEN = {};
+  var SY = null, SY_OPEN = {}, STORY_PAUSED = true;
   function loadStories() {
     return fetch('./stories.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) { SY = d; if (GRP === 'draft') renderDrafts(); }).catch(function () {});
   }
   function syClock(s) { s = Math.max(0, Math.round(Number(s) || 0)); return Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2); }
   function storyBox() {
+    if (STORY_PAUSED) return '';                   // 10/30 서사형 오늘의 노래 잠정 보류
     if (!SY || (!(SY.items || []).length && !(SY.pool || []).length)) return '';
     var bud = SY.budget || {};
     var h = '<div class="sy"><h5>📖 서사형 오늘의 노래<small>' + (bud.cap ? '오늘 $' + Number(bud.spent || 0).toFixed(2) + ' / $' + bud.cap : '') + '</small></h5>';
@@ -4596,9 +4619,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 20:01';
+    a.title = '판 10.30 20:06';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 20:01';
+    ver.textContent = '10.30 20:06';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
