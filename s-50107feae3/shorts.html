@@ -1304,7 +1304,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3, premiere: 25 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
@@ -1650,6 +1650,7 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <button class="ppBtn" id="ppSubs" hidden>💬 말자막 미리 받기</button>
     <button class="ppBtn" id="ppSubsSrc" hidden title="말자막을 어디서 받을지 — 누르면 바뀝니다">📺 유튜브 자막 먼저</button>
     <button class="ppBtn" id="ppSubEdit" hidden>✏️ 자막 고치기</button>
+    <button class="ppBtn" id="ppPr" hidden title="세로 영상·글자 레이어·자막·시퀀스를 묶어 텔레그램으로">🎬 프리미어로 받기</button>
   </div>
   <div class="ppSubList" id="ppSubList" hidden></div>
   <div class="ppNote" id="ppNote"></div>
@@ -5039,6 +5040,8 @@ function ccPaint() {
 function ppSubsPaint() {
   const b = PP.b, btn = $('#ppSubs'), ed = $('#ppSubEdit');
   if (!btn) return;
+  const prb = $('#ppPr');
+  if (prb) prb.hidden = !(PP.mode === 'seg' && (PP.kind === 'yt' || PP.kind === 'px' || PP.kind === 'file') && studioOn());
   const can = PP.mode === 'seg' && (PP.kind === 'yt' || PP.kind === 'file' || PP.kind === 'px') && typeof plotStudio !== 'undefined' && plotStudio.on();
   btn.hidden = !can;
   ccPaint();
@@ -5071,6 +5074,20 @@ function ppSubsSave() {
       .then(() => { if (!r._told) { r._told = 1; toast('고친 자막은 맥에 바로 남습니다 — 제작할 때 그대로 씁니다'); } })
       .catch((e) => toast('고친 자막을 못 남겼습니다 — ' + String(e && e.message || e).slice(0, 60)));
   }, 900);
+}
+/* 🎬 프리미어로 받기 (10/30 규효 "초안을 프리미어프로에서 열어서 편집 가능하게") — bot/app_studio do_premiere
+   맥이 세로 영상(글자 없음)·글자 레이어 .mov·자막 .srt·시퀀스 xml 을 묶어 텔레그램으로 보낸다. */
+function ppPremiere() {
+  const b = PP.b, btn = $('#ppPr');
+  if (!b || !btn || btn.disabled) return;
+  if (!(b.start || '').trim() || !(b.end || '').trim()) { toast('구간(시작·끝)을 먼저 정해 주세요'); return; }
+  const segs = stOk(b) ? b.subsRef.segs.map(s => ({ start: s.start, end: s.end, text: s.text })) : [];
+  btn.disabled = true;
+  const done = () => { btn.disabled = false; btn.textContent = '🎬 프리미어로 받기'; };
+  toast('🎬 맥이 프리미어 꾸러미를 만듭니다 — 몇 분 걸려요. 다 되면 텔레그램으로 와요');
+  plotStudio.send('premiere', { text: blockText(b), segs: segs }, (step) => { btn.textContent = '🎬 ' + step; })
+    .then((sn) => { done(); toast('✓ ' + (sn.note || '프리미어 꾸러미를 보냈습니다')); })
+    .catch((e) => { done(); toast('프리미어 꾸러미 실패 — ' + String(e && e.message || e).slice(0, 90)); });
 }
 function ppSubsFetch() {
   const b = PP.b;
@@ -5247,6 +5264,7 @@ function bindPlay() {
   $('#ppSound').onclick = () => ppSetMuted(!PP.muted);
   $('#ppEdit').onclick = () => { const b = PP.b; PP._popping = true; ppStop(); PP._popping = false; if (b) openPicker(b); };
   $('#ppSubs').onclick = ppSubsFetch;
+  if ($('#ppPr')) $('#ppPr').onclick = ppPremiere;
   $('#ppSubsSrc').onclick = () => {
     try { localStorage.setItem(CC_KEY + '2', ccMode() === 'yt' ? 'stt' : 'yt'); } catch (_) {}
     ccPaint();
@@ -6948,9 +6966,9 @@ document.addEventListener('DOMContentLoaded', () => {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 19:25';
+    a.title = '판 10.30 19:31';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 19:25';
+    ver.textContent = '10.30 19:31';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
