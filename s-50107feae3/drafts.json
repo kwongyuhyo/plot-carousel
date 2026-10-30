@@ -2190,6 +2190,89 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-6ff6bf15",
+    "account": "@규효 공유 · @mini_magkr",
+    "url": "https://www.instagram.com/reel/DfE2iJOx5Hb/",
+    "image": null,
+    "head": "베스티, 13년 만에 다시 춘 '연애의 조건' 2026년 버전 안무 영상",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T18:04+09:00",
+   "key": "5b0e3c88",
+   "by": "claude",
+   "subjects": [
+    "베스티"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "역주행으로 다시 뭉친 베스티 네 사람이 13년 만에 다시 맞춘 '연애의 조건' 안무 — 31일 음악중심 완전체 무대 전",
+    "why": "규효 맡기기(릴스로) · 공개 하루 만에 조회 27만 · 여러 매거진이 다루는 역주행 재결합"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T18:04+09:00",
+   "corner": "again",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=Z-pAsnR3lsM\n구간: 0:27-0:58\n곡: 베스티 '연애의 조건'\n아티스트: 13년 만에 다시 춘\n피처링:\n후킹: \n출처: 다혜가다했다DAHYE\n음원: 베스티 - 연애의 조건",
+    "caption": "베스티 네 멤버가 '연애의 조건' 안무를 13년 만에 다시 맞췄습니다.\n\n29일 다혜의 유튜브 채널 '다혜가다했다DAHYE'에 올라온 2026년 버전 안무 영상인데요, 혜연, 유지, 다혜, 해령이 하이힐을 신고 2013년 발표곡의 무대를 다시 채웠습니다. 영상은 공개 하루 만에 조회수 27만 회를 넘겼습니다.\n\n시작은 숏폼이었습니다. '연애의 조건'이 짧은 영상들을 타고 역주행해 멜론 TOP100 최고 47위까지 오르자, 네 사람은 발매 13주년인 17일 다시 베스티로 뭉쳤습니다. 숏폼이 다시 불러낸 그 노래를, 이번엔 원래 주인들이 직접 추는 셈입니다.\n\n베스티는 31일 MBC 〈쇼! 음악중심〉에서 약 4000일 만에 완전체 음악방송 무대에 오릅니다.\n\n#PLOT #베스티 #연애의조건 #다혜 #쇼음악중심",
+    "hooks": {
+     "A": "13년 만에 다시 춘 / 베스티 '연애의 조건'",
+     "B": "역주행이 불러낸 / 네 사람의 2026 안무",
+     "C": "하이힐 신고 다시 선 / '연애의 조건' 네 사람"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Z-pAsnR3lsM",
+     "credit": "다혜가다했다DAHYE",
+     "range": [
+      27.0,
+      58.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 영상에 자막이 없어 0:27-0:58 구간에 후렴이 실제로 나오는지 자막으로 확인 못 함 — 재생해 보고 구간 맞춰 주세요",
+     "클립 위험: 낮음 — 다혜가다했다DAHYE (멤버 본인 채널)",
+     "구간 확인: 자막 없는 영상이라 후렴 '정말 바라는 거 없어요' 시작을 가사 영상 기준으로 0:27 쯤으로 잡음 — 앞뒤 1~2초 맞춰 주세요"
+    ],
+    "research": [
+     {
+      "title": "베스티(BESTie) - 연애의 조건 안무영상 2026.ver (다혜가다했다DAHYE)",
+      "link": "https://www.youtube.com/watch?v=Z-pAsnR3lsM"
+     },
+     {
+      "title": "텐아시아 — 베스티, 13년 만에 다시 춘 '연애의 조건'…4000일 만에 완전체 음방 출격",
+      "link": "https://www.tenasia.co.kr/article/2026103057424"
+     },
+     {
+      "title": "톱스타뉴스 — 베스티, '연애의 조건' 2026년 버전 완전체 안무 공개…조회수 27만 돌파",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16263337"
+     },
+     {
+      "title": "베스티 - 연애의 조건 싱크가사 (후렴 시각 참고)",
+      "link": "https://www.youtube.com/watch?v=oEW_xO_NU6s"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Z-pAsnR3lsM/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793351082/rrhyvoeb0dgkxsqn7zfh.jpg",
+     "key": "Z-pAsnR3lsM@27.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-30T18:04+09:00"
+    }
+   },
+   "corner_name": "다시 보기"
   }
  ],
  "skipped": [],
@@ -2304,7 +2387,7 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "덜 터졌지만 좋았던 PLOT 글을 새 표지로 (리센느 730 → 4.7만)"
    },
    {
@@ -2368,10 +2451,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T17:35+09:00"
+  "at": "2026-10-30T18:04+09:00"
  },
  "queue": {
-  "next": "2026-10-30T17:37+09:00",
+  "next": "2026-10-30T18:06+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
