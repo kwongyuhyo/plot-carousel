@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-29 22:04 KST",
+ "generated_at": "2026-10-30 15:06 KST",
  "weeks": [
   {
    "week": "2026-W36",
@@ -1676,11 +1676,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-29 19:05 KST"
+  "daily": "2026-10-29 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-29T21:44:23+09:00",
+  "fetched_at": "2026-10-30T15:06:26+09:00",
   "posts": [
+   {
+    "t": "2026-10-30T13:23+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS"
+   },
    {
     "t": "2026-10-29T19:47+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2080,10 +2085,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 214,
-  "posted": 64,
-  "posts": 85,
-  "rate": 0.3,
+  "drafts": 224,
+  "posted": 65,
+  "posts": 86,
+  "rate": 0.29,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
   "lanes": {
@@ -2098,12 +2103,12 @@
     "mult": 2.05
    },
    "정보": {
-    "drafts": 135,
-    "posted": 53,
+    "drafts": 143,
+    "posted": 54,
     "mult": 0.99
    },
    "클립": {
-    "drafts": 34,
+    "drafts": 35,
     "posted": 4,
     "mult": 0.96
    },
@@ -2123,7 +2128,7 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 14,
+    "drafts": 15,
     "posted": 3,
     "mult": 0.78
    },
@@ -2140,12 +2145,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 120,
+    "drafts": 127,
     "posted": 43,
     "mult": 1.05
    },
    "mal": {
-    "drafts": 34,
+    "drafts": 35,
     "posted": 4,
     "mult": 0.96
    },
@@ -2180,7 +2185,7 @@
     "mult": null
    },
    "anniv": {
-    "drafts": 8,
+    "drafts": 9,
     "posted": 2,
     "mult": 1.08
    },
@@ -2190,8 +2195,8 @@
     "mult": 0.78
    },
    "meet": {
-    "drafts": 3,
-    "posted": 1,
+    "drafts": 4,
+    "posted": 2,
     "mult": null
    },
    "intro": {
@@ -2217,19 +2222,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-27",
-    "lane": "정보",
-    "who": "누자베스",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "bdbe8332",
-    "posted": "De_E7vVGRfr",
-    "head": "누자베스의 레이블 하이드아웃 프로덕션이 꾸린 라이브 프로젝트 '누자베스 메타포리컬 앙상블'",
-    "url": "https://www.instagram.com/p/De_E7vVGRfr/",
-    "mult": 0.79
-   },
    {
     "day": "2026-10-27",
     "lane": "정보",
@@ -2319,6 +2311,19 @@
     "posted": "DfEyrTuFEbH",
     "head": "패닉이 '2026 MAMA AWARDS'에서 후배들과 한 무대를 꾸밉니다.",
     "url": "https://www.instagram.com/p/DfEyrTuFEbH/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-30",
+    "lane": "정보",
+    "who": "빅뱅",
+    "repack": false,
+    "grade": "A",
+    "corner": "meet",
+    "key": "3f2b4492",
+    "posted": "DfGtxidmfJ_",
+    "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS'에서 아기공룡 둘",
+    "url": "https://www.instagram.com/p/DfGtxidmfJ_/",
     "mult": null
    }
   ]
