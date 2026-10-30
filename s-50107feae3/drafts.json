@@ -4168,9 +4168,11 @@
      "end": 20.0,
      "full": 20.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-30T21:23+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793363166/plot_studio/ts4tzhvg1ltcaqud9fed.mp4",
+     "at": "2026-10-30T21:26+09:00",
+     "file": "TeolBogSungI_ChinGuW_BolLingJangE_NaTaNan_New_Release_no_lyrics__cta.mp4",
+     "v": "a11bafee"
     }
    },
    "corner_name": "소식",
@@ -4727,7 +4729,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T21:23+09:00"
+  "at": "2026-10-30T21:26+09:00"
  },
  "queue": {
   "next": "2026-10-30T21:55+09:00",
