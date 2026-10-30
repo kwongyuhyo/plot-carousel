@@ -2682,13 +2682,90 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793353270/nymuuwdlzvfhqcysrte4.jpg",
      "key": "ATQn2UhDPVw@65.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-30T18:41+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793353438/plot_studio/galhupogn8jvtzvbnoym.mp4",
+     "at": "2026-10-30T18:44+09:00",
+     "file": "BaenDeu_SoLiLo_DaSi__BeIBiMonSeuTeo_DESER_ONeulUi_NoLae_no_lyrics__cta.mp4",
+     "v": "7337f67e"
     }
    },
    "corner_name": "오늘의 노래",
    "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "claude:ord-40be6594",
+    "account": "@규효 공유",
+    "url": "https://www.youtube.com/watch?v=Ft7T5xmDzlQ",
+    "image": null,
+    "head": "전참시 421회, 조식 자리에서 산의 표정을 따라 하는 에이티즈 멤버들",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T18:43+09:00",
+   "key": "be5ad947",
+   "by": "claude",
+   "subjects": [
+    "산"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "표정은 신경 쓴 적 없다는 산 앞에서 바로 시작된 멤버들의 표정 따라 하기",
+    "why": "규효 맡김 · 전참시 421회 공식 클립 조회 229만 · 산의 '조롱' 캐릭터가 터진 장면"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T18:43+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=Ft7T5xmDzlQ\n구간: 16:01-16:29\n곡: 최산 표정 따라 하기\n아티스트: 조식 먹다 시작된\n피처링:\n후킹: \n출처: 엠뚜루마뚜루 : MBC 공식 종합 채널\n자막: 자동",
+    "caption": "에이티즈(@ateez_official_) 산은 무대에서 표정을 신경 써 본 적이 한 번도 없다고 합니다.\n\n지난 24일 방송된 〈전지적 참견 시점〉 421회에서 공연차 머물던 호텔 조식 자리에 멤버들이 모였는데요, 무대마다 표정이 달라진다는 멤버의 말에 산이 \"표정은 1도 신경 쓴 적 없다\"고 답하자 곧바로 눈을 가늘게 뜬 따라 하기가 시작됐습니다.\n\n산은 같은 방송에서 멤버들이 자신을 놀리면 오히려 재밌다며 \"더 해\"라고 한다고 말했고, 우영과는 무릎에 우정 타투까지 있는 사이라고 밝혔습니다. 놀림이 곧 애정인 팀의 아침입니다.\n\n#PLOT #에이티즈 #산 #최산 #우영 #전지적참견시점",
+    "hooks": {
+     "A": "조식 먹다 시작된 / 최산 표정 따라 하기",
+     "B": "표정 신경 안 쓴다는 산, / 멤버들은 이미 재현 중",
+     "C": "아침부터 열린 / 에이티즈 최산 조롱 타임"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Ft7T5xmDzlQ",
+     "credit": "엠뚜루마뚜루 : MBC 공식 종합 채널",
+     "range": [
+      961.0,
+      989.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — 엠뚜루마뚜루 : MBC 공식 종합 채널 (구간 28초)",
+     "16:01 질문한 멤버가 누구인지 화면으로 확인 — 확인 못 해 캡션엔 '멤버'로만 적음"
+    ],
+    "research": [
+     {
+      "title": "[전참시] 아침부터 열린 최산 조롱 잔치 — 엠뚜루마뚜루 (MBC 공식)",
+      "link": "https://www.youtube.com/watch?v=Ft7T5xmDzlQ"
+     },
+     {
+      "title": "iMBC 연예 — '북부대공' 에이티즈 최산, 52kg 극복한 벌크업 루틴 공개 (전참시 421회)",
+      "link": "https://enews.imbc.com/News/ViewAmp/522364"
+     },
+     {
+      "title": "iMBC 연예 — '전참시' 최산, 어린 시절 사진 공개 (10/24 방송 421회)",
+      "link": "https://enews.imbc.com/News/ViewAmp/522349"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Ft7T5xmDzlQ/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793353388/jxk6tvdnnb0iprpqkjqf.jpg",
+     "key": "Ft7T5xmDzlQ@961.0"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 7
   }
  ],
  "skipped": [],
@@ -2767,7 +2844,7 @@
     "need_today": 2,
     "day": null,
     "next_no": 5,
-    "drafts": 2,
+    "drafts": 3,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -2867,10 +2944,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T18:41+09:00"
+  "at": "2026-10-30T18:44+09:00"
  },
  "queue": {
-  "next": "2026-10-30T18:43+09:00",
+  "next": "2026-10-30T18:46+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
