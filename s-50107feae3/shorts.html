@@ -826,6 +826,8 @@ body.prOn #pp{display:none!important}
 .prWsBar{display:flex; gap:2px; margin-left:14px; padding-left:12px; border-left:1px solid #333}
 .prWsBar button{height:26px; padding:0 10px; border:0; background:none; color:#9a9a9a; font-size:12.5px; border-bottom:2px solid transparent; border-radius:0}
 .prWsBar button.on{color:#fff; border-bottom-color:var(--blue)}
+.prWsBar .prMode{color:#fff; font-weight:600; font-size:12.5px; padding:0 10px; display:flex; align-items:center}
+.prWsBar button[data-pa=phone]{color:#fff; background:#2c2c2c; border-radius:4px; border-bottom:0}
 .prWsBar button:hover{color:#fff}
 .prStat{font-size:12px; margin-right:10px; white-space:nowrap}
 .prStat.ok{color:#7fcf8a} .prStat.warn{color:#e8c25a} .prStat.bad{color:#ff7a6e}
@@ -5942,7 +5944,7 @@ function prBuild() {
     <div><em>텍스트 패널</em> Enter 커서 자리에서 둘로 · 맨 앞 ⌫ 앞줄과 합치기 · ↑↓ 앞뒤 줄 · 시간 누르면 그 줄만 듣기</div>
     <div><em>마우스</em> 영상 클립 양 끝 끌기 = 구간 줄이고 늘이기 (자막도 같이 밀림) · 글자 클립 끌기 = 1~3줄 나오는 때 · 9:16 창·프로그램 화면 옆으로 끌기 = 가로 위치</div>
   </div>
-  <span class="prWsBar"><button type="button" class="on">편집</button><button type="button" data-pa="phone" title="폰처럼 한 줄 양식 화면">간단히</button></span>
+  <span class="prWsBar"><button type="button" data-pa="phone" title="자막 고치기를 닫고 숏폼 양식으로">← 양식으로</button><b class="prMode">✏️ 자막 고치기</b></span>
   <span class="prSp"></span>
   <span class="prStat" id="prStat"></span>
   <span class="prExp">
@@ -6171,7 +6173,6 @@ function prEnter() {
   prMove($('#ppNote'), $('#prPgmNote'));
   prMove($('#ppSubList'), $('#prTlHost'));
   prMove($('#resume'), $('#prResumeHost'));
-  try { localStorage.setItem(PR_KEY, '1'); } catch (_) {}
   prFocus('tl');
   PR.pgmKey = ''; PR.fxFor = null; PR.src.url = null;
   prLoad();
@@ -6192,7 +6193,6 @@ function prExit() {
   document.body.classList.remove('prOn');
   $('#prw').hidden = true;
   document.body.style.overflow = '';
-  try { localStorage.setItem(PR_KEY, '0'); } catch (_) {}
   render();
 }
 
@@ -6874,18 +6874,21 @@ function prKey(e) {
 })();
 
 /* 넓은 화면이면 편집 화면으로 연다 — 폰 머리줄에는 「🎬 편집 화면」 단추 */
+/* 10/30 규효 "컷편집 프로그램 너무 불편 — 원래대로 복귀하고 자막 수정할 때만 저 화면으로" —
+   숏폼 양식은 늘 예전 화면. 컴퓨터에서 미리보기의 「✏️ 자막 고치기」를 누를 때만 이 화면이 열리고, 「← 양식으로」로 닫는다. */
 document.addEventListener('DOMContentLoaded', () => {
   if (IN_TG) return;
-  const hb = document.querySelector('header .hbtns');
-  if (hb) {
-    const go = el('button', 'prGo'); go.type = 'button'; go.textContent = '🎬 편집 화면';
-    go.title = '프리미어처럼 패널 여러 개로 — 소스·프로그램 모니터 · 타임라인';
-    go.onclick = () => prEnter();
-    hb.append(go);
-    const fit = () => { go.hidden = !prWide(); };
-    fit(); window.addEventListener('resize', fit);
-  }
-  if (prWide() && prWant()) setTimeout(prEnter, 0);
+  const ed = document.getElementById('ppSubEdit');
+  if (!ed) return;
+  ed.addEventListener('click', (e) => {
+    if (!prWide() || PR.on || !PP.b) return;
+    e.preventDefault(); e.stopImmediatePropagation();
+    const i = PP.i;
+    PP._popping = true; ppStop(); PP._popping = false;
+    active = i;
+    prEnter();
+    setTimeout(() => { prTab('text'); prFocus('tl'); }, 300);
+  }, true);
 });
 
 </script>
@@ -6899,9 +6902,9 @@ document.addEventListener('DOMContentLoaded', () => {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 18:20';
+    a.title = '판 10.30 18:23';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 18:20';
+    ver.textContent = '10.30 18:23';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
