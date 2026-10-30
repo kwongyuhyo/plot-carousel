@@ -2568,6 +2568,9 @@ function parseDeckForm(text) {
       else {
         sl.heading = unlit(kv["소제목"] || ""); sl.body = unlit(kv["본문"] || "");
         if (/^(정리|타임라인|timeline|자료)$/.test((kv["형식"] || "").trim())) { sl.style = "timeline"; sl.speaker = unlit(kv["말한이"] || ""); }
+        if (sl.vid && /^자료$/.test((kv["형식"] || "").trim())) {   // 10/30 자료 영상 — 정리 상자 말고 영상 장 (통째로 보이고 남는 자리는 흐리게)
+          sl.style = blankBody().style; sl.speaker = ""; sl.fit = { z: 1, cx: .5, cy: .5, bg: "blur", snap: false };
+        }
         if (/^(곡|song)$/.test((kv["형식"] || "").trim())) {
           sl.style = "song"; sl.song = (kv["음원"] || "").trim(); sl.songRange = (kv["구간"] || "").trim(); sl.num = (kv["번호"] || "").trim();
         }

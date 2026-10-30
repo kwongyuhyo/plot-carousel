@@ -2655,6 +2655,9 @@ function parseDeckForm(text) {
       else {
         sl.heading = unlit(kv["소제목"] || ""); sl.body = unlit(kv["본문"] || "");
         if (/^(정리|타임라인|timeline|자료)$/.test((kv["형식"] || "").trim())) { sl.style = "timeline"; sl.speaker = unlit(kv["말한이"] || ""); }
+        if (sl.vid && /^자료$/.test((kv["형식"] || "").trim())) {   // 10/30 자료 영상 — 정리 상자 말고 영상 장 (통째로 보이고 남는 자리는 흐리게)
+          sl.style = blankBody().style; sl.speaker = ""; sl.fit = { z: 1, cx: .5, cy: .5, bg: "blur", snap: false };
+        }
         if (/^(곡|song)$/.test((kv["형식"] || "").trim())) {
           sl.style = "song"; sl.song = (kv["음원"] || "").trim(); sl.songRange = (kv["구간"] || "").trim(); sl.num = (kv["번호"] || "").trim();
         }
@@ -3892,9 +3895,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 10.30 19:51';
+    a.title = '판 10.30 20:01';
     var ver = document.createElement('span');
-    ver.textContent = '10.30 19:51';
+    ver.textContent = '10.30 20:01';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

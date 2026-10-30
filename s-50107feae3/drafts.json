@@ -3849,6 +3849,92 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-ae6d3d41",
+    "account": "@규효 요청",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16263190",
+    "image": null,
+    "head": "오늘의 노래 — 공원 '이리저리', 흔들리며 길을 찾는 청춘의 슈게이즈",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T19:59+09:00",
+   "key": "7d80f9ea",
+   "by": "claude",
+   "subjects": [
+    "공원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "오늘의 노래 — '내 이름이 뭐더라'에서 출발한 공원의 슈게이즈 신곡 '이리저리'",
+    "why": "10/27 신곡 · 첫 단독 콘서트 전석 매진으로 씬에서 뜨거운 이름"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T19:59+09:00",
+   "corner": "song",
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=ksfufBcqDSg\n구간: 0:52-1:15\n곡: 공원의 새 노래 이리저리\n아티스트: 내 이름이 뭐더라,\n피처링:\n후킹: \n출처: 공원 gongwon\n음원: 공원 - 이리저리",
+    "caption": "공원(@gongwon_official)이 27일 새 디지털 싱글 [이리저리]를 발표했습니다.\n\n\"내 이름이 뭐더라?\"라는 물음에서 출발하는 곡인데요, 몽환적인 슈게이즈 사운드 위에 록의 에너지를 얹어 불안하고 서툴러도 제 길을 찾아가는 청춘을 그립니다. 가사는 공원이 직접 썼습니다.\n\n〈싱어게인4〉 TOP10과 한국대중음악상 '올해의 신인' 후보를 지나 온 공원은 11월 28·29일 서울 무신사개러지에서 첫 단독 콘서트 'TAKE 01'을 엽니다. 예매가 열린 29일, 양일 공연이 모두 매진됐습니다.\n\n#PLOT #오늘의노래 #공원 #이리저리 #싱어게인4 #TAKE01",
+    "hooks": {
+     "A": "내 이름이 뭐더라, / 공원의 새 노래 이리저리",
+     "B": "싱어게인4 공원이 / 슈게이즈로 돌아왔다",
+     "C": "흔들리며 걷는 청춘에게 / 공원 「이리저리」"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=ksfufBcqDSg",
+     "credit": "공원 gongwon",
+     "range": [
+      52.0,
+      75.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 공원 gongwon (본인 공식 채널 MV)",
+     "구간 확인 — 후렴 판별 도구가 막혀 0:52-1:15 는 추정치. MV 자막에 가사가 없어 후렴 첫머리를 귀로 맞춰 주세요"
+    ],
+    "research": [
+     {
+      "title": "공원, 첫 단독 콘서트 'TAKE 01' 티켓 5분 만에 전석 매진 (톱스타뉴스)",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16263190"
+     },
+     {
+      "title": "'잘파 뮤지션' 공원, 오늘(29일) 첫 단독 콘서트 티켓 오픈 (OSEN)",
+      "link": "http://www.osen.co.kr/article/G1112900218"
+     },
+     {
+      "title": "공원 새 싱글 '이리저리' 발매 (일간스포츠)",
+      "link": "https://isplus.com/article/view/isp202610270118"
+     },
+     {
+      "title": "[MV] 공원 - 이리저리(IRIJEORI) (공원 gongwon 공식 채널)",
+      "link": "https://www.youtube.com/watch?v=ksfufBcqDSg"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/ksfufBcqDSg/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793357977/qopiw3kobt84yta2ozja.jpg",
+     "key": "ksfufBcqDSg@52.0"
+    },
+    "px": {
+     "vid": "ksfufBcqDSg",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793358046/plot_studio/lweawzjm9l1kyeycpm7v.mp4",
+     "off": 7.0,
+     "end": 120.0,
+     "full": 224.0
+    }
+   },
+   "corner_name": "오늘의 노래",
+   "corner_no": 2
   }
  ],
  "skipped": [],
@@ -3915,7 +4001,7 @@
     "need_today": 3,
     "day": null,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 2,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -4027,7 +4113,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T19:51+09:00"
+  "at": "2026-10-30T20:01+09:00"
  },
  "queue": {
   "next": "2026-10-30T20:51+09:00",
