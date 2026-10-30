@@ -3377,6 +3377,116 @@
     }
    },
    "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "claude:ord-0ca89ce4",
+    "account": "@규효 요청",
+    "url": "https://sports.khan.co.kr/article/202610301820003?pt=nv",
+    "image": null,
+    "head": "세상을 떠난 지 12년 만에 신해철에게 은관문화훈장이 추서됐다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T19:12+09:00",
+   "key": "5156da3b",
+   "by": "claude",
+   "subjects": [
+    "신해철"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "세상을 떠난 지 12년, 기일 이틀 뒤 신해철에게 추서된 은관문화훈장",
+    "why": "규효 맡김 · 블랙핑크·유재석과 같은 시상식이지만 한국 록의 이름이 다시 불린 장면"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T19:12+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n고 신해철에게 은관문화훈장이 추서됐습니다.\n\n지난 29일 서울 국립극장 해오름극장에서 열린 제17회 대한민국 대중문화예술상에서 한국 록 음악의 대중화에 기여한 공로를 인정받았는데요, 2014년 10월 27일 신해철이 세상을 떠난 지 12년, 기일 이틀 뒤의 일입니다.\n\n1988년 대학가요제에서 무한궤도의 '그대에게'로 대상을 받으며 시작한 이름이 넥스트와 솔로를 거쳐, 이번엔 훈장으로 다시 불리게 됐습니다.\n\n#PLOT #신해철 #넥스트 #무한궤도 #그대에게 #대중문화예술상\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793355146/ms06ee3o0qhka9cqpry1.jpg\n제목: 세상을 떠난 지 12년,|신해철에게 은관문화훈장\n부제: 제17회 대한민국 대중문화예술상\n출처: 재경일보\n",
+    "caption": "고 신해철에게 은관문화훈장이 추서됐습니다.\n\n지난 29일 서울 국립극장 해오름극장에서 열린 제17회 대한민국 대중문화예술상에서 한국 록 음악의 대중화에 기여한 공로를 인정받았는데요, 2014년 10월 27일 신해철이 세상을 떠난 지 12년, 기일 이틀 뒤의 일입니다.\n\n1988년 대학가요제에서 무한궤도의 '그대에게'로 대상을 받으며 시작한 이름이 넥스트와 솔로를 거쳐, 이번엔 훈장으로 다시 불리게 됐습니다.\n\n#PLOT #신해철 #넥스트 #무한궤도 #그대에게 #대중문화예술상",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793355146/ms06ee3o0qhka9cqpry1.jpg",
+      "credit": "재경일보",
+      "from": "https://images.jkn.co.kr/data/images/full/109/71/1097191.jpg?v=1793260385&amp;width=1200&amp;height=630"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793355146/ms06ee3o0qhka9cqpry1.jpg",
+      "credit": "재경일보",
+      "from": "https://images.jkn.co.kr/data/images/full/109/71/1097191.jpg?v=1793260385&amp;width=1200&amp;height=630"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "세상을 떠난 지 12년,|신해철에게 은관문화훈장",
+      "sub": "제17회 대한민국 대중문화예술상"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'그대에게'에서 훈장까지|고 신해철",
+      "sub": "은관문화훈장 추서"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "기일 이틀 뒤,|신해철에게 온 훈장",
+      "sub": "제17회 대한민국 대중문화예술상"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "아들 신동원 씨가 대리 수훈하며 소감을 밝혔지만, 2024년 방송에서 고1이라고 소개된 걸로 보면 아직 미성년자로 보여 아들 이야기와 소감은 뺐습니다",
+     "표지 사진은 재경일보 기사 대표 사진(신해철 나비넥타이 프로필)입니다 — 다른 기사들엔 '넥스트유나이티드 제공'으로 실려 있어, 출처 표기를 넥스트유나이티드로 바꿀지 봐 주세요"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 — 故 최불암, 금관문화훈장 추서 (신해철 은관 언급)",
+      "link": "https://sports.khan.co.kr/article/202610301820003?pt=nv"
+     },
+     {
+      "title": "뉴데일리 — 유재석 데뷔 35년 만에 보관문화훈장 (수훈자 명단)",
+      "link": "https://www.newdaily.co.kr/site/data/html/2026/10/30/2026103000131.html"
+     },
+     {
+      "title": "세계일보 — 故신해철 은관문화훈장 대리 수상",
+      "link": "https://www.segye.com/newsView/20261030504296"
+     },
+     {
+      "title": "뉴스와 — 故 신해철, 은관문화훈장 추서",
+      "link": "https://www.news-wa.com/article/entertainment/2026/10/29/20261029500038"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793355148/svtfq6p1aqt5coov8xsn.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793355148/go5zvnz7pvpwsk5fkxah.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793355150/fumbrqkoz509jk65rs5t.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793355150/qngqjbehv8smtetufapy.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793355148/svtfq6p1aqt5coov8xsn.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T19:12+09:00",
+     "v": {
+      "A": "f1c357ea",
+      "B": "10df660c",
+      "C": "3d28e5cd"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -3551,14 +3661,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 11,
+    "drafts": 12,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T19:09+09:00"
+  "at": "2026-10-30T19:12+09:00"
  },
  "queue": {
-  "next": "2026-10-30T19:11+09:00",
+  "next": "2026-10-30T19:14+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T13:23+09:00"
