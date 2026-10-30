@@ -5286,9 +5286,51 @@
      "end": 489.0,
      "full": 1673.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-31T01:58+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793379802/plot_studio/iujs0gyc0ihcs6vlqbw9.mp4",
+     "at": "2026-10-31T02:03+09:00",
+     "file": "EolGul_BaKkwinDaNeun_JaeKiWaIGa_NaeNohEun_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793379803889-df660fbc",
+      "segs": [
+       {
+        "start": 20.18,
+        "end": 23.22,
+        "text": "Q. 에쉬알랜드?"
+       },
+       {
+        "start": 23.22,
+        "end": 30.46,
+        "text": "Q. 에쉬알랜드?"
+       },
+       {
+        "start": 30.9,
+        "end": 33.6,
+        "text": "오히려 좋은 거 아니냐 아티스트가"
+       },
+       {
+        "start": 33.6,
+        "end": 37.92,
+        "text": "맨날 똑같으면 지겹지 않냐 확실히?"
+       },
+       {
+        "start": 37.92,
+        "end": 39.48,
+        "text": "그 말을 듣는데"
+       },
+       {
+        "start": 39.48,
+        "end": 42.5,
+        "text": "이렇게 긍정적인 생각을?"
+       },
+       {
+        "start": 42.5,
+        "end": 43.92,
+        "text": "이러면서 그때부터"
+       }
+      ]
+     },
+     "v": "7d309181"
     }
    },
    "corner_name": "그 말",
@@ -5471,7 +5513,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-31T01:58+09:00"
+  "at": "2026-10-31T02:03+09:00"
  },
  "queue": {
   "next": "2026-10-31T08:00+09:00",
