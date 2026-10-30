@@ -4551,6 +4551,108 @@
    },
    "corner_name": "이번 주 티켓 오픈",
    "corner_no": 4
+  },
+  {
+   "source": {
+    "id": "claude:ord-67f0b87b",
+    "account": "@규효 공유 · @ptb_mag",
+    "url": "https://www.instagram.com/p/DfHk04PmHC8/?dlrf=bThqeGF6YTQ0eDVz",
+    "image": null,
+    "head": "낙원악기상가가 10/31~11/1 이틀간 '기타쇼 낙원 2026'으로 상가 전체를 연다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-30T21:53+09:00",
+   "key": "361b2d40",
+   "by": "claude",
+   "subjects": [
+    "기타쇼 낙원"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "이번 주말 낙원악기상가 전체가 기타 페스티벌이 된다 — 행사 안내형 표지 한 장",
+    "why": "규효가 공유한 @ptb_mag 게시물(10/31~11/1 기타쇼 낙원). 주말 바로 전날이라 실용 정보로 빠르게"
+   },
+   "added": "claude",
+   "added_at": "2026-10-30T21:53+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n서울 종로 낙원악기상가에서 10월 31일과 11월 1일 이틀간 '기타쇼 낙원 2026'이 열립니다.\n\n악기를 고르러 들르던 상가인데요, 이번에는 깁슨·콜트·크래프터·HEX 같은 브랜드 부스에서 직접 연주해 볼 수 있고, 상가 매장들이 가진 고가 기타와 베이스를 한자리에서 시연하는 하이엔드존과 중고마켓이 함께 열립니다.\n\n무대에는 플라잉독, 단편선 순간들, H.J.Freaks 등이 오르고, 기타리스트 닐 자자의 마스터클래스와 일렉 리프 배틀·밴드 콘테스트도 이어집니다. 상가 전체가 이틀 동안 하나의 음악 놀이터가 되는 셈입니다.\n\n라인업은 사정에 따라 바뀔 수 있어, 방문 전 낙원악기상가 공식 안내를 확인하는 것이 좋습니다.\n\n#PLOT #기타쇼낙원 #낙원상가 #낙원악기상가 #단편선순간들 #플라잉독\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793364798/todd8duztefxqri79pvs.jpg\n제목: 이번 주말 낙원상가가|기타 축제가 됩니다\n부제: 기타쇼 낙원 2026 · 10.31–11.1\n출처: 믹싱\n",
+    "caption": "서울 종로 낙원악기상가에서 10월 31일과 11월 1일 이틀간 '기타쇼 낙원 2026'이 열립니다.\n\n악기를 고르러 들르던 상가인데요, 이번에는 깁슨·콜트·크래프터·HEX 같은 브랜드 부스에서 직접 연주해 볼 수 있고, 상가 매장들이 가진 고가 기타와 베이스를 한자리에서 시연하는 하이엔드존과 중고마켓이 함께 열립니다.\n\n무대에는 플라잉독, 단편선 순간들, H.J.Freaks 등이 오르고, 기타리스트 닐 자자의 마스터클래스와 일렉 리프 배틀·밴드 콘테스트도 이어집니다. 상가 전체가 이틀 동안 하나의 음악 놀이터가 되는 셈입니다.\n\n라인업은 사정에 따라 바뀔 수 있어, 방문 전 낙원악기상가 공식 안내를 확인하는 것이 좋습니다.\n\n#PLOT #기타쇼낙원 #낙원상가 #낙원악기상가 #단편선순간들 #플라잉독",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793364798/todd8duztefxqri79pvs.jpg",
+      "credit": "믹싱",
+      "from": "https://mmagimg.speedgabia.com/2026/10/img-1793316020555-a5750375df208fc3.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793364798/todd8duztefxqri79pvs.jpg",
+      "credit": "믹싱",
+      "from": "https://mmagimg.speedgabia.com/2026/10/img-1793316020555-a5750375df208fc3.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "이번 주말 낙원상가가|기타 축제가 됩니다",
+      "sub": "기타쇼 낙원 2026 · 10.31–11.1"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "낙원상가가 이틀간 여는|기타쇼 낙원",
+      "sub": "10.31–11.1 · 종로 낙원악기상가"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "깁슨부터 중고마켓까지,|이틀간의 기타쇼 낙원",
+      "sub": "10.31–11.1"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지 사진: 믹싱 기사 대표 이미지(공식 포스터인지) — 아니면 낙원악기상가 공식 포스터로 바꾸기",
+     "숏폼은 비움: 이번 행사 영상 원본이 아직 없음 (행사 전날)"
+    ],
+    "research": [
+     {
+      "title": "펀서울 — 기타쇼 낙원 2026",
+      "link": "https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=850"
+     },
+     {
+      "title": "믹싱 — 악기 상가를 넘어 모두의 음악 놀이터로, 기타쇼낙원 2026",
+      "link": "https://mixing.co.kr/44238"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793364806/unihrnt7stk2nlgikniu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793364806/qzcsquo9vvfxkza0uyuf.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793364808/jxnxarguxypr0eyz5eb3.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793364808/nmo9x3fdp446lxrimq8d.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793364806/unihrnt7stk2nlgikniu.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-30T21:53+09:00",
+     "v": {
+      "A": "033d50af",
+      "B": "9af2606e",
+      "C": "89da2f40"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -4725,11 +4827,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 16,
+    "drafts": 17,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T21:26+09:00"
+  "at": "2026-10-30T21:53+09:00"
  },
  "queue": {
   "next": "2026-10-30T21:55+09:00",
