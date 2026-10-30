@@ -79,9 +79,110 @@
      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793322335/tgjaijfwmanexudlf7tv.jpg",
      "key": "Cp8RuVSAM6U@13.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-30T10:06+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793322624/plot_studio/i0yz4smbclehacdtv74x.mp4",
+     "at": "2026-10-30T10:10+09:00",
+     "file": "Paen_240MyeongEGe_Hw_SyaOJwinUi_2CheonMan_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793322625486-198a33ce",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 2.36,
+        "text": "본인 생일 파티를 본인 사비로"
+       },
+       {
+        "start": 2.36,
+        "end": 3.9,
+        "text": "하이디라오를 빌려서"
+       },
+       {
+        "start": 3.9,
+        "end": 5.08,
+        "text": "팬분들을 초대해서"
+       },
+       {
+        "start": 5.08,
+        "end": 6.64,
+        "text": "생일 파티를 했다는 게 맞아요?"
+       },
+       {
+        "start": 6.64,
+        "end": 7.2,
+        "text": "맞습니다"
+       },
+       {
+        "start": 7.2,
+        "end": 7.85,
+        "text": "근데 그거를"
+       },
+       {
+        "start": 7.85,
+        "end": 9.22,
+        "text": "어떻게 하게 된 거예요?"
+       },
+       {
+        "start": 9.22,
+        "end": 13.05,
+        "text": "저희 굉장히 많은 팬분들 아이돌한테"
+       },
+       {
+        "start": 13.05,
+        "end": 14.17,
+        "text": "밥 사주세요"
+       },
+       {
+        "start": 14.17,
+        "end": 15.93,
+        "text": "이런 거 많이 얘기해요"
+       },
+       {
+        "start": 15.93,
+        "end": 18.19,
+        "text": "해주고 싶은데 어떻게 해줄까"
+       },
+       {
+        "start": 18.19,
+        "end": 20.3,
+        "text": "싶어서 그런 아이디어 생겼어요"
+       },
+       {
+        "start": 20.3,
+        "end": 22.02,
+        "text": "제가 지금 사진을 봤는데"
+       },
+       {
+        "start": 22.02,
+        "end": 24.37,
+        "text": "지금 이게 영수증인 거예요"
+       },
+       {
+        "start": 24.37,
+        "end": 25.77,
+        "text": "지금? 맞습니다"
+       },
+       {
+        "start": 25.77,
+        "end": 26.8,
+        "text": "아니 뭐 얼마치를"
+       },
+       {
+        "start": 26.8,
+        "end": 28.44,
+        "text": "먹었길래 저렇게 영수증이 나왔어요?"
+       },
+       {
+        "start": 28.44,
+        "end": 29.34,
+        "text": "2천만 원입니다"
+       },
+       {
+        "start": 29.34,
+        "end": 30.92,
+        "text": "2천만 원 나왔다구요?"
+       }
+      ]
+     }
     }
    },
    "pick": {
@@ -722,10 +823,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-30T10:06+09:00"
+  "at": "2026-10-30T10:10+09:00"
  },
  "queue": {
-  "next": "2026-10-30T10:08+09:00",
+  "next": "2026-10-30T10:12+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-29T19:47+09:00"
