@@ -3423,42 +3423,115 @@
     "account": "@규효 공유 · @6pm_culture",
     "url": "https://www.instagram.com/p/De84oyfmUIs/?srtk=MXF0aHk5dnp1eTBpZw==",
     "image": null,
-    "head": "음악 용어, 정의 대신 그 용어를 대표하는 곡 하나로 듣기",
+    "head": "음악 용어 셋, 귀에 익은 곡 하나씩으로 듣기",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-10-31T20:17+09:00",
+   "made_at": "2026-10-31T22:28+09:00",
    "key": "663e659c",
    "by": "claude",
    "subjects": [
-    "The Verve",
-    "Cher",
-    "Bon Jovi"
+    "원더걸스",
+    "Cher"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "용어 사전 대신, 그 용어가 이름을 얻은 곡 하나씩 — 샘플링·오토튠·키 체인지",
-    "why": "음악 용어 정리 콘텐츠가 돌고 있음 · PLOT 은 용어마다 곡과 사람 이야기를 붙여 해부형으로"
+    "angle": "음악 용어 셋을 한국에서 귀에 익은 곡으로 듣기 — 'Tell Me'·'Believe'·'케로로 행진곡'",
+    "why": "규효 방향 '한국 대중이 익숙한 노래로' — 샘플링·키 체인지 곡을 국내 곡으로 바꿈"
    },
    "added": "claude",
-   "added_at": "2026-10-31T20:17+09:00",
+   "added_at": "2026-10-31T22:28+09:00",
    "corner": "tteolgi",
    "card": {
-    "form": "[카테고리]\nFeature\n\n[캡션]\n음악 용어는 사전보다 곡 하나로 외우는 게 빠릅니다.\n\n샘플링·오토튠·키 체인지는 설명만 들으면 막연한데요, 각 용어마다 '이 곡을 들어 보라'고 할 만한 노래가 있습니다. 더 버브 'Bitter Sweet Symphony'의 현악 루프, 셰어 'Believe'의 꺾이는 목소리, 본 조비 'Livin' On A Prayer'의 마지막 후렴입니다.\n\n셰어의 목소리는 아예 '셰어 이펙트'라는 이름을 얻었고, 더 버브의 루프는 22년 동안 크레딧을 돌려받지 못했습니다. 용어 하나에 곡 하나, 그리고 사람 이야기 하나씩입니다.\n\n#PLOT #음악용어 #더버브 #셰어 #본조비 #샘플링\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793445458/x69lg5tyes0mxk1mihaw.jpg\n제목: 음악 용어,|이 곡 하나면 들린다\n부제: 샘플링 · 오토튠 · 키 체인지\n출처: \n\n[슬라이드]\n형식: 곡\n음원: The Verve - Bitter Sweet Symphony\n소스: \n소제목: 샘플링\n본문: 다른 곡의 녹음 일부를 잘라 새 곡의 재료로 쓰는 것.||이 곡의 현악 루프는 롤링 스톤스 'The Last Time'을 앤드루 올덤 오케스트라가 관현악으로 옮긴 녹음에서 네 마디를 가져온 것입니다. 허락 범위를 두고 소송이 붙어 작곡 크레딧이 믹 재거·키스 리처즈에게 넘어갔고, 2019년에야 리처드 애슈크로프트에게 돌아왔습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Cher - Believe\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793445460/rrysrvyxxguibzk9bych.jpg\n소제목: 오토튠\n본문: 원래는 음정을 티 나지 않게 바로잡는 소프트웨어.||1998년 이 곡의 프로듀서는 오토튠을 극단적인 설정으로 걸어 목소리를 일부러 기계처럼 꺾었습니다. 음반사가 효과를 빼자고 했지만 셰어가 지켜 냈고, 이 소리는 '셰어 이펙트'라는 이름으로 오토튠 설명서에까지 실렸습니다.\n출처: Warner · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Bon Jovi - Livin' On A Prayer\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793445462/si7evcobskazhyqk9yha.jpg\n소제목: 키 체인지(전조)\n본문: 곡 중간에 조를 바꿔 분위기를 끌어올리는 것.||1986년 이 곡은 마지막 후렴에서 E단조에서 G단조로 한 음 반 올라갑니다. 같은 후렴이 갑자기 더 높게 터지는 그 순간이 전조입니다. 리치 샘보라가 토크박스로 연주한 기타 리프도 이 곡에서 함께 들을 수 있습니다.\n출처: Mercury · 소리 공식 MV\n",
-    "caption": "음악 용어는 사전보다 곡 하나로 외우는 게 빠릅니다.\n\n샘플링·오토튠·키 체인지는 설명만 들으면 막연한데요, 각 용어마다 '이 곡을 들어 보라'고 할 만한 노래가 있습니다. 더 버브 'Bitter Sweet Symphony'의 현악 루프, 셰어 'Believe'의 꺾이는 목소리, 본 조비 'Livin' On A Prayer'의 마지막 후렴입니다.\n\n셰어의 목소리는 아예 '셰어 이펙트'라는 이름을 얻었고, 더 버브의 루프는 22년 동안 크레딧을 돌려받지 못했습니다. 용어 하나에 곡 하나, 그리고 사람 이야기 하나씩입니다.\n\n#PLOT #음악용어 #더버브 #셰어 #본조비 #샘플링",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n음악 용어는 사전보다 곡 하나로 외우는 게 빠릅니다.\n\n샘플링·오토튠·키 체인지는 설명만 들으면 막연한데요, 귀에 익은 노래로 들으면 바로 잡힙니다. 원더걸스 'Tell Me', 셰어 'Believe', 그리고 〈개구리 중사 케로로〉 한국어판 오프닝 '케로로 행진곡'입니다.\n\n'Tell Me'는 스테이시 큐의 'Two of Hearts'를 샘플링한 곡이고, 'Believe'의 꺾이는 목소리는 아예 '셰어 이펙트'라는 이름을 얻었습니다. '케로로 행진곡'은 한 곡 안에서 조가 두 번 바뀝니다.\n\n#PLOT #음악용어 #원더걸스 #셰어 #케로로 #샘플링\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793453318/nu9xp8avnyvddcz6udth.jpg\n제목: 음악 용어,|이 곡 하나면 들린다\n부제: 샘플링 · 오토튠 · 키 체인지\n출처: Warner\n\n[슬라이드]\n형식: 곡\n음원: 원더걸스 - Tell Me\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793453320/wwkqnqtbajkecngjrahr.jpg\n소제목: 샘플링\n본문: 다른 곡의 녹음 일부를 가져와 새 곡의 재료로 쓰는 것.||2007년 '텔미 신드롬'을 일으킨 원더걸스 'Tell Me'는 스테이시 큐의 1986년 곡 'Two of Hearts'를 샘플링한 곡입니다. 한 번 들으면 따라 부르게 되는 그 레트로한 결이 원곡에서 왔습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 정리\n말한이: \n소스: \n소제목: 오토튠\n본문: 원래는 음정을 티 나지 않게 바로잡는 소프트웨어.||1998년 셰어 'Believe'의 프로듀서는 오토튠을 극단적인 설정으로 걸어 목소리를 일부러 기계처럼 꺾었습니다. 음반사가 효과를 빼자고 했지만 셰어가 지켜 냈고, 이 소리는 '셰어 이펙트'라는 이름으로 오토튠 설명서에까지 실렸습니다.\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: \n소스: \n소제목: 키 체인지(전조)\n본문: 음악에서 곡이 진행되는 도중에 아예 조성이 바뀌어버리는 것.||애니메이션 주제가 중 개구리 중사 케로로의 한국어판 오프닝 케로로 행진곡은 바장조(F Major) → 사장조(G Major) → 가장조(A Major) 순서로 조바꿈이 이루어진다.||출처: 나무위키 「조바꿈」\n출처:\n",
+    "caption": "음악 용어는 사전보다 곡 하나로 외우는 게 빠릅니다.\n\n샘플링·오토튠·키 체인지는 설명만 들으면 막연한데요, 귀에 익은 노래로 들으면 바로 잡힙니다. 원더걸스 'Tell Me', 셰어 'Believe', 그리고 〈개구리 중사 케로로〉 한국어판 오프닝 '케로로 행진곡'입니다.\n\n'Tell Me'는 스테이시 큐의 'Two of Hearts'를 샘플링한 곡이고, 'Believe'의 꺾이는 목소리는 아예 '셰어 이펙트'라는 이름을 얻었습니다. '케로로 행진곡'은 한 곡 안에서 조가 두 번 바뀝니다.\n\n#PLOT #음악용어 #원더걸스 #셰어 #케로로 #샘플링",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445458/x69lg5tyes0mxk1mihaw.jpg",
-      "credit": "신뢰"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453318/nu9xp8avnyvddcz6udth.jpg",
+      "credit": "Warner",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445460/rrysrvyxxguibzk9bych.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453264/b1e7s81fvncadethoka4.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_l2v7l6gx/auto_pdb_원더걸스_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453272/u4nujbfxuv91qnzqbeai.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_5vn1mi_j/auto_pdb_원더걸스_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453260/lelphrkx8cbfkch26oov.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_g16hn9_w/auto_pdb_원더걸스_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453277/ukvph83ix9vdvfbubbcn.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_0fkac0bg/auto_pdb_원더걸스_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453232/kk4ylbpyk4abbehn9q18.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/100/37/587/10037587.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453235/r9suzqutxwxdnjjs2opy.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/026/95/552/2695552.jpg/melon/resize/1000/quality/90/optimize"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445458/x69lg5tyes0mxk1mihaw.jpg",
-      "credit": "신뢰"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453318/nu9xp8avnyvddcz6udth.jpg",
+      "credit": "Warner",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445460/rrysrvyxxguibzk9bych.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453264/b1e7s81fvncadethoka4.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_l2v7l6gx/auto_pdb_원더걸스_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453272/u4nujbfxuv91qnzqbeai.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_5vn1mi_j/auto_pdb_원더걸스_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453260/lelphrkx8cbfkch26oov.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_g16hn9_w/auto_pdb_원더걸스_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453277/ukvph83ix9vdvfbubbcn.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_0fkac0bg/auto_pdb_원더걸스_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453232/kk4ylbpyk4abbehn9q18.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/100/37/587/10037587.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453235/r9suzqutxwxdnjjs2opy.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/026/95/552/2695552.jpg/melon/resize/1000/quality/90/optimize"
      }
     ],
     "shape": "맥락",
@@ -3472,73 +3545,67 @@
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "말로는 어려운 음악 용어|곡 세 개로 정리",
-      "sub": "샘플링 · 오토튠 · 키 체인지"
+      "title": "'Tell Me'로 배우는|샘플링",
+      "sub": "귀에 익은 곡으로 듣는 음악 용어"
      },
      {
       "key": "C",
       "hook": "다른 안",
-      "title": "'셰어 이펙트'는|어디서 왔을까",
-      "sub": "곡으로 듣는 음악 용어"
+      "title": "케로로 행진곡에|전조가 두 번",
+      "sub": "샘플링 · 오토튠 · 키 체인지"
      }
     ],
     "issues": [],
     "confirm": [
-     "표지 사진(리처드 애슈크로프트 녹음실 사진)은 자동으로 채워진 것 — 출처·크레딧 확인, 애매하면 「사진 바꾸기」",
-     "곡 장 세 곳의 후렴 구간이 자동으로 잘 잡혔는지 (Livin' On A Prayer 는 전조가 나오는 마지막 후렴이면 더 좋음)"
+     "'케로로 행진곡' 조바꿈(F→G→A)은 나무위키 「조바꿈」 각주 한 곳 근거 — 음원으로 귀로 한 번 확인",
+     "셰어·케로로 장은 사진 없이 둠 — 멜론이 'Believe'를 다른 밴드 곡(My New Band Believe)으로 잡아 곡 장을 풀었고, Believe 커버는 표지에 썼음"
     ],
     "research": [
      {
-      "title": "Bitter Sweet Symphony — Wikipedia",
-      "link": "https://en.wikipedia.org/wiki/Bitter_Sweet_Symphony"
+      "title": "Wikipedia — Tell Me (Wonder Girls song)",
+      "link": "https://en.wikipedia.org/wiki/Tell_Me_(Wonder_Girls_song)"
      },
      {
-      "title": "Richard Ashcroft gets Bitter Sweet Symphony royalties — The Line of Best Fit",
-      "link": "https://thelineofbestfit.com/news/latest-news/richard-ashcroft-gets-bitter-sweet-symphony-royalties-from-rolling-stones"
+      "title": "더위키 — 텔미",
+      "link": "https://thewiki.kr/w/텔미"
      },
      {
-      "title": "Believe (Cher song) — Wikipedia",
+      "title": "Wikipedia — Believe (Cher song)",
       "link": "https://en.wikipedia.org/wiki/Believe_(Cher_song)"
      },
      {
-      "title": "How Cher's producers tried to keep her 'Believe' Auto-Tune secret — Yahoo",
-      "link": "https://uk.news.yahoo.com/cher-believe-autotune-061938631.html"
+      "title": "나무위키 — 오토튠",
+      "link": "https://namu.wiki/w/오토튠"
      },
      {
-      "title": "Livin' on a Prayer — Wikipedia",
-      "link": "https://en.wikipedia.org/wiki/Livin%27_on_a_Prayer"
-     },
-     {
-      "title": "How Bon Jovi created their signature rock anthem — MusicRadar",
-      "link": "https://musicradar.com/artists/when-i-brought-up-the-talk-box-everybody-in-the-band-started-laughing-at-me-but-when-it-actually-worked-it-became-an-integral-part-of-that-hit-song-how-bon-jovi-created-their-signature-rock-anthem-with-a-hit-doctor-and-a-goofy-guitar-effect"
+      "title": "나무위키 — 조바꿈",
+      "link": "https://namu.wiki/w/조바꿈"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/vryaptt8qkipkysxrycv.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/qyt8jtnafhyk70ephwds.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/ptffcj3xo9hp0sqawp2r.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/uyfnwlvrugizdu66ll7v.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445469/pqod44etre6dkzru1bxj.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453324/zhzkmen0hs0jbedxutza.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453324/swsayfyvpvly33gtwg3n.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453324/hqaz92fq8x6mnieyechn.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453324/d1ejij2elcmydvgsumgv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453326/l9rvuz03wxzwdstbtrg9.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445471/lojmk5vsmv5ak42sxqmy.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445471/d4wklqmgyztrxqabw1rf.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/vryaptt8qkipkysxrycv.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453328/jz9w7ysbnd9b7xf7qro2.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453328/t19z5cewlxy4abqttmzf.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793453324/zhzkmen0hs0jbedxutza.jpg"
      },
      "cvr": 2,
-     "at": "2026-10-31T20:17+09:00",
+     "at": "2026-10-31T22:28+09:00",
      "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793445194/plot_studio/a3e7zbeqitz65qqigfgv.mp4",
-      "2": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793445494/plot_studio/bycrojvkeg6jsfnkdl7l.mp4",
-      "3": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793445494/plot_studio/wn0sbpfyxfohs19n35ru.mp4"
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793453352/plot_studio/jz6biwcqstkromnfbipl.mp4"
      },
-     "vkey": "bb24e95fc181",
+     "vkey": "d216ab3725d0",
      "v": {
-      "A": "4c4d662d",
-      "B": "8a93ba16",
-      "C": "bc06daf5"
+      "A": "36297b51",
+      "B": "7a47d050",
+      "C": "50bc7337"
      }
     }
    },
@@ -3946,10 +4013,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-31T22:00+09:00"
+  "at": "2026-10-31T22:28+09:00"
  },
  "queue": {
-  "next": "2026-10-31T22:02+09:00",
+  "next": "2026-10-31T22:31+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-31T20:48+09:00"
@@ -3961,7 +4028,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.12,
+    "mult": 2.15,
     "median": 1.29,
     "n": 50
    },
