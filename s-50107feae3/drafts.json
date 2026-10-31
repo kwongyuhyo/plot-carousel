@@ -806,6 +806,10 @@
      "at": "2026-10-31T10:08+09:00",
      "file": "Jon_PeuLaIn_YeopESeo_MalI_An_DeulLyeossDe_Feature_no_lyrics__cta.mp4",
      "v": "0f122bf8"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-31T11:42+09:00"
     }
    },
    "pick": {
@@ -1241,9 +1245,11 @@
      "end": 133.0,
      "full": 137.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-31T11:39+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793414602/plot_studio/ebsrezsqdgxicz0elcuo.mp4",
+     "at": "2026-10-31T11:43+09:00",
+     "file": "MiNaMiGa_Sseun_GeulG_LiSenNeu_SinGog_JeMo_News_no_lyrics__cta.mp4",
+     "v": "66796cc0"
     }
    },
    "corner_name": "소식"
@@ -1425,48 +1431,56 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-31T11:39+09:00"
+  "at": "2026-10-31T11:43+09:00"
  },
  "queue": {
-  "next": "2026-10-31T11:41+09:00",
+  "next": "2026-10-31T11:45+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T22:05+09:00"
  },
  "slots": {
-  "basis": 274,
+  "basis": 267,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.1,
-    "median": 1.27,
-    "n": 49
+    "mult": 1.59,
+    "median": 0.92,
+    "n": 45
    },
    {
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.8,
-    "median": 0.95,
-    "n": 35
+    "mult": 1.42,
+    "median": 0.44,
+    "n": 34
    },
    {
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.46,
-    "median": 1.0,
-    "n": 22
+    "mult": 1.01,
+    "median": 0.47,
+    "n": 21
    }
   ],
   "shorts": [
    {
+    "from": 18,
+    "to": 21,
+    "at": "19:30",
+    "mult": 1.8,
+    "median": 1.33,
+    "n": 19
+   },
+   {
     "from": 0,
     "to": 3,
     "at": "01:30",
-    "mult": 1.74,
+    "mult": 1.75,
     "median": 1.25,
     "n": 24
    },
@@ -1474,17 +1488,9 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.71,
-    "median": 0.92,
+    "mult": 1.72,
+    "median": 0.88,
     "n": 77
-   },
-   {
-    "from": 18,
-    "to": 21,
-    "at": "19:30",
-    "mult": 1.66,
-    "median": 0.9,
-    "n": 20
    }
   ]
  },
