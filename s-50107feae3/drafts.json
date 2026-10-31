@@ -3421,13 +3421,141 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-96c2039a",
+    "account": "@규효 공유 · @6pm_culture",
+    "url": "https://www.instagram.com/p/De84oyfmUIs/?srtk=MXF0aHk5dnp1eTBpZw==",
+    "image": null,
+    "head": "음악 용어, 정의 대신 그 용어를 대표하는 곡 하나로 듣기",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-31T20:17+09:00",
+   "key": "663e659c",
+   "by": "claude",
+   "subjects": [
+    "The Verve",
+    "Cher",
+    "Bon Jovi"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "용어 사전 대신, 그 용어가 이름을 얻은 곡 하나씩 — 샘플링·오토튠·키 체인지",
+    "why": "음악 용어 정리 콘텐츠가 돌고 있음 · PLOT 은 용어마다 곡과 사람 이야기를 붙여 해부형으로"
+   },
+   "added": "claude",
+   "added_at": "2026-10-31T20:17+09:00",
+   "corner": "tteolgi",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n음악 용어는 사전보다 곡 하나로 외우는 게 빠릅니다.\n\n샘플링·오토튠·키 체인지는 설명만 들으면 막연한데요, 각 용어마다 '이 곡을 들어 보라'고 할 만한 노래가 있습니다. 더 버브 'Bitter Sweet Symphony'의 현악 루프, 셰어 'Believe'의 꺾이는 목소리, 본 조비 'Livin' On A Prayer'의 마지막 후렴입니다.\n\n셰어의 목소리는 아예 '셰어 이펙트'라는 이름을 얻었고, 더 버브의 루프는 22년 동안 크레딧을 돌려받지 못했습니다. 용어 하나에 곡 하나, 그리고 사람 이야기 하나씩입니다.\n\n#PLOT #음악용어 #더버브 #셰어 #본조비 #샘플링\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793445458/x69lg5tyes0mxk1mihaw.jpg\n제목: 음악 용어,|이 곡 하나면 들린다\n부제: 샘플링 · 오토튠 · 키 체인지\n출처: \n\n[슬라이드]\n형식: 곡\n음원: The Verve - Bitter Sweet Symphony\n소스: \n소제목: 샘플링\n본문: 다른 곡의 녹음 일부를 잘라 새 곡의 재료로 쓰는 것.||이 곡의 현악 루프는 롤링 스톤스 'The Last Time'을 앤드루 올덤 오케스트라가 관현악으로 옮긴 녹음에서 네 마디를 가져온 것입니다. 허락 범위를 두고 소송이 붙어 작곡 크레딧이 믹 재거·키스 리처즈에게 넘어갔고, 2019년에야 리처드 애슈크로프트에게 돌아왔습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Cher - Believe\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793445460/rrysrvyxxguibzk9bych.jpg\n소제목: 오토튠\n본문: 원래는 음정을 티 나지 않게 바로잡는 소프트웨어.||1998년 이 곡의 프로듀서는 오토튠을 극단적인 설정으로 걸어 목소리를 일부러 기계처럼 꺾었습니다. 음반사가 효과를 빼자고 했지만 셰어가 지켜 냈고, 이 소리는 '셰어 이펙트'라는 이름으로 오토튠 설명서에까지 실렸습니다.\n출처: Warner · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Bon Jovi - Livin' On A Prayer\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793445462/si7evcobskazhyqk9yha.jpg\n소제목: 키 체인지(전조)\n본문: 곡 중간에 조를 바꿔 분위기를 끌어올리는 것.||1986년 이 곡은 마지막 후렴에서 E단조에서 G단조로 한 음 반 올라갑니다. 같은 후렴이 갑자기 더 높게 터지는 그 순간이 전조입니다. 리치 샘보라가 토크박스로 연주한 기타 리프도 이 곡에서 함께 들을 수 있습니다.\n출처: Mercury · 소리 공식 MV\n",
+    "caption": "음악 용어는 사전보다 곡 하나로 외우는 게 빠릅니다.\n\n샘플링·오토튠·키 체인지는 설명만 들으면 막연한데요, 각 용어마다 '이 곡을 들어 보라'고 할 만한 노래가 있습니다. 더 버브 'Bitter Sweet Symphony'의 현악 루프, 셰어 'Believe'의 꺾이는 목소리, 본 조비 'Livin' On A Prayer'의 마지막 후렴입니다.\n\n셰어의 목소리는 아예 '셰어 이펙트'라는 이름을 얻었고, 더 버브의 루프는 22년 동안 크레딧을 돌려받지 못했습니다. 용어 하나에 곡 하나, 그리고 사람 이야기 하나씩입니다.\n\n#PLOT #음악용어 #더버브 #셰어 #본조비 #샘플링",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445458/x69lg5tyes0mxk1mihaw.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445458/x69lg5tyes0mxk1mihaw.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "음악 용어,|이 곡 하나면 들린다",
+      "sub": "샘플링 · 오토튠 · 키 체인지"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "말로는 어려운 음악 용어|곡 세 개로 정리",
+      "sub": "샘플링 · 오토튠 · 키 체인지"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "'셰어 이펙트'는|어디서 왔을까",
+      "sub": "곡으로 듣는 음악 용어"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지 사진(리처드 애슈크로프트 녹음실 사진)은 자동으로 채워진 것 — 출처·크레딧 확인, 애매하면 「사진 바꾸기」",
+     "곡 장 세 곳의 후렴 구간이 자동으로 잘 잡혔는지 (Livin' On A Prayer 는 전조가 나오는 마지막 후렴이면 더 좋음)"
+    ],
+    "research": [
+     {
+      "title": "Bitter Sweet Symphony — Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Bitter_Sweet_Symphony"
+     },
+     {
+      "title": "Richard Ashcroft gets Bitter Sweet Symphony royalties — The Line of Best Fit",
+      "link": "https://thelineofbestfit.com/news/latest-news/richard-ashcroft-gets-bitter-sweet-symphony-royalties-from-rolling-stones"
+     },
+     {
+      "title": "Believe (Cher song) — Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Believe_(Cher_song)"
+     },
+     {
+      "title": "How Cher's producers tried to keep her 'Believe' Auto-Tune secret — Yahoo",
+      "link": "https://uk.news.yahoo.com/cher-believe-autotune-061938631.html"
+     },
+     {
+      "title": "Livin' on a Prayer — Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Livin%27_on_a_Prayer"
+     },
+     {
+      "title": "How Bon Jovi created their signature rock anthem — MusicRadar",
+      "link": "https://musicradar.com/artists/when-i-brought-up-the-talk-box-everybody-in-the-band-started-laughing-at-me-but-when-it-actually-worked-it-became-an-integral-part-of-that-hit-song-how-bon-jovi-created-their-signature-rock-anthem-with-a-hit-doctor-and-a-goofy-guitar-effect"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/vryaptt8qkipkysxrycv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/qyt8jtnafhyk70ephwds.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/ptffcj3xo9hp0sqawp2r.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/uyfnwlvrugizdu66ll7v.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445469/pqod44etre6dkzru1bxj.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445471/lojmk5vsmv5ak42sxqmy.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445471/d4wklqmgyztrxqabw1rf.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793445468/vryaptt8qkipkysxrycv.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-10-31T20:17+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793445194/plot_studio/a3e7zbeqitz65qqigfgv.mp4",
+      "2": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793445494/plot_studio/bycrojvkeg6jsfnkdl7l.mp4",
+      "3": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793445494/plot_studio/wn0sbpfyxfohs19n35ru.mp4"
+     },
+     "vkey": "bb24e95fc181",
+     "v": {
+      "A": "4c4d662d",
+      "B": "8a93ba16",
+      "C": "bc06daf5"
+     }
+    }
+   },
+   "corner_name": "나무위키 털기",
+   "corner_no": 26
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 2,
-  "done": 41,
+  "done": 43,
   "goal": 28,
   "corners": [
    {
@@ -3439,7 +3567,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 24,
-    "drafts": 2,
+    "drafts": 3,
     "why": "제작 맡기기로 맡길 때만 (10/20) — 나무위키만 보고 장 수 제한 없이"
    },
    {
@@ -3590,7 +3718,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 31,
+    "done": 33,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -3599,24 +3727,24 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-31T17:37+09:00"
+  "at": "2026-10-31T20:17+09:00"
  },
  "queue": {
-  "next": "2026-10-31T17:39+09:00",
+  "next": "2026-10-31T20:20+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-10-31T16:29+09:00"
+  "last": "2026-10-31T18:04+09:00"
  },
  "slots": {
-  "basis": 274,
+  "basis": 276,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.11,
-    "median": 1.27,
-    "n": 49
+    "mult": 2.1,
+    "median": 1.26,
+    "n": 50
    },
    {
     "from": 21,
@@ -3630,9 +3758,9 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.46,
-    "median": 1.0,
-    "n": 22
+    "mult": 1.59,
+    "median": 1.01,
+    "n": 23
    }
   ],
   "shorts": [
