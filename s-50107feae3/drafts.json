@@ -2067,6 +2067,88 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-8b9d946d",
+    "account": "@규효 요청",
+    "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793428301/plot_studio/tzazwe0cqmedtt24p4tn.mp4",
+    "image": null,
+    "head": "할로윈 새벽 홍대 도즈클럽 앞에서 포착된 양홍원",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-10-31T15:38+09:00",
+   "key": "f64d32c8",
+   "by": "claude",
+   "subjects": [
+    "양홍원"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "할로윈 새벽 홍대 도즈클럽 앞에서 포착된 양홍원 (촬영자 제공 영상) + 닥스후드 [808 Ceremony] 'ADIDAS' 피처링 소식",
+    "why": "규효 맡김 — 촬영자 직접 제공 영상, 전날 발매된 닥스후드 앨범 참여 소식과 함께"
+   },
+   "added": "claude",
+   "added_at": "2026-10-31T15:38+09:00",
+   "corner": "news",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://res.cloudinary.com/dwndhzqod/video/upload/v1793428301/plot_studio/tzazwe0cqmedtt24p4tn.mp4\n구간: 0:00-0:30\n곡: 포착된 양홍원\n아티스트: 할로윈 새벽 홍대에서\n피처링:\n후킹: \n출처: 영상 제공 @d0h.mean",
+    "caption": "10월 31일 할로윈 새벽, 홍대 도즈클럽(DOZ CLUB) 앞에서 양홍원(@yanghongwon)의 모습이 포착됐습니다.\n\n전날인 30일에는 프로듀서 닥스후드(Dakshood)의 협업 앨범 [808 Ceremony]가 발매됐는데요, 국내외 아티스트가 대거 참여한 이 앨범의 8번 트랙 'ADIDAS'에 양홍원이 피처링으로 이름을 올렸습니다.\n\n🎥 영상 제공 @d0h.mean\n\n#PLOT #양홍원 #닥스후드 #808Ceremony #도즈클럽 #홍대",
+    "hooks": {
+     "A": "할로윈 새벽 홍대에서 / 포착된 양홍원",
+     "B": "도즈클럽 앞에 / 모습을 드러낸 양홍원",
+     "C": "할로윈 밤 홍대 거리 / 그 속의 양홍원"
+    },
+    "video": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793428301/plot_studio/tzazwe0cqmedtt24p4tn.mp4",
+     "credit": "영상 제공 @d0h.mean",
+     "range": [
+      0.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "날짜·장소(10/31 새벽 · 홍대 도즈클럽 앞)는 촬영자 제공 정보로만 썼습니다 — 웹 기사로는 확인 안 됨",
+     "영상은 음소거 그대로(말자막·음원 없음) — 30.7초 전체를 0:00-0:30 으로 잡았습니다"
+    ],
+    "research": [
+     {
+      "title": "Apple Music — DAKSHOOD (808 Ceremony · 2026.10.30 · adidas feat. YANGHONGWON)",
+      "link": "https://music.apple.com/cl/artist/dakshood/1199315659"
+     },
+     {
+      "title": "스포티비뉴스 — 양홍원, 9일 만에 SNS에 올린 글 (8번 트랙 '아디다스' 피처링)",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1016516"
+     },
+     {
+      "title": "위키트리 — 양홍원, 30일 올린 사진 (8번 트랙 '아디다스')",
+      "link": "https://www.wikitree.co.kr/articles/1170490"
+     },
+     {
+      "title": "스포츠경향 — Yang Hong-won reposts album cover (Oct 30)",
+      "link": "https://sports.khan.co.kr/en/article/202610301405007/"
+     }
+    ],
+    "thumb": "",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793428735/szlm0xm5nqs7s7fxxkz6.jpg",
+     "key": "@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-10-31T15:39+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2241,14 +2323,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-31T15:36+09:00"
+  "at": "2026-10-31T15:39+09:00"
  },
  "queue": {
-  "next": "2026-10-31T15:38+09:00",
+  "next": "2026-10-31T15:41+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T22:05+09:00"
