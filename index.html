@@ -758,7 +758,7 @@ const W = 1080, H = 1350;
 const F = ASSETS.fonts;                      // eb / sb / nb
 const TEXT_MAX_X = W - 20;                   // 1060
 const BODY_LEFT = 76, BODY_TOP_LIMIT = 200, BODY_BOTTOM_LIMIT = 1195;
-const BODY_MAX_LINES = 8, BODY_HEAD_GAP = 0.25;
+const BODY_MAX_LINES = 8, BODY_HEAD_GAP = 0.25, PARA_GAP = 0.45;   // PARA_GAP 10/31 단락 사이
 const HEADING_SIZE = 67, HEADING_MIN = 40, BODY_SIZE = 36;
 const SLOGAN = "당신의 음악생활을 위한 종합 음악 매거진, PLOT";
 
@@ -1270,7 +1270,7 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize, f
   if (hasBody) {
     for (let para of normBreaks(bodyText).split("\n")) {
       para = para.trim();
-      if (!para) { bodyLines.push(""); continue; }
+      if (!para) { if (bodyLines.length && bodyLines[bodyLines.length - 1] !== "") bodyLines.push(""); continue; }
       bodyLines.push(...wrapSmart(para, "eb", BODY_SIZE, maxW, bodyTr, false));
     }
     if (bodyLines.length > BODY_MAX_LINES) {
@@ -1280,7 +1280,10 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize, f
         ellipsisTracked(bodyLines[bodyLines.length - 1], "eb", BODY_SIZE, maxW, bodyTr);
     }
   }
-  let bodyBlockH = bodyLines.length * bodyAdv;
+  // 10/31 규효 "단락을 나누면 칸이 너무 떨어진다" — 빈 줄은 한 줄의 PARA_GAP 만큼 (generators/card_news.py 와 같게)
+  const advOf = (ln) => ln === "" ? Math.round(bodyAdv * PARA_GAP) : bodyAdv;
+  const blockH = () => { while (bodyLines.length && bodyLines[bodyLines.length - 1] === "") bodyLines.pop(); return bodyLines.reduce((a, ln) => a + advOf(ln), 0); };
+  let bodyBlockH = blockH();
 
   let headLines = [], hSize = 0, headTr = 0, headAdv = 0, headingH = 0;
   if (hasHeading) {
@@ -1304,7 +1307,7 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize, f
   const avail = BODY_BOTTOM_LIMIT - BODY_TOP_LIMIT;
   while (bodyLines.length && totalH > avail) {
     bodyLines.pop();
-    bodyBlockH = bodyLines.length * bodyAdv;
+    bodyBlockH = blockH();
     gap = (headLines.length && bodyLines.length) ? Math.round(bodyAdv * BODY_HEAD_GAP) : 0;
     totalH = headingH + gap + bodyBlockH;
   }
@@ -1318,8 +1321,8 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize, f
       drawTracked(ctx, BODY_LEFT, blockTop + k * headAdv, ln, "eb", hSize, "#ffffff", headTr));
     let y = blockTop + headingH + gap;
     for (const line of bodyLines) {
-      drawTracked(ctx, BODY_LEFT, y, line, "eb", BODY_SIZE, "#ffffff", bodyTr);
-      y += bodyAdv;
+      if (line) drawTracked(ctx, BODY_LEFT, y, line, "eb", BODY_SIZE, "#ffffff", bodyTr);
+      y += advOf(line);
     }
   } else {
     /* 글이 아직 없는 장 — 눌러서 쓰기 시작할 자리를 열어둔다 */
