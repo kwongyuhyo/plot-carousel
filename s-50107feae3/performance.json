@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31 15:05 KST",
+ "generated_at": "2026-10-31 19:04 KST",
  "weeks": [
   {
    "week": "2026-W36",
@@ -1676,11 +1676,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-30 22:04 KST"
+  "daily": "2026-10-31 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-31T14:33:43+09:00",
+  "fetched_at": "2026-10-31T19:04:45+09:00",
   "posts": [
+   {
+    "t": "2026-10-31T18:04+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "리드머가 창모(@changmo_)의 정규 3집 [MONOLITH]에 3."
+   },
+   {
+    "t": "2026-10-31T17:59+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "\"서울은 여전히 서울이고, 서울시장은 나야\""
+   },
+   {
+    "t": "2026-10-31T16:29+09:00",
+    "type": "VIDEO",
+    "head": "PLOT이 촬영자에게 직접 제공받은 영상입니다."
+   },
    {
     "t": "2026-10-30T22:04+09:00",
     "type": "VIDEO",
@@ -2115,10 +2130,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 254,
-  "posted": 70,
-  "posts": 93,
-  "rate": 0.28,
+  "drafts": 263,
+  "posted": 72,
+  "posts": 96,
+  "rate": 0.27,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
   "lanes": {
@@ -2128,17 +2143,17 @@
     "mult": null
    },
    "재미": {
-    "drafts": 23,
+    "drafts": 25,
     "posted": 1,
     "mult": 2.05
    },
    "정보": {
-    "drafts": 163,
-    "posted": 59,
+    "drafts": 169,
+    "posted": 61,
     "mult": 0.99
    },
    "클립": {
-    "drafts": 38,
+    "drafts": 39,
     "posted": 4,
     "mult": 0.96
    },
@@ -2175,12 +2190,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 143,
-    "posted": 48,
+    "drafts": 147,
+    "posted": 50,
     "mult": 1.05
    },
    "mal": {
-    "drafts": 39,
+    "drafts": 40,
     "posted": 4,
     "mult": 0.96
    },
@@ -2195,12 +2210,12 @@
     "mult": null
    },
    "tteolgi": {
-    "drafts": 9,
+    "drafts": 10,
     "posted": 2,
     "mult": 0.9
    },
    "followup": {
-    "drafts": 17,
+    "drafts": 19,
     "posted": 7,
     "mult": 0.93
    },
@@ -2225,7 +2240,7 @@
     "mult": 0.78
    },
    "meet": {
-    "drafts": 4,
+    "drafts": 5,
     "posted": 2,
     "mult": null
    },
@@ -2252,19 +2267,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-29",
-    "lane": "정보",
-    "who": "뉴진스",
-    "repack": false,
-    "grade": "A",
-    "corner": "anniv",
-    "key": "18a9fe77",
-    "posted": "DfHgTR2EaR9",
-    "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다.",
-    "url": "https://www.instagram.com/reel/DfHgTR2EaR9/",
-    "mult": null
-   },
    {
     "day": "2026-10-29",
     "lane": "정보",
@@ -2325,9 +2327,9 @@
     "grade": "A",
     "corner": "news",
     "key": "5399dcdd",
-    "posted": "DfHpbKSjcUQ",
-    "head": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후",
-    "url": "https://www.instagram.com/reel/DfHpbKSjcUQ/",
+    "posted": "DfJyJp7FOdu",
+    "head": "\"서울은 여전히 서울이고, 서울시장은 나야\"",
+    "url": "https://www.instagram.com/p/DfJyJp7FOdu/",
     "mult": null
    },
    {
@@ -2354,6 +2356,19 @@
     "posted": "DfHaJc-FAoA",
     "head": "고 신해철에게 은관문화훈장이 추서됐습니다.",
     "url": "https://www.instagram.com/p/DfHaJc-FAoA/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-31",
+    "lane": "정보",
+    "who": "창모",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "9a04a017",
+    "posted": "DfJyt4oFFpf",
+    "head": "리드머가 창모(@changmo_)의 정규 3집 [MONOLITH]에 3.5점을 매겼습니다.",
+    "url": "https://www.instagram.com/p/DfJyt4oFFpf/",
     "mult": null
    }
   ]
