@@ -3835,12 +3835,194 @@
    },
    "corner_name": "나무위키 털기",
    "corner_no": 27
+  },
+  {
+   "source": {
+    "id": "claude:ord-1d54c7aa",
+    "account": "@규효 공유 · @hodu.archive",
+    "url": "https://www.instagram.com/p/DfKnVhPmFm-/?mdxt=MWpqc3didXZzazh1MA==",
+    "image": null,
+    "head": "위켄드 'Hong Kong' 아시아 한정 발매 — 왕페이 샘플, 커버는 〈중경삼림〉 촬영감독 도일의 사진",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-01T03:29+09:00",
+   "key": "570ff3ce",
+   "by": "claude",
+   "subjects": [
+    "위켄드"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "왕페이 '季候風'을 그대로 얹은 위켄드 'Hong Kong' 발매 — 커버는 〈중경삼림〉 촬영감독 크리스토퍼 도일의 사진",
+    "why": "규효 맡기기 · 왕페이·왕가위·도일로 이어지는 연결고리가 한 곡에 겹친다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-01T03:29+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n위켄드가 신곡 'Hong Kong'을 아시아 지역 한정으로 발매했습니다.\n\n지난 24일 홍콩 카이탁 스타디움 공연에서 처음 들려준 곡인데요, 왕페이가 1993년 발표한 광둥어 노래 '季候風(Monsoon)'의 반주와 목소리를 그대로 가져와 그 위에 노래를 얹었습니다.\n\n싱글 커버에는 크리스토퍼 도일이 개인적으로 간직해 온 홍콩 사진이 쓰였습니다. 도일은 왕가위 감독의 〈중경삼림〉을 찍은 촬영감독이고, 그 영화에 출연한 배우가 바로 왕페이입니다.\n왕페이의 목소리와 〈중경삼림〉을 찍은 눈이 위켄드의 'Hong Kong' 한 곡에 함께 담긴 셈입니다.\n\n#PLOT #위켄드 #TheWeeknd #왕페이 #중경삼림 #크리스토퍼도일\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793471370/qwe4yjlcfuihllfetron.jpg\n제목: 위켄드, 왕페이 노래로|홍콩 신곡 발매\n부제: 커버는 〈중경삼림〉 촬영감독 크리스토퍼 도일의 사진\n출처: XO / Republic Records\n",
+    "caption": "위켄드가 신곡 'Hong Kong'을 아시아 지역 한정으로 발매했습니다.\n\n지난 24일 홍콩 카이탁 스타디움 공연에서 처음 들려준 곡인데요, 왕페이가 1993년 발표한 광둥어 노래 '季候風(Monsoon)'의 반주와 목소리를 그대로 가져와 그 위에 노래를 얹었습니다.\n\n싱글 커버에는 크리스토퍼 도일이 개인적으로 간직해 온 홍콩 사진이 쓰였습니다. 도일은 왕가위 감독의 〈중경삼림〉을 찍은 촬영감독이고, 그 영화에 출연한 배우가 바로 왕페이입니다.\n왕페이의 목소리와 〈중경삼림〉을 찍은 눈이 위켄드의 'Hong Kong' 한 곡에 함께 담긴 셈입니다.\n\n#PLOT #위켄드 #TheWeeknd #왕페이 #중경삼림 #크리스토퍼도일",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471370/qwe4yjlcfuihllfetron.jpg",
+      "credit": "XO / Republic Records",
+      "from": "https://hiphop-n-more.com/wp-content/uploads/2026/10/The-Weeknd-Hong-Kong-scaled.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471373/eyljvsa0d8krleq9aqss.jpg",
+      "credit": "XO / Republic Records",
+      "from": "https://themusicuniverse.com/wp-content/uploads/2026/10/weekndhongkong.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471370/qwe4yjlcfuihllfetron.jpg",
+      "credit": "XO / Republic Records",
+      "from": "https://hiphop-n-more.com/wp-content/uploads/2026/10/The-Weeknd-Hong-Kong-scaled.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471373/eyljvsa0d8krleq9aqss.jpg",
+      "credit": "XO / Republic Records",
+      "from": "https://themusicuniverse.com/wp-content/uploads/2026/10/weekndhongkong.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "위켄드, 왕페이 노래로|홍콩 신곡 발매",
+      "sub": "커버는 〈중경삼림〉 촬영감독 크리스토퍼 도일의 사진"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "중경삼림 촬영감독 사진,|위켄드 신곡 커버로",
+      "sub": "왕페이 '季候風' 샘플 'Hong Kong'"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "홍콩 공연에서 부른 곡,|위켄드가 정식 발매",
+      "sub": "아시아 지역 한정"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 영상(자동 생성 음원)에 자막이 없어 1:00-1:40 에 왕페이 목소리가 나오는지 확인 못 함 — 후킹 A('왕페이 목소리 위에서')가 이 구간에 맞는지 들어 보고 맞춰 주세요. 발매 범위는 위키백과는 '홍콩 한정', 기사 두 곳은 '아시아(동·동남아시아)'라고 적었습니다",
+     "클립 위험: 낮음 — The Weeknd 공식 채널 · 후렴 도구가 막혀 구간 1:00-1:40 은 추정, 왕페이 목소리 나오는 구간으로 맞춰 주세요",
+     "발매 날짜(10/31 추정)와 '아시아 한정' 범위 — 기사는 '동·동남아시아'로만 적음. 한국 스트리밍에서 들리는지 확인"
+    ],
+    "research": [
+     {
+      "title": "Hong Kong (The Weeknd song) — Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Hong_Kong_(The_Weeknd_song)"
+     },
+     {
+      "title": "HipHop-N-More — The Weeknd Releases New Asia Exclusive Song 'Hong Kong'",
+      "link": "https://hiphop-n-more.com/2026/10/the-weeknd-releases-new-asia-exclusive-song-hong-kong-listen/"
+     },
+     {
+      "title": "The Music Universe — The Weeknd drops Asia-exclusive song",
+      "link": "https://themusicuniverse.com/the-weeknd-drops-asia-exclusive-song/"
+     },
+     {
+      "title": "The Weeknd — Hong Kong (feat. 王菲季候風) 공식 음원",
+      "link": "https://www.youtube.com/watch?v=3QZOazpGIQc"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471380/pcdnq6qopcatzctb2i8z.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471380/knjyqnn163rbun1qatb1.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471383/izgz2ehljxmalwrnqtlc.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471382/sstdqyskrhavwesfr8ax.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471380/pcdnq6qopcatzctb2i8z.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-01T03:29+09:00",
+     "v": {
+      "A": "9d6050d1",
+      "B": "6930fbfd",
+      "C": "d0927f7c"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=3QZOazpGIQc\n구간: 1:00-1:40\n곡: 노래하는 위켄드\n아티스트: 왕페이 목소리 위에서\n피처링:\n후킹: \n출처: The Weeknd\n음원: The Weeknd - Hong Kong\n가사: 자동",
+    "caption": "위켄드가 신곡 'Hong Kong'을 아시아 지역 한정으로 발매했습니다.\n\n지난 24일 홍콩 카이탁 스타디움 공연에서 처음 공개한 곡인데요, 왕페이의 1993년 광둥어 노래 '季候風(Monsoon)'의 반주와 목소리를 그대로 가져왔습니다.\n\n싱글 커버는 왕가위 감독의 〈중경삼림〉을 찍은 촬영감독 크리스토퍼 도일이 간직해 온 홍콩 사진입니다. 왕페이가 출연한 그 영화의 홍콩이 30여 년 만에 위켄드의 노래로 다시 이어진 셈입니다.\n\n#PLOT #위켄드 #TheWeeknd #왕페이 #중경삼림",
+    "hooks": {
+     "A": "왕페이 목소리 위에서 / 노래하는 위켄드",
+     "B": "1993년 광둥어 노래가 / 위켄드 신곡이 됐다",
+     "C": "홍콩의 밤을 닮은 / 위켄드의 'Hong Kong'"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=3QZOazpGIQc",
+     "credit": "The Weeknd",
+     "range": [
+      60.0,
+      100.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 영상(자동 생성 음원)에 자막이 없어 1:00-1:40 에 왕페이 목소리가 나오는지 확인 못 함 — 후킹 A('왕페이 목소리 위에서')가 이 구간에 맞는지 들어 보고 맞춰 주세요. 발매 범위는 위키백과는 '홍콩 한정', 기사 두 곳은 '아시아(동·동남아시아)'라고 적었습니다",
+     "클립 위험: 낮음 — The Weeknd 공식 채널 · 후렴 도구가 막혀 구간 1:00-1:40 은 추정, 왕페이 목소리 나오는 구간으로 맞춰 주세요",
+     "발매 날짜(10/31 추정)와 '아시아 한정' 범위 — 기사는 '동·동남아시아'로만 적음. 한국 스트리밍에서 들리는지 확인"
+    ],
+    "research": [
+     {
+      "title": "Hong Kong (The Weeknd song) — Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Hong_Kong_(The_Weeknd_song)"
+     },
+     {
+      "title": "HipHop-N-More — The Weeknd Releases New Asia Exclusive Song 'Hong Kong'",
+      "link": "https://hiphop-n-more.com/2026/10/the-weeknd-releases-new-asia-exclusive-song-hong-kong-listen/"
+     },
+     {
+      "title": "The Music Universe — The Weeknd drops Asia-exclusive song",
+      "link": "https://themusicuniverse.com/the-weeknd-drops-asia-exclusive-song/"
+     },
+     {
+      "title": "The Weeknd — Hong Kong (feat. 王菲季候風) 공식 음원",
+      "link": "https://www.youtube.com/watch?v=3QZOazpGIQc"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/3QZOazpGIQc/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793471386/acpofh7xrm23znupxrma.jpg",
+     "key": "3QZOazpGIQc@60.0"
+    },
+    "px": {
+     "vid": "3QZOazpGIQc",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793471466/plot_studio/vmg60ypwyxekbdklgb9n.mp4",
+     "off": 15.0,
+     "end": 145.0,
+     "full": 217.0
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-11-01T03:31+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
-  "days_left": 2,
+  "days_left": 1,
   "done": 44,
   "goal": 28,
   "corners": [
@@ -3898,7 +4080,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 4,
+    "need_today": 7,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -3910,7 +4092,7 @@
     "weekly": 6,
     "done": 2,
     "left": 4,
-    "need_today": 2,
+    "need_today": 4,
     "day": null,
     "next_no": 6,
     "drafts": 3,
@@ -3922,7 +4104,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -3946,7 +4128,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -4009,14 +4191,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 8,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-31T22:28+09:00"
+  "at": "2026-11-01T03:31+09:00"
  },
  "queue": {
-  "next": "2026-10-31T22:31+09:00",
+  "next": "2026-11-01T08:00+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-31T20:48+09:00"
@@ -4028,7 +4210,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.15,
+    "mult": 2.17,
     "median": 1.29,
     "n": 50
    },
@@ -4070,7 +4252,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.6,
+    "mult": 1.61,
     "median": 0.86,
     "n": 21
    }
