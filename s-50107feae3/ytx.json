@@ -1,8 +1,30 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31T11:28+09:00",
+ "generated_at": "2026-10-31T11:39+09:00",
  "ready": true,
  "items": [
+  {
+   "k": "175c5c0f",
+   "status": "uploaded",
+   "at": "2026-10-31T11:39:26+09:00",
+   "head": "리센느(@rescene_official)가 미니 4집 [PULSE]의 하이라이트 메들리를 공개했습니다.",
+   "permalink": "https://www.instagram.com/reel/DfCObgyPHTf/",
+   "title": "리센느(@rescene_official)가 미니 4집 [PULSE]의 하이라이트 메들리를 공개했습니다. #Shorts",
+   "url": "https://youtu.be/VyFG0EzMfMk",
+   "error": "",
+   "risky": false
+  },
+  {
+   "k": "ddc7717e",
+   "status": "failed",
+   "at": "2026-10-31T11:39:20+09:00",
+   "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다.",
+   "permalink": "https://www.instagram.com/reel/DfHgTR2EaR9/",
+   "title": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다. #Shorts",
+   "url": "",
+   "error": "not video",
+   "risky": true
+  },
   {
    "k": "6be484b3",
    "status": "skipped",
@@ -21,28 +43,6 @@
    "head": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후보에 올랐습니다.",
    "permalink": "https://www.instagram.com/reel/DfHpbKSjcUQ/",
    "title": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후보에 올랐습니다. #Shorts",
-   "url": "",
-   "error": "",
-   "risky": false
-  },
-  {
-   "k": "ddc7717e",
-   "status": "asked",
-   "at": "2026-10-30T20:54:29+09:00",
-   "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다.",
-   "permalink": "https://www.instagram.com/reel/DfHgTR2EaR9/",
-   "title": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다. #Shorts",
-   "url": "",
-   "error": "",
-   "risky": true
-  },
-  {
-   "k": "175c5c0f",
-   "status": "asked",
-   "at": "2026-10-28T19:57:08+09:00",
-   "head": "리센느(@rescene_official)가 미니 4집 [PULSE]의 하이라이트 메들리를 공개했습니다.",
-   "permalink": "https://www.instagram.com/reel/DfCObgyPHTf/",
-   "title": "리센느(@rescene_official)가 미니 4집 [PULSE]의 하이라이트 메들리를 공개했습니다. #Shorts",
    "url": "",
    "error": "",
    "risky": false
