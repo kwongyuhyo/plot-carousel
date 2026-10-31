@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31 21:17 KST",
+ "generated_at": "2026-11-01 00:44 KST",
  "cards": [
   {
    "id": "05fcf0f0",
@@ -222,6 +222,60 @@
    },
    "made_at": "2026-10-31T02:58+09:00",
    "expires": "2026-11-03T02:58+09:00"
+  },
+  {
+   "id": "8bbc7d6a",
+   "key": "hit:DfJyJp7FOdu",
+   "kind": "hit",
+   "kind_label": "PLOT 히트",
+   "who": [
+    "시스템서울"
+   ],
+   "origin": {
+    "head": "\"서울은 여전히 서울이고, 서울시장은 나야\"",
+    "mult": 23.5,
+    "url": "https://www.instagram.com/p/DfJyJp7FOdu/",
+    "at": "2026-10-31T17:59+09:00",
+    "media": "CAROUSEL_ALBUM"
+   },
+   "evidence": [],
+   "news": [],
+   "plans": [
+    {
+     "format": "그 후",
+     "corner": "followup",
+     "title": "'너'가 시장 피드에 닿기까지",
+     "angle": "2025년 5월 [SS-POP 1] 수록, [SS-POP 2] 이후의 재조명과 바이럴, 시장 피드까지를 시간순으로 따라갑니다.",
+     "why": "SNS에서 퍼진 곡이 서울시장의 게시물에까지 닿았습니다.",
+     "check": "[SS-POP 2] 발매일, 바이럴 시작 시점, 게시물 업로드일 확인."
+    },
+    {
+     "format": "오늘의 노래",
+     "corner": "song",
+     "title": "오늘의 노래: ycs의 '너'",
+     "angle": "시스템서울 멤버 ycs가 부른 '너' 한 곡을 숏폼으로 소개합니다.",
+     "why": "서울시장 게시물의 배경음악으로 쓰여 지금 가장 궁금한 곡입니다.",
+     "check": "공식 음원 링크와 영상에 쓸 음원의 사용 범위 확인."
+    },
+    {
+     "format": "반응 모음",
+     "corner": "followup",
+     "title": "시장의 '너', 씬은 뭐라 했나",
+     "angle": "시장 게시물과 밈 '서울은 여전히 서울이고 나는 여전히 나야'를 둘러싼 커뮤니티·동료의 반응을 모읍니다.",
+     "why": "밈과 곡이 함께 언급되던 흐름에 시장 피드가 더해졌습니다.",
+     "check": "자료에 반응이 없음. 실제 커뮤니티 반응과 멤버 입장 확인."
+    }
+   ],
+   "score": 9.0,
+   "preempt": {
+    "score": 0,
+    "mags_3d": 2,
+    "plot_days": 8,
+    "hot": false,
+    "line": "다른 매거진 3일 안 2곳(hhp_mag, hiptake_) · PLOT 8일 전 다룸"
+   },
+   "made_at": "2026-11-01T00:44+09:00",
+   "expires": "2026-11-04T00:44+09:00"
   },
   {
    "id": "f036183b",
