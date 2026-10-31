@@ -802,14 +802,180 @@
      "full": 610.0
     },
     "rendered": {
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793408915/plot_studio/vdhhmlzpmd7ynhwkzr8z.mp4",
-     "at": "2026-10-31T10:08+09:00",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793414905/plot_studio/pwj4edjzvoosmatqwwzl.mp4",
+     "at": "2026-10-31T11:48+09:00",
      "file": "Jon_PeuLaIn_YeopESeo_MalI_An_DeulLyeossDe_Feature_no_lyrics__cta.mp4",
-     "v": "0f122bf8"
-    },
-    "render": {
-     "status": "queued",
-     "at": "2026-10-31T11:42+09:00"
+     "subs": {
+      "id": "st:1793414907938-ea6cda28",
+      "segs": [
+       {
+        "start": 0.64,
+        "end": 1.47,
+        "text": "You've sang a duet"
+       },
+       {
+        "start": 1.47,
+        "end": 2.34,
+        "text": "with John Prine"
+       },
+       {
+        "start": 2.34,
+        "end": 2.96,
+        "text": "before"
+       },
+       {
+        "start": 2.96,
+        "end": 3.5,
+        "text": "what was that"
+       },
+       {
+        "start": 3.5,
+        "end": 4.4,
+        "text": "experience like?"
+       },
+       {
+        "start": 4.4,
+        "end": 5.44,
+        "text": "I went to Nashville"
+       },
+       {
+        "start": 5.44,
+        "end": 6.1,
+        "text": "to see him play at"
+       },
+       {
+        "start": 6.1,
+        "end": 6.88,
+        "text": "the Grand Ole Opry"
+       },
+       {
+        "start": 6.88,
+        "end": 7.79,
+        "text": "on New Year's Eve"
+       },
+       {
+        "start": 7.79,
+        "end": 8.6,
+        "text": "but I was also"
+       },
+       {
+        "start": 8.6,
+        "end": 9.3,
+        "text": "finishing a"
+       },
+       {
+        "start": 9.3,
+        "end": 10.44,
+        "text": "Nashville EP that"
+       },
+       {
+        "start": 10.44,
+        "end": 12.14,
+        "text": "his friend Ferg was"
+       },
+       {
+        "start": 12.14,
+        "end": 13.53,
+        "text": "making with me over"
+       },
+       {
+        "start": 13.53,
+        "end": 14.05,
+        "text": "the years"
+       },
+       {
+        "start": 14.05,
+        "end": 14.86,
+        "text": "and we last-minute"
+       },
+       {
+        "start": 14.86,
+        "end": 15.88,
+        "text": "invited him over to"
+       },
+       {
+        "start": 15.88,
+        "end": 17.43,
+        "text": "do a version of the"
+       },
+       {
+        "start": 17.43,
+        "end": 18.9,
+        "text": "song that I would"
+       },
+       {
+        "start": 18.9,
+        "end": 19.9,
+        "text": "perform"
+       },
+       {
+        "start": 20.36,
+        "end": 20.78,
+        "text": "couple of days"
+       },
+       {
+        "start": 20.78,
+        "end": 21.68,
+        "text": "later, and it"
+       },
+       {
+        "start": 22.58,
+        "end": 23.48,
+        "text": "was heavy, it"
+       },
+       {
+        "start": 24.1,
+        "end": 24.8,
+        "text": "so nice and"
+       },
+       {
+        "start": 24.8,
+        "end": 25.16,
+        "text": "friendly"
+       },
+       {
+        "start": 25.16,
+        "end": 25.66,
+        "text": "he was telling me"
+       },
+       {
+        "start": 25.66,
+        "end": 26.56,
+        "text": "stories, I could"
+       },
+       {
+        "start": 26.56,
+        "end": 27.41,
+        "text": "I could hardly hear"
+       },
+       {
+        "start": 27.41,
+        "end": 28.08,
+        "text": "him in the moment"
+       },
+       {
+        "start": 28.08,
+        "end": 28.5,
+        "text": "because I was just"
+       },
+       {
+        "start": 28.5,
+        "end": 28.86,
+        "text": "like, I can't"
+       },
+       {
+        "start": 28.86,
+        "end": 29.44,
+        "text": "believe he's here"
+       },
+       {
+        "start": 29.44,
+        "end": 30.04,
+        "text": "like"
+       }
+      ]
+     },
+     "v": "35994066"
     }
    },
    "pick": {
@@ -1431,56 +1597,48 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-10-31T11:43+09:00"
+  "at": "2026-10-31T11:48+09:00"
  },
  "queue": {
-  "next": "2026-10-31T11:45+09:00",
+  "next": "2026-10-31T11:50+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-10-30T22:05+09:00"
  },
  "slots": {
-  "basis": 267,
+  "basis": 274,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.59,
-    "median": 0.92,
-    "n": 45
+    "mult": 2.1,
+    "median": 1.27,
+    "n": 49
    },
    {
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.42,
-    "median": 0.44,
-    "n": 34
+    "mult": 1.8,
+    "median": 0.95,
+    "n": 35
    },
    {
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.01,
-    "median": 0.47,
-    "n": 21
+    "mult": 1.46,
+    "median": 1.0,
+    "n": 22
    }
   ],
   "shorts": [
    {
-    "from": 18,
-    "to": 21,
-    "at": "19:30",
-    "mult": 1.8,
-    "median": 1.33,
-    "n": 19
-   },
-   {
     "from": 0,
     "to": 3,
     "at": "01:30",
-    "mult": 1.75,
+    "mult": 1.74,
     "median": 1.25,
     "n": 24
    },
@@ -1488,9 +1646,17 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.72,
-    "median": 0.88,
+    "mult": 1.71,
+    "median": 0.92,
     "n": 77
+   },
+   {
+    "from": 18,
+    "to": 21,
+    "at": "19:30",
+    "mult": 1.66,
+    "median": 0.9,
+    "n": 20
    }
   ]
  },
