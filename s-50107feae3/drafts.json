@@ -2160,6 +2160,70 @@
    },
    "corner_name": "그 말",
    "corner_no": 6
+  },
+  {
+   "source": {
+    "id": "claude:noback-guitarshow-live",
+    "account": "PLOT 직접 촬영",
+    "url": "https://www.instagram.com/noback_kr/",
+    "image": null,
+    "head": "기타쇼 낙원 2026 노백 공연 직접 촬영",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-01T16:44+09:00",
+   "key": "d95ee6b4",
+   "by": "claude",
+   "subjects": [
+    "노백"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "기타쇼 낙원 2026 노백 무대 — PLOT 직접 촬영 라이브 아카이브",
+    "why": "규효 맡김 · 11/1 직접 촬영 (16:15~16:26)"
+   },
+   "added": "claude",
+   "added_at": "2026-11-01T16:44+09:00",
+   "corner": "news",
+   "shorts": {
+    "form": "[영상]\n카테고리: Live Archive\nURL: https://res.cloudinary.com/dwndhzqod/video/upload/v1793519045/hvhitakmoca0e514fspl.mp4\n구간: 0:00-0:28\n곡: 우산 아래서 들은 노백\n아티스트: 비 오는 기타쇼 낙원\n피처링:\n후킹: \n출처: 촬영 PLOT",
+    "caption": "비 내리던 낙원상가, 우산 사이로 울린 NOBACK(@noback_kr)의 라이브.\n\n11월 1일 '기타쇼 낙원 2026' 무대에 오른 3인조 록밴드 노백의 현장을 PLOT이 직접 담았습니다. 빗소리에도 자리를 지킨 관객들 앞에서, 노백은 끝까지 볼륨을 내리지 않았습니다.\n\n📍 기타쇼 낙원 2026 · 낙원상가\n📹 PLOT 직접 촬영\n\n#PLOT #LiveArchive #노백 #NOBACK #기타쇼낙원 #낙원상가 #밴드 #록밴드 #라이브",
+    "hooks": {
+     "A": "비 오는 기타쇼 낙원 / 우산 아래서 들은 노백",
+     "B": "빗속에서도 볼륨을 내리지 않은 / 3인조 록밴드 노백"
+    },
+    "video": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793519045/hvhitakmoca0e514fspl.mp4",
+     "credit": "촬영 PLOT",
+     "range": [
+      0.0,
+      28.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "무대에서 부른 곡 제목을 알면 캡션에 한 줄 (지금은 곡명 없이)",
+     "보컬·베이스 멤버 이름(김주빈 추정)은 확인 전이라 넣지 않음"
+    ],
+    "research": [],
+    "thumb": "",
+    "still": {
+     "url": "https://i.ibb.co/svHhLHnV/84d91912f6d9.jpg",
+     "key": "@0.0"
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-11-01T16:44+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2334,14 +2398,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-01T16:39+09:00"
+  "at": "2026-11-01T16:44+09:00"
  },
  "queue": {
-  "next": "2026-11-01T16:41+09:00",
+  "next": "2026-11-01T16:46+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-01T14:00+09:00"
