@@ -2638,6 +2638,109 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-26fba3c9",
+    "account": "@규효 공유 · @cloud__pages",
+    "url": "https://www.instagram.com/p/DfL0ei9RLvY/?psln=MTE0dHdwMXJnZnYwMg==",
+    "image": null,
+    "head": "'33세 음악 정지설'의 출처, 2015년 스포티파이 직원의 블로그 분석을 뜯어본다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-01T23:33+09:00",
+   "key": "a735602f",
+   "by": "claude",
+   "subjects": [],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "다시 도는 '33세부터 새 음악을 덜 듣는다' — 그 숫자가 나온 2015년 스포티파이 데이터 분석을 직접 뜯어본다",
+    "why": "다른 매거진들이 연달아 올리는 화제인데, 원분석의 내용(10대 정점·남녀 차이·부모 효과)과 한계까지 짚으면 해부형이 된다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-01T23:33+09:00",
+   "corner": "tteolgi",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n'33세가 되면 새 음악을 덜 듣는다'는 말은 11년 전 스포티파이(@spotifykr) 데이터에서 나왔습니다.\n\n2015년 4월, 당시 스포티파이에서 취향 프로필을 맡던 아제이 칼리아가 미국 이용자들의 청취 기록을 나이별로 분석해 개인 블로그에 올렸는데요, 10대에 가장 높던 인기곡 비중이 20대 내내 줄다가 30대 초반에 자리를 잡는다는 결과였습니다. 이 그래프가 NME·기즈모도 등의 보도를 거치며 '33세'라는 숫자로 퍼졌습니다.\n\n남성은 여성보다 훨씬 빠르게 인기곡에서 멀어졌고, 부모가 되는 건 취향 면에서 네 살을 더 먹는 것과 비슷했다고 합니다. 새 음악을 끊는 나이라기보다, 듣던 음악이 내 음악으로 굳어지는 나이에 가깝습니다.\n\n#PLOT #스포티파이 #음악취향 #아제이칼리아 #플레이리스트\n\n[커버]\n소스: \n제목: 33세부터 새 음악을|덜 듣는다는 그 말\n부제: 11년 전 스포티파이 데이터에서 나온 숫자\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 출처\n소스: \n소제목: 어디서 나온 숫자인가\n본문: 2015년 4월, 당시 스포티파이에서 취향 프로필을 맡던 아제이 칼리아가 개인 블로그 Skynet & Ebert 에 올린 분석입니다.||미국 스포티파이 이용자의 2014년 청취 기록에 에코 네스트의 아티스트 인기 순위를 겹쳐, 사람마다 듣는 음악이 **얼마나 대중적인지**를 나이별로 비교했습니다.||출처: Skynet & Ebert\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 결과\n소스: \n소제목: 10대에 정점, 30대 초반에 굳는다\n본문: 인기곡 비중은 10대에 가장 높고, 20대 내내 꾸준히 줄다가 30대 초반에 자리를 잡습니다.||칼리아는 30대 중반이면 **'될 사람이 된다'**고 적었는데요, 이 그래프가 당시 보도에서 '33세'라는 숫자로 퍼졌습니다.||출처: Skynet & Ebert · NME · Gizmodo\n출처: \n\n[슬라이드]\n형식: 자료\n말한이: 2015년 보도\n소스: https://i.ibb.co/whQwrZCN/a64003015b0e.jpg\n소제목: \n본문: \n출처: NME\n\n[슬라이드]\n형식: 정리\n말한이: 결과\n소스: \n소제목: 남자는 더 빨리, 부모는 네 살 더\n본문: 여성은 모든 나이에서 남성보다 대중적인 음악을 들었고, 남성은 10대에서 30대 초반까지 훨씬 빠르게 인기곡에서 멀어졌습니다.||부모가 되는 것은 음악 취향 면에서 **네 살을 더 먹는 것**과 비슷했습니다.||다만 미국 스포티파이 이용자만 본 블로그 분석이라, 33세는 모두에게 맞는 기준이 아닙니다.||출처: Skynet & Ebert\n출처:\n",
+    "caption": "'33세가 되면 새 음악을 덜 듣는다'는 말은 11년 전 스포티파이(@spotifykr) 데이터에서 나왔습니다.\n\n2015년 4월, 당시 스포티파이에서 취향 프로필을 맡던 아제이 칼리아가 미국 이용자들의 청취 기록을 나이별로 분석해 개인 블로그에 올렸는데요, 10대에 가장 높던 인기곡 비중이 20대 내내 줄다가 30대 초반에 자리를 잡는다는 결과였습니다. 이 그래프가 NME·기즈모도 등의 보도를 거치며 '33세'라는 숫자로 퍼졌습니다.\n\n남성은 여성보다 훨씬 빠르게 인기곡에서 멀어졌고, 부모가 되는 건 취향 면에서 네 살을 더 먹는 것과 비슷했다고 합니다. 새 음악을 끊는 나이라기보다, 듣던 음악이 내 음악으로 굳어지는 나이에 가깝습니다.\n\n#PLOT #스포티파이 #음악취향 #아제이칼리아 #플레이리스트",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "33세부터 새 음악을|덜 듣는다는 그 말",
+      "sub": "11년 전 스포티파이 데이터에서 나온 숫자"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "'33세 음악 정지설',|출처는 스포티파이",
+      "sub": "2015년 아제이 칼리아의 분석"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "플레이리스트가 멈추는|나이는 정말 33세?",
+      "sub": "원분석을 뜯어봤습니다"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사실은 원문·보도 4곳과 맞음. 다만 NME 캡처 장(4번째)에 게임 광고 배너(Once Human)가 같이 찍혀 있음 — 광고 없는 캡처로 바꿀지 확인",
+     "'33세'는 원문 본문엔 없고 그래프와 당시 보도(NME·기즈모도·CSM)에서 나온 숫자라 캡션에 '보도로 퍼졌다'고 적음 — 이 표현으로 괜찮은지",
+     "숏폼은 비움 — 이 분석을 다룬 원본 유튜브 영상(당사자·공식)을 찾지 않았고 사람 장면이 없는 소재라 캐러셀만 씀",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "Skynet & Ebert — 'Music was better back then': When do we stop keeping up with popular music? (Ajay Kalia, 2015.4.22)",
+      "link": "https://skynetandebert.com/2015/04/22/music-was-better-back-then-when-do-we-stop-keeping-up-with-popular-music/"
+     },
+     {
+      "title": "NME — People stop listening to new music at 33, study shows (2015.5.1)",
+      "link": "https://www.nme.com/news/music/various-artists-1084-1208596"
+     },
+     {
+      "title": "Gizmodo — Spotify data proves you're not as cool as you used to be (2015.4.27)",
+      "link": "https://gizmodo.com/spotify-data-proves-you-re-not-as-cool-as-you-used-to-b-1700557478"
+     },
+     {
+      "title": "Christian Science Monitor — At what age do you stop listening to popular music? (2015.5.12)",
+      "link": "https://www.csmonitor.com/The-Culture/Music/2015/0512/At-what-age-do-you-stop-listening-to-popular-music"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://i.ibb.co/svK7w6F9/1d2f8f1c8656.jpg",
+      "https://i.ibb.co/1GwQc0xn/58aacc2f940c.jpg",
+      "https://i.ibb.co/6cBZhWrN/84c597b6f39f.jpg",
+      "https://i.ibb.co/jvPBVkZf/48f3fffbb1b1.jpg",
+      "https://i.ibb.co/Y43sH9gd/3d1a9eb74bd9.jpg",
+      "https://i.ibb.co/WWHzG2nD/ef371fc0f74b.jpg"
+     ],
+     "covers": {
+      "B": "https://i.ibb.co/B592SHj3/f5180f504863.jpg",
+      "C": "https://i.ibb.co/Qv24BrDz/c365a535a64f.jpg",
+      "A": "https://i.ibb.co/svK7w6F9/1d2f8f1c8656.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-01T23:33+09:00",
+     "v": {
+      "A": "f14723cc",
+      "B": "eb21fc38",
+      "C": "7c013ad1"
+     }
+    }
+   },
+   "corner_name": "나무위키 털기",
+   "corner_no": 24
   }
  ],
  "skipped": [],
@@ -2656,7 +2759,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 24,
-    "drafts": 0,
+    "drafts": 1,
     "why": "제작 맡기기로 맡길 때만 (10/20) — 나무위키만 보고 장 수 제한 없이"
    },
    {
@@ -2816,10 +2919,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-01T23:29+09:00"
+  "at": "2026-11-01T23:33+09:00"
  },
  "queue": {
-  "next": "2026-11-01T23:31+09:00",
+  "next": "2026-11-01T23:35+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-01T17:40+09:00"
