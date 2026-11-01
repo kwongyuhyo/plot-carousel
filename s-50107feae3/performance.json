@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-10-31 22:05 KST",
+ "generated_at": "2026-11-01 15:06 KST",
  "weeks": [
   {
    "week": "2026-W36",
@@ -1676,11 +1676,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-10-31 19:04 KST"
+  "daily": "2026-10-31 22:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-10-31T22:05:25+09:00",
+  "fetched_at": "2026-11-01T15:06:39+09:00",
   "posts": [
+   {
+    "t": "2026-11-01T14:00+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원(@yanghongwon)이 스토리에 드레이크(Drake)의 'WN"
+   },
    {
     "t": "2026-10-31T20:48+09:00",
     "type": "VIDEO",
@@ -2135,10 +2140,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 265,
-  "posted": 73,
-  "posts": 97,
-  "rate": 0.28,
+  "drafts": 274,
+  "posted": 74,
+  "posts": 98,
+  "rate": 0.27,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
   "lanes": {
@@ -2148,13 +2153,13 @@
     "mult": null
    },
    "재미": {
-    "drafts": 26,
+    "drafts": 29,
     "posted": 2,
     "mult": 2.05
    },
    "정보": {
-    "drafts": 170,
-    "posted": 61,
+    "drafts": 175,
+    "posted": 62,
     "mult": 0.99
    },
    "클립": {
@@ -2178,7 +2183,7 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 16,
+    "drafts": 17,
     "posted": 3,
     "mult": 0.78
    },
@@ -2195,8 +2200,8 @@
   },
   "corners": {
    "news": {
-    "drafts": 147,
-    "posted": 50,
+    "drafts": 152,
+    "posted": 51,
     "mult": 1.05
    },
    "mal": {
@@ -2220,7 +2225,7 @@
     "mult": 0.9
    },
    "followup": {
-    "drafts": 19,
+    "drafts": 20,
     "posted": 7,
     "mult": 0.93
    },
@@ -2230,12 +2235,12 @@
     "mult": null
    },
    "newalbums": {
-    "drafts": 4,
+    "drafts": 5,
     "posted": 1,
     "mult": null
    },
    "anniv": {
-    "drafts": 10,
+    "drafts": 11,
     "posted": 2,
     "mult": 1.08
    },
@@ -2245,7 +2250,7 @@
     "mult": 0.78
    },
    "meet": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 2,
     "mult": null
    },
@@ -2272,19 +2277,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-29",
-    "lane": "정보",
-    "who": "패닉",
-    "repack": false,
-    "grade": "A",
-    "corner": "meet",
-    "key": "78152e66",
-    "posted": "DfEyrTuFEbH",
-    "head": "패닉이 '2026 MAMA AWARDS'에서 후배들과 한 무대를 꾸밉니다.",
-    "url": "https://www.instagram.com/p/DfEyrTuFEbH/",
-    "mult": null
-   },
    {
     "day": "2026-10-29",
     "lane": "정보",
@@ -2322,6 +2314,19 @@
     "posted": "DfJyJp7FOdu",
     "head": "\"서울은 여전히 서울이고, 서울시장은 나야\"",
     "url": "https://www.instagram.com/p/DfJyJp7FOdu/",
+    "mult": null
+   },
+   {
+    "day": "2026-10-30",
+    "lane": "정보",
+    "who": "양홍원",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "d85f0c00",
+    "posted": "DfL7kdkmfpI",
+    "head": "양홍원(@yanghongwon)이 스토리에 드레이크(Drake)의 'WNBA'를 올렸습니다",
+    "url": "https://www.instagram.com/p/DfL7kdkmfpI/",
     "mult": null
    },
    {
