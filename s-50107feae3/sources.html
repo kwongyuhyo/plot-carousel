@@ -586,6 +586,15 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .phx .pkf{padding:10px 14px calc(10px + env(safe-area-inset-bottom)); border-top:1px solid var(--line)}
 .phx .pkf button{width:100%; padding:14px; border-radius:12px; border:0; background:var(--text); color:var(--bg); font-weight:700; font-size:15px; cursor:pointer}
 .phx .pkf button:disabled{opacity:.4; cursor:default}
+.srs .sr input{width:100%; box-sizing:border-box; font:inherit; font-size:16px; padding:9px 10px; border:1px solid var(--line); border-radius:10px; background:none; color:var(--text); margin-top:8px}
+.srs .sr .srm{font-size:14px; padding:7px 10px}
+.srs .srd{font-size:11px; border:1px solid var(--pick); color:var(--pick); border-radius:999px; padding:1px 7px}
+.srs .srb{display:flex; justify-content:flex-end; margin-top:8px}
+.srs .srb .go{font:inherit; font-size:14px; font-weight:700; border:0; border-radius:10px; padding:9px 18px; background:var(--text); color:var(--bg); cursor:pointer}
+.srs .srp{margin-top:8px; max-height:none}
+.srs .odr{margin-top:6px; font-size:12.5px; line-height:1.45} .srs .odr small{color:var(--dim)}
+.srs .s{display:inline-block; font-size:11px; border-radius:999px; padding:1px 7px; border:1px solid var(--line); color:var(--dim)}
+.srs .s-done{border-color:var(--pick); color:var(--pick)} .srs .s-fail{border-color:var(--amber); color:var(--amber)}
 .spk{display:flex; flex-direction:column; gap:6px; max-height:34vh; overflow-y:auto}
 .spk button{text-align:left; border:1px solid var(--line); background:none; color:var(--text); border-radius:10px; padding:8px 11px; font:inherit; font-size:13.5px; cursor:pointer}
 .spk button small{display:block; color:var(--dim); font-size:11.5px; margin-top:2px}
@@ -1008,6 +1017,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     <button type="button" data-grp="info" aria-selected="true">이슈 · 뉴스</button>
     <button type="button" data-grp="plan" aria-selected="false">기획 소스</button>
     <button type="button" data-grp="draft" aria-selected="false" id="grpDraft">초안</button>
+    <button type="button" data-grp="series" aria-selected="false" id="grpSeries">정기 시리즈</button>
     <button type="button" data-grp="made" aria-selected="false" id="grpMade">완성 영상</button>
     <button type="button" data-grp="follow" aria-selected="false" id="grpFollow">후속 기획</button>
     <a class="jump" href="perf.html">PLOT 성과 <span aria-hidden="true">→</span></a>
@@ -1054,6 +1064,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   <div id="viewNews" hidden></div>
   <div id="viewPlan" hidden></div>
   <div id="viewDraft" hidden></div>
+  <div id="viewSeries" hidden></div>
   <div id="viewMade" hidden></div>
   <div id="viewFollow" hidden></div>
 
@@ -2091,6 +2102,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     document.querySelector('.tabs').hidden = (g !== 'info');
     document.getElementById('viewPlan').hidden = (g !== 'plan');
     document.getElementById('viewDraft').hidden = (g !== 'draft');
+    document.getElementById('viewSeries').hidden = (g !== 'series');
     document.getElementById('viewMade').hidden = (g !== 'made');
     document.getElementById('viewFollow').hidden = (g !== 'follow');
     document.getElementById('note').hidden = (g !== 'info');      // 후보 화면 설명은 후보 화면에서만
@@ -2108,6 +2120,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       });
       document.getElementById('filters').hidden = true;
       renderFollow();
+      return;
+    }
+    if (g === 'series') {
+      ['viewCand', 'viewAcct', 'viewNews'].forEach(function (id) {
+        document.getElementById(id).hidden = true;
+      });
+      document.getElementById('filters').hidden = true;
+      setTimeout(renderSeries, 0);                   // 처음 열 때는 아래 SERIES 가 아직 안 읽혔다
       return;
     }
     if (g === 'draft') {
@@ -2135,7 +2155,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   });
   // 10/20 — 앱을 새로 열면 늘 '이슈·뉴스' 였다. 마지막에 보던 칸으로, 처음이면 오늘의 초안으로 (하루 일의 시작점)
   try { var G0 = sessionStorage.getItem('plot.grp') || localStorage.getItem('plot.grp') || 'draft';
-    if (G0 === 'draft' || G0 === 'follow' || G0 === 'plan' || G0 === 'made') showGroup(G0); } catch (e) {}
+    if (G0 === 'draft' || G0 === 'follow' || G0 === 'plan' || G0 === 'made' || G0 === 'series') showGroup(G0); } catch (e) {}
 
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
   document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
@@ -3120,8 +3140,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
      '다른 후보' 를 누르면 맥이 그 곡도 만든다 (5~10분, 하루 상한 밖). */
   // 제작 맡기기 (2026-10-12 규효 "내가 먼저 찾은 이슈나 만들고 싶은 특집이 있으면 내가 제안") — collectors/orders
   var OD = null, OD_T = null;
-  var OD_TYPE = [['draft', '이슈·소재 초안'], ['share', '본 게시물로 (링크만)'], ['tteolgi', '나무위키 털기'], ['special', '특집'], ['song', '🎵 오늘의 노래'],
+  var OD_TYPE_ALL = [['draft', '이슈·소재 초안'], ['share', '본 게시물로 (링크만)'], ['tteolgi', '나무위키 털기'], ['special', '특집'], ['song', '🎵 오늘의 노래'],
                  ['meet', '2026년 ○○ 만나는 법'], ['intro', '장르 입문 가이드'], ['listen', '○○을 ○○로 듣는다면']];
+  // 11/2 규효 "정기 시리즈는 탭을 따로" — 여기(맡기기)는 이슈·공유·특집만. 정기 시리즈는 「정기 시리즈」 탭에서
+  var OD_TYPE = OD_TYPE_ALL.filter(function (x) { return /^(draft|share|special)$/.test(x[0]); });
   var OD_FORM = [['b', '숏폼·캐러셀'], ['s', '숏폼'], ['c', '캐러셀']];
   var OD_ST = { queued: '맥이 받음', running: '만드는 중', done: '완료', fail: '못 만듦' };
   function odLoad() {
@@ -3140,12 +3162,12 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   function orderBox() {
     var rows = (OD || []).slice(0, 4);
-    return '<div class="evn odb"><div class="top"><b>제작 맡기기</b><span>내가 찾은 이슈 · 특집 · 오늘의 노래</span>' +
+    return '<div class="evn odb"><div class="top"><b>제작 맡기기</b><span>내가 찾은 이슈 · 특집 (정기 시리즈는 「정기 시리즈」 탭)</span>' +
       '<button type="button" data-odnew>+ 맡기기</button></div>' +
       '<div class="odsc">인스타에서 보다가 바로 — 갤럭시: 공유 → 「PLOT」 · 아이폰: <a href="./plot-share.shortcut" download>공유 메뉴에 「PLOT 맡기기」 넣기</a></div>' + rows.map(function (r) {
         var sn = r.snapshot || {}, st = sn.status || '';
         return '<div class="odr" data-odr="' + esc(r.id) + '"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> ' +
-          '<b>' + esc(String(sn.what || (sn.type === 'share' ? '📲 ' + String(sn.url || '').replace(/^https?:\/\/(www\.)?/, '') : '')).slice(0, 40)) + '</b> <small>' + esc(evOpt(OD_TYPE, sn.type) || '') +
+          '<b>' + esc(String(sn.what || (sn.type === 'share' ? '📲 ' + String(sn.url || '').replace(/^https?:\/\/(www\.)?/, '') : '')).slice(0, 40)) + '</b> <small>' + esc(evOpt(OD_TYPE_ALL, sn.type) || '') +
           (sn.note && st !== 'queued' ? ' — ' + esc(String(sn.note).slice(0, 70)) + (String(sn.note).length > 70 || st === 'fail' ? ' <u>더 보기</u>' : '') : '') + '</small></div>';
       }).join('') + '</div>';
   }
@@ -3157,8 +3179,78 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!isNaN(mins) && (sn.status === 'running' || sn.status === 'queued')) sn = Object.assign({}, sn, { note: (sn.note || '') + ' · 맡긴 지 ' + (mins >= 60 ? Math.floor(mins / 60) + '시간 ' : '') + (mins % 60) + '분 — 보통 10~20분, 40분 넘으면 맥을 확인해 주세요' });
     sheetOf((OD_ST[sn.status] || '보냄') + ' — ' + String(sn.what || '').slice(0, 40) + (sn.note ? '\n\n' + sn.note : ''),
       [['re', '고쳐서 다시 맡기기', '같은 내용이 채워진 채 열립니다 — 링크·메모를 보태 주세요'], ['x', '닫기', '']],
-      function (k) { if (k === 're') openOrder({ type: sn.type || 'draft', form: sn.form || 'b', what: sn.what || '', url: sn.url || '', memo: r.reason || '' }); });
+      function (k) { if (k === 're') { if (SERIES.some(function (x) { return x.t === sn.type; })) { SR_PRE[sn.type] = { what: sn.what || '', memo: r.reason || '', url: sn.url || '' }; showGroup('series'); return; }
+        openOrder({ type: sn.type || 'draft', form: sn.form || 'b', what: sn.what || '', url: sn.url || '', memo: r.reason || '' }); } });
   }
+
+  /* ── 정기 시리즈 (11/2 규효 "정기 기획 특집 시리즈들은 탭을 따로 빼서 매일 주문란을 다르게 키워드나 문장으로") ──
+     시리즈마다 주문란 하나 — 적고 「맡기기」 → 제작 맡기기(plot_evals kind=order)로 맥이 받는다. 형식은 시리즈마다 정해 둔 것. */
+  var SERIES = [
+    { t: 'song', name: '🎵 오늘의 노래', sub: '매일 · 숏폼 · 번호·날짜는 맥이 붙임', ph: '아티스트 - 곡   예) 한로로 - 0+0', form: 's' },
+    { t: 'listen', name: '○○을 ○○로 듣는다면', sub: '주제별 추천 4~6곡 · 캐러셀', ph: '주제 / 장르   예) 사랑 / 인디 · 겨울 (장르 비우면 음악)', form: 'c' },
+    { t: 'intro', name: '만약 당신이 ○○가 궁금하다면', sub: '장르 입문 가이드 · 캐러셀', ph: '장르   예) 슈게이즈 / 시티팝 / 한국 R&B', form: 'c' },
+    { t: 'meet', name: '2026년 ○○ 만나는 법', sub: '남은 공연·페스티벌·행사 (확인된 것만) · 캐러셀', ph: '아티스트   예) 잔나비 / 데이식스', form: 'c' },
+    { t: 'tteolgi', name: '나무위키 털기', sub: '나무위키만 보고 재미있는 건 전부 · 캐러셀', ph: '사람·대상   예) 리센느 제나 / 실리카겔', form: 'c' }
+  ];
+  var SR = null, SR_PRE = {};
+  function srLoad() {
+    if (!sbOn()) return;
+    sbReq('plot_evals?select=id,reason,snapshot,created_at,draft_date&kind=eq.order&order=created_at.desc&limit=60').then(function (rows) {
+      SR = (rows || []).filter(function (r) { var t = (r.snapshot || {}).type; return SERIES.some(function (x) { return x.t === t; }); });
+      if (GRP === 'series') renderSeries();
+      if (SR.some(function (r) { var st = (r.snapshot || {}).status; return !st || st === 'queued' || st === 'running'; }))
+        setTimeout(function () { if (GRP === 'series') srLoad(); }, 45000);
+    }).catch(function () {});
+  }
+  function renderSeries() {
+    var host = document.getElementById('viewSeries');
+    if (SR === null) srLoad();
+    if (!SP) spLoad(function () { if (GRP === 'series') renderSeries(); });
+    var today = kstDay(new Date());
+    var keepVals = {};
+    [].forEach.call(host.querySelectorAll('[data-srf]'), function (el) { keepVals[el.getAttribute('data-srf')] = el.value; });
+    host.innerHTML = '<div class="srs">' + (!sbOn() ? '<div class="evn">저장소 설정이 있어야 맡길 수 있습니다</div>' : '') + SERIES.map(function (x) {
+      var rows = (SR || []).filter(function (r) { return (r.snapshot || {}).type === x.t; });
+      var todayN = rows.filter(function (r) { return String(r.created_at || '').slice(0, 10) === today || r.draft_date === today; }).length;
+      var pre = SR_PRE[x.t] || {};
+      var v = keepVals[x.t + ':what'] != null ? keepVals[x.t + ':what'] : (pre.what || '');
+      var m = keepVals[x.t + ':memo'] != null ? keepVals[x.t + ':memo'] : (pre.memo || '');
+      var picks = x.t === 'song' && SP && (SP.items || []).length ? '<div class="spk srp">' + SP.items.slice(0, 6).map(function (p, i) {
+        return '<button type="button" data-srsp="' + i + '"><b>' + esc(p.artist) + '</b> — ' + esc(p.title) + '<small>' + esc([p.genre, (p.why || []).join(' · ')].filter(Boolean).join(' · ')) + '</small></button>'; }).join('') + '</div>' : '';
+      return '<div class="evn sr" data-sr="' + x.t + '"><div class="top"><b>' + esc(x.name) + '</b><span>' + esc(x.sub) + '</span>' +
+        (todayN ? '<span class="srd">오늘 ' + todayN + '건 맡김</span>' : '') + '</div>' +
+        '<input data-srf="' + x.t + ':what" placeholder="' + esc(x.ph) + '" value="' + esc(v) + '">' +
+        '<input data-srf="' + x.t + ':memo" class="srm" placeholder="각도·메모·링크 (있으면)" value="' + esc(m) + '">' + picks +
+        '<div class="srb"><button type="button" class="go" data-srgo="' + x.t + '">맡기기</button></div>' +
+        rows.slice(0, 3).map(function (r) { var sn = r.snapshot || {}, st = sn.status || '';
+          return '<div class="odr" data-odr="' + esc(r.id) + '"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> <b>' + esc(String(sn.what || '').slice(0, 40)) + '</b> <small>' +
+            esc(String(r.created_at || '').slice(5, 10).replace('-', '/')) + (sn.note && st !== 'queued' ? ' — ' + esc(String(sn.note).slice(0, 60)) : '') + '</small></div>'; }).join('') +
+        '</div>';
+    }).join('') + '</div>';
+  }
+  function srSend(t) {
+    var host = document.getElementById('viewSeries'), x = SERIES.filter(function (s) { return s.t === t; })[0];
+    var what = (host.querySelector('[data-srf="' + t + ':what"]') || {}).value || '', memo = (host.querySelector('[data-srf="' + t + ':memo"]') || {}).value || '';
+    what = what.trim(); memo = memo.trim();
+    if (!what) { toast('주문란을 적어 주세요'); return; }
+    if (t === 'song' && !/[-–—\/|]/.test(what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
+    var url = (memo.match(/https?:\/\/\S+/) || [''])[0];
+    var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: url.slice(0, 300),
+      verdict: {}, reason: memo, rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
+      snapshot: { type: t, form: x.form, what: what, url: url } };
+    sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } })
+      .then(function () { toast('맡겼습니다 — 맥이 5분 안에 받습니다'); delete SR_PRE[t]; SR = [rec].concat(SR || []); OD = [rec].concat(OD || []);
+        var el = host.querySelector('[data-srf="' + t + ':what"]'); if (el) el.value = ''; el = host.querySelector('[data-srf="' + t + ':memo"]'); if (el) el.value = '';
+        renderSeries(); setTimeout(srLoad, 45000); })
+      .catch(function (er) { toast('못 보냈습니다 — ' + String(er && er.message || er).slice(0, 60)); });
+  }
+  document.getElementById('viewSeries').addEventListener('click', function (e) {
+    var g = e.target.closest('[data-srgo]'); if (g) { srSend(g.getAttribute('data-srgo')); return; }
+    var sp = e.target.closest('[data-srsp]');
+    if (sp) { var p = ((SP || {}).items || [])[Number(sp.getAttribute('data-srsp'))], el = document.querySelector('[data-srf="song:what"]');
+      if (p && el) { el.value = p.artist + ' - ' + p.title; if (p.url) { var m = document.querySelector('[data-srf="song:memo"]'); if (m && !m.value) m.value = p.url; } } return; }
+    var od = e.target.closest('[data-odr]'); if (od) { OD = (SR || []).concat(OD || []); odDetail(od.getAttribute('data-odr')); }
+  });
   /* 🎵 오늘의 노래 추천곡 (10/30 규효 "오늘의 노래는 내가 직접 선곡 · 추천곡 정도만") — collectors/song_today.write_app */
   var SP = null;
   function spLoad(cb) {
@@ -4623,9 +4715,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.02 01:13';
+    a.title = '판 11.02 01:15';
     var ver = document.createElement('span');
-    ver.textContent = '11.02 01:13';
+    ver.textContent = '11.02 01:15';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
