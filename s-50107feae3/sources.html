@@ -3505,7 +3505,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var vlink = vd.url ? vd.url + (vd.range ? (vd.url.indexOf('?') >= 0 ? '&' : '?') + 't=' + Math.floor(vd.range[0]) : '') : '';
     var rd = sh.rendered || {}, rq = sh.render || {};
     var marks = '<span>' + esc(span ? '구간 ' + span : '구간 미정') + '</span>' +
-      (rd.url ? '<a class="yt" href="' + escU(rd.url) + '" target="_blank" rel="noopener">완성 영상 ▶</a>' :
+      (rd.url ? '<a class="yt" href="' + escU(rd.url) + '" target="_blank" rel="noopener">완성 영상 ▶</a>' +
+        // 11/2 규효 "폰에 안 옴" — 폰 갤러리 전송(Syncthing)이 끊겨도 바로 내려받게
+        (/res\.cloudinary\.com\/[^/]+\/video\/upload\//.test(rd.url) ? '<a class="yt" href="' + escU(rd.url.replace('/video/upload/', '/video/upload/fl_attachment/')) + '" download>📥 폰에 저장</a>' : '') :
         rq.status || (Date.now() - (actsGet()['mk-' + it.key] || 0) < 15 * 60e3) ? '<span>🎬 맥이 만드는 중</span>' : (it.key && !DR_DAY ? '<button data-rmk="' + i + '">🎬 완성본 만들기</button>' : '')) +
       // 10/30 규효 "PLOT 도 비슷하게" — 완성본을 @plot_music 릴스로 (collectors/app_actions rl · reel_pub)
       ((sh.published || {}).permalink ? '<a class="yt" href="' + escU(sh.published.permalink) + '" target="_blank" rel="noopener">올린 릴스 ↗</a>' :
@@ -4621,9 +4623,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.02 01:12';
+    a.title = '판 11.02 01:13';
     var ver = document.createElement('span');
-    ver.textContent = '11.02 01:12';
+    ver.textContent = '11.02 01:13';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
