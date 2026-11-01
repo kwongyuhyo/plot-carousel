@@ -2295,13 +2295,172 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-23b10a62",
+    "account": "@규효 공유 · @eyesmag",
+    "url": "https://www.instagram.com/p/DfMVxlJoF-9/?dlrf=azJhYnZ1eXEyc3Az",
+    "image": null,
+    "head": "머라이어 캐리 2026 'It's Time' — 펑크 보컬로 할로윈을 보내고 자정에 캐럴 시즌 선언",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-01T20:08+09:00",
+   "key": "4981dd56",
+   "by": "claude",
+   "subjects": [
+    "머라이어 캐리"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "A",
+    "kind": "재미",
+    "angle": "올해 'It's Time' 은 펑크 밴드 보컬로 할로윈 밤을 보내다 자정에 캐럴로 갈아타는 변신",
+    "why": "11월 1일마다 도는 연례 영상, 올해는 펑크 분장이라는 새 장면 — 본인 채널 원본 영상이 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-01T20:08+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n올해 머라이어 캐리는 펑크 밴드 보컬로 할로윈 밤을 보냈습니다.\n\n11월 1일 자정마다 'It's Time' 한마디로 캐럴 시즌을 여는 영상인데요, 올해는 10월 31일 밤 뉴욕의 허름한 바에서 시작합니다. 붉은 머리에 짙은 눈화장을 한 채 마이크를 잡던 그는 무대 아래로 몸을 던지고, 화면이 꺼졌다 켜지면 빨간 반짝이 의상을 입고 거대한 크리스마스트리 위에서 'All I Want for Christmas Is You'를 부릅니다.\n\n1994년 첫 크리스마스 앨범 [Merry Christmas]에 실린 그 곡이, 올해는 할로윈 분장을 벗어 던지는 장면과 함께 돌아왔습니다.\n\n#PLOT #머라이어캐리 #MariahCarey #ItsTime #캐럴\n\n[커버]\n소스: https://i.ibb.co/1t0Kbp0h/0d4e5ac2184e.jpg\n제목: 올해 머라이어 캐리는|펑크로 할로윈을 보냈다\n부제: 2026 'It's Time'\n출처: Mariah Carey\n\n[슬라이드]\n형식: 자료\n말한이: \n소스: https://i.ibb.co/d4bxC7y7/1e54d16d7366.jpg\n소제목: \n본문: \n출처: Mariah Carey\n",
+    "caption": "올해 머라이어 캐리는 펑크 밴드 보컬로 할로윈 밤을 보냈습니다.\n\n11월 1일 자정마다 'It's Time' 한마디로 캐럴 시즌을 여는 영상인데요, 올해는 10월 31일 밤 뉴욕의 허름한 바에서 시작합니다. 붉은 머리에 짙은 눈화장을 한 채 마이크를 잡던 그는 무대 아래로 몸을 던지고, 화면이 꺼졌다 켜지면 빨간 반짝이 의상을 입고 거대한 크리스마스트리 위에서 'All I Want for Christmas Is You'를 부릅니다.\n\n1994년 첫 크리스마스 앨범 [Merry Christmas]에 실린 그 곡이, 올해는 할로윈 분장을 벗어 던지는 장면과 함께 돌아왔습니다.\n\n#PLOT #머라이어캐리 #MariahCarey #ItsTime #캐럴",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/1t0Kbp0h/0d4e5ac2184e.jpg",
+      "credit": "Mariah Carey",
+      "from": "https://i.ibb.co/BKsXjdSr/5fc7dcae169c.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://i.ibb.co/1t0Kbp0h/0d4e5ac2184e.jpg",
+      "credit": "Mariah Carey",
+      "from": "https://i.ibb.co/BKsXjdSr/5fc7dcae169c.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "올해 머라이어 캐리는|펑크로 할로윈을 보냈다",
+      "sub": "2026 'It's Time'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "펑크 보컬에서|캐럴의 여왕으로",
+      "sub": "머라이어 캐리 'It's Time'"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "11월 1일 자정,|머라이어 캐리가 돌아왔다",
+      "sub": "올해의 'It's Time'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — Mariah Carey 본인 채널 (59초 영상 통째, 자막 없음)",
+     "사진 DB 에 머라이어 캐리가 없어 표지·장 모두 본인 영상 장면 캡처 — 표지로 괜찮은지"
+    ],
+    "research": [
+     {
+      "title": "Mariah Carey - It's Time!!!! (2026) — Mariah Carey 유튜브",
+      "link": "https://www.youtube.com/watch?v=2qIZ1A3P8po"
+     },
+     {
+      "title": "Just Jared — Mariah Carey Goes Punk Before Declaring 'It's Time' for Christmas",
+      "link": "https://www.justjared.com/2026/11/01/mariah-carey-goes-punk-before-declaring-its-time-for-christmas-watch-now/"
+     },
+     {
+      "title": "trend magazin — Direkt nach Halloween: Mariah Carey läutet die Weihnachtszeit ein",
+      "link": "https://www.trendmagazin.ch/entertainment/musik/1488815/direkt-nach-halloween-mariah-carey-laeutet-die-weihnachtszeit-ein/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://i.ibb.co/xtVHJpyr/295e8be818b7.jpg",
+      "https://i.ibb.co/8DyG76Wq/4c0688bd2c98.jpg",
+      "https://i.ibb.co/Xf5LFn4g/77f5eb64e90b.jpg"
+     ],
+     "covers": {
+      "B": "https://i.ibb.co/fzk5vKt5/e14d55a2ca7b.jpg",
+      "C": "https://i.ibb.co/DP8xkNRn/6e72f1c60883.jpg",
+      "A": "https://i.ibb.co/xtVHJpyr/295e8be818b7.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-01T20:08+09:00",
+     "v": {
+      "A": "c9decd2d",
+      "B": "f19bdd34",
+      "C": "ccc49d23"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=2qIZ1A3P8po\n구간: 0:00-0:59\n곡: 머라이어 캐리의 자정\n아티스트: 펑크 보컬이 된\n피처링:\n후킹: \n출처: Mariah Carey\n음원: Mariah Carey - All I Want for Christmas Is You\n가사: 자동",
+    "caption": "머라이어 캐리가 올해도 11월 1일 자정에 'It's Time' 영상을 올렸습니다.\n\n해마다 할로윈이 끝나는 순간 캐럴 시즌의 시작을 알리는 영상인데요, 올해 그는 10월 31일 밤 뉴욕의 한 바에서 펑크 밴드 보컬로 먼저 등장합니다. 붉은 머리와 짙은 눈화장으로 노래하다 무대 아래로 뛰어들고, 자정이 지나자 빨간 반짝이 의상으로 돌아와 'All I Want for Christmas Is You'를 부릅니다.\n\n1994년 첫 크리스마스 앨범 [Merry Christmas]에 실린 이 곡의 계절이 올해도 머라이어 캐리의 한마디로 시작됐습니다.\n\n#PLOT #머라이어캐리 #MariahCarey #ItsTime #캐럴",
+    "hooks": {
+     "A": "펑크 보컬이 된 / 머라이어 캐리의 자정",
+     "B": "11월 1일 자정, / 올해도 캐럴 시즌 개막",
+     "C": "할로윈 무대에서 / 크리스마스트리 위로"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=2qIZ1A3P8po",
+     "credit": "Mariah Carey",
+     "range": [
+      0.0,
+      59.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — Mariah Carey 본인 채널 (59초 영상 통째, 자막 없음)",
+     "사진 DB 에 머라이어 캐리가 없어 표지·장 모두 본인 영상 장면 캡처 — 표지로 괜찮은지"
+    ],
+    "research": [
+     {
+      "title": "Mariah Carey - It's Time!!!! (2026) — Mariah Carey 유튜브",
+      "link": "https://www.youtube.com/watch?v=2qIZ1A3P8po"
+     },
+     {
+      "title": "Just Jared — Mariah Carey Goes Punk Before Declaring 'It's Time' for Christmas",
+      "link": "https://www.justjared.com/2026/11/01/mariah-carey-goes-punk-before-declaring-its-time-for-christmas-watch-now/"
+     },
+     {
+      "title": "trend magazin — Direkt nach Halloween: Mariah Carey läutet die Weihnachtszeit ein",
+      "link": "https://www.trendmagazin.ch/entertainment/musik/1488815/direkt-nach-halloween-mariah-carey-laeutet-die-weihnachtszeit-ein/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/2qIZ1A3P8po/maxresdefault.jpg",
+    "still": {
+     "url": "https://i.ibb.co/MDNZQddB/165d9380e22c.jpg",
+     "key": "2qIZ1A3P8po@0.0"
+    },
+    "px": {
+     "vid": "2qIZ1A3P8po",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793531373/plot_studio/q3nutcvhltesfrjjej9d.mp4",
+     "off": 0.0,
+     "end": 59.0,
+     "full": 59.0
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "10/26~11/01",
   "days_left": 1,
-  "done": 45,
+  "done": 47,
   "goal": 28,
   "corners": [
    {
@@ -2464,31 +2623,31 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 34,
+    "done": 36,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 7,
+    "drafts": 8,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-01T17:16+09:00"
+  "at": "2026-11-01T20:09+09:00"
  },
  "queue": {
-  "next": "2026-11-01T17:50+09:00",
+  "next": "2026-11-01T20:11+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-01T16:50+09:00"
+  "last": "2026-11-01T17:40+09:00"
  },
  "slots": {
-  "basis": 278,
+  "basis": 280,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.18,
+    "mult": 2.17,
     "median": 1.29,
     "n": 50
    },
@@ -2504,8 +2663,8 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.6,
-    "median": 1.04,
+    "mult": 1.59,
+    "median": 1.01,
     "n": 23
    }
   ],
