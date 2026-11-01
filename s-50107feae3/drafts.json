@@ -2957,9 +2957,56 @@
      "end": 515.0,
      "full": 624.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-02T02:00+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793552708/plot_studio/ocrgkfzo51k9qr0mgaxx.mp4",
+     "at": "2026-11-02T02:05+09:00",
+     "file": "Cheos_ASiA_TuEo_Cheo_MuDae_Ap_JanNaBiUi_G_News_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793552709065-d0033e0b",
+      "segs": [
+       {
+        "start": 2.17,
+        "end": 3.52,
+        "text": "하나 둘 셋 화이팅!"
+       },
+       {
+        "start": 6.6,
+        "end": 8.25,
+        "text": "우리 첫 번째 아시아 투어입니다"
+       },
+       {
+        "start": 8.25,
+        "end": 14.07,
+        "text": "재밌게 이번 투어를 잘 마치면\n어떤 일이 기다리고 있을지 꿈꾸며"
+       },
+       {
+        "start": 14.07,
+        "end": 16.12,
+        "text": "재밌게 마쳐보도록 하겠습니다"
+       },
+       {
+        "start": 16.12,
+        "end": 19.23,
+        "text": "하나 둘 셋 하면 파이팅 짧고 굵게"
+       },
+       {
+        "start": 20.04,
+        "end": 22.37,
+        "text": "하나 둘 셋 화이팅!"
+       },
+       {
+        "start": 33.3,
+        "end": 36.96,
+        "text": "둘 셋 - 됐어 - 예"
+       },
+       {
+        "start": 40.58,
+        "end": 42.1,
+        "text": "자 이제 가자"
+       }
+      ]
+     },
+     "v": "4547e67f"
     }
    },
    "corner_name": "이번 주 티켓 오픈",
@@ -3142,7 +3189,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T02:00+09:00"
+  "at": "2026-11-02T02:05+09:00"
  },
  "queue": {
   "next": "2026-11-02T08:00+09:00",
