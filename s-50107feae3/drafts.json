@@ -2288,9 +2288,11 @@
      "url": "https://i.ibb.co/rG6tXy9L/416a48dc111c.jpg",
      "key": "@0.0"
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-01T17:09+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793520721/plot_studio/vdjn9w0dm0fradsdg0v2.mp4",
+     "at": "2026-11-01T17:12+09:00",
+     "file": "GiTaSyo_NagWonEul_Dw_DanPyeonSeon_SunGanD_Live_Archive_no_lyrics__cta.mp4",
+     "v": "44a1f79e"
     }
    },
    "corner_name": "소식"
@@ -2472,7 +2474,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-01T17:09+09:00"
+  "at": "2026-11-01T17:12+09:00"
  },
  "queue": {
   "next": "2026-11-01T17:50+09:00",
