@@ -649,12 +649,12 @@
      "v": "7916aeb6"
     }
    },
+   "corner_name": "후속",
    "pick": {
     "rank": 1,
-    "why": "이번 회차 목표 둘(인물해부·숏폼)을 한 건에 · 공식 계정 팔로워가 하루 새 291% 늘었고 매거진 12.4배 · 멤버 본인 채널 영상이라 클립 위험 낮음",
-    "at": "2026-11-01T10:17+09:00"
-   },
-   "corner_name": "후속"
+    "why": "오늘 가장 뜨거운 이름 · 공식 계정 팔로워 하루 +1만 · 인물해부 + 숏폼(멤버 본인 채널)",
+    "at": "2026-11-01T16:25+09:00"
+   }
   },
   {
    "source": {
@@ -790,13 +790,13 @@
      "url": "https://i.ibb.co/sdB06xS4/84932121df13.jpg"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "의외의 만남 칸 · 지수 인스타 2.6배 · 블랙핑크 두 멤버가 한 화면에 선 장면",
-    "at": "2026-11-01T10:17+09:00"
-   },
    "corner_name": "만나는 법",
-   "corner_no": 3
+   "corner_no": 3,
+   "pick": {
+    "rank": 3,
+    "why": "의외의 만남 칸 · 블랙핑크 두 멤버가 한 화면 · 지수 인스타 2.6배",
+    "at": "2026-11-01T16:25+09:00"
+   }
   },
   {
    "source": {
@@ -920,11 +920,6 @@
       "A": "e7a61e8b"
      }
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "본인이 직접 농담으로 알린 근황 · 뉴스 급상승 · 맨 끝에 내일(2일) 추가 예매 정보가 붙는 실용형",
-    "at": "2026-11-01T10:17+09:00"
    },
    "corner_name": "소식"
   },
@@ -1608,6 +1603,301 @@
    },
    "corner_name": "이번 주 나온 앨범",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:leehi-four-labels",
+    "account": "이하이 인스타 10/31",
+    "url": "https://www.instagram.com/p/DfKB-nNgZKi/",
+    "image": null,
+    "head": "KAI 무료 공개함 808HI 유튜브로 나도 모니터하러 감!",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-01T16:25+09:00",
+   "key": "49fcc1f0",
+   "by": "claude",
+   "subjects": [
+    "이하이",
+    "도끼"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "S",
+    "kind": "정보",
+    "angle": "YG → AOMG → 두오버 → 808 HI — 이하이가 14년 동안 거친 네 레이블, 그리고 직접 세운 레이블에서 무료로 푼 'KAI'",
+    "why": "이번 회차 목표 인물해부 · 이하이 인스타 3.4배(좋아요 11만) · 오늘 기사 두 곳 · 레이블 채널 MV라 숏폼 위험 낮음"
+   },
+   "added": "claude",
+   "added_at": "2026-11-01T16:25+09:00",
+   "corner": "followup",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n이하이(@leehi_hi)가 직접 세운 레이블에서 새 노래를 냈습니다.\n\n10월 31일 808 HI RECORDINGS 유튜브 채널에 무료로 공개된 'KAI'인데요, 2012년 〈K팝스타〉 시즌1 준우승 뒤 YG에서 데뷔한 이하이는 2020년 AOMG(@aomgofficial), 2024년 두오버를 거쳐 올해 3월 도끼와 함께 이 레이블을 세웠습니다.\n\n첫 싱글 'You & Me'로 두 사람의 관계를 알렸고, 6월 'Bonnie n Clyde 26'에 이어 이번에도 도끼와 함께 부른 곡입니다.\n\n#PLOT #이하이 #도끼 #KAI #808HIRECORDINGS\n\n[커버]\n소스: https://i.ibb.co/fdVP028Z/52be5ca6ca24.jpg\n제목: YG부터 808 HI까지|이하이\n부제: 네 번째 레이블에서 낸 'KAI'\n출처: @leehi_hi\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793239654/rdo7xsiniumkafvwprea.jpg\n소제목: 2012년, YG\n본문: SBS 〈K팝스타〉 시즌1 준우승.||그해 '1,2,3,4'로 데뷔한 이하이는 2019년까지 YG에 있었습니다.\n출처: @leehi_hi\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792028955/xqbmnxroqvi88cl5w3ic.jpg\n소제목: 2020년, AOMG\n본문: 2020년 7월 AOMG와 전속계약을 맺었고, 이튿날 '홀로'를 냈습니다.||2024년 3월, 그레이·우원재·구스범스와 함께 AOMG와의 계약을 마쳤습니다.\n출처: @leehi_hi\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792028960/mdgnq1xqrbykeokucxw1.jpg\n소제목: 2024년, 두오버\n본문: 그해 9월에는 그레이·코드 쿤스트·우원재가 공동 대표로 있는 두오버와 계약했습니다.||AOMG를 함께 떠난 그레이·우원재가 있는 곳이었습니다.\n출처: @leehi_hi\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793239650/adbu6m4bcawwlkojxoim.jpg\n소제목: 2026년, 808 HI\n본문: 올해 두오버와의 계약을 마무리한 이하이는 도끼와 함께 레이블 808 HI RECORDINGS를 세웠습니다.||3월 28일 첫 싱글이자 두 사람의 듀엣곡 'You & Me'로 관계도 함께 알렸습니다.\n출처: @leehi_hi\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793517942/plot_studio/x5yilks3tsdqtlmvxq3p.mp4\n소제목: \n본문: \n출처: 808 HI Recordings\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792028930/edxri1y8fmzzdohotg0z.jpg\n소제목: 그리고 'KAI'\n본문: 10월 31일, 그 레이블의 유튜브 채널에 도끼와 함께한 'KAI' 뮤직비디오가 무료로 올라왔습니다.||\"나도 모니터하러 감\"이라는 말과 함께였습니다.\n출처: @leehi_hi\n",
+    "caption": "이하이(@leehi_hi)가 직접 세운 레이블에서 새 노래를 냈습니다.\n\n10월 31일 808 HI RECORDINGS 유튜브 채널에 무료로 공개된 'KAI'인데요, 2012년 〈K팝스타〉 시즌1 준우승 뒤 YG에서 데뷔한 이하이는 2020년 AOMG(@aomgofficial), 2024년 두오버를 거쳐 올해 3월 도끼와 함께 이 레이블을 세웠습니다.\n\n첫 싱글 'You & Me'로 두 사람의 관계를 알렸고, 6월 'Bonnie n Clyde 26'에 이어 이번에도 도끼와 함께 부른 곡입니다.\n\n#PLOT #이하이 #도끼 #KAI #808HIRECORDINGS",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/fdVP028Z/52be5ca6ca24.jpg",
+      "credit": "@leehi_hi",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/870904680_18644535055000729_540383510399680602_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=rCIYmtRJI08Q7kNvwHRZeQI&_nc_oc=AdraZB_9Ri_nh4y4xOukMmEZ2SWrl1vx04m8DI05QoGSj63dGyRnCJqTMG7TW61s5Bs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=O2MGCnd6_DiA25ajkPk3Mw&oh=00_AQSbaKl_75z6-6VlKB7g_wHYC7EGdX1CAvqw6FCwnrkI1g&oe=6AEC95F3"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239646/iylyxiltcn0gmytjwkbw.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/683795490_18586378672000729_8123779528955301309_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9Hz-rFuIUkEQ7kNvwFSxx-q&_nc_oc=Adoqhu-4V5JDLJ6ogavSYy7k9Iy54-MGevG8QER9ROHq9xM_3okqhac6plE93m3VeOA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&oh=00_AQRKbFUeiXbYNCxOWwLd7UwnRMA5QkehW3tnm6d_w4zXQA&oe=6AE88A96"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028930/edxri1y8fmzzdohotg0z.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/833172000_18634511494000729_5712076875026000196_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=2EbrpakgtoMQ7kNvwFsHLsK&_nc_oc=AdrqMrE1frmSfjHgPIg6pfYkTuYWFR9U1ww_l0lRcR_vefOSyu_PjJH9Yc20U8KD7xM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQOM2r0beQvi1N_zX8yHELWgla2F-s8JnOwhMNtO6nD5IA&oe=6AD5F820"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028946/evbkyu1i7buapqjampr2.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772586380_18616953379000729_5514955606032424884_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=muO3hPWJCiMQ7kNvwHVNgBY&_nc_oc=AdppdAZOVLqXpnBAI60OEiaL7dFNdhhbwsoXEeFUp6suxLHlg2f-P6hauwPRRl8ClqI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQPGeVzXYpTbDVNaugo2oNkyEY3DRqh6Kvm6Vr2FTiOGrA&oe=6AD5EA25"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028951/zd6zsjmpdwqrxks9pqoe.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/730948924_18604868587000729_8450734543317852947_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8Gvk0jIHXXgQ7kNvwFSJoC0&_nc_oc=AdrTidkCOwEqyC6DUPBc_z014V1riBpoOS9d8bbvJhZaM99JUQUSe0hTUjTR4AdnPfs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQNi4l896qJ0Gy6rHJ0ljfkHlFd2xWMrQbl9DJ4jHBgWpQ&oe=6AD60040"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028955/xqbmnxroqvi88cl5w3ic.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716431073_18596547121000729_942893779076231816_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ayF5r9Gx_K0Q7kNvwFkZMLW&_nc_oc=AdoHbf2qiFejrQRosPIM2bgD9Wu-nfdi7Bhd0vPfEAjt0VZR1hzb8PAw2j--SH5ZFQE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQNMU-ZsTrO-8r9hfmGw6l64MHBgfhNeTkRvb9LBGWzOOA&oe=6AD5EB2C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239670/nncvucmyw60qcra2djyv.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/713543820_18595369894000729_2055511472073542472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=U5JWBjYpzT0Q7kNvwGUSdut&_nc_oc=AdrtV21HKIuq_qNNvoGzesB1JdEpUTGD-1fsxcSS0Txtl3f8PMVAC79TDd79WMaCZTo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&_nc_tpa=Q5bMBQLcYhS-Go5xsPgTLdPU6_ASoQeE_CyYmczv7OV-FTB-_8GLnMe8thtRrMcZrq0P1EEMleaK9rpeew&oh=00_AQSsCMlM-zpTL8ndf_zdPj_C-3_3VRfmvJCY7dtV_BU4iA&oe=6AE86AFF"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028960/mdgnq1xqrbykeokucxw1.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/708926497_18594730147000729_1052457544141197310_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=q7qsx8UOP9oQ7kNvwEVwJi-&_nc_oc=Adp66i2UFzIeTiRya4DK8U46wlCupUf5PHWJ86Nzv5N491---2Ms4mWqimpj_uJ6k1s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQPzkGG7JiKaW5c6KKB3gj54Nstx7s8OxU5DRSDsyrlKDQ&oe=6AD5EC3B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239678/kbtsuoqfbfxtabpa5ivq.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/709708658_18594698242000729_2193281274471389124_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=LdLVpO6WcQEQ7kNvwEg4ZAD&_nc_oc=Adpox341MyFLWNwYFSLbgwigu5C-hysqJb5cmbjhQcbEpa5DtIe8LfBOfCR9KU0j8M0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&_nc_tpa=Q5bMBQKkI_gP6ZGRYhqshu5sZY1XCZaGrXyOeu3sgWB1hcnuBXMy1HXMo6l1qnRA3mTQwMnontiKTHZhNA&oh=00_AQTitta7LyylliLj8zsoH8k1aWyDtZzVp6DFuRir8CP7Pw&oe=6AE8812A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239627/tnrrn8weq59ny5cjjsjq.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/682128377_18586381657000729_2448336618463380713_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9j4LWDw6kk0Q7kNvwHHQ543&_nc_oc=AdpSpnBwQ_Mr_o_X0VX407_zWCOkgINoAriYo2SZRpNt6vGCXdQKeRta5IfHSrbuar0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&oh=00_AQSirKJltfnyekRYfdYreya_nODuUTLT4gPht1tWE_6odg&oe=6AE891AF"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://i.ibb.co/fdVP028Z/52be5ca6ca24.jpg",
+      "credit": "@leehi_hi",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/870904680_18644535055000729_540383510399680602_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=rCIYmtRJI08Q7kNvwHRZeQI&_nc_oc=AdraZB_9Ri_nh4y4xOukMmEZ2SWrl1vx04m8DI05QoGSj63dGyRnCJqTMG7TW61s5Bs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=O2MGCnd6_DiA25ajkPk3Mw&oh=00_AQSbaKl_75z6-6VlKB7g_wHYC7EGdX1CAvqw6FCwnrkI1g&oe=6AEC95F3"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239646/iylyxiltcn0gmytjwkbw.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/683795490_18586378672000729_8123779528955301309_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9Hz-rFuIUkEQ7kNvwFSxx-q&_nc_oc=Adoqhu-4V5JDLJ6ogavSYy7k9Iy54-MGevG8QER9ROHq9xM_3okqhac6plE93m3VeOA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&oh=00_AQRKbFUeiXbYNCxOWwLd7UwnRMA5QkehW3tnm6d_w4zXQA&oe=6AE88A96"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028930/edxri1y8fmzzdohotg0z.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/833172000_18634511494000729_5712076875026000196_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=2EbrpakgtoMQ7kNvwFsHLsK&_nc_oc=AdrqMrE1frmSfjHgPIg6pfYkTuYWFR9U1ww_l0lRcR_vefOSyu_PjJH9Yc20U8KD7xM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQOM2r0beQvi1N_zX8yHELWgla2F-s8JnOwhMNtO6nD5IA&oe=6AD5F820"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028946/evbkyu1i7buapqjampr2.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772586380_18616953379000729_5514955606032424884_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=muO3hPWJCiMQ7kNvwHVNgBY&_nc_oc=AdppdAZOVLqXpnBAI60OEiaL7dFNdhhbwsoXEeFUp6suxLHlg2f-P6hauwPRRl8ClqI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQPGeVzXYpTbDVNaugo2oNkyEY3DRqh6Kvm6Vr2FTiOGrA&oe=6AD5EA25"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028951/zd6zsjmpdwqrxks9pqoe.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/730948924_18604868587000729_8450734543317852947_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=8Gvk0jIHXXgQ7kNvwFSJoC0&_nc_oc=AdrTidkCOwEqyC6DUPBc_z014V1riBpoOS9d8bbvJhZaM99JUQUSe0hTUjTR4AdnPfs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQNi4l896qJ0Gy6rHJ0ljfkHlFd2xWMrQbl9DJ4jHBgWpQ&oe=6AD60040"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028955/xqbmnxroqvi88cl5w3ic.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/716431073_18596547121000729_942893779076231816_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ayF5r9Gx_K0Q7kNvwFkZMLW&_nc_oc=AdoHbf2qiFejrQRosPIM2bgD9Wu-nfdi7Bhd0vPfEAjt0VZR1hzb8PAw2j--SH5ZFQE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQNMU-ZsTrO-8r9hfmGw6l64MHBgfhNeTkRvb9LBGWzOOA&oe=6AD5EB2C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239670/nncvucmyw60qcra2djyv.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/713543820_18595369894000729_2055511472073542472_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=U5JWBjYpzT0Q7kNvwGUSdut&_nc_oc=AdrtV21HKIuq_qNNvoGzesB1JdEpUTGD-1fsxcSS0Txtl3f8PMVAC79TDd79WMaCZTo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&_nc_tpa=Q5bMBQLcYhS-Go5xsPgTLdPU6_ASoQeE_CyYmczv7OV-FTB-_8GLnMe8thtRrMcZrq0P1EEMleaK9rpeew&oh=00_AQSsCMlM-zpTL8ndf_zdPj_C-3_3VRfmvJCY7dtV_BU4iA&oe=6AE86AFF"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792028960/mdgnq1xqrbykeokucxw1.jpg",
+      "credit": "@leehi_hi",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/708926497_18594730147000729_1052457544141197310_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=q7qsx8UOP9oQ7kNvwEVwJi-&_nc_oc=Adp66i2UFzIeTiRya4DK8U46wlCupUf5PHWJ86Nzv5N491---2Ms4mWqimpj_uJ6k1s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=ybOb_nGCM_Rq2g__4ppW8A&oh=00_AQPzkGG7JiKaW5c6KKB3gj54Nstx7s8OxU5DRSDsyrlKDQ&oe=6AD5EC3B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239678/kbtsuoqfbfxtabpa5ivq.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/709708658_18594698242000729_2193281274471389124_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=LdLVpO6WcQEQ7kNvwEg4ZAD&_nc_oc=Adpox341MyFLWNwYFSLbgwigu5C-hysqJb5cmbjhQcbEpa5DtIe8LfBOfCR9KU0j8M0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&_nc_tpa=Q5bMBQKkI_gP6ZGRYhqshu5sZY1XCZaGrXyOeu3sgWB1hcnuBXMy1HXMo6l1qnRA3mTQwMnontiKTHZhNA&oh=00_AQTitta7LyylliLj8zsoH8k1aWyDtZzVp6DFuRir8CP7Pw&oe=6AE8812A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239627/tnrrn8weq59ny5cjjsjq.jpg",
+      "credit": "@leehi_hi",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/682128377_18586381657000729_2448336618463380713_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&_nc_aid=0&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9j4LWDw6kk0Q7kNvwHHQ543&_nc_oc=AdpSpnBwQ_Mr_o_X0VX407_zWCOkgINoAriYo2SZRpNt6vGCXdQKeRta5IfHSrbuar0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hZ5hOHBiDc0rtrCwGfN3kA&oh=00_AQSirKJltfnyekRYfdYreya_nODuUTLT4gPht1tWE_6odg&oe=6AE891AF"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "YG부터 808 HI까지|이하이",
+      "sub": "네 번째 레이블에서 낸 'KAI'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 'Bonnie n Clyde 26'(6/5)은 스타뉴스(영문 AI 번역) 한 곳만 직접 확인 — 곡 제목 표기 한 번 더 확인",
+     "클립 위험: 낮음 — 808 HI Recordings (레이블 공식 채널) · 숏폼 1:38-2:03 은 자막상 후렴('down with us, no hesitation, I ride with you') — 미리보기에서 소리 확인",
+     "YG 계약 만료는 2019년 12월 31일(검색 요약 기준)이라 본문엔 '2019년까지'로만 · 레이블 이름 808·HI 뜻은 두 번째 출처 못 찾아 뺐음 · 보석 논란·차트 성적 기사는 다루지 않음"
+    ],
+    "research": [
+     {
+      "title": "이하이 인스타 10/31 — 'KAI 무료 공개함 808HI 유튜브로 나도 모니터하러 감!'",
+      "link": "https://www.instagram.com/p/DfKB-nNgZKi/"
+     },
+     {
+      "title": "톱스타뉴스 10/31 — 'KAI' 유튜브 무료 공개 · 808 HI RECORDINGS · 2012 K팝스타 시즌1 준우승 · 같은 해 '1,2,3,4' 데뷔",
+      "link": "https://topstarnews.net/news/articleView.html?idxno=16264742"
+     },
+     {
+      "title": "스포츠경향 11/1 — 31일 레이블 공식 유튜브에 'KAI' MV · 3월 공개 열애 · 808 하이 레코딩스 공동 설립",
+      "link": "https://sports.khan.co.kr/article/202611011024003"
+     },
+     {
+      "title": "808 HI Recordings — 도끼 (DOK2) 이하이 (LEEHI) - KAI (Official Music Video)",
+      "link": "https://www.youtube.com/watch?v=IapZoiOWryw"
+     },
+     {
+      "title": "Asiae 2020/7/23 — Lee Hi leaves YG for AOMG · 'Hollo' 같은 날 오후 6시",
+      "link": "https://www.asiae.co.kr/en/article/2020072310284260327"
+     },
+     {
+      "title": "Soompi — Lee Hi Officially Signs With AOMG",
+      "link": "https://www.soompi.com/article/1414286wpp/lee-hi-officially-signs-with-aomg-ahead-of-comeback"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://i.ibb.co/DP4WGxJf/1d6806417412.jpg",
+      "https://i.ibb.co/TMm2v5Tk/a705685a9be7.jpg",
+      "https://i.ibb.co/HD3RcqHR/7c67ec71a232.jpg",
+      "https://i.ibb.co/kV6MCT70/3298f5341659.jpg",
+      "https://i.ibb.co/YFBLfG2H/6f5f828a73ac.jpg",
+      "https://i.ibb.co/fzG8jxSb/a19a1fb0f112.jpg",
+      "https://i.ibb.co/zhNb6yRr/538792bec9be.jpg",
+      "https://i.ibb.co/zpMGK20/5fd8617d06ad.jpg"
+     ],
+     "covers": {
+      "A": "https://i.ibb.co/DP4WGxJf/1d6806417412.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-01T16:26+09:00",
+     "videos": {
+      "5": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793517959/plot_studio/fumydsmxximivqpbqy0v.mp4"
+     },
+     "v": {
+      "A": "3a62c711"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=IapZoiOWryw\n구간: 1:38-2:03\n곡: 다시 함께 부른 KAI\n아티스트: 도끼와 이하이가\n피처링:\n후킹: \n출처: 808 HI Recordings\n자막: 자동",
+    "caption": "이하이(@leehi_hi)와 도끼가 'KAI'를 무료로 공개했습니다.\n\n두 사람이 올해 3월 함께 세운 레이블 808 HI RECORDINGS의 유튜브 채널에 10월 31일 올라온 뮤직비디오인데요, 첫 싱글이자 듀엣곡 'You & Me', 6월 'Bonnie n Clyde 26'에 이어 다시 함께 부른 곡입니다.\n\n이하이는 인스타그램에 \"나도 모니터하러 감\"이라고 남겼습니다.\n\n#PLOT #이하이 #도끼 #KAI #808HIRECORDINGS",
+    "hooks": {
+     "A": "도끼와 이하이가 / 다시 함께 부른 KAI",
+     "B": "직접 세운 레이블에서 / 무료로 푼 이하이 신곡",
+     "C": "망설임 없이 함께 / 간다는 두 사람의 노래"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=IapZoiOWryw",
+     "credit": "808 HI Recordings",
+     "range": [
+      98.0,
+      123.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 'Bonnie n Clyde 26'(6/5)은 스타뉴스(영문 AI 번역) 한 곳만 직접 확인 — 곡 제목 표기 한 번 더 확인",
+     "클립 위험: 낮음 — 808 HI Recordings (레이블 공식 채널) · 숏폼 1:38-2:03 은 자막상 후렴('down with us, no hesitation, I ride with you') — 미리보기에서 소리 확인",
+     "YG 계약 만료는 2019년 12월 31일(검색 요약 기준)이라 본문엔 '2019년까지'로만 · 레이블 이름 808·HI 뜻은 두 번째 출처 못 찾아 뺐음 · 보석 논란·차트 성적 기사는 다루지 않음"
+    ],
+    "research": [
+     {
+      "title": "이하이 인스타 10/31 — 'KAI 무료 공개함 808HI 유튜브로 나도 모니터하러 감!'",
+      "link": "https://www.instagram.com/p/DfKB-nNgZKi/"
+     },
+     {
+      "title": "톱스타뉴스 10/31 — 'KAI' 유튜브 무료 공개 · 808 HI RECORDINGS · 2012 K팝스타 시즌1 준우승 · 같은 해 '1,2,3,4' 데뷔",
+      "link": "https://topstarnews.net/news/articleView.html?idxno=16264742"
+     },
+     {
+      "title": "스포츠경향 11/1 — 31일 레이블 공식 유튜브에 'KAI' MV · 3월 공개 열애 · 808 하이 레코딩스 공동 설립",
+      "link": "https://sports.khan.co.kr/article/202611011024003"
+     },
+     {
+      "title": "808 HI Recordings — 도끼 (DOK2) 이하이 (LEEHI) - KAI (Official Music Video)",
+      "link": "https://www.youtube.com/watch?v=IapZoiOWryw"
+     },
+     {
+      "title": "Asiae 2020/7/23 — Lee Hi leaves YG for AOMG · 'Hollo' 같은 날 오후 6시",
+      "link": "https://www.asiae.co.kr/en/article/2020072310284260327"
+     },
+     {
+      "title": "Soompi — Lee Hi Officially Signs With AOMG",
+      "link": "https://www.soompi.com/article/1414286wpp/lee-hi-officially-signs-with-aomg-ahead-of-comeback"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/IapZoiOWryw/maxresdefault.jpg",
+    "still": {
+     "url": "https://i.ibb.co/wrP4SNY9/619fc0b09b4b.jpg",
+     "key": "IapZoiOWryw@98.0"
+    },
+    "px": {
+     "vid": "IapZoiOWryw",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793518053/plot_studio/fbwcur7ic7guagasyceh.mp4",
+     "off": 53.0,
+     "end": 168.0,
+     "full": 214.0
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-11-01T16:28+09:00"
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "이번 회차 목표 둘(인물해부·숏폼)을 한 건에 · 이하이 인스타 3.4배 · 레이블 채널 영상이라 클립 위험 낮음",
+    "at": "2026-11-01T16:25+09:00"
+   },
+   "corner_name": "후속"
   }
  ],
  "skipped": [],
@@ -1734,7 +2024,7 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 2,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -1786,10 +2076,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-01T14:52+09:00"
+  "at": "2026-11-01T16:28+09:00"
  },
  "queue": {
-  "next": "2026-11-01T15:00+09:00",
+  "next": "2026-11-01T16:30+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-01T14:00+09:00"
@@ -1843,7 +2133,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.61,
+    "mult": 1.62,
     "median": 0.86,
     "n": 21
    }
