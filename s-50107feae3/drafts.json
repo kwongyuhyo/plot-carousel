@@ -685,7 +685,7 @@
    "added_at": "2026-11-01T10:17+09:00",
    "corner": "meet",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n로제(@roses_are_rosie)가 지수(@sooyaaa__)의 신곡 'ADDICTED' 챌린지 영상에 깜짝 등장했습니다.\n\n지수가 31일 인스타그램에 \"we so addicted..\"라는 글과 함께 올린 영상인데요, 음악에 맞춰 고개를 돌리는 지수 옆으로 금발의 로제가 들어와 턱과 관자놀이를 짚는 안무를 각자 추다가 이내 하나로 맞춰 춥니다.\n\n'ADDICTED'는 지난달 'CLICK'에 이어 지수가 첫 정규 앨범에 앞서 공개한 두 번째 곡으로, 30일 나왔습니다.\n\n#PLOT #지수 #로제 #블랙핑크 #ADDICTED\n\n[커버]\n소스: https://i.ibb.co/TD4Sq33d/425958d0f2b1.jpg\n제목: 지수 신곡 챌린지에|로제가 나타났다\n부제: ADDICTED\n출처: @sooyaaa__\n",
+    "form": "[카테고리]\nNews\n\n[캡션]\n로제(@roses_are_rosie)가 지수(@sooyaaa__)의 신곡 'ADDICTED' 챌린지 영상에 깜짝 등장했습니다.\n\n지수가 31일 인스타그램에 \"we so addicted..\"라는 글과 함께 올린 영상인데요, 음악에 맞춰 고개를 돌리는 지수 옆으로 금발의 로제가 들어와 턱과 관자놀이를 짚는 안무를 각자 추다가 이내 하나로 맞춰 춥니다.\n\n'ADDICTED'는 지난달 'CLICK'에 이어 지수가 첫 정규 앨범에 앞서 공개한 두 번째 곡으로, 30일 나왔습니다.\n\n#PLOT #지수 #로제 #블랙핑크 #ADDICTED\n\n[커버]\n소스: https://i.ibb.co/TD4Sq33d/425958d0f2b1.jpg\n제목: 지수 신곡 챌린지에|로제가 나타났다\n부제: ADDICTED\n출처: @sooyaaa__\n\n[슬라이드]\n형식: 자료\n소스: https://i.ibb.co/sdB06xS4/84932121df13.jpg\n소제목: \n본문: \n출처: @지수 인스타 10/31\n",
     "caption": "로제(@roses_are_rosie)가 지수(@sooyaaa__)의 신곡 'ADDICTED' 챌린지 영상에 깜짝 등장했습니다.\n\n지수가 31일 인스타그램에 \"we so addicted..\"라는 글과 함께 올린 영상인데요, 음악에 맞춰 고개를 돌리는 지수 옆으로 금발의 로제가 들어와 턱과 관자놀이를 짚는 안무를 각자 추다가 이내 하나로 맞춰 춥니다.\n\n'ADDICTED'는 지난달 'CLICK'에 이어 지수가 첫 정규 앨범에 앞서 공개한 두 번째 곡으로, 30일 나왔습니다.\n\n#PLOT #지수 #로제 #블랙핑크 #ADDICTED",
     "photos": [
      {
@@ -737,7 +737,7 @@
       "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_09njmpsn/auto_pdb_지수_인터뷰 화보_.jpg"
      }
     ],
-    "shape": "단신",
+    "shape": "맥락",
     "covers": [
      {
       "key": "A",
@@ -772,16 +772,22 @@
     "preview": {
      "slides": [
       "https://i.ibb.co/TqkYCnf0/ec41d2140000.jpg",
+      "https://i.ibb.co/0yqtr7hZ/d1be1df4ec51.jpg",
       "https://i.ibb.co/m5vPCc6N/c2adbdf78015.jpg"
      ],
      "covers": {
       "A": "https://i.ibb.co/TqkYCnf0/ec41d2140000.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-01T10:18+09:00",
+     "at": "2026-11-01T14:52+09:00",
      "v": {
-      "A": "e537248f"
+      "A": "74b9027a"
      }
+    },
+    "evidence": {
+     "at": "2026-11-01T14:52+09:00",
+     "from": "https://www.instagram.com/reel/DfJPgKrpB_z/",
+     "url": "https://i.ibb.co/sdB06xS4/84932121df13.jpg"
     }
    },
    "pick": {
@@ -1593,9 +1599,11 @@
      "end": 139.0,
      "full": 172.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-01T14:48+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793512326/plot_studio/vu5eku8p0xomvljqyz67.mp4",
+     "at": "2026-11-01T14:52+09:00",
+     "file": "AelBeom_An_NaeNeun_G_Ni_ChaegImILaDeon_Du_New_release_no_lyrics__cta.mp4",
+     "v": "debce86d"
     }
    },
    "corner_name": "이번 주 나온 앨범",
@@ -1778,7 +1786,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-01T14:48+09:00"
+  "at": "2026-11-01T14:52+09:00"
  },
  "queue": {
   "next": "2026-11-01T15:00+09:00",
