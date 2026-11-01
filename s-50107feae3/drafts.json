@@ -2576,6 +2576,62 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:danpyunsun-umakmanse-live",
+    "account": "PLOT 직접 촬영",
+    "url": "https://www.instagram.com/danpyunsun.moments.ens/",
+    "image": null,
+    "head": "기타쇼 낙원 2026 (낙원악기상가 · 10/31~11/1 무료) 단편선 순간들 '음악만세' 직접 촬영",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-01T23:26+09:00",
+   "key": "a883e536",
+   "by": "claude",
+   "subjects": [
+    "단편선 순간들"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "기타쇼 낙원 2026 단편선 순간들 마지막 곡 '음악만세' — PLOT 직접 촬영 Live Archive (규효 가편)",
+    "why": "규효 맡김 · 11/1 직접 촬영 · 가편·제목·캡션 규효 확정 · 발행은 규효가 직접"
+   },
+   "added": "claude",
+   "added_at": "2026-11-01T23:26+09:00",
+   "corner": "news",
+   "shorts": {
+    "form": "[영상]\n카테고리: Live Archive\nURL: https://res.cloudinary.com/dwndhzqod/video/upload/v1793543166/p2wc27cwuzugk6wro6wj.mp4\n구간: 0:00-0:36\n곡: 음악은 영원할 거니까\n아티스트: 음악은 계속되어야 하고\n피처링:\n후킹: \n출처: 촬영 PLOT",
+    "caption": "단편선 순간들이 '기타쇼 낙원 2026' 무대의 마지막 곡으로 '음악만세'를 꺼냈습니다. 2년 전 발표한 앨범 〈음악만세〉와 같은 이름의 곡인데요, 단편선이 \"음악!\"을 외치면 관객이 \"만세!\"로 받는 약속으로 곡이 시작됩니다. 낙원악기상가 한복판에서 터진 그 순간을 PLOT이 직접 담았습니다. 영상에서 함께 보시죠.\n\n@danpyunsun.moments.ens\n\n📹 PLOT 직접 촬영",
+    "hooks": {
+     "A": "음악은 계속되어야 하고 / 음악은 영원할 거니까"
+    },
+    "video": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793543166/p2wc27cwuzugk6wro6wj.mp4",
+     "credit": "촬영 PLOT",
+     "range": [
+      0.0,
+      36.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [],
+    "research": [],
+    "thumb": "",
+    "still": {
+     "url": "https://i.ibb.co/CqDnGn2/3b7d73a35eab.jpg",
+     "key": "@0.0"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2750,14 +2806,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 9,
+    "drafts": 10,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-01T21:14+09:00"
+  "at": "2026-11-01T23:26+09:00"
  },
  "queue": {
-  "next": "2026-11-01T21:16+09:00",
+  "next": "2026-11-01T23:28+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-01T17:40+09:00"
