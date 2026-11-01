@@ -1017,9 +1017,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     <button type="button" data-grp="info" aria-selected="true">이슈 · 뉴스</button>
     <button type="button" data-grp="plan" aria-selected="false">기획 소스</button>
     <button type="button" data-grp="draft" aria-selected="false" id="grpDraft">초안</button>
-    <button type="button" data-grp="series" aria-selected="false" id="grpSeries">정기 시리즈</button>
+    <button type="button" data-grp="series" aria-selected="false" id="grpSeries">시리즈</button>
     <button type="button" data-grp="made" aria-selected="false" id="grpMade">완성 영상</button>
-    <button type="button" data-grp="follow" aria-selected="false" id="grpFollow">후속 기획</button>
+    <button type="button" data-grp="follow" aria-selected="false" id="grpFollow" hidden>후속 기획</button>
     <a class="jump" href="perf.html">PLOT 성과 <span aria-hidden="true">→</span></a>
   </div>
 
@@ -2155,7 +2155,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   });
   // 10/20 — 앱을 새로 열면 늘 '이슈·뉴스' 였다. 마지막에 보던 칸으로, 처음이면 오늘의 초안으로 (하루 일의 시작점)
   try { var G0 = sessionStorage.getItem('plot.grp') || localStorage.getItem('plot.grp') || 'draft';
-    if (G0 === 'draft' || G0 === 'follow' || G0 === 'plan' || G0 === 'made' || G0 === 'series') showGroup(G0); } catch (e) {}
+    if (G0 === 'follow') G0 = 'draft';              // 11/2 후속 기획 탭은 숨김 (2주 동안 거의 안 씀)
+    if (G0 === 'draft' || G0 === 'plan' || G0 === 'made' || G0 === 'series') showGroup(G0); } catch (e) {}
 
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
   document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
@@ -4334,14 +4335,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       var best = slotChips()[0];
       acts.push(['sch', '예약 발행', (best ? '추천 ' + best.at + ' (' + best.why + ')' : '시각을 골라 예약') + ' — 맥이 켜져 있으면 그 시각에 올립니다']);
       var hasEv = /^형식:\s*자료\s*$/m.test(String((it.card || {}).form || ''));       // 자료 장 (10/29) — 원문 캡처를 글 없이 한 장
-      acts.push(['ev', hasEv ? '자료 장 다시 뜨기' : '자료 장 붙이기', '원문 영상 장면·게시물(없으면 기사 첫 화면)을 캡처해 글 없는 장으로 넣습니다 (1~2분 · 다시 그려 올림)']);
+      acts.push(['ev', hasEv ? '자료 영상 다시 붙이기' : '자료 영상·사진 붙이기', '근거 영상이면 그 구간을 영상 그대로, 영상이 없으면 기사·게시물 속 사진을 꽉 채운 장으로 넣습니다 — 화면 캡처는 안 합니다 (1~2분)']);
     }
     // 10/20 — 채택·버림은 카드 아래 '바로 올림 · 손보면 올림 · 안 올림' + 이유 칩 한 곳으로 (둘이 따로 있어 헷갈렸다)
     if (!DR_DAY && ['mag', 'claude'].indexOf((it.source || {}).kind || 'mag') >= 0) acts.push(['rd', '다시 쓰기 (방향 달기)', '고칠 방향을 적어 보내면 작성기가 그대로 고쳐 씁니다 — 비워 두면 처음부터 다시 (3~5분)']);
     if (!DR_DAY && kind === 'card' && (it.source || {}).kind === 'claude' && it.corner !== 'tteolgi') {   // 10/20 기사형 표지 한 장 ↔ 장 붙이기
       var nCard = (((it.card || {}).form || '').match(/^\[(커버|슬라이드)\]/gm) || []).length;
       if (nCard <= 1) acts.push(['ex', '본문 장 붙여 다시', '표지 한 장 초안에 본문 4~8장을 붙여 다시 씁니다 (5~10분)']);
-      else acts.push(['fd', '표지 한 장으로 다시', '기사형으로 — 장을 빼고 정보는 캡션으로 (3~5분)']);
+      // 11/2 정리 — '표지 한 장으로 다시'는 2주 동안 한 번도 안 써서 뺐다 (필요하면 '다시 쓰기'에 방향으로)
     }
     return acts;
   }
@@ -4715,9 +4716,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.02 01:15';
+    a.title = '판 11.02 01:16';
     var ver = document.createElement('span');
-    ver.textContent = '11.02 01:15';
+    ver.textContent = '11.02 01:16';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
