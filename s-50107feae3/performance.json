@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02 19:04 KST",
+ "generated_at": "2026-11-02 22:04 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-02 15:05 KST"
+  "daily": "2026-11-02 19:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-02T18:36:25+09:00",
+  "fetched_at": "2026-11-02T21:57:04+09:00",
   "posts": [
+   {
+    "t": "2026-11-02T20:03+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "모노사파의 첫 큐레이션 공연 라인업에는 모노사파가 두 번 적혀 있습니다."
+   },
    {
     "t": "2026-11-02T17:36+09:00",
     "type": "VIDEO",
@@ -2166,8 +2171,8 @@
  "drafts": {
   "days": 28,
   "drafts": 295,
-  "posted": 79,
-  "posts": 101,
+  "posted": 80,
+  "posts": 102,
   "rate": 0.27,
   "adopted_mult": 0.97,
   "own_mult": 1.09,
@@ -2184,7 +2189,7 @@
    },
    "정보": {
     "drafts": 186,
-    "posted": 64,
+    "posted": 65,
     "mult": 0.98
    },
    "클립": {
@@ -2271,7 +2276,7 @@
    },
    "tickets": {
     "drafts": 6,
-    "posted": 4,
+    "posted": 5,
     "mult": 0.95
    },
    "meet": {
@@ -2302,19 +2307,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-30",
-    "lane": "정보",
-    "who": "신해철",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "5156da3b",
-    "posted": "DfHaJc-FAoA",
-    "head": "고 신해철에게 은관문화훈장이 추서됐습니다.",
-    "url": "https://www.instagram.com/p/DfHaJc-FAoA/",
-    "mult": 0.91
-   },
    {
     "day": "2026-10-30",
     "lane": "정보",
@@ -2404,6 +2396,19 @@
     "posted": "DfO5JK5PFGN",
     "head": "136번째 오늘의 노래 | 2026.11.02",
     "url": "https://www.instagram.com/reel/DfO5JK5PFGN/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-02",
+    "lane": "정보",
+    "who": "모노사파",
+    "repack": false,
+    "grade": "A",
+    "corner": "tickets",
+    "key": "f03b364d",
+    "posted": "DfPJ8DJgjLh",
+    "head": "모노사파의 첫 큐레이션 공연 라인업에는 모노사파가 두 번 적혀 있습니다.",
+    "url": "https://www.instagram.com/p/DfPJ8DJgjLh/",
     "mult": null
    }
   ]
