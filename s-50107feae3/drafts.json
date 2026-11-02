@@ -1352,9 +1352,12 @@
      "end": 112.0,
      "full": 209.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-02T15:29+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793601076/plot_studio/ds7qsiuchr6lxgixxu9s.mp4",
+     "at": "2026-11-02T15:31+09:00",
+     "file": "11WolInDe_Wae_AJigDo_BangE_MoGiGa_IssEo_ONeulUi_NoLae_no_lyrics__cta.mp4",
+     "subs_note": "싱크 가사를 못 찾아 가사 없이 만듭니다 — 제작 앱 「가사」에서 고를 수 있어요",
+     "v": "70e7b22f"
     }
    },
    "corner_name": "오늘의 노래",
@@ -1537,10 +1540,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T15:29+09:00"
+  "at": "2026-11-02T15:31+09:00"
  },
  "queue": {
-  "next": "2026-11-02T15:31+09:00",
+  "next": "2026-11-02T15:33+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T14:18+09:00"
