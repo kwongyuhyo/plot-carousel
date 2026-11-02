@@ -1273,6 +1273,92 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-deee1a3f",
+    "account": "@규효 요청",
+    "url": "",
+    "image": null,
+    "head": "11월인데 왜 아직도 방에 모기가 있어 — 10CM '방에 모기가 있어'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-02T15:27+09:00",
+   "key": "267b43ce",
+   "by": "claude",
+   "subjects": [
+    "10CM"
+   ],
+   "lane": "시리즈",
+   "editor": {
+    "grade": "A",
+    "kind": "시리즈",
+    "angle": "11월인데 아직도 방에 모기가 있다면 — 10CM '방에 모기가 있어'",
+    "why": "규효 직접 선곡 (오늘의 노래) · 철 지난 모기라는 공감 후킹"
+   },
+   "added": "claude",
+   "added_at": "2026-11-02T15:27+09:00",
+   "corner": "song",
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=d5cV86Sa6k0\n구간: 0:44-1:07\n곡: 방에 모기가 있어\n아티스트: 11월인데 왜 아직도\n피처링:\n후킹: \n출처: 1theK (원더케이)\n음원: 10CM - 방에 모기가 있어\n가사: 자동",
+    "caption": "136번째 오늘의 노래 | 2026.11.02\n\n10CM의 '방에 모기가 있어'는 잠 못 드는 여름밤의 모기에 \"지금 누가 생각나\"라는 물음을 얹은 곡입니다.\n\n모기에 잘 물리는 편이라는 권정열은 차를 타고 가다 이 곡의 아이디어가 떠올랐다고 밝혔는데요, 모기를 잡을 수도 창문을 열 수도 없는 밤, 그렇게 사소한 이유로라도 상대가 나를 떠올려 주길 바라는 마음이 후렴의 'Do You Think Of Me'로 이어집니다.\n\n더운 여름 언제 어디서든 10CM를 생각해 주길 바라며 쓴 곡이라지만, 11월에도 방에 모기가 남아 있다면 아직은 이 노래의 계절입니다.\n\nArtist | 10CM\nTitle | 방에 모기가 있어 (Do You Think Of Me?)\nReleased | 2019.08.06\n\n#PLOT #오늘의노래 #10CM #십센치 #방에모기가있어 #권정열",
+    "hooks": {
+     "A": "11월인데 왜 아직도 / 방에 모기가 있어",
+     "B": "모기에 잘 물리는 10cm가 / 차 안에서 떠올린 노래",
+     "C": "모기 때문에 깬 밤 / 떠오르는 얼굴 하나"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=d5cV86Sa6k0",
+     "credit": "1theK (원더케이)",
+     "range": [
+      44.0,
+      67.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 1theK (원더케이) 공식 MV 유통 채널",
+     "구간 확인: 0:44 '방에 모기가 있어' 후렴 첫머리부터 1:07 까지 (MV 자막 시각 기준)"
+    ],
+    "research": [
+     {
+      "title": "동아닷컴 — 10cm(십센치) 새 싱글 '방에 모기가 있어' 발매 (2019.8.6)",
+      "link": "https://v.daum.net/v/20190806090539987"
+     },
+     {
+      "title": "지니 매거진 — 10cm의 신곡 '방에 모기가 있어' 자켓 프로필 촬영 현장",
+      "link": "https://www.genie.co.kr/magazine/subMain?ctid=1&mgz_seq=7164"
+     },
+     {
+      "title": "[MV] 10cm _ Do You Think Of Me?(방에 모기가 있어) — 1theK (2019.8.6)",
+      "link": "https://www.youtube.com/watch?v=d5cV86Sa6k0"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/d5cV86Sa6k0/maxresdefault.jpg",
+    "still": {
+     "url": "https://i.ibb.co/RGTkP8bB/0c29990f5d51.jpg",
+     "key": "d5cV86Sa6k0@44.0"
+    },
+    "px": {
+     "vid": "d5cV86Sa6k0",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793600936/plot_studio/zfnbjm5nrhgicmc3zu6k.mp4",
+     "off": 0.0,
+     "end": 112.0,
+     "full": 209.0
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-11-02T15:29+09:00"
+    }
+   },
+   "corner_name": "오늘의 노래",
+   "corner_no": 1
   }
  ],
  "skipped": [],
@@ -1339,7 +1425,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -1451,10 +1537,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T15:19+09:00"
+  "at": "2026-11-02T15:29+09:00"
  },
  "queue": {
-  "next": "2026-11-02T15:21+09:00",
+  "next": "2026-11-02T15:31+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T14:18+09:00"
