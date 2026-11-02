@@ -1020,8 +1020,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   <div id="err" class="err" hidden></div>
 
   <div class="split" id="grp">
-    <button type="button" data-grp="info" aria-selected="true">이슈 · 뉴스</button>
-    <button type="button" data-grp="plan" aria-selected="false">기획 소스</button>
+    <button type="button" data-grp="info" aria-selected="true" hidden>이슈 · 뉴스</button>
+    <button type="button" data-grp="plan" aria-selected="false" hidden>기획 소스</button>
     <button type="button" data-grp="draft" aria-selected="false" id="grpDraft">초안</button>
     <button type="button" data-grp="series" aria-selected="false" id="grpSeries">시리즈</button>
     <button type="button" data-grp="made" aria-selected="false" id="grpMade">완성 영상</button>
@@ -2161,8 +2161,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   });
   // 10/20 — 앱을 새로 열면 늘 '이슈·뉴스' 였다. 마지막에 보던 칸으로, 처음이면 오늘의 초안으로 (하루 일의 시작점)
   try { var G0 = sessionStorage.getItem('plot.grp') || localStorage.getItem('plot.grp') || 'draft';
-    if (G0 === 'follow') G0 = 'draft';              // 11/2 후속 기획 탭은 숨김 (2주 동안 거의 안 씀)
-    if (G0 === 'draft' || G0 === 'plan' || G0 === 'made' || G0 === 'series') showGroup(G0); } catch (e) {}
+    // 11/2 규효 "이슈·뉴스랑 기획 소스 탭 없애도 될 듯" — 후속 기획과 함께 숨김. 처음 화면은 초안
+    if (G0 === 'follow' || G0 === 'info' || G0 === 'plan') G0 = 'draft';
+    showGroup(G0 === 'made' || G0 === 'series' ? G0 : 'draft'); } catch (e) {}
 
   document.getElementById('tCand').addEventListener('click', function () { showTab('cand'); });
   document.getElementById('tAcct').addEventListener('click', function () { showTab('acct'); });
@@ -4758,6 +4759,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     })
     .then(boot)
     .catch(function (err) {
+      if (GRP !== 'info') return;                   // 11/2 후보(이슈·뉴스) 탭을 숨겨서 — 초안 화면에 빨간 안내를 띄우지 않는다
       document.getElementById('stamp').textContent = '';
       var e = document.getElementById('err');
       e.hidden = false;
@@ -4776,9 +4778,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.02 14:56';
+    a.title = '판 11.02 15:05';
     var ver = document.createElement('span');
-    ver.textContent = '11.02 14:56';
+    ver.textContent = '11.02 15:05';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
