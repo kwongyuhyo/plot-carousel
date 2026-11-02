@@ -2025,6 +2025,115 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-2da8b3fb",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/p/DfO0ohdk0nk/?img_index=2&rpxt=MTM2Nm8yaDJkN3QweA==",
+    "image": null,
+    "head": "모노사파 첫 큐레이션 공연 '반골' 라인업에 모노사파가 두 번 — 부캐까지 따로 무대에",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-02T17:45+09:00",
+   "key": "f03b364d",
+   "by": "claude",
+   "subjects": [
+    "모노사파"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "첫 큐레이션 공연 라인업에 모노사파와 '어둠속성 모노사파'가 따로 올랐다",
+    "why": "음지 래퍼 모노사파의 첫 큐레이션 공연 '반골' 발표 · 다른 매거진이 다루는 화제 · 언더그라운드 실험 칸"
+   },
+   "added": "claude",
+   "added_at": "2026-11-02T17:45+09:00",
+   "corner": "tickets",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n모노사파의 첫 큐레이션 공연 라인업에는 모노사파가 두 번 적혀 있습니다.\n\n오는 28일 홍대 롤링홀에서 열리는 'mono sapa presents : 反骨(반골)' 출연진에 모노사파와 그의 또 다른 자아 '어둠속성 모노사파'가 따로 이름을 올렸는데요, 여기에 루루, 최성, 스카이민혁(@skyminhyuk)이 함께합니다. 지난 4월 루루의 단독 공연 무대에 함께 섰던 모노사파가 이번엔 자기 무대로 루루를 부른 셈입니다.\n\n반골은 뼈가 거꾸로 솟았다는 말로, 권위에 고분고분하지 않은 기질을 가리킵니다. 그 이름을 내건 첫 공연에서 모노사파와 어둠속성 모노사파가 한 무대에 따로 오릅니다.\n\n공연은 11월 28일(토) 오후 5시, 예매는 멜론티켓에서 진행 중입니다.\n\n#PLOT #모노사파 #어둠속성모노사파 #반골 #루루 #롤링홀\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793609146/k2fm7a3pbzjxd9yp7fzt.jpg\n제목: 모노사파가 직접 꾸린|첫 큐레이션 공연 '반골'\n부제: 11월 28일 롤링홀 · 루루 · 최성 · 스카이민혁\n출처: \n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793609150/plot_studio/j2uxkxet9oi7mxobir6c.mp4\n소제목: \n본문: \n출처: @규효 공유 · @hiptake_\n",
+    "caption": "모노사파의 첫 큐레이션 공연 라인업에는 모노사파가 두 번 적혀 있습니다.\n\n오는 28일 홍대 롤링홀에서 열리는 'mono sapa presents : 反骨(반골)' 출연진에 모노사파와 그의 또 다른 자아 '어둠속성 모노사파'가 따로 이름을 올렸는데요, 여기에 루루, 최성, 스카이민혁(@skyminhyuk)이 함께합니다. 지난 4월 루루의 단독 공연 무대에 함께 섰던 모노사파가 이번엔 자기 무대로 루루를 부른 셈입니다.\n\n반골은 뼈가 거꾸로 솟았다는 말로, 권위에 고분고분하지 않은 기질을 가리킵니다. 그 이름을 내건 첫 공연에서 모노사파와 어둠속성 모노사파가 한 무대에 따로 오릅니다.\n\n공연은 11월 28일(토) 오후 5시, 예매는 멜론티켓에서 진행 중입니다.\n\n#PLOT #모노사파 #어둠속성모노사파 #반골 #루루 #롤링홀",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793609146/k2fm7a3pbzjxd9yp7fzt.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793609146/k2fm7a3pbzjxd9yp7fzt.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "모노사파가 직접 꾸린|첫 큐레이션 공연 '반골'",
+      "sub": "11월 28일 롤링홀 · 루루 · 최성 · 스카이민혁"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "라인업에 모노사파가|두 번 있는 공연",
+      "sub": "모노사파 presents '반골' · 11월 28일 롤링홀"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 3월 롤링홀 공연 문구 '말 안 듣는 사람들만 섭외했다'는 X 원문이 열리지 않고 다른 곳에서도 확인되지 않아 캡션 문장과 표지 C 안을 뺐습니다 — 원문을 보셨다면 다시 넣어도 됩니다",
+     "모노사파 사진이 사진 DB 에 없어 멜론티켓 공식 포스터만 넣었습니다 — 본인 인스타 사진이 있으면 「사진 바꾸기」로"
+    ],
+    "research": [
+     {
+      "title": "멜론티켓 — mono sapa(모노사파) presents : 反骨(반골)",
+      "link": "https://ticket.melon.com/performance/index.htm?prodId=214221"
+     },
+     {
+      "title": "멜론티켓 — 루루 단독콘서트 '사랑愛' : 롤링 31주년 기념공연",
+      "link": "https://ticket.melon.com/performance/index.htm?prodId=212938"
+     },
+     {
+      "title": "롤링홀 X — 루루 단독콘서트 티켓 오픈 (출연 Ruru, mono sapa)",
+      "link": "https://x.com/rollinghall1995/status/2034102501201334601"
+     },
+     {
+      "title": "Irrelevant Music X — 3월 2일 롤링홀 라이브 공지",
+      "link": "https://x.com/irrlvntmusic/status/2016088928315703769"
+     },
+     {
+      "title": "나무위키 — mono sapa",
+      "link": "https://namu.wiki/w/mono%20sapa"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793609156/wtbnxggxnauevqz8qjws.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793609158/vbi2ydfwwcrqlcvbdutm.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793609156/gcyhqlmz7ufphkq3v9fe.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793609161/nukz437lj7laeft1uczl.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793609156/wtbnxggxnauevqz8qjws.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-02T17:46+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793609156/plot_studio/fl5pqwkejphztoeqncns.mp4"
+     },
+     "v": {
+      "A": "1a892c17",
+      "B": "afa46d58"
+     }
+    }
+   },
+   "corner_name": "이번 주 티켓 오픈",
+   "corner_no": 6
   }
  ],
  "skipped": [],
@@ -2163,7 +2272,7 @@
     "need_today": 0,
     "day": 0,
     "next_no": 5,
-    "drafts": 1,
+    "drafts": 2,
     "why": "월요일 고정 — 이번 주 예매가 열리는 공연·내한·페스티벌을 날짜·시간·예매처로"
    },
    {
@@ -2203,7 +2312,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T17:41+09:00"
+  "at": "2026-11-02T17:45+09:00"
  },
  "queue": {
   "next": "2026-11-02T18:38+09:00",
