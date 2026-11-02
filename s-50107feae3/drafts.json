@@ -1362,6 +1362,271 @@
    },
    "corner_name": "오늘의 노래",
    "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "claude:ord-7524c110",
+    "account": "@규효 요청 · 입문 가이드",
+    "url": "",
+    "image": null,
+    "head": "알고 보니 이미 들어 본 시티팝 — 익숙한 곡으로 들어가는 입문 가이드",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-02T15:53+09:00",
+   "key": "1f1d5c12",
+   "by": "claude",
+   "subjects": [
+    "김현철",
+    "윤수일",
+    "죠지"
+   ],
+   "lane": "시리즈",
+   "editor": {
+    "grade": "A",
+    "kind": "시리즈",
+    "angle": "한국인이 이미 아는 곡에서 출발하는 시티팝 입문 — 김현철 '오랜만에'·윤수일·유빈에서 'Plastic Love'까지",
+    "why": "규효 요청 연재 '만약 당신이 [장르]가 궁금하다면' · 익숙한 노래 기준"
+   },
+   "added": "claude",
+   "added_at": "2026-11-02T15:53+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n시티팝은 생각보다 이미 귀에 익은 장르입니다.\n\n1970~80년대 도시의 밤을 닮은 팝인데요, 한국에도 윤수일과 김현철의 곡들이 뒤늦게 '한국 시티팝'이라는 이름을 얻었습니다. 그래서 이번 입문은 한 번쯤 들어 본 노래에서 출발합니다.\n\n김현철 – '오랜만에'\n윤수일 – '아름다워'\n타케우치 마리야 – 'Plastic Love'\n마츠바라 미키 – '真夜中のドア〜stay with me'\n\n시티팝에 입문할 때 저장해 두세요.\n\n#PLOT #시티팝 #김현철 #윤수일 #타케우치마리야 #마츠바라미키\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793602384/djhn9japh3lcqninm4ek.jpg\n제목: 만약 당신이 시티팝이|궁금하다면\n부제: 시티팝 입문 가이드\n출처: 멜론\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793602391/ri2mbbyduxhf3brm0dgf.jpg\n소제목: 시티팝은 어떤 소리인가요\n본문: 도시의 밤을 차로 달리는 기분을 닮은 팝입니다.||반짝이는 신디사이저와 키보드, 통통 튀는 베이스 위로 재즈·펑크·R&B의 그루브가 섞여 있는데요, 신나는데 어딘가 쓸쓸한 그 온도가 시티팝의 얼굴입니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793602393/w7osi0hgygjrvp4f4cwi.jpg\n소제목: 어디서 왔나요\n본문: 1970년대 후반부터 80년대, 호황기 일본 대도시에서 꽃핀 음악입니다. 야마시타 타츠로·타케우치 마리야가 대표 이름입니다.||한국에선 윤수일, 김현철의 80년대 곡들이 뒤늦게 '한국 시티팝'으로 불렸는데요, 2010년대 후반 유튜브 알고리즘이 이 노래들을 다시 꺼냈습니다.\n출처: 멜론\n\n[슬라이드]\n형식: 곡\n음원: 김현철 - 오랜만에\n소스: \n소제목: 한국 시티팝의 첫 문\n본문: 1989년 1집에 실린 곡입니다. 찰랑이는 기타와 부드러운 베이스 위로 힘을 뺀 목소리가 흐릅니다. 2018년 죠지가 다시 불러 요즘 귀에도 익숙한 곡이라, 한국 시티팝을 여기서 시작하기 좋습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 윤수일 - 아름다워\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793602395/nznhtfldzu7qzyohemak.jpg\n소제목: '아파트'의 그 목소리로\n본문: 1984년 3집 타이틀곡입니다. '아파트'로 아는 윤수일의 목소리가 경쾌한 밴드 사운드와 신스 위에 올라갑니다. MZ세대에서 '한국 시티팝 원조'로 다시 불리며 디깅된 곡입니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Mariya Takeuchi - Plastic Love\n소스: \n소제목: 알고리즘이 데려온 노래\n본문: 1984년 야마시타 타츠로와 함께 만든 [VARIETY]에 실린 곡입니다. 통통 튀는 베이스와 브라스 위로 쓸쓸한 가사가 흐릅니다. 유튜브 추천으로 30여 년 만에 세계에 퍼진, 시티팝 열풍의 상징 같은 곡입니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 松原みき / Miki Matsubara - Mayonaka no Door~stay with me\n소스: \n소제목: 한 번 들으면 남는 후렴\n본문: 1979년에 나온 마츠바라 미키의 데뷔 싱글입니다. 'stay with me'를 되풀이하는 후렴이 귀에 오래 남습니다. 2020년 인도네시아 가수 레이니치가 유튜브에 커버를 올린 해, 41년 만에 다시 세계에서 불리기 시작했습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792711856/jfzmyiwsu1rewnmbbosk.jpg\n소제목: 지금 시티팝을 하는 사람들\n본문: **김현철** — 2021년 11집 [City Breeze & Love Song]을 전곡 AOR 시티팝으로 채웠습니다. '오랜만에'의 기타 솔로도 다시 등장합니다.||**죠지** — '오랜만에'를 새로 불렀고, 김현철과 무대에 함께 섰습니다.||**나이트 템포** — 서울 출신 프로듀서입니다. 2016년 유튜브에 올라온 'Plastic Love' 리믹스로 이름을 알렸고, 이 리믹스가 원곡의 인기에도 힘을 보탰습니다.\n출처: @leeeegeorge\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793602397/wh6oryv3tfxwka8c5y6e.jpg\n소제목: 다음에 들을 것\n본문: **AOR** — 시티팝과 가장 가까운, 매끈한 어른의 록입니다.||**퓨처 펑크** — 시티팝을 잘게 잘라 빠르게 다시 붙인 전자음악입니다. 나이트 템포가 대표 이름입니다.||**베이퍼웨이브** — 퓨처 펑크가 갈라져 나온 뿌리로, 80년대 소리를 느리고 몽롱하게 늘립니다.\n출처: 멜론\n",
+    "caption": "시티팝은 생각보다 이미 귀에 익은 장르입니다.\n\n1970~80년대 도시의 밤을 닮은 팝인데요, 한국에도 윤수일과 김현철의 곡들이 뒤늦게 '한국 시티팝'이라는 이름을 얻었습니다. 그래서 이번 입문은 한 번쯤 들어 본 노래에서 출발합니다.\n\n김현철 – '오랜만에'\n윤수일 – '아름다워'\n타케우치 마리야 – 'Plastic Love'\n마츠바라 미키 – '真夜中のドア〜stay with me'\n\n시티팝에 입문할 때 저장해 두세요.\n\n#PLOT #시티팝 #김현철 #윤수일 #타케우치마리야 #마츠바라미키",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602384/djhn9japh3lcqninm4ek.jpg",
+      "credit": "멜론",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/106/26/575/10626575_20210614102747_1000.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602387/mflzysc6jqjzvgzkemgo.jpg",
+      "credit": "@leeeegeorge",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711873/cdha0byycrvsjkln6ubf.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602389/stfccupvpumoj1xmi91h.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712006/tjqijhevceofrrt9oofr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711971/yhcnwkf2owichehau7ei.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639970291_18564170890012699_2717767793111853659_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=lwLi7Ee5pw8Q7kNvwGh4jwh&_nc_oc=AdoSwEV82rtdpKMvXsnrK77KIRpsmqDAnrST5GGAsFOo2z6QoHJxF0MBwmKox94DzqA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQOequSt_k_541OFNS3UtsOPQfRnHOv7Gsahpo0rLY0O2g&oe=6AE063BC"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711942/mnbv2g1h6t5zd45nhvs4.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/656638968_18111079270687654_2107281922093266728_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TQ2WctGht1EQ7kNvwEzmHmj&_nc_oc=AdqqWRumV4HuygUhSvA10413tkMO9cg7qTsU7jzgubuQXBZX9mynec8OUL55KqB_cak&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQP-wFIWAe5dSlDLDJC-bbHCDunpLfiIkrdgvNZlKSiyHg&oe=6AE0794C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711958/ypyh9ksuh7lmogujwnrl.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/656165503_18088862447134834_6530790762262798477_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nfUKHb_CZz4Q7kNvwGmoNfQ&_nc_oc=AdpQWiAWjejvH-QgSajRL5NI0TR8Pk8rDITQQBB1JO8_5qpFnl6CGEzRnJF3_PgaypA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQO8QbkZ16T-3q0eH-bPWmI6PVp49xMZB3jTzBdM99QNZg&oe=6AE05794"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711986/dzrmed0jvtrzweh5ydtf.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/652818260_18099731365757487_4895989349703304186_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RfwMev0akF0Q7kNvwH_hhs_&_nc_oc=AdoRYWnJ0nqYu_IX__AJ3jXgrhhxxTGPH4RRFZ27Aj2CSRZ62UgSB6XnBCulRKgCjpc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQOQm__BTfsEuAvx-hgm3d_QaEluRDQ-zp4OmxxfDr6asw&oe=6AE06B8E"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711990/jorkx6vq5ej4fhgdqjto.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/655667692_18075611540565722_5743999249278498669_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3rz9UFi3BRwQ7kNvwE69LLU&_nc_oc=AdpRm8-0fq23lJBP4eZsyW9PDlRxamBCfeD4masBnbfg6FE7NF746RY3j0zvyzV6S0U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQNQ6olqL7-0kx3AtqyVvageA72Nk-c5BEZbHB_AiIrt3g&oe=6AE068B3"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711856/jfzmyiwsu1rewnmbbosk.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/795914340_18625764343061447_8239479684387937096_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Y6MRaUzSVSoQ7kNvwGCNWHr&_nc_oc=AdoeAn0qgA2QPR7QyaHc-gYE-0dOXz7JzlpIRk3hk8goC0GbENLDpFaKL2Re8IDuUek&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQOUu1CXGzw3bqEtnpGsyqPUeZ8JAsj-zB5GyFNOoRHvZQ&oe=6AE0752B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711864/udajumkhb32jltbxelpa.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/752189642_18610178683061447_1945466143840580010_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nwhl-KyLzgAQ7kNvwGNvW1q&_nc_oc=Adqife86HSABzoaNRp4-5IykkWYlBXG0y_K-_r7dBagum9hsB_kwwTqiZvCim0q0SsU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQPZqgV2GQrZ_Xv1HG17Q5MuPOWm4IwKGhJ3R1rLABgyEg&oe=6AE06277"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711868/sahm0g2p4vxd9mdtcczo.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/754143751_18610178701061447_1736624311613896268_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=o5pUx3k7dt4Q7kNvwFhjUzj&_nc_oc=AdovPaKdSr_VoMWUdfjm-glWyxed633jDGu1tVPTINhLDbqOsOvA3bDiQVdEdgA-EFg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQO70PVM9Sy3TDdT3sxG-MD3bE_oFv3GTSritXNzWUVE-Q&oe=6AE06E56"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711873/cdha0byycrvsjkln6ubf.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/752524780_18610178692061447_2539798928246360500_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aL7cJ6Y0QGAQ7kNvwFtxxD2&_nc_oc=AdrQR4eGNjiw9_2gjozWqxUmxoJ6T51XPKCvFO4rp2NcxwAY9BJqtHNQX9o9OztFPf4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQM_PGY3GnojjGuaDgGL9gY6kUAUvAHeJepbAdumrEGxlA&oe=6AE08167"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602384/djhn9japh3lcqninm4ek.jpg",
+      "credit": "멜론",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/106/26/575/10626575_20210614102747_1000.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602387/mflzysc6jqjzvgzkemgo.jpg",
+      "credit": "@leeeegeorge",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711873/cdha0byycrvsjkln6ubf.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602389/stfccupvpumoj1xmi91h.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792712006/tjqijhevceofrrt9oofr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711971/yhcnwkf2owichehau7ei.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/639970291_18564170890012699_2717767793111853659_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=lwLi7Ee5pw8Q7kNvwGh4jwh&_nc_oc=AdoSwEV82rtdpKMvXsnrK77KIRpsmqDAnrST5GGAsFOo2z6QoHJxF0MBwmKox94DzqA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQOequSt_k_541OFNS3UtsOPQfRnHOv7Gsahpo0rLY0O2g&oe=6AE063BC"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711942/mnbv2g1h6t5zd45nhvs4.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/656638968_18111079270687654_2107281922093266728_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TQ2WctGht1EQ7kNvwEzmHmj&_nc_oc=AdqqWRumV4HuygUhSvA10413tkMO9cg7qTsU7jzgubuQXBZX9mynec8OUL55KqB_cak&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQP-wFIWAe5dSlDLDJC-bbHCDunpLfiIkrdgvNZlKSiyHg&oe=6AE0794C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711958/ypyh9ksuh7lmogujwnrl.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/656165503_18088862447134834_6530790762262798477_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nfUKHb_CZz4Q7kNvwGmoNfQ&_nc_oc=AdpQWiAWjejvH-QgSajRL5NI0TR8Pk8rDITQQBB1JO8_5qpFnl6CGEzRnJF3_PgaypA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQO8QbkZ16T-3q0eH-bPWmI6PVp49xMZB3jTzBdM99QNZg&oe=6AE05794"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711986/dzrmed0jvtrzweh5ydtf.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/652818260_18099731365757487_4895989349703304186_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RfwMev0akF0Q7kNvwH_hhs_&_nc_oc=AdoRYWnJ0nqYu_IX__AJ3jXgrhhxxTGPH4RRFZ27Aj2CSRZ62UgSB6XnBCulRKgCjpc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQOQm__BTfsEuAvx-hgm3d_QaEluRDQ-zp4OmxxfDr6asw&oe=6AE06B8E"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711990/jorkx6vq5ej4fhgdqjto.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/655667692_18075611540565722_5743999249278498669_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3rz9UFi3BRwQ7kNvwE69LLU&_nc_oc=AdpRm8-0fq23lJBP4eZsyW9PDlRxamBCfeD4masBnbfg6FE7NF746RY3j0zvyzV6S0U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQNQ6olqL7-0kx3AtqyVvageA72Nk-c5BEZbHB_AiIrt3g&oe=6AE068B3"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711856/jfzmyiwsu1rewnmbbosk.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/795914340_18625764343061447_8239479684387937096_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Y6MRaUzSVSoQ7kNvwGCNWHr&_nc_oc=AdoeAn0qgA2QPR7QyaHc-gYE-0dOXz7JzlpIRk3hk8goC0GbENLDpFaKL2Re8IDuUek&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQOUu1CXGzw3bqEtnpGsyqPUeZ8JAsj-zB5GyFNOoRHvZQ&oe=6AE0752B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711864/udajumkhb32jltbxelpa.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/752189642_18610178683061447_1945466143840580010_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=nwhl-KyLzgAQ7kNvwGNvW1q&_nc_oc=Adqife86HSABzoaNRp4-5IykkWYlBXG0y_K-_r7dBagum9hsB_kwwTqiZvCim0q0SsU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQPZqgV2GQrZ_Xv1HG17Q5MuPOWm4IwKGhJ3R1rLABgyEg&oe=6AE06277"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711868/sahm0g2p4vxd9mdtcczo.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/754143751_18610178701061447_1736624311613896268_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=o5pUx3k7dt4Q7kNvwFhjUzj&_nc_oc=AdovPaKdSr_VoMWUdfjm-glWyxed633jDGu1tVPTINhLDbqOsOvA3bDiQVdEdgA-EFg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQO70PVM9Sy3TDdT3sxG-MD3bE_oFv3GTSritXNzWUVE-Q&oe=6AE06E56"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792711873/cdha0byycrvsjkln6ubf.jpg",
+      "credit": "@leeeegeorge",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/752524780_18610178692061447_2539798928246360500_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=aL7cJ6Y0QGAQ7kNvwFtxxD2&_nc_oc=AdrQR4eGNjiw9_2gjozWqxUmxoJ6T51XPKCvFO4rp2NcxwAY9BJqtHNQX9o9OztFPf4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=0qpw03BpSF0k3i_j5OFEuA&oh=00_AQM_PGY3GnojjGuaDgGL9gY6kUAUvAHeJepbAdumrEGxlA&oe=6AE08167"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "만약 당신이 시티팝이|궁금하다면",
+      "sub": "시티팝 입문 가이드"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "알고 보니 이미 들어 본|시티팝 네 곡",
+      "sub": "시티팝 입문 가이드"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "'오랜만에'부터|'Plastic Love'까지",
+      "sub": "시티팝 입문 가이드"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기가 01~04장만 나와 '아름다워'·'Plastic Love'·'Mayonaka no Door'·'지금 시티팝을 하는 사람들'·'다음에 들을 것' 장 사진(곡 커버·죠지 사진)은 눈으로 못 봤습니다 — 앱에서 확인해 주세요",
+     "윤수일은 '아파트'가 아니라 '아름다워'(1984)를 곡 장으로 넣었습니다 — 기사에서 '한국 시티팝 원조'로 불린 곡이 '아름다워'라서입니다",
+     "곡 장 커버(멜론 자동)가 원곡 앨범으로 붙었는지 — 특히 'Plastic Love'·'Mayonaka no Door'는 재발매·베스트 커버가 많습니다"
+    ],
+    "research": [
+     {
+      "title": "뉴스토마토 · 김현철 \"'시티팝' 사탕 이름인 줄\" (2019.5.17)",
+      "link": "https://newstomato.com/ReadNews.aspx?no=896120"
+     },
+     {
+      "title": "뉴스토마토 · 김현철, 전곡 시티팝 11집 'City Breeze & Love Song' (2021.6.11)",
+      "link": "https://newstomato.com/ReadNews.aspx?no=1051023"
+     },
+     {
+      "title": "뉴시스 · 윤수일 정규 25집 (2025.3.25)",
+      "link": "https://mobile.newsis.com/view/NISX20250320_0003105541"
+     },
+     {
+      "title": "뉴시스 · 윤수일, 韓 시티팝 원형 (2026.4.17)",
+      "link": "https://mobile.newsis.com/view/NISX20260406_0003578534"
+     },
+     {
+      "title": "GQ Korea · 윤수일밴드 (2022.9.16)",
+      "link": "https://www.gqkorea.co.kr/?p=197948"
+     },
+     {
+      "title": "텐아시아 · 유빈 '숙녀' 시티팝 (2018.6)",
+      "link": "https://www.tenasia.co.kr/article/2018060477864"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602404/mdvp2x9u7mfiqyygj9s0.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602404/tzhbusow8qpnp1av2yvk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602404/p7aarglullsbsax58kvo.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602404/yhetvldcvt7wxadykjqz.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602405/iu1lcmf3dhrggykjcerq.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602405/cbavyin9bupcn34ess8c.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602405/ijccsoftlgjrnjcabbpt.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602406/whwvjcrrb705ruawftmx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602407/o0ensqeyhjyebstav7k4.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602407/wersq67fh8jutzhj5eww.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602409/oxeeudhibvzxvlf2vbik.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602409/p3chtschyxqcdhddmjo1.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793602404/mdvp2x9u7mfiqyygj9s0.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-02T15:53+09:00",
+     "videos": {
+      "3": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793602231/plot_studio/pjxhj5ewejlhhqsybfo9.mp4",
+      "4": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793602439/plot_studio/cijodcqeowwlnbnma9xl.mp4",
+      "5": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793602356/plot_studio/eadsnqksyie5ncwfkxa4.mp4",
+      "6": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793602356/plot_studio/syopvg4ru1otpf4e8wqz.mp4"
+     },
+     "vkey": "89a9def0791f",
+     "v": {
+      "A": "7312fec7",
+      "B": "eb90e44c",
+      "C": "1528ecae"
+     }
+    }
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 2
   }
  ],
  "skipped": [],
@@ -1404,7 +1669,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 2,
-    "drafts": 0,
+    "drafts": 1,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1540,10 +1805,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T15:31+09:00"
+  "at": "2026-11-02T15:53+09:00"
  },
  "queue": {
-  "next": "2026-11-02T15:33+09:00",
+  "next": "2026-11-02T15:56+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T14:18+09:00"
