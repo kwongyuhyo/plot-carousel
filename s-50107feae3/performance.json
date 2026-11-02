@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02 15:05 KST",
+ "generated_at": "2026-11-02 19:04 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-01 22:04 KST"
+  "daily": "2026-11-02 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-02T15:05:04+09:00",
+  "fetched_at": "2026-11-02T18:36:25+09:00",
   "posts": [
+   {
+    "t": "2026-11-02T17:36+09:00",
+    "type": "VIDEO",
+    "head": "136번째 오늘의 노래 | 2026.11.02"
+   },
    {
     "t": "2026-11-02T14:18+09:00",
     "type": "VIDEO",
@@ -2160,9 +2165,9 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 289,
-  "posted": 78,
-  "posts": 100,
+  "drafts": 295,
+  "posted": 79,
+  "posts": 101,
   "rate": 0.27,
   "adopted_mult": 0.97,
   "own_mult": 1.09,
@@ -2178,7 +2183,7 @@
     "mult": 3.3
    },
    "정보": {
-    "drafts": 182,
+    "drafts": 186,
     "posted": 64,
     "mult": 0.98
    },
@@ -2203,8 +2208,8 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 18,
-    "posted": 3,
+    "drafts": 20,
+    "posted": 4,
     "mult": 0.8
    },
    "속보": {
@@ -2220,7 +2225,7 @@
   },
   "corners": {
    "news": {
-    "drafts": 161,
+    "drafts": 162,
     "posted": 54,
     "mult": 0.96
    },
@@ -2235,8 +2240,8 @@
     "mult": null
    },
    "song": {
-    "drafts": 9,
-    "posted": 0,
+    "drafts": 10,
+    "posted": 1,
     "mult": null
    },
    "tteolgi": {
@@ -2265,17 +2270,17 @@
     "mult": 1.81
    },
    "tickets": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 4,
     "mult": 0.95
    },
    "meet": {
-    "drafts": 6,
+    "drafts": 7,
     "posted": 2,
     "mult": 1.0
    },
    "intro": {
-    "drafts": 2,
+    "drafts": 4,
     "posted": 1,
     "mult": 0.58
    },
@@ -2297,19 +2302,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-10-30",
-    "lane": "정보",
-    "who": "포스트 말론",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "7e3fe5b0",
-    "posted": "DfHfH-1DLkZ",
-    "head": "포스트 말론이 미발매 신곡 한 소절을 직접 공개했습니다.",
-    "url": "https://www.instagram.com/p/DfHfH-1DLkZ/",
-    "mult": 0.77
-   },
    {
     "day": "2026-10-30",
     "lane": "정보",
@@ -2399,6 +2391,19 @@
     "posted": "DfOiZmagl3y",
     "head": "잔나비(@bandjannabi)의 첫 아시아 투어는 타이베이 무대 앞 짧은 구호로 시작됐습",
     "url": "https://www.instagram.com/reel/DfOiZmagl3y/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-02",
+    "lane": "시리즈",
+    "who": "10CM",
+    "repack": false,
+    "grade": "A",
+    "corner": "song",
+    "key": "267b43ce",
+    "posted": "DfO5JK5PFGN",
+    "head": "136번째 오늘의 노래 | 2026.11.02",
+    "url": "https://www.instagram.com/reel/DfO5JK5PFGN/",
     "mult": null
    }
   ]
