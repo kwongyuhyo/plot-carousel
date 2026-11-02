@@ -266,7 +266,7 @@
     }
    },
    "corner_name": "이번 주 티켓 오픈",
-   "corner_no": 4
+   "corner_no": 5
   },
   {
    "source": {
@@ -1075,7 +1075,7 @@
    "added_at": "2026-11-02T14:14+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n저스트뮤직의 컴필레이션 [파급효과 2]가 이달 말 나올 예정인 것으로 알려졌습니다.\n\n스윙스(@itsjustswings)가 SNS로 이달 말 발매와 뮤직비디오 공개 계획을 밝혔다는 소식이 전해졌는데요, 그 시작은 지난 7월 4일 먼저 공개된 '파급효과2'였습니다. 스윙스와 그냥노창 곁에 율음(@yuleumhong), shinjihang, hyeminsong이 함께 이름을 올린 곡입니다.\n\n2014년 6월 저스트뮤직의 첫 컴필레이션 [파급효과]가 나온 지 12년, 가사 속 'It's JM season 2'라는 말처럼 같은 이름 아래 새 얼굴들이 다음 장을 엽니다.\n\n#PLOT #스윙스 #저스트뮤직 #파급효과2 #그냥노창 #율음\n\n[커버]\n소스: https://i.ibb.co/tMwQwNV7/2b2c2d20b951.jpg\n제목: 스윙스, 이달 말|[파급효과 2] 예고\n부제: 2014년 [파급효과] 이후 12년 만의 후속작\n출처: @itsjustswings\n",
+    "form": "[카테고리]\nNews\n\n[캡션]\n저스트뮤직의 컴필레이션 [파급효과 2]가 이달 말 나올 예정인 것으로 알려졌습니다.\n\n스윙스(@itsjustswings)가 SNS로 이달 말 발매와 뮤직비디오 공개 계획을 밝혔다는 소식이 전해졌는데요, 그 시작은 지난 7월 4일 먼저 공개된 '파급효과2'였습니다. 스윙스와 그냥노창 곁에 율음(@yuleumhong), shinjihang, hyeminsong이 함께 이름을 올린 곡입니다.\n\n2014년 6월 저스트뮤직의 첫 컴필레이션 [파급효과]가 나온 지 12년, 가사 속 'It's JM season 2'라는 말처럼 같은 이름 아래 새 얼굴들이 다음 장을 엽니다.\n\n#PLOT #스윙스 #저스트뮤직 #파급효과2 #그냥노창 #율음\n\n[커버]\n소스: https://i.ibb.co/tMwQwNV7/2b2c2d20b951.jpg\n제목: 스윙스, 이달 말|[파급효과 2] 예고\n부제: 2014년 [파급효과] 이후 12년 만의 후속작\n출처: @itsjustswings\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793600329/plot_studio/p7gr0unvk9rvnkhqdjs6.mp4\n소제목: \n본문: \n출처: YouTube AP Alchemy\n",
     "caption": "저스트뮤직의 컴필레이션 [파급효과 2]가 이달 말 나올 예정인 것으로 알려졌습니다.\n\n스윙스(@itsjustswings)가 SNS로 이달 말 발매와 뮤직비디오 공개 계획을 밝혔다는 소식이 전해졌는데요, 그 시작은 지난 7월 4일 먼저 공개된 '파급효과2'였습니다. 스윙스와 그냥노창 곁에 율음(@yuleumhong), shinjihang, hyeminsong이 함께 이름을 올린 곡입니다.\n\n2014년 6월 저스트뮤직의 첫 컴필레이션 [파급효과]가 나온 지 12년, 가사 속 'It's JM season 2'라는 말처럼 같은 이름 아래 새 얼굴들이 다음 장을 엽니다.\n\n#PLOT #스윙스 #저스트뮤직 #파급효과2 #그냥노창 #율음",
     "photos": [
      {
@@ -1121,7 +1121,7 @@
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500900/mgogfdrzt0jypdjqgo0t.jpg"
      }
     ],
-    "shape": "단신",
+    "shape": "맥락",
     "covers": [
      {
       "key": "A",
@@ -1177,6 +1177,7 @@
     "preview": {
      "slides": [
       "https://i.ibb.co/k6rGppgZ/2f7d27830851.jpg",
+      "https://i.ibb.co/hhX9j9p/fb9d0f3e78ff.jpg",
       "https://i.ibb.co/5gVrLnrJ/5c2ef91cf69d.jpg"
      ],
      "covers": {
@@ -1185,12 +1186,20 @@
       "A": "https://i.ibb.co/k6rGppgZ/2f7d27830851.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-02T14:15+09:00",
+     "at": "2026-11-02T15:19+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793600342/plot_studio/o75mstzy2fq0ffqd3zsg.mp4"
+     },
      "v": {
-      "A": "34741632",
-      "B": "471c58bb",
-      "C": "0974688a"
+      "A": "3158f562",
+      "B": "016aae5d",
+      "C": "cc934635"
      }
+    },
+    "evidence": {
+     "at": "2026-11-02T15:18+09:00",
+     "from": "https://www.youtube.com/watch?v=olzR1p2FhzY",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793600329/plot_studio/p7gr0unvk9rvnkhqdjs6.mp4"
     }
    },
    "shorts": {
@@ -1270,7 +1279,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 7,
-  "done": 0,
+  "done": 1,
   "goal": 28,
   "corners": [
    {
@@ -1397,11 +1406,11 @@
     "key": "tickets",
     "name": "이번 주 티켓 오픈",
     "weekly": 1,
-    "done": 0,
-    "left": 1,
-    "need_today": 1,
+    "done": 1,
+    "left": 0,
+    "need_today": 0,
     "day": 0,
-    "next_no": 4,
+    "next_no": 5,
     "drafts": 1,
     "why": "월요일 고정 — 이번 주 예매가 열리는 공연·내한·페스티벌을 날짜·시간·예매처로"
    },
@@ -1442,16 +1451,16 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T14:21+09:00"
+  "at": "2026-11-02T15:19+09:00"
  },
  "queue": {
-  "next": "2026-11-02T15:18+09:00",
+  "next": "2026-11-02T15:21+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T14:18+09:00"
  },
  "slots": {
-  "basis": 284,
+  "basis": 285,
   "card": [
    {
     "from": 18,
