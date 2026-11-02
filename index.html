@@ -759,14 +759,49 @@ const F = ASSETS.fonts;                      // eb / sb / nb
 const TEXT_MAX_X = W - 76;                   // 1004 — 11/2 오른쪽 안전영역을 왼쪽(76)과 같게 (generators/card_news.py 와 같게)
 const BODY_LEFT = 76, BODY_TOP_LIMIT = 200, BODY_BOTTOM_LIMIT = 1195;
 const BODY_MAX_LINES = 8, BODY_HEAD_GAP = 0.25, PARA_GAP = 0.2;   // PARA_GAP 10/31 단락 사이
-const HEADING_SIZE = 67, HEADING_MIN = 40, BODY_SIZE = 36;
+const HEADING_SIZE = 67, HEADING_MIN = 40, BODY_SIZE = 40, BODY_FK = "sb";   // 11/2 규효 본문 얇게(세미볼드)+40 — card_news.BODY_FONT 와 같게
+/* 본문 폼 (11/2 시안 D·F) — generators/card_news.py 와 같게 */
+const BODY_GRAD = [0.35, 238, 1.2];
+const SHADE_RISE = 260, SHADE_AT_TEXT = 165, SHADE_BOTTOM = 238;
+/* 글 블록 뒤 어둡게 — card_news.body_shade 와 같게 */
+function bodyShade(ctx, top) {
+  if (top == null) { bottomGradient(ctx, ...BODY_GRAD); return; }
+  const r0 = Math.max(0, top - SHADE_RISE);
+  for (let y = r0; y < H; y++) {
+    const a = y < top ? SHADE_AT_TEXT * Math.pow((y - r0) / Math.max(1, top - r0), 1.6)
+                      : SHADE_AT_TEXT + (SHADE_BOTTOM - SHADE_AT_TEXT) * (y - top) / Math.max(1, H - top);
+    const ai = Math.trunc(a); if (ai <= 0) continue;
+    ctx.fillStyle = `rgba(0,0,0,${ai / 255})`; ctx.fillRect(0, y, W, 1);
+  }
+}
+const KICKER_SIZE = 26, KICKER_STEP = 44, ACCENT_W = 56, ACCENT_H = 5, ACCENT_STEP = 30;
+const FEATURE_TAGS = ["feature", "spotlight", "special", "deep dive", "기획", "스포트라이트", "특집"];
+const F_PHOTO_H = 700, F_LABEL_Y = 736, F_RULE_Y = 780, F_TEXT_Y = 806, F_PHOTO_MIN = 520, F_HEAD_TOP = 106;
+/* **굵게** — card_news._bold_split / _line_flags 와 같게 */
+function boldSplit(para) {
+  const parts = para.split("**"); const cs = [], fs = [];
+  parts.forEach((p, k) => { const b = k % 2 === 1 && k < parts.length - 1; for (const ch of chars(p)) { cs.push(ch); fs.push(b); } });
+  const out = [], fl = [];
+  cs.forEach((ch, i) => { if (/\s/.test(ch)) { if (out.length && out[out.length - 1] !== " ") { out.push(" "); fl.push(false); } } else { out.push(ch); fl.push(fs[i]); } });
+  while (out.length && out[out.length - 1] === " ") { out.pop(); fl.pop(); }
+  return [out.join(""), fl, out];
+}
+function lineFlags(lines, plainChars, flags) {
+  let pos = 0;
+  return lines.map((ln) => chars(ln).map((ch) => {
+    let q = pos; while (q < plainChars.length && plainChars[q] !== ch) q++;
+    if (q < plainChars.length) { pos = q + 1; return flags[q]; } return false;
+  }));
+}
+const isFeature = (c) => { const t = String(c || "").trim().toLowerCase(); return FEATURE_TAGS.some((x) => t.startsWith(x)); };
+const bodyKicker = (idx, cover) => { const t = normBreaks(cover || "").split(/\s+/).filter(Boolean).join(" "); return t ? String(idx).padStart(2, "0") + "  " + t : ""; };
 const SLOGAN = "당신의 음악생활을 위한 종합 음악 매거진, PLOT";
 
 const TYPO = {
   cover_title:    { leading: 1.16, tracking: -0.025 },
   cover_subtitle: { leading: 1.34, tracking: -0.010 },
   body_heading:   { leading: 1.22, tracking: -0.020 },
-  body_text:      { leading: 1.45, tracking: -0.005 },
+  body_text:      { leading: 1.52, tracking: -0.008 },
   slogan:         { leading: 1.30, tracking: -0.010 },
   source:         { leading: 1.30, tracking:  0.000 },
 };
@@ -915,14 +950,14 @@ function phraseLines(toks, fk, size, maxW, tr, n) {
   const best = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(Infinity));
   const back = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(-1));
   best[0][0] = 0;
+  const t = Math.min(maxW, Wd(0, m) / n * 1.02);   // 11/2 "줄바꿈 고르게" — 줄 하나의 목표 폭
   for (let k = 1; k <= n; k++) for (let j = 1; j <= m; j++) for (let i = j - 1; i >= 0; i--) {
     if (best[i][k - 1] === Infinity) continue;
     const w = Wd(i, j);
     if (w > maxW) break;
-    const fill = w / maxW;
     let c;
-    if (j < m) { if (k === n || fill < 0.5) continue; c = 8 * (1 - fill) ** 2 + breakCost(toks[j - 1]); }
-    else { if (k !== n) continue; c = fill < 0.28 ? 3 : 0; }
+    if (j < m) { if (k === n || w < t * 0.6) continue; const d = (w - t) / t; c = 30 * d * d + 0.8 * breakCost(toks[j - 1]); }
+    else { if (k !== n) continue; const sh = Math.max(0, t * 0.8 - w) / t; c = 30 * sh * sh + (w < t * 0.4 ? 3 : 0); }
     const v = best[i][k - 1] + c;
     if (v < best[j][k]) { best[j][k] = v; back[j][k] = i; }
   }
@@ -1112,10 +1147,10 @@ function drawPhoto(ctx, img, fit) {
                 Math.round(v.nw), Math.round(v.nh));
 }
 
-function bottomGradient(ctx, startFrac) {
+function bottomGradient(ctx, startFrac, strength = 210, power = 1.4) {
   const start = Math.trunc(H * startFrac);
   for (let y = start; y < H; y++) {
-    const a = Math.trunc(210 * Math.pow((y - start) / (H - start), 1.4));
+    const a = Math.trunc(strength * Math.pow((y - start) / (H - start), power));
     if (a <= 0) continue;
     ctx.fillStyle = `rgba(0,0,0,${a / 255})`;
     ctx.fillRect(0, y, W, 1);
@@ -1256,37 +1291,38 @@ function fitCommonHeadingSize(headings, maxW) {
   return size;
 }
 
-function slideBody(ctx, img, category, heading, bodyText, source, headingSize, fit) {
-  if (img) drawPhoto(ctx, img, fit); else fillEmpty(ctx);
-  bottomGradient(ctx, 0.35);
-  pasteLogo(ctx); applyTag(ctx, category);
+function bodyLayout(heading, bodyText, headingSize, avail, trim) {
   const maxW = TEXT_MAX_X - BODY_LEFT;
-  const hasHeading = !!(heading || "").trim();
-  const hasBody = !!(bodyText || "").trim();
-
   const bodyTr = TYPO.body_text.tracking * BODY_SIZE;
   const bodyAdv = lineAdvance(BODY_SIZE, TYPO.body_text.leading);
-  let bodyLines = [];
-  if (hasBody) {
+  let bodyLines = [], bodyFlags = [];
+  if ((bodyText || "").trim()) {
     for (let para of normBreaks(bodyText).split("\n")) {
       para = para.trim();
-      if (!para) { if (bodyLines.length && bodyLines[bodyLines.length - 1] !== "") bodyLines.push(""); continue; }
-      bodyLines.push(...wrapSmart(para, "eb", BODY_SIZE, maxW, bodyTr, false));
+      if (!para) { if (bodyLines.length && bodyLines[bodyLines.length - 1] !== "") { bodyLines.push(""); bodyFlags.push([]); } continue; }
+      const [plain, fl, pc] = boldSplit(para);
+      if (!plain) continue;
+      const lines = wrapSmart(plain, BODY_FK, BODY_SIZE, maxW - (fl.some(Boolean) ? 14 : 0), bodyTr, false);
+      bodyLines.push(...lines); bodyFlags.push(...lineFlags(lines, pc, fl));
     }
-    if (bodyLines.length > BODY_MAX_LINES) {
-      fitSay("body", { kind: "lines", want: BODY_MAX_LINES, got: bodyLines.length });
-      bodyLines = bodyLines.slice(0, BODY_MAX_LINES);
-      bodyLines[bodyLines.length - 1] =
-        ellipsisTracked(bodyLines[bodyLines.length - 1], "eb", BODY_SIZE, maxW, bodyTr);
+    const nText = bodyLines.filter(Boolean).length;   // 11/2 빈 줄은 줄 수에 안 센다 (card_news 와 같게)
+    if (nText > BODY_MAX_LINES) {
+      if (!trim) return null;
+      fitSay("body", { kind: "lines", want: BODY_MAX_LINES, got: nText });
+      let cut = 0, cnt = 0;
+      while (cut < bodyLines.length) { cnt += bodyLines[cut] ? 1 : 0; cut++; if (cnt === BODY_MAX_LINES) break; }
+      bodyLines = bodyLines.slice(0, cut); bodyFlags = bodyFlags.slice(0, cut);
+      const k = bodyLines.length - 1;
+      bodyLines[k] = ellipsisTracked(bodyLines[k], BODY_FK, BODY_SIZE, maxW, bodyTr);
+      bodyFlags[k] = bodyFlags[k].concat(new Array(chars(bodyLines[k]).length).fill(false)).slice(0, chars(bodyLines[k]).length);
     }
   }
-  // 10/31 규효 "단락을 나누면 칸이 너무 떨어진다" — 빈 줄은 한 줄의 PARA_GAP 만큼 (generators/card_news.py 와 같게)
+  // 10/31 규효 "단락을 나누면 칸이 너무 떨어진다" — 빈 줄은 한 줄의 PARA_GAP 만큼
   const advOf = (ln) => ln === "" ? Math.round(bodyAdv * PARA_GAP) : bodyAdv;
-  const blockH = () => { while (bodyLines.length && bodyLines[bodyLines.length - 1] === "") bodyLines.pop(); return bodyLines.reduce((a, ln) => a + advOf(ln), 0); };
-  let bodyBlockH = blockH();
+  while (bodyLines.length && bodyLines[bodyLines.length - 1] === "") { bodyLines.pop(); bodyFlags.pop(); }
 
-  let headLines = [], hSize = 0, headTr = 0, headAdv = 0, headingH = 0;
-  if (hasHeading) {
+  let headLines = [], hSize = 0, headTr = 0, headAdv = 0;
+  if ((heading || "").trim()) {
     const em = TYPO.body_heading.tracking;
     hSize = headingSize ? Math.trunc(headingSize) : HEADING_SIZE;
     const parts = normBreaks(heading).split("\n").map((x) => x.trim()).filter(Boolean);
@@ -1294,43 +1330,97 @@ function slideBody(ctx, img, category, heading, bodyText, source, headingSize, f
       while (hSize > HEADING_MIN &&
              parts.some((x) => twTracked(x, "eb", hSize, em * hSize) > maxW)) hSize -= 2;
     }
-    if (hSize < HEADING_SIZE)
+    if (trim && hSize < HEADING_SIZE)
       fitSay("heading", { kind: "shrink", want: HEADING_SIZE, got: hSize, min: HEADING_MIN });
     headTr = em * hSize;
     headAdv = lineAdvance(hSize, TYPO.body_heading.leading);
     for (const x of parts) headLines.push(...wrapSmart(x, "eb", hSize, maxW, headTr, false));
-    headingH = headLines.length * headAdv;
   }
-
-  let gap = (headLines.length && bodyLines.length) ? Math.round(bodyAdv * BODY_HEAD_GAP) : 0;
-  let totalH = headingH + gap + bodyBlockH;
-  const avail = BODY_BOTTOM_LIMIT - BODY_TOP_LIMIT;
-  while (bodyLines.length && totalH > avail) {
-    bodyLines.pop();
-    bodyBlockH = blockH();
-    gap = (headLines.length && bodyLines.length) ? Math.round(bodyAdv * BODY_HEAD_GAP) : 0;
-    totalH = headingH + gap + bodyBlockH;
+  const tot = () => {
+    const gap = (headLines.length && bodyLines.length) ? Math.round(bodyAdv * BODY_HEAD_GAP) : 0;
+    return [headLines.length * headAdv + gap + bodyLines.reduce((a, ln) => a + advOf(ln), 0), gap];
+  };
+  let [total, gap] = tot();
+  while (bodyLines.length && total > avail) {
+    if (!trim) return null;
+    bodyLines.pop(); bodyFlags.pop();
+    while (bodyLines.length && bodyLines[bodyLines.length - 1] === "") { bodyLines.pop(); bodyFlags.pop(); }
+    [total, gap] = tot();
   }
+  return { headLines, hSize, headTr, headAdv, bodyLines, bodyFlags, bodyTr, advOf, gap, total, maxW,
+           headingH: headLines.length * headAdv,
+           bodyH: bodyLines.reduce((a, ln) => a + advOf(ln), 0) };
+}
+function bodyPaint(ctx, L, top) {
+  if (L.headLines.length) hit("heading", BODY_LEFT, top - 8, L.maxW, L.headingH + 8);
+  if (L.bodyLines.length) hit("body", BODY_LEFT, top + L.headingH + L.gap - 6, L.maxW, L.bodyH + 10);
+  L.headLines.forEach((ln, k) =>
+    drawTracked(ctx, BODY_LEFT, top + k * L.headAdv, ln, "eb", L.hSize, "#ffffff", L.headTr));
+  let y = top + L.headingH + L.gap;
+  L.bodyLines.forEach((line, n) => {
+    const fl = L.bodyFlags[n] || [];
+    if (line && fl.some(Boolean)) {
+      let cx = BODY_LEFT;
+      chars(line).forEach((ch, q) => {
+        const fk = fl[q] ? "eb" : BODY_FK;
+        drawTracked(ctx, cx, y, ch, fk, BODY_SIZE, "#ffffff", 0);
+        cx += advOf(fk, BODY_SIZE, ch) + L.bodyTr;
+      });
+    } else if (line) drawTracked(ctx, BODY_LEFT, y, line, BODY_FK, BODY_SIZE, "#ffffff", L.bodyTr);
+    y += L.advOf(line);
+  });
+}
+function kickerLine(ctx, kicker, y, fill) {
+  drawTracked(ctx, BODY_LEFT, y, ellipsisTracked(kicker, "sb", KICKER_SIZE, TEXT_MAX_X - BODY_LEFT, 0),
+              "sb", KICKER_SIZE, fill, 0);
+}
+/* F 지면형 (기획) — 위 사진 · 아래 검은 지면 · 회색 라벨 · 가는 선 */
+function slideBodyFeature(ctx, img, category, source, kicker, L) {
+  const textTop = Math.min(F_TEXT_Y, BODY_BOTTOM_LIMIT - L.total);
+  const phH = textTop - F_HEAD_TOP;
+  if (!NOFILL) { ctx.fillStyle = "rgb(16,16,16)"; ctx.fillRect(0, 0, W, H); }
+  if (img) {
+    const sw = img.naturalWidth || img.width, sh = img.naturalHeight || img.height;
+    const sc = Math.max(W / sw, phH / sh);
+    const cw = W / sc, ch = phH / sc;
+    ctx.imageSmoothingQuality = "high";
+    ctx.drawImage(img, (sw - cw) * 0.5, (sh - ch) * 0.35, cw, ch, 0, 0, W, phH);
+  }
+  pasteLogo(ctx); applyTag(ctx, category);
+  if (kicker) kickerLine(ctx, kicker, textTop - (F_TEXT_Y - F_LABEL_Y), "rgb(170,170,170)");
+  ctx.fillStyle = "rgb(80,80,80)"; ctx.fillRect(BODY_LEFT, textTop - (F_TEXT_Y - F_RULE_Y) - 1, TEXT_MAX_X - BODY_LEFT, 2);
+  bodyPaint(ctx, L, textTop);
+  drawSource(ctx, source);
+  hitCommon(category, source);
+}
 
-  if (headLines.length || bodyLines.length) {
-    const blockTop = Math.max(BODY_BOTTOM_LIMIT - totalH, BODY_TOP_LIMIT);
-    if (headLines.length) hit("heading", BODY_LEFT, blockTop - 8, maxW, headingH + 8);
-    if (bodyLines.length)
-      hit("body", BODY_LEFT, blockTop + headingH + gap - 6, maxW, bodyBlockH + 10);
-    headLines.forEach((ln, k) =>
-      drawTracked(ctx, BODY_LEFT, blockTop + k * headAdv, ln, "eb", hSize, "#ffffff", headTr));
-    let y = blockTop + headingH + gap;
-    for (const line of bodyLines) {
-      if (line) drawTracked(ctx, BODY_LEFT, y, line, "eb", BODY_SIZE, "#ffffff", bodyTr);
-      y += advOf(line);
+function slideBody(ctx, img, category, heading, bodyText, source, headingSize, fit, kicker, allowF) {
+  const hasText = !!((heading || "").trim() || (bodyText || "").trim());
+  if (allowF && hasText && isFeature(category)) {
+    const LF = bodyLayout(heading, bodyText, headingSize, BODY_BOTTOM_LIMIT - F_PHOTO_MIN - F_HEAD_TOP, false);
+    if (LF) return slideBodyFeature(ctx, img, category, source, kicker, LF);
+  }
+  if (img) drawPhoto(ctx, img, fit); else fillEmpty(ctx);
+  const kickH = (kicker && hasText) ? KICKER_STEP + ACCENT_STEP : 0;
+  const L = bodyLayout(heading, bodyText, headingSize, BODY_BOTTOM_LIMIT - BODY_TOP_LIMIT - kickH, true);
+  const maxW = L.maxW;
+  const hasLines = !!(L.headLines.length || L.bodyLines.length);
+  const top = Math.max(BODY_BOTTOM_LIMIT - L.total, BODY_TOP_LIMIT + kickH);
+  bodyShade(ctx, hasLines ? top - kickH : null);
+  pasteLogo(ctx); applyTag(ctx, category);
+  if (hasLines) {
+    if (kickH) {
+      kickerLine(ctx, kicker, top - kickH, "rgba(255,255,255,0.85)");
+      ctx.fillStyle = "#ffffff"; ctx.fillRect(BODY_LEFT, top - kickH + KICKER_STEP, ACCENT_W, ACCENT_H);
     }
+    bodyPaint(ctx, L, top);
   } else {
     /* 글이 아직 없는 장 — 눌러서 쓰기 시작할 자리를 열어둔다 */
     hit("heading", BODY_LEFT, 880, maxW, 160);
     hit("body", BODY_LEFT, 1040, maxW, 150);
   }
-  if (!headLines.length && bodyLines.length) hit("heading", BODY_LEFT, 700, maxW, 120);
-  if (headLines.length && !bodyLines.length) hit("body", BODY_LEFT, 1040, maxW, 150);
+  if (!L.headLines.length && L.bodyLines.length) hit("heading", BODY_LEFT, 700, maxW, 120);
+  if (L.headLines.length && !L.bodyLines.length) hit("body", BODY_LEFT, 1040, maxW, 150);
   drawSource(ctx, source);
   hitCommon(category, source);
 }
@@ -1833,7 +1923,8 @@ function paint(ctx, i, track) {
     else if (s.style === "timeline") slideTimeline(ctx, v ? null : s.el, tag, s.speaker, s.heading, s.body, s.credit);
     else if (s.style === "song") slideSong(ctx, s.el, tag, s, s.num || String(deck.slides.slice(1, i + 1).filter((x) => x.style === "song").length).padStart(2, "0"));
     else slideBody(ctx, img, tag, lit(s.heading), lit(s.body), s.credit,
-                   headingSizeForDeck(), s.fit);
+                   headingSizeForDeck(), s.fit,
+                   bodyKicker(i + 1, lit(deck.slides[0] && deck.slides[0].title)), !v);
     NOFILL = false;
   }
   TRACK = false;
