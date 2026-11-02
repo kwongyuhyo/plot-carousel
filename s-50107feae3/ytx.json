@@ -1,8 +1,30 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T15:59+09:00",
+ "generated_at": "2026-11-02T16:13+09:00",
  "ready": true,
  "items": [
+  {
+   "k": "ddc7717e",
+   "status": "failed",
+   "at": "2026-11-02T15:59:36+09:00",
+   "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다.",
+   "permalink": "https://www.instagram.com/reel/DfHgTR2EaR9/",
+   "title": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다. #Shorts",
+   "url": "",
+   "error": "not video",
+   "risky": true
+  },
+  {
+   "k": "0302b78c",
+   "status": "failed",
+   "at": "2026-11-02T15:59:35+09:00",
+   "head": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후보에 올랐습니다.",
+   "permalink": "https://www.instagram.com/reel/DfHpbKSjcUQ/",
+   "title": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후보에 올랐습니다. #Shorts",
+   "url": "",
+   "error": "not video",
+   "risky": false
+  },
   {
    "k": "def9e367",
    "status": "uploaded",
@@ -81,17 +103,6 @@
    "risky": false
   },
   {
-   "k": "0302b78c",
-   "status": "failed",
-   "at": "2026-10-31T15:49:17+09:00",
-   "head": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후보에 올랐습니다.",
-   "permalink": "https://www.instagram.com/reel/DfHpbKSjcUQ/",
-   "title": "시스템서울(@systemseoul82)이 'MMA2026(멜론뮤직어워드)' 올해의 신인 후보에 올랐습니다. #Shorts",
-   "url": "",
-   "error": "not video",
-   "risky": false
-  },
-  {
    "k": "7911fed8",
    "status": "uploaded",
    "at": "2026-10-31T11:39:35+09:00",
@@ -112,17 +123,6 @@
    "url": "https://youtu.be/VyFG0EzMfMk",
    "error": "",
    "risky": false
-  },
-  {
-   "k": "ddc7717e",
-   "status": "failed",
-   "at": "2026-10-31T11:39:20+09:00",
-   "head": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다.",
-   "permalink": "https://www.instagram.com/reel/DfHgTR2EaR9/",
-   "title": "다니엘이 '버니즈 데이'에 자작곡 '스테이(Stay)'를 공개했습니다. #Shorts",
-   "url": "",
-   "error": "not video",
-   "risky": true
   },
   {
    "k": "6be484b3",

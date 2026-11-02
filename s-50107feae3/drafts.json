@@ -637,9 +637,9 @@
    },
    "corner_name": "소식",
    "pick": {
-    "rank": 2,
-    "why": "지젤이 생일 파티에서 미발매곡을 직접 불렀다 — 사람과 사람이 만나는 장면 · 오늘 초안 중 가장 새로운 사실",
-    "at": "2026-11-02T10:00+09:00"
+    "rank": 3,
+    "why": "지젤이 생일 파티에서 미발매곡을 직접 불렀다 — 사람과 사람이 만나는 장면",
+    "at": "2026-11-02T16:23+09:00"
    }
   },
   {
@@ -811,11 +811,6 @@
      "v": "30fbce13"
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "이번 회차 목표 숏폼 · 아티스트 본인 채널(클립 위험 낮음) · '2천만 원 훠궈'라는 한 줄로 기억되는 장면 · 케이팝은 도달 대비 팔로우가 높다",
-    "at": "2026-11-02T10:00+09:00"
-   },
    "corner_name": "그 말",
    "corner_no": 6
   },
@@ -945,11 +940,6 @@
       "A": "5c88f262"
      }
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "오늘 아침 나온 당사자 발언 · 갈등·반응 결(1.3배) · 양쪽 말을 같이 둔 정리형",
-    "at": "2026-11-02T10:00+09:00"
    },
    "corner_name": "소식"
   },
@@ -1627,6 +1617,265 @@
    },
    "corner_name": "입문 가이드",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:lngshot-anatomy",
+    "account": "뉴스컬처 11/2 · MHN 11/2",
+    "url": "https://www.nc.press/news/articleView.html?idxno=630052",
+    "image": null,
+    "head": "박재범 35개 도시 월드투어 피날레 — 롱샷 스페셜 게스트",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-02T16:23+09:00",
+   "key": "ec8aeafd",
+   "by": "claude",
+   "subjects": [
+    "롱샷"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "S",
+    "kind": "정보",
+    "angle": "박재범이 '뼈와 혼을 갈아 넣어' 만든 첫 보이그룹 롱샷 — 데뷔 전 MMA 무대부터 대표의 월드투어, 10일 컴백까지",
+    "why": "이번 회차 목표 인물해부 · 박재범 2년 35개 도시 투어가 런던에서 끝났다는 기사 17건(오늘) · 그 투어 게스트가 롱샷 · 10일 [S.W.I.S.H.] · MAMA 신인상 후보"
+   },
+   "added": "claude",
+   "added_at": "2026-11-02T16:23+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n박재범(@moresojuplease)은 롱샷을 \"뼈와 혼을 갈아 넣어\" 만든 그룹이라고 소개했습니다.\n\n롱샷은 박재범의 레이블 모어비전이 처음 내놓은 보이그룹으로, 오율·률·우진·루이 네 사람입니다. 올해 1월 EP [SHOT CALLERS]로 데뷔했는데요, 그 한 달 전 'MMA 2025'에서 박재범과 함께 무대에 올라 선공개곡 'Saucin''을 먼저 들려줬습니다.\n\n데뷔 뒤에도 둘은 같은 무대를 이어 갔습니다. 롱샷은 박재범의 월드투어 'SERENADES & BODY ROLLS'에 스페셜 게스트로 함께했고, 2년 동안 35개 도시를 돈 투어는 지난달 26일 런던에서 끝났습니다.\n\n대표의 투어를 마친 롱샷은 오는 10일 새 EP [S.W.I.S.H.]로 돌아옵니다.\n\n#PLOT #롱샷 #LNGSHOT #박재범 #모어비전\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793604193/idcx0uvj9epqjkfnvqrm.jpg\n제목: 박재범이 뼈와 혼을|갈아 넣은 그룹, 롱샷\n부제: 데뷔 전 MMA부터 대표의 월드투어까지\n출처: 머니투데이\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793604194/trbmbhydhook9hrjhoaz.jpg\n소제목: 박재범의 첫 보이그룹\n본문: 롱샷은 박재범의 레이블 모어비전이 처음 내놓은 보이그룹입니다.||오율·률·우진·루이 네 사람. 데뷔 쇼케이스에서 박재범은 이 팀을 두고 \"뼈와 혼을 갈아 넣어서 만들었다\"고 말했습니다.\n출처: 코리아중앙데일리\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793604217/plot_studio/gl887niwpgekrieza1eq.mp4\n소제목: \n본문: \n출처: MORE VISION and LNGSHOT\n\n[슬라이드]\n소스: \n소제목: 데뷔 전부터 한 무대\n본문: 2025년 12월 'MMA 2025'. 아직 데뷔 전이던 롱샷은 박재범과 함께 무대에 올라 'BackSeat'와 선공개곡 'Saucin''을 처음 선보였습니다.||그리고 한 달 뒤인 올해 1월 13일, EP [SHOT CALLERS]로 정식 데뷔했습니다. 타이틀곡은 'Moonwalkin''입니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792531075/jtxuppcd8qfmaadwcfpc.jpg\n소제목: 대표와 한 팀으로\n본문: 5월에는 박재범과 함께 믹스테이프 [4SHOBOIZ Vol. 2: 4SHOVILLE]을 냈습니다.||박재범의 월드투어 'SERENADES & BODY ROLLS'에는 스페셜 게스트로 함께했고, 2년 동안 35개 도시를 돈 이 투어는 지난달 26일 영국 런던에서 막을 내렸습니다.\n출처: @moresojuplease\n\n[슬라이드]\n소스: \n소제목: 그리고 다음 한 방\n본문: 오는 10일 새 EP [S.W.I.S.H.]가 나옵니다.||올해 'MAMA AWARDS' 신인상 후보 10팀에도 롱샷의 이름이 있습니다.\n출처:\n",
+    "caption": "박재범(@moresojuplease)은 롱샷을 \"뼈와 혼을 갈아 넣어\" 만든 그룹이라고 소개했습니다.\n\n롱샷은 박재범의 레이블 모어비전이 처음 내놓은 보이그룹으로, 오율·률·우진·루이 네 사람입니다. 올해 1월 EP [SHOT CALLERS]로 데뷔했는데요, 그 한 달 전 'MMA 2025'에서 박재범과 함께 무대에 올라 선공개곡 'Saucin''을 먼저 들려줬습니다.\n\n데뷔 뒤에도 둘은 같은 무대를 이어 갔습니다. 롱샷은 박재범의 월드투어 'SERENADES & BODY ROLLS'에 스페셜 게스트로 함께했고, 2년 동안 35개 도시를 돈 투어는 지난달 26일 런던에서 끝났습니다.\n\n대표의 투어를 마친 롱샷은 오는 10일 새 EP [S.W.I.S.H.]로 돌아옵니다.\n\n#PLOT #롱샷 #LNGSHOT #박재범 #모어비전",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604193/idcx0uvj9epqjkfnvqrm.jpg",
+      "credit": "머니투데이",
+      "from": "https://thumb.mt.co.kr/cdn-cgi/image/w=1200,h=800,fit=cover,bg=white,f=auto,quality=high,sharpen=2,g=face/21/2026/01/2026011315257273010_1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604194/trbmbhydhook9hrjhoaz.jpg",
+      "credit": "코리아중앙데일리",
+      "from": "https://image.koreajoongangdaily.com/12914733.jpg?imageId=12914733&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604193/idcx0uvj9epqjkfnvqrm.jpg",
+      "credit": "머니투데이",
+      "from": "https://thumb.mt.co.kr/cdn-cgi/image/w=1200,h=800,fit=cover,bg=white,f=auto,quality=high,sharpen=2,g=face/21/2026/01/2026011315257273010_1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604194/trbmbhydhook9hrjhoaz.jpg",
+      "credit": "코리아중앙데일리",
+      "from": "https://image.koreajoongangdaily.com/12914733.jpg?imageId=12914733&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "박재범이 뼈와 혼을|갈아 넣은 그룹, 롱샷",
+      "sub": "데뷔 전 MMA부터 대표의 월드투어까지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "롱샷은 사진 DB 에 없음 — 표지는 텐아시아·중앙데일리 기사 대표 사진 · 넷이 다 보이는지, 박재범 단독 사진이 표지로 가지 않았는지 볼 것",
+     "S.W.I.S.H. 풀이('Swag with integrity shapes history')는 스포츠경향 영문판 한 곳 기준 · MBC 의 '활동 기회 제한' 비판 기사는 한쪽 시각이라 뺐음",
+     "사진이 모자라 2장(3, 5번)은 비워 뒀습니다 — 같은 사진을 두 번 쓰지 않으려고. 스튜디오에서 빈 자리를 눌러 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "MHN 11/2 — 'SERENADES & BODY ROLLS' 2년·35개 도시 · 10/26 런던 마지막 · LNGSHOT 스페셜 게스트",
+      "link": "https://mhnse.com/news/articleView.html?idxno=1661089"
+     },
+     {
+      "title": "뉴스컬처 11/2 — 35개 도시 · 10/26 런던 · 롱샷 스페셜 게스트",
+      "link": "https://www.nc.press/news/articleView.html?idxno=630052"
+     },
+     {
+      "title": "더팩트 2026/1/13 — 모어비전 첫 보이그룹 · 오율·률·우진·루이 · \"뼈와 혼을 갈아 넣어서 만들었다\" · [SHOT CALLERS] 타이틀 'Moonwalkin''",
+      "link": "https://news.tf.co.kr/read/ogmeta/2281780.htm"
+     },
+     {
+      "title": "머니투데이 2026/1/13 — \"뼈와 혼 갈아 넣어\"..롱샷, 박재범 전폭 지원 속 데뷔",
+      "link": "https://www.mt.co.kr/entertainment/2026/01/13/2026011315257273010"
+     },
+     {
+      "title": "스포츠경향 2025/12/21 — MMA 2025 박재범과 'BackSeat'·'Saucin'' 합동 무대 (데뷔 전)",
+      "link": "https://sports.khan.co.kr/en/article/202512211014007"
+     },
+     {
+      "title": "스포츠경향 2026/5/23 — 박재범×롱샷 믹스테이프 [4SHOBOIZ Vol. 2: 4SHOVILLE] 5/18 · 'MOYA' MV",
+      "link": "https://sports.khan.co.kr/article/202605230627003"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604229/eluksxbmcqgfowowvpmn.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604228/dpoilvw5ddrlbsj1zkgy.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604231/vpe0p0heyqusnvkpic7p.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604228/ohaantc95h9t7hycp1xq.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604230/oem9z32wgh8fyiqzvim3.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604230/aiawimvmjwgm2l3y6n9v.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604230/hf1ky2os5l0pe0sflumg.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604229/eluksxbmcqgfowowvpmn.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-02T16:23+09:00",
+     "videos": {
+      "2": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793604230/plot_studio/hk8onsl6g4mkjn1jebwy.mp4"
+     },
+     "v": {
+      "A": "f5e4c11e"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "이번 회차 목표 '인물해부' · 오늘 기사 17건 박재범 투어 마무리와 이어지는 사람 · 10일 컴백 앞이라 시점이 가깝다",
+    "at": "2026-11-02T16:23+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:jisoo-rose-addicted",
+    "account": "지수 인스타 10/31 릴스",
+    "url": "https://www.instagram.com/sooyaaa__/",
+    "image": null,
+    "head": "we so addicted.. #JISOO #ROSÉ #ADDICTED",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-02T16:23+09:00",
+   "key": "c85e60d6",
+   "by": "claude",
+   "subjects": [
+    "지수"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "지수의 신곡 'ADDICTED' 영상에 로제가 들어왔다 — 각자 다른 동작에서 한 박자로",
+    "why": "의외의 만남 칸 · 지수 인스타 10/31 릴스(로제 태그) — 같은 계정 다른 릴스의 두 배 넘는 반응 · 원문 + 미디어파인 기사"
+   },
+   "added": "claude",
+   "added_at": "2026-11-02T16:23+09:00",
+   "corner": "meet",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n지수(@sooyaaa__)의 신곡 'ADDICTED' 영상에 로제(@roses_are_rosie)가 함께 나왔습니다.\n\n지수는 31일 인스타그램에 로제와 나란히 'ADDICTED' 안무를 추는 짧은 영상을 올렸는데요, 각자 따로 움직이던 두 사람은 턱과 관자놀이를 짚으며 고개를 돌리는 동작에서 점점 춤을 맞춰 갑니다.\n\n지수가 붙인 말은 한 줄, \"we so addicted\". 지난달 30일 나온 신곡 위에서 블랙핑크(@blackpinkofficial) 두 사람이 한 화면에 다시 섰습니다.\n\n#PLOT #지수 #로제 #ADDICTED #블랙핑크\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793604220/gqo8ovjlfaisujskh5hg.jpg\n제목: 지수의 신곡 영상에|로제가 들어왔다\n부제: \n출처: @sooyaaa__\n",
+    "caption": "지수(@sooyaaa__)의 신곡 'ADDICTED' 영상에 로제(@roses_are_rosie)가 함께 나왔습니다.\n\n지수는 31일 인스타그램에 로제와 나란히 'ADDICTED' 안무를 추는 짧은 영상을 올렸는데요, 각자 따로 움직이던 두 사람은 턱과 관자놀이를 짚으며 고개를 돌리는 동작에서 점점 춤을 맞춰 갑니다.\n\n지수가 붙인 말은 한 줄, \"we so addicted\". 지난달 30일 나온 신곡 위에서 블랙핑크(@blackpinkofficial) 두 사람이 한 화면에 다시 섰습니다.\n\n#PLOT #지수 #로제 #ADDICTED #블랙핑크",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604220/gqo8ovjlfaisujskh5hg.jpg",
+      "credit": "@sooyaaa__",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/883558825_955345923961836_2150638717288441136_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=72eFIjQeq44Q7kNvwGTrEOD&_nc_oc=AdpxfF-xGulzim4VhGn9VCu25ZD7LSkqsHCSRx6QcuBOov3B3ngPjb7__tvX7o5PC5Q&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=20Knw_jv31XlVd3XIn0ihQ&_nc_tpa=Q5bMBQK71aXBrC73r8WaSa_P6qxWBG83NuBdPoK4qbOFNy0nN-m4uvYyhYwrj3NwQ4mT8tLBQOQAJZ2gsA&oh=00_AQRjzxJDonTdniXfG5AM2SoIHiaoSk0Fh1-RVYmDz2bOKA&oe=6AEDC30D"
+     },
+     {
+      "url": "https://i.ibb.co/SwBy5yPx/5c6bc42bd429.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/833388054_18370236895266096_7103180673454688441_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=jpJU7_jQ1gsQ7kNvwF4WpVT&_nc_oc=AdpasqcE56c6fnp8qaiqcVWSLWu-3WH2ETw2qP0FUytVGSGVrZlIha7yXOgoy_KOd3M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQMIcxV0L8jpdg378LMboqCsHnrV7EXvbFOadz1eYXx5bg&oe=6AD21753"
+     },
+     {
+      "url": "https://i.ibb.co/Ng2LJ0Vc/23ec8bbc1cf3.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825323649_18369977242266096_4528836347209344064_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=M5M9TjdZTfAQ7kNvwFH0J9z&_nc_oc=AdqwruAGPfzUVh_JFhr7vM29s-918vjQXt1xmp5bkUQs3GoY1mL0todU6JC1Vd7cZjI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQOuWK9U1CSZpb6Uy3REFbHy2-XsDAo1scMGdMVF5FYH2Q&oe=6AD1FADF"
+     },
+     {
+      "url": "https://i.ibb.co/ynRpCn8g/53c9de8dbef9.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/830151313_18369909310266096_2225009334234554213_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=qgyrKG8ux20Q7kNvwGxDMP5&_nc_oc=AdpP29bjDvZEjKhceia6PenwknzPb1hkS8LWid02YzNHrNL6-cwdTFZHLAbeDY3mCX0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQPGVgdCoRvQDH-ewp1C1W00fV6O5fZrvsEB5b4ZonNrsg&oe=6AD206BE"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604220/gqo8ovjlfaisujskh5hg.jpg",
+      "credit": "@sooyaaa__",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/883558825_955345923961836_2150638717288441136_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=72eFIjQeq44Q7kNvwGTrEOD&_nc_oc=AdpxfF-xGulzim4VhGn9VCu25ZD7LSkqsHCSRx6QcuBOov3B3ngPjb7__tvX7o5PC5Q&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=20Knw_jv31XlVd3XIn0ihQ&_nc_tpa=Q5bMBQK71aXBrC73r8WaSa_P6qxWBG83NuBdPoK4qbOFNy0nN-m4uvYyhYwrj3NwQ4mT8tLBQOQAJZ2gsA&oh=00_AQRjzxJDonTdniXfG5AM2SoIHiaoSk0Fh1-RVYmDz2bOKA&oe=6AEDC30D"
+     },
+     {
+      "url": "https://i.ibb.co/SwBy5yPx/5c6bc42bd429.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/833388054_18370236895266096_7103180673454688441_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=jpJU7_jQ1gsQ7kNvwF4WpVT&_nc_oc=AdpasqcE56c6fnp8qaiqcVWSLWu-3WH2ETw2qP0FUytVGSGVrZlIha7yXOgoy_KOd3M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQMIcxV0L8jpdg378LMboqCsHnrV7EXvbFOadz1eYXx5bg&oe=6AD21753"
+     },
+     {
+      "url": "https://i.ibb.co/Ng2LJ0Vc/23ec8bbc1cf3.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825323649_18369977242266096_4528836347209344064_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=M5M9TjdZTfAQ7kNvwFH0J9z&_nc_oc=AdqwruAGPfzUVh_JFhr7vM29s-918vjQXt1xmp5bkUQs3GoY1mL0todU6JC1Vd7cZjI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQOuWK9U1CSZpb6Uy3REFbHy2-XsDAo1scMGdMVF5FYH2Q&oe=6AD1FADF"
+     },
+     {
+      "url": "https://i.ibb.co/ynRpCn8g/53c9de8dbef9.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/830151313_18369909310266096_2225009334234554213_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=qgyrKG8ux20Q7kNvwGxDMP5&_nc_oc=AdpP29bjDvZEjKhceia6PenwknzPb1hkS8LWid02YzNHrNL6-cwdTFZHLAbeDY3mCX0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQPGVgdCoRvQDH-ewp1C1W00fV6O5fZrvsEB5b4ZonNrsg&oe=6AD206BE"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "지수의 신곡 영상에|로제가 들어왔다",
+      "sub": ""
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 캡션 인용 \"we so addicted\" 는 지수 인스타 릴스 문구 — 인스타를 직접 열지 못해 대조 못 함 (미디어파인 기사엔 문구 없음) · 원문 확인할 것",
+     "표지 사진은 지수 릴스 썸네일 — 두 사람이 다 보이는지, 화면 글자가 없는지 볼 것 (영상 장은 인스타 원본이라 넣지 않음)"
+    ],
+    "research": [
+     {
+      "title": "지수 인스타 10/31 릴스 — 'we so addicted.. 🐰🐿️ #JISOO #ROSÉ #ADDICTED'",
+      "link": "https://www.instagram.com/sooyaaa__/"
+     },
+     {
+      "title": "지수 인스타 10/29 — 'ADDICTED OCT 30 | 8AM KST'",
+      "link": "https://www.instagram.com/sooyaaa__/"
+     },
+     {
+      "title": "미디어파인 11/1 — 로제, 지수 솔로 곡에 깜짝 등장 · 금발 로제 · 따로 시작해 동작을 맞추는 안무",
+      "link": "https://www.mediafine.co.kr/news/articleView.html?idxno=94255"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604234/kmbtxpouezdl3lqpetjt.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604234/a7xpromr9wl2zajga6re.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793604234/kmbtxpouezdl3lqpetjt.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-02T16:23+09:00",
+     "v": {
+      "A": "13b26a4d"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "같은 팀 두 사람이 한 화면에 — 지수 평소 릴스의 두 배 넘는 반응 · 당사자 게시물이 원문",
+    "at": "2026-11-02T16:23+09:00"
+   },
+   "corner_name": "만나는 법",
+   "corner_no": 3
   }
  ],
  "skipped": [],
@@ -1657,7 +1906,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 3,
-    "drafts": 0,
+    "drafts": 1,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
    {
@@ -1669,7 +1918,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 2,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1805,10 +2054,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T15:53+09:00"
+  "at": "2026-11-02T16:23+09:00"
  },
  "queue": {
-  "next": "2026-11-02T15:56+09:00",
+  "next": "2026-11-02T16:25+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T14:18+09:00"
@@ -1836,7 +2085,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.53,
+    "mult": 1.52,
     "median": 0.97,
     "n": 23
    }
