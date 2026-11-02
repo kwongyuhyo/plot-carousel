@@ -591,6 +591,8 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .srs .lvf{margin-top:6px; font-size:12.5px; display:flex; gap:6px; align-items:center} .srs .lvf span{flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .srs .lvf small{color:var(--dim)} .srs .lvf button{font:inherit; font-size:11.5px; border:1px solid var(--line); background:none; color:var(--dim); border-radius:6px; padding:2px 7px}
 .ttl{font-size:12px; color:var(--dim)}
+.sbg{font-size:11.5px; color:var(--dim); border:1px solid var(--line); border-radius:999px; padding:2px 8px}
+.ug.sq small{display:block; color:var(--dim); margin-top:3px}
 .srs .sr .srm{font-size:14px; padding:7px 10px}
 .srs .srd{font-size:11px; border:1px solid var(--pick); color:var(--pick); border-radius:999px; padding:1px 7px}
 .srs .srb{display:flex; justify-content:flex-end; margin-top:8px}
@@ -2398,7 +2400,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     // 10/25 규효 "맥으로 바로 제작 눌렀는데 어디서 받냐" — 안 본 완성본이 있으면 접어 두지 않는다
     var seen = {}; try { seen = JSON.parse(localStorage.getItem('plot.rndseen') || '{}') || {}; } catch (e) {}
     if (((RND && RND.items) || []).some(function (x) { return !seen[x.url]; })) open = true;
-    var inner = alrBox() + usageBox() + orderBox() + rndBox() + ytBox();
+    var inner = alrBox() + usageBox() + sqBox() + orderBox() + rndBox() + ytBox();
     return '<details class="todoFold"' + (open ? ' open' : '') + '><summary>' + todoBar() +
       '<span class="tfR"><button type="button" class="tfNew" data-odnew>+ 맡기기</button><i aria-hidden="true">▾</i></span></summary>' +
       '<div class="tfIn">' + inner + '</div></details>';
@@ -3434,7 +3436,17 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   loadStories();
 
   /* ── 요금 장부 (collectors/usage_ledger · 10/12 규효 "요금이 어떤 걸 기준으로") — Max 5x API 크레딧 월 $100 (매달 15일) ── */
-  var UG = null;
+  var UG = null, SQ = null;
+  // 11/2 말자막 품질 — 최근 7일 완성본 자막 중 앱에서 고친 줄 비율 (generators/speech_subs.q_write)
+  fetch('./subs_quality.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (d) { SQ = d; if (GRP === 'draft' && !DR_DAY) renderDrafts(); }).catch(function () {});
+  function sqBox() {
+    var t = SQ && SQ.total; if (!t || !t.videos) return '';
+    var pct = function (b) { return b.lines ? Math.round(100 * b.changed / b.lines) + '%' : '-'; };
+    var by = Object.keys(SQ.by || {}).filter(function (k) { return SQ.by[k].videos; }).map(function (k) { return k + ' ' + pct(SQ.by[k]); }).join(' · ');
+    return '<div class="ug sq"><span>💬 말자막 최근 ' + (SQ.days || 7) + '일 — ' + t.videos + '편 · 고친 줄 ' + pct(t) + '</span><small>' + esc(by) +
+      ' · 고쳐서 다시 만든 영상 ' + t.edited + '편 (안 고친 영상은 그대로 맞은 걸로 셈)</small></div>';
+  }
   fetch('./usage.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
     .then(function (d) { UG = d; if (GRP === 'draft') renderDrafts(); }).catch(function () {});
   function usageBox() {
@@ -3642,6 +3654,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var marks = '<span>' + esc(span ? '구간 ' + span : '구간 미정') + '</span>' +
       (rd.url ? '<a class="yt" href="' + escU(rd.url) + '" target="_blank" rel="noopener">완성 영상 ▶</a>' +
         // 11/2 규효 "폰에 안 옴" — 폰 갤러리 전송(Syncthing)이 끊겨도 바로 내려받게
+        (rd.subs_note ? '<span class="sbg">💬 ' + esc(String(rd.subs_note).replace(/[()]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 40)) + '</span>' : '') +
         (/res\.cloudinary\.com\/[^/]+\/video\/upload\//.test(rd.url) ? '<a class="yt" href="' + escU(rd.url.replace('/video/upload/', '/video/upload/fl_attachment/')) + '" download>📥 폰에 저장</a>' : '') :
         sh.hold && sh.hooks && Object.keys(sh.hooks).length ? (Object.keys(actsGet()).some(function (k) { return k.indexOf('tt-' + it.key) === 0 && Date.now() - actsGet()[k] < 15 * 60e3; })
           ? '<span>🎬 고른 제목으로 만드는 중</span>' : '<span class="ttl">제목 고르기</span>' + Object.keys(sh.hooks).sort().map(function (k) {
@@ -4763,9 +4776,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.02 14:54';
+    a.title = '판 11.02 14:56';
     var ver = document.createElement('span');
-    ver.textContent = '11.02 14:54';
+    ver.textContent = '11.02 14:56';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
