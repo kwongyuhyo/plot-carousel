@@ -1,15 +1,26 @@
 {
  "schema": 1,
- "generated_at": "2026-11-02T15:07+09:00",
+ "generated_at": "2026-11-02T15:59+09:00",
  "ready": true,
  "items": [
   {
    "k": "9a28dfd9",
-   "status": "asked",
-   "at": "2026-11-02T15:07:22+09:00",
+   "status": "uploaded",
+   "at": "2026-11-02T15:59:24+09:00",
    "head": "잔나비(@bandjannabi)의 첫 아시아 투어는 타이베이 무대 앞 짧은 구호로 시작됐습니다.",
    "permalink": "https://www.instagram.com/reel/DfOiZmagl3y/",
    "title": "잔나비(@bandjannabi)의 첫 아시아 투어는 타이베이 무대 앞 짧은 구호로 시작됐습니다. #Shorts",
+   "url": "https://youtu.be/CRBVWXwm3AE",
+   "error": "",
+   "risky": true
+  },
+  {
+   "k": "2f85ec31",
+   "status": "skipped",
+   "at": "2026-11-02T15:59:19+09:00",
+   "head": "PLOT이 촬영자에게 직접 제공받은 영상입니다.",
+   "permalink": "https://www.instagram.com/reel/DfJn2xZvCVh/",
+   "title": "PLOT이 촬영자에게 직접 제공받은 영상입니다. #Shorts",
    "url": "",
    "error": "",
    "risky": true
@@ -57,17 +68,6 @@
    "url": "",
    "error": "",
    "risky": false
-  },
-  {
-   "k": "2f85ec31",
-   "status": "asked",
-   "at": "2026-10-31T16:49:05+09:00",
-   "head": "PLOT이 촬영자에게 직접 제공받은 영상입니다.",
-   "permalink": "https://www.instagram.com/reel/DfJn2xZvCVh/",
-   "title": "PLOT이 촬영자에게 직접 제공받은 영상입니다. #Shorts",
-   "url": "",
-   "error": "",
-   "risky": true
   },
   {
    "k": "0302b78c",
