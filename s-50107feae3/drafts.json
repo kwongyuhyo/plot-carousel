@@ -719,9 +719,91 @@
      "end": 57.0,
      "full": 57.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-02T10:01+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793581520/plot_studio/ch68lw6lldhtreyrdrzv.mp4",
+     "at": "2026-11-02T10:05+09:00",
+     "file": "SaengIlE_HaIDiLaOLeu_TongJjaeLo_BilLin_Sy_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793581521187-4f533d25",
+      "segs": [
+       {
+        "start": 0.0,
+        "end": 2.25,
+        "text": "본인 생일 파티를 본인 사비로\nyou paid for your own birthday party"
+       },
+       {
+        "start": 2.25,
+        "end": 3.75,
+        "text": "하이디라오를 빌려서\nrented out Haidilao"
+       },
+       {
+        "start": 3.75,
+        "end": 6.25,
+        "text": "팬분들을 초대해서 생일 파티를 했다는 게 맞아요?\nand invited fans to a birthday party. Is that true?"
+       },
+       {
+        "start": 6.25,
+        "end": 6.75,
+        "text": "맞습니다\nThat's right."
+       },
+       {
+        "start": 6.75,
+        "end": 8.75,
+        "text": "아니 근데 그거를 어떻게 하게 된 거예요?\nBut how did you end up doing it?"
+       },
+       {
+        "start": 8.75,
+        "end": 12.75,
+        "text": "저희 굉장히 많은 팬분들이 아이돌한테\nA lot of our fans say to idols"
+       },
+       {
+        "start": 12.75,
+        "end": 15.75,
+        "text": "\"밥 사주세요\" 이런 거 많이 얘기해요\n\"buy us a meal\" and things like that."
+       },
+       {
+        "start": 15.75,
+        "end": 18.75,
+        "text": "해주고 싶은데 어떻게 해줄까 싶어서\nI wanted to do it, but wondered how I could"
+       },
+       {
+        "start": 18.75,
+        "end": 19.75,
+        "text": "그런 아이디어가 생겼어요\nand that's how I came up with the idea."
+       },
+       {
+        "start": 19.75,
+        "end": 21.75,
+        "text": "제가 지금 사진을 봤는데\nI'm looking at a photo right now"
+       },
+       {
+        "start": 21.75,
+        "end": 24.75,
+        "text": "지금 이게 영수증인 거예요? 지금?\nIs this the receipt right now?"
+       },
+       {
+        "start": 24.75,
+        "end": 25.25,
+        "text": "맞습니다\nThat's right."
+       },
+       {
+        "start": 25.25,
+        "end": 28.25,
+        "text": "아니 뭘, 얼마어치를 먹었길래 저렇게 영수증이 나왔어요?\nWhat did they eat for the receipt to be that long?"
+       },
+       {
+        "start": 28.25,
+        "end": 29.25,
+        "text": "2천만 원입니다\n20 million won."
+       },
+       {
+        "start": 29.25,
+        "end": 30.75,
+        "text": "2천만 원 나왔다고요?\nIt came to 20 million won?"
+       }
+      ]
+     },
+     "v": "30fbce13"
     }
    },
    "pick": {
@@ -1137,10 +1219,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-02T10:01+09:00"
+  "at": "2026-11-02T10:05+09:00"
  },
  "queue": {
-  "next": "2026-11-02T10:03+09:00",
+  "next": "2026-11-02T10:07+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T01:12+09:00"
