@@ -587,6 +587,10 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .phx .pkf button{width:100%; padding:14px; border-radius:12px; border:0; background:var(--text); color:var(--bg); font-weight:700; font-size:15px; cursor:pointer}
 .phx .pkf button:disabled{opacity:.4; cursor:default}
 .srs .sr input{width:100%; box-sizing:border-box; font:inherit; font-size:16px; padding:9px 10px; border:1px solid var(--line); border-radius:10px; background:none; color:var(--text); margin-top:8px}
+.srs .lvb{display:block; margin-top:8px; border:1px dashed var(--line); border-radius:10px; padding:12px; text-align:center; font-size:14px; cursor:pointer}
+.srs .lvf{margin-top:6px; font-size:12.5px; display:flex; gap:6px; align-items:center} .srs .lvf span{flex:1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.srs .lvf small{color:var(--dim)} .srs .lvf button{font:inherit; font-size:11.5px; border:1px solid var(--line); background:none; color:var(--dim); border-radius:6px; padding:2px 7px}
+.ttl{font-size:12px; color:var(--dim)}
 .srs .sr .srm{font-size:14px; padding:7px 10px}
 .srs .srd{font-size:11px; border:1px solid var(--pick); color:var(--pick); border-radius:999px; padding:1px 7px}
 .srs .srb{display:flex; justify-content:flex-end; margin-top:8px}
@@ -3187,13 +3191,41 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   /* ── 정기 시리즈 (11/2 규효 "정기 기획 특집 시리즈들은 탭을 따로 빼서 매일 주문란을 다르게 키워드나 문장으로") ──
      시리즈마다 주문란 하나 — 적고 「맡기기」 → 제작 맡기기(plot_evals kind=order)로 맥이 받는다. 형식은 시리즈마다 정해 둔 것. */
   var SERIES = [
+    { t: 'live', name: '📹 Live Archive (직접 촬영)', sub: '폰 영상을 올리면 맥이 가편 · 제목 3안 · 관객 얼굴 피함', ph: '밴드 · 행사   예) 단편선 순간들 · 기타쇼 낙원 2026', form: 's', up: true },
     { t: 'song', name: '🎵 오늘의 노래', sub: '매일 · 숏폼 · 번호·날짜는 맥이 붙임', ph: '아티스트 - 곡   예) 한로로 - 0+0', form: 's' },
     { t: 'listen', name: '○○을 ○○로 듣는다면', sub: '주제별 추천 4~6곡 · 캐러셀', ph: '주제 / 장르   예) 사랑 / 인디 · 겨울 (장르 비우면 음악)', form: 'c' },
     { t: 'intro', name: '만약 당신이 ○○가 궁금하다면', sub: '장르 입문 가이드 · 캐러셀', ph: '장르   예) 슈게이즈 / 시티팝 / 한국 R&B', form: 'c' },
     { t: 'meet', name: '2026년 ○○ 만나는 법', sub: '남은 공연·페스티벌·행사 (확인된 것만) · 캐러셀', ph: '아티스트   예) 잔나비 / 데이식스', form: 'c' },
     { t: 'tteolgi', name: '나무위키 털기', sub: '나무위키만 보고 재미있는 건 전부 · 캐러셀', ph: '사람·대상   예) 리센느 제나 / 실리카겔', form: 'c' }
   ];
-  var SR = null, SR_PRE = {};
+  var SR = null, SR_PRE = {}, LV = [];             // LV — Live Archive 로 올린 영상 [{name, pct, url, err}]
+  function lvUp(files) {                           // 11/2 폰 영상 → Cloudinary (숏폼 앱과 같은 서명 없는 프리셋)
+    var c = window.PLOT_UPLOAD;
+    if (!(c && c.cloud && c.preset)) { toast('영상 올리기 설정이 없습니다'); return; }
+    [].forEach.call(files, function (f) {
+      var e = { name: f.name, pct: 0, url: '', err: '' };
+      LV.push(e);
+      var mb = f.size / 1048576;
+      if (mb > 100) { e.err = Math.round(mb) + 'MB — 100MB 를 넘습니다. 갤러리에서 앞뒤를 잘라 다시 올려 주세요'; renderSeries(); return; }
+      var fd = new FormData(); fd.append('file', f); fd.append('upload_preset', c.preset);
+      var x = new XMLHttpRequest();
+      x.open('POST', 'https://api.cloudinary.com/v1_1/' + encodeURIComponent(c.cloud) + '/video/upload');
+      x.upload.onprogress = function (ev) { if (ev.lengthComputable) { var p = Math.round(100 * ev.loaded / ev.total); if (p - e.pct >= 5 || p === 100) { e.pct = p; lvPaint(); } } };
+      x.onerror = function () { e.err = '올리지 못했습니다 — 연결 확인 후 다시'; renderSeries(); };
+      x.onload = function () { var r = {}; try { r = JSON.parse(x.responseText || '{}'); } catch (_) {}
+        if (x.status >= 300 || !r.secure_url) { e.err = '올리지 못했습니다 — ' + String((r.error && r.error.message) || x.status).slice(0, 80); }
+        else { e.url = r.secure_url; e.pct = 100; e.dur = r.duration; }
+        renderSeries(); };
+      x.send(fd);
+    });
+    renderSeries();
+  }
+  function lvList() {
+    return LV.map(function (e, i) {
+      return '<div class="lvf"><span>' + esc(e.name) + '</span> <small>' + (e.err ? '⚠️ ' + esc(e.err) : e.url ? '✓ 올림' + (e.dur ? ' · ' + Math.round(e.dur) + '초' : '') : '⏫ ' + e.pct + '%') +
+        '</small> <button type="button" data-lvx="' + i + '">빼기</button></div>'; }).join('');
+  }
+  function lvPaint() { var el = document.querySelector('.lvl'); if (el) el.innerHTML = lvList(); }
   function srLoad() {
     if (!sbOn()) return;
     sbReq('plot_evals?select=id,reason,snapshot,created_at,draft_date&kind=eq.order&order=created_at.desc&limit=60').then(function (rows) {
@@ -3221,7 +3253,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       return '<div class="evn sr" data-sr="' + x.t + '"><div class="top"><b>' + esc(x.name) + '</b><span>' + esc(x.sub) + '</span>' +
         (todayN ? '<span class="srd">오늘 ' + todayN + '건 맡김</span>' : '') + '</div>' +
         '<input data-srf="' + x.t + ':what" placeholder="' + esc(x.ph) + '" value="' + esc(v) + '">' +
-        '<input data-srf="' + x.t + ':memo" class="srm" placeholder="각도·메모·링크 (있으면)" value="' + esc(m) + '">' + picks +
+        '<input data-srf="' + x.t + ':memo" class="srm" placeholder="' + (x.up ? '메모 (있으면) 예) 마지막 곡 음악만세 · 보컬 단편선' : '각도·메모·링크 (있으면)') + '" value="' + esc(m) + '">' + picks +
+        (x.up ? '<label class="lvb">📹 영상 고르기 (여러 개 · 하나 100MB 까지)<input type="file" accept="video/*" multiple data-lvin hidden></label><div class="lvl">' + lvList() + '</div>' : '') +
         '<div class="srb"><button type="button" class="go" data-srgo="' + x.t + '">맡기기</button></div>' +
         rows.slice(0, 3).map(function (r) { var sn = r.snapshot || {}, st = sn.status || '';
           return '<div class="odr" data-odr="' + esc(r.id) + '"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> <b>' + esc(String(sn.what || '').slice(0, 40)) + '</b> <small>' +
@@ -3235,17 +3268,26 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     what = what.trim(); memo = memo.trim();
     if (!what) { toast('주문란을 적어 주세요'); return; }
     if (t === 'song' && !/[-–—\/|]/.test(what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
+    var lvUrls = t === 'live' ? LV.filter(function (e) { return e.url; }).map(function (e) { return e.url; }) : [];
+    if (t === 'live') {
+      if (LV.some(function (e) { return !e.url && !e.err; })) { toast('영상이 아직 올라가는 중입니다'); return; }
+      if (!lvUrls.length) { toast('영상을 먼저 올려 주세요'); return; }
+    }
     var url = (memo.match(/https?:\/\/\S+/) || [''])[0];
     var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: url.slice(0, 300),
       verdict: {}, reason: memo, rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
-      snapshot: { type: t, form: x.form, what: what, url: url } };
+      snapshot: t === 'live' ? { type: t, form: x.form, what: what, url: lvUrls[0], urls: lvUrls } : { type: t, form: x.form, what: what, url: url } };
     sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } })
-      .then(function () { toast('맡겼습니다 — 맥이 5분 안에 받습니다'); delete SR_PRE[t]; SR = [rec].concat(SR || []); OD = [rec].concat(OD || []);
+      .then(function () { toast(t === 'live' ? '맡겼습니다 — 맥이 가편을 만듭니다 (10~20분)' : '맡겼습니다 — 맥이 5분 안에 받습니다'); delete SR_PRE[t]; if (t === 'live') LV = []; SR = [rec].concat(SR || []); OD = [rec].concat(OD || []);
         var el = host.querySelector('[data-srf="' + t + ':what"]'); if (el) el.value = ''; el = host.querySelector('[data-srf="' + t + ':memo"]'); if (el) el.value = '';
         renderSeries(); setTimeout(srLoad, 45000); })
       .catch(function (er) { toast('못 보냈습니다 — ' + String(er && er.message || er).slice(0, 60)); });
   }
+  document.getElementById('viewSeries').addEventListener('change', function (e) {
+    if (e.target.matches('[data-lvin]') && e.target.files && e.target.files.length) { lvUp(e.target.files); }
+  });
   document.getElementById('viewSeries').addEventListener('click', function (e) {
+    var lx = e.target.closest('[data-lvx]'); if (lx) { LV.splice(Number(lx.getAttribute('data-lvx')), 1); renderSeries(); return; }
     var g = e.target.closest('[data-srgo]'); if (g) { srSend(g.getAttribute('data-srgo')); return; }
     var sp = e.target.closest('[data-srsp]');
     if (sp) { var p = ((SP || {}).items || [])[Number(sp.getAttribute('data-srsp'))], el = document.querySelector('[data-srf="song:what"]');
@@ -3601,6 +3643,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       (rd.url ? '<a class="yt" href="' + escU(rd.url) + '" target="_blank" rel="noopener">완성 영상 ▶</a>' +
         // 11/2 규효 "폰에 안 옴" — 폰 갤러리 전송(Syncthing)이 끊겨도 바로 내려받게
         (/res\.cloudinary\.com\/[^/]+\/video\/upload\//.test(rd.url) ? '<a class="yt" href="' + escU(rd.url.replace('/video/upload/', '/video/upload/fl_attachment/')) + '" download>📥 폰에 저장</a>' : '') :
+        sh.hold && sh.hooks && Object.keys(sh.hooks).length ? (Object.keys(actsGet()).some(function (k) { return k.indexOf('tt-' + it.key) === 0 && Date.now() - actsGet()[k] < 15 * 60e3; })
+          ? '<span>🎬 고른 제목으로 만드는 중</span>' : '<span class="ttl">제목 고르기</span>' + Object.keys(sh.hooks).sort().map(function (k) {
+            return '<button data-tt="' + esc(it.key) + '|' + k + '">' + esc(String(sh.hooks[k]).replace(' / ', ' ⏎ ')) + '</button>'; }).join('')) :
         rq.status || (Date.now() - (actsGet()['mk-' + it.key] || 0) < 15 * 60e3) ? '<span>🎬 맥이 만드는 중</span>' : (it.key && !DR_DAY ? '<button data-rmk="' + i + '">🎬 완성본 만들기</button>' : '')) +
       // 10/30 규효 "PLOT 도 비슷하게" — 완성본을 @plot_music 릴스로 (collectors/app_actions rl · reel_pub)
       ((sh.published || {}).permalink ? '<a class="yt" href="' + escU(sh.published.permalink) + '" target="_blank" rel="noopener">올린 릴스 ↗</a>' :
@@ -4629,6 +4674,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (pb) { var rr = pb.closest('[data-reel]'); if (rr) reelToggle(rr); return; }
     var rqb = e.target.closest('[data-rque]');
     if (rqb) { var qit = (DR && DR.items || [])[Number(rqb.getAttribute('data-rque'))]; if (qit && qit.key) openReelPublish(qit, true); return; }
+    var ttb = e.target.closest('[data-tt]');
+    if (ttb) { var tv = ttb.getAttribute('data-tt').split('|'); plotAction('tt-' + tv[0] + '-' + tv[1], '제목 확정 · 완성본 만들기'); ttb.parentNode.querySelectorAll('[data-tt]').forEach(function (b) { b.disabled = true; }); ttb.textContent = '✓ ' + ttb.textContent; return; }
     var rmk = e.target.closest('[data-rmk]');
     if (rmk) { var mit = (DR && DR.items || [])[Number(rmk.getAttribute('data-rmk'))]; if (mit && mit.key) { plotAction('mk-' + mit.key, '숏폼 완성본 만들기'); rmk.outerHTML = '<span>🎬 맥이 만드는 중</span>'; } return; }
     var rpb = e.target.closest('[data-rpub]');
@@ -4716,9 +4763,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.02 14:21';
+    a.title = '판 11.02 14:54';
     var ver = document.createElement('span');
-    ver.textContent = '11.02 14:21';
+    ver.textContent = '11.02 14:54';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
