@@ -2612,6 +2612,188 @@
    },
    "corner_name": "SPOTLIGHT",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:ord-f806b946",
+    "account": "@규효 공유 · @section.mag",
+    "url": "https://www.instagram.com/p/DfRjLrGE1Sc/?dlrf=aHpxNm5zZzVxemp3",
+    "image": null,
+    "head": "릴 테카가 'ALBUM' 한 단어로 새 앨범을 예고했다 — 직전작 [DOPAMINE] 기록 위에서",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-03T19:46+09:00",
+   "key": "c329aa51",
+   "by": "claude",
+   "subjects": [
+    "Lil Tecca"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "한 단어 'ALBUM' 예고 — 빌보드 200 3위 [DOPAMINE] 다음이라 더 크게 읽힌다",
+    "why": "규효 맡기기 · 해외 힙합 실험 칸 · 짧은 예고가 SNS에서 퍼지는 중"
+   },
+   "added": "claude",
+   "added_at": "2026-11-03T19:46+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 것으로 알려졌습니다.\n\n새 앨범을 알리는 신호로 읽히는데요, 그 한 단어가 넘어야 할 직전 정규가 만만치 않습니다.\n\n지난해 6월 나온 [DOPAMINE]은 빌보드 200 3위로 데뷔해 당시 그의 앨범 가운데 가장 높은 순위에 올랐고, 수록곡 'Dark Thoughts'는 빌보드 핫 100 28위까지 올랐습니다.\n그 기록 다음 장을 릴 테카는 단 한 단어로 열었습니다.\n\n#PLOT #릴테카 #LilTecca #DOPAMINE #DarkThoughts #새앨범\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793702789/tljsonfp9yqysmqkbd6k.jpg\n제목: 릴 테카, 단 한 단어로|새 앨범 예고\n부제: X에 남긴 'ALBUM'\n출처: Republic Records\n",
+    "caption": "릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 것으로 알려졌습니다.\n\n새 앨범을 알리는 신호로 읽히는데요, 그 한 단어가 넘어야 할 직전 정규가 만만치 않습니다.\n\n지난해 6월 나온 [DOPAMINE]은 빌보드 200 3위로 데뷔해 당시 그의 앨범 가운데 가장 높은 순위에 올랐고, 수록곡 'Dark Thoughts'는 빌보드 핫 100 28위까지 올랐습니다.\n그 기록 다음 장을 릴 테카는 단 한 단어로 열었습니다.\n\n#PLOT #릴테카 #LilTecca #DOPAMINE #DarkThoughts #새앨범",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702789/tljsonfp9yqysmqkbd6k.jpg",
+      "credit": "Republic Records",
+      "from": "https://www.universalmusic.ca/wp-content/uploads/sites/1843/2025/06/Shot_01_077-2-scaled-1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702791/dgsiectcidzjmkkhzmsg.jpg",
+      "credit": "Republic Records",
+      "from": "https://www.universalmusic.ca/wp-content/uploads/sites/1843/2025/06/DOPAMINE-ALBUM-COVER-WITH-PA.png"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702789/tljsonfp9yqysmqkbd6k.jpg",
+      "credit": "Republic Records",
+      "from": "https://www.universalmusic.ca/wp-content/uploads/sites/1843/2025/06/Shot_01_077-2-scaled-1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702791/dgsiectcidzjmkkhzmsg.jpg",
+      "credit": "Republic Records",
+      "from": "https://www.universalmusic.ca/wp-content/uploads/sites/1843/2025/06/DOPAMINE-ALBUM-COVER-WITH-PA.png"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "릴 테카, 단 한 단어로|새 앨범 예고",
+      "sub": "X에 남긴 'ALBUM'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "릴 테카가 X에 남긴|한 단어 'ALBUM'",
+      "sub": "[DOPAMINE] 다음"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "[DOPAMINE] 다음,|릴 테카 새 앨범 예고",
+      "sub": "빌보드 200 3위 다음"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] X 'ALBUM' 게시물은 맡긴 section.mag 게시물(인스타 본문 안 열림) 외 확인 못 함 — 릴 테카 X 원본 확인 필요. 매니저 '최고의 앨범' 스토리 발언은 출처 하나뿐이라 캡션·표지 C 에서 뺐음",
+     "클립 위험: 낮음 — Lil Tecca (본인 채널) · 후렴 'she got dark thoughts' 0:43 부터 잡음, 구간 확인",
+     "X 'ALBUM' 게시물·매니저 스토리 발언은 section.mag 에서만 확인(X 가 안 열림) — 그래서 '알려졌다' 꼴로 씀. 릴 테카 X 원본 한 번 확인"
+    ],
+    "research": [
+     {
+      "title": "section.mag 인스타그램 게시물 (맡긴 게시물)",
+      "link": "https://www.instagram.com/p/DfRjLrGE1Sc/?dlrf=aHpxNm5zZzVxemp3"
+     },
+     {
+      "title": "Dopamine (Lil Tecca album) — Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Dopamine_(Lil_Tecca_album)"
+     },
+     {
+      "title": "Universal Music Canada — Lil Tecca releases new album DOPAMINE",
+      "link": "https://www.universalmusic.ca/2025/06/13/lil-tecca-releases-new-album-dopamine-out-now/"
+     },
+     {
+      "title": "Lil Tecca - Dark Thoughts (Official Video)",
+      "link": "https://www.youtube.com/watch?v=Xtq_A2NnHKQ"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702796/inqvp0dmq14ngayqx9z5.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702796/zj6uaiwidkvsineta6rc.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702799/kvvyzqsxbh9ti5idp5bi.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702799/fuibjx8yytjihvxrfe1j.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702796/inqvp0dmq14ngayqx9z5.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-03T19:46+09:00",
+     "v": {
+      "A": "441ee5bb",
+      "B": "8854be98",
+      "C": "9f4a4508"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=Xtq_A2NnHKQ\n구간: 0:43-1:13\n곡: 직전 앨범의 그 히트곡\n아티스트: 새 앨범 예고한 릴 테카\n피처링:\n후킹: \n출처: Lil Tecca\n음원: Lil Tecca - Dark Thoughts\n가사: 자동",
+    "caption": "릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 것으로 알려졌습니다.\n\n새 앨범을 알리는 신호로 읽히는데요, 비교 대상은 지난해 6월 빌보드 200 3위로 데뷔한 정규 [DOPAMINE]입니다.\n\n영상은 그 앨범에서 빌보드 핫 100 28위까지 오른 'Dark Thoughts' 뮤직비디오입니다. 이 곡 다음을 릴 테카는 단 한 단어로 예고했습니다.\n\n#PLOT #릴테카 #LilTecca #DarkThoughts #DOPAMINE",
+    "hooks": {
+     "A": "새 앨범 예고한 릴 테카 / 직전 앨범의 그 히트곡",
+     "B": "핫 100 28위까지 오른 / 릴 테카의 그 곡",
+     "C": "한 단어로 다음을 예고한 / 릴 테카의 지난 여름"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Xtq_A2NnHKQ",
+     "credit": "Lil Tecca",
+     "range": [
+      43.0,
+      73.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] X 'ALBUM' 게시물은 맡긴 section.mag 게시물(인스타 본문 안 열림) 외 확인 못 함 — 릴 테카 X 원본 확인 필요. 매니저 '최고의 앨범' 스토리 발언은 출처 하나뿐이라 캡션·표지 C 에서 뺐음",
+     "클립 위험: 낮음 — Lil Tecca (본인 채널) · 후렴 'she got dark thoughts' 0:43 부터 잡음, 구간 확인",
+     "X 'ALBUM' 게시물·매니저 스토리 발언은 section.mag 에서만 확인(X 가 안 열림) — 그래서 '알려졌다' 꼴로 씀. 릴 테카 X 원본 한 번 확인"
+    ],
+    "research": [
+     {
+      "title": "section.mag 인스타그램 게시물 (맡긴 게시물)",
+      "link": "https://www.instagram.com/p/DfRjLrGE1Sc/?dlrf=aHpxNm5zZzVxemp3"
+     },
+     {
+      "title": "Dopamine (Lil Tecca album) — Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Dopamine_(Lil_Tecca_album)"
+     },
+     {
+      "title": "Universal Music Canada — Lil Tecca releases new album DOPAMINE",
+      "link": "https://www.universalmusic.ca/2025/06/13/lil-tecca-releases-new-album-dopamine-out-now/"
+     },
+     {
+      "title": "Lil Tecca - Dark Thoughts (Official Video)",
+      "link": "https://www.youtube.com/watch?v=Xtq_A2NnHKQ"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Xtq_A2NnHKQ/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793702803/uq2cddyq31y5rwglzsk4.jpg",
+     "key": "Xtq_A2NnHKQ@43.0"
+    },
+    "px": {
+     "vid": "Xtq_A2NnHKQ",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793702883/plot_studio/s37gyxeutpou1vb7eeav.mp4",
+     "off": 0.0,
+     "end": 118.0,
+     "full": 156.0
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-11-03T19:48+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2786,14 +2968,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T19:34+09:00"
+  "at": "2026-11-03T19:48+09:00"
  },
  "queue": {
-  "next": "2026-11-03T19:36+09:00",
+  "next": "2026-11-03T19:50+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-03T18:22+09:00"
@@ -2805,7 +2987,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.12,
+    "mult": 2.13,
     "median": 1.23,
     "n": 52
    },
