@@ -2345,9 +2345,12 @@
      "end": 135.0,
      "full": 242.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-03T09:28+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793665870/plot_studio/orxauu92qltpr8wdbbyc.mp4",
+     "at": "2026-11-03T09:31+09:00",
+     "file": "EumAgBangSong_HwalDo_AIBeu_LugSeu_Kaen_Ki_News_no_lyrics__cta.mp4",
+     "subs_note": "싱크 가사를 못 찾아 가사 없이 만듭니다 — 제작 앱 「가사」에서 고를 수 있어요",
+     "v": "89388171"
     }
    },
    "corner_name": "소식"
@@ -2529,10 +2532,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T09:28+09:00"
+  "at": "2026-11-03T09:31+09:00"
  },
  "queue": {
-  "next": "2026-11-03T09:30+09:00",
+  "next": "2026-11-03T09:33+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T20:03+09:00"
