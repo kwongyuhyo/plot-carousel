@@ -2788,9 +2788,12 @@
      "end": 118.0,
      "full": 156.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-03T19:48+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793703091/plot_studio/tqzancxijrbmsjuznv3h.mp4",
+     "at": "2026-11-03T19:51+09:00",
+     "file": "Sae_AelBeom_YeGoHan__JigJeon_AelBeomUi_Ge_News_no_lyrics__cta.mp4",
+     "subs_note": "가사를 맞추다 문제가 생겨 가사 없이 만듭니다",
+     "v": "1b3c1853"
     }
    },
    "corner_name": "소식"
@@ -2972,10 +2975,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T19:48+09:00"
+  "at": "2026-11-03T19:51+09:00"
  },
  "queue": {
-  "next": "2026-11-03T19:50+09:00",
+  "next": "2026-11-03T19:53+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-03T18:22+09:00"
