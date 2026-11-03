@@ -62,7 +62,7 @@
 .stOn.pr .stRuler{cursor:ew-resize; background:rgba(255,255,255,.03)}
 .stEdit{display:flex; flex-direction:column; gap:4px; padding:8px 12px 0}
 .stWhen{font:500 11.5px/1.2 ui-monospace,Menlo,monospace; color:rgba(255,255,255,.55)}
-.stText{width:100%; box-sizing:border-box; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.22); color:#fff;
+.stText{width:100%; box-sizing:border-box; resize:none; font-family:inherit; line-height:1.35; display:block; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.22); color:#fff;
   border-radius:9px; padding:10px 12px; font-size:16px}
 .stText:disabled{opacity:.45}
 .stTools{display:flex; gap:6px; padding:8px 12px 0; overflow-x:auto; scrollbar-width:none}
@@ -71,6 +71,35 @@
   color:#fff; font-size:13px; font-weight:700; white-space:nowrap; cursor:pointer}
 .stTools button:disabled{opacity:.3}
 .ppSheet.stEditing .ppNote{display:none}
+/* 11/3 폰 집중 편집 — 영상 크게 · 구간 / 자막·가사 / 제목 */
+.ppSheet.mfOn .ppStage{flex:none!important; height:min(56vh, calc(100vw * 1.62))!important}
+.ppSheet.mfOn .ppCtl,.ppSheet.mfOn .ppNote{display:none!important}
+.ppSheet.mfOn.mfMore .ppCtl{display:flex!important}
+.ppSheet.mfOn:not(.mfSub) .ppSubList{display:none!important}
+.ppSheet.mfOn.mfSub .mfPanel{display:none}
+.ppSheet.mfOn.mfSub .ppSubList{flex:1; min-height:0; overflow:auto; max-height:none}
+.mfBar{display:none}
+.ppSheet.mfOn .mfBar{display:flex; align-items:center; gap:6px; padding:8px 10px 4px; flex:none; min-width:0}
+.mfBar .mfPlay{width:40px; height:40px; border-radius:50%; border:0; background:#fff; color:#000; font-size:16px; font-weight:800; flex:none}
+.mfBar .mfTC{color:#bbb; font:600 11px ui-monospace,Menlo,monospace; white-space:nowrap; flex:none}
+.mfTabs{flex:1; display:flex; gap:4px; justify-content:flex-end}
+.mfTabs button,.mfMoreB{border:1px solid rgba(255,255,255,.22); background:none; color:#ddd; border-radius:999px; padding:8px 10px; font-size:13px; font-weight:600; white-space:nowrap; flex:none}
+.mfTabs button.on{background:#fff; color:#000; border-color:#fff}
+.mfMoreB{padding:8px 10px}
+.mfPanel{display:none}
+.ppSheet.mfOn .mfPanel{display:block; flex:1; min-height:0; overflow:auto; padding:6px 14px calc(14px + env(safe-area-inset-bottom)); color:#eee}
+.mfR{display:flex; align-items:center; gap:8px; margin:8px 0; flex-wrap:wrap}
+.mfR.top{align-items:flex-start}
+.mfL{width:34px; flex:none; color:#aaa; font-size:13px}
+.mfR input,.mfR textarea{flex:1; min-width:0; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.22); color:#fff; border-radius:10px; padding:10px 12px; font:600 16px/1.4 system-ui,-apple-system,sans-serif; resize:none}
+.mfR input[data-mfv=a],.mfR input[data-mfv=e]{flex:none; width:92px; font-family:ui-monospace,Menlo,monospace}
+.mfNudge{display:flex; gap:4px; flex:1; min-width:0}
+.mfNudge button{flex:1; min-width:0; padding:9px 0; border-radius:9px; border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.06); color:#eee; font-size:12.5px}
+.mfRow{display:flex; gap:8px; align-items:center; margin:10px 0}
+.mfBig{flex:1; padding:12px; border-radius:12px; border:0; background:#fff; color:#000; font-weight:700; font-size:14px}
+.mfLen{color:#aaa; font-size:13px}
+.mfHint{color:#888; font-size:12px; line-height:1.5; margin-top:6px}
+.mfEmpty{color:#bbb; text-align:center; margin:14px 0 4px}
 /* 10/29 자막 글 목록 · 찾아 바꾸기 */
 .stTabs{display:flex; gap:6px; padding:0 12px 8px}
 .stTabs button{flex:1; height:34px; border-radius:9px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.7); font-size:13.5px; font-weight:700; cursor:pointer}
@@ -843,9 +872,17 @@ body.prOn #pp{display:none!important}
 .prPop button:hover small{color:#dbe9ff}
 .prPop hr{border:0; border-top:1px solid #3a3a3a; margin:5px 2px}
 /* 패널 배치 — 프리미어 「편집」 작업 영역 */
-.prGrid{flex:1; min-height:0; display:grid; gap:3px; padding:3px;
-  grid-template-columns:minmax(300px,24%) minmax(0,1fr) clamp(300px,calc((57vh - 120px) * .5625 + 28px),440px);
-  grid-template-rows:57fr 43fr}
+.prGrid{flex:1; min-height:0; display:grid; gap:3px; padding:3px; position:relative;
+  grid-template-columns:var(--c1, minmax(300px,24%)) minmax(0,1fr) var(--c3, clamp(300px,calc((57vh - 120px) * .5625 + 28px),440px));
+  grid-template-rows:var(--r1, 57fr) var(--r2, 43fr)}
+/* 11/3 패널 경계 끌기 · ` 로 패널 크게 */
+.prSplit{position:absolute; z-index:30; touch-action:none}
+.prSplit.v{width:6px; cursor:col-resize}
+.prSplit.h{height:6px; cursor:row-resize}
+.prSplit:hover,.prSplit.on{background:rgba(38,128,235,.55)}
+.prGrid.max .prP{display:none}
+.prGrid.max .prP.prMax{display:flex; grid-column:1/-1 !important; grid-row:1/-1 !important}
+.prGrid.max .prSplit{display:none}
 .prP{background:var(--pb); border-radius:4px; min-width:0; min-height:0; display:flex; flex-direction:column; overflow:hidden; outline:1px solid transparent; outline-offset:-1px}
 .prP.prFocus{outline:1px solid var(--blue)}
 #prFxP{grid-column:1; grid-row:1}
@@ -1358,7 +1395,8 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     Object.keys(rec).forEach(function (k) { r[k] = rec[k]; });
     return req('plot_evals', { method: 'POST', body: JSON.stringify(r), prefer: 'resolution=merge-duplicates,return=minimal' });
   }
-  window.plotStudio = { on: on, send: send, sheet: sheet, post: post };
+  function get(path) { return req(path); }             // 11/3 저장한 양식 받기 (kind='shortsave')
+  window.plotStudio = { on: on, send: send, sheet: sheet, post: post, get: get };
 })();</script>
 
 <style id="plotGap">
@@ -1764,8 +1802,43 @@ function draftSave() {
       if (!blocks.some(hasContent)) return;
       const slim = blocks.map(b => { const o = {}; KEEP.forEach(k => { o[k] = b[k]; }); return o; });
       localStorage.setItem(DRAFT, JSON.stringify({ at: Date.now(), blocks: slim }));
+      cloudDraftSoon(slim);
     } catch (_) {}
   }, 400);
+}
+/* ── 어디서든 이어서 (11/3 규효 "맥·폰 어디서든") ──────────────────────────────
+ * 저장한 양식·쓰다 만 양식을 Supabase plot_evals(kind='shortsave') 에도 둔다. 화면은 지금처럼 기기 안(localStorage)을 읽고,
+ * 열 때·저장 창을 열 때 구름에서 더 새 것을 받아 기기 안에 합친다. 글자만이라 한 벌 몇 KB.
+ */
+const CLOUD_DRAFT = 'ss:draft';
+function cloudOn() { return !IN_TG && !!(window.plotStudio && plotStudio.on && plotStudio.on() && plotStudio.get); }
+function cloudPush(id, sn) {
+  if (!cloudOn()) return Promise.resolve(false);
+  sn.device = (navigator.userAgent.match(/iPhone|iPad|Android|Mac|Windows/) || ['?'])[0];
+  return plotStudio.post({ id: id, kind: 'shortsave', snapshot: sn }).then(() => true, () => false);
+}
+let cloudDT = 0;
+function cloudDraftSoon(slim) {
+  clearTimeout(cloudDT);
+  cloudDT = setTimeout(() => cloudPush(CLOUD_DRAFT, { name: '쓰다 만 양식', at: Date.now(), blocks: slim }), 2500);
+}
+function cloudPull() {
+  if (!cloudOn()) return Promise.resolve({ draft: null, n: 0 });
+  return plotStudio.get('plot_evals?select=id,snapshot&kind=eq.shortsave&order=updated_at.desc&limit=60').then((rows) => {
+    let draft = null, n = 0;
+    const list = savesRead(), byId = {};
+    list.forEach((r) => { byId[r.id] = r; });
+    (rows || []).forEach((row) => {
+      const sn = row.snapshot || {};
+      if (row.id === CLOUD_DRAFT) { if (Array.isArray(sn.blocks) && sn.blocks.length) draft = { at: sn.at || 0, blocks: sn.blocks, device: sn.device }; return; }
+      const id = String(row.id).replace(/^ss:/, '');
+      if (sn.gone) { if (byId[id]) { delete byId[id]; n++; } return; }
+      if (!Array.isArray(sn.blocks)) return;
+      if (!byId[id] || (sn.at || 0) > (byId[id].at || 0)) { byId[id] = { id: id, name: sn.name || '이름 없음', at: sn.at || 0, blocks: sn.blocks }; n++; }
+    });
+    if (n) savesWrite(Object.values(byId).sort((a, b) => b.at - a.at));
+    return { draft: draft, n: n };
+  }).catch(() => ({ draft: null, n: 0 }));
 }
 function draftClear() { try { localStorage.removeItem(DRAFT); } catch (_) {} }
 /* 다른 화면으로 넘어가기 직전 — 기다리지 않고 바로 남긴다 (타임라인에서 돌아올 때 이걸 바탕으로 그 편만 바꾼다) */
@@ -1786,6 +1859,7 @@ function draftNow() {
  * 기기 안에만 남는다. 폰에서 저장한 걸 맥에서 열 수는 없다.
  */
 const SAVES = 'plot.shorts.saves';
+let SV_CUR = '';                          // 11/3 ⌘S — 마지막에 쓴 이름으로 바로 저장
 const SAVE_MAX = 30;
 
 function savesRead() {
@@ -1806,9 +1880,12 @@ function saveNamed(name) {
   const now = Date.now();
   const row = { id: 's' + now.toString(36), name: name, at: now, blocks: slimNow() };
   const i = list.findIndex(r => r.name === name);
-  if (i >= 0) list[i] = row; else list.unshift(row);
+  if (i >= 0) { row.id = list[i].id; list[i] = row; } else list.unshift(row);
   list.sort((a, b) => b.at - a.at);
-  return savesWrite(list) ? row : null;
+  if (!savesWrite(list)) return null;
+  SV_CUR = name;
+  cloudPush('ss:' + row.id, { name: row.name, at: row.at, blocks: row.blocks }).then((ok) => { row._cloud = ok; });
+  return row;
 }
 function saveDefaultName() {
   const first = blocks.find(b => b.title.trim());
@@ -4232,6 +4309,14 @@ function openSaves(mode) {
     setTimeout(() => { try { name.focus(); name.select(); } catch (_) {} }, 40);
   }
   svPaint();
+  cloudPull().then((r) => { if (r.n && !$('#saves').hidden) svPaint(); });
+}
+/* ⌘S — 저장 창 없이 바로 (마지막 이름 · 없으면 기본 이름) */
+function quickSave() {
+  if (!blocks.some(hasContent)) { toast('저장할 내용이 없습니다'); return; }
+  const nm = SV_CUR || saveDefaultName();
+  const row = saveNamed(nm);
+  if (row) toast('💾 「' + nm + '」 저장' + (cloudOn() ? ' — 맥·폰 어디서든 열 수 있어요' : ''));
 }
 function closeSaves() {
   $('#saves').hidden = true;
@@ -4244,7 +4329,7 @@ function svPaint() {
   box.replaceChildren();
   $('#svWho').textContent = list.length ? list.length + '개 저장됨' : '';
   $('#svTip').textContent = svMode === 'save'
-    ? '같은 이름으로 저장하면 덮어씁니다. 이 기기에만 남습니다.'
+    ? '같은 이름으로 저장하면 덮어씁니다.' + (cloudOn() ? ' 맥·폰 어디서든 열 수 있습니다 (⌘S 로 바로 저장).' : ' 이 기기에만 남습니다.')
     : (list.length ? '열면 지금 쓰던 양식은 사라집니다 — 필요하면 먼저 저장하세요.' : '');
   if (!list.length) {
     const p = el('p', 'svEmpty');
@@ -4262,6 +4347,7 @@ function svPaint() {
           !confirm('지금 쓰던 양식을 덮어씁니다. 계속할까요?')) return;
       blocks = fromSlim(r.blocks);
       active = 0;
+      SV_CUR = r.name;
       $('#resume').hidden = true;
       render();
       closeSaves();
@@ -4271,6 +4357,7 @@ function svPaint() {
     del.onclick = () => {
       if (!confirm('「' + r.name + '」을 지울까요?')) return;
       savesWrite(savesRead().filter((x) => x.id !== r.id));
+      cloudPush('ss:' + r.id, { gone: 1, at: Date.now() });
       svPaint();
     };
     row.append(b, s2, open, del);
@@ -4282,6 +4369,7 @@ function svPaint() {
  * ⌘Enter 로 보낸다 — 어느 칸에 있든. 구간 고르기가 열려 있으면 그쪽이 임자다.
  */
 function appKeys(e) {
+  if ((e.metaKey || e.ctrlKey) && !e.shiftKey && (e.key === 's' || e.key === 'S')) { e.preventDefault(); quickSave(); return; }
   if (!$('#picker').hidden) return;
   if (e.key === 'Escape' && !$('#importer').hidden) { e.preventDefault(); closeImporter(); return; }
   if (!(e.metaKey || e.ctrlKey) || e.key !== 'Enter') return;
@@ -4802,11 +4890,10 @@ function boot() {
   blocks = [blank()];
 
   // 쓰다 만 양식이 있으면 물어본다 — 말없이 되살리지는 않는다.
-  const d = draftRead();
-  if (d) {
+  const showResume = (d, where) => {
     $('#resume').hidden = false;
     $('#resumeMsg').textContent =
-      '쓰다 만 양식이 있습니다 — ' + d.blocks.length + '편, ' + ago(d.at);
+      '쓰다 만 양식이 있습니다 — ' + d.blocks.length + '편, ' + ago(d.at) + (where ? ' · ' + where : '');
     $('#resumeGo').onclick = () => {
       blocks = fromSlim(d.blocks);
       active = 0;
@@ -4815,7 +4902,18 @@ function boot() {
       toast(blocks.length + '편을 이어서 엽니다');
     };
     $('#resumeNo').onclick = () => { draftClear(); $('#resume').hidden = true; };
-  }
+  };
+  const d = draftRead();
+  if (d) showResume(d);
+  const t0 = Date.now();
+  cloudPull().then((r) => {                          // 다른 기기에서 쓰던 게 더 새 것이면 (아직 아무것도 안 건드렸을 때만)
+    const c = r.draft;
+    if (!c || blocks.some(hasContent) || Date.now() - t0 > 20000) return;
+    const mine = draftRead();
+    if (mine && (mine.at || 0) >= (c.at || 0) - 1000) return;
+    try { localStorage.setItem(DRAFT, JSON.stringify({ at: c.at, blocks: c.blocks })); } catch (_) {}
+    showResume({ at: c.at, blocks: c.blocks }, (c.device === 'iPhone' || c.device === 'Android') ? '폰에서' : '다른 기기에서');
+  });
 
   render();
   fitStage();
@@ -5081,7 +5179,8 @@ function ppPremiere() {
   const b = PP.b, btn = $('#ppPr');
   if (!b || !btn || btn.disabled) return;
   if (!(b.start || '').trim() || !(b.end || '').trim()) { toast('구간(시작·끝)을 먼저 정해 주세요'); return; }
-  const segs = stOk(b) ? b.subsRef.segs.map(s => ({ start: s.start, end: s.end, text: s.text })) : [];
+  // 11/3 자막이 보이는데 꾸러미에 자막.srt 가 빠졌다 — 받아 둔 줄이 있으면 그대로 넣는다
+  const segs = (stOk(b) || (b.subsRef && (b.subsRef.segs || []).length)) ? b.subsRef.segs.map(s => ({ start: s.start, end: s.end, text: s.text })) : [];
   btn.disabled = true;
   const done = () => { btn.disabled = false; btn.textContent = '🎬 프리미어로 받기'; };
   toast('🎬 맥이 프리미어 꾸러미를 만듭니다 — 몇 분 걸려요. 다 되면 텔레그램으로 와요');
@@ -5243,9 +5342,10 @@ function ppStop(keep) {
 function takeDoneHandoff() {
   let o = null;
   try { o = JSON.parse(localStorage.getItem('plot.form.handoff.done') || 'null'); localStorage.removeItem('plot.form.handoff.done'); } catch (_) {}
-  if (!o || !o.url || !blocks.length) return;
+  if (!o || !blocks.length) return;
+  if (!o.url && !(o.subs && Array.isArray(o.subs.segs) && o.subs.segs.length)) return;
   const b = blocks[active] || blocks[0];
-  b.done = { url: String(o.url), at: String(o.at || ''), sig: coreSig(b) };
+  if (o.url) b.done = { url: String(o.url), at: String(o.at || ''), sig: coreSig(b) };   // 11/3 완성본 전에 자막만 먼저 올 때도 있다
   const sb = o.subs;
   if (sb && sb.id && Array.isArray(sb.segs) && sb.segs.length) {     // 초안 완성본에 들어간 자막 — 고쳐서 다시 만들 수 있게
     const u = (b.url || '').trim(), st = (b.start || '').trim(), en = (b.end || '').trim();
@@ -5255,7 +5355,8 @@ function takeDoneHandoff() {
     b.subs = true;
   }
   refresh();
-  toast('완성본이 있어요' + (subsOk(b) ? ' · 자막도 같이 왔어요 — 미리보기에서 고칠 수 있어요' : ''));
+  toast(o.url ? '완성본이 있어요' + (subsOk(b) ? ' · 자막도 같이 왔어요 — 미리보기에서 고칠 수 있어요' : '')
+              : '💬 자막이 먼저 왔어요 — 미리보기에서 고칠 수 있어요 (완성본은 맥이 마저 만드는 중)');
 }
 function bindPlay() {
   if (!$('#pp')) return;
@@ -5336,6 +5437,26 @@ function stF(x) { x = Math.max(0, x); const m = Math.floor(x / 60), s = x - m * 
 function stPush() {
   ST.undo.push(JSON.stringify(stSegs()));
   if (ST.undo.length > 60) ST.undo.shift();
+  ST.redo = [];
+}
+function stRedo() {                               // 11/3 ⌘⇧Z 다시 하기 (프리미어처럼)
+  const s = (ST.redo || []).pop(); if (!s || !PP.b || !PP.b.subsRef) { toast('다시 할 것이 없습니다'); return; }
+  ST.undo.push(JSON.stringify(stSegs()));
+  PP.b.subsRef.segs.splice(0, PP.b.subsRef.segs.length, ...JSON.parse(s));
+  if (ST.sel >= stSegs().length) ST.sel = stSegs().length - 1;
+  stChanged(true);
+}
+/* Q / W — 재생 헤드 아래 줄의 앞·뒤를 재생 헤드까지 (프리미어 리플 트림 Q·W 처럼) */
+function stTrimTo(w) {
+  const h = stHeadRel(), segs = stSegs();
+  const k = segs.findIndex((x) => h >= x.start - 0.02 && h <= x.end + 0.02);
+  if (k < 0) { toast('재생 헤드 아래에 자막 줄이 없습니다'); return; }
+  const x = segs[k];
+  if (w === 'q' && h > x.end - 0.15) return;
+  if (w === 'w' && h < x.start + 0.15) return;
+  stPush();
+  if (w === 'q') x.start = stR(h); else x.end = stR(h);
+  ST.sel = k; stChanged(true);
 }
 function stChanged(repaintAll) {
   const b = PP.b; if (!b || !b.subsRef) return;
@@ -5345,6 +5466,7 @@ function stChanged(repaintAll) {
 }
 function stUndo() {
   const s = ST.undo.pop(); if (!s || !PP.b || !PP.b.subsRef) { toast('되돌릴 것이 없습니다'); return; }
+  (ST.redo = ST.redo || []).push(JSON.stringify(stSegs()));
   PP.b.subsRef.segs.splice(0, PP.b.subsRef.segs.length, ...JSON.parse(s));
   if (ST.sel >= stSegs().length) ST.sel = stSegs().length - 1;
   stChanged(true);
@@ -5363,7 +5485,7 @@ function stBuild() {
     '<button type="button" class="stB" data-st="undo" title="되돌리기 (⌘Z)">↶</button>' +
     '<button type="button" class="stB" data-st="zout" title="축소 (-)">−</button><button type="button" class="stB" data-st="zin" title="확대 (+)">＋</button></div>' +
     '<div class="stWrap"><div class="stScroll"><div class="stInner"><div class="stRuler"></div><div class="stTrack"></div></div></div><i class="stHeadLine"></i></div>' +
-    '<div class="stEdit"><span class="stWhen">줄을 누르면 여기서 글을 고칩니다</span><input type="text" class="stText" placeholder="자막 글" disabled></div>' +
+    '<div class="stEdit"><span class="stWhen">줄을 누르면 여기서 글을 고칩니다 · Shift+Enter 두 줄</span><textarea class="stText" rows="1" placeholder="자막 글 (Shift+Enter 로 두 줄)" disabled></textarea></div>' +
     '<div class="stTools">' +
       '<button type="button" data-st="split" title="C">✂ 자르기</button><button type="button" data-st="in" title="I">⇤ 시작=지금</button>' +
       '<button type="button" data-st="out" title="O">끝=지금 ⇥</button><button type="button" data-st="merge">⇢ 다음과 합치기</button>' +
@@ -5430,8 +5552,13 @@ function stBuild() {
   box.querySelectorAll('[data-st]').forEach((x) => x.addEventListener('click', () => stAct(x.getAttribute('data-st'))));
   const inp = box.querySelector('.stText');
   inp.addEventListener('focus', () => { const s = stSegs()[ST.sel]; if (s) stPush(); });
-  inp.addEventListener('input', () => { const s = stSegs()[ST.sel]; if (!s) return; s.text = inp.value; s.chk = false; PP.b.subsRef.edited = true; ppSubsSave(); stPaintBlocks(); stChkPaint(); });
-  inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); inp.blur(); } });
+  const fitTa = () => { inp.rows = (inp.value.indexOf('\n') >= 0) ? 2 : 1; };
+  inp.addEventListener('input', () => { const s = stSegs()[ST.sel]; if (!s) return; s.text = stTwo(inp.value); if (inp.value !== s.text) inp.value = s.text; fitTa(); s.chk = false; PP.b.subsRef.edited = true; ppSubsSave(); stPaintBlocks(); stChkPaint(); });
+  inp.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' || e.isComposing || e.keyCode === 229) return;
+    if (e.shiftKey && inp.value.indexOf('\n') < 0) return;      // Shift+Enter = 두 줄로 (한 번만)
+    e.preventDefault(); inp.blur();
+  });
   stListBind(box.querySelector('.stList'));
   const fq = box.querySelector('.stFq'), fr = box.querySelector('.stFr');
   fq.addEventListener('input', () => { stFindCount(); stListSync(); });
@@ -5496,7 +5623,7 @@ function stText() {
   const box = $('#ppSubList'); if (!box || !box.classList.contains('stOn')) return;
   const s = stSegs()[ST.sel], inp = box.querySelector('.stText'), w = box.querySelector('.stWhen');
   inp.disabled = !s;
-  if (s) { if (document.activeElement !== inp && inp.value !== s.text) inp.value = s.text; w.textContent = (ST.sel + 1) + '번 · ' + stF(s.start) + ' → ' + stF(s.end); }
+  if (s) { if (document.activeElement !== inp && inp.value !== s.text) { inp.value = s.text; inp.rows = String(s.text || '').indexOf('\n') >= 0 ? 2 : 1; } w.textContent = (ST.sel + 1) + '번 · ' + stF(s.start) + ' → ' + stF(s.end); }
   else { inp.value = ''; w.textContent = stSegs().length ? '줄을 누르면 여기서 글을 고칩니다' : '아직 자막이 없습니다 — 넣을 자리에서 멈추고 「＋ 새 줄」'; }
   box.querySelectorAll('[data-st=split],[data-st=in],[data-st=out],[data-st=merge],[data-st=del]').forEach((x) => { x.disabled = !s; });
   const m = box.querySelector('[data-st=merge]'); if (m && s) m.disabled = ST.sel >= stSegs().length - 1;
@@ -5793,6 +5920,11 @@ function stListAdd() {                              // ＋ 새 줄 — 재생 �
   stAct('add');
   if (stSegs().length > n0) { stListBuild(); stListFocus(ST.sel, 0); }
 }
+/* 자막 한 줄 글 — 줄바꿈은 하나만 (두 줄까지), 세 번째 줄부터는 둘째 줄에 붙인다 */
+function stTwo(v) {
+  const xs = String(v || '').replace(/\r/g, '').split('\n');
+  return xs.length <= 2 ? xs.join('\n') : xs[0] + '\n' + xs.slice(1).join(' ');
+}
 function stListBind(L) {
   L.addEventListener('click', (e) => {
     const r = e.target.closest('.stRow'), k = r ? +r.dataset.k : -1;
@@ -5819,7 +5951,7 @@ function stListBind(L) {
   L.addEventListener('input', (e) => {
     const ta = e.target.closest('.stRx'); if (!ta) return;
     const s = stSegs()[+ta.closest('.stRow').dataset.k]; if (!s) return;
-    s.text = ta.value.replace(/\n/g, ' '); s.chk = false;
+    s.text = stTwo(ta.value); s.chk = false;         // 11/3 규효 "자막 두 줄 바꿈이 아예 안 된다" — Shift+Enter 로 두 줄까지
     if (ta.value !== s.text) ta.value = s.text;
     PP.b.subsRef.edited = true; ppSubsSave();
     stFit1(ta); stPaintBlocks(); stChkPaint();
@@ -5915,13 +6047,18 @@ document.addEventListener('keydown', (e) => {
   const k = e.key, mod = e.metaKey || e.ctrlKey;
   const step = (d) => { const r = Math.max(0, Math.min(stLen(), stHeadRel() + d)); ppSeek(PP.a + r); stCenter(r); ST.lastRel = r; };
   let hit = true;
-  if (mod && (k === 'z' || k === 'Z')) stUndo();
+  const fr = 1 / ((typeof UNIT !== 'undefined' && UNIT.fps) || 30);
+  if (mod && (k === 'z' || k === 'Z')) { if (e.shiftKey) stRedo(); else stUndo(); }
+  else if (mod && (k === 'y' || k === 'Y')) stRedo();
+  else if (mod) hit = false;                                  // ⌘ 조합은 아래 글자 단축키와 겹치지 않게 (⌘S·⌘K 등은 다른 곳이 받는다)
+  else if ((k === 'q' || k === 'Q')) stTrimTo('q');
+  else if ((k === 'w' || k === 'W')) stTrimTo('w');
   else if (k === 'c' || k === 'C') stAct('split');
   else if (k === 'i' || k === 'I') stAct('in');
   else if (k === 'o' || k === 'O') stAct('out');
   else if (k === 'Delete' || k === 'Backspace') stAct('del');
-  else if (k === 'ArrowLeft') step(e.shiftKey ? -1 : -0.1);
-  else if (k === 'ArrowRight') step(e.shiftKey ? 1 : 0.1);
+  else if (k === 'ArrowLeft') { ppSetPaused(true); step(e.altKey ? -1 : e.shiftKey ? -5 * fr : -fr); }   // 11/3 프리미어처럼 ← 1프레임 · Shift 5프레임 · Alt 1초
+  else if (k === 'ArrowRight') { ppSetPaused(true); step(e.altKey ? 1 : e.shiftKey ? 5 * fr : fr); }
   else if (k === ' ' && !mod) { ST.stopAt = 0; ppSetPaused(!PP.paused); stNowPaint(stHeadRel()); }
   else if ((k === 'j' || k === 'J') && !mod) { ppSetPaused(true); step(-1); }
   else if ((k === 'k' || k === 'K') && !mod) { ppSetPaused(true); stNowPaint(stHeadRel()); }
@@ -6003,7 +6140,9 @@ function prBuild() {
     <div><em>타임라인·프로그램</em> Space 재생 · J K L · ←/→ 0.1초 (Shift 1초) · ↑/↓ 앞뒤 편집점 · Home/End</div>
     <div><em>도구</em> V 선택 · C 자르기 (자막 줄을 누른 자리에서 둘로) · ⌘K 재생 헤드에서 자르기 · Esc 선택 도구로</div>
     <div><em>자막 줄</em> I/O 고른 줄 시작·끝을 재생 헤드로 · Delete 지우기 · ⌘Z 되돌리기 · U 확인할 줄 · Enter 글 고치기</div>
-    <div><em>보기</em> + / − 확대 · \\ 전체 맞춤 · S 붙기 켜고 끄기</div>
+    <div><em>보기</em> + / − 확대 · \\ 전체 맞춤 · S 붙기 켜고 끄기 · \` 누른 패널 크게 · Shift+1 프로젝트 · 2 소스 · 3 타임라인 · 4 프로그램 · 5 효과 컨트롤</div>
+    <div><em>편집</em> ←/→ 1프레임 (Shift 5프레임 · Alt 1초) · Q / W 재생 헤드 아래 줄 앞·뒤를 헤드까지 · ⌘Z 되돌리기 · ⌘⇧Z 다시 하기 · ⌘S 저장 (맥·폰 어디서든)</div>
+    <div><em>편 (시퀀스)</em> ⌘⇧K 재생 헤드에서 편을 둘로 나누기 · 프로젝트 패널 「✂ 편 나누기」 · 패널 사이 경계를 끌면 크기 조절 (두 번 누르면 처음대로)</div>
     <div><em>텍스트 패널</em> Enter 커서 자리에서 둘로 · 맨 앞 ⌫ 앞줄과 합치기 · ↑↓ 앞뒤 줄 · 시간 누르면 그 줄만 듣기</div>
     <div><em>마우스</em> 영상 클립 양 끝 끌기 = 구간 줄이고 늘이기 (자막도 같이 밀림) · 글자 클립 끌기 = 1~3줄 나오는 때 · 9:16 창·프로그램 화면 옆으로 끌기 = 가로 위치</div>
   </div>
@@ -6017,6 +6156,7 @@ function prBuild() {
       <button type="button" data-pa="all">🎬 전체 <span data-v="n"></span>편 만들기</button>
       <button type="button" data-pa="layers">🧾 레이어만 <small>투명 .mov — 영상 없이 글자만</small></button>
       <button type="button" data-pa="raw">🎞 원본만 <small>리프레임·글자 없이 구간만 텔레그램으로</small></button>
+      <button type="button" data-pa="premiere">🎬 프리미어로 받기 <small>세로 영상·글자 레이어·자막.srt·열기.xml 묶음 → 텔레그램</small></button>
       <hr>
       <button type="button" data-pa="copyOne">📋 이 편 양식 복사</button>
       <button type="button" data-pa="copyAll">📋 전체 양식 복사</button>
@@ -6091,7 +6231,7 @@ function prBuild() {
     <div class="prTabs"><button type="button" class="on">프로젝트: PLOT 숏폼</button></div>
     <div class="prBody"><div id="prResumeHost"></div><div class="prProj" id="prProj"></div></div>
     <div class="prProjFoot">
-      <button type="button" data-pa="new" title="새 영상">＋</button><button type="button" data-pa="dup">복제</button><button type="button" data-pa="del" id="prDel">🗑 지우기</button>
+      <button type="button" data-pa="new" title="새 영상">＋</button><button type="button" data-pa="dup">복제</button><button type="button" data-pa="splitSeq" title="재생 헤드 자리에서 이 편을 두 편으로 (⌘⇧K)">✂ 편 나누기</button><button type="button" data-pa="del" id="prDel">🗑 지우기</button>
       <span class="prSp"></span><span id="prCount"></span>
     </div>
   </section>
@@ -6188,6 +6328,100 @@ function prBind() {
   window.addEventListener('resize', () => { if (PR.on) { prSrcFit(); ppFit(); } });
   try { new ResizeObserver(() => { if (PR.on) prSrcFit(); }).observe($('#prSrcScreen')); } catch (_) {}
   window.addEventListener('keydown', prKey, true);
+  prSplitBuild();
+}
+
+/* ── 패널 크기 조절 (11/3 규효 "단락별로 사이즈 조절") — 패널 사이 경계를 끈다 · 두 번 누르면 처음대로 · 기기에 기억 ── */
+const PR_LAY = 'plot.shorts.pr.lay';
+function prLayGet() { try { return JSON.parse(localStorage.getItem(PR_LAY) || '{}') || {}; } catch (_) { return {}; } }
+function prLaySet(L) { try { localStorage.setItem(PR_LAY, JSON.stringify(L)); } catch (_) {} }
+function prLayApply() {
+  const g = prQ('.prGrid'); if (!g) return;
+  const L = prLayGet();
+  g.style.setProperty('--c1', L.c1 ? L.c1 + 'px' : 'minmax(300px,24%)');
+  g.style.setProperty('--c3', L.c3 ? L.c3 + 'px' : 'clamp(300px,calc((57vh - 120px) * .5625 + 28px),440px)');
+  g.style.setProperty('--r1', L.r1 ? L.r1 + 'px' : '57fr');
+  g.style.setProperty('--r2', L.r1 ? 'minmax(0,1fr)' : '43fr');
+  requestAnimationFrame(prSplitPos);
+}
+function prSplitBuild() {
+  const g = prQ('.prGrid'); if (!g || g.querySelector('.prSplit')) return;
+  ['c1', 'c3', 'r1'].forEach((k) => {
+    const d = el('div'); d.className = 'prSplit ' + (k === 'r1' ? 'h' : 'v'); d.dataset.split = k;
+    d.title = '끌어서 크기 조절 · 두 번 누르면 처음대로';
+    g.append(d);
+    d.addEventListener('dblclick', () => { const L = prLayGet(); delete L[k]; prLaySet(L); prLayApply(); prReflow(); });
+    d.addEventListener('pointerdown', (e) => {
+      e.preventDefault(); d.setPointerCapture(e.pointerId); d.classList.add('on');
+      const R = g.getBoundingClientRect();
+      const mv = (ev) => {
+        const L = prLayGet();
+        if (k === 'c1') L.c1 = Math.round(Math.max(220, Math.min(R.width * 0.5, ev.clientX - R.left)));
+        if (k === 'c3') L.c3 = Math.round(Math.max(220, Math.min(R.width * 0.55, R.right - ev.clientX)));
+        if (k === 'r1') L.r1 = Math.round(Math.max(180, Math.min(R.height - 150, ev.clientY - R.top)));
+        prLaySet(L); prLayApply();
+        clearTimeout(PR.layT); PR.layT = setTimeout(prReflow, 60);
+      };
+      const up = () => { d.classList.remove('on'); d.removeEventListener('pointermove', mv); d.removeEventListener('pointerup', up); prReflow(); };
+      d.addEventListener('pointermove', mv); d.addEventListener('pointerup', up);
+    });
+  });
+  prLayApply();
+  try { new ResizeObserver(() => prSplitPos()).observe(g); } catch (_) {}
+}
+function prSplitPos() {
+  const g = prQ('.prGrid'); if (!g) return;
+  const R = g.getBoundingClientRect(), a = $('#prFxP').getBoundingClientRect(), c = $('#prPgmP').getBoundingClientRect();
+  const set = (k, css) => { const d = g.querySelector('[data-split=' + k + ']'); if (d) Object.assign(d.style, css); };
+  set('c1', { left: (a.right - R.left - 1) + 'px', top: '0px', height: R.height + 'px' });
+  set('c3', { left: (c.left - R.left - 4) + 'px', top: '0px', height: (a.bottom - R.top) + 'px' });
+  set('r1', { top: (a.bottom - R.top - 1) + 'px', left: '0px', width: R.width + 'px' });
+}
+function prReflow() {                                  // 패널 크기가 바뀌면 화면들을 다시 맞춘다
+  if (!PR.on) return;
+  prSplitPos();
+  try { prSrcFit(); } catch (_) {}
+  try { ppFit(); } catch (_) {}
+  try { window.dispatchEvent(new Event('resize')); } catch (_) {}
+}
+/* ` — 누른 패널을 크게 (프리미어처럼) · 한 번 더 누르면 원래대로 */
+function prMaxToggle() {
+  const g = prQ('.prGrid'); if (!g) return;
+  const p = prQ('.prP[data-pf="' + PR.focus + '"]');
+  const on = g.classList.contains('max') && p && p.classList.contains('prMax');
+  g.querySelectorAll('.prP').forEach((x) => x.classList.remove('prMax'));
+  g.classList.toggle('max', !on && !!p);
+  if (!on && p) p.classList.add('prMax');
+  setTimeout(prReflow, 30);
+}
+/* ✂ 편 나누기 (11/3 규효 "편을 여러 개로 나누기") — 재생 헤드 자리에서 이 편을 두 편으로. 자막도 시간 따라 나눈다 */
+function prSplitSeq() {
+  const b = prB(), i = blocks.indexOf(b);
+  const a = toSec(b.start), e = toSec(b.end);
+  if (a == null || e == null) { toast('구간(인·아웃)이 있어야 나눕니다'); return; }
+  if (PP.b !== b || !PP.kind || PP.kind === 'done') { toast('프로그램 모니터에서 나눌 자리로 재생 헤드를 옮겨 주세요'); return; }
+  const r = Math.max(0, ppNow() - PP.a), t = Math.round((a + r) * 100) / 100;
+  if (r < 1 || t > e - 1) { toast('앞뒤로 1초 넘게 남는 자리에서 나눕니다'); return; }
+  prCardHome();
+  const cp = fromSlim([JSON.parse(JSON.stringify((() => { const o = {}; KEEP.forEach((k) => { o[k] = b[k]; }); return o; })()))])[0];
+  cp.id = ++seq;
+  const ts = fmtStamp(t);
+  cp.start = ts; cp.end = b.end; cp.done = null;
+  if (b.subsRef && Array.isArray(b.subsRef.segs)) {
+    const old = b.subsRef, segs = old.segs;
+    const A = segs.filter((x) => x.start < r - 0.05).map((x) => Object.assign({}, x, { end: Math.min(x.end, r) }));
+    const B = segs.filter((x) => x.end > r + 0.05).map((x) => Object.assign({}, x, { start: stR(Math.max(0, x.start - r)), end: stR(x.end - r) }));
+    const nid = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
+    cp.subsRef = Object.assign({}, old, { id: nid, start: ts, end: (b.end || '').trim(), segs: B, edited: true,
+                                          sn: Object.assign({}, old.sn || {}, { start: ts, end: (b.end || '').trim() }) });
+    old.segs = A; old.end = ts; if (old.sn) old.sn.end = ts; old.edited = true;
+    try { plotStudio.post({ id: nid, kind: 'studio', snapshot: Object.assign({}, cp.subsRef.sn, { subs: B, edited: true, status: 'done' }) }); } catch (_) {}
+  }
+  b.end = ts;
+  if (b.subsRef) { const keep = PP.b; PP.b = b; try { ppSubsSave(); } catch (_) {} PP.b = keep; }
+  blocks.splice(i + 1, 0, cp);
+  render(); prLoad(true);
+  toast('✂ ' + fmtStamp(a) + '–' + ts + ' / ' + ts + '–' + (cp.end || '') + ' 두 편으로 나눴습니다');
 }
 function prFocus(f) {
   PR.focus = f;
@@ -6816,6 +7050,8 @@ function prAct(a, node) {
   if (a === 'keys') { const k = prQ('#prKeys'); k.hidden = !k.hidden; return; }
   if (a === 'phone') return prExit();
   if (a === 'new') { prCardHome(); blocks.push(blank()); active = blocks.length - 1; render(); prLoad(); setTimeout(() => $('#prSrcUrl').focus(), 50); return; }
+  if (a === 'splitSeq') return prSplitSeq();
+  if (a === 'premiere') { const pb = $('#ppPr'); if (!studioOn()) { toast('맥 연결이 있어야 프리미어 꾸러미를 만듭니다'); return; } if (pb) { pb.disabled = false; } return ppPremiere(); }
   if (a === 'dup') { prCardHome(); const cp = Object.assign({}, b, { id: ++seq }); blocks.splice(i + 1, 0, cp); active = i + 1; render(); prLoad(); return; }
   if (a === 'del') {
     if (blocks.length === 1) { toast('최소 한 편은 있어야 합니다'); return; }
@@ -6869,6 +7105,11 @@ function prKey(e) {
   if (!$('#picker').hidden || !$('#importer').hidden || ($('#saves') && !$('#saves').hidden) || document.getElementById('aiSheet')) return;
   const k = e.key, mod = e.metaKey || e.ctrlKey;
   let hit = true;
+  // 11/3 어느 패널에서든 — 패널 고르기 Shift+1~5 · ` 크게 · ⌘⇧K 편 나누기
+  const FOC = { '!': 'proj', '1': 'proj', '@': 'source', '2': 'source', '#': 'tl', '3': 'tl', '$': 'program', '4': 'program', '%': 'fx', '5': 'fx' };
+  if (e.shiftKey && !mod && /^Digit[1-5]$/.test(e.code || '')) { prFocus(FOC[e.code.slice(5)]); e.preventDefault(); e.stopImmediatePropagation(); return; }
+  if (!mod && (k === '`' || e.code === 'Backquote')) { prMaxToggle(); e.preventDefault(); e.stopImmediatePropagation(); return; }
+  if (mod && e.shiftKey && (k === 'k' || k === 'K')) { prSplitSeq(); e.preventDefault(); e.stopImmediatePropagation(); return; }
   if (PR.focus === 'source') {
     const fr = 1 / (UNIT.fps || 30);
     if (k === ' ') prSrcToggle();
@@ -6955,6 +7196,139 @@ document.addEventListener('DOMContentLoaded', () => {
   }, true);
 });
 
+/* ── 폰 집중 편집 (11/3 규효 "폰에서는 본영상이 잘 안 보인다 — 영상이 잘 보이고 구간·자막·후킹 제목 수정에 집중") ──
+ * 폰에서 미리보기(#pp)를 열면 영상을 크게 두고, 아래에 「구간 · 자막·가사 · 제목」 세 칸만. 나머지 단추는 ⋯ 안으로. */
+const MF = { on: false, tab: 'sub' };
+function mfWant() { return !PR.on && !prWide() && !IN_TG; }
+function mfMount() {
+  const pp = $('#pp'); if (!pp || pp.hidden || !mfWant()) return mfUnmount();
+  if (PP.mode !== 'seg' || !PP.b) return mfUnmount();
+  MF.on = true;
+  pp.classList.add('mfOn');
+  let bar = $('#mfBar');
+  if (!bar) {
+    bar = el('div', 'mfBar'); bar.id = 'mfBar';
+    bar.innerHTML = '<button type="button" class="mfPlay" data-mf="play">▶</button><span class="mfTC" id="mfTC"></span>' +
+      '<span class="mfTabs"><button type="button" data-mt="range">구간</button><button type="button" data-mt="sub">자막·가사</button><button type="button" data-mt="title">제목</button></span>' +
+      '<button type="button" class="mfMoreB" data-mf="more" aria-label="더 보기">⋯</button>';
+    $('#ppBar').after(bar);
+    const pan = el('div', 'mfPanel'); pan.id = 'mfPanel';
+    $('#ppNote').after(pan);
+    bar.addEventListener('click', (e) => {
+      const t = e.target.closest('[data-mt]'); if (t) { mfTab(t.getAttribute('data-mt')); return; }
+      const a = e.target.closest('[data-mf]'); if (!a) return;
+      const k = a.getAttribute('data-mf');
+      if (k === 'play') { if (PP.kind && PP.kind !== 'img') { ST.stopAt = 0; ppSetPaused(!PP.paused); } }
+      if (k === 'more') pp.classList.toggle('mfMore');
+    });
+    pan.addEventListener('click', mfClick);
+    pan.addEventListener('input', mfInput);
+    mfTick();
+  }
+  if (!stOk(PP.b) && MF.tab === 'sub') MF.tab = 'sub';
+  mfTab(MF.tab);
+}
+function mfUnmount() {
+  MF.on = false;
+  const pp = $('#pp'); if (!pp) return;
+  pp.classList.remove('mfOn', 'mfMore', 'mfSub');
+}
+function mfTick() {
+  if (MF.on && PP.kind) {
+    const tc = $('#mfTC'), pl = document.querySelector('#mfBar .mfPlay');
+    if (tc) tc.textContent = stF(Math.max(0, ppNow() - PP.a)).replace(/\.\d$/, '') + '/' + stF(Math.max(0, PP.e - PP.a)).replace(/\.\d$/, '');
+    if (pl) { const g = PP.paused ? '▶' : '❚❚'; if (pl.textContent !== g) pl.textContent = g; }
+  }
+  setTimeout(mfTick, 200);
+}
+function mfTab(t) {
+  MF.tab = t;
+  const pp = $('#pp'), b = PP.b;
+  document.querySelectorAll('#mfBar [data-mt]').forEach((x) => x.classList.toggle('on', x.getAttribute('data-mt') === t));
+  pp.classList.toggle('mfSub', t === 'sub' && stOk(b));
+  const pan = $('#mfPanel');
+  if (t === 'sub') {
+    if (stOk(b)) {
+      pan.innerHTML = '';
+      if (!PP.editOpen) { PP.editOpen = true; ppSubsPaint(); }
+      setTimeout(() => { try { stViewSet('list'); } catch (_) {} }, 30);
+    } else {
+      pan.innerHTML = '<div class="mfEmpty">아직 자막·가사가 없습니다</div>' +
+        '<div class="mfRow"><button type="button" data-mfa="get" class="mfBig">💬 자막·가사 받기</button><button type="button" data-mfa="write" class="mfBig">✏️ 직접 쓰기</button></div>' +
+        '<div class="mfHint">노래 구간이면 가사부터 찾아요 (가사 영상과 소리를 맞춰 따 옴) · 말하는 장면이면 받아쓰기</div>';
+    }
+    return;
+  }
+  if (PP.editOpen) { PP.editOpen = false; ppSubsPaint(); }
+  if (t === 'range') {
+    const a = toSec(b.start), e = toSec(b.end);
+    const row = (w, v) => '<div class="mfR"><span class="mfL">' + (w === 'a' ? '시작' : '끝') + '</span><input type="text" inputmode="decimal" data-mfv="' + w + '" value="' + prEsc(v == null ? '' : fmtStamp(v)) + '">' +
+      '<span class="mfNudge"><button type="button" data-mfn="' + w + ':-1">−1초</button><button type="button" data-mfn="' + w + ':-0.1">−0.1</button>' +
+      '<button type="button" data-mfn="' + w + ':now">지금</button><button type="button" data-mfn="' + w + ':0.1">+0.1</button><button type="button" data-mfn="' + w + ':1">+1초</button></span></div>';
+    pan.innerHTML = row('a', a) + row('e', e) +
+      '<div class="mfRow"><button type="button" data-mfa="replay" class="mfBig">▶ 처음부터 보기</button><span class="mfLen">' + (a != null && e != null ? (e - a).toFixed(1) + '초' : '') + '</span></div>' +
+      '<div class="mfHint">「지금」 = 영상이 멈춘 자리 · 끝을 늘리면 받아 둔 자막은 그 부분이 비어요</div>';
+  } else {
+    pan.innerHTML = '<div class="mfR top"><span class="mfL">제목</span><textarea rows="3" data-mfv="title" placeholder="첫 줄&#10;둘째 줄&#10;셋째 줄">' + prEsc(titleLines(b)) + '</textarea></div>' +
+      '<div class="mfHint">엔터로 줄을 나눕니다 · 3줄까지 · 영상 위 글자가 바로 바뀝니다</div>' +
+      '<div class="mfR"><span class="mfL">출처</span><input type="text" data-mfv="source" value="' + prEsc(b.source || '') + '"></div>';
+  }
+}
+function mfSetRange(a, e) {
+  const i = PP.i; if (i >= 0 && i < blocks.length) active = i;
+  prSetRange(a, e);
+  setTimeout(() => mfTab('range'), 40);
+}
+function mfClick(ev) {
+  const b = PP.b; if (!b) return;
+  const n = ev.target.closest('[data-mfn]');
+  if (n) {
+    const [w, d] = n.getAttribute('data-mfn').split(':');
+    let a = toSec(b.start), e = toSec(b.end);
+    if (a == null) a = 0;
+    const now = Math.round(ppNow() * 100) / 100;
+    if (w === 'a') a = d === 'now' ? now : Math.max(0, Math.round((a + Number(d)) * 100) / 100);
+    else e = d === 'now' ? now : Math.round(((e == null ? a + 15 : e) + Number(d)) * 100) / 100;
+    if (e != null && e < a + 1) { toast('끝은 시작보다 1초 넘게 뒤여야 합니다'); return; }
+    ppSetPaused(true);
+    mfSetRange(a, e);
+    return;
+  }
+  const x = ev.target.closest('[data-mfa]'); if (!x) return;
+  const k = x.getAttribute('data-mfa');
+  if (k === 'replay') { ppSeek(PP.a); ST.lastRel = 0; ppSetPaused(false); }
+  if (k === 'get') { const s = $('#ppSubs'); if (s && !s.hidden && !s.disabled) s.click(); else toast('맥 연결이 있어야 받을 수 있어요'); }
+  if (k === 'write') { const s = $('#ppSubEdit'); if (s) s.click(); setTimeout(() => mfTab('sub'), 300); }
+}
+function mfInput(ev) {
+  const b = PP.b, t = ev.target; if (!b || !t.dataset) return;
+  const k = t.dataset.mfv;
+  if (k === 'title') { setTitleLines(b, t.value); refresh(); try { paintFrame($('#ppOver'), b); ppFit(); } catch (_) {} return; }
+  if (k === 'source') { b.source = t.value; refresh(); try { paintFrame($('#ppOver'), b); } catch (_) {} return; }
+  if (k === 'a' || k === 'e') {
+    clearTimeout(MF.inT);
+    MF.inT = setTimeout(() => {
+      const v = toSec(t.value); if (v == null) return;
+      let a = toSec(b.start), e = toSec(b.end);
+      if (k === 'a') a = v; else e = v;
+      if (a != null && e != null && e < a + 1) return;
+      mfSetRange(a, e);
+    }, 700);
+  }
+}
+(function mfHook() {
+  const _open = openPlay;
+  openPlay = function () { return Promise.resolve(_open.apply(this, arguments)).then((r) => { setTimeout(mfMount, 60); return r; }); };
+  const _stop = ppStop;
+  ppStop = function () { const r = _stop.apply(this, arguments); if ($('#pp') && $('#pp').hidden) mfUnmount(); return r; };
+  const _sp = ppSubsPaint;
+  ppSubsPaint = function () {
+    _sp.apply(this, arguments);
+    if (MF.on && MF.tab === 'sub') { const pp = $('#pp'); const was = pp.classList.contains('mfSub'); pp.classList.toggle('mfSub', stOk(PP.b)); if (!was && stOk(PP.b)) setTimeout(() => mfTab('sub'), 30); }
+  };
+  window.addEventListener('resize', () => { if (MF.on && !mfWant()) mfUnmount(); });
+})();
+
 </script>
 </body>
 </html>
@@ -6966,9 +7340,9 @@ document.addEventListener('DOMContentLoaded', () => {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.03 22:55';
+    a.title = '판 11.03 23:26';
     var ver = document.createElement('span');
-    ver.textContent = '11.03 22:55';
+    ver.textContent = '11.03 23:26';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

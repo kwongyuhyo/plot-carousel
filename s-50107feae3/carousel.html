@@ -331,7 +331,8 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     Object.keys(rec).forEach(function (k) { r[k] = rec[k]; });
     return req('plot_evals', { method: 'POST', body: JSON.stringify(r), prefer: 'resolution=merge-duplicates,return=minimal' });
   }
-  window.plotStudio = { on: on, send: send, sheet: sheet, post: post };
+  function get(path) { return req(path); }             // 11/3 저장한 양식 받기 (kind='shortsave')
+  window.plotStudio = { on: on, send: send, sheet: sheet, post: post, get: get };
 })();</script>
 
 <style id="plotGap">
@@ -3989,9 +3990,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.03 22:55';
+    a.title = '판 11.03 23:26';
     var ver = document.createElement('span');
-    ver.textContent = '11.03 22:55';
+    ver.textContent = '11.03 23:26';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
