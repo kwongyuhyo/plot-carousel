@@ -2075,7 +2075,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:44-1:13\n곡: 들고 온 신곡 'With'\n아티스트: 역주행 1위 리센느가\n피처링:\n후킹: \n출처: RESCENE\n음원: 리센느 - With\n가사: 자동",
+    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:44-1:13\n곡: 들고 온 신곡 'With'\n아티스트: 역주행 1위 리센느가\n피처링:\n후킹: \n출처: RESCENE\n음원: 리센느 - With\n가사: 없음\n자막: 받음 st:1793701532367-c4169817\n",
     "caption": "리센느(@rescene_official)가 미니 4집 [PULSE]의 타이틀곡 'With' 뮤직비디오를 공개했습니다.\n\n올여름 'LOVE ATTACK' 역주행으로 멜론 TOP100 1위에 오른 뒤 처음 내놓는 미니앨범인데요, 'With'는 나를 부르는 목소리를 따라 달려가 오래 꿈꾸던 순간과 마주하는 노래입니다.\n\n잔잔한 도입부를 지나 'Calling out to me, echo'로 열리는 후렴이 곡의 중심입니다.\n\n#PLOT #리센느 #RESCENE #With #PULSE",
     "hooks": {
      "A": "역주행 1위 리센느가 / 들고 온 신곡 'With'",
@@ -2132,11 +2132,9 @@
      "end": 118.0,
      "full": 202.0
     },
-    "rendered": {
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793698444/plot_studio/d9806qcfuuoou0pyvirg.mp4",
-     "at": "2026-11-03T18:34+09:00",
-     "file": "YeogJuHaeng_1Wi_LiSe_DeulGo_On_SinGog_Wit_New_Release_no_lyrics__cta.mp4",
-     "v": "fed08c93"
+    "render": {
+     "status": "queued",
+     "at": "2026-11-03T19:25+09:00"
     }
    },
    "corner_name": "소식"
@@ -2719,10 +2717,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T19:01+09:00"
+  "at": "2026-11-03T19:25+09:00"
  },
  "queue": {
-  "next": "2026-11-03T19:22+09:00",
+  "next": "2026-11-03T19:27+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-03T18:22+09:00"
