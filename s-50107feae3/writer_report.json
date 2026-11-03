@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T14:02+09:00",
+ "generated_at": "2026-11-03T14:34+09:00",
  "range": [
   "2026-10-28",
   "2026-11-03"
@@ -57,15 +57,15 @@
    0.73,
    4.44
   ],
-  "verify_touched": 46,
+  "verify_touched": 45,
   "orders": {
    "만듦": 59,
    "못 만듦": 11
   },
-  "runs": 175,
+  "runs": 176,
   "run_fail": 3,
   "avg_secs": 174,
-  "denied": 38,
+  "denied": 39,
   "auto": {
    "올림": 21,
    "안 올림": 74
