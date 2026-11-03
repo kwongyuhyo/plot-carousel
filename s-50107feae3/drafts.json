@@ -2817,6 +2817,110 @@
     "cover": "A",
     "at": "2026-11-03T19:58+09:00"
    }
+  },
+  {
+   "source": {
+    "id": "claude:ord-751ac021",
+    "account": "@규효 공유 · @section.mag",
+    "url": "https://www.instagram.com/p/DfRb9fQk58V/?img_index=2&psln=eGY2amM3MW1rZnE2",
+    "image": null,
+    "head": "프랭크 오션이 파리 거리에서 포착됐다는 사진이 SNS에서 돌고 있다 — 드문 근황, [Blonde] 이후 10년",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-03T22:34+09:00",
+   "key": "f3761e5a",
+   "by": "claude",
+   "subjects": [
+    "Frank Ocean"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "좀처럼 모습을 보이지 않는 프랭크 오션의 파리 근황 사진이 돌고 있다 — [Blonde] 이후 10년째 기다림",
+    "why": "규효 맡김 · 해외 실험 칸 · 드문 근황 자체가 화제"
+   },
+   "added": "claude",
+   "added_at": "2026-11-03T22:34+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n프랭크 오션이 프랑스 파리 거리에서 포착된 사진이 SNS에서 돌고 있습니다.\n\n흰 반다나에 검은 재킷 차림의 편안한 모습인데요, 공식 석상은 물론 SNS에서도 좀처럼 얼굴을 비추지 않는 그이기에 짧은 근황 한 장에도 관심이 모이고 있습니다.\n\n2016년 발매한 정규 앨범 [Blonde]는 빌보드 200 1위로 데뷔했지만, 그 뒤로 새 정규 앨범은 아직 나오지 않았습니다. 거리에서 찍힌 사진 한 장이 화제가 되는 것도, 그만큼 그의 다음 음악을 기다리는 사람이 많다는 뜻일 겁니다.\n\n#PLOT #프랭크오션 #FrankOcean #Blonde #블론드 #파리\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793712896/xpdnylusxnleiudasalc.jpg\n제목: 프랭크 오션,|파리에서 포착된 근황\n부제: [Blonde] 이후 10년, 여전히 기다리는 이름\n출처:\n",
+    "caption": "프랭크 오션이 프랑스 파리 거리에서 포착된 사진이 SNS에서 돌고 있습니다.\n\n흰 반다나에 검은 재킷 차림의 편안한 모습인데요, 공식 석상은 물론 SNS에서도 좀처럼 얼굴을 비추지 않는 그이기에 짧은 근황 한 장에도 관심이 모이고 있습니다.\n\n2016년 발매한 정규 앨범 [Blonde]는 빌보드 200 1위로 데뷔했지만, 그 뒤로 새 정규 앨범은 아직 나오지 않았습니다. 거리에서 찍힌 사진 한 장이 화제가 되는 것도, 그만큼 그의 다음 음악을 기다리는 사람이 많다는 뜻일 겁니다.\n\n#PLOT #프랭크오션 #FrankOcean #Blonde #블론드 #파리",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793712896/xpdnylusxnleiudasalc.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793712896/xpdnylusxnleiudasalc.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "프랭크 오션,|파리에서 포착된 근황",
+      "sub": "[Blonde] 이후 10년, 여전히 기다리는 이름"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "좀처럼 안 보이던|프랭크 오션이 파리에",
+      "sub": "SNS에서 돌고 있는 근황 사진"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "[Blonde] 이후 10년,|프랭크 오션의 근황",
+      "sub": "파리 거리에서 포착된 모습"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "파리 포착은 section.mag 게시물 말고 기사·본인 게시물로는 확인 못 함 — '돌고 있다' 꼴로만 씀. 포착 사진(팬 촬영)은 쓰지 않고 [Blonde] 커버로 표지",
+     "숏폼은 비움 — 포착 장면의 원본 유튜브 영상이 없음"
+    ],
+    "research": [
+     {
+      "title": "인스타그램 게시물 — section.mag (파리 포착)",
+      "link": "https://www.instagram.com/p/DfRb9fQk58V/?img_index=2&psln=eGY2amM3MW1rZnE2"
+     },
+     {
+      "title": "The FADER — Frank Ocean's Blond debuts at No. 1",
+      "link": "https://www.thefader.com/2016/08/28/frank-ocean-blond-debuts-no-1"
+     },
+     {
+      "title": "Billboard — Blonde Billboard 200 debut",
+      "link": "https://www.billboard.com/pro/frank-ocean-blonde-billboard-200-ablum-chart-debut-endless-beyonce-lemonade/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793712901/a4pxzkdj61c8awgudok9.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793712901/nz64gbpirehkr1g0zsgc.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793712904/mrxkhjazr0flmviaygfd.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793712903/iz9xmcdszazebbqklbjw.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793712901/a4pxzkdj61c8awgudok9.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-03T22:35+09:00",
+     "v": {
+      "A": "982cd665",
+      "B": "b86aa625",
+      "C": "b674319a"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2991,17 +3095,17 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T22:27+09:00"
+  "at": "2026-11-03T22:34+09:00"
  },
  "queue": {
-  "next": "2026-11-03T22:29+09:00",
+  "next": "2026-11-03T23:27+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-03T20:02+09:00"
+  "last": "2026-11-03T22:27+09:00"
  },
  "slots": {
   "basis": 292,
