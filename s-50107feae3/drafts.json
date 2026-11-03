@@ -1264,9 +1264,12 @@
      "end": 97.0,
      "full": 200.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-03T13:59+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793682171/plot_studio/vyvxsfhu7dfmu0ofl1iu.mp4",
+     "at": "2026-11-03T14:02+09:00",
+     "file": "DeBwi_10JuNyeon_MajE_JaeKiWaIUi_Go_Back_Feature_no_lyrics__cta.mp4",
+     "subs_note": "싱크 가사를 못 찾아 가사 없이 만듭니다 — 제작 앱 「가사」에서 고를 수 있어요",
+     "v": "2e208941"
     }
    },
    "corner_name": "그날의 앨범",
@@ -1449,10 +1452,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T13:59+09:00"
+  "at": "2026-11-03T14:02+09:00"
  },
  "queue": {
-  "next": "2026-11-03T14:01+09:00",
+  "next": "2026-11-03T14:04+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-02T20:03+09:00"
