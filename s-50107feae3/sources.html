@@ -2319,6 +2319,55 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     document.body.appendChild(sh);
     var v = sh.querySelector('video'); var pr = v.play(); if (pr && pr.catch) pr.catch(function () { v.muted = true; v.play().catch(function () {}); });
   }
+  /* 11/4 규효 "완성영상 탭에 유튜브 업로드, 인스타 업로드" — 영상마다 📤 릴스 · ▶ 유튜브 쇼츠. 누르면 확인 창 → [올리기 확정] 을
+     눌러야 맥이 올린다 (collectors/vid_publish · 초안 완성본의 릴스는 예전대로 rl-). 올린 뒤엔 ↗ 링크. */
+  function vidOf(u) {                              // FNV-1a 32 — collectors/vid_publish.vid 와 같은 셈
+    var b = new TextEncoder().encode(String(u || '')), h = 0x811c9dc5;
+    for (var k = 0; k < b.length; k++) { h ^= b[k]; h = Math.imul(h, 0x01000193) >>> 0; }
+    return ('0000000' + h.toString(16)).slice(-8);
+  }
+  function mdUp(url, pub, yt, ref, dkey) {
+    var v = vidOf(url), a = actsGet();
+    var ig = (pub || {}).permalink ? '<a class="yt" href="' + escU(pub.permalink) + '" target="_blank" rel="noopener">올린 릴스 ↗</a>'
+      : (Date.now() - ((dkey ? a['rl-' + dkey] : a['iv-' + v]) || 0) < 20 * 60e3) ? '<span class="ms">📤 릴스 올리는 중</span>'
+      : '<button data-mdig="' + esc(ref) + '">📤 인스타 릴스</button>';
+    var yb = (yt || {}).url ? '<a class="yt" href="' + escU(yt.url) + '" target="_blank" rel="noopener">유튜브 ↗</a>'
+      : (Date.now() - (a['yv-' + v] || 0) < 20 * 60e3) ? '<span class="ms">▶ 유튜브 올리는 중</span>'
+      : '<button data-mdyt="' + esc(ref) + '">▶ 유튜브 쇼츠</button>';
+    return ig + yb;
+  }
+  function mdRef(ref) {                            // 'd:<i>' 초안 · 'r:<i>' 맡긴 영상 → {url, cap, label, it?, x?}
+    var p = String(ref || '').split(':'), n = Number(p[1]);
+    if (p[0] === 'd') { var it = mdItems()[n]; if (!it) return null; var sh = it.shorts || {};
+      return { url: (sh.rendered || {}).url, cap: String(sh.caption || '').trim(), label: ((it.subjects || [])[0]) || '', it: it, draft: true }; }
+    var x = ((RND && RND.items) || [])[n]; if (!x) return null;
+    return { url: x.url, cap: String(x.caption || '').trim(), label: x.label || '', x: x, draft: false };
+  }
+  function upSheet(o, where) {                     // where: 'yt' | 'ig'
+    var yt = where === 'yt';
+    var shh = document.createElement('div'); shh.className = 'sheet pubsheet';
+    shh.innerHTML = '<div class="pn"><div class="hd"></div>' +
+      '<div style="padding:0 20px 8px;font-weight:800">' + (yt ? '이 영상을 유튜브 쇼츠로 올릴까요?' : '이 영상을 @plot_music 릴스로 올릴까요?') + '</div>' +
+      (yt ? '<div class="warn">MV·방송 클립은 유튜브에서 저작권 클레임이 인스타보다 잦습니다 — 직접 찍은 영상·자체 영상 위주로.</div>' : '') +
+      '<div class="pv"><video src="' + esc(o.url) + '" muted playsinline controls preload="metadata"></video></div>' +
+      '<div style="padding:8px 20px 0;font-size:12.5px;color:var(--dim)">' + (yt ? '캡션 첫 줄이 유튜브 제목이 됩니다' : '캡션') +
+      (o.draft ? ' · 초안 캡션 (고치려면 초안 탭에서)' : '') + '</div>' +
+      '<textarea data-upcap rows="5" style="margin:6px 20px;width:calc(100% - 40px);box-sizing:border-box;font:inherit;font-size:13.5px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text)"' +
+      (o.draft ? ' readonly' : '') + '>' + esc(o.cap) + '</textarea>' +
+      '<button data-act="go"><b>' + (yt ? '▶ 유튜브 올리기 확정' : '📤 릴스 발행 확정') + '</b><small>맥이 올립니다 (1~3분) · 맥이 켜져 있어야 합니다</small></button>' +
+      '<button data-act="no">취소</button></div>';
+    shh.addEventListener('click', function (e) {
+      if (e.target === shh) { shh.remove(); return; }
+      var b = e.target.closest('[data-act]'); if (!b) return;
+      if (b.getAttribute('data-act') === 'no') { shh.remove(); return; }
+      var cap = String(shh.querySelector('[data-upcap]').value || '').trim();
+      if (!cap) { toast('캡션을 먼저 써 주세요'); return; }
+      shh.remove();
+      plotAction((yt ? 'yv-' : 'iv-') + vidOf(o.url), yt ? '유튜브 쇼츠 올리기' : '릴스 발행 요청', true, '', o.draft ? '' : cap);
+      setTimeout(renderMade, 300);
+    });
+    document.body.appendChild(shh);
+  }
   function renderMade() {
     var host = document.getElementById('viewMade');
     if (!host) return;
@@ -2331,12 +2380,17 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       var rd = sh.rendered || {}, head = sfField(sh.form, '곡') || (it.source || {}).head || '';
       var top = '<div class="md"><div class="mh"><b>' + esc(((it.subjects || [])[0]) || '') + '</b> <span>' + esc(String(head).replace(/\*/g, '')) + '</span></div>';
       if (!rd.url) {
+        var pr0 = sh.prep || {}, rf0 = sh.render_fail || {};
+        var st0 = (sh.render || {}).status ? '🎬 완성본 만드는 중' : rf0.err ? '⚠️ 완성본 실패 — ' + String(rf0.err).slice(0, 60) + ' (초안 탭에서 다시)'
+          : pr0.status === 'ready' ? '💬 자막 ' + (pr0.n || 0) + '줄 준비됨 — 초안 탭에서 검수 뒤 「🎬 완성본 만들기」'
+          : pr0.status === 'fail' ? '⚠️ 자막 준비 실패 — ' + String(pr0.err || '').slice(0, 60)
+          : pr0.status ? '💬 자막 준비 중' : '아직 완성본 전 — 초안 탭에서 검수 뒤 만듭니다';
         out.push(top + '<div class="mr"><span class="mp none"></span><div class="mi"><div class="ml">숏폼</div><div class="ms">' +
-          ((sh.render || {}).status ? '🎬 맥이 만드는 중' : '아직 렌더 전 — 숏폼 탭에서 만들 수 있습니다') + '</div></div></div></div>');
+          esc(st0) + '</div></div></div></div>');
         return;
       }
       var btn = '<a data-rndseen="' + esc(rd.url) + '" href="' + escU(mdSave(rd.url, 'plot_' + (it.key || 'x'))) + '">⬇ 저장</a>' +
-        (sh.caption ? '<button data-mdcap="' + i + '">📋 캡션</button>' : '');
+        (sh.caption ? '<button data-mdcap="' + i + '">📋 캡션</button>' : '') + mdUp(rd.url, sh.published, sh.yt, 'd:' + i, it.key);
       out.push(top + mdVid(rd.url, '숏폼 · plot_music', '완성 ' + String(rd.at || '').slice(5, 16).replace('T', ' '), btn, seen) + '</div>');
     });
     var day = MD_DAY || ((DR_LIVE && DR_LIVE.date) || kstDay(new Date()));
@@ -2345,10 +2399,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       out.push('<div class="md"><div class="mh"><b>봇으로 맡긴 영상</b> <span>' + other.length + '편</span></div>' + other.map(function (x) {
         return mdVid(x.url, (x.kind === 'layer' ? '🧾 ' : '') + esc(x.label || ''),
           String(x.at || '').slice(5, 16).replace('T', ' ') + (x.kind === 'layer' ? ' · 정보 레이어(.mov)' : ''),
-          '<a data-rndseen="' + esc(x.url) + '" href="' + escU(mdSave(x.url, 'plot_' + String(x.file || 'video').replace(/\.[^.]+$/, ''))) + '">⬇ 저장</a>', seen);
+          '<a data-rndseen="' + esc(x.url) + '" href="' + escU(mdSave(x.url, 'plot_' + String(x.file || 'video').replace(/\.[^.]+$/, ''))) + '">⬇ 저장</a>' +
+          (x.kind === 'layer' ? '' : mdUp(x.url, x.published, x.yt, 'r:' + (RND.items || []).indexOf(x))), seen);
       }).join('') + '</div>');
     }
-    host.innerHTML = mdDayBar() + '<div class="msum">' + esc(dayLabel(day)) + ' · 숏폼 ' + n + '편 — 맥이 만든 영상을 여기서 받고(⬇) 캡션을 복사합니다(📋).</div>' +
+    host.innerHTML = mdDayBar() + '<div class="msum">' + esc(dayLabel(day)) + ' · 숏폼 ' + n + '편 — 받고(⬇) 캡션을 복사하고(📋) 여기서 바로 릴스(📤)·유튜브 쇼츠(▶)로 올립니다.</div>' +
       (out.length ? out.join('') : '<div class="msum">이날 맥이 만든 영상이 없습니다.</div>');
   }
   document.getElementById('viewMade').addEventListener('click', function (e) {
@@ -2369,6 +2424,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       return;
     }
     if (rs) { try { var sm = mdSeen(); sm[rs.getAttribute('data-rndseen')] = Date.now(); localStorage.setItem('plot.rndseen', JSON.stringify(sm)); } catch (x) {} setTimeout(renderMade, 400); return; }
+    var ug = e.target.closest('[data-mdig]') || e.target.closest('[data-mdyt]');
+    if (ug) {
+      var isYt = ug.hasAttribute('data-mdyt'), ref = ug.getAttribute(isYt ? 'data-mdyt' : 'data-mdig'), o = mdRef(ref);
+      if (!o || !o.url) { toast('그 영상을 못 찾았습니다 — 새로 고쳐 주세요'); return; }
+      if (!isYt && o.draft) { openReelPublish(o.it); return; }
+      upSheet(o, isYt ? 'yt' : 'ig');
+      return;
+    }
     var cp = e.target.closest('[data-mdcap]');
     if (cp) { var it = mdItems()[Number(cp.getAttribute('data-mdcap'))]; if (it) { copyText(((it.shorts || {}).caption) || ''); toast('캡션을 복사했습니다'); } }
   });
@@ -3695,6 +3758,24 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (vm) vm.hidden = false;
     toast('소리는 영상을 눌러 켜세요 — 구간만 재생합니다');
   }
+  /* 11/4 규효 "내가 다 검수하고 그 이후에 인코딩" — 초안 숏폼은 자막만 먼저 준비된다(bot/draft_render.prep_run).
+     카드의 상태: 💬 자막 준비 중 → 💬 자막 N줄 준비됨 (✏️ 검수 · 🎬 완성본 만들기) → 🎬 만드는 중 → 완성 / 실패면 이유 + 다시. */
+  function shState(it, i) {
+    var sh = it.shorts || {}, rq = sh.render || {}, pr = sh.prep || {}, rf = sh.render_fail || {};
+    var mkSent = Date.now() - (actsGet()['mk-' + it.key] || 0) < 15 * 60e3;
+    var live = it.key && !DR_DAY;
+    if (rq.status || mkSent) return '<span>🎬 완성본 만드는 중</span><span class="esub" data-esub="' + esc(it.key) + '" data-i="' + i + '"></span>';
+    var edit = live ? '<button data-dr="' + i + '" data-kind="shorts">✏️ 자막·구간 검수</button>' : '';
+    var make = live ? '<button class="go" data-rmk="' + i + '">🎬 완성본 만들기</button>' : '';
+    if (rf.err) return '<span class="bad">⚠️ 완성본 실패 — ' + esc(String(rf.err).slice(0, 70)) + '</span>' + edit +
+      (live ? '<button data-rmk="' + i + '">🔁 다시 만들기</button>' : '');
+    var spSent = Date.now() - (actsGet()['sp-' + it.key] || 0) < 10 * 60e3;
+    if (pr.status === 'queued' || pr.status === 'making' || spSent) return '<span>💬 자막 준비 중' + (pr.status === 'making' ? ' (맥이 받는 중)' : '') + '</span>' + edit;
+    if (pr.status === 'fail') return '<span class="bad">⚠️ 자막 준비 실패 — ' + esc(String(pr.err || '').slice(0, 70)) + '</span>' +
+      (live ? '<button data-rsp="' + i + '">🔁 자막 다시 받기</button>' : '') + edit + make;
+    if (pr.status === 'ready') return '<span class="sbg">💬 자막 ' + (pr.n || 0) + '줄 준비됨 — 검수 뒤 만드세요</span>' + edit + make;
+    return edit + make;
+  }
   function reelPost(it, i) {
     var sh = it.shorts, vd = sh.video || {}, f = sh.form;
     var cat = sfField(f, '카테고리'), hook = sfField(f, '후킹'), art = sfField(f, '아티스트'),
@@ -3719,9 +3800,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         (rd.subs && rd.subs.segs && rd.subs.segs.length ? (ESUB[it.key] = rd.subs, '<button data-srtk="' + esc(it.key) + '" data-i="' + i + '">💬 SRT</button>') : '') +
         (/res\.cloudinary\.com\/[^/]+\/video\/upload\//.test(rd.url) ? '<a class="yt" href="' + escU(rd.url.replace('/video/upload/', '/video/upload/fl_attachment/')) + '" download>📥 폰에 저장</a>' : '') :
         sh.hold && sh.hooks && Object.keys(sh.hooks).length ? (Object.keys(actsGet()).some(function (k) { return k.indexOf('tt-' + it.key) === 0 && Date.now() - actsGet()[k] < 15 * 60e3; })
-          ? '<span>🎬 고른 제목으로 만드는 중</span>' : '<span class="ttl">제목 고르기</span>' + Object.keys(sh.hooks).sort().map(function (k) {
+          ? '<span>💬 고른 제목으로 자막 준비 중 — 검수 뒤 만듭니다</span>' : '<span class="ttl">제목 고르기</span>' + Object.keys(sh.hooks).sort().map(function (k) {
             return '<button data-tt="' + esc(it.key) + '|' + k + '">' + esc(String(sh.hooks[k]).replace(' / ', ' ⏎ ')) + '</button>'; }).join('')) :
-        rq.status || (Date.now() - (actsGet()['mk-' + it.key] || 0) < 15 * 60e3) ? '<span>🎬 맥이 만드는 중</span><span class="esub" data-esub="' + esc(it.key) + '" data-i="' + i + '"></span>' : (it.key && !DR_DAY ? '<button data-rmk="' + i + '">🎬 완성본 만들기</button>' : '')) +
+        shState(it, i)) +
       // 10/30 규효 "PLOT 도 비슷하게" — 완성본을 @plot_music 릴스로 (collectors/app_actions rl · reel_pub)
       ((sh.published || {}).permalink ? '<a class="yt" href="' + escU(sh.published.permalink) + '" target="_blank" rel="noopener">올린 릴스 ↗</a>' :
         reelSched(it) ? '<span>⏰ ' + esc(reelSched(it)) + ' 대기열</span><button data-sx="' + esc(it.key) + '">취소</button>' :
@@ -4082,7 +4163,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var ch = chGet();
     // 10/14 규효 "앱에서 누르면 텔레그램이 열린다" — 맡기기와 같은 표(plot_evals)에 kind='act' 로 바로 (collectors/orders.pull_acts)
     if (sbOn() && !ch.url) {
-      var pub = /^(pb|sc|sx|yu|rl|pq)-/.test(code);   // 10/30 릴스(rl)·대기열(pq)도 공개 게시라 서명
+      var pub = /^(pb|sc|sx|yu|rl|pq|yv|iv)-/.test(code);   // 10/30 릴스(rl)·대기열(pq)도 공개 게시라 서명
       if (pub && !ch.key) {
         var k = window.prompt('발행은 앱 열쇠가 필요합니다 — 맥 .env 의 PLOT_APP_KEY 와 같은 값을 한 번만 넣어 주세요');
         if (!k || !k.trim()) { toast('열쇠가 없어 발행을 보내지 않았습니다'); return; }
@@ -4800,8 +4881,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var rqb = e.target.closest('[data-rque]');
     if (rqb) { var qit = (DR && DR.items || [])[Number(rqb.getAttribute('data-rque'))]; if (qit && qit.key) openReelPublish(qit, true); return; }
     var ttb = e.target.closest('[data-tt]');
-    if (ttb) { var tv = ttb.getAttribute('data-tt').split('|'); plotAction('tt-' + tv[0] + '-' + tv[1], '제목 확정 · 완성본 만들기'); ttb.parentNode.querySelectorAll('[data-tt]').forEach(function (b) { b.disabled = true; }); ttb.textContent = '✓ ' + ttb.textContent; return; }
+    if (ttb) { var tv = ttb.getAttribute('data-tt').split('|'); plotAction('tt-' + tv[0] + '-' + tv[1], '제목 확정 · 자막 준비'); ttb.parentNode.querySelectorAll('[data-tt]').forEach(function (b) { b.disabled = true; }); ttb.textContent = '✓ ' + ttb.textContent; return; }
     var rmk = e.target.closest('[data-rmk]');
+    var rsp = e.target.closest('[data-rsp]');
+    if (rsp) { var sit = (DR && DR.items || [])[Number(rsp.getAttribute('data-rsp'))]; if (sit && sit.key) { plotAction('sp-' + sit.key, '숏폼 자막 다시 받기'); rsp.disabled = true; setTimeout(renderDrafts, 300); } return; }
     if (rmk) { var mit = (DR && DR.items || [])[Number(rmk.getAttribute('data-rmk'))]; if (mit && mit.key) { plotAction('mk-' + mit.key, '숏폼 완성본 만들기'); rmk.outerHTML = '<span>🎬 맥이 만드는 중</span>'; } return; }
     var srb = e.target.closest('[data-srtk]');
     if (srb) { srtDownload(srb.getAttribute('data-srtk'), Number(srb.getAttribute('data-i'))); return; }
@@ -4891,9 +4974,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 01:19';
+    a.title = '판 11.04 01:30';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 01:19';
+    ver.textContent = '11.04 01:30';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

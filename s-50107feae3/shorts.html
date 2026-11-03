@@ -1685,7 +1685,7 @@ html:root[data-gap="wide"] .wrap{ padding-left:24px; padding-right:24px }
     <button class="ppBtn" id="ppNext">다음 편 ▶</button>
   </div>
   <div class="ppCtl">
-    <button class="ppBtn" id="ppSubs" hidden>💬 말자막 미리 받기</button>
+    <button class="ppBtn" id="ppSubs" hidden>💬 자막 가져오기</button>
     <button class="ppBtn" id="ppSubsSrc" hidden title="말자막을 어디서 받을지 — 누르면 바뀝니다">📺 유튜브 자막 먼저</button>
     <button class="ppBtn" id="ppSubEdit" hidden>✏️ 자막 고치기</button>
     <button class="ppBtn" id="ppPr" hidden title="세로 영상·글자 레이어·자막·시퀀스를 묶어 텔레그램으로">🎬 프리미어로 받기</button>
@@ -1762,8 +1762,8 @@ function blank() {
            story: '', storyClip: '', storyCredit: '', storyCrop: '', storyZoom: '',
            // [가사] '' = 없음 · '자동' = 봇이 맞춤 · '#id 어긋남 | 고친줄 | 끊기' = 앱에서 맞춘 싱크
            lyr: '',
-           // [자막] 말자막 자동 (10/21) — 사람이 말하는 장면. 맥이 받아써 다듬어 입힌다 (가사가 있으면 가사가 먼저)
-           subs: false,
+           // [자막] 11/4 규효 "기본적으로 모든 숏폼에는 자막" — 기본 켬. 노래는 가사, 말은 말자막. 끄면 양식에 '자막: 없음'
+           subs: true, subsV: 2, subsPend: '',
            // [이어붙이기] 'URL 0:03-0:07 | URL' — 첫 원본 뒤에 붙일 사진·영상 · 전환 '디졸브 0.5' / '블랙 0.5' / '컷'
            joins: '', trans: '디졸브 0.5',
            // [글자시간] 1~3줄이 나오는 때 '0:02-0:08' · '0:02-끝' · '' = 기본(처음 6초) — 타임라인 화면에서 정한다
@@ -1784,7 +1784,7 @@ const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'song', 'crop', 'lb', 'check',
               'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans', 'metaTime',
-              'frames', 'cta', 'storyBed', 'subs', 'done', 'subsRef', 'caption'];
+              'frames', 'cta', 'storyBed', 'subs', 'done', 'subsRef', 'caption', 'subsV', 'subsPend'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1920,6 +1920,7 @@ function fromSlim(list) {
            : (k === 'done' || k === 'subsRef') ? (typeof o[k] === 'object' ? o[k] : null)
            : String(o[k]);
     });
+    if (o.subsV !== 2 && !o.subsRef) b.subs = true;      // 11/4 전 저장본 — 그땐 '안 켬'이 기본이었다
     return b;
   });
 }
@@ -2222,7 +2223,10 @@ function parseForm(text) {
     b.storyCrop = (kv['서사리프레임'] || '').trim();
     b.storyZoom = (kv['서사확대'] || '').trim();
     b.lyr = (kv['가사'] || '').trim();
-    b.subs = ['자동', 'auto', '켬', 'on', '예', '1', 'yes'].indexOf((kv['자막'] || '').trim().toLowerCase()) >= 0;
+    // 11/4 '자막: 받음 <id>' 도 켬으로 읽고 그 줄을 불러온다 (subsLoadPend) — 예전엔 꺼진 걸로 읽어 고친 자막이 빠졌다
+    { const sv = (kv['자막'] || '').trim(), m = /^받음\s+(st:[0-9]{10,16}-[0-9a-z]{1,8})$/.exec(sv);
+      b.subs = !sv || ['없음', '끔', 'off', 'no', 'x', '0'].indexOf(sv.toLowerCase()) < 0;
+      b.subsPend = m ? m[1] : ''; b.subsV = 2; }
     b.joins = (kv['이어붙이기'] || '').trim();
     if ((kv['전환'] || '').trim()) b.trans = kv['전환'].trim();
     b.metaTime = (kv['글자시간'] || '').trim();
@@ -2323,6 +2327,7 @@ function importText(text, append) {
   active = blocks.length - got.length;
   render();
   got.forEach(b => { if (ytId(b.url)) pullFrom(b); });
+  subsLoadPend(got);
   toast(kind + ' ' + got.length + '편을 불러왔습니다');
   return got.length;
 }
@@ -2411,7 +2416,7 @@ function blockText(b) {
     ...((b.storyClip || '').trim() && (b.storyZoom || '').trim() ? ['서사확대: ' + b.storyZoom.trim()] : []),
     // [가사] 정했을 때만 — 안 적으면 봇은 지금까지처럼 가사 없이 만든다.
     ...((b.lyr || '').trim() ? ['가사: ' + b.lyr.trim()] : []),
-    ...(b.subs ? ['자막: ' + subsSpec(b)] : []),
+    '자막: ' + (b.subs ? subsSpec(b) : '없음'),
     ...(joinList(b).length ? ['이어붙이기: ' + (b.joins || '').trim(), '전환: ' + (b.trans || '디졸브 0.5').trim()] : []),
     ...((b.metaTime || '').trim() ? ['글자시간: ' + b.metaTime.trim()] : []),
     ...((b.storyClip || '').trim() && b.storyBed === false ? ['서사배경음: 끔'] : []),
@@ -2482,8 +2487,8 @@ function buildBlock(b) {
     <div class="hint" data-r="spanErr" hidden></div>
     <div class="srcToggle" data-r="subsToggle">
       <input type="checkbox" data-f="subs">
-      <span>말자막 자동
-        <small>사람이 말하는 장면이면 켜세요. 맥이 구간 말소리를 받아써(무료) 이름·띄어쓰기를 다듬어 입힙니다. 위 「▶ 구간 재생」 화면에서 「말자막 미리 받기」로 먼저 보고 고칠 수도 있어요.</small>
+      <span>자막 넣기 (기본 켬)
+        <small>모든 숏폼에 자막을 넣습니다 — 노래는 가사, 말하는 장면은 말자막. 「▶ 구간 재생」 화면의 「💬 자막 가져오기」로 먼저 보고 고칠 수 있어요. 끄면 자막 없이 만듭니다.</small>
       </span>
     </div>
     <label data-r="titleLbl">제목 <span class="opt">— 영상 위 큰 글씨 · 두 줄이 기본 (줄마다 15자 안팎) · 엔터로 줄을 나눕니다 · 세 줄까지</span></label>
@@ -2552,7 +2557,7 @@ function buildBlock(b) {
     </details>
 
     <div class="bfoot">
-      <button class="btn" data-a="tl" title="이 편을 타임라인 편집 화면에서 엽니다 — 클립 자르기·순서·전환·미리보기">🎞 타임라인</button>
+      <button class="btn" data-a="tl" hidden title="이 편을 타임라인 편집 화면에서 엽니다 — 클립 자르기·순서·전환·미리보기">🎞 타임라인</button>
       <button class="btn" data-a="one" title="여러 편 중 이 편 하나만 내보냅니다">📤 이 편만</button>
       <button class="btn" data-a="raw" hidden title="리프레임·글자 없이 고른 구간만 편집용 파일로 받습니다 (텔레그램으로 옵니다)">🎞 원본만</button>
       <button class="btn" data-a="dup">복제</button>
@@ -4899,6 +4904,7 @@ function boot() {
       active = 0;
       $('#resume').hidden = true;
       render();
+      subsLoadPend();
       toast(blocks.length + '편을 이어서 엽니다');
     };
     $('#resumeNo').onclick = () => { draftClear(); $('#resume').hidden = true; };
@@ -4920,6 +4926,7 @@ function boot() {
   // 캐러셀 화면에서 숏폼 양식을 붙여넣어 넘어온 경우 — 여기서 받아 펼친다.
   if (takeTimelineBack()) $('#resume').hidden = true;
   takeHandoff();
+  setTimeout(() => subsLoadPend(), 2500);           // 앱 연결(plotStudio)이 늦게 켜질 때 한 번 더
   // 봇의 '추천 구간 앱에서 다듬기' 버튼으로 열린 경우
   if (takePcut() || takeFormParam()) $('#resume').hidden = true;
   window.addEventListener('resize', fitStage);
@@ -4940,7 +4947,7 @@ document.addEventListener('DOMContentLoaded', boot);
  * 1~3줄(후킹·아티스트·제목)은 완성본처럼 처음 6초(글자시간이 있으면 그 때)만 보이고,
  * 로고·카테고리·출처는 계속 있다. 구간 끝에 닿으면 처음으로 돌아간다.
  *  · 초안에서 넘어온 편은 미리 렌더한 완성본을 바로 튼다 (「완성본」 칸).
- *  · 「말자막 미리 받기」 — 맥이 그 구간만 받아써 다듬어 돌려준다. 원래 자막 규격으로 얹어 보고
+ *  · 「💬 자막 가져오기」 — 맥이 그 구간만 받아써 다듬어 돌려준다. 원래 자막 규격으로 얹어 보고
  *    그 자리에서 고친다. 양식에는 '자막: 받음 <id>' 로 실려 렌더가 다시 받아쓰지 않고 그대로 쓴다.
  */
 const PP = { i: -1, b: null, yt: null, ytReady: false, vid: null, a: 0, e: 0, mw: [0, 6], timer: null,
@@ -5018,7 +5025,36 @@ function ppSubsManual() {
   ppSubsList(); ppSubsPaint(); ppNotesPaint(); refresh();
   toast('재생하다 멈춘 자리에서 「＋ 새 줄」 — 글을 쓰고 양 끝을 끌어 길이를 맞추세요');
 }
-function subsSpec(b) { return subsOk(b) ? '받음 ' + b.subsRef.id : '자동'; }
+function subsSpec(b) {
+  if (subsOk(b)) return '받음 ' + b.subsRef.id;
+  if (b.subsPend && !b.subsRef) return '받음 ' + b.subsPend;     // 아직 못 불러왔으면 받아 둔 줄을 그대로 (다시 받아쓰지 않게)
+  return '자동';
+}
+/* 11/4 규효 "기존에 만들어둔 자막이 있으면 그거를 자막 편집 화면으로" — 양식의 '자막: 받음 <id>' 줄을 맥 자막 줄(studio)에서
+   불러와 편집기(컴퓨터 PR · 폰 집중 화면 · 미리보기)에 바로 띄운다. 초안 자막 준비(bot/draft_render.prep_run)도 이 꼴로 온다. */
+function subsLoadPend(list) {
+  if (typeof plotStudio === 'undefined' || !plotStudio.get || !(plotStudio.on && plotStudio.on())) return;
+  (list || blocks).forEach((b) => {
+    const id = b.subsPend;
+    if (!id || (b.subsRef && b.subsRef.id === id) || b._pendBusy) return;
+    b._pendBusy = true;
+    plotStudio.get('plot_evals?select=id,snapshot&id=eq.' + encodeURIComponent(id)).then((rows) => {
+      b._pendBusy = false;
+      const sn = rows && rows[0] && rows[0].snapshot;
+      if (!sn || !Array.isArray(sn.subs) || !sn.subs.length) return;
+      const u = (b.url || '').trim(), st = (b.start || '').trim(), en = (b.end || '').trim();
+      const keep = Object.assign({}, sn); delete keep.subs;
+      const segs = sn.subs.map(x => ({ start: Number(x.start), end: Number(x.end), text: String(x.text || ''), chk: !!x.chk }));
+      b.subsRef = { id: id, url: u, start: st, end: en, segs: segs, sn: keep, edited: false,
+                    orig: segs.map(x => ({ start: x.start, end: x.end, text: x.text })) };
+      b.subs = true;
+      refresh();
+      if (typeof PP !== 'undefined' && PP.b === b) { try { ppSubsList(); ppSubsPaint(); } catch (_) {} }
+      if (typeof prPaint === 'function') { try { prPaint(); } catch (_) {} }
+      toast('💬 받아 둔 자막 ' + segs.length + '줄을 불러왔어요 — 편집기에서 바로 고칠 수 있어요');
+    }).catch(() => { b._pendBusy = false; });
+  });
+}
 
 function ppRange(b, dur) {
   const a = toSec(b.start);
@@ -5131,7 +5167,7 @@ const CC_KEY = MEM + '.cc';
 function ccMode() { try { return localStorage.getItem(CC_KEY + '2') === 'yt' ? 'yt' : 'stt'; } catch (_) { return 'stt'; } }
 function ccPaint() {
   const s = $('#ppSubsSrc'); if (!s) return;
-  s.hidden = $('#ppSubs').hidden || (PP.kind !== 'yt' && PP.kind !== 'px');
+  s.hidden = true;                                     // 11/4 고르기 없앰 — 맥이 정한다 (노래 가사 → 화면 자막 → 유튜브 자막 → 받아쓰기)
   s.textContent = ccMode() === 'yt' ? '📺 유튜브 자막 먼저' : '🎙 받아쓰기 먼저 · 유튜브와 대조';
   s.classList.toggle('on', ccMode() === 'stt');
 }
@@ -5147,7 +5183,7 @@ function ppSubsPaint() {
   if (PP.subsBusy) return;
   btn.disabled = false;
   btn.textContent = subsOk(b) ? '💬 말자막 다시 받기'
-                  : (b.subsRef && b.subsRef.id && !stOk(b)) ? '💬 구간이 바뀌어 다시 받기' : '💬 말자막 미리 받기';
+                  : (b.subsRef && b.subsRef.id && !stOk(b)) ? '💬 구간이 바뀌어 다시 받기' : '💬 자막 가져오기';
   const box = $('#ppSubList'), show = PP.editOpen && PP.mode === 'seg' && stOk(b);
   box.hidden = !show;
   $('#pp').classList.toggle('stEditing', show);
@@ -5198,7 +5234,7 @@ function ppSubsFetch() {
   const want = { url: (b.url || '').trim(), start: (b.start || '').trim(), end: (b.end || '').trim(),
                  artist: (b.artist || '').trim(), title: (b.title || '').trim(), hook: (b.hook || '').trim(),
                  source: (b.source || '').trim(), category: cat };
-  if (PP.kind === 'yt' || PP.kind === 'px') want.cc = ccMode();
+  if ((b.song || '').indexOf(' - ') > 0) { want.song_artist = b.song.split(' - ')[0].trim(); want.song_title = b.song.split(' - ').slice(1).join(' - ').trim(); }
   plotStudio.send('subs', want, (step, ms) => { btn.textContent = '💬 ' + step + ' · ' + Math.round(ms / 1000) + '초'; })
     .then((sn) => {
       const segs = (sn.subs || []).map(s => ({ start: Number(s.start), end: Number(s.end), text: String(s.text || ''), chk: !!s.chk }));
@@ -5230,7 +5266,7 @@ function ppNotesPaint() {
     notes.push(doneStale(b) ? '양식을 고치기 전에 만든 완성본입니다 — 고친 내용은 「구간 미리보기」에서 보세요.'
                             : '미리 만들어 둔 완성본입니다' + (b.done.at ? ' (' + String(b.done.at).replace('T', ' ').slice(5, 16) + ')' : '') + '.');
   } else {
-    if (b.subs && !subsOk(b)) notes.push('말자막은 「말자막 미리 받기」를 누르면 여기서 보입니다 (안 받아도 제작할 때 넣어요).');
+    if (b.subs && !subsOk(b)) notes.push('말자막은 「💬 자막 가져오기」를 누르면 여기서 보입니다 (안 받아도 제작할 때 넣어요).');
     if ((b.lyr || '').trim()) notes.push('가사 자막은 제작할 때 들어갑니다.');
     if (joinList(b).length) notes.push('이어 붙일 영상은 여기선 안 나오고, 첫 원본만 돕니다.');
     if (kind === 'px') notes.push('🚫 광고 없는 사본으로 재생 중입니다.');
@@ -6150,7 +6186,7 @@ function prBuild() {
   <span class="prSp"></span>
   <span class="prStat" id="prStat"></span>
   <span class="prExp">
-    <button type="button" class="prMake" data-pa="one">🎬 이 편 내보내기</button><button type="button" class="prMake prMore" data-pa="exp" title="내보내기 더 보기">▾</button>
+    <button type="button" class="prMake" data-pa="one">🎬 완성본 만들기</button><button type="button" class="prMake prMore" data-pa="exp" title="내보내기 더 보기">▾</button>
     <div class="prPop" id="prPop" hidden>
       <button type="button" data-pa="one">🎬 이 편만 만들기 <small>맥 제작 대기열로</small></button>
       <button type="button" data-pa="all">🎬 전체 <span data-v="n"></span>편 만들기</button>
@@ -6170,7 +6206,7 @@ function prBuild() {
     <div class="prBody" id="prFx"></div>
     <div class="prBody prTextBody" id="prText" hidden>
       <div class="prTextHead">
-        <button type="button" data-pa="subsGet" id="prSubsGet">💬 말자막 받기</button>
+        <button type="button" data-pa="subsGet" id="prSubsGet">💬 자막 가져오기</button>
         <button type="button" data-pa="cc" id="prCc"></button>
         <span class="prSp"></span>
         <button type="button" data-pa="find" title="찾아 바꾸기 — 같은 오타·이름을 한 번에">🔎</button>
@@ -6206,7 +6242,7 @@ function prBuild() {
         <label title="완성본(9:16)에 들어갈 자리 — 창을 옆으로 끌면 가로 위치가 바뀝니다"><input type="checkbox" id="prCropOn" checked> 9:16 자리</label>
         <span class="prSp"></span>
         <button type="button" data-pa="cut">✂ 재밌는 구간 추천</button>
-        <button type="button" data-pa="pick" title="예전 구간 고르기 화면 — 추천 구간·가사 맞추기·레터박스">⤢ 정밀 고르기·가사</button>
+        <button type="button" data-pa="pick" hidden title="예전 구간 고르기 화면 — 추천 구간·가사 맞추기·레터박스">⤢ 정밀 고르기·가사</button>
       </div>
     </div>
   </section>
@@ -6272,7 +6308,7 @@ function prBuild() {
 </div>
 <div class="fxG"><div class="fxH">말자막</div>
   <div class="fxR"><span class="fxL">자동</span><label class="fxChk"><input type="checkbox" data-x="subs"> 사람이 말하는 장면이면 켜기</label></div>
-  <div class="fxRb"><span class="fxL"></span><button type="button" data-fa="subsGet" data-v="subsBtn">💬 말자막 받기</button><button type="button" data-fa="toText">텍스트 패널 ▸</button></div>
+  <div class="fxRb"><span class="fxL"></span><button type="button" data-fa="subsGet" data-v="subsBtn">💬 자막 가져오기</button><button type="button" data-fa="toText">텍스트 패널 ▸</button></div>
   <div class="fxHint" data-v="subsNote"></div>
 </div>
 <div class="fxG"><div class="fxH">음원 · 가사</div>
@@ -7012,9 +7048,9 @@ function prPaint() {
   $('#prTextN').textContent = segs.length ? ' · ' + segs.length + (chk ? ' ⚠' + chk : '') : '';
   const sb = $('#ppSubs'), g = $('#prSubsGet');
   if (sb && g) { g.textContent = sb.textContent; g.disabled = sb.disabled || sb.hidden; g.hidden = !studioOn(); }
-  const cc = $('#prCc'); if (cc) { cc.textContent = ccMode() === 'yt' ? '📺 유튜브 자막 먼저' : '🎙 받아쓰기 먼저'; cc.hidden = !(studioOn() && ytId(b.url)); }
+  const cc = $('#prCc'); if (cc) { cc.textContent = ccMode() === 'yt' ? '📺 유튜브 자막 먼저' : '🎙 받아쓰기 먼저'; cc.hidden = true; }   // 11/4 고르기 없앰 — 맥이 정한다
   $('#prTextNote').textContent = !ppSrcKind(b) ? '원본을 넣으면 말자막을 받거나 직접 쓸 수 있습니다.'
-    : !segs.length ? '아직 자막이 없습니다 — 「💬 말자막 받기」 또는 타임라인에서 재생 헤드를 두고 「＋ 새 줄」.' : '';
+    : !segs.length ? '아직 자막이 없습니다 — 「💬 자막 가져오기」 또는 타임라인에서 재생 헤드를 두고 「＋ 새 줄」.' : '';
   $('#prTlEmpty').hidden = $('#ppSubList').classList.contains('stOn');
   const snd = $('#prSound'); if (snd) snd.textContent = PP.muted ? '🔇' : '🔊';
 }
@@ -7340,9 +7376,9 @@ function mfInput(ev) {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 01:19';
+    a.title = '판 11.04 01:30';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 01:19';
+    ver.textContent = '11.04 01:30';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
