@@ -1941,7 +1941,7 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 2
+   "corner_no": 3
   },
   {
    "source": {
@@ -3168,9 +3168,11 @@
      "end": 392.0,
      "full": 1835.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-03T22:55+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793721824/plot_studio/t60thsforraoivsnpady.mp4",
+     "at": "2026-11-04T01:03+09:00",
+     "file": "JeoSeuTeuMyuJigI_Jig_PaGeubHyoGwa2_KeoBeo_Feature_no_lyrics__cta.mp4",
+     "v": "9c8822aa"
     }
    },
    "corner_name": "나무위키 털기",
@@ -3186,7 +3188,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 5,
-  "done": 9,
+  "done": 11,
   "goal": 28,
   "corners": [
    {
@@ -3241,11 +3243,11 @@
     "key": "song",
     "name": "오늘의 노래",
     "weekly": 7,
-    "done": 1,
-    "left": 6,
-    "need_today": 2,
+    "done": 2,
+    "left": 5,
+    "need_today": 1,
     "day": null,
-    "next_no": 2,
+    "next_no": 3,
     "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
@@ -3349,7 +3351,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 4,
+    "done": 5,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -3358,22 +3360,22 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T00:04+09:00"
+  "at": "2026-11-04T01:03+09:00"
  },
  "queue": {
   "next": "2026-11-04T08:00+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-03T23:32+09:00"
+  "last": "2026-11-04T00:04+09:00"
  },
  "slots": {
-  "basis": 293,
+  "basis": 295,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.05,
+    "mult": 2.06,
     "median": 1.17,
     "n": 55
    },
@@ -3381,9 +3383,9 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.74,
-    "median": 0.86,
-    "n": 35
+    "mult": 1.71,
+    "median": 0.83,
+    "n": 36
    },
    {
     "from": 15,
@@ -3404,20 +3406,20 @@
     "n": 22
    },
    {
-    "from": 0,
-    "to": 3,
-    "at": "01:30",
-    "mult": 1.74,
-    "median": 1.25,
-    "n": 24
-   },
-   {
     "from": 21,
     "to": 24,
     "at": "22:30",
     "mult": 1.72,
     "median": 0.91,
     "n": 80
+   },
+   {
+    "from": 15,
+    "to": 18,
+    "at": "16:30",
+    "mult": 1.72,
+    "median": 1.9,
+    "n": 9
    }
   ]
  },
