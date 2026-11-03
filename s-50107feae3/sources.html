@@ -532,6 +532,19 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .evs .er .cs button[aria-pressed="true"]{border-color:var(--amber); background:rgba(232,179,74,.14)}
 .evl .it{border-top:1px solid var(--line); padding:10px 20px; font-size:13px; line-height:1.5}
 .evl .it .h{font-weight:700} .evl .it .v{color:var(--muted); font-size:12.5px} .evl .it .r{margin-top:3px}
+.macnow{border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:0 0 12px; font-size:13px}
+.macnow .mh{font-weight:700; margin-bottom:4px}
+.macnow .mh span{font-weight:400; color:var(--dim); font-size:12px; margin-left:6px}
+.macnow .mr{padding:5px 0; border-top:1px solid var(--line); line-height:1.45}
+.macnow .mr:first-of-type{border-top:0}
+.macnow .mr span{color:var(--dim)}
+.macnow .mr.dim{color:var(--dim)}
+.macnow .mr.bad{color:#e5484d}
+.macnow .mn{color:var(--dim); font-size:12px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.macnow .mb{display:block; height:4px; border-radius:2px; background:var(--line); margin-top:5px; overflow:hidden}
+.macnow .mb i{display:block; height:100%; background:var(--text); transition:width .6s}
+.esub{display:inline-flex; align-items:center; gap:6px; flex-wrap:wrap}
+.esub:empty{display:none}
 .srt{display:flex; align-items:center; gap:6px; margin:4px 0 8px; font-size:12px; color:var(--dim)}
 .srt button{font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--muted); border-radius:999px; padding:5px 11px}
 .srt button[aria-pressed="true"]{border-color:var(--text); color:var(--text)}
@@ -2495,6 +2508,50 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var m = new RegExp('^' + key + '\\s*:\\s*(.*)$', 'm').exec(form || '');
     return m ? m[1].trim() : '';
   }
+  /* 11/3 규효 "미리보기에서 빠르게 자막을 주지 않으면 타이밍만 놓친다" — 맥이 렌더 도중 자막부터 올린다(studio 줄).
+     만드는 중인 숏폼 카드가 그 줄을 찾아 「SRT(프리미어) · 앱에서 고치기」를 바로 띄운다. */
+  var ESUB = {};
+  function srtTime(x) {
+    x = Math.max(0, Number(x) || 0);
+    var ms = Math.round(x * 1000), h = Math.floor(ms / 3600000), m = Math.floor(ms / 60000) % 60, sec = Math.floor(ms / 1000) % 60;
+    function p(n, w) { n = String(n); while (n.length < w) n = '0' + n; return n; }
+    return p(h, 2) + ':' + p(m, 2) + ':' + p(sec, 2) + ',' + p(ms % 1000, 3);
+  }
+  function srtDownload(key, i) {
+    var sb = ESUB[key]; if (!sb || !sb.segs) return;
+    var txt = sb.segs.map(function (g, n) {
+      return (n + 1) + '\n' + srtTime(g.start) + ' --> ' + srtTime(g.end) + '\n' + String(g.text || '').replace(/ \/ /g, '\n') + '\n';
+    }).join('\n');
+    var it = (DR && DR.items || [])[i] || {}, nm = (sfField((it.shorts || {}).form, '곡') || key).replace(/[\\/:*?"<>|]+/g, ' ').trim();
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob(['\ufeff' + txt], { type: 'application/x-subrip' }));
+    a.download = 'PLOT_' + nm.slice(0, 40) + '_자막.srt';
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+  }
+  var ESUB_T = 0;
+  function esubScan() {
+    var els = [].slice.call(document.querySelectorAll('[data-esub]:not([data-got])'));
+    if (!els.length || document.hidden || Date.now() - ESUB_T < 8000) return;
+    ESUB_T = Date.now();
+    var since = new Date(Date.now() - 3 * 3600e3).toISOString();
+    els.forEach(function (el) {
+      var key = el.getAttribute('data-esub'), k8 = key.toLowerCase().replace(/[^0-9a-z]/g, '').slice(0, 8);
+      if (ESUB[key]) { esubPaint(el, key); return; }
+      sbReq('plot_evals?select=id,snapshot,created_at&kind=eq.studio&id=like.st:*-' + encodeURIComponent(k8) +
+            '&created_at=gte.' + encodeURIComponent(since) + '&order=created_at.desc&limit=1').then(function (rows) {
+        var r = (rows || [])[0], sn = r && r.snapshot || {};
+        if (sn.op === 'subs' && sn.from === 'draft' && (sn.subs || []).length) { ESUB[key] = { id: r.id, segs: sn.subs }; esubPaint(el, key); }
+      }).catch(function () {});
+    });
+  }
+  function esubPaint(el, key) {
+    el.setAttribute('data-got', '1');
+    var i = el.getAttribute('data-i');
+    el.innerHTML = '💬 자막 먼저 왔어요 ' + ESUB[key].segs.length + '줄 <button data-srtk="' + esc(key) + '" data-i="' + i + '">SRT</button>' +
+      '<button data-dr="' + i + '" data-kind="shorts">앱에서 고치기</button>';
+  }
+  setInterval(esubScan, 3000);
   function drOpen(i, kind) {
     var it = (DR && DR.items || [])[i]; if (!it) return;
     var form = (it[kind] || {}).form;
@@ -2518,6 +2575,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         px.at = Date.now(); pm[px.vid + '@' + px.off] = px; localStorage.setItem('plot.px', JSON.stringify(pm));
       }
       if (rdn && rdn.url) localStorage.setItem('plot.form.handoff.done', JSON.stringify({ url: rdn.url, at: rdn.at || '', subs: rdn.subs || null }));
+      // 11/3 완성본 전에 먼저 온 자막 — 숏폼 앱에서 바로 고친다 (bot/draft_render.early_subs)
+      else if (kind === 'shorts' && ESUB[it.key]) localStorage.setItem('plot.form.handoff.done', JSON.stringify({ url: '', at: '', subs: ESUB[it.key] }));
       else localStorage.removeItem('plot.form.handoff.done');
     } catch (e) {}
     drMark((it.source || {}).id + ':' + kind);
@@ -3656,11 +3715,13 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       (rd.url ? '<a class="yt" href="' + escU(rd.url) + '" target="_blank" rel="noopener">완성 영상 ▶</a>' +
         // 11/2 규효 "폰에 안 옴" — 폰 갤러리 전송(Syncthing)이 끊겨도 바로 내려받게
         (rd.subs_note ? '<span class="sbg">💬 ' + esc(String(rd.subs_note).replace(/[()]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 40)) + '</span>' : '') +
+        // 11/3 프리미어로 바로 — 완성본 자막을 .srt 로
+        (rd.subs && rd.subs.segs && rd.subs.segs.length ? (ESUB[it.key] = rd.subs, '<button data-srtk="' + esc(it.key) + '" data-i="' + i + '">💬 SRT</button>') : '') +
         (/res\.cloudinary\.com\/[^/]+\/video\/upload\//.test(rd.url) ? '<a class="yt" href="' + escU(rd.url.replace('/video/upload/', '/video/upload/fl_attachment/')) + '" download>📥 폰에 저장</a>' : '') :
         sh.hold && sh.hooks && Object.keys(sh.hooks).length ? (Object.keys(actsGet()).some(function (k) { return k.indexOf('tt-' + it.key) === 0 && Date.now() - actsGet()[k] < 15 * 60e3; })
           ? '<span>🎬 고른 제목으로 만드는 중</span>' : '<span class="ttl">제목 고르기</span>' + Object.keys(sh.hooks).sort().map(function (k) {
             return '<button data-tt="' + esc(it.key) + '|' + k + '">' + esc(String(sh.hooks[k]).replace(' / ', ' ⏎ ')) + '</button>'; }).join('')) :
-        rq.status || (Date.now() - (actsGet()['mk-' + it.key] || 0) < 15 * 60e3) ? '<span>🎬 맥이 만드는 중</span>' : (it.key && !DR_DAY ? '<button data-rmk="' + i + '">🎬 완성본 만들기</button>' : '')) +
+        rq.status || (Date.now() - (actsGet()['mk-' + it.key] || 0) < 15 * 60e3) ? '<span>🎬 맥이 만드는 중</span><span class="esub" data-esub="' + esc(it.key) + '" data-i="' + i + '"></span>' : (it.key && !DR_DAY ? '<button data-rmk="' + i + '">🎬 완성본 만들기</button>' : '')) +
       // 10/30 규효 "PLOT 도 비슷하게" — 완성본을 @plot_music 릴스로 (collectors/app_actions rl · reel_pub)
       ((sh.published || {}).permalink ? '<a class="yt" href="' + escU(sh.published.permalink) + '" target="_blank" rel="noopener">올린 릴스 ↗</a>' :
         reelSched(it) ? '<span>⏰ ' + esc(reelSched(it)) + ' 대기열</span><button data-sx="' + esc(it.key) + '">취소</button>' :
@@ -4257,6 +4318,56 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   /* 🎬 오늘의 릴스 (10/30 규효 "PLOT 도 비슷하게") — 지난 열흘 캐러셀 60여 편·릴스 5편인데 역대 상위는 릴스.
      피드 맨 위에 오늘 올린·대기열 수와 올릴 수 있는 완성본을 한 줄씩 (📥 대기열 · 📤 지금 — 카드의 버튼과 같은 길). */
+  /* 11/3 규효 "맥이 지금 뭘 하고 있는지, 어떤 영상을 어느 단계에서 얼만큼" — 초안 탭 맨 위.
+     봇이 10초마다 plot_evals 'mac:status' 에 올리는 것(scripts/mac_status)을 읽는다. 예전 「완성본」 줄(reelBar)은 내렸다. */
+  var MAC = null, MAC_T = 0;
+  var RSTEP = [['보내주신 영상', 8], ['다운로드', 12], ['가사', 22], ['자막', 30], ['컷 나누고', 35], ['레이어', 45], ['리프레임', 50],
+               ['합성', 60], ['서사', 55], ['여담', 50], ['노래', 75], ['CTA', 85], ['잇는', 88], ['전송', 95]];
+  function stepPct(t) { t = String(t || ''); for (var k = 0; k < RSTEP.length; k++) if (t.indexOf(RSTEP[k][0]) >= 0) return RSTEP[k][1]; return 5; }
+  function agoS(sec) { sec = Math.max(0, Math.round(sec)); return sec < 60 ? sec + '초' : Math.floor(sec / 60) + '분' + (sec % 60 ? ' ' + (sec % 60) + '초' : ''); }
+  function since(iso) { var t = Date.parse(String(iso || '').replace(' ', 'T') + (/[+Z]/.test(String(iso).slice(10)) ? '' : '+09:00')); return isNaN(t) ? 0 : (Date.now() - t) / 1000; }
+  var OPNAME = { subs: '말자막 받기', shorts: '숏폼 만들기', cut: '구간 자르기', raw: '원본 받기', cardvid: '캐러셀 영상 장', carousel: '캐러셀 발행',
+                 premiere: '프리미어 꾸러미', proxy: '미리보기 사본', caption: '캡션 쓰기', songvid: '곡 장 영상', ai_edit: 'AI 편집', special: '특집' };
+  function macNowBox() { return '<div id="macNow" class="macnow">' + macNowHtml() + '</div>'; }
+  function macNowHtml() {
+    if (!MAC) return '<div class="mh">🖥 맥 지금 <span>불러오는 중…</span></div>';
+    var age = since(MAC.at), rows = [];
+    (MAC.repos || []).forEach(function (rp) {
+      var tag = rp.name === 'PLOT' ? '' : '<b>' + esc(rp.name) + '</b> ';
+      ((rp.renders || {}).active || []).forEach(function (r) {
+        if (r.status === 'running') {
+          var pct = stepPct(r.progress);
+          rows.push('<div class="mr">' + tag + '🎬 <b>' + esc(r.title || '숏폼') + '</b> — ' + esc(String(r.progress || '시작').replace(/^\S+\s/, '')) +
+            ' · ' + agoS(since(r.started_at)) + '<i class="mb"><i style="width:' + pct + '%"></i></i></div>');
+        }
+      });
+      var rq = ((rp.renders || {}).active || []).filter(function (r) { return r.status === 'queued'; });
+      if (rq.length) rows.push('<div class="mr dim">' + tag + '🎬 렌더 대기 ' + rq.length + ' — ' + esc(rq.map(function (r) { return r.title; }).join(', ').slice(0, 80)) + '</div>');
+      (rp.studio || []).forEach(function (r) {
+        rows.push('<div class="mr">' + tag + '📱 ' + esc(OPNAME[r.op] || r.op) + (r.span ? ' <span>' + esc(r.span) + '</span>' : '') +
+          ' — ' + esc(String(r.note || '').replace(/\s*\(\d+초\)$/, '')) + ' · ' + agoS(r.secs) + '</div>');
+      });
+      (rp.running || []).forEach(function (j) {
+        rows.push('<div class="mr">' + tag + '⚙️ ' + esc(j.desc || j.job) + ' · ' + agoS(since(j.since)) +
+          (j.now ? '<div class="mn">' + esc(String(j.now).slice(0, 90)) + '</div>' : '') + '</div>');
+      });
+      if ((rp.inbox || []).length) rows.push('<div class="mr dim">' + tag + '⏳ 기다리는 작업 ' + rp.inbox.length + ' — ' +
+        esc(rp.inbox.map(function (j) { return j.desc || j.job; }).join(', ').slice(0, 80)) + '</div>');
+      if (rp.name === 'PLOT' && rp.bot === false) rows.push('<div class="mr bad">⚠ PLOT 봇이 꺼져 있습니다</div>');
+    });
+    return '<div class="mh">🖥 맥 지금 <span>' + (age > 90 ? '⚠ ' + agoS(age) + ' 전 소식 — 맥이 응답이 없습니다' : agoS(age) + ' 전') + '</span></div>' +
+      (rows.length ? rows.join('') : '<div class="mr dim">쉬는 중 — 도는 작업이 없습니다</div>');
+  }
+  function macPoll() {
+    if (document.hidden || Date.now() - MAC_T < 9000) return;
+    MAC_T = Date.now();
+    sbReq('plot_evals?select=snapshot&id=eq.mac:status').then(function (rows) {
+      var r = (rows || [])[0]; if (!r || !r.snapshot) return;
+      MAC = r.snapshot;
+      var el = document.getElementById('macNow'); if (el) el.innerHTML = macNowHtml();
+    }).catch(function () {});
+  }
+  setInterval(function () { macPoll(); var el = document.getElementById('macNow'); if (el && MAC) el.innerHTML = macNowHtml(); }, 2500);
   function reelBar(items) {
     var today = kstDay(new Date()), up = 0, q = 0, mk = 0, ready = [];
     items.forEach(function (it, i) {
@@ -4552,14 +4663,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<button data-vmode="list" aria-pressed="' + (mode === 'list') + '">자세히 보기</button></div>';
     if (mode === 'feed') {
       // 10/17 — 초안 피드를 위로: 서사형·평가 노트·발행 현황·편성은 피드 아래로 내린다
-      host.innerHTML = (DR_DAY ? '' : reelBar(items) + reqBox() + todoFold()) + dayBar() + modeBar + catRow(items) + sortBar() +
+      host.innerHTML = (DR_DAY ? '' : macNowBox() + reqBox() + todoFold()) + dayBar() + modeBar + catRow(items) + sortBar() +
         (drStale() ? '<div class="fsum" style="color:var(--amber)">' + esc(drStale().slice(5).replace('-', '/')) + ' 초안입니다 — 오늘 초안은 8시부터 한 시간마다 맥이 씁니다.</div>' : '') +
         '<div class="fsum">' + esc(String(DR.updated_at || DR.generated_at || '').replace(/^\d{4}-/, '').replace(' KST', '')) + ' · ' + items.length + '건 · 발행될 모양 그대로 — ✈︎ 로 인스타·스튜디오·숏폼' + (items.some(function (x) { return x.key; }) ? '·바로 발행' : '') + '</div>';
       renderFeed(host);
       host.insertAdjacentHTML('beforeend', '<div class="drAfter">' + storyBox() + evNote(items) + skipBox() + wrBox() + pubBox() + cornerBar() + '</div>');
       return;
     }
-    host.innerHTML = (DR_DAY ? '' : reelBar(items) + reqBox() + todoFold() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
+    host.innerHTML = (DR_DAY ? '' : macNowBox() + reqBox() + todoFold() + pubBox() + cornerBar()) + dayBar() + modeBar + '<div class="fsum">' + esc(DR.updated_at || DR.generated_at || '') + ' · ' + items.length +
       '건' + (lsum ? ' (' + esc(lsum) + ')' : '') + ' — 누르면 양식이 펼쳐진 채로 열립니다. 거기서 미리 보고 보내면 제작 확정입니다.' +
       (sk.length ? '<br>건너뛴 소재 ' + sk.length + '건: ' + sk.map(function (x) {
         return (x.entity ? '📰 ' + esc(x.entity) : '@' + esc(x.account || '')) + ' (' + (x.sell != null ? esc(x.sell) + '점 · ' : '') +
@@ -4692,6 +4803,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (ttb) { var tv = ttb.getAttribute('data-tt').split('|'); plotAction('tt-' + tv[0] + '-' + tv[1], '제목 확정 · 완성본 만들기'); ttb.parentNode.querySelectorAll('[data-tt]').forEach(function (b) { b.disabled = true; }); ttb.textContent = '✓ ' + ttb.textContent; return; }
     var rmk = e.target.closest('[data-rmk]');
     if (rmk) { var mit = (DR && DR.items || [])[Number(rmk.getAttribute('data-rmk'))]; if (mit && mit.key) { plotAction('mk-' + mit.key, '숏폼 완성본 만들기'); rmk.outerHTML = '<span>🎬 맥이 만드는 중</span>'; } return; }
+    var srb = e.target.closest('[data-srtk]');
+    if (srb) { srtDownload(srb.getAttribute('data-srtk'), Number(srb.getAttribute('data-i'))); return; }
     var rpb = e.target.closest('[data-rpub]');
     if (rpb) { var rit = (DR && DR.items || [])[Number(rpb.getAttribute('data-rpub'))]; if (rit && rit.key) openReelPublish(rit); return; }
     var tvx = e.target.closest('[data-tvb]') || e.target.closest('video[data-tv]');
@@ -4778,9 +4891,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.03 18:34';
+    a.title = '판 11.03 18:51';
     var ver = document.createElement('span');
-    ver.textContent = '11.03 18:34';
+    ver.textContent = '11.03 18:51';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
