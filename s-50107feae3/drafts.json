@@ -2213,6 +2213,11 @@
      },
      "subs_note": "자막 13줄 (앱에서 받은 것)",
      "v": "0c2a968c"
+    },
+    "published": {
+     "permalink": "https://www.instagram.com/reel/DfR-onYP2Om/",
+     "at": "2026-11-03T22:27+09:00",
+     "via": "manual"
     }
    },
    "corner_name": "소식"
@@ -2818,7 +2823,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 6,
-  "done": 5,
+  "done": 8,
   "goal": 28,
   "corners": [
    {
@@ -2981,33 +2986,33 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 1,
-    "left": 3,
-    "need_today": 1,
+    "done": 4,
+    "left": 0,
+    "need_today": 0,
     "day": null,
     "next_no": null,
     "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T20:02+09:00"
+  "at": "2026-11-03T22:27+09:00"
  },
  "queue": {
-  "next": "2026-11-03T20:58+09:00",
+  "next": "2026-11-03T22:29+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-03T19:58+09:00"
+  "last": "2026-11-03T20:02+09:00"
  },
  "slots": {
-  "basis": 289,
+  "basis": 292,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.13,
-    "median": 1.23,
-    "n": 52
+    "mult": 2.04,
+    "median": 1.17,
+    "n": 55
    },
    {
     "from": 21,
@@ -3021,7 +3026,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.48,
+    "mult": 1.49,
     "median": 0.96,
     "n": 24
    }
