@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03 19:05 KST",
+ "generated_at": "2026-11-03 22:05 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-03 15:05 KST"
+  "daily": "2026-11-03 19:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-03T18:27:18+09:00",
+  "fetched_at": "2026-11-03T21:48:17+09:00",
   "posts": [
+   {
+    "t": "2026-11-03T20:00+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "위켄드(@theweeknd)의 신곡 'Hong Kong'은 33년 전 왕"
+   },
+   {
+    "t": "2026-11-03T19:58+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 "
+   },
+   {
+    "t": "2026-11-03T19:48+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "리센느(@rescene_official) 'With' 뮤비, 장면으로 다"
+   },
    {
     "t": "2026-11-03T18:17+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2180,12 +2195,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 309,
-  "posted": 81,
+  "drafts": 310,
+  "posted": 84,
   "posts": 103,
-  "rate": 0.26,
+  "rate": 0.27,
   "adopted_mult": 0.96,
-  "own_mult": 1.09,
+  "own_mult": 1.18,
   "lanes": {
    "기타": {
     "drafts": 3,
@@ -2198,8 +2213,8 @@
     "mult": 1.52
    },
    "정보": {
-    "drafts": 199,
-    "posted": 66,
+    "drafts": 200,
+    "posted": 69,
     "mult": 0.98
    },
    "클립": {
@@ -2240,8 +2255,8 @@
   },
   "corners": {
    "news": {
-    "drafts": 166,
-    "posted": 55,
+    "drafts": 167,
+    "posted": 58,
     "mult": 0.96
    },
    "mal": {
@@ -2318,30 +2333,17 @@
   ],
   "recent": [
    {
-    "day": "2026-10-31",
-    "lane": "재미",
-    "who": "재키와이",
-    "repack": false,
-    "grade": "A",
-    "corner": "mal",
-    "key": "df660fbc",
-    "posted": "DfRinEcDyIN",
-    "head": "재키와이(@jvckiwai)가 데뷔 10주년 라이브에서 인디펜던트가 됐다고 알렸습니다.",
-    "url": "https://www.instagram.com/p/DfRinEcDyIN/",
-    "mult": null
-   },
-   {
-    "day": "2026-10-31",
+    "day": "2026-11-01",
     "lane": "정보",
-    "who": "창모",
+    "who": "위켄드",
     "repack": false,
     "grade": "A",
     "corner": "news",
-    "key": "9a04a017",
-    "posted": "DfJyt4oFFpf",
-    "head": "리드머가 창모(@changmo_)의 정규 3집 [MONOLITH]에 3.5점을 매겼습니다.",
-    "url": "https://www.instagram.com/p/DfJyt4oFFpf/",
-    "mult": 6.8
+    "key": "570ff3ce",
+    "posted": "DfRuW3FFGmo",
+    "head": "위켄드(@theweeknd)의 신곡 'Hong Kong'은 33년 전 왕페이의 노래 위에 ",
+    "url": "https://www.instagram.com/p/DfRuW3FFGmo/",
+    "mult": null
    },
    {
     "day": "2026-11-01",
@@ -2419,6 +2421,19 @@
     "posted": "DfRZ1jJFH1R",
     "head": "마이 케미컬 로맨스(@mychemicalromance)가 처음으로 영국 앨범 차트 1위에 ",
     "url": "https://www.instagram.com/p/DfRZ1jJFH1R/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-03",
+    "lane": "정보",
+    "who": "Lil Tecca",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "c329aa51",
+    "posted": "DfRuHWjFNZu",
+    "head": "릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 것으로 알려졌습니다",
+    "url": "https://www.instagram.com/p/DfRuHWjFNZu/",
     "mult": null
    }
   ]
