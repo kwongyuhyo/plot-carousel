@@ -2285,6 +2285,228 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:rescene-with-mv-scenes",
+    "account": "RESCENE 공식 유튜브",
+    "url": "https://www.youtube.com/watch?v=pey3E47eSc8",
+    "image": null,
+    "head": "RESCENE 'With' Official MV (11/3 18시)",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-03T18:52+09:00",
+   "key": "09e03989",
+   "by": "claude",
+   "subjects": [
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "뮤비를 장면·컷 단위로 읽는다 — 털복숭이 친구, 텅 빈 장소 네 곳, 2분 22초의 빨라지는 컷",
+    "why": "규효 요청 — 리센느 신곡 'With' 뮤비를 프레임 단위로 조사한 기획 특집 (발매 당일)"
+   },
+   "added": "claude",
+   "added_at": "2026-11-03T18:52+09:00",
+   "corner": "spotlight",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n리센느(@rescene_official) 'With' 뮤비, 장면으로 다시 보기 🐾\n\n오늘(3일) 저녁 6시 공개된 미니 4집 [PULSE] 타이틀곡 'With' 뮤직비디오를 장면 단위로 뜯어봤습니다.\n\n처음과 끝이 맞붙은 구성, 철길에서 만난 털복숭이 친구, 사람 하나 없는 장소 네 곳, 그리고 2분 22초부터 점점 빨라지는 컷까지.\n\n여러분은 어떤 장면이 가장 기억에 남나요?\n\n#리센느 #RESCENE #With #PULSE #리센느_With #뮤직비디오 #뮤비해석 #PLOT\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793699577/h0svxuiik5qohqepi1fb.jpg\n제목: 리센느 'With' 뮤비,|장면으로 다시 보기\n부제: 철길·볼링장·빈 주방, 그리고 털복숭이 친구\n출처: RESCENE 공식 MV\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:00-0:07\n소제목: 끝에서 시작한다\n본문: 뮤비 첫 장면은 별가루가 흩날리는 어둠 속, 털복숭이 친구에게 기대 잠든 모습입니다.\\|\\|**3분 12초** 마지막 장면도 같은 어둠, 같은 품으로 돌아옵니다. 처음과 끝을 맞붙여 놓은 구성입니다.\n출처: RESCENE 공식 MV\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793699601/plot_studio/vpme6cbdqv4r97chjcc5.mp4\n소제목: \n본문: \n출처: RESCENE 공식 유튜브\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:26-0:32\n소제목: 철길에서 만난 친구\n본문: 검은 재킷 차림의 멤버가 철길을 달리다 커다란 털복숭이와 마주칩니다.\\|\\|티저 때 소속사가 '정체를 알 수 없는 존재'라고만 소개한 바로 그 친구입니다.\n출처: RESCENE 공식 MV\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:35-0:39\n소제목: 넓은 곳, 둘뿐\n본문: 철길, 텅 빈 트랙, 볼링장, 노란 타일 주방. 뮤비에 나오는 장소 네 곳에는 멤버들과 털복숭이 말고 **아무도 없습니다**.\\|\\|넓은 곳에 둘만 세워 두는 화면이 계속 나옵니다.\n출처: RESCENE 공식 MV\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 1:11-1:17\n소제목: 부딪히고, 같이 산다\n본문: 노란 주방에서는 엎치락뒤치락하다 유리 조각 위에 함께 쓰러집니다.\\|\\|조금 뒤엔 냉장고를 열고 장바구니를 드는 장면이 이어집니다. 싸우다가도 같이 사는 사이처럼 보입니다.\n출처: RESCENE 공식 MV\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 1:32-1:37\n소제목: 레인 위에 나란히\n본문: 볼링장에서는 멤버들이 털복숭이와 어깨를 나란히 하고 섭니다.\\|\\|철길에서 혼자 만났던 친구가 이제 무리의 한 명이 됐습니다.\n출처: RESCENE 공식 MV\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 2:22-2:28\n소제목: 빨라지는 맥박\n본문: **2분 22초**부터 5초 동안 장면이 13번 바뀝니다. 컷 길이는 0.8초에서 0.2초까지 점점 짧아집니다.\\|\\|그동안 지나온 장소들이 한꺼번에 스치는데요, 앨범 이름 'PULSE'(맥박)처럼 빨라지는 박동으로 읽히는 대목입니다.\n출처: RESCENE 공식 MV\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 2:51-2:56\n소제목: 다섯 명이 한 몸처럼\n본문: 후반부는 흰 옷을 입은 다섯 멤버가 어두운 무대에서 추는 퍼포먼스입니다.\\|\\|쇼케이스에서 제나는 이번 곡에 다섯 명이 '한 몸처럼' 맞추는 동작이 많다고 소개했습니다.\n출처: RESCENE 공식 MV\n\n[슬라이드]\n소스: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 3:09-3:14\n소제목: 미니 4집 [PULSE]\n본문: 11월 3일 오후 6시 발매. 타이틀곡 'With'를 포함해 5곡이 실렸습니다.\\|\\|리센느는 앨범마다 향을 하나씩 정해 왔는데, 이번은 **머스크**입니다. 미나미는 머스크를 팬과 멤버들의 체온을 닮은 향이라고 설명했습니다.\n출처: RESCENE 공식 MV\n",
+    "caption": "리센느(@rescene_official) 'With' 뮤비, 장면으로 다시 보기 🐾\n\n오늘(3일) 저녁 6시 공개된 미니 4집 [PULSE] 타이틀곡 'With' 뮤직비디오를 장면 단위로 뜯어봤습니다.\n\n처음과 끝이 맞붙은 구성, 철길에서 만난 털복숭이 친구, 사람 하나 없는 장소 네 곳, 그리고 2분 22초부터 점점 빨라지는 컷까지.\n\n여러분은 어떤 장면이 가장 기억에 남나요?\n\n#리센느 #RESCENE #With #PULSE #리센느_With #뮤직비디오 #뮤비해석 #PLOT",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699577/h0svxuiik5qohqepi1fb.jpg",
+      "credit": "RESCENE 공식 MV",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699528/plot_studio/fazpvb3wyzmwsp7efyh3.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699579/nrz55gq8vrzesidbiszk.jpg",
+      "credit": "RESCENE 공식 MV",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699530/plot_studio/jaloizlls7bfn0nlpmlw.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699581/icy4na7v2sqfk33sikkv.jpg",
+      "credit": "RESCENE 공식 MV",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699531/plot_studio/vpbe8y26avkaemahc7gz.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505892/yiqk3bvy1c5wt5bcgmsk.jpg",
+      "credit": "@rescene_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855830001_17972711448150563_1514224114320933732_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-Bww4eJeYo8Q7kNvwEkshCm&_nc_oc=Adomg6ZN4fT0yWKaSIzr2u_Zzf1Kff9_fvUAmrAOPrMPFHckNghSoPmYCqibs_Eay2g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=Xpz02Pr1aW30YQx9wClzrw&oh=00_AQPydIGN--aB74z47Y5odTqHK5ys4o-dbLE-54t1K_VfEw&oe=6ADD5F14"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505897/ayxdzoodbamrcaewvoru.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856933982_17972711043150563_7307401756450022083_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AFNU_MEsQpoQ7kNvwHGFaQh&_nc_oc=AdqUWeK6_IfROc_dUJnFILqd4UHSK-Tx_6D1bxjzpMI16mFdRHWuZb2pLxQ1tCe_sLU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=Xpz02Pr1aW30YQx9wClzrw&oh=00_AQMt9oFnXC66FYLOqzrRXazC-eCP1S2taj2Cnh-lcIMRGA&oe=6ADD3A3A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758359/hhmspk2g7ptpquqgvsvo.jpg",
+      "credit": "@rescene_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858297726_17973189405150563_3361436159954750575_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DBFUja_UOcUQ7kNvwHevsFw&_nc_oc=AdpgGch66RySwJ4bHDm55YSFaAD7aA5tt5ZTHJ4PuuJBd58DVd4IevBQVHU3yclf_Bg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQPeyiHP3ioDFFMUChiSLcKYSQccdRBpVltOQKeU1BlQCA&oe=6AE126D8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758363/sjbztprfytakwxxw9gzh.jpg",
+      "credit": "@rescene_official",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/864268953_17973188628150563_409582224207847368_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=cT8ZMr4zU-4Q7kNvwGaLFnK&_nc_oc=AdpRMss_YugALMH47n98x374KpnP-WCzmY__Bq0USagp-gmtnTuVaHA-wrvmJDLww6U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQP5U95gPHOwpy-fz2-OWWq2UdVve-CI8uv-WaQ_Ii9HHA&oe=6AE12C30"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758355/jenqxpn3os2h6cnbaxxo.jpg",
+      "credit": "@rescene_official",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863609329_17973191355150563_6019570452401117686_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Z-QvBcRgltwQ7kNvwHQTn0u&_nc_oc=AdqeyLqcw5YGA5EdrUGOPhCub5Cy6Rf_HiaUcFkApmIJzuEbSnF5dRb7uggMfVsrc8A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQMwEdn-YinwNSrXgmobYtTOWzy_oa4uTdCHBfysuYf6EQ&oe=6AE10E9B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500841/lxglf9kyihgyp50i1hhm.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/117/07/015/11707015_20250204161952.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500843/zg16dlo8blauiyaqthyi.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/115/75/849/11575849_20240826152240.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500845/it41rqifbsl9kvyx7u4c.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/114/50/232/11450232_20240325152500.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500847/ufqwfpdguayus2u0faxz.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/114/30/883/11430883_20240228160647.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699577/h0svxuiik5qohqepi1fb.jpg",
+      "credit": "RESCENE 공식 MV",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699528/plot_studio/fazpvb3wyzmwsp7efyh3.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699579/nrz55gq8vrzesidbiszk.jpg",
+      "credit": "RESCENE 공식 MV",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699530/plot_studio/jaloizlls7bfn0nlpmlw.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699581/icy4na7v2sqfk33sikkv.jpg",
+      "credit": "RESCENE 공식 MV",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793699531/plot_studio/vpbe8y26avkaemahc7gz.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505892/yiqk3bvy1c5wt5bcgmsk.jpg",
+      "credit": "@rescene_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855830001_17972711448150563_1514224114320933732_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-Bww4eJeYo8Q7kNvwEkshCm&_nc_oc=Adomg6ZN4fT0yWKaSIzr2u_Zzf1Kff9_fvUAmrAOPrMPFHckNghSoPmYCqibs_Eay2g&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=Xpz02Pr1aW30YQx9wClzrw&oh=00_AQPydIGN--aB74z47Y5odTqHK5ys4o-dbLE-54t1K_VfEw&oe=6ADD5F14"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505897/ayxdzoodbamrcaewvoru.jpg",
+      "credit": "@rescene_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/856933982_17972711043150563_7307401756450022083_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=AFNU_MEsQpoQ7kNvwHGFaQh&_nc_oc=AdqUWeK6_IfROc_dUJnFILqd4UHSK-Tx_6D1bxjzpMI16mFdRHWuZb2pLxQ1tCe_sLU&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=Xpz02Pr1aW30YQx9wClzrw&oh=00_AQMt9oFnXC66FYLOqzrRXazC-eCP1S2taj2Cnh-lcIMRGA&oe=6ADD3A3A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758359/hhmspk2g7ptpquqgvsvo.jpg",
+      "credit": "@rescene_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858297726_17973189405150563_3361436159954750575_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DBFUja_UOcUQ7kNvwHevsFw&_nc_oc=AdpgGch66RySwJ4bHDm55YSFaAD7aA5tt5ZTHJ4PuuJBd58DVd4IevBQVHU3yclf_Bg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQPeyiHP3ioDFFMUChiSLcKYSQccdRBpVltOQKeU1BlQCA&oe=6AE126D8"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758363/sjbztprfytakwxxw9gzh.jpg",
+      "credit": "@rescene_official",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/864268953_17973188628150563_409582224207847368_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=cT8ZMr4zU-4Q7kNvwGaLFnK&_nc_oc=AdpRMss_YugALMH47n98x374KpnP-WCzmY__Bq0USagp-gmtnTuVaHA-wrvmJDLww6U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQP5U95gPHOwpy-fz2-OWWq2UdVve-CI8uv-WaQ_Ii9HHA&oe=6AE12C30"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792758355/jenqxpn3os2h6cnbaxxo.jpg",
+      "credit": "@rescene_official",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863609329_17973191355150563_6019570452401117686_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Z-QvBcRgltwQ7kNvwHQTn0u&_nc_oc=AdqeyLqcw5YGA5EdrUGOPhCub5Cy6Rf_HiaUcFkApmIJzuEbSnF5dRb7uggMfVsrc8A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=y8kIn2HBV0jwEgQ9JMkpUQ&oh=00_AQMwEdn-YinwNSrXgmobYtTOWzy_oa4uTdCHBfysuYf6EQ&oe=6AE10E9B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500841/lxglf9kyihgyp50i1hhm.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/117/07/015/11707015_20250204161952.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500843/zg16dlo8blauiyaqthyi.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/115/75/849/11575849_20240826152240.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500845/it41rqifbsl9kvyx7u4c.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/114/50/232/11450232_20240325152500.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500847/ufqwfpdguayus2u0faxz.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/114/30/883/11430883_20240228160647.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "리센느 'With' 뮤비,|장면으로 다시 보기",
+      "sub": "철길·볼링장·빈 주방, 그리고 털복숭이 친구"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "리센느 곁의|털복숭이는 누구일까",
+      "sub": "'With' 뮤비를 장면 단위로 읽었습니다"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "장면별 멤버 이름은 화면만으로 확실하지 않아 넣지 않았습니다 — 아시면 장마다 이름을 넣어 주세요",
+     "2분 22초 구간 컷 수(13번)·컷 길이(0.8초→0.2초)는 장면 바뀜 검출로 잰 값입니다",
+     "표지 사진은 뮤비 720p 프레임이라 살짝 무를 수 있습니다",
+     "뮤비 첫 장면 왼쪽 아래에 'Mnet 2026.10.26' 표시가 있습니다 — 본문엔 넣지 않았습니다",
+     "[작문 P2] 캡션: 질문으로 열거나 닫음 → 질문으로 열거나 닫지 않는다 ('여러분은 어떠셨나요?' 포함)"
+    ],
+    "research": [
+     {
+      "title": "RESCENE (리센느) 'With' Official MV",
+      "link": "https://www.youtube.com/watch?v=pey3E47eSc8"
+     },
+     {
+      "title": "스포츠경향 — 리센느 PULSE 쇼케이스 (제나·미나미 발언)",
+      "link": "https://sports.khan.co.kr/article/202611031609003/"
+     },
+     {
+      "title": "MK스포츠 — 리센느 'PULSE' 머스크 향",
+      "link": "https://www.mksports.co.kr/news/entertain/12194908"
+     },
+     {
+      "title": "스포츠경향(영문) — 'With' MV 티저",
+      "link": "https://sports.khan.co.kr/en/article/202610311128007/"
+     },
+     {
+      "title": "MHN — 'With' 곡 소개",
+      "link": "https://mhnse.com/news/articleView.html?idxno=1651514"
+     }
+    ],
+    "by": "claude"
+   },
+   "corner_name": "SPOTLIGHT",
+   "corner_no": 2
   }
  ],
  "skipped": [],
@@ -2375,7 +2597,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 2,
     "why": "해외 매체가 먼저 다룬 한국 아티스트 — 선점"
    },
    {
@@ -2463,7 +2685,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T18:50+09:00"
+  "at": "2026-11-03T18:52+09:00"
  },
  "queue": {
   "next": "2026-11-03T19:22+09:00",
