@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03 15:05 KST",
+ "generated_at": "2026-11-03 19:05 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,21 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-02 22:04 KST"
+  "daily": "2026-11-03 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-03T14:59:40+09:00",
+  "fetched_at": "2026-11-03T18:27:18+09:00",
   "posts": [
+   {
+    "t": "2026-11-03T18:17+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "재키와이(@jvckiwai)가 데뷔 10주년 라이브에서 인디펜던트가 됐다"
+   },
+   {
+    "t": "2026-11-03T17:00+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "마이 케미컬 로맨스(@mychemicalromance)가 처음으로 영국 "
+   },
    {
     "t": "2026-11-02T20:03+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2170,11 +2180,11 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 302,
-  "posted": 80,
-  "posts": 102,
+  "drafts": 309,
+  "posted": 81,
+  "posts": 103,
   "rate": 0.26,
-  "adopted_mult": 0.97,
+  "adopted_mult": 0.96,
   "own_mult": 1.09,
   "lanes": {
    "기타": {
@@ -2185,11 +2195,11 @@
    "재미": {
     "drafts": 31,
     "posted": 2,
-    "mult": 3.3
+    "mult": 1.52
    },
    "정보": {
-    "drafts": 192,
-    "posted": 65,
+    "drafts": 199,
+    "posted": 66,
     "mult": 0.98
    },
    "클립": {
@@ -2230,14 +2240,14 @@
   },
   "corners": {
    "news": {
-    "drafts": 163,
-    "posted": 54,
+    "drafts": 166,
+    "posted": 55,
     "mult": 0.96
    },
    "mal": {
-    "drafts": 42,
+    "drafts": 43,
     "posted": 5,
-    "mult": 0.98
+    "mult": 0.86
    },
    "again": {
     "drafts": 3,
@@ -2245,7 +2255,7 @@
     "mult": null
    },
    "song": {
-    "drafts": 10,
+    "drafts": 11,
     "posted": 1,
     "mult": null
    },
@@ -2260,7 +2270,7 @@
     "mult": 1.02
    },
    "spotlight": {
-    "drafts": 9,
+    "drafts": 10,
     "posted": 0,
     "mult": null
    },
@@ -2285,7 +2295,7 @@
     "mult": 1.0
    },
    "intro": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 1,
     "mult": 0.58
    },
@@ -2308,19 +2318,6 @@
   ],
   "recent": [
    {
-    "day": "2026-10-30",
-    "lane": "정보",
-    "who": "기타쇼 낙원",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "361b2d40",
-    "posted": "DfM9yLSjfKd",
-    "head": "단편선 순간들이 '기타쇼 낙원 2026' 무대의 마지막 곡으로 '음악만세'를 꺼냈습니다. ",
-    "url": "https://www.instagram.com/reel/DfM9yLSjfKd/",
-    "mult": 0.67
-   },
-   {
     "day": "2026-10-31",
     "lane": "재미",
     "who": "재키와이",
@@ -2328,10 +2325,10 @@
     "grade": "A",
     "corner": "mal",
     "key": "df660fbc",
-    "posted": "DfKFeWXvXvx",
-    "head": "재키와이가 얼굴이 계속 바뀐다는 밈에 직접 답했습니다.",
-    "url": "https://www.instagram.com/reel/DfKFeWXvXvx/",
-    "mult": 5.09
+    "posted": "DfRinEcDyIN",
+    "head": "재키와이(@jvckiwai)가 데뷔 10주년 라이브에서 인디펜던트가 됐다고 알렸습니다.",
+    "url": "https://www.instagram.com/p/DfRinEcDyIN/",
+    "mult": null
    },
    {
     "day": "2026-10-31",
@@ -2409,6 +2406,19 @@
     "posted": "DfPJ8DJgjLh",
     "head": "모노사파의 첫 큐레이션 공연 라인업에는 모노사파가 두 번 적혀 있습니다.",
     "url": "https://www.instagram.com/p/DfPJ8DJgjLh/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-03",
+    "lane": "정보",
+    "who": "마이 케미컬 로맨스",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "7a42ccc0",
+    "posted": "DfRZ1jJFH1R",
+    "head": "마이 케미컬 로맨스(@mychemicalromance)가 처음으로 영국 앨범 차트 1위에 ",
+    "url": "https://www.instagram.com/p/DfRZ1jJFH1R/",
     "mult": null
    }
   ]
