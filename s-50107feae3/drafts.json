@@ -1203,9 +1203,52 @@
      "end": 463.0,
      "full": 2104.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-03T17:41+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793695708/plot_studio/efetblhjnpzb8caddmeu.mp4",
+     "at": "2026-11-03T17:48+09:00",
+     "file": "10JuNyeon_LaBangESeo_DogLib_SeonEonHan_Ja_Feature_no_lyrics__cta.mp4",
+     "subs": {
+      "id": "st:1793695710852-8670d6f1",
+      "segs": [
+       {
+        "start": 2.03,
+        "end": 10.34,
+        "text": "여러분 제가 그 경제\n발표가 있는데 그 오늘의"
+       },
+       {
+        "start": 11.88,
+        "end": 14.96,
+        "text": "인디펜던트가 됐어요"
+       },
+       {
+        "start": 14.98,
+        "end": 18.9,
+        "text": "제가 드디어"
+       },
+       {
+        "start": 27.72,
+        "end": 36.73,
+        "text": "그리고 그 10주년 기념으로\n지금 다큐멘터리 촬영해 가지고"
+       },
+       {
+        "start": 36.73,
+        "end": 40.2,
+        "text": "곧 유튜브에 올라올 예정이에요"
+       },
+       {
+        "start": 43.06,
+        "end": 44.19,
+        "text": "많이 봐주세요"
+       },
+       {
+        "start": 44.19,
+        "end": 45.72,
+        "text": "다음 영상에서 만나요"
+       }
+      ]
+     },
+     "subs_note": "자막 7줄 (받아쓰기 · 확인할 줄 2)",
+     "v": "d9d36ae0"
     }
    },
    "corner_name": "그날의 앨범",
@@ -1790,6 +1833,97 @@
     "cover": "A",
     "at": "2026-11-03T17:00+09:00"
    }
+  },
+  {
+   "source": {
+    "id": "claude:ord-21506229",
+    "account": "@규효 요청",
+    "url": "",
+    "image": null,
+    "head": "처음부터 주혜린을 염두에 둔 곡, 게임 선공개로 놓쳤다가 리믹스로 완성한 루시갱 '우비소녀'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-03T17:50+09:00",
+   "key": "88255a7a",
+   "by": "claude",
+   "subjects": [
+    "루시갱",
+    "주혜린"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "게임 일정 때문에 놓친 피처링을 리믹스로 다시 잡은 루시갱 x 주혜린 '우비소녀'",
+    "why": "규효 선곡 — 루시갱과 주혜린의 만남, 곡이 리믹스로 다시 태어난 이야기"
+   },
+   "added": "claude",
+   "added_at": "2026-11-03T17:50+09:00",
+   "corner": "song",
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=8b95gME5nbg\n구간: 1:12-1:36\n곡: 리믹스로 다시 잡았다\n아티스트: 게임 때문에 놓친 피처링,\n피처링:\n후킹: \n출처: Luci Gang\n음원: Luci Gang - 우비소녀 Remix (feat. 주혜린)\n가사: 자동",
+    "caption": "137번째 오늘의 노래 | 2026.11.03\n\n루시갱의 '우비소녀'는 처음부터 주혜린(@joohyelyn)의 목소리를 염두에 두고 만든 곡입니다.\n\n그런데 eFootball 27 플레이리스트 피칭 연락이 오면서 곡을 서둘러 먼저 내야 했는데요, 아쉬운 마음에 루시갱은 리믹스를 만들어 정규 3집 [무한궤도]에 넣기로 하고 주혜린에게 연락했습니다.\n\n처음엔 주혜린의 보컬을 깔끔하게 다듬어 보냈지만, 주혜린 쪽에서 루시갱의 보컬에 맞춰 더 튀게 해 달라고 했다고 합니다. 루시갱은 자신의 훅에서 주혜린의 목소리로 넘어가는 순간을 듣자마자 \"이거다!\" 싶었다고 돌아봤습니다.\n\n비 오는 날 노란 우비를 걸치고, 엉망이었던 것들을 빗물에 흘려보내는 노래입니다.\n\nArtist | 루시갱 (feat. 주혜린)\nTitle | 우비소녀 Remix (feat. 주혜린)\nReleased | 2026.07.06\n\n#PLOT #오늘의노래 #루시갱 #주혜린 #우비소녀 #무한궤도",
+    "hooks": {
+     "A": "비 오는 날 노란 우비를 / 입고 도시를 누비는 노래",
+     "B": "게임 때문에 놓친 피처링, / 리믹스로 다시 잡았다",
+     "C": "엉망이었던 하루를 / 빗물에 다 흘려보내는 노래"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=8b95gME5nbg",
+     "credit": "Luci Gang",
+     "range": [
+      72.0,
+      96.0
+     ]
+    },
+    "guided": {
+     "rec": "B",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — Luci Gang (본인 채널 공식 MV)",
+     "구간 확인 — 자동 자막으로 두 번째 후렴('비가 아주 많이 오는 날이면') 1:12에서 시작한다고 봤다. 첫 후렴은 0:14"
+    ],
+    "research": [
+     {
+      "title": "우비소녀 Remix (feat. 주혜린) (Official Video) - Luci Gang",
+      "link": "https://www.youtube.com/watch?v=8b95gME5nbg"
+     },
+     {
+      "title": "[인터뷰] 힙합 아티스트 루시갱을 만나다 (브런치 손익분기점, 2026.09.05)",
+      "link": "https://brunch.co.kr/@breakevenpoint/148"
+     },
+     {
+      "title": "우비소녀 Remix (feat. 주혜린) - 벅스",
+      "link": "https://music.bugs.co.kr/track/6487304"
+     },
+     {
+      "title": "루시갱 - 나무위키",
+      "link": "https://namu.wiki/w/%EB%A3%A8%EC%8B%9C%EA%B0%B1"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/8b95gME5nbg/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793695856/udev5ce3hji4nwbzrahx.jpg",
+     "key": "8b95gME5nbg@72.0"
+    },
+    "px": {
+     "vid": "8b95gME5nbg",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793695937/plot_studio/yzrinxjziszn4swqqfwb.mp4",
+     "off": 27.0,
+     "end": 141.0,
+     "full": 180.0
+    },
+    "render": {
+     "status": "queued",
+     "at": "2026-11-03T17:52+09:00"
+    }
+   },
+   "corner_name": "오늘의 노래",
+   "corner_no": 2
   }
  ],
  "skipped": [],
@@ -1856,7 +1990,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 2,
-    "drafts": 0,
+    "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -1968,7 +2102,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T17:41+09:00"
+  "at": "2026-11-03T17:52+09:00"
  },
  "queue": {
   "next": "2026-11-03T18:00+09:00",
