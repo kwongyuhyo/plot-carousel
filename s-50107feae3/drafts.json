@@ -3169,25 +3169,30 @@
     }
    },
    "corner_name": "나무위키 털기",
-   "corner_no": 24
+   "corner_no": 25,
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfSGo5ekvF_/",
+    "cover": "A",
+    "at": "2026-11-03T23:32+09:00"
+   }
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 6,
-  "done": 8,
+  "done": 9,
   "goal": 28,
   "corners": [
    {
     "key": "tteolgi",
     "name": "나무위키 털기",
     "weekly": 0,
-    "done": 0,
+    "done": 1,
     "left": 0,
     "need_today": 0,
     "day": null,
-    "next_no": 24,
+    "next_no": 25,
     "drafts": 1,
     "why": "제작 맡기기로 맡길 때만 (10/20) — 나무위키만 보고 장 수 제한 없이"
    },
@@ -3348,22 +3353,22 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T22:55+09:00"
+  "at": "2026-11-03T23:32+09:00"
  },
  "queue": {
-  "next": "2026-11-03T23:27+09:00",
+  "next": "2026-11-04T08:00+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-03T22:27+09:00"
+  "last": "2026-11-03T23:32+09:00"
  },
  "slots": {
-  "basis": 292,
+  "basis": 293,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.04,
+    "mult": 2.05,
     "median": 1.17,
     "n": 55
    },
@@ -3394,20 +3399,20 @@
     "n": 22
    },
    {
-    "from": 21,
-    "to": 24,
-    "at": "22:30",
-    "mult": 1.74,
-    "median": 0.92,
-    "n": 79
-   },
-   {
     "from": 0,
     "to": 3,
     "at": "01:30",
     "mult": 1.74,
     "median": 1.25,
     "n": 24
+   },
+   {
+    "from": 21,
+    "to": 24,
+    "at": "22:30",
+    "mult": 1.72,
+    "median": 0.91,
+    "n": 80
    }
   ]
  },

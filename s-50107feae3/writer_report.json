@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03T23:26+09:00",
+ "generated_at": "2026-11-03T23:40+09:00",
  "range": [
   "2026-10-28",
   "2026-11-03"
@@ -43,8 +43,8 @@
     1
    ]
   ],
-  "published": 17,
-  "publish_rate": 0.14,
+  "published": 18,
+  "publish_rate": 0.15,
   "reach_mult": [
    0.67,
    0.75,
