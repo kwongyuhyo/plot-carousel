@@ -2132,9 +2132,11 @@
      "end": 118.0,
      "full": 202.0
     },
-    "render": {
-     "status": "queued",
-     "at": "2026-11-03T18:24+09:00"
+    "rendered": {
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793698444/plot_studio/d9806qcfuuoou0pyvirg.mp4",
+     "at": "2026-11-03T18:34+09:00",
+     "file": "YeogJuHaeng_1Wi_LiSe_DeulGo_On_SinGog_Wit_New_Release_no_lyrics__cta.mp4",
+     "v": "fed08c93"
     }
    },
    "corner_name": "소식"
@@ -2144,7 +2146,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 6,
-  "done": 4,
+  "done": 5,
   "goal": 28,
   "corners": [
    {
@@ -2211,8 +2213,8 @@
     "key": "mal",
     "name": "그 말",
     "weekly": 6,
-    "done": 0,
-    "left": 6,
+    "done": 1,
+    "left": 5,
     "need_today": 1,
     "day": null,
     "next_no": 6,
@@ -2316,7 +2318,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-03T18:24+09:00"
+  "at": "2026-11-03T18:34+09:00"
  },
  "queue": {
   "next": "2026-11-03T19:22+09:00",
@@ -2325,15 +2327,15 @@
   "last": "2026-11-03T18:22+09:00"
  },
  "slots": {
-  "basis": 288,
+  "basis": 289,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.15,
+    "mult": 2.12,
     "median": 1.23,
-    "n": 51
+    "n": 52
    },
    {
     "from": 21,
@@ -2347,7 +2349,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.47,
+    "mult": 1.48,
     "median": 0.96,
     "n": 24
    }
