@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-03 22:05 KST",
+ "generated_at": "2026-11-04 15:05 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,41 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-03 19:05 KST"
+  "daily": "2026-11-03 22:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-03T21:48:17+09:00",
+  "fetched_at": "2026-11-04T14:54:58+09:00",
   "posts": [
+   {
+    "t": "2026-11-04T14:16+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a"
+   },
+   {
+    "t": "2026-11-04T13:43+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "제프 버넷이 내년 2월, 3년 만에 한국을 찾습니다."
+   },
+   {
+    "t": "2026-11-04T13:26+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@s"
+   },
+   {
+    "t": "2026-11-04T00:02+09:00",
+    "type": "VIDEO",
+    "head": "137번째 오늘의 노래 | 2026.11.03"
+   },
+   {
+    "t": "2026-11-03T23:32+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "저스트뮤직 [파급효과2]의 커버 속 배는 노리고 그린 것이었습니다."
+   },
+   {
+    "t": "2026-11-03T22:22+09:00",
+    "type": "VIDEO",
+    "head": "리센느(@rescene_official)가 미니 4집 [PULSE]의 타"
+   },
    {
     "t": "2026-11-03T20:00+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2195,10 +2225,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 310,
-  "posted": 84,
-  "posts": 103,
-  "rate": 0.27,
+  "drafts": 321,
+  "posted": 90,
+  "posts": 109,
+  "rate": 0.28,
   "adopted_mult": 0.96,
   "own_mult": 1.18,
   "lanes": {
@@ -2208,17 +2238,17 @@
     "mult": null
    },
    "재미": {
-    "drafts": 31,
+    "drafts": 32,
     "posted": 2,
     "mult": 1.52
    },
    "정보": {
-    "drafts": 200,
-    "posted": 69,
+    "drafts": 207,
+    "posted": 75,
     "mult": 0.98
    },
    "클립": {
-    "drafts": 44,
+    "drafts": 45,
     "posted": 6,
     "mult": 0.86
    },
@@ -2238,7 +2268,7 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 21,
+    "drafts": 23,
     "posted": 4,
     "mult": 0.8
    },
@@ -2255,12 +2285,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 167,
-    "posted": 58,
+    "drafts": 171,
+    "posted": 61,
     "mult": 0.96
    },
    "mal": {
-    "drafts": 43,
+    "drafts": 45,
     "posted": 5,
     "mult": 0.86
    },
@@ -2271,12 +2301,12 @@
    },
    "song": {
     "drafts": 11,
-    "posted": 1,
+    "posted": 2,
     "mult": null
    },
    "tteolgi": {
-    "drafts": 13,
-    "posted": 2,
+    "drafts": 14,
+    "posted": 3,
     "mult": 0.9
    },
    "followup": {
@@ -2295,13 +2325,13 @@
     "mult": 1.32
    },
    "anniv": {
-    "drafts": 14,
+    "drafts": 15,
     "posted": 2,
     "mult": 1.81
    },
    "tickets": {
-    "drafts": 6,
-    "posted": 5,
+    "drafts": 7,
+    "posted": 6,
     "mult": 0.95
    },
    "meet": {
@@ -2310,12 +2340,12 @@
     "mult": 1.0
    },
    "intro": {
-    "drafts": 6,
+    "drafts": 7,
     "posted": 1,
     "mult": 0.58
    },
    "listen": {
-    "drafts": 2,
+    "drafts": 3,
     "posted": 0,
     "mult": null
    }
@@ -2332,58 +2362,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-11-01",
-    "lane": "정보",
-    "who": "위켄드",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "570ff3ce",
-    "posted": "DfRuW3FFGmo",
-    "head": "위켄드(@theweeknd)의 신곡 'Hong Kong'은 33년 전 왕페이의 노래 위에 ",
-    "url": "https://www.instagram.com/p/DfRuW3FFGmo/",
-    "mult": null
-   },
-   {
-    "day": "2026-11-01",
-    "lane": "클립",
-    "who": "노백",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "d95ee6b4",
-    "posted": "DfMUt37v_vC",
-    "head": "비 내리던 낙원상가를 통째로 흔든 단편선 순간들(@danpyunsun.moments.ens",
-    "url": "https://www.instagram.com/reel/DfMUt37v_vC/",
-    "mult": 0.84
-   },
-   {
-    "day": "2026-11-01",
-    "lane": "클립",
-    "who": "단편선 순간들",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "663b8274",
-    "posted": "DfMO9amkUmV",
-    "head": "비 내리던 낙원상가, 우산 사이로 울린 NOBACK(@noback_kr)의 라이브.",
-    "url": "https://www.instagram.com/reel/DfMO9amkUmV/",
-    "mult": 1.01
-   },
-   {
-    "day": "2026-11-02",
-    "lane": "정보",
-    "who": "잔나비",
-    "repack": false,
-    "grade": "A",
-    "corner": "tickets",
-    "key": "d0033e0b",
-    "posted": "DfOiZmagl3y",
-    "head": "잔나비(@bandjannabi)의 첫 아시아 투어는 타이베이 무대 앞 짧은 구호로 시작됐습",
-    "url": "https://www.instagram.com/reel/DfOiZmagl3y/",
-    "mult": null
-   },
    {
     "day": "2026-11-02",
     "lane": "시리즈",
@@ -2426,6 +2404,19 @@
    {
     "day": "2026-11-03",
     "lane": "정보",
+    "who": "루시갱",
+    "repack": false,
+    "grade": "A",
+    "corner": "song",
+    "key": "88255a7a",
+    "posted": "DfSKBp7PSmZ",
+    "head": "137번째 오늘의 노래 | 2026.11.03",
+    "url": "https://www.instagram.com/reel/DfSKBp7PSmZ/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-03",
+    "lane": "정보",
     "who": "Lil Tecca",
     "repack": false,
     "grade": "A",
@@ -2434,6 +2425,45 @@
     "posted": "DfRuHWjFNZu",
     "head": "릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 것으로 알려졌습니다",
     "url": "https://www.instagram.com/p/DfRuHWjFNZu/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-04",
+    "lane": "정보",
+    "who": "제프 버넷",
+    "repack": false,
+    "grade": "A",
+    "corner": "tickets",
+    "key": "01543a7f",
+    "posted": "DfToE-QCkFh",
+    "head": "제프 버넷이 내년 2월, 3년 만에 한국을 찾습니다.",
+    "url": "https://www.instagram.com/p/DfToE-QCkFh/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-04",
+    "lane": "정보",
+    "who": "뉴진스",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "d2737e76",
+    "posted": "DfTmHntGT0W",
+    "head": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) ",
+    "url": "https://www.instagram.com/p/DfTmHntGT0W/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-04",
+    "lane": "정보",
+    "who": "A2O LITE",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "8ebc576d",
+    "posted": "DfTrxyUDe-6",
+    "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습",
+    "url": "https://www.instagram.com/p/DfTrxyUDe-6/",
     "mult": null
    }
   ]
