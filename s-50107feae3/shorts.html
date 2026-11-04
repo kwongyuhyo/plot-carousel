@@ -1764,6 +1764,8 @@ function blank() {
            lyr: '',
            // [자막] 11/4 규효 "기본적으로 모든 숏폼에는 자막" — 기본 켬. 노래는 가사, 말은 말자막. 끄면 양식에 '자막: 없음'
            subs: true, subsV: 2, subsPend: '',
+           // [점프컷] 11/4 인터뷰처럼 말하는 장면 — 말 사이 쉬는 틈을 맥이 잘라 붙인다 (말자막 편에서만 · generators/jump_cut)
+           jump: false,
            // [이어붙이기] 'URL 0:03-0:07 | URL' — 첫 원본 뒤에 붙일 사진·영상 · 전환 '디졸브 0.5' / '블랙 0.5' / '컷'
            joins: '', trans: '디졸브 0.5',
            // [글자시간] 1~3줄이 나오는 때 '0:02-0:08' · '0:02-끝' · '' = 기본(처음 6초) — 타임라인 화면에서 정한다
@@ -1784,7 +1786,7 @@ const DRAFT = 'plot.shorts.draft';
 const KEEP = ['cat', 'custom', 'url', 'send', 'start', 'end',
               'title', 'artist', 'feat', 'hook', 'source', 'song', 'crop', 'lb', 'check',
               'story', 'storyClip', 'storyCredit', 'storyCrop', 'storyZoom', 'lyr', 'joins', 'trans', 'metaTime',
-              'frames', 'cta', 'storyBed', 'subs', 'done', 'subsRef', 'caption', 'subsV', 'subsPend'];
+              'frames', 'cta', 'storyBed', 'subs', 'done', 'subsRef', 'caption', 'subsV', 'subsPend', 'jump'];
 
 function hasContent(b) {
   return !!(b.url.trim() || b.title.trim() || b.artist.trim() ||
@@ -1914,7 +1916,7 @@ function fromSlim(list) {
     const b = blank();
     KEEP.forEach(k => {
       if (o[k] === undefined || o[k] === null) return;
-      b[k] = (k === 'send' || k === 'check' || k === 'subs') ? !!o[k]
+      b[k] = (k === 'send' || k === 'check' || k === 'subs' || k === 'jump') ? !!o[k]
            : (k === 'storyBed') ? !(o[k] === false || o[k] === 'false')
            : (k === 'crop') ? cropOf(o[k])
            : (k === 'done' || k === 'subsRef') ? (typeof o[k] === 'object' ? o[k] : null)
@@ -2227,6 +2229,7 @@ function parseForm(text) {
     { const sv = (kv['자막'] || '').trim(), m = /^받음\s+(st:[0-9]{10,16}-[0-9a-z]{1,8})$/.exec(sv);
       b.subs = !sv || ['없음', '끔', 'off', 'no', 'x', '0'].indexOf(sv.toLowerCase()) < 0;
       b.subsPend = m ? m[1] : ''; b.subsV = 2; }
+    b.jump = ['켬', 'on', '예', '자동', '1', 'yes', 'y'].indexOf((kv['점프컷'] || '').trim().toLowerCase()) >= 0;
     b.joins = (kv['이어붙이기'] || '').trim();
     if ((kv['전환'] || '').trim()) b.trans = kv['전환'].trim();
     b.metaTime = (kv['글자시간'] || '').trim();
@@ -2417,6 +2420,7 @@ function blockText(b) {
     // [가사] 정했을 때만 — 안 적으면 봇은 지금까지처럼 가사 없이 만든다.
     ...((b.lyr || '').trim() ? ['가사: ' + b.lyr.trim()] : []),
     '자막: ' + (b.subs ? subsSpec(b) : '없음'),
+    ...(b.jump && b.subs ? ['점프컷: 켬'] : []),
     ...(joinList(b).length ? ['이어붙이기: ' + (b.joins || '').trim(), '전환: ' + (b.trans || '디졸브 0.5').trim()] : []),
     ...((b.metaTime || '').trim() ? ['글자시간: ' + b.metaTime.trim()] : []),
     ...((b.storyClip || '').trim() && b.storyBed === false ? ['서사배경음: 끔'] : []),
@@ -2489,6 +2493,12 @@ function buildBlock(b) {
       <input type="checkbox" data-f="subs">
       <span>자막 넣기 (기본 켬)
         <small>모든 숏폼에 자막을 넣습니다 — 노래는 가사, 말하는 장면은 말자막. 「▶ 구간 재생」 화면의 「💬 자막 가져오기」로 먼저 보고 고칠 수 있어요. 끄면 자막 없이 만듭니다.</small>
+      </span>
+    </div>
+    <div class="srcToggle" data-r="jumpToggle">
+      <input type="checkbox" data-f="jump">
+      <span>✂ 점프컷 (말 사이 쉬는 틈 자르기)
+        <small>인터뷰·토크처럼 말하는 장면에서 켜세요. 맥이 완성본을 만들 때 조용한 틈을 잘라 붙이고 자막 시간도 같이 당깁니다. 미리보기는 원본 그대로 보여요. 노래 구간엔 쓰지 마세요.</small>
       </span>
     </div>
     <label data-r="titleLbl">제목 <span class="opt">— 영상 위 큰 글씨 · 두 줄이 기본 (줄마다 15자 안팎) · 엔터로 줄을 나눕니다 · 세 줄까지</span></label>
@@ -6438,7 +6448,8 @@ function prBuild() {
   <div class="fxR"><span class="fxL">레터박스</span><select data-x="lbMode"><option value="">자동 (검은 띠 찾기)</option><option value="끄기">안 자름</option><option value="n">직접 %</option></select><input type="text" data-x="lbN" class="fxS" placeholder="12" inputmode="numeric"></div>
 </div>
 <div class="fxG"><div class="fxH">말자막</div>
-  <div class="fxR"><span class="fxL">자동</span><label class="fxChk"><input type="checkbox" data-x="subs"> 사람이 말하는 장면이면 켜기</label></div>
+  <div class="fxR"><span class="fxL">자막</span><label class="fxChk"><input type="checkbox" data-x="subs"> 넣기 (기본 켬 · 노래는 가사)</label></div>
+  <div class="fxR"><span class="fxL">점프컷</span><label class="fxChk" title="완성본을 만들 때 맥이 말 사이 조용한 틈을 잘라 붙입니다 — 미리보기는 원본 그대로"><input type="checkbox" data-x="jump"> ✂ 말 사이 쉬는 틈 자르기 (인터뷰)</label></div>
   <div class="fxRb"><span class="fxL"></span><button type="button" data-fa="subsGet" data-v="subsBtn">💬 자막 가져오기</button><button type="button" data-fa="toText">텍스트 패널 ▸</button></div>
   <div class="fxHint" data-v="subsNote"></div>
 </div>
@@ -7073,6 +7084,7 @@ function prFxInput(t, changed) {
     ppFit(); prSrcFit(); refresh(); return;
   }
   if (k === 'subs') { b.subs = t.checked; refresh(); return; }
+  if (k === 'jump') { b.jump = t.checked; if (b.jump) toast('✂ 점프컷 — 완성본을 만들 때 맥이 말 사이 쉬는 틈을 자릅니다 (미리보기는 원본 그대로)'); refresh(); return; }
   if (t.type === 'checkbox') return;
   b[k] = t.value;
   refresh();
@@ -7112,7 +7124,7 @@ function prFxSync() {
   if (!(lm && lm.value === 'n' && !lb)) set('lbMode', lb && lb !== '끄기' ? 'n' : lb);
   set('lbN', lb && lb !== '끄기' ? lb : '');
   const ln = fx.querySelector('[data-x=lbN]'); if (ln) ln.hidden = !(lb && lb !== '끄기') && fx.querySelector('[data-x=lbMode]').value !== 'n';
-  set('subs', b.subs);
+  set('subs', b.subs); set('jump', b.jump);
   const len = Math.max(0.1, (e != null && a != null && e > a) ? e - a : (PP.e - PP.a));
   const mw = ppMetaWin(b, len);
   txt('meta', fmtStamp(mw[0]) + ' – ' + (mw[1] >= len - 0.05 ? '끝' : fmtStamp(mw[1])) + ((b.metaTime || '').trim() ? '' : ' (기본)') + ' · T1 트랙에서 끌기');
@@ -7507,9 +7519,9 @@ function mfInput(ev) {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 16:48';
+    a.title = '판 11.04 16:59';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 16:48';
+    ver.textContent = '11.04 16:59';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
