@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04 15:05 KST",
+ "generated_at": "2026-11-04 19:05 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,36 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-03 22:05 KST"
+  "daily": "2026-11-04 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-04T14:54:58+09:00",
+  "fetched_at": "2026-11-04T18:32:09+09:00",
   "posts": [
+   {
+    "t": "2026-11-04T17:48+09:00",
+    "type": "VIDEO",
+    "head": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@s"
+   },
+   {
+    "t": "2026-11-04T17:40+09:00",
+    "type": "VIDEO",
+    "head": "리센느(@rescene_official) 다섯 멤버가 디즈니 애니메이션 "
+   },
+   {
+    "t": "2026-11-04T17:35+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "뉴진스(@newjeans_official) 다섯 멤버가 함께 출원한 'N"
+   },
+   {
+    "t": "2026-11-04T16:22+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "봉제인간의 신곡 '아등바등'은 공연장에서 먼저 불린 노래입니다."
+   },
+   {
+    "t": "2026-11-04T16:13+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "리센느(@rescene_official)의 'With'가 디즈니 애니메이"
+   },
    {
     "t": "2026-11-04T14:16+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2225,10 +2250,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 321,
-  "posted": 90,
-  "posts": 109,
-  "rate": 0.28,
+  "drafts": 327,
+  "posted": 94,
+  "posts": 114,
+  "rate": 0.29,
   "adopted_mult": 0.96,
   "own_mult": 1.18,
   "lanes": {
@@ -2238,17 +2263,17 @@
     "mult": null
    },
    "재미": {
-    "drafts": 32,
+    "drafts": 33,
     "posted": 2,
     "mult": 1.52
    },
    "정보": {
-    "drafts": 207,
-    "posted": 75,
+    "drafts": 212,
+    "posted": 79,
     "mult": 0.98
    },
    "클립": {
-    "drafts": 45,
+    "drafts": 46,
     "posted": 6,
     "mult": 0.86
    },
@@ -2268,7 +2293,7 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 23,
+    "drafts": 22,
     "posted": 4,
     "mult": 0.8
    },
@@ -2285,12 +2310,12 @@
   },
   "corners": {
    "news": {
-    "drafts": 171,
-    "posted": 61,
+    "drafts": 174,
+    "posted": 65,
     "mult": 0.96
    },
    "mal": {
-    "drafts": 45,
+    "drafts": 46,
     "posted": 5,
     "mult": 0.86
    },
@@ -2320,7 +2345,7 @@
     "mult": null
    },
    "newalbums": {
-    "drafts": 5,
+    "drafts": 6,
     "posted": 1,
     "mult": 1.32
    },
@@ -2335,7 +2360,7 @@
     "mult": 0.95
    },
    "meet": {
-    "drafts": 9,
+    "drafts": 10,
     "posted": 2,
     "mult": 1.0
    },
@@ -2363,55 +2388,29 @@
   ],
   "recent": [
    {
-    "day": "2026-11-02",
-    "lane": "시리즈",
-    "who": "10CM",
-    "repack": false,
-    "grade": "A",
-    "corner": "song",
-    "key": "267b43ce",
-    "posted": "DfO5JK5PFGN",
-    "head": "136번째 오늘의 노래 | 2026.11.02",
-    "url": "https://www.instagram.com/reel/DfO5JK5PFGN/",
-    "mult": null
-   },
-   {
-    "day": "2026-11-02",
-    "lane": "정보",
-    "who": "모노사파",
-    "repack": false,
-    "grade": "A",
-    "corner": "tickets",
-    "key": "f03b364d",
-    "posted": "DfPJ8DJgjLh",
-    "head": "모노사파의 첫 큐레이션 공연 라인업에는 모노사파가 두 번 적혀 있습니다.",
-    "url": "https://www.instagram.com/p/DfPJ8DJgjLh/",
-    "mult": null
-   },
-   {
     "day": "2026-11-03",
     "lane": "정보",
-    "who": "마이 케미컬 로맨스",
+    "who": "리센느",
     "repack": false,
     "grade": "A",
     "corner": "news",
-    "key": "7a42ccc0",
-    "posted": "DfRZ1jJFH1R",
-    "head": "마이 케미컬 로맨스(@mychemicalromance)가 처음으로 영국 앨범 차트 1위에 ",
-    "url": "https://www.instagram.com/p/DfRZ1jJFH1R/",
+    "key": "c4169817",
+    "posted": "DfUDKdFghoH",
+    "head": "리센느(@rescene_official) 다섯 멤버가 디즈니 애니메이션 〈헥스: 마녀왕국〉",
+    "url": "https://www.instagram.com/reel/DfUDKdFghoH/",
     "mult": null
    },
    {
     "day": "2026-11-03",
     "lane": "정보",
-    "who": "루시갱",
+    "who": "리센느",
     "repack": false,
     "grade": "A",
-    "corner": "song",
-    "key": "88255a7a",
-    "posted": "DfSKBp7PSmZ",
-    "head": "137번째 오늘의 노래 | 2026.11.03",
-    "url": "https://www.instagram.com/reel/DfSKBp7PSmZ/",
+    "corner": "news",
+    "key": "cae585cc",
+    "posted": "DfT5JkVlDW1",
+    "head": "리센느(@rescene_official)의 'With'가 디즈니 애니메이션 〈헥스: 마녀왕",
+    "url": "https://www.instagram.com/p/DfT5JkVlDW1/",
     "mult": null
    },
    {
@@ -2448,9 +2447,9 @@
     "grade": "A",
     "corner": "news",
     "key": "d2737e76",
-    "posted": "DfTmHntGT0W",
+    "posted": "DfUECNDlU-K",
     "head": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) ",
-    "url": "https://www.instagram.com/p/DfTmHntGT0W/",
+    "url": "https://www.instagram.com/reel/DfUECNDlU-K/",
     "mult": null
    },
    {
@@ -2464,6 +2463,32 @@
     "posted": "DfTrxyUDe-6",
     "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습",
     "url": "https://www.instagram.com/p/DfTrxyUDe-6/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-04",
+    "lane": "정보",
+    "who": "봉제인간",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "f3015181",
+    "posted": "DfT6ScTDsKU",
+    "head": "봉제인간의 신곡 '아등바등'은 공연장에서 먼저 불린 노래입니다.",
+    "url": "https://www.instagram.com/p/DfT6ScTDsKU/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-04",
+    "lane": "정보",
+    "who": "뉴진스",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "9494c3fa",
+    "posted": "DfUCjBNlHV2",
+    "head": "뉴진스(@newjeans_official) 다섯 멤버가 함께 출원한 'NJZ' 상표 54건",
+    "url": "https://www.instagram.com/p/DfUCjBNlHV2/",
     "mult": null
    }
   ]
