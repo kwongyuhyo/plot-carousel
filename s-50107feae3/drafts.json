@@ -1118,6 +1118,214 @@
    },
    "corner_name": "이번 주 티켓 오픈",
    "corner_no": 6
+  },
+  {
+   "source": {
+    "id": "claude:brk-67c9d204",
+    "account": "@갈등·반응",
+    "url": "https://sports.khan.co.kr/article/202611041040003?pt=nv",
+    "image": null,
+    "head": "법정에 선 뮤직비디오의 곡 'ETA', 활동이 멈춘 사이 스포티파이 5억 회",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-04T11:39+09:00",
+   "key": "d2737e76",
+   "by": "claude",
+   "subjects": [
+    "뉴진스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "항소심에서 10억 배상이 유지된 그 뮤직비디오의 곡 'ETA'가 스포티파이 5억 회를 넘었다",
+    "why": "10/29 항소심 판결 직후 같은 곡의 5억 회 소식이 겹쳐 오늘 기사가 몰림"
+   },
+   "added": "claude",
+   "added_at": "2026-11-04T11:39+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) 누적 재생 5억 회를 넘었습니다.\n\n2023년 7월 두 번째 EP [Get Up]의 트리플 타이틀곡 중 하나로 나온 곡인데요, 신우석(@ernesto822) 감독이 아이폰으로만 찍은 뮤직비디오로도 기억되는 곡입니다. 그 뮤직비디오의 감독판 공개를 두고 어도어가 돌고래유괴단을 상대로 낸 소송은 지난달 29일 항소심에서도 10억 원 배상 판결이 유지됐습니다.\n\n뮤직비디오가 법정에 서 있는 사이, 노래는 팀 활동이 멈춘 동안에도 계속 재생되고 있었던 셈입니다.\n\n스포티파이 집계로 11월 2일 기준 약 5억 8만 회, 뉴진스의 5억 회 곡으로는 일곱 번째입니다.\n\n#PLOT #뉴진스 #ETA #GetUp #스포티파이 #돌고래유괴단\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793759971/svuhmpo7rm98cygeuinp.jpg\n제목: 뉴진스 'ETA',|스포티파이 5억 회\n부제: 통산 일곱 번째 5억 회 곡\n출처: @newjeans_official\n",
+    "caption": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) 누적 재생 5억 회를 넘었습니다.\n\n2023년 7월 두 번째 EP [Get Up]의 트리플 타이틀곡 중 하나로 나온 곡인데요, 신우석(@ernesto822) 감독이 아이폰으로만 찍은 뮤직비디오로도 기억되는 곡입니다. 그 뮤직비디오의 감독판 공개를 두고 어도어가 돌고래유괴단을 상대로 낸 소송은 지난달 29일 항소심에서도 10억 원 배상 판결이 유지됐습니다.\n\n뮤직비디오가 법정에 서 있는 사이, 노래는 팀 활동이 멈춘 동안에도 계속 재생되고 있었던 셈입니다.\n\n스포티파이 집계로 11월 2일 기준 약 5억 8만 회, 뉴진스의 5억 회 곡으로는 일곱 번째입니다.\n\n#PLOT #뉴진스 #ETA #GetUp #스포티파이 #돌고래유괴단",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759971/svuhmpo7rm98cygeuinp.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273515/tpvykqfqpk4ijszthcth.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759974/sa9mb8avkw1kvp27rxx2.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914397/fgrhp2pwvhlbsljrlxuc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759977/udzjq21bepdyeq2h8pos.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793374157/e9fr9on9urdlj6hkomlz.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759980/fffww50cpgkik1b8migj.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793227205/hbeqacvgsgtirll4qeui.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759971/svuhmpo7rm98cygeuinp.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273515/tpvykqfqpk4ijszthcth.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759974/sa9mb8avkw1kvp27rxx2.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914397/fgrhp2pwvhlbsljrlxuc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759977/udzjq21bepdyeq2h8pos.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793374157/e9fr9on9urdlj6hkomlz.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759980/fffww50cpgkik1b8migj.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793227205/hbeqacvgsgtirll4qeui.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "뉴진스 'ETA',|스포티파이 5억 회",
+      "sub": "통산 일곱 번째 5억 회 곡"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "뮤비는 법정에,|노래는 5억 회",
+      "sub": "뉴진스 'ETA'"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "신곡 없이도|'ETA' 5억 회 넘긴 뉴진스",
+      "sub": "스포티파이 누적 재생"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — HYBE LABELS (공식 MV · 1:25 후렴 'What's your ETA' 부터 30초)",
+     "배상은 뉴진스가 아니라 어도어가 받는 것 — 원 기사 제목('승소한 뉴진스')과 다르게 썼음"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 — '10억 배상' 승소한 뉴진스 'ETA', 스포티파이선 5억",
+      "link": "https://sports.khan.co.kr/article/202611041040003?pt=nv"
+     },
+     {
+      "title": "텐아시아 — 뉴진스, 신곡 없어도 기록은 계속…'ETA' 5억 스트리밍 돌파",
+      "link": "https://www.tenasia.co.kr/article/2026110447334"
+     },
+     {
+      "title": "마이데일리 — 뉴진스, 활동 중단 속 또 기록…'ETA' 5억 돌파·통산 7번째",
+      "link": "https://www.mydaily.co.kr/page/view/2026110409473683020"
+     },
+     {
+      "title": "경향신문 — 어도어·돌고래유괴단 항소심 (10/29)",
+      "link": "https://khan.co.kr/article/202610291518001"
+     },
+     {
+      "title": "HYBE LABELS — NewJeans 'ETA' Official MV",
+      "link": "https://www.youtube.com/watch?v=jOTfBlKSQYY"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759983/ntboxrhomt44znauonio.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759983/xueymga6jklyzhlcpzs7.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759986/zecir4exwdgueam7pcgx.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759986/dflax6uferkzqhhfyxdl.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759983/ntboxrhomt44znauonio.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-04T11:39+09:00",
+     "v": {
+      "A": "73fc02fa",
+      "B": "5e541d1b",
+      "C": "46c68b35"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=jOTfBlKSQYY\n구간: 1:25-1:55\n곡: 뉴진스 'ETA' 후렴\n아티스트: 스포티파이 5억 회 넘긴\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: 뉴진스 - ETA\n가사: 자동",
+    "caption": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) 누적 재생 5억 회를 넘었습니다.\n\n신우석(@ernesto822) 감독이 아이폰으로만 찍은 이 뮤직비디오는 감독판 공개를 두고 어도어와 돌고래유괴단의 소송으로 이어졌는데요, 지난달 29일 항소심에서도 10억 원 배상 판결이 유지됐습니다.\n\n그 사이 노래는 계속 재생되고 있었던 셈입니다. 스포티파이 집계로 11월 2일 기준 약 5억 8만 회, 뉴진스의 일곱 번째 5억 회 곡입니다.\n\n#PLOT #뉴진스 #ETA #GetUp #스포티파이",
+    "hooks": {
+     "A": "스포티파이 5억 회 넘긴 / 뉴진스 'ETA' 후렴",
+     "B": "법정에 선 그 뮤비, / 노래는 5억 회를 넘었다",
+     "C": "아이폰으로 찍은 / 그 여름의 'ETA'"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=jOTfBlKSQYY",
+     "credit": "HYBE LABELS",
+     "range": [
+      85.0,
+      115.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — HYBE LABELS (공식 MV · 1:25 후렴 'What's your ETA' 부터 30초)",
+     "배상은 뉴진스가 아니라 어도어가 받는 것 — 원 기사 제목('승소한 뉴진스')과 다르게 썼음"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 — '10억 배상' 승소한 뉴진스 'ETA', 스포티파이선 5억",
+      "link": "https://sports.khan.co.kr/article/202611041040003?pt=nv"
+     },
+     {
+      "title": "텐아시아 — 뉴진스, 신곡 없어도 기록은 계속…'ETA' 5억 스트리밍 돌파",
+      "link": "https://www.tenasia.co.kr/article/2026110447334"
+     },
+     {
+      "title": "마이데일리 — 뉴진스, 활동 중단 속 또 기록…'ETA' 5억 돌파·통산 7번째",
+      "link": "https://www.mydaily.co.kr/page/view/2026110409473683020"
+     },
+     {
+      "title": "경향신문 — 어도어·돌고래유괴단 항소심 (10/29)",
+      "link": "https://khan.co.kr/article/202610291518001"
+     },
+     {
+      "title": "HYBE LABELS — NewJeans 'ETA' Official MV",
+      "link": "https://www.youtube.com/watch?v=jOTfBlKSQYY"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/jOTfBlKSQYY/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793759989/zl74fn099ewgflyi88pd.jpg",
+     "key": "jOTfBlKSQYY@85.0"
+    },
+    "px": {
+     "vid": "jOTfBlKSQYY",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793760094/plot_studio/rknqsroisy4e5gy84dq3.mp4",
+     "off": 40.0,
+     "end": 160.0,
+     "full": 217.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-04T11:41+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1292,14 +1500,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T10:25+09:00"
+  "at": "2026-11-04T11:41+09:00"
  },
  "queue": {
-  "next": "2026-11-04T10:27+09:00",
+  "next": "2026-11-04T11:43+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-04T00:04+09:00"
@@ -1319,7 +1527,7 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.78,
+    "mult": 1.79,
     "median": 0.87,
     "n": 36
    },
