@@ -3900,7 +3900,7 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 3,
+   "corner_no": 5,
    "published": {
     "permalink": "https://www.instagram.com/p/DfUm3ptD-KN/",
     "at": "2026-11-04T22:53+09:00",
@@ -4326,13 +4326,131 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-b6d0a990",
+    "account": "@규효 공유 · @seoulvinyl",
+    "url": "https://www.instagram.com/p/DfT-scRE7lT/?img_index=3&obrf=MWNjMTAwMmpuMTg3NA==",
+    "image": null,
+    "head": "〈체인소 맨 레제편〉 음악이 LP로 — 우시오 켄스케가 '우리의 노래'라 부른 곡까지",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-05T04:32+09:00",
+   "key": "531ef163",
+   "by": "claude",
+   "subjects": [
+    "우시오 켄스케"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "레제편 LP — 음악을 만든 우시오 켄스케가 직접 말한 'in the pool'·'Reze' 이야기로",
+    "why": "규효 맡기기 · 레제편 OST LP 국내 예약 판매 시작 · 작곡가 인터뷰로 사람 각도"
+   },
+   "added": "claude",
+   "added_at": "2026-11-05T04:32+09:00",
+   "corner": "newalbums",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n극장판 〈체인소 맨 레제편〉의 음악이 LP로 국내 예약 판매를 시작했습니다.\n\n음악을 맡은 우시오 켄스케는 한 인터뷰에서 이번 영화에 풀 오케스트라를 폭넓게 쓰고 싶었다고 밝혔는데요, 레제의 테마 'Reze'에서는 활이 현에 닿을 듯 말 듯한 바이올린으로 금방이라도 사라질 것 같은 소리를 쌓았다고 합니다.\n\n그중 'in the pool'은 예고편보다 먼저 완성됐지만 너무 무겁다는 이유로 예고편에 쓰이지 않았고, 우시오와 요시하라 타츠야 감독은 이 곡을 '우리의 노래'라고 불렀습니다. 그 곡이 'Reze'와 함께 서른 곡짜리 한 장에 담깁니다.\n\nCloudy Purple 140g 한 장으로, 국내에서는 11월 4일부터 서울바이닐에서 예약 판매가 진행 중이며 12월 말 발매 이후 배송될 예정입니다.\n\n#PLOT #체인소맨 #레제편 #우시오켄스케 #요시하라타츠야 #바이닐\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793820782/xhof8ltyiiszv5pv61ek.jpg\n제목: 체인소 맨 레제편 음악,|LP로 나온다\n부제: 음악 우시오 켄스케 · 30곡\n출처: Milan Records\n",
+    "caption": "극장판 〈체인소 맨 레제편〉의 음악이 LP로 국내 예약 판매를 시작했습니다.\n\n음악을 맡은 우시오 켄스케는 한 인터뷰에서 이번 영화에 풀 오케스트라를 폭넓게 쓰고 싶었다고 밝혔는데요, 레제의 테마 'Reze'에서는 활이 현에 닿을 듯 말 듯한 바이올린으로 금방이라도 사라질 것 같은 소리를 쌓았다고 합니다.\n\n그중 'in the pool'은 예고편보다 먼저 완성됐지만 너무 무겁다는 이유로 예고편에 쓰이지 않았고, 우시오와 요시하라 타츠야 감독은 이 곡을 '우리의 노래'라고 불렀습니다. 그 곡이 'Reze'와 함께 서른 곡짜리 한 장에 담깁니다.\n\nCloudy Purple 140g 한 장으로, 국내에서는 11월 4일부터 서울바이닐에서 예약 판매가 진행 중이며 12월 말 발매 이후 배송될 예정입니다.\n\n#PLOT #체인소맨 #레제편 #우시오켄스케 #요시하라타츠야 #바이닐",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820782/xhof8ltyiiszv5pv61ek.jpg",
+      "credit": "Milan Records",
+      "from": "http://www.jbhifi.com.au/cdn/shop/files/894464-Product-0-I-639142324804901390_1024x1024.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820786/ocwee83rurfk7ft6kaqm.jpg",
+      "credit": "Milan Records",
+      "from": "https://cdn-p.smehost.net/sites/af0adc8ea1314bfb8328afdc06ce1e06/wp-content/uploads/2022/11/ComposerSpotlight_kensukeushio_1x1_Spotify-1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820782/xhof8ltyiiszv5pv61ek.jpg",
+      "credit": "Milan Records",
+      "from": "http://www.jbhifi.com.au/cdn/shop/files/894464-Product-0-I-639142324804901390_1024x1024.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820786/ocwee83rurfk7ft6kaqm.jpg",
+      "credit": "Milan Records",
+      "from": "https://cdn-p.smehost.net/sites/af0adc8ea1314bfb8328afdc06ce1e06/wp-content/uploads/2022/11/ComposerSpotlight_kensukeushio_1x1_Spotify-1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "체인소 맨 레제편 음악,|LP로 나온다",
+      "sub": "음악 우시오 켄스케 · 30곡"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "우시오 켄스케가 만든|레제편, LP로",
+      "sub": "Cloudy Purple 140g"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "'우리의 노래'라 부른|그 곡도 LP에",
+      "sub": "체인소 맨 레제편 OST"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사실은 원문과 맞음(인터뷰 발언·30곡·11/4 예약·12월 말 발매). 다만 실제로 뽑힌 표지 사진은 재킷이 아니라 Milan의 'COMPOSER SPOTLIGHT' 홍보 그래픽(우시오 흑백 사진)이라 위쪽에 잘린 영문 글씨와 'kensuke ushio' 라벨이 그대로 박혀 있고 소제목 바로 옆에 붙어 있음 — 「사진 바꾸기」에서 LP 재킷이나 깨끗한 인물 사진으로 바꾸는 게 나음",
+     "숏폼 없음 — 유튜브엔 사운드트랙 음원(정지 화면)과 비공식 업로드뿐이라 쓸 원본 영상이 없음",
+     "표지 사진은 8월에 나온 Grape Purple판 재킷 사진(Milan Records)이다. 이번 Cloudy Purple판은 판 색이 다를 수 있으니, 서울바이닐 게시물 사진과 비교해 보고 다르면 「사진 바꾸기」에서 Milan 소개 이미지로 바꿀 것"
+    ],
+    "research": [
+     {
+      "title": "jpc — Kensuke Ushio: Chainsaw Man The Movie: Reze Arc OST Summer's End (Cloudy Purple Vinyl)",
+      "link": "https://www.jpc.de/jpcng/poprock/detail/-/art/kensuke-ushio-chainsaw-man-the-movie-reze-arc-ost-summer-s-end/hnum/12699015"
+     },
+     {
+      "title": "Aftermath — Kensuke Ushio Chainsaw Man The Movie: Reze Arc score interview (2025-12-08)",
+      "link": "https://aftermath.site/kensuke-ushio-chainsaw-man-the-movie-reze-arc-score-soundtrack-interview/"
+     },
+     {
+      "title": "Rough Trade — Reze Arc Original Soundtrack (Summer's End)",
+      "link": "https://shop.roughtrade.com/products/chainsaw-man-the-movie-reze-arc-original-soundtrack-summers-end"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820792/gp4x6ull0v531nmab9sl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820792/g4zln8whrz2qjt2tu8gh.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820794/ccje7orxhmwlo7zxvbtd.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820794/qwpxkq1uy7fckrovkglo.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793820792/gp4x6ull0v531nmab9sl.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-05T04:33+09:00",
+     "v": {
+      "A": "109d6126",
+      "B": "84d5d65f",
+      "C": "b086d1ca"
+     }
+    }
+   },
+   "corner_name": "이번 주 나온 앨범",
+   "corner_no": 4
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
-  "days_left": 5,
-  "done": 25,
+  "days_left": 4,
+  "done": 28,
   "goal": 28,
   "corners": [
    {
@@ -4387,11 +4505,11 @@
     "key": "song",
     "name": "오늘의 노래",
     "weekly": 7,
-    "done": 2,
-    "left": 5,
+    "done": 4,
+    "left": 3,
     "need_today": 1,
     "day": null,
-    "next_no": 3,
+    "next_no": 5,
     "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
@@ -4401,7 +4519,7 @@
     "weekly": 6,
     "done": 1,
     "left": 5,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 6,
     "drafts": 3,
@@ -4476,7 +4594,7 @@
     "need_today": 0,
     "day": 4,
     "next_no": 3,
-    "drafts": 1,
+    "drafts": 2,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
    {
@@ -4495,7 +4613,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 15,
+    "done": 16,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -4504,22 +4622,22 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T22:53+09:00"
+  "at": "2026-11-05T04:32+09:00"
  },
  "queue": {
-  "next": "2026-11-04T23:23+09:00",
+  "next": "2026-11-05T08:00+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-04T22:23+09:00"
+  "last": "2026-11-04T22:53+09:00"
  },
  "slots": {
-  "basis": 309,
+  "basis": 312,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.09,
+    "mult": 2.16,
     "median": 1.27,
     "n": 58
    },
@@ -4527,16 +4645,16 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.78,
-    "median": 0.86,
-    "n": 37
+    "mult": 1.72,
+    "median": 0.8,
+    "n": 39
    },
    {
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.41,
-    "median": 0.95,
+    "mult": 1.44,
+    "median": 0.97,
     "n": 27
    }
   ],
@@ -4545,17 +4663,9 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.77,
-    "median": 0.99,
+    "mult": 1.87,
+    "median": 1.02,
     "n": 24
-   },
-   {
-    "from": 21,
-    "to": 24,
-    "at": "22:30",
-    "mult": 1.72,
-    "median": 0.91,
-    "n": 80
    },
    {
     "from": 0,
@@ -4564,6 +4674,14 @@
     "mult": 1.71,
     "median": 1.0,
     "n": 25
+   },
+   {
+    "from": 21,
+    "to": 24,
+    "at": "22:30",
+    "mult": 1.7,
+    "median": 0.9,
+    "n": 81
    }
   ]
  },
