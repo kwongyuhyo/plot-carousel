@@ -2155,6 +2155,206 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-bada809a",
+    "account": "@규효 공유 · @glowupmag",
+    "url": "https://www.instagram.com/p/DfTZtddgfYe/?img_index=3&obrf=ZjNod2hjNzI2Nnp3",
+    "image": null,
+    "head": "공연장에서 먼저 불린 노래 — 봉제인간 '아등바등'이 음원으로",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-04T16:11+09:00",
+   "key": "f3015181",
+   "by": "claude",
+   "subjects": [
+    "봉제인간"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "첫 단독 공연에서 가제로 먼저 불렀던 '아등바등'이 1년 8개월 만에 정식 싱글로",
+    "why": "규효 맡기기 · 혁오 임현제·장기하와 얼굴들 전일준·술탄 오브 더 디스코 지윤해의 밴드, 2024년 6월 이후 첫 신곡"
+   },
+   "added": "claude",
+   "added_at": "2026-11-04T16:11+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n봉제인간의 신곡 '아등바등'은 공연장에서 먼저 불린 노래입니다.\n\n지난해 3월 첫 단독 공연 '분노의 재봉틀'에서 봉제인간은 이 곡을 가제를 단 신곡으로 먼저 들려줬는데요, 그 노래가 1년 8개월 만에 같은 이름 그대로 4일 발매된 새 싱글 [아등바등 / 100]의 첫 곡이 됐습니다.\n\n혁오의 임현제, 장기하와 얼굴들의 전일준, 술탄 오브 더 디스코(@sultan_of_the_disco)의 지윤해가 모인 봉제인간에게는 2024년 6월 '너의 뒤 / 응이라고 말을 해줘' 이후 2년 4개월 만의 신곡입니다. 무대에서 먼저 자란 노래가 이제 음원으로 남게 됐습니다.\n\n#PLOT #봉제인간 #아등바등 #임현제 #전일준 #지윤해\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793776304/k2hshsd31ojimjbamrr1.jpg\n제목: 봉제인간, 무대에서 먼저|불렀던 신곡 정식 발매\n부제: 새 싱글 [아등바등 / 100]\n출처: MOrecords\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793776314/plot_studio/ilp1uoltyi0b46cmkg1c.mp4\n소제목: \n본문: \n출처: MOrecords\n",
+    "caption": "봉제인간의 신곡 '아등바등'은 공연장에서 먼저 불린 노래입니다.\n\n지난해 3월 첫 단독 공연 '분노의 재봉틀'에서 봉제인간은 이 곡을 가제를 단 신곡으로 먼저 들려줬는데요, 그 노래가 1년 8개월 만에 같은 이름 그대로 4일 발매된 새 싱글 [아등바등 / 100]의 첫 곡이 됐습니다.\n\n혁오의 임현제, 장기하와 얼굴들의 전일준, 술탄 오브 더 디스코(@sultan_of_the_disco)의 지윤해가 모인 봉제인간에게는 2024년 6월 '너의 뒤 / 응이라고 말을 해줘' 이후 2년 4개월 만의 신곡입니다. 무대에서 먼저 자란 노래가 이제 음원으로 남게 됐습니다.\n\n#PLOT #봉제인간 #아등바등 #임현제 #전일준 #지윤해",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776304/k2hshsd31ojimjbamrr1.jpg",
+      "credit": "MOrecords",
+      "from": "https://i.ytimg.com/vi/oHUv0B7mjLY/maxresdefault.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776307/xeschu6fpxxuhknstrky.jpg",
+      "credit": "MOrecords",
+      "from": "https://i.ytimg.com/vi/kE-7-LMk6LY/maxresdefault.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776304/k2hshsd31ojimjbamrr1.jpg",
+      "credit": "MOrecords",
+      "from": "https://i.ytimg.com/vi/oHUv0B7mjLY/maxresdefault.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776307/xeschu6fpxxuhknstrky.jpg",
+      "credit": "MOrecords",
+      "from": "https://i.ytimg.com/vi/kE-7-LMk6LY/maxresdefault.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "봉제인간, 무대에서 먼저|불렀던 신곡 정식 발매",
+      "sub": "새 싱글 [아등바등 / 100]"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "가제였던 그 노래,|봉제인간 '아등바등'",
+      "sub": "첫 단독 공연 이후 1년 8개월"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "봉제인간, 2년 4개월 만에|새 싱글 [아등바등 / 100]",
+      "sub": "임현제·전일준·지윤해"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — MOrecords (공식 오디오 · 화면이 정지 이미지일 수 있음, 0:45-1:15 '빠두빠' 구간 귀로 확인)",
+     "2024년 6월 이후 다른 발매가 없었는지(‘2년 4개월 만’) — 멜론 봉제인간 앨범 목록에서 한 번 확인"
+    ],
+    "research": [
+     {
+      "title": "[Official Audio] 봉제인간 - 아등바등 / 100 (MOrecords · Release 2026.11.4)",
+      "link": "https://www.youtube.com/watch?v=oHUv0B7mjLY"
+     },
+     {
+      "title": "[가사] 봉제인간 - 아등바등 (Release 2026.11.04)",
+      "link": "https://www.youtube.com/watch?v=LpNfFg6903Y"
+     },
+     {
+      "title": "250323 봉제인간 - 아등바등 (신곡, 가제) 첫 단독 콘서트 '분노의 재봉틀' 셋리스트",
+      "link": "https://www.youtube.com/watch?v=O-dSn8KBUcE"
+     },
+     {
+      "title": "250323 봉제인간 - 아등바등(미발매) | 분노의 재봉틀 @LG아트센터서울 U+스테이지",
+      "link": "https://www.youtube.com/watch?v=CBK3COJ55Og"
+     },
+     {
+      "title": "뉴시스 — 봉제인간, 8개월 만에 신곡 '너의 뒤·응이라고 말을 해줘' (2024.6.24)",
+      "link": "https://www.newsis.com/view/NISX20240624_0002784608"
+     },
+     {
+      "title": "위키백과 — 봉제인간",
+      "link": "https://ko.wikipedia.org/wiki/%EB%B4%89%EC%A0%9C%EC%9D%B8%EA%B0%84"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776320/qbmjh6msb7xkvf5gx3jd.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776323/ackijnzsvnw1lumap3gx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776320/cl5hus2n0m6t8eeeqnnu.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776325/ntkrn2dit0rqkkj5zg8k.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776325/hagi6ne5brnikoflq5wy.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776320/qbmjh6msb7xkvf5gx3jd.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-04T16:12+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793776320/plot_studio/dwd97noyqvk9mr0f7qeh.mp4"
+     },
+     "v": {
+      "A": "cea6f12e",
+      "B": "0d42c369",
+      "C": "6c87a7c2"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=oHUv0B7mjLY\n구간: 0:45-1:15\n곡: 먼저 불렀던 그 노래\n아티스트: 봉제인간이 공연장에서\n피처링:\n후킹: \n출처: MOrecords\n음원: 봉제인간 - 아등바등\n가사: 자동",
+    "caption": "봉제인간이 4일 새 싱글 [아등바등 / 100]을 발표했습니다.\n\n첫 곡 '아등바등'은 지난해 3월 첫 단독 공연 '분노의 재봉틀'에서 가제를 단 신곡으로 먼저 들려줬던 노래인데요, 1년 8개월 만에 같은 이름 그대로 음원이 됐습니다.\n\n혁오(@hyukohofficial)의 임현제, 장기하와 얼굴들의 전일준, 술탄 오브 더 디스코(@sultan_of_the_disco)의 지윤해가 2024년 6월 이후 2년 4개월 만에 내놓은 신곡입니다.\n\n#PLOT #봉제인간 #아등바등 #임현제 #혁오",
+    "hooks": {
+     "A": "봉제인간이 공연장에서 / 먼저 불렀던 그 노래",
+     "B": "가제였던 신곡이 / 1년 8개월 만에 음원으로",
+     "C": "혁오 임현제의 밴드가 / 아등바등 돌아왔다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=oHUv0B7mjLY",
+     "credit": "MOrecords",
+     "range": [
+      45.0,
+      75.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — MOrecords (공식 오디오 · 화면이 정지 이미지일 수 있음, 0:45-1:15 '빠두빠' 구간 귀로 확인)",
+     "2024년 6월 이후 다른 발매가 없었는지(‘2년 4개월 만’) — 멜론 봉제인간 앨범 목록에서 한 번 확인"
+    ],
+    "research": [
+     {
+      "title": "[Official Audio] 봉제인간 - 아등바등 / 100 (MOrecords · Release 2026.11.4)",
+      "link": "https://www.youtube.com/watch?v=oHUv0B7mjLY"
+     },
+     {
+      "title": "[가사] 봉제인간 - 아등바등 (Release 2026.11.04)",
+      "link": "https://www.youtube.com/watch?v=LpNfFg6903Y"
+     },
+     {
+      "title": "250323 봉제인간 - 아등바등 (신곡, 가제) 첫 단독 콘서트 '분노의 재봉틀' 셋리스트",
+      "link": "https://www.youtube.com/watch?v=O-dSn8KBUcE"
+     },
+     {
+      "title": "250323 봉제인간 - 아등바등(미발매) | 분노의 재봉틀 @LG아트센터서울 U+스테이지",
+      "link": "https://www.youtube.com/watch?v=CBK3COJ55Og"
+     },
+     {
+      "title": "뉴시스 — 봉제인간, 8개월 만에 신곡 '너의 뒤·응이라고 말을 해줘' (2024.6.24)",
+      "link": "https://www.newsis.com/view/NISX20240624_0002784608"
+     },
+     {
+      "title": "위키백과 — 봉제인간",
+      "link": "https://ko.wikipedia.org/wiki/%EB%B4%89%EC%A0%9C%EC%9D%B8%EA%B0%84"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/oHUv0B7mjLY/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793776328/fpodzyxay3fcijh62zpr.jpg",
+     "key": "oHUv0B7mjLY@45.0"
+    },
+    "px": {
+     "vid": "oHUv0B7mjLY",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793776336/plot_studio/w0klvfmybsggzfjdnwgj.mp4",
+     "off": 0.0,
+     "end": 120.0,
+     "full": 511.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-04T16:12+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2329,14 +2529,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T16:06+09:00"
+  "at": "2026-11-04T16:12+09:00"
  },
  "queue": {
-  "next": "2026-11-04T16:08+09:00",
+  "next": "2026-11-04T16:14+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-04T14:16+09:00"
