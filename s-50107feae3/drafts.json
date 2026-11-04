@@ -223,13 +223,14 @@
      }
     }
    },
-   "published": {
+   "corner_name": "듣는다면",
+   "corner_no": 1,
+   "unpublished": {
     "permalink": "https://www.instagram.com/p/DfUF4cqAc23/",
     "cover": "A",
-    "at": "2026-11-04T18:04+09:00"
-   },
-   "corner_name": "듣는다면",
-   "corner_no": 1
+    "at": "2026-11-04T18:04+09:00",
+    "reset": "2026-11-04T19:36+09:00"
+   }
   },
   {
    "source": {
@@ -3308,7 +3309,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T19:08+09:00"
+  "at": "2026-11-04T19:36+09:00"
  },
  "queue": {
   "next": "2026-11-04T19:53+09:00",
