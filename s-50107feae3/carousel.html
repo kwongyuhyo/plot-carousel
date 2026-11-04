@@ -863,6 +863,7 @@ function bodyShade(ctx, top) {
   }
 }
 const KICKER_SIZE = 26, KICKER_STEP = 44, ACCENT_W = 56, ACCENT_H = 5, ACCENT_STEP = 30;
+const COVER_KICKER_SIZE = 30, COVER_KICKER_Y = 886;
 const FEATURE_TAGS = ["feature", "spotlight", "special", "deep dive", "기획", "스포트라이트", "특집"];
 const F_PHOTO_H = 700, F_LABEL_Y = 736, F_RULE_Y = 780, F_TEXT_Y = 806, F_PHOTO_MIN = 520, F_HEAD_TOP = 106;
 /* **굵게** — card_news._bold_split / _line_flags 와 같게 */
@@ -1325,11 +1326,13 @@ function drawSource(ctx, source) {
 /* ── 슬라이드 ──────────────────────────────────────────────────────────── */
 function fillEmpty(ctx) { if (NOFILL) return; ctx.fillStyle = "rgb(20,20,20)"; ctx.fillRect(0, 0, W, H); }
 
-function slideCover(ctx, img, tag, title, subtitle, source, fit) {
+function slideCover(ctx, img, tag, title, subtitle, source, fit, kicker) {
   if (img) drawPhoto(ctx, img, fit); else fillEmpty(ctx);
   bottomGradient(ctx, 0.42);
   pasteLogo(ctx); applyTag(ctx, tag);
   const maxW = TEXT_MAX_X - 76;
+  if (kicker) drawTracked(ctx, 79, COVER_KICKER_Y + COVER_KICKER_SIZE, ellipsisTracked(kicker, "sb", COVER_KICKER_SIZE, maxW, 0),   // 11/4 머리말 (generators/card_news 와 같게)
+                          "sb", COVER_KICKER_SIZE, "rgb(228,228,228)", 0);
   const t = normBreaks(title);
   const SUB_GAP = 16;
   let subtitleY, titleBottom;
@@ -2007,7 +2010,7 @@ function paint(ctx, i, track) {
     // 영상 장: 큰 미리보기·글자 레이어는 사진 자리를 비워 뒤의 영상이 보이게, 작은 그림은 한 장면(있으면)으로
     const img = v ? ((track || OVERLAY) ? null : s._still) : s.el;
     NOFILL = !!(v && (track || OVERLAY));
-    if (i === 0) slideCover(ctx, img, tag, lit(s.title), s.subtitle, s.credit, s.fit);
+    if (i === 0) slideCover(ctx, img, tag, lit(s.title), s.subtitle, s.credit, s.fit, s.kicker);
     else if (s.style === "timeline") slideTimeline(ctx, v ? null : s.el, tag, s.speaker, s.heading, s.body, s.credit);
     else if (s.style === "song") slideSong(ctx, s.el, tag, s, s.num || String(deck.slides.slice(1, i + 1).filter((x) => x.style === "song").length).padStart(2, "0"));
     else slideBody(ctx, img, tag, lit(s.heading), lit(s.body), s.credit,
@@ -2736,7 +2739,7 @@ function parseDeckForm(text) {
     else {
       const kv = {};
       body.split("\n").forEach((l) => {
-        const m = /^\s*(소스|제목|부제|소제목|본문|출처|구간|형식|말한이|음원|번호)\s*[:：]\s*(.*)$/.exec(l);
+        const m = /^\s*(소스|제목|부제|소제목|본문|출처|구간|형식|말한이|음원|번호|머리말)\s*[:：]\s*(.*)$/.exec(l);
         if (m) kv[m[1]] = m[2];
       });
       const sl = name === "커버" ? blankCover() : blankBody();
@@ -2746,7 +2749,7 @@ function parseDeckForm(text) {
         sl.vid = { url: sl.srcUrl, s: g ? vSec(g[1]) || 0 : 0, e: g ? vSec(g[2]) : null, dur: null };
       }
       sl.credit = unlit(kv["출처"] || "");
-      if (name === "커버") { sl.title = unlit(kv["제목"] || ""); sl.subtitle = unlit(kv["부제"] || ""); }
+      if (name === "커버") { sl.title = unlit(kv["제목"] || ""); sl.subtitle = unlit(kv["부제"] || ""); sl.kicker = unlit(kv["머리말"] || ""); }
       else {
         sl.heading = unlit(kv["소제목"] || ""); sl.body = unlit(kv["본문"] || "");
         if (/^(정리|타임라인|timeline|자료)$/.test((kv["형식"] || "").trim())) { sl.style = "timeline"; sl.speaker = unlit(kv["말한이"] || ""); }
@@ -2820,7 +2823,7 @@ function buildForm() {
   L.push("[캡션]", deck.caption || "", "");
   const c = deck.slides[0];
   const span = (s) => { const v = vidOf(s); return v && (v.s > 0 || v.e != null) ? ["구간: " + vFmt(v.s) + "-" + (v.e != null ? vFmt(v.e) : vFmt((v.dur || v.s + 60)))] : []; };
-  L.push("[커버]", "소스: " + (vidOf(c) ? vidOf(c).url : c.srcUrl || ""), ...span(c), "제목: " + esc(c.title),
+  L.push("[커버]", "소스: " + (vidOf(c) ? vidOf(c).url : c.srcUrl || ""), ...span(c), ...(c.kicker ? ["머리말: " + oneline(c.kicker)] : []), "제목: " + esc(c.title),
          "부제: " + oneline(c.subtitle), "출처: " + oneline(c.credit), "");
   for (const s of deck.slides.slice(1)) {
     if (s.style === "song") {                          // 곡 장 (10/29) — 구간은 소리 구간
@@ -3990,9 +3993,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 19:46';
+    a.title = '판 11.04 19:49';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 19:46';
+    ver.textContent = '11.04 19:49';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
