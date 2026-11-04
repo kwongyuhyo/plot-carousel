@@ -419,13 +419,13 @@
      }
     }
    },
+   "corner_name": "입문 가이드",
+   "corner_no": 2,
    "pick": {
     "rank": 1,
-    "why": "이번 회차 목표 '인물해부' · '배우 홍시영'이라는 한 줄 정체성 · 어제(3일) 시사회 기사가 오늘 의외의 만남 칸에",
-    "at": "2026-11-04T10:11+09:00"
-   },
-   "corner_name": "입문 가이드",
-   "corner_no": 2
+    "why": "이번 회차 목표 '인물해부' · '배우 홍시영'이라는 한 줄 정체성 · 어제 시사회 기사가 의외의 만남 칸에",
+    "at": "2026-11-04T16:23+09:00"
+   }
   },
   {
    "source": {
@@ -568,7 +568,7 @@
     "confirm": [
      "'열꽃' 뜻풀이(열이 끝나 감을 알리는 반점)는 Baron News 한 곳 기준 — 흔한 뜻이지만 두 번째 출처는 못 찾음",
      "'투어 마지막 공연'은 타블로 인스타(10/30 'Last show of the tour') 기준 — 북미 구간 마지막인지 2026 투어 전체 마지막인지는 확인 못 해 '투어의 마지막 공연'으로만 씀",
-     "🎵 4장 곡 확인 필요 — '타블로 - Tomorrow': 같은 이름의 곡은 있는데 아티스트가 다릅니다"
+     "🎵 4장 소리 — '타블로 - Tomorrow': 공식 음원·채널이 없어 「TABLO」 업로드를 씁니다"
     ],
     "research": [
      {
@@ -614,35 +614,7 @@
      "v": {
       "A": "05ca8a81"
      }
-    },
-    "song_check": [
-     {
-      "i": 3,
-      "want": "타블로 - Tomorrow",
-      "why": "같은 이름의 곡은 있는데 아티스트가 다릅니다",
-      "cands": [
-       {
-        "artist": "TABLO",
-        "title": "Tomorrow (feat. 태양)",
-        "album": "열꽃, Part 2",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/020/27/806/2027806.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "3594993"
-       },
-       {
-        "artist": "투모로우바이투게더",
-        "title": "내일에서 기다릴게 (I'll See You There Tomorrow)",
-        "album": "minisode 3: TOMORROW",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/114/54/933/11454933_20240401112612.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "37374431"
-       }
-      ]
-     }
-    ]
-   },
-   "pick": {
-    "rank": 3,
-    "why": "오늘 고정 연재 · 15주년과 에픽하이 투어 마지막 공연이 같은 주 · 표지 한 장이 아니라 곡 장까지 있는 시리즈",
-    "at": "2026-11-04T10:11+09:00"
+    }
    },
    "corner_name": "그날의 앨범",
    "corner_no": 3
@@ -924,11 +896,6 @@
      ],
      "at": "2026-11-04T10:17+09:00"
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "숏폼 · '성 겹치면 입사 불가'라는 묘한 규칙 하나로 끝나는 재미 · 악뮤 기사 급상승 중",
-    "at": "2026-11-04T10:11+09:00"
    },
    "corner_name": "그 말",
    "corner_no": 7
@@ -2405,7 +2372,240 @@
      "at": "2026-11-04T16:13+09:00"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfT6ScTDsKU/",
+    "at": "2026-11-04T16:23+09:00",
+    "via": "manual"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:haon-ai-noah",
+    "account": "조이뉴스24 11/4",
+    "url": "https://www.joynews24.com/view/2022396",
+    "image": null,
+    "head": "AI 다큐 '나의 이방인', 김하온과 AI 랩 대결",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-04T16:23+09:00",
+   "key": "b3e27f4c",
+   "by": "claude",
+   "subjects": [
+    "김하온"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "김하온이 자신을 학습한 AI '노아'와 랩 대결 — 노아는 2018년 첫 EP [TRAVEL: NOAH]부터 김하온이 쓰던 이름",
+    "why": "SBS 창사 36주년 다큐 〈나의 이방인〉 3부 · 11/4 보도 · 김하온 기사 급상승 · 의외의 만남(사람×AI)"
+   },
+   "added": "claude",
+   "added_at": "2026-11-04T16:23+09:00",
+   "corner": "meet",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n김하온(@noahmik)이 자신을 학습한 AI와 같은 무대에서 맞붙습니다.\n\nSBS 창사 36주년 특집 다큐멘터리 〈나의 이방인〉 3부 'AI, 나를 닮은 너'에는 김하온의 목소리와 스타일을 배운 AI '노아(NOAH)'가 휴머노이드 로봇의 모습으로 등장하는데요, 노아는 7일 동안 김하온의 곁을 따라다니며 자신만의 랩을 만들어 가고, 동료 래퍼들의 블라인드 평가를 거쳐 마지막 날 관중 앞에서 김하온과 대결합니다.\n\n노아는 HAON을 거꾸로 쓴 이름입니다. 김하온은 2018년 첫 EP [TRAVEL: NOAH]에서 이미 '노아'와 함께 내면으로 떠나는 여행을 그렸고, 2024년 정규 1집의 이름도 [HAONOAH]였습니다. 앨범 속에 있던 노아가 이번엔 무대 맞은편에 서는 셈입니다.\n\n〈나의 이방인〉은 14일 밤 11시 15분 첫 방송됩니다.\n\n#PLOT #김하온 #HAON #나의이방인 #노아\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793777022/iucqvix6m0ztlziqz17y.jpg\n제목: 김하온, 자신을 배운|AI 노아와 랩 대결\n부제: SBS 〈나의 이방인〉 3부\n출처: ELLE\n",
+    "caption": "김하온(@noahmik)이 자신을 학습한 AI와 같은 무대에서 맞붙습니다.\n\nSBS 창사 36주년 특집 다큐멘터리 〈나의 이방인〉 3부 'AI, 나를 닮은 너'에는 김하온의 목소리와 스타일을 배운 AI '노아(NOAH)'가 휴머노이드 로봇의 모습으로 등장하는데요, 노아는 7일 동안 김하온의 곁을 따라다니며 자신만의 랩을 만들어 가고, 동료 래퍼들의 블라인드 평가를 거쳐 마지막 날 관중 앞에서 김하온과 대결합니다.\n\n노아는 HAON을 거꾸로 쓴 이름입니다. 김하온은 2018년 첫 EP [TRAVEL: NOAH]에서 이미 '노아'와 함께 내면으로 떠나는 여행을 그렸고, 2024년 정규 1집의 이름도 [HAONOAH]였습니다. 앨범 속에 있던 노아가 이번엔 무대 맞은편에 서는 셈입니다.\n\n〈나의 이방인〉은 14일 밤 11시 15분 첫 방송됩니다.\n\n#PLOT #김하온 #HAON #나의이방인 #노아",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793777022/iucqvix6m0ztlziqz17y.jpg",
+      "credit": "ELLE",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vepv2vrs/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_744s5ov7/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_152vj4z1/auto_pdb_김하온_화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793777022/iucqvix6m0ztlziqz17y.jpg",
+      "credit": "ELLE",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vepv2vrs/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_744s5ov7/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_152vj4z1/auto_pdb_김하온_화보_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "김하온, 자신을 배운|AI 노아와 랩 대결",
+      "sub": "SBS 〈나의 이방인〉 3부"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "선공개 보도라 김하온 발언·AI 가사는 인용하지 않음 · 3부 방송일은 확인 못 해 '14일 첫 방송'(1부)만 씀",
+     "'반항의 사념체 노아'는 텐아시아 2018 한 곳 기준 — 앨범 소개로만 씀"
+    ],
+    "research": [
+     {
+      "title": "조이뉴스24 11/4 — 3부 'AI, 나를 닮은 너' · 목소리와 스타일을 학습한 AI 도플갱어 '노아(NOAH)' · 휴머노이드 로봇 · 동료 래퍼 블라인드 평가 · 7일째 관중 앞 맞대결 · 14일 밤 11시 15분 첫 방송",
+      "link": "https://www.joynews24.com/view/2022396"
+     },
+     {
+      "title": "스타뉴스 11/4 — 노아는 HAON을 거꾸로 쓴 이름 · 7일 안에 뛰어넘겠다는 도전 · 결과는 기사에 없음",
+      "link": "https://www.starnewskorea.com/broadcast-show/2026/11/04/2026110410020462294"
+     },
+     {
+      "title": "텐아시아 2018/9/5 — 첫 EP 'TRAVEL: NOAH' 9월 5일 오후 6시 공개 · '반항의 사념체 노아(NOAH)'와 내면세계로 떠나는 여행",
+      "link": "https://www.tenasia.co.kr/article/2018090514164"
+     },
+     {
+      "title": "위키백과 — 정규 1집 [HAONOAH] 2024년 (나무위키 3/29)",
+      "link": "https://en.wikipedia.org/wiki/Haon_(rapper)"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793777025/tlr0bbzsyc3wpncmqorp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793777025/oaplla09wu0h5b7olrby.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793777025/tlr0bbzsyc3wpncmqorp.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-04T16:23+09:00",
+     "v": {
+      "A": "217e9594"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "사람과 AI가 만나는 의외의 장면 · '노아'가 2018년 첫 EP부터 김하온이 쓰던 이름이라는 연결고리 · 김하온 기사 급상승",
+    "at": "2026-11-04T16:23+09:00"
+   },
+   "corner_name": "만나는 법",
+   "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:chanhyuk-hajisu-swing",
+    "account": "엠뚜루마뚜루 : MBC 공식 종합 채널",
+    "url": "https://www.youtube.com/watch?v=iVAIMkCLIfM",
+    "image": null,
+    "head": "[전참시] 업무시간에 다같이 스윙댄스!?",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-04T16:23+09:00",
+   "key": "a605dd61",
+   "by": "claude",
+   "subjects": [
+    "이찬혁",
+    "하지수"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "열애설 하지수와 손잡고 스윙 — 업무 시간 운동회에서 이찬혁의 파트너 · 둘을 이은 건 뮤직비디오 두 편",
+    "why": "스포츠경향 11/4 · 〈전지적 참견 시점〉 10/31 · 열애설 결 · 방송 장면이라 숏폼만"
+   },
+   "added": "claude",
+   "added_at": "2026-11-04T16:23+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=iVAIMkCLIfM\n구간: 12:52-13:22\n곡: 손잡고 스윙 춘 이찬혁\n아티스트: 열애설 하지수와\n피처링:\n후킹: \n출처: 엠뚜루마뚜루 : MBC 공식 종합 채널\n자막: 자동",
+    "caption": "이찬혁(@leechanhyuk)이 하지수와 손을 잡고 스윙을 췄습니다.\n\n지난달 31일 방송된 MBC 〈전지적 참견 시점〉에서 이찬혁의 회사 '영감의 샘터'는 업무 시간에 다 같이 스윙 댄스를 배우는 날을 공개했는데요, '소문의 낙원' 뮤직비디오에 함께한 댄서·밴드 멤버들이 파트너를 바꿔 가며 춤추던 중 이찬혁의 파트너로 하지수가 섰습니다.\n\n두 사람은 2023년 이찬혁비디오의 첫 앨범 [우산] 타이틀곡 '춤' 뮤직비디오로 처음 만났고, 이후 열애설이 돌았습니다. 하지수는 올해 악뮤의 '소문의 낙원' 뮤직비디오에도 얼굴을 비쳤습니다. 양측은 열애설에 \"사생활이라 확인이 불가하다\"는 입장을 냈습니다.\n\n#PLOT #이찬혁 #하지수 #악뮤 #영감의샘터 #전지적참견시점",
+    "hooks": {
+     "A": "열애설 하지수와 / 손잡고 스윙 춘 이찬혁",
+     "B": "업무 시간 스윙, / 이찬혁의 파트너는",
+     "C": "이찬혁 회사 운동회에 / 하지수가 나타났다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=iVAIMkCLIfM",
+     "credit": "엠뚜루마뚜루 : MBC 공식 종합 채널",
+     "range": [
+      772.0,
+      802.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — 엠뚜루마뚜루 (MBC) · 30초 · 오전 악뮤 숏폼(엠빅뉴스)과 같은 회차지만 다른 영상",
+     "자동 자막으로 구간을 잡음 — 12:52~13:22 에 하지수가 실제로 화면에 나오는지 눈으로 확인"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 11/4 — 〈전참시〉 31일 · 업무 시간 스윙 · '소문의 낙원' MV 댄서·밴드와 파트너 바꿔 가며 · 하지수가 파트너, 손잡고 스윙 · 2023년 이찬혁비디오 [우산] '춤' MV로 인연 · 양측 \"사생활이라 확인이 불가하다\"",
+      "link": "https://sports.khan.co.kr/article/202611041545003"
+     },
+     {
+      "title": "헤럴드경제 — '이찬혁과 열애설' 하지수, 악뮤 신곡 MV 출연",
+      "link": "https://www.heraldk.com/article/2026040223324543643"
+     },
+     {
+      "title": "엠뚜루마뚜루 — 12:11~13:22 파트너 체인지 · \"오빠 손 잡아야지\" (자막 확인)",
+      "link": "https://www.youtube.com/watch?v=iVAIMkCLIfM"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/iVAIMkCLIfM/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793777032/qbx66tcex8mjnlt0whqd.jpg",
+     "key": "iVAIMkCLIfM@772.0"
+    },
+    "px": {
+     "vid": "iVAIMkCLIfM",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793777151/plot_studio/jz52oyzfu6gkpt6e6ozv.mp4",
+     "off": 727.0,
+     "end": 847.0,
+     "full": 1850.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-04T16:26+09:00"
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "숏폼 · 열애설 결(pH-1·레이 73배) · 오늘(4일) 기사로 다시 도는 장면 · 음악적 연결(MV 두 편)이 축",
+    "at": "2026-11-04T16:23+09:00"
+   },
+   "corner_name": "그 말",
+   "corner_no": 8
   }
  ],
  "skipped": [],
@@ -2436,7 +2636,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 3,
-    "drafts": 0,
+    "drafts": 1,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
    {
@@ -2484,7 +2684,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 6,
-    "drafts": 2,
+    "drafts": 3,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -2584,13 +2784,13 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T16:13+09:00"
+  "at": "2026-11-04T16:26+09:00"
  },
  "queue": {
-  "next": "2026-11-04T17:13+09:00",
+  "next": "2026-11-04T17:23+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-04T16:13+09:00"
+  "last": "2026-11-04T16:23+09:00"
  },
  "slots": {
   "basis": 298,
