@@ -2012,7 +2012,7 @@ function paint(ctx, i, track) {
     else if (s.style === "song") slideSong(ctx, s.el, tag, s, s.num || String(deck.slides.slice(1, i + 1).filter((x) => x.style === "song").length).padStart(2, "0"));
     else slideBody(ctx, img, tag, lit(s.heading), lit(s.body), s.credit,
                    headingSizeForDeck(), s.fit,
-                   bodyKicker(i + 1, lit(deck.slides[0] && deck.slides[0].title)), !v);
+                   bodyKicker(i, lit(deck.slides[0] && deck.slides[0].title)), !v);   // 11/4 표지 다음 첫 장이 01
     NOFILL = false;
   }
   TRACK = false;
@@ -3990,9 +3990,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 14:00';
+    a.title = '판 11.04 14:04';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 14:00';
+    ver.textContent = '11.04 14:04';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

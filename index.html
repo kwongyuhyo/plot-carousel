@@ -1924,7 +1924,7 @@ function paint(ctx, i, track) {
     else if (s.style === "song") slideSong(ctx, s.el, tag, s, s.num || String(deck.slides.slice(1, i + 1).filter((x) => x.style === "song").length).padStart(2, "0"));
     else slideBody(ctx, img, tag, lit(s.heading), lit(s.body), s.credit,
                    headingSizeForDeck(), s.fit,
-                   bodyKicker(i + 1, lit(deck.slides[0] && deck.slides[0].title)), !v);
+                   bodyKicker(i, lit(deck.slides[0] && deck.slides[0].title)), !v);   // 11/4 표지 다음 첫 장이 01
     NOFILL = false;
   }
   TRACK = false;
