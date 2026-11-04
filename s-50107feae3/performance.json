@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-04 19:05 KST",
+ "generated_at": "2026-11-04 22:04 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,41 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-04 15:05 KST"
+  "daily": "2026-11-04 19:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-04T18:32:09+09:00",
+  "fetched_at": "2026-11-04T21:51:13+09:00",
   "posts": [
+   {
+    "t": "2026-11-04T21:22+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "재지팩트의 노래에는 이십 대의 하루가 그대로 들어 있습니다."
+   },
+   {
+    "t": "2026-11-04T20:04+09:00",
+    "type": "VIDEO",
+    "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a"
+   },
+   {
+    "t": "2026-11-04T20:03+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원(@yanghongwon)이 4일 인스타그램 스토리에 육아에 관한 "
+   },
+   {
+    "t": "2026-11-04T19:57+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "랩비트가 내년 4월, 사흘로 돌아옵니다."
+   },
+   {
+    "t": "2026-11-04T19:45+09:00",
+    "type": "VIDEO",
+    "head": "기리보이(@giriboy91), 씨잼(@cjadoublem), 블랙넛(@"
+   },
+   {
+    "t": "2026-11-04T18:53+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "김하온(@noahmik)이 자신을 학습한 AI와 같은 무대에서 맞붙습니다"
+   },
    {
     "t": "2026-11-04T17:48+09:00",
     "type": "VIDEO",
@@ -2240,20 +2270,15 @@
     "t": "2026-10-17T07:59+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "인디고 새멤버는 YF 이정운"
-   },
-   {
-    "t": "2026-10-14T21:22+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "빅나티(본명 서동현)가 10월 14일 팬들과의 단체 메시지방에서 직접 결"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 327,
-  "posted": 94,
-  "posts": 114,
-  "rate": 0.29,
+  "drafts": 332,
+  "posted": 99,
+  "posts": 120,
+  "rate": 0.3,
   "adopted_mult": 0.96,
   "own_mult": 1.18,
   "lanes": {
@@ -2263,13 +2288,13 @@
     "mult": null
    },
    "재미": {
-    "drafts": 33,
-    "posted": 2,
+    "drafts": 32,
+    "posted": 3,
     "mult": 1.52
    },
    "정보": {
-    "drafts": 212,
-    "posted": 79,
+    "drafts": 217,
+    "posted": 83,
     "mult": 0.98
    },
    "클립": {
@@ -2293,7 +2318,7 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 22,
+    "drafts": 23,
     "posted": 4,
     "mult": 0.8
    },
@@ -2310,8 +2335,8 @@
   },
   "corners": {
    "news": {
-    "drafts": 174,
-    "posted": 65,
+    "drafts": 178,
+    "posted": 67,
     "mult": 0.96
    },
    "mal": {
@@ -2325,7 +2350,7 @@
     "mult": null
    },
    "song": {
-    "drafts": 11,
+    "drafts": 12,
     "posted": 2,
     "mult": null
    },
@@ -2346,7 +2371,7 @@
    },
    "newalbums": {
     "drafts": 6,
-    "posted": 1,
+    "posted": 2,
     "mult": 1.32
    },
    "anniv": {
@@ -2361,7 +2386,7 @@
    },
    "meet": {
     "drafts": 10,
-    "posted": 2,
+    "posted": 3,
     "mult": 1.0
    },
    "intro": {
@@ -2371,7 +2396,7 @@
    },
    "listen": {
     "drafts": 3,
-    "posted": 0,
+    "posted": 1,
     "mult": null
    }
   },
@@ -2388,42 +2413,16 @@
   ],
   "recent": [
    {
-    "day": "2026-11-03",
+    "day": "2026-11-04",
     "lane": "정보",
-    "who": "리센느",
+    "who": "재지팩트",
     "repack": false,
     "grade": "A",
-    "corner": "news",
-    "key": "c4169817",
-    "posted": "DfUDKdFghoH",
-    "head": "리센느(@rescene_official) 다섯 멤버가 디즈니 애니메이션 〈헥스: 마녀왕국〉",
-    "url": "https://www.instagram.com/reel/DfUDKdFghoH/",
-    "mult": null
-   },
-   {
-    "day": "2026-11-03",
-    "lane": "정보",
-    "who": "리센느",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "cae585cc",
-    "posted": "DfT5JkVlDW1",
-    "head": "리센느(@rescene_official)의 'With'가 디즈니 애니메이션 〈헥스: 마녀왕",
-    "url": "https://www.instagram.com/p/DfT5JkVlDW1/",
-    "mult": null
-   },
-   {
-    "day": "2026-11-03",
-    "lane": "정보",
-    "who": "Lil Tecca",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "c329aa51",
-    "posted": "DfRuHWjFNZu",
-    "head": "릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 것으로 알려졌습니다",
-    "url": "https://www.instagram.com/p/DfRuHWjFNZu/",
+    "corner": "listen",
+    "key": "566dc787",
+    "posted": "DfUckMEIXUp",
+    "head": "재지팩트의 노래에는 이십 대의 하루가 그대로 들어 있습니다.",
+    "url": "https://www.instagram.com/p/DfUckMEIXUp/",
     "mult": null
    },
    {
@@ -2460,9 +2459,9 @@
     "grade": "A",
     "corner": "news",
     "key": "8ebc576d",
-    "posted": "DfTrxyUDe-6",
+    "posted": "DfUTlHlEwYx",
     "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습",
-    "url": "https://www.instagram.com/p/DfTrxyUDe-6/",
+    "url": "https://www.instagram.com/reel/DfUTlHlEwYx/",
     "mult": null
    },
    {
@@ -2481,6 +2480,19 @@
    {
     "day": "2026-11-04",
     "lane": "정보",
+    "who": "김하온",
+    "repack": false,
+    "grade": "A",
+    "corner": "meet",
+    "key": "b3e27f4c",
+    "posted": "DfULg0RFNW-",
+    "head": "김하온(@noahmik)이 자신을 학습한 AI와 같은 무대에서 맞붙습니다.",
+    "url": "https://www.instagram.com/p/DfULg0RFNW-/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-04",
+    "lane": "정보",
     "who": "뉴진스",
     "repack": false,
     "grade": "A",
@@ -2489,6 +2501,19 @@
     "posted": "DfUCjBNlHV2",
     "head": "뉴진스(@newjeans_official) 다섯 멤버가 함께 출원한 'NJZ' 상표 54건",
     "url": "https://www.instagram.com/p/DfUCjBNlHV2/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-04",
+    "lane": "정보",
+    "who": "랩비트",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "c34f9aad",
+    "posted": "DfUSy9-FK37",
+    "head": "랩비트가 내년 4월, 사흘로 돌아옵니다.",
+    "url": "https://www.instagram.com/p/DfUSy9-FK37/",
     "mult": null
    }
   ]
