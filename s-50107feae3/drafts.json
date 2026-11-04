@@ -2528,7 +2528,7 @@
     "at": "2026-11-04T16:23+09:00"
    },
    "corner_name": "만나는 법",
-   "corner_no": 3,
+   "corner_no": 4,
    "published": {
     "permalink": "https://www.instagram.com/p/DfULg0RFNW-/",
     "cover": "A",
@@ -3131,13 +3131,143 @@
    },
    "corner_name": "이번 주 나온 앨범",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:ord-0de84d91",
+    "account": "@규효 공유 · @eyesmag",
+    "url": "https://www.instagram.com/p/DfUJIsGoLN5/?vrfl=MTd0bWZxN3A5bDNtYw==",
+    "image": null,
+    "head": "랩비트 2027, 내년 4월 사흘·3개 스테이지로 — 첫 티켓은 블라인드 VIP",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-04T19:38+09:00",
+   "key": "c34f9aad",
+   "by": "claude",
+   "subjects": [
+    "랩비트"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "올해 이틀이던 랩비트가 내년 4월 사흘·무대 세 곳으로 커진다 — 첫 티켓은 다시 블라인드",
+    "why": "규효 맡김 · eyesmag·fstvl.life 같은 날 공지 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-04T19:38+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n랩비트가 내년 4월, 사흘로 돌아옵니다.\n\n올해 6월 문화비축기지에서 이틀간 열린 랩비트는 라인업이 나오기도 전에 블라인드 티켓이 매진됐는데요, 2027년에는 하루가 늘어 사흘 동안 무대 세 곳이 함께 돌아갑니다. 국내 힙합 페스티벌로는 처음 시도하는 구성으로 알려졌습니다.\n\n이번에도 첫 티켓은 블라인드 VIP 티켓입니다. 얼리 입장과 전용 관람존, 전용 휴게 라운지가 포함되고, 카카오톡 선물하기에서만 판매합니다. 3일권은 이번 판매에서만 살 수 있습니다.\n\n장소와 라인업, 티켓 일정은 랩비트 공식 인스타그램에서 차례로 공개됩니다.\n\n#PLOT #랩비트 #RAPBEAT #힙합페스티벌 #블라인드티켓\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793788729/claufllekl2e3bvmdv1e.jpg\n제목: 랩비트, 내년 4월|사흘로 돌아온다\n부제: 3개 스테이지 · 첫 티켓은 블라인드 VIP\n출처: RAPBEAT\n",
+    "caption": "랩비트가 내년 4월, 사흘로 돌아옵니다.\n\n올해 6월 문화비축기지에서 이틀간 열린 랩비트는 라인업이 나오기도 전에 블라인드 티켓이 매진됐는데요, 2027년에는 하루가 늘어 사흘 동안 무대 세 곳이 함께 돌아갑니다. 국내 힙합 페스티벌로는 처음 시도하는 구성으로 알려졌습니다.\n\n이번에도 첫 티켓은 블라인드 VIP 티켓입니다. 얼리 입장과 전용 관람존, 전용 휴게 라운지가 포함되고, 카카오톡 선물하기에서만 판매합니다. 3일권은 이번 판매에서만 살 수 있습니다.\n\n장소와 라인업, 티켓 일정은 랩비트 공식 인스타그램에서 차례로 공개됩니다.\n\n#PLOT #랩비트 #RAPBEAT #힙합페스티벌 #블라인드티켓",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788729/claufllekl2e3bvmdv1e.jpg",
+      "credit": "RAPBEAT",
+      "from": "https://rapbeatfestival.com/uploaded/summernote/202411/cd95432a71a2c1bfb4907c1c23338ea1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788733/ubaii3ti3kthwso4xgyh.jpg",
+      "credit": "RAPBEAT",
+      "from": "https://rapbeatfestival.com/uploaded/summernote/202411/ef1989813e35c6243e1a5ea1ef63b865.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788737/tarphoaolwpnkjvhbyqy.jpg",
+      "credit": "RAPBEAT",
+      "from": "https://rapbeatfestival.com/uploaded/summernote/202411/28061fa6ec1f2b61c7ce7126093b75c2.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788729/claufllekl2e3bvmdv1e.jpg",
+      "credit": "RAPBEAT",
+      "from": "https://rapbeatfestival.com/uploaded/summernote/202411/cd95432a71a2c1bfb4907c1c23338ea1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788733/ubaii3ti3kthwso4xgyh.jpg",
+      "credit": "RAPBEAT",
+      "from": "https://rapbeatfestival.com/uploaded/summernote/202411/ef1989813e35c6243e1a5ea1ef63b865.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788737/tarphoaolwpnkjvhbyqy.jpg",
+      "credit": "RAPBEAT",
+      "from": "https://rapbeatfestival.com/uploaded/summernote/202411/28061fa6ec1f2b61c7ce7126093b75c2.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "랩비트, 내년 4월|사흘로 돌아온다",
+      "sub": "3개 스테이지 · 첫 티켓은 블라인드 VIP"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "이틀에서 사흘로|커지는 랩비트 2027",
+      "sub": "내년 4월 · 3개 스테이지"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "랩비트 2027,|3일권은 이번 한 번뿐",
+      "sub": "블라인드 VIP 티켓 · 카카오톡 선물하기"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "랩비트 공식 인스타(@rapbeatfestival) 원 공지로 '4월'·'사흘·3개 스테이지'·'국내 힙합 페스티벌 최초'·카카오톡 선물하기 판매 문구 대조 (기사는 아직 없음 — 매거진 두 곳 기준)",
+     "표지 사진: 랩비트 공식 홈페이지의 2024 현장 하이라이트 사진 — 2027 공식 키 비주얼이 나오면 바꿀지"
+    ],
+    "research": [
+     {
+      "title": "eyesmag 인스타그램 — 랩비트 2027 공지 (2026-11-04)",
+      "link": "https://www.instagram.com/p/DfUJIsGoLN5/"
+     },
+     {
+      "title": "fstvl.life 인스타그램 — RAPBEAT 2027 개최 공지 (2026-11-04)",
+      "link": "https://www.instagram.com/p/DfUFuvukm26/"
+     },
+     {
+      "title": "뉴스탭 — 10만 관객 신화 '랩비트', 6월 귀환…블라인드 티켓 매진 (2026-02-26)",
+      "link": "https://www.newstap.co.kr/news/articleView.html?idxno=322650"
+     },
+     {
+      "title": "네이트 연예 — 랩비트, 올해 6월 서울 개최 확정···블라인드 티켓 매진 (2026-02-26)",
+      "link": "https://news.nate.com/view/20260226n28334"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788741/juqbdinmsdlsjyna0rxm.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788741/w0t55wgyx5k7xsgoefme.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788745/kj0blebpsdff3d8tyebw.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788745/ghkt3i804egafkmg9qef.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793788741/juqbdinmsdlsjyna0rxm.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-04T19:39+09:00",
+     "v": {
+      "A": "8a586d9d",
+      "B": "a063b1a2",
+      "C": "489ea34f"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 5,
-  "done": 19,
+  "done": 20,
   "goal": 28,
   "corners": [
    {
@@ -3156,11 +3286,11 @@
     "key": "meet",
     "name": "만나는 법",
     "weekly": 0,
-    "done": 0,
+    "done": 1,
     "left": 0,
     "need_today": 0,
     "day": null,
-    "next_no": 3,
+    "next_no": 4,
     "drafts": 1,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
@@ -3305,11 +3435,11 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 6,
+    "drafts": 7,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T19:36+09:00"
+  "at": "2026-11-04T19:38+09:00"
  },
  "queue": {
   "next": "2026-11-04T19:53+09:00",
@@ -3318,15 +3448,15 @@
   "last": "2026-11-04T18:53+09:00"
  },
  "slots": {
-  "basis": 303,
+  "basis": 304,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.09,
+    "mult": 2.06,
     "median": 1.23,
-    "n": 55
+    "n": 56
    },
    {
     "from": 21,
@@ -3340,7 +3470,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.39,
+    "mult": 1.4,
     "median": 0.86,
     "n": 27
    }
