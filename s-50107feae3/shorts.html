@@ -2927,6 +2927,7 @@ function render() {
 /* ── 갱신: 헤더·배지·미리보기·요약·MainButton ──────────── */
 function refresh() {
   sync();
+  blocks.forEach((b) => { try { subsFollow(b); } catch (_) {} });
   const errs = blocks.map(check);
 
   blocks.forEach((b, i) => {
@@ -4951,7 +4952,8 @@ document.addEventListener('DOMContentLoaded', boot);
  *    그 자리에서 고친다. 양식에는 '자막: 받음 <id>' 로 실려 렌더가 다시 받아쓰지 않고 그대로 쓴다.
  */
 const PP = { i: -1, b: null, yt: null, ytReady: false, vid: null, a: 0, e: 0, mw: [0, 6], timer: null,
-             muted: true, paused: false, kind: '', mode: 'seg', subsBusy: false, editOpen: false };
+             muted: true, paused: false, kind: '', mode: 'seg', subsBusy: false, editOpen: false,
+             wantSound: true };   // 11/4 규효가 소리를 켜 두었는가 — 브라우저가 막아 꺼져도 이 뜻대로 되돌린다
 
 /* ── 광고 없는 사본 (10/30 규효 "숏폼 편집할 때 광고 없게") ─────────────────
  * 맥이 고른 구간 앞뒤를 낮은 화질 mp4 로 올려 둔다 (generators/proxy_clip). 미리보기는 유튜브 대신 그 파일을 튼다.
@@ -4970,7 +4972,7 @@ function pxFor(b) {
   const a = toSec(b.start), e = toSec(b.end);
   if (a == null || e == null || e <= a) return null;
   const m = pxAll(); let best = null;
-  Object.keys(m).forEach((k) => { const p = m[k]; if (p && p.vid === id && p.off <= a + 0.01 && e <= p.end + 0.01) best = p; });
+  Object.keys(m).forEach((k) => { const p = m[k]; if (p && !p.noa && p.vid === id && p.off <= a + 0.01 && e <= p.end + 0.01) best = p; });
   return best;
 }
 const PXQ = {};
@@ -5134,11 +5136,25 @@ function ppSetPaused(v) {
 function ppSetMuted(v) {
   PP.muted = v;
   $('#ppSound').textContent = v ? '🔇 소리 켜기' : '🔊 소리 끄기';
+  { const ps = document.getElementById('prSound'); if (ps) ps.textContent = v ? '🔇' : '🔊'; }
   try {
     if (PP.kind === 'yt' && PP.ytReady) v ? PP.yt.mute() : PP.yt.unMute();
     if ((PP.kind === 'file' || PP.kind === 'done' || PP.kind === 'px') && PP.vid) PP.vid.muted = v;
   } catch (_) {}
 }
+/* 11/4 규효 "구간을 바꾸니 소리가 안 나온다" — 편집 화면은 영상을 띄우자마자 멈춰 두는데(ppSetPaused), 그때 재생 약속이
+   '멈춤에 끊김'으로 실패한 것을 '소리 막힘'으로 읽고 소리를 껐다. 이제 진짜 막혔을 때(NotAllowedError)만 끄고,
+   껐더라도 규효가 소리를 켜 둔 상태면 다음에 아무 데나 누르는 순간 다시 켠다. */
+function ppUserMute(v) { PP.wantSound = !v; ppSetMuted(v); }
+function ppSoundBack(e) {
+  if (!PP.wantSound || !PP.muted || !$('#pp') || $('#pp').hidden) return;
+  const t = e && e.target;
+  if (t && t.closest && t.closest('#ppSound,#prSound')) return;            // 소리 버튼은 제 할 일을 한다
+  ppSetMuted(false);
+  if (PP.vid && !PP.paused) PP.vid.play().catch(() => {});
+}
+document.addEventListener('pointerdown', ppSoundBack, true);
+document.addEventListener('keydown', ppSoundBack, true);
 function ppFmt(x) { x = Math.max(0, x); return Math.floor(x / 60) + ':' + String(Math.floor(x % 60)).padStart(2, '0'); }
 function ppTick() {
   const len = Math.max(0.1, PP.e - PP.a);
@@ -5182,7 +5198,7 @@ function ppSubsPaint() {
   ed.hidden = !((stOk(b) && (can || (PP.mode === 'done' && ppSrcKind(b)))) || (can && !stOk(b)));
   if (PP.subsBusy) return;
   btn.disabled = false;
-  btn.textContent = subsOk(b) ? '💬 말자막 다시 받기'
+  btn.textContent = subsOk(b) ? '💬 자막 다시 받기'
                   : (b.subsRef && b.subsRef.id && !stOk(b)) ? '💬 구간이 바뀌어 다시 받기' : '💬 자막 가져오기';
   const box = $('#ppSubList'), show = PP.editOpen && PP.mode === 'seg' && stOk(b);
   box.hidden = !show;
@@ -5198,10 +5214,104 @@ function ppSubsList() {               // 10/24 — 목록 대신 타임라인. �
   if (!box.hidden && stOk(PP.b)) stBuild();
 }
 let ppSaveT = null;
-function ppSubsSave() {
+/* ── 11/4 규효 "구간을 바꾸면 받아 둔 가사가 안 나온다 — 빠르게 가져오거나 미리 만들어 둘 방안" ─────────────
+ * 맥은 자막을 받을 때 구간 앞뒤를 더 받아(노래는 lrclib 로 맞추면 곡 전체) 원본 영상 시각으로 sn.full 에 남긴다
+ * (bot/app_studio.do_subs · 초안 자막 준비는 앞뒤 30초). 구간을 옮기면 맥에 묻지 않고 여기서 잘라 쓴다.
+ * 고친 줄은 r.abs(원본 시각)에 접어 두었다가 다시 잘라 쓰니, 구간을 줄였다 늘려도 고친 것이 사라지지 않는다.
+ * 받아 둔 범위 밖으로 늘리면 그 부분만 맥에 부탁해 이어 붙인다 (subsWant). */
+function subsCutTo(list, a, e) {
+  const z = e == null ? Infinity : e, out = [];
+  (list || []).forEach((x) => {
+    const s0 = Math.max(Number(x.start), a), e0 = Math.min(Number(x.end), z);
+    if (e0 - s0 >= 0.3 && String(x.text || '').trim())
+      out.push(Object.assign({ start: stR(s0 - a), end: stR(e0 - a), text: String(x.text) }, x.chk ? { chk: true } : {}));
+  });
+  return out;
+}
+function subsAbsFold(r) {                            // 지금 줄(구간 시각) → r.abs(원본 시각)
+  const oA = toSec(r.start) || 0, oE = toSec(r.end), z = oE == null ? Infinity : oE;
+  const prev = r.abs || ((r.sn && r.sn.full) || []).filter((x) => x.end <= oA + 0.05 || x.start >= z - 0.05).map((x) => Object.assign({}, x));
+  const keep = prev.filter((x) => x.end <= oA + 0.05 || x.start >= z - 0.05);
+  const cur = (r.segs || []).map((s0) => {
+    const x = Object.assign({ start: stR(s0.start + oA), end: stR(s0.end + oA), text: s0.text }, s0.chk ? { chk: true } : {});
+    // 구간 가장자리에서 잘려 있던 줄은 원래 길이로 (같은 글의 원래 줄이 있으면)
+    if (s0.start <= 0.05 || (oE != null && s0.end >= (oE - oA) - 0.05)) {
+      const o = prev.concat((r.sn && r.sn.full) || []).find((y) => y.text === s0.text && y.start < x.end && y.end > x.start);
+      if (o) { x.start = Math.min(x.start, o.start); x.end = Math.max(x.end, o.end); }
+    }
+    return x;
+  });
+  r.abs = keep.concat(cur).sort((x, y) => x.start - y.start);
+}
+function subsCut(r, a, e) {                          // r.abs + sn.full(빈 자리만) → 새 구간의 줄
+  const segs = subsCutTo(r.abs || [], a, e);
+  const add = subsCutTo((r.sn && r.sn.full) || [], a, e)
+    .filter((c) => !segs.some((x) => c.start < x.end - 0.1 && c.end > x.start + 0.1));
+  return segs.concat(add).sort((x, y) => x.start - y.start);
+}
+function subsMove(b, ns, ne) {                       // 받아 둔 자막을 새 구간으로 (고친 것 보존)
+  const r = b && b.subsRef; if (!r || !Array.isArray(r.segs)) return false;
+  const a = toSec(ns), e = toSec(ne);
+  if (a == null) return false;
+  subsAbsFold(r);
+  r.segs = subsCut(r, a, e);
+  r.start = ns; r.end = ne; if (r.sn) { r.sn.start = ns; r.sn.end = ne; }
+  r.edited = true;
+  subsSaveRef(r);
+  subsWant(b);
+  return true;
+}
+function subsFollow(b) {                             // 양식·폰 화면에서 구간을 바꿨을 때 (refresh 마다 — 바뀐 편만)
+  const r = b && b.subsRef; if (!r || !r.id || !Array.isArray(r.segs) || b._subsMoving) return false;
+  const u = (b.url || '').trim(), st = (b.start || '').trim(), en = (b.end || '').trim();
+  if (r.url !== u || (r.start === st && r.end === en)) return false;
+  const a = toSec(st), e = toSec(en);
+  if (a == null || e == null || e <= a + 0.5) return false;   // 치는 중인 값
+  return subsMove(b, st, en);
+}
+const SUBS_ASK = {};
+function subsWant(b) {                               // 받아 둔 범위 밖 — 그 부분만 맥에
+  const r = b && b.subsRef;
+  if (!r || typeof plotStudio === 'undefined' || !plotStudio.on || !plotStudio.on()) return;
+  const a = toSec(r.start), e = toSec(r.end); if (a == null || e == null) return;
+  const sn = r.sn || {}, fa = sn.full ? Number(sn.full_a) || 0 : toSec(r.start), fb = sn.full ? Number(sn.full_b) : toSec(r.end);
+  const gaps = [];
+  if (fa == null || fb == null) return;
+  if (a < fa - 0.5) gaps.push([a, Math.min(e, fa)]);
+  if (e > fb + 0.5) gaps.push([Math.max(a, fb), e]);
+  gaps.filter((g) => g[1] - g[0] >= 1).forEach((g) => {
+    const k = r.id + '|' + g[0].toFixed(1) + '|' + g[1].toFixed(1); if (SUBS_ASK[k]) return; SUBS_ASK[k] = 1;
+    const cat = ((b.cat === '__custom__' ? b.custom : b.cat) || '').trim();
+    const want = { url: (b.url || '').trim(), start: fmtStamp(g[0]), end: fmtStamp(g[1]), artist: (b.artist || '').trim(), title: (b.title || '').trim(),
+                   hook: (b.hook || '').trim(), source: (b.source || '').trim(), category: cat, pad: 10, fill: r.id };
+    if ((b.song || '').indexOf(' - ') > 0) { want.song_artist = b.song.split(' - ')[0].trim(); want.song_title = b.song.split(' - ').slice(1).join(' - ').trim(); }
+    toast('💬 늘린 부분 자막을 맥에서 받는 중이에요 (그 부분만)');
+    plotStudio.send('subs', want, () => {}).then((got) => {
+      const g0 = toSec(want.start) || 0;
+      const more = got.full || (got.subs || []).map((x) => ({ start: stR(g0 + Number(x.start)), end: stR(g0 + Number(x.end)), text: String(x.text || '') }));
+      const s2 = r.sn || (r.sn = {});
+      const f = (s2.full || []).filter((x) => !more.some((y) => y.start < x.end - 0.1 && y.end > x.start + 0.1)).concat(more)
+        .sort((x, y) => x.start - y.start);
+      s2.full = f;
+      const ga = got.full ? Number(got.full_a) || 0 : g0, gb = got.full ? Number(got.full_b) : toSec(want.end);
+      s2.full_a = Math.min(Number(s2.full_a != null ? s2.full_a : fa), ga);
+      s2.full_b = Math.max(Number(s2.full_b != null ? s2.full_b : fb), gb);
+      if (b.subsRef !== r) return;
+      subsAbsFold(r);
+      r.segs = subsCut(r, toSec(r.start) || 0, toSec(r.end));
+      subsSaveRef(r);
+      refresh();
+      if (PP.b === b) { try { ppSubsList(); ppSubsPaint(); if (typeof stPaint === 'function') stPaint(); } catch (_) {} }
+      if (typeof prPaint === 'function' && window.PR && PR.on) { try { prPaint(); } catch (_) {} }
+      toast('💬 늘린 부분 자막 ' + more.length + '줄을 붙였어요');
+    }).catch((er) => { delete SUBS_ASK[k]; toast('늘린 부분 자막을 못 받았어요 — ' + String(er && er.message || er).slice(0, 60)); });
+  });
+}
+function ppSubsSave() { subsSaveRef(PP.b && PP.b.subsRef); }
+function subsSaveRef(r0) {
   clearTimeout(ppSaveT);
   ppSaveT = setTimeout(() => {
-    const r = PP.b && PP.b.subsRef; if (!r || !r.sn) return;
+    const r = r0; if (!r || !r.sn || !r.id) return;
     if (typeof draftNow === 'function') draftNow();
     const orig = r.orig ? { subs_orig: r.orig } : {};      // 10/27 처음 받은 자막 — 맥이 고친 것과 비교해 교정 사전을 만든다
     plotStudio.post({ id: r.id, kind: 'studio', snapshot: Object.assign({}, r.sn, orig, { subs: r.segs, edited: true, status: 'done' }) })
@@ -5235,6 +5345,7 @@ function ppSubsFetch() {
                  artist: (b.artist || '').trim(), title: (b.title || '').trim(), hook: (b.hook || '').trim(),
                  source: (b.source || '').trim(), category: cat };
   if ((b.song || '').indexOf(' - ') > 0) { want.song_artist = b.song.split(' - ')[0].trim(); want.song_title = b.song.split(' - ').slice(1).join(' - ').trim(); }
+  want.pad = 10;                                      // 11/4 앞뒤 10초 더 — 구간을 조금 옮겨도 바로 (노래는 lrclib 면 곡 전체)
   plotStudio.send('subs', want, (step, ms) => { btn.textContent = '💬 ' + step + ' · ' + Math.round(ms / 1000) + '초'; })
     .then((sn) => {
       const segs = (sn.subs || []).map(s => ({ start: Number(s.start), end: Number(s.end), text: String(s.text || ''), chk: !!s.chk }));
@@ -5284,6 +5395,7 @@ async function openPlay(i, mode) {
   const px = kind === 'yt' ? pxFor(b) : null;          // 10/30 광고 없는 사본이 있으면 그걸로
   if (px) kind = 'px';
   ppStop(true);
+  PP.muted = !PP.wantSound;                           // 유튜브도 규효가 켜 둔 소리대로 시작 (막히면 ppSoundBack)
   PP.px = px; PP.off = px ? Number(px.off) || 0 : 0;
   PP.i = i; PP.b = b; PP.kind = kind; PP.mode = mode; PP.paused = false;
   $('#pp').hidden = false;
@@ -5312,9 +5424,25 @@ async function openPlay(i, mode) {
     const v = el('video'); v.src = kind === 'done' ? b.done.url : kind === 'px' ? px.url : b.url; v.playsInline = true; v.preload = 'auto';
     v.setAttribute('playsinline', ''); box.prepend(v); PP.vid = v;
     // 누른 그 순간에 틀어야 소리를 켠 채로 시작된다 (폰 브라우저 규칙). 막히면 소리 없이.
-    v.muted = false; PP.muted = false;
-    v.play().catch(() => { v.muted = true; PP.muted = true; ppSetMuted(true); v.play().catch(() => ppSetPaused(true)); });
+    v.muted = !PP.wantSound; PP.muted = !PP.wantSound;
+    v.play().catch((er) => {
+      if (!er || er.name !== 'NotAllowedError') return;          // 바로 멈춘 것(AbortError)은 소리와 상관없다
+      v.muted = true; PP.muted = true; ppSetMuted(true); v.play().catch(() => ppSetPaused(true));
+    });
     ppSetMuted(PP.muted);
+    if (kind === 'px') {                                // 11/4 소리 없는 사본이면(예전 사본) 원본 유튜브로 — 소리가 우선
+      const chk = () => {
+        if (PP.vid !== v) return;
+        if (v.muted || v.paused || (v.currentTime - Math.max(0, PP.a - PP.off)) < 1.2) { setTimeout(chk, 700); return; }
+        if (typeof v.webkitAudioDecodedByteCount === 'number' && v.webkitAudioDecodedByteCount === 0 && !(v.audioTracks && v.audioTracks.length)) {
+          px.noa = 1; pxPut(px);
+          const at = ppNow();
+          toast('🔇 광고 없는 사본에 소리가 없어 원본으로 바꿉니다');
+          openPlay(PP.i, 'seg').then(() => { if (window.PR && PR.on) prAfterPlay(); ppSeek(at); ppSetPaused(false); });
+        }
+      };
+      setTimeout(chk, 700);
+    }
     v.addEventListener('loadedmetadata', () => {
       if (kind === 'done') { PP.a = 0; PP.e = v.duration || 30; PP.mw = [0, 0]; }
       else if (kind === 'px') { [PP.a, PP.e] = ppRange(b, Number(px.full) || Number(px.end) || 0); PP.mw = ppMetaWin(b, PP.e - PP.a); v.currentTime = Math.max(0, PP.a - PP.off); }
@@ -5398,7 +5526,7 @@ function bindPlay() {
   if (!$('#pp')) return;
   $('#ppClose').onclick = () => ppStop();
   $('#ppTap').onclick = () => { if (PP.kind !== 'img') ppSetPaused(!PP.paused); };
-  $('#ppSound').onclick = () => ppSetMuted(!PP.muted);
+  $('#ppSound').onclick = () => ppUserMute(!PP.muted);
   $('#ppEdit').onclick = () => { const b = PP.b; PP._popping = true; ppStop(); PP._popping = false; if (b) openPicker(b); };
   $('#ppSubs').onclick = ppSubsFetch;
   if ($('#ppPr')) $('#ppPr').onclick = ppPremiere;
@@ -5634,7 +5762,9 @@ function stPaintBlocks() {
       n = el('div', 'stBlk');
       n.innerHTML = '<b class="hL"></b><span></span><b class="hR"></b>';
       n.addEventListener('pointerdown', (e) => stDown(e, n));
-      n.addEventListener('dblclick', () => { const inp = $('#ppSubList .stText'); if (inp && !inp.disabled) { inp.focus(); inp.select(); } });
+      n.addEventListener('dblclick', () => {
+        if (window.PR && PR.on) { stSelect(+n.dataset.k, true); return; }
+        const inp = $('#ppSubList .stText'); if (inp && !inp.disabled) { inp.focus(); inp.select(); } });
       track.append(n);
     }
     n.dataset.k = k;
@@ -6066,7 +6196,8 @@ function stDown(e, n) {
     n.classList.remove('drag');
     if (!d) return;
     if (d.moved) { PP.b.subsRef.edited = true; ppSubsSave(); stText(); }
-    else stSelect(d.k, true);                       // 그냥 누른 것 — 고르고 그 줄 처음으로
+    // 11/4 규효 "자막 트랙을 누르면 재생 위치가 맨 앞으로 가서 불편" — 편집 화면은 프리미어처럼 누르면 고르기만, 두 번 누르면 그 줄 처음으로
+    else stSelect(d.k, !(window.PR && PR.on));
   };
   n.addEventListener('pointermove', move); n.addEventListener('pointerup', up); n.addEventListener('pointercancel', up);
 }
@@ -6180,7 +6311,7 @@ function prBuild() {
     <div><em>편집</em> ←/→ 1프레임 (Shift 5프레임 · Alt 1초) · Q / W 재생 헤드 아래 줄 앞·뒤를 헤드까지 · ⌘Z 되돌리기 · ⌘⇧Z 다시 하기 · ⌘S 저장 (맥·폰 어디서든)</div>
     <div><em>편 (시퀀스)</em> ⌘⇧K 재생 헤드에서 편을 둘로 나누기 · 프로젝트 패널 「✂ 편 나누기」 · 패널 사이 경계를 끌면 크기 조절 (두 번 누르면 처음대로)</div>
     <div><em>텍스트 패널</em> Enter 커서 자리에서 둘로 · 맨 앞 ⌫ 앞줄과 합치기 · ↑↓ 앞뒤 줄 · 시간 누르면 그 줄만 듣기</div>
-    <div><em>마우스</em> 영상 클립 양 끝 끌기 = 구간 줄이고 늘이기 (자막도 같이 밀림) · 글자 클립 끌기 = 1~3줄 나오는 때 · 9:16 창·프로그램 화면 옆으로 끌기 = 가로 위치</div>
+    <div><em>마우스</em> 영상 클립 양 끝 끌기 = 구간 줄이고 늘이기 (자막도 같이 밀림) · 글자 클립 끌기 = 1~3줄 나오는 때 · 자막 클립 누르기 = 고르기만 (재생 위치 그대로) · 두 번 누르기 = 그 줄 처음으로 · 9:16 창·프로그램 화면 옆으로 끌기 = 가로 위치</div>
   </div>
   <span class="prWsBar"><button type="button" data-pa="phone" title="자막 고치기를 닫고 숏폼 양식으로">← 양식으로</button><b class="prMode">✏️ 자막 고치기</b></span>
   <span class="prSp"></span>
@@ -6591,13 +6722,13 @@ function prSetRange(a, e) {
   if (ns === (b.start || '').trim() && ne === (b.end || '').trim()) return;
   const A = a == null ? 0 : a, d = A - (oA == null ? 0 : oA), len = (e == null ? Infinity : e) - A;
   let grew = false;
-  if (had) {
-    r.segs = r.segs.map((s) => Object.assign({}, s, { start: stR(s.start - d), end: stR(s.end - d) }))
-      .filter((s) => s.end > 0.05 && s.start < len - 0.05)
-      .map((s) => Object.assign(s, { start: Math.max(0, s.start), end: Math.min(len, s.end) }));
-    r.start = ns; r.end = ne; if (r.sn) { r.sn.start = ns; r.sn.end = ne; }
-    r.edited = true;
-    grew = d < -0.05 || (oE != null && e != null && e > oE + 0.05);
+  if (had) {                                         // 11/4 고친 줄은 그대로 두고, 받아 둔 앞뒤 자막(sn.full)으로 빈 곳을 채운다 (app.js subsMove)
+    b._subsMoving = true;
+    subsMove(b, ns, ne);
+    b._subsMoving = false;
+    const sn = r.sn || {};
+    grew = !(sn.full && (Number(sn.full_a) || 0) <= A + 0.05 && Number(sn.full_b) >= (e == null ? Infinity : e) - 0.05) &&
+           (d < -0.05 || (oE != null && e != null && e > oE + 0.05));
   }
   const mt = (b.metaTime || '').trim();
   if (mt && oA != null) {
@@ -6609,7 +6740,7 @@ function prSetRange(a, e) {
   if (had) ppSubsSave();
   refresh();
   prPgmRange();
-  if (grew) toast('늘린 부분에는 받아 둔 자막이 없습니다 — 필요하면 「💬 말자막 다시 받기」');
+  if (grew && !studioOn()) toast('늘린 부분에는 받아 둔 자막이 없습니다 — 필요하면 「💬 자막 가져오기」');
 }
 function prPgmRange() {
   const b = prB();
@@ -7128,7 +7259,7 @@ function prAct(a, node) {
   if (a === 'pEnd') return pgo(PP.e - PP.a - 0.05);
   if (a === 'pBack') return pgo(rel() - 1);
   if (a === 'pFwd') return pgo(rel() + 1);
-  if (a === 'pSound') { ppSetMuted(!PP.muted); prPaint(); return; }
+  if (a === 'pSound') { ppUserMute(!PP.muted); prPaint(); return; }
   if (a === 'subsGet') { const sb = $('#ppSubs'); if (sb && !sb.hidden && !sb.disabled) sb.click(); else if (!studioOn()) toast('맥 연결이 있어야 말자막을 미리 받습니다'); else toast('구간(인·아웃)을 먼저 정해 주세요'); return; }
   if (a === 'cc') { const s = $('#ppSubsSrc'); if (s) s.click(); prPaint(); return; }
   if (a === 'find') { prTab('text'); stFindToggle(); return; }
@@ -7376,9 +7507,9 @@ function mfInput(ev) {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 11:42';
+    a.title = '판 11.04 13:58';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 11:42';
+    ver.textContent = '11.04 13:58';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

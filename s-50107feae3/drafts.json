@@ -1117,7 +1117,12 @@
     }
    },
    "corner_name": "이번 주 티켓 오픈",
-   "corner_no": 6
+   "corner_no": 7,
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfToE-QCkFh/",
+    "cover": "A",
+    "at": "2026-11-04T13:43+09:00"
+   }
   },
   {
    "source": {
@@ -1381,6 +1386,225 @@
      "at": "2026-11-04T11:42+09:00"
     }
    },
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfTmHntGT0W/",
+    "cover": "A",
+    "at": "2026-11-04T13:26+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:brk-e0dad7a2",
+    "account": "@갈등·반응",
+    "url": "http://www.joynews24.com/view/2021196",
+    "image": null,
+    "head": "A2O LITE, 데뷔 3주 만에 업계가 뽑은 '올해의 신인' 1위",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-04T13:55+09:00",
+   "key": "8ebc576d",
+   "by": "claude",
+   "subjects": [
+    "A2O LITE"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "데뷔 한 달이 안 된 A2O LITE가 업계 종사자 설문 '올해의 신인' 1위 — 멤버의 '아직 믿기지 않는다'",
+    "why": "속보 감지 · 데뷔곡 'NEON' 멜론·음방 1위에 이어 업계 설문 1위. 멤버 부모 채무 논란은 미성년 가족 사안이라 다루지 않음"
+   },
+   "added": "claude",
+   "added_at": "2026-11-04T13:55+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습니다.\n\n조이뉴스24가 창간 22주년을 맞아 엔터사·방송사 종사자와 기자 등 142명에게 물은 설문에서 1위에 올랐는데요, 지난달 13일 데뷔곡 'NEON'을 낸 지 약 29시간 만에 멜론 TOP100 정상에 섰고, 데뷔 7일 만에 〈더쇼〉에서 첫 음악방송 1위를 받은 팀입니다.\n\n멤버 히메키는 이렇게 빨리 뽑힐 줄 몰랐다며 \"신기하고 아직 믿기지 않는다\"고 했습니다. 멤버들은 써니에게서 인이어나 마이크팩이 떨어져도 당황하지 않고 무대를 이어 가는 법을 배웠다고 전했는데요, 데뷔곡 하나로 시작한 아홉 명이 받아 든 첫 성적표입니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #써니\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793768136/km83y8uxtnymjkq7virv.jpg\n제목: A2O LITE,|업계가 뽑은 올해의 신인\n부제: 데뷔 한 달도 안 돼 받은 성적표\n출처: @a2o.lite\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793768169/plot_studio/qscoabadpys1atgxnfud.mp4\n소제목: \n본문: \n출처: A2O WORLD\n",
+    "caption": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습니다.\n\n조이뉴스24가 창간 22주년을 맞아 엔터사·방송사 종사자와 기자 등 142명에게 물은 설문에서 1위에 올랐는데요, 지난달 13일 데뷔곡 'NEON'을 낸 지 약 29시간 만에 멜론 TOP100 정상에 섰고, 데뷔 7일 만에 〈더쇼〉에서 첫 음악방송 1위를 받은 팀입니다.\n\n멤버 히메키는 이렇게 빨리 뽑힐 줄 몰랐다며 \"신기하고 아직 믿기지 않는다\"고 했습니다. 멤버들은 써니에게서 인이어나 마이크팩이 떨어져도 당황하지 않고 무대를 이어 가는 법을 배웠다고 전했는데요, 데뷔곡 하나로 시작한 아홉 명이 받아 든 첫 성적표입니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #써니",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768136/km83y8uxtnymjkq7virv.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/875937441_17903330619606064_166224538288588419_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9zjkl1dbVt8Q7kNvwHGx4Ta&_nc_oc=AdpyV9vblLfrotajcWkYaCWdAE2iBKrBHX15Z8faE83izfWCJ4-Tz6ukXtOhKauEQLg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=03-9p-YKAckwQzLLrpTaMQ&oh=00_AQTY9PJonGshbP1Arc2fF6X9284444_Bji8uyq4h_-oJSg&oe=6AF0764B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768138/mwllb33b5mhgqkwkriob.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/881184096_17904024045606064_8288520094652978995_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xdF_MnwSvDoQ7kNvwFuuSpJ&_nc_oc=AdoTiQ9vcTZpQdpAno4RWS3-8GgQ6iBaIlp-8oMtDEwRNzX95q3BqkViQrZ01vaq-xY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=03-9p-YKAckwQzLLrpTaMQ&_nc_tpa=Q5bMBQLQk48QlbbqrGh3EoiqoxWkXKmDW5iC2EHOdOhogI2OXmPkzikeAOH2g2Fh0PApI6b6mmcKqW_85w&oh=00_AQSVf3cVCw5oGcKfup1vYHjAGdcnmNVBGf4xq0BLIOl9gw&oe=6AF06BF5"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768140/g7m34boghtopmbwyx0wf.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869180043_1525145789375034_4718683369155691604_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=B_F9nCpnrnAQ7kNvwHgya44&_nc_oc=Adoy_ifrBJxFv1wkeHvPqDJqeUToZ8Xac5KLvbGLbXV8quGn7m0Hg9JiSaH_KB4XWpk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=03-9p-YKAckwQzLLrpTaMQ&_nc_tpa=Q5bMBQLkczaTAr6VEgDReXoA6FX6zNcr0SMk-RH-51TosTrJ9Jerq2KhedOZkSWH4pquvJTbmaTulh11vA&oh=00_AQQwXghpmP-IZqBBmO-goF0qgCxaIwCe1SLqAhwdEGZ_hg&oe=6AF07641"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768142/rd1zmaeutfcnwrdb4bls.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518431/urujzoevdmiofqedghng.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768145/x3n7pctnnqhkjfcnqmfx.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518443/zvbpzwonjbdyc2zbmbgn.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768136/km83y8uxtnymjkq7virv.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/875937441_17903330619606064_166224538288588419_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9zjkl1dbVt8Q7kNvwHGx4Ta&_nc_oc=AdpyV9vblLfrotajcWkYaCWdAE2iBKrBHX15Z8faE83izfWCJ4-Tz6ukXtOhKauEQLg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=03-9p-YKAckwQzLLrpTaMQ&oh=00_AQTY9PJonGshbP1Arc2fF6X9284444_Bji8uyq4h_-oJSg&oe=6AF0764B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768138/mwllb33b5mhgqkwkriob.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/881184096_17904024045606064_8288520094652978995_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xdF_MnwSvDoQ7kNvwFuuSpJ&_nc_oc=AdoTiQ9vcTZpQdpAno4RWS3-8GgQ6iBaIlp-8oMtDEwRNzX95q3BqkViQrZ01vaq-xY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=03-9p-YKAckwQzLLrpTaMQ&_nc_tpa=Q5bMBQLQk48QlbbqrGh3EoiqoxWkXKmDW5iC2EHOdOhogI2OXmPkzikeAOH2g2Fh0PApI6b6mmcKqW_85w&oh=00_AQSVf3cVCw5oGcKfup1vYHjAGdcnmNVBGf4xq0BLIOl9gw&oe=6AF06BF5"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768140/g7m34boghtopmbwyx0wf.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869180043_1525145789375034_4718683369155691604_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=B_F9nCpnrnAQ7kNvwHgya44&_nc_oc=Adoy_ifrBJxFv1wkeHvPqDJqeUToZ8Xac5KLvbGLbXV8quGn7m0Hg9JiSaH_KB4XWpk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=03-9p-YKAckwQzLLrpTaMQ&_nc_tpa=Q5bMBQLkczaTAr6VEgDReXoA6FX6zNcr0SMk-RH-51TosTrJ9Jerq2KhedOZkSWH4pquvJTbmaTulh11vA&oh=00_AQQwXghpmP-IZqBBmO-goF0qgCxaIwCe1SLqAhwdEGZ_hg&oe=6AF07641"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768142/rd1zmaeutfcnwrdb4bls.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518431/urujzoevdmiofqedghng.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768145/x3n7pctnnqhkjfcnqmfx.jpg",
+      "credit": "@a2o.lite",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792518443/zvbpzwonjbdyc2zbmbgn.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "A2O LITE,|업계가 뽑은 올해의 신인",
+      "sub": "데뷔 한 달도 안 돼 받은 성적표"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "데뷔 한 달도 안 돼|'올해의 신인' 된 A2O LITE",
+      "sub": "업계 종사자 142명 설문 1위"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "'아직 믿기지 않는다'|올해의 신인 A2O LITE",
+      "sub": "데뷔곡 'NEON'으로 시작된 첫 활동"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — A2O WORLD (공식 MV) · 후렴 0:58 시작은 자막 기준, 구간 귀로 확인",
+     "표지 사진: 10/30 'NEON MV BEHIND' 컷 · 단체 컷이 낫다면 「사진 바꾸기」(11/2 단체 썸네일은 구석 로고·흐림 있음)"
+    ],
+    "research": [
+     {
+      "title": "[창간22년] A2O LITE, 데뷔부터 일냈다⋯가요계 '올해의 신인' (조이뉴스24)",
+      "link": "http://www.joynews24.com/view/2021196"
+     },
+     {
+      "title": "[창간22년] A2O LITE ''올해의 신인' 신기해⋯이수만·써니 '자신 믿으라' (조이뉴스24)",
+      "link": "http://www.joynews24.com/view/2021702"
+     },
+     {
+      "title": "'이수만 걸그룹' A2O LITE, 데뷔 29시간 만 멜론 1위 (supple)",
+      "link": "https://supple.kr/news/cmv8lxem0007c111r3xb7c8ee"
+     },
+     {
+      "title": "A2O LITE 'NEON' Official Video (A2O WORLD)",
+      "link": "https://www.youtube.com/watch?v=D968qfUZMUE"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768177/znkaqmi773bwuu0pvfjj.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768180/bs2be4imkr4gskewtrno.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768177/rspo1gj5tzmwzvgsikw1.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768182/eoxidcjjk18m1mlftbjh.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768183/q23mrcma0mghxnyu7hke.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768177/znkaqmi773bwuu0pvfjj.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-04T13:56+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793768178/plot_studio/lnxphtpvp2icipbwuqjc.mp4"
+     },
+     "v": {
+      "A": "d84fca28",
+      "B": "4ac8c316",
+      "C": "32e843b2"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=D968qfUZMUE\n구간: 0:58-1:28\n곡: A2O LITE의 'NEON'\n아티스트: 업계가 뽑은 올해의 신인\n피처링:\n후킹: \n출처: A2O WORLD\n음원: A2O LITE - NEON\n가사: 자동",
+    "caption": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습니다.\n\n조이뉴스24가 엔터사·방송사 종사자와 기자 등 142명에게 물은 설문에서 1위에 올랐는데요, 지난달 13일 낸 데뷔곡 'NEON'은 약 29시간 만에 멜론 TOP100 정상에 섰고, 데뷔 7일 만에 〈더쇼〉 첫 1위로 이어졌습니다.\n\n멤버 히메키는 \"신기하고 아직 믿기지 않는다\"고 했습니다. 데뷔곡 하나로 시작한 아홉 명이 받아 든 첫 성적표입니다.\n\n#PLOT #A2OLITE #에이투오라이트 #NEON #올해의신인",
+    "hooks": {
+     "A": "업계가 뽑은 올해의 신인 / A2O LITE의 'NEON'",
+     "B": "데뷔 29시간 만에 / 멜론 정상에 오른 후렴",
+     "C": "무지개빛 불을 붙이는 / 아홉 명의 첫 노래"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=D968qfUZMUE",
+     "credit": "A2O WORLD",
+     "range": [
+      58.0,
+      88.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — A2O WORLD (공식 MV) · 후렴 0:58 시작은 자막 기준, 구간 귀로 확인",
+     "표지 사진: 10/30 'NEON MV BEHIND' 컷 · 단체 컷이 낫다면 「사진 바꾸기」(11/2 단체 썸네일은 구석 로고·흐림 있음)"
+    ],
+    "research": [
+     {
+      "title": "[창간22년] A2O LITE, 데뷔부터 일냈다⋯가요계 '올해의 신인' (조이뉴스24)",
+      "link": "http://www.joynews24.com/view/2021196"
+     },
+     {
+      "title": "[창간22년] A2O LITE ''올해의 신인' 신기해⋯이수만·써니 '자신 믿으라' (조이뉴스24)",
+      "link": "http://www.joynews24.com/view/2021702"
+     },
+     {
+      "title": "'이수만 걸그룹' A2O LITE, 데뷔 29시간 만 멜론 1위 (supple)",
+      "link": "https://supple.kr/news/cmv8lxem0007c111r3xb7c8ee"
+     },
+     {
+      "title": "A2O LITE 'NEON' Official Video (A2O WORLD)",
+      "link": "https://www.youtube.com/watch?v=D968qfUZMUE"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/D968qfUZMUE/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793768189/icuiyehuboei6vgp3we4.jpg",
+     "key": "D968qfUZMUE@58.0"
+    },
+    "px": {
+     "vid": "D968qfUZMUE",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793768274/plot_studio/u8t2fydr6srwxkxeckmc.mp4",
+     "off": 13.0,
+     "end": 133.0,
+     "full": 223.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-04T13:58+09:00"
+    }
+   },
    "corner_name": "소식"
   }
  ],
@@ -1388,7 +1612,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 5,
-  "done": 11,
+  "done": 13,
   "goal": 28,
   "corners": [
    {
@@ -1515,11 +1739,11 @@
     "key": "tickets",
     "name": "이번 주 티켓 오픈",
     "weekly": 1,
-    "done": 2,
+    "done": 3,
     "left": 0,
     "need_today": 0,
     "day": 0,
-    "next_no": 6,
+    "next_no": 7,
     "drafts": 1,
     "why": "월요일 고정 — 이번 주 예매가 열리는 공연·내한·페스티벌을 날짜·시간·예매처로"
    },
@@ -1551,25 +1775,25 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 5,
+    "done": 6,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T11:42+09:00"
+  "at": "2026-11-04T13:58+09:00"
  },
  "queue": {
-  "next": "2026-11-04T11:44+09:00",
+  "next": "2026-11-04T14:43+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-04T00:04+09:00"
+  "last": "2026-11-04T13:43+09:00"
  },
  "slots": {
-  "basis": 295,
+  "basis": 297,
   "card": [
    {
     "from": 18,
@@ -1583,7 +1807,7 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.79,
+    "mult": 1.8,
     "median": 0.87,
     "n": 36
    },
