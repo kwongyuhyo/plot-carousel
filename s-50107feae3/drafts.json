@@ -3900,7 +3900,12 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 3
+   "corner_no": 3,
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfUm3ptD-KN/",
+    "at": "2026-11-04T22:53+09:00",
+    "via": "manual"
+   }
   },
   {
    "source": {
@@ -4499,7 +4504,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T22:46+09:00"
+  "at": "2026-11-04T22:53+09:00"
  },
  "queue": {
   "next": "2026-11-04T23:23+09:00",
