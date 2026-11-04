@@ -2315,14 +2315,15 @@ function syncFields() {
                     plainField("소리 구간", "비우면 후렴 15초 · 예 1:02-1:17", s.songRange, (v) => (s.songRange = v)));
       const sb = document.createElement("div"); sb.className = "field";
       const b1 = document.createElement("button"); b1.type = "button";
-      b1.textContent = songFresh(cur) ? "🎵 소리 붙인 영상 보기" : "🎵 소리 붙여 미리 만들기";
+      b1.textContent = songFresh(cur) ? (s.songOut.pre ? "🎵 초안에서 만든 영상 보기" : "🎵 소리 붙인 영상 보기") : "🎵 소리 붙여 미리 만들기";
       const ix = cur;
       b1.onclick = async () => {
         if (songFresh(ix)) { window.open(deck.slides[ix].songOut.url, "_blank", "noopener"); return; }
         b1.disabled = true; b1.textContent = "만드는 중…"; await songMake(ix, false); b1.disabled = false;
         b1.textContent = songFresh(ix) ? "🎵 소리 붙인 영상 보기" : "🎵 소리 붙여 미리 만들기";
       };
-      const hint = document.createElement("span"); hint.className = "hint"; hint.textContent = " 발행할 때 안 만들어 뒀으면 그때 자동으로 만든다";
+      const hint = document.createElement("span"); hint.className = "hint";
+      hint.textContent = songFresh(cur) && s.songOut.pre ? " 이 장 글을 안 고치면 발행 때 이 영상을 그대로 씁니다" : " 발행할 때 안 만들어 뒀으면 그때 자동으로 만든다";
       sb.append(b1, hint); fields.append(sb);
     }
     fields.append(field("heading", s.heading, (v) => (s.heading = v)),
@@ -2622,10 +2623,10 @@ async function downscale(f) {
     return null;
   }
 }
-function attachImage(slide, dataUrl) {
+function attachImage(slide, dataUrl, keep) {          // keep: 소스 주소에서 받은 그 사진·저장본 복원 — 만들어 둔 곡 장 영상을 그대로 둔다
   return new Promise((res) => {
     const im = new Image();
-    im.onload = () => { slide.img = dataUrl; slide.el = im; slide.fit = null; slide.vid = null; slide.vidOut = null; slide._still = null; res(true); };
+    im.onload = () => { slide.img = dataUrl; slide.el = im; slide.fit = null; slide.vid = null; slide.vidOut = null; slide._still = null; if (!keep) slide.songOut = null; res(true); };
     im.onerror = () => res(false);
     im.src = dataUrl;
   });
@@ -2758,6 +2759,7 @@ function parseDeckForm(text) {
         }
         if (/^(곡|song)$/.test((kv["형식"] || "").trim())) {
           sl.style = "song"; sl.song = (kv["음원"] || "").trim(); sl.songRange = (kv["구간"] || "").trim(); sl.num = (kv["번호"] || "").trim();
+          sl.vid = null;                                 // 11/4 곡 장의 「구간」은 소리 구간 — 소스가 영상 주소여도 영상 장으로 보지 않는다
         }
       }
       out.slides.push(sl);
@@ -2812,7 +2814,7 @@ async function fetchSrcPhotos() {
       const b = await r.blob();
       if (!/^image\//.test(b.type || "")) continue;
       const d = await downscale(b);
-      if (d && await attachImage(s, d)) n++;
+      if (d && await attachImage(s, d, true)) n++;
     } catch (e) {}
   }
   if (n) { markDirty(); buildRail(); syncAll(); toast(`사진 ${n}장을 소스 주소에서 불러왔습니다`); }
@@ -3150,6 +3152,9 @@ async function publishDeck() {
   try {
     const pub = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
     const hashes = [], vids = {};
+    const vurls = await preVids(vidIdx, songIdx);       // 11/4 초안에서 받아 둔 영상 장·곡 장
+    const lost = vidIdx.filter((i) => !songIdx.includes(i) && !vidFresh(i));
+    if (lost.length) { cur = lost[0]; syncAll(); throw new Error(`${lost.map((i) => i + 1).join("·")}번 장 초안 영상을 못 받았습니다 — 그 장에서 「🎬 이 장 영상 만들기」를 눌러 주세요`); }
     for (const i of songIdx) {                           // 곡 장 — 소리 붙인 영상이 없거나 글이 바뀌었으면 지금 만든다
       if (songFresh(i)) continue;
       toast(`${i + 1}번 곡 장에 후렴 소리 붙이는 중`);
@@ -3173,7 +3178,7 @@ async function publishDeck() {
     const at = new Date().toISOString();
     const sig = await sha256hex(new TextEncoder().encode(key + "|" + digest + "|" + at));
     let shown = "";
-    const sn = await plotStudio.send("carousel", Object.assign({ pub, total, caption: cap, digest, at, sig }, vidIdx.length ? { vids } : {}),
+    const sn = await plotStudio.send("carousel", Object.assign({ pub, total, caption: cap, digest, at, sig }, vidIdx.length ? { vids } : {}, Object.keys(vurls).length ? { vurls } : {}),
       (step) => { if (step !== shown) { shown = step; toast("🚀 " + step); } });
     plotStudio.sheet("🚀 " + (sn.note || "발행했습니다"), sn.permalink || "");
   } catch (e) {
@@ -3377,7 +3382,7 @@ async function loadDeck(row, imgsGiven, msg) {
   deck.slides[0].kind = "cover";
   const imgs = imgsGiven || await Store.images(row.id, parsed.length);
   for (let i = 0; i < parsed.length; i++) {
-    if (imgs[i] && !vidOf(deck.slides[i])) await attachImage(deck.slides[i], imgs[i]);
+    if (imgs[i] && !vidOf(deck.slides[i])) await attachImage(deck.slides[i], imgs[i], true);
     if (vidOf(deck.slides[i])) loadStill(deck.slides[i]);
   }
   deckId = row.id; cur = 0;
@@ -3637,8 +3642,41 @@ function overlayBlob(i) {
   return new Promise((res) => off.toBlob(res, "image/png"));
 }
 /* 곡 장 영상 (10/29) — 앱이 그린 화면(막대 없이)을 보내고 맥(op=songvid)이 후렴 소리 + 차오르는 막대로 mp4 를 만든다 */
-function songKey(i) { const s = deck.slides[i]; return JSON.stringify([deck.category, s.song, s.songRange, s.heading, s.body, s.credit, s.srcUrl, s.num]); }
-function songFresh(i) { const s = deck.slides[i]; return !!(s && s.songOut && s.songOut.sha && s.songOut.key === songKey(i)); }
+function songNo(i) { const s = deck.slides[i]; return s.num || String(deck.slides.slice(1, i + 1).filter((x) => x.style === "song").length).padStart(2, "0"); }
+function songKey(i) { const s = deck.slides[i]; return JSON.stringify([deck.category, s.song, s.songRange, s.heading, s.body, s.credit, s.srcUrl, songNo(i)]); }
+/* 11/4 오늘의 초안에서 넘어올 때 — 맥이 미리보기로 만든 영상 장·곡 장 mp4 를 그 장의 완성본으로 받아 둔다.
+   글을 안 고친 장은 발행 때 다시 만들지 않고 이 파일을 쓴다 (맥이 주소에서 받아 sha 로 맞춰 본다). */
+function adoptVids(pv) {
+  let n = 0;
+  for (const [k, url] of Object.entries((pv && pv.videos) || {})) {
+    const i = Number(k), s = deck.slides[i];
+    if (!s || !Number.isInteger(i) || !V_UP.test(String(url || ""))) continue;
+    if (i === 0 && pv.cover) continue;                   // 표지를 다른 안으로 바꿨으면 표지 영상은 다시
+    if (i > 0 && s.style === "song") { s.songOut = { url: String(url), sha: "", secs: null, key: songKey(i), ch: "", pre: 1 }; n++; }
+    else if (vidOf(s)) { s.vidOut = { url: String(url), sha: "", secs: null, key: vidKey(i), pre: 1 }; n++; }
+  }
+  if (n) { markDirty(); buildRail(); syncAll(); }
+  return n;
+}
+/* 발행 직전 — 초안 영상은 받아서 sha 를 잰다 (맥이 같은 파일인지 확인한다). 못 받으면 그 장은 다시 만들게 비운다. */
+async function preVids(idx, songIdx) {
+  const urls = {};
+  for (const i of idx) {
+    const s = deck.slides[i], song = songIdx.includes(i), o = song ? s.songOut : s.vidOut;
+    if (!o || !o.pre || !(song ? songFresh(i) : vidFresh(i))) continue;
+    if (!o.sha) {
+      try {
+        toast(`${i + 1}번 장 초안 영상 확인 중`);
+        const r = await fetch(o.url, { mode: "cors", cache: "no-store" });
+        if (!r.ok) throw new Error(String(r.status));
+        o.sha = await sha256hex(new Uint8Array(await r.arrayBuffer()));
+      } catch (e) { if (song) s.songOut = null; else s.vidOut = null; continue; }
+    }
+    urls[i] = o.url;
+  }
+  return urls;
+}
+function songFresh(i) { const s = deck.slides[i]; return !!(s && s.songOut && (s.songOut.sha || s.songOut.pre) && s.songOut.key === songKey(i)); }
 async function songMake(i, strict) {
   const s = deck.slides[i]; if (!s || s.style !== "song" || s._busy) return;
   if (!(window.plotStudio && plotStudio.on())) { if (strict) throw new Error("맥 연결이 없어 곡 장 소리를 못 붙입니다"); toast("맥 연결이 없어 여기서 못 만듭니다"); return; }
@@ -3969,8 +4007,14 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
   try { over = localStorage.getItem(HANDOFF); localStorage.removeItem(HANDOFF); } catch (e) {}
   if (over && /\[커버\]/.test(over)) {
     const d = parseDeckForm(over);
-    if (d) { applyDeckForm(d); toast(`${d.slides.length}장을 펼쳤습니다`); }
+    if (d) {
+      applyDeckForm(d);
+      let pv = null; try { pv = JSON.parse(localStorage.getItem(HANDOFF + ".vids") || "null"); } catch (e) {}
+      const kept = pv && pv.at && Date.now() - pv.at < 6 * 3600e3 ? adoptVids(pv) : 0;
+      toast(`${d.slides.length}장을 펼쳤습니다` + (kept ? ` — 영상 ${kept}장은 초안에서 만든 그대로` : ""));
+    }
   }
+  try { localStorage.removeItem(HANDOFF + ".vids"); } catch (e) {}
   // 넘어온 양식을 펼친 게 아니면, 튕기기 전 작업이 있는지 본다
   if (!(over && /\[커버\]/.test(over))) Auto.offer();
 })();
@@ -3993,9 +4037,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 22:01';
+    a.title = '판 11.04 22:02';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 22:01';
+    ver.textContent = '11.04 22:02';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

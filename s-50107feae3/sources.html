@@ -2630,6 +2630,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       var cvs = (it.card || {}).covers || [], ci = drCovers()[(it.source || {}).id];
       if (ci && cvs[ci]) form = drApplyCover(form, cvs[ci]);
     }
+    try {                                              // 11/4 규효 "사진 장만 고치려는데 영상 장(음악 타임바)이 안 가져와진다" — 맥이 만든 영상 장·곡 장 mp4 를 같이 넘긴다
+      var pvv = kind === 'card' && ((it.card || {}).preview || {}).videos;
+      if (pvv && Object.keys(pvv).length) localStorage.setItem('plot.form.handoff.vids', JSON.stringify({ videos: pvv, cover: !!(ci && cvs[ci]), at: Date.now() }));
+      else localStorage.removeItem('plot.form.handoff.vids');
+    } catch (e) {}
     try { localStorage.setItem('plot.form.handoff', form); } catch (e) {
       alert('저장소를 쓸 수 없어 넘길 수 없습니다 — 양식을 복사해 붙여넣어 주세요'); return;
     }
@@ -5061,9 +5066,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 22:01';
+    a.title = '판 11.04 22:02';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 22:01';
+    ver.textContent = '11.04 22:02';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
