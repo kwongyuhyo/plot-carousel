@@ -1262,7 +1262,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=jOTfBlKSQYY\n구간: 1:25-1:55\n곡: 뉴진스 'ETA' 후렴\n아티스트: 스포티파이 5억 회 넘긴\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: 뉴진스 - ETA\n가사: 자동",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=jOTfBlKSQYY\n구간: 1:25-1:55\n곡: 뉴진스 'ETA' 후렴\n아티스트: 스포티파이 5억 회 넘긴\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: 뉴진스 - ETA\n가사: 자동\n자막: 받음 st:1793760171951-d2737e76",
     "caption": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) 누적 재생 5억 회를 넘었습니다.\n\n신우석(@ernesto822) 감독이 아이폰으로만 찍은 이 뮤직비디오는 감독판 공개를 두고 어도어와 돌고래유괴단의 소송으로 이어졌는데요, 지난달 29일 항소심에서도 10억 원 배상 판결이 유지됐습니다.\n\n그 사이 노래는 계속 재생되고 있었던 셈입니다. 스포티파이 집계로 11월 2일 기준 약 5억 8만 회, 뉴진스의 일곱 번째 5억 회 곡입니다.\n\n#PLOT #뉴진스 #ETA #GetUp #스포티파이",
     "hooks": {
      "A": "스포티파이 5억 회 넘긴 / 뉴진스 'ETA' 후렴",
@@ -1321,7 +1321,63 @@
      "full": 217.0
     },
     "prep": {
-     "status": "making",
+     "status": "ready",
+     "rid": "st:1793760171951-d2737e76",
+     "n": 10,
+     "note": "🎤 가사 10줄 자동 맞춤 (확인 8줄)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 1.4,
+       "text": "We can go whenever you like, now where are you?"
+      },
+      {
+       "start": 1.4,
+       "end": 5.06,
+       "text": "(Mmm-hmm) what's your ETA? What's your ETA?"
+      },
+      {
+       "start": 5.06,
+       "end": 7.89,
+       "text": "(Mmm-hmm) what's your ETA? What's your ETA?"
+      },
+      {
+       "start": 7.89,
+       "end": 11.46,
+       "text": "(Mmm-hmm) what's your ETA? What's your ETA?"
+      },
+      {
+       "start": 11.46,
+       "end": 15.51,
+       "text": "I'll be there right now, lose that boy on her arm"
+      },
+      {
+       "start": 15.51,
+       "end": 19.12,
+       "text": "아파 맘이 네가 걔 못 잊을 때"
+      },
+      {
+       "start": 19.12,
+       "end": 22.32,
+       "text": "내 말 믿어, you deserve better than that"
+      },
+      {
+       "start": 22.32,
+       "end": 25.14,
+       "text": "내가 도와줄게, 걔는 그냥 playing"
+      },
+      {
+       "start": 25.14,
+       "end": 28.61,
+       "text": "Boys be always lying, yeah"
+      },
+      {
+       "start": 28.61,
+       "end": 30.0,
+       "text": "내 생일 파티에 너만 못 온 그날"
+      }
+     ],
      "at": "2026-11-04T11:42+09:00"
     }
    },
