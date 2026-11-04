@@ -3128,7 +3128,7 @@
     }
    },
    "corner_name": "이번 주 나온 앨범",
-   "corner_no": 2
+   "corner_no": 3
   },
   {
    "source": {
@@ -3295,7 +3295,7 @@
    "added_at": "2026-11-04T19:44+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n하츠투하츠가 내년 1분기 새 미니앨범으로 돌아옵니다.\n\nSM엔터테인먼트가 4일 3분기 실적을 발표하며 내년 1분기 컴백 라인업을 공개했는데요, 그 목록에 하츠투하츠의 미니앨범이 이름을 올렸습니다.\n\n하츠투하츠는 지난 6월 두 번째 미니앨범 [Lemon Tang]을 냈습니다. 8월에는 첫 싱글 [ICONIC HEART]로 일본에 정식 데뷔했고, 10월에는 그 타이틀곡의 한국어 버전도 선보였습니다.\n일본 데뷔부터 한국어 버전까지 이어진 한 해 끝에, 다음 미니앨범이 예고된 셈입니다.\n\n#PLOT #하츠투하츠 #Hearts2Hearts #LemonTang #ICONICHEART #SM엔터테인먼트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793789046/sus8n2j648jfv0boxjzw.jpg\n제목: 하츠투하츠,|내년 1분기 컴백 예고\n부제: SM 1분기 라인업에 새 미니앨범\n출처: @hearts2hearts\n",
+    "form": "[카테고리]\nNews\n\n[캡션]\n하츠투하츠가 내년 1분기 새 미니앨범으로 돌아옵니다.\n\nSM엔터테인먼트가 4일 3분기 실적을 발표하며 내년 1분기 컴백 라인업을 공개했는데요, 그 목록에 하츠투하츠의 미니앨범이 이름을 올렸습니다.\n\n하츠투하츠는 지난 6월 두 번째 미니앨범 [Lemon Tang]을 냈습니다. 8월에는 첫 싱글 [ICONIC HEART]로 일본에 정식 데뷔했고, 10월에는 그 타이틀곡의 한국어 버전도 선보였습니다.\n일본 데뷔부터 한국어 버전까지 이어진 한 해 끝에, 다음 미니앨범이 예고된 셈입니다.\n\n#PLOT #하츠투하츠 #Hearts2Hearts #LemonTang #ICONICHEART #SM엔터테인먼트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792652702/ub73gsi03mqf1e4rxl4k.jpg\n제목: 하츠투하츠,|내년 1분기 컴백 예고\n부제: SM 1분기 라인업에 새 미니앨범\n출처: @hearts2hearts\n",
     "caption": "하츠투하츠가 내년 1분기 새 미니앨범으로 돌아옵니다.\n\nSM엔터테인먼트가 4일 3분기 실적을 발표하며 내년 1분기 컴백 라인업을 공개했는데요, 그 목록에 하츠투하츠의 미니앨범이 이름을 올렸습니다.\n\n하츠투하츠는 지난 6월 두 번째 미니앨범 [Lemon Tang]을 냈습니다. 8월에는 첫 싱글 [ICONIC HEART]로 일본에 정식 데뷔했고, 10월에는 그 타이틀곡의 한국어 버전도 선보였습니다.\n일본 데뷔부터 한국어 버전까지 이어진 한 해 끝에, 다음 미니앨범이 예고된 셈입니다.\n\n#PLOT #하츠투하츠 #Hearts2Hearts #LemonTang #ICONICHEART #SM엔터테인먼트",
     "photos": [
      {
@@ -3392,21 +3392,32 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793789059/kfsy7u40sko0u8n1sdqx.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793789059/rx5alhbydy931ncbbrrc.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793794741/ae3frhyhyhox1sngwrh1.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793794741/obwjdk4kzw8ptzx7ekv9.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793789062/koupx2lwwgulemdwbyno.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793789062/lxs3fi2kgnfsb3y9c3jz.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793789059/kfsy7u40sko0u8n1sdqx.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793794744/lilhi4kskexgibsgdlsi.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793794744/hrvnjixtypr1qo5b8ek9.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793794741/ae3frhyhyhox1sngwrh1.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-04T19:44+09:00",
+     "at": "2026-11-04T21:19+09:00",
      "v": {
-      "A": "9397de7d",
-      "B": "197419cf",
-      "C": "ade96968"
+      "A": "cd99c052",
+      "B": "299606e3",
+      "C": "d9d1119d"
      }
+    },
+    "photo_tried": {
+     "0": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1792652702/ub73gsi03mqf1e4rxl4k.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793789046/sus8n2j648jfv0boxjzw.jpg"
+     ]
+    },
+    "photo_swapped": {
+     "at": "2026-11-04T21:18+09:00",
+     "slide": 0,
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792652702/ub73gsi03mqf1e4rxl4k.jpg"
     }
    },
    "corner_name": "소식"
@@ -3559,7 +3570,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 5,
-  "done": 20,
+  "done": 24,
   "goal": 28,
   "corners": [
    {
@@ -3698,11 +3709,11 @@
     "key": "newalbums",
     "name": "이번 주 나온 앨범",
     "weekly": 1,
-    "done": 0,
-    "left": 1,
+    "done": 1,
+    "left": 0,
     "need_today": 0,
     "day": 4,
-    "next_no": 2,
+    "next_no": 3,
     "drafts": 1,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
@@ -3722,7 +3733,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 12,
+    "done": 15,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -3731,24 +3742,24 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-04T20:05+09:00"
+  "at": "2026-11-04T21:19+09:00"
  },
  "queue": {
-  "next": "2026-11-04T21:04+09:00",
+  "next": "2026-11-04T21:21+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-04T20:04+09:00"
+  "last": "2026-11-04T20:05+09:00"
  },
  "slots": {
-  "basis": 304,
+  "basis": 308,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.06,
+    "mult": 2.03,
     "median": 1.23,
-    "n": 56
+    "n": 58
    },
    {
     "from": 21,
@@ -3762,8 +3773,8 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.4,
-    "median": 0.86,
+    "mult": 1.41,
+    "median": 0.95,
     "n": 27
    }
   ],
@@ -3772,9 +3783,9 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.85,
-    "median": 1.02,
-    "n": 22
+    "mult": 1.74,
+    "median": 0.95,
+    "n": 24
    },
    {
     "from": 21,
