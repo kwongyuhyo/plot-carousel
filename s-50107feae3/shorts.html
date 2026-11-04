@@ -5263,6 +5263,13 @@ function subsMove(b, ns, ne) {                       // 받아 둔 자막을 새
   const r = b && b.subsRef; if (!r || !Array.isArray(r.segs)) return false;
   const a = toSec(ns), e = toSec(ne);
   if (a == null) return false;
+  // 11/4 앞뒤 여유분(sn.full)이 없는 예전 자막 — 지금 받아 둔 범위를 기록해 두고 옮긴다 (그래야 늘린 부분만 맥에 부탁한다)
+  if (!(r.sn && Array.isArray(r.sn.full) && r.sn.full.length) && toSec(r.start) != null) {
+    const oA = toSec(r.start), oE = toSec(r.end);
+    r.sn = r.sn || {};
+    r.sn.full = (r.segs || []).map((x) => ({ start: stR(x.start + oA), end: stR(x.end + oA), text: String(x.text || '') }));
+    r.sn.full_a = oA; r.sn.full_b = oE == null ? oA + Math.max(0, ...(r.segs || []).map((x) => x.end), 0) : oE;
+  }
   subsAbsFold(r);
   r.segs = subsCut(r, a, e);
   r.start = ns; r.end = ne; if (r.sn) { r.sn.start = ns; r.sn.end = ne; }
@@ -7519,9 +7526,9 @@ function mfInput(ev) {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 16:59';
+    a.title = '판 11.04 17:07';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 16:59';
+    ver.textContent = '11.04 17:07';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
