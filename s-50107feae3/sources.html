@@ -3397,6 +3397,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var host = document.getElementById('viewSeries');
     if (SR === null) srLoad();
     if (!SP) spLoad(function () { if (GRP === 'series') renderSeries(); });
+    if (!SH) shLoad(function () { if (GRP === 'series') renderSeries(); });
     var today = kstDay(new Date());
     var keepVals = {};
     [].forEach.call(host.querySelectorAll('[data-srf]'), function (el) { keepVals[el.getAttribute('data-srf')] = el.value; });
@@ -3411,6 +3412,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       return '<div class="evn sr" data-sr="' + x.t + '"><div class="top"><b>' + esc(x.name) + '</b><span>' + esc(x.sub) + '</span>' +
         (todayN ? '<span class="srd">오늘 ' + todayN + '건 맡김</span>' : '') + '</div>' +
         '<input data-srf="' + x.t + ':what" placeholder="' + esc(x.ph) + '" value="' + esc(v) + '">' +
+        (x.t === 'song' ? '<div data-shw>' + shWarn(v) + '</div>' : '') +
         '<input data-srf="' + x.t + ':memo" class="srm" placeholder="' + (x.up ? '메모 (있으면) 예) 마지막 곡 음악만세 · 보컬 단편선' : '각도·메모·링크 (있으면)') + '" value="' + esc(m) + '">' + picks +
         (x.up ? '<label class="lvb">📹 영상 고르기 (여러 개 · 하나 100MB 까지)<input type="file" accept="video/*" multiple data-lvin hidden></label><div class="lvl">' + lvList() + '</div>' : '') +
         '<div class="srb"><button type="button" class="go" data-srgo="' + x.t + '">맡기기</button></div>' +
@@ -3426,6 +3428,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     what = what.trim(); memo = memo.trim();
     if (!what) { toast('주문란을 적어 주세요'); return; }
     if (t === 'song' && !/[-–—\/|]/.test(what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
+    if (t === 'song' && shFind(what) && SH_OK !== what) { SH_OK = what; var w0 = host.querySelector('[data-shw]'); if (w0) w0.innerHTML = shWarn(what); toast('이미 다룬 곡이에요 — 맡기려면 한 번 더 누르세요'); return; }
     var lvUrls = t === 'live' ? LV.filter(function (e) { return e.url; }).map(function (e) { return e.url; }) : [];
     if (t === 'live') {
       if (LV.some(function (e) { return !e.url && !e.err; })) { toast('영상이 아직 올라가는 중입니다'); return; }
@@ -3441,6 +3444,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         renderSeries(); setTimeout(srLoad, 45000); })
       .catch(function (er) { toast('못 보냈습니다 — ' + String(er && er.message || er).slice(0, 60)); });
   }
+  document.getElementById('viewSeries').addEventListener('input', function (e) {
+    if (e.target.matches('[data-srf="song:what"]')) { var w = document.querySelector('#viewSeries [data-shw]'); if (w) w.innerHTML = shWarn(e.target.value); }
+  });
   document.getElementById('viewSeries').addEventListener('change', function (e) {
     if (e.target.matches('[data-lvin]') && e.target.files && e.target.files.length) { lvUp(e.target.files); }
   });
@@ -3449,9 +3455,33 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var g = e.target.closest('[data-srgo]'); if (g) { srSend(g.getAttribute('data-srgo')); return; }
     var sp = e.target.closest('[data-srsp]');
     if (sp) { var p = ((SP || {}).items || [])[Number(sp.getAttribute('data-srsp'))], el = document.querySelector('[data-srf="song:what"]');
-      if (p && el) { el.value = p.artist + ' - ' + p.title; if (p.url) { var m = document.querySelector('[data-srf="song:memo"]'); if (m && !m.value) m.value = p.url; } } return; }
+      if (p && el) { el.value = p.artist + ' - ' + p.title; var w1 = document.querySelector('#viewSeries [data-shw]'); if (w1) w1.innerHTML = shWarn(el.value); if (p.url) { var m = document.querySelector('[data-srf="song:memo"]'); if (m && !m.value) m.value = p.url; } } return; }
     var od = e.target.closest('[data-odr]'); if (od) { OD = (SR || []).concat(OD || []); odDetail(od.getAttribute('data-odr')); }
   });
+  /* 🎵 이미 다룬 곡 (11/4 규효 "같은 노래를 내가 선곡하면 이야기해 주는 거") — scripts/song_archive.py 가 인스타 캡션에서 모은 회차 */
+  var SH = null, SH_OK = '';
+  function shLoad(cb) {
+    if (SH) { if (cb) cb(); return; }
+    fetch('./song_history.json', { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { SH = (d && (d.rows || d.items)) || []; if (cb) cb(); }).catch(function () { SH = []; if (cb) cb(); });
+  }
+  function shNorm(s) { return String(s || '').toLowerCase().replace(/\((feat|ft|with|prod)[^)]*\)/g, '').replace(/[^0-9a-z\u3131-\uD79D\u3040-\u30FF\u4E00-\u9FFF]/g, ''); }
+  function shFind(what) {
+    var m = String(what || '').match(/^\s*(.+?)\s*[-–—\/|]\s*(.+?)\s*$/);
+    if (!m || !SH || !SH.length) return null;
+    var a = shNorm(m[1]), t = shNorm(m[2]);
+    if (!t) return null;
+    var same = SH.filter(function (r) { return shNorm(r.title) === t; });
+    if (!same.length) return null;
+    for (var i = 0; i < same.length; i++) { var b = shNorm(same[i].artist); if (a && b && (b.indexOf(a) >= 0 || a.indexOf(b) >= 0)) return { r: same[i], maybe: false }; }
+    return t.length >= 4 ? { r: same[0], maybe: true } : null;
+  }
+  function shWarn(what) {
+    var h = shFind(what); if (!h) return '';
+    return '<div style="margin-top:6px;padding:8px 10px;border-radius:8px;background:rgba(255,170,0,.13);border:1px solid rgba(255,170,0,.45);font-size:13px;line-height:1.45">⚠ ' +
+      (h.maybe ? '같은 제목을 ' : '이미 ') + esc(String(h.r.n)) + '번째(' + esc(String(h.r.date || '').replace(/-/g, '.')) + ')에 다뤘어요 — 「' + esc(h.r.title) + '」 ' + esc(h.r.artist) +
+      (h.maybe ? ' <small>(아티스트가 달라 보여요 · 같은 곡인지 확인)</small>' : '') + '<br><small style="color:var(--dim)">그래도 맡기려면 맡기기를 한 번 더 누르세요</small></div>';
+  }
   /* 🎵 오늘의 노래 추천곡 (10/30 규효 "오늘의 노래는 내가 직접 선곡 · 추천곡 정도만") — collectors/song_today.write_app */
   var SP = null;
   function spLoad(cb) {
@@ -3484,7 +3514,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         '<div class="g"><b>무엇을</b>' + evChips('type', OD_TYPE, v.type) + '</div>' +
         (v.type === 'draft' ? '<div class="g"><b>형식</b>' + evChips('form', OD_FORM, v.form) + '</div>' : '') +
         (v.type === 'share' ? '' : '<div class="g"><b>' + (v.type === 'story' || v.type === 'song' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>') +
-        (v.type === 'song' ? spBox() : '') +
+        (v.type === 'song' ? '<div data-shw>' + shWarn(v.what) + '</div>' + spBox() : '') +
         '<div class="g"><b>' + (v.type === 'share' ? '본 게시물 링크' : '링크 (있으면)') + '</b><input data-f="url" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '">' +
           '<button type="button" data-paste style="margin-top:6px;font:inherit;font-size:12.5px;border:1px solid var(--line);background:none;color:var(--text);border-radius:8px;padding:5px 10px">📋 복사한 링크 붙여넣기</button></div>' +
         '<div class="g"><b>' + (v.type === 'share' ? '메모 (안 적어도 됨)' : '각도·메모 (있으면)') + '</b><textarea data-f="memo" placeholder="' + (v.type === 'share' ? '예) 숏폼으로 / 표지 한 장으로 / 둘의 예전 관계를 먼저' : '예) 디스 내용보다 둘의 예전 관계를 먼저') + '">' + esc(v.memo || '') + '</textarea></div>' +
@@ -3493,6 +3523,10 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var keep = function () { ['what', 'url', 'memo'].forEach(function (k) { var el = sh.querySelector('[data-f="' + k + '"]'); if (el) v[k] = el.value.trim(); }); };
     draw();
     if (v.type === 'song' && !SP) spLoad(draw);
+    if (!SH) shLoad(function () { if (v.type === 'song') { keep(); draw(); } });
+    sh.addEventListener('input', function (e) {
+      if (v.type === 'song' && e.target.matches('[data-f="what"]')) { var w = sh.querySelector('[data-shw]'); if (w) w.innerHTML = shWarn(e.target.value); }
+    });
     sh.addEventListener('click', function (e) {
       if (e.target === sh || e.target.closest('[data-x]')) { sh.remove(); return; }
       if (e.target.closest('[data-paste]')) {             // 10/20 — 인스타에서 링크 복사 → 여기서 한 번에
@@ -3512,6 +3546,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         if (v.type === 'share' && !/^https?:\/\//.test(v.url || '')) { toast('본 게시물 링크를 넣어 주세요'); return; }
         if (!v.what && v.type !== 'share') { toast((v.type === 'story' || v.type === 'song' ? '곡을' : '소재를') + ' 적어 주세요'); return; }
         if ((v.type === 'story' || v.type === 'song') && !/\s[-–—\/|]\s?|[-–—\/|]/.test(v.what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
+        if (v.type === 'song' && shFind(v.what) && SH_OK !== v.what) { SH_OK = v.what; draw(); toast('이미 다룬 곡이에요 — 맡기려면 한 번 더 누르세요'); return; }
         var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: (v.url || '').slice(0, 300),
           verdict: {}, reason: v.memo || '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
           snapshot: { type: v.type, form: v.type === 'draft' ? v.form : v.type === 'song' ? 's' : (/^(special|tteolgi|meet|intro|listen)$/.test(v.type) ? 'c' : ''), what: v.what, url: v.url || '' } };
@@ -5026,9 +5061,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.04 20:05';
+    a.title = '판 11.04 20:59';
     var ver = document.createElement('span');
-    ver.textContent = '11.04 20:05';
+    ver.textContent = '11.04 20:59';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
