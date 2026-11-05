@@ -119,7 +119,12 @@
     }
    },
    "corner_name": "이번 주 나온 앨범",
-   "corner_no": 3
+   "corner_no": 3,
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfWOIaHGbw0/",
+    "cover": "A",
+    "at": "2026-11-05T13:54+09:00"
+   }
   },
   {
    "source": {
@@ -436,6 +441,10 @@
      "v": {
       "A": "49a921f8"
      }
+    },
+    "evidence_fail": {
+     "msg": "자료 영상·사진을 못 가져왔습니다 (https://www.instagram.com/p/DfTyZLuy7IC/, https://scontent-ssn1-1.cdninstagram.com, https://scontent-ssn1-1.cdninstagram.com, https://cdnimg.melon.co.kr/cm2/album/ima, https://cdni",
+     "at": "2026-11-05T14:25+09:00"
     }
    },
    "pick": {
@@ -757,13 +766,13 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-05T10:00+09:00"
+  "at": "2026-11-05T14:25+09:00"
  },
  "queue": {
-  "next": "2026-11-05T10:03+09:00",
+  "next": "2026-11-05T14:54+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-04T22:53+09:00"
+  "last": "2026-11-05T13:54+09:00"
  },
  "slots": {
   "basis": 312,
