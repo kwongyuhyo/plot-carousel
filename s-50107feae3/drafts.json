@@ -3324,13 +3324,191 @@
    },
    "corner_name": "오늘의 노래",
    "corner_no": 8
+  },
+  {
+   "source": {
+    "id": "claude:ord-65360bd1",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/reel/DfWqRoaTpm0/?mdxt=MWttaHM2Y3NuM3hsbw==",
+    "image": null,
+    "head": "춤췄다고 영업정지된 부산 오방가르드, 두 달 만에 재개장 — 규정은 그대로",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-06T05:19+09:00",
+   "key": "f03f43d9",
+   "by": "claude",
+   "subjects": [
+    "오방가르드"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "춤 때문에 문 닫았던 오방가르드가 다시 열렸지만, 춤을 막는 규정은 그대로다",
+    "why": "인디 매거진들에서 돌고 있는 소재 · 인디 신 연대(후원 앨범·모금 공연)와 국회 발의까지 이어진 사건의 지금"
+   },
+   "added": "claude",
+   "added_at": "2026-11-06T05:19+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가 두 달 만에 다시 문을 열었습니다.\n\n오방가르드는 지난 8월 관객들이 탁자와 의자를 치우고 서서 춤을 추며 공연을 봤다는 이유로 2개월 영업정지 처분을 받았는데요, 일반음식점으로 등록된 곳에서 손님이 춤추는 것을 막는 식품위생법 시행규칙 때문이었습니다. 그사이 인디 창작자 18팀이 후원 앨범 [공범들]을 냈고, 모금 공연 〈댄스 포 오방가르드〉도 열렸습니다.\n\n국회에서는 관객의 호응을 보장하자는 이른바 '오방가르드 사태 방지법'이 잇달아 발의됐지만, 아직 통과되지는 않았습니다. 문은 다시 열렸어도, 무대 앞에 서서 춤추는 일은 법이 바뀌기 전까지 여전히 단속 대상인 셈입니다.\n\n평일에는 뮤직펍, 주말에는 기획 공연과 지역 아티스트 공연으로 운영됩니다.\n\n#PLOT #오방가르드 #공범들 #부산인디 #라이브클럽\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793909952/ib0skyney5aou6zkxevg.jpg\n제목: 춤췄다고 문 닫은|오방가르드, 다시 열다\n부제: 춤을 막는 규정은 아직 그대로\n출처: 경향신문\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793909965/plot_studio/ca4u3tjwvd8bnlc4bla0.mp4\n소제목: \n본문: \n출처: YTN\n",
+    "caption": "관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가 두 달 만에 다시 문을 열었습니다.\n\n오방가르드는 지난 8월 관객들이 탁자와 의자를 치우고 서서 춤을 추며 공연을 봤다는 이유로 2개월 영업정지 처분을 받았는데요, 일반음식점으로 등록된 곳에서 손님이 춤추는 것을 막는 식품위생법 시행규칙 때문이었습니다. 그사이 인디 창작자 18팀이 후원 앨범 [공범들]을 냈고, 모금 공연 〈댄스 포 오방가르드〉도 열렸습니다.\n\n국회에서는 관객의 호응을 보장하자는 이른바 '오방가르드 사태 방지법'이 잇달아 발의됐지만, 아직 통과되지는 않았습니다. 문은 다시 열렸어도, 무대 앞에 서서 춤추는 일은 법이 바뀌기 전까지 여전히 단속 대상인 셈입니다.\n\n평일에는 뮤직펍, 주말에는 기획 공연과 지역 아티스트 공연으로 운영됩니다.\n\n#PLOT #오방가르드 #공범들 #부산인디 #라이브클럽",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909952/ib0skyney5aou6zkxevg.jpg",
+      "credit": "경향신문",
+      "from": "https://img.khan.co.kr/news/2026/10/29/news-p.v1.20260825.33fcb8b81a4445d7869ef7d89ad186ca_P1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909952/ib0skyney5aou6zkxevg.jpg",
+      "credit": "경향신문",
+      "from": "https://img.khan.co.kr/news/2026/10/29/news-p.v1.20260825.33fcb8b81a4445d7869ef7d89ad186ca_P1.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "춤췄다고 문 닫은|오방가르드, 다시 열다",
+      "sub": "춤을 막는 규정은 아직 그대로"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "부산 오방가르드가|다시 문을 열었다",
+      "sub": "영업정지 두 달 만"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "다시 열린 오방가르드,|춤은 아직 불법",
+      "sub": "법이 바뀌기 전까지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — YTN (30초 구간 0:54-1:24)",
+     "표지 사진은 경향신문 기자 사진(하단 '경향신문' 워터마크) — 오방가르드 제공 사진(노컷)은 해상도 미달로 빠짐. 오방가르드 공식 인스타 사진으로 바꿀지 확인"
+    ],
+    "research": [
+     {
+      "title": "세계일보 — ‘춤췄다고 영업정지’ 당한 부산 인디 공연장 오방가르드, 2개월 만에 재개장 (10/26)",
+      "link": "https://www.segye.com/newsView/20261026510974"
+     },
+     {
+      "title": "노컷뉴스 — 인디 공연 중 춤 췄다고 영업 정지…부산 '오방가르드' 재개장 (10/26)",
+      "link": "https://nocutnews.co.kr/news/6597306"
+     },
+     {
+      "title": "뉴스1 — 인디 공연 보며 춤췄다고 영업정지…부산 오방가르드 재개장",
+      "link": "https://www.news1.kr/local/busan-gyeongnam/6331985"
+     },
+     {
+      "title": "경향신문 — “춤은 죄가 아니다”라더니···영업정지 2개월 지나도 규제 그대로 (10/29)",
+      "link": "https://khan.co.kr/article/202610291729001"
+     },
+     {
+      "title": "YTN — \"춤이 죄가 되는 나라\"...인디신이 목소리 높이는 이유 (8/28)",
+      "link": "https://www.youtube.com/watch?v=ulYpGgVkmWs"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909972/d0apwldgcmzyglazsvov.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909976/th5aiv3hxreboqz0jytt.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909972/vmxbptl0gnfyeosoebcr.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909978/smzxnwjqilj9f3f9wkvy.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909978/yqtdheyca66ktjnhej1v.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909972/d0apwldgcmzyglazsvov.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-06T05:19+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793909973/plot_studio/kuhaa7xiwevsawx8sebf.mp4"
+     },
+     "v": {
+      "A": "69813155",
+      "B": "ea6f1c1d",
+      "C": "8e2bfae7"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=ulYpGgVkmWs\n구간: 0:54-1:24\n곡: 문 닫은 라이브클럽\n아티스트: 관객이 춤췄다고\n피처링:\n후킹: \n출처: YTN\n자막: 자동",
+    "caption": "부산 라이브클럽 오방가르드가 문을 닫아야 했던 이유는 관객의 춤이었습니다.\n\n일반음식점으로 등록된 공연장에서는 손님이 춤추는 것이 식품위생법 시행규칙으로 금지돼 있는데요, 탁자와 의자를 치우고 서서 보는 공연만으로도 단속 대상이 될 수 있습니다. 오방가르드는 지난 8월 이 규정에 걸려 2개월 영업정지를 받았습니다.\n\n그 오방가르드가 두 달 만에 다시 문을 열었습니다. 인디 신은 후원 앨범 [공범들]로 힘을 보탰고, 국회에서는 '오방가르드 사태 방지법'이 발의됐지만, 춤을 막는 규정은 아직 그대로입니다.\n\n영상: YTN 8월 28일 리포트\n\n#PLOT #오방가르드 #공범들 #부산인디 #라이브클럽",
+    "hooks": {
+     "A": "관객이 춤췄다고 / 문 닫은 라이브클럽",
+     "B": "식당으로 등록된 곳에선 / 춤추면 불법입니다",
+     "C": "탁자를 치우고 서면 / 그게 단속 대상"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=ulYpGgVkmWs",
+     "credit": "YTN",
+     "range": [
+      54.0,
+      84.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — YTN (30초 구간 0:54-1:24)",
+     "표지 사진은 경향신문 기자 사진(하단 '경향신문' 워터마크) — 오방가르드 제공 사진(노컷)은 해상도 미달로 빠짐. 오방가르드 공식 인스타 사진으로 바꿀지 확인"
+    ],
+    "research": [
+     {
+      "title": "세계일보 — ‘춤췄다고 영업정지’ 당한 부산 인디 공연장 오방가르드, 2개월 만에 재개장 (10/26)",
+      "link": "https://www.segye.com/newsView/20261026510974"
+     },
+     {
+      "title": "노컷뉴스 — 인디 공연 중 춤 췄다고 영업 정지…부산 '오방가르드' 재개장 (10/26)",
+      "link": "https://nocutnews.co.kr/news/6597306"
+     },
+     {
+      "title": "뉴스1 — 인디 공연 보며 춤췄다고 영업정지…부산 오방가르드 재개장",
+      "link": "https://www.news1.kr/local/busan-gyeongnam/6331985"
+     },
+     {
+      "title": "경향신문 — “춤은 죄가 아니다”라더니···영업정지 2개월 지나도 규제 그대로 (10/29)",
+      "link": "https://khan.co.kr/article/202610291729001"
+     },
+     {
+      "title": "YTN — \"춤이 죄가 되는 나라\"...인디신이 목소리 높이는 이유 (8/28)",
+      "link": "https://www.youtube.com/watch?v=ulYpGgVkmWs"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/ulYpGgVkmWs/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793909982/rn48zsapork3zv09uxl9.jpg",
+     "key": "ulYpGgVkmWs@54.0"
+    },
+    "px": {
+     "vid": "ulYpGgVkmWs",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793910055/plot_studio/wb3r5pxcpt4qqf7rghyh.mp4",
+     "off": 9.0,
+     "end": 129.0,
+     "full": 184.0
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
-  "days_left": 4,
-  "done": 34,
+  "days_left": 3,
+  "done": 35,
   "goal": 28,
   "corners": [
    {
@@ -3397,11 +3575,11 @@
     "key": "mal",
     "name": "그 말",
     "weekly": 6,
-    "done": 2,
-    "left": 4,
+    "done": 3,
+    "left": 3,
     "need_today": 1,
     "day": null,
-    "next_no": 7,
+    "next_no": 8,
     "drafts": 0,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
@@ -3498,20 +3676,20 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 7,
+    "drafts": 8,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-05T23:55+09:00"
+  "at": "2026-11-06T05:19+09:00"
  },
  "queue": {
   "next": "2026-11-06T08:00+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-05T23:55+09:00"
+  "last": "2026-11-06T00:12+09:00"
  },
  "slots": {
-  "basis": 318,
+  "basis": 319,
   "card": [
    {
     "from": 18,
@@ -3525,7 +3703,7 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.66,
+    "mult": 1.67,
     "median": 0.74,
     "n": 40
    },
@@ -3551,7 +3729,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.89,
+    "mult": 1.9,
     "median": 0.97,
     "n": 25
    },
