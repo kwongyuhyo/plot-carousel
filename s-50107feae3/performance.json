@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05 15:05 KST",
+ "generated_at": "2026-11-05 19:05 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-04 22:04 KST"
+  "daily": "2026-11-05 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-05T14:57:00+09:00",
+  "fetched_at": "2026-11-05T19:05:51+09:00",
   "posts": [
+   {
+    "t": "2026-11-05T18:58+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "악뮤가 새해 첫 무대를 '소문의 낙원' 앙코르로 엽니다."
+   },
+   {
+    "t": "2026-11-05T16:39+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "방탄소년단(@bts.bighitofficial) 'SWIM'을 둘러싼 표"
+   },
+   {
+    "t": "2026-11-05T15:04+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "혁오(@hyukohofficial)가 6년 만의 정규 앨범 [33]을 1"
+   },
    {
     "t": "2026-11-05T13:54+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2295,10 +2310,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 338,
-  "posted": 102,
-  "posts": 124,
-  "rate": 0.3,
+  "drafts": 343,
+  "posted": 105,
+  "posts": 127,
+  "rate": 0.31,
   "adopted_mult": 0.98,
   "own_mult": 1.04,
   "lanes": {
@@ -2309,12 +2324,12 @@
    },
    "재미": {
     "drafts": 32,
-    "posted": 3,
+    "posted": 4,
     "mult": 1.96
    },
    "정보": {
-    "drafts": 222,
-    "posted": 85,
+    "drafts": 227,
+    "posted": 87,
     "mult": 0.98
    },
    "클립": {
@@ -2355,13 +2370,13 @@
   },
   "corners": {
    "news": {
-    "drafts": 181,
-    "posted": 68,
+    "drafts": 185,
+    "posted": 70,
     "mult": 1.0
    },
    "mal": {
     "drafts": 46,
-    "posted": 5,
+    "posted": 6,
     "mult": 0.96
    },
    "again": {
@@ -2375,7 +2390,7 @@
     "mult": 0.46
    },
    "tteolgi": {
-    "drafts": 14,
+    "drafts": 15,
     "posted": 3,
     "mult": 0.87
    },
@@ -2432,19 +2447,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-11-04",
-    "lane": "정보",
-    "who": "A2O LITE",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "8ebc576d",
-    "posted": "DfUTlHlEwYx",
-    "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습",
-    "url": "https://www.instagram.com/reel/DfUTlHlEwYx/",
-    "mult": 2.95
-   },
    {
     "day": "2026-11-04",
     "lane": "정보",
@@ -2534,6 +2536,19 @@
     "posted": "DfWOIaHGbw0",
     "head": "극장판 〈체인소 맨 레제편〉의 음악이 LP로 국내 예약 판매를 시작했습니다.",
     "url": "https://www.instagram.com/p/DfWOIaHGbw0/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-05",
+    "lane": "정보",
+    "who": "혁오",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "614a66d8",
+    "posted": "DfWWJM3lLh_",
+    "head": "혁오(@hyukohofficial)가 6년 만의 정규 앨범 [33]을 11월 25일 오후 ",
+    "url": "https://www.instagram.com/p/DfWWJM3lLh_/",
     "mult": null
    }
   ]
