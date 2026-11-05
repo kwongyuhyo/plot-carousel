@@ -2387,7 +2387,7 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 5
+   "corner_no": 6
   },
   {
    "source": {
@@ -2510,7 +2510,7 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 6
+   "corner_no": 7
   },
   {
    "source": {
@@ -2812,7 +2812,7 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 7
+   "corner_no": 8
   },
   {
    "source": {
@@ -3320,10 +3320,15 @@
       }
      ],
      "at": "2026-11-05T23:37+09:00"
+    },
+    "published": {
+     "permalink": "https://www.instagram.com/reel/DfX5r34DyGq/",
+     "at": "2026-11-06T05:38+09:00",
+     "via": "manual"
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 8,
+   "corner_no": 9,
    "scheduled": {
     "at": "2026-11-06T07:50+09:00",
     "cover": "B"
@@ -3789,7 +3794,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 3,
-  "done": 35,
+  "done": 36,
   "goal": 28,
   "corners": [
    {
@@ -3844,11 +3849,11 @@
     "key": "song",
     "name": "오늘의 노래",
     "weekly": 7,
-    "done": 4,
-    "left": 3,
+    "done": 5,
+    "left": 2,
     "need_today": 1,
     "day": null,
-    "next_no": 5,
+    "next_no": 6,
     "drafts": 4,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
@@ -3961,16 +3966,16 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-06T05:34+09:00"
+  "at": "2026-11-06T05:38+09:00"
  },
  "queue": {
   "next": "2026-11-06T08:50+09:00",
   "n": 1,
   "gap": 60,
-  "last": "2026-11-06T00:12+09:00"
+  "last": "2026-11-06T05:35+09:00"
  },
  "slots": {
-  "basis": 319,
+  "basis": 320,
   "card": [
    {
     "from": 18,
