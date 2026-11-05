@@ -528,6 +528,46 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '높낮이만 보고 잘했다 못했다 하기 어렵다 — 아래 결별 성과가 그걸 보정한 값이다.</p></section>';
   }
 
+  /* 11/5 규효 "팔로우 전환 재기" (analytics/follow_conv) — 도달은 크게 나는데 팔로워가 그대로인 까닭:
+     들어오는 만큼 나간다. 주별 순증 · 피드 노출 1,000명당 팔로우(갈래별) · 사람을 붙잡은 글 · 많이 나간 날. */
+  function followBox() {
+    var F = P.follow; if (!F || !F.d30 || F.d30.follows == null) return '';
+    var d = F.d30;
+    var wk = (F.weeks || []).filter(function (w) { return w.days >= 5; }).slice(-6);
+    var hi = Math.max.apply(null, wk.map(function (w) { return Math.max(w.follows, w.unfollows); }).concat([1]));
+    var wrows = wk.map(function (w) {
+      return '<div class="ln"><span class="nm">' + esc(weekName(w.week).short) + ' <small style="color:var(--dim)">' + esc(weekName(w.week).days) + '</small></span>' +
+        '<span class="sub">+' + w.follows + ' −' + w.unfollows + '</span>' +
+        '<span class="mb"><i style="width:' + Math.round(w.follows / hi * 100) + '%"></i></span>' +
+        '<b style="color:' + (w.net > 0 ? 'var(--green,#2a8)' : w.net < 0 ? 'var(--red,#c33)' : 'inherit') + '">' + (w.net > 0 ? '+' : '') + w.net + '</b></div>';
+    }).join('');
+    var hk = Math.max.apply(null, (F.kinds || []).map(function (k) { return k.per1k; }).concat([0.01]));
+    var krows = (F.kinds || []).map(function (k) {
+      return '<div class="ln"><span class="nm">' + esc(k.kind) + '</span><span class="sub">' + k.n + '건 · 방문 ' + k.visits1k + '</span>' +
+        '<span class="mb"><i style="width:' + Math.round(k.per1k / hk * 100) + '%"></i></span><b>' + k.per1k + '</b></div>';
+    }).join('');
+    var trows = (F.top || []).map(function (t) {
+      return '<div class="ln"><span class="nm"><a href="https://www.instagram.com/p/' + esc(t.sc) + '/" target="_blank" rel="noopener">' + esc(t.head) + '</a></span>' +
+        '<span class="sub">' + esc(t.date.slice(5)) + ' · 도달 ' + num(t.reach) + '</span><b>+' + t.follows + '</b></div>';
+    }).join('');
+    var srows = (F.spikes || []).map(function (s) {
+      return '<div class="ln"><span class="nm">' + esc(s.posted.join(' / ') || '올린 글 없음') + '</span><span class="sub">' + esc(s.date.slice(5)) + ' · 평소 ' + s.usual + '</span><b>−' + s.unfollows + '</b></div>';
+    }).join('');
+    var r = F.reels;
+    return '<section><h2>팔로우 — 들어오고 나가는 사람</h2>' +
+      '<div class="sum"><div class="box"><div class="lab">하루 팔로우</div><div class="big">+' + d.follows + '</div></div>' +
+      '<div class="box"><div class="lab">하루 언팔</div><div class="big">−' + d.unfollows + '</div></div>' +
+      '<div class="box"><div class="lab">하루 순증</div><div class="big">' + (d.net > 0 ? '+' : '') + d.net + '</div><div class="delta flat">최근 ' + d.days + '일 평균</div></div></div>' +
+      (wrows ? '<div class="rows" style="margin-top:12px">' + wrows + '</div>' : '') +
+      '<p class="note">막대는 그 주에 들어온 사람, 오른쪽 숫자는 나간 사람을 뺀 순증이다. 도달이 커도 순증이 작으면 새로 온 사람을 붙잡지 못한 것이다.</p>' +
+      (krows ? '<h2 style="margin-top:18px">피드 노출 1,000명당 팔로우 — 갈래별 (90일)</h2><div class="rows">' + krows + '</div>' +
+        '<p class="note">전체 피드 ' + F.feed.n + '건 평균 ' + F.feed.per1k + '. 방문은 1,000명당 프로필을 누른 수. 릴스는 메타가 글별 팔로우를 주지 않는다' +
+        (r ? ' — 하루 팔로우를 그날 도달로 나눠 어림하면 릴스 1,000명당 약 ' + r.reels_per1k + ', 피드 ' + r.feed_per1k + ' (' + r.days + '일).' : '.') + '</p>' : '') +
+      (trows ? '<h2 style="margin-top:18px">사람을 가장 많이 붙잡은 피드 (60일)</h2><div class="rows">' + trows + '</div>' : '') +
+      (srows ? '<h2 style="margin-top:18px">많이 나간 날 (30일)</h2><div class="rows">' + srows + '</div><p class="note">평소보다 언팔이 확 튄 날과 그날 올린 글. 같은 결이 되풀이되면 그 소재가 기존 독자를 밀어낸다는 신호다.</p>' : '') +
+      '</section>';
+  }
+
   function kindBars() {
     var solid = (P.kinds || []).filter(function (k) { return k.stable; });
     var shaky = (P.kinds || []).filter(function (k) { return !k.stable; });
@@ -634,7 +674,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function render() {
     var host = document.getElementById('body');
     document.getElementById('stamp').textContent = (P.generated_at || '') + ' 기준';
-    var out = sumBox() + weekBars() + drafts() + kindBars() + balance() + topPosts() + runs();
+    var out = sumBox() + followBox() + weekBars() + drafts() + kindBars() + balance() + topPosts() + runs();
     host.innerHTML = out || '<div class="empty">아직 실을 숫자가 없습니다.</div>';
   }
 
@@ -659,9 +699,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.05 19:37';
+    a.title = '판 11.05 19:43';
     var ver = document.createElement('span');
-    ver.textContent = '11.05 19:37';
+    ver.textContent = '11.05 19:43';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);

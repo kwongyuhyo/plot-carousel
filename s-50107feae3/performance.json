@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05 19:05 KST",
+ "generated_at": "2026-11-05 19:43 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,7 +1676,7 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-05 15:05 KST"
+  "daily": "2026-11-05 19:05 KST"
  },
  "feed": {
   "fetched_at": "2026-11-05T19:05:51+09:00",
@@ -2310,7 +2310,7 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 343,
+  "drafts": 344,
   "posted": 105,
   "posts": 127,
   "rate": 0.31,
@@ -2328,7 +2328,7 @@
     "mult": 1.96
    },
    "정보": {
-    "drafts": 227,
+    "drafts": 228,
     "posted": 87,
     "mult": 0.98
    },
@@ -2370,7 +2370,7 @@
   },
   "corners": {
    "news": {
-    "drafts": 185,
+    "drafts": 186,
     "posted": 70,
     "mult": 1.0
    },
@@ -2550,6 +2550,202 @@
     "head": "혁오(@hyukohofficial)가 6년 만의 정규 앨범 [33]을 11월 25일 오후 ",
     "url": "https://www.instagram.com/p/DfWWJM3lLh_/",
     "mult": null
+   }
+  ]
+ },
+ "follow": {
+  "at": "2026-11-05T19:43+09:00",
+  "d30": {
+   "days": 30,
+   "follows": 16.2,
+   "unfollows": 14.9,
+   "net": 1.3
+  },
+  "weeks": [
+   {
+    "week": "2026-W38",
+    "follows": 228,
+    "unfollows": 125,
+    "net": 103,
+    "days": 7
+   },
+   {
+    "week": "2026-W39",
+    "follows": 143,
+    "unfollows": 131,
+    "net": 12,
+    "days": 7
+   },
+   {
+    "week": "2026-W40",
+    "follows": 103,
+    "unfollows": 91,
+    "net": 12,
+    "days": 7
+   },
+   {
+    "week": "2026-W41",
+    "follows": 140,
+    "unfollows": 99,
+    "net": 41,
+    "days": 7
+   },
+   {
+    "week": "2026-W42",
+    "follows": 113,
+    "unfollows": 97,
+    "net": 16,
+    "days": 7
+   },
+   {
+    "week": "2026-W43",
+    "follows": 119,
+    "unfollows": 140,
+    "net": -21,
+    "days": 7
+   },
+   {
+    "week": "2026-W44",
+    "follows": 91,
+    "unfollows": 82,
+    "net": 9,
+    "days": 7
+   },
+   {
+    "week": "2026-W45",
+    "follows": 22,
+    "unfollows": 28,
+    "net": -6,
+    "days": 2
+   }
+  ],
+  "feed": {
+   "n": 168,
+   "reach": 3627310,
+   "follows": 484,
+   "per1k": 0.13
+  },
+  "kinds": [
+   {
+    "kind": "인물해부",
+    "n": 23,
+    "reach": 1138824,
+    "follows": 180,
+    "per1k": 0.16,
+    "visits1k": 4.2
+   },
+   {
+    "kind": "공연·페스티벌",
+    "n": 30,
+    "reach": 148005,
+    "follows": 20,
+    "per1k": 0.14,
+    "visits1k": 1.8
+   },
+   {
+    "kind": "기타",
+    "n": 33,
+    "reach": 284462,
+    "follows": 37,
+    "per1k": 0.13,
+    "visits1k": 2.2
+   },
+   {
+    "kind": "갈래 모름",
+    "n": 24,
+    "reach": 1494413,
+    "follows": 178,
+    "per1k": 0.12,
+    "visits1k": 2.8
+   },
+   {
+    "kind": "갈등·반응",
+    "n": 23,
+    "reach": 437636,
+    "follows": 54,
+    "per1k": 0.12,
+    "visits1k": 2.6
+   },
+   {
+    "kind": "발매·신보",
+    "n": 32,
+    "reach": 88575,
+    "follows": 10,
+    "per1k": 0.11,
+    "visits1k": 2.8
+   }
+  ],
+  "top": [
+   {
+    "date": "2026-09-20",
+    "sc": "DdgkTJkj_UV",
+    "follows": 92,
+    "reach": 865856,
+    "per1k": 0.11,
+    "kind": "",
+    "head": "양홍원(@yanghongwon)이 한 시간 사이에 스토리 두 개를 올렸습니다. 하나…"
+   },
+   {
+    "date": "2026-09-07",
+    "sc": "Dc-3gvGjywQ",
+    "follows": 42,
+    "reach": 253969,
+    "per1k": 0.17,
+    "kind": "인물해부",
+    "head": "리센느 제나 나무위키 털기 올해 가장 자주 언급된 걸그룹은 역시 리센느인데요. 리센…"
+   },
+   {
+    "date": "2026-09-10",
+    "sc": "DdG4ucoj7Kf",
+    "follows": 19,
+    "reach": 103722,
+    "per1k": 0.18,
+    "kind": "인물해부",
+    "head": "우리는 양홍원(@yanghongwon)을 시인래퍼라고 부릅니다. 1999년생, 〈고…"
+   },
+   {
+    "date": "2026-09-14",
+    "sc": "DdQ_ZtwD5_S",
+    "follows": 17,
+    "reach": 43756,
+    "per1k": 0.39,
+    "kind": "기타",
+    "head": "지난 8월 19일 [BiiiG]으로 돌아온 빅뱅과 더불어 9월 10일 1년 만에 선…"
+   },
+   {
+    "date": "2026-09-20",
+    "sc": "DdgsbHKjziZ",
+    "follows": 15,
+    "reach": 102912,
+    "per1k": 0.15,
+    "kind": "",
+    "head": "양홍원이 문득 빅나티가 그리워진 모양입니다. 양홍원이 서울 동부구치소를 배경으로 최…"
+   },
+   {
+    "date": "2026-09-20",
+    "sc": "DdgsGSVj-qo",
+    "follows": 13,
+    "reach": 33494,
+    "per1k": 0.39,
+    "kind": "",
+    "head": "실리카겔이라는 이름은 껌통에서 나왔습니다. 대학 시절 팀명을 못 정하고 있을 때 김…"
+   }
+  ],
+  "reels": {
+   "reels_per1k": 0.1,
+   "feed_per1k": 0.03,
+   "base": 16.6,
+   "days": 52
+  },
+  "spikes": [
+   {
+    "date": "2026-10-20",
+    "unfollows": 41,
+    "usual": 14.9,
+    "posted": [
+     "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@r…",
+     "인디고뮤직(@indigomusic_official)이라는 이름…"
+    ]
    }
   ]
  },
