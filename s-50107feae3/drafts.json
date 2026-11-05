@@ -119,7 +119,7 @@
     }
    },
    "corner_name": "이번 주 나온 앨범",
-   "corner_no": 3,
+   "corner_no": 4,
    "published": {
     "permalink": "https://www.instagram.com/p/DfWOIaHGbw0/",
     "cover": "A",
@@ -452,7 +452,12 @@
     "why": "혁오 인스타 평소 1.7배 · 6년 만의 정규 · [20]부터 이어진 숫자 제목이라는 연결고리",
     "at": "2026-11-05T10:00+09:00"
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfWWJM3lLh_/",
+    "cover": "A",
+    "at": "2026-11-05T15:04+09:00"
+   }
   },
   {
    "source": {
@@ -588,13 +593,203 @@
    },
    "corner_name": "그날의 앨범",
    "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:brk-948d99e3",
+    "account": "@갈등·반응",
+    "url": "https://www.starnewskorea.com/music/2026/11/05/2026110513092322064",
+    "image": null,
+    "head": "'SWIM' 표절 소송, 美 작곡가들이 넉 달 만에 취하",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-05T15:02+09:00",
+   "key": "6775394d",
+   "by": "claude",
+   "subjects": [
+    "방탄소년단"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "'SWIM' 표절 소송, 넉 달 만에 원고 측이 스스로 거둬들였다 — 지난달 별도 소송 기각까지 한 달 새 정리",
+    "why": "속보 감지 · 올해 BTS 타이틀곡을 따라다닌 표절 의혹이 끝난 날"
+   },
+   "added": "claude",
+   "added_at": "2026-11-05T15:02+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n방탄소년단(@bts.bighitofficial) 'SWIM'을 둘러싼 표절 소송이 넉 달 만에 취하됐습니다.\n\n미국 작곡가 스티브 쿠퍼, 존 샌들러, 그레이린 존슨은 지난 7월 자신들의 동명 데모곡과 'SWIM'이 멜로디와 후렴, 가사까지 닮았다며 하이브와 빅히트 뮤직 등을 상대로 소송을 냈는데요, 원고 측 변호인이 법원에 소송을 전면 취하하겠다는 서류를 내면서 다툼이 멈췄습니다.\n\n빅히트 뮤직은 소송이 제기된 당시부터 'SWIM'이 독립적으로 만든 곡이라며 강하게 맞서 왔습니다. 정규 5집 [ARIRANG]의 타이틀곡을 따라다니던 표절 의혹이 이렇게 일단락됐습니다.\n\n#PLOT #방탄소년단 #BTS #SWIM #ARIRANG #빅히트뮤직\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793858525/qsns1y5t1oigeontarte.jpg\n제목: 방탄소년단 'SWIM'|표절 소송 취하\n부제: 미국 작곡가 3명, 넉 달 만에 소송 거둬\n출처: @bts.bighitofficial\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793858568/plot_studio/tmdqogbkx67umbxavjao.mp4\n소제목: \n본문: \n출처: HYBE LABELS\n",
+    "caption": "방탄소년단(@bts.bighitofficial) 'SWIM'을 둘러싼 표절 소송이 넉 달 만에 취하됐습니다.\n\n미국 작곡가 스티브 쿠퍼, 존 샌들러, 그레이린 존슨은 지난 7월 자신들의 동명 데모곡과 'SWIM'이 멜로디와 후렴, 가사까지 닮았다며 하이브와 빅히트 뮤직 등을 상대로 소송을 냈는데요, 원고 측 변호인이 법원에 소송을 전면 취하하겠다는 서류를 내면서 다툼이 멈췄습니다.\n\n빅히트 뮤직은 소송이 제기된 당시부터 'SWIM'이 독립적으로 만든 곡이라며 강하게 맞서 왔습니다. 정규 5집 [ARIRANG]의 타이틀곡을 따라다니던 표절 의혹이 이렇게 일단락됐습니다.\n\n#PLOT #방탄소년단 #BTS #SWIM #ARIRANG #빅히트뮤직",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858525/qsns1y5t1oigeontarte.jpg",
+      "credit": "@bts.bighitofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273399/xupcz9w6lppfdspdvlat.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858543/rhkbadetif1ka5wekh6k.jpg",
+      "credit": "@bts.bighitofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273432/ohhpboyl9vqimb0dltip.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858545/oyucvnknpqhp4d29ey74.jpg",
+      "credit": "@bts.bighitofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273417/fnkxvjfrj9svnlmgylh9.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/Q3MXKrnv/ba092cfd9617.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/129/27/820/12927820_20260320091310.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858525/qsns1y5t1oigeontarte.jpg",
+      "credit": "@bts.bighitofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273399/xupcz9w6lppfdspdvlat.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858543/rhkbadetif1ka5wekh6k.jpg",
+      "credit": "@bts.bighitofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273432/ohhpboyl9vqimb0dltip.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858545/oyucvnknpqhp4d29ey74.jpg",
+      "credit": "@bts.bighitofficial",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273417/fnkxvjfrj9svnlmgylh9.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/Q3MXKrnv/ba092cfd9617.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/129/27/820/12927820_20260320091310.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "방탄소년단 'SWIM'|표절 소송 취하",
+      "sub": "미국 작곡가 3명, 넉 달 만에 소송 거둬"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "넉 달 만에 끝난|'SWIM' 표절 소송",
+      "sub": "원고 측이 법원에 전면 취하 요청"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "BTS 'SWIM' 둘러싼|표절 의혹 일단락",
+      "sub": "미국 작곡가들 소송 취하"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — HYBE LABELS (MV 1:23 둘째 후렴부터 · 최근 7일 안에 같은 MV 쓴 적 없는지)",
+     "숏폼 끝 1:42 '깊고 깊은 물'(랩 시작) 앞에서 끊을지 — 지금 1:50까지"
+    ],
+    "research": [
+     {
+      "title": "스타뉴스 — 방탄소년단 'SWIM' 표절 의혹 일단락..'美작곡가들 소송 취하'",
+      "link": "https://www.starnewskorea.com/music/2026/11/05/2026110513092322064"
+     },
+     {
+      "title": "조이뉴스24 — 방탄소년단 'SWIM' 표절 의혹 종결⋯'美 작곡가들 소송 취하'",
+      "link": "http://www.joynews24.com/view/2023049"
+     },
+     {
+      "title": "HYBE LABELS — BTS 'SWIM' Official MV",
+      "link": "https://www.youtube.com/watch?v=b4iVv91Z6lY"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858577/oeuvaovpjztbsl5k2zdn.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858580/qtuxzyaxd23ijstcvdna.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858576/f2pzh8z9mefioiqrfexk.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858582/uvahpo9pm9pd2rs6z6oq.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858582/zacr2wsx8glcixmxtnmd.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793858577/oeuvaovpjztbsl5k2zdn.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-05T15:03+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793858577/plot_studio/oslvogmxzpntlkje0god.mp4"
+     },
+     "v": {
+      "A": "647fc1be",
+      "B": "6233ae1a",
+      "C": "ad665887"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=b4iVv91Z6lY\n구간: 1:23-1:50\n곡: 방탄소년단 'SWIM'\n아티스트: 표절 소송을 털어낸\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: 방탄소년단 - SWIM\n가사: 자동",
+    "caption": "방탄소년단(@bts.bighitofficial) 'SWIM'을 둘러싼 표절 소송이 넉 달 만에 취하됐습니다.\n\n미국 작곡가 세 명은 지난 7월 자신들의 동명 데모곡과 'SWIM'이 닮았다며 하이브와 빅히트 뮤직 등을 상대로 소송을 냈는데요, 원고 측 변호인이 법원에 전면 취하 서류를 내면서 다툼이 멈췄습니다.\n\n빅히트 뮤직은 처음부터 'SWIM'이 독립적으로 만든 곡이라고 맞서 왔습니다. 정규 5집 [ARIRANG] 타이틀곡의 둘째 후렴, \"Swim, swim\" 대목입니다.\n\n#PLOT #방탄소년단 #BTS #SWIM #ARIRANG",
+    "hooks": {
+     "A": "표절 소송을 털어낸 / 방탄소년단 'SWIM'",
+     "B": "미국 작곡가들이 / 넉 달 만에 거둔 소송",
+     "C": "의혹은 가라앉고 / 다시 뛰어드는 'SWIM'"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=b4iVv91Z6lY",
+     "credit": "HYBE LABELS",
+     "range": [
+      83.0,
+      110.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — HYBE LABELS (MV 1:23 둘째 후렴부터 · 최근 7일 안에 같은 MV 쓴 적 없는지)",
+     "숏폼 끝 1:42 '깊고 깊은 물'(랩 시작) 앞에서 끊을지 — 지금 1:50까지"
+    ],
+    "research": [
+     {
+      "title": "스타뉴스 — 방탄소년단 'SWIM' 표절 의혹 일단락..'美작곡가들 소송 취하'",
+      "link": "https://www.starnewskorea.com/music/2026/11/05/2026110513092322064"
+     },
+     {
+      "title": "조이뉴스24 — 방탄소년단 'SWIM' 표절 의혹 종결⋯'美 작곡가들 소송 취하'",
+      "link": "http://www.joynews24.com/view/2023049"
+     },
+     {
+      "title": "HYBE LABELS — BTS 'SWIM' Official MV",
+      "link": "https://www.youtube.com/watch?v=b4iVv91Z6lY"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/b4iVv91Z6lY/maxresdefault.jpg",
+    "px": {
+     "vid": "b4iVv91Z6lY",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793858664/plot_studio/fv6smncwssmzbyeqvnmb.mp4",
+     "off": 38.0,
+     "end": 155.0,
+     "full": 244.0
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 4,
-  "done": 28,
+  "done": 29,
   "goal": 28,
   "corners": [
    {
@@ -733,11 +928,11 @@
     "key": "newalbums",
     "name": "이번 주 나온 앨범",
     "weekly": 1,
-    "done": 1,
+    "done": 2,
     "left": 0,
     "need_today": 0,
     "day": 4,
-    "next_no": 3,
+    "next_no": 4,
     "drafts": 1,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
@@ -762,20 +957,20 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-05T14:25+09:00"
+  "at": "2026-11-05T15:04+09:00"
  },
  "queue": {
-  "next": "2026-11-05T14:54+09:00",
+  "next": "2026-11-05T16:04+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-05T13:54+09:00"
+  "last": "2026-11-05T15:04+09:00"
  },
  "slots": {
-  "basis": 312,
+  "basis": 313,
   "card": [
    {
     "from": 18,
