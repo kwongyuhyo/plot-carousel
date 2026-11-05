@@ -323,13 +323,13 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "이번 회차 목표 '인물해부' · 리센느·존박 두 화제를 한 제작사로 묶는 PLOT 만의 해부 · 미디어오늘 4일 보도로 지금 도는 이야기",
-    "at": "2026-11-05T10:00+09:00"
-   },
    "corner_name": "나무위키 털기",
-   "corner_no": 25
+   "corner_no": 25,
+   "pick": {
+    "rank": 3,
+    "why": "아침 회차 1순위 그대로 · 아직 발행 전 · 리센느·존박 두 화제를 한 제작사로 묶는 해부",
+    "at": "2026-11-05T16:27+09:00"
+   }
   },
   {
    "source": {
@@ -455,11 +455,6 @@
      "msg": "자료 영상·사진을 못 가져왔습니다 (https://www.instagram.com/p/DfTyZLuy7IC/, https://scontent-ssn1-1.cdninstagram.com, https://scontent-ssn1-1.cdninstagram.com, https://cdnimg.melon.co.kr/cm2/album/ima, https://cdni",
      "at": "2026-11-05T14:25+09:00"
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "혁오 인스타 평소 1.7배 · 6년 만의 정규 · [20]부터 이어진 숫자 제목이라는 연결고리",
-    "at": "2026-11-05T10:00+09:00"
    },
    "corner_name": "소식",
    "published": {
@@ -594,11 +589,6 @@
       "A": "ae166605"
      }
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "고정 연재 「그날의 앨범」 · 발매 15주년(11/8)이 이번 주 · 앨범 제목이 추모 장소가 된 이야기",
-    "at": "2026-11-05T10:00+09:00"
    },
    "corner_name": "그날의 앨범",
    "corner_no": 3
@@ -861,13 +851,453 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:leechanhyuk-hajisoo",
+    "account": "텐아시아 11/5",
+    "url": "https://www.tenasia.co.kr/article/2026110570374",
+    "image": null,
+    "head": "이찬혁, '♥열애설' 하지수와 방송 동반 출연?…손 맞잡은 모습",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-05T16:27+09:00",
+   "key": "7877e41b",
+   "by": "claude",
+   "subjects": [
+    "이찬혁",
+    "하지수"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "이찬혁·하지수 열애설 타임라인 — '춤' 뮤비 연인 역(2023) → 열애설(2025.1) → '소문의 낙원' 뮤비(2026.4) → 〈전참시〉 스윙댄스(10/31)",
+    "why": "🍯 의외의 만남 1순위 · 기사 6건 · 공개된 행동의 순서로 엮는 PLOT 열애설 방식 · 뮤비 두 편이 음악적 연결"
+   },
+   "added": "claude",
+   "added_at": "2026-11-05T16:27+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n이찬혁(@leechanhyuk)과 배우 하지수의 열애설이 다시 돌고 있습니다.\n\n지난달 31일 방송된 MBC 〈전지적 참견 시점〉에서 이찬혁이 세운 회사 '영감의 샘터'의 스윙댄스 수업이 공개됐는데요, 파트너를 바꿔 가며 추는 수업에서 하지수가 이찬혁과 손을 맞잡고 춤을 췄습니다.\n\n둘은 뮤직비디오에서도 두 번 함께했습니다. 2023년 이찬혁비디오의 첫 앨범 [우산] 타이틀곡 '춤'에서 연인으로 호흡을 맞췄고, 올해 4월에는 악뮤 정규 4집 [개화]의 선공개곡 '소문의 낙원' 뮤직비디오에 하지수가 다시 나왔습니다.\n\n지난해 1월 열애설이 처음 나왔을 때 이찬혁 측은 사생활이라 확인이 어렵다고 답했고, 두 사람은 지금까지 열애에 대해 따로 밝힌 적이 없습니다.\n\n#PLOT #이찬혁 #하지수 #악뮤 #전지적참견시점\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793863651/nb9o3awn2ow9tnnesqjf.jpg\n제목: 이찬혁 x 하지수|뮤비에서 전참시까지\n부제: 다시 돌고 있는 열애설\n출처: @leechanhyuk\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793821529/s2j0nmzq8h5vtdsckij7.jpg\n소제목: 2023년, '춤'\n본문: 두 사람은 이찬혁비디오의 첫 앨범 [우산] 타이틀곡 '춤' 뮤직비디오에서 연인 역으로 호흡을 맞췄습니다.\n출처: @leechanhyuk\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793821496/v89dx4ontimgjbtcolhk.jpg\n소제목: 2025년 1월, 열애설\n본문: 지난해 1월 두 사람의 열애설이 처음 나왔습니다. 당시 이찬혁의 소속사였던 YG엔터테인먼트는 \"아티스트의 사생활은 확인이 불가하다\"고 답했습니다.\n출처: @leechanhyuk\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793821479/wxxratezwvrmr7psxl79.jpg\n소제목: 2026년 4월, '소문의 낙원'\n본문: 올해 4월 공개된 악뮤 정규 4집 [개화]의 선공개곡 '소문의 낙원' 뮤직비디오에 하지수가 다시 얼굴을 비쳤습니다. 하지수 측도 출연 사실을 확인했습니다.\n출처: @leechanhyuk\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793378724/tldol1lna8mexdlyuyvi.jpg\n소제목: 10월 31일, 스윙댄스\n본문: MBC 〈전지적 참견 시점〉에서 이찬혁이 세운 회사 '영감의 샘터'의 스윙댄스 수업이 공개됐습니다. 파트너를 바꿔 가며 추는 수업에서 이찬혁과 하지수가 손을 맞잡고 춤을 췄습니다.||두 사람은 지금까지 열애에 대해 따로 밝힌 적이 없습니다.\n출처:\n",
+    "caption": "이찬혁(@leechanhyuk)과 배우 하지수의 열애설이 다시 돌고 있습니다.\n\n지난달 31일 방송된 MBC 〈전지적 참견 시점〉에서 이찬혁이 세운 회사 '영감의 샘터'의 스윙댄스 수업이 공개됐는데요, 파트너를 바꿔 가며 추는 수업에서 하지수가 이찬혁과 손을 맞잡고 춤을 췄습니다.\n\n둘은 뮤직비디오에서도 두 번 함께했습니다. 2023년 이찬혁비디오의 첫 앨범 [우산] 타이틀곡 '춤'에서 연인으로 호흡을 맞췄고, 올해 4월에는 악뮤 정규 4집 [개화]의 선공개곡 '소문의 낙원' 뮤직비디오에 하지수가 다시 나왔습니다.\n\n지난해 1월 열애설이 처음 나왔을 때 이찬혁 측은 사생활이라 확인이 어렵다고 답했고, 두 사람은 지금까지 열애에 대해 따로 밝힌 적이 없습니다.\n\n#PLOT #이찬혁 #하지수 #악뮤 #전지적참견시점",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863651/nb9o3awn2ow9tnnesqjf.jpg",
+      "credit": "@leechanhyuk",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793383001/vhlalvduibn0c3zlmgmr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863654/dutjoqippt8cympp57gf.jpg",
+      "credit": "@leechanhyuk",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793821496/v89dx4ontimgjbtcolhk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793378724/tldol1lna8mexdlyuyvi.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_obmol5v0/auto_pdb_이찬혁_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793378803/ukze6vilvvdbd9v8ntuw.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_xalrh88d/auto_pdb_이찬혁_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793383001/vhlalvduibn0c3zlmgmr.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/761596465_18612842830048998_5630414195781515409_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZKFA8Wg0Bf0Q7kNvwFDVK0A&_nc_oc=AdpHyK_2zjuvL3cJB3cTtYLHQ0DvbXF31aXcfQlDa6yPL3EMlqqAVIEei3nIKxIw2Hc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=o6EqOpI3kJsfSwVCqt7ptw&oh=00_AQSKXuEKcXTn3B-O-dQdR0Sc4--Yi2ZLXivP8f4JbqJUUA&oe=6AEA987A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793821496/v89dx4ontimgjbtcolhk.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/658744132_18584654896048998_9113583155037245743_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=S_WoXYi7gJUQ7kNvwHP7arz&_nc_oc=AdqzGj7NRy4eZhMdAFK5oCbMf3gvwzUFRnb5dwjzvRAVM_WqSpKuB-tAO0rDwm52UTY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5AUi8BDJRJuuoiZWTDjC3g&oh=00_AQSoVFENRzOGLGid8v9bUHO7m5TAmknJ3a5GBHedFtx-qg&oe=6AF14A26"
+     },
+     {
+      "url": "https://i.ibb.co/xbsPfb7/57372cd00a69.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t39.30808-6/447603782_18437760682048998_8530414904773238165_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-U94DRJFbxoQ7kNvwFwajBp&_nc_oc=Adr9Cxn6l1oFg_Qay4V-5OXmda8vbPkWTQWKphOaXOZfU6Wx83v1TiU1TIBwUz-VeFA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=rC3BvM0BlnemnlLu8sWO8g&oh=00_AQRqDY_ADbjem8sPse7znSpHyQNiKTTMgFuUszgUZs2pmA&oe=6AED0288"
+     },
+     {
+      "url": "https://i.ibb.co/1G8YYG7C/b0364cdf74dc.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649602966_17971172675861219_2125749403473810325_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=C-yTlpuFNPoQ7kNvwHl4XMA&_nc_oc=AdrDHOvITaWCeROJon9znzN0KMAnyvfutqFqaJjga24lrgEOQWBpwEXVg4mOnJKLfTo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=rC3BvM0BlnemnlLu8sWO8g&oh=00_AQQT7ULBqjSnK_RQemMWl1--ZcboVtp1VlIHWkXdVhy_Gg&oe=6AECE547"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863651/nb9o3awn2ow9tnnesqjf.jpg",
+      "credit": "@leechanhyuk",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793383001/vhlalvduibn0c3zlmgmr.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863654/dutjoqippt8cympp57gf.jpg",
+      "credit": "@leechanhyuk",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793821496/v89dx4ontimgjbtcolhk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793378724/tldol1lna8mexdlyuyvi.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_obmol5v0/auto_pdb_이찬혁_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793378803/ukze6vilvvdbd9v8ntuw.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_xalrh88d/auto_pdb_이찬혁_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793383001/vhlalvduibn0c3zlmgmr.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/761596465_18612842830048998_5630414195781515409_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZKFA8Wg0Bf0Q7kNvwFDVK0A&_nc_oc=AdpHyK_2zjuvL3cJB3cTtYLHQ0DvbXF31aXcfQlDa6yPL3EMlqqAVIEei3nIKxIw2Hc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=o6EqOpI3kJsfSwVCqt7ptw&oh=00_AQSKXuEKcXTn3B-O-dQdR0Sc4--Yi2ZLXivP8f4JbqJUUA&oe=6AEA987A"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793821496/v89dx4ontimgjbtcolhk.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/658744132_18584654896048998_9113583155037245743_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=S_WoXYi7gJUQ7kNvwHP7arz&_nc_oc=AdqzGj7NRy4eZhMdAFK5oCbMf3gvwzUFRnb5dwjzvRAVM_WqSpKuB-tAO0rDwm52UTY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5AUi8BDJRJuuoiZWTDjC3g&oh=00_AQSoVFENRzOGLGid8v9bUHO7m5TAmknJ3a5GBHedFtx-qg&oe=6AF14A26"
+     },
+     {
+      "url": "https://i.ibb.co/xbsPfb7/57372cd00a69.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t39.30808-6/447603782_18437760682048998_8530414904773238165_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=-U94DRJFbxoQ7kNvwFwajBp&_nc_oc=Adr9Cxn6l1oFg_Qay4V-5OXmda8vbPkWTQWKphOaXOZfU6Wx83v1TiU1TIBwUz-VeFA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=rC3BvM0BlnemnlLu8sWO8g&oh=00_AQRqDY_ADbjem8sPse7znSpHyQNiKTTMgFuUszgUZs2pmA&oe=6AED0288"
+     },
+     {
+      "url": "https://i.ibb.co/1G8YYG7C/b0364cdf74dc.jpg",
+      "credit": "@leechanhyuk",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/649602966_17971172675861219_2125749403473810325_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=C-yTlpuFNPoQ7kNvwHl4XMA&_nc_oc=AdrDHOvITaWCeROJon9znzN0KMAnyvfutqFqaJjga24lrgEOQWBpwEXVg4mOnJKLfTo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=rC3BvM0BlnemnlLu8sWO8g&oh=00_AQQT7ULBqjSnK_RQemMWl1--ZcboVtp1VlIHWkXdVhy_Gg&oe=6AECE547"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "이찬혁 x 하지수|뮤비에서 전참시까지",
+      "sub": "다시 돌고 있는 열애설"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "⚠️ 11/4 pm 숏폼 초안 claude:chanhyuk-hajisu-swing(발행 안 됨)과 같은 이야기 — 이건 타임라인 카드판 · 둘 중 하나만 올릴 것 (아침 회차는 반복으로 버렸음)",
+     "열애설은 확정하지 않는 '돌고 있다' 꼴 · 방송 화면은 쓰지 않고 이찬혁 인스타·사진 DB 사진만 · 사진 DB '하지수' 칸에 다른 사람(남성 배우) 사진이 섞여 있어 하지수 사진은 모두 뺐음 — 사진은 이찬혁 인스타뿐",
+     "'춤'·'소문의 낙원' 뮤비 속 하지수 장면을 영상 장으로 넣고 싶으면 시각 확인이 필요해 이번엔 뺐음"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 11/5 — 전참시 영감의 샘터 스포츠 데이 · 파트너 바꿔 추는 스윙댄스에서 하지수와 손 맞잡아 · 2025년 1월 열애설 · '우산' 타이틀곡 MV 연인 역 · YG \"사생활은 확인 불가\"",
+      "link": "https://www.tenasia.co.kr/article/2026110570374"
+     },
+     {
+      "title": "인사이트 11/5 — 10월 31일 전참시 · 2023 '우산' '춤' MV 연인 역 · 2026년 4월 [개화] 선공개곡 '소문의 낙원' MV 출연 · 양측 사생활 확인 불가",
+      "link": "https://www.insight.co.kr/news/580788"
+     },
+     {
+      "title": "헤럴드 4/2 — '소문의 낙원' MV 4월 3일 공개 · 하지수 출연 · 지난해 1월 열애설 · YG 사생활 확인 불가",
+      "link": "https://www.heraldk.com/article/2026040223324543643"
+     },
+     {
+      "title": "iMBC — 전참시 422회 10/31 방송 예고 · 악뮤 남매 (스윙댄스·하지수 언급은 없음)",
+      "link": "https://enews.imbc.com/News/RetrieveNewsInfo/522847"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863666/c0ne4qzdaxz0aegtgslm.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863666/wuuza1kxmxwfshalng7d.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863666/uymyy1ckzbpftynbrp6l.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863666/uehdnkvprxnizyrmyupp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863668/k31wb6cl3mmg5xrp5bke.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863668/scz2ornk03tmrndf3x3v.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863666/c0ne4qzdaxz0aegtgslm.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-05T16:27+09:00",
+     "v": {
+      "A": "39bbd777"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "열애설 타임라인은 역대 2위(pH-1·레이 21만)의 결 · 오늘 기사 6건 · 11/4 숏폼 대신 카드로 올린다면",
+    "at": "2026-11-05T16:27+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:and2ble-who",
+    "account": "텐아시아 10/11",
+    "url": "https://www.tenasia.co.kr/article/2026100927204",
+    "image": null,
+    "head": "앤더블, 재데뷔 5개월 만에 성숙해진 비주얼",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-05T16:27+09:00",
+   "key": "d7b91b41",
+   "by": "claude",
+   "subjects": [
+    "앤더블"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "앤더블은 누구인가 — 제로베이스원 출신 넷과 이븐 출신 하나, 다섯 모두의 두 번째 데뷔",
+    "why": "이번 회차 목표 인물해부 · 기획 소스 '우리가 안 다룬 이름' 뉴스 50건 · 매거진 2곳 · 미니 2집(10/27) 첫날 52만 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-05T16:27+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n앤더블은 다섯 명 모두가 두 번째 데뷔를 한 그룹입니다.\n\n장하오, 리키, 김규빈, 한유진은 2023년 Mnet 〈보이즈 플래닛〉으로 결성된 제로베이스원 출신인데요, 같은 프로그램에서 나온 그룹 이븐 출신 유승언이 합류해 지난 5월 YH엔터테인먼트에서 새로 시작했습니다. 팀 이름은 'AND'와 'DOUBLE'을 합친 말입니다.\n\n지난달 27일 낸 미니 2집 [Sequence 02: Attraction]은 한터차트 집계로 첫날 52만 장 넘게 팔렸습니다. 데뷔 쇼케이스에서 유승언이 한 말 그대로, \"이 5명이라면\"에서 출발한 팀입니다.\n\n#PLOT #앤더블 #AND2BLE #장하오 #유승언\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793863656/sabmiz37uevbyyf4fauz.jpg\n제목: 제베원 넷, 이븐 하나|앤더블은 누구인가\n부제: 다섯 명의 두 번째 데뷔\n출처: 텐아시아\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793863658/windm0vhixc5jqeqo9yu.jpg\n소제목: 넷과 하나\n본문: 장하오, 리키, 김규빈, 한유진은 2023년 Mnet 〈보이즈 플래닛〉으로 결성된 9인조 프로젝트 그룹 제로베이스원 출신입니다.||여기에 같은 프로그램에서 나온 그룹 이븐 출신 유승언이 합류했습니다. 다섯 명 모두에게 두 번째 데뷔입니다.\n출처: 텐아시아\n\n[슬라이드]\n소스: \n소제목: 이름\n본문: 앤더블(AND2BLE)은 'AND'와 'DOUBLE'을 합친 이름입니다. 여러 내면이 겹치며 '나다움'을 넓혀 간다는 뜻을 담았습니다.||YH엔터테인먼트가 템페스트 이후 약 4년 만에 내놓은 보이그룹입니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 두 장의 앨범\n본문: 5월 데뷔 앨범 [Sequence 01: Curiosity]의 타이틀곡은 신스팝에 퓨처 하우스를 더한 'Curious'였습니다. 장하오와 리키가 작사에 참여했습니다.||지난달 27일 낸 미니 2집 [Sequence 02: Attraction]은 런던 노이즈가 만든 트로피컬 R&B 'French Kissing'을 앞세웠고, 한터차트 집계로 첫날 52만 장 넘게 팔렸습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 그 말\n본문: 데뷔 쇼케이스에서 유승언은 이렇게 말했습니다.||\"이 5명이라면 K팝에 한 획을 그을 수 있을 거라고 생각했다\"\n출처:\n",
+    "caption": "앤더블은 다섯 명 모두가 두 번째 데뷔를 한 그룹입니다.\n\n장하오, 리키, 김규빈, 한유진은 2023년 Mnet 〈보이즈 플래닛〉으로 결성된 제로베이스원 출신인데요, 같은 프로그램에서 나온 그룹 이븐 출신 유승언이 합류해 지난 5월 YH엔터테인먼트에서 새로 시작했습니다. 팀 이름은 'AND'와 'DOUBLE'을 합친 말입니다.\n\n지난달 27일 낸 미니 2집 [Sequence 02: Attraction]은 한터차트 집계로 첫날 52만 장 넘게 팔렸습니다. 데뷔 쇼케이스에서 유승언이 한 말 그대로, \"이 5명이라면\"에서 출발한 팀입니다.\n\n#PLOT #앤더블 #AND2BLE #장하오 #유승언",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863656/sabmiz37uevbyyf4fauz.jpg",
+      "credit": "텐아시아",
+      "from": "https://img.tenasia.co.kr/photo/202610/BF.45972399.1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863658/windm0vhixc5jqeqo9yu.jpg",
+      "credit": "텐아시아",
+      "from": "https://img.tenasia.co.kr/photo/202610/BF.45996061.1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863656/sabmiz37uevbyyf4fauz.jpg",
+      "credit": "텐아시아",
+      "from": "https://img.tenasia.co.kr/photo/202610/BF.45972399.1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863658/windm0vhixc5jqeqo9yu.jpg",
+      "credit": "텐아시아",
+      "from": "https://img.tenasia.co.kr/photo/202610/BF.45996061.1.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "제베원 넷, 이븐 하나|앤더블은 누구인가",
+      "sub": "다섯 명의 두 번째 데뷔"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진에 다섯 명 중 세 명만 온전히 보이고(양 끝 둘은 잘림) 오른쪽 아래에 텐아시아 '10asia' 로고가 찍혀 있음 — 다섯 명이 다 보이는 사진으로 바꾸는 게 좋음",
+     "사진 DB 에 앤더블이 없어 기사 대표 사진(YH 제공 단체 사진)만 — 표지에 다섯 명이 다 보이는지 눈으로",
+     "초동 73만 장은 집계처를 기사에서 못 찾아 뺐고 한터차트 첫날 52만 장만 씀 · 제로베이스원과 비교하는 문장은 쓰지 않음",
+     "사진이 모자라 3장(2, 3, 4번)은 비워 뒀습니다 — 같은 사진을 두 번 쓰지 않으려고. 스튜디오에서 빈 자리를 눌러 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 10/11 — 장하오·리키·김규빈·한유진 제로베이스원 출신 · 유승언 이븐 출신 · '멤버 전원이 재데뷔한 그룹' · 데뷔 앨범 초동 73만 장",
+      "link": "https://www.tenasia.co.kr/article/2026100927204"
+     },
+     {
+      "title": "엑스포츠뉴스 5/26 — 데뷔 쇼케이스 · 보이즈 플래닛 9인조 제로베이스원 · 이븐 유승언 · 유승언 \"이 5명이라면 K팝에 한 획을\"",
+      "link": "https://www.xportsnews.com/article/2153414"
+     },
+     {
+      "title": "스포츠경향 4/6 — YH엔터테인먼트 템페스트 이후 약 4년 만의 보이그룹 · 'AND'+'DOUBLE' 이름 뜻",
+      "link": "https://sports.khan.co.kr/article/202604060912013"
+     },
+     {
+      "title": "스포츠경향 5/26 — 미니 1집 [Sequence 01: Curiosity] · 타이틀곡 'Curious' · 장하오·리키 작사 참여",
+      "link": "https://sports.khan.co.kr/article/202605260103003"
+     },
+     {
+      "title": "일간스포츠 10/28 — 미니 2집 [Sequence 02: Attraction] 10/27 · 한터차트 첫날 52만 장 · 두 앨범 연속 하프 밀리언셀러",
+      "link": "https://isplus.com/article/view/isp202610280128"
+     },
+     {
+      "title": "더팩트 10/27 — 'French Kissing' 런던 노이즈 작곡 · 트로피컬 R&B · 멤버 발언",
+      "link": "https://news.tf.co.kr/read/ogmeta/2381493.htm"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863671/mjnap7xmaw5k8vo9jshp.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863672/mccuup00h4erikoztbtn.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863671/q9tclthysgvgsud5vdd1.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863671/p0geyqwh4dru7to2thxx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863673/le8qyzimpgvieliujuww.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863673/jnblynh8jzpalhld2oc9.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863671/mjnap7xmaw5k8vo9jshp.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-05T16:27+09:00",
+     "v": {
+      "A": "ec28de43"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "이번 회차 목표 '인물해부' · 우리가 안 다룬 이름 중 뉴스 50건 · '전원 재데뷔'라는 한 줄 정체성",
+    "at": "2026-11-05T16:27+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:hanroro-questionmark",
+    "account": "이투데이 11/5",
+    "url": "https://enter.etoday.co.kr/news/view/304800",
+    "image": null,
+    "head": "한로로, 새 싱글 '물음표' 발매…사랑과 연대 노래",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-05T16:27+09:00",
+   "key": "887768bf",
+   "by": "claude",
+   "subjects": [
+    "한로로"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "신곡과 첫 아레나 공연이 같은 이름 '물음표' — 상상마당 라이브홀에서 인스파이어 아레나까지",
+    "why": "뉴스 급상승 한로로 기사 23건(평소 3) · 오늘(5일) 18시 발매 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-05T16:27+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n한로로(@hanr0r0)가 오늘(5일) 신곡 '물음표'를 냈습니다.\n\n서로 상처를 주면서도 쉽게 멀어지지 못하는 관계를 담은 곡인데요, 뮤직비디오는 한로로가 직접 쓴 이야기로, 어린 시절 수영 학원에서 만난 두 친구가 멀어졌다가 훗날 다시 만나는 이야기를 그렸습니다.\n\n같은 이름을 단 다섯 번째 단독 콘서트 '물음표'는 데뷔 첫 아레나 공연입니다. 2023년 홍대 상상마당 라이브홀에서 시작한 단독 공연이 노들섬과 YES24 라이브홀, 고려대 화정체육관을 거쳐 인스파이어 아레나까지 왔습니다.\n\n공연은 2027년 1월 2일 오후 6시와 3일 오후 5시, 예매는 11월 13일 오후 6시 NOL 티켓에서 열립니다.\n\n#PLOT #한로로 #HANRORO #물음표 #인스파이어아레나\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793863661/z2kqqqxhkksypyd6bj9c.jpg\n제목: 한로로의 다음 질문|신곡도 아레나도 '물음표'\n부제: 11월 5일 싱글 · 2027년 1월 2~3일 공연\n출처: @hanr0r0\n",
+    "caption": "한로로(@hanr0r0)가 오늘(5일) 신곡 '물음표'를 냈습니다.\n\n서로 상처를 주면서도 쉽게 멀어지지 못하는 관계를 담은 곡인데요, 뮤직비디오는 한로로가 직접 쓴 이야기로, 어린 시절 수영 학원에서 만난 두 친구가 멀어졌다가 훗날 다시 만나는 이야기를 그렸습니다.\n\n같은 이름을 단 다섯 번째 단독 콘서트 '물음표'는 데뷔 첫 아레나 공연입니다. 2023년 홍대 상상마당 라이브홀에서 시작한 단독 공연이 노들섬과 YES24 라이브홀, 고려대 화정체육관을 거쳐 인스파이어 아레나까지 왔습니다.\n\n공연은 2027년 1월 2일 오후 6시와 3일 오후 5시, 예매는 11월 13일 오후 6시 NOL 티켓에서 열립니다.\n\n#PLOT #한로로 #HANRORO #물음표 #인스파이어아레나",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863661/z2kqqqxhkksypyd6bj9c.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863661/z2kqqqxhkksypyd6bj9c.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "한로로의 다음 질문|신곡도 아레나도 '물음표'",
+      "sub": "11월 5일 싱글 · 2027년 1월 2~3일 공연"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "아레나 공연 발표는 10/23 — 오늘의 새 사실은 신곡 · 표지 사진이 한로로 인스타 7/16 화보(분홍 배경)인지 눈으로"
+    ],
+    "research": [
+     {
+      "title": "이투데이 11/5 — 싱글 '물음표' 11/5 · 상처 주면서도 놓지 못하는 관계 · MV 직접 쓴 시놉시스, 멀어진 두 소꿉친구의 재회 · 첫 아레나",
+      "link": "https://enter.etoday.co.kr/news/view/304800"
+     },
+     {
+      "title": "앳스타일 11/5 — 11월 5일 오후 6시 · MV 한로로가 직접 쓴 이야기 · 2027.1.2~3 네이버 아레나 앳 인스파이어",
+      "link": "http://www.atstar1.com/news/articleView.html?idxno=6040378"
+     },
+     {
+      "title": "일간스포츠 10/25 — 1/2 18시·1/3 17시 인스파이어 아레나 · 데뷔 첫 아레나 · 상상마당→노들섬→YES24 라이브홀→화정체육관",
+      "link": "https://isplus.com/article/view/isp202610250010"
+     },
+     {
+      "title": "NOL 티켓 — 티켓 오픈 2026.11.13(금) 6PM",
+      "link": "https://nol.yanolja.com/ticket/products/26015537"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863676/p90grpa8bw0hcq4zeqqz.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863676/r5otlz4fq81pi9ewzrxw.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793863676/p90grpa8bw0hcq4zeqqz.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-05T16:27+09:00",
+     "v": {
+      "A": "9559c722"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 4,
-  "done": 29,
+  "done": 30,
   "goal": 28,
   "corners": [
    {
@@ -903,7 +1333,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 2,
-    "drafts": 0,
+    "drafts": 1,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1030,25 +1460,25 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 16,
+    "done": 17,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-05T15:11+09:00"
+  "at": "2026-11-05T16:27+09:00"
  },
  "queue": {
-  "next": "2026-11-05T16:04+09:00",
+  "next": "2026-11-05T16:29+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-05T15:04+09:00"
  },
  "slots": {
-  "basis": 313,
+  "basis": 314,
   "card": [
    {
     "from": 18,
@@ -1070,9 +1500,9 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.48,
-    "median": 0.99,
-    "n": 27
+    "mult": 1.45,
+    "median": 0.95,
+    "n": 28
    }
   ],
   "shorts": [
