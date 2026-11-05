@@ -3511,6 +3511,102 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-a58b4c3f",
+    "account": "@규효 공유 · @zzalqueen",
+    "url": "https://www.instagram.com/p/DfXVirHGaye/?mdxt=a3MzcDQ2YnYwbDNj",
+    "image": null,
+    "head": "룩삼, 리센느 [PULSE] 듣고 \"혼자 메타를 거슬렀다\" — 사운드 하나로 날먹하지 않는 앨범",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-06T05:29+09:00",
+   "key": "9480bae2",
+   "by": "claude",
+   "subjects": [
+    "리센느",
+    "룩삼"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "룩삼이 [PULSE] 다섯 곡을 통으로 듣고 '혼자 메타를 거슬렀다'고 한 평 — 쇼츠용 한 구간 대신 안 질리는 앨범",
+    "why": "룩삼 음반감상회 영상(11/4)의 총평이 '쇼츠용 음악' 이야기로 번지며 매거진들에 돌고 있다 · 리센느는 지금 뜨거운 사람"
+   },
+   "added": "claude",
+   "added_at": "2026-11-06T05:29+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=ZQzUJyBBh7E\n구간: 18:32-19:27\n곡: 리센느만 다른 이유\n아티스트: 룩삼이 말하는\n피처링:\n후킹: \n출처: LookSam\n자막: 자동",
+    "caption": "룩삼이 리센느(@rescene_official)의 새 앨범을 두고 \"혼자 메타를 거슬렀다\"고 말했습니다.\n\n지난 3일 나온 미니 4집 [PULSE] 다섯 곡을 통으로 들은 음반감상회에서였는데요, 룩삼은 요즘 케이팝이 귀에 꽂히는 사운드 하나로 승부를 보는 흐름이라면 리센느는 은은하게 퍼지는 향기 같은 원래 색을 지켰다고 짚었습니다. 튀는 소리가 없어 질리지 않는다는 게 그가 꼽은 최고 장점이고, 가장 좋았던 곡으로는 '백화요란 (Inside Out)'을 들었습니다.\n\n룩삼은 지난해 3월 치지직 방송 〈룩삼의 들어볼래 MUZZK〉에서 리센느의 'LOVE ATTACK' 무대를 소개한 적이 있습니다. 이번 감상회를 열며 그는 리센느를 이제는 멀리 날아가 버린 '들어볼래 친구'라고 불렀습니다.\n\n#PLOT #리센느 #룩삼 #PULSE #들어볼래 #백화요란",
+    "hooks": {
+     "A": "리센느 새 앨범 듣고 / 룩삼이 내린 결론",
+     "B": "룩삼이 말하는 / 리센느만 다른 이유",
+     "C": "꽂히는 한 구간 대신 / 끝까지 듣게 되는 앨범"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=ZQzUJyBBh7E",
+     "credit": "LookSam",
+     "range": [
+      1112.0,
+      1167.0
+     ]
+    },
+    "guided": {
+     "rec": "B",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — LookSam (룩삼 본인 채널 · 18:32-19:27 총평 구간, 음악 없이 말만)",
+     "zzalqueen 글은 'Finest Thing 을 들으며' 한 말이라 했지만, 영상에선 다섯 곡을 다 들은 뒤 총평이고 가장 좋았던 곡은 '백화요란' — 캡션은 영상 기준으로 씀",
+     "반복 — 「리센느」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "LookSam · 발매하자마자 2시간만에 멜론 1위? 들어봤습니다 | 리센느 미니 4집 「PULSE」 음반감상회 (2026-11-04)",
+      "link": "https://www.youtube.com/watch?v=ZQzUJyBBh7E"
+     },
+     {
+      "title": "일간스포츠 · 리센느 미니 4집 PULSE 11월 3일 오후 6시 발매 · 수록곡 5곡",
+      "link": "https://isplus.com/article/view/isp202610280010"
+     },
+     {
+      "title": "YTN · 리센느 11월 3일 미니 4집 PULSE 발매 · 프로모션 일정",
+      "link": "https://www.ytn.co.kr/_ln/0117_202610131039493415"
+     },
+     {
+      "title": "STAY CAM · 250322 리센느 'LOVE ATTACK' @룩삼의 들어볼래 MUZZK ep.7",
+      "link": "https://www.youtube.com/watch?v=RjHPjkLZP7c"
+     },
+     {
+      "title": "LookSam · with. 케인 X 플레임 X 리센느 [치지직 공식 방송 : 룩삼의 들어볼래 MUZZK]",
+      "link": "https://www.youtube.com/watch?v=sC445t1GalE"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/ZQzUJyBBh7E/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793910569/i1lgchgib0j8xqf1ogwa.jpg",
+     "key": "ZQzUJyBBh7E@1112.0"
+    },
+    "px": {
+     "vid": "ZQzUJyBBh7E",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793910698/plot_studio/lysdhtcofpwny2xw1rzb.mp4",
+     "off": 1067.0,
+     "end": 1212.0,
+     "full": 1266.0
+    },
+    "prep": {
+     "status": "making",
+     "at": "2026-11-06T05:32+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 8
   }
  ],
  "skipped": [],
@@ -3589,7 +3685,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 8,
-    "drafts": 0,
+    "drafts": 1,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -3689,7 +3785,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-06T05:25+09:00"
+  "at": "2026-11-06T05:32+09:00"
  },
  "queue": {
   "next": "2026-11-06T08:50+09:00",
