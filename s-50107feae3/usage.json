@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-05T19:24+09:00",
+ "generated_at": "2026-11-05T20:31+09:00",
  "cycle_start": "2026-10-15",
  "next_credit": "2026-11-15",
  "credit": 100.0,
- "spent": 31.84,
- "today": 0.26,
+ "spent": 31.85,
+ "today": 0.27,
  "per_day": 1.46,
- "calls": 23742,
+ "calls": 23744,
  "by": [
   {
    "name": "작성기 (Claude Code)",
@@ -53,7 +53,7 @@
    "usd": 0.26
   },
   {
-   "name": "naver_music",
+   "name": "SPOTLIGHT",
    "usd": 0.18
   }
  ]
