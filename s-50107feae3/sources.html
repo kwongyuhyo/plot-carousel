@@ -4574,6 +4574,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   function macNowHtml() {
     if (!MAC) return '<div class="mh">🖥 맥 지금 <span>불러오는 중…</span></div>';
     var age = since(MAC.at), rows = [];
+    // 11/5 고장 알림 (scripts/mac_status alerts) — 실패한 작업 · 오늘 초안 0편 · 디스크 · 시험
+    (MAC.alerts || []).forEach(function (a) {
+      rows.push('<div class="mr ' + (a.level === 'info' ? 'dim' : 'bad') + '">' + (a.level === 'bad' ? '🚨 ' : a.level === 'warn' ? '⚠ ' : 'ℹ ') +
+        (a.repo && a.repo !== 'PLOT' ? '<b>' + esc(a.repo) + '</b> ' : '') + esc(a.msg) + '</div>');
+    });
     (MAC.repos || []).forEach(function (rp) {
       var tag = rp.name === 'PLOT' ? '' : '<b>' + esc(rp.name) + '</b> ';
       ((rp.renders || {}).active || []).forEach(function (r) {
@@ -5163,9 +5168,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.05 19:43';
+    a.title = '판 11.05 20:26';
     var ver = document.createElement('span');
-    ver.textContent = '11.05 19:43';
+    ver.textContent = '11.05 20:26';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
