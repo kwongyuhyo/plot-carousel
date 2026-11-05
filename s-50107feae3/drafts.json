@@ -1441,7 +1441,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=s4Ow55AbdCg\n구간: 0:35-1:14\n곡: 뉴진스의 그 여름 노래\n아티스트: 5억 번 재생된\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: 뉴진스 - ETA\n가사: 자동",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=s4Ow55AbdCg\n구간: 0:35-1:14\n곡: 뉴진스의 그 여름 노래\n아티스트: 5억 번 재생된\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: 뉴진스 - ETA\n가사: 자동\n자막: 받음 st:1793871061155-95e3c7a3",
     "caption": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr)에서 5억 회 재생을 넘었습니다.\n\n2023년 7월 두 번째 EP [Get Up]의 트리플 타이틀곡 중 하나로 나온 곡인데요, 11월 2일 기준 스포티파이 집계로 뉴진스의 일곱 번째 5억 곡이 됐습니다.\n\n팀 활동이 멈춘 사이에도 3년 전 여름의 노래는 여전히 재생되고 있습니다.\n\n#PLOT #뉴진스 #NewJeans #ETA #GetUp",
     "hooks": {
      "A": "5억 번 재생된 / 뉴진스의 그 여름 노래",
@@ -1497,8 +1497,84 @@
      "full": 156.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-05T18:29+09:00"
+     "status": "ready",
+     "rid": "st:1793871061155-95e3c7a3",
+     "n": 14,
+     "note": "🎤 가사 32줄 자동 맞춤 (확인 30줄)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 0.41,
+       "text": "He's been totally lying, yeah"
+      },
+      {
+       "start": 0.41,
+       "end": 2.77,
+       "text": "내 생일 파티에 너만 못 온 그날"
+      },
+      {
+       "start": 2.77,
+       "end": 4.48,
+       "text": "혜진이가 엄청 혼났던 그날"
+      },
+      {
+       "start": 4.48,
+       "end": 6.19,
+       "text": "지원이가 여친이랑 헤어진 그날"
+      },
+      {
+       "start": 6.19,
+       "end": 8.1,
+       "text": "걔는 언제나 네가 없이 그날"
+      },
+      {
+       "start": 8.1,
+       "end": 11.11,
+       "text": "너무 멋있는 옷을 입고 그날"
+      },
+      {
+       "start": 11.11,
+       "end": 13.91,
+       "text": "Heard him say"
+      },
+      {
+       "start": 13.91,
+       "end": 17.69,
+       "text": "We can go wherever you like"
+      },
+      {
+       "start": 17.69,
+       "end": 21.18,
+       "text": "Baby, say the words and I'm down"
+      },
+      {
+       "start": 21.18,
+       "end": 24.75,
+       "text": "All I need is you on my side"
+      },
+      {
+       "start": 24.75,
+       "end": 28.85,
+       "text": "We can go whenever you like, now where are you?"
+      },
+      {
+       "start": 28.85,
+       "end": 32.33,
+       "text": "(Mmm-hmm) what's your ETA? What's your ETA?"
+      },
+      {
+       "start": 32.33,
+       "end": 35.9,
+       "text": "(Mmm-hmm) what's your ETA? What's your ETA?"
+      },
+      {
+       "start": 35.9,
+       "end": 39.0,
+       "text": "(Mmm-hmm) what's your ETA? What's your ETA?"
+      }
+     ],
+     "at": "2026-11-05T18:31+09:00"
     }
    },
    "corner_name": "소식"
@@ -1680,10 +1756,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-05T18:29+09:00"
+  "at": "2026-11-05T18:31+09:00"
  },
  "queue": {
-  "next": "2026-11-05T18:31+09:00",
+  "next": "2026-11-05T18:33+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-05T16:39+09:00"
