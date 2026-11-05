@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05 19:43 KST",
+ "generated_at": "2026-11-05 22:04 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1679,8 +1679,13 @@
   "daily": "2026-11-05 19:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-05T19:05:51+09:00",
+  "fetched_at": "2026-11-05T21:36:06+09:00",
   "posts": [
+   {
+    "t": "2026-11-05T20:43+09:00",
+    "type": "VIDEO",
+    "head": "한로로(@hanr0r0)가 오늘(5일) 새 싱글 '물음표'를 발매했습니다"
+   },
    {
     "t": "2026-11-05T18:58+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2310,9 +2315,9 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 344,
-  "posted": 105,
-  "posts": 127,
+  "drafts": 345,
+  "posted": 106,
+  "posts": 128,
   "rate": 0.31,
   "adopted_mult": 0.98,
   "own_mult": 1.04,
@@ -2328,8 +2333,8 @@
     "mult": 1.96
    },
    "정보": {
-    "drafts": 228,
-    "posted": 87,
+    "drafts": 229,
+    "posted": 88,
     "mult": 0.98
    },
    "클립": {
@@ -2385,7 +2390,7 @@
     "mult": null
    },
    "song": {
-    "drafts": 12,
+    "drafts": 13,
     "posted": 3,
     "mult": 0.46
    },
@@ -2426,7 +2431,7 @@
    },
    "intro": {
     "drafts": 8,
-    "posted": 1,
+    "posted": 2,
     "mult": 0.78
    },
    "listen": {
@@ -2554,7 +2559,7 @@
   ]
  },
  "follow": {
-  "at": "2026-11-05T19:43+09:00",
+  "at": "2026-11-05T22:04+09:00",
   "d30": {
    "days": 30,
    "follows": 16.2,

@@ -1166,7 +1166,7 @@
     "at": "2026-11-05T16:27+09:00"
    },
    "corner_name": "입문 가이드",
-   "corner_no": 2
+   "corner_no": 3
   },
   {
    "source": {
@@ -2066,13 +2066,280 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-a3c23bea",
+    "account": "@규효 요청",
+    "url": "",
+    "image": null,
+    "head": "슬롬이 말한 '2024년의 나미', 숙취로 빙글빙글 도는 후렴 — 수민 & 슬롬 '왜, 왜, 왜'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-05T22:01+09:00",
+   "key": "f580822b",
+   "by": "claude",
+   "subjects": [
+    "수민",
+    "슬롬"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "슬롬이 말한 '2024년의 나미'와, 천장이 빙글빙글 도는 숙취를 담은 후렴",
+    "why": "규효가 직접 고른 오늘의 노래 — 55번째와 다르게 곡이 만들어진 말(나미·숙취 후렴·재즈페스티벌 선공개)로"
+   },
+   "added": "claude",
+   "added_at": "2026-11-05T22:01+09:00",
+   "corner": "song",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n140번째 오늘의 노래 | 2026.11.05\n\n슬롬은 수민을 '2024년의 나미'로 만들고 싶다고 했습니다.\n\n둘이 3년 만에 다시 함께 낸 [MINISERIES 2]의 '왜, 왜, 왜'에서 수민은 후렴을 앨범의 가장 기억에 남는 가사로 꼽았는데요, 밤새 마신 술에 천장이 빙글빙글 도는데도 옆에 너는 없다는 내용이 처절해서라고 했습니다. 그 후렴은 나미의 대표곡과 같은 말, '빙글빙글'로 시작합니다.\n\n수민은 발매 전인 2024년 서울재즈페스티벌에서 자이언티의 무대에 깜짝 올라 이 곡을 먼저 들려줬고, 앨범은 이듬해 한국대중음악상 최우수 알앤비/소울 음반상을 받았습니다.\n\nArtist | SUMIN(수민), Slom(슬롬)\nTitle | 왜, 왜, 왜\nReleased | 2024.07.18\n\n#PLOT #오늘의노래 #수민 #슬롬 #왜왜왜 #미니시리즈2\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793883677/xon0pyaobx7c08ffhx6g.jpg\n머리말: 140번째 오늘의 노래\n제목: 천장이 빙글빙글 도는|이별 다음 날 아침\n부제: 수민 & 슬롬 「왜, 왜, 왜」\n출처: Hypebeast Korea\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793883690/my4fcgh1yqwbtjaxp80f.jpg\n소제목: '2024년의 나미'\n본문: 슬롬은 프로듀서로서 수민을 '2024년의 나미'로 만들고 싶다고 말했습니다. 수민에게서 왜 디바를 보느냐는 물음에 돌아온 첫마디는 짧았습니다. \"그것이 수민이니까요.\"\n출처: Hypebeast Korea\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793883693/dqwryfthp9xzmoqltt6u.jpg\n소제목: 후렴에 담은 숙취\n본문: 수민은 [MINISERIES 2]에서 가장 기억에 남는 가사로 이 곡의 후렴을 꼽았습니다. 밤새 마신 술에 천장이 빙글빙글 도는데도 옆에 너는 없다는 내용이 처절해서라고요. 그 후렴은 나미의 대표곡과 같은 말, '빙글빙글'로 시작합니다.\n출처: Hypebeast Korea\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793883695/ntxuzmwpv5bsnex0axep.jpg\n소제목: 발매 전에 먼저 부른 무대\n본문: 앨범이 나오기 전인 2024년 서울재즈페스티벌, 수민은 자이언티의 무대에 깜짝 올라 이 곡을 먼저 불렀습니다. 슬롬은 앨범 작업을 알고 있던 자이언티가 고맙게도 미리 선보일 자리를 만들어 준 것이라고 돌아봤습니다.\n출처: Hypebeast Korea\n\n[슬라이드]\n형식: 곡\n음원: SUMIN, Slom - 왜, 왜, 왜\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793883703/dhp4rlzz4d3jaoutvonj.jpg\n구간: 0:48-1:12\n소제목: 빙글빙글 도는 이별의 아침\n본문: 수민과 슬롬이 3년 만에 다시 함께 낸 [MINISERIES 2]의 수록곡입니다. 이 앨범은 2025년 한국대중음악상 최우수 알앤비/소울 음반상을 받았습니다.\n출처: 멜론 · 소리 공식 MV\n",
+    "caption": "140번째 오늘의 노래 | 2026.11.05\n\n슬롬은 수민을 '2024년의 나미'로 만들고 싶다고 했습니다.\n\n둘이 3년 만에 다시 함께 낸 [MINISERIES 2]의 '왜, 왜, 왜'에서 수민은 후렴을 앨범의 가장 기억에 남는 가사로 꼽았는데요, 밤새 마신 술에 천장이 빙글빙글 도는데도 옆에 너는 없다는 내용이 처절해서라고 했습니다. 그 후렴은 나미의 대표곡과 같은 말, '빙글빙글'로 시작합니다.\n\n수민은 발매 전인 2024년 서울재즈페스티벌에서 자이언티의 무대에 깜짝 올라 이 곡을 먼저 들려줬고, 앨범은 이듬해 한국대중음악상 최우수 알앤비/소울 음반상을 받았습니다.\n\nArtist | SUMIN(수민), Slom(슬롬)\nTitle | 왜, 왜, 왜\nReleased | 2024.07.18\n\n#PLOT #오늘의노래 #수민 #슬롬 #왜왜왜 #미니시리즈2",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883677/xon0pyaobx7c08ffhx6g.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fsumin-slom-miniseries-2-streetsnaps-2024-1.jpg?q=90&w=800&cbr=1&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883679/cuwbhwkjjfot9vjaxpjg.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fsumin-slom-miniseries-2-streetsnaps-2024-2.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883682/qycciwvfbbxzsjzyhzon.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fsumin-slom-miniseries-2-streetsnaps-2024-3.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883684/ih181bm7wcl3ngq0tjsx.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fstreetsnaps-sumin-slom-04.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883686/fddnjyhlo3xzz3evnrku.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fstreetsnaps-sumin-slom-00.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883688/nzi8sxdjuekpzwlybvpl.jpg",
+      "credit": "W Korea",
+      "from": "https://img.wkorea.com/w/2025/05/style_6836713ab9fba-1280x720.jpg?x=3000&y=1766"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793202176/bdrxvclqtecrqkmt4om6.jpg",
+      "credit": "@stayc_highup",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/786467862_18094540859434482_6090336572476312237_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jaYDk_7AxdEQ7kNvwFtfF2o&_nc_oc=Adqwz9xU1vjZ0f0nESdZPdr4BbQM_7mVgcESPAnJzDsdprpyLyhUEkE4YNdKZlVFadY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=oOSlv-ZcWI9IgFJIslK59w&_nc_tpa=Q5bMBQI8RvSLpIsWtvpPjCI2hFUzeCFwWA_KoOI45mnlKsqdYWdX2ZIzKo9I4ytLgWD-54XJc0FcWyeyWg&oh=00_AQTKpDg-hsB5lvsNYjRHxZqOmVDn1lsJU-H2NYuN28DvTw&oe=6AE7E7D9"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621670/ms53j9mjnbpbzfbuefl9.jpg",
+      "credit": "@baesuminiee",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/719900149_17944439667201832_1617562106561956171_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=No2KVDhtCKIQ7kNvwHJE2Re&_nc_oc=AdqUMYl-YcEUT-hlJTgmyE4Kp2cASht_jj8Yn26rWJflVa5id9Dfain9AQjYbftlCJ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=NzDf5sw1hNSS8msHglSppg&oh=00_AQOTVvSPyAPLMwEjVvWM-sM3tLubBPl8itiewiN6Y42vfw&oe=6ADF263A"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883677/xon0pyaobx7c08ffhx6g.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fsumin-slom-miniseries-2-streetsnaps-2024-1.jpg?q=90&w=800&cbr=1&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883679/cuwbhwkjjfot9vjaxpjg.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fsumin-slom-miniseries-2-streetsnaps-2024-2.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883682/qycciwvfbbxzsjzyhzon.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fsumin-slom-miniseries-2-streetsnaps-2024-3.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883684/ih181bm7wcl3ngq0tjsx.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fstreetsnaps-sumin-slom-04.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883686/fddnjyhlo3xzz3evnrku.jpg",
+      "credit": "Hypebeast Korea",
+      "from": "https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2024%2F08%2F30%2Fstreetsnaps-sumin-slom-00.jpg?w=1260&cbr=1&q=90&fit=max"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883688/nzi8sxdjuekpzwlybvpl.jpg",
+      "credit": "W Korea",
+      "from": "https://img.wkorea.com/w/2025/05/style_6836713ab9fba-1280x720.jpg?x=3000&y=1766"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793202176/bdrxvclqtecrqkmt4om6.jpg",
+      "credit": "@stayc_highup",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/786467862_18094540859434482_6090336572476312237_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jaYDk_7AxdEQ7kNvwFtfF2o&_nc_oc=Adqwz9xU1vjZ0f0nESdZPdr4BbQM_7mVgcESPAnJzDsdprpyLyhUEkE4YNdKZlVFadY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=oOSlv-ZcWI9IgFJIslK59w&_nc_tpa=Q5bMBQI8RvSLpIsWtvpPjCI2hFUzeCFwWA_KoOI45mnlKsqdYWdX2ZIzKo9I4ytLgWD-54XJc0FcWyeyWg&oh=00_AQTKpDg-hsB5lvsNYjRHxZqOmVDn1lsJU-H2NYuN28DvTw&oe=6AE7E7D9"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792621670/ms53j9mjnbpbzfbuefl9.jpg",
+      "credit": "@baesuminiee",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/719900149_17944439667201832_1617562106561956171_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=No2KVDhtCKIQ7kNvwHJE2Re&_nc_oc=AdqUMYl-YcEUT-hlJTgmyE4Kp2cASht_jj8Yn26rWJflVa5id9Dfain9AQjYbftlCJ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=NzDf5sw1hNSS8msHglSppg&oh=00_AQOTVvSPyAPLMwEjVvWM-sM3tLubBPl8itiewiN6Y42vfw&oe=6ADF263A"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "천장이 빙글빙글 도는|이별 다음 날 아침",
+      "sub": "수민 & 슬롬 「왜, 왜, 왜」"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "슬롬이 만들고 싶던|'2024년의 나미'",
+      "sub": "수민 & 슬롬 「왜, 왜, 왜」"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "술잔은 다 비웠는데|너는 아직 없는 아침",
+      "sub": "수민 & 슬롬 「왜, 왜, 왜」"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "🎵 이미 55번째 오늘의 노래(2026-04-09)에서 「왜, 왜, 왜」 — SUMIN(수민), Slom 를 다뤘다 · 이번엔 '2024년의 나미'·숙취 후렴·재즈페스티벌 선공개 각도. 클립 위험: 높음 — 스페이스 공감(EBS), 24초",
+     "구간 확인: 0:48-1:12 는 자동 자막 기준 '빙글빙글 아침이 싫어' 후렴 첫머리 · '빙글빙글'과 나미의 대표곡을 잇는 문장은 우리 해석(의도라고 쓰지 않음)",
+     "🎵 5장 소리 — 'SUMIN, Slom - 왜, 왜, 왜': 공식 음원·채널이 없어 「스페이스 공감」 업로드를 씁니다"
+    ],
+    "research": [
+     {
+      "title": "스페이스 공감 — [SUMIN, Slom 신곡 LIVE] 왜, 왜, 왜 (2024.07.24, 설명란에 슬롬 '2024년의 나미' 발언)",
+      "link": "https://www.youtube.com/watch?v=H9UopFvHeMc"
+     },
+     {
+      "title": "W Korea — 수민과 슬롬의 미니시리즈 (2025.05.28)",
+      "link": "https://www.wkorea.com/2025/05/28/%EC%88%98%EB%AF%BC%EA%B3%BC-%EC%8A%AC%EB%A1%AC%EC%9D%98-%EB%AF%B8%EB%8B%88%EC%8B%9C%EB%A6%AC%EC%A6%88/"
+     },
+     {
+      "title": "Hypebeast Korea — #Streetsnaps: 수민 & 슬롬 (2024.08.31)",
+      "link": "https://hypebeast.kr/2024/8/streetsnaps-sumin-slom"
+     },
+     {
+      "title": "나무위키 — 수민(SUMIN) (MINISERIES 2 발매일 2024.07.18 · 2025 한국대중음악상)",
+      "link": "https://namu.moe/w/%EC%88%98%EB%AF%BC(SUMIN)"
+     },
+     {
+      "title": "240602 수민 & 슬롬 - 왜, 왜, 왜 | 서울재즈페스티벌 2024 (ch yeon)",
+      "link": "https://www.youtube.com/watch?v=FBK49sf6O64"
+     },
+     {
+      "title": "더팩트 — 나미 '빙글빙글' (1984)",
+      "link": "https://news.tf.co.kr/read/ogmeta/1942310.htm"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883712/i8pcjb6dhlnmujtvoyfu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883711/nvx8paqdfz2osmd5whsm.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883711/wonc16yrv57vb59dx3vf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883712/glfzgqzsxr7yadf7nmgk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883713/esquza7sfb6abjywho7l.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883713/tngmhjdkfvtbrgmomey9.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883715/uqpku2vlt7s1hs2ruww7.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883715/ef5gadnx7pcstzrb0quo.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883712/i8pcjb6dhlnmujtvoyfu.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-05T22:01+09:00",
+     "videos": {
+      "4": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793883737/plot_studio/syqilswrjx8y5xs4ikq2.mp4"
+     },
+     "vkey": "0c686c319880",
+     "v": {
+      "A": "214f3e69",
+      "B": "153c3fe8",
+      "C": "9e1037f2"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=H9UopFvHeMc\n구간: 0:48-1:12\n곡: 이별 다음 날 아침\n아티스트: 천장이 빙글빙글 도는\n피처링:\n후킹: \n출처: 스페이스 공감\n음원: SUMIN, Slom - 왜, 왜, 왜\n가사: 자동",
+    "caption": "140번째 오늘의 노래 | 2026.11.05\n\n슬롬은 수민을 '2024년의 나미'로 만들고 싶다고 했습니다.\n\n둘이 3년 만에 다시 함께 낸 [MINISERIES 2]의 '왜, 왜, 왜'에서 수민은 후렴을 앨범의 가장 기억에 남는 가사로 꼽았는데요, 밤새 마신 술에 천장이 빙글빙글 도는데도 옆에 너는 없다는 내용이 처절해서라고 했습니다. 그 후렴은 나미의 대표곡과 같은 말, '빙글빙글'로 시작합니다.\n\n수민은 발매 전인 2024년 서울재즈페스티벌에서 자이언티의 무대에 깜짝 올라 이 곡을 먼저 들려줬고, 앨범은 이듬해 한국대중음악상 최우수 알앤비/소울 음반상을 받았습니다.\n\nArtist | SUMIN(수민), Slom(슬롬)\nTitle | 왜, 왜, 왜\nReleased | 2024.07.18\n\n#PLOT #오늘의노래 #수민 #슬롬 #왜왜왜 #미니시리즈2",
+    "hooks": {
+     "A": "천장이 빙글빙글 도는 / 이별 다음 날 아침",
+     "B": "슬롬이 만들고 싶던 / '2024년의 나미'",
+     "C": "술잔은 다 비웠는데 / 너는 아직 없는 아침"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=H9UopFvHeMc",
+     "credit": "스페이스 공감",
+     "range": [
+      48.0,
+      72.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "🎵 이미 55번째 오늘의 노래(2026-04-09)에서 「왜, 왜, 왜」 — SUMIN(수민), Slom 를 다뤘다 · 이번엔 '2024년의 나미'·숙취 후렴·재즈페스티벌 선공개 각도. 클립 위험: 높음 — 스페이스 공감(EBS), 24초",
+     "구간 확인: 0:48-1:12 는 자동 자막 기준 '빙글빙글 아침이 싫어' 후렴 첫머리 · '빙글빙글'과 나미의 대표곡을 잇는 문장은 우리 해석(의도라고 쓰지 않음)"
+    ],
+    "research": [
+     {
+      "title": "스페이스 공감 — [SUMIN, Slom 신곡 LIVE] 왜, 왜, 왜 (2024.07.24, 설명란에 슬롬 '2024년의 나미' 발언)",
+      "link": "https://www.youtube.com/watch?v=H9UopFvHeMc"
+     },
+     {
+      "title": "W Korea — 수민과 슬롬의 미니시리즈 (2025.05.28)",
+      "link": "https://www.wkorea.com/2025/05/28/%EC%88%98%EB%AF%BC%EA%B3%BC-%EC%8A%AC%EB%A1%AC%EC%9D%98-%EB%AF%B8%EB%8B%88%EC%8B%9C%EB%A6%AC%EC%A6%88/"
+     },
+     {
+      "title": "Hypebeast Korea — #Streetsnaps: 수민 & 슬롬 (2024.08.31)",
+      "link": "https://hypebeast.kr/2024/8/streetsnaps-sumin-slom"
+     },
+     {
+      "title": "나무위키 — 수민(SUMIN) (MINISERIES 2 발매일 2024.07.18 · 2025 한국대중음악상)",
+      "link": "https://namu.moe/w/%EC%88%98%EB%AF%BC(SUMIN)"
+     },
+     {
+      "title": "240602 수민 & 슬롬 - 왜, 왜, 왜 | 서울재즈페스티벌 2024 (ch yeon)",
+      "link": "https://www.youtube.com/watch?v=FBK49sf6O64"
+     },
+     {
+      "title": "더팩트 — 나미 '빙글빙글' (1984)",
+      "link": "https://news.tf.co.kr/read/ogmeta/1942310.htm"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/H9UopFvHeMc/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793883743/t3xtv4k0txv9urb2nwg4.jpg",
+     "key": "H9UopFvHeMc@48.0"
+    },
+    "px": {
+     "vid": "H9UopFvHeMc",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793883814/plot_studio/lektlhy9zk1jsnxknlkb.mp4",
+     "off": 3.0,
+     "end": 117.0,
+     "full": 166.0
+    }
+   },
+   "corner_name": "오늘의 노래",
+   "corner_no": 5
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 4,
-  "done": 32,
+  "done": 33,
   "goal": 28,
   "corners": [
    {
@@ -2103,11 +2370,11 @@
     "key": "intro",
     "name": "입문 가이드",
     "weekly": 0,
-    "done": 0,
+    "done": 1,
     "left": 0,
     "need_today": 0,
     "day": null,
-    "next_no": 2,
+    "next_no": 3,
     "drafts": 1,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
@@ -2132,7 +2399,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 5,
-    "drafts": 0,
+    "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -2244,16 +2511,16 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-05T20:45+09:00"
+  "at": "2026-11-05T22:01+09:00"
  },
  "queue": {
-  "next": "2026-11-05T21:43+09:00",
+  "next": "2026-11-05T22:05+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-05T20:43+09:00"
+  "last": "2026-11-05T20:45+09:00"
  },
  "slots": {
-  "basis": 316,
+  "basis": 317,
   "card": [
    {
     "from": 18,
@@ -2282,20 +2549,20 @@
   ],
   "shorts": [
    {
-    "from": 18,
-    "to": 21,
-    "at": "19:30",
-    "mult": 1.94,
-    "median": 1.02,
-    "n": 24
-   },
-   {
     "from": 15,
     "to": 18,
     "at": "16:30",
     "mult": 1.93,
     "median": 1.9,
     "n": 11
+   },
+   {
+    "from": 18,
+    "to": 21,
+    "at": "19:30",
+    "mult": 1.88,
+    "median": 0.97,
+    "n": 25
    },
    {
     "from": 0,
