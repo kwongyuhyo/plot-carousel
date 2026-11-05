@@ -1296,13 +1296,219 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-a96ff15f",
+    "account": "@갈등·반응",
+    "url": "https://www.starnewskorea.com/star/2026/11/05/2026110517172440678",
+    "image": null,
+    "head": "활동 공백 속에도 'ETA' 스포티파이 5억 — 뉴진스 일곱 번째 5억 곡",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-05T18:26+09:00",
+   "key": "95e3c7a3",
+   "by": "claude",
+   "subjects": [
+    "뉴진스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "팀 활동이 멈춘 사이에도 3년 전 여름 노래 'ETA'가 스포티파이 5억을 넘었다",
+    "why": "뉴진스 기사가 하루 사이 여러 매체에서 이어지는 중 — 사람·곡이 보이는 기록 소식은 'ETA' 5억"
+   },
+   "added": "claude",
+   "added_at": "2026-11-05T18:26+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr)에서 5억 회 재생을 넘었습니다.\n\n2023년 7월 두 번째 EP [Get Up]의 트리플 타이틀곡 중 하나로 나온 곡인데요, 스포티파이 집계로 11월 2일 기준 500,086,236회를 기록하며 뉴진스의 일곱 번째 5억 곡이 됐습니다. 발매 당시 'Super Shy'와 함께 국내 차트 1, 2위에 올랐고 빌보드 '핫 100'에도 이름을 올린 곡입니다.\n\n뉴진스는 지금 팀 활동을 멈춘 상태입니다. 그 사이에도 3년 전 여름의 노래는 여전히 재생되고 있습니다.\n\n#PLOT #뉴진스 #NewJeans #ETA #GetUp #스포티파이\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793870807/atwettugtfuk1qgevsss.jpg\n제목: 뉴진스 'ETA',|스포티파이 5억 돌파\n부제: 11월 2일 기준 · 팀 통산 일곱 번째 5억 곡\n출처: @newjeans_official\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793870829/plot_studio/jfxp3y5egqjff1kenuap.mp4\n소제목: \n본문: \n출처: HYBE LABELS\n",
+    "caption": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr)에서 5억 회 재생을 넘었습니다.\n\n2023년 7월 두 번째 EP [Get Up]의 트리플 타이틀곡 중 하나로 나온 곡인데요, 스포티파이 집계로 11월 2일 기준 500,086,236회를 기록하며 뉴진스의 일곱 번째 5억 곡이 됐습니다. 발매 당시 'Super Shy'와 함께 국내 차트 1, 2위에 올랐고 빌보드 '핫 100'에도 이름을 올린 곡입니다.\n\n뉴진스는 지금 팀 활동을 멈춘 상태입니다. 그 사이에도 3년 전 여름의 노래는 여전히 재생되고 있습니다.\n\n#PLOT #뉴진스 #NewJeans #ETA #GetUp #스포티파이",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870807/atwettugtfuk1qgevsss.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273515/tpvykqfqpk4ijszthcth.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870810/pogvxmgo9pni4ljve8ny.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914397/fgrhp2pwvhlbsljrlxuc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870813/vxe5orsozlle5ntdgfxf.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273546/sphmhryyfat9ahqd7y6l.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870816/j37picpxbhzeswugzgg9.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273550/sfljzugyvhzgtcnj81g4.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870807/atwettugtfuk1qgevsss.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273515/tpvykqfqpk4ijszthcth.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870810/pogvxmgo9pni4ljve8ny.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914397/fgrhp2pwvhlbsljrlxuc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870813/vxe5orsozlle5ntdgfxf.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273546/sphmhryyfat9ahqd7y6l.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870816/j37picpxbhzeswugzgg9.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273550/sfljzugyvhzgtcnj81g4.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "뉴진스 'ETA',|스포티파이 5억 돌파",
+      "sub": "11월 2일 기준 · 팀 통산 일곱 번째 5억 곡"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "활동이 멈춘 사이에도|5억 번 재생된 'ETA'",
+      "sub": "뉴진스 일곱 번째 5억 곡"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "뉴진스의 일곱 번째|5억 스트리밍 곡",
+      "sub": "'ETA' · 스포티파이 11월 2일 기준"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — HYBE LABELS (레이블 공식 채널)",
+     "숏폼 구간 0:35-1:14 — '내 생일 파티에' 후렴부터 'What's your ETA' 끝까지, 귀로 확인",
+     "반복 — 「뉴진스」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 · '10억 배상' 승소한 뉴진스 'ETA', 스포티파이선 5억",
+      "link": "https://sports.khan.co.kr/article/202611041040003?pt=nv"
+     },
+     {
+      "title": "마이데일리 · 뉴진스, 활동 중단 속 또 기록…'ETA' 5억 돌파·통산 7번째",
+      "link": "https://www.mydaily.co.kr/page/view/2026110409473683020"
+     },
+     {
+      "title": "텐아시아 · 뉴진스, 신곡 없어도 기록은 계속…'ETA' 5억 스트리밍 돌파",
+      "link": "https://www.tenasia.co.kr/article/2026110447334"
+     },
+     {
+      "title": "HYBE LABELS · NewJeans 'ETA' Official MV (Performance ver.)",
+      "link": "https://www.youtube.com/watch?v=s4Ow55AbdCg"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870838/rl9qksghvmx03zeaprxx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870842/ndvywfpytjw6dqhn7evq.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870838/ai8wotfea86rshsyg2fu.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870844/sf5aaffevajy1cad14b0.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870844/jrs7agzhyq8t1yv8chnq.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870838/rl9qksghvmx03zeaprxx.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-05T18:27+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793870840/plot_studio/kbr2oxrva1nsrvtbgc3y.mp4"
+     },
+     "v": {
+      "A": "af8f8e83",
+      "B": "697b9267",
+      "C": "d749249a"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=s4Ow55AbdCg\n구간: 0:35-1:14\n곡: 뉴진스의 그 여름 노래\n아티스트: 5억 번 재생된\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: 뉴진스 - ETA\n가사: 자동",
+    "caption": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr)에서 5억 회 재생을 넘었습니다.\n\n2023년 7월 두 번째 EP [Get Up]의 트리플 타이틀곡 중 하나로 나온 곡인데요, 11월 2일 기준 스포티파이 집계로 뉴진스의 일곱 번째 5억 곡이 됐습니다.\n\n팀 활동이 멈춘 사이에도 3년 전 여름의 노래는 여전히 재생되고 있습니다.\n\n#PLOT #뉴진스 #NewJeans #ETA #GetUp",
+    "hooks": {
+     "A": "5억 번 재생된 / 뉴진스의 그 여름 노래",
+     "B": "뉴진스 'ETA', / 스포티파이 5억 돌파",
+     "C": "3년 전 여름에서 / 아직 재생 중인 노래"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=s4Ow55AbdCg",
+     "credit": "HYBE LABELS",
+     "range": [
+      35.0,
+      74.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — HYBE LABELS (레이블 공식 채널)",
+     "숏폼 구간 0:35-1:14 — '내 생일 파티에' 후렴부터 'What's your ETA' 끝까지, 귀로 확인",
+     "반복 — 「뉴진스」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 · '10억 배상' 승소한 뉴진스 'ETA', 스포티파이선 5억",
+      "link": "https://sports.khan.co.kr/article/202611041040003?pt=nv"
+     },
+     {
+      "title": "마이데일리 · 뉴진스, 활동 중단 속 또 기록…'ETA' 5억 돌파·통산 7번째",
+      "link": "https://www.mydaily.co.kr/page/view/2026110409473683020"
+     },
+     {
+      "title": "텐아시아 · 뉴진스, 신곡 없어도 기록은 계속…'ETA' 5억 스트리밍 돌파",
+      "link": "https://www.tenasia.co.kr/article/2026110447334"
+     },
+     {
+      "title": "HYBE LABELS · NewJeans 'ETA' Official MV (Performance ver.)",
+      "link": "https://www.youtube.com/watch?v=s4Ow55AbdCg"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/s4Ow55AbdCg/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870850/poav7pdba5eopyzxrnel.jpg",
+     "key": "s4Ow55AbdCg@35.0"
+    },
+    "px": {
+     "vid": "s4Ow55AbdCg",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793870937/plot_studio/gzcuc9gbiohqanuw96sg.mp4",
+     "off": 0.0,
+     "end": 119.0,
+     "full": 156.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-05T18:29+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 4,
-  "done": 30,
+  "done": 31,
   "goal": 28,
   "corners": [
    {
@@ -1465,25 +1671,25 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 17,
+    "done": 18,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-05T16:39+09:00"
+  "at": "2026-11-05T18:29+09:00"
  },
  "queue": {
-  "next": "2026-11-05T17:39+09:00",
+  "next": "2026-11-05T18:31+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-05T16:39+09:00"
  },
  "slots": {
-  "basis": 314,
+  "basis": 315,
   "card": [
    {
     "from": 18,
@@ -1505,9 +1711,9 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.45,
-    "median": 0.95,
-    "n": 28
+    "mult": 1.42,
+    "median": 0.91,
+    "n": 29
    }
   ],
   "shorts": [
