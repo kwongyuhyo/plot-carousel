@@ -2852,7 +2852,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         var th = x.thumb ? ' style="background-image:url(\'' + esc(x.thumb) + '\')"' : '';
         return '<div class="rcs' + (x.on ? '' : ' off') + '" data-k="' + k + '"><div class="th"' + th + '>' + (x.thumb ? '' : (x.kind === 'video' ? '▶' : x.song ? '🎵' : '')) + '</div><div class="bd">' +
           '<label class="rw"><input type="checkbox" data-on' + (x.on ? ' checked' : '') + '> ' + (x.kind === 'open' ? '여는 장면 (제목 두 줄)' : x.i + '장') + (x.credit ? ' · ' + esc(x.credit) : '') + '</label>' +
-          '<textarea data-bl rows="3">' + esc((x.blocks || []).map(function (b) { return b.join('\n'); }).join('\n\n')) + '</textarea>' +
+          '<textarea data-bl rows="' + Math.max(3, (x.blocks || []).reduce(function (n, b) { return n + b.length + 1; }, 0)) + '">' + esc((x.blocks || []).map(function (b) { return b.join('\n'); }).join('\n\n')) + '</textarea>' +
           '<div class="rw"><input type="number" step="0.1" min="1.5" max="8" data-secs value="' + esc(String(x.secs)) + '"> 초</div></div></div>';
       }).join('') +
       '<button data-act="go"><b>🎬 이대로 완성본 만들기</b><small>2~4분 · 다 되면 완성 영상 탭에 붙습니다</small></button>' +
@@ -5163,9 +5163,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.05 18:44';
+    a.title = '판 11.05 18:48';
     var ver = document.createElement('span');
-    ver.textContent = '11.05 18:44';
+    ver.textContent = '11.05 18:48';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
