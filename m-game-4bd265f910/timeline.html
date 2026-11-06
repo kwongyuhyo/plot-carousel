@@ -529,7 +529,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     var t = localStorage.getItem('plot.app.theme');
     var a = localStorage.getItem('plot.app.accent');
     if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-    if (a) document.documentElement.setAttribute('data-accent', a);
+    document.documentElement.setAttribute('data-accent', a || 'mag');
     var n = localStorage.getItem('plot.app.neon');
     document.documentElement.setAttribute('data-neon', n || 'cyan');
     var g = localStorage.getItem('plot.app.gap');
@@ -539,6 +539,21 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
   } catch (e) {}
 })();
 </script>
+
+<style id="magSkin">
+@font-face{font-family:'MagDisp';src:url(mag-bhs.woff2) format('woff2');font-display:swap}
+@font-face{font-family:'MagPix';src:url(mag-ps2p.woff2) format('woff2');font-display:swap}
+html:root[data-accent="mag"]{ --bg:#140b3c; --panel:#1e1255; --raise:#28196c; --panel-2:#28196c; --line:#3d2b8f; --hair:#1c104c; --text:#f6f3ff; --ink:#f6f3ff; --muted:#cfc6f3; --dim:#a197d6; --faint:#a197d6; --skip:#a197d6; --accent:#ffe14d; --amber:#ffe14d; --glass:rgba(20,11,60,.93); --magrgb:255,225,77; color-scheme:dark; }
+html:root[data-theme="light"][data-accent="mag"]{ --bg:#fffbe8; --panel:#fff3bd; --raise:#ffeb94; --panel-2:#ffeb94; --line:#e6d47a; --hair:#fbf0c4; --text:#2a1673; --ink:#2a1673; --muted:#46368c; --dim:#5a4ba0; --faint:#5a4ba0; --skip:#5a4ba0; --accent:#5a3de0; --amber:#5a3de0; --glass:rgba(255,251,232,.93); --magrgb:42,22,115; color-scheme:light; }
+@media (prefers-color-scheme: light){ html:root:not([data-theme="dark"])[data-accent="mag"]{ --bg:#fffbe8; --panel:#fff3bd; --raise:#ffeb94; --panel-2:#ffeb94; --line:#e6d47a; --hair:#fbf0c4; --text:#2a1673; --ink:#2a1673; --muted:#46368c; --dim:#5a4ba0; --faint:#5a4ba0; --skip:#5a4ba0; --accent:#5a3de0; --amber:#5a3de0; --glass:rgba(255,251,232,.93); --magrgb:42,22,115; color-scheme:light; } }
+html:root[data-accent="mag"] body{ background-color:var(--bg); background-image:linear-gradient(rgba(var(--magrgb),.06) 2px,transparent 2px),linear-gradient(90deg,rgba(var(--magrgb),.06) 2px,transparent 2px);background-size:24px 24px; background-attachment:fixed }
+html:root[data-accent="mag"] h1,html:root[data-accent="mag"] h2,html:root[data-accent="mag"] .masthead .mark{ font-family:'MagDisp',Pretendard,-apple-system,sans-serif!important; font-weight:400!important; letter-spacing:0!important }
+html:root[data-accent="mag"] h1{ text-shadow:3px 3px 0 #ff4fa3 }
+html:root[data-accent="mag"] .chip.on,html:root[data-accent="mag"] .tab[aria-selected="true"],html:root[data-accent="mag"] .grp button[aria-selected="true"]{ background:var(--accent)!important; color:var(--bg)!important; border-color:var(--accent)!important }
+html:root[data-accent="mag"] button,html:root[data-accent="mag"] .btn,html:root[data-accent="mag"] .chip,html:root[data-accent="mag"] .tab,html:root[data-accent="mag"] input,html:root[data-accent="mag"] textarea,html:root[data-accent="mag"] select,html:root[data-accent="mag"] .card,html:root[data-accent="mag"] .pcard,html:root[data-accent="mag"] .block,html:root[data-accent="mag"] .fw,html:root[data-accent="mag"] .sheet,html:root[data-accent="mag"] .plotThemeBox,html:root[data-accent="mag"] .plotThemeBtn,html:root[data-accent="mag"] .row,html:root[data-accent="mag"] .badge{border-radius:0!important}
+html:root[data-accent="mag"] .lat,html:root[data-accent="mag"] .num,html:root[data-accent="mag"] .kicker,html:root[data-accent="mag"] .stamp{font-family:'MagPix',monospace!important;font-size:10px!important;letter-spacing:0!important}
+.plotThemeBox .sw[data-accent="mag"]{ background:linear-gradient(135deg,#ffe14d 0 55%,#29d3ff 55% 100%); color:#ffe14d }
+</style>
 <script>window.PLOT_UPLOAD={"cloud": "dwndhzqod", "preset": "plot_studio"};</script><script>(function () {
   var SB = { url: "https://jipqujwziezeubtthbnw.supabase.co", key: "sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK" };
   function on() { return /^https:\/\//.test(SB.url || '') && !!SB.key; }
@@ -1935,14 +1950,14 @@ boot();
   var FSIZES = [['s', '작게'], ['m', '보통'], ['l', '크게'], ['xl', '더 크게']];
   var HUES = ['cyan', 'magenta', 'lime', 'orange', 'violet'];
   var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
-  var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
+  var ACCENTS = [['mag', ''], ['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
                  ['violet', '#8B7CF0'], ['mono', '#ECECF1'], ['neon', '#00F0FF']];
   var box = null;
 
   function get(k, d) { try { return localStorage.getItem(k) || d; } catch (e) { return d; } }
   function set(k, v) { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch (e) {} }
   function mode() { var t = get(TK, ''); return (t === 'light' || t === 'dark') ? t : 'system'; }
-  function accent() { return get(AK, 'amber'); }
+  function accent() { return get(AK, 'mag'); }
   function hue() { var h = get(NK, 'cyan'); return HUES.indexOf(h) < 0 ? 'cyan' : h; }
   function gap() { var g = get(GK, 'normal'); return /^(tight|normal|wide)$/.test(g) ? g : 'normal'; }
   function fsize() { var f = get(FK, 'm'); return /^(s|m|l|xl)$/.test(f) ? f : 'm'; }
