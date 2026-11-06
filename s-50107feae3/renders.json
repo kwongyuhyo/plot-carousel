@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T19:08+09:00",
+ "generated_at": "2026-11-06T19:29+09:00",
  "items": [
   {
    "at": "2026-11-06T18:16+09:00",
@@ -13,6 +13,11 @@
    "yt": {
     "url": "https://youtu.be/HAGERZM6N2g",
     "at": "2026-11-06T19:08+09:00"
+   },
+   "published": {
+    "permalink": "https://www.instagram.com/reel/DfZZIpiiAjB/",
+    "at": "2026-11-06T19:29+09:00",
+    "via": "api"
    }
   },
   {
