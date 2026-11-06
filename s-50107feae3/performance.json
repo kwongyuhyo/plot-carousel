@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06 19:04 KST",
+ "generated_at": "2026-11-06 22:04 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,31 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-06 15:06 KST"
+  "daily": "2026-11-06 19:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-06T19:04:50+09:00",
+  "fetched_at": "2026-11-06T22:04:24+09:00",
   "posts": [
+   {
+    "t": "2026-11-06T21:23+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "아일릿(@illit_official)이 미니 5집 [BREAK EVEN]"
+   },
+   {
+    "t": "2026-11-06T20:28+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "데이식스(@day6kilogram)가 10월 인천에서 다섯 번째 팬미팅을"
+   },
+   {
+    "t": "2026-11-06T19:53+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "리센느(@rescene_official) 빵을 사는 사람 열 명 중 일곱"
+   },
+   {
+    "t": "2026-11-06T19:29+09:00",
+    "type": "VIDEO",
+    "head": "룩삼이 리센느(@rescene_official)의 새 앨범을 두고 \"혼자"
+   },
    {
     "t": "2026-11-06T19:04+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2375,10 +2395,10 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 362,
-  "posted": 115,
-  "posts": 140,
-  "rate": 0.32,
+  "drafts": 364,
+  "posted": 119,
+  "posts": 143,
+  "rate": 0.33,
   "adopted_mult": 0.98,
   "own_mult": 1.04,
   "lanes": {
@@ -2388,8 +2408,8 @@
     "mult": 1.96
    },
    "정보": {
-    "drafts": 243,
-    "posted": 95,
+    "drafts": 245,
+    "posted": 99,
     "mult": 0.98
    },
    "클립": {
@@ -2430,8 +2450,8 @@
   },
   "corners": {
    "news": {
-    "drafts": 191,
-    "posted": 74,
+    "drafts": 192,
+    "posted": 76,
     "mult": 1.0
    },
    "mal": {
@@ -2450,7 +2470,7 @@
     "mult": 0.7
    },
    "tteolgi": {
-    "drafts": 15,
+    "drafts": 16,
     "posted": 3,
     "mult": 0.87
    },
@@ -2461,8 +2481,8 @@
    },
    "spotlight": {
     "drafts": 11,
-    "posted": 1,
-    "mult": null
+    "posted": 2,
+    "mult": 0.83
    },
    "newalbums": {
     "drafts": 7,
@@ -2481,7 +2501,7 @@
    },
    "meet": {
     "drafts": 11,
-    "posted": 3,
+    "posted": 4,
     "mult": 1.05
    },
    "intro": {
@@ -2507,32 +2527,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-11-05",
-    "lane": "정보",
-    "who": "혁오",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "614a66d8",
-    "posted": "DfYJVCODhJG",
-    "head": "140번째 오늘의 노래 | 2026.11.05",
-    "url": "https://www.instagram.com/p/DfYJVCODhJG/",
-    "mult": null
-   },
-   {
-    "day": "2026-11-05",
-    "lane": "정보",
-    "who": "방탄소년단",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "6775394d",
-    "posted": "DfZGDBSFKrb",
-    "head": "싸이의 '강남스타일'과 '젠틀맨'이 AI 음악 서비스 수노(Suno)를 상대로 한 저작권 ",
-    "url": "https://www.instagram.com/p/DfZGDBSFKrb/",
-    "mult": null
-   },
    {
     "day": "2026-11-05",
     "lane": "정보",
@@ -2588,6 +2582,19 @@
    {
     "day": "2026-11-06",
     "lane": "정보",
+    "who": "데이식스",
+    "repack": false,
+    "grade": "A",
+    "corner": "meet",
+    "key": "246c5b95",
+    "posted": "DfZf8aZlD6k",
+    "head": "데이식스(@day6kilogram)가 10월 인천에서 다섯 번째 팬미팅을 마쳤습니다.",
+    "url": "https://www.instagram.com/p/DfZf8aZlD6k/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-06",
+    "lane": "정보",
     "who": "잔나비",
     "repack": false,
     "grade": "A",
@@ -2610,11 +2617,24 @@
     "head": "베스티(@bestie_ofcl)의 13년 전 노래가 대만 차트 맨 위에 올랐습니다.",
     "url": "https://www.instagram.com/p/DfZUoNXlEnz/",
     "mult": null
+   },
+   {
+    "day": "2026-11-06",
+    "lane": "정보",
+    "who": "아일릿 원희",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "4c8e2b90",
+    "posted": "DfZmTPsmWis",
+    "head": "아일릿(@illit_official)이 미니 5집 [BREAK EVEN]으로 자체 최고 초",
+    "url": "https://www.instagram.com/p/DfZmTPsmWis/",
+    "mult": null
    }
   ]
  },
  "follow": {
-  "at": "2026-11-06T19:04+09:00",
+  "at": "2026-11-06T22:04+09:00",
   "d30": {
    "days": 30,
    "follows": 16.2,
@@ -2680,8 +2700,8 @@
    }
   ],
   "feed": {
-   "n": 173,
-   "reach": 3633309,
+   "n": 180,
+   "reach": 3635863,
    "follows": 484,
    "per1k": 0.13
   },
@@ -2697,7 +2717,7 @@
    {
     "kind": "기타",
     "n": 33,
-    "reach": 284905,
+    "reach": 285053,
     "follows": 37,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2705,15 +2725,15 @@
    {
     "kind": "공연·페스티벌",
     "n": 30,
-    "reach": 149956,
+    "reach": 150048,
     "follows": 20,
     "per1k": 0.13,
     "visits1k": 1.9
    },
    {
     "kind": "갈래 모름",
-    "n": 29,
-    "reach": 1496040,
+    "n": 36,
+    "reach": 1497972,
     "follows": 178,
     "per1k": 0.12,
     "visits1k": 2.8
@@ -2721,7 +2741,7 @@
    {
     "kind": "갈등·반응",
     "n": 23,
-    "reach": 438018,
+    "reach": 438092,
     "follows": 54,
     "per1k": 0.12,
     "visits1k": 2.6
@@ -2729,10 +2749,10 @@
    {
     "kind": "발매·신보",
     "n": 32,
-    "reach": 90171,
+    "reach": 90479,
     "follows": 10,
     "per1k": 0.11,
-    "visits1k": 2.9
+    "visits1k": 2.8
    }
   ],
   "top": [
@@ -2744,15 +2764,6 @@
     "per1k": 0.11,
     "kind": "",
     "head": "양홍원(@yanghongwon)이 한 시간 사이에 스토리 두 개를 올렸습니다. 하나…"
-   },
-   {
-    "date": "2026-09-07",
-    "sc": "Dc-3gvGjywQ",
-    "follows": 42,
-    "reach": 253969,
-    "per1k": 0.17,
-    "kind": "인물해부",
-    "head": "리센느 제나 나무위키 털기 올해 가장 자주 언급된 걸그룹은 역시 리센느인데요. 리센…"
    },
    {
     "date": "2026-09-10",
@@ -2789,6 +2800,15 @@
     "per1k": 0.39,
     "kind": "",
     "head": "실리카겔이라는 이름은 껌통에서 나왔습니다. 대학 시절 팀명을 못 정하고 있을 때 김…"
+   },
+   {
+    "date": "2026-09-09",
+    "sc": "DdEEWMJj7zk",
+    "follows": 12,
+    "reach": 81380,
+    "per1k": 0.15,
+    "kind": "인물해부",
+    "head": "리센느 메이 나무위키 털기 2026년을 리센느의 해라고 불러도 무리가 없을 텐데요.…"
    }
   ],
   "reels": {
