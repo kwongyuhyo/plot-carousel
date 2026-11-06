@@ -1839,13 +1839,280 @@
    },
    "corner_name": "듣는다면",
    "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:ord-22c5da17",
+    "account": "@규효 요청 · 입문 가이드",
+    "url": "",
+    "image": null,
+    "head": "일본 시티팝에서 요즘 시티팝 감성의 유행까지 — 입문 흐름",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-06T14:51+09:00",
+   "key": "592437d0",
+   "by": "claude",
+   "subjects": [
+    "시티팝"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "1970~80년대 일본 도시의 음악이 유튜브·틱톡을 타고 지금의 '시티팝 감성'이 되기까지",
+    "why": "규효 요청 연재 '만약 당신이 [장르]가 궁금하다면' — 시티팝"
+   },
+   "added": "claude",
+   "added_at": "2026-11-06T14:51+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n시티팝은 1970~80년대 일본 도시의 풍경을 닮은 팝입니다.\n\n펑크·디스코 리듬에 재즈의 세련된 코드를 얹은 소리인데요, 한동안 잊혔던 이 음악이 2010년대 유튜브와 틱톡을 타고 다시 전 세계 플레이리스트로 돌아왔습니다.\n\n처음 듣기 좋은 곡\nMariya Takeuchi – 'Plastic Love'\nMiki Matsubara – 'Mayonaka no Door~stay with me'\nYamashita Tatsuro – 'Ride On Time'\n김현철 – '오랜만에'\n\n시티팝에 입문할 때 저장해 두세요.\n\n#PLOT #시티팝 #야마시타타츠로 #타케우치마리야 #마츠바라미키 #김현철\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793944295/kxy0axaazfcd4scosg4s.jpg\n제목: 만약 당신이 시티팝이|궁금하다면\n부제: 시티팝 입문 가이드\n출처: Apple Music\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793944311/fzlpau9etthnvqvtoqqd.jpg\n소제목: 시티팝은 어떤 소리인가요\n본문: 통통 튀는 베이스와 펑크·디스코 리듬, 반짝이는 신시사이저, 재즈에서 가져온 세련된 코드가 한데 섞인 팝입니다.||밤 드라이브, 여름 바닷가, 네온사인 같은 도시 풍경이 먼저 떠오르는 음악인데요, 카세트 워크맨과 카 스테레오가 흔해지던 시절의 소리이기도 합니다.\n출처: Apple Music\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793944314/dchl4afglvsoojxqjcxa.jpg\n소제목: 1970년대 일본에서 시작됐습니다\n본문: 1975년 야마시타 타츠로가 있던 밴드 슈가 베이브의 [SONGS]가 시작점으로 꼽히고, 1970년대 후반 음반사와 음악 잡지가 '시티 팝스'라는 말을 쓰면서 장르 이름이 됐습니다.||일본 경제가 호황이던 1980년대에 전성기를 맞았다가 잊혔는데요, 2010년대 초 블로그와 재발매를 타고 해외에서 다시 들리기 시작했습니다.\n출처: Apple Music\n\n[슬라이드]\n형식: 곡\n음원: Mariya Takeuchi - Plastic Love\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793944321/dokljmco7znaxmf9i54q.jpg\n소제목: 지금의 유행을 연 곡\n본문: 튀는 베이스 위로 쓸쓸한 사랑 이야기가 흐릅니다. 1984년 남편 야마시타 타츠로와 함께 만든 앨범 [VARIETY]의 수록곡으로, 2010년대 유튜브 추천을 타고 해외에서 다시 퍼졌습니다. 요즘 시티팝 감성의 기준점이라 첫 곡으로 좋습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 松原みき / Miki Matsubara - Mayonaka no Door~stay with me\n소스: \n소제목: 틱톡이 다시 부른 후렴\n본문: 1979년 마츠바라 미키의 데뷔 싱글입니다. 'stay with me' 후렴이 한 번에 귀에 붙습니다. 2020년 레이니치의 커버를 계기로 틱톡에서 다시 퍼졌고, 그해 12월 스포티파이 글로벌 바이럴 차트 1위에 올랐습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Yamashita Tatsuro - Ride On Time\n소스: \n소제목: 시티팝의 맑은 얼굴\n본문: 1980년 카세트테이프 광고를 위해 만든 곡입니다. 쭉 뻗는 보컬과 밝은 기타·브라스가 여름 바다 같은 개방감을 줍니다. 밤의 쓸쓸함 말고 낮의 시원함도 시티팝이라는 걸 알려 주는 곡입니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: 김현철 - 오랜만에\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793944338/l4t1fs5jpwdyuxfqvdap.jpg\n소제목: 한국어로 듣는 같은 결\n본문: 1989년 김현철 1집 [김현철 Vol.1]의 수록곡입니다. 도시적인 편곡과 느긋한 그루브가 일본 시티팝과 닮아 '한국의 시티팝'으로 다시 불렸습니다. 일본 곡 다음에 들으면 이어지는 결이 바로 들립니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793603519/nh4a0gucjjcr3hllaqvb.jpg\n소제목: 지금 시티팝을 하는 국내 아티스트\n본문: **김현철** — 2021년 정규 11집 [City Breeze & Love Song]을 전곡 AOR 시티팝으로 채웠습니다.||**유키카** — 2019년 첫 싱글 '네온' 이후 꾸준히 시티팝을 불러 왔고, 2020년 정규 1집 [서울여자]를 냈습니다.||**나이트템포** — 1980년대 일본 시티팝을 리믹스하는 프로듀서로, 2021년 정규 [Ladies In The City]를 냈습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793944340/vgyggbam2nrct2m1pv9g.jpg\n소제목: 다음에 들을 것\n본문: **퓨처 펑크** — 시티팝을 잘게 잘라 빠른 댄스 비트로 다시 짠 인터넷 음악입니다. 나이트템포의 'Plastic Love' 리믹스가 입구입니다.||**AOR** — 시티팝이 많이 빌려 온 1970~80년대 미국 소프트 록입니다.||**재즈 퓨전** — 카시오페아·티 스퀘어처럼 시티팝과 같은 시기 일본에서 인기를 얻은 연주 음악입니다.\n출처: Apple Music\n",
+    "caption": "시티팝은 1970~80년대 일본 도시의 풍경을 닮은 팝입니다.\n\n펑크·디스코 리듬에 재즈의 세련된 코드를 얹은 소리인데요, 한동안 잊혔던 이 음악이 2010년대 유튜브와 틱톡을 타고 다시 전 세계 플레이리스트로 돌아왔습니다.\n\n처음 듣기 좋은 곡\nMariya Takeuchi – 'Plastic Love'\nMiki Matsubara – 'Mayonaka no Door~stay with me'\nYamashita Tatsuro – 'Ride On Time'\n김현철 – '오랜만에'\n\n시티팝에 입문할 때 저장해 두세요.\n\n#PLOT #시티팝 #야마시타타츠로 #타케우치마리야 #마츠바라미키 #김현철",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944295/kxy0axaazfcd4scosg4s.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/57/9a/ae/579aae46-6581-5d38-e1d2-b7088a643973/190295706791.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944297/nnz1m5blpzkx5fhwrywu.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b4/b1/46/b4b146b4-95e8-7d55-1894-f0434660b382/191953086927.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944300/ztvyup3fn9vlba1u7wwo.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/71/26/d8/7126d88b-7cf5-5ba5-7043-f1d26a8dd87f/jacket_MHXX00766B00Z_550.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944302/ostdql2nzg0qp1xf1nuf.jpg",
+      "credit": "",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793603519/nh4a0gucjjcr3hllaqvb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944304/wbqeqoiccxuntcurhjdt.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0e/22/52/0e225261-2b94-4d66-6e39-4ebbd02e0f13/21UM1IM30509.rgb.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944307/qjfn2vmiwuqsrd3otxtk.jpg",
+      "credit": "",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793612067/ibebcgvzjtnxidppsrzg.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944309/p8gvb5pun2btef9we8ui.jpg",
+      "credit": "",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793612028/oks8qdjgl8gntuxoj7we.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944295/kxy0axaazfcd4scosg4s.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/57/9a/ae/579aae46-6581-5d38-e1d2-b7088a643973/190295706791.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944297/nnz1m5blpzkx5fhwrywu.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b4/b1/46/b4b146b4-95e8-7d55-1894-f0434660b382/191953086927.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944300/ztvyup3fn9vlba1u7wwo.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/71/26/d8/7126d88b-7cf5-5ba5-7043-f1d26a8dd87f/jacket_MHXX00766B00Z_550.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944302/ostdql2nzg0qp1xf1nuf.jpg",
+      "credit": "",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793603519/nh4a0gucjjcr3hllaqvb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944304/wbqeqoiccxuntcurhjdt.jpg",
+      "credit": "Apple Music",
+      "from": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0e/22/52/0e225261-2b94-4d66-6e39-4ebbd02e0f13/21UM1IM30509.rgb.jpg/1200x1200bb.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944307/qjfn2vmiwuqsrd3otxtk.jpg",
+      "credit": "",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793612067/ibebcgvzjtnxidppsrzg.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944309/p8gvb5pun2btef9we8ui.jpg",
+      "credit": "",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793612028/oks8qdjgl8gntuxoj7we.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "만약 당신이 시티팝이|궁금하다면",
+      "sub": "시티팝 입문 가이드"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "1980년 도쿄에서|지금 플레이리스트까지",
+      "sub": "시티팝 입문 가이드"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "'Plastic Love'부터|'서울여자'까지",
+      "sub": "시티팝 입문 가이드"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "곡 장 커버: 'Plastic Love' 장에 원 앨범 [VARIETY] 대신 베스트 [Expressions] 커버가 붙음 — 나머지 3곡(미리보기 4장 밖) 커버·후렴도 앱에서 확인",
+     "국내 아티스트 장 사진(김현철 프로필)의 원출처 크레딧",
+     "🎵 5장 곡 확인 필요 — '松原みき / Miki Matsubara - Mayonaka no Door~stay with me': 같은 이름의 곡은 있는데 아티스트가 다릅니다",
+     "🎵 6장 곡 확인 필요 — 'Yamashita Tatsuro - Ride On Time': 같은 이름의 곡은 있는데 아티스트가 다릅니다"
+    ],
+    "research": [
+     {
+      "title": "Wikipedia — City pop",
+      "link": "https://en.wikipedia.org/wiki/City_pop"
+     },
+     {
+      "title": "Open Culture — YouTube's algorithm turned Plastic Love into a hit (2018)",
+      "link": "https://www.openculture.com/2018/10/youtubes-algorithm-turned-obscure-1980s-japanese-song-enormously-popular-hit-discover-mariya-takeuchis-plastic-love.html"
+     },
+     {
+      "title": "Korea Times(AFP) — City Pop: the soundtrack to Japan's boom years goes viral (2022)",
+      "link": "https://www.koreatimes.co.kr/amp/world/20220222/city-pop-the-soundtrack-to-japans-boom-years-goes-viral"
+     },
+     {
+      "title": "Tokyo Weekender — How Miki Matsubara became a viral sensation",
+      "link": "https://www.tokyoweekender.com/entertainment/music/how-miki-matsubara-became-a-viral-sensation-20-years-after-her-death/"
+     },
+     {
+      "title": "Wikipedia — Rainych",
+      "link": "https://en.wikipedia.org/wiki/Rainych"
+     },
+     {
+      "title": "Wikipedia — Ride on Time (song)",
+      "link": "https://en.wikipedia.org/wiki/Ride_on_Time_(Tatsuro_Yamashita_song)"
+     }
+    ],
+    "by": "claude",
+    "song_check": [
+     {
+      "i": 4,
+      "want": "松原みき / Miki Matsubara - Mayonaka no Door~stay with me",
+      "why": "같은 이름의 곡은 있는데 아티스트가 다릅니다",
+      "cands": [
+       {
+        "artist": "松原みき / Miki Matsubara",
+        "title": "Mayonaka no Door~stay with me",
+        "album": "Miki Matsubara Best Collection",
+        "img": "https://cdnimg.melon.co.kr/cm/album/images/102/71/525/10271525.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "31724618"
+       },
+       {
+        "artist": "松原みき / Miki Matsubara",
+        "title": "Mayonaka no Door~stay with me (Single ver.)",
+        "album": "Light Mellow Miki Matsubara",
+        "img": "https://cdnimg.melon.co.kr/cm/album/images/044/41/022/4441022.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "24109448"
+       },
+       {
+        "artist": "松原みき / Miki Matsubara",
+        "title": "Bay City Romance",
+        "album": "Miki Matsubara Best Collection",
+        "img": "https://cdnimg.melon.co.kr/cm/album/images/102/71/525/10271525.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "31724626"
+       },
+       {
+        "artist": "松原みき / Miki Matsubara",
+        "title": "Wash",
+        "album": "Miki Matsubara Best Collection",
+        "img": "https://cdnimg.melon.co.kr/cm/album/images/102/71/525/10271525.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "31724624"
+       }
+      ]
+     },
+     {
+      "i": 5,
+      "want": "Yamashita Tatsuro - Ride On Time",
+      "why": "같은 이름의 곡은 있는데 아티스트가 다릅니다",
+      "cands": [
+       {
+        "artist": "OKYD",
+        "title": "Ride On Time (Yamashita Tatsuro)",
+        "album": "Lovers Style ~Memories Of Summer Breeze~",
+        "img": "https://cdnimg.melon.co.kr/cm/album/images/003/99/031/399031.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "1940168"
+       },
+       {
+        "artist": "Deen",
+        "title": "Ride On Time",
+        "album": "POP IN CITY -for covers only-",
+        "img": "https://cdnimg.melon.co.kr/cm2/album/images/105/49/281/10549281_20210118160856.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "33214685"
+       },
+       {
+        "artist": "Yamashita Tatsuro",
+        "title": "Theme Of Mirai",
+        "album": "Theme Of Mirai / Music Train",
+        "img": "https://cdnimg.melon.co.kr/cm/album/images/101/86/349/10186349.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "31195106"
+       },
+       {
+        "artist": "Yamashita Tatsuro",
+        "title": "Kiska",
+        "album": "PACIFIC",
+        "img": "https://cdnimg.melon.co.kr/cm2/album/images/059/82/051/5982051_20230325201705.jpg/melon/resize/1000/quality/90/optimize",
+        "id": "108215440"
+       }
+      ]
+     }
+    ],
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944348/qenhahe9ve70enyhhugl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944348/okmc8qkpc9ozwdhn9buf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944348/z65db55nnoeepwmfv9wx.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944348/v90f94cugbtr4vvnio58.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944350/si8jowiznnxbkc3j115r.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944350/h6mkd76dl9xi5useuz9f.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944350/escwwfd42vwyrgrjulgu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944350/uuj8qufibqjnhn5edfa5.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944351/ecd0ombs9sc9wkwnimey.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944351/pww1p9zy03v9pgnm4xgo.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944353/utskirjvslfva9mjbixx.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944354/gk3s7xp6bw1mqchiwibk.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793944348/qenhahe9ve70enyhhugl.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-06T14:52+09:00",
+     "videos": {
+      "3": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793944371/plot_studio/qkwp3pxohdrhgh9vcqcj.mp4",
+      "4": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793943736/plot_studio/ckivtsgbrkuhpnxarwsy.mp4",
+      "6": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793944372/plot_studio/sbmvpyubs4llovannhfm.mp4"
+     },
+     "vkey": "deb8b689bbf5",
+     "v": {
+      "A": "192e8ce4",
+      "B": "f29450d3",
+      "C": "b5149a68"
+     }
+    }
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 4
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 3,
-  "done": 38,
+  "done": 39,
   "goal": 28,
   "corners": [
    {
@@ -1881,7 +2148,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 3,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -2008,7 +2275,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 20,
+    "done": 21,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -2017,7 +2284,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-06T14:34+09:00"
+  "at": "2026-11-06T14:51+09:00"
  },
  "queue": {
   "next": "2026-11-06T15:15+09:00",
@@ -2026,7 +2293,7 @@
   "last": "2026-11-06T14:15+09:00"
  },
  "slots": {
-  "basis": 322,
+  "basis": 323,
   "card": [
    {
     "from": 18,
@@ -2067,7 +2334,7 @@
     "to": 21,
     "at": "19:30",
     "mult": 1.91,
-    "median": 1.0,
+    "median": 1.02,
     "n": 25
    },
    {

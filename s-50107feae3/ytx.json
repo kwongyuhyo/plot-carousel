@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06T13:29+09:00",
+ "generated_at": "2026-11-06T14:39+09:00",
  "ready": true,
  "items": [
   {
@@ -177,17 +177,6 @@
    "title": "PLOT #Shorts",
    "url": "",
    "error": "Graph API 100: Unsupported get request. Object with ID '11563439' does not exist, cannot be loaded due to missing permissions, or does not support this operation",
-   "risky": false
-  },
-  {
-   "k": "b9874b74",
-   "status": "uploaded",
-   "at": "2026-11-03T14:34:47+09:00",
-   "head": "136번째 오늘의 노래 | 2026.11.02",
-   "permalink": "https://www.instagram.com/reel/DfO5JK5PFGN/",
-   "title": "136번째 오늘의 노래 | 2026.11.02 #Shorts",
-   "url": "https://youtu.be/TKRq1R00ivo",
-   "error": "",
    "risky": false
   },
   {
