@@ -174,6 +174,9 @@ header .home{
   padding:4px 7px; border:1px solid var(--line); border-radius:4px;
 }
 header .home:hover{color:var(--ink); border-color:var(--faint)}
+#prw .prHome{color:inherit; text-decoration:none; font-size:12.5px; font-weight:700; padding:3px 10px; margin-right:10px;
+  border:1px solid rgba(255,255,255,.18); border-radius:6px; white-space:nowrap}
+#prw .prHome:hover{border-color:rgba(255,255,255,.4)}
 /* 상자를 두르면 제목과 경쟁한다. 모노 활자만 남긴다 — 홈의 번호줄과 같은 결. */
 header .count{
   margin-left:auto; font-size:12px; color:var(--faint);
@@ -5846,6 +5849,17 @@ function stOnScroll() {
   clearTimeout(ST.scrubEnd);
   ST.scrubEnd = setTimeout(() => { ppSeek(PP.a + ST.lastRel); ST.scrubbing = false; if (!ST.wasPaused) ppSetPaused(false); }, 260);
 }
+function ppPlayingNow() {
+  try {
+    if (PP.kind === 'yt' && PP.ytReady && PP.yt && PP.yt.getPlayerState) return PP.yt.getPlayerState() === 1;
+    if (PP.vid) return !PP.vid.paused && !PP.vid.ended && PP.vid.readyState > 2;
+  } catch (_) {}
+  return false;
+}
+// 11/6 끌기가 화면 밖에서 끝나면(손가락이 타임라인 밖으로) ST.drag 가 남아 막대가 영영 멈췄다 — 손을 떼면 남은 끌기를 푼다
+['pointerup', 'pointercancel', 'blur'].forEach((ev) => window.addEventListener(ev, () => {
+  setTimeout(() => { if (ST.drag) ST.drag = null; if (ST.scrubbing && !ST.scrubEnd) ST.scrubbing = false; }, 0);
+}));
 function stLoop() {
   cancelAnimationFrame(ST.raf);
   const go = () => {
@@ -5854,7 +5868,9 @@ function stLoop() {
     if (ST.stopAt && !PP.paused && ppNow() >= ST.stopAt - 0.03) { ST.stopAt = 0; ppSetPaused(true); }   // 「그 줄만 듣기」 끝
     if (!ST.scrubbing && !ST.drag) {
       // 재생 중에만 영상을 따라 흐른다. 멈춰 있을 땐 타임라인이 주인 — 유튜브는 찾아가기 직후 시간을 늦게 알려 줘서 되돌아가 보였다
-      if (!PP.paused) { const rel = Math.max(0, Math.min(stLen(), ppNow() - PP.a)); stCenter(rel); ST.lastRel = rel; }
+      // 11/6 규효 "영상은 재생 중인데 타임라인 시간 막대가 안 움직일 때가 있다" — PP.paused 만 믿지 않고 실제 영상이 도는지도 본다
+      // (유튜브 화면을 직접 눌러 재생하면 PP.paused 가 그대로 true 였다)
+      if (!PP.paused || ppPlayingNow()) { const rel = Math.max(0, Math.min(stLen(), ppNow() - PP.a)); stCenter(rel); ST.lastRel = rel; }
       else { stNowPaint(stHeadRel()); if (ST.pr) stHeadPaint(stHeadRel()); }
     }
     ST.raf = requestAnimationFrame(go);
@@ -6308,6 +6324,7 @@ function prBuild() {
   const ctaOpts = '<option value="">자동 (카테고리 따라)</option>' + CTA_LIST.map((c) => '<option value="' + c + '">' + c + '</option>').join('');
   w.innerHTML = `
 <div class="prMenu">
+  <a class="prHome" data-home href="index.html" title="앱 첫 화면으로 (쓰던 것은 임시 저장됩니다)">← 홈</a>
   <span class="prApp"><b>PLOT</b> 숏폼</span>
   <span class="prMenuG">
     <button type="button" data-pa="new">＋ 새 영상</button>
@@ -7222,6 +7239,9 @@ function prLoop() {
     const tc = $('#prTlTC'); if (tc) tc.textContent = prTC(stHeadRel());
     const L = PP.e - PP.a;                                   // 유튜브는 길이를 늦게 알려 준다 — 알게 되면 타임라인을 다시 맞춘다
     if (Math.abs(L - (PR.lastLen || 0)) > 0.01) { PR.lastLen = L; if ($('#ppSubList').classList.contains('stOn')) { stFit(); prTracksPaint(); } }
+    // 11/6 타임라인 고리(stLoop)가 화면 전환 중에 멈추면 다시 안 켜졌다 — 켜져 있어야 할 때 꺼져 있으면 다시 켠다
+    const box = $('#ppSubList');
+    if (!ST.raf && box && !box.hidden && box.classList.contains('stOn') && !$('#pp').hidden && typeof stLoop === 'function') stLoop();
   }
   requestAnimationFrame(prLoop);
 }
@@ -7526,9 +7546,9 @@ function mfInput(ev) {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.06 18:16';
+    a.title = '판 11.06 18:42';
     var ver = document.createElement('span');
-    ver.textContent = '11.06 18:16';
+    ver.textContent = '11.06 18:42';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
