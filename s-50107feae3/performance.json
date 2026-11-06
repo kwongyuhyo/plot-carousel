@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-05 22:04 KST",
+ "generated_at": "2026-11-06 15:06 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,41 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-05 19:05 KST"
+  "daily": "2026-11-05 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-05T21:36:06+09:00",
+  "fetched_at": "2026-11-06T14:39:35+09:00",
   "posts": [
+   {
+    "t": "2026-11-06T14:15+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "미국 뉴욕타임스가 뉴진스(@newjeans_official)의 전속계약서"
+   },
+   {
+    "t": "2026-11-06T11:54+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가"
+   },
+   {
+    "t": "2026-11-06T07:51+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "140번째 오늘의 노래 | 2026.11.05"
+   },
+   {
+    "t": "2026-11-06T05:34+09:00",
+    "type": "VIDEO",
+    "head": "140번째 오늘의 노래 | 2026.11.05"
+   },
+   {
+    "t": "2026-11-05T23:53+09:00",
+    "type": "VIDEO",
+    "head": "존박(@johnparkgram)과 크러쉬(@crush9244)가 한강에서"
+   },
+   {
+    "t": "2026-11-05T23:48+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "혁오(@hyukohofficial)의 새 정규 앨범 [33] 커버는 안민"
+   },
    {
     "t": "2026-11-05T20:43+09:00",
     "type": "VIDEO",
@@ -2315,31 +2345,26 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 345,
-  "posted": 106,
-  "posts": 128,
+  "drafts": 359,
+  "posted": 110,
+  "posts": 134,
   "rate": 0.31,
-  "adopted_mult": 0.98,
-  "own_mult": 1.04,
+  "adopted_mult": 0.97,
+  "own_mult": 1.05,
   "lanes": {
-   "기타": {
-    "drafts": 3,
-    "posted": 0,
-    "mult": null
-   },
    "재미": {
-    "drafts": 32,
+    "drafts": 33,
     "posted": 4,
     "mult": 1.96
    },
    "정보": {
-    "drafts": 229,
-    "posted": 88,
-    "mult": 0.98
+    "drafts": 240,
+    "posted": 90,
+    "mult": 0.96
    },
    "클립": {
-    "drafts": 46,
-    "posted": 6,
+    "drafts": 48,
+    "posted": 7,
     "mult": 1.15
    },
    "재포장": {
@@ -2358,8 +2383,8 @@
     "mult": null
    },
    "시리즈": {
-    "drafts": 24,
-    "posted": 5,
+    "drafts": 27,
+    "posted": 6,
     "mult": 0.78
    },
    "속보": {
@@ -2375,13 +2400,13 @@
   },
   "corners": {
    "news": {
-    "drafts": 186,
-    "posted": 70,
+    "drafts": 189,
+    "posted": 71,
     "mult": 1.0
    },
    "mal": {
-    "drafts": 46,
-    "posted": 6,
+    "drafts": 47,
+    "posted": 7,
     "mult": 0.96
    },
    "again": {
@@ -2390,8 +2415,8 @@
     "mult": null
    },
    "song": {
-    "drafts": 13,
-    "posted": 3,
+    "drafts": 17,
+    "posted": 4,
     "mult": 0.46
    },
    "tteolgi": {
@@ -2405,8 +2430,8 @@
     "mult": 0.93
    },
    "spotlight": {
-    "drafts": 10,
-    "posted": 0,
+    "drafts": 11,
+    "posted": 1,
     "mult": null
    },
    "newalbums": {
@@ -2415,7 +2440,7 @@
     "mult": 2.5
    },
    "anniv": {
-    "drafts": 16,
+    "drafts": 17,
     "posted": 2,
     "mult": 2.0
    },
@@ -2425,17 +2450,17 @@
     "mult": 0.77
    },
    "meet": {
-    "drafts": 10,
+    "drafts": 11,
     "posted": 3,
     "mult": 1.05
    },
    "intro": {
-    "drafts": 8,
+    "drafts": 10,
     "posted": 2,
     "mult": 0.78
    },
    "listen": {
-    "drafts": 3,
+    "drafts": 4,
     "posted": 1,
     "mult": 0.26
    }
@@ -2452,45 +2477,6 @@
    }
   ],
   "recent": [
-   {
-    "day": "2026-11-04",
-    "lane": "정보",
-    "who": "봉제인간",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "f3015181",
-    "posted": "DfT6ScTDsKU",
-    "head": "봉제인간의 신곡 '아등바등'은 공연장에서 먼저 불린 노래입니다.",
-    "url": "https://www.instagram.com/p/DfT6ScTDsKU/",
-    "mult": 0.46
-   },
-   {
-    "day": "2026-11-04",
-    "lane": "정보",
-    "who": "김하온",
-    "repack": false,
-    "grade": "A",
-    "corner": "meet",
-    "key": "b3e27f4c",
-    "posted": "DfULg0RFNW-",
-    "head": "김하온(@noahmik)이 자신을 학습한 AI와 같은 무대에서 맞붙습니다.",
-    "url": "https://www.instagram.com/p/DfULg0RFNW-/",
-    "mult": 4.52
-   },
-   {
-    "day": "2026-11-04",
-    "lane": "정보",
-    "who": "뉴진스",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "9494c3fa",
-    "posted": "DfUCjBNlHV2",
-    "head": "뉴진스(@newjeans_official) 다섯 멤버가 함께 출원한 'NJZ' 상표 54건",
-    "url": "https://www.instagram.com/p/DfUCjBNlHV2/",
-    "mult": 1.55
-   },
    {
     "day": "2026-11-04",
     "lane": "정보",
@@ -2551,15 +2537,54 @@
     "grade": "A",
     "corner": "news",
     "key": "614a66d8",
-    "posted": "DfWWJM3lLh_",
-    "head": "혁오(@hyukohofficial)가 6년 만의 정규 앨범 [33]을 11월 25일 오후 ",
-    "url": "https://www.instagram.com/p/DfWWJM3lLh_/",
+    "posted": "DfYJVCODhJG",
+    "head": "140번째 오늘의 노래 | 2026.11.05",
+    "url": "https://www.instagram.com/p/DfYJVCODhJG/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-05",
+    "lane": "정보",
+    "who": "혁오",
+    "repack": false,
+    "grade": "A",
+    "corner": "spotlight",
+    "key": "c4e2e469",
+    "posted": "DfX5r34DyGq",
+    "head": "140번째 오늘의 노래 | 2026.11.05",
+    "url": "https://www.instagram.com/reel/DfX5r34DyGq/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-05",
+    "lane": "시리즈",
+    "who": "혁오",
+    "repack": false,
+    "grade": "A",
+    "corner": "song",
+    "key": "c1379a2f",
+    "posted": "DfXSB-XGdpv",
+    "head": "혁오(@hyukohofficial)의 새 정규 앨범 [33] 커버는 안민정 작가가 그렸습니",
+    "url": "https://www.instagram.com/p/DfXSB-XGdpv/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-06",
+    "lane": "정보",
+    "who": "오방가르드",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "f03f43d9",
+    "posted": "DfYlMaqguw4",
+    "head": "관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가 두 달 만에 다시",
+    "url": "https://www.instagram.com/p/DfYlMaqguw4/",
     "mult": null
    }
   ]
  },
  "follow": {
-  "at": "2026-11-05T22:04+09:00",
+  "at": "2026-11-06T15:06+09:00",
   "d30": {
    "days": 30,
    "follows": 16.2,
@@ -2618,15 +2643,15 @@
    },
    {
     "week": "2026-W45",
-    "follows": 22,
-    "unfollows": 28,
-    "net": -6,
-    "days": 2
+    "follows": 38,
+    "unfollows": 40,
+    "net": -2,
+    "days": 3
    }
   ],
   "feed": {
-   "n": 168,
-   "reach": 3627310,
+   "n": 173,
+   "reach": 3633309,
    "follows": 484,
    "per1k": 0.13
   },
@@ -2640,25 +2665,25 @@
     "visits1k": 4.2
    },
    {
-    "kind": "공연·페스티벌",
-    "n": 30,
-    "reach": 148005,
-    "follows": 20,
-    "per1k": 0.14,
-    "visits1k": 1.8
-   },
-   {
     "kind": "기타",
     "n": 33,
-    "reach": 284462,
+    "reach": 284905,
     "follows": 37,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
+    "kind": "공연·페스티벌",
+    "n": 30,
+    "reach": 149956,
+    "follows": 20,
+    "per1k": 0.13,
+    "visits1k": 1.9
+   },
+   {
     "kind": "갈래 모름",
-    "n": 24,
-    "reach": 1494413,
+    "n": 29,
+    "reach": 1496040,
     "follows": 178,
     "per1k": 0.12,
     "visits1k": 2.8
@@ -2666,7 +2691,7 @@
    {
     "kind": "갈등·반응",
     "n": 23,
-    "reach": 437636,
+    "reach": 438018,
     "follows": 54,
     "per1k": 0.12,
     "visits1k": 2.6
@@ -2674,10 +2699,10 @@
    {
     "kind": "발매·신보",
     "n": 32,
-    "reach": 88575,
+    "reach": 90171,
     "follows": 10,
     "per1k": 0.11,
-    "visits1k": 2.8
+    "visits1k": 2.9
    }
   ],
   "top": [
@@ -2740,7 +2765,7 @@
    "reels_per1k": 0.1,
    "feed_per1k": 0.03,
    "base": 16.6,
-   "days": 52
+   "days": 53
   },
   "spikes": [
    {
