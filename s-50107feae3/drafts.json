@@ -3329,9 +3329,10 @@
    },
    "corner_name": "오늘의 노래",
    "corner_no": 9,
-   "scheduled": {
-    "at": "2026-11-06T07:50+09:00",
-    "cover": "B"
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfYJVCODhJG/",
+    "cover": "B",
+    "at": "2026-11-06T07:51+09:00"
    }
   },
   {
@@ -3788,13 +3789,215 @@
    },
    "corner_name": "그 말",
    "corner_no": 8
+  },
+  {
+   "source": {
+    "id": "claude:brk-17dba244",
+    "account": "@갈등·반응",
+    "url": "https://biz.heraldcorp.com/article/10927758?ref=naver",
+    "image": null,
+    "head": "뉴욕타임스가 뉴진스가 데뷔 전 어도어와 맺은 계약서를 공개했다 — 조항 쟁점과 하이브 반박",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-06T09:01+09:00",
+   "key": "05761067",
+   "by": "claude",
+   "subjects": [
+    "뉴진스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "NYT가 공개한 뉴진스 2022년 전속계약서 — 무엇이 문제로 꼽혔고 하이브는 뭐라고 했나",
+    "why": "11/5 NYT 보도 뒤 국내 매체가 일제히 받아 쓰며 반응 급증"
+   },
+   "added": "claude",
+   "added_at": "2026-11-06T09:01+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n뉴욕타임스가 뉴진스(@newjeans_official)의 데뷔 전 전속계약서를 공개했습니다.\n\n멤버 다섯 명이 만 14~17세이던 2022년 어도어와 맺은 계약인데요, NYT는 정부 표준계약서에 있는 미성년자의 건강·교육·수면권 보장 조항이 빠져 있고, 성형과 피부 관리 비용의 상당 부분을 멤버가 갚도록 했다고 짚었습니다. 계약이 끝난 뒤에도 회사가 이름·얼굴·음성을 쓸 수 있게 한 조항도 문제로 꼽았고, 검토에 참여한 노종언 변호사는 \"이례적으로 공격적인 계약\"이라고 평가했습니다.\n\n하이브는 미성년자 보호 관련 법률을 지키고 있으며, 본인 의사에 반하는 성형이나 시술을 권유하지 않는다고 반박했습니다. 정부 표준계약서는 법적 구속력이 없는 지침이라는 입장입니다.\n\nNYT는 이 계약이 수년간 약속된 K팝 업계의 개혁에도 실질적인 변화가 거의 없었다는 걸 보여 준다고 평가했습니다.\n\n#PLOT #뉴진스 #NewJeans #어도어 #하이브 #뉴욕타임스\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793923274/carsemmj16hkhcmr1fmg.jpg\n제목: 뉴욕타임스,|뉴진스 계약서 공개\n부제: 하이브 \"미성년자 보호 법률 준수\"\n출처: @newjeans_official\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1793923287/plot_studio/hxuwlmetgnwgaffpghft.mp4\n소제목: \n본문: \n출처: YTN\n",
+    "caption": "뉴욕타임스가 뉴진스(@newjeans_official)의 데뷔 전 전속계약서를 공개했습니다.\n\n멤버 다섯 명이 만 14~17세이던 2022년 어도어와 맺은 계약인데요, NYT는 정부 표준계약서에 있는 미성년자의 건강·교육·수면권 보장 조항이 빠져 있고, 성형과 피부 관리 비용의 상당 부분을 멤버가 갚도록 했다고 짚었습니다. 계약이 끝난 뒤에도 회사가 이름·얼굴·음성을 쓸 수 있게 한 조항도 문제로 꼽았고, 검토에 참여한 노종언 변호사는 \"이례적으로 공격적인 계약\"이라고 평가했습니다.\n\n하이브는 미성년자 보호 관련 법률을 지키고 있으며, 본인 의사에 반하는 성형이나 시술을 권유하지 않는다고 반박했습니다. 정부 표준계약서는 법적 구속력이 없는 지침이라는 입장입니다.\n\nNYT는 이 계약이 수년간 약속된 K팝 업계의 개혁에도 실질적인 변화가 거의 없었다는 걸 보여 준다고 평가했습니다.\n\n#PLOT #뉴진스 #NewJeans #어도어 #하이브 #뉴욕타임스",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923274/carsemmj16hkhcmr1fmg.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273515/tpvykqfqpk4ijszthcth.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923278/tchzdzijg12klnrlj3mc.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793227205/hbeqacvgsgtirll4qeui.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923281/fqxlycqs6ukc12s21vrv.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914397/fgrhp2pwvhlbsljrlxuc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793374157/e9fr9on9urdlj6hkomlz.jpg",
+      "credit": "@newjeans_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869828961_18099574283704989_5898361623053809582_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VygJMhgCfgwQ7kNvwF6DcK9&_nc_oc=AdqI1XhwifY5z6eYU97HQgPrMPNDbK3t6PD2AO58TVuP111kfBNuSo43BEwjoQwkgUo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=wPj03kpa60NnwhzA_EMupw&oh=00_AQRO26o76adhTtwTzbch9MIqtcgB7JIwBxEeJo8NOR138g&oe=6AEAA47A"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923274/carsemmj16hkhcmr1fmg.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792273515/tpvykqfqpk4ijszthcth.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923278/tchzdzijg12klnrlj3mc.jpg",
+      "credit": "@newjeans_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793227205/hbeqacvgsgtirll4qeui.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923281/fqxlycqs6ukc12s21vrv.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791914397/fgrhp2pwvhlbsljrlxuc.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793374157/e9fr9on9urdlj6hkomlz.jpg",
+      "credit": "@newjeans_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869828961_18099574283704989_5898361623053809582_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VygJMhgCfgwQ7kNvwF6DcK9&_nc_oc=AdqI1XhwifY5z6eYU97HQgPrMPNDbK3t6PD2AO58TVuP111kfBNuSo43BEwjoQwkgUo&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=wPj03kpa60NnwhzA_EMupw&oh=00_AQRO26o76adhTtwTzbch9MIqtcgB7JIwBxEeJo8NOR138g&oe=6AEAA47A"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "뉴욕타임스,|뉴진스 계약서 공개",
+      "sub": "하이브 \"미성년자 보호 법률 준수\""
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "성형비는 멤버 부담?|NYT가 본 뉴진스 계약",
+      "sub": "하이브 \"법률 준수\" 반박"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "만 14~17세에 쓴|뉴진스 계약서",
+      "sub": "뉴욕타임스가 짚은 조항들"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 1장: 제목 '뉴욕타임스,' 줄이 왼쪽 아래 멤버 얼굴 아래쪽에 걸침 — 사진 위치 조정 또는 다른 사진 확인 (사실 대조는 헤럴드·중앙신문·YTN 자막과 모두 일치)",
+     "클립 위험: 높음 — YTN (0:38-1:05, 27초)",
+     "표지 단체 사진(2025-10-29 공식 계정)에 지금 활동 구성과 다른 멤버가 들어 있어도 괜찮은지 — 계약서는 다섯 명 모두가 2022년에 서명한 것",
+     "반복 — 「뉴진스」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "헤럴드경제 — NYT “뉴진스 계약, 이례적으로 공격적…미성년 보호조항 없어 불공정”",
+      "link": "https://biz.heraldcorp.com/article/10927758?ref=naver"
+     },
+     {
+      "title": "중앙신문 — NYT, 뉴진스 '성형비 멤버가 부담' 가혹한 계약서 공개...하이브 '법률 준수'",
+      "link": "https://www.jasm.co.kr/news/view/324355/?sc=Naver"
+     },
+     {
+      "title": "YTN — NYT \"뉴진스 계약 불공정...성형비 멤버 부담\" [앵커리포트]",
+      "link": "https://www.youtube.com/watch?v=us6j2qp63AM"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923295/a6zupey7npiblgrbcnfo.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923298/wvuvkptwffuyl2vwz2uw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923295/f8o4dg8zr5zgoxq6j3gg.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923300/ydu4qhqazkl0vvqe8evo.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923300/jakgqnpeh604qdo9c0e5.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923295/a6zupey7npiblgrbcnfo.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-06T09:01+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793923296/plot_studio/cp5g5684oykkmtmgkhc6.mp4"
+     },
+     "v": {
+      "A": "ccaf1362",
+      "B": "7019673c",
+      "C": "8c0fcf90"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=us6j2qp63AM\n구간: 0:38-1:05\n곡: 뉴진스의 계약서\n아티스트: 뉴욕타임스가 연\n피처링:\n후킹: \n출처: YTN\n자막: 자동",
+    "caption": "뉴욕타임스가 뉴진스(@newjeans_official)의 데뷔 전 전속계약서를 공개했습니다.\n\n멤버 다섯 명이 만 14~17세이던 2022년 어도어와 맺은 계약인데요, NYT는 정부 표준계약서에 있는 미성년자의 건강·교육·수면권 보장 조항이 빠져 있다고 짚었습니다. 성형 비용의 상당 부분을 멤버가 갚도록 한 조항과 계약이 끝난 뒤에도 이름·얼굴·음성을 쓸 수 있게 한 조항도 함께 문제로 꼽았습니다.\n\n하이브는 미성년자 보호 관련 법률을 지키고 있고, 학업 중단을 강요하거나 휴식에 불이익을 주지 않았다고 반박했습니다. 영상은 11월 5일 YTN 앵커리포트입니다.\n\n#PLOT #뉴진스 #NewJeans #어도어 #뉴욕타임스",
+    "hooks": {
+     "A": "뉴욕타임스가 연 / 뉴진스의 계약서",
+     "B": "미성년 보호 조항이 / 빠졌다고 본 NYT",
+     "C": "만 14~17세에 쓴 / 계약서 속 조항들"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=us6j2qp63AM",
+     "credit": "YTN",
+     "range": [
+      38.0,
+      65.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 1장: 제목 '뉴욕타임스,' 줄이 왼쪽 아래 멤버 얼굴 아래쪽에 걸침 — 사진 위치 조정 또는 다른 사진 확인 (사실 대조는 헤럴드·중앙신문·YTN 자막과 모두 일치)",
+     "클립 위험: 높음 — YTN (0:38-1:05, 27초)",
+     "표지 단체 사진(2025-10-29 공식 계정)에 지금 활동 구성과 다른 멤버가 들어 있어도 괜찮은지 — 계약서는 다섯 명 모두가 2022년에 서명한 것",
+     "반복 — 「뉴진스」 글이 이틀 안에 이미 3편 나갔습니다. 새 사실이 없으면 4번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "헤럴드경제 — NYT “뉴진스 계약, 이례적으로 공격적…미성년 보호조항 없어 불공정”",
+      "link": "https://biz.heraldcorp.com/article/10927758?ref=naver"
+     },
+     {
+      "title": "중앙신문 — NYT, 뉴진스 '성형비 멤버가 부담' 가혹한 계약서 공개...하이브 '법률 준수'",
+      "link": "https://www.jasm.co.kr/news/view/324355/?sc=Naver"
+     },
+     {
+      "title": "YTN — NYT \"뉴진스 계약 불공정...성형비 멤버 부담\" [앵커리포트]",
+      "link": "https://www.youtube.com/watch?v=us6j2qp63AM"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/us6j2qp63AM/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793923304/xg8fnj5px48nup14lkoz.jpg",
+     "key": "us6j2qp63AM@38.0"
+    },
+    "px": {
+     "vid": "us6j2qp63AM",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1793923313/plot_studio/vzuiteno6pcwgvnzie9m.mp4",
+     "off": 0.0,
+     "end": 110.0,
+     "full": 138.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-06T09:02+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 3,
-  "done": 36,
+  "done": 37,
   "goal": 28,
   "corners": [
    {
@@ -3957,25 +4160,25 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 18,
+    "done": 19,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 8,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-06T05:38+09:00"
+  "at": "2026-11-06T09:02+09:00"
  },
  "queue": {
-  "next": "2026-11-06T08:50+09:00",
-  "n": 1,
+  "next": "2026-11-06T09:04+09:00",
+  "n": 0,
   "gap": 60,
-  "last": "2026-11-06T05:35+09:00"
+  "last": "2026-11-06T07:51+09:00"
  },
  "slots": {
-  "basis": 320,
+  "basis": 321,
   "card": [
    {
     "from": 18,
@@ -3989,7 +4192,7 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.67,
+    "mult": 1.68,
     "median": 0.74,
     "n": 40
    },
