@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-06 15:06 KST",
+ "generated_at": "2026-11-06 19:04 KST",
  "weeks": [
   {
    "week": "2026-W37",
@@ -1676,11 +1676,41 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-05 22:04 KST"
+  "daily": "2026-11-06 15:06 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-06T14:39:35+09:00",
+  "fetched_at": "2026-11-06T19:04:50+09:00",
   "posts": [
+   {
+    "t": "2026-11-06T19:04+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "주혜린(@joohyelyn)의 노래 속 사랑은 대개 처음이 아닙니다."
+   },
+   {
+    "t": "2026-11-06T18:49+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "베스티(@bestie_ofcl)의 13년 전 노래가 대만 차트 맨 위에 "
+   },
+   {
+    "t": "2026-11-06T18:34+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "141번째 오늘의 노래 | 2026.11.06"
+   },
+   {
+    "t": "2026-11-06T18:00+09:00",
+    "type": "VIDEO",
+    "head": "141번째 오늘의 노래 | 2026.11.06"
+   },
+   {
+    "t": "2026-11-06T17:48+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "로꼬(@satgotloco)가 12월 8일 오후 6시 새 EP [쉬운생각"
+   },
+   {
+    "t": "2026-11-06T16:41+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "싸이의 '강남스타일'과 '젠틀맨'이 AI 음악 서비스 수노(Suno)를 "
+   },
    {
     "t": "2026-11-06T14:15+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2345,12 +2375,12 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 359,
-  "posted": 110,
-  "posts": 134,
-  "rate": 0.31,
-  "adopted_mult": 0.97,
-  "own_mult": 1.05,
+  "drafts": 362,
+  "posted": 115,
+  "posts": 140,
+  "rate": 0.32,
+  "adopted_mult": 0.98,
+  "own_mult": 1.04,
   "lanes": {
    "재미": {
     "drafts": 33,
@@ -2358,9 +2388,9 @@
     "mult": 1.96
    },
    "정보": {
-    "drafts": 240,
-    "posted": 90,
-    "mult": 0.96
+    "drafts": 243,
+    "posted": 95,
+    "mult": 0.98
    },
    "클립": {
     "drafts": 48,
@@ -2400,8 +2430,8 @@
   },
   "corners": {
    "news": {
-    "drafts": 189,
-    "posted": 71,
+    "drafts": 191,
+    "posted": 74,
     "mult": 1.0
    },
    "mal": {
@@ -2416,8 +2446,8 @@
    },
    "song": {
     "drafts": 17,
-    "posted": 4,
-    "mult": 0.46
+    "posted": 6,
+    "mult": 0.7
    },
    "tteolgi": {
     "drafts": 15,
@@ -2455,7 +2485,7 @@
     "mult": 1.05
    },
    "intro": {
-    "drafts": 10,
+    "drafts": 11,
     "posted": 2,
     "mult": 0.78
    },
@@ -2478,58 +2508,6 @@
   ],
   "recent": [
    {
-    "day": "2026-11-04",
-    "lane": "정보",
-    "who": "랩비트",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "c34f9aad",
-    "posted": "DfUSy9-FK37",
-    "head": "랩비트가 내년 4월, 사흘로 돌아옵니다.",
-    "url": "https://www.instagram.com/p/DfUSy9-FK37/",
-    "mult": 0.68
-   },
-   {
-    "day": "2026-11-04",
-    "lane": "시리즈",
-    "who": "주혜린",
-    "repack": false,
-    "grade": "A",
-    "corner": "song",
-    "key": "e038ace4",
-    "posted": "DfUjgJivGUa",
-    "head": "139번째 오늘의 노래 | 2026.11.04",
-    "url": "https://www.instagram.com/reel/DfUjgJivGUa/",
-    "mult": 0.46
-   },
-   {
-    "day": "2026-11-04",
-    "lane": "정보",
-    "who": "듀스",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "b05843f2",
-    "posted": "DfUh4qcjvuC",
-    "head": "듀스가 31년 만에 정규 4집을 냅니다.",
-    "url": "https://www.instagram.com/p/DfUh4qcjvuC/",
-    "mult": 0.29
-   },
-   {
-    "day": "2026-11-05",
-    "lane": "정보",
-    "who": "우시오 켄스케",
-    "repack": false,
-    "grade": "A",
-    "corner": "newalbums",
-    "key": "531ef163",
-    "posted": "DfWOIaHGbw0",
-    "head": "극장판 〈체인소 맨 레제편〉의 음악이 LP로 국내 예약 판매를 시작했습니다.",
-    "url": "https://www.instagram.com/p/DfWOIaHGbw0/",
-    "mult": null
-   },
-   {
     "day": "2026-11-05",
     "lane": "정보",
     "who": "혁오",
@@ -2540,6 +2518,32 @@
     "posted": "DfYJVCODhJG",
     "head": "140번째 오늘의 노래 | 2026.11.05",
     "url": "https://www.instagram.com/p/DfYJVCODhJG/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-05",
+    "lane": "정보",
+    "who": "방탄소년단",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "6775394d",
+    "posted": "DfZGDBSFKrb",
+    "head": "싸이의 '강남스타일'과 '젠틀맨'이 AI 음악 서비스 수노(Suno)를 상대로 한 저작권 ",
+    "url": "https://www.instagram.com/p/DfZGDBSFKrb/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-05",
+    "lane": "정보",
+    "who": "잔나비",
+    "repack": false,
+    "grade": "A",
+    "corner": "song",
+    "key": "ebc51134",
+    "posted": "DfZS-1bFESw",
+    "head": "141번째 오늘의 노래 | 2026.11.06",
+    "url": "https://www.instagram.com/p/DfZS-1bFESw/",
     "mult": null
    },
    {
@@ -2580,11 +2584,37 @@
     "head": "관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가 두 달 만에 다시",
     "url": "https://www.instagram.com/p/DfYlMaqguw4/",
     "mult": null
+   },
+   {
+    "day": "2026-11-06",
+    "lane": "정보",
+    "who": "잔나비",
+    "repack": false,
+    "grade": "A",
+    "corner": "song",
+    "key": "4c9393d1",
+    "posted": "DfZO-ZKP5RF",
+    "head": "141번째 오늘의 노래 | 2026.11.06",
+    "url": "https://www.instagram.com/reel/DfZO-ZKP5RF/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-06",
+    "lane": "정보",
+    "who": "베스티",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "c2e7fef4",
+    "posted": "DfZUoNXlEnz",
+    "head": "베스티(@bestie_ofcl)의 13년 전 노래가 대만 차트 맨 위에 올랐습니다.",
+    "url": "https://www.instagram.com/p/DfZUoNXlEnz/",
+    "mult": null
    }
   ]
  },
  "follow": {
-  "at": "2026-11-06T15:06+09:00",
+  "at": "2026-11-06T19:04+09:00",
   "d30": {
    "days": 30,
    "follows": 16.2,
