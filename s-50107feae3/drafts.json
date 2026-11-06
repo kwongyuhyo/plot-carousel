@@ -458,6 +458,11 @@
       }
      ],
      "at": "2026-11-06T05:34+09:00"
+    },
+    "published": {
+     "permalink": "https://www.instagram.com/reel/DfZZIpiiAjB/",
+     "at": "2026-11-06T19:33+09:00",
+     "via": "manual"
     }
    },
    "corner_name": "그 말",
@@ -2600,7 +2605,7 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 7,
+   "corner_no": 9,
    "published": {
     "permalink": "https://www.instagram.com/p/DfZQlohk0YX/",
     "cover": "A",
@@ -3084,7 +3089,7 @@
  "corners": {
   "week": "11/02~11/08",
   "days_left": 3,
-  "done": 42,
+  "done": 45,
   "goal": 28,
   "corners": [
    {
@@ -3139,11 +3144,11 @@
     "key": "song",
     "name": "오늘의 노래",
     "weekly": 7,
-    "done": 6,
-    "left": 1,
-    "need_today": 1,
+    "done": 8,
+    "left": 0,
+    "need_today": 0,
     "day": null,
-    "next_no": 7,
+    "next_no": 9,
     "drafts": 1,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
@@ -3247,7 +3252,7 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 23,
+    "done": 24,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -3256,24 +3261,24 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-06T19:04+09:00"
+  "at": "2026-11-06T19:33+09:00"
  },
  "queue": {
-  "next": "2026-11-06T20:04+09:00",
+  "next": "2026-11-06T20:29+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-06T19:04+09:00"
+  "last": "2026-11-06T19:29+09:00"
  },
  "slots": {
-  "basis": 326,
+  "basis": 329,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.05,
-    "median": 1.22,
-    "n": 59
+    "mult": 1.96,
+    "median": 1.06,
+    "n": 62
    },
    {
     "from": 21,
@@ -3305,7 +3310,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.85,
+    "mult": 1.89,
     "median": 1.02,
     "n": 26
    },
