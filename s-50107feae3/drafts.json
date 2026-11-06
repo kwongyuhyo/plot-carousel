@@ -2335,7 +2335,7 @@
     }
    },
    "corner_name": "만나는 법",
-   "corner_no": 4,
+   "corner_no": 5,
    "published": {
     "permalink": "https://www.instagram.com/p/DfZf8aZlD6k/",
     "at": "2026-11-06T20:33+09:00",
@@ -3288,14 +3288,19 @@
      "at": "2026-11-06T20:34+09:00"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfZmTPsmWis/",
+    "cover": "A",
+    "at": "2026-11-06T21:23+09:00"
+   }
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 3,
-  "done": 47,
+  "done": 48,
   "goal": 28,
   "corners": [
    {
@@ -3314,11 +3319,11 @@
     "key": "meet",
     "name": "만나는 법",
     "weekly": 0,
-    "done": 1,
+    "done": 2,
     "left": 0,
     "need_today": 0,
     "day": null,
-    "next_no": 4,
+    "next_no": 5,
     "drafts": 1,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
@@ -3467,24 +3472,24 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-06T20:34+09:00"
+  "at": "2026-11-06T21:23+09:00"
  },
  "queue": {
-  "next": "2026-11-06T21:33+09:00",
+  "next": "2026-11-06T22:23+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-06T20:33+09:00"
+  "last": "2026-11-06T21:23+09:00"
  },
  "slots": {
-  "basis": 331,
+  "basis": 332,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.94,
-    "median": 1.05,
-    "n": 63
+    "mult": 1.92,
+    "median": 1.04,
+    "n": 64
    },
    {
     "from": 21,
@@ -3516,7 +3521,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.87,
+    "mult": 1.92,
     "median": 1.07,
     "n": 27
    },
