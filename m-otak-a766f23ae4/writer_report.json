@@ -1,0 +1,74 @@
+{
+ "schema": 1,
+ "generated_at": "2026-11-06T19:17+09:00",
+ "range": [
+  "2026-10-31",
+  "2026-11-06"
+ ],
+ "prev_range": [
+  "2026-10-24",
+  "2026-10-30"
+ ],
+ "cur": {
+  "drafts": 6,
+  "lanes": {
+   "정보": 6
+  },
+  "forms": {
+   "캐러셀+숏폼": 6
+  },
+  "evaluated": 0,
+  "eval_rate": 0.0,
+  "go": {
+   "바로 올림": 0,
+   "손보면 올림": 0,
+   "안 올림": 0
+  },
+  "why_top": [],
+  "published": 0,
+  "publish_rate": 0.0,
+  "reach_mult": [],
+  "verify_touched": 2,
+  "orders": {
+   "만듦": 0,
+   "못 만듦": 0
+  },
+  "runs": 2,
+  "run_fail": 0,
+  "avg_secs": 1297,
+  "denied": 0,
+  "auto": {
+   "올림": 0,
+   "안 올림": 0
+  }
+ },
+ "prev": {
+  "drafts": 0,
+  "lanes": {},
+  "forms": {},
+  "evaluated": 0,
+  "eval_rate": null,
+  "go": {
+   "바로 올림": 0,
+   "손보면 올림": 0,
+   "안 올림": 0
+  },
+  "why_top": [],
+  "published": 0,
+  "publish_rate": null,
+  "reach_mult": [],
+  "verify_touched": 0,
+  "orders": {
+   "만듦": 0,
+   "못 만듦": 0
+  },
+  "runs": 0,
+  "run_fail": 0,
+  "avg_secs": null,
+  "denied": 0,
+  "auto": {
+   "올림": 0,
+   "안 올림": 0
+  }
+ }
+}
