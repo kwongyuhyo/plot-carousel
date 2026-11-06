@@ -6,7 +6,7 @@
  *
  * 버전을 올리면 옛 캐시는 activate 에서 통째로 지운다.
  */
-const V = 'plot-app-v40';
+const V = 'plot-app-v41';
 const SHELL = [
   './', './index.html', './carousel.html', './shorts.html', './sources.html',
   './perf.html', './timeline.html',
@@ -27,7 +27,8 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys()
-      .then((ks) => Promise.all(ks.filter((k) => k !== V).map((k) => caches.delete(k))))
+      // 11/6 같은 주소에 매거진 앱이 여럿 — 제 이름(plot-app-·mag-<id>-)으로 시작하는 옛 캐시만 지운다 (남의 캐시는 그대로)
+      .then((ks) => Promise.all(ks.filter((k) => k !== V && k.indexOf(V.replace(/v\d+$/, '')) === 0).map((k) => caches.delete(k))))
       .then(() => self.clients.claim())
   );
 });

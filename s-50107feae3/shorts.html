@@ -1,6 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<script>(function () {
+  var M = "", T = M ? '@' + M : '';
+  if (window.__plotMag) return; window.__plotMag = M || 'plot';
+  if (M) {
+    var P = 'mag:' + M + ':', S = window.Storage && Storage.prototype;
+    if (S && !S.__magP) {
+      var g = S.getItem, s = S.setItem, r = S.removeItem;
+      S.getItem = function (k) { return g.call(this, P + k); };
+      S.setItem = function (k, v) { return s.call(this, P + k, v); };
+      S.removeItem = function (k) { return r.call(this, P + k); };
+      S.__magP = P;
+    }
+    try {
+      if (window.indexedDB) {
+        var io = indexedDB.open.bind(indexedDB);
+        indexedDB.open = function (n, v) { return v === undefined ? io(P + n) : io(P + n, v); };
+      }
+    } catch (e) {}
+  }
+  var F = window.fetch; if (!F) return;
+  var ET = encodeURIComponent(T);
+  function q(qs) {
+    var ps = qs ? qs.split('&') : [], mac = false;
+    ps = ps.map(function (p) {
+      if (/^id=eq\.mac(%3A|:)status$/i.test(p)) mac = true;
+      if (!M || p.indexOf('kind=') !== 0) return p;
+      return p.replace(/^kind=(not\.)?(eq|neq)\.(.+)$/, function (_, n, op, v) { return 'kind=' + (n || '') + op + '.' + v + ET; })
+              .replace(/^kind=(not\.)?in\.\((.*)\)$/, function (_, n, v) {
+                return 'kind=' + (n || '') + 'in.(' + v.split(',').map(function (x) { return x + ET; }).join(',') + ')'; });
+    });
+    if (!mac) ps.push(M ? 'kind=like.*' + ET : 'kind=not.like.*%40*');
+    return ps.join('&');
+  }
+  function body(b) {
+    if (!M || typeof b !== 'string') return b;
+    try {
+      var o = JSON.parse(b);
+      (Array.isArray(o) ? o : [o]).forEach(function (x) { if (x && typeof x.kind === 'string' && x.kind.indexOf('@') < 0) x.kind += T; });
+      return JSON.stringify(o);
+    } catch (e) { return b; }
+  }
+  function blocked(b) {
+    if (!M || typeof b !== 'string') return '';
+    try {
+      var o = JSON.parse(b); o = Array.isArray(o) ? o[0] : o;
+      var k = String((o && o.kind) || '').split('@')[0], sn = (o && o.snapshot) || {};
+      if (k === 'act' || k === 'order' || (k === 'studio' && !sn.status))
+        return '새 매거진 앱은 아직 맥 작업(발행·렌더·맡기기)과 연결 전입니다 — 보기·고치기·복사는 됩니다';
+    } catch (e) {}
+    return '';
+  }
+  var RX = M ? new RegExp('("kind"\\s*:\\s*"[^"@]*)' + T.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '"', 'g') : null;
+  window.fetch = function (input, init) {
+    var a = arguments;
+    try {
+      var m = typeof input === 'string' && input.match(/^(.*\/rest\/v1\/plot_evals)(\?([^#]*))?$/);
+      if (!m) return F.apply(window, a);
+      init = Object.assign({}, init || {});
+      var meth = String(init.method || 'GET').toUpperCase();
+      var why = meth === 'POST' ? blocked(init.body) : '';
+      if (why) return Promise.reject(new Error(why));
+      if (meth === 'POST' || meth === 'PATCH') init.body = body(init.body);
+      var u = meth === 'POST' ? input : m[1] + '?' + q(m[3] || '');
+      var p = F.call(window, u, init);
+      if (!M) return p;
+      return p.then(function (res) {
+        if (!res.ok || res.status === 204) return res;
+        return res.text().then(function (t) {
+          var h = new Headers(res.headers); h.delete('content-encoding'); h.delete('content-length');
+          return new Response(t.replace(RX, '$1"'), { status: res.status, statusText: res.statusText, headers: h });
+        });
+      });
+    } catch (e) { return F.apply(window, a); }
+  };
+})();</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PLOT 숏폼 양식</title>
@@ -7546,9 +7622,9 @@ function mfInput(ev) {
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.06 18:42';
+    a.title = '판 11.06 19:04';
     var ver = document.createElement('span');
-    ver.textContent = '11.06 18:42';
+    ver.textContent = '11.06 19:04';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
