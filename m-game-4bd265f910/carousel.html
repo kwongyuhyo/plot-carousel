@@ -4176,9 +4176,9 @@ document.getElementById("clearSample").onclick = () => document.getElementById("
     a.href = './';
     a.textContent = "\u2190 \uac9c\ub514\ud551 \uc81c\uc791";
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.06 20:33';
+    a.title = '판 11.06 21:12';
     var ver = document.createElement('span');
-    ver.textContent = '11.06 20:33';
+    ver.textContent = '11.06 21:12';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -4819,6 +4819,156 @@ if ('serviceWorker' in navigator) {
     }
     ctx.textAlign = "left";
     hit("category", 0, 0, W, 200);
+  };
+
+  /* ── 11/6 곡 장 · 타임라인(정리) 장 — 맥 brands/<id>/design/song.html · timeline.html 과 같은 모양 ── */
+  function richDrawC(ctx, rows, y, size, lead, col, bcol, bbg) {   // 가운데 맞춤
+    rows.forEach(function (row, n) {
+      var w = 0; row.forEach(function (tk) { w += textW(ctx, tk.b ? EB(size) : SB(size), tk.t); });
+      richDraw(ctx, [row], (W - w) / 2, y + n * size * lead, size, lead, col, bcol, bbg);
+    });
+  }
+  function center(ctx, font, t, y, col, sh, d, maxW) {
+    ctx.font = font;
+    var tt = t;
+    if (maxW && ctx.measureText(tt).width > maxW) { while (tt.length > 1 && ctx.measureText(tt + "…").width > maxW) tt = tt.slice(0, -1); tt += "…"; }
+    var w = ctx.measureText(tt).width;
+    shadowText(ctx, font, tt, (W - w) / 2, y, col, sh, d);
+  }
+  function blurBg(ctx, img, ink) {
+    if (img && (img.naturalWidth || img.width)) {
+      var t = document.createElement("canvas"); t.width = 18; t.height = 22;
+      t.getContext("2d").drawImage(img, 0, 0, 18, 22);
+      ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = "high"; ctx.drawImage(t, 0, 0, W, H);
+    } else { ctx.fillStyle = POP ? "#1a0b2e" : "#2a1673"; ctx.fillRect(0, 0, W, H); }
+    ctx.fillStyle = ink; ctx.fillRect(0, 0, W, H);
+  }
+  function marks(ctx, tag, mast) {
+    if (POP) { popFrameMarks(ctx, mast); sticker(ctx, tag); return; }
+    pixFrame(ctx);
+    pixLabel(ctx, "GAME DIPPIN", 60, 62, 20, "#ffe14d", "#2a1673", 18, 14);
+    var c = pixLabel(ctx, String(tag || "NEWS").toUpperCase(), 0, 62, 18, "#2a1673", "#ffe14d", 16, 14, 60);
+    hit("category", c.x - 8, c.y - 8, c.w + 16, c.h + 16);
+  }
+  function popFrameMarks(ctx, mastSize) {
+    var t = ctx.createLinearGradient(0, 0, 0, 230);
+    t.addColorStop(0, "rgba(10,4,20,.62)"); t.addColorStop(1, "rgba(10,4,20,0)");
+    ctx.fillStyle = t; ctx.fillRect(0, 0, W, 230);
+    ctx.save(); ctx.shadowColor = "rgba(0,0,0,.45)"; ctx.shadowBlur = 18; ctx.shadowOffsetY = 3;
+    var a = "I'M NOT ", y0 = 46 + mastSize * 0.86;
+    shadowText(ctx, DS(mastSize), a, 52, y0, "#ffffff");
+    shadowText(ctx, DS(mastSize), "OTAKU", 52 + textW(ctx, DS(mastSize), a), y0, "#e60033");
+    ctx.restore();
+  }
+  slideSong = function (ctx, img, tag, s, num) {
+    if (PAINT_S) PAINT_S._fh = 0;
+    var sp = songSplit(s.song), artist = sp[0], title = sp[1];
+    var ok = img && (img.naturalWidth || img.width);
+    blurBg(ctx, ok ? img : null, POP ? "rgba(26,11,46,.55)" : "rgba(42,22,115,.6)");
+    if (POP && DOTS) ctx.drawImage(DOTS, 0, H - 520);
+    marks(ctx, tag, 44);
+    if (num) {
+      if (POP) { var nf = DS(30), nw = textW(ctx, nf, num) + 36; rr(ctx, 52, 128, nw, 47, 24); ctx.fillStyle = "#ff4fa3"; ctx.fill();
+        ctx.font = nf; ctx.fillStyle = "#fff"; ctx.textBaseline = "alphabetic"; ctx.textAlign = "left"; ctx.fillText(num, 70, 128 + 36); }
+      else pixLabel(ctx, num, 60, 132, 20, "#2a1673", "#ffe14d", 14, 10);
+    }
+    var CS = 440, cx = (W - CS) / 2, cy = 205 + 6;
+    ctx.save(); ctx.shadowColor = "rgba(0,0,0,.5)"; ctx.shadowBlur = 50; ctx.shadowOffsetY = 18;
+    if (POP) { rr(ctx, cx - 6, cy - 6, CS + 12, CS + 12, 28); ctx.fillStyle = "#ffffff"; ctx.fill(); }
+    else { ctx.fillStyle = "#ffe14d"; ctx.fillRect(cx - 8, cy - 8, CS + 16, CS + 16); }
+    ctx.restore();
+    ctx.save(); if (POP) { rr(ctx, cx, cy, CS, CS, 22); ctx.clip(); }
+    if (ok) { var iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height, sd = Math.min(iw, ih);
+      ctx.drawImage(img, (iw - sd) / 2, (ih - sd) / 2, sd, sd, cx, cy, CS, CS); }
+    else { ctx.fillStyle = POP ? "#2f1853" : "#3a2a8a"; ctx.fillRect(cx, cy, CS, CS); }
+    ctx.restore();
+    var y = cy + CS + 6, kk = String(s.heading || "").trim();
+    if (kk) { y += 34; center(ctx, "700 " + SB(26), oneline(lit(kk)), y + 26, POP ? "#ffb3d9" : "#ffe14d", null, 0, 880); y += 31; }
+    y += 16;
+    var ts = 54; while (ts > 40 && textW(ctx, DS(ts), title || "곡 이름") > 920) ts -= 2;
+    center(ctx, DS(ts), title || "곡 이름", y + ts * 0.98, POP ? "#ffffff" : "#ffe14d", POP ? "#29d3ff" : "#ff4fa3", 4, 920);
+    y += ts * 1.15 + 12;
+    center(ctx, SB(32), artist, y + 32, POP ? "#f3eefc" : "#ffffff", null, 0, 880);
+    var by = Math.round(y + 38 + 40), X0 = 140, X1 = W - 140, px = X0 + Math.round((X1 - X0) * 0.36);
+    SONG_BY = by;
+    if (!SONG_NOBAR) {
+      ctx.fillStyle = "rgba(255,255,255,.27)"; ctx.fillRect(X0, by, X1 - X0, 6);
+      ctx.fillStyle = POP ? "#ff4fa3" : "#ffe14d"; ctx.fillRect(X0, by, px - X0, 6);
+      if (POP) { ctx.beginPath(); ctx.arc(px, by + 3, 9, 0, Math.PI * 2); ctx.fillStyle = "#ffffff"; ctx.fill(); }
+      else { ctx.fillStyle = "#ffe14d"; ctx.fillRect(px - 9, by - 6, 18, 18); }
+    }
+    var body = String(lit(s.body) || "").split(/\n+/).map(function (q) { return q.trim(); }).filter(Boolean).join("\n");
+    if (body) {
+      var bs = 32, rows = richWrap(ctx, body, bs, 840);
+      if (rows.length > 5) { bs = 30; rows = richWrap(ctx, body, bs, 840); }
+      if (rows.length > 5) { rows = rows.slice(0, 5); rows[4].push({ t: "…", b: false }); }
+      richDrawC(ctx, rows, by + 46, bs, 1.62, POP ? "#f3eefc" : "#f0ecff", POP ? "#ffe14d" : "#2a1673", POP ? null : "#ffe14d");
+      hit("body", 120, by + 40, W - 240, rows.length * bs * 1.62 + 12);
+    } else hit("body", 120, by + 40, W - 240, 140);
+    ctx.font = "600 " + SB(22); ctx.fillStyle = POP ? "rgba(255,255,255,.6)" : "rgba(255,255,255,.8)"; ctx.textAlign = "center";
+    ctx.fillText("♪ 소리 켜고 들어 보세요", W / 2, H - (POP ? 46 : 56) - 6); ctx.textAlign = "left";
+    credit(ctx, s.credit, POP ? 48 : 60, POP ? 44 : 52, POP ? "rgba(255,255,255,.67)" : "rgba(255,255,255,.8)");
+    hit("credit", 720, H - 110, 340, 80);
+  };
+  slideTimeline = function (ctx, img, tag, speaker, heading, body, source) {
+    if (PAINT_S) PAINT_S._fh = 0;
+    ctx.fillStyle = POP ? "#1a0b2e" : "#2a1673"; ctx.fillRect(0, 0, W, H);
+    if (POP) { ctx.fillStyle = "rgba(255,79,163,.16)"; for (var yy = 11; yy < H; yy += 22) for (var xx = 11; xx < W; xx += 22) { ctx.beginPath(); ctx.arc(xx, yy, 2, 0, Math.PI * 2); ctx.fill(); } }
+    else { ctx.fillStyle = "rgba(255,225,77,.07)"; for (var g = 0; g < W; g += 30) ctx.fillRect(g, 0, 2, H); for (var g2 = 0; g2 < H; g2 += 30) ctx.fillRect(0, g2, W, 2);
+      ctx.save(); ctx.beginPath(); ctx.rect(0, 0, W, H); ctx.rect(36, 36, W - 72, H - 72); ctx.fillStyle = "#1f1057"; ctx.fill("evenodd"); ctx.restore(); }
+    if (POP) { popFrameMarks(ctx, 44); sticker(ctx, tag); }
+    else { pixLabel(ctx, "GAME DIPPIN", 60, 62, 20, "#ffe14d", "#2a1673", 18, 14);
+      var c = pixLabel(ctx, String(tag || "NEWS").toUpperCase(), 0, 62, 18, "#2a1673", "#ffe14d", 16, 14, 60); hit("category", c.x - 8, c.y - 8, c.w + 16, c.h + 16); }
+    var maxW = W - 184, spk = String(speaker || "").trim();
+    var HT = fitTitle(ctx, heading, DS, maxW, 66, 44, 4), hl = HT.size * 1.2;
+    var bodyT = String(body || "").replace(/\|\|/g, "\n\n").trim();
+    var ok = img && (img.naturalWidth || img.width), solo = ok && !HT.lines.length && !bodyT, ev = null;
+    if (ok) { var iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height, sc = solo ? Math.min(960 / iw, 880 / ih) : Math.min(860 / iw, 400 / ih);
+      ev = { w: Math.round(iw * sc), h: Math.round(ih * sc) }; }
+    function bodyBlocks(bs) {
+      var out = [];
+      bodyT.split("\n").forEach(function (para) {
+        para = para.trim();
+        if (!para) { if (out.length && out[out.length - 1].k !== "gap") out.push({ k: "gap", h: 20 }); return; }
+        if (/^출처\s*:/.test(para)) { out.push({ k: "note", rows: richWrap(ctx, para, 25, maxW), size: 25, lead: 1.5 }); return; }
+        out.push({ k: "body", rows: richWrap(ctx, para, bs, maxW), size: bs, lead: 1.58 });
+      });
+      out.forEach(function (b) { if (b.rows) b.h = b.rows.length * b.size * b.lead; });
+      return out;
+    }
+    var spH = spk ? 51 + 26 : 0, hH = HT.lines.length * hl, evH = ev ? ev.h + (solo ? 0 : 34) + 12 : 0;
+    var bs = 37, BB = bodyBlocks(bs), bH = function () { return BB.reduce(function (a, b) { return a + b.h; }, 0) + (bodyT ? 40 : 0); };
+    while (bs > 22 && spH + hH + evH + bH() > 1010) { bs -= 1; BB = bodyBlocks(bs); }
+    var tot = Math.min(1010, spH + hH + evH + bH()), y = 680 - tot / 2;
+    if (spk) {
+      var sf = EB(29), sw = textW(ctx, sf, spk) + 48, sx = (W - sw) / 2;
+      if (POP) { rr(ctx, sx, y, sw, 51, 26); ctx.fillStyle = "#ff4fa3"; ctx.fill(); } else { ctx.fillStyle = "#ffe14d"; ctx.fillRect(sx, y, sw, 51); }
+      ctx.font = sf; ctx.fillStyle = POP ? "#ffffff" : "#2a1673"; ctx.textAlign = "center"; ctx.textBaseline = "alphabetic"; ctx.fillText(spk, W / 2, y + 36); ctx.textAlign = "left";
+      y += spH;
+    }
+    var hTop = y;
+    HT.lines.forEach(function (ln, k) { center(ctx, DS(HT.size), ln, y + k * hl + HT.size * 0.95, POP ? "#ffffff" : "#ffe14d", POP ? "#29d3ff" : "#ff4fa3", 4); });
+    if (HT.lines.length) hit("heading", 92, hTop - 6, maxW, hH + 12);
+    y += hH;
+    if (ev) {
+      y += solo ? 0 : 34;
+      var ex = (W - ev.w) / 2;
+      if (POP) { rr(ctx, ex - 6, y - 6, ev.w + 12, ev.h + 12, 18); ctx.fillStyle = "#ffffff"; ctx.fill(); ctx.save(); rr(ctx, ex, y, ev.w, ev.h, 13); ctx.clip(); ctx.drawImage(img, ex, y, ev.w, ev.h); ctx.restore(); }
+      else { ctx.fillStyle = "#ffe14d"; ctx.fillRect(ex - 8, y - 8, ev.w + 16, ev.h + 16); ctx.drawImage(img, ex, y, ev.w, ev.h); }
+      y += ev.h + 12;
+    }
+    if (bodyT) {
+      y += 40; var bTop = y;
+      BB.forEach(function (b) {
+        if (b.k === "gap") { y += b.h; return; }
+        richDrawC(ctx, b.rows, y, b.size, b.lead, b.k === "note" ? (POP ? "#a990cc" : "#a69ddb") : (POP ? "#d8c6ef" : "#ded8ff"),
+                  POP ? "#ffe14d" : "#2a1673", POP ? null : "#ffe14d");
+        y += b.h;
+      });
+      hit("body", 92, bTop - 6, maxW, y - bTop + 12);
+    } else hit("body", 92, y, maxW, 120);
+    credit(ctx, source, POP ? 48 : 60, POP ? 44 : 52, POP ? "rgba(255,255,255,.67)" : "rgba(255,255,255,.8)");
+    hit("credit", 720, H - 110, 340, 80);
   };
   try { repaint(true); } catch (_) {}
 })();
