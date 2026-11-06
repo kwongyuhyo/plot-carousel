@@ -1396,7 +1396,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     var t = localStorage.getItem('plot.app.theme');
     var a = localStorage.getItem('plot.app.accent');
     if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-    if (a) document.documentElement.setAttribute('data-accent', a);
+    document.documentElement.setAttribute('data-accent', a || 'mag');
     var n = localStorage.getItem('plot.app.neon');
     document.documentElement.setAttribute('data-neon', n || 'cyan');
     var g = localStorage.getItem('plot.app.gap');
@@ -1406,6 +1406,18 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
   } catch (e) {}
 })();
 </script>
+
+<style id="magSkin">
+@font-face{font-family:'MagDisp';src:url(mag-bhs.woff2) format('woff2');font-display:swap}
+html:root[data-accent="mag"]{ --bg:#1a0b2e; --panel:#241240; --raise:#2f1853; --panel-2:#2f1853; --line:#432a6e; --hair:#2a1648; --text:#fff4fb; --ink:#fff4fb; --muted:#dccbf2; --dim:#ad96d0; --faint:#ad96d0; --skip:#ad96d0; --accent:#ff4fa3; --amber:#ff4fa3; --glass:rgba(26,11,46,.93); --magrgb:255,79,163; color-scheme:dark; }
+html:root[data-theme="light"][data-accent="mag"]{ --bg:#fff6fb; --panel:#ffeaf5; --raise:#ffdcee; --panel-2:#ffdcee; --line:#f2c4dd; --hair:#fbe3f0; --text:#1a0b2e; --ink:#1a0b2e; --muted:#5a3a73; --dim:#6e4f86; --faint:#6e4f86; --skip:#6e4f86; --accent:#c8006e; --amber:#c8006e; --glass:rgba(255,246,251,.93); --magrgb:200,0,110; color-scheme:light; }
+@media (prefers-color-scheme: light){ html:root:not([data-theme="dark"])[data-accent="mag"]{ --bg:#fff6fb; --panel:#ffeaf5; --raise:#ffdcee; --panel-2:#ffdcee; --line:#f2c4dd; --hair:#fbe3f0; --text:#1a0b2e; --ink:#1a0b2e; --muted:#5a3a73; --dim:#6e4f86; --faint:#6e4f86; --skip:#6e4f86; --accent:#c8006e; --amber:#c8006e; --glass:rgba(255,246,251,.93); --magrgb:200,0,110; color-scheme:light; } }
+html:root[data-accent="mag"] body{ background-color:var(--bg); background-image:radial-gradient(rgba(var(--magrgb),.13) 1.4px,transparent 1.9px);background-size:18px 18px; background-attachment:fixed }
+html:root[data-accent="mag"] h1,html:root[data-accent="mag"] h2,html:root[data-accent="mag"] .masthead .mark{ font-family:'MagDisp',Pretendard,-apple-system,sans-serif!important; font-weight:400!important; letter-spacing:0!important }
+html:root[data-accent="mag"] h1{ text-shadow:3px 3px 0 #29d3ff }
+html:root[data-accent="mag"] .chip.on,html:root[data-accent="mag"] .tab[aria-selected="true"],html:root[data-accent="mag"] .grp button[aria-selected="true"]{ background:var(--accent)!important; color:var(--bg)!important; border-color:var(--accent)!important }
+.plotThemeBox .sw[data-accent="mag"]{ background:linear-gradient(135deg,#ff4fa3 0 55%,#ffe14d 55% 100%); color:#ff4fa3 }
+</style>
 <script>window.PLOT_BOT="";</script>
 <script>window.PLOT_UPLOAD={"cloud": "dwndhzqod", "preset": "plot_studio"};</script><script>(function () {
   var SB = { url: "https://jipqujwziezeubtthbnw.supabase.co", key: "sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK" };
@@ -7622,9 +7634,9 @@ function mfInput(ev) {
     a.href = './';
     a.textContent = "\u2190 \uc554\ub0ab\uc624\ud0c0\ucfe0 \uc81c\uc791";
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.06 19:17';
+    a.title = '판 11.06 20:33';
     var ver = document.createElement('span');
-    ver.textContent = '11.06 19:17';
+    ver.textContent = '11.06 20:33';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -7748,14 +7760,14 @@ function mfInput(ev) {
   var FSIZES = [['s', '작게'], ['m', '보통'], ['l', '크게'], ['xl', '더 크게']];
   var HUES = ['cyan', 'magenta', 'lime', 'orange', 'violet'];
   var MODES = [['system', '기기'], ['light', '밝게'], ['dark', '어둡게']];
-  var ACCENTS = [['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
+  var ACCENTS = [['mag', ''], ['amber', '#E8B34A'], ['blue', '#5B8DEF'], ['green', '#4FB477'],
                  ['violet', '#8B7CF0'], ['mono', '#ECECF1'], ['neon', '#00F0FF']];
   var box = null;
 
   function get(k, d) { try { return localStorage.getItem(k) || d; } catch (e) { return d; } }
   function set(k, v) { try { v ? localStorage.setItem(k, v) : localStorage.removeItem(k); } catch (e) {} }
   function mode() { var t = get(TK, ''); return (t === 'light' || t === 'dark') ? t : 'system'; }
-  function accent() { return get(AK, 'amber'); }
+  function accent() { return get(AK, 'mag'); }
   function hue() { var h = get(NK, 'cyan'); return HUES.indexOf(h) < 0 ? 'cyan' : h; }
   function gap() { var g = get(GK, 'normal'); return /^(tight|normal|wide)$/.test(g) ? g : 'normal'; }
   function fsize() { var f = get(FK, 'm'); return /^(s|m|l|xl)$/.test(f) ? f : 'm'; }
