@@ -187,12 +187,12 @@
      "at": "2026-11-07T11:15+09:00"
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
-    "why": "오늘 새벽 엑자일콘에서 나온 가장 새 소식 · 카카오게임즈가 국내 서비스해 한국 이용자가 많고 무료 전환이라 저장·공유가 나올 꼴",
-    "at": "2026-11-07T11:11+09:00"
-   },
-   "corner_name": "소식"
+    "rank": 2,
+    "why": "오늘 새벽 엑자일콘의 가장 큰 발표 · 국내 이용자 많고 무료 전환이라 저장·공유가 나올 꼴",
+    "at": "2026-11-07T19:11+09:00"
+   }
   },
   {
    "source": {
@@ -344,11 +344,6 @@
      "at": "2026-11-07T11:15+09:00"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "한국 무속으로 만든 국산 인디 — 한국 독자에게 걸리는 지점이 분명한 실험 칸",
-    "at": "2026-11-07T11:11+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -442,10 +437,517 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:stellarblade-switch2",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323053",
+    "image": null,
+    "head": "어디서나 이브와 함께, '스텔라 블레이드' 스위치2 출시",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T19:11+09:00",
+   "key": "bad38f4a",
+   "by": "claude",
+   "subjects": [
+    "스텔라 블레이드",
+    "시프트업"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "한국 개발사 시프트업의 〈스텔라 블레이드〉, 6일 스위치2로 출시 — 시리즈 첫 닌텐도 콘솔판",
+    "why": "11/6 전 세계 동시 출시 · 인벤·아주경제·엑스포츠뉴스·파이낸셜투데이 확인 · 한국 개발사 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T19:11+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈스텔라 블레이드〉가 6일 닌텐도 스위치2로 출시됐습니다.\n\n한국 개발사 시프트업이 만든 액션 게임인데요, 2024년 4월 PS5로 먼저 나와 PC를 거쳐 처음으로 닌텐도 콘솔에 왔습니다. 스위치2판 이름은 〈스텔라 블레이드 컴플리트 에디션〉으로, 본편에 〈니어: 오토마타〉·〈승리의 여신: 니케〉 콜라보 DLC가 함께 담겼습니다.\n\nTV에 꽂아도, 손에 들고도 할 수 있고, 조이콘2 모션 조작도 들어갔습니다. 같은 날 베요네타 콜라보 의상 4종이 스위치2와 PS5, PC에 무료로 풀렸습니다.\n\n닌텐도 스위치2 · 11월 6일 출시 · 실물판은 카트리지에 게임 전체 수록 · e숍 무료 체험판\n\n#겜디핑 #스텔라블레이드 #시프트업 #닌텐도스위치2 #베요네타\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046271/vkb67yyq28gkl8awx065.jpg\n제목: 스텔라 블레이드,|스위치2로 나왔다\n부제: 한국 개발사 시프트업의 첫 닌텐도 콘솔판\n출처: \n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794046293/plot_studio/u3g4aojrzlwohqolb0ax.mp4\n소제목: \n본문: \n출처: SHIFT UP Official Channel\n",
+    "caption": "〈스텔라 블레이드〉가 6일 닌텐도 스위치2로 출시됐습니다.\n\n한국 개발사 시프트업이 만든 액션 게임인데요, 2024년 4월 PS5로 먼저 나와 PC를 거쳐 처음으로 닌텐도 콘솔에 왔습니다. 스위치2판 이름은 〈스텔라 블레이드 컴플리트 에디션〉으로, 본편에 〈니어: 오토마타〉·〈승리의 여신: 니케〉 콜라보 DLC가 함께 담겼습니다.\n\nTV에 꽂아도, 손에 들고도 할 수 있고, 조이콘2 모션 조작도 들어갔습니다. 같은 날 베요네타 콜라보 의상 4종이 스위치2와 PS5, PC에 무료로 풀렸습니다.\n\n닌텐도 스위치2 · 11월 6일 출시 · 실물판은 카트리지에 게임 전체 수록 · e숍 무료 체험판\n\n#겜디핑 #스텔라블레이드 #시프트업 #닌텐도스위치2 #베요네타",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046271/vkb67yyq28gkl8awx065.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046271/vkb67yyq28gkl8awx065.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "스텔라 블레이드,|스위치2로 나왔다",
+      "sub": "한국 개발사 시프트업의 첫 닌텐도 콘솔판"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "국내 가격 69,800원은 11번가 예약 페이지·해외 사이트 한국어 기사뿐이라 뺐습니다 · 한국어 지원도 스위치2판 기준 확인 못 해 끝줄에서 뺌 — 닌텐도 e숍에서 확인되면 끝줄에 더하기",
+     "숏폼 구간 0:20-0:45 는 화면 확인 안 함 — 실사 트레일러라 이브가 나오는 장면인지 보고 고르기"
+    ],
+    "research": [
+     {
+      "title": "어디서나 이브와 함께, '스텔라 블레이드' 스위치2 출시 (인벤)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323053"
+     },
+     {
+      "title": "시프트업, '스텔라 블레이드' 닌텐도 스위치2 버전 글로벌 출시 (아주경제)",
+      "link": "https://www.ajunews.com/view/20261106092634906"
+     },
+     {
+      "title": "니어·니케·베요네타 콜라보 전부 담았다... '스텔라 블레이드', 닌텐도 스위치 2 컴플리트 에디션 6일 출시 (엑스포츠뉴스)",
+      "link": "https://www.xportsnews.com/article/2216233"
+     },
+     {
+      "title": "시프트업 '스텔라 블레이드', 스위치2 버전 출시...무료체험판도 제공 (파이낸셜투데이)",
+      "link": "https://www.ftoday.co.kr/news/articleView.html?idxno=369122"
+     },
+     {
+      "title": "Stellar Blade - Live Action Launch Trailer - Nintendo Switch 2 (SHIFT UP 공식)",
+      "link": "https://www.youtube.com/watch?v=trMkpK0EwSo"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046333/hltekqo7rsabddqojnrk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046336/x4pl4jmgbj0zxgcya5ez.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046332/chlrms08f62plndlz05x.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046333/hltekqo7rsabddqojnrk.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T19:12+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046334/plot_studio/clgbrpvyxqfdmcxtxxbx.mp4"
+     },
+     "v": {
+      "A": "2577216c"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=trMkpK0EwSo\n구간: 0:20-0:45\n곡: 스위치2로 나왔다\n아티스트: 스텔라 블레이드가\n피처링:\n후킹: \n출처: SHIFT UP Official Channel\n자막: 자동",
+    "caption": "〈스텔라 블레이드〉 스위치2판의 출시 트레일러입니다.\n\n한국 개발사 시프트업이 6일 내놓은 첫 닌텐도 콘솔판인데요, 본편에 〈니어: 오토마타〉·〈승리의 여신: 니케〉 콜라보 DLC가 함께 담겼습니다.\n\nTV에서도, 손에 들고도 할 수 있습니다.\n\n닌텐도 스위치2 · 11월 6일 출시 · e숍 무료 체험판\n\n#겜디핑 #스텔라블레이드 #시프트업 #닌텐도스위치2 #베요네타",
+    "hooks": {
+     "A": "스텔라 블레이드가 / 스위치2로 나왔다",
+     "B": "손에 들고 하는 / 스텔라 블레이드"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=trMkpK0EwSo",
+     "credit": "SHIFT UP Official Channel",
+     "range": [
+      20.0,
+      45.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "국내 가격 69,800원은 11번가 예약 페이지·해외 사이트 한국어 기사뿐이라 뺐습니다 · 한국어 지원도 스위치2판 기준 확인 못 해 끝줄에서 뺌 — 닌텐도 e숍에서 확인되면 끝줄에 더하기",
+     "숏폼 구간 0:20-0:45 는 화면 확인 안 함 — 실사 트레일러라 이브가 나오는 장면인지 보고 고르기"
+    ],
+    "research": [
+     {
+      "title": "어디서나 이브와 함께, '스텔라 블레이드' 스위치2 출시 (인벤)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323053"
+     },
+     {
+      "title": "시프트업, '스텔라 블레이드' 닌텐도 스위치2 버전 글로벌 출시 (아주경제)",
+      "link": "https://www.ajunews.com/view/20261106092634906"
+     },
+     {
+      "title": "니어·니케·베요네타 콜라보 전부 담았다... '스텔라 블레이드', 닌텐도 스위치 2 컴플리트 에디션 6일 출시 (엑스포츠뉴스)",
+      "link": "https://www.xportsnews.com/article/2216233"
+     },
+     {
+      "title": "시프트업 '스텔라 블레이드', 스위치2 버전 출시...무료체험판도 제공 (파이낸셜투데이)",
+      "link": "https://www.ftoday.co.kr/news/articleView.html?idxno=369122"
+     },
+     {
+      "title": "Stellar Blade - Live Action Launch Trailer - Nintendo Switch 2 (SHIFT UP 공식)",
+      "link": "https://www.youtube.com/watch?v=trMkpK0EwSo"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/trMkpK0EwSo/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046339/g4wp8x4yunf18lt9uavc.jpg",
+     "key": "trMkpK0EwSo@20.0"
+    },
+    "px": {
+     "vid": "trMkpK0EwSo",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046423/plot_studio/i4iuw5dgqwoldrt2efqp.mp4",
+     "off": 0.0,
+     "end": 90.0,
+     "full": 100.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-07T19:15+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "어제 나온 한국 개발사 대작의 첫 닌텐도판 — 한국 독자에게 바로 걸리고 공식 영상으로 숏폼까지 된다",
+    "at": "2026-11-07T19:11+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:metaphor-price",
+    "account": "게임메카",
+    "url": "https://www.gamemeca.com/view.php?gid=1783098",
+    "image": null,
+    "head": "메타포: 리판타지오, 12일부터 가격 60% 인하한다",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T19:11+09:00",
+   "key": "93f8792c",
+   "by": "claude",
+   "subjects": [
+    "메타포: 리판타지오",
+    "아틀러스",
+    "세가퍼블리싱코리아"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "〈메타포: 리판타지오〉 국내 정가 79,800원 → 32,000원 — 12일 스위치2판 발매와 함께 전 기종 개정",
+    "why": "11/6 세가퍼블리싱코리아 발표 · 인벤·게임메카 + 세가 아시아 공식 스위치2 페이지(32,000원·한국어 자막) · 11/7 rejects 의 '12일에 다룬다'를 가격 개정이라는 새 사실로 앞당김 · 기사형 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T19:11+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈메타포: 리판타지오〉의 국내 정가가 12일부터 79,800원에서 32,000원으로 내려갑니다.\n\n세가퍼블리싱코리아가 6일 알린 내용인데요, 기간 한정 할인이 아니라 정가를 고치는 것입니다. 날짜는 같은 날 나오는 닌텐도 스위치2판 발매에 맞췄고, Xbox와 PC, PS5, PS4 다운로드판 일반판이 대상입니다.\n\n아틀러스 스튜디오 제로의 턴제 판타지 RPG로, 왕이 암살된 뒤 왕위를 두고 벌어지는 경쟁에 주인공이 뛰어드는 이야기입니다.\n\nPS5·PS4·Xbox·PC·닌텐도 스위치2 · 한국어 자막 지원 · 11월 12일부터 일반판 32,000원 · 스위치2판 11월 12일 발매(패키지는 키 카드)\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #세가\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046296/ncox4giqduoc0ubs6i8k.jpg\n제목: 메타포 리판타지오,|12일부터 3만 2천 원\n부제: 스위치2판 발매에 맞춰 전 기종 정가 개정\n출처: 게임메카\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794046317/plot_studio/g1aot7roszozsdf3ns1u.mp4\n소제목: \n본문: \n출처: 콘솔 & PC 패키지SEGA Korea\n",
+    "caption": "〈메타포: 리판타지오〉의 국내 정가가 12일부터 79,800원에서 32,000원으로 내려갑니다.\n\n세가퍼블리싱코리아가 6일 알린 내용인데요, 기간 한정 할인이 아니라 정가를 고치는 것입니다. 날짜는 같은 날 나오는 닌텐도 스위치2판 발매에 맞췄고, Xbox와 PC, PS5, PS4 다운로드판 일반판이 대상입니다.\n\n아틀러스 스튜디오 제로의 턴제 판타지 RPG로, 왕이 암살된 뒤 왕위를 두고 벌어지는 경쟁에 주인공이 뛰어드는 이야기입니다.\n\nPS5·PS4·Xbox·PC·닌텐도 스위치2 · 한국어 자막 지원 · 11월 12일부터 일반판 32,000원 · 스위치2판 11월 12일 발매(패키지는 키 카드)\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #세가",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046296/ncox4giqduoc0ubs6i8k.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/098/gm615745_Untitled-3.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046296/ncox4giqduoc0ubs6i8k.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/098/gm615745_Untitled-3.webp"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "메타포 리판타지오,|12일부터 3만 2천 원",
+      "sub": "스위치2판 발매에 맞춰 전 기종 정가 개정"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "가격 개정은 다운로드판 일반판 기준(두 기사) — 디럭스판·기존 패키지판 가격은 확인 못 함 · 스위치2 패키지는 키 카드 형태(세가 공식)",
+     "숏폼 구간 0:10-0:35 화면 확인 안 함 — 한국어 자막판 트레일러인지 보기 · 표지 사진(게임메카)은 일본어 UI 가 보이는 장면이라 한국어판 스크린샷이 있으면 바꾸기"
+    ],
+    "research": [
+     {
+      "title": "메타포: 리판타지오, 12일부터 가격 60% 인하한다 (게임메카)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783098"
+     },
+     {
+      "title": "아틀러스 '메타포: 리판타지오', 정가 60% 인하한다 (인벤)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323102"
+     },
+     {
+      "title": "메타포: 리판타지오 - Nintendo Switch 2 (세가 아시아 공식)",
+      "link": "https://asia.sega.com/metaphor/kr/switch2/"
+     },
+     {
+      "title": "『Metaphor: ReFantazio』 Nintendo Switch 2 Version First Trailer (SEGA Korea)",
+      "link": "https://www.youtube.com/watch?v=efS6MKPot5U"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046351/khnp4xprhv1unqgyowtv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046354/goufs10wqgplidk8hxyk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046350/v3haca6jnbealcps8dzj.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046351/khnp4xprhv1unqgyowtv.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T19:12+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046352/plot_studio/ow4lbukdu69eciys2qi3.mp4"
+     },
+     "v": {
+      "A": "dce949e6"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=efS6MKPot5U\n구간: 0:10-0:35\n곡: 12일부터 3만 2천 원\n아티스트: 메타포 리판타지오가\n피처링:\n후킹: \n출처: 콘솔 & PC 패키지SEGA Korea\n자막: 자동",
+    "caption": "〈메타포: 리판타지오〉 스위치2판 트레일러입니다.\n\n12일 스위치2판이 나오는 날에 맞춰 국내 정가도 바뀌는데요, Xbox와 PC, PS5, PS4 다운로드판 일반판이 79,800원에서 32,000원이 됩니다. 기간 한정 할인이 아닌 정가 개정입니다.\n\n왕위를 두고 겨루는 아틀러스의 판타지 RPG입니다.\n\nPS5·PS4·Xbox·PC·닌텐도 스위치2 · 한국어 자막 지원 · 11월 12일부터 일반판 32,000원\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #세가",
+    "hooks": {
+     "A": "메타포 리판타지오가 / 12일부터 3만 2천 원",
+     "B": "스위치2로 오는 / 메타포 리판타지오"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=efS6MKPot5U",
+     "credit": "콘솔 & PC 패키지SEGA Korea",
+     "range": [
+      10.0,
+      35.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "가격 개정은 다운로드판 일반판 기준(두 기사) — 디럭스판·기존 패키지판 가격은 확인 못 함 · 스위치2 패키지는 키 카드 형태(세가 공식)",
+     "숏폼 구간 0:10-0:35 화면 확인 안 함 — 한국어 자막판 트레일러인지 보기 · 표지 사진(게임메카)은 일본어 UI 가 보이는 장면이라 한국어판 스크린샷이 있으면 바꾸기"
+    ],
+    "research": [
+     {
+      "title": "메타포: 리판타지오, 12일부터 가격 60% 인하한다 (게임메카)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783098"
+     },
+     {
+      "title": "아틀러스 '메타포: 리판타지오', 정가 60% 인하한다 (인벤)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323102"
+     },
+     {
+      "title": "메타포: 리판타지오 - Nintendo Switch 2 (세가 아시아 공식)",
+      "link": "https://asia.sega.com/metaphor/kr/switch2/"
+     },
+     {
+      "title": "『Metaphor: ReFantazio』 Nintendo Switch 2 Version First Trailer (SEGA Korea)",
+      "link": "https://www.youtube.com/watch?v=efS6MKPot5U"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/efS6MKPot5U/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046358/l1uejanpbf1ppjbkfq1g.jpg",
+     "key": "efS6MKPot5U@10.0"
+    },
+    "px": {
+     "vid": "efS6MKPot5U",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046482/plot_studio/czyejtanu0ogmjarwx6n.mp4",
+     "off": 0.0,
+     "end": 79.0,
+     "full": 79.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-07T19:15+09:00"
+    }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:gow-laufey-delay",
+    "account": "Game Informer",
+    "url": "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may",
+    "image": null,
+    "head": "God of War Laufey Delayed To May",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T19:11+09:00",
+   "key": "8b03ebf4",
+   "by": "claude",
+   "subjects": [
+    "갓 오브 워 라우페이",
+    "산타 모니카 스튜디오"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "페이가 주인공인 〈갓 오브 워 라우페이〉, 2027년 2월 16일에서 5월 20일로 연기",
+    "why": "11/4 산타 모니카 스튜디오 공식 X 발표 · Game Informer·Inven Global 확인 · 겜디핑에선 아직 안 다룸 · 기사형 표지 한 장, 새 영상이 없어 숏폼 없음"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T19:11+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈갓 오브 워 라우페이〉의 출시가 내년 2월 16일에서 5월 20일로 미뤄졌습니다.\n\n산타 모니카 스튜디오가 4일 공식 X로 알린 내용인데요, 남은 시간 동안 마무리 작업을 하며 게임을 끝까지 끌어올리겠다고 밝혔습니다.\n\n이번 작품의 주인공은 크레토스가 아니라 그의 아내 페이입니다. 세상을 떠난 뒤 '에브리웬'이라는 곳에 다다른 페이의 여정을 그립니다.\n\nPS5 · 2027년 5월 20일 출시\n\n#겜디핑 #갓오브워 #갓오브워라우페이 #산타모니카스튜디오 #플레이스테이션\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046321/imuxrfev1igsiru51ae4.jpg\n제목: 갓 오브 워 라우페이,|내년 5월로 미뤄졌다\n부제: 2월 16일에서 석 달 연기\n출처: Game Informer\n",
+    "caption": "〈갓 오브 워 라우페이〉의 출시가 내년 2월 16일에서 5월 20일로 미뤄졌습니다.\n\n산타 모니카 스튜디오가 4일 공식 X로 알린 내용인데요, 남은 시간 동안 마무리 작업을 하며 게임을 끝까지 끌어올리겠다고 밝혔습니다.\n\n이번 작품의 주인공은 크레토스가 아니라 그의 아내 페이입니다. 세상을 떠난 뒤 '에브리웬'이라는 곳에 다다른 페이의 여정을 그립니다.\n\nPS5 · 2027년 5월 20일 출시\n\n#겜디핑 #갓오브워 #갓오브워라우페이 #산타모니카스튜디오 #플레이스테이션",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046321/imuxrfev1igsiru51ae4.jpg",
+      "credit": "Game Informer",
+      "from": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/09/28/b118e622/gow-laufey-art-banner.jpg.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046321/imuxrfev1igsiru51ae4.jpg",
+      "credit": "Game Informer",
+      "from": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/09/28/b118e622/gow-laufey-art-banner.jpg.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "갓 오브 워 라우페이,|내년 5월로 미뤄졌다",
+      "sub": "2월 16일에서 석 달 연기"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "사흘 지난 소식(11/4) — 오늘 올릴지 판단 · 한국 정식 표기('갓 오브 워 라우페이' / 콜론 유무)와 한국어 지원은 PS 스토어에서 확인 못 함",
+     "Gematsu·VGC 원문은 403 으로 열지 못함 — 날짜는 GI·Inven Global 두 곳 기준 · 표지 사진(GI)이 공식 키 아트인지 눈으로 확인"
+    ],
+    "research": [
+     {
+      "title": "God of War Laufey Delayed To May (Game Informer)",
+      "link": "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may"
+     },
+     {
+      "title": "God of War Laufey delayed to May 2027 (Inven Global)",
+      "link": "https://www.invenglobal.com/articles/28151/god-of-war-laufey-delayed-to-may-2027"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046361/gd1zzkla9efdqrn9fx3n.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046361/lxxa74lc3wj8qchccjvd.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046361/gd1zzkla9efdqrn9fx3n.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T19:12+09:00",
+     "v": {
+      "A": "d3483bc2"
+     }
+    }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:gmt-fangame",
+    "account": "게임메카",
+    "url": "https://www.gamemeca.com/view.php?gid=1783014",
+    "image": null,
+    "head": "[인디言] 20년 멈췄던 만화 '굿모닝! 티처' 팬게임의 재시작",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T19:11+09:00",
+   "key": "32ec04fa",
+   "by": "claude",
+   "subjects": [
+    "신준수",
+    "굿모닝! 티처",
+    "서영웅"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "20년 멈췄던 만화 〈굿모닝! 티처〉 팬게임을 다시 만드는 사람 — 비공식·무료, 원작자의 허락을 기다린다",
+    "why": "게임메카 [인디言] 11/7 인터뷰(개발자 발언) · 나무위키(원작 연재·GMT 게임화 역사) · 프로젝트 공식 홈페이지(11/7 1.3.1 배포·배포 중단 원칙) · 사람이 보이는 인디 이야기 · 오늘 실험 칸은 악선이 써서 일반 건으로"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T19:11+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n20년 동안 멈춰 있던 만화 〈굿모닝! 티처〉 팬게임이 다시 만들어지고 있습니다.\n\n서영웅 작가가 1995년부터 1999년까지 소년챔프에 연재한 학원 만화인데요, 2000년대 초 PC통신 팬들 사이에서 이 작품을 게임으로 만드는 프로젝트가 있었습니다. 일을 나누고 사람들과 조율하는 데 힘이 부쳤고 홈페이지 도메인까지 만료되면서 그대로 멈췄습니다.\n\n그 프로젝트를 만들던 신준수 개발자가 올해 스승의 날인 5월 15일 첫 빌드를 다시 내놓았습니다. 주인공 박영민이 되어 일출고에서 3년을 보내는 육성 시뮬레이션으로, 선택에 따라 엔딩이 갈립니다. 그는 \"프로젝트가 끝났다고 선언하면 제 안의 게임 개발자까지 끝나버릴 것 같았다\"고 말했습니다.\n\n돈을 받지 않는 비공식 팬게임이고, 권리자가 요청하면 배포를 멈추겠다는 원칙을 홈페이지에 적어 두었습니다. 그가 지금 가장 바라는 것은 서영웅 작가와 다시 연락이 닿는 일입니다.\n\nWindows·macOS · 무료 · 7일 1.3.1 업데이트\n\n#겜디핑 #굿모닝티처 #서영웅 #팬게임 #인디게임\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046325/eqreidzp6k09kmptb1sz.jpg\n제목: 20년 멈췄던 팬게임,|다시 만드는 사람\n부제: 만화 〈굿모닝! 티처〉 팬게임의 재시작\n출처: 게임메카\n",
+    "caption": "20년 동안 멈춰 있던 만화 〈굿모닝! 티처〉 팬게임이 다시 만들어지고 있습니다.\n\n서영웅 작가가 1995년부터 1999년까지 소년챔프에 연재한 학원 만화인데요, 2000년대 초 PC통신 팬들 사이에서 이 작품을 게임으로 만드는 프로젝트가 있었습니다. 일을 나누고 사람들과 조율하는 데 힘이 부쳤고 홈페이지 도메인까지 만료되면서 그대로 멈췄습니다.\n\n그 프로젝트를 만들던 신준수 개발자가 올해 스승의 날인 5월 15일 첫 빌드를 다시 내놓았습니다. 주인공 박영민이 되어 일출고에서 3년을 보내는 육성 시뮬레이션으로, 선택에 따라 엔딩이 갈립니다. 그는 \"프로젝트가 끝났다고 선언하면 제 안의 게임 개발자까지 끝나버릴 것 같았다\"고 말했습니다.\n\n돈을 받지 않는 비공식 팬게임이고, 권리자가 요청하면 배포를 멈추겠다는 원칙을 홈페이지에 적어 두었습니다. 그가 지금 가장 바라는 것은 서영웅 작가와 다시 연락이 닿는 일입니다.\n\nWindows·macOS · 무료 · 7일 1.3.1 업데이트\n\n#겜디핑 #굿모닝티처 #서영웅 #팬게임 #인디게임",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046325/eqreidzp6k09kmptb1sz.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/014/gm120244_asd.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046325/eqreidzp6k09kmptb1sz.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/014/gm120244_asd.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "20년 멈췄던 팬게임,|다시 만드는 사람",
+      "sub": "만화 〈굿모닝! 티처〉 팬게임의 재시작"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "개발자 발언·이력(카이스트 동아리 '하제' 회장)은 게임메카 인터뷰 한 곳뿐 — 인터뷰가 원문이라 발언 한 마디만 인용 · 원작자 허락을 받지 못한 비공식 팬게임이라 다운로드 경로는 쓰지 않았습니다",
+     "표지 사진은 게임메카 기사 대표 사진(팬게임 그림으로 보임) — 원작 만화 그림이 아닌지 눈으로 확인"
+    ],
+    "research": [
+     {
+      "title": "[인디言] 20년 멈췄던 만화 '굿모닝! 티처' 팬게임의 재시작 (게임메카)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783014"
+     },
+     {
+      "title": "굿모닝! 티처 (나무위키)",
+      "link": "https://namu.wiki/w/%EA%B5%BF%EB%AA%A8%EB%8B%9D!%20%ED%8B%B0%EC%B2%98"
+     },
+     {
+      "title": "GMT Game 공식 홈페이지",
+      "link": "https://gmtgame.net"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046365/jqumcswg1sjhdjlshywo.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046364/fmwd5pjdaxnqdweaouvj.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046365/jqumcswg1sjhdjlshywo.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T19:12+09:00",
+     "v": {
+      "A": "838d01fe"
+     }
+    }
+   },
    "pick": {
     "rank": 3,
-    "why": "〈용과 같이〉 만든 사람의 스튜디오 소식 — 사람이 보이는 업계 소식",
-    "at": "2026-11-07T11:11+09:00"
+    "why": "20년 만에 팬게임을 다시 잡은 사람의 이야기 — 오늘 초안 중 사람이 가장 또렷이 보이는 글",
+    "at": "2026-11-07T19:11+09:00"
    },
    "corner_name": "소식"
   }
@@ -622,14 +1124,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 7,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-07T11:15+09:00"
+  "at": "2026-11-07T19:15+09:00"
  },
  "queue": {
-  "next": "2026-11-07T11:17+09:00",
+  "next": "2026-11-07T19:17+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
