@@ -160,11 +160,6 @@
      "at": "2026-11-07T10:59+09:00"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "SAO 작가 신작 + Ado, 어제 공개 · 공식 논크레딧 OP 가 있다",
-    "at": "2026-11-07T10:55+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -320,11 +315,6 @@
      "status": "queued",
      "at": "2026-11-07T10:59+09:00"
     }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "한국에서도 두꺼운 팬층 · 어제 나온 방영 시기 + 공식 티저 PV 로 숏폼까지",
-    "at": "2026-11-07T10:55+09:00"
    },
    "corner_name": "소식"
   },
@@ -493,10 +483,378 @@
      "at": "2026-11-07T10:59+09:00"
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:fool-night-tempalay",
+    "account": "Skream!",
+    "url": "https://skream.jp/news/2026/11/tempalay_foolnight_anime_op.php",
+    "image": null,
+    "head": "Tempalay, 〈풀 나이트〉 OP 'Shake! spit out' 새로 써 · 메인 PV 공개",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T19:00+09:00",
+   "key": "6b3d8d9b",
+   "by": "claude",
+   "subjects": [
+    "Tempalay",
+    "풀 나이트"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "넷플릭스 〈풀 나이트〉 오프닝을 Tempalay가 새로 썼고, 출발점은 작품 첫머리의 셰익스피어 한 구절이었다",
+    "why": "11/5 메인 PV·주제가 발표 · 11/26 넷플릭스 전 세계 독점이라 한국에서도 바로 본다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T19:00+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n밴드 Tempalay가 넷플릭스 애니메이션 〈풀 나이트〉(フールナイト)의 오프닝을 새로 썼습니다.\n\n야스다 카스미가 〈빅코믹 슈페리어〉에 연재하는 만화가 원작인데요, 선라이즈와 샤프트가 처음 손잡은 작품입니다. 오프닝 'Shake! spit out'은 작품 첫머리에 인용된 셰익스피어의 한 구절에서 출발했다고 Tempalay는 밝혔습니다.\n\n밴드가 붙잡은 주제는 절망 속에서 찾아내는 빛입니다. 작품 내용을 곡에 마음껏 담았으니 애니뿐 아니라 만화도 함께 봐 달라는 말도 남겼습니다. 엔딩은 Nowlu의 '이키(息)'입니다.\n\n11월 26일 넷플릭스 전 세계 독점, 전 화가 한 번에 공개됩니다.\n\n#암낫오타쿠 #풀나이트 #Tempalay #선라이즈 #샤프트 #넷플릭스애니\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794045661/scecbhydraskfywyv8tc.jpg\n제목: 넷플릭스 〈풀 나이트〉,|오프닝은 Tempalay\n부제: 메인 PV 공개 · 11월 26일 전 화 공개\n출처: Skream!\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794045676/plot_studio/ta9poa3o0ecbysexuaff.mp4\n소제목: \n본문: \n출처: バンダイナムコフィルムワークス チャンネル\n",
+    "caption": "밴드 Tempalay가 넷플릭스 애니메이션 〈풀 나이트〉(フールナイト)의 오프닝을 새로 썼습니다.\n\n야스다 카스미가 〈빅코믹 슈페리어〉에 연재하는 만화가 원작인데요, 선라이즈와 샤프트가 처음 손잡은 작품입니다. 오프닝 'Shake! spit out'은 작품 첫머리에 인용된 셰익스피어의 한 구절에서 출발했다고 Tempalay는 밝혔습니다.\n\n밴드가 붙잡은 주제는 절망 속에서 찾아내는 빛입니다. 작품 내용을 곡에 마음껏 담았으니 애니뿐 아니라 만화도 함께 봐 달라는 말도 남겼습니다. 엔딩은 Nowlu의 '이키(息)'입니다.\n\n11월 26일 넷플릭스 전 세계 독점, 전 화가 한 번에 공개됩니다.\n\n#암낫오타쿠 #풀나이트 #Tempalay #선라이즈 #샤프트 #넷플릭스애니",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045661/scecbhydraskfywyv8tc.jpg",
+      "credit": "Skream!",
+      "from": "https://skream.jp/news/2026/11/05/images/tempalay_ap.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045665/r0ypwvkm07ejvhxyxszz.jpg",
+      "credit": "KAI-YOU",
+      "from": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261105-00097066-kaiyou-000-1-view.jpg?exp=10800"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045661/scecbhydraskfywyv8tc.jpg",
+      "credit": "Skream!",
+      "from": "https://skream.jp/news/2026/11/05/images/tempalay_ap.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045665/r0ypwvkm07ejvhxyxszz.jpg",
+      "credit": "KAI-YOU",
+      "from": "https://newsatcl-pctr.c.yimg.jp/t/amd-img/20261105-00097066-kaiyou-000-1-view.jpg?exp=10800"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "넷플릭스 〈풀 나이트〉,|오프닝은 Tempalay",
+      "sub": "메인 PV 공개 · 11월 26일 전 화 공개"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 1:40-2:08 자동 자막엔 대사만 잡히고 노랫말은 없음 — 이 구간에 Tempalay 'Shake! spit out'이 실제로 깔리는지 귀로 확인 못 함. 아니면 후킹 A·B('오프닝'·'주제가')가 영상과 어긋나니 구간을 바꾸거나 후킹 C로",
+     "클립 위험: 낮음 — 반다이남코 필름웍스 채널·SUNRISE Official (공식 메인 PV) · 자막이 없어 구간 1:40-2:08 은 감으로 고른 것 — 오프닝 곡이 들리는 구간인지 영상으로 확인",
+     "넷플릭스 한국 서비스의 한국어 제목이 '풀 나이트'인지 앱에서 확인"
+    ],
+    "research": [
+     {
+      "title": "Skream! — Tempalay OP 새로 씀, 코멘트, 메인 PV (11/5)",
+      "link": "https://skream.jp/news/2026/11/tempalay_foolnight_anime_op.php"
+     },
+     {
+      "title": "KAI-YOU (Yahoo!뉴스) — 메인 PV, 주제가 Tempalay·Nowlu, 추가 캐스트 (11/5)",
+      "link": "https://news.yahoo.co.jp/articles/723693c988171bfe9fd95d03fd76778bc3de6a82"
+     },
+     {
+      "title": "리얼사운드 — 선라이즈×샤프트, 넷플릭스 11/26 배신 (8월)",
+      "link": "https://realsound.jp/movie/2026/08/post-2497365.html"
+     },
+     {
+      "title": "반다이남코 필름웍스 / 선라이즈 공식 — 메인 PV",
+      "link": "https://www.youtube.com/watch?v=p15JWZsi3Ao"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045691/xxghac15o71zlso5j47k.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045694/hwnubkkvegoqjlsjlnhb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045691/n1mj0fbwcdmhl6zmqq3w.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045691/xxghac15o71zlso5j47k.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T19:01+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794045692/plot_studio/npveedfi60kd5vidm9th.mp4"
+     },
+     "v": {
+      "A": "71e3d93d"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=p15JWZsi3Ao\n구간: 1:40-2:08\n곡: 넷플릭스 애니 오프닝\n아티스트: Tempalay가 쓴\n피처링:\n후킹: \n출처: バンダイナムコフィルムワークス チャンネル\n자막: 자동",
+    "caption": "넷플릭스 애니메이션 〈풀 나이트〉(フールナイト) 메인 PV입니다.\n\n선라이즈와 샤프트가 처음 손잡은 작품인데요, 오프닝 'Shake! spit out'은 Tempalay가 새로 썼습니다. 밴드는 작품 첫머리에 인용된 셰익스피어의 한 구절에서 곡을 시작했고, 절망 속에서 찾아내는 빛을 주제로 잡았다고 밝혔습니다.\n\n11월 26일 넷플릭스 전 세계 독점, 전 화 한 번에 공개. 영상은 반다이남코 필름웍스 공식 채널입니다.\n\n#암낫오타쿠 #풀나이트 #Tempalay #샤프트 #애니PV",
+    "hooks": {
+     "A": "Tempalay가 쓴 / 넷플릭스 애니 오프닝",
+     "B": "셰익스피어 한 구절에서 / 시작된 애니 주제가",
+     "C": "선라이즈와 샤프트가 / 처음 함께 만든 애니"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=p15JWZsi3Ao",
+     "credit": "バンダイナムコフィルムワークス チャンネル",
+     "range": [
+      100.0,
+      128.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 1:40-2:08 자동 자막엔 대사만 잡히고 노랫말은 없음 — 이 구간에 Tempalay 'Shake! spit out'이 실제로 깔리는지 귀로 확인 못 함. 아니면 후킹 A·B('오프닝'·'주제가')가 영상과 어긋나니 구간을 바꾸거나 후킹 C로",
+     "클립 위험: 낮음 — 반다이남코 필름웍스 채널·SUNRISE Official (공식 메인 PV) · 자막이 없어 구간 1:40-2:08 은 감으로 고른 것 — 오프닝 곡이 들리는 구간인지 영상으로 확인",
+     "넷플릭스 한국 서비스의 한국어 제목이 '풀 나이트'인지 앱에서 확인"
+    ],
+    "research": [
+     {
+      "title": "Skream! — Tempalay OP 새로 씀, 코멘트, 메인 PV (11/5)",
+      "link": "https://skream.jp/news/2026/11/tempalay_foolnight_anime_op.php"
+     },
+     {
+      "title": "KAI-YOU (Yahoo!뉴스) — 메인 PV, 주제가 Tempalay·Nowlu, 추가 캐스트 (11/5)",
+      "link": "https://news.yahoo.co.jp/articles/723693c988171bfe9fd95d03fd76778bc3de6a82"
+     },
+     {
+      "title": "리얼사운드 — 선라이즈×샤프트, 넷플릭스 11/26 배신 (8월)",
+      "link": "https://realsound.jp/movie/2026/08/post-2497365.html"
+     },
+     {
+      "title": "반다이남코 필름웍스 / 선라이즈 공식 — 메인 PV",
+      "link": "https://www.youtube.com/watch?v=p15JWZsi3Ao"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/p15JWZsi3Ao/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045699/krjgpivzhdo4ng98gtsl.jpg",
+     "key": "p15JWZsi3Ao@100.0"
+    },
+    "px": {
+     "vid": "p15JWZsi3Ao",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794045766/plot_studio/sxpecfxjflsqg2dg7yld.mp4",
+     "off": 55.0,
+     "end": 139.0,
+     "full": 139.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-07T19:03+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "한국에서도 바로 보는 넷플릭스 신작 + 밴드가 곡을 쓴 이유가 있는 말 · 공식 메인 PV 로 숏폼까지",
+    "at": "2026-11-07T19:00+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:yurucamp-s4-april",
+    "account": "공식 사이트",
+    "url": "https://yurucamp.jp/",
+    "image": null,
+    "head": "TV 애니 〈유루캠△ SEASON4〉 2027년 4월 방송 · 메인 비주얼·메인 PV",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T19:00+09:00",
+   "key": "6fcfb41a",
+   "by": "claude",
+   "subjects": [
+    "유루캠△"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "'2027년'뿐이던 〈유루캠△〉 4기가 4월로 시기를 정하고 새 1학년 둘이 합류한 비주얼을 냈다",
+    "why": "11/6 공식 사이트 발표 + WEB더 텔레비전 · 한국에서도 팬층 두꺼운 시리즈"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T19:00+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈유루캠△〉(ゆるキャン△) 4기가 2027년 4월 방송을 시작합니다.\n\n지난 3월 특보 PV가 나올 땐 '2027년'까지만 알려졌었는데요, 어제 공식 사이트가 시기를 4월로 정하고 메인 비주얼과 메인 PV를 함께 냈습니다. 비주얼에는 새 1학년 미즈나미 에마와 나카츠가와 메이까지 여덟 명이 한 캠핑장에 모였습니다.\n\n오프닝은 아사카의 '브랜뉴。(ぶらんにゅ。)', 엔딩은 사사키 에리의 '나뭇잎 편지(葉っぱの手紙)'입니다. 감독은 3기에 이어 토사카 스스무가 맡고, 나데시코와 린은 하나모리 유미리와 토야마 나오가 그대로 연기합니다.\n\n#암낫오타쿠 #유루캠 #아사카 #사사키에리 #하나모리유미리 #토야마나오\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794045679/gfunvecf857ihgx8qr5p.jpg\n제목: 〈유루캠△〉 4기,|2027년 4월 시작\n부제: 메인 비주얼·메인 PV 공개\n출처: TV 애니메이션 〈유루캠△ SEASON4〉 공식\n",
+    "caption": "〈유루캠△〉(ゆるキャン△) 4기가 2027년 4월 방송을 시작합니다.\n\n지난 3월 특보 PV가 나올 땐 '2027년'까지만 알려졌었는데요, 어제 공식 사이트가 시기를 4월로 정하고 메인 비주얼과 메인 PV를 함께 냈습니다. 비주얼에는 새 1학년 미즈나미 에마와 나카츠가와 메이까지 여덟 명이 한 캠핑장에 모였습니다.\n\n오프닝은 아사카의 '브랜뉴。(ぶらんにゅ。)', 엔딩은 사사키 에리의 '나뭇잎 편지(葉っぱの手紙)'입니다. 감독은 3기에 이어 토사카 스스무가 맡고, 나데시코와 린은 하나모리 유미리와 토야마 나오가 그대로 연기합니다.\n\n#암낫오타쿠 #유루캠 #아사카 #사사키에리 #하나모리유미리 #토야마나오",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045679/gfunvecf857ihgx8qr5p.jpg",
+      "credit": "TV 애니메이션 〈유루캠△ SEASON4〉 공식",
+      "from": "https://yurucamp.jp/fourth/assets/img/top/visual2_pc.jpg?v261106"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045681/aosu787dvrtnqnbamh3z.jpg",
+      "credit": "TV 애니메이션 〈유루캠△ SEASON4〉 메인 비주얼 · WEB더 텔레비전",
+      "from": "https://thetv.jp/i/nw/1455188/19085326.jpg?w=1284"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045679/gfunvecf857ihgx8qr5p.jpg",
+      "credit": "TV 애니메이션 〈유루캠△ SEASON4〉 공식",
+      "from": "https://yurucamp.jp/fourth/assets/img/top/visual2_pc.jpg?v261106"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045681/aosu787dvrtnqnbamh3z.jpg",
+      "credit": "TV 애니메이션 〈유루캠△ SEASON4〉 메인 비주얼 · WEB더 텔레비전",
+      "from": "https://thetv.jp/i/nw/1455188/19085326.jpg?w=1284"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "〈유루캠△〉 4기,|2027년 4월 시작",
+      "sub": "메인 비주얼·메인 PV 공개"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 캡션 끝 '메인 PV는 공식 사이트에서 볼 수 있습니다' 삭제 — 공식 사이트 첫 화면엔 PV가 걸려 있지 않고, 확인된 곳은 WEB더 텔레비전 기사뿐",
+     "새 메인 PV(예고편)가 유튜브 검색에 아직 안 잡혀 숏폼은 비움 — FURYU Pictures Channel 에 올라오면 숏폼 추가",
+     "표지 사진이 새 메인 비주얼(8명)인지 확인"
+    ],
+    "research": [
+     {
+      "title": "공식 사이트 — 2027년 4월 방송 예정, 메인 비주얼·메인 PV (11/6)",
+      "link": "https://yurucamp.jp/"
+     },
+     {
+      "title": "WEB더 텔레비전 — 2027년 4월 방송, 주제가·캐스트 (11/6)",
+      "link": "https://thetv.jp/news/detail/1455188/"
+     },
+     {
+      "title": "아니메 eiga — 2027년 방송, 특보 PV (3월)",
+      "link": "https://anime.eiga.com/news/125917/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045702/pzopoqb173y87w3n63vu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045702/mwyymknscyhaztti7phn.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045702/pzopoqb173y87w3n63vu.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T19:01+09:00",
+     "v": {
+      "A": "3de88262"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "한국 팬층 두꺼운 시리즈 · 어제 방영 시기와 주제가가 한꺼번에 나왔다",
+    "at": "2026-11-07T19:00+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:kaf-popup-korea",
+    "account": "카후 공식 사이트",
+    "url": "https://kaf.kamitsubaki.jp/schedule/20261106/1259/",
+    "image": null,
+    "head": "花譜×アニメイト WORLD POP-UP TOUR · 한국은 KAF WORLD SPECIAL STORE",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T19:00+09:00",
+   "key": "30d7810d",
+   "by": "claude",
+   "subjects": [
+    "카후"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "카후와 애니메이트의 월드 팝업 투어에 부산·홍대 두 곳이 들어갔다",
+    "why": "공식 사이트 발표 · 한국에서 직접 가는 자리 (부산 11/28~, 홍대 12/12~)"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T19:00+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n버추얼 싱어 카후(花譜)의 팝업 스토어가 부산과 홍대에서 열립니다.\n\n애니메이트와 함께 여러 나라를 도는 월드 팝업 투어인데요, 방콕·쿠알라룸푸르·로스앤젤레스와 함께 한국 두 곳이 일정에 들어갔습니다. 한국 매장은 'KAF WORLD SPECIAL STORE'라는 이름으로 열립니다.\n\n지역마다 색을 달리한 데포르메 일러스트 신상품이 처음 나오고, 라이브 굿즈와 CD 같은 공식 상품도 함께 판매합니다. 신상품은 애니메이트 한국 온라인 스토어에서도 살 수 있습니다. 수량은 한정이고 구매 특전은 없습니다.\n\n부산 11월 28일~12월 6일, 홍대 12월 12일~20일.\n\n#암낫오타쿠 #카후 #花譜 #카미츠바키 #애니메이트 #팝업스토어\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794045684/kw5d5r6ciy1ndype8qrn.jpg\n제목: 카후 팝업,|부산·홍대에 온다\n부제: 애니메이트 월드 팝업 투어\n출처: 카후 공식\n",
+    "caption": "버추얼 싱어 카후(花譜)의 팝업 스토어가 부산과 홍대에서 열립니다.\n\n애니메이트와 함께 여러 나라를 도는 월드 팝업 투어인데요, 방콕·쿠알라룸푸르·로스앤젤레스와 함께 한국 두 곳이 일정에 들어갔습니다. 한국 매장은 'KAF WORLD SPECIAL STORE'라는 이름으로 열립니다.\n\n지역마다 색을 달리한 데포르메 일러스트 신상품이 처음 나오고, 라이브 굿즈와 CD 같은 공식 상품도 함께 판매합니다. 신상품은 애니메이트 한국 온라인 스토어에서도 살 수 있습니다. 수량은 한정이고 구매 특전은 없습니다.\n\n부산 11월 28일~12월 6일, 홍대 12월 12일~20일.\n\n#암낫오타쿠 #카후 #花譜 #카미츠바키 #애니메이트 #팝업스토어",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045684/kw5d5r6ciy1ndype8qrn.jpg",
+      "credit": "카후 공식",
+      "from": "https://kaf.kamitsubaki.jp/assets/img/ogp2.png"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045684/kw5d5r6ciy1ndype8qrn.jpg",
+      "credit": "카후 공식",
+      "from": "https://kaf.kamitsubaki.jp/assets/img/ogp2.png"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "카후 팝업,|부산·홍대에 온다",
+      "sub": "애니메이트 월드 팝업 투어"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "공식 페이지에 한국 매장 이름·주소가 없음 — 애니메이트 코리아 공지로 매장 확인",
+     "표지 사진이 공식 이미지인지 확인 (캡처·팬아트면 교체)"
+    ],
+    "research": [
+     {
+      "title": "카후 공식 사이트 — 월드 팝업 투어 일정 (11/6)",
+      "link": "https://kaf.kamitsubaki.jp/schedule/20261106/1259/"
+     },
+     {
+      "title": "루리웹 유저 게시판 — 한국 일정 정리 (11/6)",
+      "link": "https://bbs.ruliweb.com/userboard/board/700037/read/29507"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045705/row59hhnf9kbytemdc2p.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045705/y42gozkovyotwshoxuor.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794045705/row59hhnf9kbytemdc2p.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T19:01+09:00",
+     "v": {
+      "A": "d24385a2"
+     }
+    }
+   },
    "pick": {
     "rank": 3,
-    "why": "사람이 보이는 애니화 소식 · 고 사토 타츠오 감독의 마지막 감독작",
-    "at": "2026-11-07T10:55+09:00"
+    "why": "한국 부산·홍대 두 곳 · 한국에서 직접 갈 수 있는 자리",
+    "at": "2026-11-07T19:00+09:00"
    },
    "corner_name": "소식"
   }
@@ -673,14 +1031,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-07T10:59+09:00"
+  "at": "2026-11-07T19:03+09:00"
  },
  "queue": {
-  "next": "2026-11-07T11:01+09:00",
+  "next": "2026-11-07T19:05+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
