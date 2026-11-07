@@ -724,7 +724,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:47-1:17\n곡: 멜론 1위 오른 'With'\n아티스트: 발매 2시간 만에\n피처링:\n후킹: \n출처: RESCENE\n음원: 리센느 - With\n가사: 자동",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:47-1:17\n곡: 멜론 1위 오른 'With'\n아티스트: 발매 2시간 만에\n피처링:\n후킹: \n출처: RESCENE\n음원: 리센느 - With\n가사: 자동\n자막: 받음 st:1794021511040-037535af",
     "caption": "리센느(@rescene_official)의 'With'가 발매 2시간 만에 멜론 톱100 1위에 올랐습니다.\n\n지난 3일 공개된 미니 4집 [PULSE]의 타이틀곡인데요, 2024년 곡 'LOVE ATTACK'이 올해 7월 역주행으로 멜론 1위에 오른 데 이어 이번엔 신곡이 나오자마자 정상에 섰습니다.\n\n뒤늦게 찾아 들은 노래에서 처음부터 기다린 노래로, 리센느를 듣는 방식이 달라졌습니다.\n\n#PLOT #리센느 #With #PULSE",
     "hooks": {
      "A": "긴 기다림 끝에 / 달려가는 리센느 'With'",
@@ -784,8 +784,74 @@
      "full": 202.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-07T12:16+09:00"
+     "status": "ready",
+     "rid": "st:1794021511040-037535af",
+     "n": 12,
+     "note": "🎤 가사 34줄 (가사 영상 「웅키」에서 · 소리 맞춤 0.67)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 3.0,
+       "text": "Runnin' on, runnin' on, runnin' on you"
+      },
+      {
+       "start": 3.0,
+       "end": 5.75,
+       "text": "Runnin' now, runnin' now, runnin' to you"
+      },
+      {
+       "start": 5.75,
+       "end": 9.25,
+       "text": "잠든 맘을 뛰게 해준 너라는 꿈"
+      },
+      {
+       "start": 9.25,
+       "end": 11.75,
+       "text": "날 부르는 메아리 It's all"
+      },
+      {
+       "start": 11.75,
+       "end": 17.5,
+       "text": "You, you"
+      },
+      {
+       "start": 17.5,
+       "end": 20.5,
+       "text": "내 심장을 뛰게 한 그 순간"
+      },
+      {
+       "start": 20.5,
+       "end": 22.0,
+       "text": "내게 넌 네게 난"
+      },
+      {
+       "start": 22.0,
+       "end": 23.75,
+       "text": "Nobody else but you"
+      },
+      {
+       "start": 23.75,
+       "end": 26.25,
+       "text": "파도치는 목소리로"
+      },
+      {
+       "start": 26.25,
+       "end": 27.75,
+       "text": "나를 부를 때"
+      },
+      {
+       "start": 27.75,
+       "end": 29.25,
+       "text": "우릴 부를 때"
+      },
+      {
+       "start": 29.25,
+       "end": 30.0,
+       "text": "차오르는 전율 속에 되살아난 감정"
+      }
+     ],
+     "at": "2026-11-07T12:18+09:00"
     }
    },
    "corner_name": "소식"
@@ -967,10 +1033,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-07T12:16+09:00"
+  "at": "2026-11-07T12:18+09:00"
  },
  "queue": {
-  "next": "2026-11-07T12:18+09:00",
+  "next": "2026-11-07T12:20+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-06T21:23+09:00"
