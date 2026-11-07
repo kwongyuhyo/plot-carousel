@@ -2043,6 +2043,92 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-bcfc757c",
+    "account": "@규효 공유 · @_nowticle",
+    "url": "https://www.instagram.com/p/DfaCmNMoxOR/?mdxt=azU3a2U5bGNqazh0",
+    "image": null,
+    "head": "아일릿 윤아의 수능 찍기 비법은 '조삼모사' — 유병재 채널 팬미팅 마지막 회",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-08T01:25+09:00",
+   "key": "2411d78e",
+   "by": "claude",
+   "subjects": [
+    "아일릿"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "수능 찍기 번호를 묻자 윤아가 내놓은 답은 '조삼모사' — 조금 모르면 3번, 아예 모르면 4번",
+    "why": "수능 11일 전 · 유병재 채널 '웃으면 안되는 팬미팅' 마지막 회(11/6) 장면이 매거진에서 돌고 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-08T01:25+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=qjn-LOlGmDk\n구간: 13:31-13:59\n곡: 골라 준 아일릿\n아티스트: 수능 찍기 번호를\n피처링:\n후킹: \n출처: 유병재\n자막: 자동",
+    "caption": "아일릿(@illit_official) 윤아의 수능 찍기 비법은 '조삼모사'입니다.\n\n6일 유병재 유튜브 채널에 올라온 '웃으면 안되는 아일릿 팬미팅'에서 유병재는 수험생들을 위해 모르는 문제가 나오면 몇 번을 고를지 멤버들에게 물었는데요, 민주는 3번, 이로하는 2번, 원희는 4번을 골랐습니다.\n\n윤아의 답은 '조삼모사', 조금 모르면 3번, 아예 모르면 4번이라는 풀이로 사자성어 하나를 찍기 요령으로 바꿔 놓았습니다.\n\n2027학년도 수능은 오는 19일 치러집니다. 수험생 여러분의 선전을 응원합니다.\n\n#PLOT #아일릿 #윤아 #유병재 #수능 #조삼모사",
+    "hooks": {
+     "A": "수능 찍기 번호를 / 골라 준 아일릿",
+     "B": "조금 모르면 3번 / 아예 모르면 4번",
+     "C": "윤아가 내놓은 / 조삼모사 찍기법"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=qjn-LOlGmDk",
+     "credit": "유병재",
+     "range": [
+      811.0,
+      839.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 중간 — 유병재 (웹예능 · 28초)",
+     "윤아의 말을 '조삼모사'로 읽은 건 영어 자막(three in the morning and four in the evening)과 화면 자막(조금 모르면 3, 아예 모르면 4) 기준 — 13:48 한국어 발화로 맞는지 귀로 확인"
+    ],
+    "research": [
+     {
+      "title": "웃으면 안되는 아일릿 팬미팅 — 유병재 (2026-11-06)",
+      "link": "https://www.youtube.com/watch?v=qjn-LOlGmDk"
+     },
+     {
+      "title": "2027학년도 수능 11월 19일 시행 — 이투데이",
+      "link": "https://www.etoday.co.kr/news/view/2390974"
+     },
+     {
+      "title": "2027학년도 수능 11월 19일 시행 — 헤럴드경제",
+      "link": "https://www.heraldk.com/article/2026062919000082154"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/qjn-LOlGmDk/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794068719/beohwgt3erikpmvsghxw.jpg",
+     "key": "qjn-LOlGmDk@811.0"
+    },
+    "px": {
+     "vid": "qjn-LOlGmDk",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794068799/plot_studio/mkjtfztkku88x7w0bqqf.mp4",
+     "off": 766.0,
+     "end": 884.0,
+     "full": 1643.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-08T01:26+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 8
   }
  ],
  "skipped": [],
@@ -2121,7 +2207,7 @@
     "need_today": 3,
     "day": null,
     "next_no": 8,
-    "drafts": 0,
+    "drafts": 1,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -2221,7 +2307,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-08T01:17+09:00"
+  "at": "2026-11-08T01:26+09:00"
  },
  "queue": {
   "next": "2026-11-08T08:00+09:00",
