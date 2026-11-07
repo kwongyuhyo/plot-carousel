@@ -1900,7 +1900,12 @@
     }
    },
    "corner_name": "오늘의 노래",
-   "corner_no": 9
+   "corner_no": 9,
+   "published": {
+    "permalink": "https://www.instagram.com/p/Dfcl4ioD0-u/",
+    "cover": "A",
+    "at": "2026-11-08T01:17+09:00"
+   }
   },
   {
    "source": {
@@ -2043,7 +2048,7 @@
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
-  "days_left": 2,
+  "days_left": 1,
   "done": 50,
   "goal": 28,
   "corners": [
@@ -2113,7 +2118,7 @@
     "weekly": 6,
     "done": 3,
     "left": 3,
-    "need_today": 2,
+    "need_today": 3,
     "day": null,
     "next_no": 8,
     "drafts": 0,
@@ -2149,7 +2154,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -2161,7 +2166,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -2197,7 +2202,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 3,
     "drafts": 1,
@@ -2216,13 +2221,13 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-07T18:52+09:00"
+  "at": "2026-11-08T01:17+09:00"
  },
  "queue": {
-  "next": "2026-11-07T18:54+09:00",
+  "next": "2026-11-08T08:00+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-07T13:10+09:00"
+  "last": "2026-11-08T01:17+09:00"
  },
  "slots": {
   "basis": 334,
@@ -2231,8 +2236,8 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.01,
-    "median": 1.08,
+    "mult": 2.02,
+    "median": 1.15,
     "n": 64
    },
    {
