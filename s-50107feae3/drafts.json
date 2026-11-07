@@ -172,13 +172,13 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "이번 회차 목표 '인물해부' · 마이클 잭슨을 2위로 — 묘한 사실 한 줄로 여는 해부형 · 기사 50건 이상 급상승",
-    "at": "2026-11-07T10:06+09:00"
-   },
    "corner_name": "입문 가이드",
-   "corner_no": 3
+   "corner_no": 3,
+   "pick": {
+    "rank": 3,
+    "why": "마이클 잭슨을 2위로 — 묘한 사실 한 줄로 여는 해부형 · am 회차 1순위",
+    "at": "2026-11-07T16:20+09:00"
+   }
   },
   {
    "source": {
@@ -371,11 +371,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "오늘 고정 연재 · 발매일이 정확히 오늘(11/7) · 11/5 서울 앙코르 발표와 이어짐",
-    "at": "2026-11-07T10:06+09:00"
-   },
    "corner_name": "그날의 앨범",
    "corner_no": 3
   },
@@ -546,11 +541,6 @@
      ],
      "at": "2026-11-07T10:09+09:00"
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "숏폼 한 자리 · 의외의 만남(배우 × 가수) · 9일 발매 전 티저",
-    "at": "2026-11-07T10:06+09:00"
    },
    "corner_name": "소식",
    "published": {
@@ -860,13 +850,337 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:hanroro-arena-anatomy",
+    "account": "앳스타일 11/5",
+    "url": "http://www.atstar1.com/news/articleView.html?idxno=6040378",
+    "image": null,
+    "head": "한로로, 아레나 입성 확정…신곡은 '물음표'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T16:20+09:00",
+   "key": "96f2085c",
+   "by": "claude",
+   "subjects": [
+    "한로로"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "한로로의 단독 공연장은 해마다 커졌다 — 상상마당(2023) → 노들섬 → YES24 → 화정체육관 → 첫 아레나(2027.1), 그 사이 소설을 먼저 쓰고 노래로 옮긴 사람",
+    "why": "이번 회차 목표 인물해부 · 13일 예매 오픈 전 · 공연 소식을 사람의 길로 다시 묶음"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T16:20+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n한로로(@hanr0r0)의 단독 공연장은 해마다 커졌습니다.\n\n2023년 홍대 상상마당 라이브홀에서 시작한 단독 공연은 노들섬 라이브하우스와 YES24 라이브홀을 거쳐 지난해 11월 고려대 화정체육관까지 이어졌는데요, 노들섬에서 회당 약 700명이던 객석은 화정체육관에서 4,500명 안팎이 됐습니다.\n\n그 사이 한로로는 장편소설 『자몽살구클럽』을 먼저 쓰고, 소설 속 장면들을 노래로 옮긴 같은 이름의 EP를 냈습니다.\n\n다섯 번째 단독 공연 '물음표'는 내년 1월 2~3일 네이버 아레나 앳 인스파이어에서 열립니다. 한로로의 첫 아레나 단독 공연입니다. 예매는 13일 오후 6시 NOL 티켓에서 열립니다.\n\n#PLOT #한로로 #물음표 #자몽살구클럽 #입춘\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794036015/glwlpatsoakgliqwcxvs.jpg\n제목: 상상마당에서 아레나까지|한로로\n부제: 다섯 번째 단독 '물음표' 2027.1.2~3\n출처: @hanr0r0\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792504678/pzcumrcgq5wsmevogzw9.jpg\n소제목: 처음은 홍대\n본문: 한로로는 2022년 3월 싱글 '입춘'으로 데뷔했습니다.||첫 단독 공연은 이듬해 홍대 KT&G 상상마당 라이브홀. 2024년 두 번째 공연을 연 노들섬 라이브하우스는 회당 약 **700명**이 들어가는 곳이었습니다.||출처: 앳스타일 · 뉴시스\n출처: 멜론\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg\n소제목: 해마다 한 칸씩\n본문: 2025년 1월 YES24 라이브홀에서는 회당 약 **1,500명**, 같은 해 11월 고려대 화정체육관에서는 회당 **4,500명** 안팎이 모였습니다.||앞선 세 번의 단독 공연은 모두 매진됐고, 화정체육관 2회차는 예매가 열리자마자 매진됐습니다.||출처: 뉴시스 · 스포츠경향\n출처: @hanr0r0\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792504667/w0bha05cvykihjstyhxt.jpg\n소제목: 소설을 먼저 쓰는 사람\n본문: 지난해 7월 한로로는 장편소설 『자몽살구클럽』을 냈고, 같은 이름의 EP도 내놓았습니다.||\"소설을 먼저 완성했다\"는 그는 소설 속 주요 장면을 노래로 풀어냈다고 말했습니다. 화정체육관 공연의 이름도 '자몽살구클럽'이었습니다.||출처: 보그 · 스포츠경향\n출처: 멜론\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg\n소제목: 그리고 아레나\n본문: 다섯 번째 단독 공연 '물음표'는 내년 1월 2~3일 네이버 아레나 앳 인스파이어에서 열립니다. 한로로의 첫 아레나 단독 공연입니다.||공연 이름은 지난 5일 낸 새 싱글과 같은 '물음표'. 예매는 13일 오후 6시 NOL 티켓에서 열립니다.||출처: 앳스타일 · NOL 티켓\n출처: @hanr0r0\n",
+    "caption": "한로로(@hanr0r0)의 단독 공연장은 해마다 커졌습니다.\n\n2023년 홍대 상상마당 라이브홀에서 시작한 단독 공연은 노들섬 라이브하우스와 YES24 라이브홀을 거쳐 지난해 11월 고려대 화정체육관까지 이어졌는데요, 노들섬에서 회당 약 700명이던 객석은 화정체육관에서 4,500명 안팎이 됐습니다.\n\n그 사이 한로로는 장편소설 『자몽살구클럽』을 먼저 쓰고, 소설 속 장면들을 노래로 옮긴 같은 이름의 EP를 냈습니다.\n\n다섯 번째 단독 공연 '물음표'는 내년 1월 2~3일 네이버 아레나 앳 인스파이어에서 열립니다. 한로로의 첫 아레나 단독 공연입니다. 예매는 13일 오후 6시 NOL 티켓에서 열립니다.\n\n#PLOT #한로로 #물음표 #자몽살구클럽 #입춘",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036015/glwlpatsoakgliqwcxvs.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747719071_18365482957300688_4984386217578665787_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=2mLhl0SBDZUQ7kNvwFuXW_R&_nc_oc=AdqNcHn1a3at2hAShyOEcLrY5Co5q-l0QX5d0nkWcKv-tuZQjLuM09k1b_TOJp80BKc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOTwDqFPT2Xw_8h2qtQ8_MEnjuRcES59Rli5KhpPM5CKg&oe=6ADD4C18"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791905717/q15porxifxydbzwy5iys.jpg",
+      "credit": "@hanr0r0",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772440614_18370084645300688_9158151031758300946_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZvYg_PqDpv8Q7kNvwGA1e6t&_nc_oc=AdoMLFGI7JAfEXUOpeEpccmkNV6YXktjI4rBzrPqwgAcgovfHXWmBqm9z1lhfRjcDtQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=sFnKa4hyN_g0RTNEyhV4gA&oh=00_AQMHu6EQL7RsDDlgZwjFFBhWINr1KMtaUv4Du9n_s91DdA&oe=6AD433D4"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504608/jo8rnrisvxvqfr9hsnsd.jpg",
+      "credit": "@hanr0r0",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/769115074_18370084663300688_4127557554150156983_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=bOAasJwCBwcQ7kNvwHF0Y0_&_nc_oc=AdrvRKUOWQHTMoT37gyiWxruNOzC_ggEP6mSJ62R2jKrqXHu9L3Dwk36p7SAxExh90s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQN8I8gXPjTDZJTFiMwY5FbJUQCEGoi-hyf8aBSNfnmiSg&oe=6ADD4E94"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504631/tdqsku3hec9qoz10ngao.jpg",
+      "credit": "@hanr0r0",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/755332506_18366614662300688_3353593845101755271_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=Taf50WR-uKAQ7kNvwEKdTLo&_nc_oc=AdppZt_-AJbK1SzoYykV7TS1FZ3RZSgNqyJgVF8feh9ydkjH-aq-v0Tif3xUJvIo5Cg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQN4GlsZYHUW-4_ET61Z7TEqJr8Lsc22KmG94iPDeqfR-g&oe=6ADD2F91"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036015/glwlpatsoakgliqwcxvs.jpg",
+      "credit": "@hanr0r0",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504641/ytxwt1bmgxuzswaqlopy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747941115_18365482915300688_5859956883577932932_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=WPz43C8cMCgQ7kNvwHlSFeN&_nc_oc=AdqKSyjq94tEYLQo2z49YTDhePJNEWmUbv_63gD_IhBgwCkGcvQJhvM3ISMU8TcE4J4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQNGnsRQslUq0MTCX5BGEgHgM1cwVxp5cDbbZ6PTTFNbpQ&oe=6ADD3A65"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504646/ww8p1ojhctzlzdshjrkl.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747526627_18365482936300688_3413404646216495305_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=rLSBK-JgC_AQ7kNvwGeeQ72&_nc_oc=Ado1I0JkwMryYUMEv1AJyS68LjxJCWuI4mDAIMvcwMlLmT9pnbRaRehn8EaxQHBl5mk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQMI1Z5eKYVo-d7WqV4C6UJ7VzVXXcMfmYAjTw1rd1czpw&oe=6ADD5C91"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504660/nvwyveimtrq2wquyqe2j.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/747719071_18365482957300688_4984386217578665787_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=2mLhl0SBDZUQ7kNvwFuXW_R&_nc_oc=AdqNcHn1a3at2hAShyOEcLrY5Co5q-l0QX5d0nkWcKv-tuZQjLuM09k1b_TOJp80BKc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOTwDqFPT2Xw_8h2qtQ8_MEnjuRcES59Rli5KhpPM5CKg&oe=6ADD4C18"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504665/dn7x3fenpavvzzqvvwuy.jpg",
+      "credit": "@hanr0r0",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/749085554_18365482975300688_208531987501193313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=KeRSlcMEc34Q7kNvwEcn6V5&_nc_oc=Ado3YykcbG5-5TcKuY-dPMQyA1fSYDaRbwh1QQKt_X4I_E8kgCYFHYnh653R2n6ZN1A&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQOuesACuH03qSq_JrqwCpe0wE9Th8HtIljdbU2dkZwmjg&oe=6ADD3DAF"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1791905717/q15porxifxydbzwy5iys.jpg",
+      "credit": "@hanr0r0",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/772440614_18370084645300688_9158151031758300946_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZvYg_PqDpv8Q7kNvwGA1e6t&_nc_oc=AdoMLFGI7JAfEXUOpeEpccmkNV6YXktjI4rBzrPqwgAcgovfHXWmBqm9z1lhfRjcDtQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=sFnKa4hyN_g0RTNEyhV4gA&oh=00_AQMHu6EQL7RsDDlgZwjFFBhWINr1KMtaUv4Du9n_s91DdA&oe=6AD433D4"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504608/jo8rnrisvxvqfr9hsnsd.jpg",
+      "credit": "@hanr0r0",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/769115074_18370084663300688_4127557554150156983_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=bOAasJwCBwcQ7kNvwHF0Y0_&_nc_oc=AdrvRKUOWQHTMoT37gyiWxruNOzC_ggEP6mSJ62R2jKrqXHu9L3Dwk36p7SAxExh90s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQN8I8gXPjTDZJTFiMwY5FbJUQCEGoi-hyf8aBSNfnmiSg&oe=6ADD4E94"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792504631/tdqsku3hec9qoz10ngao.jpg",
+      "credit": "@hanr0r0",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/755332506_18366614662300688_3353593845101755271_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=Taf50WR-uKAQ7kNvwEKdTLo&_nc_oc=AdppZt_-AJbK1SzoYykV7TS1FZ3RZSgNqyJgVF8feh9ydkjH-aq-v0Tif3xUJvIo5Cg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=VIwsk-G69unco1j33l6yZg&oh=00_AQN4GlsZYHUW-4_ET61Z7TEqJr8Lsc22KmG94iPDeqfR-g&oe=6ADD2F91"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "상상마당에서 아레나까지|한로로",
+      "sub": "다섯 번째 단독 '물음표' 2027.1.2~3"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 넷째 장('그리고 아레나') 미리보기가 tmp/claude_prev 에 없어 사진·글자 겹침을 못 봄 — 앱에서 확인",
+     "EP [자몽살구클럽] 발매일이 보그(7/11 소설과 같은 날)·스포츠경향(8월)로 엇갈려 날짜는 쓰지 않았음",
+     "회당 관객 수는 뉴시스 보도 기준 · 표지 사진은 사진 DB 화보(@hanr0r0)"
+    ],
+    "research": [
+     {
+      "title": "앳스타일 11/5 — 다섯 번째 단독 '물음표' 2027.1.2~3 · 첫 아레나 단독 · 2023 상상마당 첫 단독 · 2022.3 '입춘' 데뷔",
+      "link": "http://www.atstar1.com/news/articleView.html?idxno=6040378"
+     },
+     {
+      "title": "NOL 티켓 — 네이버 아레나 앳 인스파이어(구 인스파이어 아레나) · 1/2 18시 · 1/3 17시 · 티켓 오픈 11/13(금) 18시",
+      "link": "https://nol.yanolja.com/ticket/products/26015537"
+     },
+     {
+      "title": "스포츠경향 2025/10/15 — 4th '자몽살구클럽' 고려대 화정체육관 2025.11.22~23 · 2회차 예매 시작과 동시에 매진 · 2023 상상마당 · 2024 노들섬 · 2025.1 YES24 전 회차 매진",
+      "link": "https://sports.khan.co.kr/article/202510151510003"
+     },
+     {
+      "title": "뉴시스 2025/10/1 — 노들섬 회당 약 700명 · YES24 '발아' 회당 약 1500명 · 화정체육관 회당 4500명 안팎 · 2년 만에 관객수 20배",
+      "link": "https://www.newsis.com/view/NISX20251001_0003351439"
+     },
+     {
+      "title": "보그 2025/8/7 — 2025.7.11 장편소설·동명 EP 『자몽살구클럽』 · \"소설을 먼저 완성했다고 할 수 있을 것 같습니다\" · \"소설 속 주요 장면을 노래로 풀어내기 위해 노력했죠\"",
+      "link": "https://www.vogue.co.kr/2025/08/07/%ea%b7%b8%eb%a0%87%ea%b2%8c-%ec%97%ac%eb%a6%84%ec%9d%b4-%eb%90%9c-%ec%88%9c%ea%b0%84-%ed%95%9c%eb%a1%9c%eb%a1%9c/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036022/d2m6pofnwkmcne5z0wos.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036022/aayqzf9qxruhxhw6ayv2.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036022/isu2kbvpmdnjuq3j2azi.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036022/sypxpqz7hwqgzgq8oysk.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036023/cbtghmy2fac8qtfnwriv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036024/sfw5ltjjkiqlito6wb0a.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036022/d2m6pofnwkmcne5z0wos.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T16:20+09:00",
+     "v": {
+      "A": "168c706c"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "이번 회차 목표 '인물해부' · 상상마당 → 화정체육관 → 아레나, 숫자로 보이는 성장 · 13일 예매 전 지금이 때",
+    "at": "2026-11-07T16:20+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 4
+  },
+  {
+   "source": {
+    "id": "claude:iu-into-the-iland",
+    "account": "OSEN 11/6",
+    "url": "http://www.osen.co.kr/article/G1112905170",
+    "image": null,
+    "head": "“언젠간 해주세요 제발” 팬 간청에…아이유 “제 곡이라는 인식이 없...",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-07T16:20+09:00",
+   "key": "0dcd814b",
+   "by": "claude",
+   "subjects": [
+    "아이유"
+   ],
+   "lane": "재미",
+   "editor": {
+    "grade": "B",
+    "kind": "재미",
+    "angle": "팬이 6년째 라이브를 바라는 'Into the I-LAND' — 정작 부른 아이유는 '제 곡이라는 인식이 없다'고 답했다",
+    "why": "아이유 기사 12건 급상승 · 가벼운 반전 한 줄 · 표지 한 장으로 싸게"
+   },
+   "added": "claude",
+   "added_at": "2026-11-07T16:20+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n아이유(@dlwlrma)가 6년 전 자신이 부른 노래를 두고, 솔직히 자기 곡이라는 인식이 없다고 답했습니다.\n\n5일 밤 팬 플랫폼 베리즈에서 한 팬이 'Into the I-LAND'를 언젠가 라이브로 들려 달라고 부탁했는데요, 2분쯤 뒤 돌아온 답이 이 짧은 한 줄이었습니다. 이 곡은 2020년 6월 Mnet 오디션 〈아이랜드〉의 첫 시그널송으로, 아이유의 정규 앨범에는 실리지 않은 노래입니다.\n\n녹음 당시 아이유는 처음 해 보는 장르라 힘들었지만 또 해 보고 싶다는 소감을 SNS에 남기기도 했습니다. 답이 올라온 뒤에도 6년 전 공개된 이 곡을 라이브로 듣고 싶다는 댓글이 이어졌습니다.\n\n#PLOT #아이유 #IntotheILAND #아이랜드 #베리즈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794036018/tgc72nix7linhelo5he1.jpg\n제목: 팬 신청곡에 아이유가|남긴 솔직한 한 줄\n부제: 'Into the I-LAND'\n출처:\n",
+    "caption": "아이유(@dlwlrma)가 6년 전 자신이 부른 노래를 두고, 솔직히 자기 곡이라는 인식이 없다고 답했습니다.\n\n5일 밤 팬 플랫폼 베리즈에서 한 팬이 'Into the I-LAND'를 언젠가 라이브로 들려 달라고 부탁했는데요, 2분쯤 뒤 돌아온 답이 이 짧은 한 줄이었습니다. 이 곡은 2020년 6월 Mnet 오디션 〈아이랜드〉의 첫 시그널송으로, 아이유의 정규 앨범에는 실리지 않은 노래입니다.\n\n녹음 당시 아이유는 처음 해 보는 장르라 힘들었지만 또 해 보고 싶다는 소감을 SNS에 남기기도 했습니다. 답이 올라온 뒤에도 6년 전 공개된 이 곡을 라이브로 듣고 싶다는 댓글이 이어졌습니다.\n\n#PLOT #아이유 #IntotheILAND #아이랜드 #베리즈",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036018/tgc72nix7linhelo5he1.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792622198/ldkhqnvwjgxeshato2m7.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792622237/v5fabuoyjgwkl8obnkkt.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8cphfe1j/auto_pdb_아이유_매거진 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792674077/qnmi2htxwkh1cvgguc99.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_2i0h802i/auto_pdb_dlwlrma_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792674094/fwszxwzdmtme7qjlbkma.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_in2awt2s/auto_pdb_dlwlrma_화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036018/tgc72nix7linhelo5he1.jpg",
+      "credit": "신뢰",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792622198/ldkhqnvwjgxeshato2m7.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792622237/v5fabuoyjgwkl8obnkkt.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8cphfe1j/auto_pdb_아이유_매거진 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792674077/qnmi2htxwkh1cvgguc99.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_2i0h802i/auto_pdb_dlwlrma_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792674094/fwszxwzdmtme7qjlbkma.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_in2awt2s/auto_pdb_dlwlrma_화보_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "팬 신청곡에 아이유가|남긴 솔직한 한 줄",
+      "sub": "'Into the I-LAND'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "답 문장이 OSEN '제 곡이라는'·마이데일리 '제 노래라는'으로 달라 캡션은 따옴표 없이 풀어 씀 · 베리즈 원문은 못 봄",
+     "표지 사진은 사진 DB 프로필(credit '신뢰') — 앱에서 출처 표기 확인"
+    ],
+    "research": [
+     {
+      "title": "OSEN 11/6 — 11/5 베리즈 'From. IU' · 밤 10시 15분께 팬 요청 · 약 2분 뒤 답 · 2020.6.19 Mnet 〈아이랜드〉 시그널송 · 정규 앨범 수록곡 아님",
+      "link": "http://www.osen.co.kr/article/G1112905170"
+     },
+     {
+      "title": "마이데일리 11/6 — 같은 답(\"솔직히 말하면 제 노래라는 인식이 없습니다\") · 첫 번째 시그널송 · 녹음 당시 SNS '처음 해 본 장르였는데 또 도전해 보고 싶다'",
+      "link": "https://www.mydaily.co.kr/page/view/2026110609214512203"
+     },
+     {
+      "title": "Korea Daily (영문) — 같은 일",
+      "link": "https://en.koreadaily.com/iu-into-the-i-land-fan-request/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036028/bwixjhhhyz5hjjeebguy.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036028/i2psx1s40tcysbxz9ydf.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794036028/bwixjhhhyz5hjjeebguy.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-07T16:20+09:00",
+     "v": {
+      "A": "1f4efc7f"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "아이유 기사 12건 급상승(평소 1) · 가벼운 한 줄 반전이라 공유가 붙는 결",
+    "at": "2026-11-07T16:20+09:00"
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
   "days_left": 2,
-  "done": 49,
+  "done": 50,
   "goal": 28,
   "corners": [
    {
@@ -902,7 +1216,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 3,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1029,31 +1343,31 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 26,
+    "done": 27,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-07T13:10+09:00"
+  "at": "2026-11-07T16:20+09:00"
  },
  "queue": {
-  "next": "2026-11-07T14:10+09:00",
+  "next": "2026-11-07T16:22+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-07T13:10+09:00"
  },
  "slots": {
-  "basis": 333,
+  "basis": 334,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.98,
+    "mult": 2.0,
     "median": 1.06,
     "n": 64
    },
@@ -1061,7 +1375,7 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.67,
+    "mult": 1.68,
     "median": 0.8,
     "n": 41
    },
