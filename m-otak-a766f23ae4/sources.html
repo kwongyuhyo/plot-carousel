@@ -5261,9 +5261,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = "\u2190 \uc554\ub0ab\uc624\ud0c0\ucfe0 \uc81c\uc791";
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.08 11:01';
+    a.title = '판 11.08 13:39';
     var ver = document.createElement('span');
-    ver.textContent = '11.08 11:01';
+    ver.textContent = '11.08 13:39';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -5580,7 +5580,7 @@ if ('serviceWorker' in navigator) {
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3, premiere: 25 * 60e3, photo_list: 3 * 60e3, ig_media: 3 * 60e3, photo_set: 12 * 60e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3, premiere: 25 * 60e3, photo_list: 3 * 60e3, ig_media: 3 * 60e3, photo_set: 12 * 60e3, macjob: 90e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
