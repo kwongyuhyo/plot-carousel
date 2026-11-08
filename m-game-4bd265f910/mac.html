@@ -119,6 +119,9 @@ h1{font-size:26px;margin:8px 0 2px;letter-spacing:-.03em}
 .chip{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:999px;padding:0 7px;margin-left:4px;color:var(--muted)}
 .more{background:none;border:0;color:var(--muted);font:inherit;font-size:12px;padding:4px 0;cursor:pointer}
 .note{color:var(--dim);font-size:12px;margin-top:18px;line-height:1.6}
+.act{flex:none;align-self:center;background:var(--raise);color:var(--text);border:1px solid var(--line);border-radius:8px;font:inherit;font-size:12px;padding:5px 9px;cursor:pointer;min-height:30px}
+.act.stop{color:var(--bad)}.act:disabled{opacity:.5;cursor:default}
+.pend{color:var(--amber)}
 </style>
 
 <link rel="manifest" href="manifest.webmanifest?v=37">
@@ -402,13 +405,83 @@ html:root[data-gap="tight"] body{ padding-left:12px; padding-right:12px }
 html:root[data-gap="normal"] body{ padding-left:22px; padding-right:22px }
 html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
 </style>
+<script>window.PLOT_UPLOAD={"cloud": "dwndhzqod", "preset": "plot_studio"};</script><script>(function () {
+  var SB = { url: "https://jipqujwziezeubtthbnw.supabase.co", key: "sb_publishable_ltzIdTSGhZW8EMT7DpNd4Q_qp2xxJDK" };
+  function on() { return /^https:\/\//.test(SB.url || '') && !!SB.key; }
+  function req(path, opt) {
+    opt = opt || {};
+    var h = { apikey: SB.key, Authorization: 'Bearer ' + SB.key, 'Content-Type': 'application/json' };
+    if (opt.prefer) h.Prefer = opt.prefer;
+    return fetch(SB.url.replace(/\/+$/, '') + '/rest/v1/' + path, { method: opt.method || 'GET', headers: h, body: opt.body })
+      .then(function (r) {
+        if (!r.ok) return r.text().then(function (t) { throw new Error(r.status + ' ' + t.slice(0, 100)); });
+        return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
+      });
+  }
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3, premiere: 25 * 60e3, photo_list: 3 * 60e3, ig_media: 3 * 60e3, photo_set: 12 * 60e3, macjob: 90e3 };
+  function send(op, data, onStep) {
+    var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
+    var sn = { op: op, at: new Date().toISOString() };
+    Object.keys(data || {}).forEach(function (k) { sn[k] = data[k]; });
+    var rec = { id: id, kind: 'studio', draft_date: null, draft_key: null, source_id: op, verdict: {}, reason: '', rewrite: {},
+      device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0], snapshot: sn };
+    return req('plot_evals', { method: 'POST', body: JSON.stringify(rec), prefer: 'resolution=merge-duplicates,return=minimal' })
+      .then(function () { return wait(id, LIMIT[op] || 5 * 60e3, onStep).then(function (sn) { sn._id = id; return sn; }); });
+  }
+  function wait(id, limit, onStep) {
+    var t0 = Date.now();
+    return new Promise(function (ok, no) {
+      (function tick() {
+        req('plot_evals?select=snapshot&id=eq.' + encodeURIComponent(id)).then(function (rows) {
+          var sn = (rows && rows[0] && rows[0].snapshot) || {};
+          if (sn.status === 'done') return ok(sn);
+          if (sn.status === 'fail') return no(new Error(sn.note || '맥에서 실패했습니다'));
+          var gone = Date.now() - t0;
+          if (gone > limit) return no(new Error(sn.status ? '오래 걸려 화면에서 기다리기를 멈췄습니다 — 맥에서는 계속합니다'
+                                                            : '맥이 받지 않습니다 — 맥과 봇이 켜져 있는지 봐 주세요'));
+          if (onStep) { try { onStep(sn.status === 'running' ? (sn.note || '맥이 처리 중') : '맥이 받기를 기다리는 중', gone); } catch (_) {} }
+          setTimeout(tick, 3000);
+        }).catch(function (e) { if (Date.now() - t0 > limit) no(e); else setTimeout(tick, 5000); });
+      })();
+    });
+  }
+  function sheet(title, text) {
+    var o = document.createElement('div');
+    o.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.55);display:flex;align-items:flex-end;justify-content:center';
+    o.innerHTML = '<div style="background:var(--bg,#111);color:var(--fg,#eee);width:100%;max-width:640px;max-height:80vh;overflow:auto;' +
+      'border-radius:16px 16px 0 0;padding:16px 16px calc(16px + env(safe-area-inset-bottom))">' +
+      '<div data-t style="font-weight:800;margin-bottom:8px"></div><textarea style="width:100%;min-height:42vh;box-sizing:border-box;' +
+      'font:inherit;font-size:14px;line-height:1.55;padding:10px;border-radius:10px;border:1px solid rgba(127,127,127,.4);background:transparent;color:inherit"></textarea>' +
+      '<div style="display:flex;gap:8px;margin-top:10px"><button data-x="c" style="flex:1;padding:12px;border-radius:10px;font-weight:700">📋 복사</button>' +
+      '<button data-x="q" style="padding:12px 16px;border-radius:10px">닫기</button></div></div>';
+    o.querySelector('[data-t]').textContent = title;
+    var ta = o.querySelector('textarea'); ta.value = text;
+    o.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-x]');
+      if (e.target === o || (b && b.getAttribute('data-x') === 'q')) { o.remove(); return; }
+      if (b) {
+        var done = function () { b.textContent = '✓ 복사했습니다'; };
+        try { navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); document.execCommand('copy'); done(); }); }
+        catch (_) { ta.select(); document.execCommand('copy'); done(); }
+      }
+    });
+    document.body.appendChild(o);
+  }
+  function post(rec) {                                   // 그림 한 장 같은 날 줄 (kind='studio_img')
+    var r = { draft_date: null, draft_key: null, source_id: rec.kind || '', verdict: {}, reason: '', rewrite: {}, device: '' };
+    Object.keys(rec).forEach(function (k) { r[k] = rec[k]; });
+    return req('plot_evals', { method: 'POST', body: JSON.stringify(r), prefer: 'resolution=merge-duplicates,return=minimal' });
+  }
+  function get(path) { return req(path); }             // 11/3 저장한 양식 받기 (kind='shortsave')
+  window.plotStudio = { on: on, send: send, sheet: sheet, post: post, get: get };
+})();</script>
 </head>
 <body>
 <div class="wrap">
   <h1>맥 상태</h1>
   <div class="top" id="top"><span><span class="spin"></span>맥 상태를 불러오는 중…</span></div>
   <div class="grid" id="grid"></div>
-  <div class="note">맥 미니가 30초마다 상태를 올리고, 이 화면은 10초마다 다시 읽습니다. 보기만 하는 화면이라 여기서 바꾸는 건 없습니다.<br>
+  <div class="note">맥 미니가 30초마다 상태를 올리고, 이 화면은 10초마다 다시 읽습니다. 기다리는 일은 「빼기」, 도는 일은 「멈추기」로 끌 수 있습니다 — 발행과 같은 앱 열쇠가 필요합니다.<br>
     예약 발행은 오늘의 초안의 「예약」·「릴스 대기열」로 넣은 것, 숏폼 렌더는 제작·미리 렌더 대기열입니다.</div>
 </div>
 <script>
@@ -438,6 +511,51 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var o = j.opts || {}, ks = Object.keys(o);
     return ks.length ? ks.map(function (k) { return k + ' ' + o[k]; }).join(' · ') : '';
   }
+  // 11/8 규효 "앱에 맥 작업줄 — 빼기·멈추기" — 봇(bot/app_studio op=macjob)이 앱 열쇠 서명을 확인하고 scripts/mac_status.control 로 한다
+  var PEND = {};
+  function pk(repo, what, id) { return repo + '|' + what + '|' + id; }
+  function btn(act, what, repo, id, label) {
+    var busy = (PEND[pk(repo, what, id)] || {}).busy;
+    return '<button class="act' + (act === 'stop' ? ' stop' : '') + '"' + (busy ? ' disabled' : '') + ' data-act="' + act + '" data-what="' + what +
+      '" data-repo="' + esc(repo) + '" data-id="' + esc(id) + '" data-label="' + esc(label) + '">' + (act === 'stop' ? '멈추기' : '빼기') + '</button>';
+  }
+  function pend(repo, what, id) {
+    var p = PEND[pk(repo, what, id)];
+    return p ? '<small class="' + (p.bad ? 'bad' : 'pend') + '">' + esc(p.msg) + '</small>' : '';
+  }
+  function appKey() {
+    var ch = {}; try { ch = JSON.parse(localStorage.getItem('plot.inbox') || '{}') || {}; } catch (e) {}
+    if (ch.key) return ch.key;
+    var k = (window.prompt('앱 열쇠가 필요합니다 — 맥 .env 의 PLOT_APP_KEY 와 같은 값을 한 번만 넣어 주세요') || '').trim();
+    if (!k) return '';
+    ch.key = k; try { localStorage.setItem('plot.inbox', JSON.stringify(ch)); } catch (e) {}
+    return k;
+  }
+  function forgetKey() { try { var ch = JSON.parse(localStorage.getItem('plot.inbox') || '{}'); delete ch.key; localStorage.setItem('plot.inbox', JSON.stringify(ch)); } catch (e) {} }
+  function sha256hex(str) {
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(str)).then(function (h) {
+      return Array.from(new Uint8Array(h)).map(function (x) { return x.toString(16).padStart(2, '0'); }).join('');
+    });
+  }
+  function control(b) {
+    var act = b.getAttribute('data-act'), what = b.getAttribute('data-what'), repo = b.getAttribute('data-repo'),
+      id = b.getAttribute('data-id'), label = b.getAttribute('data-label'), k = pk(repo, what, id);
+    if (!(window.plotStudio && window.plotStudio.on())) { alert('저장소 설정이 없어 보낼 수 없습니다'); return; }
+    if (!window.confirm((act === 'stop' ? '지금 도는 이 일을 멈출까요?\n\n' : '기다리는 이 일을 뺄까요?\n\n') + label + ' (' + repo + ')' +
+      (act === 'stop' ? '\n\n하던 것은 끝까지 가지 않고, 남은 단계도 돌지 않습니다.' : ''))) return;
+    var key = appKey(); if (!key) return;
+    var at = new Date().toISOString();
+    PEND[k] = { busy: true, msg: act === 'stop' ? '멈추는 중…' : '빼는 중…' }; render();
+    sha256hex(key + '|macjob|' + act + '|' + what + '|' + repo + '|' + id + '|' + at).then(function (sig) {
+      return window.plotStudio.send('macjob', { act: act, what: what, repo: repo, id: String(id), at: at, sig: sig });
+    }).then(function (sn) {
+      PEND[k] = { msg: '✓ ' + (sn.note || '했습니다') }; render(); load();
+    }).catch(function (e) {
+      var m = String((e && e.message) || e);
+      if (/열쇠/.test(m)) forgetKey();
+      PEND[k] = { bad: true, msg: '못 했습니다 — ' + m.slice(0, 120) }; render();
+    });
+  }
   function repoCard(r) {
     var h = '<div class="repo"><h2><span class="dot' + (r.bot ? '' : ' off') + '"></span>' + esc(r.name) +
       ' <small>' + (r.bot ? '봇 켜짐' : '<span class="bad">봇 꺼짐</span>') + '</small></h2>';
@@ -448,12 +566,14 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     r.running.forEach(function (j) {
       h += '<div class="row"><div class="t"><b><span class="spin"></span>' + esc(jobName(j)) + '</b>' +
         (optLine(j) ? '<small>' + esc(optLine(j)) + '</small>' : '') + (j.now ? '<small>' + esc(j.now) + '</small>' : '') +
-        '</div><div class="r"><b>' + ago(j.since) + '째</b>' + esc(j.job) + '</div></div>';
+        pend(r.name, 'job', j.id) + '</div><div class="r"><b>' + ago(j.since) + '째</b>' + esc(j.job) + '</div>' +
+        btn('stop', 'job', r.name, j.id, jobName(j)) + '</div>';
     });
     rr.filter(function (x) { return x.status === 'running'; }).forEach(function (x) {
       var p = Math.max(0, Math.min(100, Number(x.progress) || 0));
       h += '<div class="row"><div class="t"><b><span class="spin"></span>숏폼 렌더 — ' + esc(x.title || x.kind) + '</b>' +
-        '<div class="bar"><i style="width:' + p + '%"></i></div></div><div class="r"><b>' + ago(String(x.started_at || '') + '+09:00') + '째</b>' + p + '%</div></div>';
+        '<div class="bar"><i style="width:' + p + '%"></i></div>' + pend(r.name, 'render', x.id) + '</div><div class="r"><b>' + ago(String(x.started_at || '') + '+09:00') + '째</b>' + p + '%</div>' +
+        btn('stop', 'render', r.name, x.id, '숏폼 렌더 — ' + (x.title || x.kind)) + '</div>';
     });
     h += '</div>';
     // 기다리는 일
@@ -462,10 +582,11 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (!wq.length && !wr.length) h += '<div class="empty">없음</div>';
     wq.forEach(function (j) {
       h += '<div class="row"><div class="t"><b>' + esc(jobName(j)) + '</b>' + (optLine(j) ? '<small>' + esc(optLine(j)) + '</small>' : '') +
-        '</div><div class="r">' + ago(j.since) + ' 전 들어옴</div></div>';
+        pend(r.name, 'job', j.id) + '</div><div class="r">' + ago(j.since) + ' 전 들어옴</div>' + btn('drop', 'job', r.name, j.id, jobName(j)) + '</div>';
     });
     wr.forEach(function (x) {
-      h += '<div class="row"><div class="t"><b>숏폼 렌더 — ' + esc(x.title || x.kind) + '</b></div><div class="r">' + kst(x.created_at) + ' 들어옴</div></div>';
+      h += '<div class="row"><div class="t"><b>숏폼 렌더 — ' + esc(x.title || x.kind) + '</b>' + pend(r.name, 'render', x.id) + '</div><div class="r">' + kst(x.created_at) + ' 들어옴</div>' +
+        btn('drop', 'render', r.name, x.id, '숏폼 렌더 — ' + (x.title || x.kind)) + '</div>';
     });
     h += '</div>';
     // 예약 발행
@@ -520,6 +641,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   }
   document.addEventListener('click', function (e) {
     var m = e.target.closest('[data-more]'); if (m) { var k = m.getAttribute('data-more'); OPEN[k] = !OPEN[k]; render(); }
+    var b = e.target.closest('button[data-act]'); if (b && !b.disabled) control(b);
   });
   document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') load(); });
   load(); setInterval(function () { if (document.visibilityState === 'visible') load(); }, 10000);
@@ -536,9 +658,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = "\u2190 \uac9c\ub514\ud551 \uc81c\uc791";
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.08 11:16';
+    a.title = '판 11.08 13:39';
     var ver = document.createElement('span');
-    ver.textContent = '11.08 11:16';
+    ver.textContent = '11.08 13:39';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
