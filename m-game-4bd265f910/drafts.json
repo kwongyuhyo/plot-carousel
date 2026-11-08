@@ -165,11 +165,6 @@
      "at": "2026-11-08T11:16+09:00"
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "오늘이 정확히 20주년 — 20년 전 카드에 RTX 5080 권장이라는 아이러니",
-    "at": "2026-11-08T11:10+09:00"
-   },
    "corner_name": "그날의 앨범",
    "corner_no": 1
   },
@@ -344,11 +339,6 @@
      "status": "queued",
      "at": "2026-11-08T11:16+09:00"
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "감자만 깎는 게임이라는 묘한 사실 + 한국어 지원·싼 가격 — 숏폼 손맛이 좋다",
-    "at": "2026-11-08T11:10+09:00"
    },
    "corner_name": "소식"
   },
@@ -533,10 +523,212 @@
      "at": "2026-11-08T11:16+09:00"
     }
    },
+   "corner_name": "소식",
+   "pick": {
+    "rank": 3,
+    "why": "오늘 아침 초안 중 가장 사람·장면이 선 글 — 창고에서 찾은 테이프와 마크 해밀의 실사 장면",
+    "at": "2026-11-08T19:10+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:shindong-exilecon",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323117",
+    "image": null,
+    "head": "[인터뷰] 가수, 엔터테이너, IT유튜버 그리고 게이머... '신동'을 만나다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-08T19:10+09:00",
+   "key": "f751914d",
+   "by": "claude",
+   "subjects": [
+    "신동",
+    "패스 오브 엑자일 2"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "슈퍼주니어 신동이 〈패스 오브 엑자일〉 팬 행사를 보러 뉴질랜드까지 — 인생 게임은 오락실의 〈킹 오브 파이터즈 97〉, 목표는 '죽기 전까지 모든 게임'",
+    "why": "게임 밖에서도 아는 사람이 게이머로서 한 말 · 오늘 아침 POE2 정식 출시 글과 각도가 다르다(발표가 아니라 사람)"
+   },
+   "added": "claude",
+   "added_at": "2026-11-08T19:10+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n슈퍼주니어 신동이 〈패스 오브 엑자일〉 팬 행사를 보러 뉴질랜드 오클랜드까지 다녀왔습니다.\n\n7~8일 열린 엑자일콘 2026 현장에서 인벤과 만난 신동은 〈패스 오브 엑자일 2〉를 편집자의 추천으로 시작했다고 말했는데요, 자신 있게 일부러 어려운 직업인 워리어를 골랐다가 고생한 영상이 팬들에게 반응을 얻으면서 계속하게 됐다고 합니다. 그가 운영하는 IT 유튜브 채널 '신동댕동'에는 그 입문기 영상이 올라 있습니다.\n\n인생 게임으로는 오락실 시절의 〈더 킹 오브 파이터즈〉, 그중에서도 97을 꼽았습니다. 1등이나 정복보다 새 게임을 만나는 것 자체가 즐겁다는 그의 목표는 이렇습니다. \"죽기 전까지 가능한 한 모든 게임을 경험해 보는 거예요.\"\n\n〈패스 오브 엑자일 2〉 12월 12일(한국 시간) 정식 출시 · 무료\n\n#겜디핑 #신동 #슈퍼주니어 #패스오브엑자일2 #엑자일콘\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794132645/lqwcyzkxuk3xaxkl3h1k.jpg\n제목: 신동의 목표는|모든 게임 해 보기\n부제: 엑자일콘 2026 현장의 슈퍼주니어 신동\n출처: 인벤\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794132671/plot_studio/jvmihonc7zihkjb6zgjs.mp4\n소제목: \n본문: \n출처: 인벤\n",
+    "caption": "슈퍼주니어 신동이 〈패스 오브 엑자일〉 팬 행사를 보러 뉴질랜드 오클랜드까지 다녀왔습니다.\n\n7~8일 열린 엑자일콘 2026 현장에서 인벤과 만난 신동은 〈패스 오브 엑자일 2〉를 편집자의 추천으로 시작했다고 말했는데요, 자신 있게 일부러 어려운 직업인 워리어를 골랐다가 고생한 영상이 팬들에게 반응을 얻으면서 계속하게 됐다고 합니다. 그가 운영하는 IT 유튜브 채널 '신동댕동'에는 그 입문기 영상이 올라 있습니다.\n\n인생 게임으로는 오락실 시절의 〈더 킹 오브 파이터즈〉, 그중에서도 97을 꼽았습니다. 1등이나 정복보다 새 게임을 만나는 것 자체가 즐겁다는 그의 목표는 이렇습니다. \"죽기 전까지 가능한 한 모든 게임을 경험해 보는 거예요.\"\n\n〈패스 오브 엑자일 2〉 12월 12일(한국 시간) 정식 출시 · 무료\n\n#겜디핑 #신동 #슈퍼주니어 #패스오브엑자일2 #엑자일콘",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132645/lqwcyzkxuk3xaxkl3h1k.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/07/news/i1564424146.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132645/lqwcyzkxuk3xaxkl3h1k.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/07/news/i1564424146.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "신동의 목표는|모든 게임 해 보기",
+      "sub": "엑자일콘 2026 현장의 슈퍼주니어 신동"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "패스 오브 엑자일 보러|뉴질랜드 간 신동",
+      "sub": "슈퍼주니어 신동 · 엑자일콘 2026"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 실용 정보에서 'PC·콘솔 · 한국어 지원'을 뺐음 — 인벤 정식 출시 기사·엑자일콘 포럼 어디에도 정식판 플랫폼·한국어 지원 문장이 없음. 확인되면 다시 넣을 것",
+     "엑자일콘 현장 방문과 발언(인생 게임·목표·편집자 추천)은 인벤 인터뷰 한 곳뿐 — 워리어 입문은 본인 채널 영상 제목으로만 대조함. 올리기 전 신동 SNS에 현장 사진이 있는지 한 번 확인",
+     "표지 사진은 인벤 현장 사진(©INVEN) — 신동 얼굴이 제대로 잡혔는지 미리보기로 확인"
+    ],
+    "research": [
+     {
+      "title": "[인터뷰] 가수, 엔터테이너, IT유튜버 그리고 게이머... '신동'을 만나다 (인벤 11/7)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323117"
+     },
+     {
+      "title": "신동댕동 — 디아만 하다가 POE2 워리어로 입문하고 욕나온 썰 (신동 본인 채널)",
+      "link": "https://www.youtube.com/watch?v=MZ1UVrNMZs4"
+     },
+     {
+      "title": "ExileCon 2026 — 11/7~8(NZT) 오클랜드 (Path of Exile 공식 포럼)",
+      "link": "https://www.pathofexile.com/forum/view-thread/3931193"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132680/ehupouk8xnavvzwooadm.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132684/f2drgpkp5d7yeddugo9f.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132681/f1bdez0smkq6wakwqwvd.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132680/ehupouk8xnavvzwooadm.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-08T19:11+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794132681/plot_studio/ddzb9ljfz5vhqj9pmtwp.mp4"
+     },
+     "v": {
+      "A": "34a2ff28"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "게임 안 하는 사람도 아는 얼굴이 팬 행사까지 날아간 이야기 — 'KOF 97'과 '모든 게임 해 보기'가 공유를 부른다",
+    "at": "2026-11-08T19:10+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:wardogs-season3",
+    "account": "BULKHEAD 공식 유튜브",
+    "url": "https://www.youtube.com/watch?v=h9RtmPSqnAg",
+    "image": null,
+    "head": "WARDOGS | Road to Season 03 — 시즌 3 11월 12일, 시즌 2는 '너무 공격적이었다'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-08T19:10+09:00",
+   "key": "3425c95e",
+   "by": "claude",
+   "subjects": [
+    "워독스",
+    "벌크헤드"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "100인 전술 FPS 〈워독스〉 개발사가 시즌 2를 두고 '그건 우리 책임' — 12일 시즌 3는 실험 대신 안정",
+    "why": "만든 사람이 자기 실수를 공식 영상으로 말한 장면 · 시즌 3가 나흘 뒤라 계기가 있다 · 한국어 지원"
+   },
+   "added": "claude",
+   "added_at": "2026-11-08T19:10+09:00",
+   "corner": "news",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=h9RtmPSqnAg\n구간: 2:13-2:41\n곡: 개발사가 직접 인정했습니다\n아티스트: 시즌 2는 우리 잘못,\n피처링:\n후킹: \n출처: BULKHEAD\n자막: 자동",
+    "caption": "100인 전술 FPS 〈워독스〉의 개발사가 지난 시즌의 실패를 영상으로 직접 인정했습니다.\n\n벌크헤드는 공식 채널에 올린 '시즌 3로 가는 길' 영상에서 시즌 2를 두고 \"변화가 너무 공격적이었고, 그건 우리 책임\"이라고 말했는데요, 부정적인 리뷰에 말 대신 행동으로 답하려다 성장 속도가 너무 빨라졌고, 그 바람에 시즌 1을 만족스럽게 했던 '여정'을 없애 버렸다는 설명입니다.\n\n그래서 12일 열리는 시즌 3의 방향은 반대입니다. 큰 실험 없이 안정을 앞세우고, 시가전 중심의 새 맵을 넣고, 시즌을 더 길게 가져갑니다.\n\n시즌 3 11월 12일 · PC(스팀) 앞서 해보기 · 4만 7,270원 · 한국어 지원\n\n#겜디핑 #워독스 #WARDOGS #벌크헤드 #팀17",
+    "hooks": {
+     "A": "시즌 2는 우리 잘못, / 개발사가 직접 인정했습니다",
+     "B": "너무 빨리 고친 게 / 문제였다는 개발사",
+     "C": "100인 전쟁 FPS 워독스, / 12일 시즌 3로 다시"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=h9RtmPSqnAg",
+     "credit": "BULKHEAD",
+     "range": [
+      133.0,
+      161.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — BULKHEAD(개발사 공식 채널) · 구간 2:13-2:41 는 자막으로 잡음(시즌 2 '너무 공격적이었고 그건 우리 책임' 대목) — 화면에 말하는 사람이 누구인지(조 브래머 대표인지) 영상으로 확인, 확인되면 캡션에 이름을 넣어도 됨",
+     "시즌 3 '12일'은 영상 발언 기준이라 한국 시각 미확인 · 스팀 한국어 리뷰는 8일 기준 '대체로 부정적'(2,650건 중 34%)이라 댓글 반응 주의"
+    ],
+    "research": [
+     {
+      "title": "WARDOGS | Road to Season 03 (BULKHEAD 공식)",
+      "link": "https://www.youtube.com/watch?v=h9RtmPSqnAg"
+     },
+     {
+      "title": "시즌2 실패 인정한 '워독스' 12일 시즌3 연다 (게임메카 11/7)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783137"
+     },
+     {
+      "title": "WARDOGS Devs Admit Faster Season 2 Progression Was the 'Wrong Call' (GameRiv)",
+      "link": "https://gameriv.com/wardogs-devs-admit-faster-season-2-progression-was-the-wrong-call-consider-early-season-3/"
+     },
+     {
+      "title": "WARDOGS (Steam)",
+      "link": "https://store.steampowered.com/app/1867240/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/h9RtmPSqnAg/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132689/nccjwqba7jgcbzeey4ek.jpg",
+     "key": "h9RtmPSqnAg@133.0"
+    },
+    "px": {
+     "vid": "h9RtmPSqnAg",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794132787/plot_studio/kwuctc65heblnnijgxhy.mp4",
+     "off": 88.0,
+     "end": 206.0,
+     "full": 862.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-08T19:13+09:00"
+    }
+   },
    "pick": {
     "rank": 1,
-    "why": "창고에서 찾은 테이프라는 사람·장면이 있는 이야기 — 고전 게임 팬과 처음 보는 사람 모두 읽힘",
-    "at": "2026-11-08T11:10+09:00"
+    "why": "개발사가 자기 실수를 영상으로 인정한 장면 — 사람이 보이는 말 한 마디에 12일 시즌 3라는 계기까지 있다",
+    "at": "2026-11-08T19:10+09:00"
    },
    "corner_name": "소식"
   }
@@ -713,14 +905,14 @@
     "need_today": 4,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-08T11:16+09:00"
+  "at": "2026-11-08T19:13+09:00"
  },
  "queue": {
-  "next": "2026-11-08T11:18+09:00",
+  "next": "2026-11-08T19:15+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
