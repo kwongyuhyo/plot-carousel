@@ -962,7 +962,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=RRKJiM9Njr8\n구간: 3:27-3:57\n곡: 마이 케미컬 로맨스\n아티스트: 18년 만에 한국 온\n피처링:\n후킹: \n출처: My Chemical Romance\n음원: My Chemical Romance - Welcome To The Black Parade\n가사: 자동",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=RRKJiM9Njr8\n구간: 3:27-3:57\n곡: 마이 케미컬 로맨스\n아티스트: 18년 만에 한국 온\n피처링:\n후킹: \n출처: My Chemical Romance\n음원: My Chemical Romance - Welcome To The Black Parade\n가사: 자동\n자막: 받음 st:1794102799152-cd2daec7",
     "caption": "마이 케미컬 로맨스(@mychemicalromance)가 18년 만에 한국을 찾았습니다.\n\n7일 인천 파라다이스시티 컬처파크 공연의 1부는 정규 3집 [The Black Parade]를 앨범 순서 그대로 완주하는 무대였는데요, 영상은 그 앨범의 타이틀곡 'Welcome To The Black Parade' 뮤직비디오입니다.\n\n제라드 웨이(@gerardway)는 \"여긴 제가 가본 나라 중 가장 아름다운 곳 중 하나\"라며 18년 만의 재회를 반겼습니다. 발매 20년을 맞은 앨범이 18년 만에 다시 한국에서 울린 셈입니다.\n\n#PLOT #마이케미컬로맨스 #제라드웨이 #블랙퍼레이드 #MCR",
     "hooks": {
      "A": "18년 만에 한국 온 / 마이 케미컬 로맨스",
@@ -1026,8 +1026,64 @@
      "full": 315.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-08T10:52+09:00"
+     "status": "ready",
+     "rid": "st:1794102799152-cd2daec7",
+     "n": 10,
+     "note": "🎤 가사 28줄 자동 맞춤 (확인 26줄)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 5.36,
+       "text": "Take a look at me, 'cause I could not care at all"
+      },
+      {
+       "start": 5.36,
+       "end": 8.04,
+       "text": "Do or die, you'll never make me"
+      },
+      {
+       "start": 8.04,
+       "end": 11.07,
+       "text": "Because the world will never take my heart"
+      },
+      {
+       "start": 11.07,
+       "end": 13.61,
+       "text": "Go and try, you'll never break me"
+      },
+      {
+       "start": 13.61,
+       "end": 16.33,
+       "text": "We want it all, we wanna play this part"
+      },
+      {
+       "start": 16.33,
+       "end": 18.91,
+       "text": "I won't explain or say I'm sorry"
+      },
+      {
+       "start": 18.91,
+       "end": 21.91,
+       "text": "I'm unashamed, I'm gonna show my scars"
+      },
+      {
+       "start": 21.91,
+       "end": 24.78,
+       "text": "Give a cheer for all the broken"
+      },
+      {
+       "start": 24.78,
+       "end": 27.27,
+       "text": "Listen here, because it's who we are"
+      },
+      {
+       "start": 27.27,
+       "end": 30.0,
+       "text": "Just a man, I'm not a hero"
+      }
+     ],
+     "at": "2026-11-08T10:53+09:00"
     }
    },
    "corner_name": "소식"
@@ -1209,10 +1265,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-08T10:52+09:00"
+  "at": "2026-11-08T10:53+09:00"
  },
  "queue": {
-  "next": "2026-11-08T10:54+09:00",
+  "next": "2026-11-08T10:55+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-08T02:13+09:00"
