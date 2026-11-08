@@ -1087,6 +1087,96 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-78de2c91",
+    "account": "@갈등·반응",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16271096",
+    "image": null,
+    "head": "냉부 찐팬 지수, 처음 만난 에이티즈 산·우영과 오늘 밤 냉부에",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-08T13:58+09:00",
+   "key": "3e3aba2f",
+   "by": "claude",
+   "subjects": [
+    "지수",
+    "에이티즈"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "냉부 찐팬 지수가 오늘 밤 손님으로 — 처음 만난 에이티즈 산·우영과 'ADDICTED' 챌린지",
+    "why": "속보 감지기가 '사과·갈등'으로 잡았지만 원 기사엔 논란이 없다 (KGMA 출연 기사의 '청송사과축제'). 실제로 오늘 뜨는 건 지수·산·우영 〈냉장고를 부탁해〉 96회 (오늘 20:50) — 공식 예고편으로 숏폼만."
+   },
+   "added": "claude",
+   "added_at": "2026-11-08T13:58+09:00",
+   "corner": "news",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=L_k6134qx2k\n구간: 0:05-0:38\n곡: 손님으로 나왔다\n아티스트: 냉부 찐팬 지수가\n피처링:\n후킹: \n출처: JTBC Entertainment\n자막: 자동",
+    "caption": "블랙핑크(@blackpinkofficial) 지수(@sooyaaa__)가 오늘 밤 〈냉장고를 부탁해〉에 손님으로 나옵니다.\n\n평소 즐겨 보던 프로그램에 직접 냉장고를 들고 나온 셈인데요, 함께 출연한 에이티즈(@ateez_official_) 산·우영과는 이번 녹화에서 처음 만난 사이였습니다. 세 사람은 지수의 새 싱글 'ADDICTED' 챌린지도 함께 선보였습니다.\n\n공개된 지수의 냉장고는 매운 음식으로 가득했고, 셰프들은 '매운맛 러버' 지수의 입맛을 두고 대결합니다.\n\n〈냉장고를 부탁해〉 96회는 오늘(8일) 저녁 8시 50분 JTBC에서 방송됩니다.\n\n#PLOT #지수 #블랙핑크 #에이티즈 #산 #우영",
+    "hooks": {
+     "A": "냉부 찐팬 지수가 / 손님으로 나왔다",
+     "B": "지수와 산·우영의 / 첫 만남은 냉부에서",
+     "C": "매운 것만 가득한 / 지수의 냉장고"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=L_k6134qx2k",
+     "credit": "JTBC Entertainment",
+     "range": [
+      5.0,
+      38.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — JTBC Entertainment (공식 예고편 0:05-0:38, 33초)",
+     "선공개 기사 발언은 캡션에 인용하지 않았다 — 본방(오늘 20:50) 뒤 장면을 새로 자를지 판단"
+    ],
+    "research": [
+     {
+      "title": "블랙핑크 지수+에이티즈 산X우영, 첫 만남 공개 (냉부) — 스포츠경향",
+      "link": "https://sports.khan.co.kr/article/202611080932023?pt=nv"
+     },
+     {
+      "title": "지수, '냉장고를 부탁해' 출연…에이티즈 산·우영과 신곡 챌린지 — 메디컬투데이",
+      "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=623717"
+     },
+     {
+      "title": "냉장고를 부탁해 96회 예고편 (with 지수&우영&산) — JTBC Entertainment",
+      "link": "https://www.youtube.com/watch?v=L_k6134qx2k"
+     },
+     {
+      "title": "박지현, 오늘 고척돔 KGMA 출격 — 톱스타뉴스 (감지 원문 · 논란 없음)",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16271096"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/L_k6134qx2k/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794113931/tyeo2tyytjual1jytnf6.jpg",
+     "key": "L_k6134qx2k@5.0"
+    },
+    "px": {
+     "vid": "L_k6134qx2k",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794113990/plot_studio/ucmarrcns6g5c6ndw9bl.mp4",
+     "off": 0.0,
+     "end": 83.0,
+     "full": 90.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-08T13:59+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1261,14 +1351,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-08T10:53+09:00"
+  "at": "2026-11-08T14:00+09:00"
  },
  "queue": {
-  "next": "2026-11-08T10:55+09:00",
+  "next": "2026-11-08T14:02+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-08T02:13+09:00"
@@ -1288,7 +1378,7 @@
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.67,
+    "mult": 1.68,
     "median": 0.8,
     "n": 41
    },
