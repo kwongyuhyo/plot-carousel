@@ -1,71 +1,50 @@
 {
  "schema": 1,
- "date": "2026-11-07",
- "generated_at": "2026-11-07 11:00 KST",
+ "date": "2026-11-08",
+ "generated_at": "2026-11-08 11:03 KST",
  "items": [
   {
    "source": {
-    "id": "claude:poe2-1-0",
-    "account": "Path of Exile 공식 포럼",
-    "url": "https://www.pathofexile.com/forum/view-thread/4012710",
+    "id": "claude:geforce-8800-20th",
+    "account": "NVIDIA 공식",
+    "url": "https://www.nvidia.com/en-au/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/",
     "image": null,
-    "head": "ExileCon 2026 Announcements — PoE2 12/11(PST) 무료 정식 출시 · 5·6막 · 섀도우·듀얼리스트 · 레이클라",
+    "head": "엔비디아, 8800 GTX 20주년 무료 스팀 데모 공개",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-07T11:11+09:00",
-   "key": "60346034",
+   "made_at": "2026-11-08T11:10+09:00",
+   "key": "060aa85e",
    "by": "claude",
    "subjects": [
-    "패스 오브 엑자일 2",
-    "그라인딩 기어 게임즈"
+    "지포스 8800 GTX"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "패스 오브 엑자일 2, 앞서 해보기 끝내고 12월 12일 무료 정식 출시 — 엑자일콘에서 5·6막과 새 직업 섀도우 공개",
-    "why": "7일(한국 시간) 엑자일콘 2026 기조연설 발표 · 공식 포럼 + 인벤·PCGamesN 확인 · 국내 서비스 카카오게임즈 · 기사형이라 표지 한 장"
+    "angle": "[실험] 20년 전 오늘 나온 그래픽카드를 꽂아 보는 무료 데모 — 그런데 권장 사양은 RTX 5080",
+    "why": "11/8 이 8800 GTX 출시 정확히 20년 · 그 시절 PC방 향수는 게임 안 하는 사람에게도 읽힌다"
    },
    "added": "claude",
-   "added_at": "2026-11-07T11:11+09:00",
-   "corner": "news",
+   "added_at": "2026-11-08T11:10+09:00",
+   "corner": "anniv",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈패스 오브 엑자일 2〉가 다음 달 12일 무료 게임으로 정식 출시됩니다.\n\n그라인딩 기어 게임즈가 7일(한국 시간) 엑자일콘 2026 기조연설에서 정식판의 내용을 공개했는데요, 5막과 6막이 더해져 캠페인이 끝까지 이어집니다. 새 지역 24곳과 새 보스 18종이 들어가고, 5막의 무대는 오리아스입니다.\n\n단검과 함정, 은신으로 싸우는 새 직업 섀도우가 합류하고, 듀얼리스트는 기사 어센던시와 함께 돌아옵니다. 출시 리그 '레이클라스트의 정복자들'에서는 병력을 모아 요새를 짓고, 세 진영 중 하나에 서서 성을 공략합니다.\n\nPC·콘솔 · 한국어 지원 · 12월 12일 정식 출시(한국 시간, 미국 태평양 시간 11일) · 무료\n\n#겜디핑 #패스오브엑자일2 #엑자일콘 #그라인딩기어게임즈 #카카오게임즈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794017485/qlhb8zo5wlxk2kbvsi4y.jpg\n제목: 패스 오브 엑자일 2,|다음 달 무료로 정식 출시\n부제: 5·6막을 더해 캠페인 완성\n출처: 인벤\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794017517/plot_studio/zwpflmi0wlaf09c85hbo.mp4\n소제목: \n본문: \n출처: Path of Exile\n",
-    "caption": "〈패스 오브 엑자일 2〉가 다음 달 12일 무료 게임으로 정식 출시됩니다.\n\n그라인딩 기어 게임즈가 7일(한국 시간) 엑자일콘 2026 기조연설에서 정식판의 내용을 공개했는데요, 5막과 6막이 더해져 캠페인이 끝까지 이어집니다. 새 지역 24곳과 새 보스 18종이 들어가고, 5막의 무대는 오리아스입니다.\n\n단검과 함정, 은신으로 싸우는 새 직업 섀도우가 합류하고, 듀얼리스트는 기사 어센던시와 함께 돌아옵니다. 출시 리그 '레이클라스트의 정복자들'에서는 병력을 모아 요새를 짓고, 세 진영 중 하나에 서서 성을 공략합니다.\n\nPC·콘솔 · 한국어 지원 · 12월 12일 정식 출시(한국 시간, 미국 태평양 시간 11일) · 무료\n\n#겜디핑 #패스오브엑자일2 #엑자일콘 #그라인딩기어게임즈 #카카오게임즈",
+    "form": "[카테고리]\nNews\n\n[캡션]\n20년 전 오늘 나온 그래픽카드를 직접 뜯어서 꽂아 보는 게임이 스팀에 올라왔습니다.\n\n〈지포스 8800 GTX – 전설의 20년〉은 언리얼 엔진 아티스트 딜런 브라운이 엔비디아의 지원을 받아 만든 무료 데모인데요, 2006년 분위기로 꾸민 게임방에서 상자를 열고, 카드를 살펴보고, 그 시절 PC 본체에 장착하는 것이 줄거리의 전부입니다. 방 곳곳에는 지포스 역사를 담은 이스터 에그가 숨어 있습니다.\n\n묘한 건 사양입니다. 20년 전 카드를 꽂는 장면을 패스 트레이싱으로 그리느라 최소 사양이 RTX 4070, 권장은 RTX 5080이고 메모리는 32GB가 필요합니다.\n\n무료 · PC(스팀) · 한국어 미지원(영어만) · 8800 GTX 출시일 2006년 11월 8일\n\n#겜디핑 #지포스 #엔비디아 #8800GTX #스팀\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794103860/xu6d8uofozn5plxydpix.jpg\n제목: 20년 전 그래픽카드를|꽂아 보는 게임\n부제: 지포스 8800 GTX 20주년 무료 데모\n출처: NVIDIA\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794103882/plot_studio/oxvmc6kk1v7bmuexcsdv.mp4\n소제목: \n본문: \n출처: NVIDIA GeForce\n",
+    "caption": "20년 전 오늘 나온 그래픽카드를 직접 뜯어서 꽂아 보는 게임이 스팀에 올라왔습니다.\n\n〈지포스 8800 GTX – 전설의 20년〉은 언리얼 엔진 아티스트 딜런 브라운이 엔비디아의 지원을 받아 만든 무료 데모인데요, 2006년 분위기로 꾸민 게임방에서 상자를 열고, 카드를 살펴보고, 그 시절 PC 본체에 장착하는 것이 줄거리의 전부입니다. 방 곳곳에는 지포스 역사를 담은 이스터 에그가 숨어 있습니다.\n\n묘한 건 사양입니다. 20년 전 카드를 꽂는 장면을 패스 트레이싱으로 그리느라 최소 사양이 RTX 4070, 권장은 RTX 5080이고 메모리는 32GB가 필요합니다.\n\n무료 · PC(스팀) · 한국어 미지원(영어만) · 8800 GTX 출시일 2006년 11월 8일\n\n#겜디핑 #지포스 #엔비디아 #8800GTX #스팀",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017485/qlhb8zo5wlxk2kbvsi4y.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/07/news/i1393667843.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017488/gqoble2yyb79ldfnuu6k.jpg",
-      "credit": "PCGamesN",
-      "from": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2026/11/path-of-exile-2-poe2-1-0-release-date-all-details-exilecon-2026.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017492/sqjgkepymjqc64gqhk72.jpg",
-      "credit": "Outputlag",
-      "from": "https://outputlag.com/wp-content/uploads/2026/11/path-of-exile-2-exilecon-2026-2.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103860/xu6d8uofozn5plxydpix.jpg",
+      "credit": "NVIDIA",
+      "from": "https://www.nvidia.com/content/dam/en-zz/nvidiaweb/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo-ogimage.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017485/qlhb8zo5wlxk2kbvsi4y.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/07/news/i1393667843.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017488/gqoble2yyb79ldfnuu6k.jpg",
-      "credit": "PCGamesN",
-      "from": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2026/11/path-of-exile-2-poe2-1-0-release-date-all-details-exilecon-2026.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017492/sqjgkepymjqc64gqhk72.jpg",
-      "credit": "Outputlag",
-      "from": "https://outputlag.com/wp-content/uploads/2026/11/path-of-exile-2-exilecon-2026-2.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103860/xu6d8uofozn5plxydpix.jpg",
+      "credit": "NVIDIA",
+      "from": "https://www.nvidia.com/content/dam/en-zz/nvidiaweb/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo-ogimage.jpg"
      }
     ],
     "shape": "맥락",
@@ -73,231 +52,70 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "패스 오브 엑자일 2,|다음 달 무료로 정식 출시",
-      "sub": "5·6막을 더해 캠페인 완성"
+      "title": "20년 전 그래픽카드를|꽂아 보는 게임",
+      "sub": "지포스 8800 GTX 20주년 무료 데모"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "8800 GTX 20주년,|권장 사양은 RTX 5080",
+      "sub": "엔비디아 무료 스팀 데모"
      }
     ],
     "issues": [],
     "confirm": [
-     "한국 출시일 12일은 카카오게임즈의 8월 발표(한국 시간) 기준 — 엑자일콘 발표는 '12월 11일(PST)'뿐이라 국내 시각은 카카오게임즈 공지로 한 번 대조",
-     "숏폼 구간 0:30-0:55 — 자막상 0:45 'A return to Oriath' 대사가 들어감(검증 데스크 확인), 화면 구성은 따로 확인 필요 · 끝줄 'PC·콘솔'은 카카오게임즈 보도자료 기준"
+     "스팀 평가 '복합적'(242건 중 49%)은 11/8 오전 기준 — 올리기 전 스팀에서 다시 확인",
+     "숏폼 구간 0:10-0:35 은 영상을 직접 보지 않고 잡음 — 카드 장착 장면이 들어가는지 확인"
     ],
     "research": [
      {
-      "title": "ExileCon 2026 Announcements (Path of Exile 공식 포럼)",
-      "link": "https://www.pathofexile.com/forum/view-thread/4012710"
+      "title": "NVIDIA — 8800 GTX 20 year celebration Steam demo",
+      "link": "https://www.nvidia.com/en-au/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/"
      },
      {
-      "title": "[종합] 'POE2', 12월 11일 정식 출시…6막 완성부터 대규모 엔드게임 개편까지 (인벤)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323107"
+      "title": "Steam — GeForce 8800 GTX - 20 Years of a Legend",
+      "link": "https://store.steampowered.com/app/4910040/"
      },
      {
-      "title": "Path of Exile 2's 1.0 launch brings two new classes, the campaign finale (PCGamesN)",
-      "link": "https://www.pcgamesn.com/path-of-exile-2/exilecon-2026"
+      "title": "PC Guide — unboxing simulator on Steam",
+      "link": "https://www.pcguide.com/news/nvidia-announces-geforce-8800-gtx-unboxing-simulator-available-on-steam-to-celebrate-20-years-of-a-legend/"
      },
      {
-      "title": "'패스 오브 엑자일 2', 12월 12일 정식 출시…무료 전환 (경향게임스)",
-      "link": "https://www.khgames.co.kr/news/articleView.html?idxno=309289"
-     },
-     {
-      "title": "Path of Exile 2: A Return to Oriath | Act 5 & 6 Trailer (Path of Exile 공식)",
-      "link": "https://www.youtube.com/watch?v=GiJ_2QdjoWg"
+      "title": "게임메카 — 20년 전 지포스 8800 GTX 체험하는 게임",
+      "link": "https://www.gamemeca.com/view.php?gid=1783099"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017561/y6qtzd5mwoqqvjuwamsg.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017565/azabkvhmp0u5th9ldhwr.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017561/sw3khox07ijxezbt9qwl.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103945/laolotoytgsa1dmehyhg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103948/sgkvymuz6p0ubyioteiw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103944/v6ssthladybabugvwkww.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017561/y6qtzd5mwoqqvjuwamsg.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103945/laolotoytgsa1dmehyhg.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-07T11:12+09:00",
+     "at": "2026-11-08T11:12+09:00",
      "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794017563/plot_studio/t3gfxi4nln36wcmimvys.mp4"
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794103946/plot_studio/jug6hbr3m0rkiqdkhqer.mp4"
      },
      "v": {
-      "A": "25e10072"
+      "A": "e1a9511f"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=GiJ_2QdjoWg\n구간: 0:30-0:55\n곡: 마지막 두 막이 공개됐다\n아티스트: 패스 오브 엑자일 2의\n피처링:\n후킹: \n출처: Path of Exile\n자막: 자동",
-    "caption": "〈패스 오브 엑자일 2〉의 5막과 6막 트레일러입니다.\n\n그라인딩 기어 게임즈가 엑자일콘 2026에서 공개한 영상인데요, 두 막이 더해지며 캠페인이 완성되고, 5막의 무대는 오리아스입니다. 새 직업 섀도우도 함께 합류합니다.\n\n앞서 해보기를 끝내고 무료로 전환됩니다.\n\nPC·콘솔 · 한국어 지원 · 12월 12일 정식 출시(한국 시간) · 무료\n\n#겜디핑 #패스오브엑자일2 #엑자일콘 #그라인딩기어게임즈 #카카오게임즈",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=xPsc2QOzh0I\n구간: 0:10-0:35\n곡: 직접 꽂아 보는 게임\n아티스트: 20년 전 그래픽카드를\n피처링:\n후킹: \n출처: NVIDIA GeForce\n자막: 자동",
+    "caption": "20년 전 오늘 나온 지포스 8800 GTX를 직접 뜯어서 꽂아 보는 무료 데모가 스팀에 올라왔습니다.\n\n언리얼 엔진 아티스트 딜런 브라운이 엔비디아의 지원을 받아 만든 〈지포스 8800 GTX – 전설의 20년〉인데요, 2006년 분위기의 게임방에서 상자를 열고 그 시절 PC에 카드를 장착합니다. 그 장면을 패스 트레이싱으로 그리느라 권장 사양은 RTX 5080입니다.\n\n무료 · PC(스팀) · 한국어 미지원\n\n#겜디핑 #지포스 #엔비디아 #8800GTX #스팀",
     "hooks": {
-     "A": "패스 오브 엑자일 2의 / 마지막 두 막이 공개됐다",
-     "B": "오리아스로 돌아가는 / 패스 오브 엑자일 2 5막"
+     "A": "20년 전 그래픽카드를 / 직접 꽂아 보는 게임",
+     "B": "8800 GTX 20주년, / 권장 사양은 RTX 5080",
+     "C": "2006년 PC방에서 / 새 그래픽카드 뜯는 장면"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=GiJ_2QdjoWg",
-     "credit": "Path of Exile",
-     "range": [
-      30.0,
-      55.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "한국 출시일 12일은 카카오게임즈의 8월 발표(한국 시간) 기준 — 엑자일콘 발표는 '12월 11일(PST)'뿐이라 국내 시각은 카카오게임즈 공지로 한 번 대조",
-     "숏폼 구간 0:30-0:55 — 자막상 0:45 'A return to Oriath' 대사가 들어감(검증 데스크 확인), 화면 구성은 따로 확인 필요 · 끝줄 'PC·콘솔'은 카카오게임즈 보도자료 기준"
-    ],
-    "research": [
-     {
-      "title": "ExileCon 2026 Announcements (Path of Exile 공식 포럼)",
-      "link": "https://www.pathofexile.com/forum/view-thread/4012710"
-     },
-     {
-      "title": "[종합] 'POE2', 12월 11일 정식 출시…6막 완성부터 대규모 엔드게임 개편까지 (인벤)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323107"
-     },
-     {
-      "title": "Path of Exile 2's 1.0 launch brings two new classes, the campaign finale (PCGamesN)",
-      "link": "https://www.pcgamesn.com/path-of-exile-2/exilecon-2026"
-     },
-     {
-      "title": "'패스 오브 엑자일 2', 12월 12일 정식 출시…무료 전환 (경향게임스)",
-      "link": "https://www.khgames.co.kr/news/articleView.html?idxno=309289"
-     },
-     {
-      "title": "Path of Exile 2: A Return to Oriath | Act 5 & 6 Trailer (Path of Exile 공식)",
-      "link": "https://www.youtube.com/watch?v=GiJ_2QdjoWg"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/GiJ_2QdjoWg/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017572/mjth79hxngzk2c2guqel.jpg",
-     "key": "GiJ_2QdjoWg@30.0"
-    },
-    "px": {
-     "vid": "GiJ_2QdjoWg",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794017672/plot_studio/fflhs4wudyuetfb7vxqr.mp4",
-     "off": 0.0,
-     "end": 100.0,
-     "full": 148.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-07T11:15+09:00"
-    }
-   },
-   "corner_name": "소식",
-   "pick": {
-    "rank": 2,
-    "why": "오늘 새벽 엑자일콘의 가장 큰 발표 · 국내 이용자 많고 무료 전환이라 저장·공유가 나올 꼴",
-    "at": "2026-11-07T19:11+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:aksun-1-0",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1782733",
-    "image": null,
-    "head": "한국 무속 기반 로그라이크 '악선' 27일 정식 출시",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-07T11:11+09:00",
-   "key": "edac709a",
-   "by": "claude",
-   "subjects": [
-    "악선",
-    "Wayway"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "[실험] 한국 무속으로 만든 핵앤슬래시 — 국산 인디 〈악선〉 27일 정식 출시",
-    "why": "한국 개발사 · 한국 설화 소재 · 7월 앞서 해보기 뒤 1.0 날짜 확정 (게임메카 · 개발사 보도자료 · 스팀 페이지)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-07T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n한국 무속을 바탕으로 한 액션 게임 〈악선〉이 27일 정식 출시됩니다.\n\n한국 개발사 Wayway가 만든 핵앤슬래시 로그라이트인데요, 한국 설화로 빚은 저주받은 세계를 무대로 다섯 원소 체계의 유물을 엮어 빌드를 짭니다. 적의 공격을 읽고 때맞춰 받아치는 전투가 중심입니다.\n\n지난 7월 스팀 앞서 해보기로 먼저 나왔고, 정식판에는 마지막 장과 최종 보스, 새 무기와 엔드게임 콘텐츠가 더해집니다.\n\nPC(스팀) · 한국어 지원 · 11월 27일 정식 출시\n\n#겜디핑 #악선 #인디게임 #한국인디게임 #로그라이트\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794017520/gffkbisgtrv9qb0fthp6.jpg\n제목: 무속으로 만든 로그라이트,|악선 27일 정식 출시\n부제: 한국 개발사가 만든 핵앤슬래시\n출처: 게임메카\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794017543/plot_studio/tjp1ianufab6jowauayx.mp4\n소제목: \n본문: \n출처: Human Qube Games\n",
-    "caption": "한국 무속을 바탕으로 한 액션 게임 〈악선〉이 27일 정식 출시됩니다.\n\n한국 개발사 Wayway가 만든 핵앤슬래시 로그라이트인데요, 한국 설화로 빚은 저주받은 세계를 무대로 다섯 원소 체계의 유물을 엮어 빌드를 짭니다. 적의 공격을 읽고 때맞춰 받아치는 전투가 중심입니다.\n\n지난 7월 스팀 앞서 해보기로 먼저 나왔고, 정식판에는 마지막 장과 최종 보스, 새 무기와 엔드게임 콘텐츠가 더해집니다.\n\nPC(스팀) · 한국어 지원 · 11월 27일 정식 출시\n\n#겜디핑 #악선 #인디게임 #한국인디게임 #로그라이트",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017520/gffkbisgtrv9qb0fthp6.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/782/733/gm198192_thumb__1.0__.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017520/gffkbisgtrv9qb0fthp6.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/782/733/gm198192_thumb__1.0__.webp"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "무속으로 만든 로그라이트,|악선 27일 정식 출시",
-      "sub": "한국 개발사가 만든 핵앤슬래시"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 숏폼 영상 올린 채널은 'Human Qube Games'(스팀·보도자료의 개발·배급은 Wayway Inc) — 크레딧을 채널명으로 고쳤으니 두 이름의 관계(퍼블리셔·공식 채널 여부) 확인 · 한국어 지원은 스팀 언어 목록에서만 확인(지원 범위 표시 불명)",
-     "보도자료의 '한국 개발자 여섯 명'은 한 곳뿐이라 뺐습니다 — 확인되면 표지 부제로 쓸 만한 각도 · 정식판 가격은 미정(앞서 해보기 13,000원보다 오를 수 있다고 스팀에 적힘)",
-     "숏폼 영상(ZCnOMyxk-b0)은 보도자료에 붙은 공식 트레일러 — 올린 채널이 개발사 채널인지, 구간 0:10-0:35 장면 확인"
-    ],
-    "research": [
-     {
-      "title": "한국 무속 기반 로그라이크 '악선' 27일 정식 출시 (게임메카)",
-      "link": "https://www.gamemeca.com/view.php?gid=1782733"
-     },
-     {
-      "title": "Korean Shamanism-Inspired Action Roguelite Aksun Launches in 1.0 on November 27 (개발사 보도자료)",
-      "link": "https://www.gamespress.com/ko-KR/Korean-Shamanism-Inspired-Action-Roguelite-Aksun-Launches-in-10-on-Nov"
-     },
-     {
-      "title": "Aksun (Steam)",
-      "link": "https://store.steampowered.com/app/3129360/Aksun/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017583/aorcsfpipco14w5zwuhh.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017587/hdolhpbdlrrnkepnmecz.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017583/mb6fxivz2wlcezdw1abr.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017583/aorcsfpipco14w5zwuhh.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-07T11:13+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794017585/plot_studio/rgzqkjwnjl2quegkjmb9.mp4"
-     },
-     "v": {
-      "A": "d9645ccf"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=ZCnOMyxk-b0\n구간: 0:10-0:35\n곡: 핵앤슬래시가 나온다\n아티스트: 한국 무속으로 만든\n피처링:\n후킹: \n출처: Human Qube Games\n자막: 자동",
-    "caption": "한국 무속을 바탕으로 한 액션 게임 〈악선〉이 27일 정식 출시됩니다.\n\n한국 개발사 Wayway가 만든 핵앤슬래시 로그라이트인데요, 한국 설화로 빚은 저주받은 세계에서 적의 공격을 읽고 받아치며 싸웁니다.\n\n정식판에는 마지막 장과 최종 보스가 더해집니다.\n\nPC(스팀) · 한국어 지원 · 11월 27일 정식 출시\n\n#겜디핑 #악선 #인디게임 #한국인디게임 #로그라이트",
-    "hooks": {
-     "A": "한국 무속으로 만든 / 핵앤슬래시가 나온다",
-     "B": "국산 인디 악선이 / 27일 정식 출시된다"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=ZCnOMyxk-b0",
-     "credit": "Human Qube Games",
+     "url": "https://www.youtube.com/watch?v=xPsc2QOzh0I",
+     "credit": "NVIDIA GeForce",
      "range": [
       10.0,
       35.0
@@ -309,177 +127,94 @@
     },
     "issues": [],
     "confirm": [
-     "[검증] 숏폼 영상 올린 채널은 'Human Qube Games'(스팀·보도자료의 개발·배급은 Wayway Inc) — 크레딧을 채널명으로 고쳤으니 두 이름의 관계(퍼블리셔·공식 채널 여부) 확인 · 한국어 지원은 스팀 언어 목록에서만 확인(지원 범위 표시 불명)",
-     "보도자료의 '한국 개발자 여섯 명'은 한 곳뿐이라 뺐습니다 — 확인되면 표지 부제로 쓸 만한 각도 · 정식판 가격은 미정(앞서 해보기 13,000원보다 오를 수 있다고 스팀에 적힘)",
-     "숏폼 영상(ZCnOMyxk-b0)은 보도자료에 붙은 공식 트레일러 — 올린 채널이 개발사 채널인지, 구간 0:10-0:35 장면 확인"
+     "스팀 평가 '복합적'(242건 중 49%)은 11/8 오전 기준 — 올리기 전 스팀에서 다시 확인",
+     "숏폼 구간 0:10-0:35 은 영상을 직접 보지 않고 잡음 — 카드 장착 장면이 들어가는지 확인"
     ],
     "research": [
      {
-      "title": "한국 무속 기반 로그라이크 '악선' 27일 정식 출시 (게임메카)",
-      "link": "https://www.gamemeca.com/view.php?gid=1782733"
+      "title": "NVIDIA — 8800 GTX 20 year celebration Steam demo",
+      "link": "https://www.nvidia.com/en-au/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/"
      },
      {
-      "title": "Korean Shamanism-Inspired Action Roguelite Aksun Launches in 1.0 on November 27 (개발사 보도자료)",
-      "link": "https://www.gamespress.com/ko-KR/Korean-Shamanism-Inspired-Action-Roguelite-Aksun-Launches-in-10-on-Nov"
+      "title": "Steam — GeForce 8800 GTX - 20 Years of a Legend",
+      "link": "https://store.steampowered.com/app/4910040/"
      },
      {
-      "title": "Aksun (Steam)",
-      "link": "https://store.steampowered.com/app/3129360/Aksun/"
+      "title": "PC Guide — unboxing simulator on Steam",
+      "link": "https://www.pcguide.com/news/nvidia-announces-geforce-8800-gtx-unboxing-simulator-available-on-steam-to-celebrate-20-years-of-a-legend/"
+     },
+     {
+      "title": "게임메카 — 20년 전 지포스 8800 GTX 체험하는 게임",
+      "link": "https://www.gamemeca.com/view.php?gid=1783099"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/ZCnOMyxk-b0/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/xPsc2QOzh0I/maxresdefault.jpg",
     "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017591/c15uthqq4imkmdotfcmh.jpg",
-     "key": "ZCnOMyxk-b0@10.0"
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103953/go1xbewlsxyekzncixmk.jpg",
+     "key": "xPsc2QOzh0I@10.0"
     },
     "px": {
-     "vid": "ZCnOMyxk-b0",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794017729/plot_studio/vaczsnt641dcchgh0qgy.mp4",
+     "vid": "xPsc2QOzh0I",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794104030/plot_studio/zmtdhvfqurhcqnb9emjf.mp4",
      "off": 0.0,
-     "end": 78.0,
-     "full": 78.0
+     "end": 53.0,
+     "full": 53.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-07T11:15+09:00"
+     "at": "2026-11-08T11:16+09:00"
     }
    },
-   "corner_name": "소식"
+   "pick": {
+    "rank": 3,
+    "why": "오늘이 정확히 20주년 — 20년 전 카드에 RTX 5080 권장이라는 아이러니",
+    "at": "2026-11-08T11:10+09:00"
+   },
+   "corner_name": "그날의 앨범",
+   "corner_no": 1
   },
   {
    "source": {
-    "id": "claude:nagoshi-studio",
-    "account": "Game Informer",
-    "url": "https://gameinformer.com/2026/11/02/yakuza-creator-toshiro-nagoshis-studio-has-officially-shut-down-ending-gang-of-dragons",
+    "id": "claude:potato-please",
+    "account": "Steam",
+    "url": "https://store.steampowered.com/app/5266240/",
     "image": null,
-    "head": "Yakuza Creator Toshihiro Nagoshi's Studio Has Officially Shut Down",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-07T11:11+09:00",
-   "key": "3d84372e",
-   "by": "claude",
-   "subjects": [
-    "나고시 토시히로",
-    "나고시 스튜디오",
-    "갱 오브 드래곤"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈용과 같이〉 만든 나고시 토시히로의 나고시 스튜디오 해산 — 신작 〈갱 오브 드래곤〉 앞날 불투명",
-    "why": "10/31 해산 결의 · 11/2 일본 관보 공고 (Game Informer · Insider Gaming) · 겜디핑에선 아직 안 다룸 · 기사형이라 표지 한 장"
-   },
-   "added": "claude",
-   "added_at": "2026-11-07T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈용과 같이〉 시리즈를 만든 나고시 토시히로의 나고시 스튜디오가 해산했습니다.\n\n일본 관보에 실린 공고로 10월 31일 해산이 결정된 사실이 알려졌는데요, 2021년 넷이즈의 지원으로 문을 연 지 약 5년 만입니다. 올해 3월에는 넷이즈가 이 스튜디오에 대한 자금 지원을 끊는다는 보도가 나왔습니다.\n\n더 게임 어워드 2025에서 처음 공개된 신작 〈갱 오브 드래곤〉의 앞날도 불투명해졌습니다.\n\n#겜디핑 #나고시토시히로 #용과같이 #갱오브드래곤 #넷이즈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794017548/vtanmc7kfydqncexh3jh.jpg\n제목: 〈용과 같이〉 나고시의|스튜디오가 해산했다\n부제: 신작 〈갱 오브 드래곤〉 앞날은 불투명\n출처: Game Informer\n",
-    "caption": "〈용과 같이〉 시리즈를 만든 나고시 토시히로의 나고시 스튜디오가 해산했습니다.\n\n일본 관보에 실린 공고로 10월 31일 해산이 결정된 사실이 알려졌는데요, 2021년 넷이즈의 지원으로 문을 연 지 약 5년 만입니다. 올해 3월에는 넷이즈가 이 스튜디오에 대한 자금 지원을 끊는다는 보도가 나왔습니다.\n\n더 게임 어워드 2025에서 처음 공개된 신작 〈갱 오브 드래곤〉의 앞날도 불투명해졌습니다.\n\n#겜디핑 #나고시토시히로 #용과같이 #갱오브드래곤 #넷이즈",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017548/vtanmc7kfydqncexh3jh.jpg",
-      "credit": "Game Informer",
-      "from": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/11/02/c3d2e679/Gang%20of%20Dragon.jpg.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017548/vtanmc7kfydqncexh3jh.jpg",
-      "credit": "Game Informer",
-      "from": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/11/02/c3d2e679/Gang%20of%20Dragon.jpg.webp"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "〈용과 같이〉 나고시의|스튜디오가 해산했다",
-      "sub": "신작 〈갱 오브 드래곤〉 앞날은 불투명"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] '청산 절차 진입'(Insider Gaming만)·'새 투자처를 못 찾음'(GI 추정)·'양측 입장 없음'(근거 없음)은 캡션에서 뺐고, '3월 자금 지원 중단'은 보도 기준으로 낮춤 · VGC 원문은 403으로 열지 못함",
-     "닷새 지난 소식(관보 11/2) — 오늘 올릴지 판단 · 숏폼은 해산 소식에 신작 트레일러를 붙이면 극적으로 읽혀 쓰지 않았습니다",
-     "〈갱 오브 드래곤〉 스팀 표기가 매체마다 '취소'(GI)·'출시 예정'(Insider)으로 갈려 '불투명'까지만 썼습니다"
-    ],
-    "research": [
-     {
-      "title": "Yakuza Creator Toshiro Nagoshi's Studio Has Officially Shut Down (Game Informer)",
-      "link": "https://gameinformer.com/2026/11/02/yakuza-creator-toshiro-nagoshis-studio-has-officially-shut-down-ending-gang-of-dragons"
-     },
-     {
-      "title": "Nagoshi Studio shut down, official (Insider Gaming)",
-      "link": "https://insider-gaming.com/nagoshi-studio-shut-down-official/"
-     },
-     {
-      "title": "Nagoshi Studio reportedly facing closure after NetEase pulls funding (VGC)",
-      "link": "https://www.videogameschronicle.com/news/nagoshi-studio-reportedly-facing-closure-after-netease-pulls-gang-of-dragon-funding"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017594/lwoydhokyhohhbtfuowt.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017594/y8krckeb3g1wbc8oa9bw.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794017594/lwoydhokyhohhbtfuowt.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-07T11:13+09:00",
-     "v": {
-      "A": "a7d3bc06"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:stellarblade-switch2",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323053",
-    "image": null,
-    "head": "어디서나 이브와 함께, '스텔라 블레이드' 스위치2 출시",
+    "head": "포테이토 플리즈, 스팀 매우 긍정적",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-07T19:11+09:00",
-   "key": "bad38f4a",
+   "made_at": "2026-11-08T11:10+09:00",
+   "key": "f01c7174",
    "by": "claude",
    "subjects": [
-    "스텔라 블레이드",
-    "시프트업"
+    "포테이토 플리즈"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "한국 개발사 시프트업의 〈스텔라 블레이드〉, 6일 스위치2로 출시 — 시리즈 첫 닌텐도 콘솔판",
-    "why": "11/6 전 세계 동시 출시 · 인벤·아주경제·엑스포츠뉴스·파이낸셜투데이 확인 · 한국 개발사 · 기사형이라 표지 한 장"
+    "angle": "감자만 깎는 1인칭 게임이 스팀 '매우 긍정적' — 군대를 먹일 감자를 깎다 결국 공장을 돌리게 된다",
+    "why": "설명 한 줄로 웃기고 궁금한 인디 화제작 · 한국어 지원 · 1만 원 안팎"
    },
    "added": "claude",
-   "added_at": "2026-11-07T19:11+09:00",
+   "added_at": "2026-11-08T11:10+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈스텔라 블레이드〉가 6일 닌텐도 스위치2로 출시됐습니다.\n\n한국 개발사 시프트업이 만든 액션 게임인데요, 2024년 4월 PS5로 먼저 나와 PC를 거쳐 처음으로 닌텐도 콘솔에 왔습니다. 스위치2판 이름은 〈스텔라 블레이드 컴플리트 에디션〉으로, 본편에 〈니어: 오토마타〉·〈승리의 여신: 니케〉 콜라보 DLC가 함께 담겼습니다.\n\nTV에 꽂아도, 손에 들고도 할 수 있고, 조이콘2 모션 조작도 들어갔습니다. 같은 날 베요네타 콜라보 의상 4종이 스위치2와 PS5, PC에 무료로 풀렸습니다.\n\n닌텐도 스위치2 · 11월 6일 출시 · 실물판은 카트리지에 게임 전체 수록 · e숍 무료 체험판\n\n#겜디핑 #스텔라블레이드 #시프트업 #닌텐도스위치2 #베요네타\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046271/vkb67yyq28gkl8awx065.jpg\n제목: 스텔라 블레이드,|스위치2로 나왔다\n부제: 한국 개발사 시프트업의 첫 닌텐도 콘솔판\n출처: \n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794046293/plot_studio/u3g4aojrzlwohqolb0ax.mp4\n소제목: \n본문: \n출처: SHIFT UP Official Channel\n",
-    "caption": "〈스텔라 블레이드〉가 6일 닌텐도 스위치2로 출시됐습니다.\n\n한국 개발사 시프트업이 만든 액션 게임인데요, 2024년 4월 PS5로 먼저 나와 PC를 거쳐 처음으로 닌텐도 콘솔에 왔습니다. 스위치2판 이름은 〈스텔라 블레이드 컴플리트 에디션〉으로, 본편에 〈니어: 오토마타〉·〈승리의 여신: 니케〉 콜라보 DLC가 함께 담겼습니다.\n\nTV에 꽂아도, 손에 들고도 할 수 있고, 조이콘2 모션 조작도 들어갔습니다. 같은 날 베요네타 콜라보 의상 4종이 스위치2와 PS5, PC에 무료로 풀렸습니다.\n\n닌텐도 스위치2 · 11월 6일 출시 · 실물판은 카트리지에 게임 전체 수록 · e숍 무료 체험판\n\n#겜디핑 #스텔라블레이드 #시프트업 #닌텐도스위치2 #베요네타",
+    "form": "[카테고리]\nNews\n\n[캡션]\n감자를 한 알씩 손으로 깎는 게임이 스팀에서 '매우 긍정적' 평가를 받고 있습니다.\n\n〈포테이토 플리즈〉는 골든 혼 스튜디오가 4일 내놓은 1인칭 감자 깎기 게임인데요, 나라가 맡긴 임무는 하나, 군대를 먹일 감자를 준비하는 것입니다. 처음엔 칼 한 자루와 물통, 그리고 산처럼 쌓인 감자뿐입니다.\n\n물리로 움직이는 감자를 손으로 돌려 가며 깎아 물통에 넣고, 납품한 대가로 더 좋은 도구를 사다 보면 결국 기계로 작업을 자동화하게 됩니다.\n\n11월 4일(한국 시간) 출시 · PC(스팀) · 1만 1천 원(15일까지 10% 할인 9,900원) · 한국어 지원 · 스팀 평가 88% 긍정(8일 기준)\n\n#겜디핑 #포테이토플리즈 #인디게임 #스팀 #감자\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794103886/g99tlbftccerpwohxhhh.jpg\n제목: 감자만 깎는 게임이|스팀 '매우 긍정적'\n부제: 포테이토 플리즈\n출처: 게임메카\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794103911/plot_studio/rcrzvuyta2qeovojml7j.mp4\n소제목: \n본문: \n출처: Golden Horn Studios\n",
+    "caption": "감자를 한 알씩 손으로 깎는 게임이 스팀에서 '매우 긍정적' 평가를 받고 있습니다.\n\n〈포테이토 플리즈〉는 골든 혼 스튜디오가 4일 내놓은 1인칭 감자 깎기 게임인데요, 나라가 맡긴 임무는 하나, 군대를 먹일 감자를 준비하는 것입니다. 처음엔 칼 한 자루와 물통, 그리고 산처럼 쌓인 감자뿐입니다.\n\n물리로 움직이는 감자를 손으로 돌려 가며 깎아 물통에 넣고, 납품한 대가로 더 좋은 도구를 사다 보면 결국 기계로 작업을 자동화하게 됩니다.\n\n11월 4일(한국 시간) 출시 · PC(스팀) · 1만 1천 원(15일까지 10% 할인 9,900원) · 한국어 지원 · 스팀 평가 88% 긍정(8일 기준)\n\n#겜디핑 #포테이토플리즈 #인디게임 #스팀 #감자",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046271/vkb67yyq28gkl8awx065.jpg",
-      "credit": "신뢰"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103886/g99tlbftccerpwohxhhh.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/108/gm121764_pjh261106-2.webp"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046271/vkb67yyq28gkl8awx065.jpg",
-      "credit": "신뢰"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103886/g99tlbftccerpwohxhhh.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/108/gm121764_pjh261106-2.webp"
      }
     ],
     "shape": "맥락",
@@ -487,67 +222,259 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "스텔라 블레이드,|스위치2로 나왔다",
-      "sub": "한국 개발사 시프트업의 첫 닌텐도 콘솔판"
+      "title": "감자만 깎는 게임이|스팀 '매우 긍정적'",
+      "sub": "포테이토 플리즈"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "칼 한 자루로 시작해|감자 공장까지",
+      "sub": "포테이토 플리즈"
      }
     ],
     "issues": [],
     "confirm": [
-     "국내 가격 69,800원은 11번가 예약 페이지·해외 사이트 한국어 기사뿐이라 뺐습니다 · 한국어 지원도 스위치2판 기준 확인 못 해 끝줄에서 뺌 — 닌텐도 e숍에서 확인되면 끝줄에 더하기",
-     "숏폼 구간 0:20-0:45 는 화면 확인 안 함 — 실사 트레일러라 이브가 나오는 장면인지 보고 고르기"
+     "[검증] 스팀 한국어 지원이 자막인지 인터페이스인지 칸 이름을 못 읽어 '한국어 지원'으로만 적음 · 평가 건수는 검증 때 1,286건으로 보여(초안 1,296건) 캡션에서 건수를 뺌",
+     "게임메카가 쓴 '유저 건의 직후 손 떨림 완화 옵션 추가'·'아들과 편지' 는 다른 출처로 확인 못 해 뺐음",
+     "평가 수치(1,296건 중 88%)·할인가는 11/8 오전 스팀 기준"
     ],
     "research": [
      {
-      "title": "어디서나 이브와 함께, '스텔라 블레이드' 스위치2 출시 (인벤)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323053"
+      "title": "Steam — Potato Please",
+      "link": "https://store.steampowered.com/app/5266240/"
      },
      {
-      "title": "시프트업, '스텔라 블레이드' 닌텐도 스위치2 버전 글로벌 출시 (아주경제)",
-      "link": "https://www.ajunews.com/view/20261106092634906"
+      "title": "게임메카 — 감자 깎는 게임, 매우 긍정적",
+      "link": "https://www.gamemeca.com/view.php?gid=1783108"
      },
      {
-      "title": "니어·니케·베요네타 콜라보 전부 담았다... '스텔라 블레이드', 닌텐도 스위치 2 컴플리트 에디션 6일 출시 (엑스포츠뉴스)",
-      "link": "https://www.xportsnews.com/article/2216233"
+      "title": "電ファミニコゲーマー — Potato Please 11/4 発売",
+      "link": "https://news.denfaminicogamer.jp/news/2611032g"
      },
      {
-      "title": "시프트업 '스텔라 블레이드', 스위치2 버전 출시...무료체험판도 제공 (파이낸셜투데이)",
-      "link": "https://www.ftoday.co.kr/news/articleView.html?idxno=369122"
+      "title": "80.lv — peel an endless pile of potatoes",
+      "link": "https://80.lv/articles/in-this-physics-based-game-your-job-is-to-peel-an-endless-pile-of-potatoes"
      },
      {
-      "title": "Stellar Blade - Live Action Launch Trailer - Nintendo Switch 2 (SHIFT UP 공식)",
-      "link": "https://www.youtube.com/watch?v=trMkpK0EwSo"
+      "title": "YouTube — Potato Please Official Release Trailer",
+      "link": "https://www.youtube.com/watch?v=le8aaHxQYdI"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046333/hltekqo7rsabddqojnrk.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046336/x4pl4jmgbj0zxgcya5ez.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046332/chlrms08f62plndlz05x.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103964/sahzdvygouwdofx6a7l2.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103969/pecolfehfcjsriwud7fn.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103964/skiexc99gkzsosbgyzon.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046333/hltekqo7rsabddqojnrk.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103964/sahzdvygouwdofx6a7l2.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-07T19:12+09:00",
+     "at": "2026-11-08T11:12+09:00",
      "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046334/plot_studio/clgbrpvyxqfdmcxtxxbx.mp4"
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794103966/plot_studio/e2kvtjngfyfukvml1gc3.mp4"
      },
      "v": {
-      "A": "2577216c"
+      "A": "b3c9c9fc"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=trMkpK0EwSo\n구간: 0:20-0:45\n곡: 스위치2로 나왔다\n아티스트: 스텔라 블레이드가\n피처링:\n후킹: \n출처: SHIFT UP Official Channel\n자막: 자동",
-    "caption": "〈스텔라 블레이드〉 스위치2판의 출시 트레일러입니다.\n\n한국 개발사 시프트업이 6일 내놓은 첫 닌텐도 콘솔판인데요, 본편에 〈니어: 오토마타〉·〈승리의 여신: 니케〉 콜라보 DLC가 함께 담겼습니다.\n\nTV에서도, 손에 들고도 할 수 있습니다.\n\n닌텐도 스위치2 · 11월 6일 출시 · e숍 무료 체험판\n\n#겜디핑 #스텔라블레이드 #시프트업 #닌텐도스위치2 #베요네타",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=le8aaHxQYdI\n구간: 0:05-0:30\n곡: 감자 공장까지\n아티스트: 칼 한 자루로 시작해\n피처링:\n후킹: \n출처: Golden Horn Studios\n자막: 자동",
+    "caption": "감자를 한 알씩 손으로 깎는 게임이 스팀에서 '매우 긍정적' 평가를 받고 있습니다.\n\n골든 혼 스튜디오의 〈포테이토 플리즈〉인데요, 군대를 먹일 감자를 준비하는 것이 임무입니다. 칼 한 자루로 시작해 도구를 사 모으다 보면 결국 기계로 작업을 자동화하게 됩니다.\n\n11월 4일(한국 시간) 출시 · PC(스팀) · 1만 1천 원(15일까지 9,900원) · 한국어 지원\n\n#겜디핑 #포테이토플리즈 #인디게임 #스팀 #감자",
     "hooks": {
-     "A": "스텔라 블레이드가 / 스위치2로 나왔다",
-     "B": "손에 들고 하는 / 스텔라 블레이드"
+     "A": "감자만 깎는 게임이 / 스팀에서 터졌습니다",
+     "B": "칼 한 자루로 시작해 / 감자 공장까지",
+     "C": "군대를 먹일 감자를 / 한 알씩 깎는 게임"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=trMkpK0EwSo",
-     "credit": "SHIFT UP Official Channel",
+     "url": "https://www.youtube.com/watch?v=le8aaHxQYdI",
+     "credit": "Golden Horn Studios",
+     "range": [
+      5.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "B",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 스팀 한국어 지원이 자막인지 인터페이스인지 칸 이름을 못 읽어 '한국어 지원'으로만 적음 · 평가 건수는 검증 때 1,286건으로 보여(초안 1,296건) 캡션에서 건수를 뺌",
+     "게임메카가 쓴 '유저 건의 직후 손 떨림 완화 옵션 추가'·'아들과 편지' 는 다른 출처로 확인 못 해 뺐음",
+     "평가 수치(1,296건 중 88%)·할인가는 11/8 오전 스팀 기준"
+    ],
+    "research": [
+     {
+      "title": "Steam — Potato Please",
+      "link": "https://store.steampowered.com/app/5266240/"
+     },
+     {
+      "title": "게임메카 — 감자 깎는 게임, 매우 긍정적",
+      "link": "https://www.gamemeca.com/view.php?gid=1783108"
+     },
+     {
+      "title": "電ファミニコゲーマー — Potato Please 11/4 発売",
+      "link": "https://news.denfaminicogamer.jp/news/2611032g"
+     },
+     {
+      "title": "80.lv — peel an endless pile of potatoes",
+      "link": "https://80.lv/articles/in-this-physics-based-game-your-job-is-to-peel-an-endless-pile-of-potatoes"
+     },
+     {
+      "title": "YouTube — Potato Please Official Release Trailer",
+      "link": "https://www.youtube.com/watch?v=le8aaHxQYdI"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/le8aaHxQYdI/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103973/j0eprrpy9oofgz9j4gay.jpg",
+     "key": "le8aaHxQYdI@5.0"
+    },
+    "px": {
+     "vid": "le8aaHxQYdI",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794104075/plot_studio/facd38fplfocm5gzasbr.mp4",
+     "off": 0.0,
+     "end": 60.0,
+     "full": 60.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-08T11:16+09:00"
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "감자만 깎는 게임이라는 묘한 사실 + 한국어 지원·싼 가격 — 숏폼 손맛이 좋다",
+    "at": "2026-11-08T11:10+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ea-classics-vault",
+    "account": "Steam",
+    "url": "https://store.steampowered.com/app/2448570/",
+    "image": null,
+    "head": "EA 고전 25종 스팀·GOG·EA 앱 출시, 7종은 원본 테이프로 복원",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-08T11:10+09:00",
+   "key": "9e29c75b",
+   "by": "claude",
+   "subjects": [
+    "로드 래시",
+    "윙 커맨더"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "EA 창고에서 나온 원본 테이프로 고전 25종이 스팀에 — 마크 해밀의 〈윙 커맨더 3〉 실사 장면도 복원",
+    "why": "사람(프로듀서)과 발견의 장면이 있는 출시 소식 · 〈울티마〉·〈테마 호스피탈〉 스팀 첫 출시"
+   },
+   "added": "claude",
+   "added_at": "2026-11-08T11:10+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nEA가 창고에서 찾아낸 원본 테이프로 고전 PC 게임을 되살려 스팀에 내놓았습니다.\n\n시작은 2022년 EA 사내 보관실에서 나온 마스터 테이프였는데요, 이 보관실을 찾아낸 사람은 EA 프로듀서 짐 베셀라입니다. 이 테이프로 실사 영상 장면을 복원한 〈로드 래시〉와 〈윙 커맨더〉 시리즈 7종이 기념판으로, 〈울티마〉 시리즈와 〈테마 호스피탈〉 등 18종이 함께 5일 나왔습니다.\n\n마크 해밀이 출연했던 〈윙 커맨더 3〉의 실사 장면도 이번에 원본 테이프에서 되살린 영상으로 다시 볼 수 있게 됐습니다.\n\nPC(스팀·GOG·EA 앱) · 〈로드 래시: 30주년 기념판〉 1만 1천 원(19일까지 50% 할인 5,500원) · 〈로드 래시〉 기준 한국어 미지원\n\n#겜디핑 #로드래시 #윙커맨더 #울티마 #테마호스피탈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794103916/lfndaywnukpmxiwocm9a.jpg\n제목: 창고에서 찾은 테이프로|돌아온 EA 고전 25종\n부제: 로드 래시 · 윙 커맨더 · 울티마\n출처: Gameluster\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794103933/plot_studio/lroqoyhvzudhoiatcjnl.mp4\n소제목: \n본문: \n출처: Electronic Arts\n",
+    "caption": "EA가 창고에서 찾아낸 원본 테이프로 고전 PC 게임을 되살려 스팀에 내놓았습니다.\n\n시작은 2022년 EA 사내 보관실에서 나온 마스터 테이프였는데요, 이 보관실을 찾아낸 사람은 EA 프로듀서 짐 베셀라입니다. 이 테이프로 실사 영상 장면을 복원한 〈로드 래시〉와 〈윙 커맨더〉 시리즈 7종이 기념판으로, 〈울티마〉 시리즈와 〈테마 호스피탈〉 등 18종이 함께 5일 나왔습니다.\n\n마크 해밀이 출연했던 〈윙 커맨더 3〉의 실사 장면도 이번에 원본 테이프에서 되살린 영상으로 다시 볼 수 있게 됐습니다.\n\nPC(스팀·GOG·EA 앱) · 〈로드 래시: 30주년 기념판〉 1만 1천 원(19일까지 50% 할인 5,500원) · 〈로드 래시〉 기준 한국어 미지원\n\n#겜디핑 #로드래시 #윙커맨더 #울티마 #테마호스피탈",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103916/lfndaywnukpmxiwocm9a.jpg",
+      "credit": "Gameluster",
+      "from": "https://gameluster.com/wp-content/uploads/2026/11/ss_613c8f6d9c6e2f731cdbd89b7b335ee6ee554678.1920x1080.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103916/lfndaywnukpmxiwocm9a.jpg",
+      "credit": "Gameluster",
+      "from": "https://gameluster.com/wp-content/uploads/2026/11/ss_613c8f6d9c6e2f731cdbd89b7b335ee6ee554678.1920x1080.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "창고에서 찾은 테이프로|돌아온 EA 고전 25종",
+      "sub": "로드 래시 · 윙 커맨더 · 울티마"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "마크 해밀의 윙 커맨더,|원본 테이프로 복원",
+      "sub": "EA 고전 25종 스팀 출시"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] '포틀랜드 엑스포에서 테이프 600여 개를 찾았다고 밝혔다'는 Kotaku 에 박힌 제3자 블루스카이 글뿐이고 Gameluster 는 약 200개라 해서 뺌 · 마크 해밀 출연은 Kotaku 한 곳에서만 봄 · 출시일 5일은 미국 기준(한국 시간 미확인) · 복원 영상엔 AI 업스케일 옵션이 있어 '원본 화질' 표현을 뺌",
+     "가격·한국어 미지원은 〈로드 래시〉 스팀 페이지 기준 — 나머지 게임은 따로 안 봄",
+     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 실사 장면이 들어가는지 확인"
+    ],
+    "research": [
+     {
+      "title": "Steam — Road Rash: 30th Anniversary Edition",
+      "link": "https://store.steampowered.com/app/2448570/"
+     },
+     {
+      "title": "루리웹 — EA 클래식 PC 게임 25종 스팀 서비스",
+      "link": "https://bbs.ruliweb.com/news/read/231564"
+     },
+     {
+      "title": "Gameluster — EA's tape vault",
+      "link": "https://gameluster.com/ea-classics-steam-vault-wing-commander-road-rash/"
+     },
+     {
+      "title": "Kotaku — Wing Commander 3 remaster at Portland Retro Gaming Expo",
+      "link": "https://kotaku.com/ea-producer-announces-wing-commander-3-remaster-at-portland-retro-gaming-expo-2000744166"
+     },
+     {
+      "title": "VGC — EA has released 25 classic restored games",
+      "link": "https://www.videogameschronicle.com/news/ea-has-released-25-classic-restored-games-on-pc-including-ultima-and-road-rash/"
+     },
+     {
+      "title": "YouTube — EA Classics Gameplay Launch Trailer",
+      "link": "https://www.youtube.com/watch?v=64HKNisDVmA"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103983/cnon8ei02nkefoofzekv.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103986/barph8tonmrg7y85inuo.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103983/slnw9crdwhyufbgkrkvt.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103983/cnon8ei02nkefoofzekv.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-08T11:13+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794103984/plot_studio/tdffmj7oglx8u2a7pqdn.mp4"
+     },
+     "v": {
+      "A": "f6cf104d"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=64HKNisDVmA\n구간: 0:20-0:45\n곡: 돌아온 고전 게임들\n아티스트: 창고에서 찾은 테이프로\n피처링:\n후킹: \n출처: Electronic Arts\n자막: 자동",
+    "caption": "EA가 창고에서 찾아낸 원본 테이프로 고전 PC 게임을 되살려 스팀에 내놓았습니다.\n\n2022년 EA 사내 보관실에서 마스터 테이프가 나왔는데요, 이 테이프로 실사 영상 장면을 복원한 〈로드 래시〉와 〈윙 커맨더〉 시리즈 7종이 기념판으로, 〈울티마〉 시리즈와 〈테마 호스피탈〉 등 18종이 함께 5일 나왔습니다.\n\nPC(스팀·GOG·EA 앱) · 〈로드 래시〉 기념판 1만 1천 원(19일까지 5,500원) · 한국어 미지원\n\n#겜디핑 #로드래시 #윙커맨더 #울티마 #테마호스피탈",
+    "hooks": {
+     "A": "창고에서 찾은 테이프로 / 돌아온 고전 게임들",
+     "B": "로드 래시부터 울티마까지 / 스팀에 25종이 왔습니다",
+     "C": "마크 해밀의 윙 커맨더가 / 원본 테이프로 돌아왔습니다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=64HKNisDVmA",
+     "credit": "Electronic Arts",
      "range": [
       20.0,
       45.0
@@ -559,395 +486,57 @@
     },
     "issues": [],
     "confirm": [
-     "국내 가격 69,800원은 11번가 예약 페이지·해외 사이트 한국어 기사뿐이라 뺐습니다 · 한국어 지원도 스위치2판 기준 확인 못 해 끝줄에서 뺌 — 닌텐도 e숍에서 확인되면 끝줄에 더하기",
-     "숏폼 구간 0:20-0:45 는 화면 확인 안 함 — 실사 트레일러라 이브가 나오는 장면인지 보고 고르기"
+     "[검증] '포틀랜드 엑스포에서 테이프 600여 개를 찾았다고 밝혔다'는 Kotaku 에 박힌 제3자 블루스카이 글뿐이고 Gameluster 는 약 200개라 해서 뺌 · 마크 해밀 출연은 Kotaku 한 곳에서만 봄 · 출시일 5일은 미국 기준(한국 시간 미확인) · 복원 영상엔 AI 업스케일 옵션이 있어 '원본 화질' 표현을 뺌",
+     "가격·한국어 미지원은 〈로드 래시〉 스팀 페이지 기준 — 나머지 게임은 따로 안 봄",
+     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 실사 장면이 들어가는지 확인"
     ],
     "research": [
      {
-      "title": "어디서나 이브와 함께, '스텔라 블레이드' 스위치2 출시 (인벤)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323053"
+      "title": "Steam — Road Rash: 30th Anniversary Edition",
+      "link": "https://store.steampowered.com/app/2448570/"
      },
      {
-      "title": "시프트업, '스텔라 블레이드' 닌텐도 스위치2 버전 글로벌 출시 (아주경제)",
-      "link": "https://www.ajunews.com/view/20261106092634906"
+      "title": "루리웹 — EA 클래식 PC 게임 25종 스팀 서비스",
+      "link": "https://bbs.ruliweb.com/news/read/231564"
      },
      {
-      "title": "니어·니케·베요네타 콜라보 전부 담았다... '스텔라 블레이드', 닌텐도 스위치 2 컴플리트 에디션 6일 출시 (엑스포츠뉴스)",
-      "link": "https://www.xportsnews.com/article/2216233"
+      "title": "Gameluster — EA's tape vault",
+      "link": "https://gameluster.com/ea-classics-steam-vault-wing-commander-road-rash/"
      },
      {
-      "title": "시프트업 '스텔라 블레이드', 스위치2 버전 출시...무료체험판도 제공 (파이낸셜투데이)",
-      "link": "https://www.ftoday.co.kr/news/articleView.html?idxno=369122"
+      "title": "Kotaku — Wing Commander 3 remaster at Portland Retro Gaming Expo",
+      "link": "https://kotaku.com/ea-producer-announces-wing-commander-3-remaster-at-portland-retro-gaming-expo-2000744166"
      },
      {
-      "title": "Stellar Blade - Live Action Launch Trailer - Nintendo Switch 2 (SHIFT UP 공식)",
-      "link": "https://www.youtube.com/watch?v=trMkpK0EwSo"
+      "title": "VGC — EA has released 25 classic restored games",
+      "link": "https://www.videogameschronicle.com/news/ea-has-released-25-classic-restored-games-on-pc-including-ultima-and-road-rash/"
+     },
+     {
+      "title": "YouTube — EA Classics Gameplay Launch Trailer",
+      "link": "https://www.youtube.com/watch?v=64HKNisDVmA"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/trMkpK0EwSo/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/64HKNisDVmA/maxresdefault.jpg",
     "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046339/g4wp8x4yunf18lt9uavc.jpg",
-     "key": "trMkpK0EwSo@20.0"
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103990/hsjz8uxj59xiklxqoxtc.jpg",
+     "key": "64HKNisDVmA@20.0"
     },
     "px": {
-     "vid": "trMkpK0EwSo",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046423/plot_studio/i4iuw5dgqwoldrt2efqp.mp4",
+     "vid": "64HKNisDVmA",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794104125/plot_studio/hihtnggesflgxbv0pms1.mp4",
      "off": 0.0,
-     "end": 90.0,
-     "full": 100.0
+     "end": 69.0,
+     "full": 69.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-07T19:15+09:00"
+     "at": "2026-11-08T11:16+09:00"
     }
    },
    "pick": {
     "rank": 1,
-    "why": "어제 나온 한국 개발사 대작의 첫 닌텐도판 — 한국 독자에게 바로 걸리고 공식 영상으로 숏폼까지 된다",
-    "at": "2026-11-07T19:11+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:metaphor-price",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783098",
-    "image": null,
-    "head": "메타포: 리판타지오, 12일부터 가격 60% 인하한다",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-07T19:11+09:00",
-   "key": "93f8792c",
-   "by": "claude",
-   "subjects": [
-    "메타포: 리판타지오",
-    "아틀러스",
-    "세가퍼블리싱코리아"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈메타포: 리판타지오〉 국내 정가 79,800원 → 32,000원 — 12일 스위치2판 발매와 함께 전 기종 개정",
-    "why": "11/6 세가퍼블리싱코리아 발표 · 인벤·게임메카 + 세가 아시아 공식 스위치2 페이지(32,000원·한국어 자막) · 11/7 rejects 의 '12일에 다룬다'를 가격 개정이라는 새 사실로 앞당김 · 기사형 표지 한 장"
-   },
-   "added": "claude",
-   "added_at": "2026-11-07T19:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈메타포: 리판타지오〉의 국내 정가가 12일부터 79,800원에서 32,000원으로 내려갑니다.\n\n세가퍼블리싱코리아가 6일 알린 내용인데요, 기간 한정 할인이 아니라 정가를 고치는 것입니다. 날짜는 같은 날 나오는 닌텐도 스위치2판 발매에 맞췄고, Xbox와 PC, PS5, PS4 다운로드판 일반판이 대상입니다.\n\n아틀러스 스튜디오 제로의 턴제 판타지 RPG로, 왕이 암살된 뒤 왕위를 두고 벌어지는 경쟁에 주인공이 뛰어드는 이야기입니다.\n\nPS5·PS4·Xbox·PC·닌텐도 스위치2 · 한국어 자막 지원 · 11월 12일부터 일반판 32,000원 · 스위치2판 11월 12일 발매(패키지는 키 카드)\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #세가\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046296/ncox4giqduoc0ubs6i8k.jpg\n제목: 메타포 리판타지오,|12일부터 3만 2천 원\n부제: 스위치2판 발매에 맞춰 전 기종 정가 개정\n출처: 게임메카\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794046317/plot_studio/g1aot7roszozsdf3ns1u.mp4\n소제목: \n본문: \n출처: 콘솔 & PC 패키지SEGA Korea\n",
-    "caption": "〈메타포: 리판타지오〉의 국내 정가가 12일부터 79,800원에서 32,000원으로 내려갑니다.\n\n세가퍼블리싱코리아가 6일 알린 내용인데요, 기간 한정 할인이 아니라 정가를 고치는 것입니다. 날짜는 같은 날 나오는 닌텐도 스위치2판 발매에 맞췄고, Xbox와 PC, PS5, PS4 다운로드판 일반판이 대상입니다.\n\n아틀러스 스튜디오 제로의 턴제 판타지 RPG로, 왕이 암살된 뒤 왕위를 두고 벌어지는 경쟁에 주인공이 뛰어드는 이야기입니다.\n\nPS5·PS4·Xbox·PC·닌텐도 스위치2 · 한국어 자막 지원 · 11월 12일부터 일반판 32,000원 · 스위치2판 11월 12일 발매(패키지는 키 카드)\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #세가",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046296/ncox4giqduoc0ubs6i8k.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/098/gm615745_Untitled-3.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046296/ncox4giqduoc0ubs6i8k.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/098/gm615745_Untitled-3.webp"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "메타포 리판타지오,|12일부터 3만 2천 원",
-      "sub": "스위치2판 발매에 맞춰 전 기종 정가 개정"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "가격 개정은 다운로드판 일반판 기준(두 기사) — 디럭스판·기존 패키지판 가격은 확인 못 함 · 스위치2 패키지는 키 카드 형태(세가 공식)",
-     "숏폼 구간 0:10-0:35 화면 확인 안 함 — 한국어 자막판 트레일러인지 보기 · 표지 사진(게임메카)은 일본어 UI 가 보이는 장면이라 한국어판 스크린샷이 있으면 바꾸기"
-    ],
-    "research": [
-     {
-      "title": "메타포: 리판타지오, 12일부터 가격 60% 인하한다 (게임메카)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783098"
-     },
-     {
-      "title": "아틀러스 '메타포: 리판타지오', 정가 60% 인하한다 (인벤)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323102"
-     },
-     {
-      "title": "메타포: 리판타지오 - Nintendo Switch 2 (세가 아시아 공식)",
-      "link": "https://asia.sega.com/metaphor/kr/switch2/"
-     },
-     {
-      "title": "『Metaphor: ReFantazio』 Nintendo Switch 2 Version First Trailer (SEGA Korea)",
-      "link": "https://www.youtube.com/watch?v=efS6MKPot5U"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046351/khnp4xprhv1unqgyowtv.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046354/goufs10wqgplidk8hxyk.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046350/v3haca6jnbealcps8dzj.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046351/khnp4xprhv1unqgyowtv.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-07T19:12+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046352/plot_studio/ow4lbukdu69eciys2qi3.mp4"
-     },
-     "v": {
-      "A": "dce949e6"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=efS6MKPot5U\n구간: 0:10-0:35\n곡: 12일부터 3만 2천 원\n아티스트: 메타포 리판타지오가\n피처링:\n후킹: \n출처: 콘솔 & PC 패키지SEGA Korea\n자막: 자동",
-    "caption": "〈메타포: 리판타지오〉 스위치2판 트레일러입니다.\n\n12일 스위치2판이 나오는 날에 맞춰 국내 정가도 바뀌는데요, Xbox와 PC, PS5, PS4 다운로드판 일반판이 79,800원에서 32,000원이 됩니다. 기간 한정 할인이 아닌 정가 개정입니다.\n\n왕위를 두고 겨루는 아틀러스의 판타지 RPG입니다.\n\nPS5·PS4·Xbox·PC·닌텐도 스위치2 · 한국어 자막 지원 · 11월 12일부터 일반판 32,000원\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #세가",
-    "hooks": {
-     "A": "메타포 리판타지오가 / 12일부터 3만 2천 원",
-     "B": "스위치2로 오는 / 메타포 리판타지오"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=efS6MKPot5U",
-     "credit": "콘솔 & PC 패키지SEGA Korea",
-     "range": [
-      10.0,
-      35.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "가격 개정은 다운로드판 일반판 기준(두 기사) — 디럭스판·기존 패키지판 가격은 확인 못 함 · 스위치2 패키지는 키 카드 형태(세가 공식)",
-     "숏폼 구간 0:10-0:35 화면 확인 안 함 — 한국어 자막판 트레일러인지 보기 · 표지 사진(게임메카)은 일본어 UI 가 보이는 장면이라 한국어판 스크린샷이 있으면 바꾸기"
-    ],
-    "research": [
-     {
-      "title": "메타포: 리판타지오, 12일부터 가격 60% 인하한다 (게임메카)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783098"
-     },
-     {
-      "title": "아틀러스 '메타포: 리판타지오', 정가 60% 인하한다 (인벤)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323102"
-     },
-     {
-      "title": "메타포: 리판타지오 - Nintendo Switch 2 (세가 아시아 공식)",
-      "link": "https://asia.sega.com/metaphor/kr/switch2/"
-     },
-     {
-      "title": "『Metaphor: ReFantazio』 Nintendo Switch 2 Version First Trailer (SEGA Korea)",
-      "link": "https://www.youtube.com/watch?v=efS6MKPot5U"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/efS6MKPot5U/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046358/l1uejanpbf1ppjbkfq1g.jpg",
-     "key": "efS6MKPot5U@10.0"
-    },
-    "px": {
-     "vid": "efS6MKPot5U",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794046482/plot_studio/czyejtanu0ogmjarwx6n.mp4",
-     "off": 0.0,
-     "end": 79.0,
-     "full": 79.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-07T19:15+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:gow-laufey-delay",
-    "account": "Game Informer",
-    "url": "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may",
-    "image": null,
-    "head": "God of War Laufey Delayed To May",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-07T19:11+09:00",
-   "key": "8b03ebf4",
-   "by": "claude",
-   "subjects": [
-    "갓 오브 워 라우페이",
-    "산타 모니카 스튜디오"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "페이가 주인공인 〈갓 오브 워 라우페이〉, 2027년 2월 16일에서 5월 20일로 연기",
-    "why": "11/4 산타 모니카 스튜디오 공식 X 발표 · Game Informer·Inven Global 확인 · 겜디핑에선 아직 안 다룸 · 기사형 표지 한 장, 새 영상이 없어 숏폼 없음"
-   },
-   "added": "claude",
-   "added_at": "2026-11-07T19:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈갓 오브 워 라우페이〉의 출시가 내년 2월 16일에서 5월 20일로 미뤄졌습니다.\n\n산타 모니카 스튜디오가 4일 공식 X로 알린 내용인데요, 남은 시간 동안 마무리 작업을 하며 게임을 끝까지 끌어올리겠다고 밝혔습니다.\n\n이번 작품의 주인공은 크레토스가 아니라 그의 아내 페이입니다. 세상을 떠난 뒤 '에브리웬'이라는 곳에 다다른 페이의 여정을 그립니다.\n\nPS5 · 2027년 5월 20일 출시\n\n#겜디핑 #갓오브워 #갓오브워라우페이 #산타모니카스튜디오 #플레이스테이션\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046321/imuxrfev1igsiru51ae4.jpg\n제목: 갓 오브 워 라우페이,|내년 5월로 미뤄졌다\n부제: 2월 16일에서 석 달 연기\n출처: Game Informer\n",
-    "caption": "〈갓 오브 워 라우페이〉의 출시가 내년 2월 16일에서 5월 20일로 미뤄졌습니다.\n\n산타 모니카 스튜디오가 4일 공식 X로 알린 내용인데요, 남은 시간 동안 마무리 작업을 하며 게임을 끝까지 끌어올리겠다고 밝혔습니다.\n\n이번 작품의 주인공은 크레토스가 아니라 그의 아내 페이입니다. 세상을 떠난 뒤 '에브리웬'이라는 곳에 다다른 페이의 여정을 그립니다.\n\nPS5 · 2027년 5월 20일 출시\n\n#겜디핑 #갓오브워 #갓오브워라우페이 #산타모니카스튜디오 #플레이스테이션",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046321/imuxrfev1igsiru51ae4.jpg",
-      "credit": "Game Informer",
-      "from": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/09/28/b118e622/gow-laufey-art-banner.jpg.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046321/imuxrfev1igsiru51ae4.jpg",
-      "credit": "Game Informer",
-      "from": "https://static.gameinformer.com/sites/default/files/styles/og_image/public/2026/09/28/b118e622/gow-laufey-art-banner.jpg.webp"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "갓 오브 워 라우페이,|내년 5월로 미뤄졌다",
-      "sub": "2월 16일에서 석 달 연기"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "사흘 지난 소식(11/4) — 오늘 올릴지 판단 · 한국 정식 표기('갓 오브 워 라우페이' / 콜론 유무)와 한국어 지원은 PS 스토어에서 확인 못 함",
-     "Gematsu·VGC 원문은 403 으로 열지 못함 — 날짜는 GI·Inven Global 두 곳 기준 · 표지 사진(GI)이 공식 키 아트인지 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "God of War Laufey Delayed To May (Game Informer)",
-      "link": "https://gameinformer.com/2026/11/04/god-of-war-laufey-delayed-to-may"
-     },
-     {
-      "title": "God of War Laufey delayed to May 2027 (Inven Global)",
-      "link": "https://www.invenglobal.com/articles/28151/god-of-war-laufey-delayed-to-may-2027"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046361/gd1zzkla9efdqrn9fx3n.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046361/lxxa74lc3wj8qchccjvd.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046361/gd1zzkla9efdqrn9fx3n.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-07T19:12+09:00",
-     "v": {
-      "A": "d3483bc2"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:gmt-fangame",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783014",
-    "image": null,
-    "head": "[인디言] 20년 멈췄던 만화 '굿모닝! 티처' 팬게임의 재시작",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-07T19:11+09:00",
-   "key": "32ec04fa",
-   "by": "claude",
-   "subjects": [
-    "신준수",
-    "굿모닝! 티처",
-    "서영웅"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "20년 멈췄던 만화 〈굿모닝! 티처〉 팬게임을 다시 만드는 사람 — 비공식·무료, 원작자의 허락을 기다린다",
-    "why": "게임메카 [인디言] 11/7 인터뷰(개발자 발언) · 나무위키(원작 연재·GMT 게임화 역사) · 프로젝트 공식 홈페이지(11/7 1.3.1 배포·배포 중단 원칙) · 사람이 보이는 인디 이야기 · 오늘 실험 칸은 악선이 써서 일반 건으로"
-   },
-   "added": "claude",
-   "added_at": "2026-11-07T19:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n20년 동안 멈춰 있던 만화 〈굿모닝! 티처〉 팬게임이 다시 만들어지고 있습니다.\n\n서영웅 작가가 1995년부터 1999년까지 소년챔프에 연재한 학원 만화인데요, 2000년대 초 PC통신 팬들 사이에서 이 작품을 게임으로 만드는 프로젝트가 있었습니다. 일을 나누고 사람들과 조율하는 데 힘이 부쳤고 홈페이지 도메인까지 만료되면서 그대로 멈췄습니다.\n\n그 프로젝트를 만들던 신준수 개발자가 올해 스승의 날인 5월 15일 첫 빌드를 다시 내놓았습니다. 주인공 박영민이 되어 일출고에서 3년을 보내는 육성 시뮬레이션으로, 선택에 따라 엔딩이 갈립니다. 그는 \"프로젝트가 끝났다고 선언하면 제 안의 게임 개발자까지 끝나버릴 것 같았다\"고 말했습니다.\n\n돈을 받지 않는 비공식 팬게임이고, 권리자가 요청하면 배포를 멈추겠다는 원칙을 홈페이지에 적어 두었습니다. 그가 지금 가장 바라는 것은 서영웅 작가와 다시 연락이 닿는 일입니다.\n\nWindows·macOS · 무료 · 7일 1.3.1 업데이트\n\n#겜디핑 #굿모닝티처 #서영웅 #팬게임 #인디게임\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794046325/eqreidzp6k09kmptb1sz.jpg\n제목: 20년 멈췄던 팬게임,|다시 만드는 사람\n부제: 만화 〈굿모닝! 티처〉 팬게임의 재시작\n출처: 게임메카\n",
-    "caption": "20년 동안 멈춰 있던 만화 〈굿모닝! 티처〉 팬게임이 다시 만들어지고 있습니다.\n\n서영웅 작가가 1995년부터 1999년까지 소년챔프에 연재한 학원 만화인데요, 2000년대 초 PC통신 팬들 사이에서 이 작품을 게임으로 만드는 프로젝트가 있었습니다. 일을 나누고 사람들과 조율하는 데 힘이 부쳤고 홈페이지 도메인까지 만료되면서 그대로 멈췄습니다.\n\n그 프로젝트를 만들던 신준수 개발자가 올해 스승의 날인 5월 15일 첫 빌드를 다시 내놓았습니다. 주인공 박영민이 되어 일출고에서 3년을 보내는 육성 시뮬레이션으로, 선택에 따라 엔딩이 갈립니다. 그는 \"프로젝트가 끝났다고 선언하면 제 안의 게임 개발자까지 끝나버릴 것 같았다\"고 말했습니다.\n\n돈을 받지 않는 비공식 팬게임이고, 권리자가 요청하면 배포를 멈추겠다는 원칙을 홈페이지에 적어 두었습니다. 그가 지금 가장 바라는 것은 서영웅 작가와 다시 연락이 닿는 일입니다.\n\nWindows·macOS · 무료 · 7일 1.3.1 업데이트\n\n#겜디핑 #굿모닝티처 #서영웅 #팬게임 #인디게임",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046325/eqreidzp6k09kmptb1sz.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/014/gm120244_asd.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046325/eqreidzp6k09kmptb1sz.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/014/gm120244_asd.webp"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "20년 멈췄던 팬게임,|다시 만드는 사람",
-      "sub": "만화 〈굿모닝! 티처〉 팬게임의 재시작"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "개발자 발언·이력(카이스트 동아리 '하제' 회장)은 게임메카 인터뷰 한 곳뿐 — 인터뷰가 원문이라 발언 한 마디만 인용 · 원작자 허락을 받지 못한 비공식 팬게임이라 다운로드 경로는 쓰지 않았습니다",
-     "표지 사진은 게임메카 기사 대표 사진(팬게임 그림으로 보임) — 원작 만화 그림이 아닌지 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "[인디言] 20년 멈췄던 만화 '굿모닝! 티처' 팬게임의 재시작 (게임메카)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783014"
-     },
-     {
-      "title": "굿모닝! 티처 (나무위키)",
-      "link": "https://namu.wiki/w/%EA%B5%BF%EB%AA%A8%EB%8B%9D!%20%ED%8B%B0%EC%B2%98"
-     },
-     {
-      "title": "GMT Game 공식 홈페이지",
-      "link": "https://gmtgame.net"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046365/jqumcswg1sjhdjlshywo.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046364/fmwd5pjdaxnqdweaouvj.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794046365/jqumcswg1sjhdjlshywo.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-07T19:12+09:00",
-     "v": {
-      "A": "838d01fe"
-     }
-    }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "20년 만에 팬게임을 다시 잡은 사람의 이야기 — 오늘 초안 중 사람이 가장 또렷이 보이는 글",
-    "at": "2026-11-07T19:11+09:00"
+    "why": "창고에서 찾은 테이프라는 사람·장면이 있는 이야기 — 고전 게임 팬과 처음 보는 사람 모두 읽힘",
+    "at": "2026-11-08T11:10+09:00"
    },
    "corner_name": "소식"
   }
@@ -955,7 +544,7 @@
  "skipped": [],
  "corners": {
   "week": "11/02~11/08",
-  "days_left": 2,
+  "days_left": 1,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -1013,7 +602,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 4,
+    "need_today": 7,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -1025,7 +614,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 3,
+    "need_today": 6,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -1037,7 +626,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -1061,7 +650,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -1073,7 +662,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -1109,10 +698,10 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "오늘(이번 주) 발매 5·10·15·20·25·30주년 앨범을 다시 꺼낸다 — 그때 무슨 일이었고 지금 왜 다시 듣나"
    },
    {
@@ -1121,17 +710,17 @@
     "weekly": 4,
     "done": 0,
     "left": 4,
-    "need_today": 2,
+    "need_today": 4,
     "day": null,
     "next_no": null,
-    "drafts": 7,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-07T19:15+09:00"
+  "at": "2026-11-08T11:16+09:00"
  },
  "queue": {
-  "next": "2026-11-07T19:17+09:00",
+  "next": "2026-11-08T11:18+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
