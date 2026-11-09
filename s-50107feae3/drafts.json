@@ -2396,6 +2396,195 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-532c1d98",
+    "account": "@규효 공유 · @wide_mag.kr",
+    "url": "https://www.instagram.com/p/DfgYasnm4RS/?mdxt=enp4b3ZpenZyNjFv",
+    "image": null,
+    "head": "난청 고백한 우즈의 무대 해법은 자신이 곡을 써 준 선배 이승철의 한 마디였다",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T04:05+09:00",
+   "key": "b08d81e6",
+   "by": "claude",
+   "subjects": [
+    "우즈",
+    "이승철"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "이승철에게 노래를 써 준 우즈가, 그 선배에게서 난청 속 무대 해법('피아노랑 클릭만')을 얻었다",
+    "why": "본인이 라이브에서 직접 밝힌 난청 고백이 11/9 기사로 퍼졌고, 두 달 전 함께 부른 40주년 듀엣이라는 연결고리가 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T04:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n우즈가 난청과 메니에르병을 앓고 있다고 직접 밝혔습니다.\n\n지난 5일 팬 플랫폼 음성 라이브에서 저음역대에 민감한 스트레스성 난청이 있고 입대 전 메니에르병 진단을 받았다고 털어놨는데요, 그래서 인이어만으로는 음정을 잡기 어려웠다고 합니다. 길을 터 준 건 이승철의 한 마디였습니다. \"피아노랑 클릭만 들어봐.\"\n\n두 사람은 지난 9월 이승철 데뷔 40주년 듀엣곡 '우리만의 이야기'를 함께 불렀고, 우즈는 이 곡의 작사와 공동 작곡에 참여했습니다. 선배에게 노래를 써 준 후배가, 그 선배에게서 무대 위 해법을 얻은 셈입니다.\n\n우즈의 월드투어 'Archive. 1'은 지난달 31일과 이달 1일 KSPO DOME 앙코르 공연으로 마무리됐습니다.\n\n#PLOT #우즈 #WOODZ #이승철 #우리만의이야기\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794251129/pj9yzkqpnh9ureohq457.jpg\n제목: 우즈의 인이어 고민,|이승철이 풀었다\n부제: \"피아노랑 클릭만 들어봐\"\n출처:\n",
+    "caption": "우즈가 난청과 메니에르병을 앓고 있다고 직접 밝혔습니다.\n\n지난 5일 팬 플랫폼 음성 라이브에서 저음역대에 민감한 스트레스성 난청이 있고 입대 전 메니에르병 진단을 받았다고 털어놨는데요, 그래서 인이어만으로는 음정을 잡기 어려웠다고 합니다. 길을 터 준 건 이승철의 한 마디였습니다. \"피아노랑 클릭만 들어봐.\"\n\n두 사람은 지난 9월 이승철 데뷔 40주년 듀엣곡 '우리만의 이야기'를 함께 불렀고, 우즈는 이 곡의 작사와 공동 작곡에 참여했습니다. 선배에게 노래를 써 준 후배가, 그 선배에게서 무대 위 해법을 얻은 셈입니다.\n\n우즈의 월드투어 'Archive. 1'은 지난달 31일과 이달 1일 KSPO DOME 앙코르 공연으로 마무리됐습니다.\n\n#PLOT #우즈 #WOODZ #이승철 #우리만의이야기",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251129/pj9yzkqpnh9ureohq457.jpg",
+      "credit": "신뢰",
+      "from": "https://i.ibb.co/XxTntWSf/e47cca0b32e5.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251132/dynxjxvnhlijp3yvvkgx.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/RTy0DsJx/321698cce15e.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251129/pj9yzkqpnh9ureohq457.jpg",
+      "credit": "신뢰",
+      "from": "https://i.ibb.co/XxTntWSf/e47cca0b32e5.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251132/dynxjxvnhlijp3yvvkgx.jpg",
+      "credit": "멜론",
+      "from": "https://i.ibb.co/RTy0DsJx/321698cce15e.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "우즈의 인이어 고민,|이승철이 풀었다",
+      "sub": "\"피아노랑 클릭만 들어봐\""
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "\"피아노랑 클릭만 들어봐\"|이승철이 우즈에게 건넨 말",
+      "sub": "난청 고백한 우즈의 무대 해법"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "난청 털어놓은 우즈,|해법은 선배에게서",
+      "sub": "40주년 듀엣 '우리만의 이야기'의 두 사람"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — LEE SEUNGCHUL (이승철 공식 채널 MV · 2:20-3:00 두 번째 후렴, chorus_at 이 막혀 자막으로 잡음 — 구간 확인)",
+     "건강 소재: 본인이 라이브에서 직접 밝힌 범위(난청·메니에르 진단·인이어 음정)만 썼고 병 설명·'완치 불가'·투병 서사는 뺐습니다 — 올릴지 판단해 주세요"
+    ],
+    "research": [
+     {
+      "title": "헤럴드뮤즈 — 우즈, 메니에르병 앓고 있었다 \"이승철에 조언 받기도\" (11/9)",
+      "link": "https://www.heraldmuse.com/article/10931076"
+     },
+     {
+      "title": "뉴스엔 — 우즈, 희귀병 앓고 있었다 \"이승철 덕에 음정 맞춰\" (11/9)",
+      "link": "https://www.newsen.com/news_view.php?uid=202611091621060410"
+     },
+     {
+      "title": "한국경제 — 이승철 40주년 듀엣 선공개곡 '우리만의 이야기' (9/30 발매)",
+      "link": "https://www.hankyung.com/article/202609292764H"
+     },
+     {
+      "title": "데일리안 — 후배가 만든 선배의 '다음 노래'…이승철·우즈",
+      "link": "https://www.dailian.co.kr/news/view/1698435"
+     },
+     {
+      "title": "WOODZ X 이승철 - 우리만의 이야기 [Official MV] · LEE SEUNGCHUL",
+      "link": "https://www.youtube.com/watch?v=swbPnEZrQjE"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251140/bxi8c4mphhohgscrhe28.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251139/qm5uodyz0rx9kevo8xq5.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251142/sijssyxgye8xyogxliar.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251142/p9fwxsryn9ak6idz6i2d.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251140/bxi8c4mphhohgscrhe28.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T04:05+09:00",
+     "v": {
+      "A": "7e7f3159",
+      "B": "3f9be49a",
+      "C": "f6f5fcfc"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=swbPnEZrQjE\n구간: 2:20-3:00\n곡: 우즈가 얻은 무대 해법\n아티스트: 이 노래의 선배에게서\n피처링:\n후킹: \n출처: LEE SEUNGCHUL\n음원: WOODZ, 이승철 - 우리만의 이야기\n가사: 자동",
+    "caption": "우즈가 난청과 메니에르병을 앓고 있다고 직접 밝혔습니다.\n\n지난 5일 팬 플랫폼 음성 라이브에서 인이어만으로는 음정을 잡기 어려웠다고 털어놨는데요, 이승철이 건넨 \"피아노랑 클릭만 들어봐\"라는 조언 덕분에 음정을 훨씬 정확하게 잡게 됐다고 합니다.\n\n영상은 지난 9월 두 사람이 함께 부른 이승철 데뷔 40주년 듀엣곡 '우리만의 이야기'입니다. 우즈가 작사와 공동 작곡에 참여해 선배에게 건넨 곡이, 이번엔 조언으로 돌아온 셈입니다.\n\n#PLOT #우즈 #WOODZ #이승철 #우리만의이야기",
+    "hooks": {
+     "A": "우즈가 곡을 써서 / 이승철에게 선물한 듀엣",
+     "B": "이 노래의 선배에게서 / 우즈가 얻은 무대 해법",
+     "C": "두 목소리가 겹치는 / '우리만의 이야기' 후렴"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=swbPnEZrQjE",
+     "credit": "LEE SEUNGCHUL",
+     "range": [
+      140.0,
+      180.0
+     ]
+    },
+    "guided": {
+     "rec": "B",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — LEE SEUNGCHUL (이승철 공식 채널 MV · 2:20-3:00 두 번째 후렴, chorus_at 이 막혀 자막으로 잡음 — 구간 확인)",
+     "건강 소재: 본인이 라이브에서 직접 밝힌 범위(난청·메니에르 진단·인이어 음정)만 썼고 병 설명·'완치 불가'·투병 서사는 뺐습니다 — 올릴지 판단해 주세요"
+    ],
+    "research": [
+     {
+      "title": "헤럴드뮤즈 — 우즈, 메니에르병 앓고 있었다 \"이승철에 조언 받기도\" (11/9)",
+      "link": "https://www.heraldmuse.com/article/10931076"
+     },
+     {
+      "title": "뉴스엔 — 우즈, 희귀병 앓고 있었다 \"이승철 덕에 음정 맞춰\" (11/9)",
+      "link": "https://www.newsen.com/news_view.php?uid=202611091621060410"
+     },
+     {
+      "title": "한국경제 — 이승철 40주년 듀엣 선공개곡 '우리만의 이야기' (9/30 발매)",
+      "link": "https://www.hankyung.com/article/202609292764H"
+     },
+     {
+      "title": "데일리안 — 후배가 만든 선배의 '다음 노래'…이승철·우즈",
+      "link": "https://www.dailian.co.kr/news/view/1698435"
+     },
+     {
+      "title": "WOODZ X 이승철 - 우리만의 이야기 [Official MV] · LEE SEUNGCHUL",
+      "link": "https://www.youtube.com/watch?v=swbPnEZrQjE"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/swbPnEZrQjE/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794251146/twimwtpcxwmlgcknx9aq.jpg",
+     "key": "swbPnEZrQjE@140.0"
+    },
+    "px": {
+     "vid": "swbPnEZrQjE",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794251231/plot_studio/vsaizlpmvavu5jspupcd.mp4",
+     "off": 95.0,
+     "end": 225.0,
+     "full": 250.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-10T04:07+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2570,11 +2759,11 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T03:35+09:00"
+  "at": "2026-11-10T04:07+09:00"
  },
  "queue": {
   "next": "2026-11-10T08:00+09:00",
