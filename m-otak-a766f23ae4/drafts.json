@@ -97,11 +97,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "오늘 아침 8시 발표 · 본인의 말(아사가야에 오래 살았다)이 있는 사람 소식 · 〈스파이 패밀리〉 '喜劇'로 한국 팬에게 익숙한 이름과 작품이 이어진다",
-    "at": "2026-11-09T10:47+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -203,10 +198,448 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:yoasobi-super-planet-korea",
+    "account": "음악나탈리",
+    "url": "https://news.yahoo.co.jp/articles/aa0278444f3b1963f10079adcda3fb5ca324abe5",
+    "image": null,
+    "head": "YOASOBI“超惑星”ツアーに自身初のオーストラリア公演追加、香港公演の日程＆会場も発表",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-09T18:56+09:00",
+   "key": "67b1f04b",
+   "by": "claude",
+   "subjects": [
+    "YOASOBI"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "요아소비가 '超惑星' 투어를 다시 짜면서 일부 국가·지역 개최를 접고 호주를 더했다 — 한국 공연은 2027년 4월 17일",
+    "why": "11/9 오전 공식 발표 · 음악나탈리·오리콘 모두 한국 4/17(공연장 추후 발표) · 한국 팬과 바로 이어지는 소식이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-09T18:56+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n요아소비가 새로 짠 '超惑星' 투어 일정에서 한국 공연은 2027년 4월 17일입니다.\n\n요아소비는 9일 \"최근 정세를 고려해 신중히 협의한 끝에\" 처음 계획한 일부 국가·지역과 공연장에서는 공연을 열지 않기로 했다고 밝혔는데요, 대신 첫 호주 공연을 더했습니다. 투어 이름도 'ASIA 10-CITY DOME & STADIUM TOUR'에서 '11-CITY ASIA-OCEANIA TOUR'로 바뀌었습니다.\n\n해외 일정은 1월 타이베이 돔에서 시작해 홍콩, 싱가포르, 멜버른·시드니를 거쳐 한국에서 맺습니다. 2024년 12월 인천 인스파이어 아레나 이후 다시 한국 무대에 서는 셈입니다.\n\n한국 공연장과 예매 일정은 추후 발표되고, 일본 공연은 12월 5~6일 도쿄 돔까지 이어집니다.\n\n#암낫오타쿠 #요아소비 #YOASOBI #요아소비내한 #내한공연\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794218218/bgv3ndytvw1bpxdm0bxy.jpg\n제목: 요아소비 한국 공연,|2027년 4월 17일\n부제: '超惑星' 투어 다시 짜고 호주 추가\n출처: THE FIRST TIMES\n",
+    "caption": "요아소비가 새로 짠 '超惑星' 투어 일정에서 한국 공연은 2027년 4월 17일입니다.\n\n요아소비는 9일 \"최근 정세를 고려해 신중히 협의한 끝에\" 처음 계획한 일부 국가·지역과 공연장에서는 공연을 열지 않기로 했다고 밝혔는데요, 대신 첫 호주 공연을 더했습니다. 투어 이름도 'ASIA 10-CITY DOME & STADIUM TOUR'에서 '11-CITY ASIA-OCEANIA TOUR'로 바뀌었습니다.\n\n해외 일정은 1월 타이베이 돔에서 시작해 홍콩, 싱가포르, 멜버른·시드니를 거쳐 한국에서 맺습니다. 2024년 12월 인천 인스파이어 아레나 이후 다시 한국 무대에 서는 셈입니다.\n\n한국 공연장과 예매 일정은 추후 발표되고, 일본 공연은 12월 5~6일 도쿄 돔까지 이어집니다.\n\n#암낫오타쿠 #요아소비 #YOASOBI #요아소비내한 #내한공연",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218218/bgv3ndytvw1bpxdm0bxy.jpg",
+      "credit": "THE FIRST TIMES",
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/11/20261109-dm-9001-1200x630.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218218/bgv3ndytvw1bpxdm0bxy.jpg",
+      "credit": "THE FIRST TIMES",
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/11/20261109-dm-9001-1200x630.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "요아소비 한국 공연,|2027년 4월 17일",
+      "sub": "'超惑星' 투어 다시 짜고 호주 추가"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[표지] 처음엔 2025 웸블리 포스터가 들어가 THE FIRST TIMES 사진으로 바꿈 — 지금 사진(두 사람, 흰 타일 배경)이 요아소비 최근 공식 사진인지 확인",
+     "한국 4/17 일정이 이번에 처음 나온 것인지는 확인 못 함 — 캡션은 '새로 짠 일정에서 한국은 4/17'로만 씀. 보류된 나라·공연장 이름은 어느 보도에도 없어 쓰지 않음(짐작 금지)",
+     "한국 공연장·예매 일정은 미발표 — 리벳 등 국내 주최 공지가 나오면 후속"
+    ],
+    "research": [
+     {
+      "title": "음악나탈리(야후 재배포) — 첫 호주 공연 추가, 홍콩 일정·공연장, 한국 4/17 공연장 추후 발표 (11/9 11:00)",
+      "link": "https://news.yahoo.co.jp/articles/aa0278444f3b1963f10079adcda3fb5ca324abe5"
+     },
+     {
+      "title": "오리콘(야후 재배포) — 투어 이름 변경, '昨今の情勢を鑑み' 일부 개최지 見送り",
+      "link": "https://news.yahoo.co.jp/articles/20c54d485087a6a5eb14b95e7e53012019441801"
+     },
+     {
+      "title": "Billboard JAPAN — 超惑星 홍콩·호주 공연 상세, 전 일정표",
+      "link": "https://www.billboard-japan.com/d_news/detail/167268/2"
+     },
+     {
+      "title": "뉴시스(2024) — 인천 인스파이어 아레나 두 번째 내한공연 성료",
+      "link": "https://www.newsis.com/view/NISX20241207_0002987815"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218249/g33muvixw9in19fgmtd4.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218249/k5o3l3jcinhmoalejgql.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218249/g33muvixw9in19fgmtd4.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-09T18:57+09:00",
+     "v": {
+      "A": "c192851b"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "한국 공연 날짜가 박힌 오늘 오전 발표 · 투어 재편이라 한국 팬이 가장 먼저 궁금해할 '한국은?'에 답한다",
+    "at": "2026-11-09T18:56+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:oshii-votoms-grey-witch",
+    "account": "MANTANWEB",
+    "url": "https://mantan-web.jp/article/20261108dog00m200010000a.html",
+    "image": null,
+    "head": "押井守監督：「装甲騎兵ボトムズ」15年ぶり新作 女性主人公にした理由 「やりたいことを詰め込んだだけ」",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-09T18:56+09:00",
+   "key": "2d77c553",
+   "by": "claude",
+   "subjects": [
+    "오시이 마모루",
+    "장갑기병 보톰즈"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "[실험] 〈보톰즈〉를 몰라도 읽히게 — 〈공각기동대〉의 오시이 마모루가 팬으로서 만든 15년 만의 〈보톰즈〉 신작, 완성 피로 상영회에서 한 말",
+    "why": "11/8 완성 피로 상영회 · 감독·성우의 말이 있는 사람 소식 · 11/20 일본 개봉 · 선라이즈 공식 예고편으로 숏폼"
+   },
+   "added": "claude",
+   "added_at": "2026-11-09T18:56+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈공각기동대〉의 오시이 마모루 감독이 만든 〈장갑기병 보톰즈〉(装甲騎兵ボトムズ) 새 극장판이 11월 20일 일본에서 개봉합니다.\n\n〈회색의 마녀〉(灰色の魔女)는 선라이즈의 1980년대 로봇 애니를 15년 만에 다시 꺼낸 완전 신작인데요, 8일 도쿄 완성 피로 상영회에서 오시이 감독은 자신도 팬으로서 언젠가 할 기회가 꼭 올 거라 생각했다고 말했습니다. 원작자 다카하시 료스케의 세계관을 깨지 않는 데 신경 썼고, 두 여성을 중심에 둔 데 대해서는 \"하고 싶은 걸 채워 넣었을 뿐\"이라고 했습니다.\n\n주인공 애시를 맡은 사와시로 미유키는 '전장에서 병사는 평등하다'는 감독의 말을 붙잡고 연기했다고 돌아봤습니다.\n\n선라이즈 50주년 기념작으로, 두 편으로 나뉜 극장판의 첫 편입니다. 제작 협력은 Production I.G.\n\n#암낫오타쿠 #보톰즈 #오시이마모루 #사와시로미유키 #선라이즈 #공각기동대\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794218222/p9smxw6kd1iomszchqvi.jpg\n제목: 〈공각기동대〉 감독이|만든 〈보톰즈〉 신작\n부제: 오시이 마모루 〈회색의 마녀〉 11월 20일 일본 개봉\n출처: MOVIE WALKER PRESS\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794218232/plot_studio/p5he3skrqi1dfb5mtrz5.mp4\n소제목: \n본문: \n출처: サンライズ SUNRISE Official\n",
+    "caption": "〈공각기동대〉의 오시이 마모루 감독이 만든 〈장갑기병 보톰즈〉(装甲騎兵ボトムズ) 새 극장판이 11월 20일 일본에서 개봉합니다.\n\n〈회색의 마녀〉(灰色の魔女)는 선라이즈의 1980년대 로봇 애니를 15년 만에 다시 꺼낸 완전 신작인데요, 8일 도쿄 완성 피로 상영회에서 오시이 감독은 자신도 팬으로서 언젠가 할 기회가 꼭 올 거라 생각했다고 말했습니다. 원작자 다카하시 료스케의 세계관을 깨지 않는 데 신경 썼고, 두 여성을 중심에 둔 데 대해서는 \"하고 싶은 걸 채워 넣었을 뿐\"이라고 했습니다.\n\n주인공 애시를 맡은 사와시로 미유키는 '전장에서 병사는 평등하다'는 감독의 말을 붙잡고 연기했다고 돌아봤습니다.\n\n선라이즈 50주년 기념작으로, 두 편으로 나뉜 극장판의 첫 편입니다. 제작 협력은 Production I.G.\n\n#암낫오타쿠 #보톰즈 #오시이마모루 #사와시로미유키 #선라이즈 #공각기동대",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218222/p9smxw6kd1iomszchqvi.jpg",
+      "credit": "MOVIE WALKER PRESS",
+      "from": "https://press.moviewalker.jp/api/resizeimage/news/article/1455420/19093827?w=1200"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218222/p9smxw6kd1iomszchqvi.jpg",
+      "credit": "MOVIE WALKER PRESS",
+      "from": "https://press.moviewalker.jp/api/resizeimage/news/article/1455420/19093827?w=1200"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "〈공각기동대〉 감독이|만든 〈보톰즈〉 신작",
+      "sub": "오시이 마모루 〈회색의 마녀〉 11월 20일 일본 개봉"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — SUNRISE Official · Bandai Namco Filmworks Channel (공식 본예고 30초 ver.)",
+     "한국 개봉 여부·한국 정식 제목은 확인 못 함 — 캡션에 넣지 않음"
+    ],
+    "research": [
+     {
+      "title": "MANTANWEB — 15년 만의 신작, 여성 주인공으로 한 이유 '하고 싶은 걸 채워 넣었을 뿐' (11/8)",
+      "link": "https://mantan-web.jp/article/20261108dog00m200010000a.html"
+     },
+     {
+      "title": "MOVIE WALKER PRESS — 완성 피로 상영회, '언젠가 할 기회는 꼭 있다고 생각했다', 사와시로 미유키 발언",
+      "link": "https://press.moviewalker.jp/news/article/1455420/"
+     },
+     {
+      "title": "아니메아니메 — 완성 피로 상영회 리포트 (11/8 TOHO시네마즈 롯폰기힐스, 등단자 5명)",
+      "link": "https://animeanime.jp/article/2026/11/09/104631.html"
+     },
+     {
+      "title": "코믹나탈리 — 이치팬으로서 '하고 싶은 걸 채워 넣었을 뿐'",
+      "link": "https://natalie.mu/comic/news/697102"
+     },
+     {
+      "title": "선라이즈 공식 — 본예고 30초 ver.",
+      "link": "https://www.youtube.com/watch?v=AewVEStMRKk"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218257/o9wthk2cedwhnvrvl3jl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218259/nxdurqyo8tusv13bciuy.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218257/uyzbpentfgzi1yowxyl2.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218257/o9wthk2cedwhnvrvl3jl.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-09T18:57+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218258/plot_studio/yrcjtrl3o5derdgciqwu.mp4"
+     },
+     "v": {
+      "A": "1f987ec2"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=AewVEStMRKk\n구간: 0:00-0:30\n곡: 다시 꺼낸 로봇 애니\n아티스트: 〈공각기동대〉 감독이\n피처링:\n후킹: \n출처: サンライズ SUNRISE Official\n자막: 자동",
+    "caption": "오시이 마모루 감독의 〈장갑기병 보톰즈 회색의 마녀〉(装甲騎兵ボトムズ 灰色の魔女) 본예고입니다.\n\n선라이즈의 1980년대 로봇 애니를 15년 만에 다시 꺼낸 신작인데요, 8일 완성 피로 상영회에서 오시이 감독은 팬으로서 언젠가 할 기회가 꼭 올 거라 생각했다며 \"하고 싶은 걸 채워 넣었을 뿐\"이라고 했습니다. 주인공 애시는 사와시로 미유키가 맡았습니다.\n\n11월 20일 일본 개봉, 두 편 가운데 첫 편. 영상은 선라이즈 공식 채널입니다.\n\n#암낫오타쿠 #보톰즈 #오시이마모루 #사와시로미유키 #애니PV",
+    "hooks": {
+     "A": "〈공각기동대〉 감독이 / 다시 꺼낸 로봇 애니",
+     "B": "오시이 마모루가 만든 / 15년 만의 〈보톰즈〉",
+     "C": "팬이었던 감독이 / 직접 만든 〈보톰즈〉"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=AewVEStMRKk",
+     "credit": "サンライズ SUNRISE Official",
+     "range": [
+      0.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — SUNRISE Official · Bandai Namco Filmworks Channel (공식 본예고 30초 ver.)",
+     "한국 개봉 여부·한국 정식 제목은 확인 못 함 — 캡션에 넣지 않음"
+    ],
+    "research": [
+     {
+      "title": "MANTANWEB — 15년 만의 신작, 여성 주인공으로 한 이유 '하고 싶은 걸 채워 넣었을 뿐' (11/8)",
+      "link": "https://mantan-web.jp/article/20261108dog00m200010000a.html"
+     },
+     {
+      "title": "MOVIE WALKER PRESS — 완성 피로 상영회, '언젠가 할 기회는 꼭 있다고 생각했다', 사와시로 미유키 발언",
+      "link": "https://press.moviewalker.jp/news/article/1455420/"
+     },
+     {
+      "title": "아니메아니메 — 완성 피로 상영회 리포트 (11/8 TOHO시네마즈 롯폰기힐스, 등단자 5명)",
+      "link": "https://animeanime.jp/article/2026/11/09/104631.html"
+     },
+     {
+      "title": "코믹나탈리 — 이치팬으로서 '하고 싶은 걸 채워 넣었을 뿐'",
+      "link": "https://natalie.mu/comic/news/697102"
+     },
+     {
+      "title": "선라이즈 공식 — 본예고 30초 ver.",
+      "link": "https://www.youtube.com/watch?v=AewVEStMRKk"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/AewVEStMRKk/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218263/z1gy3msmsrdn1sq6irdl.jpg",
+     "key": "AewVEStMRKk@0.0"
+    },
+    "px": {
+     "vid": "AewVEStMRKk",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218284/plot_studio/hvlqe2ihu27ujuxmtqg6.mp4",
+     "off": 0.0,
+     "end": 30.0,
+     "full": 30.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-09T18:58+09:00"
+    }
+   },
    "pick": {
     "rank": 2,
-    "why": "한국에서도 큰 작품의 4기·극장판 2탄 동시 발표 · 어제 저녁 나온 소식이라 새롭다",
-    "at": "2026-11-09T10:47+09:00"
+    "why": "어제 완성 피로 상영회 · 〈공각기동대〉 감독의 말이 있는 사람 소식 · 공식 예고편 숏폼까지",
+    "at": "2026-11-09T18:56+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:imase-beautiful-life-mv",
+    "account": "음악나탈리",
+    "url": "https://news.yahoo.co.jp/articles/ff5536136f87351c09f04f3c670b373522f90564",
+    "image": null,
+    "head": "imaseが誕生日に新曲「It's a Beautiful Life」MVを公開、直前にはタイトルが長すぎる生配信も",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-09T18:56+09:00",
+   "key": "d469843f",
+   "by": "claude",
+   "subjects": [
+    "imase"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "오늘의 노래 — 이마세가 런던에서 찍은 'It's a Beautiful Life' MV를 생일 밤에 프리미어 공개한다",
+    "why": "11/9 21:00 유튜브 프리미어 (공식 채널에 영상 자리 있음) · 음악나탈리·리얼사운드·Billboard JAPAN · 공식 티저로 숏폼"
+   },
+   "added": "claude",
+   "added_at": "2026-11-09T18:56+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n이마세(imase)가 생일 밤에 'It's a Beautiful Life' 뮤직비디오를 공개합니다.\n\n10월 2일 낸 EP [はてな]에 실린 곡인데요, 뮤직비디오는 전부 영국 런던에서 찍었습니다. 현지에서 보낸 일상과 공원에서 축구를 하는 모습이 담겼습니다.\n\n공개 직전인 저녁 7시 30분부터는 유튜브에서 생일 기념 방송을 열고, 방송이 끝나면 그대로 뮤직비디오 프리미어로 넘어갑니다.\n\n공개는 11월 9일 밤 9시(일본 기준), imase 공식 유튜브 채널.\n\n#암낫오타쿠 #이마세 #imase #ItsaBeautifulLife #はてな #제이팝\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794218236/riygln5axyxo5yjgh8ll.jpg\n제목: 이마세, 런던에서 찍은|MV 생일 밤에 공개\n부제: 'It's a Beautiful Life' 11월 9일 밤 9시\n출처: 리얼사운드\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794218244/plot_studio/gel2hhqwjcz3tk1cb3f7.mp4\n소제목: \n본문: \n출처: imase\n",
+    "caption": "이마세(imase)가 생일 밤에 'It's a Beautiful Life' 뮤직비디오를 공개합니다.\n\n10월 2일 낸 EP [はてな]에 실린 곡인데요, 뮤직비디오는 전부 영국 런던에서 찍었습니다. 현지에서 보낸 일상과 공원에서 축구를 하는 모습이 담겼습니다.\n\n공개 직전인 저녁 7시 30분부터는 유튜브에서 생일 기념 방송을 열고, 방송이 끝나면 그대로 뮤직비디오 프리미어로 넘어갑니다.\n\n공개는 11월 9일 밤 9시(일본 기준), imase 공식 유튜브 채널.\n\n#암낫오타쿠 #이마세 #imase #ItsaBeautifulLife #はてな #제이팝",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218236/riygln5axyxo5yjgh8ll.jpg",
+      "credit": "리얼사운드",
+      "from": "https://realsound.jp/wp-content/uploads/2026/11/20261106-imase-99.jpeg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218236/riygln5axyxo5yjgh8ll.jpg",
+      "credit": "리얼사운드",
+      "from": "https://realsound.jp/wp-content/uploads/2026/11/20261106-imase-99.jpeg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "이마세, 런던에서 찍은|MV 생일 밤에 공개",
+      "sub": "'It's a Beautiful Life' 11월 9일 밤 9시"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — imase 공식 채널 (티저 18초 전체) · MV 본편은 21:00 공개라 아직 못 봄 — 공개 뒤 본편 구간으로 바꿔도 됨",
+     "발행은 21:00 MV 공개 뒤로 — 그 전이면 캡션 '공개합니다'가 맞음"
+    ],
+    "research": [
+     {
+      "title": "음악나탈리(야후 재배포) — 생일 11/9 21:00 MV 공개, 런던 촬영, 19:30 생일 방송",
+      "link": "https://news.yahoo.co.jp/articles/ff5536136f87351c09f04f3c670b373522f90564"
+     },
+     {
+      "title": "리얼사운드 — 런던 촬영 MV 생일 당일 공개, EP [はてな] 10/2 배포",
+      "link": "https://realsound.jp/2026/11/post-2577404.html"
+     },
+     {
+      "title": "Billboard JAPAN — 런던에서 전편 촬영한 MV 공개 결정 (11/7)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167239"
+     },
+     {
+      "title": "imase 공식 유튜브 — It's a Beautiful Life (Teaser)",
+      "link": "https://www.youtube.com/watch?v=3_JxfB3TP_0"
+     },
+     {
+      "title": "imase 공식 유튜브 — It's a Beautiful Life (Music Video)",
+      "link": "https://www.youtube.com/watch?v=_YGD17Kwq7A"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218270/k7wtqhhmor7et9aqffdd.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218273/ujk0swx3bgzbodnp7bhh.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218270/ahivjzxivrde29qtszuw.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218270/k7wtqhhmor7et9aqffdd.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-09T18:57+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218271/plot_studio/yes0kgzgst9fmsozfql3.mp4"
+     },
+     "v": {
+      "A": "25baeb00"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=3_JxfB3TP_0\n구간: 0:00-0:18\n곡: 새 뮤직비디오 첫 장면\n아티스트: 이마세가 런던에서 찍은\n피처링:\n후킹: \n출처: imase",
+    "caption": "이마세(imase) 'It's a Beautiful Life' 뮤직비디오 티저입니다.\n\n10월 EP [はてな]에 실린 곡인데요, 뮤직비디오는 전부 런던에서 찍었고 생일인 11월 9일 밤 9시(일본 기준) 유튜브에서 공개됩니다.\n\n영상은 imase 공식 채널입니다.\n\n#암낫오타쿠 #이마세 #imase #ItsaBeautifulLife #오늘의노래",
+    "hooks": {
+     "A": "이마세가 런던에서 찍은 / 새 뮤직비디오 첫 장면",
+     "B": "생일 밤에 공개하는 / 이마세의 새 MV",
+     "C": "런던 공원에서 공 차는 / 이마세의 새 MV"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=3_JxfB3TP_0",
+     "credit": "imase",
+     "range": [
+      0.0,
+      18.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — imase 공식 채널 (티저 18초 전체) · MV 본편은 21:00 공개라 아직 못 봄 — 공개 뒤 본편 구간으로 바꿔도 됨",
+     "발행은 21:00 MV 공개 뒤로 — 그 전이면 캡션 '공개합니다'가 맞음"
+    ],
+    "research": [
+     {
+      "title": "음악나탈리(야후 재배포) — 생일 11/9 21:00 MV 공개, 런던 촬영, 19:30 생일 방송",
+      "link": "https://news.yahoo.co.jp/articles/ff5536136f87351c09f04f3c670b373522f90564"
+     },
+     {
+      "title": "리얼사운드 — 런던 촬영 MV 생일 당일 공개, EP [はてな] 10/2 배포",
+      "link": "https://realsound.jp/2026/11/post-2577404.html"
+     },
+     {
+      "title": "Billboard JAPAN — 런던에서 전편 촬영한 MV 공개 결정 (11/7)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167239"
+     },
+     {
+      "title": "imase 공식 유튜브 — It's a Beautiful Life (Teaser)",
+      "link": "https://www.youtube.com/watch?v=3_JxfB3TP_0"
+     },
+     {
+      "title": "imase 공식 유튜브 — It's a Beautiful Life (Music Video)",
+      "link": "https://www.youtube.com/watch?v=_YGD17Kwq7A"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/3_JxfB3TP_0/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218276/fefdydyc7u2hhcdhxyza.jpg",
+     "key": "3_JxfB3TP_0@0.0"
+    },
+    "px": {
+     "vid": "3_JxfB3TP_0",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218291/plot_studio/gssnowdoiklcmyhr5bzj.mp4",
+     "off": 0.0,
+     "end": 18.0,
+     "full": 18.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-09T18:58+09:00"
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "오늘 밤 9시 공개되는 MV · 공식 티저로 바로 숏폼 · 오늘의 노래 칸",
+    "at": "2026-11-09T18:56+09:00"
    },
    "corner_name": "소식"
   }
@@ -383,14 +816,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-09T10:47+09:00"
+  "at": "2026-11-09T18:58+09:00"
  },
  "queue": {
-  "next": "2026-11-09T10:49+09:00",
+  "next": "2026-11-09T19:00+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
