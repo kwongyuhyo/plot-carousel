@@ -2641,6 +2641,100 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-88899071",
+    "account": "@갈등·반응",
+    "url": "https://sports.khan.co.kr/article/202611100809013?pt=nv",
+    "image": null,
+    "head": "청룡 신인남우상 후보 스윙스, 본인 유튜브에서 '화제성 덕분, 기대 안 한다' 소감",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T08:45+09:00",
+   "key": "8245186d",
+   "by": "claude",
+   "subjects": [
+    "스윙스"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "청룡 신인남우상 후보 스윙스가 본인 유튜브에서 직접 밝힌 '내 주제를 안다' 소감",
+    "why": "9일 공개 영상 속 소감이 10일 아침 기사로 번지며 반응 급증 — 후보 발표 날 인스타 글과 같은 결"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T08:45+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=IEMr9rGmxjs\n구간: 0:08-1:06\n곡: 직접 밝힌 후보 소감\n아티스트: 청룡 신인상 후보 스윙스\n피처링:\n후킹: \n출처: 에겐남 스윙스\n자막: 자동",
+    "caption": "스윙스(@itsjustswings)가 청룡영화상 신인남우상 후보에 오른 소감을 직접 밝혔습니다.\n\n9일 본인 유튜브 채널 '에겐남 스윙스'의 〈광고왕 문지훈〉 첫 회에서 제작진의 축하를 받은 스윙스는, 함께 오른 네 후보가 쟁쟁해 기대는 하지 않는다며 후보에 오른 건 화제성과 어그로 덕분일 거라고 웃었는데요, 후보 발표 날인 10월 28일 인스타그램에 상을 기대할 만큼 메타인지가 부족하진 않다고 적었던 것과 같은 결입니다.\n\n스윙스는 본명 문지훈으로 영화 〈타짜: 벨제붑의 노래〉에서 첫 상업영화 연기를 했습니다. 그는 \"나도 내 주제를 안다\"며, 아직 멀었고 이제 시작했다는 말로 신인 배우의 마음을 전했습니다.\n\n제47회 청룡영화상 시상식은 11월 25일 여의도 KBS홀에서 열립니다.\n\n#PLOT #스윙스 #문지훈 #청룡영화상 #타짜벨제붑의노래 #에겐남스윙스",
+    "hooks": {
+     "A": "청룡 신인상 후보 스윙스 / 직접 밝힌 후보 소감",
+     "B": "첫 상업영화로 청룡 / 신인상 후보 오른 스윙스",
+     "C": "축하 인사에 웃음부터 / 터뜨린 스윙스"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=IEMr9rGmxjs",
+     "credit": "에겐남 스윙스",
+     "range": [
+      8.0,
+      66.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 에겐남 스윙스 (본인 채널)",
+     "구간 0:08-1:06 끝에 'PD분 착각 그만하라' 농담이 들어간다 — 남길지 0:46 즈음에서 끊을지 눈으로 확인"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 — 스윙스, 청룡 신인 후보 소감 “나도 내 주제 알아” (11/10)",
+      "link": "https://sports.khan.co.kr/article/202611100809013?pt=nv"
+     },
+     {
+      "title": "엑스포츠뉴스 — 스윙스, 청룡영화제 신인상 후보 올랐지만 '화제성·어그로 덕분' (11/10)",
+      "link": "https://www.xportsnews.com/article/2217783"
+     },
+     {
+      "title": "스포티비뉴스 — '나도 내 주제 알아'..'타짜' 스윙스 (11/9)",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1018943"
+     },
+     {
+      "title": "위키트리 — 단번에 청룡 신인상 후보 오른 스윙스 (10/28)",
+      "link": "https://www.wikitree.co.kr/articles/1169792"
+     },
+     {
+      "title": "에겐남 스윙스 — 영포자 가르치다 인내심 바닥난 유학파 스윙스 [광고왕 문지훈 EP.1] (11/9)",
+      "link": "https://www.youtube.com/watch?v=IEMr9rGmxjs"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/IEMr9rGmxjs/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794267943/ovr0k35v23edw7oaclwe.jpg",
+     "key": "IEMr9rGmxjs@8.0"
+    },
+    "px": {
+     "vid": "IEMr9rGmxjs",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794268042/plot_studio/mbz0al78yevnyk8nvoxo.mp4",
+     "off": 0.0,
+     "end": 111.0,
+     "full": 1421.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-10T08:48+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 11
   }
  ],
  "skipped": [],
@@ -2719,7 +2813,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 8,
-    "drafts": 3,
+    "drafts": 4,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -2819,10 +2913,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T04:08+09:00"
+  "at": "2026-11-10T08:48+09:00"
  },
  "queue": {
-  "next": "2026-11-10T08:00+09:00",
+  "next": "2026-11-10T08:50+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-08T15:48+09:00"
