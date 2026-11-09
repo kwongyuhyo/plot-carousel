@@ -1,18 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-08 22:04 KST",
+ "generated_at": "2026-11-09 15:05 KST",
  "weeks": [
-  {
-   "week": "2026-W37",
-   "posts": 24,
-   "reach": 710241,
-   "saved": 2233,
-   "shares": 12353,
-   "followers": 2830,
-   "followers_delta": 118,
-   "reach_total": 1882387,
-   "top": "https://www.instagram.com/p/Dcz7Gujj_uK/"
-  },
   {
    "week": "2026-W38",
    "posts": 12,
@@ -89,6 +78,17 @@
    "followers_delta": 17,
    "reach_total": 529889,
    "top": "https://www.instagram.com/p/DfJyJp7FOdu/"
+  },
+  {
+   "week": "2026-W46",
+   "posts": 50,
+   "reach": 73736,
+   "saved": 158,
+   "shares": 1033,
+   "followers": 3102,
+   "followers_delta": 11,
+   "reach_total": 436713,
+   "top": "https://www.instagram.com/reel/DfZZIpiiAjB/"
   }
  ],
  "kinds": [
@@ -102,39 +102,48 @@
    "stable": true
   },
   {
-   "kind": "기타",
-   "n": 90,
-   "weeks": 12,
-   "multiple": 1.07,
-   "low": 1.03,
-   "high": 1.13,
+   "kind": "추천·모음",
+   "n": 8,
+   "weeks": 5,
+   "multiple": 1.55,
+   "low": 1.02,
+   "high": 2.08,
    "stable": true
   },
   {
    "kind": "갈등·반응",
-   "n": 30,
-   "weeks": 7,
-   "multiple": 1.04,
-   "low": 0.88,
+   "n": 34,
+   "weeks": 8,
+   "multiple": 1.14,
+   "low": 0.9,
    "high": 1.28,
    "stable": false
   },
   {
+   "kind": "기타",
+   "n": 98,
+   "weeks": 13,
+   "multiple": 1.1,
+   "low": 1.07,
+   "high": 1.14,
+   "stable": true
+  },
+  {
    "kind": "발매·신보",
-   "n": 67,
-   "weeks": 11,
+   "n": 91,
+   "weeks": 12,
    "multiple": 0.93,
    "low": 0.91,
-   "high": 0.99,
+   "high": 0.98,
    "stable": true
   },
   {
    "kind": "공연·페스티벌",
-   "n": 39,
-   "weeks": 8,
-   "multiple": 0.8,
-   "low": 0.61,
-   "high": 0.88,
+   "n": 50,
+   "weeks": 9,
+   "multiple": 0.78,
+   "low": 0.7,
+   "high": 0.8,
    "stable": true
   }
  ],
@@ -273,6 +282,356 @@
   }
  ],
  "published": [
+  {
+   "id": "DfRs_BvDnZz",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 699,
+   "head": "리센느(@rescene_official) 'With' 뮤비, 장면으로 다시 보기 🐾\n\n오늘(3일) 저녁 6시 공개된 미니 4집 [PULSE] 타"
+  },
+  {
+   "id": "DfRuHWjFNZu",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 504,
+   "head": "릴 테카(Lil Tecca)가 X에 'ALBUM'이라는 한 단어를 남긴 것으로 알려졌습니다.\n\n새 앨범을 알리는 신호로 읽히는데요, 그 한 단어"
+  },
+  {
+   "id": "DfRuW3FFGmo",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 430,
+   "head": "위켄드(@theweeknd)의 신곡 'Hong Kong'은 33년 전 왕페이의 노래 위에 지어졌습니다.\n\n10월 24일 홍콩 카이탁 스타디움 공"
+  },
+  {
+   "id": "DfR-onYP2Om",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 699,
+   "head": "리센느(@rescene_official)가 미니 4집 [PULSE]의 타이틀곡 'With' 뮤직비디오를 공개했습니다.\n\n올여름 'LOVE ATT"
+  },
+  {
+   "id": "DfSGo5ekvF_",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 2788,
+   "head": "저스트뮤직 [파급효과2]의 커버 속 배는 노리고 그린 것이었습니다.\n\n레이블 채널 AP Alchemy가 3일 공개한 컴필레이션 작업기 인터뷰에서"
+  },
+  {
+   "id": "DfSKBp7PSmZ",
+   "week": "2026-W46",
+   "kind": "추천·모음",
+   "reach": 1501,
+   "head": "137번째 오늘의 노래 | 2026.11.03\n\n루시갱의 '우비소녀'는 처음부터 주혜린(@joohyelyn)의 목소리를 염두에 두고 만든 곡입니"
+  },
+  {
+   "id": "DfTmHntGT0W",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 371,
+   "head": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) 누적 재생 5억 회를 넘었습니다.\n\n2023년 7월 두"
+  },
+  {
+   "id": "DfToE-QCkFh",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 412,
+   "head": "제프 버넷이 내년 2월, 3년 만에 한국을 찾습니다.\n\n2013년 첫 단독 내한과 서울재즈페스티벌 무대로 한국과 인연을 맺은 그는 딘·크러쉬(@"
+  },
+  {
+   "id": "DfTrxyUDe-6",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 676,
+   "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습니다.\n\n조이뉴스24가 창간 22주년을 맞아 엔터사·방"
+  },
+  {
+   "id": "DfT5JkVlDW1",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 515,
+   "head": "리센느(@rescene_official)의 'With'가 디즈니 애니메이션 〈헥스: 마녀왕국〉의 엔딩 크레딧에 흐릅니다.\n\n'With'는 지난 "
+  },
+  {
+   "id": "DfT6ScTDsKU",
+   "week": "2026-W46",
+   "kind": "갈등·반응",
+   "reach": 489,
+   "head": "봉제인간의 신곡 '아등바등'은 공연장에서 먼저 불린 노래입니다.\n\n지난해 3월 첫 단독 공연 '분노의 재봉틀'에서 봉제인간은 이 곡을 가제를 단"
+  },
+  {
+   "id": "DfUCjBNlHV2",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 1328,
+   "head": "뉴진스(@newjeans_official) 다섯 멤버가 함께 출원한 'NJZ' 상표 54건이 모두 등록 거절됐습니다.\n\n다섯 멤버는 어도어와 전"
+  },
+  {
+   "id": "DfUDKdFghoH",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 766,
+   "head": "리센느(@rescene_official) 다섯 멤버가 디즈니 애니메이션 〈헥스: 마녀왕국〉의 신입 마녀 빌리로 변신했습니다.\n\n디즈니가 지난달 "
+  },
+  {
+   "id": "DfUECNDlU-K",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 4211,
+   "head": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@spotifykr) 누적 재생 5억 회를 넘었습니다.\n\n신우석(@ernes"
+  },
+  {
+   "id": "DfULg0RFNW-",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 6772,
+   "head": "김하온(@noahmik)이 자신을 학습한 AI와 같은 무대에서 맞붙습니다.\n\nSBS 창사 36주년 특집 다큐멘터리 〈나의 이방인〉 3부 'AI,"
+  },
+  {
+   "id": "DfURco5DBUE",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 5239,
+   "head": "기리보이(@giriboy91), 씨잼(@cjadoublem), 블랙넛(@daiwoongkim)의 EP [asdf] 타이틀곡 'triple'입니다"
+  },
+  {
+   "id": "DfUSy9-FK37",
+   "week": "2026-W46",
+   "kind": "갈등·반응",
+   "reach": 963,
+   "head": "랩비트가 내년 4월, 사흘로 돌아옵니다.\n\n올해 6월 문화비축기지에서 이틀간 열린 랩비트는 라인업이 나오기도 전에 블라인드 티켓이 매진됐는데요,"
+  },
+  {
+   "id": "DfUTioJFPQZ",
+   "week": "2026-W46",
+   "kind": "갈등·반응",
+   "reach": 1749,
+   "head": "양홍원(@yanghongwon)이 4일 인스타그램 스토리에 육아에 관한 책의 한 페이지를 올렸습니다.  사진에는 \"자녀의 무의식 세계는 부모에 "
+  },
+  {
+   "id": "DfUTlHlEwYx",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 2321,
+   "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a2o.lite)였습니다.\n\n조이뉴스24가 엔터사·방송사 종사자와 기자 등"
+  },
+  {
+   "id": "DfUckMEIXUp",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 422,
+   "head": "재지팩트의 노래에는 이십 대의 하루가 그대로 들어 있습니다.\n\n고등학생 때 힙합 동아리로 알게 된 빈지노(@realisshoman)와 시미 트와"
+  },
+  {
+   "id": "DfUh4qcjvuC",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 1374,
+   "head": "듀스가 31년 만에 정규 4집을 냅니다.\n\n이번 앨범에는 AI 기술로 복원한 고(故) 김성재의 목소리가 담겼는데요, 프로듀싱은 이현도가 직접 맡"
+  },
+  {
+   "id": "DfUjgJivGUa",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 504,
+   "head": "139번째 오늘의 노래 | 2026.11.04\n\n주혜린의 '미장원'은 미용실 의자에서 시작하는 노래입니다.\n\n\"이리 와서 여기 좀 앉아 봐\" 하"
+  },
+  {
+   "id": "DfUm3ptD-KN",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 426,
+   "head": "139번째 오늘의 노래 | 2026.11.04\n\n주혜린의 '미장원'은 미용실 의자에서 시작하는 노래입니다.\n\n\"이리 와서 여기 좀 앉아 봐\" 하"
+  },
+  {
+   "id": "DfWOIaHGbw0",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 396,
+   "head": "극장판 〈체인소 맨 레제편〉의 음악이 LP로 국내 예약 판매를 시작했습니다.\n\n음악을 맡은 우시오 켄스케는 한 인터뷰에서 이번 영화에 풀 오케스"
+  },
+  {
+   "id": "DfWWJM3lLh_",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 347,
+   "head": "혁오(@hyukohofficial)가 6년 만의 정규 앨범 [33]을 11월 25일 오후 6시에 냅니다.\n\n2014년 데뷔 EP [20]부터 ["
+  },
+  {
+   "id": "DfWg654HA4S",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 599,
+   "head": "방탄소년단(@bts.bighitofficial) 'SWIM'을 둘러싼 표절 소송이 넉 달 만에 취하됐습니다.\n\n미국 작곡가 스티브 쿠퍼, 존 샌"
+  },
+  {
+   "id": "DfWw4KLFDQ4",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 430,
+   "head": "악뮤가 새해 첫 무대를 '소문의 낙원' 앙코르로 엽니다.\n\n2027년 1월 2일과 3일 고양 킨텍스 제1전시장 3·4홀에서 앙코르 콘서트를 여는"
+  },
+  {
+   "id": "DfW81l0nEE1",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 2531,
+   "head": "한로로(@hanr0r0)가 오늘(5일) 새 싱글 '물음표'를 발매했습니다.\n\n뮤직비디오는 한로로가 직접 쓴 시놉시스를 바탕으로 했는데요, 수영 "
+  },
+  {
+   "id": "DfXSB-XGdpv",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 386,
+   "head": "혁오(@hyukohofficial)의 새 정규 앨범 [33] 커버는 안민정 작가가 그렸습니다.\n\n멀리서 보면 의학 교과서 속 도면 같은 그림인데"
+  },
+  {
+   "id": "DfXSmIqkW4E",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 743,
+   "head": "존박(@johnparkgram)과 크러쉬(@crush9244)가 한강에서 '삐그덕'을 함께 불렀습니다.\n\n10월 30일 존박의 유튜브 채널 〈존"
+  },
+  {
+   "id": "DfX5r34DyGq",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 446,
+   "head": "140번째 오늘의 노래 | 2026.11.05\n\n혁오(@hyukohofficial)의 시작은 스무 살의 무기력한 하루였습니다.\n\n2014년 9월"
+  },
+  {
+   "id": "DfYJVCODhJG",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 387,
+   "head": "140번째 오늘의 노래 | 2026.11.05\n\n혁오(@hyukohofficial)의 시작은 스무 살의 무기력한 하루였습니다.\n\n2014년 9월"
+  },
+  {
+   "id": "DfYlMaqguw4",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 534,
+   "head": "관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가 두 달 만에 다시 문을 열었습니다.\n\n오방가르드는 지난 8월 관객들이 "
+  },
+  {
+   "id": "DfY1U_SFNFC",
+   "week": "2026-W46",
+   "kind": "갈등·반응",
+   "reach": 679,
+   "head": "미국 뉴욕타임스가 뉴진스(@newjeans_official)의 전속계약서를 입수해 공개했습니다.\n\n다섯 멤버가 만 14~17세이던 2022년 어"
+  },
+  {
+   "id": "DfZGDBSFKrb",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 454,
+   "head": "싸이의 '강남스타일'과 '젠틀맨'이 AI 음악 서비스 수노(Suno)를 상대로 한 저작권 소송의 침해 목록에 올랐습니다.\n\n유니버설·소니 계열 "
+  },
+  {
+   "id": "DfZNuOFFKNq",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 403,
+   "head": "로꼬(@satgotloco)가 12월 8일 오후 6시 새 EP [쉬운생각]을 냅니다.\n\n로꼬는 인스타그램에 \"조심스럽지만 기쁜 소식\"이라며 앨범"
+  },
+  {
+   "id": "DfZO-ZKP5RF",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 4299,
+   "head": "141번째 오늘의 노래 | 2026.11.06\n\n잔나비의 '가을밤에 든 생각'이 오늘로 발매 6년을 맞았습니다.\n\n2020년 11월 6일, 정규"
+  },
+  {
+   "id": "DfZS-1bFESw",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 299,
+   "head": "141번째 오늘의 노래 | 2026.11.06\n\n잔나비의 '가을밤에 든 생각'이 오늘로 발매 6년을 맞았습니다.\n\n2020년 11월 6일, 정규"
+  },
+  {
+   "id": "DfZUoNXlEnz",
+   "week": "2026-W46",
+   "kind": "추천·모음",
+   "reach": 624,
+   "head": "베스티(@bestie_ofcl)의 13년 전 노래가 대만 차트 맨 위에 올랐습니다.\n\n2013년에 나온 '연애의 조건'은 숏폼에서 다시 쓰이며 "
+  },
+  {
+   "id": "DfZWYAaES7c",
+   "week": "2026-W46",
+   "kind": "추천·모음",
+   "reach": 468,
+   "head": "주혜린(@joohyelyn)의 노래 속 사랑은 대개 처음이 아닙니다.\n\n설렘보다 같은 사과, 익숙한 습관, 반복되는 다툼이 먼저 나오는데요, 그"
+  },
+  {
+   "id": "DfZZIpiiAjB",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 18610,
+   "head": "룩삼이 리센느(@rescene_official)의 새 앨범을 두고 \"혼자 메타를 거슬렀다\"고 말했습니다.\n\n지난 3일 나온 미니 4집 [PULS"
+  },
+  {
+   "id": "DfZb9TzFECp",
+   "week": "2026-W46",
+   "kind": "기타",
+   "reach": 615,
+   "head": "리센느(@rescene_official) 빵을 사는 사람 열 명 중 일곱은 30대 이상입니다.\n\nCU 집계로는 40대가 가장 큰 비중이었고 남성"
+  },
+  {
+   "id": "DfZf8aZlD6k",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 468,
+   "head": "데이식스(@day6kilogram)가 10월 인천에서 다섯 번째 팬미팅을 마쳤습니다.\n\n그룹으로 확정된 다음 공연은 아직 없는데요, 연말까지 남"
+  },
+  {
+   "id": "DfZmTPsmWis",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 746,
+   "head": "아일릿(@illit_official)이 미니 5집 [BREAK EVEN]으로 자체 최고 초동 기록을 새로 썼습니다.\n\n한터차트 집계로 발매 첫 "
+  },
+  {
+   "id": "DfbSnShl-Vb",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 887,
+   "head": "배우 이동휘가 이무진의 새 뮤직비디오에 나옵니다.\n\n6일 공개된 '밤무대' 티저에서 이동휘는 어두운 밤길을 혼자 걷다 불꽃을 발견하고 뛰어다니는"
+  },
+  {
+   "id": "Dfcl4ioD0-u",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 498,
+   "head": "142번째 오늘의 노래 | 2026.11.07\n\n자이언티의 'V (Peace)'는 사진 앞 브이 포즈에서 시작된 곡입니다.\n\n사진을 찍을 때 많"
+  },
+  {
+   "id": "DfcnLEaDBnR",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 1108,
+   "head": "배우 이동휘가 이무진의 새 뮤직비디오에 나옵니다.\n\n6일 공개된 '밤무대' 티저 속 이동휘는 어두운 밤길을 혼자 걷다 불꽃을 발견하고 뛰어다니는"
+  },
+  {
+   "id": "DfcozO5jgoj",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 713,
+   "head": "뉴진스(@newjeans_official)의 'Cool With You'와 'ASAP'를 함께 쓴 파인이 자기 앨범으로 돌아왔습니다.\n\n덴마크 "
+  },
+  {
+   "id": "DfcrqowAcCz",
+   "week": "2026-W46",
+   "kind": "발매·신보",
+   "reach": 611,
+   "head": "142번째 오늘의 노래 | 2026.11.07\n\n자이언티의 'V (Peace)'는 사진 앞 브이 포즈에서 시작된 곡입니다.\n\n사진을 찍을 때 많"
+  },
+  {
+   "id": "DfeJitmD9ro",
+   "week": "2026-W46",
+   "kind": "공연·페스티벌",
+   "reach": 296,
+   "head": "마이 케미컬 로맨스(@mychemicalromance)가 18년 만에 한국 무대에 섰습니다.\n\n7일 인천 파라다이스시티 컬처파크에서 열린 이번 "
+  },
   {
    "id": "DfEVs9EFKvw",
    "week": "2026-W45",
@@ -1322,364 +1681,14 @@
    "kind": "공연·페스티벌",
    "reach": 1029,
    "head": "아이유(@dlwlrma)가 돌아옵니다.\n\n지난 7월 귀 질환으로 정규 6집 발매를 미루고 9월 콘서트까지 취소했던 아이유가,\n오는 9월 10일 "
-  },
-  {
-   "id": "Dc5jQfLD-uu",
-   "week": "2026-W37",
-   "kind": "인물해부",
-   "reach": 130210,
-   "head": "올여름 연프를 통틀어 가장 많이 회자된 인물을 꼽자면 단연 로얄44(@royal44k)인데요.\n\n〈래퍼 여친 구함 : KISS or DISS〉에"
-  },
-  {
-   "id": "Dc5kxcaDzKT",
-   "week": "2026-W37",
-   "kind": "기타",
-   "reach": 847,
-   "head": "RAP:PUBLIC이 돌아옵니다.\n\n티빙 오리지널 〈RAP:PUBLIC〉의 시즌 2 제작이 확정됐습니다. \n2024년 시즌 1은 '총과 돈'을 "
-  },
-  {
-   "id": "Dc5lcMcSFeB",
-   "week": "2026-W37",
-   "kind": "발매·신보",
-   "reach": 1787,
-   "head": "[NEW RELEASE] 식케이 X Lil Moshpit- U\n\n식케이(@younghotyellow94)와 Lil Moshpit(@hwimmm,"
-  },
-  {
-   "id": "Dc5l4A4PIBe",
-   "week": "2026-W37",
-   "kind": "갈등·반응",
-   "reach": 1842,
-   "head": "[NEW RELEASE] 권은비- DEJAVU\n\n권은비(@kwoneunbi.official)의 신곡 'DEJAVU' 음원이 발매되었습니다.\n처음"
-  },
-  {
-   "id": "Dc5q8yEvI2d",
-   "week": "2026-W37",
-   "kind": "발매·신보",
-   "reach": 2696,
-   "head": "[NEW RELEASE] 지수- CLICK\n\n지수(@sooyaaa__)의 신곡 'CLICK' 음원이 발매되었습니다.\n첫 정규앨범의 선공개 싱글입"
-  },
-  {
-   "id": "Dc5rN7evHS-",
-   "week": "2026-W37",
-   "kind": "발매·신보",
-   "reach": 1621,
-   "head": "[NEW RELEASE] 리사- SaWaDiKa\n\n리사(@lalalalisa_m)의 신곡 'SaWaDiKa' 음원이 발매되었습니다.\n10월 23"
-  },
-  {
-   "id": "Dc5scRej6Sh",
-   "week": "2026-W37",
-   "kind": "인물해부",
-   "reach": 47243,
-   "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official) 안에서 웃음의 지분을 가장 크게 가져"
-  },
-  {
-   "id": "Dc5wCfmPPss",
-   "week": "2026-W37",
-   "kind": "갈등·반응",
-   "reach": 2504,
-   "head": "아이유가 컴백에 앞서 영상을 공개했습니다.\n\n아이유(@dlwlrma)가 9월 10일 오후 6시 새 디지털 싱글을 발매합니다. 소속사 이담엔터테인"
-  },
-  {
-   "id": "Dc5x8J7j-8I",
-   "week": "2026-W37",
-   "kind": "추천·모음",
-   "reach": 8323,
-   "head": "예능으로 먼저 알게 됐다면, 음악은 지금부터입니다.\n\n<쇼미더머니12>를 비롯해 〈래퍼 여친 구함〉까지 올해 정말 다양한 프로그램으로 우리 앞에"
-  },
-  {
-   "id": "Dc8LxwIv_Xg",
-   "week": "2026-W37",
-   "kind": "기타",
-   "reach": 20596,
-   "head": "빅나티(@bignaughtyboi)가 ‘폴킴(@pkalbum)의 남은밤’에 출연해서 스파이더맨에 대한 이야기를 했습니다.\n스파이더맨을 보고 펑펑"
-  },
-  {
-   "id": "Dc8R1W-vgB8",
-   "week": "2026-W37",
-   "kind": "공연·페스티벌",
-   "reach": 3102,
-   "head": "브루노 마스(@brunomars)가 2027년 5월 내한을 확정하고 MBC 14F와 인터뷰를 가졌는데요,\n서울 공연에서 준비한 특별 무대에 대한"
-  },
-  {
-   "id": "Dc8ZaIBy9Hg",
-   "week": "2026-W37",
-   "kind": "기타",
-   "reach": 12697,
-   "head": "두 사람이 드디어 같이 춤을 췄습니다.\n\n식케이(@younghotyellow94)와 그의 연인이자, 댄서 우와(@uwakitadera)가 함께 "
-  },
-  {
-   "id": "Dc8hsMQD6yN",
-   "week": "2026-W37",
-   "kind": "공연·페스티벌",
-   "reach": 1011,
-   "head": "도시 하나가 일주일을 통째로 내줬습니다.\n\n로스앤젤레스시가 9월 1일부터 8일까지를 'BTS 위크'로 공식 선포했습니다. 방탄소년단(@bts.b"
-  },
-  {
-   "id": "Dc-3gvGjywQ",
-   "week": "2026-W37",
-   "kind": "인물해부",
-   "reach": 140427,
-   "head": "리센느 제나 나무위키 털기\n\n올해 가장 자주 언급된 걸그룹은 역시 리센느인데요.\n\n리센느(@rescene_official)의 막내 제나는 경주 "
-  },
-  {
-   "id": "Dc--o3mj5OO",
-   "week": "2026-W37",
-   "kind": "갈등·반응",
-   "reach": 9482,
-   "head": "리드머가 1.5점을 줬습니다.\n\n지난 8월 28일 발매된 수퍼비의 정규 5집 [before the m.s.g.a]가 리드머에서 5점 만점에 1."
-  },
-  {
-   "id": "DdBpmENPa1l",
-   "week": "2026-W37",
-   "kind": "인물해부",
-   "reach": 88279,
-   "head": "양홍원의 꿈은 본인이 아니었다.\n\n원현주에 대하여 수줍음이 많고 말수도 적던 사람이 어떻게 이렇게 달라졌냐는 스윙스의 질문에, \"엄마가 돼서\"라"
-  },
-  {
-   "id": "DdBrBaezhOr",
-   "week": "2026-W37",
-   "kind": "기타",
-   "reach": 3589,
-   "head": "노엘의 외출 전 루틴?\n\n노엘(@noel____________)이 유튜브 채널 〈좋은 녀석들〉에 30초짜리 영상을 올렸습니다. \n차를 샀는데 어"
-  },
-  {
-   "id": "DdEEWMJj7zk",
-   "week": "2026-W37",
-   "kind": "인물해부",
-   "reach": 15971,
-   "head": "리센느 메이 나무위키 털기\n\n2026년을 리센느의 해라고 불러도 무리가 없을 텐데요.\n\n리센느(@rescene_official)의 메이는 \"기회"
-  },
-  {
-   "id": "DdEJ9gODzYI",
-   "week": "2026-W37",
-   "kind": "발매·신보",
-   "reach": 744,
-   "head": "김심야(@ximvol)가 9일 오후 6시 두 번째 정규앨범 [도그마]를 공개했습니다. 총 10곡으로, 프로듀싱팀 사운드 서플라이 서비스가 전곡에"
-  },
-  {
-   "id": "DcisK2Hj35L",
-   "week": "2026-W36",
-   "kind": "공연·페스티벌",
-   "reach": 4251,
-   "head": "지드래곤(@xxxibgdrgn)이 빅뱅 20주년 월드투어 콘서트에 독립, 참정유공자 후손과 교정공무원을 초청했습니다.\n\n이번 초청은 지드래곤이 "
-  },
-  {
-   "id": "Dciuw1Nj_5x",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 23012,
-   "head": "우리는 양홍원을 시인 래퍼라고 부릅니다.\n한번 듣고 끝나는 것이 아니라, 오랫동안 여운이 남아 마음에 맴도는 시적인 가사를 쓰곤 해서 붙은 별명"
-  },
-  {
-   "id": "DcivPt3D7Nx",
-   "week": "2026-W36",
-   "kind": "공연·페스티벌",
-   "reach": 779,
-   "head": "브루노 마스(@brunomars)가 내년 5월 내한을 확정지었습니다.\n일자는 2027년 5월 21일, 22일, 25일, 26일 총 4회차로 준비"
-  },
-  {
-   "id": "Dck7QkuCeHJ",
-   "week": "2026-W36",
-   "kind": "갈등·반응",
-   "reach": 95851,
-   "head": "이 회사 재미있다.\n\n최근 한 인스타그램 계정의 스토리로 올라와 소소하게 화제가 된 사진인데요.\n바로 KC(@kcthecompany)사옥 벽에 "
-  },
-  {
-   "id": "DclAcGwCee3",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 36897,
-   "head": "힙합과 바다, 둘 다 좋아하신다면 10월 넷째 주 토요일을 비워두셔야겠습니다.\n\n오는 10월 24일 강릉 경포해변 중앙광장에서 '강원 RED F"
-  },
-  {
-   "id": "DclH4jqpakD",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 3887,
-   "head": "[NEW RELEASE] 윈터- 여름의 속도\n\n윈터 (@imwinter)의 신곡 '여름의 속도 (Speed of Summer)' 음원이 발매되었"
-  },
-  {
-   "id": "DclR1PiCYsA",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 18277,
-   "head": "올해 가장 주목받는 래퍼를 한명 뽑자면, 아마 나우아임영(@now_im_young)일 것입니다.\n지난해 KC 합류부터 올해 쇼미더머니 12 준우"
-  },
-  {
-   "id": "DclSfT9porE",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 2424,
-   "head": "[NEW RELEASE] 소수빈- I Should've Said\n\n지나고 나서야 보이는 마음들이 있다. 조금 더 좋은 말을 해줄 걸, \n괜찮다고"
-  },
-  {
-   "id": "DclSkAEJrZ5",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 1074,
-   "head": "[NEW RELEASE] HYUKOH- KoK\n\nHYUKOH (혁오, @hyukohofficial)의 신곡 'KoK' 음원이 발매되었습니다.\n\n"
-  },
-  {
-   "id": "DclT6WTptVc",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 2301,
-   "head": "[NEW RELEASE] 수퍼비- m.s.g.a freestyle\n\n수퍼비 (SUPERBEE, @originalgimchi)의 새 앨범 [bef"
-  },
-  {
-   "id": "DclUFVPpSdb",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 2704,
-   "head": "[NEW RELEASE] 제니- FALLEN ANGEL\n\n제니 (JENNIE, @jennierubyjane)의 신곡 'FALLEN ANGEL' "
-  },
-  {
-   "id": "DcqQ5T1jy_f",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 28851,
-   "head": "이번 8월 가장 화제의 프로그램이었던 Mnet <래퍼 여친 구함: KISS or DISS>\n그중에서 세번째 뮤즈 위성희와 연인관계로 이어진 KC"
-  },
-  {
-   "id": "DcqelnTvfWn",
-   "week": "2026-W36",
-   "kind": "기타",
-   "reach": 2580,
-   "head": "스포티파이 오늘의 차트\n\n뜨거웠던 여름이 지나가는 8월 말. \n오늘 한국의 스포티파이 사용자들이 가장 사랑한 음악은 무슨 곡이었을까요?\n스포티파"
-  },
-  {
-   "id": "DcrpILbE5wn",
-   "week": "2026-W36",
-   "kind": "공연·페스티벌",
-   "reach": 1286,
-   "head": "미국의 래퍼, 싱어송라이터이자 저스틴 비버(@lilbieber)가 피처링 한 Mood로 잘 알려진 24kGoldn(@24kgoldn)가 인스타그"
-  },
-  {
-   "id": "Dcs_4cljw0W",
-   "week": "2026-W36",
-   "kind": "기타",
-   "reach": 1044,
-   "head": "또 다시 보여주기 위해 식케이와 릴 모쉬핏이 돌아옵니다.\n\n[K-FLIP+]라는 명반을 만들어내며, 지난해 한국 힙합 씬을 주름잡았던 식케이(@"
-  },
-  {
-   "id": "DctFHlsvQ-P",
-   "week": "2026-W36",
-   "kind": "갈등·반응",
-   "reach": 87233,
-   "head": "저스트뮤직 파급효과를 샤라웃한 빅나티\n\n오늘(8월 31일) 저녁 공개된 빅나티(@bignaughtyboi)의 신곡 [노스탈지아]에서 빅나티가 2"
-  },
-  {
-   "id": "DctNb0xPmkB",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 6645,
-   "head": "[NEW RELEASE] BIG Naughty- 노스탈지아\nBIG Naughty (@bignaughtyboi)의 신곡 '노스탈지아' 음원이 발매"
-  },
-  {
-   "id": "DctNmo6P-FN",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 12731,
-   "head": "[NEW RELEASE] 소녀시대-효리수- Skibidi\n소녀시대-효리수의 신곡 '스키비디 (Skibidi)' 음원이 발매되었습니다.\n효연, 유"
-  },
-  {
-   "id": "DctNx7VvENZ",
-   "week": "2026-W36",
-   "kind": "공연·페스티벌",
-   "reach": 1990,
-   "head": "[NEW RELEASE] 태민- FLOAT\n태민 (@xoalsox)의 신곡 'FLOAT' 음원이 발매되었습니다.\n\n새 앨범 [PHASE 1 : "
-  },
-  {
-   "id": "DctPFsnD-wD",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 961,
-   "head": "올 여름을 뜨겁게 달군 에이티즈(@ateez_official_)의 BAD.\n그 화제의 중심에 에이티즈의 산(@choi3an)이 있었습니다.\nPL"
-  },
-  {
-   "id": "DcuN-P6E9kg",
-   "week": "2026-W36",
-   "kind": "갈등·반응",
-   "reach": 843,
-   "head": "이번 가을 강릉으로 떠날 준비 되셨나요?\n\n이번 가을을 가장 뜨겁게 만들 힙합,EDM 페스티벌 ‘RED FRYS 2026'의 일반 티켓이 8월 "
-  },
-  {
-   "id": "DcuQQb-E7oe",
-   "week": "2026-W36",
-   "kind": "추천·모음",
-   "reach": 8187,
-   "head": "지난 8월 31일 빅나티(@bignaughtyboi)가 발매한 신보 [노스탈지아]에는\n그가 어릴 적 들었던 음악들이 줄줄이 호명됩니다.\n\n그래서"
-  },
-  {
-   "id": "DcvoaqnD9_j",
-   "week": "2026-W36",
-   "kind": "공연·페스티벌",
-   "reach": 775,
-   "head": "2010년, 우리의 곁을 떠난 일본의 언더그라운드 힙합 DJ이자 프로듀서인 누자베스가 음악으로 한국에 옵니다.\n화려하고 강렬한 스타일보다 서정적"
-  },
-  {
-   "id": "DcvtwwAD_mQ",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 8858,
-   "head": "2026년도 올해를 대표하는 아이돌을 뽑자면 단연 리센느인데요.\n\n리센느(@rescene_official)의 재발견을 이끈 채널이 ‘안녕하세요원"
-  },
-  {
-   "id": "Dcvyju9ScrO",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 2564,
-   "head": "[NEW RELEASE] 청하- México\n청하 (@chungha.art)의 신곡 ‘México’ 음원이 발매되었습니다.\n반복되는 일상과 공허"
-  },
-  {
-   "id": "Dcv0-eCzvuH",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 1875,
-   "head": "[NEW RELEASE] Felix- Slow It Down\nFelix (@yong.lixx)의 신곡 ‘Slow It Down’ 음원이 발매되었"
-  },
-  {
-   "id": "Dcv2GjlzmwI",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 1956,
-   "head": "[NEW RELEASE] 82MAJOR- Like Fire\n82MAJOR (@82major_official)의 신곡 ‘Like Fire’ 음원이"
-  },
-  {
-   "id": "Dcv3Or7TnUo",
-   "week": "2026-W36",
-   "kind": "발매·신보",
-   "reach": 2583,
-   "head": "[NEW RELEASE] Rad Museum- RUN AWAY !!! (feat. Zior Park)\nRad Museum (@radmuseum)"
-  },
-  {
-   "id": "Dcw0bxTk7Ds",
-   "week": "2026-W36",
-   "kind": "갈등·반응",
-   "reach": 1677,
-   "head": "이번 여름 아마 가장 핫한 래퍼를 한 명 꼽자면 Royal44(@royal44k)일 것입니다.\n\n쇼미더머니12를 시작으로, 최근 방영한 래퍼여친"
-  },
-  {
-   "id": "Dcx_Lt1D3Sw",
-   "week": "2026-W36",
-   "kind": "추천·모음",
-   "reach": 547,
-   "head": "양홍원(@yanghongwon)에게 스며들고 있는 당신을 위한 양홍원 Playlist\n\n요즘 소위 말하고 있는 최고의 ‘밥친구’를 뽑자면, 많은"
-  },
-  {
-   "id": "DcyjSHhD4Yf",
-   "week": "2026-W36",
-   "kind": "인물해부",
-   "reach": 516,
-   "head": "한국을 여행 중인 24kGoldn(@24kgoldn)이 인스타그램 스토리를 올렸습니다.\n\n24kGoldn이 최근 \"NBA 영보이가 왜 한국으로 "
   }
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-08 19:04 KST"
+  "daily": "2026-11-08 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-08T21:44:06+09:00",
+  "fetched_at": "2026-11-09T14:47:11+09:00",
   "posts": [
    {
     "t": "2026-11-08T15:48+09:00",
@@ -2365,57 +2374,32 @@
     "t": "2026-10-19T17:15+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "크러쉬가 1년 2개월 만의 신곡에 아이유(@dlwlrma)를 불렀습니다."
-   },
-   {
-    "t": "2026-10-18T23:43+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "양홍원과 원현주의 웨딩 화보 속 한 장이 익숙한 장면을 떠올리게 합니다."
-   },
-   {
-    "t": "2026-10-18T23:09+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "배드보이 레코드 설립자이자 미국 힙합의 거물인 디디(퍼프 대디)가 호화 "
-   },
-   {
-    "t": "2026-10-18T22:57+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "양홍원과 원현주가 오늘(18일) 결혼식을 올렸습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 367,
+  "drafts": 360,
   "posted": 124,
   "posts": 149,
   "rate": 0.34,
   "adopted_mult": 0.98,
-  "own_mult": 1.04,
+  "own_mult": 1.05,
   "lanes": {
-   "시리즈": {
-    "drafts": 29,
-    "posted": 6,
-    "mult": 0.78
-   },
    "클립": {
-    "drafts": 49,
+    "drafts": 50,
     "posted": 7,
-    "mult": 1.15
+    "mult": 1.05
    },
    "정보": {
-    "drafts": 250,
+    "drafts": 242,
     "posted": 104,
-    "mult": 0.98
-   },
-   "속보": {
-    "drafts": 1,
-    "posted": 0,
-    "mult": null
+    "mult": 1.0
    },
    "재미": {
     "drafts": 32,
     "posted": 4,
-    "mult": 1.96
+    "mult": 1.43
    },
    "오늘의 노래": {
     "drafts": 1,
@@ -2426,38 +2410,43 @@
     "drafts": 5,
     "posted": 3,
     "mult": 0.95
+   },
+   "시리즈": {
+    "drafts": 30,
+    "posted": 6,
+    "mult": 0.78
    }
   },
   "corners": {
-   "tteolgi": {
-    "drafts": 15,
-    "posted": 3,
-    "mult": 0.87
-   },
    "mal": {
-    "drafts": 47,
+    "drafts": 48,
     "posted": 7,
-    "mult": 0.96
+    "mult": 0.89
    },
    "news": {
-    "drafts": 192,
+    "drafts": 182,
     "posted": 79,
-    "mult": 1.0
+    "mult": 1.05
    },
    "spotlight": {
-    "drafts": 12,
+    "drafts": 11,
     "posted": 2,
-    "mult": 0.83
+    "mult": 0.99
    },
    "song": {
     "drafts": 17,
     "posted": 7,
-    "mult": 0.7
+    "mult": 0.76
    },
    "followup": {
-    "drafts": 20,
+    "drafts": 21,
     "posted": 7,
     "mult": 0.93
+   },
+   "tteolgi": {
+    "drafts": 14,
+    "posted": 3,
+    "mult": 1.14
    },
    "again": {
     "drafts": 2,
@@ -2467,22 +2456,22 @@
    "newalbums": {
     "drafts": 7,
     "posted": 3,
-    "mult": 2.5
+    "mult": 1.25
    },
    "anniv": {
-    "drafts": 19,
+    "drafts": 20,
     "posted": 2,
-    "mult": 2.0
+    "mult": 1.89
    },
    "tickets": {
-    "drafts": 7,
+    "drafts": 8,
     "posted": 6,
-    "mult": 0.77
+    "mult": 0.76
    },
    "meet": {
-    "drafts": 11,
+    "drafts": 12,
     "posted": 4,
-    "mult": 1.05
+    "mult": 0.96
    },
    "intro": {
     "drafts": 14,
@@ -2492,7 +2481,7 @@
    "listen": {
     "drafts": 4,
     "posted": 1,
-    "mult": 0.26
+    "mult": 0.69
    }
   },
   "repack": [],
@@ -2508,7 +2497,7 @@
     "posted": "DfYlMaqguw4",
     "head": "관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가 두 달 만에 다시",
     "url": "https://www.instagram.com/p/DfYlMaqguw4/",
-    "mult": null
+    "mult": 0.87
    },
    {
     "day": "2026-11-06",
@@ -2521,7 +2510,7 @@
     "posted": "DfZf8aZlD6k",
     "head": "데이식스(@day6kilogram)가 10월 인천에서 다섯 번째 팬미팅을 마쳤습니다.",
     "url": "https://www.instagram.com/p/DfZf8aZlD6k/",
-    "mult": null
+    "mult": 0.76
    },
    {
     "day": "2026-11-06",
@@ -2534,7 +2523,7 @@
     "posted": "DfZO-ZKP5RF",
     "head": "141번째 오늘의 노래 | 2026.11.06",
     "url": "https://www.instagram.com/reel/DfZO-ZKP5RF/",
-    "mult": null
+    "mult": 7.01
    },
    {
     "day": "2026-11-06",
@@ -2547,7 +2536,7 @@
     "posted": "DfZUoNXlEnz",
     "head": "베스티(@bestie_ofcl)의 13년 전 노래가 대만 차트 맨 위에 올랐습니다.",
     "url": "https://www.instagram.com/p/DfZUoNXlEnz/",
-    "mult": null
+    "mult": 1.02
    },
    {
     "day": "2026-11-06",
@@ -2560,7 +2549,7 @@
     "posted": "DfZmTPsmWis",
     "head": "아일릿(@illit_official)이 미니 5집 [BREAK EVEN]으로 자체 최고 초",
     "url": "https://www.instagram.com/p/DfZmTPsmWis/",
-    "mult": null
+    "mult": 1.22
    },
    {
     "day": "2026-11-07",
@@ -2573,7 +2562,7 @@
     "posted": "DfcnLEaDBnR",
     "head": "배우 이동휘가 이무진의 새 뮤직비디오에 나옵니다.",
     "url": "https://www.instagram.com/reel/DfcnLEaDBnR/",
-    "mult": null
+    "mult": 1.81
    },
    {
     "day": "2026-11-07",
@@ -2586,7 +2575,7 @@
     "posted": "Dfcl4ioD0-u",
     "head": "142번째 오늘의 노래 | 2026.11.07",
     "url": "https://www.instagram.com/p/Dfcl4ioD0-u/",
-    "mult": null
+    "mult": 0.81
    },
    {
     "day": "2026-11-08",
@@ -2599,17 +2588,17 @@
     "posted": "DfeJitmD9ro",
     "head": "마이 케미컬 로맨스(@mychemicalromance)가 18년 만에 한국 무대에 섰습니다",
     "url": "https://www.instagram.com/p/DfeJitmD9ro/",
-    "mult": null
+    "mult": 0.48
    }
   ]
  },
  "follow": {
-  "at": "2026-11-08T22:04+09:00",
+  "at": "2026-11-09T15:05+09:00",
   "d30": {
    "days": 30,
-   "follows": 16.4,
-   "unfollows": 15.0,
-   "net": 1.4
+   "follows": 16.8,
+   "unfollows": 15,
+   "net": 1.8
   },
   "weeks": [
    {
@@ -2663,66 +2652,66 @@
    },
    {
     "week": "2026-W45",
-    "follows": 68,
-    "unfollows": 67,
-    "net": 1,
-    "days": 5
+    "follows": 95,
+    "unfollows": 79,
+    "net": 16,
+    "days": 6
    }
   ],
   "feed": {
    "n": 184,
-   "reach": 3643029,
+   "reach": 3643873,
    "follows": 485,
    "per1k": 0.13
   },
   "kinds": [
    {
     "kind": "인물해부",
-    "n": 23,
-    "reach": 1138824,
-    "follows": 180,
+    "n": 12,
+    "reach": 303896,
+    "follows": 49,
     "per1k": 0.16,
-    "visits1k": 4.2
+    "visits1k": 3.0
+   },
+   {
+    "kind": "갈래 모름",
+    "n": 47,
+    "reach": 2508029,
+    "follows": 340,
+    "per1k": 0.14,
+    "visits1k": 3.4
    },
    {
     "kind": "기타",
     "n": 33,
-    "reach": 285551,
+    "reach": 284009,
     "follows": 37,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
-    "kind": "공연·페스티벌",
-    "n": 30,
-    "reach": 150278,
-    "follows": 20,
-    "per1k": 0.13,
-    "visits1k": 1.8
-   },
-   {
-    "kind": "갈래 모름",
-    "n": 40,
-    "reach": 1502928,
-    "follows": 179,
-    "per1k": 0.12,
-    "visits1k": 2.8
+    "kind": "발매·신보",
+    "n": 39,
+    "reach": 94278,
+    "follows": 10,
+    "per1k": 0.11,
+    "visits1k": 2.9
    },
    {
     "kind": "갈등·반응",
-    "n": 23,
-    "reach": 438274,
-    "follows": 54,
-    "per1k": 0.12,
-    "visits1k": 2.6
+    "n": 20,
+    "reach": 314711,
+    "follows": 35,
+    "per1k": 0.11,
+    "visits1k": 2.4
    },
    {
-    "kind": "발매·신보",
-    "n": 32,
-    "reach": 91779,
-    "follows": 10,
-    "per1k": 0.11,
-    "visits1k": 2.8
+    "kind": "공연·페스티벌",
+    "n": 31,
+    "reach": 137853,
+    "follows": 14,
+    "per1k": 0.1,
+    "visits1k": 1.7
    }
   ],
   "top": [
@@ -2784,14 +2773,14 @@
   "reels": {
    "reels_per1k": 0.1,
    "feed_per1k": 0.03,
-   "base": 16.5,
-   "days": 55
+   "base": 16.7,
+   "days": 56
   },
   "spikes": [
    {
     "date": "2026-10-20",
     "unfollows": 41,
-    "usual": 15.0,
+    "usual": 15,
     "posted": [
      "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@r…",
      "인디고뮤직(@indigomusic_official)이라는 이름…"
