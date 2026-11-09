@@ -1764,20 +1764,232 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-87a9f65e",
+    "account": "@갈등·반응",
+    "url": "https://dealsite.co.kr/articles/172220",
+    "image": null,
+    "head": "리센느, 컴백 나흘 만에 KGMA 그랜드 아너스 초이스 포함 4관왕 · 원이 첫 MC",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-09T09:03+09:00",
+   "key": "1c66ca3f",
+   "by": "claude",
+   "subjects": [
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "컴백 나흘 만에 KGMA 최고 영예 포함 4관왕 · 같은 날 원이는 첫 시상식 MC",
+    "why": "주말 KGMA 결과로 리센느 기사·반응이 몰림 · 리센느는 PLOT 에서 팔로우가 잘 붙는 인물"
+   },
+   "added": "claude",
+   "added_at": "2026-11-09T09:03+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n리센느(@rescene_official)가 '2026 KGMA'에서 최고 영예인 그랜드 아너스 초이스를 포함해 4관왕에 올랐습니다.\n\n지난 7일 고척스카이돔에서 열린 시상식 첫날, 리센느는 베스트 아티스트·베스트 메모리·베리즈 글로벌 팬 초이스까지 함께 받았는데요, 같은 날 리더 원이는 데뷔 후 처음으로 시상식 MC를 맡아 보아의 '아틀란티스 소녀'로 오프닝 무대를 열었습니다.\n\n지난 3일 네 번째 미니앨범 [PULSE]를 내고 나흘 만에 받은 트로피입니다. 리센느는 상 하나하나가 값진 것을 안다며, 늘 성장하는 팀이 되겠다고 전했습니다.\n\n#PLOT #리센느 #원이 #KGMA #코리아그랜드뮤직어워즈 #PULSE\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794182638/syth323vwbsw2swzu76d.jpg\n제목: 리센느, KGMA|최고 영예 포함 4관왕\n부제: 같은 날 원이는 첫 시상식 MC\n출처: @rescene_official\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794182666/plot_studio/eevkivrk2mw4vth7ej73.mp4\n소제목: \n본문: \n출처: RESCENE\n",
+    "caption": "리센느(@rescene_official)가 '2026 KGMA'에서 최고 영예인 그랜드 아너스 초이스를 포함해 4관왕에 올랐습니다.\n\n지난 7일 고척스카이돔에서 열린 시상식 첫날, 리센느는 베스트 아티스트·베스트 메모리·베리즈 글로벌 팬 초이스까지 함께 받았는데요, 같은 날 리더 원이는 데뷔 후 처음으로 시상식 MC를 맡아 보아의 '아틀란티스 소녀'로 오프닝 무대를 열었습니다.\n\n지난 3일 네 번째 미니앨범 [PULSE]를 내고 나흘 만에 받은 트로피입니다. 리센느는 상 하나하나가 값진 것을 안다며, 늘 성장하는 팀이 되겠다고 전했습니다.\n\n#PLOT #리센느 #원이 #KGMA #코리아그랜드뮤직어워즈 #PULSE",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182638/syth323vwbsw2swzu76d.jpg",
+      "credit": "@rescene_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/892737509_17975613174150563_7795649069090485037_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=FW-6e1EoLZUQ7kNvwFhRja-&_nc_oc=AdpUjAQ3IgzzYdaCdw_baDmg3YDVArEgSo3VEVgWVLjzUyzrHtkfu7pzYhYL4Jba60s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=yRkqSImpxk3Bon4zwnDAtA&oh=00_AQTBwq94tx8q3dzZi0Vv2PSzjm8ABBnmtB8wOGo7_DvnEg&oe=6AF692A7"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182641/huasx6q7vcwdujwjajvw.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182644/kxm4psbevqqvttez3emw.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182647/r9rsbwhfquve1kupfsmu.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257384/mqwsfplwcbsofvcoqwip.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182638/syth323vwbsw2swzu76d.jpg",
+      "credit": "@rescene_official",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/892737509_17975613174150563_7795649069090485037_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=FW-6e1EoLZUQ7kNvwFhRja-&_nc_oc=AdpUjAQ3IgzzYdaCdw_baDmg3YDVArEgSo3VEVgWVLjzUyzrHtkfu7pzYhYL4Jba60s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=yRkqSImpxk3Bon4zwnDAtA&oh=00_AQTBwq94tx8q3dzZi0Vv2PSzjm8ABBnmtB8wOGo7_DvnEg&oe=6AF692A7"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182641/huasx6q7vcwdujwjajvw.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792500832/zehlttneackwkzylykav.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182644/kxm4psbevqqvttez3emw.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792436480/umqlnirakytb84fjknpt.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182647/r9rsbwhfquve1kupfsmu.jpg",
+      "credit": "@rescene_official",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792257384/mqwsfplwcbsofvcoqwip.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "리센느, KGMA|최고 영예 포함 4관왕",
+      "sub": "같은 날 원이는 첫 시상식 MC"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "컴백 나흘 만에|4관왕 오른 리센느",
+      "sub": "2026 KGMA 그랜드 아너스 초이스"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "첫 MC 원이와|4관왕 리센느의 하루",
+      "sub": "2026 KGMA 첫날"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — RESCENE (공식 채널) · 'With' 후렴 구간 0:44 시작이 맞는지 귀로 확인",
+     "표지 사진(공식 인스타 11/7 KGMA 4관왕 게시물)이 무대 스틸이 아닌지"
+    ],
+    "research": [
+     {
+      "title": "영케이 5관왕, 트레저·리센느 4관왕… 8팀, 최고 영예 그랜드 상 품었다 (이데일리)",
+      "link": "https://www.edaily.co.kr/News/Read?newsId=01610486645644080&mediaCodeNo=257"
+     },
+     {
+      "title": "리센느, '2026 KGMA' 최고 영예상 포함 4관왕... 원이 MC 데뷔까지 '겹경사' (인사이트)",
+      "link": "https://www.insight.co.kr/news/581102"
+     },
+     {
+      "title": "RESCENE secures the top honor at '2026 KGMA'… a four-award triumph (스포츠경향)",
+      "link": "https://sports.khan.co.kr/en/article/202611080842007/"
+     },
+     {
+      "title": "[기자수첩] 리센느 착시 빠진 엔터 펀딩 (딜사이트)",
+      "link": "https://dealsite.co.kr/articles/172220"
+     },
+     {
+      "title": "RESCENE (리센느) 'With' Official MV",
+      "link": "https://www.youtube.com/watch?v=pey3E47eSc8"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182675/ekznbe6ajgh7apifhjeg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182678/w8fexzidzevb8stflfva.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182675/s36v4hq7ogf2qqr0fbcg.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182680/b77z6qtqfdj9uko3kbvz.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182681/tkcmh8ljlfelcssetefx.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182675/ekznbe6ajgh7apifhjeg.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-09T09:04+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794182676/plot_studio/qa3dghaqysdwdxcgqtyk.mp4"
+     },
+     "v": {
+      "A": "fde6c120",
+      "B": "19a2be69",
+      "C": "ccf58211"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:44-1:12\n곡: 리센느의 'With'\n아티스트: 컴백 나흘 만에 4관왕\n피처링:\n후킹: \n출처: RESCENE\n음원: 리센느 - With\n가사: 자동",
+    "caption": "리센느(@rescene_official)가 '2026 KGMA'에서 그랜드 아너스 초이스를 포함해 4관왕에 올랐습니다.\n\n지난 3일 네 번째 미니앨범 [PULSE]와 타이틀곡 'With'를 냈는데요, 나흘 뒤인 7일 고척스카이돔 시상식 첫날 베스트 아티스트·베스트 메모리·베리즈 글로벌 팬 초이스까지 함께 받았습니다. 같은 날 리더 원이는 데뷔 후 처음으로 시상식 MC를 맡았습니다.\n\n영상은 'With' 뮤직비디오의 후렴입니다. 긴 기다림 끝에 너에게 달려간다는 노래가 이번 주 리센느의 장면과 겹칩니다.\n\n#PLOT #리센느 #With #KGMA #원이",
+    "hooks": {
+     "A": "4관왕 리센느가 / 지금 부르는 노래",
+     "B": "컴백 나흘 만에 4관왕 / 리센느의 'With'",
+     "C": "너에게 달려가는 / 리센느 'With' 후렴"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=pey3E47eSc8",
+     "credit": "RESCENE",
+     "range": [
+      44.0,
+      72.0
+     ]
+    },
+    "guided": {
+     "rec": "B",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — RESCENE (공식 채널) · 'With' 후렴 구간 0:44 시작이 맞는지 귀로 확인",
+     "표지 사진(공식 인스타 11/7 KGMA 4관왕 게시물)이 무대 스틸이 아닌지"
+    ],
+    "research": [
+     {
+      "title": "영케이 5관왕, 트레저·리센느 4관왕… 8팀, 최고 영예 그랜드 상 품었다 (이데일리)",
+      "link": "https://www.edaily.co.kr/News/Read?newsId=01610486645644080&mediaCodeNo=257"
+     },
+     {
+      "title": "리센느, '2026 KGMA' 최고 영예상 포함 4관왕... 원이 MC 데뷔까지 '겹경사' (인사이트)",
+      "link": "https://www.insight.co.kr/news/581102"
+     },
+     {
+      "title": "RESCENE secures the top honor at '2026 KGMA'… a four-award triumph (스포츠경향)",
+      "link": "https://sports.khan.co.kr/en/article/202611080842007/"
+     },
+     {
+      "title": "[기자수첩] 리센느 착시 빠진 엔터 펀딩 (딜사이트)",
+      "link": "https://dealsite.co.kr/articles/172220"
+     },
+     {
+      "title": "RESCENE (리센느) 'With' Official MV",
+      "link": "https://www.youtube.com/watch?v=pey3E47eSc8"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/pey3E47eSc8/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794182688/jw3v2eswfo8r7cul5hot.jpg",
+     "key": "pey3E47eSc8@44.0"
+    },
+    "px": {
+     "vid": "pey3E47eSc8",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794182762/plot_studio/lhwkk5wndqhmtj9rdtho.mp4",
+     "off": 0.0,
+     "end": 117.0,
+     "full": 202.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-09T09:06+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
-  "week": "11/02~11/08",
-  "days_left": 1,
-  "done": 55,
+  "week": "11/09~11/15",
+  "days_left": 7,
+  "done": 0,
   "goal": 28,
   "corners": [
    {
     "key": "tteolgi",
     "name": "나무위키 털기",
     "weekly": 0,
-    "done": 1,
+    "done": 0,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -1789,7 +2001,7 @@
     "key": "meet",
     "name": "만나는 법",
     "weekly": 0,
-    "done": 2,
+    "done": 0,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -1801,7 +2013,7 @@
     "key": "intro",
     "name": "입문 가이드",
     "weekly": 0,
-    "done": 2,
+    "done": 0,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -1813,7 +2025,7 @@
     "key": "listen",
     "name": "듣는다면",
     "weekly": 0,
-    "done": 1,
+    "done": 0,
     "left": 0,
     "need_today": 0,
     "day": null,
@@ -1825,9 +2037,9 @@
     "key": "song",
     "name": "오늘의 노래",
     "weekly": 7,
-    "done": 9,
-    "left": 0,
-    "need_today": 0,
+    "done": 0,
+    "left": 7,
+    "need_today": 1,
     "day": null,
     "next_no": 10,
     "drafts": 0,
@@ -1837,9 +2049,9 @@
     "key": "mal",
     "name": "그 말",
     "weekly": 6,
-    "done": 3,
-    "left": 3,
-    "need_today": 3,
+    "done": 0,
+    "left": 6,
+    "need_today": 1,
     "day": null,
     "next_no": 8,
     "drafts": 3,
@@ -1849,9 +2061,9 @@
     "key": "spotlight",
     "name": "SPOTLIGHT",
     "weekly": 2,
-    "done": 2,
-    "left": 0,
-    "need_today": 0,
+    "done": 0,
+    "left": 2,
+    "need_today": 1,
     "day": null,
     "next_no": 3,
     "drafts": 0,
@@ -1875,7 +2087,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -1887,7 +2099,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -1897,9 +2109,9 @@
     "key": "tickets",
     "name": "이번 주 티켓 오픈",
     "weekly": 1,
-    "done": 3,
-    "left": 0,
-    "need_today": 0,
+    "done": 0,
+    "left": 1,
+    "need_today": 1,
     "day": 0,
     "next_no": 7,
     "drafts": 0,
@@ -1909,8 +2121,8 @@
     "key": "newalbums",
     "name": "이번 주 나온 앨범",
     "weekly": 1,
-    "done": 2,
-    "left": 0,
+    "done": 0,
+    "left": 1,
     "need_today": 0,
     "day": 4,
     "next_no": 4,
@@ -1923,7 +2135,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": 3,
     "drafts": 1,
@@ -1933,19 +2145,19 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 30,
-    "left": 0,
-    "need_today": 0,
+    "done": 0,
+    "left": 4,
+    "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-08T17:29+09:00"
+  "at": "2026-11-09T09:06+09:00"
  },
  "queue": {
-  "next": "2026-11-08T17:31+09:00",
+  "next": "2026-11-09T09:08+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-08T15:48+09:00"
@@ -1957,24 +2169,24 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.02,
-    "median": 1.15,
+    "mult": 1.99,
+    "median": 1.1,
     "n": 64
    },
    {
     "from": 21,
     "to": 24,
     "at": "22:30",
-    "mult": 1.67,
-    "median": 0.8,
+    "mult": 1.78,
+    "median": 0.95,
     "n": 41
    },
    {
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.35,
-    "median": 0.85,
+    "mult": 1.4,
+    "median": 0.88,
     "n": 32
    }
   ],
@@ -1983,7 +2195,7 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 2.17,
+    "mult": 2.27,
     "median": 1.56,
     "n": 27
    },
@@ -1991,17 +2203,17 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.93,
+    "mult": 2.0,
     "median": 1.9,
     "n": 11
    },
    {
-    "from": 21,
-    "to": 24,
-    "at": "22:30",
-    "mult": 1.7,
-    "median": 0.93,
-    "n": 82
+    "from": 0,
+    "to": 3,
+    "at": "01:30",
+    "mult": 1.73,
+    "median": 1.33,
+    "n": 28
    }
   ]
  },
