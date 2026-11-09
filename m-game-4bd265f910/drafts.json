@@ -1,50 +1,60 @@
 {
  "schema": 1,
- "date": "2026-11-08",
- "generated_at": "2026-11-08 11:03 KST",
+ "date": "2026-11-09",
+ "generated_at": "2026-11-09 11:02 KST",
  "items": [
   {
    "source": {
-    "id": "claude:geforce-8800-20th",
-    "account": "NVIDIA 공식",
-    "url": "https://www.nvidia.com/en-au/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/",
+    "id": "claude:gta6-preload",
+    "account": "Rockstar Games 공식",
+    "url": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10",
     "image": null,
-    "head": "엔비디아, 8800 GTX 20주년 무료 스팀 데모 공개",
+    "head": "GTA 6 사전 다운로드 11월 10일 시작",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-08T11:10+09:00",
-   "key": "060aa85e",
+   "made_at": "2026-11-09T11:11+09:00",
+   "key": "0af8800d",
    "by": "claude",
    "subjects": [
-    "지포스 8800 GTX"
+    "GTA 6"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "[실험] 20년 전 오늘 나온 그래픽카드를 꽂아 보는 무료 데모 — 그런데 권장 사양은 RTX 5080",
-    "why": "11/8 이 8800 GTX 출시 정확히 20년 · 그 시절 PC방 향수는 게임 안 하는 사람에게도 읽힌다"
+    "angle": "GTA 6 사전 다운로드가 오늘 밤 자정 PS5부터 — 최대 212GB, 엑스박스는 10일 오전 9시",
+    "why": "출시(11/19) 열흘 전 · 국내 독자가 바로 써먹는 한국 시간 일정"
    },
    "added": "claude",
-   "added_at": "2026-11-08T11:10+09:00",
-   "corner": "anniv",
+   "added_at": "2026-11-09T11:11+09:00",
+   "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n20년 전 오늘 나온 그래픽카드를 직접 뜯어서 꽂아 보는 게임이 스팀에 올라왔습니다.\n\n〈지포스 8800 GTX – 전설의 20년〉은 언리얼 엔진 아티스트 딜런 브라운이 엔비디아의 지원을 받아 만든 무료 데모인데요, 2006년 분위기로 꾸민 게임방에서 상자를 열고, 카드를 살펴보고, 그 시절 PC 본체에 장착하는 것이 줄거리의 전부입니다. 방 곳곳에는 지포스 역사를 담은 이스터 에그가 숨어 있습니다.\n\n묘한 건 사양입니다. 20년 전 카드를 꽂는 장면을 패스 트레이싱으로 그리느라 최소 사양이 RTX 4070, 권장은 RTX 5080이고 메모리는 32GB가 필요합니다.\n\n무료 · PC(스팀) · 한국어 미지원(영어만) · 8800 GTX 출시일 2006년 11월 8일\n\n#겜디핑 #지포스 #엔비디아 #8800GTX #스팀\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794103860/xu6d8uofozn5plxydpix.jpg\n제목: 20년 전 그래픽카드를|꽂아 보는 게임\n부제: 지포스 8800 GTX 20주년 무료 데모\n출처: NVIDIA\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794103882/plot_studio/oxvmc6kk1v7bmuexcsdv.mp4\n소제목: \n본문: \n출처: NVIDIA GeForce\n",
-    "caption": "20년 전 오늘 나온 그래픽카드를 직접 뜯어서 꽂아 보는 게임이 스팀에 올라왔습니다.\n\n〈지포스 8800 GTX – 전설의 20년〉은 언리얼 엔진 아티스트 딜런 브라운이 엔비디아의 지원을 받아 만든 무료 데모인데요, 2006년 분위기로 꾸민 게임방에서 상자를 열고, 카드를 살펴보고, 그 시절 PC 본체에 장착하는 것이 줄거리의 전부입니다. 방 곳곳에는 지포스 역사를 담은 이스터 에그가 숨어 있습니다.\n\n묘한 건 사양입니다. 20년 전 카드를 꽂는 장면을 패스 트레이싱으로 그리느라 최소 사양이 RTX 4070, 권장은 RTX 5080이고 메모리는 32GB가 필요합니다.\n\n무료 · PC(스팀) · 한국어 미지원(영어만) · 8800 GTX 출시일 2006년 11월 8일\n\n#겜디핑 #지포스 #엔비디아 #8800GTX #스팀",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉 사전 다운로드가 오늘 밤 자정 PS5부터 열립니다.\n\n출시는 19일인데요, 그 열흘 전부터 미리 받아 둘 수 있습니다. PS5는 나라마다 현지 시간 10일 0시에, 엑스박스 시리즈 X|S는 그리니치 표준시 10일 0시에 전 세계 동시로 시작합니다. 한국 시간으로는 엑스박스가 10일 오전 9시입니다.\n\n기기에 따라 최대 212GB가 필요해 저장 공간부터 비워 둬야 합니다. 다운로드 코드가 든 패키지는 12일부터 매장에 나옵니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · 스탠다드 8만 9,800원 · 얼티밋 11만 2,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #그랜드테프트오토 #PS5\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794190279/o1lvu3quctw8wpleb9cq.jpg\n제목: GTA 6 사전 다운로드,|오늘 자정부터\n부제: PS5 10일 0시 · 엑스박스 오전 9시\n출처: Rockstar Games\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794190302/plot_studio/b9qusrilkxybhnqwc55d.mp4\n소제목: \n본문: \n출처: Rockstar Games\n",
+    "caption": "〈GTA 6〉 사전 다운로드가 오늘 밤 자정 PS5부터 열립니다.\n\n출시는 19일인데요, 그 열흘 전부터 미리 받아 둘 수 있습니다. PS5는 나라마다 현지 시간 10일 0시에, 엑스박스 시리즈 X|S는 그리니치 표준시 10일 0시에 전 세계 동시로 시작합니다. 한국 시간으로는 엑스박스가 10일 오전 9시입니다.\n\n기기에 따라 최대 212GB가 필요해 저장 공간부터 비워 둬야 합니다. 다운로드 코드가 든 패키지는 12일부터 매장에 나옵니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · 스탠다드 8만 9,800원 · 얼티밋 11만 2,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #그랜드테프트오토 #PS5",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103860/xu6d8uofozn5plxydpix.jpg",
-      "credit": "NVIDIA",
-      "from": "https://www.nvidia.com/content/dam/en-zz/nvidiaweb/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo-ogimage.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190279/o1lvu3quctw8wpleb9cq.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://d1lss44hh2trtw.cloudfront.net/assets/articles/2026/09/01/gta-6-jason-lucia-guns_feature.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190281/yfkshs1k6xd8ruospm5v.jpg",
+      "credit": "위키트리",
+      "from": "https://cdnweb01.wikitree.co.kr/webdata/editor/202611/04/202611041707020034_game.jpeg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103860/xu6d8uofozn5plxydpix.jpg",
-      "credit": "NVIDIA",
-      "from": "https://www.nvidia.com/content/dam/en-zz/nvidiaweb/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo-ogimage.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190279/o1lvu3quctw8wpleb9cq.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://d1lss44hh2trtw.cloudfront.net/assets/articles/2026/09/01/gta-6-jason-lucia-guns_feature.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190281/yfkshs1k6xd8ruospm5v.jpg",
+      "credit": "위키트리",
+      "from": "https://cdnweb01.wikitree.co.kr/webdata/editor/202611/04/202611041707020034_game.jpeg"
      }
     ],
     "shape": "맥락",
@@ -52,70 +62,79 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "20년 전 그래픽카드를|꽂아 보는 게임",
-      "sub": "지포스 8800 GTX 20주년 무료 데모"
+      "title": "GTA 6 사전 다운로드,|오늘 자정부터",
+      "sub": "PS5 10일 0시 · 엑스박스 오전 9시"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "8800 GTX 20주년,|권장 사양은 RTX 5080",
-      "sub": "엔비디아 무료 스팀 데모"
+      "title": "212GB 비워 둘 시간,|GTA 6 사전 다운로드",
+      "sub": "출시 열흘 전부터"
      }
     ],
     "issues": [],
     "confirm": [
-     "스팀 평가 '복합적'(242건 중 49%)은 11/8 오전 기준 — 올리기 전 스팀에서 다시 확인",
-     "숏폼 구간 0:10-0:35 은 영상을 직접 보지 않고 잡음 — 카드 장착 장면이 들어가는지 확인"
+     "[검증] '한국어 지원'은 GTABoom 한 곳(테이크투 9/17 주주 콜의 13개 언어 목록)에서만 확인돼 캡션·숏폼 캡션에서 뺌 — 국내 매체나 락스타·PS 스토어 언어 표기로 확인되면 다시 넣을 것",
+     "한국어 지원은 테이크투 주주 콜(9/17)의 13개 언어 목록을 전한 매체 기준 — 자막인지 범위는 확인 못 함 · 락스타 뉴스와이어 본문은 직접 못 읽어 시각은 Shacknews·Insider Gaming·위키트리로 맞춤",
+     "숏폼 구간 0:10-0:35 는 영상을 직접 보지 않고 잡음"
     ],
     "research": [
      {
-      "title": "NVIDIA — 8800 GTX 20 year celebration Steam demo",
-      "link": "https://www.nvidia.com/en-au/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/"
+      "title": "Rockstar Newswire — Grand Theft Auto VI Pre-Load Begins on November 10",
+      "link": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
      },
      {
-      "title": "Steam — GeForce 8800 GTX - 20 Years of a Legend",
-      "link": "https://store.steampowered.com/app/4910040/"
+      "title": "Shacknews — GTA 6 pre-load starts November 10, file size is 212 GB",
+      "link": "https://shacknews.com/article/151250/gta-6-pre-load-file-size"
      },
      {
-      "title": "PC Guide — unboxing simulator on Steam",
-      "link": "https://www.pcguide.com/news/nvidia-announces-geforce-8800-gtx-unboxing-simulator-available-on-steam-to-celebrate-20-years-of-a-legend/"
+      "title": "Insider Gaming — GTA 6 preload exact start times",
+      "link": "https://insider-gaming.com/gta-6-preload-release-date-exact-start-times/"
      },
      {
-      "title": "게임메카 — 20년 전 지포스 8800 GTX 체험하는 게임",
-      "link": "https://www.gamemeca.com/view.php?gid=1783099"
+      "title": "위키트리 — GTA 6, 10일부터 212GB 사전 다운로드",
+      "link": "https://www.wikitree.co.kr/articles/1171863"
+     },
+     {
+      "title": "게임메카 — GTA 6 국내 가격 8만 9,800원",
+      "link": "https://www.gamemeca.com/en/view.php?gid=1776963"
+     },
+     {
+      "title": "GTABoom — GTA 6 is getting 13 languages at launch",
+      "link": "https://www.gtaboom.com/gta-6-is-getting-13-languages-at-launch-5ced"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103945/laolotoytgsa1dmehyhg.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103948/sgkvymuz6p0ubyioteiw.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103944/v6ssthladybabugvwkww.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190328/inqnn4wlu1rn8qpomzvl.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190331/ihryfjrngalj1i4s96wc.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190328/j4qg9nktxnbfywwr0ilb.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103945/laolotoytgsa1dmehyhg.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190328/inqnn4wlu1rn8qpomzvl.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-08T11:12+09:00",
+     "at": "2026-11-09T11:12+09:00",
      "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794103946/plot_studio/jug6hbr3m0rkiqdkhqer.mp4"
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794190329/plot_studio/zf2jfensfrdiamq3ejik.mp4"
      },
      "v": {
-      "A": "e1a9511f"
+      "A": "c05bcb72"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=xPsc2QOzh0I\n구간: 0:10-0:35\n곡: 직접 꽂아 보는 게임\n아티스트: 20년 전 그래픽카드를\n피처링:\n후킹: \n출처: NVIDIA GeForce\n자막: 자동",
-    "caption": "20년 전 오늘 나온 지포스 8800 GTX를 직접 뜯어서 꽂아 보는 무료 데모가 스팀에 올라왔습니다.\n\n언리얼 엔진 아티스트 딜런 브라운이 엔비디아의 지원을 받아 만든 〈지포스 8800 GTX – 전설의 20년〉인데요, 2006년 분위기의 게임방에서 상자를 열고 그 시절 PC에 카드를 장착합니다. 그 장면을 패스 트레이싱으로 그리느라 권장 사양은 RTX 5080입니다.\n\n무료 · PC(스팀) · 한국어 미지원\n\n#겜디핑 #지포스 #엔비디아 #8800GTX #스팀",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=rz1B4B2yBZY\n구간: 0:10-0:35\n곡: 오늘 자정부터 열립니다\n아티스트: GTA 6 사전 다운로드\n피처링:\n후킹: \n출처: Rockstar Games\n자막: 자동",
+    "caption": "〈GTA 6〉 사전 다운로드가 오늘 밤 자정 PS5부터 열립니다.\n\n출시 열흘 전부터 미리 받아 둘 수 있는데요, PS5는 현지 시간 10일 0시, 엑스박스 시리즈 X|S는 한국 시간 10일 오전 9시에 시작합니다. 기기에 따라 최대 212GB가 필요합니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · 스탠다드 8만 9,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #그랜드테프트오토 #PS5",
     "hooks": {
-     "A": "20년 전 그래픽카드를 / 직접 꽂아 보는 게임",
-     "B": "8800 GTX 20주년, / 권장 사양은 RTX 5080",
-     "C": "2006년 PC방에서 / 새 그래픽카드 뜯는 장면"
+     "A": "GTA 6 사전 다운로드 / 오늘 자정부터 열립니다",
+     "B": "출시 열흘 전, / GTA 6 미리 받는 날",
+     "C": "212GB 비워 두세요 / GTA 6 사전 다운로드"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=xPsc2QOzh0I",
-     "credit": "NVIDIA GeForce",
+     "url": "https://www.youtube.com/watch?v=rz1B4B2yBZY",
+     "credit": "Rockstar Games",
      "range": [
       10.0,
       35.0
@@ -127,616 +146,464 @@
     },
     "issues": [],
     "confirm": [
-     "스팀 평가 '복합적'(242건 중 49%)은 11/8 오전 기준 — 올리기 전 스팀에서 다시 확인",
-     "숏폼 구간 0:10-0:35 은 영상을 직접 보지 않고 잡음 — 카드 장착 장면이 들어가는지 확인"
+     "[검증] '한국어 지원'은 GTABoom 한 곳(테이크투 9/17 주주 콜의 13개 언어 목록)에서만 확인돼 캡션·숏폼 캡션에서 뺌 — 국내 매체나 락스타·PS 스토어 언어 표기로 확인되면 다시 넣을 것",
+     "한국어 지원은 테이크투 주주 콜(9/17)의 13개 언어 목록을 전한 매체 기준 — 자막인지 범위는 확인 못 함 · 락스타 뉴스와이어 본문은 직접 못 읽어 시각은 Shacknews·Insider Gaming·위키트리로 맞춤",
+     "숏폼 구간 0:10-0:35 는 영상을 직접 보지 않고 잡음"
     ],
     "research": [
      {
-      "title": "NVIDIA — 8800 GTX 20 year celebration Steam demo",
-      "link": "https://www.nvidia.com/en-au/geforce/news/8800-gtx-gpu-20-year-celebration-dlss-4-5-path-tracing-steam-demo/"
+      "title": "Rockstar Newswire — Grand Theft Auto VI Pre-Load Begins on November 10",
+      "link": "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10"
      },
      {
-      "title": "Steam — GeForce 8800 GTX - 20 Years of a Legend",
-      "link": "https://store.steampowered.com/app/4910040/"
+      "title": "Shacknews — GTA 6 pre-load starts November 10, file size is 212 GB",
+      "link": "https://shacknews.com/article/151250/gta-6-pre-load-file-size"
      },
      {
-      "title": "PC Guide — unboxing simulator on Steam",
-      "link": "https://www.pcguide.com/news/nvidia-announces-geforce-8800-gtx-unboxing-simulator-available-on-steam-to-celebrate-20-years-of-a-legend/"
+      "title": "Insider Gaming — GTA 6 preload exact start times",
+      "link": "https://insider-gaming.com/gta-6-preload-release-date-exact-start-times/"
      },
      {
-      "title": "게임메카 — 20년 전 지포스 8800 GTX 체험하는 게임",
-      "link": "https://www.gamemeca.com/view.php?gid=1783099"
+      "title": "위키트리 — GTA 6, 10일부터 212GB 사전 다운로드",
+      "link": "https://www.wikitree.co.kr/articles/1171863"
+     },
+     {
+      "title": "게임메카 — GTA 6 국내 가격 8만 9,800원",
+      "link": "https://www.gamemeca.com/en/view.php?gid=1776963"
+     },
+     {
+      "title": "GTABoom — GTA 6 is getting 13 languages at launch",
+      "link": "https://www.gtaboom.com/gta-6-is-getting-13-languages-at-launch-5ced"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/xPsc2QOzh0I/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/rz1B4B2yBZY/maxresdefault.jpg",
     "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103953/go1xbewlsxyekzncixmk.jpg",
-     "key": "xPsc2QOzh0I@10.0"
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190335/kvd7s6epp3k6kl0ffg71.jpg",
+     "key": "rz1B4B2yBZY@10.0"
     },
     "px": {
-     "vid": "xPsc2QOzh0I",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794104030/plot_studio/zmtdhvfqurhcqnb9emjf.mp4",
+     "vid": "rz1B4B2yBZY",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794190407/plot_studio/vr0og5khxtckgtfbiyzb.mp4",
      "off": 0.0,
-     "end": 53.0,
-     "full": 53.0
+     "end": 80.0,
+     "full": 90.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-08T11:16+09:00"
+     "at": "2026-11-09T11:14+09:00"
     }
    },
-   "corner_name": "그날의 앨범",
-   "corner_no": 1
+   "pick": {
+    "rank": 1,
+    "why": "오늘 밤 자정에 열리는 일정이라 지금 올려야 쓸모가 있다 · 212GB 라는 숫자 하나로 바로 읽힌다",
+    "at": "2026-11-09T11:11+09:00"
+   },
+   "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:potato-please",
-    "account": "Steam",
-    "url": "https://store.steampowered.com/app/5266240/",
+    "id": "claude:ps-portal-player-kr",
+    "account": "PlayStation.Blog 한국",
+    "url": "https://blog.ko.playstation.com/2026/11/09/20261109-psportal/",
     "image": null,
-    "head": "포테이토 플리즈, 스팀 매우 긍정적",
+    "head": "PS 포탈 플레이어 미드나이트 블랙(한국어 전용) 12월 10일 국내 출시",
     "multiple": null,
-    "is_reel": true,
+    "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-08T11:10+09:00",
-   "key": "f01c7174",
+   "made_at": "2026-11-09T11:11+09:00",
+   "key": "f36d455e",
    "by": "claude",
    "subjects": [
-    "포테이토 플리즈"
+    "PlayStation Portal"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "감자만 깎는 1인칭 게임이 스팀 '매우 긍정적' — 군대를 먹일 감자를 깎다 결국 공장을 돌리게 된다",
-    "why": "설명 한 줄로 웃기고 궁금한 인디 화제작 · 한국어 지원 · 1만 원 안팎"
+    "angle": "한국어로만 쓸 수 있는 국내 전용 PS 포탈 — 클라우드 스트리밍이 들어오면서 이름에서 '리모트'가 빠졌다",
+    "why": "오늘 나온 SIE 한국 공식 발표 · 국내 가격·예약일·한국 전용이라는 한국 독자만의 지점"
    },
    "added": "claude",
-   "added_at": "2026-11-08T11:10+09:00",
+   "added_at": "2026-11-09T11:11+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n감자를 한 알씩 손으로 깎는 게임이 스팀에서 '매우 긍정적' 평가를 받고 있습니다.\n\n〈포테이토 플리즈〉는 골든 혼 스튜디오가 4일 내놓은 1인칭 감자 깎기 게임인데요, 나라가 맡긴 임무는 하나, 군대를 먹일 감자를 준비하는 것입니다. 처음엔 칼 한 자루와 물통, 그리고 산처럼 쌓인 감자뿐입니다.\n\n물리로 움직이는 감자를 손으로 돌려 가며 깎아 물통에 넣고, 납품한 대가로 더 좋은 도구를 사다 보면 결국 기계로 작업을 자동화하게 됩니다.\n\n11월 4일(한국 시간) 출시 · PC(스팀) · 1만 1천 원(15일까지 10% 할인 9,900원) · 한국어 지원 · 스팀 평가 88% 긍정(8일 기준)\n\n#겜디핑 #포테이토플리즈 #인디게임 #스팀 #감자\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794103886/g99tlbftccerpwohxhhh.jpg\n제목: 감자만 깎는 게임이|스팀 '매우 긍정적'\n부제: 포테이토 플리즈\n출처: 게임메카\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794103911/plot_studio/rcrzvuyta2qeovojml7j.mp4\n소제목: \n본문: \n출처: Golden Horn Studios\n",
-    "caption": "감자를 한 알씩 손으로 깎는 게임이 스팀에서 '매우 긍정적' 평가를 받고 있습니다.\n\n〈포테이토 플리즈〉는 골든 혼 스튜디오가 4일 내놓은 1인칭 감자 깎기 게임인데요, 나라가 맡긴 임무는 하나, 군대를 먹일 감자를 준비하는 것입니다. 처음엔 칼 한 자루와 물통, 그리고 산처럼 쌓인 감자뿐입니다.\n\n물리로 움직이는 감자를 손으로 돌려 가며 깎아 물통에 넣고, 납품한 대가로 더 좋은 도구를 사다 보면 결국 기계로 작업을 자동화하게 됩니다.\n\n11월 4일(한국 시간) 출시 · PC(스팀) · 1만 1천 원(15일까지 10% 할인 9,900원) · 한국어 지원 · 스팀 평가 88% 긍정(8일 기준)\n\n#겜디핑 #포테이토플리즈 #인디게임 #스팀 #감자",
+    "form": "[카테고리]\nNews\n\n[캡션]\n한국어로만 쓸 수 있는 PS 포탈이 12월 10일 국내에 나옵니다.\n\n〈PlayStation Portal 플레이어 – 미드나이트 블랙(한국어 전용)〉인데요, 시스템 언어가 한국어로 정해져 있고 국가·지역이 한국인 계정에서만 쓸 수 있는 국내 전용 모델입니다. 이름에서 '리모트'가 빠진 건 지난달 국내에서 클라우드 스트리밍이 시작됐기 때문입니다.\n\nPS 플러스 프리미엄에 가입돼 있으면 PS5 본체 없이도 게임 카탈로그와 보유한 디지털 PS5 게임 가운데 지원작을 스트리밍으로 할 수 있습니다. PS5가 있으면 지금처럼 리모트 플레이도 됩니다.\n\n12월 10일 출시 · 37만 8,000원 · 예약 판매 11월 13일 오전 10시부터 공식 판매처 · PS 플러스 프리미엄 1개월 이용권 포함 · 와이파이 5Mbps 이상(권장 15Mbps)\n\n#겜디핑 #플레이스테이션 #PS포탈 #PS5 #PS플러스\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794190305/m9zeaommyay92kygu3ru.jpg\n제목: 한국어로만 쓰는|PS 포탈이 나옵니다\n부제: PS 포탈 플레이어 12월 10일 국내 출시\n출처: PlayStation\n",
+    "caption": "한국어로만 쓸 수 있는 PS 포탈이 12월 10일 국내에 나옵니다.\n\n〈PlayStation Portal 플레이어 – 미드나이트 블랙(한국어 전용)〉인데요, 시스템 언어가 한국어로 정해져 있고 국가·지역이 한국인 계정에서만 쓸 수 있는 국내 전용 모델입니다. 이름에서 '리모트'가 빠진 건 지난달 국내에서 클라우드 스트리밍이 시작됐기 때문입니다.\n\nPS 플러스 프리미엄에 가입돼 있으면 PS5 본체 없이도 게임 카탈로그와 보유한 디지털 PS5 게임 가운데 지원작을 스트리밍으로 할 수 있습니다. PS5가 있으면 지금처럼 리모트 플레이도 됩니다.\n\n12월 10일 출시 · 37만 8,000원 · 예약 판매 11월 13일 오전 10시부터 공식 판매처 · PS 플러스 프리미엄 1개월 이용권 포함 · 와이파이 5Mbps 이상(권장 15Mbps)\n\n#겜디핑 #플레이스테이션 #PS포탈 #PS5 #PS플러스",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103886/g99tlbftccerpwohxhhh.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/108/gm121764_pjh261106-2.webp"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190305/m9zeaommyay92kygu3ru.jpg",
+      "credit": "PlayStation",
+      "from": "https://blog.ko.playstation.com/uploads/sites/9/2026/11/2ede809c65d1f9ae79184fb85dec7eef747a0f6b.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190307/h7and0v7ugmjpiyknyw4.jpg",
+      "credit": "PlayStation",
+      "from": "https://blog.ko.playstation.com/tachyon/sites/9/2026/11/b5fd7da88fd546a42e2c7e88bd851ccefa29c071.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103886/g99tlbftccerpwohxhhh.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/108/gm121764_pjh261106-2.webp"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190305/m9zeaommyay92kygu3ru.jpg",
+      "credit": "PlayStation",
+      "from": "https://blog.ko.playstation.com/uploads/sites/9/2026/11/2ede809c65d1f9ae79184fb85dec7eef747a0f6b.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190307/h7and0v7ugmjpiyknyw4.jpg",
+      "credit": "PlayStation",
+      "from": "https://blog.ko.playstation.com/tachyon/sites/9/2026/11/b5fd7da88fd546a42e2c7e88bd851ccefa29c071.jpg"
      }
     ],
-    "shape": "맥락",
+    "shape": "단신",
     "covers": [
      {
       "key": "A",
       "hook": "Claude",
-      "title": "감자만 깎는 게임이|스팀 '매우 긍정적'",
-      "sub": "포테이토 플리즈"
+      "title": "한국어로만 쓰는|PS 포탈이 나옵니다",
+      "sub": "PS 포탈 플레이어 12월 10일 국내 출시"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "칼 한 자루로 시작해|감자 공장까지",
-      "sub": "포테이토 플리즈"
+      "title": "이름에서 '리모트'가|빠진 PS 포탈",
+      "sub": "12월 10일 · 37만 8,000원"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 스팀 한국어 지원이 자막인지 인터페이스인지 칸 이름을 못 읽어 '한국어 지원'으로만 적음 · 평가 건수는 검증 때 1,286건으로 보여(초안 1,296건) 캡션에서 건수를 뺌",
-     "게임메카가 쓴 '유저 건의 직후 손 떨림 완화 옵션 추가'·'아들과 편지' 는 다른 출처로 확인 못 해 뺐음",
-     "평가 수치(1,296건 중 88%)·할인가는 11/8 오전 스팀 기준"
+     "공식 블로그 한 곳 + 그것을 옮긴 루리웹 글뿐 — 국내 매체 기사가 나오면 맞춰 볼 것 · 예약 판매처 이름은 공지에 없음"
     ],
     "research": [
      {
-      "title": "Steam — Potato Please",
-      "link": "https://store.steampowered.com/app/5266240/"
+      "title": "PlayStation.Blog 한국 — PlayStation Portal 플레이어 12월 10일 국내 출시",
+      "link": "https://blog.ko.playstation.com/2026/11/09/20261109-psportal/"
      },
      {
-      "title": "게임메카 — 감자 깎는 게임, 매우 긍정적",
-      "link": "https://www.gamemeca.com/view.php?gid=1783108"
-     },
-     {
-      "title": "電ファミニコゲーマー — Potato Please 11/4 発売",
-      "link": "https://news.denfaminicogamer.jp/news/2611032g"
-     },
-     {
-      "title": "80.lv — peel an endless pile of potatoes",
-      "link": "https://80.lv/articles/in-this-physics-based-game-your-job-is-to-peel-an-endless-pile-of-potatoes"
-     },
-     {
-      "title": "YouTube — Potato Please Official Release Trailer",
-      "link": "https://www.youtube.com/watch?v=le8aaHxQYdI"
+      "title": "루리웹 — 플레이스테이션 포탈 플레이어, 12월 10일 국내 출시",
+      "link": "https://bbs.ruliweb.com/news/board/1001/read/2365998"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103964/sahzdvygouwdofx6a7l2.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103969/pecolfehfcjsriwud7fn.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103964/skiexc99gkzsosbgyzon.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190337/din0ehmiws5n9elmtvjb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190337/vjygcpnaxdj3qputtxup.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103964/sahzdvygouwdofx6a7l2.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190337/din0ehmiws5n9elmtvjb.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-08T11:12+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794103966/plot_studio/e2kvtjngfyfukvml1gc3.mp4"
-     },
+     "at": "2026-11-09T11:12+09:00",
      "v": {
-      "A": "b3c9c9fc"
+      "A": "4f15305e"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "오늘 아침 나온 국내 공식 발표 · '한국어 전용' 이라는 묘한 사실과 국내 가격·예약일이 한 장에 들어간다",
+    "at": "2026-11-09T11:11+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ocarina-uk-launch",
+    "account": "Christopher Dring (The Game Business)",
+    "url": "https://x.com/Chris_Dring/status/2119486579102138567",
+    "image": null,
+    "head": "시간의 오카리나 리메이크, 영국 젤다 출시 첫 주 2위 · 야숨 넘어",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-09T11:11+09:00",
+   "key": "8aaa892f",
+   "by": "claude",
+   "subjects": [
+    "젤다의 전설 시간의 오카리나"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "[실험] 28년 만에 다시 만든 시간의 오카리나, 영국 첫 주 패키지 판매로 야숨을 넘었다 — 젤다 시리즈 영국 첫 주 2위",
+    "why": "1998년 원작을 아는 사람·모르는 사람 모두 읽히는 비교 · 출시 나흘 뒤 처음 나온 판매 신호"
+   },
+   "added": "claude",
+   "added_at": "2026-11-09T11:11+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n28년 만에 다시 만든 〈젤다의 전설 시간의 오카리나〉가 영국에서 첫 주에 〈브레스 오브 더 와일드〉보다 많이 팔렸습니다.\n\n영국 게임 업계지 더 게임 비즈니스의 크리스토퍼 드링이 실물 패키지 판매만 따져 밝힌 결과인데요, 영국에서 나온 젤다 시리즈 출시 첫 주 가운데 〈티어스 오브 더 킹덤〉 다음으로 컸습니다. 그 〈티어스 오브 더 킹덤〉 첫 주의 절반쯤이고, 올해 지금까지 나온 패키지 게임 가운데선 가장 큰 출시였습니다.\n\n1998년 닌텐도 64로 나온 원작을 스위치 2로 다시 만들면서, 본체 마이크에 콧노래를 불러도 게임 속 오카리나가 연주되는 기능이 들어갔습니다.\n\n11월 5일 출시 · 닌텐도 스위치 2 전용 · 패키지 8만 8,000원 · 다운로드 7만 9,800원\n\n#겜디핑 #젤다의전설 #시간의오카리나 #닌텐도스위치2 #닌텐도\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794190309/ngk9tzbcdqesinew6zuk.jpg\n제목: 시간의 오카리나,|영국에서 야숨을 넘었다\n부제: 영국 실물 패키지 첫 주 판매 기준\n출처: Nintendo\n",
+    "caption": "28년 만에 다시 만든 〈젤다의 전설 시간의 오카리나〉가 영국에서 첫 주에 〈브레스 오브 더 와일드〉보다 많이 팔렸습니다.\n\n영국 게임 업계지 더 게임 비즈니스의 크리스토퍼 드링이 실물 패키지 판매만 따져 밝힌 결과인데요, 영국에서 나온 젤다 시리즈 출시 첫 주 가운데 〈티어스 오브 더 킹덤〉 다음으로 컸습니다. 그 〈티어스 오브 더 킹덤〉 첫 주의 절반쯤이고, 올해 지금까지 나온 패키지 게임 가운데선 가장 큰 출시였습니다.\n\n1998년 닌텐도 64로 나온 원작을 스위치 2로 다시 만들면서, 본체 마이크에 콧노래를 불러도 게임 속 오카리나가 연주되는 기능이 들어갔습니다.\n\n11월 5일 출시 · 닌텐도 스위치 2 전용 · 패키지 8만 8,000원 · 다운로드 7만 9,800원\n\n#겜디핑 #젤다의전설 #시간의오카리나 #닌텐도스위치2 #닌텐도",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190309/ngk9tzbcdqesinew6zuk.jpg",
+      "credit": "Nintendo",
+      "from": "https://www.nintendo.com/kr/games/switch2/aa9ja/assets/img/top/intro_kv_bg_sp.webp"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190311/t7psd4u2du6lwlcnzah2.jpg",
+      "credit": "Nintendo",
+      "from": "https://www.nintendo-insider.com/wp-content/uploads/2026/11/the_legend_of_zelda_ocarina_of_time_screenshot-1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190309/ngk9tzbcdqesinew6zuk.jpg",
+      "credit": "Nintendo",
+      "from": "https://www.nintendo.com/kr/games/switch2/aa9ja/assets/img/top/intro_kv_bg_sp.webp"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190311/t7psd4u2du6lwlcnzah2.jpg",
+      "credit": "Nintendo",
+      "from": "https://www.nintendo-insider.com/wp-content/uploads/2026/11/the_legend_of_zelda_ocarina_of_time_screenshot-1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "시간의 오카리나,|영국에서 야숨을 넘었다",
+      "sub": "영국 실물 패키지 첫 주 판매 기준"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "28년 전 그 게임,|첫 주는 야숨보다 컸다",
+      "sub": "젤다의 전설 시간의 오카리나"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "야숨 대비 차이는 매체마다 35%(GoNintendo·Notebookcheck)·33%(My Nintendo News)로 갈려 숫자를 뺌 · 판매 수량은 공개된 것 없음",
+     "한국어 지원은 한국닌텐도 페이지에 언어 표기가 없어 캡션에서 뺌 — 국내판 화면으로 확인되면 넣을 것"
+    ],
+    "research": [
+     {
+      "title": "Christopher Dring on X",
+      "link": "https://x.com/Chris_Dring/status/2119486579102138567"
+     },
+     {
+      "title": "GoNintendo — biggest physical UK launch of 2026, second biggest Zelda launch",
+      "link": "https://gonintendo.com/contents/67057-zelda-ocarina-of-time-is-the-biggest-physical-uk-launch-of-2026-second-biggest-zelda"
+     },
+     {
+      "title": "Notebookcheck — Ocarina of Time launch beats Breath of the Wild",
+      "link": "https://www.notebookcheck.net/Zelda-Ocarina-of-Time-launch-beats-Breath-of-the-Wild-topping-2026-UK-physical-sales.1445366.0.html"
+     },
+     {
+      "title": "Nintendo Insider — UK's second-biggest Zelda launch ever",
+      "link": "https://www.nintendo-insider.com/zelda-ocarina-of-time-remake-becomes-uks-second-biggest-zelda-launch-ever/"
+     },
+     {
+      "title": "한국닌텐도 — 젤다의 전설 시간의 오카리나",
+      "link": "https://www.nintendo.com/kr/games/switch2/aa9ja/index.html"
+     },
+     {
+      "title": "게임메카 — 젤다의 전설 시간의 오카리나, 스위치 2로 빚어낸 명작",
+      "link": "https://www.gamemeca.com/view.php?gid=1782870"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190341/c6se6cpbzvntpdapwgmq.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190341/j8vqvrtvi8pjcg3umjjv.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190341/c6se6cpbzvntpdapwgmq.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-09T11:12+09:00",
+     "v": {
+      "A": "1632c4fa"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=le8aaHxQYdI\n구간: 0:05-0:30\n곡: 감자 공장까지\n아티스트: 칼 한 자루로 시작해\n피처링:\n후킹: \n출처: Golden Horn Studios\n자막: 자동",
-    "caption": "감자를 한 알씩 손으로 깎는 게임이 스팀에서 '매우 긍정적' 평가를 받고 있습니다.\n\n골든 혼 스튜디오의 〈포테이토 플리즈〉인데요, 군대를 먹일 감자를 준비하는 것이 임무입니다. 칼 한 자루로 시작해 도구를 사 모으다 보면 결국 기계로 작업을 자동화하게 됩니다.\n\n11월 4일(한국 시간) 출시 · PC(스팀) · 1만 1천 원(15일까지 9,900원) · 한국어 지원\n\n#겜디핑 #포테이토플리즈 #인디게임 #스팀 #감자",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=T4Eh0M-Sh_g\n구간: 0:05-0:30\n곡: 영국에서 야숨을 넘었습니다\n아티스트: 28년 전 그 게임이\n피처링:\n후킹: \n출처: Nintendo of America\n자막: 자동",
+    "caption": "28년 만에 다시 만든 〈젤다의 전설 시간의 오카리나〉가 영국에서 첫 주에 〈브레스 오브 더 와일드〉보다 많이 팔렸습니다.\n\n더 게임 비즈니스의 크리스토퍼 드링이 실물 패키지 판매로 따진 결과인데요, 영국 젤다 출시 첫 주 가운데 〈티어스 오브 더 킹덤〉 다음이고, 올해 나온 패키지 게임 가운데선 가장 큰 출시였습니다.\n\n11월 5일 출시 · 닌텐도 스위치 2 전용 · 패키지 8만 8,000원 · 다운로드 7만 9,800원\n\n#겜디핑 #젤다의전설 #시간의오카리나 #닌텐도스위치2 #닌텐도",
     "hooks": {
-     "A": "감자만 깎는 게임이 / 스팀에서 터졌습니다",
-     "B": "칼 한 자루로 시작해 / 감자 공장까지",
-     "C": "군대를 먹일 감자를 / 한 알씩 깎는 게임"
+     "A": "28년 전 그 게임이 / 영국에서 야숨을 넘었습니다",
+     "B": "시간의 오카리나 리메이크, / 첫 주는 야숨보다 컸다",
+     "C": "스위치 2로 돌아온 / 시간의 오카리나 첫 주 성적"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=le8aaHxQYdI",
-     "credit": "Golden Horn Studios",
+     "url": "https://www.youtube.com/watch?v=T4Eh0M-Sh_g",
+     "credit": "Nintendo of America",
      "range": [
       5.0,
       30.0
      ]
     },
     "guided": {
-     "rec": "B",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] 스팀 한국어 지원이 자막인지 인터페이스인지 칸 이름을 못 읽어 '한국어 지원'으로만 적음 · 평가 건수는 검증 때 1,286건으로 보여(초안 1,296건) 캡션에서 건수를 뺌",
-     "게임메카가 쓴 '유저 건의 직후 손 떨림 완화 옵션 추가'·'아들과 편지' 는 다른 출처로 확인 못 해 뺐음",
-     "평가 수치(1,296건 중 88%)·할인가는 11/8 오전 스팀 기준"
-    ],
-    "research": [
-     {
-      "title": "Steam — Potato Please",
-      "link": "https://store.steampowered.com/app/5266240/"
-     },
-     {
-      "title": "게임메카 — 감자 깎는 게임, 매우 긍정적",
-      "link": "https://www.gamemeca.com/view.php?gid=1783108"
-     },
-     {
-      "title": "電ファミニコゲーマー — Potato Please 11/4 発売",
-      "link": "https://news.denfaminicogamer.jp/news/2611032g"
-     },
-     {
-      "title": "80.lv — peel an endless pile of potatoes",
-      "link": "https://80.lv/articles/in-this-physics-based-game-your-job-is-to-peel-an-endless-pile-of-potatoes"
-     },
-     {
-      "title": "YouTube — Potato Please Official Release Trailer",
-      "link": "https://www.youtube.com/watch?v=le8aaHxQYdI"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/le8aaHxQYdI/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103973/j0eprrpy9oofgz9j4gay.jpg",
-     "key": "le8aaHxQYdI@5.0"
-    },
-    "px": {
-     "vid": "le8aaHxQYdI",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794104075/plot_studio/facd38fplfocm5gzasbr.mp4",
-     "off": 0.0,
-     "end": 60.0,
-     "full": 60.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-08T11:16+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:ea-classics-vault",
-    "account": "Steam",
-    "url": "https://store.steampowered.com/app/2448570/",
-    "image": null,
-    "head": "EA 고전 25종 스팀·GOG·EA 앱 출시, 7종은 원본 테이프로 복원",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-08T11:10+09:00",
-   "key": "9e29c75b",
-   "by": "claude",
-   "subjects": [
-    "로드 래시",
-    "윙 커맨더"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "EA 창고에서 나온 원본 테이프로 고전 25종이 스팀에 — 마크 해밀의 〈윙 커맨더 3〉 실사 장면도 복원",
-    "why": "사람(프로듀서)과 발견의 장면이 있는 출시 소식 · 〈울티마〉·〈테마 호스피탈〉 스팀 첫 출시"
-   },
-   "added": "claude",
-   "added_at": "2026-11-08T11:10+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\nEA가 창고에서 찾아낸 원본 테이프로 고전 PC 게임을 되살려 스팀에 내놓았습니다.\n\n시작은 2022년 EA 사내 보관실에서 나온 마스터 테이프였는데요, 이 보관실을 찾아낸 사람은 EA 프로듀서 짐 베셀라입니다. 이 테이프로 실사 영상 장면을 복원한 〈로드 래시〉와 〈윙 커맨더〉 시리즈 7종이 기념판으로, 〈울티마〉 시리즈와 〈테마 호스피탈〉 등 18종이 함께 5일 나왔습니다.\n\n마크 해밀이 출연했던 〈윙 커맨더 3〉의 실사 장면도 이번에 원본 테이프에서 되살린 영상으로 다시 볼 수 있게 됐습니다.\n\nPC(스팀·GOG·EA 앱) · 〈로드 래시: 30주년 기념판〉 1만 1천 원(19일까지 50% 할인 5,500원) · 〈로드 래시〉 기준 한국어 미지원\n\n#겜디핑 #로드래시 #윙커맨더 #울티마 #테마호스피탈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794103916/lfndaywnukpmxiwocm9a.jpg\n제목: 창고에서 찾은 테이프로|돌아온 EA 고전 25종\n부제: 로드 래시 · 윙 커맨더 · 울티마\n출처: Gameluster\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794103933/plot_studio/lroqoyhvzudhoiatcjnl.mp4\n소제목: \n본문: \n출처: Electronic Arts\n",
-    "caption": "EA가 창고에서 찾아낸 원본 테이프로 고전 PC 게임을 되살려 스팀에 내놓았습니다.\n\n시작은 2022년 EA 사내 보관실에서 나온 마스터 테이프였는데요, 이 보관실을 찾아낸 사람은 EA 프로듀서 짐 베셀라입니다. 이 테이프로 실사 영상 장면을 복원한 〈로드 래시〉와 〈윙 커맨더〉 시리즈 7종이 기념판으로, 〈울티마〉 시리즈와 〈테마 호스피탈〉 등 18종이 함께 5일 나왔습니다.\n\n마크 해밀이 출연했던 〈윙 커맨더 3〉의 실사 장면도 이번에 원본 테이프에서 되살린 영상으로 다시 볼 수 있게 됐습니다.\n\nPC(스팀·GOG·EA 앱) · 〈로드 래시: 30주년 기념판〉 1만 1천 원(19일까지 50% 할인 5,500원) · 〈로드 래시〉 기준 한국어 미지원\n\n#겜디핑 #로드래시 #윙커맨더 #울티마 #테마호스피탈",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103916/lfndaywnukpmxiwocm9a.jpg",
-      "credit": "Gameluster",
-      "from": "https://gameluster.com/wp-content/uploads/2026/11/ss_613c8f6d9c6e2f731cdbd89b7b335ee6ee554678.1920x1080.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103916/lfndaywnukpmxiwocm9a.jpg",
-      "credit": "Gameluster",
-      "from": "https://gameluster.com/wp-content/uploads/2026/11/ss_613c8f6d9c6e2f731cdbd89b7b335ee6ee554678.1920x1080.jpg"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "창고에서 찾은 테이프로|돌아온 EA 고전 25종",
-      "sub": "로드 래시 · 윙 커맨더 · 울티마"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "마크 해밀의 윙 커맨더,|원본 테이프로 복원",
-      "sub": "EA 고전 25종 스팀 출시"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] '포틀랜드 엑스포에서 테이프 600여 개를 찾았다고 밝혔다'는 Kotaku 에 박힌 제3자 블루스카이 글뿐이고 Gameluster 는 약 200개라 해서 뺌 · 마크 해밀 출연은 Kotaku 한 곳에서만 봄 · 출시일 5일은 미국 기준(한국 시간 미확인) · 복원 영상엔 AI 업스케일 옵션이 있어 '원본 화질' 표현을 뺌",
-     "가격·한국어 미지원은 〈로드 래시〉 스팀 페이지 기준 — 나머지 게임은 따로 안 봄",
-     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 실사 장면이 들어가는지 확인"
-    ],
-    "research": [
-     {
-      "title": "Steam — Road Rash: 30th Anniversary Edition",
-      "link": "https://store.steampowered.com/app/2448570/"
-     },
-     {
-      "title": "루리웹 — EA 클래식 PC 게임 25종 스팀 서비스",
-      "link": "https://bbs.ruliweb.com/news/read/231564"
-     },
-     {
-      "title": "Gameluster — EA's tape vault",
-      "link": "https://gameluster.com/ea-classics-steam-vault-wing-commander-road-rash/"
-     },
-     {
-      "title": "Kotaku — Wing Commander 3 remaster at Portland Retro Gaming Expo",
-      "link": "https://kotaku.com/ea-producer-announces-wing-commander-3-remaster-at-portland-retro-gaming-expo-2000744166"
-     },
-     {
-      "title": "VGC — EA has released 25 classic restored games",
-      "link": "https://www.videogameschronicle.com/news/ea-has-released-25-classic-restored-games-on-pc-including-ultima-and-road-rash/"
-     },
-     {
-      "title": "YouTube — EA Classics Gameplay Launch Trailer",
-      "link": "https://www.youtube.com/watch?v=64HKNisDVmA"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103983/cnon8ei02nkefoofzekv.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103986/barph8tonmrg7y85inuo.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103983/slnw9crdwhyufbgkrkvt.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103983/cnon8ei02nkefoofzekv.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-08T11:13+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794103984/plot_studio/tdffmj7oglx8u2a7pqdn.mp4"
-     },
-     "v": {
-      "A": "f6cf104d"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=64HKNisDVmA\n구간: 0:20-0:45\n곡: 돌아온 고전 게임들\n아티스트: 창고에서 찾은 테이프로\n피처링:\n후킹: \n출처: Electronic Arts\n자막: 자동",
-    "caption": "EA가 창고에서 찾아낸 원본 테이프로 고전 PC 게임을 되살려 스팀에 내놓았습니다.\n\n2022년 EA 사내 보관실에서 마스터 테이프가 나왔는데요, 이 테이프로 실사 영상 장면을 복원한 〈로드 래시〉와 〈윙 커맨더〉 시리즈 7종이 기념판으로, 〈울티마〉 시리즈와 〈테마 호스피탈〉 등 18종이 함께 5일 나왔습니다.\n\nPC(스팀·GOG·EA 앱) · 〈로드 래시〉 기념판 1만 1천 원(19일까지 5,500원) · 한국어 미지원\n\n#겜디핑 #로드래시 #윙커맨더 #울티마 #테마호스피탈",
-    "hooks": {
-     "A": "창고에서 찾은 테이프로 / 돌아온 고전 게임들",
-     "B": "로드 래시부터 울티마까지 / 스팀에 25종이 왔습니다",
-     "C": "마크 해밀의 윙 커맨더가 / 원본 테이프로 돌아왔습니다"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=64HKNisDVmA",
-     "credit": "Electronic Arts",
-     "range": [
-      20.0,
-      45.0
-     ]
-    },
-    "guided": {
      "rec": "A",
      "lint": []
     },
     "issues": [],
     "confirm": [
-     "[검증] '포틀랜드 엑스포에서 테이프 600여 개를 찾았다고 밝혔다'는 Kotaku 에 박힌 제3자 블루스카이 글뿐이고 Gameluster 는 약 200개라 해서 뺌 · 마크 해밀 출연은 Kotaku 한 곳에서만 봄 · 출시일 5일은 미국 기준(한국 시간 미확인) · 복원 영상엔 AI 업스케일 옵션이 있어 '원본 화질' 표현을 뺌",
-     "가격·한국어 미지원은 〈로드 래시〉 스팀 페이지 기준 — 나머지 게임은 따로 안 봄",
-     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 실사 장면이 들어가는지 확인"
+     "야숨 대비 차이는 매체마다 35%(GoNintendo·Notebookcheck)·33%(My Nintendo News)로 갈려 숫자를 뺌 · 판매 수량은 공개된 것 없음",
+     "한국어 지원은 한국닌텐도 페이지에 언어 표기가 없어 캡션에서 뺌 — 국내판 화면으로 확인되면 넣을 것"
     ],
     "research": [
      {
-      "title": "Steam — Road Rash: 30th Anniversary Edition",
-      "link": "https://store.steampowered.com/app/2448570/"
+      "title": "Christopher Dring on X",
+      "link": "https://x.com/Chris_Dring/status/2119486579102138567"
      },
      {
-      "title": "루리웹 — EA 클래식 PC 게임 25종 스팀 서비스",
-      "link": "https://bbs.ruliweb.com/news/read/231564"
+      "title": "GoNintendo — biggest physical UK launch of 2026, second biggest Zelda launch",
+      "link": "https://gonintendo.com/contents/67057-zelda-ocarina-of-time-is-the-biggest-physical-uk-launch-of-2026-second-biggest-zelda"
      },
      {
-      "title": "Gameluster — EA's tape vault",
-      "link": "https://gameluster.com/ea-classics-steam-vault-wing-commander-road-rash/"
+      "title": "Notebookcheck — Ocarina of Time launch beats Breath of the Wild",
+      "link": "https://www.notebookcheck.net/Zelda-Ocarina-of-Time-launch-beats-Breath-of-the-Wild-topping-2026-UK-physical-sales.1445366.0.html"
      },
      {
-      "title": "Kotaku — Wing Commander 3 remaster at Portland Retro Gaming Expo",
-      "link": "https://kotaku.com/ea-producer-announces-wing-commander-3-remaster-at-portland-retro-gaming-expo-2000744166"
+      "title": "Nintendo Insider — UK's second-biggest Zelda launch ever",
+      "link": "https://www.nintendo-insider.com/zelda-ocarina-of-time-remake-becomes-uks-second-biggest-zelda-launch-ever/"
      },
      {
-      "title": "VGC — EA has released 25 classic restored games",
-      "link": "https://www.videogameschronicle.com/news/ea-has-released-25-classic-restored-games-on-pc-including-ultima-and-road-rash/"
+      "title": "한국닌텐도 — 젤다의 전설 시간의 오카리나",
+      "link": "https://www.nintendo.com/kr/games/switch2/aa9ja/index.html"
      },
      {
-      "title": "YouTube — EA Classics Gameplay Launch Trailer",
-      "link": "https://www.youtube.com/watch?v=64HKNisDVmA"
+      "title": "게임메카 — 젤다의 전설 시간의 오카리나, 스위치 2로 빚어낸 명작",
+      "link": "https://www.gamemeca.com/view.php?gid=1782870"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/64HKNisDVmA/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/T4Eh0M-Sh_g/maxresdefault.jpg",
     "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794103990/hsjz8uxj59xiklxqoxtc.jpg",
-     "key": "64HKNisDVmA@20.0"
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190347/sdnifnjwwvppefsx6lmk.jpg",
+     "key": "T4Eh0M-Sh_g@5.0"
     },
     "px": {
-     "vid": "64HKNisDVmA",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794104125/plot_studio/hihtnggesflgxbv0pms1.mp4",
+     "vid": "T4Eh0M-Sh_g",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794190467/plot_studio/zbtqseb8zamkuhztgmpy.mp4",
      "off": 0.0,
-     "end": 69.0,
-     "full": 69.0
+     "end": 75.0,
+     "full": 79.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-08T11:16+09:00"
+     "at": "2026-11-09T11:14+09:00"
     }
    },
-   "corner_name": "소식",
    "pick": {
     "rank": 3,
-    "why": "오늘 아침 초안 중 가장 사람·장면이 선 글 — 창고에서 찾은 테이프와 마크 해밀의 실사 장면",
-    "at": "2026-11-08T19:10+09:00"
-   }
+    "why": "28년 전 게임이 야숨을 넘었다는 비교가 게임 안 하는 사람에게도 읽힌다",
+    "at": "2026-11-09T11:11+09:00"
+   },
+   "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:shindong-exilecon",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323117",
+    "id": "claude:sakurai-retirement",
+    "account": "ファミ通.com",
+    "url": "https://www.famitsu.com/article/202611/93350",
     "image": null,
-    "head": "[인터뷰] 가수, 엔터테이너, IT유튜버 그리고 게이머... '신동'을 만나다",
+    "head": "사쿠라이 마사히로, 패미통 40주년 페스 무대에서 은퇴관 밝혀",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-08T19:10+09:00",
-   "key": "f751914d",
+   "made_at": "2026-11-09T11:11+09:00",
+   "key": "9dbb8d9d",
    "by": "claude",
    "subjects": [
-    "신동",
-    "패스 오브 엑자일 2"
+    "사쿠라이 마사히로"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "슈퍼주니어 신동이 〈패스 오브 엑자일〉 팬 행사를 보러 뉴질랜드까지 — 인생 게임은 오락실의 〈킹 오브 파이터즈 97〉, 목표는 '죽기 전까지 모든 게임'",
-    "why": "게임 밖에서도 아는 사람이 게이머로서 한 말 · 오늘 아침 POE2 정식 출시 글과 각도가 다르다(발표가 아니라 사람)"
+    "angle": "은퇴를 묻자 '안타깝게도 아직 한창 일하고 있다' — 수요와 응답, 두 기준으로 은퇴를 보는 사쿠라이",
+    "why": "만든 사람의 말이 직접 있는 소식 · 패미통 원문 + 해외 매체로 확인"
    },
    "added": "claude",
-   "added_at": "2026-11-08T19:10+09:00",
+   "added_at": "2026-11-09T11:11+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n슈퍼주니어 신동이 〈패스 오브 엑자일〉 팬 행사를 보러 뉴질랜드 오클랜드까지 다녀왔습니다.\n\n7~8일 열린 엑자일콘 2026 현장에서 인벤과 만난 신동은 〈패스 오브 엑자일 2〉를 편집자의 추천으로 시작했다고 말했는데요, 자신 있게 일부러 어려운 직업인 워리어를 골랐다가 고생한 영상이 팬들에게 반응을 얻으면서 계속하게 됐다고 합니다. 그가 운영하는 IT 유튜브 채널 '신동댕동'에는 그 입문기 영상이 올라 있습니다.\n\n인생 게임으로는 오락실 시절의 〈더 킹 오브 파이터즈〉, 그중에서도 97을 꼽았습니다. 1등이나 정복보다 새 게임을 만나는 것 자체가 즐겁다는 그의 목표는 이렇습니다. \"죽기 전까지 가능한 한 모든 게임을 경험해 보는 거예요.\"\n\n〈패스 오브 엑자일 2〉 12월 12일(한국 시간) 정식 출시 · 무료\n\n#겜디핑 #신동 #슈퍼주니어 #패스오브엑자일2 #엑자일콘\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794132645/lqwcyzkxuk3xaxkl3h1k.jpg\n제목: 신동의 목표는|모든 게임 해 보기\n부제: 엑자일콘 2026 현장의 슈퍼주니어 신동\n출처: 인벤\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794132671/plot_studio/jvmihonc7zihkjb6zgjs.mp4\n소제목: \n본문: \n출처: 인벤\n",
-    "caption": "슈퍼주니어 신동이 〈패스 오브 엑자일〉 팬 행사를 보러 뉴질랜드 오클랜드까지 다녀왔습니다.\n\n7~8일 열린 엑자일콘 2026 현장에서 인벤과 만난 신동은 〈패스 오브 엑자일 2〉를 편집자의 추천으로 시작했다고 말했는데요, 자신 있게 일부러 어려운 직업인 워리어를 골랐다가 고생한 영상이 팬들에게 반응을 얻으면서 계속하게 됐다고 합니다. 그가 운영하는 IT 유튜브 채널 '신동댕동'에는 그 입문기 영상이 올라 있습니다.\n\n인생 게임으로는 오락실 시절의 〈더 킹 오브 파이터즈〉, 그중에서도 97을 꼽았습니다. 1등이나 정복보다 새 게임을 만나는 것 자체가 즐겁다는 그의 목표는 이렇습니다. \"죽기 전까지 가능한 한 모든 게임을 경험해 보는 거예요.\"\n\n〈패스 오브 엑자일 2〉 12월 12일(한국 시간) 정식 출시 · 무료\n\n#겜디핑 #신동 #슈퍼주니어 #패스오브엑자일2 #엑자일콘",
+    "form": "[카테고리]\nNews\n\n[캡션]\n은퇴를 어떻게 생각하느냐는 질문에 사쿠라이 마사히로는 안타깝게도 아직 한창 일하고 있다고 답했습니다.\n\n7일 패미통 40주년 페스에서 칼럼집 〈사쿠라이 마사히로의 게임에 대해 생각하는 것 파이널〉 출간을 기념해 오른 무대였는데요, 5년쯤 전 칼럼에 썼던 은퇴에 대한 생각은 지금도 거의 그대로라고 했습니다. 나를 찾는 수요가 있는지, 내가 거기에 응할 수 있는지, 둘 중 하나가 무너지면 은퇴를 생각할 때라는 겁니다.\n\n지금은 일이 계속 들어와 남은 건 자기 마음이 언제 꺾이느냐뿐이라면서도, 이대로 계속 가도 된다고는 보지 않는다고 했습니다. 이유는 한 마디였습니다. \"사람은 무대를 바꿔 가야 한다.\"\n\n#겜디핑 #사쿠라이마사히로 #스매시브라더스 #별의커비 #패미통\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794190317/fwk5uini8czyixkwhuix.jpg\n제목: 은퇴를 묻자|사쿠라이가 한 말\n부제: 패미통 40주년 페스 무대에서\n출처: ファミ通.com\n",
+    "caption": "은퇴를 어떻게 생각하느냐는 질문에 사쿠라이 마사히로는 안타깝게도 아직 한창 일하고 있다고 답했습니다.\n\n7일 패미통 40주년 페스에서 칼럼집 〈사쿠라이 마사히로의 게임에 대해 생각하는 것 파이널〉 출간을 기념해 오른 무대였는데요, 5년쯤 전 칼럼에 썼던 은퇴에 대한 생각은 지금도 거의 그대로라고 했습니다. 나를 찾는 수요가 있는지, 내가 거기에 응할 수 있는지, 둘 중 하나가 무너지면 은퇴를 생각할 때라는 겁니다.\n\n지금은 일이 계속 들어와 남은 건 자기 마음이 언제 꺾이느냐뿐이라면서도, 이대로 계속 가도 된다고는 보지 않는다고 했습니다. 이유는 한 마디였습니다. \"사람은 무대를 바꿔 가야 한다.\"\n\n#겜디핑 #사쿠라이마사히로 #스매시브라더스 #별의커비 #패미통",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132645/lqwcyzkxuk3xaxkl3h1k.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/07/news/i1564424146.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190317/fwk5uini8czyixkwhuix.jpg",
+      "credit": "ファミ通.com",
+      "from": "https://cimg.kgl-systems.io/camion/files/93350/thumbnail_MoDq.jpg?x=1280"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190319/i52vioblzfmg4hms5noq.jpg",
+      "credit": "ファミ通.com",
+      "from": "https://cimg.kgl-systems.io/camion/files/93350/thumbnail_MoDq.jpg?x=1280"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132645/lqwcyzkxuk3xaxkl3h1k.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/07/news/i1564424146.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190317/fwk5uini8czyixkwhuix.jpg",
+      "credit": "ファミ通.com",
+      "from": "https://cimg.kgl-systems.io/camion/files/93350/thumbnail_MoDq.jpg?x=1280"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190319/i52vioblzfmg4hms5noq.jpg",
+      "credit": "ファミ通.com",
+      "from": "https://cimg.kgl-systems.io/camion/files/93350/thumbnail_MoDq.jpg?x=1280"
      }
     ],
-    "shape": "맥락",
+    "shape": "단신",
     "covers": [
      {
       "key": "A",
       "hook": "Claude",
-      "title": "신동의 목표는|모든 게임 해 보기",
-      "sub": "엑자일콘 2026 현장의 슈퍼주니어 신동"
+      "title": "은퇴를 묻자|사쿠라이가 한 말",
+      "sub": "패미통 40주년 페스 무대에서"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "패스 오브 엑자일 보러|뉴질랜드 간 신동",
-      "sub": "슈퍼주니어 신동 · 엑자일콘 2026"
+      "title": "사람은 무대를|바꿔 가야 한다",
+      "sub": "사쿠라이 마사히로"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 실용 정보에서 'PC·콘솔 · 한국어 지원'을 뺐음 — 인벤 정식 출시 기사·엑자일콘 포럼 어디에도 정식판 플랫폼·한국어 지원 문장이 없음. 확인되면 다시 넣을 것",
-     "엑자일콘 현장 방문과 발언(인생 게임·목표·편집자 추천)은 인벤 인터뷰 한 곳뿐 — 워리어 입문은 본인 채널 영상 제목으로만 대조함. 올리기 전 신동 SNS에 현장 사진이 있는지 한 번 확인",
-     "표지 사진은 인벤 현장 사진(©INVEN) — 신동 얼굴이 제대로 잡혔는지 미리보기로 확인"
+     "'안타깝게도 아직 한창 일하고 있다'는 농담 섞인 말(非常に残念なことに、私、バリバリ働けているんです) — 은퇴 예고로 읽히지 않게 표지·제목 톤 확인",
+     "칼럼집 출간일·무대 장소는 패미통 기사에 없어 뺌"
     ],
     "research": [
      {
-      "title": "[인터뷰] 가수, 엔터테이너, IT유튜버 그리고 게이머... '신동'을 만나다 (인벤 11/7)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323117"
+      "title": "ファミ通.com — 桜井政博氏 引退について",
+      "link": "https://www.famitsu.com/article/202611/93350"
      },
      {
-      "title": "신동댕동 — 디아만 하다가 POE2 워리어로 입문하고 욕나온 썰 (신동 본인 채널)",
-      "link": "https://www.youtube.com/watch?v=MZ1UVrNMZs4"
-     },
-     {
-      "title": "ExileCon 2026 — 11/7~8(NZT) 오클랜드 (Path of Exile 공식 포럼)",
-      "link": "https://www.pathofexile.com/forum/view-thread/3931193"
+      "title": "My Nintendo News — Sakurai says work is coming in now but retirement is sometimes in back of mind",
+      "link": "https://mynintendonews.com/2026/11/07/sakurai-says-work-is-coming-in-now-but-retirement-is-sometimes-in-back-of-mind/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132680/ehupouk8xnavvzwooadm.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132684/f2drgpkp5d7yeddugo9f.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132681/f1bdez0smkq6wakwqwvd.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190350/s4jij3quoiibteohxl5h.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190350/pdfznwtozqzxxoc9wdxp.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132680/ehupouk8xnavvzwooadm.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794190350/s4jij3quoiibteohxl5h.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-08T19:11+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794132681/plot_studio/ddzb9ljfz5vhqj9pmtwp.mp4"
-     },
+     "at": "2026-11-09T11:12+09:00",
      "v": {
-      "A": "34a2ff28"
+      "A": "166957e9"
      }
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "게임 안 하는 사람도 아는 얼굴이 팬 행사까지 날아간 이야기 — 'KOF 97'과 '모든 게임 해 보기'가 공유를 부른다",
-    "at": "2026-11-08T19:10+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:wardogs-season3",
-    "account": "BULKHEAD 공식 유튜브",
-    "url": "https://www.youtube.com/watch?v=h9RtmPSqnAg",
-    "image": null,
-    "head": "WARDOGS | Road to Season 03 — 시즌 3 11월 12일, 시즌 2는 '너무 공격적이었다'",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-08T19:10+09:00",
-   "key": "3425c95e",
-   "by": "claude",
-   "subjects": [
-    "워독스",
-    "벌크헤드"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "100인 전술 FPS 〈워독스〉 개발사가 시즌 2를 두고 '그건 우리 책임' — 12일 시즌 3는 실험 대신 안정",
-    "why": "만든 사람이 자기 실수를 공식 영상으로 말한 장면 · 시즌 3가 나흘 뒤라 계기가 있다 · 한국어 지원"
-   },
-   "added": "claude",
-   "added_at": "2026-11-08T19:10+09:00",
-   "corner": "news",
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=h9RtmPSqnAg\n구간: 2:13-2:41\n곡: 개발사가 직접 인정했습니다\n아티스트: 시즌 2는 우리 잘못,\n피처링:\n후킹: \n출처: BULKHEAD\n자막: 자동",
-    "caption": "100인 전술 FPS 〈워독스〉의 개발사가 지난 시즌의 실패를 영상으로 직접 인정했습니다.\n\n벌크헤드는 공식 채널에 올린 '시즌 3로 가는 길' 영상에서 시즌 2를 두고 \"변화가 너무 공격적이었고, 그건 우리 책임\"이라고 말했는데요, 부정적인 리뷰에 말 대신 행동으로 답하려다 성장 속도가 너무 빨라졌고, 그 바람에 시즌 1을 만족스럽게 했던 '여정'을 없애 버렸다는 설명입니다.\n\n그래서 12일 열리는 시즌 3의 방향은 반대입니다. 큰 실험 없이 안정을 앞세우고, 시가전 중심의 새 맵을 넣고, 시즌을 더 길게 가져갑니다.\n\n시즌 3 11월 12일 · PC(스팀) 앞서 해보기 · 4만 7,270원 · 한국어 지원\n\n#겜디핑 #워독스 #WARDOGS #벌크헤드 #팀17",
-    "hooks": {
-     "A": "시즌 2는 우리 잘못, / 개발사가 직접 인정했습니다",
-     "B": "너무 빨리 고친 게 / 문제였다는 개발사",
-     "C": "100인 전쟁 FPS 워독스, / 12일 시즌 3로 다시"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=h9RtmPSqnAg",
-     "credit": "BULKHEAD",
-     "range": [
-      133.0,
-      161.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — BULKHEAD(개발사 공식 채널) · 구간 2:13-2:41 는 자막으로 잡음(시즌 2 '너무 공격적이었고 그건 우리 책임' 대목) — 화면에 말하는 사람이 누구인지(조 브래머 대표인지) 영상으로 확인, 확인되면 캡션에 이름을 넣어도 됨",
-     "시즌 3 '12일'은 영상 발언 기준이라 한국 시각 미확인 · 스팀 한국어 리뷰는 8일 기준 '대체로 부정적'(2,650건 중 34%)이라 댓글 반응 주의"
-    ],
-    "research": [
-     {
-      "title": "WARDOGS | Road to Season 03 (BULKHEAD 공식)",
-      "link": "https://www.youtube.com/watch?v=h9RtmPSqnAg"
-     },
-     {
-      "title": "시즌2 실패 인정한 '워독스' 12일 시즌3 연다 (게임메카 11/7)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783137"
-     },
-     {
-      "title": "WARDOGS Devs Admit Faster Season 2 Progression Was the 'Wrong Call' (GameRiv)",
-      "link": "https://gameriv.com/wardogs-devs-admit-faster-season-2-progression-was-the-wrong-call-consider-early-season-3/"
-     },
-     {
-      "title": "WARDOGS (Steam)",
-      "link": "https://store.steampowered.com/app/1867240/"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/h9RtmPSqnAg/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794132689/nccjwqba7jgcbzeey4ek.jpg",
-     "key": "h9RtmPSqnAg@133.0"
-    },
-    "px": {
-     "vid": "h9RtmPSqnAg",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794132787/plot_studio/kwuctc65heblnnijgxhy.mp4",
-     "off": 88.0,
-     "end": 206.0,
-     "full": 862.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-08T19:13+09:00"
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "개발사가 자기 실수를 영상으로 인정한 장면 — 사람이 보이는 말 한 마디에 12일 시즌 3라는 계기까지 있다",
-    "at": "2026-11-08T19:10+09:00"
    },
    "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
-  "week": "11/02~11/08",
-  "days_left": 1,
+  "week": "11/09~11/15",
+  "days_left": 7,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -794,7 +661,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 7,
+    "need_today": 1,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -806,7 +673,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 6,
+    "need_today": 1,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -818,7 +685,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -842,7 +709,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -854,7 +721,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -866,7 +733,7 @@
     "weekly": 1,
     "done": 0,
     "left": 1,
-    "need_today": 0,
+    "need_today": 1,
     "day": 0,
     "next_no": 1,
     "drafts": 0,
@@ -890,10 +757,10 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 2,
+    "need_today": 1,
     "day": null,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 0,
     "why": "오늘(이번 주) 발매 5·10·15·20·25·30주년 앨범을 다시 꺼낸다 — 그때 무슨 일이었고 지금 왜 다시 듣나"
    },
    {
@@ -902,17 +769,17 @@
     "weekly": 4,
     "done": 0,
     "left": 4,
-    "need_today": 4,
+    "need_today": 1,
     "day": null,
     "next_no": null,
     "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-08T19:13+09:00"
+  "at": "2026-11-09T11:14+09:00"
  },
  "queue": {
-  "next": "2026-11-08T19:15+09:00",
+  "next": "2026-11-09T11:16+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
