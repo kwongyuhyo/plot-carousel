@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-09 15:05 KST",
+ "generated_at": "2026-11-09 19:04 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1685,10 +1685,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-08 22:04 KST"
+  "daily": "2026-11-09 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-09T14:47:11+09:00",
+  "fetched_at": "2026-11-09T19:04:52+09:00",
   "posts": [
    {
     "t": "2026-11-08T15:48+09:00",
@@ -2369,17 +2369,12 @@
     "t": "2026-10-20T20:03+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "인디고뮤직(@indigomusic_official)이라는 이름은"
-   },
-   {
-    "t": "2026-10-19T17:15+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "크러쉬가 1년 2개월 만의 신곡에 아이유(@dlwlrma)를 불렀습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 360,
+  "drafts": 362,
   "posted": 124,
   "posts": 149,
   "rate": 0.34,
@@ -2387,12 +2382,12 @@
   "own_mult": 1.05,
   "lanes": {
    "클립": {
-    "drafts": 50,
+    "drafts": 51,
     "posted": 7,
     "mult": 1.05
    },
    "정보": {
-    "drafts": 242,
+    "drafts": 243,
     "posted": 104,
     "mult": 1.0
    },
@@ -2419,7 +2414,7 @@
   },
   "corners": {
    "mal": {
-    "drafts": 48,
+    "drafts": 49,
     "posted": 7,
     "mult": 0.89
    },
@@ -2474,7 +2469,7 @@
     "mult": 0.96
    },
    "intro": {
-    "drafts": 14,
+    "drafts": 15,
     "posted": 3,
     "mult": 0.78
    },
@@ -2593,7 +2588,7 @@
   ]
  },
  "follow": {
-  "at": "2026-11-09T15:05+09:00",
+  "at": "2026-11-09T19:05+09:00",
   "d30": {
    "days": 30,
    "follows": 16.8,
@@ -2660,7 +2655,7 @@
   ],
   "feed": {
    "n": 184,
-   "reach": 3643873,
+   "reach": 3644287,
    "follows": 485,
    "per1k": 0.13
   },
@@ -2684,7 +2679,7 @@
    {
     "kind": "기타",
     "n": 33,
-    "reach": 284009,
+    "reach": 284098,
     "follows": 37,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2692,7 +2687,7 @@
    {
     "kind": "발매·신보",
     "n": 39,
-    "reach": 94278,
+    "reach": 94484,
     "follows": 10,
     "per1k": 0.11,
     "visits1k": 2.9
@@ -2700,7 +2695,7 @@
    {
     "kind": "갈등·반응",
     "n": 20,
-    "reach": 314711,
+    "reach": 314737,
     "follows": 35,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2708,7 +2703,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 31,
-    "reach": 137853,
+    "reach": 137928,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.7
