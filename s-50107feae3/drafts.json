@@ -2255,6 +2255,147 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-07c52d33",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/p/DfhHwemk9Oz/?obrf=MXFnYzY3bndkcjZzYg==",
+    "image": null,
+    "head": "팬들이 만든 말 '남주닝'이 스탠퍼드 수업 이름이 됐다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T03:35+09:00",
+   "key": "658fae3a",
+   "by": "claude",
+   "subjects": [
+    "RM"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "팬들이 RM의 일상에 붙인 말 '남주닝'이 스탠퍼드 신입생 수업 이름이 됐다",
+    "why": "규효 맡기기 · 11/9 국내외 매체가 일제히 보도한 RM 화제 — 사람(RM의 생활 방식)이 소식의 중심"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T03:35+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nRM의 일상이 스탠퍼드대학교의 정식 수업이 됐습니다.\n\n강의명은 '남주닝, 그리고 BTS로부터 얻는 웰빙 영감'인데요, '남주닝'은 미술관에 가고 자전거를 타고 공원을 걷고 책을 읽는 RM의 생활을 두고 팬들이 그의 본명 김남준에 '-ing'를 붙여 만든 말입니다.\n\n신입생 세미나(PSYC 65N)로 열리는 이 수업은 수면과 불안, 창작의 슬럼프, 자기애 같은 주제를 연구와 데이터로 따져 봅니다. 기말 과제는 RM이 20대를 담아 2022년에 낸 첫 솔로 앨범 [Indigo]에서 출발하고, 수강 조건에는 'BTS에 대한 건강한 존중'이 적혀 있습니다.\n\n팬들이 붙여 준 말 하나가 대학 강의실의 이름이 된 셈입니다.\n\n#PLOT #RM #방탄소년단 #남주닝 #스탠퍼드 #Indigo\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794249329/t3a1egdeturfuylmoiiv.jpg\n제목: RM의 일상이|스탠퍼드 수업이 됐다\n부제: 강의명은 '남주닝'\n출처: @rkive\n",
+    "caption": "RM의 일상이 스탠퍼드대학교의 정식 수업이 됐습니다.\n\n강의명은 '남주닝, 그리고 BTS로부터 얻는 웰빙 영감'인데요, '남주닝'은 미술관에 가고 자전거를 타고 공원을 걷고 책을 읽는 RM의 생활을 두고 팬들이 그의 본명 김남준에 '-ing'를 붙여 만든 말입니다.\n\n신입생 세미나(PSYC 65N)로 열리는 이 수업은 수면과 불안, 창작의 슬럼프, 자기애 같은 주제를 연구와 데이터로 따져 봅니다. 기말 과제는 RM이 20대를 담아 2022년에 낸 첫 솔로 앨범 [Indigo]에서 출발하고, 수강 조건에는 'BTS에 대한 건강한 존중'이 적혀 있습니다.\n\n팬들이 붙여 준 말 하나가 대학 강의실의 이름이 된 셈입니다.\n\n#PLOT #RM #방탄소년단 #남주닝 #스탠퍼드 #Indigo",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249329/t3a1egdeturfuylmoiiv.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792608805/rwlzordlffnxk7kbvx2w.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249332/py6vdbq0dqf4fba2crwd.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792608704/zt4vyjvzpkpijqxxbkjd.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249335/ssvldqpkri0k1rcs8ddq.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792608757/xzfbd9vj1sxalubyzrme.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249338/p5pflgavwm1ygpxr8ykf.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792599373/kr1ngiar1s3ignp22dyo.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249329/t3a1egdeturfuylmoiiv.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792608805/rwlzordlffnxk7kbvx2w.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249332/py6vdbq0dqf4fba2crwd.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792608704/zt4vyjvzpkpijqxxbkjd.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249335/ssvldqpkri0k1rcs8ddq.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792608757/xzfbd9vj1sxalubyzrme.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249338/p5pflgavwm1ygpxr8ykf.jpg",
+      "credit": "@rkive",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792599373/kr1ngiar1s3ignp22dyo.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "RM의 일상이|스탠퍼드 수업이 됐다",
+      "sub": "강의명은 '남주닝'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "팬들이 만든 말 '남주닝',|스탠퍼드 강의명으로",
+      "sub": "PSYC 65N"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "스탠퍼드 신입생 수업,|기말 과제는 [Indigo]",
+      "sub": "RM에게서 얻는 웰빙"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 개설 학기('2026~2027학년도 가을 학기')는 스타뉴스 한 곳에만 있고(스탠퍼드는 쿼터제) 강의 페이지를 못 열어 캡션에서 뺐다",
+     "숏폼은 비움 — 이 소식을 담은 방송·원본 영상이 없고(강의 개설 발표뿐), 남의 편집 영상은 쓸 수 없어서",
+     "강의 공식 페이지(explorecourses PSYC 65N)는 직접 못 열었다 — 강의명·번호·학기·수강 조건은 스타뉴스·보그 코리아·GMA 기사로 맞춤"
+    ],
+    "research": [
+     {
+      "title": "스타뉴스 — RM's daily life becomes a Stanford University lecture (2026-11-09)",
+      "link": "https://www.starnewskorea.com/en/music/2026/11/09/2026110916475193366"
+     },
+     {
+      "title": "보그 코리아 — 스탠퍼드가 주목한 RM의 취향과 삶에 대한 태도 (2026-11-09)",
+      "link": "https://www.vogue.co.kr/2026/11/09/%EC%8A%A4%ED%83%A0%ED%8D%BC%EB%93%9C%EA%B0%80-%EC%A3%BC%EB%AA%A9%ED%95%9C-rm%EC%9D%98-%EC%B7%A8%ED%96%A5%EA%B3%BC-%EC%82%B6%EC%97%90-%EB%8C%80%ED%95%9C-%ED%83%9C%EB%8F%84"
+     },
+     {
+      "title": "GMA — Stanford University offers 'Namjooning' course inspired by BTS' RM",
+      "link": "https://www.gmanetwork.com/news/showbiz/showbizabroad/1008792/stanford-university-offers-namjooning-course-inspired-by-bts-rm/story/"
+     },
+     {
+      "title": "스포츠경향 — RM의 스탠퍼드 '우는 나무' 방문 (2026-05-20)",
+      "link": "https://sports.khan.co.kr/en/article/202605200907007"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249341/o7lauyb8ul9wox4z4lng.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249340/b2slv39k8xtwrpgdlsjk.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249343/ilvaucavximvlvk41gnt.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249343/v2bfxbzzctwsbamlvmep.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794249341/o7lauyb8ul9wox4z4lng.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T03:35+09:00",
+     "v": {
+      "A": "5dcbf5c5",
+      "B": "a9371331",
+      "C": "47ad3a77"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -2429,11 +2570,11 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T03:06+09:00"
+  "at": "2026-11-10T03:35+09:00"
  },
  "queue": {
   "next": "2026-11-10T08:00+09:00",
