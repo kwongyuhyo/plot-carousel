@@ -1446,7 +1446,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=9soFGyRwvcM\n구간: 1:04-1:46\n곡: '2.5 point'의 정체\n아티스트: 블랙넛 벌스에 나온\n피처링:\n후킹: \n출처: GIRIBOY\n음원: 기리보이, C JAMM, 블랙넛 - triple\n가사: 자동",
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=9soFGyRwvcM\n구간: 1:04-1:46\n곡: '2.5 point'의 정체\n아티스트: 블랙넛 벌스에 나온\n피처링:\n후킹: \n출처: GIRIBOY\n음원: 기리보이, C JAMM, 블랙넛 - triple\n가사: 자동\n자막: 받음 st:1794198870557-59334311",
     "caption": "블랙넛(@daiwoongkim)의 'triple' 벌스에는 '2.5 point'라는 구절이 나옵니다.\n\n리드머는 올해 7월 블랙넛과 씨잼(@cjadoublem)의 [도모]에 2.5점을 매겼는데요, 이달 4일 기리보이(@giriboy91)·씨잼과 함께 낸 EP [asdf]의 타이틀곡에서 그 숫자가 다시 들립니다.\n\n최근에는 리드머 전 편집장 강일권이 SNS에 '솔로 앨범 없는 아티스트'를 비판하는 취지의 글을 올린 것으로 알려지며, 이 글이 블랙넛을 겨냥한 것 아니냐는 이야기도 나오고 있습니다. 블랙넛 측은 아직 입장을 내지 않았습니다.\n\n#PLOT #블랙넛 #기리보이 #씨잼 #리드머 #asdf",
     "hooks": {
      "A": "블랙넛 벌스에 나온 / '2.5 point'의 정체",
@@ -1510,8 +1510,134 @@
      "full": 163.0
     },
     "prep": {
-     "status": "queued",
-     "at": "2026-11-09T13:32+09:00"
+     "status": "ready",
+     "rid": "st:1794198870557-59334311",
+     "n": 24,
+     "note": "🎤 가사 59줄 (가사 영상 「음악 자막 채널」에서 · 소리 맞춤 1.01)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 1.75,
+       "text": "You know what I mean, we back"
+      },
+      {
+       "start": 1.75,
+       "end": 3.5,
+       "text": "Double M, Giri, Black Nut"
+      },
+      {
+       "start": 3.5,
+       "end": 5.0,
+       "text": "yeah 딴 말로 happy"
+      },
+      {
+       "start": 5.0,
+       "end": 7.0,
+       "text": "보기 좋게 널 패주지"
+      },
+      {
+       "start": 7.0,
+       "end": 8.75,
+       "text": "like a computer game"
+      },
+      {
+       "start": 8.75,
+       "end": 10.5,
+       "text": "오 이런 레벨이야"
+      },
+      {
+       "start": 10.5,
+       "end": 12.5,
+       "text": "바로 그 자체가 스페셜"
+      },
+      {
+       "start": 12.5,
+       "end": 15.75,
+       "text": "나는 MC, 나는 솔로 but I'm not 데프콘"
+      },
+      {
+       "start": 15.75,
+       "end": 19.25,
+       "text": "I love big, I love 찌찌는 최소 에프컵"
+      },
+      {
+       "start": 19.25,
+       "end": 20.75,
+       "text": "찐따스런 용모"
+      },
+      {
+       "start": 20.75,
+       "end": 21.5,
+       "text": "마이크 쥐면 dope flow"
+      },
+      {
+       "start": 21.5,
+       "end": 23.0,
+       "text": "yeah shawty that's my 꼴통"
+      },
+      {
+       "start": 23.0,
+       "end": 24.5,
+       "text": "2.5 point on 도모"
+      },
+      {
+       "start": 24.5,
+       "end": 26.25,
+       "text": "그냥 걘 귓구멍이 바텀 똥꼬"
+      },
+      {
+       "start": 26.25,
+       "end": 27.5,
+       "text": "Fxxk that magazine"
+      },
+      {
+       "start": 27.5,
+       "end": 29.5,
+       "text": "하하 어르신 너무 웃겨 유머일번지"
+      },
+      {
+       "start": 29.5,
+       "end": 31.25,
+       "text": "떼창으로 묻어 니 잡소리 on stage"
+      },
+      {
+       "start": 31.25,
+       "end": 32.25,
+       "text": "무대 아래 these girls"
+      },
+      {
+       "start": 32.25,
+       "end": 33.5,
+       "text": "불러 daddy 나는 웅버지"
+      },
+      {
+       "start": 33.5,
+       "end": 35.0,
+       "text": "골라 새하얗게 한발 찍하고"
+      },
+      {
+       "start": 35.0,
+       "end": 36.5,
+       "text": "그녀 얼굴 만들어 팔리아치"
+      },
+      {
+       "start": 36.5,
+       "end": 37.5,
+       "text": "rappers keep talk shit"
+      },
+      {
+       "start": 37.5,
+       "end": 39.5,
+       "text": "잡히면 모가지 pop 마치 국물용 멸치"
+      },
+      {
+       "start": 39.5,
+       "end": 42.0,
+       "text": "챙겨 다시 난 사라져 생활비 약 8개월치"
+      }
+     ],
+     "at": "2026-11-09T13:34+09:00"
     }
    },
    "corner_name": "후속"
@@ -1693,10 +1819,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-09T13:32+09:00"
+  "at": "2026-11-09T13:34+09:00"
  },
  "queue": {
-  "next": "2026-11-09T13:34+09:00",
+  "next": "2026-11-09T13:36+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-08T15:48+09:00"
