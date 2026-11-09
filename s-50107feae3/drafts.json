@@ -389,12 +389,12 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
-    "why": "레이더 1위(빅뱅 8.5) · 어젯밤 일 · 멈춘 공연 뒤 다시 올라와 고개 숙인 세 사람 — 지금 가장 뜨거운 사람 장면",
-    "at": "2026-11-09T10:06+09:00"
-   },
-   "corner_name": "소식"
+    "rank": 2,
+    "why": "레이더 빅뱅 8.5 · 어젯밤 일 · 멈춘 공연 뒤 다시 올라와 사과한 사람 장면",
+    "at": "2026-11-09T16:32+09:00"
+   }
   },
   {
    "source": {
@@ -550,11 +550,6 @@
       "A": "05646508"
      }
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "열일곱에 만난 두 사람이 '열일곱'을 처음 같은 무대에서 — 관계 정리형(인물해부 목표) · 데이식스 게시물 3.7배",
-    "at": "2026-11-09T10:06+09:00"
    },
    "corner_name": "만나는 법",
    "corner_no": 5
@@ -1057,11 +1052,6 @@
      ],
      "at": "2026-11-09T10:08+09:00"
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "릴스 칸 · 뷰티풀너드 재키와이 편 5,171 도달의 같은 결 · 국힙 본인 말",
-    "at": "2026-11-09T10:06+09:00"
    },
    "corner_name": "그 말",
    "corner_no": 8
@@ -1641,6 +1631,366 @@
     }
    },
    "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "claude:bestie-13years",
+    "account": "다혜가다했다DAHYE",
+    "url": "https://www.youtube.com/watch?v=fU0tybevRVs",
+    "image": null,
+    "head": "베스티 첫 만남부터 음악방송까지 비하인드 브이로그",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-09T16:32+09:00",
+   "key": "a96272b3",
+   "by": "claude",
+   "subjects": [
+    "베스티"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "13년 전 노래가 흩어졌던 네 사람을 다시 불러 모았다 — 데뷔 · 각자의 자리 · 재결합 · 12cm 힐의 11년 만 무대",
+    "why": "이번 회차 목표 인물해부 · 팔로워 5일 새 +35,851 · 기사 13건 급상승 · 11/6 글(대만 차트)과 다른 각도 — 사람 중심"
+   },
+   "added": "claude",
+   "added_at": "2026-11-09T16:32+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n베스티(@bestie_ofcl)는 13년 전 노래로 다시 모였습니다.\n\n2013년 10월 나온 '연애의 조건'이 최근 숏폼에서 다시 퍼지자, 팀 활동이 멈춘 뒤 트로트·뮤지컬·연애 예능·연기로 흩어졌던 혜연, 유지, 다혜, 해령이 뜻을 모았는데요, 재결합을 공식화한 10월 17일은 이 곡이 나온 지 꼭 13년 되는 날이었습니다.\n\n두 주 뒤 선 〈쇼! 음악중심〉은 약 11년 만의 음악방송 무대였습니다. 다혜가 올린 브이로그 속 네 사람은 12cm 힐을 신고 마지막 연습을 했고, \"데뷔보다 더 떨린다\"는 말이 나왔습니다.\n\n그 노래를 다시 찾아 들은 사람들 앞에, 그 노래를 불렀던 네 사람이 그대로 섰습니다.\n\n#PLOT #베스티 #연애의조건 #다혜 #혜연 #해령\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794209544/qixlx3ucnyqf77iy9gve.jpg\n제목: 13년 전 노래가|다시 불러 모은 베스티\n부제: 혜연 · 유지 · 다혜 · 해령\n출처: @bestie_ofcl\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794209546/bynbuxnhwawernikjmbn.jpg\n소제목: 2013년, '연애의 조건'\n본문: 베스티는 2013년 '두근두근'으로 데뷔했습니다.||같은 해 10월 17일 나온 곡이 '연애의 조건'입니다. 최근 숏폼에서 다시 퍼진 바로 그 노래입니다.\n출처: 위키트리\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794209547/r7nlqucanqi5sohnaccr.jpg\n소제목: 각자의 자리에서\n본문: 팀 활동이 멈춘 뒤 네 사람은 다른 길을 걸었습니다.||혜연은 〈내일은 미스트롯2〉에 나서며 트로트 가수가 됐고, 유지는 뮤지컬 무대에 섰습니다. 다혜는 〈환승연애3〉에 출연했고, 해령은 배우로 활동했습니다.\n출처: 스포츠경향\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792889256/eqrng0xcc5g5bntmmsyl.jpg\n소제목: 13주년에 맞춘 재결합\n본문: '연애의 조건'이 다시 차트에 오르자 네 사람이 뜻을 모았습니다.||재결합을 공식화한 10월 17일은 이 곡이 나온 지 꼭 13년 되는 날이었습니다. 다혜는 \"BESTie 재결합합니다!\"라는 글을 남겼습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792889269/pjabtnucspsywukn5vih.jpg\n소제목: 12cm 힐, 11년 만의 무대\n본문: 10월 31일 〈쇼! 음악중심〉 무대는 약 11년 만의 음악방송이었습니다.||방송 전 마지막 연습에서 네 사람은 12cm 힐을 신었습니다. 다혜는 \"요즘에 진짜 이런 힐 신고 춤추는 가수가 없는데\" 한번 해 보겠다고 했습니다.\n출처: \n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794209568/plot_studio/jardte8wlj1n9lqrqqkt.mp4\n소제목: \n본문: \n출처: 다혜가다했다DAHYE\n",
+    "caption": "베스티(@bestie_ofcl)는 13년 전 노래로 다시 모였습니다.\n\n2013년 10월 나온 '연애의 조건'이 최근 숏폼에서 다시 퍼지자, 팀 활동이 멈춘 뒤 트로트·뮤지컬·연애 예능·연기로 흩어졌던 혜연, 유지, 다혜, 해령이 뜻을 모았는데요, 재결합을 공식화한 10월 17일은 이 곡이 나온 지 꼭 13년 되는 날이었습니다.\n\n두 주 뒤 선 〈쇼! 음악중심〉은 약 11년 만의 음악방송 무대였습니다. 다혜가 올린 브이로그 속 네 사람은 12cm 힐을 신고 마지막 연습을 했고, \"데뷔보다 더 떨린다\"는 말이 나왔습니다.\n\n그 노래를 다시 찾아 들은 사람들 앞에, 그 노래를 불렀던 네 사람이 그대로 섰습니다.\n\n#PLOT #베스티 #연애의조건 #다혜 #혜연 #해령",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209544/qixlx3ucnyqf77iy9gve.jpg",
+      "credit": "@bestie_ofcl",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/877462574_17888152185689973_1469638705770288850_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Gu6s6t5k-gwQ7kNvwFZn3PN&_nc_oc=AdrrwWLqpEGre-v99MCyJIQmlTe1aNLr7GR4qal8tcbfMoUiivcrEt_k-Vx1gAjsndw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=_SwcVr0Q1SO2fQnOaX_R6g&oh=00_AQQc_bnXlRUWhd43Uoz_IjdnE2DcXjRi-3k_qP44pCSMPA&oe=6AF70671"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209546/bynbuxnhwawernikjmbn.jpg",
+      "credit": "위키트리",
+      "from": "https://cdnweb01.wikitree.co.kr/webdata/editor/202610/17/202610171126283679.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209547/r7nlqucanqi5sohnaccr.jpg",
+      "credit": "스포츠경향",
+      "from": "https://images.khan.co.kr/article/2026/11/08/news-p.v1.20261108.5962342d92b546318f444d4b810f9855_P1.png"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889256/eqrng0xcc5g5bntmmsyl.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_e3f5kqri/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889269/pjabtnucspsywukn5vih.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_3wli4l6j/auto_pdb_베스티_매거진 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793352832/r9tzhekkwdg7yrwg9yzf.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_5kblvvve/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792195452/isvzjdwtfpgpg71xhtdt.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_nqsq2spr/auto_pdb_베스티_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889252/dqz3eqpuehtdmw5idadb.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_s3_qujuc/auto_pdb_베스티_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889262/s8ryp64s34answy3etba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_bzzdzjwg/auto_pdb_베스티_인터뷰 화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209544/qixlx3ucnyqf77iy9gve.jpg",
+      "credit": "@bestie_ofcl",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/877462574_17888152185689973_1469638705770288850_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Gu6s6t5k-gwQ7kNvwFZn3PN&_nc_oc=AdrrwWLqpEGre-v99MCyJIQmlTe1aNLr7GR4qal8tcbfMoUiivcrEt_k-Vx1gAjsndw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=_SwcVr0Q1SO2fQnOaX_R6g&oh=00_AQQc_bnXlRUWhd43Uoz_IjdnE2DcXjRi-3k_qP44pCSMPA&oe=6AF70671"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209546/bynbuxnhwawernikjmbn.jpg",
+      "credit": "위키트리",
+      "from": "https://cdnweb01.wikitree.co.kr/webdata/editor/202610/17/202610171126283679.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209547/r7nlqucanqi5sohnaccr.jpg",
+      "credit": "스포츠경향",
+      "from": "https://images.khan.co.kr/article/2026/11/08/news-p.v1.20261108.5962342d92b546318f444d4b810f9855_P1.png"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889256/eqrng0xcc5g5bntmmsyl.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_e3f5kqri/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889269/pjabtnucspsywukn5vih.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_3wli4l6j/auto_pdb_베스티_매거진 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793352832/r9tzhekkwdg7yrwg9yzf.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_5kblvvve/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792195452/isvzjdwtfpgpg71xhtdt.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_nqsq2spr/auto_pdb_베스티_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889252/dqz3eqpuehtdmw5idadb.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_s3_qujuc/auto_pdb_베스티_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889262/s8ryp64s34answy3etba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_bzzdzjwg/auto_pdb_베스티_인터뷰 화보_.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "13년 전 노래가|다시 불러 모은 베스티",
+      "sub": "혜연 · 유지 · 다혜 · 해령"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "팀 활동이 멈춘 해가 매체마다 다름(2017 계약 해지 · 2018 활동 종료) — 연도는 뺐음 · \"요즘에 진짜 이런 힐…\" 화자 다혜는 스포츠경향 표기 기준 (영상 자막엔 화자 표시 없음)",
+     "재결합 장 사진은 위키트리 기사 대표 사진(멤버 한 명) — 단체 사진으로 바꿀지 · 마지막 두 장(12cm 힐 · 브이로그 영상)은 미리보기 jpg 가 없어 앱에서 확인"
+    ],
+    "research": [
+     {
+      "title": "위키트리 10/17 — 2013 '두근두근' 데뷔 · 10월 '연애의 조건' · 멤버별 공백기(미스트롯2·뮤지컬·환승연애3·배우) · 다혜 \"BESTie 재결합합니다!\" · 베스티 측 \"2013년 10월 17일 발매된 '연애의 조건'이 13주년\"",
+      "link": "https://www.wikitree.co.kr/articles/1166956"
+     },
+     {
+      "title": "일간스포츠 11/4 — 10/17 재결합 공식화 · 10/31 〈쇼! 음악중심〉 약 11년 만 · 혜연·유지·다혜·해령 · 멤버별 공백기 활동",
+      "link": "https://isplus.com/article/view/isp202611030057"
+     },
+     {
+      "title": "스포츠경향 11/8 — 12cm 힐 연습 · 다혜 발언 · \"데뷔보다 더 떨린다\" · 11년 만 음방",
+      "link": "https://sports.khan.co.kr/article/202611081631003?pt=nv"
+     },
+     {
+      "title": "다혜가다했다DAHYE 11/8 브이로그 — 6:14 \"지금 12cm를 신고\" · 6:17 \"요즘에 진짜 이런 힐 신고 춤추는 가수가 없는데\" · 6:30 \"두 번의 데뷔보다 더 떨려\"",
+      "link": "https://www.youtube.com/watch?v=fU0tybevRVs"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209585/kg3otfvgxy6g7y66axjr.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209585/yddvnsv5mdpyergcsnpg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209585/zfi6y9ivmsvcged9ovz9.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209585/qcomnkufvn6qoptbwxig.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209586/vnsptczsrhg072z2fzzg.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209590/vwhyeonvdlzekzzzg6ym.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209586/iylne6hjivdwj4r2exmr.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209585/kg3otfvgxy6g7y66axjr.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-09T16:33+09:00",
+     "videos": {
+      "5": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794209588/plot_studio/dtrnekoqejcethi12un6.mp4"
+     },
+     "v": {
+      "A": "1234e4ef"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=fU0tybevRVs\n구간: 6:06-6:50\n곡: 다시 연습실에 선 베스티\n아티스트: 12cm 힐을 신고\n피처링:\n후킹: \n출처: 다혜가다했다DAHYE\n자막: 자동",
+    "caption": "베스티(@bestie_ofcl)가 11년 만의 음악방송을 앞두고 마지막 연습에 나섰습니다.\n\n다혜가 자기 채널에 올린 브이로그 속 한 장면인데요, 12cm 힐을 신은 네 사람 가운데 다혜는 \"요즘에 진짜 이런 힐 신고 춤추는 가수가 없는데\" 한번 해 보겠다고 했습니다.\n\n13년 전 노래로 다시 모인 베스티, 방송 전 마지막 연습에서 나온 말은 \"데뷔보다 더 떨린다\"였습니다.\n\n#PLOT #베스티 #연애의조건 #다혜 #쇼음악중심",
+    "hooks": {
+     "A": "12cm 힐을 신고 / 다시 연습실에 선 베스티",
+     "B": "11년 만의 음방 앞에서 / 데뷔보다 떨린 베스티",
+     "C": "13년 전 그 노래로 / 다시 무대에 서는 네 사람"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=fU0tybevRVs",
+     "credit": "다혜가다했다DAHYE",
+     "range": [
+      366.0,
+      410.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "팀 활동이 멈춘 해가 매체마다 다름(2017 계약 해지 · 2018 활동 종료) — 연도는 뺐음 · \"요즘에 진짜 이런 힐…\" 화자 다혜는 스포츠경향 표기 기준 (영상 자막엔 화자 표시 없음)",
+     "재결합 장 사진은 위키트리 기사 대표 사진(멤버 한 명) — 단체 사진으로 바꿀지 · 마지막 두 장(12cm 힐 · 브이로그 영상)은 미리보기 jpg 가 없어 앱에서 확인"
+    ],
+    "research": [
+     {
+      "title": "위키트리 10/17 — 2013 '두근두근' 데뷔 · 10월 '연애의 조건' · 멤버별 공백기(미스트롯2·뮤지컬·환승연애3·배우) · 다혜 \"BESTie 재결합합니다!\" · 베스티 측 \"2013년 10월 17일 발매된 '연애의 조건'이 13주년\"",
+      "link": "https://www.wikitree.co.kr/articles/1166956"
+     },
+     {
+      "title": "일간스포츠 11/4 — 10/17 재결합 공식화 · 10/31 〈쇼! 음악중심〉 약 11년 만 · 혜연·유지·다혜·해령 · 멤버별 공백기 활동",
+      "link": "https://isplus.com/article/view/isp202611030057"
+     },
+     {
+      "title": "스포츠경향 11/8 — 12cm 힐 연습 · 다혜 발언 · \"데뷔보다 더 떨린다\" · 11년 만 음방",
+      "link": "https://sports.khan.co.kr/article/202611081631003?pt=nv"
+     },
+     {
+      "title": "다혜가다했다DAHYE 11/8 브이로그 — 6:14 \"지금 12cm를 신고\" · 6:17 \"요즘에 진짜 이런 힐 신고 춤추는 가수가 없는데\" · 6:30 \"두 번의 데뷔보다 더 떨려\"",
+      "link": "https://www.youtube.com/watch?v=fU0tybevRVs"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/fU0tybevRVs/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209596/unifckxq6cu5rxumez2z.jpg",
+     "key": "fU0tybevRVs@366.0"
+    },
+    "px": {
+     "vid": "fU0tybevRVs",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794209694/plot_studio/fhgtbqpovjswpotofawn.mp4",
+     "off": 321.0,
+     "end": 455.0,
+     "full": 1276.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-09T16:35+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "인물해부 목표 · 베스티 팔로워 5일 새 +3.6만 · 기사 급상승 — 지금 가장 뜨거운 사람을 네 사람의 13년으로",
+    "at": "2026-11-09T16:32+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 4
+  },
+  {
+   "source": {
+    "id": "claude:dynamicduo-mandu-smtm6",
+    "account": "짠한형 신동엽",
+    "url": "https://www.youtube.com/shorts/A--y8PpsEG4",
+    "image": null,
+    "head": "만두를 탈락시킨 최자",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-09T16:32+09:00",
+   "key": "bddcf5d5",
+   "by": "claude",
+   "subjects": [
+    "다이나믹 듀오",
+    "최자"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "〈쇼미더머니6〉 탈락자 발표에서 '면도입니다'를 '만두입니다'로 — 그때 지킨 래퍼는 지금 올데이 프로젝트 우찬",
+    "why": "클립 순간 · 국힙 웃긴 뒷이야기 · 우찬(올데이 프로젝트, 뉴스 459건)으로 이어지는 연결"
+   },
+   "added": "claude",
+   "added_at": "2026-11-09T16:32+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Fun\nURL: https://www.youtube.com/shorts/A--y8PpsEG4\n구간: 0:09-0:51\n곡: 이름을 잘못 부른 최자\n아티스트: 탈락자 발표에서\n피처링:\n후킹: \n출처: 짠한형 신동엽\n자막: 자동",
+    "caption": "최자(@choiza11)가 〈쇼미더머니6〉 탈락자 발표 때 이름을 잘못 불렀던 이야기를 꺼냈습니다.\n\n거미와 함께 나온 〈짠한형〉 169회에서 다이나믹 듀오는 팀원이던 조우찬과 면도 가운데 한 명을 떨어뜨려야 해 한 시간 넘게 고민했다고 털어놨는데요, 정적 속에 \"면도입니다\"라고 말해야 할 순간 입에서 나온 말은 \"만두입니다\"였습니다. 결국 발표 장면만 다시 찍었다고 합니다.\n\n그날 팀에 남은 조우찬은 지금 올데이 프로젝트의 우찬입니다.\n\n#PLOT #다이나믹듀오 #최자 #쇼미더머니6 #짠한형",
+    "hooks": {
+     "A": "탈락자 발표에서 / 이름을 잘못 부른 최자",
+     "B": "면도를 만두로 / 불러 버린 쇼미 탈락 발표",
+     "C": "우찬을 지키고 / 만두를 떨어뜨린 그날"
+    },
+    "video": {
+     "url": "https://www.youtube.com/shorts/A--y8PpsEG4",
+     "credit": "짠한형 신동엽",
+     "range": [
+      9.0,
+      51.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 중간 — 짠한형 신동엽 (42초 · 쇼츠 0:09-0:51)",
+     "말하는 사람이 최자라는 건 채널 쇼츠 제목 기준 — 목소리로 한 번 확인 · 본편 공개 11/2 (일주일 전) · 11/3 같은 회차 '오징어' 쇼츠는 화자 미확인으로 버렸음"
+    ],
+    "research": [
+     {
+      "title": "짠한형 쇼츠 — 만두를 탈락시킨 최자 (자막 0:02~0:57)",
+      "link": "https://www.youtube.com/shorts/A--y8PpsEG4"
+     },
+     {
+      "title": "짠한형 EP.169 거미·다이나믹 듀오 본편 — 17:58~19:25 같은 대목 · 옆에서 참던 지코 이야기 · 발표 장면만 다시 촬영",
+      "link": "https://www.youtube.com/watch?v=xMMsqyh9rrs"
+     },
+     {
+      "title": "일간스포츠 11/2 — 짠한형 EP.169 2일 공개 · 개코·최자·거미 출연",
+      "link": "https://isplus.com/article/view/isp202611020195"
+     },
+     {
+      "title": "에스콰이어 2025.6 — 올데이 프로젝트 우찬 〈쇼미더머니6〉 출신 · 빅히트 'Trainee A'",
+      "link": "https://www.esquirekorea.co.kr/article/1882890"
+     },
+     {
+      "title": "헤럴드 2017 — 쇼미6 다이나믹 듀오 팀 넉살·한해·조우찬·라이노·면도",
+      "link": "https://heraldk.com/2017/08/18/%ec%87%bc%eb%af%b8%eb%8d%946-%ec%a3%bc%eb%85%b8%ed%94%8c%eb%a1%9c-%eb%84%89%ec%82%b4-%ed%95%9c%ed%95%b4-%ec%9a%b0%ec%9b%90%ec%9e%ac-%ec%a1%b0%ec%9a%b0%ec%b0%ac-%ed%96%89%ec%a3%bc-top/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/A--y8PpsEG4/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794209599/neoi8c1shotgvdjejwzh.jpg",
+     "key": "A--y8PpsEG4@9.0"
+    },
+    "px": {
+     "vid": "A--y8PpsEG4",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794209703/plot_studio/kmnm5vgqpdvuzule9r1g.mp4",
+     "off": 0.0,
+     "end": 76.0,
+     "full": 76.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-09T16:35+09:00"
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "릴스 칸 · 재미 · 지금 뜨는 올데이 프로젝트 우찬이 이어지는 쇼미6 뒷이야기",
+    "at": "2026-11-09T16:32+09:00"
+   },
+   "corner_name": "그 말",
+   "corner_no": 10
   }
  ],
  "skipped": [],
@@ -1683,7 +2033,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 4,
-    "drafts": 0,
+    "drafts": 1,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1719,7 +2069,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 8,
-    "drafts": 2,
+    "drafts": 3,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -1819,10 +2169,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-09T13:34+09:00"
+  "at": "2026-11-09T16:35+09:00"
  },
  "queue": {
-  "next": "2026-11-09T13:36+09:00",
+  "next": "2026-11-09T16:37+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-08T15:48+09:00"
