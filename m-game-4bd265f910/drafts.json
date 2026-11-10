@@ -191,11 +191,6 @@
      "at": "2026-11-10T11:17+09:00"
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "출시 아흐레 전 '개발을 마쳤다'는 한 마디 · 어제 사전 다운로드 글의 다음 편이라 이어 읽힌다",
-    "at": "2026-11-10T11:13+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -370,11 +365,6 @@
      "at": "2026-11-10T11:17+09:00"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "만든 사람들이 팬에게 남긴 말이 있는 20주년 · 스튜디오 공식 영상으로 숏폼까지 된다",
-    "at": "2026-11-10T11:13+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -475,10 +465,560 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:fm27-launch",
+    "account": "Football Manager",
+    "url": "https://www.footballmanager.com/news/return-international-management-and-review-fm26",
+    "image": null,
+    "head": "풋볼 매니저 27 출시 · 작년 FM26 에 '전적으로 내 책임'이라 했던 마일스 제이콥슨",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T19:16+09:00",
+   "key": "ce00c171",
+   "by": "claude",
+   "subjects": [
+    "풋볼 매니저 27"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "25편은 취소되고 26편은 반응이 엇갈린 뒤, 스튜디오 디렉터가 '전적으로 내 책임'이라 적고 '몰입'을 약속한 그 다음 작품이 오늘 나온다",
+    "why": "만든 사람의 말이 있는 출시 · 한국어 지원 · 오래 해 온 팬들이 지켜보는 한 편"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T19:16+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈풋볼 매니저 27〉이 오늘 나옵니다.\n\n작년 〈풋볼 매니저 26〉은 시리즈 처음으로 유니티 엔진으로 옮긴 작품이었는데요, 그 앞의 25편은 품질 기준에 못 미친다며 아예 취소됐고 26편도 출시 뒤 반응이 엇갈렸습니다. 스튜디오 디렉터 마일스 제이콥슨은 지난 5월 공식 홈페이지 글에서 \"전적으로 제 책임\"이라고 적었습니다.\n\n같은 글에서 다음 작품의 첫째로 꼽은 말은 '몰입'이었습니다. 이번 작품은 필요한 정보에 더 적게 눌러 닿도록 인터페이스를 다듬고, 선수 구성·훈련·전술 궁합을 하나로 묶은 전술 효율 시스템과 FIFAe 와 함께 만든 멀티플레이 '셔플 드래프트'를 더했습니다.\n\n11월 10일 출시 · PC·맥·PS5·엑스박스 시리즈 X|S · 스팀 6만 9,800원 · 한국어 지원\n\n#겜디핑 #풋볼매니저27 #FM27 #스포츠인터랙티브 #세가\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305806/wzheipamsbffac1vnxgd.jpg\n제목: 풋볼 매니저 27,|오늘 나옵니다\n부제: 작년 '내 책임'이라 했던 스튜디오의 다음 편\n출처: Sports Interactive\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794305828/plot_studio/dqjrbit9l02mlmkrouub.mp4\n소제목: \n본문: \n출처: Football Manager\n",
+    "caption": "〈풋볼 매니저 27〉이 오늘 나옵니다.\n\n작년 〈풋볼 매니저 26〉은 시리즈 처음으로 유니티 엔진으로 옮긴 작품이었는데요, 그 앞의 25편은 품질 기준에 못 미친다며 아예 취소됐고 26편도 출시 뒤 반응이 엇갈렸습니다. 스튜디오 디렉터 마일스 제이콥슨은 지난 5월 공식 홈페이지 글에서 \"전적으로 제 책임\"이라고 적었습니다.\n\n같은 글에서 다음 작품의 첫째로 꼽은 말은 '몰입'이었습니다. 이번 작품은 필요한 정보에 더 적게 눌러 닿도록 인터페이스를 다듬고, 선수 구성·훈련·전술 궁합을 하나로 묶은 전술 효율 시스템과 FIFAe 와 함께 만든 멀티플레이 '셔플 드래프트'를 더했습니다.\n\n11월 10일 출시 · PC·맥·PS5·엑스박스 시리즈 X|S · 스팀 6만 9,800원 · 한국어 지원\n\n#겜디핑 #풋볼매니저27 #FM27 #스포츠인터랙티브 #세가",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305806/wzheipamsbffac1vnxgd.jpg",
+      "credit": "Sports Interactive",
+      "from": "https://cdn.footballmanager.com/site/2026-10/Screen1_3.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305806/wzheipamsbffac1vnxgd.jpg",
+      "credit": "Sports Interactive",
+      "from": "https://cdn.footballmanager.com/site/2026-10/Screen1_3.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "풋볼 매니저 27,|오늘 나옵니다",
+      "sub": "작년 '내 책임'이라 했던 스튜디오의 다음 편"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "작년의 실패 뒤|돌아온 FM27",
+      "sub": "스포츠 인터랙티브 · 세가"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "한국 시간 출시 시각 확인 못 함 — 스팀 표기는 11월 10일, 인벤 게시판 제목에 '11일 새벽 1시'가 있으나 공식 확인 아님 · 한국어는 스팀 언어표 체크로만 확인(인터페이스인지 자막인지 구분 못 함)",
+     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 개발자 인터뷰 화면이면 경기장 장면으로 옮길 것"
+    ],
+    "research": [
+     {
+      "title": "Football Manager — The return of International Management and a review of FM26 (Miles Jacobson)",
+      "link": "https://www.footballmanager.com/news/return-international-management-and-review-fm26"
+     },
+     {
+      "title": "Steam — Football Manager 27 (출시일·가격·한국어)",
+      "link": "https://store.steampowered.com/app/4530370/"
+     },
+     {
+      "title": "인벤 — [신작투표소] 풋볼 매니저27 출격",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323164"
+     },
+     {
+      "title": "Wikipedia — Football Manager 26 (유니티 · FM25 취소 · 반응)",
+      "link": "https://en.wikipedia.org/wiki/Football_Manager_26"
+     },
+     {
+      "title": "Gematsu — Football Manager 27 launches November 10",
+      "link": "https://www.gematsu.com/2026/09/football-manager-27-launches-november-10-for-ps5-xbox-series-pc-ios-and-android"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305878/y8fmfcgsjuxlzoy7tkmo.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305881/za8xe0mvcrbxk4qxxkhw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305877/uit1mqci3zgks8jouj2t.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305878/y8fmfcgsjuxlzoy7tkmo.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T19:18+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794305879/plot_studio/hzxq1tn2jyyzazavs49z.mp4"
+     },
+     "v": {
+      "A": "c72ab165"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=9rdMzTr0sAg\n구간: 0:20-0:45\n곡: 다시 다듬은 FM27\n아티스트: 경기장 분위기부터\n피처링:\n후킹: \n출처: Football Manager\n자막: 자동",
+    "caption": "〈풋볼 매니저 27〉이 오늘 나옵니다.\n\n25편 취소, 반응이 엇갈린 26편 뒤에 나오는 작품인데요, 스튜디오 디렉터 마일스 제이콥슨은 지난 5월 \"전적으로 제 책임\"이라고 적고 다음 작품의 첫째 목표로 '몰입'을 꼽았습니다. 영상은 공식 채널이 공개한 경기 날 분위기 소개입니다.\n\n11월 10일 출시 · PC·맥·PS5·엑스박스 시리즈 X|S · 스팀 6만 9,800원 · 한국어 지원\n\n#겜디핑 #풋볼매니저27 #FM27 #스포츠인터랙티브 #세가",
+    "hooks": {
+     "A": "작년 실패를 인정한 / 풋볼 매니저의 다음 편",
+     "B": "풋볼 매니저 27, / 오늘 출시됩니다",
+     "C": "경기장 분위기부터 / 다시 다듬은 FM27"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=9rdMzTr0sAg",
+     "credit": "Football Manager",
+     "range": [
+      20.0,
+      45.0
+     ]
+    },
+    "guided": {
+     "rec": "C",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "한국 시간 출시 시각 확인 못 함 — 스팀 표기는 11월 10일, 인벤 게시판 제목에 '11일 새벽 1시'가 있으나 공식 확인 아님 · 한국어는 스팀 언어표 체크로만 확인(인터페이스인지 자막인지 구분 못 함)",
+     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 개발자 인터뷰 화면이면 경기장 장면으로 옮길 것"
+    ],
+    "research": [
+     {
+      "title": "Football Manager — The return of International Management and a review of FM26 (Miles Jacobson)",
+      "link": "https://www.footballmanager.com/news/return-international-management-and-review-fm26"
+     },
+     {
+      "title": "Steam — Football Manager 27 (출시일·가격·한국어)",
+      "link": "https://store.steampowered.com/app/4530370/"
+     },
+     {
+      "title": "인벤 — [신작투표소] 풋볼 매니저27 출격",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323164"
+     },
+     {
+      "title": "Wikipedia — Football Manager 26 (유니티 · FM25 취소 · 반응)",
+      "link": "https://en.wikipedia.org/wiki/Football_Manager_26"
+     },
+     {
+      "title": "Gematsu — Football Manager 27 launches November 10",
+      "link": "https://www.gematsu.com/2026/09/football-manager-27-launches-november-10-for-ps5-xbox-series-pc-ios-and-android"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/9rdMzTr0sAg/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305894/comcgcpufpaxfm5dmvis.jpg",
+     "key": "9rdMzTr0sAg@20.0"
+    },
+    "px": {
+     "vid": "9rdMzTr0sAg",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794305995/plot_studio/rfpiotkkbe2xvo0pip5g.mp4",
+     "off": 0.0,
+     "end": 90.0,
+     "full": 277.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-10T19:21+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "작년 실패를 '전적으로 내 책임'이라 했던 디렉터의 말과 오늘 출시가 이어지는 사람 있는 출시 · 한국어 지원 · 공식 영상으로 숏폼까지",
+    "at": "2026-11-10T19:16+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:shrek2-remastered",
+    "account": "tbreak",
+    "url": "https://tbreak.com/shrek-2-remastered-release-date-gta-6-trailer/",
+    "image": null,
+    "head": "2004년 슈렉 2 게임 리마스터 11월 10일 출시 · GTA 6 를 흉내 낸 트레일러",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T19:16+09:00",
+   "key": "2e165b0d",
+   "by": "claude",
+   "subjects": [
+    "슈렉 2"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "2004년 영화와 함께 나왔던 슈렉 2 게임이 리마스터로 오늘 돌아온다 — 첫 트레일러는 GTA 6 트레일러를 흉내 냈고, 출시도 GTA 6보다 아흐레 먼저",
+    "why": "게임 안 하는 사람도 아는 이름 · 그 시절 친구와 함께 하던 기억 · GTA 6 주간이라 묘하게 걸린다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T19:16+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n2004년 〈슈렉 2〉 게임이 리마스터로 오늘 돌아옵니다.\n\n영화 개봉 무렵 PS2·엑스박스·게임큐브로 나와 400만 장 넘게 팔린 게임인데요, 캐릭터 넷을 번갈아 조종하며 친구와 한 화면에서 함께 깨는 액션 게임이었습니다. 이번 리마스터는 Aspyr 가 맡아 텍스처와 컷신을 새로 만들고 4K 와 포토 모드, 치트 메뉴를 더했고, 최대 네 명이 온라인으로도 함께할 수 있게 했습니다.\n\n지난달 공개된 첫 트레일러는 〈GTA 6〉 트레일러를 흉내 낸 꼴이었습니다. 출시도 〈GTA 6〉보다 아흐레 먼저입니다.\n\n11월 10일 출시 · PS5·엑스박스 시리즈 X|S·스위치2·스위치·PC · 스팀 3만 3,500원 · 한국어 미지원\n\n#겜디핑 #슈렉2 #슈렉2리마스터 #드림웍스 #애스파이어\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305831/sohuiprfsgnls7kotr2n.jpg\n제목: 2004년 슈렉 2 게임,|오늘 돌아옵니다\n부제: Aspyr 의 리마스터 · PS5·스위치2·PC 등\n출처: Aspyr\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794305855/plot_studio/bbd6z9lncfwlwcwvjgwq.mp4\n소제목: \n본문: \n출처: Aspyr\n",
+    "caption": "2004년 〈슈렉 2〉 게임이 리마스터로 오늘 돌아옵니다.\n\n영화 개봉 무렵 PS2·엑스박스·게임큐브로 나와 400만 장 넘게 팔린 게임인데요, 캐릭터 넷을 번갈아 조종하며 친구와 한 화면에서 함께 깨는 액션 게임이었습니다. 이번 리마스터는 Aspyr 가 맡아 텍스처와 컷신을 새로 만들고 4K 와 포토 모드, 치트 메뉴를 더했고, 최대 네 명이 온라인으로도 함께할 수 있게 했습니다.\n\n지난달 공개된 첫 트레일러는 〈GTA 6〉 트레일러를 흉내 낸 꼴이었습니다. 출시도 〈GTA 6〉보다 아흐레 먼저입니다.\n\n11월 10일 출시 · PS5·엑스박스 시리즈 X|S·스위치2·스위치·PC · 스팀 3만 3,500원 · 한국어 미지원\n\n#겜디핑 #슈렉2 #슈렉2리마스터 #드림웍스 #애스파이어",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305831/sohuiprfsgnls7kotr2n.jpg",
+      "credit": "Aspyr",
+      "from": "https://images.keengamer.com/wp-content/uploads/2026/10/Designer-3.jpeg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305831/sohuiprfsgnls7kotr2n.jpg",
+      "credit": "Aspyr",
+      "from": "https://images.keengamer.com/wp-content/uploads/2026/10/Designer-3.jpeg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "2004년 슈렉 2 게임,|오늘 돌아옵니다",
+      "sub": "Aspyr 의 리마스터 · PS5·스위치2·PC 등"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "GTA 6보다 아흐레 먼저|슈렉 2가 나온다",
+      "sub": "DreamWorks Shrek 2 Remastered"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "한국 시간 출시 시각 확인 못 함 — 스팀 페이지가 '약 7시간 뒤 잠금 해제'로 보여 한국 시간 11일 새벽일 수 있음 · 한국어 미지원은 스팀 언어표 기준",
+     "숏폼은 Aspyr 공식 발표 트레일러 0:03-0:28 — 등급 화면을 피하려 잡았고 영상은 직접 보지 않음"
+    ],
+    "research": [
+     {
+      "title": "Steam — DreamWorks Shrek 2 Remastered (가격·언어)",
+      "link": "https://store.steampowered.com/app/2523740/"
+     },
+     {
+      "title": "KeenGamer — Shrek 2 Remastered announced, launches November 10",
+      "link": "https://www.keengamer.com/articles/news/shrek-2-remastered-announced-launches-november-10/"
+     },
+     {
+      "title": "tbreak — Shrek 2 Remastered release date, GTA 6 trailer",
+      "link": "https://tbreak.com/shrek-2-remastered-release-date-gta-6-trailer/"
+     },
+     {
+      "title": "VGC — A remaster of the Shrek 2 game from 2004 has been announced via a GTA-like trailer",
+      "link": "https://www.videogameschronicle.com/news/a-remaster-of-the-shrek-2-game-from-2004-has-been-announced-via-a-gta-like-trailer/"
+     },
+     {
+      "title": "Nintendo — Shrek 2 Remastered (Switch 2)",
+      "link": "https://www.nintendo.com/us/store/products/shrek-2-remastered-switch-2"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305907/vefctzlpt4jgu8bqhnlu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305911/wxhqvmqcuf2bhwpja81l.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305907/qrplizdukdmfylh8yece.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305907/vefctzlpt4jgu8bqhnlu.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T19:18+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794305908/plot_studio/sijxv80pcyg4obyzrrjz.mp4"
+     },
+     "v": {
+      "A": "2befa44a"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=6qjCMqy1fAk\n구간: 0:03-0:28\n곡: 리마스터로 돌아왔다\n아티스트: 2004년 슈렉 2 게임이\n피처링:\n후킹: \n출처: Aspyr\n자막: 자동",
+    "caption": "2004년 〈슈렉 2〉 게임이 리마스터로 오늘 돌아옵니다.\n\n캐릭터 넷을 번갈아 조종하며 친구와 함께 깨던 그 게임인데요, Aspyr 가 텍스처와 컷신을 새로 만들고 최대 네 명 온라인 협동을 더했습니다. 첫 트레일러는 〈GTA 6〉 트레일러를 흉내 냈고, 출시도 〈GTA 6〉보다 아흐레 먼저입니다.\n\n11월 10일 출시 · PS5·엑스박스 시리즈 X|S·스위치2·스위치·PC · 스팀 3만 3,500원 · 한국어 미지원\n\n#겜디핑 #슈렉2 #슈렉2리마스터 #드림웍스 #애스파이어",
+    "hooks": {
+     "A": "2004년 슈렉 2 게임이 / 리마스터로 돌아왔다",
+     "B": "GTA 6 트레일러를 / 흉내 낸 슈렉 2",
+     "C": "넷이 함께 깨던 / 슈렉 2가 4K 로"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=6qjCMqy1fAk",
+     "credit": "Aspyr",
+     "range": [
+      3.0,
+      28.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "한국 시간 출시 시각 확인 못 함 — 스팀 페이지가 '약 7시간 뒤 잠금 해제'로 보여 한국 시간 11일 새벽일 수 있음 · 한국어 미지원은 스팀 언어표 기준",
+     "숏폼은 Aspyr 공식 발표 트레일러 0:03-0:28 — 등급 화면을 피하려 잡았고 영상은 직접 보지 않음"
+    ],
+    "research": [
+     {
+      "title": "Steam — DreamWorks Shrek 2 Remastered (가격·언어)",
+      "link": "https://store.steampowered.com/app/2523740/"
+     },
+     {
+      "title": "KeenGamer — Shrek 2 Remastered announced, launches November 10",
+      "link": "https://www.keengamer.com/articles/news/shrek-2-remastered-announced-launches-november-10/"
+     },
+     {
+      "title": "tbreak — Shrek 2 Remastered release date, GTA 6 trailer",
+      "link": "https://tbreak.com/shrek-2-remastered-release-date-gta-6-trailer/"
+     },
+     {
+      "title": "VGC — A remaster of the Shrek 2 game from 2004 has been announced via a GTA-like trailer",
+      "link": "https://www.videogameschronicle.com/news/a-remaster-of-the-shrek-2-game-from-2004-has-been-announced-via-a-gta-like-trailer/"
+     },
+     {
+      "title": "Nintendo — Shrek 2 Remastered (Switch 2)",
+      "link": "https://www.nintendo.com/us/store/products/shrek-2-remastered-switch-2"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/6qjCMqy1fAk/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305914/ldcqkjl6igzkyzwtmjrm.jpg",
+     "key": "6qjCMqy1fAk@3.0"
+    },
+    "px": {
+     "vid": "6qjCMqy1fAk",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794306035/plot_studio/p4obonx85fgddkmdy8eo.mp4",
+     "off": 0.0,
+     "end": 49.0,
+     "full": 49.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-10T19:21+09:00"
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "게임 안 하는 사람도 아는 슈렉 · GTA 6 아흐레 전이라는 묘한 사실 하나로 바로 읽힌다",
+    "at": "2026-11-10T19:16+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:shiftup-spirit-delay",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323211",
+    "image": null,
+    "head": "시프트업 차기작 '프로젝트 스피릿' 공개 일정 변경",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T19:16+09:00",
+   "key": "edf1182c",
+   "by": "claude",
+   "subjects": [
+    "시프트업"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "스텔라 블레이드를 만든 시프트업이 차기작 프로젝트 스피릿을 올해 안에 공개하지 않기로 했다 — 연말~내년 초 다른 회사 대작들의 일정을 피해서",
+    "why": "한국 개발사의 다음 대형 콘솔 작품 · 오늘 실적 발표에서 나온 새 소식"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T19:16+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n시프트업이 차기작 〈프로젝트 스피릿〉을 올해 안에 공개하지 않기로 했습니다.\n\n〈스텔라 블레이드〉와 〈승리의 여신: 니케〉를 만든 스튜디오의 다음 대형 작품인데요, 10일 3분기 실적 발표에서 연말부터 내년 초까지 이어지는 다른 회사 주요 신작들의 출시 일정을 고려해 공개 시점을 조정했다고 밝혔습니다. 전 세계 이용자의 관심이 가장 크게 모일 때를 고르겠다는 설명입니다.\n\n개발은 순조롭다고 했습니다. 최근 단계별 마일스톤 빌드 평가를 긍정적으로 마쳤고, 새 일정은 구체화되는 대로 알리겠다고 했습니다. 지난 6일 나온 〈스텔라 블레이드〉 닌텐도 스위치2판의 초기 성과는 내부 기대에 맞는다고 덧붙였습니다.\n\n#겜디핑 #시프트업 #프로젝트스피릿 #스텔라블레이드 #니케\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305861/k0ha9hkx3ixqsfwn6t6h.jpg\n제목: 시프트업 차기작,|올해는 공개 안 한다\n부제: 프로젝트 스피릿 공개 시점 조정\n출처: 시프트업\n",
+    "caption": "시프트업이 차기작 〈프로젝트 스피릿〉을 올해 안에 공개하지 않기로 했습니다.\n\n〈스텔라 블레이드〉와 〈승리의 여신: 니케〉를 만든 스튜디오의 다음 대형 작품인데요, 10일 3분기 실적 발표에서 연말부터 내년 초까지 이어지는 다른 회사 주요 신작들의 출시 일정을 고려해 공개 시점을 조정했다고 밝혔습니다. 전 세계 이용자의 관심이 가장 크게 모일 때를 고르겠다는 설명입니다.\n\n개발은 순조롭다고 했습니다. 최근 단계별 마일스톤 빌드 평가를 긍정적으로 마쳤고, 새 일정은 구체화되는 대로 알리겠다고 했습니다. 지난 6일 나온 〈스텔라 블레이드〉 닌텐도 스위치2판의 초기 성과는 내부 기대에 맞는다고 덧붙였습니다.\n\n#겜디핑 #시프트업 #프로젝트스피릿 #스텔라블레이드 #니케",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305861/k0ha9hkx3ixqsfwn6t6h.jpg",
+      "credit": "시프트업",
+      "from": "https://i3n.news1.kr/system/photos/2026/6/10/7951564/high.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305861/k0ha9hkx3ixqsfwn6t6h.jpg",
+      "credit": "시프트업",
+      "from": "https://i3n.news1.kr/system/photos/2026/6/10/7951564/high.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "시프트업 차기작,|올해는 공개 안 한다",
+      "sub": "프로젝트 스피릿 공개 시점 조정"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "스텔라 블레이드 다음 작품,|공개를 미뤘다",
+      "sub": "시프트업 프로젝트 스피릿"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "회사 답변이라 말한 사람 이름이 없음 · '타사 신작'이 어떤 게임인지는 밝히지 않아 쓰지 않음 · 프로젝트 스피릿 공식 이미지가 없어 표지는 〈스텔라 블레이드〉 키 아트(아이뉴스24 기사 사진) — 차기작 이미지로 오해되지 않는지 볼 것"
+    ],
+    "research": [
+     {
+      "title": "인벤 — [실적] 시프트업 차기작 '프로젝트 스피릿', 공개 일정 변경",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323211"
+     },
+     {
+      "title": "테크M — 시프트업 3Q 영업이익 207억원...신작 '프로젝트 스피릿' 공개 연기",
+      "link": "https://www.techm.kr/news/articleView.html?idxno=157178"
+     },
+     {
+      "title": "ZDNet Korea — 시프트업 3분기 \"스텔라 블레이드 스위치2 판매 기대치 부합\"",
+      "link": "https://zdnet.co.kr/view/?no=20261110180452"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305918/jkoll4cembanbpvr6i9o.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305918/zhxre2rceg0zjzs9h1qr.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305918/jkoll4cembanbpvr6i9o.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T19:18+09:00",
+     "v": {
+      "A": "33310b42"
+     }
+    }
+   },
    "pick": {
     "rank": 3,
-    "why": "게임 안 하는 사람도 읽히는 운동화 콜라보 · 킹의 재규어 가면이라는 한 장면으로 바로 읽힌다",
-    "at": "2026-11-10T11:13+09:00"
+    "why": "한국 개발사 차기작 소식 · 오늘 실적 발표에서 나온 따끈한 일정 변경",
+    "at": "2026-11-10T19:16+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:pubg-10th-2027",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323212",
+    "image": null,
+    "head": "크래프톤, 2027년 PUBG 10주년 \"역대 최대 규모 콘텐츠 준비\"",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T19:16+09:00",
+   "key": "ce7bfe78",
+   "by": "claude",
+   "subjects": [
+    "배틀그라운드"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "C",
+    "kind": "정보",
+    "angle": "배틀그라운드가 내년 3월 10주년을 맞는다 — 크래프톤이 실적 발표에서 '역대 최대 규모 콘텐츠'를 예고하고, 내년 신작으로 인조이 PS판·데드넷·노 로우를 꼽았다",
+    "why": "한국 개발사의 대표작이 10년을 맞는 예고 · 내년 신작 줄기를 한 번에"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T19:16+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈배틀그라운드〉가 내년에 10주년을 맞습니다.\n\n크래프톤 배동근 CFO는 10일 3분기 실적 발표에서 \"2027년 PUBG 10주년인 만큼, 역대 최대 규모 콘텐츠를 준비하고 있다\"고 말했는데요, 3월에 10주년 기념 대형 콘텐츠를 기획하고 있고 내년에는 큰 콜라보와 시즌 이벤트가 거의 매달 이어진다고 했습니다.\n\n같은 자리에서 김창한 대표는 내년에 나올 작품들도 꼽았습니다. 〈인조이〉 정식 출시와 플레이스테이션판, 그리고 올해 게임스컴에 냈던 신작들입니다. 그중 이용자 반응이 가장 좋았던 건 PUBG IP 를 쓴 〈데드넷〉과 오픈월드 FPS 〈노 로우〉였다고 했고, 출시 시기는 바뀔 수 있어 정확히 밝히지 않았습니다.\n\n#겜디핑 #배틀그라운드 #크래프톤 #인조이 #노로우\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305864/ecpdpbkqhvof5euq83sf.jpg\n제목: 배틀그라운드,|내년에 10살\n부제: 크래프톤 \"10주년에 가장 큰 콘텐츠\"\n출처: 크래프톤\n",
+    "caption": "〈배틀그라운드〉가 내년에 10주년을 맞습니다.\n\n크래프톤 배동근 CFO는 10일 3분기 실적 발표에서 \"2027년 PUBG 10주년인 만큼, 역대 최대 규모 콘텐츠를 준비하고 있다\"고 말했는데요, 3월에 10주년 기념 대형 콘텐츠를 기획하고 있고 내년에는 큰 콜라보와 시즌 이벤트가 거의 매달 이어진다고 했습니다.\n\n같은 자리에서 김창한 대표는 내년에 나올 작품들도 꼽았습니다. 〈인조이〉 정식 출시와 플레이스테이션판, 그리고 올해 게임스컴에 냈던 신작들입니다. 그중 이용자 반응이 가장 좋았던 건 PUBG IP 를 쓴 〈데드넷〉과 오픈월드 FPS 〈노 로우〉였다고 했고, 출시 시기는 바뀔 수 있어 정확히 밝히지 않았습니다.\n\n#겜디핑 #배틀그라운드 #크래프톤 #인조이 #노로우",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305864/ecpdpbkqhvof5euq83sf.jpg",
+      "credit": "크래프톤",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/260/gm732922_161717.webp"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305866/gkovprg3uunxv21yrzkx.jpg",
+      "credit": "크래프톤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1561333183.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305864/ecpdpbkqhvof5euq83sf.jpg",
+      "credit": "크래프톤",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/260/gm732922_161717.webp"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305866/gkovprg3uunxv21yrzkx.jpg",
+      "credit": "크래프톤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1561333183.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "배틀그라운드,|내년에 10살",
+      "sub": "크래프톤 \"10주년에 가장 큰 콘텐츠\""
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "배그 10주년,|3월에 크게 온다",
+      "sub": "크래프톤 3분기 실적 발표"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "실적 발표 소식이라 사람 결이 약함 — 표지 한 장으로만 · '3월'은 10주년 기념 콘텐츠를 기획하는 달이라는 뜻이고 정확한 날짜는 아님"
+    ],
+    "research": [
+     {
+      "title": "인벤 — [컨콜] 크래프톤, 2027년 PUBG 10주년 \"역대 최대 규모 콘텐츠 준비\"",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323212"
+     },
+     {
+      "title": "게임메카 — 배그를 받쳐줄 유망주, 크래프톤 내년 신작 6종 출격",
+      "link": "https://www.gamemeca.com/view.php?gid=1783260"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305922/xthxwqttjw1npa3mmvgz.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305921/vqgyzkijx5qwsne4arj1.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305922/xthxwqttjw1npa3mmvgz.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T19:18+09:00",
+     "v": {
+      "A": "a3f03f7e"
+     }
+    }
    },
    "corner_name": "소식"
   }
@@ -655,14 +1195,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 7,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T11:17+09:00"
+  "at": "2026-11-10T19:21+09:00"
  },
  "queue": {
-  "next": "2026-11-10T11:19+09:00",
+  "next": "2026-11-10T19:23+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
