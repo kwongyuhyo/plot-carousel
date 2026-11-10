@@ -3676,7 +3676,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=rsNhWkC4neE\n구간: 1:00-1:30\n곡: 아이브를 올린 이 곡\n아티스트: 빌보드 200에 처음\n피처링:\n후킹: \n출처: STARSHIP\n음원: IVE - Looks Can Kill\n가사: 자동",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=rsNhWkC4neE\n구간: 1:00-1:30\n곡: 아이브를 올린 이 곡\n아티스트: 빌보드 200에 처음\n피처링:\n후킹: \n출처: STARSHIP\n음원: IVE - Looks Can Kill\n가사: 자동\n자막: 받음 st:1794354278299-959bea53",
     "caption": "아이브(@ivestarship)가 미니앨범 [Looks Can Kill]로 미국 '빌보드 200'에 처음 진입했습니다.\n\n126위로 들어온 이 앨범의 타이틀곡이 바로 'Looks Can Kill'인데요, 같은 주 아이브는 빌보드 '이머징 아티스트' 차트 1위에도 올랐습니다.\n\n곡 차트에서 쌓아 온 빌보드 기록이 이번엔 앨범으로 미국 메인 차트까지 이어졌습니다.\n\n#PLOT #아이브 #IVE #룩스캔킬 #빌보드200",
     "hooks": {
      "A": "빌보드 200에 처음 / 아이브를 올린 이 곡",
@@ -3735,8 +3735,89 @@
      "full": 242.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-11T08:43+09:00"
+     "status": "ready",
+     "rid": "st:1794354278299-959bea53",
+     "n": 15,
+     "note": "🎤 가사 43줄 자동 맞춤 (확인 29줄)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 0.74,
+       "text": "Nabicheoreom float beolcheoreom goodbye"
+      },
+      {
+       "start": 0.74,
+       "end": 2.74,
+       "text": "Looks can kill, we're so lethal"
+      },
+      {
+       "start": 2.74,
+       "end": 5.74,
+       "text": "Da-da-da-da da-da da-da da da That's lethal"
+      },
+      {
+       "start": 5.74,
+       "end": 7.74,
+       "text": "Chumchudeut i kill them with the rhythm"
+      },
+      {
+       "start": 7.74,
+       "end": 9.74,
+       "text": "Looks can kill, we're so lethal"
+      },
+      {
+       "start": 9.74,
+       "end": 13.74,
+       "text": "Da-da-da-da da-da da-da da da That's lethal"
+      },
+      {
+       "start": 13.74,
+       "end": 15.74,
+       "text": "The way I kill them, I should confess"
+      },
+      {
+       "start": 15.74,
+       "end": 16.74,
+       "text": "I'm drop dead"
+      },
+      {
+       "start": 16.74,
+       "end": 18.74,
+       "text": "Flawless, my energy"
+      },
+      {
+       "start": 18.74,
+       "end": 20.74,
+       "text": "Topic, it's all 'bout me"
+      },
+      {
+       "start": 20.74,
+       "end": 22.74,
+       "text": "Drop it ttara haji"
+      },
+      {
+       "start": 22.74,
+       "end": 23.74,
+       "text": "Gwaenhi urigesseo gesseo"
+      },
+      {
+       "start": 23.74,
+       "end": 25.74,
+       "text": "Toxic, my energy"
+      },
+      {
+       "start": 25.74,
+       "end": 27.74,
+       "text": "Iconic, it's all 'bout me"
+      },
+      {
+       "start": 27.74,
+       "end": 30.0,
+       "text": "Deo keuge sorichyeo"
+      }
+     ],
+     "at": "2026-11-11T08:44+09:00"
     }
    },
    "corner_name": "소식"
@@ -3918,10 +3999,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-11T08:43+09:00"
+  "at": "2026-11-11T08:44+09:00"
  },
  "queue": {
-  "next": "2026-11-11T08:45+09:00",
+  "next": "2026-11-11T08:46+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-10T20:50+09:00"
