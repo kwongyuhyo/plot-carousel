@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10 15:05 KST",
+ "generated_at": "2026-11-10 19:06 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1685,11 +1685,26 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-09 22:04 KST"
+  "daily": "2026-11-10 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-10T14:28:49+09:00",
+  "fetched_at": "2026-11-10T19:00:15+09:00",
   "posts": [
+   {
+    "t": "2026-11-10T15:59+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "리센느(@rescene_official)가 '2026 KGMA'에서 최고"
+   },
+   {
+    "t": "2026-11-10T15:31+09:00",
+    "type": "VIDEO",
+    "head": "리센느(@rescene_official)를 만든 더뮤즈엔터테인먼트 이주헌"
+   },
+   {
+    "t": "2026-11-10T15:09+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 "
+   },
    {
     "t": "2026-11-08T15:48+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2374,9 +2389,9 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 359,
-  "posted": 124,
-  "posts": 149,
+  "drafts": 363,
+  "posted": 127,
+  "posts": 152,
   "rate": 0.35,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
@@ -2397,12 +2412,12 @@
     "mult": 1.43
    },
    "정보": {
-    "drafts": 241,
-    "posted": 104,
+    "drafts": 244,
+    "posted": 107,
     "mult": 1.0
    },
    "클립": {
-    "drafts": 51,
+    "drafts": 52,
     "posted": 7,
     "mult": 1.05
    },
@@ -2419,12 +2434,12 @@
     "mult": 0.76
    },
    "news": {
-    "drafts": 179,
-    "posted": 79,
+    "drafts": 181,
+    "posted": 82,
     "mult": 1.05
    },
    "mal": {
-    "drafts": 49,
+    "drafts": 50,
     "posted": 7,
     "mult": 0.89
    },
@@ -2434,7 +2449,7 @@
     "mult": 0.99
    },
    "followup": {
-    "drafts": 21,
+    "drafts": 22,
     "posted": 7,
     "mult": 0.93
    },
@@ -2484,45 +2499,6 @@
    {
     "day": "2026-11-06",
     "lane": "정보",
-    "who": "오방가르드",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "f03f43d9",
-    "posted": "DfYlMaqguw4",
-    "head": "관객이 춤을 췄다는 이유로 영업정지를 받았던 부산 라이브클럽 오방가르드가 두 달 만에 다시",
-    "url": "https://www.instagram.com/p/DfYlMaqguw4/",
-    "mult": 0.87
-   },
-   {
-    "day": "2026-11-06",
-    "lane": "정보",
-    "who": "데이식스",
-    "repack": false,
-    "grade": "A",
-    "corner": "meet",
-    "key": "246c5b95",
-    "posted": "DfZf8aZlD6k",
-    "head": "데이식스(@day6kilogram)가 10월 인천에서 다섯 번째 팬미팅을 마쳤습니다.",
-    "url": "https://www.instagram.com/p/DfZf8aZlD6k/",
-    "mult": 0.76
-   },
-   {
-    "day": "2026-11-06",
-    "lane": "정보",
-    "who": "잔나비",
-    "repack": false,
-    "grade": "A",
-    "corner": "song",
-    "key": "4c9393d1",
-    "posted": "DfZO-ZKP5RF",
-    "head": "141번째 오늘의 노래 | 2026.11.06",
-    "url": "https://www.instagram.com/reel/DfZO-ZKP5RF/",
-    "mult": 7.01
-   },
-   {
-    "day": "2026-11-06",
-    "lane": "정보",
     "who": "베스티",
     "repack": false,
     "grade": "A",
@@ -2562,6 +2538,19 @@
    {
     "day": "2026-11-07",
     "lane": "정보",
+    "who": "리센느",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "037535af",
+    "posted": "DfjUY7dD3oR",
+    "head": "리센느(@rescene_official)가 '2026 KGMA'에서 최고 영예인 그랜드 아",
+    "url": "https://www.instagram.com/p/DfjUY7dD3oR/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-07",
+    "lane": "정보",
     "who": "자이언티",
     "repack": false,
     "grade": "A",
@@ -2575,6 +2564,19 @@
    {
     "day": "2026-11-08",
     "lane": "정보",
+    "who": "리센느",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "16b53a71",
+    "posted": "DfjRE3UITYV",
+    "head": "리센느(@rescene_official)를 만든 더뮤즈엔터테인먼트 이주헌 대표가 '2026",
+    "url": "https://www.instagram.com/reel/DfjRE3UITYV/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-08",
+    "lane": "정보",
     "who": "마이 케미컬 로맨스",
     "repack": false,
     "grade": "A",
@@ -2584,11 +2586,24 @@
     "head": "마이 케미컬 로맨스(@mychemicalromance)가 18년 만에 한국 무대에 섰습니다",
     "url": "https://www.instagram.com/p/DfeJitmD9ro/",
     "mult": 0.48
+   },
+   {
+    "day": "2026-11-10",
+    "lane": "정보",
+    "who": "김감전",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "08ff3f14",
+    "posted": "DfjOpp-FF_5",
+    "head": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.",
+    "url": "https://www.instagram.com/p/DfjOpp-FF_5/",
+    "mult": null
    }
   ]
  },
  "follow": {
-  "at": "2026-11-10T15:05+09:00",
+  "at": "2026-11-10T19:06+09:00",
   "d30": {
    "days": 30,
    "follows": 16.4,
