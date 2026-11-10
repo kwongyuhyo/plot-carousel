@@ -3528,12 +3528,224 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-4f7abeb2",
+    "account": "@갈등·반응",
+    "url": "https://www.newsis.com/view/NISX20261111_0003862967",
+    "image": null,
+    "head": "아이브, [Looks Can Kill]로 데뷔 후 처음 빌보드 200에 오르다 (126위)",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T08:40+09:00",
+   "key": "959bea53",
+   "by": "claude",
+   "subjects": [
+    "아이브"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "아이브, [Looks Can Kill]로 미국 '빌보드 200' 첫 진입 (126위) — 곡 차트에서 쌓던 빌보드 기록이 앨범 차트로",
+    "why": "오늘 아침 빌보드 차트 기사로 반응 급증 · 아이브 첫 빌보드 200"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T08:40+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n아이브(@ivestarship)가 미국 빌보드의 메인 앨범 차트 '빌보드 200'에 처음 이름을 올렸습니다.\n\n미니앨범 [Looks Can Kill]이 126위로 진입했고, 같은 주 아이브는 빌보드 '이머징 아티스트' 차트 1위에 올랐습니다. '아티스트 100'에도 66위로 다시 들어왔습니다.\n\n'러브 다이브'부터 '뱅뱅'까지 아이브의 빌보드 기록은 주로 '글로벌 200' 같은 곡 차트에서 쌓여 왔는데요, 이번엔 앨범으로 미국 메인 차트의 문을 열었습니다.\n\n#PLOT #아이브 #IVE #룩스캔킬 #빌보드200 #스타쉽\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794354027/hbnui7qnecluocfnuxsf.jpg\n제목: 아이브, 처음으로|빌보드 200에 올랐다\n부제: [Looks Can Kill] 126위 진입\n출처: @ivestarship\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794354051/plot_studio/jgt13dhxie43okvtdk3a.mp4\n소제목: \n본문: \n출처: STARSHIP\n",
+    "caption": "아이브(@ivestarship)가 미국 빌보드의 메인 앨범 차트 '빌보드 200'에 처음 이름을 올렸습니다.\n\n미니앨범 [Looks Can Kill]이 126위로 진입했고, 같은 주 아이브는 빌보드 '이머징 아티스트' 차트 1위에 올랐습니다. '아티스트 100'에도 66위로 다시 들어왔습니다.\n\n'러브 다이브'부터 '뱅뱅'까지 아이브의 빌보드 기록은 주로 '글로벌 200' 같은 곡 차트에서 쌓여 왔는데요, 이번엔 앨범으로 미국 메인 차트의 문을 열었습니다.\n\n#PLOT #아이브 #IVE #룩스캔킬 #빌보드200 #스타쉽",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354027/hbnui7qnecluocfnuxsf.jpg",
+      "credit": "@ivestarship",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978048/ph037avlfyiuexa6heyk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354029/gob7cruedhxsjkajlry4.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792977255/zfnnosruxgyfelowl7lq.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354032/kw8kwirtb7vccquapsx6.jpg",
+      "credit": "@ivestarship",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978044/coqjawhgx2barrphf8op.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354034/lt8e67ggskqnp15snwfr.jpg",
+      "credit": "@ivestarship",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978040/e94vjm4lrduagbe7omsu.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354027/hbnui7qnecluocfnuxsf.jpg",
+      "credit": "@ivestarship",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978048/ph037avlfyiuexa6heyk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354029/gob7cruedhxsjkajlry4.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792977255/zfnnosruxgyfelowl7lq.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354032/kw8kwirtb7vccquapsx6.jpg",
+      "credit": "@ivestarship",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978044/coqjawhgx2barrphf8op.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354034/lt8e67ggskqnp15snwfr.jpg",
+      "credit": "@ivestarship",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792978040/e94vjm4lrduagbe7omsu.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "아이브, 처음으로|빌보드 200에 올랐다",
+      "sub": "[Looks Can Kill] 126위 진입"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "아이브가 처음 오른|빌보드 200, 126위",
+      "sub": "미니앨범 [Looks Can Kill]"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "곡 차트를 넘어|앨범 차트로, 아이브",
+      "sub": "빌보드 200 첫 진입"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — STARSHIP (공식 MV) · 후렴 1:00 '자막 기준' 구간 확인",
+     "Soompi 기사는 차트 주를 11월 14일 자로 표기 — 빌보드 공식 차트 날짜 한 번 확인"
+    ],
+    "research": [
+     {
+      "title": "뉴시스 — 아이브, 美 '빌보드 200' 첫 진입…'룩스 캔 킬' 126위 데뷔",
+      "link": "https://www.newsis.com/view/NISX20261111_0003862967"
+     },
+     {
+      "title": "Soompi — IVE Scores 1st-Ever Entry On Billboard 200 With \"Looks Can Kill\"",
+      "link": "https://www.soompi.com/article/1885647wpp/ive-scores-1st-ever-entry-on-billboard-200-with-looks-can-kill"
+     },
+     {
+      "title": "이투데이 — 아이브 '뱅뱅' 빌보드 글로벌 200 81위 (2026.2.25)",
+      "link": "https://www.etoday.co.kr/news/view/2559362"
+     },
+     {
+      "title": "YTN — 아이브 '러브 다이브' 빌보드 글로벌 200 (2022.6.29)",
+      "link": "https://www.ytn.co.kr/_ln/0117_202206291806109390"
+     },
+     {
+      "title": "STARSHIP — IVE 'Looks Can Kill' MV",
+      "link": "https://www.youtube.com/watch?v=rsNhWkC4neE"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354061/futufpmc5jltjyavnzsb.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354066/rppbsroflguoweit8jmw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354061/xizvc7oyj5dd9gzyexju.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354069/ie9xqdtkwp38jeoxs4cm.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354069/seekfy2w3npkhkm8ijge.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354061/futufpmc5jltjyavnzsb.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-11T08:41+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794354063/plot_studio/sqqnhve655lnchuf8qlw.mp4"
+     },
+     "v": {
+      "A": "616bb215",
+      "B": "5f9db7b7",
+      "C": "b7bdd974"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=rsNhWkC4neE\n구간: 1:00-1:30\n곡: 아이브를 올린 이 곡\n아티스트: 빌보드 200에 처음\n피처링:\n후킹: \n출처: STARSHIP\n음원: IVE - Looks Can Kill\n가사: 자동",
+    "caption": "아이브(@ivestarship)가 미니앨범 [Looks Can Kill]로 미국 '빌보드 200'에 처음 진입했습니다.\n\n126위로 들어온 이 앨범의 타이틀곡이 바로 'Looks Can Kill'인데요, 같은 주 아이브는 빌보드 '이머징 아티스트' 차트 1위에도 올랐습니다.\n\n곡 차트에서 쌓아 온 빌보드 기록이 이번엔 앨범으로 미국 메인 차트까지 이어졌습니다.\n\n#PLOT #아이브 #IVE #룩스캔킬 #빌보드200",
+    "hooks": {
+     "A": "빌보드 200에 처음 / 아이브를 올린 이 곡",
+     "B": "아이브 첫 빌보드 200 / 126위로 들어왔다",
+     "C": "눈빛만으로 끝내는 / 'Looks Can Kill'"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=rsNhWkC4neE",
+     "credit": "STARSHIP",
+     "range": [
+      60.0,
+      90.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — STARSHIP (공식 MV) · 후렴 1:00 '자막 기준' 구간 확인",
+     "Soompi 기사는 차트 주를 11월 14일 자로 표기 — 빌보드 공식 차트 날짜 한 번 확인"
+    ],
+    "research": [
+     {
+      "title": "뉴시스 — 아이브, 美 '빌보드 200' 첫 진입…'룩스 캔 킬' 126위 데뷔",
+      "link": "https://www.newsis.com/view/NISX20261111_0003862967"
+     },
+     {
+      "title": "Soompi — IVE Scores 1st-Ever Entry On Billboard 200 With \"Looks Can Kill\"",
+      "link": "https://www.soompi.com/article/1885647wpp/ive-scores-1st-ever-entry-on-billboard-200-with-looks-can-kill"
+     },
+     {
+      "title": "이투데이 — 아이브 '뱅뱅' 빌보드 글로벌 200 81위 (2026.2.25)",
+      "link": "https://www.etoday.co.kr/news/view/2559362"
+     },
+     {
+      "title": "YTN — 아이브 '러브 다이브' 빌보드 글로벌 200 (2022.6.29)",
+      "link": "https://www.ytn.co.kr/_ln/0117_202206291806109390"
+     },
+     {
+      "title": "STARSHIP — IVE 'Looks Can Kill' MV",
+      "link": "https://www.youtube.com/watch?v=rsNhWkC4neE"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/rsNhWkC4neE/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794354076/c8yplpwmvnnevkbteles.jpg",
+     "key": "rsNhWkC4neE@60.0"
+    },
+    "px": {
+     "vid": "rsNhWkC4neE",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794354165/plot_studio/oidkxqzk3mhwbpkk335a.mp4",
+     "off": 15.0,
+     "end": 135.0,
+     "full": 242.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-11T08:43+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/09~11/15",
-  "days_left": 6,
+  "days_left": 5,
   "done": 5,
   "goal": 28,
   "corners": [
@@ -3603,7 +3815,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 8,
     "drafts": 4,
@@ -3702,14 +3914,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 10,
+    "drafts": 11,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T23:11+09:00"
+  "at": "2026-11-11T08:43+09:00"
  },
  "queue": {
-  "next": "2026-11-10T23:13+09:00",
+  "next": "2026-11-11T08:45+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-10T20:50+09:00"
@@ -3721,8 +3933,8 @@
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.94,
-    "median": 1.04,
+    "mult": 1.98,
+    "median": 1.1,
     "n": 66
    },
    {
@@ -3737,7 +3949,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.51,
+    "mult": 1.53,
     "median": 0.95,
     "n": 34
    }
