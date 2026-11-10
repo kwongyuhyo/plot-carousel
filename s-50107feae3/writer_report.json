@@ -65,13 +65,13 @@
   ],
   "verify_touched": 32,
   "orders": {
-   "만듦": 45,
+   "만듦": 46,
    "못 만듦": 5
   },
   "runs": 179,
   "run_fail": 0,
   "avg_secs": 196,
-  "denied": 39,
+  "denied": 40,
   "auto": {
    "올림": 33,
    "안 올림": 43
