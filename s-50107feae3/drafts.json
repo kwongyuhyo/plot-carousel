@@ -1590,6 +1590,153 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ord-73dc799c",
+    "account": "@규효 공유 · @hipcokr",
+    "url": "https://www.instagram.com/p/Dfi5s71lGH6/?mdxt=YTJnYzllbzR5NG00",
+    "image": null,
+    "head": "김감전 첫 재판 — 흡연·소지 인정, 미성년자인 줄 몰랐다는 입장",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T14:53+09:00",
+   "key": "08ff3f14",
+   "by": "claude",
+   "subjects": [
+    "김감전"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "김감전 첫 재판 — 흡연·소지는 인정, 미성년자인 줄은 몰랐다는 입장 (기사 사실만, 객관적으로)",
+    "why": "규효 맡기기 '객관적으로 · 꼭 올려야' · 힙코·hhp 등 국힙 매거진에서 도는 소식 · 기사 다수로 확인"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T14:53+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nIssue\n\n[캡션]\n래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.\n\n검찰은 그가 집행유예 기간이던 지난해 12월부터 올해 3월까지 미성년자와 네 차례 대마를 거래한 혐의 등으로 구속기소했는데요, 김감전(@ksmartboi) 측은 대마를 건넨 사실 일부는 인정하면서도 상대가 미성년자인 줄은 몰랐다는 입장을 밝혔습니다. 나머지 일부 매매·제공 혐의는 부인했습니다.\n\n김감전은 2024년 대마 흡연 혐의로 재판에 넘겨져 지난해 항소심에서 징역 8개월에 집행유예 2년을 선고받았고, 그 기간 중 같은 혐의로 다시 재판을 받게 됐습니다. 재판은 서울서부지법에서 이어집니다.\n\n#PLOT #김감전 #김상민 #그는감히전설이라고할수있다 #서울서부지법\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794290028/it5zsmavymetxd5pdxau.jpg\n제목: 김감전, 첫 재판에서|대마 혐의 일부 인정\n부제: 흡연·소지는 인정 · 미성년자인 줄 몰랐다는 입장\n출처: @ksmartboi\n",
+    "caption": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.\n\n검찰은 그가 집행유예 기간이던 지난해 12월부터 올해 3월까지 미성년자와 네 차례 대마를 거래한 혐의 등으로 구속기소했는데요, 김감전(@ksmartboi) 측은 대마를 건넨 사실 일부는 인정하면서도 상대가 미성년자인 줄은 몰랐다는 입장을 밝혔습니다. 나머지 일부 매매·제공 혐의는 부인했습니다.\n\n김감전은 2024년 대마 흡연 혐의로 재판에 넘겨져 지난해 항소심에서 징역 8개월에 집행유예 2년을 선고받았고, 그 기간 중 같은 혐의로 다시 재판을 받게 됐습니다. 재판은 서울서부지법에서 이어집니다.\n\n#PLOT #김감전 #김상민 #그는감히전설이라고할수있다 #서울서부지법",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290028/it5zsmavymetxd5pdxau.jpg",
+      "credit": "@ksmartboi",
+      "from": "https://i.ibb.co/B5gmTFT1/d5ce5b6678e6.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290046/qx3p0js2zudmxapfno1d.jpg",
+      "credit": "@ksmartboi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792990269/ruxkpkig6lawuvduda76.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290048/ys0zguejxyxacxgz1ziu.jpg",
+      "credit": "@ksmartboi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870329/hzdoib2fp6xolvdbxf0e.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/B5gmTFT1/d5ce5b6678e6.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_9orpn0yj/auto_pdb_김감전_프로필_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290028/it5zsmavymetxd5pdxau.jpg",
+      "credit": "@ksmartboi",
+      "from": "https://i.ibb.co/B5gmTFT1/d5ce5b6678e6.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290046/qx3p0js2zudmxapfno1d.jpg",
+      "credit": "@ksmartboi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792990269/ruxkpkig6lawuvduda76.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290048/ys0zguejxyxacxgz1ziu.jpg",
+      "credit": "@ksmartboi",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793870329/hzdoib2fp6xolvdbxf0e.jpg"
+     },
+     {
+      "url": "https://i.ibb.co/B5gmTFT1/d5ce5b6678e6.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/f2/jzrh6h3s02l17v6vvzpv04yc0000gn/T/plot_pdb_9orpn0yj/auto_pdb_김감전_프로필_.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "김감전, 첫 재판에서|대마 혐의 일부 인정",
+      "sub": "흡연·소지는 인정 · 미성년자인 줄 몰랐다는 입장"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "래퍼 김감전|대마 혐의 첫 재판",
+      "sub": "일부 매매·제공 혐의는 부인"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "김감전 첫 공판|흡연·소지는 인정",
+      "sub": "미성년자인 줄 몰랐다는 입장"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진 속 인물이 김감전 본인인지는 계정(@ksmartboi) 출처로만 판단했습니다 — 사진 1장(i.ibb.co)은 내려받기 시간 초과로 빠졌습니다",
+     "첫 재판 날짜가 엇갈립니다 (뉴스1 10/15 '11월 5일 예정' · 공판 기사는 11/10 보도) — 캡션에서 날짜를 뺐습니다",
+     "범죄 혐의 소식이라 본인 인스타 사진을 표지로 쓰는 게 괜찮은지 눈으로 봐 주세요"
+    ],
+    "research": [
+     {
+      "title": "뉴스1 — 래퍼 김감전, 첫 재판서 대마 혐의 대체로 인정…\"미성년자인 줄 몰랐다\"",
+      "link": "https://www.news1.kr/society/incident-accident/6348871"
+     },
+     {
+      "title": "뉴스핌 — '집유 중 대마' 래퍼 김감전, 일부 혐의 인정",
+      "link": "https://www.newspim.com/news/view/20261110000517"
+     },
+     {
+      "title": "MBC — 검찰, '집행유예 중 또 대마' 래퍼 김감전 구속기소",
+      "link": "https://imnews.imbc.com/news/2026/society/article/6855061_36919.html"
+     },
+     {
+      "title": "뉴스1 — '미성년 여성과 대마 거래' 래퍼 김감전, 내달 5일 첫 재판",
+      "link": "https://www.news1.kr/society/court-prosecution/6321465"
+     },
+     {
+      "title": "더시사법률 — 미성년자와 대마 네 차례 거래…래퍼 김감전 또 재판행",
+      "link": "https://tsisalaw.com/news/article.html?no=30436"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290053/ndbfhn8c5i55vos3m6mm.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290053/bnhq6nkwvjvozik0figu.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290055/tiuxfbghpfuiinxkxil8.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290055/hepdzduh8voyazlzg9jc.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794290053/ndbfhn8c5i55vos3m6mm.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T14:54+09:00",
+     "v": {
+      "A": "19777cc7",
+      "B": "fc49d199",
+      "C": "d00ff666"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1764,14 +1911,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T11:33+09:00"
+  "at": "2026-11-10T14:53+09:00"
  },
  "queue": {
-  "next": "2026-11-10T11:36+09:00",
+  "next": "2026-11-10T14:56+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-08T15:48+09:00"
