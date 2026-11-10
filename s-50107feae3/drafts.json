@@ -2584,7 +2584,7 @@
    "added_at": "2026-11-10T20:55+09:00",
    "corner": "mal",
    "shorts": {
-    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=MwquXn2HLeM\n구간: 21:10-21:51\n곡: 노엘·한요한의 사옥 썰\n아티스트: 이케아 쇼핑하다 꺼낸\n피처링:\n후킹: \n출처: 좋은녀석들\n자막: 자동",
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=MwquXn2HLeM\n구간: 21:10-21:51\n곡: 노엘·한요한의 사옥 썰\n아티스트: 이케아 쇼핑하다 꺼낸\n피처링:\n후킹: \n출처: 좋은녀석들\n자막: 받음 st:1794312394683-c5ba5cc7",
     "caption": "노엘(@noel____________)과 한요한(@yohanheaven)이 스웨덴의 이케아에서 쇼핑을 하다 웃음을 터뜨렸습니다.\n\n유튜브 채널 〈좋은녀석들〉의 '이케아...' 편에서는 \"분명히 잔잔한 바다\"였는데 갑자기 물이 빠지고 땅이 갈라지는 경험을 한다는 농담이 나오는데요, 이어 두 사람은 예전 동교동 사옥에 낯선 사람이 들어왔다가 갇혔던 일까지 꺼내 놓습니다.\n\n'범퍼카'와 '헬리콥터'를 함께 만든 두 사람이라, 이케아 쇼핑 중에 흘러나온 농담에도 둘이 함께 지나온 시간이 묻어납니다.\n\n#PLOT #한요한 #노엘 #좋은녀석들 #저스트뮤직 #인디고뮤직",
     "hooks": {
      "A": "이케아 쇼핑하다 꺼낸 / 노엘·한요한의 사옥 썰",
@@ -2636,8 +2636,129 @@
      "full": 1916.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-10T21:04+09:00"
+     "status": "ready",
+     "rid": "st:1794312394683-c5ba5cc7",
+     "n": 23,
+     "note": "자막 55줄 (원본 자막 그대로 · 원본 자막띠 덜어냄)",
+     "band": 0.88,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 1.25,
+       "text": "아이 나도 느끼는 게"
+      },
+      {
+       "start": 1.25,
+       "end": 4.41,
+       "text": "진짜 분명히 잔잔한 바다야"
+      },
+      {
+       "start": 4.41,
+       "end": 7.56,
+       "text": "오 오늘도 행복한\nIMJM 파이팅 이랬는데"
+      },
+      {
+       "start": 7.56,
+       "end": 9.46,
+       "text": "갑자기 땅이 갈라지는 경험을"
+      },
+      {
+       "start": 9.46,
+       "end": 11.35,
+       "text": "물이 존나 빠지고 있고"
+      },
+      {
+       "start": 11.35,
+       "end": 13.25,
+       "text": "갑자기 불 나와 어디서 막"
+      },
+      {
+       "start": 13.25,
+       "end": 15.77,
+       "text": "아 그리고 여러분 옛날에\nIMJM 사옥에 있었을 때"
+      },
+      {
+       "start": 15.77,
+       "end": 17.03,
+       "text": "동교동에 사옥에 있었을 때"
+      },
+      {
+       "start": 17.03,
+       "end": 19.56,
+       "text": "어떤 귀여운 녀석이\n우리 사옥에 잠입했잖아"
+      },
+      {
+       "start": 19.56,
+       "end": 22.09,
+       "text": "근데 그 녀석이 거기 갇혔잖아"
+      },
+      {
+       "start": 22.09,
+       "end": 23.35,
+       "text": "그런 사건도 있고"
+      },
+      {
+       "start": 23.35,
+       "end": 25.24,
+       "text": "뭔가 정체를 알 수 없는 애가"
+      },
+      {
+       "start": 25.24,
+       "end": 25.87,
+       "text": "우리 사옥에 들어왔는데"
+      },
+      {
+       "start": 25.87,
+       "end": 28.4,
+       "text": "도적이 들어왔는데"
+      },
+      {
+       "start": 28.4,
+       "end": 29.03,
+       "text": "2차 전직하러 들어온 거 같아"
+      },
+      {
+       "start": 29.03,
+       "end": 30.29,
+       "text": "1차는 넘었어"
+      },
+      {
+       "start": 30.29,
+       "end": 32.19,
+       "text": "그 녀석 표도 들고 있었거든요?"
+      },
+      {
+       "start": 32.19,
+       "end": 33.45,
+       "text": "토비였는데"
+      },
+      {
+       "start": 33.45,
+       "end": 34.71,
+       "text": "그 시프 있잖아"
+      },
+      {
+       "start": 34.71,
+       "end": 35.97,
+       "text": "표창 말고 그거 이거 단도"
+      },
+      {
+       "start": 35.97,
+       "end": 39.13,
+       "text": "그거를 바꾸려고 우리\n사옥으로 온 거 같아"
+      },
+      {
+       "start": 39.13,
+       "end": 40.39,
+       "text": "왔는데"
+      },
+      {
+       "start": 40.39,
+       "end": 41.0,
+       "text": "이 녀석이 닫힌거야"
+      }
+     ],
+     "at": "2026-11-10T21:06+09:00"
     }
    },
    "corner_name": "그 말",
@@ -2654,7 +2775,7 @@
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-10T21:03+09:00",
+   "made_at": "2026-11-10T21:04+09:00",
    "key": "44e2566f",
    "by": "claude",
    "subjects": [
@@ -2669,53 +2790,53 @@
     "why": "규효 맡김 · 오늘(11/10) 발매 확인 · [오보에] 타이틀곡을 함께 만든 판다곰이 총괄 프로듀서"
    },
    "added": "claude",
-   "added_at": "2026-11-10T21:03+09:00",
+   "added_at": "2026-11-10T21:04+09:00",
    "corner": "newalbums",
    "card": {
-    "form": "[카테고리]\nNew Release!\n\n[캡션]\n양홍원(@yanghongwon)과 판다곰이 함께 만든 싱글 [오보]가 오늘 나왔습니다.\n\n[오보]라는 이름은 2021년 양홍원의 정규 2집 [오보에]를 떠올리게 하는데요, 멜론의 앨범 소개란 맨 위에도 '[오보에2]'라는 표기가 붙어 있습니다. 그때 타이틀곡 '사계'의 작곡·편곡에 이름을 올렸던 판다곰이 이번에는 세 곡 모두의 총괄 프로듀서를 맡았습니다.\n\n판다곰은 양홍원이 차린 레이블 HW MUSIC의 식구로, 이번 싱글도 HW MUSIC에서 나왔습니다. [오보에]를 함께 만든 두 사람이 같은 레이블에서 그 이름을 다시 꺼낸 셈입니다.\n\n수록곡은 '화', 'MOONWALK', '목' 세 곡이며 가사는 모두 양홍원이 썼습니다.\n\n#PLOT #양홍원 #판다곰 #오보 #오보에 #HWMUSIC\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794312188/ply0i8zs1euitto0wzjk.jpg\n제목: [오보에]의 판다곰과|양홍원이 낸 [오보]\n부제: Panda Gomm, 양홍원 싱글 [오보] · 11월 10일 발매\n출처: 멜론\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794312206/plot_studio/hlvcwaj47r4bnnzio62h.mp4\n소제목: \n본문: \n출처:\n",
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n양홍원(@yanghongwon)과 판다곰이 함께 만든 싱글 [오보]가 오늘 나왔습니다.\n\n[오보]라는 이름은 2021년 양홍원의 정규 2집 [오보에]를 떠올리게 하는데요, 멜론의 앨범 소개란 맨 위에도 '[오보에2]'라는 표기가 붙어 있습니다. 그때 타이틀곡 '사계'의 작곡·편곡에 이름을 올렸던 판다곰이 이번에는 세 곡 모두의 총괄 프로듀서를 맡았습니다.\n\n판다곰은 양홍원이 차린 레이블 HW MUSIC의 식구로, 이번 싱글도 HW MUSIC에서 나왔습니다. [오보에]를 함께 만든 두 사람이 같은 레이블에서 그 이름을 다시 꺼낸 셈입니다.\n\n수록곡은 '화', 'MOONWALK', '목' 세 곡이며 가사는 모두 양홍원이 썼습니다.\n\n#PLOT #양홍원 #판다곰 #오보 #오보에 #HWMUSIC\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794312246/izgn7vqttjsfgrzgo5os.jpg\n제목: [오보에]의 판다곰과|양홍원이 낸 [오보]\n부제: Panda Gomm, 양홍원 싱글 [오보] · 11월 10일 발매\n출처: @yanghongwon\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794312263/plot_studio/g53b2kd1r4tnvdwkdinf.mp4\n소제목: \n본문: \n출처:\n",
     "caption": "양홍원(@yanghongwon)과 판다곰이 함께 만든 싱글 [오보]가 오늘 나왔습니다.\n\n[오보]라는 이름은 2021년 양홍원의 정규 2집 [오보에]를 떠올리게 하는데요, 멜론의 앨범 소개란 맨 위에도 '[오보에2]'라는 표기가 붙어 있습니다. 그때 타이틀곡 '사계'의 작곡·편곡에 이름을 올렸던 판다곰이 이번에는 세 곡 모두의 총괄 프로듀서를 맡았습니다.\n\n판다곰은 양홍원이 차린 레이블 HW MUSIC의 식구로, 이번 싱글도 HW MUSIC에서 나왔습니다. [오보에]를 함께 만든 두 사람이 같은 레이블에서 그 이름을 다시 꺼낸 셈입니다.\n\n수록곡은 '화', 'MOONWALK', '목' 세 곡이며 가사는 모두 양홍원이 썼습니다.\n\n#PLOT #양홍원 #판다곰 #오보 #오보에 #HWMUSIC",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312188/ply0i8zs1euitto0wzjk.jpg",
-      "credit": "멜론",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312190/muqofymanrlzi9dephio.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312246/izgn7vqttjsfgrzgo5os.jpg",
       "credit": "@yanghongwon",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312194/ruh4k0kgjwdqba77bwab.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312249/lm2nhg8p9sskuf0mztef.jpg",
       "credit": "@yanghongwon",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312197/e5xgiygkmdlavtx5hwyo.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312252/sihfbsh1n8kkibpl5sud.jpg",
       "credit": "@yanghongwon",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312254/urjfuezs0rvdrdhymlas.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312188/ply0i8zs1euitto0wzjk.jpg",
-      "credit": "멜론",
-      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312190/muqofymanrlzi9dephio.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312246/izgn7vqttjsfgrzgo5os.jpg",
       "credit": "@yanghongwon",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312194/ruh4k0kgjwdqba77bwab.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312249/lm2nhg8p9sskuf0mztef.jpg",
       "credit": "@yanghongwon",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312197/e5xgiygkmdlavtx5hwyo.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312252/sihfbsh1n8kkibpl5sud.jpg",
       "credit": "@yanghongwon",
       "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312254/urjfuezs0rvdrdhymlas.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
      }
     ],
     "shape": "맥락",
@@ -2742,7 +2863,7 @@
     "issues": [],
     "confirm": [
      "숏폼은 비웠습니다 — 오늘 나온 공식 영상은 YouTube Topic 음원(정지 커버)뿐이고 MV·라이브가 없습니다. hiphopplaya 릴스 원본 AP Alchemy 영상도 못 찾았습니다",
-     "표지 첫 사진이 [오보] 커버(멜론에서 받음)로 들어갔는지, 양홍원 사진이 혼자 나온 컷인지 봐 주세요 (웨딩 화보는 일부러 뺐습니다)"
+     "표지는 양홍원 단독 녹음실 사진입니다 — 멜론 [오보] 커버는 500px이라 깨져서 뒤로 뺐습니다 (웨딩 화보도 일부러 뺐습니다). 커버를 쓰려면 고화질본을 구해 「사진 바꾸기」로 넣어 주세요"
     ],
     "research": [
      {
@@ -2773,24 +2894,24 @@
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312212/ql2jguwolztolo8ap1uf.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312215/xqyzr7j5u2txgdiisald.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312212/cbmlmih4oitwmbrf4eqt.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312269/kmubfm4fwtxbzmnrh9zw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312272/ktbuxojxj5g8ugtlmxgw.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312269/lb7epfjwsvl0pffhmqzl.jpg"
      ],
      "covers": {
-      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312217/h7p63fzj9p2cy5xq6i2l.jpg",
-      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312217/my1dnvajp2svpna6sxdl.jpg",
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312212/ql2jguwolztolo8ap1uf.jpg"
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312275/lxuklni0fk7zsvkf3mtl.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312275/wzm2mj3r0mil4k9rxvsh.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312269/kmubfm4fwtxbzmnrh9zw.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-10T21:03+09:00",
+     "at": "2026-11-10T21:04+09:00",
      "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794312213/plot_studio/db3fhfaff4dyht9xouki.mp4"
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794312270/plot_studio/giqah3fbe96zmup391d9.mp4"
      },
      "v": {
-      "A": "00718745",
-      "B": "c9c7d645",
-      "C": "1226c5d1"
+      "A": "3ff9de59",
+      "B": "d131fb0b",
+      "C": "f834d011"
      }
     }
    },
@@ -2974,7 +3095,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T21:04+09:00"
+  "at": "2026-11-10T21:06+09:00"
  },
  "queue": {
   "next": "2026-11-10T21:50+09:00",
