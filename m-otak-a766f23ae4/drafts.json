@@ -1,348 +1,51 @@
 {
  "schema": 1,
- "date": "2026-11-09",
- "generated_at": "2026-11-09 10:44 KST",
+ "date": "2026-11-10",
+ "generated_at": "2026-11-10 10:46 KST",
  "items": [
   {
    "source": {
-    "id": "claude:hoshino-gen-hirayasumi-op",
-    "account": "음악나탈리",
-    "url": "https://news.yahoo.co.jp/articles/34c0ec8ed27e8fb758a681ee902c1053df7e638e",
+    "id": "claude:oricon-2000th-number-one",
+    "account": "ORICON NEWS (도오일보 재배포)",
+    "url": "https://www.toonippo.co.jp/articles/-/2399757",
     "image": null,
-    "head": "星野源がアニメ「ひらやすみ」オープニングテーマ担当、楽曲制作は「じっくり阿佐ヶ谷を浴びてから」",
+    "head": "Aぇ! group、通算2000作目の1位 1968年発表「オリコン週間シングルランキング」主な記録",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-09T10:47+09:00",
-   "key": "f7d28ec0",
+   "made_at": "2026-11-10T11:01+09:00",
+   "key": "766502e8",
    "by": "claude",
    "subjects": [
-    "호시노 겐",
-    "히라야스미"
+    "Aぇ! group",
+    "오리콘"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "[실험] 호시노 겐이 오래 산 동네 아사가야가 무대인 애니 〈히라야스미〉의 오프닝을 쓴다 — 〈스파이 패밀리〉 '喜劇'와 이어지는 애니 주제가 연결",
-    "why": "11/9 08:00 동시 해금 · 본인 코멘트와 원작자 코멘트가 있는 사람 소식 · 넷플릭스 배신 예정이라 한국에서도 볼 수 있는 작품 · 발표 소식이라 표지 한 장"
+    "angle": "[실험] 오리콘 주간 싱글 1위 2000번째 — 100번째마다 끊어 보면 엔카·아이돌·애니 밴드·K팝이 다 지나간다",
+    "why": "11/10 오리콘 발표 · 오리콘이 직접 공개한 '100번째마다의 1위' 목록에 세븐틴(1900번째)·Poppin'Party(1700번째) — 덕후가 아니어도 읽히는 입문형"
    },
    "added": "claude",
-   "added_at": "2026-11-09T10:47+09:00",
-   "corner": "news",
+   "added_at": "2026-11-10T11:01+09:00",
+   "corner": "intro",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n호시노 겐이 2027년 1월 시작하는 애니 〈히라야스미〉(ひらやすみ)의 오프닝을 새로 써서 부릅니다.\n\n신조 케이고의 만화가 원작으로, 일도 연인도 없이 태평하게 사는 청년 히로토가 도쿄 아사가야의 단층집에서 사촌 동생 나쓰미와 지내는 이야기인데요, 호시노 겐은 이 아사가야에 오래 살았다고 합니다. 올해 이른 봄 동네를 다시 걸으며 밥과 젤라토를 먹은 뒤 곡 작업을 시작했다며 \"고마운 인연을 느꼈다\"고 했습니다.\n\n신조 케이고 작품의 주제가는 2016년 영화 〈森山中教習所〉 이후 두 번째입니다. 원작자는 먼저 들어 본 곡을 두고 정말 좋은 곡이라고 했습니다.\n\n〈스파이 패밀리〉 1기 엔딩 '喜劇'를 불렀던 목소리입니다. 히로토 역은 우치다 유마, 제작은 Production +h., NHK 종합에서 1월 방영(일본 기준)하고 넷플릭스·U-NEXT 배신도 예정돼 있습니다.\n\n#암낫오타쿠 #호시노겐 #히라야스미 #스파이패밀리 #우치다유마 #애니송\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794188838/ldvu40kkso8q01wxp2db.jpg\n제목: 호시노 겐,|〈히라야스미〉 OP 쓴다\n부제: 2027년 1월 NHK · 아사가야를 다시 걷고 쓴 신곡\n출처:\n",
-    "caption": "호시노 겐이 2027년 1월 시작하는 애니 〈히라야스미〉(ひらやすみ)의 오프닝을 새로 써서 부릅니다.\n\n신조 케이고의 만화가 원작으로, 일도 연인도 없이 태평하게 사는 청년 히로토가 도쿄 아사가야의 단층집에서 사촌 동생 나쓰미와 지내는 이야기인데요, 호시노 겐은 이 아사가야에 오래 살았다고 합니다. 올해 이른 봄 동네를 다시 걸으며 밥과 젤라토를 먹은 뒤 곡 작업을 시작했다며 \"고마운 인연을 느꼈다\"고 했습니다.\n\n신조 케이고 작품의 주제가는 2016년 영화 〈森山中教習所〉 이후 두 번째입니다. 원작자는 먼저 들어 본 곡을 두고 정말 좋은 곡이라고 했습니다.\n\n〈스파이 패밀리〉 1기 엔딩 '喜劇'를 불렀던 목소리입니다. 히로토 역은 우치다 유마, 제작은 Production +h., NHK 종합에서 1월 방영(일본 기준)하고 넷플릭스·U-NEXT 배신도 예정돼 있습니다.\n\n#암낫오타쿠 #호시노겐 #히라야스미 #스파이패밀리 #우치다유마 #애니송",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n1968년 시작된 오리콘 주간 싱글 랭킹의 2000번째 1위는 Aぇ! group 의 'Emotion'입니다.\n\n오리콘은 10일 기록을 발표하며 100번째마다의 1위 작품을 함께 공개했는데요, 1900번째는 세븐틴의 '消費期限'(2024), 1700번째는 〈BanG Dream!〉의 밴드 Poppin'Party 의 'Photograph'(2021)였습니다. 맨 처음 1위는 1966년 발매된 무드 가요 'ラブユー東京'입니다.\n\n엔카와 아이돌, 애니 속 밴드와 K팝 그룹이 58년 동안 같은 자리를 거쳐 갔습니다. 멤버 사노 아키야는 \"'통산 2000번째 1위'라니, 숫자가 너무 대단하다\"고 했습니다.\n\n'Emotion'은 오리콘 집계 첫 주 47.9만 장을 기록했고, 데뷔 싱글부터 다섯 장 연속 1위입니다.\n\n#암낫오타쿠 #오리콘 #Aぇgroup #세븐틴 #포핀파티 #뱅드림\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794276098/i0t7cjg3q6nwigby5v8f.jpg\n제목: 오리콘 1위 2000번째는|Aぇ! group 신곡\n부제: 1900번째는 세븐틴 — 100번째마다 끊어 보면\n출처: THE FIRST TIMES\n\n[슬라이드]\n소스: \n소제목: 1번째 — '라브유 도쿄'\n본문: 구로사와 아키라와 로스 프리모스가 1966년에 낸 무드 가요 'ラブユー東京'입니다. 오리콘 주간 싱글 랭킹이 시작된 1968년 1월, 첫 1위에 올라 2주 연속 자리를 지켰습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 700번째 — 'LOVEマシーン'\n본문: 1999년 모닝구 무스메。의 'LOVEマシーン'입니다. 모닝구 무스메。는 1300번째('Help me!!', 2013), 1800번째(모닝구 무스메。'22, 2022)에도 이름을 올렸습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 1700번째 — 'Photograph'\n본문: 2021년, 〈BanG Dream!〉 프로젝트의 밴드 Poppin'Party 의 'Photograph'가 1700번째 1위였습니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 1900번째 — '消費期限'\n본문: 2024년 세븐틴의 일본 싱글 '消費期限'이 1900번째 1위 작품입니다.\n출처: \n\n[슬라이드]\n소스: \n소제목: 2000번째 — 'Emotion'\n본문: 11월 4일 나온 Aぇ! group 의 다섯 번째 싱글입니다. 오리콘 집계 첫 주 47.9만 장으로 1위에 올랐고, 데뷔 싱글부터 다섯 장 연속 1위입니다. 표제곡으로는 처음 낸 밴드 사운드의 록 넘버입니다.\n출처:\n",
+    "caption": "1968년 시작된 오리콘 주간 싱글 랭킹의 2000번째 1위는 Aぇ! group 의 'Emotion'입니다.\n\n오리콘은 10일 기록을 발표하며 100번째마다의 1위 작품을 함께 공개했는데요, 1900번째는 세븐틴의 '消費期限'(2024), 1700번째는 〈BanG Dream!〉의 밴드 Poppin'Party 의 'Photograph'(2021)였습니다. 맨 처음 1위는 1966년 발매된 무드 가요 'ラブユー東京'입니다.\n\n엔카와 아이돌, 애니 속 밴드와 K팝 그룹이 58년 동안 같은 자리를 거쳐 갔습니다. 멤버 사노 아키야는 \"'통산 2000번째 1위'라니, 숫자가 너무 대단하다\"고 했습니다.\n\n'Emotion'은 오리콘 집계 첫 주 47.9만 장을 기록했고, 데뷔 싱글부터 다섯 장 연속 1위입니다.\n\n#암낫오타쿠 #오리콘 #Aぇgroup #세븐틴 #포핀파티 #뱅드림",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188838/ldvu40kkso8q01wxp2db.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188838/ldvu40kkso8q01wxp2db.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "호시노 겐,|〈히라야스미〉 OP 쓴다",
-      "sub": "2027년 1월 NHK · 아사가야를 다시 걷고 쓴 신곡"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "넷플릭스 '세계 배신'은 리얼사운드 제목에만 있고 아니메아니메는 'Netflix·U-NEXT 배신 예정'까지만 — 캡션은 '넷플릭스·U-NEXT 배신 예정'으로만 씀. 한국 넷플릭스 공개 여부·한국어 제목은 확인 못 함"
-    ],
-    "research": [
-     {
-      "title": "음악나탈리(야후 재배포) — 星野源がアニメ「ひらやすみ」OPテーマ担当 (11/9 8:00)",
-      "link": "https://news.yahoo.co.jp/articles/34c0ec8ed27e8fb758a681ee902c1053df7e638e"
-     },
-     {
-      "title": "아니메아니메 — TVアニメ「ひらやすみ」星野源がOPテーマを担当！ かつて暮らした本作の舞台・阿佐ヶ谷を歩き、新曲を書き下ろし",
-      "link": "https://animeanime.jp/article/2026/11/09/104602.html"
-     },
-     {
-      "title": "에이가닷컴 — 星野源の新曲、アニメ「ひらやすみ」OPテーマに決定 (森山中教習所 2016/7/9 공개)",
-      "link": "https://eiga.com/news/20261109/3"
-     },
-     {
-      "title": "리얼사운드(야후 재배포) — OP曲は星野源の書き下ろし新曲に Netflixでの世界配信も決定",
-      "link": "https://news.yahoo.co.jp/articles/761577c9c43d966b8a687811db938869e3adcc19"
-     },
-     {
-      "title": "아니메아니메(2022) — 〈SPY×FAMILY〉 ED '喜劇'",
-      "link": "https://animeanime.jp/article/2022/05/28/69770.html"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188845/gqnd8xk7oj6k2vydsmvy.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188845/h5qbb0kosunanm9yhvnw.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188845/gqnd8xk7oj6k2vydsmvy.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-09T10:47+09:00",
-     "v": {
-      "A": "d2cc0e18"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:spy-family-s4-movie2",
-    "account": "패미통",
-    "url": "https://www.famitsu.com/article/202611/93420",
-    "image": null,
-    "head": "アニメ『スパイファミリー』4期が2027年に放送決定。劇場版新作も同年に公開。4期ティザービジュアルも公開",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-09T10:47+09:00",
-   "key": "69a8a6f2",
-   "by": "claude",
-   "subjects": [
-    "스파이 패밀리"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "〈스파이 패밀리〉 TV 4기와 극장판 2탄이 같은 해(2027년)에 — 11/8 특별 이벤트 발표와 4기 티저 비주얼",
-    "why": "11/8 저녁 발표 · 한국에서도 큰 작품의 새 시즌·새 극장판 · 발표 소식이라 표지 한 장 (4기 영상은 아직 공식 채널에 없어 숏폼 없음)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-09T10:47+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈스파이 패밀리〉(SPY×FAMILY) TV 애니 4기와 두 번째 극장판이 모두 2027년에 나옵니다.\n\n11월 8일 도쿄에서 열린 특별 이벤트 'ANIME EXTRA MISSION Ⅱ'에서 발표됐는데요, 캐릭터 디자이너 가도와키 사토시가 새로 그린 4기 티저 비주얼도 함께 나왔습니다. 거리를 배경으로 로이드·아냐·요르·본드가 모두 모였고, 주변에 흩날리는 신문과 전단에 4기 이야기의 단서가 담겨 있다고 합니다.\n\n첫 극장판 〈CODE: White〉가 2023년 12월 일본에서 개봉한 뒤, 두 번째 극장판은 TV 4기와 같은 해에 찾아옵니다.\n\n1기 엔딩 '喜劇'와 첫 극장판 엔딩 '光の跡'를 맡았던 호시노 겐은 하루 뒤인 9일, 다른 애니 〈히라야스미〉의 오프닝 소식을 전했습니다.\n\n#암낫오타쿠 #스파이패밀리 #아냐 #극장판 #호시노겐\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794188841/sctbh5qiunhwldjrptyk.jpg\n제목: 〈스파이 패밀리〉 4기,|극장판도 2027년 온다\n부제: 11월 8일 도쿄 특별 이벤트에서 발표\n출처:\n",
-    "caption": "〈스파이 패밀리〉(SPY×FAMILY) TV 애니 4기와 두 번째 극장판이 모두 2027년에 나옵니다.\n\n11월 8일 도쿄에서 열린 특별 이벤트 'ANIME EXTRA MISSION Ⅱ'에서 발표됐는데요, 캐릭터 디자이너 가도와키 사토시가 새로 그린 4기 티저 비주얼도 함께 나왔습니다. 거리를 배경으로 로이드·아냐·요르·본드가 모두 모였고, 주변에 흩날리는 신문과 전단에 4기 이야기의 단서가 담겨 있다고 합니다.\n\n첫 극장판 〈CODE: White〉가 2023년 12월 일본에서 개봉한 뒤, 두 번째 극장판은 TV 4기와 같은 해에 찾아옵니다.\n\n1기 엔딩 '喜劇'와 첫 극장판 엔딩 '光の跡'를 맡았던 호시노 겐은 하루 뒤인 9일, 다른 애니 〈히라야스미〉의 오프닝 소식을 전했습니다.\n\n#암낫오타쿠 #스파이패밀리 #아냐 #극장판 #호시노겐",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188841/sctbh5qiunhwldjrptyk.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188841/sctbh5qiunhwldjrptyk.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "〈스파이 패밀리〉 4기,|극장판도 2027년 온다",
-      "sub": "11월 8일 도쿄 특별 이벤트에서 발표"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진이 아직 예전 공식 비주얼(장바구니 로이드·아이스크림 아냐)이라 캡션의 '4기 티저 비주얼'과 맞지 않음 — 발행 전 4기 티저로 교체 필요. 캡션 '도쿄에서 열린'은 애니메 에이가닷컴 사전 공지(벨사르 다카다노바바) 기준이며 발표 기사 3곳엔 장소 없음",
-     "[표지] 기사 사진이 모두 해상도 미달이라 예전 공식 비주얼(장바구니 든 로이드·아이스크림 떨어뜨린 아냐)이 들어감 — 4기 티저 비주얼(거리 배경·흩날리는 신문)로 바꿔 올릴 것",
-     "이벤트 장소(벨사르 다카다노바바)는 사전 공지 기준 — 발표 기사에는 장소가 없음. 3기 방영 시기는 보도자료에 2025년 10월·2026년 10월이 섞여 있어 캡션에 넣지 않음"
-    ],
-    "research": [
-     {
-      "title": "패미통 — 4期が2027年に放送決定。劇場版新作も同年に公開 (11/8 이벤트 · CODE: White 2023/12/22)",
-      "link": "https://www.famitsu.com/article/202611/93420"
-     },
-     {
-      "title": "PASH! PLUS — 2027年にSeason4放送＆劇場版第2弾公開が決定！ 門脇聡さん描き下ろしティザービジュアル",
-      "link": "https://www.pashplus.jp/anime/502220/"
-     },
-     {
-      "title": "코믹나탈리 — Season 4が2027年に放送、劇場版第2弾も2027年公開",
-      "link": "https://natalie.mu/comic/news/697137"
-     },
-     {
-      "title": "애니메 에이가닷컴 — ANIME EXTRA MISSION Ⅱ 이벤트 정보 (11/8 벨사르 다카다노바바)",
-      "link": "https://anime.eiga.com/event/173561/"
-     },
-     {
-      "title": "Billboard JAPAN — 호시노 겐 '光の跡' 劇場版 CODE: White ED",
-      "link": "https://www.billboard-japan.com/d_news/detail/111389/2"
-     },
-     {
-      "title": "리얼사운드(2023) — 星野源、ニューシングル表題曲「光の跡」が『劇場版 SPY×FAMILY』ED主題歌に",
-      "link": "https://realsound.jp/2023/12/post-1527444.html"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188848/mjku1ebd6bo8peijvquz.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188848/m5aaxcwhskcwik1akqoa.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794188848/mjku1ebd6bo8peijvquz.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-09T10:47+09:00",
-     "v": {
-      "A": "fbedc6b4"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:yoasobi-super-planet-korea",
-    "account": "음악나탈리",
-    "url": "https://news.yahoo.co.jp/articles/aa0278444f3b1963f10079adcda3fb5ca324abe5",
-    "image": null,
-    "head": "YOASOBI“超惑星”ツアーに自身初のオーストラリア公演追加、香港公演の日程＆会場も発表",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-09T18:56+09:00",
-   "key": "67b1f04b",
-   "by": "claude",
-   "subjects": [
-    "YOASOBI"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "요아소비가 '超惑星' 투어를 다시 짜면서 일부 국가·지역 개최를 접고 호주를 더했다 — 한국 공연은 2027년 4월 17일",
-    "why": "11/9 오전 공식 발표 · 음악나탈리·오리콘 모두 한국 4/17(공연장 추후 발표) · 한국 팬과 바로 이어지는 소식이라 표지 한 장"
-   },
-   "added": "claude",
-   "added_at": "2026-11-09T18:56+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n요아소비가 새로 짠 '超惑星' 투어 일정에서 한국 공연은 2027년 4월 17일입니다.\n\n요아소비는 9일 \"최근 정세를 고려해 신중히 협의한 끝에\" 처음 계획한 일부 국가·지역과 공연장에서는 공연을 열지 않기로 했다고 밝혔는데요, 대신 첫 호주 공연을 더했습니다. 투어 이름도 'ASIA 10-CITY DOME & STADIUM TOUR'에서 '11-CITY ASIA-OCEANIA TOUR'로 바뀌었습니다.\n\n해외 일정은 1월 타이베이 돔에서 시작해 홍콩, 싱가포르, 멜버른·시드니를 거쳐 한국에서 맺습니다. 2024년 12월 인천 인스파이어 아레나 이후 다시 한국 무대에 서는 셈입니다.\n\n한국 공연장과 예매 일정은 추후 발표되고, 일본 공연은 12월 5~6일 도쿄 돔까지 이어집니다.\n\n#암낫오타쿠 #요아소비 #YOASOBI #요아소비내한 #내한공연\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794218218/bgv3ndytvw1bpxdm0bxy.jpg\n제목: 요아소비 한국 공연,|2027년 4월 17일\n부제: '超惑星' 투어 다시 짜고 호주 추가\n출처: THE FIRST TIMES\n",
-    "caption": "요아소비가 새로 짠 '超惑星' 투어 일정에서 한국 공연은 2027년 4월 17일입니다.\n\n요아소비는 9일 \"최근 정세를 고려해 신중히 협의한 끝에\" 처음 계획한 일부 국가·지역과 공연장에서는 공연을 열지 않기로 했다고 밝혔는데요, 대신 첫 호주 공연을 더했습니다. 투어 이름도 'ASIA 10-CITY DOME & STADIUM TOUR'에서 '11-CITY ASIA-OCEANIA TOUR'로 바뀌었습니다.\n\n해외 일정은 1월 타이베이 돔에서 시작해 홍콩, 싱가포르, 멜버른·시드니를 거쳐 한국에서 맺습니다. 2024년 12월 인천 인스파이어 아레나 이후 다시 한국 무대에 서는 셈입니다.\n\n한국 공연장과 예매 일정은 추후 발표되고, 일본 공연은 12월 5~6일 도쿄 돔까지 이어집니다.\n\n#암낫오타쿠 #요아소비 #YOASOBI #요아소비내한 #내한공연",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218218/bgv3ndytvw1bpxdm0bxy.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276098/i0t7cjg3q6nwigby5v8f.jpg",
       "credit": "THE FIRST TIMES",
-      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/11/20261109-dm-9001-1200x630.jpg"
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/11/20261109-st-192801-1200x630.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218218/bgv3ndytvw1bpxdm0bxy.jpg",
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276098/i0t7cjg3q6nwigby5v8f.jpg",
       "credit": "THE FIRST TIMES",
-      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/11/20261109-dm-9001-1200x630.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "요아소비 한국 공연,|2027년 4월 17일",
-      "sub": "'超惑星' 투어 다시 짜고 호주 추가"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[표지] 처음엔 2025 웸블리 포스터가 들어가 THE FIRST TIMES 사진으로 바꿈 — 지금 사진(두 사람, 흰 타일 배경)이 요아소비 최근 공식 사진인지 확인",
-     "한국 4/17 일정이 이번에 처음 나온 것인지는 확인 못 함 — 캡션은 '새로 짠 일정에서 한국은 4/17'로만 씀. 보류된 나라·공연장 이름은 어느 보도에도 없어 쓰지 않음(짐작 금지)",
-     "한국 공연장·예매 일정은 미발표 — 리벳 등 국내 주최 공지가 나오면 후속"
-    ],
-    "research": [
-     {
-      "title": "음악나탈리(야후 재배포) — 첫 호주 공연 추가, 홍콩 일정·공연장, 한국 4/17 공연장 추후 발표 (11/9 11:00)",
-      "link": "https://news.yahoo.co.jp/articles/aa0278444f3b1963f10079adcda3fb5ca324abe5"
-     },
-     {
-      "title": "오리콘(야후 재배포) — 투어 이름 변경, '昨今の情勢を鑑み' 일부 개최지 見送り",
-      "link": "https://news.yahoo.co.jp/articles/20c54d485087a6a5eb14b95e7e53012019441801"
-     },
-     {
-      "title": "Billboard JAPAN — 超惑星 홍콩·호주 공연 상세, 전 일정표",
-      "link": "https://www.billboard-japan.com/d_news/detail/167268/2"
-     },
-     {
-      "title": "뉴시스(2024) — 인천 인스파이어 아레나 두 번째 내한공연 성료",
-      "link": "https://www.newsis.com/view/NISX20241207_0002987815"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218249/g33muvixw9in19fgmtd4.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218249/k5o3l3jcinhmoalejgql.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218249/g33muvixw9in19fgmtd4.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-09T18:57+09:00",
-     "v": {
-      "A": "c192851b"
-     }
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "한국 공연 날짜가 박힌 오늘 오전 발표 · 투어 재편이라 한국 팬이 가장 먼저 궁금해할 '한국은?'에 답한다",
-    "at": "2026-11-09T18:56+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:oshii-votoms-grey-witch",
-    "account": "MANTANWEB",
-    "url": "https://mantan-web.jp/article/20261108dog00m200010000a.html",
-    "image": null,
-    "head": "押井守監督：「装甲騎兵ボトムズ」15年ぶり新作 女性主人公にした理由 「やりたいことを詰め込んだだけ」",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-09T18:56+09:00",
-   "key": "2d77c553",
-   "by": "claude",
-   "subjects": [
-    "오시이 마모루",
-    "장갑기병 보톰즈"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "[실험] 〈보톰즈〉를 몰라도 읽히게 — 〈공각기동대〉의 오시이 마모루가 팬으로서 만든 15년 만의 〈보톰즈〉 신작, 완성 피로 상영회에서 한 말",
-    "why": "11/8 완성 피로 상영회 · 감독·성우의 말이 있는 사람 소식 · 11/20 일본 개봉 · 선라이즈 공식 예고편으로 숏폼"
-   },
-   "added": "claude",
-   "added_at": "2026-11-09T18:56+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈공각기동대〉의 오시이 마모루 감독이 만든 〈장갑기병 보톰즈〉(装甲騎兵ボトムズ) 새 극장판이 11월 20일 일본에서 개봉합니다.\n\n〈회색의 마녀〉(灰色の魔女)는 선라이즈의 1980년대 로봇 애니를 15년 만에 다시 꺼낸 완전 신작인데요, 8일 도쿄 완성 피로 상영회에서 오시이 감독은 자신도 팬으로서 언젠가 할 기회가 꼭 올 거라 생각했다고 말했습니다. 원작자 다카하시 료스케의 세계관을 깨지 않는 데 신경 썼고, 두 여성을 중심에 둔 데 대해서는 \"하고 싶은 걸 채워 넣었을 뿐\"이라고 했습니다.\n\n주인공 애시를 맡은 사와시로 미유키는 '전장에서 병사는 평등하다'는 감독의 말을 붙잡고 연기했다고 돌아봤습니다.\n\n선라이즈 50주년 기념작으로, 두 편으로 나뉜 극장판의 첫 편입니다. 제작 협력은 Production I.G.\n\n#암낫오타쿠 #보톰즈 #오시이마모루 #사와시로미유키 #선라이즈 #공각기동대\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794218222/p9smxw6kd1iomszchqvi.jpg\n제목: 〈공각기동대〉 감독이|만든 〈보톰즈〉 신작\n부제: 오시이 마모루 〈회색의 마녀〉 11월 20일 일본 개봉\n출처: MOVIE WALKER PRESS\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794218232/plot_studio/p5he3skrqi1dfb5mtrz5.mp4\n소제목: \n본문: \n출처: サンライズ SUNRISE Official\n",
-    "caption": "〈공각기동대〉의 오시이 마모루 감독이 만든 〈장갑기병 보톰즈〉(装甲騎兵ボトムズ) 새 극장판이 11월 20일 일본에서 개봉합니다.\n\n〈회색의 마녀〉(灰色の魔女)는 선라이즈의 1980년대 로봇 애니를 15년 만에 다시 꺼낸 완전 신작인데요, 8일 도쿄 완성 피로 상영회에서 오시이 감독은 자신도 팬으로서 언젠가 할 기회가 꼭 올 거라 생각했다고 말했습니다. 원작자 다카하시 료스케의 세계관을 깨지 않는 데 신경 썼고, 두 여성을 중심에 둔 데 대해서는 \"하고 싶은 걸 채워 넣었을 뿐\"이라고 했습니다.\n\n주인공 애시를 맡은 사와시로 미유키는 '전장에서 병사는 평등하다'는 감독의 말을 붙잡고 연기했다고 돌아봤습니다.\n\n선라이즈 50주년 기념작으로, 두 편으로 나뉜 극장판의 첫 편입니다. 제작 협력은 Production I.G.\n\n#암낫오타쿠 #보톰즈 #오시이마모루 #사와시로미유키 #선라이즈 #공각기동대",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218222/p9smxw6kd1iomszchqvi.jpg",
-      "credit": "MOVIE WALKER PRESS",
-      "from": "https://press.moviewalker.jp/api/resizeimage/news/article/1455420/19093827?w=1200"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218222/p9smxw6kd1iomszchqvi.jpg",
-      "credit": "MOVIE WALKER PRESS",
-      "from": "https://press.moviewalker.jp/api/resizeimage/news/article/1455420/19093827?w=1200"
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/11/20261109-st-192801-1200x630.jpg"
      }
     ],
     "shape": "맥락",
@@ -350,68 +53,413 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "〈공각기동대〉 감독이|만든 〈보톰즈〉 신작",
-      "sub": "오시이 마모루 〈회색의 마녀〉 11월 20일 일본 개봉"
+      "title": "오리콘 1위 2000번째는|Aぇ! group 신곡",
+      "sub": "1900번째는 세븐틴 — 100번째마다 끊어 보면"
      }
     ],
     "issues": [],
     "confirm": [
-     "클립 위험: 낮음 — SUNRISE Official · Bandai Namco Filmworks Channel (공식 본예고 30초 ver.)",
-     "한국 개봉 여부·한국 정식 제목은 확인 못 함 — 캡션에 넣지 않음"
+     "[검증] 표지 사진이 Aぇ! group 인데 제목 둘째 줄이 '1900번째는 세븐틴'이라 사진 속 인물을 세븐틴으로 오해할 수 있어 제목을 Aぇ! group 쪽으로 바꾸고 세븐틴은 소제목으로 옮겼다 — 세븐틴 훅을 살리려면 세븐틴 사진 장을 따로 넣을 것",
+     "'Aぇ! group' 한국 표기(에이 그룹 등)를 정하지 않고 원어 그대로 둠 — 다른 글과 맞출지 확인",
+     "Poppin'Party 를 '〈BanG Dream!〉의 밴드'로만 소개함 — 1700번째 사진 장에 쓸 공식 이미지가 없으면 표지+텍스트 장으로",
+     "사진이 모자라 5장(1, 2, 3, 4, 5번)은 비워 뒀습니다 — 같은 사진을 두 번 쓰지 않으려고. 스튜디오에서 빈 자리를 눌러 넣어 주세요"
     ],
     "research": [
      {
-      "title": "MANTANWEB — 15년 만의 신작, 여성 주인공으로 한 이유 '하고 싶은 걸 채워 넣었을 뿐' (11/8)",
-      "link": "https://mantan-web.jp/article/20261108dog00m200010000a.html"
+      "title": "ORICON NEWS(도오일보) — 통산 2000번째 1위, 100번째마다의 1위 작품 목록",
+      "link": "https://www.toonippo.co.jp/articles/-/2399757"
      },
      {
-      "title": "MOVIE WALKER PRESS — 완성 피로 상영회, '언젠가 할 기회는 꼭 있다고 생각했다', 사와시로 미유키 발언",
-      "link": "https://press.moviewalker.jp/news/article/1455420/"
+      "title": "ORICON NEWS(기이민보 AGARA) — 같은 기록 기사, 1번째 '라브유 도쿄'",
+      "link": "https://www.agara.co.jp/article/710244"
      },
      {
-      "title": "아니메아니메 — 완성 피로 상영회 리포트 (11/8 TOHO시네마즈 롯폰기힐스, 등단자 5명)",
-      "link": "https://animeanime.jp/article/2026/11/09/104631.html"
+      "title": "THE FIRST TIMES — 첫 주 47.9만 장·데뷔 5작 연속 1위·멤버 코멘트",
+      "link": "https://www.thefirsttimes.jp/news/0000915664/"
      },
      {
-      "title": "코믹나탈리 — 이치팬으로서 '하고 싶은 걸 채워 넣었을 뿐'",
-      "link": "https://natalie.mu/comic/news/697102"
+      "title": "주니치 스포츠 — 마사카도 요시노리·사노 아키야 코멘트",
+      "link": "https://www.chunichi.co.jp/article/1336980"
      },
      {
-      "title": "선라이즈 공식 — 본예고 30초 ver.",
-      "link": "https://www.youtube.com/watch?v=AewVEStMRKk"
+      "title": "ORICON NEWS — 2000번째 1위 기록 기사 원문",
+      "link": "https://www.oricon.co.jp/news/2491796/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218257/o9wthk2cedwhnvrvl3jl.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218259/nxdurqyo8tusv13bciuy.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218257/uyzbpentfgzi1yowxyl2.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276130/qeu2ejzyazfoatffwfvu.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276130/bs6xqffk3ubowakqenry.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276130/kg6d7qfeht54exp5tqsh.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276130/eimbcj9am4drcgxaz82d.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276132/dmiyk8tkde7vhfriewp0.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276132/oejlet26w7wkbsydig2b.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276132/nrhwgobqasysexvtkpf5.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218257/o9wthk2cedwhnvrvl3jl.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276130/qeu2ejzyazfoatffwfvu.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-09T18:57+09:00",
+     "at": "2026-11-10T11:02+09:00",
+     "v": {
+      "A": "53a1ab03"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "어제 발표된 오리콘 기록을 100번째마다 끊어 보는 해부형 · 1900번째 세븐틴·1700번째 Poppin'Party 로 K팝·애니 팬 모두에게 걸린다",
+    "at": "2026-11-10T11:01+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "claude:grotesqqque-korea-release",
+    "account": "톱스타뉴스",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16272588",
+    "image": null,
+    "head": "일본 애니메이션 '그로테스크' 11월 26일 메가박스 단독 개봉",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T11:01+09:00",
+   "key": "1eac3681",
+   "by": "claude",
+   "subjects": [
+    "그로테스크",
+    "니시고리 아쓰시"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "11/6 일본 개봉한 니시고리 아쓰시·CloverWorks 오리지널 극장 애니 〈그로테스크〉, 11/26 메가박스 단독 한국 개봉",
+    "why": "11/10 오전 한국 개봉 확정 보도 — 11/8 '한국 개봉이 나오면'으로 미뤄 둔 후속 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T11:01+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n니시고리 아쓰시 감독의 극장 애니메이션 〈그로테스크〉(GROTESQQQUE)가 11월 26일 메가박스에서 단독 개봉합니다.\n\n일본에서는 11월 6일 먼저 개봉했는데요, 외계인 소녀 엘리, 아침이 오지 않는 도시의 소녀들, 인류가 사라진 세계를 떠도는 뱀파이어 아야메가 주인공인 세 편을 묶은 옴니버스입니다. 니시고리 감독은 〈아이돌마스터〉와 〈달링 인 더 프랑키스〉를 연출했고, 제작은 CloverWorks 가 맡았습니다.\n\n음악에는 J-pop 아티스트 35팀이 참여했고, 오프닝은 METALVERSE 의 'Shoot Shoot Shoot'입니다.\n\n한국 개봉에 맞춰 메인 포스터와 예고편도 공개됐습니다.\n\n#암낫오타쿠 #그로테스크 #GROTESQQQUE #니시고리아쓰시 #클로버웍스 #메가박스\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794276102/edw6jp9szwjedato0zrt.jpg\n제목: 〈그로테스크〉,|11월 26일 한국 개봉\n부제: 니시고리 아쓰시 감독 · CloverWorks 극장 애니\n출처: THE FIRST TIMES\n",
+    "caption": "니시고리 아쓰시 감독의 극장 애니메이션 〈그로테스크〉(GROTESQQQUE)가 11월 26일 메가박스에서 단독 개봉합니다.\n\n일본에서는 11월 6일 먼저 개봉했는데요, 외계인 소녀 엘리, 아침이 오지 않는 도시의 소녀들, 인류가 사라진 세계를 떠도는 뱀파이어 아야메가 주인공인 세 편을 묶은 옴니버스입니다. 니시고리 감독은 〈아이돌마스터〉와 〈달링 인 더 프랑키스〉를 연출했고, 제작은 CloverWorks 가 맡았습니다.\n\n음악에는 J-pop 아티스트 35팀이 참여했고, 오프닝은 METALVERSE 의 'Shoot Shoot Shoot'입니다.\n\n한국 개봉에 맞춰 메인 포스터와 예고편도 공개됐습니다.\n\n#암낫오타쿠 #그로테스크 #GROTESQQQUE #니시고리아쓰시 #클로버웍스 #메가박스",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276102/edw6jp9szwjedato0zrt.jpg",
+      "credit": "THE FIRST TIMES",
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/10/20261021-ha-112800-1200x630.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276105/ssgnoz0yixotj5nwmale.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202611/16272588_2083410_3625_crop.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276102/edw6jp9szwjedato0zrt.jpg",
+      "credit": "THE FIRST TIMES",
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/5026/10/20261021-ha-112800-1200x630.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276105/ssgnoz0yixotj5nwmale.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202611/16272588_2083410_3625_crop.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "〈그로테스크〉,|11월 26일 한국 개봉",
+      "sub": "니시고리 아쓰시 감독 · CloverWorks 극장 애니"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "한국 기사들이 성우로 호시노 겐을 적었지만 일본 쪽 배역을 확인 못 해 캡션에서 뺐다",
+     "수입·배급사가 기사에 없음 — 메가박스 공식 공지로 자막/더빙 여부 확인"
+    ],
+    "research": [
+     {
+      "title": "톱스타뉴스 — 11/26 메가박스 단독 개봉, 메인 포스터·예고편 공개 (11/10 08:36)",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16272588"
+     },
+     {
+      "title": "싱글리스트 — 세 이야기 주인공, J-POP 35팀 음악",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=780333"
+     },
+     {
+      "title": "전북제일신문 — 개봉 확정·세 편 한국어 제목·오프닝 메탈버스",
+      "link": "https://www.jbjnews.com/news/articleView.html?idxno=330624"
+     },
+     {
+      "title": "THE FIRST TIMES — 일본 11/6 개봉, 세 편 제목, OP 'Shoot Shoot Shoot'",
+      "link": "https://www.thefirsttimes.jp/?p=903324"
+     },
+     {
+      "title": "애니메애니메 — 감독 니시고리 아쓰시(〈아이돌마스터〉〈달링 인 더 프랑키스〉), 아티스트 35명 참여",
+      "link": "https://animeanime.jp/article/2026/06/17/100130.html"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276135/t8sxqnyygzjvh8d5d8g7.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276135/vc79obmriwb63smxtaxn.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276135/t8sxqnyygzjvh8d5d8g7.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T11:02+09:00",
+     "v": {
+      "A": "48ee4ee1"
+     }
+    }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:cardcaptor-sealed-card-korea",
+    "account": "톱스타뉴스",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16272373",
+    "image": null,
+    "head": "'극장판 카드캡터 체리: 봉인된 카드', 26년만 국내 개봉…1주차 특전·수령 방법?",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T11:01+09:00",
+   "key": "6df64701",
+   "by": "claude",
+   "subjects": [
+    "카드캡터 체리"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "〈극장판 카드캡터 체리: 봉인된 카드〉, 일본 공개 26년 만에 처음으로 한국 극장에 — 11/11 CGV 단독",
+    "why": "내일 개봉 · 한국 첫 극장 상영이라는 한국 연결 · 1주 차 특전 정보가 실용적"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T11:01+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈극장판 카드캡터 체리: 봉인된 카드〉가 일본 개봉 26년 만에 처음으로 한국 극장에 걸립니다.\n\n2000년 일본에서 공개된 두 번째 극장판인데요, 초등학교 6학년이 된 체리가 홍콩으로 떠났던 샤오랑과 다시 만나고, 봉인했던 크로우 카드의 기운을 느끼며 새로운 사건을 맞는 이야기입니다. 원작은 CLAMP 의 만화, 감독은 아사카 모리오입니다.\n\n11월 11일 CGV에서 단독 개봉하고, 17일까지 CGV 50개 지점에서 관람객에게 선착순으로 '체리 멀티클리너'를 줍니다.\n\n#암낫오타쿠 #카드캡터체리 #카드캡터사쿠라 #CLAMP #봉인된카드 #CGV\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794276107/ksbllkr4qt0xc1fd70jv.jpg\n제목: 카드캡터 체리 극장판,|26년 만에 한국 극장\n부제: 〈봉인된 카드〉 11월 11일 CGV 단독 개봉\n출처: 톱스타뉴스\n",
+    "caption": "〈극장판 카드캡터 체리: 봉인된 카드〉가 일본 개봉 26년 만에 처음으로 한국 극장에 걸립니다.\n\n2000년 일본에서 공개된 두 번째 극장판인데요, 초등학교 6학년이 된 체리가 홍콩으로 떠났던 샤오랑과 다시 만나고, 봉인했던 크로우 카드의 기운을 느끼며 새로운 사건을 맞는 이야기입니다. 원작은 CLAMP 의 만화, 감독은 아사카 모리오입니다.\n\n11월 11일 CGV에서 단독 개봉하고, 17일까지 CGV 50개 지점에서 관람객에게 선착순으로 '체리 멀티클리너'를 줍니다.\n\n#암낫오타쿠 #카드캡터체리 #카드캡터사쿠라 #CLAMP #봉인된카드 #CGV",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276107/ksbllkr4qt0xc1fd70jv.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202611/16272373_2083073_239_crop.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276109/ojr3et9l97iqvwdycfv4.jpg",
+      "credit": "에스콰이어 코리아",
+      "from": "https://www.esquirekorea.co.kr/resources/online/thumbnail/hf/2026/11/04/1164001f-1e40-4263-94c5-df478adfaa09.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276107/ksbllkr4qt0xc1fd70jv.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202611/16272373_2083073_239_crop.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276109/ojr3et9l97iqvwdycfv4.jpg",
+      "credit": "에스콰이어 코리아",
+      "from": "https://www.esquirekorea.co.kr/resources/online/thumbnail/hf/2026/11/04/1164001f-1e40-4263-94c5-df478adfaa09.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "카드캡터 체리 극장판,|26년 만에 한국 극장",
+      "sub": "〈봉인된 카드〉 11월 11일 CGV 단독 개봉"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "러닝타임이 톱스타뉴스 93분·왓챠피디아 98분으로 엇갈려 뺐다 — 특전 50개 지점·17일까지는 톱스타뉴스 한 곳 기준이니 CGV 공지로 확인"
+    ],
+    "research": [
+     {
+      "title": "톱스타뉴스 — 11/11 CGV 단독, 1주 차 특전 '체리 멀티클리너' (11/9 22:23)",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16272373"
+     },
+     {
+      "title": "에스콰이어 코리아 — 11월 개봉 애니 7편, 일본 공개 26년 만에 국내 극장에서 처음",
+      "link": "https://www.esquirekorea.co.kr/article/1912552"
+     },
+     {
+      "title": "메트로신문 — CGV 11월 단독 개봉 라인업",
+      "link": "https://www.metroseoul.co.kr/article/20261105500030"
+     },
+     {
+      "title": "CJ뉴스룸 — CGV 11월 라인업 11/11 단독 개봉",
+      "link": "https://cjnews.cj.net/?p=81885"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276138/wf0ztsyuheozvq3aefj8.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276138/jcikmuwi8izji2snzl34.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276138/wf0ztsyuheozvq3aefj8.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T11:02+09:00",
+     "v": {
+      "A": "906b9864"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "내일(11/11) 개봉 · 일본 공개 26년 만의 첫 한국 극장 상영이라 한국 팬과 바로 이어진다 · 특전 정보까지 실용적",
+    "at": "2026-11-10T11:01+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:hitsujibungaku-ghost-yoruhate",
+    "account": "영화나탈리",
+    "url": "https://news.yahoo.co.jp/articles/09d6d4c353a712c70488790af9c1da35e9fddd2a",
+    "image": null,
+    "head": "夏目真悟の劇場アニメ「ghost／夜の果て」予告解禁、大塚剛央ら追加キャスト発表",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T11:01+09:00",
+   "key": "6450de0b",
+   "by": "claude",
+   "subjects": [
+    "양문학",
+    "ghost/夜の果て",
+    "나쓰메 신고"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "양문학이 극장 애니 한 편에 노래 여섯 곡 — 〈원펀맨〉 나쓰메 신고 감독 오리지널 장편 〈ghost/夜の果て〉 본예고, 삽입곡 'Sugar' 오늘 선공개",
+    "why": "11/10 오전 본예고·추가 캐스트 공개 + 같은 날 'Sugar' 선공개 · 밴드와 작품의 연결 · 배급사 공식 예고편으로 숏폼"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T11:01+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n양문학이 극장 애니메이션 〈ghost/夜の果て〉를 위해 노래 여섯 곡을 새로 썼습니다.\n\n〈원펀맨〉과 〈Sonny Boy〉의 나쓰메 신고 감독이 만드는 오리지널 장편인데요, 일할 필요가 사라진 가까운 미래, 열여덟 살이 되면 세상에 필요한 사람인지 '선별'되는 세계가 배경입니다. 열다섯에 선별을 마친 소녀 니케가 자기 자리를 찾아 헤매는 이야기로, 매드하우스가 만들고 호리타 마유와 다카하시 잇세이가 목소리를 맡았습니다.\n\n새로 공개된 본예고에는 주제가 'life'가 흐르고, 삽입곡 'Sugar'는 10일 음원으로 먼저 나왔습니다.\n\n일본 개봉은 2027년 2월 11일이고, 두 곡을 담은 싱글 'life / Sugar'는 하루 앞선 2월 10일 발매됩니다.\n\n#암낫오타쿠 #양문학 #羊文学 #나쓰메신고 #매드하우스\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794276112/qzntvuwczhudkf4izeom.jpg\n제목: 양문학이 극장 애니에|노래 여섯 곡을 썼다\n부제: 〈ghost/夜の果て〉 본예고 공개 · 'Sugar' 선공개\n출처: THE HOLLYWOOD REPORTER JAPAN\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794276124/plot_studio/fseflupqn43bw0cuc9ym.mp4\n소제목: \n본문: \n출처: バンダイナムコフィルムワークス チャンネル\n",
+    "caption": "양문학이 극장 애니메이션 〈ghost/夜の果て〉를 위해 노래 여섯 곡을 새로 썼습니다.\n\n〈원펀맨〉과 〈Sonny Boy〉의 나쓰메 신고 감독이 만드는 오리지널 장편인데요, 일할 필요가 사라진 가까운 미래, 열여덟 살이 되면 세상에 필요한 사람인지 '선별'되는 세계가 배경입니다. 열다섯에 선별을 마친 소녀 니케가 자기 자리를 찾아 헤매는 이야기로, 매드하우스가 만들고 호리타 마유와 다카하시 잇세이가 목소리를 맡았습니다.\n\n새로 공개된 본예고에는 주제가 'life'가 흐르고, 삽입곡 'Sugar'는 10일 음원으로 먼저 나왔습니다.\n\n일본 개봉은 2027년 2월 11일이고, 두 곡을 담은 싱글 'life / Sugar'는 하루 앞선 2월 10일 발매됩니다.\n\n#암낫오타쿠 #양문학 #羊文学 #나쓰메신고 #매드하우스",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276112/qzntvuwczhudkf4izeom.jpg",
+      "credit": "THE HOLLYWOOD REPORTER JAPAN",
+      "from": "https://hollywoodreporter.jp/wp-content/uploads/2026/07/ghost-1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276115/ugqrcoaa81nxbipdbyia.jpg",
+      "credit": "리얼사운드",
+      "from": "https://realsound.jp/wp-content/uploads/2026/08/20260805-ghost-10.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276112/qzntvuwczhudkf4izeom.jpg",
+      "credit": "THE HOLLYWOOD REPORTER JAPAN",
+      "from": "https://hollywoodreporter.jp/wp-content/uploads/2026/07/ghost-1.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276115/ugqrcoaa81nxbipdbyia.jpg",
+      "credit": "리얼사운드",
+      "from": "https://realsound.jp/wp-content/uploads/2026/08/20260805-ghost-10.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "양문학이 극장 애니에|노래 여섯 곡을 썼다",
+      "sub": "〈ghost/夜の果て〉 본예고 공개 · 'Sugar' 선공개"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] '나쓰메 신고 첫 오리지널 장편'은 ANN 한 곳에만 있어(소니뮤직·나탈리·공식 예고 설명엔 없음) 캡션·후킹·angle 에서 '처음/첫'을 뺐다. 예고 0:00-0:30 에 'life'가 실제로 들리는지는 자막이 없어 못 봤다",
+     "클립 위험: 낮음 — バンダイナムコフィルムワークス チャンネル (배급사 공식). 본예고(87초)에 자막이 없어 구간을 못 짚었다 — 'life'가 크게 들리고 니케가 '間違っているのは私じゃない'라고 말하는 장면이 들어가게 30초 안으로 다시 잡기",
+     "羊文学 한국어 표기 '양문학'(국내 통용) — 공식 한국어 표기가 따로 있는지 확인"
+    ],
+    "research": [
+     {
+      "title": "영화나탈리(야후 재배포) — 본예고 공개, 'life' 흐름, 추가 캐스트 5명, 줄거리 (11/10 07:00)",
+      "link": "https://news.yahoo.co.jp/articles/09d6d4c353a712c70488790af9c1da35e9fddd2a"
+     },
+     {
+      "title": "8and — 양문학 'life / Sugar' 2027/2/10 CD, 'Sugar' 11/10 선행 배신, 전 6곡 신곡",
+      "link": "https://8and.jp/2026/11/10/%E7%BE%8A%E6%96%87%E5%AD%A6%E3%80%81%E6%98%A0%E7%94%BB%E3%80%8Cghost%EF%BC%8F%E5%A4%9C%E3%81%AE%E6%9E%9C%E3%81%A6%E3%80%8D%E4%B8%BB%E9%A1%8C%E6%AD%8C%EF%BC%86%E6%8C%BF%E5%85%A5%E6%AD%8C%E3%82%922027"
+     },
+     {
+      "title": "덴게키 온라인 — 본예고·추가 성우 5명",
+      "link": "https://dengekionline.com/article/202611/93560"
+     },
+     {
+      "title": "사키가케(ORICON) — 2027년 2월 개봉, 주제가·삽입가 양문학, 음악 기미시마 오조라 (7/1)",
+      "link": "https://www.sakigake.jp/news/article/20260701OR0210/"
+     },
+     {
+      "title": "소니뮤직 양문학 페이지 — 나쓰메 신고 감독 이력(〈원펀맨〉〈ACCA13구 감찰과〉〈Sonny Boy〉)",
+      "link": "https://www.sonymusic.co.jp/artist/hitsujibungaku/info/584698"
+     },
+     {
+      "title": "Anime News Network — 본예고·주제가 'life'·삽입곡 'Sugar'",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-09/ghost-end-of-night-anime-film-trailer-confirms-more-cast-and-staff-theme-song/.243662"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276146/buwh6lvsnntvlvlvvmbr.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276149/jj7x0s6awppes0dcybc8.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276146/naezo46oqxljs3xwgiln.jpg"
+     ],
+     "covers": {
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276146/buwh6lvsnntvlvlvvmbr.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T11:02+09:00",
      "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218258/plot_studio/yrcjtrl3o5derdgciqwu.mp4"
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794276147/plot_studio/bsblfvfavz19dgjkzzob.mp4"
      },
      "v": {
-      "A": "1f987ec2"
+      "A": "9feed526"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=AewVEStMRKk\n구간: 0:00-0:30\n곡: 다시 꺼낸 로봇 애니\n아티스트: 〈공각기동대〉 감독이\n피처링:\n후킹: \n출처: サンライズ SUNRISE Official\n자막: 자동",
-    "caption": "오시이 마모루 감독의 〈장갑기병 보톰즈 회색의 마녀〉(装甲騎兵ボトムズ 灰色の魔女) 본예고입니다.\n\n선라이즈의 1980년대 로봇 애니를 15년 만에 다시 꺼낸 신작인데요, 8일 완성 피로 상영회에서 오시이 감독은 팬으로서 언젠가 할 기회가 꼭 올 거라 생각했다며 \"하고 싶은 걸 채워 넣었을 뿐\"이라고 했습니다. 주인공 애시는 사와시로 미유키가 맡았습니다.\n\n11월 20일 일본 개봉, 두 편 가운데 첫 편. 영상은 선라이즈 공식 채널입니다.\n\n#암낫오타쿠 #보톰즈 #오시이마모루 #사와시로미유키 #애니PV",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=U-M6dQImHrI\n구간: 0:00-0:30\n곡: 극장 애니 본예고\n아티스트: 양문학 노래가 흐르는\n피처링:\n후킹: \n출처: バンダイナムコフィルムワークス チャンネル\n자막: 자동",
+    "caption": "양문학이 노래 여섯 곡을 새로 쓴 극장 애니메이션 〈ghost/夜の果て〉의 본예고입니다.\n\n〈원펀맨〉과 〈Sonny Boy〉의 나쓰메 신고 감독이 만드는 오리지널 장편인데요, 열여덟 살이 되면 세상에 필요한 사람인지 '선별'되는 가까운 미래에서 소녀 니케가 자기 자리를 찾는 이야기입니다. 예고에 흐르는 곡은 주제가 'life'이고, 삽입곡 'Sugar'는 10일 먼저 공개됐습니다.\n\n일본 개봉은 2027년 2월 11일입니다.\n\n#암낫오타쿠 #양문학 #羊文学 #나쓰메신고 #매드하우스",
     "hooks": {
-     "A": "〈공각기동대〉 감독이 / 다시 꺼낸 로봇 애니",
-     "B": "오시이 마모루가 만든 / 15년 만의 〈보톰즈〉",
-     "C": "팬이었던 감독이 / 직접 만든 〈보톰즈〉"
+     "A": "양문학 노래가 흐르는 / 극장 애니 본예고",
+     "B": "열여덟에 쓸모를 / 선별당하는 세계",
+     "C": "〈원펀맨〉 감독이 만든 / 오리지널 장편 애니"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=AewVEStMRKk",
-     "credit": "サンライズ SUNRISE Official",
+     "url": "https://www.youtube.com/watch?v=U-M6dQImHrI",
+     "credit": "バンダイナムコフィルムワークス チャンネル",
      "range": [
       0.0,
       30.0
@@ -423,223 +471,57 @@
     },
     "issues": [],
     "confirm": [
-     "클립 위험: 낮음 — SUNRISE Official · Bandai Namco Filmworks Channel (공식 본예고 30초 ver.)",
-     "한국 개봉 여부·한국 정식 제목은 확인 못 함 — 캡션에 넣지 않음"
+     "[검증] '나쓰메 신고 첫 오리지널 장편'은 ANN 한 곳에만 있어(소니뮤직·나탈리·공식 예고 설명엔 없음) 캡션·후킹·angle 에서 '처음/첫'을 뺐다. 예고 0:00-0:30 에 'life'가 실제로 들리는지는 자막이 없어 못 봤다",
+     "클립 위험: 낮음 — バンダイナムコフィルムワークス チャンネル (배급사 공식). 본예고(87초)에 자막이 없어 구간을 못 짚었다 — 'life'가 크게 들리고 니케가 '間違っているのは私じゃない'라고 말하는 장면이 들어가게 30초 안으로 다시 잡기",
+     "羊文学 한국어 표기 '양문학'(국내 통용) — 공식 한국어 표기가 따로 있는지 확인"
     ],
     "research": [
      {
-      "title": "MANTANWEB — 15년 만의 신작, 여성 주인공으로 한 이유 '하고 싶은 걸 채워 넣었을 뿐' (11/8)",
-      "link": "https://mantan-web.jp/article/20261108dog00m200010000a.html"
+      "title": "영화나탈리(야후 재배포) — 본예고 공개, 'life' 흐름, 추가 캐스트 5명, 줄거리 (11/10 07:00)",
+      "link": "https://news.yahoo.co.jp/articles/09d6d4c353a712c70488790af9c1da35e9fddd2a"
      },
      {
-      "title": "MOVIE WALKER PRESS — 완성 피로 상영회, '언젠가 할 기회는 꼭 있다고 생각했다', 사와시로 미유키 발언",
-      "link": "https://press.moviewalker.jp/news/article/1455420/"
+      "title": "8and — 양문학 'life / Sugar' 2027/2/10 CD, 'Sugar' 11/10 선행 배신, 전 6곡 신곡",
+      "link": "https://8and.jp/2026/11/10/%E7%BE%8A%E6%96%87%E5%AD%A6%E3%80%81%E6%98%A0%E7%94%BB%E3%80%8Cghost%EF%BC%8F%E5%A4%9C%E3%81%AE%E6%9E%9C%E3%81%A6%E3%80%8D%E4%B8%BB%E9%A1%8C%E6%AD%8C%EF%BC%86%E6%8C%BF%E5%85%A5%E6%AD%8C%E3%82%922027"
      },
      {
-      "title": "아니메아니메 — 완성 피로 상영회 리포트 (11/8 TOHO시네마즈 롯폰기힐스, 등단자 5명)",
-      "link": "https://animeanime.jp/article/2026/11/09/104631.html"
+      "title": "덴게키 온라인 — 본예고·추가 성우 5명",
+      "link": "https://dengekionline.com/article/202611/93560"
      },
      {
-      "title": "코믹나탈리 — 이치팬으로서 '하고 싶은 걸 채워 넣었을 뿐'",
-      "link": "https://natalie.mu/comic/news/697102"
+      "title": "사키가케(ORICON) — 2027년 2월 개봉, 주제가·삽입가 양문학, 음악 기미시마 오조라 (7/1)",
+      "link": "https://www.sakigake.jp/news/article/20260701OR0210/"
      },
      {
-      "title": "선라이즈 공식 — 본예고 30초 ver.",
-      "link": "https://www.youtube.com/watch?v=AewVEStMRKk"
+      "title": "소니뮤직 양문학 페이지 — 나쓰메 신고 감독 이력(〈원펀맨〉〈ACCA13구 감찰과〉〈Sonny Boy〉)",
+      "link": "https://www.sonymusic.co.jp/artist/hitsujibungaku/info/584698"
+     },
+     {
+      "title": "Anime News Network — 본예고·주제가 'life'·삽입곡 'Sugar'",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-09/ghost-end-of-night-anime-film-trailer-confirms-more-cast-and-staff-theme-song/.243662"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/AewVEStMRKk/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/U-M6dQImHrI/maxresdefault.jpg",
     "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218263/z1gy3msmsrdn1sq6irdl.jpg",
-     "key": "AewVEStMRKk@0.0"
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276152/hikxlseb2ly7ccvmwcqn.jpg",
+     "key": "U-M6dQImHrI@0.0"
     },
     "px": {
-     "vid": "AewVEStMRKk",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218284/plot_studio/hvlqe2ihu27ujuxmtqg6.mp4",
+     "vid": "U-M6dQImHrI",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794276200/plot_studio/ccukei6qezpwosd59zv4.mp4",
      "off": 0.0,
-     "end": 30.0,
-     "full": 30.0
+     "end": 75.0,
+     "full": 87.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-09T18:58+09:00"
-    }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "어제 완성 피로 상영회 · 〈공각기동대〉 감독의 말이 있는 사람 소식 · 공식 예고편 숏폼까지",
-    "at": "2026-11-09T18:56+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:imase-beautiful-life-mv",
-    "account": "음악나탈리",
-    "url": "https://news.yahoo.co.jp/articles/ff5536136f87351c09f04f3c670b373522f90564",
-    "image": null,
-    "head": "imaseが誕生日に新曲「It's a Beautiful Life」MVを公開、直前にはタイトルが長すぎる生配信も",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-09T18:56+09:00",
-   "key": "d469843f",
-   "by": "claude",
-   "subjects": [
-    "imase"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "오늘의 노래 — 이마세가 런던에서 찍은 'It's a Beautiful Life' MV를 생일 밤에 프리미어 공개한다",
-    "why": "11/9 21:00 유튜브 프리미어 (공식 채널에 영상 자리 있음) · 음악나탈리·리얼사운드·Billboard JAPAN · 공식 티저로 숏폼"
-   },
-   "added": "claude",
-   "added_at": "2026-11-09T18:56+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n이마세(imase)가 생일 밤에 'It's a Beautiful Life' 뮤직비디오를 공개합니다.\n\n10월 2일 낸 EP [はてな]에 실린 곡인데요, 뮤직비디오는 전부 영국 런던에서 찍었습니다. 현지에서 보낸 일상과 공원에서 축구를 하는 모습이 담겼습니다.\n\n공개 직전인 저녁 7시 30분부터는 유튜브에서 생일 기념 방송을 열고, 방송이 끝나면 그대로 뮤직비디오 프리미어로 넘어갑니다.\n\n공개는 11월 9일 밤 9시(일본 기준), imase 공식 유튜브 채널.\n\n#암낫오타쿠 #이마세 #imase #ItsaBeautifulLife #はてな #제이팝\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794218236/riygln5axyxo5yjgh8ll.jpg\n제목: 이마세, 런던에서 찍은|MV 생일 밤에 공개\n부제: 'It's a Beautiful Life' 11월 9일 밤 9시\n출처: 리얼사운드\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794218244/plot_studio/gel2hhqwjcz3tk1cb3f7.mp4\n소제목: \n본문: \n출처: imase\n",
-    "caption": "이마세(imase)가 생일 밤에 'It's a Beautiful Life' 뮤직비디오를 공개합니다.\n\n10월 2일 낸 EP [はてな]에 실린 곡인데요, 뮤직비디오는 전부 영국 런던에서 찍었습니다. 현지에서 보낸 일상과 공원에서 축구를 하는 모습이 담겼습니다.\n\n공개 직전인 저녁 7시 30분부터는 유튜브에서 생일 기념 방송을 열고, 방송이 끝나면 그대로 뮤직비디오 프리미어로 넘어갑니다.\n\n공개는 11월 9일 밤 9시(일본 기준), imase 공식 유튜브 채널.\n\n#암낫오타쿠 #이마세 #imase #ItsaBeautifulLife #はてな #제이팝",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218236/riygln5axyxo5yjgh8ll.jpg",
-      "credit": "리얼사운드",
-      "from": "https://realsound.jp/wp-content/uploads/2026/11/20261106-imase-99.jpeg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218236/riygln5axyxo5yjgh8ll.jpg",
-      "credit": "리얼사운드",
-      "from": "https://realsound.jp/wp-content/uploads/2026/11/20261106-imase-99.jpeg"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "이마세, 런던에서 찍은|MV 생일 밤에 공개",
-      "sub": "'It's a Beautiful Life' 11월 9일 밤 9시"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — imase 공식 채널 (티저 18초 전체) · MV 본편은 21:00 공개라 아직 못 봄 — 공개 뒤 본편 구간으로 바꿔도 됨",
-     "발행은 21:00 MV 공개 뒤로 — 그 전이면 캡션 '공개합니다'가 맞음"
-    ],
-    "research": [
-     {
-      "title": "음악나탈리(야후 재배포) — 생일 11/9 21:00 MV 공개, 런던 촬영, 19:30 생일 방송",
-      "link": "https://news.yahoo.co.jp/articles/ff5536136f87351c09f04f3c670b373522f90564"
-     },
-     {
-      "title": "리얼사운드 — 런던 촬영 MV 생일 당일 공개, EP [はてな] 10/2 배포",
-      "link": "https://realsound.jp/2026/11/post-2577404.html"
-     },
-     {
-      "title": "Billboard JAPAN — 런던에서 전편 촬영한 MV 공개 결정 (11/7)",
-      "link": "https://www.billboard-japan.com/d_news/detail/167239"
-     },
-     {
-      "title": "imase 공식 유튜브 — It's a Beautiful Life (Teaser)",
-      "link": "https://www.youtube.com/watch?v=3_JxfB3TP_0"
-     },
-     {
-      "title": "imase 공식 유튜브 — It's a Beautiful Life (Music Video)",
-      "link": "https://www.youtube.com/watch?v=_YGD17Kwq7A"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218270/k7wtqhhmor7et9aqffdd.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218273/ujk0swx3bgzbodnp7bhh.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218270/ahivjzxivrde29qtszuw.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218270/k7wtqhhmor7et9aqffdd.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-09T18:57+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218271/plot_studio/yes0kgzgst9fmsozfql3.mp4"
-     },
-     "v": {
-      "A": "25baeb00"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=3_JxfB3TP_0\n구간: 0:00-0:18\n곡: 새 뮤직비디오 첫 장면\n아티스트: 이마세가 런던에서 찍은\n피처링:\n후킹: \n출처: imase",
-    "caption": "이마세(imase) 'It's a Beautiful Life' 뮤직비디오 티저입니다.\n\n10월 EP [はてな]에 실린 곡인데요, 뮤직비디오는 전부 런던에서 찍었고 생일인 11월 9일 밤 9시(일본 기준) 유튜브에서 공개됩니다.\n\n영상은 imase 공식 채널입니다.\n\n#암낫오타쿠 #이마세 #imase #ItsaBeautifulLife #오늘의노래",
-    "hooks": {
-     "A": "이마세가 런던에서 찍은 / 새 뮤직비디오 첫 장면",
-     "B": "생일 밤에 공개하는 / 이마세의 새 MV",
-     "C": "런던 공원에서 공 차는 / 이마세의 새 MV"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=3_JxfB3TP_0",
-     "credit": "imase",
-     "range": [
-      0.0,
-      18.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — imase 공식 채널 (티저 18초 전체) · MV 본편은 21:00 공개라 아직 못 봄 — 공개 뒤 본편 구간으로 바꿔도 됨",
-     "발행은 21:00 MV 공개 뒤로 — 그 전이면 캡션 '공개합니다'가 맞음"
-    ],
-    "research": [
-     {
-      "title": "음악나탈리(야후 재배포) — 생일 11/9 21:00 MV 공개, 런던 촬영, 19:30 생일 방송",
-      "link": "https://news.yahoo.co.jp/articles/ff5536136f87351c09f04f3c670b373522f90564"
-     },
-     {
-      "title": "리얼사운드 — 런던 촬영 MV 생일 당일 공개, EP [はてな] 10/2 배포",
-      "link": "https://realsound.jp/2026/11/post-2577404.html"
-     },
-     {
-      "title": "Billboard JAPAN — 런던에서 전편 촬영한 MV 공개 결정 (11/7)",
-      "link": "https://www.billboard-japan.com/d_news/detail/167239"
-     },
-     {
-      "title": "imase 공식 유튜브 — It's a Beautiful Life (Teaser)",
-      "link": "https://www.youtube.com/watch?v=3_JxfB3TP_0"
-     },
-     {
-      "title": "imase 공식 유튜브 — It's a Beautiful Life (Music Video)",
-      "link": "https://www.youtube.com/watch?v=_YGD17Kwq7A"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/3_JxfB3TP_0/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794218276/fefdydyc7u2hhcdhxyza.jpg",
-     "key": "3_JxfB3TP_0@0.0"
-    },
-    "px": {
-     "vid": "3_JxfB3TP_0",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794218291/plot_studio/gssnowdoiklcmyhr5bzj.mp4",
-     "off": 0.0,
-     "end": 18.0,
-     "full": 18.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-09T18:58+09:00"
+     "at": "2026-11-10T11:03+09:00"
     }
    },
    "pick": {
     "rank": 3,
-    "why": "오늘 밤 9시 공개되는 MV · 공식 티저로 바로 숏폼 · 오늘의 노래 칸",
-    "at": "2026-11-09T18:56+09:00"
+    "why": "오늘 아침 본예고·'Sugar' 선공개 · 배급사 공식 예고편으로 숏폼까지 · 〈원펀맨〉 감독의 오리지널 장편",
+    "at": "2026-11-10T11:01+09:00"
    },
    "corner_name": "소식"
   }
@@ -647,7 +529,7 @@
  "skipped": [],
  "corners": {
   "week": "11/09~11/15",
-  "days_left": 7,
+  "days_left": 6,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -684,7 +566,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -705,7 +587,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -777,7 +659,7 @@
     "weekly": 1,
     "done": 0,
     "left": 1,
-    "need_today": 1,
+    "need_today": 0,
     "day": 0,
     "next_no": 1,
     "drafts": 0,
@@ -816,14 +698,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-09T18:58+09:00"
+  "at": "2026-11-10T11:03+09:00"
  },
  "queue": {
-  "next": "2026-11-09T19:00+09:00",
+  "next": "2026-11-10T11:05+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
