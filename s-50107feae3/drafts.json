@@ -2636,12 +2636,166 @@
      "full": 1916.0
     },
     "prep": {
-     "status": "queued",
-     "at": "2026-11-10T20:57+09:00"
+     "status": "making",
+     "at": "2026-11-10T21:04+09:00"
     }
    },
    "corner_name": "그 말",
    "corner_no": 11
+  },
+  {
+   "source": {
+    "id": "claude:ord-5d4e11e8",
+    "account": "@규효 공유 · @hiphopplaya",
+    "url": "https://www.instagram.com/reel/DfjvqvTSq1a/?obrf=ZnNra3JoMXdxZWFl",
+    "image": null,
+    "head": "[오보에]의 판다곰과 양홍원이 낸 싱글 [오보] — 소개란엔 '[오보에2]'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T21:03+09:00",
+   "key": "44e2566f",
+   "by": "claude",
+   "subjects": [
+    "양홍원",
+    "Panda Gomm"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "양홍원·판다곰 싱글 [오보] 발매 — 멜론 소개란의 '[오보에2]' 표기로 2021년 [오보에]와 잇는다",
+    "why": "규효 맡김 · 오늘(11/10) 발매 확인 · [오보에] 타이틀곡을 함께 만든 판다곰이 총괄 프로듀서"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T21:03+09:00",
+   "corner": "newalbums",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n양홍원(@yanghongwon)과 판다곰이 함께 만든 싱글 [오보]가 오늘 나왔습니다.\n\n[오보]라는 이름은 2021년 양홍원의 정규 2집 [오보에]를 떠올리게 하는데요, 멜론의 앨범 소개란 맨 위에도 '[오보에2]'라는 표기가 붙어 있습니다. 그때 타이틀곡 '사계'의 작곡·편곡에 이름을 올렸던 판다곰이 이번에는 세 곡 모두의 총괄 프로듀서를 맡았습니다.\n\n판다곰은 양홍원이 차린 레이블 HW MUSIC의 식구로, 이번 싱글도 HW MUSIC에서 나왔습니다. [오보에]를 함께 만든 두 사람이 같은 레이블에서 그 이름을 다시 꺼낸 셈입니다.\n\n수록곡은 '화', 'MOONWALK', '목' 세 곡이며 가사는 모두 양홍원이 썼습니다.\n\n#PLOT #양홍원 #판다곰 #오보 #오보에 #HWMUSIC\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794312188/ply0i8zs1euitto0wzjk.jpg\n제목: [오보에]의 판다곰과|양홍원이 낸 [오보]\n부제: Panda Gomm, 양홍원 싱글 [오보] · 11월 10일 발매\n출처: 멜론\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794312206/plot_studio/hlvcwaj47r4bnnzio62h.mp4\n소제목: \n본문: \n출처:\n",
+    "caption": "양홍원(@yanghongwon)과 판다곰이 함께 만든 싱글 [오보]가 오늘 나왔습니다.\n\n[오보]라는 이름은 2021년 양홍원의 정규 2집 [오보에]를 떠올리게 하는데요, 멜론의 앨범 소개란 맨 위에도 '[오보에2]'라는 표기가 붙어 있습니다. 그때 타이틀곡 '사계'의 작곡·편곡에 이름을 올렸던 판다곰이 이번에는 세 곡 모두의 총괄 프로듀서를 맡았습니다.\n\n판다곰은 양홍원이 차린 레이블 HW MUSIC의 식구로, 이번 싱글도 HW MUSIC에서 나왔습니다. [오보에]를 함께 만든 두 사람이 같은 레이블에서 그 이름을 다시 꺼낸 셈입니다.\n\n수록곡은 '화', 'MOONWALK', '목' 세 곡이며 가사는 모두 양홍원이 썼습니다.\n\n#PLOT #양홍원 #판다곰 #오보 #오보에 #HWMUSIC",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312188/ply0i8zs1euitto0wzjk.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312190/muqofymanrlzi9dephio.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312194/ruh4k0kgjwdqba77bwab.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312197/e5xgiygkmdlavtx5hwyo.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312188/ply0i8zs1euitto0wzjk.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312190/muqofymanrlzi9dephio.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312194/ruh4k0kgjwdqba77bwab.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312197/e5xgiygkmdlavtx5hwyo.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "[오보에]의 판다곰과|양홍원이 낸 [오보]",
+      "sub": "Panda Gomm, 양홍원 싱글 [오보] · 11월 10일 발매"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "양홍원·판다곰 [오보],|소개란엔 '오보에2'",
+      "sub": "'화' · 'MOONWALK' · '목'"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "양홍원과 판다곰이|오늘 낸 싱글 [오보]",
+      "sub": "HW MUSIC · 세 곡"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼은 비웠습니다 — 오늘 나온 공식 영상은 YouTube Topic 음원(정지 커버)뿐이고 MV·라이브가 없습니다. hiphopplaya 릴스 원본 AP Alchemy 영상도 못 찾았습니다",
+     "표지 첫 사진이 [오보] 커버(멜론에서 받음)로 들어갔는지, 양홍원 사진이 혼자 나온 컷인지 봐 주세요 (웨딩 화보는 일부러 뺐습니다)"
+    ],
+    "research": [
+     {
+      "title": "멜론 — Panda Gomm, 양홍원 [오보] (2026.11.10)",
+      "link": "https://www.melon.com/album/detail.htm?albumId=15134411"
+     },
+     {
+      "title": "벅스 — [오보] 앨범 정보·크레딧",
+      "link": "https://music.bugs.co.kr/album/4157950"
+     },
+     {
+      "title": "YouTube Panda Gomm - Topic 'MOONWALK' (YG PLUS 제공 크레딧)",
+      "link": "https://www.youtube.com/watch?v=RgZvGEeXI10"
+     },
+     {
+      "title": "YouTube YANGHONGWON - Topic '사계' (2021 크레딧)",
+      "link": "https://www.youtube.com/watch?v=AzS4LokpHmg"
+     },
+     {
+      "title": "벅스 — 양홍원 [오보에] (2021.06.19)",
+      "link": "https://music.bugs.co.kr/album/4049560"
+     },
+     {
+      "title": "나무위키 — 오보에(앨범)",
+      "link": "https://namu.wiki/w/%EC%98%A4%EB%B3%B4%EC%97%90(%EC%95%A8%EB%B2%94)"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312212/ql2jguwolztolo8ap1uf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312215/xqyzr7j5u2txgdiisald.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312212/cbmlmih4oitwmbrf4eqt.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312217/h7p63fzj9p2cy5xq6i2l.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312217/my1dnvajp2svpna6sxdl.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794312212/ql2jguwolztolo8ap1uf.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T21:03+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794312213/plot_studio/db3fhfaff4dyht9xouki.mp4"
+     },
+     "v": {
+      "A": "00718745",
+      "B": "c9c7d645",
+      "C": "1226c5d1"
+     }
+    }
+   },
+   "corner_name": "이번 주 나온 앨범",
+   "corner_no": 4
   }
  ],
  "skipped": [],
@@ -2792,7 +2946,7 @@
     "need_today": 0,
     "day": 4,
     "next_no": 4,
-    "drafts": 0,
+    "drafts": 1,
     "why": "금요일 고정 — 이번 주 신보를 순위 없이 한 장에 한 장씩, 들어 볼 한 곡과 함께"
    },
    {
@@ -2820,7 +2974,7 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T20:57+09:00"
+  "at": "2026-11-10T21:04+09:00"
  },
  "queue": {
   "next": "2026-11-10T21:50+09:00",
