@@ -3071,7 +3071,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=RgZvGEeXI10\n구간: 0:58-1:28\n곡: 양홍원의 'MOONWALK'\n아티스트: 판다곰과 다시 만난\n피처링:\n후킹: \n출처: Panda Gomm - Topic\n음원: Panda Gomm, 양홍원 - MOONWALK\n가사: 자동",
+    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=RgZvGEeXI10\n구간: 0:58-1:28\n곡: 양홍원의 'MOONWALK'\n아티스트: 판다곰과 다시 만난\n피처링:\n후킹: \n출처: Panda Gomm - Topic\n음원: Panda Gomm, 양홍원 - MOONWALK\n가사: 자동\n자막: 받음 st:1794316305906-d85315a2",
     "caption": "양홍원(@yanghongwon)과 판다곰(Panda Gomm)의 싱글 [오보]가 11월 10일 나왔습니다.\n\n'MOONWALK'는 양홍원이 판다곰 버전과 방자(BANGJA) 버전으로 내겠다고 말했지만 방자 버전만 나왔던 곡으로 알려져 있는데요, 미발매로 남아 있던 그 버전이 정식으로 공개됐습니다.\n\n판다곰은 2021년 정규 2집 [오보에] 전곡을 작곡한 프로듀서로, [오보]에서도 총괄 프로듀서를 맡았습니다. '화', 'MOONWALK', '목' 세 곡이 실렸습니다.\n\n#PLOT #양홍원 #판다곰 #오보 #MOONWALK",
     "hooks": {
      "A": "판다곰과 다시 만난 / 양홍원의 'MOONWALK'",
@@ -3135,8 +3135,59 @@
      "full": 252.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-10T22:10+09:00"
+     "status": "ready",
+     "rid": "st:1794316305906-d85315a2",
+     "n": 9,
+     "note": "🎤 가사 28줄 (가사 영상 「알파」에서 · 소리 맞춤 0.90)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 1.5,
+       "text": "약이 내 친구 이기네"
+      },
+      {
+       "start": 1.5,
+       "end": 4.5,
+       "text": "널 미행하려 해 moonwalk"
+      },
+      {
+       "start": 4.5,
+       "end": 7.5,
+       "text": "흔적을 남겨 내 피부에"
+      },
+      {
+       "start": 7.5,
+       "end": 9.75,
+       "text": "마치 그 가루처럼"
+      },
+      {
+       "start": 9.75,
+       "end": 12.25,
+       "text": "그림자 혼자 춤"
+      },
+      {
+       "start": 12.25,
+       "end": 15.0,
+       "text": "자국"
+      },
+      {
+       "start": 15.0,
+       "end": 20.25,
+       "text": "Clouds hide the moon oh Dude,"
+      },
+      {
+       "start": 20.25,
+       "end": 23.75,
+       "text": "안 사라져 너의 우울"
+      },
+      {
+       "start": 23.75,
+       "end": 30.0,
+       "text": "그 문처럼 다시 부셔 너의 기억을"
+      }
+     ],
+     "at": "2026-11-10T22:11+09:00"
     }
    },
    "corner_name": "소식"
@@ -3318,10 +3369,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T22:10+09:00"
+  "at": "2026-11-10T22:11+09:00"
  },
  "queue": {
-  "next": "2026-11-10T22:12+09:00",
+  "next": "2026-11-10T22:13+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-10T20:50+09:00"
