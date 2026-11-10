@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10 19:06 KST",
+ "generated_at": "2026-11-10 22:04 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1685,11 +1685,21 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-10 15:05 KST"
+  "daily": "2026-11-10 19:06 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-10T19:00:15+09:00",
+  "fetched_at": "2026-11-10T22:04:40+09:00",
   "posts": [
+   {
+    "t": "2026-11-10T20:50+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "pH-1(@ph1boyyy)이 유튜브 채널을 엽니다."
+   },
+   {
+    "t": "2026-11-10T20:49+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "존박(@johnparkgram)과 곽진언의 '맥도날드 주문 랩'이 남의 "
+   },
    {
     "t": "2026-11-10T15:59+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2374,24 +2384,14 @@
     "t": "2026-10-21T15:01+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "저스틴 비버의 브랜드 SKYLRK가 서울에 첫 팝업을 엽니다."
-   },
-   {
-    "t": "2026-10-20T20:41+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@rescene"
-   },
-   {
-    "t": "2026-10-20T20:03+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "인디고뮤직(@indigomusic_official)이라는 이름은"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 363,
-  "posted": 127,
-  "posts": 152,
+  "drafts": 365,
+  "posted": 129,
+  "posts": 154,
   "rate": 0.35,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
@@ -2412,12 +2412,12 @@
     "mult": 1.43
    },
    "정보": {
-    "drafts": 244,
-    "posted": 107,
+    "drafts": 245,
+    "posted": 109,
     "mult": 1.0
    },
    "클립": {
-    "drafts": 52,
+    "drafts": 53,
     "posted": 7,
     "mult": 1.05
    },
@@ -2435,11 +2435,11 @@
    },
    "news": {
     "drafts": 181,
-    "posted": 82,
+    "posted": 84,
     "mult": 1.05
    },
    "mal": {
-    "drafts": 50,
+    "drafts": 51,
     "posted": 7,
     "mult": 0.89
    },
@@ -2464,7 +2464,7 @@
     "mult": null
    },
    "newalbums": {
-    "drafts": 7,
+    "drafts": 8,
     "posted": 3,
     "mult": 1.25
    },
@@ -2496,32 +2496,6 @@
   },
   "repack": [],
   "recent": [
-   {
-    "day": "2026-11-06",
-    "lane": "정보",
-    "who": "베스티",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "c2e7fef4",
-    "posted": "DfZUoNXlEnz",
-    "head": "베스티(@bestie_ofcl)의 13년 전 노래가 대만 차트 맨 위에 올랐습니다.",
-    "url": "https://www.instagram.com/p/DfZUoNXlEnz/",
-    "mult": 1.02
-   },
-   {
-    "day": "2026-11-06",
-    "lane": "정보",
-    "who": "아일릿 원희",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "4c8e2b90",
-    "posted": "DfZmTPsmWis",
-    "head": "아일릿(@illit_official)이 미니 5집 [BREAK EVEN]으로 자체 최고 초",
-    "url": "https://www.instagram.com/p/DfZmTPsmWis/",
-    "mult": 1.22
-   },
    {
     "day": "2026-11-07",
     "lane": "정보",
@@ -2599,11 +2573,37 @@
     "head": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.",
     "url": "https://www.instagram.com/p/DfjOpp-FF_5/",
     "mult": null
+   },
+   {
+    "day": "2026-11-10",
+    "lane": "정보",
+    "who": "pH-1",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "896dddef",
+    "posted": "Dfj1n2fmU8T",
+    "head": "pH-1(@ph1boyyy)이 유튜브 채널을 엽니다.",
+    "url": "https://www.instagram.com/p/Dfj1n2fmU8T/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-10",
+    "lane": "정보",
+    "who": "존박",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "a8a8be58",
+    "posted": "Dfj1k9nmVgd",
+    "head": "존박(@johnparkgram)과 곽진언의 '맥도날드 주문 랩'이 남의 이름을 달고 해외 ",
+    "url": "https://www.instagram.com/p/Dfj1k9nmVgd/",
+    "mult": null
    }
   ]
  },
  "follow": {
-  "at": "2026-11-10T19:06+09:00",
+  "at": "2026-11-10T22:04+09:00",
   "d30": {
    "days": 30,
    "follows": 16.4,
@@ -2669,9 +2669,9 @@
    }
   ],
   "feed": {
-   "n": 184,
-   "reach": 3645479,
-   "follows": 485,
+   "n": 186,
+   "reach": 3648609,
+   "follows": 486,
    "per1k": 0.13
   },
   "kinds": [
@@ -2685,40 +2685,40 @@
    },
    {
     "kind": "갈래 모름",
-    "n": 47,
-    "reach": 2508029,
-    "follows": 340,
+    "n": 49,
+    "reach": 2510655,
+    "follows": 341,
     "per1k": 0.14,
     "visits1k": 3.4
    },
    {
     "kind": "기타",
     "n": 33,
-    "reach": 284311,
+    "reach": 284390,
     "follows": 37,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
-    "kind": "발매·신보",
-    "n": 39,
-    "reach": 95178,
-    "follows": 10,
-    "per1k": 0.11,
-    "visits1k": 2.9
-   },
-   {
     "kind": "갈등·반응",
     "n": 20,
-    "reach": 314786,
+    "reach": 314801,
     "follows": 35,
     "per1k": 0.11,
     "visits1k": 2.4
    },
    {
+    "kind": "발매·신보",
+    "n": 39,
+    "reach": 95518,
+    "follows": 10,
+    "per1k": 0.1,
+    "visits1k": 2.9
+   },
+   {
     "kind": "공연·페스티벌",
     "n": 31,
-    "reach": 138111,
+    "reach": 138167,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.7
