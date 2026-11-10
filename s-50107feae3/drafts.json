@@ -2917,13 +2917,236 @@
    },
    "corner_name": "이번 주 나온 앨범",
    "corner_no": 4
+  },
+  {
+   "source": {
+    "id": "claude:ord-982ebcac",
+    "account": "@규효 공유 · @hiptake_",
+    "url": "https://www.instagram.com/reel/Dfjv6c-zH63/?cplk=MWlhZzhhaHhmZ2F3cg==",
+    "image": null,
+    "head": "[오보에] 5년 만에 양홍원·판다곰 싱글 [오보] — 판다곰 버전 'MOONWALK' 정식 공개",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-10T22:09+09:00",
+   "key": "d85315a2",
+   "by": "claude",
+   "subjects": [
+    "양홍원",
+    "Panda Gomm"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "[오보에] 5년 만에 다시 붙은 양홍원·판다곰, 미발매로 남았던 판다곰 버전 'MOONWALK'",
+    "why": "양홍원·판다곰 싱글 [오보] 오늘 발매 — [오보에] 짝의 재결합과 묵혀 둔 'MOONWALK'가 각도"
+   },
+   "added": "claude",
+   "added_at": "2026-11-10T22:09+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n양홍원(@yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보]를 11월 10일 발매했습니다.\n\n판다곰은 2021년 양홍원의 정규 2집 [오보에] 아홉 곡을 모두 작곡한 프로듀서인데요, 이번 [오보]에서도 총괄 프로듀서를 맡아 '화', 'MOONWALK', '목' 세 곡의 작곡·편곡·믹스를 함께했습니다.\n\n'MOONWALK'는 양홍원이 판다곰 버전과 방자(BANGJA) 버전으로 내겠다고 말했지만 방자 버전만 나왔던 곡으로 알려져 있습니다. 미발매로 남아 있던 그 버전이 [오보에]에서 한 글자를 뺀 이름의 싱글로 나온 셈입니다.\n\n#PLOT #양홍원 #판다곰 #오보 #오보에 #MOONWALK\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794316152/hb4o6mdl2mor2z77jpsk.jpg\n제목: 양홍원·판다곰,|5년 만의 [오보]\n부제: 싱글 [오보] · 화 · MOONWALK · 목\n출처: @yanghongwon\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794316168/plot_studio/eyotkj2sopjh8cjhxaly.mp4\n소제목: \n본문: \n출처: Panda Gomm - Topic\n",
+    "caption": "양홍원(@yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보]를 11월 10일 발매했습니다.\n\n판다곰은 2021년 양홍원의 정규 2집 [오보에] 아홉 곡을 모두 작곡한 프로듀서인데요, 이번 [오보]에서도 총괄 프로듀서를 맡아 '화', 'MOONWALK', '목' 세 곡의 작곡·편곡·믹스를 함께했습니다.\n\n'MOONWALK'는 양홍원이 판다곰 버전과 방자(BANGJA) 버전으로 내겠다고 말했지만 방자 버전만 나왔던 곡으로 알려져 있습니다. 미발매로 남아 있던 그 버전이 [오보에]에서 한 글자를 뺀 이름의 싱글로 나온 셈입니다.\n\n#PLOT #양홍원 #판다곰 #오보 #오보에 #MOONWALK",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316152/hb4o6mdl2mor2z77jpsk.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316154/za4rkyvm1ox7ydes13s0.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316157/pioxrascytev0nkhrs1q.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316159/wkxs6nzfzmzcyo7mub9e.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316152/hb4o6mdl2mor2z77jpsk.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792249317/pgmegfjyingvmhh3mzco.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316154/za4rkyvm1ox7ydes13s0.jpg",
+      "credit": "멜론",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505251/qbu6pajuiqdznqmsmsw8.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316157/pioxrascytev0nkhrs1q.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505208/v4rorkhl5b6ivkwtzdwj.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316159/wkxs6nzfzmzcyo7mub9e.jpg",
+      "credit": "@yanghongwon",
+      "from": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792505211/se6y5dymmtw989ou5ynk.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "양홍원·판다곰,|5년 만의 [오보]",
+      "sub": "싱글 [오보] · 화 · MOONWALK · 목"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "묵혀 둔 판다곰 버전|'MOONWALK'가 나왔다",
+      "sub": "양홍원 · Panda Gomm [오보]"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "[오보에]의 짝이|다시 모였다",
+      "sub": "양홍원 · Panda Gomm 싱글 [오보]"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 'MOONWALK' 판다곰 버전 이야기는 나무위키 한 곳(인스타 라이브 발언)뿐 · '2023년'·'방자 곡 피처링'은 원문에 없어 뺐습니다 · 이번 곡이 그 버전과 같은 곡인지는 hiptake 릴스로 확인해 주세요 · 유튜브 음원에 자막이 없어 구간 0:58-1:28 은 직접 들어 보세요",
+     "클립 위험: 낮음 — Panda Gomm - Topic (공식 음원) · 후렴 도구가 막혀 구간 0:58-1:28 은 추정, 들어 보고 후렴 첫 줄로 맞춰 주세요",
+     "'MOONWALK'가 2023년에 말한 판다곰 버전(Ver.14)과 같은 곡이라는 건 나무위키·hiptake 기준이라 '~로 알려져 있다'로 낮췄습니다 · 불륜설 보도 중의 발매라 글에는 논란을 넣지 않았습니다 — 올릴 시점은 규효가 판단"
+    ],
+    "research": [
+     {
+      "title": "멜론 — Panda Gomm, 양홍원 [오보] (2026.11.10 · 화/MOONWALK/목 · 크레딧)",
+      "link": "https://www.melon.com/album/detail.htm?albumId=15134411"
+     },
+     {
+      "title": "스타뉴스 — 양홍원 SNS 신보 발매 알림 (11/10)",
+      "link": "https://starnewskorea.com/star/2026/11/10/2026111021242582796"
+     },
+     {
+      "title": "스포티비뉴스 — 양홍원 싱글 '오보' 발매 (11/10)",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019121"
+     },
+     {
+      "title": "나무위키 — Panda Gomm (오보에 전곡 작곡 · MOONWALK 판다곰 버전 언급)",
+      "link": "https://namu.wiki/w/Panda%20Gomm"
+     },
+     {
+      "title": "나무위키 — 오보에(앨범) (2021.6.19 · 9곡)",
+      "link": "https://namu.wiki/w/%EC%98%A4%EB%B3%B4%EC%97%90(%EC%95%A8%EB%B2%94)"
+     },
+     {
+      "title": "YouTube — MOONWALK | Panda Gomm - Topic",
+      "link": "https://www.youtube.com/watch?v=RgZvGEeXI10"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316177/ee47zmznjq0wk0zivqh4.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316180/xbxddfp8u0o8f3ayk3ii.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316177/ar6jiwc43vwpijyzdaal.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316182/nwm2ro4sdpbeycyekxy1.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316182/xvxyunbflj2tfe6ebzpf.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316177/ee47zmznjq0wk0zivqh4.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-10T22:09+09:00",
+     "videos": {
+      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794316177/plot_studio/msypgueozc2tfhjvsr6e.mp4"
+     },
+     "v": {
+      "A": "8c50d30b",
+      "B": "6aabf373",
+      "C": "1abadd32"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=RgZvGEeXI10\n구간: 0:58-1:28\n곡: 양홍원의 'MOONWALK'\n아티스트: 판다곰과 다시 만난\n피처링:\n후킹: \n출처: Panda Gomm - Topic\n음원: Panda Gomm, 양홍원 - MOONWALK\n가사: 자동",
+    "caption": "양홍원(@yanghongwon)과 판다곰(Panda Gomm)의 싱글 [오보]가 11월 10일 나왔습니다.\n\n'MOONWALK'는 양홍원이 판다곰 버전과 방자(BANGJA) 버전으로 내겠다고 말했지만 방자 버전만 나왔던 곡으로 알려져 있는데요, 미발매로 남아 있던 그 버전이 정식으로 공개됐습니다.\n\n판다곰은 2021년 정규 2집 [오보에] 전곡을 작곡한 프로듀서로, [오보]에서도 총괄 프로듀서를 맡았습니다. '화', 'MOONWALK', '목' 세 곡이 실렸습니다.\n\n#PLOT #양홍원 #판다곰 #오보 #MOONWALK",
+    "hooks": {
+     "A": "판다곰과 다시 만난 / 양홍원의 'MOONWALK'",
+     "B": "묵혀 둔 판다곰 버전 / 'MOONWALK' 공개",
+     "C": "[오보에] 5년 만에 / 다시 붙은 두 사람"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=RgZvGEeXI10",
+     "credit": "Panda Gomm - Topic",
+     "range": [
+      58.0,
+      88.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 'MOONWALK' 판다곰 버전 이야기는 나무위키 한 곳(인스타 라이브 발언)뿐 · '2023년'·'방자 곡 피처링'은 원문에 없어 뺐습니다 · 이번 곡이 그 버전과 같은 곡인지는 hiptake 릴스로 확인해 주세요 · 유튜브 음원에 자막이 없어 구간 0:58-1:28 은 직접 들어 보세요",
+     "클립 위험: 낮음 — Panda Gomm - Topic (공식 음원) · 후렴 도구가 막혀 구간 0:58-1:28 은 추정, 들어 보고 후렴 첫 줄로 맞춰 주세요",
+     "'MOONWALK'가 2023년에 말한 판다곰 버전(Ver.14)과 같은 곡이라는 건 나무위키·hiptake 기준이라 '~로 알려져 있다'로 낮췄습니다 · 불륜설 보도 중의 발매라 글에는 논란을 넣지 않았습니다 — 올릴 시점은 규효가 판단"
+    ],
+    "research": [
+     {
+      "title": "멜론 — Panda Gomm, 양홍원 [오보] (2026.11.10 · 화/MOONWALK/목 · 크레딧)",
+      "link": "https://www.melon.com/album/detail.htm?albumId=15134411"
+     },
+     {
+      "title": "스타뉴스 — 양홍원 SNS 신보 발매 알림 (11/10)",
+      "link": "https://starnewskorea.com/star/2026/11/10/2026111021242582796"
+     },
+     {
+      "title": "스포티비뉴스 — 양홍원 싱글 '오보' 발매 (11/10)",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1019121"
+     },
+     {
+      "title": "나무위키 — Panda Gomm (오보에 전곡 작곡 · MOONWALK 판다곰 버전 언급)",
+      "link": "https://namu.wiki/w/Panda%20Gomm"
+     },
+     {
+      "title": "나무위키 — 오보에(앨범) (2021.6.19 · 9곡)",
+      "link": "https://namu.wiki/w/%EC%98%A4%EB%B3%B4%EC%97%90(%EC%95%A8%EB%B2%94)"
+     },
+     {
+      "title": "YouTube — MOONWALK | Panda Gomm - Topic",
+      "link": "https://www.youtube.com/watch?v=RgZvGEeXI10"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/RgZvGEeXI10/maxresdefault.jpg",
+    "still": {
+     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794316186/fpzwarzgyvb6dfu9p98k.jpg",
+     "key": "RgZvGEeXI10@58.0"
+    },
+    "px": {
+     "vid": "RgZvGEeXI10",
+     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794316197/plot_studio/yiodena1iypk5ctxke8u.mp4",
+     "off": 13.0,
+     "end": 133.0,
+     "full": 252.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-10T22:10+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/09~11/15",
   "days_left": 6,
-  "done": 3,
+  "done": 5,
   "goal": 28,
   "corners": [
    {
@@ -3086,33 +3309,33 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 3,
-    "left": 1,
-    "need_today": 1,
+    "done": 5,
+    "left": 0,
+    "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 8,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T21:06+09:00"
+  "at": "2026-11-10T22:10+09:00"
  },
  "queue": {
-  "next": "2026-11-10T21:50+09:00",
+  "next": "2026-11-10T22:12+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-10T20:50+09:00"
  },
  "slots": {
-  "basis": 342,
+  "basis": 344,
   "card": [
    {
     "from": 18,
     "to": 21,
     "at": "19:30",
-    "mult": 1.99,
-    "median": 1.1,
-    "n": 64
+    "mult": 1.94,
+    "median": 1.04,
+    "n": 66
    },
    {
     "from": 21,
@@ -3126,7 +3349,7 @@
     "from": 15,
     "to": 18,
     "at": "16:30",
-    "mult": 1.5,
+    "mult": 1.51,
     "median": 0.95,
     "n": 34
    }
