@@ -685,6 +685,27 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .srs .sr .srm{font-size:14px; padding:7px 10px}
 .srs .srd{font-size:11px; border:1px solid var(--pick); color:var(--pick); border-radius:999px; padding:1px 7px}
 .srs .srb{display:flex; justify-content:flex-end; margin-top:8px}
+/* 11/11 오늘의 노래 여러 편 미리 만들기 · 예약 목록 (collectors/song_series) */
+#ssBox{margin-top:12px; border-top:1px solid var(--line); padding-top:10px}
+#ssBox .ssh{display:flex; gap:8px; align-items:center; justify-content:space-between; flex-wrap:wrap}
+#ssBox .ssh b{font-size:14px}
+#ssBox button{font:inherit; font-size:13px; border:1px solid var(--line); background:none; color:var(--text); border-radius:8px; padding:6px 10px; min-height:34px; cursor:pointer}
+#ssBox button.go{border-color:var(--pick); color:var(--pick)} #ssBox button:disabled{opacity:.5}
+#ssBox .ssf{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:8px; font-size:13px; color:var(--dim)}
+#ssBox input, #ssBox select{font:inherit; font-size:16px; padding:6px 8px; border:1px solid var(--line); border-radius:8px; background:none; color:var(--text); min-width:0; box-sizing:border-box}
+#ssBox .ssr{border:1px solid var(--line); border-radius:10px; padding:8px; margin-top:8px}
+#ssBox .ssr .g{display:grid; grid-template-columns:1fr 72px; gap:6px} #ssBox .ssr .g2{display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:6px}
+#ssBox .ssr .w{width:100%; margin-top:6px}
+#ssBox .er{color:var(--bad, #e0786a); font-size:12.5px; margin-top:4px} #ssBox .wr{color:var(--warn, #e8b34a); font-size:12.5px; margin-top:4px}
+#ssBox .ssc{display:flex; gap:6px; overflow-x:auto; margin-top:8px; padding-bottom:2px} #ssBox .ssc button{flex:none; font-size:12.5px; white-space:nowrap}
+#ssBox .ssl{margin-top:10px} #ssBox .ssi{display:flex; gap:8px; padding:8px 0; border-top:1px solid var(--line); align-items:flex-start}
+#ssBox .ssi img{width:48px; height:60px; object-fit:cover; border-radius:6px; flex:none; background:var(--line)}
+#ssBox .ssi .t{flex:1; min-width:0} #ssBox .ssi .t b{display:block; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+#ssBox .ssi .t small{display:block; color:var(--dim); font-size:12px; line-height:1.4}
+#ssBox .ssi .a{display:flex; gap:6px; flex-wrap:wrap; margin-top:6px}
+#ssBox .st{display:inline-block; font-size:11px; border:1px solid var(--line); border-radius:999px; padding:0 7px; margin-right:4px}
+#ssBox .st-scheduled, #ssBox .st-published{border-color:var(--pick); color:var(--pick)} #ssBox .st-failed{border-color:var(--bad, #e0786a); color:var(--bad, #e0786a)}
+#ssBox .gap{font-size:12.5px; color:var(--warn, #e8b34a); margin-top:8px}
 .srs .srb .go{font:inherit; font-size:14px; font-weight:700; border:0; border-radius:10px; padding:9px 18px; background:var(--text); color:var(--bg); cursor:pointer}
 .srs .srp{margin-top:8px; max-height:none}
 .srs .odr{margin-top:6px; font-size:12.5px; line-height:1.45} .srs .odr small{color:var(--dim)}
@@ -3589,8 +3610,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         rows.slice(0, 3).map(function (r) { var sn = r.snapshot || {}, st = sn.status || '';
           return '<div class="odr" data-odr="' + esc(r.id) + '"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> <b>' + esc(String(sn.what || '').slice(0, 40)) + '</b> <small>' +
             esc(String(r.created_at || '').slice(5, 10).replace('-', '/')) + (sn.note && st !== 'queued' ? ' — ' + esc(String(sn.note).slice(0, 60)) : '') + '</small></div>'; }).join('') +
-        '</div>';
+        (x.t === 'song' ? '<div id="ssBox"></div>' : '') + '</div>';
     }).join('') + '</div>';
+    ssPaint();
   }
   function srSend(t) {
     var host = document.getElementById('viewSeries'), x = SERIES.filter(function (s) { return s.t === t; })[0];
@@ -3628,6 +3650,193 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       if (p && el) { el.value = p.artist + ' - ' + p.title; var w1 = document.querySelector('#viewSeries [data-shw]'); if (w1) w1.innerHTML = shWarn(el.value); if (p.url) { var m = document.querySelector('[data-srf="song:memo"]'); if (m && !m.value) m.value = p.url; } } return; }
     var od = e.target.closest('[data-odr]'); if (od) { OD = (SR || []).concat(OD || []); odDetail(od.getAttribute('data-odr')); }
   });
+
+  /* ── 🎵 오늘의 노래 여러 편 미리 만들기 · 예약 (11/11 규효 "바쁜 날 자꾸 놓쳐서 여러 편을 미리 만들고 예약") ─────────────
+     맥(collectors/song_series)이 Supabase plot_evals 'series:song' 한 줄에 예약 목록을 올리고, 여기서 요청은 op=series 로 보낸다.
+     요청마다 앱 열쇠 서명 (발행과 같은 열쇠 · sha256(열쇠|series|act|args|at)). 검수한 뒤 「예약」을 눌러야 예약된다. */
+  var SS = null, SSP = { open: false, start: '', count: 5, rows: [], check: null, busy: false, focus: -1 }, SSE = {}, SS_NOTE = '';
+  var SS_FORMS = [['rc', '릴스 + 캐러셀'], ['r', '릴스만'], ['c', '캐러셀만']];
+  function ssLoad() {
+    if (!sbOn()) return;
+    sbReq('plot_evals?select=snapshot&id=eq.' + encodeURIComponent('series:song')).then(function (rows) {
+      SS = (rows && rows[0] && rows[0].snapshot) || { eps: [] };
+      if (GRP === 'series') ssPaint();
+      if ((SS.eps || []).some(function (e) { return e.status === 'wait' || e.status === 'reviewed' || e.status === 'final'; }))
+        setTimeout(function () { if (GRP === 'series') ssLoad(); }, 60000);
+    }).catch(function () {});
+  }
+  function ssShMax() { return Math.max.apply(null, [0].concat((SH || []).map(function (r) { return Number(r.n) || 0; }))); }
+  function ssAddDay(d, k) { var t = new Date(d + 'T00:00:00+09:00'); t.setTime(t.getTime() + k * 864e5); return kstDay(t); }
+  function ssFill() {
+    var base = Math.max(Number((SS || {}).next_n) || 0, ssShMax() + 1), tm = (SS || {}).default_time || '18:00';
+    var n = Math.max(1, Math.min(14, Number(SSP.count) || 5)), st = SSP.start || ssAddDay(kstDay(new Date()), 1);
+    var old = SSP.rows;
+    SSP.rows = [];
+    for (var i = 0; i < n; i++) SSP.rows.push({ date: ssAddDay(st, i), n: base + i, what: (old[i] || {}).what || '', time: (old[i] || {}).time || tm, forms: (old[i] || {}).forms || 'rc' });
+    SSP.check = null;
+  }
+  function ssForms(v, attr) {
+    return '<select ' + attr + '>' + SS_FORMS.map(function (f) { return '<option value="' + f[0] + '"' + (f[0] === v ? ' selected' : '') + '>' + f[1] + '</option>'; }).join('') + '</select>';
+  }
+  function ssPlanHtml() {
+    var h = '<div class="ssf">시작 <input type="date" data-ssf="start" value="' + esc(SSP.start) + '"> 편 수 <input type="number" min="1" max="14" data-ssf="count" value="' + esc(SSP.count) + '" style="width:64px">' +
+      '<button type="button" data-ssx="fill">날짜·번째 채우기</button></div>';
+    if (!SSP.rows.length) return h + '<div class="ssf">시작 날짜를 고르고 「날짜·번째 채우기」 — 날짜는 하루씩, 번째는 인스타·예약된 것 다음부터 (손으로 고칠 수 있습니다)</div>';
+    var picks = (SP && SP.items || []).slice(0, 10);
+    h += picks.length ? '<div class="ssc">' + picks.map(function (p, i) { return '<button type="button" data-sspk="' + i + '">' + esc(p.artist) + ' — ' + esc(p.title) + '</button>'; }).join('') + '</div>' : '';
+    h += SSP.rows.map(function (r, i) {
+      var c = (SSP.check || [])[i] || {};
+      return '<div class="ssr"><div class="g"><input type="date" data-ssr="' + i + ':date" value="' + esc(r.date) + '"><input type="number" min="1" data-ssr="' + i + ':n" value="' + esc(r.n) + '" aria-label="번째"></div>' +
+        '<input class="w" data-ssr="' + i + ':what" placeholder="아티스트 - 곡   예) 한로로 - 0+0" value="' + esc(r.what) + '">' +
+        '<div class="g2"><input type="time" data-ssr="' + i + ':time" value="' + esc(r.time) + '">' + ssForms(r.forms, 'data-ssr="' + i + ':forms"') + '</div>' +
+        (c.errors || []).map(function (x) { return '<div class="er">✗ ' + esc(x) + '</div>'; }).join('') +
+        (c.warns || []).map(function (x) { return '<div class="wr">⚠︎ ' + esc(x) + '</div>'; }).join('') + '</div>';
+    }).join('');
+    return h + '<div class="ssf" style="justify-content:flex-end"><button type="button" data-ssx="check"' + (SSP.busy ? ' disabled' : '') + '>겹침 확인</button>' +
+      '<button type="button" class="go" data-ssx="plan"' + (SSP.busy ? ' disabled' : '') + '>' + (SSP.busy ? '보내는 중…' : '한 번에 맡기기') + '</button></div>';
+  }
+  function ssListHtml() {
+    var eps = (SS && SS.eps || []).filter(function (e) { return e.status !== 'removed'; });
+    var h = '<div class="ssl"><div class="ssh"><b>예약 목록</b><small style="color:var(--dim)">완성본은 발행 전날 ' + esc((SS || {}).encode_hour || 21) + '시부터 맥이 만듭니다</small></div>';
+    if ((SS || {}).gaps && SS.gaps.length) h += '<div class="gap">⚠︎ 비는 번째: ' + SS.gaps.join(', ') + ' — 뒤 번호는 당기지 않습니다. 필요하면 「고치기」로 채워 주세요</div>';
+    if (!eps.length) return h + '<div class="ssf">아직 없습니다</div></div>';
+    return h + eps.map(function (e) {
+      var ed = SSE[e.id], act = ['wait', 'draft', 'reviewed', 'final', 'scheduled'].indexOf(e.status) >= 0;
+      var r = '<div class="ssi">' + ((e.cover || e.still) ? '<img loading="lazy" referrerpolicy="no-referrer" src="' + escU(e.cover || e.still) + '" alt="">' : '') +
+        '<div class="t"><b>' + esc(e.n) + '번째 · ' + esc(String(e.date || '').slice(5).replace('-', '/')) + ' ' + esc(e.time || '') + ' · ' + esc(e.artist) + ' - ' + esc(e.title) + '</b>' +
+        '<small><span class="st st-' + esc(e.status) + '">' + esc(e.label || e.status) + '</span>' + esc(SS_FORMS.filter(function (f) { return f[0] === e.forms; }).map(function (f) { return f[1]; })[0] || '') +
+        (e.note ? ' — ' + esc(String(e.note).slice(0, 90)) : '') + '</small>' + (e.head ? '<small>' + esc(e.head) + '</small>' : '') +
+        (e.warns || []).slice(0, 2).map(function (x) { return '<div class="wr">⚠︎ ' + esc(x) + '</div>'; }).join('');
+      if (ed) {
+        r += '<div class="g2"><input type="date" data-sse="' + esc(e.id) + ':date" value="' + esc(ed.date) + '"><input type="number" data-sse="' + esc(e.id) + ':n" value="' + esc(ed.n) + '"></div>' +
+          '<div class="g2"><input type="time" data-sse="' + esc(e.id) + ':time" value="' + esc(ed.time) + '">' + ssForms(ed.forms, 'data-sse="' + esc(e.id) + ':forms"') + '</div>' +
+          '<div class="a">' + (ed.mode === 'reserve' ? '<button type="button" class="go" data-sso="reserve:' + esc(e.id) + '">예약 확정</button>' : '<button type="button" class="go" data-sso="save:' + esc(e.id) + '">저장</button>') +
+          '<button type="button" data-sso="cancel:' + esc(e.id) + '">닫기</button></div>';
+      } else if (act) {
+        r += '<div class="a">' + (e.key ? '<button type="button" data-sso="open:' + esc(e.key) + '">초안 보기</button>' : '') +
+          (e.status === 'draft' && e.fp ? '<button type="button" class="go" data-sso="rsv:' + esc(e.id) + '">검수·예약</button>' : '') +
+          (e.status !== 'wait' ? '<button type="button" data-sso="edit:' + esc(e.id) + '">고치기</button>' : '') +
+          '<button type="button" data-sso="drop:' + esc(e.id) + '">빼기</button></div>';
+      }
+      return r + '</div></div>';
+    }).join('') + '</div>';
+  }
+  function ssPaint() {
+    var box = document.getElementById('ssBox');
+    if (!box) return;
+    if (SS === null) { SS = { eps: [] }; ssLoad(); }
+    box.innerHTML = '<div class="ssh"><b>📅 여러 편 미리 만들기</b><button type="button" data-ssx="open">' + (SSP.open ? '접기' : '열기') + '</button></div>' +
+      (SS_NOTE ? '<div class="ssf">' + esc(SS_NOTE) + '</div>' : '') + (SSP.open ? ssPlanHtml() : '') + ssListHtml();
+  }
+  function ssSign(act, args) {
+    var ch = chGet();
+    if (!ch.key) {
+      var k = window.prompt('예약은 앱 열쇠가 필요합니다 — 맥 .env 의 PLOT_APP_KEY 와 같은 값을 한 번만 넣어 주세요');
+      if (!k || !k.trim()) return Promise.reject(new Error('열쇠가 없어 보내지 않았습니다'));
+      chSet(Object.assign(ch, { key: k.trim() })); ch = chGet();
+    }
+    if (!(window.plotStudio && window.plotStudio.on() && window.crypto && crypto.subtle)) return Promise.reject(new Error('이 화면에서는 보낼 수 없습니다 (저장소 설정)'));
+    var at = new Date().toISOString(), body = JSON.stringify(args || {});
+    return crypto.subtle.digest('SHA-256', new TextEncoder().encode(ch.key + '|series|' + act + '|' + body + '|' + at)).then(function (b) {
+      var sig = Array.prototype.map.call(new Uint8Array(b), function (x) { return ('0' + x.toString(16)).slice(-2); }).join('');
+      return window.plotStudio.send('series', { act: act, args: body, at: at, sig: sig }, function (step) { SS_NOTE = '맥: ' + step; ssPaint(); });
+    }).catch(function (er) {
+      if (/열쇠/.test(String(er && er.message))) { var c = chGet(); delete c.key; chSet(c); }
+      throw er;
+    });
+  }
+  function ssItems() {
+    return SSP.rows.map(function (r) { return { date: r.date, n: Number(r.n), what: String(r.what || '').trim(), time: r.time, forms: r.forms }; });
+  }
+  function ssCheck(then) {
+    SSP.busy = true; SS_NOTE = '겹침 확인 중…'; ssPaint();
+    ssSign('check', { items: ssItems() }).then(function (sn) {
+      SSP.busy = false; SSP.check = sn.check || []; SS_NOTE = '';
+      var er = SSP.check.some(function (c) { return (c.errors || []).length; });
+      ssPaint(); if (then) then(er, SSP.check);
+    }).catch(function (e) { SSP.busy = false; SS_NOTE = '못 했습니다 — ' + String(e && e.message || e).slice(0, 80); ssPaint(); });
+  }
+  function ssPlan() {
+    var items = ssItems();
+    if (!items.length) { toast('먼저 「날짜·번째 채우기」'); return; }
+    if (items.some(function (x) { return !x.what; })) { toast('곡이 빈 줄이 있습니다'); return; }
+    ssCheck(function (bad, res) {
+      if (bad) { toast('겹치거나 빈 칸이 있어 맡기지 않았습니다 — 빨간 줄을 고쳐 주세요'); return; }
+      var warns = [].concat.apply([], res.map(function (c, i) { return (c.warns || []).map(function (w) { return (i + 1) + '줄: ' + w; }); }));
+      var msg = '오늘의 노래 ' + items.length + '편을 맡길까요?\n\n' + items.map(function (x) { return x.n + '번째 ' + x.date + ' ' + x.time + ' · ' + x.what; }).join('\n') +
+        (warns.length ? '\n\n확인할 것:\n' + warns.join('\n') : '') + '\n\n초안만 만듭니다 — 예약은 초안을 검수하고 「검수·예약」을 눌러야 됩니다.';
+      if (!window.confirm(msg)) return;
+      SSP.busy = true; ssPaint();
+      ssSign('plan', { items: items, ok_warns: true }).then(function (sn) {
+        SSP.busy = false;
+        if (sn.refused) { SSP.check = sn.check || SSP.check; SS_NOTE = sn.note || ''; ssPaint(); return; }
+        SS_NOTE = sn.note || '맡겼습니다'; SSP.rows = []; SSP.check = null; SSP.open = false; ssLoad(); ssPaint();
+      }).catch(function (e) { SSP.busy = false; SS_NOTE = '못 맡겼습니다 — ' + String(e && e.message || e).slice(0, 80); ssPaint(); });
+    });
+  }
+  function ssEp(id) { return (SS && SS.eps || []).filter(function (e) { return e.id === id; })[0]; }
+  function ssDo(act, e, args, ask) {
+    if (ask && !window.confirm(ask)) return;
+    SS_NOTE = '보내는 중…'; ssPaint();
+    ssSign(act, args).then(function (sn) { SS_NOTE = sn.note || '했습니다'; delete SSE[e.id]; ssLoad(); ssPaint(); toast(SS_NOTE); })
+      .catch(function (er) { SS_NOTE = '못 했습니다 — ' + String(er && er.message || er).slice(0, 100); ssPaint(); });
+  }
+  function ssOpenDraft(key) {
+    var items = (DR_LIVE && DR_LIVE.items) || (DR && DR.items) || [];
+    var i = items.map(function (x) { return x.key; }).indexOf(key);
+    if (i < 0) { toast('오늘의 초안 목록에서 찾지 못했습니다 — 새로 고친 뒤 다시'); return; }
+    reqGo(i);
+  }
+  (function () {
+    var host = document.getElementById('viewSeries');
+    host.addEventListener('input', function (e) {
+      var t = e.target, a = t.getAttribute('data-ssr'), f = t.getAttribute('data-ssf'), g = t.getAttribute('data-sse');
+      if (a) { var p = a.split(':'); SSP.rows[Number(p[0])][p[1]] = t.value; SSP.focus = Number(p[0]); if (p[1] === 'what' || p[1] === 'n' || p[1] === 'date') SSP.check = null; }
+      if (f) SSP[f] = t.value;
+      if (g) { var q = g.split(':'); if (SSE[q[0]]) SSE[q[0]][q[1]] = t.value; }
+    });
+    host.addEventListener('change', function (e) {
+      var t = e.target, a = t.getAttribute('data-ssr'), g = t.getAttribute('data-sse');
+      if (a && t.tagName === 'SELECT') { var p = a.split(':'); SSP.rows[Number(p[0])][p[1]] = t.value; }
+      if (g && t.tagName === 'SELECT') { var q = g.split(':'); if (SSE[q[0]]) SSE[q[0]][q[1]] = t.value; }
+    });
+    host.addEventListener('focusin', function (e) { var a = e.target.getAttribute && e.target.getAttribute('data-ssr'); if (a) SSP.focus = Number(a.split(':')[0]); });
+    host.addEventListener('click', function (e) {
+      var x = e.target.closest('[data-ssx]'), pk = e.target.closest('[data-sspk]'), o = e.target.closest('[data-sso]');
+      if (x) {
+        var w = x.getAttribute('data-ssx');
+        if (w === 'open') { SSP.open = !SSP.open; if (SSP.open && !SSP.start) SSP.start = ssAddDay(kstDay(new Date()), 1); ssPaint(); }
+        if (w === 'fill') { ssFill(); ssPaint(); }
+        if (w === 'check') ssCheck();
+        if (w === 'plan') ssPlan();
+        return;
+      }
+      if (pk) {
+        var p = ((SP || {}).items || [])[Number(pk.getAttribute('data-sspk'))]; if (!p) return;
+        var i = SSP.focus >= 0 && SSP.rows[SSP.focus] && !SSP.rows[SSP.focus].what ? SSP.focus : SSP.rows.map(function (r) { return !r.what; }).indexOf(true);
+        if (i < 0) i = SSP.focus >= 0 ? SSP.focus : 0;
+        SSP.rows[i].what = p.artist + ' - ' + p.title; SSP.check = null; SSP.focus = -1; ssPaint();
+        return;
+      }
+      if (!o) return;
+      var v = o.getAttribute('data-sso'), k = v.indexOf(':'), op = v.slice(0, k), id = v.slice(k + 1), ep = ssEp(id);
+      if (op === 'open') { ssOpenDraft(id); return; }
+      if (!ep) return;
+      if (op === 'rsv' || op === 'edit') { SSE[id] = { mode: op === 'rsv' ? 'reserve' : 'edit', date: ep.date, n: ep.n, time: ep.time || (SS.default_time || '18:00'), forms: ep.forms || 'rc' }; ssPaint(); return; }
+      if (op === 'cancel') { delete SSE[id]; ssPaint(); return; }
+      var ed = SSE[id] || {};
+      if (op === 'reserve') {
+        if (ed.date !== ep.date || String(ed.n) !== String(ep.n)) { toast('날짜·번째를 바꾸려면 「고치기」로 먼저 — 캡션이 바뀌면 다시 검수합니다'); return; }
+        ssDo('reserve', ep, { id: id, time: ed.time, forms: ed.forms, fp: ep.fp },
+          '이 초안을 예약할까요?\n\n' + ep.n + '번째 오늘의 노래 | ' + String(ep.date).replace(/-/g, '.') + '\n' + ep.artist + ' - ' + ep.title +
+          '\n발행 ' + ep.date + ' ' + ed.time + ' · ' + (SS_FORMS.filter(function (f) { return f[0] === ed.forms; })[0] || ['', ''])[1] +
+          '\n\n완성본은 전날 밤 맥이 만들고, 그 시각에 인스타에 올라갑니다 (되돌리려면 「빼기」).');
+      }
+      if (op === 'save') ssDo('edit', ep, { id: id, date: ed.date, n: Number(ed.n), time: ed.time, forms: ed.forms },
+        (ed.date !== ep.date || String(ed.n) !== String(ep.n)) && ['reviewed', 'final', 'scheduled'].indexOf(ep.status) >= 0 ? '번째·날짜를 바꾸면 캡션 첫 줄이 바뀌어 다시 검수·예약해야 합니다. 고칠까요?' : '');
+      if (op === 'drop') ssDo('drop', ep, { id: id }, ep.n + '번째(' + ep.date + ' ' + ep.artist + ' - ' + ep.title + ')를 예약 목록에서 뺄까요?\n뒤 번호는 당기지 않습니다.');
+    });
+  })();
   /* 🎵 이미 다룬 곡 (11/4 규효 "같은 노래를 내가 선곡하면 이야기해 주는 거") — scripts/song_archive.py 가 인스타 캡션에서 모은 회차 */
   var SH = null, SH_OK = '';
   function shLoad(cb) {
@@ -5249,9 +5458,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.11 20:02';
+    a.title = '판 11.11 21:29';
     var ver = document.createElement('span');
-    ver.textContent = '11.11 20:02';
+    ver.textContent = '11.11 21:29';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
@@ -5568,7 +5777,7 @@ if ('serviceWorker' in navigator) {
         return r.status === 204 ? null : r.text().then(function (t) { return t ? JSON.parse(t) : null; });
       });
   }
-  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3, premiere: 25 * 60e3, photo_list: 3 * 60e3, ig_media: 3 * 60e3, photo_set: 12 * 60e3, macjob: 90e3 };
+  var LIMIT = { shorts: 3 * 60e3, caption: 5 * 60e3, cut: 40 * 60e3, carousel: 10 * 60e3, special: 3 * 60e3, raw: 15 * 60e3, cardvid: 30 * 60e3, subs: 8 * 60e3, songvid: 10 * 60e3, ai_edit: 5 * 60e3, proxy: 12 * 60e3, premiere: 25 * 60e3, photo_list: 3 * 60e3, ig_media: 3 * 60e3, photo_set: 12 * 60e3, macjob: 90e3, series: 3 * 60e3 };
   function send(op, data, onStep) {
     var id = 'st:' + Date.now() + '-' + Math.random().toString(36).slice(2, 6);
     var sn = { op: op, at: new Date().toISOString() };
