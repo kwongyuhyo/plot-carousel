@@ -1095,13 +1095,119 @@
    },
    "corner_name": "그날의 앨범",
    "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:ord-aea962ea",
+    "account": "@규효 공유 · @millionego",
+    "url": "https://www.instagram.com/p/DfljMAfkk61/?dlrf=ZWxpY3I1N3g2YXlm",
+    "image": null,
+    "head": "넷플릭스 〈흑백 가수〉 제작 확정 — 흑백요리사·싱어게인 PD가 이름 지운 목소리 대결로",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T13:53+09:00",
+   "key": "5c7f2cec",
+   "by": "claude",
+   "subjects": [
+    "흑백 가수"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "흑백요리사 PD와 싱어게인 — 이름을 지우는 두 방식이 〈흑백 가수〉에서 만난다",
+    "why": "규효 맡기기 · 11일 넷플릭스 공식 발표, 기사 다수 · 흑백요리사 화제성을 잇는 음악 예능"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T13:53+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n넷플릭스가 음악 서바이벌 〈흑백 가수: 보컬 계급 전쟁〉의 제작을 확정했습니다.\n\n이름 자체가 장르인 '백가수'와 이름을 감춘 채 목소리로만 도전하는 '흑가수'가 맞붙는 구조인데요, 연출은 〈흑백요리사: 요리 계급 전쟁〉의 김학민 PD와 〈저스트 메이크업〉의 박성환 PD가 맡습니다. 두 사람은 앞서 JTBC 〈싱어게인〉에서 함께 작업했습니다.\n\n참가자를 이름 대신 번호로 부르던 〈싱어게인〉과 흑수저·백수저로 나눴던 〈흑백요리사〉, 이름을 지우는 두 방식이 이번엔 한 무대에서 만나는 셈입니다.\n\n〈흑백 가수〉는 2027년 넷플릭스에서 공개됩니다.\n\n#PLOT #흑백가수 #넷플릭스 #흑백요리사 #싱어게인 #김학민PD\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794372820/x5tt4ovuvq2i4dm7nsyp.jpg\n제목: 넷플릭스, 이번엔 노래로|〈흑백 가수〉 제작 확정\n부제: 흑백요리사·싱어게인 PD가 만드는 보컬 계급 전쟁 · 2027년 공개\n출처: 넷플릭스\n",
+    "caption": "넷플릭스가 음악 서바이벌 〈흑백 가수: 보컬 계급 전쟁〉의 제작을 확정했습니다.\n\n이름 자체가 장르인 '백가수'와 이름을 감춘 채 목소리로만 도전하는 '흑가수'가 맞붙는 구조인데요, 연출은 〈흑백요리사: 요리 계급 전쟁〉의 김학민 PD와 〈저스트 메이크업〉의 박성환 PD가 맡습니다. 두 사람은 앞서 JTBC 〈싱어게인〉에서 함께 작업했습니다.\n\n참가자를 이름 대신 번호로 부르던 〈싱어게인〉과 흑수저·백수저로 나눴던 〈흑백요리사〉, 이름을 지우는 두 방식이 이번엔 한 무대에서 만나는 셈입니다.\n\n〈흑백 가수〉는 2027년 넷플릭스에서 공개됩니다.\n\n#PLOT #흑백가수 #넷플릭스 #흑백요리사 #싱어게인 #김학민PD",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794372820/x5tt4ovuvq2i4dm7nsyp.jpg",
+      "credit": "넷플릭스",
+      "from": "https://img.tenasia.co.kr/photo/202611/BF.46383514.1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794372820/x5tt4ovuvq2i4dm7nsyp.jpg",
+      "credit": "넷플릭스",
+      "from": "https://img.tenasia.co.kr/photo/202611/BF.46383514.1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "넷플릭스, 이번엔 노래로|〈흑백 가수〉 제작 확정",
+      "sub": "흑백요리사·싱어게인 PD가 만드는 보컬 계급 전쟁 · 2027년 공개"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "흑백요리사 PD가|이번엔 가수를 가른다",
+      "sub": "넷플릭스 〈흑백 가수: 보컬 계급 전쟁〉 2027년 공개"
+     },
+     {
+      "key": "C",
+      "hook": "다른 안",
+      "title": "싱어게인 두 PD,|다시 노래 서바이벌로",
+      "sub": "김학민·박성환 PD의 〈흑백 가수〉"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "숏폼 없음 — 아직 티저·예고 영상이 없어 표지 한 장 + 캡션만 (예고편 나오면 숏폼으로)",
+     "표지 사진: 넷플릭스 배포 로고가 기사 대표 사진으로 제대로 들어왔는지"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 — [공식] 새 '흑백' 시리즈 나왔다…'흑백 가수: 보컬 계급 전쟁' 내년 공개 (2026.11.11)",
+      "link": "https://www.tenasia.co.kr/article/2026111192944"
+     },
+     {
+      "title": "마이데일리 — [공식] '흑백요리사' 다음은 보컬 전쟁…넷플릭스 '흑백 가수' 제작 확정 (2026.11.11)",
+      "link": "https://www.mydaily.co.kr/page/view/2026111109020145377"
+     },
+     {
+      "title": "스포츠경향 — '싱어게인' 윤현준 CP·김학민 PD 연출, 참가자 번호 호명 (2020.11.16)",
+      "link": "https://sports.khan.co.kr/article/202011161228003"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794372825/ghstys4wr2ccwkkwixjf.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794372825/sgovjgtlqwzx8grkvkuv.jpg"
+     ],
+     "covers": {
+      "B": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794372827/uhd4bg9u4xrynqvhfhpp.jpg",
+      "C": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794372827/v05rihryj1bohlnuwq80.jpg",
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794372825/ghstys4wr2ccwkkwixjf.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-11T13:53+09:00",
+     "v": {
+      "A": "a8ba8b67",
+      "B": "6aef1cb3",
+      "C": "d944fa7f"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
  "corners": {
   "week": "11/09~11/15",
   "days_left": 5,
-  "done": 5,
+  "done": 6,
   "goal": 28,
   "corners": [
    {
@@ -1264,16 +1370,16 @@
     "key": "news",
     "name": "소식",
     "weekly": 4,
-    "done": 5,
+    "done": 6,
     "left": 0,
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-11T12:56+09:00"
+  "at": "2026-11-11T13:53+09:00"
  },
  "queue": {
   "next": "2026-11-11T13:56+09:00",
@@ -1282,7 +1388,7 @@
   "last": "2026-11-11T12:56+09:00"
  },
  "slots": {
-  "basis": 344,
+  "basis": 345,
   "card": [
    {
     "from": 18,
