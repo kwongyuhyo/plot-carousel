@@ -294,7 +294,12 @@
      "at": "2026-11-11T08:44+09:00"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfmfbYaoRK5/",
+    "cover": "A",
+    "at": "2026-11-11T21:33+09:00"
+   }
   },
   {
    "source": {
@@ -535,7 +540,12 @@
      "at": "2026-11-11T09:47+09:00"
     }
    },
-   "corner_name": "소식"
+   "corner_name": "소식",
+   "published": {
+    "permalink": "https://www.instagram.com/p/DfmfNZekSdS/",
+    "cover": "C",
+    "at": "2026-11-11T21:32+09:00"
+   }
   },
   {
    "source": {
@@ -2226,13 +2236,13 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-11T21:31+09:00"
+  "at": "2026-11-11T21:33+09:00"
  },
  "queue": {
-  "next": "2026-11-11T21:33+09:00",
+  "next": "2026-11-11T22:33+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-11T12:56+09:00"
+  "last": "2026-11-11T21:33+09:00"
  },
  "slots": {
   "basis": 345,
