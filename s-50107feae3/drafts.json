@@ -294,12 +294,7 @@
      "at": "2026-11-11T08:44+09:00"
     }
    },
-   "corner_name": "소식",
-   "pick": {
-    "rank": 3,
-    "why": "아이브 빌보드 200 첫 진입 — 오늘 아침 가장 큰 기록 소식",
-    "at": "2026-11-11T10:06+09:00"
-   }
+   "corner_name": "소식"
   },
   {
    "source": {
@@ -673,12 +668,12 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
-    "why": "레이더 1위 양홍원의 '지금 일어난 일' · 발매 게시물 좋아요 3.2만 · 커버 글자와 곡 제목이 맞물리는 묘한 사실 하나로 표지 한 장",
-    "at": "2026-11-11T10:06+09:00"
-   },
-   "corner_name": "소식"
+    "rank": 2,
+    "why": "레이더 상위 양홍원의 '지금 일어난 일' · 커버 글자와 곡 제목이 맞물리는 묘한 사실 하나로 표지 한 장",
+    "at": "2026-11-11T16:21+09:00"
+   }
   },
   {
    "source": {
@@ -975,12 +970,12 @@
      "at": "2026-11-11T10:09+09:00"
     }
    },
+   "corner_name": "후속",
    "pick": {
-    "rank": 2,
+    "rank": 3,
     "why": "숏폼 한 자리 · 이름 둘이 노래로 얽힌 관계 정리 · 본인 채널 영상이라 클립 위험 낮음",
-    "at": "2026-11-11T10:06+09:00"
-   },
-   "corner_name": "후속"
+    "at": "2026-11-11T16:21+09:00"
+   }
   },
   {
    "source": {
@@ -1342,6 +1337,320 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:bestie-why-now",
+    "account": "스포티비뉴스",
+    "url": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1018920",
+    "image": null,
+    "head": "베스티, 역주행 열풍 어디까지 갈까…멜론 톱10 진입, 음방 영상 1100만뷰",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T16:21+09:00",
+   "key": "1f4e157f",
+   "by": "claude",
+   "subjects": [
+    "베스티"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "S",
+    "kind": "정보",
+    "angle": "왜 지금 베스티인가 — 노래가 먼저 돌아오고, 사람이 그 노래를 따라 돌아왔다 (편집 영상 → 13주년 재결합 → 4000여 일 만의 무대 → 멜론 첫 10위권)",
+    "why": "브리핑 목표 '인물해부' · 프로필 변화 팔로워 5일 새 +28,274명(44%) · 뉴스 급상승 (스포티비뉴스·앳스타일 11/9) · 11/6 대만 차트 글의 후속 — 새 사실은 멜론 첫 10위권"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T16:21+09:00",
+   "corner": "followup",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n베스티(@bestie_ofcl)의 '연애의 조건'이 발매 13년 만에 처음으로 멜론 톱100 10위 안에 들었습니다.\n\n2013년 10월 용감한형제가 만든 이 노래는 올해 하츠투하츠의 안무 영상에 이 곡을 입힌 한 팬의 편집 영상으로 다시 불리기 시작했는데요, 숏폼과 챌린지를 타고 번진 노래는 발매 13주년인 10월 17일 네 멤버의 재결합으로 이어졌습니다.\n\n혜연·유지·다혜·해령은 10월 31일 〈쇼! 음악중심〉에서 4000여 일 만에 함께 음악방송 무대에 섰고, 멤버들은 연습을 시작하니 \"몸이 기억하고 있구나 싶었다\"고 SNS에 적었습니다.\n\n노래가 먼저 돌아왔고, 네 사람이 그 노래를 따라 돌아온 셈입니다.\n\n#PLOT #베스티 #연애의조건 #BESTie #용감한형제\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792889262/s8ryp64s34answy3etba.jpg\n제목: 베스티 '연애의 조건'이|13년 만에 뜨기까지\n부제: 왜 지금 베스티인가\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792889235/ns2x5d2tcf9mmqii0qaa.jpg\n소제목: 2013년 10월 17일\n본문: '연애의 조건'은 베스티가 데뷔한 해인 2013년 10월에 나온 댄스곡입니다.||곡은 용감한형제가 만들었습니다. 그리고 13년 동안 이 노래는 멜론 10위 안에 든 적이 없었습니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792889277/obzbvdpgs1oaoucyp1no.jpg\n소제목: 불씨는 편집 영상 하나\n본문: 다시 불리기 시작한 건 올해, 한 팬이 만든 편집 영상에서였습니다.||하츠투하츠가 일렬로 서서 걷듯 춤추는 무대 영상에 '연애의 조건'의 한 구간을 입힌 영상인데요, 이 영상이 퍼지면서 노래는 숏폼과 댄스 챌린지를 타고 번졌습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792889256/eqrng0xcc5g5bntmmsyl.jpg\n소제목: 13주년에 맞춘 재결합\n본문: 10월 17일, 발매 13주년인 날 혜연·유지·다혜·해령 네 사람이 다시 팀으로 모이기로 했다는 소식이 나왔습니다.||베스티 측은 13주년을 맞는 날이라 재결합 소식이 \"더욱 뜻깊다\"고 밝혔습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792889269/pjabtnucspsywukn5vih.jpg\n소제목: 4000여 일 만의 무대\n본문: 10월 31일 〈쇼! 음악중심〉에서 넷은 4000여 일 만에 함께 음악방송 무대에 섰습니다.||멤버들은 SNS에 처음엔 막막하기도 했지만 막상 연습을 시작하니 \"몸이 기억하고 있구나 싶었다\"고 적었습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1793352832/r9tzhekkwdg7yrwg9yzf.jpg\n소제목: 그리고 지금\n본문: 9일 오전, '연애의 조건'은 멜론 톱100 9위에 올랐습니다. 처음 들어선 10위권입니다.||대만에서는 8일 스포티파이·애플뮤직·아이튠즈 1위에 올랐고, 음악중심 무대 영상과 풀캠 영상의 조회수는 합쳐서 1100만을 넘었습니다.\n출처:\n",
+    "caption": "베스티(@bestie_ofcl)의 '연애의 조건'이 발매 13년 만에 처음으로 멜론 톱100 10위 안에 들었습니다.\n\n2013년 10월 용감한형제가 만든 이 노래는 올해 하츠투하츠의 안무 영상에 이 곡을 입힌 한 팬의 편집 영상으로 다시 불리기 시작했는데요, 숏폼과 챌린지를 타고 번진 노래는 발매 13주년인 10월 17일 네 멤버의 재결합으로 이어졌습니다.\n\n혜연·유지·다혜·해령은 10월 31일 〈쇼! 음악중심〉에서 4000여 일 만에 함께 음악방송 무대에 섰고, 멤버들은 연습을 시작하니 \"몸이 기억하고 있구나 싶었다\"고 SNS에 적었습니다.\n\n노래가 먼저 돌아왔고, 네 사람이 그 노래를 따라 돌아온 셈입니다.\n\n#PLOT #베스티 #연애의조건 #BESTie #용감한형제",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889262/s8ryp64s34answy3etba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_bzzdzjwg/auto_pdb_베스티_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889277/obzbvdpgs1oaoucyp1no.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_4sllu8a8/auto_pdb_베스티_비하인드_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889256/eqrng0xcc5g5bntmmsyl.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_e3f5kqri/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889269/pjabtnucspsywukn5vih.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_3wli4l6j/auto_pdb_베스티_매거진 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793352832/r9tzhekkwdg7yrwg9yzf.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_5kblvvve/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792195452/isvzjdwtfpgpg71xhtdt.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_nqsq2spr/auto_pdb_베스티_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889252/dqz3eqpuehtdmw5idadb.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_s3_qujuc/auto_pdb_베스티_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889247/he7usolb35dhnqctwsvh.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_0vt8a5kq/auto_pdb_베스티_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889266/zxtcitcs76tyxfjazxnw.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_01w2l1n4/auto_pdb_베스티_근황_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889262/s8ryp64s34answy3etba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_bzzdzjwg/auto_pdb_베스티_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889277/obzbvdpgs1oaoucyp1no.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_4sllu8a8/auto_pdb_베스티_비하인드_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889256/eqrng0xcc5g5bntmmsyl.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_e3f5kqri/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889269/pjabtnucspsywukn5vih.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_3wli4l6j/auto_pdb_베스티_매거진 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793352832/r9tzhekkwdg7yrwg9yzf.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_5kblvvve/auto_pdb_베스티_프로필_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792195452/isvzjdwtfpgpg71xhtdt.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_nqsq2spr/auto_pdb_베스티_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889252/dqz3eqpuehtdmw5idadb.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_s3_qujuc/auto_pdb_베스티_인터뷰 화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889247/he7usolb35dhnqctwsvh.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_0vt8a5kq/auto_pdb_베스티_근황_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792889266/zxtcitcs76tyxfjazxnw.jpg",
+      "credit": "신뢰",
+      "kind": "셀카·일상",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_01w2l1n4/auto_pdb_베스티_근황_.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "베스티 '연애의 조건'이|13년 만에 뜨기까지",
+      "sub": "왜 지금 베스티인가"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "13년 전 노래로|돌아온 베스티",
+      "sub": "멜론 첫 10위권"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사진이 전부 Cloudinary 401 이라 미리보기가 검은 바탕뿐 — 사람·흐림·글자 겹침·워터마크를 못 봤음 · 사진 붙인 뒤 눈으로 볼 것 / 공식 인스타 '1,000만 뷰' 글은 열어 보지 못해 스포티비뉴스 '무대+풀캠 합산 1100만'으로 바꿈",
+     "[사진 없음] 11/11 pm 회차에 Cloudinary 401(업로드·기존 사진 읽기 모두) — 미리보기가 검은 바탕뿐 · 호스팅 복구 후 다시 올리거나 앱에서 사진 붙일 것",
+     "멤버 SNS 인용(\"몸이 기억하고 있구나 싶었다\")은 일간스포츠 11/1 한 곳 + 검색 요약 — 원 게시물을 못 찾았음 · 해체 경위(소속사 사정·탈퇴)는 서사 금지라 뺐음",
+     "표지 = 베스티 공식 10/31 음악중심 비하인드 컷 (넷이 다 나오는지 · 얼굴과 제목 겹침 확인)"
+    ],
+    "research": [
+     {
+      "title": "스포티비뉴스 11/9 — 9일 오전 멜론 톱100 9위 첫 10위권 · 8일 대만 스포티파이·애플뮤직·아이튠즈 1위 · 음중 무대+풀캠 합산 1100만",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1018920"
+     },
+     {
+      "title": "앳스타일 11/9 — 2013년 10월 발매 · 프로듀서 용감한형제 · 하츠투하츠 안무 영상에 입힌 편집 영상이 계기 · 첫 10위권",
+      "link": "http://www.atstar1.com/news/articleView.html?idxno=6040504"
+     },
+     {
+      "title": "일간스포츠 10/17 — 13주년 재결합 · 베스티 측 \"…13주년을 맞는 날인 만큼 재결합 소식이 더욱 뜻깊다\" · 하츠투하츠 팬 2차 가공 영상",
+      "link": "https://isplus.com/article/view/isp202610170031"
+     },
+     {
+      "title": "iMBC 10/29 — 13주년 재결합 · 10/31 음악중심 · 4인 완전체 음악방송 약 4000여 일 만",
+      "link": "https://enews.imbc.com/News/ViewAmp/522908"
+     },
+     {
+      "title": "일간스포츠 11/1 — 음중 무대 · 멤버 SNS \"막상 연습을 시작하니 몸이 기억하고 있구나 싶었다\"",
+      "link": "https://isplus.com/article/view/isp202611010056"
+     },
+     {
+      "title": "위키트리 — '연애의 조건' 작곡 용감한형제 · 데뷔곡 '두근두근'",
+      "link": "https://www.wikitree.co.kr/articles/1162420"
+     }
+    ],
+    "by": "claude"
+   },
+   "pick": {
+    "rank": 1,
+    "why": "이번 회차 목표 '인물해부' · 베스티 팔로워 5일 새 +44% · 멜론 첫 10위권 — 지금 가장 뜨거운 사람의 '왜'",
+    "at": "2026-11-11T16:21+09:00"
+   },
+   "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "claude:day6-the-present-2026",
+    "account": "스타뉴스",
+    "url": "https://www.starnewskorea.com/music/2026/11/11/2026111114292999504",
+    "image": null,
+    "head": "DAY6, 12월 스페셜 단독 콘서트 'The Present' 개최",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T16:21+09:00",
+   "key": "830bb88a",
+   "by": "claude",
+   "subjects": [
+    "데이식스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "10주년 투어·다섯 번째 팬미팅을 지나 올해 마지막 무대도 매년 이어 온 'The Present'로",
+    "why": "레이더 데이식스 4.5 · 텐아시아·스타뉴스·조이뉴스24 11/11 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T16:21+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n데이식스(@day6kilogram)가 올해 연말도 'The Present'로 마이데이를 만납니다.\n\n데이식스는 12월 18일부터 20일까지 사흘 동안 서울 KSPO DOME에서 '2026 DAY6 Special Concert 'The Present''를 엽니다. 'The Present'는 데이식스가 매년 연말 이어 온 공연 이름인데요, 7월 10주년 투어 'The DECADE'를 마치고 10월 다섯 번째 팬미팅을 지난 네 사람이 올해 마지막 무대도 이 이름으로 꾸립니다.\n\n팬클럽 선예매는 11월 19일, 일반 예매는 20일 NOL에서 열립니다.\n\n#PLOT #데이식스 #DAY6 #ThePresent #마이데이\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794149864/ts2xn9bbkjy9bfvozc9v.jpg\n제목: 데이식스, 올해 연말도|'The Present'로\n부제: 12월 18~20일 KSPO DOME\n출처: @day6kilogram\n",
+    "caption": "데이식스(@day6kilogram)가 올해 연말도 'The Present'로 마이데이를 만납니다.\n\n데이식스는 12월 18일부터 20일까지 사흘 동안 서울 KSPO DOME에서 '2026 DAY6 Special Concert 'The Present''를 엽니다. 'The Present'는 데이식스가 매년 연말 이어 온 공연 이름인데요, 7월 10주년 투어 'The DECADE'를 마치고 10월 다섯 번째 팬미팅을 지난 네 사람이 올해 마지막 무대도 이 이름으로 꾸립니다.\n\n팬클럽 선예매는 11월 19일, 일반 예매는 20일 NOL에서 열립니다.\n\n#PLOT #데이식스 #DAY6 #ThePresent #마이데이",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794149864/ts2xn9bbkjy9bfvozc9v.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/861173894_18497952310101430_4125623935164843806_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=35iUorNKKSkQ7kNvwGCWJdI&_nc_oc=AdpydIKNI7GOAk9hrmRXEbFVOx3QT1GVtnziIg0AM_ZZUj-DkHMd6ZG0fpbYa_bMCMk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=rEgd9VFaTpiYqBlowQhD8A&oh=00_AQTwHpPkh6qJ33uMS9eZYDjpykrb77vY2TLAYSFlFQujwg&oe=6AF64EE0"
+     },
+     {
+      "url": "https://i.ibb.co/pvM6mCWG/72238c60f9eb.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/878353990_18496410019101430_6266184798138158721_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hZcRRp9s_iYQ7kNvwGk_LKD&_nc_oc=Adq4F0qogAQTYMwBWbgsyylUE4p--L7ltGuGjHUkNTae4mlu8ntXsGczfQYTNLToQuw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fI6Er6rxf7k9VyMroo56Nw&oh=00_AQQzc9QgBb8GZR6ORBFXafJM4i5skuUmzXSu5W3fMIwe2A&oe=6AED4EB0"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239736/ssywtbibkyssnbvjjj0s.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/871252742_18495702595101430_3327308664840841819_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=naFT1OomA_4Q7kNvwHOCHio&_nc_oc=Adr47_PCKXrXVj7bHG8F1FduaRY3Jpd_B5XmjLqwPD5dB7B7Lc-y7EmNQF4Yfo-0eqM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=57hdjMmvJ_uIgALAL5nsdg&oh=00_AQRn8O-wBueFGqWLQlIfs0U7phYr8yJNKsZbsWzkxrsl4Q&oe=6AE8921C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792884759/unfqmym3hfyywpee5ntn.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/862738407_18494727037101430_5433665094019275087_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=BuYjwr4Wk5EQ7kNvwFql5ZP&_nc_oc=AdrBKL7XE9AcbMvzhqAxHaRO3cA7iSECinQTvMVKDOHzzrDGvXGJNrYhBWT9-c0bVBY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=NMoPMksgOnjDCMeGj87tEQ&oh=00_AQPucBln7EJF1nh1xjElBrGbo5AGXWgr-hhgEu0x3R--7w&oe=6AE31012"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794149864/ts2xn9bbkjy9bfvozc9v.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/861173894_18497952310101430_4125623935164843806_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=35iUorNKKSkQ7kNvwGCWJdI&_nc_oc=AdpydIKNI7GOAk9hrmRXEbFVOx3QT1GVtnziIg0AM_ZZUj-DkHMd6ZG0fpbYa_bMCMk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=rEgd9VFaTpiYqBlowQhD8A&oh=00_AQTwHpPkh6qJ33uMS9eZYDjpykrb77vY2TLAYSFlFQujwg&oe=6AF64EE0"
+     },
+     {
+      "url": "https://i.ibb.co/pvM6mCWG/72238c60f9eb.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/878353990_18496410019101430_6266184798138158721_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hZcRRp9s_iYQ7kNvwGk_LKD&_nc_oc=Adq4F0qogAQTYMwBWbgsyylUE4p--L7ltGuGjHUkNTae4mlu8ntXsGczfQYTNLToQuw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fI6Er6rxf7k9VyMroo56Nw&oh=00_AQQzc9QgBb8GZR6ORBFXafJM4i5skuUmzXSu5W3fMIwe2A&oe=6AED4EB0"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1793239736/ssywtbibkyssnbvjjj0s.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/871252742_18495702595101430_3327308664840841819_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=naFT1OomA_4Q7kNvwHOCHio&_nc_oc=Adr47_PCKXrXVj7bHG8F1FduaRY3Jpd_B5XmjLqwPD5dB7B7Lc-y7EmNQF4Yfo-0eqM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=57hdjMmvJ_uIgALAL5nsdg&oh=00_AQRn8O-wBueFGqWLQlIfs0U7phYr8yJNKsZbsWzkxrsl4Q&oe=6AE8921C"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792884759/unfqmym3hfyywpee5ntn.jpg",
+      "credit": "@day6kilogram",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/862738407_18494727037101430_5433665094019275087_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=BuYjwr4Wk5EQ7kNvwFql5ZP&_nc_oc=AdrBKL7XE9AcbMvzhqAxHaRO3cA7iSECinQTvMVKDOHzzrDGvXGJNrYhBWT9-c0bVBY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=NMoPMksgOnjDCMeGj87tEQ&oh=00_AQPucBln7EJF1nh1xjElBrGbo5AGXWgr-hhgEu0x3R--7w&oe=6AE31012"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "데이식스, 올해 연말도|'The Present'로",
+      "sub": "12월 18~20일 KSPO DOME"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사진이 Cloudinary 401 이라 못 봤음 · 이 항목은 picks 에 없고, picks 의 양홍원·최유리 항목은 파일에 본문이 없음 — 오늘 올릴 목록 확인할 것",
+     "[사진 없음] Cloudinary 401 로 기사 사진을 못 붙임 — 호스팅 복구 후 다시 올리거나 앱에서 사진 붙일 것",
+     "예매 시각(선예매 오후 8시~11시 59분 · 일반 오후 8시)은 스타뉴스 한 곳뿐이라 캡션에서 뺌"
+    ],
+    "research": [
+     {
+      "title": "스타뉴스 11/11 — 12/18~20 KSPO DOME · 19일 팬클럽 선예매 · 20일 일반 예매 · NOL · 7월 'The DECADE' 투어 마무리",
+      "link": "https://www.starnewskorea.com/music/2026/11/11/2026111114292999504"
+     },
+     {
+      "title": "텐아시아 11/11 — '매년 연말 선보여 온 The Present 시리즈' · 10일 공식 SNS 포스터",
+      "link": "https://www.tenasia.co.kr/article/2026111102354"
+     },
+     {
+      "title": "조이뉴스24 11/11 — 선예매 11/19 · 일반 11/20 · NOL · 10월 다섯 번째 팬미팅",
+      "link": "http://www.joynews24.com/view/2025030"
+     }
+    ],
+    "by": "claude"
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1468,7 +1777,7 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 2,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -1516,14 +1825,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-11T15:22+09:00"
+  "at": "2026-11-11T16:21+09:00"
  },
  "queue": {
-  "next": "2026-11-11T15:24+09:00",
+  "next": "2026-11-11T16:23+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-11T12:56+09:00"
