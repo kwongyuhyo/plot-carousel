@@ -1,414 +1,180 @@
 {
  "schema": 1,
- "date": "2026-11-10",
- "generated_at": "2026-11-10 11:00 KST",
+ "date": "2026-11-11",
+ "generated_at": "2026-11-11 11:02 KST",
  "items": [
   {
    "source": {
-    "id": "claude:gta6-dev-complete",
-    "account": "Output Lag",
-    "url": "https://outputlag.com/news/gta-6-officially-goes-gold-take-two-pre-orders-unprecedented/",
+    "id": "claude:gta6-festival",
+    "account": "Rockstar Games",
+    "url": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival",
     "image": null,
-    "head": "테이크투 젤닉 \"락스타가 GTA 6 개발을 마쳤다\" · 사전 예약 기대 크게 웃돌아",
+    "head": "Grand Theft Auto VI: The Festival — 11/21 마이애미 마나 윈우드",
     "multiple": null,
-    "is_reel": true,
+    "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-10T11:13+09:00",
-   "key": "2d511d83",
+   "made_at": "2026-11-11T11:06+09:00",
+   "key": "b0c8f1a2",
    "by": "claude",
    "subjects": [
     "GTA 6"
    ],
    "lane": "정보",
    "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "출시 아흐레 전, 테이크투 대표가 실적 발표에서 '락스타가 GTA 6 개발을 마쳤다'고 말했다 — 사전 예약은 처음 기대를 크게 넘었지만 '성공은 오기 전에 말하지 않는다'",
-    "why": "어제 사전 다운로드 글의 다음 편 · 미뤄질까 하던 팬들이 기다린 한 마디"
-   },
-   "added": "claude",
-   "added_at": "2026-11-10T11:13+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n락스타가 〈GTA 6〉 개발을 마쳤다는 말이 출시 아흐레 전에 나왔습니다.\n\n모회사 테이크투의 스트라우스 젤닉 대표가 현지 시간 9일 실적 발표에서 직접 밝혔는데요, 출시가 여러 차례 미뤄졌던 만큼 팬들이 가장 기다린 한 마디였습니다. 사전 예약도 회사가 처음 기대한 수준을 크게 넘고 있다고 했습니다.\n\n그래도 젤닉 대표는 숫자를 내놓지 않았습니다. \"성공은 오기 전에 말하지 않는 편입니다.\" 테이크투 자료에 따르면 전작 〈GTA 5〉는 지금까지 약 2억 3,500만 장이 팔렸습니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · 스탠다드 8만 9,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투 #그랜드테프트오토\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794276833/patsxrq9mfvtljcw5adx.jpg\n제목: 락스타가|GTA 6 개발을 마쳤다\n부제: 출시 아흐레 전 테이크투 실적 발표에서\n출처: Rockstar Games\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794276852/plot_studio/xe37fs39ovf5saqag0vn.mp4\n소제목: \n본문: \n출처: Rockstar Games\n",
-    "caption": "락스타가 〈GTA 6〉 개발을 마쳤다는 말이 출시 아흐레 전에 나왔습니다.\n\n모회사 테이크투의 스트라우스 젤닉 대표가 현지 시간 9일 실적 발표에서 직접 밝혔는데요, 출시가 여러 차례 미뤄졌던 만큼 팬들이 가장 기다린 한 마디였습니다. 사전 예약도 회사가 처음 기대한 수준을 크게 넘고 있다고 했습니다.\n\n그래도 젤닉 대표는 숫자를 내놓지 않았습니다. \"성공은 오기 전에 말하지 않는 편입니다.\" 테이크투 자료에 따르면 전작 〈GTA 5〉는 지금까지 약 2억 3,500만 장이 팔렸습니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · 스탠다드 8만 9,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투 #그랜드테프트오토",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276833/patsxrq9mfvtljcw5adx.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://outputlag.com/wp-content/uploads/2026/11/gta-6-jason-lucia-bar-launch-trailer-gone-gold.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276836/alnzngefldfxopegykor.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://d1lss44hh2trtw.cloudfront.net/assets/article/2026/08/27/gta-6-character-swaps_feature.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276833/patsxrq9mfvtljcw5adx.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://outputlag.com/wp-content/uploads/2026/11/gta-6-jason-lucia-bar-launch-trailer-gone-gold.jpg"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276836/alnzngefldfxopegykor.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://d1lss44hh2trtw.cloudfront.net/assets/article/2026/08/27/gta-6-character-swaps_feature.jpg"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "락스타가|GTA 6 개발을 마쳤다",
-      "sub": "출시 아흐레 전 테이크투 실적 발표에서"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "출시 아흐레 전,|GTA 6 개발 끝",
-      "sub": "테이크투 대표 스트라우스 젤닉"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "'개발을 마쳤다'는 젤닉의 실적 콜 발언(Output Lag 영문 인용 · Omelete 포르투갈어 인용) — 락스타 자체 '골드' 공지는 못 찾음 · 사전 예약 수량은 회사가 밝히지 않아 외부 추정치(센서타워 등)는 뺌",
-     "숏폼은 어제 쓴 런치 트레일러를 피해 트레일러 2 · 구간 0:15-0:40 은 영상을 직접 보지 않고 잡음"
-    ],
-    "research": [
-     {
-      "title": "Output Lag — GTA 6 officially goes gold, Take-Two says",
-      "link": "https://outputlag.com/news/gta-6-officially-goes-gold-take-two-pre-orders-unprecedented/"
-     },
-     {
-      "title": "Omelete — GTA 6 alcança status de gold",
-      "link": "https://www.omelete.com.br/games/gta-6-alcanca-status-de-gold-pronto-para-o-lancamento"
-     },
-     {
-      "title": "Shacknews — GTA 6 pre-orders are tracking far above expectations",
-      "link": "https://www.shacknews.com/article/151308/grand-theft-auto-6-pre-orders-q2-fy27"
-     },
-     {
-      "title": "Variety — GTA 6 preorders exceed expectations",
-      "link": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/"
-     },
-     {
-      "title": "Take-Two IR 자료 (프랜차이즈 누적 판매)",
-      "link": "https://ir.take2games.com/static-files/c4c4f7f0-6a7c-4159-b97f-089a76580c38"
-     },
-     {
-      "title": "루리웹 — GTA V 약 2억 3500만장, 레데리2 8900만장 돌파",
-      "link": "https://bbs.ruliweb.com/news/board/1001/read/2366074"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276895/b4ew0dkshxohatnijew6.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276898/psieggcwpcwzzsccrgej.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276895/p7nvwa3pwijzeegcoexg.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276895/b4ew0dkshxohatnijew6.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-10T11:14+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794276896/plot_studio/jj8chrzgsstsapycrkze.mp4"
-     },
-     "v": {
-      "A": "13561798"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=VQRLujxTm3c\n구간: 0:15-0:40\n곡: GTA 6 개발이 끝났습니다\n아티스트: 출시 아흐레 전,\n피처링:\n후킹: \n출처: Rockstar Games\n자막: 자동",
-    "caption": "락스타가 〈GTA 6〉 개발을 마쳤다는 말이 출시 아흐레 전에 나왔습니다.\n\n테이크투의 스트라우스 젤닉 대표가 현지 시간 9일 실적 발표에서 밝혔는데요, 사전 예약도 처음 기대를 크게 넘고 있다면서 \"성공은 오기 전에 말하지 않는 편\"이라고 덧붙였습니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · 스탠다드 8만 9,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투 #그랜드테프트오토",
-    "hooks": {
-     "A": "출시 아흐레 전, / GTA 6 개발이 끝났습니다",
-     "B": "락스타가 드디어 / GTA 6 개발을 마쳤다",
-     "C": "출시 아흐레 남기고 / GTA 6 개발 완료"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=VQRLujxTm3c",
-     "credit": "Rockstar Games",
-     "range": [
-      15.0,
-      40.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "'개발을 마쳤다'는 젤닉의 실적 콜 발언(Output Lag 영문 인용 · Omelete 포르투갈어 인용) — 락스타 자체 '골드' 공지는 못 찾음 · 사전 예약 수량은 회사가 밝히지 않아 외부 추정치(센서타워 등)는 뺌",
-     "숏폼은 어제 쓴 런치 트레일러를 피해 트레일러 2 · 구간 0:15-0:40 은 영상을 직접 보지 않고 잡음"
-    ],
-    "research": [
-     {
-      "title": "Output Lag — GTA 6 officially goes gold, Take-Two says",
-      "link": "https://outputlag.com/news/gta-6-officially-goes-gold-take-two-pre-orders-unprecedented/"
-     },
-     {
-      "title": "Omelete — GTA 6 alcança status de gold",
-      "link": "https://www.omelete.com.br/games/gta-6-alcanca-status-de-gold-pronto-para-o-lancamento"
-     },
-     {
-      "title": "Shacknews — GTA 6 pre-orders are tracking far above expectations",
-      "link": "https://www.shacknews.com/article/151308/grand-theft-auto-6-pre-orders-q2-fy27"
-     },
-     {
-      "title": "Variety — GTA 6 preorders exceed expectations",
-      "link": "https://variety.com/2026/gaming/news/gta-6-preorders-expectations-launch-1236943278/"
-     },
-     {
-      "title": "Take-Two IR 자료 (프랜차이즈 누적 판매)",
-      "link": "https://ir.take2games.com/static-files/c4c4f7f0-6a7c-4159-b97f-089a76580c38"
-     },
-     {
-      "title": "루리웹 — GTA V 약 2억 3500만장, 레데리2 8900만장 돌파",
-      "link": "https://bbs.ruliweb.com/news/board/1001/read/2366074"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/VQRLujxTm3c/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276903/j20sokoa538heuprjzgs.jpg",
-     "key": "VQRLujxTm3c@15.0"
-    },
-    "px": {
-     "vid": "VQRLujxTm3c",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794276982/plot_studio/kmwkpxplocw2ndcjeqqn.mp4",
-     "off": 0.0,
-     "end": 85.0,
-     "full": 167.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-10T11:17+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:gears-20th",
-    "account": "Xbox Wire",
-    "url": "https://news.xbox.com/en-us/?p=228001",
-    "image": null,
-    "head": "20 Years of Gears — 더 코얼리션 20주년 인사 · E-데이 RAAM 무료 지급",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-10T11:13+09:00",
-   "key": "f081355d",
-   "by": "claude",
-   "subjects": [
-    "기어스 오브 워"
-   ],
-   "lane": "정보",
-   "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "[실험] 처음 보는 사람을 위한 기어스 20년 — 2006년 엑스박스 360에서 시작한 시리즈가 20주년에 팬들에게 악역 RAAM 을 선물로 내줬다, 만든 사람들의 인사와 함께",
-    "why": "만든 사람(더 코얼리션)의 말이 직접 있는 공식 기념 · 시리즈를 모르는 사람에게도 '20년'으로 읽히는 입문형 실험"
+    "angle": "GTA 6 출시 이틀 뒤, 바이스 시티의 모델 마이애미에서 게임과 사운드트랙에 음악이 실린 아티스트들이 무대에 서는 축제가 열린다",
+    "why": "출시 주간의 새 공식 소식 · 게임 음악이 무대로 옮겨 오는 장면 · 트래비스 스콧·카디 비는 게임 밖 독자에게도 읽힌다"
    },
    "added": "claude",
-   "added_at": "2026-11-10T11:13+09:00",
+   "added_at": "2026-11-11T11:06+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈기어스 오브 워〉가 20년을 맞았습니다.\n\n2006년 엑스박스 360으로 처음 나온 시리즈인데요, 지금 이 시리즈를 만드는 더 코얼리션은 기념일인 7일 지난달 나온 〈기어스 오브 워: E-데이〉에 접속한 모든 사람에게 악역 RAAM 을 멀티플레이 캐릭터로 내줬습니다. 2주 동안 한정 모드와 보상을 담은 기념 이벤트도 열립니다.\n\n12월 1일 시작하는 시즌 2는 이름부터 '레거시'입니다. 2편에서 도미닉이 마리아와 찍은 사진 속 옷차림도 스킨으로 돌아옵니다. 스튜디오는 팬들에게 한 마디를 남겼습니다. \"기어스를 여러분 삶의 일부로 만들어 줘서 고맙습니다.\"\n\n기어스 오브 워: E-데이 · 엑스박스 시리즈 X|S·PC\n\n#겜디핑 #기어스오브워 #더코얼리션 #엑스박스 #E데이\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794276855/poem5rok5awtdikxm9fa.jpg\n제목: 기어스 오브 워,|20년을 맞았습니다\n부제: 2006년 엑스박스 360에서 시작한 시리즈\n출처: Xbox Game Studios\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794276883/plot_studio/sbnxghc3kl4sas3wdwvs.mp4\n소제목: \n본문: \n출처: Gears of War\n",
-    "caption": "〈기어스 오브 워〉가 20년을 맞았습니다.\n\n2006년 엑스박스 360으로 처음 나온 시리즈인데요, 지금 이 시리즈를 만드는 더 코얼리션은 기념일인 7일 지난달 나온 〈기어스 오브 워: E-데이〉에 접속한 모든 사람에게 악역 RAAM 을 멀티플레이 캐릭터로 내줬습니다. 2주 동안 한정 모드와 보상을 담은 기념 이벤트도 열립니다.\n\n12월 1일 시작하는 시즌 2는 이름부터 '레거시'입니다. 2편에서 도미닉이 마리아와 찍은 사진 속 옷차림도 스킨으로 돌아옵니다. 스튜디오는 팬들에게 한 마디를 남겼습니다. \"기어스를 여러분 삶의 일부로 만들어 줘서 고맙습니다.\"\n\n기어스 오브 워: E-데이 · 엑스박스 시리즈 X|S·PC\n\n#겜디핑 #기어스오브워 #더코얼리션 #엑스박스 #E데이",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉 출시 이틀 뒤, 마이애미에서 음악 축제가 열립니다.\n\n록스타 게임즈가 플레이스테이션과 함께 여는 'Grand Theft Auto VI: The Festival'인데요, 게임과 공식 사운드트랙에 음악이 실린 아티스트들이 두 무대에 오릅니다. 트래비스 스콧, 카디 비, 메트로 부민, 타이니, 저스티스(DJ 셋) 등이 이름을 올렸고, 마이애미 음악 축제 III Points 를 만든 팀이 꾸립니다.\n\n게임 속 바이스 시티의 모델이 된 도시에서, 게임의 라디오가 그대로 무대로 옮겨 오는 셈입니다.\n\n11월 21일(현지) 마이애미 마나 윈우드 · 17세 이상 · DICE 추첨 당첨자만 구매 · 〈GTA 6〉 11월 19일 PS5·엑스박스 시리즈 X|S 출시\n\n#겜디핑 #GTA6 #락스타게임즈 #트래비스스콧 #카디비\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794362780/yxchzshiec5l78whgtxq.jpg\n제목: GTA 6 출시 이틀 뒤,|마이애미에서 축제\n부제: Grand Theft Auto VI: The Festival\n출처: Rockstar Games\n",
+    "caption": "〈GTA 6〉 출시 이틀 뒤, 마이애미에서 음악 축제가 열립니다.\n\n록스타 게임즈가 플레이스테이션과 함께 여는 'Grand Theft Auto VI: The Festival'인데요, 게임과 공식 사운드트랙에 음악이 실린 아티스트들이 두 무대에 오릅니다. 트래비스 스콧, 카디 비, 메트로 부민, 타이니, 저스티스(DJ 셋) 등이 이름을 올렸고, 마이애미 음악 축제 III Points 를 만든 팀이 꾸립니다.\n\n게임 속 바이스 시티의 모델이 된 도시에서, 게임의 라디오가 그대로 무대로 옮겨 오는 셈입니다.\n\n11월 21일(현지) 마이애미 마나 윈우드 · 17세 이상 · DICE 추첨 당첨자만 구매 · 〈GTA 6〉 11월 19일 PS5·엑스박스 시리즈 X|S 출시\n\n#겜디핑 #GTA6 #락스타게임즈 #트래비스스콧 #카디비",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276855/poem5rok5awtdikxm9fa.jpg",
-      "credit": "Xbox Game Studios",
-      "from": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/GoW_EDAY_20th_Lancer-027826f9d544349f4546-1600x900.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362780/yxchzshiec5l78whgtxq.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://images.keengamer.com/wp-content/uploads/2026/11/GTA-6-Music-Festival.jpeg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276859/n5lm4u9ccywneqkydfqp.jpg",
-      "credit": "Xbox Wire",
-      "from": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/GoW_EDAY_20th_Lancer-027826f9d544349f4546.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362783/kw5dgaj3qtjnqaoboggi.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://images.keengamer.com/wp-content/uploads/2026/11/GTA-6-Music-Festival.jpeg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276855/poem5rok5awtdikxm9fa.jpg",
-      "credit": "Xbox Game Studios",
-      "from": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/GoW_EDAY_20th_Lancer-027826f9d544349f4546-1600x900.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362780/yxchzshiec5l78whgtxq.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://images.keengamer.com/wp-content/uploads/2026/11/GTA-6-Music-Festival.jpeg"
      },
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276859/n5lm4u9ccywneqkydfqp.jpg",
-      "credit": "Xbox Wire",
-      "from": "https://xboxwire.thesourcemediaassets.com/sites/2/2026/11/GoW_EDAY_20th_Lancer-027826f9d544349f4546.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362783/kw5dgaj3qtjnqaoboggi.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://images.keengamer.com/wp-content/uploads/2026/11/GTA-6-Music-Festival.jpeg"
      }
     ],
-    "shape": "맥락",
+    "shape": "단신",
     "covers": [
      {
       "key": "A",
       "hook": "Claude",
-      "title": "기어스 오브 워,|20년을 맞았습니다",
-      "sub": "2006년 엑스박스 360에서 시작한 시리즈"
+      "title": "GTA 6 출시 이틀 뒤,|마이애미에서 축제",
+      "sub": "Grand Theft Auto VI: The Festival"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "20주년 선물로|악역 RAAM 을 내줬다",
-      "sub": "기어스 오브 워: E-데이"
+      "title": "GTA 6 음악이|무대로 나온다",
+      "sub": "트래비스 스콧·카디 비 · 11월 21일 마이애미"
      }
     ],
     "issues": [],
     "confirm": [
-     "20주년 날짜(11월 7일)는 Xbox Wire 6일 글의 '내일이 기념일' 에서 짚은 것 · 기념 이벤트 끝나는 날은 '2주'라고만 있어 날짜를 뺌 · 한국어 지원은 확인 못 해 뺌",
-     "[검증] 숏폼 구간을 0:04-0:29 로 옮김 — 0:00 은 'Rated M' 등급 화면 · 이 구간은 세라 이야기를 읊는 내레이션(만든 사람의 인사는 아님)이라 후킹 A '만든 사람들이 보낸 편지'가 맞는지 화면으로 볼 것"
+     "록스타 뉴스와이어 원문은 본문을 못 읽음 — 라인업·추첨·17세 이상은 KeenGamer·games.gg·iXBT 기준 · 티켓 가격과 생중계 여부는 어느 곳에도 없어 쓰지 않음",
+     "표지 사진은 KeenGamer 기사 대표 이미지(록스타 공식 포스터로 보임) — 라인업 글자가 표지 제목과 겹치지 않는지 볼 것"
     ],
     "research": [
      {
-      "title": "Xbox Wire — 20 Years of Gears (Nicole Fawcette, 11/6)",
-      "link": "https://news.xbox.com/en-us/?p=228001"
+      "title": "Rockstar Newswire — Grand Theft Auto VI: The Festival",
+      "link": "https://www.rockstargames.com/newswire/article/o39o87a435a25a/grand-theft-auto-vi-the-festival"
      },
      {
-      "title": "Playday — RAAM returns in 20th anniversary Gears of War: E-Day event",
-      "link": "https://playday.one/2026/11/06/raam-returns-in-20th-anniversary-gears-of-war-e-day-event/"
+      "title": "KeenGamer — Rockstar Announces GTA 6 Music Festival in Miami for November 21",
+      "link": "https://www.keengamer.com/articles/news/rockstar-announces-gta-6-music-festival-in-miami-for-november-21/"
      },
      {
-      "title": "Gears of War 공식 유튜브 — 20 Years | A Love Letter to Gears",
-      "link": "https://www.youtube.com/watch?v=5rSAlsCmsls"
+      "title": "games.gg — Miami to host Rockstar's GTA 6 music festival on November 21",
+      "link": "https://games.gg/news/grand-theft-auto-vi-the-festival-miami/"
      },
      {
-      "title": "게임메카 — 기어스 오브 워: E-데이 출시",
-      "link": "https://www.gamemeca.com/en/view.php?gid=1776203"
+      "title": "Unboxholics — Rockstar Announces Grand Theft Auto VI: The Festival",
+      "link": "https://unboxholics.com/en/news/gaming/138701-rockstar-announces-grand-theft-auto-vi-the-festival"
+     },
+     {
+      "title": "iXBT Games — Rockstar to host a music festival in celebration of GTA VI launch",
+      "link": "https://ixbt.games/en/news/2026/11/10/rockstar-ustroit-muzykalnyi-festival-v-cest-vyxoda-gta-vi.html"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276911/elulvgsce1kqixy8dt6d.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276914/hsgfmp0e0cgoxyoegm8s.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276911/fzow8a25jscromvecpoh.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362803/csc1uypcoje0dxptvvij.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362802/nhknjcnxuym6pmoxrvjq.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276911/elulvgsce1kqixy8dt6d.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362803/csc1uypcoje0dxptvvij.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-10T11:15+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794276912/plot_studio/aigdtzxjfik7clhobzm8.mp4"
-     },
+     "at": "2026-11-11T11:06+09:00",
      "v": {
-      "A": "8f42ddbb"
+      "A": "42a0a5ab"
      }
     }
    },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=5rSAlsCmsls\n구간: 0:04-0:29\n곡: 만든 사람들이 보낸 편지\n아티스트: 기어스 오브 워 20년,\n피처링:\n후킹: \n출처: Gears of War\n자막: 자동",
-    "caption": "〈기어스 오브 워〉가 20년을 맞았습니다.\n\n2006년 엑스박스 360으로 시작한 시리즈인데요, 더 코얼리션은 기념일인 7일 〈기어스 오브 워: E-데이〉 모든 플레이어에게 악역 RAAM 을 선물로 내주고 '기어에 보내는 러브레터' 영상을 올렸습니다. \"기어스를 여러분 삶의 일부로 만들어 줘서 고맙습니다.\"\n\n기어스 오브 워: E-데이 · 엑스박스 시리즈 X|S·PC\n\n#겜디핑 #기어스오브워 #더코얼리션 #엑스박스 #E데이",
-    "hooks": {
-     "A": "기어스 오브 워 20년, / 만든 사람들이 보낸 편지",
-     "B": "2006년에 시작된 기어스가 / 20년을 맞았습니다",
-     "C": "20주년 기념으로 / 공개된 러브레터 영상"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=5rSAlsCmsls",
-     "credit": "Gears of War",
-     "range": [
-      4.0,
-      29.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "20주년 날짜(11월 7일)는 Xbox Wire 6일 글의 '내일이 기념일' 에서 짚은 것 · 기념 이벤트 끝나는 날은 '2주'라고만 있어 날짜를 뺌 · 한국어 지원은 확인 못 해 뺌",
-     "[검증] 숏폼 구간을 0:04-0:29 로 옮김 — 0:00 은 'Rated M' 등급 화면 · 이 구간은 세라 이야기를 읊는 내레이션(만든 사람의 인사는 아님)이라 후킹 A '만든 사람들이 보낸 편지'가 맞는지 화면으로 볼 것"
-    ],
-    "research": [
-     {
-      "title": "Xbox Wire — 20 Years of Gears (Nicole Fawcette, 11/6)",
-      "link": "https://news.xbox.com/en-us/?p=228001"
-     },
-     {
-      "title": "Playday — RAAM returns in 20th anniversary Gears of War: E-Day event",
-      "link": "https://playday.one/2026/11/06/raam-returns-in-20th-anniversary-gears-of-war-e-day-event/"
-     },
-     {
-      "title": "Gears of War 공식 유튜브 — 20 Years | A Love Letter to Gears",
-      "link": "https://www.youtube.com/watch?v=5rSAlsCmsls"
-     },
-     {
-      "title": "게임메카 — 기어스 오브 워: E-데이 출시",
-      "link": "https://www.gamemeca.com/en/view.php?gid=1776203"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/5rSAlsCmsls/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276921/ytns7ri47oujepr2uube.jpg",
-     "key": "5rSAlsCmsls@4.0"
-    },
-    "px": {
-     "vid": "5rSAlsCmsls",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794277027/plot_studio/zlmojlet554cdahou3ak.mp4",
-     "off": 0.0,
-     "end": 74.0,
-     "full": 205.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-10T11:17+09:00"
-    }
+   "pick": {
+    "rank": 1,
+    "why": "GTA 6 출시 여드레 전 · 게임 안 하는 사람도 아는 트래비스 스콧·카디 비가 게임 음악으로 무대에 선다는 묘한 사실 하나",
+    "at": "2026-11-11T11:06+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:tekken-nike-king",
-    "account": "Sneaker News",
-    "url": "https://sneakernews.com/2026/11/09/dotswoosh-tekken-nike-air-max-1-king/",
+    "id": "claude:harada-seoul-talk",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323173",
     "image": null,
-    "head": "나이키 .SWOOSH, 킹의 재규어 가면에서 따온 철권 × 에어맥스 1 티저",
+    "head": "[강연] 하라다가 밝힌 '철권' 30년의 생존법",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-10T11:13+09:00",
-   "key": "a6def366",
+   "made_at": "2026-11-11T11:06+09:00",
+   "key": "5321e2d5",
    "by": "claude",
    "subjects": [
+    "하라다 카츠히로",
     "철권"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "나이키가 철권의 킹을 모델로 세운 티저를 올렸다 — 재규어 가면 무늬를 운동화에, 2024년 철권 8 폼포짓에 이은 두 번째 협업",
-    "why": "굿즈·콜라보 · 게임 안 하는 사람도 읽히는 운동화 소식 · 캐릭터 한 명이 바로 보인다"
+    "angle": "철권을 30년 가까이 이끈 하라다가 서울에서 '좋은 게임보다 전달이 더 중요해졌다'고 말했다 — 개발팀이 유통·지역 타깃·커뮤니티까지 맡았고, 한국판에 한국 캐릭터 자리를 따로 뒀던 이야기",
+    "why": "만든 사람의 말 · 서울 강연 · 한국판 캐릭터가 한국 독자에게 걸린다"
    },
    "added": "claude",
-   "added_at": "2026-11-10T11:13+09:00",
+   "added_at": "2026-11-11T11:06+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈철권〉의 킹이 나이키 운동화 티저의 모델로 섰습니다.\n\n나이키의 게임·인터넷 문화 부문 .SWOOSH 가 9일 올린 티저인데요, 재규어 가면을 쓴 킹이 나이키 테크 플리스 차림으로 나와 카메라를 돌아봅니다. 발에 신은 운동화는 킹의 가면에서 따온 재규어 무늬에 네이비 바탕, 빨간 스우시를 얹었습니다.\n\n두 브랜드는 2024년 〈철권 8〉을 기념해 카즈야와 진을 담은 에어 폼포짓 원을 낸 적이 있어, 이번이 두 번째 협업입니다. 스니커 매체들은 이 에어맥스 1이 올해 연말 시즌 160달러에 나올 것이라고 전했습니다.\n\n#겜디핑 #철권 #나이키 #에어맥스1 #반다이남코\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794276886/yikl9ahoeka9o4vn8rsl.jpg\n제목: 철권의 킹이|나이키 모델로 섰다\n부제: 철권 × 나이키 두 번째 협업 티저\n출처: Nike\n",
-    "caption": "〈철권〉의 킹이 나이키 운동화 티저의 모델로 섰습니다.\n\n나이키의 게임·인터넷 문화 부문 .SWOOSH 가 9일 올린 티저인데요, 재규어 가면을 쓴 킹이 나이키 테크 플리스 차림으로 나와 카메라를 돌아봅니다. 발에 신은 운동화는 킹의 가면에서 따온 재규어 무늬에 네이비 바탕, 빨간 스우시를 얹었습니다.\n\n두 브랜드는 2024년 〈철권 8〉을 기념해 카즈야와 진을 담은 에어 폼포짓 원을 낸 적이 있어, 이번이 두 번째 협업입니다. 스니커 매체들은 이 에어맥스 1이 올해 연말 시즌 160달러에 나올 것이라고 전했습니다.\n\n#겜디핑 #철권 #나이키 #에어맥스1 #반다이남코",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈철권〉을 오래 이끈 하라다 카츠히로가 서울에서 시리즈가 30년을 버틴 법을 이야기했습니다.\n\n지난해 말 반다이남코를 떠나 SNK 와 함께 VS 스튜디오를 세운 그는 9일 롯데월드타워에서 열린 '콘솔게임 개발자 컨퍼런스 2026' 글로벌 트랙의 마지막 강연을 맡았는데요, 개발팀이 게임만 만든 게 아니라 지역별 캐릭터와 현지 커뮤니티 대회 지원까지 직접 챙겼다고 돌아봤습니다. 한국판에 한국 캐릭터 자리를 따로 마련한 것도 그 일부였습니다.\n\n강연 자료 기준 시리즈 누적 판매는 6,400만 장, 그중 97% 넘게가 일본 밖에서 팔렸고 유럽 비중만 40% 안팎입니다. 그는 \"좋은 게임을 만드는 '크리에이티브' 이상으로, 그것을 유저에게 어떻게 알리고 전달할 것인가가 훨씬 중요합니다\"라고 했습니다.\n\n#겜디핑 #철권 #하라다카츠히로 #VS스튜디오 #게임데이즈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794362786/bfatmaoji9j1o5youx2v.jpg\n제목: 철권을 30년 지킨 건|창의성만이 아니었다\n부제: 하라다 카츠히로 · 서울 강연\n출처: 인벤\n",
+    "caption": "〈철권〉을 오래 이끈 하라다 카츠히로가 서울에서 시리즈가 30년을 버틴 법을 이야기했습니다.\n\n지난해 말 반다이남코를 떠나 SNK 와 함께 VS 스튜디오를 세운 그는 9일 롯데월드타워에서 열린 '콘솔게임 개발자 컨퍼런스 2026' 글로벌 트랙의 마지막 강연을 맡았는데요, 개발팀이 게임만 만든 게 아니라 지역별 캐릭터와 현지 커뮤니티 대회 지원까지 직접 챙겼다고 돌아봤습니다. 한국판에 한국 캐릭터 자리를 따로 마련한 것도 그 일부였습니다.\n\n강연 자료 기준 시리즈 누적 판매는 6,400만 장, 그중 97% 넘게가 일본 밖에서 팔렸고 유럽 비중만 40% 안팎입니다. 그는 \"좋은 게임을 만드는 '크리에이티브' 이상으로, 그것을 유저에게 어떻게 알리고 전달할 것인가가 훨씬 중요합니다\"라고 했습니다.\n\n#겜디핑 #철권 #하라다카츠히로 #VS스튜디오 #게임데이즈",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276886/yikl9ahoeka9o4vn8rsl.jpg",
-      "credit": "Nike",
-      "from": "https://cdn.sanity.io/images/pu5wtzfc/production/11f29c9993427f6e62e3b4e9f9799b251997e36b-2200x3910.jpg?w=1080&auto=format"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362786/bfatmaoji9j1o5youx2v.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1077217521.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362789/mieccp8lrtcywxrghsuc.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1077217521.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276886/yikl9ahoeka9o4vn8rsl.jpg",
-      "credit": "Nike",
-      "from": "https://cdn.sanity.io/images/pu5wtzfc/production/11f29c9993427f6e62e3b4e9f9799b251997e36b-2200x3910.jpg?w=1080&auto=format"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362786/bfatmaoji9j1o5youx2v.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1077217521.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362789/mieccp8lrtcywxrghsuc.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1077217521.jpg"
      }
     ],
     "shape": "단신",
@@ -416,453 +182,119 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "철권의 킹이|나이키 모델로 섰다",
-      "sub": "철권 × 나이키 두 번째 협업 티저"
+      "title": "철권을 30년 지킨 건|창의성만이 아니었다",
+      "sub": "하라다 카츠히로 · 서울 강연"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "킹의 재규어 가면,|운동화가 된다",
-      "sub": "철권 × 나이키"
+      "title": "하라다가 서울에서|꺼낸 철권 30년",
+      "sub": "콘솔게임 개발자 컨퍼런스 2026"
      }
     ],
     "issues": [],
     "confirm": [
-     "나이키 .SWOOSH 인스타 티저 원문은 직접 못 봄 — 모델명(에어맥스 1)·160달러·연말 시즌은 스니커 매체들이 전한 것이라 캡션에서 '전해졌다'로만 둠 · 국내 발매 여부 확인 못 함",
-     "공식 영상 없어 숏폼 없음 · 표지 사진은 House of Heat 가 올린 티저 화면인데 파일명에 'AI-Enhanced'(매체가 화질을 손봄)가 붙어 있음 — 나이키 .SWOOSH 원본으로 바꿀 수 있으면 바꿀 것 · 킹 얼굴이 로고 띠에 조금 걸림"
+     "인용은 인벤 표기 그대로 · 6,400만 장·유럽 40%·일본 밖 97% 넘게는 강연 자료 기준(인벤 98%, 시사저널e 97% 로 엇갈려 '97% 넘게'로 씀) · 시리즈 햇수도 30년/31년 엇갈려 '30년 넘게'로 씀",
+     "표지 사진은 인벤 기사 강연 사진 — 하라다 본인 얼굴이 맞는지 볼 것"
     ],
     "research": [
      {
-      "title": "Sneaker News — Dotswoosh Teases A Tekken x Nike Air Max 1 Inspired By King's Jaguar Mask",
-      "link": "https://sneakernews.com/2026/11/09/dotswoosh-tekken-nike-air-max-1-king/"
+      "title": "인벤 — [강연] 하라다가 밝힌 '철권' 30년의 생존법",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323173"
      },
      {
-      "title": "Sole Retriever — Nike Teases a Tekken x Nike Air Max 1 Low Poly Combo Collab",
-      "link": "https://www.soleretriever.com/news/articles/tekken-nike-air-max-1-low-poly-combo-king-teaser"
+      "title": "시사저널e — \"개발 만으론 콘솔게임 경쟁력 못 키워\"···'완성도·IP'가 글로벌 흥행 가른다",
+      "link": "https://www.sisajournal-e.com/news/articleView.html?idxno=424904"
      },
      {
-      "title": "House of Heat — Early Look: Tekken x Nike .SWOOSH Air Max 1",
-      "link": "https://houseofheat.co/nike/dotswoosh-tekken-air-max-1-releases"
+      "title": "디스이즈게임 — 오락실 게임기에서 가정용 콘솔까지, '철권'이 30년을 살아남은 이유",
+      "link": "https://www.thisisgame.com/articles/432401"
      },
      {
-      "title": "루리웹 — 철권 x 나이키 에어맥스 1 콜라보 티저 공개",
-      "link": "https://bbs.ruliweb.com/news/board/1001/read/2366067"
+      "title": "Gematsu — SNK establishes VS Studio led by Katsuhiro Harada",
+      "link": "https://www.gematsu.com/2026/05/snk-establishes-vs-studio-led-by-katsuhiro-harada"
+     },
+     {
+      "title": "게임메카 — '철권' 하라다 가츠히로 PD, 올해 말 반다이남코 퇴사한다",
+      "link": "https://www.gamemeca.com/mv.php?gid=1768965"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276924/y8ayig4dqzw4t8bfl4m1.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276924/v31rmesdjcjz3fqttaox.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362807/ae055bge72aiplwh4f4q.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362807/imblzohxfu3gmasmhnhi.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794276924/y8ayig4dqzw4t8bfl4m1.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362807/ae055bge72aiplwh4f4q.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-10T11:15+09:00",
+     "at": "2026-11-11T11:06+09:00",
      "v": {
-      "A": "ff7fee28"
+      "A": "213dfe2c"
      }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:fm27-launch",
-    "account": "Football Manager",
-    "url": "https://www.footballmanager.com/news/return-international-management-and-review-fm26",
-    "image": null,
-    "head": "풋볼 매니저 27 출시 · 작년 FM26 에 '전적으로 내 책임'이라 했던 마일스 제이콥슨",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-10T19:16+09:00",
-   "key": "ce00c171",
-   "by": "claude",
-   "subjects": [
-    "풋볼 매니저 27"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "25편은 취소되고 26편은 반응이 엇갈린 뒤, 스튜디오 디렉터가 '전적으로 내 책임'이라 적고 '몰입'을 약속한 그 다음 작품이 오늘 나온다",
-    "why": "만든 사람의 말이 있는 출시 · 한국어 지원 · 오래 해 온 팬들이 지켜보는 한 편"
-   },
-   "added": "claude",
-   "added_at": "2026-11-10T19:16+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈풋볼 매니저 27〉이 오늘 나옵니다.\n\n작년 〈풋볼 매니저 26〉은 시리즈 처음으로 유니티 엔진으로 옮긴 작품이었는데요, 그 앞의 25편은 품질 기준에 못 미친다며 아예 취소됐고 26편도 출시 뒤 반응이 엇갈렸습니다. 스튜디오 디렉터 마일스 제이콥슨은 지난 5월 공식 홈페이지 글에서 \"전적으로 제 책임\"이라고 적었습니다.\n\n같은 글에서 다음 작품의 첫째로 꼽은 말은 '몰입'이었습니다. 이번 작품은 필요한 정보에 더 적게 눌러 닿도록 인터페이스를 다듬고, 선수 구성·훈련·전술 궁합을 하나로 묶은 전술 효율 시스템과 FIFAe 와 함께 만든 멀티플레이 '셔플 드래프트'를 더했습니다.\n\n11월 10일 출시 · PC·맥·PS5·엑스박스 시리즈 X|S · 스팀 6만 9,800원 · 한국어 지원\n\n#겜디핑 #풋볼매니저27 #FM27 #스포츠인터랙티브 #세가\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305806/wzheipamsbffac1vnxgd.jpg\n제목: 풋볼 매니저 27,|오늘 나옵니다\n부제: 작년 '내 책임'이라 했던 스튜디오의 다음 편\n출처: Sports Interactive\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794305828/plot_studio/dqjrbit9l02mlmkrouub.mp4\n소제목: \n본문: \n출처: Football Manager\n",
-    "caption": "〈풋볼 매니저 27〉이 오늘 나옵니다.\n\n작년 〈풋볼 매니저 26〉은 시리즈 처음으로 유니티 엔진으로 옮긴 작품이었는데요, 그 앞의 25편은 품질 기준에 못 미친다며 아예 취소됐고 26편도 출시 뒤 반응이 엇갈렸습니다. 스튜디오 디렉터 마일스 제이콥슨은 지난 5월 공식 홈페이지 글에서 \"전적으로 제 책임\"이라고 적었습니다.\n\n같은 글에서 다음 작품의 첫째로 꼽은 말은 '몰입'이었습니다. 이번 작품은 필요한 정보에 더 적게 눌러 닿도록 인터페이스를 다듬고, 선수 구성·훈련·전술 궁합을 하나로 묶은 전술 효율 시스템과 FIFAe 와 함께 만든 멀티플레이 '셔플 드래프트'를 더했습니다.\n\n11월 10일 출시 · PC·맥·PS5·엑스박스 시리즈 X|S · 스팀 6만 9,800원 · 한국어 지원\n\n#겜디핑 #풋볼매니저27 #FM27 #스포츠인터랙티브 #세가",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305806/wzheipamsbffac1vnxgd.jpg",
-      "credit": "Sports Interactive",
-      "from": "https://cdn.footballmanager.com/site/2026-10/Screen1_3.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305806/wzheipamsbffac1vnxgd.jpg",
-      "credit": "Sports Interactive",
-      "from": "https://cdn.footballmanager.com/site/2026-10/Screen1_3.jpg"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "풋볼 매니저 27,|오늘 나옵니다",
-      "sub": "작년 '내 책임'이라 했던 스튜디오의 다음 편"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "작년의 실패 뒤|돌아온 FM27",
-      "sub": "스포츠 인터랙티브 · 세가"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "한국 시간 출시 시각 확인 못 함 — 스팀 표기는 11월 10일, 인벤 게시판 제목에 '11일 새벽 1시'가 있으나 공식 확인 아님 · 한국어는 스팀 언어표 체크로만 확인(인터페이스인지 자막인지 구분 못 함)",
-     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 개발자 인터뷰 화면이면 경기장 장면으로 옮길 것"
-    ],
-    "research": [
-     {
-      "title": "Football Manager — The return of International Management and a review of FM26 (Miles Jacobson)",
-      "link": "https://www.footballmanager.com/news/return-international-management-and-review-fm26"
-     },
-     {
-      "title": "Steam — Football Manager 27 (출시일·가격·한국어)",
-      "link": "https://store.steampowered.com/app/4530370/"
-     },
-     {
-      "title": "인벤 — [신작투표소] 풋볼 매니저27 출격",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323164"
-     },
-     {
-      "title": "Wikipedia — Football Manager 26 (유니티 · FM25 취소 · 반응)",
-      "link": "https://en.wikipedia.org/wiki/Football_Manager_26"
-     },
-     {
-      "title": "Gematsu — Football Manager 27 launches November 10",
-      "link": "https://www.gematsu.com/2026/09/football-manager-27-launches-november-10-for-ps5-xbox-series-pc-ios-and-android"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305878/y8fmfcgsjuxlzoy7tkmo.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305881/za8xe0mvcrbxk4qxxkhw.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305877/uit1mqci3zgks8jouj2t.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305878/y8fmfcgsjuxlzoy7tkmo.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-10T19:18+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794305879/plot_studio/hzxq1tn2jyyzazavs49z.mp4"
-     },
-     "v": {
-      "A": "c72ab165"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=9rdMzTr0sAg\n구간: 0:20-0:45\n곡: 다시 다듬은 FM27\n아티스트: 경기장 분위기부터\n피처링:\n후킹: \n출처: Football Manager\n자막: 자동",
-    "caption": "〈풋볼 매니저 27〉이 오늘 나옵니다.\n\n25편 취소, 반응이 엇갈린 26편 뒤에 나오는 작품인데요, 스튜디오 디렉터 마일스 제이콥슨은 지난 5월 \"전적으로 제 책임\"이라고 적고 다음 작품의 첫째 목표로 '몰입'을 꼽았습니다. 영상은 공식 채널이 공개한 경기 날 분위기 소개입니다.\n\n11월 10일 출시 · PC·맥·PS5·엑스박스 시리즈 X|S · 스팀 6만 9,800원 · 한국어 지원\n\n#겜디핑 #풋볼매니저27 #FM27 #스포츠인터랙티브 #세가",
-    "hooks": {
-     "A": "작년 실패를 인정한 / 풋볼 매니저의 다음 편",
-     "B": "풋볼 매니저 27, / 오늘 출시됩니다",
-     "C": "경기장 분위기부터 / 다시 다듬은 FM27"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=9rdMzTr0sAg",
-     "credit": "Football Manager",
-     "range": [
-      20.0,
-      45.0
-     ]
-    },
-    "guided": {
-     "rec": "C",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "한국 시간 출시 시각 확인 못 함 — 스팀 표기는 11월 10일, 인벤 게시판 제목에 '11일 새벽 1시'가 있으나 공식 확인 아님 · 한국어는 스팀 언어표 체크로만 확인(인터페이스인지 자막인지 구분 못 함)",
-     "숏폼 구간 0:20-0:45 는 영상을 직접 보지 않고 잡음 — 개발자 인터뷰 화면이면 경기장 장면으로 옮길 것"
-    ],
-    "research": [
-     {
-      "title": "Football Manager — The return of International Management and a review of FM26 (Miles Jacobson)",
-      "link": "https://www.footballmanager.com/news/return-international-management-and-review-fm26"
-     },
-     {
-      "title": "Steam — Football Manager 27 (출시일·가격·한국어)",
-      "link": "https://store.steampowered.com/app/4530370/"
-     },
-     {
-      "title": "인벤 — [신작투표소] 풋볼 매니저27 출격",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323164"
-     },
-     {
-      "title": "Wikipedia — Football Manager 26 (유니티 · FM25 취소 · 반응)",
-      "link": "https://en.wikipedia.org/wiki/Football_Manager_26"
-     },
-     {
-      "title": "Gematsu — Football Manager 27 launches November 10",
-      "link": "https://www.gematsu.com/2026/09/football-manager-27-launches-november-10-for-ps5-xbox-series-pc-ios-and-android"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/9rdMzTr0sAg/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305894/comcgcpufpaxfm5dmvis.jpg",
-     "key": "9rdMzTr0sAg@20.0"
-    },
-    "px": {
-     "vid": "9rdMzTr0sAg",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794305995/plot_studio/rfpiotkkbe2xvo0pip5g.mp4",
-     "off": 0.0,
-     "end": 90.0,
-     "full": 277.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-10T19:21+09:00"
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "작년 실패를 '전적으로 내 책임'이라 했던 디렉터의 말과 오늘 출시가 이어지는 사람 있는 출시 · 한국어 지원 · 공식 영상으로 숏폼까지",
-    "at": "2026-11-10T19:16+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:shrek2-remastered",
-    "account": "tbreak",
-    "url": "https://tbreak.com/shrek-2-remastered-release-date-gta-6-trailer/",
-    "image": null,
-    "head": "2004년 슈렉 2 게임 리마스터 11월 10일 출시 · GTA 6 를 흉내 낸 트레일러",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-10T19:16+09:00",
-   "key": "2e165b0d",
-   "by": "claude",
-   "subjects": [
-    "슈렉 2"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "2004년 영화와 함께 나왔던 슈렉 2 게임이 리마스터로 오늘 돌아온다 — 첫 트레일러는 GTA 6 트레일러를 흉내 냈고, 출시도 GTA 6보다 아흐레 먼저",
-    "why": "게임 안 하는 사람도 아는 이름 · 그 시절 친구와 함께 하던 기억 · GTA 6 주간이라 묘하게 걸린다"
-   },
-   "added": "claude",
-   "added_at": "2026-11-10T19:16+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n2004년 〈슈렉 2〉 게임이 리마스터로 오늘 돌아옵니다.\n\n영화 개봉 무렵 PS2·엑스박스·게임큐브로 나와 400만 장 넘게 팔린 게임인데요, 캐릭터 넷을 번갈아 조종하며 친구와 한 화면에서 함께 깨는 액션 게임이었습니다. 이번 리마스터는 Aspyr 가 맡아 텍스처와 컷신을 새로 만들고 4K 와 포토 모드, 치트 메뉴를 더했고, 최대 네 명이 온라인으로도 함께할 수 있게 했습니다.\n\n지난달 공개된 첫 트레일러는 〈GTA 6〉 트레일러를 흉내 낸 꼴이었습니다. 출시도 〈GTA 6〉보다 아흐레 먼저입니다.\n\n11월 10일 출시 · PS5·엑스박스 시리즈 X|S·스위치2·스위치·PC · 스팀 3만 3,500원 · 한국어 미지원\n\n#겜디핑 #슈렉2 #슈렉2리마스터 #드림웍스 #애스파이어\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305831/sohuiprfsgnls7kotr2n.jpg\n제목: 2004년 슈렉 2 게임,|오늘 돌아옵니다\n부제: Aspyr 의 리마스터 · PS5·스위치2·PC 등\n출처: Aspyr\n\n[슬라이드]\n형식: 자료\n소스: https://res.cloudinary.com/dwndhzqod/video/upload/v1794305855/plot_studio/bbd6z9lncfwlwcwvjgwq.mp4\n소제목: \n본문: \n출처: Aspyr\n",
-    "caption": "2004년 〈슈렉 2〉 게임이 리마스터로 오늘 돌아옵니다.\n\n영화 개봉 무렵 PS2·엑스박스·게임큐브로 나와 400만 장 넘게 팔린 게임인데요, 캐릭터 넷을 번갈아 조종하며 친구와 한 화면에서 함께 깨는 액션 게임이었습니다. 이번 리마스터는 Aspyr 가 맡아 텍스처와 컷신을 새로 만들고 4K 와 포토 모드, 치트 메뉴를 더했고, 최대 네 명이 온라인으로도 함께할 수 있게 했습니다.\n\n지난달 공개된 첫 트레일러는 〈GTA 6〉 트레일러를 흉내 낸 꼴이었습니다. 출시도 〈GTA 6〉보다 아흐레 먼저입니다.\n\n11월 10일 출시 · PS5·엑스박스 시리즈 X|S·스위치2·스위치·PC · 스팀 3만 3,500원 · 한국어 미지원\n\n#겜디핑 #슈렉2 #슈렉2리마스터 #드림웍스 #애스파이어",
-    "photos": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305831/sohuiprfsgnls7kotr2n.jpg",
-      "credit": "Aspyr",
-      "from": "https://images.keengamer.com/wp-content/uploads/2026/10/Designer-3.jpeg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305831/sohuiprfsgnls7kotr2n.jpg",
-      "credit": "Aspyr",
-      "from": "https://images.keengamer.com/wp-content/uploads/2026/10/Designer-3.jpeg"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "2004년 슈렉 2 게임,|오늘 돌아옵니다",
-      "sub": "Aspyr 의 리마스터 · PS5·스위치2·PC 등"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "GTA 6보다 아흐레 먼저|슈렉 2가 나온다",
-      "sub": "DreamWorks Shrek 2 Remastered"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "한국 시간 출시 시각 확인 못 함 — 스팀 페이지가 '약 7시간 뒤 잠금 해제'로 보여 한국 시간 11일 새벽일 수 있음 · 한국어 미지원은 스팀 언어표 기준",
-     "숏폼은 Aspyr 공식 발표 트레일러 0:03-0:28 — 등급 화면을 피하려 잡았고 영상은 직접 보지 않음"
-    ],
-    "research": [
-     {
-      "title": "Steam — DreamWorks Shrek 2 Remastered (가격·언어)",
-      "link": "https://store.steampowered.com/app/2523740/"
-     },
-     {
-      "title": "KeenGamer — Shrek 2 Remastered announced, launches November 10",
-      "link": "https://www.keengamer.com/articles/news/shrek-2-remastered-announced-launches-november-10/"
-     },
-     {
-      "title": "tbreak — Shrek 2 Remastered release date, GTA 6 trailer",
-      "link": "https://tbreak.com/shrek-2-remastered-release-date-gta-6-trailer/"
-     },
-     {
-      "title": "VGC — A remaster of the Shrek 2 game from 2004 has been announced via a GTA-like trailer",
-      "link": "https://www.videogameschronicle.com/news/a-remaster-of-the-shrek-2-game-from-2004-has-been-announced-via-a-gta-like-trailer/"
-     },
-     {
-      "title": "Nintendo — Shrek 2 Remastered (Switch 2)",
-      "link": "https://www.nintendo.com/us/store/products/shrek-2-remastered-switch-2"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305907/vefctzlpt4jgu8bqhnlu.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305911/wxhqvmqcuf2bhwpja81l.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305907/qrplizdukdmfylh8yece.jpg"
-     ],
-     "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305907/vefctzlpt4jgu8bqhnlu.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-10T19:18+09:00",
-     "videos": {
-      "1": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794305908/plot_studio/sijxv80pcyg4obyzrrjz.mp4"
-     },
-     "v": {
-      "A": "2befa44a"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=6qjCMqy1fAk\n구간: 0:03-0:28\n곡: 리마스터로 돌아왔다\n아티스트: 2004년 슈렉 2 게임이\n피처링:\n후킹: \n출처: Aspyr\n자막: 자동",
-    "caption": "2004년 〈슈렉 2〉 게임이 리마스터로 오늘 돌아옵니다.\n\n캐릭터 넷을 번갈아 조종하며 친구와 함께 깨던 그 게임인데요, Aspyr 가 텍스처와 컷신을 새로 만들고 최대 네 명 온라인 협동을 더했습니다. 첫 트레일러는 〈GTA 6〉 트레일러를 흉내 냈고, 출시도 〈GTA 6〉보다 아흐레 먼저입니다.\n\n11월 10일 출시 · PS5·엑스박스 시리즈 X|S·스위치2·스위치·PC · 스팀 3만 3,500원 · 한국어 미지원\n\n#겜디핑 #슈렉2 #슈렉2리마스터 #드림웍스 #애스파이어",
-    "hooks": {
-     "A": "2004년 슈렉 2 게임이 / 리마스터로 돌아왔다",
-     "B": "GTA 6 트레일러를 / 흉내 낸 슈렉 2",
-     "C": "넷이 함께 깨던 / 슈렉 2가 4K 로"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=6qjCMqy1fAk",
-     "credit": "Aspyr",
-     "range": [
-      3.0,
-      28.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "한국 시간 출시 시각 확인 못 함 — 스팀 페이지가 '약 7시간 뒤 잠금 해제'로 보여 한국 시간 11일 새벽일 수 있음 · 한국어 미지원은 스팀 언어표 기준",
-     "숏폼은 Aspyr 공식 발표 트레일러 0:03-0:28 — 등급 화면을 피하려 잡았고 영상은 직접 보지 않음"
-    ],
-    "research": [
-     {
-      "title": "Steam — DreamWorks Shrek 2 Remastered (가격·언어)",
-      "link": "https://store.steampowered.com/app/2523740/"
-     },
-     {
-      "title": "KeenGamer — Shrek 2 Remastered announced, launches November 10",
-      "link": "https://www.keengamer.com/articles/news/shrek-2-remastered-announced-launches-november-10/"
-     },
-     {
-      "title": "tbreak — Shrek 2 Remastered release date, GTA 6 trailer",
-      "link": "https://tbreak.com/shrek-2-remastered-release-date-gta-6-trailer/"
-     },
-     {
-      "title": "VGC — A remaster of the Shrek 2 game from 2004 has been announced via a GTA-like trailer",
-      "link": "https://www.videogameschronicle.com/news/a-remaster-of-the-shrek-2-game-from-2004-has-been-announced-via-a-gta-like-trailer/"
-     },
-     {
-      "title": "Nintendo — Shrek 2 Remastered (Switch 2)",
-      "link": "https://www.nintendo.com/us/store/products/shrek-2-remastered-switch-2"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/6qjCMqy1fAk/maxresdefault.jpg",
-    "still": {
-     "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305914/ldcqkjl6igzkyzwtmjrm.jpg",
-     "key": "6qjCMqy1fAk@3.0"
-    },
-    "px": {
-     "vid": "6qjCMqy1fAk",
-     "url": "https://res.cloudinary.com/dwndhzqod/video/upload/v1794306035/plot_studio/p4obonx85fgddkmdy8eo.mp4",
-     "off": 0.0,
-     "end": 49.0,
-     "full": 49.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-10T19:21+09:00"
     }
    },
    "pick": {
     "rank": 2,
-    "why": "게임 안 하는 사람도 아는 슈렉 · GTA 6 아흐레 전이라는 묘한 사실 하나로 바로 읽힌다",
-    "at": "2026-11-10T19:16+09:00"
+    "why": "철권을 이끈 사람이 서울에서 직접 한 말 · 한국판 캐릭터 이야기가 한국 독자에게 걸린다",
+    "at": "2026-11-11T11:06+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:shiftup-spirit-delay",
+    "id": "claude:stellar-blade-boss-polish",
     "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323211",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323172",
     "image": null,
-    "head": "시프트업 차기작 '프로젝트 스피릿' 공개 일정 변경",
+    "head": "4.85점 보스전을 8.6점으로 끌어올린 시프트업의 폴리싱 기록",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-10T19:16+09:00",
-   "key": "edf1182c",
+   "made_at": "2026-11-11T11:06+09:00",
+   "key": "3ee4940a",
    "by": "claude",
    "subjects": [
+    "스텔라 블레이드",
     "시프트업"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "스텔라 블레이드를 만든 시프트업이 차기작 프로젝트 스피릿을 올해 안에 공개하지 않기로 했다 — 연말~내년 초 다른 회사 대작들의 일정을 피해서",
-    "why": "한국 개발사의 다음 대형 콘솔 작품 · 오늘 실적 발표에서 나온 새 소식"
+    "angle": "스텔라 블레이드의 한 보스전은 첫 유저 테스트에서 4.85점이었다 — 다섯 달을 고쳐 8.6점이 됐고, 그래도 '테스트가 판단을 대신하진 않는다'는 시프트업 CTO 의 말",
+    "why": "숫자 하나로 읽히는 제작 해부 · 한국 개발사 · 만든 사람의 말"
    },
    "added": "claude",
-   "added_at": "2026-11-10T19:16+09:00",
+   "added_at": "2026-11-11T11:06+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n시프트업이 차기작 〈프로젝트 스피릿〉을 올해 안에 공개하지 않기로 했습니다.\n\n〈스텔라 블레이드〉와 〈승리의 여신: 니케〉를 만든 스튜디오의 다음 대형 작품인데요, 10일 3분기 실적 발표에서 연말부터 내년 초까지 이어지는 다른 회사 주요 신작들의 출시 일정을 고려해 공개 시점을 조정했다고 밝혔습니다. 전 세계 이용자의 관심이 가장 크게 모일 때를 고르겠다는 설명입니다.\n\n개발은 순조롭다고 했습니다. 최근 단계별 마일스톤 빌드 평가를 긍정적으로 마쳤고, 새 일정은 구체화되는 대로 알리겠다고 했습니다. 지난 6일 나온 〈스텔라 블레이드〉 닌텐도 스위치2판의 초기 성과는 내부 기대에 맞는다고 덧붙였습니다.\n\n#겜디핑 #시프트업 #프로젝트스피릿 #스텔라블레이드 #니케\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305861/k0ha9hkx3ixqsfwn6t6h.jpg\n제목: 시프트업 차기작,|올해는 공개 안 한다\n부제: 프로젝트 스피릿 공개 시점 조정\n출처: 시프트업\n",
-    "caption": "시프트업이 차기작 〈프로젝트 스피릿〉을 올해 안에 공개하지 않기로 했습니다.\n\n〈스텔라 블레이드〉와 〈승리의 여신: 니케〉를 만든 스튜디오의 다음 대형 작품인데요, 10일 3분기 실적 발표에서 연말부터 내년 초까지 이어지는 다른 회사 주요 신작들의 출시 일정을 고려해 공개 시점을 조정했다고 밝혔습니다. 전 세계 이용자의 관심이 가장 크게 모일 때를 고르겠다는 설명입니다.\n\n개발은 순조롭다고 했습니다. 최근 단계별 마일스톤 빌드 평가를 긍정적으로 마쳤고, 새 일정은 구체화되는 대로 알리겠다고 했습니다. 지난 6일 나온 〈스텔라 블레이드〉 닌텐도 스위치2판의 초기 성과는 내부 기대에 맞는다고 덧붙였습니다.\n\n#겜디핑 #시프트업 #프로젝트스피릿 #스텔라블레이드 #니케",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈스텔라 블레이드〉의 한 보스전은 처음 유저 테스트에 올랐을 때 10점 만점에 4.85점을 받았습니다.\n\n시프트업 이동기 CTO 가 9일 서울에서 열린 '콘솔게임 개발자 컨퍼런스 2026'에서 꺼낸 이야기인데요, 약 다섯 달 동안 고친 끝에 같은 보스전의 만족도는 8.6점까지 올랐다고 했습니다. 죽으면 받던 불이익을 없앤 것도 테스트를 거쳐 내린 결정이었습니다.\n\n그렇다고 의견을 그대로 따르기만 한 건 아니었습니다. 그는 \"실제 유저 테스트는 개발팀의 감정이나 판단을 대신 결정해 주지 않습니다\"라고 했습니다. 테스트는 이용자가 어디서 막히는지 보여 줄 뿐, 고치는 방향은 만드는 사람이 정한다는 이야기입니다.\n\n#겜디핑 #스텔라블레이드 #시프트업 #이동기 #게임데이즈\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794362791/i8gwicdu10bc7wwxyegf.jpg\n제목: 4.85점 보스전이|8.6점이 되기까지\n부제: 시프트업 이동기 CTO · 〈스텔라 블레이드〉\n출처: 인벤\n",
+    "caption": "〈스텔라 블레이드〉의 한 보스전은 처음 유저 테스트에 올랐을 때 10점 만점에 4.85점을 받았습니다.\n\n시프트업 이동기 CTO 가 9일 서울에서 열린 '콘솔게임 개발자 컨퍼런스 2026'에서 꺼낸 이야기인데요, 약 다섯 달 동안 고친 끝에 같은 보스전의 만족도는 8.6점까지 올랐다고 했습니다. 죽으면 받던 불이익을 없앤 것도 테스트를 거쳐 내린 결정이었습니다.\n\n그렇다고 의견을 그대로 따르기만 한 건 아니었습니다. 그는 \"실제 유저 테스트는 개발팀의 감정이나 판단을 대신 결정해 주지 않습니다\"라고 했습니다. 테스트는 이용자가 어디서 막히는지 보여 줄 뿐, 고치는 방향은 만드는 사람이 정한다는 이야기입니다.\n\n#겜디핑 #스텔라블레이드 #시프트업 #이동기 #게임데이즈",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305861/k0ha9hkx3ixqsfwn6t6h.jpg",
-      "credit": "시프트업",
-      "from": "https://i3n.news1.kr/system/photos/2026/6/10/7951564/high.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362791/i8gwicdu10bc7wwxyegf.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1559888354.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362794/uoqizogxxvixaxw1hvcr.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1559888354.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305861/k0ha9hkx3ixqsfwn6t6h.jpg",
-      "credit": "시프트업",
-      "from": "https://i3n.news1.kr/system/photos/2026/6/10/7951564/high.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362791/i8gwicdu10bc7wwxyegf.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1559888354.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362794/uoqizogxxvixaxw1hvcr.jpg",
+      "credit": "인벤",
+      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1559888354.jpg"
      }
     ],
     "shape": "단신",
@@ -870,109 +302,104 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "시프트업 차기작,|올해는 공개 안 한다",
-      "sub": "프로젝트 스피릿 공개 시점 조정"
+      "title": "4.85점 보스전이|8.6점이 되기까지",
+      "sub": "시프트업 이동기 CTO · 〈스텔라 블레이드〉"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "스텔라 블레이드 다음 작품,|공개를 미뤘다",
-      "sub": "시프트업 프로젝트 스피릿"
+      "title": "스텔라 블레이드|보스전의 성적표",
+      "sub": "첫 테스트 4.85점 → 8.6점"
      }
     ],
     "issues": [],
     "confirm": [
-     "회사 답변이라 말한 사람 이름이 없음 · '타사 신작'이 어떤 게임인지는 밝히지 않아 쓰지 않음 · 프로젝트 스피릿 공식 이미지가 없어 표지는 〈스텔라 블레이드〉 키 아트(아이뉴스24 기사 사진) — 차기작 이미지로 오해되지 않는지 볼 것"
+     "점수는 시프트업 테스트 참가자 만족도(강연 자료 기준) · 어떤 보스인지(인벤은 최종 보스로 적음)와 549건 수정은 매체마다 기준이 달라 쓰지 않음",
+     "표지 사진은 인벤 기사 이동기 CTO 발표 사진 — 사람·화면이 흐리지 않은지 볼 것"
     ],
     "research": [
      {
-      "title": "인벤 — [실적] 시프트업 차기작 '프로젝트 스피릿', 공개 일정 변경",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323211"
+      "title": "인벤 — 4.85점 보스전을 8.6점으로 끌어올린 시프트업의 폴리싱 기록",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323172"
      },
      {
-      "title": "테크M — 시프트업 3Q 영업이익 207억원...신작 '프로젝트 스피릿' 공개 연기",
-      "link": "https://www.techm.kr/news/articleView.html?idxno=157178"
+      "title": "시사저널e — \"개발 만으론 콘솔게임 경쟁력 못 키워\"···'완성도·IP'가 글로벌 흥행 가른다",
+      "link": "https://www.sisajournal-e.com/news/articleView.html?idxno=424904"
      },
      {
-      "title": "ZDNet Korea — 시프트업 3분기 \"스텔라 블레이드 스위치2 판매 기대치 부합\"",
-      "link": "https://zdnet.co.kr/view/?no=20261110180452"
+      "title": "비즈한국 — [현장] 한국 온 위쳐·철권 개발진 \"K게임 콘솔 경쟁력 키우려면…\"",
+      "link": "https://bizhankook.com/articles/k-game-console-challenges.html"
+     },
+     {
+      "title": "디스이즈게임 — '스텔라 블레이드'는 유저 테스트로만 549개 수정을 거쳐 세상에 나왔다",
+      "link": "https://www.thisisgame.com/articles/432378"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305918/jkoll4cembanbpvr6i9o.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305918/zhxre2rceg0zjzs9h1qr.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362810/qqdh9cncs8ugqrxhtuvi.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362810/mihyqgrouhrqe53cj7e3.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305918/jkoll4cembanbpvr6i9o.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362810/qqdh9cncs8ugqrxhtuvi.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-10T19:18+09:00",
+     "at": "2026-11-11T11:06+09:00",
      "v": {
-      "A": "33310b42"
+      "A": "773aa3fb"
      }
     }
    },
    "pick": {
     "rank": 3,
-    "why": "한국 개발사 차기작 소식 · 오늘 실적 발표에서 나온 따끈한 일정 변경",
-    "at": "2026-11-10T19:16+09:00"
+    "why": "4.85 → 8.6 이라는 숫자 하나로 읽히는 해부형 · 한국 개발사의 제작 뒷이야기",
+    "at": "2026-11-11T11:06+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:pubg-10th-2027",
+    "id": "claude:gugak-game-music",
     "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323212",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323221",
     "image": null,
-    "head": "크래프톤, 2027년 PUBG 10주년 \"역대 최대 규모 콘텐츠 준비\"",
+    "head": "국립국악원, '타래: 언바운드'와 '안녕서울: 이태원편' 신곡 공개한다",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-10T19:16+09:00",
-   "key": "ce7bfe78",
+   "made_at": "2026-11-11T11:06+09:00",
+   "key": "ed8ad9e9",
    "by": "claude",
    "subjects": [
-    "배틀그라운드"
+    "국립국악원",
+    "타래: 언바운드",
+    "안녕서울: 이태원편"
    ],
    "lane": "정보",
    "editor": {
     "grade": "C",
     "kind": "정보",
-    "angle": "배틀그라운드가 내년 3월 10주년을 맞는다 — 크래프톤이 실적 발표에서 '역대 최대 규모 콘텐츠'를 예고하고, 내년 신작으로 인조이 PS판·데드넷·노 로우를 꼽았다",
-    "why": "한국 개발사의 대표작이 10년을 맞는 예고 · 내년 신작 줄기를 한 번에"
+    "angle": "[실험] 게임 음악을 국악으로 편곡해 오던 국립국악원이 이번엔 한국 게임 두 편의 곡을 새로 지었다 — 착호갑사 테마와 소행성 충돌 앞의 서울",
+    "why": "게임 안 하는 사람도 읽히는 국악 × 게임 · 한국 개발사 두 곳 · 올드보이 음악감독"
    },
    "added": "claude",
-   "added_at": "2026-11-10T19:16+09:00",
+   "added_at": "2026-11-11T11:06+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈배틀그라운드〉가 내년에 10주년을 맞습니다.\n\n크래프톤 배동근 CFO는 10일 3분기 실적 발표에서 \"2027년 PUBG 10주년인 만큼, 역대 최대 규모 콘텐츠를 준비하고 있다\"고 말했는데요, 3월에 10주년 기념 대형 콘텐츠를 기획하고 있고 내년에는 큰 콜라보와 시즌 이벤트가 거의 매달 이어진다고 했습니다.\n\n같은 자리에서 김창한 대표는 내년에 나올 작품들도 꼽았습니다. 〈인조이〉 정식 출시와 플레이스테이션판, 그리고 올해 게임스컴에 냈던 신작들입니다. 그중 이용자 반응이 가장 좋았던 건 PUBG IP 를 쓴 〈데드넷〉과 오픈월드 FPS 〈노 로우〉였다고 했고, 출시 시기는 바뀔 수 있어 정확히 밝히지 않았습니다.\n\n#겜디핑 #배틀그라운드 #크래프톤 #인조이 #노로우\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794305864/ecpdpbkqhvof5euq83sf.jpg\n제목: 배틀그라운드,|내년에 10살\n부제: 크래프톤 \"10주년에 가장 큰 콘텐츠\"\n출처: 크래프톤\n",
-    "caption": "〈배틀그라운드〉가 내년에 10주년을 맞습니다.\n\n크래프톤 배동근 CFO는 10일 3분기 실적 발표에서 \"2027년 PUBG 10주년인 만큼, 역대 최대 규모 콘텐츠를 준비하고 있다\"고 말했는데요, 3월에 10주년 기념 대형 콘텐츠를 기획하고 있고 내년에는 큰 콜라보와 시즌 이벤트가 거의 매달 이어진다고 했습니다.\n\n같은 자리에서 김창한 대표는 내년에 나올 작품들도 꼽았습니다. 〈인조이〉 정식 출시와 플레이스테이션판, 그리고 올해 게임스컴에 냈던 신작들입니다. 그중 이용자 반응이 가장 좋았던 건 PUBG IP 를 쓴 〈데드넷〉과 오픈월드 FPS 〈노 로우〉였다고 했고, 출시 시기는 바뀔 수 있어 정확히 밝히지 않았습니다.\n\n#겜디핑 #배틀그라운드 #크래프톤 #인조이 #노로우",
+    "form": "[카테고리]\nNews\n\n[캡션]\n국립국악원이 한국 게임 두 편을 위해 새로 지은 곡을 이달 공개합니다.\n\n국립국악원은 그동안 '게임 사운드 시리즈'로 이미 있는 게임 음악을 국악으로 편곡해 왔는데요, 이번에는 각 게임의 세계관과 캐릭터에 맞춘 곡을 새로 만들었습니다. 영화 〈올드보이〉와 〈건축학개론〉의 음악을 맡은 이지수 음악감독이 두 곡에 참여했습니다.\n\n〈타래: 언바운드〉의 'Shadow of the Beast'는 착호갑사 테마곡으로, 국악 타악기 리듬과 대금·피리·태평소 선율에 정가를 얹었습니다. 소행성 충돌까지 여섯 달 남은 서울을 그린 〈안녕서울: 이태원편〉의 'Goodbye, Hello'는 오케스트라와 국악기를 섞었습니다.\n\n11월 19일·21일 낮 12시 멜론·유튜브 뮤직·스포티파이 등 공개 · 〈타래: 언바운드〉 바운더리 개발·크래프톤 · 〈안녕서울: 이태원편〉 지노게임즈 개발·네오위즈\n\n#겜디핑 #국립국악원 #타래언바운드 #안녕서울 #이지수\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1794362799/cyeoaossbq1inijeyw1t.jpg\n제목: 국립국악원이|게임 음악을 새로 썼다\n부제: 〈타래: 언바운드〉 · 〈안녕서울: 이태원편〉\n출처:\n",
+    "caption": "국립국악원이 한국 게임 두 편을 위해 새로 지은 곡을 이달 공개합니다.\n\n국립국악원은 그동안 '게임 사운드 시리즈'로 이미 있는 게임 음악을 국악으로 편곡해 왔는데요, 이번에는 각 게임의 세계관과 캐릭터에 맞춘 곡을 새로 만들었습니다. 영화 〈올드보이〉와 〈건축학개론〉의 음악을 맡은 이지수 음악감독이 두 곡에 참여했습니다.\n\n〈타래: 언바운드〉의 'Shadow of the Beast'는 착호갑사 테마곡으로, 국악 타악기 리듬과 대금·피리·태평소 선율에 정가를 얹었습니다. 소행성 충돌까지 여섯 달 남은 서울을 그린 〈안녕서울: 이태원편〉의 'Goodbye, Hello'는 오케스트라와 국악기를 섞었습니다.\n\n11월 19일·21일 낮 12시 멜론·유튜브 뮤직·스포티파이 등 공개 · 〈타래: 언바운드〉 바운더리 개발·크래프톤 · 〈안녕서울: 이태원편〉 지노게임즈 개발·네오위즈\n\n#겜디핑 #국립국악원 #타래언바운드 #안녕서울 #이지수",
     "photos": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305864/ecpdpbkqhvof5euq83sf.jpg",
-      "credit": "크래프톤",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/260/gm732922_161717.webp"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305866/gkovprg3uunxv21yrzkx.jpg",
-      "credit": "크래프톤",
-      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1561333183.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362799/cyeoaossbq1inijeyw1t.jpg",
+      "credit": "신뢰"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305864/ecpdpbkqhvof5euq83sf.jpg",
-      "credit": "크래프톤",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/260/gm732922_161717.webp"
-     },
-     {
-      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305866/gkovprg3uunxv21yrzkx.jpg",
-      "credit": "크래프톤",
-      "from": "https://static.inven.co.kr/column/2026/11/10/news/i1561333183.jpg"
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362799/cyeoaossbq1inijeyw1t.jpg",
+      "credit": "신뢰"
      }
     ],
     "shape": "단신",
@@ -980,43 +407,49 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "배틀그라운드,|내년에 10살",
-      "sub": "크래프톤 \"10주년에 가장 큰 콘텐츠\""
+      "title": "국립국악원이|게임 음악을 새로 썼다",
+      "sub": "〈타래: 언바운드〉 · 〈안녕서울: 이태원편〉"
      },
      {
       "key": "B",
       "hook": "다른 안",
-      "title": "배그 10주년,|3월에 크게 온다",
-      "sub": "크래프톤 3분기 실적 발표"
+      "title": "국악으로 지은|한국 게임의 테마곡",
+      "sub": "이지수 음악감독 참여 · 19일·21일 공개"
      }
     ],
     "issues": [],
     "confirm": [
-     "실적 발표 소식이라 사람 결이 약함 — 표지 한 장으로만 · '3월'은 10주년 기념 콘텐츠를 기획하는 달이라는 뜻이고 정확한 날짜는 아님"
+     "[검증] 지정한 사진 두 장이 해상도 미달로 빠지고 국립국악원 공연(가야금 합주) 사진이 표지로 들어감 — 이번 게임 음악 녹음·공연 장면이 아니고 출처 표기도 안 보임 · 사진 교체 여부 볼 것",
+     "어느 곡이 19일·21일인지는 인벤 순서(타래 19일 · 안녕서울 21일) 기준 — 국제뉴스는 짝을 밝히지 않음 · 국립국악원 공식 보도자료로 한 번 볼 것",
+     "표지 사진은 국제뉴스 기사의 〈안녕서울: 이태원편〉 앨범 커버 — 두 게임 이야기인데 한쪽만 보이는지 볼 것"
     ],
     "research": [
      {
-      "title": "인벤 — [컨콜] 크래프톤, 2027년 PUBG 10주년 \"역대 최대 규모 콘텐츠 준비\"",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323212"
+      "title": "인벤 — 국립국악원, '타래: 언바운드'와 '안녕서울: 이태원편' 신곡 공개한다",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323221"
      },
      {
-      "title": "게임메카 — 배그를 받쳐줄 유망주, 크래프톤 내년 신작 6종 출격",
-      "link": "https://www.gamemeca.com/view.php?gid=1783260"
+      "title": "국제뉴스 — 국립국악원, 게임 신곡 2곡 음원 플랫폼 공개...이지수 음악감독 참여",
+      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3748351"
+     },
+     {
+      "title": "엔사이드 — 게임 속 세계관까지 국악이 만든다… K-게임 사로잡은 국악원의 파격 도전",
+      "link": "https://www.reporternside.com/news/articleView.html?idxno=436214"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305922/xthxwqttjw1npa3mmvgz.jpg",
-      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305921/vqgyzkijx5qwsne4arj1.jpg"
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362814/zkjoalyus09qbz5d2xu7.jpg",
+      "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362814/gykesdxhkjylxhfpyob2.jpg"
      ],
      "covers": {
-      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794305922/xthxwqttjw1npa3mmvgz.jpg"
+      "A": "https://res.cloudinary.com/dwndhzqod/image/upload/v1794362814/zkjoalyus09qbz5d2xu7.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-10T19:18+09:00",
+     "at": "2026-11-11T11:06+09:00",
      "v": {
-      "A": "a3f03f7e"
+      "A": "26be7696"
      }
     }
    },
@@ -1026,7 +459,7 @@
  "skipped": [],
  "corners": {
   "week": "11/09~11/15",
-  "days_left": 6,
+  "days_left": 5,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -1096,7 +529,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -1195,14 +628,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 7,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-10T19:21+09:00"
+  "at": "2026-11-11T11:06+09:00"
  },
  "queue": {
-  "next": "2026-11-10T19:23+09:00",
+  "next": "2026-11-11T11:09+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
