@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-10 22:04 KST",
+ "generated_at": "2026-11-11 15:05 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1685,11 +1685,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-10 19:06 KST"
+  "daily": "2026-11-10 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-10T22:04:40+09:00",
+  "fetched_at": "2026-11-11T15:05:13+09:00",
   "posts": [
+   {
+    "t": "2026-11-11T12:56+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "양홍원(yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 "
+   },
    {
     "t": "2026-11-10T20:50+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2379,77 +2384,62 @@
     "t": "2026-10-21T15:06+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "빌스택스가 대마 구매·투약 혐의로 불구속 기소됐습니다."
-   },
-   {
-    "t": "2026-10-21T15:01+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "저스틴 비버의 브랜드 SKYLRK가 서울에 첫 팝업을 엽니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
   "drafts": 365,
-  "posted": 129,
-  "posts": 154,
-  "rate": 0.35,
+  "posted": 130,
+  "posts": 155,
+  "rate": 0.36,
   "adopted_mult": 0.98,
   "own_mult": 1.05,
   "lanes": {
-   "오늘의 노래": {
-    "drafts": 1,
-    "posted": 0,
-    "mult": null
-   },
-   "요청": {
-    "drafts": 5,
-    "posted": 3,
-    "mult": 0.95
-   },
-   "재미": {
-    "drafts": 30,
-    "posted": 4,
-    "mult": 1.43
-   },
    "정보": {
-    "drafts": 245,
-    "posted": 109,
+    "drafts": 249,
+    "posted": 110,
     "mult": 1.0
    },
    "클립": {
-    "drafts": 53,
+    "drafts": 52,
     "posted": 7,
     "mult": 1.05
    },
+   "재미": {
+    "drafts": 28,
+    "posted": 4,
+    "mult": 1.43
+   },
+   "요청": {
+    "drafts": 4,
+    "posted": 3,
+    "mult": 0.95
+   },
    "시리즈": {
-    "drafts": 31,
+    "drafts": 32,
     "posted": 6,
     "mult": 0.78
    }
   },
   "corners": {
+   "news": {
+    "drafts": 185,
+    "posted": 85,
+    "mult": 1.05
+   },
    "song": {
-    "drafts": 17,
+    "drafts": 15,
     "posted": 7,
     "mult": 0.76
    },
-   "news": {
-    "drafts": 181,
-    "posted": 84,
-    "mult": 1.05
-   },
    "mal": {
-    "drafts": 51,
+    "drafts": 48,
     "posted": 7,
     "mult": 0.89
    },
-   "spotlight": {
-    "drafts": 9,
-    "posted": 2,
-    "mult": 0.99
-   },
    "followup": {
-    "drafts": 22,
+    "drafts": 23,
     "posted": 7,
     "mult": 0.93
    },
@@ -2457,6 +2447,11 @@
     "drafts": 14,
     "posted": 3,
     "mult": 1.14
+   },
+   "spotlight": {
+    "drafts": 8,
+    "posted": 2,
+    "mult": 0.99
    },
    "again": {
     "drafts": 2,
@@ -2469,7 +2464,7 @@
     "mult": 1.25
    },
    "anniv": {
-    "drafts": 21,
+    "drafts": 22,
     "posted": 2,
     "mult": 1.89
    },
@@ -2496,19 +2491,6 @@
   },
   "repack": [],
   "recent": [
-   {
-    "day": "2026-11-07",
-    "lane": "정보",
-    "who": "이무진",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "5539ea43",
-    "posted": "DfcnLEaDBnR",
-    "head": "배우 이동휘가 이무진의 새 뮤직비디오에 나옵니다.",
-    "url": "https://www.instagram.com/reel/DfcnLEaDBnR/",
-    "mult": 1.81
-   },
    {
     "day": "2026-11-07",
     "lane": "정보",
@@ -2564,6 +2546,19 @@
    {
     "day": "2026-11-10",
     "lane": "정보",
+    "who": "리센느",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "3fce332b",
+    "posted": "DflkNzRClrt",
+    "head": "양홍원(yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보",
+    "url": "https://www.instagram.com/p/DflkNzRClrt/",
+    "mult": null
+   },
+   {
+    "day": "2026-11-10",
+    "lane": "정보",
     "who": "김감전",
     "repack": false,
     "grade": "A",
@@ -2603,21 +2598,14 @@
   ]
  },
  "follow": {
-  "at": "2026-11-10T22:04+09:00",
+  "at": "2026-11-11T15:05+09:00",
   "d30": {
    "days": 30,
-   "follows": 16.4,
-   "unfollows": 14.9,
-   "net": 1.5
+   "follows": 15.7,
+   "unfollows": 14.8,
+   "net": 0.9
   },
   "weeks": [
-   {
-    "week": "2026-W38",
-    "follows": 228,
-    "unfollows": 125,
-    "net": 103,
-    "days": 7
-   },
    {
     "week": "2026-W39",
     "follows": 143,
@@ -2666,12 +2654,19 @@
     "unfollows": 95,
     "net": 8,
     "days": 7
+   },
+   {
+    "week": "2026-W46",
+    "follows": 9,
+    "unfollows": 10,
+    "net": -1,
+    "days": 1
    }
   ],
   "feed": {
-   "n": 186,
-   "reach": 3648609,
-   "follows": 486,
+   "n": 187,
+   "reach": 3653274,
+   "follows": 488,
    "per1k": 0.13
   },
   "kinds": [
@@ -2685,16 +2680,16 @@
    },
    {
     "kind": "갈래 모름",
-    "n": 49,
-    "reach": 2510655,
-    "follows": 341,
+    "n": 50,
+    "reach": 2514676,
+    "follows": 343,
     "per1k": 0.14,
     "visits1k": 3.4
    },
    {
     "kind": "기타",
     "n": 33,
-    "reach": 284390,
+    "reach": 284596,
     "follows": 37,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2702,7 +2697,7 @@
    {
     "kind": "갈등·반응",
     "n": 20,
-    "reach": 314801,
+    "reach": 314825,
     "follows": 35,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2710,7 +2705,7 @@
    {
     "kind": "발매·신보",
     "n": 39,
-    "reach": 95518,
+    "reach": 95826,
     "follows": 10,
     "per1k": 0.1,
     "visits1k": 2.9
@@ -2718,10 +2713,10 @@
    {
     "kind": "공연·페스티벌",
     "n": 31,
-    "reach": 138167,
+    "reach": 138247,
     "follows": 14,
     "per1k": 0.1,
-    "visits1k": 1.7
+    "visits1k": 1.8
    }
   ],
   "top": [
@@ -2783,14 +2778,14 @@
   "reels": {
    "reels_per1k": 0.1,
    "feed_per1k": 0.03,
-   "base": 16.5,
-   "days": 57
+   "base": 16.3,
+   "days": 58
   },
   "spikes": [
    {
     "date": "2026-10-20",
     "unfollows": 41,
-    "usual": 14.9,
+    "usual": 14.8,
     "posted": [
      "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@r…",
      "인디고뮤직(@indigomusic_official)이라는 이름…"
