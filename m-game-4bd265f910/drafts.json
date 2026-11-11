@@ -115,11 +115,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "GTA 6 출시 여드레 전 · 게임 안 하는 사람도 아는 트래비스 스콧·카디 비가 게임 음악으로 무대에 선다는 묘한 사실 하나",
-    "at": "2026-11-11T11:06+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -235,11 +230,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "철권을 이끈 사람이 서울에서 직접 한 말 · 한국판 캐릭터 이야기가 한국 독자에게 걸린다",
-    "at": "2026-11-11T11:06+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -351,11 +341,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "4.85 → 8.6 이라는 숫자 하나로 읽히는 해부형 · 한국 개발사의 제작 뒷이야기",
-    "at": "2026-11-11T11:06+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -452,6 +437,449 @@
       "A": "26be7696"
      }
     }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:gta6-30fps-preload",
+    "account": "Rockstar Games",
+    "url": "https://kotaku.com/gta-6-30-fps-confirmed-ps5-pro-pssr-xbox-cloud-streaming-2000755517",
+    "image": null,
+    "head": "GTA 6 사전 다운로드 시작 · 콘솔 30프레임 목표 · 최대 212GB",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T19:12+09:00",
+   "key": "19ce2941",
+   "by": "claude",
+   "subjects": [
+    "GTA 6"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "출시 여드레 전 사전 다운로드를 열며 록스타가 직접 밝혔다 — 콘솔은 초당 30프레임 목표, 여유 공간은 최대 212GB",
+    "why": "출시 주간의 새 공식 소식 · 가장 많이 묻던 프레임 문제에 대한 답 · 국내 가격"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T19:12+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉는 콘솔에서 초당 30프레임을 목표로 만들어졌습니다.\n\n록스타 게임즈가 10일 사전 다운로드를 열며 공지에 적은 내용인데요, 60프레임 모드를 따로 둔다는 말은 없었습니다. PS5 Pro 에서는 PSSR 업스케일링과 레이 트레이싱을 쓰고, 엑스박스 클라우드 게이밍은 시리즈 S 그래픽 설정으로 돌아갑니다. 디지털 예약 구매자는 지금 바로 내려받을 수 있고, 기기에 따라 최대 212GB 의 여유 공간이 필요합니다.\n\n출시까지는 여드레 남았습니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · PS 스토어 스탠다드 8만 9,800원·얼티밋 11만 2,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #플레이스테이션 #바이스시티\n\n[커버]\n소스: \n제목: GTA 6, 콘솔에선|30프레임 목표\n부제: 록스타 사전 다운로드 공지 · 최대 212GB\n출처:\n",
+    "caption": "〈GTA 6〉는 콘솔에서 초당 30프레임을 목표로 만들어졌습니다.\n\n록스타 게임즈가 10일 사전 다운로드를 열며 공지에 적은 내용인데요, 60프레임 모드를 따로 둔다는 말은 없었습니다. PS5 Pro 에서는 PSSR 업스케일링과 레이 트레이싱을 쓰고, 엑스박스 클라우드 게이밍은 시리즈 S 그래픽 설정으로 돌아갑니다. 디지털 예약 구매자는 지금 바로 내려받을 수 있고, 기기에 따라 최대 212GB 의 여유 공간이 필요합니다.\n\n출시까지는 여드레 남았습니다.\n\n11월 19일 출시 · PS5·엑스박스 시리즈 X|S · PS 스토어 스탠다드 8만 9,800원·얼티밋 11만 2,800원\n\n#겜디핑 #GTA6 #락스타게임즈 #플레이스테이션 #바이스시티",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "GTA 6, 콘솔에선|30프레임 목표",
+      "sub": "록스타 사전 다운로드 공지 · 최대 212GB"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "GTA 6 프레임,|록스타가 답했다",
+      "sub": "콘솔 30프레임 목표 · 사전 다운로드 시작"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기 표지에 사진이 안 들어감(빈 배경) — 업로드 때 Cloudinary 401 Unauthorized · 이미지 호스트 키 확인 뒤 다시 올릴 것",
+     "[검증] 'PS 스토어 역사상 최다 예약' 문장은 sources 중 인벤 한 곳에만 있어(IBTimes 는 sources 에 없음) 캡션에서 뺐음 — 소니 원문 확인되면 되살릴 것",
+     "마이크로소프트 스토어 기록은 인벤 한 곳이라 뺌 · 한국어 지원은 두 곳에서 확인 못 해 쓰지 않음",
+     "한국 출시 시각(19일 0시)은 9월 PS 스토어 표기 기준이라 캡션에서 뺌 — 오늘 아침 축제 글과 같은 게임이라 하루 간격을 둘지 볼 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "Kotaku — Rockstar Says GTA VI Is 'Targeting' 30 FPS And Will Use PSSR On PS5 Pro",
+      "link": "https://kotaku.com/gta-6-30-fps-confirmed-ps5-pro-pssr-xbox-cloud-streaming-2000755517"
+     },
+     {
+      "title": "MIXED — GTA 6 preload is live with up to 212GB needed, and Rockstar confirms a 30 fps target",
+      "link": "https://mixed-news.com/en/gta-6-preload-live-212gb-30fps-ps5-xbox/"
+     },
+     {
+      "title": "게임메카 — 골드행 발표한 GTA 6, \"콘솔 30프레임 목표\"",
+      "link": "https://www.gamemeca.com/view.php?gid=1783330"
+     },
+     {
+      "title": "인벤 — PS, MS 역대 최다 예약 판매... 'GTA6' 사전 다운로드 시작",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323244&site=console"
+     },
+     {
+      "title": "게임메카 — Standard Edition 89,800 KRW, GTA 6 Korean Pricing Announced",
+      "link": "https://www.gamemeca.com/en/view.php?gid=1776963"
+     }
+    ],
+    "by": "claude"
+   },
+   "pick": {
+    "rank": 1,
+    "why": "출시 여드레 전 가장 많이 묻는 질문(프레임·용량)에 록스타 공지로 답한다 · 국내 가격까지 한 장에",
+    "at": "2026-11-11T19:12+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:fairgame-canceled",
+    "account": "VGChartz",
+    "url": "https://www.vgchartz.com/article/469623/playstation-cancels-fairgame-haven-to-become-support-studio/",
+    "image": null,
+    "head": "소니, Fairgame$ 개발 중단 · 헤이븐은 지원 스튜디오로",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T19:12+09:00",
+   "key": "e94cdf4c",
+   "by": "claude",
+   "subjects": [
+    "Fairgame$",
+    "헤이븐 스튜디오"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "C",
+    "kind": "정보",
+    "angle": "2023년 쇼케이스에서 공개된 소니의 PvP 하이스트 슈터가 플레이 테스트 목표에 못 미쳐 개발을 멈췄다 — 헤이븐은 문을 닫지 않고 지원 스튜디오가 된다",
+    "why": "플레이스테이션 퍼스트파티의 큰 결정 · 인원 감축 없음이라는 공식 답"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T19:12+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n소니가 헤이븐 스튜디오의 멀티플레이 슈터 〈Fairgame$〉 개발을 멈췄습니다.\n\n2023년 5월 플레이스테이션 쇼케이스에서 처음 공개된 PS5·PC 하이스트 슈터였는데요, 10일 직원들에게 보낸 사내 메일에서 플레이스테이션 경영진은 최근 플레이 테스트의 이용자 반응과 잔존율이 \"우리가 세운 목표에 못 미쳤다\"고 적었습니다. PvP 슈터 시장이 어렵다는 점도 함께 들었습니다.\n\n몬트리올의 헤이븐 스튜디오는 문을 닫지 않습니다. 플레이스테이션 대변인은 인원 감축이 없고, 스튜디오가 플레이스테이션 스튜디오의 다른 개발팀과 함께 일하는 지원 스튜디오로 바뀐다고 밝혔습니다.\n\n#겜디핑 #페어게임즈 #헤이븐스튜디오 #플레이스테이션 #소니\n\n[커버]\n소스: \n제목: 소니가 멈춘|헤이븐의 첫 게임\n부제: 〈Fairgame$〉 개발 중단 · 인원 감축은 없다\n출처:\n",
+    "caption": "소니가 헤이븐 스튜디오의 멀티플레이 슈터 〈Fairgame$〉 개발을 멈췄습니다.\n\n2023년 5월 플레이스테이션 쇼케이스에서 처음 공개된 PS5·PC 하이스트 슈터였는데요, 10일 직원들에게 보낸 사내 메일에서 플레이스테이션 경영진은 최근 플레이 테스트의 이용자 반응과 잔존율이 \"우리가 세운 목표에 못 미쳤다\"고 적었습니다. PvP 슈터 시장이 어렵다는 점도 함께 들었습니다.\n\n몬트리올의 헤이븐 스튜디오는 문을 닫지 않습니다. 플레이스테이션 대변인은 인원 감축이 없고, 스튜디오가 플레이스테이션 스튜디오의 다른 개발팀과 함께 일하는 지원 스튜디오로 바뀐다고 밝혔습니다.\n\n#겜디핑 #페어게임즈 #헤이븐스튜디오 #플레이스테이션 #소니",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "소니가 멈춘|헤이븐의 첫 게임",
+      "sub": "〈Fairgame$〉 개발 중단 · 인원 감축은 없다"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "Fairgame$,|개발이 멈췄다",
+      "sub": "헤이븐 스튜디오는 지원 스튜디오로"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기 표지에 사진이 안 들어감(빈 배경) — 업로드 때 Cloudinary 401 · Haven 사진은 해상도 미달(670x172)도 있었음",
+     "사내 메일 인용은 블룸버그 보도를 받은 VGChartz·GamingBolt 표기 기준(원문 직접 못 읽음) · 국내 정식 표기가 없어 원제 〈Fairgame$〉 그대로 씀",
+     "표지 사진은 VGChartz 기사 대표 이미지 — Fairgame$ 공식 키 아트가 맞는지 볼 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "VGChartz — PlayStation Cancels Fairgame$, Haven to Become Support Studio",
+      "link": "https://www.vgchartz.com/article/469623/playstation-cancels-fairgame-haven-to-become-support-studio/"
+     },
+     {
+      "title": "GamingBolt — Fairgame$ Officially Cancelled Over 3 Years After Its Announcement",
+      "link": "https://gamingbolt.com/fairgame-officially-cancelled-over-3-years-since-its-announcement"
+     },
+     {
+      "title": "Gematsu — Fairgame$ canceled",
+      "link": "https://www.gematsu.com/2026/11/fairgame-canceled"
+     },
+     {
+      "title": "The Escapist — Sony cancels Fairgame$ after playtest misses retention goals",
+      "link": "https://www.escapistmagazine.com/sony-cancels-fairgame-after-playtest-misses-retention-goals-haven-stays-open-as-support-studio/"
+     }
+    ],
+    "by": "claude"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:all-army-attack",
+    "account": "Devolver Digital",
+    "url": "https://store.steampowered.com/app/4128840/All_Army_Attack/",
+    "image": null,
+    "head": "디볼버 '첫 AAA 게임' 〈All Army Attack〉 공개 · 2027년 PC",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T19:12+09:00",
+   "key": "d47d1065",
+   "by": "claude",
+   "subjects": [
+    "All Army Attack",
+    "디볼버 디지털"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "인디 퍼블리셔 디볼버가 '우리의 첫 AAA 게임'을 예고했다 — 열어 보니 AAA 는 제목 〈All Army Attack〉의 머리글자였다",
+    "why": "묘한 사실 한 문장으로 열리는 발표 · 한국어 지원 · 다음 주 무료 체험판"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T19:12+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n디볼버 디지털이 '우리의 첫 AAA 게임'을 공개했습니다.\n\n〈Hotline Miami〉와 〈Cult of the Lamb〉을 낸 인디 퍼블리셔라 'AAA'라는 말이 눈길을 끌었는데요, 열어 보니 AAA 는 제목 〈All Army Attack〉의 머리글자였습니다. 블랙라이트 게임즈가 만드는 로그라이크 오토배틀러로, 동물과 식물 부대를 카드로 모아 수백 명 규모의 군대로 키워 우주에서 온 적에 맞섭니다.\n\n전투마다 병력을 희생할지 아낄지 고르는 일이 곧 수입과 이어지고, 전투 사이에는 번 돈으로 마을을 짓고 새 콘텐츠를 엽니다.\n\n2027년 PC(스팀) 출시 예정 · 11월 16~23일 스팀 오토배틀러 페스트 기간 무료 체험판 · 한국어 지원\n\n#겜디핑 #올아미어택 #디볼버디지털 #오토배틀러 #로그라이크\n\n[커버]\n소스: \n제목: 디볼버 첫 AAA 게임,|이름이 AAA 였다\n부제: 〈All Army Attack〉 · 블랙라이트 게임즈\n출처:\n",
+    "caption": "디볼버 디지털이 '우리의 첫 AAA 게임'을 공개했습니다.\n\n〈Hotline Miami〉와 〈Cult of the Lamb〉을 낸 인디 퍼블리셔라 'AAA'라는 말이 눈길을 끌었는데요, 열어 보니 AAA 는 제목 〈All Army Attack〉의 머리글자였습니다. 블랙라이트 게임즈가 만드는 로그라이크 오토배틀러로, 동물과 식물 부대를 카드로 모아 수백 명 규모의 군대로 키워 우주에서 온 적에 맞섭니다.\n\n전투마다 병력을 희생할지 아낄지 고르는 일이 곧 수입과 이어지고, 전투 사이에는 번 돈으로 마을을 짓고 새 콘텐츠를 엽니다.\n\n2027년 PC(스팀) 출시 예정 · 11월 16~23일 스팀 오토배틀러 페스트 기간 무료 체험판 · 한국어 지원\n\n#겜디핑 #올아미어택 #디볼버디지털 #오토배틀러 #로그라이크",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "디볼버 첫 AAA 게임,|이름이 AAA 였다",
+      "sub": "〈All Army Attack〉 · 블랙라이트 게임즈"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "디볼버가 말한|AAA 는 이 뜻",
+      "sub": "All Army Attack · 2027년 PC"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기 표지에 사진이 안 들어감(빈 배경) — 업로드 때 Cloudinary 401 · 영상에 자막이 없어 숏폼 구간·후킹 B('화면을 가득 채운다')는 영상을 눈으로 보고 확정할 것",
+     "한국어는 스팀 언어표 체크로만 확인(인터페이스인지 자막인지 구분 못 함) · 체험판 16~23일은 스팀 축제 기준 날짜(미국 시간)",
+     "숏폼 0:05-0:30 은 영상을 직접 보지 않고 잡음 — 로고·등급 화면이면 전투 장면으로 옮길 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "Steam — All Army Attack (개발사·출시 예정·언어)",
+      "link": "https://store.steampowered.com/app/4128840/All_Army_Attack/"
+     },
+     {
+      "title": "Insider Gaming — Devolver Digital Reveals Its First \"AAA\" Game",
+      "link": "https://insider-gaming.com/devolver-digital-reveals-its-first-aaa-game/"
+     },
+     {
+      "title": "Inven Global — Devolver Digital Unveils New Auto-Battler 'All Army Attack'",
+      "link": "https://www.invenglobal.com/articles/28441/devolver-digital-unveils-new-auto-battler-all-army-attack"
+     },
+     {
+      "title": "MonsterVine — Devolver Announces All Army Attack, With Steam Demo Coming November 16",
+      "link": "https://monstervine.com/2026/11/all-army-attack-devolver-announcement-steam-demo/"
+     }
+    ],
+    "by": "claude"
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=fcuqdNUmZ3c\n구간: 0:05-0:30\n곡: All Army Attack\n아티스트: AAA 의 뜻은\n피처링:\n후킹: \n출처: Devolver Digital\n자막: 자동",
+    "caption": "디볼버 디지털이 '우리의 첫 AAA 게임'을 공개했습니다.\n\n인디 게임을 내 온 퍼블리셔의 'AAA'였는데요, 알고 보니 제목 〈All Army Attack〉의 머리글자였습니다. 블랙라이트 게임즈가 만드는 로그라이크 오토배틀러로, 동물과 식물 부대를 카드로 모아 수백 명 규모 군대로 키웁니다. 영상은 디볼버 공식 채널의 발표 트레일러입니다.\n\n2027년 PC(스팀) 출시 예정 · 11월 16~23일 무료 체험판 · 한국어 지원\n\n#겜디핑 #올아미어택 #디볼버디지털 #오토배틀러 #로그라이크",
+    "hooks": {
+     "A": "디볼버가 공개한 / 첫 AAA 게임",
+     "B": "동물과 식물 부대가 / 화면을 가득 채운다",
+     "C": "AAA 의 뜻은 / All Army Attack"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=fcuqdNUmZ3c",
+     "credit": "Devolver Digital",
+     "range": [
+      5.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "C",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기 표지에 사진이 안 들어감(빈 배경) — 업로드 때 Cloudinary 401 · 영상에 자막이 없어 숏폼 구간·후킹 B('화면을 가득 채운다')는 영상을 눈으로 보고 확정할 것",
+     "한국어는 스팀 언어표 체크로만 확인(인터페이스인지 자막인지 구분 못 함) · 체험판 16~23일은 스팀 축제 기준 날짜(미국 시간)",
+     "숏폼 0:05-0:30 은 영상을 직접 보지 않고 잡음 — 로고·등급 화면이면 전투 장면으로 옮길 것"
+    ],
+    "research": [
+     {
+      "title": "Steam — All Army Attack (개발사·출시 예정·언어)",
+      "link": "https://store.steampowered.com/app/4128840/All_Army_Attack/"
+     },
+     {
+      "title": "Insider Gaming — Devolver Digital Reveals Its First \"AAA\" Game",
+      "link": "https://insider-gaming.com/devolver-digital-reveals-its-first-aaa-game/"
+     },
+     {
+      "title": "Inven Global — Devolver Digital Unveils New Auto-Battler 'All Army Attack'",
+      "link": "https://www.invenglobal.com/articles/28441/devolver-digital-unveils-new-auto-battler-all-army-attack"
+     },
+     {
+      "title": "MonsterVine — Devolver Announces All Army Attack, With Steam Demo Coming November 16",
+      "link": "https://monstervine.com/2026/11/all-army-attack-devolver-announcement-steam-demo/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/fcuqdNUmZ3c/maxresdefault.jpg",
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-11T19:15+09:00"
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "'첫 AAA 게임'의 AAA 가 제목 머리글자였다는 묘한 사실 하나 · 한국어 지원 · 공식 영상으로 숏폼까지",
+    "at": "2026-11-11T19:12+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ocarina-remake-sales",
+    "account": "한국닌텐도",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323259&site=console",
+    "image": null,
+    "head": "'젤다의 전설 시간의 오카리나', 출시 4일 만에 520만 장 판매",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T19:12+09:00",
+   "key": "c6ac7b3b",
+   "by": "claude",
+   "subjects": [
+    "젤다의 전설 시간의 오카리나"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "1998년 작을 다시 만든 시간의 오카리나가 나흘 만에 520만 장 — 스위치2 소프트웨어의 첫 나흘 기록으로는 가장 많다",
+    "why": "게임 안 하는 사람도 아는 이름 · 한국닌텐도 공식 발표 · 숫자 하나로 읽힌다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T19:12+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈젤다의 전설 시간의 오카리나〉가 출시 나흘 만에 전 세계에서 520만 장 팔렸습니다.\n\n한국닌텐도가 11일 밝힌 수치로 패키지와 다운로드를 합친 것인데요, 닌텐도 스위치2 소프트웨어의 출시 뒤 나흘 판매량으로는 역대 최고입니다.\n\n1998년 닌텐도64로 나온 원작을 처음부터 다시 만든 작품입니다. 그래픽과 편의성은 새로 다듬었고, 링크가 어린 시절과 어른 시절을 오가는 구조는 원작을 그대로 따랐습니다. 메타크리틱 점수는 96점입니다.\n\n11월 5일 출시 · 닌텐도 스위치2 전용\n\n#겜디핑 #젤다의전설 #시간의오카리나 #닌텐도 #스위치2\n\n[커버]\n소스: \n제목: 시간의 오카리나,|나흘 만에 520만 장\n부제: 닌텐도 스위치2 · 한국닌텐도 발표\n출처:\n",
+    "caption": "〈젤다의 전설 시간의 오카리나〉가 출시 나흘 만에 전 세계에서 520만 장 팔렸습니다.\n\n한국닌텐도가 11일 밝힌 수치로 패키지와 다운로드를 합친 것인데요, 닌텐도 스위치2 소프트웨어의 출시 뒤 나흘 판매량으로는 역대 최고입니다.\n\n1998년 닌텐도64로 나온 원작을 처음부터 다시 만든 작품입니다. 그래픽과 편의성은 새로 다듬었고, 링크가 어린 시절과 어른 시절을 오가는 구조는 원작을 그대로 따랐습니다. 메타크리틱 점수는 96점입니다.\n\n11월 5일 출시 · 닌텐도 스위치2 전용\n\n#겜디핑 #젤다의전설 #시간의오카리나 #닌텐도 #스위치2",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "시간의 오카리나,|나흘 만에 520만 장",
+      "sub": "닌텐도 스위치2 · 한국닌텐도 발표"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "다시 만든 오카리나,|나흘에 520만 장",
+      "sub": "스위치2 소프트웨어 첫 나흘 최고 기록"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기 표지에 사진이 안 들어감(빈 배경) — 업로드 때 Cloudinary 401 · 한국닌텐도 사진 두 장은 해상도 미달",
+     "520만 장·'역대 최고'는 한국닌텐도 발표를 받은 인벤·게임메카 기준(닌텐도 원문 직접 못 봄) · 국내 가격은 블로그 정리뿐이라 쓰지 않음 · 9일에 출시 글이 있었음 — 같은 각도 반복 아닌지 볼 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "인벤 — '젤다의 전설 시간의 오카리나', 출시 4일 만에 520만 장 판매",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323259&site=console"
+     },
+     {
+      "title": "게임메카 — 젤다 시간의 오카리나, 출시 4일 만에 520만 장 판매",
+      "link": "https://www.gamemeca.com/view.php?gid=1783327"
+     }
+    ],
+    "by": "claude"
+   },
+   "pick": {
+    "rank": 2,
+    "why": "게임 안 하는 사람도 아는 젤다 · 520만 장이라는 숫자 하나로 바로 읽힌다 · 한국닌텐도 발표",
+    "at": "2026-11-11T19:12+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ps5-100-million",
+    "account": "Sony Interactive Entertainment",
+    "url": "https://www.gematsu.com/2026/11/ps5-shipments-top-100-million",
+    "image": null,
+    "head": "PS5 누적 출하량 1억 대 돌파 (11/10 기준)",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-11T19:12+09:00",
+   "key": "7673cada",
+   "by": "claude",
+   "subjects": [
+    "PS5",
+    "플레이스테이션"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "C",
+    "kind": "정보",
+    "angle": "PS5 누적 출하 1억 대 — 출시 6년 만, 1억 대를 넘은 넷째 플레이스테이션",
+    "why": "플랫폼의 큰 숫자 · 소니 공식 자료"
+   },
+   "added": "claude",
+   "added_at": "2026-11-11T19:12+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nPS5 누적 출하량이 1억 대를 넘었습니다.\n\n소니 인터랙티브 엔터테인먼트가 11일 사업 자료를 고쳐 밝힌 11월 10일 기준 수치인데요, 9월 말 9,790만 대에서 40일 남짓 사이에 210만 대 넘게 더 나갔습니다. 소비자 판매량이 아니라 매장에 공급한 출하량 기준입니다.\n\n2020년 11월 출시 뒤 6년 만이고, 1억 대를 넘은 플레이스테이션 가정용 기기로는 초대 플레이스테이션·PS2·PS4 에 이어 넷째입니다. PS4(1억 1,700만 대)와 PS2(1억 6,000만 대)까지는 아직 거리가 남았습니다.\n\n#겜디핑 #PS5 #플레이스테이션 #소니 #SIE\n\n[커버]\n소스: \n제목: PS5, 6년 만에|1억 대 넘었다\n부제: 소니 인터랙티브 엔터테인먼트 · 11월 10일 기준\n출처:\n",
+    "caption": "PS5 누적 출하량이 1억 대를 넘었습니다.\n\n소니 인터랙티브 엔터테인먼트가 11일 사업 자료를 고쳐 밝힌 11월 10일 기준 수치인데요, 9월 말 9,790만 대에서 40일 남짓 사이에 210만 대 넘게 더 나갔습니다. 소비자 판매량이 아니라 매장에 공급한 출하량 기준입니다.\n\n2020년 11월 출시 뒤 6년 만이고, 1억 대를 넘은 플레이스테이션 가정용 기기로는 초대 플레이스테이션·PS2·PS4 에 이어 넷째입니다. PS4(1억 1,700만 대)와 PS2(1억 6,000만 대)까지는 아직 거리가 남았습니다.\n\n#겜디핑 #PS5 #플레이스테이션 #소니 #SIE",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "PS5, 6년 만에|1억 대 넘었다",
+      "sub": "소니 인터랙티브 엔터테인먼트 · 11월 10일 기준"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "PS5 출하량,|1억 대를 넘었다",
+      "sub": "1억 대를 넘은 넷째 플레이스테이션"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기 표지에 사진이 안 들어감(빈 배경) — 업로드 때 Cloudinary 401 · 이미지 호스트 키 확인 뒤 다시 올릴 것",
+     "사람 없는 수치 소식이라 표지 한 장 · 표지 사진은 게임메카 기사의 PS5 Pro 사진(SIEK 제공) — 기기 사진이 흐리지 않은지 볼 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 소니 PS5, 출시 6년 만에 출하량 1억 대 돌파",
+      "link": "https://www.gamemeca.com/view.php?gid=1783340"
+     },
+     {
+      "title": "Push Square — PS5 Has Officially Crossed 100 Million Sales, Sony Confirms",
+      "link": "https://www.pushsquare.com/news/2026/11/ps5-has-officially-crossed-100-million-sales-sony-confirms"
+     },
+     {
+      "title": "Gematsu — PS5 shipments top 100 million",
+      "link": "https://www.gematsu.com/2026/11/ps5-shipments-top-100-million"
+     },
+     {
+      "title": "Twisted Voxel — PlayStation 5 Surpasses 100 Million Units Sold Worldwide",
+      "link": "https://twistedvoxel.com/playstation-5-sales-100-million-worldwide/"
+     }
+    ],
+    "by": "claude"
    },
    "corner_name": "소식"
   }
@@ -628,14 +1056,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-11T11:06+09:00"
+  "at": "2026-11-11T19:15+09:00"
  },
  "queue": {
-  "next": "2026-11-11T11:09+09:00",
+  "next": "2026-11-11T19:17+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
