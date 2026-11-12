@@ -196,11 +196,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "고정 연재 「그날의 앨범」 #3 · 발매 10주년 당일, 마지막 앨범과 떠난 멤버라는 사람 이야기",
-    "at": "2026-11-12T10:04+09:00"
-   },
    "corner_name": "그날의 앨범",
    "corner_no": 3
   },
@@ -404,13 +399,13 @@
      "at": "2026-11-12T10:08+09:00"
     }
    },
+   "corner_name": "그 말",
+   "corner_no": 8,
    "pick": {
     "rank": 1,
     "why": "숏폼 한 자리 · 이름 둘(수퍼비·호미들)이 얽힌 힙합 관계 · 본인 입으로 한 말",
-    "at": "2026-11-12T10:04+09:00"
-   },
-   "corner_name": "그 말",
-   "corner_no": 8
+    "at": "2026-11-12T16:22+09:00"
+   }
   },
   {
    "source": {
@@ -746,6 +741,350 @@
    },
    "corner_name": "그 말",
    "corner_no": 9
+  },
+  {
+   "source": {
+    "id": "claude:haon-iem-two-wins",
+    "account": "톱스타뉴스",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16262176",
+    "image": null,
+    "head": "김하온, 새 앨범 'i+em' 예고…자기대면 콘셉트 화보",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-12T16:22+09:00",
+   "key": "1693edfb",
+   "by": "claude",
+   "subjects": [
+    "김하온"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "인물해부 — 명상을 랩하던 고등래퍼2 우승자가 하이어뮤직·KC를 거쳐 8년 만에 쇼미12까지, 그리고 오늘 정규 2집",
+    "why": "이번 회차 목표 '인물해부' · 오늘 18시 [i+em] 발매 · 김하온 글은 앞서 11배"
+   },
+   "added": "claude",
+   "added_at": "2026-11-12T16:22+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n김하온(@noahmik)이 오늘(12일) 오후 6시 정규 2집 [i+em]을 냅니다.\n\n2018년 〈고등래퍼2〉에서 명상은 나를 비워내는 과정이라고 말하던 그는 하이어뮤직(@h1ghrmusic)을 거쳐 2023년 식케이(@younghotyellow94)가 세운 레이블 KC의 첫 아티스트가 됐는데요, 올해 4월에는 〈쇼미더머니12〉에서 우승하며 8년 만에 다시 서바이벌 정상에 섰습니다.\n\n\"무조건 우승한다는 각오가 처음부터 있었다\"던 그가 우승 뒤 처음 내놓는 정규 앨범입니다. 콘셉트는 '자기대면', 티저 속 김하온은 검은 옷의 캐릭터와 마주 앉아 있습니다.\n\n두 번의 우승 사이 8년을 지나 온 래퍼가 이번엔 자기 자신과 마주 앉았습니다.\n\n#PLOT #김하온 #HAON #쇼미더머니12 #고등래퍼2\n\n[커버]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490183/shafh1gjxuojkfikspcg.jpg\n제목: 김하온, 두 번의 우승 뒤|오늘 정규 2집\n부제: 고등래퍼2부터 쇼미더머니12, 그리고 [i+em]\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg\n소제목: 명상을 랩하던 고등래퍼\n본문: 김하온은 〈고등래퍼〉 시즌1에서 떨어진 뒤 시즌2에 다시 나와 2018년 우승했습니다.||\"명상은 나를 비워내는 과정\"이라는 그의 말이 그때 그를 알린 첫인상이었습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg\n소제목: 하이어뮤직에서 KC로\n본문: 우승 뒤 박재범의 하이어뮤직에서 5년을 보낸 김하온은 2023년 5월 식케이가 세운 레이블 KC와 전속계약을 맺었습니다.||KC가 처음 영입한 아티스트였는데요, 이듬해 정규 1집 [HAONOAH]를 냈습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg\n소제목: 8년 만의 두 번째 우승\n본문: 올해 4월 김하온은 〈쇼미더머니12〉에서 우승했습니다. 〈고등래퍼2〉 이후 8년 만에 다시 선 서바이벌 정상이었습니다.||그는 \"무조건 우승한다는 각오가 처음부터 있었다\"고 말했습니다.\n출처: \n\n[슬라이드]\n소스: https://res.cloudinary.com/dwndhzqod/image/upload/v1792490371/xljj1kfnpt44l2cr0z40.jpg\n소제목: 오늘 저녁 [i+em]\n본문: 그리고 오늘(12일) 오후 6시, 우승 뒤 첫 정규 앨범 [i+em]이 나옵니다.||앨범 콘셉트는 '자기대면'인데요, 티저 속 김하온은 검은 옷을 입은 캐릭터와 마주 앉아 있습니다.\n출처:\n",
+    "caption": "김하온(@noahmik)이 오늘(12일) 오후 6시 정규 2집 [i+em]을 냅니다.\n\n2018년 〈고등래퍼2〉에서 명상은 나를 비워내는 과정이라고 말하던 그는 하이어뮤직(@h1ghrmusic)을 거쳐 2023년 식케이(@younghotyellow94)가 세운 레이블 KC의 첫 아티스트가 됐는데요, 올해 4월에는 〈쇼미더머니12〉에서 우승하며 8년 만에 다시 서바이벌 정상에 섰습니다.\n\n\"무조건 우승한다는 각오가 처음부터 있었다\"던 그가 우승 뒤 처음 내놓는 정규 앨범입니다. 콘셉트는 '자기대면', 티저 속 김하온은 검은 옷의 캐릭터와 마주 앉아 있습니다.\n\n두 번의 우승 사이 8년을 지나 온 래퍼가 이번엔 자기 자신과 마주 앉았습니다.\n\n#PLOT #김하온 #HAON #쇼미더머니12 #고등래퍼2",
+    "photos": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490183/shafh1gjxuojkfikspcg.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ker5myy5/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vepv2vrs/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_744s5ov7/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_152vj4z1/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490371/xljj1kfnpt44l2cr0z40.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_w4pmx114/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490375/urx1jmwbkoibvxpagbul.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ws8rp73y/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792241339/bddv88zvxzq5ixfd9vcs.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8hk5oo37/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490167/vc6lc85ax7p7unbrgo70.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_hab66700/auto_pdb_김하온_화보_.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490183/shafh1gjxuojkfikspcg.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ker5myy5/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490197/l4u6xdvrkghrarbxkuuh.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vepv2vrs/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490204/evnypvvxyx2sgphu0mes.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_744s5ov7/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490340/diglpbvuxor1oakfubla.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_152vj4z1/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490371/xljj1kfnpt44l2cr0z40.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_w4pmx114/auto_pdb_김하온_앨범 재킷_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490375/urx1jmwbkoibvxpagbul.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_ws8rp73y/auto_pdb_김하온_티저_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792241339/bddv88zvxzq5ixfd9vcs.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8hk5oo37/auto_pdb_김하온_화보_.jpg"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792490167/vc6lc85ax7p7unbrgo70.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_hab66700/auto_pdb_김하온_화보_.jpg"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "김하온, 두 번의 우승 뒤|오늘 정규 2집",
+      "sub": "고등래퍼2부터 쇼미더머니12, 그리고 [i+em]"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 원문에 없는 '2018년 4월'·'HAONOAH 3월'·'명상으로 가사를 쓴다'를 고침 (아주경제 원문: \"명상은 나를 비워내는 과정\") · [i+em]이 정규 2집이라는 건 나무위키와 톱스타 '11월 새 정규 앨범' 언급뿐 — 발매 후 멜론에서 정규 표기 확인할 것",
+     "[사진 없음] Cloudinary 401 — 기사 사진·사진 DB 모두 못 붙어 미리보기가 검은 바탕 · 앱에서 김하온 사진을 붙일 것 (글자 배치는 확인함)",
+     "첫 단독 콘서트 'ARK'(11/21 KBS아레나·매진)는 톱스타뉴스 한 곳뿐이라 뺐음 — 공지 확인되면 캡션 끝에 붙일 것",
+     "18시 발매 전 초안 — 타이틀곡·수록곡은 발매 뒤 확인해 한 줄 더할지 판단"
+    ],
+    "research": [
+     {
+      "title": "톱스타뉴스 10/29 — [i+em] 2026.11.12 THU 6PM · 자기대면 콘셉트 · KC",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16262176"
+     },
+     {
+      "title": "TopStar Global — due Nov. 12 at 6 p.m. KST",
+      "link": "https://global.topstarnews.net/en/articleView.html?idxno=16262176"
+     },
+     {
+      "title": "뉴시스 5/8 — 쇼미12 우승 · 고등래퍼2 이후 8년 · \"무조건 우승한다는 각오\"",
+      "link": "https://www.newsis.com/view/NISX20260507_0003619475"
+     },
+     {
+      "title": "머니투데이 4/3 — 쇼미12 김하온 우승",
+      "link": "https://www.mt.co.kr/entertainment/2026/04/03/2026040312157239942"
+     },
+     {
+      "title": "머니투데이 3/24 — 고등래퍼2 명상 · 시즌1 탈락",
+      "link": "https://www.mt.co.kr/entertainment/2026/03/24/2026032409027225117"
+     },
+     {
+      "title": "아주경제 2018/02 — '명상은 나를 비워내는 시간'",
+      "link": "https://www.ajunews.com/view/20180224085232405"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/9ffa0341d298bdfe5659.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a79e50c77dcb1bf3576a.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/5df9199cd8fd5c1aa3ba.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/3014871f551b74506efb.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/7cd3c32729c753b74d2a.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/fd634f8c8b779f63ee78.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/9ffa0341d298bdfe5659.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-12T16:22+09:00",
+     "v": {
+      "A": "ce9a45fc"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "이번 회차 목표 인물해부 · 오늘 18시 정규 2집 발매 당일 — 지금 일어난 일이 있는 해부",
+    "at": "2026-11-12T16:22+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:coachella-2027-jisoo",
+    "account": "경향신문",
+    "url": "https://www.khan.co.kr/article/202611111901001/",
+    "image": null,
+    "head": "지수·이날치·NCT·베몬, 내년 '코첼라' 선다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-12T16:22+09:00",
+   "key": "2202da12",
+   "by": "claude",
+   "subjects": [
+    "지수"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "2027 코첼라 라인업 — 2023년 블랙핑크 헤드라이너였던 지수가 4년 만에 솔로로 돌아간다 (기사형 · 표지 한 장)",
+    "why": "🍯 지수 코첼라 · 어제 라인업 공개 · 한국 아티스트 네 팀"
+   },
+   "added": "claude",
+   "added_at": "2026-11-12T16:22+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n지수(@sooyaaa__)가 내년 4월 솔로로 코첼라 무대에 섭니다.\n\n코첼라 주최 측이 10일(현지시간) 공개한 2027 라인업에는 지수와 NCT, 베이비몬스터, 이날치가 이름을 올렸는데요, 2023년 블랙핑크(@blackpinkofficial)로 헤드라이너 무대에 섰던 지수는 4년 만에 혼자 같은 무대로 돌아갑니다.\n\nNCT는 유닛 이름 없이 'NCT'로 적혔고, 2024년 데뷔한 베이비몬스터는 처음 코첼라에 오릅니다. 헤드라이너는 두아 리파, 테임 임팔라, SZA입니다.\n\n코첼라는 2027년 4월 9~11일과 16~18일 미국 캘리포니아 인디오에서 열립니다. 지수와 이날치는 금요일, NCT는 토요일, 베이비몬스터는 일요일 무대에 오릅니다.\n\n#PLOT #코첼라 #지수 #NCT #베이비몬스터 #이날치\n\n[커버]\n소스: https://i.ibb.co/Kpk6jzbm/4e207a2dbc0f.jpg\n제목: 지수, 4년 만에|솔로로 코첼라 간다\n부제: 2027 코첼라 · 지수 · NCT · 베이비몬스터 · 이날치\n출처: @sooyaaa__\n",
+    "caption": "지수(@sooyaaa__)가 내년 4월 솔로로 코첼라 무대에 섭니다.\n\n코첼라 주최 측이 10일(현지시간) 공개한 2027 라인업에는 지수와 NCT, 베이비몬스터, 이날치가 이름을 올렸는데요, 2023년 블랙핑크(@blackpinkofficial)로 헤드라이너 무대에 섰던 지수는 4년 만에 혼자 같은 무대로 돌아갑니다.\n\nNCT는 유닛 이름 없이 'NCT'로 적혔고, 2024년 데뷔한 베이비몬스터는 처음 코첼라에 오릅니다. 헤드라이너는 두아 리파, 테임 임팔라, SZA입니다.\n\n코첼라는 2027년 4월 9~11일과 16~18일 미국 캘리포니아 인디오에서 열립니다. 지수와 이날치는 금요일, NCT는 토요일, 베이비몬스터는 일요일 무대에 오릅니다.\n\n#PLOT #코첼라 #지수 #NCT #베이비몬스터 #이날치",
+    "photos": [
+     {
+      "url": "https://i.ibb.co/Kpk6jzbm/4e207a2dbc0f.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/841978557_18371289973266096_8603407328096380237_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=d0pHUr18xYwQ7kNvwFmnSzc&_nc_oc=Adp2VEw2OK3y8tW-24ii8qSWP3sVHfErvkJUPUUvImfez9l0hGmSOD2Dqide6Xt9aHg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQNRldXUOeeLNCP6VBrz6yakaBmaNaDfj4JOWBnHmJPhFQ&oe=6AD21848"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792016872/iffrp39xbuz6n5os6p8b.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825325921_18369853651266096_5349782689754387090_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=_-DW-N7jyvQQ7kNvwGN5QQX&_nc_oc=Adp54M4FUjESKb-kIPMsh_oIzcV2OWIrjTGmJA12HGVPvr8fhikR7uZa-kOQlh1E15s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=c3TiRmsPYN2Shl1OXZiFhA&oh=00_AQPaBw_JQTiv44AusoQX6ZIE9o85ZzlISLYv3fAoJH7zLw&oe=6AD5BFB0"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792837813/hfokdaoxst9rxspbichw.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/807727674_18367365094266096_5679219949797035921_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=J8Wlx3v4kNoQ7kNvwGLbbjb&_nc_oc=AdrzOVaWSSllzrAx4O_i6PI-C8ojslc8KW34mEzvgVOhejlhieNjgRocODwACBk-URA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=SysUx8ZLfY2JegdhMfW6mQ&oh=00_AQN5H3G7ujcZHFFXsHMFrOmGKRnYnHQEK7A1Fsr-bUBLwg&oe=6AE2603B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792837819/ckluuwjcjfb6qyew1yqg.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/801667757_18366787846266096_581542221136451845_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yLgFd9T6dY8Q7kNvwEgQXlY&_nc_oc=AdoJ4_nyfpAeElJTf1Fchj284v4esh92pv1iS3lw81lXqJ9lg_GU-c0j3PijHQnmjDM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=SysUx8ZLfY2JegdhMfW6mQ&oh=00_AQN7X6mDGd22rdBpEpUeu_r9uw6hFmo2b3ZmW17K6-5GTw&oe=6AE24098"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://i.ibb.co/Kpk6jzbm/4e207a2dbc0f.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/841978557_18371289973266096_8603407328096380237_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=d0pHUr18xYwQ7kNvwFmnSzc&_nc_oc=Adp2VEw2OK3y8tW-24ii8qSWP3sVHfErvkJUPUUvImfez9l0hGmSOD2Dqide6Xt9aHg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=fRh7N26E_d3B2lsfPqXE4w&oh=00_AQNRldXUOeeLNCP6VBrz6yakaBmaNaDfj4JOWBnHmJPhFQ&oe=6AD21848"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792016872/iffrp39xbuz6n5os6p8b.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/825325921_18369853651266096_5349782689754387090_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=_-DW-N7jyvQQ7kNvwGN5QQX&_nc_oc=Adp54M4FUjESKb-kIPMsh_oIzcV2OWIrjTGmJA12HGVPvr8fhikR7uZa-kOQlh1E15s&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=c3TiRmsPYN2Shl1OXZiFhA&oh=00_AQPaBw_JQTiv44AusoQX6ZIE9o85ZzlISLYv3fAoJH7zLw&oe=6AD5BFB0"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792837813/hfokdaoxst9rxspbichw.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/807727674_18367365094266096_5679219949797035921_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=J8Wlx3v4kNoQ7kNvwGLbbjb&_nc_oc=AdrzOVaWSSllzrAx4O_i6PI-C8ojslc8KW34mEzvgVOhejlhieNjgRocODwACBk-URA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=SysUx8ZLfY2JegdhMfW6mQ&oh=00_AQN5H3G7ujcZHFFXsHMFrOmGKRnYnHQEK7A1Fsr-bUBLwg&oe=6AE2603B"
+     },
+     {
+      "url": "https://res.cloudinary.com/dwndhzqod/image/upload/v1792837819/ckluuwjcjfb6qyew1yqg.jpg",
+      "credit": "@sooyaaa__",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/801667757_18366787846266096_581542221136451845_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yLgFd9T6dY8Q7kNvwEgQXlY&_nc_oc=AdoJ4_nyfpAeElJTf1Fchj284v4esh92pv1iS3lw81lXqJ9lg_GU-c0j3PijHQnmjDM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=SysUx8ZLfY2JegdhMfW6mQ&oh=00_AQN7X6mDGd22rdBpEpUeu_r9uw6hFmo2b3ZmW17K6-5GTw&oe=6AE24098"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "지수, 4년 만에|솔로로 코첼라 간다",
+      "sub": "2027 코첼라 · 지수 · NCT · 베이비몬스터 · 이날치"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "지수·NCT·베이비몬스터|내년 코첼라 무대에",
+      "sub": "2027년 4월 · 미국 인디오"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사실은 경향·스포츠경향과 맞음 · 표지 사진이 디올 립·쿠션을 든 광고 컷이라 브랜드 홍보처럼 보임 — 무대·일상 사진으로 바꾸는 게 좋음",
+     "[사진 없음] Cloudinary 401 · ibb 시간 초과로 미리보기가 검은 바탕 — 앱에서 @sooyaaa__ 사진을 붙일 것 (글자 배치는 확인함)"
+    ],
+    "research": [
+     {
+      "title": "경향신문 11/11 — 지수·이날치·NCT·베몬, 내년 코첼라",
+      "link": "https://www.khan.co.kr/article/202611111901001/"
+     },
+     {
+      "title": "스포츠경향 11/11 — 요일별 출연 · 헤드라이너 두아 리파·테임 임팔라·SZA",
+      "link": "https://sports.khan.co.kr/article/202611111543013?pt=nv"
+     },
+     {
+      "title": "한국경제 11/11 — 블랙핑크 지수·NCT·베이비몬스터·이날치, 내년 코첼라",
+      "link": "https://www.hankyung.com/article/202611110600H"
+     },
+     {
+      "title": "재경일보 — 베이비몬스터 코첼라 첫 입성",
+      "link": "https://news.jkn.co.kr/post/1088368"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/1beb2e7ca71ddf08eed7.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0258b0b8fde596c1e3e0.jpg"
+     ],
+     "covers": {
+      "B": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f4834d30f55fbcc24eff.jpg",
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/1beb2e7ca71ddf08eed7.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-12T16:23+09:00",
+     "v": {
+      "A": "dea0000d",
+      "B": "d9505603"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "어제 발표된 코첼라 라인업 · 지수 4년 만의 솔로 복귀라는 사람 각도 · 표지 한 장",
+    "at": "2026-11-12T16:22+09:00"
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -920,14 +1259,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-12T12:41+09:00"
+  "at": "2026-11-12T16:22+09:00"
  },
  "queue": {
-  "next": "2026-11-12T12:43+09:00",
+  "next": "2026-11-12T16:25+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-11T21:33+09:00"
