@@ -599,6 +599,97 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:brk-24c9fddd",
+    "account": "@갈등·반응",
+    "url": "https://www.insight.co.kr/news/581712",
+    "image": null,
+    "head": "맥날 랩 뜬 존박, 넉살 앞에서 '너무 고평가돼 무섭다'",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-12T12:37+09:00",
+   "key": "8afb5f86",
+   "by": "claude",
+   "subjects": [
+    "존박"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "맥도날드 랩이 뜬 뒤 존박이 넉살 앞에서 '너무 고평가돼 무섭다'고 털어놓은 장면",
+    "why": "10/23 존이냐박이냐 영상 이후 이어진 맥날 랩 화제에 11/11 TEO 선공개 영상으로 본인 속마음이 나와 기사가 몰림"
+   },
+   "added": "claude",
+   "added_at": "2026-11-12T12:37+09:00",
+   "corner": "mal",
+   "shorts": {
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=Kp00EmVJb8s\n구간: 2:12-2:52\n곡: 넉살 앞에서 꺼낸 속마음\n아티스트: 맥날 랩 뜬 존박이\n피처링:\n후킹: \n출처: TEO 테오\n자막: 자동",
+    "caption": "존박이 '맥도날드 랩'이 뜬 뒤로 오히려 무서워졌다고 털어놨습니다.\n\n11일 공개된 TEO 웹예능 〈존박이 밥사마〉 3회 선공개 영상에서 넉살(@nucksal)을 만난 존박은 웃기려고 한 적이 단 한 순간도 없었다고 말했는데요, 힙합을 존중하기 때문에 설렁설렁하거나 조롱하듯 할 수 없었고, 가사도 자기 앨범 가사보다 더 오래 붙잡고 썼다고 했습니다. 그러면서 \"나는 너무 고평가됐다\"며 좋아하는 래퍼들이 자신을 안 좋게 볼까 걱정된다고 덧붙였습니다.\n\n맥도날드 랩은 지난달 23일 존박의 유튜브 채널 '존이냐박이냐'에 올라온 영상에서 시작됐습니다. 로꼬(@satgotloco)에게 랩을 배운 존박이 실제 매장에서 랩으로 주문하는 장면이었고, 가사는 곽진언(@kwakjineon)과 함께 썼습니다.\n\n100%로 했다는 그 진심이 지금 존박을 가장 긴장하게 만드는 셈입니다.\n\n#PLOT #존박 #넉살 #존박이밥사마 #로꼬 #곽진언",
+    "hooks": {
+     "A": "맥날 랩 뜬 존박이 / 넉살 앞에서 꺼낸 속마음",
+     "B": "앨범 가사보다 공들인 / 맥날 랩, 존박은 무섭답니다",
+     "C": "넉살 앞에서 쩔쩔매는 / 존박의 진지한 랩 고민"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Kp00EmVJb8s",
+     "credit": "TEO 테오",
+     "range": [
+      132.0,
+      172.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 중간 — TEO 테오 (웹예능 〈존박이 밥사마〉 3회 선공개 · 2:12-2:52, 40초)",
+     "선공개 영상에서 직접 자막으로 확인한 말만 썼습니다 — 13일(금) 본편이 나오면 같은 장면이 남았는지 한 번 봐 주세요. 원본 맥날 랩 영상은 맥도날드 광고 영상이라 캡션에서 제품명은 뺐습니다.",
+     "반복 — 「존박」 글이 이틀 안에 이미 2편 나갔습니다. 새 사실이 없으면 3번째는 피하는 게 좋습니다"
+    ],
+    "research": [
+     {
+      "title": "맥도날드 랩에 대한 존박의 속마음 | EP.03 선공개 | 존박이 밥사마 (TEO 테오, 2026-11-11)",
+      "link": "https://www.youtube.com/watch?v=Kp00EmVJb8s"
+     },
+     {
+      "title": "맥도날드에서 랩으로 주문하는 존박(with 로꼬) (존이냐박이냐, 2026-10-23)",
+      "link": "https://www.youtube.com/watch?v=PnaKtFPlKoo"
+     },
+     {
+      "title": "인사이트 — 존박 '너무 고평가돼 무섭다'... '맥도날드 랩' 바이럴에 솔직 심경",
+      "link": "https://www.insight.co.kr/news/581712"
+     },
+     {
+      "title": "톱스타뉴스 — 존박, 맥도날드 랩 인기 부담스러웠다…'너무 고평가돼 무서워'",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16274426"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Kp00EmVJb8s/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/60c5a1cd2ae2a0803562.jpg",
+     "key": "Kp00EmVJb8s@132.0"
+    },
+    "px": {
+     "vid": "Kp00EmVJb8s",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/19b1227ba2043f3eae48.mp4",
+     "off": 87.0,
+     "end": 217.0,
+     "full": 218.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-12T12:40+09:00"
+    }
+   },
+   "corner_name": "그 말",
+   "corner_no": 9
   }
  ],
  "skipped": [],
@@ -677,7 +768,7 @@
     "need_today": 2,
     "day": null,
     "next_no": 8,
-    "drafts": 1,
+    "drafts": 2,
     "why": "방송·팟캐스트·라디오에서 씬 사람이 한 말 — 상위 릴스 대부분이 이 결"
    },
    {
@@ -777,10 +868,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-12T11:31+09:00"
+  "at": "2026-11-12T12:40+09:00"
  },
  "queue": {
-  "next": "2026-11-12T11:33+09:00",
+  "next": "2026-11-12T12:42+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-11T21:33+09:00"
