@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12 19:04 KST",
+ "generated_at": "2026-11-12 22:04 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1676,11 +1676,16 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-12 15:05 KST"
+  "daily": "2026-11-12 19:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-12T19:04:55+09:00",
+  "fetched_at": "2026-11-12T21:25:21+09:00",
   "posts": [
+   {
+    "t": "2026-11-12T19:35+09:00",
+    "type": "VIDEO",
+    "head": "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화'의 후반부"
+   },
    {
     "t": "2026-11-11T21:33+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -2355,19 +2360,14 @@
     "t": "2026-10-23T03:19+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "GGM 킴보(@ggm_kimbo)가 23일 오후 6시, 솔쟈와 함께한 새"
-   },
-   {
-    "t": "2026-10-22T21:59+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "'민희진(@min.hee.jin) 효과'를 어떻게 셀 것인가가 법정의 쟁"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 373,
-  "posted": 130,
-  "posts": 156,
+  "drafts": 374,
+  "posted": 131,
+  "posts": 157,
   "rate": 0.35,
   "adopted_mult": 0.98,
   "own_mult": 1.04,
@@ -2388,8 +2388,8 @@
     "mult": 0.95
    },
    "정보": {
-    "drafts": 254,
-    "posted": 110,
+    "drafts": 255,
+    "posted": 111,
     "mult": 1.0
    },
    "시리즈": {
@@ -2405,7 +2405,7 @@
     "mult": 0.93
    },
    "news": {
-    "drafts": 189,
+    "drafts": 190,
     "posted": 85,
     "mult": 1.05
    },
@@ -2436,7 +2436,7 @@
    },
    "newalbums": {
     "drafts": 8,
-    "posted": 3,
+    "posted": 4,
     "mult": 1.36
    },
    "anniv": {
@@ -2472,19 +2472,6 @@
   },
   "repack": [],
   "recent": [
-   {
-    "day": "2026-11-07",
-    "lane": "정보",
-    "who": "자이언티",
-    "repack": false,
-    "grade": "A",
-    "corner": "song",
-    "key": "5cc572fc",
-    "posted": "Dfcl4ioD0-u",
-    "head": "142번째 오늘의 노래 | 2026.11.07",
-    "url": "https://www.instagram.com/p/Dfcl4ioD0-u/",
-    "mult": 0.85
-   },
    {
     "day": "2026-11-08",
     "lane": "정보",
@@ -2564,6 +2551,19 @@
     "mult": 1.03
    },
    {
+    "day": "2026-11-10",
+    "lane": "정보",
+    "who": "양홍원",
+    "repack": false,
+    "grade": "A",
+    "corner": "newalbums",
+    "key": "44e2566f",
+    "posted": "Dfo2q0aOWgc",
+    "head": "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화'의 후반부입니다.",
+    "url": "https://www.instagram.com/reel/Dfo2q0aOWgc/",
+    "mult": null
+   },
+   {
     "day": "2026-11-11",
     "lane": "정보",
     "who": "아이브",
@@ -2579,7 +2579,7 @@
   ]
  },
  "follow": {
-  "at": "2026-11-12T19:04+09:00",
+  "at": "2026-11-12T22:04+09:00",
   "d30": {
    "days": 30,
    "follows": 14.9,
@@ -2645,8 +2645,8 @@
    }
   ],
   "feed": {
-   "n": 190,
-   "reach": 3664411,
+   "n": 189,
+   "reach": 3664133,
    "follows": 490,
    "per1k": 0.13
   },
@@ -2662,15 +2662,15 @@
    {
     "kind": "기타",
     "n": 37,
-    "reach": 287440,
+    "reach": 287521,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
     "kind": "갈래 모름",
-    "n": 40,
-    "reach": 1991960,
+    "n": 39,
+    "reach": 1990766,
     "follows": 247,
     "per1k": 0.12,
     "visits1k": 3.1
@@ -2678,15 +2678,15 @@
    {
     "kind": "발매·신보",
     "n": 41,
-    "reach": 103813,
+    "reach": 104388,
     "follows": 12,
-    "per1k": 0.12,
+    "per1k": 0.11,
     "visits1k": 2.8
    },
    {
     "kind": "갈등·반응",
     "n": 22,
-    "reach": 334094,
+    "reach": 334321,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.5
@@ -2694,7 +2694,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 32,
-    "reach": 140191,
+    "reach": 140212,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
