@@ -1234,7 +1234,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=olzR1p2FhzY\n구간: 0:23-0:48\n곡: 다시 올라탈 바로 그 곡\n아티스트: 빌스택스가 리믹스로\n피처링:\n후킹: \n출처: AP Alchemy\n음원: Just Music - 파급효과2 (Ripple Effect2)\n가사: 자동",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=olzR1p2FhzY\n구간: 0:23-0:48\n곡: 다시 올라탈 바로 그 곡\n아티스트: 빌스택스가 리믹스로\n피처링:\n후킹: \n출처: AP Alchemy\n음원: Just Music - 파급효과2 (Ripple Effect2)\n가사: 자동\n자막: 받음 st:1794479828047-f20f221b",
     "caption": "빌스택스(@trapdaddy.420)가 피처링한 리믹스로 다시 돌아올 곡, 저스트뮤직의 '파급효과2'입니다.\n\n11월 12일 스포티파이(@spotifykr)에 공개된 새 컴필레이션 [The Ship Of Theseus] 트랙리스트에서 13번 '파급효과2 Remix'에 빌스택스의 이름이 확인됐는데요, 빌스택스는 2014년 첫 [파급효과]에 참여한 멤버입니다.\n\n앨범 제목도 이 곡 안에 있습니다. 7월 공개된 원곡에서 스윙스(@itsjustswings)는 저스트뮤직의 부활을 말하며 'Theseus의 배'를 꺼냈고, 그 배의 이름이 그대로 새 앨범이 됐습니다.\n\n[The Ship Of Theseus]는 11월 13일 발매되며, 모두 15곡이 실립니다.\n\n#PLOT #빌스택스 #저스트뮤직 #파급효과2 #스윙스 #그냥노창",
     "hooks": {
      "A": "빌스택스가 리믹스로 / 다시 올라탈 바로 그 곡",
@@ -1290,8 +1290,64 @@
      "full": 220.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-12T19:35+09:00"
+     "status": "ready",
+     "rid": "st:1794479828047-f20f221b",
+     "n": 10,
+     "note": "🎤 가사 23줄 (가사 영상 「리봉철_LVC」에서 · 소리 맞춤 0.94)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.25,
+       "end": 3.25,
+       "text": "It's JM season 2 우리가 들고 와 큰 거"
+      },
+      {
+       "start": 3.25,
+       "end": 6.25,
+       "text": "Corona에 안 걸린 단체는 AP 건재해 What I say?"
+      },
+      {
+       "start": 6.25,
+       "end": 9.0,
+       "text": "지금까지 난 꼴리는 대로 살아왔어 너가 뭘 허락해?"
+      },
+      {
+       "start": 9.0,
+       "end": 10.75,
+       "text": "우리는 rap 근데 인기는 pop"
+      },
+      {
+       "start": 10.75,
+       "end": 12.5,
+       "text": "난 꼰대가 아냐 매일 진화해 답"
+      },
+      {
+       "start": 12.5,
+       "end": 13.75,
+       "text": "난 두렵지 않아 세상의 변화"
+      },
+      {
+       "start": 13.75,
+       "end": 15.5,
+       "text": "음음과 나이 차 23살"
+      },
+      {
+       "start": 15.5,
+       "end": 18.75,
+       "text": "It's Just Music Resurrection Theseus의 배"
+      },
+      {
+       "start": 18.75,
+       "end": 21.75,
+       "text": "넌 내가 누군지 알아 병* 왜 검색해"
+      },
+      {
+       "start": 21.75,
+       "end": 24.75,
+       "text": "Youtuber든 배우든 rapper든 난 하면 해"
+      }
+     ],
+     "at": "2026-11-12T19:37+09:00"
     }
    },
    "corner_name": "소식"
@@ -1473,13 +1529,13 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-12T19:35+09:00"
+  "at": "2026-11-12T19:37+09:00"
  },
  "queue": {
-  "next": "2026-11-12T19:37+09:00",
+  "next": "2026-11-12T20:35+09:00",
   "n": 0,
   "gap": 60,
-  "last": "2026-11-11T21:33+09:00"
+  "last": "2026-11-12T19:35+09:00"
  },
  "slots": {
   "basis": 347,
