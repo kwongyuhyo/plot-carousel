@@ -166,12 +166,12 @@
      "at": "2026-11-12T10:51+09:00"
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
-    "why": "어제 저녁 발표 · 〈노다메 칸타빌레〉 작가 신작을 〈노다메〉 감독·제작사가 다시 맡았다는 연결이 한 줄로 선다 · 포니캐니언 공식 티저 PV 로 숏폼",
-    "at": "2026-11-12T10:50+09:00"
-   },
-   "corner_name": "소식"
+    "rank": 3,
+    "why": "〈노다메〉 작가와 〈노다메〉 감독·제작사의 재회가 한 줄로 선다 · 공식 티저 PV 숏폼",
+    "at": "2026-11-12T18:52+09:00"
+   }
   },
   {
    "source": {
@@ -254,10 +254,180 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
     "rank": 2,
-    "why": "오늘 아침 한일 동시 보도 · 한국 웹툰 원작에 일본 아이돌 주연, 한국 웨이브 동시 공개라 한국과의 연결이 가장 강하다",
-    "at": "2026-11-12T10:50+09:00"
+    "why": "한국 웹툰 원작 + 웨이브 한일 동시 공개라 한국과의 연결이 오늘 초안 중 가장 강하다",
+    "at": "2026-11-12T18:52+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:mashle-s3-premiere",
+    "account": "오리콘",
+    "url": "https://news.yahoo.co.jp/articles/7517e80a347229d11363a75e7cb19da929015e4c",
+    "image": null,
+    "head": "『マッシュル』第3期は来年1月9日放送開始 PV解禁で追加キャストに斉藤壮馬、鈴木崚汰",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-12T18:52+09:00",
+   "key": "0e6695de",
+   "by": "claude",
+   "subjects": [
+    "마슐",
+    "사이토 소마",
+    "스즈키 료타"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "〈마슐〉 3기 '신각자 최종시험 편' 2027년 1월 9일 방영 확정 — 새 적 학교 발키스 마학교 학생 역에 사이토 소마·스즈키 료타, 1탄 PV 공개",
+    "why": "11/12 17:30 아니메아니메 · 오리콘·코믹나탈리·크랭크인·마이나비 동시 보도 · 2기 OP 'Bling-Bang-Bang-Born' 으로 한국에서도 아는 작품 · 아니플렉스 공식 1탄 PV(110초)로 숏폼"
+   },
+   "added": "claude",
+   "added_at": "2026-11-12T18:52+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈마슐〉(マッシュル-MASHLE-) 3기 '삼마대쟁 신각자 최종시험 편'이 2027년 1월 9일 일본에서 방송을 시작합니다.\n\n2기 오프닝 'Bling-Bang-Bang-Born'으로 한국에서도 이름이 알려진 작품인데요, 이번 시즌에는 마슈 일행이 다니는 이스턴 마법학교 앞에 새 적수 발키스 마학교가 나타납니다. 발키스의 도미나 브로라이브는 사이토 소마가, 레비 로즈쿼츠는 스즈키 료타가 맡았습니다.\n\n스즈키 료타는 \"사랑받는 악역이 되도록 애쓰겠다\"고 했습니다. 마슈 역 코바야시 치아키를 비롯한 기존 성우진과 A-1 Pictures 제작은 그대로입니다.\n\n12일 1탄 PV와 키 비주얼이 공개됐습니다. 방송은 1월 9일(토) 밤 12시(일본 기준) TOKYO MX·BS11 등이고, 12월 13일 도쿄 롯폰기에서 성우 7명이 나오는 재팬 프리미어가 열립니다.\n\n#암낫오타쿠 #마슐 #사이토소마 #스즈키료타 #코바야시치아키 #BlingBangBangBorn\n\n[커버]\n소스: \n제목: 〈마슐〉 3기,|1월 9일 시작합니다\n부제: 새 적 학교 학생 역에 사이토 소마·스즈키 료타\n출처:\n",
+    "caption": "〈마슐〉(マッシュル-MASHLE-) 3기 '삼마대쟁 신각자 최종시험 편'이 2027년 1월 9일 일본에서 방송을 시작합니다.\n\n2기 오프닝 'Bling-Bang-Bang-Born'으로 한국에서도 이름이 알려진 작품인데요, 이번 시즌에는 마슈 일행이 다니는 이스턴 마법학교 앞에 새 적수 발키스 마학교가 나타납니다. 발키스의 도미나 브로라이브는 사이토 소마가, 레비 로즈쿼츠는 스즈키 료타가 맡았습니다.\n\n스즈키 료타는 \"사랑받는 악역이 되도록 애쓰겠다\"고 했습니다. 마슈 역 코바야시 치아키를 비롯한 기존 성우진과 A-1 Pictures 제작은 그대로입니다.\n\n12일 1탄 PV와 키 비주얼이 공개됐습니다. 방송은 1월 9일(토) 밤 12시(일본 기준) TOKYO MX·BS11 등이고, 12월 13일 도쿄 롯폰기에서 성우 7명이 나오는 재팬 프리미어가 열립니다.\n\n#암낫오타쿠 #마슐 #사이토소마 #스즈키료타 #코바야시치아키 #BlingBangBangBorn",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "〈마슐〉 3기,|1월 9일 시작합니다",
+      "sub": "새 적 학교 학생 역에 사이토 소마·스즈키 료타"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] '발키스를 이끄는 도미나'는 원문 네 곳 어디에도 없어 '발키스의 도미나'로 고침 · 숏폼 후킹 B '근육 마법사'는 마법을 못 쓰는 설정과 어긋나 고침 · PV 는 자막이 없어 구간 말소리 대조를 못 함 · 다시 올린 미리보기 01.jpg 에도 사진이 빠져 있음(Cloudinary 401, 초 애니메디아는 600x337로 해상도가 모자람) — 사진은 아직 확인하지 못함",
+     "클립 위험: 낮음 — アニプレックス チャンネル (공식 1탄 PV 110초 중 0:00-0:30, 자막이 없어 구간은 눈으로 확인 — 새 캐릭터 장면이 들어가게 옮겨도 됨)",
+     "[미리보기] 표지에 사진이 안 들어감 — 이미지 호스트 실패(ImgBB 한도·Cloudinary 401, 오전 회차와 같음). 아니플렉스 3기 키 비주얼을 넣을 것",
+     "캐릭터 이름 도미나 브로라이브·레비 로즈쿼츠는 일본어 독음으로 옮김 — 한국 정식판 표기와 맞는지 확인. 3기 한국 OTT 공개는 확인 못 해 뺐다",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "아니메아니메 — 2027/1/9(토) 24:00 TOKYO MX·BS11 등, 새 캐릭터 ドミナ・ブローライブ(斉藤壮馬)·レヴィ・ローズクォーツ(鈴木崚汰), 1탄 PV·키 비주얼, 12/13 TOHO 시네마즈 롯폰기힐스 재팬 프리미어, 제작 A-1 Pictures (11/12 17:30)",
+      "link": "https://animeanime.jp/article/2026/11/12/104722.html"
+     },
+     {
+      "title": "오리콘(야후 재배포) — 3기 1/9 방송 개시, PV 공개, 추가 캐스트 斉藤壮馬·鈴木崚汰",
+      "link": "https://news.yahoo.co.jp/articles/7517e80a347229d11363a75e7cb19da929015e4c"
+     },
+     {
+      "title": "코믹나탈리(야후 재배포) — 3기 1탄 PV 등 공개, 斉藤壮馬·鈴木崚汰 출연",
+      "link": "https://news.yahoo.co.jp/articles/89153b27088858f5a3bfcd2a8549ab3f381b9ca4"
+     },
+     {
+      "title": "마이나비 뉴스 — 3기 2027/1/9 방송 개시, 재팬 프리미어 등단자",
+      "link": "https://news.mynavi.jp/article/20261112-5307016/"
+     },
+     {
+      "title": "NME — 'Bling-Bang-Bang-Born' 은 〈마슐〉 2기 오프닝",
+      "link": "https://www.nme.com/features/bling-bang-bang-born-song-mashle-magic-muscles-anime-creepy-nuts-interview-3589300"
+     },
+     {
+      "title": "【第1弾PV】TVアニメ「マッシュル-MASHLE- 三魔対争神覚者最終試験編」2027年1月9日放送開始！ — アニプレックス チャンネル (110초)",
+      "link": "https://www.youtube.com/watch?v=4cBRNisl5qA"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2ebbb9e268fa84ae5695.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7b6d6fd8082d677fd8c9.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2ebbb9e268fa84ae5695.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-12T18:52+09:00",
+     "v": {
+      "A": "3982d77f"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=4cBRNisl5qA\n구간: 0:00-0:30\n곡: 첫 PV 가 나왔다\n아티스트: 〈마슐〉 3기\n피처링:\n후킹: \n출처: アニプレックス チャンネル",
+    "caption": "〈마슐〉(マッシュル-MASHLE-) 3기 '삼마대쟁 신각자 최종시험 편' 1탄 PV입니다.\n\n2027년 1월 9일 방송인데요, 이번에는 마슈 일행 앞에 새 적수 발키스 마학교가 나타납니다. 발키스의 도미나 브로라이브는 사이토 소마, 레비 로즈쿼츠는 스즈키 료타가 맡았습니다.\n\n영상은 아니플렉스 공식 채널입니다.\n\n#암낫오타쿠 #마슐 #사이토소마 #스즈키료타 #아니플렉스",
+    "hooks": {
+     "A": "〈마슐〉 3기 / 첫 PV 가 나왔다",
+     "B": "마법 못 쓰는 마슈가 / 1월에 돌아온다",
+     "C": "마슈 앞에 나타난 / 새 적 학교"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=4cBRNisl5qA",
+     "credit": "アニプレックス チャンネル",
+     "range": [
+      0.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] '발키스를 이끄는 도미나'는 원문 네 곳 어디에도 없어 '발키스의 도미나'로 고침 · 숏폼 후킹 B '근육 마법사'는 마법을 못 쓰는 설정과 어긋나 고침 · PV 는 자막이 없어 구간 말소리 대조를 못 함 · 다시 올린 미리보기 01.jpg 에도 사진이 빠져 있음(Cloudinary 401, 초 애니메디아는 600x337로 해상도가 모자람) — 사진은 아직 확인하지 못함",
+     "클립 위험: 낮음 — アニプレックス チャンネル (공식 1탄 PV 110초 중 0:00-0:30, 자막이 없어 구간은 눈으로 확인 — 새 캐릭터 장면이 들어가게 옮겨도 됨)",
+     "[미리보기] 표지에 사진이 안 들어감 — 이미지 호스트 실패(ImgBB 한도·Cloudinary 401, 오전 회차와 같음). 아니플렉스 3기 키 비주얼을 넣을 것",
+     "캐릭터 이름 도미나 브로라이브·레비 로즈쿼츠는 일본어 독음으로 옮김 — 한국 정식판 표기와 맞는지 확인. 3기 한국 OTT 공개는 확인 못 해 뺐다"
+    ],
+    "research": [
+     {
+      "title": "아니메아니메 — 2027/1/9(토) 24:00 TOKYO MX·BS11 등, 새 캐릭터 ドミナ・ブローライブ(斉藤壮馬)·レヴィ・ローズクォーツ(鈴木崚汰), 1탄 PV·키 비주얼, 12/13 TOHO 시네마즈 롯폰기힐스 재팬 프리미어, 제작 A-1 Pictures (11/12 17:30)",
+      "link": "https://animeanime.jp/article/2026/11/12/104722.html"
+     },
+     {
+      "title": "오리콘(야후 재배포) — 3기 1/9 방송 개시, PV 공개, 추가 캐스트 斉藤壮馬·鈴木崚汰",
+      "link": "https://news.yahoo.co.jp/articles/7517e80a347229d11363a75e7cb19da929015e4c"
+     },
+     {
+      "title": "코믹나탈리(야후 재배포) — 3기 1탄 PV 등 공개, 斉藤壮馬·鈴木崚汰 출연",
+      "link": "https://news.yahoo.co.jp/articles/89153b27088858f5a3bfcd2a8549ab3f381b9ca4"
+     },
+     {
+      "title": "마이나비 뉴스 — 3기 2027/1/9 방송 개시, 재팬 프리미어 등단자",
+      "link": "https://news.mynavi.jp/article/20261112-5307016/"
+     },
+     {
+      "title": "NME — 'Bling-Bang-Bang-Born' 은 〈마슐〉 2기 오프닝",
+      "link": "https://www.nme.com/features/bling-bang-bang-born-song-mashle-magic-muscles-anime-creepy-nuts-interview-3589300"
+     },
+     {
+      "title": "【第1弾PV】TVアニメ「マッシュル-MASHLE- 三魔対争神覚者最終試験編」2027年1月9日放送開始！ — アニプレックス チャンネル (110초)",
+      "link": "https://www.youtube.com/watch?v=4cBRNisl5qA"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/4cBRNisl5qA/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/cdd694e29c76051992bd.jpg",
+     "key": "4cBRNisl5qA@0.0"
+    },
+    "px": {
+     "vid": "4cBRNisl5qA",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/54567d89eebdd8e8bda0.mp4",
+     "off": 0.0,
+     "end": 75.0,
+     "full": 109.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-12T18:53+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "오늘 17시대 애니메이트·오리콘·나탈리·크랭크인이 동시에 보도 · 'Bling-Bang-Bang-Born' 으로 한국에도 이름이 난 〈마슐〉의 3기 방영일·새 성우가 한 번에 나왔다 · 아니플렉스 공식 PV 로 숏폼",
+    "at": "2026-11-12T18:52+09:00"
    },
    "corner_name": "소식"
   }
@@ -434,14 +604,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-12T10:51+09:00"
+  "at": "2026-11-12T18:53+09:00"
  },
  "queue": {
-  "next": "2026-11-12T10:53+09:00",
+  "next": "2026-11-12T18:55+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
