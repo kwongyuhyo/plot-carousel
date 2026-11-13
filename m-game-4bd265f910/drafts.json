@@ -92,11 +92,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "출시 엿새 앞둔 GTA6 열기를 사람 쪽에서 보여 주는 장면 · '바이스 시티 출장'이라는 말 하나로 바로 읽힌다 · 팰월드라는 익숙한 이름",
-    "at": "2026-11-13T11:11+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -325,11 +320,6 @@
      "at": "2026-11-13T11:14+09:00"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "한국 개발사의 콘솔 진출 · 공식 트레일러로 숏폼까지 서는 유일한 건 · 마비노기 영웅전 팬이 바로 알아본다",
-    "at": "2026-11-13T11:11+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -505,11 +495,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "[실험] 게임 안 하는 사람도 아는 '조엘 목소리' · 사람이 보이는 소식 · 레지 피사메이의 한마디",
-    "at": "2026-11-13T11:11+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -597,6 +582,356 @@
       "A": "85610ec5"
      }
     }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:fable-quest-gameplay-korean",
+    "account": "Xbox",
+    "url": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/",
+    "image": null,
+    "head": "Thanks for 25 Years, XBOX Players — Everything Announced Today",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-13T19:08+09:00",
+   "key": "cf62be35",
+   "by": "claude",
+   "subjects": [
+    "페이블",
+    "플레이그라운드 게임즈"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "엑스박스 25주년에 〈페이블〉 새 퀘스트 플레이 공개 — 그런데 스팀 지원 언어엔 아직 한국어가 없다, 6월엔 국내 이용자 청원까지",
+    "why": "새 공식 영상이라는 계기 · 한국 독자에게만 걸리는 한국어 지원 · 공식 채널 영상이 있어 숏폼이 선다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-13T19:08+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈페이블〉이 엑스박스 25주년을 맞아 새 퀘스트 플레이 영상을 공개했습니다.\n\n플레이그라운드 게임즈가 새로 만드는 〈페이블〉인데요, 이번 영상은 저주받은 생물들과 마법으로 싸우는 퀘스트 하나를 따라가며 이야기의 새 단서도 함께 보여 줍니다. 시애틀 팬페스트를 찾은 사람들은 이날 직접 해 볼 수도 있었습니다.\n\n다만 스팀 상점 페이지의 지원 언어 열 개 가운데 한국어는 아직 없습니다. 지난 6월 발매일이 공개된 뒤에는 국내 엑스박스 이용자들이 한국어 지원을 요청하는 청원을 올리기도 했습니다.\n\n2027년 2월 23일 출시(프리미엄 에디션은 2월 18일부터) · PC·엑스박스 시리즈 X|S·PS5 · 게임 패스 첫날 포함 · 스팀 예약 7만 9,800원(프리미엄 11만 4,800원) · 스팀 기준 한국어 미지원\n\n#겜디핑 #페이블 #플레이그라운드게임즈 #엑스박스 #한국어지원\n\n[커버]\n소스: \n제목: 페이블 새 플레이 공개,|한국어는 아직 없다\n부제: 엑스박스 25주년 퀘스트 영상 · 2027년 2월 23일 출시\n출처:\n",
+    "caption": "〈페이블〉이 엑스박스 25주년을 맞아 새 퀘스트 플레이 영상을 공개했습니다.\n\n플레이그라운드 게임즈가 새로 만드는 〈페이블〉인데요, 이번 영상은 저주받은 생물들과 마법으로 싸우는 퀘스트 하나를 따라가며 이야기의 새 단서도 함께 보여 줍니다. 시애틀 팬페스트를 찾은 사람들은 이날 직접 해 볼 수도 있었습니다.\n\n다만 스팀 상점 페이지의 지원 언어 열 개 가운데 한국어는 아직 없습니다. 지난 6월 발매일이 공개된 뒤에는 국내 엑스박스 이용자들이 한국어 지원을 요청하는 청원을 올리기도 했습니다.\n\n2027년 2월 23일 출시(프리미엄 에디션은 2월 18일부터) · PC·엑스박스 시리즈 X|S·PS5 · 게임 패스 첫날 포함 · 스팀 예약 7만 9,800원(프리미엄 11만 4,800원) · 스팀 기준 한국어 미지원\n\n#겜디핑 #페이블 #플레이그라운드게임즈 #엑스박스 #한국어지원",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "페이블 새 플레이 공개,|한국어는 아직 없다",
+      "sub": "엑스박스 25주년 퀘스트 영상 · 2027년 2월 23일 출시"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "페이블 새 플레이 공개,|한국어는 아직 없다",
+      "sub": "엑스박스 25주년 퀘스트 영상 · 2027년 2월 23일 출시"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · Xbox 사진 해상도 미달 · 숏폼 영상은 유튜브 연령 확인으로 내려받기 실패(쿠키 필요) — 사진·영상 직접 붙일 것",
+     "한국어 미지원은 오늘 본 스팀 상점 페이지 기준('한국어 지원하지 않음') — 엑스박스 스토어도 같은지 볼 것 · 청원 표 수(400표)는 6월 숫자라 뺌",
+     "숏폼은 Fable 공식 채널 영상 1:00-1:25 — 자막이 없어 영상을 직접 보지 않고 잡음, 로고·글자 화면이면 옮길 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "Xbox Wire — Thanks for 25 Years, XBOX Players: Everything Announced Today (11/12)",
+      "link": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
+     },
+     {
+      "title": "Simulation Daily — Today in Gaming News (11/12)",
+      "link": "https://simulationdaily.com/news/today-in-gaming-news-november-12-2026"
+     },
+     {
+      "title": "Fable 공식 유튜브 — Fable - Official Quest Gameplay | XBOX 25th Anniversary",
+      "link": "https://www.youtube.com/watch?v=Tnsp2xlU5ts"
+     },
+     {
+      "title": "Steam — Fable (지원 언어·가격)",
+      "link": "https://store.steampowered.com/app/2769570/Fable/?l=koreana"
+     },
+     {
+      "title": "Inven Global — Xbox Users in Korea Petition for Korean Language Support in 'Fable' (6/11)",
+      "link": "https://labs.invenglobal.com/articles/22727/xbox-users-in-korea-petition-for-korean-language-support-in-fable"
+     },
+     {
+      "title": "GameMeca — \"Passed over again?\" User petition launched over lack of Korean language support for Fable reboot",
+      "link": "https://www.gamemeca.com/en/view.php?gid=1776330"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/43732c9bc43a9b778b6c.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/43732c9bc43a9b778b6c.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-13T19:09+09:00",
+     "v": {
+      "A": "de90ae92"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=Tnsp2xlU5ts\n구간: 1:00-1:25\n곡: 공개된 페이블 퀘스트\n아티스트: 엑스박스 25주년에\n피처링:\n후킹: \n출처: Fable\n자막: 자동",
+    "caption": "〈페이블〉이 엑스박스 25주년을 맞아 새 퀘스트 플레이 영상을 공개했습니다.\n\n저주받은 생물들과 마법으로 싸우는 퀘스트 하나를 따라가는 영상인데요, 스팀 상점 페이지 지원 언어에는 아직 한국어가 없습니다. 영상은 〈페이블〉 공식 채널의 퀘스트 플레이 영상입니다.\n\n2027년 2월 23일 출시 · PC·엑스박스 시리즈 X|S·PS5 · 스팀 기준 한국어 미지원\n\n#겜디핑 #페이블 #플레이그라운드게임즈 #엑스박스 #한국어지원",
+    "hooks": {
+     "A": "엑스박스 25주년에 / 공개된 페이블 퀘스트",
+     "B": "새 페이블에서 / 마법으로 싸우는 장면",
+     "C": "페이블 새 퀘스트 영상, / 한국어는 아직 없다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Tnsp2xlU5ts",
+     "credit": "Fable",
+     "range": [
+      60.0,
+      85.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · Xbox 사진 해상도 미달 · 숏폼 영상은 유튜브 연령 확인으로 내려받기 실패(쿠키 필요) — 사진·영상 직접 붙일 것",
+     "한국어 미지원은 오늘 본 스팀 상점 페이지 기준('한국어 지원하지 않음') — 엑스박스 스토어도 같은지 볼 것 · 청원 표 수(400표)는 6월 숫자라 뺌",
+     "숏폼은 Fable 공식 채널 영상 1:00-1:25 — 자막이 없어 영상을 직접 보지 않고 잡음, 로고·글자 화면이면 옮길 것"
+    ],
+    "research": [
+     {
+      "title": "Xbox Wire — Thanks for 25 Years, XBOX Players: Everything Announced Today (11/12)",
+      "link": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
+     },
+     {
+      "title": "Simulation Daily — Today in Gaming News (11/12)",
+      "link": "https://simulationdaily.com/news/today-in-gaming-news-november-12-2026"
+     },
+     {
+      "title": "Fable 공식 유튜브 — Fable - Official Quest Gameplay | XBOX 25th Anniversary",
+      "link": "https://www.youtube.com/watch?v=Tnsp2xlU5ts"
+     },
+     {
+      "title": "Steam — Fable (지원 언어·가격)",
+      "link": "https://store.steampowered.com/app/2769570/Fable/?l=koreana"
+     },
+     {
+      "title": "Inven Global — Xbox Users in Korea Petition for Korean Language Support in 'Fable' (6/11)",
+      "link": "https://labs.invenglobal.com/articles/22727/xbox-users-in-korea-petition-for-korean-language-support-in-fable"
+     },
+     {
+      "title": "GameMeca — \"Passed over again?\" User petition launched over lack of Korean language support for Fable reboot",
+      "link": "https://www.gamemeca.com/en/view.php?gid=1776330"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Tnsp2xlU5ts/maxresdefault.jpg",
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-13T19:09+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "엑스박스 25주년 새 플레이 영상 · 한국 독자에게만 걸리는 '한국어는 아직 없다' · 공식 영상으로 숏폼까지 선다",
+    "at": "2026-11-13T19:08+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:wolfenstein-3-in-production",
+    "account": "Xbox",
+    "url": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/",
+    "image": null,
+    "head": "From Wolfenstein 3 and Halo Firefight to Classic XBOX Games on PC: Everything An",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-13T19:08+09:00",
+   "key": "a057105d",
+   "by": "claude",
+   "subjects": [
+    "울펜슈타인 3",
+    "머신게임즈"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "엑스박스 25주년에 〈울펜슈타인 3〉 공식화 — BJ 블라즈코비츠의 브라이언 블룸, 그레이스 워커의 데브라 윌슨이 같은 역으로 돌아온다",
+    "why": "오래 기다린 시리즈 본편의 공식 발표 · 같은 배우가 돌아온다는 사람 쪽 사실 · 발표 소식이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-13T19:08+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈울펜슈타인 3〉가 머신게임즈에서 만들어지고 있습니다.\n\n엑스박스 25주년을 맞아 아샤 샤르마 엑스박스 CEO가 12일 직접 알렸는데요, 〈울펜슈타인 II: 더 뉴 콜로서스〉 뒤를 잇는 넘버링 본편입니다. 주인공 BJ 블라즈코비츠의 브라이언 블룸, 그레이스 워커의 데브라 윌슨도 같은 역으로 돌아옵니다.\n\n머신게임즈는 '그의 명성이 먼저 와 있다'는 한 줄만 남겼습니다. 같은 날 id 소프트웨어의 다음 작품도 개발에 들어갔다는 소식이 함께 나왔습니다.\n\n〈울펜슈타인 3〉 · 개발 머신게임즈 · 플랫폼과 출시 시기는 다음 발표 때\n\n#겜디핑 #울펜슈타인3 #머신게임즈 #엑스박스 #BJ블라즈코비츠\n\n[커버]\n소스: \n제목: 울펜슈타인 3,|드디어 만들고 있다\n부제: 엑스박스 25주년 발표 · BJ와 그레이스 목소리 그대로\n출처:\n",
+    "caption": "〈울펜슈타인 3〉가 머신게임즈에서 만들어지고 있습니다.\n\n엑스박스 25주년을 맞아 아샤 샤르마 엑스박스 CEO가 12일 직접 알렸는데요, 〈울펜슈타인 II: 더 뉴 콜로서스〉 뒤를 잇는 넘버링 본편입니다. 주인공 BJ 블라즈코비츠의 브라이언 블룸, 그레이스 워커의 데브라 윌슨도 같은 역으로 돌아옵니다.\n\n머신게임즈는 '그의 명성이 먼저 와 있다'는 한 줄만 남겼습니다. 같은 날 id 소프트웨어의 다음 작품도 개발에 들어갔다는 소식이 함께 나왔습니다.\n\n〈울펜슈타인 3〉 · 개발 머신게임즈 · 플랫폼과 출시 시기는 다음 발표 때\n\n#겜디핑 #울펜슈타인3 #머신게임즈 #엑스박스 #BJ블라즈코비츠",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "울펜슈타인 3,|드디어 만들고 있다",
+      "sub": "엑스박스 25주년 발표 · BJ와 그레이스 목소리 그대로"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "울펜슈타인 3,|드디어 만들고 있다",
+      "sub": "엑스박스 25주년 발표 · BJ와 그레이스 목소리 그대로"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · 머신게임즈 사진 해상도 미달(708x520) — 사진 새로 넣을 것",
+     "공식화·배우 복귀·샤르마 발언·머신게임즈 X 문구는 Xbox Wire·Inven Global 일치 · 공식 영상이 없어 숏폼은 뺌",
+     "표지 사진이 울펜슈타인 공식 이미지인지(엑스박스 25주년 로고만 있는 그림 아닌지) 볼 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "Xbox Wire — Thanks for 25 Years, XBOX Players: Everything Announced Today (11/12)",
+      "link": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
+     },
+     {
+      "title": "Inven Global — Wolfenstein 3 is in production at MachineGames, Xbox confirms",
+      "link": "https://www.invenglobal.com/articles/28557/wolfenstein-3-is-in-production-at-machinegames-xbox-confirms"
+     },
+     {
+      "title": "GamesRadar+ — Wolfenstein 3 is in the works at MachineGames, Xbox CEO announces",
+      "link": "https://www.gamesradar.com/games/fps/wolfenstein-3-is-in-the-works-at-machinegames-xbox-ceo-announces-one-of-gamings-most-important-franchises/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/af88c387681d690cde4a.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/af88c387681d690cde4a.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-13T19:09+09:00",
+     "v": {
+      "A": "94c67a0e"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "〈울펜슈타인 II〉 뒤를 잇는 본편이 공식화 · BJ와 그레이스 목소리가 그대로 돌아온다는 사람 쪽 사실",
+    "at": "2026-11-13T19:08+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:slay-the-spire-2-the-fool",
+    "account": "Mega Crit",
+    "url": "https://www.gamemeca.com/view.php?gid=1783496",
+    "image": null,
+    "head": "활 쏘는 음악가, 슬레이 더 스파이어 2 신캐 '더 풀' 공개",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-13T19:08+09:00",
+   "key": "2d2b05b1",
+   "by": "claude",
+   "subjects": [
+    "슬레이 더 스파이어 2",
+    "메가 크릿"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "C",
+    "kind": "정보",
+    "angle": "〈슬레이 더 스파이어 2〉 앞서 해보기 뒤 첫 새 캐릭터 '더 풀' — 활을 든 음악가, 지도 없는 '블리츠'와 승천 10 전부 깨야 열리는 '드레드' 모드까지 베타로",
+    "why": "인디 덱빌딩 대표작의 '지금까지 가장 큰 업데이트' · 한국어 지원 게임 · 바로 해 볼 수 있는 베타 안내"
+   },
+   "added": "claude",
+   "added_at": "2026-11-13T19:08+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈슬레이 더 스파이어 2〉에 여섯 번째 캐릭터 '더 풀'이 들어왔습니다.\n\n3월 앞서 해보기를 시작한 뒤 처음 나온 새 캐릭터인데요, 메가 크릿은 활을 쓰는 우스꽝스러운 음악가라고 소개했습니다. 개발사가 지금까지 가장 큰 업데이트라고 부른 0.113.0 베타 패치에 담겼습니다.\n\n새 모드도 둘입니다. '블리츠'는 지도를 없애고 골드를 쓸모없게 만든 짧은 덱빌딩 모드이고, '드레드'는 더 풀을 포함한 모든 캐릭터로 승천 10에 도달해야 도전할 수 있는 모드입니다.\n\n스팀 라이브러리 → 속성 → 게임 버전 및 베타에서 public-beta 선택 · PC(스팀) 앞서 해보기 · 한국어 지원 · 2만 7,000원(11월 26일까지 20% 할인 2만 1,600원)\n\n#겜디핑 #슬레이더스파이어2 #메가크릿 #더풀 #덱빌딩\n\n[커버]\n소스: \n제목: 슬레이 더 스파이어 2,|여섯 번째 캐릭터 왔다\n부제: 활을 든 음악가 '더 풀' · 스팀 베타로 먼저\n출처:\n",
+    "caption": "〈슬레이 더 스파이어 2〉에 여섯 번째 캐릭터 '더 풀'이 들어왔습니다.\n\n3월 앞서 해보기를 시작한 뒤 처음 나온 새 캐릭터인데요, 메가 크릿은 활을 쓰는 우스꽝스러운 음악가라고 소개했습니다. 개발사가 지금까지 가장 큰 업데이트라고 부른 0.113.0 베타 패치에 담겼습니다.\n\n새 모드도 둘입니다. '블리츠'는 지도를 없애고 골드를 쓸모없게 만든 짧은 덱빌딩 모드이고, '드레드'는 더 풀을 포함한 모든 캐릭터로 승천 10에 도달해야 도전할 수 있는 모드입니다.\n\n스팀 라이브러리 → 속성 → 게임 버전 및 베타에서 public-beta 선택 · PC(스팀) 앞서 해보기 · 한국어 지원 · 2만 7,000원(11월 26일까지 20% 할인 2만 1,600원)\n\n#겜디핑 #슬레이더스파이어2 #메가크릿 #더풀 #덱빌딩",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "슬레이 더 스파이어 2,|여섯 번째 캐릭터 왔다",
+      "sub": "활을 든 음악가 '더 풀' · 스팀 베타로 먼저"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "슬레이 더 스파이어 2,|여섯 번째 캐릭터 왔다",
+      "sub": "활을 든 음악가 '더 풀' · 스팀 베타로 먼저"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · Noisy Pixel 사진 520 오류 — 사진 새로 넣을 것",
+     "화살 관통·회수, 다른 캐릭터 타로 카드 만들기는 게임메카 한 곳이라 뺌 · 스팀 패치노트 본문은 직접 못 열고 제목·검색 요약 기준",
+     "공식 영상이 없어 숏폼은 뺌 (검색된 건 스트리머 방송뿐) · 표지 사진이 더 풀 캐릭터 그림인지 볼 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 활 쏘는 음악가, 슬레이 더 스파이어 2 신캐 '더 풀' 공개 (11/13)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783496"
+     },
+     {
+      "title": "Steam — Slay the Spire 2 :: Beta Patch Notes - v0.113.0",
+      "link": "https://steamcommunity.com/games/2868840/announcements/detail/708914333639245838"
+     },
+     {
+      "title": "Noisy Pixel — Slay The Spire II's Biggest Beta Patch Adds The Fool, Blitz And Dread Modes (11/12)",
+      "link": "https://noisypixel.net/slay-the-spire-ii-biggest-beta-patch-the-fool-blitz-dread-modes/"
+     },
+     {
+      "title": "GamesRadar+ — Slay the Spire 2's \"biggest update yet\" adds the first new character and two new game modes",
+      "link": "https://www.gamesradar.com/games/roguelike/slay-the-spire-2s-biggest-update-yet-adds-the-roguelike-deckbuilders-first-new-character-and-two-new-game-modes/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c370fe358e9be2a89678.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c370fe358e9be2a89678.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-13T19:09+09:00",
+     "v": {
+      "A": "f1f58e72"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "인디 덱빌딩 대표작의 '지금까지 가장 큰 업데이트' · 한국어 지원 게임 · 바로 해 볼 수 있는 베타 안내",
+    "at": "2026-11-13T19:08+09:00"
    },
    "corner_name": "소식"
   }
@@ -773,14 +1108,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 6,
+    "drafts": 9,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-13T11:14+09:00"
+  "at": "2026-11-13T19:09+09:00"
  },
  "queue": {
-  "next": "2026-11-13T11:16+09:00",
+  "next": "2026-11-13T19:11+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
