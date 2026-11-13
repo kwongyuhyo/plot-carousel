@@ -166,12 +166,12 @@
      "at": "2026-11-13T11:00+09:00"
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
-    "why": "11/12 공개된 공식 MV · 〈시티헌터〉 'Get Wild' 는 애니를 안 본 사람도 아는 곡이라 입문형 결이 선다 · 공식 채널 MV 로 숏폼",
-    "at": "2026-11-13T10:57+09:00"
-   },
-   "corner_name": "소식"
+    "rank": 2,
+    "why": "오전 초안 · 같은 날 TM NETWORK 홍백 출전 발표로 'Get Wild' 관심이 겹친다",
+    "at": "2026-11-13T18:43+09:00"
+   }
   },
   {
    "source": {
@@ -336,10 +336,101 @@
      "at": "2026-11-13T11:00+09:00"
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 2,
-    "why": "히츠지분가쿠가 한 영화의 노래 6곡을 다 썼다는 연결 + 〈원펀맨〉 1기 감독의 첫 오리지널 장편 · 반다이남코 공식 본예고로 숏폼",
-    "at": "2026-11-13T10:57+09:00"
+    "rank": 3,
+    "why": "오전 초안 · 히츠지분가쿠 6곡 전곡 + 〈원펀맨〉 1기 감독 연결",
+    "at": "2026-11-13T18:43+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:kohaku-tm-network-touch",
+    "account": "Mikiki",
+    "url": "https://mikiki.tokyo.jp/articles/-/46680",
+    "image": null,
+    "head": "「第77回NHK紅白歌合戦」出場歌手が決定! 稲葉浩志はソロで“タッチ”歌唱",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-13T18:43+09:00",
+   "key": "afddee88",
+   "by": "claude",
+   "subjects": [
+    "TM NETWORK",
+    "이나바 코시",
+    "NHK 홍백가합전"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "제77회 홍백 출전자 발표 — TM NETWORK 38년 만의 두 번째 출전('Get Wild'·〈시티헌터〉), 이나바 코시가 솔로 첫 출전으로 애니송 '터치'",
+    "why": "11/13 NHK 출전 가수 발표 · Mikiki·AV Watch 출전자 명단 일치 · 아니메!아니메! TM NETWORK 38년 만 · 한국에서도 아는 두 애니송"
+   },
+   "added": "claude",
+   "added_at": "2026-11-13T18:43+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nTM NETWORK가 38년 만에 〈NHK 홍백가합전〉(NHK紅白歌合戦) 무대에 섭니다.\n\n13일 발표된 제77회 출전자 41팀에 이름이 올랐는데요, 첫 출전은 1988년이었습니다. 〈시티헌터〉 엔딩곡 'Get Wild'로 한국에서도 익숙한 고무로 테츠야·우츠노미야 타카시·키네 나오토 세 사람입니다.\n\n애니송은 한 곡 더 있습니다. B'z의 이나바 코시가 특별 기획으로 처음 솔로 출전해, 1985년 애니메이션 〈터치〉(タッチ) 주제가였던 이와사키 요시미의 '터치'를 부릅니다. 올봄 2026 월드 베이스볼 클래식을 응원하며 커버했던 곡입니다.\n\n방송은 12월 31일 오후 7시 20분(일본 기준) NHK 종합이고, NHK ONE에서 동시 배신됩니다.\n\n#암낫오타쿠 #TMNETWORK #이나바코시 #홍백가합전 #시티헌터\n\n[커버]\n소스: \n제목: 〈시티헌터〉 엔딩 그 팀,|38년 만에 홍백 간다\n부제: TM NETWORK · 이나바 코시는 솔로로 애니송 '터치'\n출처:\n",
+    "caption": "TM NETWORK가 38년 만에 〈NHK 홍백가합전〉(NHK紅白歌合戦) 무대에 섭니다.\n\n13일 발표된 제77회 출전자 41팀에 이름이 올랐는데요, 첫 출전은 1988년이었습니다. 〈시티헌터〉 엔딩곡 'Get Wild'로 한국에서도 익숙한 고무로 테츠야·우츠노미야 타카시·키네 나오토 세 사람입니다.\n\n애니송은 한 곡 더 있습니다. B'z의 이나바 코시가 특별 기획으로 처음 솔로 출전해, 1985년 애니메이션 〈터치〉(タッチ) 주제가였던 이와사키 요시미의 '터치'를 부릅니다. 올봄 2026 월드 베이스볼 클래식을 응원하며 커버했던 곡입니다.\n\n방송은 12월 31일 오후 7시 20분(일본 기준) NHK 종합이고, NHK ONE에서 동시 배신됩니다.\n\n#암낫오타쿠 #TMNETWORK #이나바코시 #홍백가합전 #시티헌터",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "〈시티헌터〉 엔딩 그 팀,|38년 만에 홍백 간다",
+      "sub": "TM NETWORK · 이나바 코시는 솔로로 애니송 '터치'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[미리보기] 표지에 사진이 안 들어감 — 이미지 호스트 실패(ImgBB 한도·Cloudinary 401, 매체 사진 해상도 미달). NHK 발표 사진이나 TM NETWORK 공식 사진을 넣을 것",
+     "TM NETWORK·다른 가수들의 홍백 곡목은 아직 발표 전이라 'Get Wild' 를 부른다고 쓰지 않음 — 곡목 발표 때 후속으로",
+     "'터치' 커버가 차트 1위였다는 건 AV Watch 한 곳뿐이라 뺌 · 숏폼은 공식 영상이 없어 비움",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "Mikiki — 홍조 20·백조 21, 첫 출전 7팀, TM NETWORK(2회), 특별 기획 이나바 코시 솔로 첫 출전 '터치'(1985 이와사키 요시미 애니 주제가, 올봄 2026 WBC 응원 커버), 12/31 19:20~23:45 (11/13)",
+      "link": "https://mikiki.tokyo.jp/articles/-/46680"
+     },
+     {
+      "title": "AV Watch — 출전자 명단·특별 기획·방송 시각 같음 (11/13)",
+      "link": "https://av.watch.impress.co.jp/docs/news/2156292.html"
+     },
+     {
+      "title": "아니메!아니메! — TM NETWORK 1988년 이후 38년 만 두 번째 출전, 'Get Wild'(1987) 〈시티헌터〉 엔딩 (11/13 17:00)",
+      "link": "https://animeanime.jp/article/2026/11/13/104752.html"
+     },
+     {
+      "title": "모델프레스 — 출전 가수 정식 발표 일람",
+      "link": "https://mdpr.jp/music/detail/4875494"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/cd45bac6b74b2352cb3f.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7b6d6fd8082d677fd8c9.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/cd45bac6b74b2352cb3f.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-13T18:44+09:00",
+     "v": {
+      "A": "852f865b"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "오늘(11/13) 발표된 제77회 홍백 출전자 · 'Get Wild' 와 '터치' 두 애니송이 무대에 선다는 연결 · 오전 초안(모리구치 'Get Wild' 커버)과 이어 읽힌다",
+    "at": "2026-11-13T18:43+09:00"
    },
    "corner_name": "소식"
   }
@@ -516,14 +607,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-13T11:00+09:00"
+  "at": "2026-11-13T18:43+09:00"
  },
  "queue": {
-  "next": "2026-11-13T11:02+09:00",
+  "next": "2026-11-13T18:46+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
