@@ -1421,7 +1421,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=jjJvY3RoT9o\n구간: 0:30-1:00\n곡: 12곡 채운 김하온\n아티스트: 피처링 없이 혼자\n피처링:\n후킹: \n출처: KC 케이씨",
+    "form": "[영상]\n카테고리: New Release!\nURL: https://www.youtube.com/watch?v=jjJvY3RoT9o\n구간: 0:30-1:00\n곡: 12곡 채운 김하온\n아티스트: 피처링 없이 혼자\n피처링:\n후킹: \n출처: KC 케이씨\n자막: 받음 st:1794555383069-ae45e5c4",
     "caption": "김하온(@noahmik)의 정규 2집 [i+em] 타이틀곡 'Hellraiser'입니다.\n\n〈쇼미더머니12〉 우승 뒤 처음 내놓은 정규 앨범인데요, 12곡 모두 피처링 없이 혼자 불렀습니다. 'Hellraiser'는 'Platinum', 'Viva La Vida'와 함께 세 타이틀곡 중 하나로, 앨범과 같은 날 뮤직비디오가 나왔습니다.\n\n수록곡은 21일 KBS아레나에서 열리는 첫 단독 콘서트 'ARK'에서 처음 라이브로 불립니다.\n\n#PLOT #김하온 #HAON #Hellraiser #iem",
     "hooks": {
      "A": "피처링 없이 혼자 / 12곡 채운 김하온",
@@ -1485,8 +1485,94 @@
      "full": 93.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-13T16:34+09:00"
+     "status": "ready",
+     "rid": "st:1794555383069-ae45e5c4",
+     "n": 16,
+     "note": "자막 17줄 (받아쓰기 · 확인할 줄 8)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 2.28,
+       "text": "Yeah Hellraiser\nHellraiser?"
+      },
+      {
+       "start": 2.28,
+       "end": 5.02,
+       "text": "I'm Hellraiser\nHellraiser I passed"
+      },
+      {
+       "start": 5.02,
+       "end": 7.74,
+       "text": "the mom Hellraiser\nHellraiser"
+      },
+      {
+       "start": 7.74,
+       "end": 8.2,
+       "text": "Hellraiser?"
+      },
+      {
+       "start": 8.2,
+       "end": 9.92,
+       "text": "I'm Hellraiser"
+      },
+      {
+       "start": 11.72,
+       "end": 12.77,
+       "text": "Hellraiser I already\nthought you're"
+      },
+      {
+       "start": 12.77,
+       "end": 14.87,
+       "text": "a pacemaker I'm a\nreal stick I'm a"
+      },
+      {
+       "start": 14.87,
+       "end": 16.92,
+       "text": "hitler, become\none attack Persian"
+      },
+      {
+       "start": 16.92,
+       "end": 18.33,
+       "text": "attack on\nTitan I was 18"
+      },
+      {
+       "start": 18.33,
+       "end": 19.86,
+       "text": "but I'm a\ncaptain I was 18"
+      },
+      {
+       "start": 19.86,
+       "end": 20.88,
+       "text": "what I made\nit happen?"
+      },
+      {
+       "start": 20.88,
+       "end": 21.65,
+       "text": "Yeah, me\nand my team"
+      },
+      {
+       "start": 21.65,
+       "end": 22.88,
+       "text": "we sharing this\nsh○t I'm calling the"
+      },
+      {
+       "start": 22.88,
+       "end": 24.76,
+       "text": "shot, playmaker\nI think it's dark"
+      },
+      {
+       "start": 24.76,
+       "end": 26.62,
+       "text": "I don't know if I'm\nnot going to die"
+      },
+      {
+       "start": 26.62,
+       "end": 28.28,
+       "text": "I keep it with\nme the pass"
+      }
+     ],
+     "at": "2026-11-13T16:36+09:00"
     }
    },
    "pick": {
@@ -1574,8 +1660,8 @@
      "full": 2072.0
     },
     "prep": {
-     "status": "queued",
-     "at": "2026-11-13T16:34+09:00"
+     "status": "making",
+     "at": "2026-11-13T16:36+09:00"
     }
    },
    "pick": {
@@ -1864,10 +1950,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-13T16:34+09:00"
+  "at": "2026-11-13T16:36+09:00"
  },
  "queue": {
-  "next": "2026-11-13T16:36+09:00",
+  "next": "2026-11-13T16:38+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-12T19:35+09:00"
