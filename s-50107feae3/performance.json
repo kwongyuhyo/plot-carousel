@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13 15:05 KST",
+ "generated_at": "2026-11-13 19:04 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-12 22:04 KST"
+  "daily": "2026-11-13 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-13T15:05:09+09:00",
+  "fetched_at": "2026-11-13T19:04:50+09:00",
   "posts": [
    {
     "t": "2026-11-12T19:35+09:00",
@@ -2325,35 +2325,25 @@
     "t": "2026-10-23T22:44+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 "
-   },
-   {
-    "t": "2026-10-23T17:57+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "리사(@lalalalisa_m)가 오늘(23일) 솔로 EP [PRESS "
-   },
-   {
-    "t": "2026-10-23T15:41+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "A2O LITE(@a2o.lite)의 데뷔곡 'NEON'이 하루 재생 수"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 378,
+  "drafts": 382,
   "posted": 131,
   "posts": 157,
-  "rate": 0.35,
+  "rate": 0.34,
   "adopted_mult": 0.98,
   "own_mult": 1.04,
   "lanes": {
    "클립": {
-    "drafts": 55,
+    "drafts": 56,
     "posted": 7,
     "mult": 1.05
    },
    "재미": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 4,
     "mult": 1.43
    },
@@ -2363,19 +2353,19 @@
     "mult": 0.95
    },
    "정보": {
-    "drafts": 258,
+    "drafts": 259,
     "posted": 111,
     "mult": 1.0
    },
    "시리즈": {
-    "drafts": 33,
+    "drafts": 34,
     "posted": 6,
     "mult": 0.78
    }
   },
   "corners": {
    "mal": {
-    "drafts": 51,
+    "drafts": 53,
     "posted": 7,
     "mult": 0.93
    },
@@ -2415,7 +2405,7 @@
     "mult": 1.36
    },
    "anniv": {
-    "drafts": 23,
+    "drafts": 24,
     "posted": 2,
     "mult": 2.0
    },
@@ -2430,7 +2420,7 @@
     "mult": 1.05
    },
    "intro": {
-    "drafts": 17,
+    "drafts": 18,
     "posted": 3,
     "mult": 0.78
    },
@@ -2554,7 +2544,7 @@
   ]
  },
  "follow": {
-  "at": "2026-11-13T15:05+09:00",
+  "at": "2026-11-13T19:04+09:00",
   "d30": {
    "days": 30,
    "follows": 14.4,
@@ -2621,7 +2611,7 @@
   ],
   "feed": {
    "n": 189,
-   "reach": 3665136,
+   "reach": 3665866,
    "follows": 490,
    "per1k": 0.13
   },
@@ -2637,7 +2627,7 @@
    {
     "kind": "기타",
     "n": 37,
-    "reach": 287583,
+    "reach": 287626,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2653,7 +2643,7 @@
    {
     "kind": "발매·신보",
     "n": 41,
-    "reach": 105002,
+    "reach": 105398,
     "follows": 12,
     "per1k": 0.11,
     "visits1k": 2.8
@@ -2661,7 +2651,7 @@
    {
     "kind": "갈등·반응",
     "n": 22,
-    "reach": 334600,
+    "reach": 334852,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.5
@@ -2669,7 +2659,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 32,
-    "reach": 140243,
+    "reach": 140274,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
