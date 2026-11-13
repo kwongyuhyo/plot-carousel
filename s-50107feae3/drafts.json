@@ -797,7 +797,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:44-1:14\n곡: 리센느의 'With'\n아티스트: 악플러 고소에 나선\n피처링:\n후킹: \n출처: RESCENE\n음원: 리센느 - With\n가사: 자동",
+    "form": "[영상]\n카테고리: Issue\nURL: https://www.youtube.com/watch?v=pey3E47eSc8\n구간: 0:44-1:14\n곡: 리센느의 'With'\n아티스트: 악플러 고소에 나선\n피처링:\n후킹: \n출처: RESCENE\n음원: 리센느 - With\n가사: 자동\n자막: 받음 st:1794535401272-64e613ac",
     "caption": "리센느(@rescene_official) 소속사 더뮤즈엔터테인먼트가 악성 게시물 작성자들을 상대로 1차 형사 고소를 마쳤습니다.\n\n12일 낸 공식 입장에서 소속사는 멤버들을 겨냥한 허위 사실과 악의적인 비방 게시물이 계속 퍼지고 있다고 밝혔는데요, 게시물을 지우거나 아이디를 바꿔도 끝까지 추적하고, 반성문이나 초범·연령을 이유로 한 선처도 없다고 못 박았습니다.\n\n영상은 리센느 미니 4집 [PULSE] 타이틀곡 'With' 뮤직비디오입니다.\n\n#PLOT #리센느 #RESCENE #With #PULSE",
     "hooks": {
      "A": "악플러 고소에 나선 / 리센느의 'With'",
@@ -861,8 +861,69 @@
      "full": 202.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-13T11:01+09:00"
+     "status": "ready",
+     "rid": "st:1794535401272-64e613ac",
+     "n": 11,
+     "note": "🎤 가사 34줄 (가사 영상 「웅키」에서 · 소리 맞춤 0.72)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 3.0,
+       "text": "나를 부르는 echo, yeah"
+      },
+      {
+       "start": 3.0,
+       "end": 6.0,
+       "text": "Runnin' on, runnin' on, runnin' on you"
+      },
+      {
+       "start": 6.0,
+       "end": 8.75,
+       "text": "Runnin' now, runnin' now, runnin' to you"
+      },
+      {
+       "start": 8.75,
+       "end": 12.25,
+       "text": "잠든 맘을 뛰게 해준 너라는 꿈"
+      },
+      {
+       "start": 12.25,
+       "end": 14.75,
+       "text": "날 부르는 메아리 It's all"
+      },
+      {
+       "start": 14.75,
+       "end": 20.5,
+       "text": "You, you"
+      },
+      {
+       "start": 20.5,
+       "end": 23.5,
+       "text": "내 심장을 뛰게 한 그 순간"
+      },
+      {
+       "start": 23.5,
+       "end": 24.75,
+       "text": "내게 넌 네게 난"
+      },
+      {
+       "start": 24.75,
+       "end": 26.75,
+       "text": "Nobody else but you"
+      },
+      {
+       "start": 26.75,
+       "end": 29.25,
+       "text": "파도치는 목소리로"
+      },
+      {
+       "start": 29.25,
+       "end": 30.0,
+       "text": "나를 부를 때"
+      }
+     ],
+     "at": "2026-11-13T11:03+09:00"
     }
    },
    "corner_name": "소식"
@@ -1044,10 +1105,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-13T11:01+09:00"
+  "at": "2026-11-13T11:03+09:00"
  },
  "queue": {
-  "next": "2026-11-13T11:03+09:00",
+  "next": "2026-11-13T11:05+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-12T19:35+09:00"
