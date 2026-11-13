@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-12 22:04 KST",
+ "generated_at": "2026-11-13 15:05 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-12 19:05 KST"
+  "daily": "2026-11-12 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-12T21:25:21+09:00",
+  "fetched_at": "2026-11-13T15:05:09+09:00",
   "posts": [
    {
     "t": "2026-11-12T19:35+09:00",
@@ -2335,37 +2335,12 @@
     "t": "2026-10-23T15:41+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "A2O LITE(@a2o.lite)의 데뷔곡 'NEON'이 하루 재생 수"
-   },
-   {
-    "t": "2026-10-23T12:44+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "트와이스 지효(@_zyozyo)가 21년 만에 JYP엔터테인먼트를 떠났습"
-   },
-   {
-    "t": "2026-10-23T12:33+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "저스틴 비버가 13년 만에 한국에 왔습니다."
-   },
-   {
-    "t": "2026-10-23T06:50+09:00",
-    "type": "VIDEO",
-    "head": "언오피셜보이(이수린)가 양홍원(@yanghongwon)에게 보낸 축하 문"
-   },
-   {
-    "t": "2026-10-23T03:25+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "SYSTEM SEOUL의 굿즈 홍보 이미지에 지드래곤(@xxxibgdrg"
-   },
-   {
-    "t": "2026-10-23T03:19+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "GGM 킴보(@ggm_kimbo)가 23일 오후 6시, 솔쟈와 함께한 새"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 374,
+  "drafts": 378,
   "posted": 131,
   "posts": 157,
   "rate": 0.35,
@@ -2373,7 +2348,7 @@
   "own_mult": 1.04,
   "lanes": {
    "클립": {
-    "drafts": 54,
+    "drafts": 55,
     "posted": 7,
     "mult": 1.05
    },
@@ -2388,7 +2363,7 @@
     "mult": 0.95
    },
    "정보": {
-    "drafts": 255,
+    "drafts": 258,
     "posted": 111,
     "mult": 1.0
    },
@@ -2400,12 +2375,12 @@
   },
   "corners": {
    "mal": {
-    "drafts": 50,
+    "drafts": 51,
     "posted": 7,
     "mult": 0.93
    },
    "news": {
-    "drafts": 190,
+    "drafts": 192,
     "posted": 85,
     "mult": 1.05
    },
@@ -2455,7 +2430,7 @@
     "mult": 1.05
    },
    "intro": {
-    "drafts": 16,
+    "drafts": 17,
     "posted": 3,
     "mult": 0.78
    },
@@ -2579,12 +2554,12 @@
   ]
  },
  "follow": {
-  "at": "2026-11-12T22:04+09:00",
+  "at": "2026-11-13T15:05+09:00",
   "d30": {
    "days": 30,
-   "follows": 14.9,
-   "unfollows": 14.6,
-   "net": 0.3
+   "follows": 14.4,
+   "unfollows": 14.5,
+   "net": -0.1
   },
   "weeks": [
    {
@@ -2638,15 +2613,15 @@
    },
    {
     "week": "2026-W46",
-    "follows": 21,
-    "unfollows": 23,
-    "net": -2,
-    "days": 2
+    "follows": 32,
+    "unfollows": 35,
+    "net": -3,
+    "days": 3
    }
   ],
   "feed": {
    "n": 189,
-   "reach": 3664133,
+   "reach": 3665136,
    "follows": 490,
    "per1k": 0.13
   },
@@ -2662,7 +2637,7 @@
    {
     "kind": "기타",
     "n": 37,
-    "reach": 287521,
+    "reach": 287583,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2678,7 +2653,7 @@
    {
     "kind": "발매·신보",
     "n": 41,
-    "reach": 104388,
+    "reach": 105002,
     "follows": 12,
     "per1k": 0.11,
     "visits1k": 2.8
@@ -2686,7 +2661,7 @@
    {
     "kind": "갈등·반응",
     "n": 22,
-    "reach": 334321,
+    "reach": 334600,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.5
@@ -2694,7 +2669,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 32,
-    "reach": 140212,
+    "reach": 140243,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
@@ -2759,14 +2734,14 @@
   "reels": {
    "reels_per1k": 0.1,
    "feed_per1k": 0.03,
-   "base": 16.3,
+   "base": 15.8,
    "days": 59
   },
   "spikes": [
    {
     "date": "2026-10-20",
     "unfollows": 41,
-    "usual": 14.6,
+    "usual": 14.5,
     "posted": [
      "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@r…",
      "인디고뮤직(@indigomusic_official)이라는 이름…"
