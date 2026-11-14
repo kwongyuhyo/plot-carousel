@@ -1,783 +1,38 @@
 {
  "schema": 1,
- "date": "2026-11-13",
- "generated_at": "2026-11-13 11:00 KST",
+ "date": "2026-11-14",
+ "generated_at": "2026-11-14 10:58 KST",
  "items": [
   {
    "source": {
-    "id": "claude:pocketpair-gta6-leave",
-    "account": "Pocketpair",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323331",
-    "image": null,
-    "head": "대표님 저희는요? 포켓페어, 'GTA6' 특별휴가 실시",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T11:11+09:00",
-   "key": "6271332a",
-   "by": "claude",
-   "subjects": [
-    "포켓페어",
-    "GTA 6"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈팰월드〉 개발사 포켓페어가 〈GTA 6〉 출시에 맞춰 직원들에게 닷새 휴가 — 이름은 '바이스 시티 긴급 출장', 업데이트는 예정대로라는 문장까지",
-    "why": "출시 엿새 전 GTA6 열기를 개발사 사람들 쪽에서 보여 주는 장면 · 공식 X 공지라 확인된 사실"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈팰월드〉 개발사 포켓페어가 〈GTA 6〉 출시에 맞춰 직원들에게 닷새 휴가를 줍니다.\n\n〈팰월드〉 공식 X에 올라온 사내 공지인데요, 19일부터 23일까지 〈GTA 6〉를 할 직원은 누구나 업무에서 빠질 수 있습니다. 회사는 이 휴가를 '바이스 시티 긴급 출장'이라고 불렀습니다. 21·22일이 주말이라 실제로 쉬는 평일은 사흘입니다.\n\n공지에는 〈팰월드〉와 〈크래프토피아〉 업데이트는 예정대로 진행된다는 문장도 함께 들어갔습니다. 미조베 타쿠로 대표도 자신의 X에 〈GTA 6〉를 하러 한동안 쉬겠다는 글을 올렸습니다.\n\n〈GTA 6〉 2026년 11월 19일 출시 · PS5·엑스박스 시리즈 X|S\n\n#겜디핑 #포켓페어 #팰월드 #GTA6 #바이스시티\n\n[커버]\n소스: \n제목: 팰월드 개발사,|GTA6 하라고 닷새 휴가\n부제: 이름은 '바이스 시티 긴급 출장' · 11월 19~23일\n출처:\n",
-    "caption": "〈팰월드〉 개발사 포켓페어가 〈GTA 6〉 출시에 맞춰 직원들에게 닷새 휴가를 줍니다.\n\n〈팰월드〉 공식 X에 올라온 사내 공지인데요, 19일부터 23일까지 〈GTA 6〉를 할 직원은 누구나 업무에서 빠질 수 있습니다. 회사는 이 휴가를 '바이스 시티 긴급 출장'이라고 불렀습니다. 21·22일이 주말이라 실제로 쉬는 평일은 사흘입니다.\n\n공지에는 〈팰월드〉와 〈크래프토피아〉 업데이트는 예정대로 진행된다는 문장도 함께 들어갔습니다. 미조베 타쿠로 대표도 자신의 X에 〈GTA 6〉를 하러 한동안 쉬겠다는 글을 올렸습니다.\n\n〈GTA 6〉 2026년 11월 19일 출시 · PS5·엑스박스 시리즈 X|S\n\n#겜디핑 #포켓페어 #팰월드 #GTA6 #바이스시티",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "팰월드 개발사,|GTA6 하라고 닷새 휴가",
-      "sub": "이름은 '바이스 시티 긴급 출장' · 11월 19~23일"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "팰월드 개발사,|GTA6 하라고 닷새 휴가",
-      "sub": "이름은 '바이스 시티 긴급 출장' · 11월 19~23일"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지에 사진이 하나도 안 들어감 — 원본 해상도 미달(400x468)·Cloudinary 401 로 수집 실패, 사진 새로 넣을 것",
-     "휴가 기간(19~23일)·'바이스 시티 출장'·업데이트 예정대로는 인벤·Shacknews 일치 · 미조베 대표 X 글은 원문 인용 없이 '쉬겠다'는 요지만 씀",
-     "표지 사진이 포켓페어 공지문이나 GTA6 공식 이미지인지 볼 것 (Shacknews 대표 사진은 GTA6 이미지)",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "인벤 — 대표님 저희는요? 포켓페어, 'GTA6' 특별휴가 실시 (11/13)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323331"
-     },
-     {
-      "title": "Shacknews — Palworld developer is giving employees a five-day holiday to play GTA 6 (11/12)",
-      "link": "https://www.shacknews.com/article/151343/pocketpair-gta-6-vacation"
-     },
-     {
-      "title": "PC Gamer — Palworld developer Pocketpair gives employees time off for 'a 5-day business trip in Vice City when GTA 6 launches'",
-      "link": "https://www.pcgamer.com/games/grand-theft-auto/palworld-developer-pocketpair-gives-employees-time-off-for-a-5-day-business-trip-in-vice-city-when-gta-6-launches/"
-     },
-     {
-      "title": "Inven Global — Pocketpair Grants Special Leave for GTA 6 Launch",
-      "link": "https://www.invenglobal.com/articles/28552/boss-what-about-us-pocketpair-grants-special-leave-for-gta-6-launch"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2561ae28a34e27b0d340.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2561ae28a34e27b0d340.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T11:12+09:00",
-     "v": {
-      "A": "83c85ade"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:pearlabyss-dokkaebi-2028",
-    "account": "Pearl Abyss",
-    "url": "https://bbs.ruliweb.com/news/read/231862",
-    "image": null,
-    "head": "펄어비스, 붉은사막 이식 및 '도깨비' 계획",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T11:00+09:00",
-   "key": "9f85ca1b",
-   "by": "claude",
-   "subjects": [
-    "도깨비",
-    "펄어비스"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "펄어비스 〈도깨비〉 출시 목표 2028년 하반기 — 올해 안 개발 현황 공개, 체험판 홍보는 2027년 하반기부터 · 〈붉은사막〉 스위치2판은 2027년 상반기 그대로",
-    "why": "한국 개발사 · 오래 기다린 신작의 출시 목표 시점 · 붉은사막 이식 일정까지 실용 정보"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T11:00+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n펄어비스가 〈도깨비〉의 출시 목표를 2028년 하반기로 잡았습니다.\n\n12일 나온 3분기 실적 자료에 담긴 계획인데요, 올해 안에 개발 현황을 먼저 공개하고 체험판을 포함한 본격적인 홍보는 2027년 하반기부터 준비합니다. 개발 인력을 계속 늘리고 있고, 시스템을 직접 만들어 보기 전에 AI로 먼저 빠르게 검증하는 방식으로 속도를 내고 있다고 설명했습니다.\n\n〈붉은사막〉 닌텐도 스위치2판은 2027년 상반기 목표를 그대로 지킵니다. 〈붉은사막〉의 첫 DLC '미지의 여정'은 10월 30일 나왔습니다.\n\n〈도깨비〉 2028년 하반기 출시 목표 · 〈붉은사막〉 닌텐도 스위치2판 2027년 상반기 출시 목표\n\n#겜디핑 #펄어비스 #도깨비 #붉은사막 #닌텐도스위치2\n\n[커버]\n소스: \n제목: 펄어비스 도깨비,|2028년 하반기 목표\n부제: 붉은사막 스위치2판은 2027년 상반기 그대로\n출처:\n",
-    "caption": "펄어비스가 〈도깨비〉의 출시 목표를 2028년 하반기로 잡았습니다.\n\n12일 나온 3분기 실적 자료에 담긴 계획인데요, 올해 안에 개발 현황을 먼저 공개하고 체험판을 포함한 본격적인 홍보는 2027년 하반기부터 준비합니다. 개발 인력을 계속 늘리고 있고, 시스템을 직접 만들어 보기 전에 AI로 먼저 빠르게 검증하는 방식으로 속도를 내고 있다고 설명했습니다.\n\n〈붉은사막〉 닌텐도 스위치2판은 2027년 상반기 목표를 그대로 지킵니다. 〈붉은사막〉의 첫 DLC '미지의 여정'은 10월 30일 나왔습니다.\n\n〈도깨비〉 2028년 하반기 출시 목표 · 〈붉은사막〉 닌텐도 스위치2판 2027년 상반기 출시 목표\n\n#겜디핑 #펄어비스 #도깨비 #붉은사막 #닌텐도스위치2",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "펄어비스 도깨비,|2028년 하반기 목표",
-      "sub": "붉은사막 스위치2판은 2027년 상반기 그대로"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "펄어비스 도깨비,|2028년 하반기 목표",
-      "sub": "붉은사막 스위치2판은 2027년 상반기 그대로"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "도깨비 2028년 하반기·연내 개발 현황 공개·2027년 하반기 본격 홍보, 붉은사막 스위치2판 2027년 상반기는 루리웹·인벤 일치 (펄어비스 3분기 실적 자료 기준, 발언자 없음)",
-     "붉은사막 3분기 약 68만 장은 인벤 한 곳이라 뺌 · 표지 사진이 도깨비 공식 이미지인지 볼 것",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "루리웹 — 펄어비스, 붉은사막 이식 및 '도깨비' 계획 (11/12)",
-      "link": "https://bbs.ruliweb.com/news/read/231862"
-     },
-     {
-      "title": "인벤 — [실적] 신작 효과 걷힌 펄어비스, 3분기 영업익 207억… (11/12)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323318"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6325e55fea8da84dc3f2.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6325e55fea8da84dc3f2.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T11:01+09:00",
-     "v": {
-      "A": "7bbb5990"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:vindictus-defying-fate-ps5",
-    "account": "NEXON",
-    "url": "https://bbs.ruliweb.com/news/read/231868",
-    "image": null,
-    "head": "빈딕투스, 대응 플랫폼과 새로운 트레일러",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T11:11+09:00",
-   "key": "c9c660b0",
-   "by": "claude",
-   "subjects": [
-    "빈딕투스: 디파잉 페이트",
-    "넥슨"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "C",
-    "kind": "정보",
-    "angle": "〈마비노기 영웅전〉을 잇는 넥슨 〈빈딕투스: 디파잉 페이트〉 PS5 출시 확정 — PS5 프로로 찍은 게임 소개 트레일러",
-    "why": "한국 개발사의 콘솔 진출 · 공식 트레일러가 있어 숏폼이 선다 · 발표 소식이라 표지 한 장"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n넥슨의 〈빈딕투스: 디파잉 페이트〉가 PS5로도 나옵니다.\n\n넥슨이 12일 PS5 출시를 확정하면서 PS5 프로로 찍은 게임 소개 트레일러를 함께 공개했는데요, 시네마틱과 실제 플레이 장면을 엮어 영웅마다 다른 액션과 협동 플레이를 보여 줍니다.\n\n켈트 신화에서 영감을 얻은 중세 판타지 액션 RPG로, 영웅 하나를 골라 혼자 또는 다른 이용자와 함께 거대한 보스에 맞서는 게임입니다. 정확한 회피와 강한 카운터가 싸움의 중심입니다.\n\n2027년 출시 예정 · PS5·PC(스팀)\n\n#겜디핑 #빈딕투스 #디파잉페이트 #넥슨 #마비노기영웅전\n\n[커버]\n소스: \n제목: 빈딕투스 신작,|PS5로도 나온다\n부제: 빈딕투스: 디파잉 페이트 · PS5 프로 트레일러 공개\n출처:\n",
-    "caption": "넥슨의 〈빈딕투스: 디파잉 페이트〉가 PS5로도 나옵니다.\n\n넥슨이 12일 PS5 출시를 확정하면서 PS5 프로로 찍은 게임 소개 트레일러를 함께 공개했는데요, 시네마틱과 실제 플레이 장면을 엮어 영웅마다 다른 액션과 협동 플레이를 보여 줍니다.\n\n켈트 신화에서 영감을 얻은 중세 판타지 액션 RPG로, 영웅 하나를 골라 혼자 또는 다른 이용자와 함께 거대한 보스에 맞서는 게임입니다. 정확한 회피와 강한 카운터가 싸움의 중심입니다.\n\n2027년 출시 예정 · PS5·PC(스팀)\n\n#겜디핑 #빈딕투스 #디파잉페이트 #넥슨 #마비노기영웅전",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "빈딕투스 신작,|PS5로도 나온다",
-      "sub": "빈딕투스: 디파잉 페이트 · PS5 프로 트레일러 공개"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "빈딕투스 신작,|PS5로도 나온다",
-      "sub": "빈딕투스: 디파잉 페이트 · PS5 프로 트레일러 공개"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지에 사진이 하나도 안 들어감 — 원본 해상도 미달(900x506·1000x563)·Cloudinary 401 로 수집 실패, 사진 새로 넣을 것",
-     "[검증] 2027년 출시는 PlayStation 공식 영상 설명('coming to PS5 in 2027')으로 두 곳 확인 · 숏폼 1:00-1:25 자막은 세계 탐험·적 소개 내레이션(전투 설명은 1:25부터)이라 후킹 B '전투 장면'을 '세계'로 고침",
-     "PS5 확정은 인벤·루리웹 일치 · '2027년 출시 예정'은 루리웹 한 곳(인벤은 날짜 없음)이라 캡션에는 넣되 볼 것 · 첫 오리지널 캐릭터 녹티아·트위치콘 체험판은 인벤 한 곳이라 뺌",
-     "숏폼은 PlayStation 공식 채널 트레일러 1:00-1:25 — 영상을 직접 보지 않고 잡음, 로고·글자 화면이면 옮길 것",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "루리웹 — 빈딕투스, 대응 플랫폼과 새로운 트레일러 (11/12)",
-      "link": "https://bbs.ruliweb.com/news/read/231868"
-     },
-     {
-      "title": "인벤 — '빈딕투스: 디파잉 페이트' PS5 출시 확정... 오리지널 캐릭터 '녹티아'도 공개 (11/12)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323325"
-     },
-     {
-      "title": "PlayStation 공식 유튜브 — Vindictus: Defying Fate - Game Overview Trailer | PS5 Games",
-      "link": "https://www.youtube.com/watch?v=R4Ql9j5O858"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/002a9b0c85e8d20d7327.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/002a9b0c85e8d20d7327.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T11:12+09:00",
-     "v": {
-      "A": "00baa893"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=R4Ql9j5O858\n구간: 1:00-1:25\n곡: PS5로도 나온다\n아티스트: 빈딕투스 신작이\n피처링:\n후킹: \n출처: PlayStation\n자막: 자동",
-    "caption": "넥슨의 〈빈딕투스: 디파잉 페이트〉가 PS5로도 나옵니다.\n\n12일 PS5 출시가 확정되면서 PS5 프로로 찍은 게임 소개 트레일러가 함께 나왔는데요, 켈트 신화에서 영감을 얻은 중세 판타지 액션 RPG로 영웅 하나를 골라 거대한 보스에 맞서는 게임입니다. 영상은 PlayStation 공식 채널의 게임 소개 트레일러입니다.\n\n2027년 출시 예정 · PS5·PC(스팀)\n\n#겜디핑 #빈딕투스 #디파잉페이트 #넥슨 #마비노기영웅전",
-    "hooks": {
-     "A": "빈딕투스 신작이 / PS5로도 나온다",
-     "B": "PS5 프로로 찍은 / 빈딕투스의 세계",
-     "C": "마비노기 영웅전 그 세계가 / PS5로 오는 장면"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=R4Ql9j5O858",
-     "credit": "PlayStation",
-     "range": [
-      60.0,
-      85.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] 표지에 사진이 하나도 안 들어감 — 원본 해상도 미달(900x506·1000x563)·Cloudinary 401 로 수집 실패, 사진 새로 넣을 것",
-     "[검증] 2027년 출시는 PlayStation 공식 영상 설명('coming to PS5 in 2027')으로 두 곳 확인 · 숏폼 1:00-1:25 자막은 세계 탐험·적 소개 내레이션(전투 설명은 1:25부터)이라 후킹 B '전투 장면'을 '세계'로 고침",
-     "PS5 확정은 인벤·루리웹 일치 · '2027년 출시 예정'은 루리웹 한 곳(인벤은 날짜 없음)이라 캡션에는 넣되 볼 것 · 첫 오리지널 캐릭터 녹티아·트위치콘 체험판은 인벤 한 곳이라 뺌",
-     "숏폼은 PlayStation 공식 채널 트레일러 1:00-1:25 — 영상을 직접 보지 않고 잡음, 로고·글자 화면이면 옮길 것"
-    ],
-    "research": [
-     {
-      "title": "루리웹 — 빈딕투스, 대응 플랫폼과 새로운 트레일러 (11/12)",
-      "link": "https://bbs.ruliweb.com/news/read/231868"
-     },
-     {
-      "title": "인벤 — '빈딕투스: 디파잉 페이트' PS5 출시 확정... 오리지널 캐릭터 '녹티아'도 공개 (11/12)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323325"
-     },
-     {
-      "title": "PlayStation 공식 유튜브 — Vindictus: Defying Fate - Game Overview Trailer | PS5 Games",
-      "link": "https://www.youtube.com/watch?v=R4Ql9j5O858"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/R4Ql9j5O858/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dac2a633920984c49376.jpg",
-     "key": "R4Ql9j5O858@60.0"
-    },
-    "px": {
-     "vid": "R4Ql9j5O858",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5b39d8a89a72b97d8f81.mp4",
-     "off": 15.0,
-     "end": 130.0,
-     "full": 201.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-13T11:14+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:cinder-city-closed-alpha",
-    "account": "NCSOFT",
-    "url": "https://www.gamemeca.com/view.php?gid=1783459",
-    "image": null,
-    "head": "내년 상반기 엔씨 신작 '신더시티' 12월 스팀 알파 테스트",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T11:11+09:00",
-   "key": "16da8fcb",
-   "by": "claude",
-   "subjects": [
-    "신더시티",
-    "엔씨"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "C",
-    "kind": "정보",
-    "angle": "무너진 서울을 무대로 한 엔씨 〈신더시티〉 12월 4~6일 스팀 클로즈 알파 — 한국도 대상, 11월 30일까지 스팀에서 신청",
-    "why": "한국 개발사 · 서울이 무대 · 한국 독자가 바로 신청할 수 있는 실용 정보"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n엔씨의 〈신더시티〉가 12월 4일부터 6일까지 스팀에서 클로즈 알파 테스트를 엽니다.\n\n무너진 서울을 무대로 한 오픈월드 3인칭 슈터인데요, 엔씨 자회사 빅파이어 게임즈가 만들고 있습니다. 이번 테스트는 한국·일본·대만과 미국·캐나다·독일·영국·프랑스에 사는 만 18세 이상이 대상이고, 한국에서는 스팀으로 신청합니다.\n\n테스트에는 비밀유지약정이 걸려 있어 플레이 영상이나 스크린샷을 밖으로 공유할 수 없습니다. 뽑힌 사람에게는 이메일로 따로 안내가 갑니다.\n\n신청 11월 12일~30일(미국 태평양 시간) · 테스트 12월 4~6일 · PC(스팀) · 만 18세 이상\n\n#겜디핑 #신더시티 #엔씨 #빅파이어게임즈 #알파테스트\n\n[커버]\n소스: \n제목: 무너진 서울 슈터,|12월 알파 테스트\n부제: 엔씨 신더시티 · 12월 4~6일 스팀 · 한국도 신청\n출처:\n",
-    "caption": "엔씨의 〈신더시티〉가 12월 4일부터 6일까지 스팀에서 클로즈 알파 테스트를 엽니다.\n\n무너진 서울을 무대로 한 오픈월드 3인칭 슈터인데요, 엔씨 자회사 빅파이어 게임즈가 만들고 있습니다. 이번 테스트는 한국·일본·대만과 미국·캐나다·독일·영국·프랑스에 사는 만 18세 이상이 대상이고, 한국에서는 스팀으로 신청합니다.\n\n테스트에는 비밀유지약정이 걸려 있어 플레이 영상이나 스크린샷을 밖으로 공유할 수 없습니다. 뽑힌 사람에게는 이메일로 따로 안내가 갑니다.\n\n신청 11월 12일~30일(미국 태평양 시간) · 테스트 12월 4~6일 · PC(스팀) · 만 18세 이상\n\n#겜디핑 #신더시티 #엔씨 #빅파이어게임즈 #알파테스트",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "무너진 서울 슈터,|12월 알파 테스트",
-      "sub": "엔씨 신더시티 · 12월 4~6일 스팀 · 한국도 신청"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "무너진 서울 슈터,|12월 알파 테스트",
-      "sub": "엔씨 신더시티 · 12월 4~6일 스팀 · 한국도 신청"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지에 사진이 하나도 안 들어감 — Cloudinary 401 로 수집 실패, 사진 새로 넣을 것",
-     "테스트 일정·신청 기간·대상 국가·NDA 는 인벤·게임메카 일치 · 출시 시기는 게임메카 '내년 상반기'와 스팀 '2026년' 표기가 엇갈려 캡션에서 뺌",
-     "테스트 시각(지역별)은 아직 공지 전 — 공식 채널 안내 뒤 덧붙일지 판단",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — 내년 상반기 엔씨 신작 '신더시티' 12월 스팀 알파 테스트 (11/13)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783459"
-     },
-     {
-      "title": "인벤 — NC '신더시티' 클로즈 알파 테스트, 12월 4일부터 6일까지 (11/13)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323327"
-     },
-     {
-      "title": "Notebookcheck — Post-apocalyptic alt-history Seoul is the setting for Cinder City",
-      "link": "https://www.notebookcheck.net/Post-apocalyptic-alt-history-Seoul-is-the-setting-for-new-MMO-tactical-shooter-Cinder-City-s-gameplay-debuts-August-19.1090208.0.html"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/56b24d78d1937625258e.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/56b24d78d1937625258e.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T11:12+09:00",
-     "v": {
-      "A": "2784bbee"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:troy-baker-legend-award",
-    "account": "New York Videogame Critics Circle",
-    "url": "https://worthplaying.com/article/2026/11/10/news/151394-new-york-game-awards-will-present-troy-baker-with-andrew-yoon-legend-award/",
-    "image": null,
-    "head": "New York Game Awards Will Present Troy Baker With Andrew Yoon Legend Award",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T11:11+09:00",
-   "key": "f1767e22",
-   "by": "claude",
-   "subjects": [
-    "트로이 베이커",
-    "뉴욕 게임 어워드"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "C",
-    "kind": "정보",
-    "angle": "[실험] 〈더 라스트 오브 어스〉 조엘 목소리 트로이 베이커가 뉴욕 게임 어워드 공로상 — '지난 10~20년 게임을 말하며 그를 빼기 어렵다'는 레지 피사메이",
-    "why": "게임 안 하는 사람도 걸리는 '목소리' 입문형 실험 · 사람이 보이는 소식 · 시상식 뒤 직접 공연이라는 장면"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈더 라스트 오브 어스〉 조엘의 목소리로 알려진 성우 트로이 베이커가 뉴욕 게임 어워드 공로상을 받습니다.\n\n뉴욕 게임 비평가 모임(NYVGCC)이 주는 '앤드루 윤 레전드 상'인데요, 게임 문화에 깊은 흔적을 남긴 사람에게 주는 상입니다. 〈인디아나 존스: 그레이트 서클〉의 인디아나 존스도 그가 연기했습니다.\n\n모임 이사인 레지 피사메이 전 닌텐도 오브 아메리카 사장은 지난 10~20년의 게임을 이야기하면서 트로이 베이커를 빼놓기 어렵다고 했습니다. 시상식이 끝나면 트로이 베이커가 직접 무대에 올라 음악 공연도 엽니다.\n\n제16회 뉴욕 게임 어워드 · 2027년 1월 19일(미국 동부 시간) · 뉴욕 SVA 시어터\n\n#겜디핑 #트로이베이커 #더라스트오브어스 #뉴욕게임어워드 #성우\n\n[커버]\n소스: \n제목: 조엘 목소리 그 성우,|뉴욕에서 공로상\n부제: 트로이 베이커 · 뉴욕 게임 어워드 앤드루 윤 레전드 상\n출처:\n",
-    "caption": "〈더 라스트 오브 어스〉 조엘의 목소리로 알려진 성우 트로이 베이커가 뉴욕 게임 어워드 공로상을 받습니다.\n\n뉴욕 게임 비평가 모임(NYVGCC)이 주는 '앤드루 윤 레전드 상'인데요, 게임 문화에 깊은 흔적을 남긴 사람에게 주는 상입니다. 〈인디아나 존스: 그레이트 서클〉의 인디아나 존스도 그가 연기했습니다.\n\n모임 이사인 레지 피사메이 전 닌텐도 오브 아메리카 사장은 지난 10~20년의 게임을 이야기하면서 트로이 베이커를 빼놓기 어렵다고 했습니다. 시상식이 끝나면 트로이 베이커가 직접 무대에 올라 음악 공연도 엽니다.\n\n제16회 뉴욕 게임 어워드 · 2027년 1월 19일(미국 동부 시간) · 뉴욕 SVA 시어터\n\n#겜디핑 #트로이베이커 #더라스트오브어스 #뉴욕게임어워드 #성우",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "조엘 목소리 그 성우,|뉴욕에서 공로상",
-      "sub": "트로이 베이커 · 뉴욕 게임 어워드 앤드루 윤 레전드 상"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "조엘 목소리 그 성우,|뉴욕에서 공로상",
-      "sub": "트로이 베이커 · 뉴욕 게임 어워드 앤드루 윤 레전드 상"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지에 사진이 하나도 안 들어감 — 원본 해상도 미달(1024x576 등)·Cloudinary 401 로 수집 실패, 트로이 베이커 본인 사진 새로 넣을 것",
-     "[검증] 1월 19일은 4Gamer와 GamesBeat 검색 요약(화요일 1월 19일)으로 확인했으나 NYVGCC 공식 페이지엔 날짜 없음 · '조엘'은 4Gamer 한 곳(Worthplaying은 인디아나 존스만) — 널리 알려진 배역이라 둠",
-     "시상식 날짜 2027년 1월 19일은 4Gamer 한 곳(Worthplaying 은 날짜 없이 SVA 시어터만) — 볼 것 · 레지 피사메이 발언은 두 곳 일치 · 본인 소감은 어디에도 없어 쓰지 않음",
-     "표지 사진이 트로이 베이커 본인인지(다른 성우·배우 아닌지) 반드시 볼 것",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "Worthplaying — New York Game Awards Will Present Troy Baker With Andrew Yoon Legend Award (11/10)",
-      "link": "https://worthplaying.com/article/2026/11/10/news/151394-new-york-game-awards-will-present-troy-baker-with-andrew-yoon-legend-award/"
-     },
-     {
-      "title": "4Gamer — トロイ・ベーカーさん，New York Game Awardsの功労賞を受賞へ (11/12)",
-      "link": "https://www.4gamer.net/games/999/G999905/20261112015/"
-     },
-     {
-      "title": "NYVGCC — Andrew Yoon Legend Award winners",
-      "link": "https://nygamecritics.com/andrew-yoon-legend-award-winners"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a3c5ee387bef914f234.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a3c5ee387bef914f234.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T11:12+09:00",
-     "v": {
-      "A": "c153b4fd"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:metaphor-switch2-launch",
-    "account": "ATLUS",
-    "url": "https://www.4gamer.net/games/015/G101544/20261112034/",
-    "image": null,
-    "head": "Nintendo Switch 2版「メタファー：リファンタジオ」，本日発売",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T11:11+09:00",
-   "key": "5404cd47",
-   "by": "claude",
-   "subjects": [
-    "메타포: 리판타지오",
-    "아틀러스"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "C",
-    "kind": "정보",
-    "angle": "〈메타포: 리판타지오〉 스위치2판 12일 출시 — 한국어 자막 · 3만 2,000원 · 체험판 세이브 이어짐 · 색 표시 문제는 패치 준비",
-    "why": "11/7 '출시 당일 한국어·국내 가격 확인해 다룬다'로 미뤄 둔 건 · 한국어·가격이라는 실용 정보 · 발매 소식이라 표지 한 장"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n아틀러스의 판타지 RPG 〈메타포: 리판타지오〉가 12일 닌텐도 스위치2로 나왔습니다.\n\n2024년 나온 원작을 옮긴 판인데요, 휴대 모드와 TV 모드 모두에서 플레이 환경과 취향에 맞춰 동작 모드를 고를 수 있습니다. 10월에 먼저 나온 프롤로그 체험판의 세이브 데이터도 본편으로 이어집니다.\n\n오래 플레이하면 일부 사물과 캐릭터의 색이 잠시 다르게 보일 수 있다는 공지도 함께 나왔습니다. 진행에는 지장이 없고, 수정 패치를 준비하고 있습니다.\n\n2026년 11월 12일 출시 · 닌텐도 스위치2 · 한국어 자막(음성 일본어·영어) · 일반판·다운로드판 3만 2,000원 · 15세이용가\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #RPG\n\n[커버]\n소스: \n제목: 메타포: 리판타지오,|스위치2로 나왔다\n부제: 한국어 자막 · 3만 2,000원 · 체험판 세이브 이어짐\n출처:\n",
-    "caption": "아틀러스의 판타지 RPG 〈메타포: 리판타지오〉가 12일 닌텐도 스위치2로 나왔습니다.\n\n2024년 나온 원작을 옮긴 판인데요, 휴대 모드와 TV 모드 모두에서 플레이 환경과 취향에 맞춰 동작 모드를 고를 수 있습니다. 10월에 먼저 나온 프롤로그 체험판의 세이브 데이터도 본편으로 이어집니다.\n\n오래 플레이하면 일부 사물과 캐릭터의 색이 잠시 다르게 보일 수 있다는 공지도 함께 나왔습니다. 진행에는 지장이 없고, 수정 패치를 준비하고 있습니다.\n\n2026년 11월 12일 출시 · 닌텐도 스위치2 · 한국어 자막(음성 일본어·영어) · 일반판·다운로드판 3만 2,000원 · 15세이용가\n\n#겜디핑 #메타포리판타지오 #아틀러스 #닌텐도스위치2 #RPG",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "메타포: 리판타지오,|스위치2로 나왔다",
-      "sub": "한국어 자막 · 3만 2,000원 · 체험판 세이브 이어짐"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "메타포: 리판타지오,|스위치2로 나왔다",
-      "sub": "한국어 자막 · 3만 2,000원 · 체험판 세이브 이어짐"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지에 사진이 하나도 안 들어감 — 원본 해상도 미달(900x506 등)·Cloudinary 401 로 수집 실패, 사진 새로 넣을 것",
-     "[검증] 색 문제는 4Gamer 원문상 '장시간 플레이 시' 생기는 것으로 공지된 내용이라 '출시 직후 알려졌다'를 고침",
-     "국내 가격 3만 2,000원·한국어 자막은 루리웹(세가퍼블리싱코리아 8/12 안내) 기준 — 출시 뒤 바뀌었는지 닌텐도 e숍 확인 권장",
-     "색 표시 문제·패치 준비는 4Gamer(공식 공지 인용) 한 곳 · 하루 지난 출시 소식이라 올릴지 판단",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "4Gamer — Nintendo Switch 2版「メタファー：リファンタジオ」，本日発売 (11/12)",
-      "link": "https://www.4gamer.net/games/015/G101544/20261112034/"
-     },
-     {
-      "title": "루리웹 — 메타포: 리판타지오 스위치2 패키지 예약 판매 (8/12)",
-      "link": "https://bbs.ruliweb.com/news/read/227996"
-     },
-     {
-      "title": "Inven Global — Metaphor: ReFantazio Releases Free Demo for Nintendo Switch 2",
-      "link": "https://www.invenglobal.com/articles/27102/metaphor-refantazio-releases-free-demo-for-nintendo-switch-2"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/d572f7aea39e547c4b53.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/d572f7aea39e547c4b53.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T11:12+09:00",
-     "v": {
-      "A": "85610ec5"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:fable-quest-gameplay-korean",
-    "account": "Xbox",
+    "id": "claude:gta6-day-off",
+    "account": "Xbox Wire",
     "url": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/",
     "image": null,
-    "head": "Thanks for 25 Years, XBOX Players — Everything Announced Today",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T19:08+09:00",
-   "key": "cf62be35",
-   "by": "claude",
-   "subjects": [
-    "페이블",
-    "플레이그라운드 게임즈"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "엑스박스 25주년에 〈페이블〉 새 퀘스트 플레이 공개 — 그런데 스팀 지원 언어엔 아직 한국어가 없다, 6월엔 국내 이용자 청원까지",
-    "why": "새 공식 영상이라는 계기 · 한국 독자에게만 걸리는 한국어 지원 · 공식 채널 영상이 있어 숏폼이 선다"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T19:08+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈페이블〉이 엑스박스 25주년을 맞아 새 퀘스트 플레이 영상을 공개했습니다.\n\n플레이그라운드 게임즈가 새로 만드는 〈페이블〉인데요, 이번 영상은 저주받은 생물들과 마법으로 싸우는 퀘스트 하나를 따라가며 이야기의 새 단서도 함께 보여 줍니다. 시애틀 팬페스트를 찾은 사람들은 이날 직접 해 볼 수도 있었습니다.\n\n다만 스팀 상점 페이지의 지원 언어 열 개 가운데 한국어는 아직 없습니다. 지난 6월 발매일이 공개된 뒤에는 국내 엑스박스 이용자들이 한국어 지원을 요청하는 청원을 올리기도 했습니다.\n\n2027년 2월 23일 출시(프리미엄 에디션은 2월 18일부터) · PC·엑스박스 시리즈 X|S·PS5 · 게임 패스 첫날 포함 · 스팀 예약 7만 9,800원(프리미엄 11만 4,800원) · 스팀 기준 한국어 미지원\n\n#겜디핑 #페이블 #플레이그라운드게임즈 #엑스박스 #한국어지원\n\n[커버]\n소스: \n제목: 페이블 새 플레이 공개,|한국어는 아직 없다\n부제: 엑스박스 25주년 퀘스트 영상 · 2027년 2월 23일 출시\n출처:\n",
-    "caption": "〈페이블〉이 엑스박스 25주년을 맞아 새 퀘스트 플레이 영상을 공개했습니다.\n\n플레이그라운드 게임즈가 새로 만드는 〈페이블〉인데요, 이번 영상은 저주받은 생물들과 마법으로 싸우는 퀘스트 하나를 따라가며 이야기의 새 단서도 함께 보여 줍니다. 시애틀 팬페스트를 찾은 사람들은 이날 직접 해 볼 수도 있었습니다.\n\n다만 스팀 상점 페이지의 지원 언어 열 개 가운데 한국어는 아직 없습니다. 지난 6월 발매일이 공개된 뒤에는 국내 엑스박스 이용자들이 한국어 지원을 요청하는 청원을 올리기도 했습니다.\n\n2027년 2월 23일 출시(프리미엄 에디션은 2월 18일부터) · PC·엑스박스 시리즈 X|S·PS5 · 게임 패스 첫날 포함 · 스팀 예약 7만 9,800원(프리미엄 11만 4,800원) · 스팀 기준 한국어 미지원\n\n#겜디핑 #페이블 #플레이그라운드게임즈 #엑스박스 #한국어지원",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "페이블 새 플레이 공개,|한국어는 아직 없다",
-      "sub": "엑스박스 25주년 퀘스트 영상 · 2027년 2월 23일 출시"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "페이블 새 플레이 공개,|한국어는 아직 없다",
-      "sub": "엑스박스 25주년 퀘스트 영상 · 2027년 2월 23일 출시"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · Xbox 사진 해상도 미달 · 숏폼 영상은 유튜브 연령 확인으로 내려받기 실패(쿠키 필요) — 사진·영상 직접 붙일 것",
-     "한국어 미지원은 오늘 본 스팀 상점 페이지 기준('한국어 지원하지 않음') — 엑스박스 스토어도 같은지 볼 것 · 청원 표 수(400표)는 6월 숫자라 뺌",
-     "숏폼은 Fable 공식 채널 영상 1:00-1:25 — 자막이 없어 영상을 직접 보지 않고 잡음, 로고·글자 화면이면 옮길 것",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "Xbox Wire — Thanks for 25 Years, XBOX Players: Everything Announced Today (11/12)",
-      "link": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
-     },
-     {
-      "title": "Simulation Daily — Today in Gaming News (11/12)",
-      "link": "https://simulationdaily.com/news/today-in-gaming-news-november-12-2026"
-     },
-     {
-      "title": "Fable 공식 유튜브 — Fable - Official Quest Gameplay | XBOX 25th Anniversary",
-      "link": "https://www.youtube.com/watch?v=Tnsp2xlU5ts"
-     },
-     {
-      "title": "Steam — Fable (지원 언어·가격)",
-      "link": "https://store.steampowered.com/app/2769570/Fable/?l=koreana"
-     },
-     {
-      "title": "Inven Global — Xbox Users in Korea Petition for Korean Language Support in 'Fable' (6/11)",
-      "link": "https://labs.invenglobal.com/articles/22727/xbox-users-in-korea-petition-for-korean-language-support-in-fable"
-     },
-     {
-      "title": "GameMeca — \"Passed over again?\" User petition launched over lack of Korean language support for Fable reboot",
-      "link": "https://www.gamemeca.com/en/view.php?gid=1776330"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/43732c9bc43a9b778b6c.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/43732c9bc43a9b778b6c.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T19:09+09:00",
-     "v": {
-      "A": "de90ae92"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=Tnsp2xlU5ts\n구간: 1:00-1:25\n곡: 공개된 페이블 퀘스트\n아티스트: 엑스박스 25주년에\n피처링:\n후킹: \n출처: Fable\n자막: 자동",
-    "caption": "〈페이블〉이 엑스박스 25주년을 맞아 새 퀘스트 플레이 영상을 공개했습니다.\n\n저주받은 생물들과 마법으로 싸우는 퀘스트 하나를 따라가는 영상인데요, 스팀 상점 페이지 지원 언어에는 아직 한국어가 없습니다. 영상은 〈페이블〉 공식 채널의 퀘스트 플레이 영상입니다.\n\n2027년 2월 23일 출시 · PC·엑스박스 시리즈 X|S·PS5 · 스팀 기준 한국어 미지원\n\n#겜디핑 #페이블 #플레이그라운드게임즈 #엑스박스 #한국어지원",
-    "hooks": {
-     "A": "엑스박스 25주년에 / 공개된 페이블 퀘스트",
-     "B": "새 페이블에서 / 마법으로 싸우는 장면",
-     "C": "페이블 새 퀘스트 영상, / 한국어는 아직 없다"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=Tnsp2xlU5ts",
-     "credit": "Fable",
-     "range": [
-      60.0,
-      85.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · Xbox 사진 해상도 미달 · 숏폼 영상은 유튜브 연령 확인으로 내려받기 실패(쿠키 필요) — 사진·영상 직접 붙일 것",
-     "한국어 미지원은 오늘 본 스팀 상점 페이지 기준('한국어 지원하지 않음') — 엑스박스 스토어도 같은지 볼 것 · 청원 표 수(400표)는 6월 숫자라 뺌",
-     "숏폼은 Fable 공식 채널 영상 1:00-1:25 — 자막이 없어 영상을 직접 보지 않고 잡음, 로고·글자 화면이면 옮길 것"
-    ],
-    "research": [
-     {
-      "title": "Xbox Wire — Thanks for 25 Years, XBOX Players: Everything Announced Today (11/12)",
-      "link": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
-     },
-     {
-      "title": "Simulation Daily — Today in Gaming News (11/12)",
-      "link": "https://simulationdaily.com/news/today-in-gaming-news-november-12-2026"
-     },
-     {
-      "title": "Fable 공식 유튜브 — Fable - Official Quest Gameplay | XBOX 25th Anniversary",
-      "link": "https://www.youtube.com/watch?v=Tnsp2xlU5ts"
-     },
-     {
-      "title": "Steam — Fable (지원 언어·가격)",
-      "link": "https://store.steampowered.com/app/2769570/Fable/?l=koreana"
-     },
-     {
-      "title": "Inven Global — Xbox Users in Korea Petition for Korean Language Support in 'Fable' (6/11)",
-      "link": "https://labs.invenglobal.com/articles/22727/xbox-users-in-korea-petition-for-korean-language-support-in-fable"
-     },
-     {
-      "title": "GameMeca — \"Passed over again?\" User petition launched over lack of Korean language support for Fable reboot",
-      "link": "https://www.gamemeca.com/en/view.php?gid=1776330"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/Tnsp2xlU5ts/maxresdefault.jpg",
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-13T19:09+09:00"
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "엑스박스 25주년 새 플레이 영상 · 한국 독자에게만 걸리는 '한국어는 아직 없다' · 공식 영상으로 숏폼까지 선다",
-    "at": "2026-11-13T19:08+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:wolfenstein-3-in-production",
-    "account": "Xbox",
-    "url": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/",
-    "image": null,
-    "head": "From Wolfenstein 3 and Halo Firefight to Classic XBOX Games on PC: Everything An",
+    "head": "Xbox 25th Anniversary news recap (11/12 시애틀 팬페스트)",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-13T19:08+09:00",
-   "key": "a057105d",
+   "made_at": "2026-11-14T11:08+09:00",
+   "key": "2f66abc8",
    "by": "claude",
    "subjects": [
-    "울펜슈타인 3",
-    "머신게임즈"
+    "엑스박스"
    ],
    "lane": "정보",
    "editor": {
-    "grade": "B",
+    "grade": "A",
     "kind": "정보",
-    "angle": "엑스박스 25주년에 〈울펜슈타인 3〉 공식화 — BJ 블라즈코비츠의 브라이언 블룸, 그레이스 워커의 데브라 윌슨이 같은 역으로 돌아온다",
-    "why": "오래 기다린 시리즈 본편의 공식 발표 · 같은 배우가 돌아온다는 사람 쪽 사실 · 발표 소식이라 표지 한 장"
+    "angle": "엑스박스 25주년(11/15) — 헤일로와 같은 날 태어난 게임기, 25년 뒤 첫 엑스박스 게임이 PC로 돌아온다",
+    "why": "기념일 하루 전 · 시리즈의 역사와 이번 주 발표(원조 게임 PC 하위 호환·헤일로 파이어파이트)가 이어진다"
    },
    "added": "claude",
-   "added_at": "2026-11-13T19:08+09:00",
-   "corner": "news",
+   "added_at": "2026-11-14T11:08+09:00",
+   "corner": "anniv",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈울펜슈타인 3〉가 머신게임즈에서 만들어지고 있습니다.\n\n엑스박스 25주년을 맞아 아샤 샤르마 엑스박스 CEO가 12일 직접 알렸는데요, 〈울펜슈타인 II: 더 뉴 콜로서스〉 뒤를 잇는 넘버링 본편입니다. 주인공 BJ 블라즈코비츠의 브라이언 블룸, 그레이스 워커의 데브라 윌슨도 같은 역으로 돌아옵니다.\n\n머신게임즈는 '그의 명성이 먼저 와 있다'는 한 줄만 남겼습니다. 같은 날 id 소프트웨어의 다음 작품도 개발에 들어갔다는 소식이 함께 나왔습니다.\n\n〈울펜슈타인 3〉 · 개발 머신게임즈 · 플랫폼과 출시 시기는 다음 발표 때\n\n#겜디핑 #울펜슈타인3 #머신게임즈 #엑스박스 #BJ블라즈코비츠\n\n[커버]\n소스: \n제목: 울펜슈타인 3,|드디어 만들고 있다\n부제: 엑스박스 25주년 발표 · BJ와 그레이스 목소리 그대로\n출처:\n",
-    "caption": "〈울펜슈타인 3〉가 머신게임즈에서 만들어지고 있습니다.\n\n엑스박스 25주년을 맞아 아샤 샤르마 엑스박스 CEO가 12일 직접 알렸는데요, 〈울펜슈타인 II: 더 뉴 콜로서스〉 뒤를 잇는 넘버링 본편입니다. 주인공 BJ 블라즈코비츠의 브라이언 블룸, 그레이스 워커의 데브라 윌슨도 같은 역으로 돌아옵니다.\n\n머신게임즈는 '그의 명성이 먼저 와 있다'는 한 줄만 남겼습니다. 같은 날 id 소프트웨어의 다음 작품도 개발에 들어갔다는 소식이 함께 나왔습니다.\n\n〈울펜슈타인 3〉 · 개발 머신게임즈 · 플랫폼과 출시 시기는 다음 발표 때\n\n#겜디핑 #울펜슈타인3 #머신게임즈 #엑스박스 #BJ블라즈코비츠",
+    "form": "[카테고리]\nFeature\n\n[캡션]\n엑스박스가 11월 15일로 첫 발매 25주년을 맞습니다.\n\n2001년 11월 15일 북미에서 처음 나온 이 게임기 곁에는 번지가 만든 〈헤일로: 컴뱃 이볼브드〉가 있었는데요, 그래서 엑스박스의 생일은 헤일로의 생일이기도 합니다. 이번 주 시애틀 팬페스트에서도 리메이크 〈헤일로: 캠페인 이볼브드〉에 협동 생존 모드 파이어파이트가 무료 겨울 업데이트로 들어온다는 소식이 나왔습니다.\n\nPC 하위 호환으로 즐길 수 있는 원조 엑스박스 게임도 25종이 됐습니다. 이번에 이름이 나온 〈스타워즈: 구 공화국의 기사단〉과 〈엘더스크롤 3: 모로윈드〉처럼 첫 엑스박스로 하던 게임을 이제 윈도우 11 PC에서 다시 켤 수 있습니다.\n\n#겜디핑 #엑스박스 #엑스박스25주년 #헤일로 #번지\n\n[커버]\n소스: \n제목: 엑스박스, 내일|스물다섯 살이 된다\n부제: 헤일로와 같은 날 태어난 게임기\n출처:\n",
+    "caption": "엑스박스가 11월 15일로 첫 발매 25주년을 맞습니다.\n\n2001년 11월 15일 북미에서 처음 나온 이 게임기 곁에는 번지가 만든 〈헤일로: 컴뱃 이볼브드〉가 있었는데요, 그래서 엑스박스의 생일은 헤일로의 생일이기도 합니다. 이번 주 시애틀 팬페스트에서도 리메이크 〈헤일로: 캠페인 이볼브드〉에 협동 생존 모드 파이어파이트가 무료 겨울 업데이트로 들어온다는 소식이 나왔습니다.\n\nPC 하위 호환으로 즐길 수 있는 원조 엑스박스 게임도 25종이 됐습니다. 이번에 이름이 나온 〈스타워즈: 구 공화국의 기사단〉과 〈엘더스크롤 3: 모로윈드〉처럼 첫 엑스박스로 하던 게임을 이제 윈도우 11 PC에서 다시 켤 수 있습니다.\n\n#겜디핑 #엑스박스 #엑스박스25주년 #헤일로 #번지",
     "photos": [],
     "photo_pool": [],
     "shape": "단신",
@@ -785,153 +40,299 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "울펜슈타인 3,|드디어 만들고 있다",
-      "sub": "엑스박스 25주년 발표 · BJ와 그레이스 목소리 그대로"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "울펜슈타인 3,|드디어 만들고 있다",
-      "sub": "엑스박스 25주년 발표 · BJ와 그레이스 목소리 그대로"
+      "title": "엑스박스, 내일|스물다섯 살이 된다",
+      "sub": "헤일로와 같은 날 태어난 게임기"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · 머신게임즈 사진 해상도 미달(708x520) — 사진 새로 넣을 것",
-     "공식화·배우 복귀·샤르마 발언·머신게임즈 X 문구는 Xbox Wire·Inven Global 일치 · 공식 영상이 없어 숏폼은 뺌",
-     "표지 사진이 울펜슈타인 공식 이미지인지(엑스박스 25주년 로고만 있는 그림 아닌지) 볼 것",
+     "[검증] 사진 없음 — The National 이미지 400 오류·인벤 사진은 Cloudinary 401 로 실패, 표지가 빈 배경 · 'PC 하위 호환 25종'은 누적 수라 '새로 올랐다'를 고침",
+     "11/15 당일에 올리면 표지 '내일'을 '오늘'로 바꿀 것 · 국내 첫 엑스박스 출시일은 확인 못 해 뺌",
      "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
     ],
     "research": [
      {
-      "title": "Xbox Wire — Thanks for 25 Years, XBOX Players: Everything Announced Today (11/12)",
-      "link": "https://news.xbox.com/en-us/2026/11/12/xbox-25th-anniversary-news-recap/"
+      "title": "The National — Xbox at 25 (출시 2001년 11월 15일 · 헤일로)",
+      "link": "https://www.thenationalnews.com/arts-culture/2026/08/16/xbox-at-25-how-microsoft-muscled-its-way-into-console-gaming-and-changed-the-industry/"
      },
      {
-      "title": "Inven Global — Wolfenstein 3 is in production at MachineGames, Xbox confirms",
-      "link": "https://www.invenglobal.com/articles/28557/wolfenstein-3-is-in-production-at-machinegames-xbox-confirms"
+      "title": "Windows Central — Xbox and Halo 25th anniversary",
+      "link": "https://www.windowscentral.com/gaming/xbox/were-building-plans-for-the-25th-anniversary-of-halo-and-xbox-microsoft-confirms-in-a-new-interview-we-have-such-a-rich-heritage-you-have-to-celebrate-that"
      },
      {
-      "title": "GamesRadar+ — Wolfenstein 3 is in the works at MachineGames, Xbox CEO announces",
-      "link": "https://www.gamesradar.com/games/fps/wolfenstein-3-is-in-the-works-at-machinegames-xbox-ceo-announces-one-of-gamings-most-important-franchises/"
+      "title": "인벤 — 엑스박스 25주년 발표 (11/13)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323348"
+     },
+     {
+      "title": "The Tech Hacker — 원조 엑스박스 게임 25종 PC · 헤일로 파이어파이트",
+      "link": "https://thetechhacker.com/news/xbox-25th-anniversary-wolfenstein-3-original-xbox-games-pc/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/af88c387681d690cde4a.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/7bdac4bbaa12161a2927.jpg",
       "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/af88c387681d690cde4a.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/7bdac4bbaa12161a2927.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-13T19:09+09:00",
+     "at": "2026-11-14T11:08+09:00",
      "v": {
-      "A": "94c67a0e"
-     }
-    }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "〈울펜슈타인 II〉 뒤를 잇는 본편이 공식화 · BJ와 그레이스 목소리가 그대로 돌아온다는 사람 쪽 사실",
-    "at": "2026-11-13T19:08+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:slay-the-spire-2-the-fool",
-    "account": "Mega Crit",
-    "url": "https://www.gamemeca.com/view.php?gid=1783496",
-    "image": null,
-    "head": "활 쏘는 음악가, 슬레이 더 스파이어 2 신캐 '더 풀' 공개",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-13T19:08+09:00",
-   "key": "2d2b05b1",
-   "by": "claude",
-   "subjects": [
-    "슬레이 더 스파이어 2",
-    "메가 크릿"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "C",
-    "kind": "정보",
-    "angle": "〈슬레이 더 스파이어 2〉 앞서 해보기 뒤 첫 새 캐릭터 '더 풀' — 활을 든 음악가, 지도 없는 '블리츠'와 승천 10 전부 깨야 열리는 '드레드' 모드까지 베타로",
-    "why": "인디 덱빌딩 대표작의 '지금까지 가장 큰 업데이트' · 한국어 지원 게임 · 바로 해 볼 수 있는 베타 안내"
-   },
-   "added": "claude",
-   "added_at": "2026-11-13T19:08+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈슬레이 더 스파이어 2〉에 여섯 번째 캐릭터 '더 풀'이 들어왔습니다.\n\n3월 앞서 해보기를 시작한 뒤 처음 나온 새 캐릭터인데요, 메가 크릿은 활을 쓰는 우스꽝스러운 음악가라고 소개했습니다. 개발사가 지금까지 가장 큰 업데이트라고 부른 0.113.0 베타 패치에 담겼습니다.\n\n새 모드도 둘입니다. '블리츠'는 지도를 없애고 골드를 쓸모없게 만든 짧은 덱빌딩 모드이고, '드레드'는 더 풀을 포함한 모든 캐릭터로 승천 10에 도달해야 도전할 수 있는 모드입니다.\n\n스팀 라이브러리 → 속성 → 게임 버전 및 베타에서 public-beta 선택 · PC(스팀) 앞서 해보기 · 한국어 지원 · 2만 7,000원(11월 26일까지 20% 할인 2만 1,600원)\n\n#겜디핑 #슬레이더스파이어2 #메가크릿 #더풀 #덱빌딩\n\n[커버]\n소스: \n제목: 슬레이 더 스파이어 2,|여섯 번째 캐릭터 왔다\n부제: 활을 든 음악가 '더 풀' · 스팀 베타로 먼저\n출처:\n",
-    "caption": "〈슬레이 더 스파이어 2〉에 여섯 번째 캐릭터 '더 풀'이 들어왔습니다.\n\n3월 앞서 해보기를 시작한 뒤 처음 나온 새 캐릭터인데요, 메가 크릿은 활을 쓰는 우스꽝스러운 음악가라고 소개했습니다. 개발사가 지금까지 가장 큰 업데이트라고 부른 0.113.0 베타 패치에 담겼습니다.\n\n새 모드도 둘입니다. '블리츠'는 지도를 없애고 골드를 쓸모없게 만든 짧은 덱빌딩 모드이고, '드레드'는 더 풀을 포함한 모든 캐릭터로 승천 10에 도달해야 도전할 수 있는 모드입니다.\n\n스팀 라이브러리 → 속성 → 게임 버전 및 베타에서 public-beta 선택 · PC(스팀) 앞서 해보기 · 한국어 지원 · 2만 7,000원(11월 26일까지 20% 할인 2만 1,600원)\n\n#겜디핑 #슬레이더스파이어2 #메가크릿 #더풀 #덱빌딩",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "슬레이 더 스파이어 2,|여섯 번째 캐릭터 왔다",
-      "sub": "활을 든 음악가 '더 풀' · 스팀 베타로 먼저"
-     },
-     {
-      "key": "B",
-      "hook": "다른 안",
-      "title": "슬레이 더 스파이어 2,|여섯 번째 캐릭터 왔다",
-      "sub": "활을 든 음악가 '더 풀' · 스팀 베타로 먼저"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지가 빈 배경 — ImgBB 한도·Cloudinary 401 · Noisy Pixel 사진 520 오류 — 사진 새로 넣을 것",
-     "화살 관통·회수, 다른 캐릭터 타로 카드 만들기는 게임메카 한 곳이라 뺌 · 스팀 패치노트 본문은 직접 못 열고 제목·검색 요약 기준",
-     "공식 영상이 없어 숏폼은 뺌 (검색된 건 스트리머 방송뿐) · 표지 사진이 더 풀 캐릭터 그림인지 볼 것",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — 활 쏘는 음악가, 슬레이 더 스파이어 2 신캐 '더 풀' 공개 (11/13)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783496"
-     },
-     {
-      "title": "Steam — Slay the Spire 2 :: Beta Patch Notes - v0.113.0",
-      "link": "https://steamcommunity.com/games/2868840/announcements/detail/708914333639245838"
-     },
-     {
-      "title": "Noisy Pixel — Slay The Spire II's Biggest Beta Patch Adds The Fool, Blitz And Dread Modes (11/12)",
-      "link": "https://noisypixel.net/slay-the-spire-ii-biggest-beta-patch-the-fool-blitz-dread-modes/"
-     },
-     {
-      "title": "GamesRadar+ — Slay the Spire 2's \"biggest update yet\" adds the first new character and two new game modes",
-      "link": "https://www.gamesradar.com/games/roguelike/slay-the-spire-2s-biggest-update-yet-adds-the-roguelike-deckbuilders-first-new-character-and-two-new-game-modes/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c370fe358e9be2a89678.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c370fe358e9be2a89678.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-13T19:09+09:00",
-     "v": {
-      "A": "f1f58e72"
+      "A": "f31c4dff"
      }
     }
    },
    "pick": {
     "rank": 3,
-    "why": "인디 덱빌딩 대표작의 '지금까지 가장 큰 업데이트' · 한국어 지원 게임 · 바로 해 볼 수 있는 베타 안내",
-    "at": "2026-11-13T19:08+09:00"
+    "why": "엑스박스 25주년(11/15) 하루 전 — 헤일로와 같은 날 태어난 게임기, 기념일 당일까지 쓸 수 있다",
+    "at": "2026-11-14T11:08+09:00"
+   },
+   "corner_name": "그날의 앨범",
+   "corner_no": 1
+  },
+  {
+   "source": {
+    "id": "claude:wolfenstein-3",
+    "account": "LoL 이스포츠 공식",
+    "url": "https://lolesports.com/en-GB/news/lol-esports-2027-and-beyond",
+    "image": null,
+    "head": "LoL Esports 2027 and Beyond — 월즈 2027 나고야·수원·서울",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-14T11:08+09:00",
+   "key": "d3a5c0cd",
+   "by": "claude",
+   "subjects": [
+    "리그 오브 레전드"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "2027 롤드컵은 한·일 공동 개최 — 결승은 창동에 짓고 있는 서울 아레나, 일본은 첫 롤드컵",
+    "why": "국내 독자에게 바로 걸리는 장소 소식 · 라이엇 공식 발표와 인벤으로 확인 · 경기 결과가 아닌 개최 소식"
+   },
+   "added": "claude",
+   "added_at": "2026-11-14T11:08+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n2027 리그 오브 레전드 월드 챔피언십 결승이 서울 창동의 서울 아레나에서 열립니다.\n\n라이엇 게임즈가 2026 롤드컵 결승을 앞두고 발표한 내용인데요, 2027년 대회는 한국과 일본이 나눠 맡습니다. 스위스 스테이지는 일본 나고야, 8강과 4강은 수원컨벤션센터, 결승은 지금 짓고 있는 새 공연장 서울 아레나입니다. 롤드컵이 일본에서 열리는 것은 이번이 처음입니다.\n\nLoL 이스포츠 총괄 크리스 그릴리는 '2027년 월드 챔피언십의 가장 중요한 순간들을 다시 한국에서 선보이게 되어 기쁘다'고 말했습니다.\n\n#겜디핑 #롤드컵 #리그오브레전드 #서울아레나 #라이엇게임즈\n\n[커버]\n소스: \n제목: 2027 롤드컵 결승,|서울 아레나에서\n부제: 스위스 스테이지는 일본 나고야\n출처:\n",
+    "caption": "2027 리그 오브 레전드 월드 챔피언십 결승이 서울 창동의 서울 아레나에서 열립니다.\n\n라이엇 게임즈가 2026 롤드컵 결승을 앞두고 발표한 내용인데요, 2027년 대회는 한국과 일본이 나눠 맡습니다. 스위스 스테이지는 일본 나고야, 8강과 4강은 수원컨벤션센터, 결승은 지금 짓고 있는 새 공연장 서울 아레나입니다. 롤드컵이 일본에서 열리는 것은 이번이 처음입니다.\n\nLoL 이스포츠 총괄 크리스 그릴리는 '2027년 월드 챔피언십의 가장 중요한 순간들을 다시 한국에서 선보이게 되어 기쁘다'고 말했습니다.\n\n#겜디핑 #롤드컵 #리그오브레전드 #서울아레나 #라이엇게임즈",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "2027 롤드컵 결승,|서울 아레나에서",
+      "sub": "스위스 스테이지는 일본 나고야"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사진 없음 — 라이엇 이미지 업로드가 Cloudinary 401 로 실패, 표지가 빈 배경 (글 사실은 공식·인벤과 일치)",
+     "e스포츠 소식이라 범위 판단 필요 (경기 결과 아님 · 오늘 2026 결승 결과는 쓰지 않음) — 날짜·예매는 아직 없음",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "LoL Esports — 2027 and Beyond (공식)",
+      "link": "https://lolesports.com/en-GB/news/lol-esports-2027-and-beyond"
+     },
+     {
+      "title": "인벤 — 나고야에서 서울까지… 2027 롤드컵, 한·일 양국에서 열린다 (11/14)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323364"
+     },
+     {
+      "title": "Inven Global — Why Worlds 2027 Is Heading to Nagoya",
+      "link": "https://www.invenglobal.com/articles/28580/why-worlds-2027-is-heading-to-nagoya"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dc31425e2e0934696cd6.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dc31425e2e0934696cd6.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-14T11:08+09:00",
+     "v": {
+      "A": "bb9bde12"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "2027 롤드컵 결승 서울 아레나 — 국내 독자에게 바로 걸리는 소식 · 라이엇 공식 발표",
+    "at": "2026-11-14T11:08+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:sts2-the-fool",
+    "account": "쇼치쿠 게임즈 공식",
+    "url": "https://game.shochiku.co.jp/games/pikku-adventure/",
+    "image": null,
+    "head": "Pikku Adventure — 쇼치쿠 게임즈 퍼블리싱, 2027년 2분기 스팀",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-14T11:08+09:00",
+   "key": "86e439e9",
+   "by": "claude",
+   "subjects": [
+    "피쿠 어드벤처"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "S",
+    "kind": "정보",
+    "angle": "[실험] 인디 개발자 이야기 — 통역사 출신 1인 개발자가 만든, 자막·번역기 없이 외계어를 배워 가는 게임",
+    "why": "만든 사람의 이력과 게임 구조가 한 줄로 이어진다 · 한국어 지원 · 쇼치쿠 게임즈 공식 트레일러가 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-14T11:08+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n통역사 출신 개발자가 혼자 만든, 외계어를 배우는 게임이 나옵니다.\n\n〈피쿠 어드벤처〉의 주인공은 낯선 행성에 내린 우주비행사인데요, 자막도 번역기도 없이 주민들의 말과 몸짓, 주변 사물을 보고 단어 뜻을 짐작해 나만의 사전에 적어 갑니다. 풀어낸 단어로 문장을 만들어 말을 걸고, 언어를 얼마나 이해했는지가 세계의 운명을 좌우하는 선택으로 이어집니다.\n\n만든 사람은 이탈리아 밀라노의 1인 개발자 이반입니다. 프로그래밍과 3D 아트를 혼자 익혔고, 이 게임이 첫 작품입니다. 퍼블리싱은 일본 쇼치쿠 게임즈가 맡았습니다.\n\nPC(스팀) · 2027년 2분기 출시 목표 · 한국어 지원\n\n#겜디핑 #피쿠어드벤처 #인디게임 #쇼치쿠게임즈 #퍼즐게임\n\n[커버]\n소스: \n제목: 자막도 번역기도 없이|외계어를 배우는 게임\n부제: 통역사 출신 1인 개발자의 첫 작품\n출처:\n",
+    "caption": "통역사 출신 개발자가 혼자 만든, 외계어를 배우는 게임이 나옵니다.\n\n〈피쿠 어드벤처〉의 주인공은 낯선 행성에 내린 우주비행사인데요, 자막도 번역기도 없이 주민들의 말과 몸짓, 주변 사물을 보고 단어 뜻을 짐작해 나만의 사전에 적어 갑니다. 풀어낸 단어로 문장을 만들어 말을 걸고, 언어를 얼마나 이해했는지가 세계의 운명을 좌우하는 선택으로 이어집니다.\n\n만든 사람은 이탈리아 밀라노의 1인 개발자 이반입니다. 프로그래밍과 3D 아트를 혼자 익혔고, 이 게임이 첫 작품입니다. 퍼블리싱은 일본 쇼치쿠 게임즈가 맡았습니다.\n\nPC(스팀) · 2027년 2분기 출시 목표 · 한국어 지원\n\n#겜디핑 #피쿠어드벤처 #인디게임 #쇼치쿠게임즈 #퍼즐게임",
+    "photos": [],
+    "photo_pool": [],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "자막도 번역기도 없이|외계어를 배우는 게임",
+      "sub": "통역사 출신 1인 개발자의 첫 작품"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 사진 없음 — 쇼치쿠 KV 1024x498 해상도 미달·게임메카 사진은 Cloudinary 401 로 못 올림. 원본 KV_4k_logo_en.png(-1024x498 뺀 주소) 시도해 볼 것",
+     "[검증] '자막도 번역기도 없이'·'몸짓'은 덴게키 한 곳에만 있음(쇼치쿠·스팀·게임메카·인벤엔 없음) — 표지·캡션에 그대로 둘지 판단 · 숏폼 구간 0:32에 'Hello' 음성 한 마디 있음(자막 기준)",
+     "'통역사 출신'은 게임메카·인벤(같은 보도자료) 표현 — 덴게키는 '일본어 언어학 전공, 일본 기업과 7년 일함'으로만 적음",
+     "숏폼 구간 0:12-0:36 은 영상을 직접 못 보고 잡음 — 대사·로고 없이 탐험 장면인지 볼 것",
+     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+    ],
+    "research": [
+     {
+      "title": "쇼치쿠 게임즈 공식 게임 페이지 (출시 2027년 2분기 · 한국어 포함 5개 언어)",
+      "link": "https://game.shochiku.co.jp/games/pikku-adventure/"
+     },
+     {
+      "title": "게임메카 — 언어 해독 퍼즐 인디 '피쿠 어드벤처' 2027년 출시 예고 (11/13)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783456"
+     },
+     {
+      "title": "인벤 — 피쿠 어드벤처, 2027년 2분기 스팀 출시 목표 (11/13)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323351"
+     },
+     {
+      "title": "덴게키 온라인 — 개발자 Ivan 소개 (2026년 3월)",
+      "link": "https://dengekionline.com/article/202603/68519"
+     },
+     {
+      "title": "스팀 페이지",
+      "link": "https://store.steampowered.com/app/4428600/Pikku_Adventure/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ac7c08749857b19e4f3e.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3a187a5d093a32c86625.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ac7c08749857b19e4f3e.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-14T11:08+09:00",
+     "v": {
+      "A": "8bce1e23"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=nNobMuhT-UQ\n구간: 0:12-0:36\n곡: 외계어를 배우는 게임\n아티스트: 자막도 번역기도 없이\n피처링:\n후킹: \n출처: 松竹ゲームズ SHOCHIKU GAMES\n자막: 자동",
+    "caption": "외계어를 배워야 앞으로 나아가는 게임 〈피쿠 어드벤처〉의 공식 트레일러입니다.\n\n주민들의 말과 몸짓을 보고 단어 뜻을 짐작해 나만의 사전에 적어 가는 게임인데요, 만든 사람은 통역사 출신으로 알려진 밀라노의 1인 개발자 이반입니다. 프로그래밍과 3D 아트를 혼자 익혀 만든 첫 작품입니다.\n\nPC(스팀) · 2027년 2분기 출시 목표 · 한국어 지원\n\n#겜디핑 #피쿠어드벤처 #인디게임 #쇼치쿠게임즈 #퍼즐게임",
+    "hooks": {
+     "A": "자막도 번역기도 없이 / 외계어를 배우는 게임",
+     "B": "통역사 출신 개발자가 / 혼자 만든 외계어 게임",
+     "C": "외계어를 알아들어야 / 끝낼 수 있는 게임"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=nNobMuhT-UQ",
+     "credit": "松竹ゲームズ SHOCHIKU GAMES",
+     "range": [
+      12.0,
+      36.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 사진 없음 — 쇼치쿠 KV 1024x498 해상도 미달·게임메카 사진은 Cloudinary 401 로 못 올림. 원본 KV_4k_logo_en.png(-1024x498 뺀 주소) 시도해 볼 것",
+     "[검증] '자막도 번역기도 없이'·'몸짓'은 덴게키 한 곳에만 있음(쇼치쿠·스팀·게임메카·인벤엔 없음) — 표지·캡션에 그대로 둘지 판단 · 숏폼 구간 0:32에 'Hello' 음성 한 마디 있음(자막 기준)",
+     "'통역사 출신'은 게임메카·인벤(같은 보도자료) 표현 — 덴게키는 '일본어 언어학 전공, 일본 기업과 7년 일함'으로만 적음",
+     "숏폼 구간 0:12-0:36 은 영상을 직접 못 보고 잡음 — 대사·로고 없이 탐험 장면인지 볼 것"
+    ],
+    "research": [
+     {
+      "title": "쇼치쿠 게임즈 공식 게임 페이지 (출시 2027년 2분기 · 한국어 포함 5개 언어)",
+      "link": "https://game.shochiku.co.jp/games/pikku-adventure/"
+     },
+     {
+      "title": "게임메카 — 언어 해독 퍼즐 인디 '피쿠 어드벤처' 2027년 출시 예고 (11/13)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783456"
+     },
+     {
+      "title": "인벤 — 피쿠 어드벤처, 2027년 2분기 스팀 출시 목표 (11/13)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323351"
+     },
+     {
+      "title": "덴게키 온라인 — 개발자 Ivan 소개 (2026년 3월)",
+      "link": "https://dengekionline.com/article/202603/68519"
+     },
+     {
+      "title": "스팀 페이지",
+      "link": "https://store.steampowered.com/app/4428600/Pikku_Adventure/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/nNobMuhT-UQ/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/28df151c5937afb0cba7.jpg",
+     "key": "nNobMuhT-UQ@12.0"
+    },
+    "px": {
+     "vid": "nNobMuhT-UQ",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/bf9284aeaba005422026.mp4",
+     "off": 0.0,
+     "end": 54.0,
+     "full": 54.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-14T11:09+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "피쿠 어드벤처 — 통역사 출신 1인 개발자라는 사람 각도 + 공식 트레일러 숏폼 · 한국어 지원",
+    "at": "2026-11-14T11:08+09:00"
    },
    "corner_name": "소식"
   }
@@ -939,7 +340,7 @@
  "skipped": [],
  "corners": {
   "week": "11/09~11/15",
-  "days_left": 3,
+  "days_left": 2,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -997,7 +398,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 3,
+    "need_today": 4,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -1009,7 +410,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 2,
+    "need_today": 3,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -1081,7 +482,7 @@
     "weekly": 1,
     "done": 0,
     "left": 1,
-    "need_today": 1,
+    "need_today": 0,
     "day": 4,
     "next_no": 1,
     "drafts": 0,
@@ -1096,7 +497,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 1,
-    "drafts": 0,
+    "drafts": 1,
     "why": "오늘(이번 주) 발매 5·10·15·20·25·30주년 앨범을 다시 꺼낸다 — 그때 무슨 일이었고 지금 왜 다시 듣나"
    },
    {
@@ -1108,14 +509,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 9,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-13T19:09+09:00"
+  "at": "2026-11-14T11:09+09:00"
  },
  "queue": {
-  "next": "2026-11-13T19:11+09:00",
+  "next": "2026-11-14T11:11+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
