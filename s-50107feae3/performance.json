@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-14 15:04 KST",
+ "generated_at": "2026-11-14 19:04 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-13 22:04 KST"
+  "daily": "2026-11-14 15:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-14T14:53:13+09:00",
+  "fetched_at": "2026-11-14T19:04:45+09:00",
   "posts": [
    {
     "t": "2026-11-12T19:35+09:00",
@@ -2285,27 +2285,12 @@
     "t": "2026-10-25T11:59+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "양홍원(@yanghongwon)의 모텔 동행 의혹에 함께 있던 여성이 직"
-   },
-   {
-    "t": "2026-10-24T17:54+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "스톤스 스로우는 세상을 떠난 친구의 노래를 내려고 만든 레이블입니다."
-   },
-   {
-    "t": "2026-10-24T17:53+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "잔나비(@bandjannabi)가 데뷔 후 처음으로 발라드만 부르는 단독"
-   },
-   {
-    "t": "2026-10-24T15:25+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "에픽하이가 어제(23일) 데뷔 23주년을 맞았습니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 380,
+  "drafts": 388,
   "posted": 130,
   "posts": 155,
   "rate": 0.34,
@@ -2313,12 +2298,12 @@
   "own_mult": 1.03,
   "lanes": {
    "클립": {
-    "drafts": 55,
+    "drafts": 57,
     "posted": 7,
     "mult": 1.05
    },
    "정보": {
-    "drafts": 259,
+    "drafts": 264,
     "posted": 111,
     "mult": 1.0
    },
@@ -2328,29 +2313,24 @@
     "mult": 1.1
    },
    "재미": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 4,
     "mult": 1.43
    },
    "시리즈": {
-    "drafts": 34,
+    "drafts": 35,
     "posted": 6,
     "mult": 0.78
-   },
-   "기타": {
-    "drafts": 1,
-    "posted": 0,
-    "mult": null
    }
   },
   "corners": {
    "mal": {
-    "drafts": 52,
+    "drafts": 54,
     "posted": 7,
     "mult": 0.93
    },
    "news": {
-    "drafts": 192,
+    "drafts": 194,
     "posted": 85,
     "mult": 1.05
    },
@@ -2360,7 +2340,7 @@
     "mult": 0.87
    },
    "followup": {
-    "drafts": 23,
+    "drafts": 24,
     "posted": 6,
     "mult": 0.91
    },
@@ -2385,7 +2365,7 @@
     "mult": 1.36
    },
    "anniv": {
-    "drafts": 24,
+    "drafts": 25,
     "posted": 2,
     "mult": 2.0
    },
@@ -2400,7 +2380,7 @@
     "mult": 1.05
    },
    "intro": {
-    "drafts": 18,
+    "drafts": 20,
     "posted": 3,
     "mult": 0.78
    },
@@ -2524,7 +2504,7 @@
   ]
  },
  "follow": {
-  "at": "2026-11-14T15:04+09:00",
+  "at": "2026-11-14T19:04+09:00",
   "d30": {
    "days": 30,
    "follows": 14.0,
