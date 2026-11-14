@@ -84,13 +84,13 @@
      }
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "엑스박스 25주년(11/15) 하루 전 — 헤일로와 같은 날 태어난 게임기, 기념일 당일까지 쓸 수 있다",
-    "at": "2026-11-14T11:08+09:00"
-   },
    "corner_name": "그날의 앨범",
-   "corner_no": 1
+   "corner_no": 1,
+   "pick": {
+    "rank": 2,
+    "why": "엑스박스 25주년이 내일(11/15) — 오늘 밤이나 내일 아침이 아니면 못 쓴다",
+    "at": "2026-11-14T19:19+09:00"
+   }
   },
   {
    "source": {
@@ -168,11 +168,6 @@
       "A": "bb9bde12"
      }
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "2027 롤드컵 결승 서울 아레나 — 국내 독자에게 바로 걸리는 소식 · 라이엇 공식 발표",
-    "at": "2026-11-14T11:08+09:00"
    },
    "corner_name": "소식"
   },
@@ -329,10 +324,345 @@
      "at": "2026-11-14T11:09+09:00"
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:stranger-than-heaven-sugawara",
+    "account": "4Gamer",
+    "url": "https://www.4gamer.net/games/865/G086590/20261113041/",
+    "image": null,
+    "head": "STRANGER THAN HEAVEN 제2부 구레 편 스토리 트레일러 (11/13)",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-14T19:19+09:00",
+   "key": "184c49e6",
+   "by": "claude",
+   "subjects": [
+    "스트레인저 댄 헤븐"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "세상을 떠난 배우 스가와라 분타가 유족 동의로 게임 속 구레의 두목 이와키 겐조가 됐다 — 13일 '제2부 구레 편' 트레일러",
+    "why": "사람이 보이는 묘한 사실 · 세가 공식 발표로 유족 동의·도에이 자료 확인 · 공식 트레일러가 어제 나왔다 · 한국어 지원"
+   },
+   "added": "claude",
+   "added_at": "2026-11-14T19:19+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n세상을 떠난 일본 배우 스가와라 분타가 RGG 스튜디오의 신작 〈스트레인저 댄 헤븐〉에 나옵니다.\n\n13일 공개된 '제2부 구레 편' 스토리 트레일러에 그 얼굴이 나오는데요, 맡은 역은 1929년 히로시마 구레에서 권세를 휘두르는 큰 두목 이와키 겐조입니다. 세가는 유족의 정식 동의를 받아, 스가와라가 주연한 야쿠자 영화들을 만든 도에이가 건넨 옛 영상과 사진으로 CG 캐릭터를 빚었다고 밝혔습니다. 목소리는 배우 우카지 쓰요시가 맡았습니다.\n\n1915년부터 1965년까지 다섯 도시를 거치는 이야기에서, 야쿠자 영화의 얼굴이 한 시대를 맡는 셈입니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 2027년 1월 15일 출시 · 한국어 지원\n\n#겜디핑 #스트레인저댄헤븐 #스가와라분타 #RGG스튜디오 #세가\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/7eee9c003c3495fa058c.jpg\n제목: 세상을 떠난 배우가|게임 속 두목이 됐다\n부제: 〈스트레인저 댄 헤븐〉 구레 편\n출처: SEGA\n",
+    "caption": "세상을 떠난 일본 배우 스가와라 분타가 RGG 스튜디오의 신작 〈스트레인저 댄 헤븐〉에 나옵니다.\n\n13일 공개된 '제2부 구레 편' 스토리 트레일러에 그 얼굴이 나오는데요, 맡은 역은 1929년 히로시마 구레에서 권세를 휘두르는 큰 두목 이와키 겐조입니다. 세가는 유족의 정식 동의를 받아, 스가와라가 주연한 야쿠자 영화들을 만든 도에이가 건넨 옛 영상과 사진으로 CG 캐릭터를 빚었다고 밝혔습니다. 목소리는 배우 우카지 쓰요시가 맡았습니다.\n\n1915년부터 1965년까지 다섯 도시를 거치는 이야기에서, 야쿠자 영화의 얼굴이 한 시대를 맡는 셈입니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 2027년 1월 15일 출시 · 한국어 지원\n\n#겜디핑 #스트레인저댄헤븐 #스가와라분타 #RGG스튜디오 #세가",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/7eee9c003c3495fa058c.jpg",
+      "credit": "SEGA",
+      "from": "https://www.4gamer.net/games/865/G086590/20261113041/SS/005.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5981b29fc66d2af7bff8.jpg",
+      "credit": "SEGA",
+      "from": "https://www.4gamer.net/games/865/G086590/20261113041/SS/007.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/7eee9c003c3495fa058c.jpg",
+      "credit": "SEGA",
+      "from": "https://www.4gamer.net/games/865/G086590/20261113041/SS/005.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5981b29fc66d2af7bff8.jpg",
+      "credit": "SEGA",
+      "from": "https://www.4gamer.net/games/865/G086590/20261113041/SS/007.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "세상을 떠난 배우가|게임 속 두목이 됐다",
+      "sub": "〈스트레인저 댄 헤븐〉 구레 편"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 1:00-1:25 는 자막이 없어 이와키 겐조(스가와라 분타 얼굴)가 그 구간에 나오는지 확인하지 못함 — 영상으로 볼 것 · 표지 사진은 선명하고 글자가 얼굴과 겹치지 않음",
+     "표지 인물은 4Gamer 갤러리 5번(이와키 소개 문단 뒤) — 이와키 겐조가 맞는지 볼 것 · 숏폼 구간 1:00-1:25 는 영상을 못 보고 잡음, 유튜브 403 으로 구간 내려받기 실패 시 다시 받을 것",
+     "스팀 페이지는 출시일을 1월 14일로 적고 있다는 보도가 있음 — 한국 시간 해제 시각 확인 전까지 세가 발표 1월 15일로 둠"
+    ],
+    "research": [
+     {
+      "title": "세가 공식 보도자료 — 'Legendary Actor Bunta Sugawara Lives On' (유족 동의·도에이 자료·우카지 쓰요시 목소리)",
+      "link": "https://sega.co.jp/en/release/260507_1.html"
+     },
+     {
+      "title": "4Gamer — 제2부 구레 편 스토리 트레일러 (이와키 겐조 = 스가와라 분타 · 목소리 우카지 쓰요시 · 2027년 1월 15일)",
+      "link": "https://www.4gamer.net/games/865/G086590/20261113041/"
+     },
+     {
+      "title": "Sakura Index — 스가와라 분타 CG 출연 · 유족 동의 · 도에이 자료",
+      "link": "https://www.sakuraindex.jp/press-releases/stranger-than-heaven-release-set-for-this-coming-winter/"
+     },
+     {
+      "title": "RGG 스튜디오 공식 유튜브 — 제2부 구레 편 스토리 트레일러",
+      "link": "https://www.youtube.com/watch?v=z9LY9G_RX1Q"
+     },
+     {
+      "title": "게임메카 — 2027년 1월 15일 출시 · 한국어 지원",
+      "link": "https://www.gamemeca.com/en/view.php?gid=1776126"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b3344278e8768ed8854f.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0595cd3fe1a5588c5b20.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b3344278e8768ed8854f.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-14T19:20+09:00",
+     "v": {
+      "A": "be0a7b05"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=z9LY9G_RX1Q\n구간: 1:00-1:25\n곡: 게임 속 두목이 됐다\n아티스트: 세상을 떠난 배우가\n피처링:\n후킹: \n출처: RGGスタジオ 公式\n자막: 자동",
+    "caption": "RGG 스튜디오 신작 〈스트레인저 댄 헤븐〉의 '제2부 구레 편' 스토리 트레일러입니다.\n\n1929년 구레의 큰 두목 이와키 겐조는 세상을 떠난 배우 스가와라 분타의 얼굴로 만들어졌는데요, 세가는 유족의 정식 동의를 받아 도에이가 건넨 옛 영상과 사진으로 CG 캐릭터를 빚었다고 밝혔습니다. 목소리는 배우 우카지 쓰요시입니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 2027년 1월 15일 출시 · 한국어 지원\n\n#겜디핑 #스트레인저댄헤븐 #스가와라분타 #RGG스튜디오 #세가",
+    "hooks": {
+     "A": "세상을 떠난 배우가 / 게임 속 두목이 됐다",
+     "B": "유족 동의로 되살린 / 야쿠자 영화의 얼굴",
+     "C": "1929년 구레를 쥔 / 두목 이와키 겐조"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=z9LY9G_RX1Q",
+     "credit": "RGGスタジオ 公式",
+     "range": [
+      60.0,
+      85.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 1:00-1:25 는 자막이 없어 이와키 겐조(스가와라 분타 얼굴)가 그 구간에 나오는지 확인하지 못함 — 영상으로 볼 것 · 표지 사진은 선명하고 글자가 얼굴과 겹치지 않음",
+     "표지 인물은 4Gamer 갤러리 5번(이와키 소개 문단 뒤) — 이와키 겐조가 맞는지 볼 것 · 숏폼 구간 1:00-1:25 는 영상을 못 보고 잡음, 유튜브 403 으로 구간 내려받기 실패 시 다시 받을 것",
+     "스팀 페이지는 출시일을 1월 14일로 적고 있다는 보도가 있음 — 한국 시간 해제 시각 확인 전까지 세가 발표 1월 15일로 둠"
+    ],
+    "research": [
+     {
+      "title": "세가 공식 보도자료 — 'Legendary Actor Bunta Sugawara Lives On' (유족 동의·도에이 자료·우카지 쓰요시 목소리)",
+      "link": "https://sega.co.jp/en/release/260507_1.html"
+     },
+     {
+      "title": "4Gamer — 제2부 구레 편 스토리 트레일러 (이와키 겐조 = 스가와라 분타 · 목소리 우카지 쓰요시 · 2027년 1월 15일)",
+      "link": "https://www.4gamer.net/games/865/G086590/20261113041/"
+     },
+     {
+      "title": "Sakura Index — 스가와라 분타 CG 출연 · 유족 동의 · 도에이 자료",
+      "link": "https://www.sakuraindex.jp/press-releases/stranger-than-heaven-release-set-for-this-coming-winter/"
+     },
+     {
+      "title": "RGG 스튜디오 공식 유튜브 — 제2부 구레 편 스토리 트레일러",
+      "link": "https://www.youtube.com/watch?v=z9LY9G_RX1Q"
+     },
+     {
+      "title": "게임메카 — 2027년 1월 15일 출시 · 한국어 지원",
+      "link": "https://www.gamemeca.com/en/view.php?gid=1776126"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/z9LY9G_RX1Q/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/451a2a39e533fe3b3273.jpg",
+     "key": "z9LY9G_RX1Q@60.0"
+    },
+    "px": {
+     "vid": "z9LY9G_RX1Q",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/59e8bf79bd51846286d0.mp4",
+     "off": 15.0,
+     "end": 130.0,
+     "full": 203.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-14T19:22+09:00"
+    }
+   },
    "pick": {
     "rank": 1,
-    "why": "피쿠 어드벤처 — 통역사 출신 1인 개발자라는 사람 각도 + 공식 트레일러 숏폼 · 한국어 지원",
-    "at": "2026-11-14T11:08+09:00"
+    "why": "세상을 떠난 배우가 유족 동의로 게임 속 인물이 됐다는 묘한 사실 · RGG 공식 트레일러 숏폼 · 한국어 지원",
+    "at": "2026-11-14T19:19+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:bombanana-console",
+    "account": "루리웹 (TARK 보도자료)",
+    "url": "https://bbs.ruliweb.com/news/read/231915",
+    "image": null,
+    "head": "'봄바나나!' 한국어판 콘솔 버전, 오늘(13일) 출시",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-14T19:19+09:00",
+   "key": "bc122bf0",
+   "by": "claude",
+   "subjects": [
+    "봄바나나!"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "보지도 듣지도 말하지도 못하는 원숭이 셋이 폭탄을 푸는 협동 게임 — 스팀 200만 장 뒤 13일 콘솔 출시",
+    "why": "11/8 에 '콘솔판 때 다룬다'고 미뤄 둔 건 · 한 줄로 이해되는 게임 구조 · 한국어·PS 스토어 가격 확인"
+   },
+   "added": "claude",
+   "added_at": "2026-11-14T19:19+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n보지 못하는 원숭이, 듣지 못하는 원숭이, 말하지 못하는 원숭이가 함께 폭탄을 푸는 〈봄바나나!〉가 콘솔로 나왔습니다.\n\n세 사람이 온라인으로 모여 제한 시간 안에 폭탄을 해체하는 협동 게임인데요, 셋이 가진 정보가 저마다 모자라서 서로 아는 것을 어떻게든 건네야 합니다. 9월 2일 스팀으로 먼저 나와 열흘 만에 100만 장을 넘겼고, 퍼블리셔 발표 기준 스팀 판매는 200만 장을 넘었습니다.\n\n이제 거실 게임기로도 셋이 모여 폭탄 앞에 설 수 있습니다.\n\nPS5 · 엑스박스 시리즈 X|S · 엑스박스 원 · PC(스팀) · 콘솔 11월 13일 출시 · PS 스토어 12,800원 · 한국어 지원\n\n#겜디핑 #봄바나나 #협동게임 #인디게임 #타르크\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4f920f545b70261d20d5.jpg\n제목: 봄바나나, 이제|플스·엑박에서도\n부제: 스팀 200만 장 협동 게임의 콘솔판\n출처: 4Gamer\n",
+    "caption": "보지 못하는 원숭이, 듣지 못하는 원숭이, 말하지 못하는 원숭이가 함께 폭탄을 푸는 〈봄바나나!〉가 콘솔로 나왔습니다.\n\n세 사람이 온라인으로 모여 제한 시간 안에 폭탄을 해체하는 협동 게임인데요, 셋이 가진 정보가 저마다 모자라서 서로 아는 것을 어떻게든 건네야 합니다. 9월 2일 스팀으로 먼저 나와 열흘 만에 100만 장을 넘겼고, 퍼블리셔 발표 기준 스팀 판매는 200만 장을 넘었습니다.\n\n이제 거실 게임기로도 셋이 모여 폭탄 앞에 설 수 있습니다.\n\nPS5 · 엑스박스 시리즈 X|S · 엑스박스 원 · PC(스팀) · 콘솔 11월 13일 출시 · PS 스토어 12,800원 · 한국어 지원\n\n#겜디핑 #봄바나나 #협동게임 #인디게임 #타르크",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4f920f545b70261d20d5.jpg",
+      "credit": "4Gamer",
+      "from": "https://www.4gamer.net/games/058/G105820/20261113024/SS/002.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4f920f545b70261d20d5.jpg",
+      "credit": "4Gamer",
+      "from": "https://www.4gamer.net/games/058/G105820/20261113024/SS/002.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "봄바나나, 이제|플스·엑박에서도",
+      "sub": "스팀 200만 장 협동 게임의 콘솔판"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 원본(nSBb2MztE3k)은 2026-09-02 에 올라온 스팀 출시 영상이다(설명 'available now on Steam') — 캡션은 '콘솔로 나왔습니다'라서 콘솔 출시 영상으로 바꿀지 정할 것 · 자막이 없어 0:05-0:30 장면은 확인하지 못함",
+     "숏폼 원본 채널 '💣 BOMBANANA! 🍌 OUT NOW' 가 개발사 공식 채널인지 눈으로 볼 것 · 구간 0:05-0:30 은 영상을 못 보고 잡음",
+     "200만 장은 퍼블리셔 보도자료 기준 (루리웹·4Gamer 같은 자료)"
+    ],
+    "research": [
+     {
+      "title": "루리웹 — 봄바나나! 한국어판 콘솔 버전 13일 출시 (스팀 200만 장 · 10일 100만 장)",
+      "link": "https://bbs.ruliweb.com/news/read/231915"
+     },
+     {
+      "title": "4Gamer — BOMBANANA! 콘솔판 11/13 출시 (PS5·엑스박스 · 스팀 200만 장)",
+      "link": "https://www.4gamer.net/games/058/G105820/20261113024/"
+     },
+     {
+      "title": "PS 스토어 한국 — 12,800원 · 11/13 · 한국어",
+      "link": "https://store.playstation.com/ko-kr/concept/10020779"
+     },
+     {
+      "title": "Insider Gaming — 10일 만에 100만 장",
+      "link": "https://insider-gaming.com/bombanana-surpassed-1-million-sales-in-10-days/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ff79dd205e404feca5f2.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2f531ad8f2c23094b57c.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ff79dd205e404feca5f2.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-14T19:20+09:00",
+     "v": {
+      "A": "6a714822"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=nSBb2MztE3k\n구간: 0:05-0:30\n곡: 못하는 원숭이 셋\n아티스트: 보지도 듣지도 말하지도\n피처링:\n후킹: \n출처: BOMBANANA! OUT NOW\n자막: 자동",
+    "caption": "보지 못하는 원숭이, 듣지 못하는 원숭이, 말하지 못하는 원숭이가 함께 폭탄을 푸는 〈봄바나나!〉가 콘솔로 나왔습니다.\n\n9월 스팀으로 먼저 나와 열흘 만에 100만 장을 넘긴 3인 협동 게임인데요, 퍼블리셔 발표 기준 스팀 판매는 200만 장을 넘었습니다.\n\nPS5 · 엑스박스 시리즈 X|S · 엑스박스 원 · 11월 13일 출시 · PS 스토어 12,800원 · 한국어 지원\n\n#겜디핑 #봄바나나 #협동게임 #인디게임 #타르크",
+    "hooks": {
+     "A": "보지도 듣지도 말하지도 / 못하는 원숭이 셋",
+     "B": "셋이 힘을 합쳐야 / 폭탄을 끌 수 있다",
+     "C": "스팀 200만 장 협동 게임 / 이제 콘솔로"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=nSBb2MztE3k",
+     "credit": "BOMBANANA! OUT NOW",
+     "range": [
+      5.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 원본(nSBb2MztE3k)은 2026-09-02 에 올라온 스팀 출시 영상이다(설명 'available now on Steam') — 캡션은 '콘솔로 나왔습니다'라서 콘솔 출시 영상으로 바꿀지 정할 것 · 자막이 없어 0:05-0:30 장면은 확인하지 못함",
+     "숏폼 원본 채널 '💣 BOMBANANA! 🍌 OUT NOW' 가 개발사 공식 채널인지 눈으로 볼 것 · 구간 0:05-0:30 은 영상을 못 보고 잡음",
+     "200만 장은 퍼블리셔 보도자료 기준 (루리웹·4Gamer 같은 자료)"
+    ],
+    "research": [
+     {
+      "title": "루리웹 — 봄바나나! 한국어판 콘솔 버전 13일 출시 (스팀 200만 장 · 10일 100만 장)",
+      "link": "https://bbs.ruliweb.com/news/read/231915"
+     },
+     {
+      "title": "4Gamer — BOMBANANA! 콘솔판 11/13 출시 (PS5·엑스박스 · 스팀 200만 장)",
+      "link": "https://www.4gamer.net/games/058/G105820/20261113024/"
+     },
+     {
+      "title": "PS 스토어 한국 — 12,800원 · 11/13 · 한국어",
+      "link": "https://store.playstation.com/ko-kr/concept/10020779"
+     },
+     {
+      "title": "Insider Gaming — 10일 만에 100만 장",
+      "link": "https://insider-gaming.com/bombanana-surpassed-1-million-sales-in-10-days/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/nSBb2MztE3k/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/689038cb4d59a039258e.jpg",
+     "key": "nSBb2MztE3k@5.0"
+    },
+    "px": {
+     "vid": "nSBb2MztE3k",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/64281678e13d4bedf88c.mp4",
+     "off": 0.0,
+     "end": 56.0,
+     "full": 56.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-14T19:22+09:00"
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "보지도 듣지도 말하지도 못하는 원숭이 셋 — 한 줄로 이해되는 게임 · 스팀 200만 장 뒤 콘솔 출시 · 한국어·국내 가격 확인",
+    "at": "2026-11-14T19:19+09:00"
    },
    "corner_name": "소식"
   }
@@ -509,14 +839,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-14T11:09+09:00"
+  "at": "2026-11-14T19:22+09:00"
  },
  "queue": {
-  "next": "2026-11-14T11:11+09:00",
+  "next": "2026-11-14T19:24+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
