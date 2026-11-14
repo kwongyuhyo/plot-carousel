@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-13 22:04 KST",
+ "generated_at": "2026-11-14 15:04 KST",
  "weeks": [
   {
    "week": "2026-W38",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-13 19:04 KST"
+  "daily": "2026-11-13 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-13T22:04:30+09:00",
+  "fetched_at": "2026-11-14T14:53:13+09:00",
   "posts": [
    {
     "t": "2026-11-12T19:35+09:00",
@@ -2300,72 +2300,52 @@
     "t": "2026-10-24T15:25+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "에픽하이가 어제(23일) 데뷔 23주년을 맞았습니다."
-   },
-   {
-    "t": "2026-10-23T23:53+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "비프리가 11월 6일 힙플쇼 Vol.65 무대에 오릅니다."
-   },
-   {
-    "t": "2026-10-23T23:41+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "일본 래퍼 챤미나가 운전하던 차가 지난 19일 도쿄 시부야구 도미가야의 "
-   },
-   {
-    "t": "2026-10-23T23:26+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "A2O LITE(@a2o.lite) 아이찡의 부모를 둘러싼 임금 체불 논"
-   },
-   {
-    "t": "2026-10-23T23:17+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "양홍원(@yanghongwon)의 소속사 AP알케미가 외도 의혹을 제기한"
-   },
-   {
-    "t": "2026-10-23T22:44+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "결혼 닷새 만에 양홍원(@yanghongwon)을 둘러싼 사생활 의혹이 "
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 382,
-  "posted": 131,
-  "posts": 157,
+  "drafts": 380,
+  "posted": 130,
+  "posts": 155,
   "rate": 0.34,
-  "adopted_mult": 0.98,
-  "own_mult": 1.04,
+  "adopted_mult": 0.99,
+  "own_mult": 1.03,
   "lanes": {
    "클립": {
-    "drafts": 56,
+    "drafts": 55,
     "posted": 7,
     "mult": 1.05
-   },
-   "재미": {
-    "drafts": 29,
-    "posted": 4,
-    "mult": 1.43
-   },
-   "요청": {
-    "drafts": 4,
-    "posted": 3,
-    "mult": 0.95
    },
    "정보": {
     "drafts": 259,
     "posted": 111,
     "mult": 1.0
    },
+   "요청": {
+    "drafts": 3,
+    "posted": 2,
+    "mult": 1.1
+   },
+   "재미": {
+    "drafts": 28,
+    "posted": 4,
+    "mult": 1.43
+   },
    "시리즈": {
     "drafts": 34,
     "posted": 6,
     "mult": 0.78
+   },
+   "기타": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
    }
   },
   "corners": {
    "mal": {
-    "drafts": 53,
+    "drafts": 52,
     "posted": 7,
     "mult": 0.93
    },
@@ -2374,15 +2354,15 @@
     "posted": 85,
     "mult": 1.05
    },
-   "followup": {
-    "drafts": 24,
-    "posted": 7,
-    "mult": 0.93
-   },
    "tteolgi": {
     "drafts": 14,
     "posted": 3,
     "mult": 0.87
+   },
+   "followup": {
+    "drafts": 23,
+    "posted": 6,
+    "mult": 0.91
    },
    "song": {
     "drafts": 14,
@@ -2544,12 +2524,12 @@
   ]
  },
  "follow": {
-  "at": "2026-11-13T22:04+09:00",
+  "at": "2026-11-14T15:04+09:00",
   "d30": {
    "days": 30,
-   "follows": 14.4,
-   "unfollows": 14.5,
-   "net": -0.1
+   "follows": 14.0,
+   "unfollows": 14.8,
+   "net": -0.7
   },
   "weeks": [
    {
@@ -2603,15 +2583,15 @@
    },
    {
     "week": "2026-W46",
-    "follows": 32,
-    "unfollows": 35,
-    "net": -3,
-    "days": 3
+    "follows": 39,
+    "unfollows": 53,
+    "net": -14,
+    "days": 4
    }
   ],
   "feed": {
-   "n": 189,
-   "reach": 3665866,
+   "n": 188,
+   "reach": 3666448,
    "follows": 490,
    "per1k": 0.13
   },
@@ -2627,15 +2607,15 @@
    {
     "kind": "기타",
     "n": 37,
-    "reach": 287626,
+    "reach": 287730,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
     "kind": "갈래 모름",
-    "n": 39,
-    "reach": 1990766,
+    "n": 38,
+    "reach": 1989868,
     "follows": 247,
     "per1k": 0.12,
     "visits1k": 3.1
@@ -2643,7 +2623,7 @@
    {
     "kind": "발매·신보",
     "n": 41,
-    "reach": 105398,
+    "reach": 106288,
     "follows": 12,
     "per1k": 0.11,
     "visits1k": 2.8
@@ -2651,7 +2631,7 @@
    {
     "kind": "갈등·반응",
     "n": 22,
-    "reach": 334852,
+    "reach": 335249,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.5
@@ -2659,7 +2639,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 32,
-    "reach": 140274,
+    "reach": 140341,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
@@ -2722,16 +2702,16 @@
    }
   ],
   "reels": {
-   "reels_per1k": 0.1,
+   "reels_per1k": 0.11,
    "feed_per1k": 0.03,
-   "base": 15.8,
+   "base": 15.5,
    "days": 59
   },
   "spikes": [
    {
     "date": "2026-10-20",
     "unfollows": 41,
-    "usual": 14.5,
+    "usual": 14.8,
     "posted": [
      "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@r…",
      "인디고뮤직(@indigomusic_official)이라는 이름…"
