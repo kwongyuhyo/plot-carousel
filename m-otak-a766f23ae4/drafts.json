@@ -158,12 +158,12 @@
      "at": "2026-11-14T10:51+09:00"
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
-    "why": "어젯밤(11/13 23:30) 공개된 공식 CM 총집편 · 한국에서도 큰 〈약사의 혼잣말〉과 요루시카가 한 장면에서 만난다 · 레이블 공식 영상이라 숏폼이 된다",
-    "at": "2026-11-14T10:50+09:00"
-   },
-   "corner_name": "소식"
+    "rank": 2,
+    "why": "오전 초안 · 11/13 공개 공식 CM 총집편 · 〈약사의 혼잣말〉은 아니메!아니메! 가을 애니 추천 2위로 화제가 이어진다",
+    "at": "2026-11-14T18:45+09:00"
+   }
   },
   {
    "source": {
@@ -248,10 +248,223 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:hana-mma2026",
+    "account": "오리콘 뉴스",
+    "url": "https://www.oricon.co.jp/news/2492856/",
+    "image": null,
+    "head": "【MMA2026】HANA、韓国授賞式に初登場 緊張した面持ちでカメラの前へ",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-14T18:45+09:00",
+   "key": "198644ef",
+   "by": "claude",
+   "subjects": [
+    "HANA",
+    "MMA2026",
+    "찬미나"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "〈No No Girls〉 출신 일본 걸그룹 HANA가 MMA2026 첫날 레드카펫에 섰다 — 한국 시상식은 처음",
+    "why": "11/14 18:06 오리콘 뉴스(한국 시상식 첫 등장) · 코리아중앙데일리(첫날 출연진에 HANA) · 한국 시상식이라 한국 연결이 바로 선다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-14T18:45+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n일본 걸그룹 HANA가 14일 서울 고척스카이돔에서 열린 〈MMA2026〉(멜론뮤직어워드) 레드카펫에 섰습니다.\n\n한국 시상식에 선 건 이번이 처음인데요, 찬미나가 프로듀서로 나선 BMSG 오디션 〈No No Girls〉에서 지난해 1월 뽑힌 7인조입니다. CHIKA·NAOKO·JISOO·YURI·MOMOKA·KOHARU·MAHINA 일곱 명이 다 함께 카메라 앞에 섰습니다.\n\n오디션 무대에서 출발한 일곱 명이 1년 10개월 만에 한국 시상식 무대까지 온 셈입니다.\n\n올해 MMA는 처음으로 14~15일 이틀에 걸쳐 열리고, HANA는 첫날 출연진입니다.\n\n#암낫오타쿠 #HANA #MMA2026 #멜론뮤직어워드 #찬미나 #NoNoGirls\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/28649a5a98fcbd9550d4.jpg\n제목: HANA,|한국 시상식에 처음 섰다\n부제: MMA2026 첫날 레드카펫 · 〈No No Girls〉에서 태어난 7인조\n출처: 오리콘 뉴스\n",
+    "caption": "일본 걸그룹 HANA가 14일 서울 고척스카이돔에서 열린 〈MMA2026〉(멜론뮤직어워드) 레드카펫에 섰습니다.\n\n한국 시상식에 선 건 이번이 처음인데요, 찬미나가 프로듀서로 나선 BMSG 오디션 〈No No Girls〉에서 지난해 1월 뽑힌 7인조입니다. CHIKA·NAOKO·JISOO·YURI·MOMOKA·KOHARU·MAHINA 일곱 명이 다 함께 카메라 앞에 섰습니다.\n\n오디션 무대에서 출발한 일곱 명이 1년 10개월 만에 한국 시상식 무대까지 온 셈입니다.\n\n올해 MMA는 처음으로 14~15일 이틀에 걸쳐 열리고, HANA는 첫날 출연진입니다.\n\n#암낫오타쿠 #HANA #MMA2026 #멜론뮤직어워드 #찬미나 #NoNoGirls",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/28649a5a98fcbd9550d4.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2493000/2492856/20261114_175230_p_o_80905621.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6f2d3eaabd5d4af537ff.jpg",
+      "credit": "스타뉴스",
+      "from": "https://image.starnewskorea.com/21/2026/11/2026111418084225758_1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/28649a5a98fcbd9550d4.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2493000/2492856/20261114_175230_p_o_80905621.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6f2d3eaabd5d4af537ff.jpg",
+      "credit": "스타뉴스",
+      "from": "https://image.starnewskorea.com/21/2026/11/2026111418084225758_1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "HANA,|한국 시상식에 처음 섰다",
+      "sub": "MMA2026 첫날 레드카펫 · 〈No No Girls〉에서 태어난 7인조"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "본 무대(공연 곡)와 수상 여부는 아직 보도 전이라 쓰지 않음 — 오늘 밤 무대 영상이 공식 채널에 오르면 후속 숏폼으로",
+     "'ROSE' 정식 데뷔(2025년 4월)는 THE FIRST TIMES 요약으로만 확인 — 걸리면 그 문장을 뺄 것"
+    ],
+    "research": [
+     {
+      "title": "오리콘 뉴스 — 11/14 서울 고척스카이돔 MMA2026(14·15일) 레드카펫, 한국 시상식 첫 등장, 포토 세션, 멤버 7명 사진 (11/14 18:06)",
+      "link": "https://www.oricon.co.jp/news/2492856/"
+     },
+     {
+      "title": "Korea JoongAng Daily — MMA 사상 첫 이틀 개최, 첫날(토) 출연진에 Japanese girl group HANA (11/13)",
+      "link": "https://www.koreajoongangdaily.com/entertainment/mma-goes-global-doubles-length-with-nct-ateez-hana/12971013"
+     },
+     {
+      "title": "리얼사운드 — BMSG×찬미나 오디션 〈No No Girls〉 최종 심사(2025/1/11)에서 그룹명 HANA·멤버 7명 결정",
+      "link": "https://realsound.jp/2025/01/post-1897264.html"
+     },
+     {
+      "title": "Kstyle — 【PHOTO】HANA「MMA 2026」レッドカーペットに登場",
+      "link": "https://kstyle.com/article.ksn?articleNo=2286392"
+     },
+     {
+      "title": "스타뉴스 — Hana, \"Wildflower-like Charm\" [★Photo] (11/14)",
+      "link": "https://www.starnewskorea.com/en/music/2026/11/14/2026111418084225758"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/23109d3547e9e9c734d9.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d9fd87c4a44a04f0073b.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/23109d3547e9e9c734d9.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-14T18:45+09:00",
+     "v": {
+      "A": "7d6963ff"
+     }
+    }
+   },
    "pick": {
-    "rank": 2,
-    "why": "11/13 발표 · 〈너의 이름은.〉 밴드의 새 곡 · 노다 요지로 본인 코멘트가 있어 사람이 보인다",
-    "at": "2026-11-14T10:50+09:00"
+    "rank": 1,
+    "why": "오늘(11/14) 서울 고척 MMA2026 첫날 · 일본 걸그룹의 한국 시상식 첫 등장이라 한국 연결이 가장 세다 · 레드카펫 사진이 표지에 잘 들어감",
+    "at": "2026-11-14T18:45+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:billboard-japan-hot-manga-2026",
+    "account": "빌보드 재팬",
+    "url": "https://www.billboard-japan.com/d_news/detail/167181",
+    "image": null,
+    "head": "【ビルボード 2026年 年間Hot Manga】尾田栄一郎『ONE PIECE 113巻』が首位、同シリーズの3巻がトップ3を独占（コメントあり）",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-14T18:45+09:00",
+   "key": "d2114917",
+   "by": "claude",
+   "subjects": [
+    "원피스",
+    "오다 에이이치로",
+    "헌터×헌터"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "빌보드 재팬 2026 연간 'Hot Manga' — 1~3위가 전부 〈원피스〉, 〈원피스〉·〈킹덤〉이 톱10 여섯 자리",
+    "why": "11/14 18:15 빌보드 재팬 연간 차트 발표(차트 발행처 원문) · 점프 편집부 코멘트 · 한국에서도 다 아는 작품들"
+   },
+   "added": "claude",
+   "added_at": "2026-11-14T18:45+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n빌보드 재팬 2026년 연간 만화 차트 'Hot Manga' 1~3위를 〈원피스〉(ONE PIECE)가 모두 가져갔습니다.\n\n1위 113권, 2위 115권, 3위 114권인데요, 113권은 52주 가운데 45주를 차트에 머물러 이 차트의 모든 작품 중 가장 오래 버텼습니다. 4위는 약 1년 10개월 만에 나온 〈헌터×헌터〉 39권, 이어서 〈스파이 패밀리〉 17권과 〈장송의 프리렌〉 15권입니다. 〈킹덤〉은 78~80권이 7~9위를 채웠고, 10위는 〈주술회전≡〉(呪術廻戦≡) 1권입니다.\n\n〈원피스〉와 〈킹덤〉 두 시리즈가 톱10 가운데 여섯 자리를 차지한 셈입니다. 주간 소년 점프 편집부는 내년이 〈원피스〉 연재 30주년이라고 밝혔습니다.\n\n집계 기간은 2025년 10월 27일부터 2026년 10월 25일까지입니다.\n\n#암낫오타쿠 #원피스 #오다에이이치로 #헌터헌터 #킹덤 #빌보드재팬\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c5fde16736ce9e6b1f94.jpg\n제목: 올해 일본 만화 1~3위,|전부 〈원피스〉\n부제: 빌보드 재팬 2026 연간 'Hot Manga' · 4위는 〈헌터×헌터〉 39권\n출처: 전격 온라인\n",
+    "caption": "빌보드 재팬 2026년 연간 만화 차트 'Hot Manga' 1~3위를 〈원피스〉(ONE PIECE)가 모두 가져갔습니다.\n\n1위 113권, 2위 115권, 3위 114권인데요, 113권은 52주 가운데 45주를 차트에 머물러 이 차트의 모든 작품 중 가장 오래 버텼습니다. 4위는 약 1년 10개월 만에 나온 〈헌터×헌터〉 39권, 이어서 〈스파이 패밀리〉 17권과 〈장송의 프리렌〉 15권입니다. 〈킹덤〉은 78~80권이 7~9위를 채웠고, 10위는 〈주술회전≡〉(呪術廻戦≡) 1권입니다.\n\n〈원피스〉와 〈킹덤〉 두 시리즈가 톱10 가운데 여섯 자리를 차지한 셈입니다. 주간 소년 점프 편집부는 내년이 〈원피스〉 연재 30주년이라고 밝혔습니다.\n\n집계 기간은 2025년 10월 27일부터 2026년 10월 25일까지입니다.\n\n#암낫오타쿠 #원피스 #오다에이이치로 #헌터헌터 #킹덤 #빌보드재팬",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c5fde16736ce9e6b1f94.jpg",
+      "credit": "전격 온라인",
+      "from": "https://cimg.kgl-systems.io/camion/files/55605/ogp_JPED.jpg?x=1280"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2ac3f00415a23967c7b6.jpg",
+      "credit": "전격 온라인",
+      "from": "https://cimg.kgl-systems.io/camion/files/66859/ogp_FzfN.jpg?x=1280"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c5fde16736ce9e6b1f94.jpg",
+      "credit": "전격 온라인",
+      "from": "https://cimg.kgl-systems.io/camion/files/55605/ogp_JPED.jpg?x=1280"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2ac3f00415a23967c7b6.jpg",
+      "credit": "전격 온라인",
+      "from": "https://cimg.kgl-systems.io/camion/files/66859/ogp_FzfN.jpg?x=1280"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "올해 일본 만화 1~3위,|전부 〈원피스〉",
+      "sub": "빌보드 재팬 2026 연간 'Hot Manga' · 4위는 〈헌터×헌터〉 39권"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "차트 발행처(빌보드 재팬) 원문 한 곳 기준 — 다른 매체 보도는 아직 못 찾음",
+     "〈주술회전≡〉 한국 정식 제목 표기 확인 필요 · 표지 사진은 전격 온라인 기사의 〈원피스〉 단행본 표지(루피·엘바프 거인들) — 몇 권 표지인지 눈으로 확인, 113권 표지면 더 좋음"
+    ],
+    "research": [
+     {
+      "title": "빌보드 재팬 — 연간 Hot Manga 1~10위(원피스 113·115·114, 헌터×헌터 39, 스파이 패밀리 17, 프리렌 15, 킹덤 78·79·80, 주술회전≡ 1), 113권 52주 중 45주 차트인, 헌터×헌터 약 1년 10개월 만의 신간, 점프 편집부 '내년 연재 30주년', 집계 2025/10/27~2026/10/25 (11/14 18:15)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167181/2"
+     },
+     {
+      "title": "빌보드 재팬 — 연간 Hot Shot Books 1위 『呪術廻戦≡ 1巻』 (11/14 18:15)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167273"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a4f8811833c0878f312d.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/811c01de9462aa5f97b3.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a4f8811833c0878f312d.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-14T18:45+09:00",
+     "v": {
+      "A": "e53397ef"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "오늘 18:15 발표 연간 차트 · 〈원피스〉·〈헌터×헌터〉·〈프리렌〉 다 한국에서 아는 이름이라 덕후 아닌 독자도 읽힌다",
+    "at": "2026-11-14T18:45+09:00"
    },
    "corner_name": "소식"
   }
@@ -428,14 +641,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-14T10:51+09:00"
+  "at": "2026-11-14T18:45+09:00"
  },
  "queue": {
-  "next": "2026-11-14T10:53+09:00",
+  "next": "2026-11-14T18:47+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
