@@ -1,108 +1,114 @@
 {
  "schema": 1,
- "date": "2026-11-14",
- "generated_at": "2026-11-14 10:44 KST",
+ "date": "2026-11-15",
+ "generated_at": "2026-11-15 10:44 KST",
  "items": [
   {
    "source": {
-    "id": "claude:kusuriya-yorushika-cm",
-    "account": "음악 나탈리",
-    "url": "https://news.yahoo.co.jp/articles/f997a5d489542e2d6fc26e58691230fab5c3f82c",
+    "id": "claude:hana-mma2026-award",
+    "account": "오리콘 뉴스",
+    "url": "https://www.oricon.co.jp/news/2492919/full/",
     "image": null,
-    "head": "ヨルシカの正しい発音とは？「薬屋のひとりごと」猫猫と壬氏が会話するCM総集編公開",
+    "head": "【MMA2026】HANA、韓国音楽授賞式で「J-POP Favorite artist」受賞 圧倒的歌唱力にどよめきも",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-14T10:50+09:00",
-   "key": "13143032",
+   "made_at": "2026-11-15T10:47+09:00",
+   "key": "f09e0bf1",
    "by": "claude",
    "subjects": [
-    "요루시카",
-    "약사의 혼잣말",
-    "유우키 아오이"
+    "HANA",
+    "MMA2026",
+    "멜론뮤직어워드"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "〈약사의 혼잣말〉 마오마오와 진시가 3기 오프닝인 요루시카 신곡을 두고 이야기하는 특별 CM 세 편 — 총집편 공개, '요루시카 올바른 발음' 반응",
-    "why": "11/13 음악 나탈리·THE FIRST TIMES·더 텔레비전 보도 · 유니버설 뮤직 재팬 공식 유튜브 총집편(89초)"
+    "angle": "HANA가 MMA2026 첫날 'J-팝 페이보릿 아티스트'를 받았다 — 한국 시상식 첫 무대에서 수상까지, 지수가 한국어·일본어로 소감",
+    "why": "11/14 19:28 오리콘 뉴스(수상·세 곡 무대·지수 한국어·일본어 소감) · 11/15 아주경제·스타데일리뉴스 첫날 수상자 명단 'J-팝 페이보릿 아티스트 : 하나' · 멜론 공식 유튜브 무대 영상 · 어제 초안(레드카펫)의 후속"
    },
    "added": "claude",
-   "added_at": "2026-11-14T10:50+09:00",
+   "added_at": "2026-11-15T10:47+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈약사의 혼잣말〉(薬屋のひとりごと)의 마오마오와 진시가 요루시카 노래를 두고 이야기를 나눴습니다.\n\n3기 1쿨 오프닝 '雲を抜け風下へ私だけ'(구름을 뚫고 바람 아래로 나만)를 두 사람이 화제로 삼는 특별 CM인데요, 10월 30일 53화부터 11월 13일 55화까지 니혼TV 방송 중에 3주 연속, 세 편이 나갔습니다. 목소리는 본편 그대로 유우키 아오이와 오오츠카 타케오입니다.\n\n방송 뒤 일본 SNS 에는 '요루시카의 올바른 발음을 알았다'는 반응이 이어졌습니다. 작품의 오프닝 곡을 작품 속 두 사람이 직접 이야기하는 셈입니다.\n\n세 편을 이어 붙인 총집편 '마오마오와 진시의 음악 담화'(猫猫と壬氏の音楽談話)는 13일 밤 유니버설 뮤직 재팬 유튜브에 올라왔습니다.\n\n#암낫오타쿠 #요루시카 #약사의혼잣말 #유우키아오이 #오오츠카타케오\n\n[커버]\n소스: \n제목: 마오마오와 진시가|요루시카 노래를 말하다\n부제: 〈약사의 혼잣말〉 3기 오프닝 특별 CM 세 편\n출처:\n",
-    "caption": "〈약사의 혼잣말〉(薬屋のひとりごと)의 마오마오와 진시가 요루시카 노래를 두고 이야기를 나눴습니다.\n\n3기 1쿨 오프닝 '雲を抜け風下へ私だけ'(구름을 뚫고 바람 아래로 나만)를 두 사람이 화제로 삼는 특별 CM인데요, 10월 30일 53화부터 11월 13일 55화까지 니혼TV 방송 중에 3주 연속, 세 편이 나갔습니다. 목소리는 본편 그대로 유우키 아오이와 오오츠카 타케오입니다.\n\n방송 뒤 일본 SNS 에는 '요루시카의 올바른 발음을 알았다'는 반응이 이어졌습니다. 작품의 오프닝 곡을 작품 속 두 사람이 직접 이야기하는 셈입니다.\n\n세 편을 이어 붙인 총집편 '마오마오와 진시의 음악 담화'(猫猫と壬氏の音楽談話)는 13일 밤 유니버설 뮤직 재팬 유튜브에 올라왔습니다.\n\n#암낫오타쿠 #요루시카 #약사의혼잣말 #유우키아오이 #오오츠카타케오",
-    "photos": [],
-    "photo_pool": [],
+    "form": "[카테고리]\nNews\n\n[캡션]\n일본 걸그룹 HANA가 〈MMA2026〉(멜론뮤직어워드) 첫날 'J-팝 페이보릿 아티스트' 상을 받았습니다.\n\n14일 서울 고척스카이돔, 한국 시상식 무대에 처음 선 날인데요, 'Blue Jeans'와 'NON STOP', 'ROSE' 세 곡을 이어 불렀습니다.\n\n수상 소감은 멤버 지수(JISOO)가 한국어와 일본어로 전했습니다.\n\n올해 MMA는 처음으로 이틀에 걸쳐 열리고, 둘째 날인 15일에는 '올해의 아티스트' 등 남은 대상 부문 시상이 이어집니다.\n\n#암낫오타쿠 #HANA #MMA2026 #멜론뮤직어워드 #NoNoGirls\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8068f9839fd3499026e3.jpg\n제목: HANA,|한국 시상식서 첫 트로피\n부제: MMA2026 첫날 'J-팝 페이보릿 아티스트' · 지수가 한국어·일본어로 소감\n출처: 오리콘 뉴스\n",
+    "caption": "일본 걸그룹 HANA가 〈MMA2026〉(멜론뮤직어워드) 첫날 'J-팝 페이보릿 아티스트' 상을 받았습니다.\n\n14일 서울 고척스카이돔, 한국 시상식 무대에 처음 선 날인데요, 'Blue Jeans'와 'NON STOP', 'ROSE' 세 곡을 이어 불렀습니다.\n\n수상 소감은 멤버 지수(JISOO)가 한국어와 일본어로 전했습니다.\n\n올해 MMA는 처음으로 이틀에 걸쳐 열리고, 둘째 날인 15일에는 '올해의 아티스트' 등 남은 대상 부문 시상이 이어집니다.\n\n#암낫오타쿠 #HANA #MMA2026 #멜론뮤직어워드 #NoNoGirls",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8068f9839fd3499026e3.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2493000/2492919/20261114_202512_p_o_92307860.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8068f9839fd3499026e3.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2493000/2492919/20261114_202512_p_o_92307860.jpg"
+     }
+    ],
     "shape": "단신",
     "covers": [
      {
       "key": "A",
       "hook": "Claude",
-      "title": "마오마오와 진시가|요루시카 노래를 말하다",
-      "sub": "〈약사의 혼잣말〉 3기 오프닝 특별 CM 세 편"
+      "title": "HANA,|한국 시상식서 첫 트로피",
+      "sub": "MMA2026 첫날 'J-팝 페이보릿 아티스트' · 지수가 한국어·일본어로 소감"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 표지 사진 없음 그대로 — 발행 전 CM 장면이나 3기 키 비주얼을 넣을 것 · 영상 자막 없음, 0:00-0:28 구간 내용은 눈·귀로 확인 필요",
-     "클립 위험: 낮음 — UNIVERSAL MUSIC JAPAN (공식 총집편 89초 중 0:00-0:28, 자막이 없어 대사 내용·발음 장면 위치는 눈·귀로 확인해 구간을 옮길 것)",
-     "[미리보기] 표지에 사진이 안 들어감 — 이미지 호스트 실패(ImgBB 한도·Cloudinary 401, 나탈리 750x422 해상도 미달). CM 총집편 장면이나 3기 키 비주얼을 넣을 것",
-     "CM 속 구체적인 대사·'올바른 발음'이 무엇인지는 기사에 없어 쓰지 않음 — 영상 보고 한 마디 덧붙일 만하면 추가 · 3기 한국 공개 여부는 확인 못 해 뺌",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
+     "[검증] 오리콘 본문이 깨져 '치카 솔로로 시작'·'ROSE 떼창'·'지수 출신지' 문장은 확인되지 않아 캡션·후킹 C에서 뺐음 · 무대 곡은 오리콘 리드 'Blue Jeans·Drop·ROSE' vs 멜론 영상 제목 'Blue Jeans·NON STOP·ROSE'로 엇갈림 — 멜론 기준 유지, 영상으로 확인할 것",
+     "클립 위험: 높음 — 멜론 Melon (시상식 주최 플랫폼 공식 무대 영상 426초 중 0:00-0:28 · 오리콘 기준 CHIKA 솔로로 시작 — 실제 첫 소절 위치를 눈·귀로 보고 옮길 것)",
+     "무대 곡은 멜론 공식 영상 제목('Blue Jeans + NON STOP + ROSE') 기준 — 오리콘 본문은 깨져 'Drop'으로 읽혔음 · 지수 소감의 구체적 내용은 기사에 없어 쓰지 않음"
     ],
     "research": [
      {
-      "title": "음악 나탈리 — 3기 1쿨 OP '雲を抜け風下へ私だけ', 10/30~11/13 3주 연속 콜라보 CM, 총집편 「猫猫と壬氏の音楽談話」, SNS 반응 'ヨルシカの正しい発音知りました' (11/13 23:30)",
-      "link": "https://news.yahoo.co.jp/articles/f997a5d489542e2d6fc26e58691230fab5c3f82c"
+      "title": "오리콘 뉴스 — 'J-POP Favorite artist' 수상, JISOO가 한국어·일본어로 감사 인사, 멤버 JISOO 출신지에서 시상식 무대는 처음, CHIKA 솔로로 막을 엶, 'ROSE'에서 객석이 함께 노래 (11/14 19:28)",
+      "link": "https://www.oricon.co.jp/news/2492919/full/"
      },
      {
-      "title": "THE FIRST TIMES — 니혼TV 방송 중 3종 CM, 53화(10/30)~55화(11/13), 총집편 유튜브 공개 (11/13)",
-      "link": "https://www.thefirsttimes.jp/news/0000918507/"
+      "title": "아주경제 — [종합] MMA2026 첫날 부문별 수상자 'J-팝 페이보릿 아티스트 : 하나' (11/15 10:03)",
+      "link": "https://www.ajunews.com/view/20261115095542547"
      },
      {
-      "title": "더 텔레비전 — 총집편 11/13 23:30 유튜브 공개, 3주 연속 3종 (11/13)",
-      "link": "https://thetv.jp/news/detail/1457362/"
+      "title": "스타데일리뉴스 — MMA2026 첫째날 성료, 특별상 'J-팝 페이보릿 아티스트 : HANA' (11/15 03:42)",
+      "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=602201"
      },
      {
-      "title": "더 텔레비전 — 悠木碧 '猫猫'·大塚剛央 '壬氏' 특별 CM 3주 연속 방송",
-      "link": "https://thetv.jp/news/detail/1453300/"
-     },
-     {
-      "title": "『薬屋のひとりごと』×ヨルシカ コラボCM「猫猫と任氏の音楽談話」 — UNIVERSAL MUSIC JAPAN (89초)",
-      "link": "https://www.youtube.com/watch?v=I3ouOEI72qk"
+      "title": "[#MMA2026] HANA - Blue Jeans + NON STOP + ROSE (4K) — 멜론 Melon 공식 (426초)",
+      "link": "https://www.youtube.com/watch?v=dS0C0DUPz1o"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/35b675b98c97570ef928.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7b6d6fd8082d677fd8c9.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3a4051995568b7ea4129.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f6d8894e04a57751eab3.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/35b675b98c97570ef928.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3a4051995568b7ea4129.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-14T10:50+09:00",
+     "at": "2026-11-15T10:47+09:00",
      "v": {
-      "A": "1f4c1e92"
+      "A": "079b2570"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: 소식\nURL: https://www.youtube.com/watch?v=I3ouOEI72qk\n구간: 0:00-0:28\n곡: 오프닝 곡을 이야기한다\n아티스트: 마오마오와 진시가\n피처링:\n후킹: \n출처: UNIVERSAL MUSIC JAPAN\n자막: 자동",
-    "caption": "〈약사의 혼잣말〉(薬屋のひとりごと) 마오마오와 진시가 3기 오프닝인 요루시카의 '雲を抜け風下へ私だけ'를 두고 이야기하는 특별 CM입니다.\n\n10월 30일부터 11월 13일까지 니혼TV 방송 중에 3주 연속 나간 세 편을 이어 붙인 총집편인데요, 방송 뒤 일본 SNS 에는 '요루시카의 올바른 발음을 알았다'는 반응이 이어졌습니다. 목소리는 유우키 아오이와 오오츠카 타케오입니다.\n\n영상은 유니버설 뮤직 재팬 공식 채널입니다.\n\n#암낫오타쿠 #요루시카 #약사의혼잣말 #유우키아오이 #오오츠카타케오",
+    "form": "[영상]\n카테고리: 소식\nURL: https://www.youtube.com/watch?v=dS0C0DUPz1o\n구간: 0:00-0:28\n곡: 한국 시상식에 선 날\n아티스트: 일본 걸그룹 HANA가\n피처링:\n후킹: \n출처: 멜론 Melon\n자막: 자동",
+    "caption": "일본 걸그룹 HANA가 14일 〈MMA2026〉(멜론뮤직어워드) 첫날 무대에 섰습니다.\n\n한국 시상식 무대는 이번이 처음인데요, 'Blue Jeans'와 'NON STOP', 'ROSE'를 이어 불렀습니다. 이날 HANA는 'J-팝 페이보릿 아티스트' 상을 받았고, 소감은 멤버 지수(JISOO)가 한국어와 일본어로 전했습니다.\n\n영상은 멜론 공식 채널입니다.\n\n#암낫오타쿠 #HANA #MMA2026 #멜론뮤직어워드 #NoNoGirls",
     "hooks": {
-     "A": "마오마오와 진시가 / 오프닝 곡을 이야기한다",
-     "B": "약사의 혼잣말 두 사람이 / 요루시카를 말한다",
-     "C": "'요루시카 발음' 화제 된 / 약사의 혼잣말 CM"
+     "A": "일본 걸그룹 HANA가 / 한국 시상식에 선 날",
+     "B": "MMA 첫 무대에서 / 상까지 받은 HANA",
+     "C": "HANA가 세 곡을 / 이어 부른 MMA 무대"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=I3ouOEI72qk",
-     "credit": "UNIVERSAL MUSIC JAPAN",
+     "url": "https://www.youtube.com/watch?v=dS0C0DUPz1o",
+     "credit": "멜론 Melon",
      "range": [
       0.0,
       28.0
@@ -114,311 +120,95 @@
     },
     "issues": [],
     "confirm": [
-     "[검증] 표지 사진 없음 그대로 — 발행 전 CM 장면이나 3기 키 비주얼을 넣을 것 · 영상 자막 없음, 0:00-0:28 구간 내용은 눈·귀로 확인 필요",
-     "클립 위험: 낮음 — UNIVERSAL MUSIC JAPAN (공식 총집편 89초 중 0:00-0:28, 자막이 없어 대사 내용·발음 장면 위치는 눈·귀로 확인해 구간을 옮길 것)",
-     "[미리보기] 표지에 사진이 안 들어감 — 이미지 호스트 실패(ImgBB 한도·Cloudinary 401, 나탈리 750x422 해상도 미달). CM 총집편 장면이나 3기 키 비주얼을 넣을 것",
-     "CM 속 구체적인 대사·'올바른 발음'이 무엇인지는 기사에 없어 쓰지 않음 — 영상 보고 한 마디 덧붙일 만하면 추가 · 3기 한국 공개 여부는 확인 못 해 뺌"
+     "[검증] 오리콘 본문이 깨져 '치카 솔로로 시작'·'ROSE 떼창'·'지수 출신지' 문장은 확인되지 않아 캡션·후킹 C에서 뺐음 · 무대 곡은 오리콘 리드 'Blue Jeans·Drop·ROSE' vs 멜론 영상 제목 'Blue Jeans·NON STOP·ROSE'로 엇갈림 — 멜론 기준 유지, 영상으로 확인할 것",
+     "클립 위험: 높음 — 멜론 Melon (시상식 주최 플랫폼 공식 무대 영상 426초 중 0:00-0:28 · 오리콘 기준 CHIKA 솔로로 시작 — 실제 첫 소절 위치를 눈·귀로 보고 옮길 것)",
+     "무대 곡은 멜론 공식 영상 제목('Blue Jeans + NON STOP + ROSE') 기준 — 오리콘 본문은 깨져 'Drop'으로 읽혔음 · 지수 소감의 구체적 내용은 기사에 없어 쓰지 않음"
     ],
     "research": [
      {
-      "title": "음악 나탈리 — 3기 1쿨 OP '雲を抜け風下へ私だけ', 10/30~11/13 3주 연속 콜라보 CM, 총집편 「猫猫と壬氏の音楽談話」, SNS 반응 'ヨルシカの正しい発音知りました' (11/13 23:30)",
-      "link": "https://news.yahoo.co.jp/articles/f997a5d489542e2d6fc26e58691230fab5c3f82c"
+      "title": "오리콘 뉴스 — 'J-POP Favorite artist' 수상, JISOO가 한국어·일본어로 감사 인사, 멤버 JISOO 출신지에서 시상식 무대는 처음, CHIKA 솔로로 막을 엶, 'ROSE'에서 객석이 함께 노래 (11/14 19:28)",
+      "link": "https://www.oricon.co.jp/news/2492919/full/"
      },
      {
-      "title": "THE FIRST TIMES — 니혼TV 방송 중 3종 CM, 53화(10/30)~55화(11/13), 총집편 유튜브 공개 (11/13)",
-      "link": "https://www.thefirsttimes.jp/news/0000918507/"
+      "title": "아주경제 — [종합] MMA2026 첫날 부문별 수상자 'J-팝 페이보릿 아티스트 : 하나' (11/15 10:03)",
+      "link": "https://www.ajunews.com/view/20261115095542547"
      },
      {
-      "title": "더 텔레비전 — 총집편 11/13 23:30 유튜브 공개, 3주 연속 3종 (11/13)",
-      "link": "https://thetv.jp/news/detail/1457362/"
+      "title": "스타데일리뉴스 — MMA2026 첫째날 성료, 특별상 'J-팝 페이보릿 아티스트 : HANA' (11/15 03:42)",
+      "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=602201"
      },
      {
-      "title": "더 텔레비전 — 悠木碧 '猫猫'·大塚剛央 '壬氏' 특별 CM 3주 연속 방송",
-      "link": "https://thetv.jp/news/detail/1453300/"
-     },
-     {
-      "title": "『薬屋のひとりごと』×ヨルシカ コラボCM「猫猫と任氏の音楽談話」 — UNIVERSAL MUSIC JAPAN (89초)",
-      "link": "https://www.youtube.com/watch?v=I3ouOEI72qk"
+      "title": "[#MMA2026] HANA - Blue Jeans + NON STOP + ROSE (4K) — 멜론 Melon 공식 (426초)",
+      "link": "https://www.youtube.com/watch?v=dS0C0DUPz1o"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/I3ouOEI72qk/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/dS0C0DUPz1o/maxresdefault.jpg",
     "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/5b81059bd59e7410f488.jpg",
-     "key": "I3ouOEI72qk@0.0"
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6811a21ecc30aa23262b.jpg",
+     "key": "dS0C0DUPz1o@0.0"
     },
     "px": {
-     "vid": "I3ouOEI72qk",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a64e5023cd0bd0377c8d.mp4",
+     "vid": "dS0C0DUPz1o",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ca54361e068dc09b6867.mp4",
      "off": 0.0,
      "end": 73.0,
-     "full": 89.0
+     "full": 426.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-14T10:51+09:00"
-    }
-   },
-   "corner_name": "소식",
-   "pick": {
-    "rank": 2,
-    "why": "오전 초안 · 11/13 공개 공식 CM 총집편 · 〈약사의 혼잣말〉은 아니메!아니메! 가을 애니 추천 2위로 화제가 이어진다",
-    "at": "2026-11-14T18:45+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:radwimps-4eva-song",
-    "account": "음악 나탈리",
-    "url": "https://news.yahoo.co.jp/articles/89c3a0b57c3cc4c61d3b4dff135128ddcc66b446",
-    "image": null,
-    "head": "RADWIMPS「全国高校サッカー選手権大会」に応援歌「4Eva song」を提供",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-14T10:50+09:00",
-   "key": "0eff44f4",
-   "by": "claude",
-   "subjects": [
-    "RADWIMPS",
-    "노다 요지로"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "RADWIMPS가 제105회 전국 고교 축구 선수권 응원가 '4Eva song'을 새로 썼다 — 노다 요지로 '고등학생이던 그때의 나를 일으켜 세울 곡'",
-    "why": "11/13 20:00 음악 나탈리·빌보드 재팬 동시 보도 · 노다 본인 코멘트 · 개막 12/28 은 사커킹으로 확인"
-   },
-   "added": "claude",
-   "added_at": "2026-11-14T10:50+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\nRADWIMPS가 일본 전국 고교 축구 선수권 대회 응원가 '4Eva song'을 새로 썼습니다.\n\n〈너의 이름은.〉 노래로 한국에서도 익숙한 밴드인데요, 12월 28일 막을 올리는 제105회 대회를 위한 곡입니다. 노다 요지로는 자신도 고등학생 시절 스포츠와 음악에 빠져 지냈다며 그때의 마음을 겹쳐 곡을 썼다고 밝혔습니다.\n\n그가 맡은 몫이라고 적은 것은 '그때의 내 마음을 일으켜 세우고, 등을 밀어 줄 수 있는 곡'이었습니다.\n\n곡의 일부는 대회 공식 유튜브·SNS 영상과 니혼TV 중계에서 먼저 흘러나옵니다.\n\n#암낫오타쿠 #RADWIMPS #래드윔프스 #노다요지로 #고교축구\n\n[커버]\n소스: \n제목: RADWIMPS,|고교 축구 응원가 썼다\n부제: 새 곡 '4Eva song' · 노다 요지로가 고교 시절을 겹쳐 썼다\n출처:\n",
-    "caption": "RADWIMPS가 일본 전국 고교 축구 선수권 대회 응원가 '4Eva song'을 새로 썼습니다.\n\n〈너의 이름은.〉 노래로 한국에서도 익숙한 밴드인데요, 12월 28일 막을 올리는 제105회 대회를 위한 곡입니다. 노다 요지로는 자신도 고등학생 시절 스포츠와 음악에 빠져 지냈다며 그때의 마음을 겹쳐 곡을 썼다고 밝혔습니다.\n\n그가 맡은 몫이라고 적은 것은 '그때의 내 마음을 일으켜 세우고, 등을 밀어 줄 수 있는 곡'이었습니다.\n\n곡의 일부는 대회 공식 유튜브·SNS 영상과 니혼TV 중계에서 먼저 흘러나옵니다.\n\n#암낫오타쿠 #RADWIMPS #래드윔프스 #노다요지로 #고교축구",
-    "photos": [],
-    "photo_pool": [],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "RADWIMPS,|고교 축구 응원가 썼다",
-      "sub": "새 곡 '4Eva song' · 노다 요지로가 고교 시절을 겹쳐 썼다"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진 없음 그대로 — 발행 전 RADWIMPS 공식 사진을 넣을 것 (소제목의 인용 꼴 '고등학생이던 나에게'는 원문에 없는 말이라 인용 아닌 서술로 고침)",
-     "[미리보기] 표지에 사진이 안 들어감 — 이미지 호스트 실패(ImgBB 한도·Cloudinary 401, 빌보드 재팬 356x200 해상도 미달). RADWIMPS 공식 아티스트 사진을 넣을 것",
-     "음원 발매일은 어느 기사에도 없어 쓰지 않음 · 결승 날짜(1/11)는 나탈리 한 곳뿐이라 뺌 · 공식 영상이 아직 없어 숏폼 비움",
-     "쓸 만한 사진을 못 찾았습니다 — 스튜디오에서 넣어 주세요"
-    ],
-    "research": [
-     {
-      "title": "음악 나탈리 — '4Eva song' 응원가, 12/28 개막, 대회 공식 유튜브·SNS·니혼TV 중계에서 일부 공개, 노다 코멘트 「せめて、かつて同じように高校生活を送り、スポーツと音楽にのめり込んだあの時の自分の心を奮い立たせられるような、背中を押せるような曲を作ることが役目なのではと思いました。」 (11/13 20:00)",
-      "link": "https://news.yahoo.co.jp/articles/89c3a0b57c3cc4c61d3b4dff135128ddcc66b446"
-     },
-     {
-      "title": "빌보드 재팬 — 새로 쓴 '4Eva song'(フォーエバーソング) 제105회 대회 응원가 결정, 노다가 고교 시절 감정을 겹쳐 씀 (11/13 20:00)",
-      "link": "https://www.billboard-japan.com/d_news/detail/167446"
-     },
-     {
-      "title": "오리콘 뉴스 — 같은 내용 (11/13 20:00)",
-      "link": "https://www.oricon.co.jp/news/2492780/"
-     },
-     {
-      "title": "사커킹 — 제105회 대회 2026년 12월 28일 개막",
-      "link": "https://www.soccer-king.jp/news/japan/highschool/fixed/2222590.html"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/95e8a155ab20106a63c6.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7b6d6fd8082d677fd8c9.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/95e8a155ab20106a63c6.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-14T10:50+09:00",
-     "v": {
-      "A": "2fbe1019"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:hana-mma2026",
-    "account": "오리콘 뉴스",
-    "url": "https://www.oricon.co.jp/news/2492856/",
-    "image": null,
-    "head": "【MMA2026】HANA、韓国授賞式に初登場 緊張した面持ちでカメラの前へ",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-14T18:45+09:00",
-   "key": "198644ef",
-   "by": "claude",
-   "subjects": [
-    "HANA",
-    "MMA2026",
-    "찬미나"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈No No Girls〉 출신 일본 걸그룹 HANA가 MMA2026 첫날 레드카펫에 섰다 — 한국 시상식은 처음",
-    "why": "11/14 18:06 오리콘 뉴스(한국 시상식 첫 등장) · 코리아중앙데일리(첫날 출연진에 HANA) · 한국 시상식이라 한국 연결이 바로 선다"
-   },
-   "added": "claude",
-   "added_at": "2026-11-14T18:45+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n일본 걸그룹 HANA가 14일 서울 고척스카이돔에서 열린 〈MMA2026〉(멜론뮤직어워드) 레드카펫에 섰습니다.\n\n한국 시상식에 선 건 이번이 처음인데요, 찬미나가 프로듀서로 나선 BMSG 오디션 〈No No Girls〉에서 지난해 1월 뽑힌 7인조입니다. CHIKA·NAOKO·JISOO·YURI·MOMOKA·KOHARU·MAHINA 일곱 명이 다 함께 카메라 앞에 섰습니다.\n\n오디션 무대에서 출발한 일곱 명이 1년 10개월 만에 한국 시상식 무대까지 온 셈입니다.\n\n올해 MMA는 처음으로 14~15일 이틀에 걸쳐 열리고, HANA는 첫날 출연진입니다.\n\n#암낫오타쿠 #HANA #MMA2026 #멜론뮤직어워드 #찬미나 #NoNoGirls\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/28649a5a98fcbd9550d4.jpg\n제목: HANA,|한국 시상식에 처음 섰다\n부제: MMA2026 첫날 레드카펫 · 〈No No Girls〉에서 태어난 7인조\n출처: 오리콘 뉴스\n",
-    "caption": "일본 걸그룹 HANA가 14일 서울 고척스카이돔에서 열린 〈MMA2026〉(멜론뮤직어워드) 레드카펫에 섰습니다.\n\n한국 시상식에 선 건 이번이 처음인데요, 찬미나가 프로듀서로 나선 BMSG 오디션 〈No No Girls〉에서 지난해 1월 뽑힌 7인조입니다. CHIKA·NAOKO·JISOO·YURI·MOMOKA·KOHARU·MAHINA 일곱 명이 다 함께 카메라 앞에 섰습니다.\n\n오디션 무대에서 출발한 일곱 명이 1년 10개월 만에 한국 시상식 무대까지 온 셈입니다.\n\n올해 MMA는 처음으로 14~15일 이틀에 걸쳐 열리고, HANA는 첫날 출연진입니다.\n\n#암낫오타쿠 #HANA #MMA2026 #멜론뮤직어워드 #찬미나 #NoNoGirls",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/28649a5a98fcbd9550d4.jpg",
-      "credit": "오리콘 뉴스",
-      "from": "https://contents.oricon.co.jp/upimg/news/2493000/2492856/20261114_175230_p_o_80905621.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6f2d3eaabd5d4af537ff.jpg",
-      "credit": "스타뉴스",
-      "from": "https://image.starnewskorea.com/21/2026/11/2026111418084225758_1.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/28649a5a98fcbd9550d4.jpg",
-      "credit": "오리콘 뉴스",
-      "from": "https://contents.oricon.co.jp/upimg/news/2493000/2492856/20261114_175230_p_o_80905621.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6f2d3eaabd5d4af537ff.jpg",
-      "credit": "스타뉴스",
-      "from": "https://image.starnewskorea.com/21/2026/11/2026111418084225758_1.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "HANA,|한국 시상식에 처음 섰다",
-      "sub": "MMA2026 첫날 레드카펫 · 〈No No Girls〉에서 태어난 7인조"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "본 무대(공연 곡)와 수상 여부는 아직 보도 전이라 쓰지 않음 — 오늘 밤 무대 영상이 공식 채널에 오르면 후속 숏폼으로",
-     "'ROSE' 정식 데뷔(2025년 4월)는 THE FIRST TIMES 요약으로만 확인 — 걸리면 그 문장을 뺄 것"
-    ],
-    "research": [
-     {
-      "title": "오리콘 뉴스 — 11/14 서울 고척스카이돔 MMA2026(14·15일) 레드카펫, 한국 시상식 첫 등장, 포토 세션, 멤버 7명 사진 (11/14 18:06)",
-      "link": "https://www.oricon.co.jp/news/2492856/"
-     },
-     {
-      "title": "Korea JoongAng Daily — MMA 사상 첫 이틀 개최, 첫날(토) 출연진에 Japanese girl group HANA (11/13)",
-      "link": "https://www.koreajoongangdaily.com/entertainment/mma-goes-global-doubles-length-with-nct-ateez-hana/12971013"
-     },
-     {
-      "title": "리얼사운드 — BMSG×찬미나 오디션 〈No No Girls〉 최종 심사(2025/1/11)에서 그룹명 HANA·멤버 7명 결정",
-      "link": "https://realsound.jp/2025/01/post-1897264.html"
-     },
-     {
-      "title": "Kstyle — 【PHOTO】HANA「MMA 2026」レッドカーペットに登場",
-      "link": "https://kstyle.com/article.ksn?articleNo=2286392"
-     },
-     {
-      "title": "스타뉴스 — Hana, \"Wildflower-like Charm\" [★Photo] (11/14)",
-      "link": "https://www.starnewskorea.com/en/music/2026/11/14/2026111418084225758"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/23109d3547e9e9c734d9.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d9fd87c4a44a04f0073b.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/23109d3547e9e9c734d9.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-14T18:45+09:00",
-     "v": {
-      "A": "7d6963ff"
-     }
+     "at": "2026-11-15T10:48+09:00"
     }
    },
    "pick": {
     "rank": 1,
-    "why": "오늘(11/14) 서울 고척 MMA2026 첫날 · 일본 걸그룹의 한국 시상식 첫 등장이라 한국 연결이 가장 세다 · 레드카펫 사진이 표지에 잘 들어감",
-    "at": "2026-11-14T18:45+09:00"
+    "why": "어젯밤(11/14) MMA2026 첫날 'J-팝 페이보릿 아티스트' 수상 · 한국 시상식에서 일본 걸그룹이 상을 받은 장면이라 한국 연결이 가장 세다 · 멜론 공식 무대 영상이 있어 숏폼이 된다",
+    "at": "2026-11-15T10:47+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:billboard-japan-hot-manga-2026",
-    "account": "빌보드 재팬",
-    "url": "https://www.billboard-japan.com/d_news/detail/167181",
+    "id": "claude:rezero-season5",
+    "account": "패미통",
+    "url": "https://www.famitsu.com/article/202611/94048",
     "image": null,
-    "head": "【ビルボード 2026年 年間Hot Manga】尾田栄一郎『ONE PIECE 113巻』が首位、同シリーズの3巻がトップ3を独占（コメントあり）",
+    "head": "アニメ『Re:ゼロから始める異世界生活』5th seasonが製作決定。ウルトラティザービジュアルと原作者長月達平のコメントが到着",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-14T18:45+09:00",
-   "key": "d2114917",
+   "made_at": "2026-11-15T10:47+09:00",
+   "key": "bb5dcad6",
    "by": "claude",
    "subjects": [
-    "원피스",
-    "오다 에이이치로",
-    "헌터×헌터"
+    "Re:제로부터 시작하는 이세계 생활",
+    "나가츠키 탓페이"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "빌보드 재팬 2026 연간 'Hot Manga' — 1~3위가 전부 〈원피스〉, 〈원피스〉·〈킹덤〉이 톱10 여섯 자리",
-    "why": "11/14 18:15 빌보드 재팬 연간 차트 발표(차트 발행처 원문) · 점프 편집부 코멘트 · 한국에서도 다 아는 작품들"
+    "angle": "〈Re:제로부터 시작하는 이세계 생활〉 TV 애니 5기 제작 확정 — 10주년 행사에서 발표, 원작자 '7장도 난이도 인페르노'",
+    "why": "11/14 21:00 MANTANWEB·패미통·PASH! PLUS 동시 보도 · 원작자 나가츠키 탓페이 코멘트 · 한국에서도 큰 작품"
    },
    "added": "claude",
-   "added_at": "2026-11-14T18:45+09:00",
+   "added_at": "2026-11-15T10:47+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n빌보드 재팬 2026년 연간 만화 차트 'Hot Manga' 1~3위를 〈원피스〉(ONE PIECE)가 모두 가져갔습니다.\n\n1위 113권, 2위 115권, 3위 114권인데요, 113권은 52주 가운데 45주를 차트에 머물러 이 차트의 모든 작품 중 가장 오래 버텼습니다. 4위는 약 1년 10개월 만에 나온 〈헌터×헌터〉 39권, 이어서 〈스파이 패밀리〉 17권과 〈장송의 프리렌〉 15권입니다. 〈킹덤〉은 78~80권이 7~9위를 채웠고, 10위는 〈주술회전≡〉(呪術廻戦≡) 1권입니다.\n\n〈원피스〉와 〈킹덤〉 두 시리즈가 톱10 가운데 여섯 자리를 차지한 셈입니다. 주간 소년 점프 편집부는 내년이 〈원피스〉 연재 30주년이라고 밝혔습니다.\n\n집계 기간은 2025년 10월 27일부터 2026년 10월 25일까지입니다.\n\n#암낫오타쿠 #원피스 #오다에이이치로 #헌터헌터 #킹덤 #빌보드재팬\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c5fde16736ce9e6b1f94.jpg\n제목: 올해 일본 만화 1~3위,|전부 〈원피스〉\n부제: 빌보드 재팬 2026 연간 'Hot Manga' · 4위는 〈헌터×헌터〉 39권\n출처: 전격 온라인\n",
-    "caption": "빌보드 재팬 2026년 연간 만화 차트 'Hot Manga' 1~3위를 〈원피스〉(ONE PIECE)가 모두 가져갔습니다.\n\n1위 113권, 2위 115권, 3위 114권인데요, 113권은 52주 가운데 45주를 차트에 머물러 이 차트의 모든 작품 중 가장 오래 버텼습니다. 4위는 약 1년 10개월 만에 나온 〈헌터×헌터〉 39권, 이어서 〈스파이 패밀리〉 17권과 〈장송의 프리렌〉 15권입니다. 〈킹덤〉은 78~80권이 7~9위를 채웠고, 10위는 〈주술회전≡〉(呪術廻戦≡) 1권입니다.\n\n〈원피스〉와 〈킹덤〉 두 시리즈가 톱10 가운데 여섯 자리를 차지한 셈입니다. 주간 소년 점프 편집부는 내년이 〈원피스〉 연재 30주년이라고 밝혔습니다.\n\n집계 기간은 2025년 10월 27일부터 2026년 10월 25일까지입니다.\n\n#암낫오타쿠 #원피스 #오다에이이치로 #헌터헌터 #킹덤 #빌보드재팬",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈Re:제로부터 시작하는 이세계 생활〉(Re:ゼロから始める異世界生活) TV 애니 5기 제작이 확정됐습니다.\n\n14일 도쿄 다치카와에서 열린 애니 10주년 기념 행사에서 발표됐는데요, 함께 공개된 티저 비주얼에는 새 모험에 나서는 스바루와 렘이 그려졌고 '너를 위해서라면, 몇 번이라도'라는 문구가 붙었습니다. 4기는 올해 4월과 8월 두 번에 나뉘어 방송을 마쳤습니다.\n\n원작자 나가츠키 탓페이는 4기가 다룬 6장을 두고 '리제로 최고 난관'이라는 말이 있었다며, 이어지는 7장 역시 '난이도 인페르노'라고 예고했습니다.\n\n올해로 TV 애니 10주년이고, 원작 시리즈는 전자책을 포함해 누계 1600만 부를 넘었습니다.\n\n#암낫오타쿠 #리제로 #Re제로부터시작하는이세계생활 #나가츠키탓페이 #스바루 #렘\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ed2e0223f10e846c98dc.jpg\n제목: 〈리제로〉 5기,|제작 확정\n부제: 10주년 행사에서 발표 · 원작자 '7장도 난이도 인페르노'\n출처: 패미통\n",
+    "caption": "〈Re:제로부터 시작하는 이세계 생활〉(Re:ゼロから始める異世界生活) TV 애니 5기 제작이 확정됐습니다.\n\n14일 도쿄 다치카와에서 열린 애니 10주년 기념 행사에서 발표됐는데요, 함께 공개된 티저 비주얼에는 새 모험에 나서는 스바루와 렘이 그려졌고 '너를 위해서라면, 몇 번이라도'라는 문구가 붙었습니다. 4기는 올해 4월과 8월 두 번에 나뉘어 방송을 마쳤습니다.\n\n원작자 나가츠키 탓페이는 4기가 다룬 6장을 두고 '리제로 최고 난관'이라는 말이 있었다며, 이어지는 7장 역시 '난이도 인페르노'라고 예고했습니다.\n\n올해로 TV 애니 10주년이고, 원작 시리즈는 전자책을 포함해 누계 1600만 부를 넘었습니다.\n\n#암낫오타쿠 #리제로 #Re제로부터시작하는이세계생활 #나가츠키탓페이 #스바루 #렘",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c5fde16736ce9e6b1f94.jpg",
-      "credit": "전격 온라인",
-      "from": "https://cimg.kgl-systems.io/camion/files/55605/ogp_JPED.jpg?x=1280"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2ac3f00415a23967c7b6.jpg",
-      "credit": "전격 온라인",
-      "from": "https://cimg.kgl-systems.io/camion/files/66859/ogp_FzfN.jpg?x=1280"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ed2e0223f10e846c98dc.jpg",
+      "credit": "패미통",
+      "from": "https://cimg.kgl-systems.io/camion/files/94048/thumbnail_kFec.jpg?x=1280"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c5fde16736ce9e6b1f94.jpg",
-      "credit": "전격 온라인",
-      "from": "https://cimg.kgl-systems.io/camion/files/55605/ogp_JPED.jpg?x=1280"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2ac3f00415a23967c7b6.jpg",
-      "credit": "전격 온라인",
-      "from": "https://cimg.kgl-systems.io/camion/files/66859/ogp_FzfN.jpg?x=1280"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ed2e0223f10e846c98dc.jpg",
+      "credit": "패미통",
+      "from": "https://cimg.kgl-systems.io/camion/files/94048/thumbnail_kFec.jpg?x=1280"
      }
     ],
     "shape": "단신",
@@ -426,45 +216,53 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "올해 일본 만화 1~3위,|전부 〈원피스〉",
-      "sub": "빌보드 재팬 2026 연간 'Hot Manga' · 4위는 〈헌터×헌터〉 39권"
+      "title": "〈리제로〉 5기,|제작 확정",
+      "sub": "10주년 행사에서 발표 · 원작자 '7장도 난이도 인페르노'"
      }
     ],
     "issues": [],
     "confirm": [
-     "차트 발행처(빌보드 재팬) 원문 한 곳 기준 — 다른 매체 보도는 아직 못 찾음",
-     "〈주술회전≡〉 한국 정식 제목 표기 확인 필요 · 표지 사진은 전격 온라인 기사의 〈원피스〉 단행본 표지(루피·엘바프 거인들) — 몇 권 표지인지 눈으로 확인, 113권 표지면 더 좋음"
+     "방송 시기·방송국·제작진은 발표에 없어 쓰지 않음 · 공식 PV 없음(비주얼만)이라 숏폼 비움",
+     "표지 사진이 울트라 티저 비주얼(스바루·렘)인지 눈으로 확인 — 아니면 공식 비주얼로 바꿀 것"
     ],
     "research": [
      {
-      "title": "빌보드 재팬 — 연간 Hot Manga 1~10위(원피스 113·115·114, 헌터×헌터 39, 스파이 패밀리 17, 프리렌 15, 킹덤 78·79·80, 주술회전≡ 1), 113권 52주 중 45주 차트인, 헌터×헌터 약 1년 10개월 만의 신간, 점프 편집부 '내년 연재 30주년', 집계 2025/10/27~2026/10/25 (11/14 18:15)",
-      "link": "https://www.billboard-japan.com/d_news/detail/167181/2"
+      "title": "MANTANWEB — 11/14 立川ステージガーデン 10주년 이벤트 「10th EVENT -スターライト・パーティー-」에서 5기 발표, 울트라 티저 비주얼(스바루·렘, 「君のためなら、何度でも。」), 4기 喪失編 4~6월·奪還編 8~9월 (11/14 21:00)",
+      "link": "https://mantan-web.jp/article/20261114dog00m200018000a.html"
      },
      {
-      "title": "빌보드 재팬 — 연간 Hot Shot Books 1위 『呪術廻戦≡ 1巻』 (11/14 18:15)",
-      "link": "https://www.billboard-japan.com/d_news/detail/167273"
+      "title": "패미통 — 5th season 제작 결정, 원작 시리즈 누계 1600만 부(전자 포함), 방송 시기 기재 없음 (11/14)",
+      "link": "https://www.famitsu.com/article/202611/94048"
+     },
+     {
+      "title": "PASH! PLUS — 나가츠키 코멘트 「4期範囲の六章はリゼロ最難関なんて言われていましたが、ご安心ください！」「続く七章の道のりもしっかり過酷で難易度インフェルノです。」, 10주년 10대 기획의 마지막 (11/14)",
+      "link": "https://www.pashplus.jp/anime/503122/"
+     },
+     {
+      "title": "코믹 나탈리(야후 뉴스) — 5th season 제작 결정, 울트라 티저 비주얼 공개",
+      "link": "https://news.yahoo.co.jp/articles/8b5ade55a6e8eeae851d3d6309b2f6b2e10a3337"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a4f8811833c0878f312d.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/811c01de9462aa5f97b3.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/21c95158cfa8731cd18e.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/9f61f5006b3c3ecec734.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a4f8811833c0878f312d.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/21c95158cfa8731cd18e.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-14T18:45+09:00",
+     "at": "2026-11-15T10:47+09:00",
      "v": {
-      "A": "e53397ef"
+      "A": "47364ff4"
      }
     }
    },
    "pick": {
-    "rank": 3,
-    "why": "오늘 18:15 발표 연간 차트 · 〈원피스〉·〈헌터×헌터〉·〈프리렌〉 다 한국에서 아는 이름이라 덕후 아닌 독자도 읽힌다",
-    "at": "2026-11-14T18:45+09:00"
+    "rank": 2,
+    "why": "11/14 밤 10주년 행사에서 발표 · 한국에서도 큰 작품의 다음 시즌 확정 · 원작자 코멘트로 사람이 보인다",
+    "at": "2026-11-15T10:47+09:00"
    },
    "corner_name": "소식"
   }
@@ -472,7 +270,7 @@
  "skipped": [],
  "corners": {
   "week": "11/09~11/15",
-  "days_left": 2,
+  "days_left": 1,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -530,7 +328,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 4,
+    "need_today": 7,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -542,7 +340,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 3,
+    "need_today": 6,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -554,7 +352,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -578,7 +376,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -590,7 +388,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -626,7 +424,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -638,17 +436,17 @@
     "weekly": 4,
     "done": 0,
     "left": 4,
-    "need_today": 2,
+    "need_today": 4,
     "day": null,
     "next_no": null,
-    "drafts": 4,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-14T18:45+09:00"
+  "at": "2026-11-15T10:48+09:00"
  },
  "queue": {
-  "next": "2026-11-14T18:47+09:00",
+  "next": "2026-11-15T10:50+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
