@@ -185,12 +185,12 @@
      "at": "2026-11-15T11:09+09:00"
     }
    },
+   "corner_name": "소식",
    "pick": {
     "rank": 1,
-    "why": "롤드컵 결승 날 아침 가장 크게 번진 게임 소식 · 라이엇 한국 공식 티저 숏폼 · 경기 결과가 아닌 게임 업데이트",
-    "at": "2026-11-15T11:07+09:00"
-   },
-   "corner_name": "소식"
+    "why": "롤드컵 결승 날 가장 크게 번진 게임 소식 · 라이엇 한국 공식 티저 숏폼",
+    "at": "2026-11-15T19:01+09:00"
+   }
   },
   {
    "source": {
@@ -352,10 +352,177 @@
      "at": "2026-11-15T11:09+09:00"
     }
    },
+   "corner_name": "소식",
+   "pick": {
+    "rank": 3,
+    "why": "그린 물고기가 헤엄친다 — 게임 안 하는 사람도 한 줄로 이해되는 실험 칸 · 한국어·원화 가격 확인",
+    "at": "2026-11-15T19:01+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:r6-tactics-korean",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323376",
+    "image": null,
+    "head": "[인터뷰] '레인보우 식스 택틱스'가 그리는 새로운 전장",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-15T19:01+09:00",
+   "key": "eb75fb49",
+   "by": "claude",
+   "subjects": [
+    "레인보우 식스 택틱스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "총 대신 계획을 겨루는 레인보우 식스 — 오사카 R6S 메이저 현장에서 확인된 한국어 자막과 '오퍼레이터 15명, 추가 없음'",
+    "why": "인벤·루리웹이 같은 날(11/15 12:00) 오사카 행사 기사를 내며 둘 다 한국어 지원을 적음 · 아트 디렉터 발언 두 매체 일치 · 공식 트레일러 있음"
+   },
+   "added": "claude",
+   "added_at": "2026-11-15T19:01+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈레인보우 식스 택틱스〉가 한국어 자막으로 나옵니다.\n\n지난 8월 게임스컴에서 공개된 유비소프트 파리의 신작인데요, '시즈'의 오퍼레이터들을 데리고 턴제로 작전을 짜는 싱글플레이 게임입니다. 최대 네 명의 대원이 할 행동을 미리 정해 두면 '돌파' 순간에 모두가 한꺼번에 움직입니다.\n\n일본 오사카에서 만난 아트 디렉터 킴 푸르넬은 등장 오퍼레이터를 15명으로 확정했고, 나중에 더 늘릴 계획은 없다고 밝혔습니다. 순발력 대신 계획을 겨루는 레인보우 식스입니다.\n\nPC · PS5 · Xbox Series X|S · 2027년 출시 · 한국어 자막 지원\n\n#겜디핑 #레인보우식스택틱스 #레인보우식스 #유비소프트 #턴제전략\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8dbc25fa48e2e4d2bfd6.jpg\n제목: 레인보우 식스 택틱스,|한국어 자막 확정\n부제: 시즈 대원들로 짜는 턴제 작전\n출처: Ubisoft\n",
+    "caption": "〈레인보우 식스 택틱스〉가 한국어 자막으로 나옵니다.\n\n지난 8월 게임스컴에서 공개된 유비소프트 파리의 신작인데요, '시즈'의 오퍼레이터들을 데리고 턴제로 작전을 짜는 싱글플레이 게임입니다. 최대 네 명의 대원이 할 행동을 미리 정해 두면 '돌파' 순간에 모두가 한꺼번에 움직입니다.\n\n일본 오사카에서 만난 아트 디렉터 킴 푸르넬은 등장 오퍼레이터를 15명으로 확정했고, 나중에 더 늘릴 계획은 없다고 밝혔습니다. 순발력 대신 계획을 겨루는 레인보우 식스입니다.\n\nPC · PS5 · Xbox Series X|S · 2027년 출시 · 한국어 자막 지원\n\n#겜디핑 #레인보우식스택틱스 #레인보우식스 #유비소프트 #턴제전략",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8dbc25fa48e2e4d2bfd6.jpg",
+      "credit": "Ubisoft",
+      "from": "https://i3.ruliweb.com/ori/26/11/15/1a1dd2442514cacdc.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8dbc25fa48e2e4d2bfd6.jpg",
+      "credit": "Ubisoft",
+      "from": "https://i3.ruliweb.com/ori/26/11/15/1a1dd2442514cacdc.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "레인보우 식스 택틱스,|한국어 자막 확정",
+      "sub": "시즈 대원들로 짜는 턴제 작전"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "아트 디렉터 이름 표기가 인벤 '킴 푸르넬', 루리웹 '킴 퍼넬'로 갈림 — 인벤 표기를 씀 · 한국어는 '자막'(루리웹)까지만 확인, 음성 여부 모름",
+     "숏폼 1:10-1:38 은 자막으로만 잡음(PLAN·BREACH·ENGAGE 구간) — 영상으로 볼 것"
+    ],
+    "research": [
+     {
+      "title": "인벤 — 킴 푸르넬 아트 디렉터 인터뷰 (오사카 · 한국어 번역 출시 · 오퍼레이터 15명)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323376"
+     },
+     {
+      "title": "인벤 — 레인보우식스 택틱스 미리보기 (4인 분대 · 브리치 · 2027년)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323375"
+     },
+     {
+      "title": "루리웹 — 레인보우 식스 택틱스 쇼케이스 (유비소프트 파리 · PC/PS5/XSX · 2027 · 자막 한국어화 · 15명 추가 없음)",
+      "link": "https://bbs.ruliweb.com/news/read/231929"
+     },
+     {
+      "title": "Game Informer — 게임스컴 2026 공개 (8/25 · 싱글플레이 턴제 · 4인 분대 · 브리치)",
+      "link": "https://gameinformer.com/gamescom-2026/2026/08/25/ubisoft-announces-rainbow-six-tactics-a-single-player-turn-based-spin-off"
+     },
+     {
+      "title": "Rainbow 6 공식 유튜브 — Reveal Trailer",
+      "link": "https://www.youtube.com/watch?v=HoDIxvqQfxQ"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/f8e4b677e88a365eee61.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9f8b838c948bd530255e.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/f8e4b677e88a365eee61.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-15T19:01+09:00",
+     "v": {
+      "A": "e18cfffd"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=HoDIxvqQfxQ\n구간: 1:10-1:38\n곡: 턴제로 벽을 부순다\n아티스트: 시즈 대원들이\n피처링:\n후킹: \n출처: Rainbow 6\n자막: 자동",
+    "caption": "〈레인보우 식스 택틱스〉 공개 트레일러의 한 장면입니다.\n\n'시즈'의 오퍼레이터 최대 네 명에게 할 행동을 미리 정해 두면 '돌파' 순간에 한꺼번에 움직이는데요, 일본 오사카 R6S 메이저 현장에서 한국어 자막 출시가 확인됐습니다. 아트 디렉터 킴 푸르넬은 오퍼레이터를 15명으로 확정했다고 밝혔습니다.\n\nPC · PS5 · Xbox Series X|S · 2027년 출시 · 한국어 자막 지원\n\n#겜디핑 #레인보우식스택틱스 #레인보우식스 #유비소프트 #턴제전략",
+    "hooks": {
+     "A": "시즈 대원들이 / 턴제로 벽을 부순다",
+     "B": "미리 짜 두고 / 한 번에 돌파한다",
+     "C": "레인보우 식스가 / 턴제 전략이 됐다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=HoDIxvqQfxQ",
+     "credit": "Rainbow 6",
+     "range": [
+      70.0,
+      98.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "아트 디렉터 이름 표기가 인벤 '킴 푸르넬', 루리웹 '킴 퍼넬'로 갈림 — 인벤 표기를 씀 · 한국어는 '자막'(루리웹)까지만 확인, 음성 여부 모름",
+     "숏폼 1:10-1:38 은 자막으로만 잡음(PLAN·BREACH·ENGAGE 구간) — 영상으로 볼 것"
+    ],
+    "research": [
+     {
+      "title": "인벤 — 킴 푸르넬 아트 디렉터 인터뷰 (오사카 · 한국어 번역 출시 · 오퍼레이터 15명)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323376"
+     },
+     {
+      "title": "인벤 — 레인보우식스 택틱스 미리보기 (4인 분대 · 브리치 · 2027년)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323375"
+     },
+     {
+      "title": "루리웹 — 레인보우 식스 택틱스 쇼케이스 (유비소프트 파리 · PC/PS5/XSX · 2027 · 자막 한국어화 · 15명 추가 없음)",
+      "link": "https://bbs.ruliweb.com/news/read/231929"
+     },
+     {
+      "title": "Game Informer — 게임스컴 2026 공개 (8/25 · 싱글플레이 턴제 · 4인 분대 · 브리치)",
+      "link": "https://gameinformer.com/gamescom-2026/2026/08/25/ubisoft-announces-rainbow-six-tactics-a-single-player-turn-based-spin-off"
+     },
+     {
+      "title": "Rainbow 6 공식 유튜브 — Reveal Trailer",
+      "link": "https://www.youtube.com/watch?v=HoDIxvqQfxQ"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/HoDIxvqQfxQ/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/52484d13b08d64c62b10.jpg",
+     "key": "HoDIxvqQfxQ@70.0"
+    },
+    "px": {
+     "vid": "HoDIxvqQfxQ",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/209046b164c072f3ca23.mp4",
+     "off": 25.0,
+     "end": 107.0,
+     "full": 107.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-15T19:02+09:00"
+    }
+   },
    "pick": {
     "rank": 2,
-    "why": "그린 물고기가 헤엄친다 — 게임 안 하는 사람도 한 줄로 이해되는 실험 칸 · 개발자 본인 채널 영상 · 한국어·원화 가격 확인",
-    "at": "2026-11-15T11:07+09:00"
+    "why": "한국 독자에게 바로 걸리는 '한국어 자막 확정' · 오사카 행사에서 나온 아트 디렉터의 말 · 공식 트레일러 숏폼",
+    "at": "2026-11-15T19:01+09:00"
    },
    "corner_name": "소식"
   }
@@ -532,14 +699,14 @@
     "need_today": 4,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-15T11:09+09:00"
+  "at": "2026-11-15T19:02+09:00"
  },
  "queue": {
-  "next": "2026-11-15T11:11+09:00",
+  "next": "2026-11-15T19:04+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
