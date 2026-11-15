@@ -808,6 +808,97 @@
    },
    "corner_name": "그날의 앨범",
    "corner_no": 3
+  },
+  {
+   "source": {
+    "id": "claude:brk-0d988891",
+    "account": "@갈등·반응",
+    "url": "https://isplus.com/article/view/isp202611150034",
+    "image": null,
+    "head": "지수가 에이티즈 산·우영과 〈냉장고를 부탁해〉에서 'BAD' 챌린지에 나선다",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-15T11:49+09:00",
+   "key": "622fe2c7",
+   "by": "claude",
+   "subjects": [
+    "지수",
+    "에이티즈"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "올여름 산의 가슴 춤으로 번진 'BAD' 챌린지를 지수가 산·우영과 냉부 주방에서 춘다",
+    "why": "오늘 밤 방송 전 예고 기사로 지수 x 에이티즈 조합이 화제 · JTBC 공식 예고편에 장면이 있다"
+   },
+   "added": "claude",
+   "added_at": "2026-11-15T11:49+09:00",
+   "corner": "news",
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=Zk7Jq0UjZCI\n구간: 1:17-1:38\n곡: 'BAD' 가슴 춤에 도전\n아티스트: 지수가 산·우영과\n피처링:\n후킹: \n출처: JTBC Entertainment\n음원: 에이티즈 - BAD\n가사: 자동",
+    "caption": "블랙핑크(@blackpinkofficial) 지수(@sooyaaa__)가 에이티즈(@ateez_official_) 산, 우영과 'BAD' 챌린지에 나섭니다.\n\n'BAD'는 올여름 발매 뒤 산의 가슴을 튕기는 짧은 안무가 숏폼으로 퍼지며 챌린지로 번진 곡인데요, 지난주 〈냉장고를 부탁해〉에서 냉장고를 맡겼던 지수가 이번엔 산과 우영의 냉장고 편에 함께 나와 그 안무를 직접 따라 춥니다.\n\n여름 내내 화면 너머로 돌던 그 안무가 이번엔 셋이 한 주방에 선 장면으로 이어진 셈입니다.\n\n〈냉장고를 부탁해〉는 오늘(15일) 저녁 8시 50분 JTBC에서 방송됩니다.\n\n#PLOT #지수 #에이티즈 #산 #우영 #냉장고를부탁해",
+    "hooks": {
+     "A": "지수가 산·우영과 / 'BAD' 가슴 춤에 도전",
+     "B": "에이티즈 'BAD' 챌린지 / 지수도 함께 춘다",
+     "C": "냉부 주방에서 터진 / 셋의 'BAD' 챌린지"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=Zk7Jq0UjZCI",
+     "credit": "JTBC Entertainment",
+     "range": [
+      77.0,
+      98.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 높음 — JTBC Entertainment (30초 안 · 같은 예고편을 최근 7일 안에 썼는지 확인)",
+     "구간 확인: 1:17-1:38 이 실제로 셋의 'BAD' 챌린지 장면인지 (자막으로만 고름)",
+     "[작문 P1] 캡션: 첫 문장 87자 → 첫 문장은 한 호흡 — 두 사실을 한 문장에 몰지 않는다 (80자 안)"
+    ],
+    "research": [
+     {
+      "title": "일간스포츠 — 블핑 지수도 '배드' 가슴 춤 못 참아 (11/15 방송 예고)",
+      "link": "https://isplus.com/article/view/isp202611150034"
+     },
+     {
+      "title": "JTBC Entertainment — 냉장고를 부탁해 97회 예고편 (with 지수&우영&산)",
+      "link": "https://www.youtube.com/watch?v=Zk7Jq0UjZCI"
+     },
+     {
+      "title": "헤럴드 — '가슴 한 번 튕기자 입덕' 짐승돌의 귀환",
+      "link": "https://www.heraldk.com/article/2026081105355430487"
+     },
+     {
+      "title": "스포츠경향 — 이선민, 에이티즈 'BAD' 최산 챌린지 도전",
+      "link": "https://sports.khan.co.kr/article/202607161649003"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/Zk7Jq0UjZCI/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/15e88419c060d688214c.jpg",
+     "key": "Zk7Jq0UjZCI@77.0"
+    },
+    "px": {
+     "vid": "Zk7Jq0UjZCI",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b7f1a589eb69b509016a.mp4",
+     "off": 32.0,
+     "end": 97.0,
+     "full": 97.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-15T11:51+09:00"
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -982,14 +1073,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-15T10:04+09:00"
+  "at": "2026-11-15T11:51+09:00"
  },
  "queue": {
-  "next": "2026-11-15T10:06+09:00",
+  "next": "2026-11-15T11:53+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-12T19:35+09:00"
