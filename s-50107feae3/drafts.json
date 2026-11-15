@@ -192,12 +192,7 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 8,
-   "pick": {
-    "rank": 3,
-    "why": "에이티즈 레이더 7.5 · 앞 회차 숏폼 — 오늘 숏폼 두 번째 자리",
-    "at": "2026-11-15T10:01+09:00"
-   }
+   "corner_no": 8
   },
   {
    "source": {
@@ -383,11 +378,6 @@
       "A": "22e78ec4"
      }
     }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "오늘 기사 50건 넘는 중심 사건 · 멤버가 직접 쓴 계약서에서 '마지막 무대'까지 사람이 보이는 정리형",
-    "at": "2026-11-15T10:01+09:00"
    },
    "corner_name": "입문 가이드",
    "corner_no": 4
@@ -621,13 +611,13 @@
      "at": "2026-11-15T10:04+09:00"
     }
    },
+   "corner_name": "그 말",
+   "corner_no": 9,
    "pick": {
     "rank": 2,
-    "why": "숏폼 한 자리 · 본인 채널(위험 낮음) · 6월에 바이럴됐던 이야기를 당사자가 처음 자기 말로 · 레이더 스윙스 9.0",
-    "at": "2026-11-15T10:01+09:00"
-   },
-   "corner_name": "그 말",
-   "corner_no": 9
+    "why": "숏폼 한 자리 · 본인 채널(위험 낮음) · 레이더 스윙스 10.0",
+    "at": "2026-11-15T16:20+09:00"
+   }
   },
   {
    "source": {
@@ -900,6 +890,407 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:bestie-rescene-challenge",
+    "account": "베스티 @bestie_ofcl",
+    "url": "https://www.instagram.com/reel/Dft1XYLvWut/",
+    "image": null,
+    "head": "이 조합, 그냥 지나칠 수 없지! 리센느(RESCENE) × 베스티(BESTie)",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-15T16:20+09:00",
+   "key": "81278aa2",
+   "by": "claude",
+   "subjects": [
+    "베스티",
+    "리센느"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "늦게 찾아온 노래로 올해를 보낸 두 팀 — 베스티가 리센느와 '연애의 조건' 챌린지",
+    "why": "베스티 인스타 릴스 좋아요 12만(평소의 71.7배) · 프로필 팔로워 5일 새 +23,807 · 리센느 레이더 7.5"
+   },
+   "added": "claude",
+   "added_at": "2026-11-15T16:20+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n베스티(@bestie_ofcl)가 리센느(@rescene_official)와 함께 '연애의 조건' 챌린지 영상을 올렸습니다.\n\n2013년 10월 나온 '연애의 조건'은 숏폼을 타고 13년 만에 다시 불리기 시작했는데요, 네 멤버가 다시 모여 지난달 31일 〈쇼! 음악중심〉에 선 무대는 공개 열흘 만에 조회수 1000만 회를 넘겼고, 노래는 9일 멜론 TOP100 9위까지 올랐습니다.\n\n리센느 역시 발매 당시 크게 주목받지 못했던 '러브 어택'이 뒤늦게 다시 조명되며 음원차트 1위에 오른 팀입니다. 늦게 찾아온 노래로 올해를 보낸 두 팀이 같은 화면에서 같은 춤을 춘 셈입니다.\n\n#PLOT #베스티 #리센느 #연애의조건 #역주행\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0dcfb9c7027248852641.jpg\n제목: 리센느 × 베스티,|역주행끼리 만났다\n부제: '연애의 조건' 챌린지\n출처: @bestie_ofcl\n",
+    "caption": "베스티(@bestie_ofcl)가 리센느(@rescene_official)와 함께 '연애의 조건' 챌린지 영상을 올렸습니다.\n\n2013년 10월 나온 '연애의 조건'은 숏폼을 타고 13년 만에 다시 불리기 시작했는데요, 네 멤버가 다시 모여 지난달 31일 〈쇼! 음악중심〉에 선 무대는 공개 열흘 만에 조회수 1000만 회를 넘겼고, 노래는 9일 멜론 TOP100 9위까지 올랐습니다.\n\n리센느 역시 발매 당시 크게 주목받지 못했던 '러브 어택'이 뒤늦게 다시 조명되며 음원차트 1위에 오른 팀입니다. 늦게 찾아온 노래로 올해를 보낸 두 팀이 같은 화면에서 같은 춤을 춘 셈입니다.\n\n#PLOT #베스티 #리센느 #연애의조건 #역주행",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0dcfb9c7027248852641.jpg",
+      "credit": "@bestie_ofcl",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/902173185_1725803592516723_3224980254163692313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=OCm2LlO-U4EQ7kNvwEUHMrb&_nc_oc=Adqil4jk1472YXPN2rYZ_BxG85nujc-TJTISqE8Dv7phUHbxw5P3lYh0tQx5NPibRLk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=-Eznf3k6MNfsC5nZDbOSng&_nc_tpa=Q5bMBQK4bMOtTMvZ4povKY-g5ph1uF15LQfwYt9ysLK8Nzi7XgAmGcvQwC5hJHgb_HCNPQH1iULDn-XASg&_nc_ct=RQosPBUKFQ4AAAA&oh=00_AQRVtt79lSwmKJHEfT0iApG8Sj1jRjqqZTpbq7cQP4oXOw&oe=6AFEB6E9"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0891836d2ab0af97b748.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/022/10/766/2210766.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b153952b07cf5d8ef2f2.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/021/92/011/2192011.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d29a8ad93522f5a3f72d.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/023/17/463/2317463.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0dcfb9c7027248852641.jpg",
+      "credit": "@bestie_ofcl",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/902173185_1725803592516723_3224980254163692313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=OCm2LlO-U4EQ7kNvwEUHMrb&_nc_oc=Adqil4jk1472YXPN2rYZ_BxG85nujc-TJTISqE8Dv7phUHbxw5P3lYh0tQx5NPibRLk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=-Eznf3k6MNfsC5nZDbOSng&_nc_tpa=Q5bMBQK4bMOtTMvZ4povKY-g5ph1uF15LQfwYt9ysLK8Nzi7XgAmGcvQwC5hJHgb_HCNPQH1iULDn-XASg&_nc_ct=RQosPBUKFQ4AAAA&oh=00_AQRVtt79lSwmKJHEfT0iApG8Sj1jRjqqZTpbq7cQP4oXOw&oe=6AFEB6E9"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0891836d2ab0af97b748.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/022/10/766/2210766.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b153952b07cf5d8ef2f2.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/021/92/011/2192011.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d29a8ad93522f5a3f72d.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/023/17/463/2317463.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "리센느 × 베스티,|역주행끼리 만났다",
+      "sub": "'연애의 조건' 챌린지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 릴스 공동 게시자로 dahye0612(베스티 다혜로 보임)가 태그돼 있음 — 리센느 쪽 멤버는 확인 못 함",
+     "릴스에 나온 멤버가 누구인지는 원 게시물로 확인 못 해 이름을 뺐음 — 표지 사진(릴스 썸네일)에 자막이 있으면 바꿀 것"
+    ],
+    "research": [
+     {
+      "title": "베스티 공식 인스타 11/14 — 리센느 × 베스티 '연애의 조건' 챌린지 릴스",
+      "link": "https://www.instagram.com/reel/Dft1XYLvWut/"
+     },
+     {
+      "title": "톱스타뉴스 11/10 — 2013.10.17 발매 · 10/31 〈쇼! 음악중심〉 4인 무대 열흘 만에 1000만 · 11/9 멜론 TOP100 9위",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16272854"
+     },
+     {
+      "title": "뉴스1 — 베스티 무대 후 '연애의 조건' 순위 급상승",
+      "link": "https://www.news1.kr/entertain/music/6342327"
+     },
+     {
+      "title": "뉴스Q 9/1 — '러브 어택' 등 발매 당시 주목받지 못한 리센느 곡 재조명, 베스티가 바통",
+      "link": "http://www.newsq.co.kr/news/articleView.html?idxno=498055"
+     },
+     {
+      "title": "스포티비뉴스 — 13년 전 노래가 터졌다…역주행 출발점은 숏폼",
+      "link": "https://www.spotvnews.co.kr/news/articleView.html?idxno=1010301"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/916cf44a860f1bb767db.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/1746114e6c57a98c070e.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/916cf44a860f1bb767db.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-15T16:20+09:00",
+     "v": {
+      "A": "abcfbdfe"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "베스티 인스타 71.7배 · 팔로워 5일 새 +2.4만 · PLOT 팔로우가 붙는 리센느와 지금 가장 뜨거운 역주행 팀이 한 화면에",
+    "at": "2026-11-15T16:20+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:meomuru-melon-no1",
+    "account": "톱스타뉴스",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16276335",
+    "image": null,
+    "head": "AI 가수 머무르, 멜론 1위인데 통합차트는 2위",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-15T16:20+09:00",
+   "key": "80115a95",
+   "by": "claude",
+   "subjects": [
+    "머무르"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "[실험] 멜론 1위 노래에는 부른 사람이 없다 — 머무르는 누가 만들었고, 1위 곡의 저작권료는 왜 안 들어오나",
+    "why": "뉴스 급상승 · 13일 오후 5시 멜론 TOP100 1위 · 90일간 안 다룬 이름 · 회차 목표 '인물해부'"
+   },
+   "added": "claude",
+   "added_at": "2026-11-15T16:20+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n멜론 1위에 오른 노래에는 부른 사람이 없습니다.\n\n머무르(@meomuru_official)의 '꿈꾸던 어른이 되었나요?'가 13일 오후 5시 멜론 TOP100 1위에 올랐는데요, 6월 23일 발매 후 약 5개월 만입니다. 멜론 앨범 소개에는 이 목소리가 생성형 AI 음악 서비스 수노(SUNO)로 만들어졌다고 적혀 있습니다.\n\n그렇다고 AI 혼자 만든 노래는 아닙니다. 기획과 작사, 전체 프로듀싱 방향은 사람이 맡고 보컬과 음악을 만드는 데 AI를 썼는데요, 실제 제작은 작곡가 이용석과 최성혁의 프로듀싱팀 글로리웨이브가 맡고 있습니다.\n\n다만 제작팀은 지난 10월 한국음악저작권협회에 신탁 등록을 하지 못해 작사·작곡 저작권료를 받지 못하고 있다고 밝혔습니다. 노래는 1위에 올랐지만, 작사·작곡의 몫은 받지 못하고 있는 셈입니다.\n\n#PLOT #머무르 #꿈꾸던어른이되었나요 #수노 #AI음악\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/85a318fd874e49bb3124.jpg\n제목: 멜론 1위 노래에는|부른 사람이 없다\n부제: 머무르 '꿈꾸던 어른이 되었나요?'\n출처: @meomuru_official\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/77720fa88ff1a78fae15.jpg\n소제목: 13일 오후 5시, 1위\n본문: 머무르의 '꿈꾸던 어른이 되었나요?'가 13일 오후 5시 멜론 TOP100 1위에 올랐습니다.||6월 23일 나온 노래가 **약 5개월** 만에 맨 위에 선 건데요, 멜론 앨범 소개에는 이 목소리가 생성형 AI 음악 서비스 **수노(SUNO)**로 만들어졌다고 적혀 있습니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/7651eaf475760090dc56.jpg\n소제목: 머무르를 만든 사람들\n본문: 머무르는 AI 혼자 만든 이름이 아닙니다.||기획과 작사, 전체 프로듀싱 방향은 사람이 맡고, 보컬과 음악을 만드는 데 AI를 썼습니다. 실제 제작은 작곡가 이용석과 최성혁으로 이뤄진 프로듀싱팀 **글로리웨이브**가 맡고 있습니다.\n출처: @meomuru_official\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/02bb5d3e0026b28690e3.jpg\n소제목: 1위 곡의 저작권료\n본문: 다만 제작팀은 지난 10월 이 노래의 작사·작곡 저작권료를 받지 못하고 있다고 밝혔습니다.||한국음악저작권협회에 **신탁 등록**을 하지 못했기 때문입니다. 음원 유통 수익은 따로 정산받지만, 노래는 1위에 오르고도 작사·작곡의 몫은 받지 못하고 있는 셈입니다.\n출처: @meomuru_official\n",
+    "caption": "멜론 1위에 오른 노래에는 부른 사람이 없습니다.\n\n머무르(@meomuru_official)의 '꿈꾸던 어른이 되었나요?'가 13일 오후 5시 멜론 TOP100 1위에 올랐는데요, 6월 23일 발매 후 약 5개월 만입니다. 멜론 앨범 소개에는 이 목소리가 생성형 AI 음악 서비스 수노(SUNO)로 만들어졌다고 적혀 있습니다.\n\n그렇다고 AI 혼자 만든 노래는 아닙니다. 기획과 작사, 전체 프로듀싱 방향은 사람이 맡고 보컬과 음악을 만드는 데 AI를 썼는데요, 실제 제작은 작곡가 이용석과 최성혁의 프로듀싱팀 글로리웨이브가 맡고 있습니다.\n\n다만 제작팀은 지난 10월 한국음악저작권협회에 신탁 등록을 하지 못해 작사·작곡 저작권료를 받지 못하고 있다고 밝혔습니다. 노래는 1위에 올랐지만, 작사·작곡의 몫은 받지 못하고 있는 셈입니다.\n\n#PLOT #머무르 #꿈꾸던어른이되었나요 #수노 #AI음악",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/85a318fd874e49bb3124.jpg",
+      "credit": "@meomuru_official",
+      "from": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c93d5b5ade56bcc683b0.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/05288fd350d27837296e.jpg",
+      "credit": "@meomuru_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/684592687_800793992874580_1364165936604287602_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4aQnJh484Y8Q7kNvwEnoy88&_nc_oc=AdonjZvrEr29PtAcar6C-L8SUOJVwF7q9SU8FTbSfbnCRPq5LttMqpUmgP50wiVYi2E&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=d0kBuRcc6KfqUoBe8oQBJA&_nc_tpa=Q5bMBQL89Drw44Z1PLlPuxsgz0CHgRf5bJdMoXA2dISbVVpO8aiGrFPhk9qPzfd7qnmDJmaTizO1eiOtoA&oh=00_AQNPB_FfD95xpxfwNonZL5sBTb1PxyZqIq-bLiIvYaVk0A&oe=6AE2C7F6"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c9dd5f8f87b13b9d942e.jpg",
+      "credit": "@meomuru_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/687170521_1597907077953368_1655842341605455517_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=U98Zi3VW3TsQ7kNvwEfgN6M&_nc_oc=AdrHt22GehIkkZ5vydPeRrDr6W6WyxDd4gyw6p5jsHIxFsvSAYM9TTSQq8_Qu-FcQPc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pPyjzacRCrMrvJsLs7WCSw&_nc_tpa=Q5bMBQKUNeXFCbBKaY-6Rkh5jGHzJztceH16a301kiMsDLXUYLQV33X7faZGii1tAvu74HtGwiDOljH_aw&oh=00_AQPaPl8SNZFqm4Fw_wXsJpJh4TP-t5wB6z6JmK-DNN4tmg&oe=6AE2A678"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/410836f8c25ae911d63b.jpg",
+      "credit": "@meomuru_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/649235736_807545621755534_1668780943431227987_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qljANh2Gi9AQ7kNvwHj63lo&_nc_oc=Adp2ZnGxZy8OQ0A9u3YXmwHIV5lhVzJzJOW2G3MQq3A1mqARy4szplqM-W0Rzr9VwB4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=d0kBuRcc6KfqUoBe8oQBJA&_nc_tpa=Q5bMBQLo6IBCmGYD9eqyks0YBZhBqhhXBg-EbIuxsWzARhK4W20oNOurvMfusX5hFcut22iP8JGPECYCCg&oh=00_AQOrFAI9kJ19GMyapzBC6PfWEpwGzLbjld0aIgptn_FyQQ&oe=6AE2BD0B"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c93d5b5ade56bcc683b0.jpg",
+      "credit": "@meomuru_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/684261489_17860544031688001_3657738032717772010_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yEtYgo6xA7gQ7kNvwF6L-qx&_nc_oc=AdpWHHQgFLy092229ZowRTEznVlI23fGkbURr6dfyGYWsPeHJX3S47mmlT25SIyFZ_8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=d0kBuRcc6KfqUoBe8oQBJA&oh=00_AQOjTTiIRwI17VXlKp2ZvMt79MlQWib-eX7TJ6DlgNxFmw&oe=6AE2C40E"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c9e1b7b96a0d66a274a9.jpg",
+      "credit": "@meomuru_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/764844873_17874932991688001_4836306317289766611_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=W8rc3DwfcvYQ7kNvwHHSMBa&_nc_oc=Adog1h9CToguCBDyJM6ciIdq7XKSMVhkoHdzt4r-n2wYUgfDCdzLPqn-sP5jwUSMwOs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pPyjzacRCrMrvJsLs7WCSw&oh=00_AQOuUkPIvmsw2EEHmw1yIEZFnbtUwUx-SHo4pwjBE2G7Cg&oe=6AE2B5C2"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/373a24f9f1f9a4f8ce77.jpg",
+      "credit": "@meomuru_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/755246951_1744428146802978_1469112847643924519_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ucq41RT8yXsQ7kNvwEhpskx&_nc_oc=AdrugvOQ_rIonmf_vQ5BJMUzgDT8ArgZv6nzu4AsH4tPph-3YNbC-Yq9aoEgxIqn9b4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pPyjzacRCrMrvJsLs7WCSw&_nc_tpa=Q5bMBQIfzZyILb9Ocmj2-BHBmtFDu6jnIyI0ceHyxbQvTmUbOBu45YIj-GJyZY7sMuqtI3DgvfkUfcJDAg&oh=00_AQOX6EmOQ-BvWG6Fobi0n_p8qffsyTApARJ7kztAlOvDhQ&oe=6AE2D59A"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/85a318fd874e49bb3124.jpg",
+      "credit": "@meomuru_official",
+      "from": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c93d5b5ade56bcc683b0.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/05288fd350d27837296e.jpg",
+      "credit": "@meomuru_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/684592687_800793992874580_1364165936604287602_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4aQnJh484Y8Q7kNvwEnoy88&_nc_oc=AdonjZvrEr29PtAcar6C-L8SUOJVwF7q9SU8FTbSfbnCRPq5LttMqpUmgP50wiVYi2E&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=d0kBuRcc6KfqUoBe8oQBJA&_nc_tpa=Q5bMBQL89Drw44Z1PLlPuxsgz0CHgRf5bJdMoXA2dISbVVpO8aiGrFPhk9qPzfd7qnmDJmaTizO1eiOtoA&oh=00_AQNPB_FfD95xpxfwNonZL5sBTb1PxyZqIq-bLiIvYaVk0A&oe=6AE2C7F6"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c9dd5f8f87b13b9d942e.jpg",
+      "credit": "@meomuru_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/687170521_1597907077953368_1655842341605455517_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=U98Zi3VW3TsQ7kNvwEfgN6M&_nc_oc=AdrHt22GehIkkZ5vydPeRrDr6W6WyxDd4gyw6p5jsHIxFsvSAYM9TTSQq8_Qu-FcQPc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pPyjzacRCrMrvJsLs7WCSw&_nc_tpa=Q5bMBQKUNeXFCbBKaY-6Rkh5jGHzJztceH16a301kiMsDLXUYLQV33X7faZGii1tAvu74HtGwiDOljH_aw&oh=00_AQPaPl8SNZFqm4Fw_wXsJpJh4TP-t5wB6z6JmK-DNN4tmg&oe=6AE2A678"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/410836f8c25ae911d63b.jpg",
+      "credit": "@meomuru_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/649235736_807545621755534_1668780943431227987_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qljANh2Gi9AQ7kNvwHj63lo&_nc_oc=Adp2ZnGxZy8OQ0A9u3YXmwHIV5lhVzJzJOW2G3MQq3A1mqARy4szplqM-W0Rzr9VwB4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=d0kBuRcc6KfqUoBe8oQBJA&_nc_tpa=Q5bMBQLo6IBCmGYD9eqyks0YBZhBqhhXBg-EbIuxsWzARhK4W20oNOurvMfusX5hFcut22iP8JGPECYCCg&oh=00_AQOrFAI9kJ19GMyapzBC6PfWEpwGzLbjld0aIgptn_FyQQ&oe=6AE2BD0B"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c93d5b5ade56bcc683b0.jpg",
+      "credit": "@meomuru_official",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/684261489_17860544031688001_3657738032717772010_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yEtYgo6xA7gQ7kNvwF6L-qx&_nc_oc=AdpWHHQgFLy092229ZowRTEznVlI23fGkbURr6dfyGYWsPeHJX3S47mmlT25SIyFZ_8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=d0kBuRcc6KfqUoBe8oQBJA&oh=00_AQOjTTiIRwI17VXlKp2ZvMt79MlQWib-eX7TJ6DlgNxFmw&oe=6AE2C40E"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c9e1b7b96a0d66a274a9.jpg",
+      "credit": "@meomuru_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/764844873_17874932991688001_4836306317289766611_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=W8rc3DwfcvYQ7kNvwHHSMBa&_nc_oc=Adog1h9CToguCBDyJM6ciIdq7XKSMVhkoHdzt4r-n2wYUgfDCdzLPqn-sP5jwUSMwOs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pPyjzacRCrMrvJsLs7WCSw&oh=00_AQOuUkPIvmsw2EEHmw1yIEZFnbtUwUx-SHo4pwjBE2G7Cg&oe=6AE2B5C2"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/373a24f9f1f9a4f8ce77.jpg",
+      "credit": "@meomuru_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.71878-15/755246951_1744428146802978_1469112847643924519_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ucq41RT8yXsQ7kNvwEhpskx&_nc_oc=AdrugvOQ_rIonmf_vQ5BJMUzgDT8ArgZv6nzu4AsH4tPph-3YNbC-Yq9aoEgxIqn9b4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=pPyjzacRCrMrvJsLs7WCSw&_nc_tpa=Q5bMBQIfzZyILb9Ocmj2-BHBmtFDu6jnIyI0ceHyxbQvTmUbOBu45YIj-GJyZY7sMuqtI3DgvfkUfcJDAg&oh=00_AQOX6EmOQ-BvWG6Fobi0n_p8qffsyTApARJ7kztAlOvDhQ&oe=6AE2D59A"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "멜론 1위 노래에는|부른 사람이 없다",
+      "sub": "머무르 '꿈꾸던 어른이 되었나요?'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 1장(13일 오후 5시, 1위) 사진이 저해상도라 흐림 · 2장과 같은 장면이라 겹침 — 다른 사진으로 바꿀 것",
+     "1위는 13일 오후 5시 실시간 기준(일간·주간 아님) — 캡션에 시각을 그대로 둠",
+     "사진은 머무르 공식 계정 이미지(AI 생성으로 보임) — 실존 인물처럼 읽히지 않는지 볼 것"
+    ],
+    "research": [
+     {
+      "title": "톱스타뉴스 11/14 — 13일 오후 5시 멜론 TOP100 1위 · 6/23 발매 약 5개월 · 글로리웨이브 · 수노 · 기획·작사·프로듀싱 방향은 사람 · 음저협 신탁 미등록",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16276335"
+     },
+     {
+      "title": "더쎈뉴스 11/14 — '부른 사람 없는 노래'가 멜론 1위 · 멜론 앨범 소개에 보컬 수노 명시 · 글로리웨이브 · 저작권료 못 받음",
+      "link": "https://www.mhns.co.kr/news/articleView.html?idxno=769031"
+     },
+     {
+      "title": "위키트리 10/15 — 기획·작사·전체 프로듀싱은 머무르, 멜로디·보컬에 AI",
+      "link": "https://www.wikitree.co.kr/articles/1166383"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/4244740f81229ece4220.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/e7ad988cceb0c2ebcc1d.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ca26ddbf80f0d8a5e961.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/8303f53d5c6c68e40ecf.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a5f488906138a4a78618.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/4244740f81229ece4220.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-15T16:20+09:00",
+     "v": {
+      "A": "40987fa8"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "회차 목표 '인물해부' · 멜론 1위 AI 목소리를 '누가 만들었고 누가 못 받나'로 해부",
+    "at": "2026-11-15T16:20+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 5
+  },
+  {
+   "source": {
+    "id": "claude:minheejin-suit-dismissed",
+    "account": "헤럴드경제",
+    "url": "https://biz.heraldcorp.com/article/10936750",
+    "image": null,
+    "head": "빌리프랩·쏘스뮤직, 민희진 상대 25억 손배소 1심서 패소",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-15T16:20+09:00",
+   "key": "6a2e151a",
+   "by": "claude",
+   "subjects": [
+    "민희진"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "빌리프랩·쏘스뮤직의 25억 손배소 1심 모두 기각 — 재판부 '창작물 유사성 비평은 표현의 자유'",
+    "why": "갈등·반응 뉴스 6건 · 2024년 4월 기자회견에서 시작된 소송의 첫 판단 · 양측 항소·입장 확인"
+   },
+   "added": "claude",
+   "added_at": "2026-11-15T16:20+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n빌리프랩과 쏘스뮤직이 민희진(@min.hee.jin) 전 어도어 대표를 상대로 낸 손해배상 소송이 1심에서 모두 기각됐습니다.\n\n서울서부지법 민사12부는 13일 빌리프랩의 20억 원, 쏘스뮤직의 5억 원 청구를 받아들이지 않았는데요, 2024년 4월 기자회견에서 민 전 대표가 아일릿(@illit_official)이 뉴진스(@newjeans_official)의 콘셉트를 표절했다고 주장한 것이 소송의 시작이었습니다. 재판부는 창작물이 닮았는지를 두고 비평하고 의견을 밝히는 일은 표현의 자유로 폭넓게 보장돼야 한다고 봤고, 민 전 대표가 빌리프랩을 상대로 낸 반소도 함께 기각했습니다.\n\n빌리프랩은 \"피해자는 있지만 가해자는 없다는 취지의 판결\"이라며 유감을 밝혔고, 쏘스뮤직과 함께 항소하겠다고 했습니다. 민 전 대표 측은 무리한 소송이었다며 상식적인 판단이라고 평가했습니다.\n\n#PLOT #민희진 #빌리프랩 #쏘스뮤직 #아일릿 #뉴진스\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/bec8fc87c5942ee505a2.jpg\n제목: 민희진 상대 25억 소송,|1심 모두 기각\n부제: 빌리프랩·쏘스뮤직 \"즉각 항소\"\n출처: 헤럴드경제\n",
+    "caption": "빌리프랩과 쏘스뮤직이 민희진(@min.hee.jin) 전 어도어 대표를 상대로 낸 손해배상 소송이 1심에서 모두 기각됐습니다.\n\n서울서부지법 민사12부는 13일 빌리프랩의 20억 원, 쏘스뮤직의 5억 원 청구를 받아들이지 않았는데요, 2024년 4월 기자회견에서 민 전 대표가 아일릿(@illit_official)이 뉴진스(@newjeans_official)의 콘셉트를 표절했다고 주장한 것이 소송의 시작이었습니다. 재판부는 창작물이 닮았는지를 두고 비평하고 의견을 밝히는 일은 표현의 자유로 폭넓게 보장돼야 한다고 봤고, 민 전 대표가 빌리프랩을 상대로 낸 반소도 함께 기각했습니다.\n\n빌리프랩은 \"피해자는 있지만 가해자는 없다는 취지의 판결\"이라며 유감을 밝혔고, 쏘스뮤직과 함께 항소하겠다고 했습니다. 민 전 대표 측은 무리한 소송이었다며 상식적인 판단이라고 평가했습니다.\n\n#PLOT #민희진 #빌리프랩 #쏘스뮤직 #아일릿 #뉴진스",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/bec8fc87c5942ee505a2.jpg",
+      "credit": "헤럴드경제",
+      "from": "https://wimg.heraldcorp.com/news/cms/2026/11/13/rcv.YNA.20250911.PYH2025091116840001300_P1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/bec8fc87c5942ee505a2.jpg",
+      "credit": "헤럴드경제",
+      "from": "https://wimg.heraldcorp.com/news/cms/2026/11/13/rcv.YNA.20250911.PYH2025091116840001300_P1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "민희진 상대 25억 소송,|1심 모두 기각",
+      "sub": "빌리프랩·쏘스뮤직 \"즉각 항소\""
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "기사형 — 표지 한 장 · 사진은 헤럴드경제 기사 사진(민희진 사진 DB 없음) — 다른 사람이 나오면 바꿀 것"
+    ],
+    "research": [
+     {
+      "title": "헤럴드경제 11/13 — 서울서부지법 민사12부 · 빌리프랩 20억·쏘스뮤직 5억 기각 · 반소 50억 기각 · 2024년 4월 기자회견 · 빌리프랩 \"피해자는 있지만 가해자는 없다는 취지의 판결이 나온 것은 매우 유감\" · 항소",
+      "link": "https://biz.heraldcorp.com/article/10936750"
+     },
+     {
+      "title": "스타데일리뉴스 11/13 — 창작물 유사성·모방 비평은 '표현의 자유로서 폭넓게 보장' · 민 측 '전략적 봉쇄 소송' · 상식적 판단",
+      "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=602133"
+     },
+     {
+      "title": "네이트(종합) — 양측 청구 기각",
+      "link": "https://m.news.nate.com/view/20261113n28153"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/84caf4e59cb85ec78b15.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ba8f826f67d00e9574c5.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/84caf4e59cb85ec78b15.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-15T16:20+09:00",
+     "v": {
+      "A": "bc400191"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -942,7 +1333,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 4,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1074,14 +1465,14 @@
     "need_today": 0,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-15T11:53+09:00"
+  "at": "2026-11-15T16:20+09:00"
  },
  "queue": {
-  "next": "2026-11-15T11:55+09:00",
+  "next": "2026-11-15T16:22+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-12T19:35+09:00"
@@ -1120,7 +1511,7 @@
     "to": 21,
     "at": "19:30",
     "mult": 2.21,
-    "median": 1.91,
+    "median": 1.93,
     "n": 28
    },
    {
