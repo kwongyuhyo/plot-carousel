@@ -1,18 +1,7 @@
 {
  "schema": 1,
- "generated_at": "2026-11-15 22:04 KST",
+ "generated_at": "2026-11-16 15:05 KST",
  "weeks": [
-  {
-   "week": "2026-W38",
-   "posts": 12,
-   "reach": 487260,
-   "saved": 1334,
-   "shares": 9195,
-   "followers": 2977,
-   "followers_delta": 147,
-   "reach_total": 1581821,
-   "top": "https://www.instagram.com/reel/DdTi4TLvlmq/"
-  },
   {
    "week": "2026-W40",
    "posts": 8,
@@ -89,6 +78,17 @@
    "followers_delta": 15,
    "reach_total": 412516,
    "top": "https://www.instagram.com/reel/DfZZIpiiAjB/"
+  },
+  {
+   "week": "2026-W47",
+   "posts": 8,
+   "reach": 24000,
+   "saved": 39,
+   "shares": 720,
+   "followers": 3090,
+   "followers_delta": -16,
+   "reach_total": 289958,
+   "top": "https://www.instagram.com/p/DfjOpp-FF_5/"
   }
  ],
  "kinds": [
@@ -103,30 +103,30 @@
   },
   {
    "kind": "갈등·반응",
-   "n": 32,
-   "weeks": 8,
-   "multiple": 1.14,
-   "low": 0.9,
-   "high": 1.28,
+   "n": 33,
+   "weeks": 9,
+   "multiple": 1.17,
+   "low": 0.91,
+   "high": 1.38,
    "stable": false
   },
   {
    "kind": "기타",
-   "n": 97,
-   "weeks": 13,
-   "multiple": 1.06,
+   "n": 101,
+   "weeks": 14,
+   "multiple": 1.05,
    "low": 1.03,
-   "high": 1.12,
+   "high": 1.1,
    "stable": true
   },
   {
    "kind": "발매·신보",
-   "n": 82,
-   "weeks": 12,
-   "multiple": 0.96,
+   "n": 85,
+   "weeks": 13,
+   "multiple": 0.97,
    "low": 0.93,
-   "high": 0.99,
-   "stable": true
+   "high": 1.01,
+   "stable": false
   },
   {
    "kind": "공연·페스티벌",
@@ -273,6 +273,62 @@
   }
  ],
  "published": [
+  {
+   "id": "DfjOpp-FF_5",
+   "week": "2026-W47",
+   "kind": "갈등·반응",
+   "reach": 9687,
+   "head": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.\n\n검찰은 그가 집행유예 기간이던 지난해 12월부터 올해 3"
+  },
+  {
+   "id": "DfjRE3UITYV",
+   "week": "2026-W47",
+   "kind": "기타",
+   "reach": 1993,
+   "head": "리센느(@rescene_official)를 만든 더뮤즈엔터테인먼트 이주헌 대표가 '2026 KGMA' 첫날 베스트 프로듀서상을 받고 소감 도중 "
+  },
+  {
+   "id": "DfjUY7dD3oR",
+   "week": "2026-W47",
+   "kind": "기타",
+   "reach": 656,
+   "head": "리센느(@rescene_official)가 '2026 KGMA'에서 최고 영예인 그랜드 아너스 초이스를 포함해 4관왕에 올랐습니다.\n\n지난 7일"
+  },
+  {
+   "id": "Dfj1n2fmU8T",
+   "week": "2026-W47",
+   "kind": "기타",
+   "reach": 928,
+   "head": "pH-1(@ph1boyyy)이 유튜브 채널을 엽니다.\n\npH-1은 인스타그램에 스튜디오 모닥과 함께 유튜브를 시작한다고 알렸는데요, 채널 이름은"
+  },
+  {
+   "id": "DflkNzRClrt",
+   "week": "2026-W47",
+   "kind": "발매·신보",
+   "reach": 7728,
+   "head": "양홍원(yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보]를 11월 10일 발매했습니다.\n\n판다곰은 2021년"
+  },
+  {
+   "id": "DfmfNZekSdS",
+   "week": "2026-W47",
+   "kind": "발매·신보",
+   "reach": 1079,
+   "head": "존박(@johnparkgram)과 곽진언의 '맥도날드 랩'이 다른 사람의 이름으로 해외 음원 사이트에 올라왔습니다.\n\n지난달 23일 존박의 유튜"
+  },
+  {
+   "id": "DfmfbYaoRK5",
+   "week": "2026-W47",
+   "kind": "기타",
+   "reach": 479,
+   "head": "아이브(@ivestarship)가 미국 빌보드의 메인 앨범 차트 '빌보드 200'에 처음 이름을 올렸습니다.\n\n미니앨범 [Looks Can Ki"
+  },
+  {
+   "id": "Dfo2q0aOWgc",
+   "week": "2026-W47",
+   "kind": "발매·신보",
+   "reach": 1450,
+   "head": "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화'의 후반부입니다.\n\n이 곡에 나오는 '미쳐가지고'는 아내 원현주의 인스타그램 아이"
+  },
   {
    "id": "DfWOIaHGbw0",
    "week": "2026-W46",
@@ -1616,70 +1672,14 @@
    "kind": "갈등·반응",
    "reach": 2504,
    "head": "아이유가 컴백에 앞서 영상을 공개했습니다.\n\n아이유(@dlwlrma)가 9월 10일 오후 6시 새 디지털 싱글을 발매합니다. 소속사 이담엔터테인"
-  },
-  {
-   "id": "Dc5x8J7j-8I",
-   "week": "2026-W37",
-   "kind": "추천·모음",
-   "reach": 8323,
-   "head": "예능으로 먼저 알게 됐다면, 음악은 지금부터입니다.\n\n<쇼미더머니12>를 비롯해 〈래퍼 여친 구함〉까지 올해 정말 다양한 프로그램으로 우리 앞에"
-  },
-  {
-   "id": "Dc8LxwIv_Xg",
-   "week": "2026-W37",
-   "kind": "기타",
-   "reach": 20596,
-   "head": "빅나티(@bignaughtyboi)가 ‘폴킴(@pkalbum)의 남은밤’에 출연해서 스파이더맨에 대한 이야기를 했습니다.\n스파이더맨을 보고 펑펑"
-  },
-  {
-   "id": "Dc8R1W-vgB8",
-   "week": "2026-W37",
-   "kind": "공연·페스티벌",
-   "reach": 3102,
-   "head": "브루노 마스(@brunomars)가 2027년 5월 내한을 확정하고 MBC 14F와 인터뷰를 가졌는데요,\n서울 공연에서 준비한 특별 무대에 대한"
-  },
-  {
-   "id": "Dc8ZaIBy9Hg",
-   "week": "2026-W37",
-   "kind": "기타",
-   "reach": 12697,
-   "head": "두 사람이 드디어 같이 춤을 췄습니다.\n\n식케이(@younghotyellow94)와 그의 연인이자, 댄서 우와(@uwakitadera)가 함께 "
-  },
-  {
-   "id": "Dc8hsMQD6yN",
-   "week": "2026-W37",
-   "kind": "공연·페스티벌",
-   "reach": 1011,
-   "head": "도시 하나가 일주일을 통째로 내줬습니다.\n\n로스앤젤레스시가 9월 1일부터 8일까지를 'BTS 위크'로 공식 선포했습니다. 방탄소년단(@bts.b"
-  },
-  {
-   "id": "Dc-3gvGjywQ",
-   "week": "2026-W37",
-   "kind": "인물해부",
-   "reach": 140427,
-   "head": "리센느 제나 나무위키 털기\n\n올해 가장 자주 언급된 걸그룹은 역시 리센느인데요.\n\n리센느(@rescene_official)의 막내 제나는 경주 "
-  },
-  {
-   "id": "Dc--o3mj5OO",
-   "week": "2026-W37",
-   "kind": "갈등·반응",
-   "reach": 9482,
-   "head": "리드머가 1.5점을 줬습니다.\n\n지난 8월 28일 발매된 수퍼비의 정규 5집 [before the m.s.g.a]가 리드머에서 5점 만점에 1."
-  },
-  {
-   "id": "DdBpmENPa1l",
-   "week": "2026-W37",
-   "kind": "인물해부",
-   "reach": 88279,
-   "head": "양홍원의 꿈은 본인이 아니었다.\n\n원현주에 대하여 수줍음이 많고 말수도 적던 사람이 어떻게 이렇게 달라졌냐는 스윙스의 질문에, \"엄마가 돼서\"라"
   }
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-15 19:04 KST"
+  "daily": "2026-11-15 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-15T21:33:16+09:00",
+  "fetched_at": "2026-11-16T15:05:10+09:00",
   "posts": [
    {
     "t": "2026-11-12T19:35+09:00",
@@ -2210,60 +2210,30 @@
     "t": "2026-10-26T16:30+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "사전심의를 끝낸 노래가 다시 '사전'이라는 말 앞에 섰습니다."
-   },
-   {
-    "t": "2026-10-26T14:17+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "로제(@roses_are_rosie)가 조니워커의 새 글로벌 협업 파트너"
-   },
-   {
-    "t": "2026-10-26T11:32+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "인스파이어 아레나가 12월부터 '네이버 아레나'로 이름을 바꿉니다."
-   },
-   {
-    "t": "2026-10-26T10:29+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "아이브가 오늘(26일) 오후 6시 미니앨범 [Looks Can Kill]"
-   },
-   {
-    "t": "2026-10-26T08:30+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "혁오가 아직 발표하지 않은 신곡을 500여 명 앞에서 먼저 들려줍니다."
-   },
-   {
-    "t": "2026-10-26T08:00+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "애플 뮤직의 새 로고는 소리가 직접 만들었습니다."
-   },
-   {
-    "t": "2026-10-26T04:07+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "바이스벌사(@viceversartist)가 신곡 'LMFAO'를 발표했습"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 391,
-  "posted": 128,
-  "posts": 149,
-  "rate": 0.33,
+  "drafts": 377,
+  "posted": 127,
+  "posts": 146,
+  "rate": 0.34,
   "adopted_mult": 0.99,
   "own_mult": 1.03,
   "lanes": {
-   "정보": {
-    "drafts": 267,
-    "posted": 111,
-    "mult": 1.0
-   },
    "클립": {
-    "drafts": 59,
-    "posted": 7,
+    "drafts": 55,
+    "posted": 9,
     "mult": 1.05
    },
+   "정보": {
+    "drafts": 257,
+    "posted": 108,
+    "mult": 1.0
+   },
    "재미": {
-    "drafts": 29,
+    "drafts": 28,
     "posted": 4,
     "mult": 1.43
    },
@@ -2271,38 +2241,43 @@
     "drafts": 36,
     "posted": 6,
     "mult": 0.78
+   },
+   "기타": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
    }
   },
   "corners": {
-   "tteolgi": {
-    "drafts": 14,
-    "posted": 3,
-    "mult": 0.87
-   },
-   "followup": {
-    "drafts": 24,
-    "posted": 6,
-    "mult": 0.91
-   },
    "mal": {
-    "drafts": 55,
-    "posted": 7,
-    "mult": 0.93
+    "drafts": 51,
+    "posted": 8,
+    "mult": 0.89
    },
    "news": {
-    "drafts": 193,
-    "posted": 83,
-    "mult": 1.05
+    "drafts": 189,
+    "posted": 82,
+    "mult": 1.12
+   },
+   "followup": {
+    "drafts": 20,
+    "posted": 7,
+    "mult": 0.95
+   },
+   "tteolgi": {
+    "drafts": 12,
+    "posted": 1,
+    "mult": 0.87
    },
    "song": {
     "drafts": 14,
     "posted": 7,
-    "mult": 0.85
+    "mult": 0.96
    },
    "spotlight": {
     "drafts": 8,
     "posted": 2,
-    "mult": 0.8
+    "mult": 0.84
    },
    "again": {
     "drafts": 2,
@@ -2312,7 +2287,7 @@
    "newalbums": {
     "drafts": 8,
     "posted": 4,
-    "mult": 1.36
+    "mult": 1.25
    },
    "anniv": {
     "drafts": 26,
@@ -2325,12 +2300,12 @@
     "mult": 0.77
    },
    "meet": {
-    "drafts": 12,
+    "drafts": 13,
     "posted": 4,
     "mult": 1.05
    },
    "intro": {
-    "drafts": 22,
+    "drafts": 21,
     "posted": 3,
     "mult": 0.78
    },
@@ -2358,7 +2333,7 @@
     "posted": "DfjRE3UITYV",
     "head": "리센느(@rescene_official)를 만든 더뮤즈엔터테인먼트 이주헌 대표가 '2026",
     "url": "https://www.instagram.com/reel/DfjRE3UITYV/",
-    "mult": 2.83
+    "mult": 1.58
    },
    {
     "day": "2026-11-08",
@@ -2371,7 +2346,7 @@
     "posted": "DfeJitmD9ro",
     "head": "마이 케미컬 로맨스(@mychemicalromance)가 18년 만에 한국 무대에 섰습니다",
     "url": "https://www.instagram.com/p/DfeJitmD9ro/",
-    "mult": 0.6
+    "mult": 0.67
    },
    {
     "day": "2026-11-10",
@@ -2384,7 +2359,7 @@
     "posted": "DflkNzRClrt",
     "head": "양홍원(yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보",
     "url": "https://www.instagram.com/p/DflkNzRClrt/",
-    "mult": 9.26
+    "mult": 6.11
    },
    {
     "day": "2026-11-10",
@@ -2397,7 +2372,7 @@
     "posted": "DfjOpp-FF_5",
     "head": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.",
     "url": "https://www.instagram.com/p/DfjOpp-FF_5/",
-    "mult": 11.99
+    "mult": 7.66
    },
    {
     "day": "2026-11-10",
@@ -2410,7 +2385,7 @@
     "posted": "Dfj1n2fmU8T",
     "head": "pH-1(@ph1boyyy)이 유튜브 채널을 엽니다.",
     "url": "https://www.instagram.com/p/Dfj1n2fmU8T/",
-    "mult": 1.17
+    "mult": 0.73
    },
    {
     "day": "2026-11-10",
@@ -2423,7 +2398,7 @@
     "posted": "DfmfNZekSdS",
     "head": "존박(@johnparkgram)과 곽진언의 '맥도날드 랩'이 다른 사람의 이름으로 해외 음",
     "url": "https://www.instagram.com/p/DfmfNZekSdS/",
-    "mult": 1.03
+    "mult": 0.85
    },
    {
     "day": "2026-11-10",
@@ -2436,7 +2411,7 @@
     "posted": "Dfo2q0aOWgc",
     "head": "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화'의 후반부입니다.",
     "url": "https://www.instagram.com/reel/Dfo2q0aOWgc/",
-    "mult": null
+    "mult": 1.15
    },
    {
     "day": "2026-11-11",
@@ -2449,12 +2424,12 @@
     "posted": "DfmfbYaoRK5",
     "head": "아이브(@ivestarship)가 미국 빌보드의 메인 앨범 차트 '빌보드 200'에 처음 ",
     "url": "https://www.instagram.com/p/DfmfbYaoRK5/",
-    "mult": 0.44
+    "mult": 0.38
    }
   ]
  },
  "follow": {
-  "at": "2026-11-15T22:04+09:00",
+  "at": "2026-11-16T15:05+09:00",
   "d30": {
    "days": 30,
    "follows": 13.6,
@@ -2513,63 +2488,63 @@
    },
    {
     "week": "2026-W46",
-    "follows": 50,
-    "unfollows": 61,
+    "follows": 64,
+    "unfollows": 75,
     "net": -11,
-    "days": 5
+    "days": 6
    }
   ],
   "feed": {
    "n": 187,
-   "reach": 3667322,
+   "reach": 3668030,
    "follows": 490,
    "per1k": 0.13
   },
   "kinds": [
    {
     "kind": "인물해부",
-    "n": 15,
-    "reach": 790448,
-    "follows": 138,
-    "per1k": 0.17,
-    "visits1k": 4.0
+    "n": 14,
+    "reach": 536479,
+    "follows": 96,
+    "per1k": 0.18,
+    "visits1k": 3.4
    },
    {
     "kind": "기타",
     "n": 37,
-    "reach": 287915,
+    "reach": 287968,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
     "kind": "갈래 모름",
-    "n": 37,
-    "reach": 1988625,
-    "follows": 247,
-    "per1k": 0.12,
-    "visits1k": 3.1
+    "n": 41,
+    "reach": 2270975,
+    "follows": 293,
+    "per1k": 0.13,
+    "visits1k": 3.4
    },
    {
     "kind": "발매·신보",
     "n": 41,
-    "reach": 107414,
+    "reach": 107681,
     "follows": 12,
     "per1k": 0.11,
     "visits1k": 2.8
    },
    {
     "kind": "갈등·반응",
-    "n": 22,
-    "reach": 335828,
+    "n": 21,
+    "reach": 324806,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
    },
    {
     "kind": "공연·페스티벌",
-    "n": 32,
-    "reach": 140517,
+    "n": 31,
+    "reach": 138733,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
@@ -2634,7 +2609,7 @@
   "reels": {
    "reels_per1k": 0.2,
    "feed_per1k": 0.03,
-   "base": 15.1,
+   "base": 14.7,
    "days": 59
   },
   "spikes": [
