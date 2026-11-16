@@ -192,13 +192,13 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "회차 목표 '인물해부' · 뉴스 급상승 1위(기사 50건+ · 평소 7) · 90일간 안 다룬 이름 · 사람의 말(청하의 부름·자체 계약서·'다시 돌아온다')로 엮은 10년 정리",
-    "at": "2026-11-16T10:06+09:00"
-   },
    "corner_name": "입문 가이드",
-   "corner_no": 4
+   "corner_no": 4,
+   "pick": {
+    "rank": 3,
+    "why": "MMA 주말의 다른 중심 · 청하의 부름·자체 계약서·'다시 돌아온다'로 엮은 10년 정리",
+    "at": "2026-11-16T16:23+09:00"
+   }
   },
   {
    "source": {
@@ -389,11 +389,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "의외의 만남(최예나 × 일본 그룹 큐티스트리트) · 내일 18시 발매 직전 · 태연·한로로·이수현으로 이어지는 연결고리형",
-    "at": "2026-11-16T10:06+09:00"
-   },
    "corner_name": "만나는 법",
    "corner_no": 5
   },
@@ -546,11 +541,6 @@
       "A": "08a41a3f"
      }
     }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "고정 연재 「그날의 앨범」 · 11/18 발매 10주년 · 10년 만의 솔로작과 내년 5월 6회 내한으로 지금과 이어짐",
-    "at": "2026-11-16T10:06+09:00"
    },
    "corner_name": "그날의 앨범",
    "corner_no": 3
@@ -790,7 +780,462 @@
     }
    },
    "corner_name": "그 말",
-   "corner_no": 8
+   "corner_no": 8,
+   "pick": {
+    "rank": 2,
+    "why": "숏폼 · 스윙스 '놀토' 녹화 중단 갈등 뉴스 8건 · 본인 채널의 말이라 클립 위험 낮음",
+    "at": "2026-11-16T16:23+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:cortis-mma-record",
+    "account": "헤럴드뮤즈",
+    "url": "https://www.heraldmuse.com/article/10938246",
+    "image": null,
+    "head": "코르티스, 'MMA2026' 대상 '올해의 레코드' 수상 \"모두가 꿈꿔온 길\"",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-16T16:23+09:00",
+   "key": "bc4ba1fe",
+   "by": "claude",
+   "subjects": [
+    "코르티스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "데뷔 후 처음 선 MMA에서 '올해의 레코드' — 2025년 8월 'What You Want'부터 'REDRED', 7월 KMA·9월 TMA를 거쳐 15개월의 정리",
+    "why": "뉴스 급상승(기사 19건 · 평소 2) · 회차 목표 '인물해부' · 90일간 안 다룬 이름"
+   },
+   "added": "claude",
+   "added_at": "2026-11-16T16:23+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n코르티스(@cortis)가 데뷔 후 처음 선 'MMA'에서 대상을 받았습니다.\n\n지난 15일 '2026 MMA'에서 '올해의 레코드'를 포함해 3관왕에 올랐는데요, 코르티스는 앞서 7월 KMA와 9월 TMA에서도 '레코드 오브 더 이어'를 받았습니다.\n\n시작은 2025년 8월의 'What You Want'였습니다. 다섯 멤버가 2년 동안 함께 만든 300여 곡에서 데뷔 앨범을 골랐고, 4월의 'REDRED'로 여름을 지나 데뷔 15개월 만에 연말 시상식의 대상까지 닿았습니다.\n\n멤버들은 \"코어들이 우리의 꿈을 이뤄준 것\"이라며 팬들에게 공을 돌렸습니다.\n\n#PLOT #코르티스 #CORTIS #REDRED #MMA2026\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0190ca99527139ce3705.jpg\n제목: 데뷔 첫 MMA에서|대상 받은 코르티스\n부제: 'What You Want'에서 '올해의 레코드'까지\n출처: @cortis\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/26f5952dde555b854f27.jpg\n소제목: 2025년 8월, 다섯 명\n본문: 빅히트 뮤직의 마틴·제임스·주훈·성현·건호는 2025년 **8월 18일** 'What You Want'로 데뷔했습니다.||9월 첫 미니앨범 [COLOR OUTSIDE THE LINES]에 실린 다섯 곡은 멤버들이 2년 동안 함께 만든 **300여 곡** 가운데 고른 것이었는데요, 곡을 같이 쓰는 공동 창작이 이 팀의 방식입니다.\n출처: @cortis\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f0699d8d789991b09469.jpg\n소제목: 'REDRED'의 여름\n본문: 4월 선공개된 미니 2집 [GREENGREEN]의 타이틀곡 'REDRED'는 멜론 일간·주간 차트 1위에 올랐고, 스포티파이 한국 일간 차트에서는 **121번** 1위를 했습니다.||틱톡 '2026 올해의 여름 노래' 한국 차트에서도 1위에 올랐습니다.\n출처: @cortis\n\n[슬라이드]\n형식: 정리\n말한이: KMA · TMA\n소스: \n소제목: 7월, 그리고 9월\n본문: 7월 25일 KMA에서 코르티스는 데뷔 **11개월** 만에 'RECORD OF THE YEAR'를 받았습니다.||9월 19일 부산에서 열린 TMA에서도 같은 이름의 대상 '레코드 오브 더 이어'와 올해의 아티스트, 넥스트 리더까지 **3관왕**에 올랐습니다.||출처: 스포츠경향 · 더팩트\n출처: \n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f7fe9b39471f68e26607.jpg\n소제목: 처음 선 MMA\n본문: 지난 15일 고척스카이돔에서 열린 '2026 MMA'는 코르티스가 데뷔 후 처음 참석한 MMA였는데요, 이 자리에서 '올해의 레코드'와 톱10, 글로벌 톱10을 받았습니다.||멤버들은 \"코어들이 우리의 꿈을 이뤄준 것\"이라며 팬들에게 공을 돌렸습니다.\n출처: @cortis\n",
+    "caption": "코르티스(@cortis)가 데뷔 후 처음 선 'MMA'에서 대상을 받았습니다.\n\n지난 15일 '2026 MMA'에서 '올해의 레코드'를 포함해 3관왕에 올랐는데요, 코르티스는 앞서 7월 KMA와 9월 TMA에서도 '레코드 오브 더 이어'를 받았습니다.\n\n시작은 2025년 8월의 'What You Want'였습니다. 다섯 멤버가 2년 동안 함께 만든 300여 곡에서 데뷔 앨범을 골랐고, 4월의 'REDRED'로 여름을 지나 데뷔 15개월 만에 연말 시상식의 대상까지 닿았습니다.\n\n멤버들은 \"코어들이 우리의 꿈을 이뤄준 것\"이라며 팬들에게 공을 돌렸습니다.\n\n#PLOT #코르티스 #CORTIS #REDRED #MMA2026",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0190ca99527139ce3705.jpg",
+      "credit": "@cortis",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/902585909_1390380186275076_8311591655007702251_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NnGQrVSM5qcQ7kNvwFvZaWc&_nc_oc=Adp7emae9yIKEZSu36Wg0GLUxl9gMdZGH1We0emoNytvwdeq2jt_d4cmuh3rf_CAeR4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=A_2W7Ih_ckVWJt2Gv79eKw&_nc_tpa=Q5bMBQL4JK4o13wnQdRjLzeoqC4kw0QAf7h9rLrdm9n0FyDoUFk3iBMGKkYNfa-fumlNhcuVPnIOHJKpKQ&_nc_ct=RQosPBUKFQwAAAA&oh=00_AQRC632P78IvJ1s-lWFpR-BeXUFVUzlKrmyp4d7YDXyRuA&oe=6B003F3C"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/26f5952dde555b854f27.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/883374989_17923825512490405_7569570686528326589_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kcdSbHcecBgQ7kNvwE_AetC&_nc_oc=Ado5RszGHp8aLBlUVeGXqcXdHn2KV2lc6yWdXRpG6VdOss0I0q00FcM78PIqbUDncaQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qobc_it7Y9QFBDXEcMy_6w&oh=00_AQSXmYidAPQ46-TLQAbF-kdnM9SwjmJenDNzMroEYF9mJA&oe=6AEE3E1B"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f0699d8d789991b09469.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863407347_17922015090490405_7319708750114950218_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GtmZ9E6dzmoQ7kNvwEwZgHl&_nc_oc=AdqXOYcKYIowyC0HQDsSWqBsd5b6599nu7LYQ3HP1N5yxM7tRAA1QGIexNnvMzzSmoE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=E6CD_GF39ClKFmQJrEZr8A&oh=00_AQNX0HMU9f25l91mr6TCKqx-4olVhTBsAvCv0KVTabAdCw&oe=6AE137C0"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f7fe9b39471f68e26607.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869220972_17922729432490405_4530751307284531651_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3aXMeKAz2MQQ7kNvwEl5qjE&_nc_oc=AdrJcm-RHs1WOPKmRIPFzPB05GkXZn4LSeow_qWoXrxcQSKFtVR55NVXPuGM_tT0JZs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=HrUEMllcBoq41MxXBIOBkA&oh=00_AQP3-OW4F_AHkMo9NkIc4FZEyymB9XznLs6kHAi54LFT5A&oe=6AE62CA4"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/33d87d93fe498ce99f21.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/902585834_17924922399490405_563188964242224900_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=-NgHD4Y6TcMQ7kNvwEQ9mbY&_nc_oc=Adpq7XRvRiFr4328FlFf8a3iPpHqssghBrtlYjKy2u7-CWb8hd_FrDRq3w08duCNeZI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=9aEE2Edh-vmobIqJ1NtdeQ&oh=00_AQTOh7GS2XIR-EvsN0HltShdOUN0evcJZyW3pz8EKUsY6A&oe=6AF888CD"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/605b416b1f5e861896fc.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/892040878_17924806635490405_8447417129615245606_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=zG7mK6XrakYQ7kNvwGuBU2k&_nc_oc=AdpulJaYDd5Lop2p0KXlvKBVaRusy8JHk0zIxrzzJTNFU0gwUW4W1zYG05jTDdwa9Dg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=C1JaRvdfVogpLWkzX9sEMg&oh=00_AQQusH0gAubd6JOW3IesdDs9ttU4bR5J4Mysj1elqvHsFA&oe=6AF79F57"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/cf63daefc37025bcf359.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/877821103_17924092053490405_1090779168244972325_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Qs7pRR9pszkQ7kNvwEjODU7&_nc_oc=AdrhUQtz3kilhXLWieQakpbXrkUoCoyovxNRZ8wN0KTMrr8ZYQgI1KU-b9ZbKFDe6CE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=IE4kHLAFB2eO8EHh03g8zQ&oh=00_AQRvIxBbC6k3DkjkU-oS8aMNEJWPMn75mXC9GcF6GeIdqg&oe=6AF106D8"
+     },
+     {
+      "url": "https://i.ibb.co/TxbM9NhM/61b9d41e93ad.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/865107442_17923673913490405_6802982468773663150_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Rd6ZqnZFAUEQ7kNvwFPStKY&_nc_oc=Adrq_aox6zqIlqlkfLnCFu9TwESCVoVxW_x_4077_ukKNC45iGEIGztWWaRFEIulqeI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=33ARexq0mRvGfAuMCXcaYg&oh=00_AQSybFgvzqOY3rMDaO_nHAd4bxAbZ0z3_OnIwDrpD2pkJg&oe=6AED0DB4"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0190ca99527139ce3705.jpg",
+      "credit": "@cortis",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/902585909_1390380186275076_8311591655007702251_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=NnGQrVSM5qcQ7kNvwFvZaWc&_nc_oc=Adp7emae9yIKEZSu36Wg0GLUxl9gMdZGH1We0emoNytvwdeq2jt_d4cmuh3rf_CAeR4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=A_2W7Ih_ckVWJt2Gv79eKw&_nc_tpa=Q5bMBQL4JK4o13wnQdRjLzeoqC4kw0QAf7h9rLrdm9n0FyDoUFk3iBMGKkYNfa-fumlNhcuVPnIOHJKpKQ&_nc_ct=RQosPBUKFQwAAAA&oh=00_AQRC632P78IvJ1s-lWFpR-BeXUFVUzlKrmyp4d7YDXyRuA&oe=6B003F3C"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/26f5952dde555b854f27.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/883374989_17923825512490405_7569570686528326589_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kcdSbHcecBgQ7kNvwE_AetC&_nc_oc=Ado5RszGHp8aLBlUVeGXqcXdHn2KV2lc6yWdXRpG6VdOss0I0q00FcM78PIqbUDncaQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qobc_it7Y9QFBDXEcMy_6w&oh=00_AQSXmYidAPQ46-TLQAbF-kdnM9SwjmJenDNzMroEYF9mJA&oe=6AEE3E1B"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f0699d8d789991b09469.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863407347_17922015090490405_7319708750114950218_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GtmZ9E6dzmoQ7kNvwEwZgHl&_nc_oc=AdqXOYcKYIowyC0HQDsSWqBsd5b6599nu7LYQ3HP1N5yxM7tRAA1QGIexNnvMzzSmoE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=E6CD_GF39ClKFmQJrEZr8A&oh=00_AQNX0HMU9f25l91mr6TCKqx-4olVhTBsAvCv0KVTabAdCw&oe=6AE137C0"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f7fe9b39471f68e26607.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869220972_17922729432490405_4530751307284531651_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3aXMeKAz2MQQ7kNvwEl5qjE&_nc_oc=AdrJcm-RHs1WOPKmRIPFzPB05GkXZn4LSeow_qWoXrxcQSKFtVR55NVXPuGM_tT0JZs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=HrUEMllcBoq41MxXBIOBkA&oh=00_AQP3-OW4F_AHkMo9NkIc4FZEyymB9XznLs6kHAi54LFT5A&oe=6AE62CA4"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/33d87d93fe498ce99f21.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/902585834_17924922399490405_563188964242224900_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMiJ9&_nc_ohc=-NgHD4Y6TcMQ7kNvwEQ9mbY&_nc_oc=Adpq7XRvRiFr4328FlFf8a3iPpHqssghBrtlYjKy2u7-CWb8hd_FrDRq3w08duCNeZI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=9aEE2Edh-vmobIqJ1NtdeQ&oh=00_AQTOh7GS2XIR-EvsN0HltShdOUN0evcJZyW3pz8EKUsY6A&oe=6AF888CD"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/605b416b1f5e861896fc.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/892040878_17924806635490405_8447417129615245606_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=zG7mK6XrakYQ7kNvwGuBU2k&_nc_oc=AdpulJaYDd5Lop2p0KXlvKBVaRusy8JHk0zIxrzzJTNFU0gwUW4W1zYG05jTDdwa9Dg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=C1JaRvdfVogpLWkzX9sEMg&oh=00_AQQusH0gAubd6JOW3IesdDs9ttU4bR5J4Mysj1elqvHsFA&oe=6AF79F57"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/cf63daefc37025bcf359.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/877821103_17924092053490405_1090779168244972325_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Qs7pRR9pszkQ7kNvwEjODU7&_nc_oc=AdrhUQtz3kilhXLWieQakpbXrkUoCoyovxNRZ8wN0KTMrr8ZYQgI1KU-b9ZbKFDe6CE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=IE4kHLAFB2eO8EHh03g8zQ&oh=00_AQRvIxBbC6k3DkjkU-oS8aMNEJWPMn75mXC9GcF6GeIdqg&oe=6AF106D8"
+     },
+     {
+      "url": "https://i.ibb.co/TxbM9NhM/61b9d41e93ad.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/865107442_17923673913490405_6802982468773663150_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Rd6ZqnZFAUEQ7kNvwFPStKY&_nc_oc=Adrq_aox6zqIlqlkfLnCFu9TwESCVoVxW_x_4077_ukKNC45iGEIGztWWaRFEIulqeI&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=33ARexq0mRvGfAuMCXcaYg&oh=00_AQSybFgvzqOY3rMDaO_nHAd4bxAbZ0z3_OnIwDrpD2pkJg&oe=6AED0DB4"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "데뷔 첫 MMA에서|대상 받은 코르티스",
+      "sub": "'What You Want'에서 '올해의 레코드'까지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 미리보기가 01~04장만 나옴 — 4장 '처음 선 MMA'(인스타 사진)가 빠졌는지 앱에서 볼 것 · 'REDRED'는 4/20 선공개, [GREENGREEN] 정식 발매는 5/4 라 '4월 미니 2집' → '4월 선공개된' 으로 고침",
+     "'300여 곡 중 다섯 곡'은 MTN(2025/9) 한 곳에서만 원문 확인 — 빼도 글이 선다 · 스포티파이 121회는 헤럴드뮤즈 기준",
+     "표지는 @cortis 11/15 MMA 무대 뒤 장면(다섯 명 확인) · 1·2장은 사진 DB 단체 사진이 404 라 멤버 한 명 화보로 대신 들어감"
+    ],
+    "research": [
+     {
+      "title": "헤럴드뮤즈 11/16 — 올해의 레코드·톱10·글로벌 톱10 3관왕 · 'REDRED' 멜론 일간·주간 1위 · 스포티파이 한국 일간 1위 121회",
+      "link": "https://www.heraldmuse.com/article/10938246"
+     },
+     {
+      "title": "이투데이 11/15 — \"데뷔 후 처음 참석한 'MMA'에서 대상\" · 소감 \"코어들이 우리의 꿈을 이뤄준 것\"",
+      "link": "https://www.etoday.co.kr/news/view/2648348"
+     },
+     {
+      "title": "아시아경제 11/16 — BTS 6관왕·아이브·코르티스·에스파 대상",
+      "link": "https://view.asiae.co.kr/article/2026111601025184307"
+     },
+     {
+      "title": "MTN 2025/9/9 — 8월 18일 'What You Want' 데뷔 · 9월 8일 [COLOR OUTSIDE THE LINES] · 2년간 300여 곡 중 5곡 · 공동 창작",
+      "link": "https://news.mtn.co.kr/news-detail/2025090908341574771"
+     },
+     {
+      "title": "스포츠경향 7/26 — KMA 2026 'RECORD OF THE YEAR' · 데뷔 11개월",
+      "link": "https://sports.khan.co.kr/en/article/202607261042007"
+     },
+     {
+      "title": "더팩트 9/19 — 2026 TMA 대상 '레코드 오브 더 이어'·올해의 아티스트·넥스트 리더 3관왕",
+      "link": "https://news.tf.co.kr/read/ogmeta/2367960.htm"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/92e46f762af2efe8f82d.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/7b5708cda6977a58f1e8.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/50805911afe50a4ebebf.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/048c251fbcbeafe43985.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a12768b5af63b080ee18.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/aaad36ccac7384b9d7b1.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/92e46f762af2efe8f82d.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-16T16:23+09:00",
+     "v": {
+      "A": "3912cd20"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "회차 목표 '인물해부' · 뉴스 급상승(기사 19 · 평소 2) · 90일간 안 다룬 이름 · 데뷔부터 첫 MMA 대상까지 15개월 정리",
+    "at": "2026-11-16T16:23+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 5
+  },
+  {
+   "source": {
+    "id": "claude:ziont-carousel-reunion",
+    "account": "스포츠경향",
+    "url": "https://sports.khan.co.kr/article/202611161505003",
+    "image": null,
+    "head": "자이언티 \"새 앨범 준비 중\"···소코도모·원슈타인 깜짝 지원사격",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-16T16:23+09:00",
+   "key": "1d2c42b5",
+   "by": "claude",
+   "subjects": [
+    "자이언티"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "9년 만의 단독 콘서트에 소코도모·원슈타인이 올라 '회전목마' — 2021년 그 곡에 이름을 올린 세 사람이 다시 한 무대에, 그리고 '새 앨범 준비 중'",
+    "why": "의외의 만남(뉴스) · 14~15일 공연 · 기사 셋(스포츠경향·MK스포츠·아시아뉴스통신) · 21일 세종에서 소코도모와 다시 만남"
+   },
+   "added": "claude",
+   "added_at": "2026-11-16T16:23+09:00",
+   "corner": "meet",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n자이언티(@ziont)의 9년 만의 단독 콘서트에 '회전목마'의 세 사람이 다시 모였습니다.\n\n14~15일 서울 GS아트센터에서 열린 'Zion.T 2026 LIVE'에 소코도모와 원슈타인이 깜짝 게스트로 올랐는데요, '회전목마'는 2021년 〈쇼미더머니10〉에서 소코도모가 선보이고 자이언티와 원슈타인이 함께 부른 곡입니다.\n\n어린 시절 그린 문 없는 집 그림에서 출발한 무대에서 자이언티는 \"9년 만에 저를 집 밖으로 끄집어내 주셔서 감사하다\"고 말했고, 공연 끝에는 새 앨범을 준비 중이라고 알렸습니다.\n\n소코도모와는 21일 세종에서 열리는 '2026 수험생콘서트'로 다시 한 무대에 섭니다.\n\n#PLOT #자이언티 #소코도모 #원슈타인 #회전목마\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0bc6acb16fe552815228.jpg\n제목: 자이언티 콘서트에|다시 모인 '회전목마'\n부제: 9년 만의 단독 공연 · 새 앨범 준비 중\n출처: @ziont\n",
+    "caption": "자이언티(@ziont)의 9년 만의 단독 콘서트에 '회전목마'의 세 사람이 다시 모였습니다.\n\n14~15일 서울 GS아트센터에서 열린 'Zion.T 2026 LIVE'에 소코도모와 원슈타인이 깜짝 게스트로 올랐는데요, '회전목마'는 2021년 〈쇼미더머니10〉에서 소코도모가 선보이고 자이언티와 원슈타인이 함께 부른 곡입니다.\n\n어린 시절 그린 문 없는 집 그림에서 출발한 무대에서 자이언티는 \"9년 만에 저를 집 밖으로 끄집어내 주셔서 감사하다\"고 말했고, 공연 끝에는 새 앨범을 준비 중이라고 알렸습니다.\n\n소코도모와는 21일 세종에서 열리는 '2026 수험생콘서트'로 다시 한 무대에 섭니다.\n\n#PLOT #자이언티 #소코도모 #원슈타인 #회전목마",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0bc6acb16fe552815228.jpg",
+      "credit": "@ziont",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/890716774_2121688278452434_565890028368333965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-iWhcC-gwt8Q7kNvwHiV4ZK&_nc_oc=Adq5wzGb0zKs2xCgJ1-JLCZotPnX-UVU9d1PMH26PPLRv2yDoF_5e_6ZWnEZFHof3KM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=_tsc4xIT9drCuUuTYt6EUA&_nc_tpa=Q5bMBQJRnEUOnI3MhGT_drGW1qRTMxgSqNPKeCaT7fW5eqs2Sgk6i-dNK-zlUrA8gvf0KHSagylvrVwCpw&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRT97axhsQxl4fTuyCgT-3lLDQzXdg7Owpa9dJBR7gy7A&oe=6B000998"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/6fedf9024b02cbe6faab.jpg",
+      "credit": "@ziont",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855886352_18643575367055318_8609640742490102511_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yc9FL_wXlwIQ7kNvwHhnl7N&_nc_oc=AdoWikPiBU58ksXOPQBir0GrljV1-YKbh1k7vcviR-CgXPExBGzBBM0A0kbS1onp3Pg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5hOQBc4JHbLVeH3Q64pP4A&oh=00_AQQn-D2Q_GcvKJdYWG7RDkvgPH0oEumB0C9v7_gbcWw_Fw&oe=6AF4E414"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/10afbed7ca6965b843ec.jpg",
+      "credit": "@ziont",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851459240_18643575358055318_8481522664453021820_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0dxgZW1KmY4Q7kNvwGsaIiK&_nc_oc=AdqV6MAjDcmk71AArSz5AEdFS6IzexWQ78cVipC4JpyYzTxfELnbKn_ahR7g7tkUIIk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5hOQBc4JHbLVeH3Q64pP4A&oh=00_AQQ2C18jyLEDVHf3dtahfmt4WOmBQ2QONcnNYz4dVCvv8A&oe=6AF4DF35"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/12491ce251f592305658.jpg",
+      "credit": "@ziont",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/861357792_18646213936055318_9046447044556174436_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=gCW3H26eHJYQ7kNvwH_zf7j&_nc_oc=AdoW3JqNXil5VdCY5KgtujfaDOk-Oia0lOFgSHLGv55EUFJCvxRkGLj0Y2yVQH9n_jA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5hOQBc4JHbLVeH3Q64pP4A&oh=00_AQRWLn4LylqzzPGjx2ihdSbm2nfq4nj--aFrbruwa350mg&oe=6AF4CB89"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0bc6acb16fe552815228.jpg",
+      "credit": "@ziont",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/890716774_2121688278452434_565890028368333965_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=-iWhcC-gwt8Q7kNvwHiV4ZK&_nc_oc=Adq5wzGb0zKs2xCgJ1-JLCZotPnX-UVU9d1PMH26PPLRv2yDoF_5e_6ZWnEZFHof3KM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=_tsc4xIT9drCuUuTYt6EUA&_nc_tpa=Q5bMBQJRnEUOnI3MhGT_drGW1qRTMxgSqNPKeCaT7fW5eqs2Sgk6i-dNK-zlUrA8gvf0KHSagylvrVwCpw&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQRT97axhsQxl4fTuyCgT-3lLDQzXdg7Owpa9dJBR7gy7A&oe=6B000998"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/6fedf9024b02cbe6faab.jpg",
+      "credit": "@ziont",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/855886352_18643575367055318_8609640742490102511_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=yc9FL_wXlwIQ7kNvwHhnl7N&_nc_oc=AdoWikPiBU58ksXOPQBir0GrljV1-YKbh1k7vcviR-CgXPExBGzBBM0A0kbS1onp3Pg&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5hOQBc4JHbLVeH3Q64pP4A&oh=00_AQQn-D2Q_GcvKJdYWG7RDkvgPH0oEumB0C9v7_gbcWw_Fw&oe=6AF4E414"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/10afbed7ca6965b843ec.jpg",
+      "credit": "@ziont",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/851459240_18643575358055318_8481522664453021820_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0dxgZW1KmY4Q7kNvwGsaIiK&_nc_oc=AdqV6MAjDcmk71AArSz5AEdFS6IzexWQ78cVipC4JpyYzTxfELnbKn_ahR7g7tkUIIk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5hOQBc4JHbLVeH3Q64pP4A&oh=00_AQQ2C18jyLEDVHf3dtahfmt4WOmBQ2QONcnNYz4dVCvv8A&oe=6AF4DF35"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/12491ce251f592305658.jpg",
+      "credit": "@ziont",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/861357792_18646213936055318_9046447044556174436_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=gCW3H26eHJYQ7kNvwH_zf7j&_nc_oc=AdoW3JqNXil5VdCY5KgtujfaDOk-Oia0lOFgSHLGv55EUFJCvxRkGLj0Y2yVQH9n_jA&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=5hOQBc4JHbLVeH3Q64pP4A&oh=00_AQRWLn4LylqzzPGjx2ihdSbm2nfq4nj--aFrbruwa350mg&oe=6AF4CB89"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "자이언티 콘서트에|다시 모인 '회전목마'",
+      "sub": "9년 만의 단독 공연 · 새 앨범 준비 중"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "9년 만에 무대 연 자이언티|\"새 앨범 준비 중\"",
+      "sub": "소코도모·원슈타인 깜짝 게스트"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "'회전목마'(Feat. Zion.T, 원슈타인)가 2021년 〈쇼미더머니10〉 소코도모 곡이라는 건 아시아뉴스통신 원문엔 없음 — 검증 데스크가 Soompi·한국경제로 확인",
+     "표지 사진은 @ziont 11/4 '연희동에서' 라이브 클립 썸네일 — 공연 현장 사진이 있으면 바꾸면 더 좋음(기사 사진은 해상도 미달)"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 11/16 — GS아트센터 14~15일 · 9년 만 · '회전목마' 소코도모·원슈타인 · 새 앨범 준비 중",
+      "link": "https://sports.khan.co.kr/article/202611161505003"
+     },
+     {
+      "title": "MK스포츠 11/16 — 같은 내용 · \"9년 만에 저를 집 밖으로 끄집어내 주셔서 감사하다\"",
+      "link": "https://www.mksports.co.kr/news/entertain/12209954"
+     },
+     {
+      "title": "아시아뉴스통신 11/16 — '양화대교'부터 '회전목마'까지 · '회전목마'는 2021 〈쇼미더머니10〉 소코도모 곡",
+      "link": "https://www.anewsa.com/detail.php?number=3218067"
+     },
+     {
+      "title": "NOL 티켓 — 2026 수험생콘서트 〈자이언티x소코도모〉 세종 11/21",
+      "link": "https://nol.yanolja.com/ticket/products/26013231"
+     },
+     {
+      "title": "Soompi 2021/11 — sokodomo '회전목마 (Feat. Zion.T, Wonstein) (Prod. Slom)' 〈쇼미더머니10〉 퍼펙트 올킬",
+      "link": "https://soompi.com/article/1498996wpp/sokodomos-merry-go-round-feat-zion-t-wonstein-prod-slom-from-show-me-the-money-10-achieves-perfect-all-kill"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b1be5a25441157062e8b.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/5b0f2a5bf5993e44f0fe.jpg"
+     ],
+     "covers": {
+      "B": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/90d03abe31788964074b.jpg",
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b1be5a25441157062e8b.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-16T16:23+09:00",
+     "v": {
+      "A": "a510fba2",
+      "B": "c0f7f3c0"
+     }
+    }
+   },
+   "corner_name": "만나는 법",
+   "corner_no": 6
+  },
+  {
+   "source": {
+    "id": "claude:tickets-1116",
+    "account": "멜론티켓 · NOL 티켓",
+    "url": "https://ticket.melon.com/csoon/index.htm",
+    "image": null,
+    "head": "멜론티켓 티켓오픈소식",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-16T16:23+09:00",
+   "key": "ece6717e",
+   "by": "claude",
+   "subjects": [
+    "솔루션스"
+   ],
+   "lane": "시리즈",
+   "editor": {
+    "grade": "A",
+    "kind": "시리즈",
+    "angle": "이번 주 티켓 오픈 #7 — 솔루션스 'Hyperscope'부터 블낫블·스키틀즈·소각소각·루아멜·천진우와 구토유발자들의 연말 단독까지, 오픈 순서대로",
+    "why": "월요일 고정 연재 · am 에서 확인 건이 둘뿐이라 넘긴 것 — 멜론티켓 오픈 공지로 다섯 건 더 확인"
+   },
+   "added": "claude",
+   "added_at": "2026-11-16T16:23+09:00",
+   "corner": "tickets",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n이번 주 예매가 열리는 공연을 오픈 순서대로 모았습니다.\n\n오늘(16일) 저녁 7시 솔루션스의 내년 1월 공연 'Hyperscope'가 먼저 열리는데요, 18일과 19일 저녁 8시에는 블낫블·스키틀즈·소각소각·루아멜의 12월 단독 공연이 차례로 예매를 시작합니다.\n\n20일에는 천진우와 구토유발자들이 롤링홀 연말 공연 '크리스마스야, 미안해'의 예매를 엽니다.\n\n솔루션스는 NOL 티켓, 나머지 다섯 공연은 멜론티켓에서 예매합니다.\n\n#PLOT #이번주티켓오픈 #솔루션스 #스키틀즈 #루아멜 #천진우와구토유발자들\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/40237613368a58303249.jpg\n머리말: 이번 주 티켓 오픈 #7\n제목: 이번 주 티켓 오픈|11월 셋째 주\n부제: 솔루션스 · 블낫블 · 스키틀즈 · 소각소각 · 루아멜 · 천진우와 구토유발자들\n출처: NOL 티켓\n\n[슬라이드]\n형식: 정리\n말한이: 11.16 (월) 19:00 · NOL 티켓\n소스: \n소제목: 솔루션스 'Hyperscope'\n본문: 공연 **2027년 1월 16~17일** · 토 오후 6시 · 일 오후 4시||NOL 씨어터 합정 동양생명홀||전석 **99,000원** · 스탠딩 · 지정석 · 회차별 1인 4매||출처: NOL 티켓\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 11.18 (수) 20:00 · 멜론티켓\n소스: \n소제목: 블낫블 〈세계수〉\n본문: 숲세권 라이브 단독 공연||공연 **12월 13일(일)** 오후 5시 · 숲세권 라이브 카인드스퀘어점||예매 **38,000원** · 현장 40,000원||출처: 멜론티켓\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 11.18 (수) 20:00 · 멜론티켓\n소스: \n소제목: 스키틀즈 '소음대피소'\n본문: 먼데이프로젝트 시즌9 단독 공연||공연 **12월 16일(수)** 오후 8시 · 신촌 베이비돌||전석 스탠딩 **33,000원**||출처: 멜론티켓\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 11.19 (목) 20:00 · 멜론티켓\n소스: \n소제목: 소각소각 〈우리들의 2026년이 이렇게 끝날 리가 없어!〉\n본문: 숲세권 라이브 단독 공연||공연 **12월 5일(토)** 오후 5시 · 숲세권 라이브 카인드스퀘어점||예매 **55,000원** · 현장 60,000원||출처: 멜론티켓\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 11.19 (목) 20:00 · 멜론티켓\n소스: \n소제목: 루아멜 〈Journey : Oasis〉\n본문: 연말 단독 공연||공연 **12월 5일(토)** 오후 6시 · **6일(일)** 오후 5시 · 연남스페이스||**55,000원**||출처: 멜론티켓\n출처: \n\n[슬라이드]\n형식: 정리\n말한이: 11.20 (금) 20:00 · 멜론티켓\n소스: \n소제목: 천진우와 구토유발자들 '크리스마스야, 미안해'\n본문: 연말 단독 공연||공연 **12월 19일(토)** 오후 5시 · 롤링홀||예매 **66,000원** · 당일 현장 77,000원||출처: 멜론티켓\n출처:\n",
+    "caption": "이번 주 예매가 열리는 공연을 오픈 순서대로 모았습니다.\n\n오늘(16일) 저녁 7시 솔루션스의 내년 1월 공연 'Hyperscope'가 먼저 열리는데요, 18일과 19일 저녁 8시에는 블낫블·스키틀즈·소각소각·루아멜의 12월 단독 공연이 차례로 예매를 시작합니다.\n\n20일에는 천진우와 구토유발자들이 롤링홀 연말 공연 '크리스마스야, 미안해'의 예매를 엽니다.\n\n솔루션스는 NOL 티켓, 나머지 다섯 공연은 멜론티켓에서 예매합니다.\n\n#PLOT #이번주티켓오픈 #솔루션스 #스키틀즈 #루아멜 #천진우와구토유발자들",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/40237613368a58303249.jpg",
+      "credit": "NOL 티켓",
+      "from": "https://ticketimage.interpark.com/Play/image/large/26/26016345_p.gif"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/40237613368a58303249.jpg",
+      "credit": "NOL 티켓",
+      "from": "https://ticketimage.interpark.com/Play/image/large/26/26016345_p.gif"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "이번 주 티켓 오픈|11월 셋째 주",
+      "sub": "솔루션스 · 블낫블 · 스키틀즈 · 소각소각 · 루아멜 · 천진우와 구토유발자들"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 제목이 포스터의 'HYPERSCOPE' 글자 위에 겹침 — 읽히긴 하나 다른 이미지로 바꾸면 좋음",
+     "솔루션스는 오늘(16일) 19시 오픈 — 그 뒤에 올리면 1장을 빼거나 '오픈' 표기를 고칠 것 · 원위 12월 공연 선예매는 공지로 확인 못 해 뺐음",
+     "출연진 사진이 사진 DB 에 없어 표지는 NOL 공연 페이지 대표 이미지(포스터)로 넣음 — 포스터 글자가 제목과 겹치면 바꿀 것"
+    ],
+    "research": [
+     {
+      "title": "NOL 티켓 — THE SOLUTIONS 'Hyperscope' · 11/16(월) 19:00 오픈 · 2027.1.16~17 · NOL 씨어터 합정 동양생명홀 · 99,000원",
+      "link": "https://nol.yanolja.com/ticket/products/26016345"
+     },
+     {
+      "title": "멜론티켓 — 숲세권 라이브 : 블낫블 〈세계수〉 · 11/18(수) 20:00 · 12/13 · 38,000원",
+      "link": "https://ticket.melon.com/csoon/detail.htm?csoonId=13290"
+     },
+     {
+      "title": "멜론티켓 — 먼데이프로젝트 시즌9 : 스키틀즈 '소음대피소' · 11/18(수) 20:00 · 12/16 신촌 베이비돌 · 33,000원",
+      "link": "https://ticket.melon.com/csoon/detail.htm?csoonId=13259"
+     },
+     {
+      "title": "멜론티켓 — 숲세권 라이브 : 소각소각 단독 · 11/19(목) 20:00 · 12/5 · 55,000원",
+      "link": "https://ticket.melon.com/csoon/detail.htm?csoonId=13278"
+     },
+     {
+      "title": "멜론티켓 — 루아멜 〈Journey : Oasis〉 · 11/19(목) 20:00 · 12/5~6 연남스페이스 · 55,000원",
+      "link": "https://ticket.melon.com/csoon/detail.htm?csoonId=13291"
+     },
+     {
+      "title": "멜론티켓 — 천진우와 구토유발자들 '크리스마스야, 미안해' · 11/20(금) 20:00 · 12/19 롤링홀 · 66,000원",
+      "link": "https://ticket.melon.com/csoon/detail.htm?csoonId=13288"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b7d5a38205f0191a7274.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/6ceca9f0795653547a7f.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/5d72794e452dec972488.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/15a968b7bf05495410e6.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/2c98d517267ba5f0db83.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/2d2ee28775cb8d6b113b.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/702dc95aae625f76a05d.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/828374b7399192462702.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b7d5a38205f0191a7274.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-16T16:23+09:00",
+     "v": {
+      "A": "2b67795a"
+     }
+    }
+   },
+   "corner_name": "이번 주 티켓 오픈",
+   "corner_no": 7
   }
  ],
  "skipped": [],
@@ -821,7 +1266,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 5,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
    {
@@ -833,7 +1278,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 4,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -929,7 +1374,7 @@
     "need_today": 1,
     "day": 0,
     "next_no": 7,
-    "drafts": 0,
+    "drafts": 1,
     "why": "월요일 고정 — 이번 주 예매가 열리는 공연·내한·페스티벌을 날짜·시간·예매처로"
    },
    {
@@ -969,10 +1414,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-16T15:17+09:00"
+  "at": "2026-11-16T16:23+09:00"
  },
  "queue": {
-  "next": "2026-11-16T15:19+09:00",
+  "next": "2026-11-16T16:26+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-12T19:35+09:00"
