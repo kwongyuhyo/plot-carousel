@@ -161,11 +161,6 @@
      "at": "2026-11-16T10:55+09:00"
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "오늘(11/16) 나온 점프 51호로 완결 · 2기 2027년 소식이 같이 나옴 · 성우 인사가 있어 사람이 보이고 공식 PV 숏폼도 붙는다",
-    "at": "2026-11-16T10:54+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -251,11 +246,6 @@
       "A": "42bcb0b1"
      }
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "11/14 10주년 이벤트 발표 · 한국에서도 큰 시리즈 · 원작자 나가츠키 탓페이 본인 코멘트가 있다",
-    "at": "2026-11-16T10:54+09:00"
    },
    "corner_name": "소식"
   },
@@ -345,10 +335,358 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:matsubara-miki-mybest16",
+    "account": "Billboard JAPAN",
+    "url": "https://www.billboard-japan.com/d_news/detail/167482",
+    "image": null,
+    "head": "松原みき本人が選曲、復刻リリース『マイベスト16』の全曲試聴トレイラー映像が公開",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-16T18:51+09:00",
+   "key": "7751fb70",
+   "by": "claude",
+   "subjects": [
+    "마츠바라 미키",
+    "真夜中のドア～stay with me",
+    "포니캐니언"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "1981년 카세트로만 나왔던 [松原みきが選ぶマイベスト16] 이 11/25 LP·UHQCD·카세트로 복각 — 본인이 직접 고른 16곡, 오늘 전곡 시청 트레일러 공개. '真夜中のドア' 시티팝 리바이벌의 다음 장",
+    "why": "Billboard JAPAN(11/16 17:20 트레일러 공개)·CDJournal·MusicVoice 세 곳 · 공식 트레일러는 ponycanyon 채널"
+   },
+   "added": "claude",
+   "added_at": "2026-11-16T18:51+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n마츠바라 미키가 직접 고른 베스트 [松原みきが選ぶマイベスト16]이 45년 만에 다시 나옵니다.\n\n1981년 카세트테이프로만 나왔던 앨범인데요, 이번에는 LP 두 장·UHQCD·카세트 세 가지로 복각되고, 재킷에는 본인 사인이 들어간 사진을 씁니다. 오늘 레이블 포니캐니언이 16곡을 모두 들어 볼 수 있는 트레일러를 공개했습니다.\n\n물론 '真夜中のドア～stay with me'(한밤중의 문)도 들어 있습니다. 2020년 12월 Spotify 글로벌 바이럴 차트 18일 연속 1위로 시티팝 리바이벌의 얼굴이 된 곡이고, 레이블 발표 기준 올해 7월 Spotify 누적 5억 회를 넘었습니다. 그 한 곡 바깥을 본인의 선곡으로 들어 볼 차례입니다.\n\n발매는 11월 25일, 데뷔 기념일(11월 5일)과 생일(11월 28일) 사이에 맞춘 기념반입니다.\n\n#암낫오타쿠 #마츠바라미키 #한밤중의문 #시티팝 #포니캐니언\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/301517a686ef79a35642.jpg\n제목: 마츠바라 미키가 고른|16곡, 다시 나온다\n부제: 1981년 카세트로만 나왔던 [마이 베스트 16] 복각\n출처:\n",
+    "caption": "마츠바라 미키가 직접 고른 베스트 [松原みきが選ぶマイベスト16]이 45년 만에 다시 나옵니다.\n\n1981년 카세트테이프로만 나왔던 앨범인데요, 이번에는 LP 두 장·UHQCD·카세트 세 가지로 복각되고, 재킷에는 본인 사인이 들어간 사진을 씁니다. 오늘 레이블 포니캐니언이 16곡을 모두 들어 볼 수 있는 트레일러를 공개했습니다.\n\n물론 '真夜中のドア～stay with me'(한밤중의 문)도 들어 있습니다. 2020년 12월 Spotify 글로벌 바이럴 차트 18일 연속 1위로 시티팝 리바이벌의 얼굴이 된 곡이고, 레이블 발표 기준 올해 7월 Spotify 누적 5억 회를 넘었습니다. 그 한 곡 바깥을 본인의 선곡으로 들어 볼 차례입니다.\n\n발매는 11월 25일, 데뷔 기념일(11월 5일)과 생일(11월 28일) 사이에 맞춘 기념반입니다.\n\n#암낫오타쿠 #마츠바라미키 #한밤중의문 #시티팝 #포니캐니언",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/301517a686ef79a35642.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/301517a686ef79a35642.jpg",
+      "credit": "신뢰"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "마츠바라 미키가 고른|16곡, 다시 나온다",
+      "sub": "1981년 카세트로만 나왔던 [마이 베스트 16] 복각"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] MusicVoice 기사(84290)는 404라 출처·사진에서 뺌 — 11/25 발매·2LP·포니캐니언은 공식 트레일러 설명란으로 확인 · 트레일러에 자막 없음, 0:00-0:25에 어느 곡이 나오는지는 귀로 확인할 것 · 표지 사진은 여전히 다른 복각반(PCJA-00104 클리어 퍼플) LP — [마이 베스트 16] 재킷으로 바꿔야 함",
+     "클립 위험: 낮음 — ponycanyon (레이블 공식 트레일러 291초 중 0:00-0:25 · '真夜中のドア'가 나오는 구간인지 귀로 확인해 옮길 것)",
+     "[미리보기] 표지는 'Clear Purple Colored Vinyl PCJA-00104' 스티커가 붙은 LP 사진 — 이번 LP 품번(PCJA-00221)과 달라 다른 복각반 재킷일 수 있음. 발행 전 [마이 베스트 16] 재킷으로 바꿀 것",
+     "16곡 수록곡 목록은 원문에서 확인 못 해 '真夜中のドア'만 적음 · 5억 회 기록은 레이블 발표 문구라 '발표 기준'으로 둠"
+    ],
+    "research": [
+     {
+      "title": "Billboard JAPAN — 1981년 카세트로만 발매된 『松原みきが選ぶマイベスト16』 복각, UHQCD·LP 2장·카세트 3형태, 전곡 시청 트레일러 공개 (11/16)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167482"
+     },
+     {
+      "title": "CDJournal — 본인 선곡 16곡, 데뷔 기념일 11/5·생일 11/28 메모리얼 릴리스, 사인 들어간 재킷, 「真夜中のドア」 2020년 12월 Spotify 글로벌 바이럴 18일 연속 1위·2026년 7월 누적 5억 회",
+      "link": "https://www.cdjournal.com/news/matsubara-miki/129996"
+     },
+     {
+      "title": "【松原みき】Miki Matsubara’s Handpicked “My Best 16” (Official Trailer) — ponycanyon (291초)",
+      "link": "https://www.youtube.com/watch?v=srx9tGMv4Rk"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7edc4272e9e9b6bfce1c.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7623ffe86da6fc4661a3.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7edc4272e9e9b6bfce1c.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-16T18:51+09:00",
+     "v": {
+      "A": "f3c1fb67"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=srx9tGMv4Rk\n구간: 0:00-0:25\n곡: 16곡이 다시 나온다\n아티스트: 마츠바라 미키가 고른\n피처링:\n후킹: \n출처: ponycanyon",
+    "caption": "마츠바라 미키가 1981년에 직접 고른 베스트 [松原みきが選ぶマイベスト16]이 11월 25일 다시 나옵니다.\n\n당시엔 카세트테이프로만 나왔던 앨범인데요, 이번엔 LP·UHQCD·카세트로 복각되고 '真夜中のドア～stay with me'(한밤중의 문)도 들어 있습니다. 영상은 오늘 레이블 포니캐니언 공식 채널에 공개된 전곡 시청 트레일러입니다.\n\n#암낫오타쿠 #마츠바라미키 #한밤중의문 #시티팝 #포니캐니언",
+    "hooks": {
+     "A": "마츠바라 미키가 고른 / 16곡이 다시 나온다",
+     "B": "카세트로만 나왔던 / 1981년 베스트가 돌아온다",
+     "C": "한밤중의 문을 부른 그가 / 직접 고른 베스트"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=srx9tGMv4Rk",
+     "credit": "ponycanyon",
+     "range": [
+      0.0,
+      25.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] MusicVoice 기사(84290)는 404라 출처·사진에서 뺌 — 11/25 발매·2LP·포니캐니언은 공식 트레일러 설명란으로 확인 · 트레일러에 자막 없음, 0:00-0:25에 어느 곡이 나오는지는 귀로 확인할 것 · 표지 사진은 여전히 다른 복각반(PCJA-00104 클리어 퍼플) LP — [마이 베스트 16] 재킷으로 바꿔야 함",
+     "클립 위험: 낮음 — ponycanyon (레이블 공식 트레일러 291초 중 0:00-0:25 · '真夜中のドア'가 나오는 구간인지 귀로 확인해 옮길 것)",
+     "[미리보기] 표지는 'Clear Purple Colored Vinyl PCJA-00104' 스티커가 붙은 LP 사진 — 이번 LP 품번(PCJA-00221)과 달라 다른 복각반 재킷일 수 있음. 발행 전 [마이 베스트 16] 재킷으로 바꿀 것",
+     "16곡 수록곡 목록은 원문에서 확인 못 해 '真夜中のドア'만 적음 · 5억 회 기록은 레이블 발표 문구라 '발표 기준'으로 둠"
+    ],
+    "research": [
+     {
+      "title": "Billboard JAPAN — 1981년 카세트로만 발매된 『松原みきが選ぶマイベスト16』 복각, UHQCD·LP 2장·카세트 3형태, 전곡 시청 트레일러 공개 (11/16)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167482"
+     },
+     {
+      "title": "CDJournal — 본인 선곡 16곡, 데뷔 기념일 11/5·생일 11/28 메모리얼 릴리스, 사인 들어간 재킷, 「真夜中のドア」 2020년 12월 Spotify 글로벌 바이럴 18일 연속 1위·2026년 7월 누적 5억 회",
+      "link": "https://www.cdjournal.com/news/matsubara-miki/129996"
+     },
+     {
+      "title": "【松原みき】Miki Matsubara’s Handpicked “My Best 16” (Official Trailer) — ponycanyon (291초)",
+      "link": "https://www.youtube.com/watch?v=srx9tGMv4Rk"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/srx9tGMv4Rk/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ba7b0a8fc23a5a6ad8aa.jpg",
+     "key": "srx9tGMv4Rk@0.0"
+    },
+    "px": {
+     "vid": "srx9tGMv4Rk",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d96cdae1ddfb38552f11.mp4",
+     "off": 0.0,
+     "end": 70.0,
+     "full": 291.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-16T18:52+09:00"
+    }
+   },
    "pick": {
-    "rank": 3,
-    "why": "11/15 공식 발표 · 한국에도 팬이 많은 밴드의 활동 일정이 걸린 소식이라 사실만 짧게",
-    "at": "2026-11-16T10:54+09:00"
+    "rank": 2,
+    "why": "오늘 공개된 공식 트레일러 · 한국에서도 아는 '真夜中のドア'의 시티팝 리바이벌 다음 장 · 숏폼이 붙는다",
+    "at": "2026-11-16T18:51+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:wonderlivet-this-week",
+    "account": "iMBC연예",
+    "url": "https://enews.imbc.com/News/RetrieveNewsInfo/519624",
+    "image": null,
+    "head": "한로로→QWER, '원더리벳 2026' 타임테이블 공개",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-16T18:51+09:00",
+   "key": "4e917aec",
+   "by": "claude",
+   "subjects": [
+    "원더리벳 2026",
+    "THE ORAL CIGARETTES",
+    "[Alexandros]"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "이번 주 금요일(11/20)부터 사흘, 킨텍스에서 J-pop 페스티벌 원더리벳 2026 — 날마다 누가 마지막 무대에 서는지 한 장으로",
+    "why": "iMBC·일간스포츠(9/30 타임테이블 공개) 두 곳으로 요일별 헤드라이너·서브 헤드라이너 일치 · 예매처는 국제뉴스·메트로서울"
+   },
+   "added": "claude",
+   "added_at": "2026-11-16T18:51+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nJ-pop 페스티벌 원더리벳 2026이 이번 주 금요일 고양 킨텍스에서 막을 올립니다.\n\n사흘 동안 원더 스테이지와 리벳 스테이지 두 무대가 번갈아 돌아가는데요, 매일 정오에 첫 무대가 열리고 밤 10시가 넘어서야 끝납니다. 첫날 마지막 무대는 THE ORAL CIGARETTES, 둘째 날은 [Alexandros], 셋째 날은 유즈가 맡습니다.\n\n서브 헤드라이너도 날마다 결이 다릅니다. 금요일은 나토리, 토요일은 삼보마스터, 일요일은 스키마스위치가 서브 헤드라이너로 서고, 토요일에는 하츠네 미쿠·카사네 테토의 3D 무대와 로젤리아도 이어집니다.\n\n11월 20~22일 킨텍스 제2전시장. 예매는 멜론티켓·티켓링크·예스24·티켓피아입니다.\n\n#암낫오타쿠 #원더리벳 #오랄시가렛 #알렉산드로스 #유즈\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/47b74acee99fa24f55bd.jpg\n제목: 원더리벳 2026,|이번 주 금요일 개막\n부제: 11/20~22 킨텍스 · 오랄시가렛 · 알렉산드로스 · 유즈\n출처: iMBC연예\n",
+    "caption": "J-pop 페스티벌 원더리벳 2026이 이번 주 금요일 고양 킨텍스에서 막을 올립니다.\n\n사흘 동안 원더 스테이지와 리벳 스테이지 두 무대가 번갈아 돌아가는데요, 매일 정오에 첫 무대가 열리고 밤 10시가 넘어서야 끝납니다. 첫날 마지막 무대는 THE ORAL CIGARETTES, 둘째 날은 [Alexandros], 셋째 날은 유즈가 맡습니다.\n\n서브 헤드라이너도 날마다 결이 다릅니다. 금요일은 나토리, 토요일은 삼보마스터, 일요일은 스키마스위치가 서브 헤드라이너로 서고, 토요일에는 하츠네 미쿠·카사네 테토의 3D 무대와 로젤리아도 이어집니다.\n\n11월 20~22일 킨텍스 제2전시장. 예매는 멜론티켓·티켓링크·예스24·티켓피아입니다.\n\n#암낫오타쿠 #원더리벳 #오랄시가렛 #알렉산드로스 #유즈",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/47b74acee99fa24f55bd.jpg",
+      "credit": "iMBC연예",
+      "from": "https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/09/30/32bdd8f0-e012-4dd7-bbe9-00e7116dd218.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/82e268ebaf0364e50b9f.jpg",
+      "credit": "일간스포츠",
+      "from": "https://isplus.com/data/isp/image/2026/09/30/isp20260930000062.800x.0.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/47b74acee99fa24f55bd.jpg",
+      "credit": "iMBC연예",
+      "from": "https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/09/30/32bdd8f0-e012-4dd7-bbe9-00e7116dd218.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/82e268ebaf0364e50b9f.jpg",
+      "credit": "일간스포츠",
+      "from": "https://isplus.com/data/isp/image/2026/09/30/isp20260930000062.800x.0.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "원더리벳 2026,|이번 주 금요일 개막",
+      "sub": "11/20~22 킨텍스 · 오랄시가렛 · 알렉산드로스 · 유즈"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "남은 표·당일 현장 판매 여부는 확인 못 해 쓰지 않음 · 타임테이블이 9/30 이후 바뀌었는지 공식 SNS로 한 번 볼 것",
+     "표지 사진은 기사 대표 사진 — 특정 아티스트 한 명만 크게 나오면 행사 포스터로 바꾸는 게 나음"
+    ],
+    "research": [
+     {
+      "title": "iMBC연예 — 11/20~22 고양 킨텍스 제2전시장, 원더·리벳 두 무대, 매일 정오 시작·오후 10시 넘어까지, 금 오랄시가렛·나토리 / 토 알렉산드로스·삼보마스터 / 일 유즈·스키마스위치 (9/30)",
+      "link": "https://enews.imbc.com/News/RetrieveNewsInfo/519624"
+     },
+     {
+      "title": "일간스포츠 — 같은 요일별 라인업, 아이우에오·아마자라시·호시마치 스이세이(금), TAK×하츠네 미쿠·카사네 테토 3D·마이고·로젤리아(토), 스위트 스테디·오오츠카 아이(일)",
+      "link": "https://isplus.com/article/view/isp202609300046"
+     },
+     {
+      "title": "국제뉴스 — 9/1 오후 8시 예매 시작, 멜론티켓·티켓링크·예스24·티켓피아",
+      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3681728"
+     },
+     {
+      "title": "메트로서울 — 예매 개시, 11월 킨텍스 3일간 J-POP 축제",
+      "link": "https://www.metroseoul.co.kr/article/20260901500478"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2a0e89efbcff22e43a90.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/52748d292377f032b255.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2a0e89efbcff22e43a90.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-16T18:52+09:00",
+     "v": {
+      "A": "7bc7e902"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "이번 주 금요일 개막하는 국내 J-pop 페스티벌 · 한국 현장 소식이라 가장 직접적으로 닿는다",
+    "at": "2026-11-16T18:51+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:wanpaku-touken-ranbu",
+    "account": "アニメ！アニメ！",
+    "url": "https://animeanime.jp/article/2026/11/16/104826.html",
+    "image": null,
+    "head": "「わんぱく！刀剣乱舞」ショートアニメ化！27年1月から放送 サンリオプロデュースの刀剣男士描く",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-16T18:51+09:00",
+   "key": "fd10054a",
+   "by": "claude",
+   "subjects": [
+    "완파쿠! 도검난무",
+    "도검난무",
+    "산리오"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "C",
+    "kind": "정보",
+    "angle": "산리오가 다시 디자인한 도검남사 숏 애니 〈わんぱく！刀剣乱舞〉 2027/1/6 TOKYO MX 방송 — 오늘부터 20일 동안 하루 한 振씩 공개",
+    "why": "아니메아니메(11/16 18:00)·니지멘 두 곳 · 사람의 말 없는 편성 발표라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-16T18:51+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n산리오가 다시 디자인한 도검남사들이 숏 애니메이션 〈완파쿠! 도검난무〉(わんぱく！刀剣乱舞)로 나옵니다.\n\n〈도검난무 ONLINE〉의 도검남사를 산리오가 파스텔 톤의 귀여운 모습으로 바꾼 '산리오 디자인 프로듀스' 작품인데요, 오늘 리뉴얼된 공식 사이트에는 스무 명의 실루엣만 먼저 걸렸습니다. 누가 나오는지는 공식 X 에서 오늘부터 12월 5일까지 매일 낮 12시에 한 명씩 밝힙니다.\n\n감독은 키노시타 가쿠, 애니메이션 제작은 팬웍스입니다.\n\n2027년 1월 6일부터 TOKYO MX 에서 매주 수요일 밤 9시 54분(일본 기준) 방송합니다.\n\n#암낫오타쿠 #도검난무 #완파쿠도검난무 #산리오 #도검남사\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f4d499241187358d2ba0.jpg\n제목: 산리오가 그린 도검남사,|1월에 애니로\n부제: 〈わんぱく！刀剣乱舞〉 2027년 1월 6일 TOKYO MX\n출처: アニメ！アニメ！\n",
+    "caption": "산리오가 다시 디자인한 도검남사들이 숏 애니메이션 〈완파쿠! 도검난무〉(わんぱく！刀剣乱舞)로 나옵니다.\n\n〈도검난무 ONLINE〉의 도검남사를 산리오가 파스텔 톤의 귀여운 모습으로 바꾼 '산리오 디자인 프로듀스' 작품인데요, 오늘 리뉴얼된 공식 사이트에는 스무 명의 실루엣만 먼저 걸렸습니다. 누가 나오는지는 공식 X 에서 오늘부터 12월 5일까지 매일 낮 12시에 한 명씩 밝힙니다.\n\n감독은 키노시타 가쿠, 애니메이션 제작은 팬웍스입니다.\n\n2027년 1월 6일부터 TOKYO MX 에서 매주 수요일 밤 9시 54분(일본 기준) 방송합니다.\n\n#암낫오타쿠 #도검난무 #완파쿠도검난무 #산리오 #도검남사",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f4d499241187358d2ba0.jpg",
+      "credit": "アニメ！アニメ！",
+      "from": "https://animeanime.jp/imgs/ogp_f/956273.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f4d499241187358d2ba0.jpg",
+      "credit": "アニメ！アニメ！",
+      "from": "https://animeanime.jp/imgs/ogp_f/956273.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "산리오가 그린 도검남사,|1월에 애니로",
+      "sub": "〈わんぱく！刀剣乱舞〉 2027년 1월 6일 TOKYO MX"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "캐스트·한국 서비스는 원문에 없어 뺌 · 공식 영상이 아직 없어 숏폼 비움"
+    ],
+    "research": [
+     {
+      "title": "아니메아니메 — 2027/1/6(수) TOKYO MX 매주 수 21:54, 산리오 디자인 프로듀스, 감독 きのしたがく·각본 戎リエコ·제작 ファンワークス, 공식 X 11/16~12/5 매일 12시 한 振씩 20일, 20振 실루엣 티저",
+      "link": "https://animeanime.jp/article/2026/11/16/104826.html"
+     },
+     {
+      "title": "니지멘 — 2027/1/6 TOKYO MX 방송, 티저 비주얼, 20振 매일 하나씩 공개",
+      "link": "https://nijimen.kusuguru.co.jp/topics/659189"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/fc3c2056e005b8fbd10c.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/491a9b00f9dfe1df1531.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/fc3c2056e005b8fbd10c.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-16T18:52+09:00",
+     "v": {
+      "A": "3280fbb6"
+     }
+    }
    },
    "corner_name": "소식"
   }
@@ -525,14 +863,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-16T10:55+09:00"
+  "at": "2026-11-16T18:52+09:00"
  },
  "queue": {
-  "next": "2026-11-16T10:57+09:00",
+  "next": "2026-11-16T18:54+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
