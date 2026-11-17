@@ -1957,7 +1957,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=U6BDbXIah-Y\n구간: 0:39-1:09\n곡: 제 이름 넣은 코르티스\n아티스트: 뮤비 감독 칸에\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: CORTIS - REDRED\n가사: 자동",
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=U6BDbXIah-Y\n구간: 0:39-1:09\n곡: 제 이름 넣은 코르티스\n아티스트: 뮤비 감독 칸에\n피처링:\n후킹: \n출처: HYBE LABELS\n음원: CORTIS - REDRED\n가사: 자동\n자막: 받음 st:1794957849723-5c687d71",
     "caption": "코르티스(@cortis)의 'REDRED' 뮤직비디오 감독 크레딧에는 멤버들의 이름이 들어가 있습니다.\n\n공식 영상 설명란에는 'Directed by IDIOTS & CORTIS'라고 적혀 있는데요, 미니 2집 [GREENGREEN]은 다섯 멤버가 음악·안무·영상을 함께 만든 앨범입니다.\n\n그렇게 만든 앨범이 써클차트 기준 누적 400만 장을 넘겼습니다.\n\n#PLOT #코르티스 #REDRED #GREENGREEN #영크리에이터크루",
     "hooks": {
      "A": "뮤비 감독 칸에 / 제 이름 넣은 코르티스",
@@ -2021,8 +2021,94 @@
      "full": 208.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-18T08:21+09:00"
+     "status": "ready",
+     "rid": "st:1794957849723-5c687d71",
+     "n": 16,
+     "note": "🎤 가사 45줄 자동 맞춤 (확인 37줄)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 0.97,
+       "text": "신호등 바뀌었어 green, green"
+      },
+      {
+       "start": 0.97,
+       "end": 2.97,
+       "text": "팔랑귀 팔랑귀 (That's red, red)"
+      },
+      {
+       "start": 2.97,
+       "end": 4.89,
+       "text": "눈치나 살피기 (That's red, red)"
+      },
+      {
+       "start": 4.89,
+       "end": 6.89,
+       "text": "도가니 사리기 (That's red, red)"
+      },
+      {
+       "start": 6.89,
+       "end": 8.93,
+       "text": "넘어가 울타리 green, green"
+      },
+      {
+       "start": 8.93,
+       "end": 10.79,
+       "text": "궁뎅이 가리기 (That's red, red)"
+      },
+      {
+       "start": 10.79,
+       "end": 12.77,
+       "text": "주변을 살피기 (That's red, red)"
+      },
+      {
+       "start": 12.77,
+       "end": 14.87,
+       "text": "쿨한 척 척하기 (That's red, red)"
+      },
+      {
+       "start": 14.87,
+       "end": 16.68,
+       "text": "You should come mess with the team"
+      },
+      {
+       "start": 16.68,
+       "end": 18.69,
+       "text": "내 친구들 전부 한 트럭에다 담아서"
+      },
+      {
+       "start": 18.69,
+       "end": 20.79,
+       "text": "거리로 나가서 빙빙"
+      },
+      {
+       "start": 20.79,
+       "end": 22.78,
+       "text": "거리서 돌다가 돌아가 studio"
+      },
+      {
+       "start": 22.78,
+       "end": 24.7,
+       "text": "Cookin' up 'til we get stinky"
+      },
+      {
+       "start": 24.7,
+       "end": 26.69,
+       "text": "팔랑귀 팔랑귀 (That's red, red)"
+      },
+      {
+       "start": 26.69,
+       "end": 28.74,
+       "text": "눈치나 살피기 (That's red, red)"
+      },
+      {
+       "start": 28.74,
+       "end": 30.0,
+       "text": "도가니 사리기 (That's red, red)"
+      }
+     ],
+     "at": "2026-11-18T08:24+09:00"
     }
    },
    "corner_name": "나무위키 털기",
@@ -2205,10 +2291,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-18T08:21+09:00"
+  "at": "2026-11-18T08:24+09:00"
  },
  "queue": {
-  "next": "2026-11-18T08:23+09:00",
+  "next": "2026-11-18T08:26+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-12T19:35+09:00"
