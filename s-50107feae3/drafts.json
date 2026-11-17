@@ -416,9 +416,9 @@
    },
    "corner_name": "소식",
    "pick": {
-    "rank": 2,
-    "why": "갈등·반응 레이더 7.0 · 기사 6건 · 좋아요 하나가 단서가 되는 결(역대 상위와 같은 결)",
-    "at": "2026-11-17T10:09+09:00"
+    "rank": 3,
+    "why": "갈등·반응 · 좋아요 하나가 단서가 되는 결(역대 상위와 같은 결) · 기사 8건",
+    "at": "2026-11-17T16:31+09:00"
    }
   },
   {
@@ -593,11 +593,6 @@
       "A": "32c4c31a"
      }
     }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "회차 목표 '인물해부'를 채우는 해부형 · 뉴스 187건 · 90일간 안 다룬 이름 · 'AI가 1위' 찬반이 갈리는 소재",
-    "at": "2026-11-17T10:09+09:00"
    },
    "corner_name": "입문 가이드",
    "corner_no": 4
@@ -1165,13 +1160,489 @@
      "at": "2026-11-17T10:12+09:00"
     }
    },
-   "pick": {
-    "rank": 3,
-    "why": "숏폼 · 본인 채널이라 클립 위험 낮음 · 관계에서 나온 말 한 줄('폴킴이야? 나야?')",
-    "at": "2026-11-17T10:09+09:00"
-   },
    "corner_name": "그 말",
    "corner_no": 8
+  },
+  {
+   "source": {
+    "id": "claude:cortis-record-of-year",
+    "account": "아시아경제",
+    "url": "https://view.asiae.co.kr/article/2026111601025184307",
+    "image": null,
+    "head": "BTS, 멜론뮤직어워드 6관왕…아이브·코르티스·에스파 대상",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-17T16:31+09:00",
+   "key": "2f5813c5",
+   "by": "claude",
+   "subjects": [
+    "코르티스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "코르티스는 왜 '올해의 레코드'인가 — 심사위원만 고르는 상을 올해 시상식마다 연달아, 데뷔곡부터 멤버가 쓴 노래들",
+    "why": "뉴스 급상승(기사 50건+) · 회차 목표 '인물해부' · 오늘의 중심 사건(MMA2026 대상)"
+   },
+   "added": "claude",
+   "added_at": "2026-11-17T16:31+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n코르티스(@cortis)가 첫 멜론뮤직어워드에서 '올해의 레코드'를 받았습니다.\n\n이 상은 음원 성적이나 팬 투표 없이 심사위원 평가로만 정하는데요, 코르티스는 7월 KM차트어워즈, 9월 더팩트 뮤직 어워즈에서도 같은 이름의 대상 'RECORD OF THE YEAR'를 받았습니다. 데뷔 2년 차에 같은 이름의 상이 시상식마다 이어진 셈입니다.\n\n데뷔곡 'What You Want'부터 멤버들이 작사·작곡과 안무에 이름을 올렸고, 'REDRED'는 제임스의 아이디어에서 시작해 다섯 명이 함께 썼습니다. 정작 코르티스는 무대에서 \"회사에서 저희가 올해의 레코드를 받지 못할 거라고 해서\" 기대를 안 하고 왔다고 말했습니다.\n\n#PLOT #코르티스 #CORTIS #MMA2026 #올해의레코드\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/84f9fb3470bab7009491.jpg\n제목: 코르티스는 왜|'올해의 레코드'인가\n부제: MMA2026 대상 · 첫 출석에서 3관왕\n출처: @cortis\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/2abed527fa84d9849d48.jpg\n소제목: 심사위원만 고르는 상\n본문: 15일 고척스카이돔에서 열린 'MMA2026'에서 코르티스가 **올해의 레코드**를 받았습니다.||이 상은 음원 성적이나 팬 투표를 반영하지 않고 **심사위원 평가만으로** 정합니다. 처음 참석한 멜론뮤직어워드에서 6개 부문 후보에 올라 톱10, 글로벌 톱10까지 3관왕을 차지했습니다.\n출처: @cortis\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/b2fe3895b1160509a0bf.jpg\n소제목: 올해 내내 같은 이름\n본문: 코르티스는 7월 KM차트어워즈에 이어 9월 19일 부산에서 열린 더팩트 뮤직 어워즈에서도 대상 **RECORD OF THE YEAR**를 받았습니다.||그때 마틴은 \"1집에서 이와 같은 말을 했는데 꿈을 이뤘다\"고 했고, 이번 MMA에서는 \"저희 모두가 꿈꿔온 길\"이라고 말했습니다.\n출처: @cortis\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/26f5952dde555b854f27.jpg\n소제목: 다섯 명이 쓴 노래\n본문: 데뷔곡 'What You Want'부터 마틴·성현·건호·주훈이 작사에, 성현이 작곡에, 제임스가 안무에 이름을 올렸습니다.||'REDRED'는 제임스의 아이디어에서 시작해 **다섯 명이 함께** 작사·작곡한 곡인데요, 제임스는 \"날 것의 사운드를 만들고 싶었다\"고 했습니다.\n출처: @cortis\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0d3a1052c5b8695bd74d.jpg\n소제목: '영크크'\n본문: 수록곡 'YOUNGCREATORCREW'의 줄임말 '영크크'는 젊은 세대를 대변하는 유행어로 번졌습니다. 멤버들은 음악과 안무, 영상을 직접 만듭니다.||정작 코르티스는 대상을 받고 \"회사에서 저희가 올해의 레코드를 받지 못할 거라고 해서\" 기대를 안 하고 왔다고 말했습니다.\n출처: @cortis\n",
+    "caption": "코르티스(@cortis)가 첫 멜론뮤직어워드에서 '올해의 레코드'를 받았습니다.\n\n이 상은 음원 성적이나 팬 투표 없이 심사위원 평가로만 정하는데요, 코르티스는 7월 KM차트어워즈, 9월 더팩트 뮤직 어워즈에서도 같은 이름의 대상 'RECORD OF THE YEAR'를 받았습니다. 데뷔 2년 차에 같은 이름의 상이 시상식마다 이어진 셈입니다.\n\n데뷔곡 'What You Want'부터 멤버들이 작사·작곡과 안무에 이름을 올렸고, 'REDRED'는 제임스의 아이디어에서 시작해 다섯 명이 함께 썼습니다. 정작 코르티스는 무대에서 \"회사에서 저희가 올해의 레코드를 받지 못할 거라고 해서\" 기대를 안 하고 왔다고 말했습니다.\n\n#PLOT #코르티스 #CORTIS #MMA2026 #올해의레코드",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/84f9fb3470bab7009491.jpg",
+      "credit": "@cortis",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/906255888_17925933240490405_5356448632591384577_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3rEg3hvr7jwQ7kNvwFy49qS&_nc_oc=AdrYx9o3l5_KJpHtBtx8gbZgMBQo-dyBIdgrIxeenKIWLOGvOJGMrmzVkfdCZCY42ZE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=BYNX1ZIr7mZXDRLBG9zx9g&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQQG3HQpiQcy1nU08KNcy535S6JYtuvGgaYwye9OTRRA4w&oe=6B01C07C"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/2abed527fa84d9849d48.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/905135914_17925934521490405_5962080558595908855_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sYd3RD07ZIQQ7kNvwHsj8cg&_nc_oc=AdriKs4oCZF2RjtujJkGXs1MLWu_BVtyAQMqfZ3pQWuNHtvpLM0HB1X-bvAHz0jQ67U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4ooNxEZzTYVPcStdjJUidA&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQRDtySrCZRfZegpNXjggsg4M-171873fyVQKyNeZibnFQ&oe=6B00ADF9"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/26f5952dde555b854f27.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/883374989_17923825512490405_7569570686528326589_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kcdSbHcecBgQ7kNvwE_AetC&_nc_oc=Ado5RszGHp8aLBlUVeGXqcXdHn2KV2lc6yWdXRpG6VdOss0I0q00FcM78PIqbUDncaQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qobc_it7Y9QFBDXEcMy_6w&oh=00_AQSXmYidAPQ46-TLQAbF-kdnM9SwjmJenDNzMroEYF9mJA&oe=6AEE3E1B"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f0699d8d789991b09469.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863407347_17922015090490405_7319708750114950218_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GtmZ9E6dzmoQ7kNvwEwZgHl&_nc_oc=AdqXOYcKYIowyC0HQDsSWqBsd5b6599nu7LYQ3HP1N5yxM7tRAA1QGIexNnvMzzSmoE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=E6CD_GF39ClKFmQJrEZr8A&oh=00_AQNX0HMU9f25l91mr6TCKqx-4olVhTBsAvCv0KVTabAdCw&oe=6AE137C0"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f7fe9b39471f68e26607.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869220972_17922729432490405_4530751307284531651_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3aXMeKAz2MQQ7kNvwEl5qjE&_nc_oc=AdrJcm-RHs1WOPKmRIPFzPB05GkXZn4LSeow_qWoXrxcQSKFtVR55NVXPuGM_tT0JZs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=HrUEMllcBoq41MxXBIOBkA&oh=00_AQP3-OW4F_AHkMo9NkIc4FZEyymB9XznLs6kHAi54LFT5A&oe=6AE62CA4"
+     },
+     {
+      "url": "https://i.ibb.co/B5Vmpy1m/2edb6272753a.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/838743498_17919583995490405_925785132558369981_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=koda6dB2RyEQ7kNvwE6OZ2Q&_nc_oc=Adq_qGGSfrwX5JsHV3y1m_RAvhoyxVGGmFqVMMWE2SIIh5sxTZQ2Jxqe4CcvwXP33BgrPpq5vtBeNYWThzK9rxhh&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hKEBOAaN-HpI9xVunGu3WQ&oh=00_AQMwPFyGwln4XxbHsP6vBAQfLAtAk7eTpsvq5vzxB2_zuA&oe=6AD35654"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/4fb03362f60c821b3cbf.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/912355490_17925933807490405_3816566858701437925_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IkDbGhkOwiUQ7kNvwF308G7&_nc_oc=AdoCJCXgI7abIr3L2DxbQWXrVaJtgJpjLz2EX2vOc2K-D8rDm-m-gXOwNSRzXAuFX5M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4ooNxEZzTYVPcStdjJUidA&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQQtpuyPyuSpxa6Vj1tnQyhbEXZL42HTeBSugI0jNO61-Q&oe=6B00A75E"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d4d5e85edc4a4cad28da.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/906389778_17925589434490405_8777208877840575047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bkJDj2ddLagQ7kNvwHH0Qmd&_nc_oc=AdqbiaOw0E3o1qki-xYYviZU5limYjJWUxYLZThRHK6YsJXKZlRrhf5hVI-Zuj0UEbk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dIjZOYx9ywC0uOdiptTdfg&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQTCfNy6Eqa3OsV7ssUtgYF7wnHmiC9yUJOCBbmHW73bkA&oe=6AFDDE8E"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/84f9fb3470bab7009491.jpg",
+      "credit": "@cortis",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/906255888_17925933240490405_5356448632591384577_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3rEg3hvr7jwQ7kNvwFy49qS&_nc_oc=AdrYx9o3l5_KJpHtBtx8gbZgMBQo-dyBIdgrIxeenKIWLOGvOJGMrmzVkfdCZCY42ZE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=BYNX1ZIr7mZXDRLBG9zx9g&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQQG3HQpiQcy1nU08KNcy535S6JYtuvGgaYwye9OTRRA4w&oe=6B01C07C"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/2abed527fa84d9849d48.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/905135914_17925934521490405_5962080558595908855_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sYd3RD07ZIQQ7kNvwHsj8cg&_nc_oc=AdriKs4oCZF2RjtujJkGXs1MLWu_BVtyAQMqfZ3pQWuNHtvpLM0HB1X-bvAHz0jQ67U&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4ooNxEZzTYVPcStdjJUidA&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQRDtySrCZRfZegpNXjggsg4M-171873fyVQKyNeZibnFQ&oe=6B00ADF9"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/26f5952dde555b854f27.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/883374989_17923825512490405_7569570686528326589_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=kcdSbHcecBgQ7kNvwE_AetC&_nc_oc=Ado5RszGHp8aLBlUVeGXqcXdHn2KV2lc6yWdXRpG6VdOss0I0q00FcM78PIqbUDncaQ&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=qobc_it7Y9QFBDXEcMy_6w&oh=00_AQSXmYidAPQ46-TLQAbF-kdnM9SwjmJenDNzMroEYF9mJA&oe=6AEE3E1B"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f0699d8d789991b09469.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/863407347_17922015090490405_7319708750114950218_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GtmZ9E6dzmoQ7kNvwEwZgHl&_nc_oc=AdqXOYcKYIowyC0HQDsSWqBsd5b6599nu7LYQ3HP1N5yxM7tRAA1QGIexNnvMzzSmoE&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=E6CD_GF39ClKFmQJrEZr8A&oh=00_AQNX0HMU9f25l91mr6TCKqx-4olVhTBsAvCv0KVTabAdCw&oe=6AE137C0"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f7fe9b39471f68e26607.jpg",
+      "credit": "@cortis",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/869220972_17922729432490405_4530751307284531651_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=3aXMeKAz2MQQ7kNvwEl5qjE&_nc_oc=AdrJcm-RHs1WOPKmRIPFzPB05GkXZn4LSeow_qWoXrxcQSKFtVR55NVXPuGM_tT0JZs&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=HrUEMllcBoq41MxXBIOBkA&oh=00_AQP3-OW4F_AHkMo9NkIc4FZEyymB9XznLs6kHAi54LFT5A&oe=6AE62CA4"
+     },
+     {
+      "url": "https://i.ibb.co/B5Vmpy1m/2edb6272753a.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-icn2-1.cdninstagram.com/v/t51.82787-15/838743498_17919583995490405_925785132558369981_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=koda6dB2RyEQ7kNvwE6OZ2Q&_nc_oc=Adq_qGGSfrwX5JsHV3y1m_RAvhoyxVGGmFqVMMWE2SIIh5sxTZQ2Jxqe4CcvwXP33BgrPpq5vtBeNYWThzK9rxhh&_nc_zt=23&_nc_ht=scontent-icn2-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=hKEBOAaN-HpI9xVunGu3WQ&oh=00_AQMwPFyGwln4XxbHsP6vBAQfLAtAk7eTpsvq5vzxB2_zuA&oe=6AD35654"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/4fb03362f60c821b3cbf.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/912355490_17925933807490405_3816566858701437925_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IkDbGhkOwiUQ7kNvwF308G7&_nc_oc=AdoCJCXgI7abIr3L2DxbQWXrVaJtgJpjLz2EX2vOc2K-D8rDm-m-gXOwNSRzXAuFX5M&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=4ooNxEZzTYVPcStdjJUidA&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQQtpuyPyuSpxa6Vj1tnQyhbEXZL42HTeBSugI0jNO61-Q&oe=6B00A75E"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d4d5e85edc4a4cad28da.jpg",
+      "credit": "@cortis",
+      "kind": "셀카·일상",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/906389778_17925589434490405_8777208877840575047_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bkJDj2ddLagQ7kNvwHH0Qmd&_nc_oc=AdqbiaOw0E3o1qki-xYYviZU5limYjJWUxYLZThRHK6YsJXKZlRrhf5hVI-Zuj0UEbk&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=dIjZOYx9ywC0uOdiptTdfg&_nc_ct=RQosPBUKFQIAAAA&oh=00_AQTCfNy6Eqa3OsV7ssUtgYF7wnHmiC9yUJOCBbmHW73bkA&oe=6AFDDE8E"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "코르티스는 왜|'올해의 레코드'인가",
+      "sub": "MMA2026 대상 · 첫 출석에서 3관왕"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "'올해의 레코드' 수상 곡이 'REDRED'라는 건 한국경제 한 곳에서만 봐서 캡션엔 곡 이름을 붙이지 않음 · 'REDRED' 전원 작사·작곡은 스포츠경향과 검색 요약으로 확인",
+     "[검증] 2:23 소감의 화자가 성현인지 기사·자막으로 확인 못 함 (한국경제·헤럴드뮤즈 모두 '코르티스'로만 씀) → 캡션·장·후킹에서 이름을 빼고 '코르티스/멤버'로 고침 · 영상으로 화자 확인되면 이름 넣어도 됨 · 7월 KMA 2026 'RECORD OF THE YEAR'(톱스타뉴스)가 빠져 '한 해에 두 번'이 틀렸음 → 고침 · '영크크'가 팀 호칭이라는 말은 아이즈 원문에 없어 '유행어'로 고침",
+     "사진은 코르티스 공식 인스타의 MMA 사진"
+    ],
+    "research": [
+     {
+      "title": "아시아경제 11/16 — 코르티스 '올해의 레코드' · 처음 참가한 MMA에서 대상 · 이 부문은 음원 성적·팬 투표 없이 심사위원 평가만 · 마틴 \"항상 제가 꿈꿔온 길이었고 저희 모두가 꿈꿔온 길\"",
+      "link": "https://view.asiae.co.kr/article/2026111601025184307"
+     },
+     {
+      "title": "싱글리스트 11/16 — 11/15 고척스카이돔 · 올해의 레코드·톱10·글로벌 톱10 3관왕 · 6개 부문 후보",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=782108"
+     },
+     {
+      "title": "멜론 공식 유튜브 — 올해의 레코드 수상 소감 · 2:23 성현 '회사에서 받지 못할 거다' (자막 확인)",
+      "link": "https://www.youtube.com/watch?v=DMZ2qAbtO18"
+     },
+     {
+      "title": "더팩트 2026/9/19 — TMA 'RECORD OF THE YEAR' · 넥스트 리더·올해의 아티스트 3관왕 · 마틴 \"1집에서 이와 같은 말을 했는데 꿈을 이뤘다\"",
+      "link": "https://news.tf.co.kr/read/ogmeta/2367960.htm"
+     },
+     {
+      "title": "더팩트 2025/8/21 — 'What You Want' 작사 마틴·성현·건호·주훈 · 작곡 성현 · 안무 제임스",
+      "link": "https://news.tf.co.kr/read/ogmeta/2235764.htm"
+     },
+     {
+      "title": "스포츠경향 2026/4 — 'REDRED' 제임스 아이디어에서 시작 · 멤버 전원 작사·작곡 · 제임스 \"날 것의 사운드를 만들고 싶었다\"",
+      "link": "https://sports.khan.co.kr/article/202604201520003"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/07f53fc09a750ec98356.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/7b770570c404a4b76071.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/2eef6c41eb6bb3805056.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/87f21038923200705551.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/8be76d1f322ce04037bf.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/e3eb8a5dc986d198c945.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/07f53fc09a750ec98356.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-17T16:32+09:00",
+     "v": {
+      "A": "122106cd"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=DMZ2qAbtO18\n구간: 2:10-2:40\n곡: 코르티스의 대상 소감\n아티스트: 회사도 못 받을 거라던\n피처링:\n후킹: \n출처: 멜론 Melon\n자막: 자동",
+    "caption": "코르티스(@cortis)가 처음 나간 멜론뮤직어워드에서 대상을 받았습니다.\n\n15일 고척스카이돔에서 열린 'MMA2026'에서 코르티스는 '올해의 레코드'를 받았는데요, 음원 성적이나 팬 투표 없이 심사위원 평가로만 정하는 상입니다. 소감 차례가 온 멤버는 \"회사에서 저희가 올해의 레코드를 받지 못할 거라고 해서\" 정말 기대를 안 하고 왔다고 말했습니다.\n\n7월 KM차트어워즈, 9월 더팩트 뮤직 어워즈의 'RECORD OF THE YEAR'에 이어 같은 이름의 상이 또 한 번 코르티스에게 돌아갔습니다.\n\n#PLOT #코르티스 #CORTIS #MMA2026 #올해의레코드",
+    "hooks": {
+     "A": "회사도 못 받을 거라던 / 코르티스의 대상 소감",
+     "B": "기대 안 하고 왔다가 / 대상 받은 코르티스",
+     "C": "첫 MMA에서 대상까지 / 코르티스의 솔직한 소감"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=DMZ2qAbtO18",
+     "credit": "멜론 Melon",
+     "range": [
+      130.0,
+      160.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "'올해의 레코드' 수상 곡이 'REDRED'라는 건 한국경제 한 곳에서만 봐서 캡션엔 곡 이름을 붙이지 않음 · 'REDRED' 전원 작사·작곡은 스포츠경향과 검색 요약으로 확인",
+     "[검증] 2:23 소감의 화자가 성현인지 기사·자막으로 확인 못 함 (한국경제·헤럴드뮤즈 모두 '코르티스'로만 씀) → 캡션·장·후킹에서 이름을 빼고 '코르티스/멤버'로 고침 · 영상으로 화자 확인되면 이름 넣어도 됨 · 7월 KMA 2026 'RECORD OF THE YEAR'(톱스타뉴스)가 빠져 '한 해에 두 번'이 틀렸음 → 고침 · '영크크'가 팀 호칭이라는 말은 아이즈 원문에 없어 '유행어'로 고침",
+     "사진은 코르티스 공식 인스타의 MMA 사진"
+    ],
+    "research": [
+     {
+      "title": "아시아경제 11/16 — 코르티스 '올해의 레코드' · 처음 참가한 MMA에서 대상 · 이 부문은 음원 성적·팬 투표 없이 심사위원 평가만 · 마틴 \"항상 제가 꿈꿔온 길이었고 저희 모두가 꿈꿔온 길\"",
+      "link": "https://view.asiae.co.kr/article/2026111601025184307"
+     },
+     {
+      "title": "싱글리스트 11/16 — 11/15 고척스카이돔 · 올해의 레코드·톱10·글로벌 톱10 3관왕 · 6개 부문 후보",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=782108"
+     },
+     {
+      "title": "멜론 공식 유튜브 — 올해의 레코드 수상 소감 · 2:23 성현 '회사에서 받지 못할 거다' (자막 확인)",
+      "link": "https://www.youtube.com/watch?v=DMZ2qAbtO18"
+     },
+     {
+      "title": "더팩트 2026/9/19 — TMA 'RECORD OF THE YEAR' · 넥스트 리더·올해의 아티스트 3관왕 · 마틴 \"1집에서 이와 같은 말을 했는데 꿈을 이뤘다\"",
+      "link": "https://news.tf.co.kr/read/ogmeta/2367960.htm"
+     },
+     {
+      "title": "더팩트 2025/8/21 — 'What You Want' 작사 마틴·성현·건호·주훈 · 작곡 성현 · 안무 제임스",
+      "link": "https://news.tf.co.kr/read/ogmeta/2235764.htm"
+     },
+     {
+      "title": "스포츠경향 2026/4 — 'REDRED' 제임스 아이디어에서 시작 · 멤버 전원 작사·작곡 · 제임스 \"날 것의 사운드를 만들고 싶었다\"",
+      "link": "https://sports.khan.co.kr/article/202604201520003"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/DMZ2qAbtO18/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/1c3238022d1c653ed6d5.jpg",
+     "key": "DMZ2qAbtO18@130.0"
+    },
+    "px": {
+     "vid": "DMZ2qAbtO18",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/37bf0533b09907c8b1a3.mp4",
+     "off": 85.0,
+     "end": 205.0,
+     "full": 252.0
+    },
+    "prep": {
+     "status": "making",
+     "at": "2026-11-17T16:35+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "오늘 뉴스 급상승 1위(기사 50건+) · 회차 목표 '인물해부' · 숏폼(\"못 받을 거라고\" 소감)이 함께 있음",
+    "at": "2026-11-17T16:31+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 5
+  },
+  {
+   "source": {
+    "id": "claude:leemujin-donghwi-radio",
+    "account": "KBS CoolFM",
+    "url": "https://www.youtube.com/watch?v=jpDR7K8QjMo",
+    "image": null,
+    "head": "박명수의 휘낭시에 with 이무진 / [박명수의 라디오쇼] | KBS 261116 방송",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-17T16:31+09:00",
+   "key": "d8b4d0be",
+   "by": "claude",
+   "subjects": [
+    "이무진"
+   ],
+   "lane": "클립",
+   "editor": {
+    "grade": "A",
+    "kind": "클립",
+    "angle": "친분이 전혀 없던 이동휘를 '밤무대' 뮤비 주연으로 부른 이유 — 곡을 쓸 때 머릿속 화자가 이동휘였다",
+    "why": "후속 · 11/7 이동휘×이무진 릴스 도달 1.5만 · 🍯 의외의 만남 · 말 한 줄"
+   },
+   "added": "claude",
+   "added_at": "2026-11-17T16:31+09:00",
+   "corner": "followup",
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=jpDR7K8QjMo\n구간: 7:34-8:04\n곡: 뮤비 주연으로 부른 이유\n아티스트: 친분 하나 없는 이동휘를\n피처링:\n후킹: \n출처: KBS CoolFM\n자막: 자동",
+    "caption": "이무진(@morilla_lmj)이 이동휘(@dlehdgnl)를 뮤직비디오 주연으로 부른 이유를 밝혔습니다.\n\n16일 KBS 쿨FM 〈박명수의 라디오쇼〉에 나온 이무진은 '밤무대'를 처음 만들 때 \"자연스럽게 제 머릿속에서 설정한 화자\"가 이동휘였다고 말했는데요, 정작 두 사람 사이엔 친분이 전혀 없었습니다. 선배에게 왜 직접 연락하지 않았느냐는 물음엔 \"무서웠어요\"라고 답했습니다.\n\n곡을 쓰며 떠올린 얼굴이 그대로 '밤무대'의 주인공이 된 셈입니다.\n\n#PLOT #이무진 #이동휘 #밤무대 #박명수의라디오쇼",
+    "hooks": {
+     "A": "친분 하나 없는 이동휘를 / 뮤비 주연으로 부른 이유",
+     "B": "곡 쓸 때부터 머릿속 / 주인공은 이동휘였다",
+     "C": "선배라 무서워서 / 직접 연락 못 한 이무진"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=jpDR7K8QjMo",
+     "credit": "KBS CoolFM",
+     "range": [
+      454.0,
+      484.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] '매니저를 통해 연락'은 자막(7:59 '…이 전했어요'로 뭉개짐)·뉴스엔(본문 깨짐)·검색 어디서도 확인 못 해 캡션·후킹 C에서 뺌 — 영상 7:59를 들어 보고 '매니저가 전했다'가 맞으면 다시 넣어도 됨",
+     "클립 위험: 높음 — KBS CoolFM (30초 · 7:34-8:04 · 워터마크 그대로)",
+     "자막이 '이동이·이동희'로 잘못 잡혀 있음 — 말자막은 '이동휘'로 고칠 것"
+    ],
+    "research": [
+     {
+      "title": "KBS CoolFM 11/16 — 7:37 \"이 노래를 처음 만들 때 자연스럽게 제 머릿속에서 설정한 화자가 이동휘 님이었어요\" · 7:50 친분 \"전혀 없습니다\" · 8:03 \"무서웠어요\" (자막 확인)",
+      "link": "https://www.youtube.com/watch?v=jpDR7K8QjMo"
+     },
+     {
+      "title": "뉴스엔 11/16 — 이동휘, 친분도 없는 이무진 뮤비 출연한 이유(라디오쇼) · 매니저를 통해 연락",
+      "link": "https://www.newsen.com/news_view.php?uid=202611161137251910"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/jpDR7K8QjMo/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/fdd69d3678019798c998.jpg",
+     "key": "jpDR7K8QjMo@454.0"
+    },
+    "px": {
+     "vid": "jpDR7K8QjMo",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/cce60a9e78d4af768c84.mp4",
+     "off": 409.0,
+     "end": 529.0,
+     "full": 1822.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-17T16:35+09:00"
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "숏폼 · 릴스 도달 1.5만이 나온 이동휘×이무진의 후속편 · 친분 없이 부른 이유라는 말 한 줄",
+    "at": "2026-11-17T16:31+09:00"
+   },
+   "corner_name": "후속"
+  },
+  {
+   "source": {
+    "id": "claude:riize-plave-lowkey",
+    "account": "싱글리스트",
+    "url": "https://www.slist.kr/news/articleView.html?idxno=782187",
+    "image": null,
+    "head": "라이즈·플레이브, 30일 협업 싱글 'Lowkey' 발매...켄지 작사",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-17T16:31+09:00",
+   "key": "3025a86b",
+   "by": "claude",
+   "subjects": [
+    "라이즈",
+    "플레이브"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "라이즈 여섯 명과 버추얼 아이돌 플레이브 다섯 명이 한 곡에 — 30일 'Lowkey'",
+    "why": "의외의 만남 · 플레이브 공식 인스타 2.0배 · 기사 9건"
+   },
+   "added": "claude",
+   "added_at": "2026-11-17T16:31+09:00",
+   "corner": "meet",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n라이즈(@riize_official)와 플레이브가 한 곡에서 만납니다.\n\n두 팀은 30일 낮 12시 컬래버레이션 싱글 'Lowkey'의 음원과 뮤직비디오를 함께 공개하는데요, 라이즈 여섯 명과 버추얼 아이돌 플레이브 다섯 명이 모두 참여했습니다. 뮤직비디오 일부는 15일 '2026 멜론뮤직어워드'에서 먼저 공개됐습니다.\n\n곡은 UK 개러지 리듬 위에 신시사이저와 베이스, 드럼을 얹은 하우스 댄스곡으로, 가사는 프로듀서 켄지가 썼습니다.\n\n#PLOT #라이즈 #플레이브 #Lowkey #켄지\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/5d205070c56bf46676ab.jpg\n제목: 라이즈 × 플레이브,|한 곡에서 만난다\n부제: 컬래버 싱글 'Lowkey' · 30일 낮 12시\n출처: 뉴스1\n",
+    "caption": "라이즈(@riize_official)와 플레이브가 한 곡에서 만납니다.\n\n두 팀은 30일 낮 12시 컬래버레이션 싱글 'Lowkey'의 음원과 뮤직비디오를 함께 공개하는데요, 라이즈 여섯 명과 버추얼 아이돌 플레이브 다섯 명이 모두 참여했습니다. 뮤직비디오 일부는 15일 '2026 멜론뮤직어워드'에서 먼저 공개됐습니다.\n\n곡은 UK 개러지 리듬 위에 신시사이저와 베이스, 드럼을 얹은 하우스 댄스곡으로, 가사는 프로듀서 켄지가 썼습니다.\n\n#PLOT #라이즈 #플레이브 #Lowkey #켄지",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/5d205070c56bf46676ab.jpg",
+      "credit": "뉴스1",
+      "from": "https://i3n.news1.kr/system/photos/2026/11/16/8216081/high.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/137162ab83b102fe34e6.jpg",
+      "credit": "@riize_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088879_18023252342971491_3522675964034096379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=M7pi-V9aeTIQ7kNvwFLjiTP&_nc_oc=Adra52g3Ei5CT4UaW580FMg2QRa50Qr3nnaZTnjgoBWqAwopeVrbp0CIvhlwQcnQ3Uc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=j7qh1Z4hgyHqDCdzI3T_xg&oh=00_AQMH98v7Sim3hvBmVJBWCIHbO0pYj6_7MLIIUzudNN3L0Q&oe=6AE042D1"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/4fcab6bf2d1cd0c7986a.jpg",
+      "credit": "@riize_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088919_18023251709971491_2035739999077560527_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IRVp2dS8DT4Q7kNvwGHJ9Jv&_nc_oc=Adol58-q61kpM-3m28mw0gYsD31LupKafZec9QlujMTen2Ahr-rKemusxzPLv20R6jw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=j7qh1Z4hgyHqDCdzI3T_xg&oh=00_AQOrME7j7wvFmiIa9tIgKbtk2d2joarM0dWv74IYu9TMGQ&oe=6AE02FB0"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a9c60ffab599df9f163d.jpg",
+      "credit": "@riize_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/887474347_18025777568971491_1859829355427748458_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=rz10QITH-mcQ7kNvwHLDfig&_nc_oc=AdrwvXw9Kq7olF_QABAawzutm0vk-e96o7cMEgsyQ80-M2EoS2tbl5u1scO-O3QYgZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=7OoC9SmtGTcbvObH_B20uQ&oh=00_AQTV13_ruL3OpUtK5biwaPHsQsfvg5CTrjrIABxM_XjZyg&oe=6AF39FB0"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/5d205070c56bf46676ab.jpg",
+      "credit": "뉴스1",
+      "from": "https://i3n.news1.kr/system/photos/2026/11/16/8216081/high.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/137162ab83b102fe34e6.jpg",
+      "credit": "@riize_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088879_18023252342971491_3522675964034096379_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=M7pi-V9aeTIQ7kNvwFLjiTP&_nc_oc=Adra52g3Ei5CT4UaW580FMg2QRa50Qr3nnaZTnjgoBWqAwopeVrbp0CIvhlwQcnQ3Uc&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=j7qh1Z4hgyHqDCdzI3T_xg&oh=00_AQMH98v7Sim3hvBmVJBWCIHbO0pYj6_7MLIIUzudNN3L0Q&oe=6AE042D1"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/4fcab6bf2d1cd0c7986a.jpg",
+      "credit": "@riize_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/858088919_18023251709971491_2035739999077560527_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IRVp2dS8DT4Q7kNvwGHJ9Jv&_nc_oc=Adol58-q61kpM-3m28mw0gYsD31LupKafZec9QlujMTen2Ahr-rKemusxzPLv20R6jw&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=j7qh1Z4hgyHqDCdzI3T_xg&oh=00_AQOrME7j7wvFmiIa9tIgKbtk2d2joarM0dWv74IYu9TMGQ&oe=6AE02FB0"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a9c60ffab599df9f163d.jpg",
+      "credit": "@riize_official",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/887474347_18025777568971491_1859829355427748458_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=rz10QITH-mcQ7kNvwHLDfig&_nc_oc=AdrwvXw9Kq7olF_QABAawzutm0vk-e96o7cMEgsyQ80-M2EoS2tbl5u1scO-O3QYgZ4&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=7OoC9SmtGTcbvObH_B20uQ&oh=00_AQTV13_ruL3OpUtK5biwaPHsQsfvg5CTrjrIABxM_XjZyg&oe=6AF39FB0"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "라이즈 × 플레이브,|한 곡에서 만난다",
+      "sub": "컬래버 싱글 'Lowkey' · 30일 낮 12시"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "기사형 표지 한 장 · 작사 켄지는 싱글리스트에서 직접 확인(뉴스1엔 없음, 다른 매체 검색 요약엔 있음)",
+     "표지 사진이 두 팀이 함께 나온 공식 이미지인지 볼 것 — 한쪽만 나오면 바꿀 것"
+    ],
+    "research": [
+     {
+      "title": "싱글리스트 11/16 — 30일 정오 음원·MV 동시 공개 · 라이즈 6명·플레이브 5명 · UK 개러지 리듬 하우스 댄스곡 · 작사 켄지 · MMA2026에서 MV 일부 처음 공개",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=782187"
+     },
+     {
+      "title": "뉴스1 11/16 — 30일 낮 12시 · UK 개러지 사운드 더한 하우스 기반 댄스곡 · 15일 MV 하이라이트 공개",
+      "link": "https://www.news1.kr/entertain/music/6355275"
+     },
+     {
+      "title": "플레이브 공식 인스타 — PLAVE x RIIZE 'Lowkey' 2026.11.30 MON 12PM (KST)",
+      "link": "https://www.instagram.com/p/DfyPFUtyhSf/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/8b373cc3a8ebcbb9d6e4.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/8b696d1d52325c05545d.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/8b373cc3a8ebcbb9d6e4.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-17T16:32+09:00",
+     "v": {
+      "A": "4da91aa5"
+     }
+    }
+   },
+   "corner_name": "만나는 법",
+   "corner_no": 7
   }
  ],
  "skipped": [],
@@ -1202,7 +1673,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 5,
-    "drafts": 2,
+    "drafts": 3,
     "why": "'2026년 ○○○ 만나는 법' — 남은 공연·페스티벌·행사를 한 장에 하나씩, 확인된 일정만"
    },
    {
@@ -1214,7 +1685,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 4,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1298,7 +1769,7 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 0,
+    "drafts": 1,
     "why": "잘 된 글·뜨는 이슈의 다음 편 (후속 기획 탭)"
    },
    {
@@ -1350,10 +1821,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-17T10:12+09:00"
+  "at": "2026-11-17T16:35+09:00"
  },
  "queue": {
-  "next": "2026-11-17T10:14+09:00",
+  "next": "2026-11-17T16:37+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-12T19:35+09:00"
