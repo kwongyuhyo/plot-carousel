@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-16 22:04 KST",
+ "generated_at": "2026-11-17 15:04 KST",
  "weeks": [
   {
    "week": "2026-W40",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-16 19:04 KST"
+  "daily": "2026-11-16 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-16T21:51:52+09:00",
+  "fetched_at": "2026-11-17T14:27:05+09:00",
   "posts": [
    {
     "t": "2026-11-12T19:35+09:00",
@@ -2140,55 +2140,35 @@
     "t": "2026-10-27T15:08+09:00",
     "type": "VIDEO",
     "head": "배우 송강이 아일릿(@illit_official)의 신곡 '체포하겠어' "
-   },
-   {
-    "t": "2026-10-27T14:55+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "돈 톨리버가 제69회 그래미(@grammys) 어워즈 최우수 신인 아티스"
-   },
-   {
-    "t": "2026-10-27T14:11+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "누자베스의 레이블 하이드아웃 프로덕션이 꾸린 라이브 프로젝트 '누자베스 "
-   },
-   {
-    "t": "2026-10-27T13:52+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "부산 라이브클럽 오방가르드가 두 달 만에 다시 문을 열었습니다."
-   },
-   {
-    "t": "2026-10-26T22:14+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "영 떡(Young Thug)의 YSL 재판이 넷플릭스 다큐멘터리로 만들어"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 383,
-  "posted": 127,
+  "drafts": 385,
+  "posted": 124,
   "posts": 145,
-  "rate": 0.33,
+  "rate": 0.32,
   "adopted_mult": 0.99,
-  "own_mult": 1.02,
+  "own_mult": 1.0,
   "lanes": {
-   "클립": {
-    "drafts": 57,
-    "posted": 9,
-    "mult": 1.05
-   },
-   "정보": {
-    "drafts": 260,
-    "posted": 108,
-    "mult": 1.0
-   },
    "재미": {
-    "drafts": 28,
+    "drafts": 27,
     "posted": 4,
     "mult": 1.43
    },
+   "클립": {
+    "drafts": 56,
+    "posted": 7,
+    "mult": 1.05
+   },
+   "정보": {
+    "drafts": 263,
+    "posted": 107,
+    "mult": 1.0
+   },
    "시리즈": {
-    "drafts": 37,
+    "drafts": 38,
     "posted": 6,
     "mult": 0.78
    },
@@ -2199,30 +2179,25 @@
    }
   },
   "corners": {
-   "mal": {
-    "drafts": 53,
-    "posted": 8,
-    "mult": 0.89
-   },
-   "news": {
-    "drafts": 190,
-    "posted": 82,
-    "mult": 1.12
-   },
-   "followup": {
-    "drafts": 20,
-    "posted": 7,
-    "mult": 0.95
-   },
-   "tteolgi": {
-    "drafts": 12,
-    "posted": 1,
-    "mult": 0.87
-   },
    "song": {
     "drafts": 14,
     "posted": 7,
     "mult": 0.96
+   },
+   "mal": {
+    "drafts": 53,
+    "posted": 7,
+    "mult": 0.93
+   },
+   "news": {
+    "drafts": 190,
+    "posted": 81,
+    "mult": 1.1
+   },
+   "followup": {
+    "drafts": 19,
+    "posted": 6,
+    "mult": 0.91
    },
    "spotlight": {
     "drafts": 8,
@@ -2240,7 +2215,7 @@
     "mult": 1.25
    },
    "anniv": {
-    "drafts": 26,
+    "drafts": 27,
     "posted": 2,
     "mult": 2.0
    },
@@ -2249,13 +2224,18 @@
     "posted": 6,
     "mult": 0.77
    },
+   "tteolgi": {
+    "drafts": 11,
+    "posted": 1,
+    "mult": 0.87
+   },
    "meet": {
-    "drafts": 14,
+    "drafts": 16,
     "posted": 4,
     "mult": 1.05
    },
    "intro": {
-    "drafts": 22,
+    "drafts": 23,
     "posted": 3,
     "mult": 0.78
    },
@@ -2379,12 +2359,12 @@
   ]
  },
  "follow": {
-  "at": "2026-11-16T22:04+09:00",
+  "at": "2026-11-17T15:04+09:00",
   "d30": {
    "days": 30,
-   "follows": 13.6,
+   "follows": 13.4,
    "unfollows": 14.7,
-   "net": -1.1
+   "net": -1.3
   },
   "weeks": [
    {
@@ -2438,15 +2418,15 @@
    },
    {
     "week": "2026-W46",
-    "follows": 64,
-    "unfollows": 75,
-    "net": -11,
-    "days": 6
+    "follows": 71,
+    "unfollows": 91,
+    "net": -20,
+    "days": 7
    }
   ],
   "feed": {
    "n": 187,
-   "reach": 3668379,
+   "reach": 3669152,
    "follows": 490,
    "per1k": 0.13
   },
@@ -2462,7 +2442,7 @@
    {
     "kind": "기타",
     "n": 37,
-    "reach": 287987,
+    "reach": 288018,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2478,7 +2458,7 @@
    {
     "kind": "발매·신보",
     "n": 41,
-    "reach": 107836,
+    "reach": 108105,
     "follows": 12,
     "per1k": 0.11,
     "visits1k": 2.8
@@ -2486,7 +2466,7 @@
    {
     "kind": "갈등·반응",
     "n": 21,
-    "reach": 324943,
+    "reach": 325353,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2494,7 +2474,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 31,
-    "reach": 138770,
+    "reach": 138819,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
@@ -2559,7 +2539,7 @@
   "reels": {
    "reels_per1k": 0.2,
    "feed_per1k": 0.03,
-   "base": 14.7,
+   "base": 14.5,
    "days": 59
   },
   "spikes": [
