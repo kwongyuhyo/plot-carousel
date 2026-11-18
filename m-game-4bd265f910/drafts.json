@@ -1,50 +1,70 @@
 {
  "schema": 1,
- "date": "2026-11-17",
- "generated_at": "2026-11-17 11:02 KST",
+ "date": "2026-11-18",
+ "generated_at": "2026-11-18 11:02 KST",
  "items": [
   {
    "source": {
-    "id": "claude:megaman-cleanser-man",
-    "account": "Mega Man 공식",
-    "url": "https://www.youtube.com/watch?v=lfOSvGwvT18",
+    "id": "claude:tga-2026-nominees",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323510",
     "image": null,
-    "head": "Mega Man: Dual Override - Robot Master Design Contest Winner Reveal",
+    "head": "출시도 안 한 'GTA6', 최다 부문 후보에...더 게임 어워드2026 후보 공개",
     "multiple": null,
-    "is_reel": true,
+    "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-17T11:11+09:00",
-   "key": "17e6c5eb",
+   "made_at": "2026-11-18T11:04+09:00",
+   "key": "2e1d6c00",
    "by": "claude",
    "subjects": [
-    "록맨: 듀얼 오버라이드"
+    "더 게임 어워드"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "팬이 그린 로봇이 보스가 됐다 — 1만 건 가까운 공모작 가운데 뽑힌 '클렌저맨', 원안을 살려 개발팀이 다듬었다",
-    "why": "공식 록맨 채널 발표 영상 자막(1만 건 가까운 응모·팬 투표로 여섯 후보·고른 이유·원안 존중) · Inven Global·The Outer Haven·Noisy Pixel 이 디자이너·설정·트위치콘 공개를 같은 내용으로 · 지스타 시연은 Inven Global(10/19)"
+    "angle": "출시 하루 전인 GTA 6 가 올해의 게임 후보에, 최다 8개 부문 — 한국 게임은 붉은사막이 최고의 커뮤니티 지원 부문에",
+    "why": "인벤(11/18)·Inven Global·Nintendo Everything·GamesBeat 가 올해의 게임 여섯 편과 커뮤니티 지원 부문 다섯 편을 같은 목록으로 · GTA 6 8개 부문은 인벤·GamesBeat(부문 목록으로 셈) · 11/19 출시는 Variety 제목·인벤"
    },
    "added": "claude",
-   "added_at": "2026-11-17T11:11+09:00",
+   "added_at": "2026-11-18T11:04+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n팬이 그린 로봇 한 대가 〈록맨: 듀얼 오버라이드〉의 보스가 됩니다.\n\n캡콤이 1년 전쯤 연 보스 디자인 공모전에는 전 세계에서 1만 건 가까운 작품이 들어왔는데요, 팬 투표로 추린 여섯 후보 가운데 개발팀이 고른 것은 팬 아티스트 iregyuradabii 의 '클렌저맨'입니다. 먼지 없는 세상을 바라는 청소 로봇이 명소와 미술품까지 박박 문질러 망가뜨리다 위험한 존재로 몰리고, 끝내 쓰레기 처리장을 차지해 환경을 더럽히기 시작한다는 설정입니다.\n\n개발팀은 재치 있는 모티프와 독특한 배색을 고른 이유로 꼽았고, 원안을 존중하면서 게임 세계에 맞게 세부를 다듬었다고 밝혔습니다. 아직 공개되지 않은 보스는 셋 남았습니다.\n\n2027년 봄 출시 · 스위치2 · 스위치 · PS5 · PS4 · 엑스박스 시리즈 X|S · 엑스박스 원 · PC(스팀·에픽·MS 스토어) · 11월 19일 개막하는 지스타 2026 캡콤 부스에서 시연\n\n#겜디핑 #록맨 #록맨듀얼오버라이드 #캡콤 #지스타2026\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/d62648df693d6621977a.jpg\n제목: 팬이 그린 로봇이|록맨 보스가 됐다\n부제: 1만 건 가까운 공모작 가운데 하나\n출처: Capcom\n",
-    "caption": "팬이 그린 로봇 한 대가 〈록맨: 듀얼 오버라이드〉의 보스가 됩니다.\n\n캡콤이 1년 전쯤 연 보스 디자인 공모전에는 전 세계에서 1만 건 가까운 작품이 들어왔는데요, 팬 투표로 추린 여섯 후보 가운데 개발팀이 고른 것은 팬 아티스트 iregyuradabii 의 '클렌저맨'입니다. 먼지 없는 세상을 바라는 청소 로봇이 명소와 미술품까지 박박 문질러 망가뜨리다 위험한 존재로 몰리고, 끝내 쓰레기 처리장을 차지해 환경을 더럽히기 시작한다는 설정입니다.\n\n개발팀은 재치 있는 모티프와 독특한 배색을 고른 이유로 꼽았고, 원안을 존중하면서 게임 세계에 맞게 세부를 다듬었다고 밝혔습니다. 아직 공개되지 않은 보스는 셋 남았습니다.\n\n2027년 봄 출시 · 스위치2 · 스위치 · PS5 · PS4 · 엑스박스 시리즈 X|S · 엑스박스 원 · PC(스팀·에픽·MS 스토어) · 11월 19일 개막하는 지스타 2026 캡콤 부스에서 시연\n\n#겜디핑 #록맨 #록맨듀얼오버라이드 #캡콤 #지스타2026",
+    "form": "[카테고리]\nNews\n\n[캡션]\n출시를 하루 앞둔 〈GTA 6〉가 더 게임 어워드 2026 올해의 게임 후보에 올랐습니다.\n\n17일(미국 시간) 공개된 올해의 게임 후보는 〈007 퍼스트 라이트〉, 〈컨트롤 레조넌트〉, 〈GTA 6〉, 〈팬텀 블레이드 제로〉, 〈바이오하자드 레퀴엠〉, 〈젤다의 전설 시간의 오카리나〉 여섯 편인데요, 〈GTA 6〉는 게임 연출과 내러티브, 음악, 루시아 역 매니 L. 페레스의 연기까지 모두 8개 부문 후보로 가장 많이 이름을 올렸습니다.\n\n한국 게임으로는 펄어비스의 〈붉은사막〉이 최고의 커뮤니티 지원 부문에 올라 〈헬다이버즈 2〉, 〈노 맨즈 스카이〉, 〈위쳐 3〉, 〈워프레임〉과 겨룹니다.\n\n팬 투표 12월 9일까지 공식 누리집 · 시상식 12월 10일(미국 현지 시간) 로스앤젤레스 피콕 시어터 · 국내 치지직·SOOP 생중계\n\n#겜디핑 #더게임어워드 #GTA6 #붉은사막 #올해의게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b0451986ab972cba3189.jpg\n제목: 출시도 전인 GTA 6,|올해의 게임 후보에\n부제: 더 게임 어워드 2026 후보 공개\n출처: The Game Awards\n",
+    "caption": "출시를 하루 앞둔 〈GTA 6〉가 더 게임 어워드 2026 올해의 게임 후보에 올랐습니다.\n\n17일(미국 시간) 공개된 올해의 게임 후보는 〈007 퍼스트 라이트〉, 〈컨트롤 레조넌트〉, 〈GTA 6〉, 〈팬텀 블레이드 제로〉, 〈바이오하자드 레퀴엠〉, 〈젤다의 전설 시간의 오카리나〉 여섯 편인데요, 〈GTA 6〉는 게임 연출과 내러티브, 음악, 루시아 역 매니 L. 페레스의 연기까지 모두 8개 부문 후보로 가장 많이 이름을 올렸습니다.\n\n한국 게임으로는 펄어비스의 〈붉은사막〉이 최고의 커뮤니티 지원 부문에 올라 〈헬다이버즈 2〉, 〈노 맨즈 스카이〉, 〈위쳐 3〉, 〈워프레임〉과 겨룹니다.\n\n팬 투표 12월 9일까지 공식 누리집 · 시상식 12월 10일(미국 현지 시간) 로스앤젤레스 피콕 시어터 · 국내 치지직·SOOP 생중계\n\n#겜디핑 #더게임어워드 #GTA6 #붉은사막 #올해의게임",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/d62648df693d6621977a.jpg",
-      "credit": "Capcom",
-      "from": "https://cdn.theouterhaven.net/wp-content/uploads/2026/11/Mega-Man-Dual-Override-Cleanser-Man-Featured-Image.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b0451986ab972cba3189.jpg",
+      "credit": "The Game Awards",
+      "from": "https://static.invenglobal.com/upload/image/2026/11/17/i1794937567971393.jpeg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
+      "credit": "The Game Awards",
+      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
+      "credit": "The Game Awards",
+      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/d62648df693d6621977a.jpg",
-      "credit": "Capcom",
-      "from": "https://cdn.theouterhaven.net/wp-content/uploads/2026/11/Mega-Man-Dual-Override-Cleanser-Man-Featured-Image.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b0451986ab972cba3189.jpg",
+      "credit": "The Game Awards",
+      "from": "https://static.invenglobal.com/upload/image/2026/11/17/i1794937567971393.jpeg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
+      "credit": "The Game Awards",
+      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
+      "credit": "The Game Awards",
+      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
      }
     ],
     "shape": "단신",
@@ -52,73 +72,174 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "팬이 그린 로봇이|록맨 보스가 됐다",
-      "sub": "1만 건 가까운 공모작 가운데 하나"
+      "title": "출시도 전인 GTA 6,|올해의 게임 후보에",
+      "sub": "더 게임 어워드 2026 후보 공개"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 사실은 공식 영상 자막·Inven Global 과 일치. 표지는 사진 순서를 바꿔 다시 올려도 같은 크롭(팔·발만, 'Cleanser' 글자 잘림) — 수동으로 전신 크롭 필요",
-     "표지가 클렌저맨 팔·발 일부만 크게 잘려 얼굴이 안 보임 — 전신이 보이게 다시 자를 것",
-     "숏폼 1:50-2:20 은 자막 빈 구간(1:46~2:21 공개 영상)으로만 잡음 — 클렌저맨 전투 장면이 나오는지 볼 것",
-     "한국어 지원은 스팀 상점에 아직 언어 목록이 없어 확인 못 함 (한국 스팀 제목은 '록맨: 듀얼 오버라이드')"
+     "팬 투표 12월 9일 마감과 치지직·SOOP 생중계는 인벤·Inven Global(같은 회사) 두 곳뿐 — 공식 누리집은 403 으로 못 읽음",
+     "시상식 시작 시각을 못 찾아 미국 현지 날짜로만 적음 — 한국 시간 나오면 바꿀 것"
     ],
     "research": [
      {
-      "title": "Mega Man 공식 유튜브 — Robot Master Design Contest Winner Reveal (0:22 1만 건 가까운 응모 · 2:34 고른 이유 · 2:48 원안 존중 · 3:00 남은 보스 셋)",
-      "link": "https://www.youtube.com/watch?v=lfOSvGwvT18"
+      "title": "인벤 — 더 게임 어워드2026 후보 공개 (11/18 · 올해의 게임 6 · GTA6 8개 부문 · 붉은사막 커뮤니티 지원 · 팬 투표 12/9까지 · 치지직·SOOP 생중계)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323510"
      },
      {
-      "title": "Inven Global — fan-designed boss Cleanser Man at TwitchCon (11/15 트위치콘 샌디에이고 · iregyuradabii · 설정 · 2027년 봄 · 플랫폼)",
-      "link": "https://www.invenglobal.com/articles/28682/mega-man-dual-override-reveals-fan-designed-boss-cleanser-man-at-twitchcon"
+      "title": "Nintendo Everything — The Game Awards 2026 nominees full list (올해의 게임 · Best Community Support 다섯 편)",
+      "link": "https://nintendoeverything.com/the-game-awards-2026-nominees-announced-full-list-zelda-ocarina-of-time-nominated-for-game-of-the-year-and-more/"
      },
      {
-      "title": "The Outer Haven — Capcom Reveals Cleanser Man at TwitchCon 2026 (iregyuradabii · 2027년 봄 · 플랫폼)",
-      "link": "https://www.theouterhaven.net/capcom-reveals-cleanser-man-for-mega-man-dual-override-at-twitchcon-2026/"
+      "title": "GamesBeat — The Game Awards lists all of its 2026 nominees (30개 부문 · 커뮤니티 지원 다섯 편)",
+      "link": "https://gamesbeat.com/the-game-awards-lists-all-of-its-2026-nominees-yes-gta-vi-made-the-cut/"
      },
      {
-      "title": "Noisy Pixel — Cleanser Man As Boss Design Contest Winner (원안·최종 디자인 이미지)",
-      "link": "https://noisypixel.net/mega-man-dual-override-cleanser-man-boss-design-contest-winner/"
+      "title": "Variety — 'GTA 6' Lands Game of the Year Nom Ahead of Thursday Release",
+      "link": "https://variety.com/2026/awards/news/game-awards-nominations-2026-list-1236949480/"
      },
      {
-      "title": "Rockman Corner — 여섯 우수상 후보 (3/5)",
-      "link": "https://www.rockman-corner.com/2026/03/mega-man-dual-override-robot-master.html"
-     },
-     {
-      "title": "Inven Global — Capcom Confirms G-STAR 2026 Participation (록맨: 듀얼 오버라이드 시연)",
-      "link": "https://www.invenglobal.com/articles/27392/capcom-confirms-g-star-2026-participation-completing-exhibition-hall-2-lineup"
+      "title": "Inven Global — Unreleased 'GTA 6' Leads Nominations (11/20 자격 마감 · 12/10 피콕 시어터)",
+      "link": "https://www.invenglobal.com/articles/28726/unreleased-gta-6-leads-nominations-the-game-awards-2026-nominees-revealed"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2094115409ca9c95c334.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e919e0eef8dee668fc09.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/df8d0b84b1452c746730.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e4f7c50d8ef1b641b80d.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2094115409ca9c95c334.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/df8d0b84b1452c746730.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-17T11:12+09:00",
+     "at": "2026-11-18T11:05+09:00",
      "v": {
-      "A": "5ce1fead"
+      "A": "26963edd"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "GTA 6 출시 하루 전 · 올해의 게임 여섯 편 · 붉은사막이 커뮤니티 지원 부문에 오른 한국 지점",
+    "at": "2026-11-18T11:04+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:sonic-pico-park",
+    "account": "스팀",
+    "url": "https://store.steampowered.com/app/4304060/",
+    "image": null,
+    "head": "SONIC PICO PARK — Steam",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-18T11:04+09:00",
+   "key": "1b53533d",
+   "by": "claude",
+   "subjects": [
+    "소닉 피코 파크"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "[실험] 인디 개발자 이야기 — 세가에서 15년 일한 미야케 슌스케의 〈피코 파크〉에 소닉이 들어왔다, 기획은 피코 파크 쪽이 세가에 먼저 들고 갔다",
+    "why": "세가 15년은 gamebiz(6/8 개발자 코멘트)·게임메카(11/17) · 테코파크가 35주년에 맞춰 세가에 기획을 가져갔다는 건 4Gamer·덴파미니코게이머 · 출시일·가격·한국어·2~8명은 스팀 상점 · 플랫폼은 Gematsu·playnews 제목"
+   },
+   "added": "claude",
+   "added_at": "2026-11-18T11:04+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n세가에서 15년 일한 개발자의 게임에 세가의 소닉이 들어왔습니다.\n\n〈피코 파크〉는 여럿이 서로 밟고 밀어 줘야 골에 닿는 협동 퍼즐 게임인데요, 시리즈 디렉터 미야케 슌스케가 바로 세가 출신입니다. 이번 〈소닉 피코 파크〉는 개발사 테코파크가 소닉 35주년에 맞춰 세가에 먼저 기획을 들고 가서 성사됐고, 미야케 디렉터는 이번 협업이 이뤄진 것이 감격스럽다고 밝혔습니다.\n\n모든 캐릭터가 스핀 대시를 쓰고, 링과 루프, 스프링 같은 소닉의 장치가 그대로 퍼즐이 됩니다. 메탈 소닉과 닥터 에그맨도 나옵니다.\n\n11월 12일 출시 · 스위치2 · 스위치 · PS5 · 엑스박스 시리즈 X|S · PC(스팀) · 스팀 9,900원 · 2~8명 로컬·온라인 협동 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #소닉피코파크 #피코파크 #소닉 #협동게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3b0b578be9a112d36ee2.jpg\n제목: 전 세가 직원의 게임에|소닉이 들어왔다\n부제: 소닉 피코 파크 출시\n출처: PICO PARK Inc. · SEGA\n",
+    "caption": "세가에서 15년 일한 개발자의 게임에 세가의 소닉이 들어왔습니다.\n\n〈피코 파크〉는 여럿이 서로 밟고 밀어 줘야 골에 닿는 협동 퍼즐 게임인데요, 시리즈 디렉터 미야케 슌스케가 바로 세가 출신입니다. 이번 〈소닉 피코 파크〉는 개발사 테코파크가 소닉 35주년에 맞춰 세가에 먼저 기획을 들고 가서 성사됐고, 미야케 디렉터는 이번 협업이 이뤄진 것이 감격스럽다고 밝혔습니다.\n\n모든 캐릭터가 스핀 대시를 쓰고, 링과 루프, 스프링 같은 소닉의 장치가 그대로 퍼즐이 됩니다. 메탈 소닉과 닥터 에그맨도 나옵니다.\n\n11월 12일 출시 · 스위치2 · 스위치 · PS5 · 엑스박스 시리즈 X|S · PC(스팀) · 스팀 9,900원 · 2~8명 로컬·온라인 협동 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #소닉피코파크 #피코파크 #소닉 #협동게임",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3b0b578be9a112d36ee2.jpg",
+      "credit": "PICO PARK Inc. · SEGA",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304060/4ed007789c511740e790405dd3fd03c5a116e280/ss_4ed007789c511740e790405dd3fd03c5a116e280.1920x1080.jpg?t=1794470411"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3b0b578be9a112d36ee2.jpg",
+      "credit": "PICO PARK Inc. · SEGA",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304060/4ed007789c511740e790405dd3fd03c5a116e280/ss_4ed007789c511740e790405dd3fd03c5a116e280.1920x1080.jpg?t=1794470411"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "전 세가 직원의 게임에|소닉이 들어왔다",
+      "sub": "소닉 피코 파크 출시"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "출시 엿새 지난 게임 — 실험 칸(사람 이야기)으로 냄 · 이즈카 다카시 '소닉 아니어도 되니 피코 파크를 만들어 달라'는 덴파미 한 곳이라 뺌",
+     "스팀 한국어가 인터페이스·자막 중 어느 쪽인지 표에서 못 가림 · 콘솔 국내 가격 확인 못 함"
+    ],
+    "research": [
+     {
+      "title": "스팀 — SONIC PICO PARK (TECOPARK / PICO PARK Inc. · 2026-11-12 · ₩9,900 · 한국어 포함 14개 언어 · 2~8명)",
+      "link": "https://store.steampowered.com/app/4304060/"
+     },
+     {
+      "title": "게임메카 — 35주년 기념 협동게임 '소닉 피코 파크' 출시 (11/17 · 미야케 디렉터 '세가에서 15년' · 메탈 소닉·에그맨)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783668"
+     },
+     {
+      "title": "gamebiz — SONIC PICO PARK 발표 (6/8 · 개발자 코멘트 「セガには私自身15年勤めていた」)",
+      "link": "https://gamebiz.jp/news/427346"
+     },
+     {
+      "title": "4Gamer — TECOPARK 가 소닉 35주년에 맞춰 세가에 기획을 가져감",
+      "link": "https://www.4gamer.net/s/G079769.260622023"
+     },
+     {
+      "title": "電ファミニコゲーマー — 미야케·시마즈 인터뷰 (원 세가 · 기획 경위)",
+      "link": "https://news.denfaminicogamer.jp/interview/260609w"
+     },
+     {
+      "title": "Gematsu — launches November 12 for PS5, Xbox Series, Switch 2, Switch, and PC",
+      "link": "https://www.gematsu.com/2026/09/sonic-pico-park-launches-november-12-for-ps5-xbox-series-switch-2-switch-and-pc"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/99ca52f6e021dbe0e18e.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a4d5c2ab3c779bada706.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/99ca52f6e021dbe0e18e.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-18T11:05+09:00",
+     "v": {
+      "A": "45dee541"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=lfOSvGwvT18\n구간: 1:50-2:20\n곡: 록맨 보스가 됐다\n아티스트: 팬이 그린 로봇이\n피처링:\n후킹: \n출처: Mega Man\n자막: 자동",
-    "caption": "〈록맨: 듀얼 오버라이드〉 보스 디자인 공모전 우승작 '클렌저맨' 공개 장면입니다.\n\n1만 건 가까운 응모작 가운데 팬 투표로 여섯 후보를 추렸고, 개발팀이 팬 아티스트 iregyuradabii 의 디자인을 골랐는데요, 원안을 존중하면서 게임 세계에 맞게 세부를 다듬었다고 밝혔습니다. 먼지 없는 세상을 바라다 쓰레기 처리장을 차지해 버린 청소 로봇입니다.\n\n2027년 봄 출시 · 스위치2 · 스위치 · PS5 · PS4 · 엑스박스 · PC · 지스타 2026 캡콤 부스에서 시연\n\n#겜디핑 #록맨 #록맨듀얼오버라이드 #캡콤 #지스타2026",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=H0UOggLIU84\n구간: 0:03-0:33\n곡: 소닉이 들어왔다\n아티스트: 전 세가 직원의 게임에\n피처링:\n후킹: \n출처: Sonic the Hedgehog\n자막: 자동",
+    "caption": "〈소닉 피코 파크〉 출시 트레일러입니다.\n\n〈피코 파크〉 디렉터 미야케 슌스케는 세가에서 15년 일한 개발자인데요, 개발사 테코파크가 소닉 35주년에 맞춰 세가에 먼저 기획을 들고 가서 이번 협업이 성사됐습니다. 모든 캐릭터가 스핀 대시를 쓰고, 링과 루프, 스프링이 퍼즐이 됩니다.\n\n11월 12일 출시 · 스위치2 · 스위치 · PS5 · 엑스박스 · PC(스팀) · 스팀 9,900원 · 2~8명 협동\n\n#겜디핑 #소닉피코파크 #피코파크 #소닉 #협동게임",
     "hooks": {
-     "A": "팬이 그린 로봇이 / 록맨 보스가 됐다",
-     "B": "1만 건 가운데 뽑힌 / 록맨의 새 보스",
-     "C": "청소 로봇이 / 록맨 보스가 된 사연"
+     "A": "전 세가 직원의 게임에 / 소닉이 들어왔다",
+     "B": "여덟 명이 함께 달리는 / 소닉 협동 퍼즐",
+     "C": "소닉이 피코 파크에 / 들어가면 생기는 일"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=lfOSvGwvT18",
-     "credit": "Mega Man",
+     "url": "https://www.youtube.com/watch?v=H0UOggLIU84",
+     "credit": "Sonic the Hedgehog",
      "range": [
-      110.0,
-      140.0
+      3.0,
+      33.0
      ]
     },
     "guided": {
@@ -127,103 +248,111 @@
     },
     "issues": [],
     "confirm": [
-     "[검증] 사실은 공식 영상 자막·Inven Global 과 일치. 표지는 사진 순서를 바꿔 다시 올려도 같은 크롭(팔·발만, 'Cleanser' 글자 잘림) — 수동으로 전신 크롭 필요",
-     "표지가 클렌저맨 팔·발 일부만 크게 잘려 얼굴이 안 보임 — 전신이 보이게 다시 자를 것",
-     "숏폼 1:50-2:20 은 자막 빈 구간(1:46~2:21 공개 영상)으로만 잡음 — 클렌저맨 전투 장면이 나오는지 볼 것",
-     "한국어 지원은 스팀 상점에 아직 언어 목록이 없어 확인 못 함 (한국 스팀 제목은 '록맨: 듀얼 오버라이드')"
+     "출시 엿새 지난 게임 — 실험 칸(사람 이야기)으로 냄 · 이즈카 다카시 '소닉 아니어도 되니 피코 파크를 만들어 달라'는 덴파미 한 곳이라 뺌",
+     "스팀 한국어가 인터페이스·자막 중 어느 쪽인지 표에서 못 가림 · 콘솔 국내 가격 확인 못 함"
     ],
     "research": [
      {
-      "title": "Mega Man 공식 유튜브 — Robot Master Design Contest Winner Reveal (0:22 1만 건 가까운 응모 · 2:34 고른 이유 · 2:48 원안 존중 · 3:00 남은 보스 셋)",
-      "link": "https://www.youtube.com/watch?v=lfOSvGwvT18"
+      "title": "스팀 — SONIC PICO PARK (TECOPARK / PICO PARK Inc. · 2026-11-12 · ₩9,900 · 한국어 포함 14개 언어 · 2~8명)",
+      "link": "https://store.steampowered.com/app/4304060/"
      },
      {
-      "title": "Inven Global — fan-designed boss Cleanser Man at TwitchCon (11/15 트위치콘 샌디에이고 · iregyuradabii · 설정 · 2027년 봄 · 플랫폼)",
-      "link": "https://www.invenglobal.com/articles/28682/mega-man-dual-override-reveals-fan-designed-boss-cleanser-man-at-twitchcon"
+      "title": "게임메카 — 35주년 기념 협동게임 '소닉 피코 파크' 출시 (11/17 · 미야케 디렉터 '세가에서 15년' · 메탈 소닉·에그맨)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783668"
      },
      {
-      "title": "The Outer Haven — Capcom Reveals Cleanser Man at TwitchCon 2026 (iregyuradabii · 2027년 봄 · 플랫폼)",
-      "link": "https://www.theouterhaven.net/capcom-reveals-cleanser-man-for-mega-man-dual-override-at-twitchcon-2026/"
+      "title": "gamebiz — SONIC PICO PARK 발표 (6/8 · 개발자 코멘트 「セガには私自身15年勤めていた」)",
+      "link": "https://gamebiz.jp/news/427346"
      },
      {
-      "title": "Noisy Pixel — Cleanser Man As Boss Design Contest Winner (원안·최종 디자인 이미지)",
-      "link": "https://noisypixel.net/mega-man-dual-override-cleanser-man-boss-design-contest-winner/"
+      "title": "4Gamer — TECOPARK 가 소닉 35주년에 맞춰 세가에 기획을 가져감",
+      "link": "https://www.4gamer.net/s/G079769.260622023"
      },
      {
-      "title": "Rockman Corner — 여섯 우수상 후보 (3/5)",
-      "link": "https://www.rockman-corner.com/2026/03/mega-man-dual-override-robot-master.html"
+      "title": "電ファミニコゲーマー — 미야케·시마즈 인터뷰 (원 세가 · 기획 경위)",
+      "link": "https://news.denfaminicogamer.jp/interview/260609w"
      },
      {
-      "title": "Inven Global — Capcom Confirms G-STAR 2026 Participation (록맨: 듀얼 오버라이드 시연)",
-      "link": "https://www.invenglobal.com/articles/27392/capcom-confirms-g-star-2026-participation-completing-exhibition-hall-2-lineup"
+      "title": "Gematsu — launches November 12 for PS5, Xbox Series, Switch 2, Switch, and PC",
+      "link": "https://www.gematsu.com/2026/09/sonic-pico-park-launches-november-12-for-ps5-xbox-series-switch-2-switch-and-pc"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/lfOSvGwvT18/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/H0UOggLIU84/maxresdefault.jpg",
     "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/89c094bb8a583cdf2e28.jpg",
-     "key": "lfOSvGwvT18@110.0"
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ccad7a59d068216ae6e9.jpg",
+     "key": "H0UOggLIU84@3.0"
     },
     "px": {
-     "vid": "lfOSvGwvT18",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2439df3c536bc4858877.mp4",
-     "off": 65.0,
-     "end": 185.0,
-     "full": 219.0
+     "vid": "H0UOggLIU84",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/46275865c43bc76b2a81.mp4",
+     "off": 0.0,
+     "end": 35.0,
+     "full": 35.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-17T11:13+09:00"
+     "at": "2026-11-18T11:05+09:00"
     }
    },
-   "corner_name": "소식",
    "pick": {
     "rank": 2,
-    "why": "팬이 그린 로봇이 보스가 됐다는 한 줄 · 이틀 뒤 지스타 캡콤 부스 시연과 이어짐 · 공식 영상 숏폼",
-    "at": "2026-11-17T19:02+09:00"
-   }
+    "why": "[실험] 세가에서 15년 일한 개발자의 게임에 소닉이 들어왔다는 사람 이야기 · 공식 출시 트레일러 숏폼 · 스팀 9,900원·한국어",
+    "at": "2026-11-18T11:04+09:00"
+   },
+   "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:miyamoto-dice-legend",
+    "id": "claude:firaxis-layoffs",
     "account": "Inven Global",
-    "url": "https://www.invenglobal.com/articles/28662/shigeru-miyamoto-to-receive-inaugural-dice-legend-award",
+    "url": "https://www.invenglobal.com/articles/28734/civilization-studio-firaxis-cuts-a-third-of-its-staff-as-studio-head-heather-hazen-departs",
     "image": null,
-    "head": "Shigeru Miyamoto to receive inaugural D.I.C.E. Legend Award",
+    "head": "Civilization Studio Firaxis Cuts a Third of Its Staff as Studio Head Heather Haz",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-17T11:11+09:00",
-   "key": "195b8ed5",
+   "made_at": "2026-11-18T11:04+09:00",
+   "key": "12531239",
    "by": "claude",
    "subjects": [
-    "미야모토 시게루"
+    "파이락시스"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "10년에 한 번 주는 상의 첫 주인공 — 1998년 AIAS 명예의 전당 첫 헌액자도 미야모토였다",
-    "why": "Inven Global(11/16 · AIAS 발표 · 10년에 많아야 한 번 · 1998 첫 헌액) · Shacknews(상 성격·시상식 날짜·장소·스카비오 회장 발언) · Nintendo Life 제목 일치"
+    "angle": "〈문명〉 개발사 파이락시스가 직원 3분의 1가량 감원, 헤더 헤이즌 대표도 떠난다",
+    "why": "블룸버그 첫 보도(11/17)를 Inven Global(직접 읽음)·Insider Gaming·Quartz·mlq 가 약 60명·3분의 1·헤이즌 퇴장·2K 확인으로 같은 내용 · 2023년(Axios·PC Gamer)·2025년(PC Gamer·Windows Central) 감원"
    },
    "added": "claude",
-   "added_at": "2026-11-17T11:11+09:00",
+   "added_at": "2026-11-18T11:04+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n미야모토 시게루가 D.I.C.E. 어워드의 첫 '레전드상'을 받습니다.\n\n미국 인터랙티브 예술과학 아카데미(AIAS)가 새로 만든 이 상은 10년에 많아야 한 번 주는 상인데요, 지금도 게임의 모습을 새로 쓰고 있는 인물에게 돌아갑니다. 미야모토는 1998년 이 아카데미 명예의 전당에 처음 이름을 올린 사람이기도 합니다. 두 상 모두 첫 주인공이 같은 사람인 셈입니다.\n\n메건 스카비오 AIAS 회장은 미야모토를 게임 업계 안팎에서 가장 존경받고 영향력 있는 인물 가운데 한 명이라고 소개했습니다. 〈슈퍼 마리오 브라더스〉와 〈젤다의 전설〉을 만든 사람입니다.\n\n제30회 D.I.C.E. 어워드 · 2027년 2월 19일(금) 오후 1시(한국 시간 · 미국 태평양 시간 18일 오후 8시) · 미국 라스베이거스 코스모폴리탄\n\n#겜디핑 #미야모토시게루 #닌텐도 #슈퍼마리오 #젤다의전설\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb8beb8d07aae3fad1ca.jpg\n제목: 미야모토 시게루,|10년에 한 번 주는 상\n부제: D.I.C.E. 어워드 첫 레전드상\n출처: AIAS\n",
-    "caption": "미야모토 시게루가 D.I.C.E. 어워드의 첫 '레전드상'을 받습니다.\n\n미국 인터랙티브 예술과학 아카데미(AIAS)가 새로 만든 이 상은 10년에 많아야 한 번 주는 상인데요, 지금도 게임의 모습을 새로 쓰고 있는 인물에게 돌아갑니다. 미야모토는 1998년 이 아카데미 명예의 전당에 처음 이름을 올린 사람이기도 합니다. 두 상 모두 첫 주인공이 같은 사람인 셈입니다.\n\n메건 스카비오 AIAS 회장은 미야모토를 게임 업계 안팎에서 가장 존경받고 영향력 있는 인물 가운데 한 명이라고 소개했습니다. 〈슈퍼 마리오 브라더스〉와 〈젤다의 전설〉을 만든 사람입니다.\n\n제30회 D.I.C.E. 어워드 · 2027년 2월 19일(금) 오후 1시(한국 시간 · 미국 태평양 시간 18일 오후 8시) · 미국 라스베이거스 코스모폴리탄\n\n#겜디핑 #미야모토시게루 #닌텐도 #슈퍼마리오 #젤다의전설",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈문명〉 시리즈를 만든 파이락시스가 직원 약 60명, 전체의 3분의 1가량을 내보냅니다.\n\n블룸버그가 17일(미국 시간) 처음 전했고 2K 대변인이 구조 조정을 확인했는데요, 스튜디오 규모를 줄여 디자인과 기술, 플레이어 경험에 집중하겠다는 설명입니다. 스튜디오를 이끌던 헤더 헤이즌 대표도 이번에 물러납니다.\n\n파이락시스는 2023년과 2025년에도 인원을 줄였습니다. 〈문명 7〉은 2025년 출시 뒤 지금까지 업데이트를 이어 오고 있습니다.\n\n감원 규모(약 60명)는 블룸버그 보도 기준 · 2K 대변인 확인\n\n#겜디핑 #문명 #파이락시스 #문명7 #2K\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg\n제목: 문명 개발사 파이락시스,|직원 3분의 1 감원\n부제: 스튜디오 대표도 떠난다\n출처: Firaxis Games · 2K\n",
+    "caption": "〈문명〉 시리즈를 만든 파이락시스가 직원 약 60명, 전체의 3분의 1가량을 내보냅니다.\n\n블룸버그가 17일(미국 시간) 처음 전했고 2K 대변인이 구조 조정을 확인했는데요, 스튜디오 규모를 줄여 디자인과 기술, 플레이어 경험에 집중하겠다는 설명입니다. 스튜디오를 이끌던 헤더 헤이즌 대표도 이번에 물러납니다.\n\n파이락시스는 2023년과 2025년에도 인원을 줄였습니다. 〈문명 7〉은 2025년 출시 뒤 지금까지 업데이트를 이어 오고 있습니다.\n\n감원 규모(약 60명)는 블룸버그 보도 기준 · 2K 대변인 확인\n\n#겜디핑 #문명 #파이락시스 #문명7 #2K",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb8beb8d07aae3fad1ca.jpg",
-      "credit": "AIAS",
-      "from": "https://d1lss44hh2trtw.cloudfront.net/assets/articles/2026/10/23/shigeru-miyamoto-generative-ai-video-games_feature.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
+      "credit": "Firaxis Games · 2K",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1295660/library_hero.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
+      "credit": "Firaxis Games · 2K",
+      "from": "https://cdn.akamai.steamstatic.com/steam/apps/1295660/library_hero.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb8beb8d07aae3fad1ca.jpg",
-      "credit": "AIAS",
-      "from": "https://d1lss44hh2trtw.cloudfront.net/assets/articles/2026/10/23/shigeru-miyamoto-generative-ai-video-games_feature.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
+      "credit": "Firaxis Games · 2K",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1295660/library_hero.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
+      "credit": "Firaxis Games · 2K",
+      "from": "https://cdn.akamai.steamstatic.com/steam/apps/1295660/library_hero.jpg"
      }
     ],
     "shape": "단신",
@@ -231,366 +360,57 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "미야모토 시게루,|10년에 한 번 주는 상",
-      "sub": "D.I.C.E. 어워드 첫 레전드상"
+      "title": "문명 개발사 파이락시스,|직원 3분의 1 감원",
+      "sub": "스튜디오 대표도 떠난다"
      }
     ],
     "issues": [],
     "confirm": [
-     "'1998년 명예의 전당 첫 헌액'은 Inven Global 과 AIAS 특별상 목록(1998 칸)으로 확인 — AIAS 원문 보도자료는 직접 못 읽음",
-     "미야모토 본인 소감은 아직 없음 — 캡션에 넣지 않음"
+     "Inven Global 만 본문을 직접 읽음 · Insider Gaming·Quartz 는 403 이라 검색 요약으로만 대조 — 블룸버그 원문은 못 읽음",
+     "미발표 새 〈엑스컴〉이 여름 마일스톤을 놓쳤다는 블룸버그 소식통 이야기는 확인 안 된 내용이라 캡션에서 뺌"
     ],
     "research": [
      {
-      "title": "Inven Global — inaugural D.I.C.E. Legend Award (11/16 · no more than once per decade · 2/18 8PM PT 코스모폴리탄 · 1998 명예의 전당 첫 헌액)",
-      "link": "https://www.invenglobal.com/articles/28662/shigeru-miyamoto-to-receive-inaugural-dice-legend-award"
+      "title": "Inven Global — Firaxis Cuts a Third of Its Staff (블룸버그 인용 · 약 60명 · 2K 대변인 확인 · 헤이즌 퇴장)",
+      "link": "https://www.invenglobal.com/articles/28734/civilization-studio-firaxis-cuts-a-third-of-its-staff-as-studio-head-heather-hazen-departs"
      },
      {
-      "title": "Shacknews — D.I.C.E. Awards' inaugural Legend Award (2/18 코스모폴리탄 · 스카비오 회장 발언)",
-      "link": "https://www.shacknews.com/article/151368/dice-awards-2027-legend-award-shigeru-miyamoto"
+      "title": "Insider Gaming — Civilization and XCOM Studio, Firaxis, Lays Off a Third of Staff",
+      "link": "https://insider-gaming.com/civilization-and-xcom-studio-firaxis-lays-off-a-third-of-staff"
      },
      {
-      "title": "Nintendo Life — inaugural 'Legend Award' at the 30th D.I.C.E. Awards",
-      "link": "https://www.nintendolife.com/news/2026/11/shigeru-miyamoto-to-receive-the-inaugural-legend-award-at-the-30th-d-i-c-e-awards"
+      "title": "Quartz — Firaxis is cutting about a third of staff as Heather Hazen exits",
+      "link": "https://qz.com/firaxis-layoffs-take-two-civilization-xcom-hazen-111726"
      },
      {
-      "title": "AIAS — Special Awards (명예의 전당 1998 미야모토 시게루)",
-      "link": "https://www.interactive.org/special_awards/"
+      "title": "PC Gamer — Civilization 7 studio Firaxis confirms layoffs (2025)",
+      "link": "https://www.pcgamer.com/gaming-industry/civilization-7-studio-firaxis-confirms-layoffs-as-it-optimizes-its-development-process-for-adaptability-collaboration-and-creativity-which-is-somehow-even-worse-than-just-saying-agility"
+     },
+     {
+      "title": "Axios — Firaxis is latest video game studio hit by layoffs (2023)",
+      "link": "https://www.axios.com/2023/05/31/firaxis-layoffs"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ce3236ceebb301434788.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a3a477fcb389dd94be2e.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/253410f762b3ca35ed8c.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/130cd4843c348bff0222.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ce3236ceebb301434788.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/253410f762b3ca35ed8c.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-17T11:12+09:00",
+     "at": "2026-11-18T11:05+09:00",
      "v": {
-      "A": "1fc4d4b1"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:grammy-game-score-2027",
-    "account": "그래미 공식",
-    "url": "https://www.grammy.com/awards/categories/best-score-soundtrack-for-video-games-and-other-interactive-media/",
-    "image": null,
-    "head": "Best Score Soundtrack For Video Games and Other Interactive Media",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-17T11:11+09:00",
-   "key": "a250fb7d",
-   "by": "claude",
-   "subjects": [
-    "그래미 어워드"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "[실험] 게임 안 하는 사람도 읽히는 입문형 — 그래미에도 게임 음악 상이 있다, 2023년부터 받은 사람들과 올해 후보 다섯",
-    "why": "그래미 공식 부문 페이지(후보 다섯·작곡가·역대 수상) · Inven Global(11/16 발표·시상식 2/7) · 첫 시상 2023년 제65회는 위키백과 부문 문서"
-   },
-   "added": "claude",
-   "added_at": "2026-11-17T11:11+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n그래미에는 비디오게임 음악에 주는 상이 따로 있습니다.\n\n'비디오게임·인터랙티브 미디어 부문 최우수 사운드트랙'인데요, 2023년 2월 제65회 시상식에서 처음 주어졌습니다. 첫해에는 〈어쌔신 크리드 발할라〉 확장팩의 스테파니 에코노무가, 올해 2월에는 〈Sword of the Sea〉의 오스틴 윈토리가 받았습니다.\n\n16일(미국 시간) 발표된 제69회 후보는 〈고스트 오브 요테이〉(토마 오토와), 〈007 퍼스트 라이트〉(조 헨슨·알렉시스 레온 스미스), 〈마블 울버린〉(데이비드 플레밍), 〈스타워즈 제로 컴퍼니〉(고디 하브), 〈아바타: 프론티어 오브 판도라 - From the Ashes〉(존 파에사노)입니다. 고디 하브는 2024년 〈스타워즈 제다이: 서바이버〉로 이 상을 받았던 작곡가라, 다시 스타워즈 게임으로 후보에 올랐습니다.\n\n시상식 2027년 2월 7일(미국 현지 시간) · 한국 시간 2월 8일(월) · 미국 로스앤젤레스\n\n#겜디핑 #그래미 #게임음악 #고스트오브요테이 #007퍼스트라이트\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3e9bced3c9448bfd7463.jpg\n제목: 그래미에도|게임 음악 상이 있다\n부제: 2027년 후보 다섯 편 공개\n출처: Sony Interactive Entertainment\n",
-    "caption": "그래미에는 비디오게임 음악에 주는 상이 따로 있습니다.\n\n'비디오게임·인터랙티브 미디어 부문 최우수 사운드트랙'인데요, 2023년 2월 제65회 시상식에서 처음 주어졌습니다. 첫해에는 〈어쌔신 크리드 발할라〉 확장팩의 스테파니 에코노무가, 올해 2월에는 〈Sword of the Sea〉의 오스틴 윈토리가 받았습니다.\n\n16일(미국 시간) 발표된 제69회 후보는 〈고스트 오브 요테이〉(토마 오토와), 〈007 퍼스트 라이트〉(조 헨슨·알렉시스 레온 스미스), 〈마블 울버린〉(데이비드 플레밍), 〈스타워즈 제로 컴퍼니〉(고디 하브), 〈아바타: 프론티어 오브 판도라 - From the Ashes〉(존 파에사노)입니다. 고디 하브는 2024년 〈스타워즈 제다이: 서바이버〉로 이 상을 받았던 작곡가라, 다시 스타워즈 게임으로 후보에 올랐습니다.\n\n시상식 2027년 2월 7일(미국 현지 시간) · 한국 시간 2월 8일(월) · 미국 로스앤젤레스\n\n#겜디핑 #그래미 #게임음악 #고스트오브요테이 #007퍼스트라이트",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3e9bced3c9448bfd7463.jpg",
-      "credit": "Sony Interactive Entertainment",
-      "from": "https://blog.playstation.com/tachyon/2028/10/d58d8884d0372951ee132967adc8ece5386aeec2.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3e9bced3c9448bfd7463.jpg",
-      "credit": "Sony Interactive Entertainment",
-      "from": "https://blog.playstation.com/tachyon/2028/10/d58d8884d0372951ee132967adc8ece5386aeec2.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3e9bced3c9448bfd7463.jpg",
-      "credit": "Sony Interactive Entertainment",
-      "from": "https://blog.playstation.com/tachyon/2028/10/d58d8884d0372951ee132967adc8ece5386aeec2.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3e9bced3c9448bfd7463.jpg",
-      "credit": "Sony Interactive Entertainment",
-      "from": "https://blog.playstation.com/tachyon/2028/10/d58d8884d0372951ee132967adc8ece5386aeec2.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "그래미에도|게임 음악 상이 있다",
-      "sub": "2027년 후보 다섯 편 공개"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "작곡가 한글 표기(토마 오토와·존 파에사노·고디 하브)는 원어 읽기로 적음 — 정식 표기 있으면 바꿀 것",
-     "표지 사진은 PlayStation Blog 〈고스트 오브 요테이〉 OST 리스닝 파티 글의 공식 이미지 — 다섯 후보 중 한 편만 보이는 게 괜찮은지 볼 것"
-    ],
-    "research": [
-     {
-      "title": "GRAMMY.com — 부문 페이지 (2027 후보 다섯·작곡가 · 2023~2026 수상)",
-      "link": "https://www.grammy.com/awards/categories/best-score-soundtrack-for-video-games-and-other-interactive-media/"
-     },
-     {
-      "title": "Inven Global — Grammys 2027: 007 First Light, Ghost of Yōtei and Marvel's Wolverine (11/16 발표 · 2/7 LA)",
-      "link": "https://www.invenglobal.com/articles/28665/grammys-2027-007-first-light-ghost-of-y%C5%8Dtei-and-marvels-wolverine-up-for-best-video-game-score"
-     },
-     {
-      "title": "Wikipedia — 부문 문서 (2023년 2월 제65회에서 처음 시상)",
-      "link": "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Score_Soundtrack_for_Video_Games_and_Other_Interactive_Media"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3ed6a1adbfcb65833e92.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9bf2c9edd436caa9ea31.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3ed6a1adbfcb65833e92.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-17T11:12+09:00",
-     "v": {
-      "A": "8e5c2638"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:cartoon-wars-steam",
-    "account": "스팀",
-    "url": "https://store.steampowered.com/app/5057500/",
-    "image": null,
-    "head": "카툰워즈 (Cartoon Wars) — Steam",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-17T19:02+09:00",
-   "key": "871c1ff4",
-   "by": "claude",
-   "subjects": [
-    "카툰워즈"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "2009년 모바일 디펜스 게임 〈카툰워즈〉가 17년 만에 PC로 — 원작 그대로 옮기고 무한 디펜스 '챌린지 모드'를 더했다",
-    "why": "스팀 상점 페이지(컴투스홀딩스·BLUE G&C · 출시 예정 · 한국어 포함 5개 언어) · 인벤·게임메카·Inven Global(11/17) 이 원작 2009년 7월·미국 앱스토어 유료 1위·10스테이지·유닛 20종·업그레이드 16·챌린지 모드를 같은 내용으로"
-   },
-   "added": "claude",
-   "added_at": "2026-11-17T19:02+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n2009년 모바일 게임 〈카툰워즈〉가 17년 만에 PC로 돌아옵니다.\n\n컴투스홀딩스가 17일 스팀 상점 페이지를 열었는데요, 원작은 2009년 7월에 나와 출시 한 달 만에 한국 게임 최초로 미국 앱스토어 유료 앱 전체 1위에 올랐다고 회사는 밝혔습니다. 흑백 만화 부족이 색깔 부족과 싸우는 가로 화면 디펜스 게임으로, 차오르는 마나로 유닛을 불러내고 성벽 위의 활은 직접 겨눠 쏩니다.\n\nPC판은 원작의 스테이지 10개와 유닛 20종 이상, 업그레이드 16가지를 그대로 옮기고, 끝없이 몰려오는 적을 막는 '챌린지 모드'를 새로 넣었습니다. 바로 유닛을 낼지, 마나를 모아 반격할지 고르는 모드입니다.\n\nPC(스팀) · 지금 스팀에서 찜하기 가능 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #카툰워즈 #컴투스홀딩스 #디펜스게임 #스팀\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/60a44127c4c27eb85b55.jpg\n제목: 카툰워즈가 17년 만에|PC로 돌아온다\n부제: 스팀 상점 페이지 공개\n출처: 컴투스홀딩스\n",
-    "caption": "2009년 모바일 게임 〈카툰워즈〉가 17년 만에 PC로 돌아옵니다.\n\n컴투스홀딩스가 17일 스팀 상점 페이지를 열었는데요, 원작은 2009년 7월에 나와 출시 한 달 만에 한국 게임 최초로 미국 앱스토어 유료 앱 전체 1위에 올랐다고 회사는 밝혔습니다. 흑백 만화 부족이 색깔 부족과 싸우는 가로 화면 디펜스 게임으로, 차오르는 마나로 유닛을 불러내고 성벽 위의 활은 직접 겨눠 쏩니다.\n\nPC판은 원작의 스테이지 10개와 유닛 20종 이상, 업그레이드 16가지를 그대로 옮기고, 끝없이 몰려오는 적을 막는 '챌린지 모드'를 새로 넣었습니다. 바로 유닛을 낼지, 마나를 모아 반격할지 고르는 모드입니다.\n\nPC(스팀) · 지금 스팀에서 찜하기 가능 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #카툰워즈 #컴투스홀딩스 #디펜스게임 #스팀",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/60a44127c4c27eb85b55.jpg",
-      "credit": "컴투스홀딩스",
-      "from": "https://static.inven.co.kr/column/2026/11/17/news/i1928415934.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e6c349972002089c8314.jpg",
-      "credit": "Com2uS Holdings",
-      "from": "https://static.invenglobal.com/upload/image/2026/11/17/i1794880926675029.jpeg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/60a44127c4c27eb85b55.jpg",
-      "credit": "컴투스홀딩스",
-      "from": "https://static.inven.co.kr/column/2026/11/17/news/i1928415934.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e6c349972002089c8314.jpg",
-      "credit": "Com2uS Holdings",
-      "from": "https://static.invenglobal.com/upload/image/2026/11/17/i1794880926675029.jpeg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "카툰워즈가 17년 만에|PC로 돌아온다",
-      "sub": "스팀 상점 페이지 공개"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "'한국 게임 최초 미국 앱스토어 유료 앱 전체 1위'는 회사 발표를 옮긴 것이라 캡션에 '회사는 밝혔습니다'로 붙임",
-     "티저 영상은 공식 유튜브에서 못 찾아 숏폼 없이 카드만 · 스팀 한국어가 인터페이스·자막 중 어느 쪽인지 표에서 못 가림"
-    ],
-    "research": [
-     {
-      "title": "스팀 — 카툰워즈 (개발 Com2uS Holdings·BLUE G&C · 출시 예정 · 한국어·영어·스페인어·일본어·번체 중국어)",
-      "link": "https://store.steampowered.com/app/5057500/"
-     },
-     {
-      "title": "인벤 — 컴투스홀딩스, 카툰워즈 스팀 페이지 공개 (11/17)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323470"
-     },
-     {
-      "title": "게임메카 — 고전 모바일 게임 '카툰워즈'가 스팀으로 돌아온다 (11/17)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783634"
-     },
-     {
-      "title": "Inven Global — Com2uS Holdings opens Steam store page for Cartoon Wars",
-      "link": "https://www.invenglobal.com/articles/28700/com2us-holdings-opens-steam-store-page-for-cartoon-wars"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/db076329a2576613fccd.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/41aad64fa556d9375e79.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/db076329a2576613fccd.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-17T19:02+09:00",
-     "v": {
-      "A": "dac1e02a"
-     }
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "2009년 피처폰·스마트폰 세대가 아는 이름이 17년 만에 PC로 · 한국 게임사 · 스팀 상점 한국어",
-    "at": "2026-11-17T19:02+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:kurabayashi-akira",
-    "account": "아리카 공식",
-    "url": "https://www.arika.co.jp/info_jp/news-detail.php?id=115",
-    "image": null,
-    "head": "弊社取締役 倉林 晶 逝去のお知らせ",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-17T19:02+09:00",
-   "key": "1709ec95",
-   "by": "claude",
-   "subjects": [
-    "구라바야시 아키라"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈테트리스 99〉 개발에 함께한 아리카 구라바야시 아키라 이사 별세 — 타이토 〈다라이어스 외전〉 메인 프로그래머에서 〈팩맨 99〉까지",
-    "why": "아리카 공식 부고(11/17 · 니시타니 아키라 대표 명의 · 11/14 별세 · 작품 목록) · 4Gamer·덴파미니코게이머·GAME Watch·덴게키 온라인이 같은 내용"
-   },
-   "added": "claude",
-   "added_at": "2026-11-17T19:02+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈테트리스 99〉 개발에 함께한 아리카의 구라바야시 아키라 이사가 11월 14일 세상을 떠났습니다.\n\n타이토에 있던 1990년대에는 〈다라이어스 외전〉과 〈파이터즈 임팩트〉, 〈버텍서〉의 메인 프로그래머였는데요, 아리카에서는 〈스트리트 파이터 EX〉 시리즈와 〈테트리스 더 그랜드 마스터〉를 거쳐 99명이 한 판에서 겨루는 〈테트리스 99〉와 〈팩맨 99〉까지 개발에 참여했습니다. 회사에서는 이사이자 개발 소프트웨어 부장을 맡았습니다.\n\n니시타니 아키라 아리카 대표는 고인이 남긴 기술과 경험, 그리고 게임 개발을 대하는 자세를 소중히 이어 가겠다고 밝혔습니다. 유족의 뜻에 따라 추모 모임이 열릴 예정입니다.\n\n11월 17일 아리카 공식 누리집 발표\n\n#겜디핑 #테트리스99 #아리카 #스트리트파이터EX #다라이어스\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/172f05625f24b503b9d7.jpg\n제목: 테트리스 99 함께 만든|구라바야시 아키라 별세\n부제: 다라이어스 외전부터 팩맨 99까지\n출처: TAITO\n",
-    "caption": "〈테트리스 99〉 개발에 함께한 아리카의 구라바야시 아키라 이사가 11월 14일 세상을 떠났습니다.\n\n타이토에 있던 1990년대에는 〈다라이어스 외전〉과 〈파이터즈 임팩트〉, 〈버텍서〉의 메인 프로그래머였는데요, 아리카에서는 〈스트리트 파이터 EX〉 시리즈와 〈테트리스 더 그랜드 마스터〉를 거쳐 99명이 한 판에서 겨루는 〈테트리스 99〉와 〈팩맨 99〉까지 개발에 참여했습니다. 회사에서는 이사이자 개발 소프트웨어 부장을 맡았습니다.\n\n니시타니 아키라 아리카 대표는 고인이 남긴 기술과 경험, 그리고 게임 개발을 대하는 자세를 소중히 이어 가겠다고 밝혔습니다. 유족의 뜻에 따라 추모 모임이 열릴 예정입니다.\n\n11월 17일 아리카 공식 누리집 발표\n\n#겜디핑 #테트리스99 #아리카 #스트리트파이터EX #다라이어스",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/172f05625f24b503b9d7.jpg",
-      "credit": "TAITO",
-      "from": "https://cdn.akamai.steamstatic.com/steam/apps/1638330/library_hero.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/172f05625f24b503b9d7.jpg",
-      "credit": "TAITO",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1638330/library_hero.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/172f05625f24b503b9d7.jpg",
-      "credit": "TAITO",
-      "from": "https://cdn.akamai.steamstatic.com/steam/apps/1638330/library_hero.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/172f05625f24b503b9d7.jpg",
-      "credit": "TAITO",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1638330/library_hero.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "테트리스 99 함께 만든|구라바야시 아키라 별세",
-      "sub": "다라이어스 외전부터 팩맨 99까지"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "표지는 〈다라이어스 코즈믹 컬렉션 아케이드〉(〈다라이어스 외전〉 수록) 스팀 키 아트 —첫 업로드 때 사진이 모두 해상도 미달로 빠져 다른 인물 얼굴이 자동으로 들어갔던 일이 있음, 고인이 아닌 얼굴이 보이면 반드시 바꿀 것",
-     "사인(심부전)과 나이는 캡션에서 뺌 · 한국어 표기 '구라바야시 아키라' 원어 읽기"
-    ],
-    "research": [
-     {
-      "title": "아리카 공식 — 弊社取締役 倉林 晶 逝去のお知らせ (11/17 · 11/14 별세 · 타이토·아리카 작품 목록 · 추모 모임 예정)",
-      "link": "https://www.arika.co.jp/info_jp/news-detail.php?id=115"
-     },
-     {
-      "title": "4Gamer — 「ダライアス外伝」メインプログラマーの倉林 晶氏が逝去 (11/17)",
-      "link": "https://www.4gamer.net/games/999/G999905/20261117034/"
-     },
-     {
-      "title": "電ファミニコゲーマー — 倉林晶氏が11月14日に急逝。アリカの西谷亮社長が報告 (대표 말)",
-      "link": "https://news.denfaminicogamer.jp/news/2611172h"
-     },
-     {
-      "title": "電撃オンライン — アリカ取締役・倉林晶氏逝去",
-      "link": "https://dengekionline.com/article/202611/94279"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a0487d090a637e7ae2bc.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c5d6150b60fcc81975c0.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a0487d090a637e7ae2bc.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-17T19:02+09:00",
-     "v": {
-      "A": "4698fbcd"
+      "A": "42f88212"
      }
     }
    },
    "pick": {
     "rank": 3,
-    "why": "〈테트리스 99〉로 국내에서도 아는 작품을 만든 사람 · 30년 넘게 이어진 작품 이력 자체가 내용",
-    "at": "2026-11-17T19:02+09:00"
+    "why": "국내에서도 아는 〈문명〉 개발사 · 대표 퇴장까지 겹친 소식",
+    "at": "2026-11-18T11:04+09:00"
    },
    "corner_name": "소식"
   }
@@ -598,7 +418,7 @@
  "skipped": [],
  "corners": {
   "week": "11/16~11/22",
-  "days_left": 6,
+  "days_left": 5,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -668,7 +488,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -767,14 +587,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-17T19:02+09:00"
+  "at": "2026-11-18T11:05+09:00"
  },
  "queue": {
-  "next": "2026-11-17T19:04+09:00",
+  "next": "2026-11-18T11:07+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
