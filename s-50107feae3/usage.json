@@ -1,24 +1,24 @@
 {
- "generated_at": "2026-11-18T15:53+09:00",
+ "generated_at": "2026-11-19T03:02+09:00",
  "cycle_start": "2026-11-15",
  "next_credit": "2026-12-15",
  "credit": 100.0,
- "spent": 0.91,
- "today": 0.22,
+ "spent": 1.04,
+ "today": 0.1,
  "per_day": 0.25,
- "calls": 1449,
+ "calls": 1620,
  "by": [
   {
    "name": "후속 기획",
-   "usd": 0.59
+   "usd": 0.69
   },
   {
    "name": "사진 DB",
-   "usd": 0.22
+   "usd": 0.25
   },
   {
    "name": "클립 고르기",
-   "usd": 0.07
+   "usd": 0.08
   },
   {
    "name": "SPOTLIGHT",
