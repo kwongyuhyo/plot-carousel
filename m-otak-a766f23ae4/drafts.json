@@ -167,12 +167,12 @@
      "at": "2026-11-18T10:53+09:00"
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
-    "why": "나흘 뒤(11/22 일) 연세대 대강당 첫 내한 · 오늘(11/18) 아침 타이베이·홍콩 매진 소식과 본인 말이 새로 나옴 · 〈귀멸의 칼날〉 음악감독이라 덕후가 아니어도 이름이 닿는다",
-    "at": "2026-11-18T10:50+09:00"
-   },
-   "corner_name": "소식"
+    "rank": 3,
+    "why": "오전 초안 · 나흘 뒤(11/22) 첫 내한이라 지금 올려야 쓸모가 있다",
+    "at": "2026-11-18T18:51+09:00"
+   }
   },
   {
    "source": {
@@ -356,10 +356,351 @@
      "at": "2026-11-18T10:53+09:00"
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:aot-orchestra-seoul-2027",
+    "account": "스포츠경향",
+    "url": "https://sports.khan.co.kr/article/202611181617003/",
+    "image": null,
+    "head": "세계 15개 도시 29회 대장정, ‘진격의 거인 오피셜 오케스트라 콘서트 - Symphony from Paradis’ 내년 3월 서울 상륙",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-18T18:51+09:00",
+   "key": "bd102e7d",
+   "by": "claude",
+   "subjects": [
+    "진격의 거인",
+    "사와노 히로유키",
+    "야마모토 코타"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "〈진격의 거인〉 공식 오케스트라 콘서트 'Symphony from Paradis' 가 2027년 3월 롯데콘서트홀에 — 사와노 히로유키·야마모토 코타 기획, '홍련의 화살'을 공식 콘서트에서 처음 교향악으로",
+    "why": "11/18 10:41 이투데이 · 16:17 스포츠경향 · 퀸·지피코리아·스포티비뉴스·서플 동시 · 주최 낫싱벗칠 · 놀티켓 상품 페이지에 회차·예매 오픈 · 런던 로열 앨버트 홀(10/17)에서 시작한 15개 도시 월드 투어의 서울 공연"
+   },
+   "added": "claude",
+   "added_at": "2026-11-18T18:51+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈진격의 거인〉 공식 오케스트라 콘서트가 내년 3월 서울에 옵니다.\n\nTV 시리즈 음악을 만든 사와노 히로유키와 야마모토 코타가 직접 기획·감독한 공연인데요, 100명 넘는 오케스트라와 합창단이 연주하는 동안 스크린에는 TV 시리즈 장면이 함께 흐릅니다. Linked Horizon 의 '紅蓮の弓矢'(홍련의 화살)와 '心臓を捧げよ!'(심장을 바쳐라!)도 교향악으로 편곡해 공식 콘서트에서 처음 연주합니다.\n\n투어는 지난 10월 17일 런던 로열 앨버트 홀에서 시작해 홍콩과 뉴욕 카네기 홀을 거쳐 서울로 이어집니다.\n\n'진격의 거인 오피셜 오케스트라 콘서트 - Symphony from Paradis'는 2027년 3월 12~14일 롯데콘서트홀에서 4회 열립니다. 예매는 11월 23일(월) 오후 1시 놀티켓과 롯데콘서트홀 홈페이지에서 시작합니다.\n\n#암낫오타쿠 #진격의거인 #사와노히로유키 #홍련의화살 #롯데콘서트홀\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/079a6bc649bf2cac3613.jpg\n제목: 〈진격의 거인〉 OST,|서울서 오케스트라로\n부제: 2027년 3월 12~14일 롯데콘서트홀 · 23일 예매\n출처: 이투데이\n",
+    "caption": "〈진격의 거인〉 공식 오케스트라 콘서트가 내년 3월 서울에 옵니다.\n\nTV 시리즈 음악을 만든 사와노 히로유키와 야마모토 코타가 직접 기획·감독한 공연인데요, 100명 넘는 오케스트라와 합창단이 연주하는 동안 스크린에는 TV 시리즈 장면이 함께 흐릅니다. Linked Horizon 의 '紅蓮の弓矢'(홍련의 화살)와 '心臓を捧げよ!'(심장을 바쳐라!)도 교향악으로 편곡해 공식 콘서트에서 처음 연주합니다.\n\n투어는 지난 10월 17일 런던 로열 앨버트 홀에서 시작해 홍콩과 뉴욕 카네기 홀을 거쳐 서울로 이어집니다.\n\n'진격의 거인 오피셜 오케스트라 콘서트 - Symphony from Paradis'는 2027년 3월 12~14일 롯데콘서트홀에서 4회 열립니다. 예매는 11월 23일(월) 오후 1시 놀티켓과 롯데콘서트홀 홈페이지에서 시작합니다.\n\n#암낫오타쿠 #진격의거인 #사와노히로유키 #홍련의화살 #롯데콘서트홀",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/079a6bc649bf2cac3613.jpg",
+      "credit": "이투데이",
+      "from": "https://img.etoday.co.kr/pto_db/2026/11/20261118103542_2419467_750_1000.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/079a6bc649bf2cac3613.jpg",
+      "credit": "이투데이",
+      "from": "https://img.etoday.co.kr/pto_db/2026/11/20261118103542_2419467_750_1000.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "〈진격의 거인〉 OST,|서울서 오케스트라로",
+      "sub": "2027년 3월 12~14일 롯데콘서트홀 · 23일 예매"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 進撃の巨人 - Attack on Titan Official (공식 트레일러 49초 중 0:10-0:38 · 서울 공연 영상이 아니라 월드 투어 트레일러라 캡션에 그렇게 적음)",
+     "3/13 저녁 회차가 기사(19:00)와 놀티켓(19:30)이 엇갈려 회차 시각은 뺐음 · 가격은 검색 요약 한 곳뿐이라 뺐음"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 — 2027/3/12~14 롯데콘서트홀 4회, 11/23(월) 13시 놀티켓·롯데콘서트홀 홈페이지, 사와노 히로유키·야마모토 코타 기획·감독, 편곡 토다 노부코·와다 카오루, 100명 이상 오케스트라·합창단, 대형 스크린 TV 시리즈 장면, '홍련의 화살'·'심장을 바쳐라!' 공식 콘서트 첫 교향악 연주, 10/17 런던 로열 앨버트 홀 월드 프리미어 매진·11/1 홍콩·2027/1/10 뉴욕 카네기 홀, 15개 도시 29회, 주최 낫싱벗칠 (11/18 16:17)",
+      "link": "https://sports.khan.co.kr/article/202611181617003/"
+     },
+     {
+      "title": "이투데이 — 같은 공연, 3/12~14 롯데콘서트홀, 100명 이상, '홍련의 화살'·'심장을 바쳐라' 교향악 버전, 지난달 17일 런던 로열 앨버트 홀에서 시작 (11/18 10:41)",
+      "link": "https://www.etoday.co.kr/news/view/2649690"
+     },
+     {
+      "title": "놀티켓 상품 페이지 — 3/12(금) 19:30 · 3/13(토) 14:00·19:30 · 3/14(일) 14:00, 일반 예매 11/23(월) 13시, 130분(인터미션 15분), 13세 이상",
+      "link": "https://nol.yanolja.com/ticket/products/26016420"
+     },
+     {
+      "title": "이코노미퀸 — '진격의 거인' 첫 공식 오케스트라 콘서트 내한…내년 3월 서울서 4회 공연",
+      "link": "http://www.queen.co.kr/news/articleView.html?idxno=466540"
+     },
+     {
+      "title": "進撃の巨人 - Attack on Titan Official — The Official Orchestra Concert 'Symphony from Paradis' Trailer (49초)",
+      "link": "https://www.youtube.com/watch?v=aOjrj8r1UDc"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/45e1d9da9801de52e74b.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f9ec2cd5729f1111cad5.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/45e1d9da9801de52e74b.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-18T18:52+09:00",
+     "v": {
+      "A": "7243b2b1"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 소식\nURL: https://www.youtube.com/watch?v=aOjrj8r1UDc\n구간: 0:10-0:38\n곡: 내년 3월 서울 오케스트라로\n아티스트: 〈진격의 거인〉 음악이\n피처링:\n후킹: \n출처: 進撃の巨人 - Attack on Titan Official\n자막: 자동",
+    "caption": "〈진격의 거인〉 공식 오케스트라 콘서트 'Symphony from Paradis'가 2027년 3월 12~14일 롯데콘서트홀에서 열립니다.\n\n사와노 히로유키와 야마모토 코타가 기획한 공연인데요, 100명 넘는 오케스트라와 합창단이 TV 시리즈 장면에 맞춰 연주합니다. 영상은 〈진격의 거인〉 공식 채널의 월드 투어 트레일러입니다.\n\n예매는 11월 23일(월) 오후 1시 놀티켓과 롯데콘서트홀 홈페이지에서 시작합니다.\n\n#암낫오타쿠 #진격의거인 #사와노히로유키 #오케스트라 #롯데콘서트홀",
+    "hooks": {
+     "A": "〈진격의 거인〉 음악이 / 내년 3월 서울 오케스트라로",
+     "B": "'홍련의 화살'을 / 교향악으로 듣는 날",
+     "C": "런던에서 시작한 투어가 / 롯데콘서트홀에 온다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=aOjrj8r1UDc",
+     "credit": "進撃の巨人 - Attack on Titan Official",
+     "range": [
+      10.0,
+      38.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — 進撃の巨人 - Attack on Titan Official (공식 트레일러 49초 중 0:10-0:38 · 서울 공연 영상이 아니라 월드 투어 트레일러라 캡션에 그렇게 적음)",
+     "3/13 저녁 회차가 기사(19:00)와 놀티켓(19:30)이 엇갈려 회차 시각은 뺐음 · 가격은 검색 요약 한 곳뿐이라 뺐음"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 — 2027/3/12~14 롯데콘서트홀 4회, 11/23(월) 13시 놀티켓·롯데콘서트홀 홈페이지, 사와노 히로유키·야마모토 코타 기획·감독, 편곡 토다 노부코·와다 카오루, 100명 이상 오케스트라·합창단, 대형 스크린 TV 시리즈 장면, '홍련의 화살'·'심장을 바쳐라!' 공식 콘서트 첫 교향악 연주, 10/17 런던 로열 앨버트 홀 월드 프리미어 매진·11/1 홍콩·2027/1/10 뉴욕 카네기 홀, 15개 도시 29회, 주최 낫싱벗칠 (11/18 16:17)",
+      "link": "https://sports.khan.co.kr/article/202611181617003/"
+     },
+     {
+      "title": "이투데이 — 같은 공연, 3/12~14 롯데콘서트홀, 100명 이상, '홍련의 화살'·'심장을 바쳐라' 교향악 버전, 지난달 17일 런던 로열 앨버트 홀에서 시작 (11/18 10:41)",
+      "link": "https://www.etoday.co.kr/news/view/2649690"
+     },
+     {
+      "title": "놀티켓 상품 페이지 — 3/12(금) 19:30 · 3/13(토) 14:00·19:30 · 3/14(일) 14:00, 일반 예매 11/23(월) 13시, 130분(인터미션 15분), 13세 이상",
+      "link": "https://nol.yanolja.com/ticket/products/26016420"
+     },
+     {
+      "title": "이코노미퀸 — '진격의 거인' 첫 공식 오케스트라 콘서트 내한…내년 3월 서울서 4회 공연",
+      "link": "http://www.queen.co.kr/news/articleView.html?idxno=466540"
+     },
+     {
+      "title": "進撃の巨人 - Attack on Titan Official — The Official Orchestra Concert 'Symphony from Paradis' Trailer (49초)",
+      "link": "https://www.youtube.com/watch?v=aOjrj8r1UDc"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/aOjrj8r1UDc/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/05724d547a646525a166.jpg",
+     "key": "aOjrj8r1UDc@10.0"
+    },
+    "px": {
+     "vid": "aOjrj8r1UDc",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4fc3847eeadd4c73b7c3.mp4",
+     "off": 0.0,
+     "end": 49.0,
+     "full": 49.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-18T18:54+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "오늘(11/18) 국내 여러 매체 동시 · 닷새 뒤(11/23 13시) 예매가 열리는 한국 공연 · 〈진격의 거인〉은 덕후가 아니어도 이름이 닿고, 예매 정보라 저장·공유가 붙는다",
+    "at": "2026-11-18T18:51+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:lisa-yes-grammy",
+    "account": "오리콘 뉴스",
+    "url": "https://www.oricon.co.jp/news/2493686/full/",
+    "image": null,
+    "head": "LiSA、グラミー賞ノミネートに喜び「世界中のアナタに心から感謝します」",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-18T18:51+09:00",
+   "key": "d2accf13",
+   "by": "claude",
+   "subjects": [
+    "LiSA",
+    "리사",
+    "마법과고교의 열등생"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "LiSA 'YES'가 제69회 그래미 새 부문 '베스트 아시안 팝 뮤직 퍼포먼스' 후보 — 극장판 〈마법과고교의 열등생 요츠바 계승편〉 주제가, 오늘 본인 소감",
+    "why": "후보 발표 11/16(현지) · 11/18 14:50 오리콘 뉴스·음악나탈리·CDJournal 에 본인 코멘트 · ANN·재팬타임스 후보 명단 · 같은 부문 아이브·키키(코리아중앙데일리) · 베스트 앨범 12/2"
+   },
+   "added": "claude",
+   "added_at": "2026-11-18T18:51+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nLiSA의 'YES'가 제69회 그래미 어워드 후보에 올랐습니다.\n\n이번에 새로 생긴 '베스트 아시안 팝 뮤직 퍼포먼스' 부문인데요, 'YES'는 극장판 〈마법과고교의 열등생 요츠바 계승편〉(魔法科高校の劣等生 四葉継承編) 주제가로 새로 쓴 곡이고 가사는 LiSA 본인이 붙였습니다. 같은 부문에는 일본의 BABYMETAL, 한국의 아이브와 키키, 필리핀의 BINI 와 SB19 도 함께 올랐습니다.\n\n〈귀멸의 칼날〉 주제가를 부른 LiSA는 '일본인 아티스트로서 세계를 대표하는 음악 축제 그래미상 후보에 오른 것이 자랑스럽다'는 소감을 전했습니다.\n\n시상식은 2027년 2월 7일(현지 시각) 로스앤젤레스에서 열립니다. 15년을 담은 베스트 앨범 [LiSA BEST -LOUD-]는 12월 2일 나옵니다.\n\n#암낫오타쿠 #LiSA #그래미 #마법과고교의열등생 #아이브\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8bbdd0823c8597209b22.jpg\n제목: LiSA, 애니 주제가로|그래미 후보\n부제: 'YES' · 제69회 그래미 새 부문 '베스트 아시안 팝 뮤직 퍼포먼스'\n출처: 오리콘 뉴스\n",
+    "caption": "LiSA의 'YES'가 제69회 그래미 어워드 후보에 올랐습니다.\n\n이번에 새로 생긴 '베스트 아시안 팝 뮤직 퍼포먼스' 부문인데요, 'YES'는 극장판 〈마법과고교의 열등생 요츠바 계승편〉(魔法科高校の劣等生 四葉継承編) 주제가로 새로 쓴 곡이고 가사는 LiSA 본인이 붙였습니다. 같은 부문에는 일본의 BABYMETAL, 한국의 아이브와 키키, 필리핀의 BINI 와 SB19 도 함께 올랐습니다.\n\n〈귀멸의 칼날〉 주제가를 부른 LiSA는 '일본인 아티스트로서 세계를 대표하는 음악 축제 그래미상 후보에 오른 것이 자랑스럽다'는 소감을 전했습니다.\n\n시상식은 2027년 2월 7일(현지 시각) 로스앤젤레스에서 열립니다. 15년을 담은 베스트 앨범 [LiSA BEST -LOUD-]는 12월 2일 나옵니다.\n\n#암낫오타쿠 #LiSA #그래미 #마법과고교의열등생 #아이브",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8bbdd0823c8597209b22.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2494000/2493686/20261118_144450_p_o_64189348.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8bbdd0823c8597209b22.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2494000/2493686/20261118_144450_p_o_64189348.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "LiSA, 애니 주제가로|그래미 후보",
+      "sub": "'YES' · 제69회 그래미 새 부문 '베스트 아시안 팝 뮤직 퍼포먼스'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — LiSA Official YouTube (공식 MV 309초 중 0:58-1:22 · 영어 자막 기준 후렴 'a quiet YES' 구간 — 귀로 확인하고 옮길 것)",
+     "극장판의 한국 개봉 여부는 확인 못 해 원제를 괄호로만 둠 · 블랙핑크 LISA 와 헷갈리지 않게 표지·사진이 LiSA 본인인지 볼 것"
+    ],
+    "research": [
+     {
+      "title": "오리콘 뉴스 — 제69회 그래미 신설 부문 후보, 'YES' 5/8 배신, 본인 코멘트 (11/18 14:50)",
+      "link": "https://www.oricon.co.jp/news/2493686/full/"
+     },
+     {
+      "title": "CDJournal — 「最優秀アジア・ポップ・ミュージック・パフォーマンス賞」, 극장판 〈魔法科高校の劣等生 四葉継承編〉 주제가, 작사 LiSA, 코멘트 「日本人アーティストとして、世界を代表する音楽の祭典であるグラミー賞にノミネートされたことを誇りに思います」, [LiSA BEST -LOUD-] 12/2 34곡",
+      "link": "https://www.cdjournal.com/news/lisa/131242"
+     },
+     {
+      "title": "Anime News Network — LiSA 'YES', BABYMETAL feat. Polyphia 'Sunset Kiss', BINI·SB19·IVE·KiiiKiii, 시상식 2027/2/7 LA (11/16)",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/lisa-babymetal-earn-nominations-for-2027-grammy-awards-new-best-asian-pop-music-performance-category/.243861"
+     },
+     {
+      "title": "The Japan Times — Japan's Babymetal and Lisa nominated for new Asian pop Grammy (11/17)",
+      "link": "https://www.japantimes.co.jp/culture/2026/11/17/entertainment-news/japan-grammy-nominations-2026/"
+     },
+     {
+      "title": "코리아중앙데일리 — Jennie, IVE and KiiiKiii earn Grammy nominations",
+      "link": "https://www.koreajoongangdaily.com/entertainment/ive-kiiikiii-and-jennie-earn-grammy-nominations/12973440"
+     },
+     {
+      "title": "LiSA Official YouTube — LiSA \"YES\" MUSiC CLiP (309초)",
+      "link": "https://www.youtube.com/watch?v=2cTNZhXbHU4"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/089b4d09433d3fca467a.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/689f8f89330e06da0c94.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/089b4d09433d3fca467a.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-18T18:52+09:00",
+     "v": {
+      "A": "901bf2de"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=2cTNZhXbHU4\n구간: 0:58-1:22\n곡: 그래미 후보에 올랐습니다\n아티스트: 애니 극장판 주제가가\n피처링:\n후킹: \n출처: LiSA Official YouTube",
+    "caption": "LiSA의 'YES'가 제69회 그래미 '베스트 아시안 팝 뮤직 퍼포먼스' 후보에 올랐습니다.\n\n극장판 〈마법과고교의 열등생 요츠바 계승편〉(魔法科高校の劣等生 四葉継承編) 주제가로 새로 쓴 곡인데요, 같은 부문에는 아이브와 키키도 올랐습니다. 영상은 LiSA 공식 채널의 MV 입니다.\n\n시상식은 2027년 2월 7일(현지 시각) 로스앤젤레스에서 열립니다.\n\n#암낫오타쿠 #LiSA #YES #그래미 #마법과고교의열등생",
+    "hooks": {
+     "A": "애니 극장판 주제가가 / 그래미 후보에 올랐습니다",
+     "B": "LiSA가 직접 가사를 쓴 / 그래미 후보곡 'YES'",
+     "C": "〈귀멸의 칼날〉의 LiSA가 / 그래미 후보에 올랐습니다"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=2cTNZhXbHU4",
+     "credit": "LiSA Official YouTube",
+     "range": [
+      58.0,
+      82.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — LiSA Official YouTube (공식 MV 309초 중 0:58-1:22 · 영어 자막 기준 후렴 'a quiet YES' 구간 — 귀로 확인하고 옮길 것)",
+     "극장판의 한국 개봉 여부는 확인 못 해 원제를 괄호로만 둠 · 블랙핑크 LISA 와 헷갈리지 않게 표지·사진이 LiSA 본인인지 볼 것"
+    ],
+    "research": [
+     {
+      "title": "오리콘 뉴스 — 제69회 그래미 신설 부문 후보, 'YES' 5/8 배신, 본인 코멘트 (11/18 14:50)",
+      "link": "https://www.oricon.co.jp/news/2493686/full/"
+     },
+     {
+      "title": "CDJournal — 「最優秀アジア・ポップ・ミュージック・パフォーマンス賞」, 극장판 〈魔法科高校の劣等生 四葉継承編〉 주제가, 작사 LiSA, 코멘트 「日本人アーティストとして、世界を代表する音楽の祭典であるグラミー賞にノミネートされたことを誇りに思います」, [LiSA BEST -LOUD-] 12/2 34곡",
+      "link": "https://www.cdjournal.com/news/lisa/131242"
+     },
+     {
+      "title": "Anime News Network — LiSA 'YES', BABYMETAL feat. Polyphia 'Sunset Kiss', BINI·SB19·IVE·KiiiKiii, 시상식 2027/2/7 LA (11/16)",
+      "link": "https://www.animenewsnetwork.com/news/2026-11-16/lisa-babymetal-earn-nominations-for-2027-grammy-awards-new-best-asian-pop-music-performance-category/.243861"
+     },
+     {
+      "title": "The Japan Times — Japan's Babymetal and Lisa nominated for new Asian pop Grammy (11/17)",
+      "link": "https://www.japantimes.co.jp/culture/2026/11/17/entertainment-news/japan-grammy-nominations-2026/"
+     },
+     {
+      "title": "코리아중앙데일리 — Jennie, IVE and KiiiKiii earn Grammy nominations",
+      "link": "https://www.koreajoongangdaily.com/entertainment/ive-kiiikiii-and-jennie-earn-grammy-nominations/12973440"
+     },
+     {
+      "title": "LiSA Official YouTube — LiSA \"YES\" MUSiC CLiP (309초)",
+      "link": "https://www.youtube.com/watch?v=2cTNZhXbHU4"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/2cTNZhXbHU4/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4dc165ade528b40c1b36.jpg",
+     "key": "2cTNZhXbHU4@58.0"
+    },
+    "px": {
+     "vid": "2cTNZhXbHU4",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ee9bd4ab00bd5199d1de.mp4",
+     "off": 13.0,
+     "end": 127.0,
+     "full": 309.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-18T18:54+09:00"
+    }
+   },
    "pick": {
     "rank": 2,
-    "why": "오늘(11/18) 나탈리·빌보드 재팬·오리콘 동시 · 넷플릭스로 한국에서도 본 작품의 2기 OP · 곡을 쓴 이유를 직접 말해 사람이 보인다 · 공식 PV 로 숏폼",
-    "at": "2026-11-18T10:50+09:00"
+    "why": "오늘(11/18) LiSA 본인 소감이 새로 나옴 · 애니 극장판 주제가가 그래미 새 부문 후보 · 같은 부문에 아이브·키키가 있어 한국 독자에게 바로 닿는다 · 공식 MV 로 숏폼",
+    "at": "2026-11-18T18:51+09:00"
    },
    "corner_name": "소식"
   }
@@ -536,14 +877,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-18T10:53+09:00"
+  "at": "2026-11-18T18:54+09:00"
  },
  "queue": {
-  "next": "2026-11-18T10:55+09:00",
+  "next": "2026-11-18T18:56+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
