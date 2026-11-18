@@ -119,12 +119,12 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
-    "rank": 1,
+    "rank": 2,
     "why": "GTA 6 출시 하루 전 · 올해의 게임 여섯 편 · 붉은사막이 커뮤니티 지원 부문에 오른 한국 지점",
-    "at": "2026-11-18T11:04+09:00"
-   },
-   "corner_name": "소식"
+    "at": "2026-11-18T19:03+09:00"
+   }
   },
   {
    "source": {
@@ -294,11 +294,6 @@
      "at": "2026-11-18T11:05+09:00"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "[실험] 세가에서 15년 일한 개발자의 게임에 소닉이 들어왔다는 사람 이야기 · 공식 출시 트레일러 숏폼 · 스팀 9,900원·한국어",
-    "at": "2026-11-18T11:04+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -407,10 +402,276 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:crimson-desert-game-awards-korea",
+    "account": "게임메카",
+    "url": "https://www.gamemeca.com/view.php?gid=1783733",
+    "image": null,
+    "head": "사상 최초 8관왕, 2026 대한민국 게임대상은 '붉은사막'",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-18T19:03+09:00",
+   "key": "61df7d78",
+   "by": "claude",
+   "subjects": [
+    "붉은사막"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "〈붉은사막〉이 2026 대한민국 게임대상 대상 포함 8관왕 — 게임대상에서 8관왕은 처음, 기술창작상 네 부문과 새로 생긴 글로벌게임상까지",
+    "why": "수상 목록은 인벤 종합(11/18)·게임메카(11/18)가 같음 · '8관왕을 달성한 게임은 붉은사막이 처음'은 게임메카 문장, '역대 최다'는 한국아이닷컴 부제·ZDNet 제목 · 허진영 대표 '검은사막 모바일에 이어' 소감은 ZDNet·한국아이닷컴 · 심사 50/25/25 는 ZDNet"
+   },
+   "added": "claude",
+   "added_at": "2026-11-18T19:03+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈붉은사막〉이 2026 대한민국 게임대상에서 대상을 포함해 상 여덟 개를 받았습니다.\n\n18일 부산 벡스코 시상식에서 기획·시나리오, 사운드, 그래픽, 캐릭터까지 기술창작상 네 부문을 모두 가져갔고, 올해 새로 생긴 글로벌게임상의 첫 수상작도 됐는데요, 주인공 클리프를 연기한 이현 성우의 인기성우상과 조용현 총괄 디렉터의 우수개발자상까지 더해 게임대상에서 8관왕이 나온 건 이번이 처음입니다.\n\n허진영 펄어비스 대표는 〈검은사막 모바일〉에 이어 다시 게임대상을 받아 영광이라고 밝혔습니다. 더 게임 어워드 2026에서는 최고의 커뮤니티 지원 부문 후보에도 올라 있습니다.\n\n최우수상 〈아이온2〉 · 우수상 〈도깨비의 세계〉 〈미메시스〉 〈제우스: 오만의 신〉 · 인디게임상 〈골목길: 귀흔〉\n\n#겜디핑 #붉은사막 #대한민국게임대상 #펄어비스 #아이온2\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg\n제목: 붉은사막, 게임대상에서|처음으로 8관왕\n부제: 2026 대한민국 게임대상 대상\n출처: 게임메카\n",
+    "caption": "〈붉은사막〉이 2026 대한민국 게임대상에서 대상을 포함해 상 여덟 개를 받았습니다.\n\n18일 부산 벡스코 시상식에서 기획·시나리오, 사운드, 그래픽, 캐릭터까지 기술창작상 네 부문을 모두 가져갔고, 올해 새로 생긴 글로벌게임상의 첫 수상작도 됐는데요, 주인공 클리프를 연기한 이현 성우의 인기성우상과 조용현 총괄 디렉터의 우수개발자상까지 더해 게임대상에서 8관왕이 나온 건 이번이 처음입니다.\n\n허진영 펄어비스 대표는 〈검은사막 모바일〉에 이어 다시 게임대상을 받아 영광이라고 밝혔습니다. 더 게임 어워드 2026에서는 최고의 커뮤니티 지원 부문 후보에도 올라 있습니다.\n\n최우수상 〈아이온2〉 · 우수상 〈도깨비의 세계〉 〈미메시스〉 〈제우스: 오만의 신〉 · 인디게임상 〈골목길: 귀흔〉\n\n#겜디핑 #붉은사막 #대한민국게임대상 #펄어비스 #아이온2",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
+      "credit": "펄어비스",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
+      "credit": "게임메카",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
+      "credit": "펄어비스",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "붉은사막, 게임대상에서|처음으로 8관왕",
+      "sub": "2026 대한민국 게임대상 대상"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] TGA 후보 발표는 미국 11/17 정오(한국 18일 새벽)라 '전날'을 뺌 · 커뮤니티 지원 부문 후보는 한국아이닷컴 한 곳에서만 확인(TGA 공식 페이지 403) — 발행 전 공식 명단 대조",
+     "8관왕에는 개인 상 둘(인기성우상 이현 · 우수개발자상 조용현)이 들어 있음 — 캡션에 그대로 밝힘",
+     "표지는 게임메카 현장 사진 — 붉은사막 후드를 입고 트로피를 든 펄어비스 수상자인데 누구인지 확인 못 함 · 캡션에 이름을 붙이지 않음"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 사상 최초 8관왕, 2026 대한민국 게임대상은 '붉은사막' (11/18 · '8관왕을 달성한 게임은 붉은사막이 처음')",
+      "link": "https://www.gamemeca.com/view.php?gid=1783733"
+     },
+     {
+      "title": "인벤 — [종합] 2026 대한민국 게임대상, 8관왕의 '붉은사막' (11/18 · 전체 수상 목록 · 부산 벡스코)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323556"
+     },
+     {
+      "title": "ZDNet Korea — 붉은사막, 2026 대한민국 게임대상 대상…8관왕으로 '역대 최다' (2018 검은사막 모바일 6관왕 · 심사 방식)",
+      "link": "https://zdnet.co.kr/view/?no=20261118174441"
+     },
+     {
+      "title": "한국아이닷컴 — 8관왕으로 최다 (허진영 대표 소감)",
+      "link": "https://www.hankooki.com/news/articleView.html?idxno=348823"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/18d3ee9ea1563281fa5d.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a7987a36df91a0e10f4c.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/18d3ee9ea1563281fa5d.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-18T19:03+09:00",
+     "v": {
+      "A": "1663cad1"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "오늘 저녁 결과 · 한국 게임 · 게임대상 첫 8관왕 · 전날 TGA 후보와 이어지는 펄어비스 한 주",
+    "at": "2026-11-18T19:03+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:slotbound-100k",
+    "account": "스팀 공지",
+    "url": "https://steamcommunity.com/app/4459590/allnews/",
+    "image": null,
+    "head": "Slotbound Has Sold 100,000 Copies! Thank You!",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-18T19:03+09:00",
+   "key": "7bf6e41d",
+   "by": "claude",
+   "subjects": [
+    "슬롯바운드"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "[실험] 인디 개발자 이야기 — 혼자 만든 슬롯머신 오토배틀러 〈슬롯바운드〉가 출시 사흘 만에 10만 장, 그사이 업데이트 아홉 번",
+    "why": "10만 장은 개발사 옵티마 아치의 스팀 공지(11/16 'Slotbound Has Sold 100,000 Copies!' · 직접 읽음)와 게임메카(11/18) · 업데이트 아홉 번·리뷰를 다 읽는다는 말은 스팀 공지 원문 · 가격·한국어·출시일은 스팀 상점 · 1인 개발은 스팀 상점(11/14 확인)·PC 가이드"
+   },
+   "added": "claude",
+   "added_at": "2026-11-18T19:03+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n혼자 만든 인디 게임 〈슬롯바운드〉가 출시 사흘 만에 10만 장을 넘겼습니다.\n\n슬롯머신을 돌려 나온 유닛으로 군대를 꾸려 적을 막는 오토배틀러인데요, 개발사 옵티마 아치는 16일 스팀 공지에서 출시 사흘 만에 이런 소식을 전하게 될 줄 몰랐다며 고마움을 밝혔습니다. 그사이 업데이트를 아홉 번 냈고, 대부분이 플레이어들의 버그 제보와 제안에서 나왔다고 합니다.\n\n개발자는 리뷰와 메시지를 하나하나 다 읽으려 애쓰고 있다며, 버그 수정과 밸런스, 새 콘텐츠로 계속 다듬겠다고 했습니다.\n\n판매량은 개발자 발표 기준 · 11월 12일 출시 · PC(스팀) · 12,000원(11월 26일까지 10% 할인 10,800원) · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #슬롯바운드 #인디게임 #오토배틀러 #스팀\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb7a88b5a9aafcc7110c.jpg\n제목: 혼자 만든 슬롯 게임,|사흘 만에 10만 장\n부제: 슬롯바운드 출시\n출처: 옵티마 아치\n",
+    "caption": "혼자 만든 인디 게임 〈슬롯바운드〉가 출시 사흘 만에 10만 장을 넘겼습니다.\n\n슬롯머신을 돌려 나온 유닛으로 군대를 꾸려 적을 막는 오토배틀러인데요, 개발사 옵티마 아치는 16일 스팀 공지에서 출시 사흘 만에 이런 소식을 전하게 될 줄 몰랐다며 고마움을 밝혔습니다. 그사이 업데이트를 아홉 번 냈고, 대부분이 플레이어들의 버그 제보와 제안에서 나왔다고 합니다.\n\n개발자는 리뷰와 메시지를 하나하나 다 읽으려 애쓰고 있다며, 버그 수정과 밸런스, 새 콘텐츠로 계속 다듬겠다고 했습니다.\n\n판매량은 개발자 발표 기준 · 11월 12일 출시 · PC(스팀) · 12,000원(11월 26일까지 10% 할인 10,800원) · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #슬롯바운드 #인디게임 #오토배틀러 #스팀",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb7a88b5a9aafcc7110c.jpg",
+      "credit": "옵티마 아치",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/692/gm791568_thumb__.webp"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/65abf72963408d0a9d87.jpg",
+      "credit": "Optima Arch",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/616207a48db386584162f64044508aeda0bedeb4/page_bg_raw.jpg?t=1794902941"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb7a88b5a9aafcc7110c.jpg",
+      "credit": "옵티마 아치",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/692/gm791568_thumb__.webp"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/65abf72963408d0a9d87.jpg",
+      "credit": "Optima Arch",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/616207a48db386584162f64044508aeda0bedeb4/page_bg_raw.jpg?t=1794902941"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "혼자 만든 슬롯 게임,|사흘 만에 10만 장",
+      "sub": "슬롯바운드 출시"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "판매량은 개발자 발표 기준(추적 사이트 추정은 3만~10만으로 엇갈림) · 개발자 말은 '사흘', 게임메카는 '나흘' — 시간대 차이로 보고 개발자 말을 씀",
+     "개발자 국적은 게임메카 11/14 한 곳뿐이라 뺌 · 출시일은 스팀 표기(11/12) 그대로"
+    ],
+    "research": [
+     {
+      "title": "스팀 공지 — Slotbound Has Sold 100,000 Copies! Thank You! (11/16 · 'just three days after launch' · 'nine updates')",
+      "link": "https://steamcommunity.com/app/4459590/allnews/"
+     },
+     {
+      "title": "게임메카 — 슬롯+오토배틀러 '슬롯바운드' 나흘 만에 10만 장 판매 (11/18)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783692"
+     },
+     {
+      "title": "스팀 — Slotbound (Optima Arch · 2026-11-12 · ₩12,000 · 11/26까지 10% 할인 · 한국어)",
+      "link": "https://store.steampowered.com/app/4459590/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/bf3c2cfdbc1738f994c9.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/56bbb2d3a47f21fc6bea.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/bf3c2cfdbc1738f994c9.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-18T19:03+09:00",
+     "v": {
+      "A": "82760c98"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=6j0w7Q2Q_LM\n구간: 0:05-0:30\n곡: 사흘 만에 10만 장\n아티스트: 혼자 만든 슬롯 게임이\n피처링:\n후킹: \n출처: OptimaArch\n자막: 자동",
+    "caption": "〈슬롯바운드〉 공식 트레일러입니다.\n\n슬롯머신을 돌려 나온 유닛으로 군대를 꾸리는 오토배틀러인데요, 개발사 옵티마 아치는 출시 사흘 만에 10만 장을 넘겼다고 16일 스팀 공지로 알렸습니다. 그사이 업데이트를 아홉 번 냈고, 대부분이 플레이어들의 제보와 제안에서 나왔다고 합니다.\n\n판매량은 개발자 발표 기준 · 11월 12일 출시 · PC(스팀) · 12,000원 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #슬롯바운드 #인디게임 #오토배틀러 #스팀",
+    "hooks": {
+     "A": "혼자 만든 슬롯 게임이 / 사흘 만에 10만 장",
+     "B": "슬롯머신을 돌리면 / 군대가 생기는 게임",
+     "C": "출시 사흘 동안 / 업데이트만 아홉 번"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=6j0w7Q2Q_LM",
+     "credit": "OptimaArch",
+     "range": [
+      5.0,
+      30.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "판매량은 개발자 발표 기준(추적 사이트 추정은 3만~10만으로 엇갈림) · 개발자 말은 '사흘', 게임메카는 '나흘' — 시간대 차이로 보고 개발자 말을 씀",
+     "개발자 국적은 게임메카 11/14 한 곳뿐이라 뺌 · 출시일은 스팀 표기(11/12) 그대로"
+    ],
+    "research": [
+     {
+      "title": "스팀 공지 — Slotbound Has Sold 100,000 Copies! Thank You! (11/16 · 'just three days after launch' · 'nine updates')",
+      "link": "https://steamcommunity.com/app/4459590/allnews/"
+     },
+     {
+      "title": "게임메카 — 슬롯+오토배틀러 '슬롯바운드' 나흘 만에 10만 장 판매 (11/18)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783692"
+     },
+     {
+      "title": "스팀 — Slotbound (Optima Arch · 2026-11-12 · ₩12,000 · 11/26까지 10% 할인 · 한국어)",
+      "link": "https://store.steampowered.com/app/4459590/"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/6j0w7Q2Q_LM/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ec3d65076c8965dafa94.jpg",
+     "key": "6j0w7Q2Q_LM@5.0"
+    },
+    "px": {
+     "vid": "6j0w7Q2Q_LM",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/257805b149a16dd97b72.mp4",
+     "off": 0.0,
+     "end": 56.0,
+     "full": 56.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-18T19:04+09:00"
+    }
+   },
    "pick": {
     "rank": 3,
-    "why": "국내에서도 아는 〈문명〉 개발사 · 대표 퇴장까지 겹친 소식",
-    "at": "2026-11-18T11:04+09:00"
+    "why": "[실험] 혼자 만든 인디가 사흘 만에 10만 장 · 개발자 본인의 말 · 공식 트레일러 숏폼",
+    "at": "2026-11-18T19:03+09:00"
    },
    "corner_name": "소식"
   }
@@ -587,14 +848,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-18T11:05+09:00"
+  "at": "2026-11-18T19:04+09:00"
  },
  "queue": {
-  "next": "2026-11-18T11:07+09:00",
+  "next": "2026-11-18T19:06+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
