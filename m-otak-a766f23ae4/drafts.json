@@ -1,62 +1,52 @@
 {
  "schema": 1,
- "date": "2026-11-17",
- "generated_at": "2026-11-17 10:45 KST",
+ "date": "2026-11-18",
+ "generated_at": "2026-11-18 10:46 KST",
  "items": [
   {
    "source": {
-    "id": "claude:yoasobi-goyang-2027",
-    "account": "싱글리스트",
-    "url": "https://www.slist.kr/news/articleView.html?idxno=782381",
+    "id": "claude:kajiura-yuki-seoul-1122",
+    "account": "서프라이즈뉴스",
+    "url": "http://www.surprisenews.kr/news/articleView.html?idxno=727003",
     "image": null,
-    "head": "요아소비, 2년 4개월 만에 내한…2027년 4월 고양서 첫 스타디움 공연",
+    "head": "‘귀멸의 칼날’ 음악감독 카지우라 유키, 타이베이·홍콩 이어 22일 첫 내한…아시아 투어 열기 잇는다",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-17T10:56+09:00",
-   "key": "9f44c754",
+   "made_at": "2026-11-18T10:50+09:00",
+   "key": "baedd765",
    "by": "claude",
    "subjects": [
-    "YOASOBI",
-    "요아소비",
-    "고양종합운동장"
+    "카지우라 유키",
+    "FictionJunction",
+    "귀멸의 칼날"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "요아소비가 2027년 4월 17일 고양종합운동장에서 세 번째 단독 내한 — 한국에서 처음 서는 스타디움",
-    "why": "11/17 09:06 싱글리스트 · 09:28 톱스타뉴스 (기획사 리벳 발표) · 헤럴드뮤즈·서프라이즈뉴스 동시 보도 · 11개 도시 아시아·오세아니아 투어의 한국 공연"
+    "angle": "〈귀멸의 칼날〉 음악감독 카지우라 유키, 타이베이·홍콩 매진 뒤 이번 주 일요일(11/22) 첫 내한 — '드디어 라이브로 음악을 전할 수 있게 돼 기쁘다'",
+    "why": "11/18 08:05 서프라이즈뉴스 · 11/18 10:00 iMBC연예(서플) — 아시아 투어 타이베이·홍콩 매진, 본인 코멘트 · 공연 정보는 10/6 싱글리스트·루리웹 · 공연 나흘 전이라 만나는 법으로 쓸 때"
    },
    "added": "claude",
-   "added_at": "2026-11-17T10:56+09:00",
+   "added_at": "2026-11-18T10:50+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n요아소비(YOASOBI)가 2027년 4월 17일 고양종합운동장에서 세 번째 단독 내한 공연을 엽니다.\n\n한국에서 스타디움 무대에 서는 건 이번이 처음인데요, 일본 다섯 도시 돔 공연으로 시작해 타이베이·홍콩·싱가포르·멜버른·시드니를 거쳐 고양까지 이어지는 11개 도시 투어 '초행성'의 한국 공연입니다.\n\n지난 단독 내한은 2024년 12월 인천 인스파이어 아레나였습니다. 그때 이틀 동안 약 2만 6000명이 모였고, 2년 4개월 만에 판이 훨씬 커졌습니다.\n\n예매는 11월 30일 오후 6시 위버스 선예매, 같은 날 오후 8시 멜론티켓 일반 예매입니다.\n\n#암낫오타쿠 #요아소비 #YOASOBI #고양종합운동장 #초행성\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4c093828c7cfcf4e06c3.jpg\n제목: 요아소비,|고양 스타디움 선다\n부제: 2027년 4월 17일 고양종합운동장 · 세 번째 단독 내한\n출처: 헤럴드뮤즈\n",
-    "caption": "요아소비(YOASOBI)가 2027년 4월 17일 고양종합운동장에서 세 번째 단독 내한 공연을 엽니다.\n\n한국에서 스타디움 무대에 서는 건 이번이 처음인데요, 일본 다섯 도시 돔 공연으로 시작해 타이베이·홍콩·싱가포르·멜버른·시드니를 거쳐 고양까지 이어지는 11개 도시 투어 '초행성'의 한국 공연입니다.\n\n지난 단독 내한은 2024년 12월 인천 인스파이어 아레나였습니다. 그때 이틀 동안 약 2만 6000명이 모였고, 2년 4개월 만에 판이 훨씬 커졌습니다.\n\n예매는 11월 30일 오후 6시 위버스 선예매, 같은 날 오후 8시 멜론티켓 일반 예매입니다.\n\n#암낫오타쿠 #요아소비 #YOASOBI #고양종합운동장 #초행성",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈귀멸의 칼날〉 음악감독 카지우라 유키가 이번 주 일요일 처음으로 한국 무대에 섭니다.\n\n서울 공연은 타이베이·홍콩에 이은 아시아 투어의 한 자리인데요, 앞선 두 도시는 모두 전석 매진됐고 타이베이에는 약 3000명이 모였습니다. 카지우라 유키는 한국 공연을 두고 '드디어 라이브로 저희 음악을 전해 드릴 수 있게 돼 정말 기쁘다'고 했습니다.\n\n〈마법소녀 마도카☆마기카〉, 〈Fate/Zero〉, 〈소드 아트 온라인〉의 음악을 만든 사람이기도 합니다. 무대에는 KAORI, YURIKO KAIDA, Joelle, LINO LEIA, EMIKO 다섯 보컬과 밴드 FRONT BAND MEMBERS 가 함께 오르고, 아시아 투어를 위해 짠 스페셜 세트리스트로 꾸립니다.\n\n'Yuki Kajiura LIVE vol.#22 ~precious pieces~ in Seoul SPECIAL SETLIST'는 11월 22일(일) 서울 연세대학교 대강당에서 열리고, 예매는 티켓링크에서 합니다.\n\n#암낫오타쿠 #카지우라유키 #FictionJunction #귀멸의칼날 #마도카마기카\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/5f5306fd54ea8e56aa73.jpg\n제목: 카지우라 유키,|이번 주 일요일 첫 내한\n부제: 〈귀멸의 칼날〉·〈마도카〉 음악 · 22일 연세대 대강당\n출처: iMBC연예\n",
+    "caption": "〈귀멸의 칼날〉 음악감독 카지우라 유키가 이번 주 일요일 처음으로 한국 무대에 섭니다.\n\n서울 공연은 타이베이·홍콩에 이은 아시아 투어의 한 자리인데요, 앞선 두 도시는 모두 전석 매진됐고 타이베이에는 약 3000명이 모였습니다. 카지우라 유키는 한국 공연을 두고 '드디어 라이브로 저희 음악을 전해 드릴 수 있게 돼 정말 기쁘다'고 했습니다.\n\n〈마법소녀 마도카☆마기카〉, 〈Fate/Zero〉, 〈소드 아트 온라인〉의 음악을 만든 사람이기도 합니다. 무대에는 KAORI, YURIKO KAIDA, Joelle, LINO LEIA, EMIKO 다섯 보컬과 밴드 FRONT BAND MEMBERS 가 함께 오르고, 아시아 투어를 위해 짠 스페셜 세트리스트로 꾸립니다.\n\n'Yuki Kajiura LIVE vol.#22 ~precious pieces~ in Seoul SPECIAL SETLIST'는 11월 22일(일) 서울 연세대학교 대강당에서 열리고, 예매는 티켓링크에서 합니다.\n\n#암낫오타쿠 #카지우라유키 #FictionJunction #귀멸의칼날 #마도카마기카",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4c093828c7cfcf4e06c3.jpg",
-      "credit": "헤럴드뮤즈",
-      "from": "https://wimg.heraldcorp.com/news/cms/2026/11/17/news-p.v1.20261117.63bf241bf1a84c6e9de47847c84f6a24_P1.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/447e1ba826d62c5276fc.jpg",
-      "credit": "톱스타뉴스",
-      "from": "https://cdn.topstarnews.net/news/photo/202611/16278618_2090821_2843_crop.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/5f5306fd54ea8e56aa73.jpg",
+      "credit": "iMBC연예",
+      "from": "https://images.supple.kr/?url=https%3A%2F%2Ftalkimg.imbc.com%2FTVianUpload%2Ftvian%2FTViews%2Fimage%2F2026%2F11%2F18%2F61de4ea1-8c01-4387-b5ff-523c2930f739.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4c093828c7cfcf4e06c3.jpg",
-      "credit": "헤럴드뮤즈",
-      "from": "https://wimg.heraldcorp.com/news/cms/2026/11/17/news-p.v1.20261117.63bf241bf1a84c6e9de47847c84f6a24_P1.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/447e1ba826d62c5276fc.jpg",
-      "credit": "톱스타뉴스",
-      "from": "https://cdn.topstarnews.net/news/photo/202611/16278618_2090821_2843_crop.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/5f5306fd54ea8e56aa73.jpg",
+      "credit": "iMBC연예",
+      "from": "https://images.supple.kr/?url=https%3A%2F%2Ftalkimg.imbc.com%2FTVianUpload%2Ftvian%2FTViews%2Fimage%2F2026%2F11%2F18%2F61de4ea1-8c01-4387-b5ff-523c2930f739.jpg"
      }
     ],
     "shape": "단신",
@@ -64,63 +54,68 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "요아소비,|고양 스타디움 선다",
-      "sub": "2027년 4월 17일 고양종합운동장 · 세 번째 단독 내한"
+      "title": "카지우라 유키,|이번 주 일요일 첫 내한",
+      "sub": "〈귀멸의 칼날〉·〈마도카〉 음악 · 22일 연세대 대강당"
      }
     ],
     "issues": [],
     "confirm": [
-     "클립 위험: 낮음 — YOASOBI 공식 채널 (이번 투어 일본 돔 공연 영상 210초 중 0:30-0:58 · 화면이 무대·관객 위주인지 눈으로 보고 구간을 옮길 것)",
-     "투어명은 한국 기사 표기 '초행성' 그대로 — 일본 공식은 '超惑星'(영문 SUPER PLANET) 로 보여 리벳 공지 표기를 한 번 볼 것 · 공연 시각·가격은 기사에 없어 뺐음"
+     "[검증] 공연 시각 18:00 은 루리웹 글 한 곳뿐(서프라이즈뉴스·서플·싱글리스트엔 없음)이라 캡션·숏폼에서 뺐음 — 티켓링크 상세에서 확인되면 다시 넣을 것 · '이번 투어에서만' → 싱글리스트 원문대로 '아시아 투어를 위해 짠 스페셜 세트리스트'로 고침",
+     "클립 위험: 낮음 — FictionJunction Official YouTube Channel (vol.#21 라이브 Blu-ray 다이제스트 189초 중 0:10-0:40 · 서울 공연 영상이 아니라 지난 공연 다이제스트라 캡션에 그렇게 적음 — 무대가 보이는 구간인지 보고 옮길 것)",
+     "잔여석·가격은 확인 못 해 뺐음 · 공연 시각 18:00 은 루리웹 공지 글 기준이라 티켓링크 상세 페이지에서 한 번 볼 것"
     ],
     "research": [
      {
-      "title": "싱글리스트 — 2027/4/17 고양종합운동장, 'YOASOBI 11-CITY ASIA-OCEANIA TOUR 2026-2027 초행성', 11/30 18:00 위버스 선예매·20:00 멜론티켓 일반 예매, 2024년 12월 인스파이어 아레나 이틀 약 2만 6000명 (11/17 09:06)",
-      "link": "https://www.slist.kr/news/articleView.html?idxno=782381"
+      "title": "서프라이즈뉴스 — 22일 연세대 대강당, 타이베이·홍콩 전석 매진, 타이베이 약 3000명, '드디어 라이브로 저희 음악을 전해 드릴 수 있게 돼 정말 기쁘다' (11/18 08:05)",
+      "link": "http://www.surprisenews.kr/news/articleView.html?idxno=727003"
      },
      {
-      "title": "톱스타뉴스 — 리벳 발표, 세 번째 단독 내한·국내 첫 스타디움, 일본 5개 도시 돔 → 타이베이·홍콩·싱가포르·멜버른·시드니·고양 (11/17 09:28)",
-      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16278618"
+      "title": "서플(iMBC연예) — 같은 내용, 홍콩에서 '반드시 다시 돌아오겠다', 티켓링크 (11/18 10:00)",
+      "link": "https://supple.kr/news/cmwlezlsu9lo6jkunyp726ipn"
      },
      {
-      "title": "헤럴드뮤즈 — 요아소비, 내년 4월 내한 개최 확정..고양종합운동장 입성",
-      "link": "https://www.heraldmuse.com/article/10939318"
+      "title": "싱글리스트 — 공연명 'Yuki Kajiura LIVE vol.#22 ~precious pieces~ in Seoul SPECIAL SETLIST', 보컬 KAORI·YURIKO KAIDA·Joelle·LINO LEIA·EMIKO, FRONT BAND MEMBERS, 대표작 마도카·Fate/Zero·소드 아트 온라인·귀멸의 칼날 (10/6)",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=771217"
      },
      {
-      "title": "YOASOBI「KILLA」at 京セラドーム大阪【DOME TOUR 2026 超惑星】 — YOASOBI 공식 (210초)",
-      "link": "https://www.youtube.com/watch?v=1n-iLgXo9aY"
+      "title": "루리웹 — 2026/11/22(일) 18:00 연세대학교 대강당, 티켓링크",
+      "link": "https://bbs.ruliweb.com/news/board/1002/read/2436149"
+     },
+     {
+      "title": "FictionJunction Official YouTube Channel — 'Yuki Kajiura LIVE vol.#21 ~60 Songs~' Blu-ray Digest Movie (189초)",
+      "link": "https://www.youtube.com/watch?v=Z_njJncFJdM"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6901ea5d2def831051be.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/77fc96a7939ee07fc854.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/9accf676eeef1cf30b2c.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/05722843f4d96318749e.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6901ea5d2def831051be.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/9accf676eeef1cf30b2c.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-17T10:57+09:00",
+     "at": "2026-11-18T10:51+09:00",
      "v": {
-      "A": "5e5ec52a"
+      "A": "29eb52a9"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: 소식\nURL: https://www.youtube.com/watch?v=1n-iLgXo9aY\n구간: 0:30-0:58\n곡: 내년 4월 고양에 온다\n아티스트: 이 돔 투어가\n피처링:\n후킹: \n출처: YOASOBI\n자막: 자동",
-    "caption": "요아소비(YOASOBI)가 2027년 4월 17일 고양종합운동장에서 세 번째 단독 내한 공연을 엽니다.\n\n영상은 지금 일본에서 돌고 있는 돔 투어 중 교세라돔 오사카 무대의 'KILLA'인데요, 이 투어가 타이베이·홍콩·싱가포르·멜버른·시드니를 거쳐 고양까지 이어집니다. 한국에서 스타디움에 서는 건 처음입니다.\n\n예매는 11월 30일 오후 6시 위버스 선예매, 오후 8시 멜론티켓 일반 예매입니다. 영상은 YOASOBI 공식 채널입니다.\n\n#암낫오타쿠 #요아소비 #YOASOBI #고양종합운동장 #KILLA",
+    "form": "[영상]\n카테고리: 소식\nURL: https://www.youtube.com/watch?v=Z_njJncFJdM\n구간: 0:10-0:40\n곡: 이번 주 처음 한국에 옵니다\n아티스트: 〈귀멸의 칼날〉 음악감독이\n피처링:\n후킹: \n출처: FictionJunction Official YouTube Channel\n자막: 자동",
+    "caption": "〈귀멸의 칼날〉 음악감독 카지우라 유키가 11월 22일(일) 연세대학교 대강당에서 첫 내한 공연을 엽니다.\n\n아시아 투어 앞선 두 도시 타이베이·홍콩은 모두 전석 매진됐는데요, 서울 무대엔 다섯 보컬과 밴드가 함께 섭니다. 영상은 FictionJunction 공식 채널의 지난 공연(vol.#21) 라이브 Blu-ray 다이제스트입니다.\n\n예매는 티켓링크에서 합니다.\n\n#암낫오타쿠 #카지우라유키 #FictionJunction #귀멸의칼날 #내한공연",
     "hooks": {
-     "A": "이 돔 투어가 / 내년 4월 고양에 온다",
-     "B": "요아소비가 처음으로 / 한국 스타디움에 선다",
-     "C": "요아소비 '초행성' 투어 / 고양종합운동장에 온다"
+     "A": "〈귀멸의 칼날〉 음악감독이 / 이번 주 처음 한국에 옵니다",
+     "B": "타이베이·홍콩 매진 뒤 / 서울로 오는 카지우라 유키",
+     "C": "〈마도카〉 음악을 만든 사람이 / 일요일 연세대 무대에"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=1n-iLgXo9aY",
-     "credit": "YOASOBI",
+     "url": "https://www.youtube.com/watch?v=Z_njJncFJdM",
+     "credit": "FictionJunction Official YouTube Channel",
      "range": [
-      30.0,
-      58.0
+      10.0,
+      40.0
      ]
     },
     "guided": {
@@ -129,512 +124,110 @@
     },
     "issues": [],
     "confirm": [
-     "클립 위험: 낮음 — YOASOBI 공식 채널 (이번 투어 일본 돔 공연 영상 210초 중 0:30-0:58 · 화면이 무대·관객 위주인지 눈으로 보고 구간을 옮길 것)",
-     "투어명은 한국 기사 표기 '초행성' 그대로 — 일본 공식은 '超惑星'(영문 SUPER PLANET) 로 보여 리벳 공지 표기를 한 번 볼 것 · 공연 시각·가격은 기사에 없어 뺐음"
+     "[검증] 공연 시각 18:00 은 루리웹 글 한 곳뿐(서프라이즈뉴스·서플·싱글리스트엔 없음)이라 캡션·숏폼에서 뺐음 — 티켓링크 상세에서 확인되면 다시 넣을 것 · '이번 투어에서만' → 싱글리스트 원문대로 '아시아 투어를 위해 짠 스페셜 세트리스트'로 고침",
+     "클립 위험: 낮음 — FictionJunction Official YouTube Channel (vol.#21 라이브 Blu-ray 다이제스트 189초 중 0:10-0:40 · 서울 공연 영상이 아니라 지난 공연 다이제스트라 캡션에 그렇게 적음 — 무대가 보이는 구간인지 보고 옮길 것)",
+     "잔여석·가격은 확인 못 해 뺐음 · 공연 시각 18:00 은 루리웹 공지 글 기준이라 티켓링크 상세 페이지에서 한 번 볼 것"
     ],
     "research": [
      {
-      "title": "싱글리스트 — 2027/4/17 고양종합운동장, 'YOASOBI 11-CITY ASIA-OCEANIA TOUR 2026-2027 초행성', 11/30 18:00 위버스 선예매·20:00 멜론티켓 일반 예매, 2024년 12월 인스파이어 아레나 이틀 약 2만 6000명 (11/17 09:06)",
-      "link": "https://www.slist.kr/news/articleView.html?idxno=782381"
+      "title": "서프라이즈뉴스 — 22일 연세대 대강당, 타이베이·홍콩 전석 매진, 타이베이 약 3000명, '드디어 라이브로 저희 음악을 전해 드릴 수 있게 돼 정말 기쁘다' (11/18 08:05)",
+      "link": "http://www.surprisenews.kr/news/articleView.html?idxno=727003"
      },
      {
-      "title": "톱스타뉴스 — 리벳 발표, 세 번째 단독 내한·국내 첫 스타디움, 일본 5개 도시 돔 → 타이베이·홍콩·싱가포르·멜버른·시드니·고양 (11/17 09:28)",
-      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16278618"
+      "title": "서플(iMBC연예) — 같은 내용, 홍콩에서 '반드시 다시 돌아오겠다', 티켓링크 (11/18 10:00)",
+      "link": "https://supple.kr/news/cmwlezlsu9lo6jkunyp726ipn"
      },
      {
-      "title": "헤럴드뮤즈 — 요아소비, 내년 4월 내한 개최 확정..고양종합운동장 입성",
-      "link": "https://www.heraldmuse.com/article/10939318"
+      "title": "싱글리스트 — 공연명 'Yuki Kajiura LIVE vol.#22 ~precious pieces~ in Seoul SPECIAL SETLIST', 보컬 KAORI·YURIKO KAIDA·Joelle·LINO LEIA·EMIKO, FRONT BAND MEMBERS, 대표작 마도카·Fate/Zero·소드 아트 온라인·귀멸의 칼날 (10/6)",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=771217"
      },
      {
-      "title": "YOASOBI「KILLA」at 京セラドーム大阪【DOME TOUR 2026 超惑星】 — YOASOBI 공식 (210초)",
-      "link": "https://www.youtube.com/watch?v=1n-iLgXo9aY"
+      "title": "루리웹 — 2026/11/22(일) 18:00 연세대학교 대강당, 티켓링크",
+      "link": "https://bbs.ruliweb.com/news/board/1002/read/2436149"
+     },
+     {
+      "title": "FictionJunction Official YouTube Channel — 'Yuki Kajiura LIVE vol.#21 ~60 Songs~' Blu-ray Digest Movie (189초)",
+      "link": "https://www.youtube.com/watch?v=Z_njJncFJdM"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/1n-iLgXo9aY/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/Z_njJncFJdM/maxresdefault.jpg",
     "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2a7ebb62c04776a7f873.jpg",
-     "key": "1n-iLgXo9aY@30.0"
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7691cdff857570c6a2b3.jpg",
+     "key": "Z_njJncFJdM@10.0"
     },
     "px": {
-     "vid": "1n-iLgXo9aY",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/0d441bd48ebb42dd24bc.mp4",
+     "vid": "Z_njJncFJdM",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/51f968d769381650ad0a.mp4",
      "off": 0.0,
-     "end": 103.0,
-     "full": 209.0
+     "end": 85.0,
+     "full": 189.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-17T10:59+09:00"
-    }
-   },
-   "corner_name": "소식",
-   "pick": {
-    "rank": 3,
-    "why": "오전 초안 · 오늘 발표된 요아소비 첫 한국 스타디움 공연이라 여전히 오늘 가장 센 한국 연결",
-    "at": "2026-11-17T18:46+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:boa-shibuya-guerrilla",
-    "account": "오리콘 뉴스",
-    "url": "https://www.oricon.co.jp/news/2493295/full/",
-    "image": null,
-    "head": "日本デビュー25周年のBoA、約20年ぶりに渋谷で“ゲリラライブ” ライブ開始の数分前に開催場所を告知…通行人からも「え？BoA？本物？」と驚きの声",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-17T10:56+09:00",
-   "key": "4df44740",
-   "by": "claude",
-   "subjects": [
-    "BoA",
-    "보아",
-    "歩幅"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "일본 데뷔 25주년 BoA가 약 20년 만에 시부야 게릴라 라이브 — 공연 몇 분 전에 장소를 알렸고, 본인은 '그때는 아무것도 모른 채 정신없이 불렀다'",
-    "why": "11/16 19:39 오리콘 뉴스(Web東奥 전재로 본문 확인) · 스포츠서울 일본판·PR TIMES(주최 측 보도자료) 세트리스트·발언 일치 · 8년 만의 일본 오리지널 앨범 [歩幅] 11/25 CD 발매 · 공식 MV 있음"
-   },
-   "added": "claude",
-   "added_at": "2026-11-17T10:56+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\nBoA가 16일 도쿄 시부야에서 약 20년 만에 게릴라 라이브를 열었습니다.\n\n장소는 공연 시작 몇 분 전에야 SNS로 알렸는데요, 안전 때문에 입장은 약 500명으로 제한했습니다. 첫 곡은 'メリクリ'(메리크리)였고, 8년 만의 일본 오리지널 앨범 타이틀곡 '歩幅'(보폭)를 이날 처음 라이브로 불렀습니다. 이어 'VALENTI'와 'QUINCY'까지 네 곡입니다.\n\nBoA는 20년 전 시부야 게릴라 라이브를 두고 '아무것도 모른 채 그저 정신없이 불렀다'고 돌아봤습니다. 다시 같은 거리에서 부르니 여러 마음이 북받친다고도 했습니다.\n\n앨범 [歩幅] CD 는 11월 25일 일본에서 나오고, 2027년 1월 8일 도쿄 가든 시어터에서 '2026 BoA the LIVE FINALE' 공연이 이어집니다.\n\n#암낫오타쿠 #보아 #BoA #보폭 #메리크리\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c9de4bcbad780f306fcf.jpg\n제목: BoA, 20년 만에|시부야 게릴라 라이브\n부제: 일본 데뷔 25주년 · 몇 분 전에 알리고 '메리크리'부터\n출처: 오리콘 뉴스\n",
-    "caption": "BoA가 16일 도쿄 시부야에서 약 20년 만에 게릴라 라이브를 열었습니다.\n\n장소는 공연 시작 몇 분 전에야 SNS로 알렸는데요, 안전 때문에 입장은 약 500명으로 제한했습니다. 첫 곡은 'メリクリ'(메리크리)였고, 8년 만의 일본 오리지널 앨범 타이틀곡 '歩幅'(보폭)를 이날 처음 라이브로 불렀습니다. 이어 'VALENTI'와 'QUINCY'까지 네 곡입니다.\n\nBoA는 20년 전 시부야 게릴라 라이브를 두고 '아무것도 모른 채 그저 정신없이 불렀다'고 돌아봤습니다. 다시 같은 거리에서 부르니 여러 마음이 북받친다고도 했습니다.\n\n앨범 [歩幅] CD 는 11월 25일 일본에서 나오고, 2027년 1월 8일 도쿄 가든 시어터에서 '2026 BoA the LIVE FINALE' 공연이 이어집니다.\n\n#암낫오타쿠 #보아 #BoA #보폭 #메리크리",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c9de4bcbad780f306fcf.jpg",
-      "credit": "오리콘 뉴스",
-      "from": "https://contents.oricon.co.jp/upimg/news/2494000/2493295/20261116_193209_p_o_28207643.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4a2717c4445539086e8e.jpg",
-      "credit": "스포츠서울 일본판",
-      "from": "https://sportsseoulweb.jp/files/user/2026/ic202611175035213569605412323605135232.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8ea06fc0d833f9cde01b.jpg",
-      "credit": "PR TIMES",
-      "from": "https://prcdn.freetls.fastly.net/release_image/183864/7/183864-7-93e130a67f75e4077c62498e16804b3d-1801x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c9de4bcbad780f306fcf.jpg",
-      "credit": "오리콘 뉴스",
-      "from": "https://contents.oricon.co.jp/upimg/news/2494000/2493295/20261116_193209_p_o_28207643.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4a2717c4445539086e8e.jpg",
-      "credit": "스포츠서울 일본판",
-      "from": "https://sportsseoulweb.jp/files/user/2026/ic202611175035213569605412323605135232.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8ea06fc0d833f9cde01b.jpg",
-      "credit": "PR TIMES",
-      "from": "https://prcdn.freetls.fastly.net/release_image/183864/7/183864-7-93e130a67f75e4077c62498e16804b3d-1801x2700.jpg?format=jpeg&amp;auto=webp&amp;fit=bounds&amp;width=2400&amp;height=1260"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "BoA, 20년 만에|시부야 게릴라 라이브",
-      "sub": "일본 데뷔 25주년 · 몇 분 전에 알리고 '메리크리'부터"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진이 실내 무대(커튼·스탠드 조명)라 야외 시부야 스트림 이나리바시 광장의 게릴라 라이브 현장 사진이 아닐 수 있음 — 현장 사진인지 보고, 아니면 현장 컷으로 바꿀 것",
-     "클립 위험: 낮음 — BApal and BoA (공식 MV 360초 중 0:20-0:48 · 게릴라 라이브 영상이 아니라 MV 라 캡션에 그렇게 적었음 — BoA 얼굴과 첫 소절이 나오는 구간인지 보고 옮길 것)",
-     "[歩幅] 은 보도자료 안에서 '앨범'·'미니 앨범' 표기가 엇갈려 '일본 오리지널 앨범'으로만 씀"
-    ],
-    "research": [
-     {
-      "title": "오리콘 뉴스 — 약 20년 만의 시부야 게릴라 라이브, 시작 몇 분 전 장소 공지 (11/16 19:39)",
-      "link": "https://www.oricon.co.jp/news/2493295/full/"
-     },
-     {
-      "title": "Web東奥 (오리콘 뉴스 전재) — 같은 기사 본문",
-      "link": "https://www.toonippo.co.jp/articles/-/2404334"
-     },
-     {
-      "title": "스포츠서울 일본판 — 11/16 시부야 스트림 이나리바시 광장, 안전상 약 500명 제한, 'メリクリ'·'歩幅'(첫 공개)·'VALENTI'·'QUINCY', MC 「約20年前、渋谷でゲリラライブを行った当時は、何も分からないまま、ただただ慌ただしく歌いました」「再び渋谷の地で歌うことができ、色々な思いが込み上げてきます」, [歩幅] CD 11/25, 2027/1/8 도쿄 가든 시어터 공연",
-      "link": "https://sportsseoulweb.jp/star_topic/id=163689"
-     },
-     {
-      "title": "PR TIMES (Idol School Japan) — 같은 행사 보도자료, 8년 만의 일본 오리지널 앨범 [歩幅], '2026 BoA the LIVE FINALE' 2027/1/8 도쿄 가든 시어터",
-      "link": "https://prtimes.jp/main/html/rd/p/000000007.000183864.html"
-     },
-     {
-      "title": "BoA '歩幅 (Hohaba)' Official MV — BApal and BoA (360초)",
-      "link": "https://www.youtube.com/watch?v=2XlhGJ-D6AA"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a837e93f005cc59a59c9.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8eb35955b957075646f5.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a837e93f005cc59a59c9.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-17T10:57+09:00",
-     "v": {
-      "A": "88d04a41"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=2XlhGJ-D6AA\n구간: 0:20-0:48\n곡: 처음 라이브로 부른 새 노래\n아티스트: BoA가 시부야 거리에서\n피처링:\n후킹: \n출처: BApal and BoA",
-    "caption": "BoA가 16일 시부야 게릴라 라이브에서 처음 라이브로 부른 새 노래 '歩幅'(보폭)입니다.\n\n8년 만에 내는 일본 오리지널 앨범의 타이틀곡인데요, 일본 데뷔 25주년인 올해 BoA는 약 20년 만에 다시 시부야 거리에서 공연 몇 분 전에 장소를 알리고 노래했습니다. 입장은 안전 때문에 약 500명으로 제한했습니다.\n\n앨범 [歩幅] CD 는 11월 25일 일본에서 나옵니다. 영상은 BoA 공식 MV 입니다.\n\n#암낫오타쿠 #보아 #BoA #보폭 #歩幅",
-    "hooks": {
-     "A": "BoA가 시부야 거리에서 / 처음 라이브로 부른 새 노래",
-     "B": "일본 데뷔 25주년 BoA의 / 8년 만의 일본 앨범",
-     "C": "20년 만의 게릴라 라이브서 / 처음 부른 '보폭'"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=2XlhGJ-D6AA",
-     "credit": "BApal and BoA",
-     "range": [
-      20.0,
-      48.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진이 실내 무대(커튼·스탠드 조명)라 야외 시부야 스트림 이나리바시 광장의 게릴라 라이브 현장 사진이 아닐 수 있음 — 현장 사진인지 보고, 아니면 현장 컷으로 바꿀 것",
-     "클립 위험: 낮음 — BApal and BoA (공식 MV 360초 중 0:20-0:48 · 게릴라 라이브 영상이 아니라 MV 라 캡션에 그렇게 적었음 — BoA 얼굴과 첫 소절이 나오는 구간인지 보고 옮길 것)",
-     "[歩幅] 은 보도자료 안에서 '앨범'·'미니 앨범' 표기가 엇갈려 '일본 오리지널 앨범'으로만 씀"
-    ],
-    "research": [
-     {
-      "title": "오리콘 뉴스 — 약 20년 만의 시부야 게릴라 라이브, 시작 몇 분 전 장소 공지 (11/16 19:39)",
-      "link": "https://www.oricon.co.jp/news/2493295/full/"
-     },
-     {
-      "title": "Web東奥 (오리콘 뉴스 전재) — 같은 기사 본문",
-      "link": "https://www.toonippo.co.jp/articles/-/2404334"
-     },
-     {
-      "title": "스포츠서울 일본판 — 11/16 시부야 스트림 이나리바시 광장, 안전상 약 500명 제한, 'メリクリ'·'歩幅'(첫 공개)·'VALENTI'·'QUINCY', MC 「約20年前、渋谷でゲリラライブを行った当時は、何も分からないまま、ただただ慌ただしく歌いました」「再び渋谷の地で歌うことができ、色々な思いが込み上げてきます」, [歩幅] CD 11/25, 2027/1/8 도쿄 가든 시어터 공연",
-      "link": "https://sportsseoulweb.jp/star_topic/id=163689"
-     },
-     {
-      "title": "PR TIMES (Idol School Japan) — 같은 행사 보도자료, 8년 만의 일본 오리지널 앨범 [歩幅], '2026 BoA the LIVE FINALE' 2027/1/8 도쿄 가든 시어터",
-      "link": "https://prtimes.jp/main/html/rd/p/000000007.000183864.html"
-     },
-     {
-      "title": "BoA '歩幅 (Hohaba)' Official MV — BApal and BoA (360초)",
-      "link": "https://www.youtube.com/watch?v=2XlhGJ-D6AA"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/2XlhGJ-D6AA/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7b0488a7a1b2c885cb3f.jpg",
-     "key": "2XlhGJ-D6AA@20.0"
-    },
-    "px": {
-     "vid": "2XlhGJ-D6AA",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c231f3852d3451a18ac9.mp4",
-     "off": 0.0,
-     "end": 93.0,
-     "full": 360.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-17T10:59+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:witchwatch-s2-2027",
-    "account": "애니메!애니메!",
-    "url": "https://animeanime.jp/article/2026/11/16/104813.html",
-    "image": null,
-    "head": "「ウィッチウォッチ」第2期は27年放送！原作完結に川口莉奈や鈴木崚汰らコメント「素敵な物語を有難う御座いました！」",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-17T10:56+09:00",
-   "key": "0e12a0a7",
-   "by": "claude",
-   "subjects": [
-    "위치 워치",
-    "시노하라 켄타",
-    "카와구치 리나"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈위치 워치〉 원작이 점프에서 완결된 날, TV 애니 2기 2027년 방송 발표 — 성우 여섯 명이 완결 축하 코멘트",
-    "why": "11/16 12:09 애니메!애니메! · PASH! PLUS 같은 날 · 주간 소년 점프 51호(11/16 발매) 최종화 · 2기 티저 비주얼(하트 손 모양 속 윙크하는 니코) · 한국 정발(대원씨아이)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-17T10:56+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈위치 워치〉(ウィッチウォッチ) TV 애니 2기가 2027년에 방송됩니다.\n\n발표는 16일, 원작 만화가 〈주간 소년 점프〉 51호로 최종화를 맞은 날 나왔는데요, 함께 공개된 2기 티저 비주얼에는 손으로 만든 하트 사이로 윙크하는 니코가 담겼습니다.\n\n1기 성우 여섯 명은 완결 축하 코멘트를 보냈습니다. 니코 역 카와구치 리나는 '멋진 이야기 고마웠습니다', 모리히토 역 스즈키 료타는 '약 5년 반의 연재, 정말 수고 많으셨습니다'라고 전했습니다.\n\n1기는 2025년 4월부터 10월까지 방송됐고, 원작은 국내에 대원씨아이로 정식 출간돼 있습니다.\n\n#암낫오타쿠 #위치워치 #시노하라켄타 #니코 #카와구치리나\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/512d343ea09a9d48dc16.jpg\n제목: 〈위치 워치〉 2기,|2027년 방송\n부제: 원작 완결 날 발표 · 니코 성우 '멋진 이야기 고마웠습니다'\n출처: 애니메!애니메!\n",
-    "caption": "〈위치 워치〉(ウィッチウォッチ) TV 애니 2기가 2027년에 방송됩니다.\n\n발표는 16일, 원작 만화가 〈주간 소년 점프〉 51호로 최종화를 맞은 날 나왔는데요, 함께 공개된 2기 티저 비주얼에는 손으로 만든 하트 사이로 윙크하는 니코가 담겼습니다.\n\n1기 성우 여섯 명은 완결 축하 코멘트를 보냈습니다. 니코 역 카와구치 리나는 '멋진 이야기 고마웠습니다', 모리히토 역 스즈키 료타는 '약 5년 반의 연재, 정말 수고 많으셨습니다'라고 전했습니다.\n\n1기는 2025년 4월부터 10월까지 방송됐고, 원작은 국내에 대원씨아이로 정식 출간돼 있습니다.\n\n#암낫오타쿠 #위치워치 #시노하라켄타 #니코 #카와구치리나",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/512d343ea09a9d48dc16.jpg",
-      "credit": "애니메!애니메!",
-      "from": "https://animeanime.jp/imgs/ogp_f/956252.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/512d343ea09a9d48dc16.jpg",
-      "credit": "애니메!애니메!",
-      "from": "https://animeanime.jp/imgs/ogp_f/956252.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "〈위치 워치〉 2기,|2027년 방송",
-      "sub": "원작 완결 날 발표 · 니코 성우 '멋진 이야기 고마웠습니다'"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "2기 PV 없음(티저 비주얼만)이라 숏폼 비움 · 방송 월·방송국은 발표에 없어 쓰지 않음",
-     "표지 사진이 2기 티저 비주얼(손 하트 속 니코)인지 눈으로 확인 — 아니면 공식 비주얼로 바꿀 것"
-    ],
-    "research": [
-     {
-      "title": "애니메!애니메! — 2기 2027년 방송, 점프 51호(11/16)로 최종화, 1기 2025년 4~10월, 바이브리 애니메이션 스튜디오×STUDIO MASSKET, 카와구치 리나 「素敵な物語を有難う御座いました！」·스즈키 료타 「約5年半の連載、本当にお疲れ様でした！！！」 (11/16 12:09)",
-      "link": "https://animeanime.jp/article/2026/11/16/104813.html"
-     },
-     {
-      "title": "PASH! PLUS — 2기 2027년 방송 결정, 티저 비주얼(손 하트 속 윙크하는 니코), 캐스트 여섯 명 코멘트 (11/16)",
-      "link": "https://www.pashplus.jp/anime/503186/"
-     },
-     {
-      "title": "리디 — 〈위치 워치〉 시노하라 켄타, 대원씨아이(DCW) 정식 출간",
-      "link": "https://ridibooks.com/comics/view-category-1523"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/427fc808b10eb402d4a9.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/dc36f0b71bd19adcd568.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/427fc808b10eb402d4a9.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-17T10:57+09:00",
-     "v": {
-      "A": "e126448e"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:diamond-kouzai-anime",
-    "account": "애니메!애니메!",
-    "url": "https://animeanime.jp/article/2026/11/17/104835.html",
-    "image": null,
-    "head": "「ダイヤモンドの功罪」TVアニメ化決定！制作はラパントラック、監督は「正反対な君と僕」の長友孝和",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-17T18:46+09:00",
-   "key": "69812cf9",
-   "by": "claude",
-   "subjects": [
-    "다이아몬드의 공죄",
-    "히라이 오하시",
-    "라판트랙"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈이 만화가 대단해! 2024〉 남성편 1위 야구 만화 〈다이아몬드의 공죄〉 TV 애니화 — 제작 라판트랙, 감독 나가토모 타카카즈",
-    "why": "11/17 0:00 애니메!애니메! · 오리콘 뉴스 · 전격 온라인 동시 · 공식 사이트 개설 · 국내 대원씨아이 정발(리디·미스터블루)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-17T18:46+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n야구 만화 〈다이아몬드의 공죄〉(ダイヤモンドの功罪)가 TV 애니로 만들어집니다.\n\n원작은 히라이 오하시가 2023년 2월 〈주간 영 점프〉에서 연재를 시작한 작품인데요, 〈이 만화가 대단해! 2024〉 남성편 1위에 올랐고 10권까지 누계 200만 부를 넘겼습니다. 애니 제작은 라판트랙, 감독은 나가토모 타카카즈입니다.\n\n이야기는 무엇을 해도 남보다 잘해 버리는 소년 아야세가와 지로가 약체 소년 야구팀 아다치 밤비즈에 들어가 처음 생긴 팀 동료들과 야구의 즐거움을 알아 가며 시작됩니다. 나가토모 감독은 그 재능이 주변 소년들에게 남기는 갈등과 애틋함을 화면에 옮기겠다고 했습니다.\n\n원작은 국내에 대원씨아이로 정식 출간돼 있어, 애니를 기다리며 먼저 읽어 둘 수 있습니다.\n\n#암낫오타쿠 #다이아몬드의공죄 #히라이오하시 #라판트랙 #야구만화\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/66f1cd942541ddbb587a.jpg\n제목: 〈다이아몬드의 공죄〉|TV 애니 된다\n부제: 〈이 만화가 대단해! 2024〉 남성편 1위 야구 만화 · 제작 라판트랙\n출처: 애니메!애니메!\n",
-    "caption": "야구 만화 〈다이아몬드의 공죄〉(ダイヤモンドの功罪)가 TV 애니로 만들어집니다.\n\n원작은 히라이 오하시가 2023년 2월 〈주간 영 점프〉에서 연재를 시작한 작품인데요, 〈이 만화가 대단해! 2024〉 남성편 1위에 올랐고 10권까지 누계 200만 부를 넘겼습니다. 애니 제작은 라판트랙, 감독은 나가토모 타카카즈입니다.\n\n이야기는 무엇을 해도 남보다 잘해 버리는 소년 아야세가와 지로가 약체 소년 야구팀 아다치 밤비즈에 들어가 처음 생긴 팀 동료들과 야구의 즐거움을 알아 가며 시작됩니다. 나가토모 감독은 그 재능이 주변 소년들에게 남기는 갈등과 애틋함을 화면에 옮기겠다고 했습니다.\n\n원작은 국내에 대원씨아이로 정식 출간돼 있어, 애니를 기다리며 먼저 읽어 둘 수 있습니다.\n\n#암낫오타쿠 #다이아몬드의공죄 #히라이오하시 #라판트랙 #야구만화",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/66f1cd942541ddbb587a.jpg",
-      "credit": "애니메!애니메!",
-      "from": "https://animeanime.jp/imgs/ogp_f/956650.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b57d06007cab91137b39.jpg",
-      "credit": "초 애니메디아",
-      "from": "https://cho-animedia.jp/imgs/ogp_f/1419527.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e7cfce22b10afc938112.jpg",
-      "credit": "전격 온라인",
-      "from": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/2a9648484c06321e10e0d83599b7627c.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/66f1cd942541ddbb587a.jpg",
-      "credit": "애니메!애니메!",
-      "from": "https://animeanime.jp/imgs/ogp_f/956650.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b57d06007cab91137b39.jpg",
-      "credit": "초 애니메디아",
-      "from": "https://cho-animedia.jp/imgs/ogp_f/1419527.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e7cfce22b10afc938112.jpg",
-      "credit": "전격 온라인",
-      "from": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/2a9648484c06321e10e0d83599b7627c.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "〈다이아몬드의 공죄〉|TV 애니 된다",
-      "sub": "〈이 만화가 대단해! 2024〉 남성편 1위 야구 만화 · 제작 라판트랙"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "PV 없음(결정 비주얼·기념 일러스트만)이라 숏폼 비움 · 방송 시기·방송국·성우는 발표에 없어 쓰지 않음",
-     "표지 사진이 결정 비주얼(아야세가와 뒷모습)이나 기념 일러스트인지 눈으로 확인 — 오리콘 사진은 글자가 깨진 페이지라 다른 매체 사진을 먼저 둠"
-    ],
-    "research": [
-     {
-      "title": "애니메!애니메! — TV 애니화 결정, 감독 나가토모 타카카즈·캐릭터 디자인 사이토 아츠시·시리즈 구성 우츠미 테루코, 제작 라판트랙, 〈이 만화가 대단해! 2024〉 남성편 1위, 누계 200만 부 (11/17 0:00)",
-      "link": "https://animeanime.jp/article/2026/11/17/104835.html"
-     },
-     {
-      "title": "전격 온라인(덴파미니코게이머) — 2023년 2월 〈주간 영 점프〉 연재 시작, 10권까지 누계 200만 부, 만화대상 2024 5위, 감독 코멘트",
-      "link": "https://news.denfaminicogamer.jp/news/261117r"
-     },
-     {
-      "title": "초 애니메디아 — 결정 비주얼(아야세가와 뒷모습)·히라이 오하시 기념 일러스트, 감독 '농밀한 인간 드라마가 화면에서 움직이기 시작하는 순간'",
-      "link": "https://cho-animedia.jp/article/2026/11/17/64713.html"
-     },
-     {
-      "title": "TV 애니 공식 사이트",
-      "link": "https://diamond-kouzai-anime.jp/"
-     },
-     {
-      "title": "리디 — 〈다이아몬드의 공죄〉 히라이 오하시, 대원씨아이(DCW)",
-      "link": "https://ridibooks.com/books/1019104580"
-     },
-     {
-      "title": "미스터블루 — 〈다이아몬드의 공죄〉 히라이 오하시, 대원씨아이",
-      "link": "https://www.mrblue.com/comic/C000069811"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d86dc1f95f6c16fc80ee.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/52d7b21226a202579701.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d86dc1f95f6c16fc80ee.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-17T18:46+09:00",
-     "v": {
-      "A": "1d078fe7"
-     }
+     "at": "2026-11-18T10:53+09:00"
     }
    },
    "pick": {
     "rank": 1,
-    "why": "오늘(11/17 0시) 발표 · 〈이 만화가 대단해! 2024〉 남성편 1위 야구 만화의 첫 애니화 · 국내 대원씨아이 정발이라 한국 독자가 바로 이어 읽을 수 있다",
-    "at": "2026-11-17T18:46+09:00"
+    "why": "나흘 뒤(11/22 일) 연세대 대강당 첫 내한 · 오늘(11/18) 아침 타이베이·홍콩 매진 소식과 본인 말이 새로 나옴 · 〈귀멸의 칼날〉 음악감독이라 덕후가 아니어도 이름이 닿는다",
+    "at": "2026-11-18T10:50+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:agf2026-red-stage-ticket",
-    "account": "ZDNet Korea",
-    "url": "https://zdnet.co.kr/view/?no=20261028171259",
+    "id": "claude:creepynuts-sakamoto-days-s2",
+    "account": "THE FIRST TIMES",
+    "url": "https://www.thefirsttimes.jp/news/0000920894/",
     "image": null,
-    "head": "AGF 2026, 메인 무대 'RED 스테이지' 라인업 공개…11월20일 예매 오픈",
+    "head": "Creepy Nuts新曲「パパはいまだにJuvenile」がアニメ『SAKAMOTO DAYS』第2期OPテーマに決定",
     "multiple": null,
-    "is_reel": false,
+    "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-17T18:46+09:00",
-   "key": "1974c175",
+   "made_at": "2026-11-18T10:50+09:00",
+   "key": "dc33e9f8",
    "by": "claude",
    "subjects": [
-    "AGF 2026",
-    "코바야시 유스케",
-    "타카하시 리에"
+    "Creepy Nuts",
+    "크리피 너츠",
+    "사카모토 데이즈"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "AGF 2026 성우 무대 RED 스테이지 좌석 예매가 11/20(금) 18시 멜론티켓에서 — 리제로·최애의 아이·마도카 일본 성우가 킨텍스에",
-    "why": "라인업은 10/28 발표(ZDNet·게임메카)지만 예매가 사흘 뒤라 지금이 실용 정보로 쓸 때 · 11/16 AGF 프리뷰 방송으로 행사 관심 다시 오름 · 한국 행사"
+    "angle": "[실험] 크리피 너츠가 〈사카모토 데이즈〉 2기 OP 'パパはいまだにJuvenile' — '사카모토와 공통점이 많다고 생각하며 썼다', 곡과 주인공의 연결",
+    "why": "11/18 10:00 음악나탈리 · 빌보드 재팬·오리콘 뉴스·THE FIRST TIMES 11/18 · 레이블 보도자료(PR TIMES) · 2기 2027/1/18 TV 도쿄 계열 · 곡 1/19 디지털 발매 · TMS 공식 메인 PV 에 곡 일부"
    },
    "added": "claude",
-   "added_at": "2026-11-17T18:46+09:00",
+   "added_at": "2026-11-18T10:50+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\nAGF 2026 성우 무대 'RED 스테이지' 좌석 예매가 20일 오후 6시 멜론티켓에서 열립니다.\n\n무대는 12월 5~6일 킨텍스 제1전시장 5B홀에서 이틀 동안 11회차로 열리는데요, 〈Re:제로부터 시작하는 이세계 생활〉 무대엔 스바루 역 코바야시 유스케와 에밀리아 역 타카하시 리에가 오릅니다. 〈최애의 아이〉 무대엔 루비 역 이고마 유리에와 카나 역 한 메구미가, 〈극장판 마법소녀 마도카☆마기카 발푸르기스의 회천〉 무대엔 사이토 치와와 카토 에미리가 나옵니다.\n\nRED 스테이지는 AGF 입장권만 있으면 따로 돈을 내지 않지만, 지정 좌석제라 자리는 미리 잡아야 합니다.\n\n예매는 11월 20일(금) 오후 6시 멜론티켓 선착순, 날짜별 계정당 3매까지입니다. 행사 전체는 12월 4~6일입니다.\n\n#암낫오타쿠 #AGF2026 #리제로 #최애의아이 #킨텍스\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3ef0abd457b48e012569.jpg\n제목: AGF 성우 무대,|20일 예매 연다\n부제: 12월 5~6일 킨텍스 RED 스테이지 · 리제로·최애의 아이·마도카\n출처: 쿠키뉴스\n",
-    "caption": "AGF 2026 성우 무대 'RED 스테이지' 좌석 예매가 20일 오후 6시 멜론티켓에서 열립니다.\n\n무대는 12월 5~6일 킨텍스 제1전시장 5B홀에서 이틀 동안 11회차로 열리는데요, 〈Re:제로부터 시작하는 이세계 생활〉 무대엔 스바루 역 코바야시 유스케와 에밀리아 역 타카하시 리에가 오릅니다. 〈최애의 아이〉 무대엔 루비 역 이고마 유리에와 카나 역 한 메구미가, 〈극장판 마법소녀 마도카☆마기카 발푸르기스의 회천〉 무대엔 사이토 치와와 카토 에미리가 나옵니다.\n\nRED 스테이지는 AGF 입장권만 있으면 따로 돈을 내지 않지만, 지정 좌석제라 자리는 미리 잡아야 합니다.\n\n예매는 11월 20일(금) 오후 6시 멜론티켓 선착순, 날짜별 계정당 3매까지입니다. 행사 전체는 12월 4~6일입니다.\n\n#암낫오타쿠 #AGF2026 #리제로 #최애의아이 #킨텍스",
+    "form": "[카테고리]\nNews\n\n[캡션]\n크리피 너츠가 〈사카모토 데이즈〉(SAKAMOTO DAYS) 2기 오프닝을 부릅니다.\n\n곡 제목은 'パパはいまだにJuvenile'(아빠는 아직도 주버나일)인데요, 이 작품을 위해 새로 쓴 곡입니다. 크리피 너츠는 '사카모토와 공통점이 많다고 생각하며 쓰기 시작했다'고 밝혔습니다. 가정과 일상, 한때 최강이던 시절, 잃을 것이 없던 때의 강함, 그리고 잃고 싶지 않은 것만 남아 버린 두려움을 곡에 담았다고 했습니다.\n\n'파파'로 시작하는 제목부터 가정을 꾸린 사카모토를 겨눈 셈입니다. 1기 오프닝은 Vaundy '走れSAKAMOTO'(RUN SAKAMOTO RUN), 2쿨은 Kroi 'Method'였습니다.\n\n2기는 2027년 1월 18일(월) 밤 24시(일본 기준) TV 도쿄 계열에서 시작하고, 곡은 다음 날인 1월 19일 디지털로 나옵니다. 공개된 2기 메인 PV 에서 일부를 먼저 들을 수 있습니다.\n\n#암낫오타쿠 #크리피너츠 #CreepyNuts #사카모토데이즈 #SAKAMOTODAYS\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/9b6a8aead74d6c76eec9.jpg\n제목: 〈사카모토 데이즈〉 2기,|오프닝은 크리피 너츠\n부제: 'パパはいまだにJuvenile' · 2027년 1월 18일 방송\n출처: 오리콘 뉴스\n",
+    "caption": "크리피 너츠가 〈사카모토 데이즈〉(SAKAMOTO DAYS) 2기 오프닝을 부릅니다.\n\n곡 제목은 'パパはいまだにJuvenile'(아빠는 아직도 주버나일)인데요, 이 작품을 위해 새로 쓴 곡입니다. 크리피 너츠는 '사카모토와 공통점이 많다고 생각하며 쓰기 시작했다'고 밝혔습니다. 가정과 일상, 한때 최강이던 시절, 잃을 것이 없던 때의 강함, 그리고 잃고 싶지 않은 것만 남아 버린 두려움을 곡에 담았다고 했습니다.\n\n'파파'로 시작하는 제목부터 가정을 꾸린 사카모토를 겨눈 셈입니다. 1기 오프닝은 Vaundy '走れSAKAMOTO'(RUN SAKAMOTO RUN), 2쿨은 Kroi 'Method'였습니다.\n\n2기는 2027년 1월 18일(월) 밤 24시(일본 기준) TV 도쿄 계열에서 시작하고, 곡은 다음 날인 1월 19일 디지털로 나옵니다. 공개된 2기 메인 PV 에서 일부를 먼저 들을 수 있습니다.\n\n#암낫오타쿠 #크리피너츠 #CreepyNuts #사카모토데이즈 #SAKAMOTODAYS",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3ef0abd457b48e012569.jpg",
-      "credit": "쿠키뉴스",
-      "from": "https://www.kukinews.com/data/kuk/image/2026/10/28/kuk20261028000230.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/9b6a8aead74d6c76eec9.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2494000/2493592/20261118_101638_p_o_23394408.jpg"
      },
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6795e8ba77aed9138d77.jpg",
-      "credit": "STN NEWS",
-      "from": "https://cdn.stnsports.co.kr/news/photo/202610/324724_332421_2811.png"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a6d9edd0bea5fca7b31d.jpg",
+      "credit": "THE FIRST TIMES",
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/2026/11/20261118-ha-100900-1200x630.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3ef0abd457b48e012569.jpg",
-      "credit": "쿠키뉴스",
-      "from": "https://www.kukinews.com/data/kuk/image/2026/10/28/kuk20261028000230.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/9b6a8aead74d6c76eec9.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2494000/2493592/20261118_101638_p_o_23394408.jpg"
      },
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6795e8ba77aed9138d77.jpg",
-      "credit": "STN NEWS",
-      "from": "https://cdn.stnsports.co.kr/news/photo/202610/324724_332421_2811.png"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a6d9edd0bea5fca7b31d.jpg",
+      "credit": "THE FIRST TIMES",
+      "from": "https://www.thefirsttimes.jp/admin/wp-content/uploads/2026/11/20261118-ha-100900-1200x630.jpg"
      }
     ],
     "shape": "단신",
@@ -642,49 +235,131 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "AGF 성우 무대,|20일 예매 연다",
-      "sub": "12월 5~6일 킨텍스 RED 스테이지 · 리제로·최애의 아이·마도카"
+      "title": "〈사카모토 데이즈〉 2기,|오프닝은 크리피 너츠",
+      "sub": "'パパはいまだにJuvenile' · 2027년 1월 18일 방송"
      }
     ],
     "issues": [],
     "confirm": [
-     "입장권 가격은 공식 원문을 못 찾아 뺐음 · 5일 14:15 회차 라인업이 예매 전에 추가 발표됐는지 AGF 공식 계정에서 한 번 볼 것",
-     "표지 사진이 AGF 2026 키 비주얼인지 확인 (성우 개인 사진은 쓰지 않음)"
+     "[검증] 코멘트 '지킬 것이 늘어난 두려움'은 원문에 없어 PR TIMES 원문(失いたくないものばかりになってしまった恐ろしさ)대로 고침 · 1기 OP 곡명은 일본 정식 제목 '走れSAKAMOTO'로 바로잡음 · PV 설명란에 OP 곡 사용 확인됨(구간은 귀로 볼 것)",
+     "클립 위험: 낮음 — TMSアニメ公式チャンネル (메인 PV 79초 중 0:45-1:15 · OP 곡이 실제로 흐르는 구간인지 귀로 확인하고 옮길 것)",
+     "2기 넷플릭스 동시 공개 범위(한국 포함인지)는 확인 못 해 캡션에서 뺐음"
     ],
     "research": [
      {
-      "title": "ZDNet Korea — 12/4~6 킨텍스 제1전시장, RED 스테이지 12/5~6 5B홀 11회차, 입장권 구매자 추가 비용 없음·지정 좌석제, 11/20 18시 멜론티켓 선착순·일자별 계정당 3매 (10/28)",
-      "link": "https://zdnet.co.kr/view/?no=20261028171259"
+      "title": "THE FIRST TIMES — 작품을 위해 새로 쓴 곡, 2027/1/18(월) 24시 TV 도쿄 계열, 1/19 디지털 발매, 코멘트 「坂本とは沢山の共通点があると思い書き出しました」",
+      "link": "https://www.thefirsttimes.jp/news/0000920894/"
      },
      {
-      "title": "게임메카 — 회차별 출연: 리제로 코바야시 유스케·타카하시 리에, 최애의 아이 이고마 유리에·한 메구미, 마도카 사이토 치와·카토 에미리, 14:15 회차 추후 공개 (10/28)",
-      "link": "https://www.gamemeca.com/en/view.php?gid=1782509"
+      "title": "PR TIMES (레이블 보도자료) — 같은 코멘트(가정·일상·元最強·잃을 것이 없던 때의 강함·지킬 것이 늘어난 두려움), Apple Music·Spotify 사전 등록 11/17 10:40~1/18",
+      "link": "https://prtimes.jp/main/html/rd/p/000005069.000013546.html"
      },
      {
-      "title": "아이러브PC방 — AGF 2026 메인 무대 RED 스테이지 라인업 공개",
-      "link": "https://www.ilovepcbang.com/news/articleView.html?idxno=202888"
+      "title": "빌보드 재팬 — 2기 OP 결정, 2027/1/18 방송, 1/19 배신 (11/18)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167523"
+     },
+     {
+      "title": "오리콘 뉴스 — 2기 2027/1/18 방송, 메인 PV·키 비주얼 공개 (11/18)",
+      "link": "https://www.oricon.co.jp/news/2493592/full/"
+     },
+     {
+      "title": "TMS 애니메 공식 채널 — 〈SAKAMOTO DAYS〉 2기 메인 PV 1탄 (79초)",
+      "link": "https://www.youtube.com/watch?v=l0jhSyImrVs"
+     },
+     {
+      "title": "Netflix Anime — 1기 OP Vaundy 'RUN SAKAMOTO RUN' · Part 2 OP Kroi 'Method'",
+      "link": "https://www.youtube.com/watch?v=PjksZ-iUdb8"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f83a74bf6a6ffe6c1ddb.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/fc1273ea914f5b29c33e.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/dc13c0d6533a687bee4f.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/889473ba956466ed1004.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f83a74bf6a6ffe6c1ddb.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/dc13c0d6533a687bee4f.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-17T18:46+09:00",
+     "at": "2026-11-18T10:51+09:00",
      "v": {
-      "A": "a2f03d30"
+      "A": "b02f6634"
      }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=l0jhSyImrVs\n구간: 0:45-1:15\n곡: 오프닝은 크리피 너츠\n아티스트: 〈사카모토 데이즈〉 2기\n피처링:\n후킹: \n출처: TMSアニメ公式チャンネル",
+    "caption": "〈사카모토 데이즈〉 2기 메인 PV 입니다. 오프닝은 크리피 너츠의 새 곡 'パパはいまだにJuvenile'(아빠는 아직도 주버나일)입니다.\n\n크리피 너츠는 '사카모토와 공통점이 많다고 생각하며 쓰기 시작했다'고 했는데요, 가정과 일상, 한때 최강이던 시절, 잃고 싶지 않은 것만 남아 버린 두려움을 곡에 담았다고 밝혔습니다.\n\n2기는 2027년 1월 18일(월) 밤 24시(일본 기준) TV 도쿄 계열에서 시작하고, 곡은 1월 19일 디지털로 나옵니다. 영상은 TMS 애니메 공식 채널의 PV 입니다.\n\n#암낫오타쿠 #크리피너츠 #CreepyNuts #사카모토데이즈 #SAKAMOTODAYS",
+    "hooks": {
+     "A": "〈사카모토 데이즈〉 2기 / 오프닝은 크리피 너츠",
+     "B": "크리피 너츠가 아빠 사카모토를 / 노래한 2기 OP",
+     "C": "2기 PV 에서 먼저 들리는 / 크리피 너츠 신곡"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=l0jhSyImrVs",
+     "credit": "TMSアニメ公式チャンネル",
+     "range": [
+      45.0,
+      75.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 코멘트 '지킬 것이 늘어난 두려움'은 원문에 없어 PR TIMES 원문(失いたくないものばかりになってしまった恐ろしさ)대로 고침 · 1기 OP 곡명은 일본 정식 제목 '走れSAKAMOTO'로 바로잡음 · PV 설명란에 OP 곡 사용 확인됨(구간은 귀로 볼 것)",
+     "클립 위험: 낮음 — TMSアニメ公式チャンネル (메인 PV 79초 중 0:45-1:15 · OP 곡이 실제로 흐르는 구간인지 귀로 확인하고 옮길 것)",
+     "2기 넷플릭스 동시 공개 범위(한국 포함인지)는 확인 못 해 캡션에서 뺐음"
+    ],
+    "research": [
+     {
+      "title": "THE FIRST TIMES — 작품을 위해 새로 쓴 곡, 2027/1/18(월) 24시 TV 도쿄 계열, 1/19 디지털 발매, 코멘트 「坂本とは沢山の共通点があると思い書き出しました」",
+      "link": "https://www.thefirsttimes.jp/news/0000920894/"
+     },
+     {
+      "title": "PR TIMES (레이블 보도자료) — 같은 코멘트(가정·일상·元最強·잃을 것이 없던 때의 강함·지킬 것이 늘어난 두려움), Apple Music·Spotify 사전 등록 11/17 10:40~1/18",
+      "link": "https://prtimes.jp/main/html/rd/p/000005069.000013546.html"
+     },
+     {
+      "title": "빌보드 재팬 — 2기 OP 결정, 2027/1/18 방송, 1/19 배신 (11/18)",
+      "link": "https://www.billboard-japan.com/d_news/detail/167523"
+     },
+     {
+      "title": "오리콘 뉴스 — 2기 2027/1/18 방송, 메인 PV·키 비주얼 공개 (11/18)",
+      "link": "https://www.oricon.co.jp/news/2493592/full/"
+     },
+     {
+      "title": "TMS 애니메 공식 채널 — 〈SAKAMOTO DAYS〉 2기 메인 PV 1탄 (79초)",
+      "link": "https://www.youtube.com/watch?v=l0jhSyImrVs"
+     },
+     {
+      "title": "Netflix Anime — 1기 OP Vaundy 'RUN SAKAMOTO RUN' · Part 2 OP Kroi 'Method'",
+      "link": "https://www.youtube.com/watch?v=PjksZ-iUdb8"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/l0jhSyImrVs/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b9846a99679da0d44e1a.jpg",
+     "key": "l0jhSyImrVs@45.0"
+    },
+    "px": {
+     "vid": "l0jhSyImrVs",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/686d32aaec33899fc063.mp4",
+     "off": 0.0,
+     "end": 78.0,
+     "full": 78.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-18T10:53+09:00"
     }
    },
    "pick": {
     "rank": 2,
-    "why": "사흘 뒤(11/20 18시) 예매가 열리는 국내 행사 · 리제로·최애의 아이·마도카 일본 성우가 한국 무대에 선다 · 저장·공유가 붙는 실용 소식",
-    "at": "2026-11-17T18:46+09:00"
+    "why": "오늘(11/18) 나탈리·빌보드 재팬·오리콘 동시 · 넷플릭스로 한국에서도 본 작품의 2기 OP · 곡을 쓴 이유를 직접 말해 사람이 보인다 · 공식 PV 로 숏폼",
+    "at": "2026-11-18T10:50+09:00"
    },
    "corner_name": "소식"
   }
@@ -692,7 +367,7 @@
  "skipped": [],
  "corners": {
   "week": "11/16~11/22",
-  "days_left": 6,
+  "days_left": 5,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -762,7 +437,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -861,14 +536,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-17T18:46+09:00"
+  "at": "2026-11-18T10:53+09:00"
  },
  "queue": {
-  "next": "2026-11-17T18:48+09:00",
+  "next": "2026-11-18T10:55+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
