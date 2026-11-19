@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-19 15:05 KST",
+ "generated_at": "2026-11-19 19:05 KST",
  "weeks": [
   {
    "week": "2026-W40",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-18 22:04 KST"
+  "daily": "2026-11-19 15:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-19T15:01:38+09:00",
+  "fetched_at": "2026-11-19T19:05:52+09:00",
   "posts": [
    {
     "t": "2026-11-18T15:39+09:00",
@@ -2110,17 +2110,12 @@
     "t": "2026-10-29T19:24+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "버벌진트(@freevjfreevj)가 14년 전 앨범 속 얼굴들을 다시 "
-   },
-   {
-    "t": "2026-10-29T15:14+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "지코(@woozico0914)가 일본 연말 페스티벌 '카운트다운 재팬 2"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 378,
+  "drafts": 382,
   "posted": 121,
   "posts": 139,
   "rate": 0.32,
@@ -2128,12 +2123,12 @@
   "own_mult": 1.04,
   "lanes": {
    "정보": {
-    "drafts": 261,
+    "drafts": 263,
     "posted": 106,
     "mult": 1.0
    },
    "시리즈": {
-    "drafts": 39,
+    "drafts": 40,
     "posted": 6,
     "mult": 0.78
    },
@@ -2143,7 +2138,7 @@
     "mult": 1.15
    },
    "재미": {
-    "drafts": 25,
+    "drafts": 26,
     "posted": 4,
     "mult": 0.95
    },
@@ -2155,7 +2150,7 @@
   },
   "corners": {
    "news": {
-    "drafts": 184,
+    "drafts": 185,
     "posted": 81,
     "mult": 1.03
    },
@@ -2165,7 +2160,7 @@
     "mult": 2.32
    },
    "anniv": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 2,
     "mult": 2.0
    },
@@ -2175,7 +2170,7 @@
     "mult": 0.89
    },
    "followup": {
-    "drafts": 17,
+    "drafts": 18,
     "posted": 5,
     "mult": 0.81
    },
@@ -2200,7 +2195,7 @@
     "mult": 0.8
    },
    "meet": {
-    "drafts": 17,
+    "drafts": 18,
     "posted": 4,
     "mult": 1.05
    },
@@ -2334,7 +2329,7 @@
   ]
  },
  "follow": {
-  "at": "2026-11-19T15:05+09:00",
+  "at": "2026-11-19T19:05+09:00",
   "d30": {
    "days": 30,
    "follows": 13.6,
@@ -2401,7 +2396,7 @@
   ],
   "feed": {
    "n": 189,
-   "reach": 3671325,
+   "reach": 3671455,
    "follows": 490,
    "per1k": 0.13
   },
@@ -2417,7 +2412,7 @@
    {
     "kind": "기타",
     "n": 38,
-    "reach": 288616,
+    "reach": 288665,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2433,7 +2428,7 @@
    {
     "kind": "발매·신보",
     "n": 42,
-    "reach": 109002,
+    "reach": 109047,
     "follows": 12,
     "per1k": 0.11,
     "visits1k": 2.8
@@ -2441,7 +2436,7 @@
    {
     "kind": "갈등·반응",
     "n": 21,
-    "reach": 325891,
+    "reach": 325909,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2449,7 +2444,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 32,
-    "reach": 140754,
+    "reach": 140770,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
