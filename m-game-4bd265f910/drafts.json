@@ -1,70 +1,50 @@
 {
  "schema": 1,
- "date": "2026-11-18",
- "generated_at": "2026-11-18 11:02 KST",
+ "date": "2026-11-19",
+ "generated_at": "2026-11-19 11:00 KST",
  "items": [
   {
    "source": {
-    "id": "claude:tga-2026-nominees",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323510",
+    "id": "claude:gta6-metacritic-99",
+    "account": "메타크리틱",
+    "url": "https://www.metacritic.com/game/grand-theft-auto-vi/",
     "image": null,
-    "head": "출시도 안 한 'GTA6', 최다 부문 후보에...더 게임 어워드2026 후보 공개",
+    "head": "Grand Theft Auto VI — Metascore 99",
     "multiple": null,
-    "is_reel": false,
+    "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-18T11:04+09:00",
-   "key": "2e1d6c00",
+   "made_at": "2026-11-19T11:05+09:00",
+   "key": "12d9cfea",
    "by": "claude",
    "subjects": [
-    "더 게임 어워드"
+    "GTA 6"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "출시 하루 전인 GTA 6 가 올해의 게임 후보에, 최다 8개 부문 — 한국 게임은 붉은사막이 최고의 커뮤니티 지원 부문에",
-    "why": "인벤(11/18)·Inven Global·Nintendo Everything·GamesBeat 가 올해의 게임 여섯 편과 커뮤니티 지원 부문 다섯 편을 같은 목록으로 · GTA 6 8개 부문은 인벤·GamesBeat(부문 목록으로 셈) · 11/19 출시는 Variety 제목·인벤"
+    "angle": "출시 당일 〈GTA 6〉가 메타크리틱 99점 — 1998년 〈시간의 오카리나〉 이후 28년 동안 아무도 넘지 못한 최고점과 동률, 그 오카리나의 리메이크와 올해의 게임 후보로 맞붙는다",
+    "why": "99점은 메타크리틱 게임 페이지(직접 확인 · Universal Acclaim)·디지털데일리('메타크리틱 역사상 최고 기록과 동률')·게임플·Inven Global · GTA4 98·GTA5 97 은 디지털데일리·게임플 · 28년 동안 더 높은 점수 없음은 디지털데일리 · 한국 시간 19일 0시는 게임플·CBS('midnight local time') · 가격·한국어 자막·19세는 PS 스토어 한국 상품 페이지 · 오카리나 리메이크 올해의 게임 후보는 11/18 TGA 초안 출처"
    },
    "added": "claude",
-   "added_at": "2026-11-18T11:04+09:00",
+   "added_at": "2026-11-19T11:05+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n출시를 하루 앞둔 〈GTA 6〉가 더 게임 어워드 2026 올해의 게임 후보에 올랐습니다.\n\n17일(미국 시간) 공개된 올해의 게임 후보는 〈007 퍼스트 라이트〉, 〈컨트롤 레조넌트〉, 〈GTA 6〉, 〈팬텀 블레이드 제로〉, 〈바이오하자드 레퀴엠〉, 〈젤다의 전설 시간의 오카리나〉 여섯 편인데요, 〈GTA 6〉는 게임 연출과 내러티브, 음악, 루시아 역 매니 L. 페레스의 연기까지 모두 8개 부문 후보로 가장 많이 이름을 올렸습니다.\n\n한국 게임으로는 펄어비스의 〈붉은사막〉이 최고의 커뮤니티 지원 부문에 올라 〈헬다이버즈 2〉, 〈노 맨즈 스카이〉, 〈위쳐 3〉, 〈워프레임〉과 겨룹니다.\n\n팬 투표 12월 9일까지 공식 누리집 · 시상식 12월 10일(미국 현지 시간) 로스앤젤레스 피콕 시어터 · 국내 치지직·SOOP 생중계\n\n#겜디핑 #더게임어워드 #GTA6 #붉은사막 #올해의게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b0451986ab972cba3189.jpg\n제목: 출시도 전인 GTA 6,|올해의 게임 후보에\n부제: 더 게임 어워드 2026 후보 공개\n출처: The Game Awards\n",
-    "caption": "출시를 하루 앞둔 〈GTA 6〉가 더 게임 어워드 2026 올해의 게임 후보에 올랐습니다.\n\n17일(미국 시간) 공개된 올해의 게임 후보는 〈007 퍼스트 라이트〉, 〈컨트롤 레조넌트〉, 〈GTA 6〉, 〈팬텀 블레이드 제로〉, 〈바이오하자드 레퀴엠〉, 〈젤다의 전설 시간의 오카리나〉 여섯 편인데요, 〈GTA 6〉는 게임 연출과 내러티브, 음악, 루시아 역 매니 L. 페레스의 연기까지 모두 8개 부문 후보로 가장 많이 이름을 올렸습니다.\n\n한국 게임으로는 펄어비스의 〈붉은사막〉이 최고의 커뮤니티 지원 부문에 올라 〈헬다이버즈 2〉, 〈노 맨즈 스카이〉, 〈위쳐 3〉, 〈워프레임〉과 겨룹니다.\n\n팬 투표 12월 9일까지 공식 누리집 · 시상식 12월 10일(미국 현지 시간) 로스앤젤레스 피콕 시어터 · 국내 치지직·SOOP 생중계\n\n#겜디핑 #더게임어워드 #GTA6 #붉은사막 #올해의게임",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉가 메타크리틱에서 99점을 받았습니다.\n\n99점은 1998년 〈젤다의 전설 시간의 오카리나〉가 받은 뒤 28년 동안 어떤 게임도 넘지 못한 메타크리틱 최고점인데요, 〈GTA 4〉의 98점과 〈GTA 5〉의 97점을 넘어 시리즈 최고점도 새로 썼습니다. 그 오카리나의 리메이크는 올해 더 게임 어워드에서 〈GTA 6〉와 함께 올해의 게임 후보에 올라 있습니다.\n\n〈GTA 5〉 이후 13년 만의 시리즈 신작은 오늘 0시부터 바이스 시티의 문을 열었습니다.\n\n11월 19일 0시(한국 시간) 출시 · 지역마다 현지 시각 자정 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #메타크리틱 #시간의오카리나 #락스타게임즈\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg\n제목: GTA 6, 메타크리틱|오카리나와 같은 99점\n부제: 오늘 0시 출시\n출처: Rockstar Games\n",
+    "caption": "〈GTA 6〉가 메타크리틱에서 99점을 받았습니다.\n\n99점은 1998년 〈젤다의 전설 시간의 오카리나〉가 받은 뒤 28년 동안 어떤 게임도 넘지 못한 메타크리틱 최고점인데요, 〈GTA 4〉의 98점과 〈GTA 5〉의 97점을 넘어 시리즈 최고점도 새로 썼습니다. 그 오카리나의 리메이크는 올해 더 게임 어워드에서 〈GTA 6〉와 함께 올해의 게임 후보에 올라 있습니다.\n\n〈GTA 5〉 이후 13년 만의 시리즈 신작은 오늘 0시부터 바이스 시티의 문을 열었습니다.\n\n11월 19일 0시(한국 시간) 출시 · 지역마다 현지 시각 자정 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #메타크리틱 #시간의오카리나 #락스타게임즈",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b0451986ab972cba3189.jpg",
-      "credit": "The Game Awards",
-      "from": "https://static.invenglobal.com/upload/image/2026/11/17/i1794937567971393.jpeg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
-      "credit": "The Game Awards",
-      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
-      "credit": "The Game Awards",
-      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b0451986ab972cba3189.jpg",
-      "credit": "The Game Awards",
-      "from": "https://static.invenglobal.com/upload/image/2026/11/17/i1794937567971393.jpeg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
-      "credit": "The Game Awards",
-      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c4f463c1baa704f9c911.jpg",
-      "credit": "The Game Awards",
-      "from": "https://static.inven.co.kr/column/2026/11/18/news/i1056121651.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
      }
     ],
     "shape": "단신",
@@ -72,557 +52,68 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "출시도 전인 GTA 6,|올해의 게임 후보에",
-      "sub": "더 게임 어워드 2026 후보 공개"
+      "title": "GTA 6, 메타크리틱|오카리나와 같은 99점",
+      "sub": "오늘 0시 출시"
      }
     ],
     "issues": [],
     "confirm": [
-     "팬 투표 12월 9일 마감과 치지직·SOOP 생중계는 인벤·Inven Global(같은 회사) 두 곳뿐 — 공식 누리집은 403 으로 못 읽음",
-     "시상식 시작 시각을 못 찾아 미국 현지 날짜로만 적음 — 한국 시간 나오면 바꿀 것"
+     "메타크리틱 점수는 리뷰가 붙으면 바뀔 수 있음 — 발행 직전 99 그대로인지 확인",
+     "가격은 PS 스토어 기준 · 엑스박스 스토어 가격은 따로 확인 못 함 · 숏폼 구간은 영상을 못 보고 정함 — 0:05~0:30 장면 눈으로 확인"
     ],
     "research": [
      {
-      "title": "인벤 — 더 게임 어워드2026 후보 공개 (11/18 · 올해의 게임 6 · GTA6 8개 부문 · 붉은사막 커뮤니티 지원 · 팬 투표 12/9까지 · 치지직·SOOP 생중계)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323510"
+      "title": "메타크리틱 — Grand Theft Auto VI (Metascore 99 · PS5 · 2026-11-19)",
+      "link": "https://www.metacritic.com/game/grand-theft-auto-vi/"
      },
      {
-      "title": "Nintendo Everything — The Game Awards 2026 nominees full list (올해의 게임 · Best Community Support 다섯 편)",
-      "link": "https://nintendoeverything.com/the-game-awards-2026-nominees-announced-full-list-zelda-ocarina-of-time-nominated-for-game-of-the-year-and-more/"
+      "title": "디지털데일리 — 'GTA6', 메타크리틱 99점…'젤다'와 역대 최고점 동률 (11/19 · GTA4 98 · GTA5 97 · 28년)",
+      "link": "https://www.ddaily.co.kr/page/view/2026111903564205804"
      },
      {
-      "title": "GamesBeat — The Game Awards lists all of its 2026 nominees (30개 부문 · 커뮤니티 지원 다섯 편)",
-      "link": "https://gamesbeat.com/the-game-awards-lists-all-of-its-2026-nominees-yes-gta-vi-made-the-cut/"
+      "title": "게임플 — 'GTA 6', 메타크리틱 '99점' 출발 (한국 시간 19일 0시 · 오카리나와 동률)",
+      "link": "https://www.gameple.co.kr/news/articleView.html?idxno=217012"
      },
      {
-      "title": "Variety — 'GTA 6' Lands Game of the Year Nom Ahead of Thursday Release",
-      "link": "https://variety.com/2026/awards/news/game-awards-nominations-2026-list-1236949480/"
+      "title": "Inven Global — GTA 6 ties Ocarina of Time for highest Metacritic score ever with 99 (11/18)",
+      "link": "https://www.invenglobal.com/articles/28786/gta-6-ties-ocarina-of-time-for-highest-metacritic-score-ever-with-99"
      },
      {
-      "title": "Inven Global — Unreleased 'GTA 6' Leads Nominations (11/20 자격 마감 · 12/10 피콕 시어터)",
-      "link": "https://www.invenglobal.com/articles/28726/unreleased-gta-6-leads-nominations-the-game-awards-2026-nominees-revealed"
+      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 음성 영어 · 19세)",
+      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
+     },
+     {
+      "title": "디지털데일리 — '붉은사막', 더 게임 어워드 후보 올라…GOTY 경쟁은 'GTA6' vs '젤다' (11/18 · 오카리나 리메이크 GOTY 후보)",
+      "link": "https://m.ddaily.co.kr/page/view/2026111811515923087"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/df8d0b84b1452c746730.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e4f7c50d8ef1b641b80d.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b9803d3a8629e8ab6e91.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a9ea50851f159e614235.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/df8d0b84b1452c746730.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b9803d3a8629e8ab6e91.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-18T11:05+09:00",
+     "at": "2026-11-19T11:06+09:00",
      "v": {
-      "A": "26963edd"
-     }
-    }
-   },
-   "corner_name": "소식",
-   "pick": {
-    "rank": 2,
-    "why": "GTA 6 출시 하루 전 · 올해의 게임 여섯 편 · 붉은사막이 커뮤니티 지원 부문에 오른 한국 지점",
-    "at": "2026-11-18T19:03+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:sonic-pico-park",
-    "account": "스팀",
-    "url": "https://store.steampowered.com/app/4304060/",
-    "image": null,
-    "head": "SONIC PICO PARK — Steam",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-18T11:04+09:00",
-   "key": "1b53533d",
-   "by": "claude",
-   "subjects": [
-    "소닉 피코 파크"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "[실험] 인디 개발자 이야기 — 세가에서 15년 일한 미야케 슌스케의 〈피코 파크〉에 소닉이 들어왔다, 기획은 피코 파크 쪽이 세가에 먼저 들고 갔다",
-    "why": "세가 15년은 gamebiz(6/8 개발자 코멘트)·게임메카(11/17) · 테코파크가 35주년에 맞춰 세가에 기획을 가져갔다는 건 4Gamer·덴파미니코게이머 · 출시일·가격·한국어·2~8명은 스팀 상점 · 플랫폼은 Gematsu·playnews 제목"
-   },
-   "added": "claude",
-   "added_at": "2026-11-18T11:04+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n세가에서 15년 일한 개발자의 게임에 세가의 소닉이 들어왔습니다.\n\n〈피코 파크〉는 여럿이 서로 밟고 밀어 줘야 골에 닿는 협동 퍼즐 게임인데요, 시리즈 디렉터 미야케 슌스케가 바로 세가 출신입니다. 이번 〈소닉 피코 파크〉는 개발사 테코파크가 소닉 35주년에 맞춰 세가에 먼저 기획을 들고 가서 성사됐고, 미야케 디렉터는 이번 협업이 이뤄진 것이 감격스럽다고 밝혔습니다.\n\n모든 캐릭터가 스핀 대시를 쓰고, 링과 루프, 스프링 같은 소닉의 장치가 그대로 퍼즐이 됩니다. 메탈 소닉과 닥터 에그맨도 나옵니다.\n\n11월 12일 출시 · 스위치2 · 스위치 · PS5 · 엑스박스 시리즈 X|S · PC(스팀) · 스팀 9,900원 · 2~8명 로컬·온라인 협동 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #소닉피코파크 #피코파크 #소닉 #협동게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3b0b578be9a112d36ee2.jpg\n제목: 전 세가 직원의 게임에|소닉이 들어왔다\n부제: 소닉 피코 파크 출시\n출처: PICO PARK Inc. · SEGA\n",
-    "caption": "세가에서 15년 일한 개발자의 게임에 세가의 소닉이 들어왔습니다.\n\n〈피코 파크〉는 여럿이 서로 밟고 밀어 줘야 골에 닿는 협동 퍼즐 게임인데요, 시리즈 디렉터 미야케 슌스케가 바로 세가 출신입니다. 이번 〈소닉 피코 파크〉는 개발사 테코파크가 소닉 35주년에 맞춰 세가에 먼저 기획을 들고 가서 성사됐고, 미야케 디렉터는 이번 협업이 이뤄진 것이 감격스럽다고 밝혔습니다.\n\n모든 캐릭터가 스핀 대시를 쓰고, 링과 루프, 스프링 같은 소닉의 장치가 그대로 퍼즐이 됩니다. 메탈 소닉과 닥터 에그맨도 나옵니다.\n\n11월 12일 출시 · 스위치2 · 스위치 · PS5 · 엑스박스 시리즈 X|S · PC(스팀) · 스팀 9,900원 · 2~8명 로컬·온라인 협동 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #소닉피코파크 #피코파크 #소닉 #협동게임",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3b0b578be9a112d36ee2.jpg",
-      "credit": "PICO PARK Inc. · SEGA",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304060/4ed007789c511740e790405dd3fd03c5a116e280/ss_4ed007789c511740e790405dd3fd03c5a116e280.1920x1080.jpg?t=1794470411"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3b0b578be9a112d36ee2.jpg",
-      "credit": "PICO PARK Inc. · SEGA",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304060/4ed007789c511740e790405dd3fd03c5a116e280/ss_4ed007789c511740e790405dd3fd03c5a116e280.1920x1080.jpg?t=1794470411"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "전 세가 직원의 게임에|소닉이 들어왔다",
-      "sub": "소닉 피코 파크 출시"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "출시 엿새 지난 게임 — 실험 칸(사람 이야기)으로 냄 · 이즈카 다카시 '소닉 아니어도 되니 피코 파크를 만들어 달라'는 덴파미 한 곳이라 뺌",
-     "스팀 한국어가 인터페이스·자막 중 어느 쪽인지 표에서 못 가림 · 콘솔 국내 가격 확인 못 함"
-    ],
-    "research": [
-     {
-      "title": "스팀 — SONIC PICO PARK (TECOPARK / PICO PARK Inc. · 2026-11-12 · ₩9,900 · 한국어 포함 14개 언어 · 2~8명)",
-      "link": "https://store.steampowered.com/app/4304060/"
-     },
-     {
-      "title": "게임메카 — 35주년 기념 협동게임 '소닉 피코 파크' 출시 (11/17 · 미야케 디렉터 '세가에서 15년' · 메탈 소닉·에그맨)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783668"
-     },
-     {
-      "title": "gamebiz — SONIC PICO PARK 발표 (6/8 · 개발자 코멘트 「セガには私自身15年勤めていた」)",
-      "link": "https://gamebiz.jp/news/427346"
-     },
-     {
-      "title": "4Gamer — TECOPARK 가 소닉 35주년에 맞춰 세가에 기획을 가져감",
-      "link": "https://www.4gamer.net/s/G079769.260622023"
-     },
-     {
-      "title": "電ファミニコゲーマー — 미야케·시마즈 인터뷰 (원 세가 · 기획 경위)",
-      "link": "https://news.denfaminicogamer.jp/interview/260609w"
-     },
-     {
-      "title": "Gematsu — launches November 12 for PS5, Xbox Series, Switch 2, Switch, and PC",
-      "link": "https://www.gematsu.com/2026/09/sonic-pico-park-launches-november-12-for-ps5-xbox-series-switch-2-switch-and-pc"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/99ca52f6e021dbe0e18e.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a4d5c2ab3c779bada706.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/99ca52f6e021dbe0e18e.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-18T11:05+09:00",
-     "v": {
-      "A": "45dee541"
+      "A": "2f73225f"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=H0UOggLIU84\n구간: 0:03-0:33\n곡: 소닉이 들어왔다\n아티스트: 전 세가 직원의 게임에\n피처링:\n후킹: \n출처: Sonic the Hedgehog\n자막: 자동",
-    "caption": "〈소닉 피코 파크〉 출시 트레일러입니다.\n\n〈피코 파크〉 디렉터 미야케 슌스케는 세가에서 15년 일한 개발자인데요, 개발사 테코파크가 소닉 35주년에 맞춰 세가에 먼저 기획을 들고 가서 이번 협업이 성사됐습니다. 모든 캐릭터가 스핀 대시를 쓰고, 링과 루프, 스프링이 퍼즐이 됩니다.\n\n11월 12일 출시 · 스위치2 · 스위치 · PS5 · 엑스박스 · PC(스팀) · 스팀 9,900원 · 2~8명 협동\n\n#겜디핑 #소닉피코파크 #피코파크 #소닉 #협동게임",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=rz1B4B2yBZY\n구간: 0:05-0:30\n곡: 메타크리틱 99점 게임\n아티스트: 28년 만에 나온\n피처링:\n후킹: \n출처: Rockstar Games\n자막: 자동",
+    "caption": "〈GTA 6〉 공식 출시 트레일러입니다.\n\n메타크리틱 99점은 1998년 〈젤다의 전설 시간의 오카리나〉 이후 28년 동안 어떤 게임도 넘지 못한 최고점인데요, 〈GTA 6〉가 출시 전날 그 점수에 나란히 섰습니다. 〈GTA 5〉 이후 13년 만의 신작입니다.\n\n11월 19일 0시(한국 시간) 출시 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 89,800원부터 · 한국어 자막 · 19세 이용가\n\n#겜디핑 #GTA6 #메타크리틱 #시간의오카리나 #락스타게임즈",
     "hooks": {
-     "A": "전 세가 직원의 게임에 / 소닉이 들어왔다",
-     "B": "여덟 명이 함께 달리는 / 소닉 협동 퍼즐",
-     "C": "소닉이 피코 파크에 / 들어가면 생기는 일"
+     "A": "28년 만에 나온 / 메타크리틱 99점 게임",
+     "B": "13년을 기다린 GTA 6, / 오늘 0시에 나왔다",
+     "C": "오카리나와 같은 점수를 / 받은 GTA 6"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=H0UOggLIU84",
-     "credit": "Sonic the Hedgehog",
-     "range": [
-      3.0,
-      33.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "출시 엿새 지난 게임 — 실험 칸(사람 이야기)으로 냄 · 이즈카 다카시 '소닉 아니어도 되니 피코 파크를 만들어 달라'는 덴파미 한 곳이라 뺌",
-     "스팀 한국어가 인터페이스·자막 중 어느 쪽인지 표에서 못 가림 · 콘솔 국내 가격 확인 못 함"
-    ],
-    "research": [
-     {
-      "title": "스팀 — SONIC PICO PARK (TECOPARK / PICO PARK Inc. · 2026-11-12 · ₩9,900 · 한국어 포함 14개 언어 · 2~8명)",
-      "link": "https://store.steampowered.com/app/4304060/"
-     },
-     {
-      "title": "게임메카 — 35주년 기념 협동게임 '소닉 피코 파크' 출시 (11/17 · 미야케 디렉터 '세가에서 15년' · 메탈 소닉·에그맨)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783668"
-     },
-     {
-      "title": "gamebiz — SONIC PICO PARK 발표 (6/8 · 개발자 코멘트 「セガには私自身15年勤めていた」)",
-      "link": "https://gamebiz.jp/news/427346"
-     },
-     {
-      "title": "4Gamer — TECOPARK 가 소닉 35주년에 맞춰 세가에 기획을 가져감",
-      "link": "https://www.4gamer.net/s/G079769.260622023"
-     },
-     {
-      "title": "電ファミニコゲーマー — 미야케·시마즈 인터뷰 (원 세가 · 기획 경위)",
-      "link": "https://news.denfaminicogamer.jp/interview/260609w"
-     },
-     {
-      "title": "Gematsu — launches November 12 for PS5, Xbox Series, Switch 2, Switch, and PC",
-      "link": "https://www.gematsu.com/2026/09/sonic-pico-park-launches-november-12-for-ps5-xbox-series-switch-2-switch-and-pc"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/H0UOggLIU84/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ccad7a59d068216ae6e9.jpg",
-     "key": "H0UOggLIU84@3.0"
-    },
-    "px": {
-     "vid": "H0UOggLIU84",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/46275865c43bc76b2a81.mp4",
-     "off": 0.0,
-     "end": 35.0,
-     "full": 35.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-18T11:05+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:firaxis-layoffs",
-    "account": "Inven Global",
-    "url": "https://www.invenglobal.com/articles/28734/civilization-studio-firaxis-cuts-a-third-of-its-staff-as-studio-head-heather-hazen-departs",
-    "image": null,
-    "head": "Civilization Studio Firaxis Cuts a Third of Its Staff as Studio Head Heather Haz",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-18T11:04+09:00",
-   "key": "12531239",
-   "by": "claude",
-   "subjects": [
-    "파이락시스"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈문명〉 개발사 파이락시스가 직원 3분의 1가량 감원, 헤더 헤이즌 대표도 떠난다",
-    "why": "블룸버그 첫 보도(11/17)를 Inven Global(직접 읽음)·Insider Gaming·Quartz·mlq 가 약 60명·3분의 1·헤이즌 퇴장·2K 확인으로 같은 내용 · 2023년(Axios·PC Gamer)·2025년(PC Gamer·Windows Central) 감원"
-   },
-   "added": "claude",
-   "added_at": "2026-11-18T11:04+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈문명〉 시리즈를 만든 파이락시스가 직원 약 60명, 전체의 3분의 1가량을 내보냅니다.\n\n블룸버그가 17일(미국 시간) 처음 전했고 2K 대변인이 구조 조정을 확인했는데요, 스튜디오 규모를 줄여 디자인과 기술, 플레이어 경험에 집중하겠다는 설명입니다. 스튜디오를 이끌던 헤더 헤이즌 대표도 이번에 물러납니다.\n\n파이락시스는 2023년과 2025년에도 인원을 줄였습니다. 〈문명 7〉은 2025년 출시 뒤 지금까지 업데이트를 이어 오고 있습니다.\n\n감원 규모(약 60명)는 블룸버그 보도 기준 · 2K 대변인 확인\n\n#겜디핑 #문명 #파이락시스 #문명7 #2K\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg\n제목: 문명 개발사 파이락시스,|직원 3분의 1 감원\n부제: 스튜디오 대표도 떠난다\n출처: Firaxis Games · 2K\n",
-    "caption": "〈문명〉 시리즈를 만든 파이락시스가 직원 약 60명, 전체의 3분의 1가량을 내보냅니다.\n\n블룸버그가 17일(미국 시간) 처음 전했고 2K 대변인이 구조 조정을 확인했는데요, 스튜디오 규모를 줄여 디자인과 기술, 플레이어 경험에 집중하겠다는 설명입니다. 스튜디오를 이끌던 헤더 헤이즌 대표도 이번에 물러납니다.\n\n파이락시스는 2023년과 2025년에도 인원을 줄였습니다. 〈문명 7〉은 2025년 출시 뒤 지금까지 업데이트를 이어 오고 있습니다.\n\n감원 규모(약 60명)는 블룸버그 보도 기준 · 2K 대변인 확인\n\n#겜디핑 #문명 #파이락시스 #문명7 #2K",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
-      "credit": "Firaxis Games · 2K",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1295660/library_hero.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
-      "credit": "Firaxis Games · 2K",
-      "from": "https://cdn.akamai.steamstatic.com/steam/apps/1295660/library_hero.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
-      "credit": "Firaxis Games · 2K",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1295660/library_hero.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8d5c2d51ff622ab76f12.jpg",
-      "credit": "Firaxis Games · 2K",
-      "from": "https://cdn.akamai.steamstatic.com/steam/apps/1295660/library_hero.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "문명 개발사 파이락시스,|직원 3분의 1 감원",
-      "sub": "스튜디오 대표도 떠난다"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "Inven Global 만 본문을 직접 읽음 · Insider Gaming·Quartz 는 403 이라 검색 요약으로만 대조 — 블룸버그 원문은 못 읽음",
-     "미발표 새 〈엑스컴〉이 여름 마일스톤을 놓쳤다는 블룸버그 소식통 이야기는 확인 안 된 내용이라 캡션에서 뺌"
-    ],
-    "research": [
-     {
-      "title": "Inven Global — Firaxis Cuts a Third of Its Staff (블룸버그 인용 · 약 60명 · 2K 대변인 확인 · 헤이즌 퇴장)",
-      "link": "https://www.invenglobal.com/articles/28734/civilization-studio-firaxis-cuts-a-third-of-its-staff-as-studio-head-heather-hazen-departs"
-     },
-     {
-      "title": "Insider Gaming — Civilization and XCOM Studio, Firaxis, Lays Off a Third of Staff",
-      "link": "https://insider-gaming.com/civilization-and-xcom-studio-firaxis-lays-off-a-third-of-staff"
-     },
-     {
-      "title": "Quartz — Firaxis is cutting about a third of staff as Heather Hazen exits",
-      "link": "https://qz.com/firaxis-layoffs-take-two-civilization-xcom-hazen-111726"
-     },
-     {
-      "title": "PC Gamer — Civilization 7 studio Firaxis confirms layoffs (2025)",
-      "link": "https://www.pcgamer.com/gaming-industry/civilization-7-studio-firaxis-confirms-layoffs-as-it-optimizes-its-development-process-for-adaptability-collaboration-and-creativity-which-is-somehow-even-worse-than-just-saying-agility"
-     },
-     {
-      "title": "Axios — Firaxis is latest video game studio hit by layoffs (2023)",
-      "link": "https://www.axios.com/2023/05/31/firaxis-layoffs"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/253410f762b3ca35ed8c.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/130cd4843c348bff0222.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/253410f762b3ca35ed8c.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-18T11:05+09:00",
-     "v": {
-      "A": "42f88212"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:crimson-desert-game-awards-korea",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783733",
-    "image": null,
-    "head": "사상 최초 8관왕, 2026 대한민국 게임대상은 '붉은사막'",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-18T19:03+09:00",
-   "key": "61df7d78",
-   "by": "claude",
-   "subjects": [
-    "붉은사막"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "〈붉은사막〉이 2026 대한민국 게임대상 대상 포함 8관왕 — 게임대상에서 8관왕은 처음, 기술창작상 네 부문과 새로 생긴 글로벌게임상까지",
-    "why": "수상 목록은 인벤 종합(11/18)·게임메카(11/18)가 같음 · '8관왕을 달성한 게임은 붉은사막이 처음'은 게임메카 문장, '역대 최다'는 한국아이닷컴 부제·ZDNet 제목 · 허진영 대표 '검은사막 모바일에 이어' 소감은 ZDNet·한국아이닷컴 · 심사 50/25/25 는 ZDNet"
-   },
-   "added": "claude",
-   "added_at": "2026-11-18T19:03+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈붉은사막〉이 2026 대한민국 게임대상에서 대상을 포함해 상 여덟 개를 받았습니다.\n\n18일 부산 벡스코 시상식에서 기획·시나리오, 사운드, 그래픽, 캐릭터까지 기술창작상 네 부문을 모두 가져갔고, 올해 새로 생긴 글로벌게임상의 첫 수상작도 됐는데요, 주인공 클리프를 연기한 이현 성우의 인기성우상과 조용현 총괄 디렉터의 우수개발자상까지 더해 게임대상에서 8관왕이 나온 건 이번이 처음입니다.\n\n허진영 펄어비스 대표는 〈검은사막 모바일〉에 이어 다시 게임대상을 받아 영광이라고 밝혔습니다. 더 게임 어워드 2026에서는 최고의 커뮤니티 지원 부문 후보에도 올라 있습니다.\n\n최우수상 〈아이온2〉 · 우수상 〈도깨비의 세계〉 〈미메시스〉 〈제우스: 오만의 신〉 · 인디게임상 〈골목길: 귀흔〉\n\n#겜디핑 #붉은사막 #대한민국게임대상 #펄어비스 #아이온2\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg\n제목: 붉은사막, 게임대상에서|처음으로 8관왕\n부제: 2026 대한민국 게임대상 대상\n출처: 게임메카\n",
-    "caption": "〈붉은사막〉이 2026 대한민국 게임대상에서 대상을 포함해 상 여덟 개를 받았습니다.\n\n18일 부산 벡스코 시상식에서 기획·시나리오, 사운드, 그래픽, 캐릭터까지 기술창작상 네 부문을 모두 가져갔고, 올해 새로 생긴 글로벌게임상의 첫 수상작도 됐는데요, 주인공 클리프를 연기한 이현 성우의 인기성우상과 조용현 총괄 디렉터의 우수개발자상까지 더해 게임대상에서 8관왕이 나온 건 이번이 처음입니다.\n\n허진영 펄어비스 대표는 〈검은사막 모바일〉에 이어 다시 게임대상을 받아 영광이라고 밝혔습니다. 더 게임 어워드 2026에서는 최고의 커뮤니티 지원 부문 후보에도 올라 있습니다.\n\n최우수상 〈아이온2〉 · 우수상 〈도깨비의 세계〉 〈미메시스〉 〈제우스: 오만의 신〉 · 인디게임상 〈골목길: 귀흔〉\n\n#겜디핑 #붉은사막 #대한민국게임대상 #펄어비스 #아이온2",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
-      "credit": "펄어비스",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dbda7aeebd616fca6442.jpg",
-      "credit": "펄어비스",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/733/gm127605_pa.webp"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "붉은사막, 게임대상에서|처음으로 8관왕",
-      "sub": "2026 대한민국 게임대상 대상"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] TGA 후보 발표는 미국 11/17 정오(한국 18일 새벽)라 '전날'을 뺌 · 커뮤니티 지원 부문 후보는 한국아이닷컴 한 곳에서만 확인(TGA 공식 페이지 403) — 발행 전 공식 명단 대조",
-     "8관왕에는 개인 상 둘(인기성우상 이현 · 우수개발자상 조용현)이 들어 있음 — 캡션에 그대로 밝힘",
-     "표지는 게임메카 현장 사진 — 붉은사막 후드를 입고 트로피를 든 펄어비스 수상자인데 누구인지 확인 못 함 · 캡션에 이름을 붙이지 않음"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — 사상 최초 8관왕, 2026 대한민국 게임대상은 '붉은사막' (11/18 · '8관왕을 달성한 게임은 붉은사막이 처음')",
-      "link": "https://www.gamemeca.com/view.php?gid=1783733"
-     },
-     {
-      "title": "인벤 — [종합] 2026 대한민국 게임대상, 8관왕의 '붉은사막' (11/18 · 전체 수상 목록 · 부산 벡스코)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323556"
-     },
-     {
-      "title": "ZDNet Korea — 붉은사막, 2026 대한민국 게임대상 대상…8관왕으로 '역대 최다' (2018 검은사막 모바일 6관왕 · 심사 방식)",
-      "link": "https://zdnet.co.kr/view/?no=20261118174441"
-     },
-     {
-      "title": "한국아이닷컴 — 8관왕으로 최다 (허진영 대표 소감)",
-      "link": "https://www.hankooki.com/news/articleView.html?idxno=348823"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/18d3ee9ea1563281fa5d.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a7987a36df91a0e10f4c.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/18d3ee9ea1563281fa5d.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-18T19:03+09:00",
-     "v": {
-      "A": "1663cad1"
-     }
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "오늘 저녁 결과 · 한국 게임 · 게임대상 첫 8관왕 · 전날 TGA 후보와 이어지는 펄어비스 한 주",
-    "at": "2026-11-18T19:03+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:slotbound-100k",
-    "account": "스팀 공지",
-    "url": "https://steamcommunity.com/app/4459590/allnews/",
-    "image": null,
-    "head": "Slotbound Has Sold 100,000 Copies! Thank You!",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-18T19:03+09:00",
-   "key": "7bf6e41d",
-   "by": "claude",
-   "subjects": [
-    "슬롯바운드"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "[실험] 인디 개발자 이야기 — 혼자 만든 슬롯머신 오토배틀러 〈슬롯바운드〉가 출시 사흘 만에 10만 장, 그사이 업데이트 아홉 번",
-    "why": "10만 장은 개발사 옵티마 아치의 스팀 공지(11/16 'Slotbound Has Sold 100,000 Copies!' · 직접 읽음)와 게임메카(11/18) · 업데이트 아홉 번·리뷰를 다 읽는다는 말은 스팀 공지 원문 · 가격·한국어·출시일은 스팀 상점 · 1인 개발은 스팀 상점(11/14 확인)·PC 가이드"
-   },
-   "added": "claude",
-   "added_at": "2026-11-18T19:03+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n혼자 만든 인디 게임 〈슬롯바운드〉가 출시 사흘 만에 10만 장을 넘겼습니다.\n\n슬롯머신을 돌려 나온 유닛으로 군대를 꾸려 적을 막는 오토배틀러인데요, 개발사 옵티마 아치는 16일 스팀 공지에서 출시 사흘 만에 이런 소식을 전하게 될 줄 몰랐다며 고마움을 밝혔습니다. 그사이 업데이트를 아홉 번 냈고, 대부분이 플레이어들의 버그 제보와 제안에서 나왔다고 합니다.\n\n개발자는 리뷰와 메시지를 하나하나 다 읽으려 애쓰고 있다며, 버그 수정과 밸런스, 새 콘텐츠로 계속 다듬겠다고 했습니다.\n\n판매량은 개발자 발표 기준 · 11월 12일 출시 · PC(스팀) · 12,000원(11월 26일까지 10% 할인 10,800원) · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #슬롯바운드 #인디게임 #오토배틀러 #스팀\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb7a88b5a9aafcc7110c.jpg\n제목: 혼자 만든 슬롯 게임,|사흘 만에 10만 장\n부제: 슬롯바운드 출시\n출처: 옵티마 아치\n",
-    "caption": "혼자 만든 인디 게임 〈슬롯바운드〉가 출시 사흘 만에 10만 장을 넘겼습니다.\n\n슬롯머신을 돌려 나온 유닛으로 군대를 꾸려 적을 막는 오토배틀러인데요, 개발사 옵티마 아치는 16일 스팀 공지에서 출시 사흘 만에 이런 소식을 전하게 될 줄 몰랐다며 고마움을 밝혔습니다. 그사이 업데이트를 아홉 번 냈고, 대부분이 플레이어들의 버그 제보와 제안에서 나왔다고 합니다.\n\n개발자는 리뷰와 메시지를 하나하나 다 읽으려 애쓰고 있다며, 버그 수정과 밸런스, 새 콘텐츠로 계속 다듬겠다고 했습니다.\n\n판매량은 개발자 발표 기준 · 11월 12일 출시 · PC(스팀) · 12,000원(11월 26일까지 10% 할인 10,800원) · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #슬롯바운드 #인디게임 #오토배틀러 #스팀",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb7a88b5a9aafcc7110c.jpg",
-      "credit": "옵티마 아치",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/692/gm791568_thumb__.webp"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/65abf72963408d0a9d87.jpg",
-      "credit": "Optima Arch",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/616207a48db386584162f64044508aeda0bedeb4/page_bg_raw.jpg?t=1794902941"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/eb7a88b5a9aafcc7110c.jpg",
-      "credit": "옵티마 아치",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/692/gm791568_thumb__.webp"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/65abf72963408d0a9d87.jpg",
-      "credit": "Optima Arch",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4459590/616207a48db386584162f64044508aeda0bedeb4/page_bg_raw.jpg?t=1794902941"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "혼자 만든 슬롯 게임,|사흘 만에 10만 장",
-      "sub": "슬롯바운드 출시"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "판매량은 개발자 발표 기준(추적 사이트 추정은 3만~10만으로 엇갈림) · 개발자 말은 '사흘', 게임메카는 '나흘' — 시간대 차이로 보고 개발자 말을 씀",
-     "개발자 국적은 게임메카 11/14 한 곳뿐이라 뺌 · 출시일은 스팀 표기(11/12) 그대로"
-    ],
-    "research": [
-     {
-      "title": "스팀 공지 — Slotbound Has Sold 100,000 Copies! Thank You! (11/16 · 'just three days after launch' · 'nine updates')",
-      "link": "https://steamcommunity.com/app/4459590/allnews/"
-     },
-     {
-      "title": "게임메카 — 슬롯+오토배틀러 '슬롯바운드' 나흘 만에 10만 장 판매 (11/18)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783692"
-     },
-     {
-      "title": "스팀 — Slotbound (Optima Arch · 2026-11-12 · ₩12,000 · 11/26까지 10% 할인 · 한국어)",
-      "link": "https://store.steampowered.com/app/4459590/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/bf3c2cfdbc1738f994c9.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/56bbb2d3a47f21fc6bea.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/bf3c2cfdbc1738f994c9.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-18T19:03+09:00",
-     "v": {
-      "A": "82760c98"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=6j0w7Q2Q_LM\n구간: 0:05-0:30\n곡: 사흘 만에 10만 장\n아티스트: 혼자 만든 슬롯 게임이\n피처링:\n후킹: \n출처: OptimaArch\n자막: 자동",
-    "caption": "〈슬롯바운드〉 공식 트레일러입니다.\n\n슬롯머신을 돌려 나온 유닛으로 군대를 꾸리는 오토배틀러인데요, 개발사 옵티마 아치는 출시 사흘 만에 10만 장을 넘겼다고 16일 스팀 공지로 알렸습니다. 그사이 업데이트를 아홉 번 냈고, 대부분이 플레이어들의 제보와 제안에서 나왔다고 합니다.\n\n판매량은 개발자 발표 기준 · 11월 12일 출시 · PC(스팀) · 12,000원 · 스팀 상점 언어 목록에 한국어\n\n#겜디핑 #슬롯바운드 #인디게임 #오토배틀러 #스팀",
-    "hooks": {
-     "A": "혼자 만든 슬롯 게임이 / 사흘 만에 10만 장",
-     "B": "슬롯머신을 돌리면 / 군대가 생기는 게임",
-     "C": "출시 사흘 동안 / 업데이트만 아홉 번"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=6j0w7Q2Q_LM",
-     "credit": "OptimaArch",
+     "url": "https://www.youtube.com/watch?v=rz1B4B2yBZY",
+     "credit": "Rockstar Games",
      "range": [
       5.0,
       30.0
@@ -634,44 +125,151 @@
     },
     "issues": [],
     "confirm": [
-     "판매량은 개발자 발표 기준(추적 사이트 추정은 3만~10만으로 엇갈림) · 개발자 말은 '사흘', 게임메카는 '나흘' — 시간대 차이로 보고 개발자 말을 씀",
-     "개발자 국적은 게임메카 11/14 한 곳뿐이라 뺌 · 출시일은 스팀 표기(11/12) 그대로"
+     "메타크리틱 점수는 리뷰가 붙으면 바뀔 수 있음 — 발행 직전 99 그대로인지 확인",
+     "가격은 PS 스토어 기준 · 엑스박스 스토어 가격은 따로 확인 못 함 · 숏폼 구간은 영상을 못 보고 정함 — 0:05~0:30 장면 눈으로 확인"
     ],
     "research": [
      {
-      "title": "스팀 공지 — Slotbound Has Sold 100,000 Copies! Thank You! (11/16 · 'just three days after launch' · 'nine updates')",
-      "link": "https://steamcommunity.com/app/4459590/allnews/"
+      "title": "메타크리틱 — Grand Theft Auto VI (Metascore 99 · PS5 · 2026-11-19)",
+      "link": "https://www.metacritic.com/game/grand-theft-auto-vi/"
      },
      {
-      "title": "게임메카 — 슬롯+오토배틀러 '슬롯바운드' 나흘 만에 10만 장 판매 (11/18)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783692"
+      "title": "디지털데일리 — 'GTA6', 메타크리틱 99점…'젤다'와 역대 최고점 동률 (11/19 · GTA4 98 · GTA5 97 · 28년)",
+      "link": "https://www.ddaily.co.kr/page/view/2026111903564205804"
      },
      {
-      "title": "스팀 — Slotbound (Optima Arch · 2026-11-12 · ₩12,000 · 11/26까지 10% 할인 · 한국어)",
-      "link": "https://store.steampowered.com/app/4459590/"
+      "title": "게임플 — 'GTA 6', 메타크리틱 '99점' 출발 (한국 시간 19일 0시 · 오카리나와 동률)",
+      "link": "https://www.gameple.co.kr/news/articleView.html?idxno=217012"
+     },
+     {
+      "title": "Inven Global — GTA 6 ties Ocarina of Time for highest Metacritic score ever with 99 (11/18)",
+      "link": "https://www.invenglobal.com/articles/28786/gta-6-ties-ocarina-of-time-for-highest-metacritic-score-ever-with-99"
+     },
+     {
+      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 음성 영어 · 19세)",
+      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
+     },
+     {
+      "title": "디지털데일리 — '붉은사막', 더 게임 어워드 후보 올라…GOTY 경쟁은 'GTA6' vs '젤다' (11/18 · 오카리나 리메이크 GOTY 후보)",
+      "link": "https://m.ddaily.co.kr/page/view/2026111811515923087"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/6j0w7Q2Q_LM/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/rz1B4B2yBZY/maxresdefault.jpg",
     "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ec3d65076c8965dafa94.jpg",
-     "key": "6j0w7Q2Q_LM@5.0"
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/359e76839df54b543317.jpg",
+     "key": "rz1B4B2yBZY@5.0"
     },
     "px": {
-     "vid": "6j0w7Q2Q_LM",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/257805b149a16dd97b72.mp4",
+     "vid": "rz1B4B2yBZY",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6d55b7f8e458d0f708fb.mp4",
      "off": 0.0,
-     "end": 56.0,
-     "full": 56.0
+     "end": 75.0,
+     "full": 90.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-18T19:04+09:00"
+     "at": "2026-11-19T11:07+09:00"
     }
    },
    "pick": {
-    "rank": 3,
-    "why": "[실험] 혼자 만든 인디가 사흘 만에 10만 장 · 개발자 본인의 말 · 공식 트레일러 숏폼",
-    "at": "2026-11-18T19:03+09:00"
+    "rank": 1,
+    "why": "출시 당일 · 28년 만에 오카리나와 같은 메타크리틱 99점 · 오카리나 리메이크와 TGA 에서 맞붙는 연결 · 공식 출시 트레일러 숏폼",
+    "at": "2026-11-19T11:05+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:clair-obscur-writer-fund",
+    "account": "GamesBeat",
+    "url": "https://gamesbeat.com/clair-obscur-writer-will-invest-in-next-generation-of-game-storytellers-jennifer-svedberg-yen-interview/",
+    "image": null,
+    "head": "Clair Obscur writer will invest in next generation of game storytellers",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-19T11:05+09:00",
+   "key": "ec98d68b",
+   "by": "claude",
+   "subjects": [
+    "제니퍼 스베드버그옌"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "〈클레르 옵스퀴르: 33 원정대〉의 세 번째 멤버였던 작가가 7월 샌드폴을 떠났다 — 다음 일은 이야기 중심 게임을 만드는 작은 개발자들에게 투자하는 것",
+    "why": "7월 퇴사·'We've parted ways'·세 번째 멤버(2020년 4월)·투자 펀드와 인큐베이션 구상·'I want to help' 는 GamesBeat 인터뷰(11/17 · 직접 읽음)와 Inven Global(11/18 · 직접 읽음) · 한국어 제목·출시일·한국어 지원은 스팀 상점"
+   },
+   "added": "claude",
+   "added_at": "2026-11-19T11:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈클레르 옵스퀴르: 33 원정대〉의 작가 제니퍼 스베드버그옌이 지난 7월 샌드폴 인터랙티브를 떠났습니다.\n\n17일(미국 시간) 게임스비트 인터뷰에서 33 원정대의 마지막 작업을 마치고 헤어졌다고 직접 밝혔는데요, 스베드버그옌은 2020년 4월 스튜디오가 정식으로 생기기도 전에, 유비소프트에 다니던 두 개발자와 함께한 세 번째 멤버였습니다. 사모펀드 일을 하다 처음 맡은 게임 시나리오가 이 작품이었습니다.\n\n다음 일로는 이야기 중심의 게임을 만드는 작은 개발자들을 위한 투자 펀드와 인큐베이션 프로그램을 꾸리고 싶다고 했습니다. 업계가 뽑아낼 수 있는 건 다 뽑아내려 해 왔다며, 2027년을 앞두고 가장 강한 마음은 돕고 싶다는 것이라고 말했습니다.\n\n〈클레르 옵스퀴르: 33 원정대〉 2025년 4월 24일 출시 · 샌드폴 인터랙티브 개발 · 케플러 인터랙티브 배급 · 스팀 한국어 자막\n\n#겜디핑 #클레르옵스퀴르 #33원정대 #샌드폴인터랙티브 #게임시나리오\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e887abb63f095391c2aa.jpg\n제목: 33 원정대 작가, 이제|이야기꾼에게 투자한다\n부제: 제니퍼 스베드버그옌의 다음 일\n출처: Sandfall Interactive · Kepler Interactive\n",
+    "caption": "〈클레르 옵스퀴르: 33 원정대〉의 작가 제니퍼 스베드버그옌이 지난 7월 샌드폴 인터랙티브를 떠났습니다.\n\n17일(미국 시간) 게임스비트 인터뷰에서 33 원정대의 마지막 작업을 마치고 헤어졌다고 직접 밝혔는데요, 스베드버그옌은 2020년 4월 스튜디오가 정식으로 생기기도 전에, 유비소프트에 다니던 두 개발자와 함께한 세 번째 멤버였습니다. 사모펀드 일을 하다 처음 맡은 게임 시나리오가 이 작품이었습니다.\n\n다음 일로는 이야기 중심의 게임을 만드는 작은 개발자들을 위한 투자 펀드와 인큐베이션 프로그램을 꾸리고 싶다고 했습니다. 업계가 뽑아낼 수 있는 건 다 뽑아내려 해 왔다며, 2027년을 앞두고 가장 강한 마음은 돕고 싶다는 것이라고 말했습니다.\n\n〈클레르 옵스퀴르: 33 원정대〉 2025년 4월 24일 출시 · 샌드폴 인터랙티브 개발 · 케플러 인터랙티브 배급 · 스팀 한국어 자막\n\n#겜디핑 #클레르옵스퀴르 #33원정대 #샌드폴인터랙티브 #게임시나리오",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e887abb63f095391c2aa.jpg",
+      "credit": "Sandfall Interactive · Kepler Interactive",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_hero.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e887abb63f095391c2aa.jpg",
+      "credit": "Sandfall Interactive · Kepler Interactive",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_hero.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "33 원정대 작가, 이제|이야기꾼에게 투자한다",
+      "sub": "제니퍼 스베드버그옌의 다음 일"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "떠난 이유는 본인이 말하지 않았고 샌드폴도 입장을 내지 않음 — 불화로 읽히지 않게 '헤어졌다'만 씀",
+     "펀드 이름·규모는 아직 없음(만들고 싶다는 구상) · 숏폼은 본인 영상이 없어 쓰지 않음"
+    ],
+    "research": [
+     {
+      "title": "GamesBeat — Clair Obscur writer will invest in next generation of game storytellers (11/17 · Dean Takahashi 인터뷰)",
+      "link": "https://gamesbeat.com/clair-obscur-writer-will-invest-in-next-generation-of-game-storytellers-jennifer-svedberg-yen-interview/"
+     },
+     {
+      "title": "Inven Global — Clair Obscur lead writer Jennifer Svedberg-Yen confirms Sandfall exit (11/18 · 샌드폴 공식 입장 없음)",
+      "link": "https://www.invenglobal.com/articles/28788/clair-obscur-expedition-33-lead-writer-jennifer-svedberg-yen-confirms-sandfall-exit"
+     },
+     {
+      "title": "스팀 — 클레르 옵스퀴르: 33 원정대 (Sandfall Interactive · Kepler Interactive · 2025-04-24 · 한국어)",
+      "link": "https://store.steampowered.com/app/1903340/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9e32bb5434ffeb3fb561.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9eab3c5f191ae7430836.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9e32bb5434ffeb3fb561.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-19T11:06+09:00",
+     "v": {
+      "A": "42a42f40"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "작년 화제작의 세 번째 멤버였던 작가 본인의 말 · 다음 일을 말하는 사람 이야기",
+    "at": "2026-11-19T11:05+09:00"
    },
    "corner_name": "소식"
   }
@@ -679,7 +277,7 @@
  "skipped": [],
  "corners": {
   "week": "11/16~11/22",
-  "days_left": 5,
+  "days_left": 4,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -848,14 +446,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-18T19:04+09:00"
+  "at": "2026-11-19T11:07+09:00"
  },
  "queue": {
-  "next": "2026-11-18T19:06+09:00",
+  "next": "2026-11-19T11:09+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
