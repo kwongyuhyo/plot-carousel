@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-18 22:04 KST",
+ "generated_at": "2026-11-19 15:05 KST",
  "weeks": [
   {
    "week": "2026-W40",
@@ -81,14 +81,14 @@
   },
   {
    "week": "2026-W47",
-   "posts": 8,
-   "reach": 24000,
-   "saved": 39,
-   "shares": 720,
-   "followers": 3090,
-   "followers_delta": -16,
-   "reach_total": 289958,
-   "top": "https://www.instagram.com/p/DfjOpp-FF_5/"
+   "posts": 3,
+   "reach": 2684,
+   "saved": 4,
+   "shares": 22,
+   "followers": 3084,
+   "followers_delta": -22,
+   "reach_total": 262491,
+   "top": "https://www.instagram.com/reel/Dfo2q0aOWgc/"
   }
  ],
  "kinds": [
@@ -103,29 +103,29 @@
   },
   {
    "kind": "갈등·반응",
-   "n": 33,
-   "weeks": 9,
-   "multiple": 1.17,
-   "low": 0.91,
-   "high": 1.38,
+   "n": 32,
+   "weeks": 8,
+   "multiple": 1.14,
+   "low": 0.9,
+   "high": 1.28,
    "stable": false
   },
   {
    "kind": "기타",
-   "n": 101,
+   "n": 98,
    "weeks": 14,
-   "multiple": 1.05,
+   "multiple": 1.06,
    "low": 1.03,
-   "high": 1.1,
+   "high": 1.11,
    "stable": true
   },
   {
    "kind": "발매·신보",
-   "n": 85,
+   "n": 84,
    "weeks": 13,
-   "multiple": 0.97,
+   "multiple": 0.98,
    "low": 0.93,
-   "high": 1.01,
+   "high": 1.0,
    "stable": false
   },
   {
@@ -274,60 +274,25 @@
  ],
  "published": [
   {
-   "id": "DfjOpp-FF_5",
-   "week": "2026-W47",
-   "kind": "갈등·반응",
-   "reach": 9687,
-   "head": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.\n\n검찰은 그가 집행유예 기간이던 지난해 12월부터 올해 3"
-  },
-  {
-   "id": "DfjRE3UITYV",
-   "week": "2026-W47",
-   "kind": "기타",
-   "reach": 1993,
-   "head": "리센느(@rescene_official)를 만든 더뮤즈엔터테인먼트 이주헌 대표가 '2026 KGMA' 첫날 베스트 프로듀서상을 받고 소감 도중 "
-  },
-  {
-   "id": "DfjUY7dD3oR",
-   "week": "2026-W47",
-   "kind": "기타",
-   "reach": 656,
-   "head": "리센느(@rescene_official)가 '2026 KGMA'에서 최고 영예인 그랜드 아너스 초이스를 포함해 4관왕에 올랐습니다.\n\n지난 7일"
-  },
-  {
-   "id": "Dfj1n2fmU8T",
-   "week": "2026-W47",
-   "kind": "기타",
-   "reach": 928,
-   "head": "pH-1(@ph1boyyy)이 유튜브 채널을 엽니다.\n\npH-1은 인스타그램에 스튜디오 모닥과 함께 유튜브를 시작한다고 알렸는데요, 채널 이름은"
-  },
-  {
-   "id": "DflkNzRClrt",
-   "week": "2026-W47",
-   "kind": "발매·신보",
-   "reach": 7728,
-   "head": "양홍원(yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보]를 11월 10일 발매했습니다.\n\n판다곰은 2021년"
-  },
-  {
-   "id": "DfmfNZekSdS",
-   "week": "2026-W47",
-   "kind": "발매·신보",
-   "reach": 1079,
-   "head": "존박(@johnparkgram)과 곽진언의 '맥도날드 랩'이 다른 사람의 이름으로 해외 음원 사이트에 올라왔습니다.\n\n지난달 23일 존박의 유튜"
-  },
-  {
-   "id": "DfmfbYaoRK5",
-   "week": "2026-W47",
-   "kind": "기타",
-   "reach": 479,
-   "head": "아이브(@ivestarship)가 미국 빌보드의 메인 앨범 차트 '빌보드 200'에 처음 이름을 올렸습니다.\n\n미니앨범 [Looks Can Ki"
-  },
-  {
    "id": "Dfo2q0aOWgc",
    "week": "2026-W47",
    "kind": "발매·신보",
-   "reach": 1450,
+   "reach": 1709,
    "head": "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화'의 후반부입니다.\n\n이 곡에 나오는 '미쳐가지고'는 아내 원현주의 인스타그램 아이"
+  },
+  {
+   "id": "Df30xjAlAIb",
+   "week": "2026-W47",
+   "kind": "발매·신보",
+   "reach": 521,
+   "head": "래원이 오늘(18일) 오후 6시 신곡 '먼치킨'을 냅니다.\n\n그냥노창과 재키와이(@jvckiwai)가 피처링으로 참여했는데요, 하루 앞서 공개된"
+  },
+  {
+   "id": "Df34ajSFOGp",
+   "week": "2026-W47",
+   "kind": "기타",
+   "reach": 454,
+   "head": "키키의 그래미(@grammys) 후보곡 '404 (New Era)'는 바밍타이거(@balmingtiger)의 오메가 사피엔이 혼자 가사를 쓴 곡"
   },
   {
    "id": "DfWOIaHGbw0",
@@ -1672,14 +1637,49 @@
    "kind": "갈등·반응",
    "reach": 2504,
    "head": "아이유가 컴백에 앞서 영상을 공개했습니다.\n\n아이유(@dlwlrma)가 9월 10일 오후 6시 새 디지털 싱글을 발매합니다. 소속사 이담엔터테인"
+  },
+  {
+   "id": "Dc5x8J7j-8I",
+   "week": "2026-W37",
+   "kind": "추천·모음",
+   "reach": 8323,
+   "head": "예능으로 먼저 알게 됐다면, 음악은 지금부터입니다.\n\n<쇼미더머니12>를 비롯해 〈래퍼 여친 구함〉까지 올해 정말 다양한 프로그램으로 우리 앞에"
+  },
+  {
+   "id": "Dc8LxwIv_Xg",
+   "week": "2026-W37",
+   "kind": "기타",
+   "reach": 20596,
+   "head": "빅나티(@bignaughtyboi)가 ‘폴킴(@pkalbum)의 남은밤’에 출연해서 스파이더맨에 대한 이야기를 했습니다.\n스파이더맨을 보고 펑펑"
+  },
+  {
+   "id": "Dc8R1W-vgB8",
+   "week": "2026-W37",
+   "kind": "공연·페스티벌",
+   "reach": 3102,
+   "head": "브루노 마스(@brunomars)가 2027년 5월 내한을 확정하고 MBC 14F와 인터뷰를 가졌는데요,\n서울 공연에서 준비한 특별 무대에 대한"
+  },
+  {
+   "id": "Dc8ZaIBy9Hg",
+   "week": "2026-W37",
+   "kind": "기타",
+   "reach": 12697,
+   "head": "두 사람이 드디어 같이 춤을 췄습니다.\n\n식케이(@younghotyellow94)와 그의 연인이자, 댄서 우와(@uwakitadera)가 함께 "
+  },
+  {
+   "id": "Dc8hsMQD6yN",
+   "week": "2026-W37",
+   "kind": "공연·페스티벌",
+   "reach": 1011,
+   "head": "도시 하나가 일주일을 통째로 내줬습니다.\n\n로스앤젤레스시가 9월 1일부터 8일까지를 'BTS 위크'로 공식 선포했습니다. 방탄소년단(@bts.b"
   }
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-18 19:05 KST"
+  "daily": "2026-11-18 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-18T22:04:31+09:00",
+  "fetched_at": "2026-11-19T15:01:38+09:00",
   "posts": [
    {
     "t": "2026-11-18T15:39+09:00",
@@ -2120,32 +2120,32 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 384,
-  "posted": 123,
-  "posts": 141,
+  "drafts": 378,
+  "posted": 121,
+  "posts": 139,
   "rate": 0.32,
-  "adopted_mult": 1.0,
-  "own_mult": 1.02,
+  "adopted_mult": 0.99,
+  "own_mult": 1.04,
   "lanes": {
    "정보": {
-    "drafts": 265,
-    "posted": 107,
+    "drafts": 261,
+    "posted": 106,
     "mult": 1.0
-   },
-   "클립": {
-    "drafts": 54,
-    "posted": 6,
-    "mult": 1.15
    },
    "시리즈": {
     "drafts": 39,
     "posted": 6,
     "mult": 0.78
    },
+   "클립": {
+    "drafts": 52,
+    "posted": 5,
+    "mult": 1.15
+   },
    "재미": {
     "drafts": 25,
     "posted": 4,
-    "mult": 0.89
+    "mult": 0.95
    },
    "기타": {
     "drafts": 1,
@@ -2155,39 +2155,29 @@
   },
   "corners": {
    "news": {
-    "drafts": 188,
+    "drafts": 184,
     "posted": 81,
-    "mult": 1.1
-   },
-   "followup": {
-    "drafts": 18,
-    "posted": 6,
-    "mult": 0.91
-   },
-   "spotlight": {
-    "drafts": 8,
-    "posted": 2,
-    "mult": 0.84
-   },
-   "mal": {
-    "drafts": 50,
-    "posted": 6,
-    "mult": 0.89
-   },
-   "again": {
-    "drafts": 2,
-    "posted": 0,
-    "mult": null
+    "mult": 1.03
    },
    "newalbums": {
     "drafts": 8,
     "posted": 4,
-    "mult": 1.25
+    "mult": 2.32
    },
    "anniv": {
     "drafts": 28,
     "posted": 2,
     "mult": 2.0
+   },
+   "mal": {
+    "drafts": 50,
+    "posted": 5,
+    "mult": 0.89
+   },
+   "followup": {
+    "drafts": 17,
+    "posted": 5,
+    "mult": 0.81
    },
    "tickets": {
     "drafts": 9,
@@ -2197,12 +2187,17 @@
    "song": {
     "drafts": 13,
     "posted": 7,
-    "mult": 0.96
+    "mult": 0.85
    },
    "tteolgi": {
     "drafts": 12,
     "posted": 1,
     "mult": 0.87
+   },
+   "spotlight": {
+    "drafts": 7,
+    "posted": 2,
+    "mult": 0.8
    },
    "meet": {
     "drafts": 17,
@@ -2210,7 +2205,7 @@
     "mult": 1.05
    },
    "intro": {
-    "drafts": 26,
+    "drafts": 27,
     "posted": 3,
     "mult": 0.78
    },
@@ -2218,6 +2213,11 @@
     "drafts": 4,
     "posted": 1,
     "mult": 0.26
+   },
+   "again": {
+    "drafts": 1,
+    "posted": 0,
+    "mult": null
    },
    "lyric": {
     "drafts": 1,
@@ -2238,7 +2238,7 @@
     "posted": "DflkNzRClrt",
     "head": "양홍원(yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보",
     "url": "https://www.instagram.com/p/DflkNzRClrt/",
-    "mult": 6.11
+    "mult": 9.26
    },
    {
     "day": "2026-11-10",
@@ -2251,7 +2251,7 @@
     "posted": "DfjOpp-FF_5",
     "head": "래퍼 김감전(본명 김상민)이 대마 혐의 첫 재판에서 흡연과 소지 혐의를 인정했습니다.",
     "url": "https://www.instagram.com/p/DfjOpp-FF_5/",
-    "mult": 7.66
+    "mult": 11.99
    },
    {
     "day": "2026-11-10",
@@ -2264,7 +2264,7 @@
     "posted": "Dfj1n2fmU8T",
     "head": "pH-1(@ph1boyyy)이 유튜브 채널을 엽니다.",
     "url": "https://www.instagram.com/p/Dfj1n2fmU8T/",
-    "mult": 0.73
+    "mult": 1.17
    },
    {
     "day": "2026-11-10",
@@ -2277,7 +2277,7 @@
     "posted": "DfmfNZekSdS",
     "head": "존박(@johnparkgram)과 곽진언의 '맥도날드 랩'이 다른 사람의 이름으로 해외 음",
     "url": "https://www.instagram.com/p/DfmfNZekSdS/",
-    "mult": 0.85
+    "mult": 1.03
    },
    {
     "day": "2026-11-10",
@@ -2290,7 +2290,7 @@
     "posted": "Dfo2q0aOWgc",
     "head": "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화'의 후반부입니다.",
     "url": "https://www.instagram.com/reel/Dfo2q0aOWgc/",
-    "mult": 1.15
+    "mult": 3.28
    },
    {
     "day": "2026-11-11",
@@ -2303,7 +2303,7 @@
     "posted": "DfmfbYaoRK5",
     "head": "아이브(@ivestarship)가 미국 빌보드의 메인 앨범 차트 '빌보드 200'에 처음 ",
     "url": "https://www.instagram.com/p/DfmfbYaoRK5/",
-    "mult": 0.38
+    "mult": 0.44
    },
    {
     "day": "2026-11-18",
@@ -2316,7 +2316,7 @@
     "posted": "Df30xjAlAIb",
     "head": "래원이 오늘(18일) 오후 6시 신곡 '먼치킨'을 냅니다.",
     "url": "https://www.instagram.com/p/Df30xjAlAIb/",
-    "mult": null
+    "mult": 1.0
    },
    {
     "day": "2026-11-18",
@@ -2329,17 +2329,17 @@
     "posted": "Df34ajSFOGp",
     "head": "키키의 그래미(@grammys) 후보곡 '404 (New Era)'는 바밍타이거(@balm",
     "url": "https://www.instagram.com/p/Df34ajSFOGp/",
-    "mult": null
+    "mult": 0.87
    }
   ]
  },
  "follow": {
-  "at": "2026-11-18T22:04+09:00",
+  "at": "2026-11-19T15:05+09:00",
   "d30": {
    "days": 30,
    "follows": 13.6,
-   "unfollows": 14.5,
-   "net": -0.9
+   "unfollows": 14.3,
+   "net": -0.7
   },
   "weeks": [
    {
@@ -2393,15 +2393,15 @@
    },
    {
     "week": "2026-W47",
-    "follows": 16,
-    "unfollows": 10,
-    "net": 6,
-    "days": 1
+    "follows": 25,
+    "unfollows": 22,
+    "net": 3,
+    "days": 2
    }
   ],
   "feed": {
-   "n": 188,
-   "reach": 3670159,
+   "n": 189,
+   "reach": 3671325,
    "follows": 490,
    "per1k": 0.13
   },
@@ -2416,24 +2416,24 @@
    },
    {
     "kind": "기타",
-    "n": 37,
-    "reach": 288102,
+    "n": 38,
+    "reach": 288616,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
     "kind": "갈래 모름",
-    "n": 42,
-    "reach": 2271082,
-    "follows": 293,
+    "n": 39,
+    "reach": 2253922,
+    "follows": 289,
     "per1k": 0.13,
     "visits1k": 3.4
    },
    {
     "kind": "발매·신보",
-    "n": 41,
-    "reach": 108369,
+    "n": 42,
+    "reach": 109002,
     "follows": 12,
     "per1k": 0.11,
     "visits1k": 2.8
@@ -2441,15 +2441,15 @@
    {
     "kind": "갈등·반응",
     "n": 21,
-    "reach": 325817,
+    "reach": 325891,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
    },
    {
     "kind": "공연·페스티벌",
-    "n": 31,
-    "reach": 138881,
+    "n": 32,
+    "reach": 140754,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
@@ -2512,16 +2512,16 @@
    }
   ],
   "reels": {
-   "reels_per1k": 0.2,
+   "reels_per1k": 0.21,
    "feed_per1k": 0.03,
-   "base": 14.5,
+   "base": 14.3,
    "days": 59
   },
   "spikes": [
    {
     "date": "2026-10-20",
     "unfollows": 41,
-    "usual": 14.5,
+    "usual": 14.3,
     "posted": [
      "로꼬(@satgotloco)가 ’타타‘의 목소리로 리센느(@r…",
      "인디고뮤직(@indigomusic_official)이라는 이름…"
