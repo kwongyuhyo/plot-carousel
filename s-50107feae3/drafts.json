@@ -141,12 +141,7 @@
      }
     }
    },
-   "corner_name": "소식",
-   "pick": {
-    "rank": 3,
-    "why": "기리보이 〈재혼 황후〉 깜짝 출연 — 씬 밖 무대로 들어간 접점, 뉴스 5건",
-    "at": "2026-11-20T10:17+09:00"
-   }
+   "corner_name": "소식"
   },
   {
    "source": {
@@ -323,11 +318,6 @@
       "B": "324405da"
      }
     }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "이번 회차 목표 인물 정리형 · PLOT 역대 3위가 제나 · 트로트 메들리 2,100만과 한문철 피처링을 한 줄로 잇는 각도",
-    "at": "2026-11-20T10:17+09:00"
    },
    "corner_name": "입문 가이드",
    "corner_no": 4
@@ -561,11 +551,6 @@
      ],
      "at": "2026-11-20T10:23+09:00"
     }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "숏폼 한 자리 · 본인 채널(위험 낮음) · 스윙스는 PLOT 에서 잘 된 이름 · 한마디로 끝나는 장면",
-    "at": "2026-11-20T10:17+09:00"
    },
    "corner_name": "그 말",
    "corner_no": 8
@@ -1197,6 +1182,827 @@
    },
    "corner_name": "그 말",
    "corner_no": 10
+  },
+  {
+   "source": {
+    "id": "claude:bigbang-giiirip",
+    "account": "텐아시아",
+    "url": "https://www.tenasia.co.kr/article/2026112001754",
+    "image": null,
+    "head": "빅뱅, 이번엔 '기립'시킨다…테디 손잡고 기습 컴백",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T16:35+09:00",
+   "key": "230fe1b2",
+   "by": "claude",
+   "subjects": [
+    "빅뱅"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "MAMA 하루 전 낸 빅뱅의 새 곡 '기립' — 지드래곤·태양·테디, 그리고 켈리스 'Milkshake' 인터폴레이션",
+    "why": "레이더 9.0 · 검색 급상승 '빅뱅 기립' · 오늘의 중심 사건 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T16:35+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\n빅뱅(@bigbang_official)이 오늘(20일) 오후 2시 새 디지털 싱글 '기립(GiiiRIP)'을 냈습니다.\n\n지난 8월 데뷔 20주년 곡 'BiiiG' 이후 석 달 만인데요, 지드래곤(@xxxibgdrgn)이 작사·작곡, 태양이 작사에 참여했고 빅뱅의 여러 히트곡을 함께 만든 테디가 힘을 보탰습니다. 곡에는 채드 휴고와 퍼렐 윌리엄스가 만든 켈리스의 2003년 곡 'Milkshake'를 인터폴레이션으로 녹였습니다.\n\n제목처럼 무대에 서는 것만으로 사람들을 일으켜 세운다는 노래입니다. 그 무대는 바로 내일 찾아옵니다. 빅뱅은 21일 일본 교세라 돔 오사카에서 열리는 '2026 MAMA AWARDS'에 오릅니다.\n\n#PLOT #빅뱅 #지드래곤 #태양 #대성 #기립\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/923ddfe84b7ff0115f3f.jpg\n제목: MAMA 하루 전|빅뱅이 낸 새 곡 '기립'\n부제: 지드래곤·태양·테디 · 켈리스 'Milkshake' 인터폴레이션\n출처: @bigbang_2xx6\n",
+    "caption": "빅뱅(@bigbang_official)이 오늘(20일) 오후 2시 새 디지털 싱글 '기립(GiiiRIP)'을 냈습니다.\n\n지난 8월 데뷔 20주년 곡 'BiiiG' 이후 석 달 만인데요, 지드래곤(@xxxibgdrgn)이 작사·작곡, 태양이 작사에 참여했고 빅뱅의 여러 히트곡을 함께 만든 테디가 힘을 보탰습니다. 곡에는 채드 휴고와 퍼렐 윌리엄스가 만든 켈리스의 2003년 곡 'Milkshake'를 인터폴레이션으로 녹였습니다.\n\n제목처럼 무대에 서는 것만으로 사람들을 일으켜 세운다는 노래입니다. 그 무대는 바로 내일 찾아옵니다. 빅뱅은 21일 일본 교세라 돔 오사카에서 열리는 '2026 MAMA AWARDS'에 오릅니다.\n\n#PLOT #빅뱅 #지드래곤 #태양 #대성 #기립",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/923ddfe84b7ff0115f3f.jpg",
+      "credit": "@bigbang_2xx6",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/902825829_1193600356331352_7658171847646556887_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=6opJ_MU_ZOUQ7kNvwExTueQ&_nc_oc=AdpUS0uKplfL058Mv3XSrHTMfuK5BQxXIImGdEnuuO-hyPWxHABWqSVbB-HCz1m7y44&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=sjz98Ol-am7IRRkAJwyPLQ&_nc_tpa=Q5bMBQLnUYTCh4C0fH9fcM2xyziv_SfC_cljuhAMgJACBqLCPgVBo7qAVx7PIj2p4kQe5x9t-bUKrITJYw&_nc_ct=RQosPBUKFQwAAAA&oh=00_AQQP4443ilGm3W1XlsVInSebtJHqpJUuscrXUx6K_Vf6HQ&oe=6B05CD6A"
+     },
+     {
+      "url": "https://i.ibb.co/Y7zfyD4n/5fbb6e1889b5.jpg",
+      "credit": "@bigbang_official",
+      "kind": "앨범커버",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/622092974_18162334771407454_2507559915532791488_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5rC4JEkDcEIQ7kNvwHh6jSN&_nc_oc=AdrrUpWNxRG3u5pftIOTYpMfwLfs1jKhO81JR8sSoM8ZIr8f9slY03kN0rpbC30U9j8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=XYJDr-MkH96IZ2Br2wpfkQ&oh=00_AQNrjG73UEB_tZHMt-5gGjd9bRdxzNske3R8fnwx5KY-NQ&oe=6AD3535A"
+     },
+     {
+      "url": "https://i.ibb.co/0pfSWKsQ/288c6af7deb3.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/144/63/127/14463127_20260819092848.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/fzF8xMRC/902db749f40a.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/100/22/709/10022709.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/923ddfe84b7ff0115f3f.jpg",
+      "credit": "@bigbang_2xx6",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/902825829_1193600356331352_7658171847646556887_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=6opJ_MU_ZOUQ7kNvwExTueQ&_nc_oc=AdpUS0uKplfL058Mv3XSrHTMfuK5BQxXIImGdEnuuO-hyPWxHABWqSVbB-HCz1m7y44&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=sjz98Ol-am7IRRkAJwyPLQ&_nc_tpa=Q5bMBQLnUYTCh4C0fH9fcM2xyziv_SfC_cljuhAMgJACBqLCPgVBo7qAVx7PIj2p4kQe5x9t-bUKrITJYw&_nc_ct=RQosPBUKFQwAAAA&oh=00_AQQP4443ilGm3W1XlsVInSebtJHqpJUuscrXUx6K_Vf6HQ&oe=6B05CD6A"
+     },
+     {
+      "url": "https://i.ibb.co/Y7zfyD4n/5fbb6e1889b5.jpg",
+      "credit": "@bigbang_official",
+      "kind": "앨범커버",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/622092974_18162334771407454_2507559915532791488_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5rC4JEkDcEIQ7kNvwHh6jSN&_nc_oc=AdrrUpWNxRG3u5pftIOTYpMfwLfs1jKhO81JR8sSoM8ZIr8f9slY03kN0rpbC30U9j8&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=XYJDr-MkH96IZ2Br2wpfkQ&oh=00_AQNrjG73UEB_tZHMt-5gGjd9bRdxzNske3R8fnwx5KY-NQ&oe=6AD3535A"
+     },
+     {
+      "url": "https://i.ibb.co/0pfSWKsQ/288c6af7deb3.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/144/63/127/14463127_20260819092848.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/fzF8xMRC/902db749f40a.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/100/22/709/10022709.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "MAMA 하루 전|빅뱅이 낸 새 곡 '기립'",
+      "sub": "지드래곤·태양·테디 · 켈리스 'Milkshake' 인터폴레이션"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "빅뱅 새 곡 '기립'에|'Milkshake'가 들어갔다",
+      "sub": "20일 오후 2시 발매"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "기사들은 '사전 예고 없이'라고 썼지만 공식 인스타에 전날 시각 포스터가 있어 캡션에선 '예고 없이'를 뺌",
+     "숏폼은 안 붙임 — 공식 오디오에 자막이 없어 'Milkshake'가 들리는 구간을 확인 못 함 · 앱에서 들어 보고 숏폼을 붙여도 좋음"
+    ],
+    "research": [
+     {
+      "title": "텐아시아 11/20 — 20일 오후 2시 · 'BiiiG' 이후 약 3개월 · 지드래곤 작사·작곡, 태양 작사, 테디 · 켈리스 'Milkshake' 인터폴레이션 · 21일 교세라 돔 오사카 MAMA",
+      "link": "https://www.tenasia.co.kr/article/2026112001754"
+     },
+     {
+      "title": "헤럴드뮤즈 11/20 — 같은 크레딧 · 'Chad Hugo와 Pharrell Williams가 작업한 Milkshake 인터폴레이션' · 21일 MAMA",
+      "link": "https://www.heraldmuse.com/article/10944107"
+     },
+     {
+      "title": "빅뱅 공식 인스타 — 11/19 '2026.11.20. 2PM (KST)' 포스터 · 11/20 '기립(GiiiRIP) OUT NOW'",
+      "link": "https://www.instagram.com/p/Df7WZ7MTpwv/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/145e5e1e2339c7fc5159.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/9e417bdf3614b89ecb69.jpg"
+     ],
+     "covers": {
+      "B": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ebdb36f3fb8ac3b6f078.jpg",
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/145e5e1e2339c7fc5159.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T16:36+09:00",
+     "v": {
+      "A": "afcc0643",
+      "B": "2892924c"
+     }
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "오늘의 중심 사건 — 오후 2시 신곡 '기립', 검색 급상승 '빅뱅 기립' · 내일 MAMA 무대 전에",
+    "at": "2026-11-20T16:35+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:haon-noah",
+    "account": "톱스타뉴스",
+    "url": "https://www.topstarnews.net/news/articleView.html?idxno=16268472",
+    "image": null,
+    "head": "'나의 이방인', 제주항공 참사 희생자 AI 재현…김하온 도플갱어까지 14일 첫 방송",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T16:35+09:00",
+   "key": "c3c051a7",
+   "by": "claude",
+   "subjects": [
+    "김하온"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "인물 정리 — AI 분신의 이름 '노아'는 2018년 첫 EP [TRAVEL: NOAH] 속 '반항의 사념체'와 같은 이름: 8년 전 노래 속 또 다른 자신을 이번엔 AI로 마주한다",
+    "why": "이번 회차 목표 '인물해부' · 뉴스 급상승 김하온 17건(평소 1) · 정규 2집 · 첫 단독(21일) · SBS 다큐(22일)가 한 주에 몰림"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T16:35+09:00",
+   "corner": "intro",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n김하온(@noahmik)의 AI 분신 이름은 노아입니다.\n\n22일 방송되는 SBS 〈나의 이방인〉 3부에서 김하온은 자기 목소리와 말투, 음악을 배운 AI 휴머노이드와 7일을 보내는데요, 활동명 HAON을 거꾸로 뒤집은 이 이름은 김하온에게 낯설지 않습니다. 2018년 첫 EP [TRAVEL: NOAH]에서 노아는 그의 안에 사는 '반항의 사념체'였고, 타이틀곡 제목도 '노아(NOAH)'였습니다.\n\n지난 12일 나온 정규 2집 [i+em]도 티저에서 자기 자신과 마주 앉은 모습으로 문을 열었습니다. 8년 전 노래 속에서 만난 또 다른 자신을, 이번엔 AI로 마주하게 된 셈입니다.\n\n첫 단독 콘서트 'ARK'는 21일 서울 KBS아레나에서 열립니다.\n\n#PLOT #김하온 #하온 #나의이방인 #노아\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/eb704ec5c386b1d34fe8.jpg\n제목: 8년 전 '노아'를 만난|김하온, 이번엔 AI\n부제: [TRAVEL: NOAH]에서 〈나의 이방인〉까지\n출처: 톱스타뉴스\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/e40bf0506aa0a51c025d.jpg\n소제목: 2018년, 안에 사는 노아\n본문: 〈고등래퍼2〉 우승 뒤 김하온이 처음 낸 정식 앨범은 2018년 9월의 EP [TRAVEL: NOAH]였습니다.||주제는 '반항의 사념체' 노아와 함께 떠나는 내면 여행. 타이틀곡 '노아(NOAH)'는 박재범·Hoody와 함께 자기 안의 노아와 마주한 이야기를 그렸습니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d553a42f1d39bc49c218.jpg\n소제목: 자기 자신과 마주 앉은 [i+em]\n본문: 지난 12일 나온 정규 2집 [i+em]은 피처링 없이 12곡을 혼자 채웠습니다.||발매 전 티저 속 김하온은 머리부터 발끝까지 검은 형체와 마주 앉아 있었는데요, 자기 자신과 마주하는 장면으로 앨범을 열었습니다.\n출처: 멜론\n\n[슬라이드]\n소스: https://i.ibb.co/84Bny4Z6/b1d41d97e320.jpg\n소제목: 이번엔 AI 노아\n본문: 22일 밤 SBS 〈나의 이방인〉 3부 'AI, 나를 닮은 너'에서 김하온은 자기 목소리와 말투, 음악을 배운 AI 휴머노이드와 7일을 보냅니다.||그 AI의 이름이 노아입니다. 활동명 HAON을 거꾸로 뒤집은 이름인데요, 마지막 날 둘은 관객 앞에서 랩으로 맞붙습니다.\n출처: 멜론\n",
+    "caption": "김하온(@noahmik)의 AI 분신 이름은 노아입니다.\n\n22일 방송되는 SBS 〈나의 이방인〉 3부에서 김하온은 자기 목소리와 말투, 음악을 배운 AI 휴머노이드와 7일을 보내는데요, 활동명 HAON을 거꾸로 뒤집은 이 이름은 김하온에게 낯설지 않습니다. 2018년 첫 EP [TRAVEL: NOAH]에서 노아는 그의 안에 사는 '반항의 사념체'였고, 타이틀곡 제목도 '노아(NOAH)'였습니다.\n\n지난 12일 나온 정규 2집 [i+em]도 티저에서 자기 자신과 마주 앉은 모습으로 문을 열었습니다. 8년 전 노래 속에서 만난 또 다른 자신을, 이번엔 AI로 마주하게 된 셈입니다.\n\n첫 단독 콘서트 'ARK'는 21일 서울 KBS아레나에서 열립니다.\n\n#PLOT #김하온 #하온 #나의이방인 #노아",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/eb704ec5c386b1d34fe8.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202611/16275338_2086928_642_crop.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/307ac94ec46e633ca3cf.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/151/51/190/15151190_20261111143640.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/6b976e82459a054a7780.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/01/266/10201266.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/84Bny4Z6/b1d41d97e320.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/118/92/637/11892637_20250714113700.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/99mMH3vs/280e7647f1e1.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/114/53/970/11453970_20240328174727.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/dJ26h79x/df31b0c20f82.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/43/582/10243582.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ba081d9ca262714024d9.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/133/84/376/13384376_20260511153729.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/eb704ec5c386b1d34fe8.jpg",
+      "credit": "톱스타뉴스",
+      "from": "https://cdn.topstarnews.net/news/photo/202611/16275338_2086928_642_crop.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/307ac94ec46e633ca3cf.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/151/51/190/15151190_20261111143640.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/6b976e82459a054a7780.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/01/266/10201266.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/84Bny4Z6/b1d41d97e320.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/118/92/637/11892637_20250714113700.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/99mMH3vs/280e7647f1e1.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/114/53/970/11453970_20240328174727.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://i.ibb.co/dJ26h79x/df31b0c20f82.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/43/582/10243582.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ba081d9ca262714024d9.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/133/84/376/13384376_20260511153729.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "8년 전 '노아'를 만난|김하온, 이번엔 AI",
+      "sub": "[TRAVEL: NOAH]에서 〈나의 이방인〉까지"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "김하온의 AI 분신|이름은 '노아'",
+      "sub": "22일 SBS 〈나의 이방인〉 3부"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 3장('이번엔 AI 노아') 사진이 톱스타뉴스 기사 사진이 아니라 분홍 날개 생물 그림(출처 '멜론')으로 들어감 — 김하온·AI 노아가 아님, 사진 바꿀 것",
+     "방송 전 기사라 다큐 속 김하온 발언('AI가 와도 못 베껴' 등)은 하나도 인용하지 않음 — 22일 본방 뒤 숏폼 후속 가능",
+     "'HAON 거꾸로'는 톱스타뉴스 한 곳 서술(철자로는 맞음) · 제작진이 2018 EP를 염두에 뒀다고는 쓰지 않음"
+    ],
+    "research": [
+     {
+      "title": "톱스타뉴스 — '노아라는 이름은 김하온의 활동명 HAON을 거꾸로 뒤집어 만들었다' · 고통 가사 · 블라인드 테스트 · 가족 · 일곱째 날 관객 앞 랩 대결",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16268472"
+     },
+     {
+      "title": "더쎈뉴스 11/16 — 3부 'AI, 나를 닮은 너' 22일 오후 11시 15분 SBS · AI 휴머노이드 노아와 7일 · 목소리·말투·음악 학습",
+      "link": "https://www.mhns.co.kr/news/articleView.html?idxno=769289"
+     },
+     {
+      "title": "뉴스탭 — 딥브레인AI · 일주일 함께 지내고 마지막 날 관객 앞 랩 대결 · 22일 방송",
+      "link": "https://www.newstap.co.kr/news/articleView.html?idxno=337937"
+     },
+     {
+      "title": "텐아시아 2018/09/05 — 첫 정식 앨범 [TRAVEL: NOAH] · '반항의 사념체 노아와 함께 떠나는 내면세계로의 여행' · 타이틀 '노아(NOAH)(feat. 박재범, Hoody)'",
+      "link": "https://www.tenasia.co.kr/article/2018090514164"
+     },
+     {
+      "title": "스타데일리뉴스 — 정규 2집 [i+em] 11/12 오후 6시 · 12곡 · 피처링 없음 · 첫 단독 'ARK' 21일 KBS아레나 전석 매진",
+      "link": "https://www.stardailynews.co.kr/news/articleView.html?idxno=602044"
+     },
+     {
+      "title": "톱스타뉴스 글로벌 10/29 — [i+em] 티저: 검은 형체와 마주 앉은 '자기대면' 콘셉트",
+      "link": "https://global.topstarnews.net/en/articleView.html?idxno=16262176"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/e1aab8104b79f825cccb.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d5729f7ca7a5f204973b.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ea831b1c4e162481a695.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a9fef1bc960bcc16344f.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f3c657847355229e1164.jpg"
+     ],
+     "covers": {
+      "B": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/4cfdf12ee7363e6fbbf1.jpg",
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/e1aab8104b79f825cccb.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T16:36+09:00",
+     "v": {
+      "A": "0aa86a27",
+      "B": "8374ad58"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "이번 회차 목표 인물해부 — 김하온 기사 17건 급상승 · AI 이름 '노아'가 2018 첫 EP와 이어지는 PLOT 만의 연결",
+    "at": "2026-11-20T16:35+09:00"
+   },
+   "corner_name": "입문 가이드",
+   "corner_no": 5
+  },
+  {
+   "source": {
+    "id": "claude:jennie-power-trip",
+    "account": "싱글리스트",
+    "url": "https://www.slist.kr/news/articleView.html?idxno=783455",
+    "image": null,
+    "head": "블랙핑크 제니, 'GTA6' OST 참여…신곡 'Power Trip' 공개",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T16:35+09:00",
+   "key": "184e710a",
+   "by": "claude",
+   "subjects": [
+    "제니"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "공식 발표보다 LP 뒷면 사진으로 먼저 알려진 제니의 새 곡 — 〈GTA 6〉 공식 앨범 34곡 중 유일한 한국 이름, 같은 주 첫 그래미 후보",
+    "why": "뉴스 급상승 제니(차트 28→17위) · 씬 밖 접점(게임) · 숏폼 목표 — 레이블 채널이라 위험 낮음"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T16:35+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n제니(@jennierubyjane)의 새 곡 'Power Trip'이 게임 〈GTA 6〉의 공식 앨범에 실렸습니다.\n\n록스타 게임즈와 애틀랜틱 레코즈가 함께 만든 [Grand Theft Auto VI: The Album] 34곡 가운데 21번 트랙인데요, 공식 발표 없이 발매 전 퍼진 LP 뒷면 사진으로 곡 목록이 먼저 알려졌고 빌보드와 롤링스톤이 그 목록이 맞다고 확인했습니다. 목록에 이름을 올린 한국 아티스트는 제니 한 명입니다.\n\n같은 주 제니는 테임 임팔라와 함께한 'Dracula'로 처음 그래미(@grammys) 후보에 올랐습니다. 게임과 앨범은 19일 나왔고, 'Power Trip' 오디오 영상은 오늘(20일) 애틀랜틱 레코즈 유튜브에 공개됐습니다.\n\n#PLOT #제니 #블랙핑크 #GTA6 #PowerTrip\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/887bf5a8c874787a6bd0.jpg\n제목: LP 뒷면에서 먼저|들킨 제니의 새 곡\n부제: 〈GTA 6〉 공식 앨범 'Power Trip'\n출처: @jennierubyjane\n",
+    "caption": "제니(@jennierubyjane)의 새 곡 'Power Trip'이 게임 〈GTA 6〉의 공식 앨범에 실렸습니다.\n\n록스타 게임즈와 애틀랜틱 레코즈가 함께 만든 [Grand Theft Auto VI: The Album] 34곡 가운데 21번 트랙인데요, 공식 발표 없이 발매 전 퍼진 LP 뒷면 사진으로 곡 목록이 먼저 알려졌고 빌보드와 롤링스톤이 그 목록이 맞다고 확인했습니다. 목록에 이름을 올린 한국 아티스트는 제니 한 명입니다.\n\n같은 주 제니는 테임 임팔라와 함께한 'Dracula'로 처음 그래미(@grammys) 후보에 올랐습니다. 게임과 앨범은 19일 나왔고, 'Power Trip' 오디오 영상은 오늘(20일) 애틀랜틱 레코즈 유튜브에 공개됐습니다.\n\n#PLOT #제니 #블랙핑크 #GTA6 #PowerTrip",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/887bf5a8c874787a6bd0.jpg",
+      "credit": "@jennierubyjane",
+      "from": "https://i.ibb.co/6RSTVhSR/755c450c48d7.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ab57b6672a0878d7e36e.jpg",
+      "credit": "@jennierubyjane",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/874775058_18420853870233629_849543770874042110_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=07hOTz2812oQ7kNvwFclU8a&_nc_oc=AdrAUGdV15onsUrLX5M_uKv4sMdwT08TqWweIXv8i8tlZCElYu3P4_1fi5myRZdkPS0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=a-hxnZ9uEBoVCKEv8goQtQ&oh=00_AQQA9YhYs59tG2GCoKL1QmiY-vg5F50d8TPAD3y1QK8UYQ&oe=6AE9B9EB"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ffd363de9a99e47aa858.jpg",
+      "credit": "@jennierubyjane",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/857022826_18419146147233629_3271963611042364224_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DwMsEvLEBIYQ7kNvwFkjzEO&_nc_oc=AdpBl3XAXc6_kyK3NOIaE1WR9zlwm1ku3gwz8HVZC3SV8cq9Z6_OyJ1jigof15SBKlM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=k5DrbijSNqPPojZYXZkqXQ&oh=00_AQPTI7qfwx38CzfBWgclwtAws18fhYAGxlquTed8EftbPA&oe=6ADD50A4"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/e09fc7c28bcdf8d2e2f8.jpg",
+      "credit": "@jennierubyjane",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/788966733_18410881474233629_1871794766605134265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IIO1Hc1vy14Q7kNvwEKnpmF&_nc_oc=AdrP3puNTS-WiylN-Dzt8t7uXIffeVBBYzPI0_9UHYAOKx8_FaefvCmvjgEKhCB1MCY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=PjDclHWNxgIc8eHB7nCPiw&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQmsH92kLMUAKpitHW6BUKtZvPSHoL332otrlpLBZH4uA&oe=6B0196F7"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/887bf5a8c874787a6bd0.jpg",
+      "credit": "@jennierubyjane",
+      "from": "https://i.ibb.co/6RSTVhSR/755c450c48d7.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ab57b6672a0878d7e36e.jpg",
+      "credit": "@jennierubyjane",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/874775058_18420853870233629_849543770874042110_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=07hOTz2812oQ7kNvwFclU8a&_nc_oc=AdrAUGdV15onsUrLX5M_uKv4sMdwT08TqWweIXv8i8tlZCElYu3P4_1fi5myRZdkPS0&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=a-hxnZ9uEBoVCKEv8goQtQ&oh=00_AQQA9YhYs59tG2GCoKL1QmiY-vg5F50d8TPAD3y1QK8UYQ&oe=6AE9B9EB"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ffd363de9a99e47aa858.jpg",
+      "credit": "@jennierubyjane",
+      "kind": "프로필",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/857022826_18419146147233629_3271963611042364224_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DwMsEvLEBIYQ7kNvwFkjzEO&_nc_oc=AdpBl3XAXc6_kyK3NOIaE1WR9zlwm1ku3gwz8HVZC3SV8cq9Z6_OyJ1jigof15SBKlM&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AL-3X8kEAAAA&_nc_gid=k5DrbijSNqPPojZYXZkqXQ&oh=00_AQPTI7qfwx38CzfBWgclwtAws18fhYAGxlquTed8EftbPA&oe=6ADD50A4"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/e09fc7c28bcdf8d2e2f8.jpg",
+      "credit": "@jennierubyjane",
+      "kind": "화보",
+      "from": "https://scontent-ssn1-1.cdninstagram.com/v/t51.82787-15/788966733_18410881474233629_1871794766605134265_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=IIO1Hc1vy14Q7kNvwEKnpmF&_nc_oc=AdrP3puNTS-WiylN-Dzt8t7uXIffeVBBYzPI0_9UHYAOKx8_FaefvCmvjgEKhCB1MCY&_nc_zt=23&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=AJ-jyNUEAAAA&_nc_gid=PjDclHWNxgIc8eHB7nCPiw&_nc_ct=RQosPBUKFQQAAAA&oh=00_AQQmsH92kLMUAKpitHW6BUKtZvPSHoL332otrlpLBZH4uA&oe=6B0196F7"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "LP 뒷면에서 먼저|들킨 제니의 새 곡",
+      "sub": "〈GTA 6〉 공식 앨범 'Power Trip'"
+     },
+     {
+      "key": "B",
+      "hook": "다른 안",
+      "title": "GTA 6 앨범 34곡 중|한국 이름은 제니뿐",
+      "sub": "'Power Trip' 20일 공개"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — Atlantic Records and JENNIE (2:20-2:52 · 32초)",
+     "오디오 영상이라 화면이 정지 이미지일 수 있음 · 게임 속 어느 라디오·장면에 나오는지는 미공개라 쓰지 않음"
+    ],
+    "research": [
+     {
+      "title": "싱글리스트 11/20 — 20일 공개 · [GTA VI: The Album] 수록 · 애틀랜틱 레코즈 유튜브 오디오 영상",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=783455"
+     },
+     {
+      "title": "톱스타뉴스 글로벌 11/18 — NME 16일 곡 목록 · LP 사진 유출 · 빌보드·롤링스톤 확인 · 21번/34곡 · 'only Korean artist named on the tracklist' · 'Dracula' 그래미 2개 부문 첫 후보",
+      "link": "https://global.topstarnews.net/en/articleView.html?idxno=16279470"
+     },
+     {
+      "title": "Martin Cid — 21번 · 34곡 · 'only Korean artist anywhere on its tracklist' · 게임·앨범 11/19 · 크레딧 미공개",
+      "link": "https://www.martincid.com/music-en/jennie-power-trip-gta-vi/"
+     },
+     {
+      "title": "Atlantic Records and JENNIE — 'Power Trip' 오디오 (2:22~2:51 후렴 'If you with me, then let's go' 자막 확인)",
+      "link": "https://www.youtube.com/watch?v=aCRr5rASMGY"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f25ef6c3bd1169077fb7.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f7aa5f53e0df7289db1b.jpg"
+     ],
+     "covers": {
+      "B": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/6e049df7065ef6a085d7.jpg",
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f25ef6c3bd1169077fb7.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T16:36+09:00",
+     "v": {
+      "A": "32211973",
+      "B": "c829b70d"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=aCRr5rASMGY\n구간: 2:20-2:52\n곡: 들킨 제니의 새 곡\n아티스트: LP 뒷면에서 먼저\n피처링:\n후킹: \n출처: Atlantic Records and JENNIE\n자막: 자동",
+    "caption": "제니(@jennierubyjane)의 'Power Trip'은 공식 발표보다 LP 뒷면 사진으로 먼저 알려졌습니다.\n\n게임 〈GTA 6〉의 공식 앨범 [Grand Theft Auto VI: The Album]이 나오기 전, 미리 풀린 LP 사진으로 34곡 목록이 퍼졌는데요, 빌보드와 롤링스톤이 확인한 그 목록의 21번이 제니였습니다. 목록 속 한국 아티스트는 제니 한 명입니다.\n\n게임과 앨범은 19일 나왔고, 오디오 영상은 오늘(20일) 공개됐습니다. 영상은 후렴 부분입니다.\n\n#PLOT #제니 #블랙핑크 #GTA6 #PowerTrip",
+    "hooks": {
+     "A": "LP 뒷면에서 먼저 / 들킨 제니의 새 곡",
+     "B": "GTA 6 앨범 34곡 중 / 한국 이름은 제니뿐",
+     "C": "게임보다 먼저 알려진 / 제니의 파워 트립"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=aCRr5rASMGY",
+     "credit": "Atlantic Records and JENNIE",
+     "range": [
+      140.0,
+      172.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — Atlantic Records and JENNIE (2:20-2:52 · 32초)",
+     "오디오 영상이라 화면이 정지 이미지일 수 있음 · 게임 속 어느 라디오·장면에 나오는지는 미공개라 쓰지 않음"
+    ],
+    "research": [
+     {
+      "title": "싱글리스트 11/20 — 20일 공개 · [GTA VI: The Album] 수록 · 애틀랜틱 레코즈 유튜브 오디오 영상",
+      "link": "https://www.slist.kr/news/articleView.html?idxno=783455"
+     },
+     {
+      "title": "톱스타뉴스 글로벌 11/18 — NME 16일 곡 목록 · LP 사진 유출 · 빌보드·롤링스톤 확인 · 21번/34곡 · 'only Korean artist named on the tracklist' · 'Dracula' 그래미 2개 부문 첫 후보",
+      "link": "https://global.topstarnews.net/en/articleView.html?idxno=16279470"
+     },
+     {
+      "title": "Martin Cid — 21번 · 34곡 · 'only Korean artist anywhere on its tracklist' · 게임·앨범 11/19 · 크레딧 미공개",
+      "link": "https://www.martincid.com/music-en/jennie-power-trip-gta-vi/"
+     },
+     {
+      "title": "Atlantic Records and JENNIE — 'Power Trip' 오디오 (2:22~2:51 후렴 'If you with me, then let's go' 자막 확인)",
+      "link": "https://www.youtube.com/watch?v=aCRr5rASMGY"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/aCRr5rASMGY/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/95c50e2f23720cd80fe3.jpg",
+     "key": "aCRr5rASMGY@140.0"
+    },
+    "px": {
+     "vid": "aCRr5rASMGY",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/8537cfb342d358da3d3c.mp4",
+     "off": 95.0,
+     "end": 197.0,
+     "full": 197.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-20T16:37+09:00"
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "숏폼 한 자리(레이블 채널 · 위험 낮음) · 씬 밖 접점(GTA 6) · 차트 28→17위로 뜨는 중",
+    "at": "2026-11-20T16:35+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:somi-ioi-outfit",
+    "account": "스포츠경향",
+    "url": "https://sports.khan.co.kr/article/202611201433003",
+    "image": null,
+    "head": "[스경X이슈] 전소미, 아이오아이 의상 논란 해명…\"혼자 튀고 싶지 않아\"",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T16:35+09:00",
+   "key": "7b4d0760",
+   "by": "claude",
+   "subjects": [
+    "전소미"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "MMA 아이오아이 무대에서 혼자 검은 옷 — 온라인 이야기에 전소미가 라이브로 직접 답한 말",
+    "why": "레이더 8.5 · 뉴스 급상승 아이오아이 10건 · 갈등·반응 결 · 당사자 발언이 기사 세 곳에 같음"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T16:35+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n전소미(@evelyndouma)가 아이오아이(@ioi_10th) 무대 의상을 둘러싼 이야기에 직접 답했습니다.\n\n데뷔 10주년을 맞아 다시 모인 아이오아이는 지난 14일 고척스카이돔에서 열린 '2026 MMA' 무대에 올랐는데요, 다른 멤버들이 흰 계열 옷을 입은 가운데 전소미 혼자 검은 옷을 입어 혼자 튄다는 말이 온라인에서 나왔습니다.\n\n전소미는 라이브 방송에서 \"나는 그 누구보다도 튀고 싶지 않다\"고 했습니다. 스타일리스트는 멤버 모두에게 똑같았고, 반짝이는 것 하나 없는 올블랙이라 오히려 덜 튄다고 생각했다는 설명인데요, 오히려 '나 너무 안 보이는 거 아니야?'라고 생각했다고 덧붙였습니다.\n\n#PLOT #전소미 #아이오아이 #IOI #MMA\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/76d3357cc0816c9f952a.jpg\n제목: 혼자 올블랙 이야기에|전소미가 직접 답했다\n부제: MMA 아이오아이 무대 의상\n출처: 스포츠경향\n",
+    "caption": "전소미(@evelyndouma)가 아이오아이(@ioi_10th) 무대 의상을 둘러싼 이야기에 직접 답했습니다.\n\n데뷔 10주년을 맞아 다시 모인 아이오아이는 지난 14일 고척스카이돔에서 열린 '2026 MMA' 무대에 올랐는데요, 다른 멤버들이 흰 계열 옷을 입은 가운데 전소미 혼자 검은 옷을 입어 혼자 튄다는 말이 온라인에서 나왔습니다.\n\n전소미는 라이브 방송에서 \"나는 그 누구보다도 튀고 싶지 않다\"고 했습니다. 스타일리스트는 멤버 모두에게 똑같았고, 반짝이는 것 하나 없는 올블랙이라 오히려 덜 튄다고 생각했다는 설명인데요, 오히려 '나 너무 안 보이는 거 아니야?'라고 생각했다고 덧붙였습니다.\n\n#PLOT #전소미 #아이오아이 #IOI #MMA",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/76d3357cc0816c9f952a.jpg",
+      "credit": "스포츠경향",
+      "from": "https://images.khan.co.kr/article/2026/11/20/news-p.v1.20261120.f8d9af8b528e4737b97aa0b7ce4e2df0_P1.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/904ae015ed109bc7ac4a.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/96/482/10296482.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ccccbd614fc083638dcd.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/120/31/013/12031013_20250811105903.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f6d5efef56d13e7bae48.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/118/82/038/11882038_20250707102557.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/76d3357cc0816c9f952a.jpg",
+      "credit": "스포츠경향",
+      "from": "https://images.khan.co.kr/article/2026/11/20/news-p.v1.20261120.f8d9af8b528e4737b97aa0b7ce4e2df0_P1.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/904ae015ed109bc7ac4a.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/96/482/10296482.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ccccbd614fc083638dcd.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/120/31/013/12031013_20250811105903.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/f6d5efef56d13e7bae48.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/118/82/038/11882038_20250707102557.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "혼자 올블랙 이야기에|전소미가 직접 답했다",
+      "sub": "MMA 아이오아이 무대 의상"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "어느 플랫폼 라이브였는지 기사에 없음 · 9인 체제는 기사 서술 — 무대 사진에서 인원 한 번 볼 것",
+     "표지 사진은 기사 사진 — 전소미 단독인지 미리보기에서 확인"
+    ],
+    "research": [
+     {
+      "title": "스포츠경향 11/20 — 14일 고척스카이돔 MMA2026 · 혼자 올블랙 · 라이브 방송 발언 다섯 줄",
+      "link": "https://sports.khan.co.kr/article/202611201433003"
+     },
+     {
+      "title": "텐아시아 11/20 — 같은 발언 '튀고 싶지 않아'",
+      "link": "https://www.tenasia.co.kr/article/2026112094824"
+     },
+     {
+      "title": "뉴스엔 11/20 — MMA 의상 논란 해명 '튀고 싶지 않다'",
+      "link": "https://www.newsen.com/news_view.php?uid=202611201539552410"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a574f9b5fa236fe9eca9.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/62a53dc7ee8e46eea951.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a574f9b5fa236fe9eca9.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T16:36+09:00",
+     "v": {
+      "A": "789aff63"
+     }
+    }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:anniv-24kmagic",
+    "account": "BroadwayWorld",
+    "url": "https://www.broadwayworld.com/bwwmusic/article/Grammy-Award-Winning-Singer-Bruno-Mars-Is-Back-With-24K-Magic-20161118",
+    "image": null,
+    "head": "Grammy Award-Winning Singer Bruno Mars Is Back With 24K Magic",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T16:35+09:00",
+   "key": "da8da773",
+   "by": "claude",
+   "subjects": [
+    "브루노 마스"
+   ],
+   "lane": "시리즈",
+   "editor": {
+    "grade": "A",
+    "kind": "시리즈",
+    "angle": "「그날의 앨범」 #3 — 2016년 11월 18일 브루노 마스 [24K Magic] 10주년: 아델 [21]에 졌던 6년 뒤, 그래미 본상 셋",
+    "why": "오늘 고정 연재 「그날의 앨범」 #3 · 이번 주(11/17~23) 10주년"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T16:35+09:00",
+   "corner": "anniv",
+   "card": {
+    "form": "[카테고리]\nFeature\n\n[캡션]\n브루노 마스의 [24K Magic]이 이번 주 발매 10주년을 맞았습니다.\n\n2016년 11월 18일 나온 세 번째 정규인데요, 2018년 제60회 그래미(@grammys)에서 올해의 앨범을 받았고 '24K Magic'과 'That's What I Like'가 각각 올해의 레코드와 올해의 노래를 가져갔습니다.\n\n2012년 첫 정규 [Doo-Wops & Hooligans]로 같은 자리에 올랐다가 아델의 [21]에 상을 내준 지 6년 만에, 본상 셋을 한 앨범으로 채운 셈입니다.\n\n다시 듣는다면 첫 곡 '24K Magic'부터 순서대로 들어 보세요.\n\n#PLOT #그날의앨범 #브루노마스 #24KMagic #그래미\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/91b7b0d763c2226974ba.jpg\n머리말: 그날의 앨범 #3\n제목: 그날의 앨범|2016년 11월 18일\n부제: 브루노 마스 [24K Magic] 10주년\n출처: \n\n[슬라이드]\n형식: 곡\n음원: Bruno Mars - 24K Magic\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0207fbdb389351d992e6.jpg\n소제목: 2016년 11월 18일\n본문: 브루노 마스의 세 번째 정규 [24K Magic]이 나왔습니다.||들어 볼 한 곡은 앨범의 문을 여는 타이틀곡 '24K Magic'. 여기서 시작해 순서대로 듣기를 권합니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Bruno Mars - 24K Magic\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/0207fbdb389351d992e6.jpg\n소제목: 그래미 본상 셋\n본문: 2018년 1월 제60회 그래미에서 이 앨범은 올해의 앨범을 받았습니다. 타이틀곡 '24K Magic'은 올해의 레코드, 'That's What I Like'는 올해의 노래였습니다.||2012년 첫 정규 [Doo-Wops & Hooligans]로 올해의 앨범 후보에 올랐다가 아델의 [21]에 상을 내준 지 6년 만이었습니다.\n출처: 멜론 · 소리 공식 MV\n",
+    "caption": "브루노 마스의 [24K Magic]이 이번 주 발매 10주년을 맞았습니다.\n\n2016년 11월 18일 나온 세 번째 정규인데요, 2018년 제60회 그래미(@grammys)에서 올해의 앨범을 받았고 '24K Magic'과 'That's What I Like'가 각각 올해의 레코드와 올해의 노래를 가져갔습니다.\n\n2012년 첫 정규 [Doo-Wops & Hooligans]로 같은 자리에 올랐다가 아델의 [21]에 상을 내준 지 6년 만에, 본상 셋을 한 앨범으로 채운 셈입니다.\n\n다시 듣는다면 첫 곡 '24K Magic'부터 순서대로 들어 보세요.\n\n#PLOT #그날의앨범 #브루노마스 #24KMagic #그래미",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/91b7b0d763c2226974ba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vk3_quaa/auto_pdb_마스_화보_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/91b7b0d763c2226974ba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8zjw5da6/auto_pdb_마스_화보_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c0820eddd10b6f7db38b.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_zdletokn/auto_pdb_마스_공식 프로필_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/9dc1901db27b6ddf1812.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_60rxcco4/auto_pdb_마스_티저_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/fd0284434e6d93ea7cee.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/103/55/876/10355876.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/60836d0bf238a3b79646.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/70/984/10270984.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/91b7b0d763c2226974ba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_vk3_quaa/auto_pdb_마스_화보_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/91b7b0d763c2226974ba.jpg",
+      "credit": "신뢰",
+      "kind": "화보",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_8zjw5da6/auto_pdb_마스_화보_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/c0820eddd10b6f7db38b.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_zdletokn/auto_pdb_마스_공식 프로필_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/9dc1901db27b6ddf1812.jpg",
+      "credit": "신뢰",
+      "kind": "프로필",
+      "from": "/var/folders/0n/h21p8ph95t51sm465_9tyxg00000gn/T/plot_pdb_60rxcco4/auto_pdb_마스_티저_.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/fd0284434e6d93ea7cee.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm2/album/images/103/55/876/10355876.jpg/melon/resize/1000/quality/90/optimize"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/60836d0bf238a3b79646.jpg",
+      "credit": "멜론",
+      "kind": "앨범커버",
+      "from": "https://cdnimg.melon.co.kr/cm/album/images/102/70/984/10270984.jpg/melon/resize/1000/quality/90/optimize"
+     }
+    ],
+    "shape": "맥락",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "그날의 앨범|2016년 11월 18일",
+      "sub": "브루노 마스 [24K Magic] 10주년"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] BroadwayWorld 사진은 403 으로 못 받음 — 표지에 들어간 건 [24K Magic] 시절이 아닌 최근 사진인데 출처가 'BroadwayWorld'로 붙음, 출처 바로잡거나 앨범 시절 사진으로 바꿀 것 · 사실(세 번째 정규·첫 곡·그래미 셋·2012 [21]에 짐)은 맞음 (Spin 원문은 403 이라 못 열어 봄)",
+     "'세 번째 정규'와 '첫 곡이 24K Magic'은 공식 디스코그래피로 한 번 볼 것",
+     "표지는 BroadwayWorld 기사 사진(앨범 커버 예상) — 미리보기에서 확인"
+    ],
+    "research": [
+     {
+      "title": "BroadwayWorld 2016/11/18 — 발매 당일 보도",
+      "link": "https://www.broadwayworld.com/bwwmusic/article/Grammy-Award-Winning-Singer-Bruno-Mars-Is-Back-With-24K-Magic-20161118"
+     },
+     {
+      "title": "Grammy.com — 2018 올해의 앨범 [24K Magic]",
+      "link": "https://www.grammy.com/awards/categories/album-of-the-year/2018/"
+     },
+     {
+      "title": "Spin 2018/01 — 올해의 앨범 첫 수상 · 2012 [Doo-Wops & Hooligans]가 아델 [21]에 짐 · 레코드('24K Magic')·노래('That's What I Like')",
+      "link": "https://www.spin.com/2018/01/grammys-2018-bruno-mars-24k-magic-album-year/?amp=1"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d09e9dc2b053f24acfc1.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/58d944e67391aa599faa.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d7c4e424be8638ba05cb.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/ef38c1382e4d5381a911.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/d09e9dc2b053f24acfc1.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T16:36+09:00",
+     "videos": {
+      "1": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/8af22e17887bad370930.mp4",
+      "2": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/76027df9581cc64cc542.mp4"
+     },
+     "vkey": "22820dde3f1b",
+     "v": {
+      "A": "2f876c27"
+     }
+    }
+   },
+   "corner_name": "그날의 앨범",
+   "corner_no": 3
   }
  ],
  "skipped": [],
@@ -1239,7 +2045,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 4,
-    "drafts": 1,
+    "drafts": 2,
     "why": "'만약 당신이 [장르]가 궁금하다면' — 정의·역사·입문 곡 3~5·지금의 국내 아티스트·다음에 들을 것"
    },
    {
@@ -1359,7 +2165,7 @@
     "need_today": 1,
     "day": null,
     "next_no": 3,
-    "drafts": 0,
+    "drafts": 1,
     "why": "오늘(이번 주) 발매 5·10·15·20·25·30주년 앨범을 다시 꺼낸다 — 그때 무슨 일이었고 지금 왜 다시 듣나"
    },
    {
@@ -1371,14 +2177,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-20T10:40+09:00"
+  "at": "2026-11-20T16:37+09:00"
  },
  "queue": {
-  "next": "2026-11-20T10:42+09:00",
+  "next": "2026-11-20T16:39+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-18T15:39+09:00"
@@ -1425,7 +2231,7 @@
     "to": 18,
     "at": "16:30",
     "mult": 1.98,
-    "median": 2.25,
+    "median": 2.24,
     "n": 12
    },
    {
