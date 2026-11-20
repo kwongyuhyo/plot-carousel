@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-20 15:04 KST",
+ "generated_at": "2026-11-20 19:04 KST",
  "weeks": [
   {
    "week": "2026-W40",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-19 22:04 KST"
+  "daily": "2026-11-20 15:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-20T14:53:06+09:00",
+  "fetched_at": "2026-11-20T19:04:52+09:00",
   "posts": [
    {
     "t": "2026-11-18T15:39+09:00",
@@ -2090,20 +2090,20 @@
  },
  "drafts": {
   "days": 28,
-  "drafts": 368,
+  "drafts": 373,
   "posted": 108,
-  "posts": 133,
+  "posts": 131,
   "rate": 0.29,
   "adopted_mult": 0.93,
-  "own_mult": 1.15,
+  "own_mult": 1.05,
   "lanes": {
    "시리즈": {
-    "drafts": 39,
+    "drafts": 40,
     "posted": 6,
     "mult": 0.78
    },
    "정보": {
-    "drafts": 248,
+    "drafts": 252,
     "posted": 92,
     "mult": 0.93
    },
@@ -2125,12 +2125,12 @@
   },
   "corners": {
    "anniv": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 2,
     "mult": 2.39
    },
    "news": {
-    "drafts": 171,
+    "drafts": 174,
     "posted": 69,
     "mult": 0.99
    },
@@ -2165,7 +2165,7 @@
     "mult": 1.05
    },
    "intro": {
-    "drafts": 28,
+    "drafts": 29,
     "posted": 3,
     "mult": 0.78
    },
@@ -2304,7 +2304,7 @@
   ]
  },
  "follow": {
-  "at": "2026-11-20T15:04+09:00",
+  "at": "2026-11-20T19:04+09:00",
   "d30": {
    "days": 30,
    "follows": 13.7,
