@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-19 22:04 KST",
+ "generated_at": "2026-11-20 15:04 KST",
  "weeks": [
   {
    "week": "2026-W40",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-19 19:05 KST"
+  "daily": "2026-11-19 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-19T21:32:27+09:00",
+  "fetched_at": "2026-11-20T14:53:06+09:00",
   "posts": [
    {
     "t": "2026-11-18T15:39+09:00",
@@ -2085,42 +2085,37 @@
     "t": "2026-10-30T19:51+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "고 신해철에게 은관문화훈장이 추서됐습니다."
-   },
-   {
-    "t": "2026-10-30T13:23+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 382,
-  "posted": 121,
-  "posts": 138,
-  "rate": 0.32,
-  "adopted_mult": 0.99,
-  "own_mult": 1.04,
+  "drafts": 368,
+  "posted": 108,
+  "posts": 133,
+  "rate": 0.29,
+  "adopted_mult": 0.93,
+  "own_mult": 1.15,
   "lanes": {
-   "정보": {
-    "drafts": 263,
-    "posted": 106,
-    "mult": 1.0
-   },
    "시리즈": {
-    "drafts": 40,
+    "drafts": 39,
     "posted": 6,
     "mult": 0.78
    },
+   "정보": {
+    "drafts": 248,
+    "posted": 92,
+    "mult": 0.93
+   },
    "클립": {
-    "drafts": 52,
+    "drafts": 54,
     "posted": 5,
     "mult": 1.15
    },
    "재미": {
     "drafts": 26,
-    "posted": 4,
-    "mult": 0.95
+    "posted": 5,
+    "mult": 0.92
    },
    "기타": {
     "drafts": 1,
@@ -2129,45 +2124,35 @@
    }
   },
   "corners": {
-   "news": {
-    "drafts": 185,
-    "posted": 81,
-    "mult": 1.03
-   },
-   "newalbums": {
-    "drafts": 8,
-    "posted": 4,
-    "mult": 2.32
-   },
    "anniv": {
-    "drafts": 29,
+    "drafts": 28,
     "posted": 2,
-    "mult": 2.0
+    "mult": 2.39
+   },
+   "news": {
+    "drafts": 171,
+    "posted": 69,
+    "mult": 0.99
    },
    "mal": {
-    "drafts": 50,
+    "drafts": 52,
     "posted": 5,
     "mult": 0.89
-   },
-   "followup": {
-    "drafts": 18,
-    "posted": 5,
-    "mult": 0.81
-   },
-   "tickets": {
-    "drafts": 9,
-    "posted": 6,
-    "mult": 0.77
    },
    "song": {
     "drafts": 13,
     "posted": 7,
     "mult": 0.85
    },
+   "followup": {
+    "drafts": 17,
+    "posted": 4,
+    "mult": 0.81
+   },
    "tteolgi": {
     "drafts": 12,
-    "posted": 1,
-    "mult": 0.87
+    "posted": 2,
+    "mult": 1.07
    },
    "spotlight": {
     "drafts": 7,
@@ -2180,9 +2165,19 @@
     "mult": 1.05
    },
    "intro": {
-    "drafts": 27,
+    "drafts": 28,
     "posted": 3,
     "mult": 0.78
+   },
+   "newalbums": {
+    "drafts": 8,
+    "posted": 4,
+    "mult": 2.32
+   },
+   "tickets": {
+    "drafts": 8,
+    "posted": 5,
+    "mult": 0.76
    },
    "listen": {
     "drafts": 4,
@@ -2309,12 +2304,12 @@
   ]
  },
  "follow": {
-  "at": "2026-11-19T22:04+09:00",
+  "at": "2026-11-20T15:04+09:00",
   "d30": {
    "days": 30,
-   "follows": 13.6,
+   "follows": 13.7,
    "unfollows": 14.3,
-   "net": -0.7
+   "net": -0.6
   },
   "weeks": [
    {
@@ -2368,16 +2363,16 @@
    },
    {
     "week": "2026-W47",
-    "follows": 25,
-    "unfollows": 22,
-    "net": 3,
-    "days": 2
+    "follows": 36,
+    "unfollows": 36,
+    "net": 0,
+    "days": 3
    }
   ],
   "feed": {
-   "n": 189,
-   "reach": 3671455,
-   "follows": 490,
+   "n": 188,
+   "reach": 3637564,
+   "follows": 491,
    "per1k": 0.13
   },
   "kinds": [
@@ -2392,15 +2387,15 @@
    {
     "kind": "기타",
     "n": 38,
-    "reach": 288665,
+    "reach": 288752,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
     "kind": "갈래 모름",
-    "n": 39,
-    "reach": 2253922,
+    "n": 38,
+    "reach": 2219701,
     "follows": 289,
     "per1k": 0.13,
     "visits1k": 3.4
@@ -2408,15 +2403,15 @@
    {
     "kind": "발매·신보",
     "n": 42,
-    "reach": 109047,
-    "follows": 12,
-    "per1k": 0.11,
-    "visits1k": 2.8
+    "reach": 109107,
+    "follows": 13,
+    "per1k": 0.12,
+    "visits1k": 2.9
    },
    {
     "kind": "갈등·반응",
     "n": 21,
-    "reach": 325909,
+    "reach": 326049,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2424,31 +2419,13 @@
    {
     "kind": "공연·페스티벌",
     "n": 32,
-    "reach": 140770,
+    "reach": 140799,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
    }
   ],
   "top": [
-   {
-    "date": "2026-09-20",
-    "sc": "DdgsbHKjziZ",
-    "follows": 15,
-    "reach": 102912,
-    "per1k": 0.15,
-    "kind": "",
-    "head": "양홍원이 문득 빅나티가 그리워진 모양입니다. 양홍원이 서울 동부구치소를 배경으로 최…"
-   },
-   {
-    "date": "2026-09-20",
-    "sc": "DdgsGSVj-qo",
-    "follows": 13,
-    "reach": 33494,
-    "per1k": 0.39,
-    "kind": "",
-    "head": "실리카겔이라는 이름은 껌통에서 나왔습니다. 대학 시절 팀명을 못 정하고 있을 때 김…"
-   },
    {
     "date": "2026-09-30",
     "sc": "Dd6HjL9D7Hm",
@@ -2484,12 +2461,30 @@
     "per1k": 0.09,
     "kind": "갈등·반응",
     "head": "양홍원이 오늘(18일) 원현주와 결혼식을 올렸습니다. 식을 앞두고 양홍원은 인스타그…"
+   },
+   {
+    "date": "2026-10-09",
+    "sc": "DeRU1FID52k",
+    "follows": 5,
+    "reach": 34338,
+    "per1k": 0.15,
+    "kind": "인물해부",
+    "head": "스윙스가 인디고의 새 멤버를 예고했습니다. 스윙스(@itsjustswings)가 인…"
+   },
+   {
+    "date": "2026-09-21",
+    "sc": "Ddi6_xRj80D",
+    "follows": 5,
+    "reach": 29568,
+    "per1k": 0.17,
+    "kind": "",
+    "head": "김감전(@ksmartboi)의 활동명은 열여섯 글자입니다. 본명은 김상민, 활동명은…"
    }
   ],
   "reels": {
-   "reels_per1k": 0.21,
-   "feed_per1k": 0.03,
-   "base": 14.3,
+   "reels_per1k": 0.19,
+   "feed_per1k": -0.01,
+   "base": 14.8,
    "days": 59
   },
   "spikes": [
