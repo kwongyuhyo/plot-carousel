@@ -341,11 +341,6 @@
      }
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "오늘(11/20) 킨텍스 개막 · 한국 현장 · 헤드라이너 이름을 애니 주제가로 풀어 덕후가 아니어도 읽히는 입문형 · 곡 장으로 소리까지",
-    "at": "2026-11-20T10:51+09:00"
-   },
    "corner_name": "듣는다면",
    "corner_no": 1
   },
@@ -523,13 +518,13 @@
      "at": "2026-11-20T10:55+09:00"
     }
    },
-   "pick": {
-    "rank": 2,
-    "why": "오늘(11/20) 음원 공개·영화 개봉 동시 · 오시이 마모루×다카미자와 도시히코×나카시마 미카 조합에 본인 말이 둘 · 선라이즈 공식 주제가 예고로 숏폼",
-    "at": "2026-11-20T10:51+09:00"
-   },
    "corner_name": "오늘의 노래",
-   "corner_no": 1
+   "corner_no": 1,
+   "pick": {
+    "rank": 3,
+    "why": "오전 초안 · 오늘 음원·개봉 당일이라 오늘 안에 올려야 쓸모가 있다",
+    "at": "2026-11-20T18:52+09:00"
+   }
   },
   {
    "source": {
@@ -695,10 +690,383 @@
      "at": "2026-11-20T10:55+09:00"
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:mahoyo-supercell-yoru-to-ao",
+    "account": "덴파미니코게이머",
+    "url": "https://news.denfaminicogamer.jp/news/2611202q",
+    "image": null,
+    "head": "劇場アニメ『魔法使いの夜』が本日11月20日より全国公開",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T18:52+09:00",
+   "key": "afb149b0",
+   "by": "claude",
+   "subjects": [
+    "supercell",
+    "야나기 나기",
+    "마법사의 밤"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "오늘 일본 개봉한 ufotable 〈마법사의 밤〉 주제가 '夜と青' — ryo 가 '잠든 채였을 것'이라던 supercell 의 재가동 첫 곡, 야나기 나기가 약 15년 만에 부른다 (오전에 버린 '개봉 소식'과 다른 각도: 사람과 곡)",
+    "why": "덴파미니코게이머(11/20) 오늘 개봉·주제가·11/21 배신 · 덴파미니코게이머(9/30)·coki 재가동과 ryo 의 말 · 리얼사운드(10/20) 약 15년 만, 2012년 PC판에 이은 주제가 · 전격온라인 발매 일정"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T18:52+09:00",
+   "corner": "song",
+   "card": {
+    "form": "[카테고리]\nNew Release!\n\n[캡션]\nufotable 이 만든 극장판 〈마법사의 밤〉(魔法使いの夜)이 오늘 일본에서 개봉했습니다.\n\n주제가 '夜と青'(밤과 파랑)는 ryo 가 9월 말 supercell 재가동을 알리며 내놓은 곡인데요, 노래는 〈바케모노가타리〉 엔딩 '君の知らない物語'를 불렀던 야나기 나기가 맡았습니다. 그가 supercell 신곡을 부르는 건 약 15년 만입니다. ryo 는 이런 기회가 없었다면 supercell 은 아마 잠든 채였을 거라고 했습니다.\n\n원작은 2012년 TYPE-MOON 이 낸 PC 비주얼 노벨로, 그때도 supercell 이 주제가를 맡았습니다. 14년 만에 같은 작품으로 다시 깨어난 셈입니다.\n\n'夜と青'는 내일(11월 21일) 음원으로 먼저 나오고, 애니판 CD 는 11월 25일 나옵니다.\n\n#암낫오타쿠 #마법사의밤 #supercell #야나기나기 #ufotable #TYPEMOON\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/69d7070af98da91205c2.jpg\n제목: 〈마법사의 밤〉으로|supercell 재가동\n부제: '夜と青' · 노래 야나기 나기 · 작사·작곡 ryo\n출처: 덴파미니코게이머\n",
+    "caption": "ufotable 이 만든 극장판 〈마법사의 밤〉(魔法使いの夜)이 오늘 일본에서 개봉했습니다.\n\n주제가 '夜と青'(밤과 파랑)는 ryo 가 9월 말 supercell 재가동을 알리며 내놓은 곡인데요, 노래는 〈바케모노가타리〉 엔딩 '君の知らない物語'를 불렀던 야나기 나기가 맡았습니다. 그가 supercell 신곡을 부르는 건 약 15년 만입니다. ryo 는 이런 기회가 없었다면 supercell 은 아마 잠든 채였을 거라고 했습니다.\n\n원작은 2012년 TYPE-MOON 이 낸 PC 비주얼 노벨로, 그때도 supercell 이 주제가를 맡았습니다. 14년 만에 같은 작품으로 다시 깨어난 셈입니다.\n\n'夜と青'는 내일(11월 21일) 음원으로 먼저 나오고, 애니판 CD 는 11월 25일 나옵니다.\n\n#암낫오타쿠 #마법사의밤 #supercell #야나기나기 #ufotable #TYPEMOON",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/69d7070af98da91205c2.jpg",
+      "credit": "덴파미니코게이머",
+      "from": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/HXbP2saaEAAfibp.jpeg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/31f937a9700c18c87aa1.jpg",
+      "credit": "전격온라인",
+      "from": "https://cimg.kgl-systems.io/camion/files/92582/ogp_PoiA.jpg?x=1280"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/69d7070af98da91205c2.jpg",
+      "credit": "덴파미니코게이머",
+      "from": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/HXbP2saaEAAfibp.jpeg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/31f937a9700c18c87aa1.jpg",
+      "credit": "전격온라인",
+      "from": "https://cimg.kgl-systems.io/camion/files/92582/ogp_PoiA.jpg?x=1280"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "〈마법사의 밤〉으로|supercell 재가동",
+      "sub": "'夜と青' · 노래 야나기 나기 · 작사·작곡 ryo"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — アニプレックス チャンネル (최종 예고 96초 · 자막이 없어 주제가 구간을 못 짚음 — 0:58-1:26 이 노래 구간인지 듣고 옮길 것)",
+     "한국 개봉은 확인 못 해 쓰지 않음 · 한국어 제목 '마법사의 밤'은 원제를 옮긴 것"
+    ],
+    "research": [
+     {
+      "title": "덴파미니코게이머 — 11/20 전국 개봉·IMAX, 제작 ufotable, 감독 다케우치 마사시, 원작 2012년 TYPE-MOON PC 노벨(시나리오 나스 키노코), 주제가 supercell '夜と青' 노래 야나기 나기·작사작곡편곡 ryo, 11/21 배신 (11/20)",
+      "link": "https://news.denfaminicogamer.jp/news/2611202q"
+     },
+     {
+      "title": "덴파미니코게이머 — 9/30 ryo 가 X·note 로 재가동 발표, 야나기 나기가 supercell 신곡을 부르는 건 'Today Is A Beautiful Day' 이후 약 15년 만, ryo 「こういう機会がなかったら、たぶんsupercellは眠ったままだったと思う」 (9/30)",
+      "link": "https://news.denfaminicogamer.jp/news/2609303g"
+     },
+     {
+      "title": "coki — 「眠ったままだった」supercell 을 다시 움직인 한 곡",
+      "link": "https://coki.jp/?p=94269"
+     },
+     {
+      "title": "리얼사운드 — 약 15년 만의 타그, 2012년 PC 게임판에 이은 주제가, '君の知らない物語'(〈化物語〉 ED) (10/20)",
+      "link": "https://realsound.jp/2026/10/post-2553691.html"
+     },
+     {
+      "title": "전격온라인 — 11/21 단곡 배신, 11/25 애니판 CD, 12/9 supercell 판 CD (10/30)",
+      "link": "https://dengekionline.com/article/202610/92582"
+     },
+     {
+      "title": "アニプレックス チャンネル — 『魔法使いの夜』最終予告／主題歌：supercell「夜と青」 (96초)",
+      "link": "https://www.youtube.com/watch?v=k1jyM2kSBzA"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8a4857ef8db2b848ac81.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b06865b893f060dc057d.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8a4857ef8db2b848ac81.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T18:52+09:00",
+     "v": {
+      "A": "14c79454"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=k1jyM2kSBzA\n구간: 0:58-1:26\n곡: 부른 supercell 신곡\n아티스트: 야나기 나기가 약 15년 만에\n피처링:\n후킹: \n출처: アニプレックス チャンネル",
+    "caption": "오늘 일본에서 개봉한 극장판 〈마법사의 밤〉(魔法使いの夜) 최종 예고입니다. 주제가는 supercell 의 '夜と青'(밤과 파랑)입니다.\n\nryo 가 재가동을 알리며 내놓은 곡인데요, 야나기 나기가 약 15년 만에 supercell 신곡을 불렀습니다.\n\n음원은 내일(11월 21일) 나옵니다. 영상은 애니플렉스 공식 채널의 예고편입니다.\n\n#암낫오타쿠 #마법사의밤 #supercell #야나기나기 #애니송",
+    "hooks": {
+     "A": "야나기 나기가 약 15년 만에 / 부른 supercell 신곡",
+     "B": "〈마법사의 밤〉 극장판에 / supercell 이 돌아왔다",
+     "C": "잠들었던 supercell 이 / 다시 깨어난 곡"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=k1jyM2kSBzA",
+     "credit": "アニプレックス チャンネル",
+     "range": [
+      58.0,
+      86.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "클립 위험: 낮음 — アニプレックス チャンネル (최종 예고 96초 · 자막이 없어 주제가 구간을 못 짚음 — 0:58-1:26 이 노래 구간인지 듣고 옮길 것)",
+     "한국 개봉은 확인 못 해 쓰지 않음 · 한국어 제목 '마법사의 밤'은 원제를 옮긴 것"
+    ],
+    "research": [
+     {
+      "title": "덴파미니코게이머 — 11/20 전국 개봉·IMAX, 제작 ufotable, 감독 다케우치 마사시, 원작 2012년 TYPE-MOON PC 노벨(시나리오 나스 키노코), 주제가 supercell '夜と青' 노래 야나기 나기·작사작곡편곡 ryo, 11/21 배신 (11/20)",
+      "link": "https://news.denfaminicogamer.jp/news/2611202q"
+     },
+     {
+      "title": "덴파미니코게이머 — 9/30 ryo 가 X·note 로 재가동 발표, 야나기 나기가 supercell 신곡을 부르는 건 'Today Is A Beautiful Day' 이후 약 15년 만, ryo 「こういう機会がなかったら、たぶんsupercellは眠ったままだったと思う」 (9/30)",
+      "link": "https://news.denfaminicogamer.jp/news/2609303g"
+     },
+     {
+      "title": "coki — 「眠ったままだった」supercell 을 다시 움직인 한 곡",
+      "link": "https://coki.jp/?p=94269"
+     },
+     {
+      "title": "리얼사운드 — 약 15년 만의 타그, 2012년 PC 게임판에 이은 주제가, '君の知らない物語'(〈化物語〉 ED) (10/20)",
+      "link": "https://realsound.jp/2026/10/post-2553691.html"
+     },
+     {
+      "title": "전격온라인 — 11/21 단곡 배신, 11/25 애니판 CD, 12/9 supercell 판 CD (10/30)",
+      "link": "https://dengekionline.com/article/202610/92582"
+     },
+     {
+      "title": "アニプレックス チャンネル — 『魔法使いの夜』最終予告／主題歌：supercell「夜と青」 (96초)",
+      "link": "https://www.youtube.com/watch?v=k1jyM2kSBzA"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/k1jyM2kSBzA/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/259af5c387c1542b4217.jpg",
+     "key": "k1jyM2kSBzA@58.0"
+    },
+    "px": {
+     "vid": "k1jyM2kSBzA",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/bcc049aad98b90bdd8a6.mp4",
+     "off": 13.0,
+     "end": 95.0,
+     "full": 95.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-20T18:54+09:00"
+    }
+   },
    "pick": {
-    "rank": 3,
-    "why": "어제(11/19) 공개된 애니 MV · 게임 원작이라 한국 게이머에게도 닿는 이름 · 오프닝 amazarashi 가 오늘 원더리벳에 서는 연결 · 아티스트 공식 채널로 숏폼",
-    "at": "2026-11-20T10:51+09:00"
+    "rank": 1,
+    "why": "오늘(11/20) 개봉·내일 음원 · '君の知らない物語'의 supercell×야나기 나기가 약 15년 만에 다시 만난 곡 · ryo 본인 말 · 애니플렉스 공식 예고로 숏폼",
+    "at": "2026-11-20T18:52+09:00"
+   },
+   "corner_name": "오늘의 노래",
+   "corner_no": 2
+  },
+  {
+   "source": {
+    "id": "claude:anno-godzilla-cameo",
+    "account": "에이가닷컴",
+    "url": "https://eiga.com/news/20261120/11/",
+    "image": null,
+    "head": "庵野秀明「ゴジラ－0.0」にカメオ出演！ 神木隆之介＆浜辺美波とのオフショット初披露",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T18:52+09:00",
+   "key": "53ce123c",
+   "by": "claude",
+   "subjects": [
+    "안노 히데아키",
+    "庵野秀明",
+    "고질라 -0.0"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "〈신 고질라〉 안노 히데아키가 야마자키 다카시 〈고질라 -0.0〉에 카메오 — 오늘 공식 발표, 본인 말 '거대 로봇 애니와 괴수 영화가 이만큼 메이저가 된 시대'",
+    "why": "에이가닷컴(11/20) 코멘트 전문·가미키 류노스케·하마베 미나미와의 오프숏 · 아니메!아니메!(11/20) 같은 코멘트·엔딩 크레디트 · 영화나탈리·오리콘·MANTANWEB 같은 날"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T18:52+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈신 고질라〉의 안노 히데아키가 야마자키 다카시 감독의 〈고질라 -0.0〉(ゴジラ-0.0)에 카메오로 나왔다는 사실이 오늘 공식 발표됐습니다.\n\n개봉 뒤 관객 사이에서 먼저 이야기가 돌던 출연인데요, 그와 함께 주연 가미키 류노스케·하마베 미나미와 찍은 촬영장 사진도 공개됐습니다. 안노는 영화를 두고 모든 것을 쏟아부은 대오락 괴수 영화라며 '훌륭합니다'라고 했습니다.\n\n그는 거대 로봇 애니와 일본 괴수 영화가 이만큼 메이저가 된 시대가 와서 감개무량하다고 했고, 개인적으로는 엔딩에 자기 이름이 실린 게 기뻤다고 덧붙였습니다.\n\n영화는 11월 3일 일본에서 개봉했습니다.\n\n#암낫오타쿠 #안노히데아키 #고질라 #야마자키다카시 #신고질라\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7837bca6f21397fef2b4.jpg\n제목: 안노 히데아키가|고질라 영화에 나왔다\n부제: 〈신 고질라〉 감독의 카메오 · '훌륭합니다'\n출처: 에이가닷컴\n",
+    "caption": "〈신 고질라〉의 안노 히데아키가 야마자키 다카시 감독의 〈고질라 -0.0〉(ゴジラ-0.0)에 카메오로 나왔다는 사실이 오늘 공식 발표됐습니다.\n\n개봉 뒤 관객 사이에서 먼저 이야기가 돌던 출연인데요, 그와 함께 주연 가미키 류노스케·하마베 미나미와 찍은 촬영장 사진도 공개됐습니다. 안노는 영화를 두고 모든 것을 쏟아부은 대오락 괴수 영화라며 '훌륭합니다'라고 했습니다.\n\n그는 거대 로봇 애니와 일본 괴수 영화가 이만큼 메이저가 된 시대가 와서 감개무량하다고 했고, 개인적으로는 엔딩에 자기 이름이 실린 게 기뻤다고 덧붙였습니다.\n\n영화는 11월 3일 일본에서 개봉했습니다.\n\n#암낫오타쿠 #안노히데아키 #고질라 #야마자키다카시 #신고질라",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7837bca6f21397fef2b4.jpg",
+      "credit": "에이가닷컴",
+      "from": "https://media.eiga.com/images/buzz/130713/9cb6b8236f117bd8.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7837bca6f21397fef2b4.jpg",
+      "credit": "에이가닷컴",
+      "from": "https://media.eiga.com/images/buzz/130713/9cb6b8236f117bd8.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "안노 히데아키가|고질라 영화에 나왔다",
+      "sub": "〈신 고질라〉 감독의 카메오 · '훌륭합니다'"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "출연 장면은 공식적으로 밝히지 않아 쓰지 않음 · 코멘트 앞부분은 영화 속 괴수를 말해 스포일러가 될 수 있어 옮기지 않음",
+     "한국 개봉·한국어 정식 제목은 확인 못 해 〈고질라 -0.0〉으로 둠"
+    ],
+    "research": [
+     {
+      "title": "에이가닷컴 — 안노 코멘트 「巨大ロボットアニメ、そして日本の怪獣映画がここまでメジャー化する時代が来たことに、今は感無量です」「エンディングに自分の名前が載っているのが、嬉しかったです」, 가미키 류노스케·하마베 미나미와 오프숏 (11/20)",
+      "link": "https://eiga.com/news/20261120/11/"
+     },
+     {
+      "title": "아니메!아니메! — 11/20 정식 발표, 개봉 뒤 팬 사이에 화제, 「大娯楽怪獣映画でした。見事です」, 11/3 개봉 (11/20)",
+      "link": "https://animeanime.jp/article/2026/11/20/104950.html"
+     },
+     {
+      "title": "영화나탈리 — 庵野秀明が映画「ゴジラ-0.0」にカメオ出演、エンドロールの名前に「嬉しかった」",
+      "link": "https://natalie.mu/eiga/news/698860"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e11c210e0c17c4b99dc0.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/459d46e9af98bece72cb.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e11c210e0c17c4b99dc0.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T18:52+09:00",
+     "v": {
+      "A": "3fa01e8d"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "오늘(11/20) 낮 정식 발표 · 에이가닷컴·나탈리·오리콘 동시 · 〈에반게리온〉 감독이라 덕후가 아니어도 이름이 닿고 본인 말이 셋",
+    "at": "2026-11-20T18:52+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:hayashi-yuki-medalist",
+    "account": "아니메!아니메!",
+    "url": "https://animeanime.jp/article/2026/11/20/104961.html",
+    "image": null,
+    "head": "【インタビュー】「ヒロアカ」「ハイキュー!!」「メダリスト」を彩る劇伴はどう生まれる？ 作曲家・林ゆうきが語る制作の裏側",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-20T18:52+09:00",
+   "key": "ebc73bb4",
+   "by": "claude",
+   "subjects": [
+    "하야시 유키",
+    "林ゆうき",
+    "메달리스트"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "남자 신체조 선수 출신 작곡가 하야시 유키가 말한 〈메달리스트〉 — 경기하던 환경과 겹쳐 곡을 쓰다 울 때가 있다, 이노리의 연기곡은 반생이 없었다면 못 만들었다",
+    "why": "아니메!아니메!(11/20) 인터뷰 본인 말 · 신체조 선수 이력은 홋카이도신문·공모가이드 · 12/27 '劇伴食堂 肆' 도쿄 국제포럼 홀 C 는 교도통신 PR 와이어·아니메!아니메!"
+   },
+   "added": "claude",
+   "added_at": "2026-11-20T18:52+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈하이큐!!〉와 〈나의 히어로 아카데미아〉의 음악을 만든 하야시 유키는 원래 남자 신체조 선수였습니다.\n\n고등학교에서 시작해 대학까지 경기를 이어 갔고, 연기에 쓸 반주곡을 만들다 작곡가가 됐는데요, 그는 피겨스케이팅 애니 〈메달리스트〉를 두고 자신이 경기하던 환경과 닮은 데가 많아 곡을 쓰다 울 때가 있다고 했습니다. 꿈이 한 번 꺾였다 다시 나아가는 코치 쓰카사의 이야기도 늦게 음악을 시작한 자신과 겹친다고 했습니다.\n\n1기 마지막을 장식한 이노리의 연기곡에 대해서는 그냥 애착이 있다는 말로는 모자랄 만큼, 지금까지의 반생이 없었다면 만들 수 없었던 곡이라고 했습니다.\n\n그의 곡을 생연주로 듣는 공연 '劇伴食堂 肆'는 12월 27일 도쿄 국제포럼 홀 C 에서 열립니다.\n\n#암낫오타쿠 #하야시유키 #메달리스트 #하이큐 #히로아카\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d0f2322e4cb354901b31.jpg\n제목: 체조 선수였던 작곡가,|〈메달리스트〉를 쓰다\n부제: 〈하이큐!!〉〈히로아카〉의 하야시 유키\n출처: 교도통신 PR 와이어\n",
+    "caption": "〈하이큐!!〉와 〈나의 히어로 아카데미아〉의 음악을 만든 하야시 유키는 원래 남자 신체조 선수였습니다.\n\n고등학교에서 시작해 대학까지 경기를 이어 갔고, 연기에 쓸 반주곡을 만들다 작곡가가 됐는데요, 그는 피겨스케이팅 애니 〈메달리스트〉를 두고 자신이 경기하던 환경과 닮은 데가 많아 곡을 쓰다 울 때가 있다고 했습니다. 꿈이 한 번 꺾였다 다시 나아가는 코치 쓰카사의 이야기도 늦게 음악을 시작한 자신과 겹친다고 했습니다.\n\n1기 마지막을 장식한 이노리의 연기곡에 대해서는 그냥 애착이 있다는 말로는 모자랄 만큼, 지금까지의 반생이 없었다면 만들 수 없었던 곡이라고 했습니다.\n\n그의 곡을 생연주로 듣는 공연 '劇伴食堂 肆'는 12월 27일 도쿄 국제포럼 홀 C 에서 열립니다.\n\n#암낫오타쿠 #하야시유키 #메달리스트 #하이큐 #히로아카",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d0f2322e4cb354901b31.jpg",
+      "credit": "교도통신 PR 와이어",
+      "from": "https://kyodonewsprwire.jp/prwfile/release/M103855/202605289877/_prw_PI4lg_kHgtup33.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d0f2322e4cb354901b31.jpg",
+      "credit": "교도통신 PR 와이어",
+      "from": "https://kyodonewsprwire.jp/prwfile/release/M103855/202605289877/_prw_PI4lg_kHgtup33.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "체조 선수였던 작곡가,|〈메달리스트〉를 쓰다",
+      "sub": "〈하이큐!!〉〈히로아카〉의 하야시 유키"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 홋카이도신문 링크가 404 — 선수 이력은 아니메!아니메! 인터뷰 본인 말로만 확인됨, 이 기사 사진은 못 씀",
+     "캐릭터 이름 쓰카사·이노리는 일본어 독음 그대로 — 한국 정식 표기가 다르면 맞출 것",
+     "사진은 '劇伴食堂 肆' 공연 공식 비주얼(교도통신 PR 와이어) — 위쪽 이름 글씨가 로고와 조금 겹침"
+    ],
+    "research": [
+     {
+      "title": "아니메!아니메! — 고교에서 남자 신체조를 만나 대학까지, 반주곡 제작에서 작곡가로, 사와노 히로유키에게 데모를 보낸 일이 전환점, 〈메달리스트〉 작곡 중 울 때가 있고 「健康的には作れない」, 쓰카사의 이야기와 늦게 음악을 시작한 자신이 겹침, 이노리 연기곡은 반생 없이는 못 만들었다, 12/27 劇伴食堂 肆 (11/20)",
+      "link": "https://animeanime.jp/article/2026/11/20/104961.html"
+     },
+     {
+      "title": "홋카이도신문 — 하야시 유키, 남자 신체조 선수 출신 작곡가",
+      "link": "https://www.hokkaido-np.co.jp/article/1318077/"
+     },
+     {
+      "title": "교도통신 PR 와이어 — '林ゆうき〜劇伴食堂 肆' 2026년 12월 27일 도쿄 국제포럼 홀 C, 〈히로아카〉〈하이큐!!〉〈메달리스트〉〈SAKAMOTO DAYS〉",
+      "link": "https://kyodonewsprwire.jp/index.php/release/202605289877"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3711fecad446e2fb9d8a.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/cb882f86409836ac38ac.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3711fecad446e2fb9d8a.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-20T18:52+09:00",
+     "v": {
+      "A": "41ce45f7"
+     }
+    }
    },
    "corner_name": "소식"
   }
@@ -767,7 +1135,7 @@
     "need_today": 3,
     "day": null,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 2,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -875,14 +1243,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 1,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-20T10:55+09:00"
+  "at": "2026-11-20T18:54+09:00"
  },
  "queue": {
-  "next": "2026-11-20T10:57+09:00",
+  "next": "2026-11-20T18:56+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
