@@ -1651,7 +1651,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=aCRr5rASMGY\n구간: 2:20-2:52\n곡: 들킨 제니의 새 곡\n아티스트: LP 뒷면에서 먼저\n피처링:\n후킹: \n출처: Atlantic Records and JENNIE\n자막: 자동",
+    "form": "[영상]\n카테고리: Feature\nURL: https://www.youtube.com/watch?v=aCRr5rASMGY\n구간: 2:20-2:52\n곡: 들킨 제니의 새 곡\n아티스트: LP 뒷면에서 먼저\n피처링:\n후킹: \n출처: Atlantic Records and JENNIE\n자막: 받음 st:1795160358993-184e710a",
     "caption": "제니(@jennierubyjane)의 'Power Trip'은 공식 발표보다 LP 뒷면 사진으로 먼저 알려졌습니다.\n\n게임 〈GTA 6〉의 공식 앨범 [Grand Theft Auto VI: The Album]이 나오기 전, 미리 풀린 LP 사진으로 34곡 목록이 퍼졌는데요, 빌보드와 롤링스톤이 확인한 그 목록의 21번이 제니였습니다. 목록 속 한국 아티스트는 제니 한 명입니다.\n\n게임과 앨범은 19일 나왔고, 오디오 영상은 오늘(20일) 공개됐습니다. 영상은 후렴 부분입니다.\n\n#PLOT #제니 #블랙핑크 #GTA6 #PowerTrip",
     "hooks": {
      "A": "LP 뒷면에서 먼저 / 들킨 제니의 새 곡",
@@ -1706,8 +1706,44 @@
      "full": 197.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-20T16:37+09:00"
+     "status": "ready",
+     "rid": "st:1795160358993-184e710a",
+     "n": 6,
+     "note": "자막 6줄 (받아쓰기 · 확인할 줄 4)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 2.9,
+       "text": "! everybody know\njust you and me"
+      },
+      {
+       "start": 2.9,
+       "end": 9.96,
+       "text": "let's go get it\ncash live in my city"
+      },
+      {
+       "start": 9.96,
+       "end": 13.78,
+       "text": "there is no limit\nlane switchin"
+      },
+      {
+       "start": 13.78,
+       "end": 18.7,
+       "text": "trippin if you and\nme let's go get"
+      },
+      {
+       "start": 18.7,
+       "end": 25.22,
+       "text": "it cash lippin my\ncity there is no"
+      },
+      {
+       "start": 25.22,
+       "end": 29.84,
+       "text": "limit lane\n이 시각 세계였습니다"
+      }
+     ],
+     "at": "2026-11-20T16:39+09:00"
     }
    },
    "pick": {
@@ -2181,10 +2217,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-20T16:37+09:00"
+  "at": "2026-11-20T16:39+09:00"
  },
  "queue": {
-  "next": "2026-11-20T16:39+09:00",
+  "next": "2026-11-20T16:41+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-18T15:39+09:00"
