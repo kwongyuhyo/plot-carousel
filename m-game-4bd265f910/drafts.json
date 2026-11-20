@@ -1,50 +1,51 @@
 {
  "schema": 1,
- "date": "2026-11-19",
- "generated_at": "2026-11-19 11:00 KST",
+ "date": "2026-11-20",
+ "generated_at": "2026-11-20 10:59 KST",
  "items": [
   {
    "source": {
-    "id": "claude:gta6-metacritic-99",
-    "account": "메타크리틱",
-    "url": "https://www.metacritic.com/game/grand-theft-auto-vi/",
+    "id": "claude:team-ninja-gcon-fair",
+    "account": "인벤",
+    "url": "https://www.inven.co.kr/webzine/news/?news=323621",
     "image": null,
-    "head": "Grand Theft Auto VI — Metascore 99",
+    "head": "[GCON] '인왕'과 '와룡', 어려워도 계속 도전하게 만드는 이유",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-19T11:05+09:00",
-   "key": "12d9cfea",
+   "made_at": "2026-11-20T11:09+09:00",
+   "key": "fc40176d",
    "by": "claude",
    "subjects": [
-    "GTA 6"
+    "팀 닌자",
+    "와룡 2: 윙스 오브 엠버"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "출시 당일 〈GTA 6〉가 메타크리틱 99점 — 1998년 〈시간의 오카리나〉 이후 28년 동안 아무도 넘지 못한 최고점과 동률, 그 오카리나의 리메이크와 올해의 게임 후보로 맞붙는다",
-    "why": "99점은 메타크리틱 게임 페이지(직접 확인 · Universal Acclaim)·디지털데일리('메타크리틱 역사상 최고 기록과 동률')·게임플·Inven Global · GTA4 98·GTA5 97 은 디지털데일리·게임플 · 28년 동안 더 높은 점수 없음은 디지털데일리 · 한국 시간 19일 0시는 게임플·CBS('midnight local time') · 가격·한국어 자막·19세는 PS 스토어 한국 상품 페이지 · 오카리나 리메이크 올해의 게임 후보는 11/18 TGA 초안 출처"
+    "angle": "〈인왕 3〉·〈와룡 2〉 팀 닌자 프로듀서 둘이 지스타 G-CON 에서 꺼낸 말 — 어려운 게임과 불합리한 게임은 다르다, 강한 공격일수록 예비 동작을 크게",
+    "why": "강연(11/19 부산 벡스코 G-CON)과 연사 시바타 코헤이(인왕 3)·히라야마 마사카즈(와룡 2)는 인벤 강연기(11/19)·인벤 인터뷰·테크M(11/20)·디스이즈게임 검색 요약 · 예비 동작·패턴을 익히면 대응하는 페어플레이 설명은 인벤 강연기와 디스이즈게임 요약 · 히라야마 '불합리하다고 느끼게 해서는 안 된다'는 테크M 직접 인용과 디스이즈게임 요약 · 와룡 2 2027년 3월 4일·플랫폼은 스팀 상점·RPG Site·게임메카(9월) · 스팀 79,800원은 스팀 상점·게임메카 검색 요약"
    },
    "added": "claude",
-   "added_at": "2026-11-19T11:05+09:00",
+   "added_at": "2026-11-20T11:09+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉가 메타크리틱에서 99점을 받았습니다.\n\n99점은 1998년 〈젤다의 전설 시간의 오카리나〉가 받은 뒤 28년 동안 어떤 게임도 넘지 못한 메타크리틱 최고점인데요, 〈GTA 4〉의 98점과 〈GTA 5〉의 97점을 넘어 시리즈 최고점도 새로 썼습니다. 그 오카리나의 리메이크는 올해 더 게임 어워드에서 〈GTA 6〉와 함께 올해의 게임 후보에 올라 있습니다.\n\n〈GTA 5〉 이후 13년 만의 시리즈 신작은 오늘 0시부터 바이스 시티의 문을 열었습니다.\n\n11월 19일 0시(한국 시간) 출시 · 지역마다 현지 시각 자정 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #메타크리틱 #시간의오카리나 #락스타게임즈\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg\n제목: GTA 6, 메타크리틱|오카리나와 같은 99점\n부제: 오늘 0시 출시\n출처: Rockstar Games\n",
-    "caption": "〈GTA 6〉가 메타크리틱에서 99점을 받았습니다.\n\n99점은 1998년 〈젤다의 전설 시간의 오카리나〉가 받은 뒤 28년 동안 어떤 게임도 넘지 못한 메타크리틱 최고점인데요, 〈GTA 4〉의 98점과 〈GTA 5〉의 97점을 넘어 시리즈 최고점도 새로 썼습니다. 그 오카리나의 리메이크는 올해 더 게임 어워드에서 〈GTA 6〉와 함께 올해의 게임 후보에 올라 있습니다.\n\n〈GTA 5〉 이후 13년 만의 시리즈 신작은 오늘 0시부터 바이스 시티의 문을 열었습니다.\n\n11월 19일 0시(한국 시간) 출시 · 지역마다 현지 시각 자정 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #메타크리틱 #시간의오카리나 #락스타게임즈",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈인왕 3〉와 〈와룡 2〉를 만드는 팀 닌자의 두 프로듀서가 부산 지스타 무대에 섰습니다.\n\n19일 G-CON 에서 시바타 코헤이 프로듀서가 가장 먼저 강조한 것은 공정한 전투였는데요, 강한 공격에 충분한 예비 동작을 넣어 두면 처음엔 당하더라도 다음엔 대응할 방법을 찾을 수 있다는 설명이었습니다. 히라야마 마사카즈 프로듀서와 함께 한 인터뷰에서도 두 사람은 플레이어가 불합리하다고 느끼지 않게 만드는 것을 기준으로 꼽았습니다.\n\n어려운 게임과 억울한 게임 사이에 선을 긋는 일, 죽어도 다시 칼을 잡게 만드는 팀 닌자의 설계가 거기서 출발합니다.\n\n〈와룡 2: 윙스 오브 엠버〉 2027년 3월 4일 출시 · PS5 · 엑스박스 시리즈 X|S · 닌텐도 스위치 2 · PC · 스팀 79,800원 · 지스타 2026 현장 시연\n\n#겜디핑 #팀닌자 #와룡2 #인왕3 #지스타2026\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/686c9f747948557f4269.jpg\n제목: 인왕·와룡의 팀 닌자,|어려워도 불합리하진 않게\n부제: 지스타 G-CON 프로듀서 강연\n출처: KOEI TECMO GAMES\n",
+    "caption": "〈인왕 3〉와 〈와룡 2〉를 만드는 팀 닌자의 두 프로듀서가 부산 지스타 무대에 섰습니다.\n\n19일 G-CON 에서 시바타 코헤이 프로듀서가 가장 먼저 강조한 것은 공정한 전투였는데요, 강한 공격에 충분한 예비 동작을 넣어 두면 처음엔 당하더라도 다음엔 대응할 방법을 찾을 수 있다는 설명이었습니다. 히라야마 마사카즈 프로듀서와 함께 한 인터뷰에서도 두 사람은 플레이어가 불합리하다고 느끼지 않게 만드는 것을 기준으로 꼽았습니다.\n\n어려운 게임과 억울한 게임 사이에 선을 긋는 일, 죽어도 다시 칼을 잡게 만드는 팀 닌자의 설계가 거기서 출발합니다.\n\n〈와룡 2: 윙스 오브 엠버〉 2027년 3월 4일 출시 · PS5 · 엑스박스 시리즈 X|S · 닌텐도 스위치 2 · PC · 스팀 79,800원 · 지스타 2026 현장 시연\n\n#겜디핑 #팀닌자 #와룡2 #인왕3 #지스타2026",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/686c9f747948557f4269.jpg",
+      "credit": "KOEI TECMO GAMES",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4507990/6afce9845773b93689467532f50b1733330ea538/ss_6afce9845773b93689467532f50b1733330ea538.1920x1080.jpg?t=1794905093"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/686c9f747948557f4269.jpg",
+      "credit": "KOEI TECMO GAMES",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4507990/6afce9845773b93689467532f50b1733330ea538/ss_6afce9845773b93689467532f50b1733330ea538.1920x1080.jpg?t=1794905093"
      }
     ],
     "shape": "단신",
@@ -52,68 +53,69 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "GTA 6, 메타크리틱|오카리나와 같은 99점",
-      "sub": "오늘 0시 출시"
+      "title": "인왕·와룡의 팀 닌자,|어려워도 불합리하진 않게",
+      "sub": "지스타 G-CON 프로듀서 강연"
      }
     ],
     "issues": [],
     "confirm": [
-     "메타크리틱 점수는 리뷰가 붙으면 바뀔 수 있음 — 발행 직전 99 그대로인지 확인",
-     "가격은 PS 스토어 기준 · 엑스박스 스토어 가격은 따로 확인 못 함 · 숏폼 구간은 영상을 못 보고 정함 — 0:05~0:30 장면 눈으로 확인"
+     "[검증] '국내 첫 시연'·'B2B관 코에이 테크모 부스'는 테크M 한 곳에만 있어(디스이즈게임 403) 뺐고, '불합리하다고 느끼게 해선 안 된다'는 테크M 은 히라야마·인벤 인터뷰는 시바타 발언으로 화자가 엇갈림 — 카드·숏폼 캡션 모두 '두 사람'으로 고침",
+     "와룡 2 한국어 지원: 스팀 언어 표에 한국어 체크가 있는 것처럼 보였지만 칸 구분을 확신 못 해 캡션에서 뺌 — 스팀 상점에서 한 번 보고 있으면 '한국어 자막' 덧붙일 것",
+     "숏폼은 디지털터치(국내 유통) 공식 발매일 트레일러 — 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
     ],
     "research": [
      {
-      "title": "메타크리틱 — Grand Theft Auto VI (Metascore 99 · PS5 · 2026-11-19)",
-      "link": "https://www.metacritic.com/game/grand-theft-auto-vi/"
+      "title": "인벤 — [GCON] '인왕'과 '와룡', 어려워도 계속 도전하게 만드는 이유 (11/19 · 강연)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323621"
      },
      {
-      "title": "디지털데일리 — 'GTA6', 메타크리틱 99점…'젤다'와 역대 최고점 동률 (11/19 · GTA4 98 · GTA5 97 · 28년)",
-      "link": "https://www.ddaily.co.kr/page/view/2026111903564205804"
+      "title": "인벤 — [인터뷰] Team NINJA, '어려운 게임과 불합리한 게임은 다르다' (11/19)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323624"
      },
      {
-      "title": "게임플 — 'GTA 6', 메타크리틱 '99점' 출발 (한국 시간 19일 0시 · 오카리나와 동률)",
-      "link": "https://www.gameple.co.kr/news/articleView.html?idxno=217012"
+      "title": "테크M — [지스타 26] '액션의 본질은 손맛이죠'...'와룡2'·'인왕3' 개발진이 말하는 게임의 핵심 (11/20)",
+      "link": "https://www.techm.kr/news/articleView.html?idxno=157626"
      },
      {
-      "title": "Inven Global — GTA 6 ties Ocarina of Time for highest Metacritic score ever with 99 (11/18)",
-      "link": "https://www.invenglobal.com/articles/28786/gta-6-ties-ocarina-of-time-for-highest-metacritic-score-ever-with-99"
+      "title": "디스이즈게임 — 어렵지만 불합리하지 않게, '인왕'과 '와룡'의 설계법 (403 · 검색 요약으로 확인)",
+      "link": "https://www.thisisgame.com/articles/433007"
      },
      {
-      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 음성 영어 · 19세)",
-      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
+      "title": "스팀 — Wo Long 2: Wings of Ember (2027-03-04 · 79,800원 · 코에이 테크모)",
+      "link": "https://store.steampowered.com/app/4507990/"
      },
      {
-      "title": "디지털데일리 — '붉은사막', 더 게임 어워드 후보 올라…GOTY 경쟁은 'GTA6' vs '젤다' (11/18 · 오카리나 리메이크 GOTY 후보)",
-      "link": "https://m.ddaily.co.kr/page/view/2026111811515923087"
+      "title": "RPG Site — Wo Long 2: Wings of Ember releases on March 4 (PS5·Xbox·Switch 2·PC)",
+      "link": "https://www.rpgsite.net/news/21411-wo-long-2-wings-of-ember-releases-on-march-4-new-alpha-demo-available"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b9803d3a8629e8ab6e91.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a9ea50851f159e614235.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/27d2c28ed00178b4cd99.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dcba855a4476fa5cf2b0.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/b9803d3a8629e8ab6e91.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/27d2c28ed00178b4cd99.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-19T11:06+09:00",
+     "at": "2026-11-20T11:10+09:00",
      "v": {
-      "A": "2f73225f"
+      "A": "e08e18b5"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=rz1B4B2yBZY\n구간: 0:05-0:30\n곡: 메타크리틱 99점 게임\n아티스트: 28년 만에 나온\n피처링:\n후킹: \n출처: Rockstar Games\n자막: 자동",
-    "caption": "〈GTA 6〉 공식 출시 트레일러입니다.\n\n메타크리틱 99점은 1998년 〈젤다의 전설 시간의 오카리나〉 이후 28년 동안 어떤 게임도 넘지 못한 최고점인데요, 〈GTA 6〉가 출시 전날 그 점수에 나란히 섰습니다. 〈GTA 5〉 이후 13년 만의 신작입니다.\n\n11월 19일 0시(한국 시간) 출시 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 89,800원부터 · 한국어 자막 · 19세 이용가\n\n#겜디핑 #GTA6 #메타크리틱 #시간의오카리나 #락스타게임즈",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=2x5W97mhpnI\n구간: 0:05-0:30\n곡: 팀 닌자의 다음 게임\n아티스트: 어려워도 억울하진 않게,\n피처링:\n후킹: \n출처: DIGITAL TOUCH\n자막: 자동",
+    "caption": "〈와룡 2: 윙스 오브 엠버〉 공식 발매일 트레일러입니다.\n\n팀 닌자의 히라야마 마사카즈 프로듀서는 19일 지스타 G-CON 에서 시바타 코헤이 프로듀서와 함께 무대에 섰는데요, 두 사람은 인터뷰에서 플레이어가 불합리하다고 느끼지 않게 만드는 것을 기준으로 꼽았습니다. 이번 지스타에서 시연대도 열었습니다.\n\n2027년 3월 4일 출시 · PS5 · 엑스박스 시리즈 X|S · 닌텐도 스위치 2 · PC · 스팀 79,800원\n\n#겜디핑 #와룡2 #팀닌자 #코에이테크모 #지스타2026",
     "hooks": {
-     "A": "28년 만에 나온 / 메타크리틱 99점 게임",
-     "B": "13년을 기다린 GTA 6, / 오늘 0시에 나왔다",
-     "C": "오카리나와 같은 점수를 / 받은 GTA 6"
+     "A": "어려워도 억울하진 않게, / 팀 닌자의 다음 게임",
+     "B": "인왕 만든 팀이 / 내년 3월 내놓는 와룡 2",
+     "C": "삼국지 소울라이크 / 와룡 2 발매일 트레일러"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=rz1B4B2yBZY",
-     "credit": "Rockstar Games",
+     "url": "https://www.youtube.com/watch?v=2x5W97mhpnI",
+     "credit": "DIGITAL TOUCH",
      "range": [
       5.0,
       30.0
@@ -125,201 +127,100 @@
     },
     "issues": [],
     "confirm": [
-     "메타크리틱 점수는 리뷰가 붙으면 바뀔 수 있음 — 발행 직전 99 그대로인지 확인",
-     "가격은 PS 스토어 기준 · 엑스박스 스토어 가격은 따로 확인 못 함 · 숏폼 구간은 영상을 못 보고 정함 — 0:05~0:30 장면 눈으로 확인"
+     "[검증] '국내 첫 시연'·'B2B관 코에이 테크모 부스'는 테크M 한 곳에만 있어(디스이즈게임 403) 뺐고, '불합리하다고 느끼게 해선 안 된다'는 테크M 은 히라야마·인벤 인터뷰는 시바타 발언으로 화자가 엇갈림 — 카드·숏폼 캡션 모두 '두 사람'으로 고침",
+     "와룡 2 한국어 지원: 스팀 언어 표에 한국어 체크가 있는 것처럼 보였지만 칸 구분을 확신 못 해 캡션에서 뺌 — 스팀 상점에서 한 번 보고 있으면 '한국어 자막' 덧붙일 것",
+     "숏폼은 디지털터치(국내 유통) 공식 발매일 트레일러 — 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
     ],
     "research": [
      {
-      "title": "메타크리틱 — Grand Theft Auto VI (Metascore 99 · PS5 · 2026-11-19)",
-      "link": "https://www.metacritic.com/game/grand-theft-auto-vi/"
+      "title": "인벤 — [GCON] '인왕'과 '와룡', 어려워도 계속 도전하게 만드는 이유 (11/19 · 강연)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323621"
      },
      {
-      "title": "디지털데일리 — 'GTA6', 메타크리틱 99점…'젤다'와 역대 최고점 동률 (11/19 · GTA4 98 · GTA5 97 · 28년)",
-      "link": "https://www.ddaily.co.kr/page/view/2026111903564205804"
+      "title": "인벤 — [인터뷰] Team NINJA, '어려운 게임과 불합리한 게임은 다르다' (11/19)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=323624"
      },
      {
-      "title": "게임플 — 'GTA 6', 메타크리틱 '99점' 출발 (한국 시간 19일 0시 · 오카리나와 동률)",
-      "link": "https://www.gameple.co.kr/news/articleView.html?idxno=217012"
+      "title": "테크M — [지스타 26] '액션의 본질은 손맛이죠'...'와룡2'·'인왕3' 개발진이 말하는 게임의 핵심 (11/20)",
+      "link": "https://www.techm.kr/news/articleView.html?idxno=157626"
      },
      {
-      "title": "Inven Global — GTA 6 ties Ocarina of Time for highest Metacritic score ever with 99 (11/18)",
-      "link": "https://www.invenglobal.com/articles/28786/gta-6-ties-ocarina-of-time-for-highest-metacritic-score-ever-with-99"
+      "title": "디스이즈게임 — 어렵지만 불합리하지 않게, '인왕'과 '와룡'의 설계법 (403 · 검색 요약으로 확인)",
+      "link": "https://www.thisisgame.com/articles/433007"
      },
      {
-      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 음성 영어 · 19세)",
-      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
+      "title": "스팀 — Wo Long 2: Wings of Ember (2027-03-04 · 79,800원 · 코에이 테크모)",
+      "link": "https://store.steampowered.com/app/4507990/"
      },
      {
-      "title": "디지털데일리 — '붉은사막', 더 게임 어워드 후보 올라…GOTY 경쟁은 'GTA6' vs '젤다' (11/18 · 오카리나 리메이크 GOTY 후보)",
-      "link": "https://m.ddaily.co.kr/page/view/2026111811515923087"
+      "title": "RPG Site — Wo Long 2: Wings of Ember releases on March 4 (PS5·Xbox·Switch 2·PC)",
+      "link": "https://www.rpgsite.net/news/21411-wo-long-2-wings-of-ember-releases-on-march-4-new-alpha-demo-available"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/rz1B4B2yBZY/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/2x5W97mhpnI/maxresdefault.jpg",
     "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/359e76839df54b543317.jpg",
-     "key": "rz1B4B2yBZY@5.0"
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0d36d9fbdfeaf20d6cfb.jpg",
+     "key": "2x5W97mhpnI@5.0"
     },
     "px": {
-     "vid": "rz1B4B2yBZY",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6d55b7f8e458d0f708fb.mp4",
+     "vid": "2x5W97mhpnI",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8035e9dc832c51865e9e.mp4",
      "off": 0.0,
      "end": 75.0,
-     "full": 90.0
+     "full": 100.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-19T11:07+09:00"
+     "at": "2026-11-20T11:13+09:00"
     }
    },
-   "corner_name": "소식",
    "pick": {
     "rank": 1,
-    "why": "출시 당일 · 28년 만에 오카리나와 같은 메타크리틱 99점 · 공식 출시 트레일러 숏폼",
-    "at": "2026-11-19T19:16+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:clair-obscur-writer-fund",
-    "account": "GamesBeat",
-    "url": "https://gamesbeat.com/clair-obscur-writer-will-invest-in-next-generation-of-game-storytellers-jennifer-svedberg-yen-interview/",
-    "image": null,
-    "head": "Clair Obscur writer will invest in next generation of game storytellers",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-19T11:05+09:00",
-   "key": "ec98d68b",
-   "by": "claude",
-   "subjects": [
-    "제니퍼 스베드버그옌"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈클레르 옵스퀴르: 33 원정대〉의 세 번째 멤버였던 작가가 7월 샌드폴을 떠났다 — 다음 일은 이야기 중심 게임을 만드는 작은 개발자들에게 투자하는 것",
-    "why": "7월 퇴사·'We've parted ways'·세 번째 멤버(2020년 4월)·투자 펀드와 인큐베이션 구상·'I want to help' 는 GamesBeat 인터뷰(11/17 · 직접 읽음)와 Inven Global(11/18 · 직접 읽음) · 한국어 제목·출시일·한국어 지원은 스팀 상점"
-   },
-   "added": "claude",
-   "added_at": "2026-11-19T11:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈클레르 옵스퀴르: 33 원정대〉의 작가 제니퍼 스베드버그옌이 지난 7월 샌드폴 인터랙티브를 떠났습니다.\n\n17일(미국 시간) 게임스비트 인터뷰에서 33 원정대의 마지막 작업을 마치고 헤어졌다고 직접 밝혔는데요, 스베드버그옌은 2020년 4월 스튜디오가 정식으로 생기기도 전에, 유비소프트에 다니던 두 개발자와 함께한 세 번째 멤버였습니다. 사모펀드 일을 하다 처음 맡은 게임 시나리오가 이 작품이었습니다.\n\n다음 일로는 이야기 중심의 게임을 만드는 작은 개발자들을 위한 투자 펀드와 인큐베이션 프로그램을 꾸리고 싶다고 했습니다. 업계가 뽑아낼 수 있는 건 다 뽑아내려 해 왔다며, 2027년을 앞두고 가장 강한 마음은 돕고 싶다는 것이라고 말했습니다.\n\n〈클레르 옵스퀴르: 33 원정대〉 2025년 4월 24일 출시 · 샌드폴 인터랙티브 개발 · 케플러 인터랙티브 배급 · 스팀 한국어 자막\n\n#겜디핑 #클레르옵스퀴르 #33원정대 #샌드폴인터랙티브 #게임시나리오\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e887abb63f095391c2aa.jpg\n제목: 33 원정대 작가, 이제|이야기꾼에게 투자한다\n부제: 제니퍼 스베드버그옌의 다음 일\n출처: Sandfall Interactive · Kepler Interactive\n",
-    "caption": "〈클레르 옵스퀴르: 33 원정대〉의 작가 제니퍼 스베드버그옌이 지난 7월 샌드폴 인터랙티브를 떠났습니다.\n\n17일(미국 시간) 게임스비트 인터뷰에서 33 원정대의 마지막 작업을 마치고 헤어졌다고 직접 밝혔는데요, 스베드버그옌은 2020년 4월 스튜디오가 정식으로 생기기도 전에, 유비소프트에 다니던 두 개발자와 함께한 세 번째 멤버였습니다. 사모펀드 일을 하다 처음 맡은 게임 시나리오가 이 작품이었습니다.\n\n다음 일로는 이야기 중심의 게임을 만드는 작은 개발자들을 위한 투자 펀드와 인큐베이션 프로그램을 꾸리고 싶다고 했습니다. 업계가 뽑아낼 수 있는 건 다 뽑아내려 해 왔다며, 2027년을 앞두고 가장 강한 마음은 돕고 싶다는 것이라고 말했습니다.\n\n〈클레르 옵스퀴르: 33 원정대〉 2025년 4월 24일 출시 · 샌드폴 인터랙티브 개발 · 케플러 인터랙티브 배급 · 스팀 한국어 자막\n\n#겜디핑 #클레르옵스퀴르 #33원정대 #샌드폴인터랙티브 #게임시나리오",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e887abb63f095391c2aa.jpg",
-      "credit": "Sandfall Interactive · Kepler Interactive",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_hero.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e887abb63f095391c2aa.jpg",
-      "credit": "Sandfall Interactive · Kepler Interactive",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1903340/library_hero.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "33 원정대 작가, 이제|이야기꾼에게 투자한다",
-      "sub": "제니퍼 스베드버그옌의 다음 일"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "떠난 이유는 본인이 말하지 않았고 샌드폴도 입장을 내지 않음 — 불화로 읽히지 않게 '헤어졌다'만 씀",
-     "펀드 이름·규모는 아직 없음(만들고 싶다는 구상) · 숏폼은 본인 영상이 없어 쓰지 않음"
-    ],
-    "research": [
-     {
-      "title": "GamesBeat — Clair Obscur writer will invest in next generation of game storytellers (11/17 · Dean Takahashi 인터뷰)",
-      "link": "https://gamesbeat.com/clair-obscur-writer-will-invest-in-next-generation-of-game-storytellers-jennifer-svedberg-yen-interview/"
-     },
-     {
-      "title": "Inven Global — Clair Obscur lead writer Jennifer Svedberg-Yen confirms Sandfall exit (11/18 · 샌드폴 공식 입장 없음)",
-      "link": "https://www.invenglobal.com/articles/28788/clair-obscur-expedition-33-lead-writer-jennifer-svedberg-yen-confirms-sandfall-exit"
-     },
-     {
-      "title": "스팀 — 클레르 옵스퀴르: 33 원정대 (Sandfall Interactive · Kepler Interactive · 2025-04-24 · 한국어)",
-      "link": "https://store.steampowered.com/app/1903340/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9e32bb5434ffeb3fb561.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9eab3c5f191ae7430836.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9e32bb5434ffeb3fb561.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-19T11:06+09:00",
-     "v": {
-      "A": "42a42f40"
-     }
-    }
+    "why": "인왕·와룡 두 프로듀서가 부산에서 직접 한 말 · 소울라이크 팬이 늘 하는 '어려운 것과 억울한 것' 이야기 · 와룡 2 국내 첫 시연 · 공식 트레일러 숏폼",
+    "at": "2026-11-20T11:09+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:poe2-rogers-busan",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323597",
+    "id": "claude:crimson-desert-readable-forest",
+    "account": "디지털데일리",
+    "url": "https://www.ddaily.co.kr/page/view/2026111913214206810",
     "image": null,
-    "head": "[인터뷰] 조나단 로저스, \"'PoE2' 정식 출시 목표는 이용자 100만 명\"",
+    "head": "[지스타 2026] '사실적인 숲보다 읽기 쉬운 숲'…펄어비스가 밝힌 '붉은사막' 개발 비결",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-19T19:16+09:00",
-   "key": "76f4a0d7",
+   "made_at": "2026-11-20T11:09+09:00",
+   "key": "52d2ac19",
    "by": "claude",
    "subjects": [
-    "패스 오브 엑자일 2"
+    "붉은사막"
    ],
    "lane": "정보",
    "editor": {
-    "grade": "A",
+    "grade": "B",
     "kind": "정보",
-    "angle": "〈패스 오브 엑자일 2〉 조나단 로저스 디렉터가 정식 출시를 앞두고 부산에 와서 직접 말한 1.0 — 고유 아이템 110종 손질, 원버튼 빌드는 엔드게임에서, 목표는 스팀 100만 명",
-    "why": "부산 공동 인터뷰·고유 아이템 110종(70종 손질·40종 신규)·스팀 100만 명 목표·원버튼 빌드는 엔드게임에서·출시 뒤 인력 지원은 인벤(11/19)과 게임메카(11/19) 두 곳 · 12월 12일(한국 시간)은 게임메카·바이라인네트워크(8/26 카카오게임즈 발표) · 무료 전환은 인벤·게임메카('부분유료화')·검색 요약 여러 곳 · 5막·6막은 인벤·검색 요약"
+    "angle": "[실험] 게임 속 장면 해부 — 〈붉은사막〉의 숲은 가장 사실적인 숲이 아니라 가장 읽기 쉬운 숲, 펄어비스 아트레벨 실장이 G-CON 에서 밝힌 설계",
+    "why": "연사 안근태 아트레벨 실장·윤진호 게임엔진 그래픽스 실장·11/19 G-CON 은 디지털데일리·뉴스포스트·뉴스투데이·4Gamer · '가장 사실적인 숲이 아닌 읽기 쉬운 숲' 안근태 발언은 디지털데일리 직접 인용·뉴스투데이·4Gamer 제목 · '환경은 서술자'는 뉴스포스트·4Gamer('語り部') · 보이면 갈 수 있어야 한다는 원칙은 뉴스포스트(윤진호 발언)·4Gamer(안근태 슬라이드)로 화자가 엇갈려 '두 실장이 밝힌 원칙'으로만 씀 · 약 200㎢·2만 개 단위는 디지털데일리·뉴스투데이·4Gamer · 가격·한국어는 스팀 상점"
    },
    "added": "claude",
-   "added_at": "2026-11-19T19:16+09:00",
+   "added_at": "2026-11-20T11:09+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈패스 오브 엑자일 2〉의 조나단 로저스 디렉터가 정식 출시를 앞두고 부산을 찾았습니다.\n\n19일 부산에서 열린 미디어 행사에서 1.0 버전을 직접 소개했는데요, 5막과 6막으로 본편 이야기가 끝을 맺고, 고유 아이템 110종 가운데 70종은 쓸모 있게 고치고 40종은 새로 넣었습니다. 버튼 하나로 쓸어버리는 빌드도 막지는 않지만, 그건 캠페인이 아니라 엔드게임을 깨고 얻어야 한다는 생각도 밝혔습니다.\n\n목표는 스팀 이용자 100만 명입니다. 앞서 해보기 때 대응이 늦었던 점을 돌아보며, 출시 뒤에도 충분한 인력과 자원을 준비해 지원하겠다고 말했습니다.\n\n12월 12일(한국 시간) 정식 출시 · PC · 그라인딩 기어 게임즈 개발 · 국내 서비스 카카오게임즈 · 정식 출시와 함께 무료 플레이로 전환\n\n#겜디핑 #패스오브엑자일2 #POE2 #카카오게임즈 #그라인딩기어게임즈\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1e93bfa83f689025e613.jpg\n제목: PoE 2 디렉터가|부산에서 꺼낸 1.0\n부제: 12월 12일 정식 출시\n출처: 인벤\n",
-    "caption": "〈패스 오브 엑자일 2〉의 조나단 로저스 디렉터가 정식 출시를 앞두고 부산을 찾았습니다.\n\n19일 부산에서 열린 미디어 행사에서 1.0 버전을 직접 소개했는데요, 5막과 6막으로 본편 이야기가 끝을 맺고, 고유 아이템 110종 가운데 70종은 쓸모 있게 고치고 40종은 새로 넣었습니다. 버튼 하나로 쓸어버리는 빌드도 막지는 않지만, 그건 캠페인이 아니라 엔드게임을 깨고 얻어야 한다는 생각도 밝혔습니다.\n\n목표는 스팀 이용자 100만 명입니다. 앞서 해보기 때 대응이 늦었던 점을 돌아보며, 출시 뒤에도 충분한 인력과 자원을 준비해 지원하겠다고 말했습니다.\n\n12월 12일(한국 시간) 정식 출시 · PC · 그라인딩 기어 게임즈 개발 · 국내 서비스 카카오게임즈 · 정식 출시와 함께 무료 플레이로 전환\n\n#겜디핑 #패스오브엑자일2 #POE2 #카카오게임즈 #그라인딩기어게임즈",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈붉은사막〉의 숲은 가장 사실적인 숲이 아니라 가장 읽기 쉬운 숲을 목표로 만들어졌습니다.\n\n19일 지스타 G-CON 에서 펄어비스 안근태 아트레벨 실장이 밝힌 설계인데요, 실제 자연을 그대로 옮기는 대신 이동 경로와 시야를 기준으로 숲을 다듬었습니다. 지나가는 길은 시야를 틔우고 싸우는 자리에는 움직일 틈을 두는 식으로 나무의 밀도를 곳마다 다르게 했습니다. 환경은 배경이 아니라 플레이어에게 먼저 말을 거는 서술자라는 생각입니다.\n\n윤진호 게임엔진 그래픽스 실장과 함께 꺼낸 원칙은 하나 더 있습니다. 화면에 보이는 곳이라면 실제로 갈 수 있어야 한다는 것, 약 200㎢ 대륙을 2만 개가 넘는 단위로 나눠 불러오는 자체 엔진이 그 약속을 받칩니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 스팀 79,800원 · 한국어 음성·자막\n\n#겜디핑 #붉은사막 #펄어비스 #지스타2026 #GCON\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4ffd6204da14507275e6.jpg\n제목: 붉은사막의 숲은|읽기 쉽게 심었다\n부제: 펄어비스 G-CON 강연\n출처:\n",
+    "caption": "〈붉은사막〉의 숲은 가장 사실적인 숲이 아니라 가장 읽기 쉬운 숲을 목표로 만들어졌습니다.\n\n19일 지스타 G-CON 에서 펄어비스 안근태 아트레벨 실장이 밝힌 설계인데요, 실제 자연을 그대로 옮기는 대신 이동 경로와 시야를 기준으로 숲을 다듬었습니다. 지나가는 길은 시야를 틔우고 싸우는 자리에는 움직일 틈을 두는 식으로 나무의 밀도를 곳마다 다르게 했습니다. 환경은 배경이 아니라 플레이어에게 먼저 말을 거는 서술자라는 생각입니다.\n\n윤진호 게임엔진 그래픽스 실장과 함께 꺼낸 원칙은 하나 더 있습니다. 화면에 보이는 곳이라면 실제로 갈 수 있어야 한다는 것, 약 200㎢ 대륙을 2만 개가 넘는 단위로 나눠 불러오는 자체 엔진이 그 약속을 받칩니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 스팀 79,800원 · 한국어 음성·자막\n\n#겜디핑 #붉은사막 #펄어비스 #지스타2026 #GCON",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1e93bfa83f689025e613.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/19/news/i1445942259.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/11223578146e5c887d99.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/827/gm653366_261119-risell-oo2.webp"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4ffd6204da14507275e6.jpg",
+      "credit": "신뢰"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1e93bfa83f689025e613.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/19/news/i1445942259.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/11223578146e5c887d99.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/827/gm653366_261119-risell-oo2.webp"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4ffd6204da14507275e6.jpg",
+      "credit": "신뢰"
      }
     ],
     "shape": "단신",
@@ -327,61 +228,64 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "PoE 2 디렉터가|부산에서 꺼낸 1.0",
-      "sub": "12월 12일 정식 출시"
+      "title": "붉은사막의 숲은|읽기 쉽게 심었다",
+      "sub": "펄어비스 G-CON 강연"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 숏폼 트레일러 0:02~0:19 대사는 섀도우 장면으로 확인(영상 설명: 12/11 PST 정식 출시 = 12/12 한국 시간) · 행사 주최가 카카오게임즈라는 건 원문에 없어 '부산 미디어 행사'로 바꿈 · 얼리 액세스 시작일(2024/12/7)은 게임메카 DB 칸뿐이라 뺌",
-     "콘솔(PS5·엑스박스) 정식 출시는 해외 검색 요약에만 있어 플랫폼을 PC 로만 적음 · 스팀 상점은 한국에서 막혀 있어(국내는 카카오게임즈) 직접 확인 못 함",
-     "숏폼은 공식 '더 섀도우' 트레일러 — 구간 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
+     "11/18 pm 게임대상 8관왕 초안과 같은 게임 — 각도(숲 설계 해부)가 달라 실험 칸으로 냄 · 스팀은 지금 20% 할인(11/30까지)이라 정가만 적음",
+     "숏폼은 공식 '붉은사막' 채널 한국어 더빙 출시 트레일러 — 0:05~0:30 에 숲·대륙 장면이 나오는지 눈으로 확인"
     ],
     "research": [
      {
-      "title": "인벤 — [인터뷰] 조나단 로저스, 'PoE2' 정식 출시 목표는 이용자 100만 명 (11/19 · 부산 · 카카오게임즈 공동 인터뷰)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323597"
+      "title": "디지털데일리 — '사실적인 숲보다 읽기 쉬운 숲'…펄어비스가 밝힌 '붉은사막' 개발 비결 (11/19)",
+      "link": "https://www.ddaily.co.kr/page/view/2026111913214206810"
      },
      {
-      "title": "게임메카 — 조나단 디렉터 '고유 아이템 110종, 달라진 POE 2 기대하라' (11/19 · 12월 12일 · 부분유료화)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783827"
+      "title": "뉴스포스트 — '붉은사막' 제작진 '화면에 보이면 실제로 갈 수 있어야' (11/19)",
+      "link": "https://www.newspost.kr/news/articleView.html?idxno=227583"
      },
      {
-      "title": "게임메카 — 12월 열리는 POE 2 정식 출시, 조나단 디렉터가 직접 소개 (11/19)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783819"
+      "title": "뉴스투데이 — 펄어비스, '붉은사막' 200㎢ 대륙 구현 비결 공개 (11/19)",
+      "link": "https://www.news2day.co.kr/article/20261119500323"
      },
      {
-      "title": "바이라인네트워크 — 카카오게임즈 PoE2 정식 출시일 12월 12일(한국 시간) 확정 (8/26)",
-      "link": "https://byline.network/2026/08/26-624/"
+      "title": "4Gamer — 必要なのは最もリアルな森ではなく「最も読みやすい森」 [G-STAR 2026] (11/20)",
+      "link": "https://www.4gamer.net/games/484/G048495/20261119038/"
+     },
+     {
+      "title": "스팀 — 붉은사막 (79,800원 · 한국어 인터페이스·음성·자막 · Pearl Abyss)",
+      "link": "https://store.steampowered.com/app/3321460/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1764a8ff5622db82bdcf.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a8d23c24977591ed6b7c.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a4cd49af413e5477a092.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/825706bb95fe8f740c83.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1764a8ff5622db82bdcf.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a4cd49af413e5477a092.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-19T19:16+09:00",
+     "at": "2026-11-20T11:10+09:00",
      "v": {
-      "A": "4289c7db"
+      "A": "535761a2"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=FD-lo79LtAM\n구간: 0:05-0:30\n곡: 새로 들어오는 직업\n아티스트: PoE 2 정식 출시에\n피처링:\n후킹: \n출처: Path of Exile\n자막: 자동",
-    "caption": "〈패스 오브 엑자일 2〉 정식 출시에 들어오는 새 직업 '섀도우' 공식 트레일러입니다.\n\n조나단 로저스 디렉터는 19일 부산에서 1.0 버전을 직접 소개했는데요, 고유 아이템 110종 가운데 70종을 고치고 40종을 새로 넣었고, 목표는 스팀 이용자 100만 명이라고 밝혔습니다.\n\n12월 12일(한국 시간) 정식 출시 · PC · 국내 서비스 카카오게임즈 · 정식 출시와 함께 무료 플레이로 전환\n\n#겜디핑 #패스오브엑자일2 #POE2 #카카오게임즈 #그라인딩기어게임즈",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=FLdy3yc0Nfw\n구간: 0:05-0:30\n곡: 길을 잃지 않게 심었다\n아티스트: 붉은사막의 숲은\n피처링:\n후킹: \n출처: 붉은사막 | Crimson Desert\n자막: 자동",
+    "caption": "〈붉은사막〉 공식 출시 트레일러(한국어 더빙)입니다.\n\n펄어비스 안근태 아트레벨 실장은 19일 지스타 G-CON 에서 가장 사실적인 숲이 아니라 읽기 쉬운 숲을 만들려 했다고 밝혔는데요, 길에서는 시야를 틔우고 싸우는 자리에는 틈을 두도록 나무 밀도를 곳마다 다르게 했습니다. 화면에 보이는 곳은 실제로 갈 수 있어야 한다는 원칙도 함께 소개했습니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 스팀 79,800원 · 한국어 음성·자막\n\n#겜디핑 #붉은사막 #펄어비스 #지스타2026 #GCON",
     "hooks": {
-     "A": "PoE 2 정식 출시에 / 새로 들어오는 직업",
-     "B": "12월 12일, PoE 2가 / 무료로 문을 연다",
-     "C": "디렉터가 부산까지 와서 / 소개한 PoE 2"
+     "A": "붉은사막의 숲은 / 길을 잃지 않게 심었다",
+     "B": "보이는 곳은 다 간다, / 붉은사막의 약속",
+     "C": "사실적인 숲 대신 / 읽기 쉬운 숲을 만든 이유"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=FD-lo79LtAM",
-     "credit": "Path of Exile",
+     "url": "https://www.youtube.com/watch?v=FLdy3yc0Nfw",
+     "credit": "붉은사막 | Crimson Desert",
      "range": [
       5.0,
       30.0
@@ -393,325 +297,52 @@
     },
     "issues": [],
     "confirm": [
-     "[검증] 숏폼 트레일러 0:02~0:19 대사는 섀도우 장면으로 확인(영상 설명: 12/11 PST 정식 출시 = 12/12 한국 시간) · 행사 주최가 카카오게임즈라는 건 원문에 없어 '부산 미디어 행사'로 바꿈 · 얼리 액세스 시작일(2024/12/7)은 게임메카 DB 칸뿐이라 뺌",
-     "콘솔(PS5·엑스박스) 정식 출시는 해외 검색 요약에만 있어 플랫폼을 PC 로만 적음 · 스팀 상점은 한국에서 막혀 있어(국내는 카카오게임즈) 직접 확인 못 함",
-     "숏폼은 공식 '더 섀도우' 트레일러 — 구간 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
+     "11/18 pm 게임대상 8관왕 초안과 같은 게임 — 각도(숲 설계 해부)가 달라 실험 칸으로 냄 · 스팀은 지금 20% 할인(11/30까지)이라 정가만 적음",
+     "숏폼은 공식 '붉은사막' 채널 한국어 더빙 출시 트레일러 — 0:05~0:30 에 숲·대륙 장면이 나오는지 눈으로 확인"
     ],
     "research": [
      {
-      "title": "인벤 — [인터뷰] 조나단 로저스, 'PoE2' 정식 출시 목표는 이용자 100만 명 (11/19 · 부산 · 카카오게임즈 공동 인터뷰)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323597"
+      "title": "디지털데일리 — '사실적인 숲보다 읽기 쉬운 숲'…펄어비스가 밝힌 '붉은사막' 개발 비결 (11/19)",
+      "link": "https://www.ddaily.co.kr/page/view/2026111913214206810"
      },
      {
-      "title": "게임메카 — 조나단 디렉터 '고유 아이템 110종, 달라진 POE 2 기대하라' (11/19 · 12월 12일 · 부분유료화)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783827"
+      "title": "뉴스포스트 — '붉은사막' 제작진 '화면에 보이면 실제로 갈 수 있어야' (11/19)",
+      "link": "https://www.newspost.kr/news/articleView.html?idxno=227583"
      },
      {
-      "title": "게임메카 — 12월 열리는 POE 2 정식 출시, 조나단 디렉터가 직접 소개 (11/19)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783819"
+      "title": "뉴스투데이 — 펄어비스, '붉은사막' 200㎢ 대륙 구현 비결 공개 (11/19)",
+      "link": "https://www.news2day.co.kr/article/20261119500323"
      },
      {
-      "title": "바이라인네트워크 — 카카오게임즈 PoE2 정식 출시일 12월 12일(한국 시간) 확정 (8/26)",
-      "link": "https://byline.network/2026/08/26-624/"
+      "title": "4Gamer — 必要なのは最もリアルな森ではなく「最も読みやすい森」 [G-STAR 2026] (11/20)",
+      "link": "https://www.4gamer.net/games/484/G048495/20261119038/"
+     },
+     {
+      "title": "스팀 — 붉은사막 (79,800원 · 한국어 인터페이스·음성·자막 · Pearl Abyss)",
+      "link": "https://store.steampowered.com/app/3321460/"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/FD-lo79LtAM/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/FLdy3yc0Nfw/maxresdefault.jpg",
     "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/62181d0eb6d0080bdd32.jpg",
-     "key": "FD-lo79LtAM@5.0"
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a12f29523f8dd012fa95.jpg",
+     "key": "FLdy3yc0Nfw@5.0"
     },
     "px": {
-     "vid": "FD-lo79LtAM",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/50530e9af3a758679ed8.mp4",
+     "vid": "FLdy3yc0Nfw",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/70fc4328f9d80d366aa3.mp4",
      "off": 0.0,
      "end": 75.0,
-     "full": 83.0
+     "full": 103.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-19T19:19+09:00"
+     "at": "2026-11-20T11:13+09:00"
     }
    },
    "pick": {
     "rank": 2,
-    "why": "디렉터가 직접 한국에 와서 한 말 · 12월 12일 정식 출시·무료 전환 · 국내 이용자 많은 게임",
-    "at": "2026-11-19T19:16+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:wow-forever-15-years",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323578",
-    "image": null,
-    "head": "와우 포에버 캐릭터 1,516만 개 생성…주간 이용자 15년 만에 최고",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-19T19:16+09:00",
-   "key": "d1dd4795",
-   "by": "claude",
-   "subjects": [
-    "월드 오브 워크래프트: 포에버"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "〈월드 오브 워크래프트: 포에버〉 출시 2주, 와우 총괄 프로듀서 홀리 롱데일이 '주마다 하는 사람이 15년 만에 가장 많다'고 직접 밝혔다",
-    "why": "롱데일의 15년 발언은 본인 X 게시물(검색 결과 원문)·GamesRadar 제목·인벤(11/19)·Inven Global(11/18) · 캐릭터 약 1,516만 개·파티 약 7,131만 개는 블리자드 11/18 첫 주 기록을 인벤·Inven Global·검색 요약이 같게 전함 · 주간 이용자 수 자체는 공개 안 됨 · 출시 11/5 07:00(한국 시간)은 블리자드 한국어 공지 · 구독·게임 시간 접속도 같은 공지 · 첫 공격대 12/10 은 인벤·Inven Global, 미국 기준 12/9 는 검색 요약"
-   },
-   "added": "claude",
-   "added_at": "2026-11-19T19:16+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈월드 오브 워크래프트: 포에버〉를 주마다 하는 사람이 15년 만에 가장 많아졌습니다.\n\n와우 총괄 프로듀서 홀리 롱데일이 18일 밝힌 내용인데요, 블리자드가 같은 날 공개한 첫 주 기록에 따르면 출시 뒤 만들어진 캐릭터는 약 1,516만 개, 꾸려진 파티는 약 7,131만 개였습니다. 한 사람이 캐릭터를 여럿 만들 수 있어 캐릭터 수가 곧 이용자 수는 아니고, 주간 이용자 숫자 자체는 공개되지 않았습니다.\n\n〈포에버〉는 〈워크래프트 3〉 포세이큰 왕국 이야기 뒤, 화산 심장부 앞의 시대를 배경으로 오리지널 대륙에서 60레벨까지 가는 와우입니다.\n\n수치는 블리자드 발표 기준 · 11월 5일(한국 시간) 출시 · PC · 와우 구독·게임 시간으로 접속 · 첫 60레벨 공격대 12월 10일(한국 시간)\n\n#겜디핑 #월드오브워크래프트 #와우포에버 #블리자드 #와우\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/42354efa6dffaf1875bb.jpg\n제목: 와우 포에버,|15년 만에 가장 붐빈다\n부제: 출시 2주 · 블리자드 첫 주 기록\n출처:\n",
-    "caption": "〈월드 오브 워크래프트: 포에버〉를 주마다 하는 사람이 15년 만에 가장 많아졌습니다.\n\n와우 총괄 프로듀서 홀리 롱데일이 18일 밝힌 내용인데요, 블리자드가 같은 날 공개한 첫 주 기록에 따르면 출시 뒤 만들어진 캐릭터는 약 1,516만 개, 꾸려진 파티는 약 7,131만 개였습니다. 한 사람이 캐릭터를 여럿 만들 수 있어 캐릭터 수가 곧 이용자 수는 아니고, 주간 이용자 숫자 자체는 공개되지 않았습니다.\n\n〈포에버〉는 〈워크래프트 3〉 포세이큰 왕국 이야기 뒤, 화산 심장부 앞의 시대를 배경으로 오리지널 대륙에서 60레벨까지 가는 와우입니다.\n\n수치는 블리자드 발표 기준 · 11월 5일(한국 시간) 출시 · PC · 와우 구독·게임 시간으로 접속 · 첫 60레벨 공격대 12월 10일(한국 시간)\n\n#겜디핑 #월드오브워크래프트 #와우포에버 #블리자드 #와우",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/42354efa6dffaf1875bb.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/42354efa6dffaf1875bb.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "와우 포에버,|15년 만에 가장 붐빈다",
-      "sub": "출시 2주 · 블리자드 첫 주 기록"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] '떠났던 사람들이 돌아온다'는 근거 없어 뺌 · 숏폼 A 후킹 '돌아온 플레이어'를 '가장 붐빈다'로 고침 · 롱데일 X 게시 날짜(미국 시간)는 확인 못 해 '18일'로만 · 공식 공지 페이지 안에 11/4 오전 3시 표기도 섞여 있음 — 출시 시각 한 번 더 볼 것",
-     "캐릭터 수는 이용자 수가 아님(한 사람이 여럿) — 캡션에 밝힘 · 주간 이용자 실제 숫자는 블리자드가 안 냄",
-     "숏폼 공식 게임플레이 트레일러 0:05~0:30 은 영상을 못 보고 정함 — 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "인벤 — 와우 포에버 캐릭터 1,516만 개 생성…주간 이용자 15년 만에 최고 (11/19)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323578"
-     },
-     {
-      "title": "Inven Global — Over 15.16 Million Characters Created in WoW: Forever as Weekly Active Players Hit 15-Year High (11/18)",
-      "link": "https://www.invenglobal.com/articles/28811/over-1516-million-characters-created-in-wow-forever-as-weekly-active-players-hit-15-year-high"
-     },
-     {
-      "title": "GamesRadar — WoW: Forever 'has more people playing weekly' than Blizzard has seen in 15 years",
-      "link": "https://www.gamesradar.com/games/world-of-warcraft/world-of-warcraft-forever-has-more-people-playing-weekly-than-blizzard-has-seen-in-15-years-lead-says-as-the-new-mmo-reaches-15-million-players/"
-     },
-     {
-      "title": "Holly Longdale X — '#WoWForever has more people playing weekly than we've seen in World of Warcraft in 15 years'",
-      "link": "https://x.com/TheWindstalker/status/2122843024791314913"
-     },
-     {
-      "title": "블리자드 — 월드 오브 워크래프트: 포에버 (한국어 공지 · 한국 시간 11월 5일 오전 7시 출시)",
-      "link": "https://worldofwarcraft.blizzard.com/ko-kr/news/24302093/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6adc35c519254fe1e88f.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/71c329ae440dc9993711.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6adc35c519254fe1e88f.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-19T19:16+09:00",
-     "v": {
-      "A": "b70bd25a"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=uQuKE0KDgiM\n구간: 0:05-0:30\n곡: 15년 만에 가장 붐빈다\n아티스트: 와우 포에버가\n피처링:\n후킹: \n출처: World of Warcraft\n자막: 자동",
-    "caption": "〈월드 오브 워크래프트: 포에버〉 공식 게임플레이 트레일러입니다.\n\n와우 총괄 프로듀서 홀리 롱데일은 18일 포에버를 주마다 하는 사람이 15년 만에 가장 많다고 밝혔는데요, 블리자드 집계로 첫 주에 만들어진 캐릭터는 약 1,516만 개였습니다. 캐릭터 수는 이용자 수와 같지 않습니다.\n\n11월 5일(한국 시간) 출시 · PC · 와우 구독·게임 시간으로 접속 · 첫 60레벨 공격대 12월 10일(한국 시간)\n\n#겜디핑 #월드오브워크래프트 #와우포에버 #블리자드 #와우",
-    "hooks": {
-     "A": "와우 포에버가 / 15년 만에 가장 붐빈다",
-     "B": "와우를 처음부터 / 다시 걷는 포에버",
-     "C": "출시 첫 주에만 / 캐릭터 1,516만 개"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=uQuKE0KDgiM",
-     "credit": "World of Warcraft",
-     "range": [
-      5.0,
-      30.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] '떠났던 사람들이 돌아온다'는 근거 없어 뺌 · 숏폼 A 후킹 '돌아온 플레이어'를 '가장 붐빈다'로 고침 · 롱데일 X 게시 날짜(미국 시간)는 확인 못 해 '18일'로만 · 공식 공지 페이지 안에 11/4 오전 3시 표기도 섞여 있음 — 출시 시각 한 번 더 볼 것",
-     "캐릭터 수는 이용자 수가 아님(한 사람이 여럿) — 캡션에 밝힘 · 주간 이용자 실제 숫자는 블리자드가 안 냄",
-     "숏폼 공식 게임플레이 트레일러 0:05~0:30 은 영상을 못 보고 정함 — 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "인벤 — 와우 포에버 캐릭터 1,516만 개 생성…주간 이용자 15년 만에 최고 (11/19)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323578"
-     },
-     {
-      "title": "Inven Global — Over 15.16 Million Characters Created in WoW: Forever as Weekly Active Players Hit 15-Year High (11/18)",
-      "link": "https://www.invenglobal.com/articles/28811/over-1516-million-characters-created-in-wow-forever-as-weekly-active-players-hit-15-year-high"
-     },
-     {
-      "title": "GamesRadar — WoW: Forever 'has more people playing weekly' than Blizzard has seen in 15 years",
-      "link": "https://www.gamesradar.com/games/world-of-warcraft/world-of-warcraft-forever-has-more-people-playing-weekly-than-blizzard-has-seen-in-15-years-lead-says-as-the-new-mmo-reaches-15-million-players/"
-     },
-     {
-      "title": "Holly Longdale X — '#WoWForever has more people playing weekly than we've seen in World of Warcraft in 15 years'",
-      "link": "https://x.com/TheWindstalker/status/2122843024791314913"
-     },
-     {
-      "title": "블리자드 — 월드 오브 워크래프트: 포에버 (한국어 공지 · 한국 시간 11월 5일 오전 7시 출시)",
-      "link": "https://worldofwarcraft.blizzard.com/ko-kr/news/24302093/"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/uQuKE0KDgiM/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1340f08edf2f57bc925a.jpg",
-     "key": "uQuKE0KDgiM@5.0"
-    },
-    "px": {
-     "vid": "uQuKE0KDgiM",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/7e806c110a6abdc249bc.mp4",
-     "off": 0.0,
-     "end": 75.0,
-     "full": 179.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-19T19:19+09:00"
-    }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "와우 총괄 프로듀서 본인 말 '15년 만에 가장 많다' · 첫 주 캐릭터 약 1,516만 개 · 공식 트레일러 숏폼",
-    "at": "2026-11-19T19:16+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:gta6-fridge-sound",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323596",
-    "image": null,
-    "head": "GTA6 개발자들의 말말말... 바이스 시티 탄생 비화",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-19T19:16+09:00",
-   "key": "4b544cda",
-   "by": "claude",
-   "subjects": [
-    "GTA 6"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "[실험] 게임 속 소리 해부 — 〈GTA 6〉 편의점 냉장고는 저마다 소리가 다르다, 락스타 오디오 부사장이 개발자 노트에 남긴 말",
-    "why": "냉장고 발언은 인벤(11/19 '편의점 냉장고마다 고유한 소리')·Inven Global(11/18 'Every convenience store refrigerator has its own distinct sound signature')·Eurogamer 를 출처로 단 NuclearCoffee('incredibly detailed art')·Mezha 제목 · 출시 전 리뷰 매체에 준 개발자 노트라는 경위는 인벤·Inven Global · 출시·가격·한국어는 오전 초안(PS 스토어)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-19T19:16+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉 속 편의점 냉장고는 저마다 다른 소리를 냅니다.\n\n락스타게임즈 오디오 부사장 알라스테어 맥그리거가 출시 전 리뷰 매체에 건넨 개발자 노트에 남긴 이야기인데요, 오래된 가게 냉장고는 압축기가 거칠게 돌고 병이 부딪히는 소리가 나고, 고급 상점의 냉장고는 훨씬 조용하게 웅웅댄다는 것입니다.\n\n총격과 추격이 가득한 게임에서, 아무도 귀 기울이지 않을 것 같은 소리까지 따로 만든 셈입니다. 바이스 시티에서 편의점에 들어서면 잠깐 냉장고 앞에 서 보는 것도 방법입니다.\n\n지금 출시 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 89,800원부터 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #바이스시티 #게임사운드\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ea493477f460823b8e54.jpg\n제목: GTA 6 편의점 냉장고는|소리가 다 다르다\n부제: 락스타 오디오 부사장의 말\n출처: Rockstar Games\n",
-    "caption": "〈GTA 6〉 속 편의점 냉장고는 저마다 다른 소리를 냅니다.\n\n락스타게임즈 오디오 부사장 알라스테어 맥그리거가 출시 전 리뷰 매체에 건넨 개발자 노트에 남긴 이야기인데요, 오래된 가게 냉장고는 압축기가 거칠게 돌고 병이 부딪히는 소리가 나고, 고급 상점의 냉장고는 훨씬 조용하게 웅웅댄다는 것입니다.\n\n총격과 추격이 가득한 게임에서, 아무도 귀 기울이지 않을 것 같은 소리까지 따로 만든 셈입니다. 바이스 시티에서 편의점에 들어서면 잠깐 냉장고 앞에 서 보는 것도 방법입니다.\n\n지금 출시 · PS5 · 엑스박스 시리즈 X|S · PS 스토어 89,800원부터 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #바이스시티 #게임사운드",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ea493477f460823b8e54.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://static.inven.co.kr/column/2026/11/19/news/i1431640845.png"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ea493477f460823b8e54.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://static.inven.co.kr/column/2026/11/19/news/i1431640845.png"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ea493477f460823b8e54.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://static.inven.co.kr/column/2026/11/19/news/i1431640845.png"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ea493477f460823b8e54.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://static.inven.co.kr/column/2026/11/19/news/i1431640845.png"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "GTA 6 편의점 냉장고는|소리가 다 다르다",
-      "sub": "락스타 오디오 부사장의 말"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 출시 시각: PS 스토어 출시일 표기 2026/11/18 · 한국 잠금 해제 11/18 오후 11시라는 해외 보도(guru3d)도 있어 '11월 19일 0시'를 '지금 출시'로 바꿈 · '미술에서 소리가 출발' 발언은 NuclearCoffee(Eurogamer 인용) 한 곳뿐이라 뺌",
-     "오늘 오전 GTA 6 메타크리틱 글과 같은 게임 — 각도(소리 해부)가 달라 실험 칸으로 냄, 같은 날 둘 다 올릴지는 운영자 판단",
-     "표지가 잠수부 공식 스크린샷이라 냉장고와 안 맞음(편의점 장면 고해상도 공식 이미지 못 찾음) — 있으면 바꿀 것 · Eurogamer 원문 못 읽음 · 루시아 문 여는 동작 이야기는 인벤 계열뿐이라 뺌"
-    ],
-    "research": [
-     {
-      "title": "인벤 — GTA6 개발자들의 말말말... 바이스 시티 탄생 비화 (11/19 · 리뷰 매체용 개발자 노트)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323596"
-     },
-     {
-      "title": "Inven Global — GTA 6 Developers Share Insights on the Creation of Vice City (11/18)",
-      "link": "https://www.invenglobal.com/articles/28826/gta-6-developers-share-insights-on-the-creation-of-vice-city"
-     },
-     {
-      "title": "NuclearCoffee (출처 Eurogamer) — even convenience store refrigerators 'all have their own unique sounds', says Rockstar dev",
-      "link": "https://nuclearcoffee.org/just-how-detailed-is-the-audio-in-gta-6-well-even-convenience-store-refrigerators-all-have-their-own-unique-sounds-says-rockstar-dev/"
-     },
-     {
-      "title": "Mezha — GTA 6 refrigerators each have a unique sound, Rockstar audio VP says",
-      "link": "https://mezha.net/eng/news/mezha-0cff8db9d208b3fee1b165ca_gta_6_refrigerators"
-     },
-     {
-      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 한국어 자막 · 19세)",
-      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5194ae436e17a7feafac.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e442e160f26bafc8661f.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5194ae436e17a7feafac.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-19T19:17+09:00",
-     "v": {
-      "A": "6493c0b8"
-     }
-    }
+    "why": "[실험] 게임 속 장면 해부 · 한국 개발자가 직접 말한 설계 · 게임대상 8관왕 다음 이야기",
+    "at": "2026-11-20T11:09+09:00"
    },
    "corner_name": "소식"
   }
@@ -719,7 +350,7 @@
  "skipped": [],
  "corners": {
   "week": "11/16~11/22",
-  "days_left": 4,
+  "days_left": 3,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -777,7 +408,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 2,
+    "need_today": 3,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -861,7 +492,7 @@
     "weekly": 1,
     "done": 0,
     "left": 1,
-    "need_today": 0,
+    "need_today": 1,
     "day": 4,
     "next_no": 1,
     "drafts": 0,
@@ -885,17 +516,17 @@
     "weekly": 4,
     "done": 0,
     "left": 4,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-19T19:19+09:00"
+  "at": "2026-11-20T11:13+09:00"
  },
  "queue": {
-  "next": "2026-11-19T19:21+09:00",
+  "next": "2026-11-20T11:15+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
