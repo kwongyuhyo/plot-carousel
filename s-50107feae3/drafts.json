@@ -1126,7 +1126,7 @@
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=IQI2qaqHFlg\n구간: 0:28-0:58\n곡: 빅뱅이 꺼낸 신곡 '기립'\n아티스트: MAMA 하루 전\n피처링:\n후킹: \n출처: BIGBANG\n음원: BIGBANG - 기립 (GiiiRIP)\n가사: 자동",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=IQI2qaqHFlg\n구간: 0:28-0:58\n곡: 빅뱅이 꺼낸 신곡 '기립'\n아티스트: MAMA 하루 전\n피처링:\n후킹: \n출처: BIGBANG\n음원: BIGBANG - 기립 (GiiiRIP)\n가사: 자동\n자막: 받음 st:1795244150922-56b3853f",
     "caption": "빅뱅(@bigbang_official)이 신곡 '기립(GiiiRIP)'을 기습 공개했습니다.\n\n긴 예고 없이 20일 오후 2시에 나온 디지털 싱글인데요, 지드래곤(@xxxibgdrgn)이 작사·작곡을, 태양이 작사를 맡았고 테디가 프로듀서로 함께했습니다. 켈리스의 2003년 곡 'Milkshake'를 가져와 다시 쓴 힙합 트랙이라 크레딧에 퍼렐 윌리엄스와 채드 휴고의 이름도 올라 있습니다.\n\n빅뱅은 오늘 교세라 돔 오사카에서 열리는 '2026 MAMA AWARDS' 둘째 날 무대에 오릅니다.\n\n#PLOT #빅뱅 #기립 #지드래곤 #태양 #대성",
     "hooks": {
      "A": "MAMA 하루 전 / 빅뱅이 꺼낸 신곡 '기립'",
@@ -1189,8 +1189,64 @@
      "full": 164.0
     },
     "prep": {
-     "status": "making",
-     "at": "2026-11-21T15:54+09:00"
+     "status": "ready",
+     "rid": "st:1795244150922-56b3853f",
+     "n": 10,
+     "note": "🎤 가사 48줄 (가사 영상 「알파」에서 · 소리 맞춤 1.02)",
+     "band": null,
+     "segs": [
+      {
+       "start": 0.0,
+       "end": 2.25,
+       "text": "Cause if I want it then I’ll get it"
+      },
+      {
+       "start": 2.25,
+       "end": 4.0,
+       "text": "Never doubt me now"
+      },
+      {
+       "start": 4.0,
+       "end": 7.5,
+       "text": "내 희로와 애락에 취해 sing this loud"
+      },
+      {
+       "start": 7.5,
+       "end": 11.25,
+       "text": "Noun 과거와 현재 미래도 같으니까"
+      },
+      {
+       "start": 11.25,
+       "end": 13.75,
+       "text": "Take a bow"
+      },
+      {
+       "start": 13.75,
+       "end": 15.75,
+       "text": "All night long"
+      },
+      {
+       "start": 15.75,
+       "end": 19.25,
+       "text": "무대는 암전 let the bass drum go"
+      },
+      {
+       "start": 19.25,
+       "end": 22.75,
+       "text": "빛의 향연 Planck time 위로"
+      },
+      {
+       "start": 22.75,
+       "end": 27.75,
+       "text": "혼돈의 밤 Ready or not yo, all"
+      },
+      {
+       "start": 27.75,
+       "end": 29.75,
+       "text": "기립"
+      }
+     ],
+     "at": "2026-11-21T15:55+09:00"
     }
    },
    "corner_name": "소식"
@@ -1372,10 +1428,10 @@
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-21T15:54+09:00"
+  "at": "2026-11-21T15:55+09:00"
  },
  "queue": {
-  "next": "2026-11-21T15:56+09:00",
+  "next": "2026-11-21T15:57+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-18T15:39+09:00"
