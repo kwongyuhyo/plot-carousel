@@ -1,51 +1,51 @@
 {
  "schema": 1,
- "date": "2026-11-20",
- "generated_at": "2026-11-20 10:59 KST",
+ "date": "2026-11-21",
+ "generated_at": "2026-11-21 11:00 KST",
  "items": [
   {
    "source": {
-    "id": "claude:team-ninja-gcon-fair",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323621",
+    "id": "claude:gta6-32m-launch",
+    "account": "Take-Two Interactive",
+    "url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
     "image": null,
-    "head": "[GCON] '인왕'과 '와룡', 어려워도 계속 도전하게 만드는 이유",
+    "head": "Grand Theft Auto VI Shatters Entertainment Box Office Records",
     "multiple": null,
     "is_reel": true,
     "kind": "claude"
    },
-   "made_at": "2026-11-20T11:09+09:00",
-   "key": "fc40176d",
+   "made_at": "2026-11-21T11:04+09:00",
+   "key": "3bb781e1",
    "by": "claude",
    "subjects": [
-    "팀 닌자",
-    "와룡 2: 윙스 오브 엠버"
+    "GTA 6",
+    "샘 하우저"
    ],
    "lane": "정보",
    "editor": {
     "grade": "A",
     "kind": "정보",
-    "angle": "〈인왕 3〉·〈와룡 2〉 팀 닌자 프로듀서 둘이 지스타 G-CON 에서 꺼낸 말 — 어려운 게임과 불합리한 게임은 다르다, 강한 공격일수록 예비 동작을 크게",
-    "why": "강연(11/19 부산 벡스코 G-CON)과 연사 시바타 코헤이(인왕 3)·히라야마 마사카즈(와룡 2)는 인벤 강연기(11/19)·인벤 인터뷰·테크M(11/20)·디스이즈게임 검색 요약 · 예비 동작·패턴을 익히면 대응하는 페어플레이 설명은 인벤 강연기와 디스이즈게임 요약 · 히라야마 '불합리하다고 느끼게 해서는 안 된다'는 테크M 직접 인용과 디스이즈게임 요약 · 와룡 2 2027년 3월 4일·플랫폼은 스팀 상점·RPG Site·게임메카(9월) · 스팀 79,800원은 스팀 상점·게임메카 검색 요약"
+    "angle": "〈GTA 6〉 첫 공식 판매 숫자 — 출시 전에만 3,250만 장, 출시일 하루 매출 약 37억 9천만 달러(회사 추정) · 샘 하우저 '큰 감사와 함께 락스타의 새로운 장'",
+    "why": "3,250만 장(출시 전 판매)·37억 9천만 달러(11/19 끝까지 전 세계 · 회사 추정)·'가장 큰 엔터테인먼트 출시'는 테이크투 보도자료(11/20 Business Wire · 직접 읽음)·Kotaku(11/20)·4Gamer(11/21) · 샘 하우저 'It is with immense gratitude that we enter a new chapter of Rockstar Games' 는 보도자료·Kotaku · 가격·한국어 자막·19세는 PS 스토어 한국 상품 페이지(11/19 초안 출처)"
    },
    "added": "claude",
-   "added_at": "2026-11-20T11:09+09:00",
+   "added_at": "2026-11-21T11:04+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈인왕 3〉와 〈와룡 2〉를 만드는 팀 닌자의 두 프로듀서가 부산 지스타 무대에 섰습니다.\n\n19일 G-CON 에서 시바타 코헤이 프로듀서가 가장 먼저 강조한 것은 공정한 전투였는데요, 강한 공격에 충분한 예비 동작을 넣어 두면 처음엔 당하더라도 다음엔 대응할 방법을 찾을 수 있다는 설명이었습니다. 히라야마 마사카즈 프로듀서와 함께 한 인터뷰에서도 두 사람은 플레이어가 불합리하다고 느끼지 않게 만드는 것을 기준으로 꼽았습니다.\n\n어려운 게임과 억울한 게임 사이에 선을 긋는 일, 죽어도 다시 칼을 잡게 만드는 팀 닌자의 설계가 거기서 출발합니다.\n\n〈와룡 2: 윙스 오브 엠버〉 2027년 3월 4일 출시 · PS5 · 엑스박스 시리즈 X|S · 닌텐도 스위치 2 · PC · 스팀 79,800원 · 지스타 2026 현장 시연\n\n#겜디핑 #팀닌자 #와룡2 #인왕3 #지스타2026\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/686c9f747948557f4269.jpg\n제목: 인왕·와룡의 팀 닌자,|어려워도 불합리하진 않게\n부제: 지스타 G-CON 프로듀서 강연\n출처: KOEI TECMO GAMES\n",
-    "caption": "〈인왕 3〉와 〈와룡 2〉를 만드는 팀 닌자의 두 프로듀서가 부산 지스타 무대에 섰습니다.\n\n19일 G-CON 에서 시바타 코헤이 프로듀서가 가장 먼저 강조한 것은 공정한 전투였는데요, 강한 공격에 충분한 예비 동작을 넣어 두면 처음엔 당하더라도 다음엔 대응할 방법을 찾을 수 있다는 설명이었습니다. 히라야마 마사카즈 프로듀서와 함께 한 인터뷰에서도 두 사람은 플레이어가 불합리하다고 느끼지 않게 만드는 것을 기준으로 꼽았습니다.\n\n어려운 게임과 억울한 게임 사이에 선을 긋는 일, 죽어도 다시 칼을 잡게 만드는 팀 닌자의 설계가 거기서 출발합니다.\n\n〈와룡 2: 윙스 오브 엠버〉 2027년 3월 4일 출시 · PS5 · 엑스박스 시리즈 X|S · 닌텐도 스위치 2 · PC · 스팀 79,800원 · 지스타 2026 현장 시연\n\n#겜디핑 #팀닌자 #와룡2 #인왕3 #지스타2026",
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉가 출시 전에만 3,250만 장이 팔렸습니다.\n\n테이크투가 20일(미국 시간) 처음 내놓은 공식 숫자인데요, 출시일인 19일이 끝날 때까지 전 세계 매출은 약 37억 9천만 달러로 회사가 추정했습니다. 테이크투는 이를 엔터테인먼트 역사상 가장 큰 출시라고 불렀습니다.\n\n락스타 게임즈의 샘 하우저 대표는 큰 감사와 함께 락스타의 새로운 장에 들어선다고 말했습니다. 〈GTA 5〉 이후 13년 만의 신작이 출시 첫날까지 받아 든 성적표입니다.\n\nPS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투 #샘하우저\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg\n제목: GTA 6, 출시 전에만|3,250만 장 팔렸다\n부제: 테이크투 첫 공식 판매 발표\n출처: Rockstar Games\n",
+    "caption": "〈GTA 6〉가 출시 전에만 3,250만 장이 팔렸습니다.\n\n테이크투가 20일(미국 시간) 처음 내놓은 공식 숫자인데요, 출시일인 19일이 끝날 때까지 전 세계 매출은 약 37억 9천만 달러로 회사가 추정했습니다. 테이크투는 이를 엔터테인먼트 역사상 가장 큰 출시라고 불렀습니다.\n\n락스타 게임즈의 샘 하우저 대표는 큰 감사와 함께 락스타의 새로운 장에 들어선다고 말했습니다. 〈GTA 5〉 이후 13년 만의 신작이 출시 첫날까지 받아 든 성적표입니다.\n\nPS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투 #샘하우저",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/686c9f747948557f4269.jpg",
-      "credit": "KOEI TECMO GAMES",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4507990/6afce9845773b93689467532f50b1733330ea538/ss_6afce9845773b93689467532f50b1733330ea538.1920x1080.jpg?t=1794905093"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/686c9f747948557f4269.jpg",
-      "credit": "KOEI TECMO GAMES",
-      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4507990/6afce9845773b93689467532f50b1733330ea538/ss_6afce9845773b93689467532f50b1733330ea538.1920x1080.jpg?t=1794905093"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
+      "credit": "Rockstar Games",
+      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
      }
     ],
     "shape": "단신",
@@ -53,71 +53,67 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "인왕·와룡의 팀 닌자,|어려워도 불합리하진 않게",
-      "sub": "지스타 G-CON 프로듀서 강연"
+      "title": "GTA 6, 출시 전에만|3,250만 장 팔렸다",
+      "sub": "테이크투 첫 공식 판매 발표"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] '국내 첫 시연'·'B2B관 코에이 테크모 부스'는 테크M 한 곳에만 있어(디스이즈게임 403) 뺐고, '불합리하다고 느끼게 해선 안 된다'는 테크M 은 히라야마·인벤 인터뷰는 시바타 발언으로 화자가 엇갈림 — 카드·숏폼 캡션 모두 '두 사람'으로 고침",
-     "와룡 2 한국어 지원: 스팀 언어 표에 한국어 체크가 있는 것처럼 보였지만 칸 구분을 확신 못 해 캡션에서 뺌 — 스팀 상점에서 한 번 보고 있으면 '한국어 자막' 덧붙일 것",
-     "숏폼은 디지털터치(국내 유통) 공식 발매일 트레일러 — 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
+     "[검증] 숫자는 11/19 출시일 끝까지 집계라 '첫 이틀 만에'를 '출시 첫날까지'로 고침 · 숏폼 0:00~0:30 자막은 대사 3줄뿐(캡션 내용과 충돌 없음) · 영상 올린 날이 20261110 으로 나와 출시 전 게시물인지 한 번 볼 것",
+     "지난 11/19 에 GTA 6 초안이 둘(메타크리틱 99·냉장고 소리) — 이번은 첫 공식 판매 숫자라 새 소식으로 냄 · 37억 9천만 달러는 회사 추정이라고 캡션에 밝힘",
+     "어벤져스: 엔드게임 흥행과 비교한 문장은 Kotaku 한 곳 계산이라 뺌 · 숏폼 0:00~0:30 은 영상을 못 보고 정함"
     ],
     "research": [
      {
-      "title": "인벤 — [GCON] '인왕'과 '와룡', 어려워도 계속 도전하게 만드는 이유 (11/19 · 강연)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323621"
+      "title": "Take-Two — Grand Theft Auto VI Shatters Entertainment Box Office Records (11/20 · 회사 추정)",
+      "link": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
      },
      {
-      "title": "인벤 — [인터뷰] Team NINJA, '어려운 게임과 불합리한 게임은 다르다' (11/19)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323624"
+      "title": "Kotaku — GTA 6 sold 32.5 million copies in pre-release (11/20)",
+      "link": "https://kotaku.com/gta-6-sold-32-5-million-copies-in-pre-release-as-take-two-crowns-it-the-biggest-entertainment-launch-in-history-2000758965"
      },
      {
-      "title": "테크M — [지스타 26] '액션의 본질은 손맛이죠'...'와룡2'·'인왕3' 개발진이 말하는 게임의 핵심 (11/20)",
-      "link": "https://www.techm.kr/news/articleView.html?idxno=157626"
+      "title": "4Gamer — 「グランド・セフト・オートVI」，発売“前”に全世界で3250万本を販売 (11/21)",
+      "link": "https://www.4gamer.net/games/758/G075801/20261121002/"
      },
      {
-      "title": "디스이즈게임 — 어렵지만 불합리하지 않게, '인왕'과 '와룡'의 설계법 (403 · 검색 요약으로 확인)",
-      "link": "https://www.thisisgame.com/articles/433007"
+      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 19세)",
+      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
      },
      {
-      "title": "스팀 — Wo Long 2: Wings of Ember (2027-03-04 · 79,800원 · 코에이 테크모)",
-      "link": "https://store.steampowered.com/app/4507990/"
-     },
-     {
-      "title": "RPG Site — Wo Long 2: Wings of Ember releases on March 4 (PS5·Xbox·Switch 2·PC)",
-      "link": "https://www.rpgsite.net/news/21411-wo-long-2-wings-of-ember-releases-on-march-4-new-alpha-demo-available"
+      "title": "Rockstar Games YouTube — Grand Theft Auto VI: Out Now (30초)",
+      "link": "https://www.youtube.com/watch?v=_yl5ELcmugI"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/27d2c28ed00178b4cd99.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dcba855a4476fa5cf2b0.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3f7d5ea39e4fe6eae6d3.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a9ea50851f159e614235.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/27d2c28ed00178b4cd99.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3f7d5ea39e4fe6eae6d3.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-20T11:10+09:00",
+     "at": "2026-11-21T11:04+09:00",
      "v": {
-      "A": "e08e18b5"
+      "A": "127e6b37"
      }
     }
    },
    "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=2x5W97mhpnI\n구간: 0:05-0:30\n곡: 팀 닌자의 다음 게임\n아티스트: 어려워도 억울하진 않게,\n피처링:\n후킹: \n출처: DIGITAL TOUCH\n자막: 자동",
-    "caption": "〈와룡 2: 윙스 오브 엠버〉 공식 발매일 트레일러입니다.\n\n팀 닌자의 히라야마 마사카즈 프로듀서는 19일 지스타 G-CON 에서 시바타 코헤이 프로듀서와 함께 무대에 섰는데요, 두 사람은 인터뷰에서 플레이어가 불합리하다고 느끼지 않게 만드는 것을 기준으로 꼽았습니다. 이번 지스타에서 시연대도 열었습니다.\n\n2027년 3월 4일 출시 · PS5 · 엑스박스 시리즈 X|S · 닌텐도 스위치 2 · PC · 스팀 79,800원\n\n#겜디핑 #와룡2 #팀닌자 #코에이테크모 #지스타2026",
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=_yl5ELcmugI\n구간: 0:00-0:30\n곡: 3,250만 장 팔린 게임\n아티스트: 출시 전에만\n피처링:\n후킹: \n출처: Rockstar Games\n자막: 자동",
+    "caption": "〈GTA 6〉 공식 출시 영상입니다.\n\n테이크투는 20일(미국 시간) 〈GTA 6〉가 출시 전에만 3,250만 장이 팔렸다고 발표했는데요, 출시일 하루가 끝날 때까지 전 세계 매출은 약 37억 9천만 달러로 회사가 추정했습니다.\n\nPS5 · 엑스박스 시리즈 X|S · PS 스토어 89,800원부터 · 한국어 자막 · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투",
     "hooks": {
-     "A": "어려워도 억울하진 않게, / 팀 닌자의 다음 게임",
-     "B": "인왕 만든 팀이 / 내년 3월 내놓는 와룡 2",
-     "C": "삼국지 소울라이크 / 와룡 2 발매일 트레일러"
+     "A": "출시 전에만 / 3,250만 장 팔린 게임",
+     "B": "GTA 6 첫날 매출, / 약 37억 9천만 달러",
+     "C": "13년 만의 GTA, / 첫 성적표가 나왔다"
     },
     "video": {
-     "url": "https://www.youtube.com/watch?v=2x5W97mhpnI",
-     "credit": "DIGITAL TOUCH",
+     "url": "https://www.youtube.com/watch?v=_yl5ELcmugI",
+     "credit": "Rockstar Games",
      "range": [
-      5.0,
+      0.0,
       30.0
      ]
     },
@@ -127,615 +123,162 @@
     },
     "issues": [],
     "confirm": [
-     "[검증] '국내 첫 시연'·'B2B관 코에이 테크모 부스'는 테크M 한 곳에만 있어(디스이즈게임 403) 뺐고, '불합리하다고 느끼게 해선 안 된다'는 테크M 은 히라야마·인벤 인터뷰는 시바타 발언으로 화자가 엇갈림 — 카드·숏폼 캡션 모두 '두 사람'으로 고침",
-     "와룡 2 한국어 지원: 스팀 언어 표에 한국어 체크가 있는 것처럼 보였지만 칸 구분을 확신 못 해 캡션에서 뺌 — 스팀 상점에서 한 번 보고 있으면 '한국어 자막' 덧붙일 것",
-     "숏폼은 디지털터치(국내 유통) 공식 발매일 트레일러 — 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
+     "[검증] 숫자는 11/19 출시일 끝까지 집계라 '첫 이틀 만에'를 '출시 첫날까지'로 고침 · 숏폼 0:00~0:30 자막은 대사 3줄뿐(캡션 내용과 충돌 없음) · 영상 올린 날이 20261110 으로 나와 출시 전 게시물인지 한 번 볼 것",
+     "지난 11/19 에 GTA 6 초안이 둘(메타크리틱 99·냉장고 소리) — 이번은 첫 공식 판매 숫자라 새 소식으로 냄 · 37억 9천만 달러는 회사 추정이라고 캡션에 밝힘",
+     "어벤져스: 엔드게임 흥행과 비교한 문장은 Kotaku 한 곳 계산이라 뺌 · 숏폼 0:00~0:30 은 영상을 못 보고 정함"
     ],
     "research": [
      {
-      "title": "인벤 — [GCON] '인왕'과 '와룡', 어려워도 계속 도전하게 만드는 이유 (11/19 · 강연)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323621"
+      "title": "Take-Two — Grand Theft Auto VI Shatters Entertainment Box Office Records (11/20 · 회사 추정)",
+      "link": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
      },
      {
-      "title": "인벤 — [인터뷰] Team NINJA, '어려운 게임과 불합리한 게임은 다르다' (11/19)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323624"
+      "title": "Kotaku — GTA 6 sold 32.5 million copies in pre-release (11/20)",
+      "link": "https://kotaku.com/gta-6-sold-32-5-million-copies-in-pre-release-as-take-two-crowns-it-the-biggest-entertainment-launch-in-history-2000758965"
      },
      {
-      "title": "테크M — [지스타 26] '액션의 본질은 손맛이죠'...'와룡2'·'인왕3' 개발진이 말하는 게임의 핵심 (11/20)",
-      "link": "https://www.techm.kr/news/articleView.html?idxno=157626"
+      "title": "4Gamer — 「グランド・セフト・オートVI」，発売“前”に全世界で3250万本を販売 (11/21)",
+      "link": "https://www.4gamer.net/games/758/G075801/20261121002/"
      },
      {
-      "title": "디스이즈게임 — 어렵지만 불합리하지 않게, '인왕'과 '와룡'의 설계법 (403 · 검색 요약으로 확인)",
-      "link": "https://www.thisisgame.com/articles/433007"
+      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 19세)",
+      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
      },
      {
-      "title": "스팀 — Wo Long 2: Wings of Ember (2027-03-04 · 79,800원 · 코에이 테크모)",
-      "link": "https://store.steampowered.com/app/4507990/"
-     },
-     {
-      "title": "RPG Site — Wo Long 2: Wings of Ember releases on March 4 (PS5·Xbox·Switch 2·PC)",
-      "link": "https://www.rpgsite.net/news/21411-wo-long-2-wings-of-ember-releases-on-march-4-new-alpha-demo-available"
+      "title": "Rockstar Games YouTube — Grand Theft Auto VI: Out Now (30초)",
+      "link": "https://www.youtube.com/watch?v=_yl5ELcmugI"
      }
     ],
-    "thumb": "https://i.ytimg.com/vi/2x5W97mhpnI/maxresdefault.jpg",
+    "thumb": "https://i.ytimg.com/vi/_yl5ELcmugI/maxresdefault.jpg",
     "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0d36d9fbdfeaf20d6cfb.jpg",
-     "key": "2x5W97mhpnI@5.0"
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/f1703690b84043128b48.jpg",
+     "key": "_yl5ELcmugI@0.0"
     },
     "px": {
-     "vid": "2x5W97mhpnI",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8035e9dc832c51865e9e.mp4",
+     "vid": "_yl5ELcmugI",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6b582a64ba3ece02a567.mp4",
      "off": 0.0,
-     "end": 75.0,
-     "full": 100.0
+     "end": 30.0,
+     "full": 30.0
     },
     "prep": {
      "status": "queued",
-     "at": "2026-11-20T11:13+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:crimson-desert-readable-forest",
-    "account": "디지털데일리",
-    "url": "https://www.ddaily.co.kr/page/view/2026111913214206810",
-    "image": null,
-    "head": "[지스타 2026] '사실적인 숲보다 읽기 쉬운 숲'…펄어비스가 밝힌 '붉은사막' 개발 비결",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T11:09+09:00",
-   "key": "52d2ac19",
-   "by": "claude",
-   "subjects": [
-    "붉은사막"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "[실험] 게임 속 장면 해부 — 〈붉은사막〉의 숲은 가장 사실적인 숲이 아니라 가장 읽기 쉬운 숲, 펄어비스 아트레벨 실장이 G-CON 에서 밝힌 설계",
-    "why": "연사 안근태 아트레벨 실장·윤진호 게임엔진 그래픽스 실장·11/19 G-CON 은 디지털데일리·뉴스포스트·뉴스투데이·4Gamer · '가장 사실적인 숲이 아닌 읽기 쉬운 숲' 안근태 발언은 디지털데일리 직접 인용·뉴스투데이·4Gamer 제목 · '환경은 서술자'는 뉴스포스트·4Gamer('語り部') · 보이면 갈 수 있어야 한다는 원칙은 뉴스포스트(윤진호 발언)·4Gamer(안근태 슬라이드)로 화자가 엇갈려 '두 실장이 밝힌 원칙'으로만 씀 · 약 200㎢·2만 개 단위는 디지털데일리·뉴스투데이·4Gamer · 가격·한국어는 스팀 상점"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T11:09+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈붉은사막〉의 숲은 가장 사실적인 숲이 아니라 가장 읽기 쉬운 숲을 목표로 만들어졌습니다.\n\n19일 지스타 G-CON 에서 펄어비스 안근태 아트레벨 실장이 밝힌 설계인데요, 실제 자연을 그대로 옮기는 대신 이동 경로와 시야를 기준으로 숲을 다듬었습니다. 지나가는 길은 시야를 틔우고 싸우는 자리에는 움직일 틈을 두는 식으로 나무의 밀도를 곳마다 다르게 했습니다. 환경은 배경이 아니라 플레이어에게 먼저 말을 거는 서술자라는 생각입니다.\n\n윤진호 게임엔진 그래픽스 실장과 함께 꺼낸 원칙은 하나 더 있습니다. 화면에 보이는 곳이라면 실제로 갈 수 있어야 한다는 것, 약 200㎢ 대륙을 2만 개가 넘는 단위로 나눠 불러오는 자체 엔진이 그 약속을 받칩니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 스팀 79,800원 · 한국어 음성·자막\n\n#겜디핑 #붉은사막 #펄어비스 #지스타2026 #GCON\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4ffd6204da14507275e6.jpg\n제목: 붉은사막의 숲은|읽기 쉽게 심었다\n부제: 펄어비스 G-CON 강연\n출처:\n",
-    "caption": "〈붉은사막〉의 숲은 가장 사실적인 숲이 아니라 가장 읽기 쉬운 숲을 목표로 만들어졌습니다.\n\n19일 지스타 G-CON 에서 펄어비스 안근태 아트레벨 실장이 밝힌 설계인데요, 실제 자연을 그대로 옮기는 대신 이동 경로와 시야를 기준으로 숲을 다듬었습니다. 지나가는 길은 시야를 틔우고 싸우는 자리에는 움직일 틈을 두는 식으로 나무의 밀도를 곳마다 다르게 했습니다. 환경은 배경이 아니라 플레이어에게 먼저 말을 거는 서술자라는 생각입니다.\n\n윤진호 게임엔진 그래픽스 실장과 함께 꺼낸 원칙은 하나 더 있습니다. 화면에 보이는 곳이라면 실제로 갈 수 있어야 한다는 것, 약 200㎢ 대륙을 2만 개가 넘는 단위로 나눠 불러오는 자체 엔진이 그 약속을 받칩니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 스팀 79,800원 · 한국어 음성·자막\n\n#겜디핑 #붉은사막 #펄어비스 #지스타2026 #GCON",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4ffd6204da14507275e6.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4ffd6204da14507275e6.jpg",
-      "credit": "신뢰"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "붉은사막의 숲은|읽기 쉽게 심었다",
-      "sub": "펄어비스 G-CON 강연"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "11/18 pm 게임대상 8관왕 초안과 같은 게임 — 각도(숲 설계 해부)가 달라 실험 칸으로 냄 · 스팀은 지금 20% 할인(11/30까지)이라 정가만 적음",
-     "숏폼은 공식 '붉은사막' 채널 한국어 더빙 출시 트레일러 — 0:05~0:30 에 숲·대륙 장면이 나오는지 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "디지털데일리 — '사실적인 숲보다 읽기 쉬운 숲'…펄어비스가 밝힌 '붉은사막' 개발 비결 (11/19)",
-      "link": "https://www.ddaily.co.kr/page/view/2026111913214206810"
-     },
-     {
-      "title": "뉴스포스트 — '붉은사막' 제작진 '화면에 보이면 실제로 갈 수 있어야' (11/19)",
-      "link": "https://www.newspost.kr/news/articleView.html?idxno=227583"
-     },
-     {
-      "title": "뉴스투데이 — 펄어비스, '붉은사막' 200㎢ 대륙 구현 비결 공개 (11/19)",
-      "link": "https://www.news2day.co.kr/article/20261119500323"
-     },
-     {
-      "title": "4Gamer — 必要なのは最もリアルな森ではなく「最も読みやすい森」 [G-STAR 2026] (11/20)",
-      "link": "https://www.4gamer.net/games/484/G048495/20261119038/"
-     },
-     {
-      "title": "스팀 — 붉은사막 (79,800원 · 한국어 인터페이스·음성·자막 · Pearl Abyss)",
-      "link": "https://store.steampowered.com/app/3321460/"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a4cd49af413e5477a092.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/825706bb95fe8f740c83.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a4cd49af413e5477a092.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T11:10+09:00",
-     "v": {
-      "A": "535761a2"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=FLdy3yc0Nfw\n구간: 0:05-0:30\n곡: 길을 잃지 않게 심었다\n아티스트: 붉은사막의 숲은\n피처링:\n후킹: \n출처: 붉은사막 | Crimson Desert\n자막: 자동",
-    "caption": "〈붉은사막〉 공식 출시 트레일러(한국어 더빙)입니다.\n\n펄어비스 안근태 아트레벨 실장은 19일 지스타 G-CON 에서 가장 사실적인 숲이 아니라 읽기 쉬운 숲을 만들려 했다고 밝혔는데요, 길에서는 시야를 틔우고 싸우는 자리에는 틈을 두도록 나무 밀도를 곳마다 다르게 했습니다. 화면에 보이는 곳은 실제로 갈 수 있어야 한다는 원칙도 함께 소개했습니다.\n\nPS5 · 엑스박스 시리즈 X|S · PC · 스팀 79,800원 · 한국어 음성·자막\n\n#겜디핑 #붉은사막 #펄어비스 #지스타2026 #GCON",
-    "hooks": {
-     "A": "붉은사막의 숲은 / 길을 잃지 않게 심었다",
-     "B": "보이는 곳은 다 간다, / 붉은사막의 약속",
-     "C": "사실적인 숲 대신 / 읽기 쉬운 숲을 만든 이유"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=FLdy3yc0Nfw",
-     "credit": "붉은사막 | Crimson Desert",
-     "range": [
-      5.0,
-      30.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "11/18 pm 게임대상 8관왕 초안과 같은 게임 — 각도(숲 설계 해부)가 달라 실험 칸으로 냄 · 스팀은 지금 20% 할인(11/30까지)이라 정가만 적음",
-     "숏폼은 공식 '붉은사막' 채널 한국어 더빙 출시 트레일러 — 0:05~0:30 에 숲·대륙 장면이 나오는지 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "디지털데일리 — '사실적인 숲보다 읽기 쉬운 숲'…펄어비스가 밝힌 '붉은사막' 개발 비결 (11/19)",
-      "link": "https://www.ddaily.co.kr/page/view/2026111913214206810"
-     },
-     {
-      "title": "뉴스포스트 — '붉은사막' 제작진 '화면에 보이면 실제로 갈 수 있어야' (11/19)",
-      "link": "https://www.newspost.kr/news/articleView.html?idxno=227583"
-     },
-     {
-      "title": "뉴스투데이 — 펄어비스, '붉은사막' 200㎢ 대륙 구현 비결 공개 (11/19)",
-      "link": "https://www.news2day.co.kr/article/20261119500323"
-     },
-     {
-      "title": "4Gamer — 必要なのは最もリアルな森ではなく「最も読みやすい森」 [G-STAR 2026] (11/20)",
-      "link": "https://www.4gamer.net/games/484/G048495/20261119038/"
-     },
-     {
-      "title": "스팀 — 붉은사막 (79,800원 · 한국어 인터페이스·음성·자막 · Pearl Abyss)",
-      "link": "https://store.steampowered.com/app/3321460/"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/FLdy3yc0Nfw/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a12f29523f8dd012fa95.jpg",
-     "key": "FLdy3yc0Nfw@5.0"
-    },
-    "px": {
-     "vid": "FLdy3yc0Nfw",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/70fc4328f9d80d366aa3.mp4",
-     "off": 0.0,
-     "end": 75.0,
-     "full": 103.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-20T11:13+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:kitase-half-fans",
-    "account": "인벤",
-    "url": "https://www.inven.co.kr/webzine/news/?news=323657",
-    "image": null,
-    "head": "[GCON] \"한 번 세상에 나온 게임은 절반이 팬의 것\", 키타세 요시노리와 'FF7'",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T19:05+09:00",
-   "key": "4aa88db7",
-   "by": "claude",
-   "subjects": [
-    "키타세 요시노리",
-    "파이널 판타지 VII 리벨레이션"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "FF7 리메이크를 이끈 키타세 요시노리가 지스타 G-CON 에서 한 말 — 한 번 세상에 나온 작품은 절반이 팬의 것, 바꾸고 싶던 원작 디렉터와 지키고 싶던 하마구치",
-    "why": "강연(11/20 부산 벡스코 G-CON 2일차)·'절반은 팬의 것'은 인벤(직접 인용)·게임뷰(제목·간접 인용) · 하마구치는 원작 팬들이 기억하는 부분을 지키자는 쪽이었다는 것은 인벤·게임뷰 · 처음 하는 사람에겐 그때의 감동, 결말 아는 팬에겐 새 경험이라는 두 숙제는 인벤·게임뷰 · 리벨레이션은 완결편부터 해도 되게 만든다는 것은 게임뷰, 사이드 퀘스트 영상 소개는 인벤·게임뷰 · 2027년 4월 8일은 인벤·게임뷰·VGC 등 검색 요약 · 플랫폼 PS5·스위치 2·엑스박스·PC 는 검색 요약 여러 곳(VGC·Keengamer)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T19:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈파이널 판타지 VII〉 리메이크를 이끌어 온 키타세 요시노리 프로듀서가 한 번 세상에 나온 작품은 절반이 팬의 것이라고 말했습니다.\n\n20일 부산 지스타 G-CON 에서 리메이크 3부작을 돌아본 자리였는데요, 원작 요소를 과감하게 바꿔도 된다고 본 키타세와 달리, 원작을 즐긴 세대인 하마구치 나오키 디렉터는 팬들이 기억하는 부분을 지키자는 쪽이었습니다. 처음 하는 사람에게는 그때의 감동을, 결말을 아는 오랜 팬에게는 새로운 경험을 주는 것이 리메이크의 두 숙제였다고 했습니다.\n\n이날 무대에서는 마지막 장 〈리벨레이션〉의 새 사이드 퀘스트 영상도 소개됐습니다.\n\n〈파이널 판타지 VII 리벨레이션〉 2027년 4월 8일 출시 · PS5 · 닌텐도 스위치 2 · 엑스박스 시리즈 X|S · PC\n\n#겜디핑 #파이널판타지7 #FF7리벨레이션 #키타세요시노리 #지스타2026\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/95383e226c946adb8f2f.jpg\n제목: 키타세 요시노리,|작품 절반은 팬의 것\n부제: 지스타 G-CON 강연\n출처: 인벤\n",
-    "caption": "〈파이널 판타지 VII〉 리메이크를 이끌어 온 키타세 요시노리 프로듀서가 한 번 세상에 나온 작품은 절반이 팬의 것이라고 말했습니다.\n\n20일 부산 지스타 G-CON 에서 리메이크 3부작을 돌아본 자리였는데요, 원작 요소를 과감하게 바꿔도 된다고 본 키타세와 달리, 원작을 즐긴 세대인 하마구치 나오키 디렉터는 팬들이 기억하는 부분을 지키자는 쪽이었습니다. 처음 하는 사람에게는 그때의 감동을, 결말을 아는 오랜 팬에게는 새로운 경험을 주는 것이 리메이크의 두 숙제였다고 했습니다.\n\n이날 무대에서는 마지막 장 〈리벨레이션〉의 새 사이드 퀘스트 영상도 소개됐습니다.\n\n〈파이널 판타지 VII 리벨레이션〉 2027년 4월 8일 출시 · PS5 · 닌텐도 스위치 2 · 엑스박스 시리즈 X|S · PC\n\n#겜디핑 #파이널판타지7 #FF7리벨레이션 #키타세요시노리 #지스타2026",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/95383e226c946adb8f2f.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/20/news/i1424935096.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/95383e226c946adb8f2f.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/20/news/i1424935096.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/95383e226c946adb8f2f.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/20/news/i1424935096.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/95383e226c946adb8f2f.jpg",
-      "credit": "인벤",
-      "from": "https://static.inven.co.kr/column/2026/11/20/news/i1424935096.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "키타세 요시노리,|작품 절반은 팬의 것",
-      "sub": "지스타 G-CON 강연"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진이 키타세가 아닌 리벨레이션 키 아트(인벤) — 게임뷰 강연 사진은 해상도 미달로 빠짐, 키타세 강연 사진으로 바꿀지 볼 것 · 숏폼 영상 내려받기가 403 으로 실패해 다시 받아야 함",
-     "리벨레이션 한국어 지원·국내 가격은 확인 못 해 뺌 — 국내 PS 스토어에 상품이 있으면 덧붙일 것 · 플랫폼은 검색 요약 기준이라 공식 사이트에서 한 번 볼 것",
-     "숏폼은 Square Enix 공식 발매일 트레일러 — 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "인벤 — [GCON] '한 번 세상에 나온 게임은 절반이 팬의 것', 키타세 요시노리와 'FF7' (11/20)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323657"
-     },
-     {
-      "title": "게임뷰 — [현장] 'FF7' 리메이크 30년의 기록, '작품 절반은 팬의 것' (11/20)",
-      "link": "https://www.gamevu.co.kr/news/articleView.html?idxno=62452"
-     },
-     {
-      "title": "VGC — Square Enix confirms Final Fantasy 7 Revelation release date (403 · 검색 요약으로 확인)",
-      "link": "https://www.videogameschronicle.com/news/square-enix-confirms-final-fantasy-7-revelation-release-date/"
-     },
-     {
-      "title": "Keengamer — Final Fantasy VII Revelation announced release date and platforms",
-      "link": "https://www.keengamer.com/articles/news/final-fantasy-vii-revelation-announced-release-date-and-platforms"
-     },
-     {
-      "title": "Square Enix YouTube — FINAL FANTASY VII REVELATION | Release Date Reveal Trailer",
-      "link": "https://www.youtube.com/watch?v=8YHP48v7vyg"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dc012a934571cf871e9a.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a60bcbf6e7b4db45b74f.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dc012a934571cf871e9a.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T19:05+09:00",
-     "v": {
-      "A": "88f0d6c2"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=8YHP48v7vyg\n구간: 0:05-0:30\n곡: 내년 4월 8일에 온다\n아티스트: FF7 리메이크 마지막 장,\n피처링:\n후킹: \n출처: Square Enix\n자막: 자동",
-    "caption": "〈파이널 판타지 VII 리벨레이션〉 공식 발매일 트레일러입니다.\n\n리메이크를 이끌어 온 키타세 요시노리 프로듀서는 20일 부산 지스타 G-CON 에서 한 번 세상에 나온 작품은 절반이 팬의 것이라고 말했는데요, 이날 무대에서는 마지막 장의 새 사이드 퀘스트 영상도 소개됐습니다.\n\n2027년 4월 8일 출시 · PS5 · 닌텐도 스위치 2 · 엑스박스 시리즈 X|S · PC\n\n#겜디핑 #파이널판타지7 #FF7리벨레이션 #키타세요시노리 #스퀘어에닉스",
-    "hooks": {
-     "A": "FF7 리메이크 마지막 장, / 내년 4월 8일에 온다",
-     "B": "작품 절반은 팬의 것, / 키타세의 마지막 장",
-     "C": "리벨레이션 / 발매일 공개 트레일러"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=8YHP48v7vyg",
-     "credit": "Square Enix",
-     "range": [
-      5.0,
-      30.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진이 키타세가 아닌 리벨레이션 키 아트(인벤) — 게임뷰 강연 사진은 해상도 미달로 빠짐, 키타세 강연 사진으로 바꿀지 볼 것 · 숏폼 영상 내려받기가 403 으로 실패해 다시 받아야 함",
-     "리벨레이션 한국어 지원·국내 가격은 확인 못 해 뺌 — 국내 PS 스토어에 상품이 있으면 덧붙일 것 · 플랫폼은 검색 요약 기준이라 공식 사이트에서 한 번 볼 것",
-     "숏폼은 Square Enix 공식 발매일 트레일러 — 0:05~0:30 은 영상을 못 보고 정함, 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "인벤 — [GCON] '한 번 세상에 나온 게임은 절반이 팬의 것', 키타세 요시노리와 'FF7' (11/20)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323657"
-     },
-     {
-      "title": "게임뷰 — [현장] 'FF7' 리메이크 30년의 기록, '작품 절반은 팬의 것' (11/20)",
-      "link": "https://www.gamevu.co.kr/news/articleView.html?idxno=62452"
-     },
-     {
-      "title": "VGC — Square Enix confirms Final Fantasy 7 Revelation release date (403 · 검색 요약으로 확인)",
-      "link": "https://www.videogameschronicle.com/news/square-enix-confirms-final-fantasy-7-revelation-release-date/"
-     },
-     {
-      "title": "Keengamer — Final Fantasy VII Revelation announced release date and platforms",
-      "link": "https://www.keengamer.com/articles/news/final-fantasy-vii-revelation-announced-release-date-and-platforms"
-     },
-     {
-      "title": "Square Enix YouTube — FINAL FANTASY VII REVELATION | Release Date Reveal Trailer",
-      "link": "https://www.youtube.com/watch?v=8YHP48v7vyg"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/8YHP48v7vyg/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/4560d4f67a2509535969.jpg",
-     "key": "8YHP48v7vyg@5.0"
-    },
-    "px": {
-     "vid": "8YHP48v7vyg",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/ea9ec76a67a7bfd2a706.mp4",
-     "off": 0.0,
-     "end": 75.0,
-     "full": 124.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-20T19:07+09:00"
-    }
-   },
-   "pick": {
-    "rank": 2,
-    "why": "FF7 리메이크를 이끈 사람의 말 '작품 절반은 팬의 것' · 오랜 팬 이야기 · 리벨레이션 공식 발매일 트레일러 숏폼",
-    "at": "2026-11-20T19:05+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:kim-mikami-handmade",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783845",
-    "image": null,
-    "head": "[지스타 26] 김형태·미카미 신지가 말하는 내러티브와 AI",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T19:05+09:00",
-   "key": "750200d5",
-   "by": "claude",
-   "subjects": [
-    "김형태",
-    "미카미 신지"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "시프트업 김형태와 〈바이오하자드〉의 미카미 신지가 지스타 키노트에서 한 무대 — 남은 탄환으로 공포를 조절한 설계, AI 시대일수록 사람 손맛",
-    "why": "대담(11/19 G-CON 키노트)은 게임메카·테크M·게임톡·조세금융신문·아이뉴스24 · 탄환 수로 공포와 여유를 조절했다는 미카미 설명은 테크M(직접 인용)·게임톡·조세금융신문 · '시작도 사람의 손으로, 마무리도 사람의 손으로'는 게임메카·게임톡·아이뉴스24 · 디자인은 AI에 맡기지 않는다는 미카미 발언은 게임메카·게임톡 · '게임은 효율적이라고 사람들이 좋아해 주지 않는다'는 게임메카·조세금융신문·아이뉴스24 · AI 게임이 쏟아질수록 핸드메이드가 돋보인다는 전망은 게임메카·게임톡·아이뉴스24 · 언바운드가 시프트업 산하라는 것은 테크M·조세금융신문(4월 지분 전량 인수)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T19:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n시프트업 김형태 대표와 〈바이오하자드〉를 만든 미카미 신지 대표가 부산에서 한 무대에 앉았습니다.\n\n19일 지스타 G-CON 키노트에서 미카미 대표는 〈바이오하자드〉의 탄환 이야기를 꺼냈는데요, 남은 탄이 몇 발이냐에 따라 공포가 커지기도 하고 여유가 생기기도 해서 그 사이의 완급을 맞추는 일이 중요했다는 설명이었습니다. AI 이야기에서는 디자인을 AI에 맡기지 않는다고 했고, 김 대표는 시작도 사람의 손으로, 마무리도 사람의 손으로 한다는 원칙을 밝혔습니다.\n\n김 대표는 AI로 만든 게임이 쏟아질수록 사람 손맛이 느껴지는 게임이 더 돋보일 거라고 내다봤습니다. 효율적으로 만들었다고 사람들이 좋아해 주지는 않는다는 말과 함께였습니다.\n\n미카미 신지 대표의 언바운드는 시프트업 산하 스튜디오 · G-CON 2026 19일 부산 벡스코\n\n#겜디핑 #김형태 #미카미신지 #시프트업 #바이오하자드 #지스타2026\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8428dc23084d8ffb4bac.jpg\n제목: 김형태와 미카미 신지,|시작과 끝은 사람 손으로\n부제: 지스타 G-CON 키노트 대담\n출처: 게임톡\n",
-    "caption": "시프트업 김형태 대표와 〈바이오하자드〉를 만든 미카미 신지 대표가 부산에서 한 무대에 앉았습니다.\n\n19일 지스타 G-CON 키노트에서 미카미 대표는 〈바이오하자드〉의 탄환 이야기를 꺼냈는데요, 남은 탄이 몇 발이냐에 따라 공포가 커지기도 하고 여유가 생기기도 해서 그 사이의 완급을 맞추는 일이 중요했다는 설명이었습니다. AI 이야기에서는 디자인을 AI에 맡기지 않는다고 했고, 김 대표는 시작도 사람의 손으로, 마무리도 사람의 손으로 한다는 원칙을 밝혔습니다.\n\n김 대표는 AI로 만든 게임이 쏟아질수록 사람 손맛이 느껴지는 게임이 더 돋보일 거라고 내다봤습니다. 효율적으로 만들었다고 사람들이 좋아해 주지는 않는다는 말과 함께였습니다.\n\n미카미 신지 대표의 언바운드는 시프트업 산하 스튜디오 · G-CON 2026 19일 부산 벡스코\n\n#겜디핑 #김형태 #미카미신지 #시프트업 #바이오하자드 #지스타2026",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8428dc23084d8ffb4bac.jpg",
-      "credit": "게임톡",
-      "from": "https://cdn.gametoc.co.kr/news/photo/202611/113230_328617_472.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/11480ec76ee919180298.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/845/gm442342_-1.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8428dc23084d8ffb4bac.jpg",
-      "credit": "게임톡",
-      "from": "https://cdn.gametoc.co.kr/news/photo/202611/113230_328617_472.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/11480ec76ee919180298.jpg",
-      "credit": "게임메카",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/845/gm442342_-1.webp"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "김형태와 미카미 신지,|시작과 끝은 사람 손으로",
-      "sub": "지스타 G-CON 키노트 대담"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "탄약을 전부 처치에 필요한 양의 1.5~2배로 깔았다는 숫자는 게임톡 한 곳이라 뺌 · 블러드 레인 언급은 테크M 한 곳이라 차기작 이름을 캡션에서 뺌",
-     "대담 공식 영상이 없어 숏폼은 쓰지 않음 · 하루 지난 강연(19일)이라 오늘 안에 올리는 게 좋음"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — [지스타 26] 김형태·미카미 신지가 말하는 내러티브와 AI (11/19)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783845"
-     },
-     {
-      "title": "테크M — [지스타 26] '이용자 몰입감 극대화 최우선'...김형태·미카미 신지의 개발 철학 (11/19)",
-      "link": "https://www.techm.kr/news/articleView.html?idxno=157560"
-     },
-     {
-      "title": "게임톡 — 김형태 대표 'AI 시대일수록 손으로 만든 게임이 돋보일 것' (11/19)",
-      "link": "https://www.gametoc.co.kr/news/articleView.html?idxno=113230"
-     },
-     {
-      "title": "조세금융신문 — 김형태·미카미 신지, 전투와 공간으로 이야기 전한다…AI는 창작 도구 (11/19 · 4월 언바운드 인수)",
-      "link": "https://www.tfmedia.co.kr/news/article.html?no=209038"
-     },
-     {
-      "title": "아이뉴스24 — 김형태 시프트업 대표 'AI 게임 쏟아질 2027년…수작업 돋보일 것' (11/19)",
-      "link": "https://m.inews24.com/v/2028184"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1b943f11aee1292cc314.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/03fbe57288eaefb3a0ab.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/1b943f11aee1292cc314.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T19:05+09:00",
-     "v": {
-      "A": "a6747da3"
-     }
-    }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "김형태×미카미 신지 키노트 · 바이오하자드 탄환 설계와 '시작도 끝도 사람 손' · 여러 매체가 받은 대담",
-    "at": "2026-11-20T19:05+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:macross-blue-archive",
-    "account": "플레이포럼",
-    "url": "https://www.playforum.net/news/articleView.html?idxno=635903",
-    "image": null,
-    "head": "김용하 PD \"질문은 인간의 역할\"...카와모리 쇼지 감독과 나눈 AI 창작론",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T19:05+09:00",
-   "key": "5986272c",
-   "by": "claude",
-   "subjects": [
-    "김용하",
-    "카와모리 쇼지"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "〈블루 아카이브〉 김용하 PD가 어릴 적 보고 자란 〈마크로스〉의 카와모리 쇼지 감독과 한 무대 — '마크로스가 없었다면 블루 아카이브도 없었다', 그리고 AI 가 못 하는 일",
-    "why": "대담(11/20 G-CON 2일차)·두 사람 직함은 인벤·테크M·플레이포럼·월요신문 · '마크로스가 없었다면 블루 아카이브도 탄생하지 않았을 것'은 월요신문·플레이포럼 직접 인용 · 어린 시절 마크로스가 개발자의 길에 영향은 인벤·플레이포럼 · 가수 캐릭터가 아티스트의 디자인을 팀원 전원이 호평한 데서 출발했다는 카와모리 발언은 월요신문·플레이포럼 · AI가 할 수 있는 일은 맡기고 직접 체험하고 느끼는 일은 사람의 것이라는 카와모리 발언은 인벤(직접 인용)·플레이포럼·현대경제신문 제목 · '질문은 인간의 역할'은 플레이포럼 직접 인용·뉴스투데이 제목"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T19:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈블루 아카이브〉의 김용하 PD가 어린 시절 보고 자란 〈마크로스〉의 카와모리 쇼지 감독과 한 무대에 섰습니다.\n\n20일 지스타 G-CON 대담에서 김 PD는 마크로스가 없었다면 블루 아카이브도 탄생하지 않았을 거라고 말했는데요, 어린 시절 마크로스를 보며 받은 감동이 게임 개발자의 길을 고르는 데 영향을 줬다고도 했습니다. 카와모리 감독은 마크로스의 가수 캐릭터가 아티스트의 디자인 한 장을 팀원 모두가 좋아한 데서 출발했다는 뒷이야기를 들려줬습니다.\n\nAI 이야기도 오갔습니다. 카와모리 감독은 AI가 할 수 있는 일은 맡기면 되지만 직접 체험하고 느끼는 일은 사람의 몫이라고 했고, 김 PD는 질문을 던지는 것이 사람의 역할이라고 답했습니다.\n\n〈블루 아카이브〉 넥슨게임즈 개발 · G-CON 2026 20일 부산 벡스코\n\n#겜디핑 #블루아카이브 #마크로스 #카와모리쇼지 #김용하 #지스타2026\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/cd0c88357c2eb0134f3f.jpg\n제목: 마크로스가 없었다면|블루 아카이브도 없었다\n부제: 카와모리 쇼지 × 김용하 · G-CON\n출처: 플레이포럼\n",
-    "caption": "〈블루 아카이브〉의 김용하 PD가 어린 시절 보고 자란 〈마크로스〉의 카와모리 쇼지 감독과 한 무대에 섰습니다.\n\n20일 지스타 G-CON 대담에서 김 PD는 마크로스가 없었다면 블루 아카이브도 탄생하지 않았을 거라고 말했는데요, 어린 시절 마크로스를 보며 받은 감동이 게임 개발자의 길을 고르는 데 영향을 줬다고도 했습니다. 카와모리 감독은 마크로스의 가수 캐릭터가 아티스트의 디자인 한 장을 팀원 모두가 좋아한 데서 출발했다는 뒷이야기를 들려줬습니다.\n\nAI 이야기도 오갔습니다. 카와모리 감독은 AI가 할 수 있는 일은 맡기면 되지만 직접 체험하고 느끼는 일은 사람의 몫이라고 했고, 김 PD는 질문을 던지는 것이 사람의 역할이라고 답했습니다.\n\n〈블루 아카이브〉 넥슨게임즈 개발 · G-CON 2026 20일 부산 벡스코\n\n#겜디핑 #블루아카이브 #마크로스 #카와모리쇼지 #김용하 #지스타2026",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/cd0c88357c2eb0134f3f.jpg",
-      "credit": "플레이포럼",
-      "from": "https://cdn.playforum.net/news/photo/202611/635903_68260_86.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/cd0c88357c2eb0134f3f.jpg",
-      "credit": "플레이포럼",
-      "from": "https://cdn.playforum.net/news/photo/202611/635903_68260_86.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "마크로스가 없었다면|블루 아카이브도 없었다",
-      "sub": "카와모리 쇼지 × 김용하 · G-CON"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진(플레이포럼)에 마크로스 포스터 옆 한 사람만 보임(카와모리 감독으로 보임) — 김용하 PD는 안 나옴, 두 사람이 함께 나온 사진이 있으면 바꿀 것",
-     "'초등학생 때 마크로스 보고 울었다'·'사과는 베어 물 수 없다'·'노래하며 춤추는 파일럿'은 각각 한 매체에만 있어 뺌 · 김용하 직함은 매체마다 PD·IO본부장 — 캡션은 'PD'",
-     "대담 공식 영상이 없어 숏폼은 쓰지 않음 · 표지 사진이 두 사람이 함께 나온 것인지 눈으로 확인"
-    ],
-    "research": [
-     {
-      "title": "인벤 — [GCON] 메카 디자인의 전설 '카와모리 쇼지'. 그리고 김용하 PD (11/20)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=323658"
-     },
-     {
-      "title": "월요신문 — [지스타 2026] ''블아'의 뿌리는 마크로스'…지콘 김용하·카와모리 쇼지 대담 (11/20)",
-      "link": "https://www.wolyo.co.kr/news/articleView.html?idxno=320826"
-     },
-     {
-      "title": "플레이포럼 — 김용하 PD '질문은 인간의 역할'...카와모리 쇼지 감독과 나눈 AI 창작론 (11/20)",
-      "link": "https://www.playforum.net/news/articleView.html?idxno=635903"
-     },
-     {
-      "title": "테크M — [지스타 26] '어린 시절 추억 마크로스로 승화'...김용하·카와모리 쇼지 창작론 (11/20)",
-      "link": "https://www.techm.kr/news/articleView.html?idxno=157651"
-     },
-     {
-      "title": "뉴스투데이 — 김용하 넥슨게임즈 본부장 'AI 시대, 어떤 질문 던질지가 중요' (11/20)",
-      "link": "https://www.news2day.co.kr/article/20261120500267"
-     },
-     {
-      "title": "현대경제신문 — 카와모리 쇼지 감독 '창작 본질은 인간 감각과 경험' (11/20)",
-      "link": "https://www.finomy.com/news/articleView.html?idxno=267460"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/74be5e968b53157ee96c.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/e9f263863fedf08904f4.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/74be5e968b53157ee96c.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T19:05+09:00",
-     "v": {
-      "A": "86bf9d16"
-     }
+     "at": "2026-11-21T11:04+09:00"
     }
    },
    "pick": {
     "rank": 1,
-    "why": "어릴 적 보고 자란 작품의 감독과 한 무대에 선 개발자 — 사람과 사람이 만나는 장면 · '마크로스가 없었다면 블루 아카이브도 없었다'는 두 매체 직접 인용",
-    "at": "2026-11-20T19:05+09:00"
+    "why": "출시 이틀 뒤 나온 첫 공식 숫자 · 어제까지 추정치뿐이던 판매량이 테이크투 발표로 확정 · 공식 'Out Now' 30초 영상 숏폼",
+    "at": "2026-11-21T11:04+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:can-it-run-doom",
+    "account": "4Gamer",
+    "url": "https://www.4gamer.net/games/999/G999905/20261120019/",
+    "image": null,
+    "head": "大腸菌から妊娠検査キットまで，さまざまな「DOOM」移植や表示チャレンジについての書籍がクラウドファンディング中",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T11:04+09:00",
+   "key": "77b9186c",
+   "by": "claude",
+   "subjects": [
+    "둠",
+    "데이비드 L. 크래독"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "[실험] 게임 안 하는 사람도 읽히는 입문형 — 임신 테스트기·대장균에서도 〈둠〉이 돌아간 이유, 1997년 소스 코드 공개에서 시작된 놀이 · 그 이식들을 쫓은 책 펀딩",
+    "why": "1993년 출시·1997년 소스 코드 공개는 4Gamer(11/20)·Doom Wiki('Doom source code') · 임신 테스트기 둠(2020 · 원래 CPU·LCD를 바꾸고 껍데기만 남김)은 PC Gamer·GamesRadar·TechSpot 검색 요약 · 대장균 둠(MIT 연구자 · 한 장면 약 70분)은 BGR·Popular Science·TweakTown · 책 제목·저자 크래독·보스 파이트 북스·킥스타터 11/10 시작은 Retro Handhelds(11/12)·VideoGameCanon · 로메로 인터뷰 수록은 4Gamer·Retro Handhelds · 목표액 넘김은 4Gamer(5천→2만1천 달러)·rom-game.fr('세 배') · 전자책 8달러·2027년 1월은 Notebookcheck·검색 요약 · 킥스타터 12/10 마감은 4Gamer"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T11:04+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n1993년에 나온 〈둠〉은 임신 테스트기 화면에도, 대장균으로 만든 화면에도 떠올랐습니다.\n\n시작은 1997년 이드 소프트웨어가 〈둠〉의 소스 코드를 공개한 일이었는데요, 누구나 코드를 가져다 다른 기계로 옮길 수 있게 되면서 '그걸로 둠 돌아가?'가 하나의 놀이가 됐습니다. 2020년의 임신 테스트기 둠은 원래 칩과 화면을 바꾸고 껍데기만 남긴 것이었고, MIT 연구자가 대장균으로 띄운 둠은 한 장면이 나타나는 데 70분쯤 걸렸습니다.\n\n되느냐보다 어떻게, 왜 했느냐가 더 재미있는 놀이인 셈입니다. 그 이상한 이식들을 쫓은 책 〈But Can It Run DOOM?〉이 킥스타터에서 펀딩 중이고, 존 로메로와의 인터뷰도 실립니다.\n\n데이비드 L. 크래독 지음 · 보스 파이트 북스 · 킥스타터 12월 10일까지 · 전자책 8달러 · 2027년 1월 전자책부터 받음\n\n#겜디핑 #둠 #DOOM #존로메로 #킥스타터\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2229377ab3dce5b7ceb9.jpg\n제목: 임신 테스트기에서도|둠을 돌리는 이유\n부제: 둠 이식 이야기, 책으로 나온다\n출처: Boss Fight Books\n",
+    "caption": "1993년에 나온 〈둠〉은 임신 테스트기 화면에도, 대장균으로 만든 화면에도 떠올랐습니다.\n\n시작은 1997년 이드 소프트웨어가 〈둠〉의 소스 코드를 공개한 일이었는데요, 누구나 코드를 가져다 다른 기계로 옮길 수 있게 되면서 '그걸로 둠 돌아가?'가 하나의 놀이가 됐습니다. 2020년의 임신 테스트기 둠은 원래 칩과 화면을 바꾸고 껍데기만 남긴 것이었고, MIT 연구자가 대장균으로 띄운 둠은 한 장면이 나타나는 데 70분쯤 걸렸습니다.\n\n되느냐보다 어떻게, 왜 했느냐가 더 재미있는 놀이인 셈입니다. 그 이상한 이식들을 쫓은 책 〈But Can It Run DOOM?〉이 킥스타터에서 펀딩 중이고, 존 로메로와의 인터뷰도 실립니다.\n\n데이비드 L. 크래독 지음 · 보스 파이트 북스 · 킥스타터 12월 10일까지 · 전자책 8달러 · 2027년 1월 전자책부터 받음\n\n#겜디핑 #둠 #DOOM #존로메로 #킥스타터",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2229377ab3dce5b7ceb9.jpg",
+      "credit": "Boss Fight Books",
+      "from": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Can-it-run-Doom.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2229377ab3dce5b7ceb9.jpg",
+      "credit": "Boss Fight Books",
+      "from": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Can-it-run-Doom.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "임신 테스트기에서도|둠을 돌리는 이유",
+      "sub": "둠 이식 이야기, 책으로 나온다"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 대장균 둠은 실제로 돌아간 게 아니라 장면을 띄운 것(BGR)이라 첫 문장을 '화면에 떠올랐다'로 고침 · 배너 사진은 해상도 미달로 빠져 Notebookcheck 책 표지 이미지가 표지로 쓰임 — 크레딧은 Boss Fight Books 로 바꿈(원 이미지 저작권자 한 번 볼 것)",
+     "킥스타터 마감 12월 10일은 4Gamer 한 곳(다른 곳은 '12월'까지만) — 킥스타터 페이지에서 한 번 볼 것 · 모금액은 바뀌는 숫자라 뺌",
+     "공식 영상이 없어 숏폼은 쓰지 않음 · 표지 사진은 책 홍보 배너(Retro Handhelds) — 글자가 겹치지 않는지 확인"
+    ],
+    "research": [
+     {
+      "title": "4Gamer — 大腸菌から妊娠検査キットまで…「DOOM」移植…書籍がクラウドファンディング中 (11/20)",
+      "link": "https://www.4gamer.net/games/999/G999905/20261120019/"
+     },
+     {
+      "title": "Retro Handhelds — But Can It Run DOOM? Turns Strange Ports Into a New Book (11/12 · David L. Craddock · Boss Fight Books)",
+      "link": "https://retrohandhelds.gg/but-can-it-run-doom-turns-strange-ports-into-a-new-book/"
+     },
+     {
+      "title": "Notebookcheck — Doom on pregnancy test and Ikea lamp (11/12 · 전자책 8달러 · 2027년 1월)",
+      "link": "https://www.notebookcheck.net/Doom-on-pregnancy-test-and-Ikea-lamp-But-can-it-run-Doom-tracks-down-bizarre-ports.1449033.0.html"
+     },
+     {
+      "title": "Doom Wiki — Doom source code (1997년 12월 23일 공개)",
+      "link": "https://www.doomwiki.org/wiki/Doom_source_code"
+     },
+     {
+      "title": "PC Gamer — Here's Doom running on a pregnancy test (2020)",
+      "link": "https://www.pcgamer.com/uk/heres-doom-running-on-a-pregnancy-test"
+     },
+     {
+      "title": "Popular Science — Running 'Doom' on E. coli cells… very, very slowly",
+      "link": "https://www.popsci.com/science/doom-e-coli-cells"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5fcb3f58a0d66028f76c.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/f90c6b4810e1ab741587.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5fcb3f58a0d66028f76c.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T11:04+09:00",
+     "v": {
+      "A": "24a5a3eb"
+     }
+    }
+   },
+   "pick": {
+    "rank": 2,
+    "why": "[실험] 게임 안 하는 사람도 아는 '그걸로 둠 돌아가?' 밈의 뿌리 해부 · 임신 테스트기·대장균이라는 묘한 사실이 첫 문장",
+    "at": "2026-11-21T11:04+09:00"
    },
    "corner_name": "소식"
   }
@@ -743,7 +286,7 @@
  "skipped": [],
  "corners": {
   "week": "11/16~11/22",
-  "days_left": 3,
+  "days_left": 2,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -801,7 +344,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 3,
+    "need_today": 4,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -813,7 +356,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 2,
+    "need_today": 3,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -885,7 +428,7 @@
     "weekly": 1,
     "done": 0,
     "left": 1,
-    "need_today": 1,
+    "need_today": 0,
     "day": 4,
     "next_no": 1,
     "drafts": 0,
@@ -912,14 +455,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 5,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-20T19:07+09:00"
+  "at": "2026-11-21T11:04+09:00"
  },
  "queue": {
-  "next": "2026-11-20T19:09+09:00",
+  "next": "2026-11-21T11:06+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
