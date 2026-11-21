@@ -166,11 +166,6 @@
      "at": "2026-11-21T11:04+09:00"
     }
    },
-   "pick": {
-    "rank": 1,
-    "why": "출시 이틀 뒤 나온 첫 공식 숫자 · 어제까지 추정치뿐이던 판매량이 테이크투 발표로 확정 · 공식 'Out Now' 30초 영상 숏폼",
-    "at": "2026-11-21T11:04+09:00"
-   },
    "corner_name": "소식"
   },
   {
@@ -275,10 +270,482 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:deltarune-ch6-playable",
+    "account": "게임메카",
+    "url": "https://www.gamemeca.com/view.php?gid=1783955",
+    "image": null,
+    "head": "델타룬 챕터 6, 구조적 완성… 2027년 출시 목표",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T19:05+09:00",
+   "key": "5e48199b",
+   "by": "claude",
+   "subjects": [
+    "델타룬",
+    "토비 폭스"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "토비 폭스 가을 소식지 — 〈델타룬〉 챕터 6가 처음부터 끝까지 플레이할 수 있는 상태, 서두르지 않겠다는 말, 마지막 장 챕터 7 개발 시작",
+    "why": "챕터 6 처음부터 끝까지 플레이 가능·맵/이벤트/전투 구현·일부 장면 연출 미완·서두르지 않음은 게임메카(11/21)·Gamereactor·Gameluster·Final Weapon · 현지화·초기 테스트 시작은 게임메카·Final Weapon · 챕터 6 마친 팀원이 챕터 7로, 챕터 7이 마지막 장은 게임메카·Gameluster·Gamereactor · 'Unlike every other Chapter, I actually feel like I know what I'm doing this time' 은 Gamereactor·Gameluster·Final Weapon · 2027년 목표는 스팀 공식 FAQ('We are aiming for a 2027 release!')·게임메카 · 챕터 1~5·29,800원·한국어 미지원(영어·일본어)·앞으로 챕터 무료 추가는 스팀 한국 상점 페이지"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T19:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈델타룬〉 챕터 6가 처음부터 끝까지 플레이할 수 있는 상태가 됐습니다.\n\n토비 폭스가 이번 주 가을 소식지에서 전한 근황인데요, 맵과 이벤트, 전투는 모두 들어갔지만 중요한 장면 몇 곳은 아직 연출이 덜 익어서 서두를 수 없다고 했습니다. 현지화와 초기 테스트도 시작됐고, 챕터 6 작업을 마친 팀원들은 마지막 장인 챕터 7로 넘어갔습니다.\n\n그 마지막 장을 두고 그는 다른 챕터들과 달리 이번에는 내가 뭘 하는지 좀 알 것 같다고 적었습니다.\n\n챕터 1~5 출시 중 · 스팀 29,800원 · 챕터 6는 2027년 목표(스팀 공식 안내) · 앞으로의 챕터는 무료 추가 · 한국어 미지원(영어·일본어)\n\n#겜디핑 #델타룬 #DELTARUNE #토비폭스 #언더테일\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/caea3a1e61cc6cf7e6fc.jpg\n제목: 델타룬 챕터 6,|끝까지 플레이된다\n부제: 토비 폭스 가을 소식지\n출처: 토비 폭스\n",
+    "caption": "〈델타룬〉 챕터 6가 처음부터 끝까지 플레이할 수 있는 상태가 됐습니다.\n\n토비 폭스가 이번 주 가을 소식지에서 전한 근황인데요, 맵과 이벤트, 전투는 모두 들어갔지만 중요한 장면 몇 곳은 아직 연출이 덜 익어서 서두를 수 없다고 했습니다. 현지화와 초기 테스트도 시작됐고, 챕터 6 작업을 마친 팀원들은 마지막 장인 챕터 7로 넘어갔습니다.\n\n그 마지막 장을 두고 그는 다른 챕터들과 달리 이번에는 내가 뭘 하는지 좀 알 것 같다고 적었습니다.\n\n챕터 1~5 출시 중 · 스팀 29,800원 · 챕터 6는 2027년 목표(스팀 공식 안내) · 앞으로의 챕터는 무료 추가 · 한국어 미지원(영어·일본어)\n\n#겜디핑 #델타룬 #DELTARUNE #토비폭스 #언더테일",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/caea3a1e61cc6cf7e6fc.jpg",
+      "credit": "토비 폭스",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/955/gm826971_thumb__6_.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/caea3a1e61cc6cf7e6fc.jpg",
+      "credit": "토비 폭스",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/955/gm826971_thumb__6_.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "델타룬 챕터 6,|끝까지 플레이된다",
+      "sub": "토비 폭스 가을 소식지"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "소식지 발행일이 매체마다 11/19·11/20 으로 갈려 캡션은 '이번 주'로 씀 · 콘솔(PS·스위치) 판매는 게임메카 한 곳이라 실용 정보에서 뺌",
+     "유튜브에 '챕터 6 트레일러'라는 영상들은 모두 공식 채널이 아니어서 숏폼은 쓰지 않음"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 델타룬 챕터 6, 구조적 완성… 2027년 출시 목표 (11/21)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783955"
+     },
+     {
+      "title": "Gamereactor — Deltarune Chapter 6 structurally complete, Toby Fox says (11/20)",
+      "link": "https://www.gamereactor.eu/deltarune-chapter-6-structurally-complete-toby-fox/"
+     },
+     {
+      "title": "Gameluster — Deltarune Chapter 6 Is Structurally Complete… Final Chapter 7 Begins",
+      "link": "https://gameluster.com/deltarune-chapter-7-work-begins-toby-fox-newsletter/"
+     },
+     {
+      "title": "Final Weapon — Toby Fox Shares New Progress Updates for Deltarune Chapter 6 and 7 (11/19)",
+      "link": "https://finalweapon.net/2026/11/19/toby-fox-deltarune-chapter-6-7-progress-updates/"
+     },
+     {
+      "title": "Steam — DELTARUNE (한국 상점 · 29,800원 · 영어·일본어 · 챕터 6 2027년 목표 FAQ)",
+      "link": "https://store.steampowered.com/app/1671210/DELTARUNE/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/07214d124b64133ade80.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/870f2a63030505962c63.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/07214d124b64133ade80.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T19:05+09:00",
+     "v": {
+      "A": "75323d34"
+     }
+    }
+   },
    "pick": {
     "rank": 2,
-    "why": "[실험] 게임 안 하는 사람도 아는 '그걸로 둠 돌아가?' 밈의 뿌리 해부 · 임신 테스트기·대장균이라는 묘한 사실이 첫 문장",
-    "at": "2026-11-21T11:04+09:00"
+    "why": "토비 폭스 본인의 말 · 오래 기다린 팬들의 이야기 · 스팀 공식 '2027년 목표'까지 확인",
+    "at": "2026-11-21T19:05+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:persona6-not-the-end",
+    "account": "게임메카",
+    "url": "https://www.gamemeca.com/view.php?gid=1783953",
+    "image": null,
+    "head": "아틀러스, 페르소나 시리즈 출시 간격 줄인다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T19:05+09:00",
+   "key": "42e41a7e",
+   "by": "claude",
+   "subjects": [
+    "페르소나 6",
+    "와다 카즈히사"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "아틀러스 와다 카즈히사 프로듀서 '페르소나 6는 끝이 아니다' — 대형 RPG 5년 넘는 개발, 다음 작품까지의 기다림을 줄이겠다는 약속",
+    "why": "세가사미 사내 인터뷰(segasammania002)는 MP1st·Noisy Pixel·게임메카(11/20~21) · 'Persona 6 is not the end'·'won't have to wait as long for the next game'·'something better than anything we've made before' 는 MP1st 직접 인용, 같은 내용을 게임메카·Noisy Pixel 이 간접 화법으로 · 대형 RPG 5년 이상은 게임메카·검색 요약 여러 곳 · 페르소나 5 2016년은 게임메카 · 페르소나 4 리바이벌 2027/2/18(PS5·엑스박스·PC)·스위치 2 5/20·한국어 자막은 Inven Global·디스이즈게임(세가퍼블리싱코리아 자료) 검색 요약"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T19:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n아틀러스의 와다 카즈히사 프로듀서가 〈페르소나 6〉가 시리즈의 끝이 아니라고 말했습니다.\n\n세가사미 사내 인터뷰에서 나온 말인데요, 〈페르소나〉 같은 대형 RPG는 개발에 5년 넘게 걸린다며 다음 작품까지 예전만큼 오래 기다리지 않게 하려고 여러 방법을 쓰고 있다고 했습니다. 〈페르소나 6〉에 대해서는 지금까지 만든 것보다 나은 것을 만들고 있다고만 밝혔습니다.\n\n2016년 〈페르소나 5〉 이후 넘버링 신작을 기다려 온 팬들에게 날짜보다 먼저 도착한 약속입니다.\n\n〈페르소나 6〉 출시일 미정 · 〈페르소나 4 리바이벌〉 2027년 2월 18일 PS5 · 엑스박스 시리즈 X|S · PC (스위치 2 판 5월 20일) · 한국어 자막\n\n#겜디핑 #페르소나6 #페르소나 #아틀러스 #와다카즈히사\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9ca9e8293dbcff1cdde0.jpg\n제목: 페르소나 6가|끝이 아니다\n부제: 아틀러스 와다 카즈히사 프로듀서\n출처: 아틀러스\n",
+    "caption": "아틀러스의 와다 카즈히사 프로듀서가 〈페르소나 6〉가 시리즈의 끝이 아니라고 말했습니다.\n\n세가사미 사내 인터뷰에서 나온 말인데요, 〈페르소나〉 같은 대형 RPG는 개발에 5년 넘게 걸린다며 다음 작품까지 예전만큼 오래 기다리지 않게 하려고 여러 방법을 쓰고 있다고 했습니다. 〈페르소나 6〉에 대해서는 지금까지 만든 것보다 나은 것을 만들고 있다고만 밝혔습니다.\n\n2016년 〈페르소나 5〉 이후 넘버링 신작을 기다려 온 팬들에게 날짜보다 먼저 도착한 약속입니다.\n\n〈페르소나 6〉 출시일 미정 · 〈페르소나 4 리바이벌〉 2027년 2월 18일 PS5 · 엑스박스 시리즈 X|S · PC (스위치 2 판 5월 20일) · 한국어 자막\n\n#겜디핑 #페르소나6 #페르소나 #아틀러스 #와다카즈히사",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9ca9e8293dbcff1cdde0.jpg",
+      "credit": "아틀러스",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/953/gm479973_thumb___.webp"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/13470dddbd65c38c2f63.jpg",
+      "credit": "아틀러스",
+      "from": "https://mp1st.com/wp-content/uploads/2026/06/Persona-6.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9ca9e8293dbcff1cdde0.jpg",
+      "credit": "아틀러스",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/953/gm479973_thumb___.webp"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/13470dddbd65c38c2f63.jpg",
+      "credit": "아틀러스",
+      "from": "https://mp1st.com/wp-content/uploads/2026/06/Persona-6.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "페르소나 6가|끝이 아니다",
+      "sub": "아틀러스 와다 카즈히사 프로듀서"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진은 〈페르소나 5〉 캐릭터(다카마키 안)라 6편 이야기와 어긋나 보일 수 있음 — 그대로 쓸지 볼 것",
+     "인터뷰 원문(세가사미 사이트) 게시일은 어느 매체도 밝히지 않음 · 페르소나 6 플랫폼은 MP1st 한 곳이라 뺌",
+     "페르소나 4 리바이벌 날짜·한국어 자막은 검색 요약으로만 확인 — 세가퍼블리싱코리아 공지로 한 번 볼 것"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 아틀러스, 페르소나 시리즈 출시 간격 줄인다 (11/21)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783953"
+     },
+     {
+      "title": "MP1st — Persona 6 Is 'Not the End' as Atlus Promises Fans 'Won't Have to Wait as Long' (11/20)",
+      "link": "https://mp1st.com/news/atlus-promises-fans-wont-wait-long-for-next-persona"
+     },
+     {
+      "title": "Noisy Pixel — Persona Producer Says Atlus Is Working To Shorten Gaps (11/20)",
+      "link": "https://noisypixel.net/persona-atlus-shorten-gaps-future-mainline-games-kazuhisa-wada/"
+     },
+     {
+      "title": "Inven Global — Remake 'Persona 4 Revival' Set for Release on February 18, 2027",
+      "link": "https://www.invenglobal.com/articles/22575/remake-persona-4-revival-set-for-release-on-february-18-2027"
+     },
+     {
+      "title": "Inven Global — 'Persona 4 Revival' Switch 2 Version Launching May 2027",
+      "link": "https://www.invenglobal.com/articles/25812/persona-4-revival-switch-2-version-launching-may-2027"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8b15812549dbf399c285.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/09aa515e794b16c6cd48.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8b15812549dbf399c285.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T19:05+09:00",
+     "v": {
+      "A": "abec5cf2"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "페르소나 5 이후 넘버링을 기다려 온 팬들 · 프로듀서의 직접 인용 '페르소나 6가 끝이 아니다'",
+    "at": "2026-11-21T19:05+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:steam-ai-disclosure",
+    "account": "게임메카",
+    "url": "https://www.gamemeca.com/view.php?gid=1783956",
+    "image": null,
+    "head": "스팀 'AI 사용 공개' 게임, 전반적으로 판매량 적었다",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T19:05+09:00",
+   "key": "8159fc7e",
+   "by": "claude",
+   "subjects": [
+    "스팀",
+    "게임 오라클"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "스팀에서 AI 사용을 밝힌 게임은 출시일 팔로워 중간값 6 대 20 — 31,003개 게임 분석, 그리고 '원인인지 신호인지'라는 단서",
+    "why": "31,003개(2025년 1월~2026년 10월 스팀 유료 게임)·출시일 팔로워 중간값 6 대 20·리뷰 수도 적음·판매량 대신 리뷰·팔로워를 씀은 게임메카(11/21)·게임 오라클 블로그 'AI Update Part 2' 검색 요약 · 인과가 아니라 상관이라는 단서는 게임메카·게임 오라클(검색 요약 '불매를 증명하지 않는다') · 2025년 첫 분석의 리뷰 약 53% 적음은 PC Gamer·Windows Central"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T19:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n스팀에서 AI를 썼다고 밝힌 게임의 출시일 팔로워 수는 중간값 6명이었습니다.\n\n게임 시장 분석 사이트 게임 오라클이 2025년 1월부터 2026년 10월까지 스팀에 나온 유료 게임 31,003개를 살핀 결과인데요, AI 사용을 밝히지 않은 게임은 같은 값이 20명이었습니다. 실제 판매량은 개발사만 알 수 있어 리뷰 수를 주된 잣대로 삼았고, 개발 경험과 장르 등을 맞춘 뒤에도 리뷰 수는 AI 사용을 밝힌 쪽이 적었습니다.\n\n다만 이 숫자가 AI 표시 때문에 덜 팔렸다는 증명은 아닙니다. 보고서도 직접적인 인과관계는 확정하지 않았고, 짧은 사전 홍보 기간과 적은 이용자 기반이 영향을 줬을 가능성을 함께 짚었습니다. 지난해 같은 곳의 첫 분석에서는 비슷한 게임끼리 비교해 리뷰 수가 절반 남짓 적었습니다.\n\n#겜디핑 #스팀 #생성형AI #게임오라클 #인디게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a67f9ee526580c1e3f2.jpg\n제목: AI 썼다고 밝힌 게임,|팔로워 6 대 20\n부제: 스팀 게임 31,003개 분석\n출처: 게임 오라클\n",
+    "caption": "스팀에서 AI를 썼다고 밝힌 게임의 출시일 팔로워 수는 중간값 6명이었습니다.\n\n게임 시장 분석 사이트 게임 오라클이 2025년 1월부터 2026년 10월까지 스팀에 나온 유료 게임 31,003개를 살핀 결과인데요, AI 사용을 밝히지 않은 게임은 같은 값이 20명이었습니다. 실제 판매량은 개발사만 알 수 있어 리뷰 수를 주된 잣대로 삼았고, 개발 경험과 장르 등을 맞춘 뒤에도 리뷰 수는 AI 사용을 밝힌 쪽이 적었습니다.\n\n다만 이 숫자가 AI 표시 때문에 덜 팔렸다는 증명은 아닙니다. 보고서도 직접적인 인과관계는 확정하지 않았고, 짧은 사전 홍보 기간과 적은 이용자 기반이 영향을 줬을 가능성을 함께 짚었습니다. 지난해 같은 곳의 첫 분석에서는 비슷한 게임끼리 비교해 리뷰 수가 절반 남짓 적었습니다.\n\n#겜디핑 #스팀 #생성형AI #게임오라클 #인디게임",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a67f9ee526580c1e3f2.jpg",
+      "credit": "게임 오라클",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/956/gm315917_thumb__AI___.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a67f9ee526580c1e3f2.jpg",
+      "credit": "게임 오라클",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/956/gm315917_thumb__AI___.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "AI 썼다고 밝힌 게임,|팔로워 6 대 20",
+      "sub": "스팀 게임 31,003개 분석"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 표지 사진이 스팀 상점 화면 캡처라 글자가 가장자리에서 잘려 어수선함 — 바꿀지 볼 것 · '신호일 수 있다'는 원문으로 확인 못 해 게임메카 문장(인과 미확정·짧은 홍보 기간·적은 이용자 기반)으로 바꿈 · 2025년 첫 분석의 53% 감소를 '절반 가까이'로 쓴 것은 '절반 남짓'으로 고침",
+     "게임 오라클 원문이 429 로 열리지 않아 검색 요약과 게임메카로만 맞춤 · AI 공개 비율 약 30%·상점 페이지에서 출시까지 52일 대 167일은 게임메카 한 곳이라 뺌",
+     "분석가 이름이 게임메카 '로스 버튼'·해외 'Ross Burton' 으로 엇갈려 이름은 뺌 · 표지 사진은 게임메카의 스팀 상점 이미지(게임 오라클 제공) 하나뿐"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 스팀 'AI 사용 공개' 게임, 전반적으로 판매량 적었다 (11/21)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783956"
+     },
+     {
+      "title": "Game Oracle — AI Update Part 2: AI could still be hurting game sales, but in a less obvious way (429 · 검색 요약으로 확인)",
+      "link": "https://www.game-oracle.com/blog/ai-update-2"
+     },
+     {
+      "title": "PC Gamer — 'AI stigma' on Steam can reduce the number of reviews by around 53% (2025년 첫 분석)",
+      "link": "https://www.pcgamer.com/software/ai/data-analyst-finds-ai-stigma-on-steam-can-reduce-the-number-of-reviews-a-game-gets-by-around-53-percent-and-the-reviews-it-does-get-are-more-negative/"
+     },
+     {
+      "title": "Windows Central — The 'AI Stigma' is real… (2025년 첫 분석)",
+      "link": "https://www.windowscentral.com/gaming/pc-gaming/ai-game-development-stigma-study"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/994021f0a5c794d52316.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a316088f2c1f15577e18.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/994021f0a5c794d52316.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T19:05+09:00",
+     "v": {
+      "A": "66b4d5e3"
+     }
+    }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:layton-korean-voice",
+    "account": "게임메카",
+    "url": "https://www.gamemeca.com/view.php?gid=1783954",
+    "image": null,
+    "head": "레이튼 교수 신작 '증기의 신세계' 예약 판매 시작",
+    "multiple": null,
+    "is_reel": true,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T19:05+09:00",
+   "key": "febe1778",
+   "by": "claude",
+   "subjects": [
+    "레이튼 교수와 증기의 신세계",
+    "레벨파이브"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "A",
+    "kind": "정보",
+    "angle": "레이튼 교수 신작이 한국어 음성으로 — 예약 판매 시작, 스팀에 한국어 인터페이스·음성·자막 표시, 퍼즐은 QuizKnock",
+    "why": "예약 판매 시작·12월 10일·PS5·스위치 2·스위치·PC 는 게임메카(11/21)·인벤(10/23) · 한국어 포함 9개 언어 음성 더빙 확정(10/23 레벨파이브 공식 SNS)은 인벤·스팀 상점(한국어 인터페이스·음성·자막) · 83,390원·예약 특전 시리즈 사운드트랙 11곡은 스팀 한국 상점·게임메카 · 퍼즐 QuizKnock 은 게임메카·검색 요약(Layton Wiki 등)"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T19:05+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈레이튼 교수와 증기의 신세계〉가 한국어 음성으로 나옵니다.\n\n레벨파이브가 모든 플랫폼에서 디지털 예약 판매를 시작했는데요, 지난달 한국어를 포함한 9개 언어 더빙을 확정한 데 이어 스팀 상점에도 한국어 인터페이스와 음성, 자막이 모두 표시됐습니다.\n\n시리즈의 중심인 퍼즐은 일본 퀴즈 그룹 QuizKnock이 만들었습니다. 레이튼과 루크의 수수께끼 풀이를 한국어 목소리로 듣게 됩니다.\n\n12월 10일 출시 · PS5 · 닌텐도 스위치 2 · 닌텐도 스위치 · PC(스팀 83,390원) · 예약 특전 시리즈 사운드트랙 11곡\n\n#겜디핑 #레이튼교수 #레이튼교수와증기의신세계 #레벨파이브 #QuizKnock\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/86451c52229494056827.jpg\n제목: 레이튼 교수,|한국어로 말한다\n부제: 증기의 신세계 예약 판매 시작\n출처: 레벨파이브\n",
+    "caption": "〈레이튼 교수와 증기의 신세계〉가 한국어 음성으로 나옵니다.\n\n레벨파이브가 모든 플랫폼에서 디지털 예약 판매를 시작했는데요, 지난달 한국어를 포함한 9개 언어 더빙을 확정한 데 이어 스팀 상점에도 한국어 인터페이스와 음성, 자막이 모두 표시됐습니다.\n\n시리즈의 중심인 퍼즐은 일본 퀴즈 그룹 QuizKnock이 만들었습니다. 레이튼과 루크의 수수께끼 풀이를 한국어 목소리로 듣게 됩니다.\n\n12월 10일 출시 · PS5 · 닌텐도 스위치 2 · 닌텐도 스위치 · PC(스팀 83,390원) · 예약 특전 시리즈 사운드트랙 11곡\n\n#겜디핑 #레이튼교수 #레이튼교수와증기의신세계 #레벨파이브 #QuizKnock",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/86451c52229494056827.jpg",
+      "credit": "레벨파이브",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/954/gm888776_thumb___.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/86451c52229494056827.jpg",
+      "credit": "레벨파이브",
+      "from": "https://cdn.gamemeca.com/gmdata/0001/783/954/gm888776_thumb___.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "레이튼 교수,|한국어로 말한다",
+      "sub": "증기의 신세계 예약 판매 시작"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 PV(2026/9/10 공개) 0:00~0:25 는 영어 음성(레이튼·엘리노라 대사) — 한국어 음성이 아니라 후킹 B '레이튼과 루크가 한국어로 말한다'는 바꿈. A '한국어 음성으로 온다'도 영어 음성 위에 얹히니 그대로 쓸지 볼 것",
+     "출시일이 게임메카·인벤은 12월 10일, 스팀 한국 상점은 12월 9일로 표기 — 캡션은 12월 10일, 국내 출시 시각 한 번 볼 것 · 한국어 성우진은 아직 공개 안 됨",
+     "숏폼은 레벨파이브 공식 PV 0:00~0:25 — 영상을 못 보고 정함, 글자·장면 눈으로 확인 · 콘솔판 국내 가격은 확인 못 해 스팀 가격만 씀"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 레이튼 교수 신작 '증기의 신세계' 예약 판매 시작 (11/21)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783954"
+     },
+     {
+      "title": "인벤 — '레이튼 교수와 증기의 신세계', 한국어 음성 지원한다 (10/23)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=322513"
+     },
+     {
+      "title": "Steam — 레이튼 교수와 증기의 신세계 (한국 상점 · 83,390원 · 한국어 인터페이스·음성·자막)",
+      "link": "https://store.steampowered.com/app/3384600/Professor_Layton_and_the_New_World_of_Steam/"
+     },
+     {
+      "title": "LEVEL5ch【公式】 — Professor Layton and the New World of Steam PV (LEVEL5 VISION 2026 II Ver.)",
+      "link": "https://www.youtube.com/watch?v=slNnCS6Rn3g"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/be81226b5b025e5396ea.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6c370bc295a34814640f.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/be81226b5b025e5396ea.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T19:05+09:00",
+     "v": {
+      "A": "07b5378a"
+     }
+    }
+   },
+   "shorts": {
+    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=slNnCS6Rn3g\n구간: 0:00-0:25\n곡: 한국어 음성으로 온다\n아티스트: 레이튼 교수 신작,\n피처링:\n후킹: \n출처: LEVEL5ch【公式】\n자막: 자동",
+    "caption": "〈레이튼 교수와 증기의 신세계〉 공식 PV입니다.\n\n레벨파이브가 디지털 예약 판매를 시작했는데요, 한국어를 포함한 9개 언어 음성 더빙이 들어가 레이튼과 루크의 목소리를 한국어로 듣게 됩니다.\n\n12월 10일 출시 · PS5 · 닌텐도 스위치 2 · 닌텐도 스위치 · PC(스팀 83,390원)\n\n#겜디핑 #레이튼교수 #레이튼교수와증기의신세계 #레벨파이브",
+    "hooks": {
+     "A": "레이튼 교수 신작, / 한국어 음성으로 온다",
+     "B": "레이튼 교수 신작 PV, / 12월 출시를 앞두고",
+     "C": "증기의 신세계, / 예약 판매 시작"
+    },
+    "video": {
+     "url": "https://www.youtube.com/watch?v=slNnCS6Rn3g",
+     "credit": "LEVEL5ch【公式】",
+     "range": [
+      0.0,
+      25.0
+     ]
+    },
+    "guided": {
+     "rec": "A",
+     "lint": []
+    },
+    "issues": [],
+    "confirm": [
+     "[검증] 숏폼 PV(2026/9/10 공개) 0:00~0:25 는 영어 음성(레이튼·엘리노라 대사) — 한국어 음성이 아니라 후킹 B '레이튼과 루크가 한국어로 말한다'는 바꿈. A '한국어 음성으로 온다'도 영어 음성 위에 얹히니 그대로 쓸지 볼 것",
+     "출시일이 게임메카·인벤은 12월 10일, 스팀 한국 상점은 12월 9일로 표기 — 캡션은 12월 10일, 국내 출시 시각 한 번 볼 것 · 한국어 성우진은 아직 공개 안 됨",
+     "숏폼은 레벨파이브 공식 PV 0:00~0:25 — 영상을 못 보고 정함, 글자·장면 눈으로 확인 · 콘솔판 국내 가격은 확인 못 해 스팀 가격만 씀"
+    ],
+    "research": [
+     {
+      "title": "게임메카 — 레이튼 교수 신작 '증기의 신세계' 예약 판매 시작 (11/21)",
+      "link": "https://www.gamemeca.com/view.php?gid=1783954"
+     },
+     {
+      "title": "인벤 — '레이튼 교수와 증기의 신세계', 한국어 음성 지원한다 (10/23)",
+      "link": "https://www.inven.co.kr/webzine/news/?news=322513"
+     },
+     {
+      "title": "Steam — 레이튼 교수와 증기의 신세계 (한국 상점 · 83,390원 · 한국어 인터페이스·음성·자막)",
+      "link": "https://store.steampowered.com/app/3384600/Professor_Layton_and_the_New_World_of_Steam/"
+     },
+     {
+      "title": "LEVEL5ch【公式】 — Professor Layton and the New World of Steam PV (LEVEL5 VISION 2026 II Ver.)",
+      "link": "https://www.youtube.com/watch?v=slNnCS6Rn3g"
+     }
+    ],
+    "thumb": "https://i.ytimg.com/vi/slNnCS6Rn3g/maxresdefault.jpg",
+    "still": {
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/26d8fbbd7c010aeb9085.jpg",
+     "key": "slNnCS6Rn3g@0.0"
+    },
+    "px": {
+     "vid": "slNnCS6Rn3g",
+     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/fdf4c613f649059684cf.mp4",
+     "off": 0.0,
+     "end": 70.0,
+     "full": 174.0
+    },
+    "prep": {
+     "status": "queued",
+     "at": "2026-11-21T19:06+09:00"
+    }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "한국 독자에게 바로 걸리는 한국어 음성 · 예약 판매 시작으로 오늘 소식 · 레벨파이브 공식 영상 숏폼",
+    "at": "2026-11-21T19:05+09:00"
    },
    "corner_name": "소식"
   }
@@ -455,14 +922,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 6,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-21T11:04+09:00"
+  "at": "2026-11-21T19:06+09:00"
  },
  "queue": {
-  "next": "2026-11-21T11:06+09:00",
+  "next": "2026-11-21T19:08+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
