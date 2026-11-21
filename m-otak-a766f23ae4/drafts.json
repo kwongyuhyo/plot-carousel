@@ -107,12 +107,12 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
     "rank": 1,
-    "why": "오늘 밤 6시 둘째 날 생중계가 급히 정해져 오늘 낮에 올려야 쓸모가 있다 · 한국에서 이름이 닿는 사람 · 1월 9일 고척 내한으로 한국 연결",
-    "at": "2026-11-21T10:46+09:00"
-   },
-   "corner_name": "소식"
+    "why": "오전 초안 · 오늘 밤 둘째 날 생중계라 오늘 안에 올려야 쓸모가 있다 · 1월 고척 내한으로 한국 연결",
+    "at": "2026-11-21T18:49+09:00"
+   }
   },
   {
    "source": {
@@ -223,10 +223,289 @@
      }
     }
    },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:ini-mama-2026-favorite-asian",
+    "account": "오리콘 뉴스",
+    "url": "https://www.oricon.co.jp/news/2494442/full/",
+    "image": null,
+    "head": "【MAMA2026】INI、京セラドームで“ホームラン” 「FAVORITE ASIAN GROUP」受賞「これからも僕たち11人といい思い出を」",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T18:49+09:00",
+   "key": "4cf798ac",
+   "by": "claude",
+   "subjects": [
+    "INI",
+    "MAMA AWARDS"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "일본 11인조 INI 가 교세라 돔 오사카에서 연 〈2026 MAMA AWARDS〉 첫날 페이보릿 아시안 그룹 — 5주년 소감, 타지마 쇼고는 한국어로 인사",
+    "why": "오리콘 뉴스(산인추오신보 전재, 11/21) 수상·야구 콘셉트 무대·기무라 마사야 5주년 소감·타지마 쇼고 한국어 소감 · 코레포(11/21) 같은 내용 · 뉴스엔·톱스타뉴스(11/21) 수상 확인"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T18:49+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\nINI 가 어제(11월 20일) 교세라 돔 오사카에서 열린 〈2026 MAMA AWARDS〉에서 페이보릿 아시안 그룹 상을 받았습니다.\n\n한국 시상식이 일본 돔에서 막을 올린 날인데요, 11인조 INI 는 야구를 콘셉트로 한 무대로 공을 주고받듯 합을 맞췄습니다. 리더 기무라 마사야는 올해 5주년을 맞아 정말 행복한 출발을 했다고 했고, 타지마 쇼고는 한국어로 앞으로도 11명과 좋은 추억을 만들고 싶다고 인사했습니다.\n\n일본 그룹이 일본 무대에서 한국 팬에게 한국어로 말을 건넨 장면입니다. 둘째 날 시상식은 오늘 같은 곳에서 이어집니다.\n\n#암낫오타쿠 #INI #마마어워즈 #MAMA2026 #교세라돔\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ec4ea2366a43c28ddb74.jpg\n제목: INI, MAMA 에서|아시안 그룹상\n부제: 교세라 돔 오사카 · 한국어로 전한 소감\n출처: 오리콘 뉴스\n",
+    "caption": "INI 가 어제(11월 20일) 교세라 돔 오사카에서 열린 〈2026 MAMA AWARDS〉에서 페이보릿 아시안 그룹 상을 받았습니다.\n\n한국 시상식이 일본 돔에서 막을 올린 날인데요, 11인조 INI 는 야구를 콘셉트로 한 무대로 공을 주고받듯 합을 맞췄습니다. 리더 기무라 마사야는 올해 5주년을 맞아 정말 행복한 출발을 했다고 했고, 타지마 쇼고는 한국어로 앞으로도 11명과 좋은 추억을 만들고 싶다고 인사했습니다.\n\n일본 그룹이 일본 무대에서 한국 팬에게 한국어로 말을 건넨 장면입니다. 둘째 날 시상식은 오늘 같은 곳에서 이어집니다.\n\n#암낫오타쿠 #INI #마마어워즈 #MAMA2026 #교세라돔",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ec4ea2366a43c28ddb74.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494442/20261121_075138_p_o_31120276.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/ec4ea2366a43c28ddb74.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494442/20261121_075138_p_o_31120276.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "INI, MAMA 에서|아시안 그룹상",
+      "sub": "교세라 돔 오사카 · 한국어로 전한 소감"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "오전 회차는 'MAMA = K-pop 시상식이라 범위 밖'으로 버렸으나, INI 는 일본 그룹이고 한국어 소감이라는 한국 연결로 다시 씀 — 결이 안 맞으면 버릴 것",
+     "무대 영상은 Mnet(위험 높음) 것이라 숏폼은 비움 · 곡목('You Know What To Do'·'All 4 U')은 코레포 한 곳뿐이라 뺌"
+    ],
+    "research": [
+     {
+      "title": "오리콘 뉴스(산인추오신보 전재) — 11/20 교세라 돔 오사카, FAVORITE ASIAN GROUP, 야구 콘셉트 퍼포먼스, 기무라 마사야 「今年で5周年を迎えまして、こうやって本当に幸せなスタートを切れたなと思います」, 타지마 쇼고 한국어로 「これからも僕たち11人といい思い出を作れたら」 (11/21)",
+      "link": "https://www.sanin-chuo.co.jp/articles/-/1120226"
+     },
+     {
+      "title": "코레포 — INI 〈2026 MAMA AWARDS〉 FAVORITE ASIAN GROUP 수상 리포트, 야구 콘셉트 무대, 타지마 쇼고 한국어 감사 (11/21)",
+      "link": "https://korepo.com/archives/1734013"
+     },
+     {
+      "title": "톱스타뉴스 — 2026 MAMA 수상자 총정리, INI 페이보릿 아시안 그룹 (11/21)",
+      "link": "https://www.topstarnews.net/news/articleView.html?idxno=16282434"
+     },
+     {
+      "title": "뉴스엔 — INI, MAMA서 '페이보릿 아시안 그룹' [포토엔HD] (11/21)",
+      "link": "https://www.newsen.com/news_view.php?uid=202611210005085510"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/223f7649771a5bf6a956.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/6c49a99bf2f684373ea7.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/223f7649771a5bf6a956.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T18:49+09:00",
+     "v": {
+      "A": "d5333362"
+     }
+    }
+   },
    "pick": {
     "rank": 2,
-    "why": "11/21 발표 · ILLIT 2년 연속 우수작품상·CORTIS 특별국제음악상으로 한국 연결 · 〈프리렌〉 2기 OP 'lulu.' 작곡상으로 애니 연결",
-    "at": "2026-11-21T10:46+09:00"
+    "why": "어제 밤 수상 · 한국 시상식을 일본 돔에서 연 자리에서 일본 그룹이 한국어로 소감 · 한국 팬과 일본 팬 둘 다 닿는다",
+    "at": "2026-11-21T18:49+09:00"
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:doraemon-nye-himitsu-memo",
+    "account": "도라에몽 채널(공식)",
+    "url": "https://dora-world.com/contents/4453",
+    "image": null,
+    "head": "2026年12月31日あさ8時から!! 「大みそかだよ！ドラえもん」 放送決定！",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T18:49+09:00",
+   "key": "bb34b09d",
+   "by": "claude",
+   "subjects": [
+    "도라에몽",
+    "후지코 F. 후지오"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "[실험] 덕후가 아니어도 읽히는 소식 — 후지코 F. 후지오가 애니 제작용으로 남긴 메모 속 도구 '출입구 분필'이 섣달그믐 1시간 스페셜에서 처음 애니가 된다",
+    "why": "도라에몽 공식(dora-world, 11/21) 12/31 8:00~9:00·애니 제작용 메모·15주년 비밀 도구전·도구 설명 · 아니메!아니메!(11/21) 같은 내용 · 오리콘 뉴스(11/21) 테레비 아사히 계열"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T18:49+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n후지코 F. 후지오가 남긴 메모 속 비밀 도구가 처음 애니메이션이 됩니다.\n\n12월 31일 방송하는 〈도라에몽〉 섣달그믐 1시간 스페셜(大みそかだよ！ドラえもん)인데요, 바탕은 그가 애니메이션 제작용으로 적어 둔 메모입니다. 지금 가와사키시 후지코 F. 후지오 뮤지엄의 개관 15주년 비밀 도구전에 걸려 있는 글로, 여기 적힌 '출입구 분필'(出入口チョーク)로 오리지널 이야기를 만들었습니다.\n\n벽에 문을 그리면 세계 어딘가의 닮은 문과 이어지는 도구입니다. 다만 어느 문으로 이어질지는 매번 알 수 없어서, 도라에몽 일행은 뜻밖의 일에 휘말립니다.\n\n방송은 12월 31일 오전 8시(일본 기준) 테레비 아사히 계열이고, 명작 '할머니의 추억'(おばあちゃんの思い出)도 함께 나갑니다.\n\n#암낫오타쿠 #도라에몽 #후지코F후지오 #비밀도구 #후지코F후지오뮤지엄\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/24f8692486fceaa7175c.jpg\n제목: 후지코 F. 후지오의|메모 속 도구, 애니로\n부제: 〈도라에몽〉 섣달그믐 1시간 스페셜\n출처: 오리콘 뉴스\n",
+    "caption": "후지코 F. 후지오가 남긴 메모 속 비밀 도구가 처음 애니메이션이 됩니다.\n\n12월 31일 방송하는 〈도라에몽〉 섣달그믐 1시간 스페셜(大みそかだよ！ドラえもん)인데요, 바탕은 그가 애니메이션 제작용으로 적어 둔 메모입니다. 지금 가와사키시 후지코 F. 후지오 뮤지엄의 개관 15주년 비밀 도구전에 걸려 있는 글로, 여기 적힌 '출입구 분필'(出入口チョーク)로 오리지널 이야기를 만들었습니다.\n\n벽에 문을 그리면 세계 어딘가의 닮은 문과 이어지는 도구입니다. 다만 어느 문으로 이어질지는 매번 알 수 없어서, 도라에몽 일행은 뜻밖의 일에 휘말립니다.\n\n방송은 12월 31일 오전 8시(일본 기준) 테레비 아사히 계열이고, 명작 '할머니의 추억'(おばあちゃんの思い出)도 함께 나갑니다.\n\n#암낫오타쿠 #도라에몽 #후지코F후지오 #비밀도구 #후지코F후지오뮤지엄",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/24f8692486fceaa7175c.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494419/20261120_211031_p_o_97900946.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/24f8692486fceaa7175c.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494419/20261120_211031_p_o_97900946.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "후지코 F. 후지오의|메모 속 도구, 애니로",
+      "sub": "〈도라에몽〉 섣달그믐 1시간 스페셜"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "'출입구 분필'은 出入口チョーク 를 옮긴 것 — 한국 정식 번역명이 없어 원어를 괄호로 둠",
+     "사람의 말이 없는 발표라 표지 한 장·짧은 캡션 · 한국 방송 여부는 확인 못 해 쓰지 않음"
+    ],
+    "research": [
+     {
+      "title": "도라에몽 채널(공식) — 12/31(목) 8:00~9:00 1시간 스페셜, 후지코 F. 후지오가 애니 제작용으로 남긴 메모, 가와사키시 후지코 F. 후지오 뮤지엄 개관 15주년 「ドラえも～ん！願いをかなえるひみつ道具展」, 出入口チョーク, 「おばあちゃんの思い出」「メルヘンランド入場券」 (11/21)",
+      "link": "https://dora-world.com/contents/4453"
+     },
+     {
+      "title": "아니메!아니메! — 「ドラえもん」大みそかSPは朝8時から！ 藤子・F・不二雄のメモから「出入口チョーク」を初アニメ化 (11/21)",
+      "link": "https://animeanime.jp/article/2026/11/21/104970.html"
+     },
+     {
+      "title": "오리콘 뉴스 — 『ドラえもん』藤子・F・不二雄が残した“ひみつ道具メモ”から初アニメ化 大みそかSPで放送 (11/21)",
+      "link": "https://www.oricon.co.jp/news/2494419/full/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b4cea8ace3e9c4385f21.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/360f3b0b648b1a5758d8.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b4cea8ace3e9c4385f21.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T18:49+09:00",
+     "v": {
+      "A": "53d6a331"
+     }
+    }
+   },
+   "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:chiikawa-movie-3m-korea",
+    "account": "헤럴드뮤즈",
+    "url": "https://www.heraldmuse.com/article/10944592",
+    "image": null,
+    "head": "‘극장판 치이카와: 인어 섬의 비밀’, 300만 돌파..치이카와 열풍ing(공식)",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T18:49+09:00",
+   "key": "1a15cc01",
+   "by": "claude",
+   "subjects": [
+    "치이카와",
+    "먼작귀",
+    "나가노"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "〈극장판 치이카와: 인어 섬의 비밀〉 한국 관객 300만 — 개봉 53일 만, 〈토이 스토리 5〉를 넘은 올해 국내 개봉 애니 1위 (11/20 am 에 '돌파 확인되면' 으로 보류한 건)",
+    "why": "헤럴드뮤즈(11/21 10:34) 통합전산망 21일 자정 기준 300만·53일 차·애니 1위 · 천지일보(11/21 11:53) 9/30 개봉·올해 300만 8편·토이 스토리 5 295만 1288명·원작 나가노 〈먼작귀〉"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T18:49+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n〈극장판 치이카와: 인어 섬의 비밀〉이 한국에서 관객 300만 명을 넘었습니다.\n\n9월 30일 개봉해 53일 만인데요, 영화관입장권 통합전산망 기준으로 21일 자정에 300만을 넘겼습니다. 앞서 〈토이 스토리 5〉(295만 1288명)를 넘어 올해 국내 개봉 애니메이션 흥행 1위에 올라 있고, 올해 300만을 넘긴 국내 개봉작은 이 영화까지 8편입니다.\n\n원작은 나가노가 그리는 웹만화 〈치이카와〉로, 국내에는 〈먼작귀〉라는 이름으로 나와 있습니다. 작고 귀여운 것들의 이야기가 두 달 가까이 극장에서 관객을 모으고 있습니다.\n\n#암낫오타쿠 #치이카와 #먼작귀 #극장판치이카와 #나가노\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a753437a56eed2c8d136.jpg\n제목: 치이카와 극장판,|한국 관객 300만\n부제: 개봉 53일 만 · 올해 국내 개봉 애니 1위\n출처: 헤럴드뮤즈 · 대원미디어 제공\n",
+    "caption": "〈극장판 치이카와: 인어 섬의 비밀〉이 한국에서 관객 300만 명을 넘었습니다.\n\n9월 30일 개봉해 53일 만인데요, 영화관입장권 통합전산망 기준으로 21일 자정에 300만을 넘겼습니다. 앞서 〈토이 스토리 5〉(295만 1288명)를 넘어 올해 국내 개봉 애니메이션 흥행 1위에 올라 있고, 올해 300만을 넘긴 국내 개봉작은 이 영화까지 8편입니다.\n\n원작은 나가노가 그리는 웹만화 〈치이카와〉로, 국내에는 〈먼작귀〉라는 이름으로 나와 있습니다. 작고 귀여운 것들의 이야기가 두 달 가까이 극장에서 관객을 모으고 있습니다.\n\n#암낫오타쿠 #치이카와 #먼작귀 #극장판치이카와 #나가노",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a753437a56eed2c8d136.jpg",
+      "credit": "헤럴드뮤즈 · 대원미디어 제공",
+      "from": "https://wimg.heraldcorp.com/news/cms/2026/11/21/news-p.v1.20261121.cf32e09644234eb29e510b15856daa17_P1.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a753437a56eed2c8d136.jpg",
+      "credit": "헤럴드뮤즈 · 대원미디어 제공",
+      "from": "https://wimg.heraldcorp.com/news/cms/2026/11/21/news-p.v1.20261121.cf32e09644234eb29e510b15856daa17_P1.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "치이카와 극장판,|한국 관객 300만",
+      "sub": "개봉 53일 만 · 올해 국내 개봉 애니 1위"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "관객 수는 영진위 통합전산망 21일 자정 기준(보도 표기) · 한 매체는 303만여 명으로 적어 숫자는 '300만'으로만 둠",
+     "〈하울의 움직이는 성〉(301만) 추월 전망은 한 곳 보도라 뺌 — 넘으면 후속으로"
+    ],
+    "research": [
+     {
+      "title": "헤럴드뮤즈 — 영화관입장권 통합전산망 21일 자정 기준 누적 300만, 개봉 53일 차, 〈토이 스토리 5〉 제치고 2026년 개봉 애니 흥행 1위, 사진 대원미디어 제공 (11/21)",
+      "link": "https://www.heraldmuse.com/article/10944592"
+     },
+     {
+      "title": "천지일보 — 9/30 개봉, 53일 만 300만, 올해 300만 넘은 국내 개봉작 8편, 〈토이 스토리 5〉 295만 1288명, 원작 나가노 웹만화(국내 출간명 〈먼작귀〉) (11/21)",
+      "link": "https://www.newscj.com/news/articleView.html?idxno=3450840"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/38fc2bcee65f68b51e98.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3d362a45b7350a7c4faa.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/38fc2bcee65f68b51e98.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T18:49+09:00",
+     "v": {
+      "A": "6f3fc488"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "오늘 아침 돌파 · 한국 극장 숫자라 한국 독자에게 바로 닿고 덕후가 아니어도 아는 캐릭터 · 두 매체 같은 숫자",
+    "at": "2026-11-21T18:49+09:00"
    },
    "corner_name": "소식"
   }
@@ -403,14 +682,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 5,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-21T10:46+09:00"
+  "at": "2026-11-21T18:49+09:00"
  },
  "queue": {
-  "next": "2026-11-21T10:48+09:00",
+  "next": "2026-11-21T18:51+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
