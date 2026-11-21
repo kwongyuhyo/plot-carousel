@@ -237,13 +237,13 @@
      "at": "2026-11-21T10:24+09:00"
     }
    },
+   "corner_name": "그 말",
+   "corner_no": 8,
    "pick": {
     "rank": 1,
-    "why": "숏폼(본인 채널 · 위험 낮음) · 에픽하이×빅뱅 두 이름이 걸린 한 마디 — 빅뱅 '기립' 다음 날, 오늘 밤 MAMA 무대 전에",
-    "at": "2026-11-21T10:19+09:00"
-   },
-   "corner_name": "그 말",
-   "corner_no": 8
+    "why": "숏폼(본인 채널 · 위험 낮음) · 에픽하이×빅뱅 두 이름이 걸린 한 마디 — 오늘 밤 빅뱅 MAMA 무대 직전이 가장 뜨겁다",
+    "at": "2026-11-21T16:18+09:00"
+   }
   },
   {
    "source": {
@@ -529,13 +529,13 @@
      "at": "2026-11-21T10:26+09:00"
     }
    },
+   "corner_name": "그 말",
+   "corner_no": 9,
    "pick": {
     "rank": 2,
-    "why": "숏폼 · 존박 맥도날드 랩(도달 1천대) 다음 판 — AI가 먼저 부른 김하온 버전을 본인이 직접 · 오늘 첫 단독 'ARK' 당일",
-    "at": "2026-11-21T10:19+09:00"
-   },
-   "corner_name": "그 말",
-   "corner_no": 9
+    "why": "숏폼 · 존박 맥도날드 랩 다음 판, AI 커버의 주인공이 직접 — 오늘 밤 첫 단독 'ARK' 당일",
+    "at": "2026-11-21T16:18+09:00"
+   }
   },
   {
    "source": {
@@ -663,12 +663,12 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
     "rank": 3,
-    "why": "PLOT 상위 이름 리센느 · KGMA 4관왕에 이어 첫 MAMA 수상 · '2년 전 헬스장에서 보던 MAMA'라는 사람 각도",
-    "at": "2026-11-21T10:19+09:00"
-   },
-   "corner_name": "소식"
+    "why": "PLOT 상위 이름 리센느 · KGMA 4관왕에 이어 MAMA 수상 · '헬스장에서 보던 MAMA'라는 사람 각도",
+    "at": "2026-11-21T16:18+09:00"
+   }
   },
   {
    "source": {
@@ -1250,6 +1250,99 @@
     }
    },
    "corner_name": "소식"
+  },
+  {
+   "source": {
+    "id": "claude:hellorookie-nokinok",
+    "account": "이데일리",
+    "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01977846645648016",
+    "image": null,
+    "head": "밴드 녹이녹, '2026 올해의 헬로루키' 대상…상금 2000만 원",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-21T16:18+09:00",
+   "key": "eaa65b5f",
+   "by": "claude",
+   "subjects": [
+    "녹이녹"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "B",
+    "kind": "정보",
+    "angle": "[실험] 4년 만에 돌아온 헬로루키 대상은 포스트록 밴드 녹이녹 — 10년 전 같은 상을 받은 실리카겔 김한주가 이번엔 심사위원석에",
+    "why": "실험 칸(인디) · 뉴스 급상승 '실리카겔' 8건의 실체 · 실리카겔·한로로를 배출한 무대라는 연결 · 기사형이라 표지 한 장"
+   },
+   "added": "claude",
+   "added_at": "2026-11-21T16:18+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n포스트록 밴드 녹이녹이 '2026 올해의 헬로루키' 대상을 받았습니다.\n\nEBS 헬로루키가 2022년 이후 4년 만에 연 결선이었는데요, 이날 심사위원석에는 10년 전인 2016년 같은 상을 받은 실리카겔(@sillicagel.official)의 김한주가 앉았습니다. 국카스텐, 장기하와 얼굴들, 한로로(@hanr0r0)가 거쳐 간 무대에서, 이번엔 그 무대 출신이 다음 얼굴을 보는 자리에 앉은 셈입니다.\n\n녹이녹은 내년 EBS 〈스페이스 공감〉 첫 방송 무대에 오릅니다.\n\n#PLOT #녹이녹 #헬로루키 #실리카겔 #스페이스공감\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/eb513737b524eec1f5fa.jpg\n제목: 4년 만의 헬로루키,|대상은 녹이녹\n부제: 2026 올해의 헬로루키\n출처: 이데일리\n",
+    "caption": "포스트록 밴드 녹이녹이 '2026 올해의 헬로루키' 대상을 받았습니다.\n\nEBS 헬로루키가 2022년 이후 4년 만에 연 결선이었는데요, 이날 심사위원석에는 10년 전인 2016년 같은 상을 받은 실리카겔(@sillicagel.official)의 김한주가 앉았습니다. 국카스텐, 장기하와 얼굴들, 한로로(@hanr0r0)가 거쳐 간 무대에서, 이번엔 그 무대 출신이 다음 얼굴을 보는 자리에 앉은 셈입니다.\n\n녹이녹은 내년 EBS 〈스페이스 공감〉 첫 방송 무대에 오릅니다.\n\n#PLOT #녹이녹 #헬로루키 #실리카겔 #스페이스공감",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/eb513737b524eec1f5fa.jpg",
+      "credit": "이데일리",
+      "from": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26112100359.jpg"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/eb513737b524eec1f5fa.jpg",
+      "credit": "이데일리",
+      "from": "https://image.edaily.co.kr/images/Photo/files/NP/S/2026/11/PS26112100359.jpg"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "4년 만의 헬로루키,|대상은 녹이녹",
+      "sub": "2026 올해의 헬로루키"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지 사진이 녹이녹 수상 사진인지 볼 것(이데일리 기사 대표 사진) · 정병욱 심사평 '가사 없이도 언어처럼'은 뉴시스 한 곳뿐이라 뺌"
+    ],
+    "research": [
+     {
+      "title": "이데일리 11/21 — 20일 블루스퀘어 결선 · 대상 녹이녹 · 심사위원 김학선·김윤하·정병욱·선우정아·김한주(실리카겔)·이능룡·박정용 · 4년 만 · 스페이스 공감 새해 첫 방송",
+      "link": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01977846645648016"
+     },
+     {
+      "title": "톱스타뉴스 11/21 — 포스트록 밴드 녹이녹 대상 · 2016년 대상 수상팀 실리카겔의 김한주도 심사위원",
+      "link": "https://topstarnews.net/news/articleView.html?idxno=16281932"
+     },
+     {
+      "title": "뉴시스(뉴스통) 11/21 — 2022년 이후 4년 만의 결선 · 김한주 2016년 헬로루키 대상 출신",
+      "link": "https://www.newstong.co.kr/view3.aspx?seq=14831239"
+     },
+     {
+      "title": "마이데일리 11/21 — 국카스텐·장기하와 얼굴들·실리카겔·한로로 배출",
+      "link": "https://www.mydaily.co.kr/page/view/2026112109183244674"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a676a9efbce43c03aa87.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/bc0007c2cc920780f414.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/s-50107feae3/img/a676a9efbce43c03aa87.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-21T16:18+09:00",
+     "v": {
+      "A": "c0e3f2bf"
+     }
+    }
+   },
+   "corner_name": "소식"
   }
  ],
  "skipped": [],
@@ -1424,14 +1517,14 @@
     "need_today": 1,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 4,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-21T15:55+09:00"
+  "at": "2026-11-21T16:18+09:00"
  },
  "queue": {
-  "next": "2026-11-21T15:57+09:00",
+  "next": "2026-11-21T16:20+09:00",
   "n": 0,
   "gap": 60,
   "last": "2026-11-18T15:39+09:00"
