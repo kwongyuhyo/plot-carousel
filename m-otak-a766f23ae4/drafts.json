@@ -1,585 +1,62 @@
 {
  "schema": 1,
- "date": "2026-11-20",
- "generated_at": "2026-11-20 10:46 KST",
+ "date": "2026-11-21",
+ "generated_at": "2026-11-21 10:44 KST",
  "items": [
   {
    "source": {
-    "id": "claude:wonderlivet-anisong",
-    "account": "일간스포츠",
-    "url": "https://isplus.com/article/view/isp202609300046",
+    "id": "claude:fujii-kaze-piano-recital-dome",
+    "account": "오리콘 뉴스",
+    "url": "https://www.oricon.co.jp/news/2494433/full/",
     "image": null,
-    "head": "원더리벳 2026 일자별 타임테이블 공개 — 금 오랄시가렛·토 알렉산드로스·일 유즈",
+    "head": "Fujii Kaze（藤井 風）、東京ドーム弾き語り公演のYouTube生中継に約66万人が同時接続　大反響受け21日公演も緊急生中継決定",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-20T10:51+09:00",
-   "key": "82b4baa5",
+   "made_at": "2026-11-21T10:46+09:00",
+   "key": "54767e09",
    "by": "claude",
    "subjects": [
-    "원더리벳",
-    "WONDERLIVET",
-    "THE ORAL CIGARETTES"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "[실험] 원더리벳 2026 오늘 킨텍스 개막 — 헤드라이너·서브 헤드라이너 여섯 팀을 '애니로 먼저 만난 곡'으로 푸는 입문형 (11/16 개막 예고 초안과 다른 각도)",
-    "why": "일정·요일별 라인업은 일간스포츠·iMBC연예(9/30 타임테이블 공개) · 곡별 애니 타이업은 소니뮤직 공식·나루토 공식 사이트·패미통·영화 매체 등으로 하나씩 확인"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T10:51+09:00",
-   "corner": "listen",
-   "card": {
-    "form": "[카테고리]\nFeature\n\n[캡션]\n원더리벳 2026 이 오늘 고양 킨텍스에서 사흘 일정을 시작합니다.\n\n헤드라이너 이름은 낯설어도 노래는 익숙할 수 있는데요, 오늘 무대를 닫는 THE ORAL CIGARETTES 는 〈노라가미 ARAGOTO〉, 토요일의 [Alexandros] 는 〈기동전사 건담 섬광의 하사웨이〉, 일요일의 유즈는 〈헌터×헌터〉의 주제가를 불렀습니다. 서브 헤드라이너 삼보마스터와 스키마스위치도 각각 〈나루토〉와 〈강철의 연금술사〉 오프닝으로 먼저 닿은 팀입니다.\n\n무대에서 어떤 곡을 고를지는 현장에서 알게 되겠지만, 애니로 먼저 들은 곡이 있다면 그 팀부터 보러 가도 좋겠습니다. 토요일에는 〈BanG Dream!〉의 MyGO!!!!! 와 Roselia 도 무대에 섭니다.\n\n11월 20일(금)~22일(일) 고양 킨텍스 제2전시장, 매일 정오부터 원더·리벳 두 무대에서 번갈아 열립니다.\n\n#암낫오타쿠 #원더리벳 #오랄시가렛 #알렉산드로스 #유즈 #amazarashi\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/82e268ebaf0364e50b9f.jpg\n제목: 원더리벳 헤드라이너,|애니로 먼저 만났다\n부제: 11/20~22 킨텍스 · 여섯 팀의 애니 주제가\n출처: 일간스포츠\n\n[슬라이드]\n형식: 곡\n음원: THE ORAL CIGARETTES - 狂乱 Hey Kids!!\n소스: \n소제목: 금요일 헤드라이너 · 〈노라가미 ARAGOTO〉\n본문: 2015년 TV 애니 〈노라가미 ARAGOTO〉 오프닝으로 쓰인 곡입니다. 오늘 밤 무대를 닫는 팀입니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: amazarashi - 季節は次々死んでいく\n소스: \n소제목: 금요일 · 〈도쿄 구울 √A〉\n본문: 2015년 〈도쿄 구울 √A〉 엔딩이자 첫 싱글입니다. 지금 방송 중인 〈환상수호전〉 오프닝 '悲しみさえ大人びて'도 이 팀의 곡입니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: [Alexandros] - 閃光\n소스: \n소제목: 토요일 헤드라이너 · 〈섬광의 하사웨이〉\n본문: 2021년 극장판 〈기동전사 건담 섬광의 하사웨이〉 주제가입니다. 보컬 가와카미 요헤이가 원작 소설을 읽고 가사와 곡을 썼습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: SAMBOMASTER - 青春狂騒曲\n소스: \n소제목: 토요일 · 〈나루토〉\n본문: 2004년 10월부터 이듬해 3월까지 〈나루토〉 오프닝으로 흘렀습니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: Sukima Switch - ゴールデンタイムラバー\n소스: \n소제목: 일요일 · 〈강철의 연금술사〉\n본문: 2009년 〈강철의 연금술사 FULLMETAL ALCHEMIST〉 오프닝으로 쓰인 곡입니다.\n출처: 멜론 · 소리 공식 MV\n\n[슬라이드]\n형식: 곡\n음원: YUZU - REASON\n소스: \n소제목: 일요일 헤드라이너 · 〈헌터×헌터〉\n본문: 극장판 〈緋色の幻影〉 주제가로 만들어져 TV 시리즈 엔딩으로도 쓰였습니다.\n출처: 멜론 · 소리 공식 MV\n",
-    "caption": "원더리벳 2026 이 오늘 고양 킨텍스에서 사흘 일정을 시작합니다.\n\n헤드라이너 이름은 낯설어도 노래는 익숙할 수 있는데요, 오늘 무대를 닫는 THE ORAL CIGARETTES 는 〈노라가미 ARAGOTO〉, 토요일의 [Alexandros] 는 〈기동전사 건담 섬광의 하사웨이〉, 일요일의 유즈는 〈헌터×헌터〉의 주제가를 불렀습니다. 서브 헤드라이너 삼보마스터와 스키마스위치도 각각 〈나루토〉와 〈강철의 연금술사〉 오프닝으로 먼저 닿은 팀입니다.\n\n무대에서 어떤 곡을 고를지는 현장에서 알게 되겠지만, 애니로 먼저 들은 곡이 있다면 그 팀부터 보러 가도 좋겠습니다. 토요일에는 〈BanG Dream!〉의 MyGO!!!!! 와 Roselia 도 무대에 섭니다.\n\n11월 20일(금)~22일(일) 고양 킨텍스 제2전시장, 매일 정오부터 원더·리벳 두 무대에서 번갈아 열립니다.\n\n#암낫오타쿠 #원더리벳 #오랄시가렛 #알렉산드로스 #유즈 #amazarashi",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/82e268ebaf0364e50b9f.jpg",
-      "credit": "일간스포츠",
-      "from": "https://isplus.com/data/isp/image/2026/09/30/isp20260930000062.800x.0.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/47b74acee99fa24f55bd.jpg",
-      "credit": "iMBC연예",
-      "from": "https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/09/30/32bdd8f0-e012-4dd7-bbe9-00e7116dd218.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/82e268ebaf0364e50b9f.jpg",
-      "credit": "일간스포츠",
-      "from": "https://isplus.com/data/isp/image/2026/09/30/isp20260930000062.800x.0.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/47b74acee99fa24f55bd.jpg",
-      "credit": "iMBC연예",
-      "from": "https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2026/09/30/32bdd8f0-e012-4dd7-bbe9-00e7116dd218.jpg"
-     }
-    ],
-    "shape": "맥락",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "원더리벳 헤드라이너,|애니로 먼저 만났다",
-      "sub": "11/20~22 킨텍스 · 여섯 팀의 애니 주제가"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "곡 장 여섯 곡이 멜론에서 맞는 곡·소리로 잡혔는지 볼 것 (스키마스위치·삼보마스터·유즈는 멜론 표기가 일본어일 수 있음)",
-     "각 팀이 이 곡을 원더리벳에서 부른다는 근거는 없어 그렇게 쓰지 않음 · 〈강철의 연금술사〉 FA 판의 한국 정식 제목은 확인 못 해 원제 표기로 둠",
-     "🎵 2장 곡 확인 필요 — 'THE ORAL CIGARETTES - 狂乱 Hey Kids!!': 같은 이름의 곡은 있는데 아티스트가 다릅니다",
-     "🎵 3장 곡 확인 필요 — 'amazarashi - 季節は次々死んでいく': 멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-     "🎵 4장 곡 확인 필요 — '[Alexandros] - 閃光': 멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-     "🎵 5장 곡 확인 필요 — 'SAMBOMASTER - 青春狂騒曲': 멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-     "🎵 6장 곡 확인 필요 — 'Sukima Switch - ゴールデンタイムラバー': 멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-     "🎵 7장 곡 확인 필요 — 'YUZU - REASON': 같은 이름의 곡은 있는데 아티스트가 다릅니다"
-    ],
-    "research": [
-     {
-      "title": "일간스포츠 — 11/20~22 고양 킨텍스 제2전시장, 원더·리벳 두 무대, 매일 정오~오후 10시 이후, 헤드라이너 금 오랄시가렛·토 알렉산드로스·일 유즈, 서브 나토리·삼보마스터·스키마스위치, 토 MyGO!!!!!·Roselia (9/30)",
-      "link": "https://isplus.com/article/view/isp202609300046"
-     },
-     {
-      "title": "iMBC연예 — 같은 타임테이블, 금 아마자라시 출연 (9/30)",
-      "link": "https://enews.imbc.com/News/RetrieveNewsInfo/519624"
-     },
-     {
-      "title": "소니뮤직 — amazarashi 첫 싱글 '季節は次々死んでいく' 〈東京喰種トーキョーグール√A〉 ED",
-      "link": "https://www.sonymusic.co.jp/artist/amazarashi/info/448282"
-     },
-     {
-      "title": "NARUTO 공식 — 2004년 10월~2005년 3월 OP 삼보마스터 '青春狂騒曲'",
-      "link": "https://naruto-official.com/anime/naruto1"
-     },
-     {
-      "title": "패미통 — [Alexandros] '閃光' 〈閃光のハサウェイ〉 주제가",
-      "link": "https://www.famitsu.com/news/202305/22302958.html"
-     },
-     {
-      "title": "MOVIE WALKER PRESS — ゆず 'REASON' 〈劇場版 HUNTER×HUNTER 緋色の幻影〉 주제가",
-      "link": "https://press.moviewalker.jp/news/article/34376/"
-     }
-    ],
-    "by": "claude",
-    "song_check": [
-     {
-      "i": 1,
-      "want": "THE ORAL CIGARETTES - 狂乱 Hey Kids!!",
-      "why": "같은 이름의 곡은 있는데 아티스트가 다릅니다",
-      "cands": [
-       {
-        "artist": "GYROAXIA",
-        "title": "狂乱 Hey Kids!! (Cover)",
-        "album": "ARGONAVIS Cover Collection -Marble-",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/144/08/780/14408780_20260802075713.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "126443835"
-       },
-       {
-        "artist": "Muhammad Zaky Zulfiqor",
-        "title": "狂乱 Hey Kids!!",
-        "album": "Anime Songs Mix 0x01",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/065/22/544/6522544_20230423063546.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "109965790"
-       },
-       {
-        "artist": "THE ORAL CIGARETTES",
-        "title": "BLACK MEMORY (2019.3.17 Live at YOKOHAMA ARENA)",
-        "album": "THE ORAL CIGARETTES Live Selection BRING IT BACK",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/116/15/086/11615086_20241014152159.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "38098349"
-       },
-       {
-        "artist": "THE ORAL CIGARETTES",
-        "title": "Red Criminal (2021.11.1 Live at Zepp DiverCity TOKYO)",
-        "album": "THE ORAL CIGARETTES Live Selection BRING IT BACK",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/116/15/086/11615086_20241014152159.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "38098334"
-       }
-      ]
-     },
-     {
-      "i": 2,
-      "want": "amazarashi - 季節は次々死んでいく",
-      "why": "멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-      "cands": [
-       {
-        "artist": "amazarashi",
-        "title": "Sakura (Unplugged)",
-        "album": "Amazarashi Senbunnoichiya Monogatari Starlight",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/100/61/266/10061266_20260318143836.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "30407484"
-       },
-       {
-        "artist": "amazarashi",
-        "title": "Starlight (Unplugged)",
-        "album": "Amazarashi Senbunnoichiya Monogatari Starlight",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/100/61/266/10061266_20260318143836.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "30407490"
-       },
-       {
-        "artist": "amazarashi",
-        "title": "Mukade (Unplugged)",
-        "album": "Amazarashi Senbunnoichiya Monogatari Starlight",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/100/61/266/10061266_20260318143836.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "30407480"
-       },
-       {
-        "artist": "amazarashi",
-        "title": "Utsukushiki Omoide (Unplugged)",
-        "album": "Amazarashi Senbunnoichiya Monogatari Starlight",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/100/61/266/10061266_20260318143836.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "30407489"
-       }
-      ]
-     },
-     {
-      "i": 3,
-      "want": "[Alexandros] - 閃光",
-      "why": "멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-      "cands": [
-       {
-        "artist": "[Alexandros]",
-        "title": "ENDROLL (Feat. SennaRin, Hiroyuki Sawano)",
-        "album": "ENDROLL",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/136/90/761/13690761_20260529105621.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "602101269"
-       },
-       {
-        "artist": "[Alexandros]",
-        "title": "Wataridori",
-        "album": "Wataridori / Dracula La",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/023/23/130/2323130.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "5731558"
-       },
-       {
-        "artist": "[Alexandros]",
-        "title": "Senkou",
-        "album": "Senkou",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/105/98/480/10598480_20210426182432.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "33438128"
-       },
-       {
-        "artist": "[Alexandros]",
-        "title": "New Wall",
-        "album": "New Wall / I Want U To Love Me",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/026/80/506/2680506.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "8151968"
-       }
-      ]
-     },
-     {
-      "i": 4,
-      "want": "SAMBOMASTER - 青春狂騒曲",
-      "why": "멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-      "cands": [
-       {
-        "artist": "Sambomaster",
-        "title": "青春狂騒曲 / Seishun Kyosokyoku (Live at Nippon Budokan ,2017.12.3)",
-        "album": "1st日本武道館(Nippon Budokan) ～Sono Tatemono ni Yo ga Aru～(Live at Nippon Budokan ,2017.12.3)",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/106/39/303/10639303_20210628183622.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "33630082"
-       },
-       {
-        "artist": "Sambomaster",
-        "title": "花束 サンボマスターとアイナ・ジ・エンド / Hanataba Sambomaster&AiNA THE END",
-        "album": "花束 サンボマスターとアイナ・ジ・エンド(Hanataba Sambomaster&AiNA THE END)",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/151/42/367/15142367_20261109153632.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "603880580"
-       },
-       {
-        "artist": "Sambomaster",
-        "title": "Sekaiwa Soreo Aito Yobundaze",
-        "album": "Sambomaster Kyuukyoku Best",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/100/61/495/10061495.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "30408826"
-       },
-       {
-        "artist": "Sambomaster",
-        "title": "可能性 / Kanousei (가능성)",
-        "album": "サンボマスタ-とキミ / Sambomasterto Kimi (삼보마스터와 너)",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/023/20/479/2320479.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "5711429"
-       }
-      ]
-     },
-     {
-      "i": 5,
-      "want": "Sukima Switch - ゴールデンタイムラバー",
-      "why": "멜론에서 이 아티스트의 이 곡을 못 찾았습니다 — 곡명을 틀렸거나 없는 곡일 수 있어요",
-      "cands": [
-       {
-        "artist": "Sukima Switch",
-        "title": "Kanade (Re:Produced By Sukimaswitch)",
-        "album": "SUKIMASWITCH 20th Anniversary BEST \"POPMAN'S WORLD -Second-\"",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/112/77/356/11277356_20230703094455.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "36581250"
-       },
-       {
-        "artist": "Sukima Switch",
-        "title": "Kanade (Re:Produced By Sukimaswitch)",
-        "album": "Re:action",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/041/61/831/4161831.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "21616512"
-       },
-       {
-        "artist": "Sukima Switch",
-        "title": "Hoshi No Utsuwa",
-        "album": "SUKIMASWITCH 20th Anniversary BEST \"POPMAN'S WORLD -Second-\"",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/112/77/356/11277356_20230703094455.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "36581247"
-       },
-       {
-        "artist": "Sukima Switch",
-        "title": "Line",
-        "album": "SUKIMASWITCH 20th Anniversary BEST \"POPMAN'S WORLD -Second-\"",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/112/77/356/11277356_20230703094455.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "36581248"
-       }
-      ]
-     },
-     {
-      "i": 6,
-      "want": "YUZU - REASON",
-      "why": "같은 이름의 곡은 있는데 아티스트가 다릅니다",
-      "cands": [
-       {
-        "artist": "Pink",
-        "title": "Just Give Me A Reason (Feat. Nate Ruess Of Fun.)",
-        "album": "Just Give Me A Reason (Feat. Nate Ruess Of Fun.)",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/021/83/032/2183032.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "4098458"
-       },
-       {
-        "artist": "Hoobastank",
-        "title": "The Reason",
-        "album": "The Reason",
-        "img": "https://cdnimg.melon.co.kr/cm/album/images/056/54/125/5654125.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "106853637"
-       },
-       {
-        "artist": "YUZU,back number",
-        "title": "Sayonarabus (YUZU×back number)",
-        "album": "Yuzuiroha1997-2017",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/110/90/685/11090685_20221031152148.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "35783969"
-       },
-       {
-        "artist": "YUZU",
-        "title": "Nagareboshi Kirari (Yuzu Version)",
-        "album": "Land",
-        "img": "https://cdnimg.melon.co.kr/cm2/album/images/110/90/640/11090640_20221031150942.jpg/melon/resize/1000/quality/90/optimize",
-        "id": "35783652"
-       }
-      ]
-     }
-    ],
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b22836769fc5d302026e.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/2ae29526fc1efd9246d8.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f71875835b499b2428ad.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b4416e3e12b0665192f0.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d0c70fbf892b1c3b47a6.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/0d9f87ff35800d961ba5.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/5071052d9e1e275381da.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/be697fd46a60d5397066.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b22836769fc5d302026e.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T10:52+09:00",
-     "videos": {},
-     "vkey": "1564265c9448",
-     "v": {
-      "A": "3af5d0cc"
-     }
-    }
-   },
-   "corner_name": "듣는다면",
-   "corner_no": 1
-  },
-  {
-   "source": {
-    "id": "claude:nakashima-mika-votoms",
-    "account": "리얼사운드",
-    "url": "https://realsound.jp/2026/10/post-2562092.html",
-    "image": null,
-    "head": "中島美嘉、劇場作品『装甲騎兵ボトムズ 灰色の魔女』主題歌担当 楽曲提供はTHE ALFEE 高見沢俊彦",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T10:51+09:00",
-   "key": "d4a033de",
-   "by": "claude",
-   "subjects": [
-    "나카시마 미카",
-    "中島美嘉",
-    "장갑기병 보톰즈"
+    "후지이 카제",
+    "藤井風",
+    "Fujii Kaze"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "나카시마 미카 '名も無き詩人のように' 오늘 음원 공개 — 오시이 마모루 〈장갑기병 보톰즈 회색의 마녀〉 주제가, 작사·작곡·편곡 THE ALFEE 다카미자와 도시히코",
-    "why": "리얼사운드·시네마투데이(10/23) — 11/20 배신·11/25 CD·11/20 개봉, 두 사람의 코멘트 · 선라이즈 공식 주제가 예고 · 11/15 버린 후보('11/20 곡이 나오면')의 바로 그날"
+    "angle": "후지이 카제가 피아노 한 대로 선 도쿄 돔 — 첫날 생중계 최대 약 66만 명 동시 접속(보도 기준), 원래 없던 둘째 날(오늘) 생중계가 급히 결정 · 1월 9일 고척 스카이돔 세 번째 내한",
+    "why": "오리콘 뉴스(11/21) 弾き語り 공연·약 66만 명·21일 생중계 · mikiki(11/21) 공연명〈藤井風 ピアノリサイタル〉·투어와 전혀 다른 독주 콘셉트·개연 18:00 · 뉴시스(6/10) 2027/1/9 고척 스카이돔 세 번째 내한 · fujiikaze.com 서울 공연 추가"
    },
    "added": "claude",
-   "added_at": "2026-11-20T10:51+09:00",
-   "corner": "song",
-   "card": {
-    "form": "[카테고리]\nNew Release!\n\n[캡션]\n나카시마 미카가 부른 극장판 〈장갑기병 보톰즈 회색의 마녀〉(装甲騎兵ボトムズ 灰色の魔女) 주제가가 오늘 음원으로 나왔습니다.\n\n곡 '名も無き詩人のように'(이름 없는 시인처럼)는 THE ALFEE 의 다카미자와 도시히코가 작사·작곡·편곡을 모두 맡았는데요, 오시이 마모루 감독 작품의 팬이라고 밝힌 사람입니다. 그는 현악을 밀려오는 운명으로, 기타를 거기에 맞서는 사람의 의지로 두고 서로 부딪치게 짰다고 했습니다. 나카시마 미카는 '인트로를 듣는 순간 단숨에 이야기에 끌려 들어갔다'고 했습니다.\n\n영화는 선라이즈 50주년을 맞아 오시이 마모루가 감독한 〈보톰즈〉 시리즈 완전 신작으로, 오늘 일본에서 개봉했습니다. 음악은 가와이 겐지입니다.\n\nCD 싱글은 11월 25일 나옵니다.\n\n#암낫오타쿠 #나카시마미카 #보톰즈 #오시이마모루 #다카미자와도시히코\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/531a482e8a4134d2eb8a.jpg\n제목: 나카시마 미카,|〈보톰즈〉 주제가 공개\n부제: '名も無き詩人のように' · 작사·작곡 다카미자와 도시히코\n출처: 리얼사운드\n",
-    "caption": "나카시마 미카가 부른 극장판 〈장갑기병 보톰즈 회색의 마녀〉(装甲騎兵ボトムズ 灰色の魔女) 주제가가 오늘 음원으로 나왔습니다.\n\n곡 '名も無き詩人のように'(이름 없는 시인처럼)는 THE ALFEE 의 다카미자와 도시히코가 작사·작곡·편곡을 모두 맡았는데요, 오시이 마모루 감독 작품의 팬이라고 밝힌 사람입니다. 그는 현악을 밀려오는 운명으로, 기타를 거기에 맞서는 사람의 의지로 두고 서로 부딪치게 짰다고 했습니다. 나카시마 미카는 '인트로를 듣는 순간 단숨에 이야기에 끌려 들어갔다'고 했습니다.\n\n영화는 선라이즈 50주년을 맞아 오시이 마모루가 감독한 〈보톰즈〉 시리즈 완전 신작으로, 오늘 일본에서 개봉했습니다. 음악은 가와이 겐지입니다.\n\nCD 싱글은 11월 25일 나옵니다.\n\n#암낫오타쿠 #나카시마미카 #보톰즈 #오시이마모루 #다카미자와도시히코",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/531a482e8a4134d2eb8a.jpg",
-      "credit": "리얼사운드",
-      "from": "https://realsound.jp/wp-content/uploads/2026/10/20261023-nakajima-99.jpeg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/eda56b0dfcf77834cf2f.jpg",
-      "credit": "시네마투데이",
-      "from": "https://img.cinematoday.jp/a/hsKgErmvjTSR/_size_r1200x630/_v_1792738604/main.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8e7c40c83b28030a5416.jpg",
-      "credit": "MOVIE WALKER PRESS",
-      "from": "https://press.moviewalker.jp/api/resizeimage/news/article/1451237/18908420?w=1200"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/531a482e8a4134d2eb8a.jpg",
-      "credit": "리얼사운드",
-      "from": "https://realsound.jp/wp-content/uploads/2026/10/20261023-nakajima-99.jpeg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/eda56b0dfcf77834cf2f.jpg",
-      "credit": "시네마투데이",
-      "from": "https://img.cinematoday.jp/a/hsKgErmvjTSR/_size_r1200x630/_v_1792738604/main.jpg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8e7c40c83b28030a5416.jpg",
-      "credit": "MOVIE WALKER PRESS",
-      "from": "https://press.moviewalker.jp/api/resizeimage/news/article/1451237/18908420?w=1200"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "나카시마 미카,|〈보톰즈〉 주제가 공개",
-      "sub": "'名も無き詩人のように' · 작사·작곡 다카미자와 도시히코"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — サンライズ SUNRISE Official (주제가 예고 32초 중 0:02-0:30)",
-     "〈보톰즈〉 새 극장판의 한국 개봉은 확인 못 해 쓰지 않음 · 한국어 제목 '회색의 마녀'는 원제를 옮긴 것"
-    ],
-    "research": [
-     {
-      "title": "리얼사운드 — 11/20 배신, 11/25 CD(AICL-4994, 커플링 인스트), 작사·작곡·편곡 다카미자와 도시히코(押井作品の大ファン), 현악=운명·기타=맞서는 의지, 선라이즈 50주년, 감독 오시이 마모루, 음악 가와이 겐지 (10/23)",
-      "link": "https://realsound.jp/2026/10/post-2562092.html"
-     },
-     {
-      "title": "시네마투데이 — 11/20 개봉, 나카시마 미카 「イントロを聴いた瞬間から、高見沢さんの唯一無二の世界観とアニメの情景が広がって、一気に物語に引き込まれました」 (10/23)",
-      "link": "https://www.cinematoday.jp/news/N0157596"
-     },
-     {
-      "title": "MOVIE WALKER PRESS — 메인 비주얼·주제가·예고편 공개",
-      "link": "https://press.moviewalker.jp/news/article/1451237/p2/"
-     },
-     {
-      "title": "サンライズ SUNRISE Official — 『装甲騎兵ボトムズ 灰色の魔女』主題歌予告 (32초)",
-      "link": "https://www.youtube.com/watch?v=dTUpnswZ3VU"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/26fccce1b86c3e170439.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e219ac5943c139b9f720.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/26fccce1b86c3e170439.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T10:53+09:00",
-     "v": {
-      "A": "f2d99cf5"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=dTUpnswZ3VU\n구간: 0:02-0:30\n곡: 〈보톰즈〉 새 극장판 주제가\n아티스트: 나카시마 미카가 부른\n피처링:\n후킹: \n출처: サンライズ SUNRISE Official",
-    "caption": "극장판 〈장갑기병 보톰즈 회색의 마녀〉(装甲騎兵ボトムズ 灰色の魔女) 주제가 예고입니다. 나카시마 미카의 '名も無き詩人のように'(이름 없는 시인처럼)가 오늘 음원으로 나왔습니다.\n\n곡은 THE ALFEE 다카미자와 도시히코가 썼는데요, 현악은 운명, 기타는 거기에 맞서는 사람의 의지로 부딪치게 짰다고 했습니다.\n\n영화는 오늘 일본에서 개봉했고, CD 는 11월 25일 나옵니다. 영상은 선라이즈 공식 채널의 예고편입니다.\n\n#암낫오타쿠 #나카시마미카 #보톰즈 #오시이마모루 #애니송",
-    "hooks": {
-     "A": "나카시마 미카가 부른 / 〈보톰즈〉 새 극장판 주제가",
-     "B": "오시이 마모루 〈보톰즈〉에 / 나카시마 미카의 목소리",
-     "C": "다카미자와가 쓰고 / 나카시마 미카가 불렀다"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=dTUpnswZ3VU",
-     "credit": "サンライズ SUNRISE Official",
-     "range": [
-      2.0,
-      30.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — サンライズ SUNRISE Official (주제가 예고 32초 중 0:02-0:30)",
-     "〈보톰즈〉 새 극장판의 한국 개봉은 확인 못 해 쓰지 않음 · 한국어 제목 '회색의 마녀'는 원제를 옮긴 것"
-    ],
-    "research": [
-     {
-      "title": "리얼사운드 — 11/20 배신, 11/25 CD(AICL-4994, 커플링 인스트), 작사·작곡·편곡 다카미자와 도시히코(押井作品の大ファン), 현악=운명·기타=맞서는 의지, 선라이즈 50주년, 감독 오시이 마모루, 음악 가와이 겐지 (10/23)",
-      "link": "https://realsound.jp/2026/10/post-2562092.html"
-     },
-     {
-      "title": "시네마투데이 — 11/20 개봉, 나카시마 미카 「イントロを聴いた瞬間から、高見沢さんの唯一無二の世界観とアニメの情景が広がって、一気に物語に引き込まれました」 (10/23)",
-      "link": "https://www.cinematoday.jp/news/N0157596"
-     },
-     {
-      "title": "MOVIE WALKER PRESS — 메인 비주얼·주제가·예고편 공개",
-      "link": "https://press.moviewalker.jp/news/article/1451237/p2/"
-     },
-     {
-      "title": "サンライズ SUNRISE Official — 『装甲騎兵ボトムズ 灰色の魔女』主題歌予告 (32초)",
-      "link": "https://www.youtube.com/watch?v=dTUpnswZ3VU"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/dTUpnswZ3VU/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/4d6750a8aa458b791649.jpg",
-     "key": "dTUpnswZ3VU@2.0"
-    },
-    "px": {
-     "vid": "dTUpnswZ3VU",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/edf274affd7c98ae67dc.mp4",
-     "off": 0.0,
-     "end": 32.0,
-     "full": 32.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-20T10:55+09:00"
-    }
-   },
-   "corner_name": "오늘의 노래",
-   "corner_no": 1,
-   "pick": {
-    "rank": 3,
-    "why": "오전 초안 · 오늘 음원·개봉 당일이라 오늘 안에 올려야 쓸모가 있다",
-    "at": "2026-11-20T18:52+09:00"
-   }
-  },
-  {
-   "source": {
-    "id": "claude:suikoden-ed-anime-mv",
-    "account": "리스아니",
-    "url": "https://www.lisani.jp/0000322497/",
-    "image": null,
-    "head": "Koji Nakamura、アニメ「幻想水滸伝」エンディング主題歌「closed eye sun (feat. たかはしほのか)」アニメコラボMVを公開！",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T10:51+09:00",
-   "key": "422ad69b",
-   "by": "claude",
-   "subjects": [
-    "환상수호전",
-    "Koji Nakamura",
-    "리갈릴리"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "애니 〈환상수호전〉 엔딩 'closed eye sun (feat. たかはしほのか)' 애니 MV 공개 — SUPERCAR 출신 Koji Nakamura 곡, 리갈릴리 다카하시 호노카 작사·노래 · 오프닝 amazarashi 는 오늘 원더리벳",
-    "why": "리스아니(11/19) MV 공개·두 사람 코멘트 · Koji Nakamura 공식 채널 업로드 · 원작·방송은 애니메!애니메!·Game*Spark"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T10:51+09:00",
+   "added_at": "2026-11-21T10:46+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n애니 〈환상수호전〉(幻想水滸伝)의 엔딩 'closed eye sun'이 애니 MV 로 다시 나왔습니다.\n\n곡은 SUPERCAR 출신 Koji Nakamura 가 쓰고, 리갈릴리(Regal Lily)의 다카하시 호노카가 가사를 붙여 불렀는데요, 새로 공개된 MV 는 5화까지의 장면을 중심으로 리류와 조위의 관계, 동료들의 이야기를 곡에 맞춰 엮었습니다. 다카하시 호노카는 '나카코 씨의 음악과 함께할 수 있다는 게 마음 깊이 기뻤다'고 했습니다.\n\n게임 〈환상수호전 II〉가 원작입니다. 오프닝 '悲しみさえ大人びて'를 부른 amazarashi 는 오늘 킨텍스 원더리벳 무대에 섭니다.\n\n일본에서는 TOKYO MX 매주 화요일 밤 23시 30분(일본 기준)에 방송합니다.\n\n#암낫오타쿠 #환상수호전 #KojiNakamura #리갈릴리 #amazarashi\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/48cd8c2f546b0f90bd39.jpg\n제목: 〈환상수호전〉 엔딩,|애니 MV 나왔다\n부제: Koji Nakamura 'closed eye sun' feat. 다카하시 호노카\n출처: 리스아니\n",
-    "caption": "애니 〈환상수호전〉(幻想水滸伝)의 엔딩 'closed eye sun'이 애니 MV 로 다시 나왔습니다.\n\n곡은 SUPERCAR 출신 Koji Nakamura 가 쓰고, 리갈릴리(Regal Lily)의 다카하시 호노카가 가사를 붙여 불렀는데요, 새로 공개된 MV 는 5화까지의 장면을 중심으로 리류와 조위의 관계, 동료들의 이야기를 곡에 맞춰 엮었습니다. 다카하시 호노카는 '나카코 씨의 음악과 함께할 수 있다는 게 마음 깊이 기뻤다'고 했습니다.\n\n게임 〈환상수호전 II〉가 원작입니다. 오프닝 '悲しみさえ大人びて'를 부른 amazarashi 는 오늘 킨텍스 원더리벳 무대에 섭니다.\n\n일본에서는 TOKYO MX 매주 화요일 밤 23시 30분(일본 기준)에 방송합니다.\n\n#암낫오타쿠 #환상수호전 #KojiNakamura #리갈릴리 #amazarashi",
+    "form": "[카테고리]\nNews\n\n[캡션]\n후지이 카제가 어제(11월 20일) 도쿄 돔에서 피아노 리사이틀을 열었습니다.\n\n지금 돌고 있는 'Prema World Tour'와는 전혀 다른, 홀로 피아노를 치며 노래하는 공연인데요, 공식 유튜브 생중계에는 보도 기준 최대 약 66만 명이 동시에 접속했습니다. 이 반응에 원래 계획에 없던 둘째 날 공연 생중계도 급히 정해졌습니다.\n\n한국 팬은 두 달 뒤 그를 직접 만납니다. 2027년 1월 9일 고척 스카이돔 투어 서울 공연으로, 세 번째 내한입니다.\n\n둘째 날 생중계는 오늘 오후 6시(한국·일본 같은 시각) 개연에 맞춰 공식 유튜브 채널에서 열립니다.\n\n#암낫오타쿠 #후지이카제 #FujiiKaze #도쿄돔 #피아노리사이틀\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e05b671183a02600697a.jpg\n제목: 후지이 카제 피아노 공연,|오늘 밤도 생중계\n부제: 도쿄 돔 피아노 리사이틀 · 첫날 약 66만 명 접속\n출처: mikiki · Photo by 上山陽介\n",
+    "caption": "후지이 카제가 어제(11월 20일) 도쿄 돔에서 피아노 리사이틀을 열었습니다.\n\n지금 돌고 있는 'Prema World Tour'와는 전혀 다른, 홀로 피아노를 치며 노래하는 공연인데요, 공식 유튜브 생중계에는 보도 기준 최대 약 66만 명이 동시에 접속했습니다. 이 반응에 원래 계획에 없던 둘째 날 공연 생중계도 급히 정해졌습니다.\n\n한국 팬은 두 달 뒤 그를 직접 만납니다. 2027년 1월 9일 고척 스카이돔 투어 서울 공연으로, 세 번째 내한입니다.\n\n둘째 날 생중계는 오늘 오후 6시(한국·일본 같은 시각) 개연에 맞춰 공식 유튜브 채널에서 열립니다.\n\n#암낫오타쿠 #후지이카제 #FujiiKaze #도쿄돔 #피아노리사이틀",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/48cd8c2f546b0f90bd39.jpg",
-      "credit": "리스아니",
-      "from": "https://www.lisani.jp/admin/wp-content/uploads/2026/11/2611191800-yh-007-1200x630.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e05b671183a02600697a.jpg",
+      "credit": "mikiki · Photo by 上山陽介",
+      "from": "https://mikiki.ismcdn.jp/mwimgs/4/d/-/img_4d31e778c64db711325351520fe97489941348.jpg"
      },
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/315685b9ea6a9fb53e49.jpg",
-      "credit": "애니메!애니메!",
-      "from": "https://animeanime.jp/imgs/ogp_f/914122.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b6fdeee9a3531acb61e4.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494433/20261121_010320_p_o_94791162.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/48cd8c2f546b0f90bd39.jpg",
-      "credit": "리스아니",
-      "from": "https://www.lisani.jp/admin/wp-content/uploads/2026/11/2611191800-yh-007-1200x630.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e05b671183a02600697a.jpg",
+      "credit": "mikiki · Photo by 上山陽介",
+      "from": "https://mikiki.ismcdn.jp/mwimgs/4/d/-/img_4d31e778c64db711325351520fe97489941348.jpg"
      },
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/315685b9ea6a9fb53e49.jpg",
-      "credit": "애니메!애니메!",
-      "from": "https://animeanime.jp/imgs/ogp_f/914122.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b6fdeee9a3531acb61e4.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494433/20261121_010320_p_o_94791162.jpg"
      }
     ],
     "shape": "단신",
@@ -587,343 +64,110 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "〈환상수호전〉 엔딩,|애니 MV 나왔다",
-      "sub": "Koji Nakamura 'closed eye sun' feat. 다카하시 호노카"
+      "title": "후지이 카제 피아노 공연,|오늘 밤도 생중계",
+      "sub": "도쿄 돔 피아노 리사이틀 · 첫날 약 66만 명 접속"
      }
     ],
     "issues": [],
     "confirm": [
-     "클립 위험: 낮음 — Koji Nakamura (애니 MV 178초 중 0:40-1:10 · 애니 장면과 후렴이 같이 나오는 구간인지 보고 옮길 것)",
-     "한국 정식 공개(OTT)는 확인 못 해 쓰지 않음 · 캐릭터 이름 리류·조위는 일본어 독음 그대로"
+     "공식 유튜브 생중계 영상은 끝난 뒤 비공개로 돌았다는 팬 채널 말이 있어 숏폼은 비움 — 공식 다시보기가 열리면 그때",
+     "둘째 날 생중계 시작 시각은 오리콘 '18시' 기준 · 공식 X 공지로 한 번 더 볼 것"
     ],
     "research": [
      {
-      "title": "리스아니 — 11/19 애니 콜라보 MV 공개, 5화까지 장면 중심 리류·조위 관계, 작사 다카하시 호노카(리갈릴리), 호노카 「ナカコーさんの音楽とともに携われたこと、心の底から嬉しく思いながらレコーディングに臨みました。」, TOKYO MX 매주 화 23:30 (11/19)",
-      "link": "https://www.lisani.jp/0000322497/"
+      "title": "오리콘 뉴스 — 도쿄 돔 弾き語り 공연 유튜브 생중계 최대 약 66만 명 동시 접속, 21일 공연도 긴급 생중계 (11/21)",
+      "link": "https://www.oricon.co.jp/news/2494433/full/"
      },
      {
-      "title": "Koji Nakamura 공식 채널 — closed eye sun feat. Honoka Takahashi (Anime MV) (178초)",
-      "link": "https://www.youtube.com/watch?v=ShJNBq_RIWI"
+      "title": "mikiki — 〈藤井風 ピアノリサイタル〉 11/20·21 도쿄 돔, 'Prema World Tour'와 전혀 다른 독주 콘셉트, 첫날 최대 약 66만 명, Day 2 생중계 급히 결정, 개장 16:00·개연 18:00, Photo by 上山陽介 (11/21)",
+      "link": "https://mikiki.tokyo.jp/articles/-/46744"
      },
      {
-      "title": "애니메!애니메! — 원작 『幻想水滸伝II』, 제작 KONAMI animation, OP amazarashi '悲しみさえ大人びて', 2026년 10월부터 32국 (8/3)",
-      "link": "https://animeanime.jp/article/2026/08/03/101696.html"
+      "title": "뉴시스 — 2027년 1월 9일 고척 스카이돔 'Fujii Kaze Prema World Tour - 서울', 세 번째 내한 (6/10)",
+      "link": "https://mobile.newsis.com/view/NISX20260610_0003664086"
      },
      {
-      "title": "Game*Spark — 『幻水II』 원작, 리류 역 구마가이 도시키·조위 역 쓰치야 신바, OP amazarashi (7/5)",
-      "link": "https://www.gamespark.jp/article/2026/07/05/168845.html"
+      "title": "fujiikaze.com — Prema World Tour 아시아 일정, 서울 공연 추가 (4/21)",
+      "link": "https://fujiikaze.com/?p=2970"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c903be7bddb943e8a908.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3568eebab4e5e84bc037.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/932111d840b374f22962.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/1943fb008b84b163e8e9.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/c903be7bddb943e8a908.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/932111d840b374f22962.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-20T10:53+09:00",
+     "at": "2026-11-21T10:46+09:00",
      "v": {
-      "A": "ae71a0c4"
+      "A": "34ac83cf"
      }
     }
    },
-   "shorts": {
-    "form": "[영상]\n카테고리: 소식\nURL: https://www.youtube.com/watch?v=ShJNBq_RIWI\n구간: 0:40-1:10\n곡: 애니 MV 로 나왔습니다\n아티스트: 〈환상수호전〉 엔딩이\n피처링:\n후킹: \n출처: Koji Nakamura\n자막: 자동",
-    "caption": "애니 〈환상수호전〉(幻想水滸伝) 엔딩 'closed eye sun'의 애니 MV 입니다.\n\nSUPERCAR 출신 Koji Nakamura 가 곡을 쓰고 리갈릴리의 다카하시 호노카가 가사를 붙여 불렀는데요, 5화까지의 장면을 곡에 맞춰 엮었습니다.\n\n게임 〈환상수호전 II〉가 원작입니다. 영상은 Koji Nakamura 공식 채널의 MV 입니다.\n\n#암낫오타쿠 #환상수호전 #KojiNakamura #리갈릴리 #애니송",
-    "hooks": {
-     "A": "〈환상수호전〉 엔딩이 / 애니 MV 로 나왔습니다",
-     "B": "리갈릴리 보컬이 부른 / 〈환상수호전〉 엔딩",
-     "C": "게임 원작 애니 엔딩이 / 애니 MV 가 됐습니다"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=ShJNBq_RIWI",
-     "credit": "Koji Nakamura",
-     "range": [
-      40.0,
-      70.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — Koji Nakamura (애니 MV 178초 중 0:40-1:10 · 애니 장면과 후렴이 같이 나오는 구간인지 보고 옮길 것)",
-     "한국 정식 공개(OTT)는 확인 못 해 쓰지 않음 · 캐릭터 이름 리류·조위는 일본어 독음 그대로"
-    ],
-    "research": [
-     {
-      "title": "리스아니 — 11/19 애니 콜라보 MV 공개, 5화까지 장면 중심 리류·조위 관계, 작사 다카하시 호노카(리갈릴리), 호노카 「ナカコーさんの音楽とともに携われたこと、心の底から嬉しく思いながらレコーディングに臨みました。」, TOKYO MX 매주 화 23:30 (11/19)",
-      "link": "https://www.lisani.jp/0000322497/"
-     },
-     {
-      "title": "Koji Nakamura 공식 채널 — closed eye sun feat. Honoka Takahashi (Anime MV) (178초)",
-      "link": "https://www.youtube.com/watch?v=ShJNBq_RIWI"
-     },
-     {
-      "title": "애니메!애니메! — 원작 『幻想水滸伝II』, 제작 KONAMI animation, OP amazarashi '悲しみさえ大人びて', 2026년 10월부터 32국 (8/3)",
-      "link": "https://animeanime.jp/article/2026/08/03/101696.html"
-     },
-     {
-      "title": "Game*Spark — 『幻水II』 원작, 리류 역 구마가이 도시키·조위 역 쓰치야 신바, OP amazarashi (7/5)",
-      "link": "https://www.gamespark.jp/article/2026/07/05/168845.html"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/ShJNBq_RIWI/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f93f81b5e2740b00e7d7.jpg",
-     "key": "ShJNBq_RIWI@40.0"
-    },
-    "px": {
-     "vid": "ShJNBq_RIWI",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/a1bbb85d02731aea1008.mp4",
-     "off": 0.0,
-     "end": 115.0,
-     "full": 177.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-20T10:55+09:00"
-    }
+   "pick": {
+    "rank": 1,
+    "why": "오늘 밤 6시 둘째 날 생중계가 급히 정해져 오늘 낮에 올려야 쓸모가 있다 · 한국에서 이름이 닿는 사람 · 1월 9일 고척 내한으로 한국 연결",
+    "at": "2026-11-21T10:46+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:mahoyo-supercell-yoru-to-ao",
-    "account": "덴파미니코게이머",
-    "url": "https://news.denfaminicogamer.jp/news/2611202q",
+    "id": "claude:record-award-2026-illit",
+    "account": "후쿠이신문",
+    "url": "https://www.fukuishimbun.co.jp/articles/-/2752412",
     "image": null,
-    "head": "劇場アニメ『魔法使いの夜』が本日11月20日より全国公開",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T18:52+09:00",
-   "key": "afb149b0",
-   "by": "claude",
-   "subjects": [
-    "supercell",
-    "야나기 나기",
-    "마법사의 밤"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "오늘 일본 개봉한 ufotable 〈마법사의 밤〉 주제가 '夜と青' — ryo 가 '잠든 채였을 것'이라던 supercell 의 재가동 첫 곡, 야나기 나기가 약 15년 만에 부른다 (오전에 버린 '개봉 소식'과 다른 각도: 사람과 곡)",
-    "why": "덴파미니코게이머(11/20) 오늘 개봉·주제가·11/21 배신 · 덴파미니코게이머(9/30)·coki 재가동과 ryo 의 말 · 리얼사운드(10/20) 약 15년 만, 2012년 PC판에 이은 주제가 · 전격온라인 발매 일정"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T18:52+09:00",
-   "corner": "song",
-   "card": {
-    "form": "[카테고리]\nNew Release!\n\n[캡션]\nufotable 이 만든 극장판 〈마법사의 밤〉(魔法使いの夜)이 오늘 일본에서 개봉했습니다.\n\n주제가 '夜と青'(밤과 파랑)는 ryo 가 9월 말 supercell 재가동을 알리며 내놓은 곡인데요, 노래는 〈바케모노가타리〉 엔딩 '君の知らない物語'를 불렀던 야나기 나기가 맡았습니다. 그가 supercell 신곡을 부르는 건 약 15년 만입니다. ryo 는 이런 기회가 없었다면 supercell 은 아마 잠든 채였을 거라고 했습니다.\n\n원작은 2012년 TYPE-MOON 이 낸 PC 비주얼 노벨로, 그때도 supercell 이 주제가를 맡았습니다. 14년 만에 같은 작품으로 다시 깨어난 셈입니다.\n\n'夜と青'는 내일(11월 21일) 음원으로 먼저 나오고, 애니판 CD 는 11월 25일 나옵니다.\n\n#암낫오타쿠 #마법사의밤 #supercell #야나기나기 #ufotable #TYPEMOON\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/69d7070af98da91205c2.jpg\n제목: 〈마법사의 밤〉으로|supercell 재가동\n부제: '夜と青' · 노래 야나기 나기 · 작사·작곡 ryo\n출처: 덴파미니코게이머\n",
-    "caption": "ufotable 이 만든 극장판 〈마법사의 밤〉(魔法使いの夜)이 오늘 일본에서 개봉했습니다.\n\n주제가 '夜と青'(밤과 파랑)는 ryo 가 9월 말 supercell 재가동을 알리며 내놓은 곡인데요, 노래는 〈바케모노가타리〉 엔딩 '君の知らない物語'를 불렀던 야나기 나기가 맡았습니다. 그가 supercell 신곡을 부르는 건 약 15년 만입니다. ryo 는 이런 기회가 없었다면 supercell 은 아마 잠든 채였을 거라고 했습니다.\n\n원작은 2012년 TYPE-MOON 이 낸 PC 비주얼 노벨로, 그때도 supercell 이 주제가를 맡았습니다. 14년 만에 같은 작품으로 다시 깨어난 셈입니다.\n\n'夜と青'는 내일(11월 21일) 음원으로 먼저 나오고, 애니판 CD 는 11월 25일 나옵니다.\n\n#암낫오타쿠 #마법사의밤 #supercell #야나기나기 #ufotable #TYPEMOON",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/69d7070af98da91205c2.jpg",
-      "credit": "덴파미니코게이머",
-      "from": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/HXbP2saaEAAfibp.jpeg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/31f937a9700c18c87aa1.jpg",
-      "credit": "전격온라인",
-      "from": "https://cimg.kgl-systems.io/camion/files/92582/ogp_PoiA.jpg?x=1280"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/69d7070af98da91205c2.jpg",
-      "credit": "덴파미니코게이머",
-      "from": "https://news.denfaminicogamer.jp/wp-content/uploads/2026/11/HXbP2saaEAAfibp.jpeg"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/31f937a9700c18c87aa1.jpg",
-      "credit": "전격온라인",
-      "from": "https://cimg.kgl-systems.io/camion/files/92582/ogp_PoiA.jpg?x=1280"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "〈마법사의 밤〉으로|supercell 재가동",
-      "sub": "'夜と青' · 노래 야나기 나기 · 작사·작곡 ryo"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — アニプレックス チャンネル (최종 예고 96초 · 자막이 없어 주제가 구간을 못 짚음 — 0:58-1:26 이 노래 구간인지 듣고 옮길 것)",
-     "한국 개봉은 확인 못 해 쓰지 않음 · 한국어 제목 '마법사의 밤'은 원제를 옮긴 것"
-    ],
-    "research": [
-     {
-      "title": "덴파미니코게이머 — 11/20 전국 개봉·IMAX, 제작 ufotable, 감독 다케우치 마사시, 원작 2012년 TYPE-MOON PC 노벨(시나리오 나스 키노코), 주제가 supercell '夜と青' 노래 야나기 나기·작사작곡편곡 ryo, 11/21 배신 (11/20)",
-      "link": "https://news.denfaminicogamer.jp/news/2611202q"
-     },
-     {
-      "title": "덴파미니코게이머 — 9/30 ryo 가 X·note 로 재가동 발표, 야나기 나기가 supercell 신곡을 부르는 건 'Today Is A Beautiful Day' 이후 약 15년 만, ryo 「こういう機会がなかったら、たぶんsupercellは眠ったままだったと思う」 (9/30)",
-      "link": "https://news.denfaminicogamer.jp/news/2609303g"
-     },
-     {
-      "title": "coki — 「眠ったままだった」supercell 을 다시 움직인 한 곡",
-      "link": "https://coki.jp/?p=94269"
-     },
-     {
-      "title": "리얼사운드 — 약 15년 만의 타그, 2012년 PC 게임판에 이은 주제가, '君の知らない物語'(〈化物語〉 ED) (10/20)",
-      "link": "https://realsound.jp/2026/10/post-2553691.html"
-     },
-     {
-      "title": "전격온라인 — 11/21 단곡 배신, 11/25 애니판 CD, 12/9 supercell 판 CD (10/30)",
-      "link": "https://dengekionline.com/article/202610/92582"
-     },
-     {
-      "title": "アニプレックス チャンネル — 『魔法使いの夜』最終予告／主題歌：supercell「夜と青」 (96초)",
-      "link": "https://www.youtube.com/watch?v=k1jyM2kSBzA"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8a4857ef8db2b848ac81.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/b06865b893f060dc057d.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8a4857ef8db2b848ac81.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T18:52+09:00",
-     "v": {
-      "A": "14c79454"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: 오늘의 노래\nURL: https://www.youtube.com/watch?v=k1jyM2kSBzA\n구간: 0:58-1:26\n곡: 부른 supercell 신곡\n아티스트: 야나기 나기가 약 15년 만에\n피처링:\n후킹: \n출처: アニプレックス チャンネル",
-    "caption": "오늘 일본에서 개봉한 극장판 〈마법사의 밤〉(魔法使いの夜) 최종 예고입니다. 주제가는 supercell 의 '夜と青'(밤과 파랑)입니다.\n\nryo 가 재가동을 알리며 내놓은 곡인데요, 야나기 나기가 약 15년 만에 supercell 신곡을 불렀습니다.\n\n음원은 내일(11월 21일) 나옵니다. 영상은 애니플렉스 공식 채널의 예고편입니다.\n\n#암낫오타쿠 #마법사의밤 #supercell #야나기나기 #애니송",
-    "hooks": {
-     "A": "야나기 나기가 약 15년 만에 / 부른 supercell 신곡",
-     "B": "〈마법사의 밤〉 극장판에 / supercell 이 돌아왔다",
-     "C": "잠들었던 supercell 이 / 다시 깨어난 곡"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=k1jyM2kSBzA",
-     "credit": "アニプレックス チャンネル",
-     "range": [
-      58.0,
-      86.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "클립 위험: 낮음 — アニプレックス チャンネル (최종 예고 96초 · 자막이 없어 주제가 구간을 못 짚음 — 0:58-1:26 이 노래 구간인지 듣고 옮길 것)",
-     "한국 개봉은 확인 못 해 쓰지 않음 · 한국어 제목 '마법사의 밤'은 원제를 옮긴 것"
-    ],
-    "research": [
-     {
-      "title": "덴파미니코게이머 — 11/20 전국 개봉·IMAX, 제작 ufotable, 감독 다케우치 마사시, 원작 2012년 TYPE-MOON PC 노벨(시나리오 나스 키노코), 주제가 supercell '夜と青' 노래 야나기 나기·작사작곡편곡 ryo, 11/21 배신 (11/20)",
-      "link": "https://news.denfaminicogamer.jp/news/2611202q"
-     },
-     {
-      "title": "덴파미니코게이머 — 9/30 ryo 가 X·note 로 재가동 발표, 야나기 나기가 supercell 신곡을 부르는 건 'Today Is A Beautiful Day' 이후 약 15년 만, ryo 「こういう機会がなかったら、たぶんsupercellは眠ったままだったと思う」 (9/30)",
-      "link": "https://news.denfaminicogamer.jp/news/2609303g"
-     },
-     {
-      "title": "coki — 「眠ったままだった」supercell 을 다시 움직인 한 곡",
-      "link": "https://coki.jp/?p=94269"
-     },
-     {
-      "title": "리얼사운드 — 약 15년 만의 타그, 2012년 PC 게임판에 이은 주제가, '君の知らない物語'(〈化物語〉 ED) (10/20)",
-      "link": "https://realsound.jp/2026/10/post-2553691.html"
-     },
-     {
-      "title": "전격온라인 — 11/21 단곡 배신, 11/25 애니판 CD, 12/9 supercell 판 CD (10/30)",
-      "link": "https://dengekionline.com/article/202610/92582"
-     },
-     {
-      "title": "アニプレックス チャンネル — 『魔法使いの夜』最終予告／主題歌：supercell「夜と青」 (96초)",
-      "link": "https://www.youtube.com/watch?v=k1jyM2kSBzA"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/k1jyM2kSBzA/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/259af5c387c1542b4217.jpg",
-     "key": "k1jyM2kSBzA@58.0"
-    },
-    "px": {
-     "vid": "k1jyM2kSBzA",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/bcc049aad98b90bdd8a6.mp4",
-     "off": 13.0,
-     "end": 95.0,
-     "full": 95.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-20T18:54+09:00"
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "오늘(11/20) 개봉·내일 음원 · '君の知らない物語'의 supercell×야나기 나기가 약 15년 만에 다시 만난 곡 · ryo 본인 말 · 애니플렉스 공식 예고로 숏폼",
-    "at": "2026-11-20T18:52+09:00"
-   },
-   "corner_name": "오늘의 노래",
-   "corner_no": 2
-  },
-  {
-   "source": {
-    "id": "claude:anno-godzilla-cameo",
-    "account": "에이가닷컴",
-    "url": "https://eiga.com/news/20261120/11/",
-    "image": null,
-    "head": "庵野秀明「ゴジラ－0.0」にカメオ出演！ 神木隆之介＆浜辺美波とのオフショット初披露",
+    "head": "レコード大賞2026、優秀作品賞10曲決定　ミセス、M!LK、HANA、ILLITら【各賞一覧】",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-20T18:52+09:00",
-   "key": "53ce123c",
+   "made_at": "2026-11-21T10:46+09:00",
+   "key": "4b3c77bb",
    "by": "claude",
    "subjects": [
-    "안노 히데아키",
-    "庵野秀明",
-    "고질라 -0.0"
+    "일본 레코드 대상",
+    "ILLIT",
+    "Mrs. GREEN APPLE"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "〈신 고질라〉 안노 히데아키가 야마자키 다카시 〈고질라 -0.0〉에 카메오 — 오늘 공식 발표, 본인 말 '거대 로봇 애니와 괴수 영화가 이만큼 메이저가 된 시대'",
-    "why": "에이가닷컴(11/20) 코멘트 전문·가미키 류노스케·하마베 미나미와의 오프숏 · 아니메!아니메!(11/20) 같은 코멘트·엔딩 크레디트 · 영화나탈리·오리콘·MANTANWEB 같은 날"
+    "angle": "제68회 일본 레코드 대상 우수작품상 10곡 — ILLIT 'It's Me'로 2년 연속, CORTIS 특별국제음악상, 〈장송의 프리렌〉 2기 OP 'lulu.'로 오모리 모토키 작곡상",
+    "why": "후쿠이신문(교도, 11/21) 각 상 전체 목록·12/30 17:30~22:00 TBS 생방송 · 오리콘 뉴스(11/21) 우수작품상 10곡·신인상 4팀 · 스포츠경향·헤럴드(2025/11) ILLIT 지난해 'Almond Chocolate' 우수작품상·그 전해 신인상 · THE FIRST TIMES(1월) 'lulu.' = 〈프리렌〉 2기 OP"
    },
    "added": "claude",
-   "added_at": "2026-11-20T18:52+09:00",
+   "added_at": "2026-11-21T10:46+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈신 고질라〉의 안노 히데아키가 야마자키 다카시 감독의 〈고질라 -0.0〉(ゴジラ-0.0)에 카메오로 나왔다는 사실이 오늘 공식 발표됐습니다.\n\n개봉 뒤 관객 사이에서 먼저 이야기가 돌던 출연인데요, 그와 함께 주연 가미키 류노스케·하마베 미나미와 찍은 촬영장 사진도 공개됐습니다. 안노는 영화를 두고 모든 것을 쏟아부은 대오락 괴수 영화라며 '훌륭합니다'라고 했습니다.\n\n그는 거대 로봇 애니와 일본 괴수 영화가 이만큼 메이저가 된 시대가 와서 감개무량하다고 했고, 개인적으로는 엔딩에 자기 이름이 실린 게 기뻤다고 덧붙였습니다.\n\n영화는 11월 3일 일본에서 개봉했습니다.\n\n#암낫오타쿠 #안노히데아키 #고질라 #야마자키다카시 #신고질라\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7837bca6f21397fef2b4.jpg\n제목: 안노 히데아키가|고질라 영화에 나왔다\n부제: 〈신 고질라〉 감독의 카메오 · '훌륭합니다'\n출처: 에이가닷컴\n",
-    "caption": "〈신 고질라〉의 안노 히데아키가 야마자키 다카시 감독의 〈고질라 -0.0〉(ゴジラ-0.0)에 카메오로 나왔다는 사실이 오늘 공식 발표됐습니다.\n\n개봉 뒤 관객 사이에서 먼저 이야기가 돌던 출연인데요, 그와 함께 주연 가미키 류노스케·하마베 미나미와 찍은 촬영장 사진도 공개됐습니다. 안노는 영화를 두고 모든 것을 쏟아부은 대오락 괴수 영화라며 '훌륭합니다'라고 했습니다.\n\n그는 거대 로봇 애니와 일본 괴수 영화가 이만큼 메이저가 된 시대가 와서 감개무량하다고 했고, 개인적으로는 엔딩에 자기 이름이 실린 게 기뻤다고 덧붙였습니다.\n\n영화는 11월 3일 일본에서 개봉했습니다.\n\n#암낫오타쿠 #안노히데아키 #고질라 #야마자키다카시 #신고질라",
+    "form": "[카테고리]\nNews\n\n[캡션]\nILLIT 이 2년 연속 일본 레코드 대상 우수작품상에 올랐습니다.\n\n우수작품상은 연말 대상을 두고 겨루는 10곡인데요, 올해 ILLIT 의 곡은 'It's Me'입니다. 지난해 'Almond Chocolate'으로 같은 상을, 그 전해에는 신인상을 받았습니다. 10곡에는 Mrs. GREEN APPLE 'Brand New', HANA 'NON STOP', Ayumu Imazu '結び'도 들었고, 특별국제음악상에는 CORTIS 가 이름을 올렸습니다.\n\n애니 팬에게 반가운 이름은 작곡상에 있습니다. 〈장송의 프리렌〉 2기 오프닝 'lulu.'로 오모리 모토키가 받았습니다.\n\n대상은 12월 30일 오후 5시 30분(일본 기준)부터 TBS 생방송에서 정해집니다.\n\n#암낫오타쿠 #일본레코드대상 #아일릿 #미세스그린애플 #장송의프리렌\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/766deaf34a5b4d7f8b8f.jpg\n제목: 레코드 대상 후보 10곡,|ILLIT 2년 연속\n부제: CORTIS 특별국제음악상 · 〈프리렌〉 OP 작곡상\n출처: 후쿠이신문\n",
+    "caption": "ILLIT 이 2년 연속 일본 레코드 대상 우수작품상에 올랐습니다.\n\n우수작품상은 연말 대상을 두고 겨루는 10곡인데요, 올해 ILLIT 의 곡은 'It's Me'입니다. 지난해 'Almond Chocolate'으로 같은 상을, 그 전해에는 신인상을 받았습니다. 10곡에는 Mrs. GREEN APPLE 'Brand New', HANA 'NON STOP', Ayumu Imazu '結び'도 들었고, 특별국제음악상에는 CORTIS 가 이름을 올렸습니다.\n\n애니 팬에게 반가운 이름은 작곡상에 있습니다. 〈장송의 프리렌〉 2기 오프닝 'lulu.'로 오모리 모토키가 받았습니다.\n\n대상은 12월 30일 오후 5시 30분(일본 기준)부터 TBS 생방송에서 정해집니다.\n\n#암낫오타쿠 #일본레코드대상 #아일릿 #미세스그린애플 #장송의프리렌",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7837bca6f21397fef2b4.jpg",
-      "credit": "에이가닷컴",
-      "from": "https://media.eiga.com/images/buzz/130713/9cb6b8236f117bd8.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/766deaf34a5b4d7f8b8f.jpg",
+      "credit": "후쿠이신문",
+      "from": "https://fki.ismcdn.jp/mwimgs/4/2/-/img_42c4bd384bf03351849c695a71680cb7330165.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/5a7adb0f4c112fff2c68.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494363/20261120_180018_p_o_76851952.jpg"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/7837bca6f21397fef2b4.jpg",
-      "credit": "에이가닷컴",
-      "from": "https://media.eiga.com/images/buzz/130713/9cb6b8236f117bd8.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/766deaf34a5b4d7f8b8f.jpg",
+      "credit": "후쿠이신문",
+      "from": "https://fki.ismcdn.jp/mwimgs/4/2/-/img_42c4bd384bf03351849c695a71680cb7330165.jpg"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/5a7adb0f4c112fff2c68.jpg",
+      "credit": "오리콘 뉴스",
+      "from": "https://contents.oricon.co.jp/upimg/news/2495000/2494363/20261120_180018_p_o_76851952.jpg"
      }
     ],
     "shape": "단신",
@@ -931,142 +175,58 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "안노 히데아키가|고질라 영화에 나왔다",
-      "sub": "〈신 고질라〉 감독의 카메오 · '훌륭합니다'"
+      "title": "레코드 대상 후보 10곡,|ILLIT 2년 연속",
+      "sub": "CORTIS 특별국제음악상 · 〈프리렌〉 OP 작곡상"
      }
     ],
     "issues": [],
     "confirm": [
-     "출연 장면은 공식적으로 밝히지 않아 쓰지 않음 · 코멘트 앞부분은 영화 속 괴수를 말해 스포일러가 될 수 있어 옮기지 않음",
-     "한국 개봉·한국어 정식 제목은 확인 못 해 〈고질라 -0.0〉으로 둠"
+     "[검증] 사실은 원문과 모두 맞음 · 표지 사진이 사람 없는 레코드 대상 로고이고 오른쪽이 잘림 — ILLIT 사진(공식 출처)으로 바꿀지 볼 것",
+     "'2년 연속'은 지난해(제67회)·올해 목록을 맞대 본 것 — 소속사 표현이 나오면 맞출 것",
+     "대상은 12/30 발표라 아직 아무도 받지 않음 — 표지·캡션에 '수상'이 아니라 '후보 10곡'으로 둠"
     ],
     "research": [
      {
-      "title": "에이가닷컴 — 안노 코멘트 「巨大ロボットアニメ、そして日本の怪獣映画がここまでメジャー化する時代が来たことに、今は感無量です」「エンディングに自分の名前が載っているのが、嬉しかったです」, 가미키 류노스케·하마베 미나미와 오프숏 (11/20)",
-      "link": "https://eiga.com/news/20261120/11/"
+      "title": "후쿠이신문 — 우수작품상 10곡(新浜レオン·ILLIT 'It's Me'·＝LOVE·SHOW-WA & MATSURI·M!LK·HANA·FRUITS ZIPPER·Mrs. GREEN APPLE 'Brand New'·BE:FIRST·Ayumu Imazu '結び'), 최우수가창상 アイナ・ジ・エンド, 특별국제음악상 CUTIE STREET·CORTIS·Number_i, 작곡상 大森元貴 'lulu.', 12/30 17:30~22:00 TBS 생방송 (11/21)",
+      "link": "https://www.fukuishimbun.co.jp/articles/-/2752412"
      },
      {
-      "title": "아니메!아니메! — 11/20 정식 발표, 개봉 뒤 팬 사이에 화제, 「大娯楽怪獣映画でした。見事です」, 11/3 개봉 (11/20)",
-      "link": "https://animeanime.jp/article/2026/11/20/104950.html"
+      "title": "오리콘 뉴스 — 제68회 레코드 대상 우수작품상 10작품·신인상 4팀 (11/21)",
+      "link": "https://www.oricon.co.jp/news/2494363/"
      },
      {
-      "title": "영화나탈리 — 庵野秀明が映画「ゴジラ-0.0」にカメオ出演、エンドロールの名前に「嬉しかった」",
-      "link": "https://natalie.mu/eiga/news/698860"
+      "title": "스포츠경향 — 아일릿 'Almond Chocolate'로 제67회 우수작품상 (2025/11)",
+      "link": "https://sports.khan.co.kr/article/202511220031003"
+     },
+     {
+      "title": "헤럴드경제 — 아일릿, 신인상 이어 우수작품상 (2025/11)",
+      "link": "https://www.heraldk.com/article/2025112015321944812"
+     },
+     {
+      "title": "THE FIRST TIMES — 'lulu.' 〈葬送のフリーレン〉 2기 OP (2026/1)",
+      "link": "https://www.thefirsttimes.jp/news/0000749270/"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e11c210e0c17c4b99dc0.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/459d46e9af98bece72cb.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f7cc9484ffca48c7ccbd.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/8c52ca3013943484a2da.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/e11c210e0c17c4b99dc0.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/f7cc9484ffca48c7ccbd.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-20T18:52+09:00",
+     "at": "2026-11-21T10:46+09:00",
      "v": {
-      "A": "3fa01e8d"
+      "A": "110b7957"
      }
     }
    },
    "pick": {
     "rank": 2,
-    "why": "오늘(11/20) 낮 정식 발표 · 에이가닷컴·나탈리·오리콘 동시 · 〈에반게리온〉 감독이라 덕후가 아니어도 이름이 닿고 본인 말이 셋",
-    "at": "2026-11-20T18:52+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:hayashi-yuki-medalist",
-    "account": "아니메!아니메!",
-    "url": "https://animeanime.jp/article/2026/11/20/104961.html",
-    "image": null,
-    "head": "【インタビュー】「ヒロアカ」「ハイキュー!!」「メダリスト」を彩る劇伴はどう生まれる？ 作曲家・林ゆうきが語る制作の裏側",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-20T18:52+09:00",
-   "key": "ebc73bb4",
-   "by": "claude",
-   "subjects": [
-    "하야시 유키",
-    "林ゆうき",
-    "메달리스트"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "남자 신체조 선수 출신 작곡가 하야시 유키가 말한 〈메달리스트〉 — 경기하던 환경과 겹쳐 곡을 쓰다 울 때가 있다, 이노리의 연기곡은 반생이 없었다면 못 만들었다",
-    "why": "아니메!아니메!(11/20) 인터뷰 본인 말 · 신체조 선수 이력은 홋카이도신문·공모가이드 · 12/27 '劇伴食堂 肆' 도쿄 국제포럼 홀 C 는 교도통신 PR 와이어·아니메!아니메!"
-   },
-   "added": "claude",
-   "added_at": "2026-11-20T18:52+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈하이큐!!〉와 〈나의 히어로 아카데미아〉의 음악을 만든 하야시 유키는 원래 남자 신체조 선수였습니다.\n\n고등학교에서 시작해 대학까지 경기를 이어 갔고, 연기에 쓸 반주곡을 만들다 작곡가가 됐는데요, 그는 피겨스케이팅 애니 〈메달리스트〉를 두고 자신이 경기하던 환경과 닮은 데가 많아 곡을 쓰다 울 때가 있다고 했습니다. 꿈이 한 번 꺾였다 다시 나아가는 코치 쓰카사의 이야기도 늦게 음악을 시작한 자신과 겹친다고 했습니다.\n\n1기 마지막을 장식한 이노리의 연기곡에 대해서는 그냥 애착이 있다는 말로는 모자랄 만큼, 지금까지의 반생이 없었다면 만들 수 없었던 곡이라고 했습니다.\n\n그의 곡을 생연주로 듣는 공연 '劇伴食堂 肆'는 12월 27일 도쿄 국제포럼 홀 C 에서 열립니다.\n\n#암낫오타쿠 #하야시유키 #메달리스트 #하이큐 #히로아카\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d0f2322e4cb354901b31.jpg\n제목: 체조 선수였던 작곡가,|〈메달리스트〉를 쓰다\n부제: 〈하이큐!!〉〈히로아카〉의 하야시 유키\n출처: 교도통신 PR 와이어\n",
-    "caption": "〈하이큐!!〉와 〈나의 히어로 아카데미아〉의 음악을 만든 하야시 유키는 원래 남자 신체조 선수였습니다.\n\n고등학교에서 시작해 대학까지 경기를 이어 갔고, 연기에 쓸 반주곡을 만들다 작곡가가 됐는데요, 그는 피겨스케이팅 애니 〈메달리스트〉를 두고 자신이 경기하던 환경과 닮은 데가 많아 곡을 쓰다 울 때가 있다고 했습니다. 꿈이 한 번 꺾였다 다시 나아가는 코치 쓰카사의 이야기도 늦게 음악을 시작한 자신과 겹친다고 했습니다.\n\n1기 마지막을 장식한 이노리의 연기곡에 대해서는 그냥 애착이 있다는 말로는 모자랄 만큼, 지금까지의 반생이 없었다면 만들 수 없었던 곡이라고 했습니다.\n\n그의 곡을 생연주로 듣는 공연 '劇伴食堂 肆'는 12월 27일 도쿄 국제포럼 홀 C 에서 열립니다.\n\n#암낫오타쿠 #하야시유키 #메달리스트 #하이큐 #히로아카",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d0f2322e4cb354901b31.jpg",
-      "credit": "교도통신 PR 와이어",
-      "from": "https://kyodonewsprwire.jp/prwfile/release/M103855/202605289877/_prw_PI4lg_kHgtup33.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/d0f2322e4cb354901b31.jpg",
-      "credit": "교도통신 PR 와이어",
-      "from": "https://kyodonewsprwire.jp/prwfile/release/M103855/202605289877/_prw_PI4lg_kHgtup33.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "체조 선수였던 작곡가,|〈메달리스트〉를 쓰다",
-      "sub": "〈하이큐!!〉〈히로아카〉의 하야시 유키"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 홋카이도신문 링크가 404 — 선수 이력은 아니메!아니메! 인터뷰 본인 말로만 확인됨, 이 기사 사진은 못 씀",
-     "캐릭터 이름 쓰카사·이노리는 일본어 독음 그대로 — 한국 정식 표기가 다르면 맞출 것",
-     "사진은 '劇伴食堂 肆' 공연 공식 비주얼(교도통신 PR 와이어) — 위쪽 이름 글씨가 로고와 조금 겹침"
-    ],
-    "research": [
-     {
-      "title": "아니메!아니메! — 고교에서 남자 신체조를 만나 대학까지, 반주곡 제작에서 작곡가로, 사와노 히로유키에게 데모를 보낸 일이 전환점, 〈메달리스트〉 작곡 중 울 때가 있고 「健康的には作れない」, 쓰카사의 이야기와 늦게 음악을 시작한 자신이 겹침, 이노리 연기곡은 반생 없이는 못 만들었다, 12/27 劇伴食堂 肆 (11/20)",
-      "link": "https://animeanime.jp/article/2026/11/20/104961.html"
-     },
-     {
-      "title": "홋카이도신문 — 하야시 유키, 남자 신체조 선수 출신 작곡가",
-      "link": "https://www.hokkaido-np.co.jp/article/1318077/"
-     },
-     {
-      "title": "교도통신 PR 와이어 — '林ゆうき〜劇伴食堂 肆' 2026년 12월 27일 도쿄 국제포럼 홀 C, 〈히로아카〉〈하이큐!!〉〈메달리스트〉〈SAKAMOTO DAYS〉",
-      "link": "https://kyodonewsprwire.jp/index.php/release/202605289877"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3711fecad446e2fb9d8a.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/cb882f86409836ac38ac.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-otak-a766f23ae4/img/3711fecad446e2fb9d8a.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-20T18:52+09:00",
-     "v": {
-      "A": "41ce45f7"
-     }
-    }
+    "why": "11/21 발표 · ILLIT 2년 연속 우수작품상·CORTIS 특별국제음악상으로 한국 연결 · 〈프리렌〉 2기 OP 'lulu.' 작곡상으로 애니 연결",
+    "at": "2026-11-21T10:46+09:00"
    },
    "corner_name": "소식"
   }
@@ -1074,7 +234,7 @@
  "skipped": [],
  "corners": {
   "week": "11/16~11/22",
-  "days_left": 3,
+  "days_left": 2,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -1123,7 +283,7 @@
     "need_today": 0,
     "day": null,
     "next_no": 1,
-    "drafts": 1,
+    "drafts": 0,
     "why": "'<주제>을 <장르>로 듣는다면' (10/28) — 한 주제를 곡마다 다르게 듣는 4~6곡, 앨범 커버"
    },
    {
@@ -1132,10 +292,10 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 3,
+    "need_today": 4,
     "day": null,
     "next_no": 1,
-    "drafts": 2,
+    "drafts": 0,
     "why": "매일 한 곡 — 숏폼 앱 카테고리 '오늘의 노래'. 신곡 5 + 다시 듣기 2 를 겨냥"
    },
    {
@@ -1144,7 +304,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 2,
+    "need_today": 3,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -1216,7 +376,7 @@
     "weekly": 1,
     "done": 0,
     "left": 1,
-    "need_today": 1,
+    "need_today": 0,
     "day": 4,
     "next_no": 1,
     "drafts": 0,
@@ -1243,14 +403,14 @@
     "need_today": 2,
     "day": null,
     "next_no": null,
-    "drafts": 3,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-20T18:54+09:00"
+  "at": "2026-11-21T10:46+09:00"
  },
  "queue": {
-  "next": "2026-11-20T18:56+09:00",
+  "next": "2026-11-21T10:48+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
