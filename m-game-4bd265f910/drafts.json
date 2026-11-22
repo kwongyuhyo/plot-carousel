@@ -1,216 +1,71 @@
 {
  "schema": 1,
- "date": "2026-11-21",
- "generated_at": "2026-11-21 11:00 KST",
+ "date": "2026-11-22",
+ "generated_at": "2026-11-22 11:00 KST",
  "items": [
   {
    "source": {
-    "id": "claude:gta6-32m-launch",
-    "account": "Take-Two Interactive",
-    "url": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
+    "id": "claude:gonggi-recess",
+    "account": "Steam",
+    "url": "https://store.steampowered.com/app/5475700/Gonggi_Recess/",
     "image": null,
-    "head": "Grand Theft Auto VI Shatters Entertainment Box Office Records",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-21T11:04+09:00",
-   "key": "3bb781e1",
-   "by": "claude",
-   "subjects": [
-    "GTA 6",
-    "샘 하우저"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "〈GTA 6〉 첫 공식 판매 숫자 — 출시 전에만 3,250만 장, 출시일 하루 매출 약 37억 9천만 달러(회사 추정) · 샘 하우저 '큰 감사와 함께 락스타의 새로운 장'",
-    "why": "3,250만 장(출시 전 판매)·37억 9천만 달러(11/19 끝까지 전 세계 · 회사 추정)·'가장 큰 엔터테인먼트 출시'는 테이크투 보도자료(11/20 Business Wire · 직접 읽음)·Kotaku(11/20)·4Gamer(11/21) · 샘 하우저 'It is with immense gratitude that we enter a new chapter of Rockstar Games' 는 보도자료·Kotaku · 가격·한국어 자막·19세는 PS 스토어 한국 상품 페이지(11/19 초안 출처)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-21T11:04+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈GTA 6〉가 출시 전에만 3,250만 장이 팔렸습니다.\n\n테이크투가 20일(미국 시간) 처음 내놓은 공식 숫자인데요, 출시일인 19일이 끝날 때까지 전 세계 매출은 약 37억 9천만 달러로 회사가 추정했습니다. 테이크투는 이를 엔터테인먼트 역사상 가장 큰 출시라고 불렀습니다.\n\n락스타 게임즈의 샘 하우저 대표는 큰 감사와 함께 락스타의 새로운 장에 들어선다고 말했습니다. 〈GTA 5〉 이후 13년 만의 신작이 출시 첫날까지 받아 든 성적표입니다.\n\nPS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투 #샘하우저\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg\n제목: GTA 6, 출시 전에만|3,250만 장 팔렸다\n부제: 테이크투 첫 공식 판매 발표\n출처: Rockstar Games\n",
-    "caption": "〈GTA 6〉가 출시 전에만 3,250만 장이 팔렸습니다.\n\n테이크투가 20일(미국 시간) 처음 내놓은 공식 숫자인데요, 출시일인 19일이 끝날 때까지 전 세계 매출은 약 37억 9천만 달러로 회사가 추정했습니다. 테이크투는 이를 엔터테인먼트 역사상 가장 큰 출시라고 불렀습니다.\n\n락스타 게임즈의 샘 하우저 대표는 큰 감사와 함께 락스타의 새로운 장에 들어선다고 말했습니다. 〈GTA 5〉 이후 13년 만의 신작이 출시 첫날까지 받아 든 성적표입니다.\n\nPS5 · 엑스박스 시리즈 X|S · PS 스토어 스탠다드 89,800원 · 얼티밋 112,800원 · 한국어 자막(음성 영어) · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투 #샘하우저",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12068db418b23aaeb827.jpg",
-      "credit": "Rockstar Games",
-      "from": "https://www.rockstargames.com/VI/_next/static/media/poster_full.0az_iud2g3y4j.jpg?imwidth=3840"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "GTA 6, 출시 전에만|3,250만 장 팔렸다",
-      "sub": "테이크투 첫 공식 판매 발표"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 숫자는 11/19 출시일 끝까지 집계라 '첫 이틀 만에'를 '출시 첫날까지'로 고침 · 숏폼 0:00~0:30 자막은 대사 3줄뿐(캡션 내용과 충돌 없음) · 영상 올린 날이 20261110 으로 나와 출시 전 게시물인지 한 번 볼 것",
-     "지난 11/19 에 GTA 6 초안이 둘(메타크리틱 99·냉장고 소리) — 이번은 첫 공식 판매 숫자라 새 소식으로 냄 · 37억 9천만 달러는 회사 추정이라고 캡션에 밝힘",
-     "어벤져스: 엔드게임 흥행과 비교한 문장은 Kotaku 한 곳 계산이라 뺌 · 숏폼 0:00~0:30 은 영상을 못 보고 정함"
-    ],
-    "research": [
-     {
-      "title": "Take-Two — Grand Theft Auto VI Shatters Entertainment Box Office Records (11/20 · 회사 추정)",
-      "link": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
-     },
-     {
-      "title": "Kotaku — GTA 6 sold 32.5 million copies in pre-release (11/20)",
-      "link": "https://kotaku.com/gta-6-sold-32-5-million-copies-in-pre-release-as-take-two-crowns-it-the-biggest-entertainment-launch-in-history-2000758965"
-     },
-     {
-      "title": "4Gamer — 「グランド・セフト・オートVI」，発売“前”に全世界で3250万本を販売 (11/21)",
-      "link": "https://www.4gamer.net/games/758/G075801/20261121002/"
-     },
-     {
-      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 19세)",
-      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
-     },
-     {
-      "title": "Rockstar Games YouTube — Grand Theft Auto VI: Out Now (30초)",
-      "link": "https://www.youtube.com/watch?v=_yl5ELcmugI"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3f7d5ea39e4fe6eae6d3.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a9ea50851f159e614235.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3f7d5ea39e4fe6eae6d3.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-21T11:04+09:00",
-     "v": {
-      "A": "127e6b37"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=_yl5ELcmugI\n구간: 0:00-0:30\n곡: 3,250만 장 팔린 게임\n아티스트: 출시 전에만\n피처링:\n후킹: \n출처: Rockstar Games\n자막: 자동",
-    "caption": "〈GTA 6〉 공식 출시 영상입니다.\n\n테이크투는 20일(미국 시간) 〈GTA 6〉가 출시 전에만 3,250만 장이 팔렸다고 발표했는데요, 출시일 하루가 끝날 때까지 전 세계 매출은 약 37억 9천만 달러로 회사가 추정했습니다.\n\nPS5 · 엑스박스 시리즈 X|S · PS 스토어 89,800원부터 · 한국어 자막 · 19세 이용가\n\n#겜디핑 #GTA6 #락스타게임즈 #테이크투",
-    "hooks": {
-     "A": "출시 전에만 / 3,250만 장 팔린 게임",
-     "B": "GTA 6 첫날 매출, / 약 37억 9천만 달러",
-     "C": "13년 만의 GTA, / 첫 성적표가 나왔다"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=_yl5ELcmugI",
-     "credit": "Rockstar Games",
-     "range": [
-      0.0,
-      30.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] 숫자는 11/19 출시일 끝까지 집계라 '첫 이틀 만에'를 '출시 첫날까지'로 고침 · 숏폼 0:00~0:30 자막은 대사 3줄뿐(캡션 내용과 충돌 없음) · 영상 올린 날이 20261110 으로 나와 출시 전 게시물인지 한 번 볼 것",
-     "지난 11/19 에 GTA 6 초안이 둘(메타크리틱 99·냉장고 소리) — 이번은 첫 공식 판매 숫자라 새 소식으로 냄 · 37억 9천만 달러는 회사 추정이라고 캡션에 밝힘",
-     "어벤져스: 엔드게임 흥행과 비교한 문장은 Kotaku 한 곳 계산이라 뺌 · 숏폼 0:00~0:30 은 영상을 못 보고 정함"
-    ],
-    "research": [
-     {
-      "title": "Take-Two — Grand Theft Auto VI Shatters Entertainment Box Office Records (11/20 · 회사 추정)",
-      "link": "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records"
-     },
-     {
-      "title": "Kotaku — GTA 6 sold 32.5 million copies in pre-release (11/20)",
-      "link": "https://kotaku.com/gta-6-sold-32-5-million-copies-in-pre-release-as-take-two-crowns-it-the-biggest-entertainment-launch-in-history-2000758965"
-     },
-     {
-      "title": "4Gamer — 「グランド・セフト・オートVI」，発売“前”に全世界で3250万本を販売 (11/21)",
-      "link": "https://www.4gamer.net/games/758/G075801/20261121002/"
-     },
-     {
-      "title": "PS 스토어 — Grand Theft Auto VI (한국어판) (89,800원 · 얼티밋 112,800원 · 한국어 자막 · 19세)",
-      "link": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
-     },
-     {
-      "title": "Rockstar Games YouTube — Grand Theft Auto VI: Out Now (30초)",
-      "link": "https://www.youtube.com/watch?v=_yl5ELcmugI"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/_yl5ELcmugI/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/f1703690b84043128b48.jpg",
-     "key": "_yl5ELcmugI@0.0"
-    },
-    "px": {
-     "vid": "_yl5ELcmugI",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6b582a64ba3ece02a567.mp4",
-     "off": 0.0,
-     "end": 30.0,
-     "full": 30.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-21T11:04+09:00"
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:can-it-run-doom",
-    "account": "4Gamer",
-    "url": "https://www.4gamer.net/games/999/G999905/20261120019/",
-    "image": null,
-    "head": "大腸菌から妊娠検査キットまで，さまざまな「DOOM」移植や表示チャレンジについての書籍がクラウドファンディング中",
+    "head": "공기: 쉬는 시간 (Gonggi: Recess)",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-21T11:04+09:00",
-   "key": "77b9186c",
+   "made_at": "2026-11-22T11:02+09:00",
+   "key": "3e8e6fc3",
    "by": "claude",
    "subjects": [
-    "둠",
-    "데이비드 L. 크래독"
+    "공기: 쉬는 시간",
+    "낭만게임즈"
    ],
    "lane": "정보",
    "editor": {
     "grade": "B",
     "kind": "정보",
-    "angle": "[실험] 게임 안 하는 사람도 읽히는 입문형 — 임신 테스트기·대장균에서도 〈둠〉이 돌아간 이유, 1997년 소스 코드 공개에서 시작된 놀이 · 그 이식들을 쫓은 책 펀딩",
-    "why": "1993년 출시·1997년 소스 코드 공개는 4Gamer(11/20)·Doom Wiki('Doom source code') · 임신 테스트기 둠(2020 · 원래 CPU·LCD를 바꾸고 껍데기만 남김)은 PC Gamer·GamesRadar·TechSpot 검색 요약 · 대장균 둠(MIT 연구자 · 한 장면 약 70분)은 BGR·Popular Science·TweakTown · 책 제목·저자 크래독·보스 파이트 북스·킥스타터 11/10 시작은 Retro Handhelds(11/12)·VideoGameCanon · 로메로 인터뷰 수록은 4Gamer·Retro Handhelds · 목표액 넘김은 4Gamer(5천→2만1천 달러)·rom-game.fr('세 배') · 전자책 8달러·2027년 1월은 Notebookcheck·검색 요약 · 킥스타터 12/10 마감은 4Gamer"
+    "angle": "[실험] 게임 안 하는 사람도 읽히는 입문형 — 2000년대 초등학교 쉬는 시간의 공기놀이가 3D 물리 게임으로, 23일 스팀 앞서 해보기",
+    "why": "11/23 스팀 앞서 해보기·2000년대 한국 초등학교 쉬는 시간 배경·3D 물리 공기놀이·한국어 지원은 스팀 상점 페이지(직접 읽음)·루리웹(11/21) · 1~6학년 반마다 규칙이 다른 모드·운동장과 학교 앞 가게·풍금·1대1 온라인 대전·앞서 해보기 이유(공중 체류 시간·잡기 판정 손맛을 플레이어 의견으로)·약 6개월·정식 출시 때 가격 인상 없음은 스팀 상점 페이지 FAQ"
    },
    "added": "claude",
-   "added_at": "2026-11-21T11:04+09:00",
+   "added_at": "2026-11-22T11:02+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n1993년에 나온 〈둠〉은 임신 테스트기 화면에도, 대장균으로 만든 화면에도 떠올랐습니다.\n\n시작은 1997년 이드 소프트웨어가 〈둠〉의 소스 코드를 공개한 일이었는데요, 누구나 코드를 가져다 다른 기계로 옮길 수 있게 되면서 '그걸로 둠 돌아가?'가 하나의 놀이가 됐습니다. 2020년의 임신 테스트기 둠은 원래 칩과 화면을 바꾸고 껍데기만 남긴 것이었고, MIT 연구자가 대장균으로 띄운 둠은 한 장면이 나타나는 데 70분쯤 걸렸습니다.\n\n되느냐보다 어떻게, 왜 했느냐가 더 재미있는 놀이인 셈입니다. 그 이상한 이식들을 쫓은 책 〈But Can It Run DOOM?〉이 킥스타터에서 펀딩 중이고, 존 로메로와의 인터뷰도 실립니다.\n\n데이비드 L. 크래독 지음 · 보스 파이트 북스 · 킥스타터 12월 10일까지 · 전자책 8달러 · 2027년 1월 전자책부터 받음\n\n#겜디핑 #둠 #DOOM #존로메로 #킥스타터\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2229377ab3dce5b7ceb9.jpg\n제목: 임신 테스트기에서도|둠을 돌리는 이유\n부제: 둠 이식 이야기, 책으로 나온다\n출처: Boss Fight Books\n",
-    "caption": "1993년에 나온 〈둠〉은 임신 테스트기 화면에도, 대장균으로 만든 화면에도 떠올랐습니다.\n\n시작은 1997년 이드 소프트웨어가 〈둠〉의 소스 코드를 공개한 일이었는데요, 누구나 코드를 가져다 다른 기계로 옮길 수 있게 되면서 '그걸로 둠 돌아가?'가 하나의 놀이가 됐습니다. 2020년의 임신 테스트기 둠은 원래 칩과 화면을 바꾸고 껍데기만 남긴 것이었고, MIT 연구자가 대장균으로 띄운 둠은 한 장면이 나타나는 데 70분쯤 걸렸습니다.\n\n되느냐보다 어떻게, 왜 했느냐가 더 재미있는 놀이인 셈입니다. 그 이상한 이식들을 쫓은 책 〈But Can It Run DOOM?〉이 킥스타터에서 펀딩 중이고, 존 로메로와의 인터뷰도 실립니다.\n\n데이비드 L. 크래독 지음 · 보스 파이트 북스 · 킥스타터 12월 10일까지 · 전자책 8달러 · 2027년 1월 전자책부터 받음\n\n#겜디핑 #둠 #DOOM #존로메로 #킥스타터",
+    "form": "[카테고리]\nNews\n\n[캡션]\n2000년대 초등학교 쉬는 시간의 공기놀이가 스팀 게임으로 나옵니다.\n\n낭만게임즈의 〈공기: 쉬는 시간〉인데요, 교실 책상 위에서 공기를 뿌리고 던지고 집고 받는 손맛을 3D 물리로 옮겼습니다. 1학년부터 6학년까지 반마다 규칙이 다른 모드가 있고, 풍금이 놓인 교실부터 운동장, 학교 앞까지 돌아다니며 물건을 만질 수도 있습니다. 친구와 1대1 온라인 대결도 됩니다.\n\n개발사는 공기가 공중에 머무는 시간과 잡기 판정 같은 손맛을 플레이어 의견으로 다듬고 싶어 앞서 해보기로 먼저 내놓는다고 밝혔습니다.\n\n11월 23일 스팀 앞서 해보기 · PC · 한국어 지원 · 앞서 해보기 약 6개월 예정 · 정식 출시 때 가격 인상 없음(개발사 안내)\n\n#겜디핑 #공기쉬는시간 #공기놀이 #낭만게임즈 #인디게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c757db9c3061eca2b0e8.jpg\n제목: 2000년대 쉬는 시간,|공기놀이가 게임으로\n부제: 낭만게임즈 〈공기: 쉬는 시간〉\n출처: NangManGames\n",
+    "caption": "2000년대 초등학교 쉬는 시간의 공기놀이가 스팀 게임으로 나옵니다.\n\n낭만게임즈의 〈공기: 쉬는 시간〉인데요, 교실 책상 위에서 공기를 뿌리고 던지고 집고 받는 손맛을 3D 물리로 옮겼습니다. 1학년부터 6학년까지 반마다 규칙이 다른 모드가 있고, 풍금이 놓인 교실부터 운동장, 학교 앞까지 돌아다니며 물건을 만질 수도 있습니다. 친구와 1대1 온라인 대결도 됩니다.\n\n개발사는 공기가 공중에 머무는 시간과 잡기 판정 같은 손맛을 플레이어 의견으로 다듬고 싶어 앞서 해보기로 먼저 내놓는다고 밝혔습니다.\n\n11월 23일 스팀 앞서 해보기 · PC · 한국어 지원 · 앞서 해보기 약 6개월 예정 · 정식 출시 때 가격 인상 없음(개발사 안내)\n\n#겜디핑 #공기쉬는시간 #공기놀이 #낭만게임즈 #인디게임",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2229377ab3dce5b7ceb9.jpg",
-      "credit": "Boss Fight Books",
-      "from": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Can-it-run-Doom.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c757db9c3061eca2b0e8.jpg",
+      "credit": "NangManGames",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5475700/ae16cb1d3d9f6a7d696b121ca28b9ecfa564d6a0/ss_ae16cb1d3d9f6a7d696b121ca28b9ecfa564d6a0.1920x1080.jpg?t=1795071336"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/df23f18a7668ecd040c2.jpg",
+      "credit": "NangManGames",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5475700/813cb168d6a5b97938c1d90122f8a0b9ebfb4757/ss_813cb168d6a5b97938c1d90122f8a0b9ebfb4757.1920x1080.jpg?t=1795071336"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/66be6b2929d0319777ba.jpg",
+      "credit": "NangManGames",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5475700/e0a2bbbb4ec11ceabd2dd4222d07c030f6ba2cec/ss_e0a2bbbb4ec11ceabd2dd4222d07c030f6ba2cec.1920x1080.jpg?t=1795071336"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/2229377ab3dce5b7ceb9.jpg",
-      "credit": "Boss Fight Books",
-      "from": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Can-it-run-Doom.jpg"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c757db9c3061eca2b0e8.jpg",
+      "credit": "NangManGames",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5475700/ae16cb1d3d9f6a7d696b121ca28b9ecfa564d6a0/ss_ae16cb1d3d9f6a7d696b121ca28b9ecfa564d6a0.1920x1080.jpg?t=1795071336"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/df23f18a7668ecd040c2.jpg",
+      "credit": "NangManGames",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5475700/813cb168d6a5b97938c1d90122f8a0b9ebfb4757/ss_813cb168d6a5b97938c1d90122f8a0b9ebfb4757.1920x1080.jpg?t=1795071336"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/66be6b2929d0319777ba.jpg",
+      "credit": "NangManGames",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5475700/e0a2bbbb4ec11ceabd2dd4222d07c030f6ba2cec/ss_e0a2bbbb4ec11ceabd2dd4222d07c030f6ba2cec.1920x1080.jpg?t=1795071336"
      }
     ],
     "shape": "단신",
@@ -218,103 +73,111 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "임신 테스트기에서도|둠을 돌리는 이유",
-      "sub": "둠 이식 이야기, 책으로 나온다"
+      "title": "2000년대 쉬는 시간,|공기놀이가 게임으로",
+      "sub": "낭만게임즈 〈공기: 쉬는 시간〉"
      }
     ],
     "issues": [],
     "confirm": [
-     "[검증] 대장균 둠은 실제로 돌아간 게 아니라 장면을 띄운 것(BGR)이라 첫 문장을 '화면에 떠올랐다'로 고침 · 배너 사진은 해상도 미달로 빠져 Notebookcheck 책 표지 이미지가 표지로 쓰임 — 크레딧은 Boss Fight Books 로 바꿈(원 이미지 저작권자 한 번 볼 것)",
-     "킥스타터 마감 12월 10일은 4Gamer 한 곳(다른 곳은 '12월'까지만) — 킥스타터 페이지에서 한 번 볼 것 · 모금액은 바뀌는 숫자라 뺌",
-     "공식 영상이 없어 숏폼은 쓰지 않음 · 표지 사진은 책 홍보 배너(Retro Handhelds) — 글자가 겹치지 않는지 확인"
+     "스팀 페이지에 생성형 AI 사용 고지(배경 음악 대부분·트레일러 곡 Suno, 오락기 곡 Claude 작곡, 그림은 개발자 직접) — 어제 스팀 AI 글과 이어 볼 독자도 있어 캡션엔 안 썼음, 넣을지 판단",
+     "'1인 개발'·미국 가격 3.99달러는 루리웹 한 곳이라 뺌 · 원화 가격·출시 시각은 스팀에 아직 없음 · 공식 영상이 없어 숏폼 없음"
     ],
     "research": [
      {
-      "title": "4Gamer — 大腸菌から妊娠検査キットまで…「DOOM」移植…書籍がクラウドファンディング中 (11/20)",
-      "link": "https://www.4gamer.net/games/999/G999905/20261120019/"
+      "title": "Steam — 공기: 쉬는 시간 (NangManGames · 11/23 앞서 해보기 · 한국어 등 29개 언어)",
+      "link": "https://store.steampowered.com/app/5475700/Gonggi_Recess/"
      },
      {
-      "title": "Retro Handhelds — But Can It Run DOOM? Turns Strange Ports Into a New Book (11/12 · David L. Craddock · Boss Fight Books)",
-      "link": "https://retrohandhelds.gg/but-can-it-run-doom-turns-strange-ports-into-a-new-book/"
-     },
-     {
-      "title": "Notebookcheck — Doom on pregnancy test and Ikea lamp (11/12 · 전자책 8달러 · 2027년 1월)",
-      "link": "https://www.notebookcheck.net/Doom-on-pregnancy-test-and-Ikea-lamp-But-can-it-run-Doom-tracks-down-bizarre-ports.1449033.0.html"
-     },
-     {
-      "title": "Doom Wiki — Doom source code (1997년 12월 23일 공개)",
-      "link": "https://www.doomwiki.org/wiki/Doom_source_code"
-     },
-     {
-      "title": "PC Gamer — Here's Doom running on a pregnancy test (2020)",
-      "link": "https://www.pcgamer.com/uk/heres-doom-running-on-a-pregnancy-test"
-     },
-     {
-      "title": "Popular Science — Running 'Doom' on E. coli cells… very, very slowly",
-      "link": "https://www.popsci.com/science/doom-e-coli-cells"
+      "title": "루리웹 — 낭만게임즈, 1인 개발 공기놀이 게임 '공기: 쉬는 시간', 11월 23일 스팀 앞서 해보기 (11/21)",
+      "link": "https://bbs.ruliweb.com/news/read/232236"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5fcb3f58a0d66028f76c.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/f90c6b4810e1ab741587.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3d2e65d39e33a50076b8.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/12556f83c3636c15f49a.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/5fcb3f58a0d66028f76c.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/3d2e65d39e33a50076b8.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-21T11:04+09:00",
+     "at": "2026-11-22T11:02+09:00",
      "v": {
-      "A": "24a5a3eb"
+      "A": "f19a76f2"
      }
     }
+   },
+   "pick": {
+    "rank": 1,
+    "why": "[실험] 게임 안 하는 사람도 한 줄로 아는 2000년대 초등학교 쉬는 시간·공기놀이 · 내일(23일) 출시라 오늘 올리기 좋음 · 한국어 지원",
+    "at": "2026-11-22T11:02+09:00"
    },
    "corner_name": "소식"
   },
   {
    "source": {
-    "id": "claude:deltarune-ch6-playable",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783955",
+    "id": "claude:nammo-silla",
+    "account": "4Gamer",
+    "url": "https://www.4gamer.net/games/060/G106034/20261121012/",
     "image": null,
-    "head": "델타룬 챕터 6, 구조적 완성… 2027년 출시 목표",
+    "head": "新羅を舞台にした横スクロールアクション「NAMMO」を試遊［G-STAR 2026］",
     "multiple": null,
     "is_reel": false,
     "kind": "claude"
    },
-   "made_at": "2026-11-21T19:05+09:00",
-   "key": "5e48199b",
+   "made_at": "2026-11-22T11:02+09:00",
+   "key": "0cdb4447",
    "by": "claude",
    "subjects": [
-    "델타룬",
-    "토비 폭스"
+    "남모",
+    "길드스튜디오"
    ],
    "lane": "정보",
    "editor": {
-    "grade": "A",
+    "grade": "B",
     "kind": "정보",
-    "angle": "토비 폭스 가을 소식지 — 〈델타룬〉 챕터 6가 처음부터 끝까지 플레이할 수 있는 상태, 서두르지 않겠다는 말, 마지막 장 챕터 7 개발 시작",
-    "why": "챕터 6 처음부터 끝까지 플레이 가능·맵/이벤트/전투 구현·일부 장면 연출 미완·서두르지 않음은 게임메카(11/21)·Gamereactor·Gameluster·Final Weapon · 현지화·초기 테스트 시작은 게임메카·Final Weapon · 챕터 6 마친 팀원이 챕터 7로, 챕터 7이 마지막 장은 게임메카·Gameluster·Gamereactor · 'Unlike every other Chapter, I actually feel like I know what I'm doing this time' 은 Gamereactor·Gameluster·Final Weapon · 2027년 목표는 스팀 공식 FAQ('We are aiming for a 2027 release!')·게임메카 · 챕터 1~5·29,800원·한국어 미지원(영어·일본어)·앞으로 챕터 무료 추가는 스팀 한국 상점 페이지"
+    "angle": "신라 원화 남모가 2D 소울라이크 주인공으로 — 옛 기록에서 준정에게 목숨을 잃은 쪽이 게임에서는 배신의 진실을 쫓는 쪽",
+    "why": "주인공 남모·준정에게 두 눈을 잃음·영혼 세계를 보는 영안·패링·한국어·일본어 등 6개 언어·출시 예정(날짜 없음)은 스팀 한국 상점 페이지(직접 읽음) · 영안으로 숨은 길·약점·패링 중심 전투는 4Gamer(11/21 지스타 시연기)·Indie Games Devel · 신라 원화 제도·화랑 전설을 바탕으로 했다는 것은 Inven Global(8/18)·4Gamer('신라 설화 속 여성 둘') · 남모·준정 원화 선발, 준정이 시기해 남모를 죽이고 원화가 없어진 뒤 화랑이 생겼다는 기록은 한국민족문화대백과사전·경북매일(삼국사기·삼국유사 근거)"
    },
    "added": "claude",
-   "added_at": "2026-11-21T19:05+09:00",
+   "added_at": "2026-11-22T11:02+09:00",
    "corner": "news",
    "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈델타룬〉 챕터 6가 처음부터 끝까지 플레이할 수 있는 상태가 됐습니다.\n\n토비 폭스가 이번 주 가을 소식지에서 전한 근황인데요, 맵과 이벤트, 전투는 모두 들어갔지만 중요한 장면 몇 곳은 아직 연출이 덜 익어서 서두를 수 없다고 했습니다. 현지화와 초기 테스트도 시작됐고, 챕터 6 작업을 마친 팀원들은 마지막 장인 챕터 7로 넘어갔습니다.\n\n그 마지막 장을 두고 그는 다른 챕터들과 달리 이번에는 내가 뭘 하는지 좀 알 것 같다고 적었습니다.\n\n챕터 1~5 출시 중 · 스팀 29,800원 · 챕터 6는 2027년 목표(스팀 공식 안내) · 앞으로의 챕터는 무료 추가 · 한국어 미지원(영어·일본어)\n\n#겜디핑 #델타룬 #DELTARUNE #토비폭스 #언더테일\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/caea3a1e61cc6cf7e6fc.jpg\n제목: 델타룬 챕터 6,|끝까지 플레이된다\n부제: 토비 폭스 가을 소식지\n출처: 토비 폭스\n",
-    "caption": "〈델타룬〉 챕터 6가 처음부터 끝까지 플레이할 수 있는 상태가 됐습니다.\n\n토비 폭스가 이번 주 가을 소식지에서 전한 근황인데요, 맵과 이벤트, 전투는 모두 들어갔지만 중요한 장면 몇 곳은 아직 연출이 덜 익어서 서두를 수 없다고 했습니다. 현지화와 초기 테스트도 시작됐고, 챕터 6 작업을 마친 팀원들은 마지막 장인 챕터 7로 넘어갔습니다.\n\n그 마지막 장을 두고 그는 다른 챕터들과 달리 이번에는 내가 뭘 하는지 좀 알 것 같다고 적었습니다.\n\n챕터 1~5 출시 중 · 스팀 29,800원 · 챕터 6는 2027년 목표(스팀 공식 안내) · 앞으로의 챕터는 무료 추가 · 한국어 미지원(영어·일본어)\n\n#겜디핑 #델타룬 #DELTARUNE #토비폭스 #언더테일",
+    "form": "[카테고리]\nNews\n\n[캡션]\n신라의 원화 남모가 2D 소울라이크 게임의 주인공이 됐습니다.\n\n한국 인디 개발사 길드스튜디오의 〈남모〉인데요, 남모는 믿었던 준정에게 두 눈을 잃고, 영혼의 세계를 보는 '영안'을 얻어 배신의 진실을 쫓습니다. 영안으로 숨은 길과 보스의 약점을 찾아내고, 패링으로 맞서는 게임입니다.\n\n두 이름은 옛 기록에서 왔습니다. 신라는 청소년 조직의 우두머리로 남모와 준정 두 여성을 원화로 뽑았는데, 준정이 남모를 시기해 죽인 일이 드러나 원화는 없어지고 남성이 이끄는 화랑이 생겼다고 전해집니다. 기록 속에서 목숨을 잃은 쪽이 게임에서는 진실을 쫓는 쪽이 된 셈입니다.\n\nPC(스팀) · 한국어·일본어 등 6개 언어 지원 · 출시일 미정\n\n#겜디핑 #남모 #길드스튜디오 #소울라이크 #인디게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c06928cbdd6adf0eacf5.jpg\n제목: 신라 설화 속 남모,|소울라이크 주인공으로\n부제: 길드스튜디오 2D 액션 〈남모〉\n출처: Guild Studio\n",
+    "caption": "신라의 원화 남모가 2D 소울라이크 게임의 주인공이 됐습니다.\n\n한국 인디 개발사 길드스튜디오의 〈남모〉인데요, 남모는 믿었던 준정에게 두 눈을 잃고, 영혼의 세계를 보는 '영안'을 얻어 배신의 진실을 쫓습니다. 영안으로 숨은 길과 보스의 약점을 찾아내고, 패링으로 맞서는 게임입니다.\n\n두 이름은 옛 기록에서 왔습니다. 신라는 청소년 조직의 우두머리로 남모와 준정 두 여성을 원화로 뽑았는데, 준정이 남모를 시기해 죽인 일이 드러나 원화는 없어지고 남성이 이끄는 화랑이 생겼다고 전해집니다. 기록 속에서 목숨을 잃은 쪽이 게임에서는 진실을 쫓는 쪽이 된 셈입니다.\n\nPC(스팀) · 한국어·일본어 등 6개 언어 지원 · 출시일 미정\n\n#겜디핑 #남모 #길드스튜디오 #소울라이크 #인디게임",
     "photos": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/caea3a1e61cc6cf7e6fc.jpg",
-      "credit": "토비 폭스",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/955/gm826971_thumb__6_.webp"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c06928cbdd6adf0eacf5.jpg",
+      "credit": "Guild Studio",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3863810/6102c3cbab4356660f288edf8d2d93a36eba9d19/ss_6102c3cbab4356660f288edf8d2d93a36eba9d19.1920x1080.jpg?t=1788935247"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dfff7f69bc851cdd69b2.jpg",
+      "credit": "Guild Studio",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3863810/3ea102ee48b4dcb7a2b3ffd6cfeace14f4b8303f/ss_3ea102ee48b4dcb7a2b3ffd6cfeace14f4b8303f.1920x1080.jpg?t=1788935247"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9a2fe7c3e70c703737df.jpg",
+      "credit": "Guild Studio",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3863810/0d60de8fa064ae4ad531221e7650ee5d17ef5acb/ss_0d60de8fa064ae4ad531221e7650ee5d17ef5acb.1920x1080.jpg?t=1788935247"
      }
     ],
     "photo_pool": [
      {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/caea3a1e61cc6cf7e6fc.jpg",
-      "credit": "토비 폭스",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/955/gm826971_thumb__6_.webp"
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/c06928cbdd6adf0eacf5.jpg",
+      "credit": "Guild Studio",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3863810/6102c3cbab4356660f288edf8d2d93a36eba9d19/ss_6102c3cbab4356660f288edf8d2d93a36eba9d19.1920x1080.jpg?t=1788935247"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/dfff7f69bc851cdd69b2.jpg",
+      "credit": "Guild Studio",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3863810/3ea102ee48b4dcb7a2b3ffd6cfeace14f4b8303f/ss_3ea102ee48b4dcb7a2b3ffd6cfeace14f4b8303f.1920x1080.jpg?t=1788935247"
+     },
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9a2fe7c3e70c703737df.jpg",
+      "credit": "Guild Studio",
+      "from": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3863810/0d60de8fa064ae4ad531221e7650ee5d17ef5acb/ss_0d60de8fa064ae4ad531221e7650ee5d17ef5acb.1920x1080.jpg?t=1788935247"
      }
     ],
     "shape": "단신",
@@ -322,430 +185,61 @@
      {
       "key": "A",
       "hook": "Claude",
-      "title": "델타룬 챕터 6,|끝까지 플레이된다",
-      "sub": "토비 폭스 가을 소식지"
+      "title": "신라 설화 속 남모,|소울라이크 주인공으로",
+      "sub": "길드스튜디오 2D 액션 〈남모〉"
      }
     ],
     "issues": [],
     "confirm": [
-     "소식지 발행일이 매체마다 11/19·11/20 으로 갈려 캡션은 '이번 주'로 씀 · 콘솔(PS·스위치) 판매는 게임메카 한 곳이라 실용 정보에서 뺌",
-     "유튜브에 '챕터 6 트레일러'라는 영상들은 모두 공식 채널이 아니어서 숏폼은 쓰지 않음"
+     "지스타 2026 시연은 4Gamer 한 곳이라 캡션에서 뺌 · 2027년 8월쯤 출시 목표·10시간 분량도 4Gamer 한 곳이라 뺌 · 게임스컴 데브 어워드 후보는 Inven Global 한 곳이라 뺌",
+     "공식 트레일러는 IGN 채널에만 있어 숏폼 없음 · 남모를 죽인 방법은 기록마다 달라(돌로 묻음·연못) 쓰지 않음"
     ],
     "research": [
      {
-      "title": "게임메카 — 델타룬 챕터 6, 구조적 완성… 2027년 출시 목표 (11/21)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783955"
+      "title": "Steam — 남모 (Guild Studio · 한국어·일본어 등 6개 언어 · 출시 예정)",
+      "link": "https://store.steampowered.com/app/3863810/"
      },
      {
-      "title": "Gamereactor — Deltarune Chapter 6 structurally complete, Toby Fox says (11/20)",
-      "link": "https://www.gamereactor.eu/deltarune-chapter-6-structurally-complete-toby-fox/"
+      "title": "4Gamer — 新羅を舞台にした横スクロールアクション「NAMMO」を試遊 (11/21)",
+      "link": "https://www.4gamer.net/games/060/G106034/20261121012/"
      },
      {
-      "title": "Gameluster — Deltarune Chapter 6 Is Structurally Complete… Final Chapter 7 Begins",
-      "link": "https://gameluster.com/deltarune-chapter-7-work-begins-toby-fox-newsletter/"
+      "title": "Inven Global — Gamescom Dev Awards: Korean Indie 'NAMMO' Vies for Two Titles (8/18)",
+      "link": "https://labs.invenglobal.com/articles/24872/gamescom-dev-awards-korean-indie-nammo-vies-for-two-titles"
      },
      {
-      "title": "Final Weapon — Toby Fox Shares New Progress Updates for Deltarune Chapter 6 and 7 (11/19)",
-      "link": "https://finalweapon.net/2026/11/19/toby-fox-deltarune-chapter-6-7-progress-updates/"
+      "title": "Indie Games Devel — Korean dark fantasy soulslike NAMMO officially announced (2025/9)",
+      "link": "https://indiegamesdevel.com/korean-dark-fantasy-soulslike-nammo-officially-announced"
      },
      {
-      "title": "Steam — DELTARUNE (한국 상점 · 29,800원 · 영어·일본어 · 챕터 6 2027년 목표 FAQ)",
-      "link": "https://store.steampowered.com/app/1671210/DELTARUNE/"
+      "title": "한국민족문화대백과사전 — 남모",
+      "link": "https://encykorea.aks.ac.kr/Article/E0011901"
+     },
+     {
+      "title": "경북매일 — 준정과 남모, 신라의 원화 (2018)",
+      "link": "https://kbmaeil.com/article/201808170229577"
      }
     ],
     "by": "claude",
     "preview": {
      "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/07214d124b64133ade80.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/870f2a63030505962c63.jpg"
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0b587b749d2b342cf316.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6f69850266005678d21c.jpg"
      ],
      "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/07214d124b64133ade80.jpg"
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0b587b749d2b342cf316.jpg"
      },
      "cvr": 2,
-     "at": "2026-11-21T19:05+09:00",
+     "at": "2026-11-22T11:03+09:00",
      "v": {
-      "A": "75323d34"
+      "A": "d1393590"
      }
     }
    },
    "pick": {
     "rank": 2,
-    "why": "토비 폭스 본인의 말 · 오래 기다린 팬들의 이야기 · 스팀 공식 '2027년 목표'까지 확인",
-    "at": "2026-11-21T19:05+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:persona6-not-the-end",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783953",
-    "image": null,
-    "head": "아틀러스, 페르소나 시리즈 출시 간격 줄인다",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-21T19:05+09:00",
-   "key": "42e41a7e",
-   "by": "claude",
-   "subjects": [
-    "페르소나 6",
-    "와다 카즈히사"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "아틀러스 와다 카즈히사 프로듀서 '페르소나 6는 끝이 아니다' — 대형 RPG 5년 넘는 개발, 다음 작품까지의 기다림을 줄이겠다는 약속",
-    "why": "세가사미 사내 인터뷰(segasammania002)는 MP1st·Noisy Pixel·게임메카(11/20~21) · 'Persona 6 is not the end'·'won't have to wait as long for the next game'·'something better than anything we've made before' 는 MP1st 직접 인용, 같은 내용을 게임메카·Noisy Pixel 이 간접 화법으로 · 대형 RPG 5년 이상은 게임메카·검색 요약 여러 곳 · 페르소나 5 2016년은 게임메카 · 페르소나 4 리바이벌 2027/2/18(PS5·엑스박스·PC)·스위치 2 5/20·한국어 자막은 Inven Global·디스이즈게임(세가퍼블리싱코리아 자료) 검색 요약"
-   },
-   "added": "claude",
-   "added_at": "2026-11-21T19:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n아틀러스의 와다 카즈히사 프로듀서가 〈페르소나 6〉가 시리즈의 끝이 아니라고 말했습니다.\n\n세가사미 사내 인터뷰에서 나온 말인데요, 〈페르소나〉 같은 대형 RPG는 개발에 5년 넘게 걸린다며 다음 작품까지 예전만큼 오래 기다리지 않게 하려고 여러 방법을 쓰고 있다고 했습니다. 〈페르소나 6〉에 대해서는 지금까지 만든 것보다 나은 것을 만들고 있다고만 밝혔습니다.\n\n2016년 〈페르소나 5〉 이후 넘버링 신작을 기다려 온 팬들에게 날짜보다 먼저 도착한 약속입니다.\n\n〈페르소나 6〉 출시일 미정 · 〈페르소나 4 리바이벌〉 2027년 2월 18일 PS5 · 엑스박스 시리즈 X|S · PC (스위치 2 판 5월 20일) · 한국어 자막\n\n#겜디핑 #페르소나6 #페르소나 #아틀러스 #와다카즈히사\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9ca9e8293dbcff1cdde0.jpg\n제목: 페르소나 6가|끝이 아니다\n부제: 아틀러스 와다 카즈히사 프로듀서\n출처: 아틀러스\n",
-    "caption": "아틀러스의 와다 카즈히사 프로듀서가 〈페르소나 6〉가 시리즈의 끝이 아니라고 말했습니다.\n\n세가사미 사내 인터뷰에서 나온 말인데요, 〈페르소나〉 같은 대형 RPG는 개발에 5년 넘게 걸린다며 다음 작품까지 예전만큼 오래 기다리지 않게 하려고 여러 방법을 쓰고 있다고 했습니다. 〈페르소나 6〉에 대해서는 지금까지 만든 것보다 나은 것을 만들고 있다고만 밝혔습니다.\n\n2016년 〈페르소나 5〉 이후 넘버링 신작을 기다려 온 팬들에게 날짜보다 먼저 도착한 약속입니다.\n\n〈페르소나 6〉 출시일 미정 · 〈페르소나 4 리바이벌〉 2027년 2월 18일 PS5 · 엑스박스 시리즈 X|S · PC (스위치 2 판 5월 20일) · 한국어 자막\n\n#겜디핑 #페르소나6 #페르소나 #아틀러스 #와다카즈히사",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9ca9e8293dbcff1cdde0.jpg",
-      "credit": "아틀러스",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/953/gm479973_thumb___.webp"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/13470dddbd65c38c2f63.jpg",
-      "credit": "아틀러스",
-      "from": "https://mp1st.com/wp-content/uploads/2026/06/Persona-6.jpg"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9ca9e8293dbcff1cdde0.jpg",
-      "credit": "아틀러스",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/953/gm479973_thumb___.webp"
-     },
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/13470dddbd65c38c2f63.jpg",
-      "credit": "아틀러스",
-      "from": "https://mp1st.com/wp-content/uploads/2026/06/Persona-6.jpg"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "페르소나 6가|끝이 아니다",
-      "sub": "아틀러스 와다 카즈히사 프로듀서"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진은 〈페르소나 5〉 캐릭터(다카마키 안)라 6편 이야기와 어긋나 보일 수 있음 — 그대로 쓸지 볼 것",
-     "인터뷰 원문(세가사미 사이트) 게시일은 어느 매체도 밝히지 않음 · 페르소나 6 플랫폼은 MP1st 한 곳이라 뺌",
-     "페르소나 4 리바이벌 날짜·한국어 자막은 검색 요약으로만 확인 — 세가퍼블리싱코리아 공지로 한 번 볼 것"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — 아틀러스, 페르소나 시리즈 출시 간격 줄인다 (11/21)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783953"
-     },
-     {
-      "title": "MP1st — Persona 6 Is 'Not the End' as Atlus Promises Fans 'Won't Have to Wait as Long' (11/20)",
-      "link": "https://mp1st.com/news/atlus-promises-fans-wont-wait-long-for-next-persona"
-     },
-     {
-      "title": "Noisy Pixel — Persona Producer Says Atlus Is Working To Shorten Gaps (11/20)",
-      "link": "https://noisypixel.net/persona-atlus-shorten-gaps-future-mainline-games-kazuhisa-wada/"
-     },
-     {
-      "title": "Inven Global — Remake 'Persona 4 Revival' Set for Release on February 18, 2027",
-      "link": "https://www.invenglobal.com/articles/22575/remake-persona-4-revival-set-for-release-on-february-18-2027"
-     },
-     {
-      "title": "Inven Global — 'Persona 4 Revival' Switch 2 Version Launching May 2027",
-      "link": "https://www.invenglobal.com/articles/25812/persona-4-revival-switch-2-version-launching-may-2027"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8b15812549dbf399c285.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/09aa515e794b16c6cd48.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8b15812549dbf399c285.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-21T19:05+09:00",
-     "v": {
-      "A": "abec5cf2"
-     }
-    }
-   },
-   "pick": {
-    "rank": 3,
-    "why": "페르소나 5 이후 넘버링을 기다려 온 팬들 · 프로듀서의 직접 인용 '페르소나 6가 끝이 아니다'",
-    "at": "2026-11-21T19:05+09:00"
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:steam-ai-disclosure",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783956",
-    "image": null,
-    "head": "스팀 'AI 사용 공개' 게임, 전반적으로 판매량 적었다",
-    "multiple": null,
-    "is_reel": false,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-21T19:05+09:00",
-   "key": "8159fc7e",
-   "by": "claude",
-   "subjects": [
-    "스팀",
-    "게임 오라클"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "B",
-    "kind": "정보",
-    "angle": "스팀에서 AI 사용을 밝힌 게임은 출시일 팔로워 중간값 6 대 20 — 31,003개 게임 분석, 그리고 '원인인지 신호인지'라는 단서",
-    "why": "31,003개(2025년 1월~2026년 10월 스팀 유료 게임)·출시일 팔로워 중간값 6 대 20·리뷰 수도 적음·판매량 대신 리뷰·팔로워를 씀은 게임메카(11/21)·게임 오라클 블로그 'AI Update Part 2' 검색 요약 · 인과가 아니라 상관이라는 단서는 게임메카·게임 오라클(검색 요약 '불매를 증명하지 않는다') · 2025년 첫 분석의 리뷰 약 53% 적음은 PC Gamer·Windows Central"
-   },
-   "added": "claude",
-   "added_at": "2026-11-21T19:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n스팀에서 AI를 썼다고 밝힌 게임의 출시일 팔로워 수는 중간값 6명이었습니다.\n\n게임 시장 분석 사이트 게임 오라클이 2025년 1월부터 2026년 10월까지 스팀에 나온 유료 게임 31,003개를 살핀 결과인데요, AI 사용을 밝히지 않은 게임은 같은 값이 20명이었습니다. 실제 판매량은 개발사만 알 수 있어 리뷰 수를 주된 잣대로 삼았고, 개발 경험과 장르 등을 맞춘 뒤에도 리뷰 수는 AI 사용을 밝힌 쪽이 적었습니다.\n\n다만 이 숫자가 AI 표시 때문에 덜 팔렸다는 증명은 아닙니다. 보고서도 직접적인 인과관계는 확정하지 않았고, 짧은 사전 홍보 기간과 적은 이용자 기반이 영향을 줬을 가능성을 함께 짚었습니다. 지난해 같은 곳의 첫 분석에서는 비슷한 게임끼리 비교해 리뷰 수가 절반 남짓 적었습니다.\n\n#겜디핑 #스팀 #생성형AI #게임오라클 #인디게임\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a67f9ee526580c1e3f2.jpg\n제목: AI 썼다고 밝힌 게임,|팔로워 6 대 20\n부제: 스팀 게임 31,003개 분석\n출처: 게임 오라클\n",
-    "caption": "스팀에서 AI를 썼다고 밝힌 게임의 출시일 팔로워 수는 중간값 6명이었습니다.\n\n게임 시장 분석 사이트 게임 오라클이 2025년 1월부터 2026년 10월까지 스팀에 나온 유료 게임 31,003개를 살핀 결과인데요, AI 사용을 밝히지 않은 게임은 같은 값이 20명이었습니다. 실제 판매량은 개발사만 알 수 있어 리뷰 수를 주된 잣대로 삼았고, 개발 경험과 장르 등을 맞춘 뒤에도 리뷰 수는 AI 사용을 밝힌 쪽이 적었습니다.\n\n다만 이 숫자가 AI 표시 때문에 덜 팔렸다는 증명은 아닙니다. 보고서도 직접적인 인과관계는 확정하지 않았고, 짧은 사전 홍보 기간과 적은 이용자 기반이 영향을 줬을 가능성을 함께 짚었습니다. 지난해 같은 곳의 첫 분석에서는 비슷한 게임끼리 비교해 리뷰 수가 절반 남짓 적었습니다.\n\n#겜디핑 #스팀 #생성형AI #게임오라클 #인디게임",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a67f9ee526580c1e3f2.jpg",
-      "credit": "게임 오라클",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/956/gm315917_thumb__AI___.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/8a67f9ee526580c1e3f2.jpg",
-      "credit": "게임 오라클",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/956/gm315917_thumb__AI___.webp"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "AI 썼다고 밝힌 게임,|팔로워 6 대 20",
-      "sub": "스팀 게임 31,003개 분석"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 표지 사진이 스팀 상점 화면 캡처라 글자가 가장자리에서 잘려 어수선함 — 바꿀지 볼 것 · '신호일 수 있다'는 원문으로 확인 못 해 게임메카 문장(인과 미확정·짧은 홍보 기간·적은 이용자 기반)으로 바꿈 · 2025년 첫 분석의 53% 감소를 '절반 가까이'로 쓴 것은 '절반 남짓'으로 고침",
-     "게임 오라클 원문이 429 로 열리지 않아 검색 요약과 게임메카로만 맞춤 · AI 공개 비율 약 30%·상점 페이지에서 출시까지 52일 대 167일은 게임메카 한 곳이라 뺌",
-     "분석가 이름이 게임메카 '로스 버튼'·해외 'Ross Burton' 으로 엇갈려 이름은 뺌 · 표지 사진은 게임메카의 스팀 상점 이미지(게임 오라클 제공) 하나뿐"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — 스팀 'AI 사용 공개' 게임, 전반적으로 판매량 적었다 (11/21)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783956"
-     },
-     {
-      "title": "Game Oracle — AI Update Part 2: AI could still be hurting game sales, but in a less obvious way (429 · 검색 요약으로 확인)",
-      "link": "https://www.game-oracle.com/blog/ai-update-2"
-     },
-     {
-      "title": "PC Gamer — 'AI stigma' on Steam can reduce the number of reviews by around 53% (2025년 첫 분석)",
-      "link": "https://www.pcgamer.com/software/ai/data-analyst-finds-ai-stigma-on-steam-can-reduce-the-number-of-reviews-a-game-gets-by-around-53-percent-and-the-reviews-it-does-get-are-more-negative/"
-     },
-     {
-      "title": "Windows Central — The 'AI Stigma' is real… (2025년 첫 분석)",
-      "link": "https://www.windowscentral.com/gaming/pc-gaming/ai-game-development-stigma-study"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/994021f0a5c794d52316.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/a316088f2c1f15577e18.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/994021f0a5c794d52316.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-21T19:05+09:00",
-     "v": {
-      "A": "66b4d5e3"
-     }
-    }
-   },
-   "corner_name": "소식"
-  },
-  {
-   "source": {
-    "id": "claude:layton-korean-voice",
-    "account": "게임메카",
-    "url": "https://www.gamemeca.com/view.php?gid=1783954",
-    "image": null,
-    "head": "레이튼 교수 신작 '증기의 신세계' 예약 판매 시작",
-    "multiple": null,
-    "is_reel": true,
-    "kind": "claude"
-   },
-   "made_at": "2026-11-21T19:05+09:00",
-   "key": "febe1778",
-   "by": "claude",
-   "subjects": [
-    "레이튼 교수와 증기의 신세계",
-    "레벨파이브"
-   ],
-   "lane": "정보",
-   "editor": {
-    "grade": "A",
-    "kind": "정보",
-    "angle": "레이튼 교수 신작이 한국어 음성으로 — 예약 판매 시작, 스팀에 한국어 인터페이스·음성·자막 표시, 퍼즐은 QuizKnock",
-    "why": "예약 판매 시작·12월 10일·PS5·스위치 2·스위치·PC 는 게임메카(11/21)·인벤(10/23) · 한국어 포함 9개 언어 음성 더빙 확정(10/23 레벨파이브 공식 SNS)은 인벤·스팀 상점(한국어 인터페이스·음성·자막) · 83,390원·예약 특전 시리즈 사운드트랙 11곡은 스팀 한국 상점·게임메카 · 퍼즐 QuizKnock 은 게임메카·검색 요약(Layton Wiki 등)"
-   },
-   "added": "claude",
-   "added_at": "2026-11-21T19:05+09:00",
-   "corner": "news",
-   "card": {
-    "form": "[카테고리]\nNews\n\n[캡션]\n〈레이튼 교수와 증기의 신세계〉가 한국어 음성으로 나옵니다.\n\n레벨파이브가 모든 플랫폼에서 디지털 예약 판매를 시작했는데요, 지난달 한국어를 포함한 9개 언어 더빙을 확정한 데 이어 스팀 상점에도 한국어 인터페이스와 음성, 자막이 모두 표시됐습니다.\n\n시리즈의 중심인 퍼즐은 일본 퀴즈 그룹 QuizKnock이 만들었습니다. 레이튼과 루크의 수수께끼 풀이를 한국어 목소리로 듣게 됩니다.\n\n12월 10일 출시 · PS5 · 닌텐도 스위치 2 · 닌텐도 스위치 · PC(스팀 83,390원) · 예약 특전 시리즈 사운드트랙 11곡\n\n#겜디핑 #레이튼교수 #레이튼교수와증기의신세계 #레벨파이브 #QuizKnock\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/86451c52229494056827.jpg\n제목: 레이튼 교수,|한국어로 말한다\n부제: 증기의 신세계 예약 판매 시작\n출처: 레벨파이브\n",
-    "caption": "〈레이튼 교수와 증기의 신세계〉가 한국어 음성으로 나옵니다.\n\n레벨파이브가 모든 플랫폼에서 디지털 예약 판매를 시작했는데요, 지난달 한국어를 포함한 9개 언어 더빙을 확정한 데 이어 스팀 상점에도 한국어 인터페이스와 음성, 자막이 모두 표시됐습니다.\n\n시리즈의 중심인 퍼즐은 일본 퀴즈 그룹 QuizKnock이 만들었습니다. 레이튼과 루크의 수수께끼 풀이를 한국어 목소리로 듣게 됩니다.\n\n12월 10일 출시 · PS5 · 닌텐도 스위치 2 · 닌텐도 스위치 · PC(스팀 83,390원) · 예약 특전 시리즈 사운드트랙 11곡\n\n#겜디핑 #레이튼교수 #레이튼교수와증기의신세계 #레벨파이브 #QuizKnock",
-    "photos": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/86451c52229494056827.jpg",
-      "credit": "레벨파이브",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/954/gm888776_thumb___.webp"
-     }
-    ],
-    "photo_pool": [
-     {
-      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/86451c52229494056827.jpg",
-      "credit": "레벨파이브",
-      "from": "https://cdn.gamemeca.com/gmdata/0001/783/954/gm888776_thumb___.webp"
-     }
-    ],
-    "shape": "단신",
-    "covers": [
-     {
-      "key": "A",
-      "hook": "Claude",
-      "title": "레이튼 교수,|한국어로 말한다",
-      "sub": "증기의 신세계 예약 판매 시작"
-     }
-    ],
-    "issues": [],
-    "confirm": [
-     "[검증] 숏폼 PV(2026/9/10 공개) 0:00~0:25 는 영어 음성(레이튼·엘리노라 대사) — 한국어 음성이 아니라 후킹 B '레이튼과 루크가 한국어로 말한다'는 바꿈. A '한국어 음성으로 온다'도 영어 음성 위에 얹히니 그대로 쓸지 볼 것",
-     "출시일이 게임메카·인벤은 12월 10일, 스팀 한국 상점은 12월 9일로 표기 — 캡션은 12월 10일, 국내 출시 시각 한 번 볼 것 · 한국어 성우진은 아직 공개 안 됨",
-     "숏폼은 레벨파이브 공식 PV 0:00~0:25 — 영상을 못 보고 정함, 글자·장면 눈으로 확인 · 콘솔판 국내 가격은 확인 못 해 스팀 가격만 씀"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — 레이튼 교수 신작 '증기의 신세계' 예약 판매 시작 (11/21)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783954"
-     },
-     {
-      "title": "인벤 — '레이튼 교수와 증기의 신세계', 한국어 음성 지원한다 (10/23)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=322513"
-     },
-     {
-      "title": "Steam — 레이튼 교수와 증기의 신세계 (한국 상점 · 83,390원 · 한국어 인터페이스·음성·자막)",
-      "link": "https://store.steampowered.com/app/3384600/Professor_Layton_and_the_New_World_of_Steam/"
-     },
-     {
-      "title": "LEVEL5ch【公式】 — Professor Layton and the New World of Steam PV (LEVEL5 VISION 2026 II Ver.)",
-      "link": "https://www.youtube.com/watch?v=slNnCS6Rn3g"
-     }
-    ],
-    "by": "claude",
-    "preview": {
-     "slides": [
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/be81226b5b025e5396ea.jpg",
-      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/6c370bc295a34814640f.jpg"
-     ],
-     "covers": {
-      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/be81226b5b025e5396ea.jpg"
-     },
-     "cvr": 2,
-     "at": "2026-11-21T19:05+09:00",
-     "v": {
-      "A": "07b5378a"
-     }
-    }
-   },
-   "shorts": {
-    "form": "[영상]\n카테고리: News\nURL: https://www.youtube.com/watch?v=slNnCS6Rn3g\n구간: 0:00-0:25\n곡: 한국어 음성으로 온다\n아티스트: 레이튼 교수 신작,\n피처링:\n후킹: \n출처: LEVEL5ch【公式】\n자막: 자동",
-    "caption": "〈레이튼 교수와 증기의 신세계〉 공식 PV입니다.\n\n레벨파이브가 디지털 예약 판매를 시작했는데요, 한국어를 포함한 9개 언어 음성 더빙이 들어가 레이튼과 루크의 목소리를 한국어로 듣게 됩니다.\n\n12월 10일 출시 · PS5 · 닌텐도 스위치 2 · 닌텐도 스위치 · PC(스팀 83,390원)\n\n#겜디핑 #레이튼교수 #레이튼교수와증기의신세계 #레벨파이브",
-    "hooks": {
-     "A": "레이튼 교수 신작, / 한국어 음성으로 온다",
-     "B": "레이튼 교수 신작 PV, / 12월 출시를 앞두고",
-     "C": "증기의 신세계, / 예약 판매 시작"
-    },
-    "video": {
-     "url": "https://www.youtube.com/watch?v=slNnCS6Rn3g",
-     "credit": "LEVEL5ch【公式】",
-     "range": [
-      0.0,
-      25.0
-     ]
-    },
-    "guided": {
-     "rec": "A",
-     "lint": []
-    },
-    "issues": [],
-    "confirm": [
-     "[검증] 숏폼 PV(2026/9/10 공개) 0:00~0:25 는 영어 음성(레이튼·엘리노라 대사) — 한국어 음성이 아니라 후킹 B '레이튼과 루크가 한국어로 말한다'는 바꿈. A '한국어 음성으로 온다'도 영어 음성 위에 얹히니 그대로 쓸지 볼 것",
-     "출시일이 게임메카·인벤은 12월 10일, 스팀 한국 상점은 12월 9일로 표기 — 캡션은 12월 10일, 국내 출시 시각 한 번 볼 것 · 한국어 성우진은 아직 공개 안 됨",
-     "숏폼은 레벨파이브 공식 PV 0:00~0:25 — 영상을 못 보고 정함, 글자·장면 눈으로 확인 · 콘솔판 국내 가격은 확인 못 해 스팀 가격만 씀"
-    ],
-    "research": [
-     {
-      "title": "게임메카 — 레이튼 교수 신작 '증기의 신세계' 예약 판매 시작 (11/21)",
-      "link": "https://www.gamemeca.com/view.php?gid=1783954"
-     },
-     {
-      "title": "인벤 — '레이튼 교수와 증기의 신세계', 한국어 음성 지원한다 (10/23)",
-      "link": "https://www.inven.co.kr/webzine/news/?news=322513"
-     },
-     {
-      "title": "Steam — 레이튼 교수와 증기의 신세계 (한국 상점 · 83,390원 · 한국어 인터페이스·음성·자막)",
-      "link": "https://store.steampowered.com/app/3384600/Professor_Layton_and_the_New_World_of_Steam/"
-     },
-     {
-      "title": "LEVEL5ch【公式】 — Professor Layton and the New World of Steam PV (LEVEL5 VISION 2026 II Ver.)",
-      "link": "https://www.youtube.com/watch?v=slNnCS6Rn3g"
-     }
-    ],
-    "thumb": "https://i.ytimg.com/vi/slNnCS6Rn3g/maxresdefault.jpg",
-    "still": {
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/26d8fbbd7c010aeb9085.jpg",
-     "key": "slNnCS6Rn3g@0.0"
-    },
-    "px": {
-     "vid": "slNnCS6Rn3g",
-     "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/fdf4c613f649059684cf.mp4",
-     "off": 0.0,
-     "end": 70.0,
-     "full": 174.0
-    },
-    "prep": {
-     "status": "queued",
-     "at": "2026-11-21T19:06+09:00"
-    }
-   },
-   "pick": {
-    "rank": 1,
-    "why": "한국 독자에게 바로 걸리는 한국어 음성 · 예약 판매 시작으로 오늘 소식 · 레벨파이브 공식 영상 숏폼",
-    "at": "2026-11-21T19:05+09:00"
+    "why": "신라 원화 남모·준정 기록과 게임 설정을 잇는 해부형 · 한국 인디 · 한국어 지원",
+    "at": "2026-11-22T11:02+09:00"
    },
    "corner_name": "소식"
   }
@@ -753,7 +247,7 @@
  "skipped": [],
  "corners": {
   "week": "11/16~11/22",
-  "days_left": 2,
+  "days_left": 1,
   "done": 0,
   "goal": 28,
   "corners": [
@@ -811,7 +305,7 @@
     "weekly": 7,
     "done": 0,
     "left": 7,
-    "need_today": 4,
+    "need_today": 7,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -823,7 +317,7 @@
     "weekly": 6,
     "done": 0,
     "left": 6,
-    "need_today": 3,
+    "need_today": 6,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -835,7 +329,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -859,7 +353,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -871,7 +365,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": null,
     "drafts": 0,
@@ -907,7 +401,7 @@
     "weekly": 2,
     "done": 0,
     "left": 2,
-    "need_today": 1,
+    "need_today": 2,
     "day": null,
     "next_no": 1,
     "drafts": 0,
@@ -919,17 +413,17 @@
     "weekly": 4,
     "done": 0,
     "left": 4,
-    "need_today": 2,
+    "need_today": 4,
     "day": null,
     "next_no": null,
-    "drafts": 6,
+    "drafts": 2,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-21T19:06+09:00"
+  "at": "2026-11-22T11:02+09:00"
  },
  "queue": {
-  "next": "2026-11-21T19:08+09:00",
+  "next": "2026-11-22T11:05+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
