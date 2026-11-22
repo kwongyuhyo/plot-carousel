@@ -108,12 +108,12 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
     "rank": 1,
-    "why": "[실험] 게임 안 하는 사람도 한 줄로 아는 2000년대 초등학교 쉬는 시간·공기놀이 · 내일(23일) 출시라 오늘 올리기 좋음 · 한국어 지원",
-    "at": "2026-11-22T11:02+09:00"
-   },
-   "corner_name": "소식"
+    "why": "[실험] 게임 안 하는 사람도 한 줄로 아는 2000년대 초등학교 쉬는 시간·공기놀이 · 내일(23일) 출시라 오늘 밤 올리기 좋음 · 한국어 지원",
+    "at": "2026-11-22T19:01+09:00"
+   }
   },
   {
    "source": {
@@ -236,10 +236,110 @@
      }
     }
    },
+   "corner_name": "소식",
    "pick": {
     "rank": 2,
     "why": "신라 원화 남모·준정 기록과 게임 설정을 잇는 해부형 · 한국 인디 · 한국어 지원",
-    "at": "2026-11-22T11:02+09:00"
+    "at": "2026-11-22T19:01+09:00"
+   }
+  },
+  {
+   "source": {
+    "id": "claude:farland-saga-30th",
+    "account": "루리웹",
+    "url": "https://bbs.ruliweb.com/news/read/232240",
+    "image": null,
+    "head": "고전 명작의 감동을 다시금, '파랜드 사가' 30주년 기념 프로젝트 예고",
+    "multiple": null,
+    "is_reel": false,
+    "kind": "claude"
+   },
+   "made_at": "2026-11-22T19:01+09:00",
+   "key": "719a2cfd",
+   "by": "claude",
+   "subjects": [
+    "파랜드 사가",
+    "엔터그램"
+   ],
+   "lane": "정보",
+   "editor": {
+    "grade": "C",
+    "kind": "정보",
+    "angle": "1996년에 시작한 전략 RPG 〈파랜드 사가〉가 30주년 기념 프로젝트를 예고 — 내용은 아직 없이 '새로운 이야기'라는 한 문장",
+    "why": "엔터그램(옛 TGL)이 11/22 공식 X 에 30주년 기념 프로젝트 시동을 알리고 '1996―2026, 30년의 시간을 넘어 새로운 이야기가 움직이기 시작한다' 문구를 올린 것은 루리웹(11/22)·Gematsu(11/22 · gamebastion 전재로 읽음)·Playfront(11/22) · 그 밖의 정보(플랫폼·장르·일정) 없음은 Gematsu·Playfront · 2025년 6월 시티 커넥션·엔터그램의 〈파랜드 사가 I & II 새턴 트리뷰트〉(1편·속편 수록)는 Playfront·Sega Saturn Shiro(6/26 출시) · 일본어만 지원은 Playfront·스팀 상점 페이지"
+   },
+   "added": "claude",
+   "added_at": "2026-11-22T19:01+09:00",
+   "corner": "news",
+   "card": {
+    "form": "[카테고리]\nNews\n\n[캡션]\n1996년에 시작한 전략 RPG 〈파랜드 사가〉가 30주년 기념 프로젝트를 예고했습니다.\n\n시리즈를 만든 TGL의 지금 이름인 엔터그램이 오늘 공식 X에 티저를 올렸는데요, '30년의 시간을 넘어 새로운 이야기가 움직이기 시작한다'는 한 문장이 전부입니다. 새 작품인지 옛 작품을 다시 만드는 것인지, 어느 기기로 나오는지는 다음 발표를 기다려야 합니다.\n\n시리즈는 지난해 6월 첫 두 작품을 묶은 〈파랜드 사가 I & II 새턴 트리뷰트〉로 지금의 콘솔과 PC에 돌아왔지만, 일본어로만 나왔습니다. 30년 만의 새 이야기가 바다를 건널지는 그다음 문제입니다.\n\n티저 공개 11월 22일 · 엔터그램 공식 X · 플랫폼·출시 시기는 후속 발표 예정\n\n#겜디핑 #파랜드사가 #엔터그램 #TGL #SRPG\n\n[커버]\n소스: https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0222410c779fbf945502.jpg\n제목: 파랜드 사가 30주년,|새 이야기 예고\n부제: 엔터그램 30주년 기념 프로젝트\n출처: 엔터그램\n",
+    "caption": "1996년에 시작한 전략 RPG 〈파랜드 사가〉가 30주년 기념 프로젝트를 예고했습니다.\n\n시리즈를 만든 TGL의 지금 이름인 엔터그램이 오늘 공식 X에 티저를 올렸는데요, '30년의 시간을 넘어 새로운 이야기가 움직이기 시작한다'는 한 문장이 전부입니다. 새 작품인지 옛 작품을 다시 만드는 것인지, 어느 기기로 나오는지는 다음 발표를 기다려야 합니다.\n\n시리즈는 지난해 6월 첫 두 작품을 묶은 〈파랜드 사가 I & II 새턴 트리뷰트〉로 지금의 콘솔과 PC에 돌아왔지만, 일본어로만 나왔습니다. 30년 만의 새 이야기가 바다를 건널지는 그다음 문제입니다.\n\n티저 공개 11월 22일 · 엔터그램 공식 X · 플랫폼·출시 시기는 후속 발표 예정\n\n#겜디핑 #파랜드사가 #엔터그램 #TGL #SRPG",
+    "photos": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0222410c779fbf945502.jpg",
+      "credit": "엔터그램",
+      "from": "https://img.ruliweb.com/data/news/tn/26/11/22/1a20194d9f8_pyntse.webp"
+     }
+    ],
+    "photo_pool": [
+     {
+      "url": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/0222410c779fbf945502.jpg",
+      "credit": "엔터그램",
+      "from": "https://img.ruliweb.com/data/news/tn/26/11/22/1a20194d9f8_pyntse.webp"
+     }
+    ],
+    "shape": "단신",
+    "covers": [
+     {
+      "key": "A",
+      "hook": "Claude",
+      "title": "파랜드 사가 30주년,|새 이야기 예고",
+      "sub": "엔터그램 30주년 기념 프로젝트"
+     }
+    ],
+    "issues": [],
+    "confirm": [
+     "표지는 루리웹 기사의 티저 이미지 — 실루엣은 잘 보이나 로고 왼쪽이 잘려 'D SAGA'만 보임, 엔터그램 X 원본 이미지로 바꾸면 더 좋음 · X 원문은 직접 못 열어 매체 셋으로 확인",
+     "90년대 국내 한글판 발매 이력은 출처를 못 찾아 쓰지 않음 · 티저 실루엣이 1996년 패키지 그림과 같은 자세라는 말은 루리웹 한 곳이라 뺌"
+    ],
+    "research": [
+     {
+      "title": "루리웹 — '파랜드 사가' 30주년 기념 프로젝트 예고 (11/22)",
+      "link": "https://bbs.ruliweb.com/news/read/232240"
+     },
+     {
+      "title": "Gematsu — Entergram teases Farland Saga 30th anniversary project (11/22)",
+      "link": "https://www.gematsu.com/2026/11/entergram-teases-farland-saga-30th-anniversary-project"
+     },
+     {
+      "title": "Playfront — Farland Saga: Entergram announces 30th anniversary project (11/22)",
+      "link": "https://playfront.de/en/farland-saga-entergram-kuendigt-projekt-zum-30-jubilaeum-an"
+     },
+     {
+      "title": "Sega Saturn Shiro — City Connection Launches Farland Saga 1 & 2 Saturn Tribute (2025/6/27)",
+      "link": "https://www.segasaturnshiro.com/2025/06/27/city-connection-launches-farland-saga-1-2-saturn-tribute/"
+     }
+    ],
+    "by": "claude",
+    "preview": {
+     "slides": [
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/d54751b7c1af2f28ba1a.jpg",
+      "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/9c87daaf7636e30e8b37.jpg"
+     ],
+     "covers": {
+      "A": "https://kwongyuhyo.github.io/plot-carousel/m-game-4bd265f910/img/d54751b7c1af2f28ba1a.jpg"
+     },
+     "cvr": 2,
+     "at": "2026-11-22T19:01+09:00",
+     "v": {
+      "A": "e48ed45f"
+     }
+    }
+   },
+   "pick": {
+    "rank": 3,
+    "why": "오늘(22일) 나온 30주년 예고 · 90년대 PC 전략 RPG를 기억하는 독자에게 걸림 · 표지 한 장으로 싸게",
+    "at": "2026-11-22T19:01+09:00"
    },
    "corner_name": "소식"
   }
@@ -416,14 +516,14 @@
     "need_today": 4,
     "day": null,
     "next_no": null,
-    "drafts": 2,
+    "drafts": 3,
     "why": "매거진·뉴스·레이더 — 나머지 칸"
    }
   ],
-  "at": "2026-11-22T11:02+09:00"
+  "at": "2026-11-22T19:01+09:00"
  },
  "queue": {
-  "next": "2026-11-22T11:05+09:00",
+  "next": "2026-11-22T19:03+09:00",
   "n": 0,
   "gap": 60,
   "last": ""
