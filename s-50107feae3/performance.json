@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-21 22:04 KST",
+ "generated_at": "2026-11-22 15:05 KST",
  "weeks": [
   {
    "week": "2026-W40",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-21 19:05 KST"
+  "daily": "2026-11-21 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-21T22:04:10+09:00",
+  "fetched_at": "2026-11-22T14:39:08+09:00",
   "posts": [
    {
     "t": "2026-11-18T15:39+09:00",
@@ -2025,42 +2025,37 @@
     "t": "2026-11-01T16:49+09:00",
     "type": "VIDEO",
     "head": "비 내리던 낙원상가, 우산 사이로 울린 NOBACK(@noback_kr)"
-   },
-   {
-    "t": "2026-11-01T14:00+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "양홍원(@yanghongwon)이 스토리에 드레이크(Drake)의 'WN"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 373,
-  "posted": 105,
-  "posts": 123,
-  "rate": 0.28,
-  "adopted_mult": 0.92,
-  "own_mult": 1.04,
+  "drafts": 359,
+  "posted": 97,
+  "posts": 122,
+  "rate": 0.27,
+  "adopted_mult": 0.91,
+  "own_mult": 1.06,
   "lanes": {
    "정보": {
-    "drafts": 252,
-    "posted": 89,
+    "drafts": 243,
+    "posted": 85,
     "mult": 0.91
    },
    "시리즈": {
-    "drafts": 40,
-    "posted": 6,
-    "mult": 0.78
-   },
-   "클립": {
-    "drafts": 54,
-    "posted": 5,
-    "mult": 1.15
+    "drafts": 38,
+    "posted": 4,
+    "mult": 0.73
    },
    "재미": {
-    "drafts": 26,
+    "drafts": 25,
     "posted": 5,
     "mult": 0.92
+   },
+   "클립": {
+    "drafts": 52,
+    "posted": 3,
+    "mult": 1.32
    },
    "기타": {
     "drafts": 1,
@@ -2069,70 +2064,70 @@
    }
   },
   "corners": {
-   "followup": {
-    "drafts": 17,
-    "posted": 4,
-    "mult": 0.81
-   },
-   "anniv": {
-    "drafts": 29,
-    "posted": 2,
-    "mult": 2.39
-   },
-   "mal": {
-    "drafts": 52,
-    "posted": 5,
-    "mult": 0.89
-   },
-   "news": {
-    "drafts": 174,
-    "posted": 66,
-    "mult": 0.98
-   },
-   "song": {
-    "drafts": 12,
-    "posted": 7,
-    "mult": 0.85
-   },
-   "tteolgi": {
-    "drafts": 12,
-    "posted": 2,
-    "mult": 1.07
-   },
-   "spotlight": {
-    "drafts": 7,
-    "posted": 2,
-    "mult": 0.8
-   },
-   "meet": {
-    "drafts": 18,
-    "posted": 4,
-    "mult": 1.05
-   },
-   "intro": {
-    "drafts": 30,
-    "posted": 3,
-    "mult": 0.78
-   },
    "newalbums": {
     "drafts": 8,
-    "posted": 4,
-    "mult": 2.32
+    "posted": 5,
+    "mult": 1.36
+   },
+   "news": {
+    "drafts": 168,
+    "posted": 65,
+    "mult": 0.96
    },
    "tickets": {
     "drafts": 8,
     "posted": 5,
     "mult": 0.76
    },
+   "anniv": {
+    "drafts": 29,
+    "posted": 1,
+    "mult": 2.93
+   },
+   "followup": {
+    "drafts": 14,
+    "posted": 1,
+    "mult": 0.68
+   },
+   "mal": {
+    "drafts": 50,
+    "posted": 3,
+    "mult": 0.71
+   },
+   "intro": {
+    "drafts": 29,
+    "posted": 2,
+    "mult": 2.28
+   },
+   "tteolgi": {
+    "drafts": 12,
+    "posted": 1,
+    "mult": 0.87
+   },
    "listen": {
     "drafts": 4,
     "posted": 1,
     "mult": 0.26
    },
+   "meet": {
+    "drafts": 18,
+    "posted": 4,
+    "mult": 1.05
+   },
+   "spotlight": {
+    "drafts": 6,
+    "posted": 2,
+    "mult": 0.8
+   },
    "again": {
     "drafts": 1,
     "posted": 0,
     "mult": null
+   },
+   "song": {
+    "drafts": 11,
+    "posted": 7,
+    "mult": 0.85
    },
    "lyric": {
     "drafts": 1,
@@ -2249,12 +2244,12 @@
   ]
  },
  "follow": {
-  "at": "2026-11-21T22:04+09:00",
+  "at": "2026-11-22T15:05+09:00",
   "d30": {
    "days": 30,
-   "follows": 13.8,
-   "unfollows": 13.1,
-   "net": 0.7
+   "follows": 13.5,
+   "unfollows": 12.9,
+   "net": 0.6
   },
   "weeks": [
    {
@@ -2308,15 +2303,15 @@
    },
    {
     "week": "2026-W47",
-    "follows": 48,
-    "unfollows": 41,
-    "net": 7,
-    "days": 4
+    "follows": 56,
+    "unfollows": 52,
+    "net": 4,
+    "days": 5
    }
   ],
   "feed": {
    "n": 188,
-   "reach": 3637935,
+   "reach": 3638297,
    "follows": 491,
    "per1k": 0.13
   },
@@ -2332,7 +2327,7 @@
    {
     "kind": "기타",
     "n": 38,
-    "reach": 288828,
+    "reach": 288922,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2348,7 +2343,7 @@
    {
     "kind": "발매·신보",
     "n": 42,
-    "reach": 109204,
+    "reach": 109305,
     "follows": 13,
     "per1k": 0.12,
     "visits1k": 2.9
@@ -2356,7 +2351,7 @@
    {
     "kind": "갈등·반응",
     "n": 21,
-    "reach": 326239,
+    "reach": 326398,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2364,7 +2359,7 @@
    {
     "kind": "공연·페스티벌",
     "n": 32,
-    "reach": 140807,
+    "reach": 140815,
     "follows": 14,
     "per1k": 0.1,
     "visits1k": 1.8
@@ -2427,9 +2422,9 @@
    }
   ],
   "reels": {
-   "reels_per1k": 0.19,
+   "reels_per1k": 0.2,
    "feed_per1k": -0.01,
-   "base": 14.7,
+   "base": 14.5,
    "days": 59
   },
   "spikes": []
