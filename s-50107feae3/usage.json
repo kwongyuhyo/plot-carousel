@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-23T03:34+09:00",
+ "generated_at": "2026-11-24T03:17+09:00",
  "cycle_start": "2026-11-15",
  "next_credit": "2026-12-15",
  "credit": 100.0,
  "spent": 37.51,
- "today": 0.16,
- "per_day": 4.62,
- "calls": 3260,
+ "today": 0,
+ "per_day": 4.12,
+ "calls": 3275,
  "by": [
   {
    "name": "작성기 (Claude Code)",
@@ -17,11 +17,11 @@
    "usd": 1.34
   },
   {
-   "name": "성공 모델",
+   "name": "사진 DB",
    "usd": 0.49
   },
   {
-   "name": "사진 DB",
+   "name": "성공 모델",
    "usd": 0.49
   },
   {
