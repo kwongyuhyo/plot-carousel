@@ -1,22 +1,22 @@
 {
  "schema": 1,
- "generated_at": "2026-11-23T18:40+09:00",
+ "generated_at": "2026-11-24T10:40+09:00",
  "range": [
-  "2026-11-17",
-  "2026-11-23"
+  "2026-11-18",
+  "2026-11-24"
  ],
  "prev_range": [
-  "2026-11-10",
-  "2026-11-16"
+  "2026-11-11",
+  "2026-11-17"
  ],
  "cur": {
-  "drafts": 27,
+  "drafts": 22,
   "lanes": {
-   "정보": 27
+   "정보": 22
   },
   "forms": {
-   "캐러셀": 14,
-   "캐러셀+숏폼": 13
+   "캐러셀+숏폼": 11,
+   "캐러셀": 11
   },
   "evaluated": 0,
   "eval_rate": 0.0,
@@ -29,28 +29,28 @@
   "published": 0,
   "publish_rate": 0.0,
   "reach_mult": [],
-  "verify_touched": 6,
+  "verify_touched": 5,
   "orders": {
    "만듦": 0,
    "못 만듦": 0
   },
-  "runs": 14,
-  "run_fail": 2,
-  "avg_secs": 433,
+  "runs": 13,
+  "run_fail": 3,
+  "avg_secs": 385,
   "denied": 0,
   "auto": {
    "올림": 0,
-   "안 올림": 24
+   "안 올림": 22
   }
  },
  "prev": {
-  "drafts": 31,
+  "drafts": 30,
   "lanes": {
-   "정보": 31
+   "정보": 30
   },
   "forms": {
    "캐러셀": 16,
-   "캐러셀+숏폼": 15
+   "캐러셀+숏폼": 14
   },
   "evaluated": 0,
   "eval_rate": 0.0,
@@ -63,18 +63,18 @@
   "published": 0,
   "publish_rate": 0.0,
   "reach_mult": [],
-  "verify_touched": 15,
+  "verify_touched": 14,
   "orders": {
    "만듦": 0,
    "못 만듦": 0
   },
   "runs": 14,
   "run_fail": 0,
-  "avg_secs": 595,
+  "avg_secs": 531,
   "denied": 0,
   "auto": {
    "올림": 0,
-   "안 올림": 33
+   "안 올림": 32
   }
  }
 }
