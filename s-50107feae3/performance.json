@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-24 15:06 KST",
+ "generated_at": "2026-11-24 19:05 KST",
  "weeks": [
   {
    "week": "2026-W41",
@@ -1676,11 +1676,21 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-23 22:05 KST"
+  "daily": "2026-11-24 15:06 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-24T15:06:15+09:00",
+  "fetched_at": "2026-11-24T18:31:35+09:00",
   "posts": [
+   {
+    "t": "2026-11-24T17:13+09:00",
+    "type": "IMAGE",
+    "head": "래퍼 양홍원과 모델 원현주가 결혼식을 올린 지 한 달여 만에 이혼 소식을"
+   },
+   {
+    "t": "2026-11-24T16:02+09:00",
+    "type": "CAROUSEL_ALBUM",
+    "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS"
+   },
    {
     "t": "2026-11-18T15:39+09:00",
     "type": "CAROUSEL_ALBUM",
@@ -1985,31 +1995,21 @@
     "t": "2026-11-03T19:48+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "리센느(@rescene_official) 'With' 뮤비, 장면으로 다"
-   },
-   {
-    "t": "2026-11-03T18:17+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "재키와이(@jvckiwai)가 데뷔 10주년 라이브에서 인디펜던트가 됐다"
-   },
-   {
-    "t": "2026-11-03T17:00+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "마이 케미컬 로맨스(@mychemicalromance)가 처음으로 영국 "
    }
   ]
  },
  "drafts": {
   "days": 28,
   "drafts": 322,
-  "posted": 77,
-  "posts": 94,
+  "posted": 78,
+  "posts": 93,
   "rate": 0.24,
   "adopted_mult": 0.97,
-  "own_mult": 0.9,
+  "own_mult": 0.89,
   "lanes": {
    "정보": {
     "drafts": 213,
-    "posted": 67,
+    "posted": 68,
     "mult": 0.97
    },
    "클립": {
@@ -2036,7 +2036,7 @@
   "corners": {
    "news": {
     "drafts": 142,
-    "posted": 49,
+    "posted": 50,
     "mult": 1.03
    },
    "mal": {
@@ -2107,19 +2107,6 @@
   },
   "repack": [],
   "recent": [
-   {
-    "day": "2026-11-10",
-    "lane": "정보",
-    "who": "리센느",
-    "repack": false,
-    "grade": "A",
-    "corner": "news",
-    "key": "3fce332b",
-    "posted": "DflkNzRClrt",
-    "head": "양홍원(yanghongwon)이 프로듀서 판다곰(Panda Gomm)과 함께한 싱글 [오보",
-    "url": "https://www.instagram.com/p/DflkNzRClrt/",
-    "mult": 9.26
-   },
    {
     "day": "2026-11-10",
     "lane": "정보",
@@ -2210,11 +2197,24 @@
     "head": "키키의 그래미(@grammys) 후보곡 '404 (New Era)'는 바밍타이거(@balm",
     "url": "https://www.instagram.com/p/Df34ajSFOGp/",
     "mult": 0.97
+   },
+   {
+    "day": "2026-11-21",
+    "lane": "정보",
+    "who": "빅뱅",
+    "repack": false,
+    "grade": "A",
+    "corner": "news",
+    "key": "56b3853f",
+    "posted": "DgHX1ybFJCz",
+    "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS'에서 올해의 뮤직",
+    "url": "https://www.instagram.com/p/DgHX1ybFJCz/",
+    "mult": null
    }
   ]
  },
  "follow": {
-  "at": "2026-11-24T15:06+09:00",
+  "at": "2026-11-24T19:05+09:00",
   "d30": {
    "days": 30,
    "follows": 13.2,
@@ -2281,7 +2281,7 @@
   ],
   "feed": {
    "n": 187,
-   "reach": 3460694,
+   "reach": 3460712,
    "follows": 480,
    "per1k": 0.14
   },
@@ -2305,7 +2305,7 @@
    {
     "kind": "기타",
     "n": 38,
-    "reach": 289029,
+    "reach": 289030,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2313,7 +2313,7 @@
    {
     "kind": "발매·신보",
     "n": 42,
-    "reach": 109444,
+    "reach": 109461,
     "follows": 13,
     "per1k": 0.12,
     "visits1k": 2.9
