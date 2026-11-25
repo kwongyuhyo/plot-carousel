@@ -553,6 +553,27 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       PEND[k] = { bad: true, msg: '못 했습니다 — ' + m.slice(0, 120) }; render();
     });
   }
+  // 11/25 규효 "구독 계기판" — 로그인 상태 · 매거진마다 오늘 작성기 호출 (구독/키) · 사용량(API 요금 환산) · 자동 초안 켜짐
+  function usd(x) { return '$' + (Number(x) || 0).toFixed(2); }
+  function claudeCard(c) {
+    if (!c || !c.mags) return '';
+    var lg = c.login || {}, ok = lg.ok === true, bad = lg.ok === false;
+    var h = '<div class="repo"><h2><span class="dot' + (ok ? '' : bad ? ' off' : ' warn') + '"></span>Claude 구독 <small>' +
+      (ok ? '로그인됨' + (lg.plan ? ' · ' + esc(String(lg.plan).toUpperCase()) : '') : bad ? '<span class="bad">로그인 풀림 — 맡긴 작업이 멈춥니다</span>' : '확인 중') +
+      '</small></h2>';
+    if (bad) h += '<div class="sec"><div class="row"><div class="t"><b class="bad">맥 미니 PLOT 폴더의 「Claude 로그인.command」를 더블클릭해 다시 로그인하세요</b>' +
+      '<small>로그인이 풀려도 API 키로 넘어가지 않고 멈춥니다 (11/25부터)</small></div></div></div>';
+    var tot = c.mags.reduce(function (a, m) { return a + (Number(m.usd) || 0); }, 0), key = c.mags.reduce(function (a, m) { return a + (Number(m.key_usd) || 0); }, 0);
+    h += '<div class="sec"><h3>오늘 작성기<span>' + usd(tot) + '어치' + (key > 0 ? ' · <span class="bad">키로 ' + usd(key) + '</span>' : '') + '</span></h3>';
+    c.mags.forEach(function (m) {
+      var md = Object.keys(m.modes || {}).filter(function (k) { return m.modes[k] > 0; }).map(function (k) { return k + ' ' + usd(m.modes[k]); }).join(' · ');
+      h += '<div class="row"><div class="t"><b>' + esc(m.name) + ' <small style="display:inline">' + (m.auto ? '자동 초안 켜짐' : '맡긴 것만') + '</small></b>' +
+        '<small>' + (m.n ? m.n + '번 (구독 ' + m.sub + (m.key ? ' · <span class="bad">키 ' + m.key + '</span>' : '') + (m.fail ? ' · 실패 ' + m.fail : '') + ')' : '오늘 호출 없음') +
+        (m.skip ? ' · 자동 건너뜀 ' + m.skip : '') + '</small>' + (md ? '<small>' + esc(md) + '</small>' : '') + '</div>' +
+        '<div class="r"><b>' + usd(m.usd) + '</b>' + (m.key_usd > 0 ? '<span class="bad">키 ' + usd(m.key_usd) + ' / ' + usd(m.cap || 10) + '</span>' : 'API 환산') + '</div></div>';
+    });
+    return h + '<div class="empty" style="text-align:left">금액은 같은 일을 API로 돌렸을 때 값 — 구독으로 돈 건 실제로 안 나가고 구독 한도만 씁니다</div></div></div>';
+  }
   function repoCard(r) {
     var h = '<div class="repo"><h2><span class="dot' + (r.bot ? '' : ' off') + '"></span>' + esc(r.name) +
       ' <small>' + (r.bot ? '봇 켜짐' : '<span class="bad">봇 꺼짐</span>') + '</small></h2>';
@@ -623,7 +644,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       '<span>' + (stale ? '<span class="bad">마지막 소식 ' + ago(ST.at) + ' 전 — 맥·봇이 꺼졌을 수 있습니다</span>' : ago(ST.at) + ' 전 소식') + '</span>' +
       (load != null ? '<span>부하 <b>' + load + '</b>' + (cpus ? ' / ' + cpus + '코어' : '') + '</span>' : '') +
       (ST.disk_free_gb != null ? '<span>저장 공간 <b' + (ST.disk_free_gb < 20 ? ' class="bad"' : '') + '>' + ST.disk_free_gb + 'GB</b> 남음</span>' : '');
-    grid.innerHTML = (ST.repos || []).map(repoCard).join('');
+    grid.innerHTML = claudeCard(ST.claude) + (ST.repos || []).map(repoCard).join('');
   }
   function load() {
     if (!SB.url || SB.url.indexOf('__') === 0) { document.getElementById('top').textContent = '저장소 설정이 없어 볼 수 없습니다'; return; }
@@ -655,9 +676,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = "\u2190 \uc554\ub0ab\uc624\ud0c0\ucfe0 \uc81c\uc791";
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.25 10:40';
+    a.title = '판 11.25 18:40';
     var ver = document.createElement('span');
-    ver.textContent = '11.25 10:40';
+    ver.textContent = '11.25 18:40';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
