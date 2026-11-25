@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-24 22:04 KST",
+ "generated_at": "2026-11-25 15:06 KST",
  "weeks": [
   {
    "week": "2026-W41",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-24 19:05 KST"
+  "daily": "2026-11-24 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-24T21:45:26+09:00",
+  "fetched_at": "2026-11-25T15:06:12+09:00",
   "posts": [
    {
     "t": "2026-11-24T17:13+09:00",
@@ -1950,67 +1950,37 @@
     "t": "2026-11-04T16:13+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "리센느(@rescene_official)의 'With'가 디즈니 애니메이"
-   },
-   {
-    "t": "2026-11-04T14:16+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "업계가 꼽은 올해의 신인은 데뷔 한 달이 채 안 된 A2O LITE(@a"
-   },
-   {
-    "t": "2026-11-04T13:43+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "제프 버넷이 내년 2월, 3년 만에 한국을 찾습니다."
-   },
-   {
-    "t": "2026-11-04T13:26+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "뉴진스(@newjeans_official)의 'ETA'가 스포티파이(@s"
-   },
-   {
-    "t": "2026-11-04T00:02+09:00",
-    "type": "VIDEO",
-    "head": "137번째 오늘의 노래 | 2026.11.03"
-   },
-   {
-    "t": "2026-11-03T23:32+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "저스트뮤직 [파급효과2]의 커버 속 배는 노리고 그린 것이었습니다."
-   },
-   {
-    "t": "2026-11-03T22:22+09:00",
-    "type": "VIDEO",
-    "head": "리센느(@rescene_official)가 미니 4집 [PULSE]의 타"
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 322,
-  "posted": 78,
-  "posts": 93,
+  "drafts": 311,
+  "posted": 76,
+  "posts": 91,
   "rate": 0.24,
-  "adopted_mult": 0.97,
+  "adopted_mult": 1.0,
   "own_mult": 0.89,
   "lanes": {
    "정보": {
-    "drafts": 213,
-    "posted": 68,
-    "mult": 0.97
+    "drafts": 205,
+    "posted": 66,
+    "mult": 1.0
    },
    "클립": {
-    "drafts": 50,
+    "drafts": 49,
     "posted": 3,
     "mult": 1.32
-   },
-   "시리즈": {
-    "drafts": 34,
-    "posted": 3,
-    "mult": 0.69
    },
    "재미": {
     "drafts": 24,
     "posted": 4,
     "mult": 0.96
+   },
+   "시리즈": {
+    "drafts": 32,
+    "posted": 3,
+    "mult": 0.69
    },
    "기타": {
     "drafts": 1,
@@ -2019,40 +1989,35 @@
    }
   },
   "corners": {
-   "news": {
-    "drafts": 142,
-    "posted": 50,
-    "mult": 1.03
-   },
-   "mal": {
-    "drafts": 48,
-    "posted": 3,
-    "mult": 0.71
-   },
-   "anniv": {
-    "drafts": 27,
-    "posted": 1,
-    "mult": 2.93
-   },
-   "listen": {
-    "drafts": 4,
-    "posted": 1,
-    "mult": 0.26
-   },
-   "followup": {
-    "drafts": 14,
-    "posted": 1,
-    "mult": 0.68
-   },
    "meet": {
     "drafts": 18,
     "posted": 4,
     "mult": 1.05
    },
+   "mal": {
+    "drafts": 47,
+    "posted": 3,
+    "mult": 0.71
+   },
    "spotlight": {
     "drafts": 6,
     "posted": 2,
     "mult": 0.8
+   },
+   "news": {
+    "drafts": 135,
+    "posted": 48,
+    "mult": 1.03
+   },
+   "anniv": {
+    "drafts": 26,
+    "posted": 1,
+    "mult": 2.93
+   },
+   "listen": {
+    "drafts": 3,
+    "posted": 1,
+    "mult": 0.26
    },
    "again": {
     "drafts": 1,
@@ -2063,6 +2028,11 @@
     "drafts": 11,
     "posted": 7,
     "mult": 0.85
+   },
+   "followup": {
+    "drafts": 13,
+    "posted": 1,
+    "mult": 3.12
    },
    "tickets": {
     "drafts": 6,
@@ -2199,21 +2169,14 @@
   ]
  },
  "follow": {
-  "at": "2026-11-24T22:04+09:00",
+  "at": "2026-11-25T15:06+09:00",
   "d30": {
    "days": 30,
-   "follows": 13.2,
-   "unfollows": 12.5,
-   "net": 0.7
+   "follows": 12.8,
+   "unfollows": 12.3,
+   "net": 0.5
   },
   "weeks": [
-   {
-    "week": "2026-W40",
-    "follows": 103,
-    "unfollows": 91,
-    "net": 12,
-    "days": 7
-   },
    {
     "week": "2026-W41",
     "follows": 140,
@@ -2262,11 +2225,18 @@
     "unfollows": 73,
     "net": 0,
     "days": 7
+   },
+   {
+    "week": "2026-W48",
+    "follows": 4,
+    "unfollows": 11,
+    "net": -7,
+    "days": 1
    }
   ],
   "feed": {
    "n": 189,
-   "reach": 3461933,
+   "reach": 3462401,
    "follows": 480,
    "per1k": 0.14
   },
@@ -2282,7 +2252,7 @@
    {
     "kind": "갈래 모름",
     "n": 40,
-    "reach": 2044665,
+    "reach": 2045027,
     "follows": 278,
     "per1k": 0.14,
     "visits1k": 3.6
@@ -2290,7 +2260,7 @@
    {
     "kind": "기타",
     "n": 38,
-    "reach": 289037,
+    "reach": 289045,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2298,7 +2268,7 @@
    {
     "kind": "발매·신보",
     "n": 42,
-    "reach": 109500,
+    "reach": 109598,
     "follows": 13,
     "per1k": 0.12,
     "visits1k": 2.8
@@ -2377,9 +2347,9 @@
    }
   ],
   "reels": {
-   "reels_per1k": 0.21,
+   "reels_per1k": 0.22,
    "feed_per1k": -0.01,
-   "base": 13.9,
+   "base": 13.6,
    "days": 59
   },
   "spikes": []
