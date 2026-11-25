@@ -630,6 +630,7 @@ html:root[data-fs="xl"] body{ zoom:1.26 }
     <button class="tb sec" id="toShorts" title="이 편집을 숏폼 양식 화면의 그 편에 넣고 돌아갑니다">↩ 숏폼 양식에 넣기</button>
     <button class="tb sec" id="rawBtn" hidden title="리프레임·글자 없이 고른 구간만 편집용 파일로 (텔레그램으로 옵니다)">🎞 원본만</button>
     <button class="tb sec" id="ovBtn" hidden title="영상 없이 정보 레이어만 투명 .mov 로">🧾 레이어만</button>
+    <button class="tb sec" id="carBtn" hidden title="같은 차트를 캐러셀로도 — 캐러셀 스튜디오에 표지 + 순위 장이 펼쳐집니다">🗂 캐러셀로도</button>
     <button class="tb more" id="moreBtn" aria-label="더 보기">⋯</button>
     <button id="redoBtn" hidden></button>
     <button class="tb primary" id="makeBtn" hidden>🎬 <span class="lg">맥으로 </span>제작</button>
@@ -1390,6 +1391,7 @@ function paintMode() {
   document.querySelectorAll('#modes [data-mode]').forEach(b => b.classList.toggle('on', b.dataset.mode === S.mode));
   $('#toShorts').hidden = SP();
   $('#rawBtn').hidden = !studioOn() || SP();
+  $('#carBtn').hidden = S.mode !== 'chart';
   const lab = SP() ? (S.mode === 'chart' ? '차트 ' : '특집 ') : '';
   $('#makeBtn').innerHTML = '🎬 <span class="lg">맥으로 </span>' + lab + '제작';
 }
@@ -1545,6 +1547,7 @@ function bindMbar() {
   });
   $('#moreBtn').onclick = () => {
     const acts = [['addUrl', '＋ 주소로 넣기 (유튜브 등 · 여러 개 한 번에)'], ['redoBtn', '↷ 다시 하기'], ['showForm', '양식 보기·복사']].concat(SP() ? [] : [['toShorts', '↩ 숏폼 양식에 넣기']])
+      .concat(S.mode === 'chart' ? [['carBtn', '🗂 같은 차트를 캐러셀로도']] : [])
       .concat(studioOn() ? (SP() ? [] : [['rawBtn', '🎞 원본만 받기 (리프레임·글자 없이)']]).concat([['ovBtn', '🧾 레이어만 (투명 .mov)']]) : []).concat([['newBtn', '새로 시작']]);
     const sh = document.createElement('div'); sh.className = 'sheet';
     sh.innerHTML = '<div class="pn"><div class="btns" style="flex-direction:column">' + acts.map(a => '<button data-go="' + a[0] + '">' + a[1] + '</button>').join('') +
@@ -1741,6 +1744,33 @@ function spText() {
   });
   return out.join('\n');
 }
+/* 11/25 규효 "차트 릴스를 캐러셀로도" — 같은 순위·곡·글자로 캐러셀 양식을 만들어 캐러셀 스튜디오에 펼친다.
+ * 장 순서는 릴스와 같은 카운트다운(위에서부터 N위 → 1위). 사진은 곡 영상(유튜브)의 대표 그림 — 스튜디오에서 바꿀 수 있다. */
+function chartForm() {
+  const m = S.main, R = ranks(), cat = (m.cat || '').trim() || 'Chart';
+  const pic = (c) => c && c.kind === 'yt' ? 'https://i.ytimg.com/vi/' + ytId(c.url) + '/maxresdefault.jpg' : (c && /^https?:\/\//.test(c.url || '') && c.kind === 'image' ? c.url : '');
+  const name = (s) => s.title.trim() + (s.artist.trim() ? ' — ' + s.artist.trim() : '') + (s.feat.trim() ? ' ' + s.feat.trim() : '');
+  const top = S.clips.map((c, i) => ({ c: c, r: R.r[i] })).sort((a, b) => a.r - b.r)[0];
+  const capLines = S.clips.map((c, i) => ({ r: R.r[i], t: name(c.song) })).sort((a, b) => a.r - b.r).map(x => x.r + '위  ' + x.t);
+  const out = ['[카테고리]', cat, '', '[캡션]', (m.title.trim() || '차트'), (m.hook.trim() ? m.hook.trim() : ''), '', ...capLines, '', '#PLOT #차트', '',
+    '[커버]', '소스: ' + pic(top && top.c), '제목: ' + m.title.trim(), '부제: ' + m.hook.trim(), '출처: ' + srcTxt(m.source)];
+  S.clips.forEach((c, i) => {
+    const s = c.song;
+    out.push('', '[슬라이드]', '소스: ' + pic(c), '소제목: ' + R.r[i] + '위' + (R.total ? ' / ' + R.total : ''),
+      '본문: ' + [name(s), s.hook.trim()].filter(Boolean).join('|'), '출처: ' + srcTxt(s.source));
+  });
+  return out.join('\n');
+}
+function chartCarousel() {
+  if (S.mode !== 'chart') return;
+  if (!S.clips.length) { toast('곡(클립)을 먼저 넣어 주세요', true); return; }
+  const miss = S.clips.findIndex(c => !c.song.title.trim() || !c.song.artist.trim());
+  if (miss >= 0) { toast('곡 ' + (miss + 1) + '의 곡명·아티스트를 채워 주세요', true); sel = S.clips[miss]; renderSide(); if (MOB.matches) sheet(true); return; }
+  if (!S.main.title.trim()) { toast('차트 전체 제목을 먼저 적어 주세요', true); return; }
+  saveNow();
+  try { localStorage.removeItem(HANDOFF + '.vids'); localStorage.setItem(HANDOFF, chartForm()); } catch (_) { toast('저장 공간이 모자라 넘기지 못했습니다', true); return; }
+  location.href = 'carousel.html';
+}
 function transLine() {
   const one = (g) => g.k === '컷' ? '컷' : g.k + ' ' + g.d;
   const list = S.clips.slice(1).map((_, j) => one(gapOf(j + 1)));
@@ -1882,6 +1912,7 @@ function boot() {
   $('#makeBtn').onclick = () => make(false);
   $('#ovBtn').onclick = () => make(true);
   $('#rawBtn').onclick = makeRaw;
+  $('#carBtn').onclick = chartCarousel;
   $('#toShorts').onclick = toShorts;
   $('#showForm').onclick = showForm;
   $('#newBtn').onclick = () => {
