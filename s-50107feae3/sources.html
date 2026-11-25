@@ -594,6 +594,18 @@ details.fsum{display:block} details.fsum summary{display:list-item; margin-botto
 .odb .s{display:inline-block; font-size:11px; border-radius:999px; padding:1px 7px; border:1px solid var(--line); color:var(--dim)}
 .odb .s-done{border-color:var(--pick); color:var(--pick)} .odb .s-fail{border-color:var(--amber); color:var(--amber)}
 .odb .s-running{border-color:var(--text); color:var(--text)}
+/* 11/25 맡긴 작업함 · 근거 */
+.odb .odall{margin-top:8px; font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--text); border-radius:8px; padding:5px 10px}
+.odbox .s{display:inline-block; font-size:11px; border-radius:999px; padding:1px 7px; border:1px solid var(--line); color:var(--dim)}
+.odbox .s-done{border-color:var(--pick); color:var(--pick)} .odbox .s-fail{border-color:var(--amber); color:var(--amber)} .odbox .s-running{border-color:var(--text); color:var(--text)}
+.odbox .flt{display:flex; gap:6px; flex-wrap:wrap; padding:0 20px 8px} .odbox .flt button{font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--text); border-radius:999px; padding:4px 11px}
+.odbox .flt button[aria-pressed=true]{background:var(--text); color:var(--bg)}
+.odbox .lst{max-height:62vh; overflow:auto; padding:0 20px 10px}
+.odbox .oi{padding:10px 0; border-top:1px solid var(--line); font-size:13px; line-height:1.5} .odbox .oi small{color:var(--dim)}
+.odbox .oi .bt{display:flex; gap:6px; margin-top:6px} .odbox .oi .bt button{font:inherit; font-size:12.5px; border:1px solid var(--line); background:none; color:var(--text); border-radius:8px; padding:4px 10px}
+article.ig.hit{outline:2px solid var(--pick); outline-offset:2px; transition:outline-color 1.6s}
+.rsr ol{margin:4px 0 0; padding-left:18px} .rsr li{margin:3px 0; font-size:12.5px; line-height:1.45} .rsr small{color:var(--dim)}
+.chk li.vf{color:var(--amber)}
 .evs .eg{margin:12px 20px 2px; font-size:12px; font-weight:800; letter-spacing:.06em; color:var(--dim)}
 .evs .er{display:flex; align-items:center; gap:10px; margin:0 20px; padding:7px 0; border-top:1px solid var(--line)}
 .evs .er.sub2{border-top:0; padding-top:0}
@@ -2776,7 +2788,17 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var L = (x.issues || []).map(function (s) { return '⚠️ ' + s; })
       .concat((x.confirm || []).map(function (s) { return '확인 필요 · ' + s; }));
     return L.length ? '<ul class="chk">' + L.slice(0, 5).map(function (s) {
-      return '<li>' + esc(s) + '</li>'; }).join('') + '</ul>' : '';
+      return '<li' + (/\[검증\]/.test(s) ? ' class="vf"' : '') + '>' + esc(s) + '</li>'; }).join('') + '</ul>' : '';
+  }
+  // 11/25 규효 "결과물에 근거 표시" — 작성기가 보고 쓴 원문(research) · 검증 데스크가 이걸로 다시 대조한다
+  function drResearch(it, x) {
+    var R = [].concat((x && x.research) || ((it && it.card) || {}).research || []).filter(function (r) { return r && (r.link || r.title); });
+    if (!R.length) return '';
+    return '<div class="rsr"><div style="margin-top:6px"><b>근거 ' + R.length + '</b> <small>작성기가 보고 쓴 원문 — 검증 데스크가 이걸로 다시 대조</small></div><ol>' +
+      R.slice(0, 8).map(function (r) {
+        var host = String(r.link || '').replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
+        return '<li>' + (r.link ? '<a href="' + escU(r.link) + '" target="_blank" rel="noopener">' + esc(String(r.title || host).slice(0, 160)) + '</a> <small>' + esc(host) + '</small>' : esc(String(r.title).slice(0, 160))) + '</li>';
+      }).join('') + '</ol></div>';
   }
   // ── 피드 보기 — 인스타처럼 (2026-10-10 규효: "이미 완성된 형태의 초안으로, UIUX 를 인스타랑 동일하게") ──
   var DR_VIEW = 'plot.drafts.view';
@@ -2862,7 +2884,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var s = it.source || {}, ed = it.editor || {};
     var src = s.url ? '<a href="' + escU(s.url) + '" target="_blank" rel="noopener">' + (s.kind === 'news' ? '기사' : s.kind === 'repack' ? '원글' : '원문') + '</a> · ' : '';
     var n = ((x.issues || []).length + (x.confirm || []).length);
-    return '<details><summary>편집 정보' + (n ? ' · 확인 ' + n : '') + '</summary>' +
+    var nr = [].concat(x.research || ((it.card || {}).research) || []).length;
+    return '<details><summary>편집 정보' + (nr ? ' · 근거 ' + nr : '') + (n ? ' · 확인 ' + n : '') + '</summary>' +
       '<div>' + src + esc(s.account || s.kind || '') + (s.head ? ' — ' + esc(s.head) : '') + '</div>' +
       (ed.angle ? '<div>각도: ' + esc(ed.angle) + '</div>' : '') + sellLines(it) +
       (it.preempt && it.preempt.line ? '<div>선점 ' + (it.preempt.score > 0 ? '+' : '') + esc(it.preempt.score) + ' — ' + esc(it.preempt.line) + '</div>' : '') +
@@ -2870,7 +2893,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       (x.trust && x.trust.why ? '<div>신뢰도 근거: ' + esc([].concat(x.trust.why).join(' · ')) + '</div>' : '') +
       ((it.captures || []).length ? '<div style="margin-top:6px">원문 캡처 (길게 눌러 저장 → 스튜디오에 넣기)</div><div class="thumbs">' +
         it.captures.map(function (c) { return '<a href="' + escU(c.url) + '" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="' + esc(c.url) + '" alt="" style="width:108px;height:135px;object-fit:cover;border-radius:6px"></a>'; }).join('') + '</div>' : '') +
-      drChecks(x) + '</details>';
+      drChecks(x) + drResearch(it, x) + '</details>';
   }
   function pubMark(it) {
     var p = it.published || {};
@@ -2901,7 +2924,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     var cov = cvs.length > 1 ? '<div class="covsel">' + cvs.map(function (cv, j) {
       return '<button class="' + (j === ci ? 'on' : '') + '" data-cv="' + i + ':' + j + '">' + esc(cv.key) + ' ' + esc(cv.title) + '</button>'; }).join('') + '</div>' : '';
     var cap = captionOf(it, 'card');
-    return '<article class="ig">' + postHead(it, 'card', cd) + media +
+    return '<article class="ig" data-dk="' + esc(it.key || '') + '">' + postHead(it, 'card', cd) + media +
       '<div class="iga"><button aria-label="좋아요">' + IC.heart + '</button><button aria-label="댓글" data-cmt="d:' + i + '">' + IC.chat +
       '</button><button aria-label="공유" data-share="' + i + ':card">' + IC.send + '</button>' +
       (it.key && !DR_DAY ? '<button aria-label="사진 바꾸기" title="보이는 장의 사진 바꾸기" data-ps="' + i + '">' + IC.photo + '</button>' : '') +
@@ -3499,16 +3522,27 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
   // 11/2 규효 "정기 시리즈는 탭을 따로" — 여기(맡기기)는 이슈·공유·특집만. 정기 시리즈는 「정기 시리즈」 탭에서
   var OD_TYPE = OD_TYPE_ALL.filter(function (x) { return /^(draft|share|special)$/.test(x[0]); });
   var OD_FORM = [['b', '숏폼·캐러셀'], ['s', '숏폼'], ['c', '캐러셀']];
+  // 11/25 규효 "맡길 때 의도 같이 넘기기" — 톤 · 참고 링크 여러 개 → 메모에 붙여 작성기에 (collectors/orders → writer 규효 메모)
+  var OD_TONE = [['', '알아서'], ['dry', '담백하게'], ['wit', '위트 있게'], ['deep', '깊게 해부'], ['warm', '따뜻하게']];
+  var OD_TONE_TXT = { dry: '담백하게 — 사실 위주, 꾸밈 줄이기', wit: '위트 있게 — 가볍고 재밌게, 조롱은 말 것', deep: '깊게 해부 — 맥락·배경·의미까지', warm: '따뜻하게 — 아티스트에게 호의적인 결' };
+  function odCompose(v) {
+    var L = [v.memo || ''];
+    if (v.tone && OD_TONE_TXT[v.tone]) L.push('톤: ' + OD_TONE_TXT[v.tone]);
+    var refs = (v.refs || []).filter(function (u) { return /^https?:\/\//.test(u); });
+    if (refs.length) L.push('참고 링크 (규효가 골라 둔 자료 — 먼저 열어 보고 근거로 쓸 것):\n' + refs.map(function (u) { return '- ' + u; }).join('\n'));
+    return L.filter(Boolean).join('\n');
+  }
   var OD_ST = { queued: '맥이 받음', running: '만드는 중', done: '완료', fail: '못 만듦' };
   function odLoad() {
     if (!sbOn()) return;
-    sbReq('plot_evals?select=id,reason,snapshot,created_at&kind=eq.order&order=created_at.desc&limit=8').then(function (rows) {
+    sbReq('plot_evals?select=id,reason,snapshot,created_at&kind=eq.order&order=created_at.desc&limit=40').then(function (rows) {
       var before = JSON.stringify((OD || []).map(function (r) { return [r.id, (r.snapshot || {}).status]; }));
       OD = rows || [];
       var after = JSON.stringify(OD.map(function (r) { return [r.id, (r.snapshot || {}).status]; }));
       if (before !== after) {
         if (OD.some(function (r) { return (r.snapshot || {}).status === 'done'; })) { loadDrafts(); loadStories(); }
         if (GRP === 'draft') renderDrafts();
+        if (document.querySelector('.odbox')) odInbox(true);
       }
       clearTimeout(OD_T);
       if (OD.some(function (r) { var st = (r.snapshot || {}).status; return !st || st === 'queued' || st === 'running'; })) OD_T = setTimeout(odLoad, 45000);
@@ -3523,7 +3557,56 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         return '<div class="odr" data-odr="' + esc(r.id) + '"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> ' +
           '<b>' + esc(String(sn.what || (sn.type === 'share' ? '📲 ' + String(sn.url || '').replace(/^https?:\/\/(www\.)?/, '') : '')).slice(0, 40)) + '</b> <small>' + esc(evOpt(OD_TYPE_ALL, sn.type) || '') +
           (sn.note && st !== 'queued' ? ' — ' + esc(String(sn.note).slice(0, 70)) + (String(sn.note).length > 70 || st === 'fail' ? ' <u>더 보기</u>' : '') : '') + '</small></div>';
-      }).join('') + '</div>';
+      }).join('') + ((OD || []).length ? '<button type="button" class="odall" data-odall>맡긴 작업함 · ' + odCount() + '</button>' : '') + '</div>';
+  }
+  /* 11/25 규효 "자동 초안 없애고 공유·선별한 것만 잘 만들기" — 맡긴 작업함: 맡긴 것 전부 · 상태별 · 걸린 시간 · 끝난 건 초안으로 바로 */
+  var OD_F = 'all';
+  function odAgo(iso) {
+    var m = Math.round((Date.now() - Date.parse(iso || '')) / 60000); if (isNaN(m)) return '';
+    return m < 1 ? '방금' : m < 60 ? m + '분 전' : m < 1440 ? Math.floor(m / 60) + '시간 전' : Math.floor(m / 1440) + '일 전';
+  }
+  function odGroup(st) { return st === 'done' ? 'done' : st === 'fail' ? 'fail' : 'run'; }
+  function odCount() {
+    var c = { run: 0, done: 0, fail: 0 };
+    (OD || []).forEach(function (r) { c[odGroup((r.snapshot || {}).status)]++; });
+    return [c.run ? '진행 ' + c.run : '', c.done ? '완료 ' + c.done : '', c.fail ? '못 만듦 ' + c.fail : ''].filter(Boolean).join(' · ') || '비어 있음';
+  }
+  function odDraftOf(key) { return ((DR && DR.items) || []).filter(function (x) { return x.key === key; })[0] || null; }
+  function odInbox(refresh) {
+    var sh = document.querySelector('.odbox');
+    if (!sh) { if (refresh) return; sh = document.createElement('div'); sh.className = 'sheet odbox'; document.body.appendChild(sh); odLoad();
+      sh.addEventListener('click', function (e) {
+        if (e.target === sh || e.target.closest('[data-x]')) { sh.remove(); return; }
+        var f = e.target.closest('[data-odf]'); if (f) { OD_F = f.getAttribute('data-odf'); odInbox(true); return; }
+        var g = e.target.closest('[data-odgo]'); if (g) { sh.remove(); odGo(g.getAttribute('data-odgo')); return; }
+        var d = e.target.closest('[data-odd]'); if (d) { sh.remove(); odDetail(d.getAttribute('data-odd')); return; }
+        if (e.target.closest('[data-odnew2]')) { sh.remove(); openOrder(); }
+      }); }
+    var rows = (OD || []).filter(function (r) { return OD_F === 'all' || odGroup((r.snapshot || {}).status) === OD_F; });
+    var F = [['all', '전체'], ['run', '진행 중'], ['done', '완료'], ['fail', '못 만듦']];
+    sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>맡긴 작업함</h4><div class="sub">맡긴 것만 만듭니다 (11/25부터 자동 초안 끔) — ' + esc(odCount()) + '</div>' +
+      '<div class="flt">' + F.map(function (x) { return '<button type="button" data-odf="' + x[0] + '" aria-pressed="' + (OD_F === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div>' +
+      '<div class="lst">' + (rows.length ? rows.map(function (r) {
+        var sn = r.snapshot || {}, st = sn.status || '', dr = sn.key ? odDraftOf(sn.key) : null;
+        var what = String(sn.what || (sn.type === 'share' ? '📲 ' + String(sn.url || '').replace(/^https?:\/\/(www\.)?/, '') : '') || '(제목 없음)');
+        var form = ({ b: '숏폼·캐러셀', s: '숏폼', c: '캐러셀' })[sn.form] || '';
+        return '<div class="oi"><span class="s s-' + esc(st || 'new') + '">' + esc(OD_ST[st] || '보냄') + '</span> <b>' + esc(what.slice(0, 60)) + '</b><br>' +
+          '<small>' + esc([evOpt(OD_TYPE_ALL, sn.type), form, sn.tone ? (evOpt(OD_TONE, sn.tone) || '') : '', odAgo(r.created_at) + ' 맡김',
+            (sn.refs || []).length ? '참고 링크 ' + sn.refs.length : ''].filter(Boolean).join(' · ')) + '</small>' +
+          (sn.note && st !== 'queued' ? '<br><small>' + esc(String(sn.note).slice(0, 140)) + '</small>' : '') +
+          '<div class="bt">' + (st === 'done' && sn.key ? '<button type="button" data-odgo="' + esc(sn.key) + '">' + (dr ? '초안 보기' : '초안 찾기') + '</button>' : '') +
+          '<button type="button" data-odd="' + esc(r.id) + '">' + (st === 'fail' ? '이유 · 다시 맡기기' : '자세히') + '</button></div></div>';
+      }).join('') : '<div class="oi"><small>' + (OD ? '여기엔 아직 없습니다' : '불러오는 중…') + '</small></div>') + '</div>' +
+      '<div class="row"><button type="button" data-x>닫기</button><button type="button" class="go" data-odnew2>+ 맡기기</button></div></div>';
+  }
+  function odGo(key) {                             // 끝난 맡기기 → 그 초안으로 (오늘 목록에 없으면 날짜 초안에서 찾는 중이라 알림)
+    if (GRP !== 'draft' && typeof showGroup === 'function') showGroup('draft');
+    if (DR_DAY) drDay('');
+    setTimeout(function () {
+      var el = document.querySelector('article.ig[data-dk="' + (window.CSS && CSS.escape ? CSS.escape(key) : key) + '"]');
+      if (!el) { toast('오늘 초안 목록에 아직 없습니다 — 맥이 앱에 올리는 중일 수 있어요 (1~2분)'); loadDrafts(); return; }
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' }); el.classList.add('hit'); setTimeout(function () { el.classList.remove('hit'); }, 2600);
+    }, 120);
   }
   function odDetail(id) {                         // 10/20 — 못 만든 이유가 70자에서 잘려 안 보였다. 전체 + 고쳐서 다시 맡기기
     var r = (OD || []).filter(function (x) { return x.id === id; })[0]; if (!r) return;
@@ -3892,14 +3975,19 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       sh.innerHTML = '<div class="pn"><div class="hd"></div><h4>제작 맡기기</h4><div class="sub">고른 소재는 판정이 버리지 않고 씁니다. 맥이 5분 안에 받아 작성기(Opus)가 취재·검증한 뒤 오늘의 초안에 올립니다 — 보통 10~20분, 나무위키 털기는 20~40분.</div>' +
         '<div class="g"><b>무엇을</b>' + evChips('type', OD_TYPE, v.type) + '</div>' +
         (v.type === 'draft' ? '<div class="g"><b>형식</b>' + evChips('form', OD_FORM, v.form) + '</div>' : '') +
+        (/^(draft|share|special)$/.test(v.type) ? '<div class="g"><b>톤</b>' + evChips('tone', OD_TONE, v.tone || '') + '</div>' : '') +
         (v.type === 'share' ? '' : '<div class="g"><b>' + (v.type === 'story' || v.type === 'song' ? '곡' : '소재') + '</b><input data-f="what" placeholder="' + esc(ph[v.type]) + '" value="' + esc(v.what || '') + '"></div>') +
         (v.type === 'song' ? '<div data-shw>' + shWarn(v.what) + '</div>' + spBox() : '') +
         '<div class="g"><b>' + (v.type === 'share' ? '본 게시물 링크' : '링크 (있으면)') + '</b><input data-f="url" placeholder="기사·인스타·유튜브 주소" value="' + esc(v.url || '') + '">' +
           '<button type="button" data-paste style="margin-top:6px;font:inherit;font-size:12.5px;border:1px solid var(--line);background:none;color:var(--text);border-radius:8px;padding:5px 10px">📋 복사한 링크 붙여넣기</button></div>' +
+        (/^(draft|share|special)$/.test(v.type) ? '<div class="g"><b>참고 링크 더 (골라 둔 자료)</b>' + (v.refs || []).map(function (u, k) {
+          return '<input data-ref="' + k + '" placeholder="기사·인스타·유튜브 주소" value="' + esc(u) + '" style="margin-top:' + (k ? 6 : 0) + 'px">'; }).join('') +
+          ((v.refs || []).length < 4 ? '<button type="button" data-addref style="margin-top:6px;font:inherit;font-size:12.5px;border:1px solid var(--line);background:none;color:var(--text);border-radius:8px;padding:5px 10px">+ 링크 추가</button>' : '') + '</div>' : '') +
         '<div class="g"><b>' + (v.type === 'share' ? '메모 (안 적어도 됨)' : '각도·메모 (있으면)') + '</b><textarea data-f="memo" placeholder="' + (v.type === 'share' ? '예) 숏폼으로 / 표지 한 장으로 / 둘의 예전 관계를 먼저' : '예) 디스 내용보다 둘의 예전 관계를 먼저') + '">' + esc(v.memo || '') + '</textarea></div>' +
         '<div class="row"><button type="button" data-x>닫기</button><button type="button" class="go" data-save>맡기기</button></div></div>';
     };
-    var keep = function () { ['what', 'url', 'memo'].forEach(function (k) { var el = sh.querySelector('[data-f="' + k + '"]'); if (el) v[k] = el.value.trim(); }); };
+    var keep = function () { ['what', 'url', 'memo'].forEach(function (k) { var el = sh.querySelector('[data-f="' + k + '"]'); if (el) v[k] = el.value.trim(); });
+      var rs = sh.querySelectorAll('[data-ref]'); if (rs.length) v.refs = Array.prototype.map.call(rs, function (el) { return el.value.trim(); }); };
     draw();
     if (v.type === 'song' && !SP) spLoad(draw);
     if (!SH) shLoad(function () { if (v.type === 'song') { keep(); draw(); } });
@@ -3908,6 +3996,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     });
     sh.addEventListener('click', function (e) {
       if (e.target === sh || e.target.closest('[data-x]')) { sh.remove(); return; }
+      if (e.target.closest('[data-addref]')) { keep(); v.refs = (v.refs || []).concat(['']); draw(); var last = sh.querySelectorAll('[data-ref]'); if (last.length) last[last.length - 1].focus(); return; }
       if (e.target.closest('[data-paste]')) {             // 10/20 — 인스타에서 링크 복사 → 여기서 한 번에
         keep();
         if (navigator.clipboard && navigator.clipboard.readText) navigator.clipboard.readText().then(function (t) {
@@ -3927,8 +4016,8 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
         if ((v.type === 'story' || v.type === 'song') && !/\s[-–—\/|]\s?|[-–—\/|]/.test(v.what)) { toast("'아티스트 - 곡' 으로 적어 주세요"); return; }
         if (v.type === 'song' && shFind(v.what) && SH_OK !== v.what) { SH_OK = v.what; draw(); toast('이미 다룬 곡이에요 — 맡기려면 한 번 더 누르세요'); return; }
         var rec = { id: 'order:' + Date.now(), kind: 'order', draft_date: kstDay(new Date()), draft_key: null, source_id: (v.url || '').slice(0, 300),
-          verdict: {}, reason: v.memo || '', rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
-          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : v.type === 'song' ? 's' : (/^(special|tteolgi|meet|intro|listen)$/.test(v.type) ? 'c' : ''), what: v.what, url: v.url || '' } };
+          verdict: {}, reason: odCompose(v), rewrite: {}, device: (navigator.userAgent.match(/iPhone|iPad|Android|Mac/) || ['?'])[0],
+          snapshot: { type: v.type, form: v.type === 'draft' ? v.form : v.type === 'song' ? 's' : (/^(special|tteolgi|meet|intro|listen)$/.test(v.type) ? 'c' : ''), what: v.what, url: v.url || '', tone: v.tone || '', refs: (v.refs || []).filter(function (u) { return /^https?:\/\//.test(u); }).slice(0, 4) } };
         sh.remove();
         sbReq('plot_evals', { method: 'POST', body: JSON.stringify(rec), headers: { Prefer: 'resolution=merge-duplicates,return=minimal' } })
           .then(function () { toast('맡겼습니다 — 맥이 5분 안에 받습니다'); OD = [rec].concat(OD || []); if (GRP === 'draft') renderDrafts(); clearTimeout(OD_T); OD_T = setTimeout(odLoad, 45000); })
@@ -4266,7 +4355,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
       : ytId(vd.url) ? ' data-vid="' + esc(ytId(vd.url)) + '" data-s="' + vs + '" data-e="' + ve + '"'
       : direct ? ' data-mp4="' + esc(vd.url) + '" data-s="' + vs + '" data-e="' + ve + '"'
       : igc ? ' data-ig="' + esc('https://www.instagram.com/reel/' + igc + '/embed/') + '"' : '';
-    return '<article class="ig">' + postHead(it, 'shorts', sh) +
+    return '<article class="ig" data-dk="' + esc(it.key || '') + '">' + postHead(it, 'shorts', sh) +
       '<div class="rk">' + marks + '</div><div class="reel' + (rd.url ? ' done' : '') + '" data-reel' + pa + '>' + frame +
       (pa ? '<button class="pl" data-play aria-label="' + (rd.url ? '완성본 재생' : '여기서 재생') + '">' + IC.play + '</button>' +
         (rd.url ? '<span class="plt">완성본</span>' : '') : '') + '</div>' +
@@ -5325,6 +5414,7 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     if (evb) { openEval(Number(evb.getAttribute('data-ev'))); return; }
     if (e.target.closest('[data-evmiss]')) { openMiss(); return; }
     if (e.target.closest('[data-odnew]')) { openOrder(); return; }
+    if (e.target.closest('[data-odall]')) { odInbox(); return; }
     var odr = e.target.closest('[data-odr]');
     if (odr) { odDetail(odr.getAttribute('data-odr')); return; }
     if (e.target.closest('[data-evlist]')) { openEvList(); return; }
@@ -5458,9 +5548,9 @@ html:root[data-gap="wide"] body{ padding-left:30px; padding-right:30px }
     a.href = './';
     a.textContent = '← PLOT 제작';
     a.setAttribute('aria-label', 'PLOT 제작 홈으로');
-    a.title = '판 11.25 04:02';
+    a.title = '판 11.25 18:16';
     var ver = document.createElement('span');
-    ver.textContent = '11.25 04:02';
+    ver.textContent = '11.25 18:16';
     ver.style.cssText = 'font:500 11px/1 ui-monospace,Menlo,monospace;color:var(--faint,#5A5A66);' +
                         'margin-left:7px;letter-spacing:0;';
     a.appendChild(ver);
