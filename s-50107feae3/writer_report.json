@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-26T09:47+09:00",
+ "generated_at": "2026-11-26T16:13+09:00",
  "range": [
   "2026-11-20",
   "2026-11-26"
@@ -31,7 +31,9 @@
   "why_top": [],
   "published": 1,
   "publish_rate": 0.04,
-  "reach_mult": [],
+  "reach_mult": [
+   0.7
+  ],
   "verify_touched": 8,
   "orders": {
    "만듦": 0,
