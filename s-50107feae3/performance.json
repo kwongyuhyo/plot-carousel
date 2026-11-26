@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-25 22:05 KST",
+ "generated_at": "2026-11-26 15:05 KST",
  "weeks": [
   {
    "week": "2026-W41",
@@ -82,13 +82,13 @@
   {
    "week": "2026-W48",
    "posts": 2,
-   "reach": 1343,
-   "saved": 0,
-   "shares": 1,
-   "followers": 3084,
-   "followers_delta": 0,
-   "reach_total": 250465,
-   "top": "https://www.instagram.com/p/Df30xjAlAIb/"
+   "reach": 1660,
+   "saved": 1,
+   "shares": 48,
+   "followers": 3067,
+   "followers_delta": -17,
+   "reach_total": 153945,
+   "top": "https://www.instagram.com/p/DgHf81SPezD/"
   }
  ],
  "kinds": [
@@ -103,30 +103,30 @@
   },
   {
    "kind": "갈등·반응",
-   "n": 32,
-   "weeks": 8,
-   "multiple": 1.14,
-   "low": 0.9,
-   "high": 1.28,
+   "n": 33,
+   "weeks": 9,
+   "multiple": 1.17,
+   "low": 0.91,
+   "high": 1.3,
    "stable": false
   },
   {
    "kind": "기타",
-   "n": 99,
-   "weeks": 15,
-   "multiple": 1.05,
+   "n": 98,
+   "weeks": 14,
+   "multiple": 1.06,
    "low": 1.03,
-   "high": 1.1,
+   "high": 1.11,
    "stable": true
   },
   {
    "kind": "발매·신보",
    "n": 85,
    "weeks": 14,
-   "multiple": 0.98,
+   "multiple": 0.97,
    "low": 0.93,
-   "high": 1.01,
-   "stable": false
+   "high": 1.0,
+   "stable": true
   },
   {
    "kind": "공연·페스티벌",
@@ -274,18 +274,18 @@
  ],
  "published": [
   {
-   "id": "Df30xjAlAIb",
+   "id": "DgHX1ybFJCz",
    "week": "2026-W48",
    "kind": "발매·신보",
-   "reach": 692,
-   "head": "래원이 오늘(18일) 오후 6시 신곡 '먼치킨'을 냅니다.\n\n그냥노창과 재키와이(@jvckiwai)가 피처링으로 참여했는데요, 하루 앞서 공개된"
+   "reach": 581,
+   "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS'에서 올해의 뮤직 비저너리를 받았습니다.\n\n이 상이 처음 생긴 2024"
   },
   {
-   "id": "Df34ajSFOGp",
+   "id": "DgHf81SPezD",
    "week": "2026-W48",
-   "kind": "기타",
-   "reach": 651,
-   "head": "키키의 그래미(@grammys) 후보곡 '404 (New Era)'는 바밍타이거(@balmingtiger)의 오메가 사피엔이 혼자 가사를 쓴 곡"
+   "kind": "갈등·반응",
+   "reach": 1079,
+   "head": "래퍼 양홍원과 모델 원현주가 결혼식을 올린 지 한 달여 만에 이혼 소식을 전했습니다.\n\n원현주는 오늘(24일) 자신의 SNS에 \"현재 원만하게 "
   },
   {
    "id": "Dfo2q0aOWgc",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-25 19:06 KST"
+  "daily": "2026-11-25 22:05 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-25T21:46:12+09:00",
+  "fetched_at": "2026-11-26T15:05:06+09:00",
   "posts": [
    {
     "t": "2026-11-24T17:13+09:00",
@@ -1870,62 +1870,37 @@
     "t": "2026-11-05T16:39+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "방탄소년단(@bts.bighitofficial) 'SWIM'을 둘러싼 표"
-   },
-   {
-    "t": "2026-11-05T15:04+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "혁오(@hyukohofficial)가 6년 만의 정규 앨범 [33]을 1"
-   },
-   {
-    "t": "2026-11-05T13:54+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "극장판 〈체인소 맨 레제편〉의 음악이 LP로 국내 예약 판매를 시작했습니"
-   },
-   {
-    "t": "2026-11-04T22:52+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "139번째 오늘의 노래 | 2026.11.04"
-   },
-   {
-    "t": "2026-11-04T22:23+09:00",
-    "type": "VIDEO",
-    "head": "139번째 오늘의 노래 | 2026.11.04"
-   },
-   {
-    "t": "2026-11-04T22:08+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "듀스가 31년 만에 정규 4집을 냅니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 311,
-  "posted": 76,
+  "drafts": 297,
+  "posted": 71,
   "posts": 89,
   "rate": 0.24,
-  "adopted_mult": 1.0,
+  "adopted_mult": 0.97,
   "own_mult": 1.04,
   "lanes": {
-   "정보": {
-    "drafts": 205,
-    "posted": 66,
-    "mult": 1.0
-   },
    "클립": {
-    "drafts": 49,
+    "drafts": 48,
     "posted": 3,
     "mult": 1.32
    },
-   "재미": {
-    "drafts": 24,
-    "posted": 4,
-    "mult": 0.96
+   "정보": {
+    "drafts": 196,
+    "posted": 61,
+    "mult": 0.97
    },
    "시리즈": {
-    "drafts": 32,
+    "drafts": 31,
     "posted": 3,
     "mult": 0.69
+   },
+   "재미": {
+    "drafts": 21,
+    "posted": 4,
+    "mult": 0.95
    },
    "기타": {
     "drafts": 1,
@@ -1934,35 +1909,25 @@
    }
   },
   "corners": {
-   "meet": {
-    "drafts": 18,
-    "posted": 4,
-    "mult": 1.05
-   },
    "mal": {
-    "drafts": 47,
+    "drafts": 46,
     "posted": 3,
     "mult": 0.71
    },
-   "spotlight": {
-    "drafts": 6,
-    "posted": 2,
-    "mult": 0.8
+   "meet": {
+    "drafts": 16,
+    "posted": 3,
+    "mult": 1.05
    },
    "news": {
-    "drafts": 135,
-    "posted": 48,
-    "mult": 1.03
+    "drafts": 128,
+    "posted": 45,
+    "mult": 1.05
    },
    "anniv": {
-    "drafts": 26,
-    "posted": 1,
-    "mult": 2.93
-   },
-   "listen": {
-    "drafts": 3,
-    "posted": 1,
-    "mult": 0.26
+    "drafts": 24,
+    "posted": 0,
+    "mult": null
    },
    "again": {
     "drafts": 1,
@@ -1973,6 +1938,11 @@
     "drafts": 11,
     "posted": 7,
     "mult": 0.85
+   },
+   "spotlight": {
+    "drafts": 5,
+    "posted": 2,
+    "mult": 0.8
    },
    "followup": {
     "drafts": 13,
@@ -1992,12 +1962,17 @@
    "newalbums": {
     "drafts": 5,
     "posted": 3,
-    "mult": 1.0
+    "mult": 3.28
    },
    "intro": {
     "drafts": 28,
     "posted": 2,
     "mult": 2.28
+   },
+   "listen": {
+    "drafts": 2,
+    "posted": 1,
+    "mult": 0.26
    },
    "lyric": {
     "drafts": 1,
@@ -2057,7 +2032,7 @@
     "posted": "Dfo2q0aOWgc",
     "head": "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화'의 후반부입니다.",
     "url": "https://www.instagram.com/reel/Dfo2q0aOWgc/",
-    "mult": 1.0
+    "mult": 3.28
    },
    {
     "day": "2026-11-11",
@@ -2083,7 +2058,7 @@
     "posted": "Df30xjAlAIb",
     "head": "래원이 오늘(18일) 오후 6시 신곡 '먼치킨'을 냅니다.",
     "url": "https://www.instagram.com/p/Df30xjAlAIb/",
-    "mult": 1.03
+    "mult": 1.0
    },
    {
     "day": "2026-11-18",
@@ -2096,7 +2071,7 @@
     "posted": "Df34ajSFOGp",
     "head": "키키의 그래미(@grammys) 후보곡 '404 (New Era)'는 바밍타이거(@balm",
     "url": "https://www.instagram.com/p/Df34ajSFOGp/",
-    "mult": 0.97
+    "mult": 0.87
    },
    {
     "day": "2026-11-21",
@@ -2109,17 +2084,17 @@
     "posted": "DgHX1ybFJCz",
     "head": "빅뱅(@bigbang_official)이 '2026 MAMA AWARDS'에서 올해의 뮤직",
     "url": "https://www.instagram.com/p/DgHX1ybFJCz/",
-    "mult": null
+    "mult": 0.7
    }
   ]
  },
  "follow": {
-  "at": "2026-11-25T22:05+09:00",
+  "at": "2026-11-26T15:05+09:00",
   "d30": {
    "days": 30,
-   "follows": 12.8,
-   "unfollows": 12.3,
-   "net": 0.5
+   "follows": 11.6,
+   "unfollows": 12.1,
+   "net": -0.5
   },
   "weeks": [
    {
@@ -2173,15 +2148,15 @@
    },
    {
     "week": "2026-W48",
-    "follows": 4,
-    "unfollows": 11,
-    "net": -7,
-    "days": 1
+    "follows": 11,
+    "unfollows": 22,
+    "net": -11,
+    "days": 2
    }
   ],
   "feed": {
    "n": 186,
-   "reach": 3395116,
+   "reach": 3395196,
    "follows": 468,
    "per1k": 0.14
   },
@@ -2197,31 +2172,31 @@
    {
     "kind": "기타",
     "n": 38,
-    "reach": 289053,
+    "reach": 289058,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
    },
    {
     "kind": "갈래 모름",
-    "n": 37,
-    "reach": 1977732,
+    "n": 35,
+    "reach": 1976131,
     "follows": 266,
     "per1k": 0.13,
     "visits1k": 3.6
    },
    {
     "kind": "발매·신보",
-    "n": 42,
-    "reach": 109600,
+    "n": 43,
+    "reach": 110191,
     "follows": 13,
     "per1k": 0.12,
-    "visits1k": 2.8
+    "visits1k": 2.9
    },
    {
     "kind": "갈등·반응",
-    "n": 21,
-    "reach": 326597,
+    "n": 22,
+    "reach": 327682,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2292,12 +2267,21 @@
    }
   ],
   "reels": {
-   "reels_per1k": 0.22,
-   "feed_per1k": -0.01,
-   "base": 13.6,
+   "reels_per1k": 0.23,
+   "feed_per1k": -0.0,
+   "base": 13.3,
    "days": 59
   },
-  "spikes": []
+  "spikes": [
+   {
+    "date": "2026-11-12",
+    "unfollows": 18,
+    "usual": 12.1,
+    "posted": [
+     "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화…"
+    ]
+   }
+  ]
  },
  "goal": {
   "daily": 4,
