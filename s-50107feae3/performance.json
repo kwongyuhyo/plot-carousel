@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "generated_at": "2026-11-27 22:04 KST",
+ "generated_at": "2026-11-28 15:06 KST",
  "weeks": [
   {
    "week": "2026-W41",
@@ -1676,10 +1676,10 @@
  ],
  "note": "결 배수는 주차별 도달 중앙값으로 보정한 값이다. stable=false 는 한 주만 빼도 방향이 바뀌므로 판단 근거로 쓰지 않는다.",
  "runs": {
-  "daily": "2026-11-27 19:05 KST"
+  "daily": "2026-11-27 22:04 KST"
  },
  "feed": {
-  "fetched_at": "2026-11-27T21:49:51+09:00",
+  "fetched_at": "2026-11-28T15:06:44+09:00",
   "posts": [
    {
     "t": "2026-11-24T17:13+09:00",
@@ -1770,42 +1770,37 @@
     "t": "2026-11-08T01:17+09:00",
     "type": "CAROUSEL_ALBUM",
     "head": "142번째 오늘의 노래 | 2026.11.07"
-   },
-   {
-    "t": "2026-11-07T13:10+09:00",
-    "type": "CAROUSEL_ALBUM",
-    "head": "배우 이동휘가 이무진의 새 뮤직비디오에 나옵니다."
    }
   ]
  },
  "drafts": {
   "days": 28,
-  "drafts": 267,
-  "posted": 65,
-  "posts": 77,
+  "drafts": 247,
+  "posted": 59,
+  "posts": 76,
   "rate": 0.24,
-  "adopted_mult": 0.97,
-  "own_mult": 1.45,
+  "adopted_mult": 0.89,
+  "own_mult": 1.5,
   "lanes": {
+   "정보": {
+    "drafts": 162,
+    "posted": 50,
+    "mult": 0.89
+   },
    "재미": {
-    "drafts": 16,
-    "posted": 5,
+    "drafts": 12,
+    "posted": 3,
     "mult": 1.0
    },
-   "정보": {
-    "drafts": 175,
-    "posted": 53,
-    "mult": 0.93
-   },
-   "클립": {
-    "drafts": 45,
-    "posted": 4,
-    "mult": 1.23
-   },
    "시리즈": {
-    "drafts": 30,
+    "drafts": 29,
     "posted": 3,
     "mult": 0.69
+   },
+   "클립": {
+    "drafts": 43,
+    "posted": 3,
+    "mult": 1.14
    },
    "기타": {
     "drafts": 1,
@@ -1814,40 +1809,40 @@
    }
   },
   "corners": {
-   "mal": {
-    "drafts": 43,
-    "posted": 3,
-    "mult": 0.71
-   },
    "news": {
-    "drafts": 110,
-    "posted": 40,
-    "mult": 1.07
+    "drafts": 102,
+    "posted": 36,
+    "mult": 1.04
    },
    "followup": {
-    "drafts": 12,
-    "posted": 1,
-    "mult": 5.37
-   },
-   "anniv": {
-    "drafts": 23,
+    "drafts": 9,
     "posted": 0,
     "mult": null
    },
-   "tteolgi": {
-    "drafts": 10,
-    "posted": 1,
-    "mult": 0.87
-   },
    "meet": {
-    "drafts": 15,
+    "drafts": 14,
     "posted": 2,
     "mult": 2.69
+   },
+   "anniv": {
+    "drafts": 22,
+    "posted": 1,
+    "mult": 0.89
    },
    "newalbums": {
     "drafts": 5,
     "posted": 3,
     "mult": 3.28
+   },
+   "mal": {
+    "drafts": 40,
+    "posted": 2,
+    "mult": 0.71
+   },
+   "tteolgi": {
+    "drafts": 6,
+    "posted": 0,
+    "mult": null
    },
    "tickets": {
     "drafts": 5,
@@ -1989,11 +1984,11 @@
   ]
  },
  "follow": {
-  "at": "2026-11-27T22:04+09:00",
+  "at": "2026-11-28T15:06+09:00",
   "d30": {
    "days": 30,
-   "follows": 11.6,
-   "unfollows": 12.0,
+   "follows": 11.4,
+   "unfollows": 11.8,
    "net": -0.4
   },
   "weeks": [
@@ -2048,15 +2043,15 @@
    },
    {
     "week": "2026-W48",
-    "follows": 19,
-    "unfollows": 35,
+    "follows": 23,
+    "unfollows": 39,
     "net": -16,
-    "days": 3
+    "days": 4
    }
   ],
   "feed": {
    "n": 183,
-   "reach": 3184438,
+   "reach": 3184481,
    "follows": 437,
    "per1k": 0.14
   },
@@ -2072,7 +2067,7 @@
    {
     "kind": "기타",
     "n": 38,
-    "reach": 289066,
+    "reach": 289070,
     "follows": 38,
     "per1k": 0.13,
     "visits1k": 2.2
@@ -2088,7 +2083,7 @@
    {
     "kind": "발매·신보",
     "n": 43,
-    "reach": 110240,
+    "reach": 110258,
     "follows": 13,
     "per1k": 0.12,
     "visits1k": 2.9
@@ -2096,7 +2091,7 @@
    {
     "kind": "갈등·반응",
     "n": 22,
-    "reach": 327737,
+    "reach": 327758,
     "follows": 37,
     "per1k": 0.11,
     "visits1k": 2.4
@@ -2168,15 +2163,15 @@
   ],
   "reels": {
    "reels_per1k": 0.23,
-   "feed_per1k": -0.0,
-   "base": 13.0,
+   "feed_per1k": 0.0,
+   "base": 12.7,
    "days": 59
   },
   "spikes": [
    {
     "date": "2026-11-12",
     "unfollows": 18,
-    "usual": 12.0,
+    "usual": 11.8,
     "posted": [
      "양홍원(yanghongwon)의 새 싱글 [오보] 수록곡 '화…"
     ]
